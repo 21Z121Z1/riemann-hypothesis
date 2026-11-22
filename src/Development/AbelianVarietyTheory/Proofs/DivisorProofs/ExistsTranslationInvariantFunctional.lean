@@ -1,14 +1,13 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Divisors.MatchingOfParts
-public import Development.AbelianVarietyTheory.Definitions.Divisors.DiscreteSeriesHermitianUnique
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0033
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0041
 public import Development.AbelianVarietyTheory.Definitions.Divisors.RankEqCardIffExistsFrameMatrixFirstColumnBlock
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsDiagonalLagrangianInvariantForm
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdelicHeisenbergActsByLocalSchrodinger
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdelicSchwartzRestrictFinitePlaceMemSchwartzBruh
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdelicSchwartzSpaceTranslateMemOfMem
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TensFormBox
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1592
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1643
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1675
 
 @[expose] public section
 

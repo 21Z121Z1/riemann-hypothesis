@@ -1,6 +1,6 @@
 module
 
-public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.GmHomAt
+public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0027
 
 @[expose] public section
 

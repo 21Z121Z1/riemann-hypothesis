@@ -1,11 +1,12 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ResKOfResolutionPrincipalisation
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SmoothOfRelativeDimensionOfIntegralKrullDimEqStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TopologicalKrullDimEqOfIsIsoRestrictStatement
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsSectionOfIsIsoRestrict
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsIdealSheafAwayFromP
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0251
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1280
+public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.Bundle0004
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0396
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0506
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0539
 public import Development.AutomorphicSpectrum.Proofs.GlobalProofs.IsIntegralBlowupOfSmooth
 public import Development.AbelianVarietyTheory.Proofs.CovolumeBounds.IsProjOverOfIsPullback
 
@@ -52,7 +53,7 @@ theorem resK_of_weak (H₁ : ResW) (H₂ : PrincW) : ResKStatement := by
     have hP₂ := isProper_of_isProjOver hproj₂'
     exact QuasiCompact.compactSpace_of_compactSpace (t ≫ s ≫ i ≫ PSpace.str K M)
   have hsm : Smooth ((t ≫ s) ≫ i ≫ PSpace.str K M) := by simpa using hsm₂
-  obtain ⟨hDim, hC⟩ := GlobalTheory.T.coords_statement K D X₂ ((t ≫ s) ≫ i ≫ PSpace.str K M) ((t ≫ s) ⁻¹ᵁ U) _ hT inferInstance hsm hd₂
+  obtain ⟨hDim, hC⟩ := _root_.GlobalTheory.CompanionTheory.Geo.SncCoordsSide.coordsStatement_side K D X₂ ((t ≫ s) ≫ i ≫ PSpace.str K M) ((t ≫ s) ⁻¹ᵁ U) _ hT inferInstance hsm hd₂
     (relDim_preimage (t ≫ s) _ U hU) hsncT
   obtain ⟨r, j, hj, e⟩ := exists_closed_in_prod ((t ≫ s) ≫ i) (by simpa using hproj₂')
   exact ⟨r, X₂, j, t ≫ s, hj, e, hDim, hiso, hd₂, hC⟩

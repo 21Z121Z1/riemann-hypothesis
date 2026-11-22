@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.HESmulRight
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsTraceOneIntegerConjDiffPrimeTo
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0239
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0249
 
 @[expose] public section
 

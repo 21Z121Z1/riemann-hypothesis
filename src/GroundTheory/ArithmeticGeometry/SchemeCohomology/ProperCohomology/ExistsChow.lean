@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import GroundTheory.ArithmeticGeometry.SchemeCohomology.ProperCohomology.ChowMulti
+public import GroundTheory.ArithmeticGeometry.SchemeCohomology.ProperCohomology.Bundle0006
 public import GroundTheory.ArithmeticGeometry.SchemeCohomology.ProperCohomology.ChowSegre
 
 @[expose] public section

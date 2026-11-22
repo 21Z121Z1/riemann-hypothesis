@@ -1,10 +1,10 @@
 module
 
-public import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.FiniteEtaleModels.SecInjG
-public import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.AnnihilatorModels.IdealSplit
+public import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.FiniteEtaleModels.Bundle0005
+public import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.AnnihilatorModels.Bundle0022
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SimilitudeActionAdelicLattice
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LatticeCompletionEqLatticeVectorAddNsmul
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DualLatticeDegreeNeg
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2697
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle3025
 
 @[expose] public section
 

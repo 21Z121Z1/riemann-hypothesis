@@ -1,7 +1,6 @@
 module
 
-public import Development.WeilBound.ThetaLifts.LeviDeterminants.ThetaBasicOf
-public import Development.WeilBound.ThetaLifts.LeviDeterminants.WeilRepresentationPointwiseArchimedeanDecayBound
+public import Development.WeilBound.ThetaLifts.LeviDeterminants.Bundle0009
 
 @[expose] public section
 

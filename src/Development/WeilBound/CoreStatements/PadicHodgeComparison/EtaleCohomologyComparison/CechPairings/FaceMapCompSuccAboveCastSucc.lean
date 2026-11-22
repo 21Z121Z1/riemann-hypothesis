@@ -3,8 +3,7 @@ module
 public import Mathlib
 public import Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.CechPairings.CechAugRow
 public import Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.CechPairings.MapHComp
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ElementsBijectiveOfBijectiveAppStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.InitialObjectAugmentedResolutionStatement
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0108
 
 @[expose] public section
 

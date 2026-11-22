@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import GroundTheory.GlobalFields.IdeleClassGroup.IdeleClassMapIdeleClassMap
-public import GroundTheory.GlobalFields.IdeleGroups.GaloisOnAdeles
+public import GroundTheory.GlobalFields.IdeleGroups.Bundle0003
 public import GroundTheory.LocalFields.AbstractLocalReciprocity.ExistsOpenSubgroupMemFixedModule
 
 @[expose] public section

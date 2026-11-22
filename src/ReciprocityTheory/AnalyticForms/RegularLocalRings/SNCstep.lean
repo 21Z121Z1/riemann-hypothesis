@@ -1,6 +1,6 @@
 module
 
-public import ReciprocityTheory.AnalyticForms.RegularLocalRings.ExistsAtlas
+public import ReciprocityTheory.AnalyticForms.RegularLocalRings.Bundle0009
 
 @[expose] public section
 

@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.PerfectoidPullbacks.ConeSectionRestriction.TorusMemFldF
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FractionFieldTranscendenceBasisExtStatement
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0088
 
 @[expose] public section
 
@@ -120,7 +120,7 @@ theorem trace_chart (t : Fin (n + 1) → Rˣ) (S : Finset (Fin (n + 2))) (u : Fi
   induction hy using AddSubgroup.closure_induction with
   | mem y hy =>
     obtain ⟨b, bs, rfl⟩ := hy
-    obtain ⟨a, ha⟩ := GlobalTheory.T.fraction_field_transcendence_basis_ext K (n + 1) (torusS K t S) u hinj hloc B' hAB (fldF K t) (FractionRing R)
+    obtain ⟨a, ha⟩ := _root_.GlobalTheory.CompanionTheory.TraceJac.trace_minor_mem K (n + 1) (torusS K t S) u hinj hloc B' hAB (fldF K t) (FractionRing R)
       Dl hDu m ⟨κ, hκ⟩ b bs
     refine ⟨a, a.2, ?_⟩
     have hX : algebraMap R (FractionRing R) ((b : R) * (Matrix.of fun k l => E (κ k) (bs l : R)).det) =

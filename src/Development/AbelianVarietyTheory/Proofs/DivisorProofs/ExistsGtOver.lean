@@ -4,7 +4,7 @@ public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.Divisors.IsProjOverWeierstrass
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.UniformisationConclusion
 public import Development.AbelianVarietyTheory.Definitions.Degenerations.AdmissibleBaseOfCompleteDvr
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TensFacts
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2318
 
 @[expose] public section
 

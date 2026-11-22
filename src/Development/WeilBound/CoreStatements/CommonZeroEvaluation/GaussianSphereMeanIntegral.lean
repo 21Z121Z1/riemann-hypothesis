@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.GaussianMatrixMeasurePosFinite
-public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.IsScaleStable
+public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.Bundle0066
+public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.Bundle0065
 
 @[expose] public section
 

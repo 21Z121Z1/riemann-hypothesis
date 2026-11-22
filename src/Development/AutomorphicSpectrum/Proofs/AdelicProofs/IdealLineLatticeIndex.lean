@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import GroundTheory.HeightsAndTheta.Heights.KernelsLattice
-public import GroundTheory.HeightsAndTheta.Heights.WeightedHomogeneous.PIdealIndexPlaces
-public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.SchwartzBilinear.IntegerSmulEqAlgebraMapSmul
+public import GroundTheory.HeightsAndTheta.Heights.Bundle0001
+public import GroundTheory.HeightsAndTheta.Heights.WeightedHomogeneous.Bundle0004
+public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.SchwartzBilinear.Bundle0002
 
 @[expose] public section
 

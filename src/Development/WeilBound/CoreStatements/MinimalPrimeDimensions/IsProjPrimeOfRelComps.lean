@@ -1,7 +1,7 @@
 module
 
 public import Development.WeilBound.CoreStatements.MinimalPrimeDimensions.MemMinimalPrimesIff
-public import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.LowerBoundConditional
+public import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.Bundle0012
 
 @[expose] public section
 

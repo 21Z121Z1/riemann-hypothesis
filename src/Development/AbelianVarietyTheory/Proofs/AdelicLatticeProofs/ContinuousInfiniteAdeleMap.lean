@@ -3,9 +3,9 @@ module
 public import Mathlib
 public import Formalism.UnipotentAdelicQuotients.ThmBInHecke
 public import Development.AbelianVarietyTheory.BlockTheory.AdelicCMFields.UnitaryHeckeCharacterIdele
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsHeckeCharacterOfUnitaryTensorIdeles
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsCmAdeleUnitCharacterReadingHeckeChar
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsNeZeroAdeleCharEqCompMulTotallyReal
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0828
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0172
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0163
 
 @[expose] public section
 

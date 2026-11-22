@@ -1,6 +1,6 @@
 module
 
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutJAPRPhaseCut
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0111
 public import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutJAPRDatumConst
 
 @[expose] public section

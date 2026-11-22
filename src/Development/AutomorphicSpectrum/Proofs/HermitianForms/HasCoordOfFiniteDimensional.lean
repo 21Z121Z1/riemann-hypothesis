@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Formalism.UnipotentAdelicQuotients.SiegelWeilUnitaryConvergent
-public import Formalism.UnipotentAdelicQuotients.StdAdditiveCharExists
+public import Formalism.UnipotentAdelicQuotients.Bundle0003
+public import Formalism.UnipotentAdelicQuotients.Bundle0002
 public import Development.AutomorphicSpectrum.Proofs.HermitianForms.BijectiveLinearCombinationOfRankAtStalk
 public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.HermitianCharacters.SelfDualLatticeFiltrationCharacter
 

@@ -5,7 +5,7 @@ public import ReciprocityTheory.CommutativeAlgebra.ChainConnInDim
 public import ReciprocityTheory.CommutativeAlgebra.SaturatedChains.IsSaturatedChain
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.ConnectedPrimeFields.IsWeaklyRegularPairModOneLeft
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.ConnectedPrimeFields.WithBotAddOneLeAddTwo
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.ConnectedPrimeFields.DimLeOfForall
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.ConnectedPrimeFields.Bundle0001
 
 @[expose] public section
 

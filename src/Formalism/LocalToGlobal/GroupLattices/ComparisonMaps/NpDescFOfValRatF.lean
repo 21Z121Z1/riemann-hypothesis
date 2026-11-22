@@ -1,7 +1,7 @@
 module
 
-public import Formalism.LocalToGlobal.GroupLattices.ComparisonMaps.NpDescOfValRat
-public import Formalism.LocalToGlobal.GroupLattices.ComparisonMaps.TiedRec
+public import Formalism.LocalToGlobal.GroupLattices.ComparisonMaps.Bundle0006
+public import Formalism.LocalToGlobal.GroupLattices.ComparisonMaps.Bundle0007
 public import Formalism.SharpRestriction.GrowthBounds.PlaneCountTheoremWithConstants
 
 @[expose] public section

@@ -2,9 +2,9 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.Foundations.IsProbabilityMeasureMuPart
-public import Development.AbelianVarietyTheory.Proofs.HeightProofs.BeSumStatementIffDefectSumBound
-public import Formalism.LocalToGlobal.ProjectiveLattices.CompSplitPfB
-public import Formalism.LocalToGlobal.ProjectiveLattices.CompSplitPfD
+public import Development.AbelianVarietyTheory.Proofs.HeightProofs.Bundle0004
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0021
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0012
 public import Formalism.LocalToGlobal.ProjectiveLattices.CompHt
 public import Formalism.LocalToGlobal.ProjectiveLattices.ArchimedeanQuadraticData.FinitePlaceArcs.BeSumPf
 

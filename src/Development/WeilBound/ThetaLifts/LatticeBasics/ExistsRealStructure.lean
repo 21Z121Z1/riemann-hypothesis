@@ -2,9 +2,7 @@ module
 
 public import Mathlib
 public import Development.WeilBound.ThetaLifts.LatticeBasics.IsCompactIntV
-public import Development.AutomorphicSpectrum.Proofs.TwistedProofs.ExtensionEmbeddingEvInfRealAd
-public import Development.AutomorphicSpectrum.Proofs.TwistedProofs.EqZeroOfPiInf
-public import Development.AutomorphicSpectrum.Proofs.TwistedProofs.ExistsAdelePiInf
+public import Development.AutomorphicSpectrum.Proofs.TwistedProofs.Bundle0007
 
 @[expose] public section
 

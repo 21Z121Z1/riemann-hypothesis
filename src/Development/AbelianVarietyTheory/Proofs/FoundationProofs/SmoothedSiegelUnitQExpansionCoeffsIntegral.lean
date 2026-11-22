@@ -1,12 +1,10 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Foundations.Imports
-public import Development.AbelianVarietyTheory.Definitions.Divisors.HasQIff
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HasQExpansionOfLevelLinearOperations
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HasQExpansionOfLevelMulOfPosLevel
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HasQExpansionOfLevelCoeffAndFunctionUnique
-public import Development.AbelianVarietyTheory.Definitions.Foundations.MultipliableAndSgNeZero
+public import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0003
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0001
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0149
+public import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0005
 
 @[expose] public section
 

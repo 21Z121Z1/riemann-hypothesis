@@ -2,9 +2,9 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.WeilThetaConvergence
-public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.FirstClauseRankZero
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.MemSchwartzAOfIsSchwartzBruhat
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsArchEquivEq
+public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.Bundle0012
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0190
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0291
 
 @[expose] public section
 

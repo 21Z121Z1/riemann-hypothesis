@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicArithmetic.CommutativeAlgebra.EtaleCohomology.IsChart
-public import Development.AutomorphicArithmetic.CommutativeAlgebra.SpecializationTensorRingHomProperties
-public import Development.AutomorphicArithmetic.CommutativeAlgebra.ExistsSpecializationOfEvalNeZero
+public import Development.AutomorphicArithmetic.CommutativeAlgebra.EtaleCohomology.Bundle0004
+public import Development.AutomorphicArithmetic.CommutativeAlgebra.Bundle0020
+public import Development.AutomorphicArithmetic.CommutativeAlgebra.Bundle0025
 public import Development.AutomorphicArithmetic.CommutativeAlgebra.TensorDedekindLocalUniformizer
 
 @[expose] public section

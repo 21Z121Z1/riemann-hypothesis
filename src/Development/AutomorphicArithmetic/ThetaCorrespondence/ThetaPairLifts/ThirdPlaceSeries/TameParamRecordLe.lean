@@ -1,13 +1,13 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.TameParameterCoupled
-public import Development.DiscreteGroups.GlobalIrreducibility.IneEqOfHasGreenLe
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0724
+public import Development.DiscreteGroups.GlobalIrreducibility.Bundle0002
 public import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.ThirdPlaceSeries.CohomologicalCsdTempered
 public import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.ThirdPlaceSeries.SglobDzBigDef
-public import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.ThirdPlaceSeries.IsRc
+public import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.ThirdPlaceSeries.Bundle0001
 public import Development.AutomorphicArithmetic.Foundations.LocalLanglands.IsRecTOfIsRec
-public import Development.AbelianVarietyTheory.Definitions.Divisors.IsRecTLocRecT
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0038
 
 @[expose] public section
 

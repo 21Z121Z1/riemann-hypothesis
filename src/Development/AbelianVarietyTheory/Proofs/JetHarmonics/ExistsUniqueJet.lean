@@ -1,9 +1,8 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.ExistsAlgHomValuationSubring
-public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.ExistsLieCoordinates
-public import Development.AbelianVarietyTheory.Proofs.FormalGroupCharts.ExistsToJetEq
+public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0062
+public import Development.AbelianVarietyTheory.Proofs.FormalGroupCharts.Bundle0015
 
 @[expose] public section
 

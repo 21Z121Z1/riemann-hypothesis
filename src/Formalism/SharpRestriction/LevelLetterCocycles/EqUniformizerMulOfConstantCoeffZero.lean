@@ -3,7 +3,7 @@ module
 public import Formalism.SharpRestriction.LevelLetterCocycles.HermFlagUnipotentAnisotropicVectorSubMem
 public import Formalism.SharpRestriction.LevelLetterCocycles.AnnihilatorLevelsUnramifiedStatement
 public import Formalism.SharpRestriction.LevelLetterCocycles.QuotientImageDivisibility.ResiduePi0EqNegPrime
-public import Formalism.SharpRestriction.LevelLetterCocycles.CompleteOfPow
+public import Formalism.SharpRestriction.LevelLetterCocycles.Bundle0019
 
 @[expose] public section
 

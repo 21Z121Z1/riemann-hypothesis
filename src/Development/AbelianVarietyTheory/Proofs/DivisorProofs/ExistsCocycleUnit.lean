@@ -1,12 +1,12 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Divisors.QuasiCompact
-public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsIsPullbackPow
-public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.IsPointOfIffThick
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0065
+public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0205
+public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0084
 public import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.ExistsGtPtGenRelRField
 public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ExistsGrpPullbackThick
-public import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.GlobalFnsHolds
+public import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.Bundle0011
 
 @[expose] public section
 

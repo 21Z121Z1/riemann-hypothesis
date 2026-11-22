@@ -1,7 +1,7 @@
 module
 
 public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.TailIntegrals.FixedUnitaryApplyFixedIndexRight
-public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.TailIntegrals.HalfLeNormOneSub
+public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.TailIntegrals.Bundle0002
 
 @[expose] public section
 

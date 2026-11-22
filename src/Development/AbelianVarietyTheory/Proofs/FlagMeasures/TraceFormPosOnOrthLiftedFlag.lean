@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.RowMinor
+public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.Bundle0012
 public import Formalism.SharpRestriction.CuspSpanNormBounds.CongruenceAtSplitFrobeniusHolds
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.CardLeOfDiag
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0250
 
 @[expose] public section
 

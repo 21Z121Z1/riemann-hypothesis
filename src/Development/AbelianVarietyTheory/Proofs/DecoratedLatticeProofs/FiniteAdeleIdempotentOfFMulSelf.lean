@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.IsRatDatum
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.UnitaryClassRepresentativesBijective
+public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.Bundle0022
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0285
 public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsCompactAdele
 public import Formalism.LocalToGlobal.GlobalTheory.GL5.FamilyMassVolumeIdentityOfClassDecomp
 

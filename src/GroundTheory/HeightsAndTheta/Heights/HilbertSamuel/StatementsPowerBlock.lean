@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.IsBoundedAtOfIsBoundedH
+public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0027
 public import GroundTheory.HeightsAndTheta.Heights.Intersections.StatementsAntisym
 
 @[expose] public section

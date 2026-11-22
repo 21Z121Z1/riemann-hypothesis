@@ -1,8 +1,8 @@
 module
 
-public import Development.AutomorphicArithmetic.Foundations.Convolution.RealGroupAnalysis.UnramifiedSplitting.SgLaws
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.CharpolySmulMap
-public import Development.AutomorphicArithmetic.Foundations.Convolution.SplitEigenfunctions.CharacterNorms.FacDefs
+public import Development.AutomorphicArithmetic.Foundations.Convolution.RealGroupAnalysis.UnramifiedSplitting.Bundle0001
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0336
+public import Development.AutomorphicArithmetic.Foundations.Convolution.SplitEigenfunctions.CharacterNorms.Bundle0001
 
 @[expose] public section
 

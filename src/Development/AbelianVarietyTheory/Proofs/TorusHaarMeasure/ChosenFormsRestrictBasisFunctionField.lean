@@ -1,18 +1,17 @@
 module
 
 public import Mathlib
-public import Formalism.LocalToGlobal.ProjectiveLattices.CurveAsm
-public import Formalism.LocalToGlobal.ProjectiveLattices.TieUpC
-public import Formalism.LocalToGlobal.ProjectiveLattices.SupNDataOfNonneg
-public import Formalism.LocalToGlobal.ProjectiveLattices.AxHInst
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0040
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0042
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0037
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0035
 public import Development.AbelianVarietyTheory.Definitions.UpperBounds.PhRec
-public import Development.AbelianVarietyTheory.Proofs.TorusHaarMeasure.GenericSectionInjectiveOfAxH
-public import Development.AbelianVarietyTheory.Proofs.TorusHaarMeasure.IndependentDifferentialsRatiosOfTrdegValues
+public import Development.AbelianVarietyTheory.Proofs.TorusHaarMeasure.Bundle0007
+public import Development.AbelianVarietyTheory.Proofs.TorusHaarMeasure.Bundle0040
 public import Development.AbelianVarietyTheory.Proofs.TorusHaarMeasure.FractionToIntegralSectionSmulEq
 public import Development.AbelianVarietyTheory.Proofs.TorusHaarMeasure.ExistsDvdOfAlgebraic
-public import Development.AbelianVarietyTheory.Proofs.GenericRegularity.CurveModelExistsAllPrimesAllPoints
-public import Development.AbelianVarietyTheory.Proofs.GenericRegularity.CompSplitRecord
-public import Development.AbelianVarietyTheory.Proofs.GenericRegularity.CuspEqZeroOfGenericValues
+public import Development.AbelianVarietyTheory.Proofs.GenericRegularity.Bundle0028
+public import Development.AbelianVarietyTheory.Proofs.GenericRegularity.Bundle0030
 
 @[expose] public section
 

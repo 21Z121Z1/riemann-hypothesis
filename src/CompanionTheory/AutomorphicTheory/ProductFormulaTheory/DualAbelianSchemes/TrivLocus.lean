@@ -1,9 +1,9 @@
 module
 
 public import CompanionTheory.AutomorphicTheory.TemperedLocalSpectra.ObstructionLifting.H1StructureDimLe
-public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.SurjectiveAppTopPullbackSndOfApp
-public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.AppTopSurjective
-public import CompanionTheory.AutomorphicTheory.ProductFormulaTheory.DualAbelianSchemes.TrivLocusB
+public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0070
+public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0015
+public import CompanionTheory.AutomorphicTheory.ProductFormulaTheory.DualAbelianSchemes.Bundle0001
 
 @[expose] public section
 

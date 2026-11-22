@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StHypersurfacePresentation
-public import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StGenericPrimitive
-public import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.PGenericPrimitive
+public import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.Bundle0006
+public import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.Bundle0005
+public import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.Bundle0014
 
 @[expose] public section
 

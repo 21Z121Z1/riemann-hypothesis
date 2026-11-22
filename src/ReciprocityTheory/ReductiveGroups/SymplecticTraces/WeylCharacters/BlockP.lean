@@ -1,6 +1,6 @@
 module
 
-public import ReciprocityTheory.ReductiveGroups.SymplecticTraces.WeylCharacters.BlockCombStatement
+public import ReciprocityTheory.ReductiveGroups.SymplecticTraces.WeylCharacters.Bundle0001
 
 @[expose] public section
 

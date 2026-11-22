@@ -1,9 +1,9 @@
 module
 
-public import Formalism.LocalToGlobal.GlobalTheory.UnramifiedTrace.DUPt0FOfVals
+public import Formalism.LocalToGlobal.GlobalTheory.UnramifiedTrace.Bundle0003
 public import Formalism.LocalToGlobal.GlobalTheory.UnramifiedTrace.NatSmulInv
 public import Formalism.LocalToGlobal.GlobalTheory.UnramifiedDiagonal.DiaFun
-public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.CrossDiagonalMatching.DualSigmaApply
+public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.CrossDiagonalMatching.Bundle0003
 
 @[expose] public section
 

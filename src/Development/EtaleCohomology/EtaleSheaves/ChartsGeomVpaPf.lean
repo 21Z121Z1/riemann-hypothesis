@@ -1,6 +1,6 @@
 module
 
-public import Development.EtaleCohomology.EtaleSheaves.FibreIdem
+public import Development.EtaleCohomology.EtaleSheaves.Bundle0045
 
 @[expose] public section
 

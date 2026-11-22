@@ -2,7 +2,7 @@ module
 
 public import Formalism.SatakeDualWeyl.Statement
 public import Mathlib
-public import Formalism.GL3MeanSquares.HookFormulaTorsion.InvariantKernelTraceVanishes
+public import Formalism.GL3MeanSquares.HookFormulaTorsion.Bundle0002
 
 @[expose] public section
 

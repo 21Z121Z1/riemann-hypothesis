@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Formalism.LocalToGlobal.Divisibility.DivisionCompatibleToSub2Indef2
+public import Formalism.LocalToGlobal.Divisibility.Bundle0004
 public import Formalism.LocalToGlobal.Columns.StdLatUnimodular
 
 @[expose] public section

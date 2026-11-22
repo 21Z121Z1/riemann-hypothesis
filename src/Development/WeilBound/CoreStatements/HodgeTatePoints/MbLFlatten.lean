@@ -1,15 +1,15 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.GlueApplyOfNotInFibre
-public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsGenericFlag
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.Bundle0005
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.Bundle0004
 public import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.LatNormGrLatNeZeroOfSpan
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.IsCompletedStrictHens
-public import Development.WeilBound.CoreStatements.HodgeTatePoints.MbLCentre
-public import Development.WeilBound.CoreStatements.HodgeTatePoints.McCramer
-public import Development.WeilBound.CoreStatements.HodgeTatePoints.MbLPulllocCentre
-public import Development.WeilBound.CoreStatements.HodgeTatePoints.MaBase
-public import Development.WeilBound.CoreStatements.HodgeTatePoints.MaSerre
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.Bundle0001
+public import Development.WeilBound.CoreStatements.HodgeTatePoints.Bundle0019
+public import Development.WeilBound.CoreStatements.HodgeTatePoints.Bundle0012
+public import Development.WeilBound.CoreStatements.HodgeTatePoints.Bundle0023
+public import Development.WeilBound.CoreStatements.HodgeTatePoints.Bundle0011
+public import Development.WeilBound.CoreStatements.HodgeTatePoints.Bundle0030
 
 @[expose] public section
 

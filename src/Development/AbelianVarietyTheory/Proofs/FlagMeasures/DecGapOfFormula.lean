@@ -1,12 +1,12 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Statements.CuspFrameWeights.EigenfunctionFiniteCoefficients
+public import Development.AbelianVarietyTheory.Statements.CuspFrameWeights.Bundle0001
 public import Formalism.RealPlaceAnalysis.FinalF
 public import Formalism.RealPlaceAnalysis.RealPlaceTaylor.CompactHaarRightInvariantInst
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ProdLeadMinorDecay
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0118
 public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.NormPosOfIsUnit
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.MemUJsetOfKset
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0111
 
 @[expose] public section
 

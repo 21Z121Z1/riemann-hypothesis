@@ -1,7 +1,7 @@
 module
 
 public import Development.WeilBound.ThetaLifts.LeviDeterminants.MixedModels.PlaneC
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsRationalDarbouxCoordinatesTensorHermitian
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1551
 
 @[expose] public section
 

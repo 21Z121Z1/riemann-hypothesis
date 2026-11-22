@@ -1,11 +1,11 @@
 module
 
 public import Formalism.SharpRestriction.GrowthBounds.BinomialPolynomialIdentities.LowerSetTypesSpan
-public import Formalism.SharpRestriction.GrowthBounds.BinomialPolynomialIdentities.AdmissibleWordBasis
-public import Formalism.SharpRestriction.GrowthBounds.RootWeights.GeneratedWeightLemmaOfReducibility
-public import Formalism.SharpRestriction.GrowthBounds.RootWeights.WeightConditionFromIntegralForm
-public import Formalism.SharpRestriction.GrowthBounds.RootWeights.ContravariantOrthogonalityHolds
-public import Formalism.SharpRestriction.GrowthBounds.RootWeights.IsotypicProjectorSelfAdjoint
+public import Formalism.SharpRestriction.GrowthBounds.BinomialPolynomialIdentities.Bundle0005
+public import Formalism.SharpRestriction.GrowthBounds.RootWeights.Bundle0016
+public import Formalism.SharpRestriction.GrowthBounds.RootWeights.Bundle0023
+public import Formalism.SharpRestriction.GrowthBounds.RootWeights.Bundle0008
+public import Formalism.SharpRestriction.GrowthBounds.RootWeights.Bundle0005
 
 @[expose] public section
 

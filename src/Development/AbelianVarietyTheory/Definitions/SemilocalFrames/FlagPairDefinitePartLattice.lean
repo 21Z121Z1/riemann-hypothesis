@@ -2,9 +2,9 @@ module
 
 public import Mathlib
 public import Formalism.FlagUnipotentLattices.MemOfOrthogonalAnisotropic
-public import Formalism.HermitianLattices.StatementMass
+public import Formalism.HermitianLattices.Bundle0003
 public import Formalism.HermitianLattices.HermitianLatticesProofs.MassBasic
-public import Formalism.HermitianLattices.HermitianLatticesProofs.AutFinite
+public import Formalism.HermitianLattices.HermitianLatticesProofs.Bundle0004
 
 @[expose] public section
 

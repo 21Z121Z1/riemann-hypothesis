@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import GroundTheory.HeightsAndTheta.Heights.FieldsOfNumbers.StatementsDegZeroLocDim
+public import GroundTheory.HeightsAndTheta.Heights.FieldsOfNumbers.Bundle0014
 
 @[expose] public section
 

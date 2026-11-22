@@ -2,11 +2,10 @@ module
 
 public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.TensorRepresentations.HidaSetting
 public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.TensorRepresentations.TensorV
-public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.CasimirAlgebra.CasimirKKhwVec
-public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.CasimirAlgebra.MulMulSubMulMulEqAdd
+public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.CasimirAlgebra.Bundle0001
 public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.BochnerInequality.CasimirGapAtNoncompactWeight
-public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.BochnerInequality.KUnitB
-public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.TensorRepresentations.CoefAInnerEqZero
+public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.BochnerInequality.Bundle0003
+public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.TensorRepresentations.Bundle0001
 
 @[expose] public section
 

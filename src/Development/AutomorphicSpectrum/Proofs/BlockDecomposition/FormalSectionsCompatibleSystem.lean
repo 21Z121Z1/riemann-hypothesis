@@ -1,10 +1,10 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.NonzeroLocusSecMonoConst
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IsIsoOfIsClosedImmersionOfThickenings
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0259
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0119
 public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsProjectiveAlgebraisationFormalCompleteLoca
-public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.IsHomogeneousXPowMulAddXPowMul
+public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.Bundle0097
 
 @[expose] public section
 

@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsGDatumOneOneOne
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.IsReducedTensorIntNumberField
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0015
 
 @[expose] public section
 

@@ -1,18 +1,18 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.RealLowestKTypeCoeffSquareIntegrable
+public import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.Bundle0002
 public import Formalism.LocalToGlobal.IndefiniteReal.BaseLiftsPackageOfPrimitiveLinks
 public import Formalism.LocalToGlobal.IndefiniteReal.NormalDecomposition.LiftHeckeOperators
 public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisGeometry₂.HoweUnram
-public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.ExistsNormLeHeightPow
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FinRepApply
-public import Formalism.LocalToGlobal.IndefiniteReal.LiftCoordinatesInGoodPartFamily
+public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.Bundle0007
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0831
+public import Formalism.LocalToGlobal.IndefiniteReal.Bundle0017
 public import Formalism.LocalToGlobal.IndefiniteReal.LiftGoodPartComplexEqRangeFamily
-public import Formalism.LocalToGlobal.IndefiniteReal.EqZeroOfRangeAdjoint
+public import Formalism.LocalToGlobal.IndefiniteReal.Bundle0007
 public import Formalism.LocalToGlobal.IndefiniteReal.RationalAdjoints.RatThOfLiftTest
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.GoodProjectorUnitaryFormsModelLaws
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RangeGoodProjectorBaseLevelTwistedModel
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0117
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1009
 
 @[expose] public section
 
@@ -249,7 +249,7 @@ theorem posScal_of_galD : ∀ {D : D7} {G : Type} [Group G] [Fintype G] {Pl0 I0 
       rfl
     rw [e1]
     refine ⟨?_, ?_⟩
-    · have h1 := (GlobalTheory.T.goodProjector_unitaryFormsModel_laws R.toRealDat F.lv2 hcore hirr i).2.2.2 A3.A.μ0
+    · have h1 := (_root_.GlobalTheory.Hk3.eH_laws R.toRealDat F.lv2 hcore hirr i).2.2.2 A3.A.μ0
         (Tw.out (s := twAt D.what₂.embLL A3.A.v0) ((R.toCx3 F).jL i A3.A.μ0 (F.cr.toL (R.toCx3 F).zs false i A3.A.μ0 (Pi.single k 1))))
       have h2 : cj (twAt D.what₂.embLL A3.A.v0) (R.phs i) • R.thG i A3.A.μ0
           (Tw.out (s := twAt D.what₂.embLL A3.A.v0) ((R.toCx3 F).jL i A3.A.μ0 (F.cr.toL (R.toCx3 F).zs false i A3.A.μ0 (Pi.single k 1)))) ∈

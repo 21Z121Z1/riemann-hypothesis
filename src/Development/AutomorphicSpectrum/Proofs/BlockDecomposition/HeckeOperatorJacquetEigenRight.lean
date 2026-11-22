@@ -2,11 +2,10 @@ module
 
 public import Mathlib
 public import Development.WeilBound.CoreStatements.TemperedRepresentationTheory.SquareIntegrableTempered.CentredSegments.IrreducibleUnif
-public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.IrreducibleAdmissibleGL
-public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.StandardFunctorsFiniteLength
+public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.Bundle0002
 public import GroundTheory.AutomorphicForms.SmoothRep
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IwahoriBlockUpperLeviLower
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IsOpenIsCompactPrincipal
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0036
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0062
 public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.TypeFunctionConstantTermVanishSplitPlace
 
 @[expose] public section

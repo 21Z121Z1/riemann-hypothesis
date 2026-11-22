@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.RatInOfUnit
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0142
 public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.FirstStandardPairMemberHasThetaFunction
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.GramMapMulInv
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0198
 public import Development.AbelianVarietyTheory.Proofs.HeightProofs.EmbeddingXiZeroNeZero
 
 @[expose] public section

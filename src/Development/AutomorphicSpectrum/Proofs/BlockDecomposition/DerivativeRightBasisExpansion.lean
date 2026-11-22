@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.RwAppend
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0207
 
 @[expose] public section
 

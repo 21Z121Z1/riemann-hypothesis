@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.InterBridgeF
-public import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.StPtsPosPartLocal
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.Bundle0014
+public import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.Bundle0020
 
 @[expose] public section
 

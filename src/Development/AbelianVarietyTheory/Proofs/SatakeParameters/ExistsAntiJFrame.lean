@@ -4,9 +4,9 @@ public import Mathlib
 public import Development.AbelianVarietyTheory.BlockTheory.ThetaLiftGeometry.InertPlaceSetting
 public import Formalism.LocalToGlobal.IndefiniteReal.ScalarOnPartsFull
 public import Formalism.LocalToGlobal.IndefiniteReal.LocalNewformFunction
-public import Formalism.SatakeDualWeyl.StatementF
+public import Formalism.SatakeDualWeyl.Bundle0001
 public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.InertPlaceHeckeDoubleCosetsInverseRepsLabel
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnitaryDivisorDualLabel
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0841
 
 @[expose] public section
 
@@ -347,7 +347,7 @@ theorem exists_antiJ_frame (hU : IsUnramInv ϖ σ q) (n : ℕ) :
     show (B * B).map ι = (1 : Matrix _ _ _).map ι
     rw [Matrix.map_mul, hBι, GlobalTheory.DualDivU.antiJ_sq, Matrix.map_one _ (map_zero ι) (map_one ι)])
   obtain ⟨p, hp⟩ := GlobalTheory.UnitaryDoubleCoset.exists_poly_norm hc
-    (GlobalTheory.T.exists_norm_eq_X_mod_monic_of_adicComplete_involution (v.adicCompletionIntegers K) _ c hc hI hω) hB (IsUnit.of_mul_eq_one _ hBB)
+    (_root_.GlobalTheory.InertNorm.exists_dvd_mul_map_sub_X (v.adicCompletionIntegers K) _ c hc hI hω) hB (IsUnit.of_mul_eq_one _ hBB)
   have h1 : (B * cT c (Polynomial.aeval B p)) * Polynomial.aeval B p = 1 := by rw [Matrix.mul_assoc, hp, hBB]
   refine ⟨bc ι ⟨Polynomial.aeval B p, _, mul_eq_one_comm.1 h1, h1⟩, ⟨_, rfl⟩, ?_⟩
   show cT σ ((Polynomial.aeval B p).map ι) * 1 * (Polynomial.aeval B p).map ι = _

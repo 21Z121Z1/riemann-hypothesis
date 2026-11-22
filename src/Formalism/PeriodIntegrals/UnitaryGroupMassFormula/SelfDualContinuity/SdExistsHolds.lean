@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.SelfDualContinuity.ContinuousReTupSymm
-public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.HaarFibreUniqueness.SdExInst
+public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.HaarFibreUniqueness.Bundle0002
 
 @[expose] public section
 

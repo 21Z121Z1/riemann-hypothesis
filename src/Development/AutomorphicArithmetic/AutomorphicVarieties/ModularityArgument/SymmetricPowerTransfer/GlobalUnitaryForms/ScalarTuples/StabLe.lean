@@ -1,8 +1,8 @@
 module
 
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.SymmetricPowerTransfer.GlobalUnitaryForms.HodgeTateFromSandwich
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.SymmetricPowerTransfer.TraceFormulaEigenvalues.FormsFin
-public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.IsIntConj
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.SymmetricPowerTransfer.TraceFormulaEigenvalues.Bundle0001
+public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0036
 
 @[expose] public section
 

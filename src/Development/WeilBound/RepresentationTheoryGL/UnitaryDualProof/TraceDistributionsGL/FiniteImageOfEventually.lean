@@ -2,7 +2,7 @@ module
 
 public import Development.WeilBound.RepresentationTheoryGL.UnitaryDualProof.TraceDistributionsGL.PhiIndep
 public import Development.WeilBound.CoreStatements.AutomorphicKernels.BernsteinUnitaryProducts.BernsteinTheoremA.LeviTransposeDistributions.BoundOneTwo
-public import Development.WeilBound.RepresentationTheoryGL.UnitaryDualProof.TraceDistributionsGL.DetUpdateRowOneLast
+public import Development.WeilBound.RepresentationTheoryGL.UnitaryDualProof.TraceDistributionsGL.Bundle0001
 
 @[expose] public section
 

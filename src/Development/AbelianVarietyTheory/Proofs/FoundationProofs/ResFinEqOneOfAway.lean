@@ -2,15 +2,15 @@ module
 
 public import Mathlib
 public import Formalism.SharpRestriction.LevelLetterCocycles.BlochKatoPhases
-public import Formalism.PairingDivisors.StatementA
+public import Formalism.PairingDivisors.Bundle0001
 public import Development.AbelianVarietyTheory.Definitions.Divisors.IsFinSetSplitPlacesCoprimeConductor
 public import Development.AbelianVarietyTheory.BlockTheory.AdelicCMFields.UnitaryHeckeCharacterIdele
 public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsPlaceOverMoveValConjPl
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ValuedPowSubOneLtOne
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsProdInfMulFinPart
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.HostCmData
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsSplitPlOfTwoMem
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.HeckeLEntireAndNonzeroAtOneHolds
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0102
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0099
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0081
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0400
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0097
 
 @[expose] public section
 

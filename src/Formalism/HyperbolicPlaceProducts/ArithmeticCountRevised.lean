@@ -1,7 +1,7 @@
 module
 
-public import Formalism.HyperbolicPlaceProducts.DetIndexProductHyperbolicInequality
-public import Formalism.HyperbolicPlaceProducts.SubgroupIndexCounts.DetIndexProductHyperbolicInequality
+public import Formalism.HyperbolicPlaceProducts.Bundle0001
+public import Formalism.HyperbolicPlaceProducts.SubgroupIndexCounts.Bundle0001
 
 @[expose] public section
 

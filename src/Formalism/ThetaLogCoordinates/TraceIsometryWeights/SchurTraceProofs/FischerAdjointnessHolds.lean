@@ -1,6 +1,6 @@
 module
 
-public import Formalism.ThetaLogCoordinates.TraceIsometryWeights.StatementD
+public import Formalism.ThetaLogCoordinates.TraceIsometryWeights.Bundle0001
 
 @[expose] public section
 

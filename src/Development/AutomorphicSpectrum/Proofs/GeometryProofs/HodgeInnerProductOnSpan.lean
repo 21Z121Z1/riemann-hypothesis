@@ -1,18 +1,17 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.SlopeBoundSt
-public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.ArchBetween
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.Bundle0012
 public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.BdryChart
 public import Development.AutomorphicSpectrum.Definitions.MetricPeriods.ClopenCondOnto
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.UniformisationConclusion
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.HeckeKer
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.Bundle0003
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.BlowupProjections.BlowupProjStatement
 public import Development.AbelianVarietyTheory.PublishedTheorems.SemiabelianTori.GeometricallyConnectedSplitTorusAff
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.HodgeInnerProductPullbackUniqueStatement
-public import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.ExistsUniqueLinearLiftOfHolomorphicAbelianVariet
-public import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.ExistsLinearOfIsMonHom
-public import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.SubsingletonPrimeSpectrum
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.HodgeInnerProductPullbackUnique
+public import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.Bundle0009
+public import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.Bundle0010
+public import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.Bundle0013
 public import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.EqZeroOfSumEmbeddingSmul
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.IsMonHomOfMul
 
@@ -326,7 +325,7 @@ theorem hodgeInnerProduct_of_span : ∀ (E : Type) [Field E] [NumberField E] [Is
   have hWW : ∀ a ∈ W, ∀ b ∈ W, T a b = core.inner a b := fun a ha b hb => by
     obtain ⟨a', ea⟩ := hlift (Mz.pt a)
     obtain ⟨b', eb⟩ := hlift (Mz.pt b)
-    exact (GlobalTheory.T.hodge_inner_product_pullback_unique E H S' S t₀ t f m z₀ a' b' _ _ ea eb).2 _ _ (hT a b) (hW a ha b hb)
+    exact (_root_.GlobalTheory.CompanionTheory.Ar.HodgeUnique.main E H S' S t₀ t f m z₀ a' b' _ _ ea eb).2 _ _ (hT a b) (hW a ha b hb)
   have hr : ∀ x y y', core.inner x (y + y') = core.inner x y + core.inner x y' := fun x y y' => by
     rw [← core.conj_inner_symm, core.add_left, map_add (f := _), core.conj_inner_symm, core.conj_inner_symm]
   have hs : ∀ (c : ℂ) x y, core.inner x (c • y) = c * core.inner x y := fun c x y => by

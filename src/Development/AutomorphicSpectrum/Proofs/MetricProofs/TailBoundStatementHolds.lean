@@ -3,7 +3,7 @@ module
 public import Mathlib
 public import ReciprocityTheory.AnalyticForms.LeviForms.IsRegFamilyInhabitStatement
 public import ReciprocityTheory.AnalyticForms.LeviForms.TailBound
-public import Development.AutomorphicSpectrum.Proofs.MetricProofs.CompChartEventuallyEq
+public import Development.AutomorphicSpectrum.Proofs.MetricProofs.Bundle0016
 
 @[expose] public section
 

@@ -1,10 +1,10 @@
 module
 
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.KloostDensOfParts
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0059
 public import Formalism.HermitianCurvature.HermitianCurvatureProofs.SymmetricScalarBlockMatrixMul
 public import Formalism.HermitianCurvature.HermitianCurvatureProofs.DirectionsInParabolic
 public import Formalism.HermitianCurvature.HermitianCurvatureProofs.TopCellsOfParts
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.UnitaryInvariantGaussian
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0004
 
 @[expose] public section
 

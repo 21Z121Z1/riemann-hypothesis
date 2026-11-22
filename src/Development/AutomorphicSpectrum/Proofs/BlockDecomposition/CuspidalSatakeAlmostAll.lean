@@ -3,10 +3,10 @@ module
 public import Mathlib
 public import Development.WeilBound.CoreStatements.AbelianHeightsDuality.GelfandKazhdanDuality.IsCuspFormDualMap
 public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.HasSatakeGLOfIsSatVecGL
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.EventuallyMemFixed
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.AlgebraMapIntertwiningMapBijectiveOfIsSmooth
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0194
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0621
 public import Formalism.LocalToGlobal.NumberFieldFamilies.ThetaCT
-public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.ImportsRestTail
+public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0032
 
 @[expose] public section
 
@@ -311,7 +311,7 @@ theorem exists_hasSatGL_of_scalar {π : Representation ℂ (GL (Fin n) (w.adicCo
       refine ⟨_, ⟨Finset.mem_singleton_self _, ?_⟩, fun γ hγ => Finset.mem_singleton.1 hγ.1⟩
       rw [← tor_const_comm, mul_assoc, inv_mul_cancel_left]
       exact mul_mem ha hb
-  obtain ⟨B, hB, hBc⟩ := GlobalTheory.T.exists_multiset_satakeEigenvalue_eq (qV E w) n (qV_ne_zero w) c c0 cn
+  obtain ⟨B, hB, hBc⟩ := _root_.GlobalTheory.LFun.exists_satEig_eq (qV E w) n (qV_ne_zero w) c c0 cn
   refine ⟨B, hs, fun y hy hy0 => ⟨hy0, hy, hB, fun ϖ' hu' j hj => ?_⟩⟩
   have hv : Valued.v (ϖ' / ϖ) = 1 := by
     rw [map_div₀, hu, hu', div_self WithZero.coe_ne_zero]

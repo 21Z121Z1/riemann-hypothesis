@@ -1,11 +1,11 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsAttachedHodge
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0695
 public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.ContinuousConjFin
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.HostCmEmbeddingProperties
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.UnderEqIffConjPl
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.DenseRangeUnits
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0094
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0095
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0099
 
 @[expose] public section
 

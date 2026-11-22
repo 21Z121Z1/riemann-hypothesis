@@ -1,9 +1,9 @@
 module
 
-public import Formalism.GaussJetBounds.FrameJetEval
+public import Formalism.GaussJetBounds.Bundle0004
 public import Formalism.GaussJetBounds.GaussJetProofs.Generic
 public import Formalism.GaussJetBounds.GaussJetProofs.GField
-public import Formalism.GaussJetBounds.GaussJetProofs.ConstantCoeffEvenDerivativeEqZero
+public import Formalism.GaussJetBounds.GaussJetProofs.Bundle0003
 
 @[expose] public section
 

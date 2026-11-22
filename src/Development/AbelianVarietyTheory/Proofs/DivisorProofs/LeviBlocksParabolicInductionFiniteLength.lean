@@ -1,8 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.IrreducibleAdmissibleGL
-public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.StandardFunctorsFiniteLength
+public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.Bundle0002
 
 @[expose] public section
 

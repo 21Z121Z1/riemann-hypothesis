@@ -1,7 +1,7 @@
 module
 
-public import Formalism.SharpRestriction.AdmissibleParameterJoins.DIVfromGLm
-public import Formalism.SharpRestriction.GlobalSchurBounds.AlcoveOf
+public import Formalism.SharpRestriction.AdmissibleParameterJoins.Bundle0006
+public import Formalism.SharpRestriction.GlobalSchurBounds.Bundle0003
 
 @[expose] public section
 

@@ -3,9 +3,9 @@ module
 public import Development.AutomorphicArithmetic.Foundations.IwahoriReduction.SiegelFixedPoints.IsThBIff
 public import Development.AbelianVarietyTheory.Definitions.Foundations.IsLamOfLSmulIff
 public import Development.AutomorphicArithmetic.Foundations.IwahoriReduction.SiegelFixedPoints.WcocEdge0
-public import Development.AbelianVarietyTheory.Definitions.Foundations.LiftSLMapMulInvMem
+public import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0022
 public import Development.AbelianVarietyTheory.Definitions.Foundations.ActWBOfInvariant
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ModularFunctionTowerIntegrality
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0139
 
 @[expose] public section
 

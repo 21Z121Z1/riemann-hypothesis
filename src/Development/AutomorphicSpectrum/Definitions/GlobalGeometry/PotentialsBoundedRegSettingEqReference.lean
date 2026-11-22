@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Statements.GeometryStatements.NineGeoU
+public import Development.AutomorphicSpectrum.Statements.GeometryStatements.Bundle0006
 
 @[expose] public section
 

@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import GroundTheory.TateCohomology.SplittingModule
-public import GroundTheory.TateCohomology.CohTrivial
-public import GroundTheory.TateCohomology.ResCores
+public import GroundTheory.TateCohomology.Bundle0008
+public import GroundTheory.TateCohomology.Bundle0009
+public import GroundTheory.TateCohomology.Bundle0006
 
 @[expose] public section
 

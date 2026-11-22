@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.SegmentRepresentationIff
+public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.Bundle0008
 
 @[expose] public section
 

@@ -1,7 +1,7 @@
 module
 
 public import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.ProjectiveAutomorphicHecke.CyclotomicConjugation.QuadConjAlt
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.PolarizedPairBaseChangePolarizedSameWeight
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0334
 
 @[expose] public section
 

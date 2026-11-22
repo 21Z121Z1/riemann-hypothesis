@@ -1,11 +1,11 @@
 module
 
 public import Mathlib
-public import Formalism.LocalToGlobal.ProjectiveLattices.CrudeVal
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0015
 public import Development.AutomorphicSpectrum.Definitions.MetricPeriods.HasMultiplier
-public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.ConjEmbRtOfNe
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.Bundle0015
 public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.OverLaUnique
-public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IntegralClosureHeightEqOneOfLiesOver
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.Bundle0010
 
 @[expose] public section
 

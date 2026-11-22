@@ -1,8 +1,8 @@
 module
 
-public import Formalism.LocalToGlobal.GlobalTheory.GL6.LatticeInclusionOfSubIntegral
+public import Formalism.LocalToGlobal.GlobalTheory.GL6.Bundle0003
 public import Formalism.LocalToGlobal.GlobalTheory.GL6.PBwLocGen
-public import Formalism.LocalToGlobal.GroupLattices.LevelCharts.FiniteClassSetOfFiniteIndex
+public import Formalism.LocalToGlobal.GroupLattices.LevelCharts.Bundle0004
 
 @[expose] public section
 

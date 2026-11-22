@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import GroundTheory.TateCohomology.InducedNorm
+public import GroundTheory.TateCohomology.Bundle0003
 public import GroundTheory.TateCohomology.DimensionShift
 public import GroundTheory.TateCohomology.TateConnecting
 

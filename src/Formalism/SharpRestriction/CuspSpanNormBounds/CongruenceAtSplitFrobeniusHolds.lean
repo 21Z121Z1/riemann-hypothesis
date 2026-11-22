@@ -8,10 +8,10 @@ public import Formalism.SharpRestriction.CuspSpanNormBounds.RelevantZeroGramTerm
 public import Formalism.SharpRestriction.CuspSpanNormBounds.StandingNumericalData
 public import Formalism.SharpRestriction.CuspSpanNormBounds.IsPrimitiveSub
 public import Formalism.SharpRestriction.CuspSpanNormBounds.FlagEEqHyperbolic
-public import Formalism.SharpRestriction.CuspSpanNormBounds.CntPartners
+public import Formalism.SharpRestriction.CuspSpanNormBounds.Bundle0004
 public import Formalism.SharpRestriction.CuspSpanNormBounds.NormalizedLocalScale
 public import Formalism.SharpRestriction.CuspSpanNormBounds.IsTermOver
-public import Formalism.HermitianLattices.StatementMass
+public import Formalism.HermitianLattices.Bundle0003
 
 @[expose] public section
 

@@ -1,11 +1,12 @@
 module
 
-public import Development.WeilBound.CoreStatements.AutomorphicKernels.SiegelWeilFormula.DilationDecomposition.Assembly
-public import Development.WeilBound.CoreStatements.AutomorphicKernels.SiegelWeilFormula.DilationDecomposition.SplitDomOf
-public import Development.WeilBound.CoreStatements.AutomorphicKernels.SiegelWeilFormula.DilationDecomposition.Bridge
-public import Development.WeilBound.CoreStatements.AutomorphicKernels.SiegelWeilFormula.DilationDecomposition.ContinuousMhUInv
-public import Development.WeilBound.CoreStatements.AutomorphicKernels.SiegelWeilFormula.ThetaSplitting.SplitW
-public import Development.AutomorphicSpectrum.Proofs.GlobalProofs.SiegelSetUnitaryStatement
+public import Development.WeilBound.CoreStatements.AutomorphicKernels.SiegelWeilFormula.DilationDecomposition.Bundle0003
+public import Development.WeilBound.CoreStatements.AutomorphicKernels.SiegelWeilFormula.DilationDecomposition.Bundle0004
+public import Development.WeilBound.CoreStatements.AutomorphicKernels.SiegelWeilFormula.DilationDecomposition.Bundle0002
+public import Development.WeilBound.CoreStatements.AutomorphicKernels.SiegelWeilFormula.ThetaSplitting.Bundle0001
+public import Mathlib
+public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.IsSmoothModerateOfIsAutFunSm
+public import Development.AutomorphicSpectrum.Proofs.GlobalProofs.SiegelSetUnitary
 
 @[expose] public section
 
@@ -26,7 +27,7 @@ theorem gIdil (hT : TAll) (hAux : AuxiliaryPrimeFunction) (hLE : LocOpEx) (hAw :
     (thetaBdd_of hS) hLF hBD holMean derCont stripOK
 
 theorem gIdil' (hT : TAll) (hAux : AuxiliaryPrimeFunction) (hLE : LocOpEx) (hAw : AwayAct) (hLF : LocFamG) : GIdil :=
-  gIdil hT hAux hLE hAw GlobalTheory.T.siegel_set_unitary hLF bigDense
+  gIdil hT hAux hLE hAw _root_.GlobalTheory.CompanionTheory.SiegelRed.siegelSetUnitary hLF bigDense
 
 end PositivityTheory.SiegelWeilFormula.Kdil
 

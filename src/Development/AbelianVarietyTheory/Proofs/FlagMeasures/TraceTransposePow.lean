@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ScalarOfMultOne
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0151
 public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.SmoothAddSmul
-public import Development.AbelianVarietyTheory.Proofs.HeightProofs.CommuteGelfandInvariantMatrixUnitsOfGlRel
+public import Development.AbelianVarietyTheory.Proofs.HeightProofs.Bundle0007
 
 @[expose] public section
 

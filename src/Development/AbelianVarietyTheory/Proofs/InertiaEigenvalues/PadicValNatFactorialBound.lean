@@ -1,14 +1,13 @@
 module
 
-public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.IsPotential
-public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.OneSubPhiOntoOfFilZero
-public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.BhattScholzeCrystallineLattices
-public import Development.AbelianVarietyTheory.BlockTheory.NonGaloisCusps.ConductorExponents
+public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0017
+public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.Bundle0007
+public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.Bundle0005
+public import Development.AbelianVarietyTheory.BlockTheory.NonGaloisCusps.Bundle0004
 public import Development.AbelianVarietyTheory.CrystallinePeriods.RingIface
-public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.IsCrisP
-public import Development.AbelianVarietyTheory.CrystallinePeriods.CrisMaps
+public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.Bundle0002
+public import Development.AbelianVarietyTheory.CrystallinePeriods.Bundle0001
 public import Development.AbelianVarietyTheory.CrystallinePeriods.CrisMapsLoc
-public import Development.AbelianVarietyTheory.CrystallinePeriods.RingBasics
 
 @[expose] public section
 

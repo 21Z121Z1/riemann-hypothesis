@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import GroundTheory.HeightsAndTheta.Heights.FieldsOfNumbers.Statements
-public import GroundTheory.HeightsAndTheta.Heights.FieldsOfNumbers.PGradedFinite
+public import GroundTheory.HeightsAndTheta.Heights.FieldsOfNumbers.Bundle0003
 
 @[expose] public section
 

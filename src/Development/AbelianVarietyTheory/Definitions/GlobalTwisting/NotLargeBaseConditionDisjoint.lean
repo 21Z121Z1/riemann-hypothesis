@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.EventuallyAllScaleContextsAndOfBoth
-public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.NotBaseCondFalse
+public import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.Bundle0006
+public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.Bundle0027
 
 @[expose] public section
 

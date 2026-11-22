@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.IsSigmaCompactConeInter
-public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.GaussianProjectionConeCoareaStatement
-public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.GaussianProjectionBallIndicatorStatement
+public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.Bundle0067
+public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.Bundle0065
+public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.Bundle0068
 
 @[expose] public section
 
@@ -45,7 +45,7 @@ theorem PositivityTheory.Xgn.t_xgz_chow_mahler_fibreavg : ∀ n m : ℕ, 0 < m �
           (Metric.ball (0 : EuclideanSpace ℂ (Fin m)) 1).indicator 1 (linProj π y) *
             ENNReal.ofReal (coneJac h J π y) ∂μ := by
     intro π
-    have harea := GlobalTheory.T.gaussian_projection_cone_coarea n m h J hJ hm hmn hfib π A hA
+    have harea := _root_.GlobalTheory.CompanionTheory.Ar.Short.Crofton.coneArea_inter n m h J hJ hm hmn hfib π A hA
       ((Metric.ball (0 : EuclideanSpace ℂ (Fin m)) 1).indicator 1)
       (measurable_one.indicator Metric.isOpen_ball.measurableSet)
     have hind : ∫⁻ w, cntOver (coneSet h J ∩ A) π w *

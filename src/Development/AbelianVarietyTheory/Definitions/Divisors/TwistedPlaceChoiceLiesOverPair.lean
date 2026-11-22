@@ -1,26 +1,26 @@
 module
 
 public import Mathlib
-public import Formalism.LocalToGlobal.UnitaryNorms.CharGal
+public import Formalism.LocalToGlobal.UnitaryNorms.Bundle0007
 public import Development.AbelianVarietyTheory.Definitions.Divisors.TupleReadBaseTupleEqFamily
 public import Formalism.LocalToGlobal.IndefiniteForms.IndefiniteTree.FunctionalLowerBoundOfConditionsNumeric
 public import Development.AbelianVarietyTheory.Definitions.Divisors.BasePlaceNotMemChiGridBadPlaces
-public import Development.AbelianVarietyTheory.Definitions.Divisors.NonemptyGridDataIff
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0046
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsWeilOver
-public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.NotTeichTrivOfIsDelta
-public import Formalism.LocalToGlobal.UnitaryNorms.CharTied
-public import Formalism.LocalToGlobal.HermitianColumns.SymAll
+public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0016
+public import Formalism.LocalToGlobal.UnitaryNorms.Bundle0006
+public import Formalism.LocalToGlobal.HermitianColumns.Bundle0004
 public import Formalism.LocalToGlobal.KernelLattices.LateralTheory
 public import Formalism.LocalToGlobal.BesselHermitianTheta.AllTied
 public import Formalism.LocalToGlobal.GlobalTheory.GL5.Statement
 public import Formalism.SharpRestriction.GlobalSchurBounds.TaylorLogMetric
 public import Formalism.SharpRestriction.GlobalSchurBounds.ProductFirstZerothParts
-public import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.DisjointExceptional
+public import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.Bundle0003
 public import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.ThinScalesIffHostBound
 public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.IsRationalUnitaryDeterminantMapRationalUnitaryTo
-public import Development.AbelianVarietyTheory.BlockTheory.NonGaloisCusps.GoodPairSystems
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MatLatSmulLeOfIsIntegral
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsGaloisGe
+public import Development.AbelianVarietyTheory.BlockTheory.NonGaloisCusps.Bundle0008
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0566
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0105
 
 @[expose] public section
 
@@ -191,7 +191,7 @@ theorem exists_fieldHas (G : GridData Lc sc) :
   have h1 : ∀ a : Fin D.R.m, ∃ M : IntermediateField ℚ ℂ, FiniteDimensional ℚ M ∧
       (G.ch.chiH (a.1 + 1)).ValuesIn 0 M.val.toRingHom := fun a => by
     obtain ⟨n, hn, hi⟩ := lamOf_hasInfQ G a
-    have := GlobalTheory.T.algebraicHeckeChar_values_in_numberField D.host.F D.host.E c (D.R.Psi) (embPsi D.host) hcm _ n 0 hi fun g => by
+    have := _root_.GlobalTheory.Mem.ValAlg.values_in_numberField D.host.F D.host.E c (D.R.Psi) (embPsi D.host) hcm _ n 0 hi fun g => by
       have h3 : (n g : ℚ) = 2 * ((lamOf G).c a g : ℚ) := hn g
       have h2 : n g = 2 * (lamOf G).c a g := by exact_mod_cast h3
       exact ⟨(lamOf G).c a g, by rw [h2]; ring⟩

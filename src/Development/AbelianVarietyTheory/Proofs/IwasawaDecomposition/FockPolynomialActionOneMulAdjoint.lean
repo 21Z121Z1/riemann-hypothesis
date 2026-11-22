@@ -1,11 +1,11 @@
 module
 
 public import Mathlib
-public import Formalism.LocalToGlobal.IndefiniteReal.ConcretePkgSpec
-public import Formalism.LocalRingCardinality.DataExtra
-public import Formalism.LocalRingCardinality.DataTies
+public import Formalism.LocalToGlobal.IndefiniteReal.Bundle0023
+public import Formalism.LocalRingCardinality.Bundle0007
+public import Formalism.LocalRingCardinality.Bundle0003
 public import Formalism.LocalToGlobal.Divisibility.CoefModLemmas
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsHolRepOfIsTau
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0175
 
 @[expose] public section
 

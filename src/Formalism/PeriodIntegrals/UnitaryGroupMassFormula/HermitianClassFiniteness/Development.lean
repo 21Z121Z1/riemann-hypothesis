@@ -1,8 +1,8 @@
 module
 
-public import Formalism.PeriodIntegrals.InHHClassFin
+public import Formalism.PeriodIntegrals.Bundle0021
 public import Formalism.SatakeDualWeyl.KpqSubgroupCompact
-public import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.CsEasy
+public import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Bundle0009
 
 @[expose] public section
 

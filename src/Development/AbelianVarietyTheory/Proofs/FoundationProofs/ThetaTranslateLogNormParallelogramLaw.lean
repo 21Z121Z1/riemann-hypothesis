@@ -3,20 +3,15 @@ module
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.Foundations.NormSumPairRankZeroOfCurveCoordNorm
 public import Formalism.PairingDivisors.StatementH
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.DifferentiableSqTh
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Cval
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.LatticeInvariantsPeriodPairDictionary
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.IntSerOfIsWq
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.NormNatCastLe
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.NormThetaTranslateValueAtZeroPadicPeriodicStatement
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.NormSubAbscissaEqOneOfUnitDiscrIntegralChordsStatement
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.NormTangentDenominatorEqOneOfUnitDiscrDoubleStatement
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.PadicModelEquationTangentAtLatticeParameterStatement
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.PadicModelChordLawSumAndDifferenceStatement
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.PadicModelTangentLawAtDoubleStatement
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.TranslateModifiedSigmaAddMulSubAtZeroStatement
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.TranslateModifiedSigmaTwoMulAtZeroStatement
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsOtherHalfPeriodStatement
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0235
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0274
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0226
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0263
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0282
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0285
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0288
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0286
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0287
 
 @[expose] public section
 
@@ -138,11 +133,11 @@ theorem generic (D : D7) (cc : Ideal (𝓞 D.host.K)) (δ : ℂ) (g : GL3Theta.G
   have hD : GL3Theta.Tors1 p g.abelian₂ (P - Q) := ⟨h2, tors_sub hP.2 hQ.2⟩
   obtain ⟨wP, dP⟩ := hwp P (tors_laq hP.2) hP.1
   obtain ⟨wQ, dQ⟩ := hwp Q (tors_laq hQ.2) hQ.1
-  obtain ⟨eP, -⟩ := GlobalTheory.T.padicModel_equation_tangent_at_latticeParameter g P hlat hg2 hg3 hP.1 wP dP
-  obtain ⟨eQ, -⟩ := GlobalTheory.T.padicModel_equation_tangent_at_latticeParameter g Q hlat hg2 hg3 hQ.1 wQ dQ
-  obtain ⟨hne, hadd, hsub⟩ := GlobalTheory.T.padicModel_chordLaw_sum_and_difference g P Q hlat hg2 hg3 hP.1 hQ.1 h1 h2 wP dP wQ dQ
+  obtain ⟨eP, -⟩ := _root_.GlobalTheory.ThetaPar.ModelPoint.model_point g P hlat hg2 hg3 hP.1 wP dP
+  obtain ⟨eQ, -⟩ := _root_.GlobalTheory.ThetaPar.ModelPoint.model_point g Q hlat hg2 hg3 hQ.1 wQ dQ
+  obtain ⟨hne, hadd, hsub⟩ := _root_.GlobalTheory.ThetaPar.Chord.model_chord g P Q hlat hg2 hg3 hP.1 hQ.1 h1 h2 wP dP wQ dQ
   have hne' : xAt g P - xAt g Q ≠ 0 := sub_ne_zero.2 hne
-  have hone := GlobalTheory.T.norm_sub_abscissa_eq_one_of_unitDiscr_integral_chords g.W (xAt g P) (yAt g P) (xAt g Q) (yAt g Q) _ _ ha1 ha2 hΔ eP eQ
+  have hone := _root_.GlobalTheory.ThetaPar.norm_sub_x_eq_one g.W (xAt g P) (yAt g P) (xAt g Q) (yAt g Q) _ _ ha1 ha2 hΔ eP eQ
     (hx P hP) (hx Q hQ) hne (div_mul_cancel₀ _ hne') (div_mul_cancel₀ _ hne')
     (by rw [← hadd]; exact hx _ hS) (by rw [← hsub]; exact hx _ hD)
   have ediff : xAt g P - xAt g Q =
@@ -151,7 +146,7 @@ theorem generic (D : D7) (cc : Ideal (𝓞 D.host.K)) (δ : ℂ) (g : GL3Theta.G
   have hwone : ‖lamC g.lam (wpF g.abelian₂ Q) - lamC g.lam (wpF g.abelian₂ P)‖ = 1 := by
     rw [ediff, norm_mul, norm_mul, norm_pow, hu, norm_neg, norm_one] at hone
     simpa using hone
-  have key := GlobalTheory.T.U1_add_mul_U1_sub_at_zero_eq_wpF_sub g.abelian₂ hlat P Q hP.1 hQ.1
+  have key := _root_.GlobalTheory.translate_modifiedSigma_add_mul_sub_at_zero g.abelian₂ hlat P Q hP.1 hQ.1
   have cS := hc _ (tors_laq hS.2)
   have cD := hc _ (tors_laq hD.2)
   have cP := hc _ (tors_laq hP.2)
@@ -179,12 +174,12 @@ theorem doubling (D : D7) (cc : Ideal (𝓞 D.host.K)) (δ : ℂ) (g : GL3Theta.
   obtain ⟨hlat, hg2, hg3, hwp, hc, hu, ha1, ha2, ha3, ha4, ha6, hΔ⟩ := ctx D cc δ g hg
   have hS : GL3Theta.Tors1 p g.abelian₂ (2 * P) := ⟨h2, tors_two hP.2⟩
   obtain ⟨wP, dP⟩ := hwp P (tors_laq hP.2) hP.1
-  obtain ⟨eP, hη⟩ := GlobalTheory.T.padicModel_equation_tangent_at_latticeParameter g P hlat hg2 hg3 hP.1 wP dP
-  obtain ⟨hne, hdbl⟩ := GlobalTheory.T.padicModel_tangentLaw_at_double g P hlat hg2 hg3 hP.1 h2 wP dP
+  obtain ⟨eP, hη⟩ := _root_.GlobalTheory.ThetaPar.ModelPoint.model_point g P hlat hg2 hg3 hP.1 wP dP
+  obtain ⟨hne, hdbl⟩ := _root_.GlobalTheory.ModelDouble.tangent_law g P hlat hg2 hg3 hP.1 h2 wP dP
   have hone := GlobalTheory.T.norm_tangentDenominator_eq_one_of_unitDiscr_double g.W (xAt g P) (yAt g P) _ ha1 ha2 ha3 ha4 ha6 hΔ eP (hx P hP) hne
     (div_mul_cancel₀ _ hne) (by rw [← hdbl]; exact hx _ hS)
   rw [hη, norm_mul, norm_pow, hu, one_pow, one_mul] at hone
-  have key := GlobalTheory.T.translate_modifiedSigma_two_mul_at_zero g.abelian₂ hlat P hP.1
+  have key := _root_.GlobalTheory.SigmaDuplication.U1_two_mul_at_zero_eq_neg_wpD_mul_pow_four g.abelian₂ hlat P hP.1
   have cS := hc _ (tors_laq hS.2)
   have cP := hc _ (tors_laq hP.2)
   have key' := congrArg (lamC g.lam) key
@@ -198,7 +193,7 @@ theorem doubling (D : D7) (cc : Ideal (𝓞 D.host.K)) (δ : ℂ) (g : GL3Theta.
 
 theorem logc_per (D : D7) (cc : Ideal (𝓞 D.host.K)) (δ : ℂ) (g : GL3Theta.G1 p) (hg : GL3Theta.At D cc δ g)
     {t ω : ℂ} (hL : InRationalLattice g.abelian₂ t) (ht : t ∉ g.abelian₂) (hω : ω ∈ g.abelian₂) : logc g (t + ω) = logc g t :=
-  logc_eq_of_norm (fun h => ht (by simpa using sub_mem h hω)) ht (GlobalTheory.T.norm_thetaTranslateValueAtZeroPadic_periodic D p cc δ g hg t ω hL hω)
+  logc_eq_of_norm (fun h => ht (by simpa using sub_mem h hω)) ht (_root_.GlobalTheory.ThetaTransl.cval_norm_periodic D p cc δ g hg t ω hL hω)
 
 theorem logc_neg (D : D7) (cc : Ideal (𝓞 D.host.K)) (δ : ℂ) (g : GL3Theta.G1 p) (hg : GL3Theta.At D cc δ g)
     {t : ℂ} (hL : InRationalLattice g.abelian₂ t) (ht : t ∉ g.abelian₂) : logc g (-t) = logc g t := by
@@ -229,7 +224,7 @@ theorem half (D : D7) (cc : Ideal (𝓞 D.host.K)) (δ : ℂ) (g : GL3Theta.G1 p
     exact sub_mem hnP (natmul_mem h2 k)
   have tors2 : ∀ z : ℂ, 2 * z ∈ g.abelian₂ → z ∉ g.abelian₂ → GL3Theta.Tors1 p g.abelian₂ z :=
     fun z hz hz' => ⟨hz', 2, two_pos, hp2, by exact_mod_cast hz⟩
-  obtain ⟨P', h2', hP', hd⟩ := GlobalTheory.T.exists_half_period_sub_not_mem_of_isLat g.abelian₂ hlat P h2 hP.1
+  obtain ⟨P', h2', hP', hd⟩ := _root_.GlobalTheory.HalfPeriod.exists_other_half_period g.abelian₂ hlat P h2 hP.1
   set R := P - P' with hR
   have h2R : 2 * R ∈ g.abelian₂ := by rw [hR, mul_sub]; exact sub_mem h2 h2'
   have tP' := tors2 P' h2' hP'

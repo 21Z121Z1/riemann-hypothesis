@@ -2,27 +2,27 @@ module
 
 public import Mathlib
 public import Development.WeilBound.RepresentationTheoryGL.EisensteinResidues.AnisotropicGlobalForms.DmOfHyp
-public import Development.WeilBound.RepresentationTheoryGL.EisensteinResidues.AnisotropicGlobalForms.NormSqThetaModGrowthNc
-public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.IntegrandSZero
-public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.SiegelWeilFock
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.DoubledCartanInvolutionCommuteMaximalCompactStatement
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.DoublingSeesawTensorMapPolynomialFockVectorStatement
+public import Development.WeilBound.RepresentationTheoryGL.EisensteinResidues.AnisotropicGlobalForms.Bundle0001
+public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.Bundle0013
+public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.Bundle0015
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0145
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0164
 public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.WeilRepresentationUnitaryPair
-public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.UnifModGrowthOfIsUnifModerate
-public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.EisRegularAtOfEisPoleLE
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ExistsWeilDatumHermitianSpaceDoubledStatement
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.DoublingMapThetaIdentityAnyWeilDataStatement
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SiegelWeilSectionDoublingEqMatrixCoefficientStatement
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.DoublingVectorFockPairIsCompactFiniteStatement
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.DoublingSiegelWeilSectionMemDegeneratePrincipalSStatement
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.AdelicIwasawaDoubledGroupSelfDualLatticeStatement
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ThetaLiftWittIndexVanishing
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SeesawFubiniTwoLiftsModerateGrowthKernelsStatement
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ThetaKernelModerateGrowthBothVariablesStatement
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.DoublingZetaValueAtEisensteinHolomorphicPointStatement
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.CuspFormsArchimedeanKFiniteStarCompMemStatement
+public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.Bundle0007
+public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.Bundle0010
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0146
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0251
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0156
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0184
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0270
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0241
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0280
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0190
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0194
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0277
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0144
 public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.WeilDatumAtPlaceEqLatticeIntertwinerMulDetChar
-public import Formalism.LocalToGlobal.BesselHermitianTheta.LemmasChr
+public import Formalism.LocalToGlobal.BesselHermitianTheta.Bundle0002
 
 @[expose] public section
 
@@ -40,23 +40,23 @@ namespace GlobalTheory.Core.Rk.IP
 theorem globalFormAt_frameLat_nc : GlobalTheory.Published.WeilRepresentationUnitaryPair → GlobalTheory.Published.CuspRapidDecay → ResidueKilled.DM → ∀ D : D7, SiegelWeilFock D → ∀ A : HSp D, GlobalFormAt A (frameLat A) := by
   intro hW hC hDM D hSW A ψ θ B χA χB sA sB t cA a om ν 𝓕 hP hwitt m mH hm hmH Φ₁ Φ₂ hΦ₁ hΦ₂ u₁ hu₁ u₂ hu₂
   obtain ⟨ha, ht, hb, hθ, hSig, hCart, -⟩ := hP.setting
-  obtain ⟨omh, homh⟩ := GlobalTheory.T.exists_weilDatum_hermitianSpaceDoubled hW D ψ A B χA χB om hP.weil
-  have hTC := GlobalTheory.T.doublingMap_thetaIdentity_any_weilData D ψ A B χA χB om omh hP.weil homh
-  have hCC := GlobalTheory.T.siegelWeilSection_doubling_eq_matrixCoefficient D ψ A B χA χB om omh hP.weil hTC ν 𝓕 hP.covol
+  obtain ⟨omh, homh⟩ := _root_.GlobalTheory.Core.Rk.exists_doubled_weilDatum hW D ψ A B χA χB om hP.weil
+  have hTC := _root_.GlobalTheory.DoublingTheta.thetaClause D ψ A B χA χB om omh hP.weil homh
+  have hCC := _root_.GlobalTheory.Core.Rk.coefClause_of_thetaClause D ψ A B χA χB om omh hP.weil hTC ν 𝓕 hP.covol
   obtain ⟨hφ, hid⟩ := hTC Φ₁ Φ₂ hΦ₁.1 hΦ₂.1
-  have hK := GlobalTheory.T.doublingVector_fockPair_isCompactFinite D ψ θ A B χA χB sA sB t cA a om ν 𝓕 hP omh homh Φ₁ Φ₂ hΦ₁ hΦ₂
+  have hK := _root_.GlobalTheory.Core.Rk.IP.delta_isKFinVec D ψ θ A B χA χB sA sB t cA a om ν 𝓕 hP omh homh Φ₁ Φ₂ hΦ₁ hΦ₂
   have hab : A.rank < B.rank := by omega
   have hw : wittIndex B = 0 ∨ A.rank + wittIndex B < B.rank := by
     rcases hwitt with h | h
     · exact Or.inl h
     · exact Or.inr (by omega)
   obtain ⟨-, -, -, hθ', -, -, hcA, hcB, -⟩ := hP.setting
-  have hc := GlobalTheory.T.doubled_cartanInvolution_commute_maximalCompact D θ A sA a hθ' hcA hP.maj_eq
-  have hF := GlobalTheory.T.doublingSeesawTensorMap_polynomial_fock_vector D ψ θ A B sA sB hP.weil.std hθ' Φ₁ Φ₂ hΦ₁ hΦ₂
+  have hc := _root_.GlobalTheory.Core.Rk.IP.Cartan.cartan_dbl D θ A sA a hθ' hcA hP.maj_eq
+  have hF := _root_.GlobalTheory.Core.Rk.FockBox.isFockVec_delta D ψ θ A B sA sB hP.weil.std hθ' Φ₁ Φ₂ hΦ₁ hΦ₂
   obtain ⟨-, hEV⟩ := hSW ψ A B ha hab hw χB omh homh a hP.maj θ _ sB hθ' hc.1 hcB hc.2 ν 𝓕 hP.covol mH hmH _ hF
   have hI : HasIwasawa D.sp.cm.sig (dblSp A).gram (Khat A a) :=
-    GlobalTheory.T.adelicIwasawa_doubledGroup_selfDualLattice D A (frameLat A) a (GlobalTheory.WeilAtPlace.isSelfDualC_frameLat A) hP.maj
-  have hmem := GlobalTheory.T.doublingSiegelWeilSection_mem_degeneratePrincipalSeries hW D ψ A B χB omh homh ν 𝓕 hP.covol (delta A B Φ₁ Φ₂) hφ a hK
+    _root_.GlobalTheory.Core.Rk.IP.hasIwasawa_KAd_selfDual D A (frameLat A) a (GlobalTheory.WeilAtPlace.isSelfDualC_frameLat A) hP.maj
+  have hmem := _root_.GlobalTheory.SwSecMem.swSec_mem_degPS hW D ψ A B χB omh homh ν 𝓕 hP.covol (delta A B Φ₁ Φ₂) hφ a hK
   have hHk : IsHeckeChar D χB⁻¹ := by
     have h := homh.hecT
     refine ⟨?_, fun x => ?_⟩
@@ -66,8 +66,8 @@ theorem globalFormAt_frameLat_nc : GlobalTheory.Published.WeilRepresentationUnit
   obtain ⟨hDM1, -, hDM3⟩ := hDM D A (by omega) a hP.maj hI χB⁻¹ B.rank hHk (resEta_inv homh.resT) (sZero A B)
     (swSec A B omh ν 𝓕 (delta A B Φ₁ Φ₂)) hmem
 
-  have hf₁ := GlobalTheory.T.cuspFormsArchimedeanKFinite_star_comp_mem D θ A cA hθ u₁ hu₁
-  have hf₂ := GlobalTheory.T.cuspFormsArchimedeanKFinite_star_comp_mem D θ A cA hθ u₂ hu₂
+  have hf₁ := _root_.GlobalTheory.Core.Rk.CuspConj.conj_comp_mem_A0 D θ A cA hθ u₁ hu₁
+  have hf₂ := _root_.GlobalTheory.Core.Rk.CuspConj.conj_comp_mem_A0 D θ A cA hθ u₂ hu₂
   have rd : ∀ u ∈ A0 θ A cA, GlobalTheory.Grow.RapidDec A u := fun u hu =>
     GlobalTheory.Grow.rapidDec_of_cuspForm hC hθ (mem_cuspForms.1 hu).1.1 (mem_cuspForms.1 hu).1.2
   obtain ⟨hBI, -⟩ := hDM3 θ hθ hSig cA hCart m hm _ hf₁ _ hf₂
@@ -107,7 +107,7 @@ theorem globalFormAt_frameLat_nc : GlobalTheory.Published.WeilRepresentationUnit
   have hEF := hDM1.1.1
   have hZF : GlobalTheory.Eis.IsZetaFamily A χB⁻¹ m (flat A a (swSec A B omh ν 𝓕 (delta A B Φ₁ Φ₂)) (sZero A B))
       (fun x => conj (u₁ x)) (fun x => conj (u₂ x)) := ⟨hEF, fun s hs => (hBI s hs).1⟩
-  obtain ⟨-, hZV⟩ := GlobalTheory.T.doubling_zeta_value_at_eisenstein_holomorphic_point D A χB⁻¹ hHk m hm _ hDM1.1 (fun g => hEF.analyticOnNhd_flat g) hDM1.2 _ _
+  obtain ⟨-, hZV⟩ := _root_.GlobalTheory.Eis.zetaHolValueAt_of_eisValueAt D A χB⁻¹ hHk m hm _ hDM1.1 (fun g => hEF.analyticOnNhd_flat g) hDM1.2 _ _
     (rd _ hf₁) (rd _ hf₂) hZF (sZero A B) _ hEV
 
   have hKer : ∀ Φ, IsFockVec ψ θ A B sA sB Φ →
@@ -123,7 +123,7 @@ theorem globalFormAt_frameLat_nc : GlobalTheory.Published.WeilRepresentationUnit
       unfold thetaKO
       rw [e, map_mul]
       exact hP.weil.om_aut γ hγ 1 (one_mem _) _ (hP.weil.om_pres _ _ hΦ.1)
-    · obtain ⟨C, N, hCN⟩ := GlobalTheory.T.theta_kernel_moderate_growth_both_variables D ψ A B χA χB om hP.weil Φ hΦ.1
+    · obtain ⟨C, N, hCN⟩ := _root_.GlobalTheory.Core.Rk.ThetaGrowthBoth.thetaKO_modGrowth₂ D ψ A B χA χB om hP.weil Φ hΦ.1
       refine ⟨C * GlobalTheory.Grow.height B h ^ N, N, fun g => (hCN g h).trans (le_of_eq ?_)⟩
       rw [mul_pow]; ring
   obtain ⟨i₁, i₂, l₁, l₂, hss⟩ := GlobalTheory.T.seesaw_fubini_two_lifts_moderate_growth_kernels D A B m mH hm hmH (fun g h => thetaKO om g h Φ₁)

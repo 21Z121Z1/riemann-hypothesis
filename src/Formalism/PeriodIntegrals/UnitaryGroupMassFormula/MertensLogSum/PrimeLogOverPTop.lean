@@ -1,8 +1,7 @@
 module
 
-public import Formalism.PeriodIntegrals.PrimeSums
-public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.MertensLogSum.SLeOfBlock
-public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.MertensLogSum.PrimeLogOverPWork
+public import Formalism.PeriodIntegrals.Bundle0005
+public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.MertensLogSum.Bundle0001
 
 @[expose] public section
 

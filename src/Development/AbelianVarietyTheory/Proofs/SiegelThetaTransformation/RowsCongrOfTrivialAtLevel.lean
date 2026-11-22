@@ -2,10 +2,10 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.SpanningFamilies.IsWeakOfDatum
-public import Development.AbelianVarietyTheory.Definitions.SpanningFamilies.IsHeatZero
+public import Development.AbelianVarietyTheory.Definitions.SpanningFamilies.Bundle0001
 public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.CompletedTensorLatticeStrongApproxOpenCompact
-public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.ExistsDenominatorPrimesPrescribed
-public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.OneEqSumPlaceIdempotentsOverTwoAddTwoMul
+public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.Bundle0020
+public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.Bundle0060
 
 @[expose] public section
 

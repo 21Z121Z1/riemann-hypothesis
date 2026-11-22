@@ -2,11 +2,11 @@ module
 
 public import Mathlib
 public import Development.WeilBound.CoreStatements.TemperedRepresentationTheory.MirabolicDerivatives.ColMatMulGlEmbMat
-public import GroundTheory.AutomorphicForms.LocallyConstantCompact
+public import GroundTheory.AutomorphicForms.Bundle0007
 public import GroundTheory.AutomorphicForms.WhittakerGroups
 public import GroundTheory.AutomorphicForms.WhittakerCells
 public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.NontrivialTwJacquetOfSurjective
-public import GroundTheory.AutomorphicForms.SmoothRepContragredient
+public import GroundTheory.AutomorphicForms.Bundle0010
 public import GroundTheory.AutomorphicForms.SupercuspidalCoefficients
 
 @[expose] public section

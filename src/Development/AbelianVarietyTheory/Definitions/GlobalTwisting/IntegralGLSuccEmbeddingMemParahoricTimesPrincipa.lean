@@ -6,8 +6,8 @@ public import Formalism.LocalToGlobal.Columns.BaseLemmas
 public import Formalism.LocalToGlobal.Columns.RowFormsLemmas
 public import Formalism.LocalToGlobal.KernelLattices.ThDistC
 public import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.RedPEqZeroOfDiv
-public import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.RedPDivOfUnit
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExistsSmulOfDecoEq
+public import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.Bundle0004
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0055
 
 @[expose] public section
 

@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.SiegelKlingenDeligneRibet
+public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.Bundle0006
 public import Development.AutomorphicSpectrum.Proofs.GlobalProofs.ExistsAvoidOne
-public import Development.AutomorphicSpectrum.Proofs.GlobalProofs.PartialSum
+public import Development.AutomorphicSpectrum.Proofs.GlobalProofs.Bundle0014
 
 @[expose] public section
 

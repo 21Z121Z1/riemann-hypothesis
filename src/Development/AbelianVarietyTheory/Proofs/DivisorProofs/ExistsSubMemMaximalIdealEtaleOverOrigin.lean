@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.OriginIdeal
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsLocalStageTensorPolynomialOrigin
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0218
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0235
 
 @[expose] public section
 

@@ -2,15 +2,16 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.ArchimedeanThetaValues.ModelsAt
-public import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.SecEqOfSecBCIdOne
-public import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.FreqRealNonnegIntegral
-public import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.NonemptyUnifWitnessDataOfIsUnf
+public import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.Bundle0050
+public import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.Bundle0019
+public import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.Bundle0017
 public import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.ExistsFjNeZeroAtSplitPoint
 public import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.TransvInOfHasPrinc
-public import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.SumReCmTypeEqHalfTrace
-public import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.CmLettersIsLieBasisAlongArcStatement
-public import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.ExistsCoeffNeZeroOfFourierJacobiArcDatumStatement
-public import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.ExistsCmArcDataAtSplitIsotropicPointStatement
+public import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.Bundle0003
+public import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.CmLettersIsLieBasisAlongArc
+public import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.Bundle0064
+public import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.Bundle0063
+public import Development.AbelianVarietyTheory.Definitions.ArchimedeanThetaValues.Bundle0001
 
 @[expose] public section
 
@@ -194,14 +195,14 @@ theorem exists_fam_cfOf_ne_zero : Known → ∀ (E : Type) [Field E] [NumberFiel
   rw [GlobalTheory.sum_re_cmType_eq_half_trace] at hν
   obtain ⟨Uw⟩ := GlobalTheory.ArcQ.nonempty_unfWit_of_isUnf E H Dw l Xo c _ r U hU
   have htv := GlobalTheory.TransvPrinc.transvIn_of_hasPrinc E H Dw l Xo c _ r U a' n hP hχ k
-  obtain ⟨K₁, _, _, _, em, a, e, th, jj, s, hem, hs, htie⟩ := GlobalTheory.T.exists_cmArcData_at_splitIsotropicPoint hK E H Dw l Xo c r U Uw k ξ x Xx hX 𝔄
+  obtain ⟨K₁, _, _, _, em, a, e, th, jj, s, hem, hs, htie⟩ := _root_.GlobalTheory.ArcCM.Exist.exists_cmIn_tie hK E H Dw l Xo c r U Uw k ξ x Xx hX 𝔄
     _ _ c₁ lam (nQ E r l.M Xx.NA Xx.NC c₁ w) ν₀ hU hA hr hξ hx h𝔄 hΛ hsp le_rfl (Nat.succ_pos _) htor hν1 hν3
     (fun s h1 h2 => hν4 s h1 (htv ξ hξ s h1 h2)) hν
   obtain ⟨Wp, hWp⟩ := exists_place 2 Nat.prime_two
   obtain ⟨Y, hY, hYp⟩ := hM 2 Wp Nat.prime_two hWp
   obtain ⟨χ, W, -, hd⟩ := GlobalTheory.ArcDatumExists.exists_arcDatum hK.laws hK.laws2 E H Dw l Xo c K₁ Wp Y hY a
   obtain ⟨d, d1, d2, d3, d4, d5, -, d7, d8, d9⟩ := hd e
-    (GlobalTheory.T.cmLetters_isLieBasis_along_arc hK E H Dw l Xo c K₁ a e th jj _ _ c₁ s _ _ Y χ W) th s.th_nz.ne_zero 0 jj
+    (_root_.GlobalTheory.LetterBasis.main hK E H Dw l Xo c K₁ a e th jj _ _ c₁ s _ _ Y χ W) th s.th_nz.ne_zero 0 jj
   obtain ⟨Wp', Y', a₁, χ', W', e', yF, th', i12, i3, mu, jj'⟩ := d
   dsimp only at d1 d2 d3 d4 d5 d7
   subst d1 d3 d7

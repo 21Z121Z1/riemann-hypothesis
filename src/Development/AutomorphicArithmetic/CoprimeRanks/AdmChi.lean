@@ -1,8 +1,8 @@
 module
 
-public import Development.AutomorphicArithmetic.CharacterBoxes.Imports
-public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.ExistsRanksRankValFrame
-public import Development.AutomorphicArithmetic.FrobeniusLocalisation.SizeDefs
+public import Development.AutomorphicArithmetic.CharacterBoxes.Bundle0003
+public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0067
+public import Development.AutomorphicArithmetic.FrobeniusLocalisation.Bundle0001
 
 @[expose] public section
 

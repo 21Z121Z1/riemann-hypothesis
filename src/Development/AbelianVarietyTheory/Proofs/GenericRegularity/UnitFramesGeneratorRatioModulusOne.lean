@@ -4,16 +4,14 @@ public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.RegularCharts.BaseNorm
 public import Development.AbelianVarietyTheory.Definitions.RegularCharts.Reframe
 public import Development.AbelianVarietyTheory.Definitions.RegularCharts.ModelAt
-public import Formalism.LocalToGlobal.ProjectiveLattices.NrmContPf
-public import Formalism.LocalToGlobal.ProjectiveLattices.AxHSup
-public import Formalism.LocalToGlobal.ProjectiveLattices.DivFinOfLawA3
-public import Formalism.LocalToGlobal.ProjectiveLattices.FnTrdegOf
-public import Formalism.LocalToGlobal.ProjectiveLattices.RegQFree
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0015
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0014
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0013
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.UniformisationConclusion
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.FundamentalDomains.MaxBoundPf
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ThetaPointsChangeLevelIsometryLinearMap
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsSecGeneratorFibre
-public import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.AbelianSchemeLawsUnconditional
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0090
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0056
+public import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.Bundle0029
 
 @[expose] public section
 

@@ -1,10 +1,10 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Divisors.OrthSubrepresentation
-public import Development.AbelianVarietyTheory.Proofs.CharacterTheory.CharacterCosetSumEqZeroOfSubgroupSum
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsBlockParabolicSubgroupLeviProjectionStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FinsumMemEq
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0002
+public import Development.AbelianVarietyTheory.Proofs.CharacterTheory.Bundle0003
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0233
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0200
 
 @[expose] public section
 

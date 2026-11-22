@@ -2,10 +2,10 @@ module
 
 public import Mathlib
 public import Development.AutomorphicSpectrum.Definitions.MetricPeriods.Pull1
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArithmeticIntersection.TsgPolyVolPolyCoeffEven
-public import GroundTheory.HeightsAndTheta.Heights.Intersections.StatementsFibreLocal
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArithmeticIntersection.Bundle0004
+public import GroundTheory.HeightsAndTheta.Heights.Intersections.Bundle0003
 public import Development.AutomorphicSpectrum.Statements.MetricStatements.AgreementIffGuarded
-public import ReciprocityTheory.AnalyticForms.PlurisubharmonicFunctions.CovLog
+public import ReciprocityTheory.AnalyticForms.PlurisubharmonicFunctions.Bundle0001
 
 @[expose] public section
 

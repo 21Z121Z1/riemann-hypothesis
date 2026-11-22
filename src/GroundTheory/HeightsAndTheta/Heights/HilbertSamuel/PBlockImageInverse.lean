@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsBlockImageInverse
+public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0035
 
 @[expose] public section
 

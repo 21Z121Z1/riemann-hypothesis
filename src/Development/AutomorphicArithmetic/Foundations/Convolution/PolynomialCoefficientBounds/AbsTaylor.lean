@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Development.AutomorphicArithmetic.Foundations.Convolution.BlockHeckeSlices.SliceShift
-public import Development.AutomorphicArithmetic.Foundations.Convolution.PolynomialCoefficientBounds.Reduce
+public import Development.AutomorphicArithmetic.Foundations.Convolution.PolynomialCoefficientBounds.Bundle0004
 public import Development.WeilBound.RepresentationTheoryGL.TwistedFactors.AffineCharacterGenerators.Generators
 public import Development.AutomorphicArithmetic.Foundations.Convolution.PolynomialCoefficientBounds.AbsGrow
 

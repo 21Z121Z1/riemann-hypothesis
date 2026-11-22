@@ -2,16 +2,19 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.GoodSetupCountEqZeroOffBadPlaces
-public import Development.AbelianVarietyTheory.BlockTheory.NonGaloisCusps.RationalRayLevels
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.RangeLeRangeOfIsUnramifiedAt
+public import Development.AbelianVarietyTheory.BlockTheory.NonGaloisCusps.Bundle0009
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0215
 public import Development.AbelianVarietyTheory.PublishedTheorems.PublishedFoundations.NonemptyAlgHomOfIsRayOfDvd
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsApplyEqOfNormal
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0132
 public import Formalism.LocalToGlobal.ProjectiveLattices.ExistsParameterConditions
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.RayClassFieldInfModulusEqSupStatement
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsUnramifiedAtOfIsUnramifiedInGaloisExtensionStatement
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsPrimitiveRootInRayClassFieldNatModulusStatement
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsGaloisRatComplexImageRayClassFieldStatement
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.HostImagQuadraticIsGaloisUnitsPmOneStatement
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0578
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0513
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0576
+public import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.SmulCommClassGalIntegers
+public import Development.AbelianVarietyTheory.Definitions.HeightFunctions.FiniteDimensionalOfSz
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0586
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0451
+public import Formalism.LocalRingCardinality.RhoDetPrimeEqMuTildeMulChiPow
 
 @[expose] public section
 
@@ -30,12 +33,12 @@ theorem isUnramifiedAt_of_unramIn {K L : Type} [Field K] [NumberField K] [Field 
 
 theorem exists_isPrimitiveRoot_of_isRay {K H : Type} [Field K] [NumberField K] [Field H] [NumberField H] [Algebra K H]
     [IsAbelianGalois K H] {n : ℕ} (hn : n ≠ 0) (h : IsRay H (Ideal.span {(n : 𝓞 K)})) : ∃ ζ : H, IsPrimitiveRoot ζ n :=
-  GlobalTheory.T.exists_primitiveRoot_in_rayClassField_natModulus hn h
+  _root_.GlobalTheory.RayRootOfUnity.exists_isPrimitiveRoot_of_isRay hn h
 
 theorem isGalois_fieldRange_of_isRay {K H : Type} [Field K] [NumberField K] [IsGalois ℚ K] [Field H] [NumberField H]
     [Algebra K H] [IsAbelianGalois K H] {n : ℕ} (hn : n ≠ 0) (h : IsRay H (Ideal.span {(n : 𝓞 K)})) (j : H →+* ℂ) :
     IsGalois ℚ j.toRatAlgHom.fieldRange :=
-  GlobalTheory.T.isGalois_rat_complexImage_rayClassField hn h j
+  _root_.GlobalTheory.RayNatGalois.isGalois_fieldRange hn h j
 
 theorem sup_fieldRange_eq_top {K H H₁ H₂ : Type} [Field K] [NumberField K] [Field H] [NumberField H] [Algebra K H]
     [IsAbelianGalois K H] [Field H₁] [NumberField H₁] [Algebra K H₁] [IsAbelianGalois K H₁] [Field H₂] [NumberField H₂]
@@ -46,7 +49,7 @@ theorem sup_fieldRange_eq_top {K H H₁ H₂ : Type} [Field K] [NumberField K] [
   GlobalTheory.T.rayClassField_inf_modulus_eq_sup hU ha hb hq hq2 hqa hqb h h₁ h₂ f₁ f₂
 
 theorem hostK_facts (D : D7) : IsGalois ℚ D.host.K ∧ ∀ u : (𝓞 D.host.K)ˣ, u = 1 ∨ u = -1 :=
-  GlobalTheory.T.host_imagQuadratic_isGalois_units_pm_one D
+  _root_.GlobalTheory.HostQuadUnits.main D
 
 abbrev phiK (D : D7) : ↥D.host.K →+* ℂ := D.host.φ₀.comp (algebraMap D.host.K D.host.E)
 

@@ -1,10 +1,9 @@
 module
 
 public import Mathlib
-public import Development.EtaleCohomology.EtaleSheaves.EtaleStandingHypothesesImplyRestrictionAxiom
-public import Development.AutomorphicArithmetic.CommutativeAlgebra.PrimitiveRootEqPowLocally
-public import Development.AutomorphicArithmetic.CommutativeAlgebra.TwistGeneratorSmulEqZeroImp
-public import Development.AutomorphicArithmetic.CommutativeAlgebra.ExistsEtaleNbhdPrimitiveRootOfIsUnitNatCast
+public import Development.EtaleCohomology.EtaleSheaves.Bundle0062
+public import Development.AutomorphicArithmetic.CommutativeAlgebra.Bundle0036
+public import Development.AutomorphicArithmetic.CommutativeAlgebra.Bundle0037
 
 @[expose] public section
 

@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.StatementsHomLocRingLocal
-public import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.PHomLocRingLocal
-public import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.PMultiHomogPrimeCriterion
+public import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.Bundle0054
+public import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.Bundle0058
+public import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.Bundle0009
 
 @[expose] public section
 

@@ -2,9 +2,9 @@ module
 
 public import Mathlib
 public import Development.WeilBound.CoreStatements.AutomorphicKernels.UnitarySchrodingerModel.LocalDefs
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ResAlgSplitTwo
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FixedNondeg
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.UnramifiedQuotientCardStatement
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0046
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0059
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0070
 
 @[expose] public section
 

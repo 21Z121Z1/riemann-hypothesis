@@ -1,12 +1,12 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Divisors.LabExt
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0067
 public import Development.AbelianVarietyTheory.Definitions.Degenerations.AdmissibleBaseOfCompleteDvr
-public import Development.AbelianVarietyTheory.Definitions.Uniformization.SeriesFrame
+public import Development.AbelianVarietyTheory.Definitions.Uniformization.Bundle0002
 public import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.ExistsFinsetRepresentatives
 public import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.VGeIffExtended
-public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.SymFrameClause
+public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.Bundle0137
 public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.UnivIdentity
 
 @[expose] public section

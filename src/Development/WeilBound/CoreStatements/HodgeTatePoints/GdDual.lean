@@ -1,7 +1,7 @@
 module
 
-public import Development.WeilBound.CoreStatements.HodgeTatePoints.TorusExtensionPairCorrectionEqValueQuotient
-public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.RelatedPairsOrbitalTermEq
+public import Development.WeilBound.CoreStatements.HodgeTatePoints.Bundle0014
+public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.Bundle0016
 
 @[expose] public section
 

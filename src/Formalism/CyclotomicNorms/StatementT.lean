@@ -1,6 +1,6 @@
 module
 
-public import Formalism.CyclotomicNorms.StatementI
+public import Formalism.CyclotomicNorms.Bundle0001
 
 @[expose] public section
 

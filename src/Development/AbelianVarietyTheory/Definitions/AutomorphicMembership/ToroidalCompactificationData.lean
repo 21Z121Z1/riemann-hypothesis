@@ -3,8 +3,8 @@ module
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.FormsOver
 public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.ToroidalBoundaryMetricData
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsMoebZero
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.PtEqOfPtOfFrameEq
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0486
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0491
 
 @[expose] public section
 

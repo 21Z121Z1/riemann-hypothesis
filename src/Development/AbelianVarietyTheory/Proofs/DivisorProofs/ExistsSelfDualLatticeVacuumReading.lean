@@ -1,18 +1,18 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GoodModModT
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MemScaleLat
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IdealExtendConjMulEqAbsNorm
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaOfUnitVacuum
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FockVacuumRealRestrictionGaussianEntire
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2841
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2865
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1631
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1720
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1204
 public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.SelfDualLatticePairingDual
-public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.MapFinNeg
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ThetaLatticeImageRationalHomLattice
+public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.Bundle0070
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0256
 public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ThetaSpaceSelfDualPairAtMostLine
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsVacuumMovedThetaVacuum
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SelfDualLatticesConsecutiveStep
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IsSelfDualImageOrthonormalFrameLattice
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0765
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0455
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0459
 
 @[expose] public section
 
@@ -411,7 +411,7 @@ theorem finRat_mem_iff {ψ : AddChar (AF D.host.F) ℂ} (hψ : IsStdChar D ψ (-
     (hS : IsSelfDualC S LS) (hT : IsSelfDualC T LT) (M : Matrix (Fin T.rank) (Fin S.rank) D.host.E) :
     GlobalTheory.VacUnique.finRat S T M ∈ latO S T LS LT (fun _ => True) ↔ M ∈ GlobalTheory.LatVac.latRat S T LS LT := by
   refine ⟨fun h => ?_, fun h => GlobalTheory.LatVac.finTens_mem_latO (GlobalTheory.LatVac.one_mem_intAf _) h⟩
-  refine (GlobalTheory.T.rationalHermitianRankOneLattice_selfDual D S T LS LT hS hT (GlobalTheory.T.exists_dual_family_selfDual_hermitianSpace D S LS hS) _).2 fun ℓ hℓ => ?_
+  refine (_root_.GlobalTheory.LatVac.latRat_selfDual D S T LS LT hS hT (_root_.GlobalTheory.LatVacDual.dualFamily D S LS hS) _).2 fun ℓ hℓ => ?_
   have h1 := GlobalTheory.LatVac.char_sympl_eq_one hψ hS hT (u := GlobalTheory.LatVac.finTens 1 M) h
     (GlobalTheory.LatVac.finTens_mem_latO (GlobalTheory.LatVac.one_mem_intAf _) hℓ)
   rw [GlobalTheory.LatVac.symplO_finTens, one_mul, one_mul] at h1

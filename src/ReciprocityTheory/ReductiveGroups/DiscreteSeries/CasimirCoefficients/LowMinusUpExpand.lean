@@ -5,9 +5,9 @@ public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.CasimirCoefficien
 public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.CasimirCoefficients.PhiPart
 public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.CasimirCoefficients.TauPart
 public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.CasimirCoefficients.DerivG
-public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.CasimirCoefficients.ByParts
+public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.CasimirCoefficients.Bundle0007
 public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.CasimirCoefficients.ContinuousOnFderivPhiM
-public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.CasimirAlgebra.RhoEqRhoCAddRhoN
+public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.CasimirAlgebra.Bundle0001
 
 @[expose] public section
 

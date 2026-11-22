@@ -1,6 +1,6 @@
 module
 
-public import Formalism.SharpRestriction.CuspSpanNormBounds.UnimodularSchurMeasures.CovolumeIndependentOfFundamentalDomain
+public import Formalism.SharpRestriction.CuspSpanNormBounds.UnimodularSchurMeasures.Bundle0003
 public import Mathlib
 public import Formalism.SharpRestriction.CuspSpanNormBounds.UnimodularSchurMeasures.RrdStronglyMeasurable
 

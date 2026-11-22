@@ -4,7 +4,7 @@ public import Mathlib
 public import Formalism.SatakeDualWeyl.KpqSubgroupCompact
 public import Development.AbelianVarietyTheory.Definitions.Divisors.LineOppositeParabolicUnitaryLeviSectionEq
 public import Development.AbelianVarietyTheory.Definitions.Foundations.NormEulerPolySubOneLe
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.FinsumDosetIndSmul
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0192
 
 @[expose] public section
 

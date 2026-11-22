@@ -1,10 +1,10 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Proofs.GlobalProofs.IsCovolOne
-public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.TensorLocallyCompactRing
-public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.ExistsTraceFormGramMatrixInBasis
-public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.ExistsEqAdelicCharMul
+public import Development.AutomorphicSpectrum.Proofs.GlobalProofs.Bundle0024
+public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.Bundle0019
+public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.Bundle0015
+public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.Bundle0030
 public import GroundTheory.HeightsAndTheta.Theta.AdelicFourierCoord
 
 @[expose] public section

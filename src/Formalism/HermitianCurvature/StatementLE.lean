@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Formalism.HermitianCurvature.StatementE
+public import Formalism.HermitianCurvature.Bundle0001
 public import Formalism.HermitianCurvature.StatementTB
 
 @[expose] public section

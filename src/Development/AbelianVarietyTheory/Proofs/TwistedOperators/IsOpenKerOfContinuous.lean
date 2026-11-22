@@ -1,11 +1,11 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.PositiveTwistAverage
+public import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.Bundle0002
 public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.OrbitLocallyConstant
 public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IntegrableOfMemSB
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.AddCharConductorAndHaarIntegersExist
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IsClopenIsCompactMapsPair
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0021
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0038
 
 @[expose] public section
 

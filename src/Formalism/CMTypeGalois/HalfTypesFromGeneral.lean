@@ -1,10 +1,9 @@
 module
 
-public import Formalism.CMTypeGalois.CMTypeFrobenius.MQGalois
-public import Formalism.CMTypeGalois.CMTypeFrobenius.MQKummer
+public import Formalism.CMTypeGalois.CMTypeFrobenius.Bundle0001
 public import Formalism.CMTypeGalois.StatementField
 public import Mathlib
-public import Formalism.StatementCM
+public import Formalism.Bundle0002
 
 @[expose] public section
 

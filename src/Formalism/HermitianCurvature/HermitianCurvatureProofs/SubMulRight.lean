@@ -1,6 +1,6 @@
 module
 
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.ExistsHaarStabilizer
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0085
 public import Formalism.HermitianCurvature.HermitianCurvatureProofs.InverseSplitting
 
 @[expose] public section

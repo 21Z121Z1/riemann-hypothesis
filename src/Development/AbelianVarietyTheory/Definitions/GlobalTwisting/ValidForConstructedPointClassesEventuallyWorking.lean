@@ -4,7 +4,7 @@ public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.RationalRootsDef
 public import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.FamilyClassSevenDutiesAndStableLattices
 public import Formalism.SharpRestriction.SmoothDesignExistence.DGamSmooth
-public import Development.AutomorphicArithmetic.PrimeDiscriminants.Scales
+public import Development.AutomorphicArithmetic.PrimeDiscriminants.Bundle0003
 
 @[expose] public section
 

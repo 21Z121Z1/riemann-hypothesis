@@ -1,7 +1,7 @@
 module
 
 public import Formalism.LocalToGlobal.IndefiniteReal.RealSeparation.FrameMatEqGlobal
-public import Formalism.LocalToGlobal.IndefiniteReal.LevelTypeEquivalence.GinfCSecondCountable
+public import Formalism.LocalToGlobal.IndefiniteReal.LevelTypeEquivalence.Bundle0003
 
 @[expose] public section
 

@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Formalism.EllipticTorsion.EllipticTorsionWeights
+public import Formalism.EllipticTorsion.Bundle0004
 
 @[expose] public section
 

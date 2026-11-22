@@ -5,7 +5,7 @@ public import Development.WeilBound.RepresentationTheoryGL.GenericUnitaryGL.Gene
 public import Development.WeilBound.RepresentationTheoryGL.GenericUnitaryGL.GenericUnlinkedGL.TopAll
 public import Development.WeilBound.RepresentationTheoryGL.GenericUnitaryGL.GenericUnlinkedGL.Realize
 public import Development.WeilBound.RepresentationTheoryGL.GenericUnitaryGL.NuPairInjectivity.NuPair
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SegmentJacquetAll
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0674
 public import Development.WeilBound.CoreStatements.TemperedRepresentationTheory.BernsteinZelevinskyGL.TopAdm
 
 @[expose] public section

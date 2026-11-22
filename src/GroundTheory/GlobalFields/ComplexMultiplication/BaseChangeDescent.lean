@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import GroundTheory.GlobalFields.ComplexMultiplication.BaseChangeDegree
+public import GroundTheory.GlobalFields.ComplexMultiplication.Bundle0008
 
 @[expose] public section
 

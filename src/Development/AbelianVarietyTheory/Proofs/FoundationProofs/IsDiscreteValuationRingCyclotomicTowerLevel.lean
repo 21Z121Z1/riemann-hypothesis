@@ -2,8 +2,8 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.Foundations.NotCoboundaryConstantOne
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.CompletedLaurentIsDVRStatementStatement
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsBasisOnZetaPowMulQPowStatement
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0063
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0044
 
 @[expose] public section
 
@@ -254,7 +254,7 @@ theorem isDVR_On : ∀ (p : ℕ) [Fact p.Prime] (n : ℕ), 1 ≤ n →
     ∃ _ : IsDomain (On p n), IsDiscreteValuationRing (On p n) ∧ Irreducible (xn p n - 1) := by
   intro p hpr n hn
   obtain ⟨m, rfl⟩ := Nat.exists_eq_add_of_le' hn
-  obtain ⟨_, hdvr, hp⟩ := GlobalTheory.T.completed_laurent_isDVR_statement p
+  obtain ⟨_, hdvr, hp⟩ := _root_.GlobalTheory.K5.completed_laurent_isDVR p
   obtain ⟨b, hb⟩ := GlobalTheory.T.exists_basis_On_zeta_pow_mul_q_pow p (m + 1)
   obtain ⟨φ, hφq, hφp⟩ := exists_red p
   have hpos : 0 < p ^ (m + 1) := pow_pos hpr.out.pos _

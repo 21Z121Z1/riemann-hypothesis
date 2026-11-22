@@ -9,7 +9,7 @@ public import Formalism.SharpRestriction.CuspSpanNormBounds.BranchingAndRankCons
 public import Formalism.SharpRestriction.CuspSpanNormBounds.AmplitudeAndVolumeBounds
 public import Formalism.SharpRestriction.CuspSpanNormBounds.GluingLemmasAndTheorems
 public import Formalism.SharpRestriction.CuspSpanNormBounds.OnePlaceEstimates
-public import Formalism.SharpRestriction.CuspSpanNormBounds.SBridge
+public import Formalism.SharpRestriction.CuspSpanNormBounds.Bundle0005
 
 @[expose] public section
 

@@ -1,7 +1,7 @@
 module
 
 public import Development.WeilBound.ThetaLifts.LocalTheory.ToralCohomology.EmbeddingTransposeVectorZero
-public import Development.WeilBound.ThetaLifts.LocalTheory.ToralCohomology.ExistsTorus
+public import Development.WeilBound.ThetaLifts.LocalTheory.ToralCohomology.Bundle0001
 public import Development.WeilBound.ThetaLifts.LocalTheory.UnramifiedDeterminedBySpherical
 
 @[expose] public section

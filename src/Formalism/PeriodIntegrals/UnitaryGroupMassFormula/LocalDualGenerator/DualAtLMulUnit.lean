@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Formalism.PeriodIntegrals.LocDualGen
+public import Formalism.PeriodIntegrals.Bundle0014
 
 @[expose] public section
 

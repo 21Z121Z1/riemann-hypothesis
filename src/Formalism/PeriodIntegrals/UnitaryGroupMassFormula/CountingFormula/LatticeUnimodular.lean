@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.CountingFormula.LatticeFlagExists
-public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.CountingFormula.CoordLInjective
+public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.CountingFormula.Bundle0026
+public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.CountingFormula.Bundle0023
 
 @[expose] public section
 

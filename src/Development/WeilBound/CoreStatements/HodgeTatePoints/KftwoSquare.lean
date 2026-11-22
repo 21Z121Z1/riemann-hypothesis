@@ -1,13 +1,12 @@
 module
 
 public import Mathlib
-public import Development.WeilBound.CoreStatements.HodgeTatePoints.KftwoDefs
+public import Development.WeilBound.CoreStatements.HodgeTatePoints.Bundle0010
 public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.ThetaCubIsPullCubical
 public import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.ExistsIsGrpPullbackPow
-public import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.IsLieCombIffProd
-public import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.MemNonzeroLocusProdSec
+public import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.Bundle0012
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LocalisedModelUniformisationBaseChange
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FlatFibrePowerAndExternalTensorSectionNonzeroClo
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1919
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.CocycleIdentityIso
 
 @[expose] public section

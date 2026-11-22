@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Formalism.LocalRingCardinality.DataErr
+public import Formalism.LocalRingCardinality.Bundle0004
 public import Formalism.LocalRingCardinality.DataParams₂
 public import Formalism.SharpRestriction.Divisibility.LiftErrorLocal
 public import Formalism.SharpRestriction.GrowthBounds.WeilJacquetShalikaLaw

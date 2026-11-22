@@ -3,8 +3,8 @@ module
 public import Development.WeilBound.CoreStatements.CompactAveragingSplitting.EigenvectorLifting.SplitLoc
 public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.PairwiseDisjointCell
 public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.PowDvdOfHermMatEq
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.EventuallyDeepSubset
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.NormLeOfCompleteHomogeneousLe
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0042
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0011
 
 @[expose] public section
 

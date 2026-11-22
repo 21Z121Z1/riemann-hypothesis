@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import GroundTheory.HeightsAndTheta.Heights.FiniteCovolume.StatementsDoubleCoset
+public import GroundTheory.HeightsAndTheta.Heights.FiniteCovolume.Bundle0001
 
 @[expose] public section
 

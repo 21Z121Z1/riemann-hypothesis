@@ -1,10 +1,10 @@
 module
 
 public import Mathlib
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsBergman
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsChartBergman
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsComplexTaylor
-public import ReciprocityTheory.AnalyticForms.PotentialTheory.HessCIsHermitian
+public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0020
+public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0010
+public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0005
+public import ReciprocityTheory.AnalyticForms.PotentialTheory.Bundle0004
 
 @[expose] public section
 

@@ -1,8 +1,8 @@
 module
 
-public import Formalism.LocalToGlobal.ProjectiveLattices.DatumOfRecordSignature
-public import Formalism.LocalToGlobal.ProjectiveLattices.SumEmbeddingsEq
-public import Formalism.LocalToGlobal.ProjectiveLattices.DatMat
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0018
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0003
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0001
 public import Formalism.LocalToGlobal.ProjectiveLattices.DatTheta
 public import Formalism.LocalToGlobal.IndefiniteReal.FinitePlaces.FactPrincipalDatum
 

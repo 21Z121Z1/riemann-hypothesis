@@ -1,6 +1,6 @@
 module
 
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ShapeMemBounded
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0620
 public import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.SatakeExponents.FiniteDiscreteFamilies.FinCut
 
 @[expose] public section

@@ -1,25 +1,24 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Foundations.ApplyEqOfMemAdjoin
-public import Development.AbelianVarietyTheory.Definitions.Foundations.IsTopWTopWOfExists
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.EdgeCupProps
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.IsAlgZpMapOfAlgebraic
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.IsLogDerivQExpansionModPrimePowUnique
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsLogDerivQExpansionModPrimePowOfTranslation
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.EvalSeriesCongIffCoeffAndIsUnit
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.EvOfFintype
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Geofix
+public import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0010
+public import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0003
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0023
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0133
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0137
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0198
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0123
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0095
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0148
 public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.IsLocalValueOfQuotientAddOfCommonDenominator
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.IoConstOfMem
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0253
 public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.GnFixZeta
 public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsReparametrizationByTowerParameter
 public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.SiegelLogCoordsStatement
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsPrimitiveExpansionQuotientLevelOne
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.PrimitiveHahnSeriesNotZeroDivisorModPrimePow
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0192
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0135
 public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.PrimitiveHahnSeriesInvertibleModPrimePow
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.MulOfIsPrimitiveIntegralHahnGauss
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.MemTranslationInvariantSubfieldIffExponents
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0106
 
 @[expose] public section
 
@@ -497,7 +496,7 @@ theorem GlobalTheory.pair_edge_dlog : ∀ (p : ℕ) [Fact p.Prime], p ≠ 2 → 
         a ≠ 0 → IsInt (p := p) a⁻¹ → b ≠ 0 → IsInt (p := p) b⁻¹ →
         Cong (p := p) n ((p : Ω) ^ c * (a' / a - b' / b))
           (σ⁻¹ o - o - (p : Ω) ^ c * ι (α * β' - β * α') * ((lz σ).val : Ω)) := by
-    obtain ⟨c₁, h53⟩ := GlobalTheory.T.cup_kummer_dlog_mod_primePow_levelL p hp2
+    obtain ⟨c₁, h53⟩ := _root_.GlobalTheory.K5.LevelDown.cup_kummer_dlog_mod p hp2
     obtain ⟨c₂, hed⟩ := GlobalTheory.T.edge_class_cup_product_geometric p hp2 c₁
     obtain ⟨c₃, hgeo⟩ := GlobalTheory.T.kummerCocycle_value_expansion_eq_logDeriv_smul p hp2
     obtain ⟨c₄, h71⟩ := GlobalTheory.K5.Reb.h1_geometric_level_coboundary p hp2

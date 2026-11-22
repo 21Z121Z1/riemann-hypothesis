@@ -1,7 +1,7 @@
 module
 
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.ArchimedeanCompact.AutomorphicFormsLeSm
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.FoundBridge
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.Bundle0008
 
 @[expose] public section
 

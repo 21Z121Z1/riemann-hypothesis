@@ -3,7 +3,7 @@ module
 public import Mathlib
 public import Formalism.LocalToGlobal.KernelLattices.KernelLocalFactors.ThetaLocalEquivalence.ThIndEqAmbOfOf
 public import Formalism.LocalToGlobal.KernelLattices.KernelLocalFactors.LocalProductMeasures
-public import Formalism.LocalToGlobal.KernelLattices.KernelLocalFactors.RatKDeg
+public import Formalism.LocalToGlobal.KernelLattices.KernelLocalFactors.Bundle0002
 public import Formalism.LocalToGlobal.KernelLattices.KernelLocalFactors.PeriodLatticeFinitelyGenerated
 
 @[expose] public section

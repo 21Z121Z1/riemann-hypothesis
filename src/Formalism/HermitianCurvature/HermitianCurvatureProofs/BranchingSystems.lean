@@ -1,7 +1,7 @@
 module
 
-public import Formalism.HermitianCurvature.CapelliDeterminantAndBranching
-public import Formalism.RealPlaceAnalysis.RealPlaceTaylor.QuantumDetHighestWeightHolds
+public import Formalism.HermitianCurvature.Bundle0008
+public import Formalism.RealPlaceAnalysis.RealPlaceTaylor.Bundle0006
 
 @[expose] public section
 

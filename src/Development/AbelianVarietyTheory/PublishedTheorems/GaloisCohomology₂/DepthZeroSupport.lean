@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.BlockSplitAll
-public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.HasFiniteLengthOfIsIrreducible
+public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.Bundle0014
+public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.Bundle0001
 public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.ExistsCellOfIsSubquotient
 
 @[expose] public section

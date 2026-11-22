@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.LocalMaximality.DualForm
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.KahlerFormsOverSubalgebraStandardOpenIffPowSmulStatement
+public import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.LocalMaximality.Bundle0002
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0452
 
 @[expose] public section
 

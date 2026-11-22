@@ -1,10 +1,10 @@
 module
 
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutJDHatOpA
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutGaugeCut
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0058
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0045
 public import Formalism.HermitianCurvature.HermitianCurvatureProofs.BetaSesquilinearity
-public import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.UsCompose
-public import Formalism.FormalDegreeBessel.FinalG
+public import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.Bundle0022
+public import Formalism.FormalDegreeBessel.Bundle0002
 
 @[expose] public section
 

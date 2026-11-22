@@ -1,8 +1,8 @@
 module
 
-public import Formalism.LocalToGlobal.NormalizedHeckeFactors.CoverAct
+public import Formalism.LocalToGlobal.NormalizedHeckeFactors.Bundle0005
 public import ReciprocityTheory.Automorphisms.SplitCoeAlgebraMap
-public import ReciprocityTheory.Automorphisms.InstMainA
+public import ReciprocityTheory.Automorphisms.Bundle0001
 public import Formalism.LocalToGlobal.GlobalTheory.GL6.PSplitT
 
 @[expose] public section

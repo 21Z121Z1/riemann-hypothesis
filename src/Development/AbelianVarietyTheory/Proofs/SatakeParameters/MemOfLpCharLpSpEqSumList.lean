@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.HasNormGroups
-public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.HasFiniteLengthOfIsIrreducible
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.BijectiveOfIntertwining
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0226
+public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.Bundle0001
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0001
 
 @[expose] public section
 

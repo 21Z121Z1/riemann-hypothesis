@@ -1,8 +1,8 @@
 module
 
-public import Formalism.LocalToGlobal.HermitianForms.TiedTwGen
-public import Formalism.LocalToGlobal.HermitianColumns.TiedQCJoint
-public import Formalism.LocalRingCardinality.DataKerP
+public import Formalism.LocalToGlobal.HermitianForms.Bundle0005
+public import Formalism.LocalToGlobal.HermitianColumns.Bundle0004
+public import Formalism.LocalRingCardinality.Bundle0004
 
 @[expose] public section
 

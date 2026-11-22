@@ -6,8 +6,8 @@ public import Development.WeilBound.RepresentationTheoryGL.CasimirAlgebra.KugaCo
 public import Development.WeilBound.RepresentationTheoryGL.CasimirAlgebra.KugaCoordinates.ArchimedeanWhittakerDerivatives.HasDerivAtOfIntRel
 public import Development.WeilBound.RepresentationTheoryGL.CasimirAlgebra.KugaCoordinates.ArchimedeanWhittakerDerivatives.ConjSingleApply
 public import Development.WeilBound.RepresentationTheoryGL.CasimirAlgebra.KugaCoordinates.ArchimedeanWhittakerDerivatives.ContinuousAtEmb
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsStandardAdelicAddChar
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsMirabolicWhittakerStageOfIsCuspForm
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0666
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0606
 
 @[expose] public section
 
@@ -40,7 +40,7 @@ theorem whit_lie_eq {ψ : AddChar (Ad E) ℂ} (hψ : StdPsi ψ) (π : CuspSub E 
     (hMu : ∀ i j : Fin a, j ≤ i → (b.val * M * (b⁻¹).val) i j = 0) (φ : π.V) :
     whit ψ (a - 1) (lieOp π (toL M) φ).1.1 (infGL E a b) =
       dpsi ψ (sd (b.val * M * (b⁻¹).val)) * whit ψ (a - 1) φ.1.1 (infGL E a b) := by
-  have hg : ∀ φ : π.V, Good ψ (a - 1) φ.1.1 := fun φ => GlobalTheory.T.isMirabolicWhittakerStage_of_isCuspForm E a ψ φ.1 (π.cusp _ φ.2)
+  have hg : ∀ φ : π.V, Good ψ (a - 1) φ.1.1 := fun φ => _root_.GlobalTheory.CuspGeneric.good_of_isCuspForm E a ψ φ.1 (π.cusp _ φ.2)
   have h0 : a - 1 < a ∨ a - 1 = 0 := by omega
   have hrel : IntRel M hM φ.1.1 (lieOp π (toL M) φ).1.1 := intRel_sm M hM φ.1
   have hD := hasDerivAt_of_intRel M hM (whit_good hψ (a - 1) h0 (hg (lieOp π (toL M) φ))).1.cont
@@ -53,8 +53,8 @@ theorem whit_lie_eq {ψ : AddChar (Ad E) ℂ} (hψ : StdPsi ψ) (π : CuspSub E 
 
 theorem whitLie_holds : WhitLie := by
   intro E _ _ _ a π
-  obtain ⟨ψ, hψ⟩ := GlobalTheory.T.exists_standardAdelicAddChar E
-  have hg : ∀ φ : π.V, Good ψ (a - 1) φ.1.1 := fun φ => GlobalTheory.T.isMirabolicWhittakerStage_of_isCuspForm E a ψ φ.1 (π.cusp _ φ.2)
+  obtain ⟨ψ, hψ⟩ := _root_.GlobalTheory.CuspGeneric.exists_stdPsi E
+  have hg : ∀ φ : π.V, Good ψ (a - 1) φ.1.1 := fun φ => _root_.GlobalTheory.CuspGeneric.good_of_isCuspForm E a ψ φ.1 (π.cusp _ φ.2)
   have h0 : a - 1 < a ∨ a - 1 = 0 := by omega
   obtain ⟨φ₀, hφ₀⟩ : ∃ φ : π.V, φ ≠ 0 := by
     obtain ⟨x, hx, hx0⟩ := Submodule.exists_mem_ne_zero_of_ne_bot π.ne_bot

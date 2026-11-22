@@ -1,22 +1,22 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ConstMemBddAut
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.WeilDatumAtPlaceEqLatticeIntertwinerMulDetCharStatement
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.WeilLatticeIntertwinerCoefficientAtPlaceStatement
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IndexMovedHomLatticeSplitPlaceChartStatement
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IndexMovedHomLatticeInertPlaceStatement
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.LocalHeckeCharDetDoubleCosetSplitPlaceStatement
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SplitPlaceEigenvalueIsSqrtNormStatement
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IndexNormalizationInertNormEqNegStatement
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsGoodIndexNormalizationNegativeInert
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0156
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0395
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.WeilLatticeIntertwinerCoefficientAtPlace
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0498
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0442
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0195
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0349
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0180
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0249
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsIsFinWeil
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FiniteWeilRepEqLatticeIntertwinerMulCharacter
 public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.IsSelfDualCLatFrame
 public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsUniqueIsConjAt
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.IsParamFunVIffIsSysParamDOfLevel
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0315
 public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.RamificationIdxEqOneOfIsSquare
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.IsIdemOfAlgebraMap
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0100
 public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.SphericalLabelOperatorsOnHyperspecialFixedVector
 
 @[expose] public section
@@ -103,7 +103,7 @@ theorem detval : ∀ (D : D7) (T : HSp D) (χ : (AE D)ˣ →* Circle) (v : Heigh
 
 theorem lamsplit : ∀ (D : D7) (lam : ℕ →* ℂ), (∀ n : ℕ, n ≠ 0 → (∀ q : ℕ, q.Prime → Formalism.MainNotions.StandardLatticesGL3.InertQ D q → ¬ q ∣ n) → lam n = (Real.sqrt n : ℂ)) → ∀ (v : HeightOneSpectrum (𝓞 D.host.F)) (w : HeightOneSpectrum (𝓞 D.host.E)), w.under (𝓞 D.host.F) = v → IsSplit (E := D.host.E) v → ∀ m : ℕ, lam (qV D.host.E w ^ m) = (Real.sqrt ((qV D.host.E w ^ m : ℕ) : ℝ) : ℂ) := GlobalTheory.T.split_place_eigenvalue_is_sqrt_norm
 
-theorem laminert : ∀ (D : D7) (lam : ℕ →* ℂ), GlobalTheory.FinWeil.GoodNorm (GlobalTheory.FinWeil.sgO D) lam → ∀ (v : HeightOneSpectrum (𝓞 D.host.F)) (w : HeightOneSpectrum (𝓞 D.host.E)), IsInertAt D.host.F D.host.E v w → lam (qV D.host.E w) = -((qV D.host.F v : ℕ) : ℂ) := GlobalTheory.T.indexNormalization_inert_norm_eq_neg
+theorem laminert : ∀ (D : D7) (lam : ℕ →* ℂ), GlobalTheory.FinWeil.GoodNorm (GlobalTheory.FinWeil.sgO D) lam → ∀ (v : HeightOneSpectrum (𝓞 D.host.F)) (w : HeightOneSpectrum (𝓞 D.host.E)), IsInertAt D.host.F D.host.E v w → lam (qV D.host.E w) = -((qV D.host.F v : ℕ) : ℂ) := _root_.GlobalTheory.LamInert.lam_qV_inert
 
 theorem inv_neg_pow_mul (x : ℂ) (N M : ℕ) :
     ((-x) ^ (N * M))⁻¹ = ((((-1 : ℂˣ) ^ N : ℂˣ) : ℂ) * (x ^ N)⁻¹) ^ (M : ℤ) := by
@@ -148,7 +148,7 @@ theorem vac_coef : ∀ (D : D7) (ψ : AddChar (AF D.host.F) ℂ) (S T : HSp D) (
     have hns : ¬ IsSplit (E := D.host.E) v := not_isSplit_of_isInertAt hw
     have hν : ν (e.symm (k₁ * t * k₂)) = 1 := if_neg hns
     have hI : I (e.symm (k₁ * t * k₂)) = qV D.host.E w ^ (S.rank * (∑ i, max (d i) 0).toNat) :=
-      GlobalTheory.T.index_moved_homLattice_inertPlace D S T v w h hw c ϖ e hϖ he d t ht k₁ hk₁ k₂ hk₂
+      _root_.GlobalTheory.InertHomIdx.idx_moved_inert D S T v w h hw c ϖ e hϖ he d t ht k₁ hk₁ k₂ hk₂
     have hval := val_inert D χS S.rank hom.resS v w hw (hunr w h).1
     have hq := laminert D lam hlam v w hw
     show ν _ * (lam (I _))⁻¹ = _
@@ -162,7 +162,7 @@ theorem vac_coef : ∀ (D : D7) (ψ : AddChar (AF D.host.F) ℂ) (S T : HSp D) (
     have hf₂ : IsThetaFunO ψ S T f₂ := h₂.1
     let g₁ : GlobalTheory.FinWeilO.thetaSub ψ S T := ⟨f₁, hf₁⟩
     let g₂ : GlobalTheory.FinWeilO.thetaSub ψ S T := ⟨f₂, hf₂⟩
-    have hc := GlobalTheory.T.weil_latticeIntertwiner_coefficient_at_place D ψ S T hψ lam w₀ Om hL μ 𝓕 hμ v a g₁ g₂ h₁ h₂
+    have hc := _root_.GlobalTheory.LatCoef.latCoef D ψ S T hψ lam w₀ Om hL μ 𝓕 hμ v a g₁ g₂ h₁ h₂
     have hn := GlobalTheory.T.weilDatum_at_place_eq_latticeIntertwiner_mul_det_char D ψ S T χS χT om hom hψ lam w₀ Om hL hlam hsq v w₁ hw₁ a g₁
     show l2 μ 𝓕 (om (1, embV T v a) (g₁ : WO S T → ℂ)) (g₂ : WO S T → ℂ) =
       (ν a * (lam (I a))⁻¹) * l2 μ 𝓕 (g₁ : WO S T → ℂ) (g₂ : WO S T → ℂ)

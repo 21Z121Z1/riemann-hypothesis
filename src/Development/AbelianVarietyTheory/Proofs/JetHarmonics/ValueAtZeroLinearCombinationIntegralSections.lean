@@ -1,14 +1,13 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Jets.ColValMonomial
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.DiscreteValuationRings.VRatioGtStatement
+public import Development.AbelianVarietyTheory.Definitions.Jets.Bundle0002
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.DiscreteValuationRings.Bundle0012
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.DiscreteValuationRings.TwistBC
-public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.ExistsIntegralExpansionsOfValuationGe
-public import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.ExpansionValueZero
-public import Development.AbelianVarietyTheory.Proofs.FormalGroupCharts.IsNilpotentOfMemKerJetTruncR
-public import Development.AbelianVarietyTheory.Proofs.FormalGroupCharts.ValSerGermFnVal
-public import Development.AbelianVarietyTheory.Proofs.FormalGroupCharts.TopLePreimageWchart
+public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0099
+public import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.Bundle0017
+public import Development.AbelianVarietyTheory.Proofs.FormalGroupCharts.Bundle0016
+public import Development.AbelianVarietyTheory.Proofs.FormalGroupCharts.Bundle0017
 public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.ValueAtZeroOfSectionValue
 
 @[expose] public section

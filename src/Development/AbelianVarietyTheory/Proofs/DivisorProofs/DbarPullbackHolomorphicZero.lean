@@ -2,8 +2,8 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.IsTypeIsRealConst
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ClosedFormsMulClosed
-public import ReciprocityTheory.SemistableReduction.ShareDetA
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1373
+public import ReciprocityTheory.SemistableReduction.Bundle0013
 
 @[expose] public section
 

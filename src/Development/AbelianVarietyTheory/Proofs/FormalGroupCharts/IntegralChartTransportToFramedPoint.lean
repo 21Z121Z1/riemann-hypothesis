@@ -1,19 +1,18 @@
 module
 
 public import Mathlib
-public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.GermCut
+public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0006
 public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.GermBGen
-public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.ChartPrimTrPfA
-public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.IntChartPf
-public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.ExistsTruncatedIntegralChart
+public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0022
+public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0019
+public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0010
 public import Formalism.LocalToGlobal.ProjectiveLattices.PlaceBelow
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.SecBaseChangeAnySt
-public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.ChartJetTrPf
-public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.ChartJetSubPf
+public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0021
 public import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.GlobalBasisAlgebra
-public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.FBMapPf
-public import Development.AbelianVarietyTheory.Proofs.FormalGroupCharts.CanonGaugeExists
-public import Development.AbelianVarietyTheory.Proofs.FormalGroupCharts.IntegralFramesTransportToFramedPointStatement
+public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0011
+public import Development.AbelianVarietyTheory.Proofs.FormalGroupCharts.Bundle0010
+public import Development.AbelianVarietyTheory.Proofs.FormalGroupCharts.IntegralFramesTransportToFramedPoint
 
 @[expose] public section
 
@@ -30,7 +29,7 @@ theorem chartTransport_holds : ∀ (E : Type) [Field E] [NumberField E] [IsCMFie
   have hJ : ChartJetTrSt Xo c := chartJetTr_of Xo c (chartJetTan_holds Xo c)
     (chartJetBasis_holds Xo c (fun S _ _ y w hw =>
       FrameTangent.frame_tangent_basis E H Dw l Xo c S y w hw))
-  have hF : ChartFrameTrSt Xo c := GlobalTheory.T.integral_frames_transport_to_framed_point E H Dw l Xo c
+  have hF : ChartFrameTrSt Xo c := _root_.GlobalTheory.chartFrameTransport E H Dw l Xo c
   have hM : FBMapSt := fbMap_holds
   intro hstar T io y I d B tgT uvecT xT eT wPT hbas hch hdir hfr hpr htr hrig
   obtain ⟨B', hF1, hA1, hp1, hp2, hsy, had⟩ := hM T.V T.Fr (algebraMap T.V T.Fr) d (𝓞 E) B

@@ -1,16 +1,16 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Divisors.MatchingOfParts
-public import Development.AbelianVarietyTheory.Definitions.Divisors.DiscreteSeriesHermitianUnique
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0033
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0041
 public import Development.AbelianVarietyTheory.Definitions.Divisors.RankEqCardIffExistsFrameMatrixFirstColumnBlock
 public import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.WeilTensorModels
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsFactorPureTensorComponentAtPlace
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EqOfComponentTensorAdelicFunctionEq
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EventuallyIntegralPointsIndicatorIsVacuum
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MeasurableThetaSumOfSchrodinger
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdelicSchwartzMemL2Statement
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.FinPartIdemMulMemIff
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1519
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1645
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1573
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1432
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1472
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0303
 
 @[expose] public section
 

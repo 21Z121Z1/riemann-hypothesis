@@ -2,9 +2,9 @@ module
 
 public import Formalism.SharpRestriction.GrowthBounds.ChartComparison.CmpGlMemMIff
 public import Formalism.SharpRestriction.GrowthBounds.ChartComparison.NrmAMemAdForms
-public import Formalism.LocalToGlobal.GroupLattices.TiedFamilies.TiePtOne
+public import Formalism.LocalToGlobal.GroupLattices.TiedFamilies.Bundle0001
 public import Formalism.LocalToGlobal.GroupLattices.TiedFamilies.BlockRationalityField
-public import Formalism.LocalToGlobal.GroupLattices.ComparisonMaps.RecAct
+public import Formalism.LocalToGlobal.GroupLattices.ComparisonMaps.Bundle0009
 
 @[expose] public section
 

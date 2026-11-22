@@ -1,7 +1,7 @@
 module
 
-public import Formalism.SharpRestriction.LevelLetterCocycles.RepresentationCongruences.QALetterNe
-public import Formalism.SharpRestriction.LevelLetterCocycles.RepresentationCongruences.Imports
+public import Formalism.SharpRestriction.LevelLetterCocycles.RepresentationCongruences.Bundle0012
+public import Formalism.SharpRestriction.LevelLetterCocycles.RepresentationCongruences.Bundle0001
 
 @[expose] public section
 

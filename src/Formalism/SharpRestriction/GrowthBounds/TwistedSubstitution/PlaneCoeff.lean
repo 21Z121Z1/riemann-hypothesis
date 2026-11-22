@@ -1,6 +1,6 @@
 module
 
-public import Formalism.SharpRestriction.GrowthBounds.DualFockLinear.RestXiPOfNS
+public import Formalism.SharpRestriction.GrowthBounds.DualFockLinear.Bundle0014
 
 @[expose] public section
 

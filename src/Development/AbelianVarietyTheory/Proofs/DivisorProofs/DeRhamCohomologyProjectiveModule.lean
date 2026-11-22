@@ -1,12 +1,18 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Divisors.InfUniv
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AbelianSchemeFirstDeRhamStructureStatement
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0044
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle3084
+public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.Bundle0022
+public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.Bundle0010
+public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.AbelianHodgeDeRham
+public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.Bundle0008
+public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.Bundle0007
+public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.Bundle0006
 public import Development.AbelianVarietyTheory.Proofs.CoherentCohomologyProofs.SpanSingletonEqTopIffIsUnitOfIsBaseChange
 public import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.IsAbelianSchemeAndExtendOfGenericHoms
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.SABBaseChangeSt
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.SabPull
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.Bundle0007
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.ThetaCore
 
 @[expose] public section
@@ -237,7 +243,7 @@ theorem projective_of_baseChange (k K : Type) [Field k] [Field K] [Algebra k K] 
     have := hA.geomConnected
     have : ConnectedSpace A₀.left := GeometricallyConnected.connectedSpace A₀.hom A₀.hom.isOpenMap
     exact exists_dim_of_preconnected A₀.hom (Classical.arbitrary _)
-  obtain ⟨hFree, -, hBC, -, -⟩ := GlobalTheory.T.abelianScheme_firstDeRham_structure
+  obtain ⟨hFree, -, hBC, -, -⟩ := _root_.GlobalTheory.abelianDeRham
   have hh := isGrpPullback_pullback A₀ (spMap (algebraMap k K))
   have hbc := (hBC k A₀ g hA hg K _ _ hh).1
   haveI : Module.Finite k (primDR A₀) := (hFree.prim hA hg).1

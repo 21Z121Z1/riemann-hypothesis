@@ -1,12 +1,11 @@
 module
 
 public import Mathlib
-public import Development.WeilBound.CoreStatements.TorusUniformisation.ChowMahlerFamilies.IsDerAt0
+public import Development.WeilBound.CoreStatements.TorusUniformisation.ChowMahlerFamilies.Bundle0022
 public import Development.WeilBound.CoreStatements.TorusUniformisation.ChowMahlerFamilies.SequenceFamilyPairing
 public import Development.WeilBound.CoreStatements.TorusUniformisation.ChowMahlerFamilies.SequenceLocalizationExists
-public import Development.WeilBound.CoreStatements.TorusUniformisation.ChowMahlerFamilies.ExistsCmTypeEmbedding
-public import Development.WeilBound.CoreStatements.TorusUniformisation.ChowMahlerFamilies.SequenceDifferentialsExist
-public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.DifferentGeneratorDualIntegral
+public import Development.WeilBound.CoreStatements.TorusUniformisation.ChowMahlerFamilies.Bundle0019
+public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.Bundle0014
 
 @[expose] public section
 

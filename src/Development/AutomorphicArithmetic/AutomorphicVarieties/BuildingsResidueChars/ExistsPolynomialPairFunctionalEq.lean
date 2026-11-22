@@ -5,8 +5,8 @@ public import Development.AutomorphicArithmetic.AutomorphicVarieties.BuildingsRe
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.BuildingsResidueChars.EulerProductAdjointEqStandard
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.LeviSmoothLocalization.AdjointEta.EtaOK
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Divisors.LocPoly
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SummableAbsNormRpowHeightOneSpectrum
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0020
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0110
 
 @[expose] public section
 

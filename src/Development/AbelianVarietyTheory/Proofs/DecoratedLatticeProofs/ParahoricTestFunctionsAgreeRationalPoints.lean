@@ -4,7 +4,7 @@ public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.EntryAgree
 public import Formalism.LocalToGlobal.Columns.ChainTw
 public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ResiduesOfCompletionAtPrimeWithUniformizer
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.CompletionChainLatticeEntriesAgree
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0055
 
 @[expose] public section
 

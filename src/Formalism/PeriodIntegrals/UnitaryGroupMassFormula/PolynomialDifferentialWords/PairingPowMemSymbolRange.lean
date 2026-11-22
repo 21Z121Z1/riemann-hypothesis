@@ -1,7 +1,7 @@
 module
 
 public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.PolynomialDifferentialWords.PolarizationBihomogeneous
-public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.PolynomialDifferentialWords.KappaMain
+public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.PolynomialDifferentialWords.Bundle0002
 
 @[expose] public section
 

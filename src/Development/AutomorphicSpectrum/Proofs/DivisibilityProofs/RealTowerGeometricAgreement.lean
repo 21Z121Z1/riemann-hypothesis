@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Definitions.DivisibilityTowers.RefLinked
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.InterSt
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.IsC2AtOfIsPotential
+public import Development.AutomorphicSpectrum.Definitions.DivisibilityTowers.Bundle0001
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.Bundle0006
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0083
 
 @[expose] public section
 
@@ -224,7 +224,7 @@ private theorem local_mInt_ref_eq {D : ℕ} {σ : Type} {S : AnSys D σ} {P : Id
   have hth : ∀ a, IsPotential S.A (S.th a) := fun a => (S.sing a).1
   have hpb : ∀ a, IsPotential Re.R.A ((S.th a).pullback Re.π Re.holo.1) := fun a =>
     isPotentialPullback S.A Re.R.A Re.π Re.holo (S.th a) (hth a)
-  have h1 := (GlobalTheory.T.monge_ampere_integral_congr_potentials D Re.R.X Re.R.A Set.univ (fun j => potOf Re.R (Re.ref (w j)))
+  have h1 := (_root_.GlobalTheory.CompanionTheory.Ar.PB.mInt_congr_samePot D Re.R.X Re.R.A Set.univ (fun j => potOf Re.R (Re.ref (w j)))
     (fun j => (S.th (w j)).pullback Re.π Re.holo.1) (fun _ => 1) (fun _ => 1)
     (fun j => by simp) (fun i => Re.ref_pot (w i)) (fun i x _ => local_isC2At_of_isPotential _ (hpb _) x)
     (fun _ _ => rfl)).1

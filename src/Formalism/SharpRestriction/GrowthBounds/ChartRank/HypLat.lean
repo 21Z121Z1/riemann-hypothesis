@@ -1,9 +1,9 @@
 module
 
 public import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.CsGlob
-public import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.InclusionInjective
+public import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Bundle0002
 public import Formalism.LocalToGlobal.GlobalTheory.BlockActions.FiniteAdeleRingNontrivial
-public import Formalism.LocalToGlobal.HermitianForms.TiedTwGen
+public import Formalism.LocalToGlobal.HermitianForms.Bundle0005
 
 @[expose] public section
 

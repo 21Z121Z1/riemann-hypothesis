@@ -1,8 +1,8 @@
 module
 
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.PublishedTheorems.Hilbert
-public import GroundTheory.GlobalFields.TateThesis.GlobalZetaSplit
-public import GroundTheory.GlobalFields.TateThesis.SchwartzBruhatDual
+public import GroundTheory.GlobalFields.TateThesis.Bundle0010
+public import GroundTheory.GlobalFields.TateThesis.Bundle0008
 
 @[expose] public section
 

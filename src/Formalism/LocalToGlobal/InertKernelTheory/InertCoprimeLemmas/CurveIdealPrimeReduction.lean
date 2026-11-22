@@ -1,10 +1,10 @@
 module
 
 public import Mathlib
-public import Formalism.LocalToGlobal.InertKernelTheory.StatementCc
+public import Formalism.LocalToGlobal.InertKernelTheory.Bundle0001
 public import Formalism.LocalToGlobal.InertKernelTheory.InertCoprimeLemmas.HalfTorsionNotMemCmLattice
-public import Formalism.LocalToGlobal.GlobalTheory.GL3.CubicFields.EpsteinZeta.Homothety
-public import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.InertPrime
+public import Formalism.LocalToGlobal.GlobalTheory.GL3.CubicFields.EpsteinZeta.Bundle0001
+public import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.Bundle0003
 public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.QuadraticInvariants.QuadPolyIrreducible
 public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.QuadraticDedekindZeta.GenBase
 

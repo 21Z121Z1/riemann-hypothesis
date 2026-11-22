@@ -6,8 +6,8 @@ public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeo
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.ExistsZeroGt
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.SecBaseChangeAnySt
 public import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.ExistsUniqueIsPointOfDualNumber
-public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.CubicalSymmetryTransport
-public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.PulledComparisonEven
+public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.Bundle0025
+public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.Bundle0029
 
 @[expose] public section
 

@@ -3,8 +3,8 @@ module
 public import Mathlib
 public import Formalism.LocalToGlobal.SiegelLatticeTheory.CokernelGLCounts.RankPointCounts.NGAnalytic
 public import Formalism.LocalToGlobal.SiegelLatticeTheory.ClosedLocalOrbits.TermLoc
-public import Formalism.SharpRestriction.CuspSpanNormBounds.NonGenericAndKTwoTheorems
-public import Formalism.LocalToGlobal.SiegelLatticeTheory.CokernelGLCounts.RankPointCounts.NGDictPf
+public import Formalism.SharpRestriction.CuspSpanNormBounds.Bundle0008
+public import Formalism.LocalToGlobal.SiegelLatticeTheory.CokernelGLCounts.RankPointCounts.Bundle0025
 
 @[expose] public section
 

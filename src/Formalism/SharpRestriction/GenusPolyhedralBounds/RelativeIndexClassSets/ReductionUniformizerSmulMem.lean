@@ -1,9 +1,9 @@
 module
 
-public import Formalism.SharpRestriction.GenusPolyhedralBounds.RelativeIndexClassSets.ZeroGeneratorsLeThetaSpan
+public import Formalism.SharpRestriction.GenusPolyhedralBounds.RelativeIndexClassSets.Bundle0006
 public import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.HasseOrdBd
-public import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.HassePresH
-public import Formalism.SharpRestriction.GenusPolyhedralBounds.RelativeIndexClassSets.FinitePtsOfCurve
+public import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.Bundle0036
+public import Formalism.SharpRestriction.GenusPolyhedralBounds.RelativeIndexClassSets.Bundle0002
 
 @[expose] public section
 

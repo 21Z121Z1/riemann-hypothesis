@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.ArchimedeanGelfandKernels.FriedrichsKernels.CalcSteps
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ZOpMemCE
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0190
 public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.UnitaryMemGLs
 public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LengthFunctionFactsHold
 

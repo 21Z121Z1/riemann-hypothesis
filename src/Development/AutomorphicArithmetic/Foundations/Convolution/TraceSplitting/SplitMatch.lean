@@ -2,10 +2,10 @@ module
 
 public import Mathlib
 public import Development.AutomorphicArithmetic.Foundations.Convolution.TraceSplitting.SplitStable
-public import Development.AutomorphicArithmetic.Foundations.Convolution.IntegrableConvolution.MatchProd
+public import Development.AutomorphicArithmetic.Foundations.Convolution.IntegrableConvolution.Bundle0009
 public import Development.AutomorphicArithmetic.Foundations.Convolution.IntegrableConvolution.SplitLoc
-public import Development.AutomorphicArithmetic.Foundations.Convolution.TraceSplitting.MatchOne
-public import Development.AutomorphicArithmetic.Foundations.Convolution.LocalGroupAnalysis.QuotLin
+public import Development.AutomorphicArithmetic.Foundations.Convolution.TraceSplitting.Bundle0001
+public import Development.AutomorphicArithmetic.Foundations.Convolution.LocalGroupAnalysis.Bundle0001
 
 @[expose] public section
 

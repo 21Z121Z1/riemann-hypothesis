@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Formalism.PeriodIntegrals.LocDensCorank
+public import Formalism.PeriodIntegrals.Bundle0014
 public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LocalDensityCorank.LocDensCorankOfCounts
 public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LocalDensityCorank.FieldCountHolds
 public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LocalDensityCorank.ResidueEqZeroIff

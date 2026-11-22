@@ -1,23 +1,33 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.IsRatScalarMulIff
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsIsScaleOfChar
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ConjFunBaseRoot
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsGoodCoverGalois
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsConjugateFormsThetaLiftEqThetaSeriesStatement
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.HolomorphicSectionsSpanRestrictionStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ClassSumsSpanCuspFormsBaseTupleSecondFieldStatement
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.MemOfForallRingEquivFixed
+public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0032
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0821
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0912
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0918
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0797
+public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0025
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0034
+public import Development.AbelianVarietyTheory.Definitions.ThetaValues.ExistsRootNotMem
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1656
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0913
+public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0020
+public import Development.AbelianVarietyTheory.Definitions.ExistenceOfLattices.Bundle0001
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ClassSumsSpanCuspFormsBaseTupleSecondField
+public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.Bundle0015
+public import Formalism.LocalToGlobal.IndefiniteReal.Bundle0023
+public import Formalism.LocalToGlobal.IndefiniteReal.FWExist
+public import Formalism.LocalRingCardinality.Bundle0007
+public import Formalism.LocalRingCardinality.Bundle0003
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0012
 public import Development.AbelianVarietyTheory.Definitions.HeightFunctions.FiniteDimensionalOfSz
-public import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.LFunctionPositiveConductorFourEight
+public import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.Bundle0002
 public import Development.AbelianVarietyTheory.Definitions.HeightFunctions.XiValIffXiAt
-public import Development.AbelianVarietyTheory.Proofs.HeightProofs.CurveOverOfRayField
-public import Development.AbelianVarietyTheory.Proofs.HeightProofs.WeberInvariantTorsionValuesSubsetRayClassFieldStatement
+public import Development.AbelianVarietyTheory.Proofs.HeightProofs.Bundle0069
 public import Formalism.LocalToGlobal.IndefiniteReal.OneMapT
-public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.ThExprUniqOfChartIndep2
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HolomorphicCuspSectionsLeSpanAlgebraicCuspForms
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.KapTopLastPosRun
+public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0007
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1602
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0963
 public import Development.AbelianVarietyTheory.PublishedTheorems.PublishedFoundations.NonemptyAlgHomOfIsRayOfDvd
 
 @[expose] public section
@@ -75,7 +85,7 @@ theorem exists_goodCover_small : ∀ (D : D7) (Γ : Type) [Group Γ] [Fintype Γ
   intro D Γ _ _ Pl0 I0 T0 A3 hRF T _ Rl cG S YS F κ v₀ O hLaws hCore hFW hTie hIo hQG hgal hVal hRay hroots j hV hOM hFP n
   haveI : Normal ℚ (smallF D) := smallF_normal D hgal
   have hle : T.Q.c.F ≤ smallF D := core_le_small T Rl cG S YS hLaws hTie.alg j
-  have hnum := GlobalTheory.T.numerical_consequences_of_pins D T.Q hLaws.toLawsM.pins
+  have hnum := _root_.GlobalTheory.PinNum.numerics_of_pins D T.Q hLaws.toLawsM.pins
   have hMg : T.Q.l.M = D.host.g 0 * D.host.g 1 := hLaws.toLawsM.pins.2.1.1
   have hz : ReciprocityTheory.ChartRestriction.G.Geo.Tor.zeta (T.Q.l.M * 1) ∈ smallF D := by
     rw [mul_one, ← hnum.2.2.1]; exact hle T.Q.c.zeta_mem

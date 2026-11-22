@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import GroundTheory.AutomorphicForms.LeviCartan
-public import GroundTheory.AutomorphicForms.SmoothRepSchur
+public import GroundTheory.AutomorphicForms.Bundle0020
+public import GroundTheory.AutomorphicForms.Bundle0011
 public import GroundTheory.AutomorphicForms.MeasuresModulus
 
 @[expose] public section

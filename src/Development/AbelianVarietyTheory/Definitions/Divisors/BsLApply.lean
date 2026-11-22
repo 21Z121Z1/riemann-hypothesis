@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Divisors.IsMetricFrOfIsMetricOn
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsBlockOrderedSumEquivTrueIndex
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0068
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0489
 
 @[expose] public section
 

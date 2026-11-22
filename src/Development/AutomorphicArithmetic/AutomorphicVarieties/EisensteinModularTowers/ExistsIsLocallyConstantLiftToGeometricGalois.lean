@@ -1,6 +1,6 @@
 module
 
-public import Development.AbelianVarietyTheory.Definitions.Foundations.IsTopWTopWOfExists
+public import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0003
 
 @[expose] public section
 

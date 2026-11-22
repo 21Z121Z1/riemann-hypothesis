@@ -1,7 +1,7 @@
 module
 
 public import Formalism.LocalToGlobal.PairingIndexBounds.OrthogonalChartLevels.FrecAt
-public import Formalism.LocalToGlobal.InertKernelTheory.DefsRepRec
+public import Formalism.LocalToGlobal.InertKernelTheory.Bundle0013
 
 @[expose] public section
 

@@ -1,17 +1,27 @@
 module
 
 public import Mathlib
-public import Formalism.LocalToGlobal.ProjectiveLattices.CuspidalL2Subspace
-public import Formalism.LocalToGlobal.ProjectiveLattices.FreeBridge
-public import Formalism.LocalToGlobal.BesselHermitianTheta.LemmasWeil
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0024
+public import Formalism.LocalToGlobal.BesselHermitianTheta.Bundle0003
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArakelovVolumes.UpperBounds.PairUnfoldPfA
 public import Development.AbelianVarietyTheory.Definitions.RegularCharts.BaseNorm
 public import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.UnfGroupContainsCongruenceUptoRootsOfUnity
-public import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.RootOfUnityEqOneOfConjCongruence
-public import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.EqZeroOfEventuallyDotProductStarEqZero
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsLatticeRationalVectorsInAdelicTranslateStatement
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.AdelicUnitaryExistsWithPrescribedPartsStatement
-public import Development.AbelianVarietyTheory.Proofs.GenericRegularity.NumericalConsequencesOfPins
+public import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.Bundle0007
+public import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.Bundle0001
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0021
+public import Development.AbelianVarietyTheory.Definitions.ExistenceOfLattices.Hat1
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0067
+public import Development.AbelianVarietyTheory.Definitions.ExistenceOfLattices.MarkSpec
+public import Formalism.LocalToGlobal.ProjectiveLattices.PetersonNormSubspace
+public import Formalism.LocalToGlobal.ProjectiveLattices.PartitionExtendByZeroAntitone
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0025
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0020
+public import Formalism.LocalToGlobal.ProjectiveLattices.DatProofs
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.UniformisationConclusion
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.Bundle0003
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.SecBaseChangeAnySt
+public import Development.AbelianVarietyTheory.PublishedTheorems.Landherr₂.ExistsNormTensor
+public import Development.AbelianVarietyTheory.Proofs.GenericRegularity.Bundle0021
 
 @[expose] public section
 
@@ -61,7 +71,7 @@ theorem exists_lattice_congr (F E : Type) [Field F] [NumberField F] [Field E] [N
     (he : δ.map (inclR (F := F) (Af F)) * g.1 = g.1 * κ) :
     ∃ Λ : Submodule (𝓞 E) (Fin n → E), Λ.FG ∧ Submodule.span E (Λ : Set (Fin n → E)) = ⊤ ∧
       ∀ x ∈ Λ, ∃ y ∈ Λ, δ *ᵥ x - x = (M : E) • y := by
-  obtain ⟨Λ, h1, h2, h3, -⟩ := GlobalTheory.T.exists_lattice_rationalVectorsInAdelicTranslate F E n L g hL hs
+  obtain ⟨Λ, h1, h2, h3, -⟩ := _root_.GlobalTheory.AdLat.exists_lattice_latOf F E n L g hL hs
   refine ⟨Λ, h2, h3, fun x hx => ?_⟩
   have hx' : x ∈ GlobalTheory.AdLat.latOf F g.1 (L : Set (Fin n → E)) := h1 ▸ hx
   obtain ⟨z, hz, hzx⟩ := hx'
@@ -99,7 +109,7 @@ theorem root_eq_one {D : D7} (V : HSp D) {r : ℕ} (hr : V.rank = r) (hr0 : 0 < 
   subst hr
   obtain ⟨-, -, ⟨x0, hx0, heq⟩, -, -, hfib⟩ := hD
   obtain ⟨hdom, g, hg⟩ := hx0 k
-  obtain ⟨-, hrat, -, hsur⟩ := (GlobalTheory.T.adelicUnitary_exists_with_prescribed_parts D V).2 (X k).Ψ (th k) (X k).cmType (hth k)
+  obtain ⟨-, hrat, -, hsur⟩ := (_root_.GlobalTheory.UnitaryGlue.adelic_glue D V).2 (X k).Ψ (th k) (X k).cmType (hth k)
   have hact : ∀ h, ∀ τ, mat (rmul (x0 k) (archMat V th rfl x0 h k)) τ = archM V (th k τ) h * mat (x0 k) τ := by
     intro h τ
     show mat (x0 k) τ * ((mat (x0 k) τ)⁻¹ * Matrix.reindex (finCongr rfl) (finCongr rfl) (archM V (th k τ) h) *

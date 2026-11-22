@@ -1,8 +1,8 @@
 module
 
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.HeckePairTop
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.TameParahoricRepSplitsAsProduct
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.IwJqInj
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.Bundle0018
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0195
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.Bundle0034
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.IwJqTheta
 
 @[expose] public section

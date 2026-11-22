@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.WithISelf
-public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.DenseTorsionAndEqOne
+public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.Bundle0132
+public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0133
 
 @[expose] public section
 

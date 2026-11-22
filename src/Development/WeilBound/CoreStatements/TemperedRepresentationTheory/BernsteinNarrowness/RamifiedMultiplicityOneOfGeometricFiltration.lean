@@ -1,12 +1,12 @@
 module
 
-public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.GeometricLemmaFiltration
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Imports
+public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.Bundle0004
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0600
 public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.KCoinvOfNarrow
 public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SoCoinvOfNarrow
 public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LocalMultiplicityOneIrreducibleGL
 public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IsSmoothCharOfCondLE
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FinSplitOfNarrow
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0691
 
 @[expose] public section
 

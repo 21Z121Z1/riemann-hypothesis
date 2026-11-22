@@ -1,6 +1,6 @@
 module
 
-public import PositivityTheory.AutomorphicForms.PublishedInputs.NonzeroTypes.GIface
+public import PositivityTheory.AutomorphicForms.PublishedInputs.NonzeroTypes.Bundle0001
 public import PositivityTheory.AutomorphicForms.PublishedInputs.NonzeroTypes.CIface
 
 @[expose] public section

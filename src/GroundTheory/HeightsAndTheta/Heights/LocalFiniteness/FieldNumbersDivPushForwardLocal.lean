@@ -1,10 +1,9 @@
 module
 
-public import GroundTheory.HeightsAndTheta.Heights.LocalFiniteness.FieldNumbersLocalIntegralClosureFinite
-public import GroundTheory.HeightsAndTheta.Heights.LocalFiniteness.HilbertSamuelIrreducibleBasicOpenConnected
+public import GroundTheory.HeightsAndTheta.Heights.LocalFiniteness.Bundle0002
+public import GroundTheory.HeightsAndTheta.Heights.LocalFiniteness.Bundle0004
 public import GroundTheory.HeightsAndTheta.Heights.LocalFiniteness.FieldNumbersSemilocalLength
-public import GroundTheory.HeightsAndTheta.Heights.FieldsOfNumbers.PDivCycleMinimal
-public import GroundTheory.HeightsAndTheta.Heights.FieldsOfNumbers.PDivPushForwardLocal
+public import GroundTheory.HeightsAndTheta.Heights.FieldsOfNumbers.Bundle0014
 
 @[expose] public section
 

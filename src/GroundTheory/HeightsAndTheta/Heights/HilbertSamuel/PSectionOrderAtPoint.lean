@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsSectionOrderAtPoint
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PLocalRep
-public import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.CoordinateIdeals.MemMCoordIdealOfAevalEqZero
+public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0038
+public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0031
+public import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.CoordinateIdeals.Bundle0001
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArithmeticIntersection.MultihomogeneousIdeals.MemDivSuppOfDivCycleNeZero
 
 @[expose] public section

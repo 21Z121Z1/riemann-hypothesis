@@ -1,9 +1,14 @@
 module
 
 public import Development.WeilBound.CoreStatements.MultihomogeneousSquares.AntisymmetryFibreSquares
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.HodgeCptMultihomogForm
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.HodgeCptInteriorGenericStatement
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.NormalSchemeCoordsInjectiveStatement
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0244
+public import Mathlib
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.HodgeCptInteriorGeneric
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsHodgeLine
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0105
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.Bundle0014
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.IsHolPeriods
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0052
 public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LocalRingPointsExistsUnique
 
 @[expose] public section
@@ -17,7 +22,7 @@ open ReciprocityTheory.ChartRestriction.G ReciprocityTheory.ChartRestriction.G.G
 
 theorem stFormB : StForm := by
   intro E _ _ _ H D l Xo c Y S Ω _ K _ J _ x 𝔐
-  obtain ⟨hint, -⟩ := GlobalTheory.T.hodge_cpt_interior_generic E H D l Xo c _ _ Y S Ω K J x 𝔐 RingOfIntegers.coe_injective
+  obtain ⟨hint, -⟩ := _root_.GlobalTheory.CompanionTheory.Ar.HodgeCpt.basic E H D l Xo c _ _ Y S Ω K J x 𝔐 RingOfIntegers.coe_injective
   have : IsLocallyNoetherian 𝔐.X := Cmp.HInterior.isLocallyNoetherian_of_coordTie 𝔐.ξ _ 𝔐.tie 𝔐.all
   let U : 𝔐.X.Opens :=
     ⟨abLocus 𝔐.t.G, GlobalTheory.AbLocusOpenGlobal.isOpen_abLocus_of_locallyNoetherian 𝔐.t.G 𝔐.t.semi⟩
@@ -30,7 +35,7 @@ theorem stFormB : StForm := by
       rw [MvPolynomial.eval_map]
       exact ((tie_points _ _ 𝔐.ξ K J x 𝔐.tie ℂ).2.2 z _ (𝔐.all _) hz).1 g hg⟩
   obtain ⟨z', hz', hzU⟩ := hw w hmc hne
-  have e : z = z' := GlobalTheory.T.normal_scheme_coords_injective _ _ 𝔐.ξ K J x 𝔐.tie 𝔐.normal 𝔐.all z z' w hz hz'
+  have e : z = z' := _root_.GlobalTheory.CompanionTheory.Ar.Cusp.FamEx.point_eq_of_coordsAt _ _ 𝔐.ξ K J x 𝔐.tie 𝔐.normal 𝔐.all z z' w hz hz'
   subst e
   exact hnot hzU
 

@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.ArchimedeanGelfandKernels.LeftEquivariantFunctions.SymZeroCommFrame
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.DifferentiableAtOfSmooth
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0188
 
 @[expose] public section
 

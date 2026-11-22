@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.GeometricallyConnectedOfIsIsoRestrict
-public import Development.AutomorphicSpectrum.Proofs.GlobalProofs.EffCartierIffForallCartAt
-public import Development.AutomorphicSpectrum.Proofs.GlobalProofs.LocPrincipalSpan
+public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.Bundle0004
+public import Development.AutomorphicSpectrum.Proofs.GlobalProofs.Bundle0009
+public import Development.AutomorphicSpectrum.Proofs.GlobalProofs.Bundle0001
 
 @[expose] public section
 

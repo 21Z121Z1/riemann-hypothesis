@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import ReciprocityTheory.ClassFieldTheory.LocalClassField.TransportDefs
+public import ReciprocityTheory.ClassFieldTheory.LocalClassField.Bundle0006
 
 @[expose] public section
 

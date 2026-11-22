@@ -1,19 +1,21 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Statements.PlaceShiftStatements.NormSmall
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.RatInOfUnit
+public import Development.AbelianVarietyTheory.Statements.PlaceShiftStatements.Bundle0002
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0142
 public import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.WeilTensorModels
-public import Development.AbelianVarietyTheory.Definitions.Divisors.DiscreteSeriesHermitianUnique
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NegIdxOfIsStd
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BaseFits
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DownRight
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0041
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1561
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1569
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1597
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ScaledBlockSumSelfDualTraceSkewForm
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.StarMemPolarizationIdealOfMemConj
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsLatticeLatticeBlockDirectSumScaled
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HermitianSelfDualLatticeSpaceFormHermitianNondeg
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SquareThetaTripleExistsSignatureRankSumLt
-public import Development.AbelianVarietyTheory.Proofs.HeightProofs.CmTypeRestrictRealSubfieldInfinitePlaceBijectiveStatement
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1537
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1530
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0957
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1508
+public import Development.AbelianVarietyTheory.Proofs.HeightProofs.Bundle0021
+public import Development.AbelianVarietyTheory.Proofs.HeightProofs.IsTopologicalRingAE
+public import Development.AbelianVarietyTheory.Counterexamples.HeightSurvey.Bundle0003
 
 @[expose] public section
 
@@ -149,7 +151,7 @@ private theorem exists_place (Bs : GlobalTheory.IndefiniteRowSideFullHecke.WeilT
   refine ⟨InfinitePlace.mk ((tauE D τ).comp (algebraMap D.host.F D.host.E)), ?_⟩
   obtain ⟨τ', hτ'⟩ := h (InfinitePlace.mk ((tauE D τ).comp (algebraMap D.host.F D.host.E)))
   have e : τ' = τ := by
-    apply (GlobalTheory.T.cmType_restrict_realSubfield_infinitePlace_bijective D).1
+    apply (_root_.GlobalTheory.CMTypePlaces.places_bijective D).1
     have h1 := (Bs.emb (InfinitePlace.mk ((tauE D τ).comp (algebraMap D.host.F D.host.E)))).2
     have h2 : ComplexEmbedding.conjugate ((tauE D τ').comp (algebraMap D.host.F D.host.E)) =
         (InfinitePlace.mk ((tauE D τ).comp (algebraMap D.host.F D.host.E))).embedding := by

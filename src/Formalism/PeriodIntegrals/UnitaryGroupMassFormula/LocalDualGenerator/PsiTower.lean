@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Formalism.PeriodIntegrals.LocDualGen
-public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LocalDualGenerator.FpDualUnram
+public import Formalism.PeriodIntegrals.Bundle0014
+public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LocalDualGenerator.Bundle0001
 public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LocalDualGenerator.DualAtLMulUnit
 
 @[expose] public section

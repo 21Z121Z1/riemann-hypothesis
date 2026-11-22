@@ -3,8 +3,8 @@ module
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.Foundations.IsProbabilityMeasureMuPart
 public import Development.AbelianVarietyTheory.Definitions.Divisors.IsLocalRingTrivSqZeroExt
-public import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.FrameChangeExistsUniqueInvertible
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.LowerTriIsUnitDet
+public import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.Bundle0016
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0039
 
 @[expose] public section
 

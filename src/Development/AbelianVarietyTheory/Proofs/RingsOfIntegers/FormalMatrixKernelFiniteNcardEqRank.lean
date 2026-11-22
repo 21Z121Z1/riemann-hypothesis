@@ -2,14 +2,13 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.PlaceAdaptation.AdaptStd
-public import Development.AbelianVarietyTheory.Proofs.FormalGroupCharts.JacobianSmulKaehlerEqZero
-public import Development.AbelianVarietyTheory.Proofs.FormalGroupCharts.MapMaximalIdealEqKerMapResidue
-public import Development.AbelianVarietyTheory.Proofs.FormalGroupCharts.MvPowerSeriesExistsPolynomialTotalDegreeLeSubMemStatement
-public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.CardAlgHomReducedTraceSum
-public import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.ExistsPowSpanXLeSpanFormalModuleMatrixStatement
-public import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.MvPowerSeriesSubstConstTermsLocalAlgHomSpecStatement
-public import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.DetJacobianFormalModuleMatrixEqConstMulUnitStatement
-public import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.FormalModuleMatrixApplyPointsActionLawsStatement
+public import Development.AbelianVarietyTheory.Proofs.FormalGroupCharts.Bundle0002
+public import Development.AbelianVarietyTheory.Proofs.FormalGroupCharts.Bundle0007
+public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0010
+public import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.Bundle0044
+public import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.Bundle0035
+public import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.Bundle0040
+public import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.Bundle0041
 
 @[expose] public section
 
@@ -46,7 +45,7 @@ theorem algHom_ext_of_mem_maximalIdeal {V σ A : Type} [CommRing V] [IsLocalRing
     (h : ∀ j, φ (MvPowerSeries.X j) = algebraMap V A (a j))
     (h' : ∀ j, φ' (MvPowerSeries.X j) = algebraMap V A (a j)) : φ = φ' := by
   have hCa : ∀ c : V, (MvPowerSeries.C c : MvPowerSeries σ V) = algebraMap V _ c := fun c => rfl
-  have hP := GlobalTheory.T.mvPowerSeries_exists_polynomial_totalDegree_le_sub_mem V (maximalIdeal V) (IsNoetherian.noetherian _) inferInstance σ σ
+  have hP := _root_.GlobalTheory.CompleteBaseChange.exists_polynomial_totalDegree_le_sub_mem V (maximalIdeal V) (IsNoetherian.noetherian _) inferInstance σ σ
     (fun j => (MvPowerSeries.X j - MvPowerSeries.C (a j) : MvPowerSeries σ V)) 1 (by
       rw [pow_one, Ideal.span_le]
       rintro _ ⟨j, rfl⟩
@@ -156,7 +155,7 @@ theorem finite_ncard_kerM : ∀ (V : Type) [CommRing V] [IsDomain V] [IsDiscrete
     intro α hα
     have hx : ∀ b i, MvPowerSeries.constantCoeff ((fun j => cpt (n := 0) (α j)) b i) ∈
         maximalIdeal V := fun b i => by simpa [cpt] using hα b i
-    obtain ⟨ψ, hψ, hψ'⟩ := (GlobalTheory.T.mvPowerSeriesSubstConstTerms_local_algHom_spec V (Fin n × Fin d) (Fin 0 × Fin d) (Fin 0 × Fin d)
+    obtain ⟨ψ, hψ, hψ'⟩ := (_root_.GlobalTheory.PlaceInt.evC_spec V (Fin n × Fin d) (Fin 0 × Fin d) (Fin 0 × Fin d)
       (fun s => cpt (n := 0) (α s.1) s.2) (fun s => hx s.1 s.2)).1
     refine ⟨(Algebra.ofId V Ω).comp ((constAlgHom V _).comp ψ), fun s => ?_, fun b i => ?_⟩
     · rw [AlgHom.comp_apply, AlgHom.comp_apply, hψ]

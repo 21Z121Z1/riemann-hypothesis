@@ -2,9 +2,9 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Counterexamples.HeightSurvey.EmbRelExistsUnique
-public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.Placed
-public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.ExistsNormLeHeightPow
-public import Development.AbelianVarietyTheory.PublishedTheorems.DiscreteSeriesUnitary₂.DiscreteSeriesClassificationIff
+public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.Bundle0030
+public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.Bundle0007
+public import Development.AbelianVarietyTheory.PublishedTheorems.DiscreteSeriesUnitary₂.Bundle0001
 public import Formalism.LocalToGlobal.SiegelLatticeTheory.FlagStabilizerTensors.ThmSOwn
 
 @[expose] public section

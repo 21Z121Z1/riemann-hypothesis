@@ -3,13 +3,13 @@ module
 public import Formalism.SharpRestriction.GlobalSchurBounds.ProductFirstZerothParts
 public import Formalism.LogVandermondeBounds.HookGammaAmgmMultinomialBounds
 public import Mathlib
-public import Formalism.GL3MeanSquares.FourierTransformKernelSurjective
+public import Formalism.GL3MeanSquares.Bundle0002
 public import Formalism.GL3MeanSquares.HookFormulaTorsion.FourierCommutesHeckeScalar
 public import Formalism.GL3MeanSquares.HookFormulaTorsion.LengthQuotientBoundGeneral
-public import Formalism.GL3MeanSquares.HookFormulaTorsion.LemmaCTwistRamified
+public import Formalism.GL3MeanSquares.HookFormulaTorsion.Bundle0002
 public import Formalism.BranchSandwichDivisors.BranchIsometryProofs.OrthSum
 public import Formalism.LocalRingCardinality.Lemmas
-public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Pc
+public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0080
 
 @[expose] public section
 

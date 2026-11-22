@@ -1,7 +1,7 @@
 module
 
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutGCoreGTKLineCut
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.IrreducibleCapelliModules
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0084
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0065
 
 @[expose] public section
 

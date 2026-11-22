@@ -2,9 +2,8 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.Foundations.MatrixMeasurableSpace
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ExistsNeZeroOfEventually
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.MatrixIntegersModNatFinite
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.MatrixIntegralOfAddCharTraceDual
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0008
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0009
 
 @[expose] public section
 

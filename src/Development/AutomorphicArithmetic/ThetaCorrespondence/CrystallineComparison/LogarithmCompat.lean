@@ -1,7 +1,7 @@
 module
 
 public import Development.AutomorphicArithmetic.ThetaCorrespondence.CrystallineComparison.CFDefs
-public import Development.AutomorphicArithmetic.ThetaCorrespondence.CrystallineComparison.MemKerPowIff
+public import Development.AutomorphicArithmetic.ThetaCorrespondence.CrystallineComparison.Bundle0004
 
 @[expose] public section
 

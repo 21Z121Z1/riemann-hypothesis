@@ -2,11 +2,11 @@ module
 
 public import Mathlib
 public import Formalism.LocalToGlobal.SiegelLatticeTheory.HaarTransversals.HidaSetting
-public import Formalism.SatakeDualWeyl.StatementC
+public import Formalism.SatakeDualWeyl.Bundle0001
 public import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Afsplit
 public import Formalism.LocalRingCardinality.RankBoundMonotoneInDimension
-public import Formalism.LocalToGlobal.SiegelLatticeTheory.ClosedLocalOrbits.GaugeLatticeShifts.SatGramLoc
-public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.ModuliIntegralCharts
+public import Formalism.LocalToGlobal.SiegelLatticeTheory.ClosedLocalOrbits.GaugeLatticeShifts.Bundle0002
+public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0073
 
 @[expose] public section
 

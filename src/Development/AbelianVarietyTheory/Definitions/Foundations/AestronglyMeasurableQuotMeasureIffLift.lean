@@ -1,12 +1,12 @@
 module
 
 public import Mathlib
-public import Formalism.LocalToGlobal.ProjectiveLattices.EquivariantFiniteGroup
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0019
 public import Development.AbelianVarietyTheory.Definitions.Foundations.HermitianSpaceBaseLatticeEqFrameLattice
 public import Development.AbelianVarietyTheory.Definitions.Foundations.IsHilbertSchmidtOfFiniteDimensional
 public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.SchurOrthogonalitySquareIntegrable
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsIsFundamentalDomain
-public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.DiscreteTopologyRationalPointsHermitianSpace
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0162
+public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.Bundle0040
 
 @[expose] public section
 

@@ -2,12 +2,11 @@ module
 
 public import Mathlib
 public import Formalism.BranchSandwichDivisors.StatementW
-public import Formalism.RealPlaceAnalysis.RealPlaceTaylor.ProdFactorialSupportSubSingle
-public import Formalism.GradedWeylDivisibility.FockSpaceTableaux.LFocksLemmas
-public import Formalism.GradedWeylDivisibility.FockSpaceTableaux.LFockbLemmas
-public import Formalism.GradedWeylDivisibility.FockSpaceTableaux.LBidetMinor
-public import Formalism.GradedWeylDivisibility.FockSpaceTableaux.LBidetLemmas
-public import Formalism.GradedWeylDivisibility.FockSpaceTableaux.DualWeylNonDom
+public import Formalism.RealPlaceAnalysis.RealPlaceTaylor.Bundle0005
+public import Formalism.GradedWeylDivisibility.FockSpaceTableaux.Bundle0002
+public import Formalism.GradedWeylDivisibility.FockSpaceTableaux.Bundle0001
+public import Formalism.GradedWeylDivisibility.FockSpaceTableaux.Bundle0005
+public import Formalism.GradedWeylDivisibility.FockSpaceTableaux.Bundle0003
 
 @[expose] public section
 

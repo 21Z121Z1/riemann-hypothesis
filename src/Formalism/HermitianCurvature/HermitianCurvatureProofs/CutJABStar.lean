@@ -1,6 +1,6 @@
 module
 
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutJA
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0052
 public import Formalism.HermitianCurvature.HermitianCurvatureProofs.SquareIntegrableGammaZetabarInv
 
 @[expose] public section

@@ -1,10 +1,10 @@
 module
 
-public import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.RealDescent.RealLeviDescent.DiracOfDiracZeroModule
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.DiagonalMemUnitary
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.NormSqLeDominantRearrangement
+public import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.RealDescent.RealLeviDescent.Bundle0002
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0650
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0522
 public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.HighestTermLemmaReal
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.N2TopReal
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0421
 
 @[expose] public section
 

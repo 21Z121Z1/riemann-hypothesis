@@ -2,9 +2,8 @@ module
 
 public import Mathlib
 public import Formalism.HermitianLattices.StatementLat
-public import Formalism.HermitianLattices.DualOrthSum
-public import Formalism.HermitianLattices.NeighbourConstruct
-public import Formalism.SatakeDualWeyl.StatementB
+public import Formalism.HermitianLattices.Bundle0001
+public import Formalism.SatakeDualWeyl.Bundle0003
 public import Formalism.LocalToGlobal.Columns.AbelianHostFieldConditions
 
 @[expose] public section

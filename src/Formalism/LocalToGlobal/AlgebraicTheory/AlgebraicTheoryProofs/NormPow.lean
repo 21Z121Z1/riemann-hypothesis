@@ -1,6 +1,6 @@
 module
 
-public import Formalism.LocalToGlobal.AlgebraicTheory.StatementNorm
+public import Formalism.LocalToGlobal.AlgebraicTheory.Bundle0001
 public import Formalism.LocalToGlobal.TorsionIntegrality.QuadraticSemicharacters.QuadraticSemicharacterIdentityReformulated2
 public import Formalism.LocalToGlobal.TorsionIntegrality.QuadraticSemicharacters.QuadraticSemicharactersFactTer
 

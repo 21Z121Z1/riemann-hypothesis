@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import GroundTheory.AutomorphicForms.MultiplicityOne.NormOne
+public import GroundTheory.AutomorphicForms.MultiplicityOne.Bundle0001
 
 @[expose] public section
 

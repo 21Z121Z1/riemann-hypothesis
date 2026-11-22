@@ -2,9 +2,9 @@ module
 
 public import Mathlib
 public import Formalism.LocalRingCardinality.RhoDetPrimeEqMuTildeMulChiPow
-public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.NotFullBot
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ProdPrimePowDvd
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IntegersCompleteDVR
+public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0004
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0124
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0204
 
 @[expose] public section
 

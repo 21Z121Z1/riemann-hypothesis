@@ -1,7 +1,7 @@
 module
 
-public import Formalism.EllipticTorsion.VeluIntegralModel
-public import Formalism.EllipticTorsion.EllipticTorsionProofs.WPoint
+public import Formalism.EllipticTorsion.Bundle0003
+public import Formalism.EllipticTorsion.EllipticTorsionProofs.Bundle0001
 public import Formalism.EllipticTorsion.EllipticTorsionProofs.FormalGroupPointsParamDef
 
 @[expose] public section

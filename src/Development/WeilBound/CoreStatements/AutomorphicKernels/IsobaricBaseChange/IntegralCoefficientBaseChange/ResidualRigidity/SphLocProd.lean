@@ -3,8 +3,8 @@ module
 public import Mathlib
 public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.BaseChangeDefiniteUnitary
 public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SatakeParameterSphericalProductSpehQuotients
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsUniqueIsContr
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsFixedIff
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0133
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0116
 
 @[expose] public section
 

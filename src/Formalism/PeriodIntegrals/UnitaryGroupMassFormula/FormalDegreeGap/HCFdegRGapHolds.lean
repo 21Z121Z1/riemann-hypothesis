@@ -3,9 +3,9 @@ module
 public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.FormalDegreeGap.HCFdegRGap
 public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.FormalDegree.FdCons
 public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.FormalDegree.HaarVolumes.OmegaDensityUnique
-public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.LaplaceOperators.LaplaceFoundations.PsiFor
-public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.LaplaceOperators.KTypeLemma.StdGapOfGapLap
-public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.HighestWeights.Exists
+public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.LaplaceOperators.LaplaceFoundations.Bundle0008
+public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.LaplaceOperators.KTypeLemma.Bundle0008
+public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.HighestWeights.Bundle0005
 
 @[expose] public section
 

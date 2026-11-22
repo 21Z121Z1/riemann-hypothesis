@@ -2,8 +2,8 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.LatAtLattice
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.TrueColumnSpacesStandardInFrameCoords
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.BaseFieldsDefiniteLaws
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0297
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0097
 public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.MemClosureIff
 public import Formalism.LocalToGlobal.Columns.PolyFnLemmas
 public import Formalism.LocalToGlobal.GlobalTheory.GL6.PBwLocGen

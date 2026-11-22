@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsGoodPoly
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0008
 
 @[expose] public section
 

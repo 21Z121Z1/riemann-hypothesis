@@ -3,10 +3,10 @@ module
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.Divisors.HilbertNinetyQuotientHomEqIff
 public import Development.AutomorphicSpectrum.Proofs.MembershipProofs.ThetaSumAdmissibility
-public import Development.AutomorphicSpectrum.Proofs.MembershipProofs.ThetaDistributionNonzeroAdmissible
+public import Development.AutomorphicSpectrum.Proofs.MembershipProofs.Bundle0007
 public import Development.AutomorphicSpectrum.Proofs.MembershipProofs.ThetaDistributionHeisenbergInvariant
-public import GroundTheory.GlobalFields.Adele.Compact
-public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.ImportsFurtherExtra
+public import GroundTheory.GlobalFields.Adele.Bundle0002
+public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0031
 
 @[expose] public section
 

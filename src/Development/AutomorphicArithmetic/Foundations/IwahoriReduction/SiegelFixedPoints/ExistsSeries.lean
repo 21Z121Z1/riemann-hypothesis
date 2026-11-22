@@ -7,12 +7,17 @@ public import Development.AutomorphicArithmetic.Foundations.IwahoriReduction.Sie
 public import Development.AutomorphicArithmetic.Foundations.IwahoriReduction.SiegelFixedPoints.TwistColumnZero
 public import Development.AutomorphicArithmetic.Foundations.IwahoriReduction.SiegelFixedPoints.NotDvdOfCoprime
 public import Development.AutomorphicArithmetic.Foundations.IwahoriReduction.SiegelFixedPoints.OrderOfTranslationMod
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsCuspFunctionalOddWeightOddPrimeStatement
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.CuspFunctionalValueModPrimePowUniqueOddWeightStatement
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.CorestrictionCyclotomicShapiroNormalisedTraceStatement
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsUniqueNormalizedCyclotomicTraceStatement
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ThetaBasisLinearCombination
-public import Development.AbelianVarietyTheory.Definitions.Foundations.ExistsOfEmbedding
+public import Mathlib
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0200
+public import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0006
+public import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0008
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0203
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0136
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0117
+public import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0010
+public import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0003
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0090
+public import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0011
 
 @[expose] public section
 
@@ -293,7 +298,7 @@ theorem UpperTheory.Kd.L.law :
   have halg : Algebra.IsAlgebraic ℚ Ω := IsAlgClosure.isAlgebraic
   have hj := X.j_hol
   obtain ⟨hB, hcoc⟩ := zcoc ε X l N c' d gm P A hl x w m n c₀ hw hm bB hbB
-  choose Φ hΦ using fun s z => GlobalTheory.T.exists_cuspFunctional_oddWeight_oddPrime Ω ε X A N l halg hj hl2 P.cop P.five hl n w hw (bMid X l n m N bB s z) (hB s z)
+  choose Φ hΦ using fun s z => _root_.GlobalTheory.ThEx.thex Ω ε X A N l halg hj hl2 P.cop P.five hl n w hw (bMid X l n m N bB s z) (hB s z)
   choose χ hχ using fun s => exists_chi ε l (m + n) s
   haveI : NeZero (l ^ (m + n)) := ⟨pow_ne_zero _ hp.ne_zero⟩
   obtain ⟨zh, hzh⟩ : ∃ zh, redZ l n m zh = y := ZMod.unitsMap_surjective (pow_dvd_pow l (Nat.le_add_right m n)) y
@@ -305,7 +310,7 @@ theorem UpperTheory.Kd.L.law :
   obtain ⟨R, hR⟩ := (reps l N c' d gm P (topMu l n m N) hdv).1
   obtain ⟨hFs, hFa⟩ := har ε c' d gm P x m n hm R hR zh
   obtain ⟨ξ, hξA, hξ⟩ := hmk ε X N c' d gm P A hl x w m n c₀ hw hm hn bB hbB R hR zh
-  choose F0 hF0 using fun r => GlobalTheory.T.exists_unique_normalizedCyclotomicTrace ε l (m + n) m hm (by omega) (Fsum ε l n m N x c' d w gm R zh r) (hFs r)
+  choose F0 hF0 using fun r => _root_.GlobalTheory.NTr.normTrace_exists_unique ε l (m + n) m hm (by omega) (Fsum ε l n m N x c' d w gm R zh r) (hFs r)
   obtain ⟨ξ', hξ'A, hξ'⟩ := hcor ε A hl (m + n) n m hm hmn (by omega) χ hχ
     (fun s u r => (l : Ω) ^ cc * (Φ s (u * zh)).coeff r)
     (fun s u r => A.mul_mem _ _ (lp_mem A l cc) (thb_coeff (hΦ s _).1 r))

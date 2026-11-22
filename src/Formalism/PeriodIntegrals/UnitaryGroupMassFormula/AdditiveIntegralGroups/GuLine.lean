@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Formalism.PeriodIntegrals.AddIntG
+public import Formalism.PeriodIntegrals.Bundle0001
 
 @[expose] public section
 

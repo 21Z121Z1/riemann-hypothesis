@@ -3,12 +3,11 @@ module
 public import Mathlib
 public import Formalism.LocalToGlobal.Divisibility.LiftLatInst
 public import Formalism.LocalToGlobal.Divisibility.LiftLatLemmas
-public import Formalism.LocalToGlobal.Columns.RowFormsRat
-public import Formalism.LocalToGlobal.Columns.WmLemmas
+public import Formalism.LocalToGlobal.Columns.Bundle0015
+public import Formalism.LocalToGlobal.Columns.Bundle0007
 public import Formalism.LocalToGlobal.Columns.WmpNatCardQuotEqPowFinrank
-public import Formalism.LocalToGlobal.Columns.NonDeg
 public import Formalism.LocalToGlobal.Columns.RowFormsGood
-public import Formalism.LocalToGlobal.Columns.PathCountSymmetricHolds
+public import Formalism.LocalToGlobal.Columns.Bundle0009
 public import Formalism.LocalToGlobal.Divisibility.DivisionHeightBoundStatement
 
 @[expose] public section

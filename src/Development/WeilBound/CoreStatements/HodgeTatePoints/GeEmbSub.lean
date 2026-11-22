@@ -1,15 +1,14 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.TranslateMemIndOrder
+public import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.Bundle0001
 public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.ExistsUnitFormLocalizationEtaleNbhd
-public import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.DualOrder
-public import Development.WeilBound.CoreStatements.HodgeTatePoints.HtatHopfFin
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.FiniteOpenHopfOrderStatement
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.MemBtOrderIffBtSetStatement
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.RegularFunctionIffSectionStatement
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.SectionEqZeroOfValuesStatement
-public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.HopfOrderTranslationInvariantStatement
+public import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.Bundle0002
+public import Development.WeilBound.CoreStatements.HodgeTatePoints.Bundle0051
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.FiniteOpenHopfOrder
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0040
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0023
+public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.Bundle0007
 
 @[expose] public section
 
@@ -184,12 +183,12 @@ open GlobalTheory GlobalTheory.CompanionTheory GlobalTheory.CompanionTheory.Ar
 
 theorem openImmersion_translatesCover : ∀ (R : Type) [CommRing R] [IsDomain R] [IsIntegrallyClosed R] (T : Type) [CommGroup T] [Finite T] (Γ : QFGroup R T) (U : Γ.G.left.Opens), Γ.IsFinOpenSub U → ∀ (j : Γ.G.left ⟶ Spec (CommRingCat.of (Γ.btOrder ⊤))), Γ.IsEmb (Γ.btOrder ⊤) j → IsOpenImmersion (U.ι ≫ j) ∧ Γ.TranslatesCover (Γ.btOrder ⊤) j U := by
   intro R _ _ _ T _ _ Γ U hF j hj
-  obtain ⟨H, A, hH, hA, hAs⟩ := GlobalTheory.T.finite_open_hopf_order R T Γ U hF
+  obtain ⟨H, A, hH, hA, hAs⟩ := _root_.GlobalTheory.CompanionTheory.Ar.BT.SubOrder.hopfOrder_of_finOpenSub R T Γ U hF
   have hU := isAffineOpen_of_fin Γ hF
-  have hTr : ∀ f ∈ A, ∀ t, (fun h => f (t * h)) ∈ A := GlobalTheory.T.hopf_order_translation_invariant R H A hA
+  have hTr : ∀ f ∈ A, ∀ t, (fun h => f (t * h)) ∈ A := _root_.GlobalTheory.CompanionTheory.Ar.BT.HopfTranslate.translate_mem_of_isHopfOrder R H A hA
   have hOrder : Γ.btOrder U = Γ.btOrder ⊤ := by
     ext f
-    rw [GlobalTheory.T.mem_btOrder_iff_btSet, GlobalTheory.T.mem_btOrder_iff_btSet]
+    rw [_root_.GlobalTheory.CompanionTheory.Ar.BT.mem_btOrder_iff_mem_btSet, _root_.GlobalTheory.CompanionTheory.Ar.BT.mem_btOrder_iff_mem_btSet]
     refine ⟨fun hf t g _ => ?_, fun hf t g _ => hf t g trivial⟩
     obtain ⟨R', _, _, _, _, hNormal, hFlat, hPrime⟩ :=
       @Htat.hens_normal R _ _ _ (Γ.G.hom g).asIdeal (Γ.G.hom g).isPrime
@@ -212,28 +211,28 @@ theorem openImmersion_translatesCover : ∀ (R : Type) [CommRing R] [IsDomain R]
     have := Γ'.quasiCompact
     obtain ⟨U', hFinite, hClosedMem⟩ := Twhopf.finite_part R' Γ'.G.left Γ'.G.hom
     have hSub := Twhopf.finite_sub R' T Γ' U' hFinite hClosedMem
-    have hPullSub := GlobalTheory.T.isFinOpenSub_base_change R T Γ R' Γ' F hBase U hF
+    have hPullSub := _root_.GlobalTheory.CompanionTheory.Ar.BT.isFinOpenSub_preimage_baseChange R T Γ R' Γ' F hBase U hF
     have hle : F ⁻¹ᵁ U ≤ U' := Twhopf.finite_le R' _ Γ'.G.hom _ _ hPullSub.finite hClosedMem
     have hReg : (fun h => algebraMap R R' (f h)) ∈ Γ'.btSet (F ⁻¹ᵁ U) := by
       intro s x hx
       have := Htat.reg_pull R T Γ R' Γ' F hBase κ hκ _ x (hf s (F x) hx)
       simpa only [hκa] using this
-    rw [← GlobalTheory.T.mem_btOrder_iff_btSet,
-      ← GlobalTheory.T.btOrder_eq_of_le_of_isFinOpenSub R' T Γ' U' _ hSub hPullSub hle,
-      GlobalTheory.T.mem_btOrder_iff_btSet] at hReg
+    rw [← _root_.GlobalTheory.CompanionTheory.Ar.BT.mem_btOrder_iff_mem_btSet,
+      ← _root_.GlobalTheory.CompanionTheory.Ar.BT.QFGroup.btOrder_eq_of_le R' T Γ' U' _ hSub hPullSub hle,
+      _root_.GlobalTheory.CompanionTheory.Ar.BT.mem_btOrder_iff_mem_btSet] at hReg
     rw [← hg]
     refine Htat.bt_reg_descent R T Γ R' Γ' F hBase hFlat κ hκ _ g' ?_
     simpa only [hκa] using hReg t g' (hClosedMem g' hClosed)
   have hB : ∀ f : T → R, f ∈ Γ.btOrder ⊤ ↔ ∀ t, (fun h : H => f (t * h)) ∈ A := by
     intro f
-    rw [← hOrder, GlobalTheory.T.mem_btOrder_iff_btSet R T Γ U f]
+    rw [← hOrder, _root_.GlobalTheory.CompanionTheory.Ar.BT.mem_btOrder_iff_mem_btSet R T Γ U f]
     constructor
     · intro hf t
-      obtain ⟨s, hs⟩ := (GlobalTheory.T.regular_function_iff_section R T Γ U _).1 (hf t)
+      obtain ⟨s, hs⟩ := (_root_.GlobalTheory.CompanionTheory.Ar.BT.regularAt_forall_iff_exists_section R T Γ U _).1 (hf t)
       exact (hAs _).2 ⟨s, fun x h => hs x h⟩
     · intro hf t
       obtain ⟨s, hs⟩ := (hAs _).1 (hf t)
-      exact (GlobalTheory.T.regular_function_iff_section R T Γ U _).2 ⟨s, fun x h => hs ⟨x, (hH x).2 h⟩ h⟩
+      exact (_root_.GlobalTheory.CompanionTheory.Ar.BT.regularAt_forall_iff_exists_section R T Γ U _).2 ⟨s, fun x h => hs ⟨x, (hH x).2 h⟩ h⟩
   let ψ : CommRingCat.of (Γ.btOrder ⊤) ⟶ Γ(Γ.G.left, U) := Spec.preimage (hU.fromSpec ≫ j)
   have hψ : Spec.map ψ = hU.fromSpec ≫ j := Spec.map_preimage _
   have hv := val_pullback Γ hU hj ψ hψ
@@ -245,7 +244,7 @@ theorem openImmersion_translatesCover : ∀ (R : Type) [CommRing R] [IsDomain R]
     have haA : a ∈ A := (hAs a).2 ⟨s, fun t h => (ha t).symm⟩
     refine ⟨⟨extZero H a, extZero_mem hB hTr haA⟩, ?_⟩
     rw [← sub_eq_zero]
-    refine GlobalTheory.T.section_eq_zero_of_values R T Γ U _ fun t h => ?_
+    refine _root_.GlobalTheory.CompanionTheory.Ar.BT.section_eq_zero_of_val_generic R T Γ U _ fun t h => ?_
     have ht : t ∈ H := (hH t).2 h
     rw [← valRing_apply, map_sub, valRing_apply, valRing_apply, hv t h, ← ha ⟨t, ht⟩]
     simp [extZero, ht]
@@ -257,7 +256,7 @@ theorem openImmersion_translatesCover : ∀ (R : Type) [CommRing R] [IsDomain R]
       rw [hf, ← valRing_apply, map_zero] at this
       exact inj (by rw [← this, map_zero])
     · intro hf
-      refine GlobalTheory.T.section_eq_zero_of_values R T Γ U _ fun t h => ?_
+      refine _root_.GlobalTheory.CompanionTheory.Ar.BT.section_eq_zero_of_val_generic R T Γ U _ fun t h => ?_
       rw [hv t h, hf t ((hH t).2 h), map_zero]
   let e : Γ.btOrder ⊤ := ⟨_, ind_translate_mem hB 1⟩
   have he1 : ∀ x ∈ H, (e : T → R) x = 1 := fun x hx => by simp [e, ind, hx]

@@ -1,33 +1,26 @@
 module
 
-public import Formalism.LocalToGlobal.CharacterGerms.NormOneIntegral
-public import Formalism.LocalToGlobal.CharacterGerms.FinTwoNeOneSub
-public import Formalism.LocalToGlobal.CharacterGerms.NormOneRowInvariant
-public import Formalism.LocalToGlobal.CharacterGerms.NormOneRowDegrees
-public import Formalism.LocalToGlobal.CharacterGerms.RowTieGermI
+public import Formalism.LocalToGlobal.CharacterGerms.Bundle0015
+public import Formalism.LocalToGlobal.CharacterGerms.Bundle0024
 public import Formalism.LocalToGlobal.CharacterGerms.RowTiePHStab
 public import Formalism.LocalToGlobal.CharacterGerms.CoeffSingleSubstOfLowDegree
 public import Formalism.LocalToGlobal.CharacterGerms.RowTiePCEqEx
-public import Formalism.LocalToGlobal.CharacterGerms.IndependenceBoundRaw
-public import Formalism.LocalToGlobal.CharacterGerms.RowTieAxes
-public import Formalism.LocalToGlobal.CharacterGerms.RankMaximalOfNondegenerate
-public import Formalism.LocalToGlobal.CharacterGerms.RowTieTop
-public import Formalism.LocalToGlobal.CharacterGerms.RowTieChar
-public import Formalism.LocalToGlobal.CharacterGerms.RowTieLab
-public import Formalism.LocalToGlobal.CharacterGerms.RowTieDesc
-public import Formalism.LocalToGlobal.CharacterGerms.RowTiePNabMapSt
-public import Formalism.LocalToGlobal.CharacterGerms.RowTiePNvalEqSt
-public import Formalism.LocalToGlobal.CharacterGerms.RowTiePDescSpanFinal
+public import Formalism.LocalToGlobal.CharacterGerms.Bundle0009
+public import Formalism.LocalToGlobal.CharacterGerms.Bundle0018
+public import Formalism.LocalToGlobal.CharacterGerms.Bundle0014
+public import Formalism.LocalToGlobal.CharacterGerms.Bundle0016
+public import Formalism.LocalToGlobal.CharacterGerms.Bundle0019
+public import Formalism.LocalToGlobal.CharacterGerms.Bundle0022
+public import Formalism.LocalToGlobal.CharacterGerms.Bundle0020
 public import Formalism.LocalToGlobal.CharacterGerms.RowTieValK
-public import Formalism.LocalToGlobal.CharacterGerms.RowTiePPTDone
-public import Formalism.LocalToGlobal.CharacterGerms.EndomorphismLimitIntegral
-public import Formalism.LocalToGlobal.CharacterGerms.RowTieP_TCoord
+public import Formalism.LocalToGlobal.CharacterGerms.Bundle0039
+public import Formalism.LocalToGlobal.CharacterGerms.Bundle0010
+public import Formalism.LocalToGlobal.CharacterGerms.Bundle0040
 public import Formalism.LocalToGlobal.CharacterGerms.CharacterHypothesisUnramified
 public import Formalism.LocalToGlobal.CharacterGerms.CoeffPowCharFrobenius
 public import Formalism.LocalToGlobal.CharacterGerms.RowTiePGerm
 public import Formalism.DropLevelBounds.ConstantCoeffVanishing.UbintConstantCoeffEqZero
-public import Formalism.LocalToGlobal.CharacterGerms.CoeffFirstPairingLinear
-public import Formalism.LocalToGlobal.CharacterGerms.RankMaximalSelfUnconditional
+public import Formalism.LocalToGlobal.CharacterGerms.Bundle0021
 
 @[expose] public section
 

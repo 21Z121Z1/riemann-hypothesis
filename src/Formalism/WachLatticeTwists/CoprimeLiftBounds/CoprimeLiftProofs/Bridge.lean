@@ -1,9 +1,8 @@
 module
 
-public import Formalism.WachLatticeTwists.CoprimeLiftBounds.StatBridgeChiOne
-public import Formalism.WachLatticeTwists.CoprimeLiftBounds.CoprimeLiftProofs.KeyMul
-public import Formalism.WachLatticeTwists.CoprimeLiftBounds.CoprimeLiftProofs.LiftBound
-public import Formalism.WachLatticeTwists.CoprimeLiftBounds.CoprimeLiftProofs.YGenCongr
+public import Formalism.WachLatticeTwists.CoprimeLiftBounds.Bundle0001
+public import Formalism.WachLatticeTwists.CoprimeLiftBounds.CoprimeLiftProofs.Bundle0003
+public import Formalism.WachLatticeTwists.CoprimeLiftBounds.CoprimeLiftProofs.Bundle0002
 
 @[expose] public section
 

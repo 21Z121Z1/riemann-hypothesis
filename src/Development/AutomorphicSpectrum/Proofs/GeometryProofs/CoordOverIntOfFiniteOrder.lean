@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.CoordsAt
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.GenMapStalkSpecializes
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.RegAtFractionNoetherianClosed
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.Bundle0002
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0012
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0027
 
 @[expose] public section
 

@@ -1,7 +1,7 @@
 module
 
 public import Formalism.LocalToGlobal.PairingIndexBounds.SplitPairEquations.SquareSplitPairs.SumThreeComm
-public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.ExistsSmulMemLattice
+public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0077
 
 @[expose] public section
 

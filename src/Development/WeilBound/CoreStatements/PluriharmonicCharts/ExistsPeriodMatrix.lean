@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Proofs.MetricProofs.OmHeightslockG
-public import Development.WeilBound.CoreStatements.PluriharmonicCharts.PeriodGramConj
-public import Development.WeilBound.CoreStatements.PluriharmonicCharts.IsOpenDet
+public import Development.AutomorphicSpectrum.Proofs.MetricProofs.Bundle0105
+public import Development.WeilBound.CoreStatements.PluriharmonicCharts.Bundle0019
+public import Development.WeilBound.CoreStatements.PluriharmonicCharts.Bundle0018
 
 @[expose] public section
 

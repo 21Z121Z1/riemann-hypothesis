@@ -1,8 +1,9 @@
 module
 
 public import Development.AbelianVarietyTheory.Definitions.Divisors.IsChartMemberP
-public import ReciprocityTheory.AnalyticForms.RegularLocalRings.FinalTheorems
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LeastVectorUniqueInClassModStatement
+public import ReciprocityTheory.AnalyticForms.RegularLocalRings.Bundle0001
+public import Mathlib
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2296
 public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.RangeAlgebraMapEqIInfDiscreteValuationSubring
 
 @[expose] public section
@@ -253,7 +254,7 @@ theorem map_mono_eq_zero {O : Type} [CommRing O] {bar : O → O} {q s : ℕ} {W 
     have hw0 : w ≠ 0 := by
       rintro rfl
       simp at hne
-    exact GlobalTheory.T.least_vector_unique_in_class_mod s W hW (Φ.X y) β hβs hβn H hβpos mu₀ hmu₀H hmu₀0 hmin N₁ hN w hw hw0
+    exact _root_.GlobalTheory.Poinc.LeastVec.least_lt_add_smul s W hW (Φ.X y) β hβs hβn H hβpos mu₀ hmu₀H hmu₀0 hmin N₁ hN w hw hw0
   have hz : ∀ mu : Fin s → Φ.X y, (∀ w, CongMod N₁ (mu w) (mu₀ w)) → mu ≠ 0 := by
     rintro mu hc rfl
     have h1 := hbig 0 H.zero_mem hc (Ne.symm hmu₀0)

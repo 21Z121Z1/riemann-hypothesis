@@ -1,10 +1,10 @@
 module
 
-public import Formalism.FlagUnipotentLattices.HalfDifferenceL1Bound
+public import Formalism.FlagUnipotentLattices.Bundle0004
 public import Formalism.LatticeRigidity.HeightMinimum.PowFinrankEqZeroOfTracePow
 public import Mathlib
 public import Formalism.LogSumExpBounds.StatementD
-public import Formalism.GelfandTransference.EnergyIdentity
+public import Formalism.GelfandTransference.Bundle0001
 public import Formalism.NormUnitaryBounds.DetPolynomialWeights.ShortIndependentVectorsOfDualMinimum
 public import Formalism.LatticeTheta.ThetaShiftInversion
 public import Formalism.HarderNarasimhan.ShiftInvariance

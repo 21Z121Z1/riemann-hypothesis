@@ -3,8 +3,8 @@ module
 public import Development.AutomorphicArithmetic.ThetaCorrespondence.AlgebraicCharacters.EmbOrbit
 public import Development.AutomorphicArithmetic.ThetaCorrespondence.AlgebraicCharacters.ContinuousRankOneRep
 public import Development.AutomorphicArithmetic.ThetaCorrespondence.AlgebraicCharacters.ChIndep
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.PadicHodgeTheory.LaHecke
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.HeckeCharLocalComponentExistsUniqueUnitary
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.PadicHodgeTheory.Bundle0030
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0191
 
 @[expose] public section
 

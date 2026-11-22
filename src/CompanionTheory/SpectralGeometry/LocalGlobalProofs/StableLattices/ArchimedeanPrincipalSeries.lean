@@ -3,9 +3,9 @@ module
 public import Mathlib
 public import CompanionTheory.RealGroups.UnitaryAdmissibility.ArchimedeanUnitaryDual.StDefinite
 public import CompanionTheory.HarishChandraModules.KFiniteAnalyticVectors.AdmissibleSmoothVectors.FinalAll
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.SignFrameUnitaryIso
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0311
 public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsIsLatticeFrameIsMajorantFrame
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.DenseKFiniteVectorsUnitaryGroupRep
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0076
 public import Development.AbelianVarietyTheory.Proofs.CovolumeBounds.IntegralConjInnerMulInnerOfIsEmptyEquiv
 
 @[expose] public section

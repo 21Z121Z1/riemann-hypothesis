@@ -1,13 +1,13 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicArithmetic.OrbitLabellings.ColDefs
-public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.StdBases
-public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.BeData
-public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.ExistsConstantCoeffOne
+public import Development.AutomorphicArithmetic.OrbitLabellings.Bundle0001
+public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.Bundle0010
+public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.Bundle0011
+public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.Bundle0013
 public import Formalism.LocalRingCardinality.CoeNeZeroOfNotMem
 public import Formalism.LocalRingCardinality.DataForced
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.SubstUnitaryLogarithmicCoordinatesStatement
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0101
 public import Development.AutomorphicArithmetic.OrbitLabellings.ExistsUnitQuotientOfNormOneUnramifiedUltrametric
 public import Development.AutomorphicArithmetic.OrbitLabellings.IntegralMvExpSumLogSOfOddPeriod
 public import Development.AutomorphicArithmetic.OrbitLabellings.StdSeriesOrbitCoordinateChangeOfOddInert
@@ -87,7 +87,7 @@ theorem UpperTheory.lattice_pairs_odd_degree_isometric :
   obtain ⟨om, hOw, hTr⟩ := UpperTheory.exists_unit_quotient_of_normOne_unramified_ultrametric p h5 σ hσ (nP D p) hi
   obtain ⟨R, hR⟩ := exists_reps hp
   obtain ⟨γ, hγ1, hγ2, hγ3⟩ := UpperTheory.stdSeries_orbit_coordinate_change_of_odd_inert D p lam σ hσ h5 hC hi om hOw hTr R hR N N' L L' P P' hAdm hS hS' r b hLB hON
-  have hU := GlobalTheory.T.subst_unitary_logarithmic_coordinates p g2 g3 s2 ε σ F hcd (Fin r) (({z // z ∈ R} × Fin (nP D p)) × Fin N × Fin N') γ hγ1
+  have hU := _root_.GlobalTheory.KerStd.HostLog.subst_unitary p g2 g3 s2 ε σ F hcd (Fin r) (({z // z ∈ R} × Fin (nP D p)) × Fin N × Fin N') γ hγ1
     (by convert hγ2) _ (hInt G hG)
   refine UpperTheory.integral_mvExp_sum_logS_of_odd_period p g2 g3 s2 ε σ F hcd (nP D p) hi om hOw hTr _ _ (posPl D p) hp R _ hU c _ hc ?_
   exact (hγ3 c G).trans (subst_lin_comp (fun k e => (γ k e : ℂ_[p])) _ (fun e => cc_linS _ _ _ _ _ _ _) _)

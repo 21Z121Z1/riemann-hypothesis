@@ -7,7 +7,7 @@ public import Formalism.LocalToGlobal.Columns.RhoEqOfSmulEq
 public import Formalism.LocalToGlobal.Columns.GSetLemmas
 public import Formalism.LocalToGlobal.Columns.PolyFn
 public import Formalism.LocalToGlobal.Columns.CoefModB
-public import Formalism.LocalToGlobal.Divisibility.Frames
+public import Formalism.LocalToGlobal.Divisibility.Bundle0001
 public import Formalism.LocalToGlobal.Columns.FiniteSumNonzeroLargeDepth
 public import Formalism.LocalToGlobal.Columns.HeckeSpCount
 public import Formalism.LocalToGlobal.KernelLattices.ThDistC

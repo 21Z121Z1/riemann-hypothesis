@@ -2,7 +2,7 @@ module
 
 public import Formalism.HermitianCurvature.StatementSz
 public import Formalism.HermitianCurvature.HermitianCurvatureProofs.CorollaryAOfPropositionA
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.VandermondeRatioHarmonic
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0006
 public import Formalism.HermitianCurvature.HermitianCurvatureProofs.BetaBoundOnBoundary
 public import Formalism.HermitianCurvature.HermitianCurvatureProofs.CmRingIdempotentUnitRatioIdentity
 

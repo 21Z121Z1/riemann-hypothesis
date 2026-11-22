@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import GroundTheory.AutomorphicForms.GL2.GodementSectionSplit
+public import GroundTheory.AutomorphicForms.GL2.Bundle0004
 public import GroundTheory.GlobalFields.TateThesis.EulerFactorsFinite
-public import GroundTheory.AutomorphicForms.GL2.GodementSectionLocal
+public import GroundTheory.AutomorphicForms.GL2.Bundle0003
 public import GroundTheory.GlobalFields.KummerTheory.LocalIndexAtPlace
 public import GroundTheory.AutomorphicForms.GL2.FiniteIdeleDecomp
 

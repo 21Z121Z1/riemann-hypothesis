@@ -1,17 +1,17 @@
 module
 
 public import Formalism.SharpRestriction.GrowthBounds.FlipOneThree
-public import Formalism.MahlerMeasure.CoarseLevelSlackInequalities
-public import Formalism.MahlerMeasure.FinalT
+public import Formalism.MahlerMeasure.Bundle0007
+public import Formalism.MahlerMeasure.Bundle0008
 public import Formalism.MahlerMeasure.MahlerMeasureProofs.WeightSpaceDimensionMonotone
-public import Formalism.MahlerMeasure.MahlerMeasureProofs.SmithZp
+public import Formalism.MahlerMeasure.MahlerMeasureProofs.Bundle0002
 public import Formalism.MahlerMeasure.MahlerMeasureProofs.TheoremM
 public import Formalism.PolynomialDimension.MultinomialDepth.MonoCount
 public import Formalism.PolynomialDimension.MultinomialDepth.PartnerM
 public import Formalism.PolynomialDimension.MultinomialDepth.TieOps
 public import Formalism.ThetaLogCoordinates.TraceIsometryWeights.DischargeHeightBound
 public import Formalism.ThetaLogCoordinates.PartnerMeanCoordinates.LatticeTheoremEps28Valid
-public import Formalism.SharpRestriction.GrowthBounds.GLWeightTheory
+public import Formalism.SharpRestriction.GrowthBounds.Bundle0003
 public import Lemmata.GeneralBFactLeftBisForm.Imports
 
 @[expose] public section

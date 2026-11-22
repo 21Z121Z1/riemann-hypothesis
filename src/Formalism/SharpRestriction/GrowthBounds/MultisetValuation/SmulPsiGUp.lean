@@ -1,7 +1,7 @@
 module
 
-public import Formalism.SharpRestriction.GrowthBounds.MultisetValuation.SmulMemLatOf
-public import Formalism.SubspaceCounting.SubspaceCountingProofs.TypeIIDown
+public import Formalism.SharpRestriction.GrowthBounds.MultisetValuation.Bundle0011
+public import Formalism.SubspaceCounting.SubspaceCountingProofs.Bundle0002
 
 @[expose] public section
 

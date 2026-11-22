@@ -1,9 +1,8 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.PsiCoordExistsUniqueUpToUnitLocal
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.BetaAtAddLeftAndDiagEqTwoOrder
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsGoodIntegral
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0049
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0051
 
 @[expose] public section
 

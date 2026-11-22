@@ -2,13 +2,13 @@ module
 
 public import Mathlib
 public import Formalism.SharpRestriction.CuspSpanNormBounds.CongruenceAtSplitFrobeniusHolds
-public import Formalism.HermitianLattices.HermitianLatticesProofs.LocDual
+public import Formalism.HermitianLattices.HermitianLatticesProofs.Bundle0003
 public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.ChartGen
 public import Development.AbelianVarietyTheory.PublishedTheorems.DiscreteSeriesUnitary₂.MaxMass
 public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.MemOfPerpPerp
 public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsIsometryOfUnimodularLatticesAtPlace
 public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.CyclicDiscriminantLatticesFormOneGenus
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.LatticeUnimodular
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0200
 
 @[expose] public section
 

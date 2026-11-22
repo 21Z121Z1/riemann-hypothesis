@@ -2,10 +2,10 @@ module
 
 public import Mathlib
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.BlowupProjections.BlowupProjStatement
-public import ReciprocityTheory.AnalyticForms.RegularLocalRings.WChartsC
-public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.GeometricallyConnectedOfIsIsoRestrict
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsClosedImmersionBlowupGeneratingSections
-public import GroundTheory.ArithmeticGeometry.SchemeCohomology.RegularSmooth
+public import ReciprocityTheory.AnalyticForms.RegularLocalRings.Bundle0013
+public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.Bundle0004
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0522
+public import GroundTheory.ArithmeticGeometry.SchemeCohomology.Bundle0002
 
 @[expose] public section
 

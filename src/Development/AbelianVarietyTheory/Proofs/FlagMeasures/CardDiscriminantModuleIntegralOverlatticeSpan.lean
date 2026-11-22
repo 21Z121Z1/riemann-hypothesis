@@ -2,11 +2,11 @@ module
 
 public import Mathlib
 public import Formalism.SharpRestriction.CuspSpanNormBounds.FractionFieldToGenericStalkAlgebraMapEq
-public import Development.AbelianVarietyTheory.Definitions.Foundations.IsHermND
+public import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0007
 public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.IsPrincipalIdealRingOfHenselian
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsEqZpowMulUnit
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsBasisFgMaximalOrderSpanningFree
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.RelIndexSpanLatticeMatrixDetNorm
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0029
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0030
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0063
 
 @[expose] public section
 

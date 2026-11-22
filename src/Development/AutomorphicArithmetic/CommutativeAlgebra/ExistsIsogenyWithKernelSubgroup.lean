@@ -1,9 +1,9 @@
 module
 
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BiholomorphicLiftSystem
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2046
 public import Development.AutomorphicArithmetic.SpecialMaps.QuotObjDefs
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LiftSystemRealStructure
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HarrisTaylorExistsTypeTjPIsogeny
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle3138
 
 @[expose] public section
 

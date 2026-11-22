@@ -2,11 +2,11 @@ module
 
 public import Development.AutomorphicArithmetic.Foundations.Convolution.SphericalHeckeOperators.SymSum
 public import Development.AutomorphicArithmetic.Foundations.Convolution.SphericalHeckeOperators.SandPS
-public import Development.AutomorphicArithmetic.Foundations.Convolution.SphericalHeckeOperators.ConstTerm
+public import Development.AutomorphicArithmetic.Foundations.Convolution.SphericalHeckeOperators.Bundle0001
 public import Development.AutomorphicArithmetic.Foundations.Convolution.SphericalHeckeOperators.SetIntegralCosets
 public import Development.AutomorphicArithmetic.Foundations.Convolution.SphericalHeckeOperators.ThPMul
-public import Development.AutomorphicArithmetic.Foundations.Convolution.SphericalHeckeOperators.IntegralConv
-public import Development.AutomorphicArithmetic.Foundations.Convolution.SphericalHeckeOperators.GapDom
+public import Development.AutomorphicArithmetic.Foundations.Convolution.SphericalHeckeOperators.Bundle0004
+public import Development.AutomorphicArithmetic.Foundations.Convolution.SphericalHeckeOperators.Bundle0002
 
 @[expose] public section
 

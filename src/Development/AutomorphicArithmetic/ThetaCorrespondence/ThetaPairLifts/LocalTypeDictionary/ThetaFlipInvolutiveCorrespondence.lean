@@ -2,28 +2,28 @@ module
 
 public import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.LocalTypeDictionary.DiscreteSpectrumResidualClassification
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Divisors.RegConst
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaAtMove
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TupleMatch
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GridFramesDoublingPolynomialExists
-public import Development.AbelianVarietyTheory.Statements.PlaceShiftStatements.NormSmall
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.RatInOfUnit
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0052
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2904
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle3129
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2842
+public import Development.AbelianVarietyTheory.Statements.PlaceShiftStatements.Bundle0002
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0142
 public import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.WeilTensorModels
-public import Development.AbelianVarietyTheory.Definitions.Divisors.DiscreteSeriesHermitianUnique
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NegIdxOfIsStd
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0041
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1561
 public import Development.AbelianVarietyTheory.Statements.HeckeThetaIntegrals.ThetaIntegralsAgree
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsEquivOfKer
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TowerStageSeesawDictionaryFramesSignatures
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle3095
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2708
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsHaarSmul
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SquareStandingTripleThetaSecond
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.XiAwayIm
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsPowClose
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ImportsRestRest
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2832
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2818
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2822
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GlResidueSurjective
-public import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.LocalTypeDictionary.BernsteinUnitaryProductIrreducible
-public import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.LocalTypeDictionary.ThetaParameterDictionaryBijective
-public import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.LocalTypeDictionary.StageUniqueOfArchimedeanTriple
-public import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.LocalTypeDictionary.ThetaFlipTensorMatch
+public import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.LocalTypeDictionary.Bundle0001
+public import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.LocalTypeDictionary.Bundle0062
+public import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.LocalTypeDictionary.Bundle0095
+public import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.LocalTypeDictionary.Bundle0103
 
 @[expose] public section
 
@@ -83,12 +83,12 @@ theorem thetaFlip_tuple_match (hP : _root_.GlobalTheory.FunPr.ThetaLocalInputs) 
     rw [← k] at k2
     rw [h5 w hw _ (hT'.geo.hM.vac _).1 0 k2.1, k2.2]
   have vB : ∏ w ∈ locPl G t, ιB w (Γ.M'.vac _) 0 = ∏ w ∈ locPl G t, ι' w (Γ.M'.vac _) 0 := Finset.prod_congr rfl fun w hw => by
-    have k := GlobalTheory.T.mixedModel_vacuum_eq_smul_integralMatrix_indicator hL W B t i j M hst e Bs Γ X om om' h hT' hti w hw _ (h4 w hw)
+    have k := _root_.GlobalTheory.TopFlip.MixVacSmall.mixVac_eq_indicator hL W B t i j M hst e Bs Γ X om om' h hT' hti w hw _ (h4 w hw)
     have k2 := fourierSum_ind (A := Fin ((locGrid G t w).rank (i, j))) (psiAt W w) (isUnif_unifAt w)
       (Assignment.one.block (Fin ((locGrid G t w).rank (i, j + 1))) (Fin ((locGrid G t w).rank (i + 1, j)))) (ι' w (Γ.M'.vac _) 0)
     rw [← k] at k2
     rw [h6 w hw _ (hT'.geo.hM'.vac _).1 0 k2.1, k2.2]
-  have la := GlobalTheory.T.negW_local_functions_theta_pure_tensor hL W B t i j M hst e Bs Γ X om om' h hT' hti.1 ρ f
+  have la := _root_.GlobalTheory.TopFlip.LinGlob.isDatum_linA hL W B t i j M hst e Bs Γ X om om' h hT' hti.1 ρ f
     (datumA_vac ρ i j t ▸ GlobalTheory.SquareIdent.isDatum_of_isDatumA f3) ιA h1
   have lb := GlobalTheory.TopFlip.LinSmall.isDatum_linB hL W B t i j M hst e Bs Γ X om om' h hT' hti ρ f'
     (datumB_vac ρ i j t ▸ GlobalTheory.SquareIdent.isDatum_of_isDatumB g3) ιB h2

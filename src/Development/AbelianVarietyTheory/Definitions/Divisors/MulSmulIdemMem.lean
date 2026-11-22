@@ -2,9 +2,8 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.Foundations.ExistsFlatSecRankZero
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsNumberFieldPoint
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.FlatSecInhabited
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.MemSuppOnIffIdemMulOfNatural
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0331
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0333
 
 @[expose] public section
 

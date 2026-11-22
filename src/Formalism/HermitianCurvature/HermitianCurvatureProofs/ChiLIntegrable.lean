@@ -1,7 +1,7 @@
 module
 
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.PsiCStarMul
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.SliceContOn
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0149
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0169
 
 @[expose] public section
 

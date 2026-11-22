@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsUnitAnalyticFunction
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0405
 public import Development.AutomorphicArithmetic.Foundations.EtaleClopenDescent.EFam
-public import Development.AutomorphicArithmetic.Foundations.EtaleClopenDescent.IsSeparatedOfProj
+public import Development.AutomorphicArithmetic.Foundations.EtaleClopenDescent.Bundle0012
 public import Development.AutomorphicArithmetic.Foundations.EtaleClopenDescent.IsIntegralRBIff
 
 @[expose] public section

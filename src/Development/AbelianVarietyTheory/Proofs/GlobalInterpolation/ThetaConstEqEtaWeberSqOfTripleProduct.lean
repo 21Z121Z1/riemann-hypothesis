@@ -2,8 +2,8 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.BlockTheory.GlobalSignature.ThetaConstantWeber
-public import Formalism.LocalToGlobal.TorsionIntegrality.EisensteinTranslationProducts.ThetaLine
-public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.DifferentiableOddTheta
+public import Formalism.LocalToGlobal.TorsionIntegrality.EisensteinTranslationProducts.Bundle0001
+public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0014
 
 @[expose] public section
 

@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import GroundTheory.PAdicHodge.KerFontaineThetaCompFrobeniusEquivSymmPow
+public import GroundTheory.PAdicHodge.Bundle0003
 
 @[expose] public section
 

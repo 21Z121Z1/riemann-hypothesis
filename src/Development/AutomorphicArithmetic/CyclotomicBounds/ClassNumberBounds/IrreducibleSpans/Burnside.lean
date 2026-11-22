@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.BurnsideEnd
+public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0004
 
 @[expose] public section
 

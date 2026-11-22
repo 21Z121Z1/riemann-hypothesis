@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Formalism.HermitianLattices.StatementLat
-public import Formalism.HermitianLattices.StatementTheta
+public import Formalism.HermitianLattices.Bundle0001
 public import Formalism.SatakeDualWeyl.Statement
 
 @[expose] public section

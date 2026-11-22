@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.TcoMem
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.FibFiniteAndSep
+public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.Bundle0006
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0352
 
 @[expose] public section
 

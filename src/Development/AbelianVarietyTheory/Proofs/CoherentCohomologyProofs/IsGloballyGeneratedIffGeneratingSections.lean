@@ -5,7 +5,7 @@ public import Development.AbelianVarietyTheory.Definitions.ThetaMetrics.IsAmpleL
 public import Development.AbelianVarietyTheory.Proofs.CovolumeBounds.IsProjOverMorphismRestrictOfRelAmple
 public import Development.AbelianVarietyTheory.Definitions.QuasicoherentCohomology.PreservesFiniteColimitsTwistFunctor
 public import Development.AbelianVarietyTheory.Proofs.CoherentCohomologyProofs.RestrictPullbackIsoHomAppPullbackSections
-public import Development.AbelianVarietyTheory.Proofs.CoherentCohomologyProofs.EventuallyExistsResMEqMulSecOfEqZpowSec
+public import Development.AbelianVarietyTheory.Proofs.CoherentCohomologyProofs.Bundle0023
 
 @[expose] public section
 

@@ -1,12 +1,8 @@
 module
 
-public import Formalism.WindowSums.AnnihilatorPolynomials.DistinctTerms
+public import Formalism.WindowSums.AnnihilatorPolynomials.Bundle0001
 public import Formalism.WindowSums.Statement
-public import Formalism.WindowSums.AnnihilatorPolynomials.EvalOneSmulDecomposition
 public import Formalism.WindowSums.AnnihilatorPolynomials.ZpowVal
-public import Formalism.WindowSums.AnnihilatorPolynomials.ValProd
-public import Formalism.WindowSums.AnnihilatorPolynomials.WindowSum
-public import Formalism.WindowSums.AnnihilatorPolynomials.Lagrange
 public import Formalism.WachModuleLifts.StatementW
 
 @[expose] public section

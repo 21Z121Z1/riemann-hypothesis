@@ -2,9 +2,9 @@ module
 
 public import Mathlib
 public import Formalism.LocalToGlobal.IndefiniteReal.LinksDefs
-public import Formalism.LocalToGlobal.ProjectiveLattices.FamilyUniformisationBasePointOrthogonalBis
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsAdeleRingTensorEquivInfiniteProdFinite
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.UnderEqIffConjPl
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0027
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0005
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0095
 
 @[expose] public section
 

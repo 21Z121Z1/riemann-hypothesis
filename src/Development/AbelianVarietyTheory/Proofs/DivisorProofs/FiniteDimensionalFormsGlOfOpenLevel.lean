@@ -1,21 +1,19 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Divisors.CentralNilGL
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0019
 public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.T2SpaceAdelicGeneralLinearGroupNumberField
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BlkEquivInl
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0709
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TransposeMulIncl
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FundamentalDomainMeasureFinite
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntegralFundamentalDomainUnipotent
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsFiniteDimensionalSpaceAutomorphicSmoothing
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.CommuteCapOfCommuteEop
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.CapCommuteRtInfGL
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ContinuousOfIsOpenStab
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConstantTermAutomorphicFormIntegralStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConstantTermIntegralLeftInvariantStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConstantTermModerateGrowthStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HarishChandraCapelliUniformDiagonalBlocksStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FiniteDimensionalSlowlyIncreasingKilledCapelliPoStatement
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0853
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0713
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1331
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0111
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0846
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0759
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1261
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1526
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1423
 
 @[expose] public section
 
@@ -110,11 +108,11 @@ theorem exists_constTerm {L : Subgroup (GL (Fin a) (Af E))} (hL : IsOpen (L : Se
     · exact (LinearMap.congr_fun (lie_rt_fin X k) x.1).symm.trans (congrArg (lie E a X) (hx.2.1 k hk))
     · change lieD X x.2.1 g = _
       rw [funext hx.2.2]
-      exact (GlobalTheory.T.constant_term_automorphic_form_integral E a r μ 𝓕 hμ h𝓕 h1 x.1 hx.1 (isOpen_stab hL hx.2.1)).2 X g
-  refine ⟨⟨_, (GlobalTheory.T.constant_term_automorphic_form_integral E a r μ 𝓕 hμ h𝓕 h1 φ hl (isOpen_stab hL hf)).1⟩, fun _ => rfl, fun τ u P hP => ?_⟩
+      exact (_root_.GlobalTheory.ConstTermSmooth.constTerm_mem_Sm E a r μ 𝓕 hμ h𝓕 h1 x.1 hx.1 (isOpen_stab hL hx.2.1)).2 X g
+  refine ⟨⟨_, (_root_.GlobalTheory.ConstTermSmooth.constTerm_mem_Sm E a r μ 𝓕 hμ h𝓕 h1 φ hl (isOpen_stab hL hf)).1⟩, fun _ => rfl, fun τ u P hP => ?_⟩
   have h := rel_aeval_qdet Γ (Eop τ) (Eop τ)
     (fun i j x hx => Γ.smul_mem (1 / 2 : ℂ) (Γ.sub_mem (hlie _ x hx) (Γ.smul_mem Complex.I (hlie _ x hx)))) u P
-    (φ, ⟨_, (GlobalTheory.T.constant_term_automorphic_form_integral E a r μ 𝓕 hμ h𝓕 h1 φ hl (isOpen_stab hL hf)).1⟩) ⟨hl, hf, fun _ => rfl⟩
+    (φ, ⟨_, (_root_.GlobalTheory.ConstTermSmooth.constTerm_mem_Sm E a r μ 𝓕 hμ h𝓕 h1 φ hl (isOpen_stab hL hf)).1⟩) ⟨hl, hf, fun _ => rfl⟩
   refine Subtype.ext (funext fun g => (h.2.2 g).trans ?_)
   simp only [hP]
   exact integral_zero _ _
@@ -177,7 +175,7 @@ theorem exists_block_poly {r : ℕ} (hr : r ≤ a) (Q : (E →+* ℂ) → ℂ �
       add_mem' := fun hx hy p => (congrArg₂ (· + ·) (hx p) (hy p)).trans (add_zero _)
       smul_mem' := fun c _ hx p => (congrArg (c * ·) (hx p)).trans (mul_zero _) }
   have hM : ∀ X, ∀ ψ ∈ M', lie E a X ψ ∈ M' := fun X ψ hψ y g => lie_left (hψ y) X g
-  have key := fun τ : E →+* ℂ => GlobalTheory.T.harishChandra_capelli_uniform_diagonalBlocks (Sm E a) a r hr (Eop τ) (glRel_Eop τ) M' K
+  have key := fun τ : E →+* ℂ => _root_.GlobalTheory.LeviHC.CapAlg.capalg (Sm E a) a r hr (Eop τ) (glRel_Eop τ) M' K
     (fun i j x hx => M'.smul_mem (1 / 2 : ℂ) (M'.sub_mem (hM _ x hx) (M'.smul_mem Complex.I (hM _ x hx))))
     (fun i j hi hj x hx => K.smul_mem (1 / 2 : ℂ) (K.sub_mem (lieS_upper hr hx hi hj _)
       (K.smul_mem Complex.I (lieS_upper hr hx hi hj _))))
@@ -228,7 +226,7 @@ theorem exists_translated {L : Subgroup (GL (Fin a) (Af E))} (hL : IsOpen (L : S
   have hψ : ∀ g, ψ.1 g = c.1 (g * (finGL E a t * infGL E a (Unitary.toUnits κ))) := fun _ => rfl
   refine ⟨ψ, fun g => by rw [hψ, hc, mul_assoc g], fun γ g => ?_, fun k hk => ?_, fun g => ?_, ?_, hq ψ ?_ ?_⟩
   · rw [hψ, hψ, hc, hc, mul_assoc]
-    exact GlobalTheory.T.constant_term_integral_left_invariant E a r hr μ 𝓕 hμ h𝓕 h1 φ.1 hl γ _
+    exact _root_.GlobalTheory.LeviConstTerm.constTerm_levi_invariant E a r hr μ 𝓕 hμ h𝓕 h1 φ.1 hl γ _
   · refine Subtype.ext (funext fun g => ?_)
     have hk' : t⁻¹ * k * t⁻¹⁻¹ ∈ L := hk
     have e : g * finGL E a k * (finGL E a t * infGL E a (Unitary.toUnits κ)) =
@@ -254,7 +252,7 @@ theorem exists_translated {L : Subgroup (GL (Fin a) (Af E))} (hL : IsOpen (L : S
     rfl
   · have g1 : c.1 ∈ growth E a := fun g => by
       simp only [hc]
-      exact GlobalTheory.T.constant_term_moderate_growth E a r μ 𝓕 hμ h𝓕 h1 φ hl (isOpen_stab hL hf) hg g
+      exact _root_.GlobalTheory.ConstTermGrowth.norm_constTerm_le E a r μ 𝓕 hμ h𝓕 h1 φ hl (isOpen_stab hL hf) hg g
     have g2 := SmoothFinite.growth_cptRep g1 κ
     intro g
     obtain ⟨C, n, h⟩ := g2 (g * finGL E a t)
@@ -278,7 +276,7 @@ theorem exists_slice_space (f : Fin b ↪ Fin a)
       (∀ g, (fun k : Kinf E a => (cptRep E a k ψ).1 g) ∈ W) → ψ.1 ∈ growth E a →
       (∀ τ u m, (aeval (qdet (fun i j : Fin b => Eop (a := a) τ (f i) (f j)) u) (q τ u) ψ).1 (g * embGL f m) = 0) →
       (fun m => ψ.1 (g * embGL f m)) ∈ V := by
-  obtain ⟨V, hV, h⟩ := GlobalTheory.T.finiteDimensional_slowlyIncreasing_killed_capelliPolynomials E b hb (L.comap (embGL f)) (hL.preimage (continuous_embGL f))
+  obtain ⟨V, hV, h⟩ := _root_.GlobalTheory.CapKilled.finite_of_finiteness E b hb (L.comap (embGL f)) (hL.preimage (continuous_embGL f))
     (W.map (LinearMap.funLeft ℂ ℂ (embK f))) inferInstance (fun τ u => q τ (u + ((b : ℂ) - 1) / 2)) fun τ u => hq τ _
   refine ⟨V.map (Sm E b).subtype, inferInstance, fun ψ g h1 h2 h3 h4 h5 =>
     ⟨slice f g ψ, h _ h1 (fun k hk => ?_) (fun m => ?_) (growth_slice f g ψ h4) fun τ u => ?_, rfl⟩⟩

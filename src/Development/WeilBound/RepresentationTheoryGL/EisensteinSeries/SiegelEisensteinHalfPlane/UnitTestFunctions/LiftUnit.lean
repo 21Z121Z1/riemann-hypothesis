@@ -1,8 +1,8 @@
 module
 
 public import Development.WeilBound.RepresentationTheoryGL.EisensteinSeries.SiegelEisensteinContinuation.IsEpCont
-public import GroundTheory.GlobalFields.TateThesis.EulerFactors
-public import GroundTheory.GlobalFields.TateThesis.FiniteOrderParams
+public import GroundTheory.GlobalFields.TateThesis.Bundle0010
+public import GroundTheory.GlobalFields.TateThesis.Bundle0006
 
 @[expose] public section
 

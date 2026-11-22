@@ -2,11 +2,11 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.ArchimedeanThetaValues.ModelsAt
-public import Development.AbelianVarietyTheory.Definitions.ArchimedeanThetaValues.PrimAn
+public import Development.AbelianVarietyTheory.Definitions.ArchimedeanThetaValues.Bundle0001
 public import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.HolArcEqFlowOrbit
-public import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.RiemannFormFramePeriodsEqMajorant
-public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.CmFieldHostElementAddConjEqOne
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.FundamentalDomains.FlowDomainCriterionHolds
+public import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.Bundle0020
+public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.Bundle0135
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.FundamentalDomains.Bundle0009
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.FundamentalDomains.MajPos
 
 @[expose] public section

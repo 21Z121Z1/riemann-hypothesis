@@ -2,10 +2,10 @@ module
 
 public import Mathlib
 public import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.ScalarCommutation.TypeSlice
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DisintegrationDensityExists
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsIrrRepQuotientOfFiniteGen
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0873
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0686
 public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsCuspidalOfIsSupercuspidal
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CuspidalCompactCharacterVanishing
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0826
 
 @[expose] public section
 

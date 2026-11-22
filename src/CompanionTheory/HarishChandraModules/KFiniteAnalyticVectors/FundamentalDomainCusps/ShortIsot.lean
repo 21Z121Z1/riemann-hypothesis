@@ -1,7 +1,6 @@
 module
 
-public import CompanionTheory.HarishChandraModules.KFiniteAnalyticVectors.FundamentalDomainCusps.CompactIntegralBoundedByQuotientNorm
-public import CompanionTheory.HarishChandraModules.KFiniteAnalyticVectors.FundamentalDomainCusps.NilpAlg
+public import CompanionTheory.HarishChandraModules.KFiniteAnalyticVectors.FundamentalDomainCusps.Bundle0001
 public import Formalism.LocalToGlobal.SiegelLatticeTheory.HaarTransversals.RowsDef
 
 @[expose] public section

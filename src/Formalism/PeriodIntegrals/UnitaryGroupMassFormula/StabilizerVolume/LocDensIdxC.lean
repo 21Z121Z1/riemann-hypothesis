@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.StabilizerVolume.LocDensIdxA
+public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.StabilizerVolume.Bundle0027
 
 @[expose] public section
 

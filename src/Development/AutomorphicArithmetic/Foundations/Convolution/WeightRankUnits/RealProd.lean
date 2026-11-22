@@ -1,7 +1,7 @@
 module
 
 public import Development.AutomorphicArithmetic.Foundations.Convolution.WeightRankUnits.DeltaProdAlt
-public import Development.AutomorphicArithmetic.Foundations.Convolution.WeightRankUnits.RealSigned
+public import Development.AutomorphicArithmetic.Foundations.Convolution.WeightRankUnits.Bundle0001
 
 @[expose] public section
 

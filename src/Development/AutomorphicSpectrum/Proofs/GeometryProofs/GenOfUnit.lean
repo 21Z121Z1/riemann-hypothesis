@@ -2,10 +2,21 @@ module
 
 public import Mathlib
 public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.PotentialsBoundedRegSettingEqReference
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.GrGenOfIsFlagVBOn
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LatticeTensorPowerDegree
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.GenMapStalkMap
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.DetLatticeFrameGen
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0026
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0027
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0022
+public import GroundTheory.HeightsAndTheta.Heights.Regularisation.Bundle0002
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.Bundle0006
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.GlobalSectionsRankAlgClosed
+public import Development.AutomorphicSpectrum.Definitions.DivisibilityTowers.GoodOrigin
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.Bundle0010
+public import Development.AutomorphicSpectrum.Statements.GeometryStatements.FlatDegree
+public import Development.AutomorphicSpectrum.Statements.GeometryStatements.Bundle0002
+public import Development.AutomorphicSpectrum.Statements.GeometryStatements.HodgeComparisonCompatibility
+public import Development.AutomorphicSpectrum.Statements.GeometryStatements.CmpSt
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.NumberField
+public import Development.AutomorphicSpectrum.Definitions.DivisibilityTowers.LocalAtPlaces
+public import Development.WeilBound.CoreStatements.PlurisubharmonicCones.Bundle0008
 
 @[expose] public section
 
@@ -190,8 +201,8 @@ theorem det_pull {L : Lat ξ V} {r m : ℕ} {s : Fin m → V} {U : Submodule Ω 
     have hcf' := hcf _ trivial hU₂
     obtain ⟨T, hT⟩ := exists_mat (Ω := Ω) (b := c) (s := s) fun k => by
       rw [hsU, ← hc]; exact Submodule.subset_span ⟨k, rfl⟩
-    refine ⟨T.det, GlobalTheory.CompanionTheory.Relay.det_lattice_frame_gen X Ω ξ V L r s c T _ hs hcf' hT, ?_⟩
-    have h2 := GlobalTheory.CompanionTheory.Relay.det_lattice_frame_gen X' Ω' ξ' V' (L.pull ξ' f j) r b₀ (fun k => j (c k)) (T₁ * i.mapMatrix T) q hb₀
+    refine ⟨T.det, _root_.LevelTowerAlt.determinant_lattice_generator X Ω ξ V L r s c T _ hs hcf' hT, ?_⟩
+    have h2 := _root_.LevelTowerAlt.determinant_lattice_generator X' Ω' ξ' V' (L.pull ξ' f j) r b₀ (fun k => j (c k)) (T₁ * i.mapMatrix T) q hb₀
       (frame_pull hj (hli _ _ hcf'.1) h hreg hcf') fun k => by
         set_option synthInstance.maxHeartbeats 100000 in
           rw [hT k, map_sum]

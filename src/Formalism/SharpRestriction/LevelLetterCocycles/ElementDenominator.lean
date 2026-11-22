@@ -1,10 +1,10 @@
 module
 
 public import Mathlib
-public import Formalism.SharpRestriction.LevelLetterCocycles.UsedLocalConclusion
+public import Formalism.SharpRestriction.LevelLetterCocycles.Bundle0006
 public import Formalism.LocalRingCardinality.RhoDetPrimeEqMuTildeMulChiPow
 public import Formalism.SharpRestriction.LevelLetterCocycles.DataNLoc
-public import Formalism.WeaklyAdmissibleFiltrations.StatementPC
+public import Formalism.WeaklyAdmissibleFiltrations.Bundle0001
 public import Formalism.SharpRestriction.LevelLetterCocycles.DeltaInvariantLattices
 public import Formalism.SharpRestriction.LevelLetterCocycles.LiftingTheory
 public import Formalism.SharpRestriction.LevelLetterCocycles.LocalSituation

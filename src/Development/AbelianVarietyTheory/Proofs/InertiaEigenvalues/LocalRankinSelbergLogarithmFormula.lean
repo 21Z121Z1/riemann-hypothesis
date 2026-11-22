@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsMaxLocLConjBound
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0723
 public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.StrongMultiplicityOne
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.RankinSelbergPartialLPoleAtOneConjStatement
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0938
 
 @[expose] public section
 

@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Formalism.UnipotentAdelicQuotients.CuspEllipticValues
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.CentralIdempotentIrreducibleCharacterProps
+public import Formalism.UnipotentAdelicQuotients.Bundle0001
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0165
 
 @[expose] public section
 

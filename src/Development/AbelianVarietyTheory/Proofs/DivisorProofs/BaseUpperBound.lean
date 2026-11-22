@@ -1,35 +1,34 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NabBaseChange
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CentralUniformiserActsByDilationTameKernelStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TameKernelVectorUnitMulDilatedFlatStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FlatThetaQuotientAtPrincipalLevelProofStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaTraceLevelCompatibleProofStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CoefLatticeIndepCoefMapProofStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DualWeylLatticeBaseChangeSpanProofStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LevelCharacterFiniteOrderDefiniteFormsStatement
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsIsCentAtScalar
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RealizationEmbeddingCompatible
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FlatVecExistsUnique
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsCoefScale
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.CompAtMtOfMemGfC
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WeilDatumUniqueOnThetaFunctions
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.HeckeCharacterIdeleCharacterMatchUnique
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1855
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1943
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2783
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1874
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1891
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1862
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1898
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1880
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0777
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1793
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0800
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0852
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0124
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1127
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0433
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FreeLowerBlockVectorMultipleKernelTranslate
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.GoodFormsSpannedByThetaSeriesOfClassSums
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.MemLatAtIffHat
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CoefficientMapUniqueBijectiveComplexExtension
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.LinearIndependentRowsMap
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsKsFormOfAlgebraicFormsIso
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.GoodBaseDataWeightEqLiftCoeffModuleWeight
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ForcedContentEqScaleAtResidueChar
-public import Formalism.LocalToGlobal.IndefiniteReal.LevelTypeEquivalence.KerDiag
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0855
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0765
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0775
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0801
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0631
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0451
+public import Formalism.LocalToGlobal.IndefiniteReal.LevelTypeEquivalence.Bundle0007
 public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.LeafTW1OfAllConjugatesGood
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BaseTupleThetaKernelTameCharacter
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.KernelThetaSeriesSpanOverClassRepresentatives
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1680
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2824
 public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.ExistsUniqueHcharOfFiniteOrder
-public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.ExistsNormLeHeightPow
+public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.Bundle0007
 public import Development.AbelianVarietyTheory.PublishedTheorems.PublishedFoundations.NonemptyAlgHomOfIsRayOfDvd
 
 @[expose] public section
@@ -96,13 +95,13 @@ theorem exists_om_eq (hC : GlobalTheory.Hk3.Core R F) (hG : QGuard R) (hV : VStd
     (hK : KerDat R i ξ χ ξR B.de.Q ω φ) (hχ : ChrEq B.de.chi ξ) (hQ : ∃ t, B.de.Q ⊆ R.Q t) {N : ℕ} (hN : N ≠ 0)
     (hNQ : ∀ PP ∈ B.de.Q, (N : 𝓞 D.host.E) ∈ PP.asIdeal) :
     ∃ (z : GA D (Vc D i)) (c : ℂ), IsCentAt i B.de.Q z ∧ UnitOff N c ∧ ω (z, 1) φ = c • (princ B).vecBase := by
-  obtain ⟨eg, eQ, fg, heg, heQ, hfg, hf⟩ := GlobalTheory.T.flatThetaQuotientAtPrincipalLevel_proof D G Pl0 T0 A Ks R F hC i ξ χ ξR ω φ B hB hBo hK hχ
+  obtain ⟨eg, eQ, fg, heg, heQ, hfg, hf⟩ := _root_.GlobalTheory.BaseCmp.flatTwoStep_holds D G Pl0 T0 A Ks R F hC i ξ χ ξR ω φ B hB hBo hK hχ
   obtain ⟨ϖ, hϖ0, hϖ⟩ := exists_uniformiser D.host.E B.de.Q
   have hϖE : (ϖ : D.host.E) ≠ 0 := by exact_mod_cast hϖ0
   obtain ⟨z, hz, hzm⟩ := GlobalTheory.CentScal.exists_isCentAt_scalar D i B.de.Q eQ heQ (ϖ : D.host.E) hϖE
-  obtain ⟨κ, hκ, hact⟩ := GlobalTheory.T.central_uniformiser_acts_by_dilation_tame_kernel D G Pl0 T0 A Ks R F hC hG i hV ξ χ ξR _ ω φ hK hQ N hN hNQ eg eQ fg heg heQ hfg ϖ
+  obtain ⟨κ, hκ, hact⟩ := _root_.GlobalTheory.BaseCmp.dilKer_of_ne_zero D G Pl0 T0 A Ks R F hC hG i hV ξ χ ξR _ ω φ hK hQ N hN hNQ eg eQ fg heg heQ hfg ϖ
     (by first | exact hϖ0 | exact hϖE) hϖ z hzm
-  obtain ⟨Gc, hGc, hSB, hvP⟩ := GlobalTheory.T.tameKernel_vector_unit_mul_dilated_flat D G Pl0 T0 A Ks R F hC hG i hV ξ χ ξR _ ω φ hK hQ N hN hNQ eg eQ fg heg heQ hfg ϖ hϖ0 hϖ
+  obtain ⟨Gc, hGc, hSB, hvP⟩ := _root_.GlobalTheory.BaseCmp.liftKer_of_ne D G Pl0 T0 A Ks R F hC hG i hV ξ χ ξR _ ω φ hK hQ N hN hNQ eg eQ fg heg heQ hfg ϖ hϖ0 hϖ
   obtain ⟨Tm, hTm⟩ := hf.1
   refine ⟨z, κ * Gc, hz, unitOff_mul hκ hGc, ?_⟩
   have hcomp : ∀ x : WO (Vc D i) (Wc D i), dil i (ϖ : D.host.E) (dil i (ϖ : D.host.E)⁻¹ x) = x := by
@@ -153,7 +152,7 @@ theorem exists_trace_eq (hC : GlobalTheory.Hk3.Core R F) (hG : QGuard R) (hV : V
       GlobalTheory.OrientedHeis.om_fin_pureTensorO B.F.ψ _ _ _ _ ω hW B.F.θ hB.frame.vac.2.inf z hzf 1 (one_mem _) _ _ _ _ φ P hφ, hz,
       Formalism.IndefR.Eqv.KerDiag.pureTensorO_smul, map_smul]
     rfl
-  rw [e1, map_smul, GlobalTheory.T.thetaTraceLevelCompatible_proof D G Pl0 T0 A Ks R F hC i B hB hBo U ψ e he hU hψ ω hω]
+  rw [e1, map_smul, _root_.GlobalTheory.TraceLevelPf.traceLevel D G Pl0 T0 A Ks R F hC i B hB hBo U ψ e he hU hψ ω hω]
   congr 1
   funext g
   exact congrFun (GlobalTheory.WeilUniq.weilDatum_unique D _ hB.frame.vac.1 _ _ _ _ ω ω' hω hω' _ _
@@ -175,7 +174,7 @@ theorem mem_span_coefLat (hC : GlobalTheory.Hk3.Core R F) (hBo : BaseOf R i B)
     (O O' : Subring ℂ) (hO' : ∀ a : 𝓞 D.what₂.LL, D.what₂.embLL a ∈ O') {h : GA D (Vc D i)} {w : (R.cV i).W}
     (hw : InCoefLat R i h w) : c⁻¹ • Φ w ∈ Submodule.span O'
       (B.coefLat (Formalism.L2.Host.embLL0 D) (labLL0 D) O (finPt _ h) : Set (PolF D (Wc D i).rank (Vc D i).rank)) := by
-  obtain ⟨P, hP, rfl⟩ := GlobalTheory.T.coefLattice_indep_coefMap_proof D G Pl0 T0 A Ks R F hC i c0L hc0 h w hw
+  obtain ⟨P, hP, rfl⟩ := _root_.GlobalTheory.CoefIndepProof.coefIndep D G Pl0 T0 A Ks R F hC i c0L hc0 h w hw
   have hlat : B.latAt (finPt _ h) = Bridge.hLat (Vc D i) (fin (Vc D i) h) :=
     GlobalTheory.LatAtHLat.latAt_eq_hLat D _ _ B (hBo.ΛS ▸ GlobalTheory.AdTh.RecPair.coe_eq_of_frame (hC.lev.βV i)) _
   have hP' := GlobalTheory.T.dualWeylLattice_baseChange_span_proof D.host.E D.LL0 D.what₂.LL D.what₂.Tau _ (algebraMap D.LL0 D.what₂.LL) (labLL0 D) (lamV D i) _
@@ -208,10 +207,10 @@ theorem exists_move {h : GA D (Vc D j)} (hh : h ∈ GfC (Vc D j)) :
     ∃ (s : Finset (Pl D.host.E)) (h' : GA D (Vc D j)) (T : PolF D (Wc D j).rank (Vc D j).rank →ₗ[ℂ] PolF D (Wc D j).rank (Vc D j).rank)
       (ζ : ℂ), (∃ n : ℕ, n ≠ 0 ∧ ζ ^ n = 1) ∧ (∀ P, ρ.theta i j b h P = ζ • ρ.theta i j b h' (T P)) ∧
       ∀ P ∈ ρ.lat i j b (ρ.eO i b).range h, ρ.IsDatum i j b s h' (T P) := by
-  obtain ⟨hg, ha, -⟩ := GlobalTheory.T.twistingCharacter_admissibleGaloisTwist_good D _ D.ntw ρ hρ i j b 0 ∅ 1 (twOK_one i 0)
+  obtain ⟨hg, ha, -⟩ := _root_.GlobalTheory.TwistGood.tw_good D _ D.ntw ρ hρ i j b 0 ∅ 1 (twOK_one i 0)
   have hB := hρ.base i j b
-  obtain ⟨γ, s, h', k, hs, hoff, hh', hsupp, e⟩ := GlobalTheory.T.exists_split_supported_rep_finite_unitary_class D ρ hρ i j b h hh
-  obtain ⟨n, hn, hk⟩ := GlobalTheory.T.levelCharacter_finiteOrder_definite_forms D _ _ (ρ.B i j b) _ k
+  obtain ⟨γ, s, h', k, hs, hoff, hh', hsupp, e⟩ := _root_.GlobalTheory.RankReps.exists_rep_split_levJ D ρ hρ i j b h hh
+  obtain ⟨n, hn, hk⟩ := _root_.GlobalTheory.BaseCmp.levLamRoot D _ _ (ρ.B i j b) _ k
   refine ⟨s, h', (ρ.B i j b).act ((γ⁻¹ : GQ (Vc D j)) : GA D (Vc D j)), _, ⟨n, hn, by rw [inv_pow, hk, inv_one]⟩, fun P => ?_,
     fun P hP => ⟨hs, hoff, hh', hsupp, ?_⟩⟩
   · rw [← GlobalTheory.BaseClassSum.series_triv, GlobalTheory.BaseClassSum.series_move hB (D.sp.V_sig _) hg ha (hρ.weil i j b _ hg) hh hh' γ k e,

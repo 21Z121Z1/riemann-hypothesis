@@ -1,10 +1,10 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.ExpSeriesContDiffAndHasDerivAt
-public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.CharSeriesExistsNeZero
-public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.SummableGaussianCoset
-public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.ExistsPosMulNormSqLe
+public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.Bundle0003
+public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.Bundle0001
+public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.Bundle0005
+public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.Bundle0002
 
 @[expose] public section
 

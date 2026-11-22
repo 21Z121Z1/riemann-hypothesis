@@ -1,12 +1,12 @@
 module
 
-public import Formalism.SizeWindowBrackets.SlopesHypothesisFinitePlaces
+public import Formalism.SizeWindowBrackets.Bundle0003
 public import Formalism.HarderNarasimhan.HarderNarasimhanProofs.DiscreteSpanOfLinIndep
 public import Formalism.HarderNarasimhan.HarderNarasimhanProofs.SizeMu
 public import Formalism.HarderNarasimhan.HarderNarasimhanProofs.HtGram
-public import Formalism.HarderNarasimhan.HarderNarasimhanProofs.MuChar
+public import Formalism.HarderNarasimhan.HarderNarasimhanProofs.Bundle0004
 public import Formalism.HarderNarasimhan.HarderNarasimhanProofs.DualPl
-public import Formalism.SizeWindowBrackets.RealSlopeBoundsSplit
+public import Formalism.SizeWindowBrackets.Bundle0001
 public import Mathlib.Tactic.Linarith
 public import Mathlib.Tactic.FieldSimp
 public import Mathlib.Tactic.NormNum

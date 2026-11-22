@@ -1,6 +1,6 @@
 module
 
-public import Formalism.LocalToGlobal.ProjectiveLattices.BetaAddRight
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0019
 
 @[expose] public section
 

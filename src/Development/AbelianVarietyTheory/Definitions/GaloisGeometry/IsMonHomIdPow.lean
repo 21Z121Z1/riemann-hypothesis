@@ -1,16 +1,16 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Divisors.Subsingleton
-public import Development.AbelianVarietyTheory.Definitions.Divisors.ToRepFam
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0045
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0009
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.IsGrpPullback
 public import Development.AbelianVarietyTheory.Definitions.Divisors.HasDivPlace
 public import Development.AbelianVarietyTheory.Definitions.Divisors.ToSpanSingletonConstGenInjective
 public import Development.AbelianVarietyTheory.Definitions.Divisors.ToBaseChangePtsBijective
 public import Development.AbelianVarietyTheory.Definitions.Divisors.TorsionTowersOfDivisibleGroup
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ForgetIsHeckeOne
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EtModelForgetFiniteEtale
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LevelPosOfCoprime
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle3151
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle3150
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0390
 
 @[expose] public section
 

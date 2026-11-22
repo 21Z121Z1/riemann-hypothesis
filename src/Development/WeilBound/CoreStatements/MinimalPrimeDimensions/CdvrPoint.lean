@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.NvalLeOfMul
+public import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.Bundle0034
 
 @[expose] public section
 

@@ -1,15 +1,15 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.IsQuasiFam
-public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.RealSizeNonneg
-public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.UnifModGrowthOfIsUnifModerate
+public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.Bundle0008
+public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.Bundle0009
+public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.Bundle0007
 public import Formalism.LocalToGlobal.IndefiniteReal.OrthogonalComplementCharacterisation
 public import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.ExistsHeightLeTwoMulQuotHeight
 public import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.WittDecompSymplInclIsotropicInclAnisotropic
-public import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.TransvectionAction
-public import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.WeilDatumExistence
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.AdelicMatrixSchwartzMajorantMeasurableRationalShStatement
+public import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.Bundle0019
+public import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.Bundle0007
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0099
 public import Formalism.LocalToGlobal.IndefiniteReal.LevelTypeEquivalence.InfFam
 
 @[expose] public section
@@ -136,7 +136,7 @@ theorem maj_integrable : ∀ (D : D7) (θ : InfFam D), IsInfFam θ → ∀ (m n 
   classical
   set d := Fintype.card D.what₂.Tau * (m * n) with hd
   refine ⟨2 * d + 2, fun K hK => ?_⟩
-  obtain ⟨hcl, hcont, hmeas, hcpt⟩ := (GlobalTheory.T.adelicMatrixSchwartzMajorant_measurable_rationalShift D θ hθ).1 m n K hK
+  obtain ⟨hcl, hcont, hmeas, hcpt⟩ := (_root_.GlobalTheory.Unf.maj_measurable_rat D θ hθ).1 m n K hK
   haveI : BorelSpace (Mx D m n) := ⟨rfl⟩
   set M : ℝ := realSize θ a + 2 * d with hM
   set Q := {x : Mx D m n | InBox K x ∧ realSize θ x ≤ M} with hQdef

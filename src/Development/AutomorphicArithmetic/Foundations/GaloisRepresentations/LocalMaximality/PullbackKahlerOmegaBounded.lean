@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.LocalMaximality.ResidueOfTraceIsFiberSum
-public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.OmMul
+public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0048
 
 @[expose] public section
 

@@ -1,19 +1,25 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsMinAt
-public import Development.AbelianVarietyTheory.Definitions.Divisors.MinSt5OfMinSt4
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsTautologicalChartAtSiegelBlowupPointStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TautologicalChartCentreIsCompletedEtaleLocalMapStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ChartSeparationDataDefinedOverCentreFieldStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsRegularLocalRingAndIsRelParam
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SmoothOfRelativeDimensionOfIsEtaleCompletion
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FiniteTypeCycAway
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsNormalProjectiveModel
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.SmoothProjectiveStalkFactorial
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0062
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0064
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle3137
+public import Development.AbelianVarietyTheory.Definitions.Divisors.GalRigidOfSurjective
+public import Development.AbelianVarietyTheory.Definitions.Divisors.IsThetaCompact
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle3097
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0061
+public import Development.AbelianVarietyTheory.Definitions.Divisors.IsProperToroidalModelStructureMap
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ChartSeparationDataDefinedOverCentreField
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0063
+public import ReciprocityTheory.AnalyticForms.RegularLocalRings.Bundle0001
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2375
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1358
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2014
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0991
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0576
 public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.SpanFinrankMaximalIdealLeNcardOfLeSupSq
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsSurjectiveOfIsCplAt
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.FirstCohomology.DimSplitPf
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0058
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.FirstCohomology.Bundle0003
 
 @[expose] public section
 
@@ -166,10 +172,10 @@ theorem smoothOfRelativeDimension_blowup : ∀ g : ℕ, 1 ≤ g → ∀ φ : Inv
     rw [← Scheme.Hom.smoothLocus_eq_top_iff, ← top_le_iff]
     rintro x -
     obtain ⟨C, G₁, _, y, α₁, ξ, hfam, hy, rfl⟩ :=
-      GlobalTheory.T.exists_tautological_chart_at_siegel_blowup_point g hg φ hφ hns n hn hodd F Z z i OZ d S π j BD hmin hblow x
+      _root_.GlobalTheory.TChart.exists_chart_at g hg φ hφ hns n hn hodd F Z z i OZ d S π j BD hmin hblow x
     have : IsCommMonObj G₁ := hfam.1.comm
     obtain ⟨het, -⟩ :=
-      GlobalTheory.T.tautologicalChart_centre_isCompletedEtaleLocalMap GlobalTheory.T.chartSeparation_data_defined_over_centre_field g hg φ hφ hns n hn hodd F Z z i OZ d S π j BD hmin hblow C G₁ y α₁ ξ hfam hy
+      _root_.GlobalTheory.TChartEt.isEtaleCompletion_tautChart _root_.GlobalTheory.Poinc.Sep.sepSt g hg φ hφ hns n hn hodd F Z z i OZ d S π j BD hmin hblow C G₁ y α₁ ξ hfam hy
     obtain ⟨-, -, hinj, -, -, hreg⟩ := TChart.Taut.isRegularLocalRing_and_isRelParam g n φ hn C
     have hξ : ξ ≫ π ≫ z = spMap C.b := by
       have h1 : jK C.R ≫ ξ ≫ π ≫ z = jK C.R ≫ spMap C.b := by

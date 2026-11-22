@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.ExistsEqMulAddOfIsAdicComplete
+public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0006
 
 @[expose] public section
 

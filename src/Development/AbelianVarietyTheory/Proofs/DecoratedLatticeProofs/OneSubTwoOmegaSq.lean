@@ -2,16 +2,15 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.EndOmega
-public import Formalism.LocalToGlobal.TorsionIntegrality.EisensteinTranslationProducts.TranslateProduct
-public import Formalism.LocalToGlobal.TorsionIntegrality.TorsionTranslationPowers.StatementC
-public import Formalism.LocalToGlobal.TorsionIntegrality.GaussSumParity.StatementK
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.CmMultiplierIntegralSeriesAtInertPrimeProofStatement
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.HeightTwoFormalGroupUnramifiedMultiplierStatement
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.FormalGroupHeightLeTwoGoodReductionStatement
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.IsIntegralHondaLogarithmPairShortWeierstrassStatement
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.MaxUnramifiedResidueAlgClosedAndFrobeniusLiftStatement
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ExistsHomotheticPeriodPairLatticeStatement
-public import Formalism.LocalToGlobal.TorsionIntegrality.WeierstrassTwoTorsion.CubeThreeR
+public import Formalism.LocalToGlobal.TorsionIntegrality.EisensteinTranslationProducts.Bundle0002
+public import Formalism.LocalToGlobal.TorsionIntegrality.TorsionTranslationPowers.Bundle0002
+public import Formalism.LocalToGlobal.TorsionIntegrality.GaussSumParity.Bundle0001
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0070
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0047
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0063
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0045
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0048
+public import Formalism.LocalToGlobal.TorsionIntegrality.WeierstrassTwoTorsion.Bundle0006
 public import Formalism.LocalToGlobal.TorsionIntegrality.WeierstrassTwoTorsion.ChordEquation
 public import Formalism.LocalToGlobal.TorsionIntegrality.GaussSumParity.KurComplete
 public import Formalism.LocalToGlobal.TorsionIntegrality.GaussSumParity.FinalOfNRDense
@@ -86,7 +85,7 @@ theorem cm3 : CM3 := by
   haveI : CompleteSpace (MaximalUnramifiedExtension l) := Formalism.L2.Th1.D.kurComplete l
   have hl2 : 2 < l := by omega
   obtain ⟨σ, hσ, -⟩ := Formalism.L2.Th1.D.kurFrob l hl2
-  obtain ⟨hRes, hUnr⟩ := GlobalTheory.T.maxUnramified_residueAlgClosed_and_frobeniusLift l hl2
+  obtain ⟨hRes, hUnr⟩ := _root_.GlobalTheory.Honda.kur_resAlg_unr l hl2
   have hU := hUnr σ hσ
   set φ : MaximalUnramifiedExtension l →+* ℂ_[l] := (MaximalUnramifiedExtension l).subtype with hφ
   have hnφ : ∀ x : MaximalUnramifiedExtension l, ‖φ x‖ = ‖x‖ := fun x => rfl
@@ -137,13 +136,13 @@ theorem cm3 : CM3 := by
     rw [Formalism.L2.Th1.C.mulBy, Formalism.L2.Th1.C.mulBy, map_subst_of φ e _ (hCf a), hme, map_mul, map_C, hmf]
   have hCoef : CoefLe 1 (Formalism.L2.Th1.C.mulBy f e w) := by
     intro n
-    have := GlobalTheory.T.cmMultiplierIntegralSeriesAtInertPrime_proof d L hd hCM l hl5 hld hinert ι g2 g3 hG' n
+    have := _root_.GlobalTheory.Honda.endOmega_holds d L hd hCM l hl5 hld hinert ι g2 g3 hG' n
     rw [← hnφ, ← coeff_map, hmapMul]
     exact this
 
   have hht : ∃ n, n ≤ l ^ 2 ∧ ‖coeff n (Formalism.L2.Th1.C.mulBy f e (l : MaximalUnramifiedExtension l))‖ = 1 := by
     have hc : ι.symm lam ≠ 0 := by simpa using hlam0
-    obtain ⟨L', -, hL2, hL3, -, -⟩ := GlobalTheory.T.exists_homothetic_periodPair_lattice L (ι.symm lam) hc
+    obtain ⟨L', -, hL2, hL3, -, -⟩ := _root_.GlobalTheory.homotheticLattice L (ι.symm lam) hc
     have e2 : ι L'.g₂ = g2 := by rw [hL2, map_mul, map_pow, RingEquiv.apply_symm_apply, hg2]
     have e3 : ι L'.g₃ = g3 := by rw [hL3, map_mul, map_pow, RingEquiv.apply_symm_apply, hg3]
     obtain ⟨n, hn, h1⟩ := GlobalTheory.T.formalGroup_height_le_two_good_reduction L' l hl5 ι (by rw [e2]; exact hg2n) (by rw [e3]; exact hg3n)
@@ -152,7 +151,7 @@ theorem cm3 : CM3 := by
     rw [← hnφ, ← coeff_map, hmapMul, map_natCast]
     rw [e2, e3, ← Formalism.L2.Th1.A.uSerEq ℂ_[l] g2 g3] at h1
     exact h1
-  obtain ⟨ε, hε1, hεC⟩ := GlobalTheory.T.heightTwo_formalGroup_unramified_multiplier (MaximalUnramifiedExtension l) l σ hU hRes f e hInt w hCoef hσσ hnorm hht
+  obtain ⟨ε, hε1, hεC⟩ := _root_.GlobalTheory.Honda.heightTwo_unitTwist (MaximalUnramifiedExtension l) l σ hU hRes f e hInt w hCoef hσσ hnorm hht
   refine ⟨φ ε, ε.2, hε1, fun n => ?_⟩
   have hs0 : constantCoeff (C ε * ltLog (MaximalUnramifiedExtension l) l) = 0 := by
     rw [map_mul, constantCoeff_ltLog l (by omega), mul_zero]

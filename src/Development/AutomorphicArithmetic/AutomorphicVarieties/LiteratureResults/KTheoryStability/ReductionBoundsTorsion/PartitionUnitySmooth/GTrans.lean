@@ -1,8 +1,7 @@
 module
 
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.LiteratureResults.KTheoryStability.ReductionBoundsTorsion.PartitionUnitySmooth.Smoothing
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.HermiteNormalForms.RealVec
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.HermiteNormalForms.Realsurj
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.HermiteNormalForms.Bundle0003
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.HermiteNormalForms.Grampd
 
 @[expose] public section

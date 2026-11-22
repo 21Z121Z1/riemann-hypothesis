@@ -1,6 +1,6 @@
 module
 
-public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.FormalDegree.HaarMirror
+public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.FormalDegree.Bundle0013
 
 @[expose] public section
 

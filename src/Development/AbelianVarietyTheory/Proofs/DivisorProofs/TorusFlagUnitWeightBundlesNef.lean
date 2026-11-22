@@ -1,14 +1,14 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EqLastAddGaps
-public import Development.AbelianVarietyTheory.Definitions.Divisors.CuspIso
-public import Development.AbelianVarietyTheory.Definitions.Divisors.WellChosen
-public import Development.AbelianVarietyTheory.Definitions.Divisors.P22
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DetLineTrivialOfToroidal
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EigFrameMatch
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FlagChartFramesEigenFramesLocalRing
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FlagSpaceComponentSmoothProjectiveConnected
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1664
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0053
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0041
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0058
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2585
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1902
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2082
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2365
 
 @[expose] public section
 

@@ -1,12 +1,12 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.CoherentCohomologyProofs.SigmaSplitSymmInl
+public import Development.AbelianVarietyTheory.Proofs.CoherentCohomologyProofs.Bundle0005
 public import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsRootSelectionUnitaryRankOne
-public import Development.AbelianVarietyTheory.Definitions.Divisors.MapInclKMemTwCentResOne
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TwistedNormProductIterateTwistedConj
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SigIterateApply
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SigResIterateEqSelf
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0030
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0899
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0864
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0932
 
 @[expose] public section
 

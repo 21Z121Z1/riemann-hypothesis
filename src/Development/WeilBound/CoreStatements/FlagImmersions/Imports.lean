@@ -1,9 +1,9 @@
 module
 
 public import Development.WeilBound.CoreStatements.FlagImmersions.Transport
-public import Development.WeilBound.CoreStatements.VolumeEquality.BaseUnifRiem
-public import Development.AutomorphicSpectrum.Proofs.MetricProofs.IsometryPreservesHermitianAndAction
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.FamilyPeriodRiemannLattice
+public import Development.WeilBound.CoreStatements.VolumeEquality.Bundle0002
+public import Development.AutomorphicSpectrum.Proofs.MetricProofs.Bundle0029
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0203
 
 @[expose] public section
 

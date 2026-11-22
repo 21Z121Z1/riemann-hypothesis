@@ -1,11 +1,11 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.RegularSemisimpleFibres.FrobeniusLocalPairs.MatchSmulAlt
-public import Development.AutomorphicArithmetic.Foundations.Convolution.TraceSplitting.NormCharSplitAlt
-public import Development.AutomorphicArithmetic.Foundations.Convolution.TraceSplitting.Places
-public import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.RegularSemisimpleFibres.PowerMatchingTraces.NormTriv
-public import GroundTheory.GlobalFields.NormResidueSymbol.FunctorialFinite
+public import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.RegularSemisimpleFibres.FrobeniusLocalPairs.Bundle0004
+public import Development.AutomorphicArithmetic.Foundations.Convolution.TraceSplitting.Bundle0007
+public import Development.AutomorphicArithmetic.Foundations.Convolution.TraceSplitting.Bundle0002
+public import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.RegularSemisimpleFibres.PowerMatchingTraces.Bundle0001
+public import GroundTheory.GlobalFields.NormResidueSymbol.Bundle0002
 
 @[expose] public section
 

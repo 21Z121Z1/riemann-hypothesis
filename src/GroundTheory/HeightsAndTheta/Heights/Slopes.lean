@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import GroundTheory.HeightsAndTheta.Heights.HeightsOfSets.DegreeTopEqArithDegree
+public import GroundTheory.HeightsAndTheta.Heights.HeightsOfSets.Bundle0004
 public import GroundTheory.HeightsAndTheta.Heights.HeightsOfSets.FiniteSupportHeight
 public import GroundTheory.HeightsAndTheta.Heights.LatticeLemmas.StatementsBundles
 

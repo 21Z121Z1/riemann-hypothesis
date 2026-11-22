@@ -1,8 +1,8 @@
 module
 
-public import Development.WeilBound.ThetaLifts.EigenvalueEndgame.CuspidalAverages.ExistsCond
+public import Development.WeilBound.ThetaLifts.EigenvalueEndgame.CuspidalAverages.Bundle0001
 public import Development.WeilBound.ThetaLifts.EigenvalueEndgame.TowerCodimensionTwo
-public import Development.WeilBound.ThetaLifts.CartanFactorisation.ExistsBeta
+public import Development.WeilBound.ThetaLifts.CartanFactorisation.Bundle0004
 public import Development.WeilBound.CoreStatements.LocallyConstantCoinvariants.PfDict
 
 @[expose] public section

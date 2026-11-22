@@ -1,12 +1,12 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Divisors.SiegelWeilAnisotropicHermitian
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0044
 public import Development.AbelianVarietyTheory.Definitions.Divisors.CTSmallCone
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WordAppend
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AppSmul
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ArchimedeanDecayOperatorApplyMemAdelicSchwartz
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdelicSchwartzMemL2
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1319
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1321
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1322
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1445
 
 @[expose] public section
 

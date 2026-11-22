@@ -1,12 +1,12 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.BorelParam
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.MeasureRealDoubleCosetEqRelIndexConjMulStatement
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IsOpenIsCompactTwoBlockParahoricSubgroupStatement
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.RelIndexTwoBlockParahoricConjTorusDiagElementStatement
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.RelIndexConjUniformizerPowerDiagonalGLReindexStatement
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.PairwiseDisjointParahoricTorusDoubleCosetAntitonStatement
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0042
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0052
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0050
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0114
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0055
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0054
 
 @[expose] public section
 
@@ -27,10 +27,10 @@ theorem vol_dcell_and_disjoint : ∀ (k : Type) [Field k] [ValuativeRel k] [Topo
   Pairwise (Function.onFun Disjoint fun e : {e : Fin (l * t) → ℤ // Antitone e} =>
     (dcell ϖ (e.1 ∘ (blkEquiv l t).symm) : Set (GL (Fin r ⊕ Blocks l t) k))) := by
   intro k _ _ _ _ ϖ hϖ r l t _ _ m _ hm _ _ μK _ hμK
-  refine ⟨fun e => ?_, GlobalTheory.T.pairwise_disjoint_parahoricTorusDoubleCoset_antitone k ϖ hϖ r l t⟩
-  obtain ⟨ho, hc⟩ := GlobalTheory.T.isOpen_isCompact_twoBlockParahoricSubgroup k (Fin r) (Blocks l t)
-  have h1 := GlobalTheory.T.measureReal_doubleCoset_eq_relIndex_conj_mul m _ ho hc (mtor (A := Fin r) ϖ (e ∘ (blkEquiv l t).symm))
-  have h2 := GlobalTheory.T.measureReal_doubleCoset_eq_relIndex_conj_mul μK (KO k (Fin (l * t))) SplitFlip.isOpen_KO SplitFlip.isCompact_KO (torusElt k _ ϖ e)
+  refine ⟨fun e => ?_, _root_.GlobalTheory.CellDisjoint.dcell_pairwise_disjoint k ϖ hϖ r l t⟩
+  obtain ⟨ho, hc⟩ := _root_.GlobalTheory.ParahoricOpenCompact.isOpen_isCompact_parahoric k (Fin r) (Blocks l t)
+  have h1 := _root_.GlobalTheory.measureReal_doubleCoset_eq_relIndex_mul m _ ho hc (mtor (A := Fin r) ϖ (e ∘ (blkEquiv l t).symm))
+  have h2 := _root_.GlobalTheory.measureReal_doubleCoset_eq_relIndex_mul μK (KO k (Fin (l * t))) SplitFlip.isOpen_KO SplitFlip.isCompact_KO (torusElt k _ ϖ e)
   have hs : sumAbs (e ∘ (blkEquiv l t).symm) = sumAbs e := by
     unfold sumAbs; exact Equiv.sum_comp (blkEquiv l t).symm (fun i => |e i|)
   have hm1 : m.real (parahoric k (Fin r) (Blocks l t) : Set _) = 1 := by simp [Measure.real, hm]

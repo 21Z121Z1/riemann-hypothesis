@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import GroundTheory.GlobalFields.ComplexMultiplication.EllipticFunctions
+public import GroundTheory.GlobalFields.ComplexMultiplication.Bundle0001
 public import GroundTheory.GlobalFields.ComplexMultiplication.EllipticRational
 public import GroundTheory.GlobalFields.ComplexMultiplication.EllipticDegree
 public import GroundTheory.GlobalFields.ComplexMultiplication.Uniformization

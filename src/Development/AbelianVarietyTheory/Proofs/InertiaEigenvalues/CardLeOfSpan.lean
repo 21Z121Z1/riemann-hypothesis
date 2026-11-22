@@ -1,10 +1,10 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.JSmul
+public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0009
 public import Formalism.LocalRingCardinality.AdicCompletionLocal.LocTied
 public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.EqTopOfSpanImage
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.InclWFrobIter
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0184
 
 @[expose] public section
 

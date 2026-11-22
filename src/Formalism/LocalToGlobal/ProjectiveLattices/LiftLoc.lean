@@ -1,7 +1,7 @@
 module
 
 public import Formalism.LocalToGlobal.ProjectiveLattices.LiftCurveSt
-public import Formalism.LocalToGlobal.ProjectiveLattices.SecPtRed
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0030
 
 @[expose] public section
 

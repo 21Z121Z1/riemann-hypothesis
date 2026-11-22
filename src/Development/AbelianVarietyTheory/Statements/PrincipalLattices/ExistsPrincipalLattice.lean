@@ -2,9 +2,9 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.CMLattices.ExistsIsThetaDegOfIsLocalModel
-public import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.PrincipalRootReZeroImSq
+public import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.Bundle0019
 public import Development.AbelianVarietyTheory.Proofs.ToricGeometry.ExistsEquivOfSumEq
-public import Development.AbelianVarietyTheory.Statements.PrincipalLattices.EqZeroOfOppositeSign
+public import Development.AbelianVarietyTheory.Statements.PrincipalLattices.Bundle0001
 public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.TwoMulEqOfIsTypeFn
 public import Development.AbelianVarietyTheory.Definitions.ArchimedeanThetaValues.IsCoprimeTwoSubRtTwoAddRt
 

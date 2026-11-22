@@ -1,7 +1,7 @@
 module
 
 public import Formalism.HermitianCurvature.StatementWd
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.PositionInsertionDiagonalCompat
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0018
 public import Formalism.YangianSpanCharacter.YangianRelationFirst
 
 @[expose] public section

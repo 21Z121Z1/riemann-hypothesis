@@ -1,11 +1,11 @@
 module
 
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.PublishedTheorems.CuspSemisimpleReal
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.PublishedTheorems.RepNewform
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.PublishedTheorems.Bundle0001
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.RTwist
 public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsHasCentChar
-public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.CasimirScalarOfCapelliDeterminantEigenvalue
-public import Formalism.RealPlaceAnalysis.ThirdArithmeticHolds
+public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0046
+public import Formalism.RealPlaceAnalysis.Bundle0004
 
 @[expose] public section
 

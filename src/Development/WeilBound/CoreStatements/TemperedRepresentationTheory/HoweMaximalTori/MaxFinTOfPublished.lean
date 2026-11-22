@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.PolReOf2T
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0705
 
 @[expose] public section
 

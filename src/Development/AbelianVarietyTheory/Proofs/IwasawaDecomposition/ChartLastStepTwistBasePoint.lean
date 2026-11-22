@@ -2,23 +2,21 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.StdLvPr
-public import Formalism.LocalToGlobal.HermitianForms.TiedTwJSym
+public import Formalism.LocalToGlobal.HermitianForms.Bundle0006
 public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.NeZeroTop
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.TrueColumnSpacesStandardInFrameCoords
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.PlaceProjectionZeroIntegralIffComponentsAboveStatement
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsAdelicPointDecoratedLatticeAllTwistsStatement
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.MemFramedLevelIffTwoAdelicPointsStatement
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.LevelFrameCharacterMulMovedPointStatement
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsUnitaryAdelicTwistDiagonalAtPrimesStatement
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.LevelCharacterAtQFiniteOrderAndTrivialStatement
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.TwistPrimesAwayLevelAndTypePrimesStatement
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.LastStepTwistLevelContainsPrincipalCongruenceStatement
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.TrueColumnMemberLevelReadAtBasePointStatement
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.LastStepTupleGroupClassesCoordinatesStatement
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsPtOfMulK1StandardStatement
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.PointOverXHasAdelicPointBlockExtendMulStatement
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsLevelFamilyCharacterExponentStatement
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsFramedChartFromAdelicDictionaryStatement
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0297
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0384
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0379
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0375
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0406
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0401
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0388
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0389
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0392
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0409
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0394
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0387
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0417
 
 @[expose] public section
 
@@ -83,7 +81,7 @@ theorem topChi_facts (_hc : CMData F E) (n : ℕ) (Q : Finset (HeightOneSpectrum
     (hΘ : ∀ (P : Q) (g : ↥(GLint E n P.1)), lqPrinc P.1 (N P) (g : Sp E n ≃ₗ[E] Sp E n) → ∃ h : g ∈ (Θ P).H, (Θ P).lam ⟨g, h⟩ = 1) :
     ((∀ P : Q, ∃ m : ℕ, 0 < m ∧ ∀ g, (Θ P).lam g ^ m = 1) → ∃ m : ℕ, 0 < m ∧ ∀ x, topChi σ U t Θ d hd N hdN hΘ x ^ m = 1) ∧
       ∀ x : topU U t Θ d, (∀ P : Q, rhoP F P.1 x.1 = 1) → topChi σ U t Θ d hd N hdN hΘ x = 1 :=
-  GlobalTheory.T.levelCharacterAtQ_finite_order_and_trivial F E K n Q σ U t Θ d hd N hdN hΘ
+  _root_.GlobalTheory.Mem.Col2.TopCh.topChi_finite_order_and_trivial F E K n Q σ U t Θ d hd N hdN hΘ
 
 end Chi
 
@@ -201,7 +199,7 @@ theorem root_top (hle : U0 ≤ UAd B.sp.cm (B.R.N B.R.m)) (Uc : Subgroup (GA B (
     (hchi : ∀ (x : Uc) (x' : U0) (x'' : topU U0 t ((I.Tp a).levQ B.R.m) (I.dTop a)), x.1 = x'.1 → x.1 = x''.1 →
       chi x = chi0 x' * topChi B.embLL U0 t ((I.Tp a).levQ B.R.m) (I.dTop a) (I.dTop_ne a) N hdN hΘ x'') :
     ∃ n : ℕ, 0 < n ∧ ∀ κ, chi κ ^ n = 1 := by
-  obtain ⟨m1, hm1, e1⟩ := GlobalTheory.T.exists_levelFamily_character_exponent ((I.Tp a).levG B.R.m)
+  obtain ⟨m1, hm1, e1⟩ := _root_.GlobalTheory.Mem.Col2.TopCh.levFam_chr_exp ((I.Tp a).levG B.R.m)
   obtain ⟨m2, hm2, e2⟩ := (topChi_facts B.sp.cm (B.R.N B.R.m) (I.Q a) B.embLL U0 t ((I.Tp a).levQ B.R.m) _ (I.dTop_ne a) N hdN hΘ).1
     (fun P => topLevAt_root I.Ch I.sel (I.tup a) I.Ps _ B.R.m P)
   refine ⟨m1 * m2, Nat.mul_pos hm1 hm2, fun κ => ?_⟩
@@ -228,13 +226,13 @@ theorem chart_twm : ∀ {B : Base} {X : PreX B.toPre} (I : TC B X), I.Ok → TC.
   intro B X I hOk hPins l Z u a Q K hQ hk
   obtain ⟨k, hk⟩ := hk
   classical
-  obtain ⟨hQ0, hf'⟩ := GlobalTheory.T.twistPrimes_away_level_and_type_primes I hOk
+  obtain ⟨hQ0, hf'⟩ := _root_.GlobalTheory.Mem.Col2.TwistPrimes.twist_primes_away I hOk
   have hf := hf' u a
   obtain ⟨hU, hχ, hLb⟩ := GlobalTheory.T.trueColumn_member_level_read_at_base_point I hOk hPins l Z u a K k hk
   have hgram := ((spaces_in_coordinates I hOk hPins l Z).2.2.2 B.R.m le_rfl).1
   have hcrd := (((spaces_in_coordinates I hOk hPins l Z).2.2.2 B.R.m le_rfl).2.2 u a).1
-  obtain ⟨N, hdN, hΘ⟩ := GlobalTheory.T.lastStep_twist_level_contains_principal_congruence I a
-  obtain ⟨t, ht, htP, htw⟩ := GlobalTheory.T.exists_unitaryAdelic_twist_diagonal_at_primes B.host.F B.host.E B.sp.cm (B.R.N B.R.m) ((B.primes X).vT u) (B.primes X).vGs (I.Q a) (fun P hP => (hf P hP).1) (X.piT u)
+  obtain ⟨N, hdN, hΘ⟩ := _root_.GlobalTheory.Mem.Col2.TC.levQ_top_princ I a
+  obtain ⟨t, ht, htP, htw⟩ := _root_.GlobalTheory.Mem.Col2.TwUnit.exists_tw B.host.F B.host.E B.sp.cm (B.R.N B.R.m) ((B.primes X).vT u) (B.primes X).vGs (I.Q a) (fun P hP => (hf P hP).1) (X.piT u)
     (fun P hP => (hf P hP).2.1)
   have hkstd := hk.k_std ()
   have hkU : k () ∈ UAd B.sp.cm (B.R.N B.R.m) := by
@@ -250,7 +248,7 @@ theorem chart_twm : ∀ {B : Base} {X : PreX B.toPre} (I : TC B X), I.Ok → TC.
     have := TwTop.localComponent_congr (F := B.host.F) P.1 (v := P.1.under (𝓞 B.host.F)) rfl (x := k ()) (x' := 1) (by
       rw [hoff _ (hf P.1 P.2).2.2, map_one])
     rw [this, map_one]
-  choose g hg using fun c : (I.stp u a B.R.m).Cl => GlobalTheory.T.exists_adelicPoint_decoratedLattice_allTwists I hOk u (B.R.N B.R.m) (extTo I.SQ ((I.stp u a B.R.m).rep c).1.1)
+  choose g hg using fun c : (I.stp u a B.R.m).Cl => _root_.GlobalTheory.Mem.Col2.PtTwist.exists_ptOf_twists I hOk u (B.R.N B.R.m) (extTo I.SQ ((I.stp u a B.R.m).rep c).1.1)
   have hdisj : Disjoint (B.primes X).vGs (I.Q a) := Finset.disjoint_right.2 fun P hP => (hf P hP).1.2.1
   let y : (I.stp u a B.R.m).Cl → GA B (B.R.N B.R.m) := fun c => g c * (k () * t)⁻¹
   have hy : ∀ c, y c * (k () * t) = g c := fun c => inv_mul_cancel_right _ _
@@ -320,7 +318,7 @@ theorem chart_twm : ∀ {B : Base} {X : PreX B.toPre} (I : TC B X), I.Ok → TC.
     exact hkT P r j hr
   refine ⟨fun _ => ⟨C.lev, C.y, C.y_bij, C.y_lat, C.stabI, C.stabI_inj, C.stabI_range⟩, ⟨fun _ => k () * t, ?_, fun _ d g₁ g₂ hd he => GlobalTheory.T.pointOverX_has_adelicPoint_blockExtend_mul I hOk hPins l Z u a (k ()) t hkstd hoff hkT ht htP d g₁ g₂ hd he⟩, ?_, fun v hv => h3 v hv, ?_, ?_⟩
   · exact reads_top I u a N hdN hΘ K.lev.U K.lev.chi (k ()) t hkU hkQ ht hU hχ C.lev.Lb C.lev.U C.lev.chi (fun c => (C.y ⟨c, rfl⟩).1)
-      (fun c s => (C.stabI ⟨c, rfl⟩ s).1) hlb (GlobalTheory.T.exists_ptOf_mul_K1_standard _ _ _ (k ()) t ht hkstd) hoff' hT' (fun c => by rw [hy5, hy]; exact hg c) (fun c => by rw [hy5]; exact hpt c)
+      (fun c s => (C.stabI ⟨c, rfl⟩ s).1) hlb (_root_.GlobalTheory.Mem.Col2.TopCh.KStd.exists_ptOf_mul_K1 _ _ _ (k ()) t ht hkstd) hoff' hT' (fun c => by rw [hy5, hy]; exact hg c) (fun c => by rw [hy5]; exact hpt c)
       h2 h4 (fun c s => h6 ⟨c, rfl⟩ s)
   · intro c d g₁ g₂ hrep hd he
     have hp := GlobalTheory.T.pointOverX_has_adelicPoint_blockExtend_mul I hOk hPins l Z u a (k ()) t hkstd hoff hkT ht htP d g₁ g₂ hd he

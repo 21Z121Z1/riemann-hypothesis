@@ -3,7 +3,7 @@ module
 public import Mathlib
 public import Formalism.HermitianCurvature.StatementPB
 public import Formalism.SharpRestriction.CuspSpanNormBounds.RelevantZeroGramTerms
-public import Formalism.LocalRingCardinality.DataParamsS
+public import Formalism.LocalRingCardinality.Bundle0002
 
 @[expose] public section
 

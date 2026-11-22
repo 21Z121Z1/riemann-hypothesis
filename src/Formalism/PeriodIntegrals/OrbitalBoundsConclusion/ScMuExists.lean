@@ -1,9 +1,8 @@
 module
 
 public import Mathlib
-public import Formalism.PeriodIntegrals.ScMuExists
-public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.MeasureDecomposition.TargetOfInstDecomp
-public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.MeasureDecomposition.InstAll
+public import Formalism.PeriodIntegrals.Bundle0020
+public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.MeasureDecomposition.Bundle0006
 
 @[expose] public section
 

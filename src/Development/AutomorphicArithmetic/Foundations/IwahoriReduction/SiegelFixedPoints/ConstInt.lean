@@ -1,16 +1,17 @@
 module
 
 public import Development.AutomorphicArithmetic.Foundations.IwahoriReduction.SiegelFixedPoints.IsThBIff
-public import Development.AutomorphicArithmetic.Foundations.IwahoriReduction.SiegelFixedPoints.IsAdmissibleSmoothingFactorAddIntVector
+public import Development.AutomorphicArithmetic.Foundations.IwahoriReduction.SiegelFixedPoints.Bundle0002
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.EisensteinModularTowers.NormalModularTowerTop
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.EisensteinModularTowers.AlgEquivMemRingOfIntegersModularTowerTop
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.EisensteinModularTowers.MemRingOfIntegersModularTowerTopOfForallValuatio
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.EisensteinModularTowers.Bundle0001
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.EisensteinModularTowers.ExistsIsLocallyConstantLiftToGeometricGalois
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.EisensteinModularTowers.ValuationSiegelUnitLevelEqOne
 public import Development.AbelianVarietyTheory.Definitions.Foundations.IsLamOfLSmulIff
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.EdgeClassEqKummerCharacterOfChosenRootFunctionFiStatement
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.KummerCupProductCoboundaryTheoremStatement
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.FiniteDimensionalLevStatement
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0326
+public import Mathlib
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0184
+public import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0001
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0186
 
 @[expose] public section
 
@@ -118,7 +119,7 @@ private theorem topexOf [IsAlgClosure ℚ Ω] (X : Tower Ω ε) {M l n : ℕ} (h
     rw [hβ, IsScalarTower.algebraMap_apply (topF X M) (topL X M) (topBar X M)]; rfl
   have hx := topChar_apply X hl hd hu hu0
   have hy := topChar_apply X hl hd hv hv0
-  obtain ⟨-, -, -, -, η₀, hlc, hcob, hin⟩ := GlobalTheory.T.kummerCupProduct_coboundary_theorem Ω (topL X M) (topBar X M) (l ^ n) (topZeta X M l n) hN hζ a b _ _ ha0 hb0
+  obtain ⟨-, -, -, -, η₀, hlc, hcob, hin⟩ := _root_.GlobalTheory.KummerCob.thmA Ω (topL X M) (topBar X M) (l ^ n) (topZeta X M l n) hN hζ a b _ _ ha0 hb0
     hai hai' hbi hbi' hα hβ
   obtain ⟨η, hηlc, hηe⟩ := UpperTheory.exists_isLocallyConstant_lift_to_geometric_galois (F := topF X M) η₀ hlc
   have hex : ∃ η, IsTopEta X M (topChar X M l n u) (topChar X M l n v) η := by

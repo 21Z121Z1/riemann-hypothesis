@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import ReciprocityTheory.DualLattices.VEqZeroOfPowEqOne
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.WeightedSumBounds.NsmulCoprimeBijectiveCurves
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.WeightedSumBounds.PtBasisMapGood
+public import ReciprocityTheory.DualLattices.Bundle0003
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.WeightedSumBounds.Bundle0003
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.WeightedSumBounds.Bundle0004
 
 @[expose] public section
 

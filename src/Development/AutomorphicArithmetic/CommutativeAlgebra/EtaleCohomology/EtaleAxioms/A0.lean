@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.EtaleCohomology.EtaleSheaves.AwSpec
+public import Development.EtaleCohomology.EtaleSheaves.Bundle0081
 
 @[expose] public section
 

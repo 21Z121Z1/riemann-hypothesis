@@ -3,11 +3,11 @@ module
 public import Mathlib
 public import ReciprocityTheory.ReductiveGroups.TraceFormulas.LatDefs
 public import Formalism.GaloisCohomology.LocalTateDualityK
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SpanOfLocalCohomologyShape
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.DualLatFiniteFree
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FinIsoDualLatticeOfLocalTateDualityStatement
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IntegralLocalDualityOfLocalTateDualityStatement
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.InvIsoOfLocalTateDualityStatement
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0210
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0164
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0213
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0343
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0451
 
 @[expose] public section
 

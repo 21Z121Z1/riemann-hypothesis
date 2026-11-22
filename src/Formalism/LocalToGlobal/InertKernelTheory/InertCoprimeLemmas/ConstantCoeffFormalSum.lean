@@ -1,11 +1,11 @@
 module
 
-public import Formalism.LocalToGlobal.InertKernelTheory.FirstKernelGeneratorOfOrthogonal
+public import Formalism.LocalToGlobal.InertKernelTheory.Bundle0006
 public import Formalism.GL3MeanSquares.HookFormulaTorsion.ExpSeries
 public import Formalism.LocalToGlobal.TorsionIntegrality.UniformGaussModels.OneLetterGaussSharpTranslateHolds
-public import Formalism.ThetaLogCoordinates.UniformThetaSubstitution.FinalS
+public import Formalism.ThetaLogCoordinates.UniformThetaSubstitution.Bundle0002
 public import Formalism.ThetaLogCoordinates.UniformThetaSubstitution.FrobeniusLiftNorms.LogarithmEquivalence
-public import Formalism.LocalToGlobal.TorsionIntegrality.GaussSumParity.BiextensionHypothesesOfLevelOne
+public import Formalism.LocalToGlobal.TorsionIntegrality.GaussSumParity.Bundle0003
 
 @[expose] public section
 

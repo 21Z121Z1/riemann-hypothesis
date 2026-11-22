@@ -4,7 +4,7 @@ public import Formalism.LocalToGlobal.TorsionIntegrality.FrobeniusFibreCurves.Lo
 public import Formalism.LocalToGlobal.TorsionIntegrality.FrobeniusFibreCurves.LogarithmicSubstitution.CoeffTwoPSeries
 public import Formalism.LocalToGlobal.TorsionIntegrality.FrobeniusFibreCurves.LogarithmicSubstitution.NotInKernelOfMultiplierTorsion
 public import Formalism.LocalToGlobal.TorsionIntegrality.FrobeniusFibreCurves.LogarithmicSubstitution.LatticePointInKernelSubgroup
-public import Formalism.LocalToGlobal.TorsionIntegrality.FrobeniusFibreCurves.StatementL
+public import Formalism.LocalToGlobal.TorsionIntegrality.FrobeniusFibreCurves.Bundle0003
 
 @[expose] public section
 

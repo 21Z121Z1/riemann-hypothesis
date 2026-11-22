@@ -1,10 +1,10 @@
 module
 
 public import Development.WeilBound.CoreStatements.ProjectiveValuations.DifferentiableAtOfLines
-public import Development.WeilBound.CoreStatements.ProjectiveValuations.ExistsFrBorOfMatches
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsHolomorphicArcSmoothAlgebraNonvanishing
-public import Development.AbelianVarietyTheory.Proofs.GenericRegularity.ExistsChartLieBasisMatrices
-public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.IsReducedIsNormalSchemeIsLocallyNoetherianOfSmoo
+public import Development.WeilBound.CoreStatements.ProjectiveValuations.Bundle0002
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0505
+public import Development.AbelianVarietyTheory.Proofs.GenericRegularity.Bundle0012
+public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0023
 
 @[expose] public section
 

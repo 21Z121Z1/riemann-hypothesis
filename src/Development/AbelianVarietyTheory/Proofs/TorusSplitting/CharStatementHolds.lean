@@ -1,12 +1,11 @@
 module
 
 public import Mathlib
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.SquareIntegrability.SplitSt
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.SquareIntegrability.GaussianTailBound
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.SquareIntegrability.Bundle0005
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.SquareIntegrability.Bundle0001
 public import Development.AbelianVarietyTheory.Proofs.TorusSplitting.CmCharactersOfNearestPlaneOfShortIntegersStatement
-public import Development.AbelianVarietyTheory.Proofs.TorusSplitting.NearestPlaneRounding
-public import Development.AbelianVarietyTheory.Proofs.TorusSplitting.ExistsShortIntegersSpan
-public import Development.AbelianVarietyTheory.Proofs.TorusSplitting.ExistsShortIntegralRationalBasis
+public import Development.AbelianVarietyTheory.Proofs.TorusSplitting.Bundle0001
+public import Development.AbelianVarietyTheory.Proofs.TorusSplitting.Bundle0002
 
 @[expose] public section
 

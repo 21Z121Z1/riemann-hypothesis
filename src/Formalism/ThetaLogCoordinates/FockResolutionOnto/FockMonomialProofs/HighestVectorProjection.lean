@@ -1,6 +1,6 @@
 module
 
-public import Formalism.ThetaLogCoordinates.FockResolutionOnto.StatementC
+public import Formalism.ThetaLogCoordinates.FockResolutionOnto.Bundle0001
 public import Formalism.ThetaLogCoordinates.FockResolutionOnto.FockMonomialProofs.ResInto
 
 @[expose] public section

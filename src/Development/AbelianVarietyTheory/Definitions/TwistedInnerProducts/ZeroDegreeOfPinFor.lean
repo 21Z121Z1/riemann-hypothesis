@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.HeckePin
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsFamilyIffRationalHecke
-public import Development.AbelianVarietyTheory.Statements.HeckeThetaIntegrals.ExistsIsHeckeSetting
+public import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.Bundle0003
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0158
+public import Development.AbelianVarietyTheory.Statements.HeckeThetaIntegrals.Bundle0001
 
 @[expose] public section
 

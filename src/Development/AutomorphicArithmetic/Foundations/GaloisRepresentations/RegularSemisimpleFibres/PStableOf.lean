@@ -1,7 +1,7 @@
 module
 
 public import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.RegularSemisimpleFibres.ResEmbCompat
-public import Development.AutomorphicArithmetic.Foundations.Convolution.SphericalIdeles.WeakStableAlt
+public import Development.AutomorphicArithmetic.Foundations.Convolution.SphericalIdeles.Bundle0005
 public import Development.AutomorphicArithmetic.Foundations.Convolution.Cbcc
 
 @[expose] public section

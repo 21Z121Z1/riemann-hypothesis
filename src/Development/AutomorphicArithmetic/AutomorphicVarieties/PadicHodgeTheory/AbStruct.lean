@@ -3,7 +3,7 @@ module
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.PadicHodgeTheory.LocalPublishedTheorems
 public import GroundTheory.LocalFields.PrincipalUnitsRank
 public import GroundTheory.LocalFields.MainTheorem
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.PadicHodgeTheory.LocalClassFieldTheoryOfOpenEmbedding
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.PadicHodgeTheory.Bundle0016
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.PadicHodgeTheory.LocalFieldUnitsStructureTheorem
 
 @[expose] public section

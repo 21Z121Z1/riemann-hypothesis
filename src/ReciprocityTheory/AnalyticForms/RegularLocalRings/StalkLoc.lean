@@ -2,9 +2,9 @@ module
 
 public import Mathlib
 public import ReciprocityTheory.AnalyticForms.RegularLocalRings.JacChart
-public import ReciprocityTheory.AnalyticForms.RegularLocalRings.FinalTheorems
-public import ReciprocityTheory.AnalyticForms.RegularLocalRings.StalkLocA
-public import ReciprocityTheory.AnalyticForms.RegularLocalRings.StalkLocB
+public import ReciprocityTheory.AnalyticForms.RegularLocalRings.Bundle0001
+public import ReciprocityTheory.AnalyticForms.RegularLocalRings.Bundle0005
+public import ReciprocityTheory.AnalyticForms.RegularLocalRings.Bundle0006
 
 @[expose] public section
 

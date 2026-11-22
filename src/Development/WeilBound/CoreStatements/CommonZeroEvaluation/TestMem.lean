@@ -1,10 +1,10 @@
 module
 
 public import Mathlib
-public import Formalism.LocalToGlobal.ProjectiveLattices.GenSpecDesc
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PullbackSections.FrMapComp
-public import Development.AbelianVarietyTheory.Proofs.GenericRegularity.FrameBorelGroupoidProperties
-public import Development.AbelianVarietyTheory.Proofs.GenericRegularity.EvaluationLawsGenericFramesAtlasHold
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0045
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PullbackSections.Bundle0009
+public import Development.AbelianVarietyTheory.Proofs.GenericRegularity.Bundle0020
+public import Development.AbelianVarietyTheory.Proofs.GenericRegularity.Bundle0029
 
 @[expose] public section
 

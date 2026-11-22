@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Formalism.FockGram.StatementHerm
+public import Formalism.FockGram.Bundle0001
 
 @[expose] public section
 

@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.MeanXMulStarRat
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.RationalSymplecticPointsSelfAnnihilator
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0230
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0247
 
 @[expose] public section
 

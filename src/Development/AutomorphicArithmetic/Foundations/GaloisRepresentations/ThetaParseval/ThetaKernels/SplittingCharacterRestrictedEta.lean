@@ -1,8 +1,10 @@
 module
 
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WeilDatumDoubledTargetSiegelRuleStatement
+public import Mathlib
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2227
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1402
 public import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.ThetaParseval.HalfIndexLattices.SplitStab
-public import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.ThetaParseval.HalfIndexLattices.IsLatRepL
+public import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.ThetaParseval.HalfIndexLattices.Bundle0001
 public import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.ThetaParseval.ThetaKernels.SiegelRuleDblTargetK
 
 @[expose] public section

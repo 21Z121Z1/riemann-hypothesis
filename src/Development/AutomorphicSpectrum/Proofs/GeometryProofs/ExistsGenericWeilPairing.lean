@@ -2,13 +2,12 @@ module
 
 public import Mathlib
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.GlobalSectionsRankAlgClosed
-public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.GenWeil
-public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.GlueApplyOfNotInFibre
-public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsHTFormOver
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.Bundle0007
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.Bundle0005
 public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.WeilIsGrpPullbackOfCommute
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.FirstCohomology.ThetaMove
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.PullCub
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.WeilPairingBaseChangeUnitStatement
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.WeilPairingBaseChangeUnit
 
 @[expose] public section
 
@@ -220,11 +219,11 @@ theorem genWeil_of_obj : Out.WeilSt → ∀ (E : Type) [Field E] [NumberField E]
       rw [hjj, spMap_comp_of, Category.assoc]
     obtain ⟨cM, -, hcM⟩ := exk M (j.comp i) (extPt (ξ₀ ≫ f) (j.comp i) ≫ x) (extPt (ξ₀ ≫ f) (j.comp i) ≫ g)
       (tors _ x hx) (tors _ g hg)
-    have e1 := GlobalTheory.T.weil_pairing_base_change_unit t.G t.PP.L hL k M j _ _ hq n xk gk (extPt (ξ₀ ≫ f) (j.comp i) ≫ x)
+    have e1 := _root_.GlobalTheory.CompanionTheory.Ar.weilIs_fieldExt t.G t.PP.L hL k M j _ _ hq n xk gk (extPt (ξ₀ ≫ f) (j.comp i) ≫ x)
       (extPt (ξ₀ ≫ f) (j.comp i) ≫ g)
       (show spMap (j.comp i) ≫ x.left = spMap j ≫ xk.left by rw [hxk, spMap_comp_of, Category.assoc])
       (show spMap (j.comp i) ≫ g.left = spMap j ≫ gk.left by rw [hgk, spMap_comp_of, Category.assoc]) c cM hc hcM
-    have e2 := GlobalTheory.T.weil_pairing_base_change_unit t.G t.PP.L hL K M j' _ _ hq' n (extPt (ξ₀ ≫ f) iK ≫ x) (extPt (ξ₀ ≫ f) iK ≫ g)
+    have e2 := _root_.GlobalTheory.CompanionTheory.Ar.weilIs_fieldExt t.G t.PP.L hL K M j' _ _ hq' n (extPt (ξ₀ ≫ f) iK ≫ x) (extPt (ξ₀ ≫ f) iK ≫ g)
       (extPt (ξ₀ ≫ f) (j.comp i) ≫ x) (extPt (ξ₀ ≫ f) (j.comp i) ≫ g)
       (show spMap (j.comp i) ≫ x.left = spMap j' ≫ (spMap iK ≫ x.left) by
         rw [hjj, spMap_comp_of, Category.assoc])

@@ -1,8 +1,8 @@
 module
 
-public import Formalism.LocalToGlobal.ProjectiveLattices.CoreProofs
-public import Formalism.LocalToGlobal.ProjectiveLattices.IntAll
-public import Formalism.LocalToGlobal.ProjectiveLattices.ExistsOfValILeOne
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0011
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0022
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0003
 
 @[expose] public section
 

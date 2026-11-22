@@ -1,6 +1,6 @@
 module
 
-public import Formalism.LocalToGlobal.AlgebraicTheory.StatementD
+public import Formalism.LocalToGlobal.AlgebraicTheory.Bundle0001
 public import Formalism.LocalToGlobal.KernelLattices.ThDistC
 
 @[expose] public section

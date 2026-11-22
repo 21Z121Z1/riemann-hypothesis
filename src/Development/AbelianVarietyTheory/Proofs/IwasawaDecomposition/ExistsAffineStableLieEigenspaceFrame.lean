@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.TriIff
-public import Formalism.LocalToGlobal.ProjectiveLattices.MulCMemSec
-public import Formalism.LocalToGlobal.ProjectiveLattices.AllTest
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0500
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0021
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0010
 public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsStalkFactor
 public import Development.AbelianVarietyTheory.Proofs.GenericRegularity.ExistsAffineLieBasisBaseChange
 

@@ -1,11 +1,11 @@
 module
 
-public import Formalism.SharpRestriction.ElevenLe
-public import Formalism.LocalRingCardinality.KernelPlaceMeanBound
+public import Formalism.SharpRestriction.Bundle0001
+public import Formalism.LocalRingCardinality.Bundle0006
 public import Formalism.LocalRingCardinality.DataParams
 public import Formalism.SharpRestriction.ParConsts
 public import Formalism.SharpRestriction.ParamsHeightRankConstant
-public import Development.AutomorphicArithmetic.CyclotomicBounds.RamifiedDiscriminants.FourMulQLeCondN
+public import Development.AutomorphicArithmetic.CyclotomicBounds.RamifiedDiscriminants.Bundle0001
 
 @[expose] public section
 

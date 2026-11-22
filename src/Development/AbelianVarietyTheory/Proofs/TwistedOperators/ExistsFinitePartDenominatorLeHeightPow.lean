@@ -1,10 +1,10 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.DepthPays
+public import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.Bundle0006
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.QuotientHeightLowerBoundShortIsotropicVector
-public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.ExistsFinNormComparison
-public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.ExistsInfFamAndStdChar
+public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.Bundle0005
+public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.Bundle0050
 
 @[expose] public section
 

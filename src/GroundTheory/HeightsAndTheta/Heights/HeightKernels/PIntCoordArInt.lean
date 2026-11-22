@@ -1,9 +1,8 @@
 module
 
 public import Mathlib
-public import GroundTheory.HeightsAndTheta.Heights.HeightKernels.StatementsIntCoordArInt
-public import GroundTheory.HeightsAndTheta.Heights.HeightKernels.PDualTopBasisChange
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.InterSt
+public import GroundTheory.HeightsAndTheta.Heights.HeightKernels.Bundle0048
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.Bundle0006
 
 @[expose] public section
 

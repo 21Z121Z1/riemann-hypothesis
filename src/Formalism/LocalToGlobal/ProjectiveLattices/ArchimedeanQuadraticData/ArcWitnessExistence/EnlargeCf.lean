@@ -1,8 +1,8 @@
 module
 
-public import Formalism.LocalToGlobal.ProjectiveLattices.ArchimedeanQuadraticData.ArcLineFunctions.FunDef
-public import Formalism.LocalToGlobal.ProjectiveLattices.AxHSupA
-public import Formalism.LocalToGlobal.ProjectiveLattices.AllTest
+public import Formalism.LocalToGlobal.ProjectiveLattices.ArchimedeanQuadraticData.ArcLineFunctions.Bundle0001
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0038
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0010
 
 @[expose] public section
 

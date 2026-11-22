@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Formalism.LocalRingCardinality.DataNChTie
+public import Formalism.LocalRingCardinality.Bundle0002
 
 @[expose] public section
 

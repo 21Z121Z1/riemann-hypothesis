@@ -1,6 +1,6 @@
 module
 
-public import Formalism.SharpRestriction.GrowthBounds.BinomialPolynomialIdentities.PeBnOfLt
+public import Formalism.SharpRestriction.GrowthBounds.BinomialPolynomialIdentities.Bundle0002
 
 @[expose] public section
 

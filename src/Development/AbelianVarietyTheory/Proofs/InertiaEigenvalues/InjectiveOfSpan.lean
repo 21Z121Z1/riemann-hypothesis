@@ -3,8 +3,8 @@ module
 public import Mathlib
 public import Formalism.SharpRestriction.LevelLetterCocycles.DataNLoc
 public import Development.AbelianVarietyTheory.BlockTheory.NonGaloisCusps.DiagonalQuotientEigen
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CompletionLines
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsRescaleEigenSeriesZero
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0188
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0019
 
 @[expose] public section
 

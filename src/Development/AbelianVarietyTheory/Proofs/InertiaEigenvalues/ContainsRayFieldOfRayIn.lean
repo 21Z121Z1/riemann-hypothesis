@@ -3,22 +3,25 @@ module
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.UnivChar
 public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.ExistsUniqueHcharOfFiniteOrder
-public import Development.AbelianVarietyTheory.BlockTheory.NonGaloisCusps.TwistSeries
+public import Development.AbelianVarietyTheory.BlockTheory.NonGaloisCusps.Bundle0009
 public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsAuxiliarySquarefreeLevelTwistPlaces
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SeriesRay
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.MemSelfDualLatticeIffIntegralFrameMatricesHalf
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.LevelCoverFormsMulComponentFunctionStatement
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ThetaWeilTwist
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsTwistHeckeCharacter
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.TameHeckeCharTrivialOnFiniteUnitsCongOne
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ChangeOfSplittingPair
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsUnitaryAdelicCharOfHeckeChar
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.CharacterQuotientValuesInEmbeddingField
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsRayFieldEmbedding
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsComplexLinearExtensionCoefficientMap
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.InvPlaceNormProductMemCoefficientRing
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.PlaceInUnique
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsPlaceOfValuationRing
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0828
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0791
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0771
+public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0020
+public import Development.AbelianVarietyTheory.Definitions.HeightFunctions.XiValIffXiAt
+public import Development.AbelianVarietyTheory.Definitions.ExistenceOfLattices.Bundle0001
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0804
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0736
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0299
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0684
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0074
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0348
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0735
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0920
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0813
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0739
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0071
 
 @[expose] public section
 
@@ -210,7 +213,7 @@ theorem intForms_fibre (hRF : GlobalTheory.NT.RayField) (hT : LawsJ T) (hU : C.I
   have h3 : 3 ≤ C.d.l₂.M := C.d.l₂.three_le
   rw [← hM] at hray hQ
   obtain ⟨l1, l2, l3⟩ := delQ_det_laws hu (T.V ((j : ℕ) + 1) T.σ₀) C.d.l₂.odd hQ
-  have key := (GlobalTheory.T.levelCover_forms_mul_componentFunction D T hT _ (inR j) T.σ₀ T.toCore.good_σ₀ C hU C.d.l₂.M (by omega) dvd_rfl
+  have key := (_root_.GlobalTheory.CoverComp.forms_mul_comp D T hT _ (inR j) T.σ₀ T.toCore.good_σ₀ C hU C.d.l₂.M (by omega) dvd_rfl
     (Or.inr (GlobalTheory.TwistRat.Field.curveOver_of_rayIn hRF D T.Q hT.pins.1 _ h3 _ C.σ₂ hray))
     (fun g => if Multiplicative.toAdd (detChar _ (u.delQ Q) g) = a then 1 else 0)
     (fun g g' e => by rw [l1 g g' e]) (fun γ hγ g => by rw [l2 γ hγ g]) (fun k _ hk g => by rw [l3 k hk g])

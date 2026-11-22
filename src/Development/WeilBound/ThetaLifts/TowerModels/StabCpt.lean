@@ -1,6 +1,6 @@
 module
 
-public import Development.WeilBound.ThetaLifts.TowerModels.ExistsHaarOfIsCompact
+public import Development.WeilBound.ThetaLifts.TowerModels.Bundle0002
 public import Development.WeilBound.ThetaLifts.TowerModels.LeviAd
 
 @[expose] public section

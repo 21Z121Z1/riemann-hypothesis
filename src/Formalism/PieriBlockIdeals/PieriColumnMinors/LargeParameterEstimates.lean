@@ -1,6 +1,6 @@
 module
 
-public import Formalism.PieriBlockIdeals.TailInequalityEventually
+public import Formalism.PieriBlockIdeals.Bundle0007
 public import Formalism.PieriBlockIdeals.PieriColumnMinors.ParameterBounds
 public import Formalism.PieriBlockIdeals.PieriColumnMinors.CorollaryOfParamsSevenLinkage
 

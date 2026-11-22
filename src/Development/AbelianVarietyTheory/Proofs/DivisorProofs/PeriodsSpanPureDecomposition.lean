@@ -1,12 +1,12 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsIsGHeckeMapForget
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0062
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsGenericHeckeMap
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsHeckeTranslateHarrisTaylorPullbackBase
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GenModelEqGenericFibreStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsHeckeMapFiniteEtaleSurjectiveStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HarrisTaylorIntegralModelNonemptyStatement
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0747
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle3142
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle3151
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle3149
 public import Development.AbelianVarietyTheory.Proofs.HomogeneousIdeals.IsIsoIffBijectiveOverAlgClosed
 
 @[expose] public section

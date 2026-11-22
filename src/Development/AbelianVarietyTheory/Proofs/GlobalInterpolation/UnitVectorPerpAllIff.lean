@@ -3,8 +3,7 @@ module
 public import Mathlib
 public import Formalism.LocalRingCardinality.RhoDetPrimeEqMuTildeMulChiPow
 public import Formalism.HermitianLattices.StatementLat
-public import Development.AbelianVarietyTheory.BlockTheory.GlobalSignature.UnitVectorOrthogonal
-public import Development.AbelianVarietyTheory.BlockTheory.GlobalSignature.SelfDualLatticeComplements
+public import Development.AbelianVarietyTheory.BlockTheory.GlobalSignature.Bundle0005
 
 @[expose] public section
 

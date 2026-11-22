@@ -5,7 +5,7 @@ public import ReciprocityTheory.CommutativeAlgebra.PolynomialHeights.HeightAddRi
 public import ReciprocityTheory.CommutativeAlgebra.ChainConnInDim
 public import ReciprocityTheory.CommutativeAlgebra.CohenMacaulay.RingKrullDimQuotientOfMemAssociatedPrimes
 public import ReciprocityTheory.CommutativeAlgebra.CohenMacaulay.LocDim
-public import ReciprocityTheory.CommutativeAlgebra.CohenMacaulay.Bridge
+public import ReciprocityTheory.CommutativeAlgebra.CohenMacaulay.Bundle0002
 public import ReciprocityTheory.CommutativeAlgebra.SaturatedChains.DimFormulaOfSurjective
 
 @[expose] public section

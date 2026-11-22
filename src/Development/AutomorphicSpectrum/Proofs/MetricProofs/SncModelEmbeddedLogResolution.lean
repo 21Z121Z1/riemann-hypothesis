@@ -1,21 +1,20 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsSncModel
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.Bundle0008
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.BlowupProjections.BlowupProjStatement
 public import Development.AutomorphicSpectrum.Definitions.DivisibilityTowers.Proportional
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.InterAlgRes
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.InterPCProof
-public import ReciprocityTheory.AnalyticForms.RegularLocalRings.LocTransfer
-public import ReciprocityTheory.AnalyticForms.RegularLocalRings.Immersion
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.InterMinor
-public import Development.AutomorphicSpectrum.Proofs.MetricProofs.FiniteMinimalPrimes
-public import Development.AutomorphicSpectrum.Proofs.MetricProofs.SncResolutionCompactEmbeddedStatement
-public import Development.AutomorphicSpectrum.Proofs.MetricProofs.SncResolutionTransitionPolynomialStatement
-public import Development.AutomorphicSpectrum.Proofs.MetricProofs.SncResolutionCoverAndConeStatement
-public import Development.AutomorphicSpectrum.Proofs.MetricProofs.SncResolutionLocalChartPolynomialStatement
-public import Development.AutomorphicSpectrum.Proofs.MetricProofs.SncResolutionRegularLocalRingStatement
-public import Development.AutomorphicSpectrum.Proofs.MetricProofs.SncResolutionBoundaryNormalCrossingStatement
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.Bundle0018
+public import ReciprocityTheory.AnalyticForms.RegularLocalRings.Bundle0012
+public import ReciprocityTheory.AnalyticForms.RegularLocalRings.Bundle0010
+public import Development.AutomorphicSpectrum.Proofs.MetricProofs.Bundle0080
+public import Development.AutomorphicSpectrum.Proofs.MetricProofs.Bundle0097
+public import Development.AutomorphicSpectrum.Proofs.MetricProofs.Bundle0102
+public import Development.AutomorphicSpectrum.Proofs.MetricProofs.Bundle0092
+public import Development.AutomorphicSpectrum.Proofs.MetricProofs.Bundle0091
+public import Development.AutomorphicSpectrum.Proofs.MetricProofs.SncResolutionRegularLocalRing
+public import Development.AutomorphicSpectrum.Proofs.MetricProofs.Bundle0118
 
 @[expose] public section
 
@@ -172,8 +171,8 @@ theorem isEmbedded_of_isSncModel : ∀ (K : Type) [Fintype K] (ι : K → Type) 
   obtain ⟨himage, htrans⟩ := chart_image_and_trans K ι _ hPh
   obtain ⟨hcover, hliftmem, hcompat, hsurj, hinj, hzero⟩ := chart_lifts_package K ι _ _ hPh hDh
   have hinv := ChartInv.chart_coord_ratio K ι _ hPh
-  have hreg := GlobalTheory.T.snc_resolution_regular_local_ring K ι Ω y e J hP hsnc
-  have hsc := GlobalTheory.T.snc_resolution_boundary_normal_crossing K ι Ω y e J hP hJ hJP hsnc
+  have hreg := _root_.GlobalTheory.CompanionTheory.Ar.Cmp.SncRes.Reg.isRegularLocalRing_chart K ι Ω y e J hP hsnc
+  have hsc := _root_.GlobalTheory.CompanionTheory.Ar.Cmp.SncRes.Par.exists_sncData_of_isSncModel K ι Ω y e J hP hJ hJP hsnc
   let E := Fintype.equivFin ((k : K) → ι k)
   let R : ReciprocityTheory.AnForm.R.AlgRes (ι := ι) (pC (mCoordIdeal y)) (pC J) e :=
     { M := Pts (pC (mCoordIdeal y))

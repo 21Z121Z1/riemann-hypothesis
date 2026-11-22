@@ -2,9 +2,9 @@ module
 
 public import Mathlib
 public import Development.WeilBound.CoreStatements.AutomorphicKernels.EisensteinSeriesG2.HeisenbergTheta.HeisenbergThetaConstant.ThetaC
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.NormLeNormInfCModuleSectionMul
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0171
 public import GroundTheory.GlobalFields.TateThesis.TateThetaDecay
-public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.ImportsTailFurther
+public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0036
 
 @[expose] public section
 

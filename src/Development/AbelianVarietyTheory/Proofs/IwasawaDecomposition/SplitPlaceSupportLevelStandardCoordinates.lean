@@ -2,11 +2,11 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.NVNeZero
-public import Formalism.LocalToGlobal.Columns.MtHeckeSum
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.SplitHeckeElementLabelZerosThenNegOnes
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.LevelCharEqOneInertPrimeOffLevel
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.IsPrimeIdemOfInert
-public import Formalism.LocalToGlobal.Columns.RecLevelLocP
+public import Formalism.LocalToGlobal.Columns.Bundle0028
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0125
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0395
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0123
+public import Formalism.LocalToGlobal.Columns.Bundle0013
 public import Formalism.LocalToGlobal.Columns.DecoFin
 
 @[expose] public section

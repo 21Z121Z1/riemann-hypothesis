@@ -1,32 +1,27 @@
 module
 
 public import Formalism.GaussJetBounds.OneLetterGaussJets.OddLevelGainSum
-public import Formalism.GaussJetBounds.StatementA
+public import Formalism.GaussJetBounds.Bundle0001
 public import Formalism.GaussJetBounds.GaussJetProofs.CapacityLeReachCapacity
-public import Formalism.GaussJetBounds.GenLogInverse
-public import Formalism.GaussJetBounds.OneLetterRadius
-public import Formalism.GaussJetBounds.GaussJetProofs.AsmRDotAddRight
-public import Formalism.GaussJetBounds.GaussJetProofs.LemmaRA
-public import Formalism.GaussJetBounds.GaussJetProofs.NormNatCastEqPowPadicValNat
+public import Formalism.GaussJetBounds.Bundle0004
+public import Formalism.GaussJetBounds.GaussJetProofs.Bundle0002
+public import Formalism.GaussJetBounds.GaussJetProofs.Bundle0004
 public import Formalism.GaussJetBounds.GaussJetProofs.SubstitutionWeightBound
 public import Formalism.IncomingBounds.WeightIdentities
-public import Formalism.GaussJetBounds.StatementJ
+public import Formalism.GaussJetBounds.Bundle0002
 public import Formalism.GaussJetBounds.GaussJetProofs.TheoremAOneMonomialLogLoss
 public import Formalism.GaussJetBounds.GaussJetProofs.ThmAOp
 public import Formalism.GaussJetBounds.GaussJetProofs.ConstantCoeffAevalLinP
 public import Formalism.GaussJetBounds.StatementM
 public import Formalism.GaussJetBounds.GaussJetProofs.FrameA
 public import Formalism.GaussJetBounds.GaussJetProofs.Generic
-public import Formalism.GaussJetBounds.StatementS
-public import Formalism.GaussJetBounds.StatementU
 public import Formalism.GaussJetBounds.OneLetterGauss
 public import Formalism.GradedWeylDivisibility.FinalD
 public import Formalism.GaussJetBounds.GaussJetProofs.OrbMul
-public import Formalism.GaussJetBounds.StatementQ
-public import Formalism.GaussJetBounds.GaussJetProofs.ConstantCoeffQuadSer
-public import Formalism.GaussJetBounds.StatementN
+public import Formalism.GaussJetBounds.Bundle0003
+public import Formalism.GaussJetBounds.GaussJetProofs.Bundle0006
 public import Formalism.GaussJetBounds.MonoShapeTop
-public import Formalism.GaussJetBounds.GaussJetProofs.NormDetLeOneOfEntries
+public import Formalism.GaussJetBounds.GaussJetProofs.Bundle0001
 public import Formalism.GaussJetBounds.OneLetterGaussJets.OneLetterGaussProofs.CompanionTheory
 public import Formalism.GaussJetBounds.GaussJetProofs.OneGauss
 

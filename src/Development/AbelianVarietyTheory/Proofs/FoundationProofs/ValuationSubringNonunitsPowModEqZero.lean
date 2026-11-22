@@ -1,7 +1,7 @@
 module
 
-public import Development.AbelianVarietyTheory.Definitions.Foundations.ApplyEqOfMemAdjoin
-public import Development.AbelianVarietyTheory.Definitions.Foundations.IsTopWTopWOfExists
+public import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0010
+public import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0003
 
 @[expose] public section
 

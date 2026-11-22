@@ -1,15 +1,15 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.NStageTrivialCharacterCoeffEq
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.NcardPrimesOverOfStabilizer
+public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.Bundle0012
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0084
 public import Development.AbelianVarietyTheory.Proofs.HomogeneousIdeals.DedekindZetaEqSumRealEisenstein
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.NonemptyRingHomComplexOfLeContinuum
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0204
 public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsTameGenAtOfValuationSubring
 public import Formalism.FrobeniusOrbits.FrobeniusOrbitsProofs.SplitK
 public import Formalism.FrobeniusOrbits.FrobeniusOrbitsProofs.DiscrB
 public import Formalism.CyclotomicNorms.NonsquarefreeBounds.NonsquarefreeMonicBoundHolds
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsRingHomOfIsIntegral
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0224
 
 @[expose] public section
 

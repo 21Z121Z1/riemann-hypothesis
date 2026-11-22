@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.ExistsPointOfVal
+public import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.Bundle0033
 
 @[expose] public section
 

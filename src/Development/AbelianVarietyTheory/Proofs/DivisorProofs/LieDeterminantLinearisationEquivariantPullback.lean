@@ -1,11 +1,11 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TrvEqSelf
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TangentTransportEquivariantCartesianPreservesComStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EigenFrameTransportCartesianAutomorphismStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsCartierDivisorDominantPullbackWithClassStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsStalkMapIdentityModMaximalOfFixedPointStatement
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1989
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2038
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2053
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2001
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2012
 
 @[expose] public section
 
@@ -84,7 +84,7 @@ theorem ratLin_pull : ∀ (E : Type) [Field E] [NumberField E] [IsCMField E] (H 
   have hdom : ∀ γ, IsDominant (ρ' γ).asIso.hom := fun γ => by
     haveI : IsIso (ρ' γ).asIso.hom := Iso.isIso_hom (ρ' γ).asIso
     infer_instance
-  obtain ⟨D', hcls, hD'⟩ := GlobalTheory.T.exists_cartierDivisor_dominant_pullback_with_class (X₀ TF.Y Z) X' φ D
+  obtain ⟨D', hcls, hD'⟩ := _root_.GlobalTheory.Cartier.exists_pullback_cartierDiv (X₀ TF.Y Z) X' φ D
 
   have hη : genericFieldPoint X' ≫ φ ≫ (barComp TF.Y Z).ι = spMap (functionFieldMap φ) ≫
       ((show Sp (X₀ TF.Y Z).functionField ⟶ X₀ TF.Y Z from
@@ -106,7 +106,7 @@ theorem ratLin_pull : ∀ (E : Type) [Field E] [NumberField E] [IsCMField E] (H 
     rw [spMap_comp' _ (functionFieldMap (ρ' γ).asIso.hom), hch, ← Category.assoc (spMap _) (genericFieldPoint X'), e1,
       Category.assoc, hρ]
 
-  choose T hT using fun γ => GlobalTheory.T.eigenFrame_transport_cartesian_automorphism TF.Y (φ ≫ (barComp TF.Y Z).ι) G' ψ act' (ρ' γ).asIso (m γ) hG hact (hm γ)
+  choose T hT using fun γ => _root_.GlobalTheory.EqvTrans.trv_eigFrame TF.Y (φ ≫ (barComp TF.Y Z).ι) G' ψ act' (ρ' γ).asIso (m γ) hG hact (hm γ)
     (hmact γ) ((functionFieldMap φ).comp φ₀) (genericFieldPoint X') _ rfl f₀'
   have hSx : ∀ γ, (genericFieldPoint X' ≫ (ρ' γ).asIso.hom) ≫ φ ≫ (barComp TF.Y Z).ι =
       spMap (functionFieldMap (ρ' γ).asIso.hom) ≫ genericFieldPoint X' ≫ φ ≫ (barComp TF.Y Z).ι := by
@@ -195,7 +195,7 @@ theorem ratLin_pull : ∀ (E : Type) [Field E] [NumberField E] [IsCMField E] (H 
           (barComp TF.Y Z).ι) := by
       rw [hst, Category.assoc]
     obtain ⟨Fs, hFs⟩ := (F y).exists_isMap st hχst hxs
-    obtain ⟨Ft, hFt⟩ := GlobalTheory.T.eigenFrame_transport_cartesian_automorphism TF.Y (φ ≫ (barComp TF.Y Z).ι) G' ψ act' (ρ' γ).asIso (m γ) hG hact (hm γ) (hmact γ)
+    obtain ⟨Ft, hFt⟩ := _root_.GlobalTheory.EqvTrans.trv_eigFrame TF.Y (φ ≫ (barComp TF.Y Z).ι) G' ψ act' (ρ' γ).asIso (m γ) hG hact (hm γ) (hmact γ)
       ((φ.stalkMap x).hom.comp (φy x)) (X'.fromSpecStalk x) _ rfl (F x)
     refine ⟨Fs, Ft, hFs, hFt, ?_⟩
     have hxK2 : (genericFieldPoint X' ≫ (ρ' γ).asIso.hom) ≫ φ ≫ (barComp TF.Y Z).ι =
@@ -205,7 +205,7 @@ theorem ratLin_pull : ∀ (E : Type) [Field E] [NumberField E] [IsCMField E] (H 
       simp only [Category.assoc]
     obtain ⟨FsK, hFsK⟩ := Fs.exists_isMap (algebraMap (X'.presheaf.stalk x) X'.functionField) (hφK x) hxK2
     obtain ⟨FtK, hFtK⟩ := Ft.exists_isMap (algebraMap (X'.presheaf.stalk x) X'.functionField) (hφK x) hxK2
-    obtain ⟨TrK, hTrK⟩ := GlobalTheory.T.eigenFrame_transport_cartesian_automorphism TF.Y (φ ≫ (barComp TF.Y Z).ι) G' ψ act' (ρ' γ).asIso (m γ) hG hact (hm γ) (hmact γ)
+    obtain ⟨TrK, hTrK⟩ := _root_.GlobalTheory.EqvTrans.trv_eigFrame TF.Y (φ ≫ (barComp TF.Y Z).ι) G' ψ act' (ρ' γ).asIso (m γ) hG hact (hm γ) (hmact γ)
       ((functionFieldMap φ).comp φ₀) (genericFieldPoint X') _ rfl (FK x)
     have eT : FtK = TrK := frame_ext fun τ i => by
       rw [hFtK τ i, hFt τ i, hTrK τ i, hFK x τ i, ← trv_map hG.1 (m γ) _ _ ((F x).tan τ i).1]
@@ -222,7 +222,7 @@ theorem ratLin_pull : ∀ (E : Type) [Field E] [NumberField E] [IsCMField E] (H 
         ((FK y).co f₀' τ).map (functionFieldMap (ρ' γ).asIso.hom) * (S γ).co (T γ) τ := by
       intro τ
       have hTP : TrK.co (T γ) τ = (FK x).co f₀' τ := EigFrame.co_eq fun i => by
-        have := GlobalTheory.T.tangentTransport_equivariant_cartesian_preserves_comb TF.Y.t (φ ≫ (barComp TF.Y Z).ι) G' ψ (ρ' γ).asIso.hom (m γ) hG (hm γ)
+        have := _root_.GlobalTheory.EqvTrans.trv_comb TF.Y.t (φ ≫ (barComp TF.Y Z).ι) G' ψ (ρ' γ).asIso.hom (m γ) hG (hm γ)
           (genericFieldPoint X') ((FK x).v τ) _ (f₀'.v τ i) ((FK x).tan τ) (f₀'.tan τ i) ((FK x).co_spec f₀' τ i)
         rw [funext (hTrK τ), hT γ τ i]
         exact this
@@ -257,9 +257,9 @@ theorem ratLin_pull : ∀ (E : Type) [Field E] [NumberField E] [IsCMField E] (H 
       rw [hc]; simp only [Category.assoc]
     obtain ⟨F1, hF1⟩ := (S γ).exists_isMap (functionFieldMap (ρ' δ).asIso.hom) (hσ δ) hx1
     obtain ⟨F2, hF2⟩ := (T γ).exists_isMap (functionFieldMap (ρ' δ).asIso.hom) (hσ δ) hx1
-    obtain ⟨F3, hF3⟩ := GlobalTheory.T.eigenFrame_transport_cartesian_automorphism TF.Y (φ ≫ (barComp TF.Y Z).ι) G' ψ act' (ρ' γ).asIso (m γ) hG hact (hm γ) (hmact γ)
+    obtain ⟨F3, hF3⟩ := _root_.GlobalTheory.EqvTrans.trv_eigFrame TF.Y (φ ≫ (barComp TF.Y Z).ι) G' ψ act' (ρ' γ).asIso (m γ) hG hact (hm γ) (hmact γ)
       ((functionFieldMap φ).comp φ₀) (genericFieldPoint X' ≫ (ρ' δ).asIso.hom) _ hx3 (T δ)
-    obtain ⟨F4, hF4⟩ := GlobalTheory.T.eigenFrame_transport_cartesian_automorphism TF.Y (φ ≫ (barComp TF.Y Z).ι) G' ψ act' (ρ' γ).asIso (m γ) hG hact (hm γ) (hmact γ)
+    obtain ⟨F4, hF4⟩ := _root_.GlobalTheory.EqvTrans.trv_eigFrame TF.Y (φ ≫ (barComp TF.Y Z).ι) G' ψ act' (ρ' γ).asIso (m γ) hG hact (hm γ) (hmact γ)
       ((functionFieldMap φ).comp φ₀) (genericFieldPoint X' ≫ (ρ' δ).asIso.hom) _ hx3 (S δ)
     have hq : genericFieldPoint X' ≫ (ρ' δ).asIso.hom = spMap (functionFieldMap (ρ' δ).asIso.hom) ≫ genericFieldPoint X' :=
       (specMap_functionFieldMap _).symm
@@ -274,7 +274,7 @@ theorem ratLin_pull : ∀ (E : Type) [Field E] [NumberField E] [IsCMField E] (H 
         ((S γ).co (T γ) τ).map (functionFieldMap (ρ' δ).asIso.hom) * (S δ).co (T δ) τ := by
       intro τ
       have h34 : F4.co F3 τ = (S δ).co (T δ) τ := EigFrame.co_eq fun i => by
-        have := GlobalTheory.T.tangentTransport_equivariant_cartesian_preserves_comb TF.Y.t (φ ≫ (barComp TF.Y Z).ι) G' ψ (ρ' γ).asIso.hom (m γ) hG (hm γ)
+        have := _root_.GlobalTheory.EqvTrans.trv_comb TF.Y.t (φ ≫ (barComp TF.Y Z).ι) G' ψ (ρ' γ).asIso.hom (m γ) hG (hm γ)
           (genericFieldPoint X' ≫ (ρ' δ).asIso.hom) ((S δ).v τ) _ ((T δ).v τ i) ((S δ).tan τ) ((T δ).tan τ i)
           ((S δ).co_spec (T δ) τ i)
         rw [← hx3] at this
@@ -304,7 +304,7 @@ theorem ratLin_pull : ∀ (E : Type) [Field E] [NumberField E] [IsCMField E] (H 
     rw [hsplit, hr, Units.val_mul, Units.val_mul, mul_left_comm, mul_div_cancel_left₀ _ (Units.ne_zero _)]
     exact (unitAt_ffMap (ρ' γ).asIso.hom x hu).mul ⟨_, Units.isUnit _, rfl⟩
   · intro γ x g hfx hg
-    obtain ⟨st, hst, hres, hstK⟩ := GlobalTheory.T.exists_stalk_map_identity_mod_maximal_of_fixed_point X' (ρ' γ).asIso x hfx
+    obtain ⟨st, hst, hres, hstK⟩ := _root_.GlobalTheory.FixStalk.fixes_stalk X' (ρ' γ).asIso x hfx
     obtain ⟨Fs, Ft, hFs, hFt, hr⟩ := ratio γ x x st hst hstK
 
     have hdet1 : ∀ τ, IsLocalRing.residue (X'.presheaf.stalk x) (Fs.co Ft τ).det = 1 := by

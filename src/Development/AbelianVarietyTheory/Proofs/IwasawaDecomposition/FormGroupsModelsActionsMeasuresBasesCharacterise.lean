@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.EqCjOneSmul
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.BaseChangeEquivCrdOver
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0670
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0484
 public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ThetaLiftAtReferenceTupleOverEnlargedBase
 
 @[expose] public section

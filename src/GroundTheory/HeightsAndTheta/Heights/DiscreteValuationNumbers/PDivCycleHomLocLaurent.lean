@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.StatementsBlowUpFibreDegreeCut
+public import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.Bundle0049
 
 @[expose] public section
 

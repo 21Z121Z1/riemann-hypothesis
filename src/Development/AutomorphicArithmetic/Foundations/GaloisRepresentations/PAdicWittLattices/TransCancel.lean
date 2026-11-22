@@ -1,8 +1,8 @@
 module
 
-public import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.PAdicWittLattices.SplitsBasic
+public import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.PAdicWittLattices.Bundle0004
 public import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.IntegralStructures.GeometricFlagBases.IntegOfMem
-public import Development.AutomorphicArithmetic.CommutativeAlgebra.LevDefs
+public import Development.AutomorphicArithmetic.CommutativeAlgebra.Bundle0046
 
 @[expose] public section
 

@@ -1,7 +1,7 @@
 module
 
 public import Formalism.ZeroFreeRegion.SmallHeightLogDeriv
-public import Formalism.LFunctionBounds.LFunctionBoundsProofs.RectResidue
+public import Formalism.LFunctionBounds.LFunctionBoundsProofs.Bundle0001
 
 @[expose] public section
 

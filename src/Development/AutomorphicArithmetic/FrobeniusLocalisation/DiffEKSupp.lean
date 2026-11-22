@@ -1,9 +1,9 @@
 module
 
-public import Development.AutomorphicArithmetic.FrobeniusLocalisation.DiffDefs
-public import Development.AutomorphicArithmetic.FrobeniusLocalisation.DiffMult
-public import Development.AutomorphicArithmetic.FrobeniusLocalisation.MemRam
-public import Development.AutomorphicArithmetic.FrobeniusLocalisation.DiscrK
+public import Development.AutomorphicArithmetic.FrobeniusLocalisation.Bundle0001
+public import Development.AutomorphicArithmetic.FrobeniusLocalisation.Bundle0008
+public import Development.AutomorphicArithmetic.FrobeniusLocalisation.Bundle0006
+public import Development.AutomorphicArithmetic.FrobeniusLocalisation.Bundle0002
 public import Formalism.SharpRestriction.RamificationFrobenius.TotientGaloisClasses.InertiaGaloisSymmetry.KcDiff
 
 @[expose] public section

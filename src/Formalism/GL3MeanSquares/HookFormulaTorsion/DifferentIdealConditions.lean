@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Formalism.GL3MeanSquares.OrbitPointsDistinct
+public import Formalism.GL3MeanSquares.Bundle0004
 public import Formalism.FrobeniusOrbits.HostCorollaries
 public import Formalism.DirichletDensity.HostDensityArith
 

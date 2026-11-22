@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.TranslateMomentsAll
-public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.DetIdNormOneMul
-public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.ExistsPrimeUnder
+public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0085
+public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0088
+public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0102
 
 @[expose] public section
 

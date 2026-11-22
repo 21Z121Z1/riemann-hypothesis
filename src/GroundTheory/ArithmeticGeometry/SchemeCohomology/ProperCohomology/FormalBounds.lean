@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import GroundTheory.ArithmeticGeometry.SchemeCohomology.ProperCohomology.FormalCechSmul
-public import GroundTheory.ArithmeticGeometry.SchemeCohomology.ProperCohomology.FormalAlgebra
+public import GroundTheory.ArithmeticGeometry.SchemeCohomology.ProperCohomology.Bundle0001
 
 @[expose] public section
 

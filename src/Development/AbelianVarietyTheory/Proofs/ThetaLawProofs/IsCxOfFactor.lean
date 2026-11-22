@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.KeyFormula.DegProd
-public import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.ExistsIsUnitField
+public import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.Bundle0005
 
 @[expose] public section
 

@@ -3,7 +3,7 @@ module
 public import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.TypeConditions.Transported
 public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.DepthZeroLabelsOfLabelLaws
 public import GroundTheory.GlobalFields.SemilocalAlgebras.Finite
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.EqZeroOfForallLeExp
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0012
 
 @[expose] public section
 

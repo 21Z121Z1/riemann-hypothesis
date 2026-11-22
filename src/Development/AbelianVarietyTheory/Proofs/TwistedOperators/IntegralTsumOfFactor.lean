@@ -1,11 +1,11 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.RealLowestKTypeCoeffSquareIntegrable
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FormOfClassSums
+public import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.Bundle0002
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1032
 public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.AeZeroOfSmall
-public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.TotallyDefiniteMass
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.FockNormMinorProductDeltaAtEmbeddingPosStatement
+public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0132
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0159
 
 @[expose] public section
 
@@ -345,7 +345,7 @@ theorem scalar_of_data {F : Face D A} (hS : SourceLevelLawC R F) (hI : InnerProd
         ∀ x ∈ typePart R i σ t P ev, th (LinearMap.adjoint th x) =
           ((a i σ * Module.finrank ℂ c.W * Nat.card P.H * z : ℝ) : ℂ) • x := by
   choose δ hδ0 hδ using hδ
-  choose dl hdl0 hdl using GlobalTheory.T.fockNorm_minorProductDeltaAtEmbedding_pos D
+  choose dl hdl0 hdl using _root_.GlobalTheory.FockDelta.fock_deltaAtEmb_pos D
   have hN : ∀ i σ, 0 < ∏ ρ, ((dimK _ _ (kapAt (Wc D i) σ ρ) : ℚ) : ℝ) := fun i σ =>
     Finset.prod_pos fun ρ _ => by exact_mod_cast one_pos.trans_le (one_le_dimK i σ ρ)
   have hM : ∀ i, 0 < GlobalTheory.Mass.unitaryMass D.sp.cm.sig (Vc D i).gram (GlobalTheory.Mass.Levels.latStab (Vc D i)) := fun i =>

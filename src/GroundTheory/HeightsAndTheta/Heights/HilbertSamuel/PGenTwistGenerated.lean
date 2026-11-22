@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsAmpleOfGenTwist
+public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0034
 
 @[expose] public section
 

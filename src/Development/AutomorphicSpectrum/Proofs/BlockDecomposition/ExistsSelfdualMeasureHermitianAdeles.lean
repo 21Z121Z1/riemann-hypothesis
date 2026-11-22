@@ -1,10 +1,10 @@
 module
 
 public import Mathlib
-public import Formalism.UnipotentAdelicQuotients.SiegelWeilUnitaryConvergent
+public import Formalism.UnipotentAdelicQuotients.Bundle0003
 public import Development.AutomorphicSpectrum.Proofs.GlobalProofs.ExistsSelfDualForm
-public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.TensorLocallyCompactRing
-public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.TensorLocallyCompactRingStatement
+public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.Bundle0019
+public import CompanionTheory.SpectralGeometry.CountingDefinitions.AdelicEulerProducts.IsEulerProd
 
 @[expose] public section
 

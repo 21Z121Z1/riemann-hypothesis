@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Proofs.GlobalProofs.CTFrameMatMulGram
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LinearIndependentOfIsWittFrame
+public import Development.AutomorphicSpectrum.Proofs.GlobalProofs.Bundle0055
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0395
 
 @[expose] public section
 

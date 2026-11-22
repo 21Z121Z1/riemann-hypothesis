@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import GroundTheory.AutomorphicForms.FiniteLengthLattice
+public import GroundTheory.AutomorphicForms.Bundle0002
 public import GroundTheory.AutomorphicForms.JacquetAdmissible
 
 @[expose] public section

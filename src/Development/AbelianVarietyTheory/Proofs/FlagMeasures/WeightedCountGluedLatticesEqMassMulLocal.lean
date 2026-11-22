@@ -5,16 +5,16 @@ public import Formalism.LocalToGlobal.SiegelLatticeTheory.CokernelGLCounts.RankP
 public import Formalism.LocalToGlobal.SiegelLatticeTheory.CokernelGLCounts.DataInst
 public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.StabilizerVolume.InVolumesAtOfSWS
 public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.GlobSet
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsComplementUnitaryMulActionLocalInnerDatum
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.TsumTransversalEqTsumOrbitQuotientGeneral
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.RationalIsometryExtendsLocalIsometryStatement
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.UnitaryComplementMovesHermitianTermsStatement
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.TsumInvStabilizerEqTsumMulFiberStatement
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.GluedLatticesLocalDataUnimodularStatement
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.GlobalLatticesCountEqProdLocalCountsBadPlacesStatement
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.TsumRationalClassesEqProdLocalSumsStatement
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.IsometryFixingSpanPreservesGluedLatticesStatement
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.FiniteRationalStabiliserGluedLatticeLocalDataStatement
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0030
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0016
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0281
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0086
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0020
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0400
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0387
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0393
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0388
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.FiniteRationalStabiliserGluedLatticeLocalData
 
 @[expose] public section
 
@@ -77,7 +77,7 @@ theorem mem_isometriesFixingBothFrames_iff_unitriangular : ∀ (D : D7) {T T' : 
     exact ⟨hiso, bwd hG hG1, bwd hG' hG2⟩
 
 theorem glue_stable : ∀ (D : D7) (U : Submodule D.host.E (VS D).V) (M : Submodule (𝓞 D.host.E) (VS D).V), ∀ g ∈ Formalism.L2.SG.Pf.Cnt.isomFix (VS D).hT U, ∀ Λ ∈ Formalism.L2.SG.Pf.Cnt.GlueSet (VS D).hT U M, Formalism.HermitianLatticesTheory.gmap g Λ ∈ Formalism.L2.SG.Pf.Cnt.GlueSet (VS D).hT U M :=
-  GlobalTheory.T.isometryFixingSpan_preserves_gluedLattices
+  _root_.GlobalTheory.GlueStable.glueSet_gmap_mem
 
 theorem loc_ext : ∀ (D : D7) (Z : LocDat D) (FP : ∀ p : PlF D, LocNG.FPair (locH Z p) D.R.rS) (u u' : D.what₂.Word) (F : LFlag (D.sp.Y 0) D.R.rS (((D.mem u).A.T : ℕ) : D.host.E)) (F' : LFlag (D.sp.Y 0) D.R.rS (((D.mem u').A.T : ℕ) : D.host.E)), Based Z FP (Tu D u) (Tu D u') F F' → ∀ g ∈ H0 F F', ∀ p, ∃ g', GlobalTheory.Unfold.Ext p g g' ∧ GlobalTheory.InnerDatumAct.InU (FP p) g' ∧ ∀ g'', GlobalTheory.Unfold.Ext p g g'' → g'' = g' := by
   intro D Z FP u u' F F' hB g hg p
@@ -91,7 +91,7 @@ theorem loc_ext : ∀ (D : D7) (Z : LocDat D) (FP : ∀ p : PlF D, LocNG.FPair (
     rw [map_smul, hE, hg.2.2 b]
 
 theorem stab_finite : ∀ (D : D7) (Z : LocDat D) (FP : ∀ p : PlF D, LocNG.FPair (locH Z p) D.R.rS) (u u' : D.what₂.Word) (F G : LFlag (D.sp.Y 0) D.R.rS (((D.mem u).A.T : ℕ) : D.host.E)) (F' G' : LFlag (D.sp.Y 0) D.R.rS (((D.mem u').A.T : ℕ) : D.host.E)) (P : Finset (PlF D)) (d0 : Dat Z FP), 4 * D.R.rS + 7 ≤ D.R.k → BaseOK (Tu D u) (Tu D u') F F' P d0 → StdOff Z P F G F' G' → TotPos (Gval F F') → ∀ (Λ : LV D) (y : Dat Z FP), Λ ∈ Formalism.L2.SG.Pf.Cnt.GlueSet (VS D).hT (Formalism.L2.SG.Pf.Cnt.UPair D G.fl G') (Formalism.L2.SG.Pf.Cnt.MMof D G.fl G') → Λ ∈ globSet G G' y → (stabY F F' y).Finite :=
-  GlobalTheory.T.finite_rationalStabiliser_gluedLattice_localData
+  _root_.GlobalTheory.StabYFin.stabY_finite
 
 theorem rank_Vp' (D : D7) (p : PlF D) : Module.finrank (D.s.atP p).Ep (Vp D p) = D.R.k + 2 * D.R.rS + 1 := by
   rw [finrank_Vp]
@@ -219,7 +219,7 @@ theorem glue_count : ∀ (D : D7) (Z : LocDat D) (FP : ∀ p : PlF D, LocNG.FPai
     rw [hstabY]
     exact Subtype.val_injective.injOn.encard_image
 
-  have hGD := fun Λ => GlobalTheory.T.mem_gluedLattices_iff_existsUnique_localDatum D Z FP u u' F G F' G' P d0 hk hB hS Λ
+  have hGD := fun Λ => _root_.GlobalTheory.GlueDat.glued_data D Z FP u u' F G F' G' P d0 hk hB hS Λ
   let π : {Λ : LV D // Λ ∈ GS} → Dat Z FP := fun x => ((hGD x.1).1.1 x.2).choose
   have hπ : ∀ x : {Λ : LV D // Λ ∈ GS}, x.1 ∈ globSet G G' (π x) := fun x => ((hGD x.1).1.1 x.2).choose_spec
   have hπu : ∀ (x : {Λ : LV D // Λ ∈ GS}) (y : Dat Z FP), x.1 ∈ globSet G G' y → π x = y :=
@@ -297,7 +297,7 @@ theorem glue_count : ∀ (D : D7) (Z : LocDat D) (FP : ∀ p : PlF D, LocNG.FPai
     by_cases hc : (∀ p, p ∉ P → LocNG.Datum.Rel (d0 p) (y p)) ∧ {p | y p ≠ d0 p}.Finite
     · rw [if_pos hc, hstabYe]
       show _ = _ * _
-      rw [hfib, GlobalTheory.T.globalLattices_count_eq_prod_localCounts_badPlaces D Z FP u u' F G F' G' P d0 hk hB hS y hc.1 hc.2]
+      rw [hfib, _root_.GlobalTheory.GenMass.Fibre.fibre D Z FP u u' F G F' G' P d0 hk hB hS y hc.1 hc.2]
     · rw [if_neg hc]
       have hemp : π ⁻¹' {y} = ∅ := by
         ext x

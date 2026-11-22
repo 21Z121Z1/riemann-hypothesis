@@ -4,7 +4,7 @@ public import Formalism.AdmissibleDesigns.FiniteClassesContinuousLattice
 public import Formalism.AdmissibleDesigns.ExistsWildInertiaCyclotomicGenerator
 public import Formalism.AdmissibleDesigns.CoboundaryMemFiniteClasses
 public import Formalism.AdmissibleDesigns.FgTopContinuousLinearMap
-public import ReciprocityTheory.ReductiveGroups.TraceFormulas.GlobAlgGoodO
+public import ReciprocityTheory.ReductiveGroups.TraceFormulas.Bundle0001
 
 @[expose] public section
 

@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsIsClosedImmersionGenericPoint
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GoodCover
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0793
 
 @[expose] public section
 

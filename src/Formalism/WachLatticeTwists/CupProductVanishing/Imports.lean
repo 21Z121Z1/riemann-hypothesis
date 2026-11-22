@@ -1,7 +1,6 @@
 module
 
 public import Formalism.WachLatticeTwists.CupProductVanishing.CupProductProofs.Clause4GK
-public import Formalism.WachLatticeTwists.CupProductVanishing.CupProductProofs.CoboundaryTrivialActionZero
-public import Formalism.WachLatticeTwists.CupProductVanishing.CupProductProofs.H2MapInjectiveStatement
+public import Formalism.WachLatticeTwists.CupProductVanishing.CupProductProofs.Bundle0001
 
 @[expose] public section

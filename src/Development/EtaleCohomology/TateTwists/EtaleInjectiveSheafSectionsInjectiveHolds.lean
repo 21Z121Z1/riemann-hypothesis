@@ -1,6 +1,6 @@
 module
 
-public import Development.EtaleCohomology.TateTwists.EtaleKInjectiveExtensionAlongQuasiIsoFromSingle
+public import Development.EtaleCohomology.TateTwists.Bundle0009
 
 @[expose] public section
 

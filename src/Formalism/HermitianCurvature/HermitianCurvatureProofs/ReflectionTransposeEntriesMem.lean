@@ -1,8 +1,8 @@
 module
 
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.SumPairAtStarMul
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0039
 public import Formalism.HermitianCurvature.HermitianCurvatureProofs.AdmissibleRecOfAdmissibleWord
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.FrameOfAdmissibleWord
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0024
 
 @[expose] public section
 

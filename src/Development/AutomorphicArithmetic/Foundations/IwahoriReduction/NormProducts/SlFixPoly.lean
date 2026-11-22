@@ -1,12 +1,16 @@
 module
 
 public import Development.AutomorphicArithmetic.Foundations.IwahoriReduction.NormProducts.LUnH
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsTowerPlaceAtUpperHalfPlanePointStatement
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ModularTowerMemAdjoinJOfSlTwoIntInvariantStatement
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.FiniteDimensionalLevStatement
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsGaloisConjValuationSubringSameTraceStatement
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.OverAffineJLineComapSlGal
-public import Development.AutomorphicArithmetic.Foundations.IwahoriReduction.NormProducts.BddOrder
+public import Mathlib
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0080
+public import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0008
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ModularTowerMemAdjoinJOfSlTwoIntInvariant
+public import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0010
+public import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0003
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0186
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0115
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0135
+public import Development.AutomorphicArithmetic.Foundations.IwahoriReduction.NormProducts.Bundle0001
 
 @[expose] public section
 
@@ -362,7 +366,7 @@ theorem UpperTheory.Kd.K4.eb :
     have hfix : ∀ γ : SL(2, ℤ), X.sl (ofSL γ) (u : X.K) = u := fun γ =>
       congrArg Subtype.val (hu (resA X M γ) (Subgroup.mem_top _))
     obtain ⟨r, s, hrs⟩ := (IntermediateField.mem_adjoin_simple_iff Ω _).1
-      (GlobalTheory.T.modularTower_mem_adjoin_j_of_slTwoInt_invariant ε X ⟨φ, hφd, hφ⟩ (u : X.K) hfix)
+      (_root_.GlobalTheory.KZ.LevelOneFrac.mem_adjoin_of_sl_inv ε X ⟨φ, hφd, hφ⟩ (u : X.K) hfix)
     rw [IntermediateField.mem_bot]
     refine ⟨algebraMap (Polynomial Ω) (RatFunc Ω) r / algebraMap (Polynomial Ω) (RatFunc Ω) s, ?_⟩
     apply Subtype.ext

@@ -2,9 +2,9 @@ module
 
 public import Mathlib
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.IsHolPeriods
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.FundamentalDomains.Signature
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsSmulMemRange
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.EqIffConjNe
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.FundamentalDomains.Bundle0001
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0002
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0014
 
 @[expose] public section
 

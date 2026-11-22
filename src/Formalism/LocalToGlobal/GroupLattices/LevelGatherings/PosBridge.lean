@@ -1,7 +1,7 @@
 module
 
-public import Formalism.LocalToGlobal.GroupLattices.LevelGatherings.PosCompatOfBase
-public import Formalism.LocalToGlobal.HermitianColumns.StarConj
+public import Formalism.LocalToGlobal.GroupLattices.LevelGatherings.Bundle0004
+public import Formalism.LocalToGlobal.HermitianColumns.Bundle0004
 
 @[expose] public section
 

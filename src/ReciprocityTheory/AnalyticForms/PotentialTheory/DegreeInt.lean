@@ -1,8 +1,8 @@
 module
 
-public import ReciprocityTheory.AnalyticForms.PotentialTheory.Degree
-public import ReciprocityTheory.AnalyticForms.PotentialTheory.PotentialContDiffAt
-public import ReciprocityTheory.AnalyticForms.PotentialTheory.LocDens
+public import ReciprocityTheory.AnalyticForms.PotentialTheory.Bundle0008
+public import ReciprocityTheory.AnalyticForms.PotentialTheory.Bundle0007
+public import ReciprocityTheory.AnalyticForms.PotentialTheory.Bundle0005
 public import ReciprocityTheory.AnalyticForms.PotentialTheory.DegreeIntB
 
 @[expose] public section

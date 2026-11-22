@@ -3,15 +3,14 @@ module
 public import Mathlib
 public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.BdryChart
 public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsFlatAnIffIsConstMul
-public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.LevelSectionsExactKernelLocusOpen
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.Bundle0005
 public import Development.AutomorphicSpectrum.Definitions.MetricPeriods.ClopenCondOnto
 public import Development.AbelianVarietyTheory.Definitions.Uniformization.PointEqOfSubsingleton
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.BlowupProjections.BlowupProjStatement
 public import Development.AutomorphicSpectrum.PublishedTheorems.Geometry₂.GagaSections
-public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsGenericFlag
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.Bundle0004
 public import Development.AbelianVarietyTheory.Proofs.ToricGeometry.ExistsContraction
-public import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.SameCompOfIsHolTo
-public import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.LiftIdempotentEqOfSameComplexComponent
+public import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.Bundle0043
 
 @[expose] public section
 

@@ -2,9 +2,9 @@ module
 
 public import Mathlib
 public import Formalism.FilteredPoleLength.ReducedBasisBounds.LengthBaseChangeLocal
-public import Formalism.FilteredPoleLength.ReducedBasisBounds.FilteredPoleLength
-public import Formalism.FilteredPoleLength.LocalDescentLevels.LevelsChain
-public import Formalism.FilteredPoleLength.LocalDescentLevels.LengthBaseChange
+public import Formalism.FilteredPoleLength.ReducedBasisBounds.Bundle0002
+public import Formalism.FilteredPoleLength.LocalDescentLevels.Bundle0005
+public import Formalism.FilteredPoleLength.LocalDescentLevels.Bundle0004
 
 @[expose] public section
 

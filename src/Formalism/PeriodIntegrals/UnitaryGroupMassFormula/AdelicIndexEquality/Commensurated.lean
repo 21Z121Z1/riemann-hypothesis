@@ -1,6 +1,6 @@
 module
 
-public import Formalism.PeriodIntegrals.AdIndexEq
+public import Formalism.PeriodIntegrals.Bundle0020
 public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.FiniteAdelicComparison.MemLocFrom
 
 @[expose] public section

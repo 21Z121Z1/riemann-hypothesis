@@ -1,12 +1,12 @@
 module
 
 public import Mathlib
-public import GroundTheory.HeightsAndTheta.Heights.FieldsOfNumbers.StatementsSemilocalIntegral
-public import GroundTheory.HeightsAndTheta.Heights.FieldsOfNumbers.StatementsValuativeCentre
-public import GroundTheory.HeightsAndTheta.Heights.FieldsOfNumbers.PContractRelDimLe
+public import GroundTheory.HeightsAndTheta.Heights.FieldsOfNumbers.Bundle0015
+public import GroundTheory.HeightsAndTheta.Heights.FieldsOfNumbers.Bundle0013
+public import GroundTheory.HeightsAndTheta.Heights.FieldsOfNumbers.Bundle0008
 public import GroundTheory.HeightsAndTheta.Heights.FieldsOfNumbers.PPFContracted
-public import GroundTheory.HeightsAndTheta.Heights.FieldsOfNumbers.PPFContractedDim
-public import GroundTheory.HeightsAndTheta.Heights.FieldsOfNumbers.PExistsForm
+public import GroundTheory.HeightsAndTheta.Heights.FieldsOfNumbers.Bundle0005
+public import GroundTheory.HeightsAndTheta.Heights.FieldsOfNumbers.Bundle0003
 public import GroundTheory.HeightsAndTheta.Heights.Intersections.TableDegreeThreeBase
 
 @[expose] public section

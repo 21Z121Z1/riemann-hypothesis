@@ -1,7 +1,7 @@
 module
 
-public import Formalism.GaussJetBounds.GenLogInverse
-public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.WtGeProd
+public import Formalism.GaussJetBounds.Bundle0001
+public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0064
 
 @[expose] public section
 

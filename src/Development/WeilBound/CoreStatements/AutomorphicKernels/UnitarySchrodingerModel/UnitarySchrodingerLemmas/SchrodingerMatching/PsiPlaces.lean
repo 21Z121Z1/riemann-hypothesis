@@ -2,7 +2,7 @@ module
 
 public import Development.WeilBound.CoreStatements.AutomorphicKernels.UnitarySchrodingerModel.DictKAOfParts
 public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsSelfDualSiegelWeilMeasures
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FrameIntegralEqThetaPartNondegenerate
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0679
 
 @[expose] public section
 

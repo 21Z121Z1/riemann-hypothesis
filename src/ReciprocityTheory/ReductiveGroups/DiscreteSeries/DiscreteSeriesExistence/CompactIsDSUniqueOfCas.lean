@@ -4,9 +4,9 @@ public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.DiscreteSeriesExi
 public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.DiscreteSeriesExistence.Compact
 public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.DiscreteSeriesExistence.VNormSqLowKSubRootLt
 public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.DefsRep
-public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.AnalyticVectors.Unitary
-public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.BochnerInequality.LayerBasic
-public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.CasimirCoefficients.SmulOneMemUnitary
+public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.AnalyticVectors.Bundle0002
+public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.BochnerInequality.Bundle0001
+public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.CasimirCoefficients.Bundle0006
 
 @[expose] public section
 

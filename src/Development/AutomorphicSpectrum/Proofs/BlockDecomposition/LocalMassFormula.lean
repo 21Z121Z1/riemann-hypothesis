@@ -2,7 +2,8 @@ module
 
 public import Mathlib
 public import Development.WeilBound.RepresentationTheoryGL.SiegelWeilProof.BinaryMassMeans.MeanVal
-public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.GramFiberMeasuresContinuityStatement
+public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.Bundle0038
+public import CompanionTheory.SpectralGeometry.CountingDefinitions.AdelicEulerProducts.IsEulerProd
 public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.LocalQuadraticDensityNearOne
 public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.LocalQuadraticDensityBoundNonzero
 public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.RankOneLocalDensityAlmostAll
@@ -59,7 +60,7 @@ theorem local_density_binary_unimodular {ι : Type} [Fintype ι] {F : Type} [Fie
   induction n using Nat.strong_induction_on with
   | _ n ih =>
   intro s hs hs0 hn
-  obtain ⟨Dp, hDp, hprim⟩ := GlobalTheory.T.local_quadratic_density_near_one F v lam hstd h2 ι B hsym hB hdet 2 hc (by omega) s hs
+  obtain ⟨Dp, hDp, hprim⟩ := _root_.GlobalTheory.CompanionTheory.SW.LGPrim.density_primitive F v lam hstd h2 ι B hsym hB hdet 2 hc (by omega) s hs
   obtain ⟨π, hπ⟩ := exists_unif v
   have hπ0 := pi_ne_zero hπ
   have hs1 : Valued.v s ≤ 1 := mem_int.1 hs
@@ -269,17 +270,17 @@ theorem locMass : PositivityTheory.Rg.Mass.LocMass := by
   refine ⟨fun s hs hs0 => ?_, fun s hs hs0 => ?_, fun s hsu => ?_⟩
   · have h0 := hmass s hs0 0 fun A _ hA => density_nonint hv2' _ (fun i j => hve i j) s hs A hA
     have hfin : m v (hermScal (Fv F v) σ s) (latV b v) ≠ ⊤ := by
-      have hloc : IsLocR (Fv F v) := GlobalTheory.T.completion_is_local_ring F v
+      have hloc : IsLocR (Fv F v) := _root_.GlobalTheory.CompanionTheory.SW.LocFv.isLocR_Fv F v
       obtain ⟨hTR, hLC, hSC, hT2, -⟩ := id hloc
       haveI := hTR
       haveI := hLC
       haveI := hSC
       haveI := hT2
       haveI : BorelSpace (Fv F v) := ⟨rfl⟩
-      have hh := GlobalTheory.T.coordinate_haar_measure F E σ hCM (Fv F v) d b (lam v) (hlam v).1
+      have hh := _root_.GlobalTheory.CompanionTheory.SW.coord_measures_haar F E σ hCM (Fv F v) d b (lam v) (hlam v).1
       haveI hW := hh.2.1 1 2
       haveI hH := hh.2.2 1
-      have hlf := (GlobalTheory.T.gram_fiber_measure_locallyFinite_and_ne_zero_of_isOpen F E σ hCM 2 J hJ (Fv F v) hloc 1 _ _ (m v) hW hH (hm v)
+      have hlf := (_root_.GlobalTheory.CompanionTheory.SW.LocFin.fibre_loc_fin F E σ hCM 2 J hJ (Fv F v) hloc 1 _ _ (m v) hW hH (hm v)
         (hermScal (Fv F v) σ s)).1
       exact (GlobalTheory.T.local_lattice_compact_open_unit_volume F E σ hCM d b 1 2 v).1.measure_lt_top.ne
     simpa [ENNReal.toReal_eq_zero_iff, hfin] using h0

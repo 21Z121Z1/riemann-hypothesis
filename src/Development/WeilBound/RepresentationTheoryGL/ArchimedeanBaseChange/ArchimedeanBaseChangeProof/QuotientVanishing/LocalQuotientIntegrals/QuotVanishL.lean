@@ -1,7 +1,7 @@
 module
 
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LocVanishOf
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.NilradicalChangeOfVariables
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0324
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0315
 public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MulVecMemUniRad
 
 @[expose] public section

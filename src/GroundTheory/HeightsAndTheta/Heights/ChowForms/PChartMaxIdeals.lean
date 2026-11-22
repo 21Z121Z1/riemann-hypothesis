@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import GroundTheory.HeightsAndTheta.Heights.ChowForms.StatementsChartMax
-public import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.PProperSymm
-public import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.LowerBoundConditional
+public import GroundTheory.HeightsAndTheta.Heights.ChowForms.Bundle0010
+public import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.Bundle0021
+public import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.Bundle0012
 
 @[expose] public section
 

@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.EigCoordApply
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DvrAlphaDeterminantOrder
+public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.Bundle0029
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0420
 
 @[expose] public section
 

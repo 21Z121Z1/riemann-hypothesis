@@ -2,7 +2,7 @@ module
 
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.FundamentalDomains.ExistsPerpHermitianReduction
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.FundamentalDomains.MajPos
-public import ReciprocityTheory.SemistableReduction.LatAll
+public import ReciprocityTheory.SemistableReduction.Bundle0029
 
 @[expose] public section
 

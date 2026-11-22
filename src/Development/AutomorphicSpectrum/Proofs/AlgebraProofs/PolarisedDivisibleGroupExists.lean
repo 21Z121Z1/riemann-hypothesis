@@ -2,15 +2,14 @@ module
 
 public import Mathlib
 public import Development.AutomorphicSpectrum.Statements.GeometryStatements.IsPolLatticePlane
-public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.CompleteIntegersPropertiesStatement
-public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.PolarisedLatticeTowerExistsStatement
-public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.DivisibleGroupFromTowerStatement
-public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.DivisibleGroupTowerCompatibilityStatement
-public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.DivisibleGroupTowerDualStatement
-public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.DivisibleGroupTowerFreeStatement
-public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.TateMapDualHomBidual
+public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.Bundle0029
+public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.Bundle0036
+public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.Bundle0034
+public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.Bundle0040
+public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.Bundle0037
+public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.Bundle0058
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConvEqOneOfForallPairing
-public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.ImportsBisRest
+public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0030
 
 @[expose] public section
 
@@ -413,10 +412,10 @@ theorem exists_HTPoint : FarguesHodgeTate → ∀ (p : ℕ) [Fact p.Prime] (C : 
   haveI := hu.finite
   haveI : IsFractionRing O C := hv.isFractionRing
   haveI : IsIntegrallyClosed O := hv.isIntegrallyClosed
-  obtain ⟨alg⟩ := (GlobalTheory.T.complete_integers_properties p C v O hv hp hO).1
+  obtain ⟨alg⟩ := (_root_.GlobalTheory.CompanionTheory.Ar.HT.padicComplete_integers_structure p C v O hv hp hO).1
   letI := alg
-  obtain ⟨ρ, T, e, h1, h2, h3, h4, h5, h6, h7, h8⟩ := GlobalTheory.T.polarised_lattice_tower_exists p C v O hv hp hO E c La EF N u hu
-  obtain ⟨G, ee, τ, hre, hheight, j, hj⟩ := GlobalTheory.T.divisible_group_from_tower p C v O hv hp hO La L X
+  obtain ⟨ρ, T, e, h1, h2, h3, h4, h5, h6, h7, h8⟩ := _root_.GlobalTheory.CompanionTheory.Ar.HT.free_on_lift p C v O hv hp hO E c La EF N u hu
+  obtain ⟨G, ee, τ, hre, hheight, j, hj⟩ := _root_.GlobalTheory.CompanionTheory.Ar.HT.tower_pdiv_exists p C v O hv hp hO La L X
   obtain ⟨lam, hlam⟩ := GlobalTheory.T.divisible_group_tower_dual p C v O hv hp hO La L X G ee τ hre EF ζ hprim hcomp hpair
   obtain ⟨jj, hder, hjj⟩ := GlobalTheory.T.divisible_group_tower_free p C v O hv hp hO La L X G ee τ hre
   have hend := (GlobalTheory.T.divisible_group_tower_compatibility p C v O hv hp hO La L X G ee τ hre).1

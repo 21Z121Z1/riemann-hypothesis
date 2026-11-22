@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicArithmetic.OrbitLabellings.ColDefs
-public import Formalism.GaussJetBounds.OneLetterRadius
+public import Development.AutomorphicArithmetic.OrbitLabellings.Bundle0001
+public import Formalism.GaussJetBounds.Bundle0004
 public import Development.AutomorphicArithmetic.OrbitLabellings.BeSConstantCoeffEqZeroAndWtGe
 
 @[expose] public section

@@ -1,11 +1,11 @@
 module
 
 public import Mathlib
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.BergmanObjects
+public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0006
 public import GroundTheory.HeightsAndTheta.Heights.FubiniStudy
-public import GroundTheory.HeightsAndTheta.Heights.FubiniStudyTransition
-public import ReciprocityTheory.AnalyticForms.PotentialTheory.LocDens
-public import ReciprocityTheory.AnalyticForms.PlurisubharmonicFunctions.LintegralImageEqLintegralNormSqDetMul
+public import GroundTheory.HeightsAndTheta.Heights.Bundle0003
+public import ReciprocityTheory.AnalyticForms.PotentialTheory.Bundle0005
+public import ReciprocityTheory.AnalyticForms.PlurisubharmonicFunctions.Bundle0004
 
 @[expose] public section
 

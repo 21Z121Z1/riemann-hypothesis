@@ -2,13 +2,13 @@ module
 
 public import Mathlib
 public import Formalism.SharpRestriction.CuspSpanNormBounds.FractionFieldToGenericStalkAlgebraMapEq
-public import Development.AbelianVarietyTheory.Definitions.Foundations.IsHermND
+public import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0007
 public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.ComplementReferenceCompactSubgroup
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsEqZpowMulUnit
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0029
 public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.BasisOfIsCompl
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.HermitianDoubleCosetTermBasicFacts
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.HermitianDoubleCosetFrameClassProperties
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.FrameLatticeGramDetAndMinorsOrbitInvariantStatement
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0043
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0032
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0041
 
 @[expose] public section
 

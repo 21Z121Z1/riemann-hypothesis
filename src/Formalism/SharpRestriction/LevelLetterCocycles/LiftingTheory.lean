@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Formalism.SharpRestriction.LevelLetterCocycles.GammaSemisimpleLocalOfConsequences
+public import Formalism.SharpRestriction.LevelLetterCocycles.Bundle0005
 public import Formalism.LocalRingCardinality.RhoDetPrimeEqMuTildeMulChiPow
 public import Formalism.LagrangeIdealLifts.Statement
 public import Formalism.SharpRestriction.LevelLetterCocycles.DeltaInvariantLattices

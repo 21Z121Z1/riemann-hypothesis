@@ -1,7 +1,7 @@
 module
 
-public import Development.WeilBound.CoreStatements.PublishedTheorems.GlobalFiniteness.FiniteH2TorsionModule
-public import Development.AutomorphicSpectrum.Proofs.GlobalProofs.FiniteH1UnramifiedOutside
+public import Development.WeilBound.CoreStatements.PublishedTheorems.GlobalFiniteness.Bundle0001
+public import Development.AutomorphicSpectrum.Proofs.GlobalProofs.Bundle0008
 
 @[expose] public section
 

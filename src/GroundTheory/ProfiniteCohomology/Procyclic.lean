@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import GroundTheory.ProfiniteCohomology.ProcyclicDefs
+public import GroundTheory.ProfiniteCohomology.Bundle0001
 public import GroundTheory.ProfiniteCohomology.ContinuousCochains.Functoriality
 public import GroundTheory.ProfiniteCohomology.CoinducedModules.CohomologyCoindCokernelIsoHom
 public import GroundTheory.ProfiniteCohomology.CohomologicalDimension.PrimaryComponentCohomologyEqBotOfScdpLt

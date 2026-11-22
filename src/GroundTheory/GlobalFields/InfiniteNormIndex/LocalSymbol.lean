@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import GroundTheory.GlobalFields.HerbrandQuotients.Cyclic
+public import GroundTheory.GlobalFields.HerbrandQuotients.Bundle0001
 public import GroundTheory.ProfiniteCohomology.GaloisModules.CoeGalRootsOfUnityHomApply
 public import GroundTheory.GlobalFields.SemilocalAlgebras.Infinite
 

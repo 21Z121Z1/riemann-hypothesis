@@ -2,10 +2,10 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Statements.CuspFrameWeights.DiscreteSpectrumKFiniteDecomposition
-public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.DiscreteSeriesUpqUniqueOfClassification
+public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.Bundle0002
 public import Development.AutomorphicSpectrum.Proofs.MembershipProofs.DiscreteSeriesUpqUnique
 public import CompanionTheory.HarishChandraModules.LowKTypeMultiplicity.EigenspaceCyclicDensity.LowKTypeMultiplicityOneFock
-public import Formalism.SharpRestriction.CuspSpanNormBounds.HCFiniteKMultiplicityGapped
+public import Formalism.SharpRestriction.CuspSpanNormBounds.Bundle0018
 
 @[expose] public section
 

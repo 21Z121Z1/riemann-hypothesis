@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import GroundTheory.AutomorphicForms.FiniteLengthSubquotient
-public import GroundTheory.AutomorphicForms.GeometricLemma
+public import GroundTheory.AutomorphicForms.Bundle0024
 
 @[expose] public section
 

@@ -4,13 +4,12 @@ public import Mathlib
 public import Formalism.SharpRestriction.GlobalSchurBounds.StandardLattice
 public import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.WeilTensorModels
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ContinuousAtPlace
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.LcscAdelicUnitaryGroup
-public import Development.WeilBound.ThetaLifts.TowerModels.TwistedSums.IsLocallyConstantHeisenbergLatticeVacuumFunction
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsSplittingSplitOm
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ContinuousCharacterCocycleTrivialNearZeroStatement
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0061
+public import Development.WeilBound.ThetaLifts.TowerModels.TwistedSums.Bundle0002
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0213
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0130
 public import Development.WeilBound.ThetaLifts.TowerModels.TwistedSums.ExistsSubgroupSymplecticAnnihilatorLocalField
-public import Development.WeilBound.ThetaLifts.TowerModels.TwistedSums.ExistsSchwartzBruhatSchroedingerFixedLocalField
-public import Development.WeilBound.ThetaLifts.TowerModels.TwistedSums.SchroedingerMemSchwartzBruhatFinitePlace
+public import Development.WeilBound.ThetaLifts.TowerModels.TwistedSums.Bundle0003
 
 @[expose] public section
 
@@ -171,7 +170,7 @@ theorem exists_schr_eigen : ∀ {F : Type} [Field F] [NumberField F] (v : Global
     have h1 := hNN (Set.mk_mem_prod hx hy)
     rw [Set.mem_preimage] at h1
     exact hU₀ _ h1
-  obtain ⟨U, hU, hUχ⟩ := GlobalTheory.T.continuous_character_cocycle_trivial_near_zero lamH hlamc ε hεN hε0 χ hχc (fun a h => hker a h) (fun a b => hco a b)
+  obtain ⟨U, hU, hUχ⟩ := _root_.GlobalTheory.CocycleChar.cocycle_char_trivial_near_zero lamH hlamc ε hεN hε0 χ hχc (fun a h => hker a h) (fun a b => hco a b)
   obtain ⟨φ₁, hφ₁SB, hφ₁0, U', hU', hU'φ⟩ := Tw.SchrTestVec.exists_fixed v ψ hψc (κ := κ)
   obtain ⟨Y, hYsep, N', hN', hN'Y⟩ := Tw.SympDualNbhd.exists_dual_nbhd v ψ hψc hψ1 (U ∩ U') (Filter.inter_mem hU hU')
 

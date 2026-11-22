@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FiltGraded
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FinrankIntEqFinrankRingOfIntegersMul
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2939
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0052
 public import Development.AbelianVarietyTheory.Definitions.ArchimedeanThetaValues.ToMatrixTrFormBaseChange
 public import Development.AbelianVarietyTheory.Counterexamples.LevelGroupExamples.PEqQOfNeg
 

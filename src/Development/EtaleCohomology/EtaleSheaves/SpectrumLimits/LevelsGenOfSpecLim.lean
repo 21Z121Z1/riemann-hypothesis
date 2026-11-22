@@ -1,7 +1,6 @@
 module
 
-public import Development.EtaleCohomology.EtaleSheaves.SpectrumLimits.QuotCop
-public import Development.EtaleCohomology.EtaleSheaves.SpectrumLimits.TensCop
+public import Development.EtaleCohomology.EtaleSheaves.SpectrumLimits.Bundle0001
 
 @[expose] public section
 

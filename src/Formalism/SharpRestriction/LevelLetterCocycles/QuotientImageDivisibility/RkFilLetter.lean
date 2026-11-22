@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Formalism.SharpRestriction.LevelLetterCocycles.CrystallineLiftingInputs
-public import Formalism.SharpRestriction.LevelLetterCocycles.QuotientImageDivisibility.RkDcrisLSumZero
+public import Formalism.SharpRestriction.LevelLetterCocycles.QuotientImageDivisibility.Bundle0003
 
 @[expose] public section
 

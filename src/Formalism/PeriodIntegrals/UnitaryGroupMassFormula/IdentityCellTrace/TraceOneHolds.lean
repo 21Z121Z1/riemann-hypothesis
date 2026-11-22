@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.IdentityCellTrace.TermIdIffInSOf
-public import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.CMTraceOnto
+public import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.Bundle0002
 
 @[expose] public section
 

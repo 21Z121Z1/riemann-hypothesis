@@ -5,9 +5,9 @@ public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership
 public import Development.AbelianVarietyTheory.Definitions.ModuliSpaces.AllTorsMap
 public import Development.AbelianVarietyTheory.Definitions.Uniformization.TXFrame
 public import Development.AbelianVarietyTheory.Definitions.Uniformization.PointEqOfSubsingleton
-public import Development.AbelianVarietyTheory.BlockTheory.ExistenceTori.GeneratorValues
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.UniformisationTorusMonoAndFactorStatement
-public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.IsIsoOfIsClosedImmersionOfThickeningsOfIsProper
+public import Development.AbelianVarietyTheory.BlockTheory.ExistenceTori.Bundle0001
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0483
+public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.Bundle0014
 
 @[expose] public section
 
@@ -88,7 +88,7 @@ theorem restrict_surjective : ∀ (E : Type) [Field E] [NumberField E] [IsCMFiel
     have hR : IsGrpPullback (thickObj V (maximalIdeal V) e tV.G) t.G (spMap (q.comp ψ))
         (pullback.fst tV.G.hom (thick V (maximalIdeal V) e) ≫ mV.φ) :=
       (he.comp mV.cart).congr (by rw [spMap, spMap, ← Spec.map_comp]; rfl) rfl
-    obtain ⟨-, hfac⟩ := GlobalTheory.T.uniformisationTorus_mono_and_factor E H R (maximalIdeal R) t P _ (q.comp ψ) e ha _ _ hR
+    obtain ⟨-, hfac⟩ := _root_.GlobalTheory.TorusPart.mono_gtTorus_unif_and_factor E H R (maximalIdeal R) t P _ (q.comp ψ) e ha _ _ hR
     obtain ⟨ρe, hρe⟩ := hfac P'.D.toPre.X (GlobalTheory.TorusPart.pullTorus he j) inferInstance
 
     have hres : ∀ x ∈ maximalIdeal V ^ (e + 1), residue V x = 0 := fun x hx =>
@@ -104,7 +104,7 @@ theorem restrict_surjective : ∀ (E : Type) [Field E] [NumberField E] [IsCMFiel
       GlobalTheory.TorusPart.pullTorus_gtTorus (σ := Ideal.Quotient.lift _ (residue V) hres) (P.U.gt e) ha ha' hR m₀'.cart ke
         (RingHom.ext fun x => rfl)
         (hφ₀.trans (by rw [← Category.assoc, GlobalTheory.TorusPart.thickLift_fst]))
-    obtain ⟨hmono, hfac'⟩ := GlobalTheory.T.uniformisationTorus_mono_and_factor E H R (maximalIdeal R) t P _ ((residue V).comp ψ) e ha' t₀.G m₀'.φ m₀'.cart
+    obtain ⟨hmono, hfac'⟩ := _root_.GlobalTheory.TorusPart.mono_gtTorus_unif_and_factor E H R (maximalIdeal R) t P _ ((residue V).comp ψ) e ha' t₀.G m₀'.φ m₀'.cart
     obtain ⟨u, hu⟩ := hfac' P.D.toPre.X (GlobalTheory.TorusPart.PELUnif.torus P h₀ m₀') inferInstance
     have e3 := congrArg (GlobalTheory.TorusPart.pullTorus ke) hρe
     rw [e1, GlobalTheory.TorusPart.pullTorus_torusMap_comp, e2, h₀j, hu, ← Category.assoc,
@@ -123,7 +123,7 @@ theorem restrict_surjective : ∀ (E : Type) [Field E] [NumberField E] [IsCMFiel
       pullback.fst (splitTorus (Sp V) F).hom (thick V (maximalIdeal V) e) ≫ _
     rw [← GlobalTheory.SplitTorus.bcIso_inv_bcMap, Category.assoc, Category.assoc, k3]
   haveI : Mono (GlobalTheory.TorusPart.PELUnif.torus P' hβ n') :=
-    (GlobalTheory.T.uniformisationTorus_mono_and_factor E H W (maximalIdeal W) t' P' Ω β 0 (GlobalTheory.TorusPart.map_pow_one_eq_zero hβ) tΩ.G n'.φ n'.cart).1
+    (_root_.GlobalTheory.TorusPart.mono_gtTorus_unif_and_factor E H W (maximalIdeal W) t' P' Ω β 0 (GlobalTheory.TorusPart.map_pow_one_eq_zero hβ) tΩ.G n'.φ n'.cart).1
   have e2 := congrArg (GlobalTheory.TorusPart.pullTorus n.cart) key
   rw [GlobalTheory.TorusPart.pullTorus_torusMap_comp, GlobalTheory.TorusPart.pullTorus_torusMap_comp, hΩ] at e2
   have e3 : GlobalTheory.SplitTorus.torusMap (Sp Ω) l = GlobalTheory.SplitTorus.torusMap (Sp Ω) 0 := (cancel_mono _).1 e2

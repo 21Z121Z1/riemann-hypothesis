@@ -1,8 +1,8 @@
 module
 
 public import ReciprocityTheory.AnalyticForms.RegularLocalRings.ExistsBasicOpenCover
-public import ReciprocityTheory.AnalyticForms.RegularLocalRings.Monomial
-public import ReciprocityTheory.AnalyticForms.RegularLocalRings.WMultB
+public import ReciprocityTheory.AnalyticForms.RegularLocalRings.Bundle0003
+public import ReciprocityTheory.AnalyticForms.RegularLocalRings.Bundle0011
 
 @[expose] public section
 

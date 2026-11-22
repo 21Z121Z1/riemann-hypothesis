@@ -1,13 +1,11 @@
 module
 
 public import Mathlib
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.TaylorDiscriminants.ChartChg
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.TaylorDiscriminants.Bundle0003
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.TaylorDiscriminants.WickVanishing.SigCancel
 public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.CanonGaugeDmonOfHLIntegral
-public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.BilinPartCanonGaugeCongr
-public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.ExistsSymmBalancedCongrOfSeparability
-public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.ExistsSepDiscr
-public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.BilinearLogFormEvalZeroRightEqZero
+public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0112
+public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0114
 
 @[expose] public section
 

@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import GroundTheory.ProfiniteCohomology.LocalEulerCharacteristic.VanishingCore
+public import GroundTheory.ProfiniteCohomology.LocalEulerCharacteristic.Bundle0004
 public import GroundTheory.ProfiniteCohomology.LocalEulerCharacteristic.VanishingUnits
 public import GroundTheory.ProfiniteCohomology.LocalEulerCharacteristic.Cohomology
 public import GroundTheory.LocalFields.SeparableClosure

@@ -1,13 +1,13 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.CoreEq
+public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0033
 public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.NonemptyExtAnd
 public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.RootsOfUnityRingLeWittIntegers
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.HeckeCharacterIdeleCharacterMatchUnique
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0433
 public import Formalism.FrobeniusOrbits.FrobeniusOrbitsProofs.DiscrB
 public import Formalism.FrobeniusOrbits.FrobeniusOrbitsProofs.DiscriminantRealSubfield
-public import Development.AutomorphicArithmetic.PrimeDiscriminants.RamDiscr
+public import Development.AutomorphicArithmetic.PrimeDiscriminants.Bundle0002
 
 @[expose] public section
 

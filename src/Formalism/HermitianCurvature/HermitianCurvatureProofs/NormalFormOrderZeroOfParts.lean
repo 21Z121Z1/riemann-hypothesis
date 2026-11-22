@@ -1,8 +1,8 @@
 module
 
-public import Formalism.HermitianCurvature.ActualZetaSmooth
+public import Formalism.HermitianCurvature.Bundle0006
 public import Formalism.HermitianCurvature.HermitianCurvatureProofs.ActualAdjointnessFromHermitian
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.ModelLevelMultiplier
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0026
 
 @[expose] public section
 

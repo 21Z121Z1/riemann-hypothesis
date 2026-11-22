@@ -1,6 +1,6 @@
 module
 
-public import ReciprocityTheory.DualLattices.SumLatInvMulVec
+public import ReciprocityTheory.DualLattices.Bundle0020
 
 @[expose] public section
 

@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Foundations.Integral
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.PrimeMulBernoulliMem
+public import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0001
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0037
 
 @[expose] public section
 

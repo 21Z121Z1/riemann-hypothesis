@@ -1,10 +1,9 @@
 module
 
 public import Development.AutomorphicArithmetic.Foundations.Convolution.NormCharacterPowers.SumSatUnit
-public import Development.AutomorphicArithmetic.Foundations.Convolution.NormCharacterPowers.Decomp
-public import Development.AutomorphicArithmetic.Foundations.Convolution.NormCharacterPowers.PartBOfDecomposition
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.LiteratureResults.SymmetricAdjointFrobenius.QuadOf
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.GlobalArtinReciprocityHolds
+public import Development.AutomorphicArithmetic.Foundations.Convolution.NormCharacterPowers.Bundle0002
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.LiteratureResults.SymmetricAdjointFrobenius.Bundle0002
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0302
 
 @[expose] public section
 

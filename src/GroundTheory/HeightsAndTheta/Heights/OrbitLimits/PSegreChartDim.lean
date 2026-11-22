@@ -1,10 +1,10 @@
 module
 
 public import Mathlib
-public import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.StSegreChartDim
-public import GroundTheory.HeightsAndTheta.Heights.Intersections.IsSmoothMetricOfIsSmoothHerm
+public import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.Bundle0017
+public import GroundTheory.HeightsAndTheta.Heights.Intersections.Bundle0032
 public import ReciprocityTheory.AnalyticForms.RegularLocalRings.ConeChart
-public import ReciprocityTheory.AnalyticForms.RegularLocalRings.BaseChangeC
+public import ReciprocityTheory.AnalyticForms.RegularLocalRings.Bundle0005
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArakelovGeometry.KleimanNefness.AlgDim
 
 @[expose] public section

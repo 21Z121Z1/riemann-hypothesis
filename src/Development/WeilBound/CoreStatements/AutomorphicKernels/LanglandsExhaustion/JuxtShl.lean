@@ -1,9 +1,9 @@
 module
 
-public import Development.WeilBound.CoreStatements.AutomorphicKernels.LanglandsExhaustion.JuxtDefs
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.JacquetMultiplicityPosStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.WordOccursOfSubquotientStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ShuffleOfPermStatement
+public import Development.WeilBound.CoreStatements.AutomorphicKernels.LanglandsExhaustion.Bundle0001
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0562
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0365
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0065
 public import CompanionTheory.AutomorphicTheory.HeckeStandardModules.EqZeroOfCompAt
 
 @[expose] public section

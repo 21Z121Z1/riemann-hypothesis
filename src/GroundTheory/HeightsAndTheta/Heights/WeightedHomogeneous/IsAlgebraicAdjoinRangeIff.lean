@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import ReciprocityTheory.CommutativeAlgebra.PolynomialHeights.HeightAddRingKrullDimQuotientMvPolynomialField
-public import ReciprocityTheory.AnalyticForms.RegularLocalRings.IntToRat
+public import ReciprocityTheory.AnalyticForms.RegularLocalRings.Bundle0007
 
 @[expose] public section
 

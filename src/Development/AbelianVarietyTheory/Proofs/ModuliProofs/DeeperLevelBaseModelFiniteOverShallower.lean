@@ -2,26 +2,26 @@ module
 
 public import Mathlib
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.UniformisationConclusion
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.HeckeKer
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.Bundle0003
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.RigidSys
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.Splits
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.AbProj
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.Bundle0006
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.GtBaseChangeSt
-public import Development.AbelianVarietyTheory.Definitions.ModuliSpaces.AuxiliaryInertOddPrime
+public import Development.AbelianVarietyTheory.Definitions.ModuliSpaces.Bundle0001
 public import Development.AbelianVarietyTheory.Definitions.Degenerations.AdmissiblePadicIntMaximalIdeal
 public import Development.AbelianVarietyTheory.Definitions.ArchimedeanThetaValues.OneAddZeta21PowSevenAddPowFourteenEqZero
 public import Development.AbelianVarietyTheory.Definitions.ArchimedeanThetaValues.IsCoprimeTwoSubRtTwoAddRt
 public import Development.AbelianVarietyTheory.Definitions.ArchimedeanThetaValues.ToMatrixTrFormBaseChange
-public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.LevelMapFiniteEtaleSurjective
-public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.IsIsoStalkMapOfFlatOfSurjectiveOnStalks
-public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.GenericPartDenseProOpen
-public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsUniqueLiftOfDensePart
-public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsDescOfIsFiniteOfDensePartStatement
-public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsSemiAbelianTripleMapExtendingModelMapStatement
-public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsFiniteEtaleSurjectiveLevelMapStatement
-public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.MapToUniversalObjectUniqueStatement
-public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.CmModelCoefficientSubringDedekindCompatibleEmbedStatement
-public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.CmModelCoefficientInclusionsEtaleOpenImmersionStatement
+public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0029
+public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0027
+public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0026
+public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0038
+public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0046
+public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0192
+public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0144
+public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0140
+public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0034
+public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.CmModelCoefficientInclusionsEtaleOpenImmersion
 
 @[expose] public section
 
@@ -86,7 +86,7 @@ theorem ded (l : Level H) (S e A : ℕ) (hA : l.A = A) (hS : 0 < S) (hd : A ∣ 
     Algebra.FiniteType ℤ (RZ H S A) ∧
       ∀ β : RZ H S A →+* KA l, IsInc (RZ H S A).subtype (KA l).val.toRingHom β → IsDedFrac β := by
   subst hA
-  exact (GlobalTheory.T.cmModelCoefficientSubring_dedekind_compatible_embedding E H l S e hS hd).2
+  exact (_root_.GlobalTheory.BaseRing.isDedFrac_RZ E H l S e hS hd).2
 
 theorem finite_fibres_of_comp {X Y Z : Type} {f : X → Y} {g : Y → Z}
     (h : ∀ z, ((g ∘ f) ⁻¹' {z}).Finite) (y : Y) : (f ⁻¹' {y}).Finite :=
@@ -159,8 +159,8 @@ theorem baseModel_above : (∀ (T K : Type) [CommRing T] [IsDomain T] [IsDiscret
   have hSS : n * l₀.M ∣ n * l₀'.M := Nat.mul_dvd_mul_left n hd.1
   have he₀ : N ∣ (n * l₀.M) ^ e := he.trans (pow_dvd_pow_of_dvd (Dvd.intro _ rfl) e)
   have he₁ : N ∣ (n * l₀'.M) ^ e := he.trans (pow_dvd_pow_of_dvd (Dvd.intro _ rfl) e)
-  obtain ⟨b, hb⟩ := (GlobalTheory.T.cmModelCoefficient_inclusions_etale_openImmersion E H _ _ 1 1 e hS' one_pos hSS dvd_rfl).1
-  obtain ⟨b₁, hb₁⟩ := (GlobalTheory.T.cmModelCoefficient_inclusions_etale_openImmersion E H _ _ N N e hS' hN0 hSS dvd_rfl).1
+  obtain ⟨b, hb⟩ := (_root_.GlobalTheory.BaseRing.inclusion_RZ E H _ _ 1 1 e hS' one_pos hSS dvd_rfl).1
+  obtain ⟨b₁, hb₁⟩ := (_root_.GlobalTheory.BaseRing.inclusion_RZ E H _ _ N N e hS' hN0 hSS dvd_rfl).1
   have hd₁ : B.l₁.Dvd B'.l₁ := ⟨by rw [B.M_eq, B'.M_eq]; exact hd.1, by rw [B.Mb_eq, B'.Mb_eq]; exact hd.2.1,
     by rw [B.A_eq, B'.A_eq]⟩
   have hdB : l₀.Dvd B.l₁ := ⟨by rw [B.M_eq], by rw [B.Mb_eq], by rw [B.A_one]; exact one_dvd _⟩
@@ -219,7 +219,7 @@ theorem baseModel_above : (∀ (T K : Type) [CommRing T] [IsDomain T] [IsDiscret
   have sq : r₁ ≫ B.r = B'.r ≫ r := by
     obtain ⟨m₁, hm₁⟩ := levComp_comp hdB hd₁ B.lev hlev₁
     obtain ⟨m₂, hm₂⟩ := levComp_comp hd hdB' hlev B'.lev
-    refine (GlobalTheory.T.map_to_universalObject_unique L₁ L₂ L₃ E H D l₀ B'.l₁ (Xo l₀) _ _ _ _ (Xo B'.l₁).univ _ _ m₁ m₂
+    refine (_root_.GlobalTheory.LevUniq.map_to_univ_unique L₁ L₂ L₃ E H D l₀ B'.l₁ (Xo l₀) _ _ _ _ (Xo B'.l₁).univ _ _ m₁ m₂
       (isReduced_open B'.C₁ dO₁') ?_ hm₁ hm₂).1
     have := mono_spMap dO
     rw [← cancel_mono (spMap B.β)]
@@ -231,7 +231,7 @@ theorem baseModel_above : (∀ (T K : Type) [CommRing T] [IsDomain T] [IsDiscret
   have fin : ∀ {l : Level H} (B : BaseModel T l), IsFinite B.above.π := by
     intro l B
     have hS : 0 < n * l.M := Nat.mul_pos hn (lt_of_lt_of_le (by norm_num) l.three_le)
-    have := (((GlobalTheory.T.cmModelCoefficient_inclusions_etale_openImmersion E H _ _ 1 N e hS hN0 dvd_rfl (one_dvd _)).2 B.b B.b_inc).1 rfl
+    have := (((_root_.GlobalTheory.BaseRing.inclusion_RZ E H _ _ 1 N e hS hN0 dvd_rfl (one_dvd _)).2 B.b B.b_inc).1 rfl
       (he.trans (pow_dvd_pow_of_dvd (Dvd.intro _ rfl) e))).1
     have := B.above.fin
     rw [← pullback.lift_fst B.above.π B.C₁.s B.above.π_over]
@@ -243,17 +243,17 @@ theorem baseModel_above : (∀ (T K : Type) [CommRing T] [IsDomain T] [IsDiscret
     have : IsDominant (B'.C₁.j ≫ B'.above.π) := by rw [B'.above.j_comm]; infer_instance
     have : IsDominant B'.above.π := IsDominant.of_comp B'.C₁.j _
     exact surjective_of_isDominant_of_isClosed_range _ B'.above.π.isClosedMap.isClosed_range
-  obtain ⟨f, hf₁, hf₂⟩ := GlobalTheory.T.exists_desc_of_dense_preimmersion _ _ _ _ _ _ B'.above.π B'.C₁.j B'.C.j B'.r (B'.C.s ≫ spMap b) B.C.s
+  obtain ⟨f, hf₁, hf₂⟩ := _root_.GlobalTheory.exists_desc_of_isFinite_of_densePart _ _ _ _ _ _ B'.above.π B'.C₁.j B'.C.j B'.r (B'.C.s ≫ spMap b) B.C.s
     (h ≫ B.above.π) (r ≫ B.C.j) B'.C.normal red₁' fπ' sπ' rs dom₁' qc₁' pre' fl' dom' qc' inferInstance
     inferInstance B'.above.j_comm
     (by rw [← Category.assoc, h₁, Category.assoc, B.above.j_comm, ← Category.assoc, sq, Category.assoc]) hf
     (by rw [Category.assoc, hrs])
   have fo : f ≫ B.C.s = B'.C.s ≫ spMap b :=
     ext_of_isDominant B'.C.j (by rw [← Category.assoc, hf₁, Category.assoc, hrs])
-  obtain ⟨mu, hmu⟩ := GlobalTheory.T.exists_semiAbelianTripleMap_extending_modelMap hR E H _ _ _ _ _ _ _ _ _ _ _ _ B.C B'.C r ν f dO' ft' (Xo l₀').univ.proper hf₁
+  obtain ⟨mu, hmu⟩ := _root_.GlobalTheory.Models.exists_sabMap_extending hR E H _ _ _ _ _ _ _ _ _ _ _ _ B.C B'.C r ν f dO' ft' (Xo l₀').univ.proper hf₁
   refine ⟨b, r, ν, hb, hlev, ⟨⟨f, fo, isFinite_lift _ _ _ _ fo ?_, mu, hf₁, hmu⟩⟩⟩
   have fq : ∀ z, (B'.q ⁻¹' {z}).Finite := by
-    have := (((GlobalTheory.T.cmModelCoefficient_inclusions_etale_openImmersion E H n _ N N e hS' hN0 (Dvd.intro _ rfl) dvd_rfl).2 B'.b' B'.b'_inc).2 rfl).1
+    have := (((_root_.GlobalTheory.BaseRing.inclusion_RZ E H n _ N N e hS' hN0 (Dvd.intro _ rfl) dvd_rfl).2 B'.b' B'.b'_inc).2 rfl).1
     have := B'.q_fin
     intro z
     rw [← pullback.lift_fst B'.q B'.C₁.s B'.q_over]

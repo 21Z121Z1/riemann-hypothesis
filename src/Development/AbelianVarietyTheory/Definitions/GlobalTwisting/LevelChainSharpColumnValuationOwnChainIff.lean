@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Formalism.SharpRestriction.GlobalSchurBounds.ProductFirstZerothParts
-public import Formalism.LocalRingCardinality.DataKerP
+public import Formalism.LocalRingCardinality.Bundle0004
 public import Formalism.SharpRestriction.GlobalSchurBounds.GL3Theta
 
 @[expose] public section

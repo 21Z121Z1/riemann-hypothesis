@@ -1,6 +1,6 @@
 module
 
-public import ReciprocityTheory.DualLattices.ColengthSqBlockVandermonde
+public import ReciprocityTheory.DualLattices.Bundle0013
 
 @[expose] public section
 

@@ -1,7 +1,7 @@
 module
 
-public import Formalism.GaussJetBounds.GenLogInverse
-public import Formalism.GaussJetBounds.StatementW
+public import Formalism.GaussJetBounds.Bundle0001
+public import Formalism.GaussJetBounds.Bundle0004
 public import Formalism.GaussJetBounds.ThmAGauss
 public import Formalism.GaussJetBounds.GaussJetProofs.OneGauss
 

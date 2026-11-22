@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicArithmetic.IntegralCasts.CrystallinePeriods.Period
+public import Development.AutomorphicArithmetic.IntegralCasts.CrystallinePeriods.Bundle0002
 public import Development.AutomorphicArithmetic.IntegralCasts.CrystallinePeriods.Action
 public import Development.AutomorphicArithmetic.IntegralCasts.CrystallinePeriods.Embedding
 public import Development.WeilBound.CoreStatements.CrystallinePeriodRings.ExistsMapEqOfPowMul

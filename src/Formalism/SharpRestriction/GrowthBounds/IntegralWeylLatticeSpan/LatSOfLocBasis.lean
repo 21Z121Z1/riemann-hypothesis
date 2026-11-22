@@ -1,8 +1,8 @@
 module
 
 public import Formalism.LocalToGlobal.GlobalTheory.GL6.PRLocV
-public import Formalism.LocalToGlobal.GroupLattices.LevelCharts.SelfDualPI
-public import Formalism.LocalToGlobal.GroupLattices.TiedFamilies.IntSplitOf
+public import Formalism.LocalToGlobal.GroupLattices.LevelCharts.Bundle0001
+public import Formalism.LocalToGlobal.GroupLattices.TiedFamilies.Bundle0001
 public import Formalism.SharpRestriction.GenusPolyhedralBounds.RelativeIndexClassSets.LocIdFr
 
 @[expose] public section

@@ -2,18 +2,12 @@ module
 
 public import Mathlib
 public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.Bdy
-public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.FiniteTypeAlgebraCommonEigencharacterStatement
-public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.QuantumDeterminantCoefficientsExpansionStatement
-public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.CapelliPolynomialPermutationMatchStatement
-public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.SumOfLevelSizesEqStatement
-public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.StandardBlocksLevelSumStatement
-public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.CenterActionCommutesLeviDifferenceStatement
-public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.LeviActionPreservesSupportDegreeStatement
-public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.LeviActionCommutesWithTotalBoundaryStatement
-public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.LeviActionIsGlRepresentationStatement
-public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.HighestWeightClassBoundaryAndWeightStatement
-public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.FreeAlgebraActionOnSubquotientStatement
-public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.LevelWeightSumBoundStatement
+public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.Bundle0045
+public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.Bundle0047
+public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.Bundle0011
+public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.Bundle0048
+public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.LeviActionCommutesWithTotalBoundary
+public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.Bundle0046
 
 @[expose] public section
 
@@ -35,7 +29,7 @@ theorem sub_char {W : Type} [AddCommGroup W] [Module ℂ W] (R : Subalgebra ℂ 
   letI cr : CommRing R := { (inferInstance : Ring R) with
     mul_comm := fun x y => Subtype.ext (hc x x.2 y y.2) }
   haveI : Algebra.FiniteType ℂ R := (Subalgebra.fg_iff_finiteType R).1 hfg
-  obtain ⟨φ, hφ⟩ := GlobalTheory.T.finite_type_algebra_common_eigencharacter R W t ht
+  obtain ⟨φ, hφ⟩ := _root_.GlobalTheory.CompanionTheory.RgCOBlock.exists_character_of_smul_ne_zero R W t ht
   refine ⟨fun x => if h : x ∈ R then φ ⟨x, h⟩ else 0, ?_, ?_, ?_, ?_⟩
   · simp only [R.one_mem, dite_eq_left]
     exact map_one φ
@@ -59,7 +53,7 @@ theorem L_core : ∀ (W : Type) [AddCommGroup W] [Module ℂ W] (t : W) (M : ℕ
       ∀ Y : ℂ, ∏ i, (P i).eval (Y + s i) = Formalism.QuantumDeterminants.capP χ Y := by
   classical
   intro W _ _ t M d B s n χ τ ht hGl hCm hcap htr
-  obtain ⟨c, c1, c2, c3, c4⟩ := GlobalTheory.T.quantum_determinant_coefficients_expansion W M d B hGl hCm
+  obtain ⟨c, c1, c2, c3, c4⟩ := _root_.GlobalTheory.CompanionTheory.RgCOBlock.capelli_coef_commute W M d B hGl hCm
   let S : Finset (Module.End ℂ W) := univ.biUnion fun i => (range (d i + 1)).image (c i)
   have hS : ∀ x ∈ (S : Set (Module.End ℂ W)), ∃ i j, x = c i j := fun x hx => by
     obtain ⟨i, -, hi⟩ := mem_biUnion.1 (Finset.mem_coe.1 hx)
@@ -173,9 +167,9 @@ theorem L_lF : ∀ (n : ℕ) (lev : Fin n → ℕ) (V : Type) [AddCommGroup V] [
         lF E p q (lF E r v x) - lF E r v (lF E p q x) =
           (if q = r then lF E p v x else 0) - (if v = p then lF E r q x else 0) := by
   intro n lev V _ _ E hm hE x hx
-  refine ⟨fun p q hpq => ?_, fun p q r v h1 h2 => GlobalTheory.T.levi_action_is_gl_representation n lev V E hm hE x hx p q r v h1 h2⟩
+  refine ⟨fun p q hpq => ?_, fun p q r v h1 h2 => _root_.GlobalTheory.CompanionTheory.RgCOBlock.lF_glRel n lev V E hm hE x hx p q r v h1 h2⟩
   obtain ⟨a, b⟩ := GlobalTheory.T.levi_action_preserves_support_degree n lev V E hm x hx p q hpq
-  exact ⟨a, b, GlobalTheory.T.levi_action_commutes_with_total_boundary n lev V E hm hE x hx p q hpq⟩
+  exact ⟨a, b, _root_.GlobalTheory.CompanionTheory.RgCOBlock.LeviBd.lF_bd n lev V E hm hE x hx p q hpq⟩
 
 theorem coBlock : InjU → GenCOU → COBlock := by
   intro hI hG n
@@ -184,8 +178,8 @@ theorem coBlock : InjU → GenCOU → COBlock := by
   have hmono : Monotone lev := hgap.2.1
   obtain ⟨M, hM⟩ : ∃ M, ∀ a, lev a < M :=
     ⟨univ.sup lev + 1, fun a => Nat.lt_succ_of_le (Finset.le_sup (f := lev) (mem_univ a))⟩
-  have h : ∑ i, sz lev M i = n := GlobalTheory.T.sum_of_level_sizes_eq n M lev hM
-  obtain ⟨hlev, hsum⟩ := GlobalTheory.T.standard_blocks_level_sum n M lev h hmono hM
+  have h : ∑ i, sz lev M i = n := _root_.GlobalTheory.CompanionTheory.RgCOBlock.SumSz.sum_sz_eq_card n M lev hM
+  obtain ⟨hlev, hsum⟩ := _root_.GlobalTheory.CompanionTheory.RgCOBlock.stdBlocks_clusters n M lev h hmono hM
   set s := stdBlocks (sz lev M) h with hs
   have hinj : ∀ (i : Fin M) (p q : Fin (sz lev M i)), s ⟨i, p⟩ = s ⟨i, q⟩ ↔ p = q := fun i p q => by
     rw [s.injective.eq_iff]; simp
@@ -261,7 +255,7 @@ theorem coBlock : InjU → GenCOU → COBlock := by
     simp only [LinearMap.comp_apply, Submodule.mkQ_apply, LinearMap.smul_apply, Module.End.one_apply]
     rw [e, ← Submodule.Quotient.mk_smul, Submodule.Quotient.eq]
     obtain ⟨w, w1, w2, w3⟩ := hG n lev (fa n Y) (fb (sz lev M) h Y) hmono
-      (fun V _ _ E hE => GlobalTheory.T.center_action_commutes_levi_difference n M lev (sz lev M) h Y hmono hlev V E hE) V E hE dg z z.2.1 z.2.2.1 z.2.2.2
+      (fun V _ _ E hE => _root_.GlobalTheory.CompanionTheory.RgCOBlock.co_hyp n M lev (sz lev M) h Y hmono hlev V E hE) V E hE dg z z.2.1 z.2.2.1 z.2.2.2
     have hq : ev E (fa n Y) = Formalism.QuantumDeterminants.capP χ Y • (1 : Module.End ℂ V) := by
       unfold fa
       rw [map_qdet]
@@ -276,7 +270,7 @@ theorem coBlock : InjU → GenCOU → COBlock := by
       ext A
       simp
   set t : Cn n V := Pi.single (omU ε lev) u with ht
-  obtain ⟨tc, tw⟩ := GlobalTheory.T.highest_weight_class_boundary_and_weight n ε lev V E γ u hmono hu
+  obtain ⟨tc, tw⟩ := _root_.GlobalTheory.CompanionTheory.RgCOBlock.TopU.top_cycle_weight n ε lev V E γ u hmono hu
   have tsup : SuppIn (inU lev) t := by
     intro A hA i hi
     have : A = omU ε lev := by
@@ -311,7 +305,7 @@ theorem coBlock : InjU → GenCOU → COBlock := by
   refine ⟨σ, fun c => ?_⟩
   by_cases hc : c < M
   · have e := hσ ⟨c, hc⟩
-    have hb := GlobalTheory.T.level_weight_sum_bound n M ε lev ⟨c, hc⟩ h
+    have hb := _root_.GlobalTheory.CompanionTheory.RgCOBlock.norm_cluster_sum_le n M ε lev ⟨c, hc⟩ h
     simp only at e hb
     rw [e, (hP _).2.2]
     refine le_of_eq_of_le ?_ hb

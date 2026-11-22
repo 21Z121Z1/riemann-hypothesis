@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.StdLvPr
-public import Formalism.LocalToGlobal.HermitianForms.TiedTwJSym
+public import Formalism.LocalToGlobal.HermitianForms.Bundle0006
 
 @[expose] public section
 

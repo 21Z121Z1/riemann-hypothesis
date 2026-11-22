@@ -3,10 +3,10 @@ module
 public import Mathlib
 public import Formalism.SharpRestriction.GlobalSchurBounds.StandardLattice
 public import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.WeilTensorModels
-public import Development.WeilBound.ThetaLifts.TowerModels.TwistedSums.LatAtVAtStable
-public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.AddCharTrivialIntegralFiniteAdeleMul
-public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.ProductFormulaHaar.TrSumOf
-public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.TraceMixedEmbedding
+public import Development.WeilBound.ThetaLifts.TowerModels.TwistedSums.Bundle0001
+public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.Bundle0059
+public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.ProductFormulaHaar.Bundle0002
+public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0060
 
 @[expose] public section
 

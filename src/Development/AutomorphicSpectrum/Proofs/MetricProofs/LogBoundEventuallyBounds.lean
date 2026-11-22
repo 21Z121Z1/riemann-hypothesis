@@ -3,18 +3,16 @@ module
 public import Mathlib
 public import Development.AutomorphicSpectrum.Definitions.MetricPeriods.IsEigFrames
 public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.BdryChart
-public import ReciprocityTheory.AnalyticForms.PlurisubharmonicFunctions.IsPshLocallyIntegrableStatement
-public import Development.AutomorphicSpectrum.Proofs.MetricProofs.PeriodMatrixLocalTrivialization
+public import ReciprocityTheory.AnalyticForms.PlurisubharmonicFunctions.Bundle0001
+public import Development.AutomorphicSpectrum.Proofs.MetricProofs.Bundle0025
 public import Development.AutomorphicSpectrum.Proofs.MetricProofs.SubframeDetLogGrowth
-public import Development.AutomorphicSpectrum.Proofs.MetricProofs.LogPeriodsSubframeDetBounds
+public import Development.AutomorphicSpectrum.Proofs.MetricProofs.Bundle0029
 public import Development.AbelianVarietyTheory.Proofs.CovolumeBounds.DifferentiableOnOfTendstoLocallyUniformlyOn
 public import GroundTheory.HeightsAndTheta.Heights.Regularisation.Assembly
 public import GroundTheory.HeightsAndTheta.Heights.Regularisation.PRiemannExtensionSlices
 public import GroundTheory.HeightsAndTheta.Heights.Regularisation.PPuncturedExpOrder
-public import GroundTheory.HeightsAndTheta.Heights.Regularisation.PLogCoverDescent
-public import GroundTheory.HeightsAndTheta.Heights.MatrixCharts.PAnalyticDerivBound
-public import GroundTheory.HeightsAndTheta.Heights.MatrixCharts.PGramEntryDeriv
-public import GroundTheory.HeightsAndTheta.Heights.MatrixCharts.PInvEntryBound
+public import GroundTheory.HeightsAndTheta.Heights.Regularisation.Bundle0005
+public import GroundTheory.HeightsAndTheta.Heights.MatrixCharts.Bundle0003
 
 @[expose] public section
 

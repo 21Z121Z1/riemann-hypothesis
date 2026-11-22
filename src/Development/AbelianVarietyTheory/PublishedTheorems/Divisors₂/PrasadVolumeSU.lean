@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Statements.PlaceShiftStatements.DefiniteBound
-public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.IsCompactDualHaar
+public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.Bundle0001
 
 @[expose] public section
 

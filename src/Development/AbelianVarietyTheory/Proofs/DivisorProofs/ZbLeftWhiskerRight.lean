@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DescCocycle
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1997
 
 @[expose] public section
 

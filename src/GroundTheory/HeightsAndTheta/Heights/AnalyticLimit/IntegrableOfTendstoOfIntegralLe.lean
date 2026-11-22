@@ -1,11 +1,11 @@
 module
 
 public import Mathlib
-public import ReciprocityTheory.AnalyticForms.PotentialTheory.HessCEqZeroOfEventuallyEqZero
+public import ReciprocityTheory.AnalyticForms.PotentialTheory.Bundle0004
 public import ReciprocityTheory.AnalyticForms.PotentialTheory.MaMeasureB
-public import ReciprocityTheory.AnalyticForms.PotentialTheory.PotentialContDiffAt
+public import ReciprocityTheory.AnalyticForms.PotentialTheory.Bundle0007
 public import ReciprocityTheory.AnalyticForms.PotentialTheory.Stokes
-public import ReciprocityTheory.AnalyticForms.PotentialTheory.ContDiffAtOfIsPotential
+public import ReciprocityTheory.AnalyticForms.PotentialTheory.Bundle0003
 public import GroundTheory.HeightsAndTheta.Heights.AnalyticLimit.Objects
 
 @[expose] public section

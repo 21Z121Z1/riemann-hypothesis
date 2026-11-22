@@ -1,13 +1,20 @@
 module
 
-public import Development.WeilBound.CoreStatements.FlagImmersions.FibSandwich
+public import Development.WeilBound.CoreStatements.FlagImmersions.Bundle0015
 public import Development.WeilBound.CoreStatements.VolumeEquality.OnePieceB
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.RingOfIntegersHomInjective
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.InducedModelMorphismCompStructureMap
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.GenericOfSmoothSurjectiveStatement
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.FamilyUniformisationLocalPeriodStatement
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0111
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0096
+public import Mathlib
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0089
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.Bundle0005
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0116
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.BdryChart
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsFlatAnIffIsConstMul
+public import Development.AutomorphicSpectrum.Definitions.MetricPeriods.ClopenCondOnto
+public import Development.AbelianVarietyTheory.Definitions.Uniformization.PointEqOfSubsingleton
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.BlowupProjections.BlowupProjStatement
 public import Development.AbelianVarietyTheory.Statements.HyperbolicHypotheses.HypothesesInhabitedHyperbolic
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.RegularFunctionConstOfFiniteValuesAnyLevel
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0043
 
 @[expose] public section
 
@@ -106,7 +113,7 @@ theorem periodOf : PeriodOf := by
   haveI : IsPreimmersion Y.j := by
     show IsPreimmersion (Y.jQ ≫ pullback.fst _ _)
     infer_instance
-  have hξ : IsCptGen Z.ξ₀ := GlobalTheory.T.generic_of_smooth_surjective c.F _ _ _ _ _ Y.j s hsm' rfl Z.gen (Y.j.stalkMap_surjective _)
+  have hξ : IsCptGen Z.ξ₀ := _root_.GlobalTheory.CompanionTheory.Ar.CptLift.isCptGen_of_smooth_of_surjective c.F _ _ _ _ _ Y.j s hsm' rfl Z.gen (Y.j.stalkMap_surjective _)
   letI : Algebra c.F Z.Ω := Z.inc.toAlgebra
   have hcl : ConstClosed c.F Z.Ω := by
     rintro a ⟨f, hf, hfa⟩
@@ -130,7 +137,7 @@ theorem periodOf : PeriodOf := by
     intro m T y hT hc hy _ b₁ hb₁ b₂ hb₂
     have hall : ∀ b ∈ T, y b ≫ s = y b₁ ≫ s := fun b hb => over_const hc hy hb hb₁
     by_cases h : y b₁ ≫ s = spMap (algebraMap c.F ℂ)
-    · obtain ⟨i, hi⟩ := GlobalTheory.T.family_uniformisation_local_period E H D l Xo _ g ty FU m T (fun b => under (y b)) hT hc ⟨b₁, hb₁⟩
+    · obtain ⟨i, hi⟩ := _root_.GlobalTheory.CompanionTheory.Ar.Flat.exists_index_of_isPreconnected E H D l Xo _ g ty FU m T (fun b => under (y b)) hT hc ⟨b₁, hb₁⟩
         (fun b hb => hover _ ((hall b hb).trans h)) (GagaRat.isHolTo_comp _ hy)
       have key : ∀ b ∈ T, F (y b) = ((i : ℕ) : ℂ) := fun b hb => by
         obtain ⟨B', P, -, m1, -, hP, e⟩ := hi b hb

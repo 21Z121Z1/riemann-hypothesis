@@ -1,10 +1,10 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicArithmetic.LocalEmbeddings.ComplEquivEvW
+public import Development.AutomorphicArithmetic.LocalEmbeddings.Bundle0001
 public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.WeilModelArchimedeanExponent
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsGaussianDatumFlippedFiniteTensorBigRoute
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsAdmissibleCMBaseDataOfSquareTupleStanding
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1529
 
 @[expose] public section
 

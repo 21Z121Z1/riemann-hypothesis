@@ -1,39 +1,39 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Divisors.HypothesesX
-public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.GrothendieckDeformation
-public import Development.AbelianVarietyTheory.Definitions.Divisors.WellChosen
-public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.SiegelToroidalIntegral
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0071
+public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.Bundle0008
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0041
+public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.Bundle0012
 public import Development.AbelianVarietyTheory.Definitions.Divisors.GenRatios
 public import Development.AbelianVarietyTheory.Definitions.Divisors.NormNegCmConstantEqAtAllEmbeddings
-public import Development.AbelianVarietyTheory.Definitions.Divisors.P22
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0058
 public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.IsLogCanonicalMultipleCanonical
-public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.GeometricallyConnectedOfIsIsoRestrict
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsMulEqOfGenericUniqueComplexPoint
-public import Development.AbelianVarietyTheory.Definitions.Divisors.HtValOnSubset
+public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.Bundle0004
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1847
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0049
 public import Development.AbelianVarietyTheory.Definitions.Divisors.MulSmulIdemMem
 public import Development.AbelianVarietyTheory.Definitions.Divisors.IsHomogeneousCompIdeal
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsCuspCentre
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FramesOnEqModel
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CuspFormsComponentFiniteDimensionalAndSpanned
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsCuspFormPairQuotientHorizontalGeneratorStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsSectionQuotientOfContinuousReadingStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ContinuousOnReadingIntegerExponentSectionStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SecZEqZeroOfGenVal
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnfoldingSectionsFiniteType
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsTwSecOfConst
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1834
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1798
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2251
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1861
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1864
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1404
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1409
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1916
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.OrdConjDifferentEqZero
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HorizontalGeneratorZpowMulCuspFormMemSpan
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1820
 public import Development.AbelianVarietyTheory.Proofs.TorusHaarMeasure.IndicatorMemSSAndDomSpan
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ComplexUniformizationLawsOfGoodDeepCover
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ModuliLawsOfPrincipalLevelFieldOfDefinition
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GoodCoverComponentExtendsToRankOneCuspData
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsPrincipalCongruenceBackTriangularFrame
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1842
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1826
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1875
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1496
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.FundamentalDomains.RealPlaceEmbeddings
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.TaylorDiscriminants.WickVanishing.GGConn
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArakelovVolumes.UpperBounds.DivStatementPfLA
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.FundamentalDomains.FourierCoefficientDomain
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.TaylorDiscriminants.WickVanishing.Bundle0011
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArakelovVolumes.UpperBounds.Bundle0006
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.FundamentalDomains.Bundle0014
 
 @[expose] public section
 
@@ -187,7 +187,7 @@ theorem rdU_eq_of_rdU_mul' (hL : Laws U x) {σ : c.F →+* ℂ} (hσ : GoodEmb c
     differentiableOn_of_mem_holSub' ((mem_cuspW.1 (Submodule.mem_inf.1 hf).1).2 σ hσ) k
   have hint := interior_closure_zeros ((U σ).X k) hdiff hex
   have hcont : ContinuousOn (fun y => rdU (U σ) s k y - q k y) ((U σ).X k).dom :=
-    (GlobalTheory.T.continuousOn_reading_integerExponent_section E H Dw l Xo c r U x hL e' he s hs σ hσ k).sub (hq k)
+    (_root_.GlobalTheory.ReadCont.continuousOn_rdU E H Dw l Xo c r U x hL e' he s hs σ hσ k).sub (hq k)
   have hO := FourierCoefficientDomain.isOpen_dom ((U σ).X k)
   have key : ∀ y ∈ ((U σ).X k).dom, rdU (U σ) s k y = q k y := by
     intro y hy
@@ -244,7 +244,7 @@ end SlopeTestRemainingChoices
 
 theorem flatSec_always : Always fun U x => ArchEx U x := by
   intro E _ _ _ H Dw l Xo c r U x hL Z τ
-  obtain ⟨G, f, g, -, hf, hg, hf0, hq⟩ := GlobalTheory.T.exists_cuspForm_pair_quotient_horizontal_generator E H Dw l Xo c r U x hL Z τ
+  obtain ⟨G, f, g, -, hf, hg, hf0, hq⟩ := _root_.GlobalTheory.FlatPair.flat_pair E H Dw l Xo c r U x hL Z τ
   have hfs : f ∈ secZ Xo c (exZ Dw G) := cuspW_le_secZ G hf.1
   have hgs : g ∈ secZ Xo c (exZ Dw (G + wtOf Dw (flatWt Dw τ) 0)) := cuspW_le_secZ _ hg.1
   have hex : exZ Dw (G + wtOf Dw (flatWt Dw τ) 0) - exZ Dw G = exOf Dw (flatWt Dw τ) 0 := by
@@ -327,7 +327,7 @@ theorem exists_ne_zero_key (hL : Laws U x) : Nonempty (KeySec Xo c) ∧ ∀ (Z :
   obtain ⟨κ, k₁, k₂, -, k₄, k₅, k₆, -, -⟩ := GlobalTheory.KeyFamClosing.keyFam_one
   let e : Fin (Fintype.card (Σ τ : E →+* ℂ, Fin (Dw.mult τ))) ≃ Σ τ : E →+* ℂ, Fin (Dw.mult τ) :=
     (Fintype.equivFin _).symm
-  obtain ⟨K, hKmem, hKval⟩ := GlobalTheory.T.exists_unit_section_thetaKeyRule_weightFour κ k₁ k₂ k₆ E H Dw l Xo c _ e hL.pos
+  obtain ⟨K, hKmem, hKval⟩ := _root_.GlobalTheory.KeyFourth.exists_unit_secZ_keyRule κ k₁ k₂ k₆ E H Dw l Xo c _ e hL.pos
   have hσ0 := goodEmb_goodOf c c.F.val.toRingHom
   obtain ⟨ρ, -⟩ := GlobalTheory.T.exists_keySection_fourthRoot_perComponent κ k₁ k₂ k₆ k₄ E H Dw l Xo c _ e _ r (U _) K hσ0 (hL.unf _ hσ0) hL.geo hL.pos hKmem hKval
   refine ⟨⟨ρ⟩, fun Z G hG ⟨f, hf, hf0⟩ => ⟨f * (idem Z * (K : Rul Xo c)), ?_,
@@ -345,7 +345,7 @@ theorem exists_ne_zero_key (hL : Laws U x) : Nonempty (KeySec Xo c) ∧ ∀ (Z :
   · have := mul_mem_secZ (idem_mem_secZ Z) hKmem
     rwa [zero_add, ← hex] at this
   · rw [mul_comm]; exact mul_mem_suppOn _ (idem_mem_suppOn Z)
-  · obtain ⟨C, hC, -, hCeq⟩ := GlobalTheory.T.thetaKeySection_norm_complexPoints_eq_two_pi_pow κ k₁ k₂ k₅ E H Dw l Xo c _ e σ r (U σ) x K hσ (hL.unf σ hσ) (hL.xi σ hσ)
+  · obtain ⟨C, hC, -, hCeq⟩ := _root_.GlobalTheory.KeyArchNorm.homN_key_const κ k₁ k₂ k₅ E H Dw l Xo c _ e σ r (U σ) x K hσ (hL.unf σ hσ) (hL.xi σ hσ)
       ⟨ρ⟩ hL.pos hKmem hKval
     refine ⟨C, fun z hz => ?_⟩
     have h0 : homN (U σ) x (wtOf Dw 0 (-4)) (K : Rul Xo c) z = C := hCeq z.1 z.2 hz.1

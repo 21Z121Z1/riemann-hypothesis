@@ -1,9 +1,9 @@
 module
 
 public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.UnivChar
-public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.NoFormsOff
+public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0029
 public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.SubsetTwistExceptionalPlaces
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FrameEquivApply
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0695
 public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.ExistsUniqueHcharOfFiniteOrder
 
 @[expose] public section

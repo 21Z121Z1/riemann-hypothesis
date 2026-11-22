@@ -1,9 +1,9 @@
 module
 
-public import Development.WeilBound.CoreStatements.VolumeEquality.RootBranches
-public import Development.WeilBound.CoreStatements.VolumeEquality.CoverRootsAlg
-public import Development.WeilBound.CoreStatements.VolumeEquality.CoverRootsSch
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.AbProj
+public import Development.WeilBound.CoreStatements.VolumeEquality.Bundle0002
+public import Development.WeilBound.CoreStatements.VolumeEquality.Bundle0001
+public import Development.WeilBound.CoreStatements.VolumeEquality.Bundle0003
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.Bundle0006
 
 @[expose] public section
 

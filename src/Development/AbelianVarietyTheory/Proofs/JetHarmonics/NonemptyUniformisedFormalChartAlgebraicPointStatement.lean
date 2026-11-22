@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.NonemptyUniformisedFormalChartAlgebraicPoint
+public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0160
 public import Development.AbelianVarietyTheory.Definitions.Jets.TwoPlaces
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.TaylorDiscriminants.ConnectionKillsSeries
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.TaylorDiscriminants.Bundle0002
 
 @[expose] public section
 

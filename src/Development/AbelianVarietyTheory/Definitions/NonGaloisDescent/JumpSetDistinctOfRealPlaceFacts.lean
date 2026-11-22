@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Formalism.SharpRestriction.LevelLetterCocycles.AdmissibleParameterJ
+public import Formalism.SharpRestriction.LevelLetterCocycles.Bundle0010
 public import Formalism.SharpRestriction.LevelLetterCocycles.ExistsInertiaCharpolyFactorOfTameType
 
 @[expose] public section

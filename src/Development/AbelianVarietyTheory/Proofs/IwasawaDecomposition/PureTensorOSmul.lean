@@ -2,24 +2,24 @@ module
 
 public import Mathlib
 public import Formalism.LocalToGlobal.IndefiniteReal.OneMapT
-public import Formalism.LocalToGlobal.IndefiniteReal.ConcretePkgSpec
+public import Formalism.LocalToGlobal.IndefiniteReal.Bundle0023
 public import Formalism.LocalToGlobal.IndefiniteReal.FWExist
-public import Formalism.LocalRingCardinality.DataExtra
-public import Formalism.LocalRingCardinality.DataTies
-public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.PureTensorLIntertwine
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.GramMapMulInv
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ContinuousOnAtTau
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsCharFamIsVacVec
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IsFockVacAtOfIsThetaAt
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IsSelfDualCoordLatticeOfSelfDualFrameStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MaximalCompactActsOnRealVacuaByDetPowersStatement
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsExtremalUnitVectorSameHighestImageStatement
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.MinorProductTorusWeightBlockTranslatesStatement
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.LowestKTypeSmoothVectorsIsKStableStatement
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.FockPolynomialVectorsInjectiveNonzeroVacuumStatement
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.FockPolynomialVectorMaximalCompactBasisSubstitutStatement
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.SchrodingerIntertwinerInjectiveSchwartzBruhatStatement
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsNonvanishingFiniteDatumDefiniteLiftStatement
+public import Formalism.LocalRingCardinality.Bundle0007
+public import Formalism.LocalRingCardinality.Bundle0003
+public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.Bundle0068
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0198
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0171
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0139
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0142
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0135
+public import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.IsStepWeil
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0925
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsExtremalUnitVectorSameHighestImage
+public import Formalism.LocalToGlobal.IndefiniteReal.ExistsChosenExtremalVector
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.MinorProductTorusWeightBlockTranslates
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0181
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0216
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0419
 
 @[expose] public section
 
@@ -49,9 +49,9 @@ theorem thPVec_ne_zero {ψ : AddChar (AF D.host.F) ℂ} {θ : InfFam D} {S T : H
   have ho := GlobalTheory.PlaceModelSum.isOrthSum_of_isIdemSum he
   have hinf := ho.conj.infPart_eq
   rw [hall Tm hTm]
-  obtain ⟨x, h1, h2, h3⟩ := GlobalTheory.T.exists_nonvanishing_finite_datum_definite_lift D S T βS βT Pg Q _ ξ e hr he (fun PP h => Finset.mem_union_left _ h)
+  obtain ⟨x, h1, h2, h3⟩ := _root_.GlobalTheory.AdjDatumNe.exists_datum_ne_zero D S T βS βT Pg Q _ ξ e hr he (fun PP h => Finset.mem_union_left _ h)
     fun PP h => Finset.mem_union_right _ h
-  refine GlobalTheory.T.schrodingerIntertwiner_injective_schwartzBruhat D ψ S T ΛS ΛT _ f₀ _ Tm hv.1 hS hT ho.conj.idem
+  refine _root_.GlobalTheory.PlaceModelInj.placeModel_ne_zero D ψ S T ΛS ΛT _ f₀ _ Tm hv.1 hS hT ho.conj.idem
     (by rw [GlobalTheory.DualPairCheck.cA_cA, mul_comm, he.2]) hinf hTm h0
     (GlobalTheory.PlaceVec.isSBHalf_of_red (GlobalTheory.PlaceVec.selfDual_isFullLattice S ΛS hS)
       (GlobalTheory.PlaceVec.selfDual_isFullLattice T ΛT hT) hinf (frMapAdj S T βS βT) (GlobalTheory.PlaceVec.frMapAdj_add S T βS βT)
@@ -248,7 +248,7 @@ theorem om_pt {ψ : AddChar (AF D.host.F) ℂ} {θ : InfFam D} {S T : HSp D} {χ
       (onb M) (fun ρ => onb M ρ * Function.update (fun _ => (1 : Matrix (Fin T.rank) (Fin T.rank) ℂ)) τ k ρ) 1 g (fun ρ => by rw [e1]) hc
       (fun ρ => by rw [e1, Matrix.one_mul]) (fun ρ => ?_) f hf P).2,
     h f hf hv 1 (one_mem _) g a1 (fun ρ => by rw [e1]) hc, pureTensorO_smul, map_smul,
-    GlobalTheory.T.fockPolynomialVector_maximalCompact_basis_substitution D ψ θ S T S' M BS f _ (Function.update (fun _ => 1) τ (tw (M.ε τ) k)) hW.std hθ hS hf (fun ρ => ?_)
+    _root_.GlobalTheory.FockSubst.pureTensorO_subst D ψ θ S T S' M BS f _ (Function.update (fun _ => 1) τ (tw (M.ε τ) k)) hW.std hθ hS hf (fun ρ => ?_)
       (fun ρ a b => ?_)]
   · congr 1
     rw [Finset.prod_eq_single τ (fun ρ _ e => ?_) (fun e => (e (Finset.mem_univ _)).elim)]
@@ -297,7 +297,7 @@ theorem delta_weights {m n : ℕ} (p q : D.what₂.Tau → ℕ) (ap am : D.what�
           Complex.exp (((∑ a, ν a * t a : ℝ) : ℂ) * Complex.I) • y) →
         ∑ a : Fin m, ν a * (if ε a then -((a : ℕ) : ℝ) else ((a : ℕ) : ℝ)) ≤
           ∑ a : Fin m, μ a * (if ε a then -((a : ℕ) : ℝ) else ((a : ℕ) : ℝ)) := by
-  obtain ⟨e, h1, h2⟩ := GlobalTheory.T.minorProduct_torusWeight_block_translates D m n p q ap am τ
+  obtain ⟨e, h1, h2⟩ := _root_.GlobalTheory.MinorWeight.delta_torus_weight D m n p q ap am τ
   refine ⟨fun a => κ a + (if ε a then 1 else -1) * e a, fun t => ?_, fun ν y hy hy0 hw => ?_⟩
   · rw [hπ, tw_diag, h1 _ _ (fun ρ hρ => Function.update_of_ne hρ _ _) (Function.update_self _ _ _), hχ, smul_smul]
     congr 1
@@ -396,9 +396,9 @@ theorem replace_at {V W : HSp D} {S' : D.what₂.Tau → SPar} {θ : InfFam D} (
     χ k • (sub (Function.update (fun _ => 1) τ (tw (M.ε τ) k))).toLinearMap
   obtain ⟨μ, h1, h2⟩ := delta_weights (n := V.rank) p q ap am τ hε χ κ hχ π fun _ _ => rfl
   rw [← hd] at h1 h2
-  obtain ⟨x, hx, x1, x2, x3⟩ := GlobalTheory.T.exists_extremalUnitVector_same_highestImage _ _ _ (M.ε τ) (M.lam τ) μ (M.σ τ) π _ (φ₀ ∘ₗ r) (ι (v τ)) (M.ds τ).2.2.1
-    inf_le_left (GlobalTheory.T.lowestKType_smoothVectors_isKStable D W S' M τ) (fun k hk x hx => by
-      obtain ⟨u', hu'⟩ := hL _ (GlobalTheory.T.lowestKType_smoothVectors_isKStable D W S' M τ k hk x hx)
+  obtain ⟨x, hx, x1, x2, x3⟩ := _root_.GlobalTheory.ExtRep.exists_extremal_same_image _ _ _ (M.ε τ) (M.lam τ) μ (M.σ τ) π _ (φ₀ ∘ₗ r) (ι (v τ)) (M.ds τ).2.2.1
+    inf_le_left (_root_.GlobalTheory.SmoothLowKStable.isKStableOn_lowKSub_inf_sm D W S' M τ) (fun k hk x hx => by
+      obtain ⟨u', hu'⟩ := hL _ (_root_.GlobalTheory.SmoothLowKStable.isKStableOn_lowKSub_inf_sm D W S' M τ k hk x hx)
       obtain ⟨u, rfl⟩ := hL x hx
       rw [← hu', hφ, hφ]
       apply hinj
@@ -420,10 +420,10 @@ theorem ioExt : ∀ (D : D7) (G : Type) [Group G] [Fintype G] (Pl0 T : Type) (A 
       simp [opPow]
     rwa [e] at h
   have hv := GlobalTheory.DatumFock.isFockVacAt_thPVec _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ (hP.vP i A.μ0) hf
-  have hne : R.vP i A.μ0 ≠ 0 := thPVec_ne_zero (GlobalTheory.T.isSelfDualCoordLattice_of_selfDualFrame D _ _ _ _ (hL.βV i)) (GlobalTheory.T.isSelfDualCoordLattice_of_selfDualFrame D _ _ _ _ (hL.βW i))
+  have hne : R.vP i A.μ0 ≠ 0 := thPVec_ne_zero (_root_.GlobalTheory.SDFrameLattice.isSelfDualC_of_isSDFrame D _ _ _ _ (hL.βV i)) (_root_.GlobalTheory.SDFrameLattice.isSelfDualC_of_isSDFrame D _ _ _ _ (hL.βW i))
     ((rank_Wc i).trans_le (r_le_V i)) (hP.vP i A.μ0)
   have hS := fun τ => cartan_one (hM.BV i τ)
-  have hinj := GlobalTheory.T.fockPolynomialVectors_injective_nonzero_vacuum D R.ψ R.θ _ _ _ (R.MW i (sg0 D A)) (R.BV i) _ (hP.ωP i A.μ0).std hM.inf hS (hM.BV i) hf hne hv
+  have hinj := _root_.GlobalTheory.FockIndep.pureTensorO_injective D R.ψ R.θ _ _ _ (R.MW i (sg0 D A)) (R.BV i) _ (hP.ωP i A.μ0).std hM.inf hS (hM.BV i) hf hne hv
   have hio := hP.ioP i A.μ0
   obtain ⟨v₀, w, h1, hw, h2⟩ := hio.2.2
   have ind : ∀ s : Finset D.what₂.Tau, ∃ v : ∀ ρ, lowT (R.MW i (sg0 D A)) ρ,

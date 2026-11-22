@@ -1,6 +1,6 @@
 module
 
-public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.BesselFormsTrivialNeBot
+public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.Bundle0006
 public import Formalism.FormalDegreeBessel.StatementDS
 public import Formalism.SharpRestriction.CuspSpanNormBounds.RelevantZeroGramTerms
 

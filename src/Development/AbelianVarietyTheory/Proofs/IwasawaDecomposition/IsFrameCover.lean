@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.LineModel
+public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.Bundle0038
 public import Development.AbelianVarietyTheory.Proofs.CovolumeBounds.IsProjOverCompOfIsClosedImmersion
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IntOIsLocalRing
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0496
 
 @[expose] public section
 

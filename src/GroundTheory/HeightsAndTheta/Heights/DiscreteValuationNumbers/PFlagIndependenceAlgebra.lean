@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.StatementsFlagIndependence
+public import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.Bundle0017
 
 @[expose] public section
 

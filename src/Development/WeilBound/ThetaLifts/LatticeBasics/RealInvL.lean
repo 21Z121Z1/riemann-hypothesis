@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Development.WeilBound.ThetaLifts.LatticeBasics.ExistsRealStructure
-public import Development.WeilBound.ThetaLifts.SchwartzMoments.SchwartzDqTendsto
+public import Development.WeilBound.ThetaLifts.SchwartzMoments.Bundle0002
 
 @[expose] public section
 

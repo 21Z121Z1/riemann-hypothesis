@@ -3,7 +3,7 @@ module
 public import Development.WeilBound.RepresentationTheoryGL.ResidualSpectrum.SliceTensors.TwistedSlicesSquareIntegrable
 public import Development.WeilBound.RepresentationTheoryGL.ResidualSpectrum.ExponentialNegativity.NormalisedExistence.ExistsNormed
 public import GroundTheory.AutomorphicForms.AutomorphicFormSpaces.GKStableParabolic
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CapelliConstantTermVanishing
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0346
 
 @[expose] public section
 

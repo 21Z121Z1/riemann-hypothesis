@@ -3,7 +3,7 @@ module
 public import Mathlib
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.AdditiveValuationNorms.CokLenLeOfRangeLe
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.NumberFieldTowers.XTwApplyApply
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.GaloisLibrary.KummerTheory.DinfNil
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.GaloisLibrary.KummerTheory.Bundle0004
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.AdditiveValuationNorms.DualUnip
 
 @[expose] public section

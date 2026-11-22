@@ -1,8 +1,8 @@
 module
 
 public import Formalism.LocalToGlobal.GlobalTheory.GL4.PacketOfFrameDegree
-public import Formalism.LocalToGlobal.GlobalTheory.GL4.PTenFrames
-public import Formalism.LocalToGlobal.Columns.BrpStarLatLattice
+public import Formalism.LocalToGlobal.GlobalTheory.GL4.Bundle0002
+public import Formalism.LocalToGlobal.Columns.Bundle0018
 
 @[expose] public section
 

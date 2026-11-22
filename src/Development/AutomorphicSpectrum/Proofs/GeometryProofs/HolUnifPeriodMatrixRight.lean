@@ -1,29 +1,29 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.SlopeBoundSt
-public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.ArchBetween
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.Bundle0012
 public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.BdryChart
 public import Development.AutomorphicSpectrum.Definitions.MetricPeriods.ClopenCondOnto
 public import Development.AbelianVarietyTheory.Definitions.Uniformization.PointEqOfSubsingleton
 public import Development.AbelianVarietyTheory.Definitions.Degenerations.AdmissiblePadicIntMaximalIdeal
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.UniformisationConclusion
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.HeckeKer
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.Bundle0003
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.BlowupProjections.BlowupProjStatement
 public import Development.AbelianVarietyTheory.PublishedTheorems.SemiabelianTori.GeometricallyConnectedSplitTorusAff
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.IsAbLift
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0162
 public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsLinearLiftOfAdditiveFamily
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExponentialSurjectiveSemiabelianStatement
-public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsHolPtsOfFamExp
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0233
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.Bundle0009
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.Bundle0015
 public import Development.AbelianVarietyTheory.Proofs.HomogeneousIdeals.HomBaseChangeBijectiveOfLeNilradical
-public import Development.AbelianVarietyTheory.Proofs.HomogeneousIdeals.GeometricallyConnectedOfIsPullbackOfSurjective
-public import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.AppellHumbertUnifTangentWeilPairing
-public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.IsoFreePerpLabelKernelWeights
-public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsLocalThetaSectionFibreNonzero
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.IsHolToFibPtAndCompFibre
-public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsLinearEquivLift
+public import Development.AbelianVarietyTheory.Proofs.HomogeneousIdeals.Bundle0010
+public import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.Bundle0021
+public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.Bundle0064
+public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.Bundle0082
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0035
+public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0021
 public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.PreimageEqTopOfSurjective
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PullbackSections.HolomorphicFamilies.HolPairA
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PullbackSections.HolomorphicFamilies.Bundle0004
 
 @[expose] public section
 
@@ -349,6 +349,6 @@ theorem periods_map_onto_lattice : ∀ (E : Type) [Field E] [NumberField E] [IsC
     show P₁ (T δ ≫ P.τ.i) = _
     rw [hT, hτ]
   exact core P₁ (ptU_bijective _ c₁) D (ptU_bijective hA c₂).1 Q hQ (e.ex b) (e.add b hb)
-    (GlobalTheory.T.exponential_surjective_semiabelian R t.G g n M B ψ e t.semi b hb) u.ex u.ex_add u.Λ u.ker ℓ hl hker
+    (_root_.GlobalTheory.CompanionTheory.Ar.Flat.famExp_ex_surjective R t.G g n M B ψ e t.semi b hb) u.ex u.ex_add u.Λ u.ker ℓ hl hker
 
 end GlobalTheory.CompanionTheory.Ar.QuotLoc

@@ -1,6 +1,6 @@
 module
 
-public import Formalism.LocalToGlobal.ProjectiveLattices.VAtVNeBot
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0010
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.RankPf
 
 @[expose] public section

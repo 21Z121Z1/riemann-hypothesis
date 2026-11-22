@@ -1,7 +1,7 @@
 module
 
-public import Formalism.SharpRestriction.GrowthBounds.StandardPolynomials.PreSys
-public import Formalism.SharpRestriction.GrowthBounds.CoarseMultiplicity.DivDerZero
+public import Formalism.SharpRestriction.GrowthBounds.StandardPolynomials.Bundle0003
+public import Formalism.SharpRestriction.GrowthBounds.CoarseMultiplicity.Bundle0008
 
 @[expose] public section
 

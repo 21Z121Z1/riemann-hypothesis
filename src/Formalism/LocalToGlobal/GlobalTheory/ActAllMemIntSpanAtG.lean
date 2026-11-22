@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Formalism.SharpRestriction.GlobalSchurBounds.TotallyPositiveTraceGeOfNormDiscr
-public import Formalism.GradedWeylDivisibility.FockSpaceTableaux.LClosedeqLemmas
+public import Formalism.GradedWeylDivisibility.FockSpaceTableaux.Bundle0010
 public import Formalism.GradedWeylDivisibility.FinalD
 
 @[expose] public section

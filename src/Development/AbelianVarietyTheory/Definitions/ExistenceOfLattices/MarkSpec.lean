@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Formalism.LocalToGlobal.ProjectiveLattices.FamilyUniformisationBasePointOrthogonalBis
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0027
 public import Development.AbelianVarietyTheory.Definitions.ExistenceOfLattices.NormConst
 
 @[expose] public section

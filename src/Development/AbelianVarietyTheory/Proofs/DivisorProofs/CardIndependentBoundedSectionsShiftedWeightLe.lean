@@ -1,11 +1,11 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsArchOne
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0056
 public import Development.AbelianVarietyTheory.BlockTheory.PoincareCuspForms.SmallUnipotentElements
 public import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.NormQuotientThetaFlatAttainsSupOffCommonZeros
 public import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.QuotientNoPositiveMaxOffCommonZeros
-public import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.ExistsMulNe
+public import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.Bundle0061
 
 @[expose] public section
 

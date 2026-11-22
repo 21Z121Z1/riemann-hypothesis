@@ -1,8 +1,8 @@
 module
 
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.KatoQuadraticCharacters.SymmetricPowerSymbols.SymExOf
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.OverAffineJLineComapSlGal
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ModularFunctionTowerIntegrality
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0135
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0139
 
 @[expose] public section
 

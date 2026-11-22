@@ -2,8 +2,8 @@ module
 
 public import Mathlib
 public import Development.AutomorphicArithmetic.CMTraceForms.Places
-public import Development.AutomorphicArithmetic.CMTraceForms.ExistsPrimitiveOrthogonalIdempotentsSumEqOfNoeth
-public import Development.AutomorphicArithmetic.CMTraceForms.ExistsSplitIdempotentOfSplitAt
+public import Development.AutomorphicArithmetic.CMTraceForms.Bundle0001
+public import Development.AutomorphicArithmetic.CMTraceForms.Bundle0002
 public import Development.AutomorphicArithmetic.CMTraceForms.TraceFormDecompositionCMDatum
 public import Development.AutomorphicArithmetic.CMTraceForms.DiscrCMDatumEqProdPlaces
 

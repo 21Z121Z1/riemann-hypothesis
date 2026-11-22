@@ -1,7 +1,7 @@
 module
 
 public import Formalism.LocalToGlobal.ProjectiveLattices.ArchimedeanQuadraticData.HQsmulRight
-public import Formalism.LocalToGlobal.ProjectiveLattices.ArchimedeanQuadraticData.FinrankCmType
+public import Formalism.LocalToGlobal.ProjectiveLattices.ArchimedeanQuadraticData.Bundle0001
 
 @[expose] public section
 

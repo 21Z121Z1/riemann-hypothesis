@@ -7,8 +7,8 @@ public import Development.WeilBound.CoreStatements.PeriodRingComparison.AinfAlge
 public import Development.WeilBound.CoreStatements.PeriodRingComparison.PadicPeriodAlgebraMaps.CPAlgebraMapPadic
 public import Development.WeilBound.CoreStatements.PeriodRingComparison.ThetaKernelDeRham.KerThetaEqSpanSymmTBdR
 public import Development.AutomorphicArithmetic.IntegralCasts.CrystallinePeriods.Action
-public import Development.AutomorphicArithmetic.IntegralCasts.CrystallinePeriods.DeRhamMap
-public import Development.WeilBound.CoreStatements.CrystallinePeriodRings.PhiGalCris
+public import Development.AutomorphicArithmetic.IntegralCasts.CrystallinePeriods.Bundle0001
+public import Development.WeilBound.CoreStatements.CrystallinePeriodRings.Bundle0001
 
 @[expose] public section
 

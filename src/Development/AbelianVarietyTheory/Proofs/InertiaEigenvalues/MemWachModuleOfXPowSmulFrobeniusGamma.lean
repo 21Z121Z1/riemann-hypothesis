@@ -1,12 +1,12 @@
 module
 
 public import Mathlib
-public import Formalism.SharpRestriction.LevelLetterCocycles.UsedLocalConclusion
-public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.NotFullBot
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.MemRangeOfFrob
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.EtaleComparisonOfWachBasis
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.WachInclusionXQFrobenius
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.MapConstantCoeffEqOne
+public import Formalism.SharpRestriction.LevelLetterCocycles.Bundle0006
+public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0004
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0493
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0477
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0315
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0379
 
 @[expose] public section
 

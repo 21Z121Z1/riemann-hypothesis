@@ -1,7 +1,7 @@
 module
 
-public import Development.EtaleCohomology.CohomologicalPurity.LeafFlqPf
-public import Development.EtaleCohomology.KummerTheory.GluePf
+public import Development.EtaleCohomology.CohomologicalPurity.Bundle0006
+public import Development.EtaleCohomology.KummerTheory.Bundle0007
 public import Development.EtaleCohomology.KummerTheory.FlasquePf
 
 @[expose] public section

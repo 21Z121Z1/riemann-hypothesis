@@ -1,11 +1,8 @@
 module
 
-public import Formalism.LogFactorialIndices.SignedSubspaceIndex.SumInterlacedBoundFails
+public import Formalism.LogFactorialIndices.SignedSubspaceIndex.Bundle0001
 public import Mathlib
-public import Formalism.LogFactorialIndices.SignedSubspaceIndex.LogProductFormula
-public import Formalism.LogFactorialIndices.SignedSubspaceIndex.IdxBase
 public import Formalism.LogFactorialIndices.SignedSubspaceIndex.IdxDet
-public import Formalism.LogFactorialIndices.SignedSubspaceIndex.SubspaceLatticeIndex
 
 @[expose] public section
 

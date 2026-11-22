@@ -1,13 +1,13 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Divisors.IsUnitaryOnTheta
-public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.OmVacuumEqSplitFacSmulSum
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0024
+public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.Bundle0070
 public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.IsSelfDualCLatFrame
-public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.ExistsIntegralSplitIdempotentOverTwo
-public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.ExistsSemicharacterCompletedSelfDualLattice
-public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.EventuallyFinEqOne
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ActAApply
+public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.Bundle0060
+public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.Bundle0069
+public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.Bundle0064
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0233
 
 @[expose] public section
 

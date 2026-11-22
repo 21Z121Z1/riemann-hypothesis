@@ -1,6 +1,6 @@
 module
 
-public import Formalism.SharpRestriction.CuspSpanNormBounds.TrD
+public import Formalism.SharpRestriction.CuspSpanNormBounds.Bundle0009
 
 @[expose] public section
 

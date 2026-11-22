@@ -1,6 +1,6 @@
 module
 
-public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.HighestWeights.OneParam
+public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.HighestWeights.Bundle0001
 public import Formalism.RealPlaceAnalysis.QuotientSettingHolds
 
 @[expose] public section

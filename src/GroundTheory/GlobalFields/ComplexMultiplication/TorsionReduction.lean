@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import GroundTheory.GlobalFields.ComplexMultiplication.ReductionNonsingularPoints
-public import GroundTheory.ArithmeticGeometry.AbelianVarieties.SingularCubic
+public import GroundTheory.ArithmeticGeometry.AbelianVarieties.Bundle0004
 public import GroundTheory.ArithmeticGeometry.AbelianVarieties.KodairaNeron
 
 @[expose] public section

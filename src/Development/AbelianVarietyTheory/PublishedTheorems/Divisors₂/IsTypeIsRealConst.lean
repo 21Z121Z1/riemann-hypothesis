@@ -3,7 +3,7 @@ module
 public import Mathlib
 public import ReciprocityTheory.AnalyticForms.PotentialTheory.IsPotentialOfFun
 public import Development.AbelianVarietyTheory.Definitions.Divisors.DiagValExtTraceNonneg
-public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.InterPolyProdSum
+public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.Bundle0009
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TopologicalKrullDimEqSucc
 
 @[expose] public section

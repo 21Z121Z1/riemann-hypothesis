@@ -1,12 +1,12 @@
 module
 
 public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.StableIffCarrierEq
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.StandardAddCharPlaceIdempotentDivPrime
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0436
 public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ColumnCharacterReductionEqExp
 public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.FockVectorsKilledHeisenbergAverageIsotropic
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExistsPlaceChartOfSplitIdempotent
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0103
 public import Formalism.LocalToGlobal.Divisibility.PsiWeilOfAbsNorm
-public import Formalism.LocalToGlobal.IndefiniteReal.RealSeparation.SignsG
+public import Formalism.LocalToGlobal.IndefiniteReal.RealSeparation.Bundle0003
 
 @[expose] public section
 

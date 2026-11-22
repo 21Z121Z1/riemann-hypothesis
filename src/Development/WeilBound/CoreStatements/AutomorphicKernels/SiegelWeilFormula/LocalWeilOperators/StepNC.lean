@@ -1,7 +1,8 @@
 module
 
 public import Development.WeilBound.CoreStatements.AutomorphicKernels.SiegelWeilFormula.LocalWeilOperators.StepNB
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SchwartzQuadraticPhaseMultiplicationStatement
+public import Mathlib
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0081
 
 @[expose] public section
 
@@ -90,7 +91,7 @@ theorem stepN_pf (hT : TAll) : ∀ (y : GR d.n) (b : Matrix (Fin d.n) (Fin d.n) 
   obtain ⟨hM, hβw, hβo, hβf⟩ := R.frame_nU w y b hy
   refine ⟨fun f hf => ?_, fun Ψ hΨ => ⟨hΨ, fun f hf Φ hΦ hTΦ => ?_⟩⟩
   · obtain ⟨φ, rfl⟩ := hf
-    obtain ⟨ψ, hψ⟩ := GlobalTheory.T.schwartz_quadratic_phase_multiplication d.m d.n (((R.sg w : ℤ) : ℝ)) b hb φ
+    obtain ⟨ψ, hψ⟩ := _root_.GlobalTheory.CompanionTheory.QuadChirp.exists_schwartz_chirp_mul d.m d.n (((R.sg w : ℤ) : ℝ)) b hb φ
     refine ⟨ψ, ?_⟩
     rw [hψ]
     funext u

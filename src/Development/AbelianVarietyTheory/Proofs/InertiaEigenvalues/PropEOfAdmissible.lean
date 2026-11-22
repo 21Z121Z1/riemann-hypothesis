@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.GaloisSideTwistedSelmerAuxiliaryPrimes
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ToNatAddValMul
+public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0012
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0190
 
 @[expose] public section
 

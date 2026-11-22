@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.TateUnramifiedOfTorsionUnramified
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MemValuationSubringOfIsIntegral
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ImportsExtraBis
+public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.Bundle0020
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0079
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0063
 
 @[expose] public section
 

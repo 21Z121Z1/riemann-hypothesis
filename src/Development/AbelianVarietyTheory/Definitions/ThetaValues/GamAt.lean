@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Formalism.LocalToGlobal.ProjectiveLattices.RecPJThAllNeBot
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0033
 
 @[expose] public section
 

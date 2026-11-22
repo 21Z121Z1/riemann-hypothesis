@@ -1,13 +1,12 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Divisors.RedSurjective
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.KatzEtDualOfIso
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsIsConnIsEtSplitting
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HomEqZeroOfIsConnOfIsEt
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RigidifiedExtensionPullbackAddAndPrimeSmulId
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SemilinearHomConnectedFactorThroughPartStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SemilinearHomEtaleFactorThroughPartStatement
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0017
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2753
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0702
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0592
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2392
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0624
 
 @[expose] public section
 
@@ -180,22 +179,22 @@ theorem exists_katz_etDual : ∀ (p : ℕ) [Fact p.Prime] (Bc : GlobalTheory.Die
       refine Prod.ext ?_ ?_
       · refine Bc.smap_comp (hc k'' G'') (hc k' G') (hc k G) (semiThrough (i₀ k' G') s (q₀ k G))
           (semiThrough (i₀ k'' G'') t (q₀ k' G')) (semiThrough (i₀ k'' G'') u (q₀ k G)) (fun n a => ?_) m.1
-        have e := GlobalTheory.T.semilinearHom_connected_factor_through_part p k k' _ G' (G₀ k' G') (G₁ k' G') (G₀ k G) (i₀ k' G') (q₀ k' G')
+        have e := _root_.GlobalTheory.PDivGroup.semiHom_app_eq_conn_part p k k' _ G' (G₀ k' G') (G₁ k' G') (G₀ k G) (i₀ k' G') (q₀ k' G')
           (i₁ k' G') (q₁ k' G') (he k' G') (hc k G) (hs k' G') (s.comp (SemiHom.ofHom (q₀ k G))) n a
         simp only [SemiHom.comp_app, SemiHom.ofHom_app] at e
         simp only [semiThrough_app, hu, e]
       · refine Be.smap_comp (he k'' G'') (he k' G') (he k G) (semiThrough (i₁ k' G') s (q₁ k G))
           (semiThrough (i₁ k'' G'') t (q₁ k' G')) (semiThrough (i₁ k'' G'') u (q₁ k G)) (fun n a => ?_) m.2
-        have e := GlobalTheory.T.semilinearHom_etale_factor_through_part p k k' _ G' (G₀ k' G') (G₁ k' G') (G₁ k G) (i₀ k' G') (q₀ k' G')
+        have e := _root_.GlobalTheory.PDivGroup.semiHom_factor_of_isConn_of_isEt p k k' _ G' (G₀ k' G') (G₁ k' G') (G₁ k G) (i₀ k' G') (q₀ k' G')
           (i₁ k' G') (q₁ k' G') (hc k' G') (he k G) (hs k' G') (s.comp (SemiHom.ofHom (q₁ k G))) n a
         simp only [SemiHom.comp_app, SemiHom.ofHom_app] at e
         simp only [semiThrough_app, hu, e]
     red_smap := fun {k k'} _ _ _ _ _ _ {σ G' G} _ _ s m => by
       have c₀ := rig_semiThrough (i₀ k' G') (q₀ k' G') s (q₀ k G) (fun n a =>
-        GlobalTheory.T.semilinearHom_connected_factor_through_part p k k' _ G' (G₀ k' G') (G₁ k' G') (G₀ k G) (i₀ k' G') (q₀ k' G')
+        _root_.GlobalTheory.PDivGroup.semiHom_app_eq_conn_part p k k' _ G' (G₀ k' G') (G₁ k' G') (G₀ k G) (i₀ k' G') (q₀ k' G')
                      (i₁ k' G') (q₁ k' G') (he k' G') (hc k G) (hs k' G') (s.comp (SemiHom.ofHom (q₀ k G))) n a)
       have c₁ := rig_semiThrough (i₁ k' G') (q₁ k' G') s (q₁ k G) (fun n a =>
-        GlobalTheory.T.semilinearHom_etale_factor_through_part p k k' _ G' (G₀ k' G') (G₁ k' G') (G₁ k G) (i₀ k' G') (q₀ k' G')
+        _root_.GlobalTheory.PDivGroup.semiHom_factor_of_isConn_of_isEt p k k' _ G' (G₀ k' G') (G₁ k' G') (G₁ k G) (i₀ k' G') (q₀ k' G')
                      (i₁ k' G') (q₁ k' G') (hc k' G') (he k G) (hs k' G') (s.comp (SemiHom.ofHom (q₁ k G))) n a)
       obtain ⟨m₀, m₁⟩ := m
       have a := Bc.red_smap (hc k' G') (hc k G) (semiThrough (i₀ k' G') s (q₀ k G)) m₀
@@ -247,14 +246,14 @@ theorem exists_katz_etDual : ∀ (p : ℕ) [Fact p.Prime] (Bc : GlobalTheory.Die
           rw [h₁ k G]; exact Be.smap_id _ _ m.2))), ?_⟩⟩
   · intro k k' _ _ _ _ _ _ σ G' G h' h s m
     exact (Bc.smap_comp h' (hc k' G') (hc k G) (semiThrough (i₀ k' G') s (q₀ k G)) (SemiHom.ofHom (q₀ k' G'))
-      (s.comp (SemiHom.ofHom (q₀ k G))) (fun n a => (GlobalTheory.T.semilinearHom_connected_factor_through_part p k k' _ G' (G₀ k' G') (G₁ k' G')
+      (s.comp (SemiHom.ofHom (q₀ k G))) (fun n a => (_root_.GlobalTheory.PDivGroup.semiHom_app_eq_conn_part p k k' _ G' (G₀ k' G') (G₁ k' G')
         (G₀ k G) (i₀ k' G') (q₀ k' G') (i₁ k' G') (q₁ k' G') (he k' G') (hc k G) (hs k' G')
         (s.comp (SemiHom.ofHom (q₀ k G))) n a).symm) m.1).symm.trans
       (Bc.smap_comp h' h (hc k G) (SemiHom.ofHom (q₀ k G)) s (s.comp (SemiHom.ofHom (q₀ k G)))
         (fun _ _ => rfl) m.1)
   · intro k k' _ _ _ _ _ _ σ G' G h' h s m
     exact (Be.smap_comp h' (he k' G') (he k G) (semiThrough (i₁ k' G') s (q₁ k G)) (SemiHom.ofHom (q₁ k' G'))
-      (s.comp (SemiHom.ofHom (q₁ k G))) (fun n a => (GlobalTheory.T.semilinearHom_etale_factor_through_part p k k' _ G' (G₀ k' G') (G₁ k' G')
+      (s.comp (SemiHom.ofHom (q₁ k G))) (fun n a => (_root_.GlobalTheory.PDivGroup.semiHom_factor_of_isConn_of_isEt p k k' _ G' (G₀ k' G') (G₁ k' G')
         (G₁ k G) (i₀ k' G') (q₀ k' G') (i₁ k' G') (q₁ k' G') (hc k' G') (he k G) (hs k' G')
         (s.comp (SemiHom.ofHom (q₁ k G))) n a).symm) m.2).symm.trans
       (Be.smap_comp h' h (he k G) (SemiHom.ofHom (q₁ k G)) s (s.comp (SemiHom.ofHom (q₁ k G)))

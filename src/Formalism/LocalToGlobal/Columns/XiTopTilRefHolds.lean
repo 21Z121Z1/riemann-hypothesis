@@ -1,6 +1,6 @@
 module
 
-public import Formalism.LocalToGlobal.Columns.XtIntAtQpow
+public import Formalism.LocalToGlobal.Columns.Bundle0032
 
 @[expose] public section
 

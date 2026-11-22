@@ -1,12 +1,12 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.StepJumpDirect
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.InertiaThroughOfPolyPow
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.InerDecomp
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsRootsOfUnityCharacterHom
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsExtendCharacterTrivialOnNormal
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.InertiaThroughOfPoly
+public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0014
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0255
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0485
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0019
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0013
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0237
 public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.IsPotentialPhiSub
 
 @[expose] public section

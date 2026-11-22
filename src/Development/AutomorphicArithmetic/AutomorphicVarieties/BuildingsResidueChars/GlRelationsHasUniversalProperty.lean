@@ -1,7 +1,7 @@
 module
 
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.CuspidalFiniteness.HasUnivOfStep
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.BuildingsResidueChars.CenterEnvelopingGLLeAdjoinQuantumDet
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.BuildingsResidueChars.Bundle0016
 
 @[expose] public section
 

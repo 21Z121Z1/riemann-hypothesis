@@ -1,10 +1,9 @@
 module
 
 public import Mathlib
-public import Formalism.PeriodIntegrals.LocJacTyp
-public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LocalJacobianType.Development
-public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LocalJacobianType.BoxMulAlt
-public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LocalJacobianType.KitAbs
+public import Formalism.PeriodIntegrals.Bundle0013
+public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LocalJacobianType.Bundle0001
+public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LocalJacobianType.Bundle0002
 public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LocalJacobianType.BoxMul
 
 @[expose] public section

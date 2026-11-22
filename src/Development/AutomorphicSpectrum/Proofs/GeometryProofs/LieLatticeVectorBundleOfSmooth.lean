@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.EigLat
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.GenMapFromSpecStalk
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.IsVBOnDualAndBidual
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.Bundle0004
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0025
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0023
 
 @[expose] public section
 

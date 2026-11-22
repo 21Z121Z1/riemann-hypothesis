@@ -1,7 +1,7 @@
 module
 
 public import Development.WeilBound.ThetaLifts.SphericalLattices.FunDefs
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.FinPartIdemMulMemIff
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0303
 
 @[expose] public section
 

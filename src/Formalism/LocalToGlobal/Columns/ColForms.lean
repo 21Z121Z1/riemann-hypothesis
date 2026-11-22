@@ -5,7 +5,7 @@ public import Formalism.LocalToGlobal.Columns.RhoEqOfSmulEq
 public import Formalism.LocalToGlobal.Columns.GenericUnipotentCharacter
 public import Formalism.LocalToGlobal.Columns.AbelianHostFieldConditions
 public import Formalism.LocalToGlobal.Columns.StdLatUnimodular
-public import Formalism.LocalToGlobal.Columns.CoefCol
+public import Formalism.LocalToGlobal.Columns.Bundle0002
 
 @[expose] public section
 

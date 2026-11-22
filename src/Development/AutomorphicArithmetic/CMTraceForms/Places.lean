@@ -3,7 +3,7 @@ module
 public import Mathlib
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PlaceDivisors.StChartF
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.UniformisationConclusion
-public import Formalism.LocalToGlobal.ProjectiveLattices.IsThRule
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0010
 
 @[expose] public section
 

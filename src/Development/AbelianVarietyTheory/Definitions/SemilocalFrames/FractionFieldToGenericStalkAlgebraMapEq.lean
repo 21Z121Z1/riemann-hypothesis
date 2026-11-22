@@ -4,9 +4,9 @@ public import Mathlib
 public import Formalism.SharpRestriction.CuspSpanNormBounds.PsiEDef
 public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsContinuousPadic
 public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsIrreducible
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.NegOneNormFromCmFieldFiniteAdeles
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.HostCmData
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.NcardPrimesOverOfStabilizer
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0088
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0081
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0084
 
 @[expose] public section
 

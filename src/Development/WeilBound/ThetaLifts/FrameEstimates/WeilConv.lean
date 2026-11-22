@@ -1,32 +1,22 @@
 module
 
-public import Development.WeilBound.ThetaLifts.FrameEstimates.DomWeil
-public import Development.WeilBound.ThetaLifts.FrameEstimates.SoSemi
+public import Development.WeilBound.ThetaLifts.FrameEstimates.Bundle0009
+public import Development.WeilBound.ThetaLifts.FrameEstimates.Bundle0011
 public import Development.WeilBound.ThetaLifts.FrameEstimates.ThickFrames
 public import Development.WeilBound.ThetaLifts.FrameEstimates.IContOf
-public import Development.WeilBound.ThetaLifts.FrameEstimates.GrpTop
-public import Development.WeilBound.ThetaLifts.FrameEstimates.BlockForm
+public import Development.WeilBound.ThetaLifts.FrameEstimates.Bundle0003
+public import Development.WeilBound.ThetaLifts.FrameEstimates.Bundle0002
 public import Development.WeilBound.ThetaLifts.FrameEstimates.SiegelAll
-public import Development.WeilBound.ThetaLifts.FrameEstimates.SqAllC
+public import Development.WeilBound.ThetaLifts.FrameEstimates.Bundle0008
 public import Development.WeilBound.ThetaLifts.FrameEstimates.ThetaSumNeg
-public import Development.WeilBound.ThetaLifts.FrameEstimates.HermitianFormDetNeZero
-public import Development.WeilBound.ThetaLifts.FrameEstimates.IsCompactIntV
-public import Development.WeilBound.ThetaLifts.FrameEstimates.Parity
+public import Development.WeilBound.ThetaLifts.FrameEstimates.Bundle0006
+public import Development.WeilBound.ThetaLifts.FrameEstimates.Bundle0005
 public import Development.WeilBound.ThetaLifts.FrameEstimates.CoefSum
 public import Development.WeilBound.ThetaLifts.FrameEstimates.CoefEq
 public import Development.WeilBound.ThetaLifts.FrameEstimates.CoefBd
-public import Development.WeilBound.ThetaLifts.FrameEstimates.CoefReal
 public import Development.WeilBound.ThetaLifts.FrameEstimates.FourierInj
-public import Development.WeilBound.ThetaLifts.FrameEstimates.LatInv
-public import Development.WeilBound.ThetaLifts.FrameEstimates.LatMeas
-public import Development.WeilBound.ThetaLifts.FrameEstimates.LatCpt
-public import Development.WeilBound.ThetaLifts.FrameEstimates.LatArch
-public import Development.WeilBound.ThetaLifts.FrameEstimates.LatTor
-public import Development.WeilBound.ThetaLifts.FrameEstimates.LatFull
-public import Development.WeilBound.ThetaLifts.FrameEstimates.ExistsColsDetNeZero
-public import Development.WeilBound.ThetaLifts.FrameEstimates.OneVar
-public import Development.WeilBound.ThetaLifts.FrameEstimates.FrameBasis
-public import Development.WeilBound.ThetaLifts.FrameEstimates.FundamentalDomainFiniteVolume
+public import Development.WeilBound.ThetaLifts.FrameEstimates.Bundle0004
+public import Development.WeilBound.ThetaLifts.FrameEstimates.Bundle0010
 public import Development.WeilBound.ThetaLifts.FrameEstimates.InitialPairs.TriplePairHolds
 
 @[expose] public section

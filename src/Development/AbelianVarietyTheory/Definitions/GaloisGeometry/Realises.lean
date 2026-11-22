@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Formalism.LocalToGlobal.InertKernelTheory.SubBSplit
-public import Formalism.LocalToGlobal.InertKernelTheory.ProjRSurj
+public import Formalism.LocalToGlobal.InertKernelTheory.Bundle0016
 public import Formalism.LocalToGlobal.PairingIndexBounds.OrthogonalChartLevels.FdOfCharts
 
 @[expose] public section

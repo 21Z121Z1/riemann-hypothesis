@@ -1,12 +1,12 @@
 module
 
 public import Mathlib
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.KerEqBotOfCoord
-public import ReciprocityTheory.AnalyticForms.PotentialTheory.ContDiffOnFubiniStudyProfileInvNormSqFirst
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.Bundle0009
+public import ReciprocityTheory.AnalyticForms.PotentialTheory.Bundle0002
 public import GroundTheory.HeightsAndTheta.Heights.FubiniStudy
-public import GroundTheory.HeightsAndTheta.Heights.FubiniStudyTransition
+public import GroundTheory.HeightsAndTheta.Heights.Bundle0003
 public import GroundTheory.HeightsAndTheta.Heights.FubiniStudyMetric
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.ArithModel
+public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0012
 
 @[expose] public section
 

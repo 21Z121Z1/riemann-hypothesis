@@ -1,6 +1,6 @@
 module
 
-public import Formalism.HermitianCurvature.CapelliDeterminantAndBranching
+public import Formalism.HermitianCurvature.Bundle0008
 
 @[expose] public section
 

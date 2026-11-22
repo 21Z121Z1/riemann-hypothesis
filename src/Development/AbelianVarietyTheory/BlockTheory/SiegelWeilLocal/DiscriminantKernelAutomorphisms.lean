@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Formalism.SharpRestriction.CuspSpanNormBounds.CntPartners
+public import Formalism.SharpRestriction.CuspSpanNormBounds.Bundle0004
 
 @[expose] public section
 

@@ -7,7 +7,7 @@ public import GroundTheory.GlobalFields.ClassFieldConsequences.Conductor
 public import GroundTheory.GlobalFields.ClassFieldConsequences.RayClassField
 public import GroundTheory.GlobalFields.KummerTheory.LocalIndexAtPlace
 public import GroundTheory.GlobalFields.KummerTheory.Splitting
-public import GroundTheory.GlobalFields.IdeleGroups.LocalConditionIndex
+public import GroundTheory.GlobalFields.IdeleGroups.Bundle0002
 
 @[expose] public section
 

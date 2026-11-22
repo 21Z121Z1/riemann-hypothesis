@@ -1,13 +1,13 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.EqTopOfTranslates
-public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.ExistsNormLeHeightPow
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsWeilDatumGeneratorRealOneParamGroupStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MaximalCompactActsOnRealVacuaByDetPowersStatement
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0213
+public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.Bundle0007
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsWeilDatumGeneratorRealOneParamGroup
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0925
 public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.EqZeroOfPderivStable
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ContinuousOnAtTau
-public import Development.AbelianVarietyTheory.Counterexamples.HeightSurvey.ConjAtFixedIff
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0171
+public import Development.AbelianVarietyTheory.Counterexamples.HeightSurvey.Bundle0003
 
 @[expose] public section
 
@@ -626,9 +626,9 @@ theorem rderC_theta_eq_zero : ∀ (D : D7) (ψ : AddChar (AF D.host.F) ℂ) (S T
   unfold conjAt at lX lY ⊢
   rw [eY] at lY ⊢
   generalize (1 / 2 : ℂ) • (Z + -((gramAt D T τ)⁻¹ * Zᴴ * gramAt D T τ)) = X at ha lX lY
-  obtain ⟨GX, hX⟩ : ∃ G, IsGen ψ om θ τ X G := GlobalTheory.T.exists_weilDatum_generator_realOneParamGroup D ψ S T χS χT om hom θ hθ τ _ lX
+  obtain ⟨GX, hX⟩ : ∃ G, IsGen ψ om θ τ X G := _root_.GlobalTheory.DefLift.Gen.exists_generator D ψ S T χS χT om hom θ hθ τ _ lX
   obtain ⟨GY, hY⟩ : ∃ G, IsGen ψ om θ τ (Complex.I • (cart M τ * X)) G :=
-    GlobalTheory.T.exists_weilDatum_generator_realOneParamGroup D ψ S T χS χT om hom θ hθ τ _ lY
+    _root_.GlobalTheory.DefLift.Gen.exists_generator D ψ S T χS χT om hom θ hθ τ _ lY
   have hφ : IsThetaFunO ψ S T (pureTensorO ψ θ S T (fun _ => 1) (cart M) BS (onb M) f P) :=
     pure_mem (P := IsThetaFunO ψ S T) (fun _ _ => theta_add) (fun a _ => theta_smul a)
       (fun _ _ h => aPlus_theta hψ hθ _ _ _ h) hf _

@@ -1,12 +1,12 @@
 module
 
 public import Mathlib
-public import Formalism.LocalRingCardinality.DataAmbForm
-public import Formalism.LocalRingCardinality.DataKerP
-public import Development.AbelianVarietyTheory.BlockTheory.ThetaLiftGeometry.ColumnAvoidanceConditions
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.MinkowskiBoundComapLattice
+public import Formalism.LocalRingCardinality.Bundle0002
+public import Formalism.LocalRingCardinality.Bundle0004
+public import Development.AbelianVarietyTheory.BlockTheory.ThetaLiftGeometry.Bundle0005
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0271
 public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.LatticeExtensionAlongFieldEmbeddingDuals
-public import Formalism.LocalToGlobal.Columns.ToHLat
+public import Formalism.LocalToGlobal.Columns.Bundle0007
 public import Formalism.LocalToGlobal.Columns.CoefModB
 public import Formalism.LocalToGlobal.Divisibility.FramesLemmas
 

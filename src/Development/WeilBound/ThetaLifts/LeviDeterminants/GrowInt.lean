@@ -1,8 +1,8 @@
 module
 
 public import Development.WeilBound.ThetaLifts.LeviDeterminants.ContinuousOfMem
-public import Development.AutomorphicSpectrum.Proofs.MembershipProofs.ThetaDistributionNonzeroAdmissible
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.StandardTraceAdelicAddCharLocalComponentNeOne
+public import Development.AutomorphicSpectrum.Proofs.MembershipProofs.Bundle0007
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1588
 
 @[expose] public section
 

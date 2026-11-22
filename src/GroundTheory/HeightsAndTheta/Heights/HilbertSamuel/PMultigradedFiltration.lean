@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsHilbert
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.LengthLocalizedQuotientEqZero
+public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0006
 
 @[expose] public section
 

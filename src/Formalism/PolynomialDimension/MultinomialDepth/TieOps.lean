@@ -3,7 +3,7 @@ module
 public import Formalism.PolynomialDimension.MultinomialDepth.PartnerM
 public import Formalism.MahlerMeasure.MahlerMeasureProofs.WeightSpaceDimensionMonotone
 public import Formalism.MahlerMeasure.MahlerMeasureProofs.GamInt
-public import Formalism.MahlerMeasure.MahlerMeasureProofs.LieMat
+public import Formalism.MahlerMeasure.MahlerMeasureProofs.Bundle0003
 
 @[expose] public section
 

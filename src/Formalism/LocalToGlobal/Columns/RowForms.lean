@@ -7,9 +7,9 @@ public import Formalism.LocalToGlobal.Columns.LevGCount
 public import Formalism.LocalToGlobal.Columns.AbelianHostFieldConditions
 public import Formalism.LocalToGlobal.Columns.StdLatUnimodular
 public import Formalism.LocalToGlobal.Columns.DecoFin
-public import Formalism.LocalToGlobal.Columns.CoefCol
+public import Formalism.LocalToGlobal.Columns.Bundle0002
 public import Formalism.LocalToGlobal.Columns.ColForms
-public import Formalism.LocalToGlobal.Divisibility.Tuples
+public import Formalism.LocalToGlobal.Divisibility.Bundle0001
 public import Formalism.LocalToGlobal.Divisibility.GoodPartHermitianSpec
 
 @[expose] public section

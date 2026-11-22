@@ -2,9 +2,9 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.BlockTheory.CMModuli.FlatIsoUnitGenerator
-public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.FinitePartOfIsFinitePart
+public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0201
 public import Development.AbelianVarietyTheory.Definitions.Uniformization.PointEqOfSubsingleton
-public import Development.AbelianVarietyTheory.Definitions.ModuliSpaces.AuxiliaryInertOddPrime
+public import Development.AbelianVarietyTheory.Definitions.ModuliSpaces.Bundle0001
 
 @[expose] public section
 

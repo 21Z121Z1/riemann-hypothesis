@@ -1,16 +1,16 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.GeometricallyConnectedOfIsIsoRestrict
+public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.Bundle0004
 public import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsIsLocModelIsPrimeOf
-public import Development.AbelianVarietyTheory.Definitions.Divisors.NotDominatesTopPlace
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ToQMemMaximalIdealIff
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TopFormsGraphLocalRingFreelyGenerated
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FormallyEtaleBaseChangeEvalHom
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsFreeGenWedgeFormOfFormallyEtaleMvPolynomial
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DvrPlaceTopFormOrdersApi
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0038
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1122
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2319
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0056
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2189
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1133
 public import Development.AbelianVarietyTheory.Proofs.CoherentCohomologyProofs.ExistsBasisKaehlerOfAlgebraicIndependent
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MinOrdLeOrdAdd
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1158
 
 @[expose] public section
 

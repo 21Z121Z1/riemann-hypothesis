@@ -1,7 +1,7 @@
 module
 
-public import Formalism.HermitianCurvature.StatementKB
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.BlockOfCauchySchwarz
+public import Formalism.HermitianCurvature.Bundle0009
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0051
 public import Formalism.HermitianCurvature.HermitianCurvatureProofs.PBGWave
 
 @[expose] public section

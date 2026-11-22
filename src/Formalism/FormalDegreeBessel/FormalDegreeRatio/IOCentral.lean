@@ -1,7 +1,7 @@
 module
 
 public import Formalism.FormalDegreeBessel.StatementIO
-public import Formalism.RealPlaceAnalysis.ThirdArithmeticHolds
+public import Formalism.RealPlaceAnalysis.Bundle0004
 public import Formalism.RealPlaceAnalysis.FinalF
 
 @[expose] public section

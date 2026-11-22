@@ -3,11 +3,11 @@ module
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.SetUnipotentTranslate
 public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.IsRationalUnitaryDeterminantMapRationalUnitaryTo
-public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.SpreadLe
-public import Development.AbelianVarietyTheory.Definitions.Foundations.CdScaleTieIff
-public import Formalism.LocalToGlobal.UnitaryNorms.CharTied
-public import Formalism.SharpRestriction.LevelLetterCocycles.TwGood
-public import Formalism.LocalToGlobal.UnitaryNorms.CharUniq
+public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.Bundle0003
+public import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0016
+public import Formalism.LocalToGlobal.UnitaryNorms.Bundle0006
+public import Formalism.SharpRestriction.LevelLetterCocycles.Bundle0018
+public import Formalism.LocalToGlobal.UnitaryNorms.Bundle0005
 public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.FixedCoefficientFieldInComplex
 public import Development.AbelianVarietyTheory.Definitions.HeightFunctions.JointQ
 

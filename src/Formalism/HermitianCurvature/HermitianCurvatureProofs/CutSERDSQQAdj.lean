@@ -3,7 +3,7 @@ module
 public import Mathlib.Analysis.Calculus.BumpFunction.FiniteDimension
 public import Mathlib.Analysis.SpecialFunctions.SmoothTransition
 public import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutSERDIdentSpec
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.OperatorPreservesFusionForms
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0061
 public import Formalism.HermitianCurvature.HermitianCurvatureProofs.SumDualVectorEqZeta
 public import Formalism.HermitianCurvature.HermitianCurvatureProofs.ActualAdjointnessFromHermitian
 public import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutGCoreGTRadAdj

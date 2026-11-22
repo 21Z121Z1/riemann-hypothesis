@@ -1,14 +1,14 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsFockMap
-public import Development.AbelianVarietyTheory.Definitions.Divisors.DiscreteSeriesHermitianUnique
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0922
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0041
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MinFirst
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FockJointHarmonicsHighestWeightEqBotOfNotShape
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FinrankFockJointHarmonicsHighestWeightOfShape
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.JointShapeUniqueAndDegWEq
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FockPolynomialsLocallyFiniteRationalWeights
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FockHarmonicsGradedCompactStable
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0690
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0689
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0519
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0518
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0562
 
 @[expose] public section
 

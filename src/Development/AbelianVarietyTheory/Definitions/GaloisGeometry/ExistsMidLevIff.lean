@@ -4,14 +4,14 @@ public import Mathlib
 public import Formalism.LocalToGlobal.KernelLattices.TopPin
 public import Formalism.LocalToGlobal.KernelLattices.KerMtPin
 public import Formalism.LocalToGlobal.Columns.RecLevel
-public import Formalism.LocalToGlobal.UnitaryNorms.CharTied
-public import Formalism.LocalToGlobal.HermitianColumns.HermCols
+public import Formalism.LocalToGlobal.UnitaryNorms.Bundle0006
+public import Formalism.LocalToGlobal.HermitianColumns.Bundle0002
 public import Formalism.SharpRestriction.GrowthBounds.ChartComparison.StepIn
 public import Formalism.SharpRestriction.GrowthBounds.ChartedClasses.ToLEInvApply
-public import Formalism.LocalToGlobal.HermitianForms.TiedTwGen
-public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.NatCastMemOfPlace
+public import Formalism.LocalToGlobal.HermitianForms.Bundle0005
+public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.Bundle0016
 public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsFiniteAdeleBaseChangeEquiv
-public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.MemMoveLevUloc
+public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.Bundle0014
 
 @[expose] public section
 

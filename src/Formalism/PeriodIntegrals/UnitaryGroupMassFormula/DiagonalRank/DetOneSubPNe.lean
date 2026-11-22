@@ -1,6 +1,6 @@
 module
 
-public import Formalism.PeriodIntegrals.DiagRank
+public import Formalism.PeriodIntegrals.Bundle0001
 
 @[expose] public section
 

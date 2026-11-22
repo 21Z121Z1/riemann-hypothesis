@@ -3,8 +3,8 @@ module
 public import Mathlib
 public import GroundTheory.ArithmeticGeometry.SchemeCohomology.ProperCohomology.HasExtInstances
 public import GroundTheory.ArithmeticGeometry.SchemeCohomology.ProperCohomology.ProjBaseChangeEmbed
-public import GroundTheory.ArithmeticGeometry.SchemeCohomology.ProperCohomology.RestrictTensor
-public import GroundTheory.ArithmeticGeometry.SchemeCohomology.ProperCohomology.PullbackCoherent
+public import GroundTheory.ArithmeticGeometry.SchemeCohomology.ProperCohomology.Bundle0004
+public import GroundTheory.ArithmeticGeometry.SchemeCohomology.ProperCohomology.Bundle0007
 public import GroundTheory.ArithmeticGeometry.SchemeCohomology.ProperCohomology.CohFinite
 
 @[expose] public section

@@ -2,9 +2,9 @@ module
 
 public import Mathlib
 public import CompanionTheory.RealGroups.DiscreteSeries.DiscreteSeriesClassification.DiscreteSeriesExhaustion.FarRegularity.LKTExists
-public import Formalism.RealPlaceAnalysis.ThirdArithmeticHolds
-public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.TraceElementsActByGelfandValues
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.GelfValTwoEqCvalR
+public import Formalism.RealPlaceAnalysis.Bundle0004
+public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.Bundle0052
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0142
 
 @[expose] public section
 

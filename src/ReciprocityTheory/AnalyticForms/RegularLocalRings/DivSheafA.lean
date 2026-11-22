@@ -1,6 +1,6 @@
 module
 
-public import ReciprocityTheory.AnalyticForms.RegularLocalRings.FinalTheorems
+public import ReciprocityTheory.AnalyticForms.RegularLocalRings.Bundle0001
 
 @[expose] public section
 

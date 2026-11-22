@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Divisors.IsUnifAt
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LevOpMemFixed
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RelIndexNeZeroOfIsOpen
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0036
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1038
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1044
 public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.HasSatakeGLOfIsSatVecGL
 
 @[expose] public section

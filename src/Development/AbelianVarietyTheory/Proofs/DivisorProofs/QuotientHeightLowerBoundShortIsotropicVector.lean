@@ -1,11 +1,10 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Divisors.IsSmoothVector
-public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.ExistsNormLeHeightPow
-public import Development.AbelianVarietyTheory.Proofs.HeightProofs.UnitaryLatticeDenominatorHeightBoundProof
-public import Development.AbelianVarietyTheory.Proofs.HeightProofs.NormInfSubmultiplicativeLeAdelicHeight
-public import Development.AbelianVarietyTheory.Proofs.HeightProofs.AtPlaceIffEqAtTau
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0033
+public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.Bundle0007
+public import Development.AbelianVarietyTheory.Proofs.HeightProofs.Bundle0032
+public import Development.AbelianVarietyTheory.Proofs.HeightProofs.Bundle0030
 
 @[expose] public section
 

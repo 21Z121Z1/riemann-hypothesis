@@ -4,14 +4,14 @@ public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.Jets.JetsOnCopiesCompatibleFrames
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.UnifUniqSt
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.DiscreteValuationRings.TwistBCPf
-public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.ExistsCharacterOnPoints
+public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0101
 public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.ExistsUniqueJet
-public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.FiniteAugmentedConnectedPartLocalisation
-public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.DualNumberValueToJet
-public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.IsAdicCompleteOfFiniteBasis
-public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.MapDofIterate
-public import Development.AbelianVarietyTheory.Proofs.FormalGroupCharts.RepJetAugCompTrunc
-public import Development.AbelianVarietyTheory.Proofs.FormalGroupCharts.ToJetOneEqSum
+public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0007
+public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0061
+public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0028
+public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0017
+public import Development.AbelianVarietyTheory.Proofs.FormalGroupCharts.Bundle0016
+public import Development.AbelianVarietyTheory.Proofs.FormalGroupCharts.Bundle0017
 public import Development.AbelianVarietyTheory.Proofs.FormalGroupCharts.RelatedMap
 
 @[expose] public section
@@ -376,7 +376,7 @@ theorem charAt_of_multiplicative_series : Laws → Laws2 → Laws4 → TwistBase
   have hle₂ : Ideal.span {(p : TWO.Ov y.v)} ^ n₂ ≤ (maximalIdeal V).map f := by
     rw [hmap, Ideal.span_singleton_pow, Ideal.span_singleton_le_iff_mem]
     exact hn₂
-  obtain ⟨Ex, B, hB, hB', Gt, _, _, ρ, J, hGt, hfin, hnat, hJJ⟩ := GlobalTheory.T.torusExtension_over_completeLocal_dvr hL hL4 E H V y.t y.P (TWO.Ov y.v) f hloc
+  obtain ⟨Ex, B, hB, hB', Gt, _, _, ρ, J, hGt, hfin, hnat, hJJ⟩ := _root_.GlobalTheory.TorusModel.main hL hL4 E H V y.t y.P (TWO.Ov y.v) f hloc
     (isAdicComplete_of_pow_le hle₂ hle₁)
     (fun b hb => by rw [hmap]; exact exists_pow_mem_span y.v _ _ hb hϖ0)
   have hp1 : 1 ≤ p := hpp.one_le

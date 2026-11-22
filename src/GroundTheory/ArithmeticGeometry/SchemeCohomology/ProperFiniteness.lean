@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import GroundTheory.ArithmeticGeometry.SchemeCohomology.ProperCohomology.FinitenessStep
+public import GroundTheory.ArithmeticGeometry.SchemeCohomology.ProperCohomology.Bundle0010
 
 @[expose] public section
 

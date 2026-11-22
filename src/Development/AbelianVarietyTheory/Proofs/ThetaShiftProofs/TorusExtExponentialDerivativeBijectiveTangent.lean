@@ -4,8 +4,8 @@ public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.ArchimedeanThetaValues.IsThetaL2NormSquared
 public import Development.AbelianVarietyTheory.Definitions.RegularCharts.ModelAt
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.UnifUniqSt
-public import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.ExistsRepresents
-public import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.ExistsIsDerivAtOfSurjective
+public import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.Bundle0037
+public import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.Bundle0008
 public import Development.AbelianVarietyTheory.Proofs.ToricGeometry.TangentBijectionOfValues
 
 @[expose] public section

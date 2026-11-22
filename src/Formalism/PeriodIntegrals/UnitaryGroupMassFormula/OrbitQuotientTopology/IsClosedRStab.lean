@@ -1,6 +1,6 @@
 module
 
-public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.RootSubgroupBasics.FlagMatLower
+public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.RootSubgroupBasics.Bundle0002
 
 @[expose] public section
 

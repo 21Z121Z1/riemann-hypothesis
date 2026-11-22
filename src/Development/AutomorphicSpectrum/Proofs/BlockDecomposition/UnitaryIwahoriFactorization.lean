@@ -2,9 +2,8 @@ module
 
 public import Mathlib
 public import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.IwahoriFactorisation.StrictDominance.UnitaryExtremality.SatPowNonvan
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsStrictDom
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IsPermWOne
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MemIwUIff
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0206
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0215
 
 @[expose] public section
 

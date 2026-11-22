@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import GroundTheory.AutomorphicForms.TensorProductTheorem.Existence
-public import GroundTheory.AutomorphicForms.TensorProductTheorem.OuterTensor
+public import GroundTheory.AutomorphicForms.TensorProductTheorem.Bundle0002
 
 @[expose] public section
 

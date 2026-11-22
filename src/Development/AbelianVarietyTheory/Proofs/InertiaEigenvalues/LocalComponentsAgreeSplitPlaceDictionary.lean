@@ -1,17 +1,17 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.FinIso
+public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0020
 public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.RingSpecNormalisedCharacterEq
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.RecProdRecSatakeLL
-public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.StandardCosocleGL
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0690
+public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.Bundle0008
 public import Formalism.SharpRestriction.LevelLetterCocycles.SphericalInertData
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.SplitPlaceLocalComponentExistsUniqueClassStatement
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.DefiniteUnitaryAutFormEqZeroOfFinitePointsStatement
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsLocUniqueOfIsSplitAt
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.SplitPlaceUnitaryLocalPointsEquivGL
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsHomTrivOutsideLoc
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.EqZeroOfSupportedAtSplit
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.SplitPlaceLocalComponentExistsUniqueClass
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0717
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0243
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0218
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0349
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0041
 
 @[expose] public section
 
@@ -171,7 +171,7 @@ theorem locComp_agree : ∀ (L : Type) [Field L] [NumberField L] [IsCMField L] (
     IsCompAlong U (locU n s.w) ((cLoc s.w).comp (locU n s.w).subtype) σ.ρ →
     ∃ τ : GlobalTheory.SmGL.IrrRep (GL (Fin n) (s.w.adicCompletion L)), IsLocS π.S s τ ∧ Nonempty (τ.ρ.Equiv σ.ρ) := by
   intro L _ _ _ n F π U hD s σ hσ
-  obtain ⟨τ, hτ, -⟩ := GlobalTheory.T.splitPlaceLocalComponent_exists_unique_class L n π s
+  obtain ⟨τ, hτ, -⟩ := _root_.GlobalTheory.LocCompSplit.main L n π s
   refine ⟨τ, hτ, ?_⟩
   obtain ⟨i, T, hic, hi, hTinj, hTS, hTeq⟩ := hτ
   have hsplit : IsSplitAt s.w := isSplitAt_w F s i hic hi

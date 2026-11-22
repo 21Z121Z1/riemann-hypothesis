@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.OneLeftSpMap
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.AppLEBasicOpenIsStandardSmooth
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsDualElements
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0119
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0125
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0002
 public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.DerivationVanishingConstants
 
 @[expose] public section

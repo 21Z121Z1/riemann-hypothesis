@@ -2,9 +2,9 @@ module
 
 public import Mathlib
 public import Formalism.SharpRestriction.LevelLetterCocycles.DataNLoc
-public import Development.AbelianVarietyTheory.Definitions.Foundations.HTBasis
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.NormMemCyclotomicLayerPrimeRpowStatement
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.NormPrimitiveRootPrimePowSubOnePadicComplexStatement
+public import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0010
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0167
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0147
 
 @[expose] public section
 
@@ -36,7 +36,7 @@ theorem norm_term (K : FinExt l) (i : ℕ) (hi : 2 ≤ i) (ζ : Om l) (hζ : IsP
     ∃ n : ℤ, ‖z‖ = (l : ℝ) ^ (((n * l : ℤ) : ℝ) / ((l : ℝ) ^ (i - 1) * ((l : ℝ) - 1))) ∧
       ∀ a : ℕ, ‖z * (ζ - 1) ^ a‖ =
         (l : ℝ) ^ (((n * l - a : ℤ) : ℝ) / ((l : ℝ) ^ (i - 1) * ((l : ℝ) - 1))) := by
-  obtain ⟨n, hn⟩ := GlobalTheory.T.norm_mem_cyclotomic_layer_prime_rpow l K (i - 1) (by omega) z hz h0
+  obtain ⟨n, hn⟩ := _root_.GlobalTheory.Cyc.norm_of_mem_Ks l K (i - 1) (by omega) z hz h0
   have hl : (1 : ℝ) < l := by exact_mod_cast (Fact.out : l.Prime).one_lt
   have hl0 : (0 : ℝ) < l := by linarith
   have hζC : IsPrimitiveRoot (ζ : PadicComplex l) (l ^ i) := by

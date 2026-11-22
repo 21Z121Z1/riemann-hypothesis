@@ -1,16 +1,16 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MapsAtExpLeB
-public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.RigidifiedIsoRespectsCubeAndSymmetry
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2463
+public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.Bundle0028
 public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.UnifPreCharacterGroupIso
 public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ComparisonTorusInvariant
-public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.UniformisationPolarisationsAgreeAtLevel
-public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.UniformisationPolarisedAbelianSchemesIso
+public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.Bundle0054
+public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.Bundle0112
 public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ExistsIsoOfCompatibleAbelianThickenings
-public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.IsIsoOfIsClosedImmersionOfThickeningsOfIsProper
-public import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.AbelianSchemeLawsUnconditional
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsRigidifiedTranslatedBundleIsoPsiZeroStatement
+public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.Bundle0014
+public import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.Bundle0029
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2596
 
 @[expose] public section
 
@@ -636,4 +636,4 @@ theorem GlobalTheory.MumCmp.exists_iso_twist_of_translate : ∀ (R : Type) [Comm
   intro R _ _ _ hR D A G _ _ hG U g _ a ha hab A₂ D₂ U₂ ⟨wL, hw⟩ β hβ hq
   obtain ⟨w, hw⟩ := GlobalTheory.MumCmp.Transl.exists_iso_translate hR.1 hG U.toUnifPre U₂.toUnifPre a ha g.b
     (fun e ae h₁ h₂ => (hab e ae h₁ h₂).1) wL hw β hq
-  exact GlobalTheory.T.exists_rigidified_translatedBundle_iso_psi_zero R _ D D₂ g β.hom hβ w hw
+  exact _root_.GlobalTheory.MumCmp.Norm.exists_rigidified R _ D D₂ g β.hom hβ w hw

@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import GroundTheory.HeightsAndTheta.Heights.ChowForms.StatementsDehomogOrd
-public import GroundTheory.HeightsAndTheta.Heights.ChowForms.PChartLocalOrder
-public import GroundTheory.HeightsAndTheta.Heights.ChowForms.PChartLocDomain
+public import GroundTheory.HeightsAndTheta.Heights.ChowForms.Bundle0010
+public import GroundTheory.HeightsAndTheta.Heights.ChowForms.Bundle0011
+public import GroundTheory.HeightsAndTheta.Heights.ChowForms.Bundle0008
 
 @[expose] public section
 

@@ -1,18 +1,18 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.TransformIntegral
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0354
 public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ShiftSubTranslate
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsGenReadsOfUnitAt
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.OscillatorModelValuesFirst
-public import Development.AbelianVarietyTheory.Definitions.Divisors.GenReads
-public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.ThExprUniqOfChartIndep2
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0342
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1635
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0034
+public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0007
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.OscillatorModelValuesSecond
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.OscillatorModelExtensionSecond
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1715
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.OscillatorModelValuesSixth
 public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.PureTensorOSmul
-public import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.EmbeddingsDifferOnInteger
-public import Development.AbelianVarietyTheory.Statements.HeckeThetaIntegrals.HkSupSizedOfHkSup
+public import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.Bundle0076
+public import Development.AbelianVarietyTheory.Statements.HeckeThetaIntegrals.Bundle0001
 
 @[expose] public section
 
@@ -71,8 +71,8 @@ theorem heckeOn_actW_cl {i : Fin D.R.m} (hβ' : IsSDFrame (Wc D i) (R.βW i) (R.
     have : Formalism.L2.Col.cO D.host.E a = a' := RingOfIntegers.ext e.symm
     rwa [this]
   have hp : IsPrimeIdem P e (e + cA D e) := Or.inl ⟨he, rfl⟩
-  have hq := (GlobalTheory.T.supported_subgroup_split_commute_primeIdempotents (Wc D i)).2.2.1 P e _ hp
-  obtain ⟨large₂, hLg⟩ := ((GlobalTheory.T.supported_subgroup_split_commute_primeIdempotents (Wc D i)).1 _ hq.1 hq.2.1).1
+  have hq := (_root_.GlobalTheory.IdemSupport.supported_group_and_prime_idempotents (Wc D i)).2.2.1 P e _ hp
+  obtain ⟨large₂, hLg⟩ := ((_root_.GlobalTheory.IdemSupport.supported_group_and_prime_idempotents (Wc D i)).1 _ hq.1 hq.2.1).1
   have hK : ∀ g, g ∈ levG (Wc D i) (R.βW i) (R.datWp i R.triv) ⊓ large₂ ↔ g ∈ locPart (Wc D i) (KsphC (Wc D i) ∅) e := by
     intro g
     have h1 := ((GlobalTheory.T.level_hyperspecial_trivialCharacter_splits_off_places (Wc D i) (R.βW i) _ _ (R.datWp i R.triv) hβ).2 P e _ hp hN hoff).1 g

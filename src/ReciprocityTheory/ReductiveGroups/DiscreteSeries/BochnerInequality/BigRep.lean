@@ -1,7 +1,7 @@
 module
 
-public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.BochnerInequality.Permute
-public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.BochnerInequality.IsKUnitaryOfIsInfUnitary
+public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.BochnerInequality.Bundle0001
+public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.BochnerInequality.Bundle0002
 
 @[expose] public section
 

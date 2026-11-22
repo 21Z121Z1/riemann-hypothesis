@@ -1,12 +1,12 @@
 module
 
 public import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.InfinitesimalCharacterLimits.InfinitesimalCharacterGlue
-public import Development.WeilBound.RepresentationTheoryGL.ResidualSpectrum.SliceTensors.InfInd2Holds
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.TraceOperatorEigenvalueSum
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LieCentralElementTrace
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IteratedDerivSplitCentre
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsHasInfCharGL
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.BaseChangeSpehOfDiscreteSeries
+public import Development.WeilBound.RepresentationTheoryGL.ResidualSpectrum.SliceTensors.Bundle0008
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0508
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0501
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1225
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1027
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0664
 
 @[expose] public section
 

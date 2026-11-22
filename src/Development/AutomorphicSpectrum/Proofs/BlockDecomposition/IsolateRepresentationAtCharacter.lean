@@ -2,10 +2,9 @@ module
 
 public import Mathlib
 public import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.SatakeExponents.UniformizerValuations.SubOfNonNil
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.HkMemFixed
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FinsumOutTranslate
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsSmulEqOnFinset
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IrreducibleHomFixedVectorsStatement
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0089
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0009
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IrreducibleHomFixedVectors
 public import Development.AutomorphicSpectrum.Proofs.GlobalProofs.IrreducibleSmoothAdmissibleGL
 
 @[expose] public section
@@ -416,7 +415,7 @@ theorem density_core {K : Subgroup (GL ι F)} (hKo : IsOpen (K : Set (GL ι F)))
     obtain ⟨T, hT⟩ := LinearMap.exists_extend ((fixed (ρ j) K).subtype ∘ₗ φ.toLinearMap)
     have hTv : ∀ v (hv : v ∈ fixed (ρ i) K), T v = (φ ⟨v, hv⟩ : Y j) := fun v hv =>
       LinearMap.congr_fun hT ⟨v, hv⟩
-    refine GlobalTheory.T.irreducible_hom_fixed_vectors F ι K hKo hKc (Y i) (Y j) (ρ i) (ρ j) (hs i) (hi i) (hs j) (hi j) (h0 i) T
+    refine _root_.GlobalTheory.CompanionTheory.HeckeInj.hecke_determines F ι K hKo hKc (Y i) (Y j) (ρ i) (ρ j) (hs i) (hi i) (hs j) (hi j) (h0 i) T
       ?_ ?_ ?_ ?_
     · intro v hv
       rw [hTv v hv]

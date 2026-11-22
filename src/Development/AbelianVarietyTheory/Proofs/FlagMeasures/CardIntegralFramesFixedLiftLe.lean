@@ -1,17 +1,16 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.RowMinor
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsUniquePlace
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.StandardBaseFlagComplementIntegralLatticeStatement
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.IntegralOfUnimodular
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.CentralMapMemIntegralUnipotentFixingFrame
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.PerpendicularRankIdealBoundStatement
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.FixedFramesPerpendicularVectorsStatement
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.FramesSameGramDifferBySkewSolutionStatement
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.MinorSmulEqRowSpaceOfCofVecOrth
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.XClassesDenom
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.OneLeNormMulAbsNormSq
+public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.Bundle0012
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0199
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.StandardBaseFlagComplementIntegralLattice
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0256
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0191
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.PerpendicularRankIdealBound
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.FixedFramesPerpendicularVectors
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0331
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0063
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0065
 
 @[expose] public section
 
@@ -419,8 +418,8 @@ theorem card_frames_le : ∀ (D : D7) (u u' : D.what₂.Word) (F0 : Fb D u) (Λ 
   rcases X.eq_empty_or_nonempty with hE | ⟨F1, hF1⟩
   · simp [cntCl, hE]
   obtain ⟨hcard, -, hf, -, hrd, hstar, hnorm, -⟩ := GlobalTheory.real_places_facts D
-  obtain ⟨-, -, hpos, hlat, hint, -⟩ := GlobalTheory.T.standardBaseFlag_complement_integralLattice D u u' F0 Λ hSt hb hΛ
-  obtain ⟨hrk, I, hI, hIN, hIS⟩ := GlobalTheory.T.perpendicular_rank_ideal_bound D u u' F0 Λ hSt hb hΛ P s De hsk hsub
+  obtain ⟨-, -, hpos, hlat, hint, -⟩ := _root_.GlobalTheory.LoopC.Base.main D u u' F0 Λ hSt hb hΛ
+  obtain ⟨hrk, I, hI, hIN, hIS⟩ := _root_.GlobalTheory.LoopC.PerpDisc.main D u u' F0 Λ hSt hb hΛ P s De hsk hsub
   obtain ⟨hQ1, hQrd, ⟨b₀, hd, hdQ⟩, hG, hGQ⟩ := hQ
   have huni : Formalism.HermitianLatticesTheory.IsUnimodular (hS D).hT Λ := hΛ.2.1.2.1
   have hZ : ∀ F' ∈ X, ∀ a b, (hS D).hT (F0.e a) (frame F' b) = Z (Fin.castSucc a) b := by
@@ -477,7 +476,7 @@ theorem card_frames_le : ∀ (D : D7) (u u' : D.what₂.Word) (F0 : Fb D u) (Λ 
       ∃ a ∈ X, O = {b | b ∈ X ∧ TEqv D Λ (lf D F0) a b}} ⊆ ((RW ×ˢ RX).image g : Finset _) := by
     rintro _ ⟨F', hF', rfl⟩
     change cls Λ (lf D F0) X (frame F') ∈ _
-    obtain ⟨w, hw, hwG⟩ := GlobalTheory.T.fixed_frames_perpendicular_vectors D u u' F0 Λ hSt hb hΛ hsp P φ Z hφ hsub.1 F' hF'
+    obtain ⟨w, hw, hwG⟩ := _root_.GlobalTheory.LoopC.WMem.main D u u' F0 Λ hSt hb hΛ hsp P φ Z hφ hsub.1 F' hF'
     obtain ⟨w₀, hw₀, v, hv, ew⟩ := hcovW w (fun b => (hw b).2) (by
       rw [← hwG, ← hYZ]
       simp only [cofVec_map, algebraMap_smul])
@@ -500,7 +499,7 @@ theorem card_frames_le : ∀ (D : D7) (u u' : D.what₂.Word) (F0 : Fb D u) (Λ 
         rw [this, ← algebraMap_smul D.host.E (Y' a b) (v a), map_smul, Pi.neg_apply, map_neg,
           smul_eq_mul, mul_neg]
     have hPG : Pw w₀ (G w₀) := Classical.epsilon_spec ⟨_, hP2⟩
-    obtain ⟨x, hx1, hx2, hx3⟩ := GlobalTheory.T.frames_same_gram_differ_by_skew_solution D u u' F0 Λ hSt hb hΛ P φ Z hφ (G w₀) hPG.1 _ hF2
+    obtain ⟨x, hx1, hx2, hx3⟩ := _root_.GlobalTheory.LoopC.FrameDiff.frame_diff D u u' F0 Λ hSt hb hΛ P φ Z hφ (G w₀) hPG.1 _ hF2
       fun b => ⟨w₀ b, hPG.2 b, hP2.2 b⟩
     obtain ⟨x₀, hx₀, c, hc, ex⟩ := hcovX x (fun a b α hα => mul_mem_of D _ (hx2 a b) hα)
       (by rw [hYZ]; exact hx3)

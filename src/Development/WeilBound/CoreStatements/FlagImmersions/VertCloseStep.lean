@@ -3,10 +3,16 @@ module
 public import Mathlib
 public import Development.WeilBound.CoreStatements.FlagImmersions.DivCycleEqZeroOfNotMemZ
 public import Development.WeilBound.CoreStatements.FlagImmersions.SamePotTransRsmul
-public import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.RootOriginHeightComparisonTwo
-public import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.RootOriginHeightComparisonThreeStatement
+public import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.Bundle0027
+public import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.RootOriginHeightComparisonThree
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.TowerOrigin
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.Bundle0010
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.Bundle0011
+public import Development.AutomorphicSpectrum.Definitions.DivisibilityTowers.LocalAtPlaces
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.Bundle0006
+public import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.ArMonoReline
 public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.FlagLabelBasesExist
-public import GroundTheory.HeightsAndTheta.Heights.HeightComparison.IsMultiHomogIdealIff
+public import GroundTheory.HeightsAndTheta.Heights.HeightComparison.Bundle0003
 
 @[expose] public section
 
@@ -205,7 +211,7 @@ theorem vertClose_some (hi : i.comp o₀.g = o.g) (hv : IsBlockMap κ v) (hv₀ 
     show _ = pullDeg κ (M.x t (τ, k)).a b - pullDeg κ₀ (R.x t (τ, k)).a b
     rw [M.x_deg, R.x_deg]
     rfl
-  · exact GlobalTheory.T.root_origin_height_comparison_three E H D l Xo c Y S ∅ M R R Sys Fx o o₀ o₀ M.Ω K ι y κ v κ₀ v₀ κ₀ v₀ (RingHom.id _) i i hv hv₀ hv₀
+  · exact _root_.GlobalTheory.CompanionTheory.Ar.OrIso.root_isometric E H D l Xo c Y S ∅ M R R Sys Fx o o₀ o₀ M.Ω K ι y κ v κ₀ v₀ κ₀ v₀ (RingHom.id _) i i hv hv₀ hv₀
       hy hy₀ hy₀ (by rw [hi]; rfl) rfl hJ hJ₀ hJ₀ hdeg hA (τ, k) (f _) (g _) (df _) (dg _)
       ((GroundTheory.Heights₂.Heights.Bridge.isMultiHomog_iff _ _).2 (hf _))
       ((GroundTheory.Heights₂.Heights.Bridge.isMultiHomog_iff _ _).2 (hg _)) (funext (hd _)) (hfP _) (hgP _) (hfg _) t h0 h1 z hz

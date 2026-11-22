@@ -2,7 +2,7 @@ module
 
 public import Formalism.LocalToGlobal.GlobalTheory.ColValOfTiedSOfRest
 public import Formalism.SharpRestriction.GlobalSchurBounds.GlobalRankLatticeProofs.UnitTraceSumBounds.RankConditionsOfLayerTwo
-public import Formalism.LocalToGlobal.Columns.TiedValRat
+public import Formalism.LocalToGlobal.Columns.Bundle0024
 public import Formalism.LocalToGlobal.GlobalTheory.GL4.PColStd
 
 @[expose] public section

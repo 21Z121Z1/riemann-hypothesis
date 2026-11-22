@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.TrueWtAddSSNonneg
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.SumFibreEqSumOrbits
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0078
 public import Formalism.LocalToGlobal.KernelLattices.ThDistC
 
 @[expose] public section

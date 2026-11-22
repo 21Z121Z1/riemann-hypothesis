@@ -2,32 +2,31 @@ module
 
 public import Development.WeilBound.RepresentationTheoryGL.EisensteinSeries.SiegelEisensteinContinuation.DictInf
 public import Mathlib
-public import Formalism.LocalToGlobal.ProjectiveLattices.UnramBridgeHolds
-public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.ContinuesConst
-public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.EisensteinIsotropicLine
-public import Development.AbelianVarietyTheory.Definitions.Foundations.AnalyticOnNhdTsumNpow
-public import Development.AbelianVarietyTheory.PublishedTheorems.SiegelWeil₂.SiegelEisensteinContinuationOfDoublingMethod
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.MixSDblDecZero
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0004
+public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.Bundle0012
+public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.Bundle0016
+public import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0018
+public import Development.AbelianVarietyTheory.PublishedTheorems.SiegelWeil₂.Bundle0001
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0154
 public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsIsLatticeFrameIsMajorantFrame
 public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsDualFamilyOfIsLattice
 public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SiegelWeilLagrangianTermsAbsTsumLeHeightPoly
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.UnitaryAdelicHeightOrthogonalEmbeddingLePow
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.StabilizerInductionLaw
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.NonarchimedeanGroupOfIsCompactIsOpen
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0138
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0175
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0306
 public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.StabiliserEqCentraliserCartan
-public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.IsClosedEmbeddingOfLocallyCompact
-public import CompanionTheory.HarishChandraModules.KFiniteAnalyticVectors.AdmissibleSmoothVectors.Garding
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.InducedSectionZFinite
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ExistsAdelicUnitaryConjSelfDualMajorantLevelsStatement
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ContinuesWithModerateGrowthShiftTranslatePowStatement
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.AnisotropicCoreWittFrame
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.DoubledSpaceMaximalLevelLattice
-public import Development.AbelianVarietyTheory.PublishedTheorems.SiegelWeil₂.ExistsNotEisContinues
+public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.Bundle0007
+public import CompanionTheory.HarishChandraModules.KFiniteAnalyticVectors.AdmissibleSmoothVectors.Bundle0002
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0167
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0242
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0180
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0161
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0163
+public import Development.AbelianVarietyTheory.PublishedTheorems.SiegelWeil₂.Bundle0002
 public import Development.WeilBound.RepresentationTheoryGL.EisensteinResidues.AnisotropicGlobalForms.SectionTrace.SecOf
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.StandardSectionExistsStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ChartSectionExistsStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ScalarSectionExistsStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.DivisibilityStatementStatement
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0763
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0760
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0761
 public import Development.WeilBound.RepresentationTheoryGL.EisensteinSeries.SiegelEisensteinContinuation.EisensteinChartSplitting.PositiveSumGrowth.AbsAPos
 
 @[expose] public section
@@ -38,6 +37,6 @@ open ResidueKilled.Tr
 
 theorem siegelEisensteinContinuation_of (hD : Dict) (hI : DictInf) (hL : SecLaw) (hW : WallLaw) (hG : CMGood)
     (hT : GrpTop) (hB : BdetLaw) (hE : ExtLaw) (hP : ParLaw) (hS : SgAll) : GlobalTheory.Published.SiegelEisensteinContinuation :=
-  ResidueKilled.Tr.tTop hG hT hB hE hP hS (GlobalTheory.T.chart_section_exists hD hI GlobalTheory.T.standard_section_exists) (GlobalTheory.T.scalar_section_exists hL hW) GlobalTheory.T.divisibility_statement
+  ResidueKilled.Tr.tTop hG hT hB hE hP hS (_root_.GlobalTheory.CompanionTheory.TChartProof.tChart hD hI _root_.GlobalTheory.CompanionTheory.StdChart.tStd) (_root_.GlobalTheory.CompanionTheory.ScalWall.tScal hL hW) _root_.GlobalTheory.CompanionTheory.DivMult.div_multiplier
 
 end PositivityTheory.RgEis.Sp

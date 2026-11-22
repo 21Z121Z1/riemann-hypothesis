@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.FiniteEtaleModels.IsQuotTriv
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExtensionOverNormalQuasiProjectiveBase
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2079
 
 @[expose] public section
 

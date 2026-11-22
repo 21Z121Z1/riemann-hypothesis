@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.JoinCol
-public import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.PAreaMultiplicityWeight
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0036
+public import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.Bundle0007
 
 @[expose] public section
 

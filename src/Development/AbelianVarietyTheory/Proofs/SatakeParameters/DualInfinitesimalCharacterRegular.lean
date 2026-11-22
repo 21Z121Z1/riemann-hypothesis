@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisGeometry₂.WignerVanishingGL
+public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisGeometry₂.Bundle0004
 
 @[expose] public section
 

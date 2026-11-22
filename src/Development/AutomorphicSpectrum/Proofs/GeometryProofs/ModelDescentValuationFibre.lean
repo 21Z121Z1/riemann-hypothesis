@@ -1,12 +1,12 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsPreFamilyOfLatticeFamilyTwo
-public import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.StatementsFlagIndependence
-public import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.Cartier
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.Bundle0011
+public import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.Bundle0017
+public import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.Bundle0002
 public import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.PTwinGradedFrameIff
-public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.MemSpanOverOfMem
-public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.LocFreeMapMkQIff
+public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.Bundle0009
+public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.Bundle0012
 
 @[expose] public section
 

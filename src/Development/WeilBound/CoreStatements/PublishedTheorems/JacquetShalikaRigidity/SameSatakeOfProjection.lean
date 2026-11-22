@@ -2,10 +2,10 @@ module
 
 public import Development.WeilBound.CoreStatements.PublishedTheorems.SmoothVectorEstimates.WhittakerVanishingImpliesZero
 public import Development.WeilBound.CoreStatements.RegularisedThetaMirabolic.KFiniteCuspForms.CuspSp
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MemL2OfBoundedContinuousInvariant
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0680
 public import Development.WeilBound.CoreStatements.PublishedTheorems.FiniteGLInvariants.AffineLieInvariants.Imports
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CuspidalGLLocalComponentsEventuallySatake
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.EventuallyMemFixed
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1262
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0194
 
 @[expose] public section
 

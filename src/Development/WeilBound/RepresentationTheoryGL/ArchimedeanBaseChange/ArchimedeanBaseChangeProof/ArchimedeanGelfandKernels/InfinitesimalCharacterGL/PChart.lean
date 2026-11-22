@@ -1,10 +1,10 @@
 module
 
 public import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.ArchimedeanGelfandKernels.InfinitesimalCharacterGL.NatDegreeDefectGelf
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CasimirSignatureMemCenter
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.MapSingleAtEmb
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0493
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0283
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HeckeCharacterThetaInvariantExponent
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1069
 
 @[expose] public section
 

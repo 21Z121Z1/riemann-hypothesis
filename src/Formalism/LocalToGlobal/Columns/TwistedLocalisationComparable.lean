@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Formalism.LocalToGlobal.Columns.StandardDeltaIntegralCoeffs
-public import Formalism.LocalToGlobal.Columns.BrpColLatOneSpan
+public import Formalism.LocalToGlobal.Columns.Bundle0021
 public import Formalism.LocalToGlobal.Columns.CoefficientsModP.LatticeBasisExistsHolds
 
 @[expose] public section

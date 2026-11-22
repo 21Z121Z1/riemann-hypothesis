@@ -2,11 +2,11 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.Divisors.CTSmallCone
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsHaarOfIsCompact
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsComplementaryAdelicSchwartzRestFunction
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdelicHeisenbergActsByLocalSchrodinger
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SchrodingerPreservesSchwartzBruhat
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ActsRhoOfAtInf
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1295
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1665
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1592
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1656
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1320
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WeilRepresentationPreservesSchwartz
 
 @[expose] public section

@@ -4,8 +4,8 @@ public import Mathlib
 public import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.BundleObjects
 public import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.InstFintypeSumElim
 public import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.IsVerticalDivOfIsVerticalDivisor
-public import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.PVocabMultiHomog
-public import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.PVocabMultiHomogIdeal
+public import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.Bundle0016
+public import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.Bundle0017
 
 @[expose] public section
 

@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MeanTransport
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.WeilOperatorOneVariablePreservesSqNormOrthogonal
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0674
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0213
 
 @[expose] public section
 

@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.HeckeAlgebras.CoefficientRepTrivialOnUnramified
-public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.IrreducibleProjectionExists
+public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0038
 
 @[expose] public section
 

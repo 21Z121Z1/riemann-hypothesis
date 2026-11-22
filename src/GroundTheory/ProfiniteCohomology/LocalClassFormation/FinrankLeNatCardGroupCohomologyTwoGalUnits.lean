@@ -1,11 +1,11 @@
 module
 
 public import Mathlib
-public import GroundTheory.ProfiniteCohomology.LocalClassFormation.OrderInfRes
+public import GroundTheory.ProfiniteCohomology.LocalClassFormation.Bundle0001
 public import GroundTheory.ProfiniteCohomology.LocalClassFormation.OrderScalars
 public import GroundTheory.ProfiniteCohomology.LocalClassFormation.UnramifiedRes
-public import GroundTheory.LocalFields.UnramifiedExistence
-public import GroundTheory.LocalFields.FiniteExtension
+public import GroundTheory.LocalFields.Bundle0008
+public import GroundTheory.LocalFields.Bundle0002
 
 @[expose] public section
 

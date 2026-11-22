@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Divisors.OrthSubrepresentation
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NonemptyLinearEquivOfPiFinPowFiniteStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GaloisDescentSemilinearBijectiveStatement
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0002
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0292
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0239
 
 @[expose] public section
 

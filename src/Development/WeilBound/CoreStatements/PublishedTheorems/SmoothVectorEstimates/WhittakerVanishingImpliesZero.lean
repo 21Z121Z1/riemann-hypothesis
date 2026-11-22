@@ -3,8 +3,8 @@ module
 public import Development.WeilBound.CoreStatements.PublishedTheorems.SmoothVectorEstimates.MirabolicColumnBlock
 public import Development.WeilBound.CoreStatements.PublishedTheorems.JacquetShalikaBound.lift_levelP_alt₂
 public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.CuspDiscreteDecompositionGL
-public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.CuspidalMultiplicityOne
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsGenericOfIsLocComp
+public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.Bundle0009
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0679
 
 @[expose] public section
 

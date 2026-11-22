@@ -1,7 +1,7 @@
 module
 
 public import Development.WeilBound.CoreStatements.AutomorphicKernels.SiegelWeilFormula.LowerRankDatum
-public import Development.WeilBound.CoreStatements.AutomorphicKernels.SiegelWeilFormula.AdDecomp
+public import Development.WeilBound.CoreStatements.AutomorphicKernels.SiegelWeilFormula.Bundle0001
 
 @[expose] public section
 

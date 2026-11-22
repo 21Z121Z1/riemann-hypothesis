@@ -2,10 +2,10 @@ module
 
 public import Mathlib
 public import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.ArchimedeanGelfandKernels.WaveSt
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IsMultOfFintype
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.EventuallyEqOfAgreeGLs
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.TrETransposeEqPhiSeq
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.GelfandValueNegationStatement
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0189
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0196
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0203
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0207
 
 @[expose] public section
 
@@ -366,7 +366,7 @@ theorem transposed_invariants : ∀ (n m : ℕ), ∃ (N : ℕ) (c : Fin N → �
   intro n m
   obtain ⟨N, c, w, h⟩ := phiSeq_words n m
   refine ⟨N, c, w, fun cc => ?_, fun hR s V _ _ f hf x hx => ?_⟩
-  · rw [GlobalTheory.T.gelfand_value_negation, h (A := ℂ)]
+  · rw [_root_.GlobalTheory.CompanionTheory.WaveMult.ValPhi.gelfVal_neg_eq_phiSeq, h (A := ℂ)]
     simp
   · let F : Sm n V := ⟨(GLs n).indicator f, indicator_mem hf⟩
     have hF : ∀ g ∈ GLs n, f g = F.1 g := fun g hg => by simp [F, hg]

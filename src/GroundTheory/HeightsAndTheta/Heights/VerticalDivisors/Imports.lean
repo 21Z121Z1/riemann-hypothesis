@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import GroundTheory.HeightsAndTheta.Heights.VerticalDivisors.OfFreeParAlgIndep
-public import GroundTheory.HeightsAndTheta.Heights.VerticalDivisors.PFreeParAlgIndep
+public import GroundTheory.HeightsAndTheta.Heights.VerticalDivisors.Bundle0015
 
 @[expose] public section
 

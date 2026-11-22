@@ -1,9 +1,8 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.IsChainFirst
-public import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.IsBlockMapDrop
-public import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.AlgebraicIndependentLinearForms
+public import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.Bundle0016
+public import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.Bundle0017
 
 @[expose] public section
 

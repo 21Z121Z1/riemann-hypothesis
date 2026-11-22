@@ -2,9 +2,9 @@ module
 
 public import Mathlib
 public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsFlatAnIffIsConstMul
-public import Formalism.LocalToGlobal.ProjectiveLattices.VAtVNeBot
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0010
 public import Formalism.LocalToGlobal.ProjectiveLattices.RulInst
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.IsEigFrameOfFrPt
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0223
 
 @[expose] public section
 

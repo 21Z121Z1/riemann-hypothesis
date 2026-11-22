@@ -4,7 +4,7 @@ public import Mathlib
 public import Formalism.LocalRingCardinality.DataParams
 public import Formalism.SharpRestriction.RamificationFrobenius.TotientGaloisClasses.HostFacts
 public import Development.AutomorphicArithmetic.PrimeDiscriminants.SlopeTestRemainingChoices
-public import Development.AutomorphicArithmetic.CMTraceForms.SumLogPrimeFactorsMulTwoAddLogbLe
+public import Development.AutomorphicArithmetic.CMTraceForms.Bundle0001
 
 @[expose] public section
 

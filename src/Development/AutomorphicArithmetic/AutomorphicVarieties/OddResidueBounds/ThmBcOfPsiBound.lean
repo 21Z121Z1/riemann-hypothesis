@@ -1,13 +1,11 @@
 module
 
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.OddResidueBounds.KillPow
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.OddResidueBounds.LenPow
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.OddResidueBounds.Bundle0002
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.OddResidueBounds.Imports
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.OddResidueBounds.ActEx
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.OddResidueBounds.ActFacts
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.OddResidueBounds.ProdVal
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.OddResidueBounds.Bundle0001
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.OddResidueBounds.Bundle0003
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.OddResidueBounds.AtPrime
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.OddResidueBounds.DegExistsLift
 public import Mathlib
 
 @[expose] public section

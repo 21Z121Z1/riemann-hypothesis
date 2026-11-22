@@ -1,6 +1,6 @@
 module
 
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.DerivCombCongr
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0233
 
 @[expose] public section
 

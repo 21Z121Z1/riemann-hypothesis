@@ -1,6 +1,6 @@
 module
 
-public import Formalism.LocalToGlobal.TorsionIntegrality.RamifiedCurveKernels.StatementV
+public import Formalism.LocalToGlobal.TorsionIntegrality.RamifiedCurveKernels.Bundle0001
 public import Formalism.LocalToGlobal.TorsionIntegrality.RamifiedCurveKernels.FinalC
 
 @[expose] public section

@@ -2,8 +2,8 @@ module
 
 public import Mathlib
 public import ReciprocityTheory.DualLattices.FormalChartAtZero
-public import Development.AbelianVarietyTheory.BlockTheory.PoincareCuspForms.FormalGroupTorsionCharts
-public import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.EvBasicNEvalSubCoeffMem
+public import Development.AbelianVarietyTheory.BlockTheory.PoincareCuspForms.Bundle0002
+public import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.Bundle0015
 
 @[expose] public section
 

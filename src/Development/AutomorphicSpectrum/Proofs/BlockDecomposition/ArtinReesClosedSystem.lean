@@ -1,14 +1,12 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.PowSubSuccLe
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SubobjectLeIffAffineSections
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.QuasicoherentSupSections
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SubobjectPullbackSections
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SecsMapArrow
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IdealPowerSubobjectSections
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ArtinReesSubobjectStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ProperInfIdealSheavesStatement
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0239
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0251
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0250
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0244
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0262
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0249
 
 @[expose] public section
 
@@ -340,6 +338,6 @@ theorem restrict_alg : ∀ {A : Type} [CommRing A] [IsNoetherianRing A] (I : Ide
   have : CompactSpace X := QuasiCompact.compactSpace_of_compactSpace (X ↘ Spec (.of A))
   obtain ⟨k, ar⟩ := GlobalTheory.T.artin_rees_subobject I hE D hD
   exact ⟨k, closedSys_restrict hS hE.1 hD hc ar, propSupp_restrict hS hE.1 hD hP k,
-    fun halg hPD => alg_of hS hE.1 hD hc (fun T₁ T₂ => GlobalTheory.T.proper_inf_ideal_sheaves _ T₁ T₂) halg hPD⟩
+    fun halg hPD => alg_of hS hE.1 hD hc (fun T₁ T₂ => _root_.GlobalTheory.CompanionTheory.GE.Union.isProper_inf _ T₁ T₂) halg hPD⟩
 
 end GlobalTheory.CompanionTheory.GE.Comb

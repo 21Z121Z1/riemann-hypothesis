@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import GroundTheory.AutomorphicForms.RealGroupsPolar
+public import GroundTheory.AutomorphicForms.Bundle0007
 public import GroundTheory.AutomorphicForms.HarishChandraInvariance.Compact
 
 @[expose] public section

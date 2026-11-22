@@ -1,10 +1,10 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SplitLoc
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ExistsFinsetNormOne
-public import Formalism.LocalToGlobal.IndefiniteReal.FinitePlaces.FiniteAdeleSndAlgebraMap
-public import Formalism.LocalToGlobal.IndefiniteReal.FinitePlaces.SplitChar
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0121
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0011
+public import Formalism.LocalToGlobal.IndefiniteReal.FinitePlaces.Bundle0002
+public import Formalism.LocalToGlobal.IndefiniteReal.FinitePlaces.Bundle0014
 
 @[expose] public section
 

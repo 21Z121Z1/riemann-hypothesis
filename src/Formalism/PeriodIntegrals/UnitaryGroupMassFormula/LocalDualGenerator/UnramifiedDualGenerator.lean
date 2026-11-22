@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LocalDualGenerator.FpDualUnram
-public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LocalDualGenerator.IsClosedO
+public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LocalDualGenerator.Bundle0001
+public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LocalDualGenerator.Bundle0002
 public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.MemOfClosed
 
 @[expose] public section

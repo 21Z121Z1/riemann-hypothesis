@@ -1,9 +1,9 @@
 module
 
-public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.LaplaceOperators.EquivariantL2Space
+public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.LaplaceOperators.Bundle0001
 public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.HighestWeights.UniqueU
 public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.LaplaceOperators.LaplaceFoundations.NChart
-public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.LaplaceOperators.LaplaceFoundations.IsCompactUnitaryMat
+public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.LaplaceOperators.LaplaceFoundations.Bundle0004
 
 @[expose] public section
 

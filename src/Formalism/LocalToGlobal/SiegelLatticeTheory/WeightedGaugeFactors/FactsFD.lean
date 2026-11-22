@@ -1,7 +1,7 @@
 module
 
-public import Formalism.LocalToGlobal.SiegelLatticeTheory.FlagStabilizerTensors.RootLatticeThresholds.SzHypFD
-public import Formalism.LocalRingCardinality.DataTies
+public import Formalism.LocalToGlobal.SiegelLatticeTheory.FlagStabilizerTensors.RootLatticeThresholds.Bundle0048
+public import Formalism.LocalRingCardinality.Bundle0003
 public import Formalism.LocalRingCardinality.SpanPowerMembership.RankRecordRowDimensionZero
 public import Formalism.LocalRingCardinality.SpanPowerMembership.SignSplitEquivInl
 public import Formalism.LocalRingCardinality.SpanPowerMembership.HaarDensityNeZero
@@ -9,9 +9,9 @@ public import Formalism.SharpRestriction.CuspSpanNormBounds.NonemptyParameterMod
 public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.FormalDegree.FdCons
 public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.FormalDegree.HaarVolumes.OmegaDensityUnique
 public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.FormalDegree.ProdSubLtEqFactorial
-public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.LaplaceOperators.LaplaceFoundations.PsiFor
-public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.LaplaceOperators.KTypeLemma.StdGapOfGapLap
-public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.HighestWeights.Exists
+public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.LaplaceOperators.LaplaceFoundations.Bundle0008
+public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.LaplaceOperators.KTypeLemma.Bundle0008
+public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.HighestWeights.Bundle0005
 public import Formalism.SharpRestriction.CuspSpanNormBounds.DiscreteSeriesExistence.ExistsG
 public import Formalism.LocalToGlobal.SiegelLatticeTheory.WeightedGaugeFactors.FactsDS
 

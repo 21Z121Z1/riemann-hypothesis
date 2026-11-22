@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.ContractsOfConstant
+public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.Bundle0011
 
 @[expose] public section
 

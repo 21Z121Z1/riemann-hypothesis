@@ -1,7 +1,6 @@
 module
 
-public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.CapelliEigenvalues.CoreDefs
-public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.CapelliEigenvalues.HeckeMultiplication
+public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.CapelliEigenvalues.Bundle0001
 public import Formalism.FormalDegreeBessel.FormalDegreeRatio.CapelliHighestWeightConjugated
 
 @[expose] public section

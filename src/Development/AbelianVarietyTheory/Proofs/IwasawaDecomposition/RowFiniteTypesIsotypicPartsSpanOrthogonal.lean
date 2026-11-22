@@ -2,19 +2,19 @@ module
 
 public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.StableIffCarrierEq
 public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExistsFiniteClass
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.RePosOfIsMultIP
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ContDiffSetIntegralNat
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0158
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0151
 public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ContDiffDerivSnoc
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.PostOnMemGoodPart
-public import Development.AbelianVarietyTheory.Definitions.ExistenceOfLattices.CoeSelfDualLatticeInFrameCoordinatesEq
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RealisationPrincipalLevelEqCoreLevelOpen
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.UnitaryCongruenceConjContainsCongruenceStatement
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsCongruenceLevelMapsIntoLatticeCongruenceStatement
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.PrincipalCongruenceLevelContainedStatement
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsLatticeCongruenceInLevelCharacterOneStatement
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.SchurPairingInvariantUnderStandardGroupStatement
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.SmoothAdmissibleUnitaryMemSupIsotypicPartsStatement
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.KernelVectorSumOfIsotypicPiecesStatement
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0345
+public import Development.AbelianVarietyTheory.Definitions.ExistenceOfLattices.Bundle0001
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1009
+public import Mathlib
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0261
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsCongruenceLevelMapsIntoLatticeCongruence
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.PrincipalCongruenceLevelContained
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0253
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0273
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0268
 
 @[expose] public section
 
@@ -211,14 +211,14 @@ namespace GlobalTheory.FinTypesRows
 theorem levN_open {D : D7} {V : HSp D} {n : ℕ} (P : principalLevelFrame.RowPsi V n) {hF : D.host.F = maximalRealSubfield D.host.E}
     (hP : StdFrame hF P) (N : ℕ) (hN : 0 < N) :
     ∃ U : Subgroup (GA D V), IsOpen (U : Set (GA D V)) ∧ ∀ k ∈ U, k ∈ GfC V → k ∈ principalLevelFrame.levN P N := by
-  obtain ⟨N', hN', h⟩ := GlobalTheory.T.principal_congruence_level_contained D V n P hF hP N hN
+  obtain ⟨N', hN', h⟩ := _root_.GlobalTheory.LatCongImage.finCong_mem_levN D V n P hF hP N hN
   exact ⟨GlobalTheory.HolDict.PrincLev.congGroup V N', GlobalTheory.HolDict.PrincLev.isOpen_congGroup V hN', fun k hk hkf => h k hkf hk⟩
 
 theorem levOK_levS {D : D7} {V : HSp D} {n : ℕ} (P : principalLevelFrame.RowPsi V n) {hF : D.host.F = maximalRealSubfield D.host.E}
     (hP : StdFrame hF P) (β : GL (Fin V.rank) (Formalism.IndefR.Lev.EAf D)) (L : LevDat D.host.E ℂ V.rank) :
     principalLevelFrame.LevOK P (levS V β L) (levChi V β L) := by
-  obtain ⟨N, hN, h⟩ := GlobalTheory.T.exists_lattice_congruence_in_level_character_one D V β L
-  obtain ⟨N', hN', h'⟩ := GlobalTheory.T.exists_congruence_level_maps_into_lattice_congruence D V n P hF hP N hN
+  obtain ⟨N, hN, h⟩ := _root_.GlobalTheory.LevFinCong.exists_finCong_lev D V β L
+  obtain ⟨N', hN', h'⟩ := _root_.GlobalTheory.StdFrameCong.exists_cong_finCong D V n P hF hP N hN
   exact ⟨N', hN', fun κ hκ => h _ (P.into κ) (h' κ hκ)⟩
 
 end GlobalTheory.FinTypesRows
@@ -227,7 +227,7 @@ namespace GlobalTheory.FinTypesRows
 
 theorem isotL_span_orth : ∀ (D : D7) (V : HSp D) (S : D.what₂.Tau → SPar) (θ : InfFam D) (M : DSModel V S) (P : principalLevelFrame.RowPsi V D.R.r) (hF : D.host.F = maximalRealSubfield D.host.E) (β : GL (Fin V.rank) (Formalism.IndefR.Lev.EAf D)) (L : LevDat D.host.E ℂ V.rank) (e : (GA D V → ℂ) →ₗ[ℂ] (GA D V → ℂ)) (μ : Measure (GA D V)) (𝓕 : Set (GA D V)), Inputs D → V.SigOK → IsInfFam θ → StdFrame hF P → μ.IsHaarMeasure → IsFundamentalDomain (GQ V) 𝓕 μ → (∃ (s : Finset (GA D V)) (c : GA D V → ℂ), (∀ g ∈ s, g ∈ GfC V) ∧ e = ∑ g ∈ s, c g • principalLevelFrame.rtA g) → (⨆ π, principalLevelFrame.isotL θ P M (levS V β L) (levChi V β L) e π) = goodPart θ M (levS V β L) (levChi V β L) e ∧ ∀ π π', ¬ π.Iso π' → ∀ x ∈ principalLevelFrame.isotL θ P M (levS V β L) (levChi V β L) e π, ∀ y ∈ principalLevelFrame.isotL θ P M (levS V β L) (levChi V β L) e π', ipM M μ 𝓕 x y = 0 := by
   intro D V S θ M P hF β L e μ 𝓕 hI hV hθ hStd hμ h𝓕 he
-  have hc : principalLevelFrame.CongConj D.host.E D.R.r := GlobalTheory.T.unitary_congruence_conj_contains_congruence D.host.E D.R.r
+  have hc : principalLevelFrame.CongConj D.host.E D.R.r := _root_.GlobalTheory.CongConjugate.congConj D.host.E D.R.r
   obtain ⟨hsesq, hherm, hpos⟩ := minf_sesq (θ := θ) (M := M) μ 𝓕 P hI.schur hV hθ hμ h𝓕
   have hstab : ∀ h, ∀ x ∈ principalLevelFrame.Minf θ P M, principalLevelFrame.actM P M h x ∈ principalLevelFrame.Minf θ P M :=
     fun h x hx => minf_stable P hc h hx

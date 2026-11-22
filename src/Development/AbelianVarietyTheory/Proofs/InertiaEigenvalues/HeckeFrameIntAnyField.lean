@@ -1,17 +1,17 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.HeckeValueIntegrality
-public import Formalism.LocalToGlobal.ProjectiveLattices.LiftLaSpec
+public import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.Bundle0023
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0013
 public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IsUnitNatCastUp
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsLinearHeckeIsogenyInverseUpToPSq
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsFibreMapBaseChangeAndIsogenyPairIff
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0380
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0363
 public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.HeckePointLawsOfTransport
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.HeckeIsogenyThetaGeneratorTransportStatement
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.HeckeIsogenyThetaGeneratorTransport
 public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.HeckeSetDescends
-public import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.PowEqOneOfLocalLift
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.UnitOnInjectiveOfCommRing
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.ExistsLiftPt
+public import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.Bundle0028
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0041
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.Bundle0019
 
 @[expose] public section
 
@@ -224,7 +224,7 @@ theorem exists_hkRelFr_down (hP : IsHeckePrime H l P p) {K L : Type} [Field K] [
     (hw : FrMap φ y w) (C : hkKer (Xo := Xo) P p i L w) (hz : hkRelFr P p i (hkTr Xo c p) L w C z) :
     ∃ (C₀ : hkKer (Xo := Xo) P p i K y) (z₀ : FrPt Xo c K), hkRelFr P p i (hkTr Xo c p) K y C₀ z₀ ∧ FrMap φ z₀ z := by
   have hp := hP.2.2.1.pos
-  obtain ⟨hT, hU⟩ := GlobalTheory.T.heckeIsogeny_thetaGenerator_transport E H Dw l Xo c P p i hP
+  obtain ⟨hT, hU⟩ := _root_.GlobalTheory.ThetaTransport.thetaTransportLaw E H Dw l Xo c P p i hP
   let C₀ : hkKer (Xo := Xo) P p i K y := ⟨_, heckeKer_down hw.1 hp hP.2.2.2.1 C.2⟩
   obtain ⟨z₀, hz₀⟩ := GlobalTheory.HeckePointLaw.exists_hkRelFr hP hT K y C₀
   obtain ⟨z₁, hz₁⟩ := exists_frMap φ z₀

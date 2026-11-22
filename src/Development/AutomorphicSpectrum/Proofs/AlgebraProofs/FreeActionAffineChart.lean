@@ -2,9 +2,9 @@ module
 
 public import Mathlib
 public import Development.AutomorphicSpectrum.PublishedTheorems.Algebra₂.RegularHypothesesAndConclusion
-public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.HasAffineChartId
+public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.Bundle0051
 public import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.FiniteFaithfullyFlatKer
-public import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.ExistsQuotientSchemeOfFiniteFlatSubgroup
+public import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.Bundle0005
 public import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.CoequifiberedDiagramMap
 public import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.SpecHomCompCoaction
 

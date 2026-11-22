@@ -1,11 +1,11 @@
 module
 
-public import Formalism.HermitianCurvature.FrameMinor
+public import Formalism.HermitianCurvature.Bundle0008
 public import Formalism.HermitianCurvature.HermitianCurvatureProofs.OperatorRepresentations
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.LemmaDDeterminantIdentity
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0047
 public import Formalism.HermitianCurvature.HermitianCurvatureProofs.RestrictionIrrelevantDoubleLevelOperator
 public import Formalism.HermitianCurvature.HermitianCurvatureProofs.CapelliCoordinates
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.AnisotropicColumnSums
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0057
 public import Formalism.HermitianCurvature.HermitianCurvatureProofs.FrameEntries
 
 @[expose] public section

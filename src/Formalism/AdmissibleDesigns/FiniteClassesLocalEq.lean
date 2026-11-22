@@ -1,8 +1,8 @@
 module
 
 public import Formalism.AdmissibleDesigns.FiniteClassesContinuousLattice
-public import Formalism.AdmissibleDesigns.SelfGood
-public import Formalism.SharpRestriction.LevelLetterCocycles.JointConditionsZpowers.LiftingConditionOfWindows
+public import Formalism.AdmissibleDesigns.Bundle0003
+public import Formalism.SharpRestriction.LevelLetterCocycles.JointConditionsZpowers.Bundle0005
 public import Formalism.AdmissibleDesigns.RankReductionIdempotentOne
 
 @[expose] public section

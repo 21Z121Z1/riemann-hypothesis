@@ -1,6 +1,6 @@
 module
 
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SectionEigenfunctionMaximalCompact
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0674
 public import Development.WeilBound.RepresentationTheoryGL.RegularisedSiegelWeil.SingularNullSets.ConjUnitIdeleAt
 
 @[expose] public section

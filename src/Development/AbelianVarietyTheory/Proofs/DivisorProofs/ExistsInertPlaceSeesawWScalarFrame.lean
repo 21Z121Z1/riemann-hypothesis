@@ -1,10 +1,10 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.InclRMulPtAt
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DifferentCoprimeAtGoodPlaces
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1711
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1572
 public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsDualFamilyOfIsLattice
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DetNeZeroOfHasSig
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1290
 
 @[expose] public section
 

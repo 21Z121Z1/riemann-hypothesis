@@ -1,6 +1,6 @@
 module
 
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.StandardPairingDecay
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0196
 
 @[expose] public section
 

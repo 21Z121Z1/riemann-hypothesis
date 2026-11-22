@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Divisors.OrthSubrepresentation
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0002
 public import Development.AbelianVarietyTheory.Proofs.CharacterTheory.VirtualCharactersMulComapConjIndLinear
 
 @[expose] public section

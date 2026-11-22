@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Development.ResolutionOfSingularities.Foundations.Blowup.AffineBlowup
-public import Development.ResolutionOfSingularities.Foundations.Blowup.BlowupBasic
+public import Development.ResolutionOfSingularities.Foundations.Blowup.Bundle0001
 public import Development.ResolutionOfSingularities.Foundations.Blowup.ReesGrading
 public import Development.ResolutionOfSingularities.Foundations.Schemes.IdealSheafData
 public import Development.ResolutionOfSingularities.Foundations.BlowupUniversalProperty

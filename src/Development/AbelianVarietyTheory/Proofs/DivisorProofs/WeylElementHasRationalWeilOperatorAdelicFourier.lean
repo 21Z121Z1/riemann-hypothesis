@@ -1,20 +1,20 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ActFromBlocks
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdelicAddCharEqArchimedeanMulFinprodLocalStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FourierBijOnSchwartzBruhatFinitePlaceStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntegralPointsIndicatorFourierSelfUnramifiedStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsArchimedeanSchwartzTraceFourierBijectiveStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntegralAdelicPureTensorEqProductLocalStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdelicPoissonSummationAnyHaarStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsLocallyConstantFinprodSchwartzBruhatFiniteAdel
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HasCompactSupportFinprodSchwartzBruhatFiniteAdel
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsStdCharNegOneOfStandardTraceAdelicAddChar
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.StandardAdelicCharacterNontrivialAtPlaces
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PsiUnramifiedAwayDifferent
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SchroedingerMemSchwartzBruhatFinitePlace
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SchrodingerPreservesSchwartzBruhat
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1543
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1592
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1599
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1604
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1573
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1627
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1570
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1530
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1527
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1558
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1566
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1674
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1585
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1656
 
 @[expose] public section
 
@@ -250,8 +250,8 @@ theorem weyl_hasOp : ∀ (F : Type) [Field F] [NumberField F], IsTotallyReal F �
     exact Measure.addHaarMeasure_self
   haveI := hμv
   obtain ⟨c₀, hc₀, hpure⟩ := GlobalTheory.T.integral_adelic_pureTensor_eq_product_local F κ μ μi μv hμv1
-  obtain ⟨ei', hei'bij, hei'⟩ := GlobalTheory.T.exists_archimedeanSchwartz_traceFourier_bijective F κ μi
-  obtain ⟨c, hc, hθ⟩ := GlobalTheory.T.adelicPoisson_summation_anyHaar F hTR ψ hψ κ μ
+  obtain ⟨ei', hei'bij, hei'⟩ := _root_.GlobalTheory.ArchFourier.exists_fourier_sInf F κ μi
+  obtain ⟨c, hc, hθ⟩ := _root_.GlobalTheory.PoissonReindex.poisson_any F hTR ψ hψ κ μ
   have hψc : ∀ v, Continuous (GlobalTheory.LatVac.psiAt ψ v) := fun v => GlobalTheory.SchrSB.continuous_psiAt ψ hψ.1 v
   have hsub : ∀ v, ∀ φ ∈ SB (κ → Fv F v), φ ∈ intSub (GlobalTheory.LatVac.psiAt ψ v) (μv v) := fun v φ hφ y =>
     (hφ.1.continuous.mul ((hψc v).comp (continuous_id.dotProduct continuous_const))).integrable_of_hasCompactSupport

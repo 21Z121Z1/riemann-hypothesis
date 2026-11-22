@@ -3,8 +3,8 @@ module
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.FormsStable
 public import Formalism.LocalRingCardinality.RankBoundMonotoneInDimension
-public import Formalism.GradedWeylDivisibility.FockSpaceTableaux.LClosedeqLemmas
-public import Formalism.GradedWeylDivisibility.FockSpaceTableaux.NablaLTwist
+public import Formalism.GradedWeylDivisibility.FockSpaceTableaux.Bundle0010
+public import Formalism.GradedWeylDivisibility.FockSpaceTableaux.Bundle0012
 
 @[expose] public section
 

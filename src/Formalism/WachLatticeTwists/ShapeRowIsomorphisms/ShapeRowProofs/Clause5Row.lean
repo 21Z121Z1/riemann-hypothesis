@@ -1,8 +1,7 @@
 module
 
 public import Formalism.WachLatticeTwists.ShapeRowIsomorphisms.StatClause5Row
-public import ReciprocityTheory.ReductiveGroups.TraceFormulas.ImportsAlt
-public import ReciprocityTheory.ReductiveGroups.TraceFormulas.LatReal
+public import ReciprocityTheory.ReductiveGroups.TraceFormulas.Bundle0001
 
 @[expose] public section
 

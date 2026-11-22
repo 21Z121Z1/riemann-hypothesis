@@ -1,6 +1,6 @@
 module
 
-public import Formalism.TruncatedSeriesCounting.AprimeArith
+public import Formalism.TruncatedSeriesCounting.Bundle0001
 
 @[expose] public section
 

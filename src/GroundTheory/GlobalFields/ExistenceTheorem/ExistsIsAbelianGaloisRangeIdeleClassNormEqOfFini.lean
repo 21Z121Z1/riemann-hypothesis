@@ -3,7 +3,7 @@ module
 public import Mathlib
 public import GroundTheory.GlobalFields.ExistenceTheorem.Kummer
 public import GroundTheory.GlobalFields.ExistenceTheorem.NormLimitation
-public import GroundTheory.GlobalFields.IdeleGroups.GaloisOnAdeles
+public import GroundTheory.GlobalFields.IdeleGroups.Bundle0003
 
 @[expose] public section
 

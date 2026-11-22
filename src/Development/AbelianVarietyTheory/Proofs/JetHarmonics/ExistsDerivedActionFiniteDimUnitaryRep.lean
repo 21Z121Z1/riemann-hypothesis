@@ -6,7 +6,7 @@ public import Development.AbelianVarietyTheory.Definitions.Jets.SumIoPr
 public import Formalism.RealPlaceAnalysis.QuotientSettingHolds
 public import Formalism.RealPlaceAnalysis.FinalF
 public import Formalism.PeriodIntegrals.UpqRep
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ContDiffSetIntegralNat
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0151
 
 @[expose] public section
 

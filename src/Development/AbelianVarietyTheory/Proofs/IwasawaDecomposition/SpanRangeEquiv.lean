@@ -1,30 +1,31 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.CenUsedOfCenReal
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.AdmissibleTwistOfTwistingCharacter
+public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.Bundle0045
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0806
 public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.SideIn
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.SwapCastEqSwapAE
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0467
 public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExtLvlFormMemCutSp
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.HeckeOperatorKeepsRationalIntegralLevelFormsStatement
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.StdFrameLevelSubgroupBoundedOpenHyperspecialStatement
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.RamifiedLevelEqParahoricWithTupleCharacterStatement
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsProdLevelStdFrameTwoBlockUnipotentLevelStatement
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.MemRationalGLOfUnitaryGroupGramUnitGram
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.DefiniteLevelFormsIffStdGroupTypeSpaceStatement
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.PlacesUnder
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.LevelUnipotentGenericCharTypePlaceStatement
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.CoefficientSpaceDefiniteFormIrreducibleAlgebraicStatement
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.InfOfLamLdefEqParamV
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsUnitFrame
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsIntOfFinite
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.EqPlMapOfConj
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsLevOfAll
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsFiniteGroupGoodSetLevelsCharactersStatement
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsLiftFormsAdelicDecoratedLatticesStatement
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0430
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.StdFrameLevelSubgroupBoundedOpenHyperspecial
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0357
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0663
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0395
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0373
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0405
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0372
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0408
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0378
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0359
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0366
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0365
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0364
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0381
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0399
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0698
 public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ContinuousCoeffBlockAct
 public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.StandardLatticesDiagonal
-public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.IsWtOfParUnique
+public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.Bundle0027
 
 @[expose] public section
 
@@ -140,7 +141,7 @@ theorem tup_read {μ : D.what₂.Tup} {i : Fin D.R.m} {c : CoefA (Vc D i)} {T : 
   obtain ⟨a, eW, Φ, hw, heq, hΦ, hli, hsp, hk⟩ := side_read (rank_V i) hβ hr τ.u hg hs hP _ τ.u.lev
   obtain ⟨r, rinj, rrange, hr'⟩ := constr_semi ((D.what₂.jMt μ ((i : ℕ) + 1)).comp τ.e.toLinearMap) Φ τ.li τ.span hli
   have hrj : ∀ x, r (D.what₂.jMt μ ((i : ℕ) + 1) (τ.e x)) = Φ x := hr'
-  obtain ⟨-, hop, hhyp⟩ := GlobalTheory.T.stdFrameLevelSubgroup_bounded_open_hyperspecial D D.R.nV
+  obtain ⟨-, hop, hhyp⟩ := _root_.GlobalTheory.MtIn.OpenLev.stdJ_open D D.R.nV
     (datV D D.R.nV hr L.Pg (L.Q t) (P0 L.Pg D.R.r ψ) (L.chi ((i : ℕ) + 1)) (L.xiR t))
   have hB := hhyp (gPl D ∪ qPl D (L.C.mu0 i * L.xiH t)) (GlobalTheory.MtIn.Under.places_under D T L μ0 hL hPg i t)
   have hk' := hk _ hB
@@ -153,9 +154,9 @@ theorem tup_read {μ : D.what₂.Tup} {i : Fin D.R.m} {c : CoefA (Vc D i)} {T : 
       real_inj := rinj
       real_range := rrange.trans hsp }
   refine ⟨m, eW, ?_, heq, fun x g => ?_⟩
-  · refine ⟨GlobalTheory.T.isProdLevel_stdFrame_twoBlockUnipotentLevel D _ hr _ _ ψ _ _, GlobalTheory.T.ramifiedLevel_eq_parahoric_with_tupleCharacter D T L μ0 hL hPg i t hr ψ, fun k v s hs' => ?_, hB, fun t' a' lam h1 h2 => ?_,
+  · refine ⟨_root_.GlobalTheory.MtInProd.main D _ hr _ _ ψ _ _, _root_.GlobalTheory.MtPara.levelPara D T L μ0 hL hPg i t hr ψ, fun k v s hs' => ?_, hB, fun t' a' lam h1 h2 => ?_,
       fun s ϖ k h1 h2 h3 h4 x => ?_, fun w s ϖ k h1 h0 h2 h3 h4 y hy => ?_, fun y hy => ?_, (D.what₂.MtLat μ ((i : ℕ) + 1)).span_top⟩
-    · exact GlobalTheory.T.levelUnipotent_genericChar_typePlace D T L μ0 hL hPg i t hr ψ hψ s ((hPg _).2 ⟨k, v, hs'⟩)
+    · exact _root_.GlobalTheory.TypeLevelUni.levelUni_typePlace D T L μ0 hL hPg i t hr ψ hψ s ((hPg _).2 ⟨k, v, hs'⟩)
     · rw [hw a' t' lam h1 h2]
       exact GlobalTheory.Mem.WtPar.infOf_lamLdef_eq_paramV D i t'
     · obtain ⟨x, rfl⟩ := τ.e.surjective x

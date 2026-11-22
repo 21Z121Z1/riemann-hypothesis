@@ -1,7 +1,6 @@
 module
 
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.Rationality.QCoreH
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.Rationality.GlobQuotPf
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.Rationality.Bundle0004
 
 @[expose] public section
 

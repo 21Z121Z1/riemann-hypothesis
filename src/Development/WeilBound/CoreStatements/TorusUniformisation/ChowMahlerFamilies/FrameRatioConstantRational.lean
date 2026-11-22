@@ -1,15 +1,15 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.HasBareNormDisc
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.Bundle0012
 public import Development.AutomorphicSpectrum.PublishedTheorems.Geometry₂.GagaSections
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.BlowupProjections.BlowupProjStatement
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.UniformisationConclusion
 public import Development.AutomorphicSpectrum.Statements.GeometryStatements.FlatDegree
 public import Formalism.LocalToGlobal.ProjectiveLattices.CompHt
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.EigenFramesInvertibleChange
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0101
 public import Development.WeilBound.CoreStatements.TorusUniformisation.ChowMahlerFamilies.FramedPointSpecialization
-public import Development.WeilBound.CoreStatements.TorusUniformisation.ChowMahlerFamilies.MemOfFixedByAutomorphisms
+public import Development.WeilBound.CoreStatements.TorusUniformisation.ChowMahlerFamilies.Bundle0002
 
 @[expose] public section
 

@@ -2,9 +2,9 @@ module
 
 public import Formalism.HermitianCurvature.StatementLE
 public import Formalism.HermitianCurvature.HermitianCurvatureProofs.ShiftBound
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.DegreeOfProdLinearLe
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0016
 public import Formalism.HermitianCurvature.HermitianCurvatureProofs.WeightedL2BoundedMul
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Cauchy
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0002
 public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Markov
 
 @[expose] public section

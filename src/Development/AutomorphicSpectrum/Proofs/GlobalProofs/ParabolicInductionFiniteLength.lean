@@ -1,10 +1,10 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.HasFiniteLengthOfIsIrreducible
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.InductionFiniteLength
+public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.Bundle0001
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0288
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LeviBlocksParabolicInductionFiniteLength
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsIrreducibleSecondFactorOfIrreducibleProduct
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0658
 public import GroundTheory.AutomorphicForms.FiniteLength
 
 @[expose] public section

@@ -1,23 +1,21 @@
 module
 
 public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.LengthPosOfPosDef
-public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.AdjFormula
+public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0021
 public import Formalism.LocalToGlobal.IndefiniteReal.LinksStage
-public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.ExistsNormLeHeightPow
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ThetaPairingInvariant
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.DatP
+public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.Bundle0007
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0640
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0636
 public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.LatSelfDualOfUnimod
 public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.MemHatIffOfSelfDual
 public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.LevelHyperspecialTrivialCharacterSplitsOffPlaces
 public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.SupportedSubgroupSplitCommutePrimeIdempotents
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LevelCharacterEmbeddingCompat
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FrameMapAdjointTranslateInvEqMulFrameMatrixStatement
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FrameMapAdjointMulFrameMatrixEqIdempotentSplitStatement
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.LocalFrameChangeMemIntegralGLAtPlaceStatement
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FiniteAdelicMemSelfDualFrameStabilizerOfSplitSupStatement
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.PrimeIdempotentOfIdempotentSumPlaceSplitStatement
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FrameReductionEqOneOfFrameMatrixCongruentOneStatement
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FrameMatrixComponentSubOneEqZeroOffIdempotentStatement
+public import Mathlib
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0749
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0754
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0751
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0750
 
 @[expose] public section
 
@@ -59,10 +57,10 @@ theorem disj_supp : ∀ (D : D7) (G : Type) [Group G] [Fintype G] (Pl0 T : Type)
   intro D G _ _ Pl0 T A Ks _ _ _ R F hL hFP i t ea hea P hP e f hpe k hk hkn x x' hxx h1 h2
   apply hkn
   have hPS : P ∈ R.Pg ∪ R.Q t := Finset.mem_union.2 hP
-  obtain ⟨heP, hfe, hcf, hinf, hcP⟩ := GlobalTheory.T.primeIdempotent_of_idempotentSum_place_split D P e f ea (R.Pg ∪ R.Q t) hpe hea hPS
+  obtain ⟨heP, hfe, hcf, hinf, hcP⟩ := _root_.GlobalTheory.IdemSumBranch.branch D P e f ea (R.Pg ∪ R.Q t) hpe hea hPS
   obtain ⟨hI1, hK1, hQ1⟩ := datP_ne_zero_unpack R i t ea _ h1
   obtain ⟨hI2, hK2, hQ2⟩ := datP_ne_zero_unpack R i t ea _ h2
-  have hY := GlobalTheory.T.frameMapAdjoint_translate_inv_eq_mul_frameMatrix D (Vc D i) (Wc D i) (R.βV i) (R.βW i) k x
+  have hY := _root_.GlobalTheory.TranslateAdj.frMapAdj_actO_inv D (Vc D i) (Wc D i) (R.βV i) (R.βW i) k x
   have hid := GlobalTheory.T.frameMapAdjoint_mul_frameMatrix_eq_idempotent_split D (Vc D i) (Wc D i) (R.βV i) (R.βW i) f hcf k hk x x' hxx
   rw [← hY] at hid
 
@@ -82,17 +80,17 @@ theorem disj_supp : ∀ (D : D7) (G : Type) [Group G] [Fintype G] (Pl0 T : Type)
     rcases hP with hP | hP
     · rw [hK P hP, Matrix.det_one]; exact isUnit_one
     · exact hQ P hP
-  obtain ⟨hint, hdet, hone⟩ := GlobalTheory.T.localFrameChange_mem_integralGL_at_place D P _ _ _ _ _ _ hfP hid hI2 hI1 (hu _ hK2 hQ2) (hu _ hK1 hQ1)
+  obtain ⟨hint, hdet, hone⟩ := _root_.GlobalTheory.LocCore.kappa_integral_at D P _ _ _ _ _ _ hfP hid hI2 hI1 (hu _ hK2 hQ2) (hu _ hK1 hQ1)
   have hSt := GlobalTheory.T.finiteAdelic_mem_selfDualFrameStabilizer_of_splitSupport D (Wc D i) (R.βW i) (R.ΛW i) (hL.lev.βW i) e f P heP hfe hcPP k hk hint hdet
   have hred : ∀ PP, PP ∈ (R.datWp i R.triv).Pg ∨ PP ∈ (R.datWp i R.triv).Q → redFn (R.βW i) PP (finE (Wc D i) k) = 1 := by
     rintro PP (hPP | hPP)
     · change PP ∈ R.Pg at hPP
-      refine GlobalTheory.T.frameReduction_eq_one_of_frameMatrix_congruent_one D (Wc D i) (R.βW i) k PP hSt ?_
+      refine _root_.GlobalTheory.RedAt.redFn_finE_eq_one D (Wc D i) (R.βW i) k PP hSt ?_
       by_cases hPe : PP = P
       · subst hPe
         exact hone (hK2 PP hPP) (hK1 PP hPP)
       · intro a b
-        rw [GlobalTheory.T.frameMatrix_component_sub_one_eq_zero_off_idempotent D (Wc D i) (R.βW i) f k PP hk (hfoff PP hPP hPe) a b, map_zero]
+        rw [_root_.GlobalTheory.FrameOff.cpt_frame_sub_one_eq_zero_of_suppF D (Wc D i) (R.βW i) f k PP hk (hfoff PP hPP hPe) a b, map_zero]
         exact zero_lt_one
     · exact absurd hPP (Finset.notMem_empty _)
   exact ⟨GlobalTheory.IdemSupport.mem_GfC_of_suppF (Wc D i) hinf hk,

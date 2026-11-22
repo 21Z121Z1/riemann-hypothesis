@@ -1,6 +1,6 @@
 module
 
-public import Formalism.LocalToGlobal.GroupLattices.ComparisonMaps.ValUniqOf
+public import Formalism.LocalToGlobal.GroupLattices.ComparisonMaps.Bundle0002
 public import Formalism.SharpRestriction.GrowthBounds.DataGChain
 
 @[expose] public section

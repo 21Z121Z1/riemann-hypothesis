@@ -1,7 +1,7 @@
 module
 
 public import Development.WeilBound.CoreStatements.TemperedRepresentationTheory.PrincipalSeriesSupport.IsIrreducibleOfIsIrrRep
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.TameSupportCompatible
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0747
 
 @[expose] public section
 

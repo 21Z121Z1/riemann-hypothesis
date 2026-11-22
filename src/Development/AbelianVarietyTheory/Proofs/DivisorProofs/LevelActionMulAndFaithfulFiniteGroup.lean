@@ -1,12 +1,12 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsTransp
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1805
 public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.MulVecMemOfFrame
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.FinCongMemLevEnv
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.OmegaFormNonvanishing
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CongruenceOnSelfDualLatticeOfDatumImageStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CongruenceOnSelfDualLatticeCompletionStatement
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0301
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0421
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1814
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1813
 
 @[expose] public section
 
@@ -247,6 +247,6 @@ theorem GlobalTheory.LevelFaithful.lev_mul_and_faithful : ∀ {D : D7} {L : Size
         rw [hp]; exact Ideal.mem_span_singleton_self _
       exact (Ideal.mul_le_inf.trans (inf_le_left : p.T.Q.l.Mb ⊓ Mfr p.T.Q.l ≤ p.T.Q.l.Mb)) h0
     have hA := cong_of_trivial hβ hι hp hc hd _ hcong
-    have hB := GlobalTheory.T.congruence_on_selfDual_lattice_completion (Wc D i) hβ _ _ _ (GlobalTheory.T.congruence_on_selfDual_lattice_of_datum_image (Wc D i) hβ hι _ _ _ hA)
+    have hB := _root_.GlobalTheory.LatHatCong.cong_on_hat (Wc D i) hβ _ _ _ (_root_.GlobalTheory.LevelLatticeCong.cong_on_sdLattice (Wc D i) hβ hι _ _ _ hA)
     exact rTup_eq_one_of_cong hβ ((R2 p).datWp i (R2 p).triv) (fun PP hP => hMbP PP hP hMm)
       (fun PP hP => hMbP PP hP hc1) (Formalism.L2.DIV.parLev_St hκ.2.1) hB

@@ -3,9 +3,9 @@ module
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.Jets.SideFam
 public import Development.AbelianVarietyTheory.Definitions.Jets.SumIoPr
-public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.TensorWeightedBesselSumStatement
-public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.BesselFunctionLocalityInvariantFactorFiniteSumStatement
-public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.BesselSettingGapDecayStatement
+public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0091
+public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0054
+public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0098
 public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.MirrorDecomposition.HpkRowEsI
 
 @[expose] public section

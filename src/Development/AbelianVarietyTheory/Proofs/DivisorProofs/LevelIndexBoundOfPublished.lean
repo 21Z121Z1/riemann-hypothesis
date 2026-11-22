@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MeasAtOf
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1884
 
 @[expose] public section
 

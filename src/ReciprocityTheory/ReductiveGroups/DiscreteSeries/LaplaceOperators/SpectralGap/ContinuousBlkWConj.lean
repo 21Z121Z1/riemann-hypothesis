@@ -1,8 +1,8 @@
 module
 
-public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.LaplaceOperators.SpectralGap.BesselIntegralSquareIntegrable
-public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.TailIntegrals.UHMulInv
-public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.MulVecFixOfSupp
+public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.LaplaceOperators.SpectralGap.Bundle0001
+public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.TailIntegrals.Bundle0008
+public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0046
 
 @[expose] public section
 

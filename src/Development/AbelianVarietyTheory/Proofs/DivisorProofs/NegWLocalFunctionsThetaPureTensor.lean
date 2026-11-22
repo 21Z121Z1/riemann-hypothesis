@@ -1,14 +1,14 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsMixModelB
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsAwayUnitOfPowEqOne
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1733
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2799
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsGaussianDatumFlippedFiniteTensorBigRoute
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SchrodingerThetaDatumHeisenbergOriented
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.OrthogonalSumSelfDualExists
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SplitIdempotentBaseFunctionIdentity
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsAddEquivSymplecticCoordsOrientedModel
-public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.LocPAAAndPrimesNe
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0530
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0150
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0463
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0300
+public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0105
 
 @[expose] public section
 

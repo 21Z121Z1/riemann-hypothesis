@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import GroundTheory.AutomorphicForms.Satake
+public import GroundTheory.AutomorphicForms.Bundle0024
 public import GroundTheory.AutomorphicForms.GL2.GJUnramifiedDegree
 
 @[expose] public section

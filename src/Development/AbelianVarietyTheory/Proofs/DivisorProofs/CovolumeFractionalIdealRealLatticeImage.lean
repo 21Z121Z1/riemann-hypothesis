@@ -1,6 +1,6 @@
 module
 
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RembApply
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0169
 public import Formalism.LatticeTheta.Statement
 
 @[expose] public section

@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Formalism.SharpRestriction.LevelLetterCocycles.UsedLocalConclusion
-public import Formalism.SharpRestriction.LevelLetterCocycles.GammaSemisimpleLocalOfConsequences
+public import Formalism.SharpRestriction.LevelLetterCocycles.Bundle0006
+public import Formalism.SharpRestriction.LevelLetterCocycles.Bundle0005
 public import Formalism.SharpRestriction.LevelLetterCocycles.DataNLoc
 public import Formalism.SharpRestriction.LevelLetterCocycles.LiftingTheory
 public import Formalism.SharpRestriction.LevelLetterCocycles.DeltaInvariantLattices

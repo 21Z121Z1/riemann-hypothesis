@@ -1,6 +1,6 @@
 module
 
-public import Formalism.LocalToGlobal.GroupLattices.TrivialTransfer.OneAddPowOfSq
+public import Formalism.LocalToGlobal.GroupLattices.TrivialTransfer.Bundle0001
 public import Formalism.LocalToGlobal.GroupLattices.TrivialTransfer.FiniteStabAtOfLocal
 
 @[expose] public section

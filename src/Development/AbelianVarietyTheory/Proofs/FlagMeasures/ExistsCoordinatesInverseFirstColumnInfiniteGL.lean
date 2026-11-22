@@ -1,10 +1,10 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.IsLatMeasurableConst
+public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.Bundle0011
 public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.CovolEqOfAedisjoint
 public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.MeasurePreservingCons
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.LintegralPiProdTwo
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0206
 
 @[expose] public section
 

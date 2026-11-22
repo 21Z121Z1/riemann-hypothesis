@@ -1,17 +1,17 @@
 module
 
 public import Mathlib
-public import Formalism.LocalToGlobal.IndefiniteReal.DatumVec
+public import Formalism.LocalToGlobal.IndefiniteReal.Bundle0016
 public import Formalism.LocalToGlobal.IndefiniteReal.SubgroupCharExtensionOneApply
 public import Formalism.LocalToGlobal.IndefiniteReal.ScalarOnPartsFull
 public import Formalism.LocalToGlobal.IndefiniteReal.OrthogonalComplementCharacterisation
 public import Formalism.LocalToGlobal.IndefiniteReal.IndefiniteWeightData
 public import Formalism.LocalToGlobal.IndefiniteReal.HeckeTupleStatement
-public import Formalism.LocalRingCardinality.DataExtra
+public import Formalism.LocalRingCardinality.Bundle0007
 public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.IsSelfDualCLatFrame
 public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.MemLatOIffExistsActO
-public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.ThetaAtEqSumHeisOfFourierSum
-public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.ScaledMatrixMemRationalLattice
+public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.Bundle0058
+public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.Bundle0062
 public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.PlacewiseToAdelicDecompositionForall
 
 @[expose] public section

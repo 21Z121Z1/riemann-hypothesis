@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConjRelEquiv
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.LeftMulMatrixTransfer
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ReducedFreeAlgebraTraceFormPerfect
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1021
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0024
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0066
 
 @[expose] public section
 

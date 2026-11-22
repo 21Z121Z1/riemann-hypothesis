@@ -2,9 +2,9 @@ module
 
 public import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.KunnethLefschetz.BasisOne
 public import Development.EtaleCohomology.EtaleTrace.LRingPf
-public import Development.EtaleCohomology.EtaleTrace.LPdCut
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TateTwistCupUnitAndPrimitiveRootClassesStatement
-public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.ProjTrans
+public import Development.EtaleCohomology.EtaleTrace.Bundle0008
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0604
+public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0051
 
 @[expose] public section
 

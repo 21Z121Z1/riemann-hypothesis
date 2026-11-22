@@ -1,10 +1,10 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.AnnihilatorModels.SameNormBasic
-public import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.AnnihilatorModels.PulledRead
+public import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.AnnihilatorModels.Bundle0001
+public import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.AnnihilatorModels.Bundle0021
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CardTorsionKilledByIdealCharZero
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CharZeroOfIsUnit
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2048
 
 @[expose] public section
 

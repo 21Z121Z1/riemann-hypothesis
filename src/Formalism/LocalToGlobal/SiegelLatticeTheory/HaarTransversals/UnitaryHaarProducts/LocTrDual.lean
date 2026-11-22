@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Formalism.LocalToGlobal.SiegelLatticeTheory.HaarTransversals.UnitaryHaarProducts.CondStd
-public import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.DiffGenLoc
+public import Formalism.LocalToGlobal.SiegelLatticeTheory.HaarTransversals.UnitaryHaarProducts.Bundle0005
+public import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.Bundle0002
 
 @[expose] public section
 

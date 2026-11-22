@@ -3,11 +3,10 @@ module
 public import Mathlib
 public import Formalism.LocalRingCardinality.RhoDetPrimeEqMuTildeMulChiPow
 public import Formalism.LocalRingCardinality.HostCls
-public import Development.AutomorphicArithmetic.CyclotomicBounds.RootsOfUnity.NuLe
-public import Development.AutomorphicArithmetic.CyclotomicBounds.RootsOfUnity.NuQDUnit
+public import Development.AutomorphicArithmetic.CyclotomicBounds.RootsOfUnity.Bundle0003
 public import Development.AutomorphicArithmetic.CyclotomicBounds.RootsOfUnity.SumFactorizationMulLogLe
 public import Development.AutomorphicArithmetic.CyclotomicBounds.RootsOfUnity.WDvdQS
-public import Development.AutomorphicArithmetic.CyclotomicBounds.RootsOfUnity.SplitNotDvd
+public import Development.AutomorphicArithmetic.CyclotomicBounds.RootsOfUnity.Bundle0002
 
 @[expose] public section
 

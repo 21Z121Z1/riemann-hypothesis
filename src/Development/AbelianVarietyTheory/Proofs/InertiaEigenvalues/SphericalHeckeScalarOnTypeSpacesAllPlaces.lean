@@ -1,14 +1,14 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.IsWildInertiaCyclotomicElement
-public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.GaloisSideTwistedSelmerAuxiliaryPrimes
+public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0017
+public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0012
 public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SemisimpleOfInjective
 public import Formalism.LocalToGlobal.NormalizedHeckeFactors.CoverStd
-public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.RowsExhaust
 public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.SplitExEveryDatum
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.FiniteCosetsHeckeSetAtSplitPlaceOutsideLevelStatement
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SplitPlaceHeckeOperatorScalarOnSphericalStatement
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.FiniteCosetsHeckeSetAtSplitPlaceOutsideLevel
+public import Formalism.LocalToGlobal.GaloisLevelStructure.DefsAut
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SplitPlaceHeckeOperatorScalarOnSpherical
 
 @[expose] public section
 
@@ -341,8 +341,8 @@ theorem not_bad {D : D7} {M : MtFam D} (HT : HeckeTied D M) (i : D.nd.Loc) {w : 
 theorem heckeScalar_all : ∀ (D : D7) (M : MtFam D), HeckeTied D M → AVTied D M → ∀ i : D.nd.Loc, HeckeScalar M i := by
   intro D M HT A i P w k s ϖ hw hcw hu _ _
   have hsB : s.v ∉ badPl D i := not_bad HT i hw s hcw
-  obtain ⟨c, hc⟩ := GlobalTheory.T.splitPlace_heckeOperator_scalar_on_spherical D.host.E D.R.nV (M.loc i).wt (A.S i P) (A.irr i P) s ϖ k hu
-  have hfinU := GlobalTheory.T.finite_cosets_heckeSet_at_splitPlace_outside_level D.host.E D.R.nV (Umax D.host.E D.R.nV) 1 ∅
+  obtain ⟨c, hc⟩ := _root_.GlobalTheory.HeckeScalarSph.tN_scalar D.host.E D.R.nV (M.loc i).wt (A.S i P) (A.irr i P) s ϖ k hu
+  have hfinU := _root_.GlobalTheory.TSetFin.finite_image_tSet D.host.E D.R.nV (Umax D.host.E D.R.nV) 1 ∅
     (fun κ _ => ⟨Iff.rfl, fun _ => rfl⟩) s ϖ k (by simp) hu
   refine ⟨c, fun y hy => ?_⟩
   have hfT : (M.loc i).real y ∈ NG.TypeSp (M.loc i).wt.ρ (M.loc i).J (M.loc i).χ := by

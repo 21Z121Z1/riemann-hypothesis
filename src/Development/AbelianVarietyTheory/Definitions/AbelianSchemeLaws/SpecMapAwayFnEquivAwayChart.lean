@@ -1,11 +1,11 @@
 module
 
 public import Mathlib
-public import ReciprocityTheory.AnalyticForms.RegularLocalRings.ProjDehomA
+public import ReciprocityTheory.AnalyticForms.RegularLocalRings.Bundle0009
 public import Development.AbelianVarietyTheory.Definitions.ShimuraVarieties.OpensRangeChartYSupOpensRangeChartZ
 public import Development.AbelianVarietyTheory.Definitions.ThetaMetrics.AwayToSectionFromZero
 public import Development.AbelianVarietyTheory.Definitions.ThetaMetrics.IsRegularFnIffOfIsAffineOpen
-public import Development.AbelianVarietyTheory.Proofs.CoherentCohomologyProofs.IsAffineHomOfIsPullbackSpecMap
+public import Development.AbelianVarietyTheory.Proofs.CoherentCohomologyProofs.Bundle0008
 public import Development.AbelianVarietyTheory.Proofs.ToricGeometry.TangentBijectionOfValues
 
 @[expose] public section

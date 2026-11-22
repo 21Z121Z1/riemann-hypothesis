@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import GroundTheory.AutomorphicForms.MeasuresModulus
-public import GroundTheory.AutomorphicForms.LocallyProfinite
+public import GroundTheory.AutomorphicForms.Bundle0004
 
 @[expose] public section
 

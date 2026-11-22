@@ -4,7 +4,7 @@ public import Mathlib
 public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.GelfandTsetlinBranching.ExtremalFacts
 public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.GelfandTsetlinBranching.ExtremalFactsProofA
 public import Formalism.GradedWeylDivisibility.FockSpaceTableaux.LHwlineLemmas
-public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.DetEmbUnitriA
+public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0012
 
 @[expose] public section
 

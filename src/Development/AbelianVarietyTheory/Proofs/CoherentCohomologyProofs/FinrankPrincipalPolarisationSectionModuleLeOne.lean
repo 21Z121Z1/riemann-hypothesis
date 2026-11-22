@@ -5,12 +5,12 @@ public import Development.AbelianVarietyTheory.Definitions.AbelianSchemeLaws.IsS
 public import Development.AbelianVarietyTheory.Definitions.QuasicoherentCohomology.ExistsAwayFracOfMemHomLoc
 public import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.CubeTotalComplexAcyclicOfSlicesInductionOnCard
 public import Development.AbelianVarietyTheory.Definitions.ThetaMetrics.MemNonzeroLocusIffPowFn
-public import Development.AbelianVarietyTheory.Proofs.CoherentCohomologyProofs.AbelianProjectiveBaseChange
-public import Development.AbelianVarietyTheory.Proofs.CoherentCohomologyProofs.CechLBHomologyZeroEquivSections
-public import Development.AbelianVarietyTheory.Proofs.CoherentCohomologyProofs.CechLBPullIsoOfIsOpenImmersion
-public import Development.AbelianVarietyTheory.Proofs.CoherentCohomologyProofs.CechLBHomologyFiniteOfAffineCover
-public import Development.AbelianVarietyTheory.Proofs.CoherentCohomologyProofs.FinrankCechLBHomologyExtProdStatement
-public import Development.AbelianVarietyTheory.Proofs.CoherentCohomologyProofs.MumfordBundleCechCohomologyFinrankStatement
+public import Development.AbelianVarietyTheory.Proofs.CoherentCohomologyProofs.Bundle0022
+public import Development.AbelianVarietyTheory.Proofs.CoherentCohomologyProofs.Bundle0020
+public import Development.AbelianVarietyTheory.Proofs.CoherentCohomologyProofs.Bundle0017
+public import Development.AbelianVarietyTheory.Proofs.CoherentCohomologyProofs.Bundle0027
+public import Development.AbelianVarietyTheory.Proofs.CoherentCohomologyProofs.FinrankCechLBHomologyExtProd
+public import Development.AbelianVarietyTheory.Proofs.CoherentCohomologyProofs.MumfordBundleCechCohomologyFinrank
 
 @[expose] public section
 
@@ -107,9 +107,9 @@ theorem finrank_secOnR_le_one (K : Type) [Field K] [IsAlgClosed K]
   rw [← e.finrank_eq]
   refine le_one_of_convolution (fun i => Module.finrank K ((cechLB P.A.hom P.L U).homology i))
     (fun i => Module.finrank K ((cechLB P.A.hom (pw P.L (-1)) U).homology i)) P.g fun k => ?_
-  rw [← GlobalTheory.T.finrank_cechLB_homology_extProd_alt K _ _ _ _ _ _ _ P.L (pw P.L (-1)) hpb P.isLB hL' hsep hsep _ U _ U _ D hU hUc hU hUc
+  rw [← _root_.GlobalTheory.AbLaw.finrank_cechLB_homology_extProd K _ _ _ _ _ _ _ P.L (pw P.L (-1)) hpb P.isLB hL' hsep hsep _ U _ U _ D hU hUc hU hUc
     hD hDc (cechLB_homology_finite_of_affine_cover K _ _ _ _ U P.isLB hsep hproj hU hUc)
-    (cechLB_homology_finite_of_affine_cover K _ _ _ _ U hL' hsep hproj hU hUc) k, ← GlobalTheory.T.mumford_bundle_cech_cohomology_finrank K P _ D hD hDc k, Over.w]
+    (cechLB_homology_finite_of_affine_cover K _ _ _ _ U hL' hsep hproj hU hUc) k, ← _root_.GlobalTheory.MumfordCohom.finrank_cechLB_translDiff K P _ D hD hDc k, Over.w]
   have hF : (translDiff P.A P.L (𝟙 P.A)).IsLB := DVR.linComb_isLB _ P.isLB _ _
   obtain ⟨w, hw⟩ := lbIso_of_chartPull (chartTwInv P.L _ _) hF
   exact (HomologicalComplex.homologyMapIso (cechLBCongr _ D

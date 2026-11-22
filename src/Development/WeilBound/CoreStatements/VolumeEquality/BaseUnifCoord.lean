@@ -1,7 +1,7 @@
 module
 
 public import Development.WeilBound.CoreStatements.VolumeEquality.BaseUnifDefsB
-public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.VerticalDerivativeInCoordinates
+public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0032
 public import Development.AbelianVarietyTheory.Proofs.CovolumeBounds.DifferentiableOnOfTendstoLocallyUniformlyOn
 
 @[expose] public section

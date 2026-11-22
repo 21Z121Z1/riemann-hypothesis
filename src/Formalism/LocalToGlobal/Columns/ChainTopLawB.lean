@@ -1,7 +1,7 @@
 module
 
 public import Formalism.LocalToGlobal.Columns.ChainTopLaw
-public import Formalism.LocalToGlobal.Columns.ReferenceKernelEquivOfLastComponent
+public import Formalism.LocalToGlobal.Columns.Bundle0031
 
 @[expose] public section
 

@@ -1,7 +1,7 @@
 module
 
-public import Development.EtaleCohomology.EtaleSheaves.LCSurjPf
-public import Development.EtaleCohomology.EtaleSheaves.LPrimLocPf
+public import Development.EtaleCohomology.EtaleSheaves.Bundle0037
+public import Development.EtaleCohomology.EtaleSheaves.Bundle0038
 
 @[expose] public section
 

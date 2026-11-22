@@ -1,10 +1,10 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.ModuliSpaces.IsInvDer
+public import Development.AbelianVarietyTheory.Definitions.ModuliSpaces.Bundle0001
 public import Development.AbelianVarietyTheory.Definitions.Divisors.ComparisonMemCechHodgeFiltration
-public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.LeISupInfPreimage
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CechPullOneBijectiveLatticeCover
+public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0043
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0526
 
 @[expose] public section
 

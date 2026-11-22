@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import GroundTheory.LocalFields.MaximalUnramifiedIntegers
-public import GroundTheory.PowerSubgroups.CountableNeighbourhoods.UnitMulPowAdic
+public import GroundTheory.PowerSubgroups.CountableNeighbourhoods.Bundle0002
 
 @[expose] public section
 

@@ -1,7 +1,11 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.EqOfNormResultantEqStatement
+public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0016
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.UniformisationConclusion
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.Bundle0003
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.IsHolPeriods
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.UnifUniqSt
 
 @[expose] public section
 
@@ -310,7 +314,7 @@ theorem eq_det : ∀ (l : ℕ) [Fact l.Prime] (m : ℕ) (U : Matrix (Fin m) (Fin
   have hQm : (U.charpoly.map PadicInt.Coe.ringHom).map (algebraMap ℚ_[l] E) = V.charpoly := by
     rw [Polynomial.map_map, ← Matrix.charpoly_map]
   have hb := roots _ V.charpoly_monic
-  have key := GlobalTheory.T.eq_of_norm_prod_aeval_eq_moduli l E a V.charpoly.roots (P.map (Rat.castHom ℚ_[l]))
+  have key := _root_.GlobalTheory.eq_of_norm_resultant_eq l E a V.charpoly.roots (P.map (Rat.castHom ℚ_[l]))
     (U.charpoly.map PadicInt.Coe.ringHom) (hPm.trans ha) (hQm.trans hb) (fun F u v hu hv => by
       rw [← hNa] at hu
       rw [← hDb _ hb] at hv

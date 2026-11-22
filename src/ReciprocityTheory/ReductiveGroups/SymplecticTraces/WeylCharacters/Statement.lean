@@ -1,7 +1,6 @@
 module
 
-public import ReciprocityTheory.ReductiveGroups.SymplecticTraces.WeylCharacters.Branch
-public import ReciprocityTheory.ReductiveGroups.SymplecticTraces.WeylCharacters.BlockCombStatement
+public import ReciprocityTheory.ReductiveGroups.SymplecticTraces.WeylCharacters.Bundle0001
 public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.CasimirCoefficients.PsiExistsStatement
 public import Formalism.LocalRingCardinality.DataCoeff
 

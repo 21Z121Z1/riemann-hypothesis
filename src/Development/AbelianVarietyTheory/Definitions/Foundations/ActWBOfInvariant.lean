@@ -2,9 +2,9 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.Foundations.CycMOfNot
-public import Development.AbelianVarietyTheory.Definitions.Foundations.IsScalarTowerMdlOm
-public import Development.AbelianVarietyTheory.Definitions.Foundations.LiftSLMapMulInvMem
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.SlMulToRingEquiv
+public import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0008
+public import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0022
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0349
 
 @[expose] public section
 

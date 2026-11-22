@@ -1,6 +1,6 @@
 module
 
-public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.TailIntegrals.InvSqrtTwoMulSelf
+public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.TailIntegrals.Bundle0011
 
 @[expose] public section
 

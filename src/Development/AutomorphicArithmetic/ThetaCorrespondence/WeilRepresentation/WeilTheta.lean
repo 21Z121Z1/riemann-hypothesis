@@ -1,6 +1,6 @@
 module
 
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WeilThetaConvergenceOfSiegelSet
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1721
 public import Development.WeilBound.ThetaLifts.Reductions.SiegelOfCore
 public import Development.WeilBound.CoreStatements.AbelianHeightsDuality.PublishedTheoremStatements.SiegelSetUnitaryHolds
 

@@ -1,11 +1,11 @@
 module
 
 public import Mathlib
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.InterSt
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArakelovGeometry.ADensStC
-public import ReciprocityTheory.AnalyticForms.PotentialTheory.PshShiftA
-public import ReciprocityTheory.AnalyticForms.PlurisubharmonicFunctions.LeviOneEqLaplacianThm
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.ArithModel
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.Bundle0006
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArakelovGeometry.Bundle0012
+public import ReciprocityTheory.AnalyticForms.PotentialTheory.Bundle0001
+public import ReciprocityTheory.AnalyticForms.PlurisubharmonicFunctions.Bundle0004
+public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0012
 
 @[expose] public section
 

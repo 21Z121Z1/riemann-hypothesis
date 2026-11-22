@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.Degenerations.NotAllMatchRankZero
-public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.TwistTermsStatement
+public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.Bundle0037
 
 @[expose] public section
 

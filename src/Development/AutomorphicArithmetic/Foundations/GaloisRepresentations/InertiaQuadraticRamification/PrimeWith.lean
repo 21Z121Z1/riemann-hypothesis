@@ -1,10 +1,10 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.InertiaQuadraticRamification.InertSplitAlt
-public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.ChebotarevDegreeOneIffCheb
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ChebotarevDegreeOne
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExistsOpenNormalFiniteIndexLeAbsGaloisGroup
+public import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.InertiaQuadraticRamification.Bundle0001
+public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.Bundle0006
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0317
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0233
 
 @[expose] public section
 

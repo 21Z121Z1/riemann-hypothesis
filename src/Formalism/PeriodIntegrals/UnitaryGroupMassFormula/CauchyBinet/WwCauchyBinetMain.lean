@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Formalism.PeriodIntegrals.WwCauchyBinet
+public import Formalism.PeriodIntegrals.Bundle0009
 public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.IsometryDerivative.ExistsOePerm
 
 @[expose] public section

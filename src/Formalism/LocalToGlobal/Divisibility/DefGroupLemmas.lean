@@ -1,19 +1,18 @@
 module
 
 public import Formalism.LocalToGlobal.Divisibility.DefGroup
-public import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.LevelSubgroupFiniteAdelicStandard
-public import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Stabstd
+public import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Bundle0004
+public import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Bundle0003
 public import Formalism.SatakeDualWeyl.KpqSubgroupCompact
 public import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.CsSpan
-public import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.CsApprox
-public import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.CsEasy
-public import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.CsEquiv
+public import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Bundle0009
+public import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Bundle0010
 public import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Stdform
 public import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.CsScale
 public import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.CsDual
 public import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.CsGlob
 public import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Afsplit
-public import Formalism.LocalRingCardinality.MinkMEqMinkowskiNumber
+public import Formalism.LocalRingCardinality.Bundle0006
 
 @[expose] public section
 

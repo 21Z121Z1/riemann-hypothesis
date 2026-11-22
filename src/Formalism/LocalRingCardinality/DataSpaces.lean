@@ -3,7 +3,7 @@ module
 public import Mathlib
 public import Formalism.LocalRingCardinality.Params
 public import Formalism.HermitianLattices.StatementLat
-public import Formalism.HermitianLattices.StatementMass
+public import Formalism.HermitianLattices.Bundle0003
 public import Formalism.SatakeDualWeyl.Statement
 
 @[expose] public section

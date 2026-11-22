@@ -1,7 +1,7 @@
 module
 
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.IdeleGenerators.WeightChange
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.BuildingsResidueChars.HeckeOperatorsCommuteOnAutomorphicForms
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.BuildingsResidueChars.Bundle0063
 public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.PrincipalCongruenceAntitone
 
 @[expose] public section

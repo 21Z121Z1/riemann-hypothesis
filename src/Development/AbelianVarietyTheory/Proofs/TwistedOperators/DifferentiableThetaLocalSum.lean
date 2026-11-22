@@ -1,34 +1,39 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SplitOff
-public import Formalism.LocalToGlobal.InertKernelTheory.DefsInt
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.JetKapIff
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsUnitScalarFourier
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.EntireEqOfMonomialDerivationsAtZeroEq
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0474
+public import Formalism.LocalToGlobal.InertKernelTheory.Bundle0007
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0484
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0524
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0582
 public import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.TwistPlacesOffPrimeQZero
-public import Development.AbelianVarietyTheory.Definitions.Divisors.DiscreteSeriesHermitianUnique
-public import Development.AbelianVarietyTheory.Statements.PlaceShiftStatements.NormSmall
-public import Development.AbelianVarietyTheory.Statements.PlaceShiftStatements.DictAt
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0041
+public import Development.AbelianVarietyTheory.Statements.PlaceShiftStatements.Bundle0002
+public import Development.AbelianVarietyTheory.Statements.PlaceShiftStatements.Bundle0003
 public import Development.AbelianVarietyTheory.Statements.HeckeThetaIntegrals.ThetaIntegralsAgree
 public import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.WeilTensorModels
-public import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.CuspAlongSmoothRows
+public import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.Bundle0015
 public import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.ToricSymbols
 public import Development.AbelianVarietyTheory.Definitions.Foundations.NormSumPairRankZeroOfCurveCoordNorm
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.FrT
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SrcLat
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.LatticeOrbitVectorsMovedPair
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.CompAtMtOfMemGfC
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.MovedWeilVacuumEqVacuumOfMovedLattices
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FockVacuumRealRestrictionGaussianEntireStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FockMonomialAtOriginGaussianEntireOrthonormalStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WeilDatumRealPlacesFockVacuumCharacterStatement
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsUnramifiedHeckeCharHalfExponentRestrictQuaStatement
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.NatCastMemPrimeOf
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SplittingHeckeCharExistsArchimedeanExponent
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0440
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0464
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0515
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0124
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0323
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1204
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1184
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1200
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1256
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0024
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsUnramifiedHeckeCharHalfExponentRestrictQua
+public import Formalism.LocalToGlobal.BesselHermitianTheta.AllTied
+public import Formalism.LocalToGlobal.IndefiniteReal.Bundle0016
+public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.AdelicDataRowMeasureScaleTrivialTuple
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0073
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0118
 public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.MoveRationalInvariant
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.VacuumCharacterPositiveDefiniteSource
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.HeckeCharacterInfinityExponentGroupLaws
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1283
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0166
 
 @[expose] public section
 
@@ -250,7 +255,7 @@ private theorem vac_scalar {ψ : AddChar (AF D.host.F) ℂ} {θ : InfFam D} (hθ
     ∃ c : ℂ, om (g, h) f = c • f ∧ ∀ (F : Type) [NormedField F] (lam : Qbar →+* F),
       (∀ τ, NormOne lam (compAt θ τ (Formalism.L2.Theta.mt S g)).det) → (∀ τ, NormOne lam (compAt θ τ (Formalism.L2.Theta.mt T h)).det) →
         NormOne lam c := by
-  obtain ⟨η, e1, e2, e3, e4⟩ := GlobalTheory.T.exists_unramifiedHeckeChar_halfExponent_restrict_quadratic D
+  obtain ⟨η, e1, e2, e3, e4⟩ := _root_.GlobalTheory.Mem.EtaTilde.exists_etaTilde D
   have hdet : ∀ {k : ℕ} {G s : Matrix (Fin k) (Fin k) ℂ}, IsCartanInv G s → G.det ≠ 0 := fun {k G s} hG => by
     have := hG.2.2.det_pos.ne'
     rw [Matrix.det_mul] at this
@@ -260,7 +265,7 @@ private theorem vac_scalar {ψ : AddChar (AF D.host.F) ℂ} {θ : InfFam D} (hθ
   obtain ⟨e, he⟩ := detPlus_def (m := T.rank) hs
   obtain ⟨a, ha⟩ := sq_exp hθ hW.hecT hW.resT e2 T.rank
   obtain ⟨b, hb⟩ := sq_exp hθ hW.hecS hW.resS e2 S.rank
-  refine ⟨_, GlobalTheory.T.weilDatum_realPlaces_fockVacuum_character D ψ hW.std S T θ hθ χS χT om η ⟨e1, e4, e3, e2⟩ hW (fun _ => s) (fun _ => 1) hS hT g hg h hh
+  refine ⟨_, _root_.GlobalTheory.WeilVacChar.vacuum_character D ψ hW.std S T θ hθ χS χT om η ⟨e1, e4, e3, e2⟩ hW (fun _ => s) (fun _ => 1) hS hT g hg h hh
     (fun τ => by rcases hs with rfl | rfl <;> simp) (fun τ => by rw [one_mul, mul_one]) x y hx hy f hf hv,
     fun F _ lam h1 h2 => ?_⟩
   have inv : ∀ τ, (compAt θ τ (Formalism.L2.Theta.mt S g⁻¹)).det = ((compAt θ τ (Formalism.L2.Theta.mt S g)).det)⁻¹ := fun τ => by
@@ -385,15 +390,15 @@ private theorem jets_subst {ψ : AddChar (AF D.host.F) ℂ} {θ : InfFam D} {S T
       a * ((k.prod fun v n => period δ v.1 ^ n) * Formalism.MainNotions.GL3Theta.applyAt0 D (MvPolynomial.monomial k 1)
         fun z => c⁻¹ * Θ (Formalism.L2.KerInert.tPull D (tor0 D cc δ) U.1 U'.1 z)) := by
   have hθ := hf.2.inf
-  obtain ⟨Φ, hΦ, hr⟩ := GlobalTheory.T.fockVacuum_real_restriction_gaussian_entire ψ θ S T frS frT _ _ hS hT f hf
-  obtain ⟨Φ', hΦ', hr'⟩ := GlobalTheory.T.fockVacuum_real_restriction_gaussian_entire ψ θ S T frS frT _ _ hS hT f' hf'
+  obtain ⟨Φ, hΦ, hr⟩ := _root_.GlobalTheory.FockPos.vacuum_real_entire ψ θ S T frS frT _ _ hS hT f hf
+  obtain ⟨Φ', hΦ', hr'⟩ := _root_.GlobalTheory.FockPos.vacuum_real_entire ψ θ S T frS frT _ _ hS hT f' hf'
   have hs : (((Real.sqrt (2 * Real.pi * Formalism.L2.Pj.xiR D) : ℝ) : ℂ)⁻¹) ≠ 0 := by
     have hx : 0 < Formalism.L2.Pj.xiR D := norm_pos_iff.2 ((_root_.map_ne_zero _).2 (GlobalTheory.DualPairCompare.embedding_xi_zero_ne_zero D))
     exact inv_ne_zero (Complex.ofReal_ne_zero.2 (Real.sqrt_pos.2 (mul_pos Real.two_pi_pos hx)).ne')
   have e1 : Φ = fun z => a * Θ (δ • z) := by
     refine GlobalTheory.EntireJetUniq.eq_of_applyAt0_monomial_eq _ _ hΦ
       ((hΘ.comp (differentiable_id.const_smul δ)).const_mul a) fun k => ?_
-    have h1 := GlobalTheory.T.fockMonomial_at_origin_gaussian_entire_orthonormal ψ θ S T frS frT hf.1 hθ hS hT f Φ hΦ hr k
+    have h1 := _root_.GlobalTheory.FockPos.fock_monomial_zero_of_on ψ θ S T frS frT hf.1 hθ hS hT f Φ hΦ hr k
     rw [hj, jets_scale δ a hΘ] at h1
     exact (mul_left_cancel₀ (pow_ne_zero _ hs) h1).symm
   have hd : Differentiable ℂ (Formalism.L2.KerInert.tPull D (tor0 D cc δ) U.1 U'.1) :=
@@ -451,7 +456,7 @@ private theorem jets_subst {ψ : AddChar (AF D.host.F) ℂ} {θ : InfFam D} {S T
     rw [mul_assoc, h0]
     field_simp
   have hd2 : Differentiable ℂ fun z => c⁻¹ * Θ (Formalism.L2.KerInert.tPull D (tor0 D cc δ) U.1 U'.1 z) := (hΘ.comp hd).const_mul _
-  rw [jets_scale δ a hd2, GlobalTheory.T.fockMonomial_at_origin_gaussian_entire_orthonormal ψ θ S T frS frT hf.1 hθ hS hT f' Φ' hΦ' hr' k, e2]
+  rw [jets_scale δ a hd2, _root_.GlobalTheory.FockPos.fock_monomial_zero_of_on ψ θ S T frS frT hf.1 hθ hS hT f' Φ' hΦ' hr' k, e2]
 
 private theorem coord_data {θ : InfFam D} (hθ : IsInfFam θ) {V : HSp D} {fr : GL (Fin V.rank) D.host.E} {r : GfC V}
     {U : Matrix.unitaryGroup (Fin V.rank) D.host.E} (h : RatCoord V fr r U) :

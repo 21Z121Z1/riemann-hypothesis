@@ -1,11 +1,9 @@
 module
 
-public import Development.WeilBound.ThetaLifts.Reductions.MetaplecticDerivatives.ContinuousTo
+public import Development.WeilBound.ThetaLifts.Reductions.MetaplecticDerivatives.Bundle0001
 public import Development.WeilBound.ThetaLifts.Reductions.MetaplecticDerivatives.MetaplecticUnipotentBlockSecondDiag
-public import Development.WeilBound.ThetaLifts.Reductions.MetaplecticDerivatives.MapOfRealMul
-public import Development.WeilBound.ThetaLifts.Reductions.MetaplecticDerivatives.HasFDerivAtOfCurves
-public import Development.WeilBound.ThetaLifts.Reductions.MetaplecticDerivatives.MetaplecticGroupT2Space
-public import Development.WeilBound.ThetaLifts.Reductions.MetaplecticDerivatives.HasFDerivAtOrb
+public import Development.WeilBound.ThetaLifts.Reductions.MetaplecticDerivatives.Bundle0003
+public import Development.WeilBound.ThetaLifts.Reductions.MetaplecticDerivatives.Bundle0002
 
 @[expose] public section
 

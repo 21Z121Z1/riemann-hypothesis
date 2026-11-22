@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CrystallineClassMemHodgeFiltrationOfCechRepZero
-public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.ExistsCrystalPairing
-public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.CubeTheorem
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2332
+public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.Bundle0022
+public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.Bundle0010
 
 @[expose] public section
 

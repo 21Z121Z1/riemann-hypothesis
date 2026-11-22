@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConjLinApply
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SchwartzBruhatInvariantUnderIntegralLattice
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1288
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1357
 public import GroundTheory.GlobalFields.TateThesis.AdelicCharDual
 public import GroundTheory.GlobalFields.LocalAtPlace
 

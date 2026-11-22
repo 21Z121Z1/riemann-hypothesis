@@ -1,9 +1,7 @@
 module
 
-public import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.SphericalCoordinates.PFrameEx
-public import Development.AutomorphicArithmetic.PAdicLatticeApproximation.ExistsGlobalApproxOfLocalModPPowConj
-public import Development.AutomorphicArithmetic.PAdicLatticeApproximation.ExistsBoundedDenominatorOfLocalIntegralityConj
-public import Development.AutomorphicArithmetic.PAdicLatticeApproximation.ExistsFinsetSpanOfIntegralMultiples
+public import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.SphericalCoordinates.Bundle0022
+public import Development.AutomorphicArithmetic.PAdicLatticeApproximation.Bundle0004
 
 @[expose] public section
 

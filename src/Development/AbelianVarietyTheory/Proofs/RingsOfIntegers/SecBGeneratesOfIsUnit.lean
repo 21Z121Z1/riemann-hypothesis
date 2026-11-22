@@ -1,17 +1,17 @@
 module
 
 public import Mathlib
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.DiscreteValuationRings.ExpandsPullOne
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.DiscreteValuationRings.Bundle0006
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.DiscreteValuationRings.ProdExpPf
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.DiscreteValuationRings.ProdFam
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.DiscreteValuationRings.Bundle0009
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.DiscreteValuationRings.TWMain
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.DiscreteValuationRings.TwistBCPf
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.DiscreteValuationRings.QuadraticAlgebraValuation
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.DvrLem
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.DiscreteValuationRings.Bundle0014
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.Bundle0004
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.ThetaCore
-public import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.ExpansionIntegralSectionIntegralNoetherianLocalStatement
-public import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.SecIsMulOfSval
-public import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.ExistsSecBGenerates
+public import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.Bundle0025
+public import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.Bundle0026
+public import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.Bundle0010
 
 @[expose] public section
 
@@ -90,7 +90,7 @@ theorem main : Laws → ∀ (R : Type) [CommRing R] [IsDomain R] [IsLocalRing R]
     (φ' := fun _ : Fin 1 => pullback.fst G.hom (jK R)) (ε' := fun _ => ((1 : ℕ) : ℤ))
     (fun U _ h => by simp only [Category.comp_id])
   obtain ⟨E, hE, -⟩ := (U.expand 1 le_rfl).1 sK
-  obtain ⟨g, hg, hgE⟩ := GlobalTheory.T.expansion_integralSection_integral_noetherianLocal R I hI D A G U.toUnifPre 1 s sK
+  obtain ⟨g, hg, hgE⟩ := _root_.GlobalTheory.IntegralExpansionLocal.main R I hI D A G U.toUnifPre 1 s sK
     (SectionScalarValuation.secScal_of_sval U.LG.isLB fun y J hJ => (hsK _ _ y J hJ).symm) E hE
   obtain ⟨b, hb⟩ := exists_secBGenerates hLaws.secBaseChange R I D
   obtain ⟨a, ha, -⟩ := hb (g 0)

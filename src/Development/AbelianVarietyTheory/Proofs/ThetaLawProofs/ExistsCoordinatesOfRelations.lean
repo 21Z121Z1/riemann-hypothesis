@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.EqOfFiniteOfClosedFibres
+public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0009
 public import Development.AbelianVarietyTheory.Proofs.ToricGeometry.IsUnitOfLagrangian
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.ThetaUnifAV
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.Bundle0003
 
 @[expose] public section
 

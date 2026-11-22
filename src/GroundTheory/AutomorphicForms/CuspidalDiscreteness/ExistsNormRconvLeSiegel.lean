@@ -4,7 +4,7 @@ public import Mathlib
 public import GroundTheory.AutomorphicForms.CuspidalDiscreteness.RconvDiff
 public import GroundTheory.AutomorphicForms.CuspidalDiscreteness.SiegelConj
 public import GroundTheory.AutomorphicForms.CuspidalDiscreteness.SiegelCount
-public import GroundTheory.AutomorphicForms.CuspidalDiscreteness.SiegelFinite
+public import GroundTheory.AutomorphicForms.CuspidalDiscreteness.Bundle0001
 
 @[expose] public section
 

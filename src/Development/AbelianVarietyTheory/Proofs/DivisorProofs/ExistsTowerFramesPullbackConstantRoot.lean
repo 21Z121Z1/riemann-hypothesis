@@ -3,13 +3,13 @@ module
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.Divisors.HasTraitsOnOfHasTraitsP
 public import Development.AbelianVarietyTheory.Definitions.Divisors.LamRange
-public import ReciprocityTheory.AnalyticForms.RegularLocalRings.FinalTheorems
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FrPull
+public import ReciprocityTheory.AnalyticForms.RegularLocalRings.Bundle0001
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2532
 public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsFramesOnUniformisedModelFibre
 public import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.ExistsUniqueWeilIs
 public import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.SymmetricLiftOddOrderExistsUnique
-public import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.AbelianSchemeLawsUnconditional
-public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.LiftConnectedOfTrivialUnique
+public import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.Bundle0029
+public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0119
 
 @[expose] public section
 

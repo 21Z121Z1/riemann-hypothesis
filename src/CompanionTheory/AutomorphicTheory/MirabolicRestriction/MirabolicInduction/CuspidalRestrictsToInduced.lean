@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.PublishedTheorems.PublishedFoundations.BlockTriangularOfSubOne
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CuspidalWhittaker
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0111
 public import Development.AutomorphicSpectrum.Proofs.SemilocalMultiplicity.GelfandGraevMultOneHolds
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FinrankMirabolicWhittakerEigenspace
 public import CompanionTheory.AutomorphicTheory.MirabolicRestriction.MirabolicInduction.IndFacts

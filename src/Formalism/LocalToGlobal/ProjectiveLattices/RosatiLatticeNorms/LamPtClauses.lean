@@ -5,7 +5,7 @@ public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeo
 public import Formalism.LocalToGlobal.ProjectiveLattices.RosatiLatticeNorms.LinkFD
 public import Formalism.LocalToGlobal.ProjectiveLattices.XcLat
 public import Formalism.LocalToGlobal.ProjectiveLattices.IsCombAt
-public import Formalism.LocalToGlobal.ProjectiveLattices.VAtVNeBot
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0010
 public import Formalism.LocalToGlobal.ProjectiveLattices.PetersonNormSubspace
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.PullCub
 

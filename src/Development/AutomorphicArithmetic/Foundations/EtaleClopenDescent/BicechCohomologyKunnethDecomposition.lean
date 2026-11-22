@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Divisors.BicechC
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CechAndTotalDifferentialAdditiveSquareZero
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0005
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0183
 
 @[expose] public section
 

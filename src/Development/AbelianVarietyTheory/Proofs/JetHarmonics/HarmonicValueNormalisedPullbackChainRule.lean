@@ -1,18 +1,18 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Jets.ExistsSecTieFOfTies
+public import Development.AbelianVarietyTheory.Definitions.Jets.Bundle0003
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.UnifUniqSt
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.DiscreteValuationRings.TwistBCPf
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PlaceDivisors.StChartF
-public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.ThExprUniqOfChartIndep2
-public import Formalism.LocalToGlobal.ProjectiveLattices.ConjNeSelfOfCM
-public import Formalism.LocalToGlobal.ProjectiveLattices.BetaAtSymm
-public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.JetSubstPSEqJetMap
+public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0007
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0017
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0009
+public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0024
 public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.IntegralChartDirectionsAreEigenvectors
 public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.PrimUniqPf
 public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.ThreePointSeriesExponentialOfDefect
-public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.NabValPullbackMonomial
+public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0032
 public import Development.AbelianVarietyTheory.Proofs.HomogeneousIdeals.ExistsTorusAndQuotientHom
 
 @[expose] public section

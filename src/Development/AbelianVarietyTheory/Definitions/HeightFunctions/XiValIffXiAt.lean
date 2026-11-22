@@ -1,10 +1,10 @@
 module
 
 public import Mathlib
-public import Formalism.LocalToGlobal.ProjectiveLattices.FullExists
-public import Formalism.LocalToGlobal.ProjectiveLattices.RecCond
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0034
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0032
 public import Formalism.LocalToGlobal.ProjectiveLattices.ExistsParameterConditions
-public import Development.AbelianVarietyTheory.Definitions.ExistenceOfLattices.CoeSelfDualLatticeInFrameCoordinatesEq
+public import Development.AbelianVarietyTheory.Definitions.ExistenceOfLattices.Bundle0001
 public import Development.AbelianVarietyTheory.Definitions.ExistenceOfLattices.PermutesRefl
 
 @[expose] public section

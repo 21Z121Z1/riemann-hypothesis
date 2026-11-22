@@ -1,11 +1,11 @@
 module
 
 public import Mathlib
-public import Formalism.SharpRestriction.CuspSpanNormBounds.NonGenericAndKTwoTheorems
+public import Formalism.SharpRestriction.CuspSpanNormBounds.Bundle0008
 public import Formalism.SharpRestriction.CuspSpanNormBounds.OnePlaceEstimates
-public import Formalism.SharpRestriction.CuspSpanNormBounds.SBridge
-public import Formalism.LocalRingCardinality.DataTies
-public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.IsNormalFormStabilizerMeasure
+public import Formalism.SharpRestriction.CuspSpanNormBounds.Bundle0005
+public import Formalism.LocalRingCardinality.Bundle0003
+public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.Bundle0010
 
 @[expose] public section
 

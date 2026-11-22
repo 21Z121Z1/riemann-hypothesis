@@ -1,10 +1,8 @@
 module
 
-public import Formalism.LocalToGlobal.GlobalTheory.GL4.ThirdPropositionOfClass
-public import Formalism.LocalToGlobal.GlobalTheory.GL4.FockNExtCNu
-public import Formalism.LocalToGlobal.GlobalTheory.GL4.MuMaxLeMon
-public import Formalism.LocalToGlobal.GlobalTheory.GL4.ShortAtMeanLog
-public import Formalism.LocalToGlobal.Columns.MaxSlopeSummandOfFock
+public import Formalism.LocalToGlobal.GlobalTheory.GL4.Bundle0004
+public import Formalism.LocalToGlobal.GlobalTheory.GL4.Bundle0003
+public import Formalism.LocalToGlobal.Columns.Bundle0024
 
 @[expose] public section
 

@@ -3,9 +3,9 @@ module
 public import Formalism.LocalToGlobal.KernelLattices.FirstKernelLawReading
 public import Mathlib
 public import Formalism.LocalToGlobal.KernelLattices.ColInst
-public import Formalism.LocalToGlobal.KernelLattices.MatrixKernelDiamondCommutation
+public import Formalism.LocalToGlobal.KernelLattices.Bundle0003
 public import Formalism.LocalToGlobal.Columns.ChainInstY
-public import Formalism.LocalToGlobal.Columns.ChainTwFrA
+public import Formalism.LocalToGlobal.Columns.Bundle0047
 
 @[expose] public section
 

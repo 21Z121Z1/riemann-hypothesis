@@ -1,17 +1,20 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Statements.HeckeThetaIntegrals.HkSupSizedOfHkSup
-public import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.SplitLinearModelNorm
-public import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.UnramifiedCharacter
-public import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.HeckePrimeDetection
+public import Development.AbelianVarietyTheory.Statements.HeckeThetaIntegrals.Bundle0001
+public import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.Bundle0008
+public import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.Bundle0007
+public import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.Bundle0023
 public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SqrtDivMulEqSqrtMul
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.HeckeThetaValueIdentityUnitFramesStatement
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.HeckeKernelComplexPointMatchesCosetsStatement
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IsDerivAt0CompLinearIff
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0403
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0342
+public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0155
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0368
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0577
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0370
 public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.HermFormEqOfImSpan
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.PsiRealPtEqExpIm
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.MapIncAMulRealPt
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0581
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0578
 public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.HeckeLiftReps
 
 @[expose] public section
@@ -434,7 +437,7 @@ theorem theta_prod_eq_phased_sum : ∀ (D : D7), GlobalTheory.IndefiniteRowSideF
       GlobalTheory.RawLift.Move.actO_one_left, hM, GlobalTheory.FrameChangeRead.map_incA_mul_realPt]
   have hK : K ≠ 0 := fun h0 => by
     refine om_ne_zero (om := R.ωP i A.μ0) (γ' * h) hv0 ?_
-    have h1 := GlobalTheory.T.thetaFunction_orientedModel_eq_of_realAdelicPoints D R.ψ hW.std _ _ _ _ (hW.om_pres (1, γ' * h) _ hf) (theta_smul 0 hf) fun Z => by
+    have h1 := _root_.GlobalTheory.ThetaUniqReal.eq_of_eq_realPt D R.ψ hW.std _ _ _ _ (hW.om_pres (1, γ' * h) _ hf) (theta_smul 0 hf) fun Z => by
       rw [hΘ, h0, zero_mul, zero_smul]; rfl
     rw [h1, zero_smul]
 

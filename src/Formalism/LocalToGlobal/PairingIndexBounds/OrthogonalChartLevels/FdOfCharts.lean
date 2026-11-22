@@ -1,6 +1,6 @@
 module
 
-public import Formalism.LocalToGlobal.GroupLattices.PendingLemmas.InvarianceIffAdditiveMapsExist
+public import Formalism.LocalToGlobal.GroupLattices.PendingLemmas.Bundle0003
 public import Formalism.LocalToGlobal.PairingIndexBounds.OrthogonalChartLevels.KerTh
 public import Formalism.LocalToGlobal.PairingIndexBounds.OrthogonalChartLevels.PtStep0
 

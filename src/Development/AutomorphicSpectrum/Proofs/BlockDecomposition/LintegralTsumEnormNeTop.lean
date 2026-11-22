@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Development.WeilBound.RepresentationTheoryGL.TwistedFactors.IntegralUnitBaseChange.InvTransposeGLInvTransposeGL
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IntegralNonnegNormaliserEq
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0300
 
 @[expose] public section
 

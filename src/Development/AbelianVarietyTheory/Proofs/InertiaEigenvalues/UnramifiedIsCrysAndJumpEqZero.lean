@@ -5,12 +5,12 @@ public import Formalism.LocalRingCardinality.AdicCompletionLocal.LocTied
 public import Formalism.SharpRestriction.LevelLetterCocycles.LocalSituation
 public import Formalism.SharpRestriction.LevelLetterCocycles.LocCoh
 public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.NormSubLtOneOfFix
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsBasisOfSubmodule
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Hilbert90MatrixCoboundaryCharPFiniteLevelStatement
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsWittVectorTraceOneFiniteLevelStatement
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsInvariantMatrixLiftOfAdicCompleteStatement
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsCrysOfSplitStatement
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.PeriodDataComparisonStatement
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0250
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0480
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0448
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0016
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0481
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0104
 
 @[expose] public section
 
@@ -126,13 +126,13 @@ theorem exists_witt_matrix
       change (c.comp (zlW p R)) ((M g - 1) i j) = 0
       rw [hz, map_mul, pow_one, map_natCast, CharP.cast_eq_zero, zero_mul])
   have hct : ∀ y : R, c (WittVector.teichmuller p y) = y := fun y => rfl
-  obtain ⟨W, hW, hWg⟩ := GlobalTheory.T.exists_invariant_matrix_lift_of_adic_complete G (WittVector p R) p WittVector.isAdicCompleteIdealSpanP
+  obtain ⟨W, hW, hWg⟩ := _root_.GlobalTheory.InvariantLift.exists_invariant_lift G (WittVector p R) p WittVector.isAdicCompleteIdealSpanP
     (fun g => WittVector.map (ρ g).toRingHom) (wittMap_mul ρ) (fun g => map_natCast _ _) r
     ((zlW p R).mapMatrix.toMonoidHom.comp M) (fun g h i j => map_zlW p _ _)
     {N | ∃ m, 0 < m ∧ N = fixer ρ p m}
     (by
       rintro _ ⟨m, hm, rfl⟩
-      exact ⟨normal_fixer ρ p m, hfin m hm, GlobalTheory.T.exists_wittVector_trace_one_finiteLevel p G R ρ m hm (hfin m hm)⟩)
+      exact ⟨normal_fixer ρ p m, hfin m hm, _root_.GlobalTheory.UnramifiedCrys.exists_witt_trace_one p G R ρ m hm (hfin m hm)⟩)
     (by
       rintro _ ⟨a, ha, rfl⟩ k
       obtain ⟨b, hb, h⟩ := exists_fixer_dvd ρ hopen M hM hJ k

@@ -5,7 +5,7 @@ public import Development.AbelianVarietyTheory.Definitions.ArchimedeanThetaValue
 public import Development.AbelianVarietyTheory.Definitions.ArchimedeanThetaValues.TrFormBaseChangeNondegenerate
 public import Development.AbelianVarietyTheory.Definitions.ArchimedeanThetaValues.SqrtNegDiscMemCoeffField
 public import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.ZeroFLeftExt
-public import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.PullTopZFConstUnit
+public import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.Bundle0010
 
 @[expose] public section
 

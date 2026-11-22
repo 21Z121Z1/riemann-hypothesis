@@ -1,10 +1,10 @@
 module
 
-public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LatticeColumns.LevelComponentsSurjective
-public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LatticeColumns.LocRed
-public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LatticeColumns.IdxGroup
-public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LocalVolumeIndices.LocKMem
-public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LocalVolumeIndices.CstNatCastApply
+public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LatticeColumns.Bundle0005
+public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LatticeColumns.Bundle0003
+public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LatticeColumns.Bundle0002
+public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LocalVolumeIndices.Bundle0002
+public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LocalVolumeIndices.Bundle0003
 
 @[expose] public section
 

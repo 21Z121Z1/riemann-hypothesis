@@ -3,8 +3,8 @@ module
 public import Mathlib
 public import Formalism.SatakeDualWeyl.KpqSubgroupCompact
 public import Formalism.LocalToGlobal.GlobalTheory.GL5.FamilyMassVolumeIdentityOfClassDecomp
-public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.ExistsCompactLatticeStabilizerBoundedReal
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.AdelicUnitaryEqRealMulFiniteSplit
+public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.Bundle0045
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0070
 
 @[expose] public section
 

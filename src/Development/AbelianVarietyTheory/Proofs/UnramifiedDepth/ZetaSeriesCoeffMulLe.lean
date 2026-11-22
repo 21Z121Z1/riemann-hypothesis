@@ -2,10 +2,10 @@ module
 
 public import Mathlib
 public import ReciprocityTheory.DualLattices.DetPolyMulCayleyOmegaPow
-public import ReciprocityTheory.DualLattices.VEqZeroOfPowEqOne
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.WeightedSumBounds.PeriodValuation
-public import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.ChainLemmaMultivariatePowerSeriesCoordinateFormStatement
-public import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.WeightedOrderGePrimePowOfSumPurePowersAddStatement
+public import ReciprocityTheory.DualLattices.Bundle0003
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.WeightedSumBounds.Bundle0001
+public import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.Bundle0010
+public import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.Bundle0009
 
 @[expose] public section
 

@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.AdelicHermitianForms.AdelicPair
-public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.LogSqLeTangentAddSq
+public import Development.AbelianVarietyTheory.Definitions.AdelicHermitianForms.Bundle0001
+public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.Bundle0015
 
 @[expose] public section
 

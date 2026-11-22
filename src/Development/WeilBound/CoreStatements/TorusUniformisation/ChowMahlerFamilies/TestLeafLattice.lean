@@ -1,10 +1,10 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.FromNAdd
-public import Development.AutomorphicSpectrum.Statements.AlgebraStatements.PolarisedFlagStatement
-public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.SymplecticPeriodMatrixIntegrality
-public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.PolarisedAugmentationTheorem
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0070
+public import Development.AutomorphicSpectrum.Statements.AlgebraStatements.Bundle0001
+public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.Bundle0010
+public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.Bundle0041
 public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.ExistsAddEquiv
 
 @[expose] public section

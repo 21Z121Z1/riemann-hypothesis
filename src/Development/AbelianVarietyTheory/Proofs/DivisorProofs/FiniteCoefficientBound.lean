@@ -2,21 +2,21 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Statements.PlaceShiftStatements.InfClassAt
-public import Development.AbelianVarietyTheory.Statements.PlaceShiftStatements.DictAt
-public import Development.AbelianVarietyTheory.Definitions.Divisors.DiscreteSeriesHermitianUnique
+public import Development.AbelianVarietyTheory.Statements.PlaceShiftStatements.Bundle0003
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0041
 public import Development.AbelianVarietyTheory.Definitions.Foundations.NormSumPairRankZeroOfCurveCoordNorm
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.OneCosetOfIsTensor
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SumOKEx
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnfoldingTermCoefEqResidueCardZpow
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1489
 public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.UnipotentLevelNilpotent
 public import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsGivenStageEqOne
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DiagonalBlockDetBlockTriangular
-public import Development.AbelianVarietyTheory.Statements.HeckeThetaIntegrals.FormulaAtOfSubsingleton
+public import Development.AbelianVarietyTheory.Statements.HeckeThetaIntegrals.Bundle0002
 public import Formalism.MirabolicMackeyTheory.MirabolicMackeyProofs.RamBasic
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BandMono
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ImportsFurtherBis
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ImportsFurtherTer
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ImportsFurtherMore
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0003
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0042
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0013
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0043
 
 @[expose] public section
 

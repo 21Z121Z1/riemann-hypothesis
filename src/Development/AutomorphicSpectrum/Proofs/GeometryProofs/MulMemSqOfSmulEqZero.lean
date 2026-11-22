@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.TranslateMemIndOrder
-public import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.LieLatticeData
-public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.LocallyFreeOfFiniteProjective
+public import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.Bundle0001
+public import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.Bundle0002
+public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.Bundle0009
 
 @[expose] public section
 

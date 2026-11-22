@@ -1,19 +1,18 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.KmapEq
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0134
 public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.KmapOfOkOfVecP
 public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.ThetaStepDistributionEquivariantRational
-public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.XiEntryInvariant
+public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0143
 public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.FirstCoupledKernelEquivariantCosets
-public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.KAtTopEquiv
 public import Formalism.LocalToGlobal.KernelLattices.KernelLocalFactors.ThetaLocalEquivalence.ThEquivPOf
 public import Formalism.LocalToGlobal.KernelLattices.KernelLocalFactors.ThetaLocalEquivalence.ThEquivPStepCIff
 public import Formalism.LocalToGlobal.KernelLattices.ENatEq
 public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.OrdSubConjEqNeg
 public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.GmapToAddSubgroup
 public import Formalism.LocalToGlobal.KernelLattices.KernelLocalFactors.RkVolLaHyp
-public import Formalism.LocalToGlobal.KernelLattices.KernelLocalFactors.RkConj
+public import Formalism.LocalToGlobal.KernelLattices.KernelLocalFactors.Bundle0004
 
 @[expose] public section
 

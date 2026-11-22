@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.DepthZeroSupport
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.GeometricLemmaOfFiltration
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0382
 
 @[expose] public section
 

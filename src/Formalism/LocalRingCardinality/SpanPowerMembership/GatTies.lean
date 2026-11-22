@@ -1,6 +1,6 @@
 module
 
-public import Formalism.LocalRingCardinality.DataGatTies
+public import Formalism.LocalRingCardinality.Bundle0001
 public import Formalism.LocalRingCardinality.HostCls
 public import Formalism.FrobeniusOrbits.HostCorollaries
 public import Formalism.LocalRingCardinality.SpanPowerMembership.GatSetting

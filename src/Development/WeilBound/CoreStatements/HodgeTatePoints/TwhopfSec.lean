@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.FiniteOpenHopfOrder
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsDenominatorRegular
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0017
 
 @[expose] public section
 

@@ -2,9 +2,9 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.WeilTensorModels
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsOpenScaledInt
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PeriodicTemperedDistPoissonStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.StandardAdelicCharacterNontrivialAtPlaces
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1307
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1673
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1566
 
 @[expose] public section
 
@@ -81,7 +81,7 @@ theorem transfer {E : Type} [NormedAddCommGroup E] [NormedSpace ℝ E] [FiniteDi
     intro y
     rw [hC, hC, hg]
     simp only [hΦs]
-  obtain ⟨c, hc⟩ := GlobalTheory.T.periodic_tempered_dist_poisson n (T.comp C) t1 t2
+  obtain ⟨c, hc⟩ := _root_.GlobalTheory.IntComb.dirac_comb_unique n (T.comp C) t1 t2
   refine ⟨c, fun f => ?_⟩
   have hf : C (SchwartzMap.compCLMOfContinuousLinearEquiv ℂ Φ f) = f := by
     ext y; rw [hC]; simp

@@ -1,6 +1,6 @@
 module
 
-public import Formalism.SharpRestriction.GrowthBounds.LogarithmicSums.DfcHigh
+public import Formalism.SharpRestriction.GrowthBounds.LogarithmicSums.Bundle0002
 
 @[expose] public section
 

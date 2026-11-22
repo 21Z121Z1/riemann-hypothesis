@@ -2,11 +2,11 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.ExistsOfLayers
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsCrysLatOfTrivial
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.InclWFrobIter
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0150
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0184
 public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.OneAddXMulDerivativeBinomial
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.TeichPow
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CyclotomicPowerSeriesAlgHomActionLaws
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0312
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0218
 
 @[expose] public section
 

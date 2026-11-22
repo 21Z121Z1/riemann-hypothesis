@@ -1,6 +1,6 @@
 module
 
-public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.GelfandTsetlinBranching.FockFRowActRight
+public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.GelfandTsetlinBranching.Bundle0002
 
 @[expose] public section
 

@@ -1,8 +1,8 @@
 module
 
-public import Development.AutomorphicSpectrum.Definitions.MetricPeriods.IsFundSet
-public import Development.AutomorphicSpectrum.Proofs.MetricProofs.ContinuousHermitianMatrixFamily
-public import Development.AutomorphicSpectrum.Proofs.MetricProofs.IsometryPreservesHermitianAndAction
+public import Development.AutomorphicSpectrum.Definitions.MetricPeriods.Bundle0003
+public import Development.AutomorphicSpectrum.Proofs.MetricProofs.Bundle0023
+public import Development.AutomorphicSpectrum.Proofs.MetricProofs.Bundle0029
 
 @[expose] public section
 

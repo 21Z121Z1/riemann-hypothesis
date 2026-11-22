@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.ImportsTailExtra
-public import GroundTheory.HeightsAndTheta.Heights.FieldsOfNumbers.IntNumRelabel
+public import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.Bundle0049
+public import GroundTheory.HeightsAndTheta.Heights.FieldsOfNumbers.Bundle0008
 
 @[expose] public section
 

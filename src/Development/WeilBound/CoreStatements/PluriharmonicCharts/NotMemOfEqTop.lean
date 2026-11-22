@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.WeilBound.CoreStatements.PluriharmonicCharts.AnalyticAtFlagPt
+public import Development.WeilBound.CoreStatements.PluriharmonicCharts.Bundle0022
 
 @[expose] public section
 

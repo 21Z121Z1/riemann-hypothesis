@@ -1,10 +1,9 @@
 module
 
-public import Formalism.LocalToGlobal.GlobalTheory.GL6.PBwLcInt
+public import Formalism.LocalToGlobal.GlobalTheory.GL6.Bundle0006
 public import Formalism.LocalToGlobal.GlobalTheory.GL6.DiagonalSlopes.CharacterFiniteLevelZeroOfForms
-public import Formalism.LocalToGlobal.GlobalTheory.GL6.RamifiedLatticePropsOfModel
-public import Formalism.LocalToGlobal.GlobalTheory.GL6.SecondBranchInclLengthOfLengths
-public import Formalism.LocalToGlobal.GlobalTheory.GL6.PBwLocGlob
+public import Formalism.LocalToGlobal.GlobalTheory.GL6.Bundle0003
+public import Formalism.LocalToGlobal.GlobalTheory.GL6.Bundle0009
 
 @[expose] public section
 

@@ -3,8 +3,8 @@ module
 public import Formalism.HermitianCurvature.RealInputsClosedAdmissibleSettings
 public import Formalism.HermitianCurvature.HermitianCurvatureProofs.PBFVnice
 public import Formalism.HermitianCurvature.HermitianCurvatureProofs.PBFVstep
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.WCellMemOmPlus
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.BigCellZetaMinors
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0106
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0040
 public import Formalism.HermitianCurvature.HermitianCurvatureProofs.ChainRecursionFromSingleDescent
 
 @[expose] public section

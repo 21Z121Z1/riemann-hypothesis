@@ -3,11 +3,10 @@ module
 public import Mathlib
 public import Formalism.SharpRestriction.CuspSpanNormBounds.GlobAut
 public import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.AdelstabL
-public import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.SignatureConjugationInvariant
-public import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.SignatureExists
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.HostCmData
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ImportsBisExtra
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.InclEIntMem
+public import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Bundle0003
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0081
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0008
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0070
 
 @[expose] public section
 

@@ -1,6 +1,6 @@
 module
 
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutJABddSSnChain
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0026
 
 @[expose] public section
 

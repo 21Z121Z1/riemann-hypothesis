@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.ExistsCellOfIsSubquotient
-public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.HasFiniteLengthOfIsIrreducible
+public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.Bundle0001
 public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SmRep
 public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.InductionContragredient
 

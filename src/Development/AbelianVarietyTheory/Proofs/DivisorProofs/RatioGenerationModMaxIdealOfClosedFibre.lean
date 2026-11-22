@@ -1,13 +1,13 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Divisors.FormalEnd
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SecRatioEqRefl
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0064
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2312
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.UniformisationConclusion
 public import Development.AbelianVarietyTheory.Definitions.Degenerations.AdmissibleBaseOfCompleteDvr
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GermRatioAgreeSelf
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2448
 public import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.IsLocalizedModuleResBasicOpenOfQcqs
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.TorsionAppLESurjectiveAndKer
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0561
 
 @[expose] public section
 

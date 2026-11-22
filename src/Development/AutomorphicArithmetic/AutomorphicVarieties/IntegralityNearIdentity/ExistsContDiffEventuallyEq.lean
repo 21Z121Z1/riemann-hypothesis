@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.IntegralityNearIdentity.EqOneOfNear
-public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.ConjugateOfRoots
-public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.WeightedSumBis
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.IntegralityNearIdentity.Bundle0001
+public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0009
+public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0064
 
 @[expose] public section
 

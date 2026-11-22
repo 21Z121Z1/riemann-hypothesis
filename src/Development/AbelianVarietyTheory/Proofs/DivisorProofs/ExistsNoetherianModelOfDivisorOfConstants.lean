@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DivConstClosedPts
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.OriginIdeal
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0187
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0218
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsNoetherianNormalLocalApprox
 
 @[expose] public section

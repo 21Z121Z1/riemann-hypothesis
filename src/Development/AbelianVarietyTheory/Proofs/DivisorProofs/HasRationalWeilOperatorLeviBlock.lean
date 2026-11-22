@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ActFromBlocks
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1543
 
 @[expose] public section
 

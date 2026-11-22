@@ -1,11 +1,11 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Divisors.IsUnifAt
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LocalIdeleMemNsUnits
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsUnitaryCharOfOpenSubgroupAndHom
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0036
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1073
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0023
 public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.RamificationIdxEqOneOfIsSquare
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsCmAdeleUnitCharacterReadingHeckeChar
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0172
 
 @[expose] public section
 

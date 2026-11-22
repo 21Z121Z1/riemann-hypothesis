@@ -1,9 +1,9 @@
 module
 
 public import Formalism.HermitianCurvature.StatementJC
-public import Formalism.HermitianCurvature.LowerBlockNormalisedBoundFromComponents
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.BlockEstimatesSumForm
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.BigCellZetaMinors
+public import Formalism.HermitianCurvature.Bundle0003
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0016
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0040
 public import Formalism.HermitianCurvature.HermitianCurvatureProofs.RegularisedPairingViaPhase
 public import Formalism.HermitianCurvature.HermitianCurvatureProofs.LevelSizesJointMean
 

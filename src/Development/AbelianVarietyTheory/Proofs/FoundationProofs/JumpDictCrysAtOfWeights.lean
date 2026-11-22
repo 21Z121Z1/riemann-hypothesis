@@ -2,13 +2,13 @@ module
 
 public import Mathlib
 public import Formalism.LocalRingCardinality.RankBoundMonotoneInDimension
-public import Development.AbelianVarietyTheory.BlockTheory.TorsionBlocks.JumpDictionary
+public import Development.AbelianVarietyTheory.BlockTheory.TorsionBlocks.Bundle0006
 public import Formalism.LocalRingCardinality.RhoDetPrimeEqMuTildeMulChiPow
 public import Formalism.SharpRestriction.LevelLetterCocycles.QuotientHomNonvanishingBound
 public import Formalism.SharpRestriction.ParamsHeightRankConstant
-public import Development.AbelianVarietyTheory.BlockTheory.NonGaloisCusps.BlockComplementLattice
-public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.GaloisSideTwistedSelmerAuxiliaryPrimes
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.AbsNormPrimeIffInertiaDegEqOneAndFiniteRamified
+public import Development.AbelianVarietyTheory.BlockTheory.NonGaloisCusps.Bundle0007
+public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0012
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0001
 
 @[expose] public section
 

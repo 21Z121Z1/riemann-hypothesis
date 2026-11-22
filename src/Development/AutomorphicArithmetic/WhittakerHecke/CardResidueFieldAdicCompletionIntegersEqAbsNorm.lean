@@ -1,7 +1,7 @@
 module
 
 public import Development.AutomorphicArithmetic.Foundations.LocalLanglands.RecTTransport
-public import Development.DiscreteGroups.GlobalIrreducibility.DzApprox
+public import Development.DiscreteGroups.GlobalIrreducibility.Bundle0015
 
 @[expose] public section
 

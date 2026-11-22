@@ -2,12 +2,12 @@ module
 
 public import Mathlib
 public import Formalism.SharpRestriction.LevelLetterCocycles.DataNLoc
-public import Development.AbelianVarietyTheory.Definitions.Foundations.HTBasis
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CyclotomicCharacterPadicBasicProperties
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ContinuousOrbitPadicComplex
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.PadicNormZpowSubOnePadicValInt
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsCyclotomicTowerLevelGeneratorProperties
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.TraceAlmostOntoOfLevels
+public import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0010
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0128
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0127
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0139
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0164
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0142
 
 @[expose] public section
 

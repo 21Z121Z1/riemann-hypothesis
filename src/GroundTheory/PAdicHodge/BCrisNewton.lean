@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import GroundTheory.PAdicHodge.BCrisNewtonFrac
+public import GroundTheory.PAdicHodge.Bundle0007
 public import GroundTheory.PAdicHodge.BCrisRegular
 
 @[expose] public section

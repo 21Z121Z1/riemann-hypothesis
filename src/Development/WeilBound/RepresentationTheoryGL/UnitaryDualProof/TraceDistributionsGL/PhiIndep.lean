@@ -1,8 +1,8 @@
 module
 
 public import Development.WeilBound.RepresentationTheoryGL.UnitaryDualProof.BernsteinExponentBounds.IsInvForm
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsBoxInvariantSnd
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.LinearChangeOfVariablesLocalFieldMatrix
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0076
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0031
 public import Development.WeilBound.CoreStatements.AutomorphicKernels.BernsteinUnitaryProducts.BernsteinTheoremA.UnitaryKirillovModel.FormTraceEq
 public import Mathlib
 public import GroundTheory.AutomorphicForms.WhittakerCriterion

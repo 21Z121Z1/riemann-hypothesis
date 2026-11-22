@@ -1,7 +1,7 @@
 module
 
 public import Formalism.LocalToGlobal.Divisibility.RecBridge
-public import Formalism.SharpRestriction.Divisibility.HookProducts.HookProd
+public import Formalism.SharpRestriction.Divisibility.HookProducts.Bundle0003
 
 @[expose] public section
 

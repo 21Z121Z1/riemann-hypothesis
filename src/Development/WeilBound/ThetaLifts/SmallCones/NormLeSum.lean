@@ -1,7 +1,7 @@
 module
 
-public import Development.WeilBound.ThetaLifts.SmallCones.SliceAd
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsAdmissibleFormAdelicThetaSum
+public import Development.WeilBound.ThetaLifts.SmallCones.Bundle0012
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0792
 
 @[expose] public section
 

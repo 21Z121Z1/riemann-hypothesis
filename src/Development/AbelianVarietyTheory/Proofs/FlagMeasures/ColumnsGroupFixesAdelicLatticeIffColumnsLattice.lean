@@ -1,15 +1,15 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.LevelMatchIff
-public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.FrLink
-public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.LinkUnique
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ColumnWittFrameBasisBlockGram
+public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.Bundle0015
+public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.Bundle0014
+public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.Bundle0016
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0296
 public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.DualLatticeLocalCharacterization
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.UnitaryDatumLevelPrimeSplitDegreeGramFacts
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.MiddleLatticeSelfDualAnisotropicPairingStatement
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.TransportedColumnLatticeHasLevelAndDualGeneratorStatement
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.AdelicColumnLatticeEqSpanPartTransportedFrameStatement
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0263
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0304
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0330
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0321
 
 @[expose] public section
 
@@ -149,7 +149,7 @@ theorem decomp (hw : WittX X u wt) {x₀ : (VS D).V} (hx₀ : x₀ ∈ X.Lb) (h1
     ∃ (c c' : Fin D.R.rS → D.host.E) (s : X.B.I.E) (w : Fin (D.R.N 0) → D.host.E),
       s ∈ (algebraMap (𝓞 X.B.I.E) X.B.I.E).range ∧ w ∈ Mq wt ∧
       y = ∑ a, c a • X.eX a + ∑ a, c' a • X.fY a + X.ιE s • x₀ + ∑ j, w j • qFr wt j := by
-  obtain ⟨-, -, hsplit⟩ := GlobalTheory.T.middleLattice_selfDual_anisotropic_pairing D X u
+  obtain ⟨-, -, hsplit⟩ := _root_.GlobalTheory.St.G.midLat_selfDual_pairing D X u
   have hLb_L0 : X.Lb ≤ (VS D).L0 := by
     rw [X.Lam_split]
     exact le_sup_right.trans le_sup_left
@@ -281,7 +281,7 @@ theorem carry (hw : WittX X u wt) (hι : IsAdeleIso X ιA) (h : Hfin X u)
         OAd D.host.F D.host.E) → (Yc - 1) *ᵥ x ∈ hat D.host.F (Mq wt)) :
     ∀ v ∈ X.B.I.Lf, X.B.I.fmat (h : X.B.I.Gf) *ᵥ v ∈ X.B.I.Lf := by
   obtain ⟨hTL, x₀, hx₀, h1, d, hd, hdx, -⟩ := GlobalTheory.T.transported_column_lattice_has_level_and_dual_generator D X u wt hw
-  obtain ⟨hembL, -, -, -, -, -⟩ := GlobalTheory.T.adelicColumnLattice_eq_spanPart_transportedFrame D X u wt ιA hw hι
+  obtain ⟨hembL, -, -, -, -, -⟩ := _root_.GlobalTheory.St.G.MHat.mhat_coords D X u wt ιA hw hι
   intro v hv
   refine mulVec_span X.B.I.Lf
     (Set.range fun x : X.B.I.L => fun i => Formalism.UG.inclE (F := X.B.I.F) (Af X.B.I.F) ((x : Fin X.B.I.n → X.B.I.E) i))
@@ -327,7 +327,7 @@ open GlobalTheory.St.G.Stabk in
 theorem stabK_iff : ∀ (D : D7) (X : HidaSetting D) (u : D.what₂.Word) (wt : (VS D).V ≃ₗ[D.host.E] (VS D).V) (ιA : X.B.I.E ⊗[X.B.I.F] Af X.B.I.F ≃+* D.host.E ⊗[D.host.F] Ad D.host.F), WittX X u wt → IsAdeleIso X ιA → ∀ (h : Hfin X u) (y : Formalism.UG.UPts (Formalism.L2.Forms.sigD D) (Formalism.L2.Forms.gramN D 0 (Nat.zero_le _)) (Ad D.host.F)), RepF X wt ιA (h : X.B.I.Gf) y → ((h : X.B.I.Gf) ∈ X.B.I.Kset ↔ ((∀ x, x ∈ hat D.host.F (Mq wt) ↔ y.1.1 *ᵥ x ∈ hat D.host.F (Mq wt)) ∧ ∀ x, (∀ z ∈ hat D.host.F (Mq wt), hR (Formalism.L2.Forms.sigD D) (Formalism.L2.Forms.gramN D 0 (Nat.zero_le _)) (Ad D.host.F) z x ∈ OAd D.host.F D.host.E) → (y.1.1 - 1) *ᵥ x ∈ hat D.host.F (Mq wt))) := by
   intro D X u wt ιA hw hι h y hr
   obtain ⟨hTL, x₀, hx₀, h1, d, hd, hdx, hdual⟩ := GlobalTheory.T.transported_column_lattice_has_level_and_dual_generator D X u wt hw
-  obtain ⟨hembL, -, -, -, -, hrepAll⟩ := GlobalTheory.T.adelicColumnLattice_eq_spanPart_transportedFrame D X u wt ιA hw hι
+  obtain ⟨hembL, -, -, -, -, hrepAll⟩ := _root_.GlobalTheory.St.G.MHat.mhat_coords D X u wt ιA hw hι
   have hrep := hrepAll h y hr
   obtain ⟨Yi, hYYi, hYiY⟩ : ∃ Yi, y.1.1 * Yi = 1 ∧ Yi * y.1.1 = 1 :=
     ⟨_, Units.mul_inv y.1, Units.inv_mul y.1⟩

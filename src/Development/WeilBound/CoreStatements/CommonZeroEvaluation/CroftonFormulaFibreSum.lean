@@ -1,11 +1,15 @@
 module
 
 public import Mathlib
-public import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.PConeIntegralMass
-public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.IsSigmaCompactConeInter
-public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.CroftonFormulaOpenConeStatement
-public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.RandomSetSumExpectationStatement
-public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.MeasurableFibreCountOverStatement
+public import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.Bundle0013
+public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.Bundle0067
+public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.Bundle0070
+public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.Bundle0065
+public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.Bundle0068
+public import Development.WeilBound.CoreStatements.TorusUniformisation.ChowMahlerFamilies.XXgzChowMahlerFibreavg
+public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.Bundle0066
+public import Development.WeilBound.CoreStatements.TorusUniformisation.ChowMahlerFamilies.Bundle0030
+public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.Bundle0069
 
 @[expose] public section
 
@@ -22,7 +26,7 @@ theorem measurable_matrix_gaussian (m n : ℕ) :
 
 theorem measurable_cntOver_first {n e : ℕ} {S : Set (EuclideanSpace ℂ (Fin n))} (hS : IsSigmaCompact S) :
     Measurable fun π : Fin (e + 1) → Fin n → ℂ => cntOver S π (firstCoordVec (e + 1)) := by
-  have H := GlobalTheory.T.measurable_fibre_count_over n (e + 1) S hS
+  have H := _root_.GlobalTheory.CompanionTheory.Ar.Short.Crofton.measurable_cntOver n (e + 1) S hS
   have H2 := H.comp (measurable_id.prodMk (measurable_const (a := firstCoordVec (e + 1))))
   exact H2
 

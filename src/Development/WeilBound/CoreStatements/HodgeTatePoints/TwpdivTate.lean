@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.PairingExtends
+public import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.Bundle0005
 
 @[expose] public section
 

@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import GroundTheory.ProfiniteCohomology.LocalClassFormation.InvariantLevels
-public import GroundTheory.ProfiniteCohomology.CohomologyTwoIntAddEquivQZSymmApply
+public import GroundTheory.ProfiniteCohomology.Bundle0007
 
 @[expose] public section
 

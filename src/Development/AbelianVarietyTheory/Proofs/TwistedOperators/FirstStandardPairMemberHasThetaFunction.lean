@@ -1,13 +1,13 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.RatInOfUnit
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0142
 public import Formalism.LocalToGlobal.Divisibility.DefGroupLemmas
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.EqZeroOrEqOfPlaceIdem
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0187
 public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IdempotentMulEqZeroOfOrthogonal
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SchrodingerIntertwinerSchwartzBruhatIsTheta
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsEqMulOfResSNeOne
-public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.ContinuousCharacterFiniteOrderIntegralUnits
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0433
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0430
+public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.Bundle0063
 
 @[expose] public section
 

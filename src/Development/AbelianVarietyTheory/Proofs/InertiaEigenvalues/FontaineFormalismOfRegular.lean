@@ -1,11 +1,11 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FontaineFormalismTensorEquiv
-public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.OneSubPhiOntoOfFilZero
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsFinExt
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.BdRPlusIsDomainBdRIsField
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.LinearIndepOnOfFixed
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0133
+public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.Bundle0007
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0233
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0065
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0032
 
 @[expose] public section
 

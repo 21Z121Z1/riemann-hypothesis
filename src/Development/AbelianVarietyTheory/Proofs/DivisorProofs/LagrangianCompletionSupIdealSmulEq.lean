@@ -2,9 +2,9 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.Divisors.NotCompactOfMEqOne
-public import Development.AbelianVarietyTheory.Definitions.Divisors.InfUniv
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GroupObjectLiftDividedPowers
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TensorModOfTmul
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0044
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2283
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0650
 
 @[expose] public section
 

@@ -1,7 +1,7 @@
 module
 
-public import Formalism.SharpRestriction.GrowthBounds.HermitianTensor.DetFactsPAlt
-public import Formalism.SharpRestriction.GrowthBounds.HermitianTensor.ImportsAlt
+public import Formalism.SharpRestriction.GrowthBounds.HermitianTensor.Bundle0005
+public import Formalism.SharpRestriction.GrowthBounds.HermitianTensor.Bundle0011
 public import Formalism.SharpRestriction.GrowthBounds.ColumnSpanDensity.TensorKP
 
 @[expose] public section

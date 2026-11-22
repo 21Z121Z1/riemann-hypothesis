@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CoefHomGenHomMonomial
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.JointRowWeightAntitoneOfMaxPotential
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1806
 
 @[expose] public section
 

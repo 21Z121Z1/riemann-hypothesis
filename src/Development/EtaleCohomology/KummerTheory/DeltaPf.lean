@@ -1,6 +1,6 @@
 module
 
-public import Development.EtaleCohomology.KummerTheory.ContCut
+public import Development.EtaleCohomology.KummerTheory.Bundle0002
 
 @[expose] public section
 

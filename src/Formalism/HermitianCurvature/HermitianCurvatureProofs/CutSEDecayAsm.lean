@@ -1,6 +1,6 @@
 module
 
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.WaveOperatorLeL2Subspace
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0257
 public import Formalism.HermitianCurvature.HermitianCurvatureProofs.DecayPairEstimate
 
 @[expose] public section

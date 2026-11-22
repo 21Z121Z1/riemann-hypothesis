@@ -1,7 +1,7 @@
 module
 
 public import Formalism.YangianSpanCharacter.StatementF
-public import Formalism.YangianSpanCharacter.StatementY
+public import Formalism.YangianSpanCharacter.Bundle0001
 public import Formalism.YangianSpanCharacter.YangianRTTProofs.DiagonalEntryEqOfModularRelation
 
 @[expose] public section

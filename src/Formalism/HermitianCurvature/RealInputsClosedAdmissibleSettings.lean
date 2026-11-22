@@ -1,6 +1,6 @@
 module
 
-public import Formalism.HermitianCurvature.StatementKB
+public import Formalism.HermitianCurvature.Bundle0009
 public import Formalism.HermitianCurvature.PositionExpansionTopCoefficients
 public import Formalism.HermitianCurvature.WeylElementCommutesLevelOne
 

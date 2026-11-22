@@ -1,7 +1,7 @@
 module
 
-public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.PhiCMinSt
-public import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.TransferenceMinima
+public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0001
+public import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.Bundle0015
 
 @[expose] public section
 

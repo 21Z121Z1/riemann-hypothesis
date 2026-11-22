@@ -2,8 +2,8 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.CosInj
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.QuotientIntegralOneDoubleCosetEqMulValue
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ExistsEqSumIndicator
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0077
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0002
 
 @[expose] public section
 

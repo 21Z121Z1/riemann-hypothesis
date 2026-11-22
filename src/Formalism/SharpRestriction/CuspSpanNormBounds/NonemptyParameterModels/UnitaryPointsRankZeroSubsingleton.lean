@@ -1,6 +1,6 @@
 module
 
-public import Formalism.SharpRestriction.CuspSpanNormBounds.PlaceDegreeData
+public import Formalism.SharpRestriction.CuspSpanNormBounds.Bundle0006
 public import Formalism.SharpRestriction.CuspSpanNormBounds.AdmissibleBoundsFromSource
 public import Formalism.SharpRestriction.ParamsHeightRankConstant
 public import Formalism.LocalRingCardinality.RankBoundMonotoneInDimension

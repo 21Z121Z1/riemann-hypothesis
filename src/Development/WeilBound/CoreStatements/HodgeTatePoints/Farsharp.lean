@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Statements.GeometryStatements.HodgeTateCokerSharp
+public import Development.AutomorphicSpectrum.Statements.GeometryStatements.Bundle0002
 public import Development.WeilBound.CoreStatements.HodgeTatePoints.FarsharpA
-public import Development.WeilBound.CoreStatements.HodgeTatePoints.FarsharpB
+public import Development.WeilBound.CoreStatements.HodgeTatePoints.Bundle0024
 
 @[expose] public section
 

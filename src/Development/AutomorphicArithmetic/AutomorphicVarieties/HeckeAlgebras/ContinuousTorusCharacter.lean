@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.FixedSubgroup
+public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0023
 
 @[expose] public section
 

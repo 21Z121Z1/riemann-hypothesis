@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Formalism.LocalToGlobal.IndefiniteReal.LocalNormSurjectivity.FinNormSurj
-public import Formalism.SatakeDualWeyl.StatementF
+public import Formalism.SatakeDualWeyl.Bundle0001
 
 @[expose] public section
 

@@ -1,6 +1,6 @@
 module
 
-public import Formalism.ResultantValuation.ResultantConjugate
+public import Formalism.ResultantValuation.Bundle0001
 
 @[expose] public section
 

@@ -1,14 +1,14 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsSncModel
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.Bundle0008
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.BlowupProjections.BlowupProjStatement
 public import Development.AutomorphicSpectrum.Definitions.DivisibilityTowers.Proportional
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.InterBridge
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.InterRed
 public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.AdjoinCoordsArithVar
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.RegularValuesInAdjoinedField
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.StandardSmoothChartOfNonzero
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0121
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0075
 public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.HomogeneousFormNonvanishingPoint
 
 @[expose] public section

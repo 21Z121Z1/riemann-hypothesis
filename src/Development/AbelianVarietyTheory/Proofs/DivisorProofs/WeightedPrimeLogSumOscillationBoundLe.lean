@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Divisors.ESmall
-public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.SumPrimeLogDivPredLeLogAdd
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SumPrimesInvPredLeLoglogStatement
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0057
+public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0005
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0174
 
 @[expose] public section
 
@@ -224,7 +224,7 @@ theorem primeSum_eOf : ∀ (F N k m M : ℕ) (Mb Sm : ℝ) (vd : ℕ → ℝ) (l
         have : (2:ℝ) ≤ q := by exact_mod_cast (mem_filter.1 hq).2.two_le
         have : (0:ℝ) < (q:ℝ) - 1 := by linarith
         positivity)
-      have h2 := GlobalTheory.T.sum_primes_inv_pred_le_loglog k hk3
+      have h2 := _root_.GlobalTheory.PrimeRecipSum.sum_inv_pred_le k hk3
       linarith
     · have : K = ∅ := by
         apply Finset.eq_empty_of_forall_notMem

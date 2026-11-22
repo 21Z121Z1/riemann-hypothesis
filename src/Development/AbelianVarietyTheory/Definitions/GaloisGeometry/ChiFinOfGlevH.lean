@@ -2,10 +2,10 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.MemberChainFormsLevelPrimeEqMember
-public import Formalism.LocalToGlobal.HermitianForms.DefsGH
-public import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.GlintPrincRelIndexNeZero
+public import Formalism.LocalToGlobal.HermitianForms.Bundle0003
+public import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Bundle0001
 public import Formalism.LocalToGlobal.GroupLattices.LevelCharts.FinIdx
-public import Formalism.LocalToGlobal.GroupLattices.ComparisonMaps.NatActRVtupR
+public import Formalism.LocalToGlobal.GroupLattices.ComparisonMaps.Bundle0003
 
 @[expose] public section
 

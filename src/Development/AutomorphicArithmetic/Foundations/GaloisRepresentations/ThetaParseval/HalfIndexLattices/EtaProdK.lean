@@ -2,7 +2,7 @@ module
 
 public import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.ThetaParseval.HalfIndexLattices.SplitStab
 public import Development.WeilBound.ThetaLifts.Reductions.WeilPairs.AutEtaC
-public import Development.WeilBound.ThetaLifts.Reductions.WeilPairs.LatRepBS
+public import Development.WeilBound.ThetaLifts.Reductions.WeilPairs.Bundle0004
 
 @[expose] public section
 

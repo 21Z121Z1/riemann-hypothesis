@@ -1,6 +1,6 @@
 module
 
-public import Development.WeilBound.RepresentationTheoryGL.ResidualSpectrum.SliceTensors.PIndMapD
+public import Development.WeilBound.RepresentationTheoryGL.ResidualSpectrum.SliceTensors.Bundle0014
 public import GroundTheory.PAdicHodge.ACrisBdR
 
 @[expose] public section

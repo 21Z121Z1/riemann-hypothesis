@@ -1,7 +1,7 @@
 module
 
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.PatchingModules.PatchedSupportCompletions
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.UltraDefs
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.Bundle0010
 public import Development.AbelianVarietyTheory.Proofs.CoherentCohomologyProofs.IsWeaklyRegularIffIsQuasiRegularSeqOfIsLocalRing
 
 @[expose] public section

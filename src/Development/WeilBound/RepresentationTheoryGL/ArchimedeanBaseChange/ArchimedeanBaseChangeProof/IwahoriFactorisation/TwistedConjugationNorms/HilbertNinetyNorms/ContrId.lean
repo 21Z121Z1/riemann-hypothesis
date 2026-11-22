@@ -1,12 +1,12 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Divisors.SimpleTwistedTraceFormulaStable
-public import Development.AbelianVarietyTheory.Definitions.Divisors.IsUnifAt
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0026
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0036
 public import Development.WeilBound.RepresentationTheoryGL.TwistedFactors.LocalBaseChange.ElementaryCosets.CosetMap
 public import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.IwahoriFactorisation.TwistedConjugationNorms.OneCoset
 public import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.IwahoriFactorisation.TwistedConjugationNorms.HilbertNinetyNorms.IwFacts
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.TwistedIwahoriFirstIdentityStatement
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0399
 
 @[expose] public section
 
@@ -73,7 +73,7 @@ private theorem mem_TO_of_mem_iwGL_inf_tor (w : Pl E) (n : ℕ) (κ : GLw n w)
 theorem contr_id_pf (w : Pl E) (ϖ : (w.adicCompletion E)ˣ) (hϖ : IsUnifAt ϖ) (n : ℕ) (y : Fin n → ℤ)
     (hy : StrictAnti y) (δ : GLw n w) (hδ : dcos n w (tdiag ϖ y) δ ≠ 0) :
     ∃ m ∈ iwGL n w, ∃ τ ∈ TO n w, m⁻¹ * δ * m = tdiag ϖ y * τ := by
-  obtain ⟨j, hj, κ, hκ, he⟩ := GlobalTheory.T.twisted_iwahori_first_identity n (iwGL n w) 1 1 (tdiag ϖ y) (iwahori_GL_trivial_admissible w n)
+  obtain ⟨j, hj, κ, hκ, he⟩ := _root_.GlobalTheory.CompanionTheory.Lbc.Contraction.e1 n (iwGL n w) 1 1 (tdiag ϖ y) (iwahori_GL_trivial_admissible w n)
     (goodT_id w ϖ hϖ n y hy) δ (mem_dcos_of_ne w n _ δ hδ)
   refine ⟨j⁻¹, inv_mem hj, κ, mem_TO_of_mem_iwGL_inf_tor w n κ hκ, ?_⟩
   simp only [inv_inv, MulAut.one_apply] at he ⊢

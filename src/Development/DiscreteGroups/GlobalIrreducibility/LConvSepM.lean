@@ -3,7 +3,7 @@ module
 public import Mathlib
 public import Development.DiscreteGroups.GlobalIrreducibility.LConvCut
 public import GroundTheory.AutomorphicForms.GLnLocal
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.AlgebraMapIntertwiningMapBijectiveOfIsSmooth
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0621
 
 @[expose] public section
 

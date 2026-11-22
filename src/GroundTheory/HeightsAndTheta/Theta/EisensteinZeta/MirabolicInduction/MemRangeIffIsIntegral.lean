@@ -1,11 +1,11 @@
 module
 
 public import Mathlib
-public import GroundTheory.AutomorphicForms.HermitianSpaces
+public import GroundTheory.AutomorphicForms.Bundle0006
 public import GroundTheory.HeightsAndTheta.Heights.HermitianLattice
-public import GroundTheory.AutomorphicForms.HermitianDisc
+public import GroundTheory.AutomorphicForms.Bundle0014
 public import GroundTheory.HeightsAndTheta.Theta.CMDatum
-public import GroundTheory.AutomorphicForms.AdelicUnitaryGroups
+public import GroundTheory.AutomorphicForms.Bundle0018
 public import GroundTheory.HeightsAndTheta.Theta.GaussianExample
 
 @[expose] public section

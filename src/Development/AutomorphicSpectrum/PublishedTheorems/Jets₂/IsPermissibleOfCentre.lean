@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.AdmissibleCoefficientsAnalytic
+public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.Bundle0009
 public import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.IsAdmOnOfFiniteDimensional
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.AdmissibleUnitaryKFinite
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0236
 
 @[expose] public section
 

@@ -1,7 +1,7 @@
 module
 
 public import Development.AutomorphicArithmetic.CharacterBoxes.Supply
-public import Development.AutomorphicArithmetic.CharacterBoxes.Imports
+public import Development.AutomorphicArithmetic.CharacterBoxes.Bundle0003
 public import Development.AutomorphicArithmetic.CharacterBoxes.HostOfField
 public import Development.AutomorphicArithmetic.CoprimeRanks.AdmChi
 

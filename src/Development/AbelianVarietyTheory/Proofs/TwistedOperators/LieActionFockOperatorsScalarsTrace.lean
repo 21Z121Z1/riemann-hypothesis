@@ -1,12 +1,12 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.IsVacFOfIsVacVec
+public import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.Bundle0002
 public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.MulNonsingInvCancelRightGram
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.CompactSubgroupsActOnFockVectorsAllSignaturesStatement
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.CompactSubgroupsActOnFockVectorsAllSignatures
 public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.MemSmoothFunctionsOfClosedRightDerivatives
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ContinuousOnAtTau
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.HasDerivAtPhiCol
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0171
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0275
 
 @[expose] public section
 
@@ -323,7 +323,7 @@ theorem der_add {θ : InfFam D} (hθ : IsInfFam θ) {U : HSp D} (𝒮 : Set (GA 
     (ha : HasDerivAt (fun t : ℝ => φ (oneP θ U τ X t)) a 0)
     (hb : HasDerivAt (fun t : ℝ => φ (oneP θ U τ Y t)) b 0)
     (hc' : HasDerivAt (fun t : ℝ => φ (oneP θ U τ (X + Y) t)) c 0) : c = a + b := by
-  have R := (GlobalTheory.T.adelicUnitary_realPoints_structure_realPlaces D).2 θ hθ U
+  have R := (_root_.GlobalTheory.SmoothForms.RealPts.realPoints D).2 θ hθ U
   have h1 := GlobalTheory.Mem.DerClosed.mem_smFun_of_closed D θ hθ U 𝒮 hc hd φ hφ
   have h2 : GlobalTheory.SmoothForms.Sm (GlobalTheory.SmoothForms.expInf θ U) φ :=
     (GlobalTheory.SmoothForms.isSmoothInf_iff φ).1 ((GlobalTheory.SmoothForms.smooth_iff R φ).1 h1)
@@ -369,7 +369,7 @@ theorem gen_path (hθ : IsInfFam θ) (hω : IsWeilDatumO ψ V W χS χT ω) (γ 
     γ h1 h2 h3 X h4
   have e := coe_toB hψ f hf
   have hF : IsThetaFunO ψ V W (toB hψ f hf).1 := e.symm ▸ hf
-  obtain ⟨x, d, -, hxd⟩ := GlobalTheory.T.exists_ccr_operators_thetaFunctions D θ σ h ψ hψ V W
+  obtain ⟨x, d, -, hxd⟩ := _root_.GlobalTheory.Mem.Lift.exists_isCCR_theta D θ σ h ψ hψ V W
   have hA : IsThetaFunO ψ V W (nOp (rhoV hψ σ V W) (HM V W) X (toB hψ f hf) + lam • toB hψ f hf).1 := by
     have h5 := ((∑ k, ∑ l, X k l • (x k * d l)) ⟨(toB hψ f hf).1, hF⟩).2
     rw [hxd X ⟨(toB hψ f hf).1, hF⟩ (toB hψ f hf) rfl] at h5
@@ -699,7 +699,7 @@ theorem lieFockAll : ∀ D : D7, GlobalTheory.ChainFr.LieFockAll D := by
       exact hasDerivAt_const _ _
   obtain ⟨κS, κT, hκ⟩ := GlobalTheory.LieFock.lieFockUpTo D V W A B θ ψ χS χT ω τ hθ hω
   obtain ⟨h1, h2⟩ := hκ f hf
-  obtain ⟨x, y, hx, hy, hc⟩ := GlobalTheory.T.compact_subgroups_act_on_fock_vectors_all_signatures D V W A B θ ψ χS χT ω f τ aS aT hθ hω hS hT hf h0
+  obtain ⟨x, y, hx, hy, hc⟩ := _root_.GlobalTheory.CompactFockAction.compactFockAll D V W A B θ ψ χS χT ω f τ aS aT hθ hω hS hT hf h0
   have hinj := ptF_injective hθ hψ A B hf h0
   have hth := (ptF_laws hθ hψ A B hf).1 τ
   have hFA : IsUnit (A.fr τ).det := (Matrix.isUnit_iff_isUnit_det _).1 (A.fr_unit τ)

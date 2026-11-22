@@ -1,6 +1,6 @@
 module
 
-public import Formalism.SharpRestriction.GrowthBounds.DiagonalSupport.SizeStepAlt
+public import Formalism.SharpRestriction.GrowthBounds.DiagonalSupport.Bundle0008
 
 @[expose] public section
 

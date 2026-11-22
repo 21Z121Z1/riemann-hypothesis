@@ -2,13 +2,14 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.Degenerations.AdmissibleBaseOfCompleteDvr
-public import Development.AbelianVarietyTheory.Definitions.Degenerations.HomExtSt
+public import Development.AbelianVarietyTheory.Definitions.Degenerations.Bundle0001
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.BCTools
-public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ThetaConstantEqSumThetaTermsOddMultiple
-public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ExistsUniqueThetaConst
+public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.Bundle0128
+public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.Bundle0073
 public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.UnivIdentity
 public import Development.AbelianVarietyTheory.Proofs.ThetaFamilyOrigin.IsThetaPtOverOfSubsingleton
-public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.NormalisingFactorStatement
+public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.Bundle0039
+public import Development.AbelianVarietyTheory.Definitions.Degenerations.SepticCharacterInjective
 
 @[expose] public section
 
@@ -238,7 +239,7 @@ theorem val_frame [IsNoetherianRing R] (hL : Laws) {k : ℕ} (hk : Odd k) {p : Q
   rw [c₂, hu, eq_inv_of_mul_eq_one_left b₂] at a₂
   rw [hb, cubN_map _ (sU y) (cubV_eq ν y), dbl_map _ (sU y) (cubV_eq ν y) (sym_eq ν y)] at a₁
   rw [hb, mulq_map _ (sU y) (cubV_eq ν y) (sym_eq ν y)] at a₂
-  rw [hu, ((GlobalTheory.T.wQ_characterization_and_mul_relation F N k hk q q).1 u).2 ⟨sU_inj y ?_, sU_inj y ?_⟩]
+  rw [hu, ((_root_.GlobalTheory.Ex.SymLift.normalising_factor F N k hk q q).1 u).2 ⟨sU_inj y ?_, sU_inj y ?_⟩]
   · rw [NumD.tk, map_mul, map_mul, map_pow, map_pow, a₁, _root_.mul_assoc, div_mul_cancel]
   · rw [map_mul, map_pow, ← a₂, inv_mul_cancel_right]
 

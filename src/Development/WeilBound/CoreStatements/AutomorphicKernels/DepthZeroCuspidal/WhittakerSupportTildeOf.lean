@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.DepthZeroCuspidalLL
-public import Development.WeilBound.CoreStatements.AutomorphicKernels.DepthZeroCuspidal.SuperDiagUSingle
+public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.Bundle0011
+public import Development.WeilBound.CoreStatements.AutomorphicKernels.DepthZeroCuspidal.Bundle0001
 
 @[expose] public section
 

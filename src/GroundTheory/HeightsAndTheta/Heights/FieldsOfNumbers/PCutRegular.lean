@@ -2,8 +2,8 @@ module
 
 public import Mathlib
 public import GroundTheory.HeightsAndTheta.Heights.FieldsOfNumbers.Statements
-public import GroundTheory.HeightsAndTheta.Heights.FieldsOfNumbers.PHilbExactDivide
-public import GroundTheory.HeightsAndTheta.Heights.FieldsOfNumbers.PIntNumAdd
+public import GroundTheory.HeightsAndTheta.Heights.FieldsOfNumbers.Bundle0006
+public import GroundTheory.HeightsAndTheta.Heights.FieldsOfNumbers.Bundle0003
 public import GroundTheory.ArithmeticGeometry.AbelianVarieties.JacobianSmoothness.RingKrullDimLeRingKrullDimQuotientAddOne
 
 @[expose] public section

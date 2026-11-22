@@ -1,8 +1,7 @@
 module
 
 public import Mathlib
-public import GroundTheory.AutomorphicForms.HarishChandraCentre.RepBase
-public import GroundTheory.AutomorphicForms.HarishChandraCentre.FischerForm
+public import GroundTheory.AutomorphicForms.HarishChandraCentre.Bundle0001
 
 @[expose] public section
 

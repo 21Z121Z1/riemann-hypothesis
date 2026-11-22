@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IsLocIsoRefl
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0444
 
 @[expose] public section
 

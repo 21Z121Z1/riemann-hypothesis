@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsBaryStageStart
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.EqZeroOfToRealRel
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0582
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0587
 
 @[expose] public section
 

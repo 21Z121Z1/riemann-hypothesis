@@ -1,6 +1,6 @@
 module
 
-public import Formalism.RankGapBounds.RandomSubsetCounterexample
+public import Formalism.RankGapBounds.Bundle0001
 
 @[expose] public section
 

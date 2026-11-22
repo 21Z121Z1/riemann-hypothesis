@@ -1,9 +1,8 @@
 module
 
-public import Development.AutomorphicArithmetic.Foundations.Convolution.SplitEigenfunctions.ThetaLiftEqAnisotropicPart
+public import Development.AutomorphicArithmetic.Foundations.Convolution.SplitEigenfunctions.Bundle0001
 public import Development.AutomorphicArithmetic.Foundations.Convolution.RealGroupAnalysis.ReductionDomains.ContinuousEntry
-public import Development.AutomorphicArithmetic.Foundations.Convolution.SplitEigenfunctions.DiagInvVal
-public import Development.AutomorphicArithmetic.Foundations.Convolution.SplitEigenfunctions.AbLower
+public import Development.AutomorphicArithmetic.Foundations.Convolution.SplitEigenfunctions.Bundle0002
 public import Development.AutomorphicArithmetic.Foundations.Convolution.SplitEigenfunctions.ContinuousPrN
 
 @[expose] public section

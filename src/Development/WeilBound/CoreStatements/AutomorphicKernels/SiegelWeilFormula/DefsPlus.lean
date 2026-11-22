@@ -1,6 +1,6 @@
 module
 
-public import Development.WeilBound.ThetaLifts.LatticeBasics.HypothesesS
+public import Development.WeilBound.ThetaLifts.LatticeBasics.Bundle0010
 
 @[expose] public section
 

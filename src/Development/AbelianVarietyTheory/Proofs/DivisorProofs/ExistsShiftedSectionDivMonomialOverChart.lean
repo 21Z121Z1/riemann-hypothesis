@@ -1,14 +1,13 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Divisors.HasDefect
-public import Development.AbelianVarietyTheory.Definitions.Divisors.RigidForFan
-public import Development.AbelianVarietyTheory.Definitions.Divisors.HasRigidChart
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0060
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0071
 public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.ToroidalCompactificationBis
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.DiscreteValuationRings.PhiGenPf
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.DiscreteValuationRings.PullGenPf
-public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.SecLinOfSecScal
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExponentFormsSymmOfIsUnitTauOnToricChartStatement
+public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.Bundle0020
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2917
 
 @[expose] public section
 

@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Development.WeilBound.RepresentationTheoryGL.RegularisedSiegelWeil.HermitianCellMeasures.CellDefs
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.EvFinSSOneNot
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.EqZeroOfComps
+public import Development.WeilBound.RepresentationTheoryGL.RegularisedSiegelWeil.HermitianCellMeasures.Bundle0001
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0533
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0531
 
 @[expose] public section
 

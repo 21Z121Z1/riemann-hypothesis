@@ -4,8 +4,8 @@ public import Mathlib
 public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SplitPlaceHeckeOperatorScalarOnSpherical
 public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.UnitaryFiniteAdelesSplitPlaceDecomposition
 public import Formalism.LocalToGlobal.GaloisLevelStructure.DefsLevel
-public import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.GlintPrincRelIndexNeZero
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.PinsCardIndexRanks
+public import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Bundle0001
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0260
 
 @[expose] public section
 

@@ -1,134 +1,132 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Divisors.OfCore
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ReadingsExistRow
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RingHomEqOnAdjoinSimple
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsEtaConjUnique
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.HeckeCharEqOneOfTrivialFinitePartOne
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EqOfConjOnFinite
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsGalConjEta
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EtaAtOfIsEtaConj
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsPsiOfOverK
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0030
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0970
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1010
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0961
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0293
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0985
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0989
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0945
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0992
 public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsUnramifiedHeckeCharHalfExponentRestrictQua
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.HeckeCharFiniteOrderOfTrivialAtInfinity
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0103
 public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ResFinEqOneOfAway
-public import Formalism.LocalToGlobal.UnitaryNorms.CharUniq
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ResEtaHasInfExpOfIsEtaConj
-public import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.ThetaAdjointScalarParts
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CircleEqOneIffOfConj
-public import Formalism.LocalToGlobal.IndefiniteReal.FWTie
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.FibExtMarked
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaPairCharactersAtLevel
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaActionDeterminantRoot
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FrAtEmb
+public import Formalism.LocalToGlobal.UnitaryNorms.Bundle0005
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1045
+public import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.Bundle0012
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0979
+public import Formalism.LocalToGlobal.IndefiniteReal.Bundle0025
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0200
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1016
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1359
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0998
 public import Development.AbelianVarietyTheory.Definitions.Divisors.MarkAd
-public import Development.AbelianVarietyTheory.Definitions.Divisors.IsSmoothVector
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.OmegaFormIntegrality
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HolShapeOfOverK
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EmbeddingConjugateOscillatorFirst
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsSelfDualCHLat
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IsSelfDualCoordLatticeOfSelfDualFrame
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.OmegaFormGaloisEquivariance
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0033
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0217
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1207
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1379
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0923
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0135
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0284
 public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.OmegaFormScalarExtension
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ThetaFockVacuumProperties
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaVectorFockVacuum
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0436
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PureTensorOInjective
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaLiftUniqueUpToUnit
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.FockPolynomialVectorMaximalCompactBasisSubstitut
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConjugateWeilRepresentationSixth
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaVectorTorusAction
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0216
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1662
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1361
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CoefficientConjugateThetaForm
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.WeilMaximalCompactFockSubstitutionCharacterStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExtensionOfLowSmoothLines
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExtremalVectorsHolomorphicModelUniqueUpToPhaseStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConjugateWeilRepresentationFifth
-public import Development.AbelianVarietyTheory.Definitions.Divisors.GenReads
-public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.ThExprUniqOfChartIndep2
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IsFockVacAtOfIsThetaAt
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0347
+public import Formalism.LocalToGlobal.IndefiniteReal.Bundle0023
+public import Formalism.LocalRingCardinality.Bundle0007
+public import Formalism.LocalRingCardinality.Bundle0003
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0175
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1649
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1202
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0034
+public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0007
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0142
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.OscillatorModelExtensionFirst
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.RelabelEmbeddingsGoodBijectiveConjCompat
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EmbeddingConjugateOscillatorEighth
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.OmegaFormRationality
-public import Formalism.LocalToGlobal.ProjectiveLattices.FnDefC
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EmbeddingConjugateOscillatorNinth
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0030
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1664
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0444
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0043
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1683
 public import Formalism.LocalToGlobal.IndefiniteReal.FWExist
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MulVecMemLatGHat
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0966
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DetReducedBlockEqResidueDet
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.OmegaFormNonvanishing
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0421
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ActLevMemCuspA
 public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsHalfOfBasePins
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.OmegaFormHeckeEigen
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.WeilVacuumFiniteSelfDualLatticeSplittingStatement
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.WeilActionLiftPairStepVectorInvLevelChar
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0428
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.WeilVacuumFiniteSelfDualLatticeSplitting
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0475
 public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.WeilLatticeVacuumStabilizerSplittingCharacters
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConjugateWeilRepresentationSecond
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.OscillatorModelValuesFourth
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConjugateWeilRepresentationThird
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1673
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1681
 public import Formalism.LocalToGlobal.Columns.CoefficientsModP.FkPderivBlockEmbNe
-public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.TensorMapDescent
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsReframeVStdOfPosDef
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CoefMapNormEquivariantBasis
-public import Development.AbelianVarietyTheory.Counterexamples.LevelGroupExamples.ZeroNotAdmissibleOfRankPos
-public import Development.AbelianVarietyTheory.Counterexamples.LevelGroupExamples.TransformIndicator
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.GramMapMulInv
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.SelfDualVectorPairsIntegralFrameColumns
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ConjPrincipalFractionalIntegralIdempotentSum
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.InverseSelfDualFrameStandardSpaceIntegral
+public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0053
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0300
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0981
+public import Development.AbelianVarietyTheory.Counterexamples.LevelGroupExamples.Bundle0002
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0198
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0208
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0202
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0206
 public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.DcOpCommOfCommute
-public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.ExistsDualFamilySelfDualHermitianSpace
-public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.StdCharFinitePartRationalEqExpTrace
+public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.Bundle0059
+public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.Bundle0062
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LatticeIsometrySignFirst
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IsUnramifiedEtaTildeOfOddExponentSum
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IsUnramifiedAtPlaceIdempotentOfHeckeCharUnramifi
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.LevelCharactersUnramifiedOffLevelPlaces
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.HeckeCharacterInfinityExponentGroupLaws
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0163
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0164
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0166
 public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.SplitOffBadOfSuppSplitOff
 public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.IntValuationEqOfMem
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.IdentityClassLatticeEqSelfDualFrameLattice
 public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.IsSelfDualCLatFrame
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LevelPointSmulIntegralOfFourierCoeffNeZeroStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.OneSubIdempotentSmulMemLatticeStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IdempotentSumConjSumOrthogonalDvdStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FiniteAdelicMatrixMemLatticeOfColumnsStatement
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1037
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1610
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1581
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0995
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GenMapTranspose
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FinPartConjMem
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0831
 public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.SelfDualLatticePairingDual
-public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.SmulMemLatO
+public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.Bundle0058
 public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IdempotentMulEqZeroOfOrthogonal
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LatticeIsometrySignSecond
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LevelPointSmulIntegralOfFourierCoeffNeZero
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1004
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FinTensAlgebraMap
-public import Development.AbelianVarietyTheory.Definitions.Divisors.ConstantUniqueOfEqProduct
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.OmegaFormSignExists
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SignForWeilModelFamily
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MemSpanDetSetIffAdelicLatticeValuationStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsNumeratorIdealOfAntiInvariantDivisorStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IdelicCharacterEqProdUnramifiedValueZpowStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PlaceIdempotentComponentsConjValuationStatement
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0434
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1674
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0767
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0026
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0763
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0833
+public import Formalism.LocalToGlobal.IndefiniteReal.LinksDefs
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0027
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0799
 public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.SupportedSubgroupSplitCommutePrimeIdempotents
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsBaseChangeFiniteAdeleRingEquiv
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0288
 public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsFinitePlaceIdempotentBaseChangeAdeles
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.HeckeCharEqProdLocalComponentsApproximating
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.NotIsOfFinOrderUnitQuot
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0064
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.OscillatorModelValuesThird
-public import Formalism.LocalToGlobal.BesselHermitianTheta.LemmasWeil
-public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.FgOfSmulLe
-public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.FiniteAdelicLatticeTransportLaws
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.OmegaFormPeriodRelation
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.AbsNormSqOfMulConjEqDifferentIdeal
+public import Formalism.LocalToGlobal.BesselHermitianTheta.Bundle0003
+public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.Bundle0032
+public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.Bundle0046
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0414
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0001
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EmbeddingConjugateOscillatorSixth
 public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.OmegaFormSignIndependent
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.OneMapTypingsEquiv
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CoprimeScalarForEmbedding
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CoprimeScalarCentralElement
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsThetaFunOOfIsVacO
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.LatticeMarkingAdmissible
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CoreDictionaryGoodAtGoodEmbedding
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HolomorphicShapeIntegralWeightGoodEmbedding
-public import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.ActLevAndActBC
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MarkingRootsDilationCoprimeLevelStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.OscillatorModelsWeightCompat
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0429
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1376
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1620
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0451
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0273
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0958
+public import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.Bundle0074
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1040
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1716
 
 @[expose] public section
 
@@ -688,7 +686,7 @@ theorem deltaConj_extremal_weight_ofFive : ∀ {D : D7} {G : Type} [Group G] [Fi
       simp [θs, e]
   have e1 : ∀ ρ, (R.BV i ρ)⁻¹ * compAt R.θ ρ (Formalism.L2.Theta.mt (Vc D i) 1) * R.BV i ρ = 1 := fun ρ => by
     rw [show compAt R.θ ρ (Formalism.L2.Theta.mt (Vc D i) 1) = 1 from GlobalTheory.PointAtPlaceHom.infMat_one _ _, Matrix.mul_one, hBi]
-  have key := (GlobalTheory.T.weil_maximalCompact_fock_substitution_character D R.ψ R.θ _ _ _ _ _ _ M (R.BV i) hω hθ (D.sp.V_sig _) (D.sp.W_sig _) hB _ _ hpq hε
+  have key := (_root_.GlobalTheory.FockCompactAction.om_pureTensorO_eq_fact D R.ψ R.θ _ _ _ _ _ _ M (R.BV i) hω hθ (D.sp.V_sig _) (D.sp.W_sig _) hB _ _ hpq hε
     _ _ ha hb x₁ x₂ x₃ hx₁ hx₂ hx₃ _ hth hv 1 (one_mem _) g a1 (fun ρ => hg ρ ▸ diag_mem _)).2
     (delta (pW D i) (qW D i) (fun ρ => aPl D i (pW D i ρ) (lab σ ρ)) (fun ρ => aMi D i (pW D i ρ) (qW D i ρ) (lab σ ρ)))
   simp only [hg, e1] at key
@@ -734,7 +732,7 @@ theorem ioExt_conj_ofFive : ∀ {D : D7} {G : Type} [Group G] [Fintype G] {Pl0 T
   have hvec := GlobalTheory.GalOne.VecConj.vec_conj_ofFive R F hR i σ μ' η' ω f₀ f hC
   have hinj := hvec.2.2.2.1 _ hvec.2.2.1
   let pt := pureTensorO R.ψ R.θ (Vc D i) (Wc D i) (fun _ => 1) (cart (R.MW i σ)) (R.BV i) (onb (R.MW i σ)) f
-  exact exists_unit_of_isIoW R.θ (R.MW i σ) (GlobalTheory.HolLowOnce.lowSm_and_lowIrr D _ _ _ hH).1 (GlobalTheory.T.extremal_vectors_holomorphic_model_unique_up_to_phase D _ _ _ hH) c ω pt
+  exact exists_unit_of_isIoW R.θ (R.MW i σ) (GlobalTheory.HolLowOnce.lowSm_and_lowIrr D _ _ _ hH).1 (_root_.GlobalTheory.HolLowOnce.extLine_of_holShape D _ _ _ hH) c ω pt
     (deltaConj i σ) (fun h => deltaConj_ne i σ (hinj (h.trans (map_zero pt).symm)))
     (GlobalTheory.GalOne.MinorWeight.deltaConj_extremal_weight_ofFive R F hR i σ μ' η' ω f₀ f hC) io hio v hv
 
@@ -1289,7 +1287,7 @@ theorem eqAt_of_frAtEmb_ofFive : ∀ {D : D7} {G : Type} [Group G] [Fintype G] {
     simp
   have hi : (1 : Af D.host.F ⊗[D.host.F] D.host.E) ∈ intAE D :=
     AddSubgroup.subset_closure ⟨1, fun v => one_mem _, 1, rfl⟩
-  have hvac := GlobalTheory.T.weil_vacuum_finite_selfDualLattice_splitting D (Vc D i) (Wc D i) R.ψ R.θ p1.2.1 (D.sp.V_sig _) (D.sp.W_sig _) _ _ _ ho ⟨_, c1⟩ c4
+  have hvac := _root_.GlobalTheory.FinVac.om_vacuum_finite D (Vc D i) (Wc D i) R.ψ R.θ p1.2.1 (D.sp.V_sig _) (D.sp.W_sig _) _ _ _ ho ⟨_, c1⟩ c4
     (fun _ => 1) (cart (R.MW i σ))
     (fun τ => ⟨Matrix.mul_one _, by simp, by
       have : gramAt D (Vc D i) τ = 1 := by
@@ -1359,8 +1357,8 @@ theorem omega_level_conjVec_ofFive : ∀ {D : D7} {G : Type} [Group G] [Fintype 
   have hmu : ∀ x, R.toLevCh.mu A.μ0 ((i : ℕ) + 1) x = R.mu0 ((i : ℕ) + 1) x := fun x => by
     show R.mu0 ((i : ℕ) + 1) x * R.xi A.μ0 x = _
     rw [hxi, MonoidHom.one_apply, mul_one]
-  refine (om_vec hW ⟨_, hη⟩ (GlobalTheory.T.isSelfDualCoordLattice_of_selfDualFrame D _ _ _ _ (hL.βV i))
-    (GlobalTheory.T.isSelfDualCoordLattice_of_selfDualFrame D _ _ _ _ (hL.βW i)) (hL.βV i).choose_spec.1 (hL.βW i).choose_spec.1 hv).elim fun P h1 =>
+  refine (om_vec hW ⟨_, hη⟩ (_root_.GlobalTheory.SDFrameLattice.isSelfDualC_of_isSDFrame D _ _ _ _ (hL.βV i))
+    (_root_.GlobalTheory.SDFrameLattice.isSelfDualC_of_isSDFrame D _ _ _ _ (hL.βW i)) (hL.βV i).choose_spec.1 (hL.βW i).choose_spec.1 hv).elim fun P h1 =>
       h1.elim fun e h2 => h2.elim fun hee h3 => ?_
   have he := h3.2.1
   have hP : ∀ PP, PP ∈ P ↔ PP ∈ R.toLevCh.Pg ∨ PP ∈ R.toLevCh.Q A.μ0 := fun PP => by
@@ -2321,7 +2319,7 @@ theorem zak_class_term_conj_ofFive : ∀ {D : D7} {G : Type} [Group G] [Fintype 
   obtain ⟨-, -, ⟨c, hc, -, hc'⟩, ⟨-, hN, hN'⟩, -⟩ := (hP.reps ()).1 k
   replace hN' := hN'.trans inf_le_left
   rw [Formalism.L2.Pj.stdLat, FactsLat.pi_eq_stdL] at hc' hN'
-  have hE := GlobalTheory.T.splitFinitePoint_moves_vacuum_to_projection D _ _ _ g _ _ _ X eT bas idx hS (D.sp.V_sig _) (D.sp.W_sig _) _ _ _ hom _ hw hw' hw2 _ hZ LT L
+  have hE := _root_.GlobalTheory.OneMapRef.SplitProj.zak_om_split D _ _ _ g _ _ _ X eT bas idx hS (D.sp.V_sig _) (D.sp.W_sig _) _ _ _ hom _ hw hw' hw2 _ hZ LT L
     hLT1 hL (hLG ▸ hLT2) e P he (h k) hfin hs x hx _ hΛ hmv v hv a _ hz
   refine ⟨Const.isSB_gphi idx hS.2.2.2.2.2.2.2 hS.2.2.2.1 hw hw' hL hΛ hv.1 _ _, ?_⟩
   obtain ⟨Y₀, hY₀⟩ := DualMark.exists_roots (L := LinearMap.range (T.iota ((i : ℕ) + 1))) (O.dδ ()).l₂
@@ -2585,7 +2583,7 @@ theorem adelic_value_ofFive (hR : GlobalTheory.Core5 R F) (tie : FWTie T R κ v�
   have h9 : gphi X Dc.bas (T.Q.H.w0 : D.host.E) (O.La () j).La X.Λ v (fun q => σ' (O.w () j q)) (fun q => Y j (m • q)) =
       gphi X Dc.bas (T.Q.H.w0 : D.host.E) (O.La () j).La X.Λ v (fun q => inC O.c' (O.w () j q)) (Y j) := by
     rw [funext (hw j)]
-    exact ((GlobalTheory.T.marking_roots_dilation_coprime_level _ _ _ (O.dδ ()).l₂ _ _ X.Λ mk₂ m hm).2 0 (Y j)).2 g X Dc.bas _ _ v
+    exact ((_root_.GlobalTheory.DilateLevel.dilate _ _ _ (O.dδ ()).l₂ _ _ X.Λ mk₂ m hm).2 0 (Y j)).2 g X Dc.bas _ _ v
       fun q => inC O.c' (O.w () j q)
   rw [hQ, h9]
   simp only [map_mul] at h7 ⊢
@@ -2625,15 +2623,15 @@ theorem geometric_value_ofFive (hR : GlobalTheory.Core5 R F) (tie : FWTie T R κ
   have hj : InR D ((i : ℕ) + 1) := ⟨Nat.le_add_left _ _, i.2⟩
   obtain ⟨hlev, hA₂, hnab⟩ := hP.cov ()
   obtain ⟨him, -, hov, -⟩ := (markAd_laws D _ _ _ _ (rank_Wc i) _ hemb _ _ hlat T.Q.l).2 mk hmk hma
-  have him₂ := (GlobalTheory.T.marking_roots_dilation_coprime_level _ _ _ _ _ 0 _ _ n hn₂).1
+  have him₂ := (_root_.GlobalTheory.DilateLevel.dilate _ _ _ _ _ 0 _ _ n hn₂).1
     ((markAd_laws D _ _ _ _ (rank_Wc i) _ hemb _ _ hlat (O.dδ ()).l₂).2 mk₂ hmk₂ hma₂).1
-  have him₁ := (GlobalTheory.T.marking_roots_dilation_coprime_level _ _ _ _ _ 0 _ _ n hn₁).1 him
+  have him₁ := (_root_.GlobalTheory.DilateLevel.dilate _ _ _ _ _ 0 _ _ n hn₁).1 him
   have hov' := markOver_zsmul (hov _ hlev.1.1 (Ideal.map_mono hlev.1.2.1) mk₂ hmk₂ hma₂) n
   obtain ⟨y', hy', hev⟩ : ∃ y' : FrPt (T.Q.Xo ((i : ℕ) + 1)) O.c' ℂ, levR (O.lev z, LinearMap.id) y y' ∧
       evR _ O.c' (actLev O.c' O.lev2 z f) y = evR _ O.c' f y' :=
     ⟨_, mvPt_spec hP.act.2.total z _,
       evalAt_actL hP.act.2 (GlobalTheory.TransferCompare.evalWD_framed _ _) frMap_trans_id z hf.1 _⟩
-  obtain ⟨A', hrd', hmk''⟩ := GlobalTheory.T.analyticFibre_description_levelMove_marking_comp _ _ _ _ _ O.c' _ _ _ Dc.bas Dc.idx Dc.e _ _ Dc.sympl hdom hsd (O.lev z) _ y' hy' B
+  obtain ⟨A', hrd', hmk''⟩ := _root_.GlobalTheory.Dict.FibreMove.anFib_levR_id _ _ _ _ _ O.c' _ _ _ Dc.bas Dc.idx Dc.e _ _ Dc.sympl hdom hsd (O.lev z) _ y' hy' B
   have hA' : A'.Marked (n • mk) :=
     marked_of_congr A' (hmk'' mk hB) fun a ha => by
       obtain ⟨b, hb⟩ := hzl a ha
@@ -2714,7 +2712,7 @@ theorem identity_of_frConst_ofFive (hR : GlobalTheory.Core5 R F) (tie : FWTie T 
   have h8 := fun k => (DualMark.dual_marking _ _ _ (O.dδ ()).l₂ _ _ _ _ _ hsd (isMark_sign (h7.2 mk₂ hmk₂.1 hmk₂.2).1 ε)
     (Complex.isPrimitiveRoot_exp _ hM₂.ne')).2.2.2.2 (Vc D i).rank (O.Nc () k) ((hP.reps ()).1 k).2.2.2.1.1.pos
   have hY := fun k => (h8 k).choose_spec
-  have hY' := fun k => ((GlobalTheory.T.marking_roots_dilation_coprime_level _ _ _ (O.dδ ()).l₂ _ _ _ ((ε : ℤ) • mk₂) m hm.1).2 _ _).1
+  have hY' := fun k => ((_root_.GlobalTheory.DilateLevel.dilate _ _ _ (O.dδ ()).l₂ _ _ _ ((ε : ℤ) • mk₂) m hm.1).2 _ _).1
     (fun a => zsmul_mem (hmk₂.1 a) _) (hY k)
   simp only [smul_smul] at hY'
   have hAo : AlgOver T.Q.c O.c' O.hle ℂ := fun _ => rfl

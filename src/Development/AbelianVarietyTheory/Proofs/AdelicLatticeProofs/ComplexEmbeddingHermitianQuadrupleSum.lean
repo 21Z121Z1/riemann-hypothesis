@@ -1,16 +1,13 @@
 module
 
 public import Mathlib
-public import Formalism.LocalToGlobal.IndefiniteReal.DatumVec
-public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.ExistsInverseChart
-public import Development.AbelianVarietyTheory.Proofs.HeightProofs.HeisenbergDirectionalDerivFormulaAndSmooth
-public import Development.AbelianVarietyTheory.Proofs.HeightProofs.SymplecticValTauCompat
-public import Development.AbelianVarietyTheory.Proofs.HeightProofs.SymplecticRealPartVanish
-public import Development.AbelianVarietyTheory.Proofs.HeightProofs.RealAdeleExtAndStandardCharacterFormula
-public import Development.AbelianVarietyTheory.Proofs.HeightProofs.SmoothIffRealCoordinatesAndRealLines
-public import Development.AbelianVarietyTheory.Proofs.HeightProofs.ContinuousOfHeisenbergLevelAndSmooth
-public import Development.AbelianVarietyTheory.Proofs.HeightProofs.CocompactTensor
-public import Development.AbelianVarietyTheory.Proofs.HeightProofs.MeanSquareAddFundamentalDomainOfCocompact
+public import Formalism.LocalToGlobal.IndefiniteReal.Bundle0016
+public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.Bundle0057
+public import Development.AbelianVarietyTheory.Proofs.HeightProofs.Bundle0024
+public import Development.AbelianVarietyTheory.Proofs.HeightProofs.Bundle0025
+public import Development.AbelianVarietyTheory.Proofs.HeightProofs.Bundle0021
+public import Development.AbelianVarietyTheory.Proofs.HeightProofs.Bundle0029
+public import Development.AbelianVarietyTheory.Proofs.HeightProofs.Bundle0003
 
 @[expose] public section
 

@@ -2,8 +2,8 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.AndLeft
-public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.EFirstGeOfULastNonpos
-public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.BaseSignsOfVal
+public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0136
+public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0159
 
 @[expose] public section
 

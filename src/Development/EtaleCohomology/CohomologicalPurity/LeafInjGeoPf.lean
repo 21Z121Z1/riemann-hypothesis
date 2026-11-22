@@ -1,6 +1,6 @@
 module
 
-public import Development.EtaleCohomology.CohomologicalPurity.LeafExcSheafCut
+public import Development.EtaleCohomology.CohomologicalPurity.Bundle0005
 
 @[expose] public section
 

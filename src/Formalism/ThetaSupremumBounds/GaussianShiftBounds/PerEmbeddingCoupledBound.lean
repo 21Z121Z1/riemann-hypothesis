@@ -1,9 +1,8 @@
 module
 
 public import Mathlib
-public import Formalism.ThetaSupremumBounds.StatementCB
-public import Formalism.ThetaSupremumBounds.LiftOperatorBoundOfFockJet
-public import Formalism.QuotientMetricDivisors.HermitianTwistDivisors.TheoremDivIneq
+public import Formalism.ThetaSupremumBounds.Bundle0001
+public import Formalism.QuotientMetricDivisors.HermitianTwistDivisors.Bundle0004
 public import Formalism.ThetaSupremumBounds.DivIneqExplicit6
 public import Formalism.QuotientMetricDivisors.HermitianTwistDivisors.DescendedNorm
 

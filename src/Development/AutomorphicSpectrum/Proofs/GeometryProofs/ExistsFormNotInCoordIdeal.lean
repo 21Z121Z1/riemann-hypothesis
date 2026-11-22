@@ -1,12 +1,12 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.IsPullWedge
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0066
 public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.MemOfAevalEqZero
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.RegAtIsLocalRingIsFractionRingStalk
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ProdUpdateDiv
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.OneArc
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.AbProj
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0014
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0035
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.Bundle0007
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.Bundle0006
 
 @[expose] public section
 

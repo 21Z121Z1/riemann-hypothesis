@@ -1,10 +1,10 @@
 module
 
 public import Development.WeilBound.HeckeVectors.SmoothVectors.SobolevApproximation.SobApproxHolds
-public import Formalism.LocalToGlobal.IndefiniteReal.SmExpSmulContDiff
-public import Formalism.LocalToGlobal.SiegelLatticeTheory.CasimirReductionTheory.OneParameterDerivatives.AdmissibleCasimirScalars.CasScalar
+public import Formalism.LocalToGlobal.IndefiniteReal.Bundle0022
+public import Formalism.LocalToGlobal.SiegelLatticeTheory.CasimirReductionTheory.OneParameterDerivatives.AdmissibleCasimirScalars.Bundle0001
 public import CompanionTheory.AutomorphicTheory.HarishChandraMultiplicity.HCMult
-public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.AnalyticVectors.Unitary
+public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.AnalyticVectors.Bundle0002
 public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.DiscreteSeriesExistence.Smooth
 
 @[expose] public section

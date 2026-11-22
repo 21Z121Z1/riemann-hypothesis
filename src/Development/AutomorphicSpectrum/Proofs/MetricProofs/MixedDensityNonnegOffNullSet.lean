@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import ReciprocityTheory.AnalyticForms.LeviForms.ConvExpandStatement
-public import Development.AutomorphicSpectrum.Proofs.MetricProofs.LocDensAddOfFunContinuousOn
+public import Development.AutomorphicSpectrum.Proofs.MetricProofs.Bundle0083
 
 @[expose] public section
 

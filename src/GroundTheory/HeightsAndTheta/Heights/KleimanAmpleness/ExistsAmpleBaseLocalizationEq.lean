@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.ImportsLastRest
+public import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.Bundle0043
 public import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.ExistsSumEqOneOfMulEqOne
-public import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.PGraphClosedLocal
+public import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.Bundle0019
 public import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.PAmpleAffineGen
 
 @[expose] public section

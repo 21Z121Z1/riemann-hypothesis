@@ -1,10 +1,10 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsIsLieBase
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.EigenFrameBasePointLiftsUniqueFlagSpace
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.CarriesFlagsIffAdaptedFrameAtImageStatement
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.SpecMapFieldCancel
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0579
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0552
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0535
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0548
 
 @[expose] public section
 
@@ -156,10 +156,10 @@ theorem coord_iff_of_hom (hπ : C.π = f ≫ j) (hT : Tied e B j f₀ S A₀) (h
 
   have c1 : fA.Coord ((algebraMap _ C.Y.X.functionField).comp (f.stalkMap (p (IsLocalRing.closedPoint K))).hom) C.f0
       ((A₁ * A'⁻¹) * G.map (algebraMap _ C.Y.X.functionField)) :=
-    GlobalTheory.T.lie_eigenspace_frame_coordinates_comp E H Dw l Xo c O β Z _ _ _ fA _ _ _ f₁ _ _ _ C.f0 _ _ _ _ inferInstance hG hf₁
+    _root_.GlobalTheory.ShFam.CoordComp.coord_comp E H Dw l Xo c O β Z _ _ _ fA _ _ _ f₁ _ _ _ C.f0 _ _ _ _ inferInstance hG hf₁
   have c2 : fA.Coord ((φ : B.Fn →+* C.Y.Fn).comp (algebraMap _ B.X.functionField)) C.f0
       ((A₁ * (A₀.map (φ : B.Fn →+* C.Y.Fn))⁻¹) * (A₀ * A⁻¹).map (φ : B.Fn →+* C.Y.Fn)) :=
-    GlobalTheory.T.lie_eigenspace_frame_coordinates_comp E H Dw l Xo c O β Z _ _ _ fA _ _ _ f₀ _ _ _ C.f0 _ _ _ _ inferInstance hfA hC
+    _root_.GlobalTheory.ShFam.CoordComp.coord_comp E H Dw l Xo c O β Z _ _ _ fA _ _ _ f₀ _ _ _ C.f0 _ _ _ _ inferInstance hfA hC
   have hcomp : (algebraMap _ C.Y.X.functionField).comp (f.stalkMap (p (IsLocalRing.closedPoint K))).hom =
       (φ : B.Fn →+* C.Y.Fn).comp (algebraMap _ B.X.functionField) :=
     RingHom.ext fun a => (map_algebraMap_stalk hφ (p (IsLocalRing.closedPoint K)) a).symm
@@ -198,7 +198,7 @@ theorem coord_iff_of_hom (hπ : C.π = f ≫ j) (hT : Tied e B j f₀ S A₀) (h
     exact ((hGdet τ).map _).ne_zero
   have fwd : ∀ h', f₁.Coord (Scheme.stalkClosedPointTo (R := .of K) p).hom g h' →
       h = h' * G.map (Scheme.stalkClosedPointTo (R := .of K) p).hom := fun h' hh' => by
-    have c3 := GlobalTheory.T.lie_eigenspace_frame_coordinates_comp E H Dw l Xo c O β Z _ _ _ fA _ _ _ f₁ _ _ _ g _ _ _ _ inferInstance hG hh'
+    have c3 := _root_.GlobalTheory.ShFam.CoordComp.coord_comp E H Dw l Xo c O β Z _ _ _ fA _ _ _ f₁ _ _ _ g _ _ _ _ inferInstance hG hh'
     rw [← hxK] at c3
     exact ((GlobalTheory.T.lie_eigenspace_frame_coordinates_unique_invertible E H Dw l Xo c O β Z _ φA _ fA _ χ _ _ inferInstance hSA hh.1 hh.2.1).1 g).1.unique hh c3
   have hx₁ : x = spMap (Scheme.stalkClosedPointTo (R := .of K) p).hom ≫

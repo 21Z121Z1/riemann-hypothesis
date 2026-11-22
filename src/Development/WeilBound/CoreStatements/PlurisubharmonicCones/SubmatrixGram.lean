@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import GroundTheory.HeightsAndTheta.Heights.ElementarySymmetric.PGramDetSandwich
-public import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.LoewnerDetBound
+public import GroundTheory.HeightsAndTheta.Heights.ElementarySymmetric.Bundle0004
+public import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.Bundle0001
 public import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.FrameDefinitions.IsFrameOverLine
 
 @[expose] public section

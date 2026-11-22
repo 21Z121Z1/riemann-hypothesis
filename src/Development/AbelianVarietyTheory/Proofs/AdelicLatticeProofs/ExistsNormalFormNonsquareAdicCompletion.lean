@@ -1,12 +1,11 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.AdelicHermitianForms.SqSubLeNormSub
-public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.IsSquareOfValuedSubOneLt
-public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.ExistsGlobalUniformizerResidueRepresentativesStatement
-public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.ExistsSubSqLtOneOfTwoLtOne
-public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.EvenOrderNormsOneAddFourMulOfNoRootStatement
-public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.ExistsUnitMulSqQuadraticDefectStep
+public import Development.AbelianVarietyTheory.Definitions.AdelicHermitianForms.Bundle0001
+public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.Bundle0004
+public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.Bundle0021
+public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.Bundle0010
+public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.Bundle0007
 
 @[expose] public section
 
@@ -42,7 +41,7 @@ theorem evenNorms_of_le_four (h2 : (2 : K) ≠ 0)
   have hδρ : δ = 1 + 4 * ρ := by rw [hρ]; field_simp; ring
   have hρ1 : w ρ ≤ 1 := by rw [hρ, map_div₀]; exact div_le_one_of_le₀ h zero_le'
   rw [hδρ]
-  refine GlobalTheory.T.evenOrderNorms_one_add_four_mul_of_no_root K w ρ h2 hρ1 fun x hx => ?_
+  refine _root_.GlobalTheory.QNorm.evenNorms_one_add_four_mul K w ρ h2 hρ1 fun x hx => ?_
   have hle : w (x ^ 2 + x - ρ) ≤ 1 := by
     refine w.map_sub_le (w.map_add_le ?_ hx) hρ1
     rw [map_pow]; exact pow_le_one₀ zero_le' hx

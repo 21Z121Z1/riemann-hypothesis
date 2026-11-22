@@ -1,8 +1,8 @@
 module
 
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.WeakShimuraTheory.UnipotentIdempotents.TCont
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.LevelCohomology.SoAdicCont
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.FrobeniusSmoothVectors.ScNorm
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.LevelCohomology.Bundle0004
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.FrobeniusSmoothVectors.Bundle0033
 
 @[expose] public section
 

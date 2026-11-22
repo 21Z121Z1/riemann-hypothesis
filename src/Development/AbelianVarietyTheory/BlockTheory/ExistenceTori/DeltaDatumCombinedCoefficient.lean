@@ -3,7 +3,7 @@ module
 public import Mathlib
 public import Development.AbelianVarietyTheory.BlockTheory.ExistenceTori.LevelIndexFourierCharacter
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.IsHolPeriods
-public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.NsmulMemSmulTop
+public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0029
 
 @[expose] public section
 

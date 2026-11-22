@@ -1,8 +1,8 @@
 module
 
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.ValCalc
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.DiscreteValuationRings.LBLocal
-public import Formalism.LocalToGlobal.ProjectiveLattices.SubConstMemOrig
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.DiscreteValuationRings.Bundle0002
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0004
 
 @[expose] public section
 

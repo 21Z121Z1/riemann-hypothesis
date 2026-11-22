@@ -1,7 +1,7 @@
 module
 
-public import Development.WeilBound.ThetaLifts.LeviDeterminants.GrowDef
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ModerateGrowthOfHasCompactSupport
+public import Development.WeilBound.ThetaLifts.LeviDeterminants.Bundle0002
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0298
 
 @[expose] public section
 

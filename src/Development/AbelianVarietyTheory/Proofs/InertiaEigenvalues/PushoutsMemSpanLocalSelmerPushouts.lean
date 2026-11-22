@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.LocMulVec
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0516
 public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SplitOfClosure
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.PotentiallyCrystallineModuleEqCrystallineRestric
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0241
 
 @[expose] public section
 

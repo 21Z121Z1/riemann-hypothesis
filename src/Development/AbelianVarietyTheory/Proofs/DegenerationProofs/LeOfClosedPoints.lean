@@ -7,20 +7,20 @@ public import Development.AbelianVarietyTheory.Definitions.Degenerations.Compani
 public import Development.AbelianVarietyTheory.Statements.SemistableTorsion.UTorsSt
 public import Development.AbelianVarietyTheory.Definitions.ThetaMetrics.MemNonzeroLocusIffPowFn
 public import Development.AbelianVarietyTheory.Proofs.CovolumeBounds.IsProjOverMorphismRestrictOfRelAmple
-public import Development.AbelianVarietyTheory.Proofs.HomogeneousIdeals.IsReducedAlgebraOfSmoothOfIsNoetherianRing
-public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsBasisAdaptedToIdempotents
+public import Development.AbelianVarietyTheory.Proofs.HomogeneousIdeals.Bundle0010
+public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.Bundle0003
 public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsBasisLatticeNear
-public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.IsMaximalComapMaximalIdealOO
-public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsUnitCharts
-public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsUniqueIsRatio
-public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.UniformisedTestDimensionsAndSplitFibre
-public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsNeZeroOfLe
-public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.LePreimageOpenPartIffTestCoordinates
+public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.Bundle0049
+public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.Bundle0017
+public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.Bundle0016
+public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.Bundle0106
+public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.Bundle0070
+public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.Bundle0086
 public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.HomGenericPoint
-public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.SpanRowsClassZeroEqInvariantStatement
-public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsGeometricTestMapClassicalPointStatement
-public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsIsoSpecialFibreTestGeometricTestStatement
-public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsTorusActionWeightedChartsStatement
+public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.Bundle0076
+public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.Bundle0104
+public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.Bundle0130
+public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.Bundle0098
 
 @[expose] public section
 
@@ -439,7 +439,7 @@ theorem exists_matrix [hA : ArithBase o Ω] (hB : BaseFacts S M U₀ EE) (Q : Cl
     rfl
   have hy₀ : ∀ a : o, y₀ (algebraMap o S.R a) = (ψ a : PadicAlgCl p) := fun a =>
     (c.at_ _).trans (RatModel.val_algebraMap hg a)
-  obtain ⟨hker, hcl, -⟩ := GlobalTheory.T.span_rows_classZero_eq_invariant o Ω S ρ p y₀ t fun a => by
+  obtain ⟨hker, hcl, -⟩ := _root_.GlobalTheory.ZH.span_rows_class_zero o Ω S ρ p y₀ t fun a => by
     rw [hy₀]
     exact (mem_OO_iff _).1 (ψ a).2
   obtain rfl : T = S.perp t.l.yy.ker := by

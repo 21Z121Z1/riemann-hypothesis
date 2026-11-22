@@ -4,19 +4,20 @@ public import Mathlib
 public import Development.AutomorphicSpectrum.PublishedTheorems.Geometry₂.NefRR
 public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.ModelSmall
 public import Development.AutomorphicSpectrum.Statements.TowerExistence.GoodTowerExistsX
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.InterNamed
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArithmeticIntersection.MultihomogeneousIdeals.ExistsUniqueStatement
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsEmbeddingPieces
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.Bundle0012
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArithmeticIntersection.MultihomogeneousIdeals.Bundle0001
+public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0036
 public import Development.AutomorphicSpectrum.Definitions.MetricPeriods.HasMultiplier
 public import Development.AutomorphicSpectrum.Definitions.DivisibilityTowers.HeckeSectionsIsotropicCommutatorPairingPower
 public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.OverLaUnique
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.InterSt
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.Bundle0006
 public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.StrictWeightGrowthBoundStatement
 public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ArithmeticDegreePositiveHermStatement
-public import Development.AutomorphicSpectrum.Proofs.MetricProofs.WeightThresholdLimitCoefficientsStatement
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PNefOnGenericOfSemipos
+public import Development.AutomorphicSpectrum.Proofs.MetricProofs.Bundle0062
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArakelovGeometry.Bundle0003
+public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0019
 public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PSectionBounded
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PMetricMaxComparison
+public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0031
 
 @[expose] public section
 
@@ -391,7 +392,7 @@ theorem GlobalTheory.CompanionTheory.Ar.Plug.many_sections : GlobalTheory.Compan
     have := hW.2.1 τ a b' hab
     simpa [reW] using this
   obtain ⟨C, s, q, m, θ, hC, hs, hs0, hq, hm, hsm⟩ := GlobalTheory.T.strict_weight_growth_bound hG E H Dw l Xo c Y T o B b u hanti
-  obtain ⟨hnef, hdeg, -, hpos⟩ := GlobalTheory.T.weight_threshold_limit_coefficients (CMType H) (Dw.p + Dw.q) T II B (reW u) g b s q m hII hT1 hW hB hs hs0
+  obtain ⟨hnef, hdeg, -, hpos⟩ := _root_.GlobalTheory.CompanionTheory.Ar.Small.tower_seq (CMType H) (Dw.p + Dw.q) T II B (reW u) g b s q m hII hT1 hW hB hs hs0
     (fun n => (hq n).1) hm
   have hD : 1 ≤ Top.dimFl (CMType H) (Dw.p + Dw.q) := by
     have h1 := T.j_pos

@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.ImportsTerBis
-public import GroundTheory.HeightsAndTheta.Heights.IntegralModels.ChartGlueSat
+public import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.Bundle0015
+public import GroundTheory.HeightsAndTheta.Heights.IntegralModels.Bundle0002
 
 @[expose] public section
 

@@ -1,6 +1,6 @@
 module
 
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutDec
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0273
 public import Formalism.HermitianCurvature.HermitianCurvatureProofs.TriangleInequalityAtPlace
 
 @[expose] public section

@@ -5,9 +5,9 @@ public import Formalism.LocalToGlobal.ProjectiveLattices.ThShort
 public import Formalism.LocalToGlobal.ProjectiveLattices.ThGerm
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.SecBaseChangeAnySt
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.VtUniq
-public import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.ExistsIsIdempotentElemRangeSpMapSubset
-public import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.FaithfullyFlatPointsBaseChangeDescent
-public import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.ExistsFlatUniversalTorsionTuple
+public import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.Bundle0044
+public import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.Bundle0031
+public import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.Bundle0033
 
 @[expose] public section
 

@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StTransverseSliceGeneral
-public import GroundTheory.HeightsAndTheta.Heights.Intersections.JacMinorC
-public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.ExistsExpansion
+public import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.Bundle0096
+public import GroundTheory.HeightsAndTheta.Heights.Intersections.Bundle0014
+public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0017
 
 @[expose] public section
 

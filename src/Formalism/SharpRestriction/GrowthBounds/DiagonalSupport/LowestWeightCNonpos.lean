@@ -2,7 +2,7 @@ module
 
 public import Formalism.SharpRestriction.GrowthBounds.DiagonalSupport.MembDefs
 public import Formalism.SharpRestriction.GrowthBounds.ValuationLowestDegreeMapFractionField
-public import Formalism.SharpRestriction.GrowthBounds.GLWeightTheory
+public import Formalism.SharpRestriction.GrowthBounds.Bundle0003
 
 @[expose] public section
 

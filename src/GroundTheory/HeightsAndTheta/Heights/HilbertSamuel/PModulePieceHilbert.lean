@@ -1,11 +1,11 @@
 module
 
 public import Mathlib
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsModulePieceHilbert
+public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0105
 public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PModulePieceHilbertChain
-public import GroundTheory.HeightsAndTheta.Heights.Intersections.PGeoNumCut
+public import GroundTheory.HeightsAndTheta.Heights.Intersections.Bundle0011
 public import GroundTheory.HeightsAndTheta.Heights.HeightComparison.GeoNum
-public import GroundTheory.HeightsAndTheta.Heights.FieldsOfNumbers.Assembly
+public import GroundTheory.HeightsAndTheta.Heights.FieldsOfNumbers.Bundle0012
 
 @[expose] public section
 

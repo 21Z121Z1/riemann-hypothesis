@@ -3,7 +3,7 @@ module
 public import Formalism.CharacterColumnKernels.CharacterColumnKernelEqualityForm
 public import Formalism.CharacterColumnKernels.IdempotentNormalForms.BlockRhoFull
 public import Formalism.CharacterColumnKernels.IdempotentNormalForms.LengthKerSmulLe
-public import Formalism.CharacterColumnKernels.IdempotentNormalForms.BlockChiOneTriv
+public import Formalism.CharacterColumnKernels.IdempotentNormalForms.Bundle0006
 public import Formalism.CharacterColumnKernels.IdempotentNormalForms.ColKerChiOne
 
 @[expose] public section

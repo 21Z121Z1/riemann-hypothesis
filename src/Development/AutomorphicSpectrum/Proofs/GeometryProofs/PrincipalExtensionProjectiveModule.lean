@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Proofs.AdelicProofs.IdealNormPrincipalInExtension
+public import Development.AutomorphicSpectrum.Proofs.AdelicProofs.Bundle0002
 
 @[expose] public section
 

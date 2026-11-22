@@ -1,15 +1,14 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ResV
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsVectorFieldExtendingAffineDerivation
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TopLePreimageNonemptyOpenOfPointValueInjectiveStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TorusInvariantLiftAddInvariantCombination
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TorusInvariantHeatOperatorPreservesWeight
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2868
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2858
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2906
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2907
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2874
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EqZeroOfForallField
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.VectorFieldFollowsDerivationOnSmallerOpenAtFieldStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SectionPowerValueChartChangeByTransitionPowStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TransitionUnitPointValueCocycleStatement
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2909
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2902
 
 @[expose] public section
 
@@ -122,7 +121,7 @@ theorem ksRel_zero : ∀ (K : Type) [Field K] [CharZero K] (P₀ : Out.PolAV (Sp
     intro O hO
     have hb : O = ⊥ := by
       by_contra hne
-      refine hO (GlobalTheory.T.top_le_preimage_nonempty_open_of_pointValue_injective K P₀ F ψ ξ hξ hinj O ?_)
+      refine hO (_root_.GlobalTheory.GenPtOpen.top_le_preimage_of_valR_injective K P₀ F ψ ξ hξ hinj O ?_)
       rw [Set.nonempty_iff_ne_empty]
       intro he
       exact hne (TopologicalSpace.Opens.ext (by simpa using he))
@@ -168,7 +167,7 @@ theorem ksRel_zero : ∀ (K : Type) [Field K] [CharZero K] (P₀ : Out.PolAV (Sp
       (fun a b => heq _ hξi _ _ (by
         rw [hval, WtAlg.valR_add' ξ _ hξi, WtAlg.valR_mul'' ξ _ hξi a (δf b), WtAlg.valR_mul'' ξ _ hξi b (δf a),
           hval, hval, WtAlg.valR_mul'' ξ _ hξi a b, Dv_mul]))
-    refine ⟨d, hdF, GlobalTheory.T.vectorField_follows_derivation_on_smaller_open_at_fieldPoint P₀.A.left _ (haff i) F ξ hξi d hdF (Dv i) (Dv_add i) (Dv_mul i) (fun f => ?_)⟩
+    refine ⟨d, hdF, _root_.GlobalTheory.LocVal.valR_field_of_le P₀.A.left _ (haff i) F ξ hξi d hdF (Dv i) (Dv_add i) (Dv_mul i) (fun f => ?_)⟩
     rw [hdU]; exact hval f
   choose d hdF hdv using hd
   let Wo : I × P₀.L.ι → P₀.A.left.Opens := fun p => P₀.A.left.basicOpen ((s p.1).f fun _ => p.2)
@@ -203,7 +202,7 @@ theorem ksRel_zero : ∀ (K : Type) [Field K] [CharZero K] (P₀ : Out.PolAV (Sp
         valR_inv' ξ hW, hS]
     have hSne : valR ξ _ ((s p.1).f fun _ => p.2) ≠ 0 := hS ▸ valR_unit_ne ξ hW (u p)
     have hE : S0 p.1 = Gv p.2 ^ k * valR ξ _ ((s p.1).f fun _ => p.2) :=
-      GlobalTheory.T.sectionPowerValue_chart_change_by_transition_pow P₀.A.left P₀.L k (s p.1) F ξ j₀ p.2 hj₀ (hUj p O hOW hO)
+      _root_.GlobalTheory.SecValLC.secM_valR_transition P₀.A.left P₀.L k (s p.1) F ξ j₀ p.2 hj₀ (hUj p O hOW hO)
     simp only [dk]
     rw [WtAlg.valR_add' _ _ hO, hdv p.1 O (hOW.trans (hWD p)) hO f, valR_sum' ξ hO]
     rw [Finset.sum_congr rfl (fun e _ => by
@@ -249,7 +248,7 @@ theorem ksRel_zero : ∀ (K : Type) [Field K] [CharZero K] (P₀ : Out.PolAV (Sp
           GlobalTheory.LogKSBal.valR_pbT ξ _ hOg hξO, Category.comp_id, valR_inv' ξ hU12]
       rw [WtAlg.valR_sub' _ _ hξO, hval p O hO1 hξO f, hval p' O hO2 hξO f, hR]
       exact alg_diff δ (fun a e => ψ (lam a e)) hsym (Gv p.2) (Gv p'.2) _ (hGv _ hU1) (valR_unit_ne ξ hU12 _)
-        (GlobalTheory.T.transitionUnit_pointValue_cocycle P₀.A.left P₀.L P₀.isLB F ξ j₀ p.2 p'.2 hj₀ hU1 hU2) _ _
+        (_root_.GlobalTheory.CocVal.valR_cocycle P₀.A.left P₀.L P₀.isLB F ξ j₀ p.2 p'.2 hj₀ hU1 hU2) _ _
     · exact (hsub O hξO).elim _ _
 
 end GlobalTheory.Heat.ZeroKS

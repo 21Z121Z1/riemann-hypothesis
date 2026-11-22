@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsThetaInvolution
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0702
 public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ContinuousMapGL
 
 @[expose] public section

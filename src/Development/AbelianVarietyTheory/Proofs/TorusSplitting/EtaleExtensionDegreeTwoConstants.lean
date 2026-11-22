@@ -2,14 +2,14 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.TorusSections.IsTorusOf
-public import Formalism.LocalToGlobal.ProjectiveLattices.EtArch
-public import Formalism.LocalToGlobal.ProjectiveLattices.FreeBridge
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0035
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0024
 public import Formalism.LocalToGlobal.ProjectiveLattices.HostSize
 public import Formalism.LocalToGlobal.ProjectiveLattices.CompHt
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PullbackSections.SupBoundPageRows
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PullbackSections.Bundle0003
 public import Development.AbelianVarietyTheory.Proofs.TorusSplitting.ExistsCuspFormFourClausesExplicitConstantStatement
-public import Development.AbelianVarietyTheory.Proofs.TorusSplitting.LogCardComponentsLeOfRowsBoundStatement
-public import Development.AbelianVarietyTheory.Proofs.TorusSplitting.ArchimedeanBoundTotalConstantSize
+public import Development.AbelianVarietyTheory.Proofs.TorusSplitting.Bundle0014
+public import Development.AbelianVarietyTheory.Proofs.TorusSplitting.Bundle0007
 
 @[expose] public section
 
@@ -31,7 +31,7 @@ theorem etEx_deg_two : ∀ (D : D7) (T : Top D) (h : LawsP T) (large₂ : SizeDa
   rw [hP]
   refine GlobalTheory.T.exists_cuspForm_four_clauses_explicitConstant D T h DF q R0 _ _ hrun (fun j hj => ?_) (by positivity)
   rw [min_self]
-  have hN := GlobalTheory.T.log_card_components_le_of_rows_bound D T h large₂ hrows j hj T.σ₀ T.good_σ₀
+  have hN := _root_.GlobalTheory.EtaAn.log_card_comp_le_of_rows D T h large₂ hrows j hj T.σ₀ T.good_σ₀
   obtain ⟨hL, lr, lρ, lf, -, hf⟩ := hrows
   have hm := D.R.two_le_m
   have hk := D.R.f_le_k

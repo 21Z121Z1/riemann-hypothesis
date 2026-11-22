@@ -5,10 +5,10 @@ public import Mathlib
 public import Formalism.LocalToGlobal.SiegelLatticeTheory.FlagStabilizerTensors.RootLatticeThresholds.WuDecayAll
 public import CompanionTheory.AutomorphicTheory.LocalBesselUniqueness.BesselModels.CoefWeightedLocHolds
 public import Formalism.LocalToGlobal.SiegelLatticeTheory.ClosedVolumeStatements.LevelSubgroupProperties
-public import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.QuotProdK
+public import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.Bundle0015
 public import Formalism.RealPlaceAnalysis.FinalF
 public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.FormalDegreeSquareIntegrable.Closed
-public import Formalism.SharpRestriction.CuspSpanNormBounds.ExpansionFromLemmaB
+public import Formalism.SharpRestriction.CuspSpanNormBounds.Bundle0010
 
 @[expose] public section
 

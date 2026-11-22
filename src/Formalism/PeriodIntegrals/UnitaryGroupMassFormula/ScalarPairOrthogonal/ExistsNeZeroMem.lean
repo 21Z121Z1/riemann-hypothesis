@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.ScalarPairOrthogonal.MemThPairs
-public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.BetaUniqueness.Skeleton
+public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.BetaUniqueness.Bundle0001
 
 @[expose] public section
 

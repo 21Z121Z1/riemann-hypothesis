@@ -1,15 +1,14 @@
 module
 
 public import Development.WeilBound.ThetaLifts.SphericalLattices.HoweInert
-public import Development.WeilBound.ThetaLifts.SphericalLattices.ExistsFixedSum
+public import Development.WeilBound.ThetaLifts.SphericalLattices.Bundle0009
 public import Development.WeilBound.CoreStatements.CompactAveragingSplitting.EigenvectorLifting.PfDict
 public import Development.WeilBound.CoreStatements.LocallyConstantCoinvariants.PfDict
 public import Development.WeilBound.CoreStatements.LocallyConstantCoinvariants.PfSurj
-public import Development.WeilBound.CoreStatements.LocallyConstantCoinvariants.ExistsExtZ
-public import Development.WeilBound.CoreStatements.LocallyConstantCoinvariants.ExistsFull
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.EventuallyCompSideMulEq
+public import Development.WeilBound.CoreStatements.LocallyConstantCoinvariants.Bundle0001
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0021
 public import Development.AbelianVarietyTheory.Definitions.Divisors.T2SpaceGeneralLinearGroup
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LocalLatticeIndicatorFourier
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1608
 
 @[expose] public section
 

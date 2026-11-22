@@ -1,15 +1,14 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Divisors.IsUnifAt
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PlaceConjugationPropertiesCmField
-public import Development.WeilBound.CoreStatements.AutomorphicKernels.IsobaricBaseChange.IntegralCoefficientBaseChange.UnitaryBaseChangeCharacters.UnitaryBaseChangeLinks.LocalTwistContinuousInvolutionIntegralProperties
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0036
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1277
+public import Development.WeilBound.CoreStatements.AutomorphicKernels.IsobaricBaseChange.IntegralCoefficientBaseChange.UnitaryBaseChangeCharacters.UnitaryBaseChangeLinks.Bundle0002
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FiniteTwistedClassesCharpoly
 public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.AevalRootEqZeroIff
-public import Development.WeilBound.CoreStatements.AutomorphicKernels.IsobaricBaseChange.IntegralCoefficientBaseChange.UnitaryBaseChangeCharacters.UnitaryBaseChangeLinks.SeparableIntegralModelAlmostAllStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConjOfCharpolyLocalStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LocalRingExistsAevalOfCommuteSeparableStatement
-public import Development.WeilBound.CoreStatements.AutomorphicKernels.IsobaricBaseChange.IntegralCoefficientBaseChange.UnitaryBaseChangeCharacters.UnitaryBaseChangeLinks.IntegralUnitaryConjugacyLatticeStatement
+public import Development.WeilBound.CoreStatements.AutomorphicKernels.IsobaricBaseChange.IntegralCoefficientBaseChange.UnitaryBaseChangeCharacters.UnitaryBaseChangeLinks.Bundle0005
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0279
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0262
 
 @[expose] public section
 
@@ -46,7 +45,7 @@ theorem locConj [CompleteSpace L] {σ : L →+* L} {ϖ : L} {q : ℕ} (hσ : IsU
   set φ := (intL L).subtype with hφ
   have hv := hσ.2.1
   have hinv := hσ.1
-  obtain ⟨k, hk⟩ := GlobalTheory.T.exists_conj_of_charpoly_eq_of_separable_local (intL L) n Y.val Y'.val hc hs
+  obtain ⟨k, hk⟩ := _root_.GlobalTheory.ConjLocal.conj_of_charpoly_local (intL L) n Y.val Y'.val hc hs
   have hk' : Y' = k⁻¹ * Y * k := Units.ext (by rw [Units.val_mul, Units.val_mul]; exact hk)
   set g : GL (Fin n) L := bc φ k with hg
   set y := bc φ Y with hydef

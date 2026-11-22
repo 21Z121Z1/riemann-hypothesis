@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.SimultaneousEigenvectors
+public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0067
 
 @[expose] public section
 

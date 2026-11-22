@@ -1,7 +1,7 @@
 module
 
-public import Formalism.FlagUnipotentLattices.DetIndexProductHyperbolicInequality
-public import Formalism.FlagUnipotentLattices.DetIndexProductPlacesInequalitySq
+public import Formalism.FlagUnipotentLattices.Bundle0001
+public import Formalism.FlagUnipotentLattices.Bundle0002
 public import Formalism.HyperbolicPlaceProducts.SecondLevelArithmeticNorm
 public import Formalism.HyperbolicPlaceProducts.ArithmeticCountRevised
 

@@ -1,7 +1,7 @@
 module
 
 public import Formalism.LocalToGlobal.GlobalTheory.GL4.ColumnLatticeExactSlope
-public import Formalism.LocalToGlobal.GlobalTheory.GL4.BranchingNormalisedOfAdjoint
+public import Formalism.LocalToGlobal.GlobalTheory.GL4.Bundle0001
 public import Formalism.GradedWeylDivisibility.FockSpaceTableaux.FockQRowDivAdj
 public import Mathlib
 public import Formalism.SharpRestriction.GlobalSchurBounds.FlipTwoThree
@@ -11,11 +11,11 @@ public import Formalism.GradedWeylDivisibility.StatementE
 public import Formalism.SuccessiveMinima.StatementMink
 public import Formalism.SharpRestriction.GlobalSchurBounds.IntegrableOfContinuousCircleMeasure
 public import Formalism.LocalToGlobal.Columns.CoefficientsModP.WeTransposeWordTransposeWord
-public import Formalism.GradedWeylDivisibility.FockSpaceTableaux.FockQRowAct
-public import Formalism.GradedWeylDivisibility.FockSpaceTableaux.ClosedEqNabla
-public import Formalism.LocalRingCardinality.PosOfIsomEmb
-public import Formalism.PeriodIntegrals.Transference
-public import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.TransferenceCover
+public import Formalism.GradedWeylDivisibility.FockSpaceTableaux.Bundle0014
+public import Formalism.GradedWeylDivisibility.FockSpaceTableaux.Bundle0011
+public import Formalism.LocalRingCardinality.Bundle0005
+public import Formalism.PeriodIntegrals.Bundle0007
+public import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.Bundle0015
 public import Formalism.LocalToGlobal.GlobalTheory.GL4.PCoordH
 
 @[expose] public section

@@ -3,8 +3,8 @@ module
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.FormsStable
 public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.PredMemGamRanks
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.LevelFunctionalDilatedClass
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.LevelPrimeDiamondPreservesComplexForms
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0121
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0120
 public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.StandardRankOneLatticeOfLocal
 
 @[expose] public section

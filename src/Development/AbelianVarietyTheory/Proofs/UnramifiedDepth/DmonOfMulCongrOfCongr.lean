@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.TaylorDiscriminants.ChartChg
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.TaylorDiscriminants.WickVanishing.DofDApply
-public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.ExistsGroupedOfSublist
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.TaylorDiscriminants.Bundle0003
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.TaylorDiscriminants.WickVanishing.Bundle0002
+public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0020
 
 @[expose] public section
 

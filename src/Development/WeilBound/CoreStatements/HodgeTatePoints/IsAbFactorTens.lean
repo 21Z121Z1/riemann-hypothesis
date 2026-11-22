@@ -1,17 +1,15 @@
 module
 
 public import Mathlib
-public import ReciprocityTheory.DualLattices.CotangentSurjective
+public import ReciprocityTheory.DualLattices.Bundle0004
 public import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.IsTight
-public import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.StepOrderRes
+public import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.Bundle0003
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.NonzeroLocus
 public import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.IsFinFlatSub
-public import Development.AutomorphicSpectrum.PublishedTheorems.Algebra₂.QuotientByFiniteFlatStatement
-public import Development.AutomorphicSpectrum.PublishedTheorems.Algebra₂.ZarhinStatement
-public import Development.AutomorphicSpectrum.Statements.AlgebraStatements.HodgeTateDatumStatement
-public import Development.AutomorphicSpectrum.Statements.AlgebraStatements.OrdinaryCurveStatement
-public import Development.AutomorphicSpectrum.Statements.AlgebraStatements.PolarisedFlagStatement
-public import Development.WeilBound.CoreStatements.HodgeTatePoints.RgProd
+public import Development.AutomorphicSpectrum.PublishedTheorems.Algebra₂.Bundle0001
+public import Development.AutomorphicSpectrum.Statements.AlgebraStatements.Bundle0002
+public import Development.AutomorphicSpectrum.Statements.AlgebraStatements.Bundle0001
+public import Development.WeilBound.CoreStatements.HodgeTatePoints.Bundle0022
 public import Development.WeilBound.CoreStatements.HodgeTatePoints.RgAmple
 
 @[expose] public section

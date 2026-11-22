@@ -2,8 +2,8 @@ module
 
 public import Mathlib
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.InterBridge
-public import GroundTheory.HeightsAndTheta.Heights.Intersections.PullWMemFibre
-public import GroundTheory.HeightsAndTheta.Heights.Intersections.PullBad
+public import GroundTheory.HeightsAndTheta.Heights.Intersections.Bundle0035
+public import GroundTheory.HeightsAndTheta.Heights.Intersections.Bundle0027
 
 @[expose] public section
 

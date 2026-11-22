@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import ReciprocityTheory.NeutralLocalFields.Reciprocity
+public import ReciprocityTheory.NeutralLocalFields.Bundle0001
 
 @[expose] public section
 

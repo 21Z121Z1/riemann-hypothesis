@@ -2,12 +2,12 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.WeilTensorModels
-public import Development.AbelianVarietyTheory.Definitions.Divisors.DiscreteSeriesHermitianUnique
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.WeilActionUnitaryCompact
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsPairingStdP
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0041
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0491
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1307
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MulRealAdEqZero
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsClosedAdelicLatticeClosure
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExtensionEmbeddingMixedSymmOfIsComplex
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1345
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0068
 
 @[expose] public section
 

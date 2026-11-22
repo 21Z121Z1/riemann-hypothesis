@@ -1,33 +1,33 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Divisors.CuspIso
-public import Development.AbelianVarietyTheory.Definitions.Divisors.WellChosen
-public import Development.AbelianVarietyTheory.Definitions.Divisors.P22
-public import Development.AbelianVarietyTheory.Definitions.Divisors.ToKnownTheoremsOf
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0053
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0041
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0058
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0059
 public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.IsLogCanonicalMultipleCanonical
-public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.GeometricallyConnectedOfIsIsoRestrict
+public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.Bundle0004
 public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.DenseInterior
-public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.CrysToDRBijective
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.MemSuppOnIffIdemMulOfNatural
-public import Development.AbelianVarietyTheory.Definitions.Divisors.HtValOnSubset
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HolSub0LeSpanShortGenUpto
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ModuliLawsOfPrincipalLevelFieldOfDefinition
+public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.Bundle0006
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0331
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0049
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1459
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1826
 public import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.UnfGroupContainsCongruenceUptoRootsOfUnity
-public import Development.AbelianVarietyTheory.Proofs.GenericRegularity.BddSecCuspCongr
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ArchimedeanExistenceEverywhere
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsCuspFormPairQuotientHorizontalGenerator
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsSectionQuotientOfContinuousReading
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ContinuousOnReadingIntegerExponentSection
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CuspSectionAnnihilator
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsNonzeroCuspFormParallelWeightEachComponent
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsNonzeroScalarWeightCuspFormComponent
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HorizontalGeneratorZpowMulCuspFormMemSpan
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsDominantWeightShiftFlatLineDet
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HolomorphicRestrictionSubalgebraFrameDomainIsDom
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CommutingMultiplierEqConstSmulGenerator
+public import Development.AbelianVarietyTheory.Proofs.GenericRegularity.Bundle0012
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2325
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2251
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1848
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1864
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1899
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2165
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2068
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1820
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1518
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1556
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0130
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntegerExponentSectionEqZeroOfIncreasingFlag
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsNonzeroCuspSectionLargeEvenScalarWeightStatement
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1868
 
 @[expose] public section
 
@@ -92,7 +92,7 @@ theorem holSub0_le_span_cusp_upto : Formalism.MainNotions.ModuliIntegralCharts.H
   refine (GlobalTheory.LargeCover.holSub0_le_span_shortGen_upto hC E H Dw l Xo c n d σ r (U σ) hσ (hU σ hσ) hr hA hG hlev hnab hunit h3
     (fun _ => ⟨ph, 1, x₀, hpin⟩) nab 1 0 a Nat.one_pos hdom hn hP hχ htot).trans
     (Submodule.span_mono (Set.image_mono ?_))
-  exact GlobalTheory.T.short_thetaSeries_dominant_weight_isCuspForm hC E H Dw l Xo c n d r U hr hU hlev hnab hunit (fun _ => ⟨ph, 1, x₀, hpin⟩) nab 1 0 a hdom hlast
+  exact _root_.GlobalTheory.Dict.shortInCusp_cusp hC E H Dw l Xo c n d r U hr hU hlev hnab hunit (fun _ => ⟨ph, 1, x₀, hpin⟩) nab 1 0 a hdom hlast
 
 theorem princUpTo_of_det {E : Type} [Field E] [NumberField E] [IsCMField E] {r : ℕ} (X : Data E r) (M : ℕ) (hM : 3 ≤ M)
     (hdet : ∀ γ ∈ X.Γ, (γ : Matrix (Fin r) (Fin r) E).det = 1)
@@ -309,7 +309,7 @@ theorem exists_model_cusp {U : ∀ σ : c.F →+* ℂ, Unf Xo c σ r} (hL : Neat
         if ((U σ).X k).p0 ≤ (j : ℕ) then ((n / 2 : ℕ) : ℤ) else -((n / 2 : ℕ) : ℤ) := fun n => by
       funext τ j
       simp [laU]
-    obtain ⟨n, hn, hev, P, hPm, y, hy, hne⟩ := GlobalTheory.T.exists_nonzero_cuspSection_large_evenScalarWeight E r ((U σ).X k) (by omega) (by omega)
+    obtain ⟨n, hn, hev, P, hPm, y, hy, hne⟩ := _root_.GlobalTheory.ScalarPoin.exists_cusp_ne_some E r ((U σ).X k) (by omega) (by omega)
       (fun n hn γ hγ => by rw [← hla]; exact hL.chi σ hσ 0 n ⟨fun _ => antitone_const, hn⟩ k γ hγ) 1
     exact ⟨n, hn, hev, P, hla n ▸ hPm, y, hy, hne⟩
 
@@ -502,7 +502,7 @@ theorem exists_flat_pair : ∀ (E : Type) [Field E] [NumberField E] [IsCMField E
     rw [mul_comm]
     exact mul_mem_suppOn g (hsupp _ hf)
   obtain ⟨k0, hτ0, hk0, hA0, -⟩ := pk σ0 hσ0
-  obtain ⟨T, hT0, hTc⟩ := GlobalTheory.T.exists_rational_multiplier_of_complex_multiplier c.F (Rul Xo c) (↥((U σ0).X k0).dom → ℂ) σ0 (resRd (U σ0) hT k0)
+  obtain ⟨T, hT0, hTc⟩ := _root_.GlobalTheory.exists_rational_multiplier_of_complex c.F (Rul Xo c) (↥((U σ0).X k0).dom → ℂ) σ0 (resRd (U σ0) hT k0)
     (resRd_smul (U σ0) hT k0) (cuspOn U Z (wtZ a n)) (cuspOn U Z (wtZ a' n))
     (fun m b hb hli => by
       have hb' : ∀ i, b i ∈ sec Xo c (a + a') (n + n) ⊓ suppOn Z := fun i =>

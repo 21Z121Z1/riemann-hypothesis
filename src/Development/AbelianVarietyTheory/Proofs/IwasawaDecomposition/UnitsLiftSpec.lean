@@ -4,10 +4,9 @@ public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.RingSpecNormalisedCharacterEq
 public import Formalism.LocalToGlobal.NormalizedHeckeFactors.CoverStd
 public import Formalism.LocalToGlobal.NumberFieldFamilies.NPartCNdTie
-public import Formalism.LocalToGlobal.NumberFieldFamilies.NPartCNdStd
-public import Formalism.LocalToGlobal.NumberFieldFamilies.NPartCNdProj
+public import Formalism.LocalToGlobal.NumberFieldFamilies.Bundle0001
 public import Formalism.LocalToGlobal.NumberFieldFamilies.HeckeLift0
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsTameGenAt
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0234
 
 @[expose] public section
 

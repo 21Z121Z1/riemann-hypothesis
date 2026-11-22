@@ -1,9 +1,8 @@
 module
 
 public import Mathlib
-public import Development.WeilBound.CoreStatements.AbelianHeightsDuality.ArakelovSingularities.PolyDef
-public import Development.WeilBound.CoreStatements.AbelianHeightsDuality.ArakelovSingularities.PolyCons
-public import Development.WeilBound.CoreStatements.AbelianHeightsDuality.ArakelovSingularities.PolyPb
+public import Development.WeilBound.CoreStatements.AbelianHeightsDuality.ArakelovSingularities.Bundle0001
+public import Development.WeilBound.CoreStatements.AbelianHeightsDuality.ArakelovSingularities.Bundle0002
 public import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsIsClosedImmersionGenericPoint
 
 @[expose] public section

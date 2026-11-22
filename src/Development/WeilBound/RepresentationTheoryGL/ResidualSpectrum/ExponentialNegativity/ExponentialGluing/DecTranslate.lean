@@ -1,8 +1,8 @@
 module
 
 public import Development.WeilBound.RepresentationTheoryGL.ResidualSpectrum.ExponentialNegativity.ExpNegGlue
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IntegrableOnFundamentalDomain
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IsLeftInvariantOfIsAutForm
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0338
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0442
 
 @[expose] public section
 

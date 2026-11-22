@@ -1,22 +1,21 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IpEqZeroOfHeisEigen
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HeisenbergFinitePointReadsClassicalTranslationStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LatticeIntertwinerStandardToSkewMemThetaSpace
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConjSmulConjSmul
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CosetVecMemThetaSpace
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FinitePartRationalTensorZeroAtPrimeIffPlaceIdem
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2862
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1650
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1634
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1531
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1546
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1748
 public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.SelfDualCLatP
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DenseRationalHomPointsIdealCompletionStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsPowIntegralCompletedHomLatticeStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntegralOfCompletedLatticeSelfDualRankOneStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AddCharTraceUnitBlockTrivialOfMovesStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ValuedOneSubLeOfMovesIdealCompletionStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ValuedFiniteUnitaryLeOneOffOpenSubsetStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MemIdealIntegralFiniteAdelesOfMemCompletionStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConjugatePlaceValuationCountUnderStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnitaryFinitePointCongrOneOfInvConjCongrStatement
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2913
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2916
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2891
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2910
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2909
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2908
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2898
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2879
 
 @[expose] public section
 
@@ -91,7 +90,7 @@ theorem exists_read_of_wd (h : Setup ψ θ S T ⊤ δ r) {G : VC D a d → ℂ} 
     field_simp
   have h1 := hφ.smul (c * wdPh D (tor0 D ⊤ δ) x)⁻¹
   rw [e] at h1
-  have h2 := GlobalTheory.T.heisenbergFinitePoint_reads_classicalTranslation ψ θ S T hS hT ⊤ δ r h _ _ h1 (-z)
+  have h2 := _root_.GlobalTheory.NormExact.heisO_finPt_reads ψ θ S T hS hT ⊤ δ r h _ _ h1 (-z)
   have e2 : pt D (tor0 D ⊤ δ) δ (-z) = -x := by
     funext τ i j
     simp [hx, pt, Formalism.MainNotions.TaylorLogMetric.embV, tor0]
@@ -110,7 +109,7 @@ theorem heis_two_finPt (h : Setup ψ θ S T ⊤ δ r) {L L'} {G : VC D a d → �
   set x := pt D (tor0 D ⊤ δ) δ z with hx
   have hxm : x ∈ La D (tor0 D ⊤ δ) L L' :=
     AddSubgroup.subset_closure ⟨δ, AddSubgroup.subset_closure ⟨1, trivial, by simp⟩, z, hz, rfl⟩
-  have h1 := (GlobalTheory.T.heisenbergFinitePoint_reads_classicalTranslation ψ θ S T hS hT ⊤ δ r h _ _ hf z).smul (al D (tor0 D ⊤ δ) x)
+  have h1 := (_root_.GlobalTheory.NormExact.heisO_finPt_reads ψ θ S T hS hT ⊤ δ r h _ _ hf z).smul (al D (tor0 D ⊤ δ) x)
   have e : al D (tor0 D ⊤ δ) x • U D (tor0 D ⊤ δ) x G = G := funext fun y => hG.2 x hxm y
   rw [e] at h1
   have h2 := h1.unique hf
@@ -242,7 +241,7 @@ theorem mem_of_char_eq {ψ : AddChar (AF D.host.F) ℂ} {S T : HSp D} {r : D.hos
     obtain ⟨σ, hσ, eσ⟩ := exists_fe (algebraMap D.host.E (FA D) r⁻¹ * s)
     have e1 : algebraMap D.host.E (FA D) r * fe D σ = s := by
       rw [eσ, ← mul_assoc, ← map_mul, mul_inv_cancel₀ hr, map_one, one_mul]
-    have h1 := GlobalTheory.T.integral_of_completedLattice_selfDual_rankOne ψ S T r LB _ hψ gS gT (stdLat_selfDual gS) hLB hr hk ⟨o + j, by omega⟩ j
+    have h1 := _root_.GlobalTheory.CosetOrth.inHat_of_char_dual ψ S T r LB _ hψ gS gT (stdLat_selfDual gS) hLB hr hk ⟨o + j, by omega⟩ j
       (2 * σ * (1 - mt S g⁻¹) i j) (by rw [RingHom.map_mul, RingHom.map_mul, hσ, mul_zero, zero_mul]) fun t ht ht' => by
         have e2 : algebraMap D.host.E (FA D) r * fe D (t * σ) = fe D t * s := by
           rw [RingHom.map_mul, mul_left_comm, e1]
@@ -257,10 +256,10 @@ theorem mem_of_char_eq {ψ : AddChar (AF D.host.F) ℂ} {S T : HSp D} {r : D.hos
       ← one_add_one_eq_two (R := D.host.E)]
     simp only [RingHom.map_mul, RingHom.map_add, RingHom.map_one]
     ring
-  have hc := GlobalTheory.T.unitaryFinitePoint_congr_one_of_inv_conj_congr (GlobalTheory.T.conjugatePlace_valuation_count_under D) 𝔪 Sf hG y (GlobalTheory.T.valued_finiteUnitary_le_one_off_openSubset S g y Sf gS hg hy) fun w hw => by
+  have hc := _root_.GlobalTheory.CosetOrth.Cong.inHat_of_inv_cong (_root_.GlobalTheory.ConjPlace.conj_place D) 𝔪 Sf hG y (_root_.GlobalTheory.CosetOrth.valued_finMat_le_one_of_mem_openOff S g y Sf gS hg hy) fun w hw => by
     obtain ⟨h1, h2, h3⟩ := place_facts hG hw k
-    exact GlobalTheory.T.valued_one_sub_le_of_moves_idealCompletion (skewId D 𝔪) w _ _ (finMat y⁻¹) h3 h1 h2 key
-  refine ⟨(GlobalTheory.NormSum.mem_intG y).2 fun i j => ⟨?_, ?_⟩, fun i j => GlobalTheory.T.mem_idealIntegralFiniteAdeles_of_memCompletion 𝔪 hG.1 _ ?_⟩
+    exact _root_.GlobalTheory.CosetOrth.valued_one_sub_le_of_moves_integral (skewId D 𝔪) w _ _ (finMat y⁻¹) h3 h1 h2 key
+  refine ⟨(GlobalTheory.NormSum.mem_intG y).2 fun i j => ⟨?_, ?_⟩, fun i j => _root_.GlobalTheory.CosetOrth.mem_hatId_of_inHat 𝔪 hG.1 _ ?_⟩
   · exact (GlobalTheory.ZeroAtPlaces.mem_OhE_iff _).2 fun w =>
       (HeightOneSpectrum.mem_adicCompletionIntegers _ _ _).2 ((inHat_one_iff _).1 (hc i j).1 w)
   · exact (GlobalTheory.ZeroAtPlaces.mem_OhE_iff _).2 fun w =>

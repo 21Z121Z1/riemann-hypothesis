@@ -1,10 +1,10 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Divisors.ESmall
-public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.ExistsCmTypeEmbeddingsIntoValuationRing
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0057
+public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0113
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PlaceDivisors.StChartF
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConjEqNegOfSqEqNegNat
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0872
 
 @[expose] public section
 

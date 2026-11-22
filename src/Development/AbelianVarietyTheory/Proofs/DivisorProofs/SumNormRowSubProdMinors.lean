@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ProdMinorsMemInv
-public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.CasimirCoefficients.CBinet
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0522
+public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.CasimirCoefficients.Bundle0002
 
 @[expose] public section
 

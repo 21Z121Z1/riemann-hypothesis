@@ -6,8 +6,8 @@ public import Formalism.LocalToGlobal.Divisibility.CoefMod
 public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.WeightDualExistence.IncludeInjective
 public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.GelfandTsetlinBranching.ExtremalFactsProofA
 public import Formalism.LocalToGlobal.Columns.CoefModB
-public import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.AlgWtDualUniq
-public import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.AlgWtHwUnq
+public import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.Bundle0014
+public import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.Bundle0018
 
 @[expose] public section
 

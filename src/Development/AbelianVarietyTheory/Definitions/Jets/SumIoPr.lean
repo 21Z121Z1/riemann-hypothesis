@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Formalism.RealPlaceAnalysis.StatementKT
+public import Formalism.RealPlaceAnalysis.Bundle0002
 public import Formalism.FormalDegreeBessel.StatementDS
 
 @[expose] public section

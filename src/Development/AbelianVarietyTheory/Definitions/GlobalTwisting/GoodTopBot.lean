@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Formalism.GradedWeylDivisibility.StatementB
+public import Formalism.GradedWeylDivisibility.Bundle0001
 
 @[expose] public section
 

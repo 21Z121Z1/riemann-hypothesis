@@ -1,7 +1,7 @@
 module
 
 public import GroundTheory.LocalFields.PrincipalUnitsRank
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.PadicHodgeTheory.FiniteZpModuleTorsionFreeSplitting
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.PadicHodgeTheory.Bundle0001
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.PadicHodgeTheory.ExistsPrincipalUnitsRetractionLocalField
 
 @[expose] public section

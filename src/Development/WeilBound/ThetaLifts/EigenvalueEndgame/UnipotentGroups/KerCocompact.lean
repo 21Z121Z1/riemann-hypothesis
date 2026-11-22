@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.UnitaryRationalPointsCountableDiscreteFundDomain
+public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0125
 
 @[expose] public section
 

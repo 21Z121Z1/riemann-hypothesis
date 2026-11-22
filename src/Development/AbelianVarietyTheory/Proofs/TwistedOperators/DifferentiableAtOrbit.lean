@@ -1,12 +1,12 @@
 module
 
 public import Mathlib
-public import Formalism.PeriodIntegrals.DSInfCharCap
-public import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.PseudoCoefficientSeparation
+public import Formalism.PeriodIntegrals.Bundle0016
+public import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.Bundle0020
 public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.HarishChandraModulesOn
-public import Formalism.RealPlaceAnalysis.StatementE
-public import Formalism.RealPlaceAnalysis.StatementB
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DRepAddAndBracket
+public import Formalism.RealPlaceAnalysis.Bundle0003
+public import Formalism.RealPlaceAnalysis.Bundle0002
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0943
 
 @[expose] public section
 

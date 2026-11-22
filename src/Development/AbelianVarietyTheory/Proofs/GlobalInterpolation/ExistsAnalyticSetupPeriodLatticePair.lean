@@ -3,13 +3,13 @@ module
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.LatIntZero
 public import Formalism.LocalToGlobal.KernelLattices.LateralTheory
-public import Formalism.LocalToGlobal.KernelLattices.DeterminantCokernelCount.CokernelIndexFactors.StatementB
+public import Formalism.LocalToGlobal.KernelLattices.DeterminantCokernelCount.CokernelIndexFactors.Bundle0001
 public import Formalism.LocalToGlobal.GlobalTheory.GL3.PLinkThU
 public import Formalism.LocalToGlobal.GlobalTheory.GL3.PHfTrace
 public import Formalism.LocalToGlobal.GlobalTheory.GL3.PThIndep
 public import Formalism.LocalToGlobal.GlobalTheory.GL3.PSelfDual
 public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.SpanRangeEmb4EqTop
-public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.CmBaseFieldIntegersAndCurveIdealFacts
+public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0066
 
 @[expose] public section
 

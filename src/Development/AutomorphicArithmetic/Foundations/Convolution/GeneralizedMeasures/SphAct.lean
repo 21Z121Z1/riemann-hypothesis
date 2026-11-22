@@ -1,14 +1,14 @@
 module
 
 public import Development.AutomorphicArithmetic.Foundations.Convolution.GeneralizedMeasures.HeckeFinAlt
-public import Development.AutomorphicArithmetic.Foundations.Convolution.ConvolutionKernels.KernelTransforms.HopBasic
-public import Development.AutomorphicArithmetic.Foundations.Convolution.ConvolutionKernels.KernelTransforms.CommPrj
-public import Development.AutomorphicArithmetic.Foundations.Convolution.ConvolutionKernels.KernelTransforms.LocEmb
-public import Development.AutomorphicArithmetic.Foundations.Convolution.GeneralizedMeasures.PolyMem
-public import GroundTheory.AutomorphicForms.Satake
+public import Development.AutomorphicArithmetic.Foundations.Convolution.ConvolutionKernels.KernelTransforms.Bundle0004
+public import Development.AutomorphicArithmetic.Foundations.Convolution.ConvolutionKernels.KernelTransforms.Bundle0003
+public import Development.AutomorphicArithmetic.Foundations.Convolution.ConvolutionKernels.KernelTransforms.Bundle0002
+public import Development.AutomorphicArithmetic.Foundations.Convolution.GeneralizedMeasures.Bundle0001
+public import GroundTheory.AutomorphicForms.Bundle0024
 public import GroundTheory.AutomorphicForms.SphericalIntegral
 public import GroundTheory.AutomorphicForms.MacdonaldHecke
-public import GroundTheory.AutomorphicForms.MacdonaldWhittakerHecke
+public import GroundTheory.AutomorphicForms.Bundle0027
 public import GroundTheory.GlobalFields.LocalFieldAtPlace
 public import GroundTheory.GlobalFields.KummerTheory.LocalIndexAtPlace
 

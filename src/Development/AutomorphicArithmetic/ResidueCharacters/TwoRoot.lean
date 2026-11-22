@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SplitPrimePlaceCmTypeConjugate
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0464
 
 @[expose] public section
 

@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Formalism.JacquetSubsetSums.JacquetSubsetSum
-public import Development.AbelianVarietyTheory.BlockTheory.TorsionBlocks.IwahoriSubgroup
+public import Development.AbelianVarietyTheory.BlockTheory.TorsionBlocks.Bundle0001
 public import Development.AbelianVarietyTheory.Counterexamples.DegenerateExamples.PremisesModel
 
 @[expose] public section

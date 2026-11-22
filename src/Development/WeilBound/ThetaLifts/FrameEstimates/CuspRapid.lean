@@ -1,17 +1,11 @@
 module
 
 public import Development.WeilBound.ThetaLifts.FrameEstimates.WeilConv
-public import Development.WeilBound.ThetaLifts.FrameEstimates.OneMemLines
-public import Development.WeilBound.ThetaLifts.FrameEstimates.DomContinuous
-public import Development.WeilBound.ThetaLifts.FrameEstimates.IInvOfParts
-public import Development.WeilBound.ThetaLifts.FrameEstimates.SchrAddPt
-public import Development.WeilBound.ThetaLifts.FrameEstimates.UMGLin
-public import Development.WeilBound.ThetaLifts.FrameEstimates.UMGSmooth
-public import Development.WeilBound.ThetaLifts.FrameEstimates.LinDer
-public import Development.WeilBound.ThetaLifts.FrameEstimates.LineGen
-public import Development.WeilBound.ThetaLifts.FrameEstimates.LineEx
+public import Development.WeilBound.ThetaLifts.FrameEstimates.Bundle0010
+public import Development.WeilBound.ThetaLifts.FrameEstimates.Bundle0009
+public import Development.WeilBound.ThetaLifts.FrameEstimates.Bundle0012
+public import Development.WeilBound.ThetaLifts.FrameEstimates.Bundle0011
 public import Development.WeilBound.ThetaLifts.FrameEstimates.CuspRapidOf
-public import Development.WeilBound.ThetaLifts.FrameEstimates.SigRapid
 
 @[expose] public section
 

@@ -1,10 +1,10 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TrPairApply
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ArchActionReadingsCompatible
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsUniqueArchimedeanMatrixAdeleExtensionOfComStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RealScalarArchimedeanAdeleSmulMatrixRealPlaceStatement
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1231
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1215
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1383
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1250
 
 @[expose] public section
 

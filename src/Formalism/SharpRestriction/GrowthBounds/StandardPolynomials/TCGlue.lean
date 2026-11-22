@@ -1,6 +1,6 @@
 module
 
-public import Formalism.SharpRestriction.GrowthBounds.StandardPolynomials.TopWeightFalseZeroEqOne
+public import Formalism.SharpRestriction.GrowthBounds.StandardPolynomials.Bundle0007
 
 @[expose] public section
 

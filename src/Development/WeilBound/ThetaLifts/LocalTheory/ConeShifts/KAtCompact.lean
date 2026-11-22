@@ -1,9 +1,8 @@
 module
 
-public import Development.WeilBound.ThetaLifts.LocalTheory.ConeShifts.CoefficientSpans
-public import Development.WeilBound.ThetaLifts.LocalTheory.ConeShifts.FinStmt
-public import Development.WeilBound.ThetaLifts.LocalTheory.ConeShifts.IdealStmt
-public import Development.WeilBound.ThetaLifts.LeviDeterminants.ActsEx
+public import Development.WeilBound.ThetaLifts.LocalTheory.ConeShifts.Bundle0004
+public import Development.WeilBound.ThetaLifts.LocalTheory.ConeShifts.Bundle0001
+public import Development.WeilBound.ThetaLifts.LeviDeterminants.Bundle0007
 
 @[expose] public section
 

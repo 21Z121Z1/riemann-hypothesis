@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.SphericalEisensteinSeriesOnGroup
+public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.Bundle0011
 
 @[expose] public section
 

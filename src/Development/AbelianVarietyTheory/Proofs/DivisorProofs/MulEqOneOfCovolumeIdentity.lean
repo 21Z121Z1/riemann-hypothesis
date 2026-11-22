@@ -1,16 +1,16 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.UniformLevelMultiplicity
-public import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.LevelLiftConditions
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsLevelSubgroup
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.AdelicElementLatticeFullAndCompletion
+public import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.Bundle0014
+public import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.Bundle0015
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0068
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0074
 public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.CongruenceLatticeFractionalMultipleAgree
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsAdeleRingTensorEquivInfiniteProdFinite
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnitDeterminantCongruentElement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RationalVectorMemIdealCompletedLatticeIffStatement
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0005
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0866
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0838
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LevelGroupLatticeCongruence
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsLatticeAutomorphismModHalfLevelStatement
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0849
 public import Development.AbelianVarietyTheory.Proofs.HeightProofs.ExistsTwistCharacterUnitsModSpecialIdeal
 
 @[expose] public section
@@ -201,7 +201,7 @@ theorem map_smul_top (hι : LatEmb V ι) (I : Ideal (𝓞 D.host.E)) :
 
 theorem iota_mem_idl (hι : LatEmb V ι) {I : Ideal (𝓞 D.host.E)} (hI : I ≠ ⊥) (a : Dw.La) :
     finVec V (ι a) ∈ idl V I ↔ a ∈ I • (⊤ : Submodule (𝓞 D.host.E) Dw.La) := by
-  refine (GlobalTheory.T.rationalVector_mem_ideal_completedLattice_iff D V I hI (ι a)).trans ?_
+  refine (_root_.GlobalTheory.IdealCap.finVec_mem_closure_iff D V I hI (ι a)).trans ?_
   rw [← map_smul_top hι]
   exact ⟨fun ⟨b, hb, e⟩ => hι.1 e ▸ hb, fun h => ⟨a, h, rfl⟩⟩
 

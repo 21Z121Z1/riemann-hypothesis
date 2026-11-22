@@ -3,7 +3,7 @@ module
 public import Mathlib
 public import GroundTheory.ProfiniteCohomology.LocalClassFormation.OrderCyclic
 public import GroundTheory.TateCohomology.InfRes
-public import GroundTheory.LocalFields.RamificationStructure
+public import GroundTheory.LocalFields.Bundle0007
 public import GroundTheory.LocalFields.IntermediateField
 
 @[expose] public section

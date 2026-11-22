@@ -3,8 +3,8 @@ module
 public import Development.WeilBound.CoreStatements.PadicHodgeComparison.HodgeSurjectivity.TowerRallisLemma
 public import Mathlib
 public import Development.WeilBound.CoreStatements.PadicHodgeComparison.HodgeSurjectivity.CupSurjectivity.SumCoordBasisDual
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsNormalProjectiveModel
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsPrimitiveCl
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0991
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0173
 
 @[expose] public section
 

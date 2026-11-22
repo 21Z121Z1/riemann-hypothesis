@@ -1,9 +1,9 @@
 module
 
 public import Development.WeilBound.ThetaLifts.SphericalLattices.OrdDetUniformizerImageEq
-public import Development.WeilBound.ThetaLifts.SphericalLattices.MemRangeOfEntries
+public import Development.WeilBound.ThetaLifts.SphericalLattices.Bundle0007
 public import Development.WeilBound.ThetaLifts.SphericalLattices.IntMFromBlocks
-public import Development.WeilBound.ThetaLifts.SphericalLattices.OneAddNe
+public import Development.WeilBound.ThetaLifts.SphericalLattices.Bundle0008
 
 @[expose] public section
 

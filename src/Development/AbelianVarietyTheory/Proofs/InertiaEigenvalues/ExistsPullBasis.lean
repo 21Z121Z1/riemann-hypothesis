@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.BlockTheory.NonGaloisCusps.OnePlusPowerAssembly
+public import Development.AbelianVarietyTheory.BlockTheory.NonGaloisCusps.Bundle0001
 public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.MemOfAssembleMem
 
 @[expose] public section

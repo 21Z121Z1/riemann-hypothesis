@@ -1,23 +1,22 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.AvgVanish
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LocallyConstantCompactSupportUnipotentStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MirabolicDoubleCosetDecompositionStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.EvaluationMapsLinearStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ClosedEvaluationInducedStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MulMemBall
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0385
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0418
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MirabolicDoubleCosetDecomposition
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0436
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0477
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0421
 public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IsOpenFixedOfSubgroup
 public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.PadicIsNonarchimedeanLocalField
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.AddCharConductorAndHaarIntegersExist
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SmoothSubrepCompactInductionSpanStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CongruenceSubgroupOpenCompactStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CongruenceSubgroupsBasisNhdsStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ShiftedEmbeddingMemCongruenceIffStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.UnipotentCongruenceFactorizationStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.UnipotentBallMemCongruenceStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.BumpSectionValueLocalIntegralStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SmoothVectorFixedNearIdentityStatement
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0021
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0426
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0431
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0460
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0454
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0457
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0456
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0429
 
 @[expose] public section
 
@@ -157,8 +156,8 @@ end Gen
 def imC {i t : ℕ} (ψ : AddChar k Circle) (hψ : Continuous ψ) (τ : MRep k (i + 1)) (σ : GRep k (t + 1))
     (hτ : IsSmooth τ.ρ) (hσ : IsSmooth σ.ρ) : Submodule ℂ (cIndSpace (MirabolicParabolic k (i + 1) t) (sigC τ σ)) :=
   imGen (MirabolicParabolic k (i + 1) t) (sigC τ σ) (eC ψ (τ := τ) (σ := σ))
-    (fun f g => (GlobalTheory.T.evaluation_maps_linear k i t ψ hψ τ σ hτ hσ f g 0).1)
-    (fun c f => (GlobalTheory.T.evaluation_maps_linear k i t ψ hψ τ σ hτ hσ f f c).2.1)
+    (fun f g => (_root_.GlobalTheory.CompanionTheory.BZPhiPG.Lin.eC_eO_linear k i t ψ hψ τ σ hτ hσ f g 0).1)
+    (fun c f => (_root_.GlobalTheory.CompanionTheory.BZPhiPG.Lin.eC_eO_linear k i t ψ hψ τ σ hτ hσ f f c).2.1)
 
 theorem mem_imC {i t : ℕ} (ψ : AddChar k Circle) (hψ : Continuous ψ) (τ : MRep k (i + 1)) (σ : GRep k (t + 1))
     (hτ : IsSmooth τ.ρ) (hσ : IsSmooth σ.ρ) (y : cIndSpace (MirabolicParabolic k (i + 1) t) (sigC τ σ)) :
@@ -188,7 +187,7 @@ theorem IsBump.right (hF : IsBump s hs w F) (g κ : Mir k ((i + 1) + t + 1))
 
 theorem IsBump.on_ball (hF : IsBump s hs w F) (d : Fin (t + 1) → k) (hd : ∀ j, d j ∈ GlobalTheory.SplitWeil.cball s) :
     evX F (dEmb k i t d) = w := by
-  have h := hF.one 1 _ ((GlobalTheory.T.unipotent_ball_mem_congruence k i t s hs d).1 hd)
+  have h := hF.one 1 _ ((_root_.GlobalTheory.CompanionTheory.BZPhiPG.Onto.dEmb_mem_congM_and_ball k i t s hs d).1 hd)
   rw [map_one, Module.End.one_apply] at h
   rw [← h]
   congr 1
@@ -196,12 +195,12 @@ theorem IsBump.on_ball (hF : IsBump s hs w F) (d : Fin (t + 1) → k) (hd : ∀ 
 
 theorem IsBump.off_ball (hF : IsBump s hs w F) (d : Fin (t + 1) → k) (hd : ¬ ∀ j, d j ∈ GlobalTheory.SplitWeil.cball s) :
     evX F (dEmb k i t d) = 0 := by
-  refine hF.zero _ fun ⟨a, x, hx, e⟩ => hd ((GlobalTheory.T.unipotent_ball_mem_congruence k i t s hs d).2 a a.2 x hx ?_)
+  refine hF.zero _ fun ⟨a, x, hx, e⟩ => hd ((_root_.GlobalTheory.CompanionTheory.BZPhiPG.Onto.dEmb_mem_congM_and_ball k i t s hs d).2 a a.2 x hx ?_)
   rw [e, mul_one]
 
 theorem IsBump.intC_sEmb (ψ : AddChar k Circle) (hF : IsBump s hs w F) (x : Mir k ((i + 1) + t))
     (hx : x ∈ congM k s hs ((i + 1) + t)) : intC ψ F (sEmb k ((i + 1) + t) x) = intC ψ F 1 := by
-  have hsx := (GlobalTheory.T.shifted_embedding_mem_congruence_iff k _ s hs x).2 hx
+  have hsx := (_root_.GlobalTheory.CompanionTheory.BZPhiPG.Onto.sEmb_mem_congM_iff k _ s hs x).2 hx
   unfold intC
   have : (fun d : Fin (t + 1) → k => (((Circle.toUnits (ψ (d (Fin.last t))))⁻¹ : ℂˣ) : ℂ) •
       evX F (dEmb k i t d * sEmb k ((i + 1) + t) x)) =
@@ -217,7 +216,7 @@ theorem IsBump.intC_off (ψ : AddChar k Circle) (hs1 : valuation k (s : k) < 1) 
   refine intC_eq_zero ψ F _ fun d => hF.zero _ fun ⟨a, x, hx, e⟩ => ?_
   have e' : dEmb k i t d * sEmb k ((i + 1) + t) g = (a : Mir k ((i + 1) + (t + 1))) * x := by
     rw [e, mul_one]
-  have h := GlobalTheory.T.unipotent_congruence_factorization k i t s hs hs1 d g a a.2 x hx e'
+  have h := _root_.GlobalTheory.CompanionTheory.BZPhiPG.Onto.Key1.mem_mirabolicParabolic_mul_cong k i t s hs hs1 d g a a.2 x hx e'
   obtain ⟨b, hb, z, hz, e2⟩ := h
   exact hg ⟨⟨b, hb⟩, z, hz, e2⟩
 
@@ -233,9 +232,9 @@ theorem local_core {i t : ℕ} (ψ : AddChar k Circle) (hψ : Continuous ψ) (τ
         B.1.1.1 ((a : Mir k ((i + 1) + t)) * x) = sigC τ σ a (qC τ σ w)) ∧
       ∀ g, (¬ ∃ a : MirabolicParabolic k (i + 1) t, ∃ x ∈ congM k s hs ((i + 1) + t), g = (a : Mir k ((i + 1) + t)) * x) →
         B.1.1.1 g = 0 := by
-  have hv := GlobalTheory.T.bump_section_value_local_integral k i t ψ τ σ s hψ1 w F hF.on_ball hF.off_ball
+  have hv := _root_.GlobalTheory.CompanionTheory.BZPhiPG.Onto.intC_one_of_bump k i t ψ τ σ s hψ1 w F hF.on_ball hF.off_ball
   obtain ⟨c, hc0, hc⟩ := hv
-  have hy := GlobalTheory.T.closed_evaluation_induced k i t ψ hψ τ σ hτ hσ F
+  have hy := _root_.GlobalTheory.CompanionTheory.BZPhiPG.MemC.memC k i t ψ hψ τ σ hτ hσ F
   obtain ⟨yF, hyF⟩ := hy
   have hval : ∀ x ∈ congM k s hs ((i + 1) + t), yF.1.1.1 x = c • qC τ σ w := by
     intro x hx
@@ -283,10 +282,10 @@ theorem exists_local {i t : ℕ} (ψ : AddChar k Circle) (hψ : Continuous ψ) (
     LinearMap.rTensor_surjective σ.V (Submodule.mkQ_surjective _) v
   obtain ⟨w, hw⟩ := hsurj
   subst hw
-  have hfx := GlobalTheory.T.smooth_vector_fixed_near_identity k i t τ σ hτ hσ w
+  have hfx := _root_.GlobalTheory.CompanionTheory.BZPhiPG.Onto.sigX_fix k i t τ σ hτ hσ w
   obtain ⟨O₁, hO₁, hfix⟩ := hfx
   obtain ⟨s, hs, hs1, hψ1, hsO, hsO₁⟩ := exists_radius ψ hψ O hO O₁ hO₁
-  obtain ⟨hKo, hKc⟩ := GlobalTheory.T.congruence_subgroup_open_compact k ((i + 1) + t + 1) s hs
+  obtain ⟨hKo, hKc⟩ := _root_.GlobalTheory.CompanionTheory.BZPhiPG.Onto.congM_isOpen_isCompact k ((i + 1) + t + 1) s hs
   have hb := GlobalTheory.CompanionTheory.BZMirOnto.exists_bump (HPG k (i + 1) (t + 1)) (sigX τ σ)
     (congM k s hs ((i + 1) + t + 1)) hKo hKc 1 w (fun a x hx e => hfix a (by
       have e' : (a : Mir k ((i + 1) + (t + 1))) = x := by rw [e]; group
@@ -295,14 +294,14 @@ theorem exists_local {i t : ℕ} (ψ : AddChar k Circle) (hψ : Continuous ψ) (
   obtain ⟨F, hF1, hF0⟩ := hb
   have hbump : IsBump s hs w F := ⟨hF1, hF0⟩
   have hc := local_core ψ hψ τ σ hτ hσ w s hs hs1 hψ1 (fun x hx => (hsO x hx).2) F hbump
-  exact ⟨congM k s hs ((i + 1) + t), (GlobalTheory.T.congruence_subgroup_open_compact k _ s hs).1, fun x hx => (hsO x hx).1, hc⟩
+  exact ⟨congM k s hs ((i + 1) + t), (_root_.GlobalTheory.CompanionTheory.BZPhiPG.Onto.congM_isOpen_isCompact k _ s hs).1, fun x hx => (hsO x hx).1, hc⟩
 
 theorem imC_translate {i t : ℕ} (ψ : AddChar k Circle) (hψ : Continuous ψ) (τ : MRep k (i + 1)) (σ : GRep k (t + 1))
     (hτ : IsSmooth τ.ρ) (hσ : IsSmooth σ.ρ) (g : Mir k ((i + 1) + t)) (B : cIndSpace (MirabolicParabolic k (i + 1) t) (sigC τ σ))
     (hB : B ∈ imC ψ hψ τ σ hτ hσ) : cInd (MirabolicParabolic k (i + 1) t) (sigC τ σ) g B ∈ imC ψ hψ τ σ hτ hσ := by
   have hB' := (mem_imC ψ hψ τ σ hτ hσ B).1 hB
   obtain ⟨f, hf⟩ := hB'
-  have e := (GlobalTheory.T.evaluation_maps_linear k i t ψ hψ τ σ hτ hσ (rtr g f) (rtr g f) ((dpowM ((i + 1) + t) (-1 / 2) g : ℂˣ) : ℂ)).2.1
+  have e := (_root_.GlobalTheory.CompanionTheory.BZPhiPG.Lin.eC_eO_linear k i t ψ hψ τ σ hτ hσ (rtr g f) (rtr g f) ((dpowM ((i + 1) + t) (-1 / 2) g : ℂˣ) : ℂ)).2.1
   refine (mem_imC ψ hψ τ σ hτ hσ _).2 ⟨((dpowM ((i + 1) + t) (-1 / 2) g : ℂˣ) : ℂ) • rtr g f, e.trans ?_⟩
   funext x
   rw [ev_cInd, ← hf, Pi.smul_apply]
@@ -311,7 +310,7 @@ theorem imC_translate {i t : ℕ} (ψ : AddChar k Circle) (hψ : Continuous ψ) 
 theorem eC_onto : ∀ (k : Type) [Field k] [ValuativeRel k] [TopologicalSpace k] [IsNonarchimedeanLocalField k] (i t : ℕ) (ψ : AddChar k Circle) (hψ : Continuous ψ) (τ : MRep k (i + 1)) (σ : GRep k (t + 1)) (hτ : IsSmooth τ.ρ) (hσ : IsSmooth σ.ρ) (y : cIndSpace (MirabolicParabolic k (i + 1) t) (sigC τ σ)),
     ∃ f : XS τ σ, eC ψ f = (y : smoothPart (ind (MirabolicParabolic k (i + 1) t) (sigC τ σ))).1.1 := by
   intro k _ _ _ _ i t ψ hψ τ σ hτ hσ y
-  exact GlobalTheory.T.smooth_subrep_compact_induction_span (MirabolicParabolic k (i + 1) t) (sigC τ σ) (GlobalTheory.CompanionTheory.BZMirOnto.exists_compactOpen k _)
+  exact _root_.GlobalTheory.CompanionTheory.PRep.CIndGlue.eq_top_of_bumps (MirabolicParabolic k (i + 1) t) (sigC τ σ) (GlobalTheory.CompanionTheory.BZMirOnto.exists_compactOpen k _)
     (imC ψ hψ τ σ hτ hσ) (imC_translate ψ hψ τ σ hτ hσ) (exists_local ψ hψ τ σ hτ hσ) y |> (mem_imC ψ hψ τ σ hτ hσ y).1
 
 end GlobalTheory.CompanionTheory.BZPhiPG.Onto

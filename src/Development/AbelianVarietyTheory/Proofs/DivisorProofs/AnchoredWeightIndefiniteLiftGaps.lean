@@ -1,11 +1,11 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Divisors.CovolXOfCovol
-public import Development.AbelianVarietyTheory.Definitions.Divisors.CuspIso
-public import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.ComponentModelWeightDimensionDictionary
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0055
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0053
+public import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.Bundle0064
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PullbackSections.HolomorphicFamilies.WeightFloorInequalities
-public import Development.AbelianVarietyTheory.Proofs.GenericRegularity.NumericalConsequencesOfPins
+public import Development.AbelianVarietyTheory.Proofs.GenericRegularity.Bundle0021
 
 @[expose] public section
 

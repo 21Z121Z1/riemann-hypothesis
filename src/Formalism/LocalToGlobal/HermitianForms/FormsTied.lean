@@ -1,7 +1,6 @@
 module
 
-public import Formalism.LocalToGlobal.HermitianForms.LastCoordinateUniformizerVectorSpansOrthogonalLi
-public import Formalism.LocalToGlobal.HermitianForms.TransportT
+public import Formalism.LocalToGlobal.HermitianForms.Bundle0004
 
 @[expose] public section
 

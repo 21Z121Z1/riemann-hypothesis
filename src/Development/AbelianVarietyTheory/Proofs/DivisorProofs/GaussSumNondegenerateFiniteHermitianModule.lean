@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.IsHeisTrivial
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.SumEqZeroAddUnits
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0010
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0040
 
 @[expose] public section
 

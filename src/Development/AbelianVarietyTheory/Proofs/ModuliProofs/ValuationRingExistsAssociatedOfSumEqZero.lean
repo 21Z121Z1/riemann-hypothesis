@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.MvPolynomialMapMaximalIdealIsPrime
-public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ValuationRingOfFlatOfFormallyUnramified
+public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0002
+public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0004
 
 @[expose] public section
 

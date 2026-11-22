@@ -1,10 +1,10 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.RowMinor
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.IntegralOfUnimodular
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.LinearFormsBoundedRepresentatives
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.EncardBiUnionLe
+public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.Bundle0012
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0256
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0338
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0193
 
 @[expose] public section
 

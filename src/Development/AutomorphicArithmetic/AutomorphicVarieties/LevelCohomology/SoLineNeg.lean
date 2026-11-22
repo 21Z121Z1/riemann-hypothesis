@@ -1,11 +1,10 @@
 module
 
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.LevelCohomology.SoLine
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.LevelCohomology.Bundle0002
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.UnitaryThreeDeformations.FiniteResidue
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.LevelCohomology.SoCocL
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.LevelCohomology.SoCobIndex
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.CharacterLevelBounds.ClsFacts
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.CharacterLevelBounds.PlacesQ
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.CharacterLevelBounds.Bundle0001
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.CharacterLevelBounds.Bundle0002
 
 @[expose] public section
 

@@ -2,12 +2,12 @@ module
 
 public import Mathlib
 public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IsSmoothHermCombLine
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.RestrictedFormNonzeroOnGenericPoint
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0573
 public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.HermRepMetricSmooth
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.PointIdealMultiprojectivePrime
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0544
 public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.IsDiscreteValuationRingStalkGeneric
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.HermitianO1PullbackFubiniStudyMetric
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.ArithModel
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0537
+public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0012
 
 @[expose] public section
 

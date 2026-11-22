@@ -2,16 +2,16 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.Divisors.IsActIffIsDiagEnd
-public import ReciprocityTheory.AnalyticForms.RegularLocalRings.FinalTheorems
+public import ReciprocityTheory.AnalyticForms.RegularLocalRings.Bundle0001
 public import Development.AbelianVarietyTheory.Statements.SemistableTorsion.ImmersedBy
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ZHAbove
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2488
 public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.UniformisationEndomorphismsToCompleteDvr
 public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.QkToAkUInvariantUnderFieldEmbedding
 public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsPelUnifPsiCoord
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.PointsCarryCommonFlagSpectrumMapFieldExt
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.UwRQeIsNsmul
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PulledBackUniformisationEndomorphismCommGenericFStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TorsionLabelsPullbackUniformisationCommonFieldStatement
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0259
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.Bundle0017
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2557
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2628
 
 @[expose] public section
 
@@ -152,7 +152,7 @@ theorem aA_comm {R R' : Type} [CommRing R] [IsDomain R] [CommRing R'] [IsDomain 
       U'.gen.inv.left ≫ pullback.fst ((Over.pullback (specOf g)).obj G).hom (jK R') ≫ pullback.fst G.hom (specOf g))
     (E : EndU U) (E' : EndU U') (hE : E'.aG = (Over.pullback (specOf g)).map E.aG) :
     E'.aA.left ≫ gA = gA ≫ E.aA.left :=
-  GlobalTheory.T.pulledBack_uniformisationEndomorphism_comm_genericFibre g hg U U' gA hgA hrel E E' hE
+  _root_.GlobalTheory.Poinc.AComm.pulled_end_comm g hg U U' gA hgA hrel E E' hE
 
 end GlobalTheory.Poinc.Sep.MemBC
 

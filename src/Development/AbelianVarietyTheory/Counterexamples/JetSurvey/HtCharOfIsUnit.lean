@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.ExistsUniqueIsAl
+public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0044
 
 @[expose] public section
 

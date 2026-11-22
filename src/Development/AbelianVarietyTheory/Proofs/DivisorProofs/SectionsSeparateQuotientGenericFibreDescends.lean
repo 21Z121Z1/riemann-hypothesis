@@ -1,29 +1,28 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GapGeSubKapBase
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsPushSectionsCanonicalModificationStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsNefLineBundleOfPullbackSurjectiveProjectiveStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SectionsAdjointNefSeparateEtaleFibreStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.OneLeIntersectionNumberSubvarietyThroughPositiveStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ResidueDegreeGenericNeZeroEquidimensionalStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GlobalSectionsDimPullbackLeGenericallyFiniteStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LineBundleGlobalSectionsDimNefPowTensorAmpleIsBiStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GeometricallyConnectedStr
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsNefLineBundleBaseChangeFieldExtension
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsBigPull
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BaseChangeSmoothProjectiveVarietyProperties
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AmpleModuloEffectiveAwayFromPointPullAffine
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsBigLineBundleOfSmulClassEqAmpleAtAddNef
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BaseChangeSectionsFiniteSpan
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FiniteFinrankLineBundleSectionsFiniteEtale
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsAffineOpenPreimageOfIsPullback
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsResolvedModification
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1875
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1961
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2089
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2620
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1979
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1403
+public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.Bundle0015
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2351
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1186
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1481
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1853
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0920
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1841
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1852
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0996
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0765
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2072
 public import Development.AbelianVarietyTheory.Proofs.CoherentCohomologyProofs.EventuallyExistsFiniteSubsetNonzeroLocus
 public import Development.AbelianVarietyTheory.Proofs.CoherentCohomologyProofs.SumNegOnePowFinrankEqZero
 public import Development.AbelianVarietyTheory.Proofs.CoherentCohomologyProofs.HigherDirectImagesVanishOfIsAffineHom
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FiniteAffineNeighbourhoodExists
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.KawamataViehwegVanishingNumberFieldTwist
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1246
 
 @[expose] public section
 
@@ -406,7 +405,7 @@ theorem generic_data (hNN : GlobalTheory.Published.NefNumerics) {F : Type} [Fiel
   have h₁ : IsProper p := ((isProjOver_iff_isProper_and_exists_isAmpleLB p).1 hWp).1
   have h₂ : IsProper (f ≫ p) := ((isProjOver_iff_isProper_and_exists_isAmpleLB _).1 hMp).1
   have h₃ : IsProper f := IsProper.of_comp f p
-  have hr := GlobalTheory.T.residue_degree_generic_ne_zero_equidimensional F M W p f n inferInstance inferInstance hf hdM hdW
+  have hr := _root_.GlobalTheory.GenFinite.residueDegree_genericPoint_ne_zero F M W p f n inferInstance inferInstance hf hdM hdW
   exact ⟨ampleAt_of_isBig_pull hNN p f hn hdW hdM hWp hMp hf hr hL hb, exists_etale_restrict p f hr⟩
 
 theorem sections_separate_quotient_fibre : GlobalTheory.Published.NadelVanishingAndNonKltDivisor → GlobalTheory.Published.NefNumerics → GlobalTheory.Published.Principalisation → ∀ (F : Type) [Field F] [NumberField F] (σ : F →+* ℂ) (X X' W V : Scheme.{0}) [IsIntegral X] [IsIntegral X'] [IsIntegral W] (sX : X ⟶ Sp F) (n : ℕ) [SmoothOfRelativeDimension n sX] (φ : X' ⟶ X) (q : X' ⟶ W) (sW : W ⟶ Sp F) (i : V ⟶ X) (ℓ : V ⟶ X'), IsProjOver sX → GeometricallyConnected sX → 1 ≤ n → IsProjOver (φ ≫ sX) → IsProjOver sW → IsFinite q → Surjective q → q ≫ sW = φ ≫ sX → IsOpenImmersion i → IsOpenImmersion ℓ → ℓ ≫ φ = i → letI := algebraΓOfHom sX; ∀ (K : CanonLB sX n) (δ N' B : LB X) (hδ : δ.IsLB) (hN' : N'.IsLB) (hB : B.IsLB) (N : LB W) (hN : N.IsLB) (m : ℕ), CechPic.pull q (cls N hN) = CechPic.pull φ (cls δ hδ) → IsNef F δ → IsBig F δ → IsNef F N' → (n + 1).choose 2 < m → cls B hB = m • cls δ hδ + cls N' hN' → ∀ (J : Type) [Fintype J] (v : J → (Sp ℂ ⟶ V)), Function.Injective v → (∀ j, v j ≫ i ≫ sX = spMap σ) → (∀ j j', v j ≫ ℓ ≫ q = v j' ≫ ℓ ≫ q) → (∃ j, ∀ s, (v j ≫ i) s = genericPoint X) → ∀ (k : J → (tens K.bundle B).ι) (hk : ∀ j, ⊤ ≤ (v j ≫ i) ⁻¹ᵁ (tens K.bundle B).U (k j)) (a : J → ℂ), (∀ g : H0 sX (tens K.bundle B) ⊤, ∑ j, a j * H0.val (v j ≫ i) (k j) le_top (hk j) g = 0) → a = 0 := by
@@ -431,7 +430,7 @@ theorem sections_separate_quotient_fibre : GlobalTheory.Published.NadelVanishing
   have hfNb : IsBig F (NW.pull f) := hδσb.of_cls_eq (LB.isLB_pull hNW f) hcls
   obtain ⟨hamp, UW, hgUW, het⟩ := generic_data hNN M.str pW f n hn hfp M.proj hWp' hfs NW hNWn hfNb
   let K' : CanonLB M.str n := CanonLB.all M.str n
-  obtain ⟨Ψ, hΨ⟩ := GlobalTheory.T.exists_push_sections_canonical_modification F X sX n U M K K' B hXp hUne hB
+  obtain ⟨Ψ, hΨ⟩ := _root_.GlobalTheory.ModifCanon.exists_push_sections F X sX n U M K K' B hXp hUne hB
   have hK'B : (tens K'.bundle (B.pull M.σ)).IsLB := isLB_tens K'.isLB (LB.isLB_pull hB M.σ)
   obtain ⟨s0⟩ : Nonempty (Sp ℂ) := inferInstance
   have hpt : ∀ (Y : Scheme.{0}) (x : Sp ℂ ⟶ Y) (O : Y.Opens), x s0 ∈ O → ⊤ ≤ x ⁻¹ᵁ O := by

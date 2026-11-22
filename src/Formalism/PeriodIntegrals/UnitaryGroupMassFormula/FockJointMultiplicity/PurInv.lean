@@ -1,7 +1,7 @@
 module
 
-public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.FockJointMultiplicity.PurChain
-public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.FockJointMultiplicity.CauchyHW
+public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.FockJointMultiplicity.Bundle0001
+public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.FockJointMultiplicity.Bundle0002
 
 @[expose] public section
 

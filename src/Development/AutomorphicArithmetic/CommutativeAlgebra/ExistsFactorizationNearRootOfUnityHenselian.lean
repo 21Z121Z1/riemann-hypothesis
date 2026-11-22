@@ -1,10 +1,10 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicArithmetic.CommutativeAlgebra.EtaleCohomology.GoodRoot
-public import Development.AutomorphicArithmetic.CommutativeAlgebra.ExistsZeroOfLinearFormJacobianHenselian
-public import Development.AutomorphicArithmetic.CommutativeAlgebra.ExistsPowerDecompositionOfRootOfUnity
-public import Development.AutomorphicArithmetic.CommutativeAlgebra.ExistsTwoChartQuotientOfFiniteCoord
+public import Development.AutomorphicArithmetic.CommutativeAlgebra.EtaleCohomology.Bundle0001
+public import Development.AutomorphicArithmetic.CommutativeAlgebra.Bundle0006
+public import Development.AutomorphicArithmetic.CommutativeAlgebra.Bundle0003
+public import Development.AutomorphicArithmetic.CommutativeAlgebra.Bundle0004
 
 @[expose] public section
 

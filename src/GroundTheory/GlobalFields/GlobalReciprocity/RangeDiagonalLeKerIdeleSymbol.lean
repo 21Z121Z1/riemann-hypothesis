@@ -3,8 +3,8 @@ module
 public import Mathlib
 public import GroundTheory.GlobalFields.GlobalReciprocity.FinitePlaces
 public import GroundTheory.GlobalFields.GlobalReciprocity.RealPlaces
-public import GroundTheory.GlobalFields.NormResidueSymbol.Surjective
-public import GroundTheory.GlobalFields.Adele.IdeleBasis
+public import GroundTheory.GlobalFields.NormResidueSymbol.Bundle0001
+public import GroundTheory.GlobalFields.Adele.Bundle0002
 
 @[expose] public section
 

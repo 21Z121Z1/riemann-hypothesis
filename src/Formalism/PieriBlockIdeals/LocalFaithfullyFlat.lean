@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Formalism.PieriBlockIdeals.ExponentBoundCounterexample
+public import Formalism.PieriBlockIdeals.Bundle0004
 public import Formalism.RankGapBounds.TheoremALocOfLemmaA
 public import Formalism.SatakeDualWeyl.DualWeylRepApply
 

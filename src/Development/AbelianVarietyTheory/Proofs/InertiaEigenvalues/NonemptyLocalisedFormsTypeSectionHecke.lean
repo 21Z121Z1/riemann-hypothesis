@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.CoeffRingsHaveRootsOfUnity
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.TypeSpaceProjectionToPointEigenspaces
+public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0015
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0626
 public import Formalism.SharpRestriction.LevelLetterCocycles.EndomorphismIndexBound
 
 @[expose] public section

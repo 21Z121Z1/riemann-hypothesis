@@ -1,10 +1,10 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Divisors.SimpleTwistedTraceFormulaStable
-public import Development.AbelianVarietyTheory.Definitions.Divisors.IsUnifAt
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0026
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0036
 public import Development.WeilBound.RepresentationTheoryGL.TwistedFactors.LocalBaseChange.ElementaryCosets.CosetMap
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.TwistedIwahoriFirstIdentityStatement
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0399
 public import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.IwahoriFactorisation.TwistedConjugationNorms.HilbertNinetyNorms.IwFacts
 
 @[expose] public section
@@ -101,7 +101,7 @@ theorem tl_contr_of (w : Pl E) (ϖ : (w.adicCompletion E)ˣ) (hϖ : ordL (ϖ : w
     split_ifs at hδ with h
     · exact h
     · exact absurd rfl hδ
-  obtain ⟨j, hj, κ, hκ, hg⟩ := (GlobalTheory.T.twisted_iwahori_first_identity (k := w.adicCompletion E)) n (iwGL n w) θ 2 (GlobalTheory.BCT.tdiag ϖ y)
+  obtain ⟨j, hj, κ, hκ, hg⟩ := (_root_.GlobalTheory.CompanionTheory.Lbc.Contraction.e1 (k := w.adicCompletion E)) n (iwGL n w) θ 2 (GlobalTheory.BCT.tdiag ϖ y)
     hadm (tl_goodT_of w n θ ϖ hϖ y hy hθ) δ hmem
   refine ⟨j⁻¹, (iwGL n w).inv_mem hj, κ, iw_tor_TO w n κ hκ, ?_⟩
   rw [hg, map_inv]

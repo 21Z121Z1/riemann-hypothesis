@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.NodeAgree
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ReLatSelf
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0250
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0207
 
 @[expose] public section
 

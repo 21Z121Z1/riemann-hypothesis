@@ -1,7 +1,7 @@
 module
 
 public import Formalism.LocalRingCardinality.DataKerI
-public import Formalism.LocalRingCardinality.DataParamsT
+public import Formalism.LocalRingCardinality.Bundle0003
 public import Formalism.LocalRingCardinality.RankBoundMonotoneInDimension
 public import Formalism.LocalToGlobal.Columns.LocWLemmas
 

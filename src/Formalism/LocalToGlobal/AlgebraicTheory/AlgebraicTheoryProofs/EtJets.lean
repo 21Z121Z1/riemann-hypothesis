@@ -6,7 +6,7 @@ public import Formalism.LocalToGlobal.TorsionIntegrality.TorsionTranslationPower
 public import Formalism.LocalToGlobal.TorsionIntegrality.RamifiedCurveKernels.FinalA
 public import Formalism.LocalToGlobal.TorsionIntegrality.SecondCoefficientNorms.PhNormFromDatum
 public import Formalism.LocalToGlobal.TorsionIntegrality.UniformGaussModels.OneLetterGaussSharpTranslateHolds
-public import Formalism.LocalToGlobal.TorsionIntegrality.UniformGaussModels.OrthogonalGaussModels.ThmBGaussOrthOf
+public import Formalism.LocalToGlobal.TorsionIntegrality.UniformGaussModels.OrthogonalGaussModels.Bundle0001
 
 @[expose] public section
 

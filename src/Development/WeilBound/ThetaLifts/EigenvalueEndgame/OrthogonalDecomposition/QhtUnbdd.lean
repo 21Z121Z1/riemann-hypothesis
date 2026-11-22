@@ -1,9 +1,9 @@
 module
 
-public import Development.WeilBound.ThetaLifts.EigenvalueEndgame.OrthogonalDecomposition.RapidBound
-public import Development.WeilBound.ThetaLifts.TowerModels.PlaneHerm
+public import Development.WeilBound.ThetaLifts.EigenvalueEndgame.OrthogonalDecomposition.Bundle0001
+public import Development.WeilBound.ThetaLifts.TowerModels.Bundle0002
 public import Development.WeilBound.ThetaLifts.EigenvalueEndgame.OrthogonalDecomposition.ActsOfReads
-public import Development.WeilBound.CoreStatements.LocallyConstantCoinvariants.ExistsFull
+public import Development.WeilBound.CoreStatements.LocallyConstantCoinvariants.Bundle0001
 public import Development.WeilBound.CoreStatements.LocallyConstantCoinvariants.PfSurj
 
 @[expose] public section

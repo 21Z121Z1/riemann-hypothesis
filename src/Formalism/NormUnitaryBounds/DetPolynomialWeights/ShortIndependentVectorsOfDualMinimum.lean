@@ -3,8 +3,8 @@ module
 public import Mathlib
 public import Formalism.NormUnitaryBounds.DetPolynomialWeights.ExistsNeZeroNormLeRankDivOfDualMinimum
 public import Formalism.LatticeSlopes.CovolAntiSameRank
-public import Formalism.LatticeSlopes.LatticeSlopesProofs.DiscreteTopologyOfLe
-public import Formalism.LatticeSlopes.LatticeSlopesProofs.SaturationProperties
+public import Formalism.LatticeSlopes.LatticeSlopesProofs.Bundle0001
+public import Formalism.LatticeSlopes.LatticeSlopesProofs.Bundle0004
 public import Formalism.LatticeSlopes.LatticeSlopesProofs.DegQuot
 
 @[expose] public section

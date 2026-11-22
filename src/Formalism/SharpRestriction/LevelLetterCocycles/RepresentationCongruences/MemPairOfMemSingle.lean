@@ -1,6 +1,6 @@
 module
 
-public import Formalism.SharpRestriction.LevelLetterCocycles.RepresentationCongruences.QuotientDistinguishedTorsionFree
+public import Formalism.SharpRestriction.LevelLetterCocycles.RepresentationCongruences.Bundle0003
 public import Mathlib.RingTheory.DiscreteValuationRing.TFAE
 public import Mathlib.RingTheory.PowerSeries.Ideal
 public import Mathlib.RingTheory.Filtration

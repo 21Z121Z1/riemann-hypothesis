@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.SiegelToroidalIntegral
+public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.Bundle0012
 public import Development.AbelianVarietyTheory.Statements.SemistableTorsion.ImmersedBy
-public import ReciprocityTheory.AnalyticForms.RegularLocalRings.FinalTheorems
+public import ReciprocityTheory.AnalyticForms.RegularLocalRings.Bundle0001
 
 @[expose] public section
 

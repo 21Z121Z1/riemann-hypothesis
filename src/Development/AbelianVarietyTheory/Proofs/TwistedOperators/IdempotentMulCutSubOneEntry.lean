@@ -1,10 +1,10 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.SplitSumStabLattice
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SplitPlaceWeilRepLatticeVacuumCharacter
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.WeilRepSchrodingerModelHalfSubstitution
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.EqZeroOrEqOfPlaceIdem
+public import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.Bundle0008
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0168
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0436
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0187
 
 @[expose] public section
 

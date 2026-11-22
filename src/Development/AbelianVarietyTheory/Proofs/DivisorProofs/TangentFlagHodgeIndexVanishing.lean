@@ -2,11 +2,15 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsUniqueIsTanFrameOfIsEmpty
-public import Development.AbelianVarietyTheory.Definitions.Divisors.P22
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0058
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.KodairaSpencerMatrixUnique
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsLieCombIffIsCombAt
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.KodairaSpencerMatrixExistsStatement
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsTangentModuleUniversalGroupStatement
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1429
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1974
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsTangentModuleUniversalGroup
+public import Development.AbelianVarietyTheory.Definitions.ExistenceOfLattices.UnivFrame
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0010
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.Bundle0002
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.SecBaseChangeAnySt
 
 @[expose] public section
 
@@ -323,7 +327,7 @@ theorem isKS_dir_sum : GlobalTheory.CovTop.Hypotheses₂ → ∀ (E : Type) [Fie
     · rw [← Category.assoc, ← hXy]
       exact congrArg (· ≫ X) (e₀ M)
   obtain ⟨M₀, A, _, A', _, π, π', i, hi, ψ, ub, hb, hπ, hπ', hiπ, hpol, hu, hl, what₂⟩ :=
-    GlobalTheory.T.kodaira_spencer_matrix_exists Pr E H Dw l Xo c K y _ hpq tan
+    _root_.GlobalTheory.KSExist.ksExist Pr E H Dw l Xo c K y _ hpq tan
   obtain ⟨C, _, πC, hC⟩ := exists_isGrpPullback Xo.univ.t.G X
   have hU := ObjDim.isAbelianScheme Xo.univ
   have hg := ObjDim.smoothOfRelativeDimension Xo.univ
@@ -361,7 +365,7 @@ theorem isKS_dir_sum : GlobalTheory.CovTop.Hypotheses₂ → ∀ (E : Type) [Fie
   let e := (Fintype.equivFin ι).symm
   refine ⟨lieComb (fun q => M (e q)) (fun q => w (e q)), ?_, f, hf, hd, _, ?_,
     isLieImage_lieComb _ (f := fun q => gs (e q)) fun q => hwl _⟩
-  · obtain ⟨V, _, _, v, -, -, htan, hcomb, -, -⟩ := GlobalTheory.T.exists_tangent_module_universal_group E H Dw l Xo K y.x
+  · obtain ⟨V, _, _, v, -, -, htan, hcomb, -, -⟩ := _root_.GlobalTheory.TanMod.exists_tangent_module E H Dw l Xo K y.x
     choose n hn using fun σ k => (htan _).1 (y.tan σ k)
     have key : ∀ {m : ℕ} (cf : Fin m → K) (u : Fin m → (epsR K ⟶ A)) (b : Fin m → V) (w : epsR K ⟶ A),
         (∀ j, (u j).left ≫ π = v (b j)) → (IsLieComb cf u w ↔ w.left ≫ π = v (∑ j, cf j • b j)) :=

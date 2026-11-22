@@ -2,7 +2,7 @@ module
 
 public import PositivityTheory.AutomorphicForms.PublishedInputs.CyclicBaseChange.SConjSpaceC
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.HeckeAdjoints.SatLocFree
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CuspidalGLLocalComponentsEventuallySatake
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1262
 
 @[expose] public section
 

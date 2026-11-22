@@ -7,7 +7,7 @@ public import Formalism.LocalToGlobal.IndefiniteForms.IndefExample
 public import Formalism.LocalToGlobal.IndefiniteForms.IndefiniteTree.IndefiniteTreeX
 public import Formalism.MeanHeightDescent.DivisionInequalityWithCovolume
 public import Formalism.MeanHeightDescent.AverageDegreeBounds.GlobalBoundRefinements
-public import Formalism.ThetaSupremumBounds.LiftOperatorBoundOfFockJet
+public import Formalism.ThetaSupremumBounds.Bundle0001
 
 @[expose] public section
 

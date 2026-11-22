@@ -1,11 +1,11 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Definitions.MetricPeriods.GroupDict
+public import Development.AutomorphicSpectrum.Definitions.MetricPeriods.Bundle0004
 public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsSheetCover
 public import GroundTheory.HeightsAndTheta.Heights.FiniteCovolume.StatementsProved
 public import GroundTheory.HeightsAndTheta.Heights.CountingLowerBound.Assembly
-public import Development.AutomorphicSpectrum.Proofs.MetricProofs.IntEmbInjective
+public import Development.AutomorphicSpectrum.Proofs.MetricProofs.Bundle0135
 public import GroundTheory.HeightsAndTheta.Theta.CMDatum
 
 @[expose] public section

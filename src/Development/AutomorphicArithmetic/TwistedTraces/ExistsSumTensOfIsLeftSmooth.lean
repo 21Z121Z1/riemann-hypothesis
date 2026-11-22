@@ -1,13 +1,13 @@
 module
 
-public import Development.AutomorphicArithmetic.Foundations.Convolution.PowerSumTraces.DecayTraceClassAlt
+public import Development.AutomorphicArithmetic.Foundations.Convolution.PowerSumTraces.Bundle0001
 public import Development.AutomorphicArithmetic.Foundations.Convolution.TensFun
-public import Development.AutomorphicArithmetic.Foundations.Convolution.ConvolutionKernels.KernelTransforms.TensApply
+public import Development.AutomorphicArithmetic.Foundations.Convolution.ConvolutionKernels.KernelTransforms.Bundle0003
 public import GroundTheory.AutomorphicForms.CuspidalDiscreteness.DecayUniform
 public import GroundTheory.AutomorphicForms.CuspidalDiscreteness.CuspFormsHeight
-public import GroundTheory.AutomorphicForms.DixmierMalliavin
-public import Development.AutomorphicArithmetic.TwistedTraces.ExistsFiniteBasisLeftInvariantCompactSupport
-public import Development.AutomorphicArithmetic.TwistedTraces.ExistsSmoothTKbarEqRestriction
+public import GroundTheory.AutomorphicForms.Bundle0015
+public import Development.AutomorphicArithmetic.TwistedTraces.Bundle0005
+public import Development.AutomorphicArithmetic.TwistedTraces.Bundle0007
 
 @[expose] public section
 

@@ -1,20 +1,21 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.AbelianDeRhamStructure
+public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.Bundle0007
 public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.BijectiveCechDeRhamComparisonDegreeOne
 public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.AbelianHodgeDeRham
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CechDeRhamComparisonBijectiveCupSmooth
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PullOverOneEqZero
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AbelianDeRhamFreeOfCrystallineComparisonStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.StructureSheafComparisonInjectiveStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AffinePairRestrictionInjectiveFirstCohomologyStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FormValueOnTangentVectorEqZeroOfGlobalFormZeroStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CmpFormEqZeroOfTangent
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FiniteProjectiveOfLocalBasis
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsTangentIffTanS
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsIsLieBasisBaseChange
-public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.IsAbelianSchemeOfIsGrpPullback
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2047
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1981
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2126
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0470
+public import Development.AbelianVarietyTheory.Definitions.Divisors.ComparisonMemCechHodgeFiltration
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0448
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2279
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2494
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0690
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0694
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0041
+public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0099
 
 @[expose] public section
 
@@ -138,7 +139,7 @@ theorem glob_surjective (hC : GlobalTheory.Published.CrystallineSmoothLift) (hH 
   have hF : clForm _ ωc ∈ CechHodgeFiltration (A.hom ≫ 𝟙 (Sp R)) := by rw [cechHodgeFiltration_eq_range]; exact ⟨ωc, rfl⟩
   have h1 : c ∈ F1 (A.hom ≫ 𝟙 (Sp R)) := by
     change toH1O _ c = 0
-    apply GlobalTheory.T.structure_sheaf_comparison_injective R A.left _
+    apply _root_.GlobalTheory.CechDR.cmpO_injective R A.left _
     rw [← structureSheaf_comparison_comm, map_zero, hc]
     exact hF
   rw [hodgeFiltration_eq_range] at h1
@@ -207,7 +208,7 @@ theorem exists_tangent_field (hC : GlobalTheory.Published.CrystallineSmoothLift)
   exact exists_eq_comp (by rw [hG, Module.finrank_eq_card_basis b, Fintype.card_fin]) (glob _) hs
     (lieVal B) (fun v w h ↦ Serre.Lie.ext
       (GlobalTheory.LieInjField.eq_of_tanVal_eq hC hH K B g hab hdim _ _ v.isTangent w.isTangent (LinearMap.congr_fun h)))
-    (fun v ↦ exists_factor hs (lieVal B v) (GlobalTheory.T.formValueOnTangentVector_eq_zero_of_globalForm_zero K B v.hom)) ψ
+    (fun v ↦ exists_factor hs (lieVal B v) (_root_.GlobalTheory.TanVanish.tanVal_eq_zero_of_cmpForm_eq_zero K B v.hom)) ψ
 
 theorem dualMapR_comp {R'' : Type} [CommRing R''] (σ : R →+* R') (τ : R' →+* R'') :
     Chart.dualMapR (τ.comp σ) = (Chart.dualMapR τ).comp (Chart.dualMapR σ) := by
@@ -308,7 +309,7 @@ theorem exists_tangent_residue (hC : GlobalTheory.Published.CrystallineSmoothLif
       ∀ c, IsPullForm m.w c (e (1 ⊗ₜ c)) :=
     ((hH R A g hab hdim).2.2.2.2.2 K B.left B.hom φ hφ.1).2.1
   have hp : ∀ f, glob _ (m.pullForm f) = e (1 ⊗ₜ glob _ f) := fun f ↦
-    (GlobalTheory.T.affinePairRestriction_injective_firstCohomology φ (B.hom ≫ 𝟙 (Sp K))).2.1 ((isPullForm_glob m f).symm.trans (he _))
+    (_root_.GlobalTheory.CechDR.pairRes_injective φ (B.hom ≫ 𝟙 (Sp K))).2.1 ((isPullForm_glob m f).symm.trans (he _))
   obtain ⟨v', hv'⟩ := exists_tangent_field hC hH B g hab' hdim' hy
     (Module.Dual.baseChange K ψ ∘ₗ e.symm.toLinearMap)
   have hb : ∀ i, ∃ u : K, u ≠ 0 ∧ ∃ v, ∀ f,
@@ -340,7 +341,7 @@ theorem exists_tangent_of_functional : GlobalTheory.Published.CrystallineSmoothL
     ((LinearMap.range (lieVal A)).comap (glob (A.hom ≫ 𝟙 (Sp R))).dualMap) fun m hm α ↦ by
       letI := Ideal.Quotient.field m
       obtain ⟨v, hv⟩ := exists_tangent_residue hC hH (R ⧸ m) Ideal.Quotient.mk_surjective A g hab hdim α
-      obtain ⟨χ, hχ⟩ := exists_factor hs (lieVal A v) (GlobalTheory.T.formValueOnTangentVector_eq_zero_of_globalForm_zero R A v.hom)
+      obtain ⟨χ, hχ⟩ := exists_factor hs (lieVal A v) (_root_.GlobalTheory.TanVanish.tanVal_eq_zero_of_cmpForm_eq_zero R A v.hom)
       refine ⟨χ, ⟨v, LinearMap.ext fun f ↦ (hχ f).symm⟩, fun x ↦ ?_⟩
       obtain ⟨f, rfl⟩ := hs x
       rw [hχ]

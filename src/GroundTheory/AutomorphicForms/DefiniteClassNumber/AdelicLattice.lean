@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import GroundTheory.AutomorphicForms.DefiniteClassNumber.Places
-public import GroundTheory.AutomorphicForms.AdelicUnitaryGroups.LatticeCompact
+public import GroundTheory.AutomorphicForms.AdelicUnitaryGroups.Bundle0002
 public import GroundTheory.AutomorphicForms.StrongApproximationSLDense
 public import GroundTheory.GlobalFields.Adele.Topology
 

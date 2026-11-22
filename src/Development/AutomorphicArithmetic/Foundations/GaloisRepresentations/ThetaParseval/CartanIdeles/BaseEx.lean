@@ -1,10 +1,10 @@
 module
 
 public import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.ThetaParseval.CartanIdeles.SpacesExOf
-public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.ExistsIsCharAF
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsIsStdMulShift
+public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.Bundle0014
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2432
 public import Development.AbelianVarietyTheory.Definitions.Foundations.ExistsAuxiliaryPlaceNotMemFinset
-public import Development.WeilBound.ThetaLifts.LeviDeterminants.MixedModels.PsiUnrOfNotLe
+public import Development.WeilBound.ThetaLifts.LeviDeterminants.MixedModels.Bundle0003
 
 @[expose] public section
 

@@ -1,6 +1,6 @@
 module
 
-public import Formalism.HermitianCurvature.FrameMinor
+public import Formalism.HermitianCurvature.Bundle0008
 public import Formalism.HermitianCurvature.HermitianCurvatureProofs.OperatorRepresentations
 public import Formalism.HermitianCurvature.HermitianCurvatureProofs.RestrictionIrrelevantDoubleLevelOperator
 

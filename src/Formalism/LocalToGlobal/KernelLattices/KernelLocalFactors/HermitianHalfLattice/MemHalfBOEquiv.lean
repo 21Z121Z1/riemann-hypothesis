@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Formalism.LocalToGlobal.KernelLattices.KernelLocalFactors.HermitianHalfLattice.ConjHSymmApply
-public import Formalism.LocalToGlobal.KernelLattices.KernelLocalFactors.KerEquivGen
+public import Formalism.LocalToGlobal.KernelLattices.KernelLocalFactors.Bundle0001
 public import Formalism.LocalToGlobal.KernelLattices.KernelLocalFactors.AlternatingFormStandardHermitian
 
 @[expose] public section

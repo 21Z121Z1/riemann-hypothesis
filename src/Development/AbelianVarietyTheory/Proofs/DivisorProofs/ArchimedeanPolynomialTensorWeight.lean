@@ -1,17 +1,16 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Divisors.SiegelWeilAnisotropicHermitian
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0044
 public import Development.AbelianVarietyTheory.Definitions.Divisors.CTSmallCone
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IndLineInf
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.KStab
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PolEqISupFockDeg
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.KEqOnId
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FixPartEqBotOfLt
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TprodMemDegLE
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1304
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1346
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1354
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1388
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0974
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WeakExponentialActionOnFockVectors
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsLocallyFinitePiTensorSumOfFactorOperators
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FockPolynomialsLocallyFiniteRationalWeights
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1224
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0518
 
 @[expose] public section
 

@@ -3,33 +3,44 @@ module
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.Jets.EmbShortThLeThetaPlain
 public import Formalism.SharpRestriction.GenusPolyhedralBounds.RelativeIndexClassSets.ThetaLeMsupOfSetC
-public import Formalism.SharpRestriction.GenusPolyhedralBounds.RelativeIndexClassSets.WeightedPrimeSumBound
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PullbackSections.LatOfLamSt
-public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.ThExprUniqOfChartIndep2
+public import Formalism.SharpRestriction.GenusPolyhedralBounds.RelativeIndexClassSets.Bundle0002
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PullbackSections.Bundle0003
+public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0007
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.GlobalSectionsRankAlgClosed
-public import Formalism.LocalToGlobal.ProjectiveLattices.FullExists
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0034
 public import Formalism.LocalToGlobal.ProjectiveLattices.SpMapAlgHomId
-public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.FormPlus
-public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.LiesOverFramedOfSquareLevelMovesStatement
-public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.ExistsConjLevelMapByLevelMovesStatement
-public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.LevelCoverDatumSimilitudeAdjointTransportStatement
-public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.FrameFreeFiniteOrderRuleConstPeriodSpaceStatement
-public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.ExistsAdelicElementOfMarkedComponentLatticeStatement
-public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.ExistsAdelicUnitaryOfLatticeIsometriesStatement
-public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.MarkedLatticeIsometryDoubleCosetMoveStatement
-public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.ExistsCompletedIsometryInducingHalfLevelAutomorpStatement
-public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.ActLevFullLevelGroupFramedPointsStatement
-public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ModuliSchemeLevelMapsHeckePointsStatement
-public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.AllUniformizationLawsHold
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.RelabelEmbeddingsGoodBijectiveConjCompat
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.FrMoveTransfer
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.LevelAutomorphismPeriodFamily
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsComplexFrobeniusPoints
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ComponentAttainedAtBaseFrame
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.LiftDatumAlternatingFormSignEqOneStatement
-public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.ComponentEqOfMatchedLatticesMarkings
-public import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.CoverMulShortThetaSeriesIndepOfFramedLift
-public import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.ShortValTotOfPinned
+public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0111
+public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0115
+public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0112
+public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0041
+public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0151
+public import Formalism.LocalToGlobal.ProjectiveLattices.ThShort
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.Bundle0003
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.IsHolPeriods
+public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0119
+public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0143
+public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0114
+public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0158
+public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0219
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.UniformisationConclusion
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.UnifUniqSt
+public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.Bundle0133
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0030
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0101
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0086
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0093
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0071
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0075
+public import Development.AbelianVarietyTheory.Definitions.ExistenceOfLattices.Bundle0001
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0031
+public import Formalism.LocalToGlobal.ProjectiveLattices.ExistsParameterConditions
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0023
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0022
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0010
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0020
+public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.Bundle0060
+public import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.Bundle0059
+public import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.Bundle0063
 
 @[expose] public section
 
@@ -106,7 +117,7 @@ theorem exists_ratio {D : D7} (V : HSp D) {H : ReciprocityTheory.ChartRestrictio
     rw [map_mul, map_mul, map_mul, hxi γ hγ, one_mul] at hv
     obtain ⟨hx, ex⟩ := rdU_eq U f _ _ (hv ▸ mul_ne_zero hc0 (Units.ne_zero _))
     obtain ⟨P₀, -, hP₀, hy₀, -⟩ := hD.1.2 (dict h).1 ⟨_, hx⟩
-    rw [← hv, GlobalTheory.T.frameFree_finiteOrder_rule_const_periodSpace _ H Dw l Xo c σ f hf hfree hroot g _ F hty _ P P₀ y _ hP hP₀ hy hy₀, ex]
+    rw [← hv, _root_.GlobalTheory.FiniteOrderConst.const_on_period_space _ H Dw l Xo c σ f hf hfree hroot g _ F hty _ P P₀ y _ hP hP₀ hy hy₀, ex]
   have pt : ∀ y : FrPt Xo c (CAt σ), ∃ k P, IsPeriod (F.Di (ik k)) (fun j => relab c σ (e j).1) P ∧ y.x = F.u (ik k) P := by
     intro y
     obtain ⟨k, x, t, ht⟩ := hU.2.2.1 y
@@ -115,18 +126,18 @@ theorem exists_ratio {D : D7} (V : HSp D) {H : ReciprocityTheory.ChartRestrictio
   have hA' : ∀ {i i' : Fin F.n} (gam : (F.Di i).La ≃ₗ[𝓞 D.host.E] (F.Di i').La) a,
       ∃ x, gam (F.t i a) = F.t i' a + l.A • x := fun gam a =>
     ⟨gam (F.t _ a) - F.t _ a, by rw [hA, one_smul, add_sub_cancel]⟩
-  obtain ⟨κ, hκ, hκ'⟩ := GlobalTheory.T.exists_adelic_unitary_of_lattice_isometries D V H Dw io hL hF s hs
+  obtain ⟨κ, hκ, hκ'⟩ := _root_.GlobalTheory.ShortMove.exists_adelic_of_isometry D V H Dw io hL hF s hs
   refine ⟨(xi (Matrix.GeneralLinearGroup.det (finHom V κ)) : ℂˣ), fun y y' hy => ?_⟩
   obtain ⟨k, P, hP, hyP⟩ := pt y
   obtain ⟨k', P', hP', hyP'⟩ := pt y'
-  obtain ⟨h, hh⟩ := GlobalTheory.T.exists_adelic_element_of_marked_component_lattice D V H Dw l Xo _ g _ F hty r hr (U.X k) (ik k) (φ k) io (hW k) (hD.1.1 k) hL hF
+  obtain ⟨h, hh⟩ := _root_.GlobalTheory.ShortMove.exists_marked_of_component D V H Dw l Xo _ g _ F hty r hr (U.X k) (ik k) (φ k) io (hW k) (hD.1.1 k) hL hF
   obtain ⟨k₁, γ₁, hγ₁, hm₁, hv₁⟩ := val h
   obtain ⟨k₂, γ₂, hγ₂, hm₂, hv₂⟩ := val (h * κ)
-  obtain ⟨g₁, e₁, t₁⟩ := GlobalTheory.T.markedLattice_isometry_double_coset_move D V H Dw l r hr io (U.X k) (U.X k₁) _ _ (φ k) (φ k₁) (F.t _) (F.t _) LinearMap.id
+  obtain ⟨g₁, e₁, t₁⟩ := _root_.GlobalTheory.ShortMoveIso.marked_isometry D V H Dw l r hr io (U.X k) (U.X k₁) _ _ (φ k) (φ k₁) (F.t _) (F.t _) LinearMap.id
     h γ₁ 1 (hW k) (hW k₁) (hD.1.1 k) (hD.1.1 k₁) hγ₁ rfl (fun a => ⟨0, zero_mem _, by
       rw [map_one, Units.val_one, Matrix.one_mulVec, smul_zero, add_zero]; rfl⟩) hh
     (by rw [mul_one]; exact hm₁)
-  obtain ⟨g₂, e₂, t₂⟩ := GlobalTheory.T.markedLattice_isometry_double_coset_move D V H Dw l r hr io (U.X k) (U.X k₂) _ _ (φ k) (φ k₂) (F.t _) (F.t _) (s.f l.M)
+  obtain ⟨g₂, e₂, t₂⟩ := _root_.GlobalTheory.ShortMoveIso.marked_isometry D V H Dw l r hr io (U.X k) (U.X k₂) _ _ (φ k) (φ k₂) (F.t _) (F.t _) (s.f l.M)
     h γ₂ κ (hW k) (hW k₂) (hD.1.1 k) (hD.1.1 k₂) hγ₂ hκ (hκ' l.M hM) hh
     (by rw [mul_assoc]; exact hm₂)
   obtain ⟨g₃, e₃, t₃⟩ := GlobalTheory.LevStab.exists_isometry_of_levAut F hρ hP hP' (hyP ▸ hy.symm.trans hyP')
@@ -159,7 +170,7 @@ theorem formPlus_of {D : D7} {Q : Par D} (hQ : Q.Pins) {j : ℕ} (hj : InR D j) 
       rw [← hL.2, LinearMap.coe_range, ← Set.range_comp]
       rfl
     rw [h1, Submodule.span_image, (GlobalTheory.RecDict.comp_latG D _).2.1, Submodule.map_top, LinearEquiv.range]
-  have h1 := GlobalTheory.T.liftDatum_alternatingForm_sign_eq_one D Q.H (Q.Dw j) j hj hQ.1.2.1 hQ.1.2.2.1 (hQ.2.2.2 j hj).1 (hQ.2.2.2 j hj).2.1 ψ ε
+  have h1 := _root_.GlobalTheory.Member.sign_eq_one D Q.H (Q.Dw j) j hj hQ.1.2.1 hQ.1.2.2.1 (hQ.2.2.2 j hj).1 (hQ.2.2.2 j hj).2.1 ψ ε
     ((D.sp.W j).frame.equivFun.symm.injective.comp hL.1) hsp hε
   intro x y
   rw [hε, h1]
@@ -257,7 +268,7 @@ theorem actLev_short : Formalism.MainNotions.ModuliIntegralCharts.H1.ChartIndepS
   obtain ⟨inst, hnab⟩ := hT.sh.dNab j hj w.n
   obtain ⟨ph, ψ, x₀, -, hpin, htie⟩ := hT.sh.dPhi j hj w.n hw
   have hTot := hT.sh.shTot j hj (wtA w) w.n (dom_wtA w)
-  obtain ⟨g, hν, hγ, hg⟩ := GlobalTheory.T.exists_completed_isometry_inducing_half_level_automorphism _ _ (T.Q.Dw j) T.Q.l γ
+  obtain ⟨g, hν, hγ, hg⟩ := _root_.GlobalTheory.LevelIsometry.exists_isometry_inducing _ _ (T.Q.Dw j) T.Q.l γ
   obtain ⟨ρ₂, hρ₂⟩ := GlobalTheory.LevelActionLaws.exists_levAut hpq (T.dδ j w.n).Xo₂ g (by rw [hν, sub_self]; exact dvd_zero _)
   obtain ⟨u, hu, hcd⟩ := exists_root T hT hj hxi hw g hν ρ₂ hρ₂
   obtain ⟨hsec, Λ, N, x0, P, hU, hb, hb₂, hO, hX, hP, hR⟩ := hf
@@ -308,7 +319,7 @@ theorem actLev_short : Formalism.MainNotions.ModuliIntegralCharts.H1.ChartIndepS
   have e₁ := GlobalTheory.ShortLiftInvariance.cover_product_indep_of_lift hL hC _ _ _ _ _ _ _ d
     (GlobalTheory.T.moduliScheme_levelMaps_heckePoints'.2 _ _ _ hpq).1 hLev (hA₂.trans hA.symm) hnab ⟨ph, ψ, x₀, hpin, htie⟩ Λ N hU hb₂ hO _ _ hP₂ x0 _
     r' m' hE' k hk y' z₂ y₂' hz₂ ho' v v' hv hv'
-  have e₂ := GlobalTheory.T.shortThetaValue_under_levelMove hL hC _ _ _ _ d.Xo₂ d.c₂ d.nab₂ hnab k ρ₂.hom ν₂ _ _ y₂ y₂' hmv₂ hfr₂ σq hσ
+  have e₂ := _root_.GlobalTheory.ShortValMove.shortValAt_move hL hC _ _ _ _ d.Xo₂ d.c₂ d.nab₂ hnab k ρ₂.hom ν₂ _ _ y₂ y₂' hmv₂ hfr₂ σq hσ
     _ _ _ hP₂ (d.w x0) Λ _ N v' hv'
   rw [funext hw'] at e₂
   refine ⟨v', e₂, (evalAt_smul _ _ _ _ y).trans ?_⟩

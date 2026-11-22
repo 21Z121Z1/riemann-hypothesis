@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.SumChar
+public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0057
 
 @[expose] public section
 

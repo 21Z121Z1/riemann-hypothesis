@@ -2,7 +2,7 @@ module
 
 public import Formalism.PeriodIntegrals.HermitianGenusExtension.SemilocalHermitianLattices.ExistsNormOneOfPair
 public import Formalism.PeriodIntegrals.HermitianGenusExtension.SemilocalHermitianLattices.ExistsSqAbsNormOfInert
-public import Formalism.HermitianLattices.HermitianLatticesProofs.LocDual
+public import Formalism.HermitianLattices.HermitianLatticesProofs.Bundle0003
 
 @[expose] public section
 

@@ -1,8 +1,8 @@
 module
 
-public import Formalism.LocalToGlobal.GroupLattices.ComparisonMaps.CmpCMemFunMod
+public import Formalism.LocalToGlobal.GroupLattices.ComparisonMaps.Bundle0004
 public import Formalism.LocalToGlobal.GroupLattices.ComparisonMaps.RecThm
-public import Formalism.LocalToGlobal.GroupLattices.ComparisonMaps.SpanImageOfSurj
+public import Formalism.LocalToGlobal.GroupLattices.ComparisonMaps.Bundle0009
 
 @[expose] public section
 

@@ -2,15 +2,15 @@ module
 
 public import Mathlib
 public import GroundTheory.AutomorphicForms.AutomorphicFormSpaces.Height
-public import GroundTheory.AutomorphicForms.TraceFormulaConvolution
+public import GroundTheory.AutomorphicForms.Bundle0015
 public import GroundTheory.AutomorphicForms.CuspidalDiscreteness.SummandsAreCuspForms
 public import GroundTheory.AutomorphicForms.MultiplicityOne.OpenSubgroupRep
 public import GroundTheory.AutomorphicForms.MultiplicityOne.FiniteLevelGroups
-public import GroundTheory.AutomorphicForms.MultiplicityOne.FiniteAdelicHaar
+public import GroundTheory.AutomorphicForms.MultiplicityOne.Bundle0001
 public import GroundTheory.AutomorphicForms.L2LocalComponents.CenterCommute
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.ArchimedeanCompact.InfEmbGrpEq
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.ArchimedeanCompact.GrpEqMemArchCompact
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.GaloisLibrary.WignerHighestWeights.ExpGen
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.GaloisLibrary.WignerHighestWeights.Bundle0004
 
 @[expose] public section
 

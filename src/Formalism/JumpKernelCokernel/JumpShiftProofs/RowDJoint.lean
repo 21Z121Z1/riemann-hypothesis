@@ -1,8 +1,8 @@
 module
 
 public import Formalism.JumpKernelCokernel.LemmaDJoint
-public import Formalism.JumpKernelCokernel.JumpShiftProofs.ThickB
-public import Formalism.JumpKernelCokernel.JumpShiftProofs.ExpRowD
+public import Formalism.JumpKernelCokernel.JumpShiftProofs.Bundle0002
+public import Formalism.JumpKernelCokernel.JumpShiftProofs.Bundle0003
 
 @[expose] public section
 

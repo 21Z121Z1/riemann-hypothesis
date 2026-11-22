@@ -1,12 +1,9 @@
 module
 
-public import Development.EtaleCohomology.EtaleSheaves.LeafKillCut
+public import Development.EtaleCohomology.EtaleSheaves.Bundle0013
 public import Development.EtaleCohomology.EtaleSheaves.KummerSequence.LeafKumMuMapPf
-public import Development.EtaleCohomology.EtaleSheaves.KummerSequence.LeafKumMuInjPfGlue
+public import Development.EtaleCohomology.EtaleSheaves.KummerSequence.Bundle0003
 public import Development.EtaleCohomology.EtaleSheaves.KummerSequence.TwLocGenPf
-public import Development.EtaleCohomology.EtaleSheaves.KummerSequence.GmSepPf
-public import Development.EtaleCohomology.EtaleSheaves.KummerSequence.LeafKumMuSurjPowPf
-public import Development.EtaleCohomology.EtaleSheaves.KummerSequence.LeafKumMuSurjPrimPf
 public import Development.EtaleCohomology.EtaleSheaves.KummerSequence.LeafUnitRootPf
 
 @[expose] public section

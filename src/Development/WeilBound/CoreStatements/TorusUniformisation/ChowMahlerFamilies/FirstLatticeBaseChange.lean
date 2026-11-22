@@ -1,12 +1,11 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.LieLatticeData
-public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.MemSpanOverOfMem
-public import Development.WeilBound.CoreStatements.TorusUniformisation.ChowMahlerFamilies.XDotdualBc
-public import Development.WeilBound.CoreStatements.TorusUniformisation.ChowMahlerFamilies.XSummandBc
-public import Development.WeilBound.CoreStatements.TorusUniformisation.ChowMahlerFamilies.XSummandOfQuot
-public import Development.WeilBound.CoreStatements.TorusUniformisation.ChowMahlerFamilies.XGraphRestrictBc
+public import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.Bundle0002
+public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.Bundle0009
+public import Development.WeilBound.CoreStatements.TorusUniformisation.ChowMahlerFamilies.Bundle0005
+public import Development.WeilBound.CoreStatements.TorusUniformisation.ChowMahlerFamilies.Bundle0003
+public import Development.WeilBound.CoreStatements.TorusUniformisation.ChowMahlerFamilies.Bundle0004
 
 @[expose] public section
 

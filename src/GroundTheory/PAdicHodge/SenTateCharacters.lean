@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import GroundTheory.PAdicHodge.SenTateCharTrace
-public import GroundTheory.PAdicHodge.SenTateCharQp
+public import GroundTheory.PAdicHodge.Bundle0001
 
 @[expose] public section
 

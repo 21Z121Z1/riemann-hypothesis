@@ -2,13 +2,17 @@ module
 
 public import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.RadicalStalks.IsConst
 public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.CrystallinePull2SumCup
-public import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.RadicalStalks.FrobEpi
-public import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.RadicalStalks.OneLeft
+public import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.RadicalStalks.Bundle0001
+public import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.RadicalStalks.Bundle0005
 public import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.RadicalStalks.EpsMulSub
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AbelianSchemeDeRhamLocallyFreeHodgeDegenerates
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CrystallineSmoothLiftOfRelations
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HodgeLieSequenceExactAbelianSchemeStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AbelianSchemeSpecFieldSmoothOfRelativeDimension
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2974
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2788
+public import Mathlib
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2694
+public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.Bundle0007
+public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.BijectiveCechDeRhamComparisonDegreeOne
+public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.AbelianHodgeDeRham
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2579
 
 @[expose] public section
 
@@ -184,7 +188,7 @@ theorem UpperTheory.Gal.Ord.hasse :
   obtain ⟨T, _, _, τ, j, u, hj, hq, hku, hτ⟩ := hdeep
   have hab := o.ab
   obtain ⟨g, hg⟩ := GlobalTheory.AbFieldDim.exists_smoothOfRelativeDimension k o.A hab
-  have HL : LieExact o.A := GlobalTheory.T.hodgeLieSequence_exact_abelianScheme GlobalTheory.SmoothLift.crystallineSmoothLift_of_relations
+  have HL : LieExact o.A := _root_.GlobalTheory.LieHodge.lieExact_of_crystallineLift_hodgeDeRham GlobalTheory.SmoothLift.crystallineSmoothLift_of_relations
     GlobalTheory.AbCoh.abelianHodgeDeRham k o.A g hab hg
   haveI := hab.smooth
   haveI : AlgebraicGeometry.IsReduced o.A.left := GlobalTheory.isReduced_of_smooth_of_isReduced o.A.hom

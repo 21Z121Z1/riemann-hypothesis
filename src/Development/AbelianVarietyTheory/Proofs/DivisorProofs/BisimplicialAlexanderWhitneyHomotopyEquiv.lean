@@ -2,9 +2,9 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HasTotalBiChains
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AwOCommDStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DiagonalDifferentialEval
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TotalDifferentialEval
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0335
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0339
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0365
 
 @[expose] public section
 

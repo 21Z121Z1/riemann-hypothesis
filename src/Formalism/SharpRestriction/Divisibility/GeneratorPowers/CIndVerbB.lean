@@ -1,8 +1,8 @@
 module
 
-public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.CIndVerb
+public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0031
 public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.ExpOfPf
-public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.LinEigPf
+public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0033
 
 @[expose] public section
 

@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Formalism.LocalToGlobal.SiegelLatticeTheory.FlagStabilizerTensors.ColDict
+public import Formalism.LocalToGlobal.SiegelLatticeTheory.FlagStabilizerTensors.Bundle0001
 public import Formalism.LocalToGlobal.SiegelLatticeTheory.FlagStabilizerTensors.RootLatticeThresholds.ColDictValC
-public import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.InclusionInjective
+public import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Bundle0002
 public import Formalism.LocalToGlobal.SiegelLatticeTheory.FlagStabilizerTensors.RootLatticeThresholds.ColDictValCPf
 
 @[expose] public section

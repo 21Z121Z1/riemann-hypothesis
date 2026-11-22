@@ -1,10 +1,10 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.EMatMulNegCol
-public import Development.AutomorphicSpectrum.Proofs.GlobalProofs.FibreMassEq
-public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.IntegralClosureCompletedCMAlgebraCompactOpen
-public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.DictionaryStatement
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0512
+public import Development.AutomorphicSpectrum.Proofs.GlobalProofs.Bundle0026
+public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0108
+public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.Bundle0054
 public import Development.WeilBound.CoreStatements.HomogeneousNonvanishing.SpectralNormIntegrality.SpecInt
 
 @[expose] public section

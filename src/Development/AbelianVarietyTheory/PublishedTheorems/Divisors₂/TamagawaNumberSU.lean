@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Divisors.IsTamagawa
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0021
 
 @[expose] public section
 

@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.WeilGramSignature
+public import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.Bundle0018
 
 @[expose] public section
 

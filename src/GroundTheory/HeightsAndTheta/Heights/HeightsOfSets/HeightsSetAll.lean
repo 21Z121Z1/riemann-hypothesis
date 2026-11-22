@@ -2,10 +2,10 @@ module
 
 public import Mathlib
 public import GroundTheory.HeightsAndTheta.Heights.HeightsOfSets.FiniteSupportHeight
-public import GroundTheory.HeightsAndTheta.Heights.HeightsOfSets.FieldChange
+public import GroundTheory.HeightsAndTheta.Heights.HeightsOfSets.Bundle0002
 public import GroundTheory.HeightsAndTheta.Heights.HeightsOfSets.Comparison
 public import GroundTheory.HeightsAndTheta.Heights.HeightsOfSets.DenseBoundedHeight
-public import GroundTheory.HeightsAndTheta.Heights.HeightsOfSets.DegreeTopEqArithDegree
+public import GroundTheory.HeightsAndTheta.Heights.HeightsOfSets.Bundle0004
 
 @[expose] public section
 

@@ -2,9 +2,8 @@ module
 
 public import Mathlib
 public import Formalism.LocalToGlobal.GaloisLevelStructure.DefsAut
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExistsIntegerUnitSplitPlaceConjugatePrimeStatement
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.CmFieldAdeleSplitPlaceSupportIntegralStatement
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.HeckeDoubleCosetAdicCompletionInvMulIntegralStatement
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0017
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0019
 
 @[expose] public section
 
@@ -40,7 +39,7 @@ theorem local_int {F : Type} [Field F] [NumberField F] (v : HeightOneSpectrum (�
     (hg' : (g' : Matrix (Fin n) (Fin n) (v.adicCompletion F)) =
       (a' : Matrix (Fin n) (Fin n) (v.adicCompletion F)) * Formalism.UG.diagJ n ϖ k * (b' : Matrix (Fin n) (Fin n) (v.adicCompletion F))) :
     ∀ i j, Valued.v (((g⁻¹ * g' : GL (Fin n) (v.adicCompletion F)) : Matrix (Fin n) (Fin n) (v.adicCompletion F)) i j) ≤ 1 :=
-  GlobalTheory.T.heckeDoubleCoset_adicCompletion_inv_mul_integral F v n ϖ k hϖ a a' b b' g g' ha' hai hbi hb' hc hg hg'
+  _root_.GlobalTheory.hecke_loc_inv_mul_int F v n ϖ k hϖ a a' b b' g g' ha' hai hbi hb' hc hg hg'
 
 theorem triv_mul {n : ℕ} {T : Set (HeightOneSpectrum (𝓞 L⁺))} {x y : GA L n}
     (hx : TrivOutside (L := L) T x) (hy : TrivOutside (L := L) T y) :

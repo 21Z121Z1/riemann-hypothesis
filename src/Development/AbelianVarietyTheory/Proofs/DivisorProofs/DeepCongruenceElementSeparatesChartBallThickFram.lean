@@ -1,17 +1,16 @@
 module
 
-public import Development.AbelianVarietyTheory.Definitions.Divisors.BudgetAt
-public import Development.AbelianVarietyTheory.Definitions.Divisors.ToKnownTheoremsOf
-public import Development.AbelianVarietyTheory.Definitions.Divisors.EightDvdNCol
-public import Development.AbelianVarietyTheory.Definitions.Divisors.QuoIff
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0064
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0059
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0056
 public import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsIsTauZeroNonzeroAll
 public import Development.AbelianVarietyTheory.Definitions.TorusSections.IsTorusOf
 public import Development.AbelianVarietyTheory.Definitions.Divisors.MulSmulIdemMem
-public import Development.AbelianVarietyTheory.Definitions.Divisors.UnifOfSpaceEq
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsSelfDualTr
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArakelovVolumes.UpperBounds.FundSetMeasStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MajorantChartPointCentreFactorTwo
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CardGroupElementsChartReturnLe
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0044
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1804
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArakelovVolumes.UpperBounds.Bundle0004
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1432
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1445
 public import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.ExistsThickPointHyperbolic
 
 @[expose] public section

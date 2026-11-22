@@ -2,9 +2,8 @@ module
 
 public import Formalism.SharpRestriction.InertJacobiLevels.ExistsLarge
 public import Formalism.SharpRestriction.InertJacobiLevels.AsmIface
-public import Formalism.SharpRestriction.InertJacobiLevels.TiesView
-public import Formalism.SharpRestriction.InertJacobiLevels.TiesLat
-public import Formalism.SharpRestriction.InertJacobiLevels.TwoPrimeFieldMemLevelOfCoprime
+public import Formalism.SharpRestriction.InertJacobiLevels.Bundle0004
+public import Formalism.SharpRestriction.InertJacobiLevels.Bundle0003
 
 @[expose] public section
 

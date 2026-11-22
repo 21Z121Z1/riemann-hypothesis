@@ -1,11 +1,11 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Divisors.IsUnifAt
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LocalIdeleMemNsUnits
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsUnitaryCharOfOpenSubgroupAndHom
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsUnitaryHeckeCharacterNormStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.InfinityTypeUnitaryHeckeCharCMRestrictingToEtaStatement
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0036
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1073
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0023
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2690
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1109
 public import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.SatakeExponents.UniformizerValuations.QuadraticCharacterNorms.QuadraticCharacterSquare
 public import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.SatakeExponents.UniformizerValuations.QuadraticCharacterNorms.InertCharacterUnramified
 
@@ -56,7 +56,7 @@ theorem muExists : ∀ (E : Type) [Field E] [NumberField E] [IsCMField E], Unr E
     rw [hα] at h
     simpa [a] using h
   have hunit : μ.IsUnitary := hχu
-  obtain ⟨e, he, hz⟩ := GlobalTheory.T.infinityType_unitaryHeckeCharCM_restricting_to_eta E μ hunit hres
+  obtain ⟨e, he, hz⟩ := _root_.GlobalTheory.MuInfType.infType E μ hunit hres
   exact ⟨μ, e, hunit, hres, PositivityTheory.Rg.BcB.F.Fok.Mu3Aux1.inert_character_unramified E hU μ hres hns, he, hz⟩
 
 end PositivityTheory.Rg.BcB.F.Fok.Mu3

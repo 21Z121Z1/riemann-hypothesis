@@ -1,10 +1,10 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.GaloisSideTwistedSelmerAuxiliaryPrimes
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.LengthKerMatActKmodEqAddValDet
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.RestrictionH1MemBlochKato
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.IsIntegralOfNormLeOne
+public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0012
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0239
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0190
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0188
 
 @[expose] public section
 

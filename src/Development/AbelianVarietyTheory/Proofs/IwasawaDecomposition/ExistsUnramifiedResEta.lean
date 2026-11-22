@@ -2,15 +2,14 @@ module
 
 public import Mathlib
 public import Formalism.LocalRingCardinality.RhoDetPrimeEqMuTildeMulChiPow
-public import Formalism.LocalToGlobal.Divisibility.Tuples
-public import Formalism.LocalToGlobal.UnitaryNorms.CharTied
+public import Formalism.LocalToGlobal.Divisibility.Bundle0001
+public import Formalism.LocalToGlobal.UnitaryNorms.Bundle0006
 public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.IsRationalUnitaryDeterminantMapRationalUnitaryTo
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsUnitaryCharOfOpenSubgroupAndHom
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.UnitOpenAndCongrOpen
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsProdUnifMulUnitIdl
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ContinuousOfTameLoc
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.UnderEqIffConjPl
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsUnitOfRoot
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0023
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0096
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0092
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0098
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0095
 
 @[expose] public section
 

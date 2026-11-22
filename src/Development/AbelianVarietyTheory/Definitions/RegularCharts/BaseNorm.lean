@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Formalism.LocalToGlobal.ProjectiveLattices.NormsFree
-public import Formalism.LocalToGlobal.ProjectiveLattices.CompOrd
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0013
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0012
 
 @[expose] public section
 

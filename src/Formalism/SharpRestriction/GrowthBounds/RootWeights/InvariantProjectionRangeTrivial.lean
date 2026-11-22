@@ -1,6 +1,6 @@
 module
 
-public import Formalism.SharpRestriction.GrowthBounds.RootWeights.HomLatticeDividedPowerStable
+public import Formalism.SharpRestriction.GrowthBounds.RootWeights.Bundle0019
 
 @[expose] public section
 

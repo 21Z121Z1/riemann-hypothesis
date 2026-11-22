@@ -1,7 +1,7 @@
 module
 
-public import Formalism.SharpRestriction.RamificationFrobenius.TotientGaloisClasses.Analytic
-public import Formalism.StatementOC
+public import Formalism.SharpRestriction.RamificationFrobenius.TotientGaloisClasses.Bundle0001
+public import Formalism.Bundle0001
 
 @[expose] public section
 

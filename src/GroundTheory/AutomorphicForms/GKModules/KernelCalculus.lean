@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import GroundTheory.AutomorphicForms.GKModules.Garding
-public import GroundTheory.AutomorphicForms.AutomorphicFormSpaces.GKStableConv
+public import GroundTheory.AutomorphicForms.AutomorphicFormSpaces.Bundle0001
 
 @[expose] public section
 

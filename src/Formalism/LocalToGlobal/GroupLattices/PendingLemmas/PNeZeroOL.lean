@@ -1,12 +1,12 @@
 module
 
 public import Formalism.LocalToGlobal.GroupLattices.CloudFilling.CloudBound
-public import Formalism.LocalToGlobal.GroupLattices.LevelGatherings.RepTie
+public import Formalism.LocalToGlobal.GroupLattices.LevelGatherings.Bundle0004
 public import Formalism.LocalToGlobal.GroupLattices.PerfectRings.ExtWRec
 public import Formalism.LocalToGlobal.GroupLattices.ComparisonMaps.ChainFirstChainK
 public import Formalism.LocalToGlobal.GroupLattices.PendingLemmas.ConditionIffAdditiveMaps
-public import Formalism.LocalToGlobal.GroupLattices.PendingLemmas.CoeffOneLNe
-public import Formalism.LocalToGlobal.GroupLattices.PendingLemmas.SysC
+public import Formalism.LocalToGlobal.GroupLattices.PendingLemmas.Bundle0001
+public import Formalism.LocalToGlobal.GroupLattices.PendingLemmas.Bundle0002
 
 @[expose] public section
 

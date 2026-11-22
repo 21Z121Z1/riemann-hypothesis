@@ -1,6 +1,6 @@
 module
 
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.GEquivIntL
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0320
 
 @[expose] public section
 

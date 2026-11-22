@@ -1,6 +1,6 @@
 module
 
-public import Development.EtaleCohomology.EtaleTrace.LPdCut
+public import Development.EtaleCohomology.EtaleTrace.Bundle0008
 
 @[expose] public section
 

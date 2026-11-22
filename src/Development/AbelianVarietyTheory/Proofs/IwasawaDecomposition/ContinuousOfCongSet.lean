@@ -2,11 +2,11 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.TrueColumnChoicesHeckeCharReferenceEqOne
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.UnitOpenAndCongrOpen
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IdeleCharacterTrivialOnLocalUnits
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.HeckeCharacterUnramifiedAeAndExistsLevel
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsProdInfMulFinPart
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.UnderEqOfMapEq
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0096
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0094
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0093
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0099
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0101
 
 @[expose] public section
 

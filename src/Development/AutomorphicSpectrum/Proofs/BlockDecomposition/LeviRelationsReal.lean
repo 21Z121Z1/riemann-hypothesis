@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.RealDescent.RealLeviDescent.LeviCommutantWordReduction
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.TwLMulSelf
+public import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.RealDescent.RealLeviDescent.Bundle0002
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0427
 
 @[expose] public section
 

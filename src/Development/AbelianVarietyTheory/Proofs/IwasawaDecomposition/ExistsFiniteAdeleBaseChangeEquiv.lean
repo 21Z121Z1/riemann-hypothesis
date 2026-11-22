@@ -2,12 +2,11 @@ module
 
 public import Mathlib
 public import Formalism.LocalRingCardinality.RhoDetPrimeEqMuTildeMulChiPow
-public import Formalism.LocalToGlobal.Divisibility.Tuples
+public import Formalism.LocalToGlobal.Divisibility.Bundle0001
 public import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Levelaf
-public import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.AfsplitB
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.FiniteAdeleStrongApproximationModNat
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.IntegralFiniteAdeleCompleteSeparated
-public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.HeightOneSpectrumPlacesOverFiniteSet
+public import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Bundle0006
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0008
+public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.Bundle0011
 
 @[expose] public section
 

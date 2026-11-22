@@ -5,7 +5,7 @@ public import Formalism.LocalToGlobal.ProjectiveLattices.PlaceBelow
 public import Formalism.SharpRestriction.Divisibility.ModuliIntegralCharts
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.DiscreteValuationRings.WchartLePreimage
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.UniformisationConclusion
-public import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.ValNeBot
+public import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.Bundle0001
 
 @[expose] public section
 

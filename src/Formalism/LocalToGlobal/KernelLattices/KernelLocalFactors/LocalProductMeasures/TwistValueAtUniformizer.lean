@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Formalism.LocalToGlobal.KernelLattices.MuProd
+public import Formalism.LocalToGlobal.KernelLattices.Bundle0003
 public import Formalism.LocalToGlobal.KernelLattices.KernelLocalFactors.ThDistC
 
 @[expose] public section

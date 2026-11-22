@@ -1,9 +1,9 @@
 module
 
-public import Formalism.SharpRestriction.GrowthBounds.CoarseMultiplicity.Lemma44IdentityOfRawTail
+public import Formalism.SharpRestriction.GrowthBounds.CoarseMultiplicity.Bundle0004
 public import Formalism.SharpRestriction.GrowthBounds.CoarseMultiplicity.PolyUpperBoundDelta
-public import Formalism.SharpRestriction.GrowthBounds.CoarseMultiplicity.TestFlat
-public import Formalism.SharpRestriction.GrowthBounds.CoarseMultiplicity.SegFormZeroRight
+public import Formalism.SharpRestriction.GrowthBounds.CoarseMultiplicity.Bundle0006
+public import Formalism.SharpRestriction.GrowthBounds.CoarseMultiplicity.Bundle0001
 
 @[expose] public section
 

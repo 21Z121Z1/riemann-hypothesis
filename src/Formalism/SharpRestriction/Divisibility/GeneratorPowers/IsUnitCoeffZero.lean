@@ -2,7 +2,7 @@ module
 
 public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.FormalGroupLinearSecond
 public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.LogLowOrderOne
-public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.BalOf
+public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0019
 public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.ConstantCoeffAddFirstSecond
 
 @[expose] public section

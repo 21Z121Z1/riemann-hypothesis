@@ -2,7 +2,7 @@ module
 
 public import Formalism.SharpRestriction.GrowthBounds.IntegralWeylLatticeSpan.WeylLatticeDescent
 public import Formalism.SharpRestriction.GrowthBounds.IntegralWeylLatticeSpan.WeylEqSpanInt
-public import Formalism.LocalToGlobal.GroupLattices.ComparisonMaps.EvenBlockRowActionEval
+public import Formalism.LocalToGlobal.GroupLattices.ComparisonMaps.Bundle0010
 
 @[expose] public section
 

@@ -2,8 +2,8 @@ module
 
 public import Mathlib
 public import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.ProjectiveAutomorphicHecke.CentralEig2
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsConjOfNotMem
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ProductOfLocalLevelsUnitaryIsOpenIsCompactIsLeve
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0756
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1081
 
 @[expose] public section
 

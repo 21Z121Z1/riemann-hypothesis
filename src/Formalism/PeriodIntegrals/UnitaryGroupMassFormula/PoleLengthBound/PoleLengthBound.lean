@@ -1,7 +1,7 @@
 module
 
 public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.PoleLengthBound.StepsOf
-public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.PoleLengthBound.BallQuot
+public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.PoleLengthBound.Bundle0002
 
 @[expose] public section
 

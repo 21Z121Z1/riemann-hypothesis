@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsLineGenOn
-public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.InjectiveOfIsCptGen
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.Bundle0004
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.Bundle0002
 
 @[expose] public section
 

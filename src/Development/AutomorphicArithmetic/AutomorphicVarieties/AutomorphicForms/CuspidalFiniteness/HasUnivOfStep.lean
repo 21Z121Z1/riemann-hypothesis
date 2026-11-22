@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Formalism.RealPlaceAnalysis.ThirdArithmeticHolds
-public import GroundTheory.AutomorphicForms.HarishChandraCentre
+public import Formalism.RealPlaceAnalysis.Bundle0004
+public import GroundTheory.AutomorphicForms.Bundle0016
 
 @[expose] public section
 

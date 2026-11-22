@@ -2,10 +2,10 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.SpanningFamilies.IsWeakOfDatum
-public import Development.AbelianVarietyTheory.Definitions.SpanningFamilies.IsHeatZero
-public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.ExistsCtxBase
+public import Development.AbelianVarietyTheory.Definitions.SpanningFamilies.Bundle0001
+public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.Bundle0055
 public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.ThetaFunctionFundamentalDomainInnerProductBasic
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsIsFundamentalDomain
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0162
 
 @[expose] public section
 

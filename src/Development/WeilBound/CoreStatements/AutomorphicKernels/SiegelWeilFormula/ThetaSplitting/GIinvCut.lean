@@ -1,8 +1,8 @@
 module
 
-public import Development.WeilBound.CoreStatements.AutomorphicKernels.SiegelWeilFormula.CayleyTransform.CompFinFinOne
-public import Development.WeilBound.ThetaLifts.CartanFactorisation.Unimod
-public import Development.WeilBound.ThetaLifts.CartanFactorisation.IntegrableOnRight
+public import Development.WeilBound.CoreStatements.AutomorphicKernels.SiegelWeilFormula.CayleyTransform.Bundle0001
+public import Development.WeilBound.ThetaLifts.CartanFactorisation.Bundle0003
+public import Development.WeilBound.ThetaLifts.CartanFactorisation.Bundle0001
 public import Development.WeilBound.CoreStatements.AutomorphicKernels.SiegelWeilFormula.ThetaSplitting.ActUDiagMonomial
 public import Development.WeilBound.CoreStatements.AutomorphicKernels.SiegelWeilFormula.ThetaSplitting.GIinvA
 

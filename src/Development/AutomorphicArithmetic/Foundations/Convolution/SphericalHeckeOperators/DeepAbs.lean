@@ -2,10 +2,9 @@ module
 
 public import Development.AutomorphicArithmetic.Foundations.Convolution.SphericalHeckeOperators.SymSum
 public import Development.AutomorphicArithmetic.Foundations.Convolution.SphericalHeckeOperators.CvSmulRight
-public import Development.AutomorphicArithmetic.Foundations.Convolution.SphericalHeckeOperators.NonVan
-public import Development.AutomorphicArithmetic.Foundations.Convolution.SphericalHeckeOperators.MemSuppMono
-public import Development.AutomorphicArithmetic.Foundations.Convolution.SphericalHeckeOperators.SymAlg
-public import Development.AutomorphicArithmetic.Foundations.Convolution.SphericalHeckeOperators.DcoShape
+public import Development.AutomorphicArithmetic.Foundations.Convolution.SphericalHeckeOperators.Bundle0003
+public import Development.AutomorphicArithmetic.Foundations.Convolution.SphericalHeckeOperators.Bundle0002
+public import Development.AutomorphicArithmetic.Foundations.Convolution.SphericalHeckeOperators.Bundle0001
 
 @[expose] public section
 

@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import GroundTheory.GlobalFields.ComplexMultiplication.ClassGroupActionLattice
-public import GroundTheory.GlobalFields.ComplexMultiplication.JInvariantHomothety
+public import GroundTheory.GlobalFields.ComplexMultiplication.Bundle0004
 
 @[expose] public section
 

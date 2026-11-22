@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import ReciprocityTheory.ReductiveGroups.UnramifiedIntegrals.FgDefs
+public import ReciprocityTheory.ReductiveGroups.UnramifiedIntegrals.Bundle0011
 
 @[expose] public section
 

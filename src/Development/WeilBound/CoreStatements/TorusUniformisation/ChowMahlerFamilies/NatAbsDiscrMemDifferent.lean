@@ -2,10 +2,10 @@ module
 
 public import Mathlib
 public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.IsLatFamilyCongr
-public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.ExistsGenOfIsVBOne
-public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.HtWSpanSingleton
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LieOmegaLatticeVectorBundle
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.HodgeTateEigenLatticeEq
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.Bundle0004
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.Bundle0007
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0130
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0061
 
 @[expose] public section
 

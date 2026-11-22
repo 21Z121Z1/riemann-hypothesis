@@ -2,8 +2,8 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.FourierJacobiAverage
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IsMulLeftInvariantVolGL
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.GlCharacterEqOneOfTransposeInv
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0039
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0031
 
 @[expose] public section
 

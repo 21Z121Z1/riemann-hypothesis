@@ -1,7 +1,7 @@
 module
 
 public import Formalism.LocalToGlobal.TorsionIntegrality.GaussSumParity.LetterShift
-public import Formalism.ThetaLogCoordinates.UniformThetaSubstitution.FinalS
+public import Formalism.ThetaLogCoordinates.UniformThetaSubstitution.Bundle0002
 
 @[expose] public section
 

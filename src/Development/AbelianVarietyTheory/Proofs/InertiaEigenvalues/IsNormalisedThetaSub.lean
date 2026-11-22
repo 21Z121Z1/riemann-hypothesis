@@ -1,10 +1,10 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.IsNormalisedOfIsDiscrete
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.CapCommuteRtInfGL
+public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.Bundle0008
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0111
 public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsCsdOfCharOfRes
-public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.GlRelNegTAndQdet
+public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0033
 
 @[expose] public section
 

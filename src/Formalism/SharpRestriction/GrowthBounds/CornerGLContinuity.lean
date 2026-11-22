@@ -2,15 +2,15 @@ module
 
 public import Formalism.LocalRingCardinality.DataParams₂
 public import Formalism.SharpRestriction.ParConsts
-public import Formalism.SharpRestriction.ElevenLe
+public import Formalism.SharpRestriction.Bundle0001
 public import Formalism.SharpRestriction.GrowthBounds.UnramifiedQuadraticSetting
 public import Formalism.SharpRestriction.GrowthBounds.IsResidueClassZero
 public import Formalism.SharpRestriction.GrowthBounds.SegRing
-public import Formalism.SharpRestriction.GrowthBounds.SelectionLemmas
+public import Formalism.SharpRestriction.GrowthBounds.Bundle0002
 public import Formalism.SharpRestriction.GrowthBounds.FormalGroupSystem
 public import Formalism.SharpRestriction.GrowthBounds.SmallOrderPrimes
 public import Formalism.SharpRestriction.GlobalSchurBounds.CMFieldLemmas
-public import Formalism.SharpRestriction.AdmissibleParameterJoins.GandSa
+public import Formalism.SharpRestriction.AdmissibleParameterJoins.Bundle0002
 
 @[expose] public section
 

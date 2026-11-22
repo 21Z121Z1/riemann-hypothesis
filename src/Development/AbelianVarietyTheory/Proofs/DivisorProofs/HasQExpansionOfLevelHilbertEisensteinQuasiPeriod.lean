@@ -1,10 +1,10 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Divisors.HasLevelStd
-public import Development.AbelianVarietyTheory.Definitions.Divisors.HasQIff
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HilbertEisensteinLatticeJetSplitDirectionAddStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HilbertEisensteinCoeffSupportTraceFinite
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0012
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0001
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0563
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0484
 
 @[expose] public section
 

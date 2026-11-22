@@ -1,13 +1,15 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.IsRead
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0025
 public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ContinuousCharactersLocallyConstantNonarchLocalF
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.KernelReductionExtendEvaluatedIntegratedStatement
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.FlatFactorReductionKernelAllNonFreeUnreadEntriesStatement
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.FlatFactorReductionKernelIntegratesFreeEntriesStatement
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.PartialReductionEqZeroOfFlatMapColumnZeroStatement
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ExistsFactorThroughFlatMapFourierJacobiColumnStatement
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0035
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0037
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.FlatFactorReductionKernelIntegratesFreeEntries
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0030
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0028
+public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.Bundle0002
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.FlatMapsPreserveSchwartzBruhatAndSurjective
 
 @[expose] public section
 
@@ -86,7 +88,7 @@ theorem GlobalTheory.FlatFactor.flCol_factor : ∀ (k : Type) [Field k] [Valuati
     exact this
 
   have hS1 : KerRed ν (evC n n' c ρ) (itB n n' c ρ) β L' := by
-    refine GlobalTheory.T.kernelReduction_extend_evaluated_integrated k ψ ν hψc hψ1 hν _ _ M L' β ∅ ∅ _ _ (Finset.empty_subset _) (Finset.empty_subset _) ?_
+    refine _root_.GlobalTheory.FlatFactor.KerRedStep.kerRed_extend k ψ ν hψc hψ1 hν _ _ M L' β ∅ ∅ _ _ (Finset.empty_subset _) (Finset.empty_subset _) ?_
       (kerRed_empty ν β L') ?_ ?_
     · rw [Finset.disjoint_left]
       rintro ⟨r, q⟩ h1 h2
@@ -120,8 +122,8 @@ theorem GlobalTheory.FlatFactor.flCol_factor : ∀ (k : Type) [Field k] [Valuati
       rw [hT, map_smul, h3, smul_smul, ← Circle.coe_mul, ← AddChar.map_add_eq_mul, neg_add_cancel,
         AddChar.map_zero_eq_one, Circle.coe_one, one_smul]
   have hS2 := GlobalTheory.T.flatFactorReduction_kernel_all_nonFreeUnread_entries k ψ ν hψc hψ1 hν n n' c ρ M L' hc hTw hS1
-  have hS3 := GlobalTheory.T.flatFactorReduction_kernel_integrates_free_entries k ψ ν hψc hψ1 hν n n' c ρ M L' hc hTw hS2
-  refine GlobalTheory.T.exists_factor_through_flatMapFourierJacobiColumn k ψ ν hψc hν n n' c (ρ + 1) (by omega) (by omega) M L ?_
+  have hS3 := _root_.GlobalTheory.FlatFactor.UpStage.kerRed_itFree k ψ ν hψc hψ1 hν n n' c ρ M L' hc hTw hS2
+  refine _root_.GlobalTheory.LocFlat.flCol_factor k ψ ν hψc hν n n' c (ρ + 1) (by omega) (by omega) M L ?_
   intro Φ hΦ
   let Θ : SB Mt := ⟨fun t => (ψ (-ch t) : ℂ) * Φ.1 t, tw _ continuous_ch.neg Φ⟩
   have hΘ : T Θ = Φ := by
@@ -129,6 +131,6 @@ theorem GlobalTheory.FlatFactor.flCol_factor : ∀ (k : Type) [Field k] [Valuati
     simp only [T, Θ]
     rw [← mul_assoc, ← Circle.coe_mul, ← AddChar.map_add_eq_mul, add_neg_cancel, AddChar.map_zero_eq_one,
       Circle.coe_one, one_mul]
-  have := hS3 Θ (GlobalTheory.T.partialReduction_eq_zero_of_flatMapColumn_zero k ψ ν n n' c ρ hc Φ.1 hΦ)
+  have := hS3 Θ (_root_.GlobalTheory.FlatRed.red_eq_zero_of_flCol k ψ ν n n' c ρ hc Φ.1 hΦ)
   rw [hL', hΘ] at this
   exact this

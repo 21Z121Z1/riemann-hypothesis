@@ -2,7 +2,7 @@ module
 
 public import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.AdmissibleResidues.SumThree
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.Classifies
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.CountSys
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.Bundle0006
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.GaloisLibrary.CrystallineBaseChange.CqStmt
 
 @[expose] public section

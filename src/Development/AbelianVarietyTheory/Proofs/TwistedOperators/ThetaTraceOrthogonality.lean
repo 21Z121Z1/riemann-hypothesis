@@ -1,11 +1,11 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IsTranslSum
-public import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.WeilIsIffCommIsOfAndLiftSubsingleton
-public import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.GlobalFnsHolds
-public import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.TorsionRationalOverFiniteExtensionLevelStructure
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.FirstCohomology.AlphaPair
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0347
+public import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.Bundle0021
+public import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.Bundle0011
+public import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.Bundle0036
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.FirstCohomology.Bundle0003
 
 @[expose] public section
 

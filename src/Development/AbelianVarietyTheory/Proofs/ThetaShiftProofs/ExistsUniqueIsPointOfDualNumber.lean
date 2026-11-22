@@ -5,8 +5,8 @@ public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeo
 public import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.ExistsRatioPoints
 public import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.SplitTorusHomProperTrivialField
 public import Development.AbelianVarietyTheory.Proofs.HomogeneousIdeals.ExistsUniqueFactorCompletedStalkOfMap
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsUniqueAlgEquivOfCompatibleQuotient
-public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.IsPushoutQuotientMap
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0005
+public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.Bundle0014
 
 @[expose] public section
 

@@ -1,7 +1,6 @@
 module
 
-public import Development.EtaleCohomology.EtaleSheaves.LeafConsPf
-public import Development.EtaleCohomology.EtaleSheaves.LeafConsPfA
+public import Development.EtaleCohomology.EtaleSheaves.Bundle0047
 
 @[expose] public section
 

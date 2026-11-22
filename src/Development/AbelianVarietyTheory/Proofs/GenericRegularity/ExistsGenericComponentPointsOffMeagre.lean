@@ -2,22 +2,28 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Proofs.TorusHaarMeasure.ExistsOpenSameModel
-public import Development.AbelianVarietyTheory.Proofs.GenericRegularity.PeriodEqTriangularOrthonormal
-public import Development.AbelianVarietyTheory.Proofs.GenericRegularity.ImNegOfFramePeriodVector
-public import Development.AbelianVarietyTheory.Proofs.GenericRegularity.ExistsHolomorphicPeriodsAdapted
-public import Development.AbelianVarietyTheory.Proofs.GenericRegularity.TriangularFrameChangeOfTriangularPeriod
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsPeriodMulVec
-public import Development.AbelianVarietyTheory.Proofs.GenericRegularity.ExistsCountableFlagSpaceAtlasStatement
+public import Development.AbelianVarietyTheory.Proofs.GenericRegularity.Bundle0009
+public import Development.AbelianVarietyTheory.Proofs.GenericRegularity.Bundle0010
+public import Development.AbelianVarietyTheory.Proofs.GenericRegularity.Bundle0025
+public import Development.AbelianVarietyTheory.Proofs.GenericRegularity.Bundle0016
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0026
+public import Development.AbelianVarietyTheory.Proofs.GenericRegularity.Bundle0036
+public import Development.AbelianVarietyTheory.Proofs.GenericRegularity.FlagChartsCoverFramedFieldPoints
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0011
 public import Development.AbelianVarietyTheory.Proofs.GenericRegularity.ExistsComponentOfModelChartsStatement
-public import Development.AbelianVarietyTheory.Proofs.GenericRegularity.ExistsCountableHolomorphicFamiliesSmoothStatement
-public import Development.AbelianVarietyTheory.Proofs.GenericRegularity.PeriodCoordinatesFramesLiftTendstoStatement
+public import Development.AbelianVarietyTheory.Proofs.GenericRegularity.Bundle0011
+public import Development.AbelianVarietyTheory.Proofs.CharacterTheory.Bundle0024
+public import Development.AbelianVarietyTheory.Proofs.HeightProofs.Bundle0009
+public import Development.AbelianVarietyTheory.Proofs.HeightProofs.Bundle0010
+public import Development.AbelianVarietyTheory.Proofs.GenericRegularity.Bundle0005
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.FundamentalDomains.Bundle0001
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArakelovVolumes.UpperBounds.PairUnfoldPfA
 public import Formalism.LocalToGlobal.ProjectiveLattices.PetersonNormSubspace
-public import Formalism.LocalToGlobal.ProjectiveLattices.CompOrd
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0012
 public import Formalism.LocalToGlobal.ProjectiveLattices.CompHt
-public import Formalism.LocalToGlobal.ProjectiveLattices.FreeBridge
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.FundamentalDomains.FourierCoefficientDomain
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.FundamentalDomains.OrthogonalFrameDomain
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0024
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.FundamentalDomains.Bundle0014
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.FundamentalDomains.Bundle0033
 
 @[expose] public section
 
@@ -118,7 +124,7 @@ theorem interior_rel (hφ : ∀ v ∈ X.Λ, ∃ a, φ a = v) (hne : ∀ b ∈ B,
   obtain ⟨hx₀d, b₀, hb₀, -, h, hh⟩ := interior_subset hx₀
   choose! x₁ hx₁ hr₁ using honto x₀ hx₀d b₀ hb₀ h hh
   have hBn : ∀ᶠ b in 𝓝 b₀, b ∈ B := hB.mem_nhds hb₀
-  have key := GlobalTheory.T.period_coordinates_frames_lift_tendsto E r X _ (𝓝 b₀) x₀ x₁ hx₀d (hBn.mono hx₁) (fun v hv τ i => by
+  have key := _root_.GlobalTheory.PeriodLift.period_lift E r X _ (𝓝 b₀) x₀ x₁ hx₀d (hBn.mono hx₁) (fun v hv τ i => by
     obtain ⟨a, rfl⟩ := hφ v hv
     obtain ⟨j, hj⟩ := idx.surjective (τ, i)
     obtain ⟨rfl, rfl⟩ : τ = (idx j).1 ∧ i = (idx j).2 := by rw [hj]; exact ⟨rfl, rfl⟩
@@ -349,7 +355,7 @@ theorem isMeagre_chart (U : Formalism.L2.PjFree.Unf Xo c σ r) (hσ : Formalism.
     h0 | ⟨-, -, ψ₀, -⟩
   · rw [h0]
     exact IsMeagre.empty
-  obtain ⟨ι, _, m, B, φ, hB, hφσ, hd, hcov, hne⟩ := GlobalTheory.T.exists_countable_holomorphic_families_smooth c.F C.R σ
+  obtain ⟨ι, _, m, B, φ, hB, hφσ, hd, hcov, hne⟩ := _root_.GlobalTheory.SmoothPointCover.exists_countable_families c.F C.R σ
   let φ' : ∀ i, (Fin (m i) → ℂ) → (C.R →ₐ[c.F] CAt σ) := fun i b =>
     if hb : b ∈ B i then
       { (show C.R →+* CAt σ from φ i b) with commutes' := fun a => RingHom.congr_fun (hφσ i b hb) a }
@@ -400,7 +406,7 @@ theorem exists_generic_of_injective {h : GenFrEx Xo c} (C : FChart h) (ψ : C.R 
 theorem exists_comp_generic_off_meagre : ∀ (E : Type) [Field E] [NumberField E] [IsCMField E] (H : ReciprocityTheory.ChartRestriction.G.Geo.Tor.Host E) (Dw : Datum H) (l : Level H) (Xo : Moduli Dw l) (c : Coeff l) (σ : c.F →+* ℂ) (r : ℕ) (U : Unf Xo c σ r), GoodEmb c σ → IsUnf U → ∀ (h : GenFrEx Xo c) (k : U.Comp), ∃ Z : Comp Xo c, ∃ S : ℕ → Set (Frame (U.X k).Ψ r), (∀ n, IsClosed (S n) ∧ interior (S n) = ∅) ∧ ∀ x : (U.X k).dom, (∀ n, x.1 ∉ S n) → ∃ (φ : Om Z →ₐ[c.F] CAt σ) (y' : FrPt Xo c (CAt σ)) (t : Ix Dw → (CAt σ)ˣ), FrMap φ (genFr h Z) y' ∧ FrBor t (U.un k x) y' := by
   intro E _ _ _ H Dw l Xo c σ r U hσ hU h k
   obtain ⟨-, hmul, hinv, -⟩ := GlobalTheory.Reg.BorelGroupoid.frBor_groupoid E H Dw l Xo c (CAt σ)
-  obtain ⟨ι, _, C, hC⟩ := GlobalTheory.T.exists_countable_flagSpace_atlas E H Dw l Xo c h
+  obtain ⟨ι, _, C, hC⟩ := _root_.GlobalTheory.Reg.exists_countable_atlas E H Dw l Xo c h
   obtain ⟨Z, hZ⟩ := GlobalTheory.T.exists_component_of_modelCharts E H Dw l Xo c σ r (Formalism.L2.PjFree.Unf.ofPj U) hU h k
   obtain ⟨S, hS, hcov⟩ := exists_seq_of_isMeagre
     (isMeagre_iUnion fun i => isMeagre_chart (Formalism.L2.PjFree.Unf.ofPj U) hσ hU k (C i))

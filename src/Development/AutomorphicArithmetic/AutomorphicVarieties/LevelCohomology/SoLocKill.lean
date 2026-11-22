@@ -1,12 +1,10 @@
 module
 
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.LevelCohomology.SoDefs
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.LevelCohomology.SoContLev
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.LevelCohomology.SoLevFacts
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.LevelCohomology.SoLocCard
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.LevelCohomology.SoScal
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.LevelCohomology.Bundle0002
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.LevelCohomology.Bundle0003
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.LevelCohomology.Bundle0008
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.LevelCohomology.SoDualEmb
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.LevelCohomology.SoDecNe
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.GaloisLibrary.SelmerTransport.QoFacts
 
 @[expose] public section

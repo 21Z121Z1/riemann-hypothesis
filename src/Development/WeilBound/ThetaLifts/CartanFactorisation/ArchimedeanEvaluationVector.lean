@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Divisors.SiegelWeilAnisotropicHermitian
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0044
 public import Development.WeilBound.ThetaLifts.CartanFactorisation.CartanConj
-public import Development.WeilBound.ThetaLifts.CartanFactorisation.NonemptyCoord
+public import Development.WeilBound.ThetaLifts.CartanFactorisation.Bundle0006
 
 @[expose] public section
 

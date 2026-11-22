@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import GroundTheory.AutomorphicForms.HaarCosets
+public import GroundTheory.AutomorphicForms.Bundle0008
 public import GroundTheory.AutomorphicForms.SmoothRep
 
 @[expose] public section

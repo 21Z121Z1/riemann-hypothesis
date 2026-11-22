@@ -1,76 +1,72 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Statements.HeckeThetaIntegrals.StepUnfold
-public import Development.AbelianVarietyTheory.Definitions.Divisors.DiscreteSeriesHermitianUnique
-public import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.CuspAlongSmoothRows
+public import Development.AbelianVarietyTheory.Statements.HeckeThetaIntegrals.Bundle0002
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0041
+public import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.Bundle0015
 public import Development.AbelianVarietyTheory.Statements.HeckeThetaIntegrals.ThetaIntegralsAgree
 public import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.WeilTensorModels
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.RangeSndRel
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.WeilActionCommutesOnGrid
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IntegrableOnOfRapidDec
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ThetaKernelMulConjCuspFormIntegrableOn
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0432
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0690
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0181
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0176
 public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.CuspAlongOfPairLifts
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.NegativeThetaLevelSecond
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IntegralEqZeroOfForallApprox
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ThetaLiftLowerTowerVanishing
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.NegativeThetaLevelSixth
-public import Development.AbelianVarietyTheory.Proofs.HeightProofs.ExistsAllTiedNotStable
-public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.DiscreteSeriesHermitianUniqueOfClassification
-public import Development.AbelianVarietyTheory.BlockTheory.HeightDefect.FinitePartTypes
-public import Development.AbelianVarietyTheory.Proofs.HeightProofs.AutomorphicFormUniformLimitDiscreteSeriesSeriesStatement
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.NegativeThetaLevelFourth
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0445
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0117
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0397
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0559
+public import Development.AbelianVarietyTheory.Proofs.HeightProofs.Bundle0069
+public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.Bundle0003
+public import Development.AbelianVarietyTheory.BlockTheory.HeightDefect.Bundle0005
+public import Development.AbelianVarietyTheory.Proofs.HeightProofs.Bundle0067
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0564
 public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ThetaGrowthOfThetaSquareIntegrable
-public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.UnifModGrowthOfIsUnifModerate
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IsAutFunSmThetaLift
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IsCuspFunOfApprox
+public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.Bundle0007
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0467
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0483
 public import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.ExistsHeightLeTwoMulQuotHeight
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ThetaKernelIteratedIntegralsSwap
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsKernelApprox
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.GridDownArrowThetaFunctionFockDenseOfLevelStatement
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IntegrableOnQuotHeightPowMulNorm
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0159
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0301
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0441
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0633
 public import Development.AbelianVarietyTheory.Proofs.HeightProofs.TypeAtOfDiscreteSeries
-public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.ExistsGrowthSobNeTopOfIsAutFunSm
+public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.Bundle0009
 public import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.SqNormIntegralFundamentalDomainEqL2NormSq
 public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ContDiffDerivSnoc
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.GrowthSobZeroNeTop
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsKFiniteIteratedCompactAverageApproxStatement
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.CuspFormKFiniteApprox
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.AutCuspOfMemCusp
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.HorizontalThetaLevelFourth
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ConjThetaKOMulIntegrableOn
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.DoubleNegSpaceUnitaryElementHeq
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ThetaLiftDiagonalTypePreserved
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0469
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsKFiniteIteratedCompactAverageApprox
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0534
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0437
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0552
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0438
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0555
 public import Development.AbelianVarietyTheory.Proofs.HeightProofs.IsCuspFunIffConstTerm
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IsCuspFunOfApproxAlt
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.GoodParOfSigOK
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.CuspidalGridNodeType
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IntegrableOnThetaKOMulCusp
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ToTWsmallZero
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SignedUnitaryGroupCompat
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0440
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0443
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0325
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0252
 public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.AutomorphicCuspFormsHermitianSpaceSignTwist
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.NegativeParabolicThetaSeventh
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.NegativeParabolicThetaEighth
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ConjThetaKOMulCuspIntegrableOnFst
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.VerticalThetaLevelSecond
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0553
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0557
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0567
 public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.FiniteDimensionalModel
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.CuspidalListedTopForms
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.FinCoefMultT
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IsAutFunSmRealProd
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsDualFrameSpanUnitaryRepresentationStatement
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.DiscreteSeriesModelAdjointEqInvFiniteDimensionalStatement
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ModelTypeFormExpandsAlongDualFrameStatement
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExpandPiOfExpandEachStatement
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SumProdUpdateRegroupStatement
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ThetaLiftVerticalCuspidalSum
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.CuspidalAlongRightGridArrows
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.CuspidalAlongDownGridArrows
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.GivenPathRepresentationFinite
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.LocalFlipStageIsTensorPlaceDepthStatement
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.GridSquareFlipSmallRouteEqInvSmulBigRouteStatement
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.GridPathCutAtSquareSwapRouteStatement
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.GivenOppositeGridPathsAndDeterminedByEdgesStatement
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.FlippedFiniteTensorOfRepresentingOppositePathStatement
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0456
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0471
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0003
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.EqZeroOfInnerSmooth
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0280
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsSmoothAutomorphicFunctionTranslateAtRealPlace
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0171
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0472
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0006
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0013
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0600
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0603
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0602
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0676
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0607
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.GridSquareFlipSmallRouteEqInvSmulBigRoute
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0454
 
 @[expose] public section
 
@@ -161,7 +157,7 @@ theorem flipAt_of (hL : R.toLevCh.Is A.μ0) (ch : Choice R)
     induction k with
     | zero =>
       intro _
-      obtain ⟨⟨h1, h2⟩, -, -⟩ := GlobalTheory.T.given_opposite_gridPaths_and_determined_by_edges D.R.m t
+      obtain ⟨⟨h1, h2⟩, -, -⟩ := _root_.GlobalTheory.FlipPaths.given_opp_paths D.R.m t
       refine ⟨GlobalTheory.FunObj.givenPath t D.R.m, h1, by simpa using h2, τg, hRg, fun M hM y => ?_⟩
       obtain ⟨a, b⟩ := hg M hM y
       refine ⟨a, ?_⟩
@@ -179,7 +175,7 @@ theorem flipAt_of (hL : R.toLevCh.Is A.μ0) (ch : Choice R)
         have hc := (canFlip_flipOrder D.R.m).1
         rw [← List.take_append_drop k (flipOrder D.R.m), List.drop_eq_getElem_cons hkl] at hc
         exact passesThrough_of_canFlip _ _ hc
-      obtain ⟨A, Bp, rfl, hA', hB', hN, hNe⟩ := GlobalTheory.T.gridPath_cut_at_square_swap_route D.R.m t x.1 x.2 hi hj p hp hpass
+      obtain ⟨A, Bp, rfl, hA', hB', hN, hNe⟩ := _root_.GlobalTheory.PathCut.cut_at_square D.R.m t x.1 x.2 hi hj p hp hpass
       have hT : ∀ w ∈ locPl ch.G t, (locGrid ch.G t w).IsTensor (unifAt w) (depthAt ch.G w)
           (GlobalTheory.FlipRun.edges ((A.comp (routeSmall t x.1 x.2)).comp Bp)) (S k w).tensor := fun w hw => by
         have := hE t Φ w hw k (by omega)
@@ -203,7 +199,7 @@ theorem flipAt_of (hL : R.toLevCh.Is A.μ0) (ch : Choice R)
             (((flipOrder D.R.m).take k).foldl (fun γ x => GlobalTheory.SplitFlip.flipPath x.1 x.2 γ) (GlobalTheory.SplitFlip.givenPath D.R.m)) := e2
         rw [← e3]
         exact this
-      obtain ⟨τ', hR', hF⟩ := GlobalTheory.T.gridSquareFlip_smallRoute_eq_inv_smul_bigRoute hL ch.W ch.S.B ch.rm t x.1 x.2 hi hj _ (hK _ _ t) (hA t ⟨x.1, hi⟩ ⟨x.2, hj⟩)
+      obtain ⟨τ', hR', hF⟩ := _root_.GlobalTheory.FlipRun.oneFlip hL ch.W ch.S.B ch.rm t x.1 x.2 hi hj _ (hK _ _ t) (hA t ⟨x.1, hi⟩ ⟨x.2, hj⟩)
         A Bp hA' hB' (GlobalTheory.FlipRun.flipsPolE ch.rm ((flipOrder D.R.m).take k) Pg) τ (fun w => (S k w).tensor) hT hTb hR
       refine ⟨(A.comp (routeBig t x.1 x.2)).comp Bp, hN, ?_, τ', ?_, fun M hM y => ?_⟩
       · rw [hNe, hedge, htake, List.foldl_append]; rfl
@@ -223,7 +219,7 @@ theorem flipAt_of (hL : R.toLevCh.Is A.μ0) (ch : Choice R)
         exact (mul_inv _ _).symm.trans (by rw [mul_assoc])
   obtain ⟨p, hp, hedge, τ, hR, hI⟩ := key (D.R.m ^ 2) le_rfl
   have htk : (flipOrder D.R.m).take (D.R.m ^ 2) = flipOrder D.R.m := List.take_of_length_le (by rw [hlen])
-  obtain ⟨-, ⟨h1, h2⟩, h3⟩ := GlobalTheory.T.given_opposite_gridPaths_and_determined_by_edges D.R.m t
+  obtain ⟨-, ⟨h1, h2⟩, h3⟩ := _root_.GlobalTheory.FlipPaths.given_opp_paths D.R.m t
   have hp' : p = oppPath t D.R.m := h3 p _ hp h1 (by rw [hedge, h2, htk]; exact (canFlip_flipOrder D.R.m).2.2)
   subst hp'
   have hTf : (fun w => (S (D.R.m ^ 2) w).tensor) = Tflip ch.W ch.S.B t Φ := by

@@ -2,15 +2,15 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.WeilTensorModels
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.OneMemKAt
-public import Development.AbelianVarietyTheory.Definitions.Divisors.DiscreteSeriesHermitianUnique
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1227
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0041
 public import Formalism.SharpRestriction.Divisibility.SchurIrreducible
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FromBlocksMem
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsComplementaryAdelicSchwartzRestFunction
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LatAtVAtStable
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.StarMemAdelicSchwartzSpaceNumberField
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsDiagOneNegOneConjAntidiagonalStabilizerMem
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.DiagonalFixingDoublingMatrix
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1243
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1665
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1531
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1281
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1549
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0493
 
 @[expose] public section
 

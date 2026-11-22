@@ -3,8 +3,8 @@ module
 public import Formalism.SharpRestriction.Divisibility.SlopeExcess.ConstRankBaseLePolyFourth
 public import Formalism.SharpRestriction.GrowthBounds.TopChoiceBounds
 public import Formalism.SharpRestriction.GrowthBounds.JointsLit
-public import Formalism.SharpRestriction.GrowthBounds.AdmissibleIntegers.FirstTermSizeBound
-public import Formalism.LocalRingCardinality.DataExtra
+public import Formalism.SharpRestriction.GrowthBounds.AdmissibleIntegers.Bundle0001
+public import Formalism.LocalRingCardinality.Bundle0007
 public import Formalism.SharpRestriction.Divisibility.HookProducts.CardLiftsEq
 
 @[expose] public section

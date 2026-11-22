@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.FunJetApply
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0085
 
 @[expose] public section
 

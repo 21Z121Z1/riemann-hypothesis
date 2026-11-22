@@ -1,10 +1,10 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicArithmetic.CyclotomicBounds.ZmodTwoQuadraticNeZero
+public import Development.AutomorphicArithmetic.CyclotomicBounds.Bundle0002
 public import Formalism.LocalRingCardinality.HostCls
-public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.GaloisSideTwistedSelmerAuxiliaryPrimes
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsPlaceOverMoveValCc
+public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0012
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0305
 public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IndexSpanMatrixEqValDet
 
 @[expose] public section

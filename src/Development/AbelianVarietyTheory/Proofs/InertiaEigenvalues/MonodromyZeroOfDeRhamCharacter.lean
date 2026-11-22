@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.StepJumpDirect
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ConjPlMemPlacesOver
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsCrysLatOfTrivial
+public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0014
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0268
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0150
 
 @[expose] public section
 

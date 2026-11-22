@@ -1,11 +1,11 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Divisors.IsPolAVSectionInverseImage
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0027
 public import Development.AbelianVarietyTheory.Definitions.Divisors.ToricPeriodBlockIsSymm
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CoeffTopMonEqZero
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1863
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DotProductMulVecEqTransposeMulVec
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaCharBlockPeriodMatrixFourierJacobiExpansion
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1935
 
 @[expose] public section
 

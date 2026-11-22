@@ -3,11 +3,11 @@ module
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.SpanningFamilies.DatEqZero
 public import Formalism.LocalToGlobal.ProjectiveLattices.ThShort
-public import Formalism.LocalToGlobal.ProjectiveLattices.VAtVNeBot
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0010
 public import Formalism.LocalToGlobal.ProjectiveLattices.ThGerm
-public import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.ExistsIsotropicGroupLatticeClassRepresentatives
-public import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.InZhGeoInjStable
-public import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.ExistsFramedPointBaseChangeAlgHom
+public import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.Bundle0034
+public import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.Bundle0031
+public import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.Bundle0039
 
 @[expose] public section
 

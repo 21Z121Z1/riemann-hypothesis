@@ -6,7 +6,7 @@ public import Formalism.LocalToGlobal.IndefiniteReal.IsFDiagIffDiagonal
 public import Formalism.LocalToGlobal.IndefiniteReal.FrameExistence.FramesExistOfDiagonalTypePlaces
 public import Formalism.LocalToGlobal.IndefiniteReal.FrameExistence.NormalFrameClauses
 public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.CmQuadraticFormEqAlternatingForm
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.DiagSpacesOfOver
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0339
 
 @[expose] public section
 

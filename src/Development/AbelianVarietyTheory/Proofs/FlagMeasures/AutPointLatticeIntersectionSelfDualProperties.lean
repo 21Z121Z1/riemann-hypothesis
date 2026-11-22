@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.LayerProd
-public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.LamXEquivariant
+public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.Bundle0006
+public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.Bundle0007
 public import Formalism.HarderNarasimhan.ShiftInvariance
 public import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.CsGlob
 public import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.CsSpan

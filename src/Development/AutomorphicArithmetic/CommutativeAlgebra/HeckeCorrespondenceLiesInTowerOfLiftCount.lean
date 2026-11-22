@@ -3,10 +3,14 @@ module
 public import Mathlib
 public import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.IntegralStructures.GeometricFlagBases.FinModel
 public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.InvMemLatMonoidOfMemAwaySupp
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsLiftOfEtaleSurjectiveStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FiniteEtaleSurjectiveProj
-public import Development.AutomorphicArithmetic.CommutativeAlgebra.BijectiveSigmaSpecPointsCoproduct
-public import Development.AutomorphicArithmetic.CommutativeAlgebra.CardFiberEqRelIndexOfNormalQuotient
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2591
+public import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsDimEqOne
+public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.IsMatrixForm
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0053
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.GeometricallyIntegralIffGeometricallyConnectedOf
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0050
+public import Development.AutomorphicArithmetic.CommutativeAlgebra.Bundle0001
+public import Development.AutomorphicArithmetic.CommutativeAlgebra.Bundle0052
 
 @[expose] public section
 
@@ -267,7 +271,7 @@ theorem UpperTheory.heckeCorrespondence_lies_in_tower_of_lift_count :
     intro K _ _ z ζ hz
     have hqK : ((q : ℕ) : K) ≠ 0 := natCast_ne (z ≫ T.X.q (T.lev N)) q hq0
     have hcard := bd K hqK z
-    obtain ⟨z₀, hz₀⟩ := GlobalTheory.T.exists_lift_of_etale_surjective' K _ _ tr1 inferInstance (T.X.onto _ _ A1 B1) z
+    obtain ⟨z₀, hz₀⟩ := _root_.GlobalTheory.exists_lift_of_etale_surjective K _ _ tr1 inferInstance (T.X.onto _ _ A1 B1) z
     have Au : ∀ u : L.KN N.1, (u : G.GAf) ∈ T.X.Δ := fun u => (T.Δ_eq _).2 (integ_of_mem (hKn1 u.2))
     have Bu : ∀ u : L.KN N.1, ∀ v ∈ T.X.K (T.lev (g j).M), (u : G.GAf) * v * (u : G.GAf)⁻¹ ∈ T.X.K (T.lev (g j).M) := fun u v hv => by
       rw [T.K_eq] at hv ⊢

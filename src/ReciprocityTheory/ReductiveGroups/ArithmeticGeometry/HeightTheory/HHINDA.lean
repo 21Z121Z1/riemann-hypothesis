@@ -1,9 +1,9 @@
 module
 
-public import ReciprocityTheory.SemistableReduction.TorusL2CauchyInequality
-public import ReciprocityTheory.SemistableReduction.LagrangeIdealLiftsFact
+public import ReciprocityTheory.SemistableReduction.Bundle0025
+public import ReciprocityTheory.SemistableReduction.Bundle0013
 public import ReciprocityTheory.SemistableReduction.RestBlockSubstIsMultiHomogeneous
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.HeightTheory.HNormPts
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.HeightTheory.Bundle0019
 
 @[expose] public section
 

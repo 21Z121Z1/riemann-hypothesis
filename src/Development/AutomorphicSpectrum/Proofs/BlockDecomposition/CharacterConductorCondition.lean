@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Development.WeilBound.CoreStatements.AutomorphicKernels.SiegelWeilFormula.UnramifiedWhittaker.BasisSet
+public import Development.WeilBound.CoreStatements.AutomorphicKernels.SiegelWeilFormula.UnramifiedWhittaker.Bundle0001
 public import Formalism.LocalToGlobal.SiegelLatticeTheory.FlagStabilizerTensors.RootLatticeThresholds.CompactCovering.NCovAd
-public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.ImportsExtraMore
+public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0030
 
 @[expose] public section
 

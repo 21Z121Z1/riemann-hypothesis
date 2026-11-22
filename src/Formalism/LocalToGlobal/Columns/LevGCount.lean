@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Formalism.LocalToGlobal.Columns.GenericUnipotentCharacter
-public import Formalism.GL3MeanSquares.HookFormulaTorsion.DimensionMassJointBound
+public import Formalism.GL3MeanSquares.HookFormulaTorsion.Bundle0004
 
 @[expose] public section
 

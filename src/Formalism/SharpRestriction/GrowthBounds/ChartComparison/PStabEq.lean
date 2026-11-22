@@ -4,8 +4,8 @@ public import Formalism.SharpRestriction.GrowthBounds.ChartComparison.KerLabelsM
 public import Formalism.SharpRestriction.GrowthBounds.ChartComparison.StepIn
 public import Formalism.SharpRestriction.GrowthBounds.ChartComparison.LocCore
 public import Formalism.LocalToGlobal.GroupLattices.ComparisonMaps.ColSpanMap
-public import Formalism.LocalToGlobal.GroupLattices.ComparisonMaps.NatActRVtupR
-public import Formalism.LocalToGlobal.GroupLattices.ComparisonMaps.ClsOrb
+public import Formalism.LocalToGlobal.GroupLattices.ComparisonMaps.Bundle0003
+public import Formalism.LocalToGlobal.GroupLattices.ComparisonMaps.Bundle0005
 
 @[expose] public section
 

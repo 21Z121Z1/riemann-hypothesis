@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TraceOpen
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0254
 
 @[expose] public section
 

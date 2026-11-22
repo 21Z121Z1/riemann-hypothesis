@@ -1,11 +1,11 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.DiagMod
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.SpecialLinearGroupIntMapZmodSurjective
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsUnitOfCocycleRightActionCharZero
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsHomToKernelSqCentralExtensionSlTwoZModStatement
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.JTranslatesLevelAndScalarModStatement
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0075
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0085
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1917
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsHomToKernelSqCentralExtensionSlTwoZMod
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0124
 
 @[expose] public section
 
@@ -278,7 +278,7 @@ theorem descent : ∀ {Ω : Type} [Field Ω] [Algebra ℚ Ω] [IsAlgClosure ℚ 
       fin_cases i <;> fin_cases j <;>
         simp [Matrix.mul_apply, Fin.sum_univ_two, e1, e2] <;>
         first | (simpa [e3] using hd))
-    (GlobalTheory.T.exists_hom_to_kernel_sq_centralExtension_slTwoZMod l n Mb hl hMb (Nat.Coprime.coprime_dvd_right h6 hco.symm))
+    (_root_.GlobalTheory.CentralExt.exists_hom_to_kernel_eq_sq_on_kernel_of_central_ext_sl2 l n Mb hl hMb (Nat.Coprime.coprime_dvd_right h6 hco.symm))
   refine ⟨Units.map (levSub X (Ma * Mb)).subtype.toMonoidHom h, fun γ hγ => ?_⟩
   have e := congrArg Subtype.val (hh (ρ γ))
   have hw : ∀ w : levSub X (Ma * Mb), Lev X (Ma * Mb) (w : X.K) := fun w => w.2

@@ -4,7 +4,7 @@ public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.CMLattices.LamLetters
 public import Development.AbelianVarietyTheory.Definitions.CMLattices.ExistsIsThetaDegOfIsLocalModel
 public import Development.AbelianVarietyTheory.Definitions.ExistenceOfLattices.UnivFrame
-public import Formalism.LocalToGlobal.ProjectiveLattices.VAtVNeBot
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0010
 public import Formalism.LocalToGlobal.CMDeterminantIdeals.StatementS
 
 @[expose] public section

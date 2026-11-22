@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Formalism.QuotientMetricDivisors.RatHermLcvTwist
-public import Formalism.QuotientMetricDivisors.ClassSumDualGeF
+public import Formalism.QuotientMetricDivisors.Bundle0002
 
 @[expose] public section
 

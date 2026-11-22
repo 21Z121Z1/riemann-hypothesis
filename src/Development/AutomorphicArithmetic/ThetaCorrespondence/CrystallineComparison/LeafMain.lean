@@ -1,7 +1,7 @@
 module
 
 public import Development.AutomorphicArithmetic.ThetaCorrespondence.CrystallineComparison.JOCZero
-public import Development.AutomorphicArithmetic.ThetaCorrespondence.CrystallineComparison.JOCBounded
+public import Development.AutomorphicArithmetic.ThetaCorrespondence.CrystallineComparison.Bundle0003
 
 @[expose] public section
 

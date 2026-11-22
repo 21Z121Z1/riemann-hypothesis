@@ -1,19 +1,18 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.LocalCondMoveDecoratedLattice
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0321
 public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ValuedLtOfMem
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.BcPrVEqOneOfAdAt
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsUnitaryDiagonalBasePointLevelPrime
-public import Formalism.LocalToGlobal.UnitaryNorms.CharExCol
-public import Formalism.LocalToGlobal.UnitaryNorms.CharExHost
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0378
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0382
+public import Formalism.LocalToGlobal.UnitaryNorms.Bundle0007
+public import Formalism.LocalToGlobal.UnitaryNorms.Bundle0006
 public import Formalism.LocalToGlobal.UnitaryNorms.IsUnitaryNormOf
-public import Formalism.LocalToGlobal.UnitaryNorms.CharExGen
+public import Formalism.LocalToGlobal.UnitaryNorms.Bundle0001
 public import Formalism.PeriodIntegrals.EtaHostFacts
 public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.HostPrimeSplitting.FinrankOE
 public import Formalism.SharpRestriction.RamificationFrobenius.TotientGaloisClasses.FrameFacts
-public import Formalism.LocalToGlobal.UnitaryNorms.CharTied
-public import Formalism.LocalToGlobal.UnitaryNorms.RealPl
+public import Formalism.LocalToGlobal.UnitaryNorms.Bundle0004
 
 @[expose] public section
 

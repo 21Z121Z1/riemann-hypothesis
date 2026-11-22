@@ -1,12 +1,9 @@
 module
 
 public import Mathlib
-public import Development.WeilBound.CoreStatements.AbelianHeightsDuality.ZarhinTrick.QiCoreDefs
-public import Development.WeilBound.CoreStatements.AbelianHeightsDuality.ZarhinTrick.CompLmulMapId
-public import Development.WeilBound.CoreStatements.AbelianHeightsDuality.ZarhinTrick.QiIdem
-public import Development.WeilBound.CoreStatements.AbelianHeightsDuality.ZarhinTrick.QiStab
-public import Development.WeilBound.CoreStatements.AbelianHeightsDuality.ZarhinTrick.QiCharP
-public import Development.WeilBound.CoreStatements.AbelianHeightsDuality.ZarhinTrick.QiCartier
+public import Development.WeilBound.CoreStatements.AbelianHeightsDuality.ZarhinTrick.Bundle0001
+public import Development.WeilBound.CoreStatements.AbelianHeightsDuality.ZarhinTrick.Bundle0002
+public import Development.WeilBound.CoreStatements.AbelianHeightsDuality.ZarhinTrick.Bundle0003
 
 @[expose] public section
 

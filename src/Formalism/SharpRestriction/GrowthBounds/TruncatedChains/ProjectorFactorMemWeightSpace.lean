@@ -1,7 +1,7 @@
 module
 
 public import Formalism.SharpRestriction.GrowthBounds.TruncatedChains.ProjectorCoeffSuccIndex
-public import Formalism.SharpRestriction.GrowthBounds.TruncatedChains.CommPow
+public import Formalism.SharpRestriction.GrowthBounds.TruncatedChains.Bundle0001
 
 @[expose] public section
 

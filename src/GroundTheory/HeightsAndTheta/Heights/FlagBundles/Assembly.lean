@@ -2,14 +2,11 @@ module
 
 public import Mathlib
 public import GroundTheory.HeightsAndTheta.Heights.FlagBundles.Statements
-public import GroundTheory.PAdicHodge.SlopeCauchyBinet
-public import GroundTheory.HeightsAndTheta.Heights.FlagBundles.PGKernelIdentity
-public import GroundTheory.HeightsAndTheta.Heights.FlagBundles.PZonalKernel
+public import GroundTheory.PAdicHodge.Bundle0002
+public import GroundTheory.HeightsAndTheta.Heights.FlagBundles.Bundle0001
 public import GroundTheory.HeightsAndTheta.Heights.FlagBundles.PSphereLongitudeCoordinates
 public import GroundTheory.HeightsAndTheta.Heights.FlagBundles.PZonalHeightReduction
-public import GroundTheory.HeightsAndTheta.Heights.FlagBundles.PZonalKernelPairing
-public import GroundTheory.HeightsAndTheta.Heights.FlagBundles.PZonalBilinearFormula
-public import GroundTheory.HeightsAndTheta.Heights.FlagBundles.PGHatIdentity
+public import GroundTheory.HeightsAndTheta.Heights.FlagBundles.Bundle0002
 public import GroundTheory.HeightsAndTheta.Heights.FlagBundles.PFibreConstantClosedForm
 public import GroundTheory.HeightsAndTheta.Heights.FlagBundles.PFibreIntegralInvariant
 public import GroundTheory.HeightsAndTheta.Heights.FubiniStudyIntegral

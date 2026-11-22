@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import GroundTheory.GlobalFields.NormResidueSymbol.FunctorialFinite
-public import GroundTheory.GlobalFields.NormResidueSymbol.FunctorialInfinite
+public import GroundTheory.GlobalFields.NormResidueSymbol.Bundle0002
+public import GroundTheory.GlobalFields.NormResidueSymbol.Bundle0001
 
 @[expose] public section
 

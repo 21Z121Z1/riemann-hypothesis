@@ -1,11 +1,11 @@
 module
 
 public import Development.WeilBound.RepresentationTheoryGL.RegularisedSiegelWeil.SingularNullSets.WeakApproximationFinitePlace
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IdelesCompactOfLocalBounds
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HaarVectorScalingIdele
-public import Development.AbelianVarietyTheory.Proofs.HeightProofs.EqOrConjOfPlaceOf
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1730
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1727
+public import Development.AbelianVarietyTheory.Proofs.HeightProofs.Bundle0028
 public import Development.AbelianVarietyTheory.Definitions.Divisors.IsCompactIsOpenUnitsAt
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EventuallyCompFinMemIntLocAdele
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1726
 public import Development.AbelianVarietyTheory.Definitions.Foundations.HermitianSpaceBaseLatticeEqFrameLattice
 
 @[expose] public section

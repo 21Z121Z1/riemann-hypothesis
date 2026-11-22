@@ -3,8 +3,8 @@ module
 public import Mathlib
 public import Development.AutomorphicArithmetic.Foundations.Convolution.IntegrableConvolution.ThickFrames
 public import Development.AutomorphicArithmetic.Foundations.Convolution.IntegrableConvolution.WordTens
-public import Development.AutomorphicArithmetic.Foundations.Convolution.IntegrableConvolution.MatchInf
-public import Development.AutomorphicArithmetic.Foundations.Convolution.IntegrableConvolution.ArchBasic
+public import Development.AutomorphicArithmetic.Foundations.Convolution.IntegrableConvolution.Bundle0008
+public import Development.AutomorphicArithmetic.Foundations.Convolution.IntegrableConvolution.Bundle0005
 
 @[expose] public section
 

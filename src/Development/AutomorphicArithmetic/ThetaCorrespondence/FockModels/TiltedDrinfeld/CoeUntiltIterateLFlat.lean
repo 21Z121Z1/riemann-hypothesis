@@ -1,7 +1,7 @@
 module
 
 public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.LocalPrimeGaloisActionPeriodT
-public import Development.WeilBound.CoreStatements.CrystallinePeriodRings.MaximalIdealEqSpanT
+public import Development.WeilBound.CoreStatements.CrystallinePeriodRings.Bundle0002
 public import GroundTheory.PAdicHodge.WAKummerEps
 
 @[expose] public section

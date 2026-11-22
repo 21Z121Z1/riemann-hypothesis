@@ -2,8 +2,8 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.WeilTensorModels
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.LcscAdelicUnitaryGroup
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.IntegrableOfRapidDecay
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0061
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0187
 
 @[expose] public section
 

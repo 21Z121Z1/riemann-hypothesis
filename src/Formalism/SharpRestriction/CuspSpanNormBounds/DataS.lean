@@ -3,7 +3,7 @@ module
 public import Mathlib
 public import Formalism.LocalRingCardinality.Params
 public import Formalism.SharpRestriction.CuspSpanNormBounds.PsiEDef
-public import Formalism.SharpRestriction.CuspSpanNormBounds.Point
+public import Formalism.SharpRestriction.CuspSpanNormBounds.Bundle0001
 
 @[expose] public section
 

@@ -6,8 +6,8 @@ public import Formalism.PairingDivisors.StatementH
 public import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.CsDual
 public import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.CsSpan
 public import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.CsGlob
-public import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.CsEasy
-public import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.LevelSubgroupFiniteAdelicStandard
+public import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Bundle0009
+public import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Bundle0004
 
 @[expose] public section
 

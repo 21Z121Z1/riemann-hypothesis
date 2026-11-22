@@ -1,18 +1,17 @@
 module
 
 public import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.ThinScalesIffHostBound
-public import Development.AutomorphicArithmetic.CharacterBoxes.Imports
+public import Development.AutomorphicArithmetic.CharacterBoxes.Bundle0003
 public import Development.AutomorphicArithmetic.CharacterBoxes.PairRows
 public import Development.AutomorphicArithmetic.CharacterBoxes.RealBox
 public import Development.AutomorphicArithmetic.MeanSquareBounds.GaussSumFunctionEq
 public import Development.AutomorphicArithmetic.ThickFrames.topsChoiceH
 public import Development.AutomorphicArithmetic.ThickFrames.ThickFrame2Large
-public import Development.AutomorphicArithmetic.ShortNorms.MulLogLeRpowEventually
-public import Development.AutomorphicArithmetic.ShortNorms.levelData
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.NcardPrimesOverOfStabilizer
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.KroneckerTwoNegEqJacobiSymTwo
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.NormOneModEqOneAndOfDvd
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.NormOneIffOfSqrt
+public import Development.AutomorphicArithmetic.ShortNorms.Bundle0002
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0084
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0108
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0033
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0109
 
 @[expose] public section
 

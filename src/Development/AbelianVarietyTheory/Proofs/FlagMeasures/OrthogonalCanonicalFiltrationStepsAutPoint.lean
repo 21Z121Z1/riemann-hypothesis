@@ -1,11 +1,11 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.LayerProd
+public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.Bundle0006
 public import Formalism.HarderNarasimhan.ShiftInvariance
 public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.AutPointLatticeIntersectionSelfDualProperties
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.AutPointMajorantFramesGiveMajorants
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.CanonicalLatticeFiltrationSizeProperties
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0121
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0154
 
 @[expose] public section
 

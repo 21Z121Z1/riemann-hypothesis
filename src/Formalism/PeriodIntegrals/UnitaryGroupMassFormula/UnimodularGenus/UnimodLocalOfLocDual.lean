@@ -2,8 +2,8 @@ module
 
 public import Mathlib
 public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.UnimodularGenus.StdLatEqSpan
-public import Formalism.HermitianLattices.StatementMass
-public import Formalism.HermitianLattices.HermitianLatticesProofs.LocDual
+public import Formalism.HermitianLattices.Bundle0003
+public import Formalism.HermitianLattices.HermitianLatticesProofs.Bundle0003
 
 @[expose] public section
 

@@ -3,9 +3,9 @@ module
 public import Mathlib
 public import Formalism.LocalToGlobal.IndefiniteReal.OneMapT
 public import Development.AbelianVarietyTheory.Definitions.Divisors.InvVolConjLevelOne
-public import Development.AbelianVarietyTheory.Definitions.Divisors.IsTestLatUnique
-public import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsNotRelZero
-public import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.LevelPlusSubgroup
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0041
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0047
+public import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.Bundle0019
 
 @[expose] public section
 

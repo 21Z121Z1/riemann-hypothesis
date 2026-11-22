@@ -3,7 +3,7 @@ module
 public import Mathlib
 public import GroundTheory.AutomorphicForms.CuspidalDiscreteness.CuspCompact
 public import GroundTheory.AutomorphicForms.CuspidalDiscreteness.SummandsContRep
-public import GroundTheory.AutomorphicForms.CuspidalDiscreteness.FixedOpen
+public import GroundTheory.AutomorphicForms.CuspidalDiscreteness.Bundle0002
 
 @[expose] public section
 

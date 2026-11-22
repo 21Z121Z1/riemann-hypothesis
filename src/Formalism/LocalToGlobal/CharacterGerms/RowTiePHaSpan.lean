@@ -1,7 +1,7 @@
 module
 
-public import Formalism.LocalToGlobal.CharacterGerms.RowTiePHaDefs
-public import Formalism.LocalToGlobal.CharacterGerms.RowTiePDescSpanSt
+public import Formalism.LocalToGlobal.CharacterGerms.Bundle0002
+public import Formalism.LocalToGlobal.CharacterGerms.Bundle0020
 
 @[expose] public section
 

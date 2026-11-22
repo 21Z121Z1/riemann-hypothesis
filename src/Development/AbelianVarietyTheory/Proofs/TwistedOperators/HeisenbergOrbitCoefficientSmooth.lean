@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.DOpDef
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ContDiffOfContinuousOneParameter
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0298
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0002
 
 @[expose] public section
 

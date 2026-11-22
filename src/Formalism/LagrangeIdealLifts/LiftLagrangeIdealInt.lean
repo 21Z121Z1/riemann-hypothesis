@@ -1,10 +1,8 @@
 module
 
-public import Formalism.LagrangeIdealLifts.CocyclePolynomialDivision.LagrangeIdeal
-public import Formalism.LagrangeIdealLifts.CocyclePolynomialDivision.LagrangeIdealCyc
-public import Formalism.LagrangeIdealLifts.CocyclePolynomialDivision.Graded
+public import Formalism.LagrangeIdealLifts.CocyclePolynomialDivision.Bundle0001
+public import Formalism.LagrangeIdealLifts.CocyclePolynomialDivision.Bundle0002
 public import Formalism.LagrangeIdealLifts.Statement
-public import Formalism.LagrangeIdealLifts.CocyclePolynomialDivision.UClaim
 public import Formalism.LagrangeIdealLifts.CocyclePolynomialDivision.UChase
 
 @[expose] public section

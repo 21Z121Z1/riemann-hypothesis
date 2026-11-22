@@ -1,11 +1,13 @@
 module
 
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.KatoQuadraticCharacters.EulerFactorBounds.KatoTwistedClassNormCompatibleCyclotomic
-public import Development.AbelianVarietyTheory.Definitions.Foundations.AdmissibleNewformZetaData
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.KummerCompletionNoPrimeTorsionStatement
+public import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0025
+public import Mathlib
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0104
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0083
 public import Development.AutomorphicArithmetic.Foundations.IwahoriReduction.NormProducts.AdicEqZeroOfMemAll
-public import Development.AutomorphicArithmetic.Foundations.IwahoriReduction.NormProducts.Bcompl
-public import Development.AutomorphicArithmetic.Foundations.IwahoriReduction.NormProducts.GaloisActionAdicClose
+public import Development.AutomorphicArithmetic.Foundations.IwahoriReduction.NormProducts.Bundle0001
+public import Development.AutomorphicArithmetic.Foundations.IwahoriReduction.NormProducts.Bundle0002
 public import Development.AutomorphicArithmetic.Foundations.IwahoriReduction.NormProducts.MemAOfPow
 
 @[expose] public section
@@ -273,7 +275,7 @@ private theorem tf {k : ℕ} {f g : X.Fn l} (h : (l : ℤ_[l]) ^ k • f = (l : 
     | zero => intro x hx; simpa using hx
     | succ k ih =>
       intro x hx
-      refine ih x (GlobalTheory.T.kummerCompletion_no_prime_torsion X l _ ?_)
+      refine ih x (_root_.GlobalTheory.KZ.BettiB.khat_no_l_torsion X l _ ?_)
       rw [smul_smul, ← pow_succ']
       exact hx
   funext u

@@ -1,6 +1,6 @@
 module
 
-public import Formalism.SharpRestriction.GlobalTheoremInputs
+public import Formalism.SharpRestriction.Bundle0002
 public import Formalism.SharpRestriction.AdmissibleParameterJoins
 public import Formalism.SharpRestriction.Divisibility.LocalQuadraticParts
 public import Formalism.SharpRestriction.Divisibility.ClosedSizeLink.AdmissibleFamilyOfThreshold

@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsSecondVeroneseParts
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.BergmanProjectiveVolume
+public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0018
 
 @[expose] public section
 

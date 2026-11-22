@@ -4,16 +4,16 @@ public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.AbelianSchemeLaws.IsScalarTowerOfAlgebraMapEq
 public import Development.AbelianVarietyTheory.Definitions.QuasicoherentCohomology.ExistsAwayFracOfMemHomLoc
 public import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.CubeTotalComplexAcyclicOfSlicesInductionOnCard
-public import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.FirstCohomologyVanishesOfIsoOfIsGen
-public import Development.AbelianVarietyTheory.Proofs.CoherentCohomologyProofs.SerreVanishingH1Twist
-public import Development.AbelianVarietyTheory.Proofs.CoherentCohomologyProofs.ExistsSectionLiftFibreNoFirstCohomologyStatement
-public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.SectionPull
-public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.IsProperOfIsProjBy
-public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.IsHomogeneousXPowMulAddXPowMul
+public import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.Bundle0011
+public import Development.AbelianVarietyTheory.Proofs.CoherentCohomologyProofs.Bundle0025
+public import Development.AbelianVarietyTheory.Proofs.CoherentCohomologyProofs.Bundle0028
+public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.Bundle0016
+public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.Bundle0094
+public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.Bundle0097
 public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ExistsHomOfVeryAmpleBy
-public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.VeryAmpleByPw
-public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.VeryAmpleByPwOfAffineLoci
-public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.RelAmpleIffVeryAmpleBy
+public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.Bundle0098
+public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.Bundle0109
+public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.Bundle0089
 public import Development.AbelianVarietyTheory.Proofs.CovolumeBounds.IsProjOverIffIsProperAndExistsIsAmpleLB
 
 @[expose] public section
@@ -320,7 +320,7 @@ theorem relAmple_near_fibre : ∀ (R : Type) [CommRing R] [IsNoetherianRing R] (
     obtain ⟨n, s, hs⟩ := hv
     exact ⟨h0, n, s, hs.1, fun i => (hs.2 i).1⟩
   obtain ⟨h1, n, s₀, hs₀, hs₀'⟩ := hv'
-  choose c x hc hx using fun i => GlobalTheory.T.exists_section_lift_fibre_noFirstCohomology R B.left B.hom (pw L d) hF hP (isLB_pw hL d) K g hg
+  choose c x hc hx using fun i => _root_.GlobalTheory.AbLaw.FibreLift.exists_pull_eq_smul R B.left B.hom (pw L d) hF hP (isLB_pw hL d) K g hg
     _ _ _ h h1 ((SecOnR.topEquiv _ _).symm (s₀ i))
   have e := fun i => preimage_nonzeroLocus_of_pull_eq h.w (pw L d) (x i) _ (hc i) (hx i)
   simp only [LinearEquiv.apply_symm_apply] at e

@@ -1,7 +1,7 @@
 module
 
 public import Formalism.LocalToGlobal.GlobalTheory.BlockActions.NormBoundOfTorsionCharacter
-public import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.GlintPrincRelIndexNeZero
+public import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Bundle0001
 
 @[expose] public section
 

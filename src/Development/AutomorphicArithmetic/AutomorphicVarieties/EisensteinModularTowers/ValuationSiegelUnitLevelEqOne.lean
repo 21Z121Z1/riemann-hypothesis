@@ -1,13 +1,15 @@
 module
 
 public import Development.AbelianVarietyTheory.Definitions.Foundations.IsPrimitiveRootTopZeta
-public import Development.AbelianVarietyTheory.Definitions.Foundations.EeProd
-public import Development.AbelianVarietyTheory.Definitions.Foundations.Letter
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.IsIntegralModularTowerJCompGlTwoPosRat
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.SlTwoInvariantHolomorphicMemAdjoinJInvariantStatement
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.OverAffineJLineComapSlGalStatement
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.SiegelUnitInTowerNeZeroStatement
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.SiegelUnitInTowerAnEqSiegelUnitOnComplexStatement
+public import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0008
+public import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0004
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0127
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0122
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0135
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0179
+public import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0007
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0001
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0175
 public import Mathlib
 
 @[expose] public section
@@ -51,13 +53,13 @@ private theorem sgC_ne {c : ℕ} {x : Fin 2 → ℚ} (hx : GlobalTheory.Sieg.adm
 
 private theorem siegel_hol [IsAlgClosure ℚ Ω] (X : Tower Ω ε) {c : ℕ} {x : Fin 2 → ℚ} (hx : GlobalTheory.Sieg.admitted c x) :
     ∃ φ : ℂ → ℂ, DifferentiableOn ℂ φ Hs ∧ X.an (siegel X c x) = (φ : Mero) :=
-  ⟨sgC c x, sgC_hol hx, GlobalTheory.T.siegelUnitInTower_an_eq_siegelUnitOnComplex Ω ε X c x hx⟩
+  ⟨sgC c x, sgC_hol hx, _root_.GlobalTheory.KZ.SiegelMem.an_siegel_eq Ω ε X c x hx⟩
 
 private theorem siegel_inv_hol [IsAlgClosure ℚ Ω] (X : Tower Ω ε) {c : ℕ} {x : Fin 2 → ℚ} (hx : GlobalTheory.Sieg.admitted c x) :
     ∃ φ : ℂ → ℂ, DifferentiableOn ℂ φ Hs ∧ X.an (siegel X c x)⁻¹ = (φ : Mero) := by
   refine ⟨fun z => (sgC c x z)⁻¹, (sgC_hol hx).inv fun z _ => sgC_ne hx z, ?_⟩
-  have h1 := GlobalTheory.T.siegelUnitInTower_an_eq_siegelUnitOnComplex Ω ε X c x hx
-  have h0 := GlobalTheory.T.siegelUnitInTower_ne_zero Ω ε X c x hx
+  have h1 := _root_.GlobalTheory.KZ.SiegelMem.an_siegel_eq Ω ε X c x hx
+  have h0 := _root_.GlobalTheory.KZ.siegel_ne_zero Ω ε X c x hx
   have h2 : ((sgC c x : ℂ → ℂ) : Mero) * (((fun z => (sgC c x z)⁻¹) : ℂ → ℂ) : Mero) = 1 :=
     SiegelModel.germ_eq_of_eqOn (φ := fun z => sgC c x z * (sgC c x z)⁻¹) (ψ := fun _ => 1)
       fun z _ => mul_inv_cancel₀ (sgC_ne hx z)
@@ -143,7 +145,7 @@ private theorem int_of_hol [IsAlgClosure ℚ Ω] (X : Tower Ω ε) (f : X.K)
     rw [hPQ, Polynomial.coeff_map]
     exact (Q.coeff n).2
   have hcoef : ∀ n, P.coeff n ∈ Algebra.adjoin Ω {X.jK} := fun n =>
-    GlobalTheory.T.slTwo_invariant_holomorphic_mem_adjoin_jInvariant ε X hinj (jhol X) _ (fun γ => hcinv γ n) (hchol n)
+    _root_.GlobalTheory.KZ.LevelOne.mem_adjoin_j ε X hinj (jhol X) _ (fun γ => hcinv γ n) (hchol n)
   have hlift : P ∈ Polynomial.lifts (algebraMap (Algebra.adjoin Ω {X.jK}) X.K) :=
     (Polynomial.lifts_iff_coeff_lifts P).mpr fun n => ⟨⟨P.coeff n, hcoef n⟩, rfl⟩
   have hmon : P.Monic := Polynomial.monic_prod_of_monic _ _ (fun h _ => Polynomial.monic_X_sub_C h)
@@ -172,11 +174,11 @@ private theorem admissible_index_siegel {c D : ℕ} (hc : 1 < c) (h6 : Nat.Copri
 
 private theorem val_sl [IsAlgClosure ℚ Ω] (X : Tower Ω ε) {c : ℕ} {x : Fin 2 → ℚ} (hx : GlobalTheory.Sieg.admitted c x) (g : GQ)
     (W : ValuationSubring X.K) (hW : X.OverY W) : W.valuation (X.sl g (siegel X c x)) = 1 := by
-  have hY := (GlobalTheory.T.overAffineJLine_comap_sl_gal ε X ε.injective (jhol X) W hW).1 g
+  have hY := (_root_.GlobalTheory.KZ.Tower.overY_comap_sl_gal ε X ε.injective (jhol X) W hW).1 g
   have h1 := mem_of_int X _ hY (int_of_hol X _ (siegel_hol X hx))
   have h2 := mem_of_int X _ hY (int_of_hol X _ (siegel_inv_hol X hx))
   rw [ValuationSubring.mem_comap] at h1 h2
-  refine val_one W ((_root_.map_ne_zero _).2 (GlobalTheory.T.siegelUnitInTower_ne_zero Ω ε X c x hx)) h1 ?_
+  refine val_one W ((_root_.map_ne_zero _).2 (_root_.GlobalTheory.KZ.siegel_ne_zero Ω ε X c x hx)) h1 ?_
   rw [← map_inv₀]
   exact h2
 

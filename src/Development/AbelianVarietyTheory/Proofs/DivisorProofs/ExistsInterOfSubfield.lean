@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Formalism.LocalToGlobal.UnitaryNorms.CharExVal
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.HeckeCharacterFiniteIdeleValueMemField
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsUnitaryRationalInfTypeSubgroupAndInfTypeUnique
+public import Formalism.LocalToGlobal.UnitaryNorms.Bundle0008
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0343
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0092
 
 @[expose] public section
 

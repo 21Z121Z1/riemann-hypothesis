@@ -1,28 +1,26 @@
 module
 
 public import Development.AutomorphicSpectrum.Definitions.DivisibilityTowers.GoodOrigin
-public import Development.AutomorphicSpectrum.Statements.GeometryStatements.NearRecordOfValue
+public import Development.AutomorphicSpectrum.Statements.GeometryStatements.Bundle0006
 public import Development.WeilBound.CoreStatements.FlagImmersions.RootFlatOnHodgeOf
-public import Development.WeilBound.CoreStatements.FlagImmersions.CptEx
-public import Development.WeilBound.CoreStatements.FlagImmersions.HostRd
+public import Development.WeilBound.CoreStatements.FlagImmersions.Bundle0016
 public import Development.WeilBound.CoreStatements.FlagImmersions.RangeSubIff
-public import Development.WeilBound.CoreStatements.FlagImmersions.UnitAtOfSpan
+public import Development.WeilBound.CoreStatements.FlagImmersions.Bundle0018
 public import Development.WeilBound.CoreStatements.FlagImmersions.ExistsLiftGenFibre
 public import Development.WeilBound.CoreStatements.FlagImmersions.MemGenFibre
 public import Development.WeilBound.CoreStatements.FlagImmersions.ValAtOfExtends
 public import Development.WeilBound.CoreStatements.FlagImmersions.ExistsIntProj
-public import Development.WeilBound.CoreStatements.FlagImmersions.LocalCmpOf
+public import Development.WeilBound.CoreStatements.FlagImmersions.Bundle0017
 public import Development.WeilBound.CoreStatements.FlagImmersions.LogIdealNonpos
 public import Development.AutomorphicSpectrum.Statements.TowerExistence.GoodTowerExistsX
-public import Development.AutomorphicSpectrum.Statements.GeometryStatements.HodgeLatticeFlagBound
-public import Development.AutomorphicSpectrum.Statements.GeometryStatements.TrivFlagOnHodge
+public import Development.AutomorphicSpectrum.Statements.GeometryStatements.Bundle0003
 public import Development.AutomorphicSpectrum.Statements.GeometryStatements.FlatDegree
-public import Development.AutomorphicSpectrum.Statements.GeometryStatements.PadicIntegersHenselianFiniteResidue
+public import Development.AutomorphicSpectrum.Statements.GeometryStatements.Bundle0002
 public import Development.AutomorphicSpectrum.Statements.GeometryStatements.HodgeComparisonCompatibility
 public import Development.AutomorphicSpectrum.Statements.GeometryStatements.CmpSt
 public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.NumberField
 public import Development.AutomorphicSpectrum.Definitions.DivisibilityTowers.LocalAtPlaces
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.InterSt
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.Bundle0006
 
 @[expose] public section
 

@@ -4,18 +4,23 @@ public import Mathlib
 public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.PotentialsBoundedRegSettingEqReference
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.GlobalSectionsRankAlgClosed
 public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.BdryChart
-public import ReciprocityTheory.AnalyticForms.PlurisubharmonicFunctions.IsPshLocallyIntegrableStatement
+public import ReciprocityTheory.AnalyticForms.PlurisubharmonicFunctions.Bundle0001
 public import Development.AutomorphicSpectrum.Statements.GeometryStatements.FlatDegree
-public import Development.AutomorphicSpectrum.Statements.GeometryStatements.NineGeoU
-public import Development.WeilBound.CoreStatements.PlurisubharmonicCones.ChartCentre
-public import Development.AutomorphicSpectrum.Proofs.MetricProofs.PeriodDecompositionNearBoundaryStatement
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.BoundaryChartLieModelExistsStatement
-public import Development.AutomorphicSpectrum.Proofs.MetricProofs.ChartLocalAnalyticTrivializationStatement
-public import Development.AutomorphicSpectrum.Proofs.MetricProofs.FirstMinimumAndCuspWeightBoundsStatement
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.SncChartLocalNormalForm
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.InterBridgeB
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.CuspVolumeMiddle
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ComponentDataIntersectionBoundStatement
+public import Development.AutomorphicSpectrum.Statements.GeometryStatements.Bundle0006
+public import Development.WeilBound.CoreStatements.PlurisubharmonicCones.Bundle0018
+public import Development.AutomorphicSpectrum.Proofs.MetricProofs.PeriodDecompositionNearBoundary
+public import Development.AutomorphicSpectrum.Definitions.MetricPeriods.IsEigFrames
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0140
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0091
+public import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.Bundle0002
+public import Development.AutomorphicSpectrum.Proofs.MetricProofs.Bundle0116
+public import GroundTheory.HeightsAndTheta.Heights.Regularisation.Bundle0002
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.Bundle0006
+public import Development.AutomorphicSpectrum.Proofs.MetricProofs.FirstMinimumAndCuspWeightBounds
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0122
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.Bundle0009
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0214
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0222
 public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.IsExcisionNbhdAway
 
 @[expose] public section
@@ -102,7 +107,7 @@ theorem point_formula (Or : CptOrigin Y S₀ Dc Hd) {z : Sp ℂ ⟶ Or.𝔐.X} {
     (hfib : FibreLatVec Or.𝔐.t z R (fun i => x i.1 i.2) v) :
     phMu Hd w = Real.log (‖valAt Dc.y d.u w‖ * ∏ k, ‖w ⟨k, d.c k⟩‖ ^ Hd.aMu k) +
       ((Fintype.card (CMType H) : ℝ) * (((Dc.N - Dc.j : ℕ) : ℝ) * Real.log Real.pi) + R.logDet x) / 2 := by
-  obtain ⟨-, hP⟩ := GlobalTheory.T.component_data_intersection_bound hG E H D Xo l c Y II K J Ω W Dc Hd S₀ Or z w co
+  obtain ⟨-, hP⟩ := _root_.GlobalTheory.CompanionTheory.Ar.Cusp.PhMuFree.phMu_small hG E H D Xo l c Y II K J Ω W Dc Hd S₀ Or z w co
   obtain ⟨-, hP2⟩ := hP d
   obtain ⟨-, -, hform⟩ := hP2 s hs
   let Γ : CMType H → Matrix (Fin (Dc.N - Dc.j)) (Fin (Dc.N - Dc.j)) ℂ := fun τ =>
@@ -208,7 +213,7 @@ theorem neg_log_nz_le {E : Type} [Field E] [NumberField E] [IsCMField E] {g : �
     [Module (𝓞 E) Λ] {Ψ : Type} [Fintype Ψ] (R : RiemLat E g Λ) (σ : Ψ → (𝓞 E →+* ℂ)) {m : ℕ} (hσ : IsCMFam σ)
     (hr : R.HasRank σ m) (hm : 1 ≤ m) {I : Submodule (𝓞 E) Λ} (h1 : IsSaturated I) (h2 : IsIsoSub R.form I) :
     -Real.log (R.nz σ I) ≤ R.cuspW σ := by
-  obtain ⟨-, -, h3, h4, -⟩ := GlobalTheory.T.first_minimum_and_cusp_weight_bounds E g Λ Ψ R σ m hσ hr hm
+  obtain ⟨-, -, h3, h4, -⟩ := _root_.GlobalTheory.CompanionTheory.Ar.Cusp.cuspW_le E g Λ Ψ R σ m hσ hr hm
   by_cases hI : I = ⊥
   · have : R.nz σ I = 1 := by
       refine dif_neg ?_
@@ -228,7 +233,7 @@ theorem corrW_lower_near : Top.Given → ∀ (E : Type) [Field E] [NumberField E
   intro hG E _ _ _ _ H D Xo l c Y II K _ J _ Ω _ _ W _ _ Dc Hd S₀ Or U z w x hU hz hx ε hε
   obtain ⟨d, s, ν, hs, hν, -, rfl⟩ := hx
   have hw : w ∈ mcPts (mCoordIdeal Dc.y) :=
-    (GlobalTheory.T.complex_points_iff_centres _ Ω Or.𝔐.ξ K J Dc.y Or.𝔐.tie w).2 ⟨z, Or.𝔐.all _, hz⟩
+    (_root_.GlobalTheory.CompanionTheory.Ar.mem_mcPts_iff_exists_coordsAt _ Ω Or.𝔐.ξ K J Dc.y Or.𝔐.tie w).2 ⟨z, Or.𝔐.all _, hz⟩
   obtain ⟨a, t₀, ht, cw, hcw, hwe⟩ := Dc.chart_cover w hw
   have ht₀ : t₀ ∈ Metric.ball (0 : Fin (Fintype.card (CMType H) * Dc.j * (Dc.N - Dc.j)) → ℂ) 1 := mem_ball_zero_iff.2 (by linarith)
   have hγ : (Dc.chart a).γ t₀ = torusSmul (fun k => (cw k)⁻¹) w := by rw [hwe, torusSmul_inv hcw]
@@ -242,9 +247,9 @@ theorem corrW_lower_near : Top.Given → ∀ (E : Type) [Field E] [NumberField E
   obtain ⟨a₀, g, Λ, i₁, i₂, L, π, ρ, σ, pt, b, hρ, hσ, hb, hu, hfib, I, hI1, hI2, hlim⟩ :=
     chart_centre hG Or a t₀ ht₀ z hz₀ { d with inDom := hd₀ } s hs ν hν
   obtain ⟨δ₁, hδ₁, hlim⟩ := hlim ε hε
-  obtain ⟨V, T, hV, hV0, hT, hT0, hVT⟩ := GlobalTheory.T.chart_local_analytic_trivialization K J II (CMType H) Ω W Dc a t₀ ht₀
+  obtain ⟨V, T, hV, hV0, hT, hT0, hVT⟩ := _root_.GlobalTheory.CompanionTheory.Ar.Cusp.chart_torus_open K J II (CMType H) Ω W Dc a t₀ ht₀
   have hv0 : valAt Dc.y d.u w ≠ 0 :=
-    (((GlobalTheory.T.component_data_intersection_bound hG E H D Xo l c Y II K J Ω W Dc Hd S₀ Or z w hz).2 d).2 s hs).2.1
+    (((_root_.GlobalTheory.CompanionTheory.Ar.Cusp.PhMuFree.phMu_small hG E H D Xo l c Y II K J Ω W Dc Hd S₀ Or z w hz).2 d).2 s hs).2.1
   have c1 : Tendsto (torusSmul (fun k => (cw k)⁻¹)) (𝓝 w) (𝓝 ((Dc.chart a).γ t₀)) := by
     rw [hγ]
     refine Continuous.tendsto ?_ _

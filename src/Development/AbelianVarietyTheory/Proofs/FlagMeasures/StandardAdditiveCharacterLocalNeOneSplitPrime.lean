@@ -1,10 +1,10 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.SelfDualAt
-public import Formalism.LocalToGlobal.HermitianForms.TiedStep
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.IntegralExtensionFiniteAdelesBasicProperties
-public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.ExistsNormSubEqOne
+public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.Bundle0008
+public import Formalism.LocalToGlobal.HermitianForms.Bundle0002
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0269
+public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0002
 
 @[expose] public section
 

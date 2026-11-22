@@ -6,7 +6,7 @@ public import Development.AbelianVarietyTheory.Definitions.Degenerations.Compani
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.UniformisationConclusion
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.BCTools
 public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.RegularOfBoundedAtPadicAlgClPoints
-public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.JacobsonClosedPointsToolsInt
+public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.Bundle0015
 
 @[expose] public section
 

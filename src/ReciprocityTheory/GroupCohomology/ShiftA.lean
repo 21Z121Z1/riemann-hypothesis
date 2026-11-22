@@ -1,8 +1,8 @@
 module
 
-public import ReciprocityTheory.GroupCohomology.DEqZeroOfMemB
+public import ReciprocityTheory.GroupCohomology.Bundle0003
 public import ReciprocityTheory.GroupCohomology.ConnNatHolds
-public import ReciprocityTheory.GroupCohomology.PairHomFCoeOfId
+public import ReciprocityTheory.GroupCohomology.Bundle0005
 public import ReciprocityTheory.GroupCohomology.Shapiro
 
 @[expose] public section

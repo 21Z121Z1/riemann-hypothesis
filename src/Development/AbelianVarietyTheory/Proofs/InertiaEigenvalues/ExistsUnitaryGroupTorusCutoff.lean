@@ -1,9 +1,10 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.MulMatMemUnitaryGroup
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsLocallyConstantCutoffClosedEmbedding
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ConjugatesSeparableMatrixCompactModCentralizerStatement
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0087
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0079
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ConjugatesSeparableMatrixCompactModCentralizer
+public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.IsTestRep
 
 @[expose] public section
 

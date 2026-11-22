@@ -2,7 +2,7 @@ module
 
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.LinkedUnramifiedChains.CrystallineCardinalities.UnitStep
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.LinkedUnramifiedChains.LinkedUnlOf
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.NormLeOneOfIsIntegral
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0362
 
 @[expose] public section
 

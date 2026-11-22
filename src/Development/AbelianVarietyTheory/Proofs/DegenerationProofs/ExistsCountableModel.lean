@@ -2,18 +2,20 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.Degenerations.AdmissibleBaseOfCompleteDvr
-public import Development.AbelianVarietyTheory.Definitions.Degenerations.HomExtSt
-public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsCountableClosed
-public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.CompRel
-public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsIntegralDegenerationValuesStatement
+public import Development.AbelianVarietyTheory.Definitions.Degenerations.Bundle0001
+public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.Bundle0138
+public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.Bundle0035
+public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.Bundle0129
 public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.HomTransport
-public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsDegenerationValuesOverSubfieldStatement
-public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsTorsionPairDescentAlgClosedSubfieldStatement
-public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsDegenerationValuesIsoFieldPullbackStatement
-public import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.ExistsIsPullQk
-public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ExistsFiniteCubeInduction
-public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ExistsAddInjective
-public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.DetCondIffOfFieldExtension
+public import Development.AbelianVarietyTheory.Definitions.Degenerations.CharZeroOfIsPrimitiveRoot
+public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.Bundle0062
+public import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.Bundle0012
+public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.Bundle0130
+public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.Bundle0119
+public import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.Bundle0014
+public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.Bundle0032
+public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.Bundle0087
+public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0045
 
 @[expose] public section
 
@@ -62,7 +64,7 @@ theorem exact_of_pull (hG : GlobalFnsSt) {A : ArcF D R F} {A' : ArcF D K F} (hD 
     (hF : ArcPull.Compat φ F) (hx : ∀ (a : 𝓞 E) y, hD.xe (a • y) = a • hD.xe y) (hρ : A.ρ = A'.ρ) (hζ : A.I.ζ = A'.I.ζ)
     (hev : ∀ n a, A'.I.ev n a = pullQk hD hG hF A.bimult A'.bimult (A.I.ev n a)) :
     Exact (RingHom.id F) A A' ∧ Exact (RingHom.id F) A' A := by
-  obtain ⟨I, he, hr⟩ := GlobalTheory.T.exists_degenerationValuesIso_fieldPullback hG R K φ _ _ hD F hF _ _ A.ν A'.ν
+  obtain ⟨I, he, hr⟩ := _root_.GlobalTheory.ValuesPullIso.exists_values_iso hG R K φ _ _ hD F hF _ _ A.ν A'.ν
   have act : ∀ a y, I.e (A'.act a y) = A.act a (I.e y) := fun a y => A.ν.eX.injective (by
     rw [he, ArcF.act, ArcF.act, AddEquiv.apply_symm_apply, AddEquiv.apply_symm_apply, he, hx])
   have hq : ∀ n a, (A.q n a).1.1.toAdd = I.e (A'.q n a).1.1.toAdd ∧ I.Rel (A'.q n a).1.2 (A.q n a).1.2 := fun n a => by
@@ -119,7 +121,7 @@ theorem det_iff {D₀ : DegPre R} {D' : DegPre K} (hD : IsPullDeg φ D₀ D') [M
 
 theorem exists_values (hL : Laws) (hGt : BrGtSt) [IsAlgClosed F] (D' : DegPre K) (he : D'.PsiEven) (hB : D'.TauBimult) :
     ∃ (N : NumD F) (ν : NumOf D' F N), ∀ k (p : QkPt D' F k), ∃ q, ν.QPt p q := by
-  obtain ⟨N, ν, -⟩ := GlobalTheory.T.exists_integral_degeneration_values hL K D' he hB F ⊤ fun _ => trivial
+  obtain ⟨N, ν, -⟩ := _root_.GlobalTheory.ValuesExist.exists_integral_values hL K D' he hB F ⊤ fun _ => trivial
   exact ⟨N, ν, fun k p => (((hGt K D' he hB F N ν).2.2.2.2 k).1 p).exists⟩
 
 theorem exists_up (hL : Laws) (hGt : BrGtSt) [IsAlgClosed F] (hF : ArcPull.Compat φ F) (A : ArcF D R F) :
@@ -181,7 +183,7 @@ theorem exists_sub (hL : Laws) (hGt : BrGtSt) (hWp : BrWpSt) {R F F' : Type} [Co
   let _ := H.starRing
   have hG := hL.globalFns
   have hB := A'.bimult
-  obtain ⟨N, ν, I, he, hr⟩ := GlobalTheory.T.exists_degenerationValues_over_subfield hG R A'.D₀ A'.even hB F F' f hf _ A'.ν
+  obtain ⟨N, ν, I, he, hr⟩ := _root_.GlobalTheory.ValuesSubfield.exists_values_subfield hG R A'.D₀ A'.even hB F F' f hf _ A'.ν
   choose q hq using fun k (p : QkPt A'.D₀ F k) => (((hGt R _ A'.even hB F N ν).2.2.2.2 k).1 p).exists
   obtain ⟨ρ, hρ⟩ := mem_range_of_pow_eq f two_pos (c := -(H.d : F)) (A'.ρ_sq.trans (by simp))
   have : ∀ n, ∃ z : Fˣ, 0 < n → f z = A'.I.ζ n := fun n => by
@@ -196,7 +198,7 @@ theorem exists_sub (hL : Laws) (hGt : BrGtSt) (hWp : BrWpSt) {R F F' : Type} [Co
   have : ∀ n a, ∃ p : QkPt A'.D₀ F n, 0 < n → qkExt hB f hf p = A'.I.ev n a := fun n a => by
     rcases n.eq_zero_or_pos with rfl | hn
     · exact ⟨qkZero hB F 0, fun h => absurd h (lt_irrefl _)⟩
-    · obtain ⟨p, hp⟩ := GlobalTheory.T.exists_torsionPair_descent_algClosed_subfield hL R _ hB F F' f hf n hn (A'.I.ev n a)
+    · obtain ⟨p, hp⟩ := _root_.GlobalTheory.QkDescent.exists_qkExt_of_isAlgClosed hL R _ hB F F' f hf n hn (A'.I.ev n a)
       exact ⟨p, fun _ => ((qkExt_iff hB f hf _ _).1 hp).symm⟩
   choose ev hev using this
   have eqv : ∀ {n} (p p' : QkPt A'.D₀ F n), QkPt.Equiv _ F' (qkExt hB f hf p) (qkExt hB f hf p') ↔ QkPt.Equiv _ F p p' :=

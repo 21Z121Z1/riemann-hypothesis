@@ -1,11 +1,11 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ChartValEq
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsAffineOpenPreimageGenericBaseChangeModificatio
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntegralElementAffineSectionGenerated
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ChartValueIsIntegralOfIntegralAtPoints
-public import Development.AbelianVarietyTheory.Proofs.HomogeneousIdeals.IsReducedAlgebraOfSmoothOfIsNoetherianRing
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2328
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2453
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2455
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2412
+public import Development.AbelianVarietyTheory.Proofs.HomogeneousIdeals.Bundle0010
 
 @[expose] public section
 

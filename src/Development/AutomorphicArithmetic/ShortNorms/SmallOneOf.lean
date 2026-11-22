@@ -1,7 +1,7 @@
 module
 
 public import Development.AutomorphicArithmetic.ShortNorms.ShortNorm
-public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.PrimesAPIntervalOfPrimesRel
+public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0037
 
 @[expose] public section
 

@@ -2,93 +2,90 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.IsStdFr
-public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.PinColL
+public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.Bundle0029
 public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.FrameTopAlt
-public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.XiEqXiOffMul
+public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.Bundle0030
 public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.HzUnit
 public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.CosInj
 public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.UnitRatio
-public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.ChartZero
 public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.TailRd
-public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.Placed
-public import Formalism.LocalToGlobal.IndefiniteReal.RealRec
+public import Formalism.LocalToGlobal.IndefiniteReal.Bundle0030
 public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.NotIsCompactUnivFv
 public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.OnFramesRdApply
-public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.PairForm
+public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.Bundle0022
 public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.NotBadPrimeBase
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ValuationEqZeroOfRootOfSUnitRatio
-public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.ChainParSucc
-public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.ExistsNormLeHeightPow
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0350
+public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.Bundle0013
+public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.Bundle0007
 public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.AdmissibleDiscreteSeriesOfHasParam
 public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.HarishChandraModulesOn
 public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.HasDRepIffHasDerivAt
 public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.WeilRepresentationUnitaryPair
 public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.StepZeroTwistReferenceTupleEqId
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.IsRootOfSUnitRatioUpToRootOfUnityClosureLaws
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ListProdMapNeZero
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ReferenceTupleFamilyPeriodEqPeriod
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.WeilDatumRealEq
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.RamUnitaryHolds
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.TypeDataUnitShiftRelation
-public import Development.AbelianVarietyTheory.PublishedTheorems.DiscreteSeriesUnitary₂.DiscreteSeriesClassificationIff
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0357
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0389
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0363
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0240
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0191
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0398
+public import Development.AbelianVarietyTheory.PublishedTheorems.DiscreteSeriesUnitary₂.Bundle0001
 public import Formalism.LocalToGlobal.SiegelLatticeTheory.FlagStabilizerTensors.ThmSOwn
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SeeSawTotalConstantRatioOfFactorRatiosStatement
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SeeSawLatticeFramePinsFiniteIntegralLawsStatement
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.NonzeroScalarsRootsOfUnity
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0393
+public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.VacOfShape
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0548
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0545
 public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.ProdDat
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.RankOneGramRelation
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.QuadraticFamilyLevelIdentity
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ExistsNonzeroJetScaleTrueColumnsStatement
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ExistsTranslatesOfValuesFramesStatement
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.TrueColumnsRealDataSpecStatement
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.KernelPartLawsOfColumnPinsStatement
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ExistsLastPeriodClassDataOfLastStepStatement
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ExistsRowFormReadingLevelFormLastSpaceStatement
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.HasInfExpOfOrder
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ChainIdealIndexProduct
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.DefiniteLiftCommLevelPrimeOperatorsStatement
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.CoCptOfIsAnisoOrPosDef
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsThetaFunOOfThetaAt
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.PtYAndItYOfPair
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ThetaChainLastStepIntertwinesMatchedHecke
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.KFiniteSpanLeSpanRealIntertwinerValues
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.IsKFinOfMemKfin
-public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.ThetaIdentityOfMapsAll
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ThetaLiftChainScalar
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ThetaLiftTopScalar
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SeeSawKernelLiftCombinationOfDefiniteClassDataStatement
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SeeSawLastPeriodFactorizationOfClassDataStatement
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SeeSawScalarFormsContinuousAutomorphicCentralStatement
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SeeSawTupleKernelBackOfClassKernelDataStatement
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.LastPeriodClassesGiveTailReadingStatement
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SplitLiftExactConstantProofStatement
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.RootOfUnityThetaTwist
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.TypeDataLocalRelation
-public import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.UnramifiedCharacter
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0532
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0435
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0404
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0407
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0484
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0498
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0462
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0442
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0425
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0491
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0100
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0175
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0192
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0171
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0235
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0301
+public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.Bundle0014
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0533
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0542
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0266
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0345
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0256
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0253
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0439
+public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.Bundle0011
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0392
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0420
+public import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.Bundle0007
 public import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.ThirdPlaceSeries.CohomologicalCsdTempered
 public import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.ThirdPlaceSeries.RealPack
-public import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.ThirdPlaceSeries.FamilyConstants
+public import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.ThirdPlaceSeries.Bundle0081
 public import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.ThirdPlaceSeries.GeoAll
-public import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.ThirdPlaceSeries.TopReadAt
-public import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.ThirdPlaceSeries.FamCol
-public import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.ThirdPlaceSeries.TrueW
-public import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.ThirdPlaceSeries.ChartZero
-public import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.ThirdPlaceSeries.NotMemQBase
-public import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.ThirdPlaceSeries.FamAllQ
-public import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.ThirdPlaceSeries.ImportsStatement
-public import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.ThirdPlaceSeries.GVec
-public import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.ThirdPlaceSeries.ImportsBisStatement
-public import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.ThirdPlaceSeries.FamilyCharsStatement
-public import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.ThirdPlaceSeries.OffLevStatement
-public import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.ThirdPlaceSeries.ClsPinDOfFamColStatement
-public import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.ThirdPlaceSeries.RealEqOfColOKStatement
-public import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.ThirdPlaceSeries.LinkTailOfTopReadAt
-public import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.ThirdPlaceSeries.LinkCommOfLawsStatement
-public import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.ThirdPlaceSeries.KomWeilUnramStatement
-public import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.ThirdPlaceSeries.FormsAtZero
-public import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.ThirdPlaceSeries.IndefRRealT
-public import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.ThirdPlaceSeries.CIMulIdxStatement
-public import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.ThirdPlaceSeries.WeilTupleRootStatement
+public import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.ThirdPlaceSeries.Bundle0058
+public import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.ThirdPlaceSeries.Bundle0060
+public import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.ThirdPlaceSeries.Bundle0064
+public import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.ThirdPlaceSeries.Bundle0065
+public import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.ThirdPlaceSeries.Bundle0062
+public import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.ThirdPlaceSeries.Bundle0069
+public import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.ThirdPlaceSeries.Bundle0217
+public import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.ThirdPlaceSeries.Bundle0276
+public import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.ThirdPlaceSeries.Bundle0184
+public import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.ThirdPlaceSeries.Bundle0098
+public import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.ThirdPlaceSeries.Bundle0216
+public import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.ThirdPlaceSeries.Bundle0086
+public import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.ThirdPlaceSeries.Bundle0071
+public import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.ThirdPlaceSeries.Bundle0083
+public import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.ThirdPlaceSeries.Bundle0082
+public import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.ThirdPlaceSeries.Bundle0055
+public import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.ThirdPlaceSeries.Bundle0044
+public import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.ThirdPlaceSeries.Bundle0091
+public import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.ThirdPlaceSeries.Bundle0089
 
 @[expose] public section
 
@@ -186,7 +183,7 @@ theorem GlobalTheory.Fam.lawsLinks_of_geo_rows_cols_alt : GlobalTheory.Published
     (hweil t).2.2.2.1, hchars t, (hCO.laws t).1, (hCO.laws t).2.1, (hCO.laws t).2.2, hCO.cT t, hCO.cv t⟩
   have hcls : ClsPinD (a.fam row col).t := _root_.GlobalTheory.T.cls_pin_d_of_true_family W u (a.fam row col) hW.tr hW.tw ha.top (hRow col) hFC
   have hlaws : LawsX (a.fam row col).t := ⟨hIs.1, htIs, hloc, _root_.GlobalTheory.T.realEq_of_colOK' W u hW.pk (a.fam row col) hCO.ok, hval, hlast,
-    GlobalTheory.T.seeSawKernelLiftCombination_of_definiteClassData _ _ _ _ hIs.1 htIs hcls, GlobalTheory.T.seeSawLastPeriodFactorization_of_classData _ _ _ _ hIs.1 htIs hcls, GlobalTheory.T.seeSaw_scalarForms_continuous_automorphic_central _ _ _ _ hIs.1 htIs hcls⟩
+    _root_.GlobalTheory.SeeSaw.kerX_of_clsPinD _ _ _ _ hIs.1 htIs hcls, _root_.GlobalTheory.SeeSaw.perX_of_clsPinD _ _ _ _ hIs.1 htIs hcls, _root_.GlobalTheory.SeeSaw.rdX_of_clsPinD _ _ _ _ hIs.1 htIs hcls⟩
   have hheq : ∀ t, W.P.I.tup t = (I.rec7 l Z).what₂.mu0 → ∀ φ, HEq (_root_.GlobalTheory.MiTop.col0_alt (a.fam row col) t φ) ((I.rec7 l Z).eMu u φ).1 := by
     intro t ht φ
     show HEq ((I.rec7 l Z).e0Tw u (W.P.I.tup t) _) _
@@ -205,10 +202,10 @@ theorem GlobalTheory.Fam.lawsLinks_of_geo_rows_cols_alt : GlobalTheory.Published
     refine _root_.GlobalTheory.T.type_data_unit_shift_relation_alt W u (a.fam row col) a.k a.ι a.o ε S₀ (GlobalTheory.FinPl.RamUnit.ramUnitary_holds _) hIs.1
       (fun t => ⟨htIs t, ?_, ?_, ?_, hS₀ t⟩) ha.shape.pre.nodup ha.shape.pre.all ha.shape.pre.inj ?_ ?_ ?_
     · obtain ⟨⟨A, hAI⟩, -⟩ := hA t
-      exact GlobalTheory.T.seeSawTuple_kernelBack_of_classKernelData _ _ _ ρ A hIs.1 (htIs t) hρ hAI fun j hj => hne (hCO.cK t j hj)
+      exact _root_.GlobalTheory.SeeSaw.kBack_of_classData _ _ _ ρ A hIs.1 (htIs t) hρ hAI fun j hj => hne (hCO.cK t j hj)
     · obtain ⟨-, A, hAI⟩ := hA t
-      exact GlobalTheory.T.lastPeriodClasses_give_tailReading _ _ _ ρ A hAI (hne (hCO.cP t))
-    · exact GlobalTheory.T.definiteLift_comm_levelPrimeOperators _ _ a.k a.ι k.v a.o _ (w t) (GlobalTheory.T.splitLiftExactConstant_proof _) hIs.1 (htIs t) hvIs (hVF t) hsh
+      exact _root_.GlobalTheory.SeeSaw.tailRd_of_clsT _ _ _ ρ A hAI (hne (hCO.cP t))
+    · exact _root_.GlobalTheory.SeeSaw.liftS_of_exact _ _ a.k a.ι k.v a.o _ (w t) (_root_.GlobalTheory.FinPl.liftExact _) hIs.1 (htIs t) hvIs (hVF t) hsh
         (_root_.GlobalTheory.T.type_data_local_relation_alt W u hW.pk (a.fam row col) a.v a.k a.ι a.o (hRow col) hCO.ok ha.vis (ha.tie row col).1 ha.shape t)
     · intro t
       obtain ⟨α₀, -⟩ := hCO.zero t
@@ -252,7 +249,7 @@ theorem GlobalTheory.Fam.lawsLinks_of_geo_rows_cols_alt : GlobalTheory.Published
           ((_root_.GlobalTheory.T.root_of_unity_theta_twist_alt _ _ _ _ _ _ _ _ _ W u (a.fam row col) hW.pk (hRow col) tt).choose_spec.2.2.2 (j + 1))
       · rw [hq tt j ρ h, hq W.P.A3.A.μ0 j ρ h]
         exact (GlobalTheory.Fam.unitRatio_laws _).1 _ (inv_ne_zero (mul_ne_zero (hcI _ j (by omega)) (hcI _ (j + 1) (by omega))))
-    obtain ⟨h1, -, h3⟩ := GlobalTheory.T.seeSaw_totalConstant_ratio_of_factor_ratios _ _ k.v W.P.T (a.fam row col).t w (_root_.GlobalTheory.MiTop.qPrime_alt W) W.P.A3.A.μ0 htIs hCO.cv hkap hcG hsc hct
+    obtain ⟨h1, -, h3⟩ := _root_.GlobalTheory.SeeSaw.ratio_total_unitRatio_of_parts _ _ k.v W.P.T (a.fam row col).t w (_root_.GlobalTheory.MiTop.qPrime_alt W) W.P.A3.A.μ0 htIs hCO.cv hkap hcG hsc hct
       hCO.cP n hn t
     exact ⟨h1, h3⟩
 end

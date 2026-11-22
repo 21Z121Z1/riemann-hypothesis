@@ -1,11 +1,11 @@
 module
 
 public import Mathlib
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutMP2
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0041
 public import Formalism.FormalDegreeBessel.FormalDegreeRatio.CapelliHighestWeightConjugated
 public import CompanionTheory.HarishChandraModules.NonemptyRepresentations.ExpEntry
 public import Formalism.HermitianCurvature.HermitianCurvatureProofs.OperatorRepresentations
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.DifferentialOperatorBracket
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0075
 
 @[expose] public section
 

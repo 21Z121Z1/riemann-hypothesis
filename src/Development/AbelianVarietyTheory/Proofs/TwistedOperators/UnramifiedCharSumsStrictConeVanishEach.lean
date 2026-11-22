@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.ExponentSeparation
+public import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.Bundle0011
 public import Formalism.JacquetSubsetSums.JacquetSubsetSum
 
 @[expose] public section

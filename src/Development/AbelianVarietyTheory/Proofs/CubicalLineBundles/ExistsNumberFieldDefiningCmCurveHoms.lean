@@ -2,12 +2,10 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Statements.PrincipalLattices.LogHermFormOfUnitDiscriminant
-public import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.PolFibreIdCompCancel
-public import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.HomDerivativeClosure
-public import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.HomDerivBaseChange
-public import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.EllipticCurveLatticeBaseChangeStable
-public import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.MultiplierIffExistsHom
-public import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.HomDerivDescendsToNumberField
+public import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.Bundle0015
+public import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.Bundle0018
+public import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.Bundle0017
+public import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.Bundle0019
 
 @[expose] public section
 

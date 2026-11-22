@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import GroundTheory.AutomorphicForms.UnitaryRepresentations
+public import GroundTheory.AutomorphicForms.Bundle0008
 
 @[expose] public section
 

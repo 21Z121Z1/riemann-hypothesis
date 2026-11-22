@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import GroundTheory.HeightsAndTheta.Heights.StabilizerCovolume.DiffLatFree
+public import GroundTheory.HeightsAndTheta.Heights.StabilizerCovolume.Bundle0003
 
 @[expose] public section
 

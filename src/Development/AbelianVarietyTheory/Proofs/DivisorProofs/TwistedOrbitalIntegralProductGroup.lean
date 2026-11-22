@@ -1,27 +1,24 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Divisors.SimpleTwistedTraceFormulaStable
-public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.IsNormalisedOfIsDiscrete
-public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.BernsteinUnitaryProductIrreducible
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0026
+public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.Bundle0008
+public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.Bundle0001
 public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.StrongMultiplicityOne
 public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisGeometry₂.IsTemperedGLOfIsUnitaryLSeg
-public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.GaloisRepOfPolarizedCuspidal
+public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.Bundle0010
 public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.ExistsCellOfIsSubquotient
 public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.RadfordShufflePolynomialHolds
-public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisGeometry₂.ClozelPurity
-public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisGeometry₂.ClozelCohomologicalModel
-public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.LocalLanglandsGL
+public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisGeometry₂.Bundle0004
+public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.Bundle0007
 public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.ExistsUniqueHcharOfFiniteOrder
-public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.ChebotarevDegreeOneIffCheb
-public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.CuspidalMultiplicityOne
+public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.Bundle0006
+public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.Bundle0009
 public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.T2SpaceAdelicGeneralLinearGroupNumberField
 public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.HeckeLEntireAndNonzeroAtOne
-public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.BorelCasselman
 public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.QuadraticClassFieldTheory
 public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.ExistsOrthonormalOfUnimodular
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SubgroupAverageLinearTranslateConstStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SubgroupAverageProdMulEqMulStatement
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1086
 
 @[expose] public section
 
@@ -245,7 +242,7 @@ theorem orbTerm_inv (θ : G →* G) (K : Subgroup G) (δ : G) (f : G → ℂ)
   rw [conj_cpt _ ht] at e2
   rw [map_conj_mul_three_subgroup_of_mem K hk, e1, e2, fun_inv θ K δ f ht hk x]
   congr 1
-  exact (GlobalTheory.T.subgroupAverage_linear_translate_const K (fun k2 : K => f ((x * k2)⁻¹ * δ * θ (x * k2))) (fun k2 : K => f ((x * k2)⁻¹ * δ * θ (x * k2))) 0 ⟨k, hk⟩ (hf x) (hf x)).2.2.1
+  exact (_root_.GlobalTheory.AvgLin.avg_linear_translate_const K (fun k2 : K => f ((x * k2)⁻¹ * δ * θ (x * k2))) (fun k2 : K => f ((x * k2)⁻¹ * δ * θ (x * k2))) 0 ⟨k, hk⟩ (hf x) (hf x)).2.2.1
 
 end Orb
 
@@ -268,7 +265,7 @@ theorem orbTerm_prod (θ : G →* G) (θ' : G' →* G') (K : Subgroup G) (K' : S
   rw [twCent_prod, map_conj_prod, prod_inf_prod, cptPart_prod, relIndex_prod_prod, Nat.cast_mul,
     mul_mul_mul_comm]
   congr 1
-  have hA := GlobalTheory.T.subgroupAverage_prod_mul_eq_mul K K' (fun k : K => f ((x * k)⁻¹ * δ * θ (x * k)))
+  have hA := _root_.GlobalTheory.AvgProd.avg_prod K K' (fun k : K => f ((x * k)⁻¹ * δ * θ (x * k)))
     (fun k : K' => f' ((x' * k)⁻¹ * δ' * θ' (x' * k))) hf hf'
   rw [← hA, ← avg_comp_equiv (Subgroup.prodEquiv K K')]
   rfl

@@ -1,7 +1,7 @@
 module
 
-public import Formalism.LocalToGlobal.InertKernelTheory.OneCopyTh1S
-public import Formalism.LocalToGlobal.InertKernelTheory.InertCoprimeLemmas.ReBase
+public import Formalism.LocalToGlobal.InertKernelTheory.Bundle0010
+public import Formalism.LocalToGlobal.InertKernelTheory.InertCoprimeLemmas.Bundle0006
 public import Formalism.LocalToGlobal.TorsionIntegrality.UniformGaussModels.OneLetterGaussSharpTranslateHolds
 public import Formalism.LocalToGlobal.TorsionIntegrality.UniformGaussModels.OrthogonalGaussModels.RenameBlockSingleVariableSeries
 public import Formalism.LocalToGlobal.TorsionIntegrality.UniformGaussModels.OrthogonalGaussModels.OneLetterGaussTranslateOfCmCase

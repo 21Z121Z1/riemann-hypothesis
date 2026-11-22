@@ -1,9 +1,8 @@
 module
 
 public import Formalism.LocalToGlobal.TorsionIntegrality.GaussSumParity.StatementA
-public import Formalism.GaussJetBounds.StatementS
-public import Formalism.GaussJetBounds.StatementU
-public import Formalism.ThetaLogCoordinates.UniformThetaSubstitution.StatementGK
+public import Formalism.GaussJetBounds.Bundle0004
+public import Formalism.ThetaLogCoordinates.UniformThetaSubstitution.Bundle0003
 
 @[expose] public section
 

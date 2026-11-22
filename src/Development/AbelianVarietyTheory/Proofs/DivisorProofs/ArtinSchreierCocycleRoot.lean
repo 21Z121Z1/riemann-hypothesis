@@ -1,11 +1,11 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Divisors.OrthSubrepresentation
-public import Development.AbelianVarietyTheory.Proofs.CharacterTheory.IsPrimitiveEndClassFunctionInvariantSubspaceMobi
-public import Development.AbelianVarietyTheory.Proofs.CharacterTheory.RootPowerSumCharacterAdditiveAndXSubOnePow
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PrimitiveFunctionCharpolyGLHarishChandraRecursioStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TwistedHarishChandraInductionGLIsTwistedClassFunStatement
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0002
+public import Development.AbelianVarietyTheory.Proofs.CharacterTheory.Bundle0018
+public import Development.AbelianVarietyTheory.Proofs.CharacterTheory.Bundle0008
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0360
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0255
 
 @[expose] public section
 

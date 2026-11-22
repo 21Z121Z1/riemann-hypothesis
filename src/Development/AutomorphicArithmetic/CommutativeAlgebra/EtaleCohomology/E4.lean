@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Development.AutomorphicArithmetic.CommutativeAlgebra.EtaleCohomology.EtaleTopology
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EtaleDescentPicardGroupStatement
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0542
 
 @[expose] public section
 

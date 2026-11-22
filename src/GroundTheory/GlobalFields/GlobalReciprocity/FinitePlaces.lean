@@ -5,7 +5,7 @@ public import GroundTheory.GlobalFields.GlobalReciprocity.Layers
 public import GroundTheory.GlobalFields.GlobalReciprocity.NormSquare
 public import GroundTheory.GlobalFields.GlobalReciprocity.LocalSurjective
 public import GroundTheory.GlobalFields.GlobalReciprocity.DegreeLift
-public import GroundTheory.PowerSubgroups.CountableNeighbourhoods.PowInvariant
+public import GroundTheory.PowerSubgroups.CountableNeighbourhoods.Bundle0001
 
 @[expose] public section
 

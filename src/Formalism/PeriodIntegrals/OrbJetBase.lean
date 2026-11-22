@@ -5,7 +5,7 @@ public import Formalism.LocalRingCardinality.RhoDetPrimeEqMuTildeMulChiPow
 public import Formalism.LocalRingCardinality.DataParams₂
 public import Formalism.LocalRingCardinality.DataJet
 public import Formalism.LocalRingCardinality.DataForced
-public import Formalism.LocalRingCardinality.DataDIVDefs
+public import Formalism.LocalRingCardinality.Bundle0003
 public import Formalism.SharpRestriction.GrowthBounds.IsResidueClassZero
 
 @[expose] public section

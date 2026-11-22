@@ -1,22 +1,37 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Divisors.IsUnifAt
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0036
 public import Development.WeilBound.CoreStatements.AutomorphicKernels.IsobaricBaseChange.IntegralCoefficientBaseChange.UnitaryBaseChangeCharacters.UnitaryBaseChangeLinks.OrbitalIntegralUnitIndicatorEventuallyOneClassIm
 public import Development.WeilBound.CoreStatements.AutomorphicKernels.IsobaricBaseChange.IntegralCoefficientBaseChange.UnitaryBaseChangeCharacters.UnitaryBaseChangeLinks.UnitaryConjugacySignProductStatement
 public import Development.WeilBound.CoreStatements.AutomorphicKernels.IsobaricBaseChange.IntegralCoefficientBaseChange.UnitaryBaseChangeCharacters.UnitaryBaseChangeLinks.KappaSignMultiplicative
-public import Development.WeilBound.CoreStatements.AutomorphicKernels.IsobaricBaseChange.IntegralCoefficientBaseChange.UnitaryBaseChangeCharacters.UnitaryBaseChangeLinks.UnitaryMassFormulaStatement
+public import Development.WeilBound.CoreStatements.AutomorphicKernels.IsobaricBaseChange.IntegralCoefficientBaseChange.UnitaryBaseChangeCharacters.UnitaryBaseChangeLinks.Bundle0005
 public import Development.WeilBound.CoreStatements.AutomorphicKernels.IsobaricBaseChange.IntegralCoefficientBaseChange.UnitaryBaseChangeCharacters.UnitaryBaseChangeLinks.KappaConstantMulOfCoprimeEllipticPolynomialsImpo
 public import Development.WeilBound.CoreStatements.AutomorphicKernels.IsobaricBaseChange.IntegralCoefficientBaseChange.UnitaryBaseChangeCharacters.UnitaryBaseChangeLinks.FiniteTwistedClassesCharpoly
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TwistedOrbitalIntegralTwistedConjInvariantStatement
-public import Development.WeilBound.CoreStatements.AutomorphicKernels.IsobaricBaseChange.IntegralCoefficientBaseChange.UnitaryBaseChangeCharacters.UnitaryBaseChangeLinks.LocalTwistContinuousInvolutionIntegralProperties
-public import Development.WeilBound.CoreStatements.AutomorphicKernels.IsobaricBaseChange.IntegralCoefficientBaseChange.UnitaryBaseChangeCharacters.UnitaryBaseChangeLinks.EllipticCharpolySelfReciprocal
-public import Development.WeilBound.CoreStatements.AutomorphicKernels.IsobaricBaseChange.IntegralCoefficientBaseChange.UnitaryBaseChangeCharacters.UnitaryBaseChangeLinks.LocalPointsIntegralAlmostAllStatement
-public import Development.WeilBound.CoreStatements.AutomorphicKernels.IsobaricBaseChange.IntegralCoefficientBaseChange.UnitaryBaseChangeCharacters.UnitaryBaseChangeLinks.EllipticCharpolyLocalRealisationStatement
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1048
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0026
+public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.Bundle0008
+public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.Bundle0001
+public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.StrongMultiplicityOne
+public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisGeometry₂.IsTemperedGLOfIsUnitaryLSeg
+public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.Bundle0010
+public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.ExistsCellOfIsSubquotient
+public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.RadfordShufflePolynomialHolds
+public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisGeometry₂.Bundle0004
+public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.Bundle0007
+public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.ExistsUniqueHcharOfFiniteOrder
+public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.Bundle0006
+public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.Bundle0009
+public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.T2SpaceAdelicGeneralLinearGroupNumberField
+public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.HeckeLEntireAndNonzeroAtOne
+public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.QuadraticClassFieldTheory
+public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.ExistsOrthonormalOfUnimodular
+public import Development.WeilBound.CoreStatements.AutomorphicKernels.IsobaricBaseChange.IntegralCoefficientBaseChange.UnitaryBaseChangeCharacters.UnitaryBaseChangeLinks.Bundle0002
+public import Development.WeilBound.CoreStatements.AutomorphicKernels.IsobaricBaseChange.IntegralCoefficientBaseChange.UnitaryBaseChangeCharacters.UnitaryBaseChangeLinks.Bundle0003
+public import Development.WeilBound.CoreStatements.AutomorphicKernels.IsobaricBaseChange.IntegralCoefficientBaseChange.UnitaryBaseChangeCharacters.UnitaryBaseChangeLinks.Bundle0004
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1277
 public import Development.WeilBound.CoreStatements.AutomorphicKernels.IsobaricBaseChange.IntegralCoefficientBaseChange.UnitaryBaseChangeCharacters.UnitaryBaseChangeLinks.IntegralConjugacyAlmostAllStatement
 public import Development.WeilBound.CoreStatements.AutomorphicKernels.IsobaricBaseChange.IntegralCoefficientBaseChange.UnitaryBaseChangeCharacters.UnitaryBaseChangeLinks.FiniteEllipticCharpolysSupportStatement
-public import Development.WeilBound.CoreStatements.AutomorphicKernels.IsobaricBaseChange.IntegralCoefficientBaseChange.UnitaryBaseChangeCharacters.UnitaryBaseChangeLinks.MonicDivisorSignSumStatement
-public import Development.WeilBound.CoreStatements.AutomorphicKernels.IsobaricBaseChange.IntegralCoefficientBaseChange.UnitaryBaseChangeCharacters.UnitaryBaseChangeLinks.AdelicClassCountProductStatement
 
 @[expose] public section
 
@@ -57,7 +72,7 @@ theorem exists_ne_zero_of_twOrb [TopologicalSpace G] (K : Subgroup G) (δ : G) (
 theorem twOrb_conj [TopologicalSpace G] [IsTopologicalGroup G] {K K' : Subgroup G} (hK : IsCompact (K : Set G))
     (hK' : IsLevel (MonoidHom.id G) K K') {f : G → ℂ} (hf : IsHecke K' f) (δ g : G) :
     twOrb (MonoidHom.id G) K (g⁻¹ * δ * g) f = twOrb (MonoidHom.id G) K δ f := by
-  refine GlobalTheory.T.twistedOrbitalIntegral_twistedConj_invariant G (MonoidHom.id G) K δ g f fun x => ?_
+  refine _root_.GlobalTheory.TwOrbConj.twOrb_twConj G (MonoidHom.id G) K δ g f fun x => ?_
   haveI : CompactSpace K := isCompact_iff_compactSpace.1 hK
   have ho : IsOpen ((K'.subgroupOf K : Subgroup K) : Set K) := hK'.1.preimage continuous_subtype_val
   haveI := Subgroup.quotient_finite_of_isOpen _ ho
@@ -117,13 +132,13 @@ theorem charpoly_cls {w : Pl E} (y : UL n w) : (cls y).rep.1.val.charpoly = y.1.
 
 theorem charpoly_locPt (hU : Unr E) (w : Pl E) (γ : UE E n) :
     (locPt w γ).1.val.charpoly = atPl w γ.1.val.charpoly := by
-  rw [(GlobalTheory.T.local_points_integral_almost_all E hU n γ).1 w]
+  rw [(_root_.GlobalTheory.LocRatPt.main E hU n γ).1 w]
   exact Matrix.charpoly_map _ _
 
 theorem locPt_conj (hU : Unr E) (w : Pl E) (γ g : UE E n) :
     locPt w (g⁻¹ * γ * g) = (locPt w g)⁻¹ * locPt w γ * locPt w g := by
   apply Subtype.ext
-  simp only [Subgroup.coe_mul, Subgroup.coe_inv, (GlobalTheory.T.local_points_integral_almost_all E hU n _).1 w, map_mul, map_inv]
+  simp only [Subgroup.coe_mul, Subgroup.coe_inv, (_root_.GlobalTheory.LocRatPt.main E hU n _).1 w, map_mul, map_inv]
 
 theorem atPl_separable {P : E[X]} (hP : P ∈ Ell E n) (w : Pl E) : (atPl w P).Separable := hP.2.2.1.map
 
@@ -146,7 +161,7 @@ theorem ae_good (hU : Unr E) (hn : 1 ≤ n) {S : Set (Pl E)} (hS : IsSection S) 
     ∀ᶠ w in (cofinite : Filter (Pl E)), (∃! c : LocCl n P w, Good w c) ∧ ∀ c : LocCl n P w,
       (twOrb (MonoidHom.id _) (KL n w) c.1.rep (f w) = if Good w c then 1 else 0) ∧
       (Good w c → ∀ Q : E[X], Q ∣ P → kapSign n w (atPl w Q) c.1.rep.1 = 1) := by
-  filter_upwards [hf, GlobalTheory.T.orbitalIntegral_unitIndicator_eventually_oneClass E hU n hn S hS P hP, (GlobalTheory.T.elliptic_charpoly_local_realisation E hU n P hP).1, GlobalTheory.T.integral_conjugacy_almost_all E hU n P hP]
+  filter_upwards [hf, _root_.GlobalTheory.BCT.OrbUnit.orbUnit_ae E hU n hn S hS P hP, (_root_.GlobalTheory.IntUnitaryPoly.main E hU n P hP).1, GlobalTheory.T.integral_conjugacy_almost_all E hU n P hP]
     with w h1 h2 h3 h4
   refine ⟨?_, fun c => ⟨?_, fun hc Q hQ => (h2 _ c.2).2.2 _ (Polynomial.map_dvd _ hQ) hc⟩⟩
   · obtain ⟨y, hy, hyP⟩ := h3
@@ -201,7 +216,7 @@ theorem orb_support (hU : Unr E) (hn : 1 ≤ n) {S : Set (Pl E)} (hS : IsSection
     ∀ w ∈ S, ∃ y : UL n w, f w y ≠ 0 ∧ y.1.val.charpoly = atPl w γ.1.val.charpoly := by
   intro w hw
   have h1 : ∀ᶠ w in cofinite, twOrb (MonoidHom.id _) (KL n w) (locPt w γ) (f w) = 1 := by
-    filter_upwards [hf, GlobalTheory.T.orbitalIntegral_unitIndicator_eventually_oneClass E hU n hn S hS _ hP, (GlobalTheory.T.local_points_integral_almost_all E hU n γ).2.1] with w h1 h2 h3
+    filter_upwards [hf, _root_.GlobalTheory.BCT.OrbUnit.orbUnit_ae E hU n hn S hS _ hP, (_root_.GlobalTheory.LocRatPt.main E hU n γ).2.1] with w h1 h2 h3
     rw [h1, (h2 _ (charpoly_locPt hU w γ)).1, if_pos ⟨1, by simpa using h3⟩]
   obtain ⟨g, hg⟩ := exists_ne_zero_of_twOrb _ _ _ (ne_zero_of_finprod h1 h w hw)
   exact ⟨_, hg, (charpoly_conj _ _).trans (charpoly_locPt hU w γ)⟩
@@ -295,7 +310,7 @@ theorem signs (hU : Unr E) (hn : 1 ≤ n) {S : Set (Pl E)} (hS : IsSection S) {P
     · intro w _
       exact (GlobalTheory.T.kappa_sign_multiplicative E hU n hn w 1 1 (atPl w Q) (x w).1.rep 1 (hsepx w) (by simp) isCoprime_one_left
         (csr_one w) (csr_one w)).2.2
-  have hdiv := (GlobalTheory.T.monic_divisor_sign_sum E P hP.1 hP.2.2.1 σ hmul hpm).2
+  have hdiv := (_root_.GlobalTheory.DivSum.finsum_monic_divisors_sign E P hP.1 hP.2.2.1 σ hmul hpm).2
   have hbij : Function.Bijective (fun d : Fac P => (⟨d.1.1, d.2.1, ⟨d.1.2, d.2.2.2.symm⟩⟩ :
       {Q : E[X] // Q.Monic ∧ Q ∣ P})) := by
     refine ⟨fun d d' h => ?_, fun Q => ?_⟩
@@ -371,7 +386,7 @@ theorem fixedP (hU : Unr E) (hn : 1 ≤ n) {S : Set (Pl E)} (hS : IsSection S) {
   have hsep : ∀ w : Pl E, (atPl w P).Separable := atPl_separable hP
   haveI : ∀ w, Finite (LocCl n P w) := fun w =>
     ((GlobalTheory.T.finite_twisted_classes_charpoly E hU n w (atPl w P) (hsep w)).2).to_subtype
-  have hdivs := (GlobalTheory.T.monic_divisor_sign_sum E P hP.1 hP.2.2.1 (fun _ => 1) (fun _ _ _ _ _ _ => by simp) (fun _ _ _ => Or.inl rfl)).1
+  have hdivs := (_root_.GlobalTheory.DivSum.finsum_monic_divisors_sign E P hP.1 hP.2.2.1 (fun _ => 1) (fun _ _ _ _ _ _ => by simp) (fun _ _ _ => Or.inl rfl)).1
   have hP0 : P ≠ 0 := hP.1.ne_zero
   haveI : Finite (Fac P) := by
     haveI := hdivs.to_subtype
@@ -385,7 +400,7 @@ theorem fixedP (hU : Unr E) (hn : 1 ≤ n) {S : Set (Pl E)} (hS : IsSection S) {
     exact Subtype.ext (Prod.ext h1 h2)
   have hKc : ∀ w, IsCompact (KL n w : Set (UL n w)) := fun w => (GlobalTheory.T.localTwist_continuous_involution_integral_properties E hU n w).2.2.2.2.2.2.2.1
   have hgood := ae_good hU hn hS hP hf.2
-  have E1 := GlobalTheory.T.adelic_class_count_product (Pl E) S (LocCl n P) (Fac P) {c : TwCl (MonoidHom.id (UE E n)) // c.rep.1.val.charpoly = P}
+  have E1 := _root_.GlobalTheory.finsum_finprod_local_sums_expand (Pl E) S (LocCl n P) (Fac P) {c : TwCl (MonoidHom.id (UE E n)) // c.rep.1.val.charpoly = P}
     (locCl hU) (fun w c => twOrb (MonoidHom.id _) (KL n w) c.1.rep (f w))
     (fun d w c => kapSign n w (atPl w d.1.1) c.1.rep.1) (fun w c => Good w c) (2 ^ nfac P) ?h1 ?h2 ?h3 ?h4 ?h5
   case h1 =>
@@ -393,11 +408,11 @@ theorem fixedP (hU : Unr E) (hn : 1 ≤ n) {S : Set (Pl E)} (hS : IsSection S) {
     exact ⟨hw.1, fun c => ⟨(hw.2 c).1, fun hc d => (hw.2 c).2 hc _ ⟨d.1.2, d.2.2.2.symm⟩⟩⟩
   case h2 =>
     intro w hw
-    obtain ⟨y, hy⟩ := (GlobalTheory.T.elliptic_charpoly_local_realisation E hU n P hP).2 w (isSplit_of_not_mem hS hw)
+    obtain ⟨y, hy⟩ := (_root_.GlobalTheory.IntUnitaryPoly.main E hU n P hP).2 w (isSplit_of_not_mem hS hw)
     exact ⟨⟨cls y, (charpoly_cls y).trans hy⟩⟩
   case h3 =>
     intro r
-    filter_upwards [(GlobalTheory.T.local_points_integral_almost_all E hU n r.1.rep).2.1] with w hw
+    filter_upwards [(_root_.GlobalTheory.LocRatPt.main E hU n r.1.rep).2.1] with w hw
     obtain ⟨g, hg⟩ := rep_cls (locPt w r.1.rep)
     refine ⟨g⁻¹, ?_⟩
     show g⁻¹⁻¹ * (cls (locPt w r.1.rep)).rep * g⁻¹ ∈ KL n w
@@ -448,7 +463,7 @@ theorem coprime_of_sep {k : Type} [Field k] {p q : k[X]} (h : (p * q).Separable)
 
 theorem fac_finite {P : E[X]} (hP : P ∈ Ell E n) :
     {p : E[X] × E[X] | p.1.Monic ∧ p.2.Monic ∧ p.1 * p.2 = P}.Finite := by
-  have hdivs := (GlobalTheory.T.monic_divisor_sign_sum E P hP.1 hP.2.2.1 (fun _ => 1) (fun _ _ _ _ _ _ => by simp) (fun _ _ _ => Or.inl rfl)).1
+  have hdivs := (_root_.GlobalTheory.DivSum.finsum_monic_divisors_sign E P hP.1 hP.2.2.1 (fun _ => 1) (fun _ _ _ _ _ _ => by simp) (fun _ _ _ => Or.inl rfl)).1
   refine (hdivs.image fun Q => (Q, P /ₘ Q)).subset fun p hp => ⟨p.1, ⟨hp.1, ⟨p.2, hp.2.2.symm⟩⟩, ?_⟩
   refine Prod.ext rfl ?_
   show P /ₘ p.1 = p.2
@@ -475,7 +490,7 @@ theorem geomURat_eq_geomU : ∀ (E : Type) [Field E] [NumberField E] [IsCMField 
           chW lam c.rep.1.val.charpoly * orb c.rep else 0 := by
       intro c
       by_cases h : c.rep.1.val.charpoly.Separable
-      · have he := (GlobalTheory.T.local_points_integral_almost_all E hU n c.rep).2.2 h
+      · have he := (_root_.GlobalTheory.LocRatPt.main E hU n c.rep).2.2 h
         rw [if_pos h, if_pos he, GlobalTheory.T.unitary_mass_formula E hU n hn c.rep he]
       · rw [if_neg h, if_neg fun h' => h h'.2.2.1]
     have hsupp : ∀ c : TwCl (MonoidHom.id (UE E n)), (if c.rep.1.val.charpoly ∈ Ell E n then
@@ -522,7 +537,7 @@ theorem geomURat_eq_geomU : ∀ (E : Type) [Field E] [NumberField E] [IsCMField 
     have han : a ≤ n := Nat.lt_succ_iff.1 (Finset.mem_range.1 ha)
     constructor
     · rintro ⟨h1, h2, hc⟩
-      have := (GlobalTheory.T.kappaConstant_mul_of_coprime_ellipticPolynomials E hU a (n - a) p.1 p.2 h1 h2 hc).2.2
+      have := (_root_.GlobalTheory.BCT.KapMul.kap_mul E hU a (n - a) p.1 p.2 h1 h2 hc).2.2
       rw [Nat.add_sub_cancel' han] at this
       exact ⟨⟨h1.1, h2.1, this⟩, h1.2.1⟩
     · rintro ⟨⟨m1, m2, he⟩, hd⟩

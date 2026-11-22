@@ -3,10 +3,10 @@ module
 public import Mathlib
 public import Formalism.WeaklyAdmissibleFiltrations.Statement
 public import Formalism.SharpRestriction.LevelLetterCocycles.RelayGeneralCaseOfAdmissible
-public import Formalism.SharpRestriction.LevelLetterCocycles.CrystallineMapLemmas
+public import Formalism.SharpRestriction.LevelLetterCocycles.Bundle0007
 public import Formalism.SharpRestriction.LevelLetterCocycles.LatticeMembershipPolynomialGamma
 public import Formalism.SharpRestriction.LevelLetterCocycles.ArcCoordinatesOfMembership
-public import Formalism.SharpRestriction.LevelLetterCocycles.IsobaricMultiplicityOne
+public import Formalism.SharpRestriction.LevelLetterCocycles.Bundle0010
 
 @[expose] public section
 

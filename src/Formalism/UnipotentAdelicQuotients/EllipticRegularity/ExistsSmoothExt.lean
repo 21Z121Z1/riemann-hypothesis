@@ -1,7 +1,6 @@
 module
 
-public import Formalism.UnipotentAdelicQuotients.EllipticRegularity.KernDecay
-public import Formalism.UnipotentAdelicQuotients.EllipticRegularity.KernDil
+public import Formalism.UnipotentAdelicQuotients.EllipticRegularity.Bundle0001
 public import Formalism.UnipotentAdelicQuotients.EllipticRegularity.KernDer
 
 @[expose] public section

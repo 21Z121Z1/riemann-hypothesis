@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import GroundTheory.ArithmeticGeometry.SchemeCohomology.SheafHOver
-public import GroundTheory.ArithmeticGeometry.SchemeCohomology.CechSeparated
+public import GroundTheory.ArithmeticGeometry.SchemeCohomology.Bundle0004
 
 @[expose] public section
 

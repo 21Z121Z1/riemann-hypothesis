@@ -3,7 +3,7 @@ module
 public import Formalism.HermitianCurvature.StatementJF
 public import Formalism.HermitianCurvature.HermitianCurvatureProofs.BetaSesquilinearity
 public import Formalism.HermitianCurvature.HermitianCurvatureProofs.SumDualVectorEqZeta
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.LemmaDDeterminantIdentity
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0047
 
 @[expose] public section
 

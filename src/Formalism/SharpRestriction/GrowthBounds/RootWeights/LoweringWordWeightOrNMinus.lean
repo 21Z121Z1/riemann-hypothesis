@@ -1,6 +1,6 @@
 module
 
-public import Formalism.SharpRestriction.GrowthBounds.RootWeights.NontrivialIsotypicWeightZeroKilled
+public import Formalism.SharpRestriction.GrowthBounds.RootWeights.Bundle0001
 
 @[expose] public section
 

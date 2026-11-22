@@ -2,9 +2,9 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.HeightFunctions.FiniteDimensionalOfSz
-public import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.LFunctionPositiveConductorFourEight
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.NumberFieldPrimeZetaSumAddLogIsBigO
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SummableInvAbsNormPrimesOfNotPrimeNorm
+public import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.Bundle0002
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0209
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0125
 
 @[expose] public section
 

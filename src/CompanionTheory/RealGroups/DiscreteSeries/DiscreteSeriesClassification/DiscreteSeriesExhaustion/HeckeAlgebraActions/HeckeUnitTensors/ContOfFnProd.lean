@@ -3,10 +3,10 @@ module
 public import Mathlib
 public import CompanionTheory.RealGroups.DiscreteSeries.DiscreteSeriesClassification.DiscreteSeriesExhaustion.HeckeAlgebraActions.BackStable
 public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.QuantumDeterminantTensor
-public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.HeckeRankOneStatement
-public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.OmegaMinorStatement
-public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.PrincipalSumStatement
-public import Formalism.RealPlaceAnalysis.ThirdArithmeticHolds
+public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.Bundle0023
+public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.Bundle0024
+public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.PrincipalSum
+public import Formalism.RealPlaceAnalysis.Bundle0004
 
 @[expose] public section
 

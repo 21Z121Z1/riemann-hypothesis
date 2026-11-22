@@ -1,7 +1,7 @@
 module
 
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutJDHatJDRInvDefs
-public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.AdjointInverseTranslate.DetTransposeApply
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0142
+public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.AdjointInverseTranslate.Bundle0002
 
 @[expose] public section
 

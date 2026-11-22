@@ -2,8 +2,8 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsFormsAlgebraicIndependentSmulSubSumMem
-public import Development.AbelianVarietyTheory.Proofs.HomogeneousIdeals.IsDomainAndIsIntegrallyClosedAtPrimeOfSmoothOfCo
-public import Development.AbelianVarietyTheory.Proofs.CoherentCohomologyProofs.SubalgebraEqBotOfIsIntegralOfIsIntegrallyClosed
+public import Development.AbelianVarietyTheory.Proofs.HomogeneousIdeals.Bundle0004
+public import Development.AbelianVarietyTheory.Proofs.CoherentCohomologyProofs.Bundle0005
 
 @[expose] public section
 

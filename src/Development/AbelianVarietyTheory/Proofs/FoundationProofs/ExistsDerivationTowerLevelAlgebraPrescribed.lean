@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Foundations.CosetTrace
-public import Development.AbelianVarietyTheory.Definitions.Foundations.NotIsTrDataGaussianIntOne
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.TowerEmbeddingInjectiveStatement
+public import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0001
+public import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0004
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0112
 
 @[expose] public section
 
@@ -210,7 +210,7 @@ theorem exists_derOn_levelAlg : ∀ (p : ℕ) [Fact p.Prime] (Ω : Type) [Field 
     Module.compHom _ ((RingHom.id _).fromOpposite fun _ _ => mul_comm _ _)
   haveI : IsCentralScalar (integralClosure (O0 p) Ω) M := ⟨fun _ _ => rfl⟩
   obtain ⟨ι, hι⟩ := GlobalTheory.K5.Basic.exists_isEmb T n
-  have hinj := GlobalTheory.T.tower_embedding_injective p Ω hc T n hn ι hι
+  have hinj := _root_.GlobalTheory.K5.EmbInj.emb_injective p Ω hc T n hn ι hι
   have hk : Function.Injective (kap T n) := by
     intro a b hab
     apply hinj

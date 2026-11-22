@@ -1,8 +1,7 @@
 module
 
 public import Mathlib
-public import Formalism.PeriodIntegrals.SchurFock
-public import Formalism.PeriodIntegrals.HwIrred
+public import Formalism.PeriodIntegrals.Bundle0019
 
 @[expose] public section
 

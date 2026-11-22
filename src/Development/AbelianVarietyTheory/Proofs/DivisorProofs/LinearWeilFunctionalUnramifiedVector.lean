@@ -1,22 +1,23 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Divisors.MatchingOfParts
-public import Development.AbelianVarietyTheory.Definitions.Divisors.DiscreteSeriesHermitianUnique
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0033
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0041
 public import Development.AbelianVarietyTheory.Definitions.Divisors.RankEqCardIffExistsFrameMatrixFirstColumnBlock
-public import Development.AbelianVarietyTheory.Definitions.Divisors.IsPairOfIsTriple
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaActionExistsStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EqSmulOfCommuteHeisenbergLinearModelSchwartzBruhStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdelicHeisenbergActsByLocalSchrodingerStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsComplementaryAdelicSchwartzRestFunction
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsSplitPlaceAdelicMatrixGivenComponentsStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdelicTraceSupportedAtSplitPlaceStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HermitianTensorSkewHermitianSplitSymplecticPairStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SchrodingerPreservesSchwartzBruhat
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.StandardAdelicCharacterNontrivialAtPlaces
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TraceSymplecticSelfZeroSplitSupported
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0051
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1843
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0340
+public import Development.AbelianVarietyTheory.Definitions.Divisors.HilbertNinetyQuotientHomEqIff
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1617
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1665
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1685
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1678
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1690
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1656
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1566
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1590
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsHomSuppSplit
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HermitianSelfDualLatticeSpaceFormHermitianNondeg
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0957
 
 @[expose] public section
 
@@ -348,7 +349,7 @@ theorem shape : GlobalTheory.FunPr.Hypotheses₂ → ∀ (F E : Type) [Field F] 
     funext Y
     simp only [hSM l x hx, Matrix.mul_assoc, ← Matrix.transpose_mul, Matrix.nonsing_inv_mul _ hdet, Matrix.transpose_one,
       Matrix.mul_one]
-  obtain ⟨c, hc⟩ := GlobalTheory.T.eq_smul_of_commute_heisenberg_linearModel_schwartzBruhat (SB (Fin a × Fin (a + a') → Fv F v)) (GlobalTheory.LatVac.psiAt B.ψ v) hψc hψ1 ι
+  obtain ⟨c, hc⟩ := _root_.GlobalTheory.LinSchur.eq_smul_of_commute (SB (Fin a × Fin (a + a') → Fv F v)) (GlobalTheory.LatVac.psiAt B.ψ v) hψc hψ1 ι
     (fun x Y => ι (S x) (Y * htᵀ)) hbij hL2
     (fun C => schr (GlobalTheory.LatVac.psiAt B.ψ v) (wT C)) (fun l => schr (GlobalTheory.LatVac.psiAt B.ψ v) (wM l)) hT2 hM2
   refine ⟨c, fun φ hφ φ₁ _ hAct Y => ?_⟩

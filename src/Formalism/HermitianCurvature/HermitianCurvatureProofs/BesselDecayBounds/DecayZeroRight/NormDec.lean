@@ -1,9 +1,9 @@
 module
 
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.MajorantEstimate
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0035
 public import Formalism.HermitianCurvature.HermitianCurvatureProofs.NormDiagonalEntryDilationGeneratorLeOne
-public import Formalism.SharpRestriction.CuspSpanNormBounds.ExpansionFromLemmaB
-public import Formalism.SharpRestriction.CuspSpanNormBounds.BesselBoundFamilyOfDoubleCoset
+public import Formalism.SharpRestriction.CuspSpanNormBounds.Bundle0010
+public import Formalism.SharpRestriction.CuspSpanNormBounds.Bundle0007
 
 @[expose] public section
 

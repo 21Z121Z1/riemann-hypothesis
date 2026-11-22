@@ -1,7 +1,6 @@
 module
 
-public import Formalism.LocalToGlobal.GlobalTheory.GL1.CompactFixesLattice.CoordMulTmul
-public import Formalism.LocalToGlobal.GlobalTheory.GL1.CompactFixesLattice.ExistsDenOfIsCompactAdele
+public import Formalism.LocalToGlobal.GlobalTheory.GL1.CompactFixesLattice.Bundle0001
 
 @[expose] public section
 

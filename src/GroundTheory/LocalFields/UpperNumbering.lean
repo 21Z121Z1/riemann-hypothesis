@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import GroundTheory.LocalFields.HerbrandFunction
-public import GroundTheory.LocalFields.LowerIndexQuotient
+public import GroundTheory.LocalFields.Bundle0012
 
 @[expose] public section
 

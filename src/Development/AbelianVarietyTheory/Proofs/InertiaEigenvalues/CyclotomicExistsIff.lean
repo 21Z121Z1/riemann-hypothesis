@@ -1,8 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.BlockTheory.NonGaloisCusps.OnePlusPowerAssembly
-public import Development.AbelianVarietyTheory.BlockTheory.NonGaloisCusps.KernelCharacterDelta
+public import Development.AbelianVarietyTheory.BlockTheory.NonGaloisCusps.Bundle0001
 
 @[expose] public section
 

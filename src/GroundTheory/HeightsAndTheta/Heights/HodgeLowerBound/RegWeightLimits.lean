@@ -2,9 +2,9 @@ module
 
 public import Mathlib
 public import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.FrameDefinitions.CpRegPhRegOfNonneg
-public import GroundTheory.HeightsAndTheta.Heights.Regularisation.IsCompactImageClosureMid
-public import GroundTheory.HeightsAndTheta.Heights.Regularisation.PBoundedGlue
-public import GroundTheory.HeightsAndTheta.Heights.Regularisation.PGlueRegularised
+public import GroundTheory.HeightsAndTheta.Heights.Regularisation.Bundle0004
+public import GroundTheory.HeightsAndTheta.Heights.Regularisation.Bundle0006
+public import GroundTheory.HeightsAndTheta.Heights.Regularisation.Bundle0007
 public import ReciprocityTheory.AnalyticForms.PlurisubharmonicFunctions.PshMoll
 
 @[expose] public section

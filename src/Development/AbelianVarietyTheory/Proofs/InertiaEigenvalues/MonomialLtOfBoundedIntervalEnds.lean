@@ -2,9 +2,9 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.IsGauss
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsGaussGCTarget
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.AcrisGaussNormEventuallyMonomial
-public import Development.AbelianVarietyTheory.CrystallinePeriods.RingBasics
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0194
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0187
+public import Development.AbelianVarietyTheory.CrystallinePeriods.Bundle0001
 
 @[expose] public section
 

@@ -1,8 +1,8 @@
 module
 
 public import CompanionTheory.HarishChandraModules.LowKTypeMultiplicity.EigenspaceCyclicDensity.LowKMultOneP
-public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.KummerLiftedCocycleImageEqPicardClass
-public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.WordMonomial
+public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.Bundle0019
+public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.Bundle0021
 
 @[expose] public section
 

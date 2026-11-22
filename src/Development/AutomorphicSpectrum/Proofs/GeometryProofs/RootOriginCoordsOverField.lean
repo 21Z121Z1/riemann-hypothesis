@@ -4,28 +4,29 @@ public import Mathlib
 public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.EmbedsGeneric
 public import Development.AutomorphicSpectrum.Definitions.DivisibilityTowers.GoodOrigin
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.GlobalSectionsRankAlgClosed
-public import Development.AutomorphicSpectrum.Statements.GeometryStatements.FlatLineGenerator
-public import Development.AutomorphicSpectrum.Statements.GeometryStatements.CardComapMulFinsumEqFinsumFibres
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.IsSmoothHermTrivLine
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.MemAbLocusIff
-public import Development.AutomorphicSpectrum.Proofs.MetricProofs.ExistsAnalyticLogResolutionStatement
-public import Development.AutomorphicSpectrum.Proofs.MetricProofs.LogResolutionFunctorialHolomorphicStatement
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.HodgeCptBirationalArithVarStatement
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ComplexPointsIffCentresStatement
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.PositiveHomogeneousPotentialStatement
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.FlatOnLogResolutionCorrStatement
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LogResolutionPotentialPullbackStatement
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LogResolutionReindexedStatement
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.HolomorphicDegreeCompositionStatement
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.DominatingRegularPushStatement
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.DominatingCoordsReindexedStatement
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.HodgeCompDescentFirstStatement
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.HodgeCompDescentSecondStatement
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.HodgeCompDescentThirdStatement
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.HodgeCompDescentFourthStatement
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.DegreeReindexedCoordsStatement
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.HodgeCompDescentFifthStatement
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.RootOriginCoordFieldStatement
+public import Development.AutomorphicSpectrum.Statements.GeometryStatements.Bundle0007
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0097
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0104
+public import Development.AutomorphicSpectrum.Proofs.MetricProofs.ExistsAnalyticLogResolution
+public import Development.AutomorphicSpectrum.Definitions.MetricPeriods.Pull1
+public import Development.AutomorphicSpectrum.Statements.MetricStatements.AgreementIffGuarded
+public import Development.AutomorphicSpectrum.Proofs.MetricProofs.LogResolutionFunctorialHolomorphic
+public import Development.AutomorphicSpectrum.Definitions.MetricPeriods.IsPeriodOn
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0089
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsHodgeLine
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0043
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.Bundle0004
+public import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.FrameDefinitions.Metric
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.IsGrpPullback
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0113
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0111
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0112
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0163
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0164
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0110
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.DegreeReindexedCoords
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0219
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0114
 
 @[expose] public section
 
@@ -46,42 +47,42 @@ theorem root_model_on_cover : Top.Given → ∀ (E : Type) [Field E] [NumberFiel
   have hβ : Function.Injective (algebraMap (𝓞 c.F) c.F) := RingOfIntegers.coe_injective
   have hv := isBlockMap_blkV bx hbk
   haveI : Nonempty K := ⟨bk o.k₀⟩
-  obtain ⟨hbir, harith⟩ := GlobalTheory.T.hodge_cpt_birational_arith_var E H D l Xo c _ _ Y S Ω K J y 𝔐 Fl hβ
+  obtain ⟨hbir, harith⟩ := _root_.GlobalTheory.CompanionTheory.Ar.flagged_model_dim E H D l Xo c _ _ Y S Ω K J y 𝔐 Fl hβ
   have harith' : IsArithVar (mCoordIdeal y) (Top.dimFl (CMType H) (D.p + D.q) + 1) := harith
-  obtain ⟨R'⟩ := GlobalTheory.T.exists_analytic_log_resolution K J Ω y _ harith' hsm
+  obtain ⟨R'⟩ := _root_.GlobalTheory.CompanionTheory.Ar.PB.nonempty_anLogRes_of_smoothGenericFibre K J Ω y _ harith' hsm
   have hP₀ : ¬ (⊤ : Ideal (MRing R.ι)) ≤ mCoordIdeal R.y := fun h' =>
     R.arith.2.1.1.ne_top (top_le_iff.1 h')
   have hle : mCoordIdeal R.y ≤ imageZ (blkV bk bx) (mCoordIdeal y) := mCoordIdeal_le_imageZ i bx hy
   let R₀ : AnLogRes (mCoordIdeal R.y) ⊤ (Top.dimFl (CMType H) (D.p + D.q)) := withTop o.Re.R hP₀ hemb
-  obtain ⟨hh, hholo, horb⟩ := GlobalTheory.T.log_resolution_functorial_holomorphic R.K R.ι K J bk (blkV bk bx) (mCoordIdeal R.y) (mCoordIdeal y) ⊤ _ _ R₀ R' hv hle
+  obtain ⟨hh, hholo, horb⟩ := _root_.GlobalTheory.CompanionTheory.Ar.PB.Proj.holoMap_of_blockProj R.K R.ι K J bk (blkV bk bx) (mCoordIdeal R.y) (mCoordIdeal y) ⊤ _ _ R₀ R' hv hle
   have hdpos : 0 < Fl.deg := by
     obtain ⟨-, -, -, -, -, -, -, -, -, -, h0, -⟩ := Fl.generic
     exact h0
   obtain ⟨br₀, hdeg₀⟩ := GlobalTheory.T.log_resolution_reindexed R.K K R.ι J R.Ω Ω R.y y bk bx i _ Fl.deg R₀ R' hh hbk hy R.arith harith'
     R.birational hbir hholo horb hfin hdpos
-  obtain ⟨hholoπ, hdeg⟩ := GlobalTheory.T.holomorphic_degree_composition _ Fl.deg Sys.X o.Re.R.X R'.X Sys.A o.Re.R.A R'.A o.Re.π hh br₀ o.Re.holo hbij
+  obtain ⟨hholoπ, hdeg⟩ := _root_.GlobalTheory.CompanionTheory.Ar.DegComp.holoMap_comp_isDegreeOff _ Fl.deg Sys.X o.Re.R.X R'.X Sys.A o.Re.R.A R'.A o.Re.π hh br₀ o.Re.holo hbij
     hholo hdeg₀
-  obtain ⟨hreg, hrefl, hval⟩ := GlobalTheory.T.dominating_regular_push 𝔐.X o.𝔐.X Ω R.Ω 𝔐.ξ o.𝔐.ξ h i hd 𝔐.tie.gen
+  obtain ⟨hreg, hrefl, hval⟩ := _root_.GlobalTheory.CompanionTheory.Ar.Chg.Stalk.regular_along_dominant 𝔐.X o.𝔐.X Ω R.Ω 𝔐.ξ o.𝔐.ξ h i hd 𝔐.tie.gen
   have hval' : ∀ (z : Spec (CommRingCat.of ℂ) ⟶ 𝔐.X) (a : R.Ω) (r : ℂ), ValAt o.𝔐.ξ (z ≫ h) a r → ValAt 𝔐.ξ z (i a) r :=
     fun z a r => hval z a r (𝔐.all _)
-  have hco := GlobalTheory.T.dominating_coords_reindexed 𝔐.X o.𝔐.X Ω R.Ω 𝔐.ξ o.𝔐.ξ h i R.K K R.ι J R.y y bk bx hd o.𝔐.tie 𝔐.all hy hval'
+  have hco := _root_.GlobalTheory.CompanionTheory.Ar.Chg.coordsAt_blkV 𝔐.X o.𝔐.X Ω R.Ω 𝔐.ξ o.𝔐.ξ h i R.K K R.ι J R.y y bk bx hd o.𝔐.tie 𝔐.all hy hval'
   have hcov : IsCovOf o.𝔐 𝔐 i h := ⟨hd, hf, hcst⟩
-  obtain ⟨j, hj1, hj2, hj3, hj4, hj5⟩ := GlobalTheory.T.hodge_comp_descent_first E H D l Xo c _ _ Y ∅ S R.Ω Ω R.K K R.ι J R.y y o.𝔐 𝔐 i h hd o.Fl Fl hβ hcov hfl
+  obtain ⟨j, hj1, hj2, hj3, hj4, hj5⟩ := _root_.GlobalTheory.CompanionTheory.Ar.ChgLie.lie_of_cover E H D l Xo c _ _ Y ∅ S R.Ω Ω R.K K R.ι J R.y y o.𝔐 𝔐 i h hd o.Fl Fl hβ hcov hfl
   have hgen : GenPull o.Fl Fl i hd :=
-    GlobalTheory.T.hodge_comp_descent_second E H D l Xo c _ _ Y ∅ S R.Ω Ω R.K K R.ι J R.y y o.𝔐 𝔐 i h hd o.Fl Fl j hreg hj1 hj2 hj3 hj4
+    _root_.GlobalTheory.CompanionTheory.Ar.Chg.GP.genPull_of_frames E H D l Xo c _ _ Y ∅ S R.Ω Ω R.K K R.ι J R.y y o.𝔐 𝔐 i h hd o.Fl Fl j hreg hj1 hj2 hj3 hj4
   have hnorm : NormPull o.Fl Fl i h :=
-    GlobalTheory.T.hodge_comp_descent_third E H D l Xo c _ _ Y ∅ S R.Ω Ω R.K K R.ι J R.y y o.𝔐 𝔐 i h hd o.Fl Fl j inferInstance hreg hj1 hj2 hj3 hj4 hj5
+    _root_.GlobalTheory.CompanionTheory.Ar.Chg.normPull_of_stalks E H D l Xo c _ _ Y ∅ S R.Ω Ω R.K K R.ι J R.y y o.𝔐 𝔐 i h hd o.Fl Fl j inferInstance hreg hj1 hj2 hj3 hj4 hj5
   have hab := mem_abLocus_iff o.𝔐 𝔐 h hf
   have hT : ∀ r : RootIx D, ∃ T : HermLine J, T.a = xdeg r - pullDeg bk (R.xdeg r) ∧ IsSmoothHerm T ∧
       IsConjInvariantH T ∧ IsFlatOn R' T ∧ IsRatio 𝔐.ξ y R.y bk bx i (xdeg r) (R.xdeg r) (e r) (o.e r) T.h := by
     intro r
-    have hu := GlobalTheory.T.hodge_comp_descent_fourth E H D l Xo c _ _ Y ∅ S R.Ω Ω R.K K R.ι J R.y y o.𝔐 𝔐 i h hd o.Fl Fl bk bx (xdeg r) (R.xdeg r)
+    have hu := _root_.GlobalTheory.CompanionTheory.Ar.ChgUnit.comparison_unit E H D l Xo c _ _ Y ∅ S R.Ω Ω R.K K R.ι J R.y y o.𝔐 𝔐 i h hd o.Fl Fl bk bx (xdeg r) (R.xdeg r)
       (e r) (o.e r) r hβ inferInstance hy hgen (o.lines r) (hlines r) hrefl hreg hco
-    obtain ⟨φ, h1, h2, h3, h4, h5⟩ := GlobalTheory.T.degree_reindexed_coords 𝔐.X Ω R.Ω 𝔐.ξ i R.K K R.ι J R.y y bk bx (xdeg r) (R.xdeg r) (e r) (o.e r)
+    obtain ⟨φ, h1, h2, h3, h4, h5⟩ := _root_.GlobalTheory.CompanionTheory.Ar.Chg.Ratio.exists_isRatio 𝔐.X Ω R.Ω 𝔐.ξ i R.K K R.ι J R.y y bk bx (xdeg r) (R.xdeg r) (e r) (o.e r)
       𝔐.tie 𝔐.all hbk hy hu
-    obtain ⟨T, t1, t2, t3, t4, t5⟩ := GlobalTheory.T.positive_homogeneous_potential K J _ _ R' _ φ h1 h2 h3 h4
+    obtain ⟨T, t1, t2, t3, t4, t5⟩ := _root_.GlobalTheory.CompanionTheory.Ar.Chg.FlatExt.exists_flat_line K J _ _ R' _ φ h1 h2 h3 h4
     refine ⟨T, t1, t2, t3, t5, fun z w hw c c₀ hc hc₀ => ?_⟩
-    have hm : w ∈ mcPts (mCoordIdeal y) := (GlobalTheory.T.complex_points_iff_centres 𝔐.X Ω 𝔐.ξ K J y 𝔐.tie w).2 ⟨z, 𝔐.all _, hw⟩
+    have hm : w ∈ mcPts (mCoordIdeal y) := (_root_.GlobalTheory.CompanionTheory.Ar.mem_mcPts_iff_exists_coordsAt 𝔐.X Ω 𝔐.ξ K J y 𝔐.tie w).2 ⟨z, 𝔐.all _, hw⟩
     rw [t4 w hm]
     exact h5 z w hw c c₀ hc hc₀
   choose T hTa hTs hTc hTf hTr using hT
@@ -113,8 +114,8 @@ theorem root_model_on_cover : Top.Given → ∀ (E : Type) [Field E] [NumberFiel
       br := o.Re.π '' br₀, degree := hdeg
       ref := fun a => (pullHerm hv (o.Re.ref a)).tensor (corr T a)
       ref_smooth := fun a => isSmoothHerm_tensor (isSmoothHerm_pull hv (o.Re.ref_smooth a)) (isSmoothHerm_corr hTs a)
-      ref_pot := fun a => GlobalTheory.T.log_resolution_potential_pullback R.K K R.ι J bk (blkV bk bx) _ _ _ _ _ o.Re.R R' Sys.X Sys.A (Sys.th a) (o.Re.ref a)
-        (corr T a) o.Re.π o.Re.holo hh hv hholoπ.1 hholo horb' (o.Re.ref_pot a) (GlobalTheory.T.flat_on_log_resolution_corr K J _ _ _ R' _ _ T hTf a)
+      ref_pot := fun a => _root_.GlobalTheory.CompanionTheory.Ar.Chg.Twist.samePot_twist R.K K R.ι J bk (blkV bk bx) _ _ _ _ _ o.Re.R R' Sys.X Sys.A (Sys.th a) (o.Re.ref a)
+        (corr T a) o.Re.π o.Re.holo hh hv hholoπ.1 hholo horb' (o.Re.ref_pot a) (_root_.GlobalTheory.CompanionTheory.Ar.Chg.isFlatOn_corr K J _ _ _ R' _ _ T hTf a)
       line := fun a t => (pullHerm hv (o.Re.line a t)).tensor (corr T a)
       line_deg := fun a t => by
         show pullDeg bk (o.Re.line a t).a + (corr T a).a = pullDeg bk (o.Re.ref a).a + (corr T a).a
@@ -152,7 +153,7 @@ theorem root_model_on_cover : Top.Given → ∀ (E : Type) [Field E] [NumberFiel
       e := e, lines := hlines
       sing := fun r => (pullHerm hv (o.sing r)).tensor (T r)
       sing_deg := hsing
-      hodge := fun r => GlobalTheory.T.hodge_comp_descent_fifth E H D l Xo c _ _ Y ∅ S R.Ω Ω R.K K R.ι J R.y y o.𝔐 𝔐 i h hd o.Fl Fl bk bx hv r (xdeg r)
+      hodge := fun r => _root_.GlobalTheory.CompanionTheory.Ar.Chg.isHodgeLine_pull_tensor E H D l Xo c _ _ Y ∅ S R.Ω Ω R.K K R.ι J R.y y o.𝔐 𝔐 i h hd o.Fl Fl bk bx hv r (xdeg r)
         (R.xdeg r) (e r) (o.e r) (o.sing r) (T r) hβ inferInstance hy hgen hnorm hval' hco (fun z => (hInt z).1) (hlines r).1
         (o.sing_deg r) (hTa r) (hTr r) (o.hodge r)
       k₀ := bk o.k₀
@@ -175,7 +176,7 @@ theorem root_model_on_cover : Top.Given → ∀ (E : Type) [Field E] [NumberFiel
           · rw [pullDeg, Function.extend_apply' _ _ _ h']
             rfl
       A_h := fun z hz => o.A_h _ (hmem z hz)
-      eff := GlobalTheory.T.root_origin_coord_field E H D l Xo c _ _ Y Sys Fx R ∅ S o Ω K J y bk bx 𝔐 i h hd Fl xdeg e hy hgen hlines hrefl hreg hab
+      eff := _root_.GlobalTheory.CompanionTheory.Ar.Chg.CoverEff.section_on_cover E H D l Xo c _ _ Y Sys Fx R ∅ S o Ω K J y bk bx 𝔐 i h hd Fl xdeg e hy hgen hlines hrefl hreg hab
       Re := Re', Re_deg := rfl
       π_pt := fun x => by
         obtain ⟨a₀, ha₀⟩ := o.π_pt (hh x)

@@ -3,8 +3,8 @@ module
 public import Mathlib
 public import Development.AutomorphicArithmetic.GenericGermInjectivity.CoverGeneric
 public import Development.AutomorphicArithmetic.CommutativeAlgebra.FunctionFieldOfFiniteEtaleCover
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.SchemeCechComparisonNaturalRefinementStatement
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.FiniteEtaleFunctionFieldIntegralClosureDifferentStatement
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0363
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0359
 
 @[expose] public section
 

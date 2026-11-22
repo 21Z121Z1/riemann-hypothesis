@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Development.ResolutionOfSingularities.EmbeddedResolution.ResolutionDescent.GraphAlgebra
-public import Development.ResolutionOfSingularities.EmbeddedResolution.ResolutionDescent.GraphAlgebraStandardSmooth
+public import Development.ResolutionOfSingularities.EmbeddedResolution.ResolutionDescent.Bundle0001
 
 @[expose] public section
 

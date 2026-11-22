@@ -4,10 +4,10 @@ public import Mathlib
 public import ReciprocityTheory.GaloisValuations.Global
 public import Formalism.LocalToGlobal.NormalizedHeckeFactors.RingHomOfBaseOrderToFraction
 public import Formalism.SharpRestriction.LevelLetterCocycles.DataN
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.RootEqOfClose
-public import ReciprocityTheory.ClassFieldTheory.GlobalClassField.IsFrobAtMulOfMemInertiaGroup
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FiniteGaloisInertiaLiftsAbsoluteInertiaRat
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.MemOfInteger
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0078
+public import ReciprocityTheory.ClassFieldTheory.GlobalClassField.Bundle0001
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0100
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0015
 
 @[expose] public section
 

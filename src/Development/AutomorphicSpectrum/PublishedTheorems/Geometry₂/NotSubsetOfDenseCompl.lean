@@ -1,11 +1,11 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.GeometricallyConnectedOfIsIsoRestrict
-public import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.IsRegularRingOfSmooth
+public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.Bundle0004
+public import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.Bundle0007
 public import Development.AbelianVarietyTheory.Definitions.Divisors.LineBundleGlobalSectionsDimCongrPicardClass
-public import Development.AbelianVarietyTheory.Definitions.Divisors.SmoothOfRelativeDimensionPspace
-public import ReciprocityTheory.AnalyticForms.RegularLocalRings.WChartsC
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0029
+public import ReciprocityTheory.AnalyticForms.RegularLocalRings.Bundle0013
 
 @[expose] public section
 

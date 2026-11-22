@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LatticeTransference.DualTransport
+public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LatticeTransference.Bundle0001
 public import Formalism.LatticeTheta.ThetaShiftInversion
 
 @[expose] public section

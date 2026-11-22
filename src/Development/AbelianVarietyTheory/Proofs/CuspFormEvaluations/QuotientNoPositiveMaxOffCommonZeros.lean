@@ -3,11 +3,11 @@ module
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.ThetaValues.Generic
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArakelovVolumes.UpperBounds.LocalUnfoldBStatementHolds
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.FundamentalDomains.CuspidalExponentialDecay
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArakelovVolumes.UpperBounds.BigStatementPf
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArakelovVolumes.UpperBounds.OntoWeightStatementPfA
-public import ReciprocityTheory.L2DbarEstimates.PlurisubharmonicCharts.DerivDerivNonposOfIsLocalMax
-public import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.LeviLogSumSqFibreZeroAndNonposAtMaxStatement
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.FundamentalDomains.Bundle0004
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArakelovVolumes.UpperBounds.Bundle0023
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArakelovVolumes.UpperBounds.Bundle0031
+public import ReciprocityTheory.L2DbarEstimates.PlurisubharmonicCharts.Bundle0002
+public import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.Bundle0056
 
 @[expose] public section
 
@@ -84,7 +84,7 @@ theorem no_localMax {n : ℕ} {U : Set (V n)} (hU : IsOpen U) {z0 : V n} (hz : z
     intro f hf
     filter_upwards [hUz] with z hzU using hf.differentiableAt (hU.mem_nhds hzU)
   obtain ⟨ξ, hξ0, hξ⟩ := exists_dir s k0 z0 ((hs k0).differentiableAt hUz).continuousAt hs0
-  have hT := GlobalTheory.T.levi_log_sum_sq_fibre_zero_and_nonpos_at_max n z0 ξ
+  have hT := _root_.GlobalTheory.LeviFibre.main n z0 ξ
 
   have hone : ∀ {f : V n → ℂ}, DifferentiableOn ℂ f U → f z0 ≠ 0 →
       (leviV n (fun z => ((Real.log (Complex.normSq (f z)) : ℝ) : ℂ)) z0 ξ).re = 0 := by

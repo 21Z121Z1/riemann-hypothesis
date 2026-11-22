@@ -1,10 +1,10 @@
 module
 
 public import Mathlib
-public import Formalism.SharpRestriction.CuspSpanNormBounds.FrobeniusCoefficientMemLp.AmpOrbOfAmpDD
+public import Formalism.SharpRestriction.CuspSpanNormBounds.FrobeniusCoefficientMemLp.Bundle0001
 public import Formalism.SharpRestriction.CuspSpanNormBounds.LowestKTypeMultiplicity
 public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.BesselFrameTranslatedPerpOfIsFrame
-public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.Admissible
+public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.Bundle0006
 public import Development.AbelianVarietyTheory.Proofs.CovolumeBounds.IntegralConjInnerMulInnerOfIsEmptyEquiv
 
 @[expose] public section

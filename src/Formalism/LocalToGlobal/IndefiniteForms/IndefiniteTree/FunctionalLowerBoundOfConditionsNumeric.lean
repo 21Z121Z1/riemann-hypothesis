@@ -2,10 +2,10 @@ module
 
 public import Formalism.LocalToGlobal.IndefiniteForms.IndefSide
 public import Formalism.LocalToGlobal.ExponentGrids.ExponentGridsProofs.GridSquaresIndexEstimate
-public import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.LocGlobIncl
+public import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.Bundle0022
 public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LocalGlobalInclusion.SmulMemIdealSmul
 public import Formalism.HarderNarasimhan.HarderNarasimhanProofs.SlopeIneqMean
-public import Formalism.HarderNarasimhan.HarderNarasimhanProofs.TwistFinrankEq
+public import Formalism.HarderNarasimhan.HarderNarasimhanProofs.Bundle0004
 public import Formalism.LocalToGlobal.LatticeGeometry.OperatorNormFibers.PDescentCutA
 
 @[expose] public section

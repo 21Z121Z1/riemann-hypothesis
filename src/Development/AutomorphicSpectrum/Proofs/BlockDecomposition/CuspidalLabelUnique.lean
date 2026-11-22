@@ -2,9 +2,9 @@ module
 
 public import Mathlib
 public import Development.WeilBound.CoreStatements.FiniteTypeHarishChandra.SupportExistsAll
-public import Development.AbelianVarietyTheory.Proofs.CharacterTheory.OrthogonalIntVectorsNotAgreeOnRegular
-public import Development.AbelianVarietyTheory.Proofs.CharacterTheory.RegularIffNatDegreeAndExistsEllipticGL
-public import Development.AbelianVarietyTheory.Proofs.CharacterTheory.InnerProductRootPowerSumEqOfFrobeniusModEq
+public import Development.AbelianVarietyTheory.Proofs.CharacterTheory.Bundle0016
+public import Development.AbelianVarietyTheory.Proofs.CharacterTheory.Bundle0011
+public import Development.AbelianVarietyTheory.Proofs.CharacterTheory.Bundle0017
 
 @[expose] public section
 

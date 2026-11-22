@@ -1,20 +1,20 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.PartFixed
-public import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.IsVacFOfIsVacVec
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.UnitaryQuotientHeightComparableWittDecompositionStatement
+public import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.Bundle0007
+public import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.Bundle0002
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0375
 public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.BesselToJacobiFlatMapEquivariant
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.LintegralLeOfTsum
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.UnitaryAdelicHeightWittEmbeddingLeConstMul
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.UnitaryAdelicHeightOrthogonalEmbeddingLePow
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.WittAnisotropicGroupNormalizesFlagUnipotent
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.RapidDecRTrans
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ContinuousFlatMapWeilRepresentationJoint
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.UnfoldingBasePointFourierJacobiGroup
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.FlatThetaMapsConvergeThetaFunctions
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0500
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0355
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0138
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0167
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0110
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0375
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0113
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0354
 public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsotropicUnipotentRadicalsRationalCocompact
-public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.UnifModGrowthOfIsUnifModerate
+public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.Bundle0007
 
 @[expose] public section
 
@@ -233,7 +233,7 @@ theorem perAll_flBF_cont : ∀ (D : D7) (ψ : AddChar (AF D.host.F) ℂ) (ρ : �
     (GlobalTheory.CuspDecay.measure_lt_top GlobalTheory.Mem.VolFin.finVol J.W₀ _ _ J.v0.haar J.v0.fund).ne
   haveI : IsFiniteMeasure (J.vN.ν.restrict J.vN.𝓝) := isFiniteMeasure_restrict.2 (by rw [J.vN.unit.2.2]; exact ENNReal.one_ne_top)
   obtain ⟨hIc, C, b, hC0, hI⟩ := inner_law s hφ hΦ
-  obtain ⟨C₁, a₁, h1⟩ := GlobalTheory.T.unitaryQuotientHeight_comparable_wittDecomposition D J.W J.W₀ ρ J.d
+  obtain ⟨C₁, a₁, h1⟩ := _root_.GlobalTheory.HtWitt.quotHeight_witt D J.W J.W₀ ρ J.d
   obtain ⟨C₃, h3⟩ := (GlobalTheory.RTransDecay.rapidDec_rTrans D J.W G hG).2 (a₁ * b)
   obtain ⟨F, hF⟩ : ∃ F : GA D J.W → GA D J.W₀ × flagN J.d → ℂ,
       F = fun h p => G (p.2.1 * J.d.emb0 p.1 * h) * inner s φ Φ (p.2.1 * J.d.emb0 p.1 * h) := ⟨_, rfl⟩

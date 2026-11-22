@@ -2,14 +2,16 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.Divisors.FinitePrimesUnder
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConjSmulNeBot
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1490
 public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.VacuumUnderAdelicPairModulusOne
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsHalfIdem
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.InducedTypeThetaGenusOnePermutes
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0249
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0224
 public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsMovesOfSelfDual
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnitBlockCosetThetaVectorMemThetaFunctions
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsSplitSupportedUnitaryMovingToSelfDualSkewLStatement
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.CmThetaNormBoundHypothesesSatisfiedStatement
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1541
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1547
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0327
+public import Development.AbelianVarietyTheory.Definitions.Foundations.NormSumPairRankZeroOfCurveCoordNorm
+public import Formalism.PairingDivisors.StatementH
 
 @[expose] public section
 
@@ -139,7 +141,7 @@ theorem om_unitVec_eig : ∀ (D : D7) (δ t0 : ℂ) (hc : Crv D ⊤ δ) (ht : GL
   have h1 := (GlobalTheory.InducedType.induced_type D).1
   have he := hv.1
   have hT := VacMove.vac_TT h1 hc he
-  have hI : Inp D := GlobalTheory.T.cmThetaNormBoundHypotheses_satisfied D
+  have hI : Inp D := _root_.GlobalTheory.NormSum.inp_all D
   have hev : Even (a * d) := hd.mul_left a
   have hcc : D.host.conj • D.host.conj • 𝔪 = 𝔪 := by
     have h2 : D.host.conj * D.host.conj = 1 := AlgEquiv.ext fun x => VacMove.conj_conj D x

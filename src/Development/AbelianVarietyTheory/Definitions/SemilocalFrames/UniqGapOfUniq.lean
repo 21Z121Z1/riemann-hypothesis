@@ -2,10 +2,10 @@ module
 
 public import Mathlib
 public import CompanionTheory.AutomorphicTheory.PieriRules.ThetaBesselIsometries.IsDSOfIsDG
-public import Formalism.SharpRestriction.CuspSpanNormBounds.BridgeLitG
-public import Formalism.LocalToGlobal.SiegelLatticeTheory.FlagStabilizerTensors.RootLatticeThresholds.SzHypFD
-public import Formalism.PeriodIntegrals.BesselMapUniq
-public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.OnePlaceKF
+public import Formalism.SharpRestriction.CuspSpanNormBounds.Bundle0017
+public import Formalism.LocalToGlobal.SiegelLatticeTheory.FlagStabilizerTensors.RootLatticeThresholds.Bundle0048
+public import Formalism.PeriodIntegrals.Bundle0016
+public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.Bundle0010
 
 @[expose] public section
 

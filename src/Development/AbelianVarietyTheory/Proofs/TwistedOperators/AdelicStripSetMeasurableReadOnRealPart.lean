@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.PartFixed
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.UnitaryAdelicInfFinSplitPeriodsUnimodular
-public import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.IsVacFOfIsVacVec
+public import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.Bundle0007
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0239
+public import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.Bundle0002
 
 @[expose] public section
 

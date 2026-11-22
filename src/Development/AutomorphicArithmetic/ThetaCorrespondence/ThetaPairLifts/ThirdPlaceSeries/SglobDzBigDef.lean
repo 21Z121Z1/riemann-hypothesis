@@ -1,6 +1,6 @@
 module
 
-public import Development.DiscreteGroups.GlobalIrreducibility.DzBigDef
+public import Development.DiscreteGroups.GlobalIrreducibility.Bundle0014
 public import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.ThirdPlaceSeries.CohomologicalCsdTempered
 public import Development.AutomorphicArithmetic.Foundations.LocalLanglands.IsRecTOfIsRec
 

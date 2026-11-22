@@ -3,8 +3,8 @@ module
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.Divisors.AevalEqZeroOfMemConeIdeal
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsImageHeightUnique
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsMultiHomogeneousRenameCastLE
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GaussianFirstCoordsMeasurePreserving
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0388
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0316
 
 @[expose] public section
 

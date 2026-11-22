@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.CGTrue
-public import Development.AbelianVarietyTheory.Definitions.Divisors.IsRecTLocRecT
+public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.Bundle0020
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0038
 
 @[expose] public section
 

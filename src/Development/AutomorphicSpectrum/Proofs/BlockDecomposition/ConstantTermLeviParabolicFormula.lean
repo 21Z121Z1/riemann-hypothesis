@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.OneMemGoodCT
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsCuspidalLieActionOfIsCuspForm
-public import Formalism.LocalToGlobal.IndefiniteReal.LevelTypeEquivalence.NumFieldHosCountable
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0330
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0714
+public import Formalism.LocalToGlobal.IndefiniteReal.LevelTypeEquivalence.Bundle0002
 
 @[expose] public section
 

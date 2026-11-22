@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Formalism.SharpRestriction.GlobalSchurBounds.ThickPlacesCorollaryOfAnyTranslate
-public import Development.AbelianVarietyTheory.Proofs.HeightProofs.HaarUpqEqOfOmegaDensity
+public import Development.AbelianVarietyTheory.Proofs.HeightProofs.Bundle0019
 
 @[expose] public section
 

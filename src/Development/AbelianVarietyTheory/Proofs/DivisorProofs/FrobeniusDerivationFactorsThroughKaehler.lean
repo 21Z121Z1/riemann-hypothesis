@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Divisors.IsFlatLift
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0002
 
 @[expose] public section
 

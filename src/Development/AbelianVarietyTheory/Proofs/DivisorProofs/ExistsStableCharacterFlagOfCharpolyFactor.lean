@@ -1,11 +1,11 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SubRepApply
-public import Development.AbelianVarietyTheory.Proofs.CharacterTheory.CharpolyBlockAndInvariantUnderStabilizerNilradic
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0112
+public import Development.AbelianVarietyTheory.Proofs.CharacterTheory.Bundle0003
 public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.AbsIrreducibleConstituentRanksUniqueOfCharpoly
 public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsIsSemisimplificationOf
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CharpolyEqOfSemisimplification
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0413
 
 @[expose] public section
 

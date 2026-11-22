@@ -1,16 +1,16 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.LevelActionMemCuspForms
-public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.ExistsIsometryTriangularPeriodsOfFramePointMove
+public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0159
+public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0153
 public import Development.AbelianVarietyTheory.Proofs.HeightProofs.MarkedIsometryHalf
-public import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.PointExpEqOfIsometry
+public import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.Bundle0053
 public import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.ArithmeticCMKnownTheoremsProof
-public import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.CongruenceActionMemFrameOrbit
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsEqNsmulOfDvdPairing
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MemGroupOfCongruent
+public import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.Bundle0011
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0014
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0966
 public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.SplitOffBadOfSuppSplitOff
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.LevelGroupActionEqZeroOfNoLift
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0149
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LevelCharacterEmbeddingCompat
 
 @[expose] public section
@@ -311,7 +311,7 @@ theorem exists_const_dict {V W : HSp D} (hV : V = W) {l : ReciprocityTheory.Char
   have hG : ∀ k, (U.X k).Gm = -V.gramᵀ := fun k => (hW k).1
   have hxi : ∀ k k', (U.X k).ξ0 = (U.X k').ξ0 := fun k k' => (hW k).2.trans (hW k').2.symm
   obtain ⟨θ, hθ⟩ := (GlobalTheory.Member.infiniteAdele_bijective D).1
-  obtain ⟨hAr, -, -⟩ := GlobalTheory.T.archimedeanMatrix_unitary_continuous_multiplicative D V θ hθ
+  obtain ⟨hAr, -, -⟩ := _root_.GlobalTheory.Member.Arch.archM_spec D V θ hθ
   have key : ∀ κ, Induces V l io s κ → ∀ h, ∃ δ, ∃ hc : Carries φ s (dict h).1 (dict (h * κ)).1 δ,
       (dict (h * κ)).2 = lact δ (castFr hc.mt.psi (dict h).2) := by
     intro κ hκ h

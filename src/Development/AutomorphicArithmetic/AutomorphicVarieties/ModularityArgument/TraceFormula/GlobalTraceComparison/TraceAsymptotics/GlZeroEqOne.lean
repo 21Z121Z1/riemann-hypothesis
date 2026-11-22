@@ -1,9 +1,9 @@
 module
 
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.TraceFormula.GlobalTraceComparison.TraceAsymptotics.BlkOneMem
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HeckeOperatorConstantTermSum
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FiniteDimensionalFixedOpenSubgroupGLw
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EvenOrdLConjGramDetOfUnitGramAdicCompletion
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.TraceFormula.GlobalTraceComparison.TraceAsymptotics.Bundle0005
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1271
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1221
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1056
 
 @[expose] public section
 

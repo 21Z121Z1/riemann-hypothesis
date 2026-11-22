@@ -3,12 +3,12 @@ module
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.IsRealFam
 public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.IsCombAt
-public import Development.AbelianVarietyTheory.Definitions.Divisors.DiscreteSeriesHermitianUnique
-public import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.CuspAlongSmoothRows
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0041
+public import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.Bundle0015
 public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.RowTestDefinitePeriodChangeOfMeasures
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.PosDefOfNode
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SpecialisedUniversalSeriesEqTwistedThetaSeries
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.OmPureTensorOOfFinite
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0502
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0817
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0125
 
 @[expose] public section
 

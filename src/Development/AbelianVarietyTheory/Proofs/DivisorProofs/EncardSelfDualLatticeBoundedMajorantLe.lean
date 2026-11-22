@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Divisors.UnifOfSpaceEq
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArakelovVolumes.UpperBounds.WeightFunctionOnFrames
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0044
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArakelovVolumes.UpperBounds.Bundle0007
 public import Development.AbelianVarietyTheory.BlockTheory.ExistenceTori.UnitaryHaarVolume
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.FundamentalDomains.MajPos
 public import Formalism.LatticeRigidity.HeightMinimum.PackingCountGeometricMean

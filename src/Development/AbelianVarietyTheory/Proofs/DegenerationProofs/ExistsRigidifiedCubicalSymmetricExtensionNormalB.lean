@@ -4,15 +4,15 @@ public import Mathlib
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.UniformisationConclusion
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.CubeVal
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.IsMonHomOfMul
-public import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.ForallGeometricallyIntegralOfSmoothOfGeometrical
+public import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.Bundle0003
 public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.GeometricallyIntegralIffGeometricallyConnectedOf
-public import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.CubicalExtendsAndExtendGen
-public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.CubicalSymmetryTransport
-public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ExistsRigidifiedIso
-public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.IsSymmetricIffExistsGen
-public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ExistsCubicalSymmetricExtension
+public import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.Bundle0015
+public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.Bundle0025
+public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.Bundle0026
+public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.Bundle0028
+public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.Bundle0083
 public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ClsLinCombSingle
-public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsUniqueRigidifiedGeneratorExtendNormalStatement
+public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsUniqueRigidifiedGeneratorExtendNormal
 
 @[expose] public section
 
@@ -223,7 +223,7 @@ theorem exists_extension {S : Scheme.{0}} [IsIntegral S] [IsLocallyNoetherian S]
     exact exists_up hw hL hL' s hg
   obtain ⟨t, ht, hv⟩ := key _ hφ
   obtain ⟨ρ, hρ, vρ⟩ := exists_gen hL f₁ (LB.oneGen L) (LB.isGen_oneGen L)
-  obtain ⟨c, ⟨hc₁, hc₂⟩, -⟩ := GlobalTheory.T.existsUnique_rigidified_generator_extend_normal S hS U H HU X j p e jH pU eU hs
+  obtain ⟨c, ⟨hc₁, hc₂⟩, -⟩ := _root_.GlobalTheory.GenExtendNormal.existsUnique_gen_extend S hS U H HU X j p e jH pU eU hs
     (forall_geometricallyIntegral_of_smooth_of_geometricallyConnected _ _ _ hs hc) he hp heU L hL K φ ε t ρ ht hρ
     (corr_of_val hL fun y J hJ => by
       refine (val_pull hJ _ _ _).trans (Eq.trans ?_

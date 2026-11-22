@@ -3,11 +3,11 @@ module
 public import Mathlib
 public import Formalism.LocalToGlobal.SiegelLatticeTheory.ClosedLocalOrbits.TermDef
 public import Formalism.LocalToGlobal.SiegelLatticeTheory.CokernelGLCounts.CntLocal
-public import Formalism.LocalRingCardinality.DataTies
-public import Formalism.SharpRestriction.CuspSpanNormBounds.CntPartners
+public import Formalism.LocalRingCardinality.Bundle0003
+public import Formalism.SharpRestriction.CuspSpanNormBounds.Bundle0004
 public import Formalism.HermitianCurvature.StatementPB
 public import Formalism.SharpRestriction.CuspSpanNormBounds.NonemptyParameterModels.TermTiesEmptyOfLargeIndex
-public import Formalism.SharpRestriction.CuspSpanNormBounds.FrameFixingOrbitRelation
+public import Formalism.SharpRestriction.CuspSpanNormBounds.Bundle0005
 
 @[expose] public section
 

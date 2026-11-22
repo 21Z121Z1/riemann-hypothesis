@@ -3,10 +3,10 @@ module
 public import Mathlib
 public import Formalism.LocalToGlobal.ProjectiveLattices.SpMapAlgHomId
 public import Formalism.LocalToGlobal.ProjectiveLattices.FrameCharts
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.CoefChangeTypingsEquivOfValueWD
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ChartCoverFOfSectionBaseChange
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0081
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0079
 public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.FramedPointReducedFromTestRing
-public import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.AbelianSchemeLawsUnconditional
+public import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.Bundle0029
 
 @[expose] public section
 

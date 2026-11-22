@@ -1,6 +1,6 @@
 module
 
-public import Development.EtaleCohomology.EtaleSheaves.DiagramChase
+public import Development.EtaleCohomology.EtaleSheaves.Bundle0036
 
 @[expose] public section
 

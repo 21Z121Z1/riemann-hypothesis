@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import PositivityTheory.PublishedTheorems.TowerLemmas.FormalTowerLemmas.Imports
-public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.FormalAlgebraisation
+public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.Bundle0002
 public import PositivityTheory.PublishedTheorems.UnitKilling.UnitAnnihilation.UnitAnnihilators.ExistsUnitKillsOfIdempotent
 
 @[expose] public section

@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Divisors.PointSide
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0029
 
 @[expose] public section
 

@@ -2,9 +2,9 @@ module
 
 public import Mathlib
 public import Formalism.LocalToGlobal.GlobalTheory.GL3.PFamily
-public import Formalism.LocalToGlobal.GlobalTheory.GL3.ProvisionExtensionLink
+public import Formalism.LocalToGlobal.GlobalTheory.GL3.Bundle0002
 public import Formalism.LocalToGlobal.PairingIndexBounds.SplitPairEquations.EqPAll
-public import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.SplitPairGen
+public import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.Bundle0026
 public import Formalism.LocalToGlobal.KernelLattices.KernelLocalFactors.IsAdmissibleFlagPairOfUnitriangularLeftAutomorph
 
 @[expose] public section

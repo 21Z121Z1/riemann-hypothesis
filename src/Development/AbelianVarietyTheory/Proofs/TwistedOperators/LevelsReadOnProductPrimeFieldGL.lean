@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.FactTypePrime
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.LevelGroupActionEqZeroOfNoLift
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0149
 
 @[expose] public section
 

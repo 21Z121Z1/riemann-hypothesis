@@ -2,12 +2,12 @@ module
 
 public import Mathlib
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.Hypotheses2
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.LocIsotypic
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.SdDefs
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.Bundle0006
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.Bundle0001
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.RTwist
 public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.ConclusionAbsPow
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.RInv2
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.BuildingsResidueChars.ExistsContragredientCuspSub
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.Bundle0003
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.BuildingsResidueChars.Bundle0050
 
 @[expose] public section
 

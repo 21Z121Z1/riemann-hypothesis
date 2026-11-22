@@ -1,19 +1,20 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Proofs.MetricProofs.HasStepCharts
-public import Development.AutomorphicSpectrum.Proofs.MetricProofs.SelM
-public import Development.AutomorphicSpectrum.Proofs.MetricProofs.SumSqCompBlockMap
+public import Development.AutomorphicSpectrum.Proofs.MetricProofs.Bundle0032
+public import Development.AutomorphicSpectrum.Proofs.MetricProofs.Bundle0035
+public import Development.AutomorphicSpectrum.Proofs.MetricProofs.Bundle0042
 public import Development.AutomorphicSpectrum.Proofs.MetricProofs.ExistsPermOfRange
-public import Development.AutomorphicSpectrum.Proofs.MetricProofs.IsValueAtOfTorus
-public import Development.AutomorphicSpectrum.Proofs.MetricProofs.HoloOnDivCongr
-public import Development.AutomorphicSpectrum.Proofs.MetricProofs.AevalNeZeroOfNotMem
-public import Development.AutomorphicSpectrum.Proofs.MetricProofs.FlagModelBaseProjectionPointsStatement
-public import Development.AutomorphicSpectrum.Proofs.MetricProofs.BlockMetricExplicitMatrixFormStatement
-public import Development.AutomorphicSpectrum.Proofs.MetricProofs.LogBlockMetricOffBoundaryStatement
-public import Development.AutomorphicSpectrum.Proofs.MetricProofs.BlockMetricGrassmannChartLocalStatement
-public import Development.AutomorphicSpectrum.Proofs.MetricProofs.BlockMetricRowEchelonLocalStatement
-public import Development.AutomorphicSpectrum.Proofs.MetricProofs.FlagGapPullbackFirstStatement
+public import Development.AutomorphicSpectrum.Proofs.MetricProofs.Bundle0040
+public import Development.AutomorphicSpectrum.Proofs.MetricProofs.Bundle0039
+public import Development.AutomorphicSpectrum.Proofs.MetricProofs.Bundle0037
+public import Development.AutomorphicSpectrum.Proofs.MetricProofs.FlagModelBaseProjectionPoints
+public import Development.AutomorphicSpectrum.Definitions.MetricPeriods.Pull1
+public import Development.AutomorphicSpectrum.Definitions.MetricPeriods.IsPeriodOn
+public import Development.AutomorphicSpectrum.Proofs.MetricProofs.Bundle0059
+public import Development.AutomorphicSpectrum.Proofs.MetricProofs.Bundle0051
+public import Development.AutomorphicSpectrum.Proofs.MetricProofs.Bundle0055
+public import Development.AutomorphicSpectrum.Proofs.MetricProofs.Bundle0070
 
 @[expose] public section
 
@@ -153,7 +154,7 @@ theorem base_mem (hyp : IsStepHyp M BM p κ v R pr) {x t : R.X} (ht : t ∈ R.U 
     basePart M.blk (zc v R x t) ∈ mcPts (mCoordIdeal M.x) := by
   obtain ⟨z, hz, hv, -⟩ := exists_pt hyp x t ht
   rw [base_eq hyp hv]
-  exact (GlobalTheory.T.flag_model_base_projection_points K ι Φ y Ψ N j M).1 z hz
+  exact (_root_.GlobalTheory.CompanionTheory.Ar.PB.CPts.main K ι Φ y Ψ N j M).1 z hz
 
 theorem good_at (hyp : IsStepHyp M BM p κ v R pr) {x t : R.X} (ht : t ∈ R.U x) {l : Fin BM.q}
     (hl : pr t ∈ BM.O l) : M.GoodAt (BM.F l) (mCoordIdeal (basePart M.blk (zc v R x t))) := by
@@ -233,7 +234,7 @@ theorem chart_none (hyp : IsStepHyp M BM p κ v R pr) (x y₀ : R.X) (hy₀ : y�
     exact one_ne_zero h1
   · obtain ⟨z, hz, hv, ho⟩ := exists_pt hyp x t (hsub ht).1
     rw [log_side hyp (hsub ht).1 hbd hz hv,
-      GlobalTheory.T.log_block_metric_off_boundary K ι Φ y Ψ N j M n BM p l (pr t) z hp ⟨(hsub ht).2, hbd⟩ hz ho]
+      _root_.GlobalTheory.CompanionTheory.Ar.PB.StepW.BaseLine.main K ι Φ y Ψ N j M n BM p l (pr t) z hp ⟨(hsub ht).2, hbd⟩ hz ho]
     show _ = blockPot j p.2 (BM.G l p.1 (pr t)) 1 + Real.log ‖baseMono M (BM.F l) p (zc v R x t) *
       valAt M.x ((BM.F l).υ p)⁻¹ (basePart M.blk (zc v R x t))‖
     rw [base_eq hyp hv, baseMono_eq (BM.F l) (base_eq hyp hv)]
@@ -255,7 +256,7 @@ theorem chart_some (hyp : IsStepHyp M BM p κ v R pr) (x y₀ : R.X) (hy₀ : y�
     · exact holo_mono (hvq (I, m)) fun t ht => Set.mem_iInter.1 ht.2 (I, m)
     · exact holo_mono (zc_holo hyp.1 x _) fun t ht => (hs₁ ht).1
   obtain ⟨z₀, hz₀, hv₀, ho₀⟩ := exists_pt hyp x y₀ hy₀
-  obtain ⟨I₀, hI₀, hne₀⟩ := GlobalTheory.T.block_metric_row_echelon_local K ι Φ y Ψ N j M n BM p k₀ l (pr y₀) z₀ hp hl hz₀ ho₀
+  obtain ⟨I₀, hI₀, hne₀⟩ := _root_.GlobalTheory.CompanionTheory.Ar.PB.StepW.exists_plk_ne_zero K ι Φ y Ψ N j M n BM p k₀ l (pr y₀) z₀ hp hl hz₀ ho₀
   rw [← plk_eq hyp _ hp hv₀] at hne₀
   obtain ⟨C, B, hCB⟩ := GrChart.exists_isGrChart N j p.2 I₀ M.j_le hI₀
   let W : Set R.X := W₁ ∩ (fun t => w t I₀) ⁻¹' {0}ᶜ
@@ -274,7 +275,7 @@ theorem chart_some (hyp : IsStepHyp M BM p κ v R pr) (x y₀ : R.X) (hy₀ : y�
     refine holo_add (holo_const _) (holo_sum _ fun I _ => holo_mul ?_ (holo_const _))
     exact holo_div (holo_mono (hw I) hs) (holo_mono (hw I₀) hs) hne
   · obtain ⟨z, hz, hv, ho⟩ := exists_pt hyp x t (hs₁ (hs ht)).1
-    obtain ⟨h, a, hh, hd, ha, hw', -⟩ := GlobalTheory.T.block_metric_grassmann_chart_local K ι Φ y Ψ N j M n BM p k₀ l (pr t) z hp (hs₁ (hs ht)).2 hz ho
+    obtain ⟨h, a, hh, hd, ha, hw', -⟩ := _root_.GlobalTheory.CompanionTheory.Ar.PB.StepW.FlagPoint.main K ι Φ y Ψ N j M n BM p k₀ l (pr t) z hp (hs₁ (hs ht)).2 hz ho
     have e := plk_eq hyp (BM.F l) hp hv
     have := hCB h a (w t) hh hd ha (fun I hI => by rw [← hw' I hI]; exact congrFun e I) (hne t ht)
     exact ⟨this.1, this.2.1⟩
@@ -282,7 +283,7 @@ theorem chart_some (hyp : IsStepHyp M BM p κ v R pr) (x y₀ : R.X) (hy₀ : y�
     have e := plk_eq hyp (BM.F l) hp hv
     have hnz : plk M (BM.F l) k₀ z I₀ ≠ 0 := by rw [← e]; exact hne t ht
     rw [log_side hyp (hs₁ (hs ht)).1 hbd hz hv,
-      GlobalTheory.T.block_metric_explicit_matrix_form K ι Φ y Ψ N j M n BM p k₀ l (pr t) z I₀ C B hp hCB ⟨(hs₁ (hs ht)).2, hbd⟩ hz ho hnz]
+      _root_.GlobalTheory.CompanionTheory.Ar.PB.StepW.ExactStep.main K ι Φ y Ψ N j M n BM p k₀ l (pr t) z I₀ C B hp hCB ⟨(hs₁ (hs ht)).2, hbd⟩ hz ho hnz]
     simp only [w]
     rw [e, baseMono_eq (BM.F l) (base_eq hyp hv)]
 

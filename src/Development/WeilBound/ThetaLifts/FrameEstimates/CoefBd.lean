@@ -2,8 +2,8 @@ module
 
 public import Mathlib
 public import Development.WeilBound.ThetaLifts.FrameEstimates.ContinuousMixedSymm
-public import Development.WeilBound.ThetaLifts.FrameEstimates.FinBound
-public import Development.WeilBound.ThetaLifts.FrameEstimates.LatCpt
+public import Development.WeilBound.ThetaLifts.FrameEstimates.Bundle0002
+public import Development.WeilBound.ThetaLifts.FrameEstimates.Bundle0004
 public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.IsOpenNsmulAdelicCompletionOfVectorSet
 
 @[expose] public section

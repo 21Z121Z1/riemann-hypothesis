@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Divisors.IsPolAVSectionInverseImage
-public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.SiegelToroidalIntegral
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0027
+public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.Bundle0012
 public import Development.AbelianVarietyTheory.Statements.SemistableTorsion.ImmersedBy
 
 @[expose] public section

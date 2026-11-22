@@ -3,14 +3,13 @@ module
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.StdLvPr
 public import Formalism.LocalToGlobal.GlobalTheory.BlockActions.FiniteAdeleRingNontrivial
-public import Formalism.LocalToGlobal.HermitianForms.TiedTwJSym
-public import Formalism.LocalToGlobal.GroupLattices.LevelCharts.SplitIntPI
-public import Formalism.LocalToGlobal.GroupLattices.LevelCharts.SelfDualPI
-public import Formalism.LocalToGlobal.GroupLattices.TrivialTransfer.OneAddPowOfSq
-public import Formalism.LocalRingCardinality.IntCastDvdOfDvdIntegers
+public import Formalism.LocalToGlobal.HermitianForms.Bundle0006
+public import Formalism.LocalToGlobal.GroupLattices.LevelCharts.Bundle0001
+public import Formalism.LocalToGlobal.GroupLattices.TrivialTransfer.Bundle0001
+public import Formalism.LocalRingCardinality.Bundle0001
 public import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.CsGlob
-public import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.CsEquiv
-public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.MemStabGLAdeleIff
+public import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Bundle0010
+public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0042
 
 @[expose] public section
 

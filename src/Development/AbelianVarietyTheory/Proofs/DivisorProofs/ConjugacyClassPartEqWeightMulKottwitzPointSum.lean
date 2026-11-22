@@ -2,11 +2,11 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.Divisors.PointsNonemptyUnitaryRankOne
-public import Development.AbelianVarietyTheory.Definitions.Divisors.MarkedSumIrr
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0031
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ToVInjective
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FinsumDoubleCosetEqFinsumOrbit
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FixLineConjIff
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HermitianPositivityInvariant
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0880
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0914
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0957
 
 @[expose] public section
 

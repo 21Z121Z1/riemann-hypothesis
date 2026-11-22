@@ -2,19 +2,19 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.Divisors.LabRange
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaSetupStalkNoetherianNormalFractionRing
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsIsHom
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsFinitePoint
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LbIsoPullComp
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LatticeEquivOfSameCentre
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsDiagEndIsMonHom
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CongModOfMkEq
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsLabOntoAndKer
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsIsLab
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LabelsLift
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2121
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2160
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2791
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2378
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2844
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2152
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2931
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2189
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2852
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2728
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntegralClosureStalkFibre
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PrimeEqOfNatCastEqZero
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MemOOfPowEqOne
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2207
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle3047
 
 @[expose] public section
 

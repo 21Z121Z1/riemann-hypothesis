@@ -2,9 +2,8 @@ module
 
 public import Mathlib
 public import Formalism.LocalToGlobal.IndefiniteForms.IndefiniteTree.ExampleSatisfiesConditionsAtFive
-public import Formalism.LocalToGlobal.ProjectiveLattices.RecPJThAllNeBot
-public import Formalism.LocalToGlobal.ProjectiveLattices.LiftLaSpec
-public import Formalism.LocalToGlobal.ProjectiveLattices.ThClassPins
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0033
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0013
 public import Formalism.SharpRestriction.Divisibility.AbelianOpenPart.OEOsInjective
 
 @[expose] public section

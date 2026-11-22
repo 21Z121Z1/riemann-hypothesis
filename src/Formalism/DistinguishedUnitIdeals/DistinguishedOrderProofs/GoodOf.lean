@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Formalism.DistinguishedUnitIdeals.FrobeniusDiffBijective
+public import Formalism.DistinguishedUnitIdeals.Bundle0002
 public import Formalism.DistinguishedUnitIdeals.DistinguishedOrderProofs.RhoMapFunctorial
-public import Formalism.DistinguishedUnitIdeals.DistinguishedOrderProofs.GroundTheory
+public import Formalism.DistinguishedUnitIdeals.DistinguishedOrderProofs.Bundle0001
 
 @[expose] public section
 

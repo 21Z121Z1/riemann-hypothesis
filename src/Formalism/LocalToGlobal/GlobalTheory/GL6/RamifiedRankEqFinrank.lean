@@ -1,7 +1,7 @@
 module
 
 public import Formalism.LocalToGlobal.GlobalTheory.GL6.Statement
-public import Formalism.LogVandermondeBounds.LogVandermondeProofs.MulSingleMulApplySelf
+public import Formalism.LogVandermondeBounds.LogVandermondeProofs.Bundle0001
 
 @[expose] public section
 

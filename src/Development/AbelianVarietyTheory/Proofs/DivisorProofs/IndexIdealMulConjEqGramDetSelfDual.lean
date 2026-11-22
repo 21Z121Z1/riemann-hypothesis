@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Divisors.PointShiftSt
-public import Development.AbelianVarietyTheory.Definitions.Divisors.IsGramOneZero
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0049
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0050
 public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsIndexIdeal
 public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.DetIdealSelfDualLatticeAndInterStandard
 

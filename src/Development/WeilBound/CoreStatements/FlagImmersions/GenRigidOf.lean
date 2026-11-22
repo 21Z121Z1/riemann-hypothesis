@@ -3,11 +3,19 @@ module
 public import Development.WeilBound.CoreStatements.FlagImmersions.MemFlagOfRel
 public import Development.WeilBound.CoreStatements.FlagImmersions.OfForall
 public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.EigenLatticeVectorBundle
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LieModelPullbackCorrespondence
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0078
 public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsLieModel
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.GramMatrixTwoFrames
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.InteriorPointLatticeDataStatement
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.CuspCorrespondenceBoundStatement
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0218
+public import Mathlib
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0216
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.BlowupProjections.BlowupProjStatement
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.BdryChart
+public import ReciprocityTheory.AnalyticForms.PlurisubharmonicFunctions.Bundle0001
+public import Development.AutomorphicSpectrum.Statements.GeometryStatements.FlatDegree
+public import Development.AutomorphicSpectrum.Statements.GeometryStatements.Bundle0006
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0168
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.PotentialsBoundedRegSettingEqReference
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.GlobalSectionsRankAlgClosed
 
 @[expose] public section
 
@@ -63,9 +71,9 @@ theorem side (hF : FrameVals) (hG : Top.Given) (hD : 1 ≤ D.p + D.q) (Fl : 𝔐
     exact hlift _ _ e3 ▸ e2
   have hvb : ∀ i, 𝔐.M.ValAt z (b i) (Mz.pt (ω i)) := fun i => hlift _ _ (hω i) ▸ hv i
   constructor
-  · obtain ⟨g, Λ, _, _, R, x, hx, -⟩ := GlobalTheory.T.interior_point_lattice_data hG.2.2.2.2.1 E H D l Xo c Y ∅ Ω K J y 𝔐 z hD hz hG _
+  · obtain ⟨g, Λ, _, _, R, x, hx, -⟩ := _root_.GlobalTheory.CompanionTheory.Ar.Cusp.FibreEx.exists_riemLat_of_interior hG.2.2.2.2.1 E H D l Xo c Y ∅ Ω K J y 𝔐 z hD hz hG _
       (fun i => Mz.pt (α i)) fun i => Mz.tan _
-    obtain ⟨σ, hσ, -⟩ := GlobalTheory.T.cusp_correspondence_bound E H D l Xo c Y ∅ Ω K J y 𝔐 ℂ z
+    obtain ⟨σ, hσ, -⟩ := _root_.GlobalTheory.CompanionTheory.Ar.Cusp.LabPt.exists_labVal E H D l Xo c Y ∅ Ω K J y 𝔐 ℂ z
     have hi := ((hF hG E H D l Xo c Y Ω K J y 𝔐 z s _ hD hz ha).2 g Λ R σ x _ hσ hva hx).1
     obtain ⟨Rel, r1, r2, -⟩ := exists_rel hx Mz
     exact indep_of_rel r2 (fun i => r1 i _ rfl) hi

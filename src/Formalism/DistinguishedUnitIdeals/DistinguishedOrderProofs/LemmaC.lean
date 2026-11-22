@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Formalism.DistinguishedUnitIdeals.CoprimeProd
+public import Formalism.DistinguishedUnitIdeals.Bundle0001
 public import Formalism.EisensteinCokernelLengths.FactorialValuationBounds.LemmaCRam
 
 @[expose] public section

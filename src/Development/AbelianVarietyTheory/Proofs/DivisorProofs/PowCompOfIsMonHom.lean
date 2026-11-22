@@ -1,12 +1,12 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Divisors.TorMatch
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0066
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EqTorusOfClassify
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.SmoothCommGroupSchemeEqOfPowEqOfClosedPoint
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ToricTorsionUniformisationEqRestrictCharacters
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ToricTorsionSectionEqPulledTraitPointField
-public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsPushEquiv
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0482
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0517
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0499
+public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0022
 
 @[expose] public section
 

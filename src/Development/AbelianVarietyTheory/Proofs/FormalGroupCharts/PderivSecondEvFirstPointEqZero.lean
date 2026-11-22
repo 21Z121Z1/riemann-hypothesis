@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.FormalGroupCharts.FormalFamilyConstantCoeffZeroZeroSecondVar
-public import Development.AbelianVarietyTheory.Proofs.FormalGroupCharts.ConstantCoeffPrim
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.TaylorDiscriminants.ChartChg
+public import Development.AbelianVarietyTheory.Proofs.FormalGroupCharts.Bundle0004
+public import Development.AbelianVarietyTheory.Proofs.FormalGroupCharts.Bundle0003
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.TaylorDiscriminants.Bundle0003
 
 @[expose] public section
 

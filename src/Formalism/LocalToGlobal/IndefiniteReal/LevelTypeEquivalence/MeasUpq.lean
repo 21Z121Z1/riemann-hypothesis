@@ -2,9 +2,9 @@ module
 
 public import Formalism.LocalRingCardinality.SpanPowerMembership.HaarDensityNeZero
 public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.HaarScaling.MapEqSelfOfIterate
-public import Formalism.LocalToGlobal.IndefiniteReal.LevelTypeEquivalence.UnimodGA
+public import Formalism.LocalToGlobal.IndefiniteReal.LevelTypeEquivalence.Bundle0006
 public import Formalism.LocalToGlobal.IndefiniteReal.SubgroupCharExtensionOneApply
-public import Formalism.LocalToGlobal.IndefiniteReal.LevelTypeEquivalence.MinfLev
+public import Formalism.LocalToGlobal.IndefiniteReal.LevelTypeEquivalence.Bundle0002
 public import Formalism.LocalToGlobal.IndefiniteReal.HaarTransfer.MinfUniqueP
 
 @[expose] public section

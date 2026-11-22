@@ -1,7 +1,7 @@
 module
 
 public import Formalism.HermitianCurvature.StatementG
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.RemainderNormLeStrictUpper
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0005
 
 @[expose] public section
 

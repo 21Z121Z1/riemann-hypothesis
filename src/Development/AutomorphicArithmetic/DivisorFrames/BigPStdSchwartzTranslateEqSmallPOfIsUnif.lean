@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicArithmetic.LocalEmbeddings.FinMatchDefs
-public import Development.AutomorphicArithmetic.DivisorFrames.ShellSumEqConstOfTwistEqIndicatorDoubleCoset
+public import Development.AutomorphicArithmetic.LocalEmbeddings.Bundle0001
+public import Development.AutomorphicArithmetic.DivisorFrames.Bundle0008
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.StandardPairFrameBlocksDetAndNegTranspose
 
 @[expose] public section

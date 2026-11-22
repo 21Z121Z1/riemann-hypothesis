@@ -1,6 +1,6 @@
 module
 
-public import Formalism.SharpRestriction.GlobalSchurBounds.Chosen
+public import Formalism.SharpRestriction.GlobalSchurBounds.Bundle0001
 
 @[expose] public section
 

@@ -1,7 +1,7 @@
 module
 
-public import Formalism.HermitianCurvature.StatementTBB
-public import Formalism.FormalDegreeBessel.FinalG
+public import Formalism.HermitianCurvature.Bundle0010
+public import Formalism.FormalDegreeBessel.Bundle0002
 
 @[expose] public section
 

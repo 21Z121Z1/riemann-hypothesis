@@ -4,7 +4,7 @@ public import Mathlib
 public import GroundTheory.GlobalFields.KummerTheory.KummerIndexLemma.HasEnoughRootsOfUnityOfRingHom
 public import GroundTheory.GlobalFields.KummerTheory.SplittingKummer
 public import GroundTheory.GlobalFields.SplittingFromInequality
-public import GroundTheory.GlobalFields.IdeleGroups.LocalNorms
+public import GroundTheory.GlobalFields.IdeleGroups.Bundle0003
 
 @[expose] public section
 

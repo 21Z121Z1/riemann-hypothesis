@@ -1,8 +1,7 @@
 module
 
-public import Formalism.LocalToGlobal.GlobalTheory.GL6.PBwLcInt
-public import Formalism.LocalToGlobal.GlobalTheory.GL6.RamifiedLatticePropsOfModel
-public import Formalism.LocalToGlobal.GlobalTheory.GL6.PBwLocGlob
+public import Formalism.LocalToGlobal.GlobalTheory.GL6.Bundle0006
+public import Formalism.LocalToGlobal.GlobalTheory.GL6.Bundle0003
 
 @[expose] public section
 

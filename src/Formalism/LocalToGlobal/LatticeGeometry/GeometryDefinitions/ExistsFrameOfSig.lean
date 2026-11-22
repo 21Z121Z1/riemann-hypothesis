@@ -7,9 +7,9 @@ public import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.CsGlob
 public import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.CsScale
 public import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.CsDual
 public import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.CsSpan
-public import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.CsApprox
+public import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Bundle0009
 public import Formalism.LocalToGlobal.LatticeGeometry.GeometryDefinitions.SingleFacts
-public import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.SignatureConjugationInvariant
+public import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Bundle0003
 
 @[expose] public section
 

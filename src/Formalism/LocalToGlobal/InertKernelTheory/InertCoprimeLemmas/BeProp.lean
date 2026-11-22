@@ -1,8 +1,8 @@
 module
 
 public import Formalism.LocalToGlobal.InertKernelTheory.StatementBe
-public import Formalism.SharpRestriction.AdmissibleParameterJoins.GandSv
-public import Formalism.SharpRestriction.GlobalSchurBounds.GlobalRankLatticeProofs.UnitTraceSumBounds.StmtEndIntWHolds
+public import Formalism.SharpRestriction.AdmissibleParameterJoins.Bundle0006
+public import Formalism.SharpRestriction.GlobalSchurBounds.GlobalRankLatticeProofs.UnitTraceSumBounds.Bundle0008
 
 @[expose] public section
 

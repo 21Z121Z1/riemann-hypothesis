@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.CoherentCohomologyProofs.FstHomCompSqzOfLeibniz
-public import ReciprocityTheory.DualLattices.EvCotStatement
+public import Development.AbelianVarietyTheory.Proofs.CoherentCohomologyProofs.Bundle0002
+public import ReciprocityTheory.DualLattices.Bundle0029
 
 @[expose] public section
 

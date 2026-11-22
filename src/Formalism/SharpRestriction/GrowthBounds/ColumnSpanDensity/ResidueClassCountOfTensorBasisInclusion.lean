@@ -1,6 +1,6 @@
 module
 
-public import Formalism.SharpRestriction.GrowthBounds.ColumnSpanDensity.EdgeLatRS
+public import Formalism.SharpRestriction.GrowthBounds.ColumnSpanDensity.Bundle0011
 
 @[expose] public section
 

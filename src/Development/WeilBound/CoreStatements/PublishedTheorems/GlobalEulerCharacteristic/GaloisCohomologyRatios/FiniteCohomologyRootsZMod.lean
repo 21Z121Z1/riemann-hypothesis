@@ -1,7 +1,7 @@
 module
 
 public import Development.WeilBound.CoreStatements.PublishedTheorems.GlobalEulerCharacteristic.GaloisCohomologyRatios.ModuleFiniteHomRep
-public import GroundTheory.ProfiniteCohomology.LocalEulerCharacteristic.CoprimeRegular
+public import GroundTheory.ProfiniteCohomology.LocalEulerCharacteristic.Bundle0001
 public import GroundTheory.ProfiniteCohomology.RestrictedRamification.BaseKummerDefs
 public import GroundTheory.ProfiniteCohomology.GlobalEulerCharacteristic.KummerShaOpen
 public import GroundTheory.ProfiniteCohomology.RestrictedRamification.Finite

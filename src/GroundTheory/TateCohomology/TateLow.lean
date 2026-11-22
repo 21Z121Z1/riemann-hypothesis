@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import GroundTheory.TateCohomology.ModuleHomologyData
+public import GroundTheory.TateCohomology.Bundle0002
 
 @[expose] public section
 

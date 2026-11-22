@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Formalism.PairingDivisors.StatementA
+public import Formalism.PairingDivisors.Bundle0001
 public import Formalism.PairingDivisors.StatementN
 public import Formalism.PairingDivisors.PairingDivisorProofs.Height
 

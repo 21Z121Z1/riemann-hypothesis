@@ -1,17 +1,16 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MapPairDetCovec
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1883
 public import Development.AbelianVarietyTheory.Definitions.Divisors.IsLocalRingTrivSqZeroExt
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IntegralPointPullbackComparison
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExOfFlatWtSome
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0571
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1622
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WeightedSectionExponentShift
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsUniqueFrameChangeByMatrices
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.FrameChangeExistsUniqueOfSamePoint
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.FrameChangeByMatricesReflAndComp
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RightInvariantGLOfUpperTriangularRightInvariantStatement
-public import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.FrameChangeComposeInvertBaseChangeTriangular
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsLieCombIffIsCombAt
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0027
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0028
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0103
+public import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.Bundle0016
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1429
 
 @[expose] public section
 
@@ -165,7 +164,7 @@ theorem hfun_update_one [Infinite k] (hf : f ∈ secZ Xo c (exOf Dw (flatWt Dw �
       · rw [Function.update_of_ne h]; exact hX b'
     have := hfun_upper τ y₀ G hf hGY (Function.update X b A) hX' b T hT htri
     simpa [Function.update_idem, Function.update_self] using this
-  have key := GlobalTheory.T.rightInvariant_GL_of_upperTriangular_rightInvariant (fun A => hfun Dw τ G (Function.update X b A))
+  have key := _root_.GlobalTheory.rightInv_of_upperTriangular_rightInv (fun A => hfun Dw τ G (Function.update X b A))
     (fun A => evalFr G (Function.update X b A)) (fun d => wr τ (Function.update (fun b' => (X b').det) b d))
     (fun A₀ D => evalFr_update_line G X b A₀ D) hψ hT 1 (X b) (by simp) (hX b)
   simp only [_root_.one_mul, Function.update_eq_self] at key

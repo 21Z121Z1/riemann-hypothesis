@@ -2,7 +2,7 @@ module
 
 public import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutLimE
 public import Formalism.HermitianCurvature.HermitianCurvatureProofs.ThmBpAtEqOfShiftR
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutNFHatProdKBStmt
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0286
 
 @[expose] public section
 

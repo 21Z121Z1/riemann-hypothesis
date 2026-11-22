@@ -1,7 +1,7 @@
 module
 
-public import Formalism.LocalToGlobal.ProjectiveLattices.CurveComp
-public import Formalism.LocalToGlobal.ProjectiveLattices.CurveCountA
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0036
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0002
 
 @[expose] public section
 

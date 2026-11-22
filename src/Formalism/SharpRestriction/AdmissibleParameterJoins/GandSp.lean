@@ -4,7 +4,7 @@ public import Formalism.SharpRestriction.AdmissibleParameterJoins.GandSo
 public import Formalism.SharpRestriction.GrowthBounds.FormalGroupSystem
 public import Formalism.SharpRestriction.GlobalSchurBounds.GeneralLinearActions.IsDiscriminantTwelfthRootOfIdealLattice
 public import Formalism.SharpRestriction.GlobalSchurBounds.GL3Theta
-public import Formalism.LocalRingCardinality.DataKerP
+public import Formalism.LocalRingCardinality.Bundle0004
 
 @[expose] public section
 

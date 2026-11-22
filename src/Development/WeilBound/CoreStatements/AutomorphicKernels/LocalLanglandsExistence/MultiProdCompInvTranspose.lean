@@ -1,15 +1,15 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ProductRepresentationReorderEquiv
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MultiProdCompInvTranspose
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsCosocleComp
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CuspidalInvTranspose
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TwistInvTransposeDetChar
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ContragredientEqInvTransposeClass
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsIrreducibleComp
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SegDualExistsTerms
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PrecedesOfSegDualPrecedes
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1351
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1400
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1344
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1325
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1362
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1324
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1394
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1356
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1354
 public import Development.WeilBound.CoreStatements.TemperedRepresentationTheory.BernsteinZelevinskyGL.TopAdm
 
 @[expose] public section

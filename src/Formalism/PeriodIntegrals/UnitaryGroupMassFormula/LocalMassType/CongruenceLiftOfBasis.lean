@@ -2,7 +2,7 @@ module
 
 public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LocalMassType.WCoreG
 public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LocalMassType.MemSecondProjectionIff
-public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LocalMassType.SaturatedSplitLattice
+public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LocalMassType.Bundle0006
 public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LocalMassType.IdxStep
 public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LocalMassType.IsClosedCongruenceSubgroup
 

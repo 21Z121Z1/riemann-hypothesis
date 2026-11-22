@@ -1,11 +1,11 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.SplitPart
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.CongAt
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.BaseFieldsDefiniteLaws
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CharacterSumLocalConstantThird
-public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.IntegralPowerExpansion
+public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.Bundle0023
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0286
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0097
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0758
+public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0050
 public import Formalism.LocalToGlobal.Columns.ChainInst
 
 @[expose] public section

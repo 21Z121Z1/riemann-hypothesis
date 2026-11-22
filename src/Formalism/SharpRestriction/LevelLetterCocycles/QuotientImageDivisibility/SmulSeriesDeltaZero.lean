@@ -1,7 +1,7 @@
 module
 
 public import Formalism.SharpRestriction.LevelLetterCocycles.QuotientImageDivisibility.LengthBoundOfHypotheses
-public import Formalism.SharpRestriction.LevelLetterCocycles.SemisimpleLetterIffForallMem
+public import Formalism.SharpRestriction.LevelLetterCocycles.Bundle0018
 public import Formalism.SharpRestriction.LevelLetterCocycles.LatticeMembershipPolynomialGamma
 
 @[expose] public section

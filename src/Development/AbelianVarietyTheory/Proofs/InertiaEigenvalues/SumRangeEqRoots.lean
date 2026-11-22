@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.GreenRegularCharacters
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CuspidalCharExistsOfGreen
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FixedMemRange
+public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.Bundle0004
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0248
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0253
 
 @[expose] public section
 

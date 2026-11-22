@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.CompletedLStripBounds
-public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.ExistsUniqueIsStandardAdeleCharUnramifiedCMBase
-public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.DualLatticeDifferentIndex
+public import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.Bundle0007
+public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0126
+public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0120
 public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsIsHeckeLOfHasInf
 
 @[expose] public section

@@ -1,6 +1,6 @@
 module
 
-public import Formalism.EllipticTorsion.Statement
+public import Formalism.EllipticTorsion.Bundle0002
 
 @[expose] public section
 

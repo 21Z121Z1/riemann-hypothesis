@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Development.WeilBound.ThetaLifts.Reductions.WeilPairs.WeilPairData.ImportsBis
-public import Development.WeilBound.ThetaLifts.Reductions.WeilPairs.ContinuousTheta
+public import Development.WeilBound.ThetaLifts.Reductions.WeilPairs.WeilPairData.Bundle0001
+public import Development.WeilBound.ThetaLifts.Reductions.WeilPairs.Bundle0001
 
 @[expose] public section
 

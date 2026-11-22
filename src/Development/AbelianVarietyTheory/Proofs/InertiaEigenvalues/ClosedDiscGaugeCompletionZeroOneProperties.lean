@@ -2,8 +2,8 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.IsStratHom
-public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.BhattScholzeIntegral
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ClosedDiscGaugeCompletionBasicPropertiesStatement
+public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.Bundle0005
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0354
 
 @[expose] public section
 

@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.HeckeCharEqOfLAdicRealisation
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.IsAlgClosedResidueField
+public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.Bundle0009
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0005
 public import Development.AbelianVarietyTheory.Proofs.CoherentCohomologyProofs.ClosedBallValuationSubringToSubring
 
 @[expose] public section

@@ -1,7 +1,7 @@
 module
 
-public import Formalism.LocalToGlobal.InertKernelTheory.DefsMMOnb
-public import Formalism.LocalToGlobal.GlobalTheory.GL3.IsometryLinkageTrivialLevel
+public import Formalism.LocalToGlobal.InertKernelTheory.Bundle0009
+public import Formalism.LocalToGlobal.GlobalTheory.GL3.Bundle0003
 
 @[expose] public section
 

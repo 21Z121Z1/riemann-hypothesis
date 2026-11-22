@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import ReciprocityTheory.AnalyticForms.AnalyticCharts.Osgood
-public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.AnalyticAtEntry
+public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0001
 
 @[expose] public section
 

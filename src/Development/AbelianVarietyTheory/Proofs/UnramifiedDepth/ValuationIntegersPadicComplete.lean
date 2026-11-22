@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.Jets.TwoPlaces
-public import Formalism.LocalToGlobal.CharacterGerms.RowTieTop
+public import Formalism.LocalToGlobal.CharacterGerms.Bundle0014
 public import Development.AbelianVarietyTheory.Definitions.TeichmullerDepth.HasTeich
 public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.NonemptyPadicIntRingHomOfIsAdicComplete
 

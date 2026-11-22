@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.WeilBound.ThetaLifts.LatticeBasics.BoxFinB
+public import Development.WeilBound.ThetaLifts.LatticeBasics.Bundle0015
 
 @[expose] public section
 

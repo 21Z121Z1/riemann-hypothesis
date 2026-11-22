@@ -1,7 +1,7 @@
 module
 
-public import Development.AutomorphicArithmetic.Foundations.IwahoriReduction.LangPolynomials.RepSmul
-public import Development.AutomorphicArithmetic.Foundations.IwahoriReduction.LangPolynomials.RepUniq
+public import Development.AutomorphicArithmetic.Foundations.IwahoriReduction.LangPolynomials.Bundle0006
+public import Development.AutomorphicArithmetic.Foundations.IwahoriReduction.LangPolynomials.Bundle0010
 
 @[expose] public section
 

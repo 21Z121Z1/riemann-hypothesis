@@ -1,7 +1,7 @@
 module
 
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.UnitaryThreeDeformations.FiniteResidue
-public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.NormLeOneOfIsIntegral
+public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0047
 
 @[expose] public section
 

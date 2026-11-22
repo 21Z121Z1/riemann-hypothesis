@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Divisors.HasTypeVec
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.AdelicUnitaryClosureLocalComponentsOpen
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0040
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0130
 
 @[expose] public section
 

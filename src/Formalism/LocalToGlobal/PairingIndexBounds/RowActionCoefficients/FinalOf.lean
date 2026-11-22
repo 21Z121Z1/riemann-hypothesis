@@ -1,7 +1,7 @@
 module
 
 public import Formalism.LocalToGlobal.PairingIndexBounds.RowActionCoefficients.AdmissibleInterpolation.AdmissibleGeneralLatticeTuple
-public import Formalism.LocalToGlobal.GroupLattices.PendingLemmas.InvarianceIffAdditiveMapsExist
+public import Formalism.LocalToGlobal.GroupLattices.PendingLemmas.Bundle0003
 
 @[expose] public section
 

@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Formalism.FormalDegreeBessel.StatementIO
-public import Formalism.RealPlaceAnalysis.ThirdArithmeticHolds
+public import Formalism.RealPlaceAnalysis.Bundle0004
 public import Formalism.RealPlaceAnalysis.QuotientSettingHolds
 
 @[expose] public section

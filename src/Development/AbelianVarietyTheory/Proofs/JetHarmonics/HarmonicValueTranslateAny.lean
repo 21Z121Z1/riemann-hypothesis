@@ -1,25 +1,24 @@
 module
 
 public import Mathlib
-public import Formalism.LocalToGlobal.ProjectiveLattices.RecPJThAllNeBot
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0033
 public import Formalism.LocalToGlobal.ProjectiveLattices.PlaceBelow
 public import Formalism.SharpRestriction.Divisibility.AbelianOpenPart.OEOsInjective
-public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.LemmaBStatement
-public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.GermCut
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.FirstCohomology.OneCSt
-public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.HarmInvA
+public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0018
+public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0006
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.FirstCohomology.Bundle0001
+public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0013
 public import Formalism.LocalToGlobal.ProjectiveLattices.DepthTie
-public import Formalism.LocalToGlobal.ProjectiveLattices.ThProps
-public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.AlphaFormHarmonicValueAtFramedPoint
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0011
+public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0157
 public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.HarmonicValueConnectionIntegralChart
-public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.TranslateThetaFrameGermEqUnitMulBoxProduct
-public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.OneColumnTranslateSectionRootOfUnityMul
-public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.ThetaRuleValueIntegralFramedPointExtensionField
-public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.JetDUnique
-public import Development.AbelianVarietyTheory.Proofs.FormalGroupCharts.JetFramesDifferByUnitEachOrder
-public import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.ExistsFramedPointBaseChangeAlgHom
-public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.StarRingExtOfStar
-public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.CIndTop
+public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0154
+public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0156
+public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0136
+public import Development.AbelianVarietyTheory.Proofs.FormalGroupCharts.Bundle0025
+public import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.Bundle0039
+public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0074
+public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0034
 
 @[expose] public section
 
@@ -331,7 +330,7 @@ theorem translate_eq_box : ∀ (E : Type) [Field E] [NumberField E] [IsCMField E
     (ζ₁ i • Φ₁ i θα₁)).exists
   obtain ⟨bx₁, hbx₁⟩ := exists_boxFam_multilinear hG T.V n P.D.toPre D'.toPre pD F 1
   obtain ⟨bx, hbx⟩ := exists_boxFam_multilinear hG T.V n P.D.toPre D'.toPre pD F (1 * N)
-  obtain ⟨u₀, hu₀, hθu⟩ := GlobalTheory.T.thetaFrameFamilies_differ_by_valuationZero_unit T.V ϖ hϖ D' F v hv _ θ
+  obtain ⟨u₀, hu₀, hθu⟩ := _root_.GlobalTheory.ThetaFrameLine.main T.V ϖ hϖ D' F v hv _ θ
     (BoxFrame.main T.V ϖ hϖ n P.D D' pD F θ₁ _ hθ₁ ((hbx₁ _ _).2 rfl)) hθ
   have hw0 : TraceFormTwistIso D'.toPre oD' H.w0 := GlobalTheory.PsiWZeroProd.main T.V n P.D.toPre D'.toPre pD (𝓞 E)
     (fun a x => funext fun i => hx a x i) P.oD oD' hact H.w0 P.w0
@@ -342,7 +341,7 @@ theorem translate_eq_box : ∀ (E : Type) [Field E] [NumberField E] [IsCMField E
     rw [(hpl _ _).1 hθα, (hpl _ _).1 hpull, (isSmul_iff _ _ _).1 hθu, map_smul]
   obtain ⟨w', hw', hΦ⟩ := BoxPhi.phiRel_box hG T.V n P.D.toPre D'.toPre pD F (1 * N) p p₁ hp w₁ hw₁
   have hfin' := finOrd_box hL hL2 hL4 hT T.V n P.D D' pD F (1 * N) hk p p₁ hp w₁ w' hw₁ hw' hΦ ζ₁ hζ₁
-  obtain ⟨u₁, ⟨m, hm, hum⟩, hu₁⟩ := GlobalTheory.T.finiteOrder_thetaOperators_ratio_rootOfUnity T.V ϖ hϖ D' F (1 * N) hk p w' w (∏ i, ζ₁ i) ζ hw' hw hfin' hfin
+  obtain ⟨u₁, ⟨m, hm, hum⟩, hu₁⟩ := _root_.GlobalTheory.finOrd_ratio_rootOfUnity T.V ϖ hϖ D' F (1 * N) hk p w' w (∏ i, ζ₁ i) ζ hw' hw hfin' hfin
   obtain ⟨Φ', hΦ'⟩ := phiFun_of hL T.V _ D' F (1 * N) hk p w' hw'
   have hbΦ : bx (fun i => Φ₁ i θα₁) = Φ' (bx fun _ => θα₁) :=
     (hΦ' _ _).1 (hΦ _ _ _ _ (fun i => (hΦ₁ i _ _).2 rfl) ((hbx _ _).2 rfl) ((hbx _ _).2 rfl))

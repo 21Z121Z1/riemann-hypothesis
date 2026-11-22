@@ -2,19 +2,23 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.Divisors.NotCompactOfMEqOne
-public import Development.AbelianVarietyTheory.Definitions.Divisors.InfUniv
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SumProjSingle
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsBCTrivSqZeroExt
-public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.GrothendieckDeformation
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GrothendieckDeformationOfLifting
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AbelianSchemeFirstDeRhamStructureStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AbelianSchemeHomLiftingNilpotentDividedPowersStatement
-public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ConnectedSpaceSpecOfIsLocalRing
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsUniqueTorsionLiftOfHenselian
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0044
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1317
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle3092
+public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.Bundle0008
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0691
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle3084
+public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.Bundle0022
+public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.Bundle0010
+public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.AbelianHodgeDeRham
+public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.Bundle0007
+public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.Bundle0006
+public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.Bundle0078
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0809
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsAdditiveLiftIff
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DualAbelianSchemeExistsBidualityStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LiftedHodgeFiltrationEqOfSameLiftsStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HarrisTaylorPolarisationBundlesCorrespondDeformaStatement
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle3079
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0026
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle3102
 
 @[expose] public section
 
@@ -36,7 +40,7 @@ theorem isGrpPullback_of_iso {S : Scheme.{0}} {A B : Over S} [GrpObj A] [GrpObj 
   simp [j]
 
 theorem gd : GlobalTheory.Published.GrothendieckDeformation :=
-  GlobalTheory.Published.grothendieckDeformation_of_lifting GlobalTheory.T.abelianScheme_firstDeRham_structure GlobalTheory.T.print_abelianLifting
+  GlobalTheory.Published.grothendieckDeformation_of_lifting _root_.GlobalTheory.abelianDeRham _root_.GlobalTheory.abelianScheme_hom_lifting_nilpotent_dividedPowers
 
 theorem liftHom_eps (k : Type) [Field k] :
     GlobalTheory.Published.GrothendieckMessing.LiftHom (epsDP k) (TrivSqZeroExt.fstHom k k k).toRingHom :=

@@ -1,11 +1,10 @@
 module
 
 public import Mathlib
-public import Formalism.PeriodIntegrals.NMeasInv
+public import Formalism.PeriodIntegrals.Bundle0020
 public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.MeasureInverseContraction.ConjSubMulVec
 public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.MeasureInverseContraction.Development
-public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.MeasureDecomposition.HJMulVecGen
-public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.MeasureDecomposition.ContinuousUMatApply
+public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.MeasureDecomposition.Bundle0001
 
 @[expose] public section
 

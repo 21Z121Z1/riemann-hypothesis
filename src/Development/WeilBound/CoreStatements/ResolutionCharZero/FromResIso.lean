@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Development.ResolutionOfSingularities.Statements
-public import Development.ResolutionOfSingularities.Foundations.Blowup.BlowupIsoOffCenter
+public import Development.ResolutionOfSingularities.Foundations.Blowup.Bundle0002
 
 @[expose] public section
 

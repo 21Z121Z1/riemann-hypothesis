@@ -1,10 +1,10 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsPreFamilyOfLatticeFamilyTwo
-public import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.StatementsFlagIndependence
-public import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.PDvrConeDimTrdeg
-public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.NatDegreeMinpolyEqOfClosed
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.Bundle0011
+public import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.Bundle0017
+public import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.Bundle0043
+public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.Bundle0003
 
 @[expose] public section
 

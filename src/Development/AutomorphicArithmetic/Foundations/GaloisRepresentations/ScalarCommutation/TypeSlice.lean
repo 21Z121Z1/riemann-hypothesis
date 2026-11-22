@@ -2,8 +2,8 @@ module
 
 public import Mathlib
 public import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.LefschetzSigmaSums.HeckeTraceSemi
-public import Development.AbelianVarietyTheory.Definitions.Divisors.IwahoriRegularSeparable
-public import Development.AbelianVarietyTheory.Definitions.Divisors.GenOf
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0035
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0045
 
 @[expose] public section
 

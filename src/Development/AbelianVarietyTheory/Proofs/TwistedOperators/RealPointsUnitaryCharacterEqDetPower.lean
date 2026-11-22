@@ -1,11 +1,11 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.RevPosRevPos
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsArchimedeanLiftUnitaryGroupProduct
-public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.CircleHomEqZpow
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.CharEqOneOfDetEqOne
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.RealIsotropicOrOneClass
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0166
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0948
+public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.Bundle0001
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0042
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0025
 
 @[expose] public section
 

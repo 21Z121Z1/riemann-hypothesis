@@ -3,8 +3,8 @@ module
 public import Mathlib
 public import ReciprocityTheory.Hypotheses.GalCoh
 public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.ExistsCoprimePowOfMemIneKer
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.CardDualZmodModuleEqCard
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.TwistedDualEvalBidualApply
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0019
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0288
 
 @[expose] public section
 

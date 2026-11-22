@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.PerRowC
+public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.Bundle0016
 
 @[expose] public section
 

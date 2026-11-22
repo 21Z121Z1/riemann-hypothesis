@@ -1,13 +1,13 @@
 module
 
 public import Formalism.SharpRestriction.ParConsts
-public import Formalism.SharpRestriction.CuspSpanNormBounds.LeSCSCl
+public import Formalism.SharpRestriction.CuspSpanNormBounds.Bundle0007
 public import Formalism.SharpRestriction.CuspSpanNormBounds.RelevantZeroGramTerms
 public import Formalism.SharpRestriction.CuspSpanNormBounds.StandingNumericalData
 public import Formalism.SharpRestriction.CuspSpanNormBounds.FlagEEqHyperbolic
 public import Formalism.SharpRestriction.CuspSpanNormBounds.NormalizedLocalScale
-public import Formalism.SharpRestriction.CuspSpanNormBounds.CntPartners
-public import Formalism.HermitianLattices.StatementMass
+public import Formalism.SharpRestriction.CuspSpanNormBounds.Bundle0004
+public import Formalism.HermitianLattices.Bundle0003
 public import Formalism.ThetaLiftIndependence.Statement
 public import Formalism.SharpRestriction.CuspSpanNormBounds.CongruenceAtSplitFrobeniusHolds
 

@@ -3,8 +3,8 @@ module
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.HeightFunctions.ConclOfInputs4
 public import Development.AbelianVarietyTheory.Definitions.HeightFunctions.XiValIffXiAt
-public import Formalism.SharpRestriction.GenusPolyhedralBounds.RelativeIndexClassSets.TheoremZeroOfRefinedInputs
-public import Formalism.LocalToGlobal.ProjectiveLattices.VolProofs
+public import Formalism.SharpRestriction.GenusPolyhedralBounds.RelativeIndexClassSets.Bundle0007
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0020
 
 @[expose] public section
 

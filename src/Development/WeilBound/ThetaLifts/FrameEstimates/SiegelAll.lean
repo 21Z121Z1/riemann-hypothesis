@@ -1,7 +1,7 @@
 module
 
-public import Development.WeilBound.ThetaLifts.FrameEstimates.LintegralLeOfCover
-public import Development.WeilBound.ThetaLifts.FrameEstimates.LeHeightOfIsTorusElt
+public import Development.WeilBound.ThetaLifts.FrameEstimates.Bundle0008
+public import Development.WeilBound.ThetaLifts.FrameEstimates.Bundle0007
 
 @[expose] public section
 

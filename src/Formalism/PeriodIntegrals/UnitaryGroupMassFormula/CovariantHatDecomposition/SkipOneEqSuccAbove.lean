@@ -2,8 +2,7 @@ module
 
 public import Mathlib
 public import Formalism.PeriodIntegrals.ContractionsCovariantIff
-public import Formalism.RealPlaceAnalysis.RealPlaceTaylor.QuantumDetHighestWeightHolds
-public import Formalism.RealPlaceAnalysis.RealPlaceTaylor.ShiftedGeneratorEqIteSmulAdd
+public import Formalism.RealPlaceAnalysis.RealPlaceTaylor.Bundle0006
 public import Formalism.RealPlaceAnalysis.RealPlaceTaylor.GeneratorCommutatorQuantumDet
 public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.CovariantHatDecomposition.InjDecomp
 

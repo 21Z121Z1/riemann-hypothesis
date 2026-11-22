@@ -1,6 +1,6 @@
 module
 
-public import Formalism.LocalToGlobal.GroupLattices.PendingLemmas.DelEquiv
+public import Formalism.LocalToGlobal.GroupLattices.PendingLemmas.Bundle0002
 public import Formalism.LocalToGlobal.GroupLattices.PendingLemmas.WittFractionAlgebraCp
 
 @[expose] public section

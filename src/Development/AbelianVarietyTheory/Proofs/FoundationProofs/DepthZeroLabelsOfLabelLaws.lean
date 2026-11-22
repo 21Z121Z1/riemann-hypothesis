@@ -1,14 +1,14 @@
 module
 
 public import Mathlib
-public import Formalism.SharpRestriction.LevelLetterCocycles.ArithmeticCylinders
-public import Formalism.LocalRingCardinality.DataTies
-public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.GSplit
-public import Development.AbelianVarietyTheory.BlockTheory.TorsionBlocks.TameGeneratorProjectors
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ListFormLabels
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ValuationPowApplyDivSubOneLt
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsSplitPlOfNotIsConjPl
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SubMemMaximalIdealIff
+public import Formalism.SharpRestriction.LevelLetterCocycles.Bundle0004
+public import Formalism.LocalRingCardinality.Bundle0003
+public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0013
+public import Development.AbelianVarietyTheory.BlockTheory.TorsionBlocks.Bundle0002
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0194
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0139
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0254
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0261
 
 @[expose] public section
 

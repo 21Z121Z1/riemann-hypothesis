@@ -3,8 +3,8 @@ module
 public import Development.WeilBound.ThetaLifts.LocalTheory.ConeShifts.KAtCompact
 public import Development.WeilBound.ThetaLifts.LocalTheory.AdmissiblePureTensorSchwartz
 public import Development.WeilBound.ThetaLifts.SmallCones.MatCancel
-public import Development.WeilBound.ThetaLifts.SmallCones.SoDefs
-public import Development.WeilBound.CoreStatements.LocallyConstantCoinvariants.FullOfSoLoc
+public import Development.WeilBound.ThetaLifts.SmallCones.Bundle0001
+public import Development.WeilBound.CoreStatements.LocallyConstantCoinvariants.Bundle0004
 
 @[expose] public section
 

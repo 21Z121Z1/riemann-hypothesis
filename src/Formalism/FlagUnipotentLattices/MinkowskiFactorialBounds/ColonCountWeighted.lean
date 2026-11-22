@@ -1,6 +1,6 @@
 module
 
-public import Formalism.FlagUnipotentLattices.IdealCountLeW
+public import Formalism.FlagUnipotentLattices.Bundle0002
 public import Formalism.HyperbolicPlaceProducts.SecondLevelArithmeticNorm
 public import Lemmata.GeneralBFactSecondMore.Imports
 

@@ -2,16 +2,16 @@ module
 
 public import Mathlib
 public import Development.AutomorphicSpectrum.Definitions.MetricPeriods.ClopenCondOnto
-public import Development.AutomorphicSpectrum.Definitions.MetricPeriods.PInjective
-public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.ExistsSymplecticBasisLagrangianBetween
-public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.SymplecticUnipotentShape
+public import Development.AutomorphicSpectrum.Definitions.MetricPeriods.Bundle0002
+public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.Bundle0006
+public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.Bundle0004
 public import Development.AutomorphicSpectrum.Proofs.MetricProofs.SiegelOfRiemann
 public import Development.AbelianVarietyTheory.Proofs.HomogeneousIdeals.FromBlocksMapIntCastMemSymplecticGroup
 public import ReciprocityTheory.AnalyticForms.AnalyticCharts.Osgood
 public import GroundTheory.HeightsAndTheta.Heights.Regularisation.Assembly
 public import GroundTheory.HeightsAndTheta.Heights.Regularisation.PRiemannExtensionSlices
 public import GroundTheory.HeightsAndTheta.Heights.Regularisation.PPuncturedExpOrder
-public import GroundTheory.HeightsAndTheta.Heights.Regularisation.PLogCoverDescent
+public import GroundTheory.HeightsAndTheta.Heights.Regularisation.Bundle0005
 
 @[expose] public section
 

@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.PairwiseDisjointCell
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.HasBoundedSumsOne
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0030
 public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.PowDvdOfHermMatEq
 
 @[expose] public section

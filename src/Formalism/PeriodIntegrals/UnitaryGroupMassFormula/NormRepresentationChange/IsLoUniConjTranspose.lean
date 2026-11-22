@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Formalism.PeriodIntegrals.PairValDefs
+public import Formalism.PeriodIntegrals.Bundle0025
 
 @[expose] public section
 

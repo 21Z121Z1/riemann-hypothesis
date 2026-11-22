@@ -1,8 +1,8 @@
 module
 
 public import Development.AutomorphicArithmetic.Foundations.Convolution.SphericalHeckeOperators.SymSum
-public import Development.AutomorphicArithmetic.Foundations.Convolution.SphericalHeckeOperators.DcoShape
-public import Development.AutomorphicArithmetic.Foundations.Convolution.SphericalHeckeOperators.IntegralConv
+public import Development.AutomorphicArithmetic.Foundations.Convolution.SphericalHeckeOperators.Bundle0001
+public import Development.AutomorphicArithmetic.Foundations.Convolution.SphericalHeckeOperators.Bundle0004
 
 @[expose] public section
 

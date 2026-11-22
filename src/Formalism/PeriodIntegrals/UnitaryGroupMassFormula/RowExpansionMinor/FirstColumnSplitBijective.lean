@@ -1,7 +1,6 @@
 module
 
-public import Formalism.PeriodIntegrals.QmRowExp
-public import Formalism.PeriodIntegrals.QmRowForm
+public import Formalism.PeriodIntegrals.Bundle0017
 public import Formalism.RealPlaceAnalysis.RealPlaceTaylor.GeneratorCommutatorQuantumDet
 
 @[expose] public section

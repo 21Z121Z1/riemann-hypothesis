@@ -1,6 +1,6 @@
 module
 
-public import Formalism.LocalToGlobal.InertKernelTheory.OneCopyTh1S
+public import Formalism.LocalToGlobal.InertKernelTheory.Bundle0010
 
 @[expose] public section
 

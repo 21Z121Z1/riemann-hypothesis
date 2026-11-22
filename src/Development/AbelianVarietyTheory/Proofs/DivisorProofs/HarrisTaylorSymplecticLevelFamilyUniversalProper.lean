@@ -1,6 +1,6 @@
 module
 
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TwoLeFinrankLa
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1989
 
 @[expose] public section
 

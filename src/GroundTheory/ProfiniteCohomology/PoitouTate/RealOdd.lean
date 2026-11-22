@@ -4,7 +4,7 @@ public import Mathlib
 public import GroundTheory.ProfiniteCohomology.PoitouTate.RealLocal
 public import GroundTheory.ProfiniteCohomology.PoitouTate.RealCup
 public import GroundTheory.ProfiniteCohomology.PoitouTate.PoitouTateNineTermGs
-public import GroundTheory.ProfiniteCohomology.Colimit
+public import GroundTheory.ProfiniteCohomology.Bundle0006
 
 @[expose] public section
 

@@ -2,8 +2,8 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.QuasicoherentCohomology.ExistsAwayFracOfMemHomLoc
-public import Development.AbelianVarietyTheory.Proofs.CoherentCohomologyProofs.ExistsWitnessesOfFormallySmoothQuotient
-public import Development.AbelianVarietyTheory.Proofs.CoherentCohomologyProofs.FlatQuotSMulTopCokerOfMatrixWitnesses
+public import Development.AbelianVarietyTheory.Proofs.CoherentCohomologyProofs.Bundle0009
+public import Development.AbelianVarietyTheory.Proofs.CoherentCohomologyProofs.Bundle0010
 
 @[expose] public section
 

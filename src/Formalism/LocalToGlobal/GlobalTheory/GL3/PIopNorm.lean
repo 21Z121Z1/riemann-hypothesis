@@ -3,7 +3,7 @@ module
 public import Mathlib
 public import Formalism.LocalToGlobal.GlobalTheory.GL3.PIopIso
 public import Formalism.LocalToGlobal.GlobalTheory.GL3.DeterminantNormOneOfUnitDisc
-public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.EpEqOneIff
+public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0010
 
 @[expose] public section
 

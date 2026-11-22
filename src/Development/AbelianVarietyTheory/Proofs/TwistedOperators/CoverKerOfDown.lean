@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.FiniteSupport
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.DerivedAdjoint
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0226
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0096
 
 @[expose] public section
 

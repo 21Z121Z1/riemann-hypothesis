@@ -1,6 +1,6 @@
 module
 
-public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LocalMassType.UnitaryLocalMassIdentity
+public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LocalMassType.Bundle0003
 public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LocalMassOrder.ContinuousHRRight
 
 @[expose] public section

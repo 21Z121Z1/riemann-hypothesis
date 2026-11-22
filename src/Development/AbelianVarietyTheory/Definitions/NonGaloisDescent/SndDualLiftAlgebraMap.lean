@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.NormPowLeNormFactorial
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.DerivationMemPow
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0005
 
 @[expose] public section
 

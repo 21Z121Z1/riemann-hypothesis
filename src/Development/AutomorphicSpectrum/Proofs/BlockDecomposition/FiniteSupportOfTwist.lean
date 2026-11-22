@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IntegralOfTwistConjugatePlace
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0602
 public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.HasSatakeGLOfIsSatVecGL
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LocalTwistContinuousInvolutionIntegralProperties
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1310
 
 @[expose] public section
 

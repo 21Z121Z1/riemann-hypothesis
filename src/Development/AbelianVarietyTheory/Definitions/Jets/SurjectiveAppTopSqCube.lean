@@ -1,14 +1,13 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Jets.ColValMonomial
-public import Development.AbelianVarietyTheory.Proofs.FormalGroupCharts.RosIdSt
-public import Development.AbelianVarietyTheory.Proofs.FormalGroupCharts.ExistsGenRosati
-public import Development.AbelianVarietyTheory.Proofs.FormalGroupCharts.ExistsUniqueNormPrim
-public import Development.AbelianVarietyTheory.Proofs.FormalGroupCharts.ExistsIndexOfLocal
-public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.RigidifiedIsoRespectsCubeAndSymmetry
-public import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.GlobalFnsHolds
-public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.ExistsPowMulEqOne
+public import Development.AbelianVarietyTheory.Definitions.Jets.Bundle0002
+public import Development.AbelianVarietyTheory.Proofs.FormalGroupCharts.Bundle0031
+public import Development.AbelianVarietyTheory.Proofs.FormalGroupCharts.Bundle0014
+public import Development.AbelianVarietyTheory.Proofs.FormalGroupCharts.Bundle0015
+public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.Bundle0028
+public import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.Bundle0011
+public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0083
 
 @[expose] public section
 

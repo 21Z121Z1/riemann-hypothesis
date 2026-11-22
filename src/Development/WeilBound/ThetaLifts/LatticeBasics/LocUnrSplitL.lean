@@ -1,12 +1,10 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Proofs.GlobalProofs.IntegrandEqOnPiece
-public import Development.AutomorphicSpectrum.Proofs.GlobalProofs.LocalFieldUniformizerNormProperties
-public import Development.AutomorphicSpectrum.Proofs.GlobalProofs.GeneralLinearIntegralCompactOpen
-public import Development.AutomorphicSpectrum.Proofs.GlobalProofs.MemIntegralGLIffIntegralUnitDet
-public import Development.AutomorphicSpectrum.Proofs.GlobalProofs.GeneralLinearUnimodularHaar
-public import Development.AutomorphicSpectrum.Proofs.GlobalProofs.IwasawaDecompositionUpperTriangular
+public import Development.AutomorphicSpectrum.Proofs.GlobalProofs.Bundle0013
+public import Development.AutomorphicSpectrum.Proofs.GlobalProofs.Bundle0002
+public import Development.AutomorphicSpectrum.Proofs.GlobalProofs.Bundle0003
+public import Development.AutomorphicSpectrum.Proofs.GlobalProofs.Bundle0006
 
 @[expose] public section
 

@@ -1,6 +1,6 @@
 module
 
-public import ReciprocityTheory.GeometryOfNumbers.PluriharmonicAnalysis.BergmanDefs
+public import ReciprocityTheory.GeometryOfNumbers.PluriharmonicAnalysis.Bundle0001
 
 @[expose] public section
 

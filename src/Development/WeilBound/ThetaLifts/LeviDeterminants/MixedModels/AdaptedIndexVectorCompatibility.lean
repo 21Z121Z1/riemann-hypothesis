@@ -1,7 +1,7 @@
 module
 
 public import Development.WeilBound.ThetaLifts.LeviDeterminants.MixedModels.PlaneC
-public import Development.WeilBound.CoreStatements.CompactAveragingSplitting.EigenvectorLifting.Vaceigen
+public import Development.WeilBound.CoreStatements.CompactAveragingSplitting.EigenvectorLifting.Bundle0005
 public import Development.WeilBound.CoreStatements.LocallyConstantCoinvariants.PfActs
 
 @[expose] public section

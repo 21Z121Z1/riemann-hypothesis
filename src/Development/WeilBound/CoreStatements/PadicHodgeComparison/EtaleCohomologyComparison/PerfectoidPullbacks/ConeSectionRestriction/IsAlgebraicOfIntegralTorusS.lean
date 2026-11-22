@@ -2,11 +2,11 @@ module
 
 public import Mathlib
 public import Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.PerfectoidPullbacks.ConeSectionRestriction.GeoDefs
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.AlgebraicallyIndependentCoordsStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.TorusCoordinateIsUnitStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.TorusMonomialMemRangeStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.NoetherNormalizationFiniteStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.AlgebraicOverTorusOfIntegralStatement
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0145
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0140
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0132
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0163
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0122
 
 @[expose] public section
 
@@ -34,8 +34,8 @@ theorem tpow_mem_range (he : 0 < e) (S : Finset (Fin (d + 1)))
     (hS : V ≤ i ⁻¹ᵁ Proj.basicOpen (grK K N) (yS y S)) (ht : ∀ k, IsUnit (tV i y hy V hV k)) :
     ∀ m ∈ expS S, tpow (fun k => (ht k).unit) m ∈ Set.range (evV i (yS y S) V hS) := by
   first
-    | exact GlobalTheory.T.torus_monomial_mem_range ..
-    | (intros; apply GlobalTheory.T.torus_monomial_mem_range <;> assumption)
+    | exact _root_.GlobalTheory.CompanionTheory.GeoTpow.tpow_mem_range ..
+    | (intros; apply _root_.GlobalTheory.CompanionTheory.GeoTpow.tpow_mem_range <;> assumption)
 
 theorem isIntegral_torusS (he : 0 < e) (q : X ⟶ Spec (CommRingCat.of K)) (hiq : i ≫ PSpace.str K N = q)
     (hfin : Module.Finite (Algebra.adjoin K (Set.range fun k => Ideal.Quotient.mk (homIdeal i) (y k)))
@@ -61,7 +61,7 @@ theorem isAlgebraic_of_integral_torusS {R : Type} [CommRing R] [IsDomain R] [Alg
     (h : ∀ r : R, IsIntegral (torusS K t Finset.univ) r) :
     Algebra.IsAlgebraic (Algebra.adjoin K (Set.range fun k => (t k : R))) R := by
   first
-    | exact GlobalTheory.T.algebraic_over_torus_of_integral ..
-    | (intros; apply GlobalTheory.T.algebraic_over_torus_of_integral <;> assumption)
+    | exact _root_.GlobalTheory.CompanionTheory.GeoTorus.isAlgebraic_of_integral_torusS ..
+    | (intros; apply _root_.GlobalTheory.CompanionTheory.GeoTorus.isAlgebraic_of_integral_torusS <;> assumption)
 
 end CrystallineSemistableComparison.Pb

@@ -1,6 +1,6 @@
 module
 
-public import Formalism.LocalToGlobal.GlobalTheory.GL4.CTEqConjTranspose
+public import Formalism.LocalToGlobal.GlobalTheory.GL4.Bundle0001
 public import Formalism.LocalToGlobal.GlobalTheory.GL4.PFrLoc
 public import Mathlib
 public import Formalism.SharpRestriction.GlobalSchurBounds.FlipTwoThree
@@ -8,7 +8,7 @@ public import Formalism.LocalToGlobal.HermitianColumns.ColsHerm
 public import Formalism.LocalToGlobal.HermitianForms.FormsTied
 public import Formalism.GradedWeylDivisibility.StatementE
 public import Formalism.SuccessiveMinima.StatementMink
-public import Formalism.GL3MeanSquares.ConcavityEquidistribution
+public import Formalism.GL3MeanSquares.Bundle0001
 
 @[expose] public section
 

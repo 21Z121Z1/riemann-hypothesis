@@ -1,6 +1,6 @@
 module
 
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.FrobeniusSmoothVectors.PresDefs
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.FrobeniusSmoothVectors.Bundle0003
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.GaloisCochains.GLinkQuot
 
 @[expose] public section

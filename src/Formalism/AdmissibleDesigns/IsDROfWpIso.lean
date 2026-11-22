@@ -1,8 +1,7 @@
 module
 
-public import Formalism.AdmissibleDesigns.MultVZeroOfSubsingleton
-public import Formalism.AdmissibleDesigns.LocCont
-public import Formalism.AdmissibleDesigns.MsContW
+public import Formalism.AdmissibleDesigns.Bundle0006
+public import Formalism.AdmissibleDesigns.Bundle0007
 
 @[expose] public section
 

@@ -3,14 +3,14 @@ module
 public import Mathlib
 public import Formalism.LocalToGlobal.SiegelLatticeTheory.CokernelGLCounts.NGData
 public import Formalism.LocalToGlobal.SiegelLatticeTheory.ClosedLocalOrbits.TermLoc
-public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.LocClosed
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.HermitianLatticeLocalGlobalPrinciple
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.LocalOrbitLatticesInfFrameSpanEq
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.TotallyPositiveOrthogonalOfTwoFlagExtendedSpacesStatement
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.OrthogonalDecompositionLocalNondegenerateStatement
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.CompletionLatticeInfOrthEqOrthPartStatement
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsNatSmulMemOfMemSpan
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.InnerPreimageEqOfLocalInnerLatticeEq
+public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.Bundle0014
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0283
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0397
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0292
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0289
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0364
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0279
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0300
 
 @[expose] public section
 
@@ -238,12 +238,12 @@ theorem dual_part : ∀ (D : D7) (X : HidaSetting D) (Y : Full X) (u u' : D.what
     simp only [orth, Submodule.mem_iInf, LinearMap.mem_ker]
   have hdef : ∀ x ∈ orth (VS D) U, (VS D).hT x x = 0 → x = 0 := fun x hx h => by
     by_contra hne
-    have := GlobalTheory.T.totallyPositive_orthogonal_of_two_flagExtendedSpaces D X Y u u' F F' w hw hG x hx hne
+    have := _root_.GlobalTheory.ComplPos.complement_totPos D X Y u u' F F' w hw hG x hx hne
     rw [h, map_zero] at this; exact lt_irrefl _ this
   have hUW : U ⊓ orth (VS D) U = ⊥ := by
     rw [eq_bot_iff]; rintro x ⟨hxU, hxW⟩
     exact (Submodule.mem_bot _).2 (hdef x hxW ((memW x).1 hxW x hxU))
-  obtain ⟨hdec, hloc0⟩ := GlobalTheory.T.orthogonal_decomposition_local_nondegenerate D U hUW
+  obtain ⟨hdec, hloc0⟩ := _root_.GlobalTheory.decomp_orth_complement D U hUW
 
   obtain ⟨b, hbs, hbspan, hli⟩ := exists_linearIndependent D.host.E
     ((Λ₀ ⊓ toO (VS D) (orth (VS D) U) : LV D) : Set (VS D).V)
@@ -341,7 +341,7 @@ theorem dual_part : ∀ (D : D7) (X : HidaSetting D) (Y : Full X) (u u' : D.what
       rw [← himg]; exact Submodule.mem_map_of_mem (Submodule.subset_span ⟨_, hvΛ i, rfl⟩)
     have hto : ∀ x ∈ U, LocFacts₂ Z.M p (h (baseChange₂ D p (i : (VS D).V))) (baseChange₂ D p x) = 0 := fun x hx => by
       rw [← hfix x hx, hun]; exact horthW _ (hvW i) x hx
-    have htK := GlobalTheory.T.completion_lattice_inf_orth_eq_orth_part D Z U hdec (hloc0 Z) Λ hΛ p _ ht hto
+    have htK := _root_.GlobalTheory.Unfold.OrthLoc.mem_localLattice_inf_orthogonal D Z U hdec (hloc0 Z) Λ hΛ p _ ht hto
     generalize h (baseChange₂ D p (i : (VS D).V)) = t at htK
     induction htK using Submodule.span_induction with
     | mem s hs =>

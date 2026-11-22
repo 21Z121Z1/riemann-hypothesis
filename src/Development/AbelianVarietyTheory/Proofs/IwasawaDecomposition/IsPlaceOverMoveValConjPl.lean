@@ -3,11 +3,10 @@ module
 public import Mathlib
 public import Formalism.SharpRestriction.LevelLetterCocycles.DataN
 public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.ExistsUniqueHcharOfFiniteOrder
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.DenseRangeUnits
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.HeckeCharacterUnramifiedAeAndExistsLevel
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.LocalIdeleSndSelf
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.UnderEqIffConjPl
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.CcSymmAlgebraMapHost
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0099
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0093
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0095
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0186
 
 @[expose] public section
 

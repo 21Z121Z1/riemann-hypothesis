@@ -3,7 +3,7 @@ module
 public import Mathlib
 public import Development.AutomorphicArithmetic.OrbitLabellings.RowDefs
 public import Development.AbelianVarietyTheory.Definitions.Jets.DepthNumbersThresholdEq
-public import Formalism.LocalToGlobal.CharacterGerms.SelfConjugateRowData
+public import Formalism.LocalToGlobal.CharacterGerms.Bundle0017
 public import Development.AutomorphicArithmetic.OrbitLabellings.RowLab
 
 @[expose] public section

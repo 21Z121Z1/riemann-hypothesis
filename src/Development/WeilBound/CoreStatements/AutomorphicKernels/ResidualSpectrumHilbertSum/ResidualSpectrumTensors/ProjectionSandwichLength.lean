@@ -1,9 +1,9 @@
 module
 
 public import Development.WeilBound.CoreStatements.AutomorphicKernels.ResidualSpectrumHilbertSum.ResidualSpectrumTensors.Development
-public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.IsDiscreteOfIsNormalised
+public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.Bundle0009
 public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.DiscreteSpectrumOfResidual
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.EqOfIsLocCompGL
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0718
 
 @[expose] public section
 

@@ -2,9 +2,9 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.Foundations.FinalTheorems
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.CupProductCoboundaryMod
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0346
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.GaloisLibrary.KummerTheory.DecGen
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.TameCochainCocycleExtensionStatement
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0368
 
 @[expose] public section
 

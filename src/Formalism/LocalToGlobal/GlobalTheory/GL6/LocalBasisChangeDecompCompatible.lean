@@ -3,9 +3,9 @@ module
 public import Formalism.LocalToGlobal.GlobalTheory.GL6.WeylLengthDiagonalUnitUniformiser
 public import Formalism.LocalToGlobal.GlobalTheory.GL6.PBwDecomp
 public import Formalism.LocalToGlobal.GlobalTheory.GL6.ValuationDetBasisChange
-public import Formalism.LocalToGlobal.GlobalTheory.GL6.PBwLcInt
+public import Formalism.LocalToGlobal.GlobalTheory.GL6.Bundle0006
 public import Formalism.SharpRestriction.GlobalSchurBounds.FiniteModelOfAdmissibleTransports
-public import Formalism.LocalToGlobal.GlobalTheory.GL6.LinearIndependentProdRenameOfCard
+public import Formalism.LocalToGlobal.GlobalTheory.GL6.Bundle0001
 
 @[expose] public section
 

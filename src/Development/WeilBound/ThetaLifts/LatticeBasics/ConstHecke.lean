@@ -2,9 +2,9 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.HeckeLEntireAndNonzeroAtOne
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsCompactLatticeGL
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0602
 public import ReciprocityTheory.NeutralLocalFields.LocalFieldComparison.ExistsPrimeAbsNormOfHasDirichletDensity
-public import GroundTheory.AutomorphicForms.CompactAbelianCharacters
+public import GroundTheory.AutomorphicForms.Bundle0008
 
 @[expose] public section
 

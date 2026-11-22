@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Formalism.LocalToGlobal.IndefiniteReal.InBlock
+public import Formalism.LocalToGlobal.IndefiniteReal.Bundle0018
 public import Formalism.LocalToGlobal.IndefiniteReal.CxPassRep
 
 @[expose] public section

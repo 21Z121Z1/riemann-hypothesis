@@ -2,12 +2,12 @@ module
 
 public import Mathlib
 public import Formalism.LocalToGlobal.KernelLattices.LateralTheory
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.MulVSubRight
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0229
 public import Formalism.LocalToGlobal.GlobalTheory.GL3.PStdChar
 public import Formalism.LocalToGlobal.GlobalTheory.GL3.PThIndep
 public import Formalism.LocalToGlobal.GlobalTheory.GL3.DeterminantNormOneOfUnitDisc
 public import Formalism.LocalToGlobal.GlobalTheory.GL3.Statement
-public import Formalism.FrobeniusOrbits.FrobeniusOrbitsProofs.CardTrivialFirstComponent
+public import Formalism.FrobeniusOrbits.FrobeniusOrbitsProofs.Bundle0002
 public import Formalism.SharpRestriction.RamificationFrobenius.TotientGaloisClasses.FrameFacts
 public import Formalism.LocalToGlobal.GlobalTheory.GL3.PLinkThU
 public import Formalism.LocalToGlobal.TorsionIntegrality.QuadraticSemicharacters.CayleyGaussianIntegrals.CayleyGaussianIntegralsCongrFact

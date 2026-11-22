@@ -1,7 +1,7 @@
 module
 
 public import ReciprocityTheory.L2DbarEstimates.IsLocalHomeomorph
-public import ReciprocityTheory.L2DbarEstimates.WeakHolomorphy.HoloContDiffAtComplex
+public import ReciprocityTheory.L2DbarEstimates.WeakHolomorphy.Bundle0006
 
 @[expose] public section
 

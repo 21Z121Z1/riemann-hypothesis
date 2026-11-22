@@ -2,9 +2,9 @@ module
 
 public import Mathlib
 public import Formalism.FrobeniusOrbits.Statement
-public import Formalism.FrobeniusOrbits.DiscrMaximalRealCyclotomic
+public import Formalism.FrobeniusOrbits.Bundle0001
 public import Formalism.FrobeniusOrbits.FrobeniusOrbitsProofs.Galois
-public import Formalism.FrobeniusOrbits.FrobeniusOrbitsProofs.FrobMulInertia
+public import Formalism.FrobeniusOrbits.FrobeniusOrbitsProofs.Bundle0001
 public import Formalism.FrobeniusOrbits.FrobeniusOrbitsProofs.CoprimeTwoPow
 
 @[expose] public section

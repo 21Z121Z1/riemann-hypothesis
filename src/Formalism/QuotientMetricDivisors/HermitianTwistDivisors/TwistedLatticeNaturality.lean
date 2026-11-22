@@ -1,16 +1,16 @@
 module
 
 public import Mathlib
-public import Formalism.QuotientMetricDivisors.DivIntoDualShift
+public import Formalism.QuotientMetricDivisors.Bundle0002
 public import Formalism.QuotientMetricDivisors.HermitianTwistDivisors.IdxChange
 public import Formalism.QuotientMetricDivisors.HermitianTwistDivisors.ImageLcv
 public import Formalism.QuotientMetricDivisors.HermitianTwistDivisors.LcvBasis
-public import Formalism.QuotientMetricDivisors.HermitianTwistDivisors.LocBasis
+public import Formalism.QuotientMetricDivisors.HermitianTwistDivisors.Bundle0001
 public import Formalism.QuotientMetricDivisors.HermitianTwistDivisors.ValBasic
-public import Formalism.QuotientMetricDivisors.HermitianTwistDivisors.ProdFormula
+public import Formalism.QuotientMetricDivisors.HermitianTwistDivisors.Bundle0002
 public import Formalism.HarderNarasimhan.HarderNarasimhanProofs.SizeMu
 public import Formalism.HarderNarasimhan.HarderNarasimhanProofs.DiscreteSpanOfLinIndep
-public import Formalism.QuotientMetricDivisors.HermitianTwistDivisors.DivIntoDual
+public import Formalism.QuotientMetricDivisors.HermitianTwistDivisors.Bundle0005
 
 @[expose] public section
 

@@ -1,16 +1,16 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.PartFixed
-public import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.IsVacFOfIsVacVec
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.DoubleMixedModelValueAtZeroEquivariant
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.JacobiToBesselFlatIntertwinesWeilAction
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.FlatSchwartzTargetUnipotentConjBesselCharacter
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ExistsRationalOrbitPointEqBesselBasePoint
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.BesselGroupActionFourierBesselBasePoint
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.FlagUnipotentRadicalSurjectsUnitriangularCharact
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.WeilDatumDescendsToWittCoreOfExists
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ExistsWeilDatumHermitianPair
+public import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.Bundle0007
+public import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.Bundle0002
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0269
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0385
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0274
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0104
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0126
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0106
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0094
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0185
 
 @[expose] public section
 
@@ -171,9 +171,9 @@ theorem evalAt_eq (ψ : AddChar (AF D.host.F) ℂ) (σ : ℕ) (J : JacL D (σ + 
     (g : GA D J.W₀) (n : GA D B.V) (hn : n ∈ flagN B.d) (h : GA D B.A) (x : Mx D B.V.rank (σ + 1)) :
       evalAt ψ J.d B.d s.vS.μ s.vS.𝓕 s.vT.μ s.vT.𝓕 (s.om (J.d.emb0 g, n * embA B.d B.o h) Ψ) x 0 =
         s.om₀ (g, B.o.emb (h, 1)) (evalAt ψ J.d B.d s.vS.μ s.vS.𝓕 s.vT.μ s.vT.𝓕 Ψ (mt B.V (n * embA B.d B.o h)⁻¹ ⬝ x) 0) := by
-  have hS := GlobalTheory.T.mixedModelFormulasWittSource_proof D ψ J.W J.W₀ B.V (σ + 1) J.d s.χV s.χW s.om om₁ s.weil hom₁ s.vS.μ s.vS.𝓕 s.vS.covol
-  have hT := GlobalTheory.T.mixedModelFormulas_wittTarget D ψ J.W₀ B.V B.V₀ σ B.d s.χV s.χW om₁ s.om₀ hom₁ s.weil₀ s.vT.μ s.vT.𝓕 s.vT.covol
-  have hV := (GlobalTheory.T.mixedCoordinates_of_thetaFunction_are_thetaFunctions D ψ s.weil.std).1 J.W J.W₀ B.V (σ + 1) J.d s.vS.μ s.vS.𝓕 s.vS.covol Ψ hΨ
+  have hS := _root_.GlobalTheory.MixSourceFormulas.mixed_source D ψ J.W J.W₀ B.V (σ + 1) J.d s.χV s.χW s.om om₁ s.weil hom₁ s.vS.μ s.vS.𝓕 s.vS.covol
+  have hT := _root_.GlobalTheory.MixTargetProof.mixedTarget D ψ J.W₀ B.V B.V₀ σ B.d s.χV s.χW om₁ s.om₀ hom₁ s.weil₀ s.vT.μ s.vT.𝓕 s.vT.covol
+  have hV := (_root_.GlobalTheory.MixValues.mixed_values D ψ s.weil.std).1 J.W J.W₀ B.V (σ + 1) J.d s.vS.μ s.vS.𝓕 s.vS.covol Ψ hΨ
   have hΨk := s.weil.om_pres (1, n * embA B.d B.o h) Ψ hΨ
   simp only [evalAt]
   change _root_.I195MixedCoordinates_a63f0715cbf334f1e52c5d7b.target B.d J.W₀ ψ s.vT.μ s.vT.𝓕

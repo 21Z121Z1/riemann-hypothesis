@@ -2,7 +2,7 @@ module
 
 public import Development.WeilBound.RepresentationTheoryGL.EisensteinSeries.SiegelEisensteinContinuation.ConvGrOf
 public import GroundTheory.AutomorphicForms.GL2.GJMatrixAdelic
-public import GroundTheory.AutomorphicForms.GL2.GodementSection
+public import GroundTheory.AutomorphicForms.GL2.Bundle0003
 
 @[expose] public section
 

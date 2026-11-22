@@ -3,9 +3,7 @@ module
 public import Mathlib
 public import Formalism.LocalRingCardinality.Params
 public import Formalism.FrobeniusOrbits.RealSubfieldLeCompositum
-public import Formalism.FrobeniusOrbits.DiscrMaximalRealCyclotomic
-public import Formalism.FrobeniusOrbits.HostOrbitsPlaces
-public import Formalism.FrobeniusOrbits.HostDiffSupport
+public import Formalism.FrobeniusOrbits.Bundle0001
 public import Formalism.FrobeniusOrbits.HostThickExists
 public import Formalism.SharpRestriction.RamificationFrobenius.TotientGaloisClasses.ConjEMemHostFIff
 

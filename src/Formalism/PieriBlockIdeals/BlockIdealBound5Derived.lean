@@ -3,10 +3,10 @@ module
 public import Mathlib
 public import Formalism.SatakeDualWeyl.Statement
 public import Formalism.RankGapBounds.TheoremALocOfLemmaA
-public import Formalism.PieriBlockIdeals.Statement
-public import Formalism.PieriBlockIdeals.FactorialValuationSum
-public import Formalism.PieriBlockIdeals.StatementLA
-public import Formalism.RankGapBounds.LargePrimeFactor
+public import Formalism.PieriBlockIdeals.Bundle0001
+public import Formalism.PieriBlockIdeals.Bundle0005
+public import Formalism.PieriBlockIdeals.Bundle0003
+public import Formalism.RankGapBounds.Bundle0001
 public import Formalism.PieriBlockIdeals.LemmaWAssembled
 
 @[expose] public section

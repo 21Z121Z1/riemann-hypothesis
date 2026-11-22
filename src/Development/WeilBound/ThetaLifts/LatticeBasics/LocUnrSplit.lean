@@ -1,10 +1,10 @@
 module
 
-public import Development.WeilBound.ThetaLifts.LatticeBasics.LocUnr
+public import Development.WeilBound.ThetaLifts.LatticeBasics.Bundle0017
 public import Development.WeilBound.ThetaLifts.LatticeBasics.LocUnrSplitA
 public import Development.WeilBound.ThetaLifts.LatticeBasics.LocUnrSplitL
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.NormSatakeLeOfUnitarySphericalGL
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.NormUniformiserEqInvAbsNorm
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0214
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0150
 
 @[expose] public section
 

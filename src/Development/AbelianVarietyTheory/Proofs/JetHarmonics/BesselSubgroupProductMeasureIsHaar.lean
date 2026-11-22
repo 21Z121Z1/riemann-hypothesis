@@ -3,10 +3,10 @@ module
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.Jets.SideFam
 public import Development.AbelianVarietyTheory.Definitions.Jets.SumIoPr
-public import Formalism.PeriodIntegrals.QuotSetU
-public import Formalism.PeriodIntegrals.QuotInv
-public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.UnitaryQuotientCompactness.UnitaryWeylCompact
-public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.EqSmulOfTwoSided
+public import Formalism.PeriodIntegrals.Bundle0011
+public import Formalism.PeriodIntegrals.Bundle0006
+public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.UnitaryQuotientCompactness.Bundle0004
+public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0047
 
 @[expose] public section
 

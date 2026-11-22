@@ -1,6 +1,6 @@
 module
 
-public import Formalism.ThetaLogCoordinates.FockResolutionOnto.StatementB
+public import Formalism.ThetaLogCoordinates.FockResolutionOnto.Bundle0001
 public import Formalism.PolynomialDimension.MultinomialDepth.PartnerM
 
 @[expose] public section

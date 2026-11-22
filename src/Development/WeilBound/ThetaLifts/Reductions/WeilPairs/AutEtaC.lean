@@ -1,6 +1,6 @@
 module
 
-public import Development.WeilBound.ThetaLifts.Reductions.WeilPairs.AutEtaB
+public import Development.WeilBound.ThetaLifts.Reductions.WeilPairs.Bundle0007
 
 @[expose] public section
 

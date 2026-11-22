@@ -1,11 +1,11 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Divisors.IsSmoothVector
-public import Development.AbelianVarietyTheory.Proofs.HeightProofs.ExistsIsArchimedeanAdeleChartOfRealChart
-public import Development.AbelianVarietyTheory.Proofs.HeightProofs.ExistsRealPointUnitaryWithComponents
-public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.ExistsInverseChart
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.LcscAdelicUnitaryGroup
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0033
+public import Development.AbelianVarietyTheory.Proofs.HeightProofs.Bundle0022
+public import Development.AbelianVarietyTheory.Proofs.HeightProofs.Bundle0023
+public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.Bundle0057
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0061
 
 @[expose] public section
 

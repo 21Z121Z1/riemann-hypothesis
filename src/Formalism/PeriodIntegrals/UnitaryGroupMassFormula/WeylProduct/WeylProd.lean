@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Formalism.PeriodIntegrals.WeylProd
+public import Formalism.PeriodIntegrals.Bundle0009
 
 @[expose] public section
 

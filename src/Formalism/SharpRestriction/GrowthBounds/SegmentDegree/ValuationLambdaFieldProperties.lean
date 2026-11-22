@@ -1,6 +1,6 @@
 module
 
-public import Formalism.SharpRestriction.GrowthBounds.SegmentDegree.ColumnWordReductionOfFour
+public import Formalism.SharpRestriction.GrowthBounds.SegmentDegree.Bundle0004
 
 @[expose] public section
 

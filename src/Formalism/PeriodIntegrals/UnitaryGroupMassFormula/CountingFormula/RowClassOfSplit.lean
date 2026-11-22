@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.CountingFormula.StabFSymmMemPerp
+public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.CountingFormula.Bundle0022
 
 @[expose] public section
 

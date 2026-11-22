@@ -1,8 +1,8 @@
 module
 
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.GaloisCochains.LocEuler
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.GaloisCochains.DecZhat
-public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.ChoiceFunction
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.GaloisCochains.Bundle0002
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.GaloisCochains.Bundle0001
+public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0006
 
 @[expose] public section
 

@@ -1,6 +1,6 @@
 module
 
-public import ReciprocityTheory.AnalyticForms.PlurisubharmonicFunctions.IsPshLocallyIntegrableStatement
+public import ReciprocityTheory.AnalyticForms.PlurisubharmonicFunctions.Bundle0001
 public import ReciprocityTheory.AnalyticForms.PlurisubharmonicFunctions.PshMollB
 
 @[expose] public section

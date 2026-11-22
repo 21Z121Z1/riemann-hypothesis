@@ -1,6 +1,6 @@
 module
 
-public import Formalism.SharpRestriction.GrowthBounds.ChartComparison.LocGoodLocJ
+public import Formalism.SharpRestriction.GrowthBounds.ChartComparison.Bundle0001
 
 @[expose] public section
 

@@ -2,59 +2,59 @@ module
 
 public import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.LocalTypeDictionary.DiscreteSpectrumResidualClassification
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ThetaEqB
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IsThetaSubSelf
-public import Development.AbelianVarietyTheory.Definitions.Divisors.DiscreteSeriesHermitianUnique
-public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.HoweDualityUnitary
-public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.HoweDualityReal
-public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisGeometry₂.HypothesesAbsDet
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0295
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0146
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0041
+public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.Bundle0011
+public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisGeometry₂.Bundle0001
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WeilRepresentationPreservesSchwartz
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsNatMulIntegralOfIsCompact
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConjugateUnitaryAdelicIsoMapHaarAndFundamentalDo
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1515
 public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ConjUInvMemGfC
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GoodSplitPlaceTranslationActsThroughWeil
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsOneParamSubgroupTransposeGramLieAt
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.EqZeroOfThetaDistributionHeisenbergTranslatesStatement
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.TransposeGramUnitarySurjectiveFinitePlaceSupportStatement
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.CompactUnitaryPreservesPolynomialFockStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsFinPartNeZero
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaLiftLeftInvariant
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1804
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0301
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0429
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0335
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.CompactUnitaryPreservesPolynomialFock
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1665
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2120
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MatchedFiniteMapsRestriction
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.WeilModelStandardCharacter
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.HermitianSkewModelGood
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsOneParameterSubgroupTransposeGramRealPlaceStatement
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IsThetaSubGAlgDOne
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.OneParamSubgroupTransposeGramUnitaryDecomposesStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsRealmapsIsomorphism
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EigenIntertwinerSkewPlaneUniqueDual
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0532
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0564
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0563
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0305
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0592
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1769
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1663
 public import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.WeilTensorModels
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.WeilActionUnitaryCompact
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsPairingStdP
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0491
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1307
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MulRealAdEqZero
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsAdmissibleFiniteFactorArchimedeanSchwartzStatement
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.WeilCompositionLines
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SeesawUnfoldingMellin
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PolynomialDatumActionOfPairStatement
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SeesawUnfoldingInnerProduct
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SeesawUnfoldingSwap
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PolMatchFiniteSetVacuum
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.OneMemKAt
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.UnramifiedPlacesInvariant
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.UnramifiedPlacesSpherical
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.LatticeStabilizersFixVacuaFixesPureTensorStatement
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsAdelicUnitaryProdLocalPointsMulLatticeStabStatement
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ArchimedeanSupportedSmulTransposeGramFiniteSubOn
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RealLinePolynomialEquivariance
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.RealPlaceHeisenbergDerivThetaTransformAlgebraicD
-public import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.LocalTypeDictionary.BernsteinUnitaryProductIrreducible
-public import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.LocalTypeDictionary.SquareAgreeStabilizerCompactWeyl
-public import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.LocalTypeDictionary.KerProjectionMaximalCompactStable
-public import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.LocalTypeDictionary.LineKernelProjectionWeyl
-public import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.LocalTypeDictionary.WeilAlgebraicSubspaceKInftyStable
-public import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.LocalTypeDictionary.WeilProjectionKInftyInvariant
-public import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.LocalTypeDictionary.ThetaLineVectorAnnihilation
-public import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.LocalTypeDictionary.FiniteAdelicStabilizerFixesKappa
-public import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.LocalTypeDictionary.WeilLieAlgebraActionByLineDerivatives
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0495
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0561
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0549
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1755
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0044
+public import Development.AbelianVarietyTheory.Definitions.Divisors.CTSmallCone
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1313
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0560
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1043
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1227
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0601
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0583
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0571
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0377
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0298
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1756
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0502
+public import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.LocalTypeDictionary.Bundle0001
+public import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.LocalTypeDictionary.Bundle0012
+public import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.LocalTypeDictionary.Bundle0041
+public import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.LocalTypeDictionary.Bundle0045
+public import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.LocalTypeDictionary.Bundle0039
+public import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.LocalTypeDictionary.Bundle0042
+public import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.LocalTypeDictionary.Bundle0058
+public import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.LocalTypeDictionary.Bundle0046
 
 @[expose] public section
 
@@ -121,7 +121,7 @@ theorem GlobalTheory.SquareAgree.kernel_maximal_theta_subspace : _root_.GlobalTh
   have inj : ∀ ΦD ∈ GlobalTheory.WeilM.schA D.host.F (Fin W.rank × Fin (W.rank + W₁.rank)),
       ∀ ΨD ∈ GlobalTheory.WeilM.schA D.host.F (Fin W.rank × Fin (W.rank + W₁.rank)), dF ΦD = dF ΨD → ΦD = ΨD := by
     intro ΦD h ΨD h' he
-    have h0 := GlobalTheory.T.eq_zero_of_thetaDistribution_heisenbergTranslates Γ.M Bs.ψ hstd (ΦD - ΨD) (sub_mem h h') (fun u => by
+    have h0 := _root_.GlobalTheory.ThetaSeparates.eq_zero_of_thetaSum_rho Γ.M Bs.ψ hstd (ΦD - ΨD) (sub_mem h h') (fun u => by
       have := congrFun (dF_sub ΦD h ΨD h') (cA u)
       rw [he, sub_self] at this
       have e2 : dF (ΦD - ΨD) (cA u) = GlobalTheory.WeilM.thetaSum D.host.F (Γ.M.co.rho Bs.ψ u (ΦD - ΨD)) := by

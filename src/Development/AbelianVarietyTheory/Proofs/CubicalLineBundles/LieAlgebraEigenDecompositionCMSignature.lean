@@ -2,10 +2,10 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.CMLattices.ExistsIsThetaDegOfIsLocalModel
-public import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.ExistsUniqueDifferentialMonHomLieBasisStatement
-public import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.ExistsLieRepresentationEigenLatticesStatement
+public import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.Bundle0050
+public import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.Bundle0051
 public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsIsLieBasisEigen
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.LieMultIffFinrank
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0042
 
 @[expose] public section
 
@@ -69,7 +69,7 @@ theorem finrank_eigenSub {K : Type} [Field K] [NumberField K] {P : Out.PolAV (Sp
     rfl
   have hl : ∀ a, ∃ f₀ : F.P₀.A ⟶ F.P₀.A, IsMonHom f₀ ∧ f₀.left ≫ F.φ = F.φ ≫ (act.act a).left ∧
       ∀ M, F.IsDiffOf F (act.act a) M → ∀ c w, IsLieComb c F.v w → IsLieComb (M c) F.v (w ≫ f₀) :=
-    fun a => (GlobalTheory.T.existsUnique_differential_monHom_lieBasis K P F P F (act.act a) (act.hom a)).2
+    fun a => (_root_.GlobalTheory.CM.DiffCoord.existsUnique_isDiffOf K P F P F (act.act a) (act.hom a)).2
   choose b hb he hlie using hl
   obtain ⟨act', hact'⟩ := exists_oAct F.fib.2.1 act b hb he
   have ha : ∀ a, (act'.act a).left ≫ F.φ = F.φ ≫ (act.act a).left := by
@@ -224,7 +224,7 @@ private theorem isSplitting_of_splits {E₁ K₁ : Type} [Field E₁] [NumberFie
 theorem eigen_decomposition : ∀ (E : Type) [Field E] [NumberField E] [IsCMField E] (H : Host E) (K : Type) [Field K] [NumberField K] (ρ : 𝓞 K) (T : PAT H (Sp (𝓞 K))) (F : GenFib T.pol) (p q : ℕ), Splits E K → HasType H T.t.act ρ p q → ρ ^ 2 = -(H.d : 𝓞 K) → (∀ τ : 𝓞 E →+* 𝓞 K, latRank K (F.eigLat T.t.act τ) = open Classical in if τ H.rt = ρ then p else q) ∧ iSupIndep (fun τ : 𝓞 E →+* 𝓞 K => Submodule.span K (F.eigLat T.t.act τ : Set (Fin F.P₀.g → K))) ∧ ⨆ τ : 𝓞 E →+* 𝓞 K, Submodule.span K (F.eigLat T.t.act τ : Set (Fin F.P₀.g → K)) = ⊤ ∧ T.g = Module.finrank ℚ E / 2 * (p + q) ∧ Nat.card {τ : 𝓞 E →+* 𝓞 K // τ H.rt = ρ} = Module.finrank ℚ E / 2 ∧ Nat.card {τ : 𝓞 E →+* 𝓞 K // τ H.rt = -ρ} = Module.finrank ℚ E / 2 := by
   intro E _ _ _ H K _ _ ρ T F p q hs hT hρ
   classical
-  obtain ⟨r, hr, hrl⟩ := GlobalTheory.T.exists_lieRepresentation_eigenLattices K T.pol F (𝓞 E) T.t.act
+  obtain ⟨r, hr, hrl⟩ := _root_.GlobalTheory.CM.GenFib.exists_lieRep_eigLat K T.pol F (𝓞 E) T.t.act
   have hfin : Finite (𝓞 E →+* 𝓞 K) :=
     Nat.finite_of_card_ne_zero (by rw [hs]; exact (Module.finrank_pos (R := ℚ) (M := E)).ne')
   haveI := Fintype.ofFinite (𝓞 E →+* 𝓞 K)

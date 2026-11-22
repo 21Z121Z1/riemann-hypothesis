@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.Degenerations.OfDerivationFnOn
-public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.Imports
+public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.Bundle0005
 
 @[expose] public section
 

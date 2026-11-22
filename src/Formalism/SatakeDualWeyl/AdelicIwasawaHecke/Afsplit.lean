@@ -1,8 +1,8 @@
 module
 
-public import Formalism.SatakeDualWeyl.StatementC
-public import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.AfsplitC
-public import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.RationalPointsLeHolds
+public import Formalism.SatakeDualWeyl.Bundle0001
+public import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Bundle0008
+public import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Bundle0002
 
 @[expose] public section
 

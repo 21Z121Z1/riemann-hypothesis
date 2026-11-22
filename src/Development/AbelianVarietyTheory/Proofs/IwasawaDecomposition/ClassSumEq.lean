@@ -1,13 +1,13 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.CenUsedOfCenReal
+public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.Bundle0045
 public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.SettingsFormsExistList
 public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.OmPinsTr
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.SideTw
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.AdmissibleTwistOfTwistingCharacter
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.KeepSideBMtVPlaces
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SideBTies
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0678
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0806
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0814
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0816
 public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.YsOfFi
 
 @[expose] public section

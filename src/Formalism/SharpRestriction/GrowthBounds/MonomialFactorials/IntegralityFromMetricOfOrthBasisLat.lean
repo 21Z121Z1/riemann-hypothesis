@@ -1,7 +1,7 @@
 module
 
 public import Formalism.SharpRestriction.GrowthBounds.MonomialFactorials.ClosedOfOrthogonalBasis
-public import Formalism.SharpRestriction.GrowthBounds.MonomialFactorials.CommCondition
+public import Formalism.SharpRestriction.GrowthBounds.MonomialFactorials.Bundle0018
 
 @[expose] public section
 

@@ -1,11 +1,11 @@
 module
 
 public import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.StringRepresentations.WeightsConj
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.EventuallyNatCastNotMem
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0309
 public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsEquivOfMapEq
 public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsIrreducibleFixed
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsSubquotSmIndCongr
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LocalLanglandsGaloisCompat
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0290
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1189
 
 @[expose] public section
 

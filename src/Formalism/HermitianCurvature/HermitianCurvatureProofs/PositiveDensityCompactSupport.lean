@@ -1,6 +1,6 @@
 module
 
-public import Formalism.HermitianCurvature.StatementJCCpt
+public import Formalism.HermitianCurvature.Bundle0008
 public import Formalism.HermitianCurvature.HermitianCurvatureProofs.PositiveDensityModerateGrowth
 
 @[expose] public section

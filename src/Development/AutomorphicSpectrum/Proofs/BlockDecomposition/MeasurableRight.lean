@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MeasurableSetBox
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.TensorIdeleAbsDetUnitaryAdelicEqOne
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AddHaarCharLeftRightMatrixMulAdeleTensor
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0699
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0253
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1743
 
 @[expose] public section
 

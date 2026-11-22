@@ -1,13 +1,8 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.SphericalCoordinates.AlgebraEquivSetup.SetupBasicHolds
-public import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.PAdicHensel.PadicUnitNormHolds
-public import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.PAdicHensel.PAuxPrime
-public import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.PAdicHensel.PArithK
-public import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.PAdicHensel.PScOf
-public import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.PAdicHensel.PRootAt
-public import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.PAdicHensel.PStdForm
+public import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.SphericalCoordinates.AlgebraEquivSetup.Bundle0020
+public import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.PAdicHensel.Bundle0005
 
 @[expose] public section
 

@@ -1,17 +1,16 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CapelliDeterminantFirstRowsMemBmW
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.DualWeylEqEvalAtOneSmulExtremalOfRowWeight
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0651
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0235
 public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.TransportedLatticeLocalizationFreeLeCoefficientS
-public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.IsBasisAtBlock
-public import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.CoefficientSpaceEqSpanOrbitExtremalVector
+public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0052
+public import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.Bundle0041
 public import Formalism.BranchSandwichDivisors.DivFromPassageAndNorm
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DualWeylLeOfHighestVectorRowOperatorStableStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LastRowTopComponentDualWeylEqMonomialMulStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DualWeylLastZeroInclusion
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FockPairingLastRowMonomialReadsCoefficientStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BranchingListCharacterProduct
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0790
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0812
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0793
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0789
 
 @[expose] public section
 
@@ -37,7 +36,7 @@ theorem hw_weight {ν : Fin n → ℕ} (hν : Antitone ν) (s : Fin n) :
 theorem capDet_dualWeyl {μ : Fin n → ℕ} (hμ : Antitone μ) (u : ℤ) {f : MvPolynomial (Fin n × Fin n) K}
     (hf : f ∈ dualWeyl K n n μ) :
     capDet (fun i j => rowE K n n i j) u f = ((∏ j : Fin n, (u + ((j : ℕ) : ℤ) - (μ j : ℤ)) : ℤ) : K) • f := by
-  have h := GlobalTheory.T.dualWeyl_le_of_highest_vector_rowOperator_stable K n μ hμ (Module.End.eigenspace (capDet (fun i j => rowE K n n i j) u)
+  have h := _root_.GlobalTheory.BrCompare.dualWeyl_le_of_rowE_stable K n μ hμ (Module.End.eigenspace (capDet (fun i j => rowE K n n i j) u)
     ((∏ j : Fin n, (u + ((j : ℕ) : ℤ) - (μ j : ℤ)) : ℤ) : K)) ?_ ?_ hf
   · exact Module.End.mem_eigenspace_iff.1 h
   · exact Module.End.mem_eigenspace_iff.2 (capDet_eigen _ u _ (fun j => (μ j : ℤ)) (hw_raise μ)
@@ -335,7 +334,7 @@ theorem fock_xi {lam sg : Fin n → ℕ} (hI : Interlace (lamZ lam) (fun i => (s
       ring)
     (by
       simp only [LinearMap.sub_apply, LinearMap.smul_apply, LinearMap.flip_apply, fockBL_apply, smul_eq_mul]
-      rw [fockB_zcomp _ _ _ (bmF_lead_WH K n _ _), zcomp_lift hl, (GlobalTheory.T.fockPairing_lastRow_monomial_reads_coefficient K n _).2]
+      rw [fockB_zcomp _ _ _ (bmF_lead_WH K n _ _), zcomp_lift hl, (_root_.GlobalTheory.BrCoefFock.fockB_zmon_emb K n _).2]
       ring) x hx
   simp only [LinearMap.sub_apply, LinearMap.smul_apply, LinearMap.flip_apply, fockBL_apply, smul_eq_mul] at h
   linear_combination h

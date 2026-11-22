@@ -2,60 +2,60 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.TwistPlacesOffPrimeQZero
-public import Development.AbelianVarietyTheory.Definitions.Divisors.DiscreteSeriesHermitianUnique
-public import Development.AbelianVarietyTheory.Statements.PlaceShiftStatements.NormSmall
-public import Development.AbelianVarietyTheory.Statements.PlaceShiftStatements.DictAt
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0041
+public import Development.AbelianVarietyTheory.Statements.PlaceShiftStatements.Bundle0002
+public import Development.AbelianVarietyTheory.Statements.PlaceShiftStatements.Bundle0003
 public import Development.AbelianVarietyTheory.Statements.HeckeThetaIntegrals.ThetaIntegralsAgree
 public import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.WeilTensorModels
-public import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.CuspAlongSmoothRows
+public import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.Bundle0015
 public import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.ToricSymbols
 public import Development.AbelianVarietyTheory.Definitions.Foundations.NormSumPairRankZeroOfCurveCoordNorm
-public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.HoweDualityReal
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BigThetaKernelIntegrable
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BigRouteKernelIntegrableOnUnitaryQuotientStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SquareThetaTripleHypothesesOfStandingStatement
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.VolIntegrableOnIff
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsRelOfLocalMatching
+public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.Bundle0011
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2930
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1661
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1487
+public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.Bundle0007
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2926
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0296
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0456
 public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.MemSBOfIsNatDatum
 public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Zact
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.RegularisedComparison
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ThetaKernelLeftInvariantRationalUnitary
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0695
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0690
 public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.TripleFrameBaseExists
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsRtensOp
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.FockAlgebraicThetaVectorsStableFiniteAdelesLieStatement
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SeesawFramesWeilEquivalence
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SeesawWeilIntertwiningValue
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SeesawWeilLocalFactorEq
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SeesawWeilArchimedeanFactor
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsArchimedeanOneParamLineTransposeGramUnitarStatement
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsRealLieOperatorThetaQuotientLineStatement
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ThetaTransformDarbouxModelLinearInjectiveStatement
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.DarbouxModelAlgebraicVectorsLeAdelicSchwartzStatement
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SeesawWeilFactorization
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0301
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0324
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0694
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0320
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0323
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0492
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0693
 public import Development.AbelianVarietyTheory.Proofs.HeightProofs.EmbeddingXiZeroNeZero
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsLineOperatorPolynomial
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.RestrictionLineOperatorSum
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ThetaEqB
-public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.HoweDualityUnitary
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ThetaTransformDarbouxModelLinearInjective
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsFinPartNeZero
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EqOfComponentTensorAdelicFunctionEq
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SeesawWeilZetaIdentity
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SeesawWeilZetaFactor
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0524
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0504
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0295
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0489
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1665
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1645
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0518
 public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SeesawWeilGlobalFactor
 public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.RouteDatumMemAlgebraicVectorsGridFrames
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.HeisenbergDerivativeMemFockAlgebraicThetaVectors
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsAlgebraicVectorThetaTransformHeisenbergDer
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsAddEquivSymplecticCoordsOrientedModel
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ThetaTransformGaussianVacuumIsFiniteDatumStatement
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.HeisenbergDerivativeRealPlacePureDatumStatement
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsHeisenbergDerivativeArchimedeanDirectionStatement
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ArchimedeanPreimageRealPlaceLineStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FockVacuaTripleProportionalToNonzero
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0304
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0691
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0300
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0561
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0537
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0364
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1308
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1691
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1558
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0482
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0509
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1601
 public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SmallRouteDatumMemAlgebraicVectorsGridFrames
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IsDatumLinear
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SignedUnitaryGroupCompat
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RealPolynomialVectorReachedByRealDatum
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0430
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0252
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1793
 public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.FockVectorProductMulPolynomials
 
 @[expose] public section
@@ -125,7 +125,7 @@ theorem thetaLift_pure {m k d : ℕ} {Y : GlobalTheory.IndefiniteRowSideFullHeck
     (h2 : ∀ᶠ v in Filter.cofinite, φ v = Mo.vac v) :
     thetaLift Mo ψ Gm e (darbAlg Mo ψ τ) (liftPure Mo pr pv s) (thO Mo ψ Gm e (GlobalTheory.IndefiniteRowSideFullHecke.WeilTensorModels.pure f φ)) =
       pr f ⊗ₜ GlobalTheory.SmallThetaModules.pureT s fun v => pv v (φ v) := by
-  obtain ⟨T, hT, hinj⟩ := GlobalTheory.T.thetaTransform_darbouxModel_linear_injective D Mo ψ Gm e hM hψ hY hZ hG
+  obtain ⟨T, hT, hinj⟩ := _root_.GlobalTheory.ThetaTransformInj.linear_injective D Mo ψ Gm e hM hψ hY hZ hG
   have hS := GlobalTheory.T.darbouxModelAlgebraicVectors_le_adelicSchwartz _ _ _ Mo ψ τ hM
   have H : ∃ q : (Matrix (Fin d) (Fin m) (AE D) → ℂ) →ₗ[ℂ] _, ∀ Ψ ∈ darbAlg Mo ψ τ,
       q (thO Mo ψ Gm e Ψ) = liftPure Mo pr pv s Ψ := by
@@ -152,20 +152,20 @@ theorem rows_coord {U U' : HSp D} {n d : ℕ} (e : Fin U.rank ⊕ Fin U'.rank �
 theorem gauss_small {F E : Type} [Field F] [NumberField F] [Field E] [NumberField E] [Algebra F E] {σ : E →ₐ[F] E} {a a' : ℕ}
     {B : GlobalTheory.IndefiniteRowSideFullHecke.WeilTensorModels.Base F E} {Γ : GlobalTheory.IndefiniteRowSideFullHecke.WeilTensorModels.Geo σ a a'} (hb : B.IsGood σ) (hgeo : Γ.IsGood B) {f₀} (hf₀ : f₀ ≠ 0)
     (hG₀ : Γ.M'.IsGauss B.ψ B.emb f₀) (g) (hg : Γ.M'.IsGauss B.ψ B.emb g) : ∃ c : ℂ, g = c • f₀ := by
-  choose A hA hAθ using fun w => GlobalTheory.T.cartanEigen_orthonormalFrame_exists _ _ _ _ _ (hgeo.hV'.sig w) (hgeo.hV'.cartan w)
-  choose C hC hCθ using fun w => GlobalTheory.T.cartanEigen_orthonormalFrame_exists _ _ _ _ _ (hgeo.hW.sig w) (hgeo.hW.cartan w)
+  choose A hA hAθ using fun w => _root_.GlobalTheory.RealLift.frameEx_holds _ _ _ _ _ (hgeo.hV'.sig w) (hgeo.hV'.cartan w)
+  choose C hC hCθ using fun w => _root_.GlobalTheory.RealLift.frameEx_holds _ _ _ _ _ (hgeo.hW.sig w) (hgeo.hW.cartan w)
   have fr : GlobalTheory.RealLift.Framed B.emb (GlobalTheory.IndefiniteRowSideFullHecke.WeilTensorModels.incM F Γ.V'.J) (GlobalTheory.IndefiniteRowSideFullHecke.WeilTensorModels.incM F Γ.W.J) 1 Complex.I A C :=
     ⟨one_mul _, fun w => by rw [GlobalTheory.GaussLine.incM_map_piInf', one_smul]; exact hA w,
       fun w => by rw [GlobalTheory.GaussLine.incM_map_piInf']; exact hC w⟩
-  obtain ⟨Φ, hΦ⟩ := GlobalTheory.T.fockToSchrodingerMapExists_of_archHeisenbergDerivatives GlobalTheory.T.archHeisenbergDerivatives_exist F E σ _ _ _ _ _ _ _ B.ψ B.emb _ _ Γ.M'.co 1 Complex.I A C hb.cm hb.std fr
+  obtain ⟨Φ, hΦ⟩ := _root_.GlobalTheory.FockMapEx.fockEx_of_derEx _root_.GlobalTheory.HeisDer.derEx F E σ _ _ _ _ _ _ _ B.ψ B.emb _ _ Γ.M'.co 1 Complex.I A C hb.cm hb.std fr
   have toD : ∀ u (f f₁ : GlobalTheory.IndefiniteRowSideFullHecke.WeilTensorModels.SInf F (Fin a' × Fin (a + a'))),
       GlobalTheory.RealLift.SD (fun t => Γ.M'.co.rho B.ψ (GlobalTheory.IndefiniteRowSideFullHecke.WeilTensorModels.realAd F t • u)) f f₁ →
       GlobalTheory.IndefiniteRowSideFullHecke.WeilTensorModels.ActsD (GlobalTheory.IndefiniteRowSideFullHecke.WeilTensorModels.evI F) (Γ.M'.heisLine B.ψ u) f f₁ :=
-    fun u f f₁ h => (GlobalTheory.T.archActionReadings_compatible F (Fin a' × Fin (a + a')) f f₁ f₁).1 _
+    fun u f f₁ h => (_root_.GlobalTheory.RealLift.actsLaws F (Fin a' × Fin (a + a')) f f₁ f₁).1 _
       (fun t => by funext x; simp [GlobalTheory.IndefiniteRowSideFullHecke.WeilTensorModels.Model.heisLine, GlobalTheory.WeilM.Darboux.rho, GlobalTheory.WeilM.schr]) h
   have line : ∀ f, Γ.M'.IsGauss B.ψ B.emb f → ∃ z : ℂ, f = z • Φ (PiTensorProduct.tprod ℂ fun _ => 1) := by
     rintro f ⟨ε, hε⟩
-    refine GlobalTheory.T.schwartzFockVacuumLineUnique_of_heisenberg_derivatives GlobalTheory.T.archHeisenbergDerivatives_exist F E σ _ _ _ _ _ _ _ B.ψ B.emb _ _ Γ.M'.co 1 Complex.I A C Φ hb.cm hb.std fr hΦ f ε
+    refine GlobalTheory.T.schwartzFockVacuumLineUnique_of_heisenberg_derivatives _root_.GlobalTheory.HeisDer.derEx F E σ _ _ _ _ _ _ _ B.ψ B.emb _ _ Γ.M'.co 1 Complex.I A C Φ hb.cm hb.std fr hΦ f ε
       (fun u u' hu hu' c hc hc' f1 f1' hf hf' => hε u u' hu hu' (fun w => ?_) f1 f1' (toD _ _ _ hf) (toD _ _ _ hf'))
     have h2 := congrArg Matrix.transpose (hCθ w)
     rw [Matrix.transpose_mul, Matrix.transpose_mul, GlobalTheory.GaussLine.Jm_transpose''] at h2

@@ -1,6 +1,6 @@
 module
 
-public import Development.EtaleCohomology.CohomologicalPurity.LeafTailNervePf
+public import Development.EtaleCohomology.CohomologicalPurity.Bundle0026
 
 @[expose] public section
 

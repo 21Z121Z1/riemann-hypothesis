@@ -2,7 +2,7 @@ module
 
 public import Formalism.SharpRestriction.GlobalSchurBounds.GL3Theta
 public import Formalism.SharpRestriction.GlobalSchurBounds.GL3Columns
-public import Formalism.SharpRestriction.GlobalSchurBounds.ShortIntervalPrimes
+public import Formalism.SharpRestriction.GlobalSchurBounds.Bundle0001
 public import Mathlib
 public import Formalism.LocalRingCardinality.RhoDetPrimeEqMuTildeMulChiPow
 public import Formalism.SharpRestriction.ParConsts

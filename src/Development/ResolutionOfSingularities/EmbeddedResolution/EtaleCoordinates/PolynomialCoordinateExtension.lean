@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.ResolutionOfSingularities.EmbeddedResolution.EtaleCoordinates.EtaleCoordinates
+public import Development.ResolutionOfSingularities.EmbeddedResolution.EtaleCoordinates.Bundle0001
 
 @[expose] public section
 

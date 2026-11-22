@@ -3,11 +3,11 @@ module
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.RegPolOfRepOf
 public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.DeRhamPotSemistable
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.PublishedTheorems.CyclicBaseChangeC
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.PublishedTheorems.Bundle0001
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.IsAlgChar
 public import Formalism.SharpRestriction.LevelLetterCocycles.SumRepresentations
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.CmSubfieldsCompositumClosedStatement
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.FiniteDecompositionGroupsCoverOpenQuotientStatement
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0231
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0236
 
 @[expose] public section
 
@@ -108,7 +108,7 @@ theorem GlobalTheory.KLift.exists_cm_lift : ∀ (Ω : Type) [Field Ω] (E : Type
   haveI : NumberField M := NumberField.of_module_finite E M
   haveI : IsAlgClosure M Ω := ⟨IsAlgClosure.isAlgClosed E, Algebra.IsAlgebraic.tower_top (K := E) _⟩
   haveI : IsGalois E M := ⟨⟩
-  have hCM : IsCMField M := (GlobalTheory.T.cm_subfields_compositum_closed Ω E).2.2 M (F₁ : Set Ω) (fun x hx φ => by
+  have hCM : IsCMField M := (_root_.GlobalTheory.CMSub.isCMField_sup_le_adjoin Ω E).2.2 M (F₁ : Set Ω) (fun x hx φ => by
       have := hre x hx φ
       rw [Complex.star_def] at this
       exact Complex.conj_eq_iff_im.1 this) rfl

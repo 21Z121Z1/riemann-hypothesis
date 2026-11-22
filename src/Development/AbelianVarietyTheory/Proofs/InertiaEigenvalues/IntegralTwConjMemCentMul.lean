@@ -1,11 +1,10 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.TwConj
-public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.FourierMatch
+public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0001
 public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.TwistedCentralizerIsNormOneTorus
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.UnitaryTwistInvolutionGLProperties
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsCommutantMulIntegralConjugate
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0070
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0189
 public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.UnitDiscriminantMatrixQuotientIsUnit
 
 @[expose] public section

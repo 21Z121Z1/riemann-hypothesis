@@ -3,26 +3,62 @@ module
 public import Mathlib
 public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.ModelSmall
 public import Development.AutomorphicSpectrum.Statements.TowerExistence.GoodTowerExistsX
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.InterNamed
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArithmeticIntersection.MultihomogeneousIdeals.ExistsUniqueStatement
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsEmbeddingPieces
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.Bundle0012
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArithmeticIntersection.MultihomogeneousIdeals.Bundle0001
+public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0036
 public import Development.AutomorphicSpectrum.Definitions.MetricPeriods.HasMultiplier
 public import Development.AutomorphicSpectrum.Definitions.DivisibilityTowers.HeckeSectionsIsotropicCommutatorPairingPower
 public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.OverLaUnique
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.InterSt
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.Bundle0006
 public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.AevalMemWeightZeroSections
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ComponentNormConstantModelsStatement
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.AllWeightSectionsCompatStatement
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.CInfGood
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.Bundle0016
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0027
+public import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.Bundle0002
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArakelovVolumes.UpperBounds.Bundle0007
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArakelovVolumes.UpperBounds.Bundle0008
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.FundamentalDomains.Bundle0004
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArakelovVolumes.ArakelovInstances.Bundle0001
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0021
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.SquareIntegrability.Bundle0005
+public import Development.AutomorphicSpectrum.Definitions.DivisibilityTowers.GoodOrigin
+public import Development.AbelianVarietyTheory.BlockTheory.ExistenceTori.UnitaryHaarVolume
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.FundamentalDomains.Bundle0010
+public import Formalism.LocalToGlobal.CMDeterminantIdeals.CMIdealValuations.Bundle0001
+public import Formalism.LocalToGlobal.CMDeterminantIdeals.CMIdealValuations.ProdMulLeDetIdeal
+public import Formalism.LocalToGlobal.CMDeterminantIdeals.CMIdealValuations.ValuationLeOfEqAlgebraMap
+public import Formalism.LocalToGlobal.CMDeterminantIdeals.CMIdealValuations.AbsNormSpanGalois
+public import Formalism.LocalToGlobal.CMDeterminantIdeals.CMIdealValuations.Bundle0002
+public import Formalism.LocalToGlobal.CMDeterminantIdeals.CMIdealValuations.ExistsEvalNeZeroOfTotalDegreeLt
+public import Formalism.LocalToGlobal.CMDeterminantIdeals.CMIdealValuations.FiniteDetAddSmulOneEqZero
+public import Formalism.LocalToGlobal.CMDeterminantIdeals.CMIdealValuations.LargeResidueExtensionLemma
+public import Formalism.LocalToGlobal.CMDeterminantIdeals.CMIdealValuations.HermitianFormGramBlockBasis
+public import Development.AbelianVarietyTheory.Definitions.Foundations.IsProbabilityMeasureMuPart
+public import Formalism.LocalToGlobal.ProjectiveLattices.PartitionExtendByZeroAntitone
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.FundamentalDomains.Bundle0003
+public import Formalism.LocalToGlobal.Divisibility.Bundle0001
+public import Development.AutomorphicSpectrum.Statements.GeometryStatements.Bundle0004
+public import Development.AutomorphicSpectrum.Statements.GeometryStatements.FlatDegree
+public import Formalism.MeanHeightDescent.CombinedAverageDegreeBound
+public import Formalism.MonomialMeanResidues.FilteredDegree
+public import ReciprocityTheory.L2DbarEstimates.PlurisubharmonicCharts.Bundle0001
+public import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.Statements
+public import Formalism.LocalToGlobal.ProjectiveLattices.CompHt
+public import Formalism.LocalToGlobal.IndefiniteForms.IndefiniteTree.RealCubicMeans.LogMeanShares.LogMeanStatements.HSClaim
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.HeightTheory.TheoremA
+public import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.Bundle0021
+public import Development.WeilBound.CoreStatements.HomogeneousNonvanishing.YReadArch
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.AllWeightSectionsCompat
 public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.TowerWeightOfZeroStatement
 public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.GoodOriginComponentSectionsStatement
 public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.GoodEmbeddingComponentSectionsStatement
 public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IntMemModelSmall
 public import Development.AbelianVarietyTheory.Proofs.GenericRegularity.ExistsGenericComponentPointsOffMeagre
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ContinuousOnReadingIntegerExponentSection
-public import Development.AbelianVarietyTheory.Proofs.TorusHaarMeasure.OfRealRpowNegLe
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1864
+public import Development.AbelianVarietyTheory.Proofs.TorusHaarMeasure.Bundle0027
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArakelovGeometry.IsMultiHomogXpow
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArakelovVolumes.ArakelovInstances.PointwiseNormInvarianceHolds
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArakelovVolumes.UpperBounds.ExtFStatementPfB
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArakelovVolumes.UpperBounds.Bundle0015
 
 @[expose] public section
 
@@ -211,7 +247,7 @@ theorem homN_eq_of_frBor {σ : c.F →+* ℂ} (U : Unf Xo c σ r) (hσ : GoodEmb
   · push_neg at hanti
     obtain ⟨τ, i, j, hij, hlt⟩ := hanti
     have hij' : i < j := lt_of_le_of_ne hij (by rintro rfl; exact lt_irrefl _ hlt)
-    have h0 := GlobalTheory.T.integerExponentSection_eq_zero_of_increasing_flag E H Dw l Xo c _ τ i j hij' hlt f hf
+    have h0 := _root_.GlobalTheory.IncrZero.secZ_eq_zero_of_lt E H Dw l Xo c _ τ i j hij' hlt f hf
     subst h0
     simp [GlobalTheory.AllWt.homN, GlobalTheory.AllWt.ptN, Data.pnorm]
 
@@ -229,7 +265,7 @@ theorem continuousOn_homN {σ : c.F →+* ℂ} (U : Unf Xo c σ r) (hU : IsUnf U
     · push_neg at hanti
       obtain ⟨τ, i, j, hij, hlt⟩ := hanti
       have hij' : i < j := lt_of_le_of_ne hij (by rintro rfl; exact lt_irrefl _ hlt)
-      rw [GlobalTheory.T.integerExponentSection_eq_zero_of_increasing_flag E H Dw l Xo c _ τ i j hij' hlt f hf, map_zero]
+      rw [_root_.GlobalTheory.IncrZero.secZ_eq_zero_of_lt E H Dw l Xo c _ τ i j hij' hlt f hf, map_zero]
       exact continuousOn_const
   have h2 : ContinuousOn (fun y => GlobalTheory.AllWt.lieFacZ Dw x (GlobalTheory.AllWt.wtOf Dw u 0) * (‖rdU U f k y‖ *
       (U.X k).nfac (GlobalTheory.AllWt.modelWt U (GlobalTheory.AllWt.wtOf Dw u 0) k) y)) (U.X k).dom :=
@@ -277,7 +313,7 @@ theorem exists_frame_of_hom [DecidableEq (CMType H)] (hG : Top.Given) (hL : Comp
         (∏ ρ, (Or.sing ρ).h (fun p => ψ (RM.y p)) ^ nOf u (some ρ)) *
             GlobalTheory.AllWt.homN (U σ) x (GlobalTheory.AllWt.wtOf Dw u 0) f ⟨k, y'⟩ =
           ‖ψ (gauge Rd u)‖ * ‖ψ (Rd.φ (evC h Z f))‖ := by
-  obtain ⟨uu, huu, hread⟩ := GlobalTheory.T.component_norm_constant_models hG E H Dw l Xo c r U h e hL x hx O β Y SS RM Sys Fx Or Fr Z Rd
+  obtain ⟨uu, huu, hread⟩ := _root_.PositivityTheory.UnitarySelfGeneration.y_read_arch hG E H Dw l Xo c r U h e hL x hx O β Y SS RM Sys Fx Or Fr Z Rd
   refine ⟨uu, huu, fun {σ} hσ k hk ψ hψ => ?_⟩
   have hz := mem_mcPts RM.y RM.arith.2.1.2.2 ψ
   have hv : ∀ t, Small.HasVal RM.y 0 (Or.𝔐.cst t) (fun p => ψ (RM.y p)) (σ t) := fun t => by
@@ -419,7 +455,7 @@ theorem vs_arch : Top.Given → ∀ (E : Type) [Field E] [NumberField E] [IsCMFi
   obtain ⟨k, y₀⟩ := z
   have hy₀ : y₀ ∈ ((U σ).X k).dom := hz.1
   have hk : Over (U σ) (e Z) k :=
-    ((GlobalTheory.T.all_weight_sections_compat E H Dw l Xo c r U h e hL 0 Z).2.2.2.2 σ hσ k y₀ hy₀).1 hz
+    ((_root_.GlobalTheory.CompanionTheory.Ar.Rec.bridge_allWt E H Dw l Xo c r U h e hL 0 Z).2.2.2.2 σ hσ k y₀ hy₀).1 hz
   have hU := hL.unf σ hσ
   have hpq : 1 ≤ Dw.p + Dw.q := by
     have h1 := T.j_pos

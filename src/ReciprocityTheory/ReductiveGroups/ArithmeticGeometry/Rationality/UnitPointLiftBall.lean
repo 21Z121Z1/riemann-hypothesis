@@ -1,6 +1,6 @@
 module
 
-public import ReciprocityTheory.SemistableReduction.ExistsTorusPointOneLeNormSum
+public import ReciprocityTheory.SemistableReduction.Bundle0007
 
 @[expose] public section
 

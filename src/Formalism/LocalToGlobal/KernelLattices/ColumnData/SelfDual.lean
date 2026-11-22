@@ -5,7 +5,7 @@ public import Formalism.LocalToGlobal.KernelLattices.ColumnData
 public import Formalism.LocalToGlobal.KernelLattices.ColumnData.HfTrace
 public import Formalism.FrobeniusOrbits.HostCorollaries
 public import Formalism.FrobeniusOrbits.FrobeniusOrbitsProofs.DiscrB
-public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.ExportFamilies
+public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0081
 
 @[expose] public section
 

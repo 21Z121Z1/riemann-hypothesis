@@ -1,12 +1,12 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsGenLab
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TorsFrameTwoLevels
-public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.UtestGeomNonempty
-public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.TorsionValuesCoordsOperatorPermute
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2372
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2221
+public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.Bundle0106
+public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.Bundle0077
 public import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.SymmetricLiftOddOrderExistsUnique
-public import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.AbelianSchemeLawsUnconditional
+public import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.Bundle0029
 
 @[expose] public section
 

@@ -1,6 +1,6 @@
 module
 
-public import Formalism.LocalToGlobal.LatticeGeometry.LevPrPrime
+public import Formalism.LocalToGlobal.LatticeGeometry.Bundle0003
 public import Mathlib
 
 @[expose] public section

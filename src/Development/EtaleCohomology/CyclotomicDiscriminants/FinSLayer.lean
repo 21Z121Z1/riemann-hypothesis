@@ -1,6 +1,6 @@
 module
 
-public import Development.EtaleCohomology.CyclotomicDiscriminants.SLayerCut
+public import Development.EtaleCohomology.CyclotomicDiscriminants.Bundle0004
 
 @[expose] public section
 

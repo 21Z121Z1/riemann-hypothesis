@@ -3,9 +3,9 @@ module
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.ThetaMod
 public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.ExistsUniqueVec
-public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.HarishChandraFinite
-public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.ExistsNormLeHeightPow
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.MemISupIsLinAtBilin
+public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.Bundle0004
+public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.Bundle0007
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0292
 public import Formalism.LocalToGlobal.IndefiniteReal.FockTheta.RealPlaceImaginaryGeneratorReEqZero
 
 @[expose] public section

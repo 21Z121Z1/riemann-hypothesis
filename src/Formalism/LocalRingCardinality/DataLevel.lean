@@ -4,7 +4,7 @@ public import Mathlib
 public import Formalism.LocalRingCardinality.Params
 public import Formalism.LocalRingCardinality.DataSpaces
 public import Formalism.LocalRingCardinality.DataKernels
-public import Formalism.SatakeDualWeyl.StatementC
+public import Formalism.SatakeDualWeyl.Bundle0001
 
 @[expose] public section
 

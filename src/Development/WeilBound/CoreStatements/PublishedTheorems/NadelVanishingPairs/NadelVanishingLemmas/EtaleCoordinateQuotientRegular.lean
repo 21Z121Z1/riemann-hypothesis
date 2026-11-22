@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.IsRegularRingOfSmooth
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EtaleCoordinateQuotientRegular
+public import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.Bundle0007
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0462
 
 @[expose] public section
 

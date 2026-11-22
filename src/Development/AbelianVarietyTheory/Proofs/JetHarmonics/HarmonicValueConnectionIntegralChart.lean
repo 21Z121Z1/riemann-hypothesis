@@ -1,18 +1,18 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Jets.ExistsSecTieFOfTies
+public import Development.AbelianVarietyTheory.Definitions.Jets.Bundle0003
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.UnifUniqSt
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.DiscreteValuationRings.TwistBCPf
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PlaceDivisors.StChartF
-public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.ThExprUniqOfChartIndep2
-public import Formalism.LocalToGlobal.ProjectiveLattices.ConjNeSelfOfCM
-public import Formalism.LocalToGlobal.ProjectiveLattices.BetaAtSymm
+public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0007
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0017
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0009
 public import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.RawChartFormalBiextensionBaseChange
 public import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.HarmonicValuesInvariantUniversalEndomorphism
-public import Development.AbelianVarietyTheory.Proofs.FormalGroupCharts.HarmonicValueCopiesGaugeIndependent
+public import Development.AbelianVarietyTheory.Proofs.FormalGroupCharts.Bundle0025
 public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.SumSupportRename
-public import Development.AbelianVarietyTheory.Proofs.FormalGroupCharts.HarmonicValueGermsIndependentOfChart
+public import Development.AbelianVarietyTheory.Proofs.FormalGroupCharts.Bundle0034
 
 @[expose] public section
 
@@ -223,14 +223,14 @@ theorem exists_chart_baseChange {S S' : Type} [CommRing S] [Algebra c.F S] [Alge
   obtain rfl : u' = fun τ i => spMap (dualMap φ.toRingHom) ≫ y.u τ i := funext fun τ => funext fun i => hu τ i
   subst hx
   let R := ChartAt.toRaw C
-  obtain ⟨e', hg, hc, -⟩ := GlobalTheory.T.exists_rawChart_frames_baseChange E H Dw l Xo S S' φ.toRingHom y.x R.d R.B.G.F R.B.A.act R.x
+  obtain ⟨e', hg, hc, -⟩ := _root_.GlobalTheory.RawFrameBC.exists_frames E H Dw l Xo S S' φ.toRingHom y.x R.d R.B.G.F R.B.A.act R.x
     (fun m => rjBC φ.toRingHom y.x R.d m 1 ≫ R.x m) (fun _ => rfl) R.e R.frame.gen
-  have hG := GlobalTheory.T.rawChart_baseChange_rig_germ_alt E H Dw l Xo S S' φ.toRingHom y.x R.d R.B.G.F R.B.A.act R.x
+  have hG := _root_.GlobalTheory.rawChart_baseChange_rig_germ E H Dw l Xo S S' φ.toRingHom y.x R.d R.B.G.F R.B.A.act R.x
     (fun m => rjBC φ.toRingHom y.x R.d m 1 ≫ R.x m) (fun _ => rfl) R.e e' R.frame.gen hg hc
     R.wP R.prim.1
   have h₁ := GlobalTheory.RawChartBC.rIsChart_baseChange E H Dw l Xo S S' φ.toRingHom y.x R.d R.B.G.F R.B.A.act R.x
       (fun m => rjBC φ.toRingHom y.x R.d m 1 ≫ R.x m) (fun _ => rfl) y.u R.uvec R.chart
-  have h₂ := GlobalTheory.T.isFrame_rawChart_baseChange E H Dw l Xo S S' φ.toRingHom y.x R.d R.B.G.F R.B.A.act R.x
+  have h₂ := _root_.GlobalTheory.isFrame_baseChange E H Dw l Xo S S' φ.toRingHom y.x R.d R.B.G.F R.B.A.act R.x
       (fun m => rjBC φ.toRingHom y.x R.d m 1 ≫ R.x m) (fun _ => rfl) R.e e' R.frame.gen hg hc
       _ _ _ _ R.frame
   refine ⟨fun m => rjBC φ.toRingHom y.x R.d m 1 ≫ R.x m, e', ⟨h₁.zero, h₁.trunc, h₁.law, h₁.act, h₁.tan, h₁.basis⟩,

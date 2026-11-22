@@ -3,9 +3,9 @@ module
 public import Mathlib
 public import Development.AutomorphicSpectrum.Statements.GeometryStatements.IsPolLatticePlane
 public import Development.WeilBound.CoreStatements.HodgeTatePoints.GeCanon
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.BtOrderValueEval
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.SemiabelianAdicTorsionOneStatement
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsUniqueTangentDualNumber
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0024
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0198
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0017
 
 @[expose] public section
 
@@ -180,7 +180,7 @@ theorem omega_open {R : Type} [CommRing R] [IsDomain R] {T : Type} [CommGroup T]
     [Module.Projective R L] (M : LieModel G x L) {j : Γ.G.left ⟶ Spec (CommRingCat.of (Γ.btOrder ⊤))}
     (hj : Γ.IsEmb (Γ.btOrder ⊤) j) (U : Γ.G.left.Opens) (hU : ∀ z, η[Γ.G].left z ∈ U) [IsOpenImmersion (U.ι ≫ j)] :
     ∃ θ : Module.Dual R L →ₗ[R] omega (Γ.btOrder ⊤), Function.Surjective θ ∧ (∀ w, θ w = 0 ↔ ∃ u, w = N • u) ∧ ∀ (f : augIdeal (Γ.btOrder ⊤)) (w : Module.Dual R L) (s : Γ(Γ.G.left, ⊤)), Γ.HasValues s (f.1.1 : T → R) → (θ w = (augIdeal (Γ.btOrder ⊤)).toCotangent f ↔ ∀ (e : L) (v : Spec (CommRingCat.of (DualNumber (R ⧸ Ideal.span {(N : R)}))) ⟶ Γ.G.left), v ≫ Γ.G.hom = Spec.map (CommRingCat.ofHom ((algebraMap (R ⧸ Ideal.span {(N : R)}) (DualNumber (R ⧸ Ideal.span {(N : R)}))).comp (Ideal.Quotient.mk _))) → v ≫ i = Spec.map (CommRingCat.ofHom (dualMap (Ideal.Quotient.mk (Ideal.span {(N : R)})))) ≫ (M.pt e).left → valAt v ⊤ le_top s = TrivSqZeroExt.inr (Ideal.Quotient.mk (Ideal.span {(N : R)}) (w e))) := by
-  obtain ⟨u, hu, hupin, huniv⟩ := GlobalTheory.T.dual_lattice_point_universal S G R x L M
+  obtain ⟨u, hu, hupin, huniv⟩ := _root_.GlobalTheory.CompanionTheory.Ar.BT.Tan.Univ.tangent_universal S G R x L M
   obtain ⟨θ, hsurj, hNθ, hlift⟩ := exists_theta_open Γ U ht hj hU u hu huniv
   have hθN : ∀ w', θ (N • w') = 0 := fun w' => by
     have := LinearMap.congr_fun hNθ w'
@@ -371,7 +371,7 @@ theorem der_unique [Finite T] [Module.Projective R L]
   constructor
   · rintro ⟨s', hs', hv'⟩
     have hss : s' = s := by
-      refine sub_eq_zero.mp (GlobalTheory.T.section_eq_zero_of_values R T Γ ⊤ (s' - s) ?_)
+      refine sub_eq_zero.mp (_root_.GlobalTheory.CompanionTheory.Ar.BT.section_eq_zero_of_val_generic R T Γ ⊤ (s' - s) ?_)
       intro t h
       rw [ValEmb.valAt_sub]
       exact sub_eq_zero.mpr ((hs' t).trans (hs t).symm)
@@ -492,9 +492,9 @@ theorem der_main : ∀ (p : ℕ) [Fact p.Prime] (C : Type) [Field C] [IsAlgClose
   haveI : IsIntegrallyClosed O := inferInstance
   haveI : Smooth G.hom := hG.smooth
   haveI : Finite (LevGrp La p n) := finite_levGrp' (Fact.out) n
-  haveI : Module.Projective O L := (GlobalTheory.T.lie_model_finite_base_change S G O y L M).2.1
-  obtain ⟨U, H, hfin, -⟩ := GlobalTheory.T.semiabelian_adic_torsion_one p C v O hv hp hO S G hG y La X
-  obtain ⟨j, hj, -⟩ := GlobalTheory.T.existsUnique_btOrder_embedding O _ (X.Γ n)
+  haveI : Module.Projective O L := (_root_.GlobalTheory.CompanionTheory.Ar.LieProj.lie_finite_projective_baseChange S G O y L M).2.1
+  obtain ⟨U, H, hfin, -⟩ := _root_.GlobalTheory.CompanionTheory.Ar.HT.tw_hopf_main p C v O hv hp hO S G hG y La X
+  obtain ⟨j, hj, -⟩ := _root_.GlobalTheory.CompanionTheory.Ar.BT.exists_unique_emb_btOrder_top O _ (X.Γ n)
   haveI := (EmbSub.openImmersion_translatesCover O _ (X.Γ n) (U n) (hfin n) j hj).1
   simpa only [TorsTower.IsDer, Der] using der_all (X.Γ n) (X.tors n) M hj (U n) (hfin n).one
 

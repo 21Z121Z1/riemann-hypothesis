@@ -1,11 +1,11 @@
 module
 
-public import Development.WeilBound.CoreStatements.AutomorphicKernels.SiegelWeilFormula.AdDecomp
+public import Development.WeilBound.CoreStatements.AutomorphicKernels.SiegelWeilFormula.Bundle0001
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SplitLocF
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0253
 public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.MemClosureHeckeSplitCongruenceOfFinPartOne
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WeilDatumTwistByHeckeCharactersTrivialBase
-public import Development.WeilBound.ThetaLifts.LatticeBasics.ConstIdele
+public import Development.WeilBound.ThetaLifts.LatticeBasics.Bundle0004
 
 @[expose] public section
 

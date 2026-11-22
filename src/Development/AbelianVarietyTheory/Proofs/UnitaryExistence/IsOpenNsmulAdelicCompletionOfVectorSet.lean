@@ -2,10 +2,9 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.ExistenceOfLattices.Hat1
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsNatMulMem
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ImportsBis
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ImportsTer
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.NsmulIntegralMemNhdsZero
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0001
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0005
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0006
 
 @[expose] public section
 

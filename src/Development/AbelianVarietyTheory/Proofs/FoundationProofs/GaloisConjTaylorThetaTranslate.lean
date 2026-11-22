@@ -2,13 +2,13 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.Foundations.NormSumPairRankZeroOfCurveCoordNorm
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.IdealPeriodLatticeOfCurveDatum
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.LatticeInvariantsPeriodPairDictionary
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.OddThetaFunctionExistenceUniqueness
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.InducedTypeThetaGenusOnePermutes
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0224
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0226
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0230
 public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.GalStarComplexMultiplicationPoints
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.GaloisTaylorSeriesCanonicalOddThetaAllStatement
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.SecondDerivSigmaProductAtZero
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.GaloisTaylorSeriesCanonicalOddThetaAll
+public import Formalism.PairingDivisors.StatementH
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0038
 
 @[expose] public section
 
@@ -185,7 +185,7 @@ lemma exists_periodPair_lamConj (h : ∀ z, z ∈ Λ ↔ z ∈ L.lattice) {M : I
 theorem galois_translate_sgStar : ∀ D : D7, gal1 D := by
   intro D cc δ hc M ρ hK h2 h3 x x' m hm hmx hA hM n
   have hlat := (GlobalTheory.CurveLattice.lattice_of_curve D (GlobalTheory.InducedType.induced_type D).1 cc δ hc).1
-  have hsg := GlobalTheory.T.galois_taylorSeries_canonicalOddTheta_all D cc δ hc M ρ hK h2 h3
+  have hsg := _root_.GlobalTheory.SigmaConj.galSg_all D cc δ hc M ρ hK h2 h3
   have hst := (GlobalTheory.ConjPoint.galStar_holds D cc δ hc M ρ hK h2 h3).2.2.2.2.2.1
   generalize lamOf D cc δ = Λ at *
   obtain ⟨L, hL⟩ := exists_periodPair hlat

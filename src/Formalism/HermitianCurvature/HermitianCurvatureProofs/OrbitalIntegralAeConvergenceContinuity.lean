@@ -2,9 +2,8 @@ module
 
 public import Formalism.HermitianCurvature.StatementB
 public import Formalism.HermitianCurvature.HermitianCurvatureProofs.IntegralZeroFrequencyInvariant
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.AdjointnessPolynomiallyBounded
-public import Formalism.FormalDegreeBessel.FinalG
-public import Formalism.FormalDegreeBessel.FinalBF
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0025
+public import Formalism.FormalDegreeBessel.Bundle0002
 
 @[expose] public section
 

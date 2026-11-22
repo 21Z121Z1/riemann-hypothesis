@@ -1,19 +1,17 @@
 module
 
 public import Mathlib
-public import Formalism.LocalToGlobal.ProjectiveLattices.TieGenRg
-public import Formalism.LocalToGlobal.ProjectiveLattices.TieGenR
-public import Formalism.LocalToGlobal.ProjectiveLattices.UnifGen
-public import Formalism.LocalToGlobal.ProjectiveLattices.ZeroWeightAlgebraicPart
-public import Formalism.LocalToGlobal.ProjectiveLattices.AxHSupA
-public import Formalism.LocalToGlobal.ProjectiveLattices.ReadProofs
-public import Formalism.LocalToGlobal.ProjectiveLattices.CurveInstSt
-public import Development.AbelianVarietyTheory.Proofs.GenericRegularity.EvaluationLawsGenericFramesAtlasHold
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0043
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0028
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0038
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0030
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0035
+public import Development.AbelianVarietyTheory.Proofs.GenericRegularity.Bundle0029
 public import Development.AbelianVarietyTheory.Proofs.GenericRegularity.ExistsGenericComponentPointsOffMeagre
 public import Development.AbelianVarietyTheory.Proofs.GenericRegularity.EvCEqZeroIffRdUEqZero
-public import Development.AbelianVarietyTheory.Proofs.GenericRegularity.CompUniqueOfReading
-public import Development.AbelianVarietyTheory.Proofs.GenericRegularity.CountableFractionRingMvPolynomial
-public import Development.AbelianVarietyTheory.Proofs.GenericRegularity.LinearDisjointAlgebraicClosure
+public import Development.AbelianVarietyTheory.Proofs.GenericRegularity.Bundle0030
+public import Development.AbelianVarietyTheory.Proofs.GenericRegularity.Bundle0031
+public import Development.AbelianVarietyTheory.Proofs.GenericRegularity.Bundle0036
 
 @[expose] public section
 

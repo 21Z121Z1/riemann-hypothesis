@@ -1,7 +1,7 @@
 module
 
 public import Formalism.GL3MeanSquares.GenusMeanAsymptotics.UnimodularClassRepresentatives.ExistsIsomFrame
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.AddMulInvMem
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0001
 
 @[expose] public section
 

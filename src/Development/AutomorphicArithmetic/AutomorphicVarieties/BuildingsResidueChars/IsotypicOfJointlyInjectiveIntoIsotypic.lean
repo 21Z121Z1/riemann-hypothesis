@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.EquivOfISupRange
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0112
 
 @[expose] public section
 

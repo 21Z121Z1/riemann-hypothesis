@@ -1,6 +1,6 @@
 module
 
-public import Formalism.LocalToGlobal.CharacterGerms.ConstantCoeffTripleSubstitution
+public import Formalism.LocalToGlobal.CharacterGerms.Bundle0041
 
 @[expose] public section
 

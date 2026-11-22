@@ -2,8 +2,8 @@ module
 
 public import Mathlib
 public import GroundTheory.PAdicHodge.BCrisNewton
-public import GroundTheory.PAdicHodge.GalSmulAlgebraMapPadicPlus
-public import GroundTheory.PAdicHodge.BCrisEigenChar
+public import GroundTheory.PAdicHodge.Bundle0007
+public import GroundTheory.PAdicHodge.Bundle0006
 public import GroundTheory.PAdicHodge.BCrisEigenMaps
 
 @[expose] public section

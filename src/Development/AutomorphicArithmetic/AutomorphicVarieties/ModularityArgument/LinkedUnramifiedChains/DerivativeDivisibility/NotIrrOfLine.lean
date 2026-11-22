@@ -3,7 +3,7 @@ module
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.LinkedUnramifiedChains.LinkedUnlOf
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.WeilGroupCharacters.LocCFTAll
 public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.ExistsUniqueHcharOfFiniteOrder
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.NormLeOneOfIsIntegral
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0362
 
 @[expose] public section
 

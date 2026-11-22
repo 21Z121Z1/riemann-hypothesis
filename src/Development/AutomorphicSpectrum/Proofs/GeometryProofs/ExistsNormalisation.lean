@@ -1,27 +1,25 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.GlueApplyOfNotInFibre
-public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsGenericFlag
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.Bundle0005
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.Bundle0004
 public import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.LatNormGrLatNeZeroOfSpan
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.IsCompletedStrictHens
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.CentreSetDominatingPointStatement
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.DominatesRegAtLocalStatement
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.IntegralClosureFiniteStatement
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.IntegralClosureChartSpanStatement
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsUniqueDominatingMapStatement
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.JoinCoordsChartIntegralStatement
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ChartPrimeExistsUniquePointStatement
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ProjectiveModelNonemptyStatement
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.RegAtChartLocalizationStatement
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.IntegralOverLocalizationScaledStatement
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LocalSubringIntegralClosureMaxStatement
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.MaximalIdealMembershipOfLocalStatement
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.PrimeMemIffNotUnitLocalizationStatement
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.RegularFunctionsTwoComponentsStatement
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ChartRingIntegralFractionStatement
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ChartRingIntegralClosureFiniteStatement
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.DominatingModelChartCompatStatement
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.Bundle0001
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0042
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0037
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0039
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0033
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0044
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0045
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0032
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0040
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0005
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0007
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0014
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0008
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0050
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0043
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0048
 
 @[expose] public section
 
@@ -46,7 +44,7 @@ theorem int_trans {o K : Type} [CommRing o] [Field K] [Algebra o K] (A B : Subal
 theorem mem_of_isIntegral_loc {o K : Type} [CommRing o] [Field K] [Algebra o K] (A : Subalgebra o K) (D : Subring K)
     (hA : ∀ a, IsIntegral A a → a ∈ A) (hAD : ∀ a ∈ A, a ∈ D)
     (hD : ∀ a ∈ D, ∃ u ∈ A, ∃ v ∈ A, v ≠ 0 ∧ v⁻¹ ∈ D ∧ a = u / v) (a : K) (ha : IsIntegral D a) : a ∈ D := by
-  obtain ⟨v, -, hv0, hvi, hi⟩ := GlobalTheory.T.integral_over_localization_scaled A D hAD hD a ha
+  obtain ⟨v, -, hv0, hvi, hi⟩ := _root_.GlobalTheory.CompanionTheory.Ggeo.ClearDenominators.exists_mul_isIntegral A D hAD hD a ha
   have e : a = (v * a) * v⁻¹ := by field_simp
   rw [e]
   exact mul_mem (hAD _ (hA _ hi)) hvi
@@ -60,7 +58,7 @@ theorem ideal_ext {o K : Type} [CommRing o] [Field K] [Algebra o K] (A : Subalge
   have key : ∀ Q₁ Q₂ : Ideal (integralClosure R K).toSubring,
       (∀ t : (integralClosure R K).toSubring, IsIntegral A (t : K) → t ∈ Q₁ → t ∈ Q₂) → Q₁ ≤ Q₂ := by
     intro Q₁ Q₂ h t ht
-    obtain ⟨v, hv, hv0, hvi, hi⟩ := GlobalTheory.T.integral_over_localization_scaled A R hAR hR t t.2
+    obtain ⟨v, hv, hv0, hvi, hi⟩ := _root_.GlobalTheory.CompanionTheory.Ggeo.ClearDenominators.exists_mul_isIntegral A R hAR hR t t.2
     have h1 := h (⟨v, hRT v (hAR v hv)⟩ * t) hi (Q₁.mul_mem_left _ ht)
     have h2 := Q₂.mul_mem_left ⟨v⁻¹, hRT _ hvi⟩ h1
     have e : (⟨v⁻¹, hRT _ hvi⟩ : (integralClosure R K).toSubring) * (⟨v, hRT v (hAR v hv)⟩ * t) = t := by
@@ -143,7 +141,7 @@ theorem normal_of_charts {o : Type} [CommRing o] {Ω' : Type} [Field Ω'] [Algeb
     (hI : ∀ c ∈ S, ∀ a : Ω', IsIntegral (chRing o y c) a → a ∈ chRing o y c) : Flat.NormalCpt M'.ξ := by
   intro p' a ha
   obtain ⟨c, hcS, hp⟩ := hS p'
-  have h := GlobalTheory.T.regAt_chart_localization o Ω' κ' y M' c p' hp
+  have h := _root_.GlobalTheory.CompanionTheory.Ar.chart_regAt_localisation o Ω' κ' y M' c p' hp
   refine mem_of_isIntegral_loc (chRing o y c) (regAt M'.ξ p') (hI c hcS) h.1 (fun a ha => ?_) a ha
   obtain ⟨u, hu, v, hv, hvu, rfl⟩ := (h.2 a).1 ha
   exact ⟨u, hu, v, hv, hvu.1, hvu.2.2, rfl⟩
@@ -164,7 +162,7 @@ variable {M Ω' M' f} in
 theorem dom_of_eq (hD : Dominates M'.ξ M.ξ f (algebraMap Ω Ω')) {p : Cpt M.ξ} {p' : Cpt M'.ξ} (h : f p'.1 = p.1) :
     (∀ a ∈ regAt M.ξ p, algebraMap Ω Ω' a ∈ regAt M'.ξ p') ∧
       ∀ a ∈ regAt M.ξ p, unitAt M'.ξ p' (algebraMap Ω Ω' a) → unitAt M.ξ p a := by
-  obtain ⟨h', hl⟩ := GlobalTheory.T.dominates_regAt_local M.X Ω M.ξ M'.X Ω' M'.ξ (algebraMap Ω Ω') f hD p'
+  obtain ⟨h', hl⟩ := _root_.GlobalTheory.CompanionTheory.Ar.dominates_localRings M.X Ω M.ξ M'.X Ω' M'.ξ (algebraMap Ω Ω') f hD p'
   have e : (⟨f p'.1, h'⟩ : Cpt M.ξ) = p := Subtype.ext h
   rwa [e] at hl
 
@@ -175,7 +173,7 @@ theorem fibre_iff (hD : Dominates M'.ξ M.ξ f (algebraMap Ω Ω'))
     (c : κ) (p : Cpt M.ξ) (hp : InChart M.ξ x c p) (p' : Cpt M'.ξ) :
     f p'.1 = p.1 ↔ InChart M'.ξ y (e c) p' ∧
       ∀ u ∈ chRing o x c, (unitAt M.ξ p u ↔ unitAt M'.ξ p' (algebraMap Ω Ω' u)) := by
-  have hr := GlobalTheory.T.regAt_chart_localization o Ω κ x M c p hp
+  have hr := _root_.GlobalTheory.CompanionTheory.Ar.chart_regAt_localisation o Ω κ x M c p hp
   constructor
   · intro h
     have hl := dom_of_eq hD h
@@ -183,7 +181,7 @@ theorem fibre_iff (hD : Dominates M'.ξ M.ξ f (algebraMap Ω Ω'))
     rw [← map_div₀]
     exact hl.1 _ (hp.2 j)
   · rintro ⟨hp', hu⟩
-    have hr' := GlobalTheory.T.regAt_chart_localization o Ω' κ' y M' (e c) p' hp'
+    have hr' := _root_.GlobalTheory.CompanionTheory.Ar.chart_regAt_localisation o Ω' κ' y M' (e c) p' hp'
     have hA : ∀ u ∈ chRing o x c, algebraMap Ω Ω' u ∈ regAt M'.ξ p' := fun u hu' =>
       hr'.1 _ (hB c hp.1 _ (isIntegral_algebraMap (x := (⟨_, map_chRing x Ω' c u hu'⟩ :
         chRing o (fun k => algebraMap Ω Ω' (x k)) c))))
@@ -202,8 +200,8 @@ theorem fibre_iff (hD : Dominates M'.ξ M.ξ f (algebraMap Ω Ω'))
           rwa [h5] at h4
         have h4 := Flat.ZUnit.mul ((hu u h1).2 h3) (Flat.ZUnit.inv hv)
         rwa [← div_eq_mul_inv] at h4
-    obtain ⟨h', hl'⟩ := GlobalTheory.T.dominates_regAt_local M.X Ω M.ξ M'.X Ω' M'.ξ (algebraMap Ω Ω') f hD p'
-    exact congrArg Subtype.val (GlobalTheory.T.regular_functions_two_components M M'.ξ (algebraMap Ω Ω') p' ⟨f p'.1, h'⟩ p hl' hl)
+    obtain ⟨h', hl'⟩ := _root_.GlobalTheory.CompanionTheory.Ar.dominates_localRings M.X Ω M.ξ M'.X Ω' M'.ξ (algebraMap Ω Ω') f hD p'
+    exact congrArg Subtype.val (_root_.GlobalTheory.CompanionTheory.Ar.Centre.Sep.eq_of_dominated M M'.ξ (algebraMap Ω Ω') p' ⟨f p'.1, h'⟩ p hl' hl)
 
 theorem chart_over (hD : Dominates M'.ξ M.ξ f (algebraMap Ω Ω'))
     (hB : ∀ c, x c ≠ 0 → ∀ a : Ω', IsIntegral (chRing o (fun k => algebraMap Ω Ω' (x k)) c) a → a ∈ chRing o y (e c))
@@ -213,13 +211,13 @@ theorem chart_over (hD : Dominates M'.ξ M.ξ f (algebraMap Ω Ω'))
     InChart M'.ξ y (e c) p' ↔ ∃ p : Cpt M.ξ, p.1 = f p'.1 ∧ InChart M.ξ x c p := by
   constructor
   · intro hp'
-    have hr' := GlobalTheory.T.regAt_chart_localization o Ω' κ' y M' (e c) p' hp'
+    have hr' := _root_.GlobalTheory.CompanionTheory.Ar.chart_regAt_localisation o Ω' κ' y M' (e c) p' hp'
     have hA : ∀ u ∈ chRing o x c, algebraMap Ω Ω' u ∈ regAt M'.ξ p' := fun u hu' =>
       hr'.1 _ (hB c hc _ (isIntegral_algebraMap (x := (⟨_, map_chRing x Ω' c u hu'⟩ :
         chRing o (fun k => algebraMap Ω Ω' (x k)) c))))
-    obtain ⟨p₀, hl, -, hch⟩ := GlobalTheory.T.centre_set_dominating_point o Ω κ x M M'.X Ω' M'.ξ (algebraMap Ω Ω') p' ⟨c, hc, hA⟩
-    obtain ⟨h', hl'⟩ := GlobalTheory.T.dominates_regAt_local M.X Ω M.ξ M'.X Ω' M'.ξ (algebraMap Ω Ω') f hD p'
-    exact ⟨p₀, congrArg Subtype.val (GlobalTheory.T.regular_functions_two_components M M'.ξ (algebraMap Ω Ω') p' p₀ ⟨f p'.1, h'⟩ hl hl'),
+    obtain ⟨p₀, hl, -, hch⟩ := _root_.GlobalTheory.CompanionTheory.Ar.Centre.exists_centre o Ω κ x M M'.X Ω' M'.ξ (algebraMap Ω Ω') p' ⟨c, hc, hA⟩
+    obtain ⟨h', hl'⟩ := _root_.GlobalTheory.CompanionTheory.Ar.dominates_localRings M.X Ω M.ξ M'.X Ω' M'.ξ (algebraMap Ω Ω') f hD p'
+    exact ⟨p₀, congrArg Subtype.val (_root_.GlobalTheory.CompanionTheory.Ar.Centre.Sep.eq_of_dominated M M'.ξ (algebraMap Ω Ω') p' p₀ ⟨f p'.1, h'⟩ hl hl'),
       hch c hc fun j => hA _ (Algebra.subset_adjoin ⟨j, rfl⟩)⟩
   · rintro ⟨p, hpf, hp⟩
     have hl := dom_of_eq hD hpf.symm
@@ -251,7 +249,7 @@ theorem normAt_of_charts (hD : Dominates M'.ξ M.ξ f (algebraMap Ω Ω'))
     (hN : Flat.NormalCpt M'.ξ) (p : Cpt M.ξ) : NormAt M'.ξ f (algebraMap Ω Ω') p := by
   obtain ⟨c, hp⟩ := M.tie.cover p
   have hc := hp.1
-  have hr := GlobalTheory.T.regAt_chart_localization o Ω κ x M c p hp
+  have hr := _root_.GlobalTheory.CompanionTheory.Ar.chart_regAt_localisation o Ω κ x M c p hp
   let i₀ := algebraMap Ω Ω'
   let A₀ := fun c => chRing o (fun k => algebraMap Ω Ω' (x k)) c
   have hB1 : ∀ c, x c ≠ 0 → ∀ a : Ω', IsIntegral (A₀ c) a → a ∈ chRing o y (e c) := fun c hc a => (hB c hc a).2
@@ -271,11 +269,11 @@ theorem normAt_of_charts (hD : Dominates M'.ξ M.ξ f (algebraMap Ω Ω'))
     intro p' hf
     have hl := dom_of_eq hD hf
     have hch := ((fibre_iff M Ω' M' f e hD hB1 hC c p hp p').1 hf).1
-    have hr' := GlobalTheory.T.regAt_chart_localization o Ω' κ' y M' (e c) p' hch
+    have hr' := _root_.GlobalTheory.CompanionTheory.Ar.chart_regAt_localisation o Ω' κ' y M' (e c) p' hch
     have hRD : (regAt M.ξ p).map i₀ ≤ regAt M'.ξ p' := by
       rintro _ ⟨a, ha, rfl⟩
       exact hl.1 a ha
-    refine GlobalTheory.T.local_subring_integral_closure_max ((regAt M.ξ p).map i₀) (regAt M'.ξ p') (chRing o y (e c)).toSubring hRD ?_ ?_ ?_ ?_
+    refine _root_.GlobalTheory.CompanionTheory.Domination.eq_localisation_integralClosure ((regAt M.ξ p).map i₀) (regAt M'.ξ p') (chRing o y (e c)).toSubring hRD ?_ ?_ ?_ ?_
     · rintro _ ⟨a, ha, rfl⟩ h0 hinv
       have hu : unitAt M'.ξ p' (i₀ a) := ⟨h0, hl.1 a ha, hinv⟩
       exact ⟨a⁻¹, (hl.2 a ha hu).2.2, map_inv₀ _ _⟩
@@ -297,8 +295,8 @@ theorem normAt_of_charts (hD : Dominates M'.ξ M.ξ f (algebraMap Ω Ω'))
         map_mul' := fun _ _ => rfl
         map_zero' := rfl
         map_add' := fun _ _ => rfl }
-    obtain ⟨p', ⟨hch, hmem⟩, huniq⟩ := GlobalTheory.T.chart_prime_existsUnique_point o Ω' κ' y M' (e c) (hy c hc) (P.comap ι) inferInstance
-    have hr' := GlobalTheory.T.regAt_chart_localization o Ω' κ' y M' (e c) p' hch
+    obtain ⟨p', ⟨hch, hmem⟩, huniq⟩ := _root_.GlobalTheory.CompanionTheory.Ar.chart_prime_point o Ω' κ' y M' (e c) (hy c hc) (P.comap ι) inferInstance
+    have hr' := _root_.GlobalTheory.CompanionTheory.Ar.chart_regAt_localisation o Ω' κ' y M' (e c) p' hch
     have hf : f p'.1 = p.1 := by
       refine (fibre_iff M Ω' M' f e hD hB1 hC c p hp p').2 ⟨hch, fun u hu => ?_⟩
       have hub : i₀ u ∈ chRing o y (e c) := (hB c hc _).2
@@ -324,9 +322,9 @@ theorem normAt_of_charts (hD : Dominates M'.ξ M.ξ f (algebraMap Ω Ω'))
     refine ⟨p', ⟨hf, hD'⟩, ?_⟩
     rintro p'' ⟨hf'', hD''⟩
     have hch'' := ((fibre_iff M Ω' M' f e hD hB1 hC c p hp p'').1 hf'').1
-    have hr'' := GlobalTheory.T.regAt_chart_localization o Ω' κ' y M' (e c) p'' hch''
+    have hr'' := _root_.GlobalTheory.CompanionTheory.Ar.chart_regAt_localisation o Ω' κ' y M' (e c) p'' hch''
     refine huniq p'' ⟨hch'', fun u => ?_⟩
-    have h := GlobalTheory.T.prime_mem_iff_not_unit_localization _ P inferInstance (ι u)
+    have h := _root_.GlobalTheory.CompanionTheory.LocalSubringUnits.mem_prime_iff_not_inv_mem _ P inferInstance (ι u)
     rw [← hD''] at h
     refine h.trans (not_congr ⟨fun h => ⟨h.1, hr''.1 _ u.2, h.2⟩, fun h => ⟨h.1, h.2.2⟩⟩)
 
@@ -337,7 +335,7 @@ theorem exists_normalisation : ∀ (o : Type) [CommRing o] [Algebra.EssFiniteTyp
   have hinj : ∀ c, x c ≠ 0 → algebraMap Ω Ω' (x c) ≠ 0 := fun c hc => by
     simpa using hc
   have hinj' : ∀ c, algebraMap Ω Ω' (x c) ≠ 0 → x c ≠ 0 := fun c hc h => hc (by simp [h])
-  obtain ⟨d, n, z, hz1, hz2⟩ := GlobalTheory.T.integral_closure_chart_span o Ω' κ (fun k => algebraMap Ω Ω' (x k))
+  obtain ⟨d, n, z, hz1, hz2⟩ := _root_.GlobalTheory.CompanionTheory.Ar.IntClGens.exists_twisted_gens o Ω' κ (fun k => algebraMap Ω Ω' (x k))
     (fun c hc => GlobalTheory.T.chart_ring_integral_closure_finite M Ω' c (hinj' c hc))
   set x' : κ → Ω' := fun k => algebraMap Ω Ω' (x k) with hx'
   set y := joinCo (RingHom.id Ω') x' z with hy
@@ -347,11 +345,11 @@ theorem exists_normalisation : ∀ (o : Type) [CommRing o] [Algebra.EssFiniteTyp
     exact mul_ne_zero (hinj c hc) (pow_ne_zero _ (hinj c hc))
   have hJ := fun c (hc : x c ≠ 0) a (ha : IsIntegral (chRing o x' c) a) =>
     join_chart (o := o) x' d n z hz1 hz2 c (hinj c hc) a ha
-  obtain ⟨M'⟩ : Nonempty (PModel o y) := GlobalTheory.T.projective_model_nonempty o Ω' (κ × (κ ⊕ Fin n)) y
+  obtain ⟨M'⟩ : Nonempty (PModel o y) := _root_.GlobalTheory.CompanionTheory.Ar.nonempty_pModel_of_chart o Ω' (κ × (κ ⊕ Fin n)) y
     ⟨(c₀, Sum.inl c₀), hyne c₀ hc₀, fun a => by
-      obtain ⟨b, v, hb, hv, hv0, rfl⟩ := GlobalTheory.T.chart_ring_integral_fraction M Ω' c₀ hc₀ a
+      obtain ⟨b, v, hb, hv, hv0, rfl⟩ := _root_.GlobalTheory.CompanionTheory.Ar.FracExt.exists_integral_div M Ω' c₀ hc₀ a
       exact ⟨b, hJ c₀ hc₀ b hb, v, hJ c₀ hc₀ v (isIntegral_algebraMap (x := (⟨v, hv⟩ : chRing o x' c₀))), rfl⟩⟩
-  have hT := GlobalTheory.T.join_coords_chart_integral o Ω' κ x' d n z M' hz1 hz2
+  have hT := _root_.GlobalTheory.CompanionTheory.Ar.ChNorm.join_chart_normalisation o Ω' κ x' d n z M' hz1 hz2
   have hB : ∀ c, x c ≠ 0 → ∀ a : Ω', a ∈ chRing o y (c, Sum.inl c) ↔ IsIntegral (chRing o x' c) a :=
     fun c hc => (hT c (hinj c hc)).1
   have hC : ∀ c, x c ≠ 0 → ∀ p' : Cpt M'.ξ, (∀ j, x' j / x' c ∈ regAt M'.ξ p') → InChart M'.ξ y (c, Sum.inl c) p' :=
@@ -368,9 +366,9 @@ theorem exists_normalisation : ∀ (o : Type) [CommRing o] [Algebra.EssFiniteTyp
   have hreg : ∀ (c : κ) (p' : Cpt M'.ξ), InChart M'.ξ y (c, Sum.inl c) p' → ∀ a ∈ chRing o x c, algebraMap Ω Ω' a ∈ regAt M'.ξ p' := by
     intro c p' hp a ha
     have hc : x c ≠ 0 := hinj' c (left_ne_zero_of_mul hp.1)
-    exact (GlobalTheory.T.regAt_chart_localization o Ω' _ y M' _ p' hp).1 _ ((hB c hc _).2
+    exact (_root_.GlobalTheory.CompanionTheory.Ar.chart_regAt_localisation o Ω' _ y M' _ p' hp).1 _ ((hB c hc _).2
       (isIntegral_algebraMap (x := (⟨_, map_chRing x Ω' c a ha⟩ : chRing o x' c))))
-  obtain ⟨f, hf, -⟩ := GlobalTheory.T.existsUnique_dominating_map o Ω κ x M o Ω' _ y M' (algebraMap Ω Ω') fun p' => by
+  obtain ⟨f, hf, -⟩ := _root_.GlobalTheory.CompanionTheory.Ar.ChMorph.existsUnique_dominates o Ω κ x M o Ω' _ y M' (algebraMap Ω Ω') fun p' => by
     obtain ⟨c, hc, hp⟩ := hcov p'
     exact ⟨c, hc, hreg c p' hp⟩
   have hN : Flat.NormalCpt M'.ξ := by

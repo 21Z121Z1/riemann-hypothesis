@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CoordComp
-public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.IsProjBySmoothIsProperGeometricallyIntegral
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0738
+public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0111
 
 @[expose] public section
 

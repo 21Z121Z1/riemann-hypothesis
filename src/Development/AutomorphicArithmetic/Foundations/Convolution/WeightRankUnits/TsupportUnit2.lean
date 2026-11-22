@@ -3,8 +3,8 @@ module
 public import Development.AutomorphicArithmetic.Foundations.Convolution.WeightRankUnits.DeltaProdAlt
 public import Development.AutomorphicArithmetic.Foundations.Convolution.OrbitNormCounting.NormCount
 public import Development.AutomorphicArithmetic.Foundations.Convolution.OrbitNormCounting.PolFin
-public import Development.AutomorphicArithmetic.Foundations.Convolution.OrbitNormCounting.OrbZero
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LocalTwistContinuousInvolutionIntegralProperties
+public import Development.AutomorphicArithmetic.Foundations.Convolution.OrbitNormCounting.Bundle0001
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1310
 
 @[expose] public section
 

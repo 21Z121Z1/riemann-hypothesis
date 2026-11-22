@@ -2,8 +2,8 @@ module
 
 public import Mathlib
 public import Formalism.SatakeDualWeyl.KpqSubgroupCompact
-public import Formalism.SatakeDualWeyl.StatementF
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ImportsTail
+public import Formalism.SatakeDualWeyl.Bundle0001
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0030
 
 @[expose] public section
 

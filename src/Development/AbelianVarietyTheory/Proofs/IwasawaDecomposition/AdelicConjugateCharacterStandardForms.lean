@@ -2,11 +2,11 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.MemSmulLk
-public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.MemStabGLAdeleIff
-public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.AdelicLatticeCompletionLocalGlobal
-public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.EmbHInjective
-public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.MulVecMemLocLatIffOfFrame
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsMulEqInteger
+public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0042
+public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0076
+public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0077
+public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0061
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0006
 public import Formalism.LocalToGlobal.GlobalTheory.BlockActions.FiniteAdeleRingNontrivial
 
 @[expose] public section

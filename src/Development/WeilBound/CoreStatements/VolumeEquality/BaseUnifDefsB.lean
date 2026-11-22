@@ -1,6 +1,6 @@
 module
 
-public import Development.WeilBound.CoreStatements.VolumeEquality.BaseUnifDefs
+public import Development.WeilBound.CoreStatements.VolumeEquality.Bundle0003
 
 @[expose] public section
 

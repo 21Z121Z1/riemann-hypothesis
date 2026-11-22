@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.StatementsGenericProjClosureDivisor
-public import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.StatementsTwistedDualGensExpress
-public import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.Cartier
+public import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.Bundle0040
+public import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.Bundle0041
+public import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.Bundle0002
 
 @[expose] public section
 

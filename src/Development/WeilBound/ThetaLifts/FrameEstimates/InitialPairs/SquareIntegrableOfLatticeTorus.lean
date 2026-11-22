@@ -2,9 +2,9 @@ module
 
 public import Development.WeilBound.ThetaLifts.FrameEstimates.InitialPairs.SquareIntegrableIntegralHolds
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsNatMulIntegralOfIsCompact
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsLocallyConstantFinprodSchwartzBruhatFiniteAdel
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HasCompactSupportFinprodSchwartzBruhatFiniteAdel
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsFactorPureTensorComponentAtPlace
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1530
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1527
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1519
 
 @[expose] public section
 

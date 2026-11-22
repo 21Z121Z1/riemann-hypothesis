@@ -1,10 +1,10 @@
 module
 
 public import Mathlib
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PKleimanNefF
-public import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.PModelGenericPoint
+public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0063
+public import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.Bundle0050
 public import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.IsFieldSubalgebraSelf
-public import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.ImportsTailRest
+public import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.Bundle0044
 
 @[expose] public section
 

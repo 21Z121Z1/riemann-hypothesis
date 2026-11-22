@@ -1,6 +1,6 @@
 module
 
-public import Formalism.SharpRestriction.GrowthBounds.BinomialRatio.CountDefs
+public import Formalism.SharpRestriction.GrowthBounds.BinomialRatio.Bundle0004
 
 @[expose] public section
 

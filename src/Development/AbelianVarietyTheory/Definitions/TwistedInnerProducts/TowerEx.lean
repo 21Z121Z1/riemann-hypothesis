@@ -1,10 +1,9 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.OffQOfSizeRows
-public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.KerBF
-public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.QuasiOfFam
-public import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.ConjugateAdjointDagger
+public import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.Bundle0005
+public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.Bundle0009
+public import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.Bundle0017
 
 @[expose] public section
 

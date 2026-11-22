@@ -1,6 +1,6 @@
 module
 
-public import Formalism.HermitianCurvature.StatementW
+public import Formalism.HermitianCurvature.Bundle0003
 
 @[expose] public section
 

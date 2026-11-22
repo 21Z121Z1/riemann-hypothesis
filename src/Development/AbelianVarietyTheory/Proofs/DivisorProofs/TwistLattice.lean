@@ -1,12 +1,11 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Divisors.MemPass
-public import Development.AbelianVarietyTheory.Definitions.Divisors.IsTrSelf
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0015
 public import Development.AbelianVarietyTheory.Definitions.Divisors.ZetaActRefl
-public import Development.AbelianVarietyTheory.Definitions.Divisors.TorsTransport
-public import ReciprocityTheory.ReductiveGroups.UnramifiedIntegrals.ModDefs
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsLatticeDecompositionOfIdeleApprox
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0014
+public import ReciprocityTheory.ReductiveGroups.UnramifiedIntegrals.Bundle0002
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2160
 
 @[expose] public section
 

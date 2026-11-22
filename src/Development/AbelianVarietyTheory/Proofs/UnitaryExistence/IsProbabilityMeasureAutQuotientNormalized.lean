@@ -1,10 +1,10 @@
 module
 
 public import Mathlib
-public import Formalism.LocalToGlobal.ProjectiveLattices.NormsFree
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.FundamentalDomains.OrthonormalFlagTranslateHolds
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.FundamentalDomains.FourierCoefficientDomain
-public import Development.AbelianVarietyTheory.Proofs.TorusHaarMeasure.MajLactRmul
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0013
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.FundamentalDomains.Bundle0019
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.FundamentalDomains.Bundle0014
+public import Development.AbelianVarietyTheory.Proofs.TorusHaarMeasure.Bundle0018
 public import Development.AbelianVarietyTheory.BlockTheory.ExistenceTori.UnitaryHaarVolume
 
 @[expose] public section

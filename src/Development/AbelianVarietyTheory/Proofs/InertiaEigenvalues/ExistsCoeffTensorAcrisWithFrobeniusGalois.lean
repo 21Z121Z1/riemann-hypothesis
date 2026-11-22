@@ -2,20 +2,19 @@ module
 
 public import Mathlib
 public import Formalism.LocalRingCardinality.AdicCompletionLocal.LocTied
-public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.ConvZero
+public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0005
 public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.AcrisTorsionFreeComplete
 public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.PowMulMemLatIff
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.GoodOfComplete
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsFinExt
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.MemFilPIffEvPt
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.BoundedAndEventuallySubMemLat
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.MemRangeOfIsIntegral
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0255
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0233
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0259
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0267
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0282
 public import Development.AbelianVarietyTheory.CrystallinePeriods.RingIface
-public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.IsCrisP
-public import Development.AbelianVarietyTheory.CrystallinePeriods.CrisMaps
+public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.Bundle0002
+public import Development.AbelianVarietyTheory.CrystallinePeriods.Bundle0001
 public import Development.AbelianVarietyTheory.CrystallinePeriods.CrisMapsLoc
 public import Development.AbelianVarietyTheory.CrystallinePeriods.CrisIncl
-public import Development.AbelianVarietyTheory.CrystallinePeriods.RingBasics
 
 @[expose] public section
 

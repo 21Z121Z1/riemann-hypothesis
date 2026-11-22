@@ -1,9 +1,8 @@
 module
 
-public import Formalism.WachLatticeTwists.RamifiedBlockRings.RamifiedBlockProofs.CMemPolyT
-public import Formalism.WachLatticeTwists.RamifiedBlockRings.RamifiedBlockProofs.Normal
-public import Formalism.WachLatticeTwists.RamifiedBlockRings.RamifiedBlockProofs.BurnsideMat
-public import Formalism.CharacterColumnKernels.StatOntoLattice
+public import Formalism.WachLatticeTwists.RamifiedBlockRings.RamifiedBlockProofs.Bundle0004
+public import Formalism.WachLatticeTwists.RamifiedBlockRings.RamifiedBlockProofs.Bundle0003
+public import Formalism.CharacterColumnKernels.Bundle0002
 
 @[expose] public section
 

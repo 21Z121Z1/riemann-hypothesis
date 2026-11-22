@@ -2,14 +2,14 @@ module
 
 public import Mathlib
 public import Formalism.LocalToGlobal.IndefiniteReal.ScalarOnPartsFull
-public import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.GlintPrincRelIndexNeZero
+public import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Bundle0001
 public import Development.AbelianVarietyTheory.Definitions.Foundations.ContinuousOfMemCcSmooth
 public import Development.AbelianVarietyTheory.Definitions.Foundations.IsRestrictedProdFinAwayIffIsProdMeasureFinAway
 public import Development.AbelianVarietyTheory.Definitions.Foundations.GLintEqKOAndPrincEqKOne
 public import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.IsSubquotientDetRepParInd
 public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsDualFamilyOfIsLattice
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.LintegralFintypeProdEqProd
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsArchEquivEq
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0304
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0291
 public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IwahoriProjSurjective
 
 @[expose] public section

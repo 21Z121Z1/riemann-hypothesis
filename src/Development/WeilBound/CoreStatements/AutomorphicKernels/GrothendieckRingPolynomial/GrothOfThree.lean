@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Development.WeilBound.CoreStatements.AutomorphicKernels.GrothendieckRingPolynomial.GrothOfCls
-public import Development.WeilBound.CoreStatements.AutomorphicKernels.GrothendieckRingPolynomial.PeelGood
+public import Development.WeilBound.CoreStatements.AutomorphicKernels.GrothendieckRingPolynomial.Bundle0004
 
 @[expose] public section
 

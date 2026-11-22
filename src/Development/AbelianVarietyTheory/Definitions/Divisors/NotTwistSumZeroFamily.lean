@@ -1,11 +1,11 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Divisors.TwistAtEach
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsStalkZeta
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SumIOfSumFMul
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UniformisedMemberDividingThetaConstantNeZero
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsYy
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0072
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2441
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2566
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2577
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2529
 
 @[expose] public section
 

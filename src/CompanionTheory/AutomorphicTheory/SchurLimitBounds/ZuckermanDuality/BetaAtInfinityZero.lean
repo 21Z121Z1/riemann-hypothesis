@@ -1,9 +1,9 @@
 module
 
-public import CompanionTheory.AutomorphicTheory.SchurLimitBounds.ZuckermanDuality.Letter
+public import CompanionTheory.AutomorphicTheory.SchurLimitBounds.ZuckermanDuality.Bundle0001
 public import Formalism.HermitianCurvature.HermitianCurvatureProofs.RegularisedPairingViaPhase
 public import Formalism.HermitianCurvature.HermitianCurvatureProofs.NormDiagonalEntryDilationGeneratorLeOne
-public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.CapelliEigenvalues.HeckeMultiplication
+public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.CapelliEigenvalues.Bundle0001
 
 @[expose] public section
 

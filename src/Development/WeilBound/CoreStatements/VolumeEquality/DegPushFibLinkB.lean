@@ -1,6 +1,6 @@
 module
 
-public import Development.WeilBound.CoreStatements.VolumeEquality.DegPushFibLinkA
+public import Development.WeilBound.CoreStatements.VolumeEquality.Bundle0010
 
 @[expose] public section
 

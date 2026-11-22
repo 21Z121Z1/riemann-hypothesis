@@ -1,10 +1,9 @@
 module
 
-public import Formalism.HermitianCurvature.StatementQr
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.LemmaDDeterminantIdentity
+public import Formalism.HermitianCurvature.Bundle0007
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0047
 public import Formalism.HermitianCurvature.HermitianCurvatureProofs.ChainRecursionFromSingleDescent
-public import Formalism.RealPlaceAnalysis.RealPlaceTaylor.QuantumDetHighestWeightHolds
-public import Formalism.RealPlaceAnalysis.RealPlaceTaylor.ShiftedGeneratorEqIteSmulAdd
+public import Formalism.RealPlaceAnalysis.RealPlaceTaylor.Bundle0006
 public import Formalism.RealPlaceAnalysis.RealPlaceTaylor.GeneratorCommutatorQuantumDet
 
 @[expose] public section

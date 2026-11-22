@@ -5,8 +5,8 @@ public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership
 public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.MemPrinCongOfSm
 public import Formalism.LocalToGlobal.Columns.RecLevelLoc
 public import Formalism.LocalToGlobal.GroupLattices.LevelCharts.SplitStab
-public import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.SplitIntLoc
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.MemIdSOfResSEqZero
+public import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.Bundle0006
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0109
 
 @[expose] public section
 

@@ -1,6 +1,6 @@
 module
 
-public import Formalism.LandauZeroFreeBounds.ExceptionalZeroBounds.ExpGainFromZeroFreeRegion
+public import Formalism.LandauZeroFreeBounds.ExceptionalZeroBounds.Bundle0013
 
 @[expose] public section
 

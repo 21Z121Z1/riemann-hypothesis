@@ -1,8 +1,7 @@
 module
 
 public import Mathlib
-public import Formalism.PeriodIntegrals.WwInjective
-public import Formalism.PeriodIntegrals.WwCauchyBinet
+public import Formalism.PeriodIntegrals.Bundle0009
 public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.GramInjectivity.GramVanish
 
 @[expose] public section

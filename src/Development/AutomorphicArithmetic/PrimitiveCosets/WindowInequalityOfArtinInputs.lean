@@ -1,7 +1,6 @@
 module
 
-public import Development.AutomorphicArithmetic.PrimitiveCosets.CoreGm
-public import Development.AutomorphicArithmetic.PrimitiveCosets.Imports
+public import Development.AutomorphicArithmetic.PrimitiveCosets.Bundle0004
 public import Formalism.SharpRestriction.RamificationFrobenius.TotientGaloisClasses.TopWin
 
 @[expose] public section

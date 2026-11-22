@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.RealDescent.RealLeviDescent.HighestVectorsRegularLine
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.WtRInjective
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0384
 public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.DominantEqOfNormGe
 
 @[expose] public section

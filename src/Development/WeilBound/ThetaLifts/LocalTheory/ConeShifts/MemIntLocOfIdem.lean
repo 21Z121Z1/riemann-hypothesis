@@ -1,10 +1,10 @@
 module
 
 public import Development.WeilBound.ThetaLifts.LocalTheory.ConeShifts.ExistsPowIdem
-public import Development.WeilBound.CoreStatements.CompactAveragingSplitting.EigenvectorLifting.Vaceigen
-public import Development.WeilBound.CoreStatements.CompactAveragingSplitting.EigenvectorLifting.Inertof
-public import Development.WeilBound.CoreStatements.LocalThetaKernels.IwasAd
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.IdeleCharacterEqOneIntegralUnitsUnramifiedAdelic
+public import Development.WeilBound.CoreStatements.CompactAveragingSplitting.EigenvectorLifting.Bundle0005
+public import Development.WeilBound.CoreStatements.CompactAveragingSplitting.EigenvectorLifting.Bundle0002
+public import Development.WeilBound.CoreStatements.LocalThetaKernels.Bundle0001
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0150
 public import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Tjcosets
 
 @[expose] public section

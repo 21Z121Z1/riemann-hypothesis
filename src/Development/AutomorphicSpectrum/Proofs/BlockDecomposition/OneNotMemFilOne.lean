@@ -1,11 +1,11 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.HeckeLAdicCharacterDeRham
+public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.Bundle0006
 public import Development.WeilBound.CoreStatements.TemperedRepresentationTheory.DeRhamJacobian.IsdRJ
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.EventuallyClosedOfDictClosed
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0213
 public import Development.WeilBound.CoreStatements.CrystallinePeriodRings.LocTied6
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IsUnitDetEmbMat
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0228
 
 @[expose] public section
 

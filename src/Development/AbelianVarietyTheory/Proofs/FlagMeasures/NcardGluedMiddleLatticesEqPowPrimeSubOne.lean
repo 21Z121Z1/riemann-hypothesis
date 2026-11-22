@@ -1,13 +1,13 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.RowMinor
+public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.Bundle0012
 public import Formalism.SharpRestriction.CuspSpanNormBounds.CongruenceAtSplitFrobeniusHolds
 public import Formalism.SharpRestriction.CuspSpanNormBounds.AbsoluteAmplitudeSecondOfSource
 public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.CyclicDiscriminantLatticesFormOneGenus
 public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.MemOfPerpPerp
 public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsForallHomEq
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsUniquePlace
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0199
 
 @[expose] public section
 

@@ -3,8 +3,8 @@ module
 public import Formalism.LocalToGlobal.KernelLattices.ColumnData.ColumnDataEquations.Reduction
 public import Formalism.LocalToGlobal.TorsionIntegrality.QuadraticSemicharacters.QuadraticSemicharacterIdentityReformulated2
 public import Formalism.LocalToGlobal.KernelLattices.ColumnData.DetIdealsKernelNormOne
-public import Formalism.LocalRingCardinality.SpanPowerMembership.RelDet
-public import Formalism.LocalToGlobal.KernelLattices.ColumnData.StdLat
+public import Formalism.LocalRingCardinality.SpanPowerMembership.Bundle0003
+public import Formalism.LocalToGlobal.KernelLattices.ColumnData.Bundle0001
 
 @[expose] public section
 

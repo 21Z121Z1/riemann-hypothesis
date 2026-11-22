@@ -1,11 +1,12 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsPreFamilyOfLatticeFamilyTwo
-public import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.StatementsFlagIndependence
-public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.LatticeBaseChangeLargerRingHoldsStatement
-public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.TeichmullerLiftOfEmbedding
-public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.MemSpanOverOfMem
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.Bundle0011
+public import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.Bundle0017
+public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.Bundle0019
+public import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.Bundle0002
+public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.Bundle0024
+public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.Bundle0009
 
 @[expose] public section
 
@@ -291,7 +292,7 @@ theorem base_bc (D : LieLatticeData Ω F n Sg r s) (R : Subalgebra O Ω) (R' : S
       split_ifs
       · exact zero_mem _
       · exact one_mem _
-  have hb' := (GlobalTheory.T.lattice_base_change_larger_ring_holds D R p (algebraMap O Ω w) _ hchar hb Ω' (R'.restrictScalars O) hR).2
+  have hb' := (_root_.GlobalTheory.CompanionTheory.Ar.Num.lattice_base_change_larger_ring D R p (algebraMap O Ω w) _ hchar hb Ω' (R'.restrictScalars O) hR).2
   have hw : algebraMap Ω Ω' (algebraMap O Ω w) = algebraMap O' Ω' (algebraMap O O' w) := by
     rw [← IsScalarTower.algebraMap_apply O Ω Ω', ← IsScalarTower.algebraMap_apply O O' Ω']
   rw [hw] at hb'

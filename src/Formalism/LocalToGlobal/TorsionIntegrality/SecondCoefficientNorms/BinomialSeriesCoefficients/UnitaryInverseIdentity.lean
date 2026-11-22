@@ -1,16 +1,14 @@
 module
 
-public import Formalism.LocalToGlobal.TorsionIntegrality.SecondCoefficientNorms.IsotropicVanish
+public import Formalism.LocalToGlobal.TorsionIntegrality.SecondCoefficientNorms.Bundle0001
 public import Formalism.LocalToGlobal.TorsionIntegrality.SecondCoefficientNorms.BinomialSeriesCoefficients.Points
 public import Formalism.LocalToGlobal.TorsionIntegrality.SecondCoefficientNorms.SecondCoeffConsistency
 public import Mathlib
-public import Formalism.GL3MeanSquares.InvariantSeriesBidegreeOneOne
-public import Formalism.GL3MeanSquares.HookFormulaTorsion.HyperbolicPlaneSplit
-public import Formalism.GL3MeanSquares.HookFormulaTorsion.FourFoldOrthogonalSum
-public import Formalism.GL3MeanSquares.HookFormulaTorsion.CocycleIsCoboundary
-public import Formalism.GL3MeanSquares.HookFormulaTorsion.BimultiplicativeDivisibleTorsion
-public import Formalism.GL3MeanSquares.ConcavityEquidistribution
-public import Formalism.GL3MeanSquares.HookFormulaTorsion.HilbertSchmidtHalfBound
+public import Formalism.GL3MeanSquares.Bundle0003
+public import Formalism.GL3MeanSquares.HookFormulaTorsion.Bundle0002
+public import Formalism.GL3MeanSquares.HookFormulaTorsion.Bundle0006
+public import Formalism.GL3MeanSquares.Bundle0001
+public import Formalism.GL3MeanSquares.HookFormulaTorsion.Bundle0004
 
 @[expose] public section
 

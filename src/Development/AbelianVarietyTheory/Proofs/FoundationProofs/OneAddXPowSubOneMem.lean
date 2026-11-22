@@ -2,10 +2,10 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.Foundations.CyclotomicDvdExpandOfCoprime
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.XMulMemSpanOfColemanLevelsStatement
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ColemanNormOperatorIterateSuccCongrFrobeniusStatement
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.EvNormOpEqNrmStatement
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsColemanLevelRingBasisOneAddXPowStatement
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0085
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0114
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0113
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0064
 public import Development.AbelianVarietyTheory.Proofs.HomogeneousIdeals.IsAdicCompleteComapConstantCoeff
 
 @[expose] public section
@@ -20,7 +20,7 @@ theorem iter_cong : ∀ (R : Type) [CommRing R] (p : ℕ) [Fact p.Prime] (σ : R
   | zero => exact ⟨0, by simp⟩
   | succ i ih =>
     obtain ⟨r, hr⟩ := ih
-    obtain ⟨r', hr'⟩ := GlobalTheory.T.colemanNormOperator_iterate_succ_congr_frobenius R p σ hF h hh (j + i)
+    obtain ⟨r', hr'⟩ := _root_.GlobalTheory.normOp_iterate_congr R p σ hF h hh (j + i)
     refine ⟨smap σ r + (p : PowerSeries R) ^ i * r', ?_⟩
     rw [show j + (i + 1) = (j + i) + 1 by omega, hr', hr, Function.iterate_succ_apply' (smap σ), map_add (f := _), map_mul, map_pow, map_natCast]
     ring
@@ -145,7 +145,7 @@ theorem ev_of_mem_pow : ∀ (R : Type) [CommRing R] (p m N : ℕ) [Fact p.Prime]
 theorem lev_sep : ∀ (R : Type) [CommRing R] (p m : ℕ) [Fact p.Prime], IsAdicComplete (Ideal.span {(p : R)}) R → ∀ x : lev R p m, (∀ N : ℕ, ∃ y : PowerSeries R, x = ev R p m ((p : PowerSeries R) ^ N * y)) → x = 0 := by
   intro R _ p m _ hR x hx
   haveI := hR
-  obtain ⟨b, -⟩ := GlobalTheory.T.exists_colemanLevelRing_basis_one_add_X_pow R p m hR
+  obtain ⟨b, -⟩ := _root_.GlobalTheory.Col.lev_basis R p m hR
   apply b.repr.injective
   rw [map_zero]
   ext i

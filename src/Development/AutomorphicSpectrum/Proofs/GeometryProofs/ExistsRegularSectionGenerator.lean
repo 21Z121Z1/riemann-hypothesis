@@ -1,15 +1,14 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.LevelSectionsExactKernelLocusOpen
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.GenMapStalkSpecializes
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.StalkClosedPointToGermTop
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.GenPtSpecializesOfSpecializes
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.MemRegAtOfCodimOne
-public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.DvrOrderExistsUnitEqUnitMulZpowIff
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.SurjectiveOfDualHomomorphismKernelKilled
-public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.ExistsMaxRatioCleared
-public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.NormalNoethLocalDimOneIsDVR
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.Bundle0005
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0012
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0036
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0032
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0035
+public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.Bundle0002
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0010
+public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.Bundle0001
 
 @[expose] public section
 

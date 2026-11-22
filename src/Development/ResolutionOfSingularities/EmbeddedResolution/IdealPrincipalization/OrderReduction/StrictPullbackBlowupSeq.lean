@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.ResolutionOfSingularities.EmbeddedResolution.IteratedBlowups.BlowupSequenceRelations
+public import Development.ResolutionOfSingularities.EmbeddedResolution.IteratedBlowups.Bundle0001
 public import Development.ResolutionOfSingularities.Foundations.Blowup.StrictTransform
 public import Development.ResolutionOfSingularities.EmbeddedResolution.StrictTransformCharts.ControlledTransform
 public import Development.ResolutionOfSingularities.EmbeddedResolution.StrictTransformCharts.StrictTransformFlatBaseChange

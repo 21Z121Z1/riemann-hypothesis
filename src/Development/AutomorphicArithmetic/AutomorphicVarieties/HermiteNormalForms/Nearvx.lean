@@ -1,9 +1,9 @@
 module
 
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.HermiteNormalForms.SmulNeZeroLat
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.HermiteNormalForms.FiniteSubfamilySpansDual
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.HermiteNormalForms.Bundle0004
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.HermiteNormalForms.Nearvec
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.HermiteNormalForms.Cardsub
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.HermiteNormalForms.Bundle0001
 
 @[expose] public section
 

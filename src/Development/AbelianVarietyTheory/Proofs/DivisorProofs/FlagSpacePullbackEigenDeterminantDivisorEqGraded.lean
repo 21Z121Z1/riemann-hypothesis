@@ -1,12 +1,12 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GapGeSubKapBase
-public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.FlagComponentFramedPointFrame
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1875
+public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.Bundle0036
 public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.DualGramInterpGram
 public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsAffineStableLieEigenspaceFrame
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsEigenFrameChartVectorsCompactFlagSpaceAffi
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.FlagDeterminantIso
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2058
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0581
 
 @[expose] public section
 

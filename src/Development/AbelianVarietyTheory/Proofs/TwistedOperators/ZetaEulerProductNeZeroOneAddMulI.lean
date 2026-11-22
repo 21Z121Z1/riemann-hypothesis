@@ -2,8 +2,8 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.LandauSummableOfExpDirichletSeriesEntire
-public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.HasSumLogZetaSqMul
-public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.EulerProductNeZeroOneOfEntire
+public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.Bundle0003
+public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.Bundle0007
 
 @[expose] public section
 

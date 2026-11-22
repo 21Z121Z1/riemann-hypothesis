@@ -1,8 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Foundations.IsRootOne
-public import Development.AbelianVarietyTheory.Definitions.Foundations.EigenOfTwoStep
+public import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0008
 
 @[expose] public section
 

@@ -1,13 +1,13 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.HilbertKodairaSpencer
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsAHOfIsFactorAH
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaNonvanishingBundleGenerated
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ProductAbelianUniformization
-public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.DifferentiableOnProdOfForall
-public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.LbIsoOfSameFactor
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.AbelianSchemeGerms
+public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.Bundle0023
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2088
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2221
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2208
+public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0015
+public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0151
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.Bundle0004
 
 @[expose] public section
 

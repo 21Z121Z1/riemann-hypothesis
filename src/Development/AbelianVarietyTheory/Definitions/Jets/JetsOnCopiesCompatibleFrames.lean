@@ -1,11 +1,11 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Jets.ColValMonomial
-public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.GermCut
-public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.BidegreeTwoJet
-public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.LemmaBStatement
-public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.BoxTuple
+public import Development.AbelianVarietyTheory.Definitions.Jets.Bundle0002
+public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0006
+public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0017
+public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0018
+public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0019
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.DiscreteValuationRings.BoxLeOfComp
 
 @[expose] public section

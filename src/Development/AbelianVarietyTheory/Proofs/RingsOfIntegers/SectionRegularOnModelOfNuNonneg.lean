@@ -3,9 +3,9 @@ module
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.PlaceAdaptation.AdaptStd
 public import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.ExpansionBijectiveOverFields
-public import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.ExistsIntOfVgeZero
-public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.SecLinOfSecScal
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.DiscreteValuationRings.ConstBFMul
+public import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.Bundle0025
+public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.Bundle0020
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.DiscreteValuationRings.Bundle0010
 
 @[expose] public section
 

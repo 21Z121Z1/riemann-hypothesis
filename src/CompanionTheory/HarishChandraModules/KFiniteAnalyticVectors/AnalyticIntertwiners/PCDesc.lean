@@ -1,8 +1,8 @@
 module
 
 public import CompanionTheory.HarishChandraModules.KFiniteAnalyticVectors.AnalyticIntertwiners.Clause1
-public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.UnipotentCorrectionU1.DjCurveA
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.ExpFromBlocks
+public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.UnipotentCorrectionU1.Bundle0002
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0245
 
 @[expose] public section
 

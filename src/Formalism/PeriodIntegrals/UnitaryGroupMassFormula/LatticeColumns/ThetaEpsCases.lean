@@ -1,7 +1,7 @@
 module
 
-public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LatticeColumns.HModelAllOf
-public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LatticeIndices.ImABwdEps
+public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LatticeColumns.Bundle0009
+public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LatticeIndices.Bundle0018
 
 @[expose] public section
 

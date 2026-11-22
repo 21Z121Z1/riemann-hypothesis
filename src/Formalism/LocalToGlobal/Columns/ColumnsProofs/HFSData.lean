@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Formalism.LocalToGlobal.Columns.RowForms
-public import Formalism.LocalToGlobal.Divisibility.TuplesLemmas
+public import Formalism.LocalToGlobal.Divisibility.Bundle0002
 public import Formalism.LocalToGlobal.Divisibility.DivisibilityProofs.TuplesP
 
 @[expose] public section

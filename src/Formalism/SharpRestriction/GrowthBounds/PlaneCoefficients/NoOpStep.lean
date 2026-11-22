@@ -1,6 +1,6 @@
 module
 
-public import Formalism.SharpRestriction.GrowthBounds.PlaneCoefficients.UpdDModelLet
+public import Formalism.SharpRestriction.GrowthBounds.PlaneCoefficients.Bundle0001
 public import Formalism.SharpRestriction.GrowthBounds.TwistedSubstitution.JointEIntList
 
 @[expose] public section

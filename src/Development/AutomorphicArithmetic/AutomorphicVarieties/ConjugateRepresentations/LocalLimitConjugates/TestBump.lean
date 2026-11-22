@@ -1,9 +1,9 @@
 module
 
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.ConjugateRepresentations.LocalLimitConjugates.CasimirResolventProjection
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsNonnegTestFunctionNearOne
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0479
 public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.KFiniteVectorsDense
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ContinuousGLAdelicProjectionsInclusions
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1195
 
 @[expose] public section
 

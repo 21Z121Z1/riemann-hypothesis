@@ -3,10 +3,10 @@ module
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.IsDualDualRep
 public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.PoitouTateNineTermTransgressionZeroApply
-public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.CohDimTwoLocalOfLocalFiniteness
-public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.ContinuousCycMod
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.TameInertiaElementActsByScalarStatement
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsPlaceOverMoveValCc
+public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.Bundle0002
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0312
+public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0012
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0305
 public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ContinuousAlgebraMapPadicInt
 
 @[expose] public section
@@ -257,7 +257,7 @@ theorem frob_scalar (bkP : BKPh X) (h : GalHyp bkP i s) {M R : ℕ} {P : Fin R �
     (hP : Position i s M P d φ φ') {a : Fin R} {v : PlE D.host} (hv : Over (P (.inl a)) v) {σ : GE N}
     (hσ : IsFrob (N.plOm.1 v) (normV v) σ) : ∃ c : ResidueField (X.O0 i), c ≠ 0 ∧ c ≠ 1 ∧ resT i s σ = c • 1 := by
   obtain ⟨hA, ⟨z, L, hz, hL, hS⟩, -⟩ := hP
-  obtain ⟨e, he, -, hu, -⟩ := GlobalTheory.T.tameInertiaElement_acts_by_scalar D N X bkP i s z h.1 hz
+  obtain ⟨e, he, -, hu, -⟩ := _root_.GlobalTheory.TwSys.TameScalar.exists_scalar_tmat_of_tame_inertia D N X bkP i s z h.1 hz
   have c0 : residue (X.O0 i) e ≠ 0 := (residue_ne_zero_iff_isUnit _).2 e.isUnit
   have c1 : residue (X.O0 i) e ≠ 1 := by
     rw [← residue_ne_zero_iff_isUnit, map_sub, map_one, sub_ne_zero] at hu

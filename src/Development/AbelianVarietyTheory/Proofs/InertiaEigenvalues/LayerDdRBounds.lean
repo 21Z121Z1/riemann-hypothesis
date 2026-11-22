@@ -3,12 +3,12 @@ module
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.TrivIsCr
 public import Formalism.SharpRestriction.LevelLetterCocycles.LocCoh
-public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.TwistStep
+public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0011
 public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.AcrisTorsionFreeComplete
 public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.DeRhamPotSemistable
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.LinearIndepOnOfInvariant
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.SecondTwistSmallIffExactlyAtAndFinClause
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.EventuallyClosedOfDictClosed
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0240
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0047
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0213
 public import Formalism.SharpRestriction.LevelLetterCocycles.JsetEmb
 
 @[expose] public section

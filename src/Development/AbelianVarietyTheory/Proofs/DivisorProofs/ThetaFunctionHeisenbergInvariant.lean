@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.InfPartFPlaceIdem
-public import GroundTheory.GlobalFields.TateThesis.NoSmallSubgroups
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1000
+public import GroundTheory.GlobalFields.TateThesis.Bundle0002
 
 @[expose] public section
 

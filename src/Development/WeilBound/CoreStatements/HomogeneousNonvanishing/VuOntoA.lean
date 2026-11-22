@@ -1,8 +1,8 @@
 module
 
 public import Development.WeilBound.CoreStatements.ProjectiveValuations.FrequentlyNeZero
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsSecReadingDecreasingIntegerExponents
-public import Development.AbelianVarietyTheory.Proofs.GenericRegularity.ExistsEvenSecEvRNeZero
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1853
+public import Development.AbelianVarietyTheory.Proofs.GenericRegularity.Bundle0032
 
 @[expose] public section
 

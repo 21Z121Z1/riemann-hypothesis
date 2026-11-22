@@ -2,12 +2,12 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.Foundations.RootOfUnityEightQMemCoeffGaloisSubfield
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsFinsetTypeNormPrincipal
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.HostCmData
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0087
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0081
 public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.DiagSingleSingle
 public import Formalism.LocalRingCardinality.SpanPowerMembership.Spaces
 public import Formalism.SharpRestriction.InertJacobiLevels.HostFam
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.NcardPrimesOverOfStabilizer
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0084
 
 @[expose] public section
 

@@ -4,7 +4,7 @@ public import Formalism.SharpRestriction.Divisibility.LiftErrorLocal
 public import Formalism.SharpRestriction.Divisibility.WeightDegreeSizes
 public import Formalism.SharpRestriction.Divisibility.ClosedSizeLink.AdmissibleFamilyOfThreshold
 public import Formalism.LocalToGlobal.HermitianForms.TiedSym
-public import Formalism.LocalToGlobal.HermitianForms.BothSym
+public import Formalism.LocalToGlobal.HermitianForms.Bundle0006
 
 @[expose] public section
 

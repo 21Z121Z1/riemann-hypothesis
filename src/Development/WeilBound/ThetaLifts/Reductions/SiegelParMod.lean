@@ -3,8 +3,8 @@ module
 public import Development.WeilBound.ThetaLifts.Reductions.SiegelCore
 public import Development.WeilBound.ThetaLifts.Reductions.SiegelAbs
 public import Development.WeilBound.ThetaLifts.Reductions.SiegelMod
-public import Development.WeilBound.ThetaLifts.FrameEstimates.LeHeightOfIsTorusElt
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.AddHaarLeftRightMulAdelicMatricesModule
+public import Development.WeilBound.ThetaLifts.FrameEstimates.Bundle0007
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0220
 
 @[expose] public section
 

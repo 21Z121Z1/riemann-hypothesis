@@ -1,7 +1,7 @@
 module
 
 public import Formalism.MahlerMeasure.MahlerMeasureProofs.RemoveS
-public import Formalism.MahlerMeasure.MahlerMeasureProofs.LevelDecomp
+public import Formalism.MahlerMeasure.MahlerMeasureProofs.Bundle0002
 public import Mathlib
 
 @[expose] public section

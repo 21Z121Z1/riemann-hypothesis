@@ -1,10 +1,9 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.CotInd
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.DetLocus
-public import ReciprocityTheory.CommutativeAlgebra.SaturatedChains.Integral
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.CaDetLocus
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.Bundle0002
+public import ReciprocityTheory.CommutativeAlgebra.SaturatedChains.Bundle0001
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.Bundle0030
 
 @[expose] public section
 

@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.SimplePoleTwistedLift
-public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.HeckeLPartialContinuationHolds
+public import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.Bundle0014
+public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.Bundle0005
 
 @[expose] public section
 

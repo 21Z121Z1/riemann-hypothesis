@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Formalism.LocalToGlobal.CharacterGerms.HostTraceIdentity
+public import Formalism.LocalToGlobal.CharacterGerms.Bundle0012
 
 @[expose] public section
 

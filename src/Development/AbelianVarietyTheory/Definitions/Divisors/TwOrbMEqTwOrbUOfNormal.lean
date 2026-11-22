@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import ReciprocityTheory.ClassFieldTheory.LocalClassField.ExistsDvdQKPowSubOne
-public import Development.AbelianVarietyTheory.Definitions.Divisors.MaxWeightGL1EqOne
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0027
 
 @[expose] public section
 

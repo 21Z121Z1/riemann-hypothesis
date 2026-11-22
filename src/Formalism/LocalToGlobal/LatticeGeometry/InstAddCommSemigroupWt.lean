@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Formalism.LocalToGlobal.LatticeGeometry.DegFlLApply
-public import Formalism.LocalToGlobal.LatticeGeometry.ArVolEqOfNef
+public import Formalism.LocalToGlobal.LatticeGeometry.Bundle0001
+public import Formalism.LocalToGlobal.LatticeGeometry.Bundle0002
 public import Formalism.SharpRestriction.Divisibility.WeightAlgebra
 
 @[expose] public section

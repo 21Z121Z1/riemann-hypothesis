@@ -1,8 +1,8 @@
 module
 
-public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LocalMassType.SatSplit
-public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LocalMassType.UnitaryLocalMassIdentity
-public import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.SplitIntLoc
+public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LocalMassType.Bundle0005
+public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LocalMassType.Bundle0003
+public import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.Bundle0006
 
 @[expose] public section
 

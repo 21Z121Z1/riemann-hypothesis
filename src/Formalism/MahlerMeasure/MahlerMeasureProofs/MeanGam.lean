@@ -1,8 +1,7 @@
 module
 
-public import Formalism.MahlerMeasure.StatementTM
-public import Formalism.MahlerMeasure.HasOrder
-public import Formalism.MahlerMeasure.LegendreDigits
+public import Formalism.MahlerMeasure.Bundle0007
+public import Formalism.MahlerMeasure.Bundle0004
 
 @[expose] public section
 

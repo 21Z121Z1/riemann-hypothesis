@@ -1,8 +1,7 @@
 module
 
 public import Development.WeilBound.ThetaLifts.LocalTheory.Cross
-public import Development.WeilBound.ThetaLifts.LocalTheory.UnramifiedMultiplicityOneProportional
-public import Development.WeilBound.ThetaLifts.LocalTheory.SplitInv2
+public import Development.WeilBound.ThetaLifts.LocalTheory.Bundle0001
 
 @[expose] public section
 

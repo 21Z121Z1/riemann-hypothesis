@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import GroundTheory.ArithmeticGeometry.SchemeCohomology.ProperCohomology.ReesRing
+public import GroundTheory.ArithmeticGeometry.SchemeCohomology.ProperCohomology.Bundle0002
 public import GroundTheory.ArithmeticGeometry.SchemeCohomology.ProperCohomology.CokernelCoherent
-public import GroundTheory.ArithmeticGeometry.SchemeCohomology.ProperCohomology.PullbackCoherent
+public import GroundTheory.ArithmeticGeometry.SchemeCohomology.ProperCohomology.Bundle0007
 
 @[expose] public section
 

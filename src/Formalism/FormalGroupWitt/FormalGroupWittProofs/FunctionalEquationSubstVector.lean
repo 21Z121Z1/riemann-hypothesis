@@ -1,10 +1,8 @@
 module
 
-public import Formalism.FormalGroupWitt.FormalGroupWittProofs.IntegralSubstVector
+public import Formalism.FormalGroupWitt.FormalGroupWittProofs.Bundle0001
 public import Formalism.TorsionNormIteration.InverseIntegralClasses.SigmaNormLeOne
-public import Formalism.TorsionNormIteration.InverseIntegralClasses.MemSpanOfNormLe
-public import Formalism.TorsionNormIteration.InverseIntegralClasses.NormSigmaLeOne
-public import Formalism.FormalGroupWitt.FormalGroupWittProofs.CoeffV
+public import Formalism.TorsionNormIteration.InverseIntegralClasses.Bundle0001
 public import Lemmata.MultivariateIntegrals.IntegralMv
 
 @[expose] public section

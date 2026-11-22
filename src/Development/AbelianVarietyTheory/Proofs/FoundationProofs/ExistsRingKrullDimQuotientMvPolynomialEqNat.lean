@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import ReciprocityTheory.CommutativeAlgebra.SaturatedChains.Integral
+public import ReciprocityTheory.CommutativeAlgebra.SaturatedChains.Bundle0001
 
 @[expose] public section
 

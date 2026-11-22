@@ -2,8 +2,8 @@ module
 
 public import Mathlib
 public import Development.WeilBound.CoreStatements.PublishedTheorems.PoincareDeRhamDuality.DeRhamPerfectPairing.PoincareDeRhamDualityOfCube
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.StructureSheafComparisonInjective
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CechDeRhamComparisonBijectiveCupSmooth
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0470
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2047
 public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.AbelianHodgeDeRham
 
 @[expose] public section

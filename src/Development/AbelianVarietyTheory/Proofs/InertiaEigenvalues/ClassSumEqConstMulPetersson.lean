@@ -1,17 +1,17 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.IsWildInertiaCyclotomicElement
-public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.GaloisSideTwistedSelmerAuxiliaryPrimes
+public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0017
+public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0012
 public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SemisimpleOfInjective
 public import Formalism.LocalToGlobal.NormalizedHeckeFactors.CoverStd
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.RelIndexNeZeroOfCover
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0496
 public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.LocalisationCoefficientExtensionIsWildInertiaCyc
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FiniteRationalConjMemBoundedCompact
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FiniteIndexConj
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ClassSumSmallerLevel
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.MaxCompactUnitaryConjRelIndexEqStatement
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.FiniteDoubleCosetsDefiniteUnitaryMaximalLevel
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0604
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0676
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0471
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0696
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0174
 
 @[expose] public section
 
@@ -368,7 +368,7 @@ theorem petForm_rt (hβ : IsInvForm a β) {f f' : GAf L n → a.W} (hf : f ∈ N
     have e : h⁻¹ * (h * x * h⁻¹) * h = x := by group
     rwa [e] at hx'
   have hJU := hJle.trans (congSub_le_umax (L := L) (n := n) (lev f * lev f'))
-  have huni := (GlobalTheory.T.maxCompactUnitary_conj_relIndex_eq L n h⁻¹).2
+  have huni := (_root_.GlobalTheory.UnimodMass.umax_relIndex_conj L n h⁻¹).2
   have hidx := relIndex_conj h (congSub_le_umax N') hJU huni
   have hmul := Subgroup.relIndex_mul_relIndex _ _ _ hJle (congSub_le_umax (L := L) (n := n) (lev f * lev f'))
   have hKne := congSub_relIndex_ne_zero (L := L) (n := n) hN'

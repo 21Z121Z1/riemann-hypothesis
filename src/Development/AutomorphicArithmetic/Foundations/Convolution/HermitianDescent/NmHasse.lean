@@ -1,9 +1,9 @@
 module
 
 public import Development.AutomorphicArithmetic.Foundations.Convolution.HermitianDescent.NormAlmostAll
-public import Development.AutomorphicArithmetic.Foundations.Convolution.HermitianDescent.RootMapRoot
+public import Development.AutomorphicArithmetic.Foundations.Convolution.HermitianDescent.Bundle0003
 public import Development.AutomorphicArithmetic.Foundations.Convolution.HermitianDescent.HasseEt
-public import Development.AutomorphicArithmetic.Foundations.Convolution.HermitianDescent.GalField
+public import Development.AutomorphicArithmetic.Foundations.Convolution.HermitianDescent.Bundle0001
 
 @[expose] public section
 

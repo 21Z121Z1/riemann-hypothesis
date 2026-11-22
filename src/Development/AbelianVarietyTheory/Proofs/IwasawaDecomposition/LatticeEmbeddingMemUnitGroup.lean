@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.NuInRange
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.CoordMapBasisFun
+public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.Bundle0012
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0203
 
 @[expose] public section
 

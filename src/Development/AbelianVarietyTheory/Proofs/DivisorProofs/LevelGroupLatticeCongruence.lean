@@ -1,10 +1,10 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.UniformLevelMultiplicity
-public import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.LevelLiftConditions
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.CramerMemAdelicCompletionOfElementSet
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.AdelicElementLatticeFullAndCompletion
+public import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.Bundle0014
+public import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.Bundle0015
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0017
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0074
 
 @[expose] public section
 

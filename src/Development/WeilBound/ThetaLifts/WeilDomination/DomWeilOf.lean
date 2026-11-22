@@ -1,8 +1,8 @@
 module
 
-public import Development.WeilBound.ThetaLifts.CartanFactorisation.Factor
-public import Development.WeilBound.ThetaLifts.FrameEstimates.TowerRallisLemma
-public import Development.WeilBound.ThetaLifts.FrameEstimates.HodgeTateFromSandwich
+public import Development.WeilBound.ThetaLifts.CartanFactorisation.Bundle0007
+public import Development.WeilBound.ThetaLifts.FrameEstimates.Bundle0006
+public import Development.WeilBound.ThetaLifts.FrameEstimates.Bundle0002
 
 @[expose] public section
 

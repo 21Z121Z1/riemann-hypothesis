@@ -2,10 +2,11 @@ module
 
 public import Development.WeilBound.RepresentationTheoryGL.GenericUnitaryGL.ComplementarySeries.Complementary
 public import GroundTheory.AutomorphicForms.IwahoriFactorization
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsIrreducibleSecondFactorOfIrreducibleProduct
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.MemSpanOfFixedMemSpanTranslates
-public import Development.AbelianVarietyTheory.Definitions.Divisors.EqOfHasValueAtInfinite
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.EigenvectorLiftOfSurjectionStatement
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0658
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0648
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0004
+public import Mathlib
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0005
 
 @[expose] public section
 

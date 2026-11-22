@@ -2,14 +2,14 @@ module
 
 public import Mathlib
 public import Formalism.SharpRestriction.Divisibility.SchurIrreducible
-public import Formalism.LocalToGlobal.BesselHermitianTheta.DefsReal
+public import Formalism.LocalToGlobal.BesselHermitianTheta.Bundle0001
 public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.PderivEqZeroOfColOp
 public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ColumnDegrees
 public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.DerivationProdPow
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsEqMulMinorPoly
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.RowColWeightsAgree
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.FnShapeOfJointShape
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.LengthAddLeOfDisjoint
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0080
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0084
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0082
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0083
 
 @[expose] public section
 

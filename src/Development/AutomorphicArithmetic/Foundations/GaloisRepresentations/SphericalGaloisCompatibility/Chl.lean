@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.IntegralStructures.CrystallineInputs.OfInputs
-public import Development.AbelianVarietyTheory.Statements.EllipticCurveLevels.IsQg
+public import Development.AbelianVarietyTheory.Statements.EllipticCurveLevels.Bundle0001
 
 @[expose] public section
 

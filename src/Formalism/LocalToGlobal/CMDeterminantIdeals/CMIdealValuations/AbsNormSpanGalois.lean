@@ -1,8 +1,8 @@
 module
 
 public import Formalism.LocalToGlobal.CMDeterminantIdeals.CoeffMemOfLoc
-public import Formalism.LocalToGlobal.CMDeterminantIdeals.StatementA
-public import Formalism.LocalToGlobal.CMDeterminantIdeals.CMIdealValuations.OneLeAbsNormOfLeOne
+public import Formalism.LocalToGlobal.CMDeterminantIdeals.Bundle0001
+public import Formalism.LocalToGlobal.CMDeterminantIdeals.CMIdealValuations.Bundle0001
 
 @[expose] public section
 

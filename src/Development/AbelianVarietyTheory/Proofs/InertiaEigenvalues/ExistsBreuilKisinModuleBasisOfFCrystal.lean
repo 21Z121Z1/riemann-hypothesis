@@ -2,9 +2,9 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.ExistsIterateDerivative
-public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.BhattScholzeCrystallineLattices
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.PrismaticFCrystalValueLocalPrismAinfWittTensor
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FreeOfXRegularQuotientTorsionFreeScalarTower
+public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.Bundle0005
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0284
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0026
 
 @[expose] public section
 

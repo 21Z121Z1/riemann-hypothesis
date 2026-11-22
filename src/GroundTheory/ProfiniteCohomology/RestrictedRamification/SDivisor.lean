@@ -2,8 +2,7 @@ module
 
 public import Mathlib
 public import GroundTheory.ProfiniteCohomology.RestrictedRamification.SUnits
-public import GroundTheory.ProfiniteCohomology.RestrictedRamification.SPicDefs
-public import GroundTheory.ProfiniteCohomology.RestrictedRamification.ValuationTransport
+public import GroundTheory.ProfiniteCohomology.RestrictedRamification.Bundle0001
 
 @[expose] public section
 

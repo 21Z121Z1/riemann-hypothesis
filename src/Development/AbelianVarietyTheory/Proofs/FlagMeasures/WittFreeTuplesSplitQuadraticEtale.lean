@@ -1,6 +1,6 @@
 module
 
-public import Development.AbelianVarietyTheory.Definitions.Foundations.InFrameStabilizer
+public import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0001
 
 @[expose] public section
 

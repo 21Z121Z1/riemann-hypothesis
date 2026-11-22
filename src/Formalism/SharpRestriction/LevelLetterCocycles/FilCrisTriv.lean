@@ -1,6 +1,6 @@
 module
 
-public import Formalism.SharpRestriction.LevelLetterCocycles.StrictSesLetter
+public import Formalism.SharpRestriction.LevelLetterCocycles.Bundle0026
 public import Formalism.SharpRestriction.LevelLetterCocycles.BaseChangePreservesUnitaryOf
 
 @[expose] public section

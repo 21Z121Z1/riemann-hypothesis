@@ -1,7 +1,7 @@
 module
 
 public import Formalism.BranchSandwichDivisors.StatementR
-public import Formalism.BranchSandwichDivisors.BranchIsometryProofs.MemBranchRangeOfDefectEq
+public import Formalism.BranchSandwichDivisors.BranchIsometryProofs.Bundle0001
 
 @[expose] public section
 

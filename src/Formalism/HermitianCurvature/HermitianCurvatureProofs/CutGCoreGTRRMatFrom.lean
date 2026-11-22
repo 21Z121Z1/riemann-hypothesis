@@ -1,7 +1,7 @@
 module
 
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutGCoreGTRRotCut
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutGCoreGTCHolPhaseRel
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0141
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0128
 
 @[expose] public section
 

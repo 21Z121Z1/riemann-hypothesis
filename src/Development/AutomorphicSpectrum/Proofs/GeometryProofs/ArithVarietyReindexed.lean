@@ -1,12 +1,12 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.IsSmoothHermTrivLine
-public import GroundTheory.HeightsAndTheta.Heights.Intersections.PtsOverPt
-public import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.PGenFibreChartDeg
-public import GroundTheory.HeightsAndTheta.Heights.Intersections.PChartScalingIndep
-public import GroundTheory.HeightsAndTheta.Heights.Intersections.PAdjoinIndepRelfinrank
-public import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.ExistsPowOfMemCellSec
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0097
+public import GroundTheory.HeightsAndTheta.Heights.Intersections.Bundle0039
+public import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.Bundle0030
+public import GroundTheory.HeightsAndTheta.Heights.Intersections.Bundle0008
+public import GroundTheory.HeightsAndTheta.Heights.Intersections.Bundle0002
+public import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.Bundle0058
 
 @[expose] public section
 

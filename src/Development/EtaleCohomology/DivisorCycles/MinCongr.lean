@@ -1,6 +1,6 @@
 module
 
-public import Development.EtaleCohomology.DivisorCycles.CycleCount
+public import Development.EtaleCohomology.DivisorCycles.Bundle0001
 
 @[expose] public section
 

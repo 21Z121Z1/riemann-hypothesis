@@ -1,18 +1,17 @@
 module
 
 public import Mathlib
-public import Formalism.LocalToGlobal.KernelLattices.MuProd
+public import Formalism.LocalToGlobal.KernelLattices.Bundle0003
 public import Formalism.LocalToGlobal.KernelLattices.KernelLocalFactors.PenultimateKernelDiamondInvariant
 public import Formalism.LocalToGlobal.KernelLattices.KernelLocalFactors.LocalProductMeasures.AbsoluteValueInertPrimes
-public import Formalism.LocalToGlobal.KernelLattices.KernelLocalFactors.LocalProductMeasures.TwistComponentsCompatibleSystem
+public import Formalism.LocalToGlobal.KernelLattices.KernelLocalFactors.LocalProductMeasures.Bundle0001
 public import Formalism.LocalToGlobal.KernelLattices.KernelLocalFactors.LocalProductMeasures.TwistValueAtUniformizer
 public import Formalism.LocalToGlobal.KernelLattices.KernelLocalFactors.LocalProductMeasures.XiProd
-public import Formalism.LocalToGlobal.KernelLattices.KernelLocalFactors.LocalProductMeasures.HeckeCharacterCompatibleSystem
 public import Formalism.LocalToGlobal.KernelLattices.KernelLocalFactors.LocalProductMeasures.MlZFacSupport
 public import Formalism.LocalToGlobal.KernelLattices.KernelLocalFactors.LocalProductMeasures.HilbertNinetyNormOne
 public import Formalism.LocalToGlobal.KernelLattices.KernelLocalFactors.LocalProductMeasures.MqRowSGUnif
-public import Formalism.LocalToGlobal.Columns.RowFormsSel
-public import Formalism.LocalToGlobal.Columns.DetChrJoint
+public import Formalism.LocalToGlobal.Columns.Bundle0005
+public import Formalism.LocalToGlobal.Columns.Bundle0031
 
 @[expose] public section
 

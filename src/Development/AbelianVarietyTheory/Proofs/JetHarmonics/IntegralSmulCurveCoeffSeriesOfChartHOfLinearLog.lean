@@ -1,12 +1,12 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Jets.IsSelfOf
+public import Development.AbelianVarietyTheory.Definitions.Jets.Bundle0003
 public import Development.AbelianVarietyTheory.Definitions.Jets.TwoPlaces
-public import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.PderivCoeffOptionEquivLeft
-public import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.IntSOfMulEqOne
+public import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.Bundle0047
+public import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.Bundle0046
 public import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.ExistsNotMemForallMem
-public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.CmEmbeddingsIntegralAndDistinctModMaximal
+public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0123
 
 @[expose] public section
 

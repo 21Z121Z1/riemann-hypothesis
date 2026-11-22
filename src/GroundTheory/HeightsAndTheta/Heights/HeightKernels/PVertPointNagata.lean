@@ -2,8 +2,8 @@ module
 
 public import Mathlib
 public import GroundTheory.HeightsAndTheta.Heights.HeightKernels.StatementsVertPointNagata
-public import GroundTheory.HeightsAndTheta.Heights.HeightKernels.PVertPointMultChart
-public import GroundTheory.HeightsAndTheta.Heights.Intersections.PLocRingPow
+public import GroundTheory.HeightsAndTheta.Heights.HeightKernels.Bundle0040
+public import GroundTheory.HeightsAndTheta.Heights.Intersections.Bundle0020
 
 @[expose] public section
 

@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.SplitPart
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.WeilActionSchrodingerModelFiniteIdempotent
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsSelfDualCHLat
+public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.Bundle0023
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0451
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0923
 public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IdempotentMulEqZeroOfOrthogonal
 
 @[expose] public section

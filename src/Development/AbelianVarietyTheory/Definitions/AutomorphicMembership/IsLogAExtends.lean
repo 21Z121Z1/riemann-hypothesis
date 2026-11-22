@@ -1,15 +1,14 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.IsCrisP
-public import ReciprocityTheory.DualLattices.ExistsPrimitiveRoot
+public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.Bundle0002
+public import ReciprocityTheory.DualLattices.Bundle0005
 public import Development.AbelianVarietyTheory.CrystallinePeriods.RingIface
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.CanonicalAcrisToBdRPlusUniqueEquivariantApproxStatement
-public import Development.AbelianVarietyTheory.CrystallinePeriods.CrisMaps
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0062
+public import Formalism.LocalRingCardinality.AdicCompletionLocal.LocTied
+public import Development.AbelianVarietyTheory.CrystallinePeriods.Bundle0001
 public import Development.AbelianVarietyTheory.CrystallinePeriods.CrisMapsLoc
-public import Development.AbelianVarietyTheory.CrystallinePeriods.AdicMaps
 public import Development.AbelianVarietyTheory.CrystallinePeriods.CrisIncl
-public import Development.AbelianVarietyTheory.CrystallinePeriods.RingBasics
 
 @[expose] public section
 

@@ -2,10 +2,10 @@ module
 
 public import Mathlib
 public import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.ArchimedeanGelfandKernels.WaveSt
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IsMultOfFintype
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.EventuallyEqOfAgreeGLs
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.RdEqFderiv
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ZOpSmooth
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0189
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0196
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0201
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0204
 
 @[expose] public section
 

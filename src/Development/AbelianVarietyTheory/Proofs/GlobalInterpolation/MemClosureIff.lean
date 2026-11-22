@@ -2,15 +2,15 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.KerIsTerm
-public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.LevelChainSharpColumnValuationOfPointKernelLiftL
-public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.ConjugatePrimeBoundPointKernelOfCoefficientKerne
-public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.InvTrKEmbGLApply
-public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.TilLatticesOfLevel
-public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.PlacesOverConjPrimes
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.SmulMemLocPOfVal
-public import Formalism.LocalToGlobal.Columns.BtExistsSmulLeOfFg
+public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0101
+public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0140
+public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0092
+public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0112
+public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0095
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0166
+public import Formalism.LocalToGlobal.Columns.Bundle0012
 public import Formalism.LocalToGlobal.Columns.CoefficientsModP.BaseCh
-public import Formalism.LocalToGlobal.Columns.CoefficientsModP.PairBDual
+public import Formalism.LocalToGlobal.Columns.CoefficientsModP.Bundle0001
 
 @[expose] public section
 

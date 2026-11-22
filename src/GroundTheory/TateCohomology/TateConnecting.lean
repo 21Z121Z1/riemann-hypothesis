@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import GroundTheory.TateCohomology.CupConnecting
+public import GroundTheory.TateCohomology.Bundle0004
 
 @[expose] public section
 

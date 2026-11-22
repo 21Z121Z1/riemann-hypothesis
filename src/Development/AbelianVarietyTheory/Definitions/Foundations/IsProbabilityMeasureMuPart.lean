@@ -1,12 +1,12 @@
 module
 
 public import Mathlib
-public import Formalism.LocalToGlobal.ProjectiveLattices.CuspidalL2Subspace
-public import Formalism.LocalToGlobal.ProjectiveLattices.CompOrd
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0024
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0012
 public import Formalism.HarderNarasimhan.ShiftInvariance
 public import Formalism.HarderNarasimhan.HarderNarasimhanProofs.QuotRealize
 public import Formalism.MeanHeightDescent.AverageDegreeBounds.GlobalBoundRefinements
-public import Development.AbelianVarietyTheory.BlockTheory.HeightDefect.SectionInputData
+public import Development.AbelianVarietyTheory.BlockTheory.HeightDefect.Bundle0002
 
 @[expose] public section
 

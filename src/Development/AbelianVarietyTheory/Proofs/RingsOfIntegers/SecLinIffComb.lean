@@ -1,22 +1,24 @@
 module
 
 public import Mathlib
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.DiscreteValuationRings.ExpandsPullOne
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.DiscreteValuationRings.Bundle0006
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.DiscreteValuationRings.ProdExpPf
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.DiscreteValuationRings.ProdFam
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.DiscreteValuationRings.Bundle0009
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.DiscreteValuationRings.TWMain
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.DiscreteValuationRings.TwistBCPf
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.DiscreteValuationRings.QuadraticAlgebraValuation
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.DiscreteValuationRings.SectionScalarValuation
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.DvrLem
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.DiscreteValuationRings.Bundle0014
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.DiscreteValuationRings.Bundle0007
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.Bundle0004
 public import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.IsExtensionPullOver
-public import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.ExpansionCommutesPullbackCmEndoFourLeStatement
-public import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.ExpansionPullbackSourceLevelOneStatement
-public import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.ExpansionOfIntegralSectionIsIntegralStatement
-public import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.IntegralExpansionUniqueOfUniformizationStatement
-public import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.IntegralDegenerationFamilyBaseChangeExtensionFieStatement
-public import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.PullAlExtensionFieldOfFractionStatement
-public import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.PullAlLinearCombinationStatement
+public import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.Bundle0029
+public import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.Bundle0030
+public import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.Bundle0023
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.DiscreteValuationRings.Bundle0004
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.DivCalc
+public import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.Bundle0008
+public import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.Bundle0004
+public import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.Bundle0012
+public import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.Bundle0013
 
 @[expose] public section
 
@@ -207,18 +209,18 @@ theorem term (hL : Laws) (U : Unif (maximalIdeal V) D A G) {O : Type} [Ring O] [
       (pullMulSec s (endK φ) u hu)
     exact ⟨s', fun Z r z J hJ => (hs' Z r z J hJ).trans (sval_pullMulSec _ _ _ hu r z hJ)⟩
   obtain ⟨E, hE, -⟩ := (U.expand k hk).1 s
-  obtain ⟨g, hg, hEg⟩ := GlobalTheory.T.expansion_of_integral_section_is_integral V ϖ hϖ D A G U.toUnifPre k σ s
+  obtain ⟨g, hg, hEg⟩ := _root_.GlobalTheory.ExpInt.main V ϖ hϖ D A G U.toUnifPre k σ s
     (SectionScalarValuation.secScal_of_sval hLG fun y J hJ => (hs _ _ y J hJ).symm) E hE
-  obtain rfl : f = g := GlobalTheory.T.integralExpansion_unique_of_uniformization hL.lemmaB V D A G U.toUnifPre k σ f g hf hg
+  obtain rfl : f = g := _root_.GlobalTheory.ExpUniq.main hL.lemmaB V D A G U.toUnifPre k σ f g hf hg
   obtain ⟨E', ⟨t, ht, σ', f', h₁, h₂, h₃⟩, hP⟩ := hB s E hE s' ⟨u, hu, hc,
     (secRel_iff hLG _ _ _ _ _ _ _ _ _ _).2 fun y J hJ => hs' _ _ y J hJ⟩
   have h₂' : IsBC D.toPre (FractionRing V) (toF V (FractionRing V) t • E') f' := isBC_of_scal h₂
-  obtain ⟨θ, hθ⟩ := GlobalTheory.T.integralDegenerationFamily_baseChange_extensionField hL.globalFns V _ D k E f hEg F
-  obtain ⟨θ', hθ'⟩ := GlobalTheory.T.integralDegenerationFamily_baseChange_extensionField hL.globalFns V _ D (k * N) _ f' h₂' F
-  have hP' := GlobalTheory.T.pullAl_linear_combination hL.globalFns V D (FractionRing V) O oa a k N 1 one_pos
+  obtain ⟨θ, hθ⟩ := _root_.GlobalTheory.FamBaseChange.main hL.globalFns V _ D k E f hEg F
+  obtain ⟨θ', hθ'⟩ := _root_.GlobalTheory.FamBaseChange.main hL.globalFns V _ D (k * N) _ f' h₂' F
+  have hP' := _root_.GlobalTheory.PullComb.main hL.globalFns V D (FractionRing V) O oa a k N 1 one_pos
     (fun _ => toF V (FractionRing V) t) (fun _ => E) (fun _ => E') (fun _ => hP)
   rw [Fin.sum_univ_one, Fin.sum_univ_one] at hP'
-  refine ⟨t, σ', f', θ, θ', ht, h₃, hθ, hθ', GlobalTheory.T.pullAl_extension_field_of_fraction V D F O oa a k N _ _ _ f' _ θ'
+  refine ⟨t, σ', f', θ, θ', ht, h₃, hθ, hθ', _root_.GlobalTheory.PullBaseChange.main V D F O oa a k N _ _ _ f' _ θ'
     (IsBC.smul hEg t) h₂' (IsBC.smul hθ t) hθ' hP', fun Z r z J hJ => ?_⟩
   rw [secScal_val h₁ r z hJ, gs_scal, hs' _ r z J hJ, hs _ _ z J hJ]
 
@@ -253,11 +255,11 @@ theorem of_generic (hL : Laws) (U : Unif (maximalIdeal V) D A G) {O : Type} [Rin
   · rcases Nat.eq_zero_or_pos n with rfl | hn
     · obtain ⟨t₀, -, -, θ₀, θ₀', -, -, -, -, hP₀, -⟩ :=
         term hL U oa a φ k N hk hB u hu hc F _ _ (fun e => expandsAt_zero U.toUnifPre e k)
-      have := GlobalTheory.T.pullAl_linear_combination hL.globalFns V D F O oa a k N 1 one_pos (fun _ => 0) _ _ (fun _ => hP₀)
+      have := _root_.GlobalTheory.PullComb.main hL.globalFns V D F O oa a k N 1 one_pos (fun _ => 0) _ _ (fun _ => hP₀)
       rw [Fin.sum_univ_one, Fin.sum_univ_one, zero_smul, zero_smul] at this
       rw [hs, Fin.sum_univ_zero, Fin.sum_univ_zero]
       exact this
-    · have := GlobalTheory.T.pullAl_linear_combination hL.globalFns V D F O oa a k N n hn c' _ _ hP
+    · have := _root_.GlobalTheory.PullComb.main hL.globalFns V D F O oa a k N n hn c' _ _ hP
       simp only [smul_smul, hc'] at this
       rw [hs]
       exact this

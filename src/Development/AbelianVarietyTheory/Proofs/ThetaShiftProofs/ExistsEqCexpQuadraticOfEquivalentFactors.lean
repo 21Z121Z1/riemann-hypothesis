@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.CovolumeBounds.EntireApplyEqOfPeriodicOfSpanReal
+public import Development.AbelianVarietyTheory.Proofs.CovolumeBounds.Bundle0001
 
 @[expose] public section
 

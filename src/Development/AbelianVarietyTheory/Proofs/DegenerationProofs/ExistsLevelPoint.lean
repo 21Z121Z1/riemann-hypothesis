@@ -3,9 +3,9 @@ module
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.Degenerations.BaseFacts
 public import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.GermEqZeroOfThickenings
-public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsUnitCharts
-public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsFiniteValues
-public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.TestFieldFiniteOverPadicStatement
+public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.Bundle0017
+public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.Bundle0068
+public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.Bundle0081
 public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsAddExtension
 
 @[expose] public section

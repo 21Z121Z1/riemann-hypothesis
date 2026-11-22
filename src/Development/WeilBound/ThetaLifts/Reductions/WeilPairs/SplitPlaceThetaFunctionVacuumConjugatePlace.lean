@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsNsmulFix
-public import Development.WeilBound.ThetaLifts.Reductions.WeilPairs.WeilOrthogonalFiniteCover
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1063
+public import Development.WeilBound.ThetaLifts.Reductions.WeilPairs.Bundle0015
 
 @[expose] public section
 

@@ -1,7 +1,7 @@
 module
 
 public import Development.WeilBound.CoreStatements.PublishedTheorems.SmoothVectorEstimates.WhittakerVanishingImpliesZero
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CuspRapidDecaySiegelGL
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0556
 
 @[expose] public section
 

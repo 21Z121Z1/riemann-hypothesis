@@ -4,8 +4,8 @@ public import Mathlib
 public import Formalism.LocalRingCardinality.RhoDetPrimeEqMuTildeMulChiPow
 public import Formalism.LocalRingCardinality.DataTheta
 public import Formalism.SharpRestriction.Divisibility.SchurIrreducible
-public import Formalism.SharpRestriction.Divisibility.ZetaProductPairs
-public import Formalism.SharpRestriction.LevelLetterCocycles.TwGood
+public import Formalism.SharpRestriction.Divisibility.Bundle0002
+public import Formalism.SharpRestriction.LevelLetterCocycles.Bundle0018
 
 @[expose] public section
 

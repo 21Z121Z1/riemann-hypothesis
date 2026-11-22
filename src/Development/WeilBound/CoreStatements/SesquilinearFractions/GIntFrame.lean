@@ -1,7 +1,7 @@
 module
 
 public import Development.WeilBound.CoreStatements.SesquilinearFractions.SpMapMonoOfFraction
-public import Development.WeilBound.CoreStatements.SesquilinearFractions.GModel
+public import Development.WeilBound.CoreStatements.SesquilinearFractions.Bundle0005
 
 @[expose] public section
 

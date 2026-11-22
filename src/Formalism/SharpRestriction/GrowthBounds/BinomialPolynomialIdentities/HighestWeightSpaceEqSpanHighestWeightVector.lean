@@ -1,8 +1,8 @@
 module
 
-public import Formalism.SharpRestriction.GrowthBounds.BinomialPolynomialIdentities.DualWeightVectorApplyEqZeroOfNeNeg
+public import Formalism.SharpRestriction.GrowthBounds.BinomialPolynomialIdentities.Bundle0004
 public import Formalism.SharpRestriction.GrowthBounds.ProjectionOfIsotypicDecomposition
-public import Formalism.SharpRestriction.GrowthBounds.RootWeights.WeightConditionFromIntegralForm
+public import Formalism.SharpRestriction.GrowthBounds.RootWeights.Bundle0023
 
 @[expose] public section
 

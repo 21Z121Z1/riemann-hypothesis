@@ -3,7 +3,7 @@ module
 public import Formalism.SharpRestriction.GrowthBounds.WeilJacquetShalikaLaw
 public import Formalism.SharpRestriction.Divisibility.ProductZerothFirstParts
 public import Formalism.LocalRingCardinality.DataKerI
-public import Development.AutomorphicArithmetic.OrbitLabellings.ColDefs
+public import Development.AutomorphicArithmetic.OrbitLabellings.Bundle0001
 
 @[expose] public section
 

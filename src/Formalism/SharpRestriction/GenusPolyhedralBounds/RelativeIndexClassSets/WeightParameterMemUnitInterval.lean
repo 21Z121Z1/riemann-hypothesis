@@ -4,7 +4,7 @@ public import Formalism.LocalToGlobal.IndefiniteForms.IndefiniteTree.ExampleSati
 public import Formalism.SharpRestriction.Divisibility.WeightAlgebra
 public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LatticeIndexDeterminant.NegLogValuation
 public import Formalism.MirabolicMackeyTheory.MirabolicMackeyProofs.ThreeForms
-public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.ExistsBasisOfPid
+public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0016
 
 @[expose] public section
 

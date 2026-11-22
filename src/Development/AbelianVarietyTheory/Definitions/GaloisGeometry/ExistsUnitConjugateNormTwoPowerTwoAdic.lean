@@ -1,13 +1,13 @@
 module
 
 public import Mathlib
-public import Formalism.PeriodIntegrals.GoodTwo
-public import Formalism.EllipticTorsion.EllipticTorsionProofs.Deuring
+public import Formalism.PeriodIntegrals.Bundle0018
+public import Formalism.EllipticTorsion.EllipticTorsionProofs.Bundle0003
 public import Formalism.LocalToGlobal.TorsionIntegrality.EisensteinTranslationProducts.MulStableIntegral
 public import Formalism.LocalToGlobal.TorsionIntegrality.UniformGaussModels.StatementH
 public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.DyadicStableLattices.ChainPC
 public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.DyadicStableLattices.ExistsNormEqTwoPow
-public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.ExistsGoodReductionAlgebraicWeierstrassModel
+public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0036
 
 @[expose] public section
 

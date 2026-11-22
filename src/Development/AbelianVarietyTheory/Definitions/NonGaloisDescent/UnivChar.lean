@@ -1,20 +1,20 @@
 module
 
 public import Mathlib
-public import Formalism.SharpRestriction.LevelLetterCocycles.TwGood
+public import Formalism.SharpRestriction.LevelLetterCocycles.Bundle0018
 public import Formalism.LocalToGlobal.IndefiniteReal.LinksLemmas
 public import Formalism.LocalToGlobal.IndefiniteReal.ZeroPartEigenvalueConvention
-public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.JEvExists
+public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.Bundle0012
 public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.WdOfMono0L
 public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.ExistsIsScalar
-public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.OffRange
+public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0016
 public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.CharpolySmulOfProd
-public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.IsAuxiliaryHeckeCharacter
+public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0014
 public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.ToUnitsCompToCircle
-public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.InjPrimeTo
-public import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.HeckePin
-public import Development.AbelianVarietyTheory.BlockTheory.NonGaloisCusps.RationalRayLevels
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsAttachedHodge
+public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0010
+public import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.Bundle0003
+public import Development.AbelianVarietyTheory.BlockTheory.NonGaloisCusps.Bundle0009
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0695
 
 @[expose] public section
 

@@ -2,7 +2,7 @@ module
 
 public import Development.EtaleCohomology.EtaleTrace.LadicH0LocallyConstant
 public import Development.EtaleCohomology.CohomologicalPurity.LeafIndExc
-public import Development.EtaleCohomology.KummerTheory.InjSlice
+public import Development.EtaleCohomology.KummerTheory.Bundle0001
 public import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.TranscendenceTraces.WtDegConst
 
 @[expose] public section

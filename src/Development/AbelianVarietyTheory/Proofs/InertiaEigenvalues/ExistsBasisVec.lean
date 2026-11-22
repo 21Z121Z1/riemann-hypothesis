@@ -1,17 +1,18 @@
 module
 
 public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.LengthPosOfPosDef
-public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.AdjFormula
+public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0021
 public import Formalism.LocalToGlobal.IndefiniteReal.LinksStage
-public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.ExistsNormLeHeightPow
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.TwoMulRankWLt
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.DefiniteUnitaryFundamentalDomainVolumePosFiniteStatement
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SchurL2PairingRealFiniteTranslateStatement
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IntegralEqTsumRealPointsLevelCosetTranslatesStatement
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IntegralLowestKTypeMatrixCoeffSqPosStatement
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.RallisIntegrandFactorisesOnLevelCosetStatement
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.DimKKapAtWcPos
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsOpenLevelGroupFiniteAdelic
+public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.Bundle0007
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0642
+public import Mathlib
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0734
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0723
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0688
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0689
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0690
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0160
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0922
 public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ContDiffDerivSnoc
 
 @[expose] public section
@@ -123,12 +124,12 @@ theorem finSumAt_core (hC : GlobalTheory.Published.CuspRapidDecay) (R : RealDat 
       ((hmem y).cusp _)
     exact ⟨this.2.2.1, this.2.2.2⟩
 
-  have hP := fun k x y => GlobalTheory.T.rallisIntegrand_factorises_on_levelCoset D G Pl0 T A Ks R F hL i t hLF hFI hRL hLP μ 𝓕 hμ v hv (b k) x y
-    (GlobalTheory.T.schur_l2Pairing_realFiniteTranslate hC D G Pl0 T A Ks R F hL i hLP v x y)
+  have hP := fun k x y => _root_.GlobalTheory.RawLift.Pointwise.rallisF_point D G Pl0 T A Ks R F hL i t hLF hFI hRL hLP μ 𝓕 hμ v hv (b k) x y
+    (_root_.GlobalTheory.RawLift.schur_trPair_real_fin hC D G Pl0 T A Ks R F hL i hLP v x y)
 
   have hKo : IsOpen {g : GfC (Wc D i) | (g : GA D (Wc D i)) ∈ levW R i} :=
     GlobalTheory.LevelOpen.isOpen_levG _ _ _
-  have hCo := fun k x y => GlobalTheory.T.integral_eq_tsum_realPoints_levelCoset_translates D (Wc D i) (R.νW i) (levW R i) hνW hLP.1 hKo _ (hR k x y).1
+  have hCo := fun k x y => _root_.GlobalTheory.CosetSum.integral_eq_sum_cosets D (Wc D i) (R.νW i) (levW R i) hνW hLP.1 hKo _ (hR k x y).1
   have hmeas : MeasurableSet (realLev R i) := (hCo k0 x₀ x₀).1
 
   obtain ⟨Pr, hPr, hPc⟩ : ∃ Pr : ℝ, 0 < Pr ∧ dimProd A i = (Pr : ℂ) :=
@@ -188,10 +189,10 @@ theorem finSumAt_core (hC : GlobalTheory.Published.CuspRapidDecay) (R : RealDat 
     have h3 := (hF.congr_fun e hmeas).re
     change IntegrableOn (fun x => Complex.re (lowCoefSq R i v x : ℂ)) (realLev R i) (R.νW i) at h3
     simpa only [Complex.ofReal_re] using h3
-  have hIpos : 0 < I := hI ▸ GlobalTheory.T.integral_lowestKTypeMatrixCoeff_sq_pos D G Pl0 T A Ks R F hL i hLP v hv hGint
+  have hIpos : 0 < I := hI ▸ _root_.GlobalTheory.LowCoefPos.integral_lowCoefSq_pos D G Pl0 T A Ks R F hL i hLP v hv hGint
 
   obtain ⟨a₀, ha₀, hA⟩ := hAdj th hth v hv n b
-  have hvol := GlobalTheory.T.definiteUnitaryFundamentalDomain_volume_pos_finite D G Pl0 T A Ks R F hL i t
+  have hvol := _root_.GlobalTheory.DefVol.fdV_measure_pos_lt_top D G Pl0 T A Ks R F hL i t
   have hvolpos : 0 < (R.νV i t (R.fdV i t)).toReal := ENNReal.toReal_pos hvol.1.ne' hvol.2.ne
   have hnfs : 0 < ∑ k, nf k := Finset.sum_pos' (fun k _ => (hnf k).2)
     ⟨k0, Finset.mem_univ _, lt_of_le_of_ne (hnf k0).2 fun h => hnf0 (by rw [← h]; simp)⟩

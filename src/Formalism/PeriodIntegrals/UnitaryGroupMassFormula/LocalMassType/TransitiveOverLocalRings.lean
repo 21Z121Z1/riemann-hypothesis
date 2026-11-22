@@ -1,6 +1,6 @@
 module
 
-public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LocalMassType.WCoreDef
+public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LocalMassType.Bundle0001
 
 @[expose] public section
 

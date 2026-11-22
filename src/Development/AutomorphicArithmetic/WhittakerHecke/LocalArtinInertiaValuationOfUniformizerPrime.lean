@@ -1,18 +1,18 @@
 module
 
-public import Development.DiscreteGroups.GlobalIrreducibility.DzMatchCut
-public import Development.DiscreteGroups.GlobalIrreducibility.DzTameRec
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.DenseRangeUnits
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.AbsoluteGaloisAbelianizationEqOneOfMemOpenSubgro
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsOpenIdeleSubgroupContainsCongruenceUnits
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsAbelianizedGaloisHomOfClosureIso
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ArtinTransportAlgClosureEquiv
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.WeilGroupRestriction
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.GlobalArtinLocalIdeleInjective
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ChevalleyUnits
-public import GroundTheory.GlobalFields.NormResidueSymbol.FunctorialFinite
+public import Development.DiscreteGroups.GlobalIrreducibility.Bundle0005
+public import Development.DiscreteGroups.GlobalIrreducibility.Bundle0007
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0099
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0040
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0043
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0563
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0156
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0652
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0666
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0335
+public import GroundTheory.GlobalFields.NormResidueSymbol.Bundle0002
 public import CompanionTheory.AutomorphicTheory.UnitriangularMeasure.AdeleCoordinateMeasure.EllipticTorusNorm
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.GlobalArtinReciprocityHolds
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0302
 
 @[expose] public section
 
@@ -207,7 +207,7 @@ private theorem frob_fix : GlobalTheory.Published.GlobalArtinReciprocity → ∀
   haveI halg : Algebra.IsAlgebraic E Ω := IsAlgClosure.isAlgebraic
   haveI hac : IsAlgClosure (IntermediateField.adjoin E {π}) Ω :=
     ⟨IsAlgClosure.isAlgClosed E, Algebra.IsAlgebraic.tower_top (K := E) _⟩
-  obtain ⟨W, hW, hu, hAW, hNW, hunif⟩ := GlobalTheory.T.tameEisensteinExtension_unique_totallyRamified_place E Ω v A hA ϖ hϖ hϖ2 π hπ
+  obtain ⟨W, hW, hu, hAW, hNW, hunif⟩ := _root_.GlobalTheory.TameRecPlace.main E Ω v A hA ϖ hϖ hϖ2 π hπ
   obtain ⟨artK, haK⟩ := hGAR (IntermediateField.adjoin E {π}) Ω
   have hg0 : IntermediateField.AdjoinSimple.gen E π ≠ 0 := by
     intro h0

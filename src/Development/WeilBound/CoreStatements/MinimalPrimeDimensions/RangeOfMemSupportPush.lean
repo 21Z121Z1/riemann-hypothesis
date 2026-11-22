@@ -1,7 +1,7 @@
 module
 
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IntersectionNumberEqGenericRankMulProjCurve
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsPowVanishingIdealLeAnnihilator
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0242
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0197
 public import Development.AbelianVarietyTheory.Proofs.CovolumeBounds.IsProjOverCompOfIsClosedImmersion
 
 @[expose] public section

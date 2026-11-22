@@ -1,7 +1,7 @@
 module
 
 public import Formalism.GradedWeylDivisibility.StatementE
-public import Formalism.GradedWeylDivisibility.FockSpaceTableaux.LEhwLemmas
+public import Formalism.GradedWeylDivisibility.FockSpaceTableaux.Bundle0014
 
 @[expose] public section
 

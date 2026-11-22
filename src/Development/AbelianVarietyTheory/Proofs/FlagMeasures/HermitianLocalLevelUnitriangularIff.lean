@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.SplitPlaceLatticeComponents
-public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.SelfDualAt
-public import Formalism.LocalToGlobal.HermitianForms.TiedStep
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0252
+public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.Bundle0008
+public import Formalism.LocalToGlobal.HermitianForms.Bundle0002
 
 @[expose] public section
 

@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Development.WeilBound.RepresentationTheoryGL.EisensteinSeries.SiegelEisensteinContinuation.StripEntire
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.DifferentiableAffLine
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0029
 
 @[expose] public section
 

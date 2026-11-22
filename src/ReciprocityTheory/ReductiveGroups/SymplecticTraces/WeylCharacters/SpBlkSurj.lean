@@ -2,7 +2,7 @@ module
 
 public import ReciprocityTheory.ReductiveGroups.SymplecticTraces.WeylCharacters.Statement
 public import ReciprocityTheory.ReductiveGroups.SymplecticTraces.WeylCharacters.SplitD
-public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.HighestWeights.Exists
+public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.HighestWeights.Bundle0005
 
 @[expose] public section
 

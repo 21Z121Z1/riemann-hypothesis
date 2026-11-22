@@ -2,12 +2,12 @@ module
 
 public import Mathlib
 public import Formalism.LocalToGlobal.PairingIndexBounds.OrthogonalChartLevels.FdOfCharts
-public import Formalism.LocalToGlobal.GroupLattices.PendingLemmas.InvarianceRepresentativesLaw
-public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.NatCastMemOfPlace
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.KernelThetaRelationOfIndicatorRelationSplitStatement
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.HomLatticeVolumeCompletionSplitPlaceStatement
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExistsAddMonoidHomOfLinearRelations
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.CoefInTranslate
+public import Formalism.LocalToGlobal.GroupLattices.PendingLemmas.Bundle0004
+public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.Bundle0016
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0185
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0140
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0009
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0090
 
 @[expose] public section
 
@@ -124,7 +124,7 @@ theorem xiEx_theta_general : letI := fun D : D7 => D.host.cmStar; ∀ (D : D7) (
     have hOKi := fun i : I a => hOK j hj i.1.1 i.1.2 i.2.1 i.2.2.1
     obtain ⟨hAdm0, hDat0, -, -, hsc0, -, -, hfr0⟩ := hOK j hj La₀ La₀' hL0 hL0'
 
-    obtain ⟨φ, -, hvol⟩ := GlobalTheory.T.homLattice_volume_completion_splitPlace D p X v j (ρ v) P hAA hρ1 hρ2
+    obtain ⟨φ, -, hvol⟩ := _root_.GlobalTheory.VolAt.vol_main D p X v j (ρ v) P hAA hρ1 hρ2
     let NN : (X.Pj j).Tup → Submodule (𝓞 D.host.E) (Fin ((X.Pj j).m + 1) → D.host.E) := fun L => fd.kerN j (La₀.1, L)
     let NN' : (X.Pj (j + 1)).Tup → Submodule (𝓞 D.host.E) (Fin ((X.Pj (j + 1)).m + 1) → D.host.E) :=
       fun L => fd.kerN (j + 1) (La₀'.1, L)

@@ -1,11 +1,10 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsFockMap
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsArchimedeanAdeleCMPrescribedEmbeddingValue
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FockVariableMultiplicationMemSpanHeisenbergOpera
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PiTensorMvPolynomialSubmoduleEqTopOfOneMulX
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FockHeisenbergOperatorISignatureConjApplyOne
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0922
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0947
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0955
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0968
 
 @[expose] public section
 

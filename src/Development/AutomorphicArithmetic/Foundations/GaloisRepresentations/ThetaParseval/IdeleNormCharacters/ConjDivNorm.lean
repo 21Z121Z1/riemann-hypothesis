@@ -3,7 +3,7 @@ module
 public import Mathlib
 public import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.ThetaParseval.IdeleNormCharacters.AbsFactsAlt
 public import Development.AutomorphicArithmetic.Foundations.Convolution.HermitianDescent.OffUnitsLeUnitIdl
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnitaryHeckeCharCMInfinityComponentGlobalUnit
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1088
 
 @[expose] public section
 

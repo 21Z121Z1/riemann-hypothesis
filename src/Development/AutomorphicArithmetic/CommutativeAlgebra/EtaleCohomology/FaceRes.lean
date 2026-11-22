@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Divisors.SecClass
-public import Development.EtaleCohomology.CohomologicalPurity.LeafTubeCutHoc
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0006
+public import Development.EtaleCohomology.CohomologicalPurity.Bundle0004
 
 @[expose] public section
 

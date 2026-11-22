@@ -2,10 +2,10 @@ module
 
 public import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.ThetaParseval.SchurStep
 public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.ContinuousInfiniteAdeleMap
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.IsSplitChartSplitChart
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ProductOfLocalLevelsUnitaryIsOpenIsCompactIsLeve
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdeleEqZeroOfComp
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BcCompFinAwayPtOfNotMem
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0305
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1081
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1861
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2490
 
 @[expose] public section
 

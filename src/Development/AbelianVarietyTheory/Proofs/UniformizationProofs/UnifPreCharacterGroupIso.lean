@@ -4,10 +4,10 @@ public import Mathlib
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.UnifUniqSt
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.ValCalc
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.DiscreteValuationRings.FamMod
-public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ValTorusPointAndTranslate
-public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.UnifPreAbelianPartIso
-public import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.ExistsAddEquivOfSplitTorusIso
-public import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.ValueAtUnitSection
+public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.Bundle0033
+public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.Bundle0009
+public import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.Bundle0002
+public import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.Bundle0007
 
 @[expose] public section
 

@@ -1,6 +1,6 @@
 module
 
-public import Formalism.SharpRestriction.GrowthBounds.LogarithmicSums.PrimeSums
+public import Formalism.SharpRestriction.GrowthBounds.LogarithmicSums.Bundle0001
 
 @[expose] public section
 

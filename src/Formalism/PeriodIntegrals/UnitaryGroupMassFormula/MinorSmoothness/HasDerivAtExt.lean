@@ -1,7 +1,7 @@
 module
 
 public import Formalism.HermitianCurvature.StatementQ
-public import Formalism.RealPlaceAnalysis.RealPlaceTaylor.CartanInvolutionConjTransposeMul
+public import Formalism.RealPlaceAnalysis.RealPlaceTaylor.Bundle0003
 public import Formalism.FormalDegreeBessel.FormalDegreeRatio.GBasic
 
 @[expose] public section

@@ -1,7 +1,7 @@
 module
 
 public import Development.WeilBound.CoreStatements.HodgeTatePoints.Comp1IdentityLeft
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.TaylorDiscriminants.WickVanishing.CanonA
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.TaylorDiscriminants.WickVanishing.Bundle0013
 
 @[expose] public section
 

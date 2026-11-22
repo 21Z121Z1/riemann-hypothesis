@@ -3,8 +3,8 @@ module
 public import Mathlib
 public import Development.WeilBound.RepresentationTheoryGL.GaloisPermutationReps.SubquotientEquivalence.IsTypeMap
 public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.TeichmullerInertiaLabelCondition
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsTameGenAt
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ValuationApplyOfWild
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0234
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0079
 
 @[expose] public section
 

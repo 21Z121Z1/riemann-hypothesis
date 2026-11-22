@@ -3,19 +3,17 @@ module
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.ThetaMod
 public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.ExistsUniqueVec
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExistsInertLocalDatumAtInertPlace
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.InertDoubleCosetOperatorEqInertHeckeOperator
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.InertDatumLocalMemUnitaryGroupAntidiagonal
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.InertDatumLocalStdLatticeStabilizerMemMaxCompact
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExistsTrivOutsideInertDatumLocalEq
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.InertDatumLocalInjectiveOnTrivOutside
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.InertDatumLocalMemUnitaryGroupAntidiagonalStatement
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.InertDatumLocalStdLatticeStabilizerMemMaxCompactStatement
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExistsTrivOutsideInertDatumLocalEqStatement
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.InertDatumLocalInjectiveOnTrivOutsideStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.StableLatticeEqZpowStdInertCompletionStatement
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.IsParamFunVIffIsSysParamDOfLevel
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsParamDefinite
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0290
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0222
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0221
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0220
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0216
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0333
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0329
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.StableLatticeEqZpowStdInertCompletion
+public import Formalism.SatakeDualWeyl.KpqSubgroupCompact
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0315
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0713
 public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.InertPlaceHeckeDoubleCosetsInverseRepsLabel
 
 @[expose] public section
@@ -73,7 +71,7 @@ theorem exists_scalar {E : Type} [Field E] [NumberField E] {w : HeightOneSpectru
   obtain ⟨N, hN0, hN⟩ := exists_den (Valued.v : Valuation (w.adicCompletion E) _)
     (fun p : (Fin n × Fin n) ⊕ (Fin n × Fin n) => Sum.elim (fun a => g.1 a.1 a.2) (fun a => (g⁻¹).1 a.1 a.2) p)
   obtain ⟨x, hx1, hx2⟩ := hU.2.2.2.2.1
-  obtain ⟨k, hk⟩ := GlobalTheory.T.stable_lattice_eq_zpow_std_inert_completion E w σ hU.1 hU.2.1 ⟨x, hx1, hx2⟩ ϖ hϖ n L N hN0
+  obtain ⟨k, hk⟩ := _root_.GlobalTheory.LocLatInert.stable_lattice_eq_zpow_std E w σ hU.1 hU.2.1 ⟨x, hx1, hx2⟩ ϖ hϖ n L N hN0
     (fun a ha y hy => (hL _).2 fun i => by
       rw [Matrix.mulVec_smul, Pi.smul_apply, smul_eq_mul, map_mul]
       exact mul_le_one' ha (hy i))
@@ -162,12 +160,12 @@ theorem sum_reps_eq {L : Type} [Field L] [NumberField L] [IsCMField L] {n : ℕ}
     (hR : GlobalTheory.SphLabelOps.Reps (GlobalTheory.InertSph.Kv L n v) a R) (W : Type) [AddCommGroup W] [Module ℂ W]
     (φ : GAf L n → W) (hφ : ∀ κ ∈ Umax L n, TrivOutside {v} κ → NG.rt L n κ φ = φ) :
     ∑ γ ∈ R, NG.rt L n γ φ = heckeFunI L n (Umax L n) Dv
-      (Formalism.UG.dosetInd ℂ (Formalism.UG.KU Dv.σw n) ⟨Dv.loc a, GlobalTheory.T.inertDatum_local_mem_unitaryGroup_antidiagonal L n v w Dv a⟩) φ := by
+      (Formalism.UG.dosetInd ℂ (Formalism.UG.KU Dv.σw n) ⟨Dv.loc a, _root_.GlobalTheory.inertLoc_mem_GU L n v w Dv a⟩) φ := by
   classical
-  have h1 := GlobalTheory.T.inertDatum_local_mem_unitaryGroup_antidiagonal L n v w Dv
-  have h2 := GlobalTheory.T.inertDatum_local_stdLatticeStabilizer_mem_maxCompact L n v w Dv
-  have h3 := GlobalTheory.T.exists_trivOutside_inertDatum_local_eq L n v w Dv
-  have h4 := GlobalTheory.T.inertDatum_local_injective_on_trivOutside L n v w Dv
+  have h1 := _root_.GlobalTheory.inertLoc_mem_GU L n v w Dv
+  have h2 := _root_.GlobalTheory.InertStdLat.loc_mem_KU L n v w Dv
+  have h3 := _root_.GlobalTheory.InertLift.exists_trivOutside_loc_eq L n v w Dv
+  have h4 := _root_.GlobalTheory.InertLocInj.loc_injective L n v w Dv
   set K := InertSph.Kv L n v
   have tR : ∀ γ ∈ R, TrivOutside {v} γ := by
     intro γ hγ
@@ -350,7 +348,7 @@ theorem exists_frame {hF : D.host.F = maximalRealSubfield D.host.E} {PV : princi
       rw [← Matrix.mul_assoc, ← Formalism.UG.cT_mul, Matrix.mul_assoc, ← Units.val_mul, mul_assoc Dv.P⁻¹,
         mul_inv_cancel_left, Units.val_mul, Formalism.UG.cT_mul, Matrix.mul_assoc, ← Matrix.mul_assoc _ U.1, h1,
         Matrix.one_mul, Dv.Panti]
-    obtain ⟨κ, hκ, eκ⟩ := GlobalTheory.T.exists_trivOutside_inertDatum_local_eq _ _ v w Dv _ hy
+    obtain ⟨κ, hκ, eκ⟩ := _root_.GlobalTheory.InertLift.exists_trivOutside_loc_eq _ _ v w Dv _ hy
     have hUi : U ∈ (Formalism.UG.bc (n := Fin V.rank) (Formalism.UG.intL (w.adicCompletion D.host.E)).subtype).range :=
       (GlobalTheory.InertDoubleCoset.mem_range_iff _ _).2 ⟨i1, i2⟩
     have hκU : κ ∈ Umax D.host.E V.rank := GlobalTheory.InertUmax.mem_Umax_of_trivOutside_of_loc_integral _ _ v w Dv κ hκ
@@ -404,8 +402,8 @@ theorem exists_sphOp {n : ℕ} (hn : V.rank = n) {hF : D.host.F = maximalRealSub
           heckeFunI D.host.E n (Umax D.host.E n) Dv (Formalism.UG.dosetInd ℂ (Formalism.UG.KU Dv.σw n) t) φ := by
   subst hn
   obtain ⟨a, ha, hloc⟩ := exists_frame hs hw Dv hc he ht
-  obtain ⟨x, hx, ex⟩ := GlobalTheory.T.exists_trivOutside_inertDatum_local_eq _ _ v w Dv _ t.2
-  obtain ⟨R, hR⟩ := GlobalTheory.InertDCOp.exists_reps Dv (GlobalTheory.T.inertDatum_local_mem_unitaryGroup_antidiagonal _ _ v w Dv) (GlobalTheory.T.inertDatum_local_stdLatticeStabilizer_mem_maxCompact _ _ v w Dv) hx
+  obtain ⟨x, hx, ex⟩ := _root_.GlobalTheory.InertLift.exists_trivOutside_loc_eq _ _ v w Dv _ t.2
+  obtain ⟨R, hR⟩ := GlobalTheory.InertDCOp.exists_reps Dv (_root_.GlobalTheory.inertLoc_mem_GU _ _ v w Dv) (_root_.GlobalTheory.InertStdLat.loc_mem_KU _ _ v w Dv) hx
   refine ⟨R, ?_, fun W _ _ φ hφ => ?_⟩
   · obtain ⟨e, f, hef⟩ := GlobalTheory.IdemSupport.exists_isPrimeIdem (comp_finAdEquiv D) w
     obtain ⟨ϖ, p1, p2⟩ : ∃ ϖ ∈ w.asIdeal, ϖ ∉ w.asIdeal ^ 2 :=

@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.WeilBound.ThetaLifts.LatticeBasics.HodgeTateFromSandwich
+public import Development.WeilBound.ThetaLifts.LatticeBasics.Bundle0007
 public import Development.WeilBound.ThetaLifts.LatticeBasics.ExistsIsHeckeLOfCompleted
 
 @[expose] public section

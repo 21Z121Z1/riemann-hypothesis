@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.SplitComps
-public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsSncModel
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.Bundle0011
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.Bundle0008
 
 @[expose] public section
 

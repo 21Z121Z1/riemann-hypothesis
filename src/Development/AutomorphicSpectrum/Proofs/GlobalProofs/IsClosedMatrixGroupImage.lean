@@ -1,10 +1,10 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.IsClosedEmbeddingOfLocallyCompact
-public import GroundTheory.AutomorphicForms.DixmierMalliavin
+public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.Bundle0007
+public import GroundTheory.AutomorphicForms.Bundle0015
 public import GroundTheory.AutomorphicForms.HarishChandraRegularity.ExpHaar
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsSmoothLogMemLieAlg
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0077
 
 @[expose] public section
 

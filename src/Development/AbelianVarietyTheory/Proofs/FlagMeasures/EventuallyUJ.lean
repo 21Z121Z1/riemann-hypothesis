@@ -1,26 +1,25 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.ActSingleNeZero
-public import Development.AbelianVarietyTheory.Statements.CuspFrameWeights.EigenfunctionFiniteCoefficients
+public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.Bundle0010
+public import Development.AbelianVarietyTheory.Statements.CuspFrameWeights.Bundle0001
 public import Formalism.RealPlaceAnalysis.RealPlaceTaylor.FirstSlotSliceSlotMixedCasimirZero
 public import Formalism.RealPlaceAnalysis.RealPlaceTaylor.IsCompactInvariantOrthogonalInf
 public import Formalism.RealPlaceAnalysis.FinalF
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.InnerRepK
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.PhiPositiveDefiniteCholeskyFormula
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.KTypeExtendsHolomorphicComplexifiedK
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.PsiPolarDecompositionEquivariance
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.PsiRestrictionHolomorphicNearOne
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0162
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0168
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0165
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0221
 public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.PsiEntriesRealAnalytic
 public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.PsiEntriesCentreEigenfunctionsDiscreteSeries
 public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.DerivedModuleCoefficientsAndStableFlows
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsIsDerLowKSub
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.IteratedDerivLine
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.NotCdomAdd
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.HighestWeightDerivativeSumZeroStatement
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.HighestWeightGapBoundStatement
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.HighestWeightEventuallyZeroStatement
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.LowestKTypeAnalyticStatement
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0311
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0164
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0185
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0202
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.HighestWeightGapBound
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.HighestWeightEventuallyZero
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.LowestKTypeAnalytic
 
 @[expose] public section
 
@@ -190,7 +189,7 @@ theorem formulaGap : StrictLow → FormulaGap := by
   have hU := hσ.2.2.1
   have hS := (hSL n ε lam hlam H σ hσ).1
   obtain ⟨V, E, hD, hSV⟩ := GlobalTheory.DerEx.exists_isDer_lowKSub n ε lam H σ hU hS
-  have han := GlobalTheory.T.lowest_K_type_analytic n ε H σ V E lam hU hD hS hSV u hu X hX.1
+  have han := _root_.GlobalTheory.Jet.Anal.lowK_analytic n ε H σ V E lam hU hD hS hSV u hu X hX.1
   obtain ⟨hw1, hwS, hwt⟩ := hw
   generalize lowKSub ε lam σ = S at *
   haveI := hS.1
@@ -206,7 +205,7 @@ theorem formulaGap : StrictLow → FormulaGap := by
   have hsm : ∀ (x : V) (y : H), SmoothOnG ε (fun z => ⟪y, diffOp ε lam σ τ ⟨w, hwS⟩ z x⟫_ℂ) := fun x y => by
     rw [inner_diffOp]
     exact Line.smooth_comb _ (hD.2.2.2 x _) (hA _ _).smooth
-  have hjet := GlobalTheory.T.highest_weight_gap_bound n ε H σ V E lam g₀ ⟨w, hSV hwS⟩ hU hD hK hfd hg1 hg2
+  have hjet := _root_.GlobalTheory.Jet.Germ.germ_jet_zero n ε H σ V E lam g₀ ⟨w, hSV hwS⟩ hU hD hK hfd hg1 hg2
     (fun z => (diffOp ε lam σ τ ⟨w, hwS⟩ z : H →ₗ[ℂ] H)) ?_ ?_ ?_ ?_
   · rw [hsp] at hjet
     have h0 := Line.vanish_of_zero_jet n ε _ X (hsm ⟨u, hSV hu⟩ v) hX.1 (fun l => hjet l u hu v) (by
@@ -238,7 +237,7 @@ theorem formulaGap : StrictLow → FormulaGap := by
   · rw [hsp]
     exact fun x hx y => hsm ⟨x, hSV hx⟩ y
   · intro G hG y
-    filter_upwards [psi_near_one hlam hτ hτσ, GlobalTheory.T.highest_weight_eventually_zero n ε H σ V E lam _ hU hD hK hfd G hG y] with g h1 h2
+    filter_upwards [psi_near_one hlam hτ hτσ, _root_.GlobalTheory.Jet.SchmidIntegral.eab_integral_eq_zero n ε H σ V E lam _ hU hD hK hfd G hG y] with g h1 h2
     have h3 : ∀ a b, Eab ε a b (fun z => ⟪y, diffOp ε lam σ τ ⟨w, hwS⟩ z (at1 G a b : V)⟫_ℂ) (umat g) =
         ⟪S.starProjection y, σ (umat g) (E a b (at1 G a b) : V)⟫_ℂ + (-1) * ((Module.finrank ℂ S : ℂ) *
           Eab ε a b (fun z => ∫ k : KG ε, Phi lam (((toMK k)⁻¹ * z * toMK k).map star) *
@@ -248,7 +247,7 @@ theorem formulaGap : StrictLow → FormulaGap := by
       rw [(Coef.coef_flow n ε H σ V E hU hD).1 _ _ _ _ g.2]
       rfl
     have h4 := congrArg (fun x : V => ⟪S.starProjection y, σ (umat g) x⟫_ℂ)
-      (GlobalTheory.T.highest_weight_derivative_sum_zero n ε H σ V E lam _ hlam hσ hD hK hfd G hG)
+      (_root_.GlobalTheory.Jet.Schmid.mul_vminus_eq_zero n ε H σ V E lam _ hlam hσ hD hK hfd G hG)
     set_option synthInstance.maxHeartbeats 100000 in
       simp only [Submodule.coe_sum, map_sum, inner_sum, Submodule.coe_zero, map_zero, inner_zero_right] at h4
     simp only [ContinuousLinearMap.coe_coe, h3, Finset.sum_add_distrib, ← Finset.mul_sum, h2, h4]

@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.NonemptyPullbackGeneric
-public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExpandsGOfGenericRel
-public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsGenericRel
+public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.Bundle0146
+public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.Bundle0100
+public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.Bundle0128
 public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.QkToAkDescendsAlongBaseChange
 
 @[expose] public section

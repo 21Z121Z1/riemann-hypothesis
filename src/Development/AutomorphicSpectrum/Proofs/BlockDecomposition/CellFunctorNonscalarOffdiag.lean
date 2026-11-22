@@ -3,8 +3,8 @@ module
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.IsSubquotientDetRepParInd
 public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.ExistsCellOfIsSubquotient
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CellFunctorScalarUniformizer
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.CentralExponentBoundOver
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0824
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0035
 
 @[expose] public section
 

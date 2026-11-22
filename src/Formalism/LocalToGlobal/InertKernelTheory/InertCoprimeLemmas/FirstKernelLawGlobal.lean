@@ -1,15 +1,15 @@
 module
 
 public import Formalism.LocalToGlobal.InertKernelTheory.ScalG
-public import Formalism.LocalToGlobal.InertKernelTheory.InertCoprimeLemmas.RepAsm
-public import Formalism.LocalToGlobal.InertKernelTheory.InertCoprimeLemmas.RepScal
+public import Formalism.LocalToGlobal.InertKernelTheory.InertCoprimeLemmas.Bundle0006
+public import Formalism.LocalToGlobal.InertKernelTheory.InertCoprimeLemmas.Bundle0005
 public import Formalism.LocalToGlobal.InertKernelTheory.InertCoprimeLemmas.RepDataRec
 public import Formalism.LocalToGlobal.InertKernelTheory.InertCoprimeLemmas.AlgebraicTranslatesAllData
 public import Formalism.LocalToGlobal.InertKernelTheory.InertCoprimeLemmas.RepFrame
 public import Formalism.LocalToGlobal.InertKernelTheory.InertCoprimeLemmas.RepTrace
 public import Formalism.LocalToGlobal.InertKernelTheory.InertCoprimeLemmas.RepFrob
 public import Formalism.LocalToGlobal.InertKernelTheory.InertCoprimeLemmas.RepDict
-public import Formalism.LocalToGlobal.InertKernelTheory.InertCoprimeLemmas.JetsOrth
+public import Formalism.LocalToGlobal.InertKernelTheory.InertCoprimeLemmas.Bundle0002
 public import Formalism.LocalToGlobal.InertKernelTheory.InertCoprimeLemmas.GlobalOrthonormalBasisFour
 public import Formalism.LocalToGlobal.InertKernelTheory.InertCoprimeLemmas.IntWAPlaces
 public import Formalism.LocalToGlobal.InertKernelTheory.AdmissibleEleventhInert

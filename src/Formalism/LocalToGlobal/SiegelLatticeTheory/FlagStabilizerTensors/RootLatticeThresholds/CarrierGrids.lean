@@ -2,8 +2,8 @@ module
 
 public import Mathlib
 public import Formalism.LocalToGlobal.SiegelLatticeTheory.FlagStabilizerTensors.RootLatticeThresholds.CarrierSizes
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.ChebyshevExtremalPolynomials
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.GramProductIdentities
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0007
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0021
 
 @[expose] public section
 

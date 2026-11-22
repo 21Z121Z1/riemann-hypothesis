@@ -1,12 +1,12 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Divisors.DivisorSupportCondition
-public import Development.AbelianVarietyTheory.Definitions.Divisors.SecClass
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EtaleLocallyIffAffineEtalePointCoverStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ChosenInjectiveResolutionEtaleSheafSectionsExactStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SchClsCocycleSecStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.StrictlyHenselianIff
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0007
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0006
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0340
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0433
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0363
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0524
 
 @[expose] public section
 

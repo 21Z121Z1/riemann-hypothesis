@@ -1,17 +1,16 @@
 module
 
 public import Mathlib
-public import Formalism.LocalToGlobal.GaloisLevelStructure.TiedLevel
+public import Formalism.LocalToGlobal.GaloisLevelStructure.Bundle0001
 public import Formalism.LocalToGlobal.GaloisLevelStructure.DefsAutLoc
 public import Formalism.LocalToGlobal.NormalizedHeckeFactors.HeckeStdTwOfStd
-public import Formalism.LocalToGlobal.NormalizedHeckeFactors.TwoPowS0EqTwoPartModulus
+public import Formalism.LocalToGlobal.NormalizedHeckeFactors.Bundle0003
 public import Formalism.LocalToGlobal.NormalizedHeckeFactors.RingHomOfBaseOrderToFraction
 public import Formalism.LocalToGlobal.IndefiniteReal.DoubleCosetOperators.Objects
 public import Formalism.LocalToGlobal.IndefiniteReal.DoubleCosetOperators.TwistedCharacterValue
 public import Formalism.LocalToGlobal.GaloisLevelStructure.DefsRowLoc
 public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.LocAutHodgeTateWeightsLevelZeroDef
-public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.CGTrue
-public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.ConcreteTwistFrameExtraExcludedOverSmallPrimes
+public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.Bundle0020
 
 @[expose] public section
 

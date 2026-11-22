@@ -3,12 +3,12 @@ module
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.LatAtLattice
 public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ValuedLtOfMem
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.BaseFieldsPrimesOk
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.TrueColumnSpacesStandardInFrameCoords
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0117
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0297
 public import Formalism.LocalToGlobal.Columns.RecLevelLocF
-public import Formalism.LocalToGlobal.Columns.RecLevelLocP
-public import Formalism.LocalToGlobal.Columns.BtExistsSmulLeOfFg
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.LevelFunctionalLevelVectorLaws
+public import Formalism.LocalToGlobal.Columns.Bundle0013
+public import Formalism.LocalToGlobal.Columns.Bundle0012
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0121
 public import Formalism.LocalToGlobal.Columns.AdelicLemmas
 
 @[expose] public section

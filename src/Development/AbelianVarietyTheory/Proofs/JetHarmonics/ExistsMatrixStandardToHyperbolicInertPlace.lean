@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Jets.IsSelfOf
+public import Development.AbelianVarietyTheory.Definitions.Jets.Bundle0003
 public import Development.AbelianVarietyTheory.Definitions.Jets.TwoPlaces
 
 @[expose] public section

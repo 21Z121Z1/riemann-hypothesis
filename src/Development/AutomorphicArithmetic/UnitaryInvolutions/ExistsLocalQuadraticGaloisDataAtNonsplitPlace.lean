@@ -1,9 +1,9 @@
 module
 
-public import Development.AbelianVarietyTheory.Definitions.Divisors.SimpleTwistedTraceFormulaStable
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0026
 public import Development.AutomorphicArithmetic.Foundations.Convolution.HermitianDescent.IsHerm
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PlaceConjugationPropertiesCmField
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LocalTwistContinuousInvolutionIntegralProperties
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1277
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1310
 
 @[expose] public section
 
@@ -272,5 +272,5 @@ theorem UpperTheory.exists_local_quadratic_galois_data_at_nonsplit_place :
           (∀ x : Ov E w, (∀ m : ℕ, ∃ e, x = ϖ ^ m * e) → x = 0) ∧
           Finite (Ov E w ⧸ Ideal.span {ϖ}) ∧ IsUnit (ω - c ω) := by
   intro E _ _ _ hU w hw
-  obtain ⟨ϖ, q, hq, -⟩ := ((GlobalTheory.T.placeConjugation_properties_cmField E hU w).2.2.2.1 hw).2.1
+  obtain ⟨ϖ, q, hq, -⟩ := ((_root_.GlobalTheory.ConjAtPlace.main E hU w).2.2.2.1 hw).2.1
   exact UpperTheory.G3.FixRing.fixed_ring_data hq

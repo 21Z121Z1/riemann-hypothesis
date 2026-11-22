@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.IsBiSmooth
-public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.ThetaIdentityOfMapsAll
+public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.Bundle0017
+public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.Bundle0014
 
 @[expose] public section
 

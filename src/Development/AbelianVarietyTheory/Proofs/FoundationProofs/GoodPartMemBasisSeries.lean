@@ -2,8 +2,8 @@ module
 
 public import Mathlib
 public import Formalism.SharpRestriction.LevelLetterCocycles.IntegralHeckeForms
-public import Development.AbelianVarietyTheory.BlockTheory.TorsionBlocks.ToricLatticeDenominators
-public import Development.AbelianVarietyTheory.Proofs.CoherentCohomologyProofs.LengthCommensurableSpanSpanOfDetNeZero
+public import Development.AbelianVarietyTheory.BlockTheory.TorsionBlocks.Bundle0004
+public import Development.AbelianVarietyTheory.Proofs.CoherentCohomologyProofs.Bundle0008
 
 @[expose] public section
 

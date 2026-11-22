@@ -1,9 +1,9 @@
 module
 
 public import ReciprocityTheory.DualLattices.MatEquivApply
-public import ReciprocityTheory.DualLattices.BlockOneMulMulBlockOne
-public import ReciprocityTheory.DualLattices.ProdDvdOfIso
-public import ReciprocityTheory.DualLattices.HasLenCokerDet
+public import ReciprocityTheory.DualLattices.Bundle0013
+public import ReciprocityTheory.DualLattices.Bundle0015
+public import ReciprocityTheory.DualLattices.Bundle0021
 public import Formalism.LocalToGlobal.CharacterGerms.ExistsStrictMonoMinor
 
 @[expose] public section

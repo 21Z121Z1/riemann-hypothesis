@@ -1,12 +1,12 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Divisors.SiegelWeilAnisotropicHermitian
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0044
 public import Development.AbelianVarietyTheory.Definitions.Divisors.CTSmallCone
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsUSplittingTrRep
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0213
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdditiveHomogeneousOperatorLinear
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SchroedingerOperatorHeisenbergInnerPreserving
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LocalLinearOperatorL2Isometry
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0274
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1226
 
 @[expose] public section
 

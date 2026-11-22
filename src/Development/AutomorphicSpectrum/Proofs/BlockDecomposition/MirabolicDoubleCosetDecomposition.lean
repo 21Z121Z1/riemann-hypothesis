@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.AvgVanish
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0385
 
 @[expose] public section
 

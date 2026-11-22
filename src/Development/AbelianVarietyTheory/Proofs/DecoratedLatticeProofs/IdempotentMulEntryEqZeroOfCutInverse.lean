@@ -2,10 +2,10 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.IsCombAt
-public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.CombAtSingleZero
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsIdempotentComponentOfGroupElement
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.FinPartAlgebraMap
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.EqSumFiniteCoordsOfInfinitePartZero
+public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.Bundle0018
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0191
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0174
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0238
 
 @[expose] public section
 

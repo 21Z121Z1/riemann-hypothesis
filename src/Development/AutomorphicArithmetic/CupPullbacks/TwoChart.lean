@@ -1,10 +1,9 @@
 module
 
 public import Development.AutomorphicArithmetic.CupPullbacks.TwoDefs
-public import Development.AutomorphicArithmetic.CommutativeAlgebra.AffineLineHomExistsUniqueOfGlobalSection
-public import Development.AutomorphicArithmetic.CommutativeAlgebra.MultiplicativeGroupHomExistsUniqueOfUnit
-public import Development.AutomorphicArithmetic.CommutativeAlgebra.LocallyIsUnitOrIsUnitOfSpanPairEqTop
-public import Development.AutomorphicArithmetic.CommutativeAlgebra.EpiFreeBiprodDescOfZariskiLocallySurjective
+public import Development.AutomorphicArithmetic.CommutativeAlgebra.Bundle0011
+public import Development.AutomorphicArithmetic.CommutativeAlgebra.Bundle0012
+public import Development.AutomorphicArithmetic.CommutativeAlgebra.Bundle0028
 
 @[expose] public section
 

@@ -2,8 +2,8 @@ module
 
 public import Mathlib
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.LinCombTrivG
-public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.IsProperHomOfRelAmple
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.FirstCohomology.DimSplitPf
+public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.Bundle0095
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.FirstCohomology.Bundle0003
 
 @[expose] public section
 

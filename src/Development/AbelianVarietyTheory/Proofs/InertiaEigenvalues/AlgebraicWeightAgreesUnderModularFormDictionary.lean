@@ -1,21 +1,23 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.FinIso
+public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0020
 public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.RingSpecNormalisedCharacterEq
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.RecProdRecSatakeLL
-public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.StandardCosocleGL
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0690
+public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.Bundle0008
 public import Formalism.SharpRestriction.LevelLetterCocycles.SphericalInertData
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.DefiniteUnitaryAutFormEqZeroOfFinitePoints
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0710
 public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsDictionaryCmFieldAutomorphic
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsAdelicExtensionOfAlgebraicWeightDefiniteUn
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ArchimedeanUnitaryPointsEquivUnitaryGroup
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0718
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0212
 public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.UnitaryGroupFiniteDimensionalRepContainsHighestW
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.WeightEqOfFinitePartNeBot
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsPolyRep
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsPolynomialRepGLComplexAlgebraicWeightEvalPointStatement
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsHighestWeightVectorDualWeylModuleUpperStatement
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.DualWeylModuleIntertwinesGLOfUnitaryGroupStatement
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0248
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0037
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0059
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0712
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0225
+public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.ContinuousMapPFin
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0711
 
 @[expose] public section
 
@@ -209,7 +211,7 @@ theorem weight_agree : ∀ (L : Type) [Field L] [NumberField L] [IsCMField L] (n
   haveI : Nontrivial (ι → ℂ) := b.equivFun.symm.toEquiv.nontrivial
   obtain ⟨lam, M₀, hM₀⟩ := GlobalTheory.UnitaryContainsType.exists_smallRep_intertwining n (ι → ℂ) σ hσc
   let M : nablaSq ℂ n lam →ₗ[ℂ] (ι → ℂ) := M₀.toLinearMap
-  have hM := GlobalTheory.T.dualWeylModule_intertwines_GL_of_unitaryGroup n lam ι Φ hΦ M fun u v => Representation.IntertwiningMap.isIntertwining _ _ M₀ u v
+  have hM := _root_.GlobalTheory.AlgWtHW.sqRep_intertwines_of_unitary n lam ι Φ hΦ M fun u v => Representation.IntertwiningMap.isIntertwining _ _ M₀ u v
   have hirr := GlobalTheory.DefU.isIrreducible_sqRep n lam
   have hinj : ∀ v, v ≠ 0 → M v ≠ 0 := by
     intro v hv hMv
@@ -223,7 +225,7 @@ theorem weight_agree : ∀ (L : Type) [Field L] [NumberField L] [IsCMField L] (n
       exact hv (by rw [← Submodule.mem_bot ℂ, ← h1]; exact hMv)
     · have h1 : LinearMap.ker M = ⊤ := congrArg Subrepresentation.toSubmodule h
       exact hM₀ (Representation.IntertwiningMap.ext (LinearMap.ker_eq_top.1 h1))
-  obtain ⟨v₀, hv₀, hw⟩ := GlobalTheory.T.exists_highest_weight_vector_dualWeylModule_upper n lam
+  obtain ⟨v₀, hv₀, hw⟩ := _root_.GlobalTheory.HwUpper.exists_hw_upper n lam
   refine ⟨lam, ?_, ι, inferInstance, inferInstance, b, P, hP, M v₀, hinj v₀ hv₀, fun A hA => ?_⟩
   · obtain ⟨f, hf, hf0⟩ := Submodule.exists_mem_ne_zero_of_ne_bot π.irrS.2.1
     obtain ⟨x₀, hx₀⟩ : ∃ x, f x ≠ 0 := by

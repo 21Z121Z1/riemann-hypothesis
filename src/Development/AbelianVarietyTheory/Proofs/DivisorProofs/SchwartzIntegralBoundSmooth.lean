@@ -1,10 +1,10 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.OnMatInfOfIsUnit
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SandCLMInfApply
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsArchimedeanRapidKernelOperatorFinsetSum
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SumNormEntriesMulLe
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0837
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0864
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0858
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0113
 
 @[expose] public section
 

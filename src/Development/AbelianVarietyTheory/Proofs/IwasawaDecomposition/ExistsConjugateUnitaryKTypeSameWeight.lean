@@ -2,8 +2,8 @@ module
 
 public import Mathlib
 public import Formalism.SharpRestriction.CuspSpanNormBounds.RelevantZeroGramTerms
-public import ReciprocityTheory.DualLattices.FischerSelfNeZero
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.TotalDegreeSubstFLe
+public import ReciprocityTheory.DualLattices.Bundle0017
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0027
 
 @[expose] public section
 

@@ -2,7 +2,7 @@ module
 
 public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.SchurOrthogonality.InstMeasurableSpaceMat
 public import Formalism.GradedWeylDivisibility.FinalC
-public import Formalism.GradedWeylDivisibility.FockSpaceTableaux.LHwinLemmas
+public import Formalism.GradedWeylDivisibility.FockSpaceTableaux.Bundle0006
 
 @[expose] public section
 

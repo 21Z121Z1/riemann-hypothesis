@@ -2,23 +2,22 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.Foundations.IsLamOfLSmulIff
-public import Development.AbelianVarietyTheory.Definitions.Foundations.LiftApplyOfMemAdmissibleSubalgebra
-public import Development.AbelianVarietyTheory.Definitions.Foundations.ExistsRootOfIsAlgClosed
+public import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0010
+public import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0006
 public import GroundTheory.PAdicHodge.AxLemma
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ThetaKillsFplusDiscreteFormStatement
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsCuspFunctionalOddWeightOddPrimeStatement
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ThetaBasisLinearCombination
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.IsCuspFunctionalValueGalBEquivariant
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.GalBMemKummerInvariantSet
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0207
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0200
+public import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0008
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0090
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0103
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0141
 public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.HeckeLetterPreservesBasisSet
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.KummerBettiModuleFreeFiniteStatement
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.IsThBSuccCoeffCongStatement
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsLinearLimitOfCompatibleFamilyStatement
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.MemSpanEigenOfBaseChangeEigenStatement
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.LineFunctionalEqPeriodMulStatement
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0161
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0203
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0046
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0033
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0054
 public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ValuationSubringNonunitsPowModEqZero
-public import Development.AbelianVarietyTheory.Definitions.Foundations.ThNSpec
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.CuspFunctionalValueModPrimePowUniqueOddWeightStatement
 
 @[expose] public section
 
@@ -127,8 +126,8 @@ theorem exists_limit [IsAlgClosure ℚ Ω] (X : Tower Ω ε) (A : ValuationSubri
   have hlA : (l : Ω) ∈ A.nonunits := (ValuationSubring.mem_nonunits_iff A).2 (val_l_lt_one hj)
   have hhol' : ∃ φ : ℂ → ℂ, X.an X.jK = (φ : Mero) ∧ DifferentiableOn ℂ φ Hs := hhol.imp fun _ h => h.symm
   have hex : ∀ n, ∀ b ∈ X.B N l w, ∃ φ, IsThB X A N l n b φ := fun n b hb =>
-    (GlobalTheory.T.exists_cuspFunctional_oddWeight_oddPrime Ω ε X A N l inferInstance hhol' hl2 hlN (by omega) hlA n w hw b hb).imp fun _ h => h.1
-  obtain ⟨L, hL⟩ := GlobalTheory.T.exists_linearMap_limit_of_compatible_approximations l (X.Fn l) (X.B N l w)
+    (_root_.GlobalTheory.ThEx.thex Ω ε X A N l inferInstance hhol' hl2 hlN (by omega) hlA n w hw b hb).imp fun _ h => h.1
+  obtain ⟨L, hL⟩ := _root_.GlobalTheory.exists_linear_limit_of_compatible_family l (X.Fn l) (X.B N l w)
     (fun n b x => ∃ φ, IsThB X A N l n b φ ∧ x = lam (seqN D j φ)) C
     (fun n b hb => (hex n b hb).elim fun φ h => ⟨_, φ, h, rfl⟩)
     (by
@@ -199,7 +198,7 @@ theorem exists_period [IsAlgClosure ℚ Ω] (X : Tower Ω ε) (A : ValuationSubr
   obtain ⟨L, F, hL, hb, hg⟩ := exists_limit X A j hj hhol N w D hl2 hN hNl hw lam hfin C hC
   obtain ⟨F₀, hF₀⟩ := hρ
   obtain ⟨c, hc⟩ := GlobalTheory.T.theta_kills_Fplus_discrete_form l Ω ε X A hhol' (val_l_lt_one hj) N w F₀ hl2 hlN (by omega) hw
-  have := (GlobalTheory.T.kummerBettiModule_free_finite ε X ε.injective hhol N l w hl2 hN hNl hw).1
+  have := (_root_.GlobalTheory.KZ.B_free_finite ε X ε.injective hhol N l w hl2 hN hNl hw).1
   have hkill : ∀ i, L (σ i ![1, 0]) = 0 := by
     intro i
     have hsp := GlobalTheory.T.mem_span_eigen_of_baseChange_eigen' l (X.Fn l) {s : Ω ≃ₐ[ℚ] Ω // s ∈ Ine (F := ℚ) A ∧ ∀ y ∈ F₀, s y = y} (X.B N l w)
@@ -214,7 +213,7 @@ theorem exists_period [IsAlgClosure ℚ Ω] (X : Tower Ω ε) (A : ValuationSubr
     refine (Submodule.span_le (p := LinearMap.ker L)).2 ?_ hsp
     rintro _ ⟨b, hbB, hbe, rfl⟩
     refine eq_zero_of_le (C := C * ‖((l : ℕ) : Qbar l) ^ c‖⁻¹) (c := 0) fun n _ => ?_
-    obtain ⟨φ, hφ, -⟩ := GlobalTheory.T.exists_cuspFunctional_oddWeight_oddPrime Ω ε X A N l inferInstance hhol' hl2 hlN (by omega) hlA n w hw b hbB
+    obtain ⟨φ, hφ, -⟩ := _root_.GlobalTheory.ThEx.thex Ω ε X A N l inferInstance hhol' hl2 hlN (by omega) hlA n w hw b hbB
     have hlc : ((l : ℕ) : Qbar l) ^ c ≠ 0 := pow_ne_zero _ l_ne_zero
     have hp : 0 < ‖((l : ℕ) : Qbar l) ^ c‖ := norm_pos_iff.2 hlc
     have hc1 : 1 ≤ ‖((l : ℕ) : Qbar l) ^ c‖⁻¹ := by
@@ -234,7 +233,7 @@ theorem exists_period [IsAlgClosure ℚ Ω] (X : Tower Ω ε) (A : ValuationSubr
     refine (IsUltrametricDist.norm_add_le_max _ _).trans (max_le h2 ?_)
     rw [norm_neg]
     exact h1.trans (mul_le_mul_of_nonneg_right (le_mul_of_one_le_right hC0 hc1) (norm_nonneg _))
-  obtain ⟨κ, per, h1, h2⟩ := GlobalTheory.T.line_functional_eq_period_mul_alt l (X.Fn l) (Ω ≃ₐ[ℚ] Ω) (X.B N l w) (X.galB l) (fun s => mat ρ s) L F
+  obtain ⟨κ, per, h1, h2⟩ := _root_.GlobalTheory.line_functional_eq_period_mul l (X.Fn l) (Ω ≃ₐ[ℚ] Ω) (X.B N l w) (X.galB l) (fun s => mat ρ s) L F
     (fun K hK τ => (exists_restrict j τ.toRingEquiv).imp fun s hs => hg K hK τ s hs) m σ hσ hσg hkill
   exact ⟨L, κ, per, hL, hb, h1, h2⟩
 

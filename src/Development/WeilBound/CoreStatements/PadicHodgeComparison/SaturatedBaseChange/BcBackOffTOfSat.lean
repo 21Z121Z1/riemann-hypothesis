@@ -2,9 +2,9 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.Divisors.IsIntegralOpW
-public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.IsUnitarisableTrivChar
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SpehShapeIffOfDiscreteSpectrum
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsEquivOfIsSubquotient
+public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0024
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0697
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0645
 public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisGeometry₂.DualIsConjOfIsCsd
 
 @[expose] public section

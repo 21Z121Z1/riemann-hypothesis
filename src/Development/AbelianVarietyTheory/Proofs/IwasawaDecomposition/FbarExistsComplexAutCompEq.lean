@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Formalism.LocalToGlobal.NormalizedHeckeFactors.WittCoreInclusionMulVecMemLatticeCompletionAtPla
-public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.ConcreteTwistFrameExtraExcludedOverSmallPrimes
-public import Development.AbelianVarietyTheory.Proofs.HomogeneousIdeals.ExistsRingEquivOfIsTranscendenceBasis
+public import Formalism.LocalToGlobal.NormalizedHeckeFactors.Bundle0006
+public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.Bundle0020
+public import Development.AbelianVarietyTheory.Proofs.HomogeneousIdeals.Bundle0002
 
 @[expose] public section
 

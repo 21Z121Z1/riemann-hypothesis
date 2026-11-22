@@ -4,10 +4,10 @@ public import Mathlib
 public import Formalism.LocalRingCardinality.Params
 public import Formalism.LocalRingCardinality.DataCoeff
 public import Formalism.LocalRingCardinality.SpanPowerMembership.FmZeroHLatEmpty
-public import Formalism.LocalToGlobal.UnitaryNorms.RealCyclotomicTwoPower
+public import Formalism.LocalToGlobal.UnitaryNorms.Bundle0002
 public import Formalism.LocalToGlobal.UnitaryNorms.AdjoinCycZeta
 public import Formalism.LocalToGlobal.Divisibility.ConjugationAtDistinguishedPlace
-public import Formalism.LocalToGlobal.Divisibility.Tuples
+public import Formalism.LocalToGlobal.Divisibility.Bundle0001
 public import Formalism.LocalToGlobal.UnitaryNorms.IsUnitaryNormOf
 
 @[expose] public section

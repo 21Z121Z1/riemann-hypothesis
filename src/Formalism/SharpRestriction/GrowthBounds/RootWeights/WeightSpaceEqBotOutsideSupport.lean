@@ -1,6 +1,6 @@
 module
 
-public import Formalism.SharpRestriction.GrowthBounds.RootWeights.CyclicSubmoduleIsSubrepresentation
+public import Formalism.SharpRestriction.GrowthBounds.RootWeights.Bundle0003
 
 @[expose] public section
 

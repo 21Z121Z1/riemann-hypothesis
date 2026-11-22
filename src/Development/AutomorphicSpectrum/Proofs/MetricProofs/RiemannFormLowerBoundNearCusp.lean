@@ -3,15 +3,15 @@ module
 public import Mathlib
 public import Development.AutomorphicSpectrum.Definitions.MetricPeriods.IsEigFrames
 public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.BdryChart
-public import ReciprocityTheory.AnalyticForms.PlurisubharmonicFunctions.IsPshLocallyIntegrableStatement
+public import ReciprocityTheory.AnalyticForms.PlurisubharmonicFunctions.Bundle0001
 public import Development.AutomorphicSpectrum.Proofs.MetricProofs.SiegelOfRiemann
-public import Development.AutomorphicSpectrum.Proofs.MetricProofs.LogPeriodsSubframeDetBounds
-public import Development.AutomorphicSpectrum.Proofs.MetricProofs.FirstMinimumAndCuspWeightBoundsStatement
+public import Development.AutomorphicSpectrum.Proofs.MetricProofs.Bundle0029
+public import Development.AutomorphicSpectrum.Proofs.MetricProofs.FirstMinimumAndCuspWeightBounds
 public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.SymplecticPolydiscPeriodBasis
 public import GroundTheory.HeightsAndTheta.Heights.Regularisation.Assembly
 public import GroundTheory.HeightsAndTheta.Heights.Regularisation.PRiemannExtensionSlices
 public import GroundTheory.HeightsAndTheta.Heights.Regularisation.PPuncturedExpOrder
-public import GroundTheory.HeightsAndTheta.Heights.Regularisation.PLogCoverDescent
+public import GroundTheory.HeightsAndTheta.Heights.Regularisation.Bundle0005
 
 @[expose] public section
 
@@ -474,7 +474,7 @@ theorem uLogBound : ∀ (E : Type) [Field E] [NumberField E] [IsCMField E] (n a 
     obtain ⟨hli, hsp⟩ := hb.2 z hz1 τ
     have e : (L.riem w hw).B = L.B z := by rw [hzdef]; rfl
     rw [e, ← hsp, finrank_span_eq_card hli, Fintype.card_fin]
-  obtain ⟨-, -, -, -, hU⟩ := GlobalTheory.T.first_minimum_and_cusp_weight_bounds E g Λ Ψ (L.riem w hw) σ m hσ hrank hm
+  obtain ⟨-, -, -, -, hU⟩ := _root_.GlobalTheory.CompanionTheory.Ar.Cusp.cuspW_le E g Λ Ψ (L.riem w hw) σ m hσ hrank hm
   rw [← hzdef]
   have hone : (1 : ℝ) ≤ 1 + Real.log (Flat.logSize a z) := by linarith
   refine ⟨?_, ?_, ?_⟩

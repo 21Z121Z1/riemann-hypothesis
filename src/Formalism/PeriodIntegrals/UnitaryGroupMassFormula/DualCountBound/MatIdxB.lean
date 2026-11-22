@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.SmithMat
+public import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.Bundle0006
 
 @[expose] public section
 

@@ -1,6 +1,6 @@
 module
 
-public import Formalism.FlagUnipotentLattices.LatticeDeterminantIndexSq
+public import Formalism.FlagUnipotentLattices.Bundle0003
 public import Formalism.FlagUnipotentLattices.MinkowskiFactorialBounds.IntegerGroupLocalParametrization
 
 @[expose] public section

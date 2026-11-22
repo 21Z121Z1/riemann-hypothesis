@@ -4,17 +4,22 @@ public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.IsStepWeil
 public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.AdmissibleDiscreteSeriesOfHasParam
 public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.HarishChandraModulesOn
-public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.ExistsNormLeHeightPow
+public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.Bundle0007
 public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.HasDRepIffHasDerivAt
-public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.UnifModGrowthOfIsUnifModerate
+public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.Bundle0007
 public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsIntegralForm
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ThetaLiftCuspFormAutomorphicSmoothModerateGrowth
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.VacuumFockFromSquareIntegrability
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ThetaChainLiftsAreCuspFormsStatement
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ThetaModelsAreCoverDiscreteSeriesOfHarishChandraStatement
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.GkMapCuspFormsExtendsToSmoothVectorsStatement
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ThetaVacuumCharactersRealPlacesStatement
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsRealPlaceThetaObjectsTheoremARPartsStatement
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0353
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0196
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ThetaChainLiftsAreCuspForms
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0211
+public import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.Bundle0013
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0321
+public import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.Bundle0021
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0389
+public import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.Bundle0014
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0191
+public import Formalism.SharpRestriction.Divisibility.SchurIrreducible
+public import Formalism.LocalToGlobal.BesselHermitianTheta.Bundle0001
 
 @[expose] public section
 
@@ -361,9 +366,9 @@ theorem ioPair_of_rapid (D : D7) (X : ProvA) (hX : ChosenSeries X) (h3 : Formali
 theorem ioPair_onObjects : GlobalTheory.Published.DiscreteSeriesCover → GlobalTheory.Published.HarishChandraModules →
     GlobalTheory.Published.CuspRapidDecay → GlobalTheory.Published.CasselmanWallach → ∀ D : D7, GlobalTheory.Chain.IoPair D := by
   intro hD hH hC hW D
-  obtain ⟨X, hX, -, -, -, -, h3, -⟩ := GlobalTheory.T.exists_provA_discreteSeries_archimedeanRallis hD hH
-  exact ioPair_of_rapid D X hX h3 (GlobalTheory.T.thetaChainLifts_areCuspForms hD hH hC D) (GlobalTheory.Chain.LiftReg.liftProps_obj hC D)
-    (GlobalTheory.T.gkMapCuspForms_extends_to_smoothVectors hH hW D) (GlobalTheory.VacuumFockLaws.vacuumFock_onObjects D) (GlobalTheory.T.thetaVacuumCharacters_realPlaces D) (GlobalTheory.T.thetaModels_are_coverDiscreteSeries_of_harishChandra hD hH D) hC hH
+  obtain ⟨X, hX, -, -, -, -, h3, -⟩ := _root_.GlobalTheory.RealPlaceTheta.exists_record_theta hD hH
+  exact ioPair_of_rapid D X hX h3 (_root_.GlobalTheory.LiftCuspObj.liftCusp hD hH hC D) (GlobalTheory.Chain.LiftReg.liftProps_obj hC D)
+    (_root_.GlobalTheory.GKExtensionToSmoothVectors.gkExtension hH hW D) (GlobalTheory.VacuumFockLaws.vacuumFock_onObjects D) (_root_.GlobalTheory.VacuumCharacter.vacChar D) (_root_.GlobalTheory.CoverModel.modelsAreCoverSeries_all hD hH D) hC hH
 
 end GlobalTheory.Chain.IoLift
 

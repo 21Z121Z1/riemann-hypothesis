@@ -1,8 +1,8 @@
 module
 
 public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.MemOfAevalEqZero
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsPlaceWeightConjInvariantStatement
-public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.HodgeIPIffHodgeFormConj
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0065
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.Bundle0008
 
 @[expose] public section
 

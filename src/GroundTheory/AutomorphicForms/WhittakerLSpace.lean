@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import GroundTheory.AutomorphicForms.LocallyProfinite
-public import GroundTheory.AutomorphicForms.LocallyConstantCompact
+public import GroundTheory.AutomorphicForms.Bundle0004
+public import GroundTheory.AutomorphicForms.Bundle0007
 
 @[expose] public section
 

@@ -3,25 +3,28 @@ module
 public import Mathlib
 public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.ModelSmall
 public import Development.AutomorphicSpectrum.Statements.TowerExistence.GoodTowerExistsX
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.InterNamed
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArithmeticIntersection.MultihomogeneousIdeals.ExistsUniqueStatement
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsEmbeddingPieces
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.Bundle0012
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArithmeticIntersection.MultihomogeneousIdeals.Bundle0001
+public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0036
 public import Development.AutomorphicSpectrum.Definitions.MetricPeriods.HasMultiplier
 public import Development.AutomorphicSpectrum.Definitions.DivisibilityTowers.HeckeSectionsIsotropicCommutatorPairingPower
 public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.OverLaUnique
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.InterSt
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.Bundle0006
 public import Development.AbelianVarietyTheory.Definitions.RegularCharts.Reframe
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.RootOriginRootIndexBound
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.TriangularSpanCoeffRatio
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.FlagEqualChangeLowerTriangular
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.AbelianMapLieModelLatticeStatement
-public import Development.AbelianVarietyTheory.Proofs.GenericRegularity.FrameNormsContinuousAlongEmbeddingFamilies
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LieLatticeEvalFractionField
-public import Development.WeilBound.CoreStatements.CommonZeroEvaluation.ExistsLocalChartCentre
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0187
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0185
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0193
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0183
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.IsExcisionNbhdAway
+public import Development.AbelianVarietyTheory.Proofs.HomogeneousIdeals.GenericExistsUniqueOActOfIsGrpPullback
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.Bundle0006
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.Bundle0007
+public import Development.AbelianVarietyTheory.Proofs.GenericRegularity.Bundle0035
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0145
+public import Development.WeilBound.CoreStatements.CommonZeroEvaluation.Bundle0004
 public import Development.WeilBound.CoreStatements.CommonZeroEvaluation.SubringSpecMorphismExt
-public import Development.WeilBound.CoreStatements.CommonZeroEvaluation.LieLatticeLocalRing
 public import Development.WeilBound.CoreStatements.CommonZeroEvaluation.LieModelLocalSubringAction
-public import Development.WeilBound.CoreStatements.CommonZeroEvaluation.EigenLatticeDecomposition
+public import Development.WeilBound.CoreStatements.CommonZeroEvaluation.Bundle0002
 public import Development.WeilBound.CoreStatements.CommonZeroEvaluation.LieLatticeActionStable
 public import Development.WeilBound.CoreStatements.CommonZeroEvaluation.ConstantRegularAwayFibres
 
@@ -265,7 +268,7 @@ theorem diag_root_line : ∀ (E : Type) [Field E] [NumberField E] [IsCMField E] 
       have hx' : x ∈ Or.𝔐.dR s q := hx
       rw [hdRs] at hx'
       exact span_mono_subring hreg' hx'
-    have htw := GlobalTheory.T.abelian_map_lie_model_lattice E H Dw l Xo c _ _ Y Or.𝔐.X Or.𝔐.t Or.𝔐.f Or.𝔐.m RM.Ω Or.𝔐.ξ Or.𝔐.Li Or.𝔐.M Fr.y₀ Fr.pt_eq z d
+    have htw := _root_.GlobalTheory.CompanionTheory.Ar.Rec.FinRd.Roots.LieBasis.triIn_of_frBor E H Dw l Xo c _ _ Y Or.𝔐.X Or.𝔐.t Or.𝔐.f Or.𝔐.m RM.Ω Or.𝔐.ξ Or.𝔐.Li Or.𝔐.M Fr.y₀ Fr.pt_eq z d
       hbor (Small.labelC s) (labelRk Dw s) (Small.mult_labelC Dw s).symm (Or.Fl.b s) w
       (fun k => (Fr.tan_eq s k).symm) hw
     have htb : FinRd.Roots.TriIn (Or.Fl.b s) (fun k => Tm k k) b := fun k => ⟨Tm k, rfl, htri k, hT k⟩

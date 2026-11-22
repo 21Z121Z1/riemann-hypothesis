@@ -2,10 +2,9 @@ module
 
 public import Formalism.SharpRestriction.Divisibility.WeightAlgebra
 public import Mathlib
-public import Formalism.LogFactorialIndices.StatementIdx
+public import Formalism.LogFactorialIndices.Bundle0001
 public import Formalism.FilteredPoleLength.ReducedBasisBounds.LengthBaseChangeLocal
-public import Formalism.FilteredPoleLength.ReducedBasisBounds.FilteredPoleLength
-public import Formalism.FilteredPoleLength.ReducedBasisBounds.BetaSesquilinearity
+public import Formalism.FilteredPoleLength.ReducedBasisBounds.Bundle0002
 
 @[expose] public section
 

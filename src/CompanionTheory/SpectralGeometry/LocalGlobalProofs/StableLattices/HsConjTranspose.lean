@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.ParabolicSubgroupEquality
+public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.Bundle0049
 public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.LineFacts
 public import Formalism.RealPlaceAnalysis.RealPlaceTaylor.RightDerivativeZeroOutsideSupport
 

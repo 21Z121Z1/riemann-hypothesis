@@ -1,10 +1,10 @@
 module
 
-public import Formalism.SharpRestriction.GrowthBounds.HermitianTensor.PdAevalScale
+public import Formalism.SharpRestriction.GrowthBounds.HermitianTensor.Bundle0007
 public import Formalism.SharpRestriction.GrowthBounds.HermitianTensor.DetFactsP
-public import Formalism.SharpRestriction.GrowthBounds.HermitianTensor.DPsiMonomialIwh
+public import Formalism.SharpRestriction.GrowthBounds.HermitianTensor.Bundle0010
 public import Mathlib.LinearAlgebra.Matrix.Transvection
-public import Formalism.SharpRestriction.GrowthBounds.HermitianTensor.DetYNeZero
+public import Formalism.SharpRestriction.GrowthBounds.HermitianTensor.Bundle0008
 
 @[expose] public section
 

@@ -2,11 +2,10 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.ExistsSumMonomialAdd
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.BdRPlusFiltrationEqFontaineXiPow
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsCanonicalAcrisToBdRPlus
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.CanonicalAcrisToBdRPlusUniqueEquivariantApprox
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0062
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0063
 public import Development.AbelianVarietyTheory.CrystallinePeriods.RingIface
-public import Development.AbelianVarietyTheory.CrystallinePeriods.AdicMaps
+public import Development.AbelianVarietyTheory.CrystallinePeriods.Bundle0001
 
 @[expose] public section
 

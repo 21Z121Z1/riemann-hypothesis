@@ -3,7 +3,7 @@ module
 public import Mathlib
 public import Formalism.LocalToGlobal.IndefiniteReal.NormalDecomposition.DecompOfNormalStatement
 public import Formalism.LocalToGlobal.IndefiniteReal.PrimitiveStatementsWithPassage
-public import Formalism.LocalToGlobal.IndefiniteReal.LiftCoordinatesInGoodPartFamily
+public import Formalism.LocalToGlobal.IndefiniteReal.Bundle0017
 public import Formalism.LocalToGlobal.IndefiniteReal.LiftGoodPartComplexEqRangeFamily
 
 @[expose] public section

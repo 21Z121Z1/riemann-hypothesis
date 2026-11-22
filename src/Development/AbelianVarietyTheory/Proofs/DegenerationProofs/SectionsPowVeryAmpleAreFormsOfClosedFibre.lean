@@ -5,10 +5,10 @@ public import Development.AbelianVarietyTheory.Definitions.AbelianSchemeLaws.Fir
 public import Development.AbelianVarietyTheory.Definitions.AbelianSchemeLaws.IsScalarTowerOfAlgebraMapEq
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.CubeVal
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.UnifUniqSt
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.IsNsmul
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.QkToAkU
-public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsSectionsBasisBaseChangeH1VanishingStatement
-public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.SectionPull
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.Bundle0005
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.Bundle0006
+public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.Bundle0159
+public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.Bundle0016
 
 @[expose] public section
 
@@ -163,7 +163,7 @@ theorem GlobalTheory.Degen.sections_pw_are_forms_of_closed_fibre : ∀ (A : Type
   have hM := isLB_pw hH (t : ℤ)
   have hM₀ := isLB_pw hH₀ (t : ℤ)
   have hw : (pwIso w₀ t).IsGen := (isGen_iff _).2 (pgen_pwIso ((isGen_iff _).1 hw₀) t)
-  obtain ⟨m, τ, hτ⟩ := GlobalTheory.T.exists_sections_basis_baseChange_h1Vanishing A X f hf ⟨H, hH, n, s, hva⟩ _ hM K g₀ hg₀ X₀ π f₀ hπ _ (pwIso w₀ t) hM₀ hw h1
+  obtain ⟨m, τ, hτ⟩ := _root_.GlobalTheory.SecBasis.exists_basis A X f hf ⟨H, hH, n, s, hva⟩ _ hM K g₀ hg₀ X₀ π f₀ hπ _ (pwIso w₀ t) hM₀ hw h1
   choose τ₀ hτ₀ using fun i => GlobalTheory.SecPullIso.exists_pull π _ _ (pwIso w₀ t) hM hM₀ hw (τ i)
   have b₀ := hτ K g₀ X₀ π f₀ hπ _ (pwIso w₀ t) τ₀ hM₀ hw hτ₀
   have hid : IsPullback (𝟙 X) f f (Spec.map (CommRingCat.ofHom (RingHom.id A))) := by

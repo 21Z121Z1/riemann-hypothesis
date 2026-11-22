@@ -2,19 +2,19 @@ module
 
 public import Mathlib
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PlaceDivisors.StChartFH
-public import ReciprocityTheory.DualLattices.TowerZeroSurjective
-public import ReciprocityTheory.DualLattices.LinPairStatement
-public import ReciprocityTheory.DualLattices.LengthDegreeAbelianVariety
+public import ReciprocityTheory.DualLattices.Bundle0028
+public import ReciprocityTheory.DualLattices.Bundle0014
+public import ReciprocityTheory.DualLattices.Bundle0035
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.ChartPullbacks.UniversalCharts.LePreimageOfNil
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.Clauses
-public import ReciprocityTheory.DualLattices.SubMemOfCompat
+public import ReciprocityTheory.DualLattices.Bundle0031
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.SemiabelianSchemes.Biextensions.GenericFiberCubeInclusion
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.RosVal
-public import Development.AbelianVarietyTheory.Definitions.ModuliSpaces.IsSeparatedOfIsQProjOver
+public import Development.AbelianVarietyTheory.Definitions.ModuliSpaces.Bundle0002
 public import Development.AbelianVarietyTheory.Definitions.TeichmullerDepth.IsEigBasisIff
-public import ReciprocityTheory.DualLattices.HasLenCokerDet
-public import ReciprocityTheory.DualLattices.ProdDvdOfIso
-public import ReciprocityTheory.DualLattices.ColengthSqBlockVandermonde
+public import ReciprocityTheory.DualLattices.Bundle0021
+public import ReciprocityTheory.DualLattices.Bundle0015
+public import ReciprocityTheory.DualLattices.Bundle0013
 
 @[expose] public section
 

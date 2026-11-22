@@ -2,10 +2,10 @@ module
 
 public import Mathlib
 public import Formalism.LocalToGlobal.Divisibility.RowLat
-public import Formalism.QuotientMetricDivisors.DivIntoDualShift
-public import Formalism.QuotientMetricDivisors.ScalarLiftLowerBoundFull
+public import Formalism.QuotientMetricDivisors.Bundle0002
+public import Formalism.QuotientMetricDivisors.Bundle0005
 public import Formalism.ThetaSupremumBounds.DivIneqExplicit6
-public import Formalism.ThetaSupremumBounds.StatementCB
+public import Formalism.ThetaSupremumBounds.Bundle0001
 
 @[expose] public section
 

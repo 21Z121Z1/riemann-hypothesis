@@ -2,11 +2,10 @@ module
 
 public import Formalism.LatticeSlopes.Statement
 public import Formalism.LatticeSlopes.CovolAntiSameRank
-public import Formalism.LatticeSlopes.LatticeSlopesProofs.DiscreteTopologyOfLe
-public import Formalism.LatticeSlopes.LatticeSlopesProofs.CovolPos
+public import Formalism.LatticeSlopes.LatticeSlopesProofs.Bundle0001
+public import Formalism.LatticeSlopes.LatticeSlopesProofs.Bundle0002
 public import Formalism.LatticeSlopes.LatticeSlopesProofs.DegQuot
-public import Formalism.LatticeSlopes.LatticeSlopesProofs.SaturationProperties
-public import Formalism.LatticeSlopes.LatticeSlopesProofs.MuMaxAttained
+public import Formalism.LatticeSlopes.LatticeSlopesProofs.Bundle0004
 
 @[expose] public section
 

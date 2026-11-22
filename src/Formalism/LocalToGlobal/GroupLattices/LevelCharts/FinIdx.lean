@@ -1,10 +1,10 @@
 module
 
 public import Mathlib
-public import Formalism.SatakeDualWeyl.StatementC
+public import Formalism.SatakeDualWeyl.Bundle0001
 public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LevelProductIndex.ZeroMemLatSet
 public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LevelProductIndex.Development
-public import Formalism.LocalToGlobal.GroupLattices.LevelCharts.FiniteClassSetOfFiniteIndex
+public import Formalism.LocalToGlobal.GroupLattices.LevelCharts.Bundle0004
 
 @[expose] public section
 

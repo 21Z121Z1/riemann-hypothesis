@@ -2,8 +2,8 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.Divisors.ThetaSetupStructureMapComp
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WeightedLatticeQuadraticSumGeDiagonal
-public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.ConvexCones.FinitePosDefFormSublevel
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1990
+public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.ConvexCones.Bundle0006
 
 @[expose] public section
 

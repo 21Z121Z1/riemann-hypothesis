@@ -2,8 +2,8 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.StableIffCarrierEq
-public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.AssembleLattice
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.SemilinearBasisImageIndepOfBasis
+public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.Bundle0013
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0229
 public import Formalism.LocalRingCardinality.DataIdx
 
 @[expose] public section

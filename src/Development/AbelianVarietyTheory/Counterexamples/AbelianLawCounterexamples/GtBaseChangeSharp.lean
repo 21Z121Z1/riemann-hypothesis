@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.Laws3
+public import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.Bundle0017
 
 @[expose] public section
 

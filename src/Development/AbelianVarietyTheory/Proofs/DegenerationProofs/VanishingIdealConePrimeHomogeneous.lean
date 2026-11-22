@@ -2,8 +2,8 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.Degenerations.PullChartIsLB
-public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsUnitCharts
-public import Development.AbelianVarietyTheory.Proofs.ThetaFamilyOrigin.RingKrullDimOfEtaleMvPolynomial
+public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.Bundle0017
+public import Development.AbelianVarietyTheory.Proofs.ThetaFamilyOrigin.Bundle0001
 public import Development.AbelianVarietyTheory.Proofs.ToricGeometry.TangentBijectionOfValues
 
 @[expose] public section

@@ -1,9 +1,8 @@
 module
 
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.TheoremsMuLinked.LinkedRig
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.TheoremsMuLinked.Number
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.TheoremsMuLinked.AutP
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.IsoOfFrob
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.TheoremsMuLinked.Bundle0001
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.Bundle0005
 
 @[expose] public section
 

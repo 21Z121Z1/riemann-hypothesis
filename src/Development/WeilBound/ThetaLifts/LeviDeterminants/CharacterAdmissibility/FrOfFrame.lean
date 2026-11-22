@@ -1,12 +1,11 @@
 module
 
-public import Development.WeilBound.ThetaLifts.LeviDeterminants.CharacterAdmissibility.DoublingGramFromBlocks
+public import Development.WeilBound.ThetaLifts.LeviDeterminants.CharacterAdmissibility.Bundle0001
 public import Development.WeilBound.ThetaLifts.LeviDeterminants.CharacterAdmissibility.AdelicCoordinatesEvalZeroFormMemAdmissible
-public import Development.WeilBound.ThetaLifts.LeviDeterminants.CharacterAdmissibility.SchrodingerApplyZeroOfFst
-public import Development.WeilBound.ThetaLifts.LeviDeterminants.EvFrame
+public import Development.WeilBound.ThetaLifts.LeviDeterminants.Bundle0009
 public import Development.WeilBound.ThetaLifts.LeviDeterminants.MixedModels.PlaneC
-public import Development.WeilBound.ThetaLifts.LeviDeterminants.MCSpan
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EigenIntertwinerTransitive
+public import Development.WeilBound.ThetaLifts.LeviDeterminants.Bundle0004
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1664
 
 @[expose] public section
 

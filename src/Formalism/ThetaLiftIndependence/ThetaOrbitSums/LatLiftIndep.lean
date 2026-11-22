@@ -1,7 +1,7 @@
 module
 
 public import Formalism.ThetaLiftIndependence.Statement
-public import Formalism.HermitianLattices.HermitianLatticesProofs.IsomAct
+public import Formalism.HermitianLattices.HermitianLatticesProofs.Bundle0001
 
 @[expose] public section
 

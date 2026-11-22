@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import GroundTheory.HeightsAndTheta.Heights.AnalyticLimit.StLemmaETailLog
-public import GroundTheory.HeightsAndTheta.Heights.AnalyticLimit.StLemmaETailMass
+public import GroundTheory.HeightsAndTheta.Heights.AnalyticLimit.Bundle0001
+public import GroundTheory.HeightsAndTheta.Heights.AnalyticLimit.Bundle0004
 public import GroundTheory.HeightsAndTheta.Heights.AnalyticLimit.StTailLogOfMass
 
 @[expose] public section

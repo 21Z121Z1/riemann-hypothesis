@@ -1,10 +1,10 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Gl2LocalToAdelicEmbedding
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DifferentiableOfIsSm
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.InducedSectionZFinite
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsBlockEmb
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1389
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1133
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0167
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1342
 public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.ContinuousConjFin
 public import Development.AbelianVarietyTheory.Definitions.Foundations.T2SpaceTensorProductFiniteExtension
 

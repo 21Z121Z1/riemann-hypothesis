@@ -1,10 +1,10 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Proofs.GlobalProofs.IsAdaptedEmpty
-public import Development.AutomorphicSpectrum.Proofs.GlobalProofs.LanglandsDecompositionUnipotentLevi
-public import Development.AbelianVarietyTheory.Proofs.HeightProofs.AdelicUnitaryRealPointsStructureRealPlaces
-public import Formalism.LocalToGlobal.IndefiniteReal.RealSeparation.RealPtExHolds
+public import Development.AutomorphicSpectrum.Proofs.GlobalProofs.Bundle0052
+public import Development.AutomorphicSpectrum.Proofs.GlobalProofs.Bundle0054
+public import Development.AbelianVarietyTheory.Proofs.HeightProofs.Bundle0033
+public import Formalism.LocalToGlobal.IndefiniteReal.RealSeparation.Bundle0003
 public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ContinuousKapSymm
 
 @[expose] public section

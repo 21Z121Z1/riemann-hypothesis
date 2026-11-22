@@ -4,8 +4,8 @@ public import Mathlib
 public import Formalism.HermitianCurvature.StatementC
 public import Formalism.HermitianCurvature.StatementD
 public import Formalism.HermitianCurvature.StatementMA
-public import Formalism.HermitianCurvature.LowerBlockNormalisedBoundFromComponents
-public import Formalism.HermitianCurvature.LatticeHerglotzBound
+public import Formalism.HermitianCurvature.Bundle0003
+public import Formalism.HermitianCurvature.Bundle0004
 
 @[expose] public section
 

@@ -3,13 +3,13 @@ module
 public import Mathlib
 public import Formalism.LocalRingCardinality.RhoDetPrimeEqMuTildeMulChiPow
 public import Formalism.SharpRestriction.LevelLetterCocycles.LocalSituation
-public import Development.AbelianVarietyTheory.Definitions.Foundations.HTBasis
-public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.ExpStar
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.GalExtCContinuous
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsCycCycChar
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CyclotomicCharacterPadicBasicProperties
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.PadicNormZpowSubOnePadicValInt
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsCyclotomicTowerLevelGeneratorProperties
+public import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0010
+public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0008
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0133
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0135
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0128
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0139
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0164
 
 @[expose] public section
 

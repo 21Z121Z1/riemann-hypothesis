@@ -1,8 +1,8 @@
 module
 
-public import Formalism.SharpRestriction.CuspSpanNormBounds.LocSplitType
+public import Formalism.SharpRestriction.CuspSpanNormBounds.Bundle0005
 public import Formalism.SharpRestriction.CuspSpanNormBounds.CayleyDegreeNondegeneracy.GluingMassOfLiftNumberGenus
-public import Formalism.HermitianLattices.HermitianLatticesProofs.LocDual
+public import Formalism.HermitianLattices.HermitianLatticesProofs.Bundle0003
 
 @[expose] public section
 

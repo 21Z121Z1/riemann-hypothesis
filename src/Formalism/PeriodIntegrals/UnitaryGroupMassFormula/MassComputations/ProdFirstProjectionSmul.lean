@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.MassComputations.StrongApproxN
+public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.MassComputations.Bundle0001
 
 @[expose] public section
 

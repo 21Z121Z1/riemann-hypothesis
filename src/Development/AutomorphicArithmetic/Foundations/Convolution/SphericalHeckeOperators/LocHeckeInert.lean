@@ -3,9 +3,8 @@ module
 public import Development.AutomorphicArithmetic.Foundations.Convolution.SphericalHeckeOperators.SymSum
 public import Development.AutomorphicArithmetic.Foundations.Convolution.GeneralizedMeasures.LocHeckeInert
 public import Development.AutomorphicArithmetic.Foundations.Convolution.SphericalHeckeOperators.DeepHecke
-public import Development.AutomorphicArithmetic.Foundations.Convolution.SphericalHeckeOperators.PolyAlg
-public import Development.AutomorphicArithmetic.Foundations.Convolution.SphericalHeckeOperators.SphIndep
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.TraceFormula.OrbitalIntegrals.BrMain
+public import Development.AutomorphicArithmetic.Foundations.Convolution.SphericalHeckeOperators.Bundle0006
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.TraceFormula.OrbitalIntegrals.Bundle0001
 
 @[expose] public section
 

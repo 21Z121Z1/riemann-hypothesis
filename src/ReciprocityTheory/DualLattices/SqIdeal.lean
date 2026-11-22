@@ -1,9 +1,9 @@
 module
 
-public import ReciprocityTheory.DualLattices.PrimeHopfOrderStatement
-public import ReciprocityTheory.DualLattices.ImportsAlt
-public import ReciprocityTheory.DualLattices.VdetLeOfSpanLe
-public import ReciprocityTheory.DualLattices.FourierMapSmulLambdaWeight
+public import ReciprocityTheory.DualLattices.Bundle0011
+public import ReciprocityTheory.DualLattices.Bundle0017
+public import ReciprocityTheory.DualLattices.Bundle0012
+public import ReciprocityTheory.DualLattices.Bundle0010
 
 @[expose] public section
 

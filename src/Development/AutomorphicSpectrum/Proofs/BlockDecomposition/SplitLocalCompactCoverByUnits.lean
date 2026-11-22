@@ -1,10 +1,10 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.HypOneZeroZero
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0498
 public import Development.AbelianVarietyTheory.Definitions.Foundations.NonemptyAlgHomOfNotIsField
 public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.DoublingNormDetSplitPlaceLatticeIntersection
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsNormEqInv
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1297
 
 @[expose] public section
 

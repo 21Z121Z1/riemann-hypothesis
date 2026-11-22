@@ -1,8 +1,7 @@
 module
 
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.ClassCounting.LemmaKOfSteps
-public import Development.EtaleCohomology.CyclotomicDiscriminants.SZcTPf
-public import Development.EtaleCohomology.CyclotomicDiscriminants.SChainPf
+public import Development.EtaleCohomology.CyclotomicDiscriminants.Bundle0001
 
 @[expose] public section
 

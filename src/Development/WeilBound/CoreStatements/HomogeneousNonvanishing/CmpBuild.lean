@@ -4,14 +4,18 @@ public import Mathlib
 public import Development.AutomorphicSpectrum.Statements.GeometryStatements.CmpSt
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.BlowupProjections.BlowupProjStatement
 public import Development.AutomorphicSpectrum.Definitions.DivisibilityTowers.Proportional
-public import ReciprocityTheory.AnalyticForms.PotentialTheory.DegreeInhab
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.BlockExtensionArithVar
-public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.LineIsomorphismGroupoidLawsStatement
-public import Development.AutomorphicSpectrum.Proofs.MetricProofs.LineIsomorphismDefectFunctionStatement
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.BlockJoinInclusionsCompatStatement
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.BlockPullbackHermLineStatement
+public import ReciprocityTheory.AnalyticForms.PotentialTheory.Bundle0003
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0142
+public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.Bundle0031
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.ConjugateHermitianLineIsometries
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.InterRes
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArithmeticIntersection.RationalSections.ThmISt
+public import Development.AutomorphicSpectrum.Proofs.MetricProofs.Bundle0020
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0042
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0048
 public import Development.WeilBound.CoreStatements.HomogeneousNonvanishing.RCombine
-public import Development.AutomorphicSpectrum.Proofs.MetricProofs.LogResolutionCoversComplexPointsStatement
+public import Development.AutomorphicSpectrum.Proofs.MetricProofs.Bundle0033
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.Bundle0008
 public import Development.WeilBound.CoreStatements.HomogeneousNonvanishing.DenseNonvan
 
 @[expose] public section
@@ -145,8 +149,8 @@ theorem evC_bdry {κ₁ : K₁ → K} {v₁ : (Σ k, ι₁ k) → Σ k, ι k} (h
     (hz : ∀ x, Re.π x ∈ bdry S.s → evC (Re.R.lift x x) γ = 0) (x : R.X) (hx : π x ∈ bdry S.s) :
     evC (R.lift x x) (rename v₁ γ) = 0 := by
   have hmem : (fun p => R.lift x x (v₁ p)) ∈ mcPts P₁ :=
-    e ▸ (GlobalTheory.T.block_pullback_herm_line K₁ ι₁ K ι κ₁ v₁ hb).2.2.1 P _ (R.mem x x (R.mem_U x))
-  obtain ⟨x₁, hx₁⟩ := GlobalTheory.T.log_resolution_covers_complex_points K₁ ι₁ P₁ _ D Re.R Re.arith _ hmem
+    e ▸ (_root_.GlobalTheory.CompanionTheory.Ar.Cmp.hermLine_pull_blockMap K₁ ι₁ K ι κ₁ v₁ hb).2.2.1 P _ (R.mem x x (R.mem_U x))
+  obtain ⟨x₁, hx₁⟩ := _root_.GlobalTheory.CompanionTheory.Ar.Cmp.resolution_onto_complex_points K₁ ι₁ P₁ _ D Re.R Re.arith _ hmem
   rw [evC_rename, ← evC_eq_zero_iff_of_sameOrbit hγ hx₁]
   exact hz x₁ (hπ x x₁ hx₁ ▸ hx)
 
@@ -199,7 +203,7 @@ theorem assemble (hPB : PullbackStatement) {κ₁ : K₁ → K} {v₁ : (Σ k, �
       ∀ a x, ∀ u w : MRing ι', u * f a - w * g a ∈ mCoordIdeal y' → evC (Re.R.lift x x) u ≠ 0 →
         d a (Re.π x) = Real.log (‖evC (Re.R.lift x x) w‖ / ‖evC (Re.R.lift x x) u‖ *
           (Re.ref (Sum.inr a)).h (Re.R.lift x x) / (Re.ref (Sum.inl a)).h (Re.R.lift x x)) := by
-  have hjb := GlobalTheory.T.block_join_inclusions_compat
+  have hjb := _root_.GlobalTheory.CompanionTheory.Ar.Cmp.join_block_maps
   have e₀ : imageZ v (mCoordIdeal y') = mCoordIdeal y := by
     rw [hjb.2.1 K ι K' ι' κ v Ω y' hb, hy]
   have hc₁ : IsBlockMap (κ ∘ κ₁) (v ∘ v₁) := (hjb.2.2 K₁ ι₁ K ι K' ι' κ₁ v₁ κ v hb₁ hb).1
@@ -244,8 +248,8 @@ theorem assemble (hPB : PullbackStatement) {κ₁ : K₁ → K} {v₁ : (Σ k, �
       c2 := by
         rintro (a | a)
         exacts [(hm₁ a).2.2, (hm₂ a).2.2] }
-  have hp₁ := GlobalTheory.T.block_pullback_herm_line K₁ ι₁ K' ι' (κ ∘ κ₁) (v ∘ v₁) hc₁
-  have hp₂ := GlobalTheory.T.block_pullback_herm_line K₂ ι₂ K' ι' (κ ∘ κ₂) (v ∘ v₂) hc₂
+  have hp₁ := _root_.GlobalTheory.CompanionTheory.Ar.Cmp.hermLine_pull_blockMap K₁ ι₁ K' ι' (κ ∘ κ₁) (v ∘ v₁) hc₁
+  have hp₂ := _root_.GlobalTheory.CompanionTheory.Ar.Cmp.hermLine_pull_blockMap K₂ ι₂ K' ι' (κ ∘ κ₂) (v ∘ v₂) hc₂
   choose r₁ hr₁ using fun a => (hp₁.1 (Re₁.ref a)).exists
   choose r₂ hr₂ using fun a => (hp₂.1 (Re₂.ref a)).exists
   choose n₁ hn₁ using fun a t => (hp₁.1 (Re₁.line a t)).exists
@@ -288,14 +292,14 @@ theorem assemble (hPB : PullbackStatement) {κ₁ : K₁ → K} {v₁ : (Σ k, �
     intro a
     rw [(hr₁ a).1, (hr₂ a).1, (hjb.2.2 K₁ ι₁ K ι K' ι' κ₁ v₁ κ v hb₁ hb).2,
       (hjb.2.2 K₂ ι₂ K ι K' ι' κ₂ v₂ κ v hb₂ hb).2]
-    exact (GlobalTheory.T.line_isomorphism_groupoid_laws K ι _ har.2.1).2.2.2.2 K' ι' κ v _ hb e₀ _ _ _ _ (hfg a).1
-  choose w hw hinv hsm using fun a => GlobalTheory.T.line_isomorphism_defect_function K' ι' _ J D R (r₁ a) (r₂ a) (rename v (f₀ a))
+    exact (_root_.GlobalTheory.CompanionTheory.Ar.Cmp.lineIso_algebra K ι _ har.2.1).2.2.2.2 K' ι' κ v _ hb e₀ _ _ _ _ (hfg a).1
+  choose w hw hinv hsm using fun a => _root_.GlobalTheory.CompanionTheory.Ar.Cmp.defect_exists_smooth K' ι' _ J D R (r₁ a) (r₂ a) (rename v (f₀ a))
     (rename v (g₀ a)) har'.2.1 (hiso a) (sm₁ a) (sm₂ a)
   have hmain : ∀ a x, x ∉ bdry s → S₁.ph a (π₁ x) = S₂.ph a (π₂ x) + w a (R.lift x x) := by
     intro a x hx
     have hzP : R.lift x x ∈ mcPts (mCoordIdeal y') := R.mem x x (R.mem_U x)
     have hz : (fun p => R.lift x x (v p)) ∈ mcPts (mCoordIdeal y) :=
-      e₀ ▸ (GlobalTheory.T.block_pullback_herm_line K ι K' ι' κ v hb).2.2.1 _ _ hzP
+      e₀ ▸ (_root_.GlobalTheory.CompanionTheory.Ar.Cmp.hermLine_pull_blockMap K ι K' ι' κ v hb).2.2.1 _ _ hzP
     have hne : evC (R.lift x x) (rename v B) ≠ 0 := fun h => hx ((hbd x).2 h)
     have hβ' : evC (fun p => R.lift x x (v p)) β ≠ 0 := fun h => hne (by rw [hB0, h]; simp)
     have hx₁ : π₁ x ∉ bdry S₁.s := fun h => hne (hbd₁ x h)
@@ -304,8 +308,8 @@ theorem assemble (hPB : PullbackStatement) {κ₁ : K₁ → K} {v₁ : (Σ k, �
       e₁ ▸ hp₁.2.2.1 _ _ hzP
     have hm2 : (fun p => R.lift x x ((v ∘ v₂) p)) ∈ mcPts (mCoordIdeal (y ∘ v₂)) :=
       e₂ ▸ hp₂.2.2.1 _ _ hzP
-    obtain ⟨y₁, hy₁⟩ := GlobalTheory.T.log_resolution_covers_complex_points K₁ ι₁ _ _ D Re₁.R Re₁.arith _ hm1
-    obtain ⟨y₂, hy₂⟩ := GlobalTheory.T.log_resolution_covers_complex_points K₂ ι₂ _ _ D Re₂.R Re₂.arith _ hm2
+    obtain ⟨y₁, hy₁⟩ := _root_.GlobalTheory.CompanionTheory.Ar.Cmp.resolution_onto_complex_points K₁ ι₁ _ _ D Re₁.R Re₁.arith _ hm1
+    obtain ⟨y₂, hy₂⟩ := _root_.GlobalTheory.CompanionTheory.Ar.Cmp.resolution_onto_complex_points K₂ ι₂ _ _ D Re₂.R Re₂.arith _ hm2
     have ε₁ : π₁ x = Re₁.π y₁ := l₁ x y₁ hy₁
     have ε₂ : π₂ x = Re₂.π y₂ := l₂ x y₂ hy₂
     obtain ⟨u, t, hut, hu⟩ := exists_pair (hfg a).1.2 hz
@@ -331,7 +335,7 @@ theorem joint_system : Inputs → ReciprocityTheory.ChartRestriction.G.Geo.ResK.
   intro hI hK K _ ι _ K₁ _ ι₁ _ K₂ _ ι₂ _ κ₁ v₁ κ₂ v₂ Ω _ _ y D σ _ S₁ S₂ Re₁ Re₂ β b hb₁ hb₂ har hβ hβn alg₁ alg₂ hS
   obtain ⟨γ₁, c₁, hγ₁, hγn₁, hz₁⟩ := exists_bdry_form Re₁ alg₁
   obtain ⟨γ₂, c₂, hγ₂, hγn₂, hz₂⟩ := exists_bdry_form Re₂ alg₂
-  have hjb := GlobalTheory.T.block_join_inclusions_compat
+  have hjb := _root_.GlobalTheory.CompanionTheory.Ar.Cmp.join_block_maps
   have hprime : (mCoordIdeal y).IsPrime := har.2.1.1
   have hn₁ : rename v₁ γ₁ ∉ mCoordIdeal y := fun h => hγn₁ (by
     rw [← hjb.2.1 K₁ ι₁ K ι κ₁ v₁ Ω y hb₁]

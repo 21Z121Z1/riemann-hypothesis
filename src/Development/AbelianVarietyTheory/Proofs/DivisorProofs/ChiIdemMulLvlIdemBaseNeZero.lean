@@ -1,24 +1,24 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.NormalFam
+public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.Bundle0015
 public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisGeometry₂.HoweUnram
 public import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.IsStepWeil
-public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.ExistsNormLeHeightPow
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FinRepApply
+public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.Bundle0007
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0831
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DimPartsAtIffBadAndOff
-public import Formalism.LocalToGlobal.IndefiniteReal.CutTuples2
+public import Formalism.LocalToGlobal.IndefiniteReal.Bundle0004
 public import Formalism.LocalToGlobal.Divisibility.ProjLemmas
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SumCoeffChiIdemMul
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsCuspProdCharTransport
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsCuspIndProdCharOfIsProdCuspChar
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsLabelsSemisimpleParameterGLFiniteField
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GreenCuspidalCharIsCuspidalOfMinpolyOfParam
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PrimeToPartFrob
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BlockTriangularPrimitiveCharacters
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GoodCharsGoodFamilyOfProductIrreducible
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.TraceCompLeftFunLeft
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ThetaOfPow
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0472
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0565
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0858
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0772
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0746
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0894
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0709
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0691
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0090
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0243
 
 @[expose] public section
 
@@ -320,7 +320,7 @@ theorem isCusp_cuspOn {s : SSParam p ℂ r} (hs : IsRegularParam s) (c : Cyc s.1
   obtain ⟨L⟩ := GlobalTheory.GLq.LabelModel.inhab p
   obtain ⟨x, f, h⟩ := exists_labels p L r s
   exact (isCuspOf_cuspOn L (s.2 c) (x c) (cycLen_pos _ c) (h.1 c)
-    (((GlobalTheory.T.frobeniusOrbitRootPolynomial_factorization p r _ x f h.2).2.2.2 (h.regular_iff.1 hs)).1 c)).2.1
+    (((_root_.GlobalTheory.ParamLabel.RootPolyFactor.rootPoly_factor p r _ x f h.2).2.2.2 (h.regular_iff.1 hs)).1 c)).2.1
 
 def cycEquiv (b : Fin r → Fin r) : (Σ c : Cyc b, Fin (cycLen b c)) ≃ Fin r :=
   Equiv.ofBijective (fun x => ((Fintype.equivFin {a : Fin r // b a = x.1.1}).symm x.2).1) (by

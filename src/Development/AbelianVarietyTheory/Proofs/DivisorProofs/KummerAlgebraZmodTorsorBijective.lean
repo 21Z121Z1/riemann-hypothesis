@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AlgebraMapEqMk
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0003
 
 @[expose] public section
 

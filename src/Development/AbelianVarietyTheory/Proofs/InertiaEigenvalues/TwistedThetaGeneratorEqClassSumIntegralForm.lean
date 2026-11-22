@@ -2,15 +2,15 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.UnivChar
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FiniteStabOfReps
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.FiniteGroupLevelActionEqInvSmulTranslate
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.MemHyperspecialIffGIntOfSuppAtSplit
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsWeilDatumPowersUnramifiedEtaTilde
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ChangeOfSplittingPair
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0419
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0496
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0114
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1220
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0684
 public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.DualTypePlacesIsSplitNonconjugateOfAdmissible
 public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.HasInfExpMulOfIsOpenKer
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.TwistingCharacterAdmissibleGaloisTwistGood
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CoefLatLeTranslateSplitPlacesPrimeToLStatement
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0849
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0831
 
 @[expose] public section
 
@@ -235,7 +235,7 @@ theorem trace_cx : ∀ (D : D7) (ρ : Setup D.ntw), ρ.Good → ∀ (i : D.ntw.T
   have hdisj : Disjoint (ρ.tw i b k Q ψ).Q (D.ntw.S0 i) := hok.2.1.mono_left fun x hx =>
     (mem_half.1 (show x ∈ half (ρ.ch i) Q from hx)).1
   have hP : P ∈ ρ.lat i j b (ρ.eOk i b k).range (h * hQ) :=
-    GlobalTheory.T.coefLat_le_translate_splitPlaces_prime_to_l D ρ hρ i j b k _ h hQ P ht.split hdisj hd.fin hsupp hd.mem
+    _root_.GlobalTheory.LatTranslate.lat_translate D ρ hρ i j b k _ h hQ P ht.split hdisj hd.fin hsupp hd.mem
   obtain ⟨u, hu⟩ := hval (detRoot (Vc D j) (h * hQ))
   have hc : ((detChar (Vc D j) (ρ.tw i b k Q ψ).chi (h * hQ) : Circle) : ℂ) ∈ (ρ.eOk i b k).range := ⟨u, hu.symm⟩
   refine ⟨(⟨_, hc⟩ : (ρ.eOk i b k).range) • traceForm (Bridge.ratF _) _ _ (ratAct (ρ.B i j b)) (finPt _ (h * hQ)) P,

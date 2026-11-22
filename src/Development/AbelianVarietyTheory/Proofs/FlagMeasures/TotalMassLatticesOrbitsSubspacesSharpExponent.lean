@@ -3,8 +3,8 @@ module
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.ChartGen
 public import Development.AbelianVarietyTheory.PublishedTheorems.DiscreteSeriesUnitary₂.MaxMass
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.FewOrbitsSubspacesHermitianLatticeDiscriminant
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.MassIntegralLatticesDiscriminantOrderLe
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0104
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0389
 
 @[expose] public section
 
@@ -118,7 +118,7 @@ theorem space_mass (hMM : MaxMass) (K V : Type) [Field K] [NumberField K] [StarR
   set n' := discN h M₀ with hn'
   have hm₀ : mass h M₀ ≤ c * (n' : ℝ) ^ ((Module.finrank K V : ℝ) / 2) := by
     rw [hc V h hs hp rfl M₀ hM₀]
-    exact mul_le_mul_of_nonneg_left (GlobalTheory.T.maximalLatticeLocalFactorProduct_pos_and_le K V h hK hs hnd hj M₀ hM₀).2 hcpos.le
+    exact mul_le_mul_of_nonneg_left (_root_.GlobalTheory.MaxLatLam.main K V h hK hs hnd hj M₀ hM₀).2 hcpos.le
   have hDst : Stable (isom h) (latsDisc (R := 𝓞 K) h n) := by
     intro g M hM
     have h1 := (GlobalTheory.T.hermitianGenusMass_eq_orbitStabilizerMass K V h hK hs hp M hM.1.1).2.2.1 g M (SpaceMass.mem_genus_self h M hM.1.1)
@@ -133,20 +133,20 @@ theorem space_mass (hMM : MaxMass) (K V : Type) [Field K] [NumberField K] [StarR
     (fun p hp => hp.1) (fun y hy => hfin y hy.1.1)
   have f2 := GlobalTheory.T.orbitStabilizerMass_eq_weightedSum_fibres (isom h) _ _ X (genus h M₀) Prod.snd (fun _ _ => rfl) hXst hYst
     (fun p hp => hp.2.1) (fun y hy => hfin y hy.1)
-  obtain ⟨mono, hconst, -⟩ := GlobalTheory.T.orbitWeightedStabilizerSum_mono_subadditive (isom h) (Submodule (𝓞 K) V)
+  obtain ⟨mono, hconst, -⟩ := _root_.GlobalTheory.Mass.OrbMono.main (isom h) (Submodule (𝓞 K) V)
   have s1 : orbMass (isom h) (latsDisc (R := 𝓞 K) h n) ≤ orbMass (isom h) X := by
     rw [f1]
     refine mono _ _ _ _ subset_rfl fun M hM => ?_
     obtain ⟨M', hM', hle⟩ := hex M hM.1
     have hne : (X ∩ Prod.fst ⁻¹' {M}).Nonempty :=
-      ⟨(M, M'), ⟨hM, (GlobalTheory.T.mem_genus_iff_maximalIntegralHermitianLattice K V h hK hs hp M₀ M' hM₀).2 hM', hle⟩, rfl⟩
+      ⟨(M, M'), ⟨hM, (_root_.GlobalTheory.Mass.MaxGenus.main K V h hK hs hp M₀ M' hM₀).2 hM', hle⟩, rfl⟩
     have := Set.one_le_encard_iff_nonempty.2 hne
     exact_mod_cast this
   have s2 : orbMass (isom h) X ≤ ENNReal.ofReal ((i : ℝ) ^ ((Module.finrank K V : ℝ) +
       Real.logb 2 (Module.finrank ℚ K))) * orbMass (isom h) (genus h M₀) := by
     rw [f2, ← hconst]
     refine mono _ _ _ _ subset_rfl fun M' hM' => ?_
-    refine le_trans ?_ (GlobalTheory.T.encard_sublattices_of_index_le K V h hK hs hnd M' hM'.1.toIsLattice i (Nat.one_le_iff_ne_zero.2 hi0))
+    refine le_trans ?_ (_root_.GlobalTheory.Mass.sublattice_count K V h hK hs hnd M' hM'.1.toIsLattice i (Nat.one_le_iff_ne_zero.2 hi0))
     have hM'' := (hdisc M₀ hM₀.1).2.2.2.1 M' hM'
     have : (X ∩ Prod.snd ⁻¹' {M'}).encard ≤
         {N : Submodule (𝓞 K) V | N ≤ M' ∧ idxN M' N = i}.encard := by
@@ -188,7 +188,7 @@ theorem real_eq (d i j : ℕ) (L c : ℝ) (hd : d ≠ 0) (hi : i ≠ 0) :
 
 theorem main : MaxMass → ∀ (K V : Type) [Field K] [NumberField K] [StarRing K] [AddCommGroup V] [Module K V] [FiniteDimensional K V] [Module (𝓞 K) V] [IsScalarTower (𝓞 K) K V] (h : V →ₗ⋆[K] V →ₗ[K] K), IsCMUnram K → h.IsSymm → PD h → (∀ (W : Type) [AddCommGroup W] [Module K W] [FiniteDimensional K W] [Module (𝓞 K) W] [IsScalarTower (𝓞 K) K W] (k : W →ₗ⋆[K] W →ₗ[K] K), k.IsSymm → PD k → (∃ L : Submodule (𝓞 K) W, Submodule.IsLattice K L ∧ IsUnimodular k L) → ∃ I : Submodule (𝓞 K) W, IsOrthoLattice k I (Module.finrank K W)) → ∀ j : ℕ, 1 ≤ j → ∀ (V₁ : Type) [AddCommGroup V₁] [Module K V₁] [FiniteDimensional K V₁] [Module (𝓞 K) V₁] [IsScalarTower (𝓞 K) K V₁] (h₁ : V₁ →ₗ⋆[K] V₁ →ₗ[K] K) (I₁ : Submodule (𝓞 K) V₁), h₁.IsSymm → IsOrthoLattice h₁ I₁ j → ∀ de : ℕ, 1 ≤ de → ∃ s : Finset (Submodule K V), (∀ U ∈ s, Module.finrank K U = j) ∧ (∀ U : Submodule K V, Module.finrank K U = j → (latsDisc (R := 𝓞 K) (hRes h U) (de ^ 2)).Nonempty → ∃ U₀ ∈ s, ∃ g : isom h, g • U₀ = U) ∧ ∑ U ∈ s, orbMass (isom (hRes h U)) (latsDisc (R := 𝓞 K) (hRes h U) (de ^ 2)) ≤ ENNReal.ofReal (mass h₁ I₁ * (de : ℝ) ^ j * (de : ℝ) ^ (2 + Real.logb 2 (fDeg K))) := by
   intro hMM K V _ _ _ _ _ _ _ _ h hK hs hp hL j hj V₁ _ _ _ _ _ h₁ I₁ hs₁ hI₁ de hde
-  obtain ⟨witt, res⟩ := GlobalTheory.T.witt_extension_totally_definite_hermitian K V h hK hs hp
+  obtain ⟨witt, res⟩ := _root_.GlobalTheory.Mass.Witt.witt_definite K V h hK hs hp
   choose! T hT1 hT2 using count_sets K
   have hc : 0 < mass h₁ I₁ := by
     have hp' := SpaceMass.PD_of_ortho h₁ hK I₁ _ hI₁
@@ -257,7 +257,7 @@ theorem main : MaxMass → ∀ (K V : Type) [Field K] [NumberField K] [StarRing 
     obtain ⟨-, hsU0, hpU0, -⟩ := res U0
     have hbad : badP (hRes h U0) M0 = badP (hRes h U) M := by
       rw [hI0]; simp [hS]
-    obtain ⟨e, he⟩ := GlobalTheory.T.definite_hermitian_isometric_of_same_bad_primes K U0 (hRes h U0) hK hsU0 hpU0 hL U (hRes h U) hsU hpU
+    obtain ⟨e, he⟩ := _root_.GlobalTheory.Mass.SameBad.main K U0 (hRes h U0) hK hsU0 hpU0 hL U (hRes h U) hsU hpU
       (hU0.trans hU.symm) M0 M hM0 hM hbad
     obtain ⟨g, hg, hge⟩ := witt U0 U e he
     refine ⟨⟨g, hg⟩, ?_⟩

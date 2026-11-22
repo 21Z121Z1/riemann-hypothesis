@@ -4,17 +4,20 @@ public import Mathlib
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.RigidSys
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.CubeVal
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.UnifUniqSt
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.IsNsmul
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.QkToAkU
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.Bundle0005
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.Bundle0006
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.DiscreteValuationRings.TwistBCPf
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.ThetaCore
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.SabPull
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.Bundle0007
 public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsIsDiscreteValuationRingOfMaximalIdealEqSpa
 public import Development.AbelianVarietyTheory.Proofs.HomogeneousIdeals.BijectiveRestrictPointsOfEtaleOfHenselian
-public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ValuationRingOfFlatOfFormallyUnramified
+public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0004
 public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.IsUnitNatCastSections
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsMulEquivOfIsGrpPullback
-public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.CardTorsionPointsAbelianVarietyStatement
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0032
+public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.Bundle0115
+public import Development.AbelianVarietyTheory.Definitions.AbelianSchemeLaws.FirstCohomologyVanishesSpecOfIsLocalRing
+public import Development.AbelianVarietyTheory.Definitions.AbelianSchemeLaws.IsScalarTowerOfAlgebraMapEq
+public import Development.AbelianVarietyTheory.Definitions.Uniformization.PointEqOfSubsingleton
 
 @[expose] public section
 
@@ -233,7 +236,7 @@ theorem card_torsion (hL : Laws) {S : Scheme.{0}} (G : Over S) [GrpObj G] (hG : 
   obtain ⟨e, -⟩ := exists_mulEquiv_of_isGrpPullback (isGrpPullback_pullback G t) (𝟙 _) t
     (Category.id_comp t).symm
   rw [Nat.card_congr (torsionEquiv G n _),
-    ← GlobalTheory.T.card_torsion_points_abelianVariety hL.globalFns hL.rigidity K ((Over.pullback t).obj G) g n hB' hg' hn]
+    ← _root_.GlobalTheory.UU.TorsionCount.card_torsion_points hL.globalFns hL.rigidity K ((Over.pullback t).obj G) g n hB' hg' hn]
   refine (Nat.card_congr (e.toEquiv.subtypeEquiv fun x => ?_)).symm
   show x ^ n = 1 ↔ e x ^ n = 1
   rw [← map_pow, MulEquiv.map_eq_one_iff]

@@ -1,9 +1,9 @@
 module
 
-public import Formalism.LocalToGlobal.InertKernelTheory.DefsInt
+public import Formalism.LocalToGlobal.InertKernelTheory.Bundle0007
 public import Formalism.LocalToGlobal.InertKernelTheory.DefsIntTens
-public import Formalism.LocalToGlobal.GlobalTheory.GL3.ThirdClauseIntegralCombination
-public import Formalism.LocalToGlobal.AlgebraicTheory.AlgebraicTheoryProofs.KerJet
+public import Formalism.LocalToGlobal.GlobalTheory.GL3.Bundle0003
+public import Formalism.LocalToGlobal.AlgebraicTheory.AlgebraicTheoryProofs.Bundle0001
 public import Formalism.LocalToGlobal.KernelLattices.KernelLocalFactors.ThDistC
 public import Formalism.LocalToGlobal.TorsionIntegrality.QuadraticSemicharacters.QuadraticSemicharacterIdentityReformulated2
 

@@ -1,11 +1,11 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Divisors.IsGaloisCover
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0025
 public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.OmegaPullOmegaTraceOfSecTraceOne
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.HodgePullHodgePull
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0028
 public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.FormResFormPullFormPull
-public import Development.AutomorphicArithmetic.Foundations.EtaleClopenDescent.HodgeTraceEqSumClopenDecomposition
+public import Development.AutomorphicArithmetic.Foundations.EtaleClopenDescent.Bundle0010
 
 @[expose] public section
 

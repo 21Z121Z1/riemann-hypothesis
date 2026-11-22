@@ -1,8 +1,8 @@
 module
 
 public import Formalism.SharpRestriction.GrowthBounds.ChartComparison.StepIn
-public import Formalism.LocalToGlobal.HermitianForms.TiedTwSym
-public import Formalism.LocalToGlobal.GroupLattices.TiedFamilies.TiePtOneRec
+public import Formalism.LocalToGlobal.HermitianForms.Bundle0007
+public import Formalism.LocalToGlobal.GroupLattices.TiedFamilies.Bundle0004
 
 @[expose] public section
 

@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsSplitting
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0084
 
 @[expose] public section
 

@@ -1,14 +1,14 @@
 module
 
 public import Mathlib
-public import Formalism.LocalToGlobal.ProjectiveLattices.RegXInst
-public import Formalism.LocalToGlobal.ProjectiveLattices.CurveLocInst
-public import Formalism.LocalToGlobal.ProjectiveLattices.LocRingPf
-public import Formalism.LocalToGlobal.ProjectiveLattices.TieInst
-public import Formalism.LocalToGlobal.ProjectiveLattices.RealPtPf
-public import Formalism.LocalToGlobal.ProjectiveLattices.ESecPfA
-public import Formalism.LocalToGlobal.ProjectiveLattices.CurveSec
-public import Formalism.SharpRestriction.GenusPolyhedralBounds.RelativeIndexClassSets.FinitePtsOfCurve
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0035
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0043
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0041
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0037
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0039
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0040
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0031
+public import Formalism.SharpRestriction.GenusPolyhedralBounds.RelativeIndexClassSets.Bundle0002
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ValuationLifting.RApprox
 public import Development.AbelianVarietyTheory.Proofs.GenericRegularity.GenericSectionPointsInequivalentValuations
 

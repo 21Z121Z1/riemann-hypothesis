@@ -5,7 +5,7 @@ public import Formalism.SharpRestriction.GlobalSchurBounds.StandardLatticesGL3
 public import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.CsDual
 public import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.CsGlob
 public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.ExistsInverseOneAddPreservingAdelicCompletion
-public import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.AfsplitB
+public import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Bundle0006
 
 @[expose] public section
 

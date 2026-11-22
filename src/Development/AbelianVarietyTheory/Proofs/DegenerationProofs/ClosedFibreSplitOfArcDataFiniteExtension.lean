@@ -4,20 +4,20 @@ public import Mathlib
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.RigidSys
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.CubeVal
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.UnifUniqSt
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.IsNsmul
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.QkToAkU
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.Bundle0005
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.Bundle0006
 public import Development.AbelianVarietyTheory.Definitions.Degenerations.AdmissiblePadicIntMaximalIdeal
-public import Development.AbelianVarietyTheory.Definitions.Degenerations.HomExtSt
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.ExistsIsoPairOfEq
+public import Development.AbelianVarietyTheory.Definitions.Degenerations.Bundle0001
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.Bundle0014
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.IsMonHomOfMul
 public import Development.AbelianVarietyTheory.Proofs.HomogeneousIdeals.HomBaseChangeBijectiveOfLeNilradical
-public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.QkToAkInjective
+public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.Bundle0052
 public import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.IsAbelianSchemeAndExtendOfGenericHoms
 public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.GenRelNeZero
-public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsCompleteDVRResidueGaloisAutomorphismsStatement
-public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ArcDatumMatchLengthSymmPreimagesStatement
-public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.TorusPointWithCharactersIffPullDegStatement
-public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsSplitTorusExtensionDescentGaloisInvariantStatement
+public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.Bundle0109
+public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.Bundle0118
+public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.Bundle0117
+public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.Bundle0111
 
 @[expose] public section
 
@@ -62,7 +62,7 @@ theorem pull_rel {φ : R →+* R'} {D : DegData R I} {D' : DegData R' I'} {hD : 
   obtain rfl : z' ≫ h = z := by
     rw [← cancel_mono (fstG I e G).left, Category.assoc, h₁, hz]
   refine ⟨by rw [h₂, Category.assoc], fun a => ?_⟩
-  have key := GlobalTheory.T.torusPoint_with_characters_iff_pullDeg R R' I I' φ D.toPre D'.toPre hD G G' e (U.gt e) (U'.gt e) h h₂ h₃ T z' (fun x => a (ε'.symm x))
+  have key := _root_.GlobalTheory.TorusPull.torus_point_iff R R' I I' φ D.toPre D'.toPre hD G G' e (U.gt e) (U'.gt e) h h₂ h₃ T z' (fun x => a (ε'.symm x))
   constructor
   · rintro ⟨τ, hτ, ha⟩
     obtain ⟨τ₁, k₁, k₂⟩ := key.1 ⟨τ, hτ, fun x => by rw [← ha, Equiv.apply_symm_apply]⟩
@@ -307,7 +307,7 @@ theorem split_of_galois (hL : Laws) (h2 : Laws2) (h3 : Laws3) (h4 : Laws4) (h5 :
     · change GeometricallyConnected (pullback.snd _ _)
       infer_instance
   have haff := (W.P.U.gt 0).q_affine
-  refine GlobalTheory.T.exists_splitTorusExtension_descent_galois_invariant k (R ⧸ I ^ (0 + 1)) ((Over.pullback (spMap p)).obj t.G)
+  refine _root_.GlobalTheory.exists_splitExt_of_galois_invariant k (R ⧸ I ^ (0 + 1)) ((Over.pullback (spMap p)).obj t.G)
     ((Over.pullback (spMap (p.comp f))).obj a.D₀.P.A) hab
     (thickObj R I 0 W.t.G) (thickObj R I 0 W.P.D.toPre.P.A) W.P.D.toPre.X φG φB
     ((isGrpPullback_pullback t.G (spMap p)).cancel (gG.congr rfl G₁.symm) G₂)
@@ -358,7 +358,7 @@ theorem split_of_galois (hL : Laws) (h2 : Laws2) (h3 : Laws3) (h4 : Laws4) (h5 :
 theorem splitOver_of_hasArcData : Laws → Laws2 → Laws3 → Laws4 → Laws5 → Laws6 → ∀ (E : Type) [Field E] [NumberField E] [IsCMField E] (H : Host E) (D : Datum H) (l : Level H) (Xo : Moduli D l) (c : Coeff l) (W₀ : ValuationSubring ℂ) (Y : Model Xo c (c.V W₀).subtype) (O' : Type) [CommRing O'] [IsDomain O'] [CharZero O'] (b : c.V W₀ →+* O') (a : ArcIn D l (c.V W₀).subtype O' b) (V : Type) [CommRing V] [IsDomain V] [IsLocalRing V], CDvr V → ∀ (f : O' →+* V) (u : V), (∀ x, x ≠ 0 → IsUnit (f x)) → ¬ IsUnit u → ∀ (χ : Sp V ⟶ Y.X) (y : Sp (FractionRing V) ⟶ Xo.XF c), y ≫ Y.j = jK V ≫ χ → ∀ (t : SAB H (Sp V)) (_ : SABMap t Y.t χ) (V' : Type) [CommRing V'] [IsDomain V'] [IsLocalRing V'], CDvr V' → ∀ g : V →+* V', Function.Injective g → g.Finite → Y.HasArcData a (IsLocalRing.maximalIdeal V') (g.comp f) (g u) (spMap g ≫ χ) → SplitOver t.G (IsLocalRing.maximalIdeal V) := by
   intro hL h2 h3 h4 h5 h6 E _ _ _ H D l Xo c W₀ Y O' _ _ _ b a V _ _ _ hV f u hf hu χ y hy t m V' _ _ _ hV' g hg hfin hA
   obtain ⟨W'⟩ := (Y.hasArcData_iff a _ _ _ _).1 hA
-  obtain ⟨R, _, _, _, j, hR, hj, hjI, hgI, hG⟩ := GlobalTheory.T.exists_completeDVR_residue_galois_automorphisms V V' hV hV'
+  obtain ⟨R, _, _, _, j, hR, hj, hjI, hgI, hG⟩ := _root_.GlobalTheory.exists_cDvr_residue_galois V V' hV hV'
     (fun n hn => by rw [← map_natCast f]; exact hf _ (Nat.cast_ne_zero.2 hn)) g hg hfin
   have := hR.1
   have := hV'.1

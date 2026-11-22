@@ -1,7 +1,7 @@
 module
 
 public import Formalism.LocalToGlobal.IndefiniteReal.DoubleCosetOperators.XiNeZeroOfIsStdGeneric
-public import Formalism.LocalRingCardinality.ConjSqrtMinusD
+public import Formalism.LocalRingCardinality.Bundle0001
 
 @[expose] public section
 

@@ -1,6 +1,6 @@
 module
 
-public import Formalism.LocalToGlobal.ProjectiveLattices.SubConstMemOrig
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0004
 
 @[expose] public section
 

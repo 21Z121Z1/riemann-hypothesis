@@ -2,8 +2,8 @@ module
 
 public import Mathlib
 public import Formalism.SharpRestriction.LevelLetterCocycles.LocalSituation
-public import Development.WeilBound.CoreStatements.CrystallinePeriodRings.MaximalIdealEqSpanT
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.NonemptyThetaDeRhamFilZeroConcretePeriod
+public import Development.WeilBound.CoreStatements.CrystallinePeriodRings.Bundle0002
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0084
 
 @[expose] public section
 

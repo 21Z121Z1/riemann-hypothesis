@@ -1,18 +1,18 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Divisors.GenReads
-public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.ThExprUniqOfChartIndep2
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LevelFormCompatBaseEmbedding
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnfoldingFrameDeltaChange
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0034
+public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0007
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1004
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1318
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DetReducedBlockEqResidueDet
 public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.DatEqOfPhiHat
-public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.ExistsCuspIsThClsDUnique
+public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.Bundle0072
 public import Development.AbelianVarietyTheory.Proofs.HeightProofs.ExistsPsiTieOfValues
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.UnitCOfCXiAt
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ConjSmulEntry
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.RedMUMatMove
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.LowZeroMulRightIff
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0423
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0416
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0422
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0147
 public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.MulVecMemOfFrame
 public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsCoversOfHalves
 public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.IntValuationEqOfMem
@@ -254,7 +254,7 @@ theorem exists_finite_of_isometry {V : HSp D} {ι : Dw.La →ₗ[𝓞 D.host.E] 
 
 theorem latGHat_one_eq {V : HSp D} {ι : Dw.La →ₗ[𝓞 D.host.E] (Fin V.rank → D.host.E)} (hι : LatEmb V ι) :
     latGHat V 1 = GlobalTheory.AdLat.hat D.host.F (Set.range ι) := by
-  rw [(GlobalTheory.T.adelicElementLattice_full_and_completion D V 1).2.2.2.2.1, ← hι.2, LinearMap.coe_range]
+  rw [(_root_.GlobalTheory.Member.latG_lattice_and_completion D V 1).2.2.2.2.1, ← hι.2, LinearMap.coe_range]
 
 
 set_option maxHeartbeats 1000000 in
@@ -274,7 +274,7 @@ theorem factor_det_eq {V : HSp D} {ι : Dw.La →ₗ[𝓞 D.host.E] (Fin V.rank 
   obtain ⟨v, hv₁, hv₂, hv₃⟩ := GlobalTheory.TwistTie.exists_basis_lift I J hIJ e
   have hrange : (latG V 1 : Set (Fin V.rank → D.host.E)) = Set.range ι := by
     rw [← hι.2, LinearMap.coe_range]
-  obtain ⟨a, ha₁, ha₂⟩ := GlobalTheory.TwistTie.det_sub_mem_hat D.host.F ι (hrange ▸ (GlobalTheory.T.adelicElementLattice_full_and_completion D V 1).2.1) I
+  obtain ⟨a, ha₁, ha₂⟩ := GlobalTheory.TwistTie.det_sub_mem_hat D.host.F ι (hrange ▸ (_root_.GlobalTheory.Member.latG_lattice_and_completion D V 1).2.1) I
     (fun e => P.isPrime.ne_top (top_le_iff.1 (e ▸ hP))) v hv₃ f M hM (finHom V u).1
     (by rw [← GlobalTheory.IdeleParts.integralFiniteAdeles_eq_adelicCompletion_integers, ← hU]; exact unswap_int U)
     (fun j => by

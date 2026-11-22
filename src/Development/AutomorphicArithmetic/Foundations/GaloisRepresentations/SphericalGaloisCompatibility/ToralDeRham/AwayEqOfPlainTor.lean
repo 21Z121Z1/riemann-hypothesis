@@ -2,11 +2,11 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.CyclicStrongAtCusp
-public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.ArthurClozelLocalSC
+public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.Bundle0013
 public import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.SphericalGaloisCompatibility.ToralDeRham.RcUnlinkedChars
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.PlainTorExistsChars
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.SphericalContragredientMonomial
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.LocalArtinExistsHolds
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0241
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0326
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0731
 public import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.SphericalGaloisCompatibility.Chl
 
 @[expose] public section

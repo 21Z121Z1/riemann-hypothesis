@@ -1,8 +1,7 @@
 module
 
 public import Mathlib
-public import Formalism.ThetaSupremumBounds.GaussianShiftBounds.BlockIntegralOf
-public import Formalism.ThetaSupremumBounds.GaussianShiftBounds.HeightsoundOf
+public import Formalism.ThetaSupremumBounds.GaussianShiftBounds.Bundle0001
 
 @[expose] public section
 

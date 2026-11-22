@@ -1,11 +1,11 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsAdaptedFrame
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1772
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ArchimedeanPolynomialTensorWeight
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MaximalCompactOneParameterLinesOfLieLines
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TensorIrreducibleModules
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TprodMemTensSpan
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1232
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1011
 
 @[expose] public section
 

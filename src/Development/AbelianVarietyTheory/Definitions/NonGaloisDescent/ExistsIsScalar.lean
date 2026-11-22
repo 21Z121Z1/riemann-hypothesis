@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.AdmQAdmissibleConjugatePairPlaces
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SurjConj
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0429
 public import Formalism.LocalToGlobal.IndefiniteReal.DoubleCosetOperators.RatDatOfReal
 public import Formalism.LocalToGlobal.IndefiniteReal.ThPinsR
 

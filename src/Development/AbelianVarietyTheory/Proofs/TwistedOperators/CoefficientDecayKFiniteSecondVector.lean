@@ -1,10 +1,10 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.DepthPays
+public import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.Bundle0006
 public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.HarishChandraModulesOn
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.IrreducibleKStableFiniteSubspace
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.CompactUnitaryFiniteInvariantSubspace
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0076
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0001
 public import Formalism.RealPlaceAnalysis.SmoothOnGVIff
 
 @[expose] public section

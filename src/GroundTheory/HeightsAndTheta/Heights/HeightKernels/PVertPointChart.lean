@@ -1,11 +1,11 @@
 module
 
 public import Mathlib
-public import GroundTheory.HeightsAndTheta.Heights.HeightKernels.StatementsVertPointLengthSteps
+public import GroundTheory.HeightsAndTheta.Heights.HeightKernels.Bundle0030
 public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PSmallSectionsNonzero
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.CharacterNondegenerate
-public import GroundTheory.HeightsAndTheta.Heights.HeightsOfSets.PCurveDivVertical
-public import GroundTheory.HeightsAndTheta.Heights.Intersections.AvoidRing
+public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0019
+public import GroundTheory.HeightsAndTheta.Heights.HeightsOfSets.Bundle0004
+public import GroundTheory.HeightsAndTheta.Heights.Intersections.Bundle0004
 
 @[expose] public section
 

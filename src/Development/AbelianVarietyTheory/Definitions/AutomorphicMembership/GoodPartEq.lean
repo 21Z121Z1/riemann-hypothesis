@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.RealIoX
+public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.Bundle0020
 
 @[expose] public section
 

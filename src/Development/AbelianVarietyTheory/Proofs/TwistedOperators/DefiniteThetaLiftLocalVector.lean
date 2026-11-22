@@ -1,15 +1,15 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.RestrictedTensorBasePointNormSq
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.IsIntOv
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsNonvanishingFiniteDatumDefiniteLift
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0128
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0093
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0419
 public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IdempotentMulEqZeroOfOrthogonal
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SplitProjAdeleComponentChartProperties
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SplitIdempotentPrimeProjectionCorrespondence
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.DegreeOnePrimeReductionSplitPlaceDictionary
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SplitIdempotentBaseFunctionIdentityStatement
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ThetaFunctionSplitProductDatumIsPureTensorStatement
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0152
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0153
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0132
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0463
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0448
 
 @[expose] public section
 
@@ -420,7 +420,7 @@ theorem thetaVecLocal : ∀ D : D7, ThetaVecLocal D := by
   refine ⟨?_, fun x hx => ?_⟩
   · choose g hg using fun PP : ↥(Pg ∪ Q) => GlobalTheory.PlaceVec.exists_isThetaAt (base_std hB) hS hT (ha PP.1 PP.2).1.1
       (GlobalTheory.SplitScalar.infPart_splitIdem (ha PP.1 PP.2).1)
-      (GlobalTheory.T.split_idempotent_base_function_identity D ψ θ S T sS sT ΛS ΛT f₀ hB _ _ (ha PP.1 PP.2).1 (ha PP.1 PP.2).2).1 (hSB PP.1 PP.2)
+      (_root_.GlobalTheory.PlaceModelOnto.placeModel_onto_local D ψ θ S T sS sT ΛS ΛT f₀ hB _ _ (ha PP.1 PP.2).1 (ha PP.1 PP.2).2).1 (hSB PP.1 PP.2)
     have hi : Function.Injective fun PP : ↥(Pg ∪ Q) => (Sum.inl (v PP.1) : Place D) := fun i j h =>
       Subtype.ext (hinj (Finset.mem_coe.2 i.2) (Finset.mem_coe.2 j.2) (Sum.inl_injective h))
     have key : ∀ (w : FinPl D) (φ : SplitProj D w) (e : AE D), IsIdemOf φ e → ∀ PP ∈ Pg ∪ Q, IsProjAt φ PP →
@@ -444,7 +444,7 @@ theorem thetaVecLocal : ∀ D : D7, ThetaVecLocal D := by
       exact key w φ e he PP (Finset.mem_union_right _ h) hP
   · obtain ⟨⟨b1, b2⟩, hx⟩ := hx
     have hcs : cA D (∑ PP ∈ Pg ∪ Q, es PP) = ∑ PP ∈ Pg ∪ Q, cA D (es PP) := map_sum _ _ _
-    refine GlobalTheory.T.thetaFunction_splitProductDatum_isPureTensor D ψ θ S T sS sT ΛS ΛT f₀ μ 𝓕 hB hμ _ (Pg ∪ Q) v (fun PP => cA D (es PP)) ha hinj _ hSB x f _
+    refine _root_.GlobalTheory.PlaceTensor.SplitProduct.thetaAt_sum_isPure D ψ θ S T sS sT ΛS ΛT f₀ μ 𝓕 hB hμ _ (Pg ∪ Q) v (fun PP => cA D (es PP)) ha hinj _ hSB x f _
       (fun PP h => ?_) (fun p hp => ?_) (fun y hy => ?_) (fun y hy => ?_) (hcs ▸ hf)
     · obtain ⟨φ, h1, h2⟩ := hφ PP h
       rcases Finset.mem_union.1 h with h | h

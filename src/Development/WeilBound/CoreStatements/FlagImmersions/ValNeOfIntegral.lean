@@ -1,13 +1,13 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.ArchBetween
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.IsSmoothHermTrivLine
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.Bundle0012
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0097
 public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ValuationCoordsComplexPoint
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LogResolutionPotentialPullback
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0112
 public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LogResolutionReindexed
-public import Development.AutomorphicSpectrum.Proofs.MetricProofs.ExistsHermLineOfLocalSmooth
-public import Development.AutomorphicSpectrum.Proofs.MetricProofs.FubiniStudyMetricSmooth
+public import Development.AutomorphicSpectrum.Proofs.MetricProofs.Bundle0032
+public import Development.AutomorphicSpectrum.Proofs.MetricProofs.Bundle0039
 
 @[expose] public section
 

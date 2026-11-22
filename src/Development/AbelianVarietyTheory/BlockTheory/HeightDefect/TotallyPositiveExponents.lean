@@ -5,7 +5,7 @@ public import Formalism.LocalRingCardinality.RhoDetPrimeEqMuTildeMulChiPow
 public import Formalism.LocalRingCardinality.DataDIV
 public import Formalism.SharpRestriction.Divisibility.ModuliIntegralCharts
 public import Formalism.LocalRingCardinality.DataParams₂
-public import Formalism.LocalRingCardinality.DataParamsT
+public import Formalism.LocalRingCardinality.Bundle0003
 
 @[expose] public section
 

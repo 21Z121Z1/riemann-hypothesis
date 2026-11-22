@@ -1,10 +1,9 @@
 module
 
 public import Development.AutomorphicArithmetic.Foundations.Convolution.GeneralizedMeasures.HeckeFinAlt
-public import Development.AutomorphicArithmetic.Foundations.Convolution.ConvolutionKernels.KernelTransforms.HopBasic
-public import Development.AutomorphicArithmetic.Foundations.Convolution.ConvolutionKernels.KernelTransforms.CommPrj
-public import Development.AutomorphicArithmetic.Foundations.Convolution.PowerSumTraces.HopOloc
-public import Development.AutomorphicArithmetic.Foundations.Convolution.PowerSumTraces.OlocEx
+public import Development.AutomorphicArithmetic.Foundations.Convolution.ConvolutionKernels.KernelTransforms.Bundle0004
+public import Development.AutomorphicArithmetic.Foundations.Convolution.ConvolutionKernels.KernelTransforms.Bundle0003
+public import Development.AutomorphicArithmetic.Foundations.Convolution.PowerSumTraces.Bundle0004
 public import GroundTheory.AutomorphicForms.MeasuresGL
 
 @[expose] public section

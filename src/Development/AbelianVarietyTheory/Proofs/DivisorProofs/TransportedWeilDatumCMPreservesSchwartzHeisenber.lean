@@ -1,14 +1,13 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsTransportF
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1345
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WeilRepresentationPreservesSchwartz
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdelicSchwartzDeterminedBySchrodingerThetaValues
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnitaryPairOfTransposedGramInverseGram
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaTransformRationalDarbouxQuasiInvariantCmStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaTransformHasLevelCmExtensionStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ContinuousThetaTransformRationalDarbouxCmStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ContDiffThetaTransformRealLinesCmExtensionStatement
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1321
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1365
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1508
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1719
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1491
 
 @[expose] public section
 
@@ -245,10 +244,10 @@ theorem isThetaFunOF_thetaTr : ∀ (F E : Type) [Field F] [NumberField F] [Field
           Formalism.IndefR.DatumF.IsThetaFunOF σ JS JT ξ₀ B.ψ (GlobalTheory.WeilSchrodinger.thetaTr F co B.ψ φ) := by
   intro F E _ _ _ _ _ σ B hB nS nT JS JT hS hT ξ₀ hξ₀ hξc hstd JA JB ξ hA hBξ κ _ co hco φ hφ
   exact
-    { quasi := GlobalTheory.T.thetaTransform_rationalDarboux_quasiInvariant_cm F E σ B hB nS nT JS JT hS hT ξ₀ hξ₀ hξc hstd JA JB ξ hA hBξ κ co hco φ hφ
-      level := GlobalTheory.T.thetaTransform_hasLevel_cmExtension F E σ B hB nS nT JS JT hS hT ξ₀ hξ₀ hξc hstd JA JB ξ hA hBξ κ co hco φ hφ
-      cont := GlobalTheory.T.continuous_thetaTransform_rationalDarboux_cm F E σ B hB nS nT JS JT hS hT ξ₀ hξ₀ hξc hstd JA JB ξ hA hBξ κ co hco φ hφ
-      smooth := GlobalTheory.T.contDiff_thetaTransform_realLines_cmExtension F E σ B hB nS nT JS JT hS hT ξ₀ hξ₀ hξc hstd JA JB ξ hA hBξ κ co hco φ hφ }
+    { quasi := _root_.GlobalTheory.ThetaQuasiRatCM.thetaTr_ratWF_add_quasi F E σ B hB nS nT JS JT hS hT ξ₀ hξ₀ hξc hstd JA JB ξ hA hBξ κ co hco φ hφ
+      level := _root_.GlobalTheory.ThetaLevelCM.thetaTr_level F E σ B hB nS nT JS JT hS hT ξ₀ hξ₀ hξc hstd JA JB ξ hA hBξ κ co hco φ hφ
+      cont := _root_.GlobalTheory.ThetaTrContCM.continuous_thetaTr_cm F E σ B hB nS nT JS JT hS hT ξ₀ hξ₀ hξc hstd JA JB ξ hA hBξ κ co hco φ hφ
+      smooth := _root_.GlobalTheory.ThetaSmoothCM.contDiff_thetaTr_real_CM F E σ B hB nS nT JS JT hS hT ξ₀ hξ₀ hξc hstd JA JB ξ hA hBξ κ co hco φ hφ }
 
 
 set_option maxHeartbeats 400000 in

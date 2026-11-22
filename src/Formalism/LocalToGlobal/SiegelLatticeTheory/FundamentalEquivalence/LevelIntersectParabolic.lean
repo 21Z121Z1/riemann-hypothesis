@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Formalism.SharpRestriction.GlobalSchurBounds.GeneralLinearActions.GenusMassVolumes
-public import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Bridge
+public import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Bundle0008
 
 @[expose] public section
 

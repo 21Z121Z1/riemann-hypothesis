@@ -1,6 +1,6 @@
 module
 
-public import Development.WeilBound.CoreStatements.HodgeTatePoints.CdUniv
+public import Development.WeilBound.CoreStatements.HodgeTatePoints.Bundle0054
 public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.FBIdAd
 public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.GermBPf
 public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.FrRatio

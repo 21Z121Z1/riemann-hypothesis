@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.IsAuxiliaryVectorWittDec
-public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.LineLatAt
+public import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.Bundle0007
+public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.Bundle0027
 public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.FinitePartTraceCharacterIdempotentInverseDiffere
 public import Formalism.LocalToGlobal.IndefiniteReal.DoubleCosetOperators.HkSplit
 

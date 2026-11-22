@@ -1,17 +1,17 @@
 module
 
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.UnramifiedOfAttached
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.HodgeOfAttached
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0431
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0421
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.TripleAtt
-public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.InjPrimeTo
-public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.OffRange
-public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.GaloisSideTwistedSelmerAuxiliaryPrimes
+public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0009
+public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0010
+public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0016
+public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0012
 public import Formalism.LocalRingCardinality.AdicCompletionLocal.LocTied
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.JumpsGoodOfAttached
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FrobDualOfAttached
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.HkFrobOfAttached
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.NoInvAwayOfPure
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0422
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0512
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0451
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0426
 
 @[expose] public section
 

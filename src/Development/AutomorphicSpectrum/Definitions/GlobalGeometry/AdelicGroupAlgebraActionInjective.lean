@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.TwoWeightEqOneAddRoot
-public import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.ProIsoAt
+public import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.Bundle0001
 
 @[expose] public section
 

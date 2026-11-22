@@ -1,7 +1,7 @@
 module
 
 public import Formalism.SharpRestriction.GrowthBounds.LogarithmicSums.SecondConstantNonneg
-public import Formalism.SharpRestriction.GrowthBounds.LogarithmicSums.NumData
+public import Formalism.SharpRestriction.GrowthBounds.LogarithmicSums.Bundle0001
 
 @[expose] public section
 

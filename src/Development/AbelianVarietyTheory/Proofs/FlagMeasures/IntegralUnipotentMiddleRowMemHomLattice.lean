@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.IsVolData
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.FrameDualTupleIdealsCastAdd
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0233
 
 @[expose] public section
 

@@ -2,17 +2,14 @@ module
 
 public import Mathlib
 public import Formalism.PadicSubsetSums.CentralIdempotents.EigenbasisOfDistinctRoots
-public import Formalism.PadicSubsetSums.CentralIdempotents.GaloisIrreducibility
+public import Formalism.PadicSubsetSums.CentralIdempotents.Bundle0002
 public import Formalism.GaloisIrreducibility.NoSolvableTransitive
-public import Formalism.PadicSubsetSums.StableGradedCounts.IRRCycleProbSum
+public import Formalism.PadicSubsetSums.StableGradedCounts.Bundle0006
 public import Formalism.PadicSubsetSums.StableGradedCounts.IRRPrimeRecipSum
-public import Formalism.PadicSubsetSums.StableGradedCounts.IRRPrimeToPartEqIff
-public import Formalism.PadicSubsetSums.StableGradedCounts.IRRPrimeToPartSpec
-public import Formalism.PadicSubsetSums.StableGradedCounts.IRRLemmaP
-public import Formalism.PadicSubsetSums.StableGradedCounts.IRRIrredCountUpper
-public import Formalism.PadicSubsetSums.StableGradedCounts.IRRSquarefreeCount
-public import Formalism.PadicSubsetSums.StableGradedCounts.IRRTypeCountExact
-public import Formalism.PadicSubsetSums.StableGradedCounts.IRRCycleTypeProb
+public import Formalism.PadicSubsetSums.StableGradedCounts.Bundle0007
+public import Formalism.PadicSubsetSums.StableGradedCounts.Bundle0004
+public import Formalism.PadicSubsetSums.StableGradedCounts.Bundle0008
+public import Formalism.PadicSubsetSums.StableGradedCounts.Bundle0003
 
 @[expose] public section
 

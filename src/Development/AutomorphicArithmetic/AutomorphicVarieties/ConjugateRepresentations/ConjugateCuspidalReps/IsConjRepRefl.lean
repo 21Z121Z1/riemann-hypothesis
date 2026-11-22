@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.HasCohomology
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.Bundle0003
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.LiteratureResults.BorelHarmonicForms.DerivativeRightTranslateL2
 
 @[expose] public section

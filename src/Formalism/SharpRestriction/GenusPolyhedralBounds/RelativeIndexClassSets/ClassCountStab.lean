@@ -1,27 +1,25 @@
 module
 
-public import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.ClassSet
-public import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Bridge
-public import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.InclusionInjective
-public import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.RationalPointsLeHolds
-public import Formalism.HermitianLattices.HermitianLatticesProofs.AutFinite
+public import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Bundle0013
+public import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Bundle0008
+public import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Bundle0002
+public import Formalism.HermitianLattices.HermitianLatticesProofs.Bundle0004
 public import Formalism.SharpRestriction.GenusPolyhedralBounds.RelativeIndexClassSets.MassIntegralClass
 public import Formalism.SharpRestriction.GenusPolyhedralBounds.RelativeIndexClassSets.LevGapFacts
-public import Formalism.SharpRestriction.GlobalSchurBounds.GeneralLinearActions.GapAtLeast
+public import Formalism.SharpRestriction.GlobalSchurBounds.GeneralLinearActions.Bundle0001
 public import Formalism.SatakeDualWeyl.DefsCS
 public import Formalism.ThetaLiftIndependence.Statement
-public import Formalism.HermitianLattices.StatementMass
+public import Formalism.HermitianLattices.Bundle0003
 public import Mathlib
-public import Formalism.SatakeDualWeyl.StatementC
-public import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Levelv
+public import Formalism.SatakeDualWeyl.Bundle0001
+public import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Bundle0005
 public import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Levelaf
-public import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.CsApprox
+public import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Bundle0009
 public import Formalism.SatakeDualWeyl.KpqSubgroupCompact
 public import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.CsGlob
 public import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.CsSpan
 public import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Afsplit
 public import Formalism.HermitianLattices.StatementLat
-public import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.CsAsmHformSmulRight
 public import Formalism.HermitianLattices.FinalNeighbourConstruct
 
 @[expose] public section

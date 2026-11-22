@@ -3,7 +3,7 @@ module
 public import Mathlib
 public import ReciprocityTheory.CommutativeAlgebra.ChainConnInDim
 public import Development.AbelianVarietyTheory.Proofs.CoherentCohomologyProofs.IsWeaklyRegularIffIsQuasiRegularSeqOfIsLocalRing
-public import Development.AbelianVarietyTheory.Proofs.CoherentCohomologyProofs.ExistsIsRegularQuotSMulTop
+public import Development.AbelianVarietyTheory.Proofs.CoherentCohomologyProofs.Bundle0002
 
 @[expose] public section
 

@@ -1,7 +1,6 @@
 module
 
-public import Formalism.YangianSpanCharacter.ExchangeGen
-public import Formalism.YangianSpanCharacter.StatementY
+public import Formalism.YangianSpanCharacter.Bundle0001
 
 @[expose] public section
 

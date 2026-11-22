@@ -1,9 +1,9 @@
 module
 
-public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.TensorRepresentations.PtrScalar
+public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.TensorRepresentations.Bundle0011
 public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.CasimirCoefficients.PsiExistsStatement
 public import Formalism.SharpRestriction.CuspSpanNormBounds.RelevantZeroGramTerms
-public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.TensorRepresentations.UnitarizeD
+public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.TensorRepresentations.Bundle0010
 public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.AnalyticVectors.Closure
 
 @[expose] public section

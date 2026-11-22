@@ -1,15 +1,15 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PullSpMapComp
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CupChernKummerPullbackNaturalityStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.StrictlyHenselianLocalRingAcyclicEverySheafStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnitsCohomologyBijective
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ClassZeroOfGeometricPoints
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LaurentCohomologyInjective
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DescentEqualizerDegreeZero
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LaurentClassFromIntegralStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SurjectiveOfNoetherianCase
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0361
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0493
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0570
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle3065
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0503
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0923
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0942
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle3076
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0695
 
 @[expose] public section
 

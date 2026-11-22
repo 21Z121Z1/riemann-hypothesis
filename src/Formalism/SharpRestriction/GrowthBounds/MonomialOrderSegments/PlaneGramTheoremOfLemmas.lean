@@ -1,12 +1,12 @@
 module
 
 public import Formalism.SharpRestriction.GrowthBounds.MonomialOrderSegments.RenamePullLCoefOut
-public import Formalism.SharpRestriction.GrowthBounds.MonomialOrderSegments.CardLinkIdxMulLe
+public import Formalism.SharpRestriction.GrowthBounds.MonomialOrderSegments.Bundle0003
 public import Formalism.SharpRestriction.GrowthBounds.MonomialOrderSegments.ExistsOfMemSupportLin
 public import Formalism.SharpRestriction.GrowthBounds.MonomialOrderSegments.SumOnLetterApplyInl
-public import Formalism.SharpRestriction.GrowthBounds.MonomialOrderSegments.PrimedEmbeddingInjective
+public import Formalism.SharpRestriction.GrowthBounds.MonomialOrderSegments.Bundle0002
 public import Formalism.SharpRestriction.GrowthBounds.MonomialOrderSegments.SubstitutedExponentApplyBlock
-public import Formalism.SharpRestriction.GrowthBounds.MonomialOrderSegments.OmegaValue
+public import Formalism.SharpRestriction.GrowthBounds.MonomialOrderSegments.Bundle0006
 
 @[expose] public section
 

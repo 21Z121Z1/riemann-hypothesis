@@ -3,7 +3,7 @@ module
 public import Mathlib
 public import Formalism.UnipotentAdelicQuotients.ThmBInHecke
 public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.CmLocalCharacterValueBounded
-public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.CmCharacterConjugateInverse
+public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.Bundle0006
 
 @[expose] public section
 

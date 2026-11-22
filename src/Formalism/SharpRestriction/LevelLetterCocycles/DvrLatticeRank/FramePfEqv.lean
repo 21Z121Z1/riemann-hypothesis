@@ -1,7 +1,7 @@
 module
 
 public import Formalism.SharpRestriction.LevelLetterCocycles.DvrLatticeRank.FramePfNat
-public import Formalism.SharpRestriction.LevelLetterCocycles.DvrLatticeRank.GradNPfB
+public import Formalism.SharpRestriction.LevelLetterCocycles.DvrLatticeRank.Bundle0007
 
 @[expose] public section
 

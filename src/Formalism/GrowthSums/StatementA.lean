@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Formalism.SubspaceCounting.StatementB
+public import Formalism.SubspaceCounting.Bundle0001
 
 @[expose] public section
 

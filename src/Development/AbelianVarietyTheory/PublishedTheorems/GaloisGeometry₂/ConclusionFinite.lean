@@ -1,11 +1,11 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisGeometry₂.HeckeLAdicParameterAbove
+public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisGeometry₂.Bundle0006
 public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.ConclusionAbsPow
-public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.WdPstCycRepNeTrivWD
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsFixedIff
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExistsRecLawsSuppUnitSurj
+public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.Bundle0016
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0116
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0139
 public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsIrreducibleFixed
 
 @[expose] public section

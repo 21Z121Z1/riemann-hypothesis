@@ -1,8 +1,8 @@
 module
 
 public import Formalism.SharpRestriction.CuspSpanNormBounds.FlagEEqHyperbolic
-public import Formalism.FlagUnipotentLattices.SignaturePreservingEntryNorms
-public import Formalism.LocalRingCardinality.PosOfIsomEmb
+public import Formalism.FlagUnipotentLattices.Bundle0004
+public import Formalism.LocalRingCardinality.Bundle0005
 
 @[expose] public section
 

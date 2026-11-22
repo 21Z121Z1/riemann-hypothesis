@@ -2,12 +2,12 @@ module
 
 public import Mathlib
 public import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.QuotientVanishing.QuotVanish
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IntegralEqSmulIntegralAvg
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsIsometryFlagOfEquiv
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.TwCentPreservesFlag
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0313
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0297
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0308
 public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.EqZeroOfCommuteOfSeparable
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SecondCountableNilrad
-public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.KillingFormDiffCartanInvolution
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0306
+public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0003
 public import Development.AbelianVarietyTheory.Definitions.Divisors.T2SpaceGeneralLinearGroup
 
 @[expose] public section

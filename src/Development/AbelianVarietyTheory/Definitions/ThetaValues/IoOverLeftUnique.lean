@@ -2,8 +2,8 @@ module
 
 public import Mathlib
 public import Formalism.LocalToGlobal.ProjectiveLattices.SpMapAlgHomId
-public import Development.AbelianVarietyTheory.Definitions.ThetaValues.LeCovCoeff
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.SecBCIffSecBCTest
+public import Development.AbelianVarietyTheory.Definitions.ThetaValues.Bundle0002
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0088
 
 @[expose] public section
 

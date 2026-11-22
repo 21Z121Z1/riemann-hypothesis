@@ -1,16 +1,17 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.SmallPair
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.DataAsCombinationsAtSplitPlacesProofStatement
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SplitPlaceChangeBaseVacuumHeisenbergCombinationStatement
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SplitPlaceCombinationExtendByZeroOrthSumLineStatement
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.LatIndLastKerRow
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.IsThetaFunOSourceSliceStatement
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.IsThetaFunOTargetSliceOrthogonalSumStatement
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ExtendByZeroLeftMemCoreLattice
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ExtendByZeroRightMemCoreLattice
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.LatticeOrthogonalSumLineAtSplitPlaceStatement
+public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.Bundle0020
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0352
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0324
+public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.Bundle0018
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0367
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0222
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0234
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0338
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0231
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0232
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0340
 
 @[expose] public section
 
@@ -181,7 +182,7 @@ theorem vac_sliceS {ψ : AddChar (AF D.host.F) ℂ} {S A L T : HSp D} (o : OrthD
     (hO : ∀ v, P v → ∃ LL, OrthAt o LS LA LL v) {f : WO S T → ℂ} (hf : Vac ψ S T LS LT P f) (y : WO L T) :
     Vac ψ A T LA LT P (fun w => f ((o.resS T).symm (w, y))) := by
   have latS := GlobalTheory.ContrComb.extL_mem_latO D S A L T o P LA LT LS hA hT hS hO
-  refine ⟨GlobalTheory.T.isThetaFunO_source_slice D ψ S A L T o f y hf.1, fun u hu => ?_, fun e' he' u hu hh => ?_⟩
+  refine ⟨_root_.GlobalTheory.MixModel.OrthDec.isThetaFunO_slice D ψ S A L T o f y hf.1, fun u hu => ?_, fun e' he' u hu hh => ?_⟩
   · funext w
     rw [← heisO_resS_symm ψ o (2 • u) f w y]
     have h2 : (o.resS T).symm (2 • u, 0) = 2 • (o.resS T).symm (u, 0) := by
@@ -195,7 +196,7 @@ theorem vac_sliceT {ψ : AddChar (AF D.host.F) ℂ} {S A L T : HSp D} (o : OrthD
     (hO : ∀ v, P v → ∃ LL, OrthAt o LS LA LL v) {f : WO T S → ℂ} (hf : Vac ψ T S LT LS P f) (y : WO T L) :
     Vac ψ T A LT LA P (fun w => f ((o.resT T).symm (w, y))) := by
   have latT := GlobalTheory.ContrComb.LatT.latO_extR D S A L T o P LA LT LS hA hT hS hO
-  refine ⟨GlobalTheory.T.isThetaFunO_target_slice_orthogonal_sum D ψ S A L T o f y hf.1, fun u hu => ?_, fun e' he' u hu hh => ?_⟩
+  refine ⟨_root_.GlobalTheory.FinPl.ExtZero.isThetaFunO_sliceT D ψ S A L T o f y hf.1, fun u hu => ?_, fun e' he' u hu hh => ?_⟩
   · funext w
     rw [← heisO_resT_symm ψ o (2 • u) f w y]
     have h2 : (o.resT T).symm (2 • u, 0) = 2 • (o.resT T).symm (u, 0) := by
@@ -212,20 +213,20 @@ namespace GlobalTheory.FinPl.ExtAllPf
 set_option maxHeartbeats 2000000 in
 theorem ext_all : ∀ D : D7, GlobalTheory.FinPl.ExtAll D := by
   intro D k _ _ _ _ ι p I P hP n n' _ _ _ _ ψ hψ S A L T o ζ hζ α α₀ β hsum LA LS LT ΛA ΛT hA hS hT hlat
-  have hAC := GlobalTheory.T.dataAsCombinationsAtSplitPlaces_proof D
+  have hAC := _root_.GlobalTheory.FinPl.allComb D
   have hO : ∀ x, P x → ∃ LL, OrthAt o LS LA LL x := by
     intro x hx
     obtain ⟨i, rfl⟩ := (hP.mem x).1 hx
-    exact GlobalTheory.T.lattice_orthogonal_sum_line_at_split_place D k (p i) n' S A L o ζ hζ (α i) (α₀ i) (hsum i) (hP.unit i) LA LS (ΛA i) hA hS (hlat i).1
+    exact _root_.GlobalTheory.LineSplitAt.orthAt_of_frames D k (p i) n' S A L o ζ hζ (α i) (α₀ i) (hsum i) (hP.unit i) LA LS (ΛA i) hA hS (hlat i).1
       (hlat i).2.1
   have hv : ∀ {U V : HSp D} {LU : Lat U} {LV : Lat V} {f : WO U V → ℂ}, Vac ψ U V LU LV P f →
       ∀ i, Vac ψ U V LU LV (· = (p i).v) f := fun hf i => vac_at' ((hP.mem _).2 ⟨i, rfl⟩) hf
   refine ⟨hO, fun Ψ c hc => ?_, fun Ψ c hc => ?_⟩
   · have hSB : ∀ i, Ψ i ∈ SB (Matrix n n' k) := fun i => overAll_sb I 0 _ (hc.2 0 (vac_zero' P)) i (hP.all i)
-    choose d hd using fun i => (GlobalTheory.T.splitPlace_changeBaseVacuum_heisenbergCombination D k (p i) n n' ψ hψ (hP.unit i) A T (α i) (β i) LA LA LT LT hA hT hA
+    choose d hd using fun i => (_root_.GlobalTheory.FinPl.Rebase.rebase D k (p i) n n' ψ hψ (hP.unit i) A T (α i) (β i) LA LA LT LT hA hT hA
       hT).2 (Ψ i) (hSB i)
     have hext : ∀ i f₀, Vac ψ S T LS LT (· = (p i).v) f₀ → Over ψ (α₀ i) (β i) LS LT f₀ (tensCol (Ψ i) (vecInd (ΛT i)))
-        (comb ψ S T (extS o T (d i)) f₀) := fun i => (GlobalTheory.T.splitPlace_combination_extendByZero_orthSum_line D k (p i) n n' ψ hψ (hP.unit i) S A L T o ζ hζ (α i)
+        (comb ψ S T (extS o T (d i)) f₀) := fun i => (_root_.GlobalTheory.FinPl.ExtZero.ext_zero D k (p i) n n' ψ hψ (hP.unit i) S A L T o ζ hζ (α i)
       (α₀ i) (β i) (hsum i) LA LS LT (ΛA i) (ΛT i) hA hS hT (hlat i).1 (hlat i).2.1 (hlat i).2.2).1 (Ψ i) (d i) (hd i).1
       (hd i).2
     have presA := pres_of_allComb hAC hP hψ α β hA hT d (fun i => (hd i).1)
@@ -242,10 +243,10 @@ theorem ext_all : ∀ D : D7, GlobalTheory.FinPl.ExtAll D := by
     rw [key]
     exact overAll_chain α₀ β LS LT _ _ hext presS I hP.nodup f (hv hf)
   · have hSB : ∀ i, Ψ i ∈ SB (Matrix n' n k) := fun i => overAll_sb I 0 _ (hc.2 0 (vac_zero' P)) i (hP.all i)
-    choose d hd using fun i => (GlobalTheory.T.splitPlace_changeBaseVacuum_heisenbergCombination D k (p i) n' n ψ hψ (hP.unit i) T A (β i) (α i) LT LT LA LA hT hA hT
+    choose d hd using fun i => (_root_.GlobalTheory.FinPl.Rebase.rebase D k (p i) n' n ψ hψ (hP.unit i) T A (β i) (α i) LT LT LA LA hT hA hT
       hA).2 (Ψ i) (hSB i)
     have hext : ∀ i f₀, Vac ψ T S LT LS (· = (p i).v) f₀ → Over ψ (β i) (α₀ i) LT LS f₀ (tensRow (Ψ i) (dualInd (ΛT i)))
-        (comb ψ T S (extT o T (d i)) f₀) := fun i => (GlobalTheory.T.splitPlace_combination_extendByZero_orthSum_line D k (p i) n n' ψ hψ (hP.unit i) S A L T o ζ hζ (α i)
+        (comb ψ T S (extT o T (d i)) f₀) := fun i => (_root_.GlobalTheory.FinPl.ExtZero.ext_zero D k (p i) n n' ψ hψ (hP.unit i) S A L T o ζ hζ (α i)
       (α₀ i) (β i) (hsum i) LA LS LT (ΛA i) (ΛT i) hA hS hT (hlat i).1 (hlat i).2.1 (hlat i).2.2).2 (Ψ i) (d i) (hd i).1
       (hd i).2
     have presA := pres_of_allComb hAC hP hψ β α hT hA d (fun i => (hd i).1)

@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.CoherentCohomologyProofs.LengthRestrictScalarsEqSumInertiaDegOfSubset
+public import Development.AbelianVarietyTheory.Proofs.CoherentCohomologyProofs.Bundle0004
 
 @[expose] public section
 

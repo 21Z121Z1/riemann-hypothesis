@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.IsWeight
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.PublishedTheorems.CyclicBaseChangeC
+public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.Bundle0019
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.PublishedTheorems.Bundle0001
 
 @[expose] public section
 

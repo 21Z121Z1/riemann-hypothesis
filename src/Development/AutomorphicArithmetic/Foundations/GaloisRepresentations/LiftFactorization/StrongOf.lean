@@ -2,10 +2,10 @@ module
 
 public import Mathlib
 public import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.LiftFactorization.RamLiftOf
-public import Development.AutomorphicArithmetic.Foundations.Convolution.SphericalIdeles.NormRam
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsIsUnitaryTwistAbsPow
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsSatFamOfIsDiscrete
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CuspidalGLLocalComponentsEventuallySatake
+public import Development.AutomorphicArithmetic.Foundations.Convolution.SphericalIdeles.Bundle0002
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0629
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1708
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1262
 
 @[expose] public section
 

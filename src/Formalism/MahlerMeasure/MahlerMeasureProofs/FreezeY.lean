@@ -1,6 +1,6 @@
 module
 
-public import Formalism.MahlerMeasure.IsFrozenInv
+public import Formalism.MahlerMeasure.Bundle0003
 
 @[expose] public section
 

@@ -2,8 +2,7 @@ module
 
 public import Mathlib
 public import GroundTheory.ProfiniteCohomology.RealPlaces.ConeMap
-public import GroundTheory.ProfiniteCohomology.RealPlaces.NormHomotopy
-public import GroundTheory.ProfiniteCohomology.RealPlaces.ConeHomotopy
+public import GroundTheory.ProfiniteCohomology.RealPlaces.Bundle0001
 public import GroundTheory.ProfiniteCohomology.CompactSupportCohomology.CompactCupEqCompactCupRight
 
 @[expose] public section

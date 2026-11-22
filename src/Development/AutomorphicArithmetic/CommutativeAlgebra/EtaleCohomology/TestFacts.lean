@@ -1,7 +1,7 @@
 module
 
 public import Development.AutomorphicArithmetic.CommutativeAlgebra.EtaleCohomology.ZeroPull
-public import Development.AutomorphicArithmetic.CommutativeAlgebra.EtaleCohomology.SplitRules
+public import Development.AutomorphicArithmetic.CommutativeAlgebra.EtaleCohomology.Bundle0002
 public import Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.AcrisKummerUnits.GalOCOkToOC
 
 @[expose] public section

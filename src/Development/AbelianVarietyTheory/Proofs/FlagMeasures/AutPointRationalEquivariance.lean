@@ -1,11 +1,11 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.LayerProd
+public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.Bundle0006
 public import Formalism.HarderNarasimhan.ShiftInvariance
 public import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.CsSpan
-public import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.CsApprox
-public import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.CsEquiv
+public import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Bundle0009
+public import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Bundle0010
 
 @[expose] public section
 

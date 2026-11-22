@@ -1,10 +1,10 @@
 module
 
 public import Mathlib
-public import GroundTheory.HeightsAndTheta.Heights.Intersections.StatementsSemilocRing
+public import GroundTheory.HeightsAndTheta.Heights.Intersections.Bundle0035
 public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PGraphIsometric
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PGraphChangeOfModel
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsGraphIsometricForms
+public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0079
+public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0077
 
 @[expose] public section
 

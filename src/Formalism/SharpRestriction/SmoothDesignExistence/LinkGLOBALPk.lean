@@ -1,7 +1,7 @@
 module
 
-public import Formalism.SharpRestriction.GlobalSchurBounds.LinkPk
-public import Formalism.SharpRestriction.AdmissibleParameterJoins.DIVfromGLbud
+public import Formalism.SharpRestriction.GlobalSchurBounds.Bundle0004
+public import Formalism.SharpRestriction.AdmissibleParameterJoins.Bundle0008
 public import Formalism.SharpRestriction.SmoothDesignExistence.DGamSmooth
 
 @[expose] public section

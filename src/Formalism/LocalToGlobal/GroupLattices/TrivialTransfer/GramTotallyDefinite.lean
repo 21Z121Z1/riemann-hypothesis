@@ -1,9 +1,9 @@
 module
 
-public import Formalism.LocalToGlobal.GroupLattices.ComparisonMaps.ClsStab
-public import Formalism.LocalRingCardinality.DataLevelD
+public import Formalism.LocalToGlobal.GroupLattices.ComparisonMaps.Bundle0008
+public import Formalism.LocalRingCardinality.Bundle0001
 public import Formalism.LocalToGlobal.GroupLattices.TrivialTransfer.GenCoprime
-public import Formalism.LocalToGlobal.GroupLattices.LevelCharts.FiniteClassSetOfFiniteIndex
+public import Formalism.LocalToGlobal.GroupLattices.LevelCharts.Bundle0004
 public import Formalism.LocalToGlobal.GroupLattices.LevelGatherings.GramDetIsUnit
 
 @[expose] public section

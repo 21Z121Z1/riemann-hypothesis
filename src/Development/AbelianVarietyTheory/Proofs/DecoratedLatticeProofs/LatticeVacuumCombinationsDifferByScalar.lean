@@ -6,7 +6,7 @@ public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.HzUnit
 public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.CosInj
 public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.UnitRatio
 public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.ProdDat
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.HeisenbergCombinationDisjointPlacesCommuteVacua
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0337
 public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.SelfDualLatticePairingDual
 
 @[expose] public section

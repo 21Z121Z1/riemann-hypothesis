@@ -1,29 +1,28 @@
 module
 
 public import Mathlib
-public import Formalism.LocalToGlobal.IndefiniteReal.ConcretePkgSpec
-public import Formalism.LocalRingCardinality.DataExtra
-public import Formalism.LocalRingCardinality.DataTies
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsHolRepOfIsTau
-public import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.InfinityTypes
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IsFockVacAtOfIsThetaAt
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.InfPartOneSubEInfSmul
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.CompAtMtEqInfMat
-public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.PureTensorLIntertwine
+public import Formalism.LocalToGlobal.IndefiniteReal.Bundle0023
+public import Formalism.LocalRingCardinality.Bundle0007
+public import Formalism.LocalRingCardinality.Bundle0003
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0175
+public import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.Bundle0011
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0142
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0119
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0121
+public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.Bundle0068
 public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.SmulEqZeroOfInf
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ContinuousOnAtTau
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.HolomorphicFamilyLowLieActionStatement
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.LowestWeightVectorTransferStatement
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.FockPolynomialActionOneMulAdjointStatement
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.FockActionsIsHolomorphicProductKRepFamilyStatement
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsMinorProductTranslateJointLowestWeightStatement
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.FrameFunctionActionHolomorphicExtremalLowestStatement
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.CoefficientSpaceLeSpanUnitaryOrbitExtremalStatement
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsPolynomialModelCoefficientSpaceRealPointsStatement
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.WeilMaximalCompactFockSubstitutionCharacterStatement
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ThetaWeightArithmeticAtPlaceProofStatement
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ThetaLiftInfinityTypesAtRealPlaceStatement
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.LowestKTypeCoefficientWeightEqMinorWeightsStatement
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0171
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.HolomorphicFamilyLowLieAction
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0192
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0188
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0204
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsMinorProductTranslateJointLowestWeight
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0182
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0178
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0215
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0347
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0185
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0217
 
 @[expose] public section
 
@@ -189,9 +188,9 @@ theorem exists_io_poly (D : D7) (V W : HSp D) (θ : InfFam D) (Sp : D.what₂.Ta
       ∃ (v : ∀ ρ, lowT M ρ) (w : c.W), (∀ ρ, ‖((v ρ : M.sm ρ) : M.H ρ)‖ = 1) ∧ ‖w‖ = 1 ∧
         io (PiTensorProduct.tprod ℂ v) w = delta p q ap am := by
   obtain ⟨hhK, hhU⟩ := GlobalTheory.T.fockActions_isHolomorphicProductKRepFamily D W.rank V.rank M.ε x₁ x₂ x₃
-  obtain ⟨κ, Δ', hκ, hΔ, hbK, hbU⟩ := GlobalTheory.T.exists_minorProduct_translate_jointLowestWeight D W.rank V.rank M.ε p q ap am x₁ x₂ x₃ hr hpq hε hap ham
-  obtain ⟨m, hm1, hm2, hm3⟩ := GlobalTheory.T.holomorphic_family_low_lie_action D W Sp M _ _ _ hhK
-  obtain ⟨hv1, hv2, hv3, hv4⟩ := GlobalTheory.T.frameFunctionAction_holomorphic_extremal_lowest D.what₂.Tau V.rank lam
+  obtain ⟨κ, Δ', hκ, hΔ, hbK, hbU⟩ := _root_.GlobalTheory.JointHarm.MinorBottom.exists_joint_bottom D W.rank V.rank M.ε p q ap am x₁ x₂ x₃ hr hpq hε hap ham
+  obtain ⟨m, hm1, hm2, hm3⟩ := _root_.GlobalTheory.JointHarm.MultiOp.lowest_types_act D W Sp M _ _ _ hhK
+  obtain ⟨hv1, hv2, hv3, hv4⟩ := _root_.GlobalTheory.JointHarm.vact_isHolFam_isBotFam D.what₂.Tau V.rank lam
   have eK : (fun τ a => -(wtK (p τ) (ap τ) (am τ) (x₁ τ) (x₂ τ) a : ℝ)) =
       fun τ => -Formalism.QuantumDeterminants.lowK (M.ε τ) (M.lam τ) := by
     funext τ a; rw [Pi.neg_apply, hK]
@@ -200,14 +199,14 @@ theorem exists_io_poly (D : D7) (V W : HSp D) (θ : InfFam D) (Sp : D.what₂.Ta
     funext τ j; rw [hU]; push_cast; rfl
   rw [eK] at hbK
   rw [eU] at hbU
-  obtain ⟨ψ, hψ⟩ := GlobalTheory.T.lowest_weight_vector_transfer _ _ _ _ _ _ _ _ _ _ _ _ hhU hv1 hbU hv2 hv3
-  obtain ⟨j, hj1, hj2⟩ := GlobalTheory.T.exists_polynomialModel_coefficientSpace_realPoints D V θ c lam c0 hθ hc h0 BS hBS
+  obtain ⟨ψ, hψ⟩ := _root_.GlobalTheory.JointHarm.OrbitMap.exists_orbit_map _ _ _ _ _ _ _ _ _ _ _ _ hhU hv1 hbU hv2 hv3
+  obtain ⟨j, hj1, hj2⟩ := _root_.GlobalTheory.CoefReal.exists_poly_model D V θ c lam c0 hθ hc h0 BS hBS
   have key : ∀ F ∈ VV ℂ lam,
       ψ F ∈ botSub M.ε (factK V.rank M.ε x₁ x₂ x₃) (fun τ => -Formalism.QuantumDeterminants.lowK (M.ε τ) (M.lam τ)) ∧
       ∀ u : D.what₂.Tau → Matrix (Fin V.rank) (Fin V.rank) ℂ, (∀ τ, u τ ∈ Formalism.REAL.Kset (allPos V.rank)) →
         ψ (vact lam u F) = factU M.ε x₁ x₂ x₃ u (ψ F) := by
     intro F hF
-    have hF' := GlobalTheory.T.coefficientSpace_le_span_unitary_orbit_extremal D.what₂.Tau V.rank lam hF
+    have hF' := _root_.GlobalTheory.JointHarm.VV_le_span_vact_extremal D.what₂.Tau V.rank lam hF
     clear hF
     induction hF' using Submodule.span_induction with
     | mem F h =>
@@ -321,15 +320,15 @@ theorem exists_ioP : ∀ (D : D7) (G : Type) [Group G] [Fintype G] (Pl0 T : Type
   obtain ⟨x₁, x₂, x₃, hx⟩ := GlobalTheory.T.lowestKType_coefficientWeight_eq_minorWeights D i (sg0 D A) (sgAt_mk _ R.hv0) (R.MW i (sg0 D A)) (hM.order i)
   have hrk : (Wc D i).rank = D.R.r := D.sp.W_rank _ (Nat.le_add_left _ _) i.2
   have hpq : ∀ τ, ((Wc D i).sig (tauE D τ)).1 + ((Wc D i).sig (tauE D τ)).2 = (Wc D i).rank := fun τ =>
-    (GlobalTheory.T.thetaWeightArithmeticAtPlace_proof D i τ).rank.1.trans hrk.symm
+    (_root_.GlobalTheory.PairWeightArith.arithAt D i τ).rank.1.trans hrk.symm
   obtain ⟨io, h1, h2, h3⟩ := exists_io_poly D (Vc D i) (Wc D i) R.θ _ (R.MW i (sg0 D A)) (R.cV i) _ (c0L i) hθ
     (hM.cV i) (hT.mapL i) (R.BV i) hBu _ _ _ _ x₁ x₂ x₃ (hrk.le.trans (r_le_V i)) hpq (hM.order i)
-    (fun τ => (GlobalTheory.T.thetaWeightArithmeticAtPlace_proof D i τ).aPlus_antitone) (fun τ => (GlobalTheory.T.thetaWeightArithmeticAtPlace_proof D i τ).aM_anti) (fun τ => (hx τ).2.2.2.1)
+    (fun τ => (_root_.GlobalTheory.PairWeightArith.arithAt D i τ).aPlus_antitone) (fun τ => (_root_.GlobalTheory.PairWeightArith.arithAt D i τ).aM_anti) (fun τ => (hx τ).2.2.2.1)
     (fun τ => (hx τ).2.2.2.2)
   refine ⟨io, fun t => ?_⟩
-  have hact := GlobalTheory.T.weil_maximalCompact_fock_substitution_character D R.ψ R.θ (Vc D i) (Wc D i) _ _ (R.ωP i t) _ (R.MW i (sg0 D A)) (R.BV i) (hω i t) hθ
-    (D.sp.V_sig _) (D.sp.W_sig _) hBS _ _ hpq (hM.order i) _ _ (fun τ => (GlobalTheory.T.thetaLiftInfinityTypes_atRealPlace D T R.toLevCh A.μ0 hL i t τ).chiV)
-    (fun τ => (GlobalTheory.T.thetaLiftInfinityTypes_atRealPlace D T R.toLevCh A.μ0 hL i t τ).chiW) x₁ x₂ x₃ (fun τ => (hx τ).1) (fun τ => (hx τ).2.1)
+  have hact := _root_.GlobalTheory.FockCompactAction.om_pureTensorO_eq_fact D R.ψ R.θ (Vc D i) (Wc D i) _ _ (R.ωP i t) _ (R.MW i (sg0 D A)) (R.BV i) (hω i t) hθ
+    (D.sp.V_sig _) (D.sp.W_sig _) hBS _ _ hpq (hM.order i) _ _ (fun τ => (_root_.GlobalTheory.PairInfTypes.infTypesAt D T R.toLevCh A.μ0 hL i t τ).chiV)
+    (fun τ => (_root_.GlobalTheory.PairInfTypes.infTypesAt D T R.toLevCh A.μ0 hL i t τ).chiW) x₁ x₂ x₃ (fun τ => (hx τ).1) (fun τ => (hx τ).2.1)
     (fun τ => (hx τ).2.2.1) _ (hth i t)
     (GlobalTheory.DatumFock.isFockVacAt_thPVec _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ (hv i t) (hth i t))
   have hfr : ∀ τ, (R.MW i (sg0 D A)).fr τ * ((R.MW i (sg0 D A)).fr τ)⁻¹ = 1 := fun τ =>

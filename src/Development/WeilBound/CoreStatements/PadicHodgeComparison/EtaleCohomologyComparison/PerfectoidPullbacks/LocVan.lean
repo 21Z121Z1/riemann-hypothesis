@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ToH0BijectiveOfInitial
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0190
 public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FormAlternating
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.DFormMem
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0086
 public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IndexZeroForallOfExtend
 public import Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.CechPairings.Imports
 public import Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.PerfectoidPullbacks.CapOComp

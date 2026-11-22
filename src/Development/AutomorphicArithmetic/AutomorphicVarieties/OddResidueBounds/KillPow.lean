@@ -1,13 +1,9 @@
 module
 
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.OddResidueBounds.ZeroMemUnrHom
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.OddResidueBounds.ActEx
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.OddResidueBounds.ActFacts
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.OddResidueBounds.ActConj
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.OddResidueBounds.Bundle0001
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.OddResidueBounds.Bundle0003
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.OddResidueBounds.ZKill
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.OddResidueBounds.AdjKill
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.OddResidueBounds.DetVal
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.OddResidueBounds.BdxLog
 
 @[expose] public section
 

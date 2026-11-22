@@ -2,17 +2,18 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExponentAndTwistData
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.MemZpowersOfTameGen
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0078
 public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsTameGenAtOfValuationSubring
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.FixedOfPowFixed
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0188
 public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.FiniteDimensionalForms
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.FiniteDoubleCosetsDefiniteUnitaryMaximalLevelStatement
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsSplitPlOfNotIsConjPl
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.OpenKerCharWildEqOneOfPowEqOneStatement
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsPowJointStatement
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsInertiaTameCharPrimitiveRootOfUniformizerRStatement
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsConjInertiaTameCharOtherPlaceStatement
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsZetaPowCloseToUnitZpowStatement
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0174
+public import Formalism.LocalToGlobal.GaloisLevelStructure.DefsAut
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0254
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0084
+public import Formalism.LocalToGlobal.NormalizedHeckeFactors.RingHomOfBaseOrderToFraction
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0089
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0086
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0083
 
 @[expose] public section
 
@@ -26,7 +27,7 @@ namespace GlobalTheory.TameValChar
 theorem L_wildKill : ∀ {E Ω : Type} [Field E] [NumberField E] [Field Ω] [Algebra E Ω] [IsAlgClosure E Ω]
     {M : Type} [CommGroup M] (φ : Formalism.ConjugateSelfDual.G E Ω →* M) (P : HeightOneSpectrum (𝓞 E)) (A : ValuationSubring Ω) (m : ℕ),
     Formalism.ConjugateSelfDual.IsPlaceOver A P → IsOpen (φ.ker : Set (Formalism.ConjugateSelfDual.G E Ω)) → ((m : ℕ) : 𝓞 E) ∉ P.asIdeal →
-    ∀ τ : Formalism.ConjugateSelfDual.G E Ω, (∀ y : Ω, y ≠ 0 → A.valuation (τ y / y - 1) < 1) → (∃ N : ℕ, φ τ ^ (m ^ N) = 1) → φ τ = 1 := GlobalTheory.T.openKerChar_wild_eq_one_of_pow_eq_one
+    ∀ τ : Formalism.ConjugateSelfDual.G E Ω, (∀ y : Ω, y ≠ 0 → A.valuation (τ y / y - 1) < 1) → (∃ N : ℕ, φ τ ^ (m ^ N) = 1) → φ τ = 1 := _root_.GlobalTheory.WildOpenKernel.eq_one_of_wild
 
 theorem L_joint : ∀ {E Ω : Type} [Field E] [NumberField E] [Field Ω] [Algebra E Ω] [IsAlgClosure E Ω]
     {M : Type} [CommGroup M] (φ : Formalism.ConjugateSelfDual.G E Ω →* M) (P : HeightOneSpectrum (𝓞 E)) (A : ValuationSubring Ω) (L : ℕ)
@@ -51,7 +52,7 @@ theorem L_move : ∀ {E Ω : Type} [Field E] [NumberField E] [Field Ω] [Algebra
 theorem L_teich : ∀ {E Ω : Type} [Field E] [NumberField E] [Field Ω] [Algebra E Ω]
     (P : HeightOneSpectrum (𝓞 E)) (A : ValuationSubring Ω) (ζ : Ω),
     Formalism.ConjugateSelfDual.IsPlaceOver A P → IsPrimitiveRoot ζ (Formalism.ConjugateSelfDual.normV P - 1) → ∀ (u : 𝓞 E) (e : ℤ), u ∉ P.asIdeal →
-    ∃ a : ℕ, A.valuation (ζ ^ a - (algebraMap E Ω (u : E)) ^ e) < 1 := GlobalTheory.T.exists_zeta_pow_close_to_unit_zpow
+    ∃ a : ℕ, A.valuation (ζ ^ a - (algebraMap E Ω (u : E)) ^ e) < 1 := _root_.GlobalTheory.TamePowTeich.exists_zeta_pow_close
 
 theorem L_vone : ∀ {E Ω : Type} [Field E] [NumberField E] [Field Ω] [Algebra E Ω]
     (P : HeightOneSpectrum (𝓞 E)) (A : ValuationSubring Ω), Formalism.ConjugateSelfDual.IsPlaceOver A P →

@@ -1,7 +1,7 @@
 module
 
 public import Formalism.LocalToGlobal.Divisibility.RowSideTie
-public import Formalism.LocalRingCardinality.DataExtra
+public import Formalism.LocalRingCardinality.Bundle0007
 
 @[expose] public section
 

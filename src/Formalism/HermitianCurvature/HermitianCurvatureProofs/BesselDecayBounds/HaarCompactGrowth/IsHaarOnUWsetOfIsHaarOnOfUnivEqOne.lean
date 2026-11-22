@@ -1,6 +1,6 @@
 module
 
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.BesselDecayBounds.BesselUnitNorm.BesselNormSteps.BesselLine.ConvMeas
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.BesselDecayBounds.BesselUnitNorm.BesselNormSteps.BesselLine.Bundle0002
 public import Formalism.HermitianCurvature.HermitianCurvatureProofs.BesselDecayBounds.BesselUnitNorm.BesselNormSteps.BesselLine.ConvPi
 public import Formalism.HermitianCurvature.HermitianCurvatureProofs.BesselDecayBounds.HaarCompactGrowth.ExpUpper
 public import Formalism.HermitianCurvature.HermitianCurvatureProofs.BesselDecayBounds.BesselIntegrability.LieNUpper
@@ -10,8 +10,8 @@ public import Formalism.HermitianCurvature.HermitianCurvatureProofs.OppositeWeyl
 public import Formalism.HermitianCurvature.HermitianCurvatureProofs.ConjugationInvarianceEverySetting
 public import Formalism.HermitianCurvature.HermitianCurvatureProofs.UnipotentHeisenbergDecomposition
 public import Formalism.SharpRestriction.CuspSpanNormBounds.BridgeLemma3
-public import Formalism.PeriodIntegrals.BesselPeriodGGP
-public import Formalism.PeriodIntegrals.IsLowUnitH
+public import Formalism.PeriodIntegrals.Bundle0016
+public import Formalism.PeriodIntegrals.Bundle0011
 
 @[expose] public section
 

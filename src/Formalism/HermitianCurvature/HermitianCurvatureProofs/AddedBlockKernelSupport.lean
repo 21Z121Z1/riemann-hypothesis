@@ -1,9 +1,8 @@
 module
 
 public import Formalism.HermitianCurvature.BlockKernelPropertiesOfSteps
-public import Formalism.DoubleCosetMeasures.LowerUnipotentOrbits.IsIntOfLatOfLe
+public import Formalism.DoubleCosetMeasures.LowerUnipotentOrbits.Bundle0001
 public import Formalism.DoubleCosetMeasures.LowerUnipotentOrbits.LowUniMulVecELast
-public import Formalism.DoubleCosetMeasures.LowerUnipotentOrbits.IsOpenIsIntSet
 public import Formalism.DoubleCosetMeasures.LowerUnipotentOrbits.MulInvBlockDiagApplySameBlock
 
 @[expose] public section

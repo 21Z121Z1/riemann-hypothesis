@@ -1,11 +1,16 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.HasBaseDegreeSettingStrict
-public import Development.AutomorphicSpectrum.Definitions.DivisibilityTowers.RefLinked
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.InterSt
-public import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.TestPolynomialShiftTotalStatement
-public import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.PZhangLowerX
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.Bundle0014
+public import Development.AutomorphicSpectrum.Definitions.DivisibilityTowers.Bundle0001
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.Bundle0006
+public import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.Bundle0028
+public import GroundTheory.HeightsAndTheta.Heights.Antisymmetric.Statements
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArithmeticIntersection.MultihomogeneousIdeals.Bundle0001
+public import Development.AutomorphicSpectrum.Definitions.DivisibilityTowers.HeckeSectionsIsotropicCommutatorPairingPower
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.Bundle0012
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArakelovGeometry.KleimanNefness.Bundle0001
+public import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.Bundle0014
 
 @[expose] public section
 
@@ -85,7 +90,7 @@ theorem ppc_lower_of_setting (hZ : ZhangLowerX.Statement) {II : IntersectionSyst
     -((Ch + Cu / 2) * Fintype.card Ψ * (min T.j (N - T.j) : ℕ) * bigLam B rd Lval) *
         (((dimX Ψ N T.j : ℝ) + 1) * (T.vol c * testDeg Ψ N T.j)) ≤ T.PPc II B c (testPoly T.j) := by
   obtain ⟨K, _, ι, _, Ω, _, _, E, _, _, D, O, Lt, _, _, _, X, hDN, hDj, hrd, hL, h1, h2, h3, h4, h5, h6, -, h7, h8⟩ := h
-  have hJ : 0 < testDeg Ψ N T.j := (GlobalTheory.T.test_polynomial_shift_total Ψ N T.j T.j_pos T.j_lt).2.1
+  have hJ : 0 < testDeg Ψ N T.j := (_root_.GlobalTheory.CompanionTheory.Ar.Top.testPoly_facts Ψ N T.j T.j_pos T.j_lt).2.1
   have hf : D.f = Fintype.card Ψ := rfl
   have hj' : D.j' = N - T.j := by simp only [ComponentData.j', hDN, hDj]
   have hmin : min T.j (N - T.j) = N - T.j := by

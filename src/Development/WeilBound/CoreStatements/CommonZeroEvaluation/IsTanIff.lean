@@ -1,12 +1,19 @@
 module
 
 public import Mathlib
-public import Development.WeilBound.CoreStatements.CommonZeroEvaluation.CombComb
+public import Development.WeilBound.CoreStatements.CommonZeroEvaluation.Bundle0004
 public import Development.WeilBound.CoreStatements.CommonZeroEvaluation.ExistsLeftInv
-public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.ConjEmbRtOfNe
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.CompleteDvrPullbackSemiabelianStatement
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.Bundle0015
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0189
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0183
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0145
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.IsExcisionNbhdAway
+public import Development.AbelianVarietyTheory.Proofs.HomogeneousIdeals.GenericExistsUniqueOActOfIsGrpPullback
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.Bundle0006
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.Bundle0007
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0187
 public import Development.AbelianVarietyTheory.Proofs.GenericRegularity.ExistsAffineLieBasisBaseChange
-public import Development.AbelianVarietyTheory.Proofs.GenericRegularity.ExistsChartFiniteType
+public import Development.AbelianVarietyTheory.Proofs.GenericRegularity.Bundle0011
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.BCTools
 
 @[expose] public section
@@ -126,7 +133,7 @@ theorem IsChart.integral (hExt : GlobalTheory.Published.SemiAbelianHomExtension)
     · rw [Category.assoc, Category.assoc, ha1, Y.m0.act r, ← Category.assoc, ha1, m1.act r]
     · rw [Category.assoc, Category.assoc, ha2, Over.w (Y.oF.t.act.act r), ha2, ← Category.assoc,
         Over.w (t'.act.act r)]
-  obtain ⟨Ψ, hΨ, hm2, -⟩ := GlobalTheory.T.complete_dvr_pullback_semiabelian E H hExt Y.X Y.t T (spMap f₀ ≫ hU.fromSpec) G t' m2 (a ≫ Y.m.φ) gpY
+  obtain ⟨Ψ, hΨ, hm2, -⟩ := _root_.GlobalTheory.CompanionTheory.Ar.Rec.FinRd.Roots.LieBasis.exists_extended_identification E H hExt Y.X Y.t T (spMap f₀ ≫ hU.fromSpec) G t' m2 (a ≫ Y.m.φ) gpY
     (fun r => by rw [← Category.assoc, acta r, Category.assoc, Y.m.act r, Category.assoc])
   obtain ⟨v, hv, hb⟩ := hC T.V f₀ G.G Ψ hΨ
   obtain ⟨u, hu, hp⟩ := exists_prim hb

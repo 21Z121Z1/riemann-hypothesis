@@ -1,17 +1,18 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsPeriodAtRestrict
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.Bundle0013
 public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.EmbedsGeneric
 public import Development.AutomorphicSpectrum.Definitions.DivisibilityTowers.GoodOrigin
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.GlobalSectionsRankAlgClosed
-public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IntegralClosureHeightEqOneOfLiesOver
-public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.GlueApplyOfNotInFibre
-public import Development.AutomorphicSpectrum.Statements.GeometryStatements.FlatLineGenerator
-public import Development.AutomorphicSpectrum.Statements.GeometryStatements.CardComapMulFinsumEqFinsumFibres
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.Bundle0010
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.Bundle0005
+public import Development.AutomorphicSpectrum.Statements.GeometryStatements.Bundle0007
 public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.PotentialsBoundedRegSettingEqReference
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.SncPts
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsSncModelOfPatchesStatement
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0023
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0134
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0017
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.BlowupProjections.BlowupProjStatement
 public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.CoordOverIntOfFiniteOrder
 public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.HomogeneousFormNonvanishingPoint
 
@@ -261,7 +262,7 @@ theorem exists_isSncModel_of_sncPts : ∀ (Ω : Type) [Field Ω] [CharZero Ω] (
   obtain ⟨N, hN⟩ := Nat.exists_eq_succ_of_ne_zero hcard.ne'
   let E : Fin (N + 1) ≃ ((k : K) → J k) := (Finite.equivFinOfCardEq hN).symm
   have hTx : CoordTie ℤ ξ (fun j : Fin (N + 1) => ∏ k, y ⟨k, E j k⟩) := CoordBase.coordTie_reindex E hT
-  obtain ⟨bd₁, hs, hpt⟩ := GlobalTheory.T.exists_snc_model_of_patches Ω X ξ N _ e B hTx hB hP
+  obtain ⟨bd₁, hs, hpt⟩ := _root_.GlobalTheory.CompanionTheory.Ar.SncBase.exists_isSncModel_of_patches Ω X ξ N _ e B hTx hB hP
   have hs' := isSncModel_seg E y e bd₁ hs
   refine ⟨bd₁.map (segMap E), hs', fun z w hw => ?_⟩
   rcases isEmpty_or_nonempty K with hK | hK

@@ -2,8 +2,8 @@ module
 
 public import Mathlib
 public import Formalism.LocalToGlobal.UnitaryNorms.MemFIffReal
-public import Development.AbelianVarietyTheory.Definitions.Foundations.ValuedAlgebraMapEqOne
-public import Development.AbelianVarietyTheory.Definitions.Foundations.DiagUnitsEqLocalIdele
+public import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0002
+public import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0003
 public import Development.AbelianVarietyTheory.Definitions.Foundations.IsUnitaryOfOrder
 public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.ExistsUniqueIdeleOfLinearEquivQuotientLocal
 

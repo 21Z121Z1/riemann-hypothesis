@@ -1,17 +1,16 @@
 module
 
 public import Development.WeilBound.RepresentationTheoryGL.UnitaryDualProof.HermitianForms.UnitaryLattices.LatticeIndexLifts.AvNonneg
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NormalizedAbsDetMulIntegralCompMulVecFinitePlace
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1584
 public import Mathlib
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.AnnihilatorOpenCompactStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.RelIndexAnnihilatorsDualityStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LatticeAnnihilatorWithinNhdsStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsOpenCompactLatticeContainingStatement
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0085
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0098
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0015
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0031
 public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.GaussianDualMeasure.SecondCountableTopologyAndT2Space
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LocalContinuousSectionVecMulOrbitStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.EventuallyHaarDetEqOneNearOneStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.HaarMeasureSubgroupRelIndexMulStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsGLLastBasisVecMulEqStatement
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0016
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0030
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0012
 
 @[expose] public section
 
@@ -29,17 +28,17 @@ section Lattices
 variable (ψ : AddChar k Circle) {n : ℕ}
 
 theorem perp_open (hψ : Continuous ψ) (hψ1 : ψ ≠ 1) {A : AddSubgroup (Fin n → k)} (hA : Lat A) :
-    IsOpen (perp ψ A : Set (Fin n → k)) := (GlobalTheory.T.annihilator_open_compact k ψ hψ hψ1 n A hA.1 hA.2).1
+    IsOpen (perp ψ A : Set (Fin n → k)) := (_root_.GlobalTheory.CompanionTheory.CharPerp.perp_isOpen_isCompact k ψ hψ hψ1 n A hA.1 hA.2).1
 
 theorem perp_compact (hψ : Continuous ψ) (hψ1 : ψ ≠ 1) {A : AddSubgroup (Fin n → k)} (hA : Lat A) :
-    IsCompact (perp ψ A : Set (Fin n → k)) := (GlobalTheory.T.annihilator_open_compact k ψ hψ hψ1 n A hA.1 hA.2).2
+    IsCompact (perp ψ A : Set (Fin n → k)) := (_root_.GlobalTheory.CompanionTheory.CharPerp.perp_isOpen_isCompact k ψ hψ hψ1 n A hA.1 hA.2).2
 
 theorem perp_anti {A A' : AddSubgroup (Fin n → k)} (h : A ≤ A') : perp ψ A' ≤ perp ψ A :=
   fun _ hξ a ha => hξ a (h ha)
 
 theorem perp_relIndex (hψ : Continuous ψ) (hψ1 : ψ ≠ 1) {A₀ A : AddSubgroup (Fin n → k)} (h₀ : Lat A₀) (h : Lat A)
     (hle : A₀ ≤ A) : (perp ψ A).relIndex (perp ψ A₀) = A₀.relIndex A :=
-  GlobalTheory.T.relIndex_annihilators_duality k ψ hψ hψ1 n A₀ A (perp ψ A₀) (perp ψ A) h₀.1 h₀.2 h.1 h.2 hle (fun _ => Iff.rfl) (fun _ => Iff.rfl)
+  _root_.GlobalTheory.CompanionTheory.IndexDuality.relIndex_annihilator_eq k ψ hψ hψ1 n A₀ A (perp ψ A₀) (perp ψ A) h₀.1 h₀.2 h.1 h.2 hle (fun _ => Iff.rfl) (fun _ => Iff.rfl)
 
 theorem relIndex_ne_zero_of_lat {A₀ A : AddSubgroup (Fin n → k)} (h₀ : Lat A₀) (h : Lat A) : A₀.relIndex A ≠ 0 := by
   haveI : CompactSpace A := isCompact_iff_compactSpace.mp h.1
@@ -53,7 +52,7 @@ theorem lat_over {K : Set (Fin n → k)} (hK : IsCompact K) : ∃ A : AddSubgrou
 
 theorem lat_shrink (hψ : Continuous ψ) (hψ1 : ψ ≠ 1) {U : Set (Fin n → k)} (hU : U ∈ 𝓝 (0 : Fin n → k)) :
     ∃ A : AddSubgroup (Fin n → k), Lat A ∧ (perp ψ A : Set _) ⊆ U := by
-  obtain ⟨A, h1, h2, h3⟩ := GlobalTheory.T.lattice_annihilator_within_nhds k ψ hψ hψ1 n U hU
+  obtain ⟨A, h1, h2, h3⟩ := _root_.GlobalTheory.CompanionTheory.AnnihShrink.exists_compact_open_annihilator_subset k ψ hψ hψ1 n U hU
   exact ⟨A, ⟨h1, h2⟩, h3⟩
 
 theorem lat_sup {A A' : AddSubgroup (Fin n → k)} (h : Lat A) (h' : Lat A') : ∃ A'', Lat A'' ∧ A ≤ A'' ∧ A' ≤ A'' := by
@@ -236,12 +235,12 @@ theorem Df_ker (Y : Submodule ℂ V) (hY : ∀ g, ∀ y ∈ Y, gl g y ∈ Y) (hC
 
 omit hCp hCc in
 theorem Df_loc {ζ : Fin (m + 1) → k} (hζ : ζ ≠ 0) (v w : V) : ∀ᶠ ξ in 𝓝 ζ, Df gl s C ξ v w = Df gl s C ζ v w := by
-  obtain ⟨N, hNo, hζN, f, hf, hf1, hfN⟩ := GlobalTheory.T.local_continuous_section_vecMul_orbit k (m + 1) ζ hζ
+  obtain ⟨N, hNo, hζN, f, hf, hf1, hfN⟩ := _root_.GlobalTheory.CompanionTheory.OrbitSection.exists_local_section k (m + 1) ζ hζ
   have hH : {h : GL (Fin (m + 1)) k | gl h v = v} ∩ {h | gl h w = w} ∩ {h | md h = 1} ∈ 𝓝 (1 : GL (Fin (m + 1)) k) := by
     refine Filter.inter_mem (Filter.inter_mem ?_ ?_) ?_
     · exact (hS.smooth_gl v).mem_nhds (by simp)
     · exact (hS.smooth_gl w).mem_nhds (by simp)
-    · filter_upwards [GlobalTheory.T.eventually_haar_det_eq_one_near_one k (m + 1)] with h hh
+    · filter_upwards [_root_.GlobalTheory.CompanionTheory.LocalModule.distribHaarChar_det_eventually_eq_one k (m + 1)] with h hh
       simp [md, nabs, hh]
   have hfc : ContinuousAt f ζ := hf.continuousAt (hNo.mem_nhds hζN)
   have hpre : f ⁻¹' ({h : GL (Fin (m + 1)) k | gl h v = v} ∩ {h | gl h w = w} ∩ {h | md h = 1}) ∈ 𝓝 ζ :=
@@ -271,7 +270,7 @@ variable {m : ℕ} (ψ : AddChar k Circle) (ν : Measure (Fin (m + 1) → k)) [�
 
 theorem meas_perp_index (hψ : Continuous ψ) (hψ1 : ψ ≠ 1) {A₀ A : AddSubgroup (Fin (m + 1) → k)} (h₀ : Lat A₀) (h : Lat A)
     (hle : A₀ ≤ A) : ν (perp ψ A₀) = (A₀.relIndex A : ℝ≥0∞) * ν (perp ψ A) := by
-  have := GlobalTheory.T.haar_measure_subgroup_relIndex_mul (Fin (m + 1) → k) ν (perp ψ A) (perp ψ A₀) (perp_anti ψ hle)
+  have := _root_.GlobalTheory.CompanionTheory.HaarIndex.measure_eq_relIndex_mul (Fin (m + 1) → k) ν (perp ψ A) (perp ψ A₀) (perp_anti ψ hle)
     (perp_open ψ hψ hψ1 h).measurableSet (by rw [perp_relIndex ψ hψ hψ1 h₀ h hle]; exact relIndex_ne_zero_of_lat h₀ h)
   rw [this, perp_relIndex ψ hψ hψ1 h₀ h hle]
 
@@ -400,10 +399,10 @@ theorem locB {ζ : Fin (m + 1) → k} (hζ : ζ ≠ 0) (v : V) :
       Df gl s C ξ v v = Df gl s C ζ v v ∧ ∀ M, Lat M → M₀ ≤ M →
         (Df gl s C ζ v v).re * (ν (perp ψ M)).toReal ≤ (B (av ψ col ξ M v) v).re := by
   obtain ⟨A₁, hA₁, hA₀₁, hA₁s⟩ := hD (gl (sect ζ)⁻¹ v) (gl (sect ζ)⁻¹ v)
-  obtain ⟨N, hNo, hζN, f, hf, hf1, hfN⟩ := GlobalTheory.T.local_continuous_section_vecMul_orbit k (m + 1) ζ hζ
+  obtain ⟨N, hNo, hζN, f, hf, hf1, hfN⟩ := _root_.GlobalTheory.CompanionTheory.OrbitSection.exists_local_section k (m + 1) ζ hζ
   have hH : {h : GL (Fin (m + 1)) k | gl h v = v} ∩ {h | md h = 1} ∈ 𝓝 (1 : GL (Fin (m + 1)) k) := by
     refine Filter.inter_mem ((hS.smooth_gl v).mem_nhds (by simp)) ?_
-    filter_upwards [GlobalTheory.T.eventually_haar_det_eq_one_near_one k (m + 1)] with h hh
+    filter_upwards [_root_.GlobalTheory.CompanionTheory.LocalModule.distribHaarChar_det_eventually_eq_one k (m + 1)] with h hh
     simp [md, nabs, hh]
   have hfc : ContinuousAt f ζ := hf.continuousAt (hNo.mem_nhds hζN)
   have hW : N ∩ f ⁻¹' ({h : GL (Fin (m + 1)) k | gl h v = v} ∩ {h | md h = 1}) ∈ 𝓝 ζ :=

@@ -2,19 +2,18 @@ module
 
 public import Mathlib
 public import Formalism.SharpRestriction.CuspSpanNormBounds.FractionFieldToGenericStalkAlgebraMapEq
-public import Development.AbelianVarietyTheory.Definitions.Foundations.IsHermND
+public import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0007
 public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.ComplementReferenceCompactSubgroup
 public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.IsPrincipalIdealRingOfHenselian
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsEqZpowMulUnit
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.CardEqPowAndIndexGe
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.EichlerIsometry
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0029
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0027
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0024
 public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.BasisOfIsCompl
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.SpanToLePerp
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0037
 public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.MemPerpSpan
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.HermitianDoubleCosetTermBasicFacts
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.DetUpdateRowLastSingle
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.CardCokernelUnramifiedOrderMatrixOfDetBaseStatement
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.HermitianDoubleCosetFramesLevelLeIffCongrFlagSteStatement
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0043
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0003
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0032
 
 @[expose] public section
 
@@ -127,7 +126,7 @@ theorem defect [IsNonarchimedeanLocalField F] [CharZero F] (L : LocE F E) (ϖ : 
     rwa [hdet, ← mul_assoc, ← map_mul, h8] at h7
   · set M := Submodule.span L.O (Set.range b) with hM
     let K : AddSubgroup (ι → L.O) := (LinearMap.range A.mulVecLin).toAddSubgroup
-    have hK : K.index = resQ ϖ ^ (2 * a) := GlobalTheory.T.card_cokernel_unramifiedOrder_matrix_of_det_base L ϖ hϖ ι A a u (hAdet.trans hdet)
+    have hK : K.index = resQ ϖ ^ (2 * a) := _root_.GlobalTheory.UnramOrder.card_coker_of_det_eq L ϖ hϖ ι A a u (hAdet.trans hdet)
     have hq : 2 ≤ resQ ϖ := (order_facts L ϖ hϖ).2.2.2.2.2.2.1
     have hinj : Function.Injective Gᵀ.mulVec :=
       Matrix.mulVec_injective_of_isUnit ((Matrix.isUnit_iff_isUnit_det _).2
@@ -451,7 +450,7 @@ theorem exponents_and_defect : ∀ {F : Type} [Field F] [ValuativeRel F] [Topolo
   have hlev : ∀ y ∈ S.sat Λ, ∀ j, S.levC d Λ y ≤ j ↔
       ∃ y₁ ∈ S.spanTo S.f j ⊔ S.spanTo S.f' j, y - y₁ ∈ S.M d Λ := fun y hy j => by
     rw [← hsp, ← hsp']
-    exact GlobalTheory.T.hermitianDoubleCosetFrames_level_le_iff_congr_flagSteps L r k S _ _ y (hsat y hy) j
+    exact _root_.GlobalTheory.FrameLevel.main L r k S _ _ y (hsat y hy) j
   refine ⟨by omega, hvD, hD, hHp, le_trans (one_le_zpow₀ hq1 (by omega)) hHp,
     ⟨i, by omega, hbe'⟩, hBB, fun h => ?_, fun y hy => ?_, fun y hy => ?_, hlev⟩
   · have hi0 : i ≠ 0 := by

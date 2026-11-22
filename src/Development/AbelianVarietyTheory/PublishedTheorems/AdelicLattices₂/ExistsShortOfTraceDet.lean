@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.MinkowskiLinearForms
+public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.Bundle0004
 
 @[expose] public section
 

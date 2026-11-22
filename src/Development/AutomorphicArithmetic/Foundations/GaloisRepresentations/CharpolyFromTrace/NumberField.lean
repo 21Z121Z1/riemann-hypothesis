@@ -1,7 +1,7 @@
 module
 
-public import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.CharpolyFromTrace.GoodLiftAlt
-public import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.InertiaQuadraticRamification.ThreeApartOf
+public import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.CharpolyFromTrace.Bundle0001
+public import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.InertiaQuadraticRamification.Bundle0005
 public import Development.AutomorphicArithmetic.Foundations.Convolution.SphericalIdeles.SphConj
 
 @[expose] public section

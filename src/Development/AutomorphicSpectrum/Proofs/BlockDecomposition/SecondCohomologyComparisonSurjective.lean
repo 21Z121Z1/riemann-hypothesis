@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Development.WeilBound.CoreStatements.TemperedRepresentationTheory.HodgeWedgeFields.H1CommutesBaseChange
-public import Development.AbelianVarietyTheory.Proofs.CoherentCohomologyProofs.ExactAndKerBaseChangeOfForallResidueField
+public import Development.AbelianVarietyTheory.Proofs.CoherentCohomologyProofs.Bundle0006
 public import Development.AbelianVarietyTheory.Definitions.Divisors.IsKSValueOneOfRetraction
 
 @[expose] public section

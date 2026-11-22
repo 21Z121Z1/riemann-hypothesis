@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Formalism.SharpRestriction.Divisibility.LiftErrorLocal
-public import Formalism.LocalRingCardinality.DataKap
+public import Formalism.LocalRingCardinality.Bundle0004
 public import Formalism.SharpRestriction.Divisibility.WeightDegreeSizes
 public import Formalism.SharpRestriction.Divisibility.ThetaNormsAndLinks
 public import Formalism.SharpRestriction.Divisibility.FamilyThetaDenominatorValues
@@ -15,17 +15,16 @@ public import Formalism.SharpRestriction.ParamsHeightRankConstant
 public import Formalism.SharpRestriction.Divisibility.ModuliIntegralCharts
 public import Formalism.SharpRestriction.Divisibility.WeightThresholdDefs
 public import Formalism.LocalRingCardinality.DataParams₂
-public import Formalism.LocalRingCardinality.DataDIVDefs
+public import Formalism.LocalRingCardinality.Bundle0003
 public import Formalism.DegreeFormula.FlagDegFormula
-public import Formalism.SharpRestriction.Divisibility.LatticeTransfer
-public import Formalism.SharpRestriction.Divisibility.PrinLevClass
-public import Formalism.SharpRestriction.Divisibility.PlaceRankTwoOne
+public import Formalism.SharpRestriction.Divisibility.Bundle0002
+public import Formalism.SharpRestriction.Divisibility.Bundle0001
 public import Formalism.SharpRestriction.Divisibility.WeightFamilies
-public import Formalism.SharpRestriction.LevelLetterCocycles.ArithmeticCylinders
-public import Formalism.DegreeFormula.PointDegree.FlagDeg
-public import Formalism.SharpRestriction.CuspSpanNormBounds.PlaceDegreeData
+public import Formalism.SharpRestriction.LevelLetterCocycles.Bundle0004
+public import Formalism.DegreeFormula.PointDegree.Bundle0001
+public import Formalism.SharpRestriction.CuspSpanNormBounds.Bundle0006
 public import Formalism.LocalRingCardinality.RankBoundMonotoneInDimension
-public import Formalism.GelfandTransference.EnergyIdentity
+public import Formalism.GelfandTransference.Bundle0001
 public import Formalism.NormUnitaryBounds.DetPolynomialWeights.ShortIndependentVectorsOfDualMinimum
 public import Formalism.LatticeTheta.ThetaShiftInversion
 public import Formalism.SharpRestriction.LevelLetterCocycles.CommutingEndomorphismPreservesInvariants
@@ -36,8 +35,8 @@ public import Formalism.SharpRestriction.Divisibility.AbsolutelyIrreducibleSpan
 public import Formalism.SharpRestriction.Divisibility.AdmissibleRank.FreeFamilyOfLeavesAndAdmissible
 public import Formalism.QuotientMetricDivisors.HermitianTwistDivisors.ValBasic
 public import Formalism.LocalRingCardinality.ColumnWeightSpreadOffTop
-public import Formalism.LocalRingCardinality.IntCastDvdOfDvdIntegers
-public import Formalism.SharpRestriction.AdmissibleParameterJoins.DIVfromGLbud
+public import Formalism.LocalRingCardinality.Bundle0001
+public import Formalism.SharpRestriction.AdmissibleParameterJoins.Bundle0008
 public import Formalism.SharpRestriction.CuspSpanNormBounds.StandingHypothesesHoldFamily
 
 @[expose] public section

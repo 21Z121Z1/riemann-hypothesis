@@ -1,9 +1,8 @@
 module
 
 public import Development.AutomorphicArithmetic.Foundations.Convolution.SplitEigenfunctions.OrbitMeasurability.MeasurableSetUS
-public import Development.AutomorphicArithmetic.AdelicSL2.IsOpenEmbeddingProjection
-public import Development.AutomorphicArithmetic.AdelicSL2.ExistsHaarRestrictRangeEqSmulMapOfInvariant
-public import Development.AutomorphicArithmetic.Foundations.Convolution.RealGroupAnalysis.ReductionDomains.CdMeas
+public import Development.AutomorphicArithmetic.AdelicSL2.Bundle0001
+public import Development.AutomorphicArithmetic.Foundations.Convolution.RealGroupAnalysis.ReductionDomains.Bundle0001
 
 @[expose] public section
 

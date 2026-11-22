@@ -2,10 +2,10 @@ module
 
 public import Mathlib
 public import Formalism.LocalRingCardinality.AdicCompletionLocal.LocTied
-public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.IsCrisP
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.AxSenTateComplexPadicFixedClosure
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.NormSubOnePowTotient
-public import Development.AbelianVarietyTheory.CrystallinePeriods.RingBasics
+public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.Bundle0002
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0057
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0055
+public import Development.AbelianVarietyTheory.CrystallinePeriods.Bundle0001
 
 @[expose] public section
 

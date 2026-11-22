@@ -1,14 +1,12 @@
 module
 
 public import Mathlib
-public import Formalism.LogFactorialIndices.StatementIdx
+public import Formalism.LogFactorialIndices.Bundle0001
 public import Formalism.FilteredPoleLength.ReducedBasisBounds.LengthBaseChangeLocal
-public import Formalism.FilteredPoleLength.ReducedBasisBounds.FilteredPoleLength
+public import Formalism.FilteredPoleLength.ReducedBasisBounds.Bundle0002
 public import Formalism.FilteredPoleLength.LocalDescentLevels.LevelsChainOfAddOneLe
-public import Formalism.FilteredPoleLength.ReducedBasisBounds.ReductionQuotient
 public import Formalism.LogFactorialIndices.LogProductFormula
-public import Formalism.FilteredPoleLength.LocalDescentLevels.LevelsChain
-public import Formalism.FilteredPoleLength.LocalDescentLevels.LocalStepDescent
+public import Formalism.FilteredPoleLength.LocalDescentLevels.Bundle0005
 
 @[expose] public section
 

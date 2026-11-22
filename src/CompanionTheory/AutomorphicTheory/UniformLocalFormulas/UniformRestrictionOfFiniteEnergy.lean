@@ -1,7 +1,7 @@
 module
 
 public import CompanionTheory.AutomorphicTheory.UniformLocalFormulas.UniformRestrictionOfEnergy
-public import CompanionTheory.AutomorphicTheory.UniformLocalFormulas.CovarianceFormula
+public import CompanionTheory.AutomorphicTheory.UniformLocalFormulas.Bundle0001
 public import CompanionTheory.AutomorphicTheory.UniformLocalFormulas.RankOneTermInvariant
 
 @[expose] public section

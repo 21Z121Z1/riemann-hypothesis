@@ -1,11 +1,11 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsInvExp
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle3107
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsGenOfValEq
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HarrisTaylorTypeTjIsogeniesRepresentableStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConjDualPartsKilledOfPerfectPairingStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AbelianSchemeTorsionPointLocallyConstantGeomPoinStatement
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle3127
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0129
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2876
 
 @[expose] public section
 

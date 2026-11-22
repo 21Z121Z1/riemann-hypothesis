@@ -3,7 +3,7 @@ module
 public import Development.AutomorphicArithmetic.Foundations.IwahoriReduction.NormProducts.PushLoc
 public import Development.AutomorphicArithmetic.Foundations.IwahoriReduction.NormProducts.TraceHeckeCongruenceVanish
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.KatoQuadraticCharacters.EulerFactorBounds.KatoTwistedClassNormCompatibleCyclotomic
-public import Development.AbelianVarietyTheory.Definitions.Foundations.AdmissibleNewformZetaData
+public import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0025
 
 @[expose] public section
 

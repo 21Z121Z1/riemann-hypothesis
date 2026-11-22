@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.IsSplitGaussChars
-public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.BundleDegreeEqSumValuationsStatement
-public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.SubAndQuotientBundlesStatement
+public import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.Bundle0001
+public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.Bundle0006
+public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.Bundle0016
 
 @[expose] public section
 

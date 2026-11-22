@@ -1,6 +1,6 @@
 module
 
-public import Formalism.SharpRestriction.GrowthBounds.SegmentDegree.TopDegreeComparison
+public import Formalism.SharpRestriction.GrowthBounds.SegmentDegree.Bundle0018
 
 @[expose] public section
 

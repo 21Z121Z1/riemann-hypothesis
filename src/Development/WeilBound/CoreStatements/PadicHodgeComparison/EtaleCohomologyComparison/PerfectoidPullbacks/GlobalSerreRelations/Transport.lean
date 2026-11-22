@@ -3,10 +3,17 @@ module
 public import Mathlib
 public import Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.PerfectoidPullbacks.SEqOne
 public import Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.PerfectoidPullbacks.CapOComp
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.StableFamilyPropertiesStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.StableCoverCechVanishingStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.InOpenOfThickeningMorphismStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.InOpenFiniteInfIffStatement
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0131
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0135
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SerreClassOfCechSpectralSequence
+public import Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.PerfectoidPullbacks.Coords
+public import Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.CechPairings.Imports
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0158
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0118
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0117
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0107
+public import Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.PerfectoidPullbacks.GlobalSerreRelations.CechAugRowU
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0171
 
 @[expose] public section
 
@@ -25,7 +32,7 @@ section St
 variable {O : Type} [CommRing O] {R : Type} [CommRing R] {I : Ideal R} {γ : DividedPowers I} {p : ℕ} {X : Scheme.{0}}
   {q : X ⟶ Spec (CommRingCat.of O)} {κ : O →+* R ⧸ I}
 
-theorem inU_map (V : X.Opens) {T T' : Thick (nlFun γ p X q κ)} (φ : T ⟶ T') (h : InU V T) : InU V T' := GlobalTheory.T.inOpen_of_thickening_morphism V φ h
+theorem inU_map (V : X.Opens) {T T' : Thick (nlFun γ p X q κ)} (φ : T ⟶ T') (h : InU V T) : InU V T' := _root_.GlobalTheory.CompanionTheory.ThickPt.inU_map V φ h
 
 end St
 

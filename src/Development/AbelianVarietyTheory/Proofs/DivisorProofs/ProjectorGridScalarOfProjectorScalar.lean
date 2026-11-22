@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NablaSchur
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0569
 
 @[expose] public section
 

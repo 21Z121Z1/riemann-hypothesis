@@ -3,7 +3,7 @@ module
 public import Mathlib
 public import Formalism.LocalToGlobal.IndefiniteReal.LinksDefs
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsSmoothVecLowKSub
-public import Development.AbelianVarietyTheory.Counterexamples.RotationExamples.SobolevContinuityLowGeneration
+public import Development.AbelianVarietyTheory.Counterexamples.RotationExamples.Bundle0001
 
 @[expose] public section
 

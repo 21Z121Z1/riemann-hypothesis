@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Formalism.LocalRingCardinality.RhoDetPrimeEqMuTildeMulChiPow
-public import Formalism.SharpRestriction.CuspSpanNormBounds.Point
+public import Formalism.SharpRestriction.CuspSpanNormBounds.Bundle0001
 
 @[expose] public section
 

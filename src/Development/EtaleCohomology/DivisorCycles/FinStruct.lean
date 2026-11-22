@@ -1,21 +1,14 @@
 module
 
-public import Development.EtaleCohomology.DivisorCycles.ChainPf
-public import Development.EtaleCohomology.DivisorCycles.TangentFieldExtension
-public import Development.EtaleCohomology.DivisorCycles.ExpVanPf
-public import Development.EtaleCohomology.DivisorCycles.DegPoly2
-public import Development.EtaleCohomology.DivisorCycles.TangentDegree
-public import Development.EtaleCohomology.DivisorCycles.ProjPf
-public import Development.EtaleCohomology.DivisorCycles.TanLiePf
-public import Development.EtaleCohomology.DivisorCycles.GradePf
-public import Development.EtaleCohomology.DivisorCycles.CycSpecQzkPf
-public import Development.EtaleCohomology.DivisorCycles.FixScalOf
-public import Development.EtaleCohomology.DivisorCycles.CycleCountPf
-public import Development.EtaleCohomology.DivisorCycles.DiagScalar2
-public import Development.EtaleCohomology.DivisorCycles.AlgStruct2
-public import Development.EtaleCohomology.DivisorCycles.CoeMulInv
-public import Development.EtaleCohomology.DivisorCycles.SemisPf
-public import Development.EtaleCohomology.DivisorCycles.StructPf
+public import Development.EtaleCohomology.DivisorCycles.Bundle0003
+public import Development.EtaleCohomology.DivisorCycles.Bundle0001
+public import Development.EtaleCohomology.DivisorCycles.Bundle0005
+public import Development.EtaleCohomology.DivisorCycles.Bundle0004
+public import Development.EtaleCohomology.DivisorCycles.Bundle0008
+public import Development.EtaleCohomology.DivisorCycles.Bundle0007
+public import Development.EtaleCohomology.DivisorCycles.Bundle0006
+public import Development.EtaleCohomology.DivisorCycles.Bundle0009
+public import Development.EtaleCohomology.DivisorCycles.Bundle0010
 
 @[expose] public section
 

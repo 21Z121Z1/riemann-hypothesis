@@ -2,8 +2,8 @@ module
 
 public import Mathlib
 public import Formalism.GaussValuationBounds.Statement
-public import Formalism.GaussValuationBounds.GaussUnit
-public import Formalism.FrobeniusContraction.Statement
+public import Formalism.GaussValuationBounds.Bundle0001
+public import Formalism.FrobeniusContraction.Bundle0001
 
 @[expose] public section
 

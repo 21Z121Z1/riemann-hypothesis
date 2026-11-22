@@ -1,15 +1,14 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Divisors.EigLatLe
-public import Formalism.LocalToGlobal.ProjectiveLattices.LiftLaSpec
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0045
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0013
 public import Development.AbelianVarietyTheory.Definitions.Divisors.FiniteNotLocFrOne
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaKeySectionValuationBoundsDifferent
 public import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.KeyFamOne
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ThetaKeyRuleTriangularFrameChangeFourthPower
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.UniversalTripleFibresBaseChangeKeyData
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0516
 public import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.ExistsHomFamilyOfPureTypeComplexTriple
-public import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.NormMulDetGram
+public import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.Bundle0044
 
 @[expose] public section
 

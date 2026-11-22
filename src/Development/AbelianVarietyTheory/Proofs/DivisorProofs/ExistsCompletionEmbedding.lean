@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.PowLeSpanPowSup
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ImportsBis
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Target
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0014
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0002
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0017
 
 @[expose] public section
 

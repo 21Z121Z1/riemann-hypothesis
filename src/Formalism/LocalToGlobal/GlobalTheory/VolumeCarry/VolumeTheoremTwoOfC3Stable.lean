@@ -1,11 +1,11 @@
 module
 
-public import Formalism.SharpRestriction.GlobalSchurBounds.MassRatioUnfoldedOfTheoremTwo
-public import Formalism.LocalToGlobal.GlobalTheory.GL5.PNamed
+public import Formalism.SharpRestriction.GlobalSchurBounds.Bundle0005
+public import Formalism.LocalToGlobal.GlobalTheory.GL5.Bundle0001
 public import Formalism.SharpRestriction.GlobalSchurBounds.StandardLattice
 public import Mathlib
-public import Formalism.HermitianLattices.StatementMass
-public import Formalism.SharpRestriction.GlobalSchurBounds.LocalCountingBounds
+public import Formalism.HermitianLattices.Bundle0003
+public import Formalism.SharpRestriction.GlobalSchurBounds.Bundle0001
 
 @[expose] public section
 

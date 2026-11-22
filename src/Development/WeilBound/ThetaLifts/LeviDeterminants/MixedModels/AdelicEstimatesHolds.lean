@@ -1,10 +1,9 @@
 module
 
-public import Development.WeilBound.ThetaLifts.LeviDeterminants.MixedModels.MCGlue
-public import Development.WeilBound.ThetaLifts.LeviDeterminants.MixedModels.MCReal
+public import Development.WeilBound.ThetaLifts.LeviDeterminants.MixedModels.Bundle0004
+public import Development.WeilBound.ThetaLifts.LeviDeterminants.MixedModels.Bundle0002
 public import Development.WeilBound.ThetaLifts.LeviDeterminants.MixedModels.TraceNondeg
 public import Development.WeilBound.ThetaLifts.LeviDeterminants.MixedModels.MCPure
-public import Development.WeilBound.ThetaLifts.LeviDeterminants.MixedModels.FiniteAdelicEstimatesHolds
 
 @[expose] public section
 

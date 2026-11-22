@@ -1,10 +1,10 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.LiftsInvOne
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.AdelicMatrixCongruenceBadPrimeIffCompletion
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0434
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0438
 public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ResidueEqZeroIff
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.LevelFrameCharacterMulMovedPoint
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0396
 
 @[expose] public section
 

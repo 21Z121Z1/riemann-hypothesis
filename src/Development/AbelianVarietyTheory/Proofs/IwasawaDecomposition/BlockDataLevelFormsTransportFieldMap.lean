@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.BlockBaseChange
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0074
 public import Formalism.LocalToGlobal.Divisibility.ProjLemmas
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ImportsExtra
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0012
 
 @[expose] public section
 

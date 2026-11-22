@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Proofs.MetricProofs.FiniteMinimalPrimes
-public import Development.AutomorphicSpectrum.Proofs.MetricProofs.ChPrime
+public import Development.AutomorphicSpectrum.Proofs.MetricProofs.Bundle0080
+public import Development.AutomorphicSpectrum.Proofs.MetricProofs.Bundle0085
 
 @[expose] public section
 

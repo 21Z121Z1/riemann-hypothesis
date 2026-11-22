@@ -3,13 +3,13 @@ module
 public import Mathlib
 public import Formalism.DivisorInequality.StatementObj
 public import Formalism.QuotientMetricDivisors.HermitianTwistDivisors.KappaNormalise
-public import Formalism.BranchSandwichDivisors.BranchIsometryProofs.TransferMean
+public import Formalism.BranchSandwichDivisors.BranchIsometryProofs.Bundle0001
 public import Formalism.BranchSandwichDivisors.StatementR
-public import Formalism.LogFactorialIndices.StatementSize
+public import Formalism.LogFactorialIndices.Bundle0001
 public import Formalism.QuotientMetricDivisors.HermitianTwistDivisors.ConjugateWeightLatticeOfGeneral
 public import Formalism.QuotientMetricDivisors.HermitianTwistDivisors.PlaceSumSquares
 public import Formalism.QuotientMetricDivisors.HermitianTwistDivisors.DualMu
-public import Formalism.MeanHeightDescent.AverageDegreeBounds.CovolumeAssemblyHolds
+public import Formalism.MeanHeightDescent.AverageDegreeBounds.Bundle0001
 public import Formalism.MirabolicMackeyTheory.MirabolicMackeyProofs.LocalConditionsGlobalForm
 public import Formalism.MirabolicMackeyTheory.MirabolicMackeyProofs.RamBasic
 

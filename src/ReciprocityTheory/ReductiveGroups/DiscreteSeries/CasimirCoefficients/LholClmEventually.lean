@@ -2,8 +2,8 @@ module
 
 public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.CasimirCoefficients.IsClosedKset
 public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.CasimirCoefficients.PsiMLocal
-public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.CasimirCoefficients.CasLPsM
-public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.CasimirCoefficients.CasChain
+public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.CasimirCoefficients.Bundle0010
+public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.CasimirCoefficients.Bundle0007
 
 @[expose] public section
 

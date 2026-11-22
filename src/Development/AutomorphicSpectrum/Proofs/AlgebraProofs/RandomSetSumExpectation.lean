@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.IsScaleStable
+public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.Bundle0065
 
 @[expose] public section
 

@@ -4,15 +4,14 @@ public import Mathlib
 public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CechRefinementCohomologyBijective
 public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsChartFromCoordinates
 public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FilteredCohomologyRestrictionBijective
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ChartDividedPowersGradedConstant
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ChartIsGood
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CoordinatesRestrictAffineOpenStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsSmoothCoordinateCoverStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SheafFiltrationPropertyStatement
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0135
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0232
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0123
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0126
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0131
 public import Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.CechPairings.Imports
 public import Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.PerfectoidPullbacks.InclStd
-public import Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.PerfectoidPullbacks.PolynomialSiteTraces.PolyAll
-public import Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.PerfectoidPullbacks.PolynomialSiteTraces.PolyTf
+public import Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.PerfectoidPullbacks.PolynomialSiteTraces.Bundle0001
 
 @[expose] public section
 
@@ -26,7 +25,7 @@ open CategoryTheory AlgebraicGeometry TensorProduct GlobalTheory.LogCris Divided
 
 namespace CrystallineSemistableComparison.Pb
 
-theorem isFil : ∀ {b : Base} {L : b.Fun} (Q : ObjectProperty (Thick L)), IsFil (sP Q) (sFil Q) := @GlobalTheory.T.sheaf_filtration_property
+theorem isFil : ∀ {b : Base} {L : b.Fun} (Q : ObjectProperty (Thick L)), IsFil (sP Q) (sFil Q) := @_root_.GlobalTheory.CompanionTheory.DPFil.isFil_sFil
 
 theorem poly_tf : ∀ {O R : Type} [CommRing O] [CommRing R] {I : Ideal R} (γ : DividedPowers I) {X : Scheme.{0}}
     (q : X ⟶ Spec (CommRingCat.of O)) (κ : O →+* R ⧸ I) (l s : ℕ) (𝒱 : Set X.Opens),
@@ -51,9 +50,9 @@ theorem refl : ∀ {O R : Type} [CommRing O] [CommRing R] {I : Ideal R} {γ : Di
     Function.Bijective (((incl h).sq (incl_fil h r) (incl_fil h r')).pull j) := @GlobalTheory.CompanionTheory.PDTrunc.pull_incl_bijective
 
 theorem cov_ex : ∀ {O : Type} [CommRing O] {X : Scheme.{0}} (q : X ⟶ Spec (CommRingCat.of O)) [IsSeparated q] [QuasiCompact q],
-    (Smooth q → Nonempty (Cov q)) ∧ ∀ d, SmoothOfRelativeDimension d q → ∃ U : Cov q, ∀ α, U.d α = d := @GlobalTheory.T.exists_smooth_coordinate_cover
+    (Smooth q → Nonempty (Cov q)) ∧ ∀ d, SmoothOfRelativeDimension d q → ∃ U : Cov q, ∀ α, U.d α = d := @_root_.GlobalTheory.CompanionTheory.CovEx.exists_cov
 
 theorem coord_res : ∀ {O : Type} [CommRing O] {X : Scheme.{0}} {q : X ⟶ Spec (CommRingCat.of O)} {V W : X.Opens} {d : ℕ}
-    (c : Coord q V d) (h : W ≤ V) (hW : IsAffineOpen W), ∃ c' : Coord q W d, ∀ i, c'.t i = rs h (c.t i) := @GlobalTheory.T.coordinates_restrict_affine_open
+    (c : Coord q V d) (h : W ≤ V) (hW : IsAffineOpen W), ∃ c' : Coord q W d, ∀ i, c'.t i = rs h (c.t i) := @_root_.GlobalTheory.CompanionTheory.CoordRes.main
 
 end CrystallineSemistableComparison.Pb

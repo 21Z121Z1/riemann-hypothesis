@@ -2,9 +2,8 @@ module
 
 public import Mathlib
 public import Formalism.DistinguishedUnitIdeals.ExistsConstOfInvariantMod
-public import Formalism.DistinguishedUnitIdeals.FrobeniusCoboundedArc
+public import Formalism.DistinguishedUnitIdeals.Bundle0004
 public import Formalism.DistinguishedUnitIdeals.GammaCongruentArcFromStart
-public import Formalism.DistinguishedUnitIdeals.PhiFreeOfBasis
 
 @[expose] public section
 

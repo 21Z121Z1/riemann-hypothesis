@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsPowerBlockOldPartSurj
+public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0073
 
 @[expose] public section
 

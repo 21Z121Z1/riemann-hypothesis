@@ -1,11 +1,11 @@
 module
 
 public import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.ThetaParseval.SchurStep
-public import Development.WeilBound.ThetaLifts.LatticeBasics.EulerProd
-public import Development.WeilBound.ThetaLifts.LatticeBasics.BadFactor
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BlockScaledIntegralOfLocal
-public import Development.AutomorphicSpectrum.Proofs.TwistedProofs.ExtensionEmbeddingEvInfRealAd
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BcCompFinAwayPtOfNotMem
+public import Development.WeilBound.ThetaLifts.LatticeBasics.Bundle0010
+public import Development.WeilBound.ThetaLifts.LatticeBasics.Bundle0025
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1285
+public import Development.AutomorphicSpectrum.Proofs.TwistedProofs.Bundle0007
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2490
 
 @[expose] public section
 

@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.IsRealCoord
+public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.Bundle0005
 
 @[expose] public section
 

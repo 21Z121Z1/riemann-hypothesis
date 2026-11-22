@@ -1,7 +1,7 @@
 module
 
-public import Formalism.AdmissibleDesigns.NonemptyPl
-public import Formalism.WeaklyAdmissibleFiltrations.CrystallineStableLifts.Galois
+public import Formalism.AdmissibleDesigns.Bundle0002
+public import Formalism.WeaklyAdmissibleFiltrations.CrystallineStableLifts.Bundle0001
 
 @[expose] public section
 

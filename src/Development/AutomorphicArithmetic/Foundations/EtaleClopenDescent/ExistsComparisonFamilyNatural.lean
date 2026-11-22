@@ -1,15 +1,14 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.GermCompatId
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0354
 public import Development.AutomorphicArithmetic.GenericGermInjectivity.CoverGeneric
 public import Development.AutomorphicArithmetic.CommutativeAlgebra.FunctionFieldOfFiniteEtaleCover
 public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.SortSign
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.FlatHermRootLineDegree
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.GenericGermDifferentialFormPullbackDominantStatement
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.RiemannFormHermitianLattice
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.CechHomologyEquivFamStatement
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.GenericGermDifferentialFormRestrictAffineOpenStatement
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0355
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0359
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0031
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0357
 
 @[expose] public section
 

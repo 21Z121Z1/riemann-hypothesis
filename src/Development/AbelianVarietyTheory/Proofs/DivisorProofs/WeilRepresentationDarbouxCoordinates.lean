@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsTransportF
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdeleJoinZero
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1345
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1320
 
 @[expose] public section
 

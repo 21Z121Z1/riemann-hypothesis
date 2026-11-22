@@ -2,10 +2,10 @@ module
 
 public import Mathlib
 public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsArith
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsEmbeddingWeight
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsTwistIntersectionInt
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsUnitApprox
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsConstantsRegular
+public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0021
+public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0039
+public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0002
+public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0020
 
 @[expose] public section
 

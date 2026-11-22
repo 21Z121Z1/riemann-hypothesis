@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.StatementsLeadBlockGaussTail
+public import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.Bundle0030
 
 @[expose] public section
 

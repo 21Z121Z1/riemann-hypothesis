@@ -2,14 +2,14 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.PlaceAdaptation.AdaptStd
-public import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.FramedPointBaseChangeLaws
-public import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.ExistsFramedPointBaseChangeAlgHom
-public import Development.AbelianVarietyTheory.Proofs.CoherentCohomologyProofs.ThreeTermComplexOfProjectiveCechModel
-public import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.CommonEigenvectorsFlatBaseChange
-public import Development.AbelianVarietyTheory.Proofs.TorusSplitting.IntegralThetaSectionExistsAndBaseChange
-public import Formalism.LocalToGlobal.ProjectiveLattices.LieFreePf
+public import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.Bundle0032
+public import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.Bundle0039
+public import Development.AbelianVarietyTheory.Proofs.CoherentCohomologyProofs.Bundle0021
+public import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.Bundle0001
+public import Development.AbelianVarietyTheory.Proofs.TorusSplitting.Bundle0014
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0018
 public import Formalism.LocalToGlobal.ProjectiveLattices.ThetaFramePf
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PullbackSections.GenBridgeA
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PullbackSections.Bundle0005
 
 @[expose] public section
 

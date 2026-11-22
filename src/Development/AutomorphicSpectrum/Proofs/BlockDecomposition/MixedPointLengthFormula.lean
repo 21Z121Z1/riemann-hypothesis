@@ -2,11 +2,11 @@ module
 
 public import Mathlib
 public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IsSmoothHermCombLine
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ResidueFieldMapPtCoordSndM
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MultiprojectivePrimeEqPointIdeal
-public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.FiniteResidueFieldOfIsClosedOfLocallyOfFiniteTyp
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0546
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0543
+public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.Bundle0013
 public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PBlockImageInverse
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.PointIdealMultiprojectivePrime
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0544
 
 @[expose] public section
 

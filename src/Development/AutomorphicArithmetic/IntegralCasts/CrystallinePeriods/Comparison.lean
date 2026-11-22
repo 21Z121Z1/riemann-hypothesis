@@ -2,8 +2,7 @@ module
 
 public import Mathlib
 public import Development.AutomorphicArithmetic.IntegralCasts.CrystallinePeriods.DeRham
-public import Development.AutomorphicArithmetic.IntegralCasts.CrystallinePeriods.DeRhamLog
-public import Development.AutomorphicArithmetic.IntegralCasts.CrystallinePeriods.CrisTheta
+public import Development.AutomorphicArithmetic.IntegralCasts.CrystallinePeriods.Bundle0002
 public import Development.AutomorphicArithmetic.IntegralCasts.CrystallinePeriods.Action
 
 @[expose] public section

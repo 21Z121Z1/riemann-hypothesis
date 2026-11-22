@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Formalism.DropLevelBounds.Statement
-public import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.LeWeightOfCoeffPow
+public import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.Bundle0009
 
 @[expose] public section
 

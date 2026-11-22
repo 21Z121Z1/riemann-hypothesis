@@ -1,16 +1,27 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.BlowPolSt
-public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.SiegelToroidalIntegral
-public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.ToroidalChartsForFan
+public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.Bundle0041
+public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.Bundle0012
 public import Development.AbelianVarietyTheory.Definitions.Degenerations.AdmissiblePadicIntMaximalIdeal
-public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsSabExtension
+public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.Bundle0099
 public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsRigidifiedCubicalSymmetricExtensionNormalB
-public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsSabMapIdOfCommonGeneric
-public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.CubicalStructureAndSymmetricOfCubeGenStatement
-public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.HomExtensionSemiAbelianDiscreteValuationRingStatement
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.IsPullCubicalId
+public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0189
+public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0108
+public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0173
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.UniformisationConclusion
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.Bundle0003
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.RigidSys
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.Splits
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.GtBaseChangeSt
+public import Development.AbelianVarietyTheory.Definitions.ModuliSpaces.Bundle0004
+public import Development.AbelianVarietyTheory.Statements.SemistableTorsion.ArcFamSt
+public import Development.AbelianVarietyTheory.Definitions.Degenerations.Bundle0001
+public import Development.AbelianVarietyTheory.Definitions.ModuliSpaces.FiniteHomogeneousInf
+public import Development.AbelianVarietyTheory.Statements.SemistableTorsion.ImmersedBy
+public import Development.AbelianVarietyTheory.Statements.SemistableTorsion.UTorsSt
+public import Development.AbelianVarietyTheory.PublishedTheorems.SemistableReduction₂.SemistableReductionSt
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0034
 
 @[expose] public section
 
@@ -30,7 +41,7 @@ theorem pic_ext {X U : Scheme.{0}} [IsLocallyNoetherian X] (hX : Geo.Tor.IsNorma
     α = β := by
   obtain ⟨N, hN, hc⟩ := cls_surj (α - β)
   refine sub_eq_zero.1 (hc ▸ (cls_eq_zero_iff hN).2 ?_)
-  refine GlobalTheory.T.exists_lineBundleGenerator_extending_densePart X U j hX inferInstance inferInstance inferInstance inferInstance P e N he hp hg hN
+  refine _root_.GlobalTheory.GenericExtend.exists_isGen_of_densePart X U j hX inferInstance inferInstance inferInstance inferInstance P e N he hp hg hN
     ((cls_eq_zero_iff (pull_isLB hN _)).1 ?_) ((cls_eq_zero_iff (pull_isLB hN _)).1 ?_)
   · rw [cls_pull hN, hc, map_sub, h₂, sub_self]
   · rw [cls_pull hN, hc, ← hj.isoPullback_inv_fst, pull_comp, map_sub, h₁, sub_self, map_zero]

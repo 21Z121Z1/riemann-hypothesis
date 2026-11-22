@@ -1,6 +1,6 @@
 module
 
-public import Formalism.LocalToGlobal.ProjectiveLattices.LiftModelPf
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0035
 
 @[expose] public section
 

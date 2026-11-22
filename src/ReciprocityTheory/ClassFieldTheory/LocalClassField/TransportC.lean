@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import ReciprocityTheory.ClassFieldTheory.LocalClassField.TransportDefs
+public import ReciprocityTheory.ClassFieldTheory.LocalClassField.Bundle0006
 public import ReciprocityTheory.ClassFieldTheory.LocalClassField.TransportA
-public import ReciprocityTheory.ClassFieldTheory.LocalClassField.TransportB
+public import ReciprocityTheory.ClassFieldTheory.LocalClassField.Bundle0015
 public import ReciprocityTheory.ClassFieldTheory.LocalClassField.RecArtin
 public import ReciprocityTheory.ClassFieldTheory.LocalClassField.Existence
 

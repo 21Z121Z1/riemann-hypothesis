@@ -3,9 +3,9 @@ module
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.Degenerations.AdmissibleBaseOfCompleteDvr
 public import Development.AbelianVarietyTheory.BlockTheory.CMModuli.ThetaTowerRecognition
-public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsIsFib
-public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsDegenerationValuesIsoFieldPullback
-public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsUnitGeneratingSectionPullbackField
+public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.Bundle0128
+public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.Bundle0119
+public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.Bundle0104
 
 @[expose] public section
 

@@ -2,15 +2,29 @@ module
 
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.TraceFormula.GlobalTraceComparison.CuspidalContribution.LevShrink
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.ConjugateRepresentations.CuspidalSupport.CuspSupportOf
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LieCentralElementTraceStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.TraceOperatorEigenvalueSumStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CentralEigenExponentialStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.AuxiliaryCuspLemmaStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LimitTwistBound
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FlatAbsoluteCharacter
-public import Development.WeilBound.RepresentationTheoryGL.ResidualSpectrum.SliceTensors.PExpTwA
-public import Development.WeilBound.RepresentationTheoryGL.ResidualSpectrum.SliceTensors.PStringStepB
-public import Development.DiscreteGroups.PiInvariants.CompactSupportTwists.LogAbsEqLogIdeleNorm
+public import Mathlib
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0501
+public import Formalism.RealPlaceAnalysis.Bundle0004
+public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.SubsingletonRankZero
+public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.T2SpaceAdelicGeneralLinearGroupNumberField
+public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.Bundle0008
+public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.CuspDiscreteDecompositionGL
+public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisGeometry₂.Bundle0004
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0147
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.FinGLMemOfPow
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0114
+public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.Bundle0002
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0002
+public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.DiscreteSpectrumGLTwoOfCuspidalSpectrum
+public import Development.WeilBound.CoreStatements.TemperedRepresentationTheory.ClozelPurity.EopV
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0508
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0509
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0528
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0538
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0702
+public import Development.WeilBound.RepresentationTheoryGL.ResidualSpectrum.SliceTensors.Bundle0002
+public import Development.WeilBound.RepresentationTheoryGL.ResidualSpectrum.SliceTensors.Bundle0009
+public import Development.DiscreteGroups.PiInvariants.CompactSupportTwists.Bundle0002
 
 @[expose] public section
 
@@ -118,7 +132,7 @@ open GlobalTheory.Mem.Chr.CharModel in
 theorem UpperTheory.V.Z.Tf.GlobalTraceComparison.Cusp.normTw :
     NormTw := by
   intro E _ _ _ N hN bad K W hK π φ m hφ hφ0 hT hm
-  obtain ⟨s, hs⟩ := GlobalTheory.T.aux_statement_20 E N hN π fun τ => ⟨_, hm τ⟩
+  obtain ⟨s, hs⟩ := _root_.GlobalTheory.CompanionTheory.Clozel.exists_twist_isNormalised E N hN π fun τ => ⟨_, hm τ⟩
   have hψ : mulChi N (Model.absC E s) φ ∈ (π.twist (Model.absC E s)).V := ⟨φ, hφ, rfl⟩
   have hψ0 : mulChi N (Model.absC E s) φ ≠ 0 := fun e => hφ0 ((mulChi N (Model.absC E s)).map_eq_zero_iff.1 e)
   have htw : ∀ t, (π.twist (Model.absC E s)).HasInfChar t ((m t).map (· + s)) := fun t => by
@@ -143,11 +157,11 @@ theorem UpperTheory.V.Z.Tf.GlobalTraceComparison.Cusp.normTw :
       exact hψ0 (Subtype.ext (funext hcon))
     have hsum : ∀ τ : E →+* ℂ, (∑ i : Fin N, Eop τ i i) (mulChi N (Model.absC E s) φ) =
         ((m τ).sum + N * s) • mulChi N (Model.absC E s) φ := fun τ => by
-      rw [GlobalTheory.T.trace_operator_eigenvalue_sum E N _ τ _ (htw τ) _ hψ, Multiset.sum_map_add]
+      rw [_root_.GlobalTheory.CompanionTheory.CapelliTrace.trace_Eop_eq E N _ τ _ (htw τ) _ hψ, Multiset.sum_map_add]
       simp [(hm τ).1]
     have hlie : lie E N (oneL E N) (mulChi N (Model.absC E s) φ) =
         (∑ τ : E →+* ℂ, ((m τ).sum + N * s)) • mulChi N (Model.absC E s) φ := by
-      rw [GlobalTheory.T.lie_central_element_trace E N, LinearMap.sum_apply, Finset.sum_congr rfl fun τ _ => hsum τ, ← Finset.sum_smul]
+      rw [_root_.GlobalTheory.CompanionTheory.ClozelLie.lie_oneL_eq_sum_Eop E N, LinearMap.sum_apply, Finset.sum_congr rfl fun τ _ => hsum τ, ← Finset.sum_smul]
     have hz : ∑ τ : E →+* ℂ, ((m τ).sum + N * s) = 0 := by
       refine GlobalTheory.CompanionTheory.TotalTrace.eq_zero_of_exp_mul_eq_one fun t => ?_
       have h1 := GlobalTheory.T.central_eigen_exponential E N _ _ hlie t g₀

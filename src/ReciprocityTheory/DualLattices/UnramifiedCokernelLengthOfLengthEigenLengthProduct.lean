@@ -1,8 +1,8 @@
 module
 
-public import ReciprocityTheory.DualLattices.EigenLengthFrobeniusStatement
-public import ReciprocityTheory.DualLattices.FrobEqOfLe
-public import ReciprocityTheory.DualLattices.StdJForm
+public import ReciprocityTheory.DualLattices.Bundle0017
+public import ReciprocityTheory.DualLattices.Bundle0001
+public import ReciprocityTheory.DualLattices.Bundle0025
 public import ReciprocityTheory.DualLattices.UnramifiedCokernelLowerBoundOf
 
 @[expose] public section

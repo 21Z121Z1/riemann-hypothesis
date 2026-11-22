@@ -1,6 +1,6 @@
 module
 
-public import Formalism.LocalToGlobal.PairingIndexBounds.HalvesRecursion.RecursiveLatticeMembership.Bridge
+public import Formalism.LocalToGlobal.PairingIndexBounds.HalvesRecursion.RecursiveLatticeMembership.Bundle0001
 public import Formalism.LocalToGlobal.PairingIndexBounds.ModelLatticeMoves.MovesComposeU
 
 @[expose] public section

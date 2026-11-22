@@ -1,7 +1,7 @@
 module
 
 public import Development.WeilBound.ThetaLifts.LocalTheory.ArchimedeanBumps.ArchSlice
-public import Development.WeilBound.ThetaLifts.LocalTheory.ArchimedeanBumps.DictHaar
+public import Development.WeilBound.ThetaLifts.LocalTheory.ArchimedeanBumps.Bundle0001
 public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsIsLatticeFrameIsMajorantFrame
 public import Development.AbelianVarietyTheory.Definitions.Foundations.ExistsAuxiliaryPlaceNotMemFinset
 

@@ -1,12 +1,12 @@
 module
 
 public import Development.WeilBound.ThetaLifts.LocalTheory.UnramifiedDeterminedBySpherical
-public import Development.WeilBound.ThetaLifts.LocalTheory.ToralCohomology.ExistsTorus
-public import Development.WeilBound.ThetaLifts.LeviDeterminants.EqZeroOfTheta
+public import Development.WeilBound.ThetaLifts.LocalTheory.ToralCohomology.Bundle0001
+public import Development.WeilBound.ThetaLifts.LeviDeterminants.Bundle0005
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsDiagonalLagrangianInvariantForm
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsUnitaryDoubledBlockDiagOne
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ProductFunctionOnSumCoordsMemAdelicSchwartzSpace
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsAdelicSchwartzNeZeroAtOrigin
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0914
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0930
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0908
 
 @[expose] public section
 

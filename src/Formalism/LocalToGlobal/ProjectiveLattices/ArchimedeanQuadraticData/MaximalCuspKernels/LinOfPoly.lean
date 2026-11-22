@@ -1,7 +1,7 @@
 module
 
 public import Formalism.LocalToGlobal.ProjectiveLattices.ArchimedeanQuadraticData.ArcLineFunctions.ArcDatumIsArcPointBasis
-public import Formalism.LocalToGlobal.ProjectiveLattices.AllTest
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0010
 
 @[expose] public section
 

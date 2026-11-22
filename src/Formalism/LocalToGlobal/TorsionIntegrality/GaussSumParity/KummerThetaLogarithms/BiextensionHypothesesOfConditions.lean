@@ -1,8 +1,8 @@
 module
 
 public import Formalism.LocalToGlobal.TorsionIntegrality.GaussSumParity.LetterShift
-public import Formalism.ThetaLogCoordinates.UniformThetaSubstitution.FinalS
-public import Formalism.GaussJetBounds.GaussJetProofs.Transfer
+public import Formalism.ThetaLogCoordinates.UniformThetaSubstitution.Bundle0002
+public import Formalism.GaussJetBounds.GaussJetProofs.Bundle0005
 
 @[expose] public section
 

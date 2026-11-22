@@ -1,13 +1,13 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LaurentVarUnit
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LaurentMapIsIntegral
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HZeroPullbackTwistBijective
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EtaleCohomologyProdRingProjectionsBijective
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TateTwistCohomologyZeroStrictlyHenselianEquiv
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FiniteAlgebraStrictlyHenselianInductionStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EtaleHomotopyInvariantTwistsOfRingEquiv
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0322
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0358
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0497
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0375
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0511
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0404
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0341
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TateTwistCohomologyLaurentVanishingFiniteAlgebra
 
 @[expose] public section

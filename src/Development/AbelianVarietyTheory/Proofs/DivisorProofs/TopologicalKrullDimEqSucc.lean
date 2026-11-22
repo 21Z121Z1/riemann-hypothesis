@@ -2,10 +2,10 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsFlagModelHermSum
-public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.EqOfIsometricTrivShift
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.GenericallySmoothModel
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.TopologicalKrullDimEqSucc
-public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.SmoothGenericFibreOfAffineOpens
+public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.Bundle0012
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0270
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0277
+public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0056
 public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.RingKrullDimQuotientAddOneOfMemMinimalPrimesSup
 
 @[expose] public section

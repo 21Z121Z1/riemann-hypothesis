@@ -1,7 +1,7 @@
 module
 
-public import Formalism.LocalToGlobal.GlobalTheory.CoordinateLengths.MixedChange
-public import Formalism.LocalToGlobal.GlobalTheory.CoordinateLengths.DuCount
+public import Formalism.LocalToGlobal.GlobalTheory.CoordinateLengths.Bundle0002
+public import Formalism.LocalToGlobal.GlobalTheory.CoordinateLengths.Bundle0001
 
 @[expose] public section
 

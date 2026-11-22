@@ -1,12 +1,12 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Divisors.TanRel
-public import Development.AbelianVarietyTheory.Definitions.Divisors.IsPolAVSectionInverseImage
-public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.AbsoluteSiegel
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CoeffTopMonEqZero
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0029
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0027
+public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.Bundle0009
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1863
 public import Development.AbelianVarietyTheory.Proofs.ThetaFamilyOrigin.IsThetaPtOverMove
-public import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.ExistsKeyPBRing
+public import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.Bundle0035
 
 @[expose] public section
 

@@ -3,7 +3,7 @@ module
 public import Mathlib
 public import ReciprocityTheory.AnalyticForms.AnalyticCharts.Osgood
 public import Development.AbelianVarietyTheory.Proofs.CovolumeBounds.DifferentiableOnOfTendstoLocallyUniformlyOn
-public import Development.AbelianVarietyTheory.Proofs.CovolumeBounds.FderivIntegralApplyOfHolomorphicOfDominated
+public import Development.AbelianVarietyTheory.Proofs.CovolumeBounds.Bundle0003
 
 @[expose] public section
 

@@ -1,11 +1,8 @@
 module
 
-public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.PowEqOneOfIsIntegralOfMulComplexConjEqOneAlt
-public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.RootOfUnityEqOneOfSubOneMemSpan
-public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.MemIdealSmulTopIffForallDual
-public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.IdealInfSmulTopOfProjective
-public import Development.WeilBound.CoreStatements.EqualVolumeCompactOpens.DiagMulVecTmul
-public import Development.WeilBound.CoreStatements.EqualVolumeCompactOpens.InfSpanNeBot
+public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.Bundle0004
+public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.Bundle0003
+public import Development.WeilBound.CoreStatements.EqualVolumeCompactOpens.Bundle0002
 
 @[expose] public section
 

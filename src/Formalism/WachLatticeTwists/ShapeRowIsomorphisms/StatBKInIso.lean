@@ -1,7 +1,7 @@
 module
 
 public import Formalism.WachLatticeTwists.CharacterSplitJumps.WachTwistTheoremFromTorsionBound
-public import Formalism.WachLatticeTwists.CupProductVanishing.Statement
+public import Formalism.WachLatticeTwists.CupProductVanishing.Bundle0001
 
 @[expose] public section
 

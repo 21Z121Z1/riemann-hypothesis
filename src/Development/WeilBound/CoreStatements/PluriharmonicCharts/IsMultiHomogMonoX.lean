@@ -2,9 +2,8 @@ module
 
 public import Mathlib
 public import Development.WeilBound.CoreStatements.PluriharmonicCharts.IsBlockMapInitialVertex
-public import GroundTheory.HeightsAndTheta.Heights.Intersections.PDiagDiv
-public import GroundTheory.HeightsAndTheta.Heights.Intersections.PDiagOrd
-public import GroundTheory.HeightsAndTheta.Heights.Intersections.PDiagOrdOne
+public import GroundTheory.HeightsAndTheta.Heights.Intersections.Bundle0019
+public import GroundTheory.HeightsAndTheta.Heights.Intersections.Bundle0041
 
 @[expose] public section
 

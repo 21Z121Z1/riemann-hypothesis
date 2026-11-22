@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.CharacterTheory.ImportsAlt
+public import Development.AbelianVarietyTheory.Proofs.CharacterTheory.Bundle0002
 
 @[expose] public section
 

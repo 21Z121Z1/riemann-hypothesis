@@ -2,7 +2,7 @@ module
 
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.HeightTheory.TheoremA
 public import ReciprocityTheory.SemistableReduction.ComapInclusionIsLocalHom
-public import ReciprocityTheory.SemistableReduction.AlgAll
+public import ReciprocityTheory.SemistableReduction.Bundle0017
 
 @[expose] public section
 

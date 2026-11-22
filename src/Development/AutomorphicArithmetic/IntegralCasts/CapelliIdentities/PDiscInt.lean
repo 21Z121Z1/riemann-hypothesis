@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.PAdicHensel.DatExOf
-public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.DiscriminantMulIntegralMem
+public import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.PAdicHensel.Bundle0005
+public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0013
 
 @[expose] public section
 

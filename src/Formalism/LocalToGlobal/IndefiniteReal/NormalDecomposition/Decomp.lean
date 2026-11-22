@@ -1,7 +1,7 @@
 module
 
 public import Formalism.LocalToGlobal.IndefiniteReal.NormalDecomposition.DecompOfNormalStatement
-public import Formalism.LocalToGlobal.IndefiniteReal.EigenDecomposition
+public import Formalism.LocalToGlobal.IndefiniteReal.Bundle0001
 
 @[expose] public section
 

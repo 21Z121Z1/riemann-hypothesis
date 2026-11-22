@@ -3,10 +3,9 @@ module
 public import Mathlib
 public import Development.AbelianVarietyTheory.Statements.FundamentalDomains.KeyFormulaPowOfKeyFormula
 public import Development.AbelianVarietyTheory.Statements.ThetaLevelCharacters.MemThetaLevelCharDimZero
-public import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.IsDiffSumSmulOfIsLieComb
-public import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.DualNumberRingHomExt
-public import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.ExistsKeyPBRing
-public import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.IsLieBasisIffIsUnitDet
+public import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.Bundle0014
+public import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.Bundle0018
+public import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.Bundle0035
 
 @[expose] public section
 

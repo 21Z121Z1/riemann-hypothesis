@@ -3,10 +3,10 @@ module
 public import Mathlib
 public import Formalism.LocalRingCardinality.DataCD
 public import Formalism.SharpRestriction.GlobalSchurBounds.GeneralLinearActions.GenusMassVolumes
-public import Development.AbelianVarietyTheory.BlockTheory.GlobalSignature.PerpendicularEmbedding
-public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.ContinuousMatrixEntryAbsSum
+public import Development.AbelianVarietyTheory.BlockTheory.GlobalSignature.Bundle0002
+public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0018
 public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.MeasurePreservingGlue
-public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.IsFibreFamilyEqAtContinuityPoint
+public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0016
 
 @[expose] public section
 

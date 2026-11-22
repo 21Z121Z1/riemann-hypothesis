@@ -2,8 +2,8 @@ module
 
 public import Mathlib
 public import Formalism.LocalToGlobal.UnitaryNorms.MemFIffReal
-public import Formalism.LocalToGlobal.UnitaryNorms.CharTied
-public import Formalism.LocalToGlobal.Divisibility.LiftLat
+public import Formalism.LocalToGlobal.UnitaryNorms.Bundle0006
+public import Formalism.LocalToGlobal.Divisibility.Bundle0003
 public import Formalism.LocalToGlobal.Divisibility.GoodPartHermitianSpec
 
 @[expose] public section

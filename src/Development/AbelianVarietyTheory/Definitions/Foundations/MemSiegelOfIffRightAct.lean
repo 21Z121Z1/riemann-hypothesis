@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Formalism.SatakeDualWeyl.Statement
-public import Development.AbelianVarietyTheory.Definitions.Foundations.IsIwasawaOfIsCompact
+public import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0004
 
 @[expose] public section
 

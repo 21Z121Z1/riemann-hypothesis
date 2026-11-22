@@ -2,8 +2,8 @@ module
 
 public import Development.WeilBound.CoreStatements.AutomorphicKernels.LanglandsExhaustion.CuspEmbP
 public import Development.WeilBound.CoreStatements.AutomorphicKernels.LanglandsExhaustion.MidGen
-public import Development.WeilBound.CoreStatements.AutomorphicKernels.LanglandsExhaustion.MidExact
-public import Development.WeilBound.CoreStatements.AutomorphicKernels.LanglandsExhaustion.EquivTripleProductOfIso
+public import Development.WeilBound.CoreStatements.AutomorphicKernels.LanglandsExhaustion.Bundle0002
+public import Development.WeilBound.CoreStatements.AutomorphicKernels.LanglandsExhaustion.Bundle0003
 
 @[expose] public section
 

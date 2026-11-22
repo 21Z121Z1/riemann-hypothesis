@@ -1,12 +1,12 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.LFunctionPositiveConductorFourEight
+public import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.Bundle0002
 public import Development.AbelianVarietyTheory.Definitions.HeightFunctions.FiniteDimensionalOfSz
 public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.ForallHeckeIdealIff
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.NotInjectiveTwoPrimesEqualNormCofinite
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsTwoPrimesSameNormOfTrivialFrobenius
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ClosureFrobeniusElementsEqTop
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0032
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0127
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0125
 
 @[expose] public section
 

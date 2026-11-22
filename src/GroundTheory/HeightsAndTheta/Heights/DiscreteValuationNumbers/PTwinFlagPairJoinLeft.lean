@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.ImportsBisSide
-public import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.ImportsTerLast
+public import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.Bundle0019
+public import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.Bundle0020
 
 @[expose] public section
 

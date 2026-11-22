@@ -1,7 +1,7 @@
 module
 
-public import Formalism.LocalToGlobal.Columns.ChainOneOkL
-public import Formalism.LocalToGlobal.Columns.RecLevelSym
+public import Formalism.LocalToGlobal.Columns.Bundle0034
+public import Formalism.LocalToGlobal.Columns.Bundle0010
 
 @[expose] public section
 

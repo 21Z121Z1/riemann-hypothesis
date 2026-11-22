@@ -1,8 +1,8 @@
 module
 
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntegrablePowerNormCompact
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.AddEquivAddHaarCharMulVecArtinianReduced
-public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.StabilizerVolume.DensInfSS
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1712
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0130
+public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.StabilizerVolume.Bundle0015
 public import Development.WeilBound.CoreStatements.AutomorphicKernels.SiegelWeilFormula.WhitGenOf
 
 @[expose] public section

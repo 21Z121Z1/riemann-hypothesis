@@ -1,6 +1,6 @@
 module
 
-public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.TailIntegrals.InnerCLe
+public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.TailIntegrals.Bundle0019
 
 @[expose] public section
 

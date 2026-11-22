@@ -1,11 +1,11 @@
 module
 
 public import Mathlib
-public import Formalism.LocalToGlobal.IndefiniteReal.ConcretePkgSpec
-public import Formalism.LocalToGlobal.IndefiniteReal.CutTuples2
+public import Formalism.LocalToGlobal.IndefiniteReal.Bundle0023
+public import Formalism.LocalToGlobal.IndefiniteReal.Bundle0004
 public import Formalism.LocalToGlobal.Divisibility.LiftLatLemmas
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FinRepApply
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.IsIdemOfAlgebraMap
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0831
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0100
 
 @[expose] public section
 

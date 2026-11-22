@@ -1,11 +1,11 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.LiftsInvOne
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.TrueColumnSpacesStandardInFrameCoords
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.IntegralAtOfComponentZeroUnderPrime
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0434
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0297
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0247
 public import Formalism.LocalToGlobal.Columns.RecLevelTop
-public import Formalism.LocalToGlobal.Columns.RecLevelLocP
+public import Formalism.LocalToGlobal.Columns.Bundle0013
 
 @[expose] public section
 

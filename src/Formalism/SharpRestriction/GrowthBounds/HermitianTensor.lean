@@ -1,7 +1,7 @@
 module
 
 public import Formalism.SharpRestriction.GrowthBounds.HermitianTensor.ModelIdentificationHolds
-public import Formalism.SharpRestriction.GrowthBounds.HermitianTensor.PbSmithLam
+public import Formalism.SharpRestriction.GrowthBounds.HermitianTensor.Bundle0006
 public import Formalism.SharpRestriction.GrowthBounds.HermitianTensor.TauP
 
 @[expose] public section

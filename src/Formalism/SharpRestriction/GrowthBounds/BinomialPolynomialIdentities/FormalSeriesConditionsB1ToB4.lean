@@ -2,9 +2,9 @@ module
 
 public import Formalism.SharpRestriction.GrowthBounds.BinomialPolynomialIdentities.LowerSetTypesSpan
 public import Formalism.SharpRestriction.GrowthBounds.BinomialPolynomialIdentities.StandardPathBasisAnyRing
-public import Formalism.SharpRestriction.GrowthBounds.BinomialPolynomialIdentities.AdmissibleWordBasis
+public import Formalism.SharpRestriction.GrowthBounds.BinomialPolynomialIdentities.Bundle0005
 public import Formalism.SharpRestriction.GrowthBounds.FrobeniusPaths.IntegralJointTypeSumOfParts
-public import Formalism.SharpRestriction.GrowthBounds.RootWeights.WeightConditionFromIntegralForm
+public import Formalism.SharpRestriction.GrowthBounds.RootWeights.Bundle0023
 
 @[expose] public section
 

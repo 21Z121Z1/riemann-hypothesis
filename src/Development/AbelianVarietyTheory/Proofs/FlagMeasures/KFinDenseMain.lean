@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Formalism.LocalToGlobal.SiegelLatticeTheory.FlagStabilizerTensors.RootLatticeThresholds.CarrierXPinsP
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.KFinDense
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0357
 
 @[expose] public section
 

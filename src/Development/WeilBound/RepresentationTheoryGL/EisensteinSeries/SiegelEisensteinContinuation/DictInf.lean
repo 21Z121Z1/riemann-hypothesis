@@ -1,7 +1,7 @@
 module
 
 public import Development.WeilBound.RepresentationTheoryGL.EisensteinSeries.SiegelEisensteinContinuation.IsEpCont
-public import Development.WeilBound.ThetaLifts.LatticeBasics.HypothesesE
+public import Development.WeilBound.ThetaLifts.LatticeBasics.Bundle0007
 public import Development.WeilBound.CoreStatements.AutomorphicKernels.EisensteinSeriesG2.AdelicHomeomorphisms.IsTopologicalGroupG2
 public import Development.WeilBound.CoreStatements.AutomorphicKernels.EisensteinSeriesG2.SiegelGrowthForms.IsGrowFormEvAt
 public import GroundTheory.IdeleRoots.TorusPowers.HeckeTensor

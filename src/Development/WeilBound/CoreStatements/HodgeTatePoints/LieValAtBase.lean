@@ -1,12 +1,11 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Statements.GeometryStatements.CurveSemiAbelianConjecture
-public import Development.AutomorphicSpectrum.Statements.GeometryStatements.SeparableFormGroupElementFixesUniquePositiveLine
+public import Development.AutomorphicSpectrum.Statements.GeometryStatements.Bundle0005
 public import Development.AutomorphicSpectrum.Definitions.DivisibilityTowers.Proportional
 public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsLieModel
 public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.IsExcisionNbhdAway
-public import Development.WeilBound.CoreStatements.HodgeTatePoints.HtatLieBc
+public import Development.WeilBound.CoreStatements.HodgeTatePoints.Bundle0050
 
 @[expose] public section
 

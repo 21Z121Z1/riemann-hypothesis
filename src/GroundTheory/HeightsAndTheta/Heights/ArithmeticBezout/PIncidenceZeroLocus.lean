@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.StatementsIncidenceZeroLocus
+public import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.Bundle0022
 
 @[expose] public section
 

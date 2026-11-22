@@ -5,9 +5,9 @@ public import Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCoh
 public import Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.PerfectoidPullbacks.PeriodBaseChange.OB
 public import Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.PerfectoidPullbacks.ChartGrConst
 public import Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.BocksteinBaseChange.EtSide
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.NilpotentIdentityMorphismCompatStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FlatAcrisTruncatedWittStatement
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.AbProj
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0299
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0262
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.Bundle0006
 
 @[expose] public section
 
@@ -297,7 +297,7 @@ def nm (r : Res l K) (M : Model l K) (n : ℕ) :
     NMor (Wc.pd l r.k n) M.p ((Wc.res l r.k n).comp r.ρ) (B.DD true (base l) n) M.p (Mid.κm r n)
       (algebraMap (Wc.Wm l r.k n) ((base l).Acr n)) :=
   letI := (Mid.wn r n).toAlgebra
-  { hI := GlobalTheory.T.witt_to_acris_isDPMorphism r n
+  { hI := _root_.GlobalTheory.CompanionTheory.CrisDP.wn_isDPMorphism r n
     u := 𝟙 _
     g := RingHom.id _
     hu := by simp

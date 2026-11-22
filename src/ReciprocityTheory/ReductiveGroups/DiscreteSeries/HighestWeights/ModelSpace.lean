@@ -2,7 +2,7 @@ module
 
 public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.HighestWeights.ModelFun
 public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.CasimirCoefficients.KFacts
-public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.CasimirCoefficients.InhabA
+public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.CasimirCoefficients.Bundle0003
 
 @[expose] public section
 

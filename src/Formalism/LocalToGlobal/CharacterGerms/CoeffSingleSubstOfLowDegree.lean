@@ -1,7 +1,7 @@
 module
 
 public import Formalism.LocalToGlobal.CharacterGerms.AbstractGermZeroCondition
-public import Formalism.LocalToGlobal.CharacterGerms.RowTieCartAdd
+public import Formalism.LocalToGlobal.CharacterGerms.Bundle0018
 
 @[expose] public section
 

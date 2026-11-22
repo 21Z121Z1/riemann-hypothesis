@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.BesselFrameTranslatedPerpOfIsFrame
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ContinuousWordTranslate
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0826
 
 @[expose] public section
 

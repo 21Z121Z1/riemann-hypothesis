@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Formalism.LocalRingCardinality.RhoDetPrimeEqMuTildeMulChiPow
-public import Formalism.LocalRingCardinality.DataKerP
+public import Formalism.LocalRingCardinality.Bundle0004
 public import Formalism.LocalRingCardinality.DataKerI
 public import Formalism.SharpRestriction.ParConsts
 public import Formalism.SharpRestriction.GlobalSchurBounds.GeneralLinearActions.IsDiscriminantTwelfthRootOfIdealLattice

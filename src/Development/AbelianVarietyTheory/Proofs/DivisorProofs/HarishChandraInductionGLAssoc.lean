@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Divisors.OrthSubrepresentation
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsBlockParabolicSubgroupLeviProjectionStatement
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0002
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0233
 
 @[expose] public section
 

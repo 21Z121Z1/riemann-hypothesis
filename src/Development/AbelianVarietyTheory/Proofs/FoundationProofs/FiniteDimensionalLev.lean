@@ -1,17 +1,16 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Foundations.HahnPowOrderLeadingCoeff
-public import Development.AbelianVarietyTheory.Definitions.Foundations.EigenOfTwoStep
-public import Development.AbelianVarietyTheory.Definitions.Foundations.SiegelNeZeroIff
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.SiegelUnitQExpansionCoefficients
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.QuotientIntegralHolomorphic
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.UpperHalfPlaneCodiscreteGermIdentityAndUnits
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ModularTowerFunctionSlTwoIntInvariantStatement
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ModularTowerFunctionTendstoConstTermExponentialStatement
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ConstOfSlTwoIntInvariantBoundedUpperHalfPlaneStatement
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.HahnSeriesPowOfLeadingQInvStatement
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.FiniteDimensionalFixedFieldMapOfFiniteIndexStatement
+public import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0006
+public import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0008
+public import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0009
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0180
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0110
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0112
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0086
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0074
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0097
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0006
 
 @[expose] public section
 
@@ -106,15 +105,15 @@ theorem eq_const_of_nonneg (X : Tower Ω ε) (h : X.K) (hinv : ∀ γ : SL(2, �
       by_contra hm
       exact hr (hneg _ (by exact_mod_cast (not_le.1 hm)))
     exact ⟨m.toNat, by rw [← Int.cast_natCast, Int.toNat_of_nonneg hm]⟩
-  obtain ⟨B, t, hB⟩ := GlobalTheory.T.modularTower_function_tendsto_constTerm_exponential X h φ hd.continuousOn ha hsupp
-  have hinvφ := GlobalTheory.T.modularTower_function_slTwoInt_invariant X h φ hd.continuousOn ha hinv
+  obtain ⟨B, t, hB⟩ := _root_.GlobalTheory.KZ.ExpBound.bound_at_infinity X h φ hd.continuousOn ha hsupp
+  have hinvφ := _root_.GlobalTheory.KZ.InvFun.fun_inv X h φ hd.continuousOn ha hinv
   have hexp1 : ∀ z : ℂ, t < z.im → Real.exp (-(2 * Real.pi * (z.im - t))) ≤ 1 := by
     intro z hz
     rw [Real.exp_le_one_iff]
     have : 0 < z.im - t := by linarith
     have := Real.pi_pos
     nlinarith
-  obtain ⟨c, hc⟩ := GlobalTheory.T.const_of_slTwoInt_invariant_bounded_upperHalfPlane φ hd hinvφ ⟨‖ε a0‖ + |B|, t, fun z hz hzt => by
+  obtain ⟨c, hc⟩ := _root_.GlobalTheory.KZ.LevelOne.const_of_invariant_bounded φ hd hinvφ ⟨‖ε a0‖ + |B|, t, fun z hz hzt => by
     have h1 := hB z hz hzt
     have h2 := hexp1 z hzt
     have h3 : B * Real.exp (-(2 * Real.pi * (z.im - t))) ≤ |B| := by
@@ -345,7 +344,7 @@ theorem finiteDimensional_lev : ∀ (Ω : Type) [Field Ω] [Algebra ℚ Ω] (ε 
   have hact : ∀ γ f, act γ f = X.sl (ofSL γ⁻¹) f := fun _ _ => rfl
   haveI : NeZero M := ⟨hM.ne'⟩
   have hfi : Γ'.FiniteIndex := Subgroup.finiteIndex_of_le hle
-  have hfin := GlobalTheory.T.finiteDimensional_fixedField_map_of_finiteIndex' SL(2, ℤ) act Γ' hfi (by
+  have hfin := _root_.GlobalTheory.finiteDimensional_fixedField_map_of_finiteIndex SL(2, ℤ) act Γ' hfi (by
     intro x hx
     obtain ⟨P, Q, hPQ⟩ := LevFin.exists_eq_div X x (fun γ => by
       have := hx γ⁻¹

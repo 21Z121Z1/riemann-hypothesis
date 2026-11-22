@@ -1,18 +1,12 @@
 module
 
-public import Development.AutomorphicArithmetic.Foundations.Convolution.TraceSplitting.CoreDescOf
-public import Development.AutomorphicArithmetic.Foundations.Convolution.TraceSplitting.AbsLast
-public import Development.AutomorphicArithmetic.Foundations.Convolution.TraceSplitting.PullBack
-public import Development.AutomorphicArithmetic.Foundations.Convolution.TraceSplitting.UnitTrace
-public import Development.AutomorphicArithmetic.Foundations.Convolution.TraceSplitting.OneTerm
-public import Development.AutomorphicArithmetic.Foundations.Convolution.TraceSplitting.SideSum
-public import Development.AutomorphicArithmetic.Foundations.Convolution.TraceSplitting.PickS
-public import Development.AutomorphicArithmetic.Foundations.Convolution.TraceSplitting.PickInf
-public import Development.AutomorphicArithmetic.Foundations.Convolution.TraceSplitting.TyEx
-public import Development.AutomorphicArithmetic.Foundations.Convolution.TraceSplitting.FdFixed
-public import Development.AutomorphicArithmetic.Foundations.Convolution.TraceSplitting.GoodEx
-public import Development.AutomorphicArithmetic.Foundations.Convolution.TraceSplitting.Places
-public import Development.AutomorphicArithmetic.Foundations.Convolution.PowerSumTraces.OccursBasics
+public import Development.AutomorphicArithmetic.Foundations.Convolution.TraceSplitting.Bundle0002
+public import Development.AutomorphicArithmetic.Foundations.Convolution.TraceSplitting.Bundle0003
+public import Development.AutomorphicArithmetic.Foundations.Convolution.TraceSplitting.Bundle0004
+public import Development.AutomorphicArithmetic.Foundations.Convolution.TraceSplitting.Bundle0005
+public import Development.AutomorphicArithmetic.Foundations.Convolution.TraceSplitting.Bundle0006
+public import Development.AutomorphicArithmetic.Foundations.Convolution.TraceSplitting.Bundle0001
+public import Development.AutomorphicArithmetic.Foundations.Convolution.PowerSumTraces.Bundle0005
 public import Development.AutomorphicArithmetic.Foundations.Convolution.IntegrableConvolution.EigBasic
 
 @[expose] public section

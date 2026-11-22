@@ -2,8 +2,7 @@ module
 
 public import Mathlib
 public import GroundTheory.HeightsAndTheta.Heights.Regularisation.Statements
-public import GroundTheory.HeightsAndTheta.Heights.MatrixCharts.StatementsBounds
-public import GroundTheory.HeightsAndTheta.Heights.MatrixCharts.PChartBounds
+public import GroundTheory.HeightsAndTheta.Heights.MatrixCharts.Bundle0002
 
 @[expose] public section
 

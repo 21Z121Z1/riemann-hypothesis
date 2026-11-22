@@ -1,6 +1,6 @@
 module
 
-public import Formalism.LocalToGlobal.GlobalTheory.GL6.LatticeInclusionOfDecompGlob
+public import Formalism.LocalToGlobal.GlobalTheory.GL6.Bundle0005
 
 @[expose] public section
 

@@ -1,15 +1,12 @@
 module
 
-public import Formalism.RealPlaceAnalysis.RealPlaceTaylor.MemUnitaryGroupIffMulConjTranspose
+public import Formalism.RealPlaceAnalysis.RealPlaceTaylor.Bundle0001
 public import Formalism.RealPlaceAnalysis.RealPlaceTaylor.IndefiniteUnitaryPreservesForm
-public import Formalism.RealPlaceAnalysis.RealPlaceTaylor.ComplexificationHolds
-public import Formalism.RealPlaceAnalysis.RealPlaceTaylor.ModularCharacterEqOneOnExpHermitian
-public import Formalism.RealPlaceAnalysis.RealPlaceTaylor.FrobeniusBoundOfMulNearOne
-public import Formalism.RealPlaceAnalysis.RealPlaceTaylor.CartanInvolutionConjTransposeMul
-public import Formalism.RealPlaceAnalysis.RealPlaceTaylor.ComplexifiedDerivativeCommutator
+public import Formalism.RealPlaceAnalysis.RealPlaceTaylor.Bundle0007
+public import Formalism.RealPlaceAnalysis.RealPlaceTaylor.Bundle0003
 public import Formalism.RealPlaceAnalysis.RealPlaceTaylor.RightDerivativeZeroOutsideSupport
 public import Formalism.RealPlaceAnalysis.RealPlaceTaylor.SatisfiesGlRelationsBilinearLeft
-public import Formalism.RealPlaceAnalysis.RealPlaceTaylor.ProdFactorialSupportSubSingle
+public import Formalism.RealPlaceAnalysis.RealPlaceTaylor.Bundle0005
 
 @[expose] public section
 

@@ -1,6 +1,6 @@
 module
 
-public import Development.WeilBound.ThetaLifts.Reductions.IsoOfIntegral
+public import Development.WeilBound.ThetaLifts.Reductions.Bundle0002
 
 @[expose] public section
 

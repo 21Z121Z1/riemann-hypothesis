@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Formalism.ThetaLogCoordinates.JacobiPathWeights.IndexWeightsDominance
+public import Formalism.ThetaLogCoordinates.JacobiPathWeights.Bundle0004
 public import Formalism.ThetaLogCoordinates.JacobiPathWeights.JacobiMinorProofs.LinearIndependentOfLead
 public import Formalism.ThetaLogCoordinates.JacobiPathWeights.JacobiMinorProofs.ActFormContract
 public import Formalism.ThetaLogCoordinates.JacobiPathWeights.JacobiMinorProofs.LeIffLtColHeight

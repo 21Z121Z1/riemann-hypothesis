@@ -1,6 +1,6 @@
 module
 
-public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.CIndBC
+public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0006
 
 @[expose] public section
 

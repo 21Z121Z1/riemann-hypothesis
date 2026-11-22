@@ -1,9 +1,9 @@
 module
 
 public import Formalism.LocalToGlobal.PairingIndexBounds.OrthogonalChartLevels.FrecAt
-public import Formalism.LocalToGlobal.InertKernelTheory.FrameInt
+public import Formalism.LocalToGlobal.InertKernelTheory.Bundle0013
 public import Formalism.LocalToGlobal.GroupLattices.LevelGatherings.PosBridge
-public import Formalism.LocalRingCardinality.DataKerP
+public import Formalism.LocalRingCardinality.Bundle0004
 
 @[expose] public section
 

@@ -1,10 +1,10 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.GaugeUnfold
+public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.Bundle0011
 public import Formalism.LocalToGlobal.GlobalTheory.GL5.Statement
 public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.SumPlacesEqTrace
-public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.EventuallyFinEqOne
+public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.Bundle0064
 public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.ExistsUniqueIdeleOfLinearEquivQuotientLocal
 
 @[expose] public section

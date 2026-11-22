@@ -2,10 +2,8 @@ module
 
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.UnitaryThreeGroups.Rigid0
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.UnitaryThreeGroups.EntInMulRight
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.UnitaryThreeGroups.DefNorm
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.UnitaryThreeGroups.DefCob
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.UnitaryThreeGroups.AdRepBaseLiftApply
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.CommutativeAlgebra.CoSqz
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.UnitaryThreeGroups.Bundle0001
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.CommutativeAlgebra.Bundle0005
 
 @[expose] public section
 

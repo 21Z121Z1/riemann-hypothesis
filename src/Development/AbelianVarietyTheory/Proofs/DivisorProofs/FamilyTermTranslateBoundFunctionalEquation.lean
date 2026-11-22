@@ -1,14 +1,14 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Divisors.TanRel
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TrVal
-public import Development.AbelianVarietyTheory.Definitions.Divisors.IsPolAVSectionInverseImage
-public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.AbsoluteSiegel
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CoeffTopMonEqZero
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0029
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0865
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0027
+public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.Bundle0009
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1863
 public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.DegenerationValuesIntOfAdmissibleBase
 public import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.GermEqZeroOfThickenings
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.DiscreteValuationRings.GsScalJFK
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.DiscreteValuationRings.Bundle0011
 
 @[expose] public section
 

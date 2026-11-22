@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.PoitouTateNineTermTransgressionZeroApply
-public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.ContinuousCycMod
+public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.Bundle0002
 public import Formalism.GaloisCohomology.Statement
 
 @[expose] public section

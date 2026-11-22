@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LatticeCountingBound.IndexDefs
+public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LatticeCountingBound.Bundle0002
 
 @[expose] public section
 

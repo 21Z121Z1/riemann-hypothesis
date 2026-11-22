@@ -1,14 +1,14 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsGenericFlag
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.Bundle0004
 public import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.FrameDefinitions.Metric
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.IsGrpPullback
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.PrimeChartExistsUniquePointStatement
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.RegAtIffChartLocalizationStatement
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.GenMapStalkSpecializes
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0019
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.Bundle0002
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0012
 public import GroundTheory.HeightsAndTheta.Heights.HeightKernels.PCoordConeArithVar
-public import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.CoordinateIdeals.MemMCoordIdealOfAevalEqZero
+public import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.CoordinateIdeals.Bundle0001
 
 @[expose] public section
 
@@ -371,7 +371,7 @@ theorem regAt_iff (p : Cpt ξ) (a : Ω) :
     Finset.prod_ne_zero_iff.2 fun k _ => pow_ne_zero _ (hc k)
   constructor
   · intro ha
-    obtain ⟨s, hs, hu, hsa⟩ := (GlobalTheory.T.regAt_iff_chart_localization Sc Ω ξ ℤ _ (seg y) tie c p hp a).1 ha
+    obtain ⟨s, hs, hu, hsa⟩ := (_root_.GlobalTheory.CompanionTheory.Ar.regAt_iff_exists_chart_fraction Sc Ω ξ ℤ _ (seg y) tie c p hp a).1 ha
     rw [adjoin_eq hc] at hs hsa
     obtain ⟨f₁, rfl⟩ := hs
     obtain ⟨f₂, e₂⟩ := hsa

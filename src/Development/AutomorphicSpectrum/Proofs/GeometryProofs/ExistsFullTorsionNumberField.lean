@@ -3,14 +3,14 @@ module
 public import Mathlib
 public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsThetaMeanSquareNorm
 public import Development.AutomorphicSpectrum.Statements.GeometryStatements.ZhangDimensionPushDownGrassmannianHeightBounds
-public import GroundTheory.HeightsAndTheta.Heights.KernelsLattice
+public import GroundTheory.HeightsAndTheta.Heights.Bundle0001
 public import GroundTheory.HeightsAndTheta.Heights.LatticeLemmas.StatementsBundles
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ThetaFunctionArchimedeanFrameStatement
-public import Development.AbelianVarietyTheory.Proofs.CoherentCohomologyProofs.AbelianVarietyTorsionCardEqPowProof
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsFiniteAndFlatTorsion
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0220
+public import Development.AbelianVarietyTheory.Proofs.CoherentCohomologyProofs.Bundle0027
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1345
 public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsUnramifiedExtTorsionPointsGoodReduction
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsMulEquivOfIsGrpPullback
-public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ConnectedSpaceSpecOfIsLocalRing
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0032
+public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.Bundle0078
 
 @[expose] public section
 
@@ -321,7 +321,7 @@ variable {E : Type} [Field E] [NumberField E] [IsCMField E] {H : Host E} [Number
 theorem dim_eq (D : PPData H L) (hA : IsAbelianScheme D.tK.G) {g : ℕ}
     (hg : SmoothOfRelativeDimension g D.tK.G.hom) : g = D.g := by
   obtain ⟨σ⟩ : Nonempty (L →+* ℂ) := inferInstance
-  obtain ⟨a⟩ := (GlobalTheory.T.theta_function_archimedean_frame E H L D σ).1
+  obtain ⟨a⟩ := (_root_.GlobalTheory.CompanionTheory.Ar.Sl.frames_main E H L D σ).1
   have h1 := card_torsion_of_lattice a.u.ex a.u.ex_add a.u.ex_onto a.u.Λ a.u.ker a.u.discrete a.u.full 2
     (by norm_num)
   have h2 := card_points D.tK.G hA hg (spMap σ) 2 (by norm_num)

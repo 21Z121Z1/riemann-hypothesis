@@ -1,7 +1,7 @@
 module
 
-public import Formalism.LocalToGlobal.InertKernelTheory.DefsRepDict
-public import Formalism.LocalToGlobal.InertKernelTheory.InertCoprimeLemmas.MMRead
+public import Formalism.LocalToGlobal.InertKernelTheory.Bundle0012
+public import Formalism.LocalToGlobal.InertKernelTheory.InertCoprimeLemmas.Bundle0003
 public import Formalism.LocalToGlobal.InertKernelTheory.InertCoprimeLemmas.FormalExponentialAgree
 public import Formalism.LocalToGlobal.TorsionIntegrality.SecondCoefficientNorms.BinomialSeriesCoefficients.CoeffPowEqZeroOfCc
 public import Formalism.LocalToGlobal.InertKernelTheory.InertCoprimeLemmas.ExistsWittSeriesInverseFormalGroupIso

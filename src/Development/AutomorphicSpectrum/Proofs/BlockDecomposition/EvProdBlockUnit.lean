@@ -2,12 +2,12 @@ module
 
 public import Mathlib
 public import Development.WeilBound.CoreStatements.TemperedRepresentationTheory.ArakelovCycleHeights.QpSndStr
-public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.ResidueDegreeOfIsClosedImmersion
-public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.ArFormExists
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IsPullHermPullLine
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsIsUnder
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.PullRatioTopEq
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ProdZpowSingle
+public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.Bundle0015
+public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.Bundle0016
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0520
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0559
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0544
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0545
 
 @[expose] public section
 

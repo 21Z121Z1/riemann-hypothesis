@@ -1,10 +1,10 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicArithmetic.Foundations.Convolution.SphericalIdeles.RamDefs
-public import Development.AutomorphicArithmetic.Foundations.Convolution.SphericalIdeles.CbcSph
+public import Development.AutomorphicArithmetic.Foundations.Convolution.SphericalIdeles.Bundle0001
+public import Development.AutomorphicArithmetic.Foundations.Convolution.SphericalIdeles.Bundle0006
 public import Development.AutomorphicArithmetic.Foundations.Convolution.SphericalIdeles.LiftAll
-public import Development.AutomorphicArithmetic.Foundations.Convolution.SphericalIdeles.NormRam
+public import Development.AutomorphicArithmetic.Foundations.Convolution.SphericalIdeles.Bundle0002
 
 @[expose] public section
 

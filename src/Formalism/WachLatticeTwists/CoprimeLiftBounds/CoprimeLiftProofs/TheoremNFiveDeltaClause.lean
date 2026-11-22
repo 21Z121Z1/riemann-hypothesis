@@ -1,11 +1,11 @@
 module
 
 public import Formalism.WachLatticeTwists.CoprimeLiftBounds.WachTwistTheoremDeltaClause
-public import Formalism.WachLatticeTwists.CoprimeLiftBounds.StatBridgeChiOne
+public import Formalism.WachLatticeTwists.CoprimeLiftBounds.Bundle0001
 public import Formalism.WachLatticeTwists.CoprimeLiftBounds.CoprimeLiftProofs.Bridge
 public import Formalism.CharacterColumnKernels.IdempotentNormalForms.CharacterColumnKernelsOfBlockChiCOfBlockChiOne
-public import Formalism.WachLatticeTwists.CoprimeLiftBounds.CoprimeLiftProofs.SelmerInjColumnPlace
-public import Formalism.CharacterColumnKernels.IdempotentNormalForms.LengthKerOfDetEqZero
+public import Formalism.WachLatticeTwists.CoprimeLiftBounds.CoprimeLiftProofs.Bundle0003
+public import Formalism.CharacterColumnKernels.IdempotentNormalForms.Bundle0001
 
 @[expose] public section
 

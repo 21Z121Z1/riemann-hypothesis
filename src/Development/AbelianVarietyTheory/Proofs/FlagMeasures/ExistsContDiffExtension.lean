@@ -3,7 +3,7 @@ module
 public import Mathlib
 public import Formalism.RealPlaceAnalysis.SmoothOnGVIff
 public import Formalism.SharpRestriction.CuspSpanNormBounds.RelevantZeroGramTerms
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ContDiffSetIntegralNat
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0151
 
 @[expose] public section
 

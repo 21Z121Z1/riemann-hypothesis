@@ -5,13 +5,12 @@ public import Development.AbelianVarietyTheory.Definitions.ArchimedeanThetaValue
 public import Development.AbelianVarietyTheory.Definitions.ArchimedeanThetaValues.IsFramedPointChangedByLetters
 public import Development.AbelianVarietyTheory.Definitions.RegularCharts.ModelAt
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.UnifUniqSt
-public import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.FrameChangeComposeInvertBaseChangeTriangular
-public import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.FramedPointEvalNaturalWeightScaling
-public import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.ArcLetterRingOverDVRPolynomialDenominators
-public import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.ArcFramedPointUniqueAndBaseChangeStatement
-public import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.ArcFramedPointIntegralOpenDiscStatement
-public import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.IntegralOfFrChg
-public import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.ExistsFactorOfMemRange
+public import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.Bundle0016
+public import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.Bundle0017
+public import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.ArcFramedPointUniqueAndBaseChange
+public import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.Bundle0051
+public import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.Bundle0044
+public import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.Bundle0018
 
 @[expose] public section
 
@@ -173,7 +172,7 @@ theorem recordAt_of_isArcFr : Out.Laws → Out.Laws2 → ∀ (E : Type) [Field E
   obtain ⟨z₁, hz₁⟩ := hev.bc _ _ φ Dv.yR
   have hA : IsArcFr W e th ((algebraMap T'.V T'.Fr).comp e₀) z₀ := by
     rw [← he₁]
-    have key := (GlobalTheory.T.arcFramedPoint_unique_and_baseChange hL hL2 E H Dw l Xo c O β Y Dv.Tv.V b aw χ W e th hth _ _ y₀ hy).2
+    have key := (_root_.GlobalTheory.ArcQ.isArcFr_unique_baseChange hL hL2 E H Dw l Xo c O β Y Dv.Tv.V b aw χ W e th hth _ _ y₀ hy).2
     first
       | exact key hmono _ φ z₀ hz₀
       | exact key _ φ z₀ hz₀

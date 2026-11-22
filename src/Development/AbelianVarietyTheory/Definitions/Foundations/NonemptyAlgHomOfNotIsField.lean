@@ -2,8 +2,8 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.Foundations.HermitianSpaceBaseLatticeEqFrameLattice
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.MemStabLocStdLatticeIffHtFinEqOne
-public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.NotIsFieldAdicCompletionTensorOfSplit
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0294
+public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0038
 public import ReciprocityTheory.Automorphisms.SplitCoeAlgebraMap
 
 @[expose] public section

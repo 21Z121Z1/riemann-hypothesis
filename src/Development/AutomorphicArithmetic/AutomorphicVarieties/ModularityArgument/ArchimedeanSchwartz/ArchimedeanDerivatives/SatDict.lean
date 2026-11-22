@@ -1,8 +1,8 @@
 module
 
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.ArchimedeanSchwartz.HodgeTateFromSandwich
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.StrongMultiplicityOne.EigOfSat
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ValuationDetEqOne
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.StrongMultiplicityOne.Bundle0002
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1443
 
 @[expose] public section
 

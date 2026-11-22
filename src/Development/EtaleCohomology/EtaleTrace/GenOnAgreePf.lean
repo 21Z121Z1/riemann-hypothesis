@@ -1,6 +1,6 @@
 module
 
-public import Development.EtaleCohomology.EtaleTrace.GenOutGluePf
+public import Development.EtaleCohomology.EtaleTrace.Bundle0005
 
 @[expose] public section
 

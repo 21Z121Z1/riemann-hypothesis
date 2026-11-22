@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Formalism.EllipticTorsion.UnitCancel
+public import Formalism.EllipticTorsion.Bundle0003
 public import Formalism.FormalGroupLog.LogDeterminesLaw
 
 @[expose] public section

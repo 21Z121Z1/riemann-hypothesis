@@ -2,11 +2,11 @@ module
 
 public import Mathlib
 public import Development.WeilBound.RepresentationTheoryGL.GenericUnitaryGL.GenericUnlinkedGL.UnlinkedRealize
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CuspidalSupportRealisedByProductStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.WhittakerRankProductLeOneStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.WhittakerRankExtensionBoundStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.GelfandKazhdanLocalStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CuspidalSwapProductGenericStatement
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0405
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0455
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0534
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0374
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0649
 public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.NontrivialTwJacquetOfSurjective
 
 @[expose] public section
@@ -43,7 +43,7 @@ theorem genericUnique_of_perm {k : Type} [Field k] [ValuativeRel k] [Topological
   have hfun : (fun a => y (e a)) = x := funext he
   subst hfun
   have hσx : IsSubquotient σ (prodIrr (fun a => y (e a)) hd) :=
-    hP hA (GlobalTheory.T.gelfand_kazhdan_local hA) hH hW hC ψ hψc hψ1 y hyc hd' e hd σ hσ.isSmooth hσ.isIrreducible gσψ hσy
+    hP hA (_root_.GlobalTheory.CompanionTheory.GenGK.gkLocal_gen hA) hH hW hC ψ hψc hψ1 y hyc hd' e hd σ hσ.isSmooth hσ.isIrreducible gσψ hσy
   exact GlobalTheory.T.whittaker_rank_extension_bound k ψ hψc N (prodIrr (fun a => y (e a)) hd) π σ (isSmooth_prodIrr _ hd)
     (GlobalTheory.T.whittaker_rank_product_le_one k hH hW ψ hψc hψ1 h N _ hd) hπ.isIrreducible hσ.isIrreducible hπx hσx gπψ gσψ
 

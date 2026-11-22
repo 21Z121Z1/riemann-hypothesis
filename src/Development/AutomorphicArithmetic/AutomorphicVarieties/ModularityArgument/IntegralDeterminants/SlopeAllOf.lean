@@ -3,12 +3,23 @@ module
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.IntegralDeterminants.PlaceConjAlt
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.IntegralDeterminants.ProdNorm
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.GaloisLibrary.IntCrit
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AutomorphicFormsFiniteGL
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GelfandKazhdanDualOfTwoHyps
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1678
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1553
 public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.JacquetShalikaRigidityHolds
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.InfiniteQuadraticCMGoodBaseChangeSplitStatement
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.PolarizedPairBaseChangePolarizedSameWeightStatement
-public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.ExistsPlaceCompletionIsoImports
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0331
+public import Mathlib
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0334
+public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.Bundle0019
+public import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.Imports
+public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.Bundle0005
+public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.Bundle0009
+public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.StrongMultiplicityOne
+public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisGeometry₂.GelfandKazhdanDual
+public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.HeckeLAdicCharacterAboveIff
+public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisGeometry₂.Bundle0006
+public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.DeRhamPotSemistable
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsPolarizedTwistAbsPow
+public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0165
 public import Development.WeilBound.CoreStatements.PublishedTheorems.JacquetShalikaBound.JacquetShalikaBound
 
 @[expose] public section
@@ -138,7 +149,7 @@ theorem UpperTheory.V.Z.Int.slopeAllOf :
       exact ⟨m i, add_comm _ _⟩
   obtain ⟨Q, hQ1, hQ2, hQ3, hQ4⟩ := (GlobalTheory.T.infinite_quadraticCM_goodBaseChange_split hAF E (AlgebraicClosure E) 2 n π w).nonempty
   obtain ⟨P, hP⟩ := hQL E Q.K Q.two n hn π hQ3
-  obtain ⟨⟨χ', hχ'⟩, -⟩ := GlobalTheory.T.polarizedPair_baseChange_polarized_same_weight hAF hJS hGK E Q.K 2 n hn π χ P hP ⟨hreg, hpol, trivial⟩
+  obtain ⟨⟨χ', hχ'⟩, -⟩ := _root_.GlobalTheory.LiftPolar.main hAF hJS hGK E Q.K 2 n hn π χ P hP ⟨hreg, hpol, trivial⟩
   have hin : GlobalTheory.GalCut.InScope .good 2 P χ' := ⟨hχ'.1, hχ'.2.1, hQ4 P hP⟩
   have hA := ReciprocityTheory.Gal.isPlaceOver_placeOf (AlgebraicClosure E) w
   obtain ⟨w', h', i, hi⟩ := GlobalTheory.T.exists_place_completion_iso E (AlgebraicClosure E) Q.K w _ hA (hQ1 _ hA)

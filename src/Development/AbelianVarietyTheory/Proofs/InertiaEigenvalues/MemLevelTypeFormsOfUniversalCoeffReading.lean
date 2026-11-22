@@ -1,14 +1,14 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.AdmissibleIndexBoundAllPowers
+public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0015
 public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.ExistsIsScalar
 public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.DualTypePlacesIsSplitNonconjugateOfAdmissible
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ChosenPlacesAdmissibleGoodSetup
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.TwistingCharacterAdmissibleGaloisTwistGood
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ConjPlNeOfSplit
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.MemBlockTriangularTwoBlockSizesOfLe
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.FiniteGroupLiftsToParahoricLevel
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0795
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0849
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0838
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0802
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0139
 public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.UnivChar
 
 @[expose] public section
@@ -170,7 +170,7 @@ theorem gen_type (hB : B.Good) (hS : S.SigOK) {ψ : Twist D Circle} (hψ : ψ.Go
   set d : ∀ PP : Pl D.host.E, (kP PP)ˣ := fun PP => GeneralLinearGroup.det (redFn B.F.βT PP (Lev.finE T κ)) with hd
   have hv := series_type hB hS hQ hω hH hκ (φ := fun PP => flat (ψ.resC PP.1)) (φ' := fun PP => flat (ψ.resC PP.1))
     (fun PP => ψ.resC PP.1 (d PP.1)) (fun PP y => flat_mul B.hr _ _ y) h P g
-  have hdet : detChar T ψ.chi κ = ∏ PP ∈ ψ.Q, ψ.res PP (d PP) := GlobalTheory.T.unitaryDetCharacter_eq_prod_residue_goodBaseFrame B hB ψ hψ hκ.fin hκ.st
+  have hdet : detChar T ψ.chi κ = ∏ PP ∈ ψ.Q, ψ.res PP (d PP) := _root_.GlobalTheory.TwistDetStabAll.detChar_eq_prod_res B hB ψ hψ hκ.fin hκ.st
   have e1 : ((detChar T ψ.chi κ : Circle) : ℂ) * (((∏ PP : ↥ψ.Q, ψ.resC PP.1 (d PP.1))⁻¹ : ℂˣ) : ℂ) = 1 := by
     rw [hdet, Finset.prod_coe_sort ψ.Q (fun PP => ψ.resC PP (d PP))]
     have : ((∏ PP ∈ ψ.Q, ψ.res PP (d PP) : Circle) : ℂ) = ((∏ PP ∈ ψ.Q, ψ.resC PP (d PP) : ℂˣ) : ℂ) := by

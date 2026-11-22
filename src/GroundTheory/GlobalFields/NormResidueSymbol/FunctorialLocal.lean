@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import GroundTheory.GlobalFields.NormResidueSymbol.RangeFiniteLocalNormLeKerLocalSymbol
-public import GroundTheory.LocalFields.LocalArtinAbstractField
+public import GroundTheory.LocalFields.Bundle0018
 public import GroundTheory.LocalFields.MainTheorem
 
 @[expose] public section

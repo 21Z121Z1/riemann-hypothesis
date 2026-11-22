@@ -2,7 +2,7 @@ module
 
 public import Formalism.LocalToGlobal.InertKernelTheory.DefsBeCob
 public import Formalism.LocalToGlobal.TorsionIntegrality.CMGoodModels.Statement
-public import Formalism.LocalToGlobal.TorsionIntegrality.WeierstrassTwoTorsion.FlowTwoTorsionWp
+public import Formalism.LocalToGlobal.TorsionIntegrality.WeierstrassTwoTorsion.Bundle0004
 public import Formalism.LocalToGlobal.TorsionIntegrality.WeierstrassTwoTorsion.ChordEquation
 public import Formalism.LocalToGlobal.TorsionIntegrality.FrobeniusFibreCurves.FinalC
 public import Formalism.LocalToGlobal.TorsionIntegrality.GaussSumParity.KurComplete

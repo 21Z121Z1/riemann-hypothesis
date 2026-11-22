@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Formalism.SharpRestriction.LevelLetterCocycles.LatticeBoundsOfThreeParts
-public import Formalism.SharpRestriction.LevelLetterCocycles.EqZeroOfPowDvd
+public import Formalism.SharpRestriction.LevelLetterCocycles.Bundle0001
 
 @[expose] public section
 

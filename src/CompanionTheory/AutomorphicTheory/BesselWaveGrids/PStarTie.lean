@@ -1,6 +1,6 @@
 module
 
-public import Formalism.HermitianCurvature.LetterProductDoubleDegreeCount
+public import Formalism.HermitianCurvature.Bundle0005
 public import Formalism.FormalDegreeBessel.StatementDS
 public import CompanionTheory.AutomorphicTheory.BesselWaveGrids.NqMovedExample
 

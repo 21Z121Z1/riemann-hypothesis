@@ -2,11 +2,11 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.ArchimedeanThetaValues.ModelsAt
-public import Development.AbelianVarietyTheory.Definitions.ArchimedeanThetaValues.PrimAn
+public import Development.AbelianVarietyTheory.Definitions.ArchimedeanThetaValues.Bundle0001
 public import Development.AbelianVarietyTheory.Definitions.ArchimedeanThetaValues.NonemptyOfFrameValues
 public import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.ExistsRingHomLift
-public import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.IsTauCanonicalTrivialisationIffNormalisedArcStatement
-public import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.HolomorphicArcAgreesAnalyticDictionaryStatement
+public import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.Bundle0051
+public import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.Bundle0060
 
 @[expose] public section
 

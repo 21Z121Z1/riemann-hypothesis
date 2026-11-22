@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import GroundTheory.LocalFields.LocalZetaIntegral
+public import GroundTheory.LocalFields.Bundle0015
 
 @[expose] public section
 

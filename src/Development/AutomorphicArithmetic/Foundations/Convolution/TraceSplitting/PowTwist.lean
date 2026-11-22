@@ -5,8 +5,8 @@ public import Development.AutomorphicArithmetic.Foundations.Convolution.TraceSpl
 public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.SubsingletonRankZero
 public import Development.WeilBound.RepresentationTheoryGL.JacquetShalikaBounds.AbsoluteRigidity.AbsRigClosed
 public import CompanionTheory.AutomorphicTheory.UnitriangularMeasure.AdeleCoordinateMeasure.EllipticTorusNorm
-public import GroundTheory.GlobalFields.NormResidueSymbol.FunctorialFinite
-public import Development.AutomorphicArithmetic.Foundations.Convolution.ConvolutionKernels.AdUnique
+public import GroundTheory.GlobalFields.NormResidueSymbol.Bundle0002
+public import Development.AutomorphicArithmetic.Foundations.Convolution.ConvolutionKernels.Bundle0003
 public import Formalism.LocalToGlobal.UnitaryNorms.CharTransport
 
 @[expose] public section

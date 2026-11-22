@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsZeroCocycleSection
+public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0087
 
 @[expose] public section
 

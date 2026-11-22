@@ -1,7 +1,7 @@
 module
 
 public import Development.WeilBound.CoreStatements.TemperedRepresentationTheory.EisensteinGrowthForms.LocFinType
-public import Development.WeilBound.ThetaLifts.LatticeBasics.HypothesesE
+public import Development.WeilBound.ThetaLifts.LatticeBasics.Bundle0007
 
 @[expose] public section
 

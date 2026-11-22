@@ -1,10 +1,10 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.FlatSpaceComponents
+public import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.Bundle0009
 public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.LatSelfDualOfUnimod
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsIntegralChangeBaseFrameOrthonormal
-public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.HalfPrincipalAndSplit
+public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0121
 public import Formalism.SharpRestriction.GenusPolyhedralBounds.RelativeIndexClassSets.LevGapSplit
 public import Formalism.LocalToGlobal.Divisibility.DefGroupLemmas
 

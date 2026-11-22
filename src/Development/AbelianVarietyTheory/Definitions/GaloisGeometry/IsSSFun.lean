@@ -2,8 +2,8 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.IsDPMorphismBot
-public import Development.AbelianVarietyTheory.Definitions.Divisors.CrystallineConnectionFormCoboundaryZero
-public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.IsStrictlySemistableAlt
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0005
+public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.Bundle0002
 
 @[expose] public section
 

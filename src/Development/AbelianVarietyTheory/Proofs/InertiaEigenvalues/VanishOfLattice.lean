@@ -3,11 +3,13 @@ module
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.ResBound
 public import Formalism.LocalRingCardinality.AdicCompletionLocal.LocTied
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.HomToCharacterLineEqZeroStatement
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0214
+public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0007
+public import Development.AbelianVarietyTheory.BlockTheory.NonGaloisCusps.Bundle0001
 public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ContinuousFixingSubgroupEquiv
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsOpenOfFgOfSpanEqTop
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FiniteQuotientPow
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IntegersCompleteDVR
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0238
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0236
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0204
 
 @[expose] public section
 
@@ -244,7 +246,7 @@ theorem vanish_of_real : Formalism.GaloisCohomology.LocalTateDualityK → ∀ {l
   obtain ⟨k, _, _, _, _, hres⟩ := exists_residue hlam l hl (hf 1)
   obtain ⟨R, -, -, F, M, hω, ⟨q, hq, hk, hqρ⟩, -⟩ := hS k hres
   refine vanish_of_lattice hT S.K hO S.Γ hlam.ne_zero hχ.1 M.T q hq hk hqρ M.ω (fun g => ?_)
-    fun e he he' => GlobalTheory.T.hom_to_characterLine_eq_zero F M h1 h2 h3 e he (he'.trans_le (by exact_mod_cast S.D.one_le_letterBlockLength))
+    fun e he he' => _root_.GlobalTheory.Models.ModTh.hom_chr_eq_zero F M h1 h2 h3 e he (he'.trans_le (by exact_mod_cast S.D.one_le_letterBlockLength))
   have hc : GlobalTheory.Cyc.IsCyc P.χQ := P.χQ_cyc
   let u : ℤ_[l] := (cyclotomicCharacter (PadicAlgCl l) l
       (MulSemiringAction.toRingAut (Formalism.GaloisCohomology.GK l S.K.1) (PadicAlgCl l) (S.K.1.fixingSubgroupEquiv g)) : ℤ_[l]ˣ)

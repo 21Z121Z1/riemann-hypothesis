@@ -3,7 +3,7 @@ module
 public import Mathlib
 public import GroundTheory.GlobalFields.NormResidueSymbol.Functorial
 public import GroundTheory.GlobalFields.NormResidueSymbol.Rational
-public import GroundTheory.GlobalFields.NormResidueSymbol.Surjective
+public import GroundTheory.GlobalFields.NormResidueSymbol.Bundle0001
 
 @[expose] public section
 

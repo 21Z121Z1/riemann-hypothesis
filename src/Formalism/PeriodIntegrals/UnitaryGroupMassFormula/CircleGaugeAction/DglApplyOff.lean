@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Formalism.PeriodIntegrals.ExistsGaugeMeasureForEachRank
+public import Formalism.PeriodIntegrals.Bundle0002
 
 @[expose] public section
 

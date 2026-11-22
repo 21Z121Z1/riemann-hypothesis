@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import ReciprocityTheory.AnalyticForms.RegularLocalRings.Monomial
-public import ReciprocityTheory.AnalyticForms.RegularLocalRings.FinalTheorems
+public import ReciprocityTheory.AnalyticForms.RegularLocalRings.Bundle0003
+public import ReciprocityTheory.AnalyticForms.RegularLocalRings.Bundle0001
 
 @[expose] public section
 

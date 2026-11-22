@@ -1,22 +1,22 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.BlockAnti
-public import Formalism.PeriodIntegrals.QuotInv
+public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.Bundle0009
+public import Formalism.PeriodIntegrals.Bundle0006
 public import Formalism.HermitianCurvature.WeylElementCommutesLevelOne
 public import Formalism.LocalRingCardinality.DataCD
-public import Formalism.FormalDegreeBessel.FinalBF
-public import Formalism.FormalDegreeBessel.FinalG
+public import Formalism.FormalDegreeBessel.Bundle0002
 public import Formalism.HermitianCurvature.HermitianCurvatureProofs.ConjugationInvarianceEverySetting
 public import Formalism.HermitianCurvature.HermitianCurvatureProofs.LongWeylElement
 public import Formalism.HermitianCurvature.HermitianCurvatureProofs.TwoByOneBlock
 public import Formalism.HermitianCurvature.HermitianCurvatureProofs.RankOneEmbeddings
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.BigCellHermitian
-public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.IsHaarOnIffGroupsUnitaryUnipotent
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.HaarLieIsHaarOnUnipotentRadicalStatement
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsUniqueHaarDensityAtIdentityStatement
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.LintegralBigCellHaarDensityConstantStatement
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.RankOneUnitaryIntegrationFormulaExactConstantStatement
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0037
+public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0049
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0250
+public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.Bundle0006
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsUniqueHaarDensityAtIdentity
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.LintegralBigCellHaarDensityConstant
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.RankOneUnitaryIntegrationFormulaExactConstant
 
 @[expose] public section
 
@@ -146,8 +146,8 @@ theorem isDis_bigCell : ∀ (k r : ℕ) (z z' : (Fin (2 * r + k + 1) → ℂ)) (
   intro k r z z' μsec μG μW μW' c κ hk hz hz' hT hT' hsec hc hκ hG hd hW hW1 hW' hW1'
   have hWb : B.IsHaarOn (UWset k r z) μW := ((GlobalTheory.HaarNotions.isHaarOn_iff_groups k r μW).2.2 z hz hT hk).1 hW
   have hWb' : B.IsHaarOn (UWset k r z') μW' := ((GlobalTheory.HaarNotions.isHaarOn_iff_groups k r μW').2.2 z' hz' hT' hk).1 hW'
-  have hN := GlobalTheory.T.haarLie_isHaarOn_unipotentRadical k r (ENNReal.ofReal κ) (ENNReal.ofReal_pos.2 hκ) ENNReal.ofReal_lt_top
-  have hN1 := GlobalTheory.T.haarLie_isHaarOn_unipotentRadical k r 1 one_pos ENNReal.one_lt_top
+  have hN := _root_.GlobalTheory.haarLie_isHaarOn_Nset k r (ENNReal.ofReal κ) (ENNReal.ofReal_pos.2 hκ) ENNReal.ofReal_lt_top
+  have hN1 := _root_.GlobalTheory.haarLie_isHaarOn_Nset k r 1 one_pos ENNReal.one_lt_top
   have hsm : haarLie (Nset k r) (ENNReal.ofReal κ) = ENNReal.ofReal κ • haarLie (Nset k r) 1 := by
     unfold haarLie; rw [one_smul]
   set μN := haarLie (Nset k r) (ENNReal.ofReal κ) with hμN
@@ -160,12 +160,12 @@ theorem isDis_bigCell : ∀ (k r : ℕ) (z z' : (Fin (2 * r + k + 1) → ℂ)) (
   have := hN.1
   have := hN1.1
   have hb : IsHaarOn (B2.UWb k r) μb := ⟨inferInstance, hbb.ne_zero, hbb.conc, hbb.left⟩
-  obtain ⟨cb, hcb, hdb, -⟩ := GlobalTheory.T.exists_unique_haarDensity_at_identity _ (B2.UWb k r) μb
+  obtain ⟨cb, hcb, hdb, -⟩ := _root_.GlobalTheory.MatHaarDensity.exists_hasDens _ (B2.UWb k r) μb
     ⟨hcl.closed, hcl.one_mem, hcl.mul_mem, fun a ha => ⟨hcl.inv_mem a ha, Matrix.mul_nonsing_inv a (hcl.unit a ha)⟩⟩ hb
   have hsec' := R1.secF_section hsec
   have hsmm := R1.secF_meas hsec
-  have h1 := GlobalTheory.T.lintegral_bigCell_haar_density_constant k r μG μb c cb hc hcb hG hd hb hdb
-  have h2 := GlobalTheory.T.rank_one_unitary_integration_formula_exact_constant k r z z' (R1.secF k r z z' μsec) μb μW μW' cb hk hz hz' hT hT' hsec' hcb hb hdb hW hW1 hW' hW1'
+  have h1 := _root_.GlobalTheory.CellDens.bigCell_integral k r μG μb c cb hc hcb hG hd hb hdb
+  have h2 := _root_.GlobalTheory.RankOneExact.rankOne_exact k r z z' (R1.secF k r z z' μsec) μb μW μW' cb hk hz hz' hT hT' hsec' hcb hb hdb hW hW1 hW' hW1'
   have hconj := b2_conjInvRaw_proof k r z μN hz hT hNb
   have hconj' := b2_conjInvRaw_proof k r z' μN hz' hT' hNb
   have UF := unipotent_weyl_properties

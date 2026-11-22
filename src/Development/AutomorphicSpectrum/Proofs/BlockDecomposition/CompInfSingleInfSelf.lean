@@ -2,9 +2,9 @@ module
 
 public import Mathlib
 public import Development.WeilBound.RepresentationTheoryGL.RegularisedSiegelWeil.SingularNullSets.WeakApproximationFinitePlace
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IsFieldIdemOne
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0013
 public import Development.AbelianVarietyTheory.Definitions.Foundations.EqPlaceIdemOfIsPrimeIdem
-public import Development.AbelianVarietyTheory.Proofs.HeightProofs.EqOrConjOfPlaceOf
+public import Development.AbelianVarietyTheory.Proofs.HeightProofs.Bundle0028
 
 @[expose] public section
 

@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Development.WeilBound.CoreStatements.AutomorphicKernels.AbelianDeRham.AbelianHodgeDeRham.H1DimGeAbelianDim
-public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.StalkOfSmoothLocal
+public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.Bundle0099
 
 @[expose] public section
 

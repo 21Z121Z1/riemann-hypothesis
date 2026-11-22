@@ -2,8 +2,8 @@ module
 
 public import Formalism.SharpRestriction.CuspSpanNormBounds.BesselShellMomentBounds
 public import Formalism.SharpRestriction.CuspSpanNormBounds.BridgeCSchur
-public import Formalism.SharpRestriction.CuspSpanNormBounds.PlaceDegreeData
-public import Formalism.FormalDegreeBessel.FinalBF
+public import Formalism.SharpRestriction.CuspSpanNormBounds.Bundle0006
+public import Formalism.FormalDegreeBessel.Bundle0002
 public import Formalism.FormalDegreeBessel.FinalDS
 public import Formalism.RealPlaceAnalysis.RealPlaceTaylor.CompactHaarRightInvariantInst
 public import Formalism.RealPlaceAnalysis.FinalF

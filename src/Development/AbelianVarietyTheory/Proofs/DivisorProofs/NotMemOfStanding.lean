@@ -1,17 +1,18 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsMixModelB
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1733
 public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.MemSBOfIsNatDatum
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsMixedChartThroughWCoordinateStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SquareStandingTripleThetaFirstStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SplitPlaceHalvesEqLinearModelLagrangiansStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MixedModelVacuumEqIntegralMatrixIndicatorStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MixedModelVacuumEqSmulIntegralMatrixIndicatorStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GridFrameLocalCompactMembershipStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BigZetaIntegralEqSmulSmallZetaIntegralOfIntegralStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ZetaIntegralStandardPairFirstEqSecondStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.StandardPairMemSchwartzBruhatOfConductorExponentStatement
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2817
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2799
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2845
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2830
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2922
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2825
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2821
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BigZetaIntegralEqSmulSmallZetaIntegralOfIntegral
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ZetaIntegralStandardPairFirstEqSecond
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2831
 
 @[expose] public section
 
@@ -127,7 +128,7 @@ theorem local_charts (hL : L.Is μ₀) (W : G.Weil) (B : Frames G) (t : T) (i j 
   let v' : Bs.P := ⟨v, hT.chars.sub hvT⟩
   have hτ : splitPrime (Bs.τ v') = w := hti.1.2.2.2 v' w hw rfl
   obtain ⟨ιA, ιB, hA, hB, -, -, hz⟩ := hm.fin.zeta v' hvT
-  obtain ⟨jj, j1, j2, j3, j4⟩ := GlobalTheory.T.exists_placeIso_reading_components_characters hL W t i j X h.α h.β (Bs.τ v') w hτ
+  obtain ⟨jj, j1, j2, j3, j4⟩ := _root_.GlobalTheory.FlipMatch.exists_placeIso_chars hL W t i j X h.α h.β (Bs.τ v') w hτ
   let C0 : GL (Fin ((spW G i j).rank + (spW₁ G i j).rank)) (Kw w) :=
     ⟨basCols B e w, GlobalTheory.IndefiniteRowSideFullHecke.UnitaryConjugation.blk e (loc w (B.β i (j + 1)))⁻¹.val (-(loc w (B.β (i + 1) j))⁻¹.val),
       by rw [basCols, GlobalTheory.IndefiniteRowSideFullHecke.UnitaryConjugation.blk_mul, neg_mul_neg, Units.mul_inv, Units.mul_inv, GlobalTheory.IndefiniteRowSideFullHecke.UnitaryConjugation.blk_one],
@@ -135,7 +136,7 @@ theorem local_charts (hL : L.Is μ₀) (W : G.Weil) (B : Frames G) (t : T) (i j 
   let cj := GeneralLinearGroup.map (jj : Fv D.host.F v →+* Kw w) (Γ.W.bas v)
   have hcc : (Γ.W.bas v).val.map jj * (cj⁻¹ * C0).val = basCols B e w := congrArg Units.val (mul_inv_cancel_left cj C0)
   generalize cj⁻¹ * C0 = cc at hcc
-  obtain ⟨g, hg, cA', lA⟩ := GlobalTheory.T.exists_mixed_chart_through_W_coordinate hL W B t i j M hst e Bs Γ X om om' h hT hti.1 v' w hτ jj j1 j2 cc hcc
+  obtain ⟨g, hg, cA', lA⟩ := _root_.GlobalTheory.TopFlip.ChartA.exists_mixChart_lin hL W B t i j M hst e Bs Γ X om om' h hT hti.1 v' w hτ jj j1 j2 cc hcc
   obtain ⟨g', cB, lB⟩ := GlobalTheory.T.square_standing_triple_theta_first hL W B t i j M hst e Bs Γ X om om' h hT hti v' w hτ jj j1 j2 cc hcc
   have hb := notMem_of_standing hst hw
   have hS := (Good.isGood_of_notMem hL W hw hb).square i i.2 j j.2
@@ -159,17 +160,17 @@ theorem local_charts (hL : L.Is μ₀) (W : G.Weil) (B : Frames G) (t : T) (i j 
       rw [GlobalTheory.T.tensorSymplecticForm_at_split_finite_place hT.base.cm Γ.V' Γ.W hT.geo.hV'.herm hT.geo.hW.skew W.ψ (Bs.τ v') (Γ.V'.bas v) (Γ.W.bas v) x u hx hu, neg_sub]
   haveI := isHaarMeasure_haarVol (k := Kw w) (n := Fin (spW₁ G i j).rank) isOpen_KO le_rfl
   haveI := isHaarMeasure_haarVol (k := Fv D.host.F v) (n := Fin (spW₁ G i j).rank) isOpen_KO le_rfl
-  obtain ⟨l₂, hl₂, z₂⟩ := GlobalTheory.T.zetaIdentity_persists_row_column_changes (Kw w) _ _ (rankW G t i j w) _ _ _ _ (finCongr (rankW₁ G t i j w)) (colsEq t e w) finSumFinEquiv
+  obtain ⟨l₂, hl₂, z₂⟩ := _root_.GlobalTheory.FlipMatch.ZMat.bigZeta_eq_smallZeta_change (Kw w) _ _ (rankW G t i j w) _ _ _ _ (finCongr (rankW₁ G t i j w)) (colsEq t e w) finSumFinEquiv
     (stdSplit ((locGrid G t w).rank_square i j)) (haarVol (KO (Kw w) _)) (haarVol (KO (Kw w) _))
     (unifAt w) ((locGrid G t w).nu i j) 1 g g' cc hg
-  obtain ⟨l₁, hl₁, z₁⟩ := GlobalTheory.T.zetaIdentity_transport_localFieldIso (Fv D.host.F v) (Kw w) jj j2 (spW G i j).rank (Fin (spW₁ G i j).rank) _ finSumFinEquiv
+  obtain ⟨l₁, hl₁, z₁⟩ := _root_.GlobalTheory.FlipMatch.FieldTransport.zeta_identity_transport (Fv D.host.F v) (Kw w) jj j2 (spW G i j).rank (Fin (spW₁ G i j).rank) _ finSumFinEquiv
     (haarVol (KO _ _)) (haarVol (KO _ _)) (GlobalTheory.IndefiniteRowSideFullHecke.WeilTensorModels.unifAt v) (unifAt w) (exists_isUnif (k := Fv D.host.F v)).choose_spec
     hS.unif (chrW X.ν (Bs.τ v')) (chrW X.β (Bs.τ v')) _ 1 j3
   obtain ⟨ΘA, hΘA⟩ := exists_homeo jj (finCongr (rankW G t i j w)) (colsEq t e w) g (invT cc) j2.1 j2.2.1
   obtain ⟨ΘB, hΘB⟩ := exists_homeo jj (finCongr (rankW₁ G t i j w)) (colsEq t e w) g' cc j2.1 j2.2.1
-  have hfA := GlobalTheory.T.splitPlace_halves_eq_linear_model_lagrangians (Bs.τ v') w hτ (e.symm.trans finSumFinEquiv).symm _
+  have hfA := _root_.GlobalTheory.SplitHalves.halves (Bs.τ v') w hτ (e.symm.trans finSumFinEquiv).symm _
     (GlobalTheory.RouteCoords.gram_det_ne (GlobalTheory.Grid.sgn true (spW G i j)))
-  have hfB := GlobalTheory.T.splitPlace_halves_eq_linear_model_lagrangians (Bs.τ v') w hτ (e.symm.trans finSumFinEquiv).symm _ (GlobalTheory.RouteCoords.gram_det_ne (spW₁ G i j))
+  have hfB := _root_.GlobalTheory.SplitHalves.halves (Bs.τ v') w hτ (e.symm.trans finSumFinEquiv).symm _ (GlobalTheory.RouteCoords.gram_det_ne (spW₁ G i j))
   have eA : ∀ φ Z, (LinearMap.funLeft ℂ ℂ ΘA.symm ∘ₗ ιA) φ (ΘA Z) = ιA φ Z := fun φ Z => congrArg (ιA φ) (ΘA.symm_apply_apply Z)
   have eB : ∀ φ Z, (LinearMap.funLeft ℂ ℂ ΘB.symm ∘ₗ ιB) φ (ΘB Z) = ιB φ Z := fun φ Z => congrArg (ιB φ) (ΘB.symm_apply_apply Z)
   refine ⟨LinearMap.funLeft ℂ ℂ ΘA.symm ∘ₗ ιA, ι, LinearMap.funLeft ℂ ℂ ΘB.symm ∘ₗ ιB, ι', l₁ * l₂, mul_ne_zero hl₁ hl₂,
@@ -209,11 +210,11 @@ theorem zeta_flip (hL : L.Is μ₀) (W : G.Weil) {t : T} (i j : Fin D.R.m) (hst 
   have key := smallP_haarVol h2.1 h2.2 (stdSplit ((locGrid G t w).rank_square i j)) ((locGrid G t w).nu i j)
     ((locGrid G t w).nu i j * 1)
   refine ⟨(key 0).1, fun n Φ hn hΦ => ?_⟩
-  rw [flipAt, squareFlip, GlobalTheory.T.partialFourierSum_inverse_of_latticeDepth _ _ _ _ _ _ _ hS.unif hS.inv.cond _ (by
+  rw [flipAt, squareFlip, _root_.GlobalTheory.FlipMatch.FourierInv.fourierSum_invFourierSum _ _ _ _ _ _ _ hS.unif hS.inv.cond _ (by
     rw [← latA_blockLat, ← Grid.alpha_div_beta]
     exact GlobalTheory.FrameDepth.hasDepth_phiA _ _ _ _ _ (hμ := hμ) _ _ _ _ _ _ hS.unif (hS.one_le.trans hn) (LocTensor.condLE_mono hS.unif hn hS.condν)
       (GlobalTheory.SplitFlip.FourierDepth.hasDepth_fourierSum hS.unif hS.cond n _ hΦ))]
-  exact (GlobalTheory.T.primitiveFrameDatum_zetaIntegral_eq_smaller (Kw w) _ _ _ _ _ _ 1 _ n _ _ hS.unif).trans (key _).2
+  exact (_root_.GlobalTheory.OneSquareZeta.bigZeta_phiA_eq_smallZeta (Kw w) _ _ _ _ _ _ 1 _ n _ _ hS.unif).trans (key _).2
 
 theorem zeta_std (hL : L.Is μ₀) (W : G.Weil) (B : Frames G) {i j : Fin D.R.m} (X : TriG G i j) (hst : ∀ t, SquareStanding G t)
     (hA : IsFrame X.rA.β (G.Λ (.grid (i + 1) (j + 1)))) (hA' : IsFrame X.rA'.β (G.Λ (.grid i j))) (hX : IsFrame X.rW.β (latX G i j)) :
@@ -226,15 +227,15 @@ theorem zeta_std (hL : L.Is μ₀) (W : G.Weil) (B : Frames G) {i j : Fin D.R.m}
     swap
     · exact ⟨1, fun t ht => absurd ⟨t, ht⟩ hex⟩
     obtain ⟨t₀, ht₀⟩ := hex
-    obtain ⟨a1, a2, a3⟩ := GlobalTheory.T.grid_frame_local_compact_membership hL B t₀ i j X (hst t₀) hA hA' hX w ht₀
-    obtain ⟨x, hx, hz⟩ := GlobalTheory.T.bigZetaIntegral_eq_smul_smallZetaIntegral_of_integralChange (Kw w) _ _ _ _ (ordX G t₀ i j w) (stdSplit ((locGrid G t₀ w).rank_square i j)) finSumFinEquiv
+    obtain ⟨a1, a2, a3⟩ := _root_.GlobalTheory.TopFlip.ChKO.changes_mem_KO hL B t₀ i j X (hst t₀) hA hA' hX w ht₀
+    obtain ⟨x, hx, hz⟩ := _root_.GlobalTheory.TopFlip.ZMatQ.bigZeta_eq_smul_smallZeta_change (Kw w) _ _ _ _ (ordX G t₀ i j w) (stdSplit ((locGrid G t₀ w).rank_square i j)) finSumFinEquiv
       _ _ _ a1 a2 a3
     exact ⟨x, fun t _ => ⟨hx, hz (unifAt w) ((locGrid G t w).nu i j) 1 _ _
-      (GlobalTheory.T.zetaIntegral_standardPair_first_eq_second (Kw w) ((locGrid G t w).nu i j) 1 (unifAt w) (X.c t w) _ _ (isUnif_unifAt w))⟩⟩
+      (_root_.GlobalTheory.StdZetaAgree.bigZetaIntegral_stdA_eq_smallZetaIntegral_stdB (Kw w) ((locGrid G t w).nu i j) 1 (unifAt w) (X.c t w) _ _ (isUnif_unifAt w))⟩⟩
   choose x hx using H
   refine ⟨x, fun t w hw => ?_⟩
   have hS := (Good.isGood_of_notMem hL W hw (notMem_of_standing (hst t) hw)).square i i.2 j j.2
-  obtain ⟨s1, s2⟩ := GlobalTheory.T.standardPair_mem_schwartzBruhat_of_conductorExponentLE (Kw w) ((locGrid G t w).nu i j) (unifAt w) _ (X.c t w) ((locGrid G t w).rank (i + 1, j + 1)) ((locGrid G t w).rank (i, j))
+  obtain ⟨s1, s2⟩ := _root_.GlobalTheory.StdPairSBDepth.stdPair_mem_SB (Kw w) ((locGrid G t w).nu i j) (unifAt w) _ (X.c t w) ((locGrid G t w).rank (i + 1, j + 1)) ((locGrid G t w).rank (i, j))
     hS.unif (by rw [← Grid.alpha_div_beta]; exact hS.condν)
   obtain ⟨ΘA, hΘA⟩ := exists_homeo (RingEquiv.refl (Kw w)) (Equiv.refl _) (ordX G t i j w) (chA B t X w) (invT (chX B t X w))
     continuous_id continuous_id

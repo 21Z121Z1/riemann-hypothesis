@@ -2,26 +2,32 @@ module
 
 public import Mathlib
 public import Development.WeilBound.RepresentationTheoryGL.RegularisedSiegelWeil.ThetaIdempotents.HeckeEta
-public import Development.AbelianVarietyTheory.Definitions.Divisors.ScalesBy
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GodementSummableHeightRpowRepresentativesStatement
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ContinuousLeviBlock
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.MemDoublingSiegelParabolicIffChartMemSiegelUnnStatement
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.StandardUnitaryChartSiegelLeviDetEqStatement
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.DoubledSpaceMaximalLevelLatticeStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsCompactLevelHeightScalesIsotropicFrameStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WittFrameRankLeAndExistsRationalSwapStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MeasureHeightShellLeIsotropicFrameQuotientStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsotropicEisensteinSeriesRationalPointsPermuteTeStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MulLintegralRpowLeOfShellBoundStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SetLIntegralTsumUnfoldOfCosetRepresentativesStatement
-public import Development.AbelianVarietyTheory.PublishedTheorems.SiegelWeil₂.LeftInvOfIsSection
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.DoubledSpaceMaximalLevelLattice
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.IsSelfDualAtSumLattice
-public import Development.AbelianVarietyTheory.PublishedTheorems.SiegelWeil₂.SiegelSectionLeviMulEqAbsDetPow
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WittDecompositionIsotropicFrameEisensteinDictionStatement
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.StabilizerInductionLaw
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.DoubledBasisSkewColumnMatrixGramInverseStatement
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ExistsSiegelParabolicConjDoubledCompact
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0049
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1728
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0198
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0206
+public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.Bundle0017
+public import Development.AbelianVarietyTheory.PublishedTheorems.SiegelWeil₂.SiegelWeilUnitaryConvergent
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0226
+public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.Bundle0012
+public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.Bundle0016
+public import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0018
+public import Development.AbelianVarietyTheory.PublishedTheorems.SiegelWeil₂.Bundle0001
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0154
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1530
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1542
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1809
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1606
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1505
+public import Development.AbelianVarietyTheory.Definitions.Divisors.LocallyCompactSpaceAxis
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1532
+public import Development.AbelianVarietyTheory.PublishedTheorems.SiegelWeil₂.Bundle0003
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0163
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0141
+public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.Bundle0011
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0175
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0199
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0231
 
 @[expose] public section
 
@@ -84,9 +90,9 @@ theorem frame_bound : ∀ (F E : Type) [Field F] [NumberField F] [Field E] [Numb
     (a : GL (Fin n) (AF F ⊗[F] E)) (h : GAd σ J → ℝ), GlobalTheory.ResidueEisenstein.DataJ σ J X Y L a h → ∀ T, GlobalTheory.ResidueEisenstein.IsRepsJ σ J X T →
     ∃ B : ℝ, ∀ ε : ℝ, 0 < ε → ε ≤ 1 → ε * ∑' t : T, h t.1.1 ^ (((n : ℝ) - (r + 1)) + ε) ≤ B := by
   intro F E _ _ _ _ _ σ n J r X Y L a h hD T hT
-  obtain ⟨hK, hht, -⟩ := GlobalTheory.T.isCompact_level_height_scales_isotropicFrame F E σ n J r X Y L a h hD
-  obtain ⟨hperm, -, hinv, hrep⟩ := GlobalTheory.T.isotropicEisensteinSeries_rationalPoints_permute_terms F E σ n J r X Y L a h hD T hT
-  obtain ⟨hn, -⟩ := GlobalTheory.T.wittFrame_rank_le_and_exists_rational_swap F E σ n J r X Y hD.cm hD.herm hD.witt
+  obtain ⟨hK, hht, -⟩ := _root_.GlobalTheory.ResidueEisenstein.HtCont.isCompact_isHt_scales F E σ n J r X Y L a h hD
+  obtain ⟨hperm, -, hinv, hrep⟩ := _root_.GlobalTheory.ResidueEisenstein.reps_perm F E σ n J r X Y L a h hD T hT
+  obtain ⟨hn, -⟩ := _root_.GlobalTheory.ResidueEisenstein.Swap.two_mul_le_and_exists_ratPts_swap F E σ n J r X Y hD.cm hD.herm hD.witt
   set d : ℝ := (n : ℝ) - (r + 1) with hdd
   have hd : (0 : ℝ) < d := by
     have : (2 * ((r : ℝ) + 1)) ≤ n := by exact_mod_cast hn
@@ -98,7 +104,7 @@ theorem frame_bound : ∀ (F E : Type) [Field F] [NumberField F] [Field E] [Numb
   haveI : Countable (ratPts σ J) := inferInstance
   have h𝓕 := GlobalTheory.AutomorphicL2Unitary.isFundamentalDomain_stdDom (ratPts σ J) μ
   have hDom := GlobalTheory.AutomorphicL2Unitary.isFundamentalDomain_stdDom Λ μ
-  obtain ⟨B₀, hB₀, hsh⟩ := GlobalTheory.T.measure_heightShell_le_isotropicFrame_quotient F E σ n J r X Y L a h hD μ _ inferInstance hDom
+  obtain ⟨B₀, hB₀, hsh⟩ := _root_.GlobalTheory.ResidueEisenstein.measure_shell_le F E σ n J r X Y L a h hD μ _ inferInstance hDom
   have hm : Measurable h := hht.cont.measurable
 
   obtain ⟨U, hUc, hU1, hUd⟩ := exists_compact_nhds_separated (ratPts σ J)
@@ -151,7 +157,7 @@ theorem frame_bound : ∀ (F E : Type) [Field F] [NumberField F] [Field E] [Numb
       (fun γ hγ g => by simp only [f, hinv γ hγ g])
     simp only [Φ]
     rw [hu]
-    exact GlobalTheory.T.mul_lintegral_rpow_le_of_shell_bound' _ _ h _ B₀ hm hht.pos hd hsh ε h0 h1
+    exact _root_.GlobalTheory.ResLine.mul_lintegral_rpow_le_of_shell_bound _ _ h _ B₀ hm hht.pos hd hsh ε h0 h1
   have hUm : MeasurableSet U := hUc.measurableSet
   have hμU : 0 < μ U := lt_of_lt_of_le
     ((isOpen_interior.measure_pos μ ⟨1, mem_interior_iff_mem_nhds.2 hU1⟩)) (measure_mono interior_subset)
@@ -203,7 +209,7 @@ theorem frame_bound : ∀ (F E : Type) [Field F] [NumberField F] [Field E] [Numb
   set B₁ : ℝ≥0∞ := 2 * B₀ / (μ U * ENNReal.ofReal c₀) with hB₁d
   have hB₁t : B₁ ≠ ⊤ := ENNReal.div_ne_top (ENNReal.mul_ne_top (by simp) hB₀) hw0
   have hS : ∀ e : ℝ, d < e → Summable fun t : T => h t.1.1 ^ e := fun e he => by
-    simpa using GlobalTheory.T.godement_summable_height_rpow_representatives F E σ n J r X Y L a h hD T hT 1 e he
+    simpa using _root_.GlobalTheory.ResidueEisenstein.summable_height_rpow_reps F E σ n J r X Y L a h hD T hT 1 e he
   set S₁ : ℝ := ∑' t : T, h t.1.1 ^ (d + 1) with hS₁
   have hS₁0 : 0 ≤ S₁ := tsum_nonneg fun t => Real.rpow_nonneg (hht.pos _).le _
   refine ⟨B₁.toReal + M * S₁, fun ε h0 h1 => ?_⟩
@@ -251,7 +257,7 @@ theorem frame_bound : ∀ (F E : Type) [Field F] [NumberField F] [Field E] [Numb
 theorem continuous_chart_symm (D : D7) (A : HSp D) (μ : D.host.E) (hμ : IsSkew μ) (κ : GA D (dblSp A) ≃* G D A.rank)
     (hκ : IsChart A μ κ) : Continuous κ.symm := by
   haveI := isTopologicalRing_tens (F := D.host.F) (E := D.host.E) (R := AF D.host.F)
-  obtain ⟨-, hdet, -⟩ := GlobalTheory.T.doubledBasisSkewColumnMatrix_gram_inverse D A μ hμ
+  obtain ⟨-, hdet, -⟩ := _root_.GlobalTheory.StdUnn.Tm_gram_inv D A μ hμ
   have hTi' : rat (Tm A μ) * rat (Tm A μ)⁻¹ = 1 := by
     rw [← rat_mul, Matrix.mul_nonsing_inv _ hdet, rat_one]
   have e : ∀ g : G D A.rank, mt (dblSp A) (κ.symm g) = rat (Tm A μ) * (mat g * rat (Tm A μ)⁻¹) := by
@@ -280,13 +286,13 @@ theorem height_bound : ∀ (D : D7) (r : ℕ), ∃ H' : G D (r + 1) → ℝ≥0,
   let d : HypDec (dblSp A) (GlobalTheory.Core.Rk.SWLaw.zeroSp D) (r + 1) := GlobalTheory.Core.Rk.SWLaw.dblDec A
   obtain ⟨l, hl⟩ := GlobalTheory.RegSch.Inhab.exists_good (dblSp A)
   have hIw := GlobalTheory.Published.SiegelSectionIwasawa.hasIw_of_good d l hl
-  obtain ⟨hD, -, -⟩ := GlobalTheory.T.wittDecomposition_isotropicFrameEisenstein_dictionary D (dblSp A) (GlobalTheory.Core.Rk.SWLaw.zeroSp D) r d (GlobalTheory.EisCont.isAniso_zeroSp D) l hl hIw
-  have hstabS : siegel A = GlobalTheory.RegSW.stab d := (GlobalTheory.T.doubled_space_maximal_level_lattice D A).1
+  obtain ⟨hD, -, -⟩ := _root_.GlobalTheory.ResidueDictionary.dict D (dblSp A) (GlobalTheory.Core.Rk.SWLaw.zeroSp D) r d (GlobalTheory.EisCont.isAniso_zeroSp D) l hl hIw
+  have hstabS : siegel A = GlobalTheory.RegSW.stab d := (_root_.GlobalTheory.EisCont.siegel_eq_stab_dblDec D A).1
   have hsc : ∀ q : GlobalTheory.RegSW.stab d, GlobalTheory.ResidueEisenstein.ScalesBy D.sp.cm.sig (dblSp A).gram d.e (q : GA D (dblSp A)) (GlobalTheory.RegSW.onX d q) :=
     fun q => GlobalTheory.RegSW.mul_jX d q
   have hstab := (GlobalTheory.EisCont.parFlag_stab_leftInv D (dblSp A) _ (r + 1) d).2.2.1
   have hPs : ∀ x : GA D (dblSp A), x ∈ GlobalTheory.RegSW.stab d ↔ κ x ∈ P D (r + 1) := fun x => by
-    rw [← hstabS]; exact GlobalTheory.T.mem_doublingSiegelParabolic_iff_chart_mem_siegelUnn D A μ hμ κ hκ x
+    rw [← hstabS]; exact _root_.GlobalTheory.StdUnn.mem_siegel_iff_chart_mem_P D A μ hμ κ hκ x
   have hiff : ∀ x : GA D (dblSp A), (∃ β, GlobalTheory.ResidueEisenstein.ScalesBy D.sp.cm.sig (dblSp A).gram d.e x β) ↔ κ x ∈ P D (r + 1) := fun x =>
     ⟨fun ⟨β, e⟩ => (hPs x).1 (hstab x β e).1, fun hx => ⟨_, hsc ⟨x, (hPs x).2 hx⟩⟩⟩
   have hG : ∀ g, g ∈ GQ (dblSp A) ↔ κ g ∈ GF D (r + 1) := chart_mem_GF_iff D A μ hμ κ hκ
@@ -324,7 +330,7 @@ theorem height_bound : ∀ (D : D7) (r : ℕ), ∃ H' : G D (r + 1) → ℝ≥0,
       have e2 : q = q₀ := (Quotient.out_eq q).symm.trans e
       rw [e2]
   obtain ⟨B, hB⟩ := frame_bound _ _ _ _ _ _ _ _ _ _ _ hD T hT
-  obtain ⟨-, hht, hlaw⟩ := GlobalTheory.T.isCompact_level_height_scales_isotropicFrame _ _ _ _ _ _ _ _ _ _ _ hD
+  obtain ⟨-, hht, hlaw⟩ := _root_.GlobalTheory.ResidueEisenstein.HtCont.isCompact_isHt_scales _ _ _ _ _ _ _ _ _ _ _ hD
   have hNc : Continuous fun g : GA D (dblSp A) => GlobalTheory.Doubling.iwAbs (GlobalTheory.RegSW.absDet d) l.K g := by
     have := continuous_real_toNNReal.comp hht.cont
     refine this.congr fun g => ?_
@@ -332,12 +338,12 @@ theorem height_bound : ∀ (D : D7) (r : ℕ), ∃ H' : G D (r + 1) → ℝ≥0,
   let H' : G D (r + 1) → ℝ≥0 := fun g => GlobalTheory.Doubling.iwAbs (GlobalTheory.RegSW.absDet d) l.K (κ.symm g)
   refine ⟨H', ⟨hNc.comp (continuous_chart_symm D A μ hμ κ hκ), fun g => ?_, fun q hq a ha g => ?_⟩, B, fun ε h0 h1 => ?_⟩
   · exact NNReal.coe_pos.1 (hht.pos _)
-  · have hq1 : κ.symm q ∈ siegel A := (GlobalTheory.T.mem_doublingSiegelParabolic_iff_chart_mem_siegelUnn D A μ hμ κ hκ _).2 (show κ (κ.symm q) ∈ P D (r + 1) by rw [κ.apply_symm_apply]; exact hq)
+  · have hq1 : κ.symm q ∈ siegel A := (_root_.GlobalTheory.StdUnn.mem_siegel_iff_chart_mem_P D A μ hμ κ hκ _).2 (show κ (κ.symm q) ∈ P D (r + 1) by rw [κ.apply_symm_apply]; exact hq)
     have hq2 : κ.symm q ∈ GlobalTheory.RegSW.stab d := hstabS ▸ hq1
     have h1 := hlaw _ _ (hsc ⟨_, hq2⟩) (κ.symm g)
-    have h2 := (GlobalTheory.T.doubled_space_maximal_level_lattice D A).2.1 _ hq1 hq2
+    have h2 := (_root_.GlobalTheory.EisCont.siegel_eq_stab_dblDec D A).2.1 _ hq1 hq2
     have hk : blkA (mat (κ (κ.symm q))) = a.1 := by rw [κ.apply_symm_apply]; exact ha
-    have h3 := GlobalTheory.T.standardUnitaryChart_siegelLeviDet_eq D A μ hμ κ hκ ⟨_, hq1⟩ a hk
+    have h3 := _root_.GlobalTheory.StdUnn.chart_aP_eq_det D A μ hμ κ hκ ⟨_, hq1⟩ a hk
     apply NNReal.coe_injective
     show ((GlobalTheory.Doubling.iwAbs (GlobalTheory.RegSW.absDet d) l.K (κ.symm (q * g)) : ℝ≥0) : ℝ) = _
     rw [map_mul, h1]
@@ -348,7 +354,7 @@ theorem height_bound : ∀ (D : D7) (r : ℕ), ∃ H' : G D (r + 1) → ℝ≥0,
   · have hn : ((dblSp A).rank : ℝ) - ((r : ℝ) + 1) + ε = ((r + 1 : ℕ) : ℝ) + ε := by
       have : ((dblSp A).rank : ℝ) = ((r + 1 + (r + 1) : ℕ) : ℝ) := rfl
       rw [this]; push_cast; ring
-    have hs := GlobalTheory.T.godement_summable_height_rpow_representatives _ _ _ _ _ _ _ _ _ _ _ hD T hT 1 (((dblSp A).rank : ℝ) - ((r : ℝ) + 1) + ε) (by linarith)
+    have hs := _root_.GlobalTheory.ResidueEisenstein.summable_height_rpow_reps _ _ _ _ _ _ _ _ _ _ _ hD T hT 1 (((dblSp A).rank : ℝ) - ((r : ℝ) + 1) + ε) (by linarith)
     have hb := hB ε h0 h1
     rw [hn] at hs hb
     let e : GlobalTheory.Eis.Cosets (P D (r + 1)) (GF D (r + 1)) ≃ T := Equiv.ofInjective t ht_inj

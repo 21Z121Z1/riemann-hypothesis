@@ -1,12 +1,12 @@
 module
 
-public import Formalism.SharpRestriction.GlobalSchurBounds.ShortIntervalPrimes
-public import Formalism.GL3MeanSquares.HookFormulaTorsion.SmoothedRemainderRealIntegralFormula
+public import Formalism.SharpRestriction.GlobalSchurBounds.Bundle0001
+public import Formalism.GL3MeanSquares.HookFormulaTorsion.Bundle0001
 public import Mathlib
-public import Formalism.GL3MeanSquares.SmoothedRemainderRealIntegralFormula
+public import Formalism.GL3MeanSquares.Bundle0001
 public import Formalism.GL3MeanSquares.HookFormulaTorsion.PrimesInProgressionCountLowerBound
 public import Formalism.GL3MeanSquares.HookFormulaTorsion.PsiZeroIntegral
-public import Formalism.GL3MeanSquares.PrimeCountAsymptoticInProgressions
+public import Formalism.GL3MeanSquares.Bundle0002
 public import Formalism.GL3MeanSquares.HookFormulaTorsion.CharacterEstimateOfHypothesis
 public import Formalism.SizeWindowBrackets.ChainSlopeWindows.LipschitzWeightAndMinimum
 public import Formalism.SizeWindowBrackets.Chain2aCoreNoAnalytic
@@ -15,7 +15,7 @@ public import Formalism.ZeroFreeRegion.Statement
 public import Formalism.LandauZeroFreeBounds.LogDerivRegionChiOf
 public import Formalism.SizeWindowBrackets.ChainSlopeWindows.GaloisMapComplexConjugation
 public import Formalism.LandauZeroFreeBounds.SiegelWalfiszAPOfSiegelLower
-public import Formalism.ZetaNonvanishing.GzLipschitz
+public import Formalism.ZetaNonvanishing.Bundle0002
 public import Formalism.SharpRestriction.GlobalSchurBounds.GlobalRankLatticeProofs.EqOfLeOfAbsNormEq
 public import Formalism.SharpRestriction.RamificationFrobenius.TotientGaloisClasses.FrameFacts
 

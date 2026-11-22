@@ -1,10 +1,10 @@
 module
 
 public import Mathlib
-public import GroundTheory.HeightsAndTheta.Heights.ElementarySymmetric.StVarIntGraphCompact
-public import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.PVarIntGraph
-public import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.PLelongPolyLimit
-public import GroundTheory.HeightsAndTheta.Heights.ElementarySymmetric.PIntegralIndep
+public import GroundTheory.HeightsAndTheta.Heights.ElementarySymmetric.Bundle0005
+public import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.Bundle0025
+public import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.Bundle0011
+public import GroundTheory.HeightsAndTheta.Heights.ElementarySymmetric.Bundle0009
 public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.AssemblyBase
 
 @[expose] public section

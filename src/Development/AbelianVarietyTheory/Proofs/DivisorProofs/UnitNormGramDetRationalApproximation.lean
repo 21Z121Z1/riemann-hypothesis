@@ -2,9 +2,9 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.NotIsCompactUnivFv
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsUnitNormOne
-public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.HermitianFormFiniteZerosOnLineCmExt
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SquaringOpenAtOneOfCompleteTwoNeZero
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0727
+public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0015
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0275
 
 @[expose] public section
 

@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import GroundTheory.ArithmeticGeometry.SchemeCohomology.ProperCohomology.ReesSections
+public import GroundTheory.ArithmeticGeometry.SchemeCohomology.ProperCohomology.Bundle0009
 
 @[expose] public section
 

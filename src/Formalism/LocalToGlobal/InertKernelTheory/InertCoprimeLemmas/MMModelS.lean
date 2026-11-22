@@ -1,7 +1,7 @@
 module
 
-public import Formalism.LocalToGlobal.InertKernelTheory.OneCopyTh1S
-public import Formalism.LocalToGlobal.InertKernelTheory.InertCoprimeLemmas.MMModel
+public import Formalism.LocalToGlobal.InertKernelTheory.Bundle0010
+public import Formalism.LocalToGlobal.InertKernelTheory.InertCoprimeLemmas.Bundle0003
 public import Formalism.LocalToGlobal.InertKernelTheory.InertCoprimeLemmas.SigmaAlg
 public import Formalism.LocalToGlobal.TorsionIntegrality.EisensteinTranslationProducts.AnalyticIdentityTheorems.LatticeOnly
 

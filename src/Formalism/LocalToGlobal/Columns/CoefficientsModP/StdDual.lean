@@ -2,7 +2,7 @@ module
 
 public import Formalism.LocalToGlobal.Columns.CoefModB
 public import Formalism.LocalToGlobal.Columns.CoefficientsModP.NablaIndependenceHolds
-public import Formalism.LocalToGlobal.Columns.CoefficientsModP.NablaRoundFreeHolds
+public import Formalism.LocalToGlobal.Columns.CoefficientsModP.Bundle0001
 public import Formalism.GradedWeylDivisibility.StatementE
 
 @[expose] public section

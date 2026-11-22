@@ -1,11 +1,11 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.CoeffRingsHaveRootsOfUnity
-public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.ExistsLabOfOrder
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.LabelSettingTameGenerator
-public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.BlocksUnique
-public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.RankOneUnitary
+public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0015
+public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.Bundle0018
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0170
+public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.Bundle0019
+public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.Bundle0007
 
 @[expose] public section
 

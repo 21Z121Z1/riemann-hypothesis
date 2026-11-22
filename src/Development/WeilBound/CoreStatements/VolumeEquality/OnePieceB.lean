@@ -1,9 +1,9 @@
 module
 
 public import Development.WeilBound.CoreStatements.VolumeEquality.OnePieceA
-public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.FiniteImageOfLocallyConstantOnHolomorphicFamilie
-public import Development.AbelianVarietyTheory.Proofs.GenericRegularity.LinearDisjointAlgebraicClosure
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.GenPtSpecializesOfSpecializes
+public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0086
+public import Development.AbelianVarietyTheory.Proofs.GenericRegularity.Bundle0036
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0032
 
 @[expose] public section
 

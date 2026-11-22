@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Formalism.LocalToGlobal.IndefiniteReal.TraceOfDiag
+public import Formalism.LocalToGlobal.IndefiniteReal.Bundle0003
 
 @[expose] public section
 

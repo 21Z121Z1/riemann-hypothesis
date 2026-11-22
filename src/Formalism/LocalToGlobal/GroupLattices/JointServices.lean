@@ -2,8 +2,8 @@ module
 
 public import Formalism.SharpRestriction.GrowthBounds.WeilJacquetShalikaLaw
 public import Formalism.SharpRestriction.Divisibility.LocalQuadraticParts
-public import Formalism.LocalToGlobal.Divisibility.TiedLemmas
-public import Formalism.LocalToGlobal.Divisibility.JetBounds.Statement
+public import Formalism.LocalToGlobal.Divisibility.Bundle0004
+public import Formalism.LocalToGlobal.Divisibility.JetBounds.Bundle0001
 
 @[expose] public section
 

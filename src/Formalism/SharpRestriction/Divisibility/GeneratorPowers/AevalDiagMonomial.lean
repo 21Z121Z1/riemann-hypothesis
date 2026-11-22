@@ -1,6 +1,6 @@
 module
 
-public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.PairEvaluation
+public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0001
 
 @[expose] public section
 

@@ -2,15 +2,15 @@ module
 
 public import Mathlib
 public import Development.WeilBound.RepresentationTheoryGL.TubeMeasures.DisjointTubes.MassLev2
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PermMMulTranspose
-public import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.OneMeasureSizes
-public import Development.AbelianVarietyTheory.Definitions.Divisors.ToKnownTheoremsOf
-public import Development.AbelianVarietyTheory.Definitions.Divisors.UnifOfSpaceEq
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1930
+public import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.Bundle0018
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0059
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0044
 public import Development.AbelianVarietyTheory.Statements.PlaceShiftStatements.DefiniteBound
 public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.EmbGLMemRealSU
-public import Development.AbelianVarietyTheory.Definitions.ExistenceOfLattices.CoeSelfDualLatticeInFrameCoordinatesEq
-public import Formalism.SharpRestriction.GlobalSchurBounds.GeneralLinearActions.GapAtLeast
-public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.FormalDegree.VolUFactProdMulLe
+public import Development.AbelianVarietyTheory.Definitions.ExistenceOfLattices.Bundle0001
+public import Formalism.SharpRestriction.GlobalSchurBounds.GeneralLinearActions.Bundle0001
+public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.FormalDegree.Bundle0002
 
 @[expose] public section
 

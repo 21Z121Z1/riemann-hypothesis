@@ -7,9 +7,7 @@ public import Formalism.LocalRingCardinality.RhoDetPrimeEqMuTildeMulChiPow
 public import Formalism.SharpRestriction.GlobalSchurBounds.FlipTwoThree
 public import Formalism.SharpRestriction.GlobalSchurBounds.StandardLattice
 public import Formalism.SharpRestriction.GlobalSchurBounds.CMFieldLemmas
-public import Formalism.SharpRestriction.GlobalSchurBounds.ShortIntervalPrimes
-public import Formalism.SharpRestriction.GlobalSchurBounds.LocalCountingBounds
-public import Formalism.SharpRestriction.GlobalSchurBounds.ZetaZeroFreeRegion
+public import Formalism.SharpRestriction.GlobalSchurBounds.Bundle0001
 public import Formalism.SharpRestriction.GlobalSchurBounds.GL3Theta
 public import Formalism.SharpRestriction.GlobalSchurBounds.StandardLatticesGL3
 public import Formalism.SharpRestriction.ParConsts

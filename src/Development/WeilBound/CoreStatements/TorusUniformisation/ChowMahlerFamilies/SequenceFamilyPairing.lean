@@ -3,7 +3,7 @@ module
 public import Mathlib
 public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.IsLatFamilyCongr
 public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.OmegaLatticeDominantCompat
-public import Development.WeilBound.CoreStatements.TorusUniformisation.ChowMahlerFamilies.ExistsFunctionAtPoint
+public import Development.WeilBound.CoreStatements.TorusUniformisation.ChowMahlerFamilies.Bundle0019
 
 @[expose] public section
 

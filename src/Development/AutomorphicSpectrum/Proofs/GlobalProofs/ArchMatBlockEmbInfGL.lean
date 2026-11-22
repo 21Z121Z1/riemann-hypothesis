@@ -1,15 +1,15 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Proofs.GlobalProofs.FiniteDimensionalOfSlices
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsBlockEmb
+public import Development.AutomorphicSpectrum.Proofs.GlobalProofs.Bundle0050
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1342
 public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsSmoothAutomorphicFunctionTranslateAtRealPlace
 public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.LeviBlockCentreFinite
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LocalFiniteIdem
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExpGLiAddSmul
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1466
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0671
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BlockEmbeddingArchimedeanComponents
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BlockMatrixMulVecBasis
-public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.DetALeviTorus
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1371
+public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.Bundle0021
 public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.IsSmoothModerateOfIsAutFunSm
 
 @[expose] public section

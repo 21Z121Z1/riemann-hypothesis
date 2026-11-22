@@ -1,11 +1,13 @@
 module
 
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.PadicHodgeTheory.LocalPublishedTheorems
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.PadicHodgeTheory.OpenField
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.PadicHodgeTheory.Bundle0008
 public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FontaineFormalismOfRegular
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.BcrisRegularOfTensorInjStatement
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.AlgClosureTensorBcrisToBdRInjectiveStatement
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.RatioInvariantInK0
+public import Mathlib
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0544
+public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.AcrisTorsionFreeComplete
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0266
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0310
 
 @[expose] public section
 
@@ -241,11 +243,11 @@ theorem UpperTheory.V.Loc.admissible_of_bilinear_openSubgroup_galois :
       (fun x y hx hxy => ?_) (fun x hx hxy => ?_) (resCoef ℚ_[l] ρ) (resCoef ℚ_[l] ρ') (resCoef ℚ_[l] π) b hb hs
       _ (fun x => ?_) _ (fun x => ?_) _ (fun x => ?_) h h'
     · exact (eB g _).trans (AlgEquiv.commutes _ c)
-    · refine GlobalTheory.RegularRing.fracInv hfit (GlobalTheory.T.algClosure_tensor_bcris_to_bdR_injective l C) K x y hx fun g => ?_
+    · refine GlobalTheory.RegularRing.fracInv hfit (_root_.GlobalTheory.MemLoc.TensorInj.tensorInj l C) K x y hx fun g => ?_
       obtain ⟨g, rfl⟩ := e.surjective g
       rw [← eB, ← eB]
       exact hxy g
-    · refine GlobalTheory.RegularRing.lineUnit hfit (GlobalTheory.T.bcris_regular_of_tensorInj l C (GlobalTheory.T.algClosure_tensor_bcris_to_bdR_injective l C)) K x hx fun g => ?_
+    · refine GlobalTheory.RegularRing.lineUnit hfit (_root_.GlobalTheory.MemLoc.regular_of_tensorInj l C (_root_.GlobalTheory.MemLoc.TensorInj.tensorInj l C)) K x hx fun g => ?_
       obtain ⟨g, rfl⟩ := e.surjective g
       rw [← eB]
       exact hxy g

@@ -1,8 +1,7 @@
 module
 
 public import Formalism.LocalToGlobal.GlobalTheory.LinkTiesTh
-public import Formalism.LocalToGlobal.TorsionIntegrality.EisensteinTranslationProducts.CMQuasiPeriodConst
-public import Formalism.LocalToGlobal.TorsionIntegrality.EisensteinTranslationProducts.ThetaZeroTranslateProduct
+public import Formalism.LocalToGlobal.TorsionIntegrality.EisensteinTranslationProducts.Bundle0003
 
 @[expose] public section
 

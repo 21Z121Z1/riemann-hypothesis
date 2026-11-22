@@ -1,6 +1,6 @@
 module
 
-public import ReciprocityTheory.SemistableReduction.LatSemiSt
+public import ReciprocityTheory.SemistableReduction.Bundle0008
 
 @[expose] public section
 

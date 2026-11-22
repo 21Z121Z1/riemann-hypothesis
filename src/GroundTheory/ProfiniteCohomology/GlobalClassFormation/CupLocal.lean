@@ -3,7 +3,7 @@ module
 public import Mathlib
 public import GroundTheory.ProfiniteCohomology.GlobalClassFormation.LocalRestriction
 public import GroundTheory.ProfiniteCohomology.GlobalClassFormation.LocalInvariants
-public import GroundTheory.ProfiniteCohomology.LocalClassFormation.CupSymbolNorm
+public import GroundTheory.ProfiniteCohomology.LocalClassFormation.Bundle0001
 
 @[expose] public section
 

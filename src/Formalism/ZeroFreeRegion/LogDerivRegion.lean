@@ -1,13 +1,13 @@
 module
 
 public import Formalism.ZeroFreeRegion.FinalZFR
-public import Formalism.ZeroFreeRegion.ZetaLogDerivativeBounds.SmallHeightLogDeriv
+public import Formalism.ZeroFreeRegion.ZetaLogDerivativeBounds.Bundle0003
 public import Formalism.ZeroFreeRegion.ZetaLogDerivativeBounds.LogDerivRegionOf
 public import Formalism.ZeroFreeRegion.ZetaLogDerivativeBounds.Perron
 public import Formalism.ZeroFreeRegion.ZetaLogDerivativeBounds.RectDoublePole
-public import Formalism.ZeroFreeRegion.ZetaLogDerivativeBounds.LaurentAtOne
-public import Formalism.ZeroFreeRegion.ZetaLogDerivativeBounds.RectShiftOf
-public import Formalism.ZeroFreeRegion.ZetaLogDerivativeBounds.GzPNTOf
+public import Formalism.ZeroFreeRegion.ZetaLogDerivativeBounds.Bundle0001
+public import Formalism.ZeroFreeRegion.ZetaLogDerivativeBounds.Bundle0002
+public import Formalism.ZeroFreeRegion.ZetaLogDerivativeBounds.Bundle0006
 
 @[expose] public section
 

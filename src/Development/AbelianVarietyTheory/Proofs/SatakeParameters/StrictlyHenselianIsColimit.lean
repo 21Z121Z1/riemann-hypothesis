@@ -2,12 +2,12 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.Divisors.IndEtOfForallFinset
-public import Development.AbelianVarietyTheory.Definitions.Divisors.DivisorSupportCondition
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsStrictHenselisation
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AlgHomExtLocalization
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IndEtaleLocalizedPiecesTrans
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0007
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0585
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0512
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0287
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsStrictHenselisationOfDirectedUnion
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExistsRingHomOfIsStrictHenselisation
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0038
 
 @[expose] public section
 

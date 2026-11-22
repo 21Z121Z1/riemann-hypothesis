@@ -1,6 +1,6 @@
 module
 
-public import Formalism.EisensteinCokernelLengths.ExponentChainBound
+public import Formalism.EisensteinCokernelLengths.Bundle0001
 
 @[expose] public section
 

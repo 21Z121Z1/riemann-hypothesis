@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Statements.EllipticCurveLevels.ClosedAtLConclusionOfMem
-public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.RestrictsSelf
+public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.Bundle0018
 
 @[expose] public section
 

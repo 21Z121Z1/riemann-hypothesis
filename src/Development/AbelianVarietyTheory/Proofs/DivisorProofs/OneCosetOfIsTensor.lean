@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.Divisors.FlatTensorVacuum
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsKOOfDet
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0283
 
 @[expose] public section
 

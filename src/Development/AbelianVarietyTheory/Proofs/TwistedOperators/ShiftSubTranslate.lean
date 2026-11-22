@@ -2,10 +2,10 @@ module
 
 public import Mathlib
 public import Formalism.LocalToGlobal.ProjectiveLattices.SpMapAlgHomId
-public import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.ThetaTranslateRangeGap
+public import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.Bundle0012
 public import Development.AbelianVarietyTheory.Definitions.Divisors.MarkAd
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdjointIntertwines
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.MultValueLeftContLevel
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0902
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0117
 
 @[expose] public section
 

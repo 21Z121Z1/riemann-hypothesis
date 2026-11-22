@@ -1,13 +1,12 @@
 module
 
 public import Mathlib
-public import Formalism.LocalToGlobal.ProjectiveLattices.BetaAddRight
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.OneArc
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.AbProj
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.PsiCoordExistsUniqueUpToUnitLocal
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.BetaAtAddLeftAndDiagEqTwoOrder
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsGoodIntegral
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.IsProperOfSubsingleton
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0019
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.Bundle0007
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.Bundle0006
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0049
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0051
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0084
 
 @[expose] public section
 

@@ -1,6 +1,6 @@
 module
 
-public import Formalism.PolynomialDimension.StatementHar
+public import Formalism.PolynomialDimension.Bundle0001
 
 @[expose] public section
 

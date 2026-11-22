@@ -3,8 +3,8 @@ module
 public import Mathlib
 public import Formalism.LocalToGlobal.Divisibility.CoefModLemmas
 public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsSplitAtOfIsSplitPl
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.NonemptyEquivLocProdTriv
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.HasSatAtConstOne
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0625
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0586
 
 @[expose] public section
 

@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ChLApply
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.TranslationInvariantSchwartzBruhatMapFactorsInte
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.AddCharConductorAndHaarIntegersExist
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0022
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0013
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0021
 
 @[expose] public section
 

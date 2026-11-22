@@ -1,10 +1,10 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.NonemptyAllIff
+public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.Bundle0022
 public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.StableIffCarrierEq
 public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.ExistsIsScalar
-public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.NotTeichTrivOfIsDelta
+public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0016
 public import Formalism.LocalToGlobal.IndefiniteReal.DoubleCosetOperators.NHkRow
 
 @[expose] public section

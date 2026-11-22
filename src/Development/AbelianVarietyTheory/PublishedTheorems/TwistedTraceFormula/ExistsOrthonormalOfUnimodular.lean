@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.ExistsCongrIffTraceFormsIsometricCm
-public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.HasseNormTheoremQuadraticExtension
+public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.Bundle0053
 public import Formalism.HermitianLattices.HermitianLatticesProofs.UnimodUnramUnique
 
 @[expose] public section

@@ -6,8 +6,8 @@ public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDesc
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PlaceDivisors.AlWellDefSt
 public import Development.AbelianVarietyTheory.Definitions.AbelianSchemeLaws.FirstCohomologyVanishesSpecOfIsLocalRing
 public import Development.AbelianVarietyTheory.Definitions.Uniformization.PointEqOfSubsingleton
-public import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.NilpotentCoordinates
-public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.PowEqScaleAndExistsUniqueTorsion
+public import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.Bundle0024
+public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0043
 
 @[expose] public section
 

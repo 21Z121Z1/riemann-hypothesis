@@ -1,13 +1,13 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Foundations.IsSelfDualE
+public import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0013
 public import Formalism.LocalToGlobal.Columns.CoefficientsModP.PairingNondegenerateHolds
 public import Formalism.LocalToGlobal.Columns.CoefficientsModP.FkPderivBlockEmbNe
 public import Formalism.GradedWeylDivisibility.StatementE
 public import Formalism.HarderNarasimhan.ShiftInvariance
 public import Formalism.QuotientMetricDivisors.ReductionLemmaZero
-public import Formalism.QuotientMetricDivisors.ProdFormula
+public import Formalism.QuotientMetricDivisors.Bundle0001
 public import Formalism.LocalToGlobal.IndefiniteForms.IndefiniteTree.RealCubicMeans.LeafBounds.MeanMaxLeaf.LeafMMFree
 
 @[expose] public section

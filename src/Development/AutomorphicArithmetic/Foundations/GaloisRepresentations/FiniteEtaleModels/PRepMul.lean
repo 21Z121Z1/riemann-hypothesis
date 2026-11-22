@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.FiniteEtaleModels.IsEtIdealOfPlace
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EtaleLevelBaseChange
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0654
 
 @[expose] public section
 

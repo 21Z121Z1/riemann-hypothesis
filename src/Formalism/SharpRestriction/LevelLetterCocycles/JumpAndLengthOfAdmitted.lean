@@ -1,14 +1,12 @@
 module
 
 public import Formalism.SharpRestriction.LevelLetterCocycles.EmbeddingTypes
-public import Formalism.WachLatticeTwists.TorsionLengthCounts.RowCol
-public import Formalism.WachLatticeTwists.TorsionLengthCounts.SubmoduleLengthBoundStatement
+public import Formalism.WachLatticeTwists.TorsionLengthCounts.Bundle0001
 public import Formalism.WachLatticeTwists.Statement
 public import Formalism.CharacterColumnKernels.CharacterColumnKernelEqualityForm
 public import Formalism.CharacterColumnKernels.IdempotentNormalForms.CharacterColumnKernelsOfBlockChiCOfBlockChiOne
 public import Formalism.CharacterColumnKernels.Statement
-public import Formalism.CharacterColumnKernels.IdempotentNormalForms.LengthKerOfDetEqZero
-public import Formalism.CharacterColumnKernels.IdempotentNormalForms.SingleEqSmul
+public import Formalism.CharacterColumnKernels.IdempotentNormalForms.Bundle0001
 
 @[expose] public section
 

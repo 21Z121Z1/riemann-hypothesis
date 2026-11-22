@@ -1,10 +1,9 @@
 module
 
-public import Development.WeilBound.RepresentationTheoryGL.CasimirAlgebra.KugaCoordinates.KugaGluing.KgCxDmatConj
-public import Development.WeilBound.RepresentationTheoryGL.CasimirAlgebra.KugaCoordinates.KugaGluing.KgCasDiff
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsCompactCurveDerivative
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TensorCompactActionDerivative
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CompactDerivativeSeparatingDual
+public import Development.WeilBound.RepresentationTheoryGL.CasimirAlgebra.KugaCoordinates.KugaGluing.Bundle0001
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1057
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1087
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1053
 
 @[expose] public section
 

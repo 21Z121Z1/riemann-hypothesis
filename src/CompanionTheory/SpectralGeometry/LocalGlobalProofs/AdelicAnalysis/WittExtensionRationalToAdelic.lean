@@ -1,9 +1,10 @@
 module
 
 public import Mathlib
-public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.AdelicUnitaryOrbits.LocalSum
+public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.AdelicUnitaryOrbits.Bundle0002
 public import CompanionTheory.SpectralGeometry.CountingDefinitions.AdelicEulerProducts.IsEulerProd
-public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.AdelicOrbitOfRationalTupleStatement
+public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.Bundle0041
+public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.AdelicUnitaryOrbits.StLamOf
 
 @[expose] public section
 
@@ -18,6 +19,6 @@ theorem trans_adelic : ∀ (F E : Type) [Field F] [NumberField F] [Field E] [Num
     gramR (AF F) σ J Y = (gramE σ J X).map (inclR (AF F)) →
     ∃ h : HA (AF F) σ J, actW (AF F) σ J h (ratTup (AF F) X) = Y :=
   fun F E _ _ _ _ _ σ hcm M J hJ n =>
-    GlobalTheory.T.adelic_orbit_of_rational_tuple F E σ hcm (AF F) (PIW.AdelicOrbitU.stP F) n M J hJ
+    _root_.GlobalTheory.CompanionTheory.SW.TransUC.trans_uc F E σ hcm (AF F) (PIW.AdelicOrbitU.stP F) n M J hJ
 
 end GlobalTheory.CompanionTheory.SW.TransA

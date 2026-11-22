@@ -1,43 +1,49 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PhiAt
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1885
 public import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsIsTauZeroNonzeroAll
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaKeySectionValuationBoundsDifferent
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.OrdConjDifferentEqZero
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsUnitSectionThetaKeyRuleWeightFour
-public import Development.AbelianVarietyTheory.Proofs.TorusSplitting.CardMulPhiLeValuationProductForm
-public import Development.AbelianVarietyTheory.Proofs.TorusSplitting.IntegralThetaSectionExistsAndBaseChange
-public import Development.AbelianVarietyTheory.Definitions.Divisors.ToKnownTheoremsOf
-public import Development.AbelianVarietyTheory.Definitions.Divisors.P22
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1917
+public import Development.AbelianVarietyTheory.Proofs.TorusSplitting.Bundle0016
+public import Development.AbelianVarietyTheory.Proofs.TorusSplitting.Bundle0014
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0059
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0058
 public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.ExistsHorizontalGeneratorOfCharts
 public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.ToroidalCompactification
 public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.InjectiveOfSmulMemRange
-public import Development.AbelianVarietyTheory.Definitions.Divisors.HtValOnSubset
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConstLengthArchSectionEqSmulOfSameWeightStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ReadsZero
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0049
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1895
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1535
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsModelRuleSection
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsFlatWeightRuleReadsNonvanishingDetSectionStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConstantLengthOfReadingHorizontalSectionStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RuleSectionNowhereVanishingReal
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ComplexUniformizationLawsOfGoodDeepCover
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CuspFormsExtendVanishCompactifiedFlagSpaceStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.VanBdLeSpace
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FlagSpaceComponentSmoothProjectiveConnected
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsFlatWeightRuleReadsNonvanishingDetSection
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConstantLengthOfReadingHorizontalSection
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2032
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1842
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2714
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0053
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0041
+public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.IsLogCanonicalMultipleCanonical
+public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.Bundle0004
+public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.DenseInterior
+public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.Bundle0006
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2228
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2365
 public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.GeometricallyIntegralIffGeometricallyConnectedOf
 public import Development.AbelianVarietyTheory.Proofs.CoherentCohomologyProofs.ExistsUniqueLbIsoPullEqOfCoheightLeOne
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ChartFrameChangeDiagonalUnitsIntegralFrameStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CharZeroStalkCompactFlagSpaceOverComponentStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsCompleteDVRReadingCentredValuationStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TraitGenericPointMemCompactFlagSpaceOpenPartStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsFramedPointOfCompactFlagSpaceOpenPartStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MemModelInteriorOfMemAbelianLocusPullbackStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsExtensionDvrFlagLift
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2044
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1943
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsCompleteDVRReadingCentredValuation
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1938
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1947
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1928
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1907
 public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.HasPhiExistsExtAndUnique
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.PolynomialSupportHolds
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0547
 public import Development.AbelianVarietyTheory.Counterexamples.JetSurvey.PhiCOfNoIntegralForm
 public import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.NonemptyFiniteRootsOfBimul
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HostBoundHolds
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1877
 
 @[expose] public section
 
@@ -71,7 +77,7 @@ theorem phiC_le_valuation (E : Type) [Field E] [NumberField E] [IsCMField E] (H 
   have hL : Laws := hLL.1
   have hA : AdmBase V (maximalIdeal V) := ⟨inferInstance, inferInstance, inferInstance, hcpl⟩
   have htors := GlobalTheory.UT.torsionIso_of_pelUnif hLL h2 h3 h4 h5 E H V _ hA G P
-  obtain ⟨v, hv, hvv⟩ := GlobalTheory.T.exists_valuation_algebraicClosure_extending_vV V ϖ hϖ
+  obtain ⟨v, hv, hvv⟩ := _root_.GlobalTheory.ValClosure.exists_valuation_closure V ϖ hϖ
   let F := AlgebraicClosure (FractionRing V)
   letI : Algebra c.F F := ((algebraMap (FractionRing V) F).comp (algebraMap c.F (FractionRing V))).toAlgebra
   let ψ : FractionRing V →ₐ[c.F] F := { algebraMap (FractionRing V) F with commutes' := fun _ => rfl }
@@ -95,8 +101,8 @@ theorem phiC_le_valuation (E : Type) [Field E] [NumberField E] [IsCMField E] (H 
   have hvalF : algebraMap (FractionRing V) F val = tauExpr cf xs w :=
     TauValAt.map_eq hR ψ hz hval (tauValAt_self hev' hw)
   obtain ⟨Φ, w₀, hN, hact, hint⟩ := GlobalTheory.T.exists_fib_normW_of_intSec E H Dw l Xo c V y G S P
-  obtain ⟨th, hth⟩ := GlobalTheory.T.exists_abelianSection_of_universalFibreSection E H Dw l Xo V y.x P.A Φ F z.x hzx z.s
-  obtain ⟨ϑ, hϑ, hν⟩ := GlobalTheory.T.exists_expandsF_nuGe_zero_of_intTh V hcpl ϖ hϖ P.D Q hQ F v hv P.A G.G G.semi P.U w₀ hN.1 th
+  obtain ⟨th, hth⟩ := _root_.GlobalTheory.EtaVal.exists_secA_secTie E H Dw l Xo V y.x P.A Φ F z.x hzx z.s
+  obtain ⟨ϑ, hϑ, hν⟩ := _root_.GlobalTheory.EtaVal.exists_expansion_nonneg V hcpl ϖ hϖ P.D Q hQ F v hv P.A G.G G.semi P.U w₀ hN.1 th
     (hint F ψ z th hψ hz hth)
   obtain ⟨tr, htr, htra⟩ := GlobalTheory.T.exists_mulEquiv_ptO_hom_of_eq_spMap_comp E H Dw l Xo V y.x P.A Φ F z.x hzx
   obtain ⟨pt, hpt, hspan⟩ := GlobalTheory.T.exists_heisenbergLifts_span_latticeClasses E H V G P htors F ((R ^ 2) ^ 2) (pow_pos (pow_pos hR0 2) 2)
@@ -111,7 +117,7 @@ theorem phiC_le_valuation (E : Type) [Field E] [NumberField E] [IsCMField E] (H 
     intro a q hq
     obtain ⟨t, ht⟩ := GlobalTheory.T.normalisedThetaConstant_of_universal_origin_value E H Dw l Xo c V y.x P.A Φ F z hzx th hth (R ^ 2) hR2 (ev a) (tr (ev a)) (w a)
       (hevt a) (htr _) (hw a)
-    exact GlobalTheory.T.le_valuation_oddLevel_thetaConstant_integralExpansion V hcpl ϖ hϖ P.D Q hQ F v hv P.A G.G G.semi P.U w₀ Φ.ρ hN th ϑ hϑ hν (R ^ 2) hR2 (pt a)
+    exact _root_.GlobalTheory.EtaVal.le_val_thetaConst V hcpl ϖ hϖ P.D Q hQ F v hv P.A G.G G.semi P.U w₀ Φ.ρ hN th ϑ hϑ hν (R ^ 2) hR2 (pt a)
       (tr (ev a)) t (w a) (hpt a) ht q hq
   haveI : Module.Finite ℤ P.D.toPre.X := P.D.toPre.finX
   have hcj1 : ∀ a : 𝓞 E, ∃ a' : 𝓞 E, (a' : E) = cj a := fun a => ⟨H.bar a, by rw [H.bar_eq, hcj]⟩
@@ -120,7 +126,7 @@ theorem phiC_le_valuation (E : Type) [Field E] [NumberField E] [IsCMField E] (H 
   have key : ∀ q : ℚ, (q : ℝ) ≤ Formalism.MainNotions.ModuliIntegralCharts.phiC cj β / (R : ℝ) ^ 4 → ((1 : ℕ) : ℚ) * q ≤ ((vV V val : ℤ) : ℚ) := by
     intro q hq
     have h := RatBound.le_addVal_prod_sum v (G := Unit) cf (fun _ j b => w (xs j b)) q (fun _ j => by
-      refine GlobalTheory.T.le_sum_of_le_phiC_div_sq E cj hcj1 H.w0 hcj2 P.D.toPre.X Q β hβ hQ0 (R ^ 2) (by nlinarith) n
+      refine _root_.GlobalTheory.EtaVal.sum_cosetMin_ge_phiC_div_sq E cj hcj1 H.w0 hcj2 P.D.toPre.X Q β hβ hQ0 (R ^ 2) (by nlinarith) n
         (fun b => (pt (xs j b)).y) (hspan n (fun b => xs j b) (hsp j)) (fun b => v (w (xs j b)))
         (fun b => hb _) q ?_
       rw [Nat.cast_pow, ← pow_mul]; exact hq)
@@ -202,7 +208,7 @@ theorem key_unit_eqChar {κ : KeyRule} (hκ : IsKeyRule κ) (hpq : 1 ≤ Dw.p + 
     MorphismProperty.of_isPullback (P := @IsProper) m1.cart.1 Xo.univ.proper
   obtain ⟨ψ, -⟩ := GlobalTheory.semiAbelian_model_determined_by_generic_fibre E H T.V inferInstance G tP t' hprop m2 mK
   obtain ⟨n', -⟩ := sabComp pullCubComp E H _ _ _ Y.t tP G yt (𝟙 _) mP' ψ
-  exact (((GlobalTheory.T.thetaKeyScalar_isUnit_on_integralModels κ hκ E H Dw l Xo c _ _ Y p hpq (isBaseRing_local c W) hp h2 h3 h4 h5).1 T.V T.Fr z yt h1 G
+  exact (((_root_.GlobalTheory.KeyUnitModels.keyUnitOnModels κ hκ E H Dw l Xo c _ _ Y p hpq (isBaseRing_local c W) hp h2 h3 h4 h5).1 T.V T.Fr z yt h1 G
     (PullbackSections.sabMapCast n' (Category.id_comp yt)) n w hw θ k hk).1 hθ).1
 
 theorem exists_tied_integral {κ : KeyRule} (hκ : IsKeyRule κ) (hpq : 1 ≤ Dw.p + Dw.q) (hg : ∀ p : ℕ, p.Prime → l.GoodAt p)

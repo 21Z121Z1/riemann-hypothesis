@@ -1,6 +1,6 @@
 module
 
-public import Development.AutomorphicArithmetic.Foundations.Convolution.SplitEigenfunctions.SplitEig
+public import Development.AutomorphicArithmetic.Foundations.Convolution.SplitEigenfunctions.Bundle0003
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.RDualC
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.GaloisLibrary.CrystallineBaseChange.SatOfPol
 

@@ -6,11 +6,11 @@ public import Formalism.LocalRingCardinality.AdicCompletionLocal.LocTied
 public import Formalism.SharpRestriction.LevelLetterCocycles.WachCoordinates
 public import Formalism.SharpRestriction.LevelLetterCocycles.PairedCharacterCondition
 public import Formalism.SharpRestriction.LevelLetterCocycles.EmbeddingTypes
-public import Formalism.SharpRestriction.LevelLetterCocycles.InvariantsGenerators
-public import Formalism.SharpRestriction.LevelLetterCocycles.JointConditionsZpowers.CrysOnCond
+public import Formalism.SharpRestriction.LevelLetterCocycles.Bundle0013
+public import Formalism.SharpRestriction.LevelLetterCocycles.JointConditionsZpowers.Bundle0005
 public import Development.AutomorphicSpectrum.Definitions.NonGaloisLines.TopLine
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CardCocyclesMulInvariantsDiscrete
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.CardDualZmodModuleEqCard
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0246
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0019
 
 @[expose] public section
 

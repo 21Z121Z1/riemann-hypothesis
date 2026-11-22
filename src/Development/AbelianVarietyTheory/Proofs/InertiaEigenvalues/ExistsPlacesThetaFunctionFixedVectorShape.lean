@@ -1,13 +1,13 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.DropPlInsert
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0654
 public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.LocalThetaPairExistence
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsFinsetOfMemNhds
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.PsiVNeOneOfTrace
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0310
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0290
 public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.IsSelfDualCLatFrame
 public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.SmulEqZeroOfInf
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsCartanInvOneOfOnb
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0780
 
 @[expose] public section
 

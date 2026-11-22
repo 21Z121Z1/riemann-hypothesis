@@ -1,7 +1,7 @@
 module
 
-public import Formalism.SharpRestriction.AdmissibleParameterJoins.GandSq
-public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.MemWOfNorm
+public import Formalism.SharpRestriction.AdmissibleParameterJoins.Bundle0003
+public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0045
 
 @[expose] public section
 

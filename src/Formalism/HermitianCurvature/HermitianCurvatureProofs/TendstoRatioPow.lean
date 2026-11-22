@@ -1,7 +1,7 @@
 module
 
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.MemLpBzOfSup
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.TendstoIntegralInnerGermMoving
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0081
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0072
 
 @[expose] public section
 

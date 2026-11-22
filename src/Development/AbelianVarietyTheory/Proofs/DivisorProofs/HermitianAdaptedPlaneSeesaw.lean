@@ -1,12 +1,13 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Divisors.SiegelWeilAnisotropicHermitian
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0044
 public import Development.AbelianVarietyTheory.Definitions.Divisors.CTSmallCone
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WeilRepresentationPreservesSchwartz
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EigenIntertwinerGoodModelsStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EigenIntertwinerTransitive
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdelicStoneVonNeumannLagrangianUniquenessStatement
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1571
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1664
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1813
+public import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.WeilTensorModels
 
 @[expose] public section
 
@@ -346,7 +347,7 @@ theorem main : GlobalTheory.FunPr.Hypotheses₂ → ∀ (F E : Type) [Field F] [
     GlobalTheory.T.eigen_intertwiner_good_models F E σ B n d n₁ d X W X₁ W M M₁ _ _ _ e hP.good hP₁.good he _ (adelicCoordinatesEvalZeroForm_mem_admissible _)
   obtain ⟨Φ₀, hΦ₀, hne⟩ := GlobalTheory.EvNonzero.exists_mem_schA_ev_ne_zero F E σ B n d n₁ d X W X₁ W M M₁ _ _ _ e hP.good hP₁.good he
   obtain ⟨y, hy⟩ := Function.ne_iff.1 hne
-  obtain ⟨c, hc⟩ := GlobalTheory.T.adelicStoneVonNeumann_lagrangian_uniqueness F B.ψ hψ (Fin n × Fin d) L hiso hrk _ hadmT _ hadmE
+  obtain ⟨c, hc⟩ := _root_.GlobalTheory.AdelicSvN.main F B.ψ hψ (Fin n × Fin d) L hiso hrk _ hadmT _ hadmE
     (fun t w hw Φ hΦ => evAt_zero_comp_eq_of_exp_phase_mul M M₁ B.ψ hψ H T hTh hTi _ (hL t w hw) Φ hΦ)
     (fun t w hw Φ hΦ => evAt_zero_comp_eq_of_exp_phase_mul M M₁ B.ψ hψ H e he.Heisenberg₂ he.inv _ (hL t w hw) Φ hΦ)
     ⟨_, GlobalTheory.HeisSchA.rho_mem_schA M B.ψ hψ _ Φ₀ hΦ₀, by

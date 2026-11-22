@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Formalism.SharpRestriction.CuspSpanNormBounds.RelevantZeroGramTerms
-public import Formalism.PeriodIntegrals.BesselMapUniq
+public import Formalism.PeriodIntegrals.Bundle0016
 
 @[expose] public section
 

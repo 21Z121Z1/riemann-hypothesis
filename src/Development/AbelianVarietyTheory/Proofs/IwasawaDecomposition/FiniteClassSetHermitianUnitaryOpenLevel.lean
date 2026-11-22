@@ -1,11 +1,11 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Foundations.CdScaleTieIff
+public import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0016
 public import Development.AbelianVarietyTheory.PublishedTheorems.AdelicLattices₂.ExistsFiniteUnitaryClassesOfDualEqSmul
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.CompletedLatticeStabilizerCompactOpen
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsLatticeRationalVectorsInAdelicTranslate
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.AdelicHermitianFormGaloisMemOfMemCompletion
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0140
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0021
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0022
 
 @[expose] public section
 

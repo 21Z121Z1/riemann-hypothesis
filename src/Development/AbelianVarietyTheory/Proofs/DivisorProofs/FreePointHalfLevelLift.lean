@@ -1,31 +1,31 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.GrothendieckDeformation
-public import Development.AbelianVarietyTheory.Definitions.Divisors.CovolXOfCovol
-public import Development.AbelianVarietyTheory.Definitions.Divisors.ToKnownTheoremsOf
-public import Development.AbelianVarietyTheory.Definitions.Divisors.CuspIso
-public import Development.AbelianVarietyTheory.Definitions.Divisors.WellChosen
-public import Development.AbelianVarietyTheory.Definitions.Divisors.IntegralBound
-public import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsCoordAtPoints
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NormalizedPointHeightLatticeSmul
+public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.Bundle0008
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0055
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0059
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0053
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0041
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0042
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0043
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0891
 public import Development.AbelianVarietyTheory.Definitions.Divisors.IsHeightIffOfDegreeEq
 public import Development.AbelianVarietyTheory.Definitions.Divisors.WedgeNrmLeOfWedgeNormLe
-public import Development.AbelianVarietyTheory.Definitions.Divisors.VolMeasureOfAdd
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0048
 public import Development.AbelianVarietyTheory.Definitions.Divisors.MemLevEigenIffTransl
 public import Formalism.LocalToGlobal.IndefiniteForms.IndefiniteTree.RealCubicMeans.LogMeanShares.LogMeanStatements.HSClaim
 public import Development.AbelianVarietyTheory.Definitions.Divisors.GenRatios
 public import Development.AbelianVarietyTheory.Definitions.Divisors.BadElt
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsWhittakerDatumAndHalfLevels
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0516
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ComplexificationBaseChangeLinearOneTmul
-public import Development.AbelianVarietyTheory.Definitions.Divisors.EigLatLe
-public import Development.AbelianVarietyTheory.Definitions.Divisors.QuoIff
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ActCCoe
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0045
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0056
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1894
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SubMemSmulTopOfLevel
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FinalRowWeightGramAlgebraic
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FinalRowGramAlgebraicSection
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HostBoundHolds
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.FamPSizesRecord
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1874
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1873
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1877
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0225
 
 @[expose] public section
 
@@ -57,9 +57,9 @@ theorem eq_one_of_lev_cong {D : D7} {L : SizeData₂ D} {hT : GatTies D} {Gi : F
     have h0 : ((p.T.Q.l.M : ℕ) : 𝓞 D.host.E) ∈ Ideal.span {((p.T.Q.l.M : ℕ) : 𝓞 D.host.E)} := Ideal.mem_span_singleton_self _
     rw [← p.T.Q.l.prod] at h0
     exact (Ideal.mul_le_inf.trans inf_le_left : p.T.Q.l.Mb * _ ≤ p.T.Q.l.Mb) h0
-  have h4 := GlobalTheory.T.levelMove_lift_congruent_mod_ideal (Wc D i) (iotaW p.T i) hι p.T.Q.l.M p.T.Q.l.Mb (Mfr p.T.Q.l) p.T.Q.l.coprime hMb κ hfc
+  have h4 := _root_.GlobalTheory.LevelMoveCong.mulVec_sub_mem_hat_smul (Wc D i) (iotaW p.T i) hι p.T.Q.l.M p.T.Q.l.Mb (Mfr p.T.Q.l) p.T.Q.l.coprime hMb κ hfc
     ((p.O i).lev g) happ hg
-  have h3 := GlobalTheory.T.adelicCongruence_selfDual_of_principalLattice (Wc D i) _ _ h4
+  have h3 := _root_.GlobalTheory.CovolCong.cong_latC_of_cong_latG (Wc D i) _ _ h4
   rw [← GlobalTheory.PrincInLevel.eq_latC hβ] at h3
   have h2 := GlobalTheory.BaseLevelInj.hatL_cong_of_hat (Wc D i) κ _ _ h3
   have hfr : Formalism.L2.DIV.IsFrame (p.R.βW i) (p.R.ΛW i) := by obtain ⟨c, h, -⟩ := hβ; exact h

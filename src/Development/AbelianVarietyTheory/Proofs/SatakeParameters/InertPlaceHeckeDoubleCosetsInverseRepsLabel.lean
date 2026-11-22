@@ -6,15 +6,17 @@ public import Formalism.LocalToGlobal.IndefiniteReal.SubgroupCharExtensionOneApp
 public import Formalism.LocalToGlobal.IndefiniteReal.LocalNewformFunction
 public import Formalism.LocalToGlobal.Columns.HeckeSp
 public import Formalism.SatakeDualWeyl.KpqSubgroupCompact
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.IsIdemOfAlgebraMap
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExistsDvrFrobeniusLift
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.MemIntegralFiniteAdelesTensorIffLocalOrdersStatement
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.AdelicUnitarySupportedAtFinitePlaceEqLocalUnitarStatement
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.StabilisesCompletedLatticeIffLocalMatrixIntegralStatement
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.LocalMatrixDoubleCosetOfElementaryDivisorsStatement
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.IsInertAtOfUniqueUnramifiedPrimeStatement
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExistsComplexConjIsometryInertCompletionStatement
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExistsRingEquivTensorInertAdicCompletionStatement
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0100
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0063
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0105
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0102
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0110
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0113
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0033
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0067
+public import Formalism.SatakeDualWeyl.Bundle0002
+public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.FiniteResidueFieldAdicCompletionIntegers
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0030
 public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.UnitaryMemIntegralUnitaryDoubleCosetOfGLnDoubleCStatement
 
 @[expose] public section
@@ -217,7 +219,7 @@ theorem inert_of_idem {v : HeightOneSpectrum (𝓞 (maximalRealSubfield E))} {P 
       (y : E) = algebraMap (maximalRealSubfield E) E (x : maximalRealSubfield E) ∧ y ∈ P.asIdeal ∧ y ∉ P.asIdeal ^ 2) :
     IsInertAt (maximalRealSubfield E) E v P := by
   refine GlobalTheory.T.isInertAt_of_unique_unramified_prime E v P (fun x hx => (hP x hx).trans (not_congr ?_)) hu
-  rw [GlobalTheory.T.mem_integralFiniteAdelesTensor_iff_localOrders, ← locEmb_mem_locOrder_iff, ← mem_ordAt_iff]
+  rw [_root_.GlobalTheory.PlaceComp.IntLocal.mem_intA_iff, ← locEmb_mem_locOrder_iff, ← mem_ordAt_iff]
   constructor
   · intro h
     have := h v
@@ -250,10 +252,10 @@ theorem core (hc : CMData (maximalRealSubfield E) E) (V : HSpace E)
       ∃ a b, (IsFin hc V a ∧ Stab hc V a) ∧ Supp hc V e a ∧ (IsFin hc V b ∧ Stab hc V b) ∧ Supp hc V e b ∧
         g' = a * g * b := by
   have hur := unramified hc
-  obtain ⟨σ, π, hσE, hσσ, hσv, hσx, hσπ, hπ⟩ := GlobalTheory.T.exists_complexConj_isometry_inert_completion E v P hin
-  obtain ⟨ψ, hψE, hψσ, hψO⟩ := GlobalTheory.T.exists_ringEquiv_tensor_inert_adicCompletion E v P hin σ hσE hσv
+  obtain ⟨σ, π, hσE, hσσ, hσv, hσx, hσπ, hπ⟩ := _root_.GlobalTheory.InertConj.exists_conj_completion E v P hin
+  obtain ⟨ψ, hψE, hψσ, hψO⟩ := _root_.GlobalTheory.InertCompletion.exists_ringEquiv_completion E v P hin σ hσE hσv
   obtain ⟨h, hfr, hon⟩ := exists_orthonormal hc V v
-  obtain ⟨s1, s2, s3⟩ := GlobalTheory.T.adelicUnitary_supportedAtFinitePlace_eq_localUnitary _ E hc V v e he
+  obtain ⟨s1, s2, s3⟩ := _root_.GlobalTheory.SuppLocal.supp_local _ E hc V v e he
   let S : Subgroup (HA (AF (maximalRealSubfield E)) hc.sig V.gram) :=
     MonoidHom.ker (G := HA (AF (maximalRealSubfield E)) hc.sig V.gram)
       ((bc (infP (maximalRealSubfield E) E)).comp (HR (AF (maximalRealSubfield E)) hc.sig V.gram).subtype) ⊓

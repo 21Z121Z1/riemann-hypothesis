@@ -1,21 +1,21 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CharacteristicFunctionIntegralApply
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0928
 public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.ThetaMod
 public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.ExistsUniqueVec
-public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.HarishChandraFinite
-public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.ExistsNormLeHeightPow
+public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.Bundle0004
+public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.Bundle0007
 public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.CharacteristicFunctionIntegralApply
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsBoundUnitary
-public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.UnifModGrowthOfIsUnifModerate
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsRepsOfOpenCompact
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ThetaFunctionContinuousInvariant
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ContinuousDefiniteThetaIntegralVectorFormStatement
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ModerateGrowthDefiniteThetaIntegralVectorFormStatement
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.MultiplicitySpaceAllLevelsValuesSmoothCuspidalStatement
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.NonemptyAgreeRealOfReadGalois
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CoreClausesOfWeakCharacterisation
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0827
+public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.Bundle0007
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0316
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0302
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0299
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0300
+public import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.ExistsHeightLeTwoMulQuotHeight
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0649
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0942
 
 @[expose] public section
 
@@ -168,15 +168,15 @@ theorem mem_Om_of_theta : GlobalTheory.Published.HarishChandraFinite → GlobalT
         ‖((u : (R.MW i (sg0 D A3.A)).sm τ) : (R.MW i (sg0 D A3.A)).H τ)‖ = 1 : ↥(lowT (R.MW i (sg0 D A3.A)) τ)) :
           (R.MW i (sg0 D A3.A)).sm τ)) := by
       simp [yv, kUnit, PiTensorProduct.map_tprod, PiTensorProduct.lift.tprod]
-    obtain ⟨haut, hcu⟩ := GlobalTheory.T.multiplicitySpaceAllLevels_values_smooth_cuspidal R.θ (Y.PW i) (R.MW i (sg0 D A3.A)) _ hey
+    obtain ⟨haut, hcu⟩ := _root_.GlobalTheory.MinfCusp.minf_val_autCusp R.θ (Y.PW i) (R.MW i (sg0 D A3.A)) _ hey
       (fun τ => ((Classical.epsilon fun u : ↥(lowT (R.MW i (sg0 D A3.A)) τ) =>
         ‖((u : (R.MW i (sg0 D A3.A)).sm τ) : (R.MW i (sg0 D A3.A)).H τ)‖ = 1 : ↥(lowT (R.MW i (sg0 D A3.A)) τ)) :
           (R.MW i (sg0 D A3.A)).sm τ))
     rw [← hyv] at haut hcu
     have hR := (GlobalTheory.Grow.rapidDec_of_cuspForm hP hθ haut hcu).conj
-    have hgr := GlobalTheory.T.moderateGrowth_definiteThetaIntegral_vectorForm R.ψ (Vc D i) (Wc D i) _ _ _ hω hpd _ _ hHV hfdV _
+    have hgr := _root_.GlobalTheory.ThetaLiftGrowth.modGrowth_thetaIntegral R.ψ (Vc D i) (Wc D i) _ _ _ hω hpd _ _ hHV hfdV _
       (valAct1 (omStd Ad i (t0 Y)) p φ) hφ' _ hc1 hc2
-    have hct := GlobalTheory.T.continuous_definiteThetaIntegral_vectorForm R.ψ (Vc D i) (Wc D i) _ _ _ hω hpd _ _ hHV hfdV _
+    have hct := _root_.GlobalTheory.ThetaIntegralCont.continuous_theta_integral_vector R.ψ (Vc D i) (Wc D i) _ _ _ hω hpd _ _ hHV hfdV _
       (valAct1 (omStd Ad i (t0 Y)) p φ) hφ' _ hc1 hc2
     have hinv : ∀ γ ∈ GQ (Wc D i), ∀ g, (∫ h in R.fdV i (t0 Y),
         thetaKO (R.ωP i (t0 Y)) h (γ * g)

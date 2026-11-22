@@ -1,8 +1,7 @@
 module
 
 public import Formalism.LocalToGlobal.Divisibility.RecBridge
-public import Formalism.LocalToGlobal.Divisibility.DivisibilityConstruction.ShiftOfColTie
-public import Formalism.LocalToGlobal.Divisibility.DivisibilityConstruction.RBNum
+public import Formalism.LocalToGlobal.Divisibility.DivisibilityConstruction.Bundle0001
 public import Formalism.LocalToGlobal.Divisibility.RecBridgeNum
 public import Formalism.LocalToGlobal.Divisibility.SmallTies
 

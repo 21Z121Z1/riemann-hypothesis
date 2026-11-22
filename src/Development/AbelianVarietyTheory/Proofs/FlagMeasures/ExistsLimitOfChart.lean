@@ -1,11 +1,11 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.LayerProd
+public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.Bundle0006
 public import Formalism.HarderNarasimhan.ShiftInvariance
 public import Formalism.RealPlaceAnalysis.FinalF
 public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.NonemptyCompactDualHaar
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ContinuousMatExp
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0057
 
 @[expose] public section
 

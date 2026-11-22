@@ -1,8 +1,8 @@
 module
 
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.HeckePairTop
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.Bundle0018
 public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IwahoriProjSurjective
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.IwMemIwC
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.Bundle0022
 public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IwahoriTraceOfBorelCasselman
 
 @[expose] public section

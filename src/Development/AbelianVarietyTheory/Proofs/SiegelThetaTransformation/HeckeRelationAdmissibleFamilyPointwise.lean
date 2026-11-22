@@ -1,11 +1,11 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.SpanningFamilies.IsHeatZero
+public import Development.AbelianVarietyTheory.Definitions.SpanningFamilies.Bundle0001
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.SquareIntegrability.GCauchyStatement
 public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.NeBotOfNorm
 public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.TwistAdmissible
-public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.CardKerMatrixFiniteField
+public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.Bundle0014
 
 @[expose] public section
 

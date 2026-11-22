@@ -1,12 +1,11 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.RepresentsOfComputes
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.DetMemSpanAdjugate
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.EqOneOfMemProKer
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CokEquivOfExact
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CoeffMemOfPowMul
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CoeffMemOfToLamMem
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0383
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0008
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0361
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0357
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0005
 
 @[expose] public section
 

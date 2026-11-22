@@ -2,16 +2,16 @@ module
 
 public import Formalism.SharpRestriction.GrowthBounds.ChartRank.HypVinRec
 public import Formalism.SharpRestriction.GrowthBounds.ChartRank.HypInvLe
-public import Formalism.SharpRestriction.GrowthBounds.ChartRank.HypForms
+public import Formalism.SharpRestriction.GrowthBounds.ChartRank.Bundle0002
 public import Formalism.SharpRestriction.GrowthBounds.ChartRank.HypEvChain
 public import Formalism.SharpRestriction.GrowthBounds.ChartRank.HypLat
 public import Formalism.SharpRestriction.GrowthBounds.ChartRank.HypChi
 public import Formalism.SharpRestriction.GrowthBounds.ChartRank.IntWOfPow
 public import Formalism.SharpRestriction.GrowthBounds.ChartRank.HypFin
-public import Formalism.SharpRestriction.GrowthBounds.ChartedClasses.ValIntN
-public import Formalism.SharpRestriction.GrowthBounds.ChartedClasses.ClsChartedLabAt
-public import Formalism.SharpRestriction.GrowthBounds.ChartComparison.LocTiesOf
-public import Formalism.SharpRestriction.GrowthBounds.IntegralWeylLatticeSpan
+public import Formalism.SharpRestriction.GrowthBounds.ChartedClasses.Bundle0004
+public import Formalism.SharpRestriction.GrowthBounds.ChartedClasses.Bundle0003
+public import Formalism.SharpRestriction.GrowthBounds.ChartComparison.Bundle0002
+public import Formalism.SharpRestriction.GrowthBounds.Bundle0006
 
 @[expose] public section
 

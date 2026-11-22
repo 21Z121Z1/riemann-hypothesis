@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.FiniteInvolutionFixedUnitEqMulConj
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0004
 
 @[expose] public section
 

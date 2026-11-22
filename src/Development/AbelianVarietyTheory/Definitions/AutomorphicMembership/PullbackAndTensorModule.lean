@@ -3,11 +3,11 @@ module
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.MultiplicationLatticeSecond
 public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.ThetaCubIsPullCubical
-public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.ExistsDualFamilySelfDualHermitianSpace
-public import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.SmoothOfRelativeDimensionTensor
+public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.Bundle0059
+public import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.Bundle0046
 public import Formalism.HermitianLattices.StatementLat
 public import Formalism.LocalToGlobal.ProjectiveLattices.ThShort
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PullbackSections.HolomorphicFamilies.CmHostUnitAddConjEqOne
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PullbackSections.HolomorphicFamilies.Bundle0011
 
 @[expose] public section
 

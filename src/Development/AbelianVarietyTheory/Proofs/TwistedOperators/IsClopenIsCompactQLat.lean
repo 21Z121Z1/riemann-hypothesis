@@ -3,7 +3,7 @@ module
 public import Mathlib
 public import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.DualLiftInvariance
 public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.PairOperatorStatement
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IsClopenIsCompactMapsPair
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0038
 
 @[expose] public section
 

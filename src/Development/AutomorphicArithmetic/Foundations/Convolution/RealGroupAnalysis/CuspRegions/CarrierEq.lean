@@ -1,7 +1,7 @@
 module
 
-public import Development.AutomorphicArithmetic.Foundations.Convolution.CentreSplitting.DefsObj
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.FoundBridge
+public import Development.AutomorphicArithmetic.Foundations.Convolution.CentreSplitting.Bundle0001
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.Bundle0008
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.RTwist
 
 @[expose] public section

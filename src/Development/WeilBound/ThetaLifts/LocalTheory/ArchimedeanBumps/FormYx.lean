@@ -1,7 +1,7 @@
 module
 
 public import Development.WeilBound.ThetaLifts.LocalTheory.ArchimedeanBumps.HeisenbergActionAddOfOrthogonal
-public import Development.WeilBound.ThetaLifts.FrameEstimates.GrpTop
+public import Development.WeilBound.ThetaLifts.FrameEstimates.Bundle0003
 
 @[expose] public section
 

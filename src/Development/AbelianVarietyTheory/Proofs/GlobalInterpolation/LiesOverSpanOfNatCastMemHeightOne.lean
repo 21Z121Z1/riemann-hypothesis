@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Formalism.LocalToGlobal.Columns.ScaledRamifiedLattice
+public import Formalism.LocalToGlobal.Columns.Bundle0004
 
 @[expose] public section
 

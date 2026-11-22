@@ -1,8 +1,8 @@
 module
 
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.CommutativeAlgebra.FramedTwoCoboundaries
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.CommutativeAlgebra.HhGroup
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.CommutativeAlgebra.HhSmall
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.CommutativeAlgebra.Bundle0006
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.CommutativeAlgebra.Bundle0007
 
 @[expose] public section
 

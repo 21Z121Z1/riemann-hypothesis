@@ -1,9 +1,11 @@
 module
 
-public import Development.WeilBound.CoreStatements.AutomorphicKernels.SiegelWeilFormula.THeis
+public import Development.WeilBound.CoreStatements.AutomorphicKernels.SiegelWeilFormula.Bundle0001
 public import Development.WeilBound.CoreStatements.AutomorphicKernels.SiegelWeilFormula.ThetaBijections.JjMulJj
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DarbouxCoordinateChangeRealisedWithDoubleStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CharacterInvariantAdelicFormEqMulEvalZeroStatement
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1723
+public import Mathlib
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1797
+public import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.WeilTensorModels
 
 @[expose] public section
 
@@ -87,7 +89,7 @@ theorem T_chart (d : SD σ) : ∃ (τ : d.κ ≃ Ix d) (S0 : ((d.κ → AF F) �
       rw [hw]; funext x; simp [schr]
     rw [e1, hl', LinearMap.comp_apply, rhoS' _ φ hφ, LinearMap.comp_apply]
     exact d.ok.dbl.kill Z _ (hop.pres' φ hφ)
-  obtain ⟨c, hc⟩ := GlobalTheory.T.character_invariant_adelic_form_eq_mul_eval_zero F d.B.ψ hψ d.κ l' hadm hinv
+  obtain ⟨c, hc⟩ := _root_.GlobalTheory.CharInvForm.main F d.B.ψ hψ d.κ l' hadm hinv
   refine ⟨τ, S0, S0', c, hop, fun Φ hΦ X => ?_⟩
   have hΨ : d.dd.rho d.B.ψ (X * (incM F d.b.1.toCols₂)ᵀ) Φ ∈ schA F d.κ :=
     GlobalTheory.HeisSchA.schr_mem_schA d.B.ψ hψ _ _ hΦ

@@ -2,8 +2,8 @@ module
 
 public import Mathlib
 public import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.FrameDefinitions.HasCoverByOne
-public import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.FrameDefinitions.EqZeroOfIsIsoSub
-public import GroundTheory.HeightsAndTheta.Heights.Regularisation.BoundedStatements
+public import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.FrameDefinitions.Bundle0001
+public import GroundTheory.HeightsAndTheta.Heights.Regularisation.Bundle0002
 
 @[expose] public section
 

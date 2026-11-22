@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.ExistsFactorOrder
+public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0002
 
 @[expose] public section
 

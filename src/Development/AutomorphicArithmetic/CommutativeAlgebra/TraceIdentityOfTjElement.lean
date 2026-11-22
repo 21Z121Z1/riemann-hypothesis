@@ -2,9 +2,9 @@ module
 
 public import Mathlib
 public import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.IntegralStructures.GeometricFlagBases.FinModel
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsLatticeVectorEqNsmulOfAdelicNsmulStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntDvdOfEqNatMulIntegralAdeleAwayFromPStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LatticeCompletionEqLatticeVectorAddNsmulStatement
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2716
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2723
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2728
 
 @[expose] public section
 

@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Divisors.IsChartMember
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0063
 
 @[expose] public section
 

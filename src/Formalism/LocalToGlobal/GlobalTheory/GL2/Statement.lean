@@ -1,7 +1,6 @@
 module
 
-public import Formalism.SharpRestriction.GlobalSchurBounds.ShortIntervalPrimes
-public import Formalism.SharpRestriction.GlobalSchurBounds.Chosen
+public import Formalism.SharpRestriction.GlobalSchurBounds.Bundle0001
 public import Formalism.LocalToGlobal.UnitaryNorms.MemFIffReal
 public import Formalism.SizeWindowBrackets.Chain2aCoreNoAnalytic
 public import Formalism.LandauZeroFreeBounds.SiegelWalfiszAP

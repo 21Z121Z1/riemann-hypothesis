@@ -2,18 +2,18 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.Divisors.IndEtOfForallFinset
-public import Development.AbelianVarietyTheory.Definitions.Divisors.SecClass
-public import Development.AbelianVarietyTheory.Definitions.Divisors.DivisorSupportCondition
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EtaleSheafSectionsExtAndGlueStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ChosenInjectiveResolutionEtaleSheafSectionsExactStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FreeHomSectionsStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EtaleCochainEvalOnSimplexBasicPropertiesStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SchClsCocycleSecStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DegreeZeroSectionClassPropertiesStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CupEqClassOfIsAWStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TateTwistSectionsLocallyGeneratedStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TateTwistResolutionPairingSpecAndCupUniqueStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TateTwistUnitClassRootClassSpecStatement
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0006
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0007
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0306
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0433
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0350
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0340
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0363
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0461
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0399
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0430
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0550
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0471
 
 @[expose] public section
 
@@ -23,7 +23,7 @@ open CategoryTheory Limits AlgebraicGeometry Opposite CochainComplex CochainComp
 namespace UpperTheory.Et
 
 structure SlopeTestRemainingChoices : Prop where
-  sheaf : type_of% @GlobalTheory.T.etaleSheafSections_ext_and_glue
+  sheaf : type_of% @_root_.GlobalTheory.EtC.sec_ext_glue
   resol : type_of% @GlobalTheory.T.chosenInjectiveResolutionEtaleSheaf_sections_exactness
   freeS : type_of% @GlobalTheory.T.free_sections_ext_res_map
   evs : type_of% @GlobalTheory.T.etaleCochainEvalOnSimplex_basic_properties

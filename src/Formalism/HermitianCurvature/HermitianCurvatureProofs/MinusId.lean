@@ -1,9 +1,9 @@
 module
 
 public import Formalism.HermitianCurvature.StatementTL
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.FrameOfAdmissibleWord
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0024
 public import Formalism.HermitianCurvature.HermitianCurvatureProofs.L0ConstantPartCommute
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.FreeOf2RmatrixTranspose
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0019
 
 @[expose] public section
 

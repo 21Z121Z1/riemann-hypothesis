@@ -2,9 +2,9 @@ module
 
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.LinkedUnramifiedChains.TeichmullerParts.UnramifiedTrivialInertialType
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.HeckeAlgebras.UpOperatorEigenvalues.MemOrdC
-public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.CuspidalIrreducibleSubrep
-public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.SpecialLinearTensor
-public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.SpecialLinearMap
+public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0010
+public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0067
+public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0057
 
 @[expose] public section
 

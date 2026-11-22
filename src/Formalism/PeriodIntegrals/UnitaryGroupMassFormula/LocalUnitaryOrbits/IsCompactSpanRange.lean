@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LocalUnitaryOrbits.MemUniformizerHermitianIdeal
-public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.FirstStatementA
+public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LocalUnitaryOrbits.Bundle0002
+public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0023
 
 @[expose] public section
 

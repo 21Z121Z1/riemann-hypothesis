@@ -1,7 +1,7 @@
 module
 
 public import Development.WeilBound.RepresentationTheoryGL.SiegelWeilProof.HolomorphicContinuation.NullSec
-public import GroundTheory.GlobalFields.TateThesis.GaussianSchwartz
+public import GroundTheory.GlobalFields.TateThesis.Bundle0002
 
 @[expose] public section
 

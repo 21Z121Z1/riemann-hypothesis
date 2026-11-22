@@ -1,18 +1,18 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Divisors.SRelOneOneIff
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0017
 public import Development.AbelianVarietyTheory.Definitions.ModuliSpaces.ExistsArBaseAway
-public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.SiegelToroidalIntegral
-public import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.AbelianSchemeLawsUnconditional
-public import Development.AbelianVarietyTheory.Proofs.CoherentCohomologyProofs.FiniteFibrePoints
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SiegelObjectPullbackLevelPowerCalculus
-public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsThetaLevelAbelianSchemePullback
+public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.Bundle0012
+public import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.Bundle0029
+public import Development.AbelianVarietyTheory.Proofs.CoherentCohomologyProofs.Bundle0029
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1983
+public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0117
 public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.HasThetaConstantsIffOfThetaLevelPullback
-public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.IsMonHomLift
+public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0128
 public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.SiegelPullbackIffEighthPowerPullback
 public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.EighthPowerShapeDependsOnlyOnMatrices
-public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ThetaPointDeterminesShapeComplex
+public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0208
 public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.BijectiveTensorOmegaStd
 
 @[expose] public section
@@ -246,7 +246,7 @@ theorem tMap_of_hasTh (hL : Out.Laws) (hL2 : Out.Laws2) (J : Type) [Finite J]
     ∃ j₀ : ℕ, ∀ j ≥ j₀, ∀ (o : Type) [CommRing o] (b : TBase o ((n ^ j) ^ 2)) (K : Type) [Field K] [IsAlgClosed K]
       (s : Sp K ⟶ Sp o) (t t' : TObj g ((n ^ j) ^ 2) J b s) (v : Ix g ((n ^ j) ^ 2) → K),
       t.Shape Mat κ → t'.Shape Mat κ → t.HasTh (𝟙 _) v → t'.HasTh (𝟙 _) v → TMap t' t (𝟙 _) := by
-  obtain ⟨j₀, H⟩ := GlobalTheory.T.exists_theta_family_from_very_dense_points hL hL2 g J Mat κ n hn hodd
+  obtain ⟨j₀, H⟩ := _root_.GlobalTheory.ZM.exists_tObj_of_veryDense hL hL2 g J Mat κ n hn hodd
   refine ⟨j₀, fun j hj o _ b K _ _ s t t' v h1 h1' h2 h2' => ?_⟩
   have hid : spMap (RingHom.id K) = 𝟙 (Sp K) := Spec.map_id (CommRingCat.of K)
   obtain ⟨em, hem⟩ := exists_spMap s
@@ -260,7 +260,7 @@ theorem tMap_of_hasTh (hL : Out.Laws) (hL2 : Out.Laws2) (J : Type) [Finite J]
   obtain ⟨t₀, -, h₀⟩ := H j hj o b K em v hvd
   have m := h₀ K (RingHom.id K) t h1 h2
   have m' := h₀ K (RingHom.id K) t' h1' h2'
-  refine ((GlobalTheory.T.thetaLevelPullback_id_comp_cancel o g _ J b _ _ _ _ _ _ t₀ t t').2 _ (𝟙 _) m).2 ?_
+  refine ((_root_.GlobalTheory.ZM.tmap_id_comp_cancel o g _ J b _ _ _ _ _ _ t₀ t t').2 _ (𝟙 _) m).2 ?_
   rwa [Category.id_comp]
 
 theorem exists_act {W : Matrix (Fin 8) (Fin 8) ℤ} {J : Type} {a : J → Matrix (Fin 8) (Fin 8) ℤ}

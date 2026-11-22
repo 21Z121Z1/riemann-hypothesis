@@ -1,16 +1,18 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.IsLatticeFamily
+public import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.Bundle0005
 public import Development.AutomorphicSpectrum.Definitions.DivisibilityTowers.BundleChernComparison
-public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.DvrBundleStatementAStatement
-public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.DvrBundleStatementDStatement
-public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.LatticeFamiliesGlueToBundleStatement
-public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.ChartBundleProductStatement
-public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.LineBundleChartGenericComparisonStatement
-public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.ChartBundleIntersectionSymmetryStatement
-public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.LatticeFamilyInjectiveModelFactsStatement
-public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.DualBundleIntersectionStatement
+public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.Bundle0074
+public import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.Bundle0004
+public import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.Bundle0001
+public import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.StatementsBundles
+public import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.Bundle0025
+public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.Bundle0026
+public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.Bundle0029
+public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.Bundle0077
+public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.LatticeFamilyInjectiveModelFacts
+public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.Bundle0076
 
 @[expose] public section
 
@@ -243,15 +245,15 @@ theorem main : ∀ (O : Type) [CommRing O] [IsDomain O] [IsDiscreteValuationRing
         MvPolynomial.algebraMap_apply, ha]
     rw [hc] at this
     simpa using this
-  have hfc := GlobalTheory.T.lattice_family_injective_model_facts O Ω K ι x hinj p hp w χ φ D hfam
+  have hfc := _root_.GlobalTheory.CompanionTheory.Ar.Num.FamConstr.main O Ω K ι x hinj p hp w χ φ D hfam
   have hbase := hfam.base
   have hch := hfam.char
   have hp0 : (p : O) ≠ 0 := hch.1
   have hpΩ : algebraMap O Ω (p : O) = (p : Ω) := map_natCast _ _
-  have hBa := GlobalTheory.T.dvr_bundle_statement_a O Ω K ι
+  have hBa := _root_.GlobalTheory.CompanionTheory.Ar.Num.Cocycle.main O Ω K ι
   have hKK : ∀ i : ℕ, ∃ E : ChartBundle O (mseg x) (r (φ τ)) (Fin (r (φ τ)) → Ω),
       ∀ c, mseg x c ≠ 0 → E.lat c = (D c).kk (φ τ) i := fun i =>
-    (GlobalTheory.T.lattice_families_glue_to_bundle O Ω K ι x (r (φ τ)) _).1 _ ((hfc.2 (φ τ)).2.2.1 i)
+    (_root_.GlobalTheory.CompanionTheory.Ar.Num.BundleOfFamily.main O Ω K ι x (r (φ τ)) _).1 _ ((hfc.2 (φ τ)).2.2.1 i)
       (fun c hc => (hG2 c hc).kk (φ τ) i)
   choose KK hKK using hKK
 
@@ -284,7 +286,7 @@ theorem main : ∀ (O : Type) [CommRing O] [IsDomain O] [IsDiscreteValuationRing
       ck O x d 1 (Xb (φ τ) i) T k L Q - (p : ℤ) ^ k * ck O x d 1 (Xb τ i) T k L Q := by
     intro i
     obtain ⟨u, a, hu, hl⟩ := hline τ i
-    obtain ⟨PB, hPB⟩ := (GlobalTheory.T.chart_bundle_product O Ω K ι x).2.2.1 (u ^ (p : ℤ)) ((p : ℤ) • a)
+    obtain ⟨PB, hPB⟩ := (_root_.GlobalTheory.CompanionTheory.Ar.BundleOps.main O Ω K ι x).2.2.1 (u ^ (p : ℤ)) ((p : ℤ) • a)
       (zpow_ne_zero _ hu)
     have hA : IsLine O x u a (Xb τ i).lat := fun c hc v => by
       rw [hXb τ i c hc]
@@ -294,7 +296,7 @@ theorem main : ∀ (O : Type) [CommRing O] [IsDomain O] [IsDiscreteValuationRing
       intro c hc
       refine powSpan_line (e := u * chartMon x c a) (fun v => hl c hc v) (fun v => ?_)
       rw [hPB c hc v, chartMon_smul, zpow_natCast, mul_pow]
-    obtain ⟨hPT, hpow⟩ := GlobalTheory.T.line_bundle_chart_generic_comparison O Ω K ι x d hmod (Xb τ i) T PB u a (p : ℤ) hu hA hT
+    obtain ⟨hPT, hpow⟩ := _root_.GlobalTheory.CompanionTheory.Ar.CkLinePow.main O Ω K ι x d hmod (Xb τ i) T PB u a (p : ℤ) hu hA hT
       (hXT τ i) hPB
     have hfacts := fun c (hc : mseg x c ≠ 0) => step_facts (D c) (hbase c hc) (τ := φ τ)
       (χ := fun a => algebraMap O Ω (χ (φ τ) a)) (i := i)
@@ -326,7 +328,7 @@ theorem main : ∀ (O : Type) [CommRing O] [IsDomain O] [IsDiscreteValuationRing
       · rw [hPBlat c hc] at hv
         rw [map_one, one_smul, hXb _ i c hc]
         exact (f1 v 0 ((f4 v).2 hv)).1
-    have hEq := GlobalTheory.T.chart_bundle_intersection_symmetry O Ω K ι x d 1 (r (φ τ)) Ω (Fin (r (φ τ)) → Ω) (Xb (φ τ) i) PB (KK i)
+    have hEq := _root_.GlobalTheory.CompanionTheory.Ar.Num.ck_eq_of_quotEquiv O Ω K ι x d 1 (r (φ τ)) Ω (Fin (r (φ τ)) → Ω) (Xb (φ τ) i) PB (KK i)
       (KK ((i : ℕ) + 1)) hmod hXP (hSG _ _ i.2.le (Nat.succ_le_of_lt i.2)) hq k hk1 hk2 q L Q hQ
     have hsym := GroundTheory.Heights₂.Heights.IndefiniteRowSideFullHecke.NumbersDVR.Bundles.sameGeneric_symm O hPT
     have hc1 := (hBa x d 1 Ω (Xb (φ τ) i) T PB hmod (hXT _ i) hsym k hk1 hk2 q L Q hQ).1
@@ -358,13 +360,13 @@ theorem main : ∀ (O : Type) [CommRing O] [IsDomain O] [IsDiscreteValuationRing
   have hQ' : Q.IsHomogeneous (d - (k - 1)) := by
     have : d - (k - 1) = d + 1 - k := by omega
     rwa [this]
-  have hdu := (GlobalTheory.T.dual_bundle_intersection O Ω K ι x d (r (φ τ)) _ _ (dotB (r (φ τ))) (Lie (φ τ)) (Lie (φ τ)) (KK 0)
+  have hdu := (_root_.GlobalTheory.CompanionTheory.Ar.Num.ck_rootNum_dual O Ω K ι x d (r (φ τ)) _ _ (dotB (r (φ τ))) (Lie (φ τ)) (Lie (φ τ)) (KK 0)
     (KK 0) hmod hrefl hd hd).2 (k - 1) (by omega) q L Q hQ' (p : O) hp0
   have hscale : ∀ c, mseg x c ≠ 0 → ∀ v, v ∈ (KK n).lat c ↔
       ∃ e ∈ (KK 0).lat c, v = algebraMap O Ω (p : O) • e := by
     intro c hc v
     rw [hKK n c hc, hKK 0 c hc, kk_top (D c) (hbase c hc), kk_zero (D c) (hbase c hc), hpΩ, mem_mulLat]
-  have hBd := (GlobalTheory.T.dvr_bundle_statement_d O Ω K ι x d (r (φ τ)) _ (KK 0) (KK n) (p : O) hp0 hmod hscale k hk1 hk2
+  have hBd := (_root_.GlobalTheory.CompanionTheory.Ar.Num.Constants.main O Ω K ι x d (r (φ τ)) _ (KK 0) (KK n) (p : O) hp0 hmod hscale k hk1 hk2
     q L Q hQ).1
   have hsum : ∑ i : Fin n, (ck O x d 1 (Xb (φ τ) i) T k L Q - (p : ℤ) ^ k * ck O x d 1 (Xb τ i) T k L Q) =
       ck O x d _ (KK 0) (KK n) k L Q := by

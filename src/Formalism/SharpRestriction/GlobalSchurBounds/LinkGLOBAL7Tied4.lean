@@ -8,7 +8,7 @@ public import Formalism.LocalToGlobal.HermitianForms.FormsTied
 public import Formalism.GradedWeylDivisibility.StatementE
 public import Formalism.SuccessiveMinima.StatementMink
 public import Formalism.LocalToGlobal.GlobalTheory.GL4.PColStd
-public import Formalism.LocalToGlobal.HermitianForms.BothSym
+public import Formalism.LocalToGlobal.HermitianForms.Bundle0006
 
 @[expose] public section
 

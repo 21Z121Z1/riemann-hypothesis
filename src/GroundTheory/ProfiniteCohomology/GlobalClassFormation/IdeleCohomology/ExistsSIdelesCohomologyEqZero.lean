@@ -3,7 +3,7 @@ module
 public import Mathlib
 public import GroundTheory.GlobalFields.IdeleGroups.SIdeleGroups.Galois
 public import GroundTheory.GlobalFields.IdeleGroups.GaloisOnAdeles.Action
-public import GroundTheory.ProfiniteCohomology.ColimitUnion
+public import GroundTheory.ProfiniteCohomology.Bundle0005
 
 @[expose] public section
 

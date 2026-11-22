@@ -3,9 +3,9 @@ module
 public import Mathlib
 public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.UnitsLiftSpec
 public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.ExistsUniqueHcharOfFiniteOrder
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsPadicAlgClRingEquivComplexCompEqOfCountabl
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsOpenKerOfInfConn
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.DenseRangeUnits
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0022
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0104
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0099
 
 @[expose] public section
 

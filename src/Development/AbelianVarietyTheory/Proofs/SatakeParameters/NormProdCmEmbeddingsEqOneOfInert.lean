@@ -2,10 +2,10 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.SameOffRefl
-public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.NatCastMemOfPlace
+public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.Bundle0016
 public import Formalism.LocalToGlobal.GlobalTheory.GL3.NormNatCoprime
 public import Formalism.SharpRestriction.GlobalSchurBounds.GlobalRankLatticeProofs.EqOfLeOfAbsNormEq
-public import Formalism.LocalRingCardinality.ConjSqrtMinusD
+public import Formalism.LocalRingCardinality.Bundle0001
 
 @[expose] public section
 

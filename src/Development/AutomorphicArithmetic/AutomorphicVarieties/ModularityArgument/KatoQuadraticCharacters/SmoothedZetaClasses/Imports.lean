@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.SumTranslate
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.SmoothedPresOfShCoc
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0378
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.KatoQuadraticCharacters.SmoothedZetaClasses.Hco
 
 @[expose] public section

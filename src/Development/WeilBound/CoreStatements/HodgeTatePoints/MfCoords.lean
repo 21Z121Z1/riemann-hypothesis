@@ -2,13 +2,11 @@ module
 
 public import Mathlib
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.DvrData
-public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.GlueApplyOfNotInFibre
-public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.MemEigSpOfMemHtDual
-public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsFullLevelAt
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.IsClopenSpecializationsGenPt
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.GermGenPtInjectiveRangeRegAt
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.Bundle0005
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.Bundle0006
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0013
 public import Development.AbelianVarietyTheory.Proofs.HomogeneousIdeals.EssFiniteTypeOfFiniteDimensional
-public import Development.WeilBound.CoreStatements.HodgeTatePoints.MfBase
+public import Development.WeilBound.CoreStatements.HodgeTatePoints.Bundle0036
 
 @[expose] public section
 

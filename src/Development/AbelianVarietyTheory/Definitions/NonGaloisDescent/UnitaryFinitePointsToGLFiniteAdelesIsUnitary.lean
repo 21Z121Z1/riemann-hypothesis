@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.FinIso
+public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0020
 public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsFinsetDefiniteUnitaryDoubleCosets
 
 @[expose] public section

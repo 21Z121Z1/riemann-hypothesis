@@ -3,8 +3,8 @@ module
 public import Formalism.SharpRestriction.GrowthBounds.SumRescaleTySTwo
 public import Formalism.SharpRestriction.GrowthBounds.ConstantCoeffUnshiftLogarithm
 public import Formalism.SharpRestriction.GrowthBounds.R1sExpLowHolds
-public import Formalism.LocalToGlobal.CharacterGerms.FrobPowSmul
-public import Formalism.LocalToGlobal.CharacterGerms.MmMulSeries
+public import Formalism.LocalToGlobal.CharacterGerms.Bundle0024
+public import Formalism.LocalToGlobal.CharacterGerms.Bundle0025
 
 @[expose] public section
 

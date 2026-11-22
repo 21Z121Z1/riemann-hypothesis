@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.ImportsExtraTer
-public import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.MemClosureOfMemChartRing
+public import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.Bundle0043
+public import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.Bundle0050
 
 @[expose] public section
 

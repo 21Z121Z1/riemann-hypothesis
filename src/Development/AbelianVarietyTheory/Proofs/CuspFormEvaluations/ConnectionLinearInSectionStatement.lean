@@ -1,12 +1,11 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.ConnectionLinearInSection
+public import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.Bundle0016
 public import Formalism.LocalToGlobal.ProjectiveLattices.ThShort
-public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.ThExprUniqOfChartIndep2
-public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.ExpTie
-public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.CIndBC
-public import Formalism.LocalToGlobal.ProjectiveLattices.IsExpChart
+public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0007
+public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0006
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0012
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.SecBaseChangeAnySt
 
 @[expose] public section

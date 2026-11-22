@@ -1,8 +1,8 @@
 module
 
-public import Development.AbelianVarietyTheory.Definitions.Divisors.DivisorSupportCondition
-public import Development.AutomorphicArithmetic.CommutativeAlgebra.AcyclicSpecFiniteAlgebraStrictHenselian
-public import Development.AutomorphicArithmetic.CommutativeAlgebra.TwistCohomologyCommutesWithFilteredColimits
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0007
+public import Development.AutomorphicArithmetic.CommutativeAlgebra.Bundle0040
+public import Development.AutomorphicArithmetic.CommutativeAlgebra.Bundle0043
 
 @[expose] public section
 

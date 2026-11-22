@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.SignatureExists
+public import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Bundle0003
 public import Development.AbelianVarietyTheory.Proofs.CovolumeBounds.IntegralConjInnerMulInnerOfIsEmptyEquiv
 public import Development.AbelianVarietyTheory.Definitions.Foundations.HermitianSpaceBaseLatticeEqFrameLattice
 

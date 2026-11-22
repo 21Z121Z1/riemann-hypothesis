@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import GroundTheory.HeightsAndTheta.Heights.Regularisation.StPuncturedExpOrder
+public import GroundTheory.HeightsAndTheta.Heights.Regularisation.Bundle0001
 
 @[expose] public section
 

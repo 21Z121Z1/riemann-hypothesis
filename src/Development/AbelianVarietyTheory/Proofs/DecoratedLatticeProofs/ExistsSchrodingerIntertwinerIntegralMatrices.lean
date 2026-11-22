@@ -3,8 +3,8 @@ module
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.Foundations.MatrixMeasurableSpace
 public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.LinearIndependentWave
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.MatrixIntegersModNatFinite
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ExistsNeZeroOfEventually
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0009
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0008
 
 @[expose] public section
 

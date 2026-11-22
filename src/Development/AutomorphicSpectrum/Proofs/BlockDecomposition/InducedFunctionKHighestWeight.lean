@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.OrderedCechToCatCochainsOneApplyValueAtSubset
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.EuOfDifferentiableAt
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.InducedFunctionAtOne
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0422
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0389
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0441
 
 @[expose] public section
 

@@ -3,7 +3,7 @@ module
 public import CompanionTheory.HarishChandraModules.KFiniteAnalyticVectors.AnalyticIntertwiners.PCDesc
 public import CompanionTheory.HarishChandraModules.KFiniteAnalyticVectors.OrbitDerivatives.EtaleClosedPointLiftsSimpleRootsMonic
 public import Development.WeilBound.HeckeVectors.SmoothVectors.SobolevApproximation.SobApproxHolds
-public import Formalism.LocalToGlobal.IndefiniteReal.SmExpSmulContDiff
+public import Formalism.LocalToGlobal.IndefiniteReal.Bundle0022
 
 @[expose] public section
 

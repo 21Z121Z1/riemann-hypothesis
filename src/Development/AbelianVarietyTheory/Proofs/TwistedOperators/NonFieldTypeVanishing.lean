@@ -4,12 +4,18 @@ public import Mathlib
 public import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.NonFieldTypeVanishing
 public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.HasOrbIntTensorOfHasOrbInt
 public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsCyclicOfFiniteQuotient
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SelfAdjointFactorIdempotentOrthogonalSplittingRaStatement
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.WeightedOrbitalIntegralTypeTestVanishStatement
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.AnisotropicTorusFundamentalDomainFiniteMeasureStatement
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ClassTermEqVolumeMulOrbitalIntegralStatement
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.RegularSemisimpleUnitaryGroupConcreteStatement
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.TypeIdempotentConstantTermVanishStatement
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0406
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0040
+public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.Bundle0012
+public import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.Bundle0020
+public import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.Bundle0022
+public import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.Bundle0016
+public import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.CentralizerTensorForms
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.WeightedOrbitalIntegralTypeTestVanish
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.AnisotropicTorusFundamentalDomainFiniteMeasure
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0204
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0119
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0186
 
 @[expose] public section
 
@@ -32,12 +38,12 @@ theorem localClause {T : TypeDataG V} {U : AuxiliaryPlaceHermitianSpace V} {μf 
     {ff : ∀ v, GLoc D.sp.cm.sig V.gram v → ℂ} (hμf : ∀ v, (μf v).IsHaarMeasure) (hf : IsTestFin T U μf ff)
     {γ : GRat D.sp.cm.sig V.gram} (hγ : IsNonFieldAniso D.sp.cm.sig V.gram γ.1.1) : LocalClause T μf ff γ := by
   intro k K _ _ e i
-  obtain ⟨h1, h2⟩ := GlobalTheory.T.selfAdjointFactorIdempotent_orthogonal_splitting_rank GlobalTheory.T.regularSemisimple_unitaryGroup_concrete D V γ hγ.1 k K e i hγ
+  obtain ⟨h1, h2⟩ := _root_.GlobalTheory.FactorSplit.factorIdem_orthSplit_rank _root_.GlobalTheory.RegSSObj.regularSemisimple D V γ hγ.1 k K e i hγ
   refine ⟨h1, h2, fun v hv dt hdt => ?_⟩
   obtain ⟨hee, -, -, hcomm, hpos, hlt⟩ := h1
   have hγε : γ.1.1 * factorIdem e i = factorIdem e i * γ.1.1 :=
     hcomm _ (Algebra.self_mem_adjoin_singleton _ _)
-  have h := GlobalTheory.T.weightedOrbitalIntegral_typeTest_vanish GlobalTheory.T.typeIdempotent_constantTerm_vanish D V T U μf ff hf v (hμf v) γ (factorIdem e i) hγ.1 hee hγε hpos hlt hv 1
+  have h := _root_.GlobalTheory.TwistLocal.weighted_orbital_vanish _root_.GlobalTheory.TypeConstTerm.typeConstTermVanish D V T U μf ff hf v (hμf v) γ (factorIdem e i) hγ.1 hee hγε hpos hlt hv 1
     continuous_const (fun _ _ _ => rfl) (fun _ _ _ => rfl) dt
   have e1 : (fun x => (1 : GLoc D.sp.cm.sig V.gram v → ℂ) x *
       ff v (x⁻¹ * proj D.sp.cm.sig V.gram v (ratEmb D.sp.cm.sig V.gram γ) * x)) = conjFn (proj D.sp.cm.sig V.gram v (ratEmb D.sp.cm.sig V.gram γ)) (ff v) := by
@@ -64,7 +70,7 @@ theorem covol_lt_top {γ : GRat D.sp.cm.sig V.gram} (hγ : IsNonFieldAniso D.sp.
     (dt : Measure (cent (ratEmb D.sp.cm.sig V.gram γ))) [dt.IsHaarMeasure] (𝓣 : Set (cent (ratEmb D.sp.cm.sig V.gram γ)))
     (h𝓣 : IsFundamentalDomain ((GQ V).subgroupOf (cent (ratEmb D.sp.cm.sig V.gram γ))) 𝓣 dt) : dt 𝓣 < ⊤ := by
   obtain ⟨hreg, k, K, iF, iA, he, -, hK⟩ := hγ
-  exact GlobalTheory.T.anisotropic_torus_fundamentalDomain_finite_measure GlobalTheory.T.regularSemisimple_unitaryGroup_concrete D V γ hreg k K he hK dt 𝓣 h𝓣
+  exact _root_.GlobalTheory.AnisoCovol.covol_lt_top _root_.GlobalTheory.RegSSObj.regularSemisimple D V γ hreg k K he hK dt 𝓣 h𝓣
 
 
 instance discreteTopology_subgroupOf_cent (γ : GA D V) : DiscreteTopology ((GQ V).subgroupOf (cent γ)) :=

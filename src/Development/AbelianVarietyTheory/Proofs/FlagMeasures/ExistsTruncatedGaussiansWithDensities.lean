@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.SiegelMeanCc
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.GaussianQuadricDensityExistsPosContinuous
+public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.Bundle0013
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0182
 
 @[expose] public section
 

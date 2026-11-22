@@ -1,7 +1,7 @@
 module
 
 public import Development.WeilBound.CoreStatements.EulerCharacteristicCounts.GcohTop
-public import Development.WeilBound.CoreStatements.EulerCharacteristicCounts.GcohEuler
+public import Development.WeilBound.CoreStatements.EulerCharacteristicCounts.Bundle0003
 
 @[expose] public section
 

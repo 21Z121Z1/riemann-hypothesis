@@ -1,13 +1,13 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.UnderTie
+public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.Bundle0023
 public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.LocalizedLatticeEqOfAdelicMatricesAgreeAtPlace
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.AdelicMatrixCongruenceMoveRationalFrame
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.TypePrimeFramesRightTranslateDifferIntegralGL
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.AdelicLatticeSpec
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0438
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0273
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0175
 public import Formalism.LocalToGlobal.Columns.AdelicLemmas
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.DatumJetsTranslate
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0261
 
 @[expose] public section
 

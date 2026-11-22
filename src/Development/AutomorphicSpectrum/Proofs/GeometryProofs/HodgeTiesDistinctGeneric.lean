@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Statements.GeometryStatements.CmpPair
+public import Development.AutomorphicSpectrum.Statements.GeometryStatements.Bundle0003
 public import Development.AutomorphicSpectrum.Statements.GeometryStatements.CmpSt
-public import Development.AutomorphicSpectrum.Statements.GeometryStatements.PadicIntegersHenselianFiniteResidue
+public import Development.AutomorphicSpectrum.Statements.GeometryStatements.Bundle0002
 public import Development.AutomorphicSpectrum.Definitions.DivisibilityTowers.Proportional
 public import Development.AbelianVarietyTheory.Proofs.HeightProofs.OpenImmersionCompStructureEqGeneric
 public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.HodgeCptInteriorGeneric

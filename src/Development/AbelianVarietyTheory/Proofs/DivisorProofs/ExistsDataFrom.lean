@@ -2,8 +2,8 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.Divisors.GalRigidOfSurjective
-public import Development.AbelianVarietyTheory.Definitions.Divisors.MinSt5OfMinSt4
-public import Development.AbelianVarietyTheory.Definitions.Divisors.IsChartMember
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0064
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0063
 public import Development.AbelianVarietyTheory.Definitions.Divisors.TateProductRigidificationTrivial
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TautBaseChangeTripleLiftLeft
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RefinesPolarisedDataBaseChangeSymmetric

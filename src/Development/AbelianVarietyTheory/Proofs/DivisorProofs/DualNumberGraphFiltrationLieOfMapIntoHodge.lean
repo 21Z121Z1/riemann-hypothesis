@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsCoords
-public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.CanonicalOfAbelianDeRham
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle3095
+public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.Bundle0007
 
 @[expose] public section
 

@@ -1,15 +1,17 @@
 module
 
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.TheoremsMuLinked.FreeFlag
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.GalUnitary
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.Bundle0009
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.SemisimpleLevels.CountRankThree
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.SemisimpleLevels.CsdSsOfFull
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.SemisimpleLevels.FlagAb
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.SemisimpleLevels.FlagPol
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.PadicHodgeTheory.LaArith
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.PadicHodgeTheory.EpsArt
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.LevelIso
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.WeilRepEquivOfCharpolyEqStatement
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.SemisimpleLevels.Bundle0005
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.SemisimpleLevels.Bundle0003
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.PadicHodgeTheory.Bundle0033
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.PadicHodgeTheory.Bundle0042
+public import Mathlib
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0153
+public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.Bundle0018
+public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.DeRhamPotSemistable
 
 @[expose] public section
 
@@ -46,7 +48,7 @@ private theorem norms_eq {n : ℕ} (x : WD h) (μ : Fin n → Weil h →* ℂˣ)
     (hor : (∀ i j, ∃ s, (μ i s : ℂ) ≠ ((normV w : ℕ) : ℂ) ^ deg s * μ j s) ∨ x.mono0) (s : Weil h) (i j : Fin n) :
     ‖(μ i s : ℂ)‖ = ‖(μ j s : ℂ)‖ := by
   obtain ⟨m, b, rfl⟩ := x.exists_rep
-  obtain ⟨e, he⟩ := GlobalTheory.T.weilRep_equiv_of_charpoly_eq F Ω A w h m n b (WDRep.ofChars h μ hμ) fun σ => by
+  obtain ⟨e, he⟩ := _root_.GlobalTheory.AboveL.weil_rep_equiv_of_charpoly_eq F Ω A w h m n b (WDRep.ofChars h μ hμ) fun σ => by
     rw [WDRep.ofChars_ρ, charpoly_diagEnd, ← hx, WD.charPol_mk]
   simp only [WDRep.ofChars_ρ] at he
   have hN : b.N = 0 := by

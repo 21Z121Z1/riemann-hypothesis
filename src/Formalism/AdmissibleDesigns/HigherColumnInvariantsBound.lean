@@ -1,6 +1,6 @@
 module
 
-public import Formalism.AdmissibleDesigns.NonemptyPl
+public import Formalism.AdmissibleDesigns.Bundle0002
 
 @[expose] public section
 

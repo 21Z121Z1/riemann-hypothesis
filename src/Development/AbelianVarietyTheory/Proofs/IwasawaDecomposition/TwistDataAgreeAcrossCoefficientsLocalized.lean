@@ -2,8 +2,8 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.SettingsFormsExistList
-public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.CenUsedOfCenReal
-public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.NonzeroIndexPlacesTransferAlongSameFiniteGroup
+public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.Bundle0045
+public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.Bundle0028
 
 @[expose] public section
 

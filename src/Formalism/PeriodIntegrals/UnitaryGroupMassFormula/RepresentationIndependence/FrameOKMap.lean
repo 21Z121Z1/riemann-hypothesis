@@ -4,7 +4,7 @@ public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.RepresentationIn
 public import Mathlib
 public import Formalism.SharpRestriction.CuspSpanNormBounds.UniformConstantsAndStatements
 public import Formalism.SharpRestriction.CuspSpanNormBounds.LocalBesselAndTopKernel
-public import Formalism.SharpRestriction.CuspSpanNormBounds.PExtra
+public import Formalism.SharpRestriction.CuspSpanNormBounds.Bundle0009
 public import Formalism.SharpRestriction.CuspSpanNormBounds.BruhatCellsKronecker.OwnEvIntro
 public import Formalism.SharpRestriction.CuspSpanNormBounds.MassAndBranchingHypotheses
 public import Formalism.SharpRestriction.CuspSpanNormBounds.AmplitudeAndVolumeBounds

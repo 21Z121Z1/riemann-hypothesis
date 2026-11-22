@@ -2,19 +2,18 @@ module
 
 public import Mathlib
 public import Formalism.SharpRestriction.CuspSpanNormBounds.FractionFieldToGenericStalkAlgebraMapEq
-public import Development.AbelianVarietyTheory.Definitions.Foundations.IsHermND
+public import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0007
 public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.ComplementReferenceCompactSubgroup
 public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.Cint
-public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.NoLeak
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.SpanToLePerp
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.TermExponentsNonnegAndDefectGroupBoundStatement
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.FrameMoveCharacterNeOneStatement
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.IndexMeasureIntegralProdFubiniStatement
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.IndexMeasureIntegralLinearPositiveNormBoundStatement
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.IndexIntegrableShareTopLevelVectorsStatement
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.EichlerMoveScalarFibreMeasureOneStatement
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.TermIntegralNearOneBoundStatement
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsFineSubgroupMovesAtLatticeStatement
+public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.Bundle0003
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0037
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.TermExponentsNonnegAndDefectGroupBound
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0052
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0027
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0039
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0062
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.TermIntegralNearOneBound
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsFineSubgroupMovesAtLattice
 
 @[expose] public section
 
@@ -173,10 +172,10 @@ end
 
 theorem total_moves : ∀ {F : Type} [Field F] [ValuativeRel F] [TopologicalSpace F] [IsNonarchimedeanLocalField F] [CharZero F] {E : Type} [CommRing E] [Algebra F E] [TopologicalSpace E] (L : LocE F E), ∀ (r k : ℕ) (S : Frames L r k), 4 * r + 7 ≤ k → ∀ (j : Fin r) (β βJ : ℕ) (d : S.Datum) (Λ : Submodule L.O S.V), S.IsTerm d Λ → S.InFF β (j + 1) βJ d Λ → Nice (S.refA (j + 1) Λ) (ind (S.Mv (j + 1) d Λ)) ∧ Nice (S.refA (j + 1) Λ) (ind fun w => S.Mv (j + 1) d Λ w ∧ ¬ S.NoLeak Λ w.2.1) ∧ Nice (S.refA (j + 1) Λ) (fun w => ind (S.Mv (j + 1) d Λ) w * S.chiM j d Λ w.1 w.2.1) ∧ |S.cK β βJ * (cint (S.refA (j + 1) Λ) (ind (S.Mv (j + 1) d Λ))).re - 1| ≤ 8 / 7 * (S.q : ℝ) ^ (1 - ((k : ℤ) - 2 * r - 3)) ∧ S.cK β βJ * (cint (S.refA (j + 1) Λ) (ind fun w => S.Mv (j + 1) d Λ w ∧ ¬ S.NoLeak Λ w.2.1)).re ≤ 16 / 7 * (S.q : ℝ) ^ (1 - ((k : ℤ) - 2 * r - 3)) ∧ S.cK β βJ * ‖cint (S.refA (j + 1) Λ) (fun w => ind (S.Mv (j + 1) d Λ) w * S.chiM j d Λ w.1 w.2.1)‖ ≤ 8 / 7 * (S.q : ℝ) ^ (1 - ((k : ℤ) - 2 * r - 3)) := by
   intro F _ _ _ _ _ E _ _ _ L r k S hk j β βJ d Λ hT hF
-  obtain ⟨B, hB, hinv⟩ := GlobalTheory.T.exists_fineSubgroup_moves_at_lattice L r k S j β βJ d Λ hT hF
-  obtain ⟨hβJ, hβ, nB, cB⟩ := GlobalTheory.T.indexIntegrable_share_top_level_vectors L r k S j β βJ d Λ hT hF
-  obtain ⟨u1, u2, u3⟩ := GlobalTheory.T.term_integral_near_one_bound L r k S hk (j + 1) d Λ hT
-  have hTf := GlobalTheory.T.eichlerMove_scalar_fibre_measure_one L r k S (GlobalTheory.T.term_exponents_nonneg_and_defect_group_bound L r k S d Λ hT).1
+  obtain ⟨B, hB, hinv⟩ := _root_.GlobalTheory.MoveFine.main L r k S j β βJ d Λ hT hF
+  obtain ⟨hβJ, hβ, nB, cB⟩ := _root_.GlobalTheory.TopLevelShare.main L r k S j β βJ d Λ hT hF
+  obtain ⟨u1, u2, u3⟩ := _root_.GlobalTheory.HL.FibU.shares L r k S hk (j + 1) d Λ hT
+  have hTf := _root_.GlobalTheory.MoveFibre.fibre_scalar L r k S (_root_.GlobalTheory.HL.Defect.exponents_and_defect L r k S d Λ hT).1
   have tri := triple (S.refB (j + 1) Λ) (S.refU (j + 1) Λ) S.refT _ _ S.InZ _ (S.Mv (j + 1) d Λ)
     (mv_iff S (j + 1) d Λ) (fun u => (hTf u).1) (fun u => (hTf u).2)
   have hβ' : (β : ℝ) ≠ 0 := by positivity
@@ -236,7 +235,7 @@ theorem total_moves : ∀ {F : Type} [Field F] [ValuativeRel F] [TopologicalSpac
         obtain ⟨b1, b2, b3⟩ := (mem_refB S _ _ _).1 hb.1
         obtain ⟨al, ha1, ha2⟩ := exists_coords S S.f S.es S.dual _ hw.2.2.1 j b.1 b1
         obtain ⟨al', ha1', ha2'⟩ := exists_coords S S.f' S.es' S.dual' _ hw.2.2.2.1 j b.2 b2
-        obtain ⟨u, hu1, hu2, hu3⟩ := GlobalTheory.T.frameMove_character_ne_one L r k S j β βJ d Λ hT hF b.1 b1 b.2 b2 b3 hb.2
+        obtain ⟨u, hu1, hu2, hu3⟩ := _root_.GlobalTheory.HL.MoveChar.chi_ne_one L r k S j β βJ d Λ hT hF b.1 b1 b.2 b2 b3 hb.2
           al al' ha1 ha1'
         rw [ha2, ha2'] at hu3
         have ey : ∀ u, S.chiM j d Λ b u = L.psi0 (S.h (-(algebraMap F E S.th⁻¹) •

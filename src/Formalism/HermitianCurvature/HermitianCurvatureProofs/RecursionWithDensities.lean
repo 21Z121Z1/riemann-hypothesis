@@ -1,10 +1,10 @@
 module
 
 public import Formalism.HermitianCurvature.StatementTC
-public import Formalism.HermitianCurvature.StatementTA
+public import Formalism.HermitianCurvature.Bundle0003
 public import Mathlib
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.AntidiagMulDiagonal
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.OneLevelInequalitySplitBySize
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0007
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0016
 
 @[expose] public section
 

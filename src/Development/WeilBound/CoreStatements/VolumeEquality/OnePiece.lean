@@ -1,11 +1,22 @@
 module
 
-public import Development.WeilBound.CoreStatements.VolumeEquality.BaseUnifEx2
+public import Development.WeilBound.CoreStatements.VolumeEquality.Bundle0006
 public import Development.WeilBound.CoreStatements.VolumeEquality.OnePieceB
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.GenericPointGenericFibreStatement
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.GenericOfSmoothSurjectiveStatement
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.StalkSurjectiveOpenImmersionStatement
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsResolutionGenericFibreStatement
+public import Mathlib
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0065
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0017
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.EmbedsGeneric
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.BlowupProjections.BlowupProjStatement
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0089
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.Bundle0005
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0035
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0158
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.BdryChart
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsFlatAnIffIsConstMul
+public import Development.AutomorphicSpectrum.Definitions.MetricPeriods.ClopenCondOnto
+public import Development.AbelianVarietyTheory.Definitions.Uniformization.PointEqOfSubsingleton
+public import Development.AutomorphicSpectrum.PublishedTheorems.Geometry₂.GagaSections
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.Bundle0004
 
 @[expose] public section
 
@@ -77,7 +88,7 @@ theorem onePiece : OnePiece := by
   obtain ⟨i, hi⟩ := exists_factor ξ₁ hξ₀ (hpt ▸ specializes_rfl)
   haveI : CharZero Ω₂ := (RingHom.charZero_iff cst.injective).1 inferInstance
   haveI : CharZero Ω₀ := (g.comp i).charZero
-  obtain ⟨b, ξF, hF1, hF2, hFg⟩ := GlobalTheory.T.generic_point_generic_fibre c.F Y.X Y.s Ω₀ ξ₀ hξ₀
+  obtain ⟨b, ξF, hF1, hF2, hFg⟩ := _root_.GlobalTheory.CompanionTheory.Ar.GenFibre.exists_point c.F Y.X Y.s Ω₀ ξ₀ hξ₀
   letI : Algebra c.F Ω₀ := b.toAlgebra
   have hb : (g.comp i).comp b = cst := by
     refine ext_int (spMap_inj ?_)
@@ -85,13 +96,13 @@ theorem onePiece : OnePiece := by
     simp only [Category.assoc, pullback.condition]
   have hcl : ConstClosed c.F Ω₀ := constClosed_of i g cst hb halg
   have hβ := int_frac c.F
-  obtain ⟨hnoeth, X', f, d, W', jW, hiso, hjW, -, -, hsm, -⟩ := GlobalTheory.T.exists_resolution_generic_fibre hRes E H D l Xo c _ _ Y hβ
+  obtain ⟨hnoeth, X', f, d, W', jW, hiso, hjW, -, -, hsm, -⟩ := _root_.GlobalTheory.CompanionTheory.Ar.Flat.exists_resolution_genericFibre hRes E H D l Xo c _ _ Y hβ
   haveI := Y.jQ_open
   haveI hpre : IsPreimmersion (pullback.fst Y.s (spMap (algebraMap (𝓞 c.F) c.F))) := by
     have h : IsPreimmersion (spMap (algebraMap (𝓞 c.F) c.F)) :=
       IsPreimmersion.of_isLocalization (R := 𝓞 c.F) (S := c.F) (nonZeroDivisors (𝓞 c.F))
     infer_instance
-  have hsurj := GlobalTheory.T.stalk_surjective_open_immersion _ _ _ _ _ f W' jW Y.jQ hpre inferInstance hiso hjW
+  have hsurj := _root_.GlobalTheory.CompanionTheory.Ar.Flat.stalkMap_comp_surjective_of_open_part _ _ _ _ _ f W' jW Y.jQ hpre inferInstance hiso hjW
   haveI hopen : IsOpenImmersion (W'.ι ≫ f) := by rw [← hjW]; infer_instance
   have hrange : Set.range (W'.ι ≫ f) = Set.range Y.jQ := by
     rw [← hjW, Scheme.Hom.comp_base, TopCat.coe_comp, Set.range_comp,
@@ -124,7 +135,7 @@ theorem onePiece : OnePiece := by
     rw [hs', ← hξW]
     simp only [Category.assoc]
   have hgW : genPt (ξW ≫ W'.ι) ∈ W' := (genPt ξW).2
-  have hξg : IsCptGen (ξW ≫ W'.ι) := GlobalTheory.T.generic_of_smooth_surjective c.F _ _ _ _ _ π s' hsm' h2 hξ₀ (hsurj _ hgW)
+  have hξg : IsCptGen (ξW ≫ W'.ι) := _root_.GlobalTheory.CompanionTheory.Ar.CptLift.isCptGen_of_smooth_of_surjective c.F _ _ _ _ _ π s' hsm' h2 hξ₀ (hsurj _ hgW)
   have hab : ∀ x : Sp ℂ ⟶ X', ⊤ ≤ x ⁻¹ᵁ W' → centre (x ≫ π) ∈ abLocus Y.t.G := by
     intro x hx
     have h1 : f (centre x) ∈ Set.range Y.jQ := by

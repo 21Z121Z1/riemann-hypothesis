@@ -1,8 +1,8 @@
 module
 
 public import Formalism.SharpRestriction.LevelLetterCocycles.JointConditionsZpowers.RhoFam
-public import Formalism.SharpRestriction.LevelLetterCocycles.JointConditionsZpowers.LocalErrorBoundPlaces
-public import Formalism.SharpRestriction.LevelLetterCocycles.TwGood
+public import Formalism.SharpRestriction.LevelLetterCocycles.JointConditionsZpowers.Bundle0008
+public import Formalism.SharpRestriction.LevelLetterCocycles.Bundle0018
 
 @[expose] public section
 

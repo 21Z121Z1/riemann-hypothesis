@@ -3,9 +3,8 @@ module
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.StableIffCarrierEq
 public import Formalism.LocalToGlobal.IndefiniteReal.RealTB
-public import Formalism.LocalToGlobal.IndefiniteReal.RealRec
-public import Formalism.LocalToGlobal.IndefiniteReal.RealPins
-public import Formalism.LocalToGlobal.IndefiniteReal.RealRecPins
+public import Formalism.LocalToGlobal.IndefiniteReal.Bundle0030
+public import Formalism.LocalToGlobal.IndefiniteReal.Bundle0031
 public import Lean
 
 @[expose] public section

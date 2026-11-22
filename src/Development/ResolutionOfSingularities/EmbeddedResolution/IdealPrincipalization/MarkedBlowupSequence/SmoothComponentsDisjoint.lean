@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Development.ResolutionOfSingularities.EmbeddedResolution.EtaleCoordinates.SmoothRegular
-public import Development.ResolutionOfSingularities.EmbeddedResolution.AlgebraicPreliminaries.IrreducibleComponents
+public import Development.ResolutionOfSingularities.EmbeddedResolution.AlgebraicPreliminaries.Bundle0001
 
 @[expose] public section
 

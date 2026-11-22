@@ -3,10 +3,10 @@ module
 public import Mathlib
 public import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.InfinitesimalCharacterLimits.InfinitesimalCharacterGlue
 public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.T2SpaceAdelicGeneralLinearGroupNumberField
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ContinuousOfIsOpenStab
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SelfMemSpanK
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SquareIntegrableSmoothSubmoduleGL
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.AdmissibleDiscreteSpaces
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0111
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1228
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1192
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0690
 
 @[expose] public section
 

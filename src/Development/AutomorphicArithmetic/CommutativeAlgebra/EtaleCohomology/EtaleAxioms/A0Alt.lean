@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.EtaleCohomology.EtaleSheaves.EtaleCohomologyThirdStatementHolds
+public import Development.EtaleCohomology.EtaleSheaves.Bundle0022
 
 @[expose] public section
 

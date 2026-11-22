@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Proofs.GlobalProofs.IsSmoothVec
-public import Development.AutomorphicSpectrum.Proofs.GlobalProofs.DerivedActionOfSmoothVector
-public import Development.AutomorphicSpectrum.Proofs.GlobalProofs.DerivedActionAdditive
+public import Development.AutomorphicSpectrum.Proofs.GlobalProofs.Bundle0031
+public import Development.AutomorphicSpectrum.Proofs.GlobalProofs.Bundle0032
+public import Development.AutomorphicSpectrum.Proofs.GlobalProofs.Bundle0034
 
 @[expose] public section
 

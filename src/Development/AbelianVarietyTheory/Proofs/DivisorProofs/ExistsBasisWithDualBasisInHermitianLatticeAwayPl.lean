@@ -1,14 +1,14 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HermitianLatticeSelfDualEverywhere
-public import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.IsPrincipalIdealRingLoc
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1391
+public import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.Bundle0034
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.StandardAddCharSymplecticLocalLatticeEqOne
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EqAdeleSupportedAtFinitePlaceOfSupportedAt
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EventuallyIntegralPointsIndicatorIsVacuum
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1518
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1573
 public import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.WeilTensorModels
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.OneMemKAt
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsLagrAt
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1227
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1246
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ContinuousAtPlace
 
 @[expose] public section

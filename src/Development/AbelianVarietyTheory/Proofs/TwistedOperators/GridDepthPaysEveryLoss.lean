@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.DepthPays
+public import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.Bundle0006
 public import Formalism.SharpRestriction.GlobalSchurBounds.GlobalRankLatticeProofs.SevenLogLeLOfPowerBound
 
 @[expose] public section

@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.DatVtEq
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0357
 
 @[expose] public section
 

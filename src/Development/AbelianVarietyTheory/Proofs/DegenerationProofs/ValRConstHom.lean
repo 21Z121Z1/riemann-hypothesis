@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.EqOfValHomEq
+public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.Bundle0019
 public import Development.AbelianVarietyTheory.Proofs.ThetaFamilyOrigin.AppLESurjective
-public import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.ExistsSecKIsUnit
+public import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.Bundle0023
 public import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.IsExtensionPullOver
 
 @[expose] public section

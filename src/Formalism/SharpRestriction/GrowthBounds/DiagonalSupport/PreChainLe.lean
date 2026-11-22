@@ -1,6 +1,6 @@
 module
 
-public import Formalism.SharpRestriction.GrowthBounds.DiagonalSupport.PosULeIff
+public import Formalism.SharpRestriction.GrowthBounds.DiagonalSupport.Bundle0009
 
 @[expose] public section
 

@@ -1,7 +1,7 @@
 module
 
 public import ReciprocityTheory.GroupCohomology.ContinuousContractNth
-public import ReciprocityTheory.GroupCohomology.HomogExistsStatement
+public import ReciprocityTheory.GroupCohomology.Bundle0002
 
 @[expose] public section
 

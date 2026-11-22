@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.EtaleCohomology.EtaleSheaves.CechYoneda
+public import Development.EtaleCohomology.EtaleSheaves.Bundle0043
 
 @[expose] public section
 

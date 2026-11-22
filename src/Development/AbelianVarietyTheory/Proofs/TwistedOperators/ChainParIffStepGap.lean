@@ -2,8 +2,8 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.IsStepWeil
-public import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.WeilSignShift
-public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.ExistsInfFamAndStdChar
+public import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.Bundle0012
+public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.Bundle0050
 
 @[expose] public section
 

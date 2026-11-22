@@ -5,12 +5,11 @@ public import Formalism.MeanHeightDescent.MuMaxMinkowski
 public import Formalism.MeanHeightDescent.BadRowsNumeric
 public import Formalism.MeanHeightDescent.CombinedAverageDegreeBound
 public import Formalism.QuotientMetricDivisors.StatementK
-public import Formalism.MeanHeightDescent.AverageDegreeBounds.CovolumeAssemblyHolds
+public import Formalism.MeanHeightDescent.AverageDegreeBounds.Bundle0001
 public import Formalism.MeanHeightDescent.AverageDegreeBounds.CovolumeFullAssemblyHolds
-public import Formalism.QuotientMetricDivisors.HermitianTwistDivisors.TheoremDivIneq
+public import Formalism.QuotientMetricDivisors.HermitianTwistDivisors.Bundle0004
 public import Formalism.MeanHeightDescent.AverageDegreeBounds.SpanMuMin
 public import Formalism.MeanHeightDescent.AverageDegreeBounds.TwistLower
-public import Formalism.MeanHeightDescent.AverageDegreeBounds.MuMaxMinkowski
 
 @[expose] public section
 

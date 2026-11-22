@@ -4,9 +4,9 @@ public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.Foundations.NormSumPairRankZeroOfCurveCoordNorm
 public import Formalism.PairingDivisors.StatementH
 public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ThetaSpaceSelfDualPairAtMostLine
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.InducedTypeThetaGenusOnePermutes
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.FinsumQuotientNonnegOfSwapConj
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.PullEqGaussSmulIntertwiner
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0224
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0223
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0283
 
 @[expose] public section
 

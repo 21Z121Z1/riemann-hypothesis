@@ -1,6 +1,6 @@
 module
 
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutJDHatJDRInvDefs
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0142
 
 @[expose] public section
 

@@ -2,8 +2,8 @@ module
 
 public import Development.AutomorphicArithmetic.MeanSquareBounds.PrimeSetTwoBounds
 public import Formalism.GL3MeanSquares.GenusMeanAsymptotics.JacobiCharacterSums.MSqDiagA
-public import Formalism.GL3MeanSquares.GenusMeanAsymptotics.JacobiCharacterSums.MSqDiagB
-public import Development.AutomorphicArithmetic.MeanSquareBounds.SumMinLeDiv
+public import Formalism.GL3MeanSquares.GenusMeanAsymptotics.JacobiCharacterSums.Bundle0010
+public import Development.AutomorphicArithmetic.MeanSquareBounds.Bundle0002
 
 @[expose] public section
 

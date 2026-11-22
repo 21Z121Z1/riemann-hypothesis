@@ -4,7 +4,7 @@ public import Formalism.SharpRestriction.GrowthBounds.IntegralWeylLatticeSpan.Re
 public import Formalism.LocalToGlobal.GlobalTheory.GL6.PBwLocBases
 public import Formalism.LocalToGlobal.GlobalTheory.GL6.PKerAtP
 public import Formalism.LocalToGlobal.GlobalTheory.GL6.PSplitT
-public import Formalism.LocalToGlobal.GroupLattices.TiedFamilies.ChiMemSubfield
+public import Formalism.LocalToGlobal.GroupLattices.TiedFamilies.Bundle0005
 
 @[expose] public section
 

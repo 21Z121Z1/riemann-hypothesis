@@ -1,14 +1,14 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.DepthPays
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.PoincareSeriesUnitaryAbsolutelyConvergentModeratStatement
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ContinuousOnAtTau
-public import Development.AbelianVarietyTheory.Proofs.HeightProofs.AdelicUnitaryActionAtRealPlace
+public import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.Bundle0006
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.PoincareSeriesUnitaryAbsolutelyConvergentModerat
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0171
+public import Development.AbelianVarietyTheory.Proofs.HeightProofs.Bundle0021
 public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsCompactAdele
 public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsCoefficientSpaceDualDiscreteSeriesModelPos
-public import Development.AbelianVarietyTheory.Definitions.Divisors.NatCastSmulMemHatL
-public import Formalism.LocalToGlobal.IndefiniteReal.FinitePlaces.ExistsNatSmulSingle
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0039
+public import Formalism.LocalToGlobal.IndefiniteReal.FinitePlaces.Bundle0015
 
 @[expose] public section
 
@@ -142,7 +142,7 @@ theorem GlobalTheory.PoinAut.poin_aut : ∀ (D : D7) (θ : InfFam D), IsInfFam �
   haveI := Formalism.L2.GlobalTheoryTheory.GenusMassVolumes.Unfold.topGroupHA D.sp.cm.sig V.gram
   set K := congLev D.sp.cm V.gram Λ 𝔪 with hKdef
   set N := 2 * V.rank ^ 2 + 1 with hN
-  obtain ⟨C₀, A₀, hI⟩ := GlobalTheory.T.poincareSeries_unitary_absolutelyConvergent_moderateGrowth D θ hθ V Λ hΛ c
+  obtain ⟨C₀, A₀, hI⟩ := _root_.GlobalTheory.PoinCount.poincare_count D θ hθ V Λ hΛ c
   have hopen : IsOpen ((K.comap (Lev.finE V) : Subgroup (GA D V)) : Set (GA D V)) :=
     (congLev_open_compact V (Formalism.IndefR.Fin.PDA.selfDual_isFullLattice V Λ hΛ) h𝔪).1
   have hKtop : ∀ y, y ∈ K → y ∈ congLev D.sp.cm V.gram Λ ⊤ := fun y hy => by

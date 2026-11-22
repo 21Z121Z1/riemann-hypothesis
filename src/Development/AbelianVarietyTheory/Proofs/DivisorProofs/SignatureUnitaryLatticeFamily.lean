@@ -3,10 +3,10 @@ module
 public import Mathlib
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.InstMeasurableSpaceRealSU
 public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.NotIsSRepsEmpty
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsRepsModKM
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SelfDualLatticeRealCompletion
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LatticeCongruenceIffCompletion
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsInvertibleUnitaryAdelicMatrixOfRationalUnitary
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0437
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0489
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0486
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0485
 public import Development.AbelianVarietyTheory.Proofs.CovolumeBounds.ExistsIsFundamentalDomainAndQuotMeasureEq
 
 @[expose] public section

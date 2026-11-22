@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsGenNear
+public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0077
 public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PChartNakayamaGenAgree
 
 @[expose] public section

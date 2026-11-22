@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Formalism.LocalToGlobal.TorsionIntegrality.FrobeniusFibreCurves.FinalA
-public import Formalism.LocalToGlobal.TorsionIntegrality.FrobeniusFibreCurves.StatementD
+public import Formalism.LocalToGlobal.TorsionIntegrality.FrobeniusFibreCurves.Bundle0002
 
 @[expose] public section
 

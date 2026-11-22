@@ -1,8 +1,7 @@
 module
 
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.LiteratureResults.KTheoryStability.HomologicalStability.KStability
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.TensorHomCubes.DedekindSR
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.TensorHomCubes.GrpHComp
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.TensorHomCubes.Bundle0001
 
 @[expose] public section
 

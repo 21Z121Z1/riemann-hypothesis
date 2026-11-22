@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import GroundTheory.AutomorphicForms.ArchimedeanWhittaker.ContinuousMultilinearOfFiniteDimensional
-public import GroundTheory.AutomorphicForms.DixmierMalliavinProducts
+public import GroundTheory.AutomorphicForms.Bundle0012
 public import GroundTheory.AutomorphicForms.ArchimedeanWhittaker.Density
 public import GroundTheory.AutomorphicForms.DixmierMalliavinHaarCoord
 

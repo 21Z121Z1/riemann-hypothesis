@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.BlockTheory.GlobalSignature.UnitVectorOrthogonal
-public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.UnramifiedOfIsCMUnram
+public import Development.AbelianVarietyTheory.BlockTheory.GlobalSignature.Bundle0005
+public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0145
 public import Formalism.LocalRingCardinality.SpanPowerMembership.Spaces
 public import Development.AbelianVarietyTheory.PublishedTheorems.Landherr₂.LandherrStIffLandherr
 

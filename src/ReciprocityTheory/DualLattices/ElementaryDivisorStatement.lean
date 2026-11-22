@@ -1,9 +1,9 @@
 module
 
 public import ReciprocityTheory.DualLattices.DotSingle
-public import ReciprocityTheory.DualLattices.EmbeddingSeparatingGroupStatement
+public import ReciprocityTheory.DualLattices.Bundle0021
 public import ReciprocityTheory.DualLattices.UnramifiedCokernelLengthOfLengthEigenLengthProduct
-public import ReciprocityTheory.DualLattices.EigenLengthProductStatementHolds
+public import ReciprocityTheory.DualLattices.Bundle0019
 
 @[expose] public section
 

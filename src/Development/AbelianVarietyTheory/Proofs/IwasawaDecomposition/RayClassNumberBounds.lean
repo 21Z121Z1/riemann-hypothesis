@@ -1,11 +1,11 @@
 module
 
 public import Mathlib
-public import Formalism.GL3MeanSquares.PrimeCountAsymptoticInProgressions
+public import Formalism.GL3MeanSquares.Bundle0002
 public import Formalism.SharpRestriction.InertJacobiLevels.AsmIface
-public import Formalism.CyclotomicNorms.StatementI
-public import Development.AbelianVarietyTheory.Definitions.Foundations.RayPrimes
-public import Development.AbelianVarietyTheory.Definitions.Foundations.NormOneSevenOneTwo
+public import Formalism.CyclotomicNorms.Bundle0001
+public import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0008
+public import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0010
 public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsIntegralOfMemRayI
 
 @[expose] public section

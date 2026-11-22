@@ -2,29 +2,27 @@ module
 
 public import Mathlib
 public import Formalism.SharpRestriction.GrowthBounds.ChartRank.HypCard
-public import Formalism.SharpRestriction.GrowthBounds.ChartedClasses.CompInjLocJ
-public import Formalism.LocalToGlobal.GroupLattices.ComparisonMaps.MRatSpanOfRatInv
-public import Formalism.SharpRestriction.GrowthBounds.MultisetValuation.LowestInvariantLeDelta
-public import Formalism.LocalToGlobal.GroupLattices.ComparisonMaps.ProdMemSpan
-public import Formalism.GradedWeylDivisibility.FockSpaceTableaux.LBidetLemmas
+public import Formalism.SharpRestriction.GrowthBounds.ChartedClasses.Bundle0003
+public import Formalism.LocalToGlobal.GroupLattices.ComparisonMaps.Bundle0008
+public import Formalism.SharpRestriction.GrowthBounds.MultisetValuation.Bundle0009
+public import Formalism.LocalToGlobal.GroupLattices.ComparisonMaps.Bundle0004
+public import Formalism.GradedWeylDivisibility.FockSpaceTableaux.Bundle0001
 public import Formalism.SharpRestriction.GrowthBounds.UnramifiedQuadraticSetting
 public import Formalism.LocalToGlobal.GroupLattices.ComparisonMaps.CastGLSymmBc
-public import Formalism.LocalToGlobal.GroupLattices.ComparisonMaps.NatActRVtupR
-public import Formalism.LocalToGlobal.GlobalTheory.GL6.ValuationClassTranslateMem
+public import Formalism.LocalToGlobal.GroupLattices.ComparisonMaps.Bundle0003
+public import Formalism.LocalToGlobal.GlobalTheory.GL6.Bundle0004
 public import Formalism.LocalToGlobal.GroupLattices.FockModels.SwRowGenMonomial
 public import Formalism.GradedWeylDivisibility.DualWeylDominanceOf
-public import Formalism.SharpRestriction.GrowthBounds.IntegralWeylLatticeSpan.WeylLatticeDescentHolds
-public import Formalism.SharpRestriction.GrowthBounds.MonomialFactorials.LiMap
+public import Formalism.SharpRestriction.GrowthBounds.IntegralWeylLatticeSpan.Bundle0002
+public import Formalism.SharpRestriction.GrowthBounds.MonomialFactorials.Bundle0001
 public import Formalism.SharpRestriction.GrowthBounds.ChartComparison.PStabEq
-public import Formalism.SharpRestriction.GrowthBounds.ChartRank.HypVin
+public import Formalism.SharpRestriction.GrowthBounds.ChartRank.Bundle0001
 public import Formalism.SharpRestriction.GrowthBounds.ChartComparison.LocCore
-public import Formalism.SharpRestriction.GrowthBounds.ChartRank.HypTwA
-public import Formalism.SharpRestriction.GrowthBounds.ChartedClasses.ExistsIsCGBases
+public import Formalism.SharpRestriction.GrowthBounds.ChartedClasses.Bundle0002
 public import Formalism.SharpRestriction.GrowthBounds.ChartRank.HypLat
 public import Formalism.SharpRestriction.GrowthBounds.ChartRank.HypChi
-public import Formalism.SharpRestriction.GrowthBounds.ChartedClasses.ClsChartedLabAt
-public import Formalism.SharpRestriction.GrowthBounds.ChartComparison.LocTiesOf
-public import Formalism.SharpRestriction.GrowthBounds.IntegralWeylLatticeSpan
+public import Formalism.SharpRestriction.GrowthBounds.ChartComparison.Bundle0002
+public import Formalism.SharpRestriction.GrowthBounds.Bundle0006
 
 @[expose] public section
 

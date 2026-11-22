@@ -1,7 +1,7 @@
 module
 
 public import Formalism.HermitianCurvature.HermitianCurvatureProofs.FlagStabilizerFixesFrame
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.ExistsSmoothExt
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0025
 public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.DensityLemma.PFibreBoundX
 
 @[expose] public section

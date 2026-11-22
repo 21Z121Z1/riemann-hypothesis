@@ -1,7 +1,7 @@
 module
 
-public import Formalism.SharpRestriction.GrowthBounds.StandardPolynomials.BlockYZeroLeOfBound
-public import Formalism.SharpRestriction.GrowthBounds.StandardPolynomials.YcondCongr
+public import Formalism.SharpRestriction.GrowthBounds.StandardPolynomials.Bundle0005
+public import Formalism.SharpRestriction.GrowthBounds.StandardPolynomials.Bundle0007
 public import Formalism.SharpRestriction.GrowthBounds.StandardPolynomials.TCNumDef
 
 @[expose] public section

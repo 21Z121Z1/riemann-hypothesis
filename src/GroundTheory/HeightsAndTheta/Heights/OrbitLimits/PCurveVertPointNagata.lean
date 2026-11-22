@@ -2,10 +2,10 @@ module
 
 public import Mathlib
 public import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.StatementsCurveVertPointNagata
-public import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.CurveCountObjects
-public import GroundTheory.HeightsAndTheta.Heights.Intersections.PLocRingPow
-public import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.CoordinateIdeals.MemMCoordIdealOfAevalEqZero
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.InterDivSupp
+public import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.Bundle0034
+public import GroundTheory.HeightsAndTheta.Heights.Intersections.Bundle0020
+public import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.CoordinateIdeals.Bundle0001
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.Bundle0017
 
 @[expose] public section
 

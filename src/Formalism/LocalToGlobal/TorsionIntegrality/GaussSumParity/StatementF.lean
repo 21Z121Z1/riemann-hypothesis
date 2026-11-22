@@ -1,7 +1,7 @@
 module
 
-public import Formalism.LocalToGlobal.TorsionIntegrality.GaussSumParity.ThetaInZIsThetaLog
-public import Formalism.LocalToGlobal.TorsionIntegrality.GaussSumParity.StatementE
+public import Formalism.LocalToGlobal.TorsionIntegrality.GaussSumParity.Bundle0001
+public import Formalism.LocalToGlobal.TorsionIntegrality.GaussSumParity.Bundle0002
 
 @[expose] public section
 

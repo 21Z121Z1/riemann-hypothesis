@@ -2,7 +2,7 @@ module
 
 public import Development.AutomorphicArithmetic.Foundations.UnitarySphericalFixing.SatakeParameters.SwOn
 public import Development.AutomorphicArithmetic.Foundations.LocalLanglands.IsRecTOfIsRec
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsAutomorphicSideEmptyLocal
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0412
 
 @[expose] public section
 

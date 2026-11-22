@@ -2,8 +2,8 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.IsMatrixForm
-public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.IsStrictlySemistableAlt
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.YonedaAddNaturalityLeft
+public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.Bundle0002
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0011
 
 @[expose] public section
 

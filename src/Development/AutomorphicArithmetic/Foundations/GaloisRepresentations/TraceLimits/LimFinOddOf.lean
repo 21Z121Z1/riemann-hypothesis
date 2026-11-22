@@ -2,10 +2,10 @@ module
 
 public import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.TraceLimits.ExistsTraceLimit
 public import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.TraceLimits.SlopeTestRemainingChoices
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.LimWUOfSeeds
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.AutomorphicLevelAwayNonsplit
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.SphericalOperatorsExist
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ClosedAtL
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0306
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0304
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0186
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0239
 
 @[expose] public section
 

@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.GalUnitary
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.BcDefs
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.PartsSign
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.Bundle0009
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.Bundle0006
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.Bundle0001
 
 @[expose] public section
 

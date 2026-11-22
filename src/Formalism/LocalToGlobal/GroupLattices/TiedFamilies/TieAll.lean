@@ -1,9 +1,8 @@
 module
 
-public import Formalism.LocalToGlobal.GroupLattices.TiedFamilies.TieExC
+public import Formalism.LocalToGlobal.GroupLattices.TiedFamilies.Bundle0009
 public import Formalism.LocalToGlobal.GroupLattices.TiedFamilies.TieEvR
-public import Formalism.LocalToGlobal.GroupLattices.TiedFamilies.TieLatFin
-public import Formalism.LocalToGlobal.GroupLattices.TiedFamilies.TieIwLevTieOf
+public import Formalism.LocalToGlobal.GroupLattices.TiedFamilies.Bundle0008
 
 @[expose] public section
 

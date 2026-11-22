@@ -1,11 +1,12 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.InjectiveWedgeHighestCoefficient
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0375
 public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.CenterEnvelopingAlgebraDirectSum
-public import Development.AbelianVarietyTheory.Proofs.HeightProofs.PolarConjTranspose
+public import Development.AbelianVarietyTheory.Proofs.HeightProofs.Bundle0008
 public import Development.AutomorphicSpectrum.Proofs.GlobalProofs.ConstantTermParabolicFiniteType
-public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.StandardBlocksLevelSumStatement
+public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.Bundle0047
+public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.Bdy
 
 @[expose] public section
 

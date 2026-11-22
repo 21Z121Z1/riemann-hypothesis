@@ -1,14 +1,14 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.JSmul
+public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0009
 public import Formalism.LocalRingCardinality.AdicCompletionLocal.LocTied
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.AdmissibleOfSurjective
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ReductionSameSSOfLattices
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0266
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0242
 public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.AdmissibleStd
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsSeriesOfExact
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.PhiGammaLatticeFamiliesShiftInclusion
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsIntegralCyclotomicChar
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0190
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0199
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0219
 
 @[expose] public section
 

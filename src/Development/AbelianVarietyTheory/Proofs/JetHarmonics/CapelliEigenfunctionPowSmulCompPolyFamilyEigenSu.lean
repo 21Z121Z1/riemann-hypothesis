@@ -1,12 +1,13 @@
 module
 
 public import Mathlib
-public import Formalism.HermitianCurvature.StatementTBB
+public import Formalism.HermitianCurvature.Bundle0010
 public import Formalism.HermitianCurvature.StatementU
-public import Formalism.HermitianCurvature.LetterProductDoubleDegreeCount
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutBPEqDecay
-public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.CapelliEigenSumLinearCombinationStatement
-public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.PolynomialSmulCapelliEigenfunctionSum
+public import Formalism.HermitianCurvature.Bundle0005
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0281
+public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0143
+public import Formalism.HermitianCurvature.StatementQ
+public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0175
 
 @[expose] public section
 

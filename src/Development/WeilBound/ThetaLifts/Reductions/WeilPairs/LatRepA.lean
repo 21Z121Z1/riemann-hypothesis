@@ -1,7 +1,7 @@
 module
 
-public import Development.WeilBound.ThetaLifts.Reductions.WeilPairs.GoodLat
-public import GroundTheory.GlobalFields.Adele.Compact
+public import Development.WeilBound.ThetaLifts.Reductions.WeilPairs.Bundle0002
+public import GroundTheory.GlobalFields.Adele.Bundle0002
 public import GroundTheory.GlobalFields.Adele.Approximation
 public import Formalism.LocalToGlobal.IndefiniteReal.FinitePlaces.PlaceDualB
 

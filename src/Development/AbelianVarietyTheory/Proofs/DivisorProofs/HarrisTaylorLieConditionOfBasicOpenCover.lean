@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LieRankAt
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0389
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PullbackSections.LieBridgeA
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DualNumberMorphismEqOfLocal
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2420
 
 @[expose] public section
 

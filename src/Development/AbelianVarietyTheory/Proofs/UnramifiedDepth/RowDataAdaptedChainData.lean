@@ -1,10 +1,9 @@
 module
 
 public import Mathlib
-public import Formalism.LocalToGlobal.CharacterGerms.LatticeInclusionFormsInjective
-public import Formalism.LocalToGlobal.CharacterGerms.CartesianBoundOnCurves
-public import Formalism.LocalToGlobal.CharacterGerms.CoeffIterateZero
-public import Formalism.LocalToGlobal.CharacterGerms.ScaledSecondIntegral
+public import Formalism.LocalToGlobal.CharacterGerms.Bundle0005
+public import Formalism.LocalToGlobal.CharacterGerms.Bundle0006
+public import Formalism.LocalToGlobal.CharacterGerms.Bundle0003
 
 @[expose] public section
 

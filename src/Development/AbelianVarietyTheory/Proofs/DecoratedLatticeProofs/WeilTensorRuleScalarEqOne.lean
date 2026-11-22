@@ -1,20 +1,20 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.IsQuasiFam
+public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.Bundle0008
 public import Formalism.LocalToGlobal.IndefiniteReal.OrthogonalComplementCharacterisation
 public import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.ExistsHeightLeTwoMulQuotHeight
 public import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.WittDecompSymplInclIsotropicInclAnisotropic
-public import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.TransvectionAction
-public import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.WeilDatumExistence
-public import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.AdjointIsotropicDecomposition
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.WeilRepOrthogonalSumEqUnitSmulProductStatement
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ThetaFunctionalInvarianceProductStatement
+public import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.Bundle0019
+public import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.Bundle0007
+public import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.Bundle0021
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0228
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0123
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnitaryAdelicCharacterTrivialRatAndSplit
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsSplitPlaceHalfHeisenbergInvariantForm
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0912
 public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.AeZeroOfSmall
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HeisThetaLaws
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsDetInt
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0879
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0146
 
 @[expose] public section
 
@@ -192,7 +192,7 @@ theorem prodLaw_split (hS : IsWeilDatumO ψ S T (χA * χB) χT omS)
   have he1 : e * e = e := he.1
   obtain ⟨ℓA, hℓA, fA, hfA, hℓfA⟩ := GlobalTheory.HalfCoinv.exists_invariant_form D ψ hψ A T e he
   obtain ⟨ℓB, hℓB, fB, hfB, hℓfB⟩ := GlobalTheory.HalfCoinv.exists_invariant_form D ψ hψ B T e he
-  obtain ⟨ℓ, hℓ, hbox⟩ := GlobalTheory.T.theta_functional_invariance_product D ψ hψ S A B T o e he ℓA ℓB hℓA hℓB
+  obtain ⟨ℓ, hℓ, hbox⟩ := _root_.GlobalTheory.ProdForm.exists_product_form D ψ hψ S A B T o e he ℓA ℓB hℓA hℓB
   have dA := GlobalTheory.VecInv.isDetAt_detAt e he1 A a
   have dB := GlobalTheory.VecInv.isDetAt_detAt e he1 B b
   have dT := GlobalTheory.VecInv.isDetAt_detAt e he1 T h
@@ -237,7 +237,7 @@ theorem suppAt_one {D : D7} (U : HSp D) (e : AE D) : SuppAt e U (1 : GA D U) := 
 theorem tensor_scalar_one : ∀ (D : D7) (ψ : AddChar (AF D.host.F) ℂ) (S A B T : HSp D) (o : OrthDec S A B) (χA χB χT : (AE D)ˣ →* Circle) (omS : Om S T) (omA : Om A T) (omB : Om B T), IsWeilDatumO ψ S T (χA * χB) χT omS → IsWeilDatumO ψ A T χA χT omA → IsWeilDatumO ψ B T χB χT omB → ∀ a b h f, IsThetaFunO ψ S T f → ∀ u v, omS (o.emb (a, b), h) f ((o.resS T).symm (u, v)) = omA (a, h) (fun u' => omB (b, h) (fun v' => f ((o.resS T).symm (u', v'))) v) u := by
   intro D ψ S A B T o χA χB χT omS omA omB hS hA hB
   have hψ := hS.std
-  choose C hC using GlobalTheory.T.weilRep_orthogonal_sum_eq_unit_smul_product D ψ S A B T o χA χB χT omS omA omB hS hA hB
+  choose C hC using _root_.GlobalTheory.WeilSumScalar.omS_eq_smul_prod D ψ S A B T o χA χB χT omS omA omB hS hA hB
   have law : ∀ a b h, ProdLaw ψ o omS omA omB a b h (C a b h) := fun a b h =>
     prodLaw_of o omS omA omB a b h _ (hC a b h)
   have cmul : ∀ a a' b b' h h', (C (a * a') (b * b') (h * h') : ℂ) = C a b h * C a' b' h' := fun a a' b b' h h' =>

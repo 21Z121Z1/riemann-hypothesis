@@ -6,8 +6,10 @@ public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership
 public import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.IsSubquotientDetRepParInd
 public import Development.AbelianVarietyTheory.Definitions.Foundations.IsSatVecUOfIsSphericalU
 public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SatakeParameterSphericalProductSpehQuotients
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExistsIntPolyEsymmEqPowerSumMultisetStatement
-public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.ElementarySymmetricInverse
+public import Mathlib
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0012
+public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.Bundle0002
+public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0014
 
 @[expose] public section
 
@@ -111,7 +113,7 @@ private theorem pow_op (R : Subring ℂ) (a n : ℕ) (hn : 1 ≤ n) (t : Fin (a 
     ∃ F : G →₀ ℂ, (∀ g, F g ∈ R) ∧ ∀ (V : Type) [AddCommGroup V] [Module ℂ V] (ρ : Representation ℂ G V) (v : V)
       (s : Multiset ℂ), Multiset.card s = a → (∀ j : Fin (a + 1), opOf ρ (t j) v = s.esymm j • v) →
       opOf ρ F v = (s.map (· ^ n)).sum • v := by
-  obtain ⟨P, hP⟩ := GlobalTheory.T.exists_intPoly_esymm_eq_powerSum_multiset a n hn
+  obtain ⟨P, hP⟩ := _root_.GlobalTheory.PowerSumPoly.exists_intPoly_psum_eq a n hn
   obtain ⟨F, h1, h2⟩ := poly_op R t ht P
   refine ⟨F, h1, fun V _ _ ρ v s hs h => ?_⟩
   rw [h2 V ρ v (fun j => s.esymm j) h, hP s hs]

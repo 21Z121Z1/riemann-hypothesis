@@ -1,36 +1,40 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.GrothendieckDeformation
-public import Development.AbelianVarietyTheory.Definitions.Divisors.CovolXOfCovol
-public import Development.AbelianVarietyTheory.Definitions.Divisors.ToKnownTheoremsOf
-public import Development.AbelianVarietyTheory.Definitions.Divisors.CuspIso
-public import Development.AbelianVarietyTheory.Definitions.Divisors.WellChosen
-public import Development.AbelianVarietyTheory.Definitions.Divisors.IntegralBound
-public import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsCoordAtPoints
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NormalizedPointHeightLatticeSmul
+public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.Bundle0008
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0055
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0059
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0053
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0041
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0042
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0043
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0891
 public import Development.AbelianVarietyTheory.Definitions.Divisors.IsHeightIffOfDegreeEq
 public import Development.AbelianVarietyTheory.Definitions.Divisors.WedgeNrmLeOfWedgeNormLe
-public import Development.AbelianVarietyTheory.Definitions.Divisors.VolMeasureOfAdd
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0048
 public import Development.AbelianVarietyTheory.Definitions.Divisors.MemLevEigenIffTransl
 public import Formalism.LocalToGlobal.IndefiniteForms.IndefiniteTree.RealCubicMeans.LogMeanShares.LogMeanStatements.HSClaim
 public import Development.AbelianVarietyTheory.Definitions.Divisors.GenRatios
 public import Development.AbelianVarietyTheory.Definitions.Divisors.BadElt
-public import Development.AbelianVarietyTheory.Definitions.Divisors.CongModRefl
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HostBoundHolds
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0045
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1877
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CardLeOfDetEqZero
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LevelActionMemCuspFormsOfActionLaws
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsLevelAtEachIndex
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PrincipalLevelLiftModuliLawsOfCore
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DeepLevelCoverPrincipalLevelLawsGalois
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1498
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0204
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1535
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1645
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SectionPullbackExistsUnique
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EquivAtRecordOfEquivRow
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1327
 public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.MulVecMemOfFrame
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PullActLev
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FibreConstantIffCoveringGroupInvariantStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LevelCoverCuspFormPullbackInjectiveDescentStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsTypeFrameCoverLevelMapsReductionsStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BaseLevelCharacterEqProdSuperdiagonalSum
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1468
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1819
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArakelovVolumes.UpperBounds.Bundle0007
+public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.Bundle0050
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2193
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1523
+public import Formalism.LocalToGlobal.IndefiniteReal.Bundle0027
+public import Formalism.LocalToGlobal.IndefiniteReal.LinksChar
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1490
 
 @[expose] public section
 
@@ -119,13 +123,13 @@ theorem mem_span_pull_iff : ∀ (D : D7) (T : CoreJ D) (j : ℕ) (Y : Deep T.toC
   let π' := (Y.V (wtZ a n)).subtype.comp π
   have hc : ∀ γ v, (transl Y.d.Xo₂ Y.d.c₂ γ).toLinearMap (π' v) = π' (ρ (θ γ) v) := by
     intro γ v
-    have hv := ((GlobalTheory.T.ruleBaseChange_section_values_semilinear _ _ _ _ _ _ _ Y.hle).1 a n _ (s₁ v.2)).1
+    have hv := ((_root_.GlobalTheory.FieldBC.rulBC_sec_val_linear _ _ _ _ _ _ _ Y.hle).1 a n _ (s₁ v.2)).1
     have h1 := GlobalTheory.LevPullEquiv.pull_actLev D j _ _ _ _ _ Y.d hpq.2 hG.lev.1 hG.lev.2
       (GlobalTheory.ClsVal.Cmp.overBase_of_ne hpq.1 hL.levA Y.d) G _ lev liftLa hact' hact₂ (θ γ) γ (hθ γ) a n _ hv _
       (s₂ (π v).2) (p1 v)
     refine GlobalTheory.CoverSec.eq_of_geometric (GlobalTheory.LevelEquivCompare.actLev_mem_sec hact₂ γ (s₂ (π v).2)).1 (s₂ (π _).2).1 (geo h1 (p1 (ρ (θ γ) v)) ?_)
     refine GlobalTheory.CoverSec.eq_of_geometric (GlobalTheory.LevelEquivCompare.actLev_mem_sec hact' _ hv).1
-      ((GlobalTheory.T.ruleBaseChange_section_values_semilinear _ _ _ _ _ _ _ Y.hle).1 a n _ (s₁ (ρ (θ γ) v).2)).1.1 fun k _ _ _ y => ?_
+      ((_root_.GlobalTheory.FieldBC.rulBC_sec_val_linear _ _ _ _ _ _ _ Y.hle).1 a n _ (s₁ (ρ (θ γ) v).2)).1.1 fun k _ _ _ y => ?_
     letI := resAlg Y.hle k
     exact (hbc a n (θ γ) 1 _ _ _ hv (fun _ => s₁ v.2) (GlobalTheory.LevelEquivCompare.isBC_rulBC Y.hle (s₁ v.2)) k (fun _ => rfl) y).trans
       (GlobalTheory.LevelEquivCompare.isBC_rulBC Y.hle (s₁ (ρ (θ γ) v).2) k (fun _ => rfl) y).symm
@@ -160,7 +164,7 @@ theorem mem_span_pull_iff : ∀ (D : D7) (T : CoreJ D) (j : ℕ) (Y : Deep T.toC
     exact (hc γ v).trans ((congrArg π' (hv ⟨θ γ, hγ⟩)).trans (map_smulₛₗ π' _ _))
   · intro h
     have h1 : GlobalTheory.LevPull.FibConst Y.d g := by
-      refine (GlobalTheory.T.fibreConstant_iff_coveringGroup_invariant D j _ _ _ _ _ Y.d hpq.2 hG.lev.1 hG.lev.2 (Or.inl ⟨hpq.1, hL.levA⟩) liftLa (fun γ => LinearMap.ext (liftLa_spec γ)) a n g
+      refine (_root_.GlobalTheory.LevInv.fibConst_iff_invariant D j _ _ _ _ _ Y.d hpq.2 hG.lev.1 hG.lev.2 (Or.inl ⟨hpq.1, hL.levA⟩) liftLa (fun γ => LinearMap.ext (liftLa_spec γ)) a n g
         (s₂ hg)).2 fun γ hγ => ?_
       have h0 := h γ (hker γ hγ ▸ P.one_mem)
       rw [show (⟨θ γ, hker γ hγ ▸ P.one_mem⟩ : P) = 1 from Subtype.ext (hker γ hγ), map_one, Units.val_one, map_one,
@@ -242,7 +246,7 @@ theorem latDeep_eq_latN (p : PtAt ex Csz) (i : Fin D.R.m) (Y : Cov p i) {e : ℕ
   have hMb := ((p.pins i).2.tuple ()).half.1
   have hr : (dat p i).p + (dat p i).q = D.R.r := (GlobalTheory.Member.exists_iotaOK D p.T.Q hJ.pins _ hj).2.1
   have hle : Y.d.l₂.Mb ≤ p.T.Q.l.Mb := hY.lev.1.2.2.2.1.le.trans Ideal.mul_le_left
-  obtain ⟨fr, ε, iso, h1, h2⟩ := GlobalTheory.T.exists_typeFrame_cover_levelMaps_reductions D _ _ _ _ _ p.R.toRealDat i (p.charW.base.lev.βW i) _ (dat p i) _ Y.d.l₂ _
+  obtain ⟨fr, ε, iso, h1, h2⟩ := _root_.GlobalTheory.TypeFrameCover.typeFrame_cover D _ _ _ _ _ p.R.toRealDat i (p.charW.base.lev.βW i) _ (dat p i) _ Y.d.l₂ _
     (GlobalTheory.LevelAction.latEmb_iotaW p.T hJ i) hr hA hM hl₂ hle hMb _ (p.pins i).2.lift.lev
   obtain ⟨t, ψ, t1, t2, t3, t4⟩ := GlobalTheory.TypeBase.base_level_unip_char D _ _ _ _ _ p.R.toRealDat p.F.lv2 p.charW.base.grp.levels p.charW.base.grp.chiW
     (exists_root p) ε iso

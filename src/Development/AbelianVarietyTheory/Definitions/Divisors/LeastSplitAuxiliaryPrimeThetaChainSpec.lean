@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Formalism.LocalToGlobal.IndefiniteReal.LinksChar
-public import Formalism.SharpRestriction.LevelLetterCocycles.TwGood
+public import Formalism.SharpRestriction.LevelLetterCocycles.Bundle0018
 public import Development.AbelianVarietyTheory.Definitions.Foundations.StrictInterlaceIffDescEnum
 
 @[expose] public section

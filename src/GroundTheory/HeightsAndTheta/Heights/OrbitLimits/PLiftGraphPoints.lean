@@ -4,8 +4,8 @@ public import Mathlib
 public import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.StatementsLiftGraphPoints
 public import GroundTheory.HeightsAndTheta.Heights.HeightKernels.PCoordConeArithVar
 public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PBlockImageInverse
-public import GroundTheory.HeightsAndTheta.Heights.Intersections.PThmIUnique
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArakelovGeometry.NatCardEqPowLength
+public import GroundTheory.HeightsAndTheta.Heights.Intersections.Bundle0015
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArakelovGeometry.Bundle0015
 
 @[expose] public section
 

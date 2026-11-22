@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsInertTop
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.TauPsiApply
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0765
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0772
 
 @[expose] public section
 

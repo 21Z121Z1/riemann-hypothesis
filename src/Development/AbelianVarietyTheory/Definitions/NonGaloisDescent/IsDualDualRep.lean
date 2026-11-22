@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.H1MapSubgroup
+public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0013
 
 @[expose] public section
 

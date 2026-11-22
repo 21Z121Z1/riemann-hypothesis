@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.ImportsTerAlt
+public import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.Bundle0044
 public import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.ExistsSumEqOneOfMulEqOne
 
 @[expose] public section

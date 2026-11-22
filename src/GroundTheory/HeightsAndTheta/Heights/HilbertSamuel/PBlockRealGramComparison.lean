@@ -1,12 +1,11 @@
 module
 
 public import Mathlib
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsBlockRealGramComparison
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsBlockResolutionSup
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsSupBoundBlock
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsSupBoundCount
+public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0035
+public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0020
+public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0026
 public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.SupBoundCountLattice
-public import GroundTheory.HeightsAndTheta.Heights.MatrixCharts.DetIneq
+public import GroundTheory.HeightsAndTheta.Heights.MatrixCharts.Bundle0001
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArakelovGeometry.CSandwichStB
 
 @[expose] public section

@@ -4,7 +4,7 @@ public import Formalism.LocalToGlobal.IndefiniteReal.TrISepWith
 public import Formalism.LocalToGlobal.IndefiniteReal.FWExist
 public import Formalism.LocalToGlobal.IndefiniteReal.OneMapT
 public import Formalism.LocalToGlobal.IndefiniteReal.OneMapEq
-public import Formalism.LocalToGlobal.IndefiniteReal.RhoGeo
+public import Formalism.LocalToGlobal.IndefiniteReal.Bundle0027
 
 @[expose] public section
 

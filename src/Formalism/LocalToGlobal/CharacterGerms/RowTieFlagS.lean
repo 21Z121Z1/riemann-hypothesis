@@ -1,19 +1,18 @@
 module
 
-public import Formalism.LocalToGlobal.CharacterGerms.RowTieMemCHarm
-public import Formalism.LocalToGlobal.CharacterGerms.ValuationEqSelfOfUnitGerm
-public import Formalism.LocalToGlobal.CharacterGerms.RowTieSelfCuts
-public import Formalism.LocalToGlobal.CharacterGerms.RowTiePHStabSelf
+public import Formalism.LocalToGlobal.CharacterGerms.Bundle0030
+public import Formalism.LocalToGlobal.CharacterGerms.Bundle0038
+public import Formalism.LocalToGlobal.CharacterGerms.Bundle0022
+public import Formalism.LocalToGlobal.CharacterGerms.Bundle0021
 public import Formalism.LocalToGlobal.CharacterGerms.UncurryLogConstantCoeff
 public import Formalism.SharpRestriction.GrowthBounds.ExponentialPartialDerivatives
-public import Formalism.LocalToGlobal.CharacterGerms.RowTiePAxesSelfSt
-public import Formalism.LocalToGlobal.CharacterGerms.RowTiePAddCvSelf
+public import Formalism.LocalToGlobal.CharacterGerms.Bundle0014
+public import Formalism.LocalToGlobal.CharacterGerms.Bundle0027
 public import Formalism.LocalToGlobal.CharacterGerms.RowTieMain
-public import Formalism.LocalToGlobal.CharacterGerms.CoefficientIdentitySelfConjugate
-public import Formalism.SharpRestriction.GrowthBounds.ProofRowTieVals
-public import Formalism.LocalToGlobal.CharacterGerms.RowTieCharS
-public import Formalism.LocalToGlobal.CharacterGerms.SelfConjugateRowData
-public import Formalism.SharpRestriction.GrowthBounds.CoeffIdentitySelfConjHolds
+public import Formalism.LocalToGlobal.CharacterGerms.Bundle0013
+public import Formalism.SharpRestriction.GrowthBounds.Bundle0005
+public import Formalism.LocalToGlobal.CharacterGerms.Bundle0017
+public import Formalism.SharpRestriction.GrowthBounds.Bundle0003
 
 @[expose] public section
 

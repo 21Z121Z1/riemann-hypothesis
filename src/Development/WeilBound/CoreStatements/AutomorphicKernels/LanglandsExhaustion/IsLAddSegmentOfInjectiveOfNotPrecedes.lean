@@ -1,7 +1,7 @@
 module
 
 public import Development.WeilBound.CoreStatements.AutomorphicKernels.LanglandsExhaustion.CuspEmbP
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IsOrderedFormSnoc
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0539
 
 @[expose] public section
 

@@ -1,7 +1,7 @@
 module
 
 public import Formalism.LocalToGlobal.Columns.OcbPhiFIdxFPos
-public import Formalism.LocalToGlobal.Columns.OcbTIntOfStab
+public import Formalism.LocalToGlobal.Columns.Bundle0034
 
 @[expose] public section
 

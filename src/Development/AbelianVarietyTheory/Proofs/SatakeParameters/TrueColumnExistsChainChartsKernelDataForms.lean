@@ -1,22 +1,20 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.ReadsMove
-public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.JetsInIffStepField
+public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.Bundle0024
+public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.Bundle0015
 public import Formalism.LocalToGlobal.GroupLattices.Joint0
-public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.JointCmpEmbeddingYAlt
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.TrueColumnChoiceGoodChartsEveryStageStatement
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.TrueColumnOrthonormalCoordsEqGivenStatement
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.CompanionLatticeTrueColumnBaseLatticeEqStandardStatement
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.HServTwoSidesJoint0
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.TrueColumnTupleKernelsRationalStatement
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.KernelCoefficientFieldLeCoefficientFieldStatement
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.PlaceUnderTwistPrimeOverTupleRamifiedPrimeStatement
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.TrueColumnKernelDataCompatibleStepChartsStatement
+public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.Bundle0029
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0313
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0264
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0267
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0315
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0262
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0505
 public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.HermitianChartComplexRationalIntegralForms
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.PointDeterminantEqNormOneClassOfLevel
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.MemberLevelPrimeNotMemUnderLevelPrimes
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.LevOkTwists
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0420
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0419
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0273
 
 @[expose] public section
 
@@ -73,8 +71,8 @@ theorem GlobalTheory.Port.jIn_nonempty_true : ∀ {B : Base} {X : PreX B.toPre} 
       ch0 := hCh0
       y0 := ?y0
       fr0 := ?fr0
-      rat := fun j hj => GlobalTheory.T.trueColumnTupleKernels_rational I hI hP l Z l0 ex.tw hJets hex u a j hj
-      kin := GlobalTheory.T.kernelCoefficientField_le_coefficientField I hI hP l Z L hT Gi Gl K Y cX ex t hSK
+      rat := fun j hj => _root_.GlobalTheory.TwU.AtTrue.tuple_kernels_rational I hI hP l Z l0 ex.tw hJets hex u a j hj
+      kin := _root_.GlobalTheory.TwU.kerField_le_rec I hI hP l Z L hT Gi Gl K Y cX ex t hSK
       chiD := hchiD }⟩
   case val =>
     intro i hi
@@ -84,8 +82,8 @@ theorem GlobalTheory.Port.jIn_nonempty_true : ∀ {B : Base} {X : PreX B.toPre} 
   case base =>
     intro i hi β
     obtain ⟨k, hR, _⟩ := (hK i hi).2.2.1
-    rw [GlobalTheory.T.trueColumn_orthonormalCoords_eq_given I hI hP l Z L hT Gi Gl K Y cX ex t u a _ Ch chOf eY Kc full.1.base.dt A hSK (fun i hi => (hK i hi).2.1) hpins i hi]
-    exact GlobalTheory.T.companionLattice_trueColumn_baseLattice_eq_standard I hI hP l Z u i hi _ (fun x => hR.lb β x)
+    rw [_root_.GlobalTheory.TwU.AtTrue.crd_eq_one I hI hP l Z L hT Gi Gl K Y cX ex t u a _ Ch chOf eY Kc full.1.base.dt A hSK (fun i hi => (hK i hi).2.1) hpins i hi]
+    exact _root_.GlobalTheory.TwU.latCo_base_eq_stdL I hI hP l Z u i hi _ (fun x => hR.lb β x)
   case e0Tw =>
     intro φ c y
     change φ ((I.eCls0 l u a).symm (I.eCls0 l u a c)) y = φ c y
@@ -98,7 +96,7 @@ theorem GlobalTheory.Port.jIn_nonempty_true : ∀ {B : Base} {X : PreX B.toPre} 
     intro c
     obtain ⟨κ, h1, h2, h3⟩ := hy0 c
     refine ⟨κ, h1, h2, fun v hv => h3 v fun hvQ => ?_⟩
-    obtain ⟨q, hq, hqv⟩ := GlobalTheory.T.placeUnderTwistPrime_over_tupleRamifiedPrime I hI hP l Z L hT Gi Gl K Y cX ex t hSK a v ((hQ v).1 hvQ)
+    obtain ⟨q, hq, hqv⟩ := _root_.GlobalTheory.TwU.UnderQp.underQ_qp I hI hP l Z L hT Gi Gl K Y cX ex t hSK a v ((hQ v).1 hvQ)
     exact hv q hq hqv
   case fr0 =>
     rw [hf]

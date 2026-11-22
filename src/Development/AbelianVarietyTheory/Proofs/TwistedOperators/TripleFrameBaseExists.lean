@@ -1,44 +1,42 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsGoodPlace
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IsReading
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GramHspOf
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsUSplittingInl
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsWeilDatumTransportAdelicSchwartzThetaTransStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DoubledUnitaryPartnerDiagStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TransportedWeilDatumKeepsAdmissibleFormsStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TransportedWeilDatumIsUnitaryAdelicSchwartzStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ContinuousTransportedWeilDatumAdelicSchwartzStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DoubledSchroedingerModelSiegelRuleStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsDoubledSchrodingerModelTransposedSiegelRulStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HermitianSelfDualLatticeSpaceFormHermitianNondeg
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0584
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0291
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0918
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1308
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsWeilDatumTransportAdelicSchwartzThetaTrans
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0184
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1725
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1760
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1700
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1896
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1998
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2790
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0957
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SkewHermitianNegTraceZeroInvHermitianUnimodular
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsFinitePlaceVacuumAnyDarbouxCoordinatesStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConjugateUnitaryAdelicIsoMapHaarAndFundamentalDo
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsRationalDarbouxCoordinatesTensorHermitian
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1684
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1515
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1551
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EventuallySelfDualLatticeIndicatorIsVacuum
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HasArchimedeanCharExponentsConjOfHasInfExp
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RestrictsToQuadraticSignPowOfRestrictsToQuadrati
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConjTauEOverRealPlace
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsAdmissibleCMBaseDataOfSquareTupleStanding
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsSplitCompletelyAuxiliaryPlaceOutsideFinset
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1527
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1535
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1529
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1522
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsHermitianLatticeLocalBases
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsNegConjMemberHermitianLatticeSpaceData
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GridSquareSkewSumSpaceIsSkewHermitianSelfDual
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.FrameCoordsMemSelfDualLatticeCoordsIff
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.LieAlgebrasAtPlaceActFockVectorsByFockOperators
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CharacterUnramifiedOffBad
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.MemClosedSubgroupOfLocalStabilizerPairs
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2657
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0448
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0385
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0807
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0183
 public import Development.AbelianVarietyTheory.Statements.HaarFundamentalDomain.ExistsHaarFundDom
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.HeckeCharUnramifiedAtCofinitelyManyPlacesStatement
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.HeckeCharUnramifiedPlaceOfUnramifiedOnePrimeStatement
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.NonemptyAlgHomCompletionOfSplitPlaceStatement
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IsWeilDatumCompGroupSwappingSymplecticEquivStatement
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsUnitaryEquivConjOfGramTransposeEqNegStatement
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsUnitaryEquivInvTransposeOfGramInvStatement
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsTransposeGramCoordinateHomeomorphSymplectiStatement
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SymplecticHomTransposeGramDarbouxStatement
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0302
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0393
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0307
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0306
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0303
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0322
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0311
 
 @[expose] public section
 
@@ -71,9 +69,9 @@ theorem exists_swap {D : D7} {ψ : AddChar (AF D.host.F) ℂ} (S T S' T' : HSp D
           ω' (g', h') f (((HMul.hMul x ((S.gram⁻¹).map (incA D)) : Matrix (Fin T.rank) (Fin S.rank) (AE D))ᵀ).submatrix e₁ e₂) =
           ω (g, h) (fun y : Matrix (Fin T.rank) (Fin S.rank) (AE D) =>
             f (((HMul.hMul y ((S.gram⁻¹).map (incA D)) : Matrix (Fin T.rank) (Fin S.rank) (AE D))ᵀ).submatrix e₁ e₂)) x := by
-  obtain ⟨φ', c1, q1, m1, s1, d1⟩ := GlobalTheory.T.exists_unitary_equiv_conj_of_gram_transpose_eq_neg D S T' e₁ hT'
-  obtain ⟨φ, c2, q2, m2, s2, d2⟩ := GlobalTheory.T.exists_unitary_equiv_inv_transpose_of_gram_inv D T S' e₂ hS'
-  obtain ⟨L, hL, hLs, cL, cL', rL, iL, fL⟩ := GlobalTheory.T.exists_transposeGram_coordinate_homeomorph_symplectic D S T S' T' e₁ e₂
+  obtain ⟨φ', c1, q1, m1, s1, d1⟩ := _root_.GlobalTheory.GrpConj.exists_conj_equiv D S T' e₁ hT'
+  obtain ⟨φ, c2, q2, m2, s2, d2⟩ := _root_.GlobalTheory.InvTransposeIso.grp_contra D T S' e₂ hS'
+  obtain ⟨L, hL, hLs, cL, cL', rL, iL, fL⟩ := _root_.GlobalTheory.Twist.exists_transposeGram_coordinate_homeomorph_symplectic.coordsLin_spec D S T S' T' e₁ e₂
   have m1' : ∀ h, Formalism.L2.Theta.mt T' h = ((Formalism.L2.Theta.mt S (φ' h)).map (cA D)).submatrix e₁ e₁ := fun h => by
     ext i j
     have t3 := congrArg (cA D) (congrFun (congrFun (m1 h) i) j)
@@ -98,9 +96,9 @@ theorem exists_swap {D : D7} {ψ : AddChar (AF D.host.F) ℂ} (S T S' T' : HSp D
     rw [hL, u2, Matrix.transpose_mul, Matrix.transpose_mul, ← Matrix.submatrix_mul_equiv _ _ _ e₂.symm,
       ← Matrix.submatrix_mul_equiv _ _ _ e₁.symm, u3]
     simp only [Matrix.mul_assoc, u1]
-  obtain ⟨ω', hw, hω'⟩ := GlobalTheory.T.isWeilDatum_comp_group_swapping_symplectic_equiv D ψ S T S' T' (by simpa using Fintype.card_congr e₂)
+  obtain ⟨ω', hw, hω'⟩ := _root_.GlobalTheory.SwapWeil.isWeilDatumO_swap D ψ S T S' T' (by simpa using Fintype.card_congr e₂)
     (by simpa using Fintype.card_congr e₁) L φ.toMonoidHom
-    φ'.toMonoidHom cL cL' rL (fun x y => by rw [hL, hL]; exact GlobalTheory.T.symplectic_hom_transpose_gram_darboux D S T S' T' e₁ e₂ hT' hS' x y) iL fL c2 c1 q2 q1
+    φ'.toMonoidHom cL cL' rL (fun x y => by rw [hL, hL]; exact _root_.GlobalTheory.DarbouxSymp.symplO_darboux D S T S' T' e₁ e₂ hT' hS' x y) iL fL c2 c1 q2 q1
     hact s2 s1 d2 d1 χS χT ω hω
   refine ⟨ω', hw, fun g h => ⟨φ.symm h, φ'.symm g, ?_, ?_, fun f x => ?_⟩⟩
   · rw [m1', MulEquiv.apply_symm_apply]
@@ -125,13 +123,13 @@ theorem exists_transport_isWeil {D : D7} {ψ : AddChar (AF D.host.F) ℂ} (S T :
   have hT := hw.hecT
   have rS := hw.resS
   have rT := hw.resT
-  obtain ⟨om, hom⟩ := GlobalTheory.T.exists_weilDatum_transport_adelicSchwartz_thetaTransform D ψ hψ S T χ' χ hS hT rS rT Y.J Z.J (-1) eA eB _ Mo.co hMo.rat ω' hw
+  obtain ⟨om, hom⟩ := _root_.GlobalTheory.ThetaTransform.exists_isTransport D ψ hψ S T χ' χ hS hT rS rT Y.J Z.J (-1) eA eB _ Mo.co hMo.rat ω' hw
   have k2 := GlobalTheory.T.transportedWeil_preserves_schwartz_heisenberg_equivariant D ψ hψ S T χ' χ hS hT rS rT Y.J Z.J (-1) eA eB _ Mo.co hMo.rat ω' hw om hom
-  have k3 := GlobalTheory.T.transportedWeilDatum_keeps_admissible_forms D ψ hψ S T χ' χ hS hT rS rT Y.J Z.J (-1) eA eB _ Mo.co hMo.rat ω' hw om hom
-  have k4 := GlobalTheory.T.transportedWeilDatum_isUnitary_adelicSchwartz D ψ hψ S T χ' χ hS hT rS rT Y.J Z.J (-1) eA eB _ Mo.co hMo.rat ω' hw om hom
-  have k5 := GlobalTheory.T.continuous_transported_weilDatum_adelicSchwartz D ψ hψ S T χ' χ hS hT rS rT Y.J Z.J (-1) eA eB _ Mo.co hMo.rat ω' hw om hom
-  have k6 := GlobalTheory.T.exists_doubledWeil_blockEmbedding_acts_on_first_boxFactor D ψ hψ S T χ' χ hS hT rS rT Y.J Z.J (-1) eA eB _ Mo.co hMo.rat ω' hw om hom
-  have k7 := GlobalTheory.T.exists_doubled_schrodingerModel_transposed_siegelRule D ψ hψ S T χ' χ hS hT rS rT Y.J Z.J (-1) eA eB _ Mo.co hMo.rat ω' hw om hom
+  have k3 := _root_.GlobalTheory.WeilAdm.transport_adm D ψ hψ S T χ' χ hS hT rS rT Y.J Z.J (-1) eA eB _ Mo.co hMo.rat ω' hw om hom
+  have k4 := _root_.GlobalTheory.WeilUnitaryTransport.isUnitaryOn_transport D ψ hψ S T χ' χ hS hT rS rT Y.J Z.J (-1) eA eB _ Mo.co hMo.rat ω' hw om hom
+  have k5 := _root_.GlobalTheory.WeilCont.continuous_transport D ψ hψ S T χ' χ hS hT rS rT Y.J Z.J (-1) eA eB _ Mo.co hMo.rat ω' hw om hom
+  have k6 := _root_.GlobalTheory.DblSchr.doubledModel D ψ hψ S T χ' χ hS hT rS rT Y.J Z.J (-1) eA eB _ Mo.co hMo.rat ω' hw om hom
+  have k7 := _root_.GlobalTheory.WeilSchrodinger.DblTarget.exists_dbl_target D ψ hψ S T χ' χ hS hT rS rT Y.J Z.J (-1) eA eB _ Mo.co hMo.rat ω' hw om hom
   have hsp : GlobalTheory.WeilM.IsUSplitting (GlobalTheory.WeilM.adeleClass D.host.F) ψ Mo.co
       (GlobalTheory.WeilM.actAB (GlobalTheory.IndefiniteRowSideFullHecke.WeilTensorModels.cA D.sp.cm.sig)) om := ⟨⟨k2.1, k2.2, k3⟩, k4, k5⟩
   exact ⟨om, ⟨⟨isUSplitting_inr hsp, k6⟩, ⟨transD _ Mo.co, transD_e Mo.co, isUSplitting_inl hsp, k7⟩, k5⟩, hom⟩
@@ -190,7 +188,7 @@ theorem exists_ram_set {D : D7} {W W₁ X : HSp D} {α β : (AE D)ˣ →* Circle
       (∀ w : HeightOneSpectrum (𝓞 D.host.E), w.under (𝓞 D.host.F) ∈ T → ¬ GlobalTheory.LFun.UnrAt (α / β) w) ∧
       ∀ w : HeightOneSpectrum (𝓞 D.host.E), w.under (𝓞 D.host.F) ∉ T → GlobalTheory.LFun.UnrAt α w ∧ GlobalTheory.LFun.UnrAt β w := by
   classical
-  have hfin := (GlobalTheory.T.heckeChar_unramified_at_cofinitely_many_places D α h.hecA).union (GlobalTheory.T.heckeChar_unramified_at_cofinitely_many_places D β h.hecB)
+  have hfin := (_root_.GlobalTheory.HeckeFinRam.finite_ramified D α h.hecA).union (_root_.GlobalTheory.HeckeFinRam.finite_ramified D β h.hecB)
   have hν : IsHeckeChar D (α / β) :=
     ⟨h.hecA.1.div' h.hecB.1, fun x => by rw [MonoidHom.div_apply, h.hecA.2, h.hecB.2, div_one]⟩
   have hr : ResEta D (α / β) 0 := by
@@ -211,9 +209,9 @@ theorem exists_ram_set {D : D7} {W W₁ X : HSp D} {α β : (AE D)ˣ →* Circle
     · exact hw (GlobalTheory.BasePairChar.unrAt_of_unramAt hε hu.2 rfl)
   refine ⟨hfin.toFinset.image (fun w => w.under (𝓞 D.host.F)), fun v hv => ?_, fun w hw hu => ?_, fun w hw => ?_⟩
   · obtain ⟨ε, h1, h2, -, h4⟩ := key v hv
-    exact ⟨GlobalTheory.T.nonempty_algHom_completion_of_split_place D v ε h1 h2, h4⟩
+    exact ⟨_root_.GlobalTheory.SplitPlaceEmb.nonempty_algHom_of_not_nonSplitAt D v ε h1 h2, h4⟩
   · obtain ⟨ε, h1, -, h3, -⟩ := key _ hw
-    exact h3 (GlobalTheory.T.heckeChar_unramified_place_of_unramified_one_prime D _ hν hr _ ε h1 w rfl hu)
+    exact h3 (_root_.GlobalTheory.UnramFromOnePrime.unramAt_of_unrAt_one D _ hν hr _ ε h1 w rfl hu)
   · by_contra hn
     refine hw (Finset.mem_image_of_mem _ (hfin.mem_toFinset.2 ?_))
     by_cases ha : GlobalTheory.LFun.UnrAt α w

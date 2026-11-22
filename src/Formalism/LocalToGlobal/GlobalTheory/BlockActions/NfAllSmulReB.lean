@@ -1,6 +1,6 @@
 module
 
-public import Formalism.LocalToGlobal.GlobalTheory.BlockActions.ExistsOnOfPosDef
+public import Formalism.LocalToGlobal.GlobalTheory.BlockActions.Bundle0003
 public import Formalism.LocalToGlobal.GlobalTheory.NfAllSmulSelfRe
 
 @[expose] public section

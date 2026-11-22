@@ -2,13 +2,12 @@ module
 
 public import Development.WeilBound.CoreStatements.AmpleLineBundles.FrameBasis
 public import Development.WeilBound.CoreStatements.AmpleLineBundles.RhoEventually
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.CoordsAtComplexEmbedding
-public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.SlopeBoundSt
-public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.ArchBetween
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0094
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.Bundle0012
 public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.BdryChart
 public import Development.AutomorphicSpectrum.Definitions.MetricPeriods.ClopenCondOnto
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.UniformisationConclusion
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.HeckeKer
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.Bundle0003
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.BlowupProjections.BlowupProjStatement
 public import Development.AbelianVarietyTheory.PublishedTheorems.SemiabelianTori.GeometricallyConnectedSplitTorusAff
 
@@ -29,7 +28,7 @@ theorem nonempty_lie_metric_of_coordinates : ∀ (X : Scheme.{0}) (Ω : Type) [F
   classical
   intro X Ω _ K _ J _ y ξ _ hall tie G _ _ _ Li _ _ M
   have hξ := tie.gen
-  have key := GlobalTheory.T.local_ring_points_existsUnique X Ω ξ K J y tie ℂ
+  have key := _root_.GlobalTheory.CompanionTheory.Ar.tie_points X Ω ξ K J y tie ℂ
   choose n P B hB hcov using fun c => chart_cover tie (lieLat_isVB_of_smooth X Ω ξ G Li M hξ inferInstance).1 c
   choose wz hwz using fun z : Sp ℂ ⟶ X => key.2.1 z (hall _)
   let Λ := Σ c : (k : K) → J k, Fin (n c)

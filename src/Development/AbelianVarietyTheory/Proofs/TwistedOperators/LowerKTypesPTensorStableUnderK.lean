@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.FunJetApply
-public import Development.AbelianVarietyTheory.Proofs.HeightProofs.IsKStableOnOfLieStableFiniteDim
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0085
+public import Development.AbelianVarietyTheory.Proofs.HeightProofs.Bundle0020
 
 @[expose] public section
 

@@ -1,6 +1,6 @@
 module
 
-public import Formalism.SharpRestriction.GrowthBounds.SegmentDegree.ReflectionMemGlevCastSucc
+public import Formalism.SharpRestriction.GrowthBounds.SegmentDegree.Bundle0010
 
 @[expose] public section
 

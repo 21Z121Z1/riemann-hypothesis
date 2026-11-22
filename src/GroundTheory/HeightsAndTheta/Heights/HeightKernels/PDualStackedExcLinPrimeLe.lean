@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import GroundTheory.HeightsAndTheta.Heights.HeightKernels.StatementsDualStackedExcResidue
-public import GroundTheory.HeightsAndTheta.Heights.HeightKernels.StatementsDualCotangentKer
+public import GroundTheory.HeightsAndTheta.Heights.HeightKernels.Bundle0038
+public import GroundTheory.HeightsAndTheta.Heights.HeightKernels.Bundle0041
 public import GroundTheory.HeightsAndTheta.Heights.HeightKernels.PDualStackedExcGeoFirst
 
 @[expose] public section

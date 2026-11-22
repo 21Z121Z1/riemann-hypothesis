@@ -1,13 +1,8 @@
 module
 
-public import Development.AutomorphicArithmetic.Foundations.Convolution.TwistedLocalOrbits.Match
-public import Development.AutomorphicArithmetic.Foundations.Convolution.TwistedLocalOrbits.Bridge
-public import Development.AutomorphicArithmetic.Foundations.Convolution.TwistedLocalOrbits.ConjDesc
-public import Development.AutomorphicArithmetic.Foundations.Convolution.TwistedLocalOrbits.NormInj
-public import Development.AutomorphicArithmetic.Foundations.Convolution.TwistedLocalOrbits.SgIterateEqSelf
-public import Development.AutomorphicArithmetic.Foundations.Convolution.TwistedLocalOrbits.ContractI
-public import Development.AutomorphicArithmetic.Foundations.Convolution.TwistedLocalOrbits.StrictNormal
-public import Development.AutomorphicArithmetic.Foundations.Convolution.TwistedLocalOrbits.UnitNorm
+public import Development.AutomorphicArithmetic.Foundations.Convolution.TwistedLocalOrbits.Bundle0001
+public import Development.AutomorphicArithmetic.Foundations.Convolution.TwistedLocalOrbits.Bundle0003
+public import Development.AutomorphicArithmetic.Foundations.Convolution.TwistedLocalOrbits.Bundle0002
 public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IwahoriProjSurjective
 
 @[expose] public section

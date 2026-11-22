@@ -1,14 +1,14 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ProjectiveBundleFormulaOfUnitOnEtalePoints
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TrivV
-public import Development.AbelianVarietyTheory.Definitions.Divisors.SecClass
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CotDComp
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsZeroChains
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsDiscreteSpaceCocycleVanishingPosStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ProjBundleCochainPresheafIsSheafStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UniqueCochainOnDiscProduct
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0326
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0366
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0006
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0371
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0291
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0421
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0428
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0430
 
 @[expose] public section
 

@@ -1,7 +1,7 @@
 module
 
 public import Development.WeilBound.CoreStatements.AutomorphicKernels.UnitarySchrodingerModel.CoefDataExists
-public import Formalism.UnipotentAdelicQuotients.SiegelWeilUnitaryConvergent
+public import Formalism.UnipotentAdelicQuotients.Bundle0003
 public import Development.WeilBound.RepresentationTheoryGL.SiegelWeilProof.HolomorphicContinuation.MollifiedIntegrability.ClsBoundAlt
 
 @[expose] public section

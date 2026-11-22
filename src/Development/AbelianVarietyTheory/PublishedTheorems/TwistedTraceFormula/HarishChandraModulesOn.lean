@@ -3,8 +3,8 @@ module
 public import Mathlib
 public import Formalism.SharpRestriction.Divisibility.SchurIrreducible
 public import Formalism.SharpRestriction.CuspSpanNormBounds.RelevantZeroGramTerms
-public import Formalism.LocalToGlobal.BesselHermitianTheta.TiedType
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ContDiffSetIntegralNat
+public import Formalism.LocalToGlobal.BesselHermitianTheta.Bundle0003
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0151
 
 @[expose] public section
 

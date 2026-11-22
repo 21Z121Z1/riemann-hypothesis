@@ -1,8 +1,8 @@
 module
 
-public import ReciprocityTheory.AnalyticForms.PotentialTheory.ContDiffMulOfTsupport
+public import ReciprocityTheory.AnalyticForms.PotentialTheory.Bundle0008
 public import ReciprocityTheory.AnalyticForms.PotentialTheory.Stokes
-public import ReciprocityTheory.AnalyticForms.PotentialTheory.LogInt
+public import ReciprocityTheory.AnalyticForms.PotentialTheory.Bundle0007
 public import ReciprocityTheory.AnalyticForms.PotentialTheory.AtlasIndep
 public import ReciprocityTheory.AnalyticForms.PlurisubharmonicFunctions.ProjectiveLineZeroFormHolds
 

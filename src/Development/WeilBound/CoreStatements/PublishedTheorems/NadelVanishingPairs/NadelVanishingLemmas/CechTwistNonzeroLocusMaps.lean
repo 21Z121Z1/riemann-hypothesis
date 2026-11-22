@@ -2,8 +2,8 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.QuasicoherentCohomology.ExistsPowMulPowEqOfIsZeroCechH
-public import Development.AbelianVarietyTheory.Proofs.CoherentCohomologyProofs.EventuallyExistsResMEqMulSecOfEqZpowSec
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CechTwistNonzeroLocusMaps
+public import Development.AbelianVarietyTheory.Proofs.CoherentCohomologyProofs.Bundle0023
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0778
 
 @[expose] public section
 

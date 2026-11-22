@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Formalism.PeriodIntegrals.ExpTri
+public import Formalism.PeriodIntegrals.Bundle0002
 public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.ExponentialTriangular.SortedSpec
 
 @[expose] public section

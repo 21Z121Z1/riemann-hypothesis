@@ -2,13 +2,13 @@ module
 
 public import Mathlib
 public import Development.AutomorphicArithmetic.OrbitLabellings.RowDefs
-public import Formalism.LocalToGlobal.CharacterGerms.RowTieMemCHarm
+public import Formalism.LocalToGlobal.CharacterGerms.Bundle0030
 public import Formalism.LocalToGlobal.CharacterGerms.RowTieFlagS
-public import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.BiextensionNondegenerateModMaximalIdealIntegralCStatement
-public import Development.AutomorphicArithmetic.OrbitLabellings.LabelSetGeoOfLabelSetArith
+public import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.Bundle0081
+public import Formalism.LocalToGlobal.CharacterGerms.Bundle0015
+public import Development.AutomorphicArithmetic.OrbitLabellings.Bundle0004
 public import Development.AutomorphicArithmetic.OrbitLabellings.LabelSetEvOfGeoOfNotDvdDiscr
 public import Development.AutomorphicArithmetic.OrbitLabellings.BlkMemSSelfConjugatePlacesOfCMDatum
-public import Development.AutomorphicArithmetic.OrbitLabellings.ValBlocksSOfBlkMemS
 
 @[expose] public section
 
@@ -44,7 +44,7 @@ theorem UpperTheory.labelSetGeo_of_even_of_rankOK_of_not_dvd_discr :
   intro hUp E _ _ _ H Dw lv Xo c _ hstar T io y C3 C _ _ V ι hι k Y hY halg Orb _ d _ lab ha hdisc hev hr hbig hj
     a ga hsupp htie nW ν hν
   have hg : LabSGeo C3 ι Y lab := UpperTheory.labelSetGeo_of_labelSetArith E H Dw lv Xo c hstar T io y C3 C V ι hι k Y hY Orb d lab ha
-  have hR2 : RankMaximalSelfCharts Xo c := rank_maximal_self_charts_of_nondegenerate Xo c rank_maximal_self_unconditional (GlobalTheory.T.biextension_nondegenerate_mod_maximalIdeal_integral_chart E H Dw lv Xo c)
+  have hR2 : RankMaximalSelfCharts Xo c := rank_maximal_self_charts_of_nondegenerate Xo c rank_maximal_self_unconditional (_root_.GlobalTheory.AlphaPair.ndg_at_chart E H Dw lv Xo c)
   have hCart : CartSelfSt := cartesian_self_conj_of_stability ptSelf_holds hStabSelf_holds
   have Hy : ∀ o, (Y.rawSelf (selfOfLab ha hg o)).Hyps V := fun o =>
     { charZero := inferInstance

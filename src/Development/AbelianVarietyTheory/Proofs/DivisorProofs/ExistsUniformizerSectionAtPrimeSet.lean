@@ -1,12 +1,11 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NabBaseChange
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MemCompletedPairLatticeIffAdjointFrameMatrixInte
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MemCompletedPairLatticeIffFrameMatrixIntegralOnH
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsDualHalfLatticeDetectingCharacter
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1855
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1884
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0479
 public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.MemHatIffOfSelfDual
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FinPartMulIncAMem
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0799
 public import Formalism.LocalToGlobal.IndefiniteReal.FinitePlaces.InfPartOfSplitIdem
 
 @[expose] public section

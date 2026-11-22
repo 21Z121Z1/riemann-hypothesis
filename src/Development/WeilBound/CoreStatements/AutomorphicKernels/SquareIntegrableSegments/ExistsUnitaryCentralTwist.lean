@@ -2,10 +2,10 @@ module
 
 public import Mathlib
 public import Development.WeilBound.CoreStatements.TemperedRepresentationTheory.SquareIntegrableTempered.CasselmanNecTemp
-public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.IrreducibleAdmissibleGL
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.AlgebraMapIntertwiningMapBijectiveOfIsSmooth
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.UnitarisableSegmentTwistPrecedesAddOneLe
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsRealExponentAbsSmoothCharacterLocalField
+public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.Bundle0002
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0621
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0642
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0238
 
 @[expose] public section
 

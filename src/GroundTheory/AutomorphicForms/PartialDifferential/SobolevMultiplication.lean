@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import GroundTheory.AutomorphicForms.PartialDifferential.SobolevRellich
-public import GroundTheory.AutomorphicForms.PartialDifferential.SobolevEmbedding
+public import GroundTheory.AutomorphicForms.PartialDifferential.Bundle0001
 
 @[expose] public section
 

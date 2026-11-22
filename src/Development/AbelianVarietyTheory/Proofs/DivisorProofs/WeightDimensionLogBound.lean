@@ -1,13 +1,16 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Divisors.CovolXOfCovol
-public import Development.AbelianVarietyTheory.Definitions.Divisors.ToKnownTheoremsOf
-public import Development.AbelianVarietyTheory.Definitions.Divisors.EigLatLe
-public import Development.AbelianVarietyTheory.Definitions.Divisors.QuoIff
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WeightBoundHolds
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HostBoundHolds
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DualWeylDimFormulaDualityBoundStatement
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0055
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0059
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0045
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0056
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2042
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1877
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1218
+public import Development.AbelianVarietyTheory.Definitions.Divisors.IsAdelicOne
+public import Formalism.LocalToGlobal.CMDeterminantIdeals.Bundle0001
+public import Formalism.PolynomialDimension.Bundle0001
 public import Formalism.SharpRestriction.Divisibility.HookProducts.Compl3Record
 
 @[expose] public section

@@ -1,7 +1,7 @@
 module
 
-public import Formalism.LocalToGlobal.Columns.WmLemmas
-public import Formalism.FlagUnipotentLattices.IdealCountLeWAsm
+public import Formalism.LocalToGlobal.Columns.Bundle0007
+public import Formalism.FlagUnipotentLattices.Bundle0004
 public import Lemmata.GeneralBFactRightMore.Imports
 
 @[expose] public section

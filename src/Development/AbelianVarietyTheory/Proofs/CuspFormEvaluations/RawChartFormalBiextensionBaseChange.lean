@@ -2,16 +2,15 @@ module
 
 public import Mathlib
 public import Formalism.LocalToGlobal.ProjectiveLattices.ThShort
-public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.CIndBC
-public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.ThExprUniqOfChartIndep2
-public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.GermCut
-public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.FBMapPf
+public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0006
+public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0007
+public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0011
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.SecBaseChangeAnySt
-public import Development.AbelianVarietyTheory.Proofs.FormalGroupCharts.CanonGaugeNabValBaseChange
-public import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.IsRawChartBaseChangeJetPointsStatement
-public import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.ExistsRawChartFramesBaseChangeStatement
-public import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.IsFrameRawChartBaseChangeStatement
-public import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.RawChartBaseChangeRigGermStatement
+public import Development.AbelianVarietyTheory.Proofs.FormalGroupCharts.Bundle0008
+public import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.Bundle0015
+public import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.Bundle0016
+public import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.IsFrameRawChartBaseChange
+public import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.RawChartBaseChangeRigGerm
 
 @[expose] public section
 
@@ -50,17 +49,17 @@ namespace GlobalTheory
 
 theorem rawChart_baseChange : RawBCSt := by
   intro E _ _ _ H Dw l Xo c _ S S' _ _ _ _ _ _ ψ x0 u C
-  obtain ⟨e', hg, hc, -⟩ := GlobalTheory.T.exists_rawChart_frames_baseChange E H Dw l Xo S S' (ψ : S →+* S') x0 C.d C.B.G.F C.B.A.act C.x
+  obtain ⟨e', hg, hc, -⟩ := _root_.GlobalTheory.RawFrameBC.exists_frames E H Dw l Xo S S' (ψ : S →+* S') x0 C.d C.B.G.F C.B.A.act C.x
     (fun m => rjBC (ψ : S →+* S') x0 C.d m 1 ≫ C.x m) (fun _ => rfl) C.e C.frame.gen
-  have hG := GlobalTheory.T.rawChart_baseChange_rig_germ_alt E H Dw l Xo S S' (ψ : S →+* S') x0 C.d C.B.G.F C.B.A.act C.x
+  have hG := _root_.GlobalTheory.rawChart_baseChange_rig_germ E H Dw l Xo S S' (ψ : S →+* S') x0 C.d C.B.G.F C.B.A.act C.x
     (fun m => rjBC (ψ : S →+* S') x0 C.d m 1 ≫ C.x m) (fun _ => rfl) C.e e' C.frame.gen hg hc
     C.wP C.prim.1
   refine ⟨FBMap.mapFB (ψ : S →+* S') C.B, fun m => rjBC (ψ : S →+* S') x0 C.d m 1 ≫ C.x m, e',
     fun _ => rfl, fun _ => rfl, fun _ _ => rfl, rfl, rfl, rfl, fun _ => rfl, ?_, ?_,
     RawChartBaseChange.isCanonGauge_mapFB _ C.B C.h C.gauge, hG.1 C.rig0, hG.2⟩
-  · exact GlobalTheory.T.isRawChart_baseChange_jetPoints E H Dw l Xo S S' (ψ : S →+* S') x0 C.d C.B.G.F C.B.A.act C.x
+  · exact _root_.GlobalTheory.RawChartBC.rIsChart_baseChange E H Dw l Xo S S' (ψ : S →+* S') x0 C.d C.B.G.F C.B.A.act C.x
       (fun m => rjBC (ψ : S →+* S') x0 C.d m 1 ≫ C.x m) (fun _ => rfl) u C.uvec C.chart
-  · exact GlobalTheory.T.isFrame_rawChart_baseChange E H Dw l Xo S S' (ψ : S →+* S') x0 C.d C.B.G.F C.B.A.act C.x
+  · exact _root_.GlobalTheory.isFrame_baseChange E H Dw l Xo S S' (ψ : S →+* S') x0 C.d C.B.G.F C.B.A.act C.x
       (fun m => rjBC (ψ : S →+* S') x0 C.d m 1 ≫ C.x m) (fun _ => rfl) C.e e' C.frame.gen hg hc
       _ _ _ _ C.frame
 

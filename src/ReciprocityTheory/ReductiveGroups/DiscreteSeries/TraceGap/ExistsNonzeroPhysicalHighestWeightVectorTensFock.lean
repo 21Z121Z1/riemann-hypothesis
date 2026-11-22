@@ -1,6 +1,6 @@
 module
 
-public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.TensorRepresentations.LowFock
+public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.TensorRepresentations.Bundle0008
 public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.TraceGap.BlockAnti
 
 @[expose] public section

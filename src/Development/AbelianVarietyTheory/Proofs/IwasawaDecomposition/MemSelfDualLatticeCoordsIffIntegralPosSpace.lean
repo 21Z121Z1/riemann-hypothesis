@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.BrgStdR
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ReadsDeco
+public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.Bundle0024
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0359
 public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.UnitaryFiniteAdelicPointAsMatrixMemFlagIwahori
 
 @[expose] public section

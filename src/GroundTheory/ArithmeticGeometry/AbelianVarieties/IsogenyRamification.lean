@@ -3,7 +3,7 @@ module
 public import Mathlib
 public import GroundTheory.ArithmeticGeometry.AbelianVarieties.IsogenyValuation
 public import GroundTheory.ArithmeticGeometry.AbelianVarieties.DualIsogenyExists
-public import GroundTheory.ArithmeticGeometry.AbelianVarieties.WeilPairing
+public import GroundTheory.ArithmeticGeometry.AbelianVarieties.Bundle0004
 
 @[expose] public section
 

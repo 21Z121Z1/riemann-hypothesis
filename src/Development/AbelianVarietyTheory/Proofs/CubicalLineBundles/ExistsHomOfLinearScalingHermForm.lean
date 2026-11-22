@@ -3,10 +3,10 @@ module
 public import Mathlib
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.IsHolPeriods
 public import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.SemicharacterSqEqOneOfSymmetric
-public import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.SurjectiveOfComplexPointsLiftOfUniversallyClosed
-public import Development.AbelianVarietyTheory.Proofs.ToricGeometry.ExistsUniquePointOfRingHom
-public import Development.AbelianVarietyTheory.Proofs.ToricGeometry.IsReducedSchemeOfSmoothOfIsIntegrallyClosed
-public import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.DenseClosedPoints
+public import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.Bundle0005
+public import Development.AbelianVarietyTheory.Proofs.ToricGeometry.Bundle0013
+public import Development.AbelianVarietyTheory.Proofs.ToricGeometry.Bundle0014
+public import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.Bundle0004
 
 @[expose] public section
 

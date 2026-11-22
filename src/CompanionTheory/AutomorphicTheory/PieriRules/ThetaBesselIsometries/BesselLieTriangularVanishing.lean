@@ -3,10 +3,11 @@ module
 public import Mathlib
 public import CompanionTheory.AutomorphicTheory.PieriRules.PieriDegreeBounds.Imports
 public import Development.AbelianVarietyTheory.Definitions.Jets.SumIoPr
-public import Formalism.RealPlaceAnalysis.StatementE
-public import Formalism.RealPlaceAnalysis.StatementKT
-public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.ExpMemUnipotentAndHasDerivAtCharacterStatement
-public import CompanionTheory.AutomorphicTheory.PieriRules.ThetaBesselIsometries.FrechetContinuousContinuousOnOrbitHasDerivAtStatement
+public import Formalism.RealPlaceAnalysis.Bundle0003
+public import Formalism.RealPlaceAnalysis.Bundle0002
+public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0048
+public import Development.AbelianVarietyTheory.Definitions.Jets.SideFam
+public import CompanionTheory.AutomorphicTheory.PieriRules.ThetaBesselIsometries.Bundle0005
 public import CompanionTheory.AutomorphicTheory.PieriRules.ThetaBesselIsometries.DerivedActionDiscreteSeriesProperties
 public import CompanionTheory.AutomorphicTheory.PieriRules.ThetaBesselIsometries.IsDSOfIsDG
 
@@ -155,7 +156,7 @@ theorem on_real (hK : PI.KFinSmooth) {ε : Fin (2 * r + k + 1) → Bool} {mu : F
     l (PI.UpqRep.dsig (k := k) (r := r) R.σ X v) =
       (Formalism.QuantumDeterminants.ell k r z X - star (Formalism.QuantumDeterminants.ell k r z X)) • l v := by
   obtain ⟨hadd, hsmul, heq, hc⟩ := hl
-  obtain ⟨hN, hd⟩ := GlobalTheory.T.exp_mem_unipotent_and_hasDerivAt_character k r z X hz hX hP
+  obtain ⟨hN, hd⟩ := _root_.GlobalTheory.UnipotentExp.exp_mem_and_deriv k r z X hz hX hP
   have h1 := (GlobalTheory.T.frechetContinuous_continuousOn_orbit_hasDerivAt hK k r ε mu R hR Wp l hadd hsmul hc v hv).2 X hX
   have h2 := hd.smul_const (l v)
   have hone : (1 : Mx k r) ∈ Formalism.QuantumDeterminants.UWset k r z := by

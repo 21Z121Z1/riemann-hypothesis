@@ -1,6 +1,6 @@
 module
 
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.HasCohomology
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.Bundle0003
 public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.StrongMultiplicityOne
 
 @[expose] public section

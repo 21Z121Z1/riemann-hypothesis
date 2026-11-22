@@ -1,12 +1,12 @@
 module
 
 public import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.AdmissibleResidues.SumThree
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.IsoOfFrob
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.Bundle0005
 public import Development.WeilBound.CoreStatements.PublishedTheorems.JacquetShalikaBound.JacquetShalikaBound
 public import Development.WeilBound.CoreStatements.PublishedTheorems.SmoothVectorEstimates.SameSatTwist
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsIsUnitaryTwistAbsPow
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CuspidalLetterRealExponentEqZeroIffIsUnitary
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.LocalComponentUnitarisableTwist
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0629
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1262
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0297
 
 @[expose] public section
 

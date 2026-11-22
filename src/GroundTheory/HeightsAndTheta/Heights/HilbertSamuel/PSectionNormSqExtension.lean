@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsSectionNormSqExtension
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsSectionNormSqLevi
+public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0078
+public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0005
 public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.SectionNormSquares.Pointwise
 
 @[expose] public section

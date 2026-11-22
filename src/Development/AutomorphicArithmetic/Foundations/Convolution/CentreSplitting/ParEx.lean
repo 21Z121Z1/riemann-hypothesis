@@ -1,9 +1,9 @@
 module
 
 public import Development.AutomorphicArithmetic.Foundations.Convolution.CentreSplitting.SInfEx
-public import Development.AutomorphicArithmetic.Foundations.Convolution.CentreSplitting.SSatEx
-public import Development.AutomorphicArithmetic.Foundations.Convolution.CentreSplitting.SSatUnit
-public import Development.AutomorphicArithmetic.Foundations.Convolution.CentreSplitting.DefsObj
+public import Development.AutomorphicArithmetic.Foundations.Convolution.CentreSplitting.Bundle0006
+public import Development.AutomorphicArithmetic.Foundations.Convolution.CentreSplitting.Bundle0003
+public import Development.AutomorphicArithmetic.Foundations.Convolution.CentreSplitting.Bundle0001
 public import Development.AutomorphicArithmetic.Foundations.Convolution.ASmooth
 
 @[expose] public section

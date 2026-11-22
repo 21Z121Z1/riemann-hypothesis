@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import GroundTheory.GlobalFields.IdeleGroups.InfiniteProjInfiniteEmbeddingOfNe
-public import GroundTheory.GlobalFields.Adele.IdeleBasis
+public import GroundTheory.GlobalFields.Adele.Bundle0002
 
 @[expose] public section
 

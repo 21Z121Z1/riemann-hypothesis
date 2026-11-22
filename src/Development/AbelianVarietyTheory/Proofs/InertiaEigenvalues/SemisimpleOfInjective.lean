@@ -1,13 +1,12 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.BlockTheory.NonGaloisCusps.BlockComplementLattice
-public import Development.AbelianVarietyTheory.BlockTheory.TorsionBlocks.CongruenceMaxGalois
-public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.GaloisSideTwistedSelmerAuxiliaryPrimes
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.CompletelySplitPrimeHostPlaceProperties
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsEigenvectorOfTraceEqAddCharacter
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsMatrixOfSaturated
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsPowLeSpan
+public import Development.AbelianVarietyTheory.BlockTheory.NonGaloisCusps.Bundle0007
+public import Development.AbelianVarietyTheory.BlockTheory.TorsionBlocks.Bundle0002
+public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0012
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0097
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0115
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0418
 
 @[expose] public section
 

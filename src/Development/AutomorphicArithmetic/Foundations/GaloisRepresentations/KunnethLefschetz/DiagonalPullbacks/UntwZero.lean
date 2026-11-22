@@ -2,7 +2,7 @@ module
 
 public import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.KunnethLefschetz.DiagonalPullbacks.ProjectiveBundleFormulaTorsion
 public import Development.EtaleCohomology.EtaleTrace.LRingPf
-public import Development.EtaleCohomology.EtaleTrace.LPdCut
+public import Development.EtaleCohomology.EtaleTrace.Bundle0008
 
 @[expose] public section
 

@@ -1,8 +1,8 @@
 module
 
 public import Development.AutomorphicArithmetic.Foundations.IwahoriReduction.NormProducts.LUnH
-public import Development.AbelianVarietyTheory.Definitions.Foundations.HahnPowOrderLeadingCoeff
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.SpecialLinearGroupIntMapZmodSurjective
+public import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0006
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0085
 
 @[expose] public section
 

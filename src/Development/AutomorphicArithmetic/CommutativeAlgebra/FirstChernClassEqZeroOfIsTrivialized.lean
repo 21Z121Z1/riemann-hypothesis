@@ -1,14 +1,16 @@
 module
 
 public import Development.AutomorphicArithmetic.CupPullbacks.ConstCompSingle
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EtaleSheafSectionsExtAndGlueStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ChosenInjectiveResolutionEtaleSheafSectionsExactStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EtaleCochainEvalOnSimplexBasicPropertiesStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsCochainEvEqOfNaturalStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EtaleCochainEvalOnSimplexDifferentialValuesStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EtaleLocalPrimitiveRootAndRootsOfUnityStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsKummerTorsorSplittingKummerTorsorSplittingStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FirstChernClassTateTwistCocycleUniqueNaturalAddiStatement
+public import Mathlib
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0306
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0007
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0006
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0433
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0340
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0342
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0375
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0484
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0440
 
 @[expose] public section
 
@@ -70,7 +72,7 @@ private theorem smap_nsmul (φ : F ⟶ G) {U : Scheme.{0}} (n : ℕ) (a : Sec F 
     Sec.map φ (n • a) = n • Sec.map φ a := map_nsmul (φ.hom.app (op U)).hom n a
 
 private theorem sep {U : Scheme.{0}} {a b : Sec F U} (h : Loc U fun _ g => Sec.res g a = Sec.res g b) : a = b :=
-  (GlobalTheory.T.etaleSheafSections_ext_and_glue R F U).1 a b h
+  (_root_.GlobalTheory.EtC.sec_ext_glue R F U).1 a b h
 
 private theorem glue {U : Scheme.{0}} (P : ∀ (V : Scheme.{0}) (_ : V ⟶ U), Sec F V → Prop)
     (hex : Loc U fun V g => ∃ a, P V g a)
@@ -80,7 +82,7 @@ private theorem glue {U : Scheme.{0}} (P : ∀ (V : Scheme.{0}) (_ : V ⟶ U), S
   unfold Loc at hex
   obtain ⟨S, hS, hP⟩ := hex
   choose s hs using hP
-  obtain ⟨a, ha⟩ := (GlobalTheory.T.etaleSheafSections_ext_and_glue R F U).2 S hS s
+  obtain ⟨a, ha⟩ := (_root_.GlobalTheory.EtC.sec_ext_glue R F U).2 S hS s
     (fun V W g k hg => huniq W (k ≫ g) _ _ (hres V W g k _ (hs V g hg)) (hs W (k ≫ g) _))
   refine ⟨a, fun V g b hb => sep ?_⟩
   unfold Loc

@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import GroundTheory.ProfiniteCohomology.EulerCharDefs
+public import GroundTheory.ProfiniteCohomology.Bundle0004
 public import GroundTheory.ProfiniteCohomology.ContinuousCochains.LongExactSequence
 public import GroundTheory.ProfiniteCohomology.Shapiro
 

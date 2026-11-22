@@ -1,9 +1,9 @@
 module
 
 public import Formalism.LocalToGlobal.InertKernelTheory.ScalG
-public import Formalism.LocalToGlobal.InertKernelTheory.SecondKernelCoupledLastLift
+public import Formalism.LocalToGlobal.InertKernelTheory.Bundle0015
 public import Formalism.LocalToGlobal.PairingIndexBounds.OrthogonalChartLevels.FrecAt
-public import Formalism.LocalToGlobal.GroupLattices.PendingLemmas.InvarianceRepresentativesLaw
+public import Formalism.LocalToGlobal.GroupLattices.PendingLemmas.Bundle0004
 
 @[expose] public section
 

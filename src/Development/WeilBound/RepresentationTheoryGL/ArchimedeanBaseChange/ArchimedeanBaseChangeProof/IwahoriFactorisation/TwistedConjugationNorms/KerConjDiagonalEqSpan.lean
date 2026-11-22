@@ -1,10 +1,26 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Divisors.SimpleTwistedTraceFormulaStable
-public import Development.AbelianVarietyTheory.Definitions.Divisors.IsUnifAt
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GramDetChangeOfBasesStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PlaceConjugationPropertiesCmFieldStatement
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0026
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0036
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0058
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1277
+public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.Bundle0008
+public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.Bundle0001
+public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.StrongMultiplicityOne
+public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisGeometry₂.IsTemperedGLOfIsUnitaryLSeg
+public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.Bundle0010
+public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.ExistsCellOfIsSubquotient
+public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.RadfordShufflePolynomialHolds
+public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisGeometry₂.Bundle0004
+public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.Bundle0007
+public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.ExistsUniqueHcharOfFiniteOrder
+public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.Bundle0006
+public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.Bundle0009
+public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.T2SpaceAdelicGeneralLinearGroupNumberField
+public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.HeckeLEntireAndNonzeroAtOne
+public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.QuadraticClassFieldTheory
+public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.ExistsOrthonormalOfUnimodular
 
 @[expose] public section
 
@@ -288,7 +304,7 @@ set_option maxHeartbeats 1000000 in
 theorem kapSign_eq_one_of_vals (hU : Unr E) (w : Pl E) (n : ℕ) (γ : GLw n w) (hγ : γ ∈ UL n w)
     (v : Fin n → ℤ) (hv : Function.Injective v) (hrev : ∀ i j, v j = -v i → j = Fin.rev i)
     (hV : HasVals γ.val.charpoly v) (Q : (w.adicCompletion E)[X]) : kapSign n w Q γ = 1 := by
-  obtain ⟨-, hinv, hcj, -⟩ := GlobalTheory.T.placeConjugation_properties_cmField E hU w
+  obtain ⟨-, hinv, hcj, -⟩ := _root_.GlobalTheory.ConjAtPlace.main E hU w
   unfold kapSign
   split_ifs with hs
   · rfl
@@ -429,7 +445,7 @@ theorem kapSign_eq_one_of_vals (hU : Unr E) (w : Pl E) (n : ℕ) (γ : GLw n w) 
     have e : (Set.range fun i => ((B i : V₁) : Fin n → w.adicCompletion E)) = V₁.subtype '' Set.range B := by
       ext x; simp
     rw [e, Submodule.span_image, B.span_eq, Submodule.map_top, Submodule.range_subtype]
-  obtain ⟨d, hd0, hdet⟩ := GlobalTheory.T.gram_det_change_of_basis' (cj w) V₁
+  obtain ⟨d, hd0, hdet⟩ := _root_.GlobalTheory.gram_det_change_of_bases (cj w) V₁
     (fun i : S => fun k => (P : Matrix (Fin n) (Fin n) (w.adicCompletion E)) k i.1)
     (fun i => ((B i : V₁) : Fin n → w.adicCompletion E)) hli hVspan.symm hBli hBspan
   have hG : (Matrix.of fun i j : S => ∑ k, cj w ((P : Matrix (Fin n) (Fin n) (w.adicCompletion E)) k i.1) *

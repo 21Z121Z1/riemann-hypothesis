@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.ImportsBisMore
+public import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.Bundle0033
 
 @[expose] public section
 

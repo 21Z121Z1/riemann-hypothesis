@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.FiniteAlgebrasOverHenselianAndComplete
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsGrpObjOfFlatClosed
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0047
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0013
 
 @[expose] public section
 

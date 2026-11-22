@@ -1,10 +1,10 @@
 module
 
-public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.FixedVectorEqOfStandardData
-public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.IsTwIffCanonEq
+public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.Bundle0020
+public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.Bundle0030
 public import Formalism.LocalToGlobal.KernelLattices.TopPin
-public import Formalism.LocalToGlobal.KernelLattices.InterlaceAll
-public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.JetsInIffStepField
+public import Formalism.LocalToGlobal.KernelLattices.Bundle0002
+public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.Bundle0015
 
 @[expose] public section
 

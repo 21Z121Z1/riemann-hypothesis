@@ -1,19 +1,20 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.AdjointIsotropicDecomposition
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.WeilCompatibleOfSameSplittingCharacterStatement
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.WittTowerRestrictionUnipotentRadicalInvariantStatement
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.UnipotentRadicalTargetPreservesIsotropicMeanStatement
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ThetaRestrictIsotropicQuotientWittTowerPropertieStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsWeilDatumOfSplittingCharactersStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsIsEtaTildeUnramified
-public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.RealIdemMulOfReal
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.InfPartOneSubEInfSmul
-public import Formalism.LocalToGlobal.BesselHermitianTheta.LemmasChr
-public import Development.AbelianVarietyTheory.Counterexamples.HeightSurvey.StarPurelyImaginaryEqNeg
+public import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.Bundle0021
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0374
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0376
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0355
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0256
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1240
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0024
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0877
+public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.Bundle0061
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0119
+public import Formalism.LocalToGlobal.BesselHermitianTheta.Bundle0002
+public import Development.AbelianVarietyTheory.Counterexamples.HeightSurvey.Bundle0003
 public import Development.AbelianVarietyTheory.Counterexamples.HeightSurvey.EmbRelExistsUnique
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.UnipotentRadicalMeanEqVolumeMulRationalMeanStatement
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.UnipotentRadicalMeanEqVolumeMulRationalMean
 
 @[expose] public section
 
@@ -225,14 +226,14 @@ theorem term_eq_aux (V V' W : HSp D) (r : ℕ) (C C' : Matrix (Fin V.rank) (Fin 
         (Lm * (K * (mt V (n : GA D V) - 1) * (B.map (incA D) : Matrix (Fin V.rank) (Fin V'.rank) (AE D)))) := by
   have hstd := hω.std
   have hLiso : adj D L * W.gram * L = 0 := hL.2.2
-  have hres := (GlobalTheory.T.thetaRestrictIsotropicQuotient_wittTower_properties D V V' W r C B hs ψ hstd μ 𝓨 hY).1
+  have hres := (_root_.GlobalTheory.TowerRestrict.res_theta D V V' W r C B hs ψ hstd μ 𝓨 hY).1
   have hact : actO V W (n : GA D V) 1 (Lm * K * mt V (n : GA D V)) = Lm * K := by
     simp only [actO, mt_one, Matrix.one_mul, Matrix.mul_assoc, mt_mul_inv, Matrix.mul_one]
   have hFu := GlobalTheory.ThetaClosed.isThetaFunO_heisO_all hstd hF (Lm * K * mt V (n : GA D V))
   have step1 : heisO ψ V W (Lm * K) (ω ((n : GA D V), 1) F) =
       ω ((n : GA D V), 1) (heisO ψ V W (Lm * K * mt V (n : GA D V)) F) := by
     rw [hω.om_heis (n : GA D V) 1 _ F hF, hact]
-  have step2 := GlobalTheory.T.wittTower_restriction_unipotentRadical_invariant D V V' W r C B hs ψ χS χT ω hω μ 𝓨 hY n _ hFu
+  have step2 := _root_.GlobalTheory.UnipRes.res_unip D V V' W r C B hs ψ χS χT ω hω μ 𝓨 hY n _ hFu
   have hM : (mt V (n : GA D V) - 1) * (C.map (incA D) : Matrix (Fin V.rank) (Fin r) (AE D)) = 0 := by
     rw [Matrix.sub_mul, mt_mul_frame V C n.2, Matrix.one_mul, sub_self]
   have hdec := decomp V V' W C C' B (map_frame_decomp V V' C C' B hs h1 h2 h3) Lm K (mt V (n : GA D V)) hM
@@ -290,11 +291,11 @@ theorem heis_comm_radical (V W : HSp D) (ψ : AddChar (AF D.host.F) ℂ) (χS χ
 theorem mean_isoTerm_invariant : ∀ (D : D7) (V V' W : HSp D) (r : ℕ) (C C' : Matrix (Fin V.rank) (Fin r) D.host.E) (B : Matrix (Fin V.rank) (Fin V'.rank) D.host.E), IsIsoSplit V V' C B → adj D C * V.gram * C' = 1 → adj D C' * V.gram * C' = 0 → adj D C' * V.gram * B = 0 → ∀ (ψ : AddChar (AF D.host.F) ℂ) (χS χT : (AE D)ˣ →* Circle) (ω : GA D V × GA D W →* Module.End ℂ (WO V W → ℂ)), IsWeilDatumO ψ V W χS χT ω → ∀ (μ : Measure (Mx D W.rank r)) (𝓨 : Set (Mx D W.rank r)), IsCovolOne (ratMx D W.rank r) μ 𝓨 → ∀ (κ : Measure (NI V C)) (𝓝 : Set (NI V C)), κ.IsHaarMeasure → IsFundamentalDomain (NIQ V C) 𝓝 κ → ∀ (s : ℕ) (L : Matrix (Fin W.rank) (Fin s) D.host.E) (m : Matrix (Fin s) (Fin r) D.host.E), IsIsoFrame W L → m.rank = s → ∀ (n' : NI W L) f, IsThetaFunO ψ V W f → ∫ n in 𝓝, res V V' W C B μ 𝓨 (heisO ψ V W (isoPart V W C' (Matrix.map (L * m) (incA D))) (ω ((n : GA D V), (n' : GA D W)) f)) 0 ∂κ = ∫ n in 𝓝, res V V' W C B μ 𝓨 (heisO ψ V W (isoPart V W C' (Matrix.map (L * m) (incA D))) (ω ((n : GA D V), 1) f)) 0 ∂κ := by
   intro D V V' W r C C' B hs h1 h2 h3 ψ χS χT ω hω μ 𝓨 hY κ 𝓝 hκ h𝓝 s L m hL hm n' f hf
   have hstd := hω.std
-  obtain ⟨ω', hω'⟩ := GlobalTheory.T.exists_weilDatum_of_splittingCharacters D ψ hstd V' W χS χT (GlobalTheory.WeilParts.exists_isEtaTilde_unramified D) hω.hecS
+  obtain ⟨ω', hω'⟩ := _root_.GlobalTheory.WeilExist.exists_isWeilDatumO D ψ hstd V' W χS χT (GlobalTheory.WeilParts.exists_isEtaTilde_unramified D) hω.hecS
     hω.hecT (Formalism.L2.Theta.resEta_parity hω.resS (by rw [hs.rank]; omega)) hω.resT
-  have hcomp := GlobalTheory.T.weilCompatible_of_sameSplittingCharacter D V V' W r C B hs ψ χS χT χT ω ω' hω hω' μ 𝓨 hY
-  obtain ⟨μ', 𝓐, hA, hmean⟩ := GlobalTheory.T.unipotentRadicalMean_eq_volume_mul_rationalMean D V V' r C C' B hs h1 h2 h3 κ 𝓝 hκ h𝓝 s m hm
-  have hres := (GlobalTheory.T.thetaRestrictIsotropicQuotient_wittTower_properties D V V' W r C B hs ψ hstd μ 𝓨 hY).1
+  have hcomp := _root_.GlobalTheory.SameCharCompat.compatibleOfSameChar D V V' W r C B hs ψ χS χT χT ω ω' hω hω' μ 𝓨 hY
+  obtain ⟨μ', 𝓐, hA, hmean⟩ := _root_.GlobalTheory.UnipMean.mean_eq_volume_mul D V V' r C C' B hs h1 h2 h3 κ 𝓝 hκ h𝓝 s m hm
+  have hres := (_root_.GlobalTheory.TowerRestrict.res_theta D V V' W r C B hs ψ hstd μ 𝓨 hY).1
   have hw₀ : isoPart V W C' (Matrix.map (L * m) (incA D)) =
       (L.map (incA D) : Matrix (Fin W.rank) (Fin s) (AE D)) *
         ((m * adj D C' * V.gram).map (incA D) : Matrix (Fin s) (Fin V.rank) (AE D)) := by
@@ -331,7 +332,7 @@ theorem mean_isoTerm_invariant : ∀ (D : D7) (V V' W : HSp D) (r : ℕ) (C C' :
           ((L.map (incA D) : Matrix (Fin W.rank) (Fin s) (AE D)) *
           ((m * adj D C' * V.gram).map (incA D) : Matrix (Fin s) (Fin V.rank) (AE D))) f))
           ((L.map (incA D) : Matrix (Fin W.rank) (Fin s) (AE D)) * a) ∂μ' := by
-        rw [GlobalTheory.T.unipotentRadical_target_preserves_isotropic_mean D V' W s L hL ψ χS χT ω' hω' μ' 𝓐 hA n' _ hG0]
+        rw [_root_.GlobalTheory.UnipMean.mean_target D V' W s L hL ψ χS χT ω' hω' μ' 𝓐 hA n' _ hG0]
     _ = ∫ n in 𝓝, (res V V' W C B μ 𝓨 (heisO ψ V W
           ((L.map (incA D) : Matrix (Fin W.rank) (Fin s) (AE D)) *
           ((m * adj D C' * V.gram).map (incA D) : Matrix (Fin s) (Fin V.rank) (AE D))) f))

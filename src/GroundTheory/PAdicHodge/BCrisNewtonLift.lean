@@ -3,7 +3,7 @@ module
 public import Mathlib
 public import GroundTheory.PAdicHodge.TiltField
 public import GroundTheory.PAdicHodge.ExtRobbaBounded
-public import GroundTheory.PAdicHodge.KerFontaineThetaCompFrobeniusEquivSymmPow
+public import GroundTheory.PAdicHodge.Bundle0003
 
 @[expose] public section
 

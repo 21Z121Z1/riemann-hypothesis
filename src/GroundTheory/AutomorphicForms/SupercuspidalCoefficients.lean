@@ -3,7 +3,7 @@ module
 public import Mathlib
 public import GroundTheory.AutomorphicForms.JacquetAdmissible
 public import GroundTheory.AutomorphicForms.IwahoriFactorization
-public import GroundTheory.AutomorphicForms.SmoothRepContragredient
+public import GroundTheory.AutomorphicForms.Bundle0010
 
 @[expose] public section
 

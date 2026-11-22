@@ -1,13 +1,18 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsSubMemEigW
-public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.SplitHermitianGeneratorsExistStatement
-public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.FamilyHodgeLatticeDataStatement
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.IntersectionHiddenSecondStatement
-public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.FormalIsomorphismTransportStatement
-public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.BundleDegreeEqSumValuations
-public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.SubAndQuotientBundles
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0076
+public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.SplitHermitianGeneratorsExist
+public import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.Bundle0001
+public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.Bundle0050
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.Bundle0013
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsFlatAnIffIsConstMul
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.UniformisationConclusion
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0083
+public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.Bundle0042
+public import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.Bundle0004
+public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.Bundle0006
+public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.Bundle0016
 
 @[expose] public section
 
@@ -176,7 +181,7 @@ theorem rhoH_trans (a : 𝓞 E)
     (u : (Fin d → (C.v i).valuationSubring) × (Fin d → (C.v i).valuationSubring)) :
     rhoH F.B a (transH (F.φ i) (F.ψ i) (F.lam i) (vmap (C.v i).valuationSubring.subtype u)) =
       transH (F.φ i) (F.ψ i) (F.lam i) (vmap (C.v i).valuationSubring.subtype (rhoH (F.Bi i) a u)) := by
-  have h := (GlobalTheory.T.formal_isomorphism_transport _ _ _ _ _ _ _ _ (F.iso i)).2.2.2.2.1 a
+  have h := (_root_.GlobalTheory.CompanionTheory.Ar.Conj.Iso.rho_pairing _ _ _ _ _ _ _ _ (F.iso i)).2.2.2.2.1 a
   rw [← LinearMap.comp_apply, h, LinearMap.comp_apply, rhoH_vmap_of_isMapOf _ (F.mapK i)]
 
 private theorem exists_injective_linearMap_eq_vmap {Ω : Type} [Field Ω] (A : ValuationSubring Ω) (n : ℕ) :
@@ -215,7 +220,7 @@ theorem isHBasis_trans
     {x : Fin r → (Fin d → (C.v i).valuationSubring) × (Fin d → (C.v i).valuationSubring)}
     (hx : IsHBasis (F.Bi i) x) :
     IsHBasis F.B fun j => transH (F.φ i) (F.ψ i) (F.lam i) (vmap (C.v i).valuationSubring.subtype (x j)) := by
-  obtain ⟨-, -, hbij, -⟩ := GlobalTheory.T.formal_isomorphism_transport _ _ _ _ _ _ _ _ (F.iso i)
+  obtain ⟨-, -, hbij, -⟩ := _root_.GlobalTheory.CompanionTheory.Ar.Conj.Iso.rho_pairing _ _ _ _ _ _ _ _ (F.iso i)
   delta GlobalTheory.CompanionTheory.Ar.Flat.DegZ.IsHBasis at hx ⊢
   obtain ⟨hli, hsp⟩ := vmap_basis_linearIndependent_and_span (C.v i).valuationSubring hx.1 hx.2
   refine ⟨?_, ?_⟩
@@ -309,9 +314,9 @@ private theorem quot_deg_lemma_4 {K : Type} [Field K] (C : ACurve K) {V : Type} 
   choose bq hbq1 hbq2 using fun i => exists_quot_basis b ρ χ (y i) (hyli i) (hysp i)
   have hLat : ∀ i, GlobalTheory.CompanionTheory.Ar.Crv.IsLatOf C i (bq i) (GlobalTheory.CompanionTheory.Ar.Crv.quot C H (eigSpan ρ χ) i) :=
     fun i => isLatOf_quot b ρ χ i (bq i) (H i) (hχ i) (hbq2 i) (hL i)
-  have hBun := (GlobalTheory.T.sub_and_quotient_bundles K C V H (eigSpan ρ χ) hH).2
+  have hBun := (_root_.GlobalTheory.CompanionTheory.Ar.Crv.SubQuot.isBun_sub_quot K C V H (eigSpan ρ χ) hH).2
   obtain ⟨hfin, hdeg⟩ :=
-    GlobalTheory.T.bundle_degree_eq_sum_valuations K C _ (GlobalTheory.CompanionTheory.Ar.Crv.quot C H (eigSpan ρ χ)) r b₀ bq hBun hLat
+    _root_.GlobalTheory.CompanionTheory.Ar.Crv.DegFormula.deg_formula K C _ (GlobalTheory.CompanionTheory.Ar.Crv.quot C H (eigSpan ρ χ)) r b₀ bq hBun hLat
   have hdet : ∀ i, b₀.det (bq i) = (N i).det := by
     intro i
     have hbqN : ∀ j, bq i j = ∑ l, N i j l • b₀ l := by
@@ -342,7 +347,7 @@ theorem curve_deg : ∀ (E : Type) [Field E] [NumberField E] [StarRing (𝓞 E)]
   · refine ⟨fun i => (IsEmpty.false i).elim,
       Set.finite_empty.subset fun i _ => (IsEmpty.false i).elim, ?_⟩
     rw [finsum_of_isEmpty]
-  obtain ⟨D, hDρ, hDH⟩ := GlobalTheory.T.family_hodge_lattice_data K C p d (𝓞 E) F hI
+  obtain ⟨D, hDρ, hDH⟩ := _root_.GlobalTheory.CompanionTheory.Ar.Flat.family_conj_H_lattices K C p d (𝓞 E) F hI
   have hW : eigW F.B χ = eigSpan D.ρH χ := by
     delta GlobalTheory.CompanionTheory.Ar.Flat.DegZ.eigW
     simp only [eigSpan, hDρ]
@@ -366,7 +371,7 @@ theorem curve_deg : ∀ (E : Type) [Field E] [NumberField E] [StarRing (𝓞 E)]
     intro i
     obtain ⟨-, h2⟩ := hHB i
     simpa only [hDρ] using h2
-  have h0 := GlobalTheory.T.split_hermitian_generators_exist E K C p d r D χ hspl fun i =>
+  have h0 := _root_.GlobalTheory.CompanionTheory.Ar.Flat.DegCurve.deg_quot_eq_zero E K C p d r D χ hspl fun i =>
     ⟨fun j => transH (F.φ i) (F.ψ i) (F.lam i) (vmap (C.v i).valuationSubring.subtype (x i j)),
       hyli i, hL i⟩
   exact quot_deg_lemma_4 C (RingOfIntegers.basis E) D.ρH χ D.H D.H_bun hχ x₀

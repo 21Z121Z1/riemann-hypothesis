@@ -1,10 +1,12 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LogResolutionPotentialPullback
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0112
 public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LogResolutionReindexed
 public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ArithVarietyReindexed
-public import Development.AutomorphicSpectrum.Proofs.MetricProofs.LogResolutionFunctorialHolomorphicStatement
+public import Development.AutomorphicSpectrum.Proofs.MetricProofs.LogResolutionFunctorialHolomorphic
+public import Development.AutomorphicSpectrum.Definitions.MetricPeriods.Pull1
+public import Development.AutomorphicSpectrum.Definitions.MetricPeriods.IsPeriodOn
 
 @[expose] public section
 

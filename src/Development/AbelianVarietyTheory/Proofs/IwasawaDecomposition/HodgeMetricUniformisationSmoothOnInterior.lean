@@ -1,18 +1,17 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsIsLieBase
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.EigenMetricOnSet
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.UniformizedFamilyChartIndex
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.PeriodFamilyChartDomain
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsFramedComplexPointOfEigenFrameOffBoundary
-public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.ExistsIsHodgeFrameIff
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.GramSmoothOfHolomorphicFrames
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsExponentialModelFiberOfUniformisationExp
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsFramedComplexPointOfEigenFrameOffBoundaryStatement
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExpCoordinatesTangentFieldHolomorphicPeriodMapStatement
-public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.ComponentEqOfMatchedLatticesMarkings
-public import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.NonemptyUnifWitnessDataOfIsUnf
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0579
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0565
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0533
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0573
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0567
+public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.Bundle0041
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0556
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0557
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0569
+public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.Bundle0060
+public import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.Bundle0017
 
 @[expose] public section
 
@@ -185,13 +184,13 @@ theorem exists_expCoord_of_base : ∀ (E : Type) [Field E] [NumberField E] [IsCM
     obtain ⟨f, -⟩ : ∃ f : EigFrame Z σ ((ch.e.symm b).1 ≫ genι Z),
         EigFrame.IsMap F (evHom hb.2.1) f :=
       EigFrame.exists_isMap F (evHom hb.2.1) (hσφ hb.2.1) hx
-    obtain ⟨q, hq, -⟩ := GlobalTheory.T.exists_framedComplexPoint_of_eigenFrame_off_boundary _ _ _ _ _ _ _ _ Z σ _ hb.2.2 f
+    obtain ⟨q, hq, -⟩ := _root_.GlobalTheory.ShFam.exists_frPt_cxPt_of_eigFrame _ _ _ _ _ _ _ _ Z σ _ hb.2.2 f
     rw [hpq b hb.1 q hq]
     show ⊤ ≤ (cxPt Z q).1 ⁻¹ᵁ V.1
     rw [hq]
     exact hb.2.1
   choose W hW hWd using fun (a : Σ τ : E →+* ℂ, Fin (Dw.mult τ)) =>
-    GlobalTheory.T.expCoordinates_tangentField_holomorphic_periodMap _ _ _ _ _ _ _ _ Z σ g ty Fu i d B₁ P₂ p hu V (F.v a.1 a.2) hB₁o hP₂ hP₂d hs (F.tan a.1 a.2)
+    _root_.GlobalTheory.ModelExpCoord.coord_holomorphic _ _ _ _ _ _ _ _ Z σ g ty Fu i d B₁ P₂ p hu V (F.v a.1 a.2) hB₁o hP₂ hP₂d hs (F.tan a.1 a.2)
   refine ⟨fun b τ k => W ⟨τ, k⟩ (L b), fun τ k => ?_, fun b hb hy f hf q hq τ k w hwt hw2 => ?_⟩
   · exact (hW ⟨τ, k⟩).comp L.differentiableOn fun b hb =>
       ⟨by simpa [hB₁] using hb.1, hRV b hb⟩

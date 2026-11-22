@@ -3,8 +3,18 @@ module
 public import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.RankTwoPatching.GaloisRepExistsTotallyRealGL2
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.AutomorphyLifting.PolarizedLinkage.PlainRec
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.AutomorphyLifting.PAdicTorsionHoms.SplitTr
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.PlaceOverTransportRingIsoSymm
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.LocalArtinMapUniqueTransportPlaceIsoStatement
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0681
+public import Mathlib
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0746
+public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0025
+public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.Bundle0011
+public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.Bundle0009
+public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.Bundle0008
+public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.Bundle0001
+public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.Bundle0010
+public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.ExistsCellOfIsSubquotient
+public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.Bundle0001
+public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.ExistsUniqueHcharOfFiniteOrder
 
 @[expose] public section
 
@@ -186,7 +196,7 @@ theorem recTr (hG : GlobalTheory.Published.GlobalArtinReciprocity) {K : Type} [F
   congr 2
   refine List.ofFn_inj.mpr (funext fun k => hch _ _ _ _ fun s s' hss => ?_)
   rw [MonoidHom.comp_apply, MonoidHom.comp_apply,
-    GlobalTheory.T.localArtinMap_unique_transport_placeIso hG GlobalTheory.Published.chevalleyUnits' E Ω A w h K Ω A u h' _ j i P a a' ha ha' s s' hss]
+    _root_.GlobalTheory.LocLanglands.isLocalArtin_transport hG GlobalTheory.Published.chevalleyUnits' E Ω A w h K Ω A u h' _ j i P a a' ha ha' s s' hss]
   exact (congrArg (ξ k) (h5 _)).symm
 
 def RatioT : Prop :=

@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Formalism.SharpRestriction.LevelLetterCocycles.DataNLoc
-public import Development.AbelianVarietyTheory.BlockTheory.NonGaloisCusps.GradedSeries
+public import Development.AbelianVarietyTheory.BlockTheory.NonGaloisCusps.Bundle0003
 
 @[expose] public section
 

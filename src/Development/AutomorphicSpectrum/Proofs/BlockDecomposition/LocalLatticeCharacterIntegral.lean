@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.EMatMulNegCol
-public import Development.AutomorphicSpectrum.Proofs.GlobalProofs.FibreMassEq
-public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.SchwartzBilinear.Imports
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0512
+public import Development.AutomorphicSpectrum.Proofs.GlobalProofs.Bundle0026
+public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.SchwartzBilinear.Bundle0002
 
 @[expose] public section
 

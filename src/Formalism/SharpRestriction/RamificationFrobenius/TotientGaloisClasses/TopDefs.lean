@@ -1,6 +1,6 @@
 module
 
-public import Formalism.SharpRestriction.FamCore
+public import Formalism.SharpRestriction.Bundle0001
 public import Formalism.SharpRestriction.GlobalSchurBounds.GeneralLinearActions.FiltrationCocycleLiftCriterion
 public import Formalism.SharpRestriction.RamificationFrobenius.TotientGaloisClasses.ExplicitFormulaErrorOfHostConditions
 public import Formalism.ZetaNonvanishing.ZetaLandau

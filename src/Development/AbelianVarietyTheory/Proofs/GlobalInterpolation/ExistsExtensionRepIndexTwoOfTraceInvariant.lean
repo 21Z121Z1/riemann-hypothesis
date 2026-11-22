@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Formalism.SharpRestriction.LevelLetterCocycles.DataN
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ColRepSemisimple
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0170
 
 @[expose] public section
 

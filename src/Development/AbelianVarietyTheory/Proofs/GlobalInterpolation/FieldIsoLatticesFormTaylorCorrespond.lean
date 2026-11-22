@@ -1,10 +1,10 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.TranslateMomentsAll
-public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.SpanImageLeOf
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ThetaLatticeImageRationalHomLattice
-public import ReciprocityTheory.L2DbarEstimates.PlurisubharmonicCharts.ZeroDimA
+public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0085
+public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0099
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0256
+public import ReciprocityTheory.L2DbarEstimates.PlurisubharmonicCharts.Bundle0004
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.TaylorDiscriminants.Taylor
 
 @[expose] public section

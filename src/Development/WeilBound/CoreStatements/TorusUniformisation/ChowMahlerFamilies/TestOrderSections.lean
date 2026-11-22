@@ -1,13 +1,14 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.FromNAdd
-public import Development.AutomorphicSpectrum.Statements.AlgebraStatements.PolarisedFlagStatement
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LemmaBTHoldsStatement
-public import Development.WeilBound.CoreStatements.TorusUniformisation.ChowMahlerFamilies.IsIntegrallyClosedOfDenom
-public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.HopfOrderRetractRestrictionStatement
-public import ReciprocityTheory.DualLattices.ExistsSmulMemOfMemSpan
-public import Development.WeilBound.CoreStatements.TorusUniformisation.ChowMahlerFamilies.FunctionFamilyIdempotent
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0070
+public import Development.AutomorphicSpectrum.Statements.AlgebraStatements.Bundle0001
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0239
+public import Development.AutomorphicSpectrum.Statements.GeometryStatements.NonemptyEquivOfCardHom
+public import Development.WeilBound.CoreStatements.TorusUniformisation.ChowMahlerFamilies.Bundle0031
+public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.Bundle0037
+public import ReciprocityTheory.DualLattices.Bundle0004
+public import Development.WeilBound.CoreStatements.TorusUniformisation.ChowMahlerFamilies.Bundle0032
 
 @[expose] public section
 
@@ -182,7 +183,7 @@ theorem bt_mul [IsNoetherianRing (CR O y c')] [IsIntegrallyClosed (CR O y c')] [
     ∀ f ∈ P.Γ₁.btOrder ⊤, (fun t => f (mulT _ p a t)) ∈ P.Γ₁.btOrder ⊤ := by
   haveI := 𝔐.t.act.hom a
   haveI := frac_epi (CR O y c')
-  refine (GlobalTheory.T.LemmaBT_holds (CR O y c') (TorsT E (D.p + D.q) p) P.Γ₁ _ 𝔐.t.G P.x p P.i₁ P.tors₁
+  refine (_root_.GlobalTheory.CompanionTheory.Ar.BT.lemmaBT_holds (CR O y c') (TorsT E (D.p + D.q) p) P.Γ₁ _ 𝔐.t.G P.x p P.i₁ P.tors₁
     𝔐.t.semi.smooth).2.2.2.1 (𝔐.t.act.act a) (mulT _ p a) ?_
   intro t
   obtain ⟨x, rfl⟩ := qmk_surj _ p t
@@ -206,7 +207,7 @@ theorem ord_hopf [IsNoetherianRing (CR O y c')] [IsIntegrallyClosed (CR O y c')]
     ∃ AA : HopfOrder (C := C) RC (TestPt.NAdd E (D.p + D.q) p), AA.carrier = TestPt.testOrd P RC :=
   exists_hopf (RC := RC) ((algebraMap Ω C).comp (algebraMap (CR O y c') Ω))
     ((algebraMap Ω C).injective.comp Subtype.val_injective) (fun r => ⟨⟨_, hR r r.2⟩, rfl⟩)
-    (GlobalTheory.T.LemmaBT_holds (CR O y c') (TorsT E (D.p + D.q) p) P.Γ₁ _ 𝔐.t.G P.x p P.i₁ P.tors₁ 𝔐.t.semi.smooth).1
+    (_root_.GlobalTheory.CompanionTheory.Ar.BT.lemmaBT_holds (CR O y c') (TorsT E (D.p + D.q) p) P.Γ₁ _ 𝔐.t.G P.x p P.i₁ P.tors₁ 𝔐.t.semi.smooth).1
 
 theorem ord_ret [IsNoetherianRing (CR O y c')] [IsIntegrallyClosed (CR O y c')] [IsFractionRing (CR O y c') Ω]
     [Finite (TorsT E (D.p + D.q) p)] (P : ChartPack G O c') {C : Type} [Field C]

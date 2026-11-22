@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import CompanionTheory.AutomorphicTheory.PieriRules.PieriDegreeBounds.Imports
-public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.IsFRepExteriorPowerStandardRep
+public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0056
 public import CompanionTheory.AutomorphicTheory.ZuckermanCommutation.ZuckermanFunctors.IsSimpleFam
 
 @[expose] public section

@@ -1,8 +1,8 @@
 module
 
-public import PositivityTheory.AutomorphicForms.PublishedInputs.HilbertEisenstein.P5meas
+public import PositivityTheory.AutomorphicForms.PublishedInputs.HilbertEisenstein.Bundle0006
 public import PositivityTheory.AutomorphicForms.PublishedInputs.HilbertEisenstein.GaussianWeightRealNonneg
-public import PositivityTheory.AutomorphicForms.PublishedInputs.HilbertEisenstein.KernelMeasureBoundAndMeasurability
+public import PositivityTheory.AutomorphicForms.PublishedInputs.HilbertEisenstein.Bundle0010
 
 @[expose] public section
 

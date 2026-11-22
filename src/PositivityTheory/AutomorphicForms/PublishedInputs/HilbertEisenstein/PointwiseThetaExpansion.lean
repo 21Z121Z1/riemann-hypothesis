@@ -1,8 +1,8 @@
 module
 
-public import PositivityTheory.AutomorphicForms.PublishedInputs.HilbertEisenstein.SExpDefs
-public import GroundTheory.GlobalFields.TateThesis.EulerFactorsInfinite
-public import PositivityTheory.AutomorphicForms.PublishedInputs.HilbertEisenstein.HasTemperateGrowthArchPoly
+public import PositivityTheory.AutomorphicForms.PublishedInputs.HilbertEisenstein.Bundle0004
+public import GroundTheory.GlobalFields.TateThesis.Bundle0008
+public import PositivityTheory.AutomorphicForms.PublishedInputs.HilbertEisenstein.Bundle0006
 
 @[expose] public section
 

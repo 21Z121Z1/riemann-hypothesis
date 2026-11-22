@@ -3,7 +3,7 @@ module
 public import Mathlib
 public import GroundTheory.AutomorphicForms.GKModules.SmoothVectors
 public import GroundTheory.AutomorphicForms.GKModules.ParametricIntegral
-public import GroundTheory.AutomorphicForms.DixmierMalliavinBasic
+public import GroundTheory.AutomorphicForms.Bundle0006
 
 @[expose] public section
 

@@ -2,11 +2,11 @@ module
 
 public import Mathlib
 public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.GenericCentreSpecializes
-public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.LocalComponentsSurjective
-public import Development.AutomorphicSpectrum.Statements.GeometryStatements.PropZ
-public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.ExistsCurveOfFunctionField
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsUniqueValuationRingLift
-public import Development.WeilBound.CoreStatements.TorusUniformisation.ChowMahlerFamilies.ExistsPrimeDimOneAvoiding
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.Bundle0005
+public import Development.AutomorphicSpectrum.Statements.GeometryStatements.Bundle0001
+public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.Bundle0022
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0001
+public import Development.WeilBound.CoreStatements.TorusUniformisation.ChowMahlerFamilies.Bundle0001
 public import GroundTheory.ArithmeticGeometry.AbelianVarieties.JacobianSmoothness.RingKrullDimLeRingKrullDimQuotientAddOne
 
 @[expose] public section

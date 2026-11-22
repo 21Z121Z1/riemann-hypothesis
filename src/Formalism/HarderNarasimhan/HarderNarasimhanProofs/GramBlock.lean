@@ -1,6 +1,6 @@
 module
 
-public import Formalism.HarderNarasimhan.DefsPl
+public import Formalism.HarderNarasimhan.Bundle0001
 public import Formalism.LatticeSlopes.ExistsSaturatedSlopeEqMuMax
 
 @[expose] public section

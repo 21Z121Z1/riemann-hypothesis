@@ -3,14 +3,14 @@ module
 public import Mathlib
 public import Development.AutomorphicSpectrum.Definitions.MetricPeriods.Pull1
 public import Development.AutomorphicSpectrum.Statements.MetricStatements.AgreementIffGuarded
-public import Development.AutomorphicSpectrum.Proofs.MetricProofs.IntersectionVerticalPerturbationBoundStatement
-public import Development.AutomorphicSpectrum.Proofs.MetricProofs.PtsIntegralLogNormRatEqBaseStatement
-public import Development.AutomorphicSpectrum.Proofs.MetricProofs.RealisationPotentialDegreeCompatibilityStatement
-public import Development.AutomorphicSpectrum.Proofs.MetricProofs.LogNormIntegralVerticalInvarianceStatement
+public import Development.AutomorphicSpectrum.Proofs.MetricProofs.Bundle0083
+public import Development.AutomorphicSpectrum.Proofs.MetricProofs.Bundle0129
+public import Development.AutomorphicSpectrum.Proofs.MetricProofs.Bundle0059
+public import Development.AutomorphicSpectrum.Proofs.MetricProofs.Bundle0064
 public import ReciprocityTheory.AnalyticForms.PotentialTheory.Stokes
-public import ReciprocityTheory.AnalyticForms.PotentialTheory.IntegrableOnTargetOfTsupport
-public import ReciprocityTheory.AnalyticForms.PotentialTheory.ContDiffAtOfIsPotential
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.InterRedF
+public import ReciprocityTheory.AnalyticForms.PotentialTheory.Bundle0006
+public import ReciprocityTheory.AnalyticForms.PotentialTheory.Bundle0003
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.Bundle0016
 
 @[expose] public section
 
@@ -229,7 +229,7 @@ theorem pts_wLine (hE : ResExistsStatement) {S : AnSys D σ} [Fintype σ] {P : I
       ring
     | some a =>
       refine samePot_tensor Re.R Re.holo.1
-        ((GlobalTheory.T.realisation_potential_degree_compatibility hE K ι D σ S P Re).1 a t ht0 ht1) hHp fun x y => ?_
+        ((_root_.GlobalTheory.CompanionTheory.Ar.PB.re_pot hE K ι D σ S P Re).1 a t ht0 ht1) hHp fun x y => ?_
       show (S.th a).φ x y + thH.φ x y + S.phT a t y = (S.th a).φ x y + S.phT a t y + thH.φ x y
       ring
   have h1P : (1 : MRing ι) ∉ P := fun h => Re.arith.2.1.1.ne_top ((Ideal.eq_top_iff_one _).2 h)
@@ -242,7 +242,7 @@ theorem pts_wLine (hE : ResExistsStatement) {S : AnSys D σ} [Fintype σ] {P : I
     unfold logNorm at this
     unfold logNormRat
     simpa using this.symm
-  have key := GlobalTheory.T.intersection_number_pullback_degree_alt hE K ι P Re.J D Re.R S.X S.A Re.π Re.holo Re.deg Re.br Re.arith Re.degree
+  have key := _root_.GlobalTheory.CompanionTheory.Ar.PB.ptsIntegral_logNormRat_eq_base hE K ι P Re.J D Re.R S.X S.A Re.π Re.holo Re.deg Re.br Re.arith Re.degree
     (fun i => wLine Re H t (v i)) (fun i => wordPot S thH (v i) + LocPot.ofFun (wordU S t (v i))) hsm hΦ hpot
     (oneLine (ι := ι)) 1 1 (fun _ => 1) ∅ isSmoothHerm_oneLine hrat (fun j => by simp)
     (fun x _ => congrFun e1.symm _) (mIntegrableCont _ _ hΦ _ continuous_const)
@@ -282,7 +282,7 @@ theorem abs_pts_le (hE : ResExistsStatement) {S : AnSys D σ} [Fintype σ] {P : 
   have hsame : ptsIntegral P (pot L) (fun _ => 1) =
       ptsIntegral P (pot fun i => wLine Re H t (v i)) (fun _ => 1) := by
     rw [e1]
-    exact (GlobalTheory.T.log_norm_integral_vertical_invariance hE K ι P D _ L T α Re.arith hsm0 hsm
+    exact (_root_.GlobalTheory.CompanionTheory.Ar.PB.vert_deg hE K ι P D _ L T α Re.arith hsm0 hsm
       (fun j => (hv j).imp Eq.symm id) oneLine 1 isSmoothHerm_oneLine
       (isSectionOn_one Re.arith.2.1.1 rfl)).symm
   rw [hsame, pts_wLine hE Re hth hHs hHp ht0 ht1 v, abs_mul, Nat.abs_cast]
@@ -359,7 +359,7 @@ theorem abs_num_sub_num_le : Inputs → ∀ (D : ℕ) (σ : Type) [Fintype σ] (
         · show NefAt P p ((Re'.line a t).a + H.a)
           rw [Re'.line_deg]
           exact ((hN p hp).2 a).2
-      refine (GlobalTheory.T.intersection_vertical_perturbation_bound hI II hII K ι P D L _ _ T α hP hLs (hA k) (hB k) hTp (hV _ t ht0 ht1) hnef).trans ?_
+      refine (_root_.GlobalTheory.CompanionTheory.Ar.PB.lemma_v_lines hI II hII K ι P D L _ _ T α hP hLs (hA k) (hB k) hTp (hV _ t ht0 ht1) hnef).trans ?_
       refine mul_le_mul_of_nonneg_left ?_ hSg0
       exact (le_abs_self _).trans (abs_pts_le hE Re Re' hth hHs hHp hV ht0 ht1 L hE')
   have hd : (0 : ℝ) < Re.deg := Nat.cast_pos.2 Re.deg_pos

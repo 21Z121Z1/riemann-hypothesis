@@ -2,9 +2,9 @@ module
 
 public import Formalism.LocalToGlobal.GaloisLevelStructure.TiedGal
 public import Formalism.LocalToGlobal.GaloisLevelStructure.TiedHecke
-public import Formalism.LocalToGlobal.GaloisLevelStructure.TiedLevel
+public import Formalism.LocalToGlobal.GaloisLevelStructure.Bundle0001
 public import Formalism.LocalToGlobal.GaloisLevelStructure.DefsAutLoc
-public import Formalism.LocalToGlobal.NormalizedHeckeFactors.NormalizedHeckeData
+public import Formalism.LocalToGlobal.NormalizedHeckeFactors.Bundle0002
 
 @[expose] public section
 

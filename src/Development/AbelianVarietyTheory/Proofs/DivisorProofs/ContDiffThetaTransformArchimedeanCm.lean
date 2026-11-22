@@ -2,11 +2,13 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ContDiffThetaTransformAdelicSchwartzRealDirection
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ArchimedeanStandardCharEqExpRealLinear
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DarbouxCoordsRealFamilyArchimedeanLinear
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsTransportF
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MemRatPairIff
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsLintegralSqEqMulSetLIntegralThetaTransformStatement
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1368
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1376
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1345
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1351
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1450
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1308
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0184
 
 @[expose] public section
 
@@ -144,7 +146,7 @@ theorem contDiff_thetaTr_realF : ∀ (F E : Type) [Field F] [NumberField F] [Fie
   | mem Φ h =>
     obtain ⟨f, g, hg, rfl⟩ := h
     intro w
-    obtain ⟨M, hM⟩ := GlobalTheory.T.summable_rational_schwartzBruhat_mul_polynomial_decay F κ g hg (fun i => ((co.e w).1 i).2)
+    obtain ⟨M, hM⟩ := _root_.GlobalTheory.LatSumSB.summable_sb_mul_decay F κ g hg (fun i => ((co.e w).1 i).2)
     let eM := InfiniteAdeleRing.ringEquiv_mixedSpace F
     let yv : (κ → F) → (κ → mixedEmbedding.mixedSpace F) := fun x i => mixedEmbedding F (x i)
     let ah : κ → mixedEmbedding.mixedSpace F := fun i => eM ((co.e w).1 i).1

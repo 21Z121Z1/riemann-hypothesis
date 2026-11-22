@@ -1,14 +1,14 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MapsAtExpLeB
-public import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.ValPsiZero
-public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.TauBimultOfIsPullDeg
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MumfordBundleIsoNormalisedRespectsLaws
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.DiscreteValuationRings.LBLocalC
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MapsAtExpOfVal
-public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsNumOf
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ProdTw
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2463
+public import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.Bundle0015
+public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.Bundle0030
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2105
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.DiscreteValuationRings.Bundle0003
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2548
+public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.Bundle0121
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2617
 
 @[expose] public section
 

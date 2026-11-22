@@ -2,7 +2,7 @@ module
 
 public import Formalism.HermitianCurvature.StatementD
 public import Formalism.HermitianCurvature.HermitianCurvatureProofs.LieDecompositionLocal
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.LeadingTermIdentity
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0111
 public import Formalism.FormalDegreeBessel.FormalDegreeRatio.GBasic
 
 @[expose] public section

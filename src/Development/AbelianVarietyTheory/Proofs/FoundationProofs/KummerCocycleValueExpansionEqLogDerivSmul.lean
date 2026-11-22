@@ -1,11 +1,11 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Foundations.ApplyEqOfMemAdjoin
-public import Development.AbelianVarietyTheory.Definitions.Foundations.IsTopWTopWOfExists
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.KaehlerDRootTwist
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.TorsionKaehlerSpanDlogIndepStatement
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.SmulKaehlerDReparametrizationEqStatement
+public import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0010
+public import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0003
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0052
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0164
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0111
 
 @[expose] public section
 
@@ -81,7 +81,7 @@ theorem d_psi {T : Tower p Ω} {L : ℕ} {ψ : O0 p →+* Ω} (hψ : IsReb T L �
     (hy : (y : Ω) = ψ (algebraMap (Lau p) (O0 p) (thL b))) (hq : (qL : Ω) = T.qq L) :
     qL • KaehlerDifferential.D (O0 p) (integralClosure (O0 p) Ω) x =
       y • KaehlerDifferential.D (O0 p) (integralClosure (O0 p) Ω) qL :=
-  GlobalTheory.T.smul_kaehlerD_reparametrization_eq p Ω T L ψ hψ b x y qL hx hy hq
+  _root_.GlobalTheory.Glue.DPsi.smul_D_psi p Ω T L ψ hψ b x y qL hx hy hq
 
 
 set_option maxHeartbeats 2000000 in
@@ -89,7 +89,7 @@ theorem geo_cob : ∀ (p : ℕ) [Fact p.Prime], p ≠ 2 → ∃ c : ℕ, ∀ (Ω
   ∀ a lq : Gal p Ω → ZMod (p ^ n), IsKum T n (Ggeo p Ω ⊓ Gn T L) r a → IsKum T n (Ggeo p Ω ⊓ Gn T L) (T.qq (L + n)) lq →
   Cob1 n (Ggeo p Ω ⊓ Gn T L) (fun g => (p : Ω) ^ c * ((a g).val : Ω) - (p : Ω) ^ c * (w' / w) * ((lq g).val : Ω)) := by
   intro p _ hp2
-  obtain ⟨c, hc⟩ := GlobalTheory.T.torsion_kaehler_span_dlog_indep p hp2
+  obtain ⟨c, hc⟩ := _root_.GlobalTheory.K5.TorsionDiff.torsion_span_and_indep p hp2
   refine ⟨2 * c + 1, ?_⟩
   intro Ω _ _ hΩ T L n hnL hn ψ hψ cw w w' r hEv hw0 hwi hr a lq ha hlq
   obtain ⟨d, e, A, he, -, hwe, hw'e⟩ := hEv

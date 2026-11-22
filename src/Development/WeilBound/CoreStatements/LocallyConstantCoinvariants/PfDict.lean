@@ -1,8 +1,8 @@
 module
 
-public import Development.WeilBound.CoreStatements.LocallyConstantCoinvariants.LmOfLinBar
-public import Development.WeilBound.CoreStatements.LocallyConstantCoinvariants.PfDictMod
-public import Development.WeilBound.CoreStatements.LocallyConstantCoinvariants.PfDictAd
+public import Development.WeilBound.CoreStatements.LocallyConstantCoinvariants.Bundle0003
+public import Development.WeilBound.CoreStatements.LocallyConstantCoinvariants.Bundle0002
+public import Development.WeilBound.CoreStatements.LocallyConstantCoinvariants.Bundle0004
 public import Development.WeilBound.CoreStatements.LocallyConstantCoinvariants.PfDictSec
 public import Development.WeilBound.CoreStatements.LocallyConstantCoinvariants.PfActs
 

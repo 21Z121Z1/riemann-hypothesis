@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import GroundTheory.GlobalFields.ComplexMultiplication.ReductionEval
+public import GroundTheory.GlobalFields.ComplexMultiplication.Bundle0006
 public import GroundTheory.GlobalFields.ComplexMultiplication.RespectsAddUniversal
-public import GroundTheory.GlobalFields.ComplexMultiplication.BaseChange
+public import GroundTheory.GlobalFields.ComplexMultiplication.Bundle0007
 
 @[expose] public section
 

@@ -3,8 +3,8 @@ module
 public import Mathlib
 public import Formalism.LocalRingCardinality.Params
 public import Formalism.GradedWeylDivisibility.StatementA
-public import Formalism.GradedWeylDivisibility.StatementB
-public import Formalism.SatakeDualWeyl.StatementW
+public import Formalism.GradedWeylDivisibility.Bundle0001
+public import Formalism.SatakeDualWeyl.Bundle0003
 
 @[expose] public section
 

@@ -3,7 +3,7 @@ module
 public import Mathlib
 public import Formalism.LocalRingCardinality.RankBoundMonotoneInDimension
 public import Formalism.GradedWeylDivisibility.FinalB
-public import Formalism.GradedWeylDivisibility.FockSpaceTableaux.LClosedeqLemmas
+public import Formalism.GradedWeylDivisibility.FockSpaceTableaux.Bundle0010
 public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ApplyWordMemDualWeyl
 
 @[expose] public section

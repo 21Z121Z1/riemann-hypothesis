@@ -1,12 +1,11 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LaurentVarUnit
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LaurentMapIsIntegral
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SimplicialCochainClassesBasicProperties
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsDiscreteSpaceCocycleVanishingPos
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CohomologyComplexOfSheafCocycleClassProperties
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ChosenInjectiveResolutionEtaleSheafBasicProperti
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0322
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0358
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0331
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0403
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0301
 
 @[expose] public section
 

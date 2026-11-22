@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PrimeMapPrimeMap
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsFiniteFixedUnitsModFixedSquares
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0251
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0261
 
 @[expose] public section
 

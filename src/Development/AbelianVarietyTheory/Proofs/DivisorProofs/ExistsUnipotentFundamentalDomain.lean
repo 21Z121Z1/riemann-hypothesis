@@ -1,17 +1,18 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Divisors.SiegelWeilAnisotropicHermitian
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0044
 public import Development.AbelianVarietyTheory.Definitions.Divisors.CTSmallCone
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NmatMulVec
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CocompactLatticeUnitCovolumeStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DiscreteRationalPointsSubgroupStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnipotentRadicalClosedNonzeroStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdeleQuotientCompactFundamentalSetStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HeisenbergMatrixPreservesFormStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HeisenbergMatrixMulStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HyperbolicPairDecompositionStatement
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.LcscAdelicUnitaryGroup
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1310
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0803
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0162
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1326
+public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.Bundle0040
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1409
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1367
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1390
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1388
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0061
 
 @[expose] public section
 
@@ -404,8 +405,8 @@ theorem exists_haar_unip_mass_one : ∀ (F E : Type) [Field F] [NumberField F] [
   haveI : SecondCountableTopology (unip σ G.W H') :=
     hcl.isClosedEmbedding_subtypeVal.isEmbedding.secondCountableTopology
   haveI := countable_ratU' σ G.W.J (unip σ G.W H')
-  haveI := GlobalTheory.T.discrete_rational_points_subgroup F E σ _ G.W.J (unip σ G.W H')
+  haveI := _root_.GlobalTheory.RatUDiscreteSub.discreteTopology_subgroupOf F E σ _ G.W.J (unip σ G.W H')
   obtain ⟨K, hK, hcov⟩ := cocompact h hH.xx hH.yy hH.xy hH.orth hspan
-  exact GlobalTheory.T.cocompact_lattice_unit_covolume _ _ K hK hcov
+  exact _root_.GlobalTheory.HaarFundDom.exists_haar_fundDom_mass_one _ _ K hK hcov
 
 end GlobalTheory.UnipMass

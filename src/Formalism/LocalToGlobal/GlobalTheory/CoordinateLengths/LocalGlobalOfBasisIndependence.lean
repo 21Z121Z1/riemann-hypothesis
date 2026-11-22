@@ -1,6 +1,6 @@
 module
 
-public import Formalism.LocalToGlobal.GlobalTheory.GL6.PBwLocInd
+public import Formalism.LocalToGlobal.GlobalTheory.GL6.Bundle0007
 public import Formalism.LocalToGlobal.GroupLattices.DownNaturalLevelZero
 
 @[expose] public section

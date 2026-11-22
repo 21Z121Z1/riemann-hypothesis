@@ -4,9 +4,9 @@ public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.FlagPairDefinitePartLattice
 public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.ChartGen
 public import Development.AbelianVarietyTheory.PublishedTheorems.DiscreteSeriesUnitary₂.MaxMass
-public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.NormalFormDualOrthogonalLast
+public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.Bundle0004
 public import Formalism.FlagUnipotentLattices.MinkowskiFactorialBounds.ExistsHasLeadingCoeffOfMemSpanBelow
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.SameBlockAppend
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0023
 
 @[expose] public section
 

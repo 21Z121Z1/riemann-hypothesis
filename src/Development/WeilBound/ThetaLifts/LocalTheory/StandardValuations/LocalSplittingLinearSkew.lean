@@ -4,7 +4,7 @@ public import Development.WeilBound.ThetaLifts.LocalTheory.StandardValuations.Sp
 public import Development.WeilBound.ThetaLifts.LocalTheory.IsArchimedeanLocalEquivariantMap
 public import Development.WeilBound.ThetaLifts.CartanFactorisation.TensOfEval
 public import Development.WeilBound.ThetaLifts.LocalTheory.StandardValuations.ValIffNorm
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsStdCharNegOneOfStandardTraceAdelicAddChar
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1558
 
 @[expose] public section
 

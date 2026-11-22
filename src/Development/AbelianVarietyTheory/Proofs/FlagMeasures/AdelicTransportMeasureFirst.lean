@@ -4,11 +4,11 @@ public import Mathlib
 public import Formalism.LocalToGlobal.IndefiniteReal.ScalarOnPartsFull
 public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.ExistsReduction
 public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.TopfBasis
-public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.IsCuspHom
-public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.ExistsNormLeHeightPow
+public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.Bundle0014
+public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.Bundle0007
 public import Development.AbelianVarietyTheory.Statements.CuspFrameWeights.DiscreteSpectrumKFiniteDecomposition
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsUnipotentQuotientInvariantProbability
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsAdelicUnitaryGroupModelsEquiv
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0280
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0324
 
 @[expose] public section
 
@@ -477,10 +477,10 @@ theorem constTerm_iff_inst (I : AutInst) (μf : Measure I.Gf) [μf.IsHaarMeasure
   have : BorelSpace I.GA := inferInstance
   have : (Measure.pi fun v => Formalism.REAL.muG (I.ε v)).IsHaarMeasure := Measure.pi.isHaarMeasure _
   have : (I.muA μf).IsHaarMeasure := Measure.prod.instIsHaarMeasure _ _
-  obtain ⟨Γ, hΓ, hΓc, hfin, -⟩ := GlobalTheory.T.rationalUnitaryPoints_discrete_fundamentalDomain I
+  obtain ⟨Γ, hΓ, hΓc, hfin, -⟩ := _root_.GlobalTheory.RatDiscrete.rational_points I
   let T' : G' ≃ₜ I.GA := ⟨T.toEquiv, hT.1, hT.2⟩
   have : IsTopologicalGroup G' := T'.isInducing.topologicalGroup T
-  obtain ⟨-, hcl, -, -, K, hK, -, hcov⟩ := GlobalTheory.T.strong_approximation_unitaryUnipotentRadical I W hW
+  obtain ⟨-, hcl, -, -, K, hK, -, hcov⟩ := _root_.GlobalTheory.UnipApprox.strong_approximation I W hW
   have hcl' : IsClosed (N : Set G') := by
     have e : (N : Set G') = T ⁻¹' I.NA W := Set.ext hm
     rw [e]

@@ -3,14 +3,13 @@ module
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.ModuliSpaces.FiniteHomogeneousInf
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.UniformisationConclusion
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.HeckeKer
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.Bundle0003
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.IsHolPeriods
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.UnifUniqSt
-public import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.IsProjByOfIsPullback
-public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ProjectiveRepresentationPullbackCoordinates
-public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.SecCoordBcScaleUnique
-public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.SectionCoordinateVectorExistsLocallyStatement
-public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.IsSectionCoordinateVectorOfLocallyOnRingStatement
+public import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.Bundle0011
+public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0058
+public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0071
+public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0062
 
 @[expose] public section
 
@@ -183,8 +182,8 @@ theorem split_local (hH : H.IsLB) (hK : K.IsLB) {T : Type} [CommRing T] [IsLocal
         (Eq.trans ?_ (rs_mul p q _ _ _ _ _).symm))
       exact (mul_mul_mul_comm _ _ _ _).trans
         (congrArg₂ (· * ·) (ap_cocycle p hH _ _ _ _ _ _).symm (ap_cocycle q hK _ _ _ _ _ _).symm)
-  obtain ⟨a, ha⟩ := (GlobalTheory.T.sectionCoordinateVector_exists_locally X H σ₁ s hH).1 T (x ≫ p)
-  obtain ⟨b, hb⟩ := (GlobalTheory.T.sectionCoordinateVector_exists_locally Y K σ₂ t hK).1 T (x ≫ q)
+  obtain ⟨a, ha⟩ := (_root_.GlobalTheory.ZM.LocalCoord.secCoord_local X H σ₁ s hH).1 T (x ≫ p)
+  obtain ⟨b, hb⟩ := (_root_.GlobalTheory.ZM.LocalCoord.secCoord_local Y K σ₂ t hK).1 T (x ≫ q)
   obtain ⟨u, hu⟩ := uniq (hbox) (secCoord_box p q s t x a b ha hb) hw
   exact ⟨fun i => u * a i, b, scale hH ha u, hb, funext fun i => (hu i).trans (_root_.mul_assoc _ _ _).symm⟩
 
@@ -207,10 +206,10 @@ theorem split_near (hH : H.IsLB) (hK : K.IsLB) {T : Type} [CommRing T] (x : Sp T
         (Eq.trans ?_ (rs_mul p q _ _ _ _ _).symm))
       exact (mul_mul_mul_comm _ _ _ _).trans
         (congrArg₂ (· * ·) (ap_cocycle p hH _ _ _ _ _ _).symm (ap_cocycle q hK _ _ _ _ _ _).symm)
-  obtain ⟨f, hf, a, ha⟩ := (GlobalTheory.T.sectionCoordinateVector_exists_locally X H σ₁ s hH).2.1 T (x ≫ p) z
+  obtain ⟨f, hf, a, ha⟩ := (_root_.GlobalTheory.ZM.LocalCoord.secCoord_local X H σ₁ s hH).2.1 T (x ≫ p) z
   obtain ⟨z', hz'⟩ : z ∈ Set.range (spMap (algebraMap T (Localization.Away f))) :=
     (PrimeSpectrum.localization_away_comap_range (Localization.Away f) f).ge hf
-  obtain ⟨g, hg, b, hb⟩ := (GlobalTheory.T.sectionCoordinateVector_exists_locally Y K σ₂ t hK).2.1 _
+  obtain ⟨g, hg, b, hb⟩ := (_root_.GlobalTheory.ZM.LocalCoord.secCoord_local Y K σ₂ t hK).2.1 _
     (spMap (algebraMap T (Localization.Away f)) ≫ x ≫ q) z'
   obtain ⟨z'', hz''⟩ : z' ∈ Set.range (spMap (algebraMap _ (Localization.Away g))) :=
     (PrimeSpectrum.localization_away_comap_range (Localization.Away g) g).ge hg

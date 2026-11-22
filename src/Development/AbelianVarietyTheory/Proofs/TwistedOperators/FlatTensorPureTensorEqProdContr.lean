@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MeasurePreservingPiProdSplit
-public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.ContrFactor
+public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.Bundle0002
 public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.FlatMapsPreserveSchwartzBruhatAndSurjective
 
 @[expose] public section

@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Langlands
-public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.DepthZeroTypeInertia
+public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0025
+public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.Bundle0011
 
 @[expose] public section
 

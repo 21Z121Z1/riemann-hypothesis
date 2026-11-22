@@ -3,10 +3,8 @@ module
 public import Development.AutomorphicArithmetic.BlowupCategories.SpanScale
 public import Development.AutomorphicArithmetic.BlowupCategories.AffC
 public import Development.AutomorphicArithmetic.CommutativeAlgebra.TateTwistAffineLineProjectionEquiv
-public import Development.AutomorphicArithmetic.CommutativeAlgebra.IsIsoOfBijectiveOnSimplices
-public import Development.AutomorphicArithmetic.CommutativeAlgebra.MonoOfInjectiveOnSimplices
-public import Development.AutomorphicArithmetic.CommutativeAlgebra.IsPullbackOfUniqueSimplicesPullback
-public import Development.AutomorphicArithmetic.CommutativeAlgebra.SimplicesPullbackExistsUniqueOfMapEq
+public import Development.AutomorphicArithmetic.CommutativeAlgebra.Bundle0014
+public import Development.AutomorphicArithmetic.CommutativeAlgebra.Bundle0015
 
 @[expose] public section
 

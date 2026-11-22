@@ -1,12 +1,11 @@
 module
 
 public import Development.AutomorphicArithmetic.MeanSquareBounds.PrimeSetTwoBounds
-public import Formalism.GL3MeanSquares.HookFormulaTorsion.NumericalZeroDensityBound
+public import Formalism.GL3MeanSquares.HookFormulaTorsion.Bundle0006
 public import Formalism.GL3MeanSquares.HookFormulaTorsion.CharacterEstimateOfHypothesis
 public import Mathlib
 public import Formalism.GL3MeanSquares.SecondEstimateOfIntervalHypothesis
-public import Formalism.GL3MeanSquares.HookFormulaTorsion.TwistIsPrimitiveCharacter
-public import Formalism.GL3MeanSquares.HookFormulaTorsion.WeightedVonMangoldtSumIdentity
+public import Formalism.GL3MeanSquares.HookFormulaTorsion.Bundle0005
 
 @[expose] public section
 

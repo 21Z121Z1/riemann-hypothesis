@@ -1,10 +1,10 @@
 module
 
-public import Formalism.GradedWeylDivisibility.StatementB
-public import Formalism.GradedWeylDivisibility.FockSpaceTableaux.LFockqLemmas
-public import Formalism.RealPlaceAnalysis.RealPlaceTaylor.ProdFactorialSupportSubSingle
-public import Formalism.GradedWeylDivisibility.FockSpaceTableaux.LFocksLemmas
-public import Formalism.GradedWeylDivisibility.FockSpaceTableaux.FockRowAdj
+public import Formalism.GradedWeylDivisibility.Bundle0001
+public import Formalism.GradedWeylDivisibility.FockSpaceTableaux.Bundle0006
+public import Formalism.RealPlaceAnalysis.RealPlaceTaylor.Bundle0005
+public import Formalism.GradedWeylDivisibility.FockSpaceTableaux.Bundle0002
+public import Formalism.GradedWeylDivisibility.FockSpaceTableaux.Bundle0008
 
 @[expose] public section
 

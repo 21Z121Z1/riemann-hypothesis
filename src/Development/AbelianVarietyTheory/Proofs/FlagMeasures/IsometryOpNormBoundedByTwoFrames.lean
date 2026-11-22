@@ -1,10 +1,10 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.MatrixOfBesselTwoSidedAction
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.RegularPosCompl
+public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.Bundle0006
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0150
 public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.SiegelRegionNormBound
-public import Formalism.FormalDegreeBessel.FinalG
+public import Formalism.FormalDegreeBessel.Bundle0002
 
 @[expose] public section
 

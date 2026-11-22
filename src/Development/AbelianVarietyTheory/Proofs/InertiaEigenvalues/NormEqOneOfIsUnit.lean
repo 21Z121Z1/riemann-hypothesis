@@ -1,10 +1,9 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.TwConj
-public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.FourierMatch
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.CyclicVectorOfSeparableCharpolyField
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.CyclicVectorSemilocalOfCyclicVectorField
+public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0001
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0063
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0064
 public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.IsMulCommutativeCentRealUJ
 
 @[expose] public section

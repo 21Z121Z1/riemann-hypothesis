@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.ExistsFramedAdapted
+public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.Bundle0032
 public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SmulColMul
 
 @[expose] public section

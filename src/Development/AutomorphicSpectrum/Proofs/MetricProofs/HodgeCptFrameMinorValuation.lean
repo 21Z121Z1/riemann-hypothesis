@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Development.AutomorphicSpectrum.Proofs.MetricProofs.ColFlags
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.FrameChangeByUnitMatrix
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0031
 
 @[expose] public section
 

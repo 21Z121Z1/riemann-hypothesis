@@ -1,9 +1,9 @@
 module
 
 public import Formalism.ThetaLogCoordinates.TraceIsometryWeights.StatementF
-public import Formalism.MahlerMeasure.FinalT
+public import Formalism.MahlerMeasure.Bundle0008
 public import Formalism.MahlerMeasure.MahlerMeasureProofs.WeightSpaceDimensionMonotone
-public import Formalism.MahlerMeasure.MahlerMeasureProofs.SmithZp
+public import Formalism.MahlerMeasure.MahlerMeasureProofs.Bundle0002
 public import Formalism.MahlerMeasure.MahlerMeasureProofs.TheoremM
 public import Formalism.PolynomialDimension.MultinomialDepth.MonoCount
 public import Formalism.PolynomialDimension.MultinomialDepth.PartnerM

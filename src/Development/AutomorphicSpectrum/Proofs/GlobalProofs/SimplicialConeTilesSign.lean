@@ -1,10 +1,10 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.SiegelKlingenDeligneRibet
-public import Development.AutomorphicSpectrum.Proofs.GlobalProofs.AbelContinuation
-public import Development.AutomorphicSpectrum.Proofs.GlobalProofs.CongSubgroup
-public import Development.AutomorphicSpectrum.Proofs.GlobalProofs.ComboNotMemSpan
+public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.Bundle0006
+public import Development.AutomorphicSpectrum.Proofs.GlobalProofs.Bundle0013
+public import Development.AutomorphicSpectrum.Proofs.GlobalProofs.Bundle0014
+public import Development.AutomorphicSpectrum.Proofs.GlobalProofs.Bundle0016
 
 @[expose] public section
 

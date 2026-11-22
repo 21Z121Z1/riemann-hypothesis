@@ -2,7 +2,7 @@ module
 
 public import Formalism.LocalToGlobal.NumberFieldFamilies.NPartCNd
 public import Formalism.LocalToGlobal.GaloisLevelStructure.TiedHecke
-public import Formalism.LocalRingCardinality.SpanPowerMembership.NDLocI
+public import Formalism.LocalRingCardinality.SpanPowerMembership.Bundle0006
 public import Formalism.LocalToGlobal.GroupLattices.PerfectRings.IsLocalRingOfComplete
 
 @[expose] public section

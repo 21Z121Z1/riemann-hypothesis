@@ -5,9 +5,9 @@ public import Development.WeilBound.CoreStatements.PadicHodgeComparison.HodgeSur
 public import Development.WeilBound.CoreStatements.PadicHodgeComparison.HodgeSurjectivity.NLeA
 public import Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.CechPairings.Imports
 public import Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.PerfectoidPullbacks.ChartGrConst
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ConeLiftRatioMemIdeal
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsConeLift
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.PderivComp1PtZeroEqZero
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0145
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0267
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0290
 
 @[expose] public section
 

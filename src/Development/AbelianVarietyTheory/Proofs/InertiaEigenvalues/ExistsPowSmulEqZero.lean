@@ -3,15 +3,17 @@ module
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.ResBound
 public import Formalism.LocalRingCardinality.AdicCompletionLocal.LocTied
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.FiniteResidueField
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.GoodCoefficientRingPadicIntegersFinExt
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.DvrComplete
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0240
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0252
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0248
 public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.IsDiscreteValuationRingIntegralClosurePadicInt
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsUniqueAlgEquivOfCompatibleQuotient
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CardH1LocalEulerFormulaStatement
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.LatticePowSmulNhdsZeroBasisStatement
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.AdicallyCompleteLatticeReductionActionStatement
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.LatticeTwistExactSequenceCohomologyStatement
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0005
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0267
+public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.MkMemAdmissibleAtIffCocycle
+public import Formalism.GaloisCohomology.LocalTateDualityK
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0190
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0187
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0196
 
 @[expose] public section
 
@@ -277,7 +279,7 @@ theorem tensIso_res [ContinuousMul G] [IsAdicComplete (Ideal.span {lam}) ↥L.T]
     exact ⟨Submodule.Quotient.mk ⟨_, tensCoc_mem χ hB hX c 1⟩, rfl⟩
   · rintro _ ⟨y, rfl⟩
     obtain ⟨z, rfl⟩ := Submodule.Quotient.mk_surjective _ y
-    obtain ⟨c, hc1, hc2, hc3⟩ := GlobalTheory.T.exists_continuous_cocycle_lift_of_subsingleton_H2 O G ↥L.T _ lam (act L χ) _
+    obtain ⟨c, hc1, hc2, hc3⟩ := _root_.GlobalTheory.CocycleLift.exists_lift O G ↥L.T _ lam (act L χ) _
       ((TensorProduct.mk O ↥L.T (O ⧸ Ideal.span {lam})).flip 1) inferInstance (eq_zero_of_smul hl)
       tmul_one_surj tmul_one_eq_zero (fun _ _ => rfl)
       (fun a t => (continuous_iff_adic hB fun g => act L χ g t).mp (by simpa only [act_coe] using hc t) a)
@@ -457,7 +459,7 @@ theorem free_and_tensIso_gal {G Qp LL O : Type} [Group G] [TopologicalSpace G] [
   rw [hm] at hA hF'
   rw [← hr]
   refine free_and_tensIso Γ.χ₁ hi
-    (GlobalTheory.T.lattice_pow_smul_nhds_zero_basis LL O Γ.T₀.V Γ.T₀.L.T Γ.lam Γ.T₀.L.fg Γ.T₀.L.span hO hl0 hU) (fun v => ?_) hl0 h0 h2
+    (_root_.GlobalTheory.lattice_multiples_nhds_basis LL O Γ.T₀.V Γ.T₀.L.T Γ.lam Γ.T₀.L.fg Γ.T₀.L.span hO hl0 hU) (fun v => ?_) hl0 h0 h2
     fun _ hlc => hE _ _ (fun m => ?_) hlc h0 h2
   · have h := (hχ.comp continuous_inv).smul (Γ.T₀.cont v)
     refine h.congr fun g => ?_

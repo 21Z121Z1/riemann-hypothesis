@@ -2,9 +2,9 @@ module
 
 public import Mathlib
 public import Development.WeilBound.CoreStatements.TemperedRepresentationTheory.MirabolicDerivatives.TwistedKernels.ExPhiPlusOnto
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ContinuousMirProj
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0357
 public import Development.AbelianVarietyTheory.Definitions.Divisors.T2SpaceGeneralLinearGroup
-public import GroundTheory.AutomorphicForms.LocallyProfinite
+public import GroundTheory.AutomorphicForms.Bundle0004
 public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.PadicIsNonarchimedeanLocalField
 
 @[expose] public section

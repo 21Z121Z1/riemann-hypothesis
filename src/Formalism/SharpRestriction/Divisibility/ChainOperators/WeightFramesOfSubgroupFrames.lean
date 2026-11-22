@@ -3,7 +3,7 @@ module
 public import Formalism.PeriodIntegrals.NablaSpans.ExpansionCoeffValuationGe
 public import Formalism.PeriodIntegrals.NablaSpans.MinorProdSpanHasCompl
 public import Formalism.SharpRestriction.Divisibility.OrbitPlaces
-public import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.MinorSpanCompl
+public import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.Bundle0024
 
 @[expose] public section
 

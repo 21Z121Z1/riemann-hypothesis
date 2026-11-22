@@ -1,10 +1,10 @@
 module
 
 public import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.InfinitesimalCharacterLimits.InfinitesimalCharacterGlue
-public import Development.WeilBound.RepresentationTheoryGL.ResidualSpectrum.SliceTensors.PIndMap
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ConstantTermAuxiliaryStatementA
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsUnipLevIntegral
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FinStable
+public import Development.WeilBound.RepresentationTheoryGL.ResidualSpectrum.SliceTensors.Bundle0016
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0347
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0336
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0697
 
 @[expose] public section
 

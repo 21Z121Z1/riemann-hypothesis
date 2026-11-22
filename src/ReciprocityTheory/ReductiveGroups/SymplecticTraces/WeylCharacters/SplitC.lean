@@ -1,6 +1,6 @@
 module
 
-public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.HighestWeights.Weight
+public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.HighestWeights.Bundle0003
 public import Mathlib.Analysis.InnerProductSpace.TensorProduct
 public import Mathlib.LinearAlgebra.TensorProduct.Basis
 

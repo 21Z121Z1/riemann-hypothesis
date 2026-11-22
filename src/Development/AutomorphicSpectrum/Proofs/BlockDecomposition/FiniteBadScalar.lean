@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Development.WeilBound.RepresentationTheoryGL.RegularisedSiegelWeil.HermitianCellMeasures.CellDefs
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.EqZeroOfComps
-public import Formalism.LocalToGlobal.PairingIndexBounds.SplitPairEquations.IntegralSquareRoots.NormOne
+public import Development.WeilBound.RepresentationTheoryGL.RegularisedSiegelWeil.HermitianCellMeasures.Bundle0001
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0531
+public import Formalism.LocalToGlobal.PairingIndexBounds.SplitPairEquations.IntegralSquareRoots.Bundle0001
 
 @[expose] public section
 

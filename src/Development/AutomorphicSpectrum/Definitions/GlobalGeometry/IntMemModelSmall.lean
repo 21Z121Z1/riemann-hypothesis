@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.ModelSmall
-public import Formalism.SharpRestriction.RamificationFrobenius.TotientGaloisClasses.FrameCyclicGenerator
+public import Formalism.SharpRestriction.RamificationFrobenius.TotientGaloisClasses.Bundle0001
 
 @[expose] public section
 

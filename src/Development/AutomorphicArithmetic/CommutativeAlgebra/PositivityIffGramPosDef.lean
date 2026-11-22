@@ -3,9 +3,9 @@ module
 public import Mathlib
 public import Development.AbelianVarietyTheory.Statements.PlaceShiftStatements.PointsNonemptyUnitaryGaussian
 public import Development.AutomorphicArithmetic.RealSpanData.RealData
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BijectiveRealTensorToProdMatrixAlgebrasInfPlaces
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SimilitudePairGramInvCongruent
-public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.PzIffPos
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0869
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0897
+public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0052
 
 @[expose] public section
 

@@ -1,6 +1,6 @@
 module
 
-public import ReciprocityTheory.ThetaSummability.TailSumEstimates.ConeDefs
+public import ReciprocityTheory.ThetaSummability.TailSumEstimates.Bundle0001
 
 @[expose] public section
 

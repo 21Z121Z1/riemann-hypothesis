@@ -1,16 +1,16 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.IsQuasiFam
+public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.Bundle0008
 public import Formalism.LocalToGlobal.IndefiniteReal.OrthogonalComplementCharacterisation
 public import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.ExistsHeightLeTwoMulQuotHeight
 public import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.WittDecompSymplInclIsotropicInclAnisotropic
-public import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.TransvectionAction
-public import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.WeilDatumExistence
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.WeilConjugationAdjointRuleStandardCharStatement
+public import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.Bundle0019
+public import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.Bundle0007
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0143
 public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ContinuousKapSymm
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsHaarFundamentalDomainIsometryTransportStatement
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsNeZeroAtZero
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0223
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0224
 
 @[expose] public section
 
@@ -109,7 +109,7 @@ theorem isWeilDatumO_tr (S : HSp D) {ψ : AddChar (AF D.host.F) ℂ} {χ χ' : (
     rw [map_zero]
   · exact (h.om_cont _ (hT f hf) ((I.phi S).symm w)).comp
       (continuous_fst.prodMk ((I.continuous_kap_symm).comp continuous_snd))
-  · obtain ⟨ν, 𝓖, hν, h𝓖, hu⟩ := GlobalTheory.T.exists_haar_fundamentalDomain_isometryTransport D V V' I S μ 𝓕 hμ h𝓕
+  · obtain ⟨ν, 𝓖, hν, h𝓖, hu⟩ := _root_.GlobalTheory.Mem.Isom.haar_fd_phi D V V' I S μ 𝓕 hμ h𝓕
     have e1 := hu fun x => ‖om (p.1, I.kap.symm p.2) (I.symm.trW S f) x‖ₑ ^ 2
     have e2 := hu fun x => ‖I.symm.trW S f x‖ₑ ^ 2
     have e3 : ∀ w, I.symm.trW S f ((I.phi S).symm w) = f w := fun w => congrArg f ((I.phi S).apply_symm_apply w)
@@ -219,7 +219,7 @@ theorem trivOnF_of_resEta {χ χ' : (AE D)ˣ →* Circle} {n : ℕ} (h : ResEta 
 
 theorem conj_line : ∀ (D : D7) (ψ : AddChar (AF D.host.F) ℂ) (L L' S : HSp D) (τ : Matrix (Fin L.rank) (Fin L'.rank) D.host.E), L.rank = L'.rank → τᴴ ⬝ (L.gram ⬝ τ) = (((1 : ℤ) : D.host.E) * (D.host.xi0 * star D.host.xi0)) • L'.gram → ∀ (χz χ χ' : ((AE D)ˣ →* Circle)) (om : Om L S) (om' : Om S L'), IsWeilDatumO ψ L S χz χ om → IsWeilDatumO ψ S L' χ' χz om' → ∀ f, IsThetaFunO ψ L S f → IsThetaFunO ψ S L' (fun w => star (f (GlobalTheory.IndefiniteRowSideFullHecke.SkewGramHalfModule.ofAdj L S ((rat τ : Mx D L.rank L'.rank) ⬝ w)))) ∧ ∀ h, om' (h, 1) (fun w => star (f (GlobalTheory.IndefiniteRowSideFullHecke.SkewGramHalfModule.ofAdj L S ((rat τ : Mx D L.rank L'.rank) ⬝ w)))) = fun w => star (om (1, h) f (GlobalTheory.IndefiniteRowSideFullHecke.SkewGramHalfModule.ofAdj L S ((rat τ : Mx D L.rank L'.rank) ⬝ w))) := by
   intro D ψ L L' S τ hr hg χz χ χ' om om' hom hom' f hf
-  have CA := GlobalTheory.T.weilConjugationAdjointRule_standard_char D ψ hom.std L S
+  have CA := _root_.GlobalTheory.WeilConjAdjoint.conjAdjoint_holds D ψ hom.std L S
   have hW : IsWeilDatumO ψ S L χ χz (conjAdjoint om) := (CA.conj_adjoint χz χ om hom).1
   have hF₁ : IsThetaFunO ψ S L (cj (dagger S L) f) := (CA.theta_dagger f).2 hf
   set I := (isoOf L L' τ hr hg).symm with hI

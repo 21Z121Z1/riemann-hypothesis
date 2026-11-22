@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Divisors.DatumEquiv
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0037
 
 @[expose] public section
 

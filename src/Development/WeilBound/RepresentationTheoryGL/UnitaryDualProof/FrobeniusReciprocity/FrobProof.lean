@@ -2,10 +2,11 @@ module
 
 public import Mathlib
 public import Development.WeilBound.CoreStatements.AutomorphicKernels.BernsteinUnitaryProducts.BernsteinTheoremA.FrobeniusReciprocity.TrivSymmApply
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsContinuousSectionQuotientStatement
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0073
 public import Development.WeilBound.RepresentationTheoryGL.UnitaryDualProof.FrobeniusReciprocity.HaarDistr
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsSchwartzBruhatCharacterIntegralOneStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.UnimodularHaarRightInvariantStatement
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0076
+public import Development.WeilBound.CoreStatements.AutomorphicKernels.BernsteinUnitaryProducts.BernsteinTheoremA.FrobeniusReciprocity.SupportedInIffOfFrob
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0083
 
 @[expose] public section
 
@@ -81,7 +82,7 @@ theorem avg_lift (b0 : SB H) (hb0 : ∫ y, (b0 : H → ℂ) y ∂μH = 1) (f : S
   simp [hb0]
 
 theorem exists_schwartz_integral_one : ∃ b0 : SB H, ∫ y, (b0 : H → ℂ) y ∂μH = 1 := by
-  obtain ⟨b0, hb0⟩ := GlobalTheory.T.exists_schwartzBruhat_character_integral_one H μH 1
+  obtain ⟨b0, hb0⟩ := _root_.GlobalTheory.CompanionTheory.FrobNz.exists_SB_integral_mul_char_eq_one H μH 1
     (by simp only [MonoidHom.one_apply, Units.val_one]; exact continuous_const)
   exact ⟨b0, by simpa using hb0⟩
 
@@ -104,7 +105,7 @@ theorem fap_translF (uH : IsUnimod H) (h0 : H) (α : SB G) (φ : SB (Fib p)) :
     fap hp σ hpc μH α (translF hp h0 φ) =
       fap hp σ hpc μH (pullHomeo (Homeomorph.mulRight ((h0 : G)⁻¹)) α) φ := by
   haveI : SecondCountableTopology H := inferInstanceAs (SecondCountableTopology (H : Set G))
-  haveI := GlobalTheory.T.unimodular_haar_right_invariant H uH μH
+  haveI := _root_.GlobalTheory.CompanionTheory.HaarUnimod.isMulRightInvariant_of_isUnimod H uH μH
   apply eq_fap
   intro g z
   rw [fap_smul]
@@ -132,7 +133,7 @@ def FrMap (uG : IsUnimod G) (uH : IsUnimod H) (hχ : Continuous fun g => (χ g :
     (hα0 : ∫ g, (α0 : G → ℂ) g * (χ g : ℂ) ∂μG = 1) :
     eqv (X := X) χ →ₗ[ℂ] eqvF hp (χ.comp H.subtype) where
   toFun ξ := ⟨(ξ : Distr X) ∘ₗ (avg hp σ hpc μH ∘ₗ tensR α0), fun h0 φ => by
-    haveI := GlobalTheory.T.unimodular_haar_right_invariant G uG μG
+    haveI := _root_.GlobalTheory.CompanionTheory.HaarUnimod.isMulRightInvariant_of_isUnimod G uG μG
     show (ξ : Distr X) (fap hp σ hpc μH α0 (translF hp h0 φ)) =
       (χ (h0 : G) : ℂ) * (ξ : Distr X) (fap hp σ hpc μH α0 φ)
     rw [fap_translF hp σ hpc μH uH, eval_fap hp σ hpc μH μG χ hχ ξ α0 hα0]
@@ -186,7 +187,7 @@ theorem FrMap_surjective (uG : IsUnimod G) (uH : IsUnimod H)
     (hα0 : ∫ g, (α0 : G → ℂ) g * (χ g : ℂ) ∂μG = 1) :
     Function.Surjective (FrMap hp σ hpc μH μG χ uG uH hχ α0 hα0) := by
   intro η
-  haveI := GlobalTheory.T.unimodular_haar_right_invariant G uG μG
+  haveI := _root_.GlobalTheory.CompanionTheory.HaarUnimod.isMulRightInvariant_of_isUnimod G uG μG
   obtain ⟨b0, hb0⟩ := exists_schwartz_integral_one μH
   let Ψ := triv hp σ hpc
   let Lη : SB (G × Fib p) →ₗ[ℂ] ℂ := (η : Distr (Fib p)) ∘ₗ intG μG χ hχ
@@ -313,7 +314,7 @@ theorem frobeniusReciprocity : FrobeniusReciprocity := by
     exact hc.locallyCompactSpace
   obtain ⟨s, hs, hsec⟩ := GlobalTheory.T.exists_continuous_section_quotient G H hH
   let σ : Sec H := ⟨s, hs, hsec⟩
-  obtain ⟨α0, hα0⟩ := GlobalTheory.T.exists_schwartzBruhat_character_integral_one G μG χ hχ
+  obtain ⟨α0, hα0⟩ := _root_.GlobalTheory.CompanionTheory.FrobNz.exists_SB_integral_mul_char_eq_one G μG χ hχ
   let Fr := LinearEquiv.ofBijective (FrMap hp σ hpc μH μG χ uG uH hχ α0 hα0)
     ⟨FrMap_injective hp σ hpc μH μG χ uG uH hχ α0 hα0,
       FrMap_surjective hp σ hpc μH μG χ uG uH hχ α0 hα0⟩

@@ -4,7 +4,7 @@ public import Mathlib
 public import Formalism.LocalToGlobal.TorsionIntegrality.EisensteinTranslationProducts.GoodModelLattice
 public import Formalism.LocalToGlobal.TorsionIntegrality.EisensteinTranslationProducts.AnalyticIdentityTheorems.IntegerEndomorphismInstance
 public import Formalism.LocalToGlobal.TorsionIntegrality.FrobeniusFibreCurves.FinalI
-public import Formalism.LocalToGlobal.TorsionIntegrality.FrobeniusFibreCurves.LogarithmicSubstitution.AtVariableWeierstrassDerivative
+public import Formalism.LocalToGlobal.TorsionIntegrality.FrobeniusFibreCurves.LogarithmicSubstitution.Bundle0005
 public import Formalism.LocalToGlobal.TorsionIntegrality.FrobeniusFibreCurves.StatementJ
 
 @[expose] public section

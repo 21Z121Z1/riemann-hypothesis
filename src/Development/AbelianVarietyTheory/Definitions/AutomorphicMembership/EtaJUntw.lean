@@ -1,10 +1,10 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.PlaceCharacterEqReferenceIff
+public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.Bundle0009
 public import Formalism.LocalToGlobal.IndefiniteReal.FWExist
 public import Formalism.LocalToGlobal.IndefiniteReal.OneMapT
-public import Formalism.LocalToGlobal.UnitaryNorms.CharTied
+public import Formalism.LocalToGlobal.UnitaryNorms.Bundle0006
 public import Formalism.LocalRingCardinality.DataRRMetric
 
 @[expose] public section

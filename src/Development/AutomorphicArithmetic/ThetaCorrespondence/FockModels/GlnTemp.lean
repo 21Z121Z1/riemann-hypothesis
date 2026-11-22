@@ -1,19 +1,23 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisGeometry₂.TemperedProductOfSquareIntegrable
-public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.LanglandsExhaustionGL
+public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisGeometry₂.Bundle0003
+public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.Bundle0008
 public import Development.AutomorphicArithmetic.ThetaCorrespondence.FockModels.GlnSuff
-public import Development.AutomorphicArithmetic.ThetaCorrespondence.GeneralLinearGroups.TProdExp
+public import Development.AutomorphicArithmetic.ThetaCorrespondence.GeneralLinearGroups.Bundle0005
 public import Development.AutomorphicArithmetic.ThetaCorrespondence.GeneralLinearGroups.TCosocleUnit
 public import Development.AutomorphicArithmetic.ThetaCorrespondence.FockModels.GlnTCentred
 public import Development.AutomorphicArithmetic.ThetaCorrespondence.FockModels.GlnTOrderfree
 public import Development.WeilBound.CoreStatements.TemperedRepresentationTheory.SquareIntegrableTempered.CasselmanCriterion.Development
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SquareIntegrableUnitarizableStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.TemperedLanglandsFactorsSquareIntegrableStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LanglandsSocleOfOrderFreeStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LocalLanglandsOfIrreducibleAdmissibleStatement
-public import Development.WeilBound.CoreStatements.AutomorphicKernels.SquareIntegrableSegments.SegmentSubquotients.ExistsSegmentRepresentationStatement
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0364
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0619
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0616
+public import Development.WeilBound.CoreStatements.TemperedRepresentationTheory.ZelevinskyJacquet.ZelevinskyCosocles.GKLocal
+public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.Bundle0002
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0353
+public import Development.WeilBound.CoreStatements.AutomorphicKernels.SquareIntegrableSegments.SegmentSubquotients.ExistsSegmentRepresentation
+public import Development.WeilBound.CoreStatements.TemperedRepresentationTheory.ZelevinskyJacquet.FineJacquetModules.SegDefs
+public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.Bundle0004
 
 @[expose] public section
 
@@ -31,8 +35,8 @@ theorem temperedProduct (hG : GlobalTheory.Published.GeometricLemma) (hBZ : Glob
   constructor
   · intro ht
     have hO : Zc.LOrderFree k := orderfree hC hM k
-    have hSo : Zc.LSocleGL k := GlobalTheory.T.langlands_socle_of_order_free hA (GlobalTheory.T.local_langlands_of_irreducible_admissible hA) hO
-    have hL : Zc.LSegExists k := fun Δ => GlobalTheory.TL.exists_segment_representation hA Δ
+    have hSo : Zc.LSocleGL k := _root_.GlobalTheory.CompanionTheory.LSocle.lSocleGL hA (_root_.GlobalTheory.CompanionTheory.GKLocalProof.gkLocal hA) hO
+    have hL : Zc.LSegExists k := fun Δ => _root_.GlobalTheory.CompanionTheory.LkSegExists.exists_isLSeg hA Δ
     obtain ⟨𝔪, h𝔪⟩ := hE k (IrrGL.of π hs hi)
     have h𝔪' : IsL 𝔪 π := h𝔪.of_equiv (IrrGL.equivOf π hs hi).symm
     obtain ⟨h, x, hd, hx, hu⟩ := GlobalTheory.T.tempered_langlands_factors_square_integrable k hSo (Zl.JC.casselmanNecTemp_holds k) hL 𝔪 N π hN hs hi ht h𝔪'

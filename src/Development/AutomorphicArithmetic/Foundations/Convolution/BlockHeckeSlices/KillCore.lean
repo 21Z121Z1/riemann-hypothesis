@@ -1,14 +1,14 @@
 module
 
 public import Development.AutomorphicArithmetic.Foundations.Convolution.ASmooth
-public import Development.AutomorphicArithmetic.Foundations.Convolution.BlockHeckeSlices.DatDatum
+public import Development.AutomorphicArithmetic.Foundations.Convolution.BlockHeckeSlices.Bundle0001
 public import Development.AutomorphicArithmetic.Foundations.Convolution.BlockHeckeSlices.KillOp
 public import Development.AutomorphicArithmetic.Foundations.Convolution.BlockHeckeSlices.CuspidalNormBounds.RepOps
 public import Development.AutomorphicArithmetic.Foundations.Convolution.BlockHeckeSlices.CuspidalNormBounds.AmpRep
 public import Development.AutomorphicArithmetic.Foundations.Convolution.BlockHeckeSlices.CuspidalNormBounds.BandRep
-public import Development.AutomorphicArithmetic.Foundations.Convolution.ConvolutionKernels.KernelTransforms.EvExSub
+public import Development.AutomorphicArithmetic.Foundations.Convolution.ConvolutionKernels.KernelTransforms.Bundle0008
 public import Development.AutomorphicArithmetic.Foundations.Convolution.PolynomialCoefficientBounds.GenPiecesK
-public import Development.AutomorphicArithmetic.Foundations.Convolution.PolynomialCoefficientBounds.ExistsFinMap
+public import Development.AutomorphicArithmetic.Foundations.Convolution.PolynomialCoefficientBounds.Bundle0003
 
 @[expose] public section
 

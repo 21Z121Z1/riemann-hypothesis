@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StFiniteMapOpen
+public import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.Bundle0055
 
 @[expose] public section
 

@@ -3,7 +3,7 @@ module
 public import Mathlib
 public import GroundTheory.HeightsAndTheta.Heights.RemainderTerms.Statements
 public import GroundTheory.HeightsAndTheta.Heights.RemainderTerms.AltCoeff
-public import GroundTheory.HeightsAndTheta.Heights.RemainderTerms.Lattice
+public import GroundTheory.HeightsAndTheta.Heights.RemainderTerms.Bundle0003
 
 @[expose] public section
 

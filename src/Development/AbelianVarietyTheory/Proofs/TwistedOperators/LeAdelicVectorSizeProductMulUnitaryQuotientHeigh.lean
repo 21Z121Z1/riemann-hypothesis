@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.VsizeNonneg
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.FinitePlaceRelativeNormLeLocalSizePowStatement
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.InfinitePlaceRelativeNormLeMaxEmbeddingPowStatement
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0129
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0133
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0134
 
 @[expose] public section
 
@@ -135,13 +135,13 @@ theorem rat_size {n : ℕ} (ξ : Fin n → D.host.E) (hξ : ξ ≠ 0) :
   have hd : Module.finrank D.host.F D.host.E ≠ 0 := Module.finrank_pos.ne'
   have ha : ∀ v, ‖algebraMap D.host.F (Fv D.host.F v) (Algebra.norm D.host.F (ξ i))‖₊ ≤
       vFin v (fun i => incA D (ξ i)) ^ Module.finrank D.host.F D.host.E := fun v => by
-    refine (GlobalTheory.T.finitePlace_relativeNorm_le_localSize_pow D v (ξ i)).trans (pow_le_pow_left₀ zero_le ?_ _)
+    refine (_root_.GlobalTheory.NormFin.normFin_le D v (ξ i)).trans (pow_le_pow_left₀ zero_le ?_ _)
     rw [← compFin_incA]
     exact Finset.le_sup (f := fun i => absFin D.host.F v (compFin D.host.F D.host.E v (incA D (ξ i))))
       (Finset.mem_univ i)
   have hA : ∀ w : InfinitePlace D.host.F, w (Algebra.norm D.host.F (ξ i)) ≤
       (vInf w (fun i => incA D (ξ i)) : ℝ) ^ Module.finrank D.host.F D.host.E := fun w =>
-    GlobalTheory.T.infinitePlace_relativeNorm_le_maxEmbedding_pow D w (ξ i) _ fun τ => by rw [← infEmb_compInf_incA]; exact le_vInf w (fun i => incA D (ξ i)) τ i
+    _root_.GlobalTheory.NormInf.main D w (ξ i) _ fun τ => by rw [← infEmb_compInf_incA]; exact le_vInf w (fun i => incA D (ξ i)) τ i
   have hfin : (Function.mulSupport fun v => vFin v (fun i => incA D (ξ i))).Finite := by
     have h1 : ∀ᶠ v in Filter.cofinite, vFin v (fun i => incA D (ξ i)) ≤ 1 := by
       have := Filter.eventually_all.2 fun j => eventually_absFin_le_one D.host.F (incA D (ξ j))

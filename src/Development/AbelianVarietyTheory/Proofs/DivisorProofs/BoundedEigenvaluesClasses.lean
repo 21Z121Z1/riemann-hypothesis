@@ -3,7 +3,7 @@ module
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsRootSelectionUnitaryRankOne
 public import GroundTheory.Brauer.TensorSimple
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsRootCharpolyOfIsRootMinpoly
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0070
 
 @[expose] public section
 

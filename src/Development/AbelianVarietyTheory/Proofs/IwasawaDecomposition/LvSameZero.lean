@@ -2,9 +2,9 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.StdLvPr
-public import Formalism.LocalToGlobal.HermitianForms.TiedTwJSym
+public import Formalism.LocalToGlobal.HermitianForms.Bundle0006
 public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.ExistsForgetsFrames
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.StepZeroClassesBijectiveSameDeco
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0296
 
 @[expose] public section
 

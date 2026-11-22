@@ -3,13 +3,13 @@ module
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.IsRealFam
 public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.IsCombAt
-public import Development.AbelianVarietyTheory.Definitions.Divisors.DiscreteSeriesHermitianUnique
-public import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.CuspAlongSmoothRows
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.RootOfUnityThetaTwist
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsVacuumBasePointFamilyEveryTupleStatement
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.VacuumBasePointUniqueAllTuplesStatement
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.TwistCharacterMemTwistFiniteValueProductSubgroupStatement
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.UnfoldingJointDataTwistRatioAtDetRootsStatement
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0041
+public import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.Bundle0015
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0392
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0674
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.VacuumBasePointUniqueAllTuples
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0666
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0651
 
 @[expose] public section
 
@@ -34,7 +34,7 @@ theorem circ_id (A B A' B' : Circle) : A'⁻¹ * B' = (A⁻¹ * B) * ((A' * A⁻
 
 set_option maxHeartbeats 1600000 in
 theorem vacTw : Big fun ch => VacTw ch := by
-  obtain ⟨C, h⟩ := Big.and (Big.and GlobalTheory.T.exists_vacuumBasePointFamily_every_tuple GlobalTheory.T.vacuumBasePoint_unique_all_tuples) (Big.and GlobalTheory.T.twistCharacter_mem_twistFiniteValueProductSubgroup GlobalTheory.T.unfoldingJointData_twist_ratio_at_detRoots)
+  obtain ⟨C, h⟩ := Big.and (Big.and _root_.GlobalTheory.RowBase.exists_isBase _root_.GlobalTheory.RowBaseUniq.isBase_unique) (Big.and _root_.GlobalTheory.XiVals.xi_mem _root_.GlobalTheory.ConTwist.conAt_twist_big)
   refine ⟨C, fun ε CF hC => ?_⟩
   obtain ⟨x₀, h⟩ := h ε CF hC
   refine ⟨x₀, fun D large₂ he hx Γ _ _ Pl0 T A Ks _ _ _ R F s ch hi ha => ?_⟩

@@ -2,10 +2,10 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.Foundations.FinalTheorems
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.NormNatCastLeOne
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.HeightCommutatorInvariance
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsAugmentationCombinationEqIdTracelessIrreduStatement
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.GaloisHomZlLipschitzOfKerLeLinearGroupStatement
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0343
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0341
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0352
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0347
 
 @[expose] public section
 
@@ -245,10 +245,10 @@ theorem hom_padicInt_trivial : ∀ (l : ℕ) [Fact l.Prime] (c : Coef l) (Γ : T
       refine (h1.mono ?_).add (h2.mono ?_)
       · rw [← pow_mul]; exact pow_le_pow_of_le_one hρ0.le hρ1.le (by omega)
       · rw [← hρ, pow_succ' ρ (n + 1)]
-  obtain ⟨N, γ, a, haug⟩ := GlobalTheory.T.exists_augmentation_combination_eq_id_traceless_irreducible l c Γ r hint hirr
+  obtain ⟨N, γ, a, haug⟩ := _root_.GlobalTheory.Sl2Ad.augmentation_contains_one l c Γ r hint hirr
   obtain ⟨s, hs⟩ := noab_denom l N a
   set b : Fin N → ℤ_[l] := fun i => ⟨((l : ℕ) : ℚ_[l]) ^ s * a i, hs i⟩ with hbdef
-  obtain ⟨C, hC⟩ := GlobalTheory.T.galoisHom_zl_lipschitz_of_ker_le_linearGroup l c Γ r lam hr hint hlam hker
+  obtain ⟨C, hC⟩ := _root_.GlobalTheory.Ord2.hom_lipschitz_of_ker_le l c Γ r lam hr hint hlam hker
   have key : ∀ n : ℕ, ρ ^ (s + n) * ‖v0‖ ≤ C * ρ ^ (2 * n + 1) := by
     intro n
 

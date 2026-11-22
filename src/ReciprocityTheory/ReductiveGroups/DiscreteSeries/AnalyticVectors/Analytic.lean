@@ -1,9 +1,8 @@
 module
 
-public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.AnalyticVectors.Unitary
+public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.AnalyticVectors.Bundle0002
 public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.AnalyticVectors.Taylor
 public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.AnalyticVectors.Series
-public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.AnalyticVectors.Growth
 public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.AnalyticVectors.NcBound
 
 @[expose] public section

@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Formalism.LocalToGlobal.Columns.GoodXgFin
+public import Formalism.LocalToGlobal.Columns.Bundle0001
 
 @[expose] public section
 

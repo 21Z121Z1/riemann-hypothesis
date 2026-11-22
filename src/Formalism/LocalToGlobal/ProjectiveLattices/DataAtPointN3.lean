@@ -1,7 +1,7 @@
 module
 
 public import Formalism.LocalToGlobal.ProjectiveLattices.TowerOfAt
-public import Formalism.LocalToGlobal.ProjectiveLattices.BetaAtSymm
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0009
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.UniformisationConclusion
 
 @[expose] public section

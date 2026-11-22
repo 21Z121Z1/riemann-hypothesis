@@ -1,8 +1,7 @@
 module
 
-public import Formalism.LocalToGlobal.TorsionIntegrality.RamifiedCurveKernels.StatementK
-public import Formalism.LocalToGlobal.TorsionIntegrality.RamifiedCurveKernels.StatementV
-public import Formalism.LocalToGlobal.TorsionIntegrality.TorsionTranslationPowers.StatementN
+public import Formalism.LocalToGlobal.TorsionIntegrality.RamifiedCurveKernels.Bundle0001
+public import Formalism.LocalToGlobal.TorsionIntegrality.TorsionTranslationPowers.Bundle0002
 
 @[expose] public section
 

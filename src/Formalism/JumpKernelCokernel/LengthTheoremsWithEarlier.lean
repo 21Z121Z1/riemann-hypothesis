@@ -1,32 +1,15 @@
 module
 
-public import Formalism.JumpKernelCokernel.JumpShiftProofs.DetLen
-public import Formalism.JumpKernelCokernel.JumpShiftProofs.RelZero
-public import Formalism.JumpKernelCokernel.JumpShiftProofs.ColumnDegreeBound
-public import Formalism.JumpKernelCokernel.JumpShiftProofs.RowDegreeBound
-public import Formalism.JumpKernelCokernel.JumpShiftProofs.ExpRowD
-public import Formalism.JumpKernelCokernel.JumpShiftProofs.InvConst
-public import Formalism.JumpKernelCokernel.JumpShiftProofs.KerCoker
-public import Formalism.JumpKernelCokernel.JumpShiftProofs.JumpShift
-public import Formalism.JumpKernelCokernel.JumpShiftProofs.PowBinom
-public import Formalism.JumpKernelCokernel.JumpShiftProofs.HCoefLim
-public import Formalism.JumpKernelCokernel.JumpShiftProofs.IdealPowerSumMem
-public import Formalism.JumpKernelCokernel.JumpShiftProofs.ColThmC
-public import Formalism.JumpKernelCokernel.JumpShiftProofs.FiltrationExponentHolds
-public import Formalism.JumpKernelCokernel.JumpShiftProofs.ThickB
+public import Formalism.JumpKernelCokernel.JumpShiftProofs.Bundle0001
+public import Formalism.JumpKernelCokernel.JumpShiftProofs.Bundle0002
+public import Formalism.JumpKernelCokernel.JumpShiftProofs.Bundle0003
 public import Formalism.JumpKernelCokernel.JumpShiftProofs.KerCokerEq
-public import Formalism.JumpKernelCokernel.JumpShiftProofs.ThickA
-public import Formalism.JumpKernelCokernel.JumpShiftProofs.PdFacts
-public import Formalism.JumpKernelCokernel.JumpShiftProofs.LenSplit
 public import Formalism.JumpKernelCokernel.JumpShiftProofs.TorsKerSum
-public import Formalism.JumpKernelCokernel.JumpShiftProofs.TorsKer
 public import Formalism.JumpKernelCokernel.JumpShiftProofs.RowDJoint
-public import Formalism.JumpKernelCokernel.JumpShiftProofs.LemmaDJoint
-public import Formalism.JumpKernelCokernel.JumpShiftProofs.CokerTors
 public import Formalism.TruncatedSeriesCounting.EtaDeterminantPolynomialIdentities
 public import Formalism.EisensteinCokernelLengths.FactorialValuationBounds.DistinguishedPowMemSpanOfTrichotomy
 public import Formalism.EisensteinCokernelLengths.FactorialValuationBounds.PadicValNatFactorialLeReal
-public import Formalism.EisensteinCokernelLengths.FactorialValuationBounds.RationalTailBoundCubic
+public import Formalism.EisensteinCokernelLengths.FactorialValuationBounds.Bundle0002
 
 @[expose] public section
 

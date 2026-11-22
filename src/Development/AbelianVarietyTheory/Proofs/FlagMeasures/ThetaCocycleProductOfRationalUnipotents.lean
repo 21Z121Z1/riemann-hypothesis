@@ -1,7 +1,7 @@
 module
 
-public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.LocOf
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.LeSpanEInfToO
+public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.Bundle0016
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0316
 
 @[expose] public section
 

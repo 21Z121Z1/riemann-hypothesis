@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.EigLat
-public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.InjectiveOfIsCptGen
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.StdSmoothMvPolynomial
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.Bundle0004
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.Bundle0002
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0014
 
 @[expose] public section
 

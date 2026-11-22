@@ -1,7 +1,6 @@
 module
 
-public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.ZeroWindow.FinsumMemLeFinsumMem
-public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.ZeroWindow.Jensen
+public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.ZeroWindow.Bundle0001
 public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.ZeroWindow.RightOne
 
 @[expose] public section

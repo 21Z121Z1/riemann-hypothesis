@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import GroundTheory.TateCohomology.DiagonalSuccIsoFreeInvSingle
+public import GroundTheory.TateCohomology.Bundle0001
 public import GroundTheory.TateCohomology.DimensionShift
 
 @[expose] public section

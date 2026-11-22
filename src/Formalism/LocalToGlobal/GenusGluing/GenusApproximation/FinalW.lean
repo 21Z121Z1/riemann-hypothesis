@@ -1,9 +1,7 @@
 module
 
 public import Formalism.LocalToGlobal.GenusGluing.GenusApproximation.LocalAdelicEquivHolds
-public import Formalism.LocalToGlobal.GenusGluing.GenusApproximation.GenusApproximationProofs.EvaluationNeZeroHolds
-public import Formalism.LocalToGlobal.GenusGluing.GenusApproximation.GenusApproximationProofs.DetAddDiagonalCons
-public import Formalism.LocalToGlobal.GenusGluing.GenusApproximation.GenusApproximationProofs.ApproximationAdelicHolds
+public import Formalism.LocalToGlobal.GenusGluing.GenusApproximation.GenusApproximationProofs.Bundle0002
 public import Formalism.LocalToGlobal.GenusGluing.GenusApproximation.GenusApproximationProofs.Cayley
 public import Formalism.LocalToGlobal.GenusGluing.GenusApproximation.GenusApproximationProofs.WeakApproxAllOf
 

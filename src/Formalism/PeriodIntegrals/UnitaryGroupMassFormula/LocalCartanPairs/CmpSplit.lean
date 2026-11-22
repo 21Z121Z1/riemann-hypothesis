@@ -1,7 +1,7 @@
 module
 
-public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LocalCartanPairs.CmpPair
-public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LocalCartanPairs.SplOff
+public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LocalCartanPairs.Bundle0002
+public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LocalCartanPairs.Bundle0003
 
 @[expose] public section
 

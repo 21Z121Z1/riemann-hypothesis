@@ -3,7 +3,7 @@ module
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.KatoQuadraticCharacters.SphericalDecomposition.SphOfWit
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.RTwist
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.TemperedLocalComponents.PRepNew
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExpoEqZeroOfPow
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2769
 
 @[expose] public section
 

@@ -4,7 +4,7 @@ public import Mathlib
 public import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.ArchimedeanGelfandKernels.WaveSt
 public import Development.AutomorphicSpectrum.Proofs.JetProofs.ContinuousIteratedFDerivPartial
 public import Development.AbelianVarietyTheory.Proofs.CovolumeBounds.IntegralConjInnerMulInnerOfIsEmptyEquiv
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.HaarRightInvariantCompact
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0179
 
 @[expose] public section
 

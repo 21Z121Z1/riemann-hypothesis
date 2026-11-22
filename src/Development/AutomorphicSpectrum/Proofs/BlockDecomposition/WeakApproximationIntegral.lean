@@ -2,10 +2,10 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.NotIsCompactUnivFv
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.HermitianPlaneStrongApprox
-public import GroundTheory.GlobalFields.Adele.Compact
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0237
+public import GroundTheory.GlobalFields.Adele.Bundle0002
 public import GroundTheory.AutomorphicForms.StrongApproximationSLDense
-public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.ExistsSupported
+public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0020
 
 @[expose] public section
 

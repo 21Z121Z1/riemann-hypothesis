@@ -1,15 +1,15 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.GermSys
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.Bundle0013
 public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsFlatAnIffIsConstMul
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.UniformisationConclusion
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.AbProj
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.StalkClosedPointToGermTop
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.RegAtFractionNoetherianClosed
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.Bundle0006
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0036
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0027
 public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.EigenLatticeConstantRank
-public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.DetCondIffOfFieldExtension
-public import Development.WeilBound.CoreStatements.HodgeTatePoints.HtatLieBc
+public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0045
+public import Development.WeilBound.CoreStatements.HodgeTatePoints.Bundle0050
 
 @[expose] public section
 

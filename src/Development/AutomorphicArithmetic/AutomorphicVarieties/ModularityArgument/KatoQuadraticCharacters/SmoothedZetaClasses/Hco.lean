@@ -4,24 +4,23 @@ public import Mathlib
 public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.CmValuationNewformCongruence
 public import Development.AutomorphicArithmetic.Foundations.IwahoriReduction.SiegelFixedPoints.Thdiam
 public import Development.AbelianVarietyTheory.Definitions.Foundations.IsZetaTW
-public import Development.AbelianVarietyTheory.Definitions.Foundations.IsZetaSystemFixedExponent
-public import Development.AbelianVarietyTheory.Definitions.Foundations.EeProd
-public import Development.AbelianVarietyTheory.Definitions.Foundations.ExistsEqSubOfMemCob
+public import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0024
+public import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0008
+public import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0021
 public import Development.AbelianVarietyTheory.Definitions.Foundations.IsLamOfLSmulIff
-public import Development.AbelianVarietyTheory.Definitions.Foundations.PieceEqPieceT
-public import Development.AbelianVarietyTheory.Definitions.Foundations.HtCoLOfEq
-public import Development.AbelianVarietyTheory.Definitions.Foundations.AdmissibleHodgeTateZetaClassParams
-public import Development.AbelianVarietyTheory.Definitions.Foundations.AdmissibleNewformZetaData
+public import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0004
+public import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0023
+public import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0025
 public import Development.AbelianVarietyTheory.Definitions.Foundations.IsLamFROfIsLamF
 public import Development.AbelianVarietyTheory.Definitions.Foundations.ActWBOfInvariant
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.GalBMemKummerInvariantSet
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.IsPrimitiveRootEOmLevel
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsCuspFunctionalOddWeightOddPrimeStatement
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.IsCuspFunctionalValueModPrimePowDiamondIndepende
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.IsThBActSgDDiamIff
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ThetaBasisLinearCombination
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ThetaLatticeDiamondAction
-public import Development.AbelianVarietyTheory.Definitions.Foundations.IsLamFR2
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0141
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0103
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0200
+public import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0006
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0355
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0361
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0090
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0205
 
 @[expose] public section
 
@@ -183,7 +182,7 @@ theorem _root_.UpperTheory.V.Z.Kato.K5.hco : ∀ (Ω : Type) [Field Ω] [Algebra
     obtain ⟨φ, h1, h2⟩ := hφ
     exact ⟨φ, h2, h1⟩
   choose φδ hφδ _ using fun δ : (ZMod N)ˣ =>
-    GlobalTheory.T.exists_cuspFunctional_oddWeight_oddPrime Ω ε X A N l halg hφ' hl2 hlN h5 hlnon n (2 * e - 1) hodd _ (hdB δ)
+    _root_.GlobalTheory.ThEx.thex Ω ε X A N l halg hφ' hl2 hlN h5 hlnon n (2 * e - 1) hodd _ (hdB δ)
   obtain ⟨Φ, hΦ, hΦc⟩ := GlobalTheory.LambdaValuationPowers.ZetaCoef.exists_isThB_sum X hj hlnon Finset.univ Finset.univ_nonempty u
     (fun δ => X.diam N l (δ : ZMod N).val f) φδ hdB hφδ
   have hInChi := GlobalTheory.LambdaValuationPowers.ZetaCoef.inChi_avg X (N := N) hlcop.symm (w := 2 * e - 1) (χ := χ)

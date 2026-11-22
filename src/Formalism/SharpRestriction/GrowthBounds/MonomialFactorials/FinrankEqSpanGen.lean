@@ -1,6 +1,6 @@
 module
 
-public import Formalism.SharpRestriction.GrowthBounds.MonomialFactorials.BlockBoundOfDualFamilies
+public import Formalism.SharpRestriction.GrowthBounds.MonomialFactorials.Bundle0008
 public import Lemmata.GeneralBFactLeftTerForm.Imports
 
 @[expose] public section

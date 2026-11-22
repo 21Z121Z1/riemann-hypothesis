@@ -1,7 +1,7 @@
 module
 
 public import Formalism.HermitianCurvature.StatementFr
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Interlace
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0003
 
 @[expose] public section
 

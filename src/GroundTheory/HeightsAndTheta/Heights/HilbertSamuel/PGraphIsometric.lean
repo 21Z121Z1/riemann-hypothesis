@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.Cartier
-public import GroundTheory.HeightsAndTheta.Heights.HeightComparison.IsMultiHomogIdealIff
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PChangeOfModel
+public import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.Bundle0002
+public import GroundTheory.HeightsAndTheta.Heights.HeightComparison.Bundle0003
+public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0072
 
 @[expose] public section
 

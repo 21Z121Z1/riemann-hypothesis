@@ -1,9 +1,9 @@
 module
 
 public import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutJDHatJDRStepB
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutJDHatJDACapTodaVRules
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutJDHatJDACapTodaVGrp
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutJDHatJDACapTodaVCoef
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0241
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0240
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0208
 
 @[expose] public section
 

@@ -1,30 +1,30 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.JEvExists
-public import Formalism.LocalToGlobal.UnitaryNorms.CharTied
-public import Formalism.LocalRingCardinality.DataKap
-public import Formalism.LocalToGlobal.ProjectiveLattices.HasDataCondition
-public import Formalism.LocalToGlobal.ProjectiveLattices.RecCond
-public import Formalism.LocalToGlobal.ProjectiveLattices.ParCanon
+public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.Bundle0012
+public import Formalism.LocalToGlobal.UnitaryNorms.Bundle0006
+public import Formalism.LocalRingCardinality.Bundle0004
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0028
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0032
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0031
 public import Formalism.LocalToGlobal.ProjectiveLattices.ExistsParameterConditions
-public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.ThExprUniqOfChartIndep2
+public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0007
 public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.DsExistsOfDiscreteSeriesExists
-public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.ExistsNormLeHeightPow
+public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.Bundle0007
 public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsCoversOfHalves
 public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsRepsOfFiniteIndex
 public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.IntValuationEqOfMem
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsFirstOfSecond
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsDeltaDatumHigherLevel
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsCoeffExtRationalFormsValuesField
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsLevelAtEachIndex
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.LawOfSquaresSelfDualSplitLattice
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsHarmonicCoefficientMapAtWeights
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsNumberFieldHeckeCharacterSqrtNormValues
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ResidualCharacterDetValuesMemCoeffField
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LevelActionFramedPointsIsAction
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsLevelPlaceDatumOverNumberField
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsAdelicSideOfModels
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0094
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0108
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0213
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0204
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0156
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0203
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0205
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0971
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1466
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0951
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0907
 
 @[expose] public section
 
@@ -165,7 +165,7 @@ theorem exists_levIs (hL : R.toLevCh.Is A.μ0) (hT : LawsJ T) (hpb : T.pb = R.C.
     exact Ideal.map_comap_le
   have hlift : Lev.LiftsExist (Wc D i) (R.βW i) (R.datWp i R.triv) := by
     obtain ⟨c, hc⟩ := hβ
-    refine GlobalTheory.T.parahoricLevel_liftsExist _ _ _ _ _ hc (fun PP h PP' h' => ?_) (Finset.disjoint_empty_right _)
+    refine _root_.GlobalTheory.ParahoricLift.liftsExist _ _ _ _ _ hc (fun PP h PP' h' => ?_) (Finset.disjoint_empty_right _)
     rcases h' with h' | h'
     · exact GlobalTheory.LevelAction.not_isConjPl T.Q.l (hle PP h) (hle PP' h')
     · exact absurd h' (Finset.notMem_empty _)

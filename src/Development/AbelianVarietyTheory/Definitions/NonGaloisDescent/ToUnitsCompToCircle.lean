@@ -1,11 +1,11 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.ConjTupRefl
+public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0025
 public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.AdmissibleEmptyOfGood
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ThetaWeightArithmeticAtPlaceProof
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsEqMulOfResSNeOne
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.TameHeckeCharSplitSupportedEqProdResidue
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0185
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0430
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0169
 
 @[expose] public section
 

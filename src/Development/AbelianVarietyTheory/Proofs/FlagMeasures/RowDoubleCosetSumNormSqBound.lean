@@ -2,21 +2,25 @@ module
 
 public import Mathlib
 public import Formalism.LocalToGlobal.SiegelLatticeTheory.CokernelGLCounts.NGData
-public import Formalism.LocalToGlobal.SiegelLatticeTheory.FlagStabilizerTensors.VolPin
+public import Formalism.LocalToGlobal.SiegelLatticeTheory.FlagStabilizerTensors.Bundle0001
 public import Formalism.LocalToGlobal.SiegelLatticeTheory.ClosedLocalOrbits.GaugeLatticeShifts.Vanish
-public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.AtBase
+public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.Bundle0013
 public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.PlacesOf
 public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.HermitianFramesStabilizerActsOnTerms
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.GlobalHermitianFramesTermsOrbitsLocalStatement
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.HermitianAmplitudeMassProductStructureStatement
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.RationalUnipotentGroupsLatticesGlobalCoordinatesStatement
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.MovedTermLatticeIsGlobalTermPhaseStatement
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.GenericIffZeroDefectGroupCoordinatesStatement
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.TermRowEqIffMovedLatticeInnerDataEqStatement
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.DoubleCosetTermEqIffStabiliserOrbitStatement
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsTermOfGlobalTermStrongApproxStatement
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.DoubleCosetEqIffIsometryUnipotentTranslateStatement
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.RowTermAmplitudeEqMassMulPhaseStatement
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.GlobalHermitianFramesTermsOrbitsLocal
+public import Formalism.SharpRestriction.CuspSpanNormBounds.FractionFieldToGenericStalkAlgebraMapEq
+public import Formalism.SharpRestriction.CuspSpanNormBounds.PsiEDef
+public import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0007
+public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.ComplementReferenceCompactSubgroup
+public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.Bundle0003
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.HermitianAmplitudeMassProductStructure
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0428
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0433
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0434
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0429
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsTermOfGlobalTermStrongApprox
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.DoubleCosetEqIffIsometryUnipotentTranslate
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0437
 
 @[expose] public section
 
@@ -52,7 +56,7 @@ theorem isLattice_of_lrel {A : Places F E sig} {r k : ℕ} (G : GFrames A r k) {
 theorem term_of_lrel {A : Places F E sig} {r k : ℕ} (G : GFrames A r k) (hk : 4 * r + 7 ≤ k) {d : G.Dat}
     (hex : ∃ Λ₀, G.IsTerm d Λ₀) {Γ Γ' : G.Lt} (hΓ : G.IsTerm d Γ) (h : G.LRel Γ Γ') : G.IsTerm d Γ' := by
   have hl := isLattice_of_lrel G hΓ.1 h
-  have e := ((GlobalTheory.T.globalHermitianFrames_terms_orbits_local A r k G hk d hex).2.1 Γ Γ' hΓ hl).1 h
+  have e := ((_root_.GlobalTheory.HL.GlobalOrbits.global_terms_orbits A r k G hk d hex).2.1 Γ Γ' hΓ hl).1 h
   refine ⟨hl, fun p => ?_⟩
   obtain ⟨s, hs, hsp⟩ := e p
   rw [hsp]
@@ -81,20 +85,20 @@ theorem row_coset_sum_norm_sq : ∀ (D : D7) (X : HidaSetting D) (Y : Full X) (u
       G.datOf (c.lat (ρ * n) t.lam) = d₀ := by
     intro t n m hr h
     obtain ⟨h1, h2⟩ := hrow t hr
-    exact (GlobalTheory.T.termRow_eq_iff_movedLatticeInnerData_eq D X Y u u' hSt hk w F00 F'0 FP hZ hGv hAt G c t₀ ρ U U' hMv t n m h1 h2 h).1 hr
+    exact (_root_.GlobalTheory.HL.DatEq.row_eq_iff_datOf_eq D X Y u u' hSt hk w F00 F'0 FP hZ hGv hAt G c t₀ ρ U U' hMv t n m h1 h2 h).1 hr
   have hterm : ∀ (t : TauC Y u u') n m, (Y.tO u u').rowOf t = (Y.tO u u').rowOf t₀ →
       (n ∈ NRat (lf D (X.Fu u)) ∧ m ∈ NRat (lf D (X.Fu u')) ∧ t.lin = n⁻¹ * t₀.lin * m) →
       G.IsTerm d₀ (c.lat (ρ * n) t.lam) := by
     intro t n m hr h
     obtain ⟨A, A', hM⟩ := hmv t n m h
-    have := (GlobalTheory.T.movedTermLattice_isGlobalTerm_phase D X Y u u' hSt hk w F00 F'0 FP hZ hGv hAt G c t (ρ * n) (U * A) (U' * A') hM).1
+    have := (_root_.GlobalTheory.HL.MovedTermPhase.main D X Y u u' hSt hk w F00 F'0 FP hZ hGv hAt G c t (ρ * n) (U * A) (U' * A') hM).1
     rwa [hdat t n m hr h] at this
   have hgen : ∀ (t : TauC Y u u') n m, (Y.tO u u').rowOf t = (Y.tO u u').rowOf t₀ →
       (n ∈ NRat (lf D (X.Fu u)) ∧ m ∈ NRat (lf D (X.Fu u')) ∧ t.lin = n⁻¹ * t₀.lin * m) →
       (t.generic ↔ G.Gen d₀ (c.lat (ρ * n) t.lam)) := by
     intro t n m hr h
     obtain ⟨A, A', hM⟩ := hmv t n m h
-    have := GlobalTheory.T.generic_iff_zero_defectGroup_coordinates D X Y u u' hSt hk w F00 F'0 FP hZ hGv hAt G c t (ρ * n) (U * A) (U' * A') hM
+    have := _root_.GlobalTheory.HL.GenCoord.generic_iff_gen D X Y u u' hSt hk w F00 F'0 FP hZ hGv hAt G c t (ρ * n) (U * A) (U' * A') hM
     rwa [hdat t n m hr h] at this
   have hinj : ∀ (t t' : TauC Y u u') n m n' m', (Y.tO u u').rowOf t = (Y.tO u u').rowOf t₀ →
       (Y.tO u u').rowOf t' = (Y.tO u u').rowOf t₀ →
@@ -104,14 +108,14 @@ theorem row_coset_sum_norm_sq : ∀ (D : D7) (X : HidaSetting D) (Y : Full X) (u
     intro t t' n m n' m' hr hr' h h'
     obtain ⟨a1, a2⟩ := hrow t hr
     obtain ⟨b1, b2⟩ := hrow t' hr'
-    exact GlobalTheory.T.doubleCoset_term_eq_iff_stabiliserOrbit D X Y u u' hSt hk w F00 F'0 FP hZ hGv hAt G c t₀ ρ U U' hMv t t' n m n' m' a1 a2 b1 b2 h h'
+    exact _root_.GlobalTheory.HL.TermOrbit.term_eq_iff_lRel D X Y u u' hSt hk w F00 F'0 FP hZ hGv hAt G c t₀ ρ U U' hMv t t' n m n' m' a1 a2 b1 b2 h h'
   have hex : ∃ Λ₀, G.IsTerm d₀ Λ₀ :=
-    ⟨_, (GlobalTheory.T.movedTermLattice_isGlobalTerm_phase D X Y u u' hSt hk w F00 F'0 FP hZ hGv hAt G c t₀ ρ U U' hMv).1⟩
+    ⟨_, (_root_.GlobalTheory.HL.MovedTermPhase.main D X Y u u' hSt hk w F00 F'0 FP hZ hGv hAt G c t₀ ρ U U' hMv).1⟩
   have hfin : {o : Quot G.LRel | G.IsTerm d₀ o.out}.Finite :=
-    (GlobalTheory.T.hermitian_amplitude_mass_product_structure _ _ _ G hk d₀ hex (fun _ _ => True) (fun _ _ _ _ _ _ => trivial)
+    (_root_.GlobalTheory.HL.ProdStruct.product_structure _ _ _ G hk d₀ hex (fun _ _ => True) (fun _ _ _ _ _ _ => trivial)
       (Set.finite_empty.subset fun _ ⟨_, _, h⟩ => absurd trivial h)).2.2.2
-  have heqv : Equivalence G.LRel := (GlobalTheory.T.globalHermitianFrames_terms_orbits_local _ _ _ G hk d₀ hex).2.2.1
-  have hsurj := fun Γ hΓ => GlobalTheory.T.exists_term_of_globalTerm_strongApprox D X Y u u' hSt hk w F00 F'0 FP hZ hGv hAt G c t₀ ρ U U' hMv Γ hΓ
+  have heqv : Equivalence G.LRel := (_root_.GlobalTheory.HL.GlobalOrbits.global_terms_orbits _ _ _ G hk d₀ hex).2.2.1
+  have hsurj := fun Γ hΓ => _root_.GlobalTheory.HL.TermSurj.exists_term_of_global D X Y u u' hSt hk w F00 F'0 FP hZ hGv hAt G c t₀ ρ U U' hMv Γ hΓ
   let τ : Quot G.LRel → TauC Y u u' := fun o =>
     if h : G.IsTerm d₀ o.out then (hsurj o.out h).choose else t₀
   have hτ : ∀ o, G.IsTerm d₀ o.out → ∃ n m, (Y.tO u u').rowOf (τ o) = (Y.tO u u').rowOf t₀ ∧
@@ -131,7 +135,7 @@ theorem row_coset_sum_norm_sq : ∀ (D : D7) (X : HidaSetting D) (Y : Full X) (u
     intro o ho
     obtain ⟨hT, hPo⟩ := (hmemC o).1 ho
     obtain ⟨n, m, hr, h, he⟩ := hτ o hT
-    refine ⟨hr, (GlobalTheory.T.doubleCoset_eq_iff_isometry_unipotent_translate D X Y u u' hSt t₀ (τ o)).2 ⟨n, m, h⟩, ?_⟩
+    refine ⟨hr, (_root_.GlobalTheory.HL.nmlOf_eq_iff_lin D X Y u u' hSt t₀ (τ o)).2 ⟨n, m, h⟩, ?_⟩
     have hg := hgen (τ o) n m hr h
     rw [← he] at hg
     have : (¬ (τ o).generic) = (¬ G.Gen d₀ o.out) := propext (not_congr hg)
@@ -150,7 +154,7 @@ theorem row_coset_sum_norm_sq : ∀ (D : D7) (X : HidaSetting D) (Y : Full X) (u
       _ = o' := Quot.out_eq o'
   have hτsurj : ∀ t ∈ S, ∃ o ∈ Cf, τ o = t := by
     rintro t ⟨hr, hn, hq⟩
-    obtain ⟨n, m, h⟩ := (GlobalTheory.T.doubleCoset_eq_iff_isometry_unipotent_translate D X Y u u' hSt t₀ t).1 hn
+    obtain ⟨n, m, h⟩ := (_root_.GlobalTheory.HL.nmlOf_eq_iff_lin D X Y u u' hSt t₀ t).1 hn
     have hΓ := hterm t n m hr h
     obtain ⟨o, ho⟩ : ∃ o : Quot G.LRel, o = Quot.mk G.LRel (c.lat (ρ * n) t.lam) := ⟨_, rfl⟩
     have hrel1 : G.LRel (c.lat (ρ * n) t.lam) o.out := by
@@ -166,7 +170,7 @@ theorem row_coset_sum_norm_sq : ∀ (D : D7) (X : HidaSetting D) (Y : Full X) (u
     rw [this]
     exact hq
   obtain ⟨T, hTn, hamp⟩ :=
-    GlobalTheory.T.rowTerm_amplitude_eq_mass_mul_phase D X Y u u' hSt hk w F00 F'0 FP hZ hGv hAt G c ν hν t₀ ρ U U' hMv hrelv hpt
+    _root_.GlobalTheory.AmpTerm.amp_eq_mass_phase D X Y u u' hSt hk w F00 F'0 FP hZ hGv hAt G c ν hν t₀ ρ U U' hMv hrelv hpt
   set K : ℝ := ((X.B.g : ℝ) ^ (D.R.f * Fintype.card (Formalism.L2.SG.RealObj.FreeE w)))⁻¹ with hK
   let q₀ : {Λ // Λ ∈ Y.what₂ u} × {Λ' // Λ' ∈ Y.what₂ u'} := (⟨t₀.lam, t₀.mem⟩, ⟨t₀.lam', t₀.mem'⟩)
   let V : Formalism.L2.SG.PackageTie.HS (X.Vpi u') (X.Vpi u) → H1 X u u' (Y.what₂ u) (Y.what₂ u') :=

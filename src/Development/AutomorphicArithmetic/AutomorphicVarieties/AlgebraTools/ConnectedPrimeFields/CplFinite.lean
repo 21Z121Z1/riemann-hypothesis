@@ -1,6 +1,6 @@
 module
 
-public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ExistsCompleteDvrFiniteSubalgebra
+public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.Bundle0011
 public import Mathlib
 public import ReciprocityTheory.CommutativeAlgebra.ChainConnInDim
 public import ReciprocityTheory.CommutativeAlgebra.SaturatedChains.IsSaturatedChain

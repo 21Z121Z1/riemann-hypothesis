@@ -1,8 +1,8 @@
 module
 
-public import Development.WeilBound.CoreStatements.ProjectiveValuations.ExistsChartFrBor
+public import Development.WeilBound.CoreStatements.ProjectiveValuations.Bundle0001
 public import Development.AbelianVarietyTheory.Proofs.GenericRegularity.ExistsFramesOfHolPeriods
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArakelovVolumes.UpperBounds.PoinStatementPfD
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArakelovVolumes.UpperBounds.Bundle0026
 
 @[expose] public section
 

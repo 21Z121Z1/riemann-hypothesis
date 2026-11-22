@@ -1,9 +1,11 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Statements.AlgebraStatements.RelationsStatement
-public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.UniformizerModelPermModuleLatticeStatement
-public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.DescentRelationsFromModelsStatement
+public import Development.AutomorphicSpectrum.Statements.AlgebraStatements.Bundle0003
+public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.UniformizerModelPermModuleLattice
+public import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.Bundle0005
+public import Development.AutomorphicSpectrum.Definitions.DivisibilityTowers.BundleChernComparison
+public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.DescentRelationsFromModels
 
 @[expose] public section
 
@@ -15,7 +17,7 @@ open GroundTheory.Heights₂.Heights.IndefiniteRowSideFullHecke.NumbersDVR.Bundl
 
 theorem relations : GlobalTheory.CompanionTheory.Ar.Num.RelationsStatement := by
   intro O _ _ _ Ω _ _ K _ _ ι _ x _ ϖ hϖ d hmod hfn F _ _ _ n Sg _ r s p hp w χ φ D hD Lie W Om OmHT hB lie om hflag
-  have hck := GlobalTheory.T.lattice_family_ckRelations O Ω K ι x d hmod hfn p hp w χ φ D hD Lie W Om OmHT hB
+  have hck := _root_.GlobalTheory.CompanionTheory.Ar.Num.CkTop.ckRelations_of_model O Ω K ι x d hmod hfn p hp w χ φ D hD Lie W Om OmHT hB
   have hp0 : (p : O) ≠ 0 := hD.char.1
   have hw0 : w ≠ 0 := by
     rintro rfl
@@ -43,7 +45,7 @@ theorem relations : GlobalTheory.CompanionTheory.Ar.Num.RelationsStatement := by
       refine ⟨fun v hv => ⟨w, hw0, ?_⟩, fun v hv => ⟨1, one_ne_zero, ?_⟩⟩
       · exact hinc.2.2.2 hv
       · simpa using hinc.2.2.1 hv
-  exact GlobalTheory.T.uniformizer_model_perm_module_lattice O Ω K ι x ϖ hϖ d hmod p hp0 φ (VL := fun τ => Fin (r τ) → Ω)
+  exact _root_.GlobalTheory.CompanionTheory.CkRelations.main O Ω K ι x ϖ hϖ d hmod p hp0 φ (VL := fun τ => Fin (r τ) → Ω)
     (VO := fun τ => Fin (s τ) → Ω) Lie W Om OmHT hsame hck lie om hflag
 
 end GlobalTheory.CompanionTheory.Ar.Num.TopRel

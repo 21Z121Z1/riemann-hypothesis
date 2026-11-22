@@ -1,8 +1,8 @@
 module
 
-public import Formalism.HermitianCurvature.BigCellVanishingOfCommute
+public import Formalism.HermitianCurvature.Bundle0005
 public import Formalism.HermitianCurvature.HermitianCurvatureProofs.BetaSesquilinearity
-public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.UnipotentCorrectionU1.CompRB
+public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.UnipotentCorrectionU1.Bundle0004
 
 @[expose] public section
 

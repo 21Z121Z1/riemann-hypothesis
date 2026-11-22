@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.CuspValueComparison
+public import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.Bundle0010
 public import Formalism.CyclotomicNorms.StatementT
 public import Formalism.LocalToGlobal.Divisibility.DefGroup
 public import Formalism.LocalToGlobal.Divisibility.GoodPartHermitianSpec

@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.HbApply
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ImportsBisBis
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0283
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0008
 
 @[expose] public section
 

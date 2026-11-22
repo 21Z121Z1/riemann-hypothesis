@@ -1,6 +1,6 @@
 module
 
-public import Formalism.WachLatticeTwists.RamifiedBlockRings.RamifiedBlockProofs.KerEqOfFactor
+public import Formalism.WachLatticeTwists.RamifiedBlockRings.RamifiedBlockProofs.Bundle0003
 public import Formalism.WachLatticeTwists.RamifiedBlockRings.RamifiedBlockProofs.ExistsSigma
 
 @[expose] public section

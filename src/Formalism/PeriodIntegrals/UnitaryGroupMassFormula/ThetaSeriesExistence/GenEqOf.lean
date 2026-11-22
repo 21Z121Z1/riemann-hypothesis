@@ -3,7 +3,7 @@ module
 public import Mathlib
 public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.ThetaSeriesExistence.ThetaDerivNe
 public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.ThetaSeriesExistence.Development
-public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.ThetaSeriesExistence.ThetaA
+public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.ThetaSeriesExistence.Bundle0002
 
 @[expose] public section
 

@@ -2,9 +2,9 @@ module
 
 public import Mathlib
 public import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.IntegralStructures.GeometricFlagBases.IntegOfMem
-public import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.AnnihilatorModels.CongKSOf
+public import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.AnnihilatorModels.Bundle0025
 public import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.FiniteEtaleModels.IsEtIdealOfPlace
-public import Development.AbelianVarietyTheory.Definitions.Divisors.EtLevForget
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0064
 
 @[expose] public section
 

@@ -2,13 +2,13 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.MoveStep
-public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.EFirstGeOfULastNonpos
+public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0136
 public import Formalism.SharpRestriction.GrowthBounds.WeilJacquetShalikaLaw
-public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.SharpBoundStabilityLatticeColumnChain
-public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.ColumnWeightTwisted
-public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.TupleChainSharpColumnValuationOfTwisted
-public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.FivePointLawsTrueChainsStatement
-public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.TwistedChainInitialLatticeCompatibleTrueColumnsStatement
+public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0145
+public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0066
+public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0074
+public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0158
+public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0147
 
 @[expose] public section
 
@@ -50,7 +50,7 @@ theorem row_true : ∀ (B : GlobalTheory.Mem.Base) (X : PreX B.toPre) (I : TC B 
     rw [← own_eq I l l0 Z u] at h0
     exact (levelChainSharpColumnValuation_ownChain_iff (I.rec7 l Z) u).1 h0
   · have hTw : TupleChainSharpColumnValuation (I.tw l l0 Z) u μ :=
-      TwSharp.tupleChainSharpColumnValuation_of_twisted (I.rec7 l Z) u (I.tw l l0 Z) μ (GlobalTheory.T.twistedChain_initialLattice_compatible_trueColumns B X I h l l0 Z u μ)
+      TwSharp.tupleChainSharpColumnValuation_of_twisted (I.rec7 l Z) u (I.tw l l0 Z) μ (_root_.GlobalTheory.LvT.TrueStep0.step0Tie_trueCols B X I h l l0 Z u μ)
         (trueColumns_chain_last_step_sharp_bound h hJ hS l l0 Z u μ)
     exact GlobalTheory.Proof.ColumnWeightTwisted.colGeTw_of_tupleChainSharpColumnValuation (I.rec7 l Z) (I.tw l l0 Z) u μ hTw w hw x hx
 

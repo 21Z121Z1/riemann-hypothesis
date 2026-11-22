@@ -1,16 +1,18 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Divisors.MatchingOfParts
-public import Development.AbelianVarietyTheory.Definitions.Divisors.DiscreteSeriesHermitianUnique
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0033
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0041
 public import Development.AbelianVarietyTheory.Definitions.Divisors.RankEqCardIffExistsFrameMatrixFirstColumnBlock
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LinearWeilFunctionalUnramifiedVector
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EqSmulOfCommuteHeisenbergLinearModelSchwartzBruh
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SchroedingerOperatorHeisenbergInnerPreserving
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsOpenSubgroupPeriodicStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsFinsetEqSumAddCosetIndicatorStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CharacterTrivialMatrixLatticeOpenCompactBasisStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SchrodingerPreservesSchwartzBruhat
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0340
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0274
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0310
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0308
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0278
+public import Development.AbelianVarietyTheory.Definitions.Divisors.HilbertNinetyQuotientHomEqIff
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0257
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1656
 
 @[expose] public section
 
@@ -254,7 +256,7 @@ theorem linIso_lintegral_eq : GlobalTheory.FunPr.Hypotheses₂ → ∀ (F E : Ty
     fun w f hf => GlobalTheory.SchrSB.schr_mem_SB B.ψ hTr.base.std.1 v w f hf
   have hU : ∀ w f f', ip μ (schr (GlobalTheory.LatVac.psiAt B.ψ v) w f) (schr (GlobalTheory.LatVac.psiAt B.ψ v) w f') = ip μ f f' :=
     fun w f f' => GlobalTheory.schr_unitary (GlobalTheory.LatVac.psiAt B.ψ v) hψc μ hμ w f f'
-  obtain ⟨hLoc, hBasis⟩ := GlobalTheory.T.characterTrivialMatrixLattice_open_compact_basis a (a + a') (GlobalTheory.LatVac.psiAt B.ψ v) hψc hψ1
+  obtain ⟨hLoc, hBasis⟩ := _root_.GlobalTheory.LinSchurLatt.latt_open_compact_basis a (a + a') (GlobalTheory.LatVac.psiAt B.ψ v) hψc hψ1
   have hB' : ∀ W ∈ 𝓝 (0 : Matrix (Fin a) (Fin (a + a')) (Fv F v)), ∃ i : {s : Fv F v // s ≠ 0},
       (latt (GlobalTheory.LatVac.psiAt B.ψ v) a (a + a') i.1 : Set _) ⊆ W := fun W hW => by
     obtain ⟨s, hs, h⟩ := hBasis W hW

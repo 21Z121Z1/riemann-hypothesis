@@ -1,8 +1,8 @@
 module
 
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.AutomorphyLifting.AAcrossOf
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.QuadraticExtensions.IneConj
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.AdTransfer
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.AutomorphyLifting.Bundle0001
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.QuadraticExtensions.Bundle0002
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.Bundle0005
 public import ReciprocityTheory.GaloisValuations.Global
 
 @[expose] public section

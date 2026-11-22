@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.ExistsLimitOfApprox
+public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0018
 
 @[expose] public section
 

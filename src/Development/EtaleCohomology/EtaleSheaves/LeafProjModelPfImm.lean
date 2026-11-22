@@ -1,6 +1,6 @@
 module
 
-public import Development.EtaleCohomology.EtaleSheaves.LeafProjModelPf
+public import Development.EtaleCohomology.EtaleSheaves.Bundle0070
 public import Development.AbelianVarietyTheory.Proofs.CovolumeBounds.IsProjOverCompOfIsClosedImmersion
 
 @[expose] public section

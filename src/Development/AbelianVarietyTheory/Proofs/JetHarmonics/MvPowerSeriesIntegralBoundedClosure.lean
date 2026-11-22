@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Jets.PowerSeriesHasSumAt
+public import Development.AbelianVarietyTheory.Definitions.Jets.Bundle0001
 
 @[expose] public section
 

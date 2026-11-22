@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.FramePositiveSum
+public import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.Bundle0006
 public import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.TypeChainPrincipalEntryNeZero
-public import Development.AbelianVarietyTheory.Definitions.Foundations.SimpleSumRowCol
+public import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0007
 
 @[expose] public section
 

@@ -5,8 +5,8 @@ public import Development.AbelianVarietyTheory.Definitions.HeightFunctions.XiVal
 public import Formalism.LocalToGlobal.ProjectiveLattices.DepthTie
 public import Development.AbelianVarietyTheory.Definitions.Jets.EmbShortThLeThetaPlain
 public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsRootNear
-public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.ContinuousCharacterFiniteOrderIntegralUnits
-public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.MemRangeOfOneTmulMem
+public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.Bundle0063
+public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.Bundle0058
 
 @[expose] public section
 

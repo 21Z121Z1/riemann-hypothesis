@@ -1,11 +1,10 @@
 module
 
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.PatchingModules.SelmerScaling.EpC
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.LagTriangular
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.LagMap
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.OrdExt
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.TriProdZero
-public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.TriDiag
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.Bundle0014
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.Bundle0006
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.Bundle0005
+public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0062
 
 @[expose] public section
 

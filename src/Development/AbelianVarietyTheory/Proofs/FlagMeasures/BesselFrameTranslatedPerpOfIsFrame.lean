@@ -1,10 +1,10 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.BesselFormsTrivialNeBot
-public import Formalism.PeriodIntegrals.BesselMapUniq
+public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.Bundle0006
+public import Formalism.PeriodIntegrals.Bundle0016
 public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.HighestWeightUniqueness.UnitaryOfBlockWMem
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnitaryGroupSecondKindCoordinatesNearOne
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0119
 public import Development.AbelianVarietyTheory.Proofs.HeightProofs.SmoothInExponentialCoordsIffFirstSecondKind
 public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.ContDiffOnIffLocalExtension
 

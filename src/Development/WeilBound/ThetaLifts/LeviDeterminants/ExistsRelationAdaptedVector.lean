@@ -1,7 +1,6 @@
 module
 
-public import Development.WeilBound.ThetaLifts.LeviDeterminants.CartanPos
-public import Development.WeilBound.ThetaLifts.LeviDeterminants.ExistsGaussBox
+public import Development.WeilBound.ThetaLifts.LeviDeterminants.Bundle0007
 
 @[expose] public section
 

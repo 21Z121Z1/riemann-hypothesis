@@ -1,6 +1,6 @@
 module
 
-public import Development.AutomorphicArithmetic.CommutativeAlgebra.EtaleCohomology.SplitsOfSplitOn
+public import Development.AutomorphicArithmetic.CommutativeAlgebra.EtaleCohomology.Bundle0003
 
 @[expose] public section
 

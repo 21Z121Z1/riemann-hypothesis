@@ -1,10 +1,9 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Divisors.IsGaloisCover
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0025
 public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.OmegaPullOmegaTraceOfSecTraceOne
-public import Development.AutomorphicArithmetic.KaehlerVanishing.DerivationEqOfFormallyEtaleOfEvaluationEq
-public import Development.AutomorphicArithmetic.KaehlerVanishing.KaehlerFunctionalVanishingOfLocalizationAtPrime
+public import Development.AutomorphicArithmetic.KaehlerVanishing.Bundle0001
 
 @[expose] public section
 

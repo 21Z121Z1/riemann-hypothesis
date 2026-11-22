@@ -3,7 +3,7 @@ module
 public import Mathlib
 public import GroundTheory.GlobalFields.Artin.Conductor
 public import GroundTheory.GlobalFields.Artin.InflationTower
-public import GroundTheory.LocalFields.LowerIndexQuotient
+public import GroundTheory.LocalFields.Bundle0012
 public import GroundTheory.LocalFields.IntermediateField
 
 @[expose] public section

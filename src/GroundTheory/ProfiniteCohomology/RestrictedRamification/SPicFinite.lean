@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import GroundTheory.ProfiniteCohomology.RestrictedRamification.SPicDefs
+public import GroundTheory.ProfiniteCohomology.RestrictedRamification.Bundle0001
 public import GroundTheory.GlobalFields.SUnits
 
 @[expose] public section

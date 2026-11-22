@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.BlockTheory.GlobalSignature.CharacterValuation
+public import Development.AbelianVarietyTheory.BlockTheory.GlobalSignature.Bundle0013
 
 @[expose] public section
 

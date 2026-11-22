@@ -3,7 +3,7 @@ module
 public import Development.WeilBound.ThetaLifts.EigenvalueEndgame.SignatureSplitting.SigSplit
 public import Development.WeilBound.ThetaLifts.EigenvalueEndgame.TowerCodimensionTwo
 public import Development.WeilBound.ThetaLifts.ConeHypotheses.PureEqPureA
-public import Development.WeilBound.ThetaLifts.TowerModels.PlaneHerm
+public import Development.WeilBound.ThetaLifts.TowerModels.Bundle0002
 
 @[expose] public section
 

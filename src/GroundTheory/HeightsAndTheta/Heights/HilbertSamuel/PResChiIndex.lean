@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsResChiIndex
+public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0038
 public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.ResSymGram
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.ResChiIndexLattice
+public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0055
 
 @[expose] public section
 

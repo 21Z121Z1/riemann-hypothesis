@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.SegmentRepresentation
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.JacquetMultiplicityPosOfSocle
+public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.Bundle0004
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0564
 
 @[expose] public section
 

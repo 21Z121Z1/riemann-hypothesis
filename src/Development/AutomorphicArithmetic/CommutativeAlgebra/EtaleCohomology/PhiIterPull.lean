@@ -1,8 +1,8 @@
 module
 
 public import Development.AutomorphicArithmetic.CommutativeAlgebra.EtaleCohomology.VecZero
-public import Development.AutomorphicArithmetic.CommutativeAlgebra.EtaleCohomology.SumTransportAlt
-public import Development.AutomorphicArithmetic.CommutativeAlgebra.EtaleCohomology.NatCastQb
+public import Development.AutomorphicArithmetic.CommutativeAlgebra.EtaleCohomology.Bundle0008
+public import Development.AutomorphicArithmetic.CommutativeAlgebra.EtaleCohomology.Bundle0005
 
 @[expose] public section
 

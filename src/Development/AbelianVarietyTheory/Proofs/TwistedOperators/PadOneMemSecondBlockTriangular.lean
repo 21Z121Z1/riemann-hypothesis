@@ -2,14 +2,14 @@ module
 
 public import Mathlib
 public import Formalism.LocalToGlobal.IndefiniteReal.SubgroupCharExtensionOneApply
-public import Formalism.LocalToGlobal.IndefiniteReal.DatumVec
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.WeilRepThetaDatumHalfEqSmul
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SchrodingerIntertwinerSchwartzBruhatIsTheta
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.MemCompletedHomLatticeIffFrameStabiliserAction
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.FrameMatrixMovedHomIntegralReduction
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.TypePlacesLocalDatumBlockTriangularLaw
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.TameHeckeIntegralUnitsEqResidueCharProduct
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.HeckeCharTrivialOnIdempotentIntegralUnits
+public import Formalism.LocalToGlobal.IndefiniteReal.Bundle0016
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0171
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0433
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0126
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0125
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0129
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0449
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0443
 public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.LevelHyperspecialTrivialCharacterSplitsOffPlaces
 
 @[expose] public section
@@ -366,7 +366,7 @@ theorem latO_bidual (hψ : IsStdChar D ψ (-1)) (hS : Submodule.IsFullLattice D.
   have hTf := GlobalTheory.PlaceModel.isSelfDualC_latFrame T
   have hSl := GlobalTheory.FinPl.PlacesAdeles.selfDual_isFull S _ hSf
   have hTl := GlobalTheory.FinPl.PlacesAdeles.selfDual_isFull T _ hTf
-  have hI := (GlobalTheory.T.self_dual_lattice_pairing_dual D ψ S T (GlobalTheory.PlaceModel.latFrame S) (GlobalTheory.PlaceModel.latFrame T) hψ hSf hTf).1
+  have hI := (_root_.GlobalTheory.LatVac.latO_selfDual_approx_sign D ψ S T (GlobalTheory.PlaceModel.latFrame S) (GlobalTheory.PlaceModel.latFrame T) hψ hSf hTf).1
   have hmap : ∀ u : WO S T, IsHalf a u → u.map (infPart D) = 0 := by
     intro u hu
     rw [← smul_eq_of_half hu]
@@ -505,7 +505,7 @@ theorem isTheta_placeModel (hψ : IsStdChar D ψ (-1)) (hS : Submodule.IsFullLat
   have hTf := GlobalTheory.PlaceModel.isSelfDualC_latFrame T
   have hSl := GlobalTheory.FinPl.PlacesAdeles.selfDual_isFull S _ hSf
   have hTl := GlobalTheory.FinPl.PlacesAdeles.selfDual_isFull T _ hTf
-  have hI := (GlobalTheory.T.self_dual_lattice_pairing_dual D ψ S T (GlobalTheory.PlaceModel.latFrame S) (GlobalTheory.PlaceModel.latFrame T) hψ hSf hTf).1
+  have hI := (_root_.GlobalTheory.LatVac.latO_selfDual_approx_sign D ψ S T (GlobalTheory.PlaceModel.latFrame S) (GlobalTheory.PlaceModel.latFrame T) hψ hSf hTf).1
   obtain ⟨M1, hM1, h1⟩ := exists_nsmul_latO (ΛS := ΛS) (ΛT := ΛT) (ΛS' := GlobalTheory.PlaceModel.latFrame S)
     (ΛT' := GlobalTheory.PlaceModel.latFrame T) hS.toIsLattice.fg hT.toIsLattice.fg hSl hTl
   have hTd := isPlaceModel_dualLat (ψ := ψ) hc hTm

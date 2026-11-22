@@ -3,7 +3,7 @@ module
 public import Mathlib
 public import Formalism.LocalToGlobal.GlobalTheory.GL3.PHfTrace
 public import Formalism.FrobeniusOrbits.FrobeniusOrbitsProofs.SplitK
-public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.IntegralClosureCriterionSecond
+public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0077
 
 @[expose] public section
 

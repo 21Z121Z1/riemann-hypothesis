@@ -1,11 +1,11 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.BlockTheory.ThetaLiftGeometry.BadPrimesPeriodBound
-public import Development.AbelianVarietyTheory.BlockTheory.GlobalSignature.InterlacingEquivariance
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExistsMulAddEqOneOfNotMem
+public import Development.AbelianVarietyTheory.BlockTheory.ThetaLiftGeometry.Bundle0005
+public import Development.AbelianVarietyTheory.BlockTheory.GlobalSignature.Bundle0009
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0130
 public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.TransportedWeylLatticeHermitianDuality
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ActPMemLocPDelStdOfIsBasisAt
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0211
 public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.InvSmulMemOfRedL
 
 @[expose] public section

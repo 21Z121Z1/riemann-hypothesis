@@ -2,7 +2,7 @@ module
 
 public import Formalism.HermitianCurvature.BesselNonvanishingReduction
 public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.HighestWeightUniqueness.FrameInvMulVecNegativeVector
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.BesselNeZeroOfCyclicOrbit
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0033
 
 @[expose] public section
 

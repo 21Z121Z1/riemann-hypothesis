@@ -3,7 +3,7 @@ module
 public import Mathlib
 public import GroundTheory.AutomorphicForms.AutomorphicFormSpaces.GKStructure
 public import GroundTheory.AutomorphicForms.GKModules.Casimir
-public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.DcAevalIntertwineAlt
+public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0011
 
 @[expose] public section
 

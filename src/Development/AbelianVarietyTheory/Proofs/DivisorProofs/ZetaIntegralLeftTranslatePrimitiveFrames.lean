@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BlockV
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PrimitiveFrameDatumZetaIntegralEqSmaller
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FinsumVolShellInterTranslate
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1678
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1636
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1710
 
 @[expose] public section
 

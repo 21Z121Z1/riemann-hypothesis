@@ -1,7 +1,7 @@
 module
 
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.SquareIntegrability.SplitC
-public import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.TransferenceMinima
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.SquareIntegrability.Bundle0015
+public import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.Bundle0015
 
 @[expose] public section
 

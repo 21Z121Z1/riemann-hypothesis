@@ -1,6 +1,6 @@
 module
 
-public import Formalism.SharpRestriction.LevelLetterCocycles.LemmaGsOfLemGAB
+public import Formalism.SharpRestriction.LevelLetterCocycles.Bundle0016
 public import Formalism.SharpRestriction.LevelLetterCocycles.RelayGeneralCaseOfAdmissible
 public import Formalism.SharpRestriction.LevelLetterCocycles.BaseChangePreservesUnitaryOf
 

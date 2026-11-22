@@ -1,6 +1,6 @@
 module
 
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsPlaceRep
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1182
 
 @[expose] public section
 

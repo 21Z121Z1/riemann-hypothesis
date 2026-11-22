@@ -1,10 +1,10 @@
 module
 
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.WeakShimuraTheory.NearSplit
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.GaloisLibrary.SelmerTransport.PrincZl
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.GaloisLibrary.LocalRingsCompletion.DvrIntClosure
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.GaloisLibrary.SelmerTransport.Bundle0008
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.GaloisLibrary.LocalRingsCompletion.Bundle0001
 public import Mathlib.NumberTheory.Padics.AddChar
-public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.ReducedCoefficients
+public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0076
 
 @[expose] public section
 

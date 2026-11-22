@@ -1,11 +1,11 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Proofs.GlobalProofs.IsAdaptedEmpty
+public import Development.AutomorphicSpectrum.Proofs.GlobalProofs.Bundle0052
 public import Development.AutomorphicSpectrum.Proofs.GlobalProofs.LeviNormalizesUnipotentVariant
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.EmbRelAtRealPlaceOfUnitaryEmbedding
-public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.FiniteDimensionalCoeffSpan
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsContinuousAdelicUnitaryEmbedding
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0429
+public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.Bundle0005
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0162
 public import GroundTheory.LocalFields.CompleteTrivialLocal
 
 @[expose] public section

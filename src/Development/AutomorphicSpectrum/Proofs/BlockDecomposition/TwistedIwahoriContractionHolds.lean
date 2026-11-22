@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Development.WeilBound.RepresentationTheoryGL.TwistedFactors.IntegralUnitBaseChange.Development
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.UnramifiedExtensionIntegralBasis
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0070
 public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IwahoriFactorization
 
 @[expose] public section

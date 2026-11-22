@@ -1,10 +1,10 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.MatrixOfBesselTwoSidedAction
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.SmoothVectorsDenseInvariantStatement
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.EquivariantSubspace
-public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.AdjointInverseTranslate.AnaHpartUnique
+public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.Bundle0006
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0242
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0140
+public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.AdjointInverseTranslate.Bundle0001
 public import Formalism.FormalDegreeBessel.FormalDegreeRatio.GBasic
 
 @[expose] public section
@@ -129,11 +129,11 @@ variable [CompleteSpace H]
 
 theorem sm_translate {σ : Mat k r → (H →L[ℂ] H)} (hσ : IsURepOn (GG k r) σ) {v : H} (hv : IsSmoothVec σ v)
     {g : Mat k r} (hg : g ∈ GG k r) : IsSmoothVec σ (σ g v) := by
-  exact ((GlobalTheory.T.smooth_vectors_dense_invariant k r σ v hσ).2.2.2.1 v hv).1 g hg
+  exact ((_root_.GlobalTheory.SgInfDD.DD_stable_dense k r σ v hσ).2.2.2.1 v hv).1 g hg
 
 theorem sm_dsig {σ : Mat k r → (H →L[ℂ] H)} (hσ : IsURepOn (GG k r) σ) {v : H} (hv : IsSmoothVec σ v)
     {Y : Mat k r} (hY : InLieHpk k r Y) : IsSmoothVec σ (dsig σ Y v) := by
-  exact (((GlobalTheory.T.smooth_vectors_dense_invariant k r σ v hσ).2.2.2.1 v hv).2 Y hY).1
+  exact (((_root_.GlobalTheory.SgInfDD.DD_stable_dense k r σ v hσ).2.2.2.1 v hv).2 Y hY).1
 
 
 omit [CompleteSpace H] in

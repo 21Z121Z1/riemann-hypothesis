@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisGeometry₂.HoweUnram
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.MemIntMat
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0113
 
 @[expose] public section
 

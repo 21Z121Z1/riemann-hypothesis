@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.ResolutionOfSingularities.EmbeddedResolution.DerivativeIdeal.IdealOrder
+public import Development.ResolutionOfSingularities.EmbeddedResolution.DerivativeIdeal.Bundle0001
 public import Development.ResolutionOfSingularities.EmbeddedResolution.DerivativeIdeal.MultiIndexDerivation
 public import Development.ResolutionOfSingularities.EmbeddedResolution.DerivativeIdeal.DerivativeIdealOrderDecrease
 

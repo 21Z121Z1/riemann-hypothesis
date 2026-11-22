@@ -2,9 +2,9 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.EndOmega
-public import Formalism.LocalToGlobal.TorsionIntegrality.EisensteinTranslationProducts.TranslateProduct
-public import Formalism.LocalToGlobal.TorsionIntegrality.TorsionTranslationPowers.StatementC
-public import Formalism.LocalToGlobal.TorsionIntegrality.GaussSumParity.StatementK
+public import Formalism.LocalToGlobal.TorsionIntegrality.EisensteinTranslationProducts.Bundle0002
+public import Formalism.LocalToGlobal.TorsionIntegrality.TorsionTranslationPowers.Bundle0002
+public import Formalism.LocalToGlobal.TorsionIntegrality.GaussSumParity.Bundle0001
 public import Formalism.LocalToGlobal.TorsionIntegrality.EisensteinTranslationProducts.MulStableIntegral
 
 @[expose] public section

@@ -1,7 +1,7 @@
 module
 
 public import Development.AutomorphicArithmetic.CupPullbacks.ConstCompSingle
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EtaleMemIffPointsStatement
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0341
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RestrPreservesHomology
 
 @[expose] public section

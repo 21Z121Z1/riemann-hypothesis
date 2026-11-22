@@ -1,10 +1,8 @@
 module
 
 public import Formalism.SharpRestriction.LevelLetterCocycles.QuotientImageDivisibility.InIZero
-public import Formalism.SharpRestriction.LevelLetterCocycles.QuotientImageDivisibility.H2Bound
-public import Formalism.SharpRestriction.LevelLetterCocycles.QuotientImageDivisibility.ContentBoundLevel
+public import Formalism.SharpRestriction.LevelLetterCocycles.QuotientImageDivisibility.Bundle0004
 public import Formalism.SharpRestriction.LevelLetterCocycles.QuotientImageDivisibility.RkFilLevEq
-public import Formalism.SharpRestriction.LevelLetterCocycles.QuotientImageDivisibility.LemmaDN0
 
 @[expose] public section
 

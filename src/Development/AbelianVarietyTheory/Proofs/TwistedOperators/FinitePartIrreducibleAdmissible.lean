@@ -1,28 +1,25 @@
 module
 
-public import Development.AbelianVarietyTheory.PublishedTheorems.DiscreteSeriesUnitary₂.DiscreteSeriesClassificationIff
-public import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.CuspidalNoRadicalFixed
-public import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.ConstantTermVanishing
-public import Development.AbelianVarietyTheory.Definitions.Divisors.HasTypeVec
-public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.ExistsNormLeHeightPow
-public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.HarishChandraFinite
-public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.CuspDiscreteDecompositionOfTraceClass
-public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.IsClosedEmbeddingOfLocallyCompact
-public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.ExistsFactorisationCuspidal
-public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.PseudoCoefficientUpqTrivial
-public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.DiscreteSeriesCharacter
-public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.LanglandsClassification
-public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.LabesseWaldspurger
+public import Development.AbelianVarietyTheory.PublishedTheorems.DiscreteSeriesUnitary₂.Bundle0001
+public import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.Bundle0022
+public import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.Bundle0020
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0040
+public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.Bundle0007
+public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.Bundle0004
+public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.Bundle0012
+public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.Bundle0007
+public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.Bundle0013
+public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.Bundle0008
 public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.ExistsCellOfIsSubquotient
 public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.RadfordShufflePolynomialHolds
-public import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.PseudoCoefficientSeparation
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.AdelicUnitaryClosureLocalComponentsOpen
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FiniteDimensionalFixed
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IrreducibleUnitaryRepEqFiniteSmoothPartTensorDisStatement
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.FactorisableRestrictedTensorLevelStatement
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.DiscreteSeriesFactorLocalStableStatement
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsFinsetSumTranslatesFixedCompactSubgroupStatement
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SpanValuesDenseFinitePartSubrepStatement
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0130
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1105
+public import Mathlib
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0303
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0277
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.DiscreteSeriesFactorLocalStable
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0286
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0284
 
 @[expose] public section
 
@@ -116,14 +113,14 @@ theorem admissible (hF : GlobalTheory.Published.FlathFactorisation) (hπ : IsIrr
     exact congrArg Subtype.val (mem_fixed_iff.1 hw k (by rw [hKpeq v hv.2]; exact hk))
   obtain ⟨X, hX⟩ : ∃ X : Submodule ℂ H,
       X = (Submodule.span ℂ {z | ∃ y, Restr ξ y ∧ (∀ v, y (.inr v) ∈ Q v) ∧ z = B y}).topologicalClosure := ⟨_, rfl⟩
-  haveI : FiniteDimensional ℂ (homDS M π X) := hX ▸ GlobalTheory.T.finiteDimensional_homDS_closure_span_restricted D V S M H π hπ hD R ξ B hR.1 Q hQfin hQev
+  haveI : FiniteDimensional ℂ (homDS M π X) := hX ▸ _root_.GlobalTheory.PureDS.finiteDimensional_homDS_closure_span D V S M H π hπ hD R ξ B hR.1 Q hQfin hQev
   have hval0 : ∀ Φ0 : ContinuousMultilinearMap ℂ M.H H, Φ0 ∈ homDS M π ⊤ →
       (∀ v, ∀ k ∈ Kp v, ∀ y, π (emb D.sp.cm.sig V.gram v k) (Φ0 y) = Φ0 y) → Φ0 ∈ homDS M π X := by
     intro Φ0 hΦ0m hfx
     refine ⟨fun y => ?_, hΦ0m.2⟩
     have hev : ∀ᶠ v in Filter.cofinite, ∀ k ∈ Kp v, (R (.inr v)).π k (ξ (.inr v)) = ξ (.inr v) :=
       (hR.1.eventually_fixed (frameLat V)).mono fun v hv k hk => hv k hk.2
-    have hx := GlobalTheory.T.factorisable_restricted_tensor_level D.sp.cm.sig V.rank V.gram H π hπ R ξ B hR.1 Kp hev (Φ0 y) (fun v k hk => hfx v k hk y)
+    have hx := _root_.GlobalTheory.FixedSpan.mem_closure_span_fixed D.sp.cm.sig V.rank V.gram H π hπ R ξ B hR.1 Kp hev (Φ0 y) (fun v k hk => hfx v k hk y)
     have hsub : {z | ∃ y, Restr ξ y ∧ (∀ v, ∀ k ∈ Kp v, (R (.inr v)).π k (y (.inr v)) = y (.inr v)) ∧ z = B y} ⊆
         {z | ∃ y, Restr ξ y ∧ (∀ v, y (.inr v) ∈ Q v) ∧ z = B y} := by
       rintro _ ⟨y', hy', hfix, rfl⟩
@@ -173,7 +170,7 @@ theorem irreducible [CompleteSpace H] (hπ : IsIrrUnitary π) (hD : HasDSComp M 
     exact inner_eq_bePi (fun τ => isIrrUnitary_dsRep M τ) hunit (Φ : homDS M π ⊤).2 (Φ' : homDS M π ⊤).2 y y'
 
   have hne : ∃ w : smoothPart (finPartDS M hU), w ≠ 0 := by
-    obtain ⟨T, -, -, hTd⟩ := GlobalTheory.T.irreducibleUnitaryRep_eq_finiteSmoothPart_tensor_discreteSeries D V S M H π hπ hD hU
+    obtain ⟨T, -, -, hTd⟩ := _root_.GlobalTheory.TrCopy.isCopyFinDS_finPartDSSm D V S M H π hπ hD hU
     by_contra hc
     push_neg at hc
     have h0 : Submodule.span ℂ {v | ∃ w y, v = T w y} = ⊥ := by
@@ -193,7 +190,7 @@ theorem irreducible [CompleteSpace H] (hπ : IsIrrUnitary π) (hD : HasDSComp M 
   by_cases hN : N = ⊥
   · exact Or.inl hN
   refine Or.inr (Subrepresentation.toSubmodule_injective (eq_top_iff.2 fun Φ _ => ?_))
-  have hdense := GlobalTheory.T.span_values_dense_finitePartSubrep D V S M H π hπ hU N hN
+  have hdense := _root_.GlobalTheory.TrFinDense.span_values_dense D V S M H π hπ hU N hN
   obtain ⟨K0, hK0o, hK0c⟩ := GlobalTheory.CuspDec.exists_compact_open V
   have hΦo : IsOpen ((stabGroup (finPartDSSm M hU) Φ : Subgroup (GfC V)) : Set (GfC V)) := by
     have e : {g : GfC V | finPartDSSm M hU g Φ = Φ} = {g | finPartDS M hU g Φ = Φ} :=

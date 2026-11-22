@@ -4,12 +4,12 @@ public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.PredMemGamRanks
 public import Formalism.LocalToGlobal.Divisibility.FramesLemmas
 public import Formalism.LocalToGlobal.Columns.CoefficientsModP.PairingNondegenerateHolds
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.HasRatBasisOfAct
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.CoefActionReprMemSubfield
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.NablaDeltaOperatorLatticePreserved
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.DualLatticeIsLatticeAndHermitianDual
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0067
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0049
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0265
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0212
 public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.LatticeExtensionAlongFieldEmbeddingDuals
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsNeZeroSmulMemAlt
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0008
 
 @[expose] public section
 

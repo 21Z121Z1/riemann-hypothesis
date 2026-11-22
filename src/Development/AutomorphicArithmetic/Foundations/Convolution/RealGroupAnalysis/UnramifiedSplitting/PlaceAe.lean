@@ -1,10 +1,10 @@
 module
 
 public import Development.AutomorphicArithmetic.Foundations.Convolution.RealGroupAnalysis.UnramifiedSplitting.SplitAt
-public import Development.AutomorphicArithmetic.Foundations.Convolution.RealGroupAnalysis.UnramifiedSplitting.SgLaws
+public import Development.AutomorphicArithmetic.Foundations.Convolution.RealGroupAnalysis.UnramifiedSplitting.Bundle0001
 public import GroundTheory.GlobalFields.SemilocalAlgebras.LocalDegree
-public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.ExistsTwoPlacesOverOfIsSquareLocal
-public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.IsSquareOneAddFourMul
+public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.Bundle0024
+public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0116
 
 @[expose] public section
 

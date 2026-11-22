@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.BlockTheory.GlobalSignature.AdelicUnitaryHaarMeasure
+public import Development.AbelianVarietyTheory.BlockTheory.GlobalSignature.Bundle0002
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsMulRightInvariantHaarAdelicUnitaryGroupHermiti
-public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.HermitianFormFiniteZerosOnLineCmExt
+public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0015
 
 @[expose] public section
 

@@ -1,13 +1,13 @@
 module
 
 public import Formalism.SharpRestriction.GrowthBounds.ChartRank.HypRankGe
-public import Formalism.LocalToGlobal.GroupLattices.ComparisonMaps.MRatSpanOfRatInv
-public import Formalism.SharpRestriction.GrowthBounds.MultisetValuation.LowestInvariantLeDelta
-public import Formalism.LocalToGlobal.GroupLattices.ComparisonMaps.ProdMemSpan
-public import Formalism.GradedWeylDivisibility.FockSpaceTableaux.LBidetLemmas
+public import Formalism.LocalToGlobal.GroupLattices.ComparisonMaps.Bundle0008
+public import Formalism.SharpRestriction.GrowthBounds.MultisetValuation.Bundle0009
+public import Formalism.LocalToGlobal.GroupLattices.ComparisonMaps.Bundle0004
+public import Formalism.GradedWeylDivisibility.FockSpaceTableaux.Bundle0001
 public import Formalism.SharpRestriction.GrowthBounds.UnramifiedQuadraticSetting
 public import Formalism.LocalToGlobal.GroupLattices.ComparisonMaps.CastGLSymmBc
-public import Formalism.LocalToGlobal.GroupLattices.ComparisonMaps.NatActRVtupR
+public import Formalism.LocalToGlobal.GroupLattices.ComparisonMaps.Bundle0003
 
 @[expose] public section
 

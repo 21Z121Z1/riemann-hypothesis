@@ -1,9 +1,9 @@
 module
 
-public import ReciprocityTheory.DualLattices.CotangentSurjective
-public import ReciprocityTheory.DualLattices.HtLinStatement
-public import ReciprocityTheory.DualLattices.NsetExpInjectiveSurjective
-public import ReciprocityTheory.DualLattices.SmallLevelClassSet
+public import ReciprocityTheory.DualLattices.Bundle0004
+public import ReciprocityTheory.DualLattices.Bundle0021
+public import ReciprocityTheory.DualLattices.Bundle0020
+public import ReciprocityTheory.DualLattices.Bundle0001
 
 @[expose] public section
 

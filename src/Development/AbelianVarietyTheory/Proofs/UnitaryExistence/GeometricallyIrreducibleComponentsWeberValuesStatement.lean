@@ -1,12 +1,12 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.GeometricallyIrreducibleComponentsWeberValues
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0110
 public import Development.AbelianVarietyTheory.Definitions.HeightFunctions.XiValIffXiAt
-public import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.LFunctionPositiveConductorFourEight
+public import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.Bundle0002
 public import Development.AbelianVarietyTheory.PublishedTheorems.WeberRayClassFields.WeberRayFieldSt
 public import Formalism.LocalToGlobal.UnitaryNorms.MemFIffReal
-public import Formalism.LocalToGlobal.ProjectiveLattices.HasDataCondition
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0028
 
 @[expose] public section
 

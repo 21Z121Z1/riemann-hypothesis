@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Formalism.PairingDivisors.StatementA
+public import Formalism.PairingDivisors.Bundle0001
 public import Development.AbelianVarietyTheory.Definitions.Divisors.IsFinSetSplitPlacesCoprimeConductor
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ValIotaLeOfMem
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0459
 
 @[expose] public section
 

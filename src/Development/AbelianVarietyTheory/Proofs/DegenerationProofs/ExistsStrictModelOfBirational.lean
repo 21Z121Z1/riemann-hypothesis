@@ -6,10 +6,10 @@ public import Development.AbelianVarietyTheory.Definitions.AbelianSchemeLaws.Fir
 public import Development.AbelianVarietyTheory.Definitions.Degenerations.OfDerivationFnOn
 public import Development.AbelianVarietyTheory.Definitions.Degenerations.PlOrdSomeOfAssociated
 public import Development.AbelianVarietyTheory.Statements.SemistableTorsion.SemistableFin
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.GeometricallyIntegralOfIsIntegralOfIsAlgClosed
-public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ModelMapGenericallyOpenImmersionCalculusStatement
-public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ProdIrrAndWeakNeronStatement
-public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.EqOnPoints
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0028
+public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ModelMapGenericallyOpenImmersionCalculus
+public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.Bundle0025
+public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.Bundle0002
 public meta import Lean.Elab.Command
 
 @[expose] public section
@@ -376,8 +376,8 @@ open StrictLaw
 
 theorem exists_strict_le : ∀ (R K : Type) [CommRing R] [IsDomain R] [IsLocalRing R] [Field K] [Algebra R K], SH R K → ∀ (A : Over (Sp K)) [GrpObj A] [IsCommMonObj A], IsAbelianScheme A → ∀ M : Model R A, BirLaw M → ∃ N : Model R A, Strict N ∧ N.Le M := by
   intro R K _ _ _ _ _ hSH A _ _ _ M ⟨hM, hs, hι⟩
-  obtain ⟨gLe, gComp, gIso, gProd, gBr⟩ := GlobalTheory.T.modelMapGenericallyOpenImmersion_calculus R K hSH
-  have hMM := (GlobalTheory.T.prod_irr_and_weakNeron' R K hSH A A).1 M M hM hM
+  obtain ⟨gLe, gComp, gIso, gProd, gBr⟩ := _root_.GlobalTheory.SS.GI.genIso_calculus R K hSH
+  have hMM := (_root_.GlobalTheory.SS.prod_irr_and_weakNeron R K hSH A A).1 M M hM hM
   obtain ⟨hdvr, -, hac, hfr⟩ := hSH
   have hβ := (gBr A A A M M M hM hM hM).2
   have ht : GenIso (M.prod M) (M.prod M) (coshear A true) :=

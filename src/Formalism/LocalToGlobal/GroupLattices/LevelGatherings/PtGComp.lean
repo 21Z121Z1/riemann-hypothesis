@@ -1,7 +1,7 @@
 module
 
 public import Formalism.LocalToGlobal.GroupLattices.LevelGatherings.JPMemAwayP
-public import Formalism.LocalToGlobal.GroupLattices.LevelGatherings.RepTie
+public import Formalism.LocalToGlobal.GroupLattices.LevelGatherings.Bundle0004
 
 @[expose] public section
 

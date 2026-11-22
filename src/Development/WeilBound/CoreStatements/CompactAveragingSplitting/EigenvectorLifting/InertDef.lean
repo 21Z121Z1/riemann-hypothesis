@@ -1,7 +1,7 @@
 module
 
 public import Development.WeilBound.CoreStatements.CompactAveragingSplitting.EigenvectorLifting.FinSplit
-public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.ComplementaryThetaInert
+public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.Bundle0011
 
 @[expose] public section
 

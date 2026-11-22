@@ -1,10 +1,10 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ThetaPartD
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsBoundUnitary
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SecondOnCommonRangeOfSecond
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ContinuousHermPart
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0471
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0827
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0272
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0461
 
 @[expose] public section
 
@@ -266,7 +266,7 @@ theorem sdHerm_map {ψ : AddChar (AF D.host.F) ℂ} (hψ : IsCharAF D.host.F ψ)
   have ht : Continuous (Algebra.trace (AF D.host.F) (AE D)) :=
     IsModuleTopology.continuous_of_linearMap (Algebra.trace (AF D.host.F) (AE D))
   have hsd : SelfDual lam (pairH ψ) := by
-    refine GlobalTheory.T.selfDual_of_fundamentalDomain_volume_eq_one _ (ratHerm D r) K hK hKc _ (fun y => ?_) (fun x y => ?_) (fun x x' y => ?_) (fun x y => hψ.2.1 _)
+    refine _root_.GlobalTheory.CovolumeOneSelfDual.selfDual_of_covolume_one _ (ratHerm D r) K hK hKc _ (fun y => ?_) (fun x y => ?_) (fun x x' y => ?_) (fun x y => hψ.2.1 _)
       h1 h2 lam 𝓖 hl.1 hl.2.1 hl.2.2
     · unfold trF
       exact hψ.1.comp (continuous_const.mul (ht.comp

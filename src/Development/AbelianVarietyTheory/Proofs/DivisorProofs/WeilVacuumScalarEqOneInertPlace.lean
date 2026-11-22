@@ -2,14 +2,14 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.WeilTensorModels
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.OneMemKAt
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FromBlocksMem
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsComplementaryAdelicSchwartzRestFunction
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LatAtVAtStable
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.InertPlaceDoubledFirstFactorMemSiegelClosureStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DoubledWeilRepFixesVacuumTensorSiegelParabolicInStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DoubledWeilRepFixesIntegralUnipotentInertPlaceStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.StarMemAdelicSchwartzSpaceNumberFieldStatement
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1227
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1243
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1665
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1531
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1729
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2051
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2239
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1281
 
 @[expose] public section
 
@@ -32,7 +32,7 @@ theorem scalar_eq_one : ∀ (F E : Type) [Field F] [NumberField F] [Field E] [Nu
   have hRv := hR _ hSB
   set Ψ := tens (evFin F v) (G.M'.vac v) R with hΨdef
   have hΨ : Ψ ∈ schA F _ := hRv.2
-  have hΨ' : (fun x => star (Ψ x)) ∈ schA F _ := GlobalTheory.T.star_mem_adelicSchwartzSpaceNumberField F _ Ψ hΨ
+  have hΨ' : (fun x => star (Ψ x)) ∈ schA F _ := _root_.GlobalTheory.SchAConj.star_mem_schA F _ Ψ hΨ
 
   let H : Subgroup (GlobalTheory.InertDbl.UD σ G.W) :=
     { carrier := {g | omd g (GlobalTheory.InertDbl.dblFun Ψ) = GlobalTheory.InertDbl.dblFun Ψ}

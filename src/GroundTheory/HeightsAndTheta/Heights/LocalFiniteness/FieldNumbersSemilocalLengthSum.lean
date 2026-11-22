@@ -1,11 +1,11 @@
 module
 
-public import GroundTheory.HeightsAndTheta.Heights.LocalFiniteness.FieldNumbersLocalIntegralClosureFinite
-public import GroundTheory.HeightsAndTheta.Heights.LocalFiniteness.HilbertSamuelIrreducibleBasicOpenConnected
-public import GroundTheory.HeightsAndTheta.Heights.LocalFiniteness.FieldNumbersSemilocalMaxIdeals
-public import GroundTheory.HeightsAndTheta.Heights.FieldsOfNumbers.PFibreFinite
-public import GroundTheory.HeightsAndTheta.Heights.FieldsOfNumbers.PFiniteAlgebraLengthSum
-public import GroundTheory.HeightsAndTheta.Heights.FieldsOfNumbers.PSemilocalLengthSum
+public import GroundTheory.HeightsAndTheta.Heights.LocalFiniteness.Bundle0002
+public import GroundTheory.HeightsAndTheta.Heights.LocalFiniteness.Bundle0004
+public import GroundTheory.HeightsAndTheta.Heights.LocalFiniteness.Bundle0006
+public import GroundTheory.HeightsAndTheta.Heights.FieldsOfNumbers.Bundle0017
+public import GroundTheory.HeightsAndTheta.Heights.FieldsOfNumbers.Bundle0002
+public import GroundTheory.HeightsAndTheta.Heights.FieldsOfNumbers.Bundle0022
 
 @[expose] public section
 

@@ -1,9 +1,7 @@
 module
 
 public import Mathlib
-public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.ExponentialTriangular.ExpTriOf
-public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.ExponentialTriangular.SpecExists
-public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.ExponentialTriangular.PsumEqRange
+public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.ExponentialTriangular.Bundle0001
 
 @[expose] public section
 

@@ -1,13 +1,13 @@
 module
 
 public import Mathlib
-public import Development.WeilBound.ThetaLifts.Reductions.WeilPairs.SplitPlaceSiegelLawDiagonalLagrangianCharacterIm
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SplitPlaceThetaFunctionVacuumConjugatePlace
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ContinuousPlaceAt
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsCompactShellNsmul
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RationalMatricesDiscreteCocompactAdelicMatrixSpa
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EqZeroOfTraceMul
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdelicSymplecticTraceFormAlternatingSwap
+public import Development.WeilBound.ThetaLifts.Reductions.WeilPairs.Bundle0003
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1718
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1094
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1098
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1043
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1681
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1018
 
 @[expose] public section
 

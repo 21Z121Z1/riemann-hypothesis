@@ -2,10 +2,10 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.LatAtLattice
-public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.JEvExists
+public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.Bundle0012
 public import Formalism.LocalToGlobal.IndefiniteReal.ZeroPartEigenvalueConvention
 public import Lean
-public import Development.AbelianVarietyTheory.Proofs.HeightProofs.HaarUpqEqOfOmegaDensity
+public import Development.AbelianVarietyTheory.Proofs.HeightProofs.Bundle0019
 
 @[expose] public section
 

@@ -2,14 +2,13 @@ module
 
 public import Mathlib
 public import Formalism.LocalToGlobal.IndefiniteReal.FWExist
-public import Formalism.LocalToGlobal.IndefiniteReal.RhoGeo
-public import Formalism.LocalToGlobal.ProjectiveLattices.CuspFormsFiniteDimensionalOf
-public import Formalism.LocalToGlobal.ProjectiveLattices.ThProps
-public import Formalism.LocalToGlobal.ProjectiveLattices.FreeBridge
-public import Formalism.LocalToGlobal.UnitaryNorms.CharUniq
+public import Formalism.LocalToGlobal.IndefiniteReal.Bundle0027
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0024
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0011
+public import Formalism.LocalToGlobal.UnitaryNorms.Bundle0005
 public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.LevelHyperspecialTrivialCharacterSplitsOffPlaces
 public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsHalfOfBasePins
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.CompletedLatticeEqAdelicCompletionAndGram
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0070
 
 @[expose] public section
 

@@ -1,8 +1,8 @@
 module
 
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.ConvexNerveComplexes.AcycSimp
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.HermiteNormalForms.Imports
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.HermiteNormalForms.Faceexact
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.HermiteNormalForms.Bundle0005
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.HermiteNormalForms.Bundle0002
 
 @[expose] public section
 

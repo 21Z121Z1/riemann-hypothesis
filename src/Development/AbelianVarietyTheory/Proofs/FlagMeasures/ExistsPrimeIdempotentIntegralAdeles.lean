@@ -5,8 +5,8 @@ public import Formalism.SharpRestriction.CuspSpanNormBounds.GlobAut
 public import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Afsplit
 public import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.CsDual
 public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.ExistsReduction
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsUniqueAlgEquivOfCompatibleQuotient
-public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.IsAdicCompleteAndCardQuotientAdicCompletionInteg
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0005
+public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.Bundle0025
 
 @[expose] public section
 

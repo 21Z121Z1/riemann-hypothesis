@@ -1,6 +1,6 @@
 module
 
-public import Formalism.GaussJetBounds.StatementJ
+public import Formalism.GaussJetBounds.Bundle0002
 public import Formalism.GaussJetBounds.GaussJetProofs.ThmAOp
 
 @[expose] public section

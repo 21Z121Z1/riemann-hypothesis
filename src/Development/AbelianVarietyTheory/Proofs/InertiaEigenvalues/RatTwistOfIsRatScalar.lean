@@ -3,11 +3,11 @@ module
 public import Mathlib
 public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.DeltaPrimeIsAuxiliarySplitSquarefreeLevel
 public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsAuxiliarySquarefreeLevelTwistPlaces
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ChangeOfSplittingPair
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.TwistingCharacterAdmissibleGaloisTwistGood
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsWeilDatumPowersUnramifiedEtaTilde
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.NatCastMemConj
-public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.SeriesRatSOf
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0684
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0849
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1220
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0835
+public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.Bundle0024
 public import Development.AbelianVarietyTheory.Definitions.Divisors.LevelOfOfSameBut
 public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.ExistsUniqueHcharOfFiniteOrder
 public import Development.AbelianVarietyTheory.PublishedTheorems.PublishedFoundations.NonemptyAlgHomOfIsRayOfDvd
@@ -118,7 +118,7 @@ theorem exists_coef_sum : ∀ (D : D7) (Γ : Type) [Group Γ] [Fintype Γ] (Pl0 
   obtain ⟨m, o, φ, hsum⟩ := Submodule.mem_span_set'.1 hP2
   choose G _ hG using fun t => (φ t).2
   choose v hv1 hv2 using fun t => UnivRat.exists_vec_of_small j hBo.lam (G t)
-  refine ⟨m, fun t => o t, v, fun t => (o t).2, hv1, sub_eq_zero.1 (GlobalTheory.T.harmonic_polynomial_eq_zero_of_function D _ _ (ρ.B i j b).w (ρ.B i j b).F.BS hB.wt hm _
+  refine ⟨m, fun t => o t, v, fun t => (o t).2, hv1, sub_eq_zero.1 (_root_.GlobalTheory.ExportSeries.HarmInj.harm_inj D _ _ (ρ.B i j b).w (ρ.B i j b).F.BS hB.wt hm _
     (sub_mem (Submodule.smul_mem _ _ hP1) (sum_mem fun t _ => Submodule.smul_mem _ _
       (BaseRat.ioP_mem_valSpace hcore hio hv hB hBo hu _))) ?_)⟩
   set_option synthInstance.maxHeartbeats 100000 in

@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.PGraphClosedLocal
+public import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.Bundle0019
 
 @[expose] public section
 

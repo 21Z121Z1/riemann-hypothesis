@@ -1,19 +1,18 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Statements.GeometryStatements.ThmFlatA
-public import Development.AutomorphicSpectrum.Statements.GeometryStatements.FlatLineGenerator
-public import Development.AutomorphicSpectrum.Statements.GeometryStatements.CardComapMulFinsumEqFinsumFibres
+public import Development.AutomorphicSpectrum.Statements.GeometryStatements.Bundle0004
+public import Development.AutomorphicSpectrum.Statements.GeometryStatements.Bundle0007
 public import Development.AutomorphicSpectrum.Statements.GeometryStatements.FinConstFor
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.EigenFrameFieldExtension
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.EigenFrameIffEigenspaceBasis
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LieModelFiniteBaseChange
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LieModelExistsUniqueEquiv
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LieModelPushAlongMap
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.AbelianTripleSpreadsOut
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0140
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0081
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0116
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0014
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0096
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0246
 public import Development.AutomorphicSpectrum.Proofs.AdelicProofs.PadicEmbeddingDiscreteValuationRing
-public import Development.WeilBound.CoreStatements.SesquilinearFractions.NBasic
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.SabPull
+public import Development.WeilBound.CoreStatements.SesquilinearFractions.Bundle0001
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.Bundle0007
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.LawsProved
 
 @[expose] public section
@@ -86,7 +85,7 @@ theorem lie_lift {S : Scheme.{0}} {G : Over S} [GrpObj G] [IsCommMonObj G] [Smoo
       (Function.Injective g → Function.Injective b) := by
   letI := g.toAlgebra
   subst hx
-  obtain ⟨T, _, _, _, _, M'', j, hl, hj⟩ := GlobalTheory.T.exists_lie_model_base_change S G R R' x V M
+  obtain ⟨T, _, _, _, _, M'', j, hl, hj⟩ := _root_.GlobalTheory.CompanionTheory.Ar.FlagFib.lieModel_liftBaseChange S G R R' x V M
   obtain ⟨f, hf, -⟩ := lieModel_existsUnique_equiv S G R' _ T V' M'' M'
   refine ⟨f.toLinearMap.toAddMonoidHom.comp j.toAddMonoidHom, fun e => ?_, fun c e => ?_, ?_, fun hg => ?_⟩
   · have := hl e

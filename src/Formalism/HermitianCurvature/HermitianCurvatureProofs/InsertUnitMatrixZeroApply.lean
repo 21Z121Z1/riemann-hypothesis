@@ -1,6 +1,6 @@
 module
 
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.PrStarFst
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0061
 public import Formalism.HermitianCurvature.HermitianCurvatureProofs.LevelsOfBuiltSetting
 
 @[expose] public section

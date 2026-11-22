@@ -2,9 +2,9 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.IsFinEmb
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.RationalUnitaryPointsDiscreteFundamentalDomain
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0273
 public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.AutPointLatticeIntersectionSelfDualProperties
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsUnitaryMulVecEqOfFormEqStatement
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0006
 
 @[expose] public section
 
@@ -220,7 +220,7 @@ theorem gaussSum_cosets : ∀ (I : AutInst) (s : Bool) (x : Fin I.n → I.E), st
   have hW : ∀ y : {y : Fin I.n → I.E // star y ⬝ᵥ (I.J *ᵥ y) = sgn I.E s}, ∃ δ : GL (Fin I.n) I.E,
       δ ∈ Formalism.UG.UJ (starRingEnd I.E) I.J ∧ (δ : Matrix (Fin I.n) (Fin I.n) I.E) *ᵥ x = y.1 := by
     intro y
-    obtain ⟨m, hm, hmx⟩ := GlobalTheory.T.exists_unitary_mulVec_eq_of_form_eq' I.E I.n I.J hJ I.J_det x y.1 (hx.trans y.2.symm) hne
+    obtain ⟨m, hm, hmx⟩ := _root_.GlobalTheory.exists_unitary_mulVec_eq_of_form_eq I.E I.n I.J hJ I.J_det x y.1 (hx.trans y.2.symm) hne
     have hdet : IsUnit m.det := by
       have hd := congrArg Matrix.det hm
       rw [Matrix.det_mul, Matrix.det_mul, Matrix.det_conjTranspose] at hd

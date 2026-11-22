@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.LieLatticeData
-public import Development.AutomorphicSpectrum.Statements.AlgebraStatements.PolarisedFlagStatement
-public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.MemFlagSubIff
+public import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.Bundle0002
+public import Development.AutomorphicSpectrum.Statements.AlgebraStatements.Bundle0001
+public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0045
 
 @[expose] public section
 

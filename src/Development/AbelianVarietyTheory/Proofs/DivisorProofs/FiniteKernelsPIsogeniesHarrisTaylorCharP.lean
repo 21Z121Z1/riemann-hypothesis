@@ -1,17 +1,17 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EvcPowRight
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.KerEqOfPointsOfGerm
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SectionExtOfApplyEq
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsIdealFactorIff
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MaximalIdealPowLe
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RingHomEqOfCompEqId
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TangentFixLine
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LocalRingFiniteIdealsOfMaximalIdealPrincipalNilp
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AlgebraMapMemMaximalIdealIff
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsIsogenyOfDegreeIntActionHarrisTaylor
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsTangentCoordsBaseChangeSmoothCommGroup
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle3106
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1396
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1404
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1383
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle3018
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1402
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1406
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1398
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1369
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle3120
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0809
 
 @[expose] public section
 

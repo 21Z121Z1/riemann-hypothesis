@@ -1,7 +1,7 @@
 module
 
 public import Formalism.UnipotentAdelicQuotients.EllRegStep
-public import Formalism.UnipotentAdelicQuotients.EllipticRegularity.KernDecay
+public import Formalism.UnipotentAdelicQuotients.EllipticRegularity.Bundle0001
 
 @[expose] public section
 

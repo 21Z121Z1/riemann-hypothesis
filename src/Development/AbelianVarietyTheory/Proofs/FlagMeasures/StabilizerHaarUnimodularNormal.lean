@@ -1,11 +1,11 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.IsNormalFormStabilizerMeasure
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.CommonStabilizerSetEqRangeNormalFormStatement
+public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.Bundle0010
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.CommonStabilizerSetEqRangeNormalForm
 public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.IsotropicLeviEmbeddingHomomorphismProperties
 public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.IsotropicStabilizerRadicalStructure
-public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.LintegralInvEqOfBiInvariantMatGroup
+public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0049
 
 @[expose] public section
 
@@ -541,7 +541,7 @@ theorem isHaarOn_range {β : Fin r → ℕ} (hβ : ∀ a b : Fin r, j ≤ b.val 
 
 theorem lebesgue_haar_unimodular_stabilizer : ∀ (k r j : ℕ) (hj : j ≤ r) (z z' : (Fin (2 * r + k + 1) → ℂ)), ∀ (g₀ : Mat k r) (β : Fin r → ℕ) (c : ℂ), inWb k r z → inWb k r z' → 0 < Tz k r z → IsNormal0 k r hj β c z z' g₀ → IsHaarOn (Rset k r g₀) (lebR0 k r j β) ∧ IsUnimod (Rset k r g₀) (lebR0 k r j β) := by
   intro k r j hj z z' g₀ β c hz hz' hT hg
-  obtain ⟨e, hS⟩ := GlobalTheory.T.commonStabilizerSet_eq_range_normalForm k r j hj z z' g₀ β c hz hz' hT hg
+  obtain ⟨e, hS⟩ := _root_.GlobalTheory.Amp.rset_normal0 k r j hj z z' g₀ β c hz hz' hT hg
   have hβ := hg.2.2.2.2.1
   rw [e] at hS ⊢
   have hH := isHaarOn_range (k := k) hβ

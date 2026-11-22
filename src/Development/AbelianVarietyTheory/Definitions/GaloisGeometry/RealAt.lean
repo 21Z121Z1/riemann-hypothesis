@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.Reframe
+public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.Bundle0030
 public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.Realises
 
 @[expose] public section

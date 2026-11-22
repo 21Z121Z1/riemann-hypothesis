@@ -1,7 +1,7 @@
 module
 
-public import ReciprocityTheory.SemistableReduction.LatSemiSt
-public import ReciprocityTheory.SemistableReduction.SemiContractA
+public import ReciprocityTheory.SemistableReduction.Bundle0008
+public import ReciprocityTheory.SemistableReduction.Bundle0001
 
 @[expose] public section
 

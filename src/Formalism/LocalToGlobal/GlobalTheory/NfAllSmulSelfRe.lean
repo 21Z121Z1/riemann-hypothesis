@@ -1,6 +1,6 @@
 module
 
-public import Formalism.LocalToGlobal.GlobalTheory.MemIffOfLocBasisG
+public import Formalism.LocalToGlobal.GlobalTheory.Bundle0002
 public import Formalism.LocalToGlobal.GlobalTheory.GL4.PColInf
 public import Formalism.LocalToGlobal.HermitianForms.FormsTied
 

@@ -2,10 +2,10 @@ module
 
 public import Mathlib
 public import Formalism.SharpRestriction.CuspSpanNormBounds.FractionFieldToGenericStalkAlgebraMapEq
-public import Development.AbelianVarietyTheory.Definitions.Foundations.IsHermND
+public import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0007
 public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.ComplementReferenceCompactSubgroup
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.NormAdditiveCharacterTypePrimeEqOne
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.SpanToLePerp
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0036
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0037
 public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.MemPerpSpan
 
 @[expose] public section

@@ -2,7 +2,7 @@ module
 
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.FormsFiniteness.FormsFiniteAlt
 public import GroundTheory.AutomorphicForms.UnitaryAdmissible.CuspFinite
-public import Formalism.RealPlaceAnalysis.ThirdArithmeticHolds
+public import Formalism.RealPlaceAnalysis.Bundle0004
 
 @[expose] public section
 

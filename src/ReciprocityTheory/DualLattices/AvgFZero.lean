@@ -1,6 +1,6 @@
 module
 
-public import ReciprocityTheory.DualLattices.ExistsReductionOfCoordinateCombination
+public import ReciprocityTheory.DualLattices.Bundle0029
 
 @[expose] public section
 

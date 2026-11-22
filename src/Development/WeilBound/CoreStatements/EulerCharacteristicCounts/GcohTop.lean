@@ -1,10 +1,8 @@
 module
 
-public import Development.WeilBound.CoreStatements.EulerCharacteristicCounts.GcohCmp
-public import Development.WeilBound.CoreStatements.EulerCharacteristicCounts.GcohField
-public import Development.WeilBound.CoreStatements.EulerCharacteristicCounts.GcohMu
+public import Development.WeilBound.CoreStatements.EulerCharacteristicCounts.Bundle0004
+public import Development.WeilBound.CoreStatements.EulerCharacteristicCounts.Bundle0003
 public import Development.WeilBound.CoreStatements.EulerCharacteristicCounts.GcohTate
-public import Development.WeilBound.CoreStatements.EulerCharacteristicCounts.GcohTateA
 
 @[expose] public section
 

@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Formalism.LocalToGlobal.UnitaryNorms.CharProd
+public import Formalism.LocalToGlobal.UnitaryNorms.Bundle0002
 
 @[expose] public section
 

@@ -1,12 +1,13 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.CartFrSgn
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.DiscreteSeriesPureInnerProductsTensorProduct
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0221
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0174
 public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsRealIntertwinerContractionOnePlace
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SmoothVectorsSubspaceStableSobolevFormDerivStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DiscreteSeriesModelUnitaryIrreducibleOrthonormalStatement
-public import Development.AbelianVarietyTheory.Proofs.HeightProofs.AdelicUnitaryRealPointsStructureRealPlaces
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SmoothVectorsSubspaceStableSobolevFormDeriv
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0033
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0945
+public import Development.AbelianVarietyTheory.Proofs.HeightProofs.Bundle0033
 public import Formalism.LocalToGlobal.IndefiniteReal.LinksW
 public import Formalism.LocalToGlobal.IndefiniteReal.IsFDiagIffDiagonal
 public import Formalism.LocalToGlobal.Divisibility.RowSideTie
@@ -241,12 +242,12 @@ theorem incl_tprod (v : M.Vec) : inclT M (PiTensorProduct.tprod ℂ v) = PiTenso
 variable {M} in
 theorem rep_inner {τ : D.what₂.Tau} {g : Matrix (Fin V.rank) (Fin V.rank) ℂ} (hg : g ∈ Formalism.QuantumDeterminants.UH (gramAt D V τ))
     (a b : M.H τ) : ⟪M.rep τ g a, M.rep τ g b⟫_ℂ = ⟪a, b⟫_ℂ :=
-  (⟨(M.rep τ g : M.H τ →ₗ[ℂ] M.H τ), (GlobalTheory.T.discreteSeriesModel_unitary_irreducible_orthonormal D V S M τ).2.1.2.1 g hg⟩ : M.H τ →ₗᵢ[ℂ] M.H τ).inner_map_map a b
+  (⟨(M.rep τ g : M.H τ →ₗ[ℂ] M.H τ), (_root_.GlobalTheory.HolDict.ModelRep.model_rep D V S M τ).2.1.2.1 g hg⟩ : M.H τ →ₗᵢ[ℂ] M.H τ).inner_map_map a b
 
 variable {M} in
 theorem rep_cancel {τ : D.what₂.Tau} {g g' : Matrix (Fin V.rank) (Fin V.rank) ℂ} (hg : g ∈ Formalism.QuantumDeterminants.UH (gramAt D V τ))
     (hg' : g' ∈ Formalism.QuantumDeterminants.UH (gramAt D V τ)) (h : g * g' = 1) (a : M.H τ) : M.rep τ g (M.rep τ g' a) = a := by
-  have hU := (GlobalTheory.T.discreteSeriesModel_unitary_irreducible_orthonormal D V S M τ).2.1
+  have hU := (_root_.GlobalTheory.HolDict.ModelRep.model_rep D V S M τ).2.1
   have e : M.rep τ (g * g') = (M.rep τ g).comp (M.rep τ g') := hU.1.2 g hg g' hg'
   rw [← ContinuousLinearMap.comp_apply, ← e, h, hU.1.1]
   rfl
@@ -266,9 +267,9 @@ theorem uh_inv (τ : D.what₂.Tau) {g : Matrix (Fin V.rank) (Fin V.rank) ℂ} (
 theorem smooth_facts (τ : D.what₂.Tau) {Y : Matrix (Fin V.rank) (Fin V.rank) ℂ} (hY : Y ∈ lieAt V τ) {a : M.H τ}
     (ha : a ∈ M.sm τ) : dRep (M.rep τ) Y a ∈ M.sm τ ∧
       HasDerivAt (fun t : ℝ => M.rep τ (NormedSpace.exp (t • Y)) a) (dRep (M.rep τ) Y a) 0 := by
-  haveI := (GlobalTheory.T.discreteSeriesModel_unitary_irreducible_orthonormal D V S M τ).1
-  have hsv := GlobalTheory.T.smoothVectors_subspace_stable_sobolevForm_deriv V.rank (gramAt D V τ) (M.H τ) (M.rep τ) (GlobalTheory.SmoothAutCheck.gramAt_herm V τ)
-    (GlobalTheory.SmoothAutCheck.gramAt_unit V τ).ne_zero (GlobalTheory.T.discreteSeriesModel_unitary_irreducible_orthonormal D V S M τ).2.1
+  haveI := (_root_.GlobalTheory.HolDict.ModelRep.model_rep D V S M τ).1
+  have hsv := _root_.GlobalTheory.UnitarySmVec.smoothVec_basic V.rank (gramAt D V τ) (M.H τ) (M.rep τ) (GlobalTheory.SmoothAutCheck.gramAt_herm V τ)
+    (GlobalTheory.SmoothAutCheck.gramAt_unit V τ).ne_zero (_root_.GlobalTheory.HolDict.ModelRep.model_rep D V S M τ).2.1
   have h := (hsv.2 a (hsv.1 a ha)).2.1 Y hY
   exact ⟨Submodule.subset_span h.1, h.2⟩
 
@@ -456,7 +457,7 @@ theorem clause_bdd (hI : GlobalTheory.Grid.IsIntw θ M' M ω' pt It) (hA : AdjRe
     · calc _ ≤ (∏ ρ, ‖(u ρ : M.H ρ)‖)⁻¹ * (c * ∏ ρ, ‖(u ρ : M.H ρ)‖) := by gcongr
         _ = c := by field_simp
         _ ≤ |c| := le_abs_self c
-  haveI : ∀ τ, CompleteSpace (M'.H τ) := fun τ => (GlobalTheory.T.discreteSeriesModel_unitary_irreducible_orthonormal D W S' M' τ).1
+  haveI : ∀ τ, CompleteSpace (M'.H τ) := fun τ => (_root_.GlobalTheory.HolDict.ModelRep.model_rep D W S' M' τ).1
   obtain ⟨C, hC0, hC⟩ := multi_uniform _ hb
   have hb2 : ∀ (u : M.Vec) (v : M'.Vec), ‖ellT M (fun τ => u τ) (inclT M (Tp φ (PiTensorProduct.tprod ℂ v)))‖ ≤
       (C * ∏ τ, ‖(v τ : M'.H τ)‖) * ∏ τ, ‖(u τ : M.H τ)‖ := by

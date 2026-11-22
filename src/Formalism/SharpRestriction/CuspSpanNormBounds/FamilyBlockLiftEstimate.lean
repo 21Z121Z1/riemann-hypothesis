@@ -1,10 +1,8 @@
 module
 
-public import Formalism.SharpRestriction.CuspSpanNormBounds.LocalDataRealPlace
+public import Formalism.SharpRestriction.CuspSpanNormBounds.Bundle0002
 public import Formalism.SharpRestriction.CuspSpanNormBounds.AuxiliarySlotStates
-public import Formalism.SharpRestriction.CuspSpanNormBounds.DiagonalEntryIdentity
-public import Formalism.SharpRestriction.CuspSpanNormBounds.RootMeasBig
-public import Formalism.SharpRestriction.CuspSpanNormBounds.IsGramNorm
+public import Formalism.SharpRestriction.CuspSpanNormBounds.Bundle0003
 public import Formalism.SharpRestriction.ParConsts
 
 @[expose] public section

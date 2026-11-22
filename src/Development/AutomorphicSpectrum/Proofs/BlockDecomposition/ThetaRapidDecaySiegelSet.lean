@@ -3,13 +3,13 @@ module
 public import Mathlib
 public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.WeilThetaConvergence
 public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.IsSmoothModerateOfIsAutFunSm
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.LintegralSiegelConeInvModulusLtTopWeilStatement
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0212
 public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsCompactAdele
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsSiegelDomainReduction
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LatticeSumDecayBoundStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IntegerCoordinatesBoundStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CompactAdelicDenominatorStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.InversePointTorusScalingStatement
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1335
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0058
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0013
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0579
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0583
 
 @[expose] public section
 
@@ -41,8 +41,8 @@ theorem lattice_sum {F E : Type} [Field F] [NumberField F] [Field E] [NumberFiel
   have hC : IsCompact ((⋃ j, (fun M : Matrix (Fin n) (Fin 1) (Af F ⊗[F] E) => M j 0) '' L) ∪
       Set.range fun p : ι × Fin n => (1 : Af F) ⊗ₜ[F] R p.1 p.2) :=
     (isCompact_iUnion fun j => hL.image (hev j)).union (Set.finite_range _).isCompact
-  obtain ⟨d, hd, hden⟩ := GlobalTheory.T.compact_adelic_denominator F E _ hC
-  obtain ⟨K₀, hK₀, hco⟩ := GlobalTheory.T.integer_coordinates_bound τ hτ
+  obtain ⟨d, hd, hden⟩ := _root_.GlobalTheory.CompanionTheory.AdelicDenom.exists_denominator_of_isCompact F E _ hC
+  obtain ⟨K₀, hK₀, hco⟩ := _root_.GlobalTheory.CompanionTheory.NumberFieldCoord.abs_repr_le_of_forall_norm_embedding_le τ hτ
   have hint : ∀ ξ : Matrix (Fin n) (Fin 1) E, ξ.map (fun x => (1 : Af F) ⊗ₜ[F] x) ∈ L → ∀ i,
       ∃ y : 𝓞 E, ((d * d : ℕ) : E) * (R * ξ) i 0 = y := by
     intro ξ hξ i
@@ -173,7 +173,7 @@ theorem count_main : ∀ (D : D7) (θ : InfFam D), IsInfFam θ → ∀ (V : HSp 
     · exact mul_pos hCn0 (inv_pos.2 (ht0 i))
     · exact hCn0
   have hU : ∀ ξ, 0 ≤ U ξ := fun ξ => norm_nonneg _
-  have hcoord := GlobalTheory.T.inverse_point_torus_scaling D θ hθ V Xf Yf hW t ht0 a ha
+  have hcoord := _root_.GlobalTheory.CompanionTheory.TorusCoord.torus_coords D θ hθ V Xf Yf hW t ht0 a ha
   have hent : ∀ ξ ρ j, ‖compAt θ ρ (invPt V a ξ) j 0‖ ≤ U ξ := fun ξ ρ j =>
     (norm_le_pi_norm (fun i => compAt θ ρ (invPt V a ξ) i 0) j).trans
       (norm_le_pi_norm (fun τ i => compAt θ τ (invPt V a ξ) i 0) ρ)

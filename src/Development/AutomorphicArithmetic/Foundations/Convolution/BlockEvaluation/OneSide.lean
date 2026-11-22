@@ -1,11 +1,10 @@
 module
 
 public import Development.AutomorphicArithmetic.Foundations.Convolution.BlockEvaluation.TruncSpec
-public import Development.AutomorphicArithmetic.Foundations.Convolution.PolynomialCoefficientBounds.ChebBd
-public import Development.AutomorphicArithmetic.Foundations.Convolution.PolynomialCoefficientBounds.ChebClosed
-public import Development.AutomorphicArithmetic.Foundations.Convolution.PowerSumTraces.DecayTraceClassAlt
-public import Development.AutomorphicArithmetic.Foundations.Convolution.PowerSumTraces.OpBasics
-public import Development.AutomorphicArithmetic.Foundations.Convolution.ConvolutionKernels.CommProj
+public import Development.AutomorphicArithmetic.Foundations.Convolution.PolynomialCoefficientBounds.Bundle0003
+public import Development.AutomorphicArithmetic.Foundations.Convolution.PolynomialCoefficientBounds.Bundle0001
+public import Development.AutomorphicArithmetic.Foundations.Convolution.PowerSumTraces.Bundle0001
+public import Development.AutomorphicArithmetic.Foundations.Convolution.ConvolutionKernels.Bundle0001
 
 @[expose] public section
 

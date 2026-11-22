@@ -1,19 +1,19 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Foundations.IsSelfDualE
+public import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0013
 public import Formalism.LocalToGlobal.Columns.CoefficientsModP.PairingNondegenerateHolds
 public import Formalism.LocalToGlobal.Columns.CoefficientsModP.FkPderivBlockEmbNe
 public import Formalism.GradedWeylDivisibility.StatementE
 public import Formalism.HarderNarasimhan.ShiftInvariance
 public import Formalism.QuotientMetricDivisors.ReductionLemmaZero
-public import Formalism.QuotientMetricDivisors.ProdFormula
+public import Formalism.QuotientMetricDivisors.Bundle0001
 public import Formalism.LocalToGlobal.IndefiniteForms.IndefiniteTree.RealCubicMeans.LeafBounds.MeanMaxLeaf.LeafMMFree
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.LatticeHasBasisAtEveryFinitePlace
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.DualLatticeIsLatticeAndHermitianDual
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.TransportedLatticeLocalizationFreeLeCoefficientSStatement
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0193
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0212
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.TransportedLatticeLocalizationFreeLeCoefficientS
 public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.StdWeylLatticesFgAndSpanCoeffSpace
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.StandardWeylLatticesFockDualStatement
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.StandardWeylLatticesFockDual
 
 @[expose] public section
 
@@ -299,14 +299,14 @@ theorem nabDelDual : NabDelDual := by
   constructor
   · refine dual_of_local lam G (nabStd K lam) (delStd K lam) _ _ (GlobalTheory.StdLatSpan.std_fg_span K ι n lam).1 ?_ hnab ?_
     · intro x hx
-      rw [← (GlobalTheory.T.standard_weyl_lattices_fock_dual K ι n lam x hx).2]
+      rw [← (_root_.GlobalTheory.StdDual.std_dual K ι n lam x hx).2]
       simp only [hone]
     · intro w
       obtain ⟨B, B', h1, h2, h3⟩ := hfr w
       exact ⟨B, B', h1, (GlobalTheory.T.transportedLattice_localization_free_le_coefficientSpace.1 K ι n lam M hM _ B h2).1, (GlobalTheory.T.transportedLattice_localization_free_le_coefficientSpace.1 K ι n lam _ hM' _ B' h3).2⟩
   · refine dual_of_local lam G (delStd K lam) (nabStd K lam) _ _ (GlobalTheory.StdLatSpan.std_fg_span K ι n lam).2.1 ?_ hdel ?_
     · intro x hx
-      rw [← (GlobalTheory.T.standard_weyl_lattices_fock_dual K ι n lam x hx).1]
+      rw [← (_root_.GlobalTheory.StdDual.std_dual K ι n lam x hx).1]
       simp only [hone]
     · intro w
       obtain ⟨B, B', h1, h2, h3⟩ := hfr w

@@ -1,6 +1,6 @@
 module
 
-public import Formalism.LocalToGlobal.GroupLattices.LevelGatherings.IdemMulCompl
+public import Formalism.LocalToGlobal.GroupLattices.LevelGatherings.Bundle0003
 public import Formalism.LocalToGlobal.GroupLattices.LevelGatherings.FiniteClassSetOfLe
 
 @[expose] public section

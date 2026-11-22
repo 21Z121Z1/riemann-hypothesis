@@ -1,11 +1,11 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.ThetaKernelGrowth
-public import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.HermitianSymplecticScalars
+public import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.Bundle0018
+public import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.Bundle0017
 public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.LintegralCompactLe
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsModGrowthExpLeNormInfPow
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ModerateGrowthOfHasCompactSupport
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0121
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0298
 
 @[expose] public section
 

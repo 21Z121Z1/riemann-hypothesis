@@ -1,8 +1,8 @@
 module
 
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.GammaLaurentFactors.MatchIndOf
-public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisGeometry₂.NotIsTemperedGLDetRepTwo
-public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Reps
+public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisGeometry₂.Bundle0004
+public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0052
 
 @[expose] public section
 

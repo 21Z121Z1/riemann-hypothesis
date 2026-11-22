@@ -1,16 +1,16 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.PublishedTheorems.Metrics₂.PoincareLelong
+public import Development.AutomorphicSpectrum.PublishedTheorems.Metrics₂.Bundle0001
 public import Development.AutomorphicSpectrum.PublishedTheorems.Metrics₂.SheetDensityEqSetSheetDensity
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.InterRed
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.InterRedF
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.InterGood
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.InterDivSupp
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.InterSheet
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.InterFib
-public import Development.AutomorphicSpectrum.Proofs.MetricProofs.CxPosDens
-public import Development.AutomorphicSpectrum.Proofs.MetricProofs.CxSimple
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.Bundle0016
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.Bundle0010
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.Bundle0017
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.Bundle0012
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.Bundle0009
+public import Development.AutomorphicSpectrum.Proofs.MetricProofs.Bundle0032
+public import Development.AutomorphicSpectrum.Proofs.MetricProofs.Bundle0038
 
 @[expose] public section
 

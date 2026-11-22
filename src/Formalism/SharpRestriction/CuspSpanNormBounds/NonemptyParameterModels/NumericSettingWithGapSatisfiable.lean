@@ -2,7 +2,7 @@ module
 
 public import Formalism.SharpRestriction.CuspSpanNormBounds.RelevantZeroGramTerms
 public import Formalism.FormalDegreeBessel.FormalDegreeRatio.GBasic
-public import Formalism.SharpRestriction.CuspSpanNormBounds.CayleySignature
+public import Formalism.SharpRestriction.CuspSpanNormBounds.Bundle0006
 
 @[expose] public section
 

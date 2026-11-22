@@ -1,7 +1,16 @@
 module
 
 public import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.RealDescent.RealLeviDescent.ThetaFixedGlobalOfTraceInputs
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.InfCharConjEmbeddingNegOfInvariantPairingStatement
+public import Mathlib
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.InfCharConjEmbeddingNegOfInvariantPairing
+public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.Bundle0010
+public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.DualIsConjByOne
+public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0025
+public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisGeometry₂.Bundle0004
+public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.Bundle0011
+public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.Bundle0009
+public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.Bundle0008
+public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.Bundle0002
 
 @[expose] public section
 
@@ -30,7 +39,7 @@ theorem aux_statement_11 (hG : ThetaFixedGlobalCharacter) (hθ : ThetaFixOf) : T
     K h1 h2 h3 h4 μC μf μ
   · rw [map_infOf_true]
     exact hl _
-  · rw [map_infOf_false, ← GlobalTheory.T.infChar_conjEmbedding_neg_of_invariant_pairing E n π π hd w.embedding _ _ (hl _) (hl _)]
+  · rw [map_infOf_false, ← _root_.GlobalTheory.CapPair.infChar_conj_of_paired E n π π hd w.embedding _ _ (hl _) (hl _)]
     exact hl _
 
 end UpperTheory.V.Z.Tf.GlobalTraceComparison.Pi

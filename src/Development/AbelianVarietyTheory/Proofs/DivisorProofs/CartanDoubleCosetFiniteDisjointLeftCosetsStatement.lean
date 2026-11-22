@@ -2,9 +2,9 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CartanDoubleCosetFiniteDisjointLeftCosets
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IndicatorIntMMemSB
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1000
 public import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.ScaledIntegerPeriodic
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.EventuallyDeepSubset
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0042
 
 @[expose] public section
 

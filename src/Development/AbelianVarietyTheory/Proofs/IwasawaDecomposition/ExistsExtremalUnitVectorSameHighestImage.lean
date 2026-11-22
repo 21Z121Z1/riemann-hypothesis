@@ -2,9 +2,9 @@ module
 
 public import Mathlib
 public import Formalism.LocalToGlobal.IndefiniteReal.ExistsChosenExtremalVector
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExtremalNegativeSets
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.MemUJsetOfKset
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsKStableOfMemLowKSub
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0295
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0111
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0139
 
 @[expose] public section
 

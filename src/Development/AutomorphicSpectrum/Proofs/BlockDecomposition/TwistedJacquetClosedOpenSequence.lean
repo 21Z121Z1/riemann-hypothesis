@@ -1,11 +1,11 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.AvgVanish
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ProjectionToTwistedEigenfunctionSupport
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsFiniteSupport
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SurjectiveIntertwinerQuotientEquiv
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.BijectiveIntertwinerSubrepEquiv
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0385
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0380
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0031
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0621
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0609
 
 @[expose] public section
 

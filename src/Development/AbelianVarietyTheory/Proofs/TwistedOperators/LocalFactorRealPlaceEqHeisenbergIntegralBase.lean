@@ -1,17 +1,18 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.RestrictedTensorBasePointNormSq
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.IsIntOv
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0128
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0093
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LintegralEqOfNorms
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.FderivCompress
-public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.RealIdemMulOfReal
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.VacuumProjectorRangeAnnihilatedStatement
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsEuclideanCoordsHermitianCartanInvolutionStatement
-public import Development.AbelianVarietyTheory.Proofs.HeightProofs.CmTypeRestrictRealSubfieldInfinitePlaceBijective
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.InfAdeleTensorBijective
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.RestrictedTensorVacuumEqSmulBasePointStatement
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.HeisenbergSmoothRapidSuperpositionTranslatesStatement
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0036
+public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.Bundle0061
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0056
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0047
+public import Development.AbelianVarietyTheory.Proofs.HeightProofs.Bundle0021
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0006
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0136
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0018
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0012
 
 @[expose] public section
 
@@ -62,12 +63,12 @@ theorem exists_superpos (om : W →L[ℝ] W →L[ℝ] ℝ) (hom : ∀ x, om x x 
   have key : ∀ u, proj h (ρ (E (-u)) x) = l (proj h (ρ (E (-u)) x)) • f₀ := by
     intro u
     have hs : Sm ρ (proj h (ρ (E (-u)) x)) :=
-      GlobalTheory.T.heisenberg_smooth_rapid_superposition_translates W V volume B om ρ hom hρ E gau continuous_gau Osc.integrable_pow_gau _ (sm_heis om hρ _ hx)
+      _root_.GlobalTheory.RealWeil.sm_superpos W V volume B om ρ hom hρ E gau continuous_gau Osc.integrable_pow_gau _ (sm_heis om hρ _ hx)
     obtain ⟨c, hc⟩ := hline ((proj h).comp (ρ (E (-u))))
       (fun C hC f => by
         rw [ContinuousLinearMap.comp_apply, ContinuousLinearMap.comp_apply, Osc.proj_comm h C hC, hC]) hs
       fun z => by
-        have := GlobalTheory.T.vacuumProjector_range_annihilated V B J _ hJ h (ρ (E (-u)) x) z
+        have := _root_.GlobalTheory.Mem.Lift.VacAnn.proj_annihilated V B J _ hJ h (ρ (E (-u)) x) z
         unfold dH at this
         rwa [UnitaryOsc.fderiv_comp_clm hs, UnitaryOsc.fderiv_comp_clm hs] at this
     rw [ContinuousLinearMap.comp_apply] at hc
@@ -239,7 +240,7 @@ theorem exists_coord (τ : D.what₂.Tau) {sS : Matrix (Fin S.rank) (Fin S.rank)
       (J : EuclideanSpace ℂ ((Fin T.rank × Fin S.rank) × Unit) ≃ₗᵢ[ℝ] EuclideanSpace ℂ ((Fin T.rank × Fin S.rank) × Unit)),
       (∀ x, J (J x) = -x) ∧ (∀ x y, (star (E y) ⬝ᵥ HM S T *ᵥ E x).im = omJ J x y) ∧ (∀ z, ∃ y, E z = atPl τ y) ∧
         ∀ y, ∃ z, E z = atPl τ y ∧ E (J z) = atPl τ (cplxO sS sT y) := by
-  obtain ⟨E, J, hJ, hEJ, hE⟩ := GlobalTheory.T.exists_euclideanCoords_hermitian_cartanInvolution ((Fin T.rank × Fin S.rank) × Unit)
+  obtain ⟨E, J, hJ, hEJ, hE⟩ := _root_.GlobalTheory.Twist.EuclidCoord.exists_coord ((Fin T.rank × Fin S.rank) × Unit)
     (blk (fun _ => ((2 * (tauE D τ D.host.xi0).im : ℝ) : ℂ) • gramAt D T τ) fun _ => (gramAt D S τ)⁻¹)
     (blk (fun _ => sT) fun _ => sS)
     (by
@@ -293,7 +294,7 @@ theorem line (h : Chart θ σ) (hψ : IsStdChar D ψ (-1)) {X F₀ : BB ψ S T} 
     (fix_iff hψ _ _).2 (by rw [hA _ fun v => rhoB_comm h hψ hu _, (fix_iff hψ _ _).1 e])
   obtain ⟨U, hU, hl⟩ := hx.1.level
   have h2 := isLatVac_mono (latO_mono (P := fun _ => True) fun _ _ => Sum.inl_ne_inr) hx.2.1
-  obtain ⟨a, ha⟩ := GlobalTheory.T.restrictedTensor_vacuum_eq_smul_basePoint D ψ θ S T sS sT ΛS ΛT _ hb (A X).1
+  obtain ⟨a, ha⟩ := _root_.GlobalTheory.VacuumLine.eq_smul_base D ψ θ S T sS sT ΛS ΛT _ hb (A X).1
     (theta_of_sm h hψ _ hs ⟨U, hU, fun u hu h0 => h1 h0 (hl u hu h0)⟩)
     ⟨fun u hu => h1 (GlobalTheory.SplitScalar.latO_fin (AddSubgroup.nsmul_mem _ hu 2)) (h2.1 u hu),
       fun e he u hu hh => h1 (GlobalTheory.SplitScalar.latO_fin hu) (h2.2 e he u hu hh)⟩
@@ -338,7 +339,7 @@ theorem isLocOp_integral (h : Chart θ σ) (hψ : IsStdChar D ψ (-1)) {μ : Mea
   · simp only [mul_left_comm _ a, integral_const_mul]
   · obtain ⟨F, rfl⟩ := lift f hf
     obtain ⟨U, hU, hl⟩ := hf.level
-    refine ⟨_, theta_of_sm h hψ _ (GlobalTheory.T.heisenberg_smooth_rapid_superposition_translates _ _ ν _ om _ hom hρ E c hc hci F (sm_of_theta h hψ F hf))
+    refine ⟨_, theta_of_sm h hψ _ (_root_.GlobalTheory.RealWeil.sm_superpos _ _ ν _ om _ hom hρ E c hc hci F (sm_of_theta h hψ F hf))
       ⟨U, hU, fun u hu h0 => (fix_iff hψ _ _).2 ?_⟩, hip F⟩
     refine ((rhoB hψ u).integral_comp_comm (hint F)).symm.trans
       (integral_congr_ae (Filter.Eventually.of_forall fun v => ?_))

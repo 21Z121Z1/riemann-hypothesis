@@ -2,12 +2,11 @@ module
 
 public import Development.AutomorphicArithmetic.Foundations.Convolution.PowerSumTraces.TvDefs
 public import Development.AutomorphicArithmetic.Foundations.Convolution.PowerSumTraces.SummandFactorAlt
-public import Development.AutomorphicArithmetic.Foundations.Convolution.PowerSumTraces.UiwPow
-public import Development.AutomorphicArithmetic.Foundations.Convolution.PowerSumTraces.HopOloc
-public import Development.AutomorphicArithmetic.Foundations.Convolution.IntegrableConvolution.ZBasic
-public import Development.AutomorphicArithmetic.Foundations.Convolution.ConvolutionKernels.KernelTransforms.CommPrj
-public import Development.AutomorphicArithmetic.Foundations.Convolution.ConvolutionKernels.KernelTransforms.LocEmb
-public import Development.AutomorphicArithmetic.TwistedTraces.IwahoriCompactOpenAndIwCosetIndicatorTest
+public import Development.AutomorphicArithmetic.Foundations.Convolution.PowerSumTraces.Bundle0004
+public import Development.AutomorphicArithmetic.Foundations.Convolution.IntegrableConvolution.Bundle0012
+public import Development.AutomorphicArithmetic.Foundations.Convolution.ConvolutionKernels.KernelTransforms.Bundle0003
+public import Development.AutomorphicArithmetic.Foundations.Convolution.ConvolutionKernels.KernelTransforms.Bundle0002
+public import Development.AutomorphicArithmetic.TwistedTraces.Bundle0008
 
 @[expose] public section
 

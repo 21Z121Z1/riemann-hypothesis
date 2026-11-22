@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsFockMap
-public import Development.WeilBound.CoreStatements.GaussianSeminormBounds.RealSeminormFiltration.RLActs
-public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.ExistsBoundPolyMulExp
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0922
+public import Development.WeilBound.CoreStatements.GaussianSeminormBounds.RealSeminormFiltration.Bundle0009
+public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0015
 
 @[expose] public section
 

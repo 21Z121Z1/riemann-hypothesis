@@ -2,7 +2,7 @@ module
 
 public import Formalism.LocalToGlobal.IndefiniteReal.DoubleCosetOperators.HeckeCommuteOfCompatibility
 public import Formalism.LocalToGlobal.HeckeThetaElements.IsHeckeElt
-public import Formalism.LocalToGlobal.BesselHermitianTheta.LemmasWeil
+public import Formalism.LocalToGlobal.BesselHermitianTheta.Bundle0003
 
 @[expose] public section
 

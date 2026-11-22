@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.BundleObjects
-public import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.TrivBundleIsTwistedForms
+public import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.Bundle0018
 
 @[expose] public section
 

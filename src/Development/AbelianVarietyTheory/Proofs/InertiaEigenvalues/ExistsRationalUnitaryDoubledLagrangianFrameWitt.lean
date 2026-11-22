@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FrameOfFst
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0705
 
 @[expose] public section
 

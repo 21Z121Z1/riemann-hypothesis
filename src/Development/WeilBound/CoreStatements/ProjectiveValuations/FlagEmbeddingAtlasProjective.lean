@@ -1,7 +1,7 @@
 module
 
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FlagCellFrameChangeTriangular
-public import Development.AbelianVarietyTheory.Definitions.Divisors.SmoothOfRelativeDimensionPspace
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1874
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0029
 
 @[expose] public section
 

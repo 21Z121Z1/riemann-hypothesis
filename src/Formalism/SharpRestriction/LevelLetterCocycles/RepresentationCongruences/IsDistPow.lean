@@ -1,7 +1,7 @@
 module
 
 public import Formalism.SharpRestriction.LevelLetterCocycles.RepresentationCongruences.ExistsPhiBridge
-public import Formalism.SharpRestriction.LevelLetterCocycles.RepresentationCongruences.SaturationFractionModule
+public import Formalism.SharpRestriction.LevelLetterCocycles.RepresentationCongruences.Bundle0007
 
 @[expose] public section
 

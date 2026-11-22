@@ -2,9 +2,9 @@ module
 
 public import Mathlib
 public import Development.WeilBound.CoreStatements.TemperedRepresentationTheory.HodgeWedgeFields.H1CommutesBaseChange
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsUniqueIsPullForm
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.AbelianSchemeGerms
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.USt
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0438
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.Bundle0004
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0129
 
 @[expose] public section
 

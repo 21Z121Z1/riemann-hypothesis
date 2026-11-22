@@ -2,8 +2,7 @@ module
 
 public import Mathlib
 public import Formalism.LocalToGlobal.GlobalTheory.GL5.FamilyMassVolumeIdentityOfClassDecomp
-public import Development.AbelianVarietyTheory.BlockTheory.GlobalSignature.LatticeTensorUnfolding
-public import Development.AbelianVarietyTheory.BlockTheory.GlobalSignature.InfiniteCoordinateUnfold
+public import Development.AbelianVarietyTheory.BlockTheory.GlobalSignature.Bundle0009
 
 @[expose] public section
 

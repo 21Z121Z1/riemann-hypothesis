@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Formalism.GL3MeanSquares.AffineFibreCountComparison
-public import Formalism.LogVandermondeBounds.FinrankFiberSumZero
+public import Formalism.GL3MeanSquares.Bundle0003
+public import Formalism.LogVandermondeBounds.Bundle0001
 
 @[expose] public section
 

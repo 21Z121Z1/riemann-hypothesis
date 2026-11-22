@@ -1,10 +1,10 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsStableGauss
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0085
 public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.NonemptyMeasAndReps
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.QuadraticStarStructure
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SelfDualMeasureExistsUniqueFourierInversion
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0091
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0124
 
 @[expose] public section
 

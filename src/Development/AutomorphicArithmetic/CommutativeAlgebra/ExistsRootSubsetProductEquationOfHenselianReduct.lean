@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicArithmetic.CommutativeAlgebra.ExistsPolynomialEqMapEvalRootsOfPermInvariant
+public import Development.AutomorphicArithmetic.CommutativeAlgebra.Bundle0003
 
 @[expose] public section
 

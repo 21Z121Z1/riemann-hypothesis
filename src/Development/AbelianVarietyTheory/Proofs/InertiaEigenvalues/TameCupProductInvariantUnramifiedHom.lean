@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.VecPairApply
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0385
 public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.ExistsCoprimePowOfMemIneKer
 public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.TamePairing
 

@@ -4,10 +4,11 @@ public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.AbelianSchemeLaws.FirstCohomologyVanishesSpecOfIsLocalRing
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.CubeVal
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.UnifUniqSt
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.IsNsmul
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.QkToAkU
-public import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.SerreVanishingVeryAmpleStatement
-public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ExistsSectionEqMulOfVanishingModElementStatement
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.Bundle0005
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.Bundle0006
+public import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.Bundle0026
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.SecBaseChangeAnySt
+public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.Bundle0012
 
 @[expose] public section
 
@@ -223,7 +224,7 @@ theorem GlobalTheory.Unif.exists_form_correction : ∀ (V : Type) [CommRing V] [
       (Y 0).hom ≫ thick V (IsLocalRing.maximalIdeal V) 0 := by
     rw [← Category.assoc, hj.w, Category.assoc, ← Spec.map_comp, ← CommRingCat.ofHom_comp,
       Ideal.Quotient.factor_comp_mk]
-  obtain ⟨τ₀, hτ⟩ := GlobalTheory.T.exists_section_eq_mul_of_vanishing_mod_element _ _ _ _ _ (Ideal.Quotient.mk _ (ϖ ^ (e + 1))) (Ideal.Quotient.factor_surjective _)
+  obtain ⟨τ₀, hτ⟩ := _root_.GlobalTheory.SectionKernel.exists_sec_of_vanishing _ _ _ _ _ (Ideal.Quotient.mk _ (ϖ ^ (e + 1))) (Ideal.Quotient.factor_surjective _)
     (Ideal.Quotient.factor_surjective _) (nilpotent_ker hϖ _) (ker_factor hϖ _)
     ((mem_ker_factor hϖ _ _).2 (pow_dvd_pow _ (by omega))) (mul_eq_zero_iff hϖ _) _ _ _ _ _ _ j₀ (β e) (hflat (e + 1))
     hj (hβ e) (GlobalTheory.AbLaw.pw (H (e + 1)) t) (GlobalTheory.AbLaw.pw (H 0) t) (pwIso w t) (isLB_pw (hH _).1 _) (isLB_pw (hH _).1 _)

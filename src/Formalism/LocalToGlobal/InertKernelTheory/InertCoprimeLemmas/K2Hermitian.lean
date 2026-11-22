@@ -1,7 +1,7 @@
 module
 
 public import Formalism.LocalToGlobal.InertKernelTheory.SubBSplit
-public import Formalism.LocalToGlobal.InertKernelTheory.InertCoprimeLemmas.QuadraticBaseChangeGL3
+public import Formalism.LocalToGlobal.InertKernelTheory.InertCoprimeLemmas.Bundle0009
 public import Formalism.LocalToGlobal.InertKernelTheory.InertCoprimeLemmas.LocalLevelIsKOneAtT
 
 @[expose] public section

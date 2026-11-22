@@ -1,10 +1,10 @@
 module
 
-public import Development.AutomorphicArithmetic.Foundations.UnitarySphericalFixing.SatakeParameters.RecLawsH
+public import Development.AutomorphicArithmetic.Foundations.UnitarySphericalFixing.SatakeParameters.Bundle0002
 public import Development.AutomorphicArithmetic.Foundations.LocalLanglands.Multi
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ToralAndGoodOfIsSpherical
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.WeilDeligneParameterMonodromyZeroOfUnramified
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.LocDZOfSplitReg
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0670
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0106
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0856
 
 @[expose] public section
 

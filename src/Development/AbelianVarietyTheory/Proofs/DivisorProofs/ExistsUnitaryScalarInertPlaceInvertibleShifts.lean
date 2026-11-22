@@ -1,10 +1,10 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DiagWZero
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1547
 public import Development.AbelianVarietyTheory.Definitions.Divisors.RankEqCardIffExistsFrameMatrixFirstColumnBlock
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsFieldCompletionTensorOfIsInertAt
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HeisenbergInvariantFormVanishesLagrangianTest
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1224
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1630
 
 @[expose] public section
 

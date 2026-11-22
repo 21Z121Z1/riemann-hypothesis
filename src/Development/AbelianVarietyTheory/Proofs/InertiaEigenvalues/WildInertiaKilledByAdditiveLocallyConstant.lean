@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.GlobalCore
+public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0009
 public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.TeichmullerInertiaLabelCondition
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.FixedOfPowFixed
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0188
 
 @[expose] public section
 

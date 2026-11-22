@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.FlagMinor
+public import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.Bundle0001
 
 @[expose] public section
 

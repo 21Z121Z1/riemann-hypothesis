@@ -4,31 +4,34 @@ public import Mathlib
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.RigidSys
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.CubeVal
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.UnifUniqSt
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.IsNsmul
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.QkToAkU
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.Bundle0005
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.Bundle0006
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.DiscreteValuationRings.TwistBCPf
 public import Development.AbelianVarietyTheory.Definitions.Degenerations.AdmissiblePadicIntMaximalIdeal
 public import Development.AbelianVarietyTheory.Definitions.Degenerations.ExistsGenPullTriv
-public import Development.AbelianVarietyTheory.Definitions.Degenerations.MorAlgSt
+public import Development.AbelianVarietyTheory.Definitions.Degenerations.Bundle0001
 public import Development.AbelianVarietyTheory.Definitions.Uniformization.PointEqOfSubsingleton
-public import Development.AbelianVarietyTheory.Definitions.Uniformization.WCompat
-public import Development.AbelianVarietyTheory.Definitions.Degenerations.ToATotal
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.AmplePt
+public import Development.AbelianVarietyTheory.Definitions.Uniformization.Bundle0001
+public import Development.AbelianVarietyTheory.Definitions.Degenerations.Bundle0002
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.Bundle0018
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.SABBaseChangeSt
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.DiscreteValuationRings.LBLocalC
-public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.IsCPMapCompCancel
-public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.EvenCubicUnitEqOne
-public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ConnectedSpaceOfSection
-public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ConnectedSpaceSpecOfIsLocalRing
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsUniqueAlgEquivOfCompatibleQuotient
-public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ExistsGtCoordOfTorusQuotient
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.DiscreteValuationRings.Bundle0003
+public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.Bundle0042
+public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.Bundle0038
+public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.Bundle0023
+public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.Bundle0078
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0005
+public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.Bundle0093
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.BCTools
-public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.NonemptyFormalUniformisationTowerStatement
-public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.NonemptyAlgebraisationFormalTowerAmpleStatement
-public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsAdditiveWeightPointsOfTorusTowerStatement
-public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.CubicalBundleRelAmpleOfAmpleFibresStatement
-public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.KTrivOfClosedFibreLocalRingStatement
-public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.TorusCoordinatesCompatOfTorusCompatStatement
+public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.Bundle0116
+public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.Bundle0159
+public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.Bundle0119
+public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.Bundle0118
+public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.Bundle0160
+public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.Bundle0099
+public import Development.AbelianVarietyTheory.Definitions.AbelianSchemeLaws.FirstCohomologyVanishesSpecOfIsLocalRing
+public import Development.AbelianVarietyTheory.Definitions.Uniformization.ExistsInKNeOne
+public import Development.AbelianVarietyTheory.Definitions.Uniformization.ExistsUniqueTorusCompat
 
 @[expose] public section
 
@@ -389,23 +392,23 @@ theorem exists_preU_of_fibres (hF : Laws → Laws2 → Laws3 → USt → ∀ (R 
     have e : pullback.snd G.hom (jK R) = gen.hom.left ≫ A.A.hom := (Over.w gen.hom).symm
     have : IsIso gen.hom.left := inferInstanceAs (IsIso ((Over.forget _).map gen.hom))
     rw [e]; infer_instance
-  obtain ⟨X, _, _, _, ⟨T⟩⟩ := GlobalTheory.T.nonempty_formalUniformisationTower hL hL2 R I hR G P hs hW hpr hS
+  obtain ⟨X, _, _, _, ⟨T⟩⟩ := _root_.GlobalTheory.FormalTower.nonempty_towerR hL hL2 R I hR G P hs hW hpr hS
   have hf := hF hL hL2 hL3 hU R I hR G P hs hW A gen hgen hA X T
   have := isLocalRing_quot hI 0
   have e : I ^ (0 + 1) = I := pow_one I
   have : (I ^ (0 + 1)).IsPrime := e.symm ▸ hR.2.2.2.1
   have : IsPrincipalIdealRing (R ⧸ I ^ (0 + 1)) := e.symm ▸ hP
   have amp : RelAmple (T.l 0).Q.B (T.l 0).D.M.L.L :=
-    GlobalTheory.T.cubical_bundle_relAmple_of_ample_fibres hL hL2 (R ⧸ I ^ (0 + 1)) (isAdicComplete_quot hR.2.1 _) _ (T.l 0).Q.isAb (T.l 0).D.M
+    _root_.GlobalTheory.CubicalFibreAmple.relAmple_of_fibres hL hL2 (R ⧸ I ^ (0 + 1)) (isAdicComplete_quot hR.2.1 _) _ (T.l 0).Q.isAb (T.l 0).D.M
       fun k _ x => (hf k x).1
-  obtain ⟨a⟩ := GlobalTheory.T.nonempty_algebraisation_formal_tower_ample hL hL2 hE R I hR G P X T amp
+  obtain ⟨a⟩ := _root_.GlobalTheory.TowerAlg.nonempty_alg hL hL2 hE R I hR G P X T amp
   have k₀ : KTriv (T.l 0).Q.B (T.l 0).D.M.L.L :=
-    GlobalTheory.T.kTriv_of_closed_fibre_localRing hL hL2 (R ⧸ I ^ (0 + 1)) _ (T.l 0).Q.isAb _ (T.l 0).D.M.L.isLB amp (hf _ _).2
+    _root_.GlobalTheory.KTrivLocal.kTriv_of_closed_fibre hL hL2 (R ⧸ I ^ (0 + 1)) _ (T.l 0).Q.isAb _ (T.l 0).D.M.L.isLB amp (hf _ _).2
   obtain ⟨hb, v, hv⟩ := a.b_pb 0
-  have hK : KTriv a.B a.M.L.L := GlobalTheory.T.kTriv_of_closed_fibre_localRing hL hL2 R _ a.isAb _ a.M.L.isLB a.ample
+  have hK : KTriv a.B a.M.L.L := _root_.GlobalTheory.KTrivLocal.kTriv_of_closed_fibre hL hL2 R _ a.isAb _ a.M.L.isLB a.ample
     (kTriv_closedFibre (e.symm ▸ hI) hb a.M.L.isLB (T.l 0).D.M.L.isLB hv.gen k₀)
-  obtain ⟨c, hadd, hw⟩ := GlobalTheory.T.exists_additive_weightPoints_of_torusTower hL hL2 hE R I hR G P X T a hK
-  exact exists_preU hL.globalFns (fun D e => GlobalTheory.T.torusCoordinates_compat_of_torus_compat hL.globalFns R I D e G) hI hs T a hK c hadd hw A gen hgen hA
+  obtain ⟨c, hadd, hw⟩ := _root_.GlobalTheory.WeightPoint.exists_weightPoints hL hL2 hE R I hR G P X T a hK
+  exact exists_preU hL.globalFns (fun D e => _root_.GlobalTheory.gtCoord_compat_of_torusCompat hL.globalFns R I D e G) hI hs T a hK c hadd hw A gen hgen hA
 
 end GlobalTheory.PreUnifLocal
 end

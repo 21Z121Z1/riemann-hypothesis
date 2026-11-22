@@ -1,11 +1,11 @@
 module
 
-public import Development.AbelianVarietyTheory.Definitions.Divisors.LabExt
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0067
 public import Development.AbelianVarietyTheory.Definitions.Degenerations.AdmissibleBaseOfCompleteDvr
-public import Development.AbelianVarietyTheory.Definitions.Uniformization.SeriesFrame
+public import Development.AbelianVarietyTheory.Definitions.Uniformization.Bundle0002
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.DiscreteValuationRings.FamMod
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SectionValuesIdentityDescendsToFibreProductStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RelatingConstantMemTraitFractionFieldStatement
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2559
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2557
 
 @[expose] public section
 

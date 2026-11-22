@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import GroundTheory.ArithmeticGeometry.ToricVarieties.Dimension
+public import GroundTheory.ArithmeticGeometry.ToricVarieties.Bundle0001
 
 @[expose] public section
 

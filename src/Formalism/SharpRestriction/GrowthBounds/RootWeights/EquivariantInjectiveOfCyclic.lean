@@ -1,6 +1,6 @@
 module
 
-public import Formalism.SharpRestriction.GrowthBounds.RootWeights.EquivariantKillsCyclicOfZero
+public import Formalism.SharpRestriction.GrowthBounds.RootWeights.Bundle0022
 
 @[expose] public section
 

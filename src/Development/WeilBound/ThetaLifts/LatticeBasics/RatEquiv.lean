@@ -1,7 +1,7 @@
 module
 
-public import Development.WeilBound.ThetaLifts.LatticeBasics.ThetaBox
-public import Development.WeilBound.ThetaLifts.LatticeBasics.BoxSecX
+public import Development.WeilBound.ThetaLifts.LatticeBasics.Bundle0022
+public import Development.WeilBound.ThetaLifts.LatticeBasics.Bundle0007
 
 @[expose] public section
 

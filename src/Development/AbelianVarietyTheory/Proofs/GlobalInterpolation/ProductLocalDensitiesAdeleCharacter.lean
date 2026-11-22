@@ -1,15 +1,14 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.BlockTheory.GlobalSignature.LocalDualIndex
-public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.IsAdicCompleteAndCardQuotientAdicCompletionInteg
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SummableAbsNormInvSq
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsUniqueIsStdChar
-public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.ExistsUniqueIsStandardAdeleCharUnramifiedCMBaseStatement
-public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.DualLatticeDifferentIndexStatement
-public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.FinprodLocalDifferentIdealNormEqDiscrStatement
-public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.ExistsEqStandardAdeleCharRationalDilateStatement
-public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.HasProdQuadExtLocalEulerFactorInvInvStatement
+public import Development.AbelianVarietyTheory.BlockTheory.GlobalSignature.Bundle0004
+public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.Bundle0025
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0175
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0173
+public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0126
+public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0123
+public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.FinprodLocalDifferentIdealNormEqDiscr
+public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0040
 
 @[expose] public section
 
@@ -201,11 +200,11 @@ theorem summable_eulerInv (E : Type) [Field E] [Algebra F E] (M : ℕ) (hM : 2 �
 
 theorem density_product : ∀ (F E : Type) [Field F] [NumberField F] [Field E] [NumberField E] [Algebra F E] [StarRing E] (σ : E →ₐ[F] E), IsCMExt F E σ → (∀ x : E, star x = σ x) → Formalism.HermitianLatticesTheory.IsCMUnram E → ∀ ψ, IsCharAF F ψ → (∀ v, (intV F v).relIndex (dualV F ψ v) ≠ 0 ∧ (dualV F ψ v).relIndex (intV F v) ≠ 0) ∧ ∀ a : F, a ≠ 0 → IsScalingInf F ψ a → ∀ M : ℕ, 2 ≤ M → Summable (fun v => |localDensity F E ψ M v - 1|) ∧ ∃ P : ℝ, 0 < P ∧ HasProd (localDensity F E ψ M) P ∧ absInf F a ^ ((M : ℝ) - 1 / 2) * P = absDiscr F ^ ((1 : ℝ) / 2 - M) / Formalism.HermitianLatticesTheory.lValEta E M := by
   intro F E _ _ _ _ _ _ σ hCM hst hU ψ hψ
-  obtain ⟨ψ₀, h₀, -⟩ := GlobalTheory.T.existsUnique_isStandardAdeleChar_unramifiedCM_base F E σ hCM hst hU
+  obtain ⟨ψ₀, h₀, -⟩ := _root_.GlobalTheory.StdCharUnique.existsUnique_isStdChar_cm F E σ hCM hst hU
   have hd := GlobalTheory.T.dual_lattice_different_index F E σ hCM hst hU ψ₀ h₀
-  obtain ⟨hfin, hprod, -⟩ := GlobalTheory.T.finprod_localDifferentIdealNorm_eq_discr F E σ hCM hst hU
+  obtain ⟨hfin, hprod, -⟩ := _root_.GlobalTheory.LocalDifferentProduct.prod_normDifferentV F E σ hCM hst hU
   refine ⟨fun v => ?_, fun a ha hs M hM => ?_⟩
-  · obtain ⟨a, ha, h⟩ := GlobalTheory.T.exists_eq_standardAdeleChar_rational_dilate F E σ hCM hst hU ψ₀ h₀ ψ hψ
+  · obtain ⟨a, ha, h⟩ := _root_.GlobalTheory.AdelicCharDilate.exists_eq_std_dilate F E σ hCM hst hU ψ₀ h₀ ψ hψ
     exact (dual_scaled ha h v (hd v).1).1
   obtain ⟨hL, hE⟩ := GlobalTheory.T.hasProd_quadExtLocalEulerFactorInv_inv F E σ hCM hst hU M hM
   have hn : ∀ v, dualIndex F ψ v = normDifferentV F v * ‖algebraMap F (Fv F v) a‖⁻¹ := fun v =>

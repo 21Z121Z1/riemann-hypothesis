@@ -1,6 +1,6 @@
 module
 
-public import Formalism.FormalDegreeBessel.StatementBF
+public import Formalism.FormalDegreeBessel.Bundle0001
 public import Formalism.FormalDegreeBessel.FormalDegreeRatio.GBasic
 public import Formalism.FormalDegreeBessel.FormalDegreeRatio.GroupFactorizationHolds
 

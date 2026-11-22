@@ -1,7 +1,7 @@
 module
 
-public import Formalism.LocalToGlobal.ProjectiveLattices.PowMapMemOfPowMulMem
-public import ReciprocityTheory.SemistableReduction.AlgAll
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0003
+public import ReciprocityTheory.SemistableReduction.Bundle0017
 public import Mathlib
 
 @[expose] public section

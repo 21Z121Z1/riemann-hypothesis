@@ -2,7 +2,7 @@ module
 
 public import Formalism.SharpRestriction.LevelLetterCocycles.DataN
 public import Formalism.CyclotomicNorms.NonsquarefreeBounds.NonsquarefreeMonicBoundHolds
-public import Formalism.LocalRingCardinality.SpanPowerMembership.NZTypeD
+public import Formalism.LocalRingCardinality.SpanPowerMembership.Bundle0001
 
 @[expose] public section
 

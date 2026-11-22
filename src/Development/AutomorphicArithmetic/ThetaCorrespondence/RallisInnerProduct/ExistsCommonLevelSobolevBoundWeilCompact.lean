@@ -1,11 +1,11 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.SobContId
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.DRhoSumAndSobOLe
-public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.EqZeroOfLintegralEqZero
+public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.Bundle0019
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0145
+public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.Bundle0065
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LintegralNormSqEqToL2
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ThetaFunctionHeisenbergWordSupLeLevelPow
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0312
 public import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.CovolOneIntegralAdd
 
 @[expose] public section

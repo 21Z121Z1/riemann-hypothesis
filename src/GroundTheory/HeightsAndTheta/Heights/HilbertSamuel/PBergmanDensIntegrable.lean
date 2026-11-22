@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsBergmanDensIntegrable
-public import ReciprocityTheory.AnalyticForms.PlurisubharmonicFunctions.LintegralImageEqLintegralNormSqDetMul
-public import ReciprocityTheory.AnalyticForms.PotentialTheory.LocDens
+public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0034
+public import ReciprocityTheory.AnalyticForms.PlurisubharmonicFunctions.Bundle0004
+public import ReciprocityTheory.AnalyticForms.PotentialTheory.Bundle0005
 
 @[expose] public section
 

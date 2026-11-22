@@ -1,10 +1,10 @@
 module
 
 public import Mathlib
-public import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.SatakeExponents.UniformizerValuations.MatchT
+public import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.SatakeExponents.UniformizerValuations.Bundle0007
 public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LocalAlgebraHolds
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.UnitaryLevelSubgroupProperties
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IsCompactSupportDcos
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0577
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0752
 
 @[expose] public section
 
@@ -422,7 +422,7 @@ theorem lconv_comb (hFU : FUMul) (hU : Unr E) {w : Pl E} (hw : ¬ IsSplitAt w) {
     lconv (fun γ => ∑ j, c j * fU n w b ϖ (lOf (x j)) γ) (fun γ => r * ∑ j, c' j * fU n w b ϖ (lOf (x' j)) γ) =
       fun γ => (r * alpha n w b) * ∑ p : J × J', (c p.1 * c' p.2) * fU n w b ϖ (lOf (x p.1 + x' p.2)) γ := by
   funext y
-  have hc : Continuous (cj w) := (GlobalTheory.T.placeConjugation_properties_cmField E hU w).1
+  have hc : Continuous (cj w) := (_root_.GlobalTheory.ConjAtPlace.main E hU w).1
   have ho := GlobalTheory.CompanionTheory.IwLevels.isOpen_iwU n w b
   have hle := GlobalTheory.CompanionTheory.IwLevels.iwU_le_KL n w b hb.1
   have hidx : (iwU n w b).relIndex (KL n w) ≠ 0 :=
@@ -461,7 +461,7 @@ theorem pow_claim (hFU : FUMul) (hD : DcosMul) (hU : Unr E) {w : Pl E} (hw : ¬ 
   induction k with
   | zero =>
     refine ⟨J, inferInstance, c, x, hx, ?_, fun s => ?_⟩
-    · have hc : Continuous (cj w) := (GlobalTheory.T.placeConjugation_properties_cmField E hU w).1
+    · have hc : Continuous (cj w) := (_root_.GlobalTheory.ConjAtPlace.main E hU w).1
       have ho := GlobalTheory.CompanionTheory.IwLevels.isOpen_iwU n w b
       have hle := GlobalTheory.CompanionTheory.IwLevels.iwU_le_KL n w b hb.1
       have hidx : (iwU n w b).relIndex (KL n w) ≠ 0 :=

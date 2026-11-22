@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.FundamentalDomains.HermitianTraceFormVanishing
-public import ReciprocityTheory.SemistableReduction.TorsionNonvanishStatement
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.FundamentalDomains.Bundle0005
+public import ReciprocityTheory.SemistableReduction.Bundle0002
 
 @[expose] public section
 

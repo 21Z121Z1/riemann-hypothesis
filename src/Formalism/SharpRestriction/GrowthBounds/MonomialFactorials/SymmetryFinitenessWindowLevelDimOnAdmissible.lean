@@ -1,7 +1,7 @@
 module
 
 public import Formalism.SharpRestriction.GrowthBounds.MonomialFactorials.IntegralityFromMetricOfOrthogonalityWindow
-public import Formalism.SharpRestriction.GrowthBounds.MonomialFactorials.BePhiAddLeft
+public import Formalism.SharpRestriction.GrowthBounds.MonomialFactorials.Bundle0014
 
 @[expose] public section
 

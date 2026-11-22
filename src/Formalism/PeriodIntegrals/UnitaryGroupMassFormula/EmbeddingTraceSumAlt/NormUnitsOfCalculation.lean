@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Formalism.PeriodIntegrals.ScPsiExists
+public import Formalism.PeriodIntegrals.Bundle0020
 
 @[expose] public section
 

@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsGenLab
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2372
 
 @[expose] public section
 

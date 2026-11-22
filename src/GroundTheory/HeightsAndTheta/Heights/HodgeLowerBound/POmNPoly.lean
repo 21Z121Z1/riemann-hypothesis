@@ -1,11 +1,11 @@
 module
 
 public import Mathlib
-public import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.StatementsOmNPoly
-public import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.StatementsOmNVbInt
-public import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.POmNPolyPencil
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.InterRedF
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.InterSt
+public import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.Bundle0012
+public import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.Bundle0016
+public import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.Bundle0003
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.Bundle0016
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.Bundle0006
 
 @[expose] public section
 

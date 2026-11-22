@@ -2,12 +2,12 @@ module
 
 public import Mathlib
 public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsFlatAnIffIsConstMul
-public import Formalism.LocalToGlobal.ProjectiveLattices.VAtVNeBot
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0010
 public import Formalism.LocalToGlobal.ProjectiveLattices.RulInst
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.StableEig
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.EigenBasisIffTangentBasis
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.IsTangentVectorBasisAtPointBaseChange
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.FrameChangeCommBaseChange
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0063
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0032
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0043
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0024
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.ChartPullbacks.UniformBaseChange.PullGt
 
 @[expose] public section
@@ -211,7 +211,7 @@ theorem comb_total_iff {B : Type} [CommRing B] (xB : Sp B ⟶ Xo.X)
     Formalism.L2.Pj.IsCombAt xB (fun j => uu (e j).1 (e j).2) (fun j => a (e j).1 (e j).2) w ↔
       Formalism.L2.Pj.IsCombAt xB (uu σ) (a σ) w := by
   classical
-  obtain ⟨N, _, _, v, ρ, hinj, htan, hcomb, -, -⟩ := GlobalTheory.T.exists_tangent_module_universal_group E H D l Xo B xB
+  obtain ⟨N, _, _, v, ρ, hinj, htan, hcomb, -, -⟩ := _root_.GlobalTheory.TanMod.exists_tangent_module E H D l Xo B xB
   choose b hb using fun τ i => (htan (uu τ i)).1 (hu τ i)
   obtain rfl : uu = fun τ i => v (b τ i) := by funext τ i; exact (hb τ i).symm
   have key : ∑ j, a (e j).1 (e j).2 • b (e j).1 (e j).2 = ∑ i, a σ i • b σ i := by
@@ -227,7 +227,7 @@ theorem isTanAt_of_comb {B : Type} [CommRing B] {xB : Sp B ⟶ Xo.X} {m : ℕ}
     {u : Fin m → (Sp (DualNumber B) ⟶ Xo.univ.t.G.left)} (hu : ∀ i, Formalism.L2.Pj.IsTanAt xB (u i))
     {a : Fin m → B} {w : Sp (DualNumber B) ⟶ Xo.univ.t.G.left} (h : Formalism.L2.Pj.IsCombAt xB u a w) :
     Formalism.L2.Pj.IsTanAt xB w := by
-  obtain ⟨N, _, _, v, ρ, hinj, htan, hcomb, -, -⟩ := GlobalTheory.T.exists_tangent_module_universal_group E H D l Xo B xB
+  obtain ⟨N, _, _, v, ρ, hinj, htan, hcomb, -, -⟩ := _root_.GlobalTheory.TanMod.exists_tangent_module E H D l Xo B xB
   choose b hb using fun i => (htan (u i)).1 (hu i)
   obtain rfl : u = fun i => v (b i) := by funext i; exact (hb i).symm
   rw [(hcomb _ b _ _).1 h]

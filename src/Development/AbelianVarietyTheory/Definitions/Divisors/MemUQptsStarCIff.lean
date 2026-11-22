@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsIntMulIntegral
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0009
 
 @[expose] public section
 

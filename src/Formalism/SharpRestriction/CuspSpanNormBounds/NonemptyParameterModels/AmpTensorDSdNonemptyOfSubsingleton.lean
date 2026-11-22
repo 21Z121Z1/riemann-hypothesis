@@ -1,7 +1,7 @@
 module
 
-public import Formalism.SharpRestriction.CuspSpanNormBounds.SBridge
-public import Formalism.FormalDegreeBessel.FinalG
+public import Formalism.SharpRestriction.CuspSpanNormBounds.Bundle0005
+public import Formalism.FormalDegreeBessel.Bundle0002
 public import Formalism.SharpRestriction.CuspSpanNormBounds.OnePlaceEstimates
 
 @[expose] public section

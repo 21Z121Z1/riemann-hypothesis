@@ -2,12 +2,12 @@ module
 
 public import Development.AutomorphicArithmetic.Foundations.LocalLanglands.RecTTransport
 public import Development.AutomorphicArithmetic.Foundations.LocalLanglands.Multi
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.DualClassCuspidalStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.DualClassInvolutive
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.DualClassTwistNeg
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.AlgebraMapIntertwiningMapBijectiveOfIsSmooth
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0358
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0349
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0372
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0621
 public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ApplyMemTwKerOfNormalizer
-public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.ExhUnipRadOne
+public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.Bundle0012
 
 @[expose] public section
 

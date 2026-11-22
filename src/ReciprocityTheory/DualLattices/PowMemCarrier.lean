@@ -1,9 +1,9 @@
 module
 
-public import ReciprocityTheory.DualLattices.ColengthCotangentBoundStatementOfClaim
-public import ReciprocityTheory.DualLattices.PrimeHopfOrderOfAddEquiv
+public import ReciprocityTheory.DualLattices.Bundle0013
+public import ReciprocityTheory.DualLattices.Bundle0015
 public import ReciprocityTheory.DualLattices.MemDualLat
-public import ReciprocityTheory.DualLattices.ImportsBis
+public import ReciprocityTheory.DualLattices.Bundle0021
 public import ReciprocityTheory.DualLattices.SqIdeal
 
 @[expose] public section

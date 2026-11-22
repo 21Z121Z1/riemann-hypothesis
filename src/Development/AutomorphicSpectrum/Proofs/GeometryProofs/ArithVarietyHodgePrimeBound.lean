@@ -3,9 +3,13 @@ module
 public import Mathlib
 public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.IsLatFamilyCongr
 public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.FullTorsionIntegrallyClosed
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.AbelianSchemePointObjectStatement
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0162
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.AdelicGroupAlgebraActionInjective
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.Bundle0005
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.Bundle0002
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsHodgeLine
 public import Development.AutomorphicSpectrum.Statements.GeometryStatements.EqOfSpecializes
-public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.UnramifiedPrimeIdempotent
+public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.Bundle0025
 
 @[expose] public section
 
@@ -203,7 +207,7 @@ theorem exists_root (A : HodgeCpt Y S y) (hpq : 0 < D.p + D.q) {p : ℕ} (hp : p
     ∃ ζ : Ω, IsPrimitiveRoot ζ p := by
   haveI : CharZero Ω := charZero_of_injective_ringHom A.cst.injective
   obtain ⟨x, hx⟩ := exists_point A
-  obtain ⟨s0, o, ⟨m0⟩⟩ := GlobalTheory.T.abelian_scheme_point_object E H D l Xo c O₀ β Y A.X A.f A.t A.m Ω A.ξ x hx
+  obtain ⟨s0, o, ⟨m0⟩⟩ := _root_.GlobalTheory.CompanionTheory.Ar.ObjAt.exists_obj_at E H D l Xo c O₀ β Y A.X A.f A.t A.m Ω A.ξ x hx
   have hN : 0 < p ^ A.R p := pow_pos hp.pos _
   obtain ⟨ζ, hζ⟩ := GlobalTheory.CompanionTheory.Ar.OmLink.root o A.t m0 (A.tors p hpS) hN hpq
   have hR : 1 ≤ A.R p := by have := A.R_ge p hpS; omega

@@ -1,7 +1,7 @@
 module
 
 public import Development.WeilBound.CoreStatements.HodgeTatePoints.GiResGeo
-public import Development.WeilBound.CoreStatements.HodgeTatePoints.GiResAlg
+public import Development.WeilBound.CoreStatements.HodgeTatePoints.Bundle0026
 public import Development.WeilBound.CoreStatements.HodgeTatePoints.Twpdiv
 
 @[expose] public section

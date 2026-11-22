@@ -1,6 +1,6 @@
 module
 
-public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.SkewAnalyticGroup.HasDerivAtShift
+public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.SkewAnalyticGroup.Bundle0001
 
 @[expose] public section
 

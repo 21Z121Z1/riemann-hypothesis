@@ -1,10 +1,9 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EtaleCochainEvalOnSimplexBasicProperties
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsCochainEvEqOfNatural
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EtaleCochainEvalOnSimplexDifferentialValues
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ImageCochainExists
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0305
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0306
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0354
 public import Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.KummerCupProducts.FirstChernCompatibleSystem
 
 @[expose] public section

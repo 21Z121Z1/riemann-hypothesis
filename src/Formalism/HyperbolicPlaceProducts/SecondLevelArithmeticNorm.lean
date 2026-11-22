@@ -1,12 +1,10 @@
 module
 
-public import Formalism.HyperbolicPlaceProducts.Statement
-public import Formalism.HyperbolicPlaceProducts.SubgroupIndexCounts.CardEqCardRangeNsmulMulCardKer
+public import Formalism.HyperbolicPlaceProducts.Bundle0001
+public import Formalism.HyperbolicPlaceProducts.SubgroupIndexCounts.Bundle0001
 public import Formalism.HyperbolicPlaceProducts.SubgroupIndexCounts.SesquilinearDeterminantHolds
 public import Mathlib
-public import Formalism.HyperbolicPlaceProducts.SubgroupIndexCounts.OmegaPow
 public import Formalism.HyperbolicPlaceProducts.SubgroupIndexCounts.CountO
-public import Formalism.HyperbolicPlaceProducts.SubgroupIndexCounts.DedekindLFunctions
 
 @[expose] public section
 

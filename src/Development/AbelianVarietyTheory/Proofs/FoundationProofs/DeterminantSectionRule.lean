@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.FibreIff
-public import Development.AbelianVarietyTheory.Proofs.GenericRegularity.LieCombBaseChange
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0333
+public import Development.AbelianVarietyTheory.Proofs.GenericRegularity.Bundle0011
 
 @[expose] public section
 

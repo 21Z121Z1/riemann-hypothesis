@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Foundations.RayPrimes
+public import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0008
 public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.NonemptyRayDataOfNeZero
 
 @[expose] public section

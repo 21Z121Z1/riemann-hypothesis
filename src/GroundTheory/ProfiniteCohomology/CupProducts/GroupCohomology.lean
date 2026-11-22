@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import GroundTheory.ProfiniteCohomology.CupProducts.Functoriality
-public import GroundTheory.ProfiniteCohomology.ColimitDefs
-public import GroundTheory.TateCohomology.CupProduct
+public import GroundTheory.ProfiniteCohomology.CupProducts.Bundle0001
+public import GroundTheory.ProfiniteCohomology.Bundle0005
+public import GroundTheory.TateCohomology.Bundle0003
 
 @[expose] public section
 

@@ -1,10 +1,10 @@
 module
 
-public import Development.WeilBound.CoreStatements.VolumeEquality.BaseUnifDefs
+public import Development.WeilBound.CoreStatements.VolumeEquality.Bundle0003
 public import Development.AbelianVarietyTheory.Proofs.HeightProofs.IsValLineLogNormAtIffEmbedding
 public import Development.AbelianVarietyTheory.Proofs.CovolumeBounds.DifferentiableOnOfTendstoLocallyUniformlyOn
 public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.IsExcisionNbhdAway
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.HolomorphicFamilyConjugateStatement
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0086
 
 @[expose] public section
 

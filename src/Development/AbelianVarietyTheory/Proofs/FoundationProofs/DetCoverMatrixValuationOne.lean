@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Formalism.SatakeDualWeyl.KpqSubgroupCompact
-public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.IsAdicCompleteAndCardQuotientAdicCompletionInteg
+public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.Bundle0025
 
 @[expose] public section
 

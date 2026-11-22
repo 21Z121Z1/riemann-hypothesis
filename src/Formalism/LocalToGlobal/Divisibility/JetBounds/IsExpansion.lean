@@ -3,9 +3,9 @@ module
 public import Mathlib
 public import Formalism.LocalToGlobal.Divisibility.Inputs
 public import Formalism.MirabolicMackeyTheory.MirabolicIsMackey
-public import Formalism.GaussJetBounds.StatementS
+public import Formalism.GaussJetBounds.Bundle0004
 public import Formalism.GaussJetBounds.OneLetterGauss
-public import Formalism.GaussJetBounds.GenLogInverse
+public import Formalism.GaussJetBounds.Bundle0001
 public import Formalism.GradedWeylDivisibility.FinalD
 public import Formalism.GaussJetBounds.GaussJetProofs.OrbMul
 public import Formalism.GaussJetBounds.OneLetterGaussJets.GainDominatesOddLevelSum

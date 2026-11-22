@@ -2,8 +2,8 @@ module
 
 public import Mathlib
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.SecBaseChangeAnySt
-public import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.MulPullOfCubeOfSymm
-public import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.HasEnoughRootsOfUnityGlobalSections
+public import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.Bundle0015
+public import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.Bundle0004
 
 @[expose] public section
 

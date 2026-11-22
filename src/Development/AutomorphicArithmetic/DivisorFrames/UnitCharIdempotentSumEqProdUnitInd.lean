@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicArithmetic.LocalEmbeddings.ComplEquivEvW
+public import Development.AutomorphicArithmetic.LocalEmbeddings.Bundle0001
 
 @[expose] public section
 

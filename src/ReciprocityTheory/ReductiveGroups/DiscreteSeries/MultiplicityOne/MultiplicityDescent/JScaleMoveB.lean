@@ -1,7 +1,7 @@
 module
 
-public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.MultiplicityOne.StDiagExists
-public import Formalism.SharpRestriction.CuspSpanNormBounds.CayleySignature
+public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.MultiplicityOne.Bundle0002
+public import Formalism.SharpRestriction.CuspSpanNormBounds.Bundle0006
 public import Mathlib.Analysis.InnerProductSpace.TensorProduct
 public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.MultiplicityOne.JSmoothA
 

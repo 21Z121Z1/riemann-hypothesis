@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.WeilBound.CoreStatements.AbelianHeightsDuality.ZarhinTrick.IsLBZb
+public import Development.WeilBound.CoreStatements.AbelianHeightsDuality.ZarhinTrick.Bundle0004
 
 @[expose] public section
 

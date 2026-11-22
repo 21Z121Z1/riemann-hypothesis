@@ -1,9 +1,9 @@
 module
 
 public import Formalism.SharpRestriction.GrowthBounds.AevalValuation.RestSpec
-public import Formalism.SharpRestriction.GrowthBounds.DiagonalSupport.MemSupportSumMonomial
-public import Formalism.SharpRestriction.GrowthBounds.PlaneCoefficients.DigOKAddInl
-public import Formalism.SharpRestriction.GrowthBounds.PlaneCoefficients.TensZeroRight
+public import Formalism.SharpRestriction.GrowthBounds.DiagonalSupport.Bundle0002
+public import Formalism.SharpRestriction.GrowthBounds.PlaneCoefficients.Bundle0003
+public import Formalism.SharpRestriction.GrowthBounds.PlaneCoefficients.Bundle0002
 
 @[expose] public section
 

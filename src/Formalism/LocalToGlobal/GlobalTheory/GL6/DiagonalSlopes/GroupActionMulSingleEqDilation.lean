@@ -1,12 +1,12 @@
 module
 
-public import Formalism.LocalToGlobal.GlobalTheory.GL6.ValuationClassTranslateMem
+public import Formalism.LocalToGlobal.GlobalTheory.GL6.Bundle0004
 public import Formalism.LocalToGlobal.GlobalTheory.GL6.DiagonalSlopes.CharacterFiniteLevelZeroOfForms
 public import Formalism.LocalToGlobal.GlobalTheory.GL6.DiagonalSlopes.EqOneOfCoprimeTorsionTwoPrimes
-public import Formalism.LocalToGlobal.GlobalTheory.GL6.CoordMapInjective
-public import Formalism.LocalToGlobal.GlobalTheory.GL6.RamifiedLatticePropsOfModel
-public import Formalism.LocalToGlobal.GlobalTheory.GL6.DiagonalSlopes.DiamondCommDistinctPlaces
-public import Formalism.LocalToGlobal.GlobalTheory.GL6.DiagonalSlopes.LocalDiamondOfSplitIdempotent
+public import Formalism.LocalToGlobal.GlobalTheory.GL6.Bundle0001
+public import Formalism.LocalToGlobal.GlobalTheory.GL6.Bundle0003
+public import Formalism.LocalToGlobal.GlobalTheory.GL6.DiagonalSlopes.Bundle0001
+public import Formalism.LocalToGlobal.GlobalTheory.GL6.DiagonalSlopes.Bundle0002
 
 @[expose] public section
 

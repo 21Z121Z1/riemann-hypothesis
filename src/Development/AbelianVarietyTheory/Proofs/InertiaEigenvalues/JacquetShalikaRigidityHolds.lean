@@ -1,12 +1,12 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Divisors.UnrOutside
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsIsUnitaryTwistAbsPow
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.LocalRankinSelbergLogarithmFormulaStatement
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.RankinSelbergPartialLTendstoNeZeroAtOneStatement
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.RankinSelbergPartialLPoleAtOneConjStatement
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.RsTerm
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0020
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0629
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0940
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0946
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0938
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0539
 
 @[expose] public section
 

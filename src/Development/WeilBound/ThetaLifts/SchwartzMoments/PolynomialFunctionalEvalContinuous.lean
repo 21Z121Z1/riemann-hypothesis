@@ -2,13 +2,13 @@ module
 
 public import Mathlib
 public import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.PureEqPureA
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SchwartzHeisLine
-public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.FiniteAdeleTopology
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0486
+public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.Bundle0045
 public import Development.AutomorphicSpectrum.Proofs.AdelicProofs.SchurTranslationsCharacters
 public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.WeilRepresentationQuadraticDatum
-public import Development.AutomorphicSpectrum.Proofs.MembershipProofs.BoundMulTranslate
+public import Development.AutomorphicSpectrum.Proofs.MembershipProofs.Bundle0003
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.StandardAddCharSymplecticLocalLatticeEqOne
-public import Development.WeilBound.ThetaLifts.SchwartzMoments.SchwartzDqTendsto
+public import Development.WeilBound.ThetaLifts.SchwartzMoments.Bundle0002
 
 @[expose] public section
 

@@ -4,8 +4,8 @@ public import Mathlib
 public import Development.AutomorphicArithmetic.CMTraceForms.CmDatumSmallPrimesLogBoundsOfParams
 public import Formalism.LocalToGlobal.IndefiniteForms.IndefiniteTree.ONPage
 public import Development.AbelianVarietyTheory.Definitions.Jets.NotRunTiesZeroSteps
-public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.DegreeWeightKappaLePageBound
-public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.RunWeightsSum
+public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0131
+public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0146
 
 @[expose] public section
 

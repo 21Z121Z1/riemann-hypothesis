@@ -1,6 +1,6 @@
 module
 
-public import Formalism.SharpRestriction.GrowthBounds.BinomialRatio.KLettersDegEven
+public import Formalism.SharpRestriction.GrowthBounds.BinomialRatio.Bundle0007
 
 @[expose] public section
 

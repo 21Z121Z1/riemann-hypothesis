@@ -1,10 +1,10 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.AbBound
-public import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.CoordinateIdeals
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LieModelPushAlongMap
-public import Development.AutomorphicSpectrum.Proofs.MetricProofs.IsCompactSphere
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0091
+public import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.Bundle0002
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0096
+public import Development.AutomorphicSpectrum.Proofs.MetricProofs.Bundle0002
 
 @[expose] public section
 

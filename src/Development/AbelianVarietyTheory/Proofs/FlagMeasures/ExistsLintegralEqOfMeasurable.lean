@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsMapMulRightEqSmul
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0005
 
 @[expose] public section
 

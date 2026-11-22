@@ -1,9 +1,9 @@
 module
 
-public import Development.WeilBound.CoreStatements.AutomorphicKernels.SiegelWeilFormula.WhittakerCovolume.IsPureTIff
+public import Development.WeilBound.CoreStatements.AutomorphicKernels.SiegelWeilFormula.WhittakerCovolume.Bundle0001
 public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsCompactAdele
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HeckeCharacterUnramifiedExponent
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsStdCharNegOneOfStandardTraceAdelicAddChar
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1711
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1558
 
 @[expose] public section
 

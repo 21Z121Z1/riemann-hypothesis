@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ResV
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2868
 public import Development.AbelianVarietyTheory.Definitions.ThetaMetrics.MemRangeCompIffOfIsClosedImmersion
-public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsDerivationExtendOfFormallySmooth
+public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0035
 
 @[expose] public section
 

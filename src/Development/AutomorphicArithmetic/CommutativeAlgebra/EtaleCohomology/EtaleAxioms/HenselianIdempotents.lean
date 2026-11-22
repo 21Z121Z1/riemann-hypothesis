@@ -1,16 +1,13 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicArithmetic.CommutativeAlgebra.LiftIdempotentFactorizationHolds
+public import Development.AutomorphicArithmetic.CommutativeAlgebra.Bundle0028
 public import Development.EtaleCohomology.EtaleSheaves.FiniteChartSurjPf
-public import Development.EtaleCohomology.EtaleSheaves.HensIdemCut
-public import Development.EtaleCohomology.EtaleSheaves.LChartPf
-public import Development.EtaleCohomology.EtaleSheaves.LEtaleLiftPf
-public import Development.EtaleCohomology.EtaleSheaves.LFactorPf
-public import Development.EtaleCohomology.EtaleSheaves.LIdemLiftPf
-public import Development.EtaleCohomology.EtaleSheaves.LIdemPf
-public import Development.EtaleCohomology.EtaleSheaves.LJacPf
-public import Development.EtaleCohomology.EtaleSheaves.LMonicPf
+public import Development.EtaleCohomology.EtaleSheaves.Bundle0004
+public import Development.EtaleCohomology.EtaleSheaves.Bundle0038
+public import Development.EtaleCohomology.EtaleSheaves.Bundle0025
+public import Development.EtaleCohomology.EtaleSheaves.Bundle0012
+public import Development.EtaleCohomology.EtaleSheaves.Bundle0047
 public import Development.EtaleCohomology.EtaleSheaves.SurjectiveCharts.EtaleSurjectiveChartOfFiniteChartSurj
 
 @[expose] public section

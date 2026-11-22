@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import GroundTheory.LocalFields.AbstractLocalReciprocity.IsoPGroup
-public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.TransferOfCompSubtype
+public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0062
 
 @[expose] public section
 

@@ -1,6 +1,6 @@
 module
 
-public import Formalism.SharpRestriction.GrowthBounds.SegmentDegree.NegDminusLeMu
+public import Formalism.SharpRestriction.GrowthBounds.SegmentDegree.Bundle0007
 
 @[expose] public section
 

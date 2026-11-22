@@ -2,9 +2,9 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.UnipotentBlockColumnIndex
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.QuotientAverageAddOfPeriodic
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.AvgSubOfPer
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.AvgIntervalIntegralSwap
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0597
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0285
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0267
 
 @[expose] public section
 

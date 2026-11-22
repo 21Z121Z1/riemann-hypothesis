@@ -1,11 +1,11 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.GeometricallyConnectedOfIsIsoRestrict
+public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.Bundle0004
 public import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsIsLocModelIsPrimeOf
-public import Development.AbelianVarietyTheory.Definitions.Divisors.NotDominatesTopPlace
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ToQMemMaximalIdealIff
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CoePolyMapX
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0038
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1122
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1131
 
 @[expose] public section
 

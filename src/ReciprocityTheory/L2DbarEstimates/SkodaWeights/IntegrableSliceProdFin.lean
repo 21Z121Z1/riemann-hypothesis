@@ -1,6 +1,6 @@
 module
 
-public import ReciprocityTheory.L2DbarEstimates.SkodaWeights.WeightedIntegralEqLintegral
+public import ReciprocityTheory.L2DbarEstimates.SkodaWeights.Bundle0001
 
 @[expose] public section
 

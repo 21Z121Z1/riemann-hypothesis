@@ -2,7 +2,7 @@ module
 
 public import PositivityTheory.AutomorphicForms.PublishedInputs.HilbertEisenstein.ContDiffOnOfContDiffAtOne
 public import PositivityTheory.AutomorphicForms.PublishedInputs.HilbertEisenstein.LibSmoothDec
-public import PositivityTheory.AutomorphicForms.PublishedInputs.HilbertEisenstein.FiniteSupportOfHyp
+public import PositivityTheory.AutomorphicForms.PublishedInputs.HilbertEisenstein.Bundle0002
 
 @[expose] public section
 

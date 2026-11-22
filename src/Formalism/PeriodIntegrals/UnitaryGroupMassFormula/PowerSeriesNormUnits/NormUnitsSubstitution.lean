@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Formalism.PeriodIntegrals.PhNormUnits
-public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.PowerSeriesNormUnits.Development
-public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.ImportsTerBis
+public import Formalism.PeriodIntegrals.Bundle0005
+public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.PowerSeriesNormUnits.Bundle0001
+public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0034
 
 @[expose] public section
 

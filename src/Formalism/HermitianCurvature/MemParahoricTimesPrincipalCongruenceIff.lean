@@ -1,7 +1,7 @@
 module
 
 public import Formalism.DoubleCosetMeasures.Statement
-public import Formalism.HermitianCurvature.StatementK
+public import Formalism.HermitianCurvature.Bundle0002
 
 @[expose] public section
 

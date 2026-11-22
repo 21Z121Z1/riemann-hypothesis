@@ -4,10 +4,8 @@ public import Mathlib
 public import GroundTheory.HeightsAndTheta.Heights.HeightsOfSets.Statements
 public import GroundTheory.HeightsAndTheta.Heights.HeightsOfSets.IsSaturatedFirstCoordinateLine
 public import GroundTheory.HeightsAndTheta.Heights.HeightsOfSets.Comparison
-public import GroundTheory.HeightsAndTheta.Heights.HeightComparison.HeightOrbitCurve
-public import GroundTheory.HeightsAndTheta.Heights.HeightComparison.HeightOrbitDegree
-public import GroundTheory.HeightsAndTheta.Heights.HeightComparison.HeightRecR
-public import GroundTheory.HeightsAndTheta.Heights.HeightsOfSets.CurveIsOrbit
+public import GroundTheory.HeightsAndTheta.Heights.HeightComparison.Bundle0004
+public import GroundTheory.HeightsAndTheta.Heights.HeightsOfSets.Bundle0003
 public import GroundTheory.HeightsAndTheta.Heights.WeightedHomogeneous.Reading
 
 @[expose] public section

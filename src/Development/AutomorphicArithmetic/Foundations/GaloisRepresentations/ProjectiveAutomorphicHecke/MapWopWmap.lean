@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Statements.PlaceShiftStatements.TraceDefinitePairsEqAutomorphicTrace
+public import Development.AbelianVarietyTheory.Statements.PlaceShiftStatements.Bundle0001
 
 @[expose] public section
 

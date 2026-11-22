@@ -1,6 +1,6 @@
 module
 
-public import Formalism.LocalToGlobal.UnitaryNorms.CharDiv
+public import Formalism.LocalToGlobal.UnitaryNorms.Bundle0007
 public import Formalism.LocalToGlobal.UnitaryNorms.UnrAEPf
 
 @[expose] public section

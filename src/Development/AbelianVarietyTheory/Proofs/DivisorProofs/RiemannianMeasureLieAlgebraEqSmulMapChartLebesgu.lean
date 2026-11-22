@@ -1,14 +1,14 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.TamagawaSpecialUnitary
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArakelovVolumes.UpperBounds.WeightFunctionOnFrames
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PhaseFrame
+public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.Bundle0005
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArakelovVolumes.UpperBounds.Bundle0007
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0470
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TangentHaarRealSUOfMap
 public import Development.AbelianVarietyTheory.Definitions.ThetaMetrics.NormDetStrongContragredientDomRestrictAnnihilato
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SpecialUnitaryLieAlgebraEntriesOrthonormalFrameStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SkewFamilyInnerReEqStrictLowerAddDiagImStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SkewFamilyEqOfStrictLowerOfDiagImStatement
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0796
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0109
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0171
 
 @[expose] public section
 
@@ -57,7 +57,7 @@ theorem re_inner_skew {ι : Type} [Fintype ι] {r : ℕ} (s : Fin r → ℝ) (hs
     ∑ p, (conj (Y p) * Y' p).re =
       2 * ∑ q : ι × {p : Fin r × Fin r // p.2 < p.1},
         (conj (Y (q.1, q.2.1.1, q.2.1.2)) * Y' (q.1, q.2.1.1, q.2.1.2)).re +
-      ∑ τ, ∑ a, (Y (τ, a, a)).im * (Y' (τ, a, a)).im := GlobalTheory.T.skew_family_inner_re_eq_strictLower_add_diagIm s hs Y Y' hY hY'
+      ∑ τ, ∑ a, (Y (τ, a, a)).im * (Y' (τ, a, a)).im := _root_.GlobalTheory.skew_family_inner_re_split s hs Y Y' hY hY'
 
 theorem eq_of_skew {ι : Type} [Fintype ι] {r : ℕ} (s : Fin r → ℝ) (hs : ∀ a, s a * s a = 1)
     (Y Y' : ι × Fin r × Fin r → ℂ)

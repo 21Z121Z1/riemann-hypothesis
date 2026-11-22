@@ -1,18 +1,18 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.JEvExists
-public import Formalism.LocalToGlobal.UnitaryNorms.CharTied
-public import Formalism.LocalRingCardinality.DataKap
-public import Formalism.LocalToGlobal.ProjectiveLattices.HasDataCondition
-public import Formalism.LocalToGlobal.ProjectiveLattices.RecCond
-public import Formalism.LocalToGlobal.ProjectiveLattices.ParCanon
+public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.Bundle0012
+public import Formalism.LocalToGlobal.UnitaryNorms.Bundle0006
+public import Formalism.LocalRingCardinality.Bundle0004
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0028
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0032
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0031
 public import Formalism.LocalToGlobal.ProjectiveLattices.ExistsParameterConditions
-public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.ThExprUniqOfChartIndep2
+public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0007
 public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.DsExistsOfDiscreteSeriesExists
-public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.ExistsNormLeHeightPow
+public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.Bundle0007
 public import Formalism.LocalRingCardinality.Lemmas
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ResidualCharacterDetValuesMemCoeffField
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0971
 
 @[expose] public section
 

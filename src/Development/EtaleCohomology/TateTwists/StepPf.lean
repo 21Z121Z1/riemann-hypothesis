@@ -1,6 +1,6 @@
 module
 
-public import Development.EtaleCohomology.TateTwists.TensorVanishing
+public import Development.EtaleCohomology.TateTwists.Bundle0032
 
 @[expose] public section
 

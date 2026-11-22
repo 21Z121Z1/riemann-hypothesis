@@ -1,10 +1,9 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.AtBase
+public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.Bundle0013
 public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.FrameDualUnipotentGroupActsUnitriangularOnto
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsDatumOfTwoCongruentFrames
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsDatumOfTwoCongruentFramesStatement
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0237
 public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.HermitianDatumOfTermReadOnLattice
 
 @[expose] public section
@@ -338,7 +337,7 @@ theorem same_datum : ∀ {F : Type} [Field F] [ValuativeRel F] [TopologicalSpace
 
   have hg₂ : IsUnitary H (g * n⁻¹) := unitary_mul H hg (unitary_inv H hn.1)
   have htt : H.IsTerm (move (g * n⁻¹) t₂) := isTerm_move H hg₂ ht₂
-  obtain ⟨d'', hd''⟩ := GlobalTheory.T.exists_datum_of_two_congruent_frames M hM H r P (move (g * n⁻¹) t₂) htt
+  obtain ⟨d'', hd''⟩ := _root_.GlobalTheory.LocOver.TermOver.exists_datum M hM H r P (move (g * n⁻¹) t₂) htt
     (by change t₂.T = P.A.T; rw [hT]; exact hT1) (by change t₂.T' = P.B.T; rw [hT']; exact hT1')
     hTriA hTriB
 

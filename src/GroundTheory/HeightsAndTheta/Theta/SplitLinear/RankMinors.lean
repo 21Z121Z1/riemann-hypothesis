@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.ExistsRowsLinearIndependent
+public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0019
 
 @[expose] public section
 

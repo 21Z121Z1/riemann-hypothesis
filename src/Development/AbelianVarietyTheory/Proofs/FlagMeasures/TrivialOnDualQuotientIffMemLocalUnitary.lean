@@ -1,14 +1,14 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.SelfDualAt
-public import Formalism.LocalToGlobal.HermitianForms.TiedStep
-public import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.SplitIntLoc
-public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.MemDualSetOfMemSpan
-public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.DualOfDualFrames
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.StepLevelTLat
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.CmFieldSplitCompletelyPlaceStructureStatement
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.HermitianLatticeLevelLocalDualQuotientLengthOneStatement
+public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.Bundle0008
+public import Formalism.LocalToGlobal.HermitianForms.Bundle0002
+public import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.Bundle0006
+public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0071
+public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0011
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0128
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.CmFieldSplitCompletelyPlaceStructure
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0262
 
 @[expose] public section
 
@@ -187,9 +187,9 @@ end Local
 
 theorem trivial_iff_mem_Uloc : ∀ (F E : Type) [Field F] [NumberField F] [Field E] [NumberField E] [StarRing E] [Algebra F E] (cm : CMData F E) (n : ℕ) (J : Matrix (Fin n) (Fin n) E), IsHerm (cm.sig : E →+* E) J → J.det ≠ 0 → ∀ (T f : ℕ) (bad : Set (HeightOneSpectrum (𝓞 F))) (S : StepLevel F E cm.sig J T f bad), T.Prime → SplitsIn E T → Module.finrank ℚ E = 2 * f → ∀ (v : HeightOneSpectrum (𝓞 F)), (T : 𝓞 F) ∈ v.asIdeal → ∀ y ∈ levelVL cm.sig J v S.Lb, (∀ x ∈ loc v (dualL cm.sig J S.Lb), (y.1 - 1) *ᵥ x ∈ loc v S.Lb) ↔ y ∈ S.Uloc v := by
   intro F E _ _ _ _ _ _ cm n J hJ hdet T f bad S hT hsp hdeg v hv y hy
-  obtain ⟨-, d, hd, hgen⟩ := GlobalTheory.T.hermitianLattice_level_local_dual_quotient_length_one F E cm n J hJ hdet T f S.Lb hT hsp hdeg
+  obtain ⟨-, d, hd, hgen⟩ := _root_.GlobalTheory.St.G.tLat_local_index F E cm n J hJ hdet T f S.Lb hT hsp hdeg
     (stepLevel_tLat F E n cm.sig J T f bad S) v hv
-  obtain ⟨-, hmax, sp, hsig, hdiag⟩ := (GlobalTheory.T.cmField_splitCompletely_place_structure F E cm T hT hsp).2 v hv
+  obtain ⟨-, hmax, sp, hsig, hdiag⟩ := (_root_.GlobalTheory.St.G.SplitPrime.split_place F E cm T hT hsp).2 v hv
   have hint : ∀ x, x ∈ intV E v ↔
       (sp x).1 ∈ v.adicCompletionIntegers F ∧ (sp x).2 ∈ v.adicCompletionIntegers F :=
     split_integral_local F E v sp hdiag

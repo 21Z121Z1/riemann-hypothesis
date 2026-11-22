@@ -1,22 +1,19 @@
 module
 
 public import Mathlib
-public import Formalism.LocalToGlobal.CharacterGerms.NondegenerateCharts
-public import Formalism.LocalToGlobal.CharacterGerms.RowTieSelf
-public import Formalism.LocalToGlobal.CharacterGerms.BlockAdmissibleChart
-public import Formalism.LocalToGlobal.CharacterGerms.NegMem
+public import Formalism.LocalToGlobal.CharacterGerms.Bundle0015
+public import Formalism.LocalToGlobal.CharacterGerms.Bundle0012
+public import Formalism.LocalToGlobal.CharacterGerms.Bundle0011
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PlaceDivisors.StChartF
 public import Development.AbelianVarietyTheory.Definitions.TeichmullerDepth.HasTeich
-public import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.IntSOfMulEqOne
-public import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.InvariantDerivationsConstantInLogCoordinatesStatement
-public import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.ConstantCoeffDerivationPolynomialEqJetAt0Statement
-public import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.JetAt0ProdSubstDisjointVariablesStatement
-public import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.AdmissibleRowsValueEqRowGaugeStatement
-public import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.ExistsIntegralEndOfActionLinearPartStatement
-public import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.GaugeBiadditiveSymmAdjointIntegralEndStatement
-public import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.IntegralGermEqGaugedFormalGroupLawExpIntegralStatement
-public import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.ExistsOrthogonalAdjointProjectorsPlacePairsStatement
-public import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.IsIntegralGaugedFormalGroupLawPairDataStatement
+public import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.Bundle0046
+public import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.Bundle0054
+public import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.Bundle0053
+public import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.Bundle0049
+public import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.GaugeBiadditiveSymmAdjointIntegralEnd
+public import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.IntegralGermEqGaugedFormalGroupLawExpIntegral
+public import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.Bundle0076
+public import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.Bundle0047
 
 @[expose] public section
 
@@ -272,10 +269,10 @@ theorem one_row (hs : PairsSep Y p) (gr : ∀ o, MvPowerSeries (WV (I o)) C)
       rw [e0, hz (cc_ex Y i)]
     rw [one_mul, subst_mvExp (cE τ v) cL, e1, hz cL, mvExp_zero']
     simp
-  obtain ⟨M, hadj, hfix, hkill, himg⟩ := GlobalTheory.T.exists_orthogonal_adjoint_projectors_placePairs C V O dd Y d Orb I p hs
-  have hX := GlobalTheory.T.isIntegralGaugedFormalGroupLaw_pairData C V O dd Y d (I o0) (p o0)
-  obtain ⟨W, W', hW, hW', aW, hL⟩ := GlobalTheory.T.exists_integralEnd_of_action_linearPart C V O dd Y d (I o0) (p o0) Y.w0
-  obtain ⟨c0, cadd, cmul, cz, cb, cs, cadj⟩ := GlobalTheory.T.gauge_biadditive_symm_adjoint_integralEnd C V d (I o0) (Fin dd) (Y.raw (p o0)) hX
+  obtain ⟨M, hadj, hfix, hkill, himg⟩ := _root_.GlobalTheory.PlaceProj.exists_orth_proj C V O dd Y d Orb I p hs
+  have hX := _root_.GlobalTheory.RowLawPair.rLaw_pairData C V O dd Y d (I o0) (p o0)
+  obtain ⟨W, W', hW, hW', aW, hL⟩ := _root_.GlobalTheory.ActionEnd.exists_isEnd_act C V O dd Y d (I o0) (p o0) Y.w0
+  obtain ⟨c0, cadd, cmul, cz, cb, cs, cadj⟩ := _root_.GlobalTheory.RowVal.EndCalc.end_calc C V d (I o0) (Fin dd) (Y.raw (p o0)) hX
   have aM : ∀ o g, IsEnd (Y.raw (p o0)) V (M o g) (M o (1 - g)) := by
     intro o g
     fin_cases g
@@ -494,7 +491,7 @@ theorem value_eq_prod : ∀ (C : Type) [Field C] [CharZero C] (V : VF C) (O : Ty
   intro C _ _ V O _ _ dd Y d _ Orb _ I _ p H Ls n hs P _ Po hQ kind hk S t ht gr hg
   classical
   have hg' : ∀ ρ o, gr o ρ ∈ ExpInt (Y.raw (p o)) V := fun ρ o => by
-    rw [← GlobalTheory.T.integralGerm_eq_gaugedFormalGroupLaw_expIntegral C V d (I o) (Fin dd) (Y.raw (p o)) (GlobalTheory.T.isIntegralGaugedFormalGroupLaw_pairData C V O dd Y d (I o) (p o)) (H o).cartH (S o) (t o)
+    rw [← _root_.GlobalTheory.RowLaw.intGerm_eq_expInt C V d (I o) (Fin dd) (Y.raw (p o)) (_root_.GlobalTheory.RowLawPair.rLaw_pairData C V O dd Y d (I o) (p o)) (H o).cartH (S o) (t o)
       (ht o)]
     exact hg o ρ
   choose f hfi hf using fun ρ => one_row Y p hs (fun o => gr o ρ) (hg' ρ)
@@ -520,7 +517,7 @@ theorem value_eq_prod : ∀ (C : Type) [Field C] [CharZero C] (V : VF C) (O : Ty
     · simp
   unfold FBChart.nab nabValN
   rw [hj, e1, ← hQ, all_rows Y p n gr f fun ρ v => hf ρ _ v]
-  have hp := GlobalTheory.T.jetAt0_prod_subst_disjoint_variables C Orb (fun o => Fin n × WV (I o)) (Fin n × WVO I)
+  have hp := _root_.GlobalTheory.JetProdSubst.jetAt0_prod_subst C Orb (fun o => Fin n × WV (I o)) (Fin n × WVO I)
     (fun o x => (x.1, (⟨o, x.2⟩ : WVO I))) (by
       rintro ⟨o, ρ, w⟩ ⟨o', ρ', w'⟩ h
       simp only [Prod.mk.injEq, Sigma.mk.injEq] at h
@@ -528,6 +525,6 @@ theorem value_eq_prod : ∀ (C : Type) [Field C] [CharZero C] (V : VF C) (O : Ty
       rw [eq_of_heq h]) Po
     (fun o => ∏ ρ, (rowCopy ρ (gr o ρ) * mvExp (rowCopy ρ (Y.raw (p o)).hRow)))
   refine hp.trans (Finset.prod_congr rfl fun o _ => ?_)
-  exact (GlobalTheory.T.admissibleRows_value_eq_rowGauge C V d (I o) (Fin dd) (Y.raw (p o)) (H o) n (Po o) (kind o) (hk o) (gr o)).symm
+  exact (_root_.GlobalTheory.RowVal.valOf_eq_hRow C V d (I o) (Fin dd) (Y.raw (p o)) (H o) n (Po o) (kind o) (hk o) (gr o)).symm
 
 end GlobalTheory.RowVal

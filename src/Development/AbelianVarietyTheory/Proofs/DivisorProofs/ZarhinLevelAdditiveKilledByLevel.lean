@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.KappaOK
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2942
 
 @[expose] public section
 

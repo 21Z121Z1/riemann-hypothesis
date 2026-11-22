@@ -1,11 +1,9 @@
 module
 
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.WeakShimuraTheory.CompactIntegralFields.RedTan
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.WeakShimuraTheory.SpaceMap
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.WeakShimuraTheory.RedDim
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.WeakShimuraTheory.RedDual
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.CommutativeAlgebra.CoQuot
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.CommutativeAlgebra.CoRes
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.WeakShimuraTheory.Bundle0001
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.WeakShimuraTheory.Bundle0002
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.CommutativeAlgebra.Bundle0001
 
 @[expose] public section
 

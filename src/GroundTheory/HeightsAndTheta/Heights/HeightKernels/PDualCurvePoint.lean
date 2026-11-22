@@ -1,12 +1,12 @@
 module
 
 public import Mathlib
-public import GroundTheory.HeightsAndTheta.Heights.HeightKernels.IsArithVarBotDualBlocksUnit
-public import GroundTheory.HeightsAndTheta.Heights.HeightsOfSets.PCoordCurveDegree
-public import GroundTheory.HeightsAndTheta.Heights.HeightsOfSets.PCurveComplexPoint
+public import GroundTheory.HeightsAndTheta.Heights.HeightKernels.Bundle0024
+public import GroundTheory.HeightsAndTheta.Heights.HeightsOfSets.Bundle0005
+public import GroundTheory.HeightsAndTheta.Heights.HeightsOfSets.Bundle0004
 public import GroundTheory.HeightsAndTheta.Heights.HeightKernels.PCoordConeArithVar
-public import GroundTheory.HeightsAndTheta.Heights.Intersections.FlagBundleSt
-public import GroundTheory.HeightsAndTheta.Heights.WeightedHomogeneous.POneBlockPoints
+public import GroundTheory.HeightsAndTheta.Heights.Intersections.Bundle0017
+public import GroundTheory.HeightsAndTheta.Heights.WeightedHomogeneous.Bundle0003
 
 @[expose] public section
 

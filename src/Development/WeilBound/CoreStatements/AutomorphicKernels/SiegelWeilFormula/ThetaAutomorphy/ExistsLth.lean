@@ -2,13 +2,15 @@ module
 
 public import Development.WeilBound.CoreStatements.AutomorphicKernels.SiegelWeilFormula.ThetaAutomorphy.ThetaSumSRat
 public import Development.WeilBound.ThetaLifts.LatticeBasics.FdEqZero
-public import Development.WeilBound.ThetaLifts.FrameEstimates.GrpTop
-public import Development.WeilBound.ThetaLifts.FrameEstimates.BlockForm
+public import Development.WeilBound.ThetaLifts.FrameEstimates.Bundle0003
+public import Development.WeilBound.ThetaLifts.FrameEstimates.Bundle0002
 public import Development.WeilBound.ThetaLifts.FrameEstimates.SiegelAll
-public import Development.WeilBound.ThetaLifts.FrameEstimates.FundamentalDomainFiniteVolume
-public import Development.WeilBound.ThetaLifts.CartanFactorisation.Unimod
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsAdmittedFormEqAdelicThetaDistributionStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SchwartzMapBarrelledSpaceStatement
+public import Development.WeilBound.ThetaLifts.CartanFactorisation.Bundle0003
+public import Mathlib
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1598
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsINeZeroKind
+public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.NotIsCompactUnivFv
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SchwartzMapBarrelledSpace
 
 @[expose] public section
 
@@ -30,7 +32,7 @@ theorem cpt (hS : GlobalTheory.Published.SiegelSetUnitary) (d : SD σ) : Cpt σ 
   · exact h F E σ d.B d.m d.A d.r d.s d.ok.good (Or.inr hA) d.ok.aniso
 
 theorem exists_lth (d : SD σ) : ∃ l ∈ (adeleClass F).adm d.κ, ∀ Φ ∈ d.sch, l Φ = thetaSum F Φ :=
-  GlobalTheory.T.exists_admitted_form_eq_adelicThetaDistribution F d.κ
+  _root_.GlobalTheory.ThetaAdmitted.exists_admitted_form_eq_adelicThetaDistribution_alt F d.κ
 
 theorem cont_S (d : SD σ) {Ψ : d.Fn} (hΨ : Ψ ∈ d.sch) : Continuous fun g : UA σ d.A.J => thetaSum F (d.S g Ψ) := by
   obtain ⟨l, hl, hlθ⟩ := exists_lth d

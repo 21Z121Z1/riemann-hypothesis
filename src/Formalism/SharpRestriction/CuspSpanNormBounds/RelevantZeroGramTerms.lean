@@ -6,7 +6,7 @@ public import Formalism.RealPlaceAnalysis.InstMeasurableSpaceUJ
 public import Formalism.FormalDegreeBessel.StatementDS
 public import Formalism.FormalDegreeBessel.StatementRP
 public import Formalism.SharpRestriction.CuspSpanNormBounds.DataS
-public import Formalism.SharpRestriction.CuspSpanNormBounds.Point
+public import Formalism.SharpRestriction.CuspSpanNormBounds.Bundle0001
 
 @[expose] public section
 

@@ -1,6 +1,6 @@
 module
 
-public import Formalism.HermitianCurvature.PrimeToDifferent
+public import Formalism.HermitianCurvature.Bundle0004
 
 @[expose] public section
 

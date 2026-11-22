@@ -1,10 +1,10 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CommOfBezout
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.NormDetLeOneOfEntriesNormLeOne
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsUnitAndIntegInvOfNormDetEqOne
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.UltrametricNormDetOneAddSmulStatement
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0188
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0198
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0197
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0203
 
 @[expose] public section
 

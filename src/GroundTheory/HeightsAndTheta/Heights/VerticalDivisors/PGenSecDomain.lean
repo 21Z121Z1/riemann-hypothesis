@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import GroundTheory.HeightsAndTheta.Heights.VerticalDivisors.StatementsChowNorm
-public import GroundTheory.HeightsAndTheta.Heights.VerticalDivisors.ComapMaximalIdealParDVR
+public import GroundTheory.HeightsAndTheta.Heights.VerticalDivisors.Bundle0008
+public import GroundTheory.HeightsAndTheta.Heights.VerticalDivisors.Bundle0006
 public import GroundTheory.HeightsAndTheta.Heights.ChowForms.Statements
 public import GroundTheory.HeightsAndTheta.Heights.ChowForms.StatementsSectionOrder
 

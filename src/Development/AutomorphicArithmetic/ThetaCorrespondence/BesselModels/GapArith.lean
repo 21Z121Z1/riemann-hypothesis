@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.LevelModelsOfFunctoriality
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0327
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HighestWeightBelow
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.CartFrSgn
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0221
 
 @[expose] public section
 

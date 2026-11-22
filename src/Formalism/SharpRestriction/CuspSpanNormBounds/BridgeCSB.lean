@@ -1,7 +1,7 @@
 module
 
-public import Formalism.SharpRestriction.CuspSpanNormBounds.PExtra
-public import Formalism.FormalDegreeBessel.FinalG
+public import Formalism.SharpRestriction.CuspSpanNormBounds.Bundle0009
+public import Formalism.FormalDegreeBessel.Bundle0002
 
 @[expose] public section
 

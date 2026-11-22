@@ -4,7 +4,7 @@ public import Mathlib
 public import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.StatementsBlowUpFibreSemilocalCut
 public import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.PBlowUpModel
 public import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.LiftFormNotMemBlowUpOf
-public import GroundTheory.HeightsAndTheta.Heights.FieldsOfNumbers.ContractRelevant
+public import GroundTheory.HeightsAndTheta.Heights.FieldsOfNumbers.Bundle0002
 
 @[expose] public section
 

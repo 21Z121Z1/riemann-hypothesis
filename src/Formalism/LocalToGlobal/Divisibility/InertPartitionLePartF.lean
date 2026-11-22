@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Formalism.LocalToGlobal.Divisibility.InertRationalAdjoint
+public import Formalism.LocalToGlobal.Divisibility.Bundle0003
 public import Formalism.LocalToGlobal.Divisibility.RowLatLemmas
 
 @[expose] public section

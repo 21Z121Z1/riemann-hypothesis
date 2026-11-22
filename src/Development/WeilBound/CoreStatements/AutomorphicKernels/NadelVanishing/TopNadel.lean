@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Development.WeilBound.CoreStatements.PublishedTheorems.NadelVanishingPairs.NadelVanishingLemmas.NadelVanishingPairsOfPrincipalisation
-public import Development.WeilBound.CoreStatements.ResolutionCharZero.PrincipalisationClosed
+public import Development.WeilBound.CoreStatements.ResolutionCharZero.Bundle0003
 
 @[expose] public section
 

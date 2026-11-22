@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Formalism.LocalRingCardinality.RhoDetPrimeEqMuTildeMulChiPow
-public import Formalism.LocalToGlobal.UnitaryNorms.CharUniq
+public import Formalism.LocalToGlobal.UnitaryNorms.Bundle0005
 
 @[expose] public section
 

@@ -3,7 +3,7 @@ module
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.Divisors.IsCyclotomicExtensionQI
 public import Development.AbelianVarietyTheory.Definitions.Divisors.TwOrbMEqTwOrbUOfNormal
-public import Development.AbelianVarietyTheory.Definitions.Divisors.PointSide
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0029
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.T2SpaceTensorRatFiniteAlgebraModuleTopology
 
 @[expose] public section

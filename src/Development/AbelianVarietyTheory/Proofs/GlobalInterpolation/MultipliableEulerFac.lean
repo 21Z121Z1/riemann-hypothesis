@@ -1,8 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.BlockTheory.GlobalSignature.LocalDualIndex
-public import Development.AbelianVarietyTheory.BlockTheory.GlobalSignature.LocalDensityEuler
+public import Development.AbelianVarietyTheory.BlockTheory.GlobalSignature.Bundle0004
 public import Formalism.GL3MeanSquares.HookFormulaTorsion.SumWeightsOverPrimeLeHalfDegree
 
 @[expose] public section

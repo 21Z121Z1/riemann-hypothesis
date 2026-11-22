@@ -4,9 +4,9 @@ public import Development.AutomorphicArithmetic.AutomorphicVarieties.LevelCohomo
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.UnitaryThreeDeformations.FiniteResidue
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.GeneratorCountTuples.LemmaK
 public import Formalism.GaloisCohomology.LocalTateDualityK
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.LevelCohomology.SoAdicCont
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.LevelCohomology.FdAdjoinRange
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.GaloisLibrary.SelmerTransport.DvrFacts
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.LevelCohomology.Bundle0004
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.LevelCohomology.Bundle0014
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.GaloisLibrary.SelmerTransport.Bundle0007
 
 @[expose] public section
 

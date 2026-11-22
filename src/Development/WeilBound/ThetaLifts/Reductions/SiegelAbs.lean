@@ -1,7 +1,7 @@
 module
 
 public import Development.WeilBound.ThetaLifts.Reductions.SiegelCore
-public import Development.WeilBound.ThetaLifts.FrameEstimates.LeHeightOfIsTorusElt
+public import Development.WeilBound.ThetaLifts.FrameEstimates.Bundle0007
 
 @[expose] public section
 

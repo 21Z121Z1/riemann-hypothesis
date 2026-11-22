@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.TeichmullerCharacterOrderGenerates
+public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.Bundle0005
 
 @[expose] public section
 

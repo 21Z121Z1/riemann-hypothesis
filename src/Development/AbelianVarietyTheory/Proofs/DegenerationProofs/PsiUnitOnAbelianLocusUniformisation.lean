@@ -4,19 +4,18 @@ public import Mathlib
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.RigidSys
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.CubeVal
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.UnifUniqSt
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.IsNsmul
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.QkToAkU
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.Bundle0005
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.Bundle0006
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.DiscreteValuationRings.TwistBCPf
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.OneArc
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.AbProj
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.Bundle0007
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.Bundle0006
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.BCTools
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.SabPull
 public import Development.AbelianVarietyTheory.Definitions.Degenerations.AdmissiblePadicIntMaximalIdeal
 public import Development.AbelianVarietyTheory.Proofs.CoherentCohomologyProofs.MemRangeOfForallHeightEqOneOfIsReflexive
-public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.PsiUnitOnOfFixedOverUnramifiedExtensionStatement
-public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsUnramifiedExtTorsionPointsGoodReductionStatement
-public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.QkToAkUInvariantUnderFieldEmbeddingStatement
-public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.UniformisationTorsionIdentificationWithPairing
+public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.PsiUnitOnOfFixedOverUnramifiedExtension
+public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsUnramifiedExtTorsionPointsGoodReduction
+public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.Bundle0089
+public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.Bundle0128
 
 @[expose] public section
 
@@ -264,7 +263,7 @@ theorem psiUnitOn_abLocus : Laws → Laws2 → Laws3 → Laws4 → Laws5 → ∀
   have := hB.2.2.1
   obtain ⟨n, hn, hu⟩ := exists_two_le_isUnit R
   refine psiUnitOn_of_height_one D.toPre y _ fun P hP h1 => ?_
-  refine T.psiUnitOn_of_fixed_over_unramified_extension h₁ h₂ R D.toPre D.tau_bimult D.psi_even P h1 n hn (fun j => ?_) y
+  refine _root_.GlobalTheory.UnramTorsion.psiUnitOn_of_unramified h₁ h₂ R D.toPre D.tau_bimult D.psi_even P h1 n hn (fun j => ?_) y
   have := PrimeSpectrum.isPrime P
   let T := Localization.AtPrime (PrimeSpectrum.asIdeal P)
   let F := AlgebraicClosure (FractionRing R)
@@ -286,7 +285,7 @@ theorem psiUnitOn_abLocus : Laws → Laws2 → Laws3 → Laws4 → Laws5 → ∀
         (IsLocalRing.le_maximalIdeal (PrimeSpectrum.isPrime x).ne_top hr')
     exact ((PrimeSpectrum.le_iff_specializes (spMap (algebraMap R T) x) P).mp le).mem_open hO hP
   have hk : 1 ≤ n ^ j := Nat.one_le_pow _ _ (by omega)
-  obtain ⟨T', hT', hπ, hx⟩ := GlobalTheory.T.exists_unramified_ext_torsion_points_good_reduction h₁ h₂ T _ (IsSemiAbelian.pullback _ G hG) hab F hinj (n ^ j)
+  obtain ⟨T', hT', hπ, hx⟩ := _root_.GlobalTheory.exists_unramified_torsion_points h₁ h₂ T _ (IsSemiAbelian.pullback _ G hG) hab F hinj (n ^ j)
     (by simpa using (hu.map (algebraMap R T)).pow j)
   refine ⟨T'.toSubring, hT', algebraMap T T', fun r => RingHom.congr_fun hcomp r, hπ, fun σ hσ p q hpq => ?_⟩
   have hσR : ∀ r : R, σ (algebraMap (FractionRing R) F (algebraMap R _ r)) =

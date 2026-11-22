@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import GroundTheory.ProfiniteCohomology.Colimit
-public import GroundTheory.ProfiniteCohomology.AdditiveHilbert
+public import GroundTheory.ProfiniteCohomology.Bundle0006
+public import GroundTheory.ProfiniteCohomology.Bundle0001
 public import GroundTheory.ProfiniteCohomology.GaloisCohomology.UnitsInflationCochainsFHomApply
 
 @[expose] public section

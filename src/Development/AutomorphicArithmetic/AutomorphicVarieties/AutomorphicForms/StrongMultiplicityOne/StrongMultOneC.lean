@@ -2,8 +2,8 @@ module
 
 public import Mathlib
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.StrongMultiplicityOne.Imports
-public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.IsUnitaryOfCharIff
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SatakeParametersOfTwist
+public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.Bundle0007
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0896
 
 @[expose] public section
 

@@ -1,13 +1,13 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Divisors.SiegelWeilAnisotropicHermitian
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0044
 public import Development.AbelianVarietyTheory.Definitions.Divisors.CTSmallCone
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsUSplittingTrRep
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ActFromBlocks
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntegralAdelicPureTensorEqProductLocalStatement
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0213
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1543
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1627
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdelicSchwartzFinitePureTensors
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EventuallyIntegralPointsIndicatorIsVacuum
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1573
 public import ReciprocityTheory.GeneralLinearIntegers.AlgebraMapIntMemOint
 
 @[expose] public section

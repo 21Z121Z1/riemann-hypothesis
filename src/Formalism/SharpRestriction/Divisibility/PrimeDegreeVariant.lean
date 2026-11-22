@@ -2,9 +2,9 @@ module
 
 public import Mathlib
 public import Formalism.LocalRingCardinality.PrincipalHermitianLattice
-public import Formalism.LocalRingCardinality.DataKap
+public import Formalism.LocalRingCardinality.Bundle0004
 public import Formalism.SharpRestriction.ParConsts
-public import Formalism.SharpRestriction.LevelLetterCocycles.ArithmeticCylinders
+public import Formalism.SharpRestriction.LevelLetterCocycles.Bundle0004
 public import Formalism.CyclotomicNorms.NonsquarefreeBounds.NonsquarefreeMonicBoundHolds
 
 @[expose] public section

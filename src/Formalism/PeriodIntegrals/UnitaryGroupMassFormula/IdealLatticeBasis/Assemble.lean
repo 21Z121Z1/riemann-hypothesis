@@ -1,10 +1,9 @@
 module
 
 public import Mathlib
-public import Formalism.PeriodIntegrals.IdealLattice
-public import Formalism.PeriodIntegrals.AreaLat
+public import Formalism.PeriodIntegrals.Bundle0011
 public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.IdealLatticeBasis.IdealBasisAlt
-public import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.AreaLat
+public import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.Bundle0005
 
 @[expose] public section
 

@@ -4,8 +4,8 @@ public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.PowerSeriesVecReduceModUMulVec
 public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.IsUltrametricDistFinExt
 public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.IsAdicCompleteOfPowLe
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.TiltWittEqZeroOfPrimeMulEqZero
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FrobeniusSubOneWittTensorLatticeSurjectiveFixed
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0262
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0255
 
 @[expose] public section
 

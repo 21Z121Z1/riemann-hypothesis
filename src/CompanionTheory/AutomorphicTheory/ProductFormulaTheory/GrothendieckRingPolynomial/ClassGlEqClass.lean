@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import CompanionTheory.AutomorphicTheory.ProductFormulaTheory.GrothendieckRingPolynomial.PhiZBijective
+public import CompanionTheory.AutomorphicTheory.ProductFormulaTheory.GrothendieckRingPolynomial.Bundle0003
 
 @[expose] public section
 

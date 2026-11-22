@@ -1,6 +1,6 @@
 module
 
-public import Formalism.LocalToGlobal.ProjectiveLattices.PowMapMemOfPowMulMem
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0003
 public import Formalism.SharpRestriction.GenusPolyhedralBounds.RelativeIndexClassSets.RestrictionEqZeroIffMemVanishingFiltration
 
 @[expose] public section

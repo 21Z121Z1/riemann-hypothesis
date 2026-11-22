@@ -2,8 +2,8 @@ module
 
 public import Mathlib
 public import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.ThetaParseval.SplitLineSubtraction.SubtractOf
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Mono0OfLpDimEqOne
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.RelationOperations
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0044
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0364
 
 @[expose] public section
 

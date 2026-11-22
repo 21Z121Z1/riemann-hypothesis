@@ -4,7 +4,7 @@ public import Mathlib
 public import Formalism.MeanHeightDescent.MuMaxMinkowski
 public import Formalism.MeanHeightDescent.BadRowsNumeric
 public import Formalism.MeanHeightDescent.CombinedAverageDegreeBound
-public import Formalism.MeanHeightDescent.AverageDegreeBounds.CovolumeAssemblyHolds
+public import Formalism.MeanHeightDescent.AverageDegreeBounds.Bundle0001
 public import Formalism.MeanHeightDescent.AverageDegreeBounds.SumComponents
 
 @[expose] public section

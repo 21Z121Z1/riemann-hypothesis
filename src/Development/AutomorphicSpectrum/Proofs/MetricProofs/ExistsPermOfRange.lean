@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Proofs.MetricProofs.HasStepCharts
-public import Development.AutomorphicSpectrum.Proofs.MetricProofs.SelM
+public import Development.AutomorphicSpectrum.Proofs.MetricProofs.Bundle0032
+public import Development.AutomorphicSpectrum.Proofs.MetricProofs.Bundle0035
 
 @[expose] public section
 

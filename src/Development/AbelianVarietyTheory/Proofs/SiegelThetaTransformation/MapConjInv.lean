@@ -2,9 +2,9 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.SpanningFamilies.IsSystem
-public import Development.AbelianVarietyTheory.Definitions.SpanningFamilies.IsHeatZero
+public import Development.AbelianVarietyTheory.Definitions.SpanningFamilies.Bundle0001
 public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.UnitaryActHalfSpace
-public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.DblZMemHn
+public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.Bundle0024
 
 @[expose] public section
 

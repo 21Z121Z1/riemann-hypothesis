@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.GaloisLibrary.GaloisCohomologyLength.LevelInertiaLeLevelDec
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SelAllLeInf
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0311
 
 @[expose] public section
 

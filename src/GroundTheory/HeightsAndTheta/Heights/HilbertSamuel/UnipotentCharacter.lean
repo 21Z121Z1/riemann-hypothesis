@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsEuclideanSections
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PLatticeCount
+public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0021
+public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0017
 public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PSmallBallVolume
 
 @[expose] public section

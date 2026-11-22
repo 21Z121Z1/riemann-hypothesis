@@ -1,11 +1,11 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.UnderTie
-public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.XiEntryInvariant
+public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.Bundle0023
+public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0143
 public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExistsOfStarEq
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExistsPowEqSpan
-public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.DetIntOfLevel
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0245
+public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.Bundle0028
 
 @[expose] public section
 

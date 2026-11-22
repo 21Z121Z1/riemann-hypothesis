@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import GroundTheory.ArithmeticGeometry.AbelianVarieties.DualWeil
+public import GroundTheory.ArithmeticGeometry.AbelianVarieties.Bundle0005
 
 @[expose] public section
 

@@ -3,16 +3,16 @@ module
 public import Mathlib
 public import Development.AutomorphicSpectrum.Definitions.MetricPeriods.IsTwiceDifferentiableAt
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArithmeticIntersection.CompRightEqZero
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArithmeticIntersection.KappaSt
-public import GroundTheory.HeightsAndTheta.Heights.Intersections.StatementsFibreLocal
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArithmeticIntersection.Bundle0001
+public import GroundTheory.HeightsAndTheta.Heights.Intersections.Bundle0003
 public import GroundTheory.HeightsAndTheta.Heights.Antisymmetric.Statements
 public import ReciprocityTheory.AnalyticForms.LeviForms.HomDens
-public import ReciprocityTheory.AnalyticForms.PotentialTheory.PshShiftA
-public import Development.AutomorphicSpectrum.Proofs.MetricProofs.IsOpenFlagDomainNondegenerateMinorsStatement
-public import Development.AutomorphicSpectrum.Proofs.MetricProofs.LogDetComparableGramBoundStatement
-public import Development.AutomorphicSpectrum.Proofs.MetricProofs.GramLogUnitaryTriangularInvarianceStatement
-public import Development.AutomorphicSpectrum.Proofs.MetricProofs.LocalBruhatCellAnalyticCoordinatesStatement
-public import Development.AutomorphicSpectrum.Proofs.MetricProofs.FlagPotentialLeviFormCellStatement
+public import ReciprocityTheory.AnalyticForms.PotentialTheory.Bundle0001
+public import Development.AutomorphicSpectrum.Proofs.MetricProofs.IsOpenFlagDomainNondegenerateMinors
+public import Development.AutomorphicSpectrum.Definitions.MetricPeriods.Bundle0001
+public import Development.AutomorphicSpectrum.Proofs.MetricProofs.Bundle0006
+public import Development.AutomorphicSpectrum.Proofs.MetricProofs.Bundle0007
+public import Development.AutomorphicSpectrum.Proofs.MetricProofs.Bundle0019
 
 @[expose] public section
 
@@ -99,14 +99,14 @@ theorem plurRe_stepCorr {z0 : Fin e → ℂ} {b : (Fin e → ℂ) → Matrix (Fi
 theorem stepPot_unitary_mul {j : ℕ} {u : Matrix (Fin N) (Fin N) ℂ}
     (hu : gramOf (sigForm N j) u = diagonal fun i => ((sigForm N j i : ℝ) : ℂ))
     (i : Fin N) (g : Matrix (Fin N) (Fin N) ℂ) : stepPot N j i (u * g) = stepPot N j i g := by
-  have h k := (GlobalTheory.T.gram_log_unitary_triangular_invariance N (sigForm N j) k g u 1).1 hu
+  have h k := (_root_.GlobalTheory.CompanionTheory.Ar.PB.gramLog_inv N (sigForm N j) k g u 1).1 hu
   unfold stepPot
   simp only [h]
 
 theorem stepPot_mul_triangular {j : ℕ} (hj : j ≤ N) {c b : Matrix (Fin N) (Fin N) ℂ}
     (hc : InFlagDomain N j c) (hb : b.BlockTriangular id) (hu : IsUnit b.det) (i : Fin N) :
     stepPot N j i (c * b) = stepPot N j i c + stepCorr N j i b := by
-  have h k := (GlobalTheory.T.gram_log_unitary_triangular_invariance N (sigForm N j) k c 1 b).2 hb hu ((GlobalTheory.T.isOpen_flag_domain_nondegenerate_minors N j hj).2 c hc k)
+  have h k := (_root_.GlobalTheory.CompanionTheory.Ar.PB.gramLog_inv N (sigForm N j) k c 1 b).2 hb hu ((_root_.GlobalTheory.CompanionTheory.Ar.PB.flagDomain_open_and_minors N j hj).2 c hc k)
   unfold stepPot stepCorr diagLog
   split_ifs <;> simp only [h] <;> ring
 
@@ -139,7 +139,7 @@ theorem exists_cell_coords {j : ℕ} (hj : j ≤ N) (gc : (Fin e → ℂ) → Ma
       (∀ i, PlurRe z0 fun w => stepPot N j i (gc w) - stepPot N j i (cellMat N (z w))) ∧
       ∀ v, fderiv ℂ z z0 v = 0 ↔
         ((gc z0)⁻¹ * Matrix.of fun a b => fderiv ℂ (fun w => gc w a b) z0 v).BlockTriangular id := by
-  obtain ⟨u, b₀, hu, hb₀, hdet, hub⟩ := GlobalTheory.T.flag_domain_unitary_triangular N j hj (gc z0) hdom.self_of_nhds
+  obtain ⟨u, b₀, hu, hb₀, hdet, hub⟩ := _root_.GlobalTheory.CompanionTheory.Ar.PB.exists_unitary_translate_flag N j hj (gc z0) hdom.self_of_nhds
   have hgu : IsUnit (gc z0).det := hdom.self_of_nhds.1
   have huu : IsUnit u.det := by
     have : u.det * (gc z0).det = b₀.det := by rw [← Matrix.det_mul, hub]
@@ -149,7 +149,7 @@ theorem exists_cell_coords {j : ℕ} (hj : j ≤ N) (gc : (Fin e → ℂ) → Ma
     intro a b
     simp only [Matrix.mul_apply]
     exact Finset.analyticAt_fun_sum _ fun c _ => analyticAt_const.fun_mul (han c b)
-  obtain ⟨z, b, hz, hb, hz0, hev, hiff⟩ := GlobalTheory.T.local_bruhat_cell_analytic_coordinates e N (fun w => u * gc w) z0 han'
+  obtain ⟨z, b, hz, hb, hz0, hev, hiff⟩ := _root_.GlobalTheory.CompanionTheory.Ar.PB.holomorphic_factor_big_cell e N (fun w => u * gc w) z0 han'
     (by simpa only [hub] using hb₀) (by simpa only [hub] using hdet)
   refine ⟨z, hz, hz0, fun i => ?_, fun v => ?_⟩
   · have hcell : ∀ᶠ w in 𝓝 z0, InFlagDomain N j (cellMat N (z w)) := by
@@ -157,7 +157,7 @@ theorem exists_cell_coords {j : ℕ} (hj : j ≤ N) (gc : (Fin e → ℂ) → Ma
         (continuous_cellMat N).continuousAt.comp hz.continuousAt
       have hm : {g : Matrix (Fin N) (Fin N) ℂ | InFlagDomain N j g} ∈ 𝓝 (cellMat N (z z0)) := by
         rw [hz0, cellMat_zero N]
-        exact (GlobalTheory.T.isOpen_flag_domain_nondegenerate_minors N j hj).1.mem_nhds inFlagDomain_base
+        exact (_root_.GlobalTheory.CompanionTheory.Ar.PB.flagDomain_open_and_minors N j hj).1.mem_nhds inFlagDomain_base
       exact hc hm
     obtain ⟨ht, hdb, -⟩ := hev.self_of_nhds
     have hd0 : ∀ a, b z0 a a ≠ 0 := by

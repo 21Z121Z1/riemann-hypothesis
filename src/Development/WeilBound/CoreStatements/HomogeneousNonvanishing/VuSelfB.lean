@@ -2,10 +2,9 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NontrivialIsomClassInt
-public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsIsLBGenTrivOfRatios
-public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.GenericTrivialisationSectionAndPullback
-public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.IsClosedImmersionOfCoordinateDivisibility
-public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.HomExtOfIsOpenImmersion
+public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.Bundle0081
+public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.Bundle0085
+public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.Bundle0049
 public import Development.WeilBound.CoreStatements.HomogeneousNonvanishing.VuSelfA
 
 @[expose] public section

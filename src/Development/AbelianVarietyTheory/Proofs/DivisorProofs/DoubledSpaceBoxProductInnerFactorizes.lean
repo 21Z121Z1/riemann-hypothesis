@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ActOOneOne
-public import Development.AbelianVarietyTheory.Proofs.HeightProofs.CocompactTensor
-public import Development.AbelianVarietyTheory.Proofs.HeightProofs.MeanSquareAddFundamentalDomainOfCocompact
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1367
+public import Development.AbelianVarietyTheory.Proofs.HeightProofs.Bundle0029
+public import Development.AbelianVarietyTheory.Proofs.HeightProofs.Bundle0003
 
 @[expose] public section
 

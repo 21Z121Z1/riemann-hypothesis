@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicArithmetic.Foundations.Convolution.IntegrableConvolution.TrDefs
-public import Development.AutomorphicArithmetic.Foundations.Convolution.IntegrableConvolution.CutIrr
-public import Development.AutomorphicArithmetic.Foundations.Convolution.IntegrableConvolution.AlgTrace
+public import Development.AutomorphicArithmetic.Foundations.Convolution.IntegrableConvolution.Bundle0001
+public import Development.AutomorphicArithmetic.Foundations.Convolution.IntegrableConvolution.Bundle0002
+public import Development.AutomorphicArithmetic.Foundations.Convolution.IntegrableConvolution.Bundle0005
 
 @[expose] public section
 

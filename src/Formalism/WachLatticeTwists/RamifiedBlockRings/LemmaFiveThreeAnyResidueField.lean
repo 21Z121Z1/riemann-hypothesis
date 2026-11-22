@@ -1,7 +1,7 @@
 module
 
 public import Formalism.WachLatticeTwists.RamifiedBlockRings.ChainFromPrimitiveData
-public import Formalism.WachLatticeTwists.RamifiedBlockRings.RightIdealImageOfSurjective
+public import Formalism.WachLatticeTwists.RamifiedBlockRings.Bundle0001
 
 @[expose] public section
 

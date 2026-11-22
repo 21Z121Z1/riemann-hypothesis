@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.PublishedTheorems.SiegelWeil₂.SiegelEisensteinContinuationOfDoublingMethod
+public import Development.AbelianVarietyTheory.PublishedTheorems.SiegelWeil₂.Bundle0001
 
 @[expose] public section
 

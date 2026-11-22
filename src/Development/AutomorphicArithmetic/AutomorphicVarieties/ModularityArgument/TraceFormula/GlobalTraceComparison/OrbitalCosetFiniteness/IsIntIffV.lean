@@ -1,10 +1,10 @@
 module
 
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.TraceFormula.GlobalTraceComparison.OrbitalCosetFiniteness.CvGelfandAlt
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.TraceFormula.GlobalTraceComparison.TraceAsymptotics.HintSph
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.HeckeIndicatorFormula
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IsCompactSupportDcos
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EvenOrdLConjGramDetOfUnitGramAdicCompletion
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.TraceFormula.GlobalTraceComparison.TraceAsymptotics.Bundle0003
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0627
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0752
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1056
 
 @[expose] public section
 

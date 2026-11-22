@@ -3,7 +3,7 @@ module
 public import Mathlib
 public import GroundTheory.GlobalFields.IdeleClassGroup.InvariantsGalois
 public import GroundTheory.GlobalFields.SecondInequality.Cyclic
-public import GroundTheory.LocalFields.HerbrandCyclic
+public import GroundTheory.LocalFields.Bundle0003
 
 @[expose] public section
 

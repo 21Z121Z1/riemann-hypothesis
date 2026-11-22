@@ -1,15 +1,12 @@
 module
 
-public import Formalism.SharpRestriction.FamCore
-public import Formalism.SharpRestriction.ElevenLe
+public import Formalism.SharpRestriction.Bundle0001
 public import Formalism.LocalRingCardinality.DataParams
 public import Formalism.LocalRingCardinality.DataDIV
-public import Formalism.LocalRingCardinality.DataTies
-public import Formalism.LocalRingCardinality.DataParamsT
-public import Formalism.LocalRingCardinality.KernelPlaceMeanBound
-public import Formalism.LocalRingCardinality.DataExtra
-public import Formalism.LocalRingCardinality.DataDIVDefs
-public import Formalism.LocalRingCardinality.DataGatTies
+public import Formalism.LocalRingCardinality.Bundle0003
+public import Formalism.LocalRingCardinality.Bundle0006
+public import Formalism.LocalRingCardinality.Bundle0007
+public import Formalism.LocalRingCardinality.Bundle0001
 public import Formalism.SharpRestriction.GrowthBounds.IsResidueClassZero
 
 @[expose] public section

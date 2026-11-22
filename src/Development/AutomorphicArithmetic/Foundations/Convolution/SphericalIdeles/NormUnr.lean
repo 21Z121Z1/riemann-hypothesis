@@ -2,11 +2,11 @@ module
 
 public import Mathlib
 public import Development.AutomorphicArithmetic.Foundations.Convolution.SphericalIdeles.SphConj
-public import Development.AutomorphicArithmetic.Foundations.Convolution.TraceSplitting.NormCharSplitAlt
+public import Development.AutomorphicArithmetic.Foundations.Convolution.TraceSplitting.Bundle0007
 public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.UnramifiedAtValueHeckeCharCompIdeleNorm
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExistsWeilGroupRestrictExtension
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.DenseRangeUnits
-public import GroundTheory.GlobalFields.NormResidueSymbol.FunctorialFinite
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0146
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0099
+public import GroundTheory.GlobalFields.NormResidueSymbol.Bundle0002
 public import GroundTheory.GlobalFields.IdeleGroups.LocalNormGroups
 
 @[expose] public section

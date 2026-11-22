@@ -1,12 +1,12 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Definitions.MetricPeriods.GroupDict
+public import Development.AutomorphicSpectrum.Definitions.MetricPeriods.Bundle0004
 public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsSheetCover
 public import GroundTheory.HeightsAndTheta.Heights.FiniteCovolume.StatementsProved
 public import GroundTheory.HeightsAndTheta.Heights.CountingLowerBound.Assembly
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArakelovVolumes.UpperBounds.ExhaustStatementPfA
-public import GroundTheory.HeightsAndTheta.Heights.FiniteCovolume.PMahlerCompactness
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArakelovVolumes.UpperBounds.Bundle0002
+public import GroundTheory.HeightsAndTheta.Heights.FiniteCovolume.Bundle0015
 
 @[expose] public section
 

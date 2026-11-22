@@ -3,25 +3,39 @@ module
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.HeightFunctions.GrowthConstantBoundGcR
 public import Development.AbelianVarietyTheory.Definitions.ThetaValues.GamAt
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PullbackSections.NoCommonZeroSt
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PullbackSections.SupBoundPageRows
-public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.ThExprUniqOfChartIndep2
-public import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.PageTwoLeLAndSigns
-public import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.PageRowsOfLe
-public import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.WeightsBelow
-public import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.LeExpOfLogLe
-public import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.LogLeOfLePowMulPow
-public import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.ThetaLatticeWeightScalarNeZeroAndLogBounds
-public import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.ScaledFamily
-public import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.SupBoundsLeGeneratorConstantMulSize
-public import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.LogTwoMulCountLeMulSize
-public import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.GamAtOfLawsCore
-public import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.SizePageRowsOfSizePageAt
-public import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.LowerBoundAtFramesFamilyWithScaledThetaRulesStatement
-public import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.ExistsShortThetaFamilyWithBlockPolynomialRulesStatement
-public import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.ScaledThetaLatticeGeneratorsNoCommonZeroStatement
-public import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.ScaledThetaLatticeLeSupLatticeEveryWeightStatement
-public import Development.AbelianVarietyTheory.Proofs.FormalGroupCharts.HarmonicGermValueChartIndependentStatement
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PullbackSections.Bundle0013
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PullbackSections.Bundle0003
+public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0007
+public import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.Bundle0067
+public import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.Bundle0066
+public import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.Bundle0068
+public import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.Bundle0071
+public import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.Bundle0070
+public import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.Bundle0053
+public import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.Bundle0087
+public import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.Bundle0082
+public import Development.AbelianVarietyTheory.Definitions.ThetaValues.Bundle0001
+public import Development.AbelianVarietyTheory.Definitions.TorusSections.IsTorusOf
+public import Development.AbelianVarietyTheory.Definitions.ThetaValues.Bundle0002
+public import Formalism.SharpRestriction.GenusPolyhedralBounds.RelativeIndexClassSets.Bundle0003
+public import Formalism.SharpRestriction.GenusPolyhedralBounds.RelativeIndexClassSets.Bundle0007
+public import Formalism.SharpRestriction.GenusPolyhedralBounds.RelativeIndexClassSets.LiftIndexPowFourLeDegree
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PullbackSections.Bundle0011
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PullbackSections.Bundle0012
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0037
+public import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.Bundle0081
+public import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.Bundle0054
+public import Development.AbelianVarietyTheory.Proofs.FormalGroupCharts.HarmonicGermValueChartIndependent
+public import Development.AbelianVarietyTheory.Definitions.ArchimedeanThetaValues.Bundle0001
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PlaceDivisors.StChartF
+public import Formalism.SharpRestriction.GenusPolyhedralBounds.RelativeIndexClassSets.Bundle0005
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0040
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0043
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0039
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0034
+public import Formalism.LocalToGlobal.ProjectiveLattices.DepthTie
+public import Development.AbelianVarietyTheory.Definitions.ThetaValues.Generic
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0031
 
 @[expose] public section
 
@@ -92,7 +106,7 @@ set_option maxHeartbeats 4000000 in
 set_option synthInstance.maxHeartbeats 400000 in
 theorem exists_genOK : ∀ (D : D7) (T : Top D) (h : LawsP T) (hinj : Function.Injective D.what₂.OtoLL) (EX : ErrX D) (p j : ℕ) (hj : InR D j) (large₂ : SizeData₂ D) (H : KHyp) (C2 A2 CT : ℝ) (ka wL wF : WeightFamilies.Wt D j) (Tn nP nW : ℕ) (h0 : ℝ), GlobalTheory.PtTie.Oriented T EX → PageOK large₂ (recPJ h j hj) H C2 A2 CT ka wL wF Tn nP nW h0 → ∃ G : GlobalFamilyData (recPJ h j hj) ka wL wF, GenOK h j hj large₂ G (scalOfP (recB h.toLawsCore) hinj EX p ka wL wF Tn) (cc D large₂ C2 A2 7 wL) := by
   intro D T h hinj EX p j hj large₂ H C2 A2 CT ka wL wF Tn nP nW h0 hOr hP
-  have hC := GlobalTheory.T.harmonic_germ_value_chart_independent
+  have hC := _root_.GlobalTheory.harmonicValue_chart_independent
   have hGam : GamAt T.toCore := GlobalTheory.RunIn.gamAt_of_lawsCore D T.toCore h.toLawsCore
   obtain ⟨hrows, -⟩ := GlobalTheory.pageRows_of_pageAt D _ _ j (recPJ h j hj) large₂ H C2 A2 7 CT ka wL wF Tn nP nW h0
     hP.hyp hP.page hP.ck
@@ -112,7 +126,7 @@ theorem exists_genOK : ∀ (D : D7) (T : Top D) (h : LawsP T) (hinj : Function.I
   obtain ⟨-, -, -, hfrr⟩ := GlobalTheory.T.thetaRunParameters_at_typePrimes_product D _ _ j (recPJ h j hj) _ 1 4 0 11
     (scalOfP (recB h.toLawsCore) hinj EX p ka wL wF Tn) large₂ H C2 A2 7 CT ka wL wF Tn nP nW h0 hP.hyp htie hP.page hsupp
   obtain ⟨N, w0, P₁, hharm, hblk, hcont, hspan, hNle, hsup⟩ :=
-    GlobalTheory.T.exists_short_thetaFamily_with_block_polynomial_rules hC D T h hGam large₂ j hj wL hrowsL hL hrn hlast hfrr
+    _root_.GlobalTheory.BlockTh.theta_family_block hC D T h hGam large₂ j hj wL hrowsL hL hrn hlast hfrr
   have hO : OPO large₂ (recB h.toLawsCore) := by
     obtain ⟨-, hSet, -⟩ := hP.hyp
     obtain ⟨-, -, -, -, -, -, -, -, -, -, -, -, -, -, -, -, -, -, -, -, -, -, -, -, hO, -⟩ := hSet
@@ -162,7 +176,7 @@ theorem exists_genOK : ∀ (D : D7) (T : Top D) (h : LawsP T) (hinj : Function.I
     unfold nbR
     push_cast at hl ⊢
     linarith [hO.1]
-  · exact GlobalTheory.T.scaledThetaLattice_generators_noCommonZero hC D T h EX j hj (scalOfP (recB h.toLawsCore) hinj EX p ka wL wF Tn) large₂ H C2 A2 7 CT ka wL wF
+  · exact _root_.GlobalTheory.RunIn.noCommonZero_of_tiedW hC D T h EX j hj (scalOfP (recB h.toLawsCore) hinj EX p ka wL wF Tn) large₂ H C2 A2 7 CT ka wL wF
       Tn nP nW h0 _ _ hP.hyp (by rw [hS]; exact hsOf.1) _ hT
   · exact GlobalTheory.T.lower_bound_at_frames_family_with_scaled_thetaRules hC D T h EX j hj _ 1 4 0 11 (scalOfP (recB h.toLawsCore) hinj EX p ka wL wF Tn) large₂ H C2 A2 7 CT
       ka wL wF Tn nP nW h0 hP.hyp htie hP.page hsupp P₁ hharm hblk N' _

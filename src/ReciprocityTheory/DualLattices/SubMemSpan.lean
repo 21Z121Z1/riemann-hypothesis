@@ -1,6 +1,6 @@
 module
 
-public import ReciprocityTheory.DualLattices.LinPairStatement
+public import ReciprocityTheory.DualLattices.Bundle0014
 public import ReciprocityTheory.DualLattices.IsPairingValueAddRight
 
 @[expose] public section

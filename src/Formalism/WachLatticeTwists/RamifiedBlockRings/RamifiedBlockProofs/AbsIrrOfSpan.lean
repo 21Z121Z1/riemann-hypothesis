@@ -6,9 +6,9 @@ public import Formalism.WachLatticeTwists.RamifiedBlockRings.DistinctEigenvalueC
 public import Formalism.WachLatticeTwists.CoprimeLiftBounds.CoprimeLiftProofs.TheoremNFiveDeltaClause
 public import Formalism.WachLatticeTwists.RamifiedBlockRings.RamifiedBlockProofs.DensityPointOfCornerSimple
 public import Formalism.WachLatticeTwists.RamifiedBlockRings.Statement
-public import Formalism.WachLatticeTwists.RamifiedBlockRings.RamifiedBlockProofs.IdemFactor
-public import Formalism.CharacterColumnKernels.IdempotentNormalForms.MemCcIdealIffForall
-public import Formalism.CharacterColumnKernels.IdempotentNormalForms.LengthKerOfDetEqZero
+public import Formalism.WachLatticeTwists.RamifiedBlockRings.RamifiedBlockProofs.Bundle0004
+public import Formalism.CharacterColumnKernels.IdempotentNormalForms.Bundle0004
+public import Formalism.CharacterColumnKernels.IdempotentNormalForms.Bundle0001
 
 @[expose] public section
 

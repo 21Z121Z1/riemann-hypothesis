@@ -1,6 +1,6 @@
 module
 
-public import Development.EtaleCohomology.EtaleSheaves.KummerSequence.LeafKumSecSurjPf
+public import Development.EtaleCohomology.EtaleSheaves.KummerSequence.Bundle0001
 
 @[expose] public section
 

@@ -1,7 +1,7 @@
 module
 
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.IsCompletedStrictHens
-public import ReciprocityTheory.AnalyticForms.RegularLocalRings.LogResStC
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.Bundle0001
+public import ReciprocityTheory.AnalyticForms.RegularLocalRings.Bundle0002
 
 @[expose] public section
 

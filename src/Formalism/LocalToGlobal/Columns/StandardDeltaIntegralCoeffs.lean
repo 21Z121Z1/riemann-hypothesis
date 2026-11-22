@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Formalism.LocalToGlobal.Columns.SummandSlopeOfThreeLemmas
-public import Formalism.LocalToGlobal.Columns.MaxSlopeOrthogonalNegLog
+public import Formalism.LocalToGlobal.Columns.Bundle0016
+public import Formalism.LocalToGlobal.Columns.Bundle0018
 
 @[expose] public section
 

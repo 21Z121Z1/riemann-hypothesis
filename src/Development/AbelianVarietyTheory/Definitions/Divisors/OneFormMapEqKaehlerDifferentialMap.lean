@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Divisors.CrystallineConnectionFormCoboundaryZero
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0005
 
 @[expose] public section
 

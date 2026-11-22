@@ -1,16 +1,15 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ThetaEqB
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IsThetaSubSelf
-public import Development.AbelianVarietyTheory.Definitions.Divisors.DiscreteSeriesHermitianUnique
-public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.HoweDualityUnitary
-public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.HoweDualityReal
-public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisGeometry₂.HypothesesAbsDet
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.PairInfApply
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ActsDIffDOp
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0295
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0146
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0041
+public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.Bundle0011
+public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisGeometry₂.Bundle0001
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0150
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1411
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnitaryLieElementsGenerateOneParamLines
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ArchActionReadingsCompatible
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1215
 
 @[expose] public section
 

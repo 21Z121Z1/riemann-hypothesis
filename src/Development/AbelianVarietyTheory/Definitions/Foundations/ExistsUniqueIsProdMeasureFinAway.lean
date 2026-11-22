@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.IsOpenIsCompactLevelOffFinEmpty
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.EventuallyAlgebraMapMemIntegers
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0293
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0292
 
 @[expose] public section
 

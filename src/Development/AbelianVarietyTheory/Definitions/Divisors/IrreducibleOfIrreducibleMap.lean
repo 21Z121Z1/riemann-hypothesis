@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Divisors.PointHeight
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0002
 public import Development.AbelianVarietyTheory.Definitions.ThetaMetrics.AevalEqZeroOfHomogeneousComponent
 
 @[expose] public section

@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicArithmetic.CommutativeAlgebra.EtaleCohomology.GoodRoot
+public import Development.AutomorphicArithmetic.CommutativeAlgebra.EtaleCohomology.Bundle0001
 
 @[expose] public section
 

@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Formalism.PadicSubsetSums.CentralIdempotents.IsConstituent
-public import Formalism.PadicSubsetSums.CentralIdempotents.GaloisConjCentralIdempotent
+public import Formalism.PadicSubsetSums.CentralIdempotents.Bundle0001
+public import Formalism.PadicSubsetSums.CentralIdempotents.Bundle0002
 
 @[expose] public section
 

@@ -1,7 +1,7 @@
 module
 
 public import Development.WeilBound.RepresentationTheoryGL.UnitaryDualProof.HermitianForms.SelfAdjointForms.FixK
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.RelIndexLatticeEqHaarDetStatement
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0108
 
 @[expose] public section
 

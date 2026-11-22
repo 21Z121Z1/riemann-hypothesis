@@ -1,7 +1,7 @@
 module
 
 public import Formalism.HermitianCurvature.WeylElementCommutesLevelOne
-public import Formalism.FormalDegreeBessel.FinalG
+public import Formalism.FormalDegreeBessel.Bundle0002
 public import Formalism.HermitianCurvature.HermitianCurvatureProofs.ConjugationContinuousOnInvertible
 public import Formalism.HermitianCurvature.HermitianCurvatureProofs.CompactGroupHaarExists
 public import Formalism.HermitianCurvature.HermitianCurvatureProofs.OppositeWeylSubgroupClosed

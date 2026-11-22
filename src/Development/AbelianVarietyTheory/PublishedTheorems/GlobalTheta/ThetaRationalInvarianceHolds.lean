@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.InertPrimeOrderParitySignRadicalIntegralForm
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsWeilOfVacuum
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0285
 
 @[expose] public section
 

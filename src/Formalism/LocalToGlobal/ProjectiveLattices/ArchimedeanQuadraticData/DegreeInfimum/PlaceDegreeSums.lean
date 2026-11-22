@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.Rationality.GlobSt
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.Rationality.Bundle0002
 
 @[expose] public section
 

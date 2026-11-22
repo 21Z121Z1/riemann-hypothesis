@@ -2,39 +2,39 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.RowsPtAt
-public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.CollSBound
-public import Formalism.LocalToGlobal.SiegelLatticeTheory.FlagStabilizerTensors.RootLatticeThresholds.LoopEvaluationThresholdZero
-public import Formalism.LocalToGlobal.SiegelLatticeTheory.FlagStabilizerTensors.RootLatticeThresholds.DegenerateConstant
+public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.Bundle0007
+public import Formalism.LocalToGlobal.SiegelLatticeTheory.FlagStabilizerTensors.RootLatticeThresholds.Bundle0051
+public import Formalism.LocalToGlobal.SiegelLatticeTheory.FlagStabilizerTensors.RootLatticeThresholds.Bundle0021
 public import Formalism.LocalToGlobal.SiegelLatticeTheory.FlagStabilizerTensors.LoopTerm
 public import Formalism.SharpRestriction.CuspSpanNormBounds.BruhatCellsKronecker.FamilyStatementOfItemsFourSeven
 public import Formalism.SharpRestriction.CuspSpanNormBounds.AbsoluteAmplitudeSecondOfSource
 public import Formalism.SharpRestriction.CuspSpanNormBounds.BranchingAndRankConstants
-public import Formalism.SharpRestriction.CuspSpanNormBounds.SBridge
+public import Formalism.SharpRestriction.CuspSpanNormBounds.Bundle0005
 public import Development.AbelianVarietyTheory.Statements.DiscreteSeriesShifts.ThmBpDS
 public import Development.AbelianVarietyTheory.Definitions.Jets.SideFam
-public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.FormalDegreeCompactDualIff
+public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.Bundle0003
 public import Formalism.SharpRestriction.CuspSpanNormBounds.OnePlaceEstimates
-public import Formalism.SharpRestriction.CuspSpanNormBounds.BridgeLitG
-public import Formalism.SharpRestriction.CuspSpanNormBounds.CayleyDegreeNondegeneracy.FamilyStatementOfAbsAndVandermonde
+public import Formalism.SharpRestriction.CuspSpanNormBounds.Bundle0017
+public import Formalism.SharpRestriction.CuspSpanNormBounds.CayleyDegreeNondegeneracy.Bundle0006
 public import Formalism.LocalToGlobal.SiegelLatticeTheory.HaarTransversals.UnitaryHaarProducts.SettingBlocks
 public import Formalism.HermitianCurvature.BesselNonvanishingReduction
 public import Formalism.SharpRestriction.CuspSpanNormBounds.LocalBesselAndTopKernel
 public import Formalism.SharpRestriction.GlobalSchurBounds.ThickPlacesCorollaryOfAnyTranslate
 public import Formalism.HermitianCurvature.HeisenbergConjugationMeasurePreserving
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.LevelPrimeSplitsCompletelyInCmField
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.FinprodPlacesOverTypePrimesSplit
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.LocalIndicesColumnRowLevelsExact
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.StdLatIsOrthoLatticeAndMassProperties
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ProdSubEqProdFactorial
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.RowHCParameterIsHCParamAndFormalDegreePos
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsIsFdegSmulOfIsDS
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsDiscreteSeriesFormalDegreeProduct
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.MassRatioStatement
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.RowsRawMassAndGenusMass
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ElementarySizeBoundsOfSizeHypotheses
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ExistsThresholdCriticalLevelLowerBoundStatement
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.RowColumnShapeOfWindowDataWidthGeOne
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.NormalizedFormalDegreeEqVandermondeOfSizesStatement
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0210
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0225
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0227
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0228
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0331
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0115
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0112
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0127
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0362
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0414
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0084
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0088
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0279
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0428
 
 @[expose] public section
 
@@ -282,8 +282,8 @@ namespace GlobalTheory.Core.Deg
 theorem smallOn_univ_unconditional : SmallOn Set.univ := by
   intro Cg cb Cu cT CT δ hcb _ hδ
   obtain ⟨t1, h1⟩ := elementary_size_bounds_of_size_hypotheses (8 / Real.log (1 + δ))
-  obtain ⟨t2, h2⟩ := GlobalTheory.T.exists_threshold_criticalLevel_lower_bound cb Cu hcb
-  obtain ⟨t3, h3⟩ := GlobalTheory.T.normalizedFormalDegree_eq_vandermonde_of_sizes
+  obtain ⟨t2, h2⟩ := _root_.GlobalTheory.CritLevelSize.tcritLow_sizes cb Cu hcb
+  obtain ⟨t3, h3⟩ := _root_.GlobalTheory.Core.Deg.CritVand.vv_eq_vand_of_sizes
   refine ⟨max (max t1 t2) t3, fun C0 _ C' Cl hC' hCl D large₂ hT hR => ?_⟩
   have hC1 : t1 ≤ C' := (le_max_left _ _).trans ((le_max_left _ _).trans hC')
   have hCl1 : t1 ≤ Cl := (le_max_left _ _).trans ((le_max_left _ _).trans hCl)

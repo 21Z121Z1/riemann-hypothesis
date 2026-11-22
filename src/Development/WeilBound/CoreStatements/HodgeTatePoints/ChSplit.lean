@@ -1,8 +1,9 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.EigenProjectorsSplitActionStatement
-public import Development.WeilBound.CoreStatements.HodgeTatePoints.DegLeOfEquiv
+public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.Bundle0006
+public import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.Bundle0001
+public import Development.WeilBound.CoreStatements.HodgeTatePoints.Bundle0015
 
 @[expose] public section
 

@@ -1,7 +1,7 @@
 module
 
-public import Formalism.LocalToGlobal.InertKernelTheory.StatementLoc
-public import Formalism.SharpRestriction.GrowthBounds.MultisetValuation.RestEntOf
+public import Formalism.LocalToGlobal.InertKernelTheory.Bundle0012
+public import Formalism.SharpRestriction.GrowthBounds.MultisetValuation.Bundle0019
 
 @[expose] public section
 

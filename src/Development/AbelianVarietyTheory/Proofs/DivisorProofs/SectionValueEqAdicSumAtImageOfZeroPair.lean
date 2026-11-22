@@ -1,13 +1,13 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CoefTwistPull
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0980
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EqOneOfFiniteOrderAny
 public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.SectionValueAtTorsionPointEqSumTerms
-public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ExistsUniqueThetaConst
-public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.SumIOfFinite
+public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.Bundle0073
+public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.Bundle0029
 public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ExistsExpandsFScale
-public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ThetaTableAlgClosedCompleteSingleValued
+public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.Bundle0149
 
 @[expose] public section
 

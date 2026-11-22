@@ -2,12 +2,12 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.NCoords
-public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.MatrixOfBesselTwoSidedAction
+public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.Bundle0006
 public import Development.AbelianVarietyTheory.Definitions.Jets.SideFam
 public import Formalism.HermitianCurvature.WeylElementCommutesLevelOne
-public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.ExistsIsFolnerUWset
+public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.Bundle0007
 public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.SymmetricMeasureL2NormEqResolutionL2
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.UnipotentUpperFacts
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0062
 
 @[expose] public section
 

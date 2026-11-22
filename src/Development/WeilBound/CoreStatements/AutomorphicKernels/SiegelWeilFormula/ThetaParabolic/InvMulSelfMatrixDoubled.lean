@@ -1,8 +1,8 @@
 module
 
 public import Development.WeilBound.CoreStatements.AutomorphicKernels.SiegelWeilFormula.AuxiliaryPrimeFunction
-public import Development.WeilBound.ThetaLifts.LatticeBasics.SiegelWeilAnisoOf
-public import Development.WeilBound.ThetaLifts.LatticeBasics.SecLaw
+public import Development.WeilBound.ThetaLifts.LatticeBasics.Bundle0026
+public import Development.WeilBound.ThetaLifts.LatticeBasics.Bundle0006
 
 @[expose] public section
 

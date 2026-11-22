@@ -1,11 +1,11 @@
 module
 
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.GammaLaurentFactors.MatchIndOf
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ValuationDetEqOne
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.EquivOfISupRange
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HasSatakeOfIsLocComp
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsFixedIff
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.StrongMultiplicityOne.EigOfSat
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1443
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0112
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1068
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0116
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.StrongMultiplicityOne.Bundle0002
 
 @[expose] public section
 

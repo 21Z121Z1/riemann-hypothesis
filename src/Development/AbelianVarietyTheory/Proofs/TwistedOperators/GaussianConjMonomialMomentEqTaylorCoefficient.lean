@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ConjMono
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0337
 public import Formalism.ThetaSupremumBounds.GaussianShiftBounds.FockJet
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NormFockLSqLe
 

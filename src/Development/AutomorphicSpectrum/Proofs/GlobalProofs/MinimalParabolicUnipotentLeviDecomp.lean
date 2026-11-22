@@ -1,13 +1,13 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Proofs.GlobalProofs.ExistsKInfEqMul
+public import Development.AutomorphicSpectrum.Proofs.GlobalProofs.Bundle0060
 public import Development.WeilBound.ThetaLifts.Reductions.SiegelCore
 public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ProjArchOfInfEmbArchPi
-public import Development.AbelianVarietyTheory.Proofs.HeightProofs.AdelicUnitaryRealPointsStructureRealPlaces
-public import Development.AbelianVarietyTheory.Proofs.HeightProofs.AdelicUnitaryActionAtRealPlace
-public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.HarishChandraFinite
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsArchEquivEq
+public import Development.AbelianVarietyTheory.Proofs.HeightProofs.Bundle0033
+public import Development.AbelianVarietyTheory.Proofs.HeightProofs.Bundle0021
+public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.Bundle0004
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0291
 
 @[expose] public section
 

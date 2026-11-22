@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import ReciprocityTheory.DualLattices.CyclicRecursionStatement
+public import ReciprocityTheory.DualLattices.Bundle0001
 
 @[expose] public section
 

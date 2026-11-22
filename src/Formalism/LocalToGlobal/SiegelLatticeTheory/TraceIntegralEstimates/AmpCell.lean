@@ -2,8 +2,8 @@ module
 
 public import Formalism.SharpRestriction.CuspSpanNormBounds.FrobeniusCoefficientMemLp.AmpRootCut
 public import Formalism.LocalToGlobal.SiegelLatticeTheory.ClosedLocalOrbits.GaugeLatticeShifts.PtCellUniq
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.HermitianFormFlagVector
-public import Formalism.FormalDegreeBessel.FinalG
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0029
+public import Formalism.FormalDegreeBessel.Bundle0002
 
 @[expose] public section
 

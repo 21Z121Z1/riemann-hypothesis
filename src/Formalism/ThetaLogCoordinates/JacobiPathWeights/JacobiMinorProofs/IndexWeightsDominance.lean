@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Formalism.ThetaLogCoordinates.JacobiPathWeights.IndexWeightsDominance
+public import Formalism.ThetaLogCoordinates.JacobiPathWeights.Bundle0004
 public import Formalism.ThetaLogCoordinates.JacobiPathWeights.JacobiMinorProofs.LeIffLtColHeight
-public import Formalism.ThetaLogCoordinates.JacobiPathWeights.JacobiMinorProofs.PathProductHighestWeight
+public import Formalism.ThetaLogCoordinates.JacobiPathWeights.JacobiMinorProofs.Bundle0001
 
 @[expose] public section
 

@@ -2,10 +2,10 @@ module
 
 public import Mathlib
 public import CompanionTheory.SpectralGeometry.CountingDefinitions.AdelicEulerProducts.IsEulerProd
-public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.IntegralAlmostAllPlacesStatement
-public import Development.AbelianVarietyTheory.Proofs.HeightProofs.QuadraticExtNormFormOverAlgebra
+public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.Bundle0017
+public import Development.AbelianVarietyTheory.Proofs.HeightProofs.Bundle0006
 public import Development.AbelianVarietyTheory.Proofs.HeightProofs.UnitNormFormAtOddPlace
-public import Development.AbelianVarietyTheory.Proofs.CoherentCohomologyProofs.LengthRestrictScalarsEqSumInertiaDegOfSubset
+public import Development.AbelianVarietyTheory.Proofs.CoherentCohomologyProofs.Bundle0004
 
 @[expose] public section
 
@@ -428,7 +428,7 @@ theorem good_ring : ∀ (F E : Type) [Field F] [NumberField F] [Field E] [Number
     exact NumberField.InfinitePlace.not_isReal_iff_isComplex.2 (h.2.1.isComplex w) hreal
   obtain ⟨D, b₂, hsq, hb0, hσ1, hD⟩ := GlobalTheory.QuadNormBase.exists_basis F E σ h.2.2.1 hinv hne
   have hD0 : D ≠ 0 := fun h0 => hsq (h0 ▸ IsSquare.zero)
-  have I := GlobalTheory.T.integral_almost_all_places F E σ h
+  have I := _root_.GlobalTheory.CompanionTheory.SW.GoodInt.rational_integral_units F E σ h
   filter_upwards [(I d b).2 D hD0, (I d b).2 2 two_ne_zero, (I d b).2 3 three_ne_zero,
     Filter.eventually_all.2 fun k => (I 2 b₂).1 (b k),
     Filter.eventually_all.2 fun j => (I d b).1 (b₂ j)] with v hD1 h21 h31 hBC hCB

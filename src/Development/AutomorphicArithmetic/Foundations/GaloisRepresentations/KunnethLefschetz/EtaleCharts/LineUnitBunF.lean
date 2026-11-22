@@ -1,7 +1,7 @@
 module
 
 public import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.KunnethLefschetz.EtaleCharts.PBData
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CompOfCechPt
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0110
 
 @[expose] public section
 

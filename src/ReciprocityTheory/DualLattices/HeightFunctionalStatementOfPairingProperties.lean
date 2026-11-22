@@ -1,8 +1,8 @@
 module
 
 public import ReciprocityTheory.DualLattices.IsFibreSq
-public import ReciprocityTheory.DualLattices.ToSigmaAddFstZeroFst
-public import ReciprocityTheory.DualLattices.SeriesState
+public import ReciprocityTheory.DualLattices.Bundle0015
+public import ReciprocityTheory.DualLattices.Bundle0006
 
 @[expose] public section
 

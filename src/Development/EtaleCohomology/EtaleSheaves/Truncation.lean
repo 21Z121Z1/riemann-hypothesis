@@ -1,6 +1,6 @@
 module
 
-public import Development.EtaleCohomology.EtaleSheaves.TruncPf
+public import Development.EtaleCohomology.EtaleSheaves.Bundle0060
 
 @[expose] public section
 

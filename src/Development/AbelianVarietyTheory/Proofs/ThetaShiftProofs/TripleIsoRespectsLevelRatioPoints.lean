@@ -6,7 +6,7 @@ public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDesc
 public import Development.AbelianVarietyTheory.Definitions.ArchimedeanThetaValues.IdealPart
 public import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.TorsionEqOfSameRatios
 public import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.ExistsFptsPull
-public import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.RepTransport
+public import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.Bundle0026
 
 @[expose] public section
 

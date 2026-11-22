@@ -3,8 +3,8 @@ module
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.FieldValuesMemFixedField
 public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsDefiniteOfAllPlus
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RepMemSm
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.AdelicUnitaryEqRealMulFiniteSplit
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0931
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0070
 public import Formalism.LocalToGlobal.IndefiniteReal.SchurOrthogonality
 
 @[expose] public section

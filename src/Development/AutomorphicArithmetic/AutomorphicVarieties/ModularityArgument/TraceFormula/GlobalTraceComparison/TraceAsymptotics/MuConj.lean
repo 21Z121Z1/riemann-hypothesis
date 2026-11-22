@@ -1,7 +1,7 @@
 module
 
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.TraceFormula.GlobalTraceComparison.TraceAsymptotics.SplitLineAlt
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IsUnitAtOfValuation
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0704
 
 @[expose] public section
 

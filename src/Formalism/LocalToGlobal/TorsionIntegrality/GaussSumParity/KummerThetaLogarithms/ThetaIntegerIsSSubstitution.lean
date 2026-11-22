@@ -1,16 +1,15 @@
 module
 
-public import Formalism.LocalToGlobal.TorsionIntegrality.GaussSumParity.BiextensionHypothesesOfLevelOne
-public import Formalism.LocalToGlobal.TorsionIntegrality.GaussSumParity.ThetaInZIsThetaLog
-public import Formalism.LocalToGlobal.TorsionIntegrality.GaussSumParity.StatementC
-public import Formalism.GaussJetBounds.StatementS
+public import Formalism.LocalToGlobal.TorsionIntegrality.GaussSumParity.Bundle0003
+public import Formalism.LocalToGlobal.TorsionIntegrality.GaussSumParity.Bundle0001
+public import Formalism.GaussJetBounds.Bundle0004
 public import Formalism.GaussJetBounds.OneLetterGauss
-public import Formalism.GaussJetBounds.GenLogInverse
+public import Formalism.GaussJetBounds.Bundle0001
 public import Formalism.GradedWeylDivisibility.FinalD
 public import Formalism.GaussJetBounds.GaussJetProofs.OrbMul
 public import Formalism.GaussJetBounds.ThmAGauss
 public import Formalism.ThetaLogCoordinates.UniformThetaSubstitution.ThetaLogIsSubst
-public import Formalism.ThetaLogCoordinates.UniformThetaSubstitution.FinalS
+public import Formalism.ThetaLogCoordinates.UniformThetaSubstitution.Bundle0002
 
 @[expose] public section
 

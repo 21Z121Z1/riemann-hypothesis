@@ -1,11 +1,11 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicArithmetic.CyclotomicBounds.RamifiedDiscriminants.OffSmall
+public import Development.AutomorphicArithmetic.CyclotomicBounds.RamifiedDiscriminants.Bundle0003
 public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.ExistsIsComOfOf
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ExistsNatEqMul
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.EventuallyIncAMulMemIntAt
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ClassC0PrimeNotExceptional
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0093
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0091
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0316
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PullbackSections.HolomorphicFamilies.ModelLatA
 
 @[expose] public section

@@ -2,8 +2,8 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.CongruenceLevelEqDepthSucc
-public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.TensorMapDescent
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.SpanMapNabKDelK
+public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0053
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0081
 
 @[expose] public section
 

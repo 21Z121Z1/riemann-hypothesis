@@ -1,14 +1,14 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsNotRelZero
-public import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.UnitaryConjugation
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0047
+public import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.Bundle0019
 public import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.WeilTensorModels
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SquareTriple
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SquareStanding
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LatAtVAtStable
-public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.AddCharTrivialIntegralFiniteAdeleMul
-public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.ProductFormulaHaar.TrSumOf
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1487
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1507
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1531
+public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.Bundle0059
+public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.ProductFormulaHaar.Bundle0002
 
 @[expose] public section
 

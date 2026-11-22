@@ -1,10 +1,10 @@
 module
 
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.SymplecticGSp4.ExDefs
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.SymplecticGSp4.ExistsLocalFirstOrderLifts
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.SymplecticGSp4.SmoothPtWeightedPresentationOfPointDerivations
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.SymplecticGSp4.Bundle0013
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.SymplecticGSp4.Bundle0008
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.SymplecticGSp4.LMemMax
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.CommutativeAlgebra.DerHom
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.CommutativeAlgebra.Bundle0002
 
 @[expose] public section
 

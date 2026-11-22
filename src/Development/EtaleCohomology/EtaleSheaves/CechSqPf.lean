@@ -1,7 +1,7 @@
 module
 
-public import Development.EtaleCohomology.EtaleSheaves.DescIntPf
-public import Development.EtaleCohomology.TateTwists.EtaleCechConerveImageIsoCechNerveOfPreservesWidePushouts
+public import Development.EtaleCohomology.EtaleSheaves.Bundle0022
+public import Development.EtaleCohomology.TateTwists.Bundle0006
 
 @[expose] public section
 

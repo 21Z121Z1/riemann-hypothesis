@@ -1,14 +1,16 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.TwTransAlt
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.TwistLevelStabiliserAtLevelPrimeProofStatement
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ScalarFormsOnChartsOfTrueColumnTupleStatement
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ChartLevelsRepsRepresentUnitaryDoubleCosetsStatement
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.UnitaryClassRepresentativesBijective
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.HeckeCombinationScalarFormKeepsAdelicLawsStatement
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.HeckeCombinationScalarFormValuesMemWeylModuleStatement
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.HeckeCombinationScalarFormValuesStabiliserInvariStatement
+public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.Bundle0025
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0496
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0362
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0425
+public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.Bundle0023
+public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.NotIsCompactUnivFv
+public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.LevChiEqOne
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0285
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0504
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0499
 
 @[expose] public section
 
@@ -28,13 +30,13 @@ theorem mem_Fi : ∀ {B : Base} {X : PreX B.toPre} (I : TC B X), I.Ok → TC.Pin
       (∀ b y i g, g • Q j i = Q j i → rTrans ((β j i).gl g) (trc c (A.rd θ j hj b φ y)) = trc c (A.rd θ j hj b φ y)) →
       (fun e z => trc c (A.rd θ j hj (A.chOf j e) φ z) (A.h j (A.chOf j e) ⟨e, rfl⟩) : ColT I l u a j) ∈ (I.fm l u a).Fi j := by
   intro B X I hI hP l Z u a Ch A hA θ hθ k _ _ _ _ ι p β Q L hS j hj c hc φ hφ hinv e
-  exact ⟨GlobalTheory.T.heckeCombination_scalarForm_values_mem_weylModule I hI hP l Z u a Ch A hA θ hθ k ι p β Q L hS j hj c hc φ hφ hinv e,
-    fun s => GlobalTheory.T.heckeCombination_scalarForm_values_stabiliser_invariant I hI hP l Z u a Ch A hA θ hθ k ι p β Q L hS j hj c hc φ hφ hinv e s⟩
+  exact ⟨_root_.GlobalTheory.AdForm.TransAct.trc_val_mem I hI hP l Z u a Ch A hA θ hθ k ι p β Q L hS j hj c hc φ hφ hinv e,
+    fun s => _root_.GlobalTheory.AdForm.trans_stab I hI hP l Z u a Ch A hA θ hθ k ι p β Q L hS j hj c hc φ hφ hinv e s⟩
 
 theorem twTransAct : TwTrans' := by
   intro B X I hI hP l Z u a Ch A hA θ hθ k _ _ _ _ ι p β Q L hS j hj c hc φ hφ hinv
   refine ⟨_, mem_Fi I hI hP l Z u a Ch A hA θ hθ k ι p β Q L hS j hj c hc φ hφ hinv, fun b y => funext fun g => ?_⟩
-  obtain ⟨γ, hγ, e, g', hg', κ, hκ, rfl⟩ := (GlobalTheory.T.chartLevels_reps_represent_unitaryDoubleCosets I hI hP l Z u a Ch A hA j hj b).1.dec g
+  obtain ⟨γ, hγ, e, g', hg', κ, hκ, rfl⟩ := (_root_.GlobalTheory.ChartReps.twDat_reps I hI hP l Z u a Ch A hA j hj b).1.dec g
   obtain ⟨e, rfl⟩ := e
   let M : (I.rec7 l Z).what₂.Tau → Matrix (Fin (B.R.N j)) (Fin (B.R.N j)) ℂ := infM θ _ (rankN (I.rec7 l Z) j hj) g'
   have hu : ∀ τ, IsUnit (M τ * y.1 τ).det := fun τ => by

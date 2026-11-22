@@ -1,8 +1,7 @@
 module
 
 public import Development.WeilBound.CoreStatements.AutomorphicKernels.SiegelWeilFormula.AuxiliaryPrimeFunction
-public import Development.WeilBound.ThetaLifts.LatticeBasics.BoxFinC
-public import Development.WeilBound.ThetaLifts.LatticeBasics.FinLevel
+public import Development.WeilBound.ThetaLifts.LatticeBasics.Bundle0023
 public import Development.WeilBound.CoreStatements.AutomorphicKernels.EisensteinSeriesG2.CompactStandardSubgroup.KCptPf
 public import GroundTheory.PAdicHodge.NormalizedTrace
 

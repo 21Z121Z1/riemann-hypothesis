@@ -1,7 +1,7 @@
 module
 
 public import Formalism.LocalToGlobal.GroupLattices.StdSubAtOfRing
-public import Formalism.LocalToGlobal.GroupLattices.ComparisonMaps.TiedRec
+public import Formalism.LocalToGlobal.GroupLattices.ComparisonMaps.Bundle0007
 public import Formalism.LocalToGlobal.GroupLattices.DownNaturalLevelZero
 
 @[expose] public section

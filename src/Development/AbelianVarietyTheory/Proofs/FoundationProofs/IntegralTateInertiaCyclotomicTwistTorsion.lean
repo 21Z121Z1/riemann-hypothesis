@@ -1,12 +1,12 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Foundations.EeProd
+public import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0008
 public import ReciprocityTheory.GaloisValuations.Global
 public import ReciprocityTheory.NeutralLocalFields.LocalFieldComparison.LocalFieldAutomorphisms.Inertia
 public import ReciprocityTheory.ClassFieldTheory.LocalClassField.ExistsDvdQKPowSubOne
 public import GroundTheory.PAdicHodge.AxLemma
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.NormSubOnePowTotient
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0055
 
 @[expose] public section
 

@@ -2,19 +2,16 @@ module
 
 public import Mathlib
 public import Formalism.LocalToGlobal.HilbertRowConditions.RowPin
-public import Formalism.LocalToGlobal.KernelLattices.InterlaceAll
+public import Formalism.LocalToGlobal.KernelLattices.Bundle0002
 public import Formalism.SharpRestriction.GlobalSchurBounds.ProductFirstZerothParts
 public import Formalism.SharpRestriction.GlobalSchurBounds.FiniteModelOfAdmissibleTransports
 public import Formalism.LocalToGlobal.GlobalTheory.BlockActions.NfAllSmulReB
-public import Formalism.LocalToGlobal.GlobalTheory.BlockActions.ExistsOnOfPosDef
-public import Formalism.LocalToGlobal.GlobalTheory.BlockActions.MulLatMulLat
-public import Formalism.LocalToGlobal.Columns.TiedValBwG
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.FnOfMapInjective
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ClassLatticeSelfDual
-public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.ExistsIsLocBasisClsP
-public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.CoMTSOfGaInv
-public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.PtCoMemIntSpan
-public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.ExistsPtEmbOfCoordInt
+public import Formalism.LocalToGlobal.GlobalTheory.BlockActions.Bundle0003
+public import Formalism.LocalToGlobal.GlobalTheory.BlockActions.Bundle0001
+public import Formalism.LocalToGlobal.Columns.Bundle0013
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0080
+public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0150
+public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0151
 
 @[expose] public section
 

@@ -2,8 +2,8 @@ module
 
 public import Development.WeilBound.RepresentationTheoryGL.ResidualSpectrum.ExponentialNegativity.ExpNegGlue
 public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.ExpoConjOfIsCsd
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IdeleModuleDetDiagUnitsPosIdele
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConstantTermModerateGrowth
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0292
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1261
 
 @[expose] public section
 

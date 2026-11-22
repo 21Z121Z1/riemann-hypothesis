@@ -1,9 +1,9 @@
 module
 
-public import Formalism.SharpRestriction.LevelLetterCocycles.QuotientImageDivisibility.MemZeroSubCoe
+public import Formalism.SharpRestriction.LevelLetterCocycles.QuotientImageDivisibility.Bundle0004
 public import Formalism.SharpRestriction.LevelLetterCocycles.QuotientImageDivisibility.RkMultVNonneg
 public import Formalism.SharpRestriction.LevelLetterCocycles.LocalizationQuotientSeparatedDvd
-public import Formalism.SharpRestriction.LevelLetterCocycles.ExpRules
+public import Formalism.SharpRestriction.LevelLetterCocycles.Bundle0015
 
 @[expose] public section
 

@@ -7,7 +7,7 @@ public import Mathlib.RingTheory.Algebraic.LinearIndependent
 public import Mathlib.FieldTheory.IsAlgClosed.Basic
 public import Mathlib.Analysis.Complex.Polynomial.Basic
 public import Mathlib.Analysis.Complex.Cardinality
-public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.SpectrumNonemptyOfCountableRank
+public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0057
 
 @[expose] public section
 

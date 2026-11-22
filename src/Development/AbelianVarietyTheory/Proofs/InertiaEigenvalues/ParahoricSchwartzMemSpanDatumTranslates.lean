@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.HasShape
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ParahoricSchwartzVanishOffTranslates
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FinsumCharDetFixHyperplaneEqZero
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0666
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0107
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0025
 
 @[expose] public section
 

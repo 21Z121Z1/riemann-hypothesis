@@ -3,8 +3,8 @@ module
 public import CompanionTheory.AutomorphicTheory.JacobiDiagonalBounds.EvQTrJBFF
 public import CompanionTheory.AutomorphicTheory.JacobiDiagonalBounds.NFFinal
 public import CompanionTheory.AutomorphicTheory.JacobiDiagonalBounds.Vander
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutNFCoreN
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutNFHatProdKBStmt
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0289
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0286
 
 @[expose] public section
 

@@ -2,8 +2,7 @@ module
 
 public import Formalism.LocalToGlobal.Divisibility.Numbers
 public import Formalism.LocalRingCardinality.DataForced
-public import Formalism.LocalRingCardinality.DataKap
-public import Formalism.LocalRingCardinality.DataErr
+public import Formalism.LocalRingCardinality.Bundle0004
 public import Formalism.LocalRingCardinality.RankBoundMonotoneInDimension
 public import Formalism.LocalRingCardinality.SpanPowerMembership.ExampleWeightMiddleEntries
 public import Formalism.LocalRingCardinality.HostCls

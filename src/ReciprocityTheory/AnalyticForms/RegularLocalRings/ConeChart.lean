@@ -1,9 +1,9 @@
 module
 
 public import ReciprocityTheory.AnalyticForms.RegularLocalRings.ProjHyp
-public import ReciprocityTheory.AnalyticForms.RegularLocalRings.MemConePtsIffChartIdeal
+public import ReciprocityTheory.AnalyticForms.RegularLocalRings.Bundle0007
 public import ReciprocityTheory.AnalyticForms.RegularLocalRings.ConeChartA
-public import ReciprocityTheory.AnalyticForms.RegularLocalRings.ConeChartB
+public import ReciprocityTheory.AnalyticForms.RegularLocalRings.Bundle0013
 
 @[expose] public section
 

@@ -1,11 +1,11 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.NormalFormDualOrthogonalLast
-public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.IsNormalFormStabilizerMeasure
-public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.IsFundOne
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsFundIpow
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsSmulMemOfMemSpanFraction
+public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.Bundle0004
+public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.Bundle0010
+public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.Bundle0011
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0194
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0015
 
 @[expose] public section
 

@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Development.AutomorphicArithmetic.SpecialMaps.QuotObjDefs
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HarrisTaylorTypeTjIsogeniesRepresentable
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle3124
 
 @[expose] public section
 

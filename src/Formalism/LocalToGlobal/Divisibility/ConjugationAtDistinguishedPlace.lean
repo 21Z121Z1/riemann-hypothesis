@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Formalism.LocalToGlobal.UnitaryNorms.AdjoinCycZeta
-public import Formalism.LocalToGlobal.UnitaryNorms.IotaABijective
+public import Formalism.LocalToGlobal.UnitaryNorms.Bundle0003
 public import Formalism.QuotientMetricDivisors.RatHermLcvTwist
 
 @[expose] public section

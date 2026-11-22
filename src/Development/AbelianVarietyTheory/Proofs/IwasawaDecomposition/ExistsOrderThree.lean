@@ -6,8 +6,8 @@ public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.GalStarCo
 public import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.LatticeDeterminedByInvariants
 public import Development.AbelianVarietyTheory.Proofs.HomogeneousIdeals.HasRationalTorsionIffMemRange
 public import Formalism.LocalToGlobal.GlobalTheory.LinkTiesTh
-public import Formalism.LocalToGlobal.GlobalTheory.NormSqLatticeFunctionEq
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.HalfPeriodThetaDifferentiableAndSignedTranslateI
+public import Formalism.LocalToGlobal.GlobalTheory.Bundle0001
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0239
 
 @[expose] public section
 

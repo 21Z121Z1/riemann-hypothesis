@@ -4,7 +4,7 @@ public import Mathlib
 public import Formalism.LocalToGlobal.UnitaryNorms.IsUnitaryNormOf
 public import Formalism.SharpRestriction.Divisibility.SchurIrreducible
 public import Development.AbelianVarietyTheory.Definitions.Divisors.EntireEqOfHalfPlane
-public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.CountableIdealSummableAbsNormRpow
+public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.Bundle0020
 
 @[expose] public section
 

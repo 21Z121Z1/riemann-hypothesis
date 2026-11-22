@@ -2,14 +2,22 @@ module
 
 public import Mathlib
 public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.IsLatFamilyCongr
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.HodgeTateChartIntegralStatement
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0240
+public import Development.AutomorphicSpectrum.Statements.GeometryStatements.IsPolLatticePlane
+public import Development.AutomorphicSpectrum.Statements.GeometryStatements.Bundle0001
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.TwoWeightEqOneAddRoot
 public import Development.WeilBound.CoreStatements.HodgeTatePoints.PointHTOfFargues
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.TorsionPointsDefinedGenericStatement
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.HodgeTateFreeIntegralModelsStatement
-public import Development.WeilBound.CoreStatements.HodgeTatePoints.HtatPar
-public import Development.WeilBound.CoreStatements.HodgeTatePoints.HtatLat
-public import Development.WeilBound.CoreStatements.HodgeTatePoints.HtatPol
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ArithVarietyCoordIdealStatement
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0161
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0154
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.Bundle0010
+public import Development.AutomorphicSpectrum.Statements.AlgebraStatements.Bundle0003
+public import Development.AutomorphicSpectrum.Definitions.DivisibilityTowers.Birational
+public import Development.WeilBound.CoreStatements.HodgeTatePoints.Bundle0062
+public import Development.WeilBound.CoreStatements.HodgeTatePoints.Bundle0030
+public import Development.WeilBound.CoreStatements.HodgeTatePoints.Bundle0059
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0058
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.Bundle0011
+public import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.Bundle0017
 
 @[expose] public section
 
@@ -135,9 +143,9 @@ theorem isIntegrallyClosed_of_denom {o O Ω : Type} [CommRing o] [CommRing O] [F
 theorem chart_facts : ∀ (E : Type) [Field E] [NumberField E] [IsCMField E] (H : Host E) (D : Datum H) (l : Level H) (Xo : Moduli D l) (c : Coeff l) (O₀ : Type) [CommRing O₀] (β : O₀ →+* c.F) (Y : Model Xo c β) (S : Finset ℕ) (Ω : Type) [Field Ω] (K : Type) [Fintype K] [DecidableEq K] (J : K → Type) [∀ k, Fintype (J k)] (y : (Σ k, J k) → Ω) (𝔐 : HodgeCpt Y S y) (d : ℕ), IsArithVar (mCoordIdeal y) (d + 1) → ∀ (p : ℕ) [Fact p.Prime], p ∈ S → ∀ (A : Type) [CommRing A] [Algebra A Ω] [IsIntegralClosure A ℤ Ω] (m : Ideal A) [m.IsPrime], (p : A) ∈ m → ∀ (O : Type) [CommRing O] [IsDomain O] [IsDiscreteValuationRing O] [Algebra A O] [IsLocalization.AtPrime O m] [Algebra O Ω] [IsScalarTower A O Ω] (c' : ∀ k, J k), mseg y c' ≠ 0 → CharZero Ω ∧ IsNoetherianRing (CR O y c') ∧ IsIntegrallyClosed (CR O y c') ∧ IsFractionRing (CR O y c') Ω := by
   intro E _ _ _ H D l Xo c O₀ _ β Y S Ω _ K _ _ J _ y 𝔐 d hV p _ hpS A _ _ _ m _ hpm O _ _ _ _ _ _ _ c' hc'
   haveI hch : CharZero Ω := GlobalTheory.CompanionTheory.Ar.Num.ConstClosure.charZero_of_isArithVar hV
-  obtain ⟨-, -, -, -, -, -, hchart⟩ := GlobalTheory.T.hodge_tate_free_integral_models E H D l Xo c O₀ β Y S Ω K J y 𝔐 p hpS (zp Ω p) (mem_range_zp Ω p)
+  obtain ⟨-, -, -, -, -, -, hchart⟩ := _root_.GlobalTheory.CompanionTheory.Ar.HT.hcpt_generic_point E H D l Xo c O₀ β Y S Ω K J y 𝔐 p hpS (zp Ω p) (mem_range_zp Ω p)
   obtain ⟨-, hic, hfr, -⟩ := hchart c' hc'
-  obtain ⟨-, -, -, hconst, -⟩ := GlobalTheory.T.arith_variety_coord_ideal E H D l Xo c O₀ β Y S Ω K J y 𝔐 d hV A
+  obtain ⟨-, -, -, hconst, -⟩ := _root_.GlobalTheory.CompanionTheory.Ar.Num.ConstClosure.const_closure E H D l Xo c O₀ β Y S Ω K J y 𝔐 d hV A
   have eO := PositivityTheory.HtPt.Hcptgen.chartRing_mseg (o := O) y c' hc'
   have eo := PositivityTheory.HtPt.Hcptgen.chartRing_mseg (o := zp Ω p) y c' hc'
   have eZ := PositivityTheory.HtPt.Hcptgen.chartRing_mseg (o := ℤ) y c' hc'
@@ -372,7 +380,7 @@ theorem PositivityTheory.Xgn.sequence_test_function : GlobalTheory.CompanionTheo
   intro hF E _ _ _ H D l Xo c O₀ _ β Y S Ω _ K _ _ J _ y 𝔐 d hV hpq p _ hpS _ A _ _ _ m _ hpm O _ _ _ _ _ _ _ w hw G c' hc' P
   obtain ⟨h0, hNoe, hIC, hFr⟩ :=
     chart_facts E H D l Xo c O₀ β Y S Ω K J y 𝔐 d hV p hpS A m hpm O c' hc'
-  obtain ⟨-, hN, hprop, hT, hrk, -, -⟩ := GlobalTheory.T.hodge_tate_free_integral_models E H D l Xo c O₀ β Y S Ω K J y 𝔐 p hpS
+  obtain ⟨-, hN, hprop, hT, hrk, -, -⟩ := _root_.GlobalTheory.CompanionTheory.Ar.HT.hcpt_generic_point E H D l Xo c O₀ β Y S Ω K J y 𝔐 p hpS
     (zp Ω p) (mem_range_zp Ω p)
   have hp := (Fact.out : p.Prime)
   have hn : p ^ 𝔐.R p ≠ 0 := pow_ne_zero _ hp.ne_zero
@@ -380,7 +388,7 @@ theorem PositivityTheory.Xgn.sequence_test_function : GlobalTheory.CompanionTheo
   have hR : 1 ≤ 𝔐.R p := le_trans (by norm_num) (𝔐.R_ge p hpS)
   have hinj : Function.Injective (algebraMap (CR O y c') Ω) := IsFractionRing.injective _ _
   haveI : CharZero (CR O y c') := (algebraMap (CR O y c') Ω).charZero
-  obtain ⟨ev, ζ₀, hev⟩ := exists_isParam D 𝔐.t 𝔐.ξ GlobalTheory.T.torsion_points_defined_generic (p ^ 𝔐.R p) (Nat.pos_of_ne_zero hn) hpq hprop
+  obtain ⟨ev, ζ₀, hev⟩ := exists_isParam D 𝔐.t 𝔐.ξ _root_.GlobalTheory.CompanionTheory.Ar.HT.level_parametrisation (p ^ 𝔐.R p) (Nat.pos_of_ne_zero hn) hpq hprop
     (𝔐.tors p hpS) hT
   obtain ⟨u, hu, huz⟩ := exists_coords D 𝔐.t 𝔐.ξ p (𝔐.R p) hR hev G.t₂.pt G.t₂.onto G.t₂.lin
   obtain ⟨π, e, hπ, he, hdec, hsurj, hker, halt, hadj, hes, hei⟩ :=
@@ -422,7 +430,7 @@ theorem PositivityTheory.Xgn.sequence_test_function : GlobalTheory.CompanionTheo
     ext r
     exact (RingEquiv.symm_apply_eq κ).2 (hκ r).symm
   haveI := P.fin
-  refine GlobalTheory.T.hodge_tate_chart_integral (PositivityTheory.HtPt.Ge.pointHT_of_fargues hF) E H D p (CR O y c') Ω (𝔐.R p) _ _ u hu 𝔐.X 𝔐.t P.x (relabel P.Γ₂ b) P.i₂
+  refine _root_.GlobalTheory.CompanionTheory.Ar.HT.hasTestPoints_of_tate (PositivityTheory.HtPt.Ge.pointHT_of_fargues hF) E H D p (CR O y c') Ω (𝔐.R p) _ _ u hu 𝔐.X 𝔐.t P.x (relabel P.Γ₂ b) P.i₂
     ⟨P.tors₂.isOver, P.tors₂.mul, P.tors₂.inj, P.tors₂.kernel⟩ P.L P.M P.ρ P.act P.j P.j_bc π (P.ζ ^ a) _
     ⟨P.isHT.1, P.isHT.2.1, fun z => ?_⟩ hπ he ?_ (isProper_of_iso _ 𝔐.ξ _ _ hq) (fun k _ _ f => ?_)
     (cp_descend hinj p _ hw)

@@ -1,11 +1,11 @@
 module
 
 public import Development.AutomorphicArithmetic.Foundations.Convolution.OrbitNormCounting.NormCount
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LocalTwistContinuousInvolutionIntegralProperties
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PlaceConjugationPropertiesCmField
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CompactSetCharPolyCoeffBounded
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntegralCharPolyCoeffBounded
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EllipticPolynomialsBoundedFinite
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1310
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1277
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1323
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1070
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1096
 
 @[expose] public section
 

@@ -1,15 +1,15 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SharpBundleFibre
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ValMemOfCorrPull
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsUniqueScalar
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DefOverOfFiniteOrbit
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsFromBase
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2393
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2407
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2175
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2139
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2258
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.DiscreteValuationRings.FlatBCSec
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.FirstCohomology.SectionArithmetic
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LbIsoSecOnto
-public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsNormalizedBoth
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.FirstCohomology.Bundle0001
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1926
+public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0146
 
 @[expose] public section
 

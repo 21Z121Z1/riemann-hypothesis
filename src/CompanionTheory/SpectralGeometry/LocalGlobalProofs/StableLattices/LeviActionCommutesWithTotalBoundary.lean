@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.Bdy
-public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.OrderedCreationCommutesPastLevi
+public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.Bundle0038
 
 @[expose] public section
 

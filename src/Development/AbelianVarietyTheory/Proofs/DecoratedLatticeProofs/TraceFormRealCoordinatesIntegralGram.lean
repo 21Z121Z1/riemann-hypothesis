@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.IsRealCoord
-public import Development.AbelianVarietyTheory.Definitions.AdelicHermitianForms.AdelicPair
+public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.Bundle0005
+public import Development.AbelianVarietyTheory.Definitions.AdelicHermitianForms.Bundle0001
 public import CompanionTheory.HarishChandraModules.KFiniteAnalyticVectors.FundamentalDomainCusps.LogNormEstimates
 public import CompanionTheory.HarishChandraModules.KFiniteAnalyticVectors.FundamentalDomainCusps.HeightBoundSetup
 

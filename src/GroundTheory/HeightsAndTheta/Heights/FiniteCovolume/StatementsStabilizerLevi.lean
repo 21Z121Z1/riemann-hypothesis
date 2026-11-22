@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import GroundTheory.HeightsAndTheta.Heights.FiniteCovolume.StatementsVecFixGroup
-public import GroundTheory.HeightsAndTheta.Heights.FiniteCovolume.StatementsComplementForm
+public import GroundTheory.HeightsAndTheta.Heights.FiniteCovolume.Bundle0011
 
 @[expose] public section
 

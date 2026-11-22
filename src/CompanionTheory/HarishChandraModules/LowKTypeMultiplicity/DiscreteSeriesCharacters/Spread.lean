@@ -1,9 +1,8 @@
 module
 
 public import CompanionTheory.HarishChandraModules.LowKTypeMultiplicity.DiscreteSeriesCharacters.CapelliDeterminantBlockProduct
-public import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.QnCovDet
-public import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.QnCovLin
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.LemmaDDeterminantIdentity
+public import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.Bundle0021
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0047
 
 @[expose] public section
 

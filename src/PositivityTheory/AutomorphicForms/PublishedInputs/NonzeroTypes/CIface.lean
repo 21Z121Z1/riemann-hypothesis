@@ -1,6 +1,6 @@
 module
 
-public import PositivityTheory.AutomorphicForms.PublishedInputs.NonzeroTypes.InPow
+public import PositivityTheory.AutomorphicForms.PublishedInputs.NonzeroTypes.Bundle0001
 
 @[expose] public section
 

@@ -1,21 +1,21 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Divisors.MatchingOfParts
-public import Development.AbelianVarietyTheory.Definitions.Divisors.DiscreteSeriesHermitianUnique
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0033
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0041
 public import Development.AbelianVarietyTheory.Definitions.Divisors.RankEqCardIffExistsFrameMatrixFirstColumnBlock
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LatAtVAtStable
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SwapNegApply
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IsLocIsoRefl
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1531
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0223
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0444
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ContinuousAtPlace
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EqSmulOfCommuteHeisenbergLinearModelSchwartzBruh
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SchrodingerPreservesSchwartzBruhat
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.StandardAdelicCharacterNontrivialAtPlaces
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HeisSliceT
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsAtCoord
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LocalIdempotentCharacterValue
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SliceTransformSchwartzBijective
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ImportsRestExtra
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0340
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1656
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1566
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1771
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1683
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1633
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1638
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1630
 
 @[expose] public section
 

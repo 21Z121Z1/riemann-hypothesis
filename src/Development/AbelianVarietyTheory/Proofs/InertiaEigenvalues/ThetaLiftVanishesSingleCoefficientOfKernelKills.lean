@@ -2,17 +2,18 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.LengthPosOfPosDef
-public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.AdjFormula
-public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.ParamsEx
+public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0021
+public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0025
 public import Formalism.LocalToGlobal.IndefiniteReal.LinksStage
-public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.ExistsNormLeHeightPow
+public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.Bundle0007
 public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisGeometry₂.HoweUnram
 public import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.GaussianBinomialClosedForm
 public import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.SqNormIntegralFundamentalDomainEqL2NormSq
 public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.MemRangeSrcForm
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IntegrableOnDownwardThetaLiftIntegrandStatement
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SetIntegralFundamentalDomainRightTranslateInvari
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.RealFockAction
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0657
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0646
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0173
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0123
 
 @[expose] public section
 
@@ -266,7 +267,7 @@ theorem GlobalTheory.GenRealSchur.lift_vanish_single : ∀ (D : D7) (G : Type) [
   have hth : ∀ P, IsThetaFunO R.ψ (Vc D i) (Wc D i) (R.ptP i t P) := hP.pt_theta i t
   have hint : ∀ (f : WO (Vc D i) (Wc D i) → ℂ) (l : (R.cV i).W →ₗ[ℂ] ℂ), IsThetaFunO R.ψ (Vc D i) (Wc D i) f →
       IntegrableOn (fun h => thetaKO (R.ωP i t) h g f * l (R.extV i t y h)) (R.fdV i t) (R.νV i t) :=
-    fun f l hf => GlobalTheory.T.integrableOn_downwardThetaLift_integrand D G Pl0 T A Ks R F hG hF i t y f l g hf
+    fun f l hf => _root_.GlobalTheory.DownLift.GenFinite.integrableOn_downIntegrand D G Pl0 T A Ks R F hG hF i t y f l g hf
   haveI : Nontrivial (R.cV i).W := (hM.cV i).2.2.2.1
   have hpure : ∀ v : ∀ ρ, lowT (R.MW i (sg0 D A)) ρ, ∀ w l,
       downInt R i t y (phi R i t (PiTensorProduct.tprod ℂ v) w) l g = 0 := by

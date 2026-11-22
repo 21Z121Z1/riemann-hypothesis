@@ -1,7 +1,7 @@
 module
 
-public import Formalism.SharpRestriction.LevelLetterCocycles.DeltaInvariantUniformizer
-public import Formalism.SharpRestriction.LevelLetterCocycles.MapCompZero
+public import Formalism.SharpRestriction.LevelLetterCocycles.Bundle0025
+public import Formalism.SharpRestriction.LevelLetterCocycles.Bundle0021
 
 @[expose] public section
 

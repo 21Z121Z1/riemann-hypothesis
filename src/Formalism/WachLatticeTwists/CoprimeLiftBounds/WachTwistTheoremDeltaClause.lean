@@ -1,7 +1,6 @@
 module
 
-public import Formalism.WachLatticeTwists.CoprimeLiftBounds.StatBridgeChiOne
-public import Formalism.WachLatticeTwists.CoprimeLiftBounds.SelmerInjColumnPlace
+public import Formalism.WachLatticeTwists.CoprimeLiftBounds.Bundle0001
 
 @[expose] public section
 

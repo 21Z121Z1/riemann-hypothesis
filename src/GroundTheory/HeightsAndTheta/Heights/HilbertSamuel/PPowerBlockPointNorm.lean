@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsPowerBlockPointNorm
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsSectionPointValue
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsLocalRep
+public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0077
+public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0057
+public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0022
 
 @[expose] public section
 

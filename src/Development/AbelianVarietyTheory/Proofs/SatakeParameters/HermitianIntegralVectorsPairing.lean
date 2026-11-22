@@ -1,11 +1,11 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.SelfDualOne
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.DvdPowZeroIff
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.EqZeroOfForallDvdPow
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.MulSelfEqOneIffOfLinearOrderedCommGroupWithZero
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.WittFreeTuplesFin
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0132
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0117
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0138
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0113
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0024
 
 @[expose] public section
 

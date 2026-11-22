@@ -1,24 +1,24 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.RsTermZero
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CellLintegral
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ContinuousOfMemSmoothSpan
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SchurDir
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0618
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0763
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0808
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0828
 public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.LintegralUnipotentCellPosLtTopContinuous
-public import Development.AbelianVarietyTheory.Definitions.Divisors.IsRapidInf
-public import Development.AbelianVarietyTheory.Definitions.Divisors.NAInterSupSSubset
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0025
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0030
 public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.StrongMultiplicityOne
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CuspFormRapidKernelSmoothSpanSmoothCuspidalBound
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0717
 public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsEquivariantProj
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.HasSumRankinSelbergSchurTermFinsuppEulerProductStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WhitMulLocGLDiagPowOfFixed
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ContinuousGlobalWhittakerCoefficientGLAdelesStatement
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.UnfoldedIntegrandMeasurableInvariantBoundedStatement
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsLevelNatBumpRankinSelbergCellStatement
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ShintaniUnfoldedIntegrandEvalTorusCellStatement
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsCellPartUnfoldedIntegralPositiveStatement
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FinsuppVanishingOnEquivComplProdStatement
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0833
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0900
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0838
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0860
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0853
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0882
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0852
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0024
 public import GroundTheory.AutomorphicForms.MultiplicityOne.Injective
 
 @[expose] public section
@@ -134,7 +134,7 @@ theorem unfolded_bump_eq :
   refine ⟨hne φ (by rw [hb0 1 h1mem, hb1]), hne φ' (by rw [hb0' 1 h1mem, hb1]), N, Φ, hN, hΦs, hΦc, hΦt, hΦr, ?_⟩
   intro μ _ 𝓕₀ h𝓕
   have hC0 : MeasurableSet (GlobalTheory.CellDec.C0 E (m + 1) S) :=
-    (GlobalTheory.T.isOpen_C0 E (m + 1) S).measurableSet
+    (_root_.GlobalTheory.CellDec.isOpen_adelicUnipotentTimesIntegralOutsideSet E (m + 1) S).measurableSet
   have hcell : ∃ f t : GA E (m + 1) → ℝ,
       Measurable f ∧ Measurable t ∧ (∀ g, 0 ≤ f g) ∧ IntegrableOn f 𝓕₀ μ ∧
       0 < ∫ g in 𝓕₀, f g ∂μ ∧ (∃ R : ℝ, ∀ g, f g ≠ 0 → |t g| ≤ R) ∧
@@ -290,7 +290,7 @@ theorem unfolded_bump_eq :
   obtain ⟨hm11, hinv11, -⟩ := GlobalTheory.T.unfoldedIntegrand_measurable_invariant_bounded E m φ φ Φ N x hWc hWc hW hW hΦs.continuous hΦr
   obtain ⟨hm22, hinv22, -⟩ := GlobalTheory.T.unfoldedIntegrand_measurable_invariant_bounded E m φ' φ' Φ N x hWc' hWc' hW' hW' hΦs.continuous hΦr
   obtain ⟨hm12, hinv12, hbd⟩ := GlobalTheory.T.unfoldedIntegrand_measurable_invariant_bounded E m φ φ' Φ N x hWc hWc' hW hW' hΦs.continuous hΦr
-  obtain ⟨e, he⟩ := GlobalTheory.T.exists_equiv_finsupp_compl_prod_eq S (m + 1)
+  obtain ⟨e, he⟩ := _root_.GlobalTheory.finsupp_vanishing_on_equiv_compl_prod S (m + 1)
   have hq : ∀ w : {w : HeightOneSpectrum (𝓞 E) // w ∉ S}, 2 ≤ Ideal.absNorm w.1.asIdeal := fun w => by
     have h1 : Ideal.absNorm w.1.asIdeal ≠ 1 := fun h => w.1.isPrime.ne_top (Ideal.absNorm_eq_one_iff.1 h)
     have h0 : Ideal.absNorm w.1.asIdeal ≠ 0 := fun h => w.1.ne_bot (Ideal.absNorm_eq_zero_iff.1 h)
@@ -301,7 +301,7 @@ theorem unfolded_bump_eq :
       (∑' l : GlobalTheory.CellDec.abelian₂ E (m + 1) S, ‖l.1.prod fun w v => GlobalTheory.ZEul.rsTerm (Ideal.absNorm w.asIdeal)
         (fun i => (a w i : ℂ)) (fun i => (a w i : ℂ)) x v‖ₑ) ≠ ⊤ := by
     intro a ha
-    have hs := (GlobalTheory.T.hasSum_rankinSelbergSchurTerm_finsupp_eulerProduct (fun w : {w : HeightOneSpectrum (𝓞 E) // w ∉ S} => Ideal.absNorm w.1.asIdeal)
+    have hs := (_root_.GlobalTheory.ZEul.hasSum_rsTerm_finsupp (fun w : {w : HeightOneSpectrum (𝓞 E) // w ∉ S} => Ideal.absNorm w.1.asIdeal)
       (fun w => a w.1) (fun w => a w.1) x hx hq ha ha).summable
     have h2 := e.summable_iff.2 hs
     have h3 : (fun l' => (fun l : {w : HeightOneSpectrum (𝓞 E) // w ∉ S} →₀ (Fin (m + 1) → ℤ) => l.prod fun w v =>

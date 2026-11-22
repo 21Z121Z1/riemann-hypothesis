@@ -1,7 +1,7 @@
 module
 
-public import ReciprocityTheory.L2DbarEstimates.ChartDerivatives.MeasurableSetImageOfIsLocalHomeomorph
-public import ReciprocityTheory.L2DbarEstimates.ChartDerivatives.ExistsChartPartition
+public import ReciprocityTheory.L2DbarEstimates.ChartDerivatives.Bundle0001
+public import ReciprocityTheory.L2DbarEstimates.ChartDerivatives.Bundle0002
 
 @[expose] public section
 

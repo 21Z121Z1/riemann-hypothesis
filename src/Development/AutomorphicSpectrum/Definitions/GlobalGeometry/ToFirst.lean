@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.GermCut
-public import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.GermComp1ZeroPointLeft
-public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.LocalComponentsSurjective
+public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0006
+public import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.Bundle0004
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.Bundle0005
 
 @[expose] public section
 

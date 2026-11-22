@@ -3,31 +3,29 @@ module
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.Foundations.NormSumPairRankZeroOfCurveCoordNorm
 public import Formalism.PairingDivisors.StatementH
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.IdealPeriodLatticeOfCurveDatum
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.IntegralJAndAlgebraicData
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.InducedTypeThetaGenusOnePermutes
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0224
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0264
 public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.CmThetaTaylorCoeffAlgebraicAndConjugate
 public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsBoundMeansPosLogAreaNormalisedTheta
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.IntSerOfIsWq
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.TaylorSeriesInParameterRescaleOfAlgebraic
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.PadicComplexIntegralBoundedSeriesLaws
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.PowerSeriesSupNormMulPadicComplex
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.SubstMulLogEqNSer
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0263
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0255
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0254
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0232
 public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ThetaTranslationCompEqCocycleMul
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.EvenThetaTwoTorsionBasicProperties
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.AlgebraicTaylorTorsionTranslateEvenTheta
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.OddThetaFunctionExistenceUniqueness
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.DifferentiableSqTh
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Cval
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0248
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0246
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0230
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0235
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0274
 public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.CmThetaFunctionsOverTwoUnitAndIntegral
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.SigmaStarSquareQuotientInModelParameter
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsTraceOneEvenNormUnitAtTwo
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.MulByIntegralIsClosed
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.FstMemClosureNatCast
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0272
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0250
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0253
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0251
 public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.TorsionPointPadicAbscissaNormLeOne
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ThetaOrderParameterSeriesBoundedStatement
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ThetaTranslateProductSigmaStarPowLatticeLawStatement
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.TorsionPointLocalHeightEqOneStatement
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0291
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0284
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.TorsionPointLocalHeightEqOne
 
 @[expose] public section
 
@@ -123,7 +121,7 @@ theorem pull_back_split : ∀ (D : D7), Inp D → ∀ (p : ℕ) [Fact p.Prime] (
   intro D hI p _ cc δ g hg t0 ht0 y N hN hNy _ hsp
   have hθ := intSer_iff.1 ((GlobalTheory.ThetaParam.theta_param_integral D hI p cc δ g hg t0 ht0).2 hsp).1
   have hx0 := norm_padicWeierstrassModelAbscissa_twoTorsion_le_one D p cc δ g hg t0 ht0
-  have hht := GlobalTheory.T.torsionPoint_localHeight_eq_one D p cc δ g hg
+  have hht := _root_.GlobalTheory.TorsionHeight.height_one D p cc δ g hg
   obtain ⟨hcc, -, hδ, hΛ, hok⟩ := hg
   have hcrv : Crv D cc δ := ⟨hcc, hδ⟩
   have hG := (GlobalTheory.InducedType.induced_type D).1
@@ -187,7 +185,7 @@ theorem pull_back_split : ∀ (D : D7), Inp D → ∀ (p : ℕ) [Fact p.Prime] (
   have hFb : BddSer F := by
     obtain ⟨h1, h2'⟩ := atU_mul g hF hTa
     obtain ⟨B, hB, hBe⟩ := GlobalTheory.T.thetaOrder_parameterSeries_bounded p g hok hlat' h2 h3 hdisc hσ t0 ht0n (hwp t0 hq0 ht0n).1 (2 * N ^ 2) _ h1
-      (GlobalTheory.T.thetaTranslateProduct_sigmaStarPow_lattice_law g.abelian₂ hlat' t0 ht0.1 y N hNy)
+      (_root_.GlobalTheory.ThetaLaw.pull_law g.abelian₂ hlat' t0 ht0.1 y N hNy)
     rw [h2', pow_mul] at hBe
     have := ((IntSer.pow hE2 (N ^ 2)).bdd.mul hB).mul hTinv.bdd
     rwa [← hBe, mul_assoc, mul_comm T, hTi, mul_one] at this

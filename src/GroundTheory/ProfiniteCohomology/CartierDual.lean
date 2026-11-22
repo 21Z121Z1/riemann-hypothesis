@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import GroundTheory.ProfiniteCohomology.CartierDualDefs
+public import GroundTheory.ProfiniteCohomology.Bundle0008
 
 @[expose] public section
 

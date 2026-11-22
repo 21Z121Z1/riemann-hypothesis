@@ -1,11 +1,10 @@
 module
 
-public import Development.AutomorphicArithmetic.Foundations.Convolution.CentreSplitting.ExCusp
-public import Development.AutomorphicArithmetic.Foundations.Convolution.CentreSplitting.ExSummand
-public import Development.AutomorphicArithmetic.Foundations.Convolution.CentreSplitting.SSatIff
+public import Development.AutomorphicArithmetic.Foundations.Convolution.CentreSplitting.Bundle0004
+public import Development.AutomorphicArithmetic.Foundations.Convolution.CentreSplitting.Bundle0006
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.StrongMultiplicityOne.Strong
 public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.StrongMultiplicityOne
-public import Development.AutomorphicArithmetic.Foundations.Convolution.CentreSplitting.DefsObj
+public import Development.AutomorphicArithmetic.Foundations.Convolution.CentreSplitting.Bundle0001
 
 @[expose] public section
 

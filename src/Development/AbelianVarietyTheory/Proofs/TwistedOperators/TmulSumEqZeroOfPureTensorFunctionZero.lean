@@ -1,16 +1,15 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ThetaEqB
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IsThetaSubSelf
-public import Development.AbelianVarietyTheory.Definitions.Divisors.DiscreteSeriesHermitianUnique
-public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.HoweDualityUnitary
-public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.HoweDualityReal
-public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisGeometry₂.HypothesesAbsDet
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.PolMatchLinear
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SumPureMemAlgD
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsEigenIntertwinerModels
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.MultilinearSumEqOfProdFunEqStatement
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0295
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0146
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0041
+public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.Bundle0011
+public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisGeometry₂.Bundle0001
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0308
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0332
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2509
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0030
 
 @[expose] public section
 

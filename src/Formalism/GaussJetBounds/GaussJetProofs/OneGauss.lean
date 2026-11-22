@@ -1,13 +1,12 @@
 module
 
-public import Formalism.GaussJetBounds.StatementU
-public import Formalism.GaussJetBounds.OneLetterRadius
+public import Formalism.GaussJetBounds.Bundle0004
 public import Formalism.GaussJetBounds.MonoShapeTop
 public import Formalism.GaussJetBounds.GaussJetProofs.GField
-public import Formalism.GaussJetBounds.GaussJetProofs.Transfer
-public import Formalism.GaussJetBounds.GaussJetProofs.FJEval
+public import Formalism.GaussJetBounds.GaussJetProofs.Bundle0005
+public import Formalism.GaussJetBounds.GaussJetProofs.Bundle0006
 public import Formalism.GaussJetBounds.GaussJetProofs.ConstantCoeffAevalLinP
-public import Formalism.GaussJetBounds.GaussJetProofs.Labels
+public import Formalism.GaussJetBounds.GaussJetProofs.Bundle0004
 public import Formalism.GaussJetBounds.GaussJetProofs.ThmAOp
 
 @[expose] public section

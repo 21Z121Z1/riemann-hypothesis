@@ -2,12 +2,12 @@ module
 
 public import Mathlib
 public import Development.WeilBound.CoreStatements.TemperedRepresentationTheory.PoincareLelong.Development
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IntegrableAbsFibreSumOfIsCxVar
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SegreChartIntegralHolds
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ChartDivisorCompare
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.DivisorGeneralPointBranches
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LelongLimitAtBranches
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SliceReducedAwayZariski
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0269
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0606
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0609
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0530
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0602
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0607
 public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SheetIdentityAll
 
 @[expose] public section

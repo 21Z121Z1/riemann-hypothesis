@@ -3,7 +3,7 @@ module
 public import Development.WeilBound.RepresentationTheoryGL.HolomorphicDiscreteSeries.WordSpans.WordSpan
 public import Development.WeilBound.CoreStatements.BranchingTraces.ExistsIntertwiner
 public import Development.WeilBound.CoreStatements.OrbitDecayEstimates.CurveDerivativeDecay.LipschitzEstimate
-public import Development.WeilBound.RepresentationTheoryGL.HolomorphicDiscreteSeries.WordSpans.LowWeightDensity
+public import Development.WeilBound.RepresentationTheoryGL.HolomorphicDiscreteSeries.WordSpans.Bundle0001
 
 @[expose] public section
 

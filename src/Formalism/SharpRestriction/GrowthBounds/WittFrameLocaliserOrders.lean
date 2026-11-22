@@ -4,7 +4,7 @@ public import Formalism.SharpRestriction.GrowthBounds.SourceCleaning
 public import Formalism.PolynomialDimension.DetMulEqSumAdjugate
 public import Formalism.SubspaceCounting.ChoiceOfTopsRefined
 public import Formalism.GrowthSums.LemmaATwoFactList
-public import Formalism.PolynomialDimension.FinalNum
+public import Formalism.PolynomialDimension.Bundle0004
 
 @[expose] public section
 

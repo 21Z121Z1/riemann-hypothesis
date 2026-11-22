@@ -1,10 +1,10 @@
 module
 
 public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.UnivChar
-public import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.ThetaTranslateRangeGap
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.FiniteGroupLevelActionEqInvSmulTranslate
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ThetaProjectionIntertwinesLevelLifts
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.BaseOfOfPin
+public import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.Bundle0012
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0496
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0506
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0806
 
 @[expose] public section
 
@@ -57,7 +57,7 @@ theorem thF_act_core (hC : GlobalTheory.Hk3.Core R F) (i : Fin D.R.m) (t : T) (g
   have h1 : R.thF i t y (fun ρ => v ρ) = FWT.actW R i (sg0 D A) g (R.thF i t x) (fun ρ => v ρ) := funext fun z =>
     (thF_shift_core R F hC i t (R.eG g) k k' hk' hk''.1 x y (levChi (Vc D i) (R.βV i) (flagL (R.datVt i t)) k)
       (levChi_ne_zero (V := Vc D i) (β := R.βV i) (flagL (R.datVt i t)) k)
-      (GlobalTheory.T.weilAction_liftPair_stepVector_invLevelChar R hC.lev hC.models.inf hC.thP.ωP hC.thP.vP i t (R.eG g) k k' hk' hk'')
+      (_root_.GlobalTheory.VecInv.omega_lifts_vP R hC.lev hC.models.inf hC.thP.ωP hC.thP.vP i t (R.eG g) k k' hk' hk'')
       (fun h => (congrFun hy h).trans (hk.2 _ h)) v z).trans
     (finiteGroup_acts_by_lift_translation_principalType R i (R.eG g) k' hk'' _ (thF_type R hC.thP.thF_mem i t x _) z).symm
   have h2 : b = R.gW i (sg0 D A) g a := hinj

@@ -1,6 +1,6 @@
 module
 
-public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.GelfandTsetlinLowering.LiftDefs
+public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.GelfandTsetlinLowering.Bundle0001
 public import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Wlocal
 public import Formalism.GradedWeylDivisibility.FinalC
 

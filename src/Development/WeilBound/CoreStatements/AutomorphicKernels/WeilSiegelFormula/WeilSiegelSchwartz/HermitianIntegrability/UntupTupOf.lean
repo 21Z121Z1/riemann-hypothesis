@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Development.WeilBound.CoreStatements.TemperedRepresentationTheory.WeilSiegelTheta.BigCellDefs
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ThetaPartD
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsBoundUnitary
+public import Development.WeilBound.CoreStatements.TemperedRepresentationTheory.WeilSiegelTheta.Bundle0001
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0471
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0827
 
 @[expose] public section
 

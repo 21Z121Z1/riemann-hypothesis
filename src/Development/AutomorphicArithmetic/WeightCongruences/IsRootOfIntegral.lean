@@ -2,8 +2,8 @@ module
 
 public import Mathlib
 public import Formalism.LocalRingCardinality.DataHost
-public import Development.AutomorphicArithmetic.WeightCongruences.ProdNegOneZpow
-public import Development.AutomorphicArithmetic.WeightCongruences.ExistsShiftWeightCongruenceLtTorsionOrder
+public import Development.AutomorphicArithmetic.WeightCongruences.Bundle0001
+public import Development.AutomorphicArithmetic.WeightCongruences.Bundle0002
 public import Development.AutomorphicArithmetic.WeightCongruences.ProdCmTypeEqNormAndWeightCongruenceOne
 
 @[expose] public section

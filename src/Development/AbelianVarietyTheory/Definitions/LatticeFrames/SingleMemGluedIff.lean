@@ -2,8 +2,8 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.IntOfKeeps
-public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.PlacedP
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.MemSmulOfMemFlagSubOne
+public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.Bundle0032
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0044
 public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.FinitePartTraceCharacterIdempotentInverseDiffere
 
 @[expose] public section

@@ -1,6 +1,6 @@
 module
 
-public import Formalism.LocalToGlobal.GroupLattices.JointServices.ValIntNonneg
+public import Formalism.LocalToGlobal.GroupLattices.JointServices.Bundle0001
 
 @[expose] public section
 

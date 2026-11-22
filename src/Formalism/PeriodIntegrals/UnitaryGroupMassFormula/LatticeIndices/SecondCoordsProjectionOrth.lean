@@ -1,6 +1,6 @@
 module
 
-public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LatticeIndices.AdqHRRatV
+public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LatticeIndices.Bundle0027
 public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.MassComputations.SumKfMulZREqZero
 
 @[expose] public section

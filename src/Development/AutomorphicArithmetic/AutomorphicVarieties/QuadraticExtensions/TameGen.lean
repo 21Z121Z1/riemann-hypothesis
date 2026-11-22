@@ -1,7 +1,7 @@
 module
 
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.QuadraticExtensions.ModulusAdjoinISqrtNegPrimes
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ValuationApplyOfWild
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0079
 
 @[expose] public section
 

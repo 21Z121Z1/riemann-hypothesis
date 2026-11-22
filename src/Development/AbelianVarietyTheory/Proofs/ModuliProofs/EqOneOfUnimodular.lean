@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsHeckeQuotientTriple
-public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.LineBundleIsoLinCombSymmBiadditiveSubstitution
-public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsThetaLinComb
+public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0108
+public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0113
+public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0111
 
 @[expose] public section
 

@@ -1,8 +1,7 @@
 module
 
-public import Formalism.SatakeDualWeyl.StatementC
-public import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.SignatureExists
-public import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.SignatureConjugationInvariant
+public import Formalism.SatakeDualWeyl.Bundle0001
+public import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Bundle0003
 
 @[expose] public section
 

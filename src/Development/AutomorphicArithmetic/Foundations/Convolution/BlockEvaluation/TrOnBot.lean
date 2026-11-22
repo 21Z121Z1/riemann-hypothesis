@@ -1,11 +1,10 @@
 module
 
 public import Development.AutomorphicArithmetic.Foundations.Convolution.BlockEvaluation.TruncSpec
-public import Development.AutomorphicArithmetic.Foundations.Convolution.PolynomialCoefficientBounds.PowLeExpEventually
-public import Development.AutomorphicArithmetic.Foundations.Convolution.PolynomialCoefficientBounds.Degree
-public import Development.AutomorphicArithmetic.Foundations.Convolution.BlockEvaluation.AbsDAtTop
-public import Development.AutomorphicArithmetic.Foundations.Convolution.BlockEvaluation.SideEst
-public import Development.AutomorphicArithmetic.Foundations.Convolution.BlockEvaluation.TotalDegreeAevalLe
+public import Development.AutomorphicArithmetic.Foundations.Convolution.PolynomialCoefficientBounds.Bundle0003
+public import Development.AutomorphicArithmetic.Foundations.Convolution.PolynomialCoefficientBounds.Bundle0001
+public import Development.AutomorphicArithmetic.Foundations.Convolution.BlockEvaluation.Bundle0001
+public import Development.AutomorphicArithmetic.Foundations.Convolution.BlockEvaluation.Bundle0003
 
 @[expose] public section
 

@@ -3,7 +3,7 @@ module
 public import CompanionTheory.RealGroups.GeneralUnitaryRepresentations.ArchimedeanJacquetSegments.SegmentSubquotients.StageC
 public import CompanionTheory.RealGroups.GeneralUnitaryRepresentations.ArchimedeanJacquetSegments.SegmentSubquotients.RhoNuRhoReducibleC
 public import CompanionTheory.AutomorphicTheory.TemperedLocalSpectra.LocalGeometry.Imports
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.GeometricLemmaOfFiltration
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0382
 public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.GlobalTheory.BernsteinZelevinskyFiniteness
 
 @[expose] public section

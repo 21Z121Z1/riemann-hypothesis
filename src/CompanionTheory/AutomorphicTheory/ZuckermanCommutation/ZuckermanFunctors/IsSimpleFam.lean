@@ -3,8 +3,8 @@ module
 public import Development.AbelianVarietyTheory.Definitions.Jets.SumIoPrAlt
 public import Development.AbelianVarietyTheory.Definitions.Jets.SumIoPr
 public import Formalism.PeriodIntegrals.ZuckTensor
-public import Formalism.PeriodIntegrals.DSInfCharCap
-public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.CapelliEigenvalues.HeckeMultiplication
+public import Formalism.PeriodIntegrals.Bundle0016
+public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.CapelliEigenvalues.Bundle0001
 public import CompanionTheory.HarishChandraModules.BesselParameterIntegrals.SmoothCyclicVectors.PhMeas
 
 @[expose] public section

@@ -1,9 +1,9 @@
 module
 
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.IdeleGenerators.WeightChange
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.KLevTop
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.Bundle0003
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.Newform
-public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.AbsPowOneNotIsAlgRat
+public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.Bundle0002
 
 @[expose] public section
 

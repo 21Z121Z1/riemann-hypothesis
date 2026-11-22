@@ -1,13 +1,13 @@
 module
 
 public import Development.AutomorphicArithmetic.Foundations.LocalLanglands.RecTTransport
-public import Development.DiscreteGroups.GlobalIrreducibility.DzGalRes
-public import Development.DiscreteGroups.GlobalIrreducibility.DzIneEq
-public import Development.DiscreteGroups.GlobalIrreducibility.ExistsIneOfVEqOne
-public import Development.DiscreteGroups.GlobalIrreducibility.DzNormV
-public import Development.DiscreteGroups.GlobalIrreducibility.DzTameRec
+public import Development.DiscreteGroups.GlobalIrreducibility.Bundle0017
+public import Development.DiscreteGroups.GlobalIrreducibility.Bundle0002
+public import Development.DiscreteGroups.GlobalIrreducibility.Bundle0016
+public import Development.DiscreteGroups.GlobalIrreducibility.Bundle0015
+public import Development.DiscreteGroups.GlobalIrreducibility.Bundle0007
 public import Development.AutomorphicArithmetic.Foundations.LocalLanglands.LocalCentralUnits.ArtEx
-public import Development.AutomorphicArithmetic.Foundations.LocalLanglands.LocalCentralUnits.TameArt
+public import Development.AutomorphicArithmetic.Foundations.LocalLanglands.LocalCentralUnits.Bundle0003
 public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.RestrictsExists
 
 @[expose] public section

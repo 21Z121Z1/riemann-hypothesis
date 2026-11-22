@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Formalism.LocalToGlobal.IndefiniteReal.FWExist
-public import Formalism.LocalToGlobal.IndefiniteReal.RhoGeo
+public import Formalism.LocalToGlobal.IndefiniteReal.Bundle0027
 
 @[expose] public section
 

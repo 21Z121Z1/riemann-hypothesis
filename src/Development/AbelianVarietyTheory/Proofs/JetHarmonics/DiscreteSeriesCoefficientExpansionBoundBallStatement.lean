@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.DiscreteSeriesCoefficientExpansionBoundBall
-public import Development.AbelianVarietyTheory.Definitions.Jets.SupWOfSup
+public import Development.AbelianVarietyTheory.Definitions.Jets.Bundle0002
 public import Development.AbelianVarietyTheory.Definitions.Jets.SumIoPr
 public import Formalism.HermitianCurvature.HermitianCurvatureProofs.NormSqUnitNormalizationLe
 

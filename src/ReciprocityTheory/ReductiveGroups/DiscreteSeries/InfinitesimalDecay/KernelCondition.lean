@@ -3,7 +3,7 @@ module
 public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.InfinitesimalDecay.DecBoundJ
 public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.DiscreteSeriesExistence.DatumEmbeddingMemHlam
 public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.InfinitesimalDecay.SigLamSmoothOfGenSub
-public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.InfinitesimalDecay.KFiniteVectorsInGeneratedSubmodule
+public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.InfinitesimalDecay.Bundle0002
 
 @[expose] public section
 

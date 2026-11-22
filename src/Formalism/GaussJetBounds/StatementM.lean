@@ -1,6 +1,6 @@
 module
 
-public import Formalism.GaussJetBounds.StatementK
+public import Formalism.GaussJetBounds.Bundle0003
 
 @[expose] public section
 

@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Definitions.MetricPeriods.MetricsProjectionFormulaNef
-public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.UnitRatioDivisorSupportEq
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ChartLatticeNormMembership
+public import Development.AutomorphicSpectrum.Definitions.MetricPeriods.Bundle0002
+public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.Bundle0049
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0021
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArithmeticIntersection.MultihomogeneousIdeals.MemDivSuppOfDivCycleNeZero
 public import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.PVertFactorSmooth
 

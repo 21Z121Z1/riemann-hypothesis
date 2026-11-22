@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import GroundTheory.ProfiniteCohomology.ClassFormations
-public import GroundTheory.ProfiniteCohomology.Colimit
+public import GroundTheory.ProfiniteCohomology.Bundle0008
+public import GroundTheory.ProfiniteCohomology.Bundle0006
 public import GroundTheory.ProfiniteCohomology.ShapiroDefs
 public import GroundTheory.ProfiniteCohomology.LocalClassFormation.FiniteVanishing.TateThree
 

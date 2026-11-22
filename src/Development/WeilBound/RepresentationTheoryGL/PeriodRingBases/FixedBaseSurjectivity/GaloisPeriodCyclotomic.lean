@@ -1,7 +1,7 @@
 module
 
 public import Development.WeilBound.RepresentationTheoryGL.PeriodRingBases.PeriodRingUnits.DieudonneManinBasisModification
-public import Development.WeilBound.CoreStatements.CrystallinePeriodRings.PhiGalCris
+public import Development.WeilBound.CoreStatements.CrystallinePeriodRings.Bundle0001
 public import Development.WeilBound.CoreStatements.CrystallinePeriodRings.FundIotaTANeZero
 public import Development.WeilBound.CoreStatements.CrystallinePeriodRings.AinfMapSurjective
 public import Development.WeilBound.CoreStatements.CrystallinePeriodRings.AwayExistsSelf

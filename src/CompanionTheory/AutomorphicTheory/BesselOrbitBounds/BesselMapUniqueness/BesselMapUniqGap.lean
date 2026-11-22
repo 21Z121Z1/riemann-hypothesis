@@ -1,7 +1,7 @@
 module
 
 public import CompanionTheory.HarishChandraModules.BesselParameterIntegrals.ParametricIntegralSmoothness.IntCommute
-public import Formalism.PeriodIntegrals.BesselMapUniq
+public import Formalism.PeriodIntegrals.Bundle0016
 
 @[expose] public section
 

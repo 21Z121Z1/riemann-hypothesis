@@ -1,7 +1,7 @@
 module
 
 public import Formalism.SubspaceCounting.GoodOrbitIntervalTileCondition
-public import Formalism.SubspaceCounting.SubspaceCountingProofs.ManyOrbits
+public import Formalism.SubspaceCounting.SubspaceCountingProofs.Bundle0002
 
 @[expose] public section
 

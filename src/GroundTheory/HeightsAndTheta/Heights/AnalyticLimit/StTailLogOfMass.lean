@@ -2,11 +2,11 @@ module
 
 public import Mathlib
 public import GroundTheory.HeightsAndTheta.Heights.AnalyticLimit.Objects
-public import GroundTheory.HeightsAndTheta.Heights.AnalyticLimit.UIObjects
-public import ReciprocityTheory.AnalyticForms.PotentialTheory.HessCIsHermitian
-public import ReciprocityTheory.AnalyticForms.PotentialTheory.ProjectiveLinePartitionContinuousCoe
+public import GroundTheory.HeightsAndTheta.Heights.AnalyticLimit.Bundle0002
+public import ReciprocityTheory.AnalyticForms.PotentialTheory.Bundle0004
+public import ReciprocityTheory.AnalyticForms.PotentialTheory.Bundle0005
 public import ReciprocityTheory.AnalyticForms.PotentialTheory.PLCurveA
-public import GroundTheory.HeightsAndTheta.Heights.AnalyticLimit.StTailShift
+public import GroundTheory.HeightsAndTheta.Heights.AnalyticLimit.Bundle0004
 
 @[expose] public section
 

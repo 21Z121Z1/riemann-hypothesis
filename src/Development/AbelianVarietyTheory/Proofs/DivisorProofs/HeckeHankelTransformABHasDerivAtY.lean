@@ -3,8 +3,8 @@ module
 public import Mathlib
 public import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.OmegaFactorization
 public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.PartialZetaFunctionalEquation
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.KFacDifferentiable
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HTransABTwoZero
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0157
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0203
 
 @[expose] public section
 

@@ -1,6 +1,6 @@
 module
 
-public import Formalism.FlagUnipotentLattices.PairingOrthogonalComplement
+public import Formalism.FlagUnipotentLattices.Bundle0001
 public import Mathlib
 public import Formalism.SobolevGaussianKernels.StatementEI
 public import Formalism.CorankShare.StatementFR

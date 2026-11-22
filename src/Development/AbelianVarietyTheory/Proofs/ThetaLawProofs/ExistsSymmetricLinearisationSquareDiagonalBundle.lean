@@ -7,8 +7,8 @@ public import Development.AbelianVarietyTheory.Statements.ThetaLevelCharacters.M
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.ValCalc
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.IsMonHomOfMul
 public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ClsLinCombSingle
-public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.BiadditiveOfTrivAxes
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.IsEquivalenceFiniteEtaleBaseChangeResidueField
+public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0156
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0033
 
 @[expose] public section
 

@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import GroundTheory.AutomorphicForms.HaarSK
-public import GroundTheory.HeightsAndTheta.Heights.FiniteCovolume.PSemidirectHaar
+public import GroundTheory.HeightsAndTheta.Heights.FiniteCovolume.Bundle0024
 
 @[expose] public section
 

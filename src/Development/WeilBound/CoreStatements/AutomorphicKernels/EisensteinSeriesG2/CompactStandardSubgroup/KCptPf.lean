@@ -1,8 +1,8 @@
 module
 
 public import Development.WeilBound.CoreStatements.AutomorphicKernels.EisensteinSeriesG2.CompactStandardSubgroup.Imports
-public import Development.WeilBound.CoreStatements.AutomorphicKernels.EisensteinSeriesG2.G2HaarMeasure.ContinuousInFrame
-public import Development.WeilBound.ThetaLifts.LatticeBasics.IsCompactOfUnits
+public import Development.WeilBound.CoreStatements.AutomorphicKernels.EisensteinSeriesG2.G2HaarMeasure.Bundle0001
+public import Development.WeilBound.ThetaLifts.LatticeBasics.Bundle0008
 public import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.ExistsHeightLeTwoMulQuotHeight
 
 @[expose] public section

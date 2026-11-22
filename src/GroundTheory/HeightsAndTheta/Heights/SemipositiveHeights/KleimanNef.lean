@@ -1,10 +1,10 @@
 module
 
 public import Mathlib
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArakelovGeometry.KleimanNefness.KleimanSt
-public import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.GeoNum
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PNefAmpleFibre
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PSemiampleNef
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArakelovGeometry.KleimanNefness.Bundle0001
+public import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.Bundle0011
+public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0049
+public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0018
 
 @[expose] public section
 

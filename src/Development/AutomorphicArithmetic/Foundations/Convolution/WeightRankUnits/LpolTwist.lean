@@ -4,8 +4,8 @@ public import Development.AutomorphicArithmetic.Foundations.Convolution.WeightRa
 public import Development.AutomorphicArithmetic.Foundations.Convolution.OrbitNormCounting.NormCount
 public import Development.AutomorphicArithmetic.Foundations.Convolution.OrbitNormCounting.UnitAe
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.KappaConstantMulOfCoprimeEllipticPolynomials
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TwistedOrbitalIntegralTwistedConjInvariant
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LocalTwistContinuousInvolutionIntegralProperties
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1048
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1310
 
 @[expose] public section
 

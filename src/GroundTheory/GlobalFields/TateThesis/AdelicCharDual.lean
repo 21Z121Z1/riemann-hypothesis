@@ -2,11 +2,10 @@ module
 
 public import Mathlib
 public import GroundTheory.GlobalFields.TateThesis.AdelicCharLocal
-public import GroundTheory.GlobalFields.TateThesis.TracePairing
-public import GroundTheory.GlobalFields.TateThesis.ArchChars
-public import GroundTheory.GlobalFields.TateThesis.NoSmallSubgroups
-public import GroundTheory.GlobalFields.Adele.IdeleBasis
-public import GroundTheory.GlobalFields.Adele.Compact
+public import GroundTheory.GlobalFields.TateThesis.Bundle0003
+public import GroundTheory.GlobalFields.TateThesis.Bundle0001
+public import GroundTheory.GlobalFields.TateThesis.Bundle0002
+public import GroundTheory.GlobalFields.Adele.Bundle0002
 
 @[expose] public section
 

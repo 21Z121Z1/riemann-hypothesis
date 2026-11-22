@@ -3,9 +3,9 @@ module
 public import Mathlib
 public import Formalism.LocalToGlobal.IndefiniteReal.ExistsChosenExtremalVector
 public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.FockPolynomialVectorLaws
-public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.ExistsRealPlaceSymplecticFormPositiveComplexStru
-public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.RealSymplecticFormAlternatingInvariantDefinite
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsCharFamIsVacVec
+public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.Bundle0065
+public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.Bundle0066
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0139
 
 @[expose] public section
 

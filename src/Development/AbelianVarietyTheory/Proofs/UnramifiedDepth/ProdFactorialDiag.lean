@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Formalism.LocalToGlobal.CharacterGerms.BiadditiveInSingleVariables
-public import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.LegendreAndCapelli
+public import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.Bundle0010
 
 @[expose] public section
 

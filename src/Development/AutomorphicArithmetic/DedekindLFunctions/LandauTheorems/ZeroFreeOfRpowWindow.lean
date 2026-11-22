@@ -2,7 +2,7 @@ module
 
 public import Development.AutomorphicArithmetic.DedekindLFunctions.LandauZeroFreeCriterion
 public import Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.lemmaL
-public import Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.WindowHypOfRpow
+public import Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.Bundle0002
 
 @[expose] public section
 

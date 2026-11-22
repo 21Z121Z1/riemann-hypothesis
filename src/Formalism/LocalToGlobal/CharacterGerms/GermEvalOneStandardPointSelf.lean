@@ -1,7 +1,7 @@
 module
 
 public import Formalism.LocalToGlobal.CharacterGerms.ConstantZeroDoubleMultiplicationPair
-public import Formalism.LocalToGlobal.CharacterGerms.RowTiePGmExLem
+public import Formalism.LocalToGlobal.CharacterGerms.Bundle0020
 
 @[expose] public section
 

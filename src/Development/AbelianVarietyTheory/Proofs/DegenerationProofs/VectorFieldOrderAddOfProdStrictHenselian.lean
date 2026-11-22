@@ -7,11 +7,10 @@ public import Development.AbelianVarietyTheory.Definitions.Degenerations.OfDeriv
 public import Development.AbelianVarietyTheory.Definitions.Degenerations.PlOrdSomeOfAssociated
 public import Development.AbelianVarietyTheory.Statements.SemistableTorsion.SemistableFin
 public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsUniqueModelHasJacobianOrder
-public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ProdIrrAndWeakNeron
-public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsEqDivOfIsPullback
-public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsVf
-public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsStalkDerivationOfIsPullback
-public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.LeOfZpowMulUnitEq
+public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.Bundle0025
+public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.Bundle0002
+public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.Bundle0021
+public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.Bundle0014
 public meta import Lean.Elab.Command
 
 @[expose] public section

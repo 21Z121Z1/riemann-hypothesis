@@ -1,6 +1,6 @@
 module
 
-public import Formalism.SharpRestriction.GrowthBounds.SegmentDegree.LamImgApply
+public import Formalism.SharpRestriction.GrowthBounds.SegmentDegree.Bundle0010
 public import Formalism.SharpRestriction.GrowthBounds.SegmentDegree.FrameZeroStrictMono
 public import Formalism.SharpRestriction.GrowthBounds.SegmentDegree.CoarseLabelFactorisation
 

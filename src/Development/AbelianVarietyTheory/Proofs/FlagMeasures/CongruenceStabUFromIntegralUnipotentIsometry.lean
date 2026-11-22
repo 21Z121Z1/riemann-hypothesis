@@ -1,10 +1,10 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.RowMinor
-public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.OfRoots
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.DetFromBlocksSingle
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsUniquePlace
+public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.Bundle0012
+public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.Bundle0006
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0094
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0199
 public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.StandardBaseFlagComplementIntegralLattice
 
 @[expose] public section

@@ -1,14 +1,14 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Foundations.ApplyEqOfMemAdjoin
-public import Development.AbelianVarietyTheory.Definitions.Foundations.IsTopWTopWOfExists
-public import Development.AbelianVarietyTheory.Definitions.Foundations.Integral
+public import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0010
+public import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0003
+public import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0001
 public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.DifferentiableAtGP
 public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.SmoothedSiegelUnitQExpansionCoeffsIntegral
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.SiegelUnitQExpansionCoefficients
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.SiegelUnitInTowerAnEqSiegelUnitOnComplex
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.GaloisActionSiegelUnitInTower
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0180
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0175
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0183
 
 @[expose] public section
 

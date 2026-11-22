@@ -1,9 +1,9 @@
 module
 
 public import Development.AbelianVarietyTheory.PublishedTheorems.SiegelWeil₂.SiegelWeilUnitarySchrodinger
-public import Development.AbelianVarietyTheory.PublishedTheorems.SiegelWeil₂.SiegelEisensteinPolesStd
+public import Development.AbelianVarietyTheory.PublishedTheorems.SiegelWeil₂.Bundle0001
 public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.WeilThetaConvergence
-public import Development.WeilBound.CoreStatements.TemperedRepresentationTheory.WeilSiegelTheta.BigCellDefs
+public import Development.WeilBound.CoreStatements.TemperedRepresentationTheory.WeilSiegelTheta.Bundle0001
 
 @[expose] public section
 

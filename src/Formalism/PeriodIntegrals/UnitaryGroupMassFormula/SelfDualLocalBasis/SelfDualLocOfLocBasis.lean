@@ -1,10 +1,9 @@
 module
 
 public import Mathlib
-public import Formalism.PeriodIntegrals.SelfDualLoc
-public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.SelfDualLocalBasis.Assembly
-public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.SelfDualLocalBasis.HvecApply
-public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.SelfDualLocalBasis.Nondeg
+public import Formalism.PeriodIntegrals.Bundle0007
+public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.SelfDualLocalBasis.Bundle0003
+public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.SelfDualLocalBasis.Bundle0002
 
 @[expose] public section
 

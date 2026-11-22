@@ -1,9 +1,9 @@
 module
 
 public import Development.AutomorphicArithmetic.Foundations.Convolution.RealGroupAnalysis.FockOperators.XApply
-public import Development.AutomorphicArithmetic.Foundations.Convolution.RealGroupAnalysis.FockOperators.SetIntegralMulRight
-public import Development.AutomorphicArithmetic.Foundations.Convolution.RealGroupAnalysis.FockOperators.StableOfOrth
-public import Development.AutomorphicArithmetic.Foundations.Convolution.RealGroupAnalysis.FockOperators.FW
+public import Development.AutomorphicArithmetic.Foundations.Convolution.RealGroupAnalysis.FockOperators.Bundle0002
+public import Development.AutomorphicArithmetic.Foundations.Convolution.RealGroupAnalysis.FockOperators.Bundle0003
+public import Development.AutomorphicArithmetic.Foundations.Convolution.RealGroupAnalysis.FockOperators.Bundle0008
 public import Development.AutomorphicArithmetic.Foundations.Convolution.RealGroupAnalysis.WeilRepresentation.FockSt
 
 @[expose] public section

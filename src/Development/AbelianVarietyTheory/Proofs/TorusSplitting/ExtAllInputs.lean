@@ -1,13 +1,12 @@
 module
 
 public import Mathlib
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.SquareIntegrability.GaussianTailBound
-public import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.SupLeL2PrincipalTorus
-public import Development.AbelianVarietyTheory.Proofs.TorusSplitting.GaussTailOfCardLe
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.SquareIntegrability.Bundle0001
+public import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.Bundle0006
+public import Development.AbelianVarietyTheory.Proofs.TorusSplitting.Bundle0001
 public import Development.AbelianVarietyTheory.Proofs.CovolumeBounds.EnormPowLeInvMeasureMulLintegralBall
-public import Development.AbelianVarietyTheory.Proofs.CovolumeBounds.ExistsOrthonormalOfLinearIndependent
-public import Development.AbelianVarietyTheory.Proofs.TorusSplitting.NearestPlaneRounding
-public import Development.AbelianVarietyTheory.Proofs.CovolumeBounds.MulConjTransposeEqOneOfOrthonormal
+public import Development.AbelianVarietyTheory.Proofs.CovolumeBounds.Bundle0002
+public import Development.AbelianVarietyTheory.Proofs.CovolumeBounds.Bundle0005
 
 @[expose] public section
 

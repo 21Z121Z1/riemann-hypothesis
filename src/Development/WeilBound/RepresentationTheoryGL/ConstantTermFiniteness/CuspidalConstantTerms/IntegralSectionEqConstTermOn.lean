@@ -2,9 +2,8 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.Foundations.ConstTermOnMulLeftOfNormalizer
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ProdHomeoSymmApplySnd
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CocompactNormalSubgroupFibration
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CocompactFibrationSectionMeasure
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0096
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0844
 
 @[expose] public section
 

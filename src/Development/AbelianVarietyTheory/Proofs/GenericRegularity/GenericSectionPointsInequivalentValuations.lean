@@ -1,17 +1,17 @@
 module
 
 public import Mathlib
-public import Formalism.LocalToGlobal.ProjectiveLattices.RegXInst
-public import Formalism.LocalToGlobal.ProjectiveLattices.CurveLocInst
-public import Formalism.LocalToGlobal.ProjectiveLattices.LocRingPf
-public import Formalism.LocalToGlobal.ProjectiveLattices.TieInst
-public import Formalism.LocalToGlobal.ProjectiveLattices.RealPtPf
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0035
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0043
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0041
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0037
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0039
 public import Formalism.LocalToGlobal.ProjectiveLattices.PtOfSPf
-public import Formalism.LocalToGlobal.ProjectiveLattices.SecPtRed
-public import Formalism.LocalToGlobal.ProjectiveLattices.CompFin
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0030
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0011
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.HeightTheory.AlgebraMapOLInjective
-public import Development.AbelianVarietyTheory.Proofs.GenericRegularity.FinrankHostDivTwo
-public import Development.AbelianVarietyTheory.Proofs.GenericRegularity.CountQAtStGenericSectionPrimes
+public import Development.AbelianVarietyTheory.Proofs.GenericRegularity.Bundle0012
+public import Development.AbelianVarietyTheory.Proofs.GenericRegularity.Bundle0028
 public import Development.AbelianVarietyTheory.Proofs.GenericRegularity.AlgebraMapMemMax
 
 @[expose] public section

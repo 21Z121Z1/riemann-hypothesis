@@ -1,6 +1,6 @@
 module
 
-public import ReciprocityTheory.AnalyticForms.PotentialTheory.ContDiffOnFubiniStudyProfileInvNormSqFirst
+public import ReciprocityTheory.AnalyticForms.PotentialTheory.Bundle0002
 
 @[expose] public section
 

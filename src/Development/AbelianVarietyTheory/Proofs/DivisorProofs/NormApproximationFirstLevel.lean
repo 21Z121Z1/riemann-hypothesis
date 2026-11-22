@@ -1,12 +1,12 @@
 module
 
 public import Mathlib
-public import Formalism.SatakeDualWeyl.StatementF
+public import Formalism.SatakeDualWeyl.Bundle0001
 public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.AevalRootEqZeroIff
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsUnitOneAddPiOMul
-public import GroundTheory.LocalFields.FilteredSurj
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsMulInvolEqOfFixed
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsReducedAdjoinRootOfSeparable
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0214
+public import GroundTheory.LocalFields.Bundle0001
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0036
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0033
 
 @[expose] public section
 

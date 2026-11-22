@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Formalism.LocalToGlobal.ProjectiveLattices.ThClassPinsRec
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0028
 
 @[expose] public section
 

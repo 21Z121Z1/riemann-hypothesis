@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.PowerSeriesOneAddConstMulXMulInv
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SubIdBijOfContracting
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0092
 
 @[expose] public section
 

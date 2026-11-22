@@ -3,8 +3,8 @@ module
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.Divisors.LamRange
 public import Development.AbelianVarietyTheory.Statements.SemistableTorsion.ImmersedBy
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SepAtBIff
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HasTraitsP
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2970
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2991
 
 @[expose] public section
 

@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.IsMirClass
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.BlockParabolicUnitriangularSubgroupsGLnPrimeFiel
+public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.Bundle0007
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0121
 
 @[expose] public section
 

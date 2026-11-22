@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Formalism.LocalToGlobal.Divisibility.LiftLat
+public import Formalism.LocalToGlobal.Divisibility.Bundle0003
 public import Formalism.LocalToGlobal.Columns.RowForms
 public import Formalism.LocalToGlobal.Columns.RowFormsLemmas
 public import Formalism.LocalToGlobal.Columns.HeckeSp

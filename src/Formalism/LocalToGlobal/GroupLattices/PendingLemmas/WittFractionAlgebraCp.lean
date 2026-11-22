@@ -1,11 +1,11 @@
 module
 
 public import Formalism.LocalToGlobal.GroupLattices.PendingLemmas.WittFractionToCpAlgebraMap
-public import Formalism.LocalToGlobal.GroupLattices.PendingLemmas.WittEmbeddingsCompatible
+public import Formalism.LocalToGlobal.GroupLattices.PendingLemmas.Bundle0001
 public import Formalism.LocalToGlobal.GroupLattices.PendingLemmas.DetOfColSpanEq
 public import Formalism.LocalToGlobal.GroupLattices.PendingLemmas.WeightUpdateAtPlace
 public import Formalism.LocalToGlobal.GroupLattices.PendingLemmas.SubstZOfXCoordZA
-public import Formalism.LocalToGlobal.GroupLattices.PendingLemmas.XiOfSpec
+public import Formalism.LocalToGlobal.GroupLattices.PendingLemmas.Bundle0002
 public import Formalism.LocalToGlobal.GroupLattices.PendingLemmas.DetYtMatNeZero
 
 @[expose] public section

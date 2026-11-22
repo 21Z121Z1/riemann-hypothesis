@@ -1,8 +1,8 @@
 module
 
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.TwistedAutomorphicForms.EqOneOfMemLev
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.TwistedAutomorphicForms.SplitIso
-public import Development.AbelianVarietyTheory.Definitions.Foundations.DiagUnitsEqLocalIdele
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.TwistedAutomorphicForms.Bundle0002
+public import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0003
 
 @[expose] public section
 

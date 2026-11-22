@@ -2,11 +2,10 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.BundleBothPartsOfStandardKernelAndSixHypotheses
-public import Formalism.LocalToGlobal.InertKernelTheory.DefsRepDict
-public import Formalism.LocalToGlobal.InertKernelTheory.GenusOneModelExistsLattice
-public import Formalism.LocalToGlobal.InertKernelTheory.StatementJets
-public import Formalism.LocalToGlobal.InertKernelTheory.StatementAlgT
-public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.HasPartAnd
+public import Formalism.LocalToGlobal.InertKernelTheory.Bundle0012
+public import Formalism.LocalToGlobal.InertKernelTheory.Bundle0004
+public import Formalism.LocalToGlobal.InertKernelTheory.Bundle0007
+public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.Bundle0025
 public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.JointCmpEmbeddingY
 
 @[expose] public section

@@ -1,26 +1,25 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.LiftsSpanOfOnto
-public import Formalism.LocalToGlobal.IndefiniteReal.FWTie
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0208
+public import Formalism.LocalToGlobal.IndefiniteReal.Bundle0025
 public import Formalism.LocalToGlobal.IndefiniteReal.LinksChar
-public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.ExistsCuspIsThClsDUnique
+public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.Bundle0072
 public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.DatEqOfPhiHat
 public import Development.AbelianVarietyTheory.Proofs.HeightProofs.ExistsPsiTieOfValues
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DetReducedBlockEqResidueDet
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CompletedLatticeStabilizerIffBasisIntegral
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnfoldingFrameDeltaChange
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LastPosWtAOfPins
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.KapTopLastPosRun
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0825
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1318
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0964
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0963
 public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsCoversOfHalves
 public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.IntValuationEqOfMem
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.FinCongMemLevEnv
-public import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.EqZeroOfForallAlgHom
-public import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.EmbeddingsDifferOnInteger
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.RedMUMatMove
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ConjSmulEntry
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.LowZeroMulRightIff
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.UnitCOfCXiAt
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0301
+public import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.Bundle0076
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0422
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0416
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0147
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0423
 
 @[expose] public section
 
@@ -171,12 +170,12 @@ theorem exists_psi (V : HSp D) {l : Level H} {Xo : Moduli Dw l} {c : Coeff l} {n
   have hItop : d.I ≠ ⊤ := fun hT => P.1.isPrime.ne_top (top_le_iff.1 (hT ▸ hQ P.1 P.2))
   have hrange : (latG V 1 : Set (Fin V.rank → D.host.E)) = Set.range io := by
     rw [← hι.2, LinearMap.coe_range]
-  obtain ⟨a, ha₁, ha₂⟩ := GlobalTheory.TwistTie.det_sub_mem_hat D.host.F io (hrange ▸ (GlobalTheory.T.adelicElementLattice_full_and_completion D V 1).2.1) d.I hItop v hv₃ s
+  obtain ⟨a, ha₁, ha₂⟩ := GlobalTheory.TwistTie.det_sub_mem_hat D.host.F io (hrange ▸ (_root_.GlobalTheory.Member.latG_lattice_and_completion D V 1).2.1) d.I hItop v hv₃ s
     d.l₂.M (by rw [hM, Nat.cast_mul]; exact d.I.mul_mem_left _ hpI) (finHom V u).1 (by
       rw [← GlobalTheory.IdeleParts.integralFiniteAdeles_eq_adelicCompletion_integers, ← hU]
       exact unswap_int U)
     (fun j => by
-      rw [← hrange, ← (GlobalTheory.T.adelicElementLattice_full_and_completion D V 1).2.2.2.2.1]
+      rw [← hrange, ← (_root_.GlobalTheory.Member.latG_lattice_and_completion D V 1).2.2.2.2.1]
       exact hlift _ (hv₁ j))
   have hdet := hδ k a fun j => by
     set_option synthInstance.maxHeartbeats 100000 in
@@ -345,7 +344,7 @@ theorem datEq_of_values (S T : HSp D) (βS : GL (Fin S.rank) (EAf D)) (βT : GL 
       redM P (uMat S T βS βT e fun b => io (s.f d.l₂.M (X b))) * (Formalism.UG.bc (resS D.host.F P) y).1 := fun P hP =>
     GlobalTheory.AdjMove.redM_uMat_move D S T βS βT e _ io hint u y hy d.l₂.M P
       (hQ P hP (Ideal.mul_le_right (hMb.le (natCast_mem_Mb d.l₂)))) _ X fun b => by
-        rw [← hrange, ← (GlobalTheory.T.adelicElementLattice_full_and_completion D T 1).2.2.2.2.1]
+        rw [← hrange, ← (_root_.GlobalTheory.Member.latG_lattice_and_completion D T 1).2.2.2.2.1]
         exact hus _ hM₂ _
   have hval := hψ kI (s.f d.l₂.M) u y.1.det (fun a => (h1 _ _ (hσ a)).2.symm) (fun a _ => by
     obtain ⟨z, hz, ez⟩ := hus _ hM₂ a

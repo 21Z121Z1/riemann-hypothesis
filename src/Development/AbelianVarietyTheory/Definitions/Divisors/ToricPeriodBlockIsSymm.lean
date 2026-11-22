@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Divisors.IsPolAVSectionInverseImage
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0027
 
 @[expose] public section
 

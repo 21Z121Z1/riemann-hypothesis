@@ -1,6 +1,6 @@
 module
 
-public import Formalism.SharpRestriction.GrowthBounds.StandardPolynomials.IoDScalLast
+public import Formalism.SharpRestriction.GrowthBounds.StandardPolynomials.Bundle0013
 
 @[expose] public section
 

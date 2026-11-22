@@ -1,19 +1,17 @@
 module
 
 public import Mathlib
-public import ReciprocityTheory.DualLattices.CotangentSurjective
+public import ReciprocityTheory.DualLattices.Bundle0004
 public import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.IsTight
-public import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.StepOrderRes
+public import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.Bundle0003
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.NonzeroLocus
 public import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.IsFinFlatSub
-public import Development.AutomorphicSpectrum.PublishedTheorems.Algebra₂.QuotientByFiniteFlatStatement
-public import Development.AutomorphicSpectrum.PublishedTheorems.Algebra₂.ZarhinStatement
-public import Development.AutomorphicSpectrum.Statements.AlgebraStatements.HodgeTateDatumStatement
-public import Development.AutomorphicSpectrum.Statements.AlgebraStatements.OrdinaryCurveStatement
-public import Development.AutomorphicSpectrum.Statements.AlgebraStatements.PolarisedFlagStatement
-public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.FlagComparisonTheoremStatement
-public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.HopfOrderRetractRestrictionStatement
-public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.HopfOrderRetractElementaryStatement
+public import Development.AutomorphicSpectrum.PublishedTheorems.Algebra₂.Bundle0001
+public import Development.AutomorphicSpectrum.Statements.AlgebraStatements.Bundle0002
+public import Development.AutomorphicSpectrum.Statements.AlgebraStatements.Bundle0001
+public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.FlagComparisonTheorem
+public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.Bundle0037
+public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.Bundle0042
 
 @[expose] public section
 
@@ -33,7 +31,7 @@ theorem flagConcl_directFactor_of_subquotient :
   obtain ⟨⟨A', hA'⟩, -, hgen⟩ := GlobalTheory.T.hopf_order_retract_restriction p C v R hInt hp N AA Nw i π hπi hstab
   have ht' := GlobalTheory.T.hopf_order_retract_elementary p C v R hInt hp N hpN AA Nw i π hπi hstab htight
   rw [← hA'] at hFS ht' ⊢
-  refine GlobalTheory.T.flag_comparison_theorem p C v R hInt hp F Nw A' hFS ht' n b ?_ σ hσ
+  refine _root_.GlobalTheory.CompanionTheory.Ar.GR.flagStatement_holds p C v R hInt hp F Nw A' hFS ht' n b ?_ σ hσ
   intro k
   rw [hA']
   exact hgen _ (hS p C v R hInt hp hcomp N AA.carrier hab _)

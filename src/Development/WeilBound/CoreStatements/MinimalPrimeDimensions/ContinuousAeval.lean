@@ -1,13 +1,9 @@
 module
 
 public import Mathlib
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PRatPrimeDense
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PFiniteSeparatingModel
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PRootsNear
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PRootsBounded
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PPolyNonvanishDense
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PNoetherProjection
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PRootsLiftToZeros
+public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0004
+public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0003
+public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0005
 
 @[expose] public section
 

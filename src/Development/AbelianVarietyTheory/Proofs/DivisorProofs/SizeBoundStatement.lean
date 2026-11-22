@@ -1,13 +1,13 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Divisors.QuoIff
-public import Development.AbelianVarietyTheory.Definitions.Divisors.ToKnownTheoremsOf
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0056
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0059
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AnchoredWeightIndefiniteLiftGaps
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DividedWeightGapsBlockAndBar
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.StrictAntiOfStep
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HostBoundHolds
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WeightBoundHolds
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0719
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0754
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1877
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2042
 
 @[expose] public section
 

@@ -1,6 +1,6 @@
 module
 
-public import Formalism.ZeroFreeRegion.ZetaLogDerivativeBounds.LandauLocalOf
+public import Formalism.ZeroFreeRegion.ZetaLogDerivativeBounds.Bundle0001
 
 @[expose] public section
 

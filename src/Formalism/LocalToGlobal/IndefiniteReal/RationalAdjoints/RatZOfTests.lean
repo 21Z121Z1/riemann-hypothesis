@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Formalism.LocalToGlobal.IndefiniteReal.CutTuples2
+public import Formalism.LocalToGlobal.IndefiniteReal.Bundle0004
 
 @[expose] public section
 

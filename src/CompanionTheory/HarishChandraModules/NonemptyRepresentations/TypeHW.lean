@@ -1,7 +1,7 @@
 module
 
 public import Formalism.HermitianCurvature.HermitianCurvatureProofs.SingleMulVecOne
-public import Formalism.RealPlaceAnalysis.ThirdArithmeticHolds
+public import Formalism.RealPlaceAnalysis.Bundle0004
 
 @[expose] public section
 

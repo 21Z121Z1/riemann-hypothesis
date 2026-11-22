@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import GroundTheory.ProfiniteCohomology.LocalClassFormation.CupSymbolUnramified
-public import GroundTheory.ProfiniteCohomology.LocalClassFormation.CupSymbolNorm
+public import GroundTheory.ProfiniteCohomology.LocalClassFormation.Bundle0001
 public import GroundTheory.LocalFields.LocalArtinBaseChange
 
 @[expose] public section

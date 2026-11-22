@@ -3,15 +3,15 @@ module
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.TrivIsCr
 public import Formalism.SharpRestriction.LevelLetterCocycles.LocCoh
-public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.TwistStep
+public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0011
 public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.AcrisTorsionFreeComplete
 public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.DeRhamPotSemistable
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.EisensteinImagePowIdealAinfPropertiesStatement
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsGaloisElemCyclotomicPeriodNotRootOfUnityStatement
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.AinfDivisibilityBreuilKisinFacts
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ThetaBdRPlusSurjectiveKerUnitsEquivariant
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0360
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0443
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0331
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0056
 public import Development.AbelianVarietyTheory.CrystallinePeriods.RingIface
-public import Development.AbelianVarietyTheory.CrystallinePeriods.RingBasics
+public import Development.AbelianVarietyTheory.CrystallinePeriods.Bundle0001
 
 @[expose] public section
 
@@ -82,7 +82,7 @@ theorem step {d : ℕ} (g : ↥(GK K)) (w : Ainf l)
       rw [sub_mul, one_mul]; exact h1
     exact (mul_eq_zero.1 h5).resolve_left (sub_ne_zero.2 (hwi i hi))
   rw [theta_eq_zero_iff] at h4
-  have h6 := (GlobalTheory.T.eisensteinImage_pow_ideal_ainf_properties l K bk 1).2.1 (δ' a b) (by rwa [pow_one])
+  have h6 := (_root_.GlobalTheory.AinfEPow.ePow_facts l K bk 1).2.1 (δ' a b) (by rwa [pow_one])
   rw [hδ' a b, pow_succ]
   exact mul_dvd_mul_left _ (by rwa [pow_one] at h6)
 
@@ -92,7 +92,7 @@ theorem GlobalTheory.BKLim.beta_unique : ∀ (l : ℕ) [Fact l.Prime] (K : FinEx
   intro l _ K bk m N d ρ F k k' β β' hβ hβ'
   rcases Nat.eq_zero_or_pos m with rfl | hm
   · intro i j; simp
-  obtain ⟨g, z, ⟨w, hw, hz⟩, hzi⟩ := GlobalTheory.T.exists_galois_elem_cyclotomic_period_not_root_of_unity l K bk
+  obtain ⟨g, z, ⟨w, hw, hz⟩, hzi⟩ := _root_.GlobalTheory.BKLim.exists_isZ_not_root l K bk
   have hwi : ∀ i : ℕ, 1 ≤ i → Per.θ l w ^ i ≠ 1 := by
     intro i hi h
     have h1 : Per.θD l (aDp l w) = (Per.θ l w : ℂ_[l]) := (GlobalTheory.MemLoc.thetaD_props l).2.2.2.1 w

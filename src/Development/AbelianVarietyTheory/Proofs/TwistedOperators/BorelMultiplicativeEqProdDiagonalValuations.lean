@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsPairingSingleNe
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0140
 public import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.FSatakeC
-public import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.FIwasawaB
+public import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Bundle0008
 public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.InvMemDoubleCosetAndComm
 
 @[expose] public section

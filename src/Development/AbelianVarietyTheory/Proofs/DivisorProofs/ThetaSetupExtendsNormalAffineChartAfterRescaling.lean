@@ -2,9 +2,9 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.Divisors.LabRange
-public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsUnivBasis
+public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.Bundle0055
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsIsoThrough
-public import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.AbelianSchemeLawsUnconditional
+public import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.Bundle0029
 
 @[expose] public section
 
@@ -148,7 +148,7 @@ theorem exists_real_rechart (hL : Laws) {o Ω : Type} [CommRing o] [Field Ω] [A
     (isTwistPull_move gp τ hτ hL₁ hL₀ (psi_pow gp τ hτ _) hα₀ vα r₁ (r₂ ρ.i₀) ρ.s_zero)
     (isTwistPull_move gp' τ' hτ' hL' hL₀ (psi_pow gp' τ' hτ' _) hα₀ vα' r₁' r₂' hs₁) hdd'
 
-  choose U' hU' using fun x => GlobalTheory.T.exists_symLift_of_pow_eq_one hL _ P' S.N hNo uN _ _ (tors x)
+  choose U' hU' using fun x => _root_.GlobalTheory.exists_symLift_global hL _ P' S.N hNo uN _ _ (tors x)
   choose U₀ hU₀ aU₀ using fun x => symLift_move gp τ hτ hw hL₁ hL₀ (hx (S.r • x)).symm (tors₀ x) (ρ.U_sym x)
   choose U₀' hU₀' aU₀' using fun x => symLift_move gp' τ' hτ' hw' hL' hL₀ (hx' (S.r • x)).symm (tors₀ x) (hU' x)
   obtain ⟨u₁, hu₁, -⟩ := thetaGrp_acts_linearly hL.globalFns _ ρ.P S.N (baseOver (Sp S.R))

@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsPreFamilyOfLatticeFamilyTwo
-public import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.StatementsFlagIndependence
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.DualRevDualRev
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.Bundle0011
+public import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.Bundle0017
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0052
 
 @[expose] public section
 

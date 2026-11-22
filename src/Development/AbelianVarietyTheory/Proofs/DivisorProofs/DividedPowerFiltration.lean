@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.Divisors.IsKSValueOneOfRetraction
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DpExpEqSumRangeOfVanish
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0632
 
 @[expose] public section
 

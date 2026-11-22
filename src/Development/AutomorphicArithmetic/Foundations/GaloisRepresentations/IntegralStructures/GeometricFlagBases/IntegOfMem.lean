@@ -3,10 +3,10 @@ module
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.Divisors.HasDivPlace
 public import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsGDatumOneOneOne
-public import Development.AbelianVarietyTheory.Definitions.Divisors.HxiTZeroComb
-public import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsTjCorrDiagModel
-public import Development.AbelianVarietyTheory.Definitions.Divisors.CompactBIffCompact
-public import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.PAdicWittLattices.BcMapFst
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0025
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0061
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0009
+public import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.PAdicWittLattices.Bundle0002
 public import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.IntegralStructures.GeometricFlagBases.IsGrRefl
 
 @[expose] public section

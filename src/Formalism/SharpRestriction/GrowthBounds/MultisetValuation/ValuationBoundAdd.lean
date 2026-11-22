@@ -1,7 +1,7 @@
 module
 
-public import Formalism.SharpRestriction.GrowthBounds.MultisetValuation.PlaceB
-public import Formalism.SharpRestriction.GrowthBounds.MultisetValuation.DescentCore
+public import Formalism.SharpRestriction.GrowthBounds.MultisetValuation.Bundle0002
+public import Formalism.SharpRestriction.GrowthBounds.MultisetValuation.Bundle0001
 
 @[expose] public section
 

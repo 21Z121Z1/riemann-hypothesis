@@ -4,8 +4,8 @@ public import Mathlib
 public import Development.AutomorphicArithmetic.LocalEmbeddings.JetsGlue
 public import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.ExistsRealFnNeZero
 public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsRealModelSq
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.CuspidalListedTopForms
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.BesselPeriodCorankConvergesColumn
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0438
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0423
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsUniqueIsFunForm
 
 @[expose] public section

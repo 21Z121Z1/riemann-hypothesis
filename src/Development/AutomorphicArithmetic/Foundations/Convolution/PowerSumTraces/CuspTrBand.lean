@@ -1,9 +1,7 @@
 module
 
-public import Development.AutomorphicArithmetic.Foundations.Convolution.PowerSumTraces.DecayTraceClassAlt
-public import Development.AutomorphicArithmetic.Foundations.Convolution.PowerSumTraces.EigSplit
-public import Development.AutomorphicArithmetic.Foundations.Convolution.PowerSumTraces.EigSummands
-public import Development.AutomorphicArithmetic.Foundations.Convolution.PowerSumTraces.SummandsSpan
+public import Development.AutomorphicArithmetic.Foundations.Convolution.PowerSumTraces.Bundle0001
+public import Development.AutomorphicArithmetic.Foundations.Convolution.PowerSumTraces.Bundle0002
 public import Development.AutomorphicArithmetic.Foundations.Convolution.PowerSumTraces.TwistUnitary
 
 @[expose] public section

@@ -1,6 +1,6 @@
 module
 
-public import Formalism.PeriodIntegrals.GoodTwo
+public import Formalism.PeriodIntegrals.Bundle0018
 public import Formalism.LocalToGlobal.TorsionIntegrality.EisensteinTranslationProducts.MulStableIntegral
 public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.DyadicStableLattices.ChainPA
 

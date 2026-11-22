@@ -3,9 +3,9 @@ module
 public import Mathlib
 public import Development.AutomorphicSpectrum.Definitions.MetricPeriods.Pull1
 public import Development.AutomorphicSpectrum.Definitions.MetricPeriods.IsPeriodOn
-public import Development.AutomorphicSpectrum.Proofs.MetricProofs.IsImg
-public import GroundTheory.HeightsAndTheta.Heights.Intersections.PtsOverPt
-public import Development.AutomorphicSpectrum.Proofs.MetricProofs.HolomorphicDegreeOneBiholomorphism
+public import Development.AutomorphicSpectrum.Proofs.MetricProofs.Bundle0040
+public import GroundTheory.HeightsAndTheta.Heights.Intersections.Bundle0039
+public import Development.AutomorphicSpectrum.Proofs.MetricProofs.Bundle0039
 public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.AssemblyBase
 
 @[expose] public section

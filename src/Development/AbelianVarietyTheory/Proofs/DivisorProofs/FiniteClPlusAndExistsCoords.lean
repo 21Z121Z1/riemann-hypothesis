@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.Divisors.GridTestLatticeLargestSlopeBound
-public import Development.AbelianVarietyTheory.Definitions.Divisors.NatCastSmulMemHatL
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0039
 public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.MeasureToRealEqMass
 
 @[expose] public section

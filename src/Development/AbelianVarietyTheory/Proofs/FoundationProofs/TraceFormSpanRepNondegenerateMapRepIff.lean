@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.BlockTheory.TorsionBlocks.LatticeConditions
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.CrystallineCocycleTransportConjugation
+public import Development.AbelianVarietyTheory.BlockTheory.TorsionBlocks.Bundle0006
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0212
 
 @[expose] public section
 

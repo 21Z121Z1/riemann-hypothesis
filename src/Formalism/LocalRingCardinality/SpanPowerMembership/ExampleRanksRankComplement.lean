@@ -1,7 +1,7 @@
 module
 
 public import Formalism.LocalRingCardinality.Params
-public import Formalism.SharpRestriction.RamificationFrobenius.TotientGaloisClasses.FrameCyclicGenerator
+public import Formalism.SharpRestriction.RamificationFrobenius.TotientGaloisClasses.Bundle0001
 
 @[expose] public section
 

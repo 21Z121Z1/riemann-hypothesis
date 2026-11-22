@@ -1,11 +1,11 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.AbBound
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LieModelExistsUniqueSemilinear
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LieModelIsBaseChange
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0091
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0034
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0129
 public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsLieModel
-public import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.CoordinateIdeals
+public import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.Bundle0002
 
 @[expose] public section
 

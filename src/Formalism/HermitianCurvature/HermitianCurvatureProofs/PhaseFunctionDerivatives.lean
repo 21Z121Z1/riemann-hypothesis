@@ -3,8 +3,8 @@ module
 public import Formalism.HermitianCurvature.StatementG
 public import Formalism.HermitianCurvature.HermitianCurvatureProofs.PhaseFunctionCriticalPoints
 public import Formalism.HermitianCurvature.HermitianCurvatureProofs.OrbitalIntegralConvergesAbs
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.FourierUniquenessMirabolic
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.CuspidalIrreducibleSubrep
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0008
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0009
 
 @[expose] public section
 

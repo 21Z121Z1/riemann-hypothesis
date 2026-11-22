@@ -1,11 +1,11 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Divisors.IsGPull
-public import Development.AbelianVarietyTheory.Definitions.Divisors.IsHeckeMap
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0010
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0017
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GenModelEqGenericFibre
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsHarrisTaylorObjectPullbackBis
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HarrisTaylorObjectPullbackComp
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0828
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0813
 
 @[expose] public section
 

@@ -5,13 +5,13 @@ public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDesc
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.ValCalc
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.CocycleIdentityIso
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.DiscreteValuationRings.FamMod
-public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ExistsFiniteCubeInduction
+public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.Bundle0032
 public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.UnifPreCharacterGroupIso
-public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.UniformisationPolarisedAbelianSchemesIsoStatement
-public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.AbelianPartIsoIsMonHomAndRigidified
-public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.UnifPreCAndCoordCorrespondStatement
-public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.UniformisationTrivialisationsCorrespondStatement
-public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.IdentificationLinear
+public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.Bundle0113
+public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.Bundle0023
+public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.UnifPreCAndCoordCorrespond
+public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.Bundle0104
+public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.Bundle0042
 
 @[expose] public section
 
@@ -158,7 +158,7 @@ theorem unifUniq : GlobalFnsSt → SecBaseChangeSt → AmpleSt → UnifUniqSt :=
   have hhom := abelianPartIso_isMonHom_and_rigidified R I hR D D' A A' G hsa U.toUnifPre U'.toUnifPre _ he₀ g₁ m₁
     Φ w hΦ
   obtain ⟨xe, hxe⟩ := unifPre_characterGroup_iso R I hR D D' A A' G hsa U.toUnifPre U'.toUnifPre
-  have hc := GlobalTheory.T.unifPre_c_and_coord_correspond_alt hG R I hR D D' A A' G hsa U.toUnifPre U'.toUnifPre Φ w hΦ.1 hhom.1
+  have hc := _root_.GlobalTheory.unifPre_c_and_coord_correspond hG R I hR D D' A A' G hsa U.toUnifPre U'.toUnifPre Φ w hΦ.1 hhom.1
     (fun e => (hΦ.2 e).1) xe hxe
   have hψ := GlobalTheory.T.uniformisation_trivialisations_correspond hG hS R I hR D D' A A' G hsa U.toUnifPre U'.toUnifPre _ he₀ g₁ m₁ (U.expand 1 le_rfl)
     (U'.expand 1 le_rfl) Φ w hΦ hhom xe hc

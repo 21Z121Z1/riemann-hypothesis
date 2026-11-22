@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Formalism.HermitianCurvature.StatementTBB
+public import Formalism.HermitianCurvature.Bundle0010
 public import Formalism.HermitianCurvature.HermitianCurvatureProofs.UnipotentCoordinatesMeasurePreserving
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.DensityConstantOfParts
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0095
 
 @[expose] public section
 

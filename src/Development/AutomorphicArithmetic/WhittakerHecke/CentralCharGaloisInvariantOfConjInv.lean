@@ -3,7 +3,7 @@ module
 public import Development.AutomorphicArithmetic.Foundations.Convolution.SplitEigenfunctions.ConjInv
 public import GroundTheory.GlobalFields.IdeleGroups.GaloisOnAdeles.Places
 public import GroundTheory.GlobalFields.IdeleGroups.SIdeleGroups.Galois
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.DenseRangeUnits
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0099
 public import Development.WeilBound.CoreStatements.PublishedTheorems.SmoothVectorEstimates.SameSatTwist
 
 @[expose] public section

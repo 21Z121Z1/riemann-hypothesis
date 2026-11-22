@@ -1,13 +1,13 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.DegFrame
-public import Development.AbelianVarietyTheory.Definitions.ModuliSpaces.SystemPrimesDistinctLevelsGeThree
+public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.Bundle0037
+public import Development.AbelianVarietyTheory.Definitions.ModuliSpaces.Bundle0004
 public import Development.AbelianVarietyTheory.Proofs.HomogeneousIdeals.LeftEqIffLieVecSmul
 public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsStalkFactor
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.PreimageConnectedComponentMem
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IntOIsLocalRing
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.LatDRSubsetLatHT
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0515
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0496
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0492
 public import Development.AbelianVarietyTheory.Statements.HeightBoundStatement.HTBoundSt
 
 @[expose] public section

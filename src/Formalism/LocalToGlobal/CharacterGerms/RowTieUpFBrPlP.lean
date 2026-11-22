@@ -1,6 +1,6 @@
 module
 
-public import Formalism.LocalToGlobal.CharacterGerms.NatCastMulTmul
+public import Formalism.LocalToGlobal.CharacterGerms.Bundle0004
 
 @[expose] public section
 

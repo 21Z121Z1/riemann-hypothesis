@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Formalism.LocalToGlobal.ProjectiveLattices.ThClass
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0026
 public import Formalism.LocalToGlobal.Divisibility.CoefMod
 
 @[expose] public section

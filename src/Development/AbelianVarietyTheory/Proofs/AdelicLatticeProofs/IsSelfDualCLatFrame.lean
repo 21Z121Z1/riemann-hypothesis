@@ -1,14 +1,13 @@
 module
 
 public import Mathlib
-public import Formalism.LocalToGlobal.IndefiniteReal.DatumVec
-public import Development.AbelianVarietyTheory.Counterexamples.HeightSurvey.StarPurelyImaginaryEqNeg
-public import Development.AbelianVarietyTheory.Proofs.HeightProofs.MemHermitianStandardLatticeIffPairingIntegral
+public import Formalism.LocalToGlobal.IndefiniteReal.Bundle0016
+public import Development.AbelianVarietyTheory.Counterexamples.HeightSurvey.Bundle0003
+public import Development.AbelianVarietyTheory.Proofs.HeightProofs.Bundle0020
 public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.LinearIndependentWave
 public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.SelfDualLatticePairingDual
-public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.MemRangeOfOneTmulMem
-public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.SmulMemLatO
-public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.AddNsmulResidueAssoc
+public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.Bundle0058
+public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.Bundle0059
 
 @[expose] public section
 

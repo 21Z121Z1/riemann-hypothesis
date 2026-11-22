@@ -1,12 +1,10 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsBaseFrame
-public import Development.AbelianVarietyTheory.Definitions.Divisors.P22
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FrameVectorIsCombinationEigenbasisFlagSpacePoint
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BigCellFramedPointVectorsLowerTriangularEigenbas
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BigCellEigenbasisCombinationCoeffUnique
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BigCellPointEqOfBaseAndCellCoordinatesEq
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1971
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0058
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2179
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1993
 
 @[expose] public section
 

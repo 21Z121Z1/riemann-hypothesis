@@ -5,9 +5,9 @@ public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.Conjuga
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.InterRes
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArithmeticIntersection.RationalSections.ThmISt
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.InterBridge
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.InterRedF
-public import ReciprocityTheory.AnalyticForms.PotentialTheory.PotentialContDiffAt
-public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.UnitRatioSameDivisorMultiplicitiesStatement
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.Bundle0016
+public import ReciprocityTheory.AnalyticForms.PotentialTheory.Bundle0007
+public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.Bundle0032
 
 @[expose] public section
 
@@ -280,7 +280,7 @@ theorem inter_sub_eq_neg_mInt : RatRStatement → ResBridgeStatement → GoodPro
   have r2 := hI.2.2 P e L M' g γ hP hL hM' hM'a hgγ hgP
   rw [recR_eq] at r1 r2
 
-  have hc := GlobalTheory.T.unit_ratio_same_divisor_multiplicities K ι P f g hU
+  have hc := _root_.GlobalTheory.CompanionTheory.Ar.Cmp.unitRatio_divisor_cycle_eq K ι P f g hU
   have hcyc : cycR I P L f = cycR I P L g := by
     unfold cycR
     refine finsum_mem_congr hc.1 fun W hW => ?_

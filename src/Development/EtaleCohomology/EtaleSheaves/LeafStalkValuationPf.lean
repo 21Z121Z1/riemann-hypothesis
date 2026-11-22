@@ -1,9 +1,9 @@
 module
 
-public import Development.EtaleCohomology.EtaleSheaves.LeafExtendCut
-public import Development.AbelianVarietyTheory.Proofs.HomogeneousIdeals.IsDomainAndIsIntegrallyClosedAtPrimeOfSmoothOfCo
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.KrullDimSmoothSurjectiveTotal
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AffineSpaceSmoothNormal
+public import Development.EtaleCohomology.EtaleSheaves.Bundle0048
+public import Development.AbelianVarietyTheory.Proofs.HomogeneousIdeals.Bundle0004
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2295
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0124
 
 @[expose] public section
 

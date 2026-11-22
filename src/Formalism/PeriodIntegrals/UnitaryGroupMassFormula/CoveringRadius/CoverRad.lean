@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Formalism.PeriodIntegrals.TransferenceCoverRad
-public import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.TransferenceCover
+public import Formalism.PeriodIntegrals.Bundle0007
+public import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.Bundle0015
 
 @[expose] public section
 

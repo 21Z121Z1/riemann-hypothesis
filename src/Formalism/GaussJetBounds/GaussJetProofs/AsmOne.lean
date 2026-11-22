@@ -1,6 +1,6 @@
 module
 
-public import Formalism.GaussJetBounds.GaussJetProofs.AsmRDotAddRight
+public import Formalism.GaussJetBounds.GaussJetProofs.Bundle0002
 
 @[expose] public section
 

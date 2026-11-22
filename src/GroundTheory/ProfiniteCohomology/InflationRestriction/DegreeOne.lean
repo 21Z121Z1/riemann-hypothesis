@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import GroundTheory.ProfiniteCohomology.CohomologyFunctoriality.Naturality
-public import GroundTheory.ProfiniteCohomology.FilteredHomology
+public import GroundTheory.ProfiniteCohomology.Bundle0001
 
 @[expose] public section
 

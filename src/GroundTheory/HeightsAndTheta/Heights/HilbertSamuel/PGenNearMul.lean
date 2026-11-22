@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsGenNearMul
+public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0087
 public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PGenTwistGenerated
 
 @[expose] public section

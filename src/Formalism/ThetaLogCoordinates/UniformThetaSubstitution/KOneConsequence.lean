@@ -1,6 +1,6 @@
 module
 
-public import Formalism.ThetaLogCoordinates.UniformThetaSubstitution.FinalS
+public import Formalism.ThetaLogCoordinates.UniformThetaSubstitution.Bundle0002
 public import Formalism.ThetaLogCoordinates.UniformThetaSubstitution.FrobeniusLiftNorms.GaussElementarySymmetric
 public import Mathlib
 public import Formalism.ThetaLogCoordinates.UniformThetaSubstitution.StatementC
@@ -18,7 +18,7 @@ public import Formalism.ThetaLogCoordinates.UniformThetaSubstitution.CyclicPower
 public import Formalism.GaussJetBounds.StatementI
 public import Formalism.ThetaLogCoordinates.UniformThetaSubstitution.FirstDeriv
 public import Formalism.ThetaLogCoordinates.UniformThetaSubstitution.FrobeniusLiftNorms.CoeffSubstLgFOfDegreeOne
-public import Formalism.GrowthSums.FactorialBaseGrowth.PathBasisOfCount
+public import Formalism.GrowthSums.FactorialBaseGrowth.Bundle0002
 
 @[expose] public section
 

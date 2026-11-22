@@ -2,8 +2,8 @@ module
 
 public import Development.WeilBound.RepresentationTheoryGL.CasimirAlgebra.KugaCoordinates.ArchimedeanWhittakerDerivatives.ContinuousInfGL
 public import Development.WeilBound.RepresentationTheoryGL.CasimirAlgebra.KugaCoordinates.ArchimedeanWhittakerDerivatives.AvgIntegralSwap
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsGenericOfIsLocComp
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ContinuousUnipotentColumnWhittakerTransform
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0679
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0600
 
 @[expose] public section
 

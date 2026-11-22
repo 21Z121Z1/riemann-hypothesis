@@ -1,6 +1,6 @@
 module
 
-public import Formalism.LocalToGlobal.Columns.CoefModX
+public import Formalism.LocalToGlobal.Columns.Bundle0003
 public import Formalism.LocalToGlobal.Columns.CoefficientsModP.FkPderivBlockEmbNe
 public import Formalism.LocalToGlobal.Columns.CoefficientsModP.NablaIndependenceHolds
 public import Formalism.LocalToGlobal.Columns.CoefficientsModP.TauLatticeLatticeHolds

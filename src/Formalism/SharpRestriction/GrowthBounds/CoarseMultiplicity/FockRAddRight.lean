@@ -3,9 +3,9 @@ module
 public import Formalism.SharpRestriction.GrowthBounds.CoarseMultiplicity.RestBlockForm
 public import Formalism.LocalToGlobal.GroupLattices.FockModels.FlatModels.LetterWtAnti
 public import Formalism.LocalToGlobal.GroupLattices.FockModels.TransposeWords.FormCoreSK
-public import Formalism.LocalToGlobal.GroupLattices.FockModels.TestSideEdge
-public import Formalism.LocalToGlobal.GroupLattices.FockModels.DualInclusionLattices
-public import Formalism.PolynomialDimension.MultinomialDepth.FockGaussComparisonHolds
+public import Formalism.LocalToGlobal.GroupLattices.FockModels.Bundle0002
+public import Formalism.LocalToGlobal.GroupLattices.FockModels.Bundle0001
+public import Formalism.PolynomialDimension.MultinomialDepth.Bundle0001
 
 @[expose] public section
 

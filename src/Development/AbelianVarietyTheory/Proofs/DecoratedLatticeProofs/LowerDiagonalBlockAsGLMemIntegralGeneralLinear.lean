@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.IsCoType
+public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.Bundle0001
 public import Formalism.LocalToGlobal.Columns.HeckeSp
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ParahoricDatumEigenvectorTwoBlockParahoric
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0054
 
 @[expose] public section
 

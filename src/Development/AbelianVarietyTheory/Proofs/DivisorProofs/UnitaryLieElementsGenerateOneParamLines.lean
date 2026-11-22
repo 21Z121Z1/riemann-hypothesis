@@ -1,7 +1,7 @@
 module
 
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsFockMap
-public import Development.AbelianVarietyTheory.Definitions.Divisors.DiscreteSeriesHermitianUnique
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0922
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0041
 
 @[expose] public section
 

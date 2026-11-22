@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsTjCorrDiagModel
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CrysActApply
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsDeRhamSheafIffAlt
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0061
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1945
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2091
 
 @[expose] public section
 

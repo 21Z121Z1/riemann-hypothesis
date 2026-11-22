@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.FcIndepDetNeZeroOfRank
+public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.Bundle0002
 
 @[expose] public section
 

@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Formalism.LocalToGlobal.Divisibility.Frames
+public import Formalism.LocalToGlobal.Divisibility.Bundle0001
 public import Formalism.HarderNarasimhan.HarderNarasimhanProofs.Rerealize
 
 @[expose] public section

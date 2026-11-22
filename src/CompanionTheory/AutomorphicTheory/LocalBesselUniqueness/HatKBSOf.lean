@@ -1,7 +1,7 @@
 module
 
 public import CompanionTheory.AutomorphicTheory.LocalBesselUniqueness.HatProd
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutJDJDJComm
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0114
 
 @[expose] public section
 

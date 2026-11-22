@@ -2,19 +2,26 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.HeightFunctions.XiValIffXiAt
-public import Formalism.LocalToGlobal.ProjectiveLattices.PerFrLact
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0038
 public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.LevelActionShortThetaSeriesRootOfUnityMul
-public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.MarkedLatticeIsometryDoubleCosetMove
-public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.ExistsAdelicElementOfMarkedComponentLattice
-public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.FrameFreeFiniteOrderRuleConstPeriodSpace
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.WeightZeroSectionValueConjPoint
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.FrameMulTriangularOrthonormal
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.UnitFrameEqOrthonormalMulTriangular
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.AdelicUnitaryEqRealMulFiniteSplit
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.RealAdelesCmFieldEquivComplexCmType
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ArchimedeanMatrixUnitaryContinuousMultiplicativeStatement
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.AdelicUnitaryLatticeRationalTranslateInvarianceStatement
-public import Development.AbelianVarietyTheory.Counterexamples.LevelGroupExamples.OrthonormalBaseFrameNeg
+public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0143
+public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0119
+public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0151
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0091
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0034
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0031
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0070
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0072
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0074
+public import Development.AbelianVarietyTheory.Definitions.ExistenceOfLattices.Bundle0001
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0031
+public import Formalism.LocalToGlobal.ProjectiveLattices.ExistsParameterConditions
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0023
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0022
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0010
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0020
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0077
+public import Development.AbelianVarietyTheory.Counterexamples.LevelGroupExamples.Bundle0004
 
 @[expose] public section
 
@@ -190,7 +197,7 @@ theorem exists_dict_over (hσ : GoodEmb c σ) (hA : l.A = 1) (hpq : 1 ≤ Dw.p +
       rfl
     rw [this, ← hx₁]⟩
   obtain ⟨θ, hθ⟩ := (GlobalTheory.Member.infiniteAdele_bijective D).1
-  obtain ⟨hAr, -, hL⟩ := GlobalTheory.T.archimedeanMatrix_unitary_continuous_multiplicative D V θ hθ
+  obtain ⟨hAr, -, hL⟩ := _root_.GlobalTheory.Member.Arch.archM_spec D V θ hθ
   have hG : ∀ k, (U.X k).Gm = -V.gramᵀ := fun k => (hW k).1
   have hmem : ∀ k (τ : D.host.E →+* ℂ), τ ∈ (U.X k).Ψ ↔ τ D.host.sqrtMinusD = D.host.φ₀ D.host.sqrtMinusD := by
     intro k τ
@@ -211,7 +218,7 @@ theorem exists_dict_over (hσ : GoodEmb c σ) (hA : l.A = 1) (hpq : 1 ≤ Dw.p +
   have hfin : finHom V (a₀ * f) = finHom V (a * f) := by
     rw [map_mul, map_mul, show finHom V a₀ = 1 from ha₀, show finHom V a = 1 from ha]
   have hh : Marked V rfl io l (U.X k).Λ (fun a => (φ k (F.t (ik k) a) : Fin V.rank → D.host.E)) (a * f) := by
-    obtain ⟨e₁, e₂⟩ := (GlobalTheory.T.adelicUnitaryLattice_rationalTranslate_invariance D V).2.1 _ _ hfin
+    obtain ⟨e₁, e₂⟩ := (_root_.GlobalTheory.Member.latG_move D V).2.1 _ _ hfin
     unfold Marked at hh₀ ⊢
     rwa [e₁, e₂, hfin] at hh₀
   refine ⟨a * f, ?_⟩

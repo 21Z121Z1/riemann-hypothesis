@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.IsLocFrac
+public import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.Bundle0062
 
 @[expose] public section
 

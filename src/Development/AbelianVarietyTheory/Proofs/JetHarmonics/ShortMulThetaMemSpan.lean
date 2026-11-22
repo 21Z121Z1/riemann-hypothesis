@@ -3,22 +3,23 @@ module
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.Jets.EmbShortThLeThetaPlain
 public import Formalism.SharpRestriction.GenusPolyhedralBounds.RelativeIndexClassSets.ThetaLeMsupOfSetC
-public import Formalism.SharpRestriction.GenusPolyhedralBounds.RelativeIndexClassSets.WeightedPrimeSumBound
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PullbackSections.LatOfLamSt
-public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.ThExprUniqOfChartIndep2
+public import Formalism.SharpRestriction.GenusPolyhedralBounds.RelativeIndexClassSets.Bundle0002
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PullbackSections.Bundle0003
+public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0007
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.GlobalSectionsRankAlgClosed
-public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.CoeffMoreColumns
-public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.IsBetaUnitBlock
+public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0113
+public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0041
 public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.ShortSeriesBlockProduct
-public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.ExistsSimInducing
-public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.StandardCoverShortValueEqThetaValueStatement
-public import Development.AbelianVarietyTheory.Counterexamples.LevelGroupExamples.BaseClassMove
-public import Development.AbelianVarietyTheory.Counterexamples.LevelGroupExamples.ZeroNotAdmissibleOfRankPos
-public import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.CardLatticeQuotientHalfLevel
-public import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.ThetaRuleExistsAndEval
-public import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.HarmAMemSpanShort
-public import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.EqOfForallAlgClosed
-public import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.TotalDegreeLeOfRowDeg
+public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0157
+public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.StandardCoverShortValueEqThetaValue
+public import Formalism.LocalToGlobal.ProjectiveLattices.ThShort
+public import Development.AbelianVarietyTheory.Counterexamples.LevelGroupExamples.Bundle0003
+public import Development.AbelianVarietyTheory.Counterexamples.LevelGroupExamples.Bundle0002
+public import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.Bundle0044
+public import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.Bundle0073
+public import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.Bundle0015
+public import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.Bundle0074
+public import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.Bundle0036
 
 @[expose] public section
 
@@ -308,7 +309,7 @@ theorem mul_mem_span (hC : ChartIndepSt2) [StarRing (𝓞 E)] {nab : NabV Xo c} 
       (fun q : Fin m → LevQ Dw d.l₂ => if q = fun b => Submodule.Quotient.mk ((d.pd : 𝓞 E) • x b) then
         (Nat.card (Fin m → LevQ Dw d.l₂) : d.c₂.F) else 0) 1).1 k y₂
     have e₂ : v₂ = evR Xo c f y :=
-      GlobalTheory.T.standardCover_shortValue_eq_thetaValue hC E H Dw l Xo c nab n d hd hn hn₂ m N a' x P _ hu₂ hP
+      _root_.GlobalTheory.shortValAt_std_cover_eq_thValAt hC E H Dw l Xo c nab n d hd hn hn₂ m N a' x P _ hu₂ hP
         (fun b => (eq_mk_iff d hd (x b) _).1 rfl) k hk y y₂ hy v₂ _ hv₂
         ((GlobalTheory.thetaRule_exists_and_eval hC E H Dw l Xo c nab hn a' m x P hP).2 f hfr k y)
     have n₁ : d.eF (betaH (Dw := Dw) c Λ) ≠ 0 := (map_ne_zero _).2 b₁.1

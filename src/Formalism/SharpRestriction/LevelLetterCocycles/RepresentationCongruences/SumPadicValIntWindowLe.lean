@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Formalism.SharpRestriction.LevelLetterCocycles.RepresentationCongruences.ExistsGaloisExtendingAlgHom
-public import Formalism.SharpRestriction.LevelLetterCocycles.RepresentationCongruences.ExistsSumPadicValIntWindowEq
+public import Formalism.SharpRestriction.LevelLetterCocycles.RepresentationCongruences.Bundle0011
+public import Formalism.SharpRestriction.LevelLetterCocycles.RepresentationCongruences.Bundle0001
 
 @[expose] public section
 

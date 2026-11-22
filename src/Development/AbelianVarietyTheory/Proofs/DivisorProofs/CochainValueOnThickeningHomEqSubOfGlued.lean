@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SecPullA
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SpecFunctionsEqOfRestrictionsOnPairsStatement
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0413
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0445
 
 @[expose] public section
 

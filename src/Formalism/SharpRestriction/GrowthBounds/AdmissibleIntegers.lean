@@ -1,8 +1,7 @@
 module
 
 public import Formalism.SharpRestriction.GrowthBounds.AdmissibleIntegers.StatementsOfRemainingBound
-public import Formalism.SharpRestriction.GrowthBounds.AdmissibleIntegers.RemainingPrimesOfAdmitted
-public import Formalism.SharpRestriction.GrowthBounds.AdmissibleIntegers.FirstTermSizeBound
+public import Formalism.SharpRestriction.GrowthBounds.AdmissibleIntegers.Bundle0001
 
 @[expose] public section
 

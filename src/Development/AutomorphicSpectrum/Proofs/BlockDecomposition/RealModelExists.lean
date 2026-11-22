@@ -1,31 +1,28 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.OrderedCechToCatCochainsOneApplyValueAtSubset
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LieGeneratorsGlRelations
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.RightDerivativeRealLieHomStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.RightDerivativePreservesEquivariantStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.RightDerivativeLowerBlockAtOneStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.InducedFunctionSmoothStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.InducedFunctionAtOneStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.InducedFunctionParabolicEquivariantStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.InducedFunctionDerivativeAtOneStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.InducedFunctionKHighestWeightStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.InducedFunctionKFiniteStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IwasawaParabolicUnitaryStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsHaarUnitaryGroupStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IntegralRightDerivativeEqZeroStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.KActionSkewAdjointL2Statement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.L2InnerProductHermitianFormStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.EqZeroOnUnitaryOfVanishAtOneStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsKFiniteSubmoduleContainingStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CenterActsByScalarOnCyclicStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.GelfandInvariantEvalLowestStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.GelfandInvariantCommuteGeneratorStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.GelfandInvariantCommuteOfCommuteStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.GelfandValuePermInvariantStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsPermShiftedWeightEqInfCharStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.HighestWeightMemConeStatement
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0422
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0362
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0452
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0451
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0469
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0442
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0465
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0441
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0466
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0480
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0479
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0443
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0030
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0322
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0444
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0462
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0359
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0345
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0351
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0211
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0437
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0410
 
 @[expose] public section
 
@@ -89,7 +86,7 @@ theorem model_of_ops (lam : Fin n → ℤ) (lev : Fin n → ℕ) (hlev : IsLev l
   refine ⟨{ W := V, F1 := F1, F2 := F2, f := f, gl1 := gl1, gl2 := gl2, comm := cm, unitK := unitK, locFin := lf,
             hw := hw, ne := fun h => hev (by rw [h, map_zero]), ch1 := ?_, ch2 := ?_, cone := ?_ }⟩
   · intro m x
-    refine GlobalTheory.T.center_acts_by_scalar_on_cyclic n V F1 F2 lf (gelA F1 m) (fun a b => ⟨GlobalTheory.T.gelfand_invariant_commute_generator n V F1 gl1 m a b, GlobalTheory.T.gelfand_invariant_commute_of_commute n V F1 (F2 a b)
+    refine _root_.GlobalTheory.CompanionTheory.ModelS.eq_smul_of_commute_of_ev n V F1 F2 lf (gelA F1 m) (fun a b => ⟨_root_.GlobalTheory.CompanionTheory.ModelS.gelA_central n V F1 gl1 m a b, _root_.GlobalTheory.CompanionTheory.ModelS.gelA_commute_of_units n V F1 (F2 a b)
       (fun c d => (cm c d a b).symm) m⟩) ev _ (fun v => ?_) sep x
     have h := GlobalTheory.T.gelfand_invariant_eval_lowest n V F1 gl1 ev (fun a => (lam a : ℂ)) (fun a b hba v => e1l a b v (hlow a b hba).1 (hlow a b hba).2)
       e1d m v
@@ -98,19 +95,19 @@ theorem model_of_ops (lam : Fin n → ℤ) (lev : Fin n → ℕ) (hlev : IsLev l
     funext a
     simp [infOf]
   · intro m x
-    refine GlobalTheory.T.center_acts_by_scalar_on_cyclic n V F1 F2 lf (gelA (barF F2) m) (fun a b => ⟨?_, ?_⟩) ev _ (fun v => ?_) sep x
-    · refine GlobalTheory.T.gelfand_invariant_commute_of_commute n V (barF F2) (F1 a b) (fun c d => ?_) m
+    refine _root_.GlobalTheory.CompanionTheory.ModelS.eq_smul_of_commute_of_ev n V F1 F2 lf (gelA (barF F2) m) (fun a b => ⟨?_, ?_⟩) ev _ (fun v => ?_) sep x
+    · refine _root_.GlobalTheory.CompanionTheory.ModelS.gelA_commute_of_units n V (barF F2) (F1 a b) (fun c d => ?_) m
       simp only [barF, mul_neg, neg_mul, cm a b d c]
-    · have h := GlobalTheory.T.gelfand_invariant_commute_generator n V (barF F2) gB m b a
+    · have h := _root_.GlobalTheory.CompanionTheory.ModelS.gelA_central n V (barF F2) gB m b a
       simp only [barF, mul_neg, neg_mul, neg_inj] at h
       simpa [barF] using h
     · have h := GlobalTheory.T.gelfand_invariant_eval_lowest n V (barF F2) gB ev (fun a => (yZ lam lev a : ℂ))
         (fun a b hba v => e2l a b v (hlow a b hba).1 (hlow a b hba).2) e2d m v
       rw [h]
-      obtain ⟨σ, hσ⟩ := GlobalTheory.T.exists_perm_shifted_weight_eq_inf_char n lam lev hlev
+      obtain ⟨σ, hσ⟩ := _root_.GlobalTheory.CompanionTheory.ModelS.ReversedBlocks.exists_perm_yZ n lam lev hlev
       have : (fun a : Fin n => (yZ lam lev a : ℂ) + ((n : ℂ) - 1) / 2 - ((a : ℕ) : ℂ)) =
           fun a => infOf lam false (σ a) := funext hσ
-      rw [this, GlobalTheory.T.gelfand_value_perm_invariant n (infOf lam false) σ m]
+      rw [this, _root_.GlobalTheory.CompanionTheory.ModelS.gelfVal_perm n (infOf lam false) σ m]
   · intro ν x hx hx0
     set A := Algebra.adjoin ℂ {T : Module.End ℂ V | ∃ a b, T = kF F1 F2 a b} with hA
     refine GlobalTheory.T.highest_weight_mem_cone n V (kF F1 F2) gK lev hlev.1 ev (muQ lam lev) ν x hx (fun a b v hl hne => ?_) (fun a v => ?_) ?_
@@ -166,14 +163,14 @@ theorem res_gl {M : Type} [AddCommGroup M] [Module ℂ M] (V : Submodule ℂ M) 
 theorem first_raising_mem_equivariant (lev : Fin n → ℕ) (φ : Mat n → ℂ) (a b : Fin n) {h : SmF n} (hh : h ∈ Eqv lev φ) :
     e1 DR a b h ∈ Eqv lev φ := by
   simp only [e1, LinearMap.smul_apply, LinearMap.sub_apply]
-  exact Submodule.smul_mem _ _ (Submodule.sub_mem _ (GlobalTheory.T.right_derivative_preserves_equivariant n lev φ _ h hh)
-    (Submodule.smul_mem _ _ (GlobalTheory.T.right_derivative_preserves_equivariant n lev φ _ h hh)))
+  exact Submodule.smul_mem _ _ (Submodule.sub_mem _ (_root_.GlobalTheory.CompanionTheory.ModelS.DR_mem_Eqv n lev φ _ h hh)
+    (Submodule.smul_mem _ _ (_root_.GlobalTheory.CompanionTheory.ModelS.DR_mem_Eqv n lev φ _ h hh)))
 
 theorem first_lowering_mem_equivariant (lev : Fin n → ℕ) (φ : Mat n → ℂ) (a b : Fin n) {h : SmF n} (hh : h ∈ Eqv lev φ) :
     f1 DR a b h ∈ Eqv lev φ := by
   simp only [f1, LinearMap.smul_apply, LinearMap.add_apply]
-  exact Submodule.smul_mem _ _ (Submodule.add_mem _ (GlobalTheory.T.right_derivative_preserves_equivariant n lev φ _ h hh)
-    (Submodule.smul_mem _ _ (GlobalTheory.T.right_derivative_preserves_equivariant n lev φ _ h hh)))
+  exact Submodule.smul_mem _ _ (Submodule.add_mem _ (_root_.GlobalTheory.CompanionTheory.ModelS.DR_mem_Eqv n lev φ _ h hh)
+    (Submodule.smul_mem _ _ (_root_.GlobalTheory.CompanionTheory.ModelS.DR_mem_Eqv n lev φ _ h hh)))
 
 theorem evaluation_raising_lowering (lev : Fin n → ℕ) (f h : SmF n) (hf : f ∈ Eqv lev f.1) (h1 : f.1 1 = 1) (hh : h ∈ Eqv lev f.1)
     (a b : Fin n) (hab : lev b ≤ lev a) :
@@ -198,11 +195,11 @@ theorem modelEx_main : ModelEx := by
   classical
   letI : MeasurableSpace (Matrix.unitaryGroup (Fin n) ℂ) := borel _
   haveI : BorelSpace (Matrix.unitaryGroup (Fin n) ℂ) := ⟨rfl⟩
-  obtain ⟨κ, hκ1, hκ2, hκ3⟩ := GlobalTheory.T.exists_haar_unitary_group n
-  have hmem := GlobalTheory.T.inducedFunction_smooth n lam hlam lev hlev
+  obtain ⟨κ, hκ1, hκ2, hκ3⟩ := _root_.GlobalTheory.CompanionTheory.ModelS.exists_rightInvariant_measure_unitaryGroup n
+  have hmem := _root_.GlobalTheory.CompanionTheory.ModelS.fRaw_mem_SmF n lam hlam lev hlev
   let F : SmF n := ⟨fRaw lam lev, hmem⟩
   have hF : F.1 = fRaw lam lev := rfl
-  have hFe : F ∈ Eqv lev F.1 := fun p hp g hg => GlobalTheory.T.inducedFunction_parabolic_equivariant n lam hlam lev hlev p hp g hg
+  have hFe : F ∈ Eqv lev F.1 := fun p hp g hg => _root_.GlobalTheory.CompanionTheory.ModelS.FMul.fRaw_mul n lam hlam lev hlev p hp g hg
   have hF1 : F.1 1 = 1 := GlobalTheory.T.inducedFunction_at_one n lam lev
   let A := Algebra.adjoin ℂ {T : Module.End ℂ (SmF n) | ∃ a b, T = e1 DR a b ∨ T = e2 DR a b}
   have hcyc : ∀ w, w ∈ cyc F ↔ ∃ T ∈ A, T F = w := by
@@ -232,13 +229,13 @@ theorem modelEx_main : ModelEx := by
     intro a b w hw
     obtain ⟨T, hT, rfl⟩ := (hcyc w).1 hw
     exact (hcyc _).2 ⟨e2 DR a b * T, A.mul_mem (Algebra.subset_adjoin ⟨a, b, Or.inr rfl⟩) hT, rfl⟩
-  obtain ⟨hsym, hnn, hadd, hsm, hdef⟩ := GlobalTheory.T.l2_inner_product_hermitian_form n κ
+  obtain ⟨hsym, hnn, hadd, hsm, hdef⟩ := _root_.GlobalTheory.CompanionTheory.ModelS.L2InnerProduct.ipK_form n κ
   have hzero : ∀ w ∈ cyc F, (∀ k : Matrix.unitaryGroup (Fin n) ℂ, w.1 k.1 = 0) → w = 0 := by
     intro w hw hk
     apply Subtype.ext
     funext g
     by_cases hg : g ∈ GLs n
-    · obtain ⟨p, hp, k, rfl⟩ := GlobalTheory.T.iwasawa_parabolic_unitary n lev hlev.1 g hg
+    · obtain ⟨p, hp, k, rfl⟩ := _root_.GlobalTheory.CompanionTheory.ModelS.exists_Pb_mul_unitary n lev hlev.1 g hg
       have := hWE w hw p hp k.1 (GlobalTheory.CompanionTheory.ModelS.unit_mem k)
       simp [this, hk k]
     · exact w.2.2 g hg
@@ -251,7 +248,7 @@ theorem modelEx_main : ModelEx := by
       definite := fun x hx => Subtype.ext (hzero x.1 x.2 (hdef x.1 hx)) }
   letI : NormedAddCommGroup (cyc F) := @InnerProductSpace.Core.toNormedAddCommGroup ℂ _ _ _ _ core
   letI : InnerProductSpace ℂ (cyc F) := InnerProductSpace.ofCore core.toCore
-  obtain ⟨g1, g2, cm⟩ := GlobalTheory.CompanionTheory.GLK.Pair.gl_pair n (SmF n) DR (GlobalTheory.T.right_derivative_real_lie_hom n).1 (GlobalTheory.T.right_derivative_real_lie_hom n).2.1 (GlobalTheory.T.right_derivative_real_lie_hom n).2.2
+  obtain ⟨g1, g2, cm⟩ := GlobalTheory.CompanionTheory.GLK.Pair.gl_pair n (SmF n) DR (_root_.GlobalTheory.CompanionTheory.ModelS.LieAct.DR_lie n).1 (_root_.GlobalTheory.CompanionTheory.ModelS.LieAct.DR_lie n).2.1 (_root_.GlobalTheory.CompanionTheory.ModelS.LieAct.DR_lie n).2.2
   let F1 : Fin n → Fin n → Module.End ℂ (cyc F) := fun a b => (e1 DR a b).restrict (st1 a b)
   let F2 : Fin n → Fin n → Module.End ℂ (cyc F) := fun a b => (e2 DR a b).restrict (st2 a b)
   have hKc : ∀ a b (x : cyc F), ((kF F1 F2 a b x : cyc F) : SmF n) = Kf a b x.1 := fun _ _ _ => rfl
@@ -266,7 +263,7 @@ theorem modelEx_main : ModelEx := by
     refine LinearMap.ext fun w => Subtype.ext ?_
     exact congrArg (fun T => T w.1) (cm a b c d)
   · intro a b x y
-    exact GlobalTheory.T.k_action_skew_adjoint_l2 n κ (GlobalTheory.T.integral_right_derivative_eq_zero n κ) a b x.1 y.1
+    exact _root_.GlobalTheory.CompanionTheory.ModelS.ipK_Kf_transpose n κ (_root_.GlobalTheory.CompanionTheory.ModelS.SkewInt.integral_Rd_skew n κ) a b x.1 y.1
   · intro x
     have key : ∀ T ∈ A, ∃ T' ∈ alg F1 F2, ∀ w : cyc F, ((T' w : cyc F) : SmF n) = T w.1 := by
       intro T hT

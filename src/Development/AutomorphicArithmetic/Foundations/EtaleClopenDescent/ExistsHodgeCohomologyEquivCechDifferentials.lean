@@ -4,9 +4,9 @@ public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.SortSign
 public import Development.AbelianVarietyTheory.Proofs.CoherentCohomologyProofs.CechModulesFunctorShortExactOfIsAffineOpen
 public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.OmegaPullOmegaTraceOfSecTraceOne
-public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.KaehlerOneFormsToExtensionDeRhamMulSelf
+public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.Bundle0006
 public import Development.AutomorphicArithmetic.GenericGermInjectivity.GermInjRangePre
-public import Development.AutomorphicArithmetic.CommutativeAlgebra.IsAffCoverProdCechOpen
+public import Development.AutomorphicArithmetic.CommutativeAlgebra.Bundle0061
 
 @[expose] public section
 

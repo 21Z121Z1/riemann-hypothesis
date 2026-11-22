@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import GroundTheory.HeightsAndTheta.Heights.HeightKernels.StatementsDualStackedGraph
-public import GroundTheory.HeightsAndTheta.Heights.HeightKernels.PDualStackedDegree
+public import GroundTheory.HeightsAndTheta.Heights.HeightKernels.Bundle0033
+public import GroundTheory.HeightsAndTheta.Heights.HeightKernels.Bundle0031
 public import GroundTheory.HeightsAndTheta.Heights.HeightKernels.PDualLatticeIndex
 
 @[expose] public section

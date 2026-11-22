@@ -1,13 +1,13 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.OnePlaceKF
+public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.Bundle0010
 public import Development.AbelianVarietyTheory.Definitions.Jets.SumIoPr
 public import Formalism.SharpRestriction.CuspSpanNormBounds.LeadMinorK
 public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.SmoothMapsClosure
-public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.UnitaryGroupMatGroupUnimodular
-public import Formalism.PeriodIntegrals.QuotSetU
-public import Formalism.PeriodIntegrals.QuotInv
+public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0057
+public import Formalism.PeriodIntegrals.Bundle0011
+public import Formalism.PeriodIntegrals.Bundle0006
 
 @[expose] public section
 

@@ -1,7 +1,7 @@
 module
 
 public import Development.WeilBound.RepresentationTheoryGL.CasimirAlgebra.KugaCoordinates.IsStarRep
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.OneParameterSubgroupExists
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0470
 
 @[expose] public section
 

@@ -1,6 +1,6 @@
 module
 
-public import Formalism.ThetaLogCoordinates.DualWeylCoordinates.DualWeylProofs.EvalIdBracketCanonical
+public import Formalism.ThetaLogCoordinates.DualWeylCoordinates.DualWeylProofs.Bundle0002
 public import Formalism.ThetaLogCoordinates.DualWeylCoordinates.DualWeylProofs.QnEvalMap
 
 @[expose] public section

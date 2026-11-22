@@ -3,11 +3,11 @@ module
 public import Formalism.SharpRestriction.CuspSpanNormBounds.RelevantZeroGramTerms
 public import Formalism.RealPlaceAnalysis.FinalF
 public import Formalism.RealPlaceAnalysis.SmoothOnGVIff
-public import Formalism.RealPlaceAnalysis.RealPlaceTaylor.CartanInvolutionConjTransposeMul
+public import Formalism.RealPlaceAnalysis.RealPlaceTaylor.Bundle0003
 public import Formalism.RealPlaceAnalysis.RealPlaceTaylor.RightDerivativeZeroOutsideSupport
-public import Formalism.SharpRestriction.CuspSpanNormBounds.BruhatCellsKronecker.DecayHypothesisOfLargeConstants
-public import Formalism.SharpRestriction.CuspSpanNormBounds.PExtra
-public import Formalism.SharpRestriction.CuspSpanNormBounds.CayleySignature
+public import Formalism.SharpRestriction.CuspSpanNormBounds.BruhatCellsKronecker.Bundle0006
+public import Formalism.SharpRestriction.CuspSpanNormBounds.Bundle0009
+public import Formalism.SharpRestriction.CuspSpanNormBounds.Bundle0006
 
 @[expose] public section
 

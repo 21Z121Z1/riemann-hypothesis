@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Formalism.LocalToGlobal.ProjectiveLattices.FamilyUniformisationBasePointOrthogonal
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsIsDetRoot
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0068
 
 @[expose] public section
 

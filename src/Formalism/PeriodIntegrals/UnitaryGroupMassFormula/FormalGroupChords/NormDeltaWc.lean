@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Formalism.PeriodIntegrals.FglChordFactor
-public import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.AddIntG
+public import Formalism.PeriodIntegrals.Bundle0002
+public import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.Bundle0014
 
 @[expose] public section
 

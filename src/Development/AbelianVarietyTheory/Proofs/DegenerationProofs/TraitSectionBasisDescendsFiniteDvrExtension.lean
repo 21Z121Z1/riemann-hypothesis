@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.IsFrameIff
-public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ExistsMoveMap
+public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.Bundle0033
 
 @[expose] public section
 

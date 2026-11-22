@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.UnipMinSubsetMinParOne
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CvecSurjective
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ModerateGrowthOfHasCompactSupport
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0488
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0478
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0298
 
 @[expose] public section
 

@@ -1,10 +1,10 @@
 module
 
-public import Development.WeilBound.CoreStatements.CompactAveragingSplitting.EigenvectorLifting.SplitDict
+public import Development.WeilBound.CoreStatements.CompactAveragingSplitting.EigenvectorLifting.Bundle0003
 public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.PairwiseDisjointCell
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.EventuallyDeepSubset
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IntegrableZetaIntegrand
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.LocallyConstantExtensionByZero
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0042
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0050
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0040
 
 @[expose] public section
 

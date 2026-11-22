@@ -1,7 +1,7 @@
 module
 
-public import Development.WeilBound.ThetaLifts.LatticeBasics.CuspLift
-public import Development.WeilBound.ThetaLifts.LatticeBasics.ConvOfCpt
+public import Development.WeilBound.ThetaLifts.LatticeBasics.Bundle0016
+public import Development.WeilBound.ThetaLifts.LatticeBasics.Bundle0021
 public import Development.WeilBound.ThetaLifts.EigenvalueEndgame.OrthogonalDecomposition.SigThConst
 
 @[expose] public section

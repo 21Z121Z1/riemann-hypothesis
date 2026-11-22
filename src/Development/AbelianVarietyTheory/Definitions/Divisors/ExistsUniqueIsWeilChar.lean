@@ -4,12 +4,12 @@ public import Mathlib
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PlaceDivisors.StAvDefs
 public import Development.AbelianVarietyTheory.Definitions.Divisors.LogAbsVpOfNormalised
 public import Development.AbelianVarietyTheory.Definitions.Divisors.MapSmulOfIsHausdorff
-public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.ExistsUniqueIsAl
-public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.IsFiniteFlatTorsionOfIsGt
-public import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.ExistsGenericPointHom
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsFiniteAndFlatTorsion
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsUniqueLim
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TorsionCharacterExtAndExistsOfIntegralPoints
+public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0044
+public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0060
+public import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.Bundle0034
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1345
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0438
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0626
 
 @[expose] public section
 

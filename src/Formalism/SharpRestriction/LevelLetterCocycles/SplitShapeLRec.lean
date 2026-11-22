@@ -1,8 +1,7 @@
 module
 
-public import Formalism.SharpRestriction.LevelLetterCocycles.SplitPolarLOf
-public import Formalism.SharpRestriction.LevelLetterCocycles.ArcCoordinatesAdmittedOfLevels
-public import Formalism.SharpRestriction.LevelLetterCocycles.PolarToPoleOfCtx
+public import Formalism.SharpRestriction.LevelLetterCocycles.Bundle0049
+public import Formalism.SharpRestriction.LevelLetterCocycles.Bundle0047
 
 @[expose] public section
 

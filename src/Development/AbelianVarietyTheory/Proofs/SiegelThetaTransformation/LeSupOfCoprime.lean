@@ -4,8 +4,8 @@ public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.SpanningFamilies.IsStabForm
 public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.LevelStructureProperties
 public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.TensorLatticeVacuaExistUnique
-public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.TensorLatticeSelfDualSemicharacterIndexStatement
-public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.ProjProjOfGood
+public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.Bundle0028
+public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.Bundle0036
 
 @[expose] public section
 

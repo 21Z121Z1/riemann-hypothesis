@@ -3,12 +3,16 @@ module
 public import Mathlib
 public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.L2UnitaryRepresentationData
 public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsLowestKTypeFockMapThetaVectors
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.WeilMaximalCompactFockSubstitutionCharacterStatement
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0347
+public import Formalism.LocalToGlobal.IndefiniteReal.Bundle0023
+public import Formalism.LocalRingCardinality.Bundle0007
+public import Formalism.LocalRingCardinality.Bundle0003
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0175
 public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsCoefDualPair
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsPolynomialModelCoefficientSpaceRealPoints
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0215
 public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsDefiniteOfAllPlus
-public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.HolomorphicDiscreteSeries
-public import Development.AbelianVarietyTheory.Counterexamples.RotationExamples.OneLeAPlLast
+public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.Bundle0006
+public import Development.AbelianVarietyTheory.Counterexamples.RotationExamples.Bundle0001
 
 @[expose] public section
 
@@ -61,7 +65,7 @@ theorem lam_parDef (i : Fin D.R.m) (M : DSModel (Vc D i) (parDef D i)) (τ : D.w
     M.lam τ = fun a => (((Bridge.lamLdef (D := D) (Vc D i).rank ((i : ℕ) + 1) τ).w a : ℝ) +
       ((rhoVec (Vc D i).rank a : ℚ) : ℝ)) := by
   funext a
-  have A := GlobalTheory.T.thetaWeightArithmeticAtPlace_proof D i τ
+  have A := _root_.GlobalTheory.PairWeightArith.arithAt D i τ
   obtain ⟨hpq, hV⟩ := A.rank
   have hVq : ((Vc D i).rank : ℚ) = pS D i τ + qS D i τ + D.R.t := by
     rw [hV, ← hpq]; push_cast; rfl
@@ -103,7 +107,7 @@ theorem allPlus_parDef (i : Fin D.R.m) (M : DSModel (Vc D i) (parDef D i)) : All
 theorem order_parHol (i : Fin D.R.m) (M : DSModel (Wc D i) (parHol D i)) (τ : D.what₂.Tau) (a : Fin (Wc D i).rank) :
     M.ε τ a = decide ((a : ℕ) < ((Wc D i).sig (tauE D τ)).1) := by
   obtain ⟨hn, hx⟩ := GlobalTheory.HolDS.enum_holPar
-    (Formalism.L2.NTheta.holOK_kapW (D.hc τ) _ _ (GlobalTheory.T.thetaWeightArithmeticAtPlace_proof D i τ).rank.1) (M.enum τ)
+    (Formalism.L2.NTheta.holOK_kapW (D.hc τ) _ _ (_root_.GlobalTheory.PairWeightArith.arithAt D i τ).rank.1) (M.enum τ)
   obtain ⟨x, rfl⟩ : ∃ x, a = Fin.cast hn (finSumFinEquiv x) :=
     ⟨finSumFinEquiv.symm (Fin.cast hn.symm a), by simp⟩
   rw [(hx x).2]
@@ -254,15 +258,15 @@ theorem ioEx (D : D7) : IoEx D := by
   obtain ⟨x₁, x₂, x₃, hx⟩ := weights_parHol i (funext fun τ => (GlobalTheory.ThetaFiresProbe.parAt_fixed _ τ).symm) M' hord
   have hrk : (Wc D i).rank = D.R.r := D.sp.W_rank _ (Nat.le_add_left _ _) i.2
   have hpq : ∀ τ, ((Wc D i).sig (tauE D τ)).1 + ((Wc D i).sig (tauE D τ)).2 = (Wc D i).rank := fun τ =>
-    (GlobalTheory.T.thetaWeightArithmeticAtPlace_proof D i τ).rank.1.trans hrk.symm
+    (_root_.GlobalTheory.PairWeightArith.arithAt D i τ).rank.1.trans hrk.symm
   obtain ⟨io, h1, h2, v0, w0, hv0, hw0, h3⟩ := exists_io_poly D (Vc D i) (Wc D i) θ _ M' c' _ c0 hθ
     hc' ht BV hBu _ _ _ _ x₁ x₂ x₃ (hrk.le.trans (r_le_V i)) hpq hord
-    (fun τ => (GlobalTheory.T.thetaWeightArithmeticAtPlace_proof D i τ).aPlus_antitone) (fun τ => (GlobalTheory.T.thetaWeightArithmeticAtPlace_proof D i τ).aM_anti) (fun τ => (hx τ).2.2.2.1)
+    (fun τ => (_root_.GlobalTheory.PairWeightArith.arithAt D i τ).aPlus_antitone) (fun τ => (_root_.GlobalTheory.PairWeightArith.arithAt D i τ).aM_anti) (fun τ => (hx τ).2.2.2.1)
     (fun τ => (hx τ).2.2.2.2)
   have hth : IsThetaFunO ψ (Vc D i) (Wc D i) f := by
     obtain ⟨τ⟩ : Nonempty D.what₂.Tau := ⟨D.eTau.symm ⟨1, by simp [Formalism.FrobeniusOrbits.Psi]⟩⟩
     exact (hf τ).theta
-  have hact := GlobalTheory.T.weil_maximalCompact_fock_substitution_character D ψ θ (Vc D i) (Wc D i) _ _ ω _ M' BV hω hθ
+  have hact := _root_.GlobalTheory.FockCompactAction.om_pureTensorO_eq_fact D ψ θ (Vc D i) (Wc D i) _ _ ω _ M' BV hω hθ
     (D.sp.V_sig _) (D.sp.W_sig _) hBS _ _ hpq hord _ _ (fun τ => (hχ τ).1)
     (fun τ => (hχ τ).2) x₁ x₂ x₃ (fun τ => (hx τ).1) (fun τ => (hx τ).2.1)
     (fun τ => (hx τ).2.2.1) f hth (fun τ => (hf τ).vac)

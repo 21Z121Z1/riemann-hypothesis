@@ -1,18 +1,17 @@
 module
 
 public import Development.WeilBound.CoreStatements.VolumeEquality.VolEqOfDegPush
-public import Development.WeilBound.CoreStatements.VolumeEquality.DegPush
+public import Development.WeilBound.CoreStatements.VolumeEquality.Bundle0016
 public import Development.AutomorphicSpectrum.Definitions.DivisibilityTowers.GoodOrigin
 public import Development.AutomorphicSpectrum.Statements.TowerExistence.GoodTowerExistsX
-public import Development.AutomorphicSpectrum.Statements.GeometryStatements.HodgeLatticeFlagBound
-public import Development.AutomorphicSpectrum.Statements.GeometryStatements.TrivFlagOnHodge
+public import Development.AutomorphicSpectrum.Statements.GeometryStatements.Bundle0003
 public import Development.AutomorphicSpectrum.Statements.GeometryStatements.FlatDegree
-public import Development.AutomorphicSpectrum.Statements.GeometryStatements.PadicIntegersHenselianFiniteResidue
+public import Development.AutomorphicSpectrum.Statements.GeometryStatements.Bundle0002
 public import Development.AutomorphicSpectrum.Statements.GeometryStatements.HodgeComparisonCompatibility
 public import Development.AutomorphicSpectrum.Statements.GeometryStatements.CmpSt
 public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.NumberField
 public import Development.AutomorphicSpectrum.Definitions.DivisibilityTowers.LocalAtPlaces
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.InterSt
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.Bundle0006
 
 @[expose] public section
 

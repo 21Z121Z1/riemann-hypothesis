@@ -1,8 +1,8 @@
 module
 
 public import Formalism.PadicSubsetSums.StableGradedCounts.LocalEstimateIVOfTypeSetWeight
-public import Formalism.PadicSubsetSums.StableGradedCounts.ProdPowFactorizationLe
-public import Formalism.PadicSubsetSums.StableGradedCounts.FourMulSumLeProduct
+public import Formalism.PadicSubsetSums.StableGradedCounts.Bundle0008
+public import Formalism.PadicSubsetSums.StableGradedCounts.Bundle0007
 
 @[expose] public section
 

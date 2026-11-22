@@ -2,10 +2,10 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.CMLattices.IsDiffOf
-public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.MulAFiniteFlatSurjective
-public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.AbelianSchemeIdPowFiniteEtaleSurjective
-public import Development.AbelianVarietyTheory.Proofs.HomogeneousIdeals.IsReducedAlgebraOfSmoothOfIsNoetherianRing
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.EqOneOfPowEqOneOfCompEqOne
+public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0138
+public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0015
+public import Development.AbelianVarietyTheory.Proofs.HomogeneousIdeals.Bundle0010
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0009
 
 @[expose] public section
 

@@ -3,8 +3,8 @@ module
 public import Mathlib
 public import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.InfinitesimalCharacterLimits.InfinitesimalCharacterGlue
 public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.T2SpaceAdelicGeneralLinearGroupNumberField
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ContinuousOfIsOpenStab
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FiniteInterCompact
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0111
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0391
 
 @[expose] public section
 

@@ -1,7 +1,7 @@
 module
 
-public import Formalism.GL3MeanSquares.GenusMeanAsymptotics.JacobiCharacterSums.UbTerms
-public import Formalism.GL3MeanSquares.GenusMeanAsymptotics.JacobiCharacterSums.PNTDHFinishB
+public import Formalism.GL3MeanSquares.GenusMeanAsymptotics.JacobiCharacterSums.Bundle0005
+public import Formalism.GL3MeanSquares.GenusMeanAsymptotics.JacobiCharacterSums.Bundle0001
 
 @[expose] public section
 

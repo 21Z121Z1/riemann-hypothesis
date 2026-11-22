@@ -2,10 +2,10 @@ module
 
 public import Mathlib
 public import Formalism.LocalToGlobal.SiegelLatticeTheory.FlagStabilizerTensors.ParametersTermRelations
-public import Formalism.SharpRestriction.CuspSpanNormBounds.BridgeWeylDS
+public import Formalism.SharpRestriction.CuspSpanNormBounds.Bundle0013
 public import Formalism.SharpRestriction.CuspSpanNormBounds.NonemptyParameterModels.NumericSettingWithGapSatisfiable
 public import Formalism.LocalToGlobal.SiegelLatticeTheory.HaarTransversals.UnitaryHaarProducts.InHHCut
-public import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.CdHaarScale
+public import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.Bundle0011
 public import Formalism.LocalToGlobal.SiegelLatticeTheory.ClosedVolumeStatements.LevelSubgroupProperties
 
 @[expose] public section

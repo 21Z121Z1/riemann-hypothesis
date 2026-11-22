@@ -4,7 +4,7 @@ public import Mathlib
 public import Formalism.LocalRingCardinality.RhoDetPrimeEqMuTildeMulChiPow
 public import Formalism.LocalRingCardinality.DataParams₂
 public import Formalism.SharpRestriction.ParConsts
-public import Formalism.SharpRestriction.GlobalSchurBounds.GeneralLinearActions.FiltrationBoundaryCriterion
+public import Formalism.SharpRestriction.GlobalSchurBounds.GeneralLinearActions.Bundle0001
 
 @[expose] public section
 

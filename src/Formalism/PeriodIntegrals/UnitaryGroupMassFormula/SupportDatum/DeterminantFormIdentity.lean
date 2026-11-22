@@ -2,8 +2,7 @@ module
 
 public import Mathlib
 public import Formalism.SharpRestriction.CuspSpanNormBounds.LocalGroupInFamilyNontrivial
-public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.SupportDatum.Blocks
-public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.SupportDatum.PowModTwoOfSq
+public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.SupportDatum.Bundle0001
 
 @[expose] public section
 

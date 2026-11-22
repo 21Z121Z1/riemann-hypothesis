@@ -1,6 +1,6 @@
 module
 
-public import Formalism.LogVandermondeBounds.VandPlace
+public import Formalism.LogVandermondeBounds.Bundle0002
 
 @[expose] public section
 

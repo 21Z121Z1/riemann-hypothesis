@@ -1,7 +1,7 @@
 module
 
-public import Development.EtaleCohomology.EtaleSheaves.LeafTwPairExistsPf
-public import Development.EtaleCohomology.TateTwists.EtaleTensorPairTwistResolutionMul
+public import Development.EtaleCohomology.EtaleSheaves.Bundle0007
+public import Development.EtaleCohomology.TateTwists.Bundle0004
 public import Mathlib.CategoryTheory.Abelian.Injective.Extend
 
 @[expose] public section

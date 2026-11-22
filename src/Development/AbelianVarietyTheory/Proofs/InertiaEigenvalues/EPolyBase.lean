@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.JSmul
+public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0009
 public import Formalism.LocalRingCardinality.AdicCompletionLocal.LocTied
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.AevalApplyComm
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0002
 
 @[expose] public section
 

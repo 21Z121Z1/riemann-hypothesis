@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.ResSymMeasure
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsResolutionSup
+public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0024
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArakelovGeometry.CSandwichStB
 
 @[expose] public section

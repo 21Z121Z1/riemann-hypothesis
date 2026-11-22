@@ -1,15 +1,15 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.EqTopOfTranslates
-public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.ExistsNormLeHeightPow
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ThetaFunctionZeroOfInvariantFunctionalsStatement
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.SplitPlaceAnnihilatorRelativelyCompact
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.StandardAdelicCharacterLocalComponentNeOne
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0213
+public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.Bundle0007
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ThetaFunctionZeroOfInvariantFunctionals
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0184
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0193
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdelicTransvectionSubgroupEqAdelesClosed
 public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.NotMemSpanOfCommute
 public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.ComplexEmbeddingHermitianQuadrupleSum
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.InfPartOneSubEInfSmul
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0119
 
 @[expose] public section
 
@@ -248,7 +248,7 @@ theorem eq_zero_of_small (hψ : IsStdChar D ψ (-1)) {ξ : Fin T.rank → D.host
     Finset.sum_induction _ _ (fun _ _ => theta_add) theta_zero
       fun i _ => hcl g hg _
   have h0 : ∑ i, heisO ψ S T (α (σ i)) g = 0 := by
-    refine GlobalTheory.T.theta_function_zero_of_invariant_functionals D ψ hψ S T e he _ hth fun m hm t ht => ?_
+    refine _root_.GlobalTheory.ThetaStalk.eq_zero_of_invariant_forms D ψ hψ S T e he _ hth fun m hm t ht => ?_
     have key : ∀ s f, IsThetaFunO ψ S T f →
         m (heisO ψ S T t (heisO ψ S T (α s) f)) = ψ (symplO S T t (α s)) * m (heisO ψ S T t f) := fun s f hf => by
       rw [heisO_comm, map_smul, hm _ (hαh s) _ (hcl f hf t), smul_eq_mul]

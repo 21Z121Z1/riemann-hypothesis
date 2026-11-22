@@ -1,7 +1,7 @@
 module
 
 public import Formalism.SharpRestriction.GrowthBounds.ChartRank.HypCard
-public import Formalism.SharpRestriction.GrowthBounds.ChartedClasses.CompInjLocJ
+public import Formalism.SharpRestriction.GrowthBounds.ChartedClasses.Bundle0003
 
 @[expose] public section
 

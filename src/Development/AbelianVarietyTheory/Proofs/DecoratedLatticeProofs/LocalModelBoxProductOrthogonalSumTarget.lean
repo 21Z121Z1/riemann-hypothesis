@@ -2,9 +2,9 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.IsCombAt
-public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.PlacesToAdeles
-public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.AllPositions
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SpanSchwartzBruhatProductEqTop
+public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.Bundle0009
+public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.Bundle0002
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0010
 
 @[expose] public section
 

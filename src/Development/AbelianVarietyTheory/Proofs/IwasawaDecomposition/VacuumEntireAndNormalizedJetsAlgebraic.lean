@@ -3,14 +3,14 @@ module
 public import Mathlib
 public import Formalism.LocalToGlobal.KernelLattices.ThDistC
 public import Formalism.LocalToGlobal.KernelLattices.KernelLocalFactors.ThDistC
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.FinAlgOfFinite
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsWeilOThZeroTriv
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0113
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0164
 public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.SpanRangeEmb4EqTop
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.CoefInTranslate
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.AlgebraicTaylorTorsionTranslateEvenTheta
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0090
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0246
 public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.CmThetaTaylorCoeffAlgebraicAndConjugate
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CosetIndicatorThetaTorsionTranslates
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DerivAtZeroReindexEqTaylorCoefficient
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0739
 
 @[expose] public section
 

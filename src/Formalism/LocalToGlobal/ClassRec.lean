@@ -6,7 +6,7 @@ public import Formalism.LocalToGlobal.HilbertRowConditions.RowPin
 public import Formalism.LocalToGlobal.HilbertRowConditions.RowPinMin
 public import Formalism.LocalToGlobal.RatioJoints.CharacterProductEqOne
 public import Formalism.LocalToGlobal.UnitaryNorms.DatumS
-public import Formalism.LocalToGlobal.BesselHermitianTheta.TiedWeilEq
+public import Formalism.LocalToGlobal.BesselHermitianTheta.Bundle0004
 
 @[expose] public section
 

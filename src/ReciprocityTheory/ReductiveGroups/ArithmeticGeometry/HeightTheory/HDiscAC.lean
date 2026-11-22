@@ -1,7 +1,7 @@
 module
 
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.HeightTheory.AlgebraMapOLInjective
-public import ReciprocityTheory.SemistableReduction.AlgAll
+public import ReciprocityTheory.SemistableReduction.Bundle0017
 
 @[expose] public section
 

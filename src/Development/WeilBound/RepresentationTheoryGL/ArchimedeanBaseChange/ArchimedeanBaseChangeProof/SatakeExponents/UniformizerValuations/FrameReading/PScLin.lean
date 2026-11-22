@@ -1,11 +1,11 @@
 module
 
-public import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.SatakeExponents.UniformizerValuations.FrameReading.JoinType
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.HintConstMulSum
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FinsumOutOfLe
+public import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.SatakeExponents.UniformizerValuations.FrameReading.Bundle0002
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0466
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0409
 public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ConstantTermMultiplicative
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LocalSupportFacts
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.InverseUnipotentVolumeConjDiagonalUnitsGLMul
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0586
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0289
 
 @[expose] public section
 

@@ -1,22 +1,22 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsCosetOfSelfDual
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.HeckeKerLatticeBounds
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsSimilitudeTriangularPeriodsOfHeckePoint
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.PlaceOverTypePrimeDividesOrConjugate
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.PlaceIdempotentUnderEqOfLiesOver
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IsSelfDualCoordLatticeOfSelfDualFrame
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ReductionTrivialOfConjugatePlaceSelfDual
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsWeilDatumPowersUnramifiedEtaTilde
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.AdelicUnitaryLatticeRationalTranslateInvariance
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0557
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0394
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0381
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0125
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0164
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0135
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0231
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1220
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0077
 public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.CongruenceLatticeFractionalMultipleAgree
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.NonemptyTransferEquiv
-public import Development.AbelianVarietyTheory.BlockTheory.ExistenceTori.HalfDepthValuations
-public import Development.AbelianVarietyTheory.Statements.HeckeThetaIntegrals.HkSupSizedOfHkSup
-public import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.SplitLinearModelNorm
-public import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.UnramifiedCharacter
-public import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.HeckePrimeDetection
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0746
+public import Development.AbelianVarietyTheory.BlockTheory.ExistenceTori.Bundle0005
+public import Development.AbelianVarietyTheory.Statements.HeckeThetaIntegrals.Bundle0001
+public import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.Bundle0008
+public import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.Bundle0007
+public import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.Bundle0023
 
 @[expose] public section
 
@@ -526,7 +526,7 @@ theorem exists_frBor_of_dictLat {D : D7} {H : ReciprocityTheory.ChartRestriction
     rw [hL.1.1, hG, hξ]
   have hty := (GlobalTheory.Relab.relab_good _ H l c σ hσ).2.2.2 Dw g e
   obtain ⟨θa, hθa⟩ := (GlobalTheory.Member.infiniteAdele_bijective D).1
-  obtain ⟨hAr, -, -⟩ := GlobalTheory.T.archimedeanMatrix_unitary_continuous_multiplicative D V θa hθa
+  obtain ⟨hAr, -, -⟩ := _root_.GlobalTheory.Member.Arch.archM_spec D V θa hθa
   have hp0 : p ≠ 0 := hp.2.2.2.1.ne_zero
   have hM0 : l.M ≠ 0 := by have := l.three_le; omega
   obtain ⟨p', hp'⟩ : ∃ p', p * p' ≡ 1 [MOD l.M'] := by

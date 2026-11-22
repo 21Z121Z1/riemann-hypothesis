@@ -1,17 +1,17 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.BlockAnti
-public import Formalism.PeriodIntegrals.QuotInv
+public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.Bundle0009
+public import Formalism.PeriodIntegrals.Bundle0006
 public import Formalism.HermitianCurvature.WeylElementCommutesLevelOne
 public import Formalism.LocalRingCardinality.DataCD
 public import Formalism.HermitianCurvature.HermitianCurvatureProofs.TwoByOneBlock
 public import Formalism.HermitianCurvature.HermitianCurvatureProofs.RankOneEmbeddings
-public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.IsHaarOnIffGroupsUnitaryUnipotent
+public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0049
 public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.MatGroupHaarUniqueFiniteCompactOpenPos
-public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.ExistsFrameConjUnitaryBlockEqUnitaryComplement
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.HaarVolumeThinTubeUnitaryProductAsymptoticStatement
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.HasDensityAtIdentityUnitaryGroupProbabilityStatement
+public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0047
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0282
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.HasDensityAtIdentityUnitaryGroupProbability
 
 @[expose] public section
 
@@ -568,8 +568,8 @@ theorem rankOne_exact : ∀ (k r : ℕ) (z z' : (Fin (2 * r + k + 1) → ℂ)) (
   have hH : (Matrix.diagonal fun j : Fin (k + 1) => if j = Fin.last k then (((-1 : ℝ)) : ℂ) else 1) = Hb k := by
     simp [Hb]
   have hv := volUn_pos k
-  have ht := GlobalTheory.T.haar_volume_thin_tube_unitary_product_asymptotic k (-1) hk (Or.inr rfl) (μb.comap (embA k r)) μ₀ cb (volUn k)⁻¹ hcb (inv_pos.2 hv)
-    (by rw [hH]; exact isHaar_comap hb) (by rw [hH]; exact hasDens_comap hd) hμ₀ hμ₀1 (GlobalTheory.T.hasDensityAtIdentity_unitaryGroup_probability k μ₀ hμ₀ hμ₀1)
+  have ht := _root_.GlobalTheory.Tube.thin_tube k (-1) hk (Or.inr rfl) (μb.comap (embA k r)) μ₀ cb (volUn k)⁻¹ hcb (inv_pos.2 hv)
+    (by rw [hH]; exact isHaar_comap hb) (by rw [hH]; exact hasDens_comap hd) hμ₀ hμ₀1 (_root_.GlobalTheory.UnitaryVolume.hasDens_unitary k μ₀ hμ₀ hμ₀1)
   have hTT := mul_pos hT hT'
   have hk0 : (0 : ℝ) < k := by exact_mod_cast hk
   have hev : ∀ᶠ t : ℝ in 𝓝[>] 0,

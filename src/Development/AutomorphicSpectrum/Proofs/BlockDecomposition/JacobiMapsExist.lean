@@ -2,10 +2,10 @@ module
 
 public import Mathlib
 public import Development.WeilBound.RepresentationTheoryGL.RegularisedSiegelWeil.ThetaIdempotents.HeckeEta
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ContinuousHermPart
-public import Development.AbelianVarietyTheory.PublishedTheorems.SiegelWeil₂.AdelicConjTransposeBlockMatrixTwoByTwoFin
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0461
+public import Development.AbelianVarietyTheory.PublishedTheorems.SiegelWeil₂.Bundle0002
 public import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.CovolOneIntegralAdd
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.FiniteAnnihilatorOpenSubgroupInBox
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0289
 
 @[expose] public section
 

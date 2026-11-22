@@ -1,10 +1,10 @@
 module
 
 public import Mathlib
-public import Formalism.PeriodIntegrals.LocJacTyp
+public import Formalism.PeriodIntegrals.Bundle0013
 public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.JacobianTransvectionSplitting.DiscreteHaar
 public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.AdelicLocalCompactness.AdeleLC
-public import ReciprocityTheory.ClassFieldTheory.GlobalClassField.LocPowB
+public import ReciprocityTheory.ClassFieldTheory.GlobalClassField.Bundle0002
 
 @[expose] public section
 

@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.StatementsJoinIntNum
-public import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.PEventualValueFacts
+public import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.Bundle0024
+public import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.Bundle0005
 
 @[expose] public section
 

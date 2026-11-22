@@ -1,7 +1,7 @@
 module
 
 public import Formalism.LocalToGlobal.NumberFieldFamilies.ThetaC
-public import Formalism.LocalToGlobal.NumberFieldFamilies.ThetaCI
+public import Formalism.LocalToGlobal.NumberFieldFamilies.Bundle0002
 public import Formalism.LocalToGlobal.JointCharacters.SameChr
 
 @[expose] public section

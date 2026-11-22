@@ -4,7 +4,7 @@ public import Development.WeilBound.CoreStatements.CompactAveragingSplitting.Eig
 public import Development.WeilBound.CoreStatements.LocalThetaKernels.LocrepAd
 public import Development.WeilBound.CoreStatements.LocalThetaKernels.LinearIndependentOfNotMem
 public import Development.WeilBound.CoreStatements.LocalThetaKernels.ExistsSmallSubgroups
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.StandardTraceAdelicAddCharLocalComponentNeOne
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1588
 
 @[expose] public section
 

@@ -4,10 +4,10 @@ public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.TorusSections.ExistsSecTie
 public import Development.AbelianVarietyTheory.Definitions.TorusSections.IsTorusOf
 public import Formalism.LocalToGlobal.ProjectiveLattices.DataAtPointN3
-public import Formalism.LocalToGlobal.ProjectiveLattices.LiesOverBaseChange
-public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.ETPoint
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0021
+public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0026
 public import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.ExistsIsUUOver
-public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.AllUniformizationLawsHold
+public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.Bundle0133
 
 @[expose] public section
 

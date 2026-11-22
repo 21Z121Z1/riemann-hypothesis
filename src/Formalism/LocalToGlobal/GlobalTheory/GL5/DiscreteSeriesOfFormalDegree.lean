@@ -1,13 +1,12 @@
 module
 
-public import Formalism.SharpRestriction.GlobalSchurBounds.MassRatioUnfoldedOfTheoremTwo
-public import Formalism.SharpRestriction.GlobalSchurBounds.TheoremThreeUnderScaleOfGeneral
+public import Formalism.SharpRestriction.GlobalSchurBounds.Bundle0005
 public import Formalism.LocalToGlobal.GlobalTheory.GL5.PClassDecomp
 public import Formalism.GL3MeanSquares.HookFormulaTorsion.MassUpperBoundClosed
 public import Formalism.SharpRestriction.GlobalSchurBounds.StandardLattice
 public import Formalism.SharpRestriction.CuspSpanNormBounds.BridgeCSchur
-public import Formalism.SharpRestriction.CuspSpanNormBounds.DiscreteSeriesWeylDimension
-public import Formalism.SharpRestriction.AdmissibleParameterJoins.SfromGLe
+public import Formalism.SharpRestriction.CuspSpanNormBounds.Bundle0016
+public import Formalism.SharpRestriction.AdmissibleParameterJoins.Bundle0004
 public import Formalism.PeriodIntegrals.ExplicitFormulaCounts.WeylForK
 
 @[expose] public section

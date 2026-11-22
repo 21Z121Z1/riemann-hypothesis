@@ -1,12 +1,12 @@
 module
 
 public import Mathlib
-public import Formalism.HermitianLattices.GenusCovolBound
-public import Formalism.HermitianLattices.HermitianLatticesProofs.GenusScale
-public import Formalism.HermitianLattices.HermitianLatticesProofs.LocDual
+public import Formalism.HermitianLattices.Bundle0002
+public import Formalism.HermitianLattices.HermitianLatticesProofs.Bundle0004
+public import Formalism.HermitianLattices.HermitianLatticesProofs.Bundle0003
 public import Formalism.HermitianLattices.HermitianLatticesProofs.DualLattice
-public import Formalism.HermitianLattices.HermitianLatticesProofs.IsomAct
-public import Formalism.FockGram.FockGramProofs.CovolGram
+public import Formalism.HermitianLattices.HermitianLatticesProofs.Bundle0001
+public import Formalism.FockGram.FockGramProofs.Bundle0001
 
 @[expose] public section
 

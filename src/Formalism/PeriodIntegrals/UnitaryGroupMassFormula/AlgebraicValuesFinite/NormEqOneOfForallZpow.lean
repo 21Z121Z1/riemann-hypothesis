@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.EqOneOfForallZpow
+public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0014
 
 @[expose] public section
 

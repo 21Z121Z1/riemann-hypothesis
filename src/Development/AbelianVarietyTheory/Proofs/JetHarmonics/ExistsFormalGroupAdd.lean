@@ -3,8 +3,8 @@ module
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.Jets.CmLatticeCommutatorPairingPowEqOneOfGoodLift
 public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.UwEllipticFlow
-public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.CpTransportedTaylorSeriesInChartRingHomLaws
-public import Development.AbelianVarietyTheory.BlockTheory.JetGauges.NodalSeriesPeriods
+public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0011
+public import Development.AbelianVarietyTheory.BlockTheory.JetGauges.Bundle0001
 public import Development.AbelianVarietyTheory.Proofs.CovolumeBounds.NatCastMulCoeffOfPderivEq
 
 @[expose] public section

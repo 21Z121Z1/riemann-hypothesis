@@ -2,8 +2,8 @@ module
 
 public import Mathlib
 public import Development.AutomorphicSpectrum.Definitions.MetricPeriods.FiniteEtaleSurjectiveOfPullback
-public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsSncModel
-public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.GlueApplyOfNotInFibre
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.Bundle0008
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.Bundle0005
 public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsFinsetOfMemNhds
 
 @[expose] public section

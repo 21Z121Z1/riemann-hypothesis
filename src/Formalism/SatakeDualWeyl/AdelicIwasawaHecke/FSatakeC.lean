@@ -1,6 +1,6 @@
 module
 
-public import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.FSatakeB
+public import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Bundle0006
 
 @[expose] public section
 

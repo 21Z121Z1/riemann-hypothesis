@@ -2,8 +2,8 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.MumfordProportionality
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.SmoothOfAlgClosedUnif
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsGradedLineDivisorsFullFlag
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0575
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0505
 
 @[expose] public section
 

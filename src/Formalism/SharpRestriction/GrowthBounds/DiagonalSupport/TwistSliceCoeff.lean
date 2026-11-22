@@ -1,6 +1,6 @@
 module
 
-public import Formalism.SharpRestriction.GrowthBounds.DiagonalSupport.MemSupportSumMonomial
+public import Formalism.SharpRestriction.GrowthBounds.DiagonalSupport.Bundle0002
 
 @[expose] public section
 

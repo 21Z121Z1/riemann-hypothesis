@@ -2,11 +2,11 @@ module
 
 public import Mathlib
 public import Development.WeilBound.CoreStatements.TemperedRepresentationTheory.ZelevinskyJacquet.FineJacquetModules.SegDefs
-public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.IrreducibleAdmissibleGL
-public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.SegmentRepresentation
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SocleOfMultiplicityOne
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SegmentTermInjectiveStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.JacquetMultiplicityCuspidalProductStatement
+public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.Bundle0002
+public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.Bundle0004
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0548
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0338
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0645
 
 @[expose] public section
 
@@ -19,7 +19,7 @@ namespace GlobalTheory.CompanionTheory.LkSegSocle
 theorem dec_injective {k : Type} [Field k] [ValuativeRel k] [TopologicalSpace k]
     [IsNonarchimedeanLocalField k] (hA : GlobalTheory.Published.IrreducibleAdmissibleGL) (Δ : Segment k) :
     Function.Injective (dec Δ) :=
-  (GlobalTheory.T.segment_term_injective hA Δ).comp Fin.rev_injective
+  (_root_.GlobalTheory.CompanionTheory.SegTerm.term_injective hA Δ).comp Fin.rev_injective
 
 theorem ncard_perm_dec_le_one {k : Type} [Field k] [ValuativeRel k] [TopologicalSpace k]
     [IsNonarchimedeanLocalField k] (hA : GlobalTheory.Published.IrreducibleAdmissibleGL) (Δ : Segment k) :

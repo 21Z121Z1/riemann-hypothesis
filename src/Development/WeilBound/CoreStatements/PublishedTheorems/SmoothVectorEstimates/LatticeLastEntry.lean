@@ -1,7 +1,7 @@
 module
 
 public import Development.WeilBound.CoreStatements.PublishedTheorems.SmoothVectorEstimates.MirabolicColumnBlock
-public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.IsOpenKerFinIdele
+public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.Bundle0001
 
 @[expose] public section
 

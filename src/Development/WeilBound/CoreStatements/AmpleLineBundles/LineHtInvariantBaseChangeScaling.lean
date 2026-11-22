@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.ArchBetween
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.Bundle0012
 public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.HeightLowerBoundChartNorm
-public import GroundTheory.HeightsAndTheta.Heights.HeightsOfSets.FieldChange
+public import GroundTheory.HeightsAndTheta.Heights.HeightsOfSets.Bundle0002
 
 @[expose] public section
 

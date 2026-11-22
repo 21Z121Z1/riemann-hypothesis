@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.AnnihilatorModels.DinvExact
+public import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.AnnihilatorModels.Bundle0001
 public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.CyclicStrongAtCusp
 
 @[expose] public section

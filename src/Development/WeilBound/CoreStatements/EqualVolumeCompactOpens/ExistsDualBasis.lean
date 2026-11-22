@@ -1,7 +1,7 @@
 module
 
-public import GroundTheory.GlobalFields.Adele.Compact
-public import Development.WeilBound.CoreStatements.EqualVolumeCompactOpens.DiagMulVecTmul
+public import GroundTheory.GlobalFields.Adele.Bundle0002
+public import Development.WeilBound.CoreStatements.EqualVolumeCompactOpens.Bundle0002
 
 @[expose] public section
 

@@ -1,7 +1,7 @@
 module
 
-public import Formalism.LocalToGlobal.GroupLattices.LevelCharts.ToFSSymmStab
-public import Formalism.LocalToGlobal.GroupLattices.ComparisonMaps.ClsMain
+public import Formalism.LocalToGlobal.GroupLattices.LevelCharts.Bundle0004
+public import Formalism.LocalToGlobal.GroupLattices.ComparisonMaps.Bundle0006
 
 @[expose] public section
 

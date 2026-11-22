@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.SplitPart
-public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.FixedVectorEqOfStandardData
+public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.Bundle0023
+public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.Bundle0020
 public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.OnFramesRdApply
 
 @[expose] public section

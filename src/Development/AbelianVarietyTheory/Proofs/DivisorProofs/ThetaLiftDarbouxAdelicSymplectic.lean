@@ -1,28 +1,29 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsFockMap
-public import Development.AbelianVarietyTheory.Definitions.Divisors.DiscreteSeriesHermitianUnique
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0922
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0041
 public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IteratedLineDerivMemWeylAlg
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SchwartzOneParameterGroupFormula
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.RealPairingSpaceResultOfSchrodingerCoordinates
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ArchActionReadingsCompatible
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FockPolynomialSpaceEqFockImageOfArchLaws
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.OneParamSubgroupGeneratorsExist
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsUniqueArchimedeanMatrixAdeleExtensionOfComStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ArchimedeanFrameCharacterFactorizationStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsArchimedeanPhaseSpaceCoordinatesFramesStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HeisenbergOpArchimedeanVectorActsBySchrodingerTrStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsContinuousHomUnitaryRealPlacesOrthonormalJStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ContinuousRhoApplyStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsOscillatorActionNormalisingSchrodingerOperStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsContinuousSymplecticHomOfIndefiniteUnitaryStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsSymplecticLieOfIndefiniteUnitaryLieRightAcStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SchurEquivariantIsometryScalarStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SqScalarCharacterOfDoubleCoverUnitaryStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MetaplecticQuadraticOperatorEqSumSymplecticDualStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FockAct2EqSymmetrisedHeisenbergQuadraticStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FockToSchwartzIntertwinesMetaplecticQuadraticStatement
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0310
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0387
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1215
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1221
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1227
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1383
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1258
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1493
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1390
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1378
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0258
+public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.RealMetaplecticRepresentation
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0951
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0949
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0952
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0523
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0111
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0216
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FockAct2EqSymmetrisedHeisenbergQuadratic
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0955
 
 @[expose] public section
 
@@ -109,13 +110,13 @@ theorem realRep (hMp : GlobalTheory.Published.RealMetaplecticRepresentation) {G 
     exact zero_ne_one hf₀
   haveI : Nontrivial (L2 l) := nontrivial_of_ne _ _ hv₀
   have hχ : ∀ g g', pr g' = s g → ∃ a : ℂ, ∀ v, ω g v = a • om g' v := fun g g' h => by
-    obtain ⟨a, ha⟩ := GlobalTheory.T.schur_equivariant_isometry_scalar l (ω g * om g'⁻¹) fun w v => by
+    obtain ⟨a, ha⟩ := _root_.GlobalTheory.RealWeil.schur_rho_l2 l (ω g * om g'⁻¹) fun w v => by
       rw [LinearIsometryEquiv.coe_mul, Function.comp_apply, Function.comp_apply, h3, hi, mulVec_mulVec, ← h,
         ← Submonoid.coe_mul, ← map_mul, mul_inv_cancel, map_one, Submonoid.coe_one, one_mulVec]
     refine ⟨a, fun v => ?_⟩
     rw [← ha, ← Function.comp_apply (f := ⇑(ω g * om g'⁻¹)), ← LinearIsometryEquiv.coe_mul, mul_assoc, ← map_mul,
       inv_mul_cancel, map_one, mul_one]
-  obtain ⟨η, hη1, hη2, hη3, hη4⟩ := GlobalTheory.T.sq_scalar_character_of_double_cover_unitary G G' _ (L2 l) pr s om ω ε hcov hsurj (fun g hg => (hker g).1 hg) hε hs h2
+  obtain ⟨η, hη1, hη2, hη3, hη4⟩ := _root_.GlobalTheory.sq_scalar_character G G' _ (L2 l) pr s om ω ε hcov hsurj (fun g hg => (hker g).1 hg) hε hs h2
     hc hχ
   choose lf hlf using fun g => hsurj (s g)
   choose a ha using fun g => hχ g (lf g) (hlf g)
@@ -224,8 +225,8 @@ theorem archRep : GlobalTheory.FunPr.Hypotheses₂ → DerEx → VacLine →
   obtain ⟨n, θ, φ, φ₀, hp, hq, hφ, hφu⟩ := GlobalTheory.T.exists_archimedean_phaseSpace_coordinates_frames F E σ α β κ P Q R S τ JA JB d a b A C hCM hFr
   obtain ⟨k, hkc, hkC, hkJ, hcan⟩ := GlobalTheory.T.exists_continuous_hom_unitary_realPlaces_orthonormal_J F E σ β R S τ JB b C hCM hFr.2.2
   haveI : IsTopologicalRing (AE F E) := IsModuleTopology.isTopologicalRing (AF F) _
-  obtain ⟨ω, hωc, hωi⟩ := GlobalTheory.T.exists_oscillator_action_normalising_schrodingerOperators _ _ P Q R S φ hφ (GlobalTheory.T.continuous_rho_apply _) (UG (cA σ) JB) k hkc hkJ
-  obtain ⟨s, hsc, hsφ⟩ := GlobalTheory.T.exists_continuous_symplecticHom_of_indefiniteUnitary _ _ P Q R S φ hφ (UG (cA σ) JB) k hkc hkJ
+  obtain ⟨ω, hωc, hωi⟩ := _root_.GlobalTheory.SchrodOsc.exists_osc _ _ P Q R S φ hφ (_root_.GlobalTheory.RealWeil.continuous_rho _) (UG (cA σ) JB) k hkc hkJ
+  obtain ⟨s, hsc, hsφ⟩ := _root_.GlobalTheory.ColAction.exists_symplectic_hom_of_unitary _ _ P Q R S φ hφ (UG (cA σ) JB) k hkc hkJ
   obtain ⟨ρ, η, hη1, hη2, hη3, hρi, hρu, hρc, hρd⟩ := realRep hP.realMetaplecticRepresentation s hsc ω hωc fun g w v => by
     obtain ⟨c, rfl⟩ := φ.surjective w
     rw [hsφ, hωi]
@@ -301,7 +302,7 @@ theorem archRep : GlobalTheory.FunPr.Hypotheses₂ → DerEx → VacLine →
       congr 2
       ext i j
       simp
-    obtain ⟨Z, hZ, hZφ, hZe⟩ := GlobalTheory.T.exists_symplecticLie_of_indefiniteUnitaryLie_rightAction _ _ P Q R S φ hφ Y hYu
+    obtain ⟨Z, hZ, hZφ, hZe⟩ := _root_.GlobalTheory.RealLift.SpLie.exists_sp_rightAct _ _ P Q R S φ hφ Y hYu
     have hsZ : ∀ t : ℝ, (s (γ (Multiplicative.ofAdd t)) : Matrix (Fin n ⊕ Fin n) (Fin n ⊕ Fin n) ℝ) =
         NormedSpace.exp (t • Z) := fun t => Matrix.toLin'.injective (LinearMap.ext fun v => by
       obtain ⟨c, rfl⟩ := φ.surjective v
@@ -322,7 +323,7 @@ theorem archRep : GlobalTheory.FunPr.Hypotheses₂ → DerEx → VacLine →
       simp only [LinearMap.comp_apply, ContinuousLinearMap.coe_coe]
       rw [← e2, e1, htoE, Function.comp_apply, ContinuousLinearEquiv.symm_apply_apply]
       exact (hD u hu (Φ T)).2 y
-    have e3 := GlobalTheory.T.fockToSchwartz_intertwines_metaplecticQuadratic GlobalTheory.T.metaplecticQuadraticOperator_eq_sum_symplectic_dual GlobalTheory.T.fockAct2_eq_symmetrised_heisenbergQuadratic _ _ P Q R S φ hφ _ hΨ Y hYu Z hZφ T
+    have e3 := _root_.GlobalTheory.RealLift.QuadFock.quad_fock GlobalTheory.T.metaplecticQuadraticOperator_eq_sum_symplectic_dual _root_.GlobalTheory.FockHeisQuad.fockAct2_eq_heisOp_quad _ _ P Q R S φ hφ _ hΨ Y hYu Z hZφ T
     simp only [LinearMap.comp_apply, ContinuousLinearMap.coe_coe] at e3
     set_option backward.isDefEq.respectTransparency false in
       simp_rw [hρ']

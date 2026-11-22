@@ -1,8 +1,8 @@
 module
 
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.InvAlg
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.EqLagIff
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.IdemLiftComplete
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.Bundle0003
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.Bundle0004
 
 @[expose] public section
 

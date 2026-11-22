@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsDualPullback
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsFrameOfProjective
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1027
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1026
 public import Development.AbelianVarietyTheory.Proofs.HomogeneousIdeals.FinrankOfIsStandardSmoothOfRelativeDimension
 
 @[expose] public section

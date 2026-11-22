@@ -1,6 +1,6 @@
 module
 
-public import Formalism.SharpRestriction.GrowthBounds.RootWeights.PadicGeMulNat
+public import Formalism.SharpRestriction.GrowthBounds.RootWeights.Bundle0002
 
 @[expose] public section
 

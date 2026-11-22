@@ -1,7 +1,7 @@
 module
 
 public import Formalism.LocalToGlobal.Columns.RecLevel
-public import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.CsGlobApprox
+public import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Bundle0010
 public import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.CsScale
 public import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Levelaf
 

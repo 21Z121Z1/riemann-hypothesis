@@ -1,21 +1,21 @@
 module
 
 public import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.InfinitesimalCharacterLimits.InfinitesimalCharacterGlue
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FinStable
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsRescaledConvergentSubsequenceStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FiniteDimensionalPairTypedStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.PairSpaceCarriesFlatStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FlatAbsoluteCharacterStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.TendstoAbsoluteCharacterOneStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CarriesTwistAbsoluteCharacterStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CarriesTwistStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FinStableTwistStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FinStableInducedSpanStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FiniteDimensionalTypedDiscreteStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FiniteDimensionalTypedExtensionStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FiniteDimensionalTypedNodeStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FlatNodeFunctionStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CarriesInducedNodeStatement
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0697
+public import Mathlib
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0702
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0709
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0705
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0711
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0708
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0706
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0701
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0719
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0707
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0721
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0714
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0710
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0724
 
 @[expose] public section
 
@@ -89,9 +89,9 @@ theorem carries_indFin {r s : ℕ} (e₁ : GA E r → ℂ) (e₂ : GA E s → �
     (a₂ : FinStable U₂) (a₂' : FinStable U₂') (c₁ : Carries e₁ U₁ U₁') (c₂ : Carries e₂ U₂ U₂') :
     Carries (nodeFn e₁ e₂) (indFin U₁ U₂) (indFin U₁' U₂') := by
   intro φ hφ
-  obtain ⟨φ', h', he⟩ := GlobalTheory.T.carries_induced_node e₁ e₂ U₁ U₁' U₂ U₂' h₁ h₂ a₁ a₁' a₂ a₂' c₁ c₂ φ (indFin_le _ _ hφ)
+  obtain ⟨φ', h', he⟩ := _root_.GlobalTheory.CompanionTheory.LimV.NodeCarry.carries_nodeFn e₁ e₂ U₁ U₁' U₂ U₂' h₁ h₂ a₁ a₁' a₂ a₂' c₁ c₂ φ (indFin_le _ _ hφ)
   refine ⟨φ', mem_indFin (memInd2_of_indSpan h') ?_, he⟩
-  have hF := GlobalTheory.T.flat_node_function e₁ e₂ h₁ h₂
+  have hF := _root_.GlobalTheory.CompanionTheory.LimV.NodeFlat.flatFn_nodeFn e₁ e₂ h₁ h₂
   have hv : FiniteDimensional ℂ (Submodule.span ℂ (Set.range fun k => cptRep E (r + s) k φ)) := finVec_of_indFin hφ
   refine Submodule.finiteDimensional_of_le
     (S₂ := (Submodule.span ℂ (Set.range fun k => cptRep E (r + s) k φ)).map (mulOp hF.sm)) (Submodule.span_le.2 ?_)
@@ -200,7 +200,7 @@ theorem treefd {N : ℕ} (t : Tr E N) : t.Disc → ∀ (K : Subgroup (GL (Fin N)
     simp only [Tr.Disc] at ht
     rw [space_node]
     intro K W hK hW
-    haveI := GlobalTheory.T.finiteDimensional_typed_node (tw a.space ((s' : ℂ) / 2)) (tw b.space (-(r' : ℂ) / 2)) (GlobalTheory.T.finiteDimensional_typed_extension _ _ (iha ht.1))
+    haveI := _root_.GlobalTheory.CompanionTheory.LimV.FdNode.finiteDimensional_typed_indSpan (tw a.space ((s' : ℂ) / 2)) (tw b.space (-(r' : ℂ) / 2)) (GlobalTheory.T.finiteDimensional_typed_extension _ _ (iha ht.1))
       (GlobalTheory.T.finiteDimensional_typed_extension _ _ (ihb ht.2)) K W hK hW
     have hle : typed (indFin (tw a.space ((s' : ℂ) / 2)) (tw b.space (-(r' : ℂ) / 2))) K W ≤
         typed (indSpan (tw a.space ((s' : ℂ) / 2)) (tw b.space (-(r' : ℂ) / 2))) K W :=
@@ -229,8 +229,8 @@ theorem treeflat {N : ℕ} (s : Tr E N) : ∀ (t : ℕ → Tr E N), s.Disc → (
     obtain rfl : t = fun k => Tr.leaf V (zk k) := funext hzk
     refine ⟨fun k => absFn M (z - zk k), fun k => GlobalTheory.T.flat_absolute_character M _, fun k => ?_, fun x => ?_⟩
     · simp only [space_leaf]
-      exact GlobalTheory.T.carries_twist_absolute_character V (zk k) z
-    · refine GlobalTheory.T.tendsto_absolute_character_one M x _ ?_
+      exact _root_.GlobalTheory.CompanionTheory.LimV.carries_absFn_tw V (zk k) z
+    · refine _root_.GlobalTheory.CompanionTheory.LimV.absFn_tendsto_one M x _ ?_
       have h0 := hz 0
       simp only [Tr.twists, List.getD_cons_zero] at h0
       simpa using (tendsto_const_nhds (x := z)).sub h0
@@ -266,7 +266,7 @@ theorem treeflat {N : ℕ} (s : Tr E N) : ∀ (t : ℕ → Tr E N), s.Disc → (
       simp only [Nat.add_sub_cancel_left]
     obtain ⟨e₁, he₁, hc₁, hl₁'⟩ := iha u₁ hs.1 hd₁ h1 hz₁
     obtain ⟨e₂, he₂, hc₂, hl₂'⟩ := ihb u₂ hs.2 hd₂ h2 hz₂
-    refine ⟨fun k => nodeFn (e₁ k) (e₂ k), fun k => GlobalTheory.T.flat_node_function _ _ (he₁ k) (he₂ k), fun k => ?_, fun x => ?_⟩
+    refine ⟨fun k => nodeFn (e₁ k) (e₂ k), fun k => _root_.GlobalTheory.CompanionTheory.LimV.NodeFlat.flatFn_nodeFn _ _ (he₁ k) (he₂ k), fun k => ?_, fun x => ?_⟩
     · rw [space_node, space_node]
       exact carries_indFin _ _ _ _ _ _ (he₁ k) (he₂ k) (GlobalTheory.T.finStable_twist _ _ (treestable _ (hd₁ k)))
         (GlobalTheory.T.finStable_twist _ _ (treestable _ hs.1)) (GlobalTheory.T.finStable_twist _ _ (treestable _ (hd₂ k)))
@@ -291,7 +291,7 @@ theorem limVec : PositivityTheory.Rg.BcB.SpectralAccumulation.LimVec := by
   let X : Submodule ℂ (H E a b → ℂ) :=
     pairSpace s₁.space s₂.space ⊓ typeHF (K₁ ⊓ KO E a) (K₂ ⊓ KO E b) W₁ W₂
   haveI : FiniteDimensional ℂ X :=
-    GlobalTheory.T.finiteDimensional_pair_typed _ _ _ _ _ _ (treefd s₁ hD₁ _ _ hO₁ hW₁) (treefd s₂ hD₂ _ _ hO₂ hW₂)
+    _root_.GlobalTheory.CompanionTheory.LimV.FdPair.finiteDimensional_pairSpace_inf_typeHF _ _ _ _ _ _ (treefd s₁ hD₁ _ _ hO₁ hW₁) (treefd s₂ hD₂ _ _ hO₂ hW₂)
   let EE : ℕ → H E a b → ℂ := fun k x => e₁ k x.1 * e₂ k x.2
   have hEne : ∀ k x, EE k x ≠ 0 := fun k x => mul_ne_zero ((he₁ k).ne _) ((he₂ k).ne _)
   have hmem : ∀ k i, (fun x => EE k x * f k i x) ∈ X := fun k i =>
@@ -303,7 +303,7 @@ theorem limVec : PositivityTheory.Rg.BcB.SpectralAccumulation.LimVec := by
     funext i x
     have h1 : EE k x * f k i x = 0 := congrFun (congrArg Subtype.val (congrFun h i)) x
     exact (mul_eq_zero.1 h1).resolve_left (hEne k x)
-  obtain ⟨c, φ, G, hφ, hG, hlim⟩ := GlobalTheory.T.exists_rescaled_convergent_subsequence gM hne
+  obtain ⟨c, φ, G, hφ, hG, hlim⟩ := _root_.GlobalTheory.CompanionTheory.LimVec.normalised_subseq_limit gM hne
   let F : ι → H E a b → ℂ := fun i => (G i).1
   have hev : ∀ i x, Tendsto (fun k => c k * (EE (φ k) x * f (φ k) i x)) atTop (𝓝 (F i x)) := by
     intro i x

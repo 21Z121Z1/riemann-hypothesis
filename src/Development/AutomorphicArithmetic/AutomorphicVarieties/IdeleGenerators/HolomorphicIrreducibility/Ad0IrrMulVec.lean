@@ -1,6 +1,6 @@
 module
 
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.IdeleGenerators.ShapeFacts
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.IdeleGenerators.Bundle0001
 
 @[expose] public section
 

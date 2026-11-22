@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Formalism.LocalToGlobal.GlobalTheory.GL1.CompactFixesLattice.ExistsDenOfIsCompactAdele
-public import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.IntAdCpctOpen
+public import Formalism.LocalToGlobal.GlobalTheory.GL1.CompactFixesLattice.Bundle0001
+public import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.Bundle0003
 
 @[expose] public section
 

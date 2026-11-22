@@ -4,10 +4,10 @@ public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.IsPlaceModelPlaceMap
 public import Formalism.SharpRestriction.LevelLetterCocycles.IntegralHeckeForms
 public import Formalism.SharpRestriction.LevelLetterCocycles.TWSet
-public import Formalism.LocalToGlobal.UnitaryNorms.CharTied
+public import Formalism.LocalToGlobal.UnitaryNorms.Bundle0006
 public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.ExistsUniqueHcharOfFiniteOrder
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.UniversalAnticyclotomicCharacterLaws
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsCmAdeleUnitCharacterReadingHeckeChar
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0102
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0172
 
 @[expose] public section
 

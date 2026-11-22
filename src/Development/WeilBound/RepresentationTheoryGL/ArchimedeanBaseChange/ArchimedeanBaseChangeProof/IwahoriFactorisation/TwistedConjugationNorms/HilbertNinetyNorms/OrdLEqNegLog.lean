@@ -2,11 +2,30 @@ module
 
 public import Mathlib
 public import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.IwahoriFactorisation.TwistedConjugationNorms.OneCoset
-public import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.IwahoriFactorisation.TwistedConjugationNorms.HilbertNinetyNorms.Hilbert90NormOneUnitsOfUnrOfNotSplit
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IwahoriAndMaximalCompactCriteriaStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.WeightExponentStrictlyAntitoneStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.UnitaryIwahoriFactsStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.UnitaryIwahoriOrbitalSupportStatement
+public import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.IwahoriFactorisation.TwistedConjugationNorms.HilbertNinetyNorms.Bundle0001
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0563
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0552
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0036
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1277
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0026
+public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.Bundle0008
+public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.Bundle0001
+public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.StrongMultiplicityOne
+public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisGeometry₂.IsTemperedGLOfIsUnitaryLSeg
+public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.Bundle0010
+public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.ExistsCellOfIsSubquotient
+public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.RadfordShufflePolynomialHolds
+public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisGeometry₂.Bundle0004
+public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.Bundle0007
+public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.ExistsUniqueHcharOfFiniteOrder
+public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.Bundle0006
+public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.Bundle0009
+public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.T2SpaceAdelicGeneralLinearGroupNumberField
+public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.HeckeLEntireAndNonzeroAtOne
+public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.QuadraticClassFieldTheory
+public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.ExistsOrthonormalOfUnimodular
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IwahoriProjSurjective
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0577
 
 @[expose] public section
 
@@ -64,7 +83,7 @@ def cjU (w : Pl E) : (w.adicCompletion E)ˣ →* (w.adicCompletion E)ˣ := Units
   rfl
 
 theorem ordL_cj (hU : Unr E) (w : Pl E) (x : w.adicCompletion E) : ordL (cj w x) = ordL x := by
-  rw [ordL_eq_neg_log', ordL_eq_neg_log', (GlobalTheory.T.placeConjugation_properties_cmField E hU w).2.2.1 x]
+  rw [ordL_eq_neg_log', ordL_eq_neg_log', (_root_.GlobalTheory.ConjAtPlace.main E hU w).2.2.1 x]
 
 theorem thL_diagT (w : Pl E) (hw : ¬ IsSplitAt w) (a : ℕ) (d : Fin a → (w.adicCompletion E)ˣ) :
     thL a w (GlobalTheory.SmGL.diagT (w.adicCompletion E) (Fin a) d) =
@@ -164,7 +183,7 @@ theorem ex_tw (hU : Unr E) (w : Pl E) (hw : ¬ IsSplitAt w) (ϖ : (w.adicComplet
   set P : Fin a → (w.adicCompletion E)ˣ := fun i => ϖ ^ y i with hPdef
   have hcϖ : cjU w ϖ = ϖ := Units.ext hϖ.2
   have hcP : ∀ i, cjU w (P i) = P i := fun i => by simp only [hPdef, map_zpow, hcϖ]
-  have hcc : ∀ x, cj w (cj w x) = x := (GlobalTheory.T.placeConjugation_properties_cmField E hU w).2.1
+  have hcc : ∀ x, cj w (cj w x) = x := (_root_.GlobalTheory.ConjAtPlace.main E hU w).2.1
   have hUr : ∀ i, U i.rev = (cjU w (U i))⁻¹ := fun i => Units.ext (by simp [hUdef, hrev])
   have hoP : ∀ i, ordL (P i : w.adicCompletion E) = y i := fun i => by
     rw [hPdef, ordL_zpow_units, hϖ.1, mul_one]
@@ -261,10 +280,10 @@ theorem exu_pf (hU : Unr E) (w : Pl E) (hw : ¬ IsSplitAt w) (n : ℕ) (b : GLw 
   obtain ⟨u, hQu, hu⟩ := hv
   have hu0 : ∀ i, u i ≠ 0 := fun i => (hu i).1
   have huv : ∀ i, ordL (u i) = wexp n l i := fun i => (hu i).2
-  obtain ⟨hwa, hwr⟩ := GlobalTheory.T.weight_exponent_strictly_antitone n l hl
+  obtain ⟨hwa, hwr⟩ := _root_.GlobalTheory.CompanionTheory.Wexp.wexp_strictAnti_rev n l hl
   have hpair := root_pair hU w hw (wexp n l) hwa.injective hwr Q hQ u hQu hu0 huv
   set U : Fin n → (w.adicCompletion E)ˣ := fun i => Units.mk0 (u i) (hu0 i) with hUdef
-  obtain ⟨hw1, -, -, hw4⟩ := GlobalTheory.T.unitary_iwahori_facts E hU w hw n b hb
+  obtain ⟨hw1, -, -, hw4⟩ := _root_.GlobalTheory.CompanionTheory.UnitaryWitt.unitary_hyperbolic_basis E hU w hw n b hb
   have hD : GlobalTheory.SmGL.diagT (w.adicCompletion E) (Fin n) U ∈ UJ (cj w) (antiJ (w.adicCompletion E) n) := by
     rw [hw4]
     intro i
@@ -272,7 +291,7 @@ theorem exu_pf (hU : Unr E) (w : Pl E) (hw : ¬ IsSplitAt w) (n : ℕ) (b : GLw 
     rw [hpair i, mul_inv_cancel₀ ((_root_.map_ne_zero _).2 (hu0 i))]
   have hγ := (hw1 _).2 hD
   refine ⟨⟨_, hγ⟩, ?_, ?_⟩
-  · have h1 := GlobalTheory.T.unitary_iwahori_orbital_support E hU w hw n b hb ϖ hϖ l hl ⟨_, hγ⟩ U (fun i => by simpa [hUdef] using huv i) rfl
+  · have h1 := _root_.GlobalTheory.CompanionTheory.DiagCoset.fU_diag E hU w hw n b hb ϖ hϖ l hl ⟨_, hγ⟩ U (fun i => by simpa [hUdef] using huv i) rfl
       1 (one_mem _) 1 (one_mem _)
     rw [one_mul, mul_one] at h1
     rw [h1]

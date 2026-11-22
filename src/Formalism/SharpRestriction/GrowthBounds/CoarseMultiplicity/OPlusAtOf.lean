@@ -1,6 +1,6 @@
 module
 
-public import Formalism.SharpRestriction.GrowthBounds.CoarseMultiplicity.SymbolFormOfOrthogonality
+public import Formalism.SharpRestriction.GrowthBounds.CoarseMultiplicity.Bundle0012
 
 @[expose] public section
 

@@ -1,8 +1,8 @@
 module
 
-public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.CIndFrFix
+public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0008
 public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.FBIdJet
-public import ReciprocityTheory.ReductiveGroups.Models.FiniteGeneration.FiniteGenerationProofs.SolveV
+public import ReciprocityTheory.ReductiveGroups.Models.FiniteGeneration.FiniteGenerationProofs.Bundle0001
 
 @[expose] public section
 

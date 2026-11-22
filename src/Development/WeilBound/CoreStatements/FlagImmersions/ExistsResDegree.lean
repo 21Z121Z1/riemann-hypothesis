@@ -1,10 +1,11 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Definitions.MetricPeriods.MetricsProjectionFormulaNef
-public import Development.AutomorphicSpectrum.Proofs.MetricProofs.LogResolutionFunctorialHolomorphicStatement
-public import Development.WeilBound.CoreStatements.FlagImmersions.BirationalOfClosure
-public import Development.WeilBound.CoreStatements.FlagImmersions.InteriorUnionEmpty
+public import Development.AutomorphicSpectrum.Definitions.MetricPeriods.Bundle0002
+public import Development.AutomorphicSpectrum.Proofs.MetricProofs.LogResolutionFunctorialHolomorphic
+public import Development.AutomorphicSpectrum.Definitions.MetricPeriods.Pull1
+public import Development.AutomorphicSpectrum.Definitions.MetricPeriods.IsPeriodOn
+public import Development.WeilBound.CoreStatements.FlagImmersions.Bundle0014
 
 @[expose] public section
 

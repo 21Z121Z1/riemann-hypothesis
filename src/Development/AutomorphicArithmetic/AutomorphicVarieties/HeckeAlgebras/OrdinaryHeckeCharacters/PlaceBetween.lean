@@ -2,9 +2,9 @@ module
 
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.HeckeAlgebras.IsTheta
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.WeilGroupCharacters.LocCFTAll
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.SplitPlaceUnitaryLocalPointsEquivGL
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsContinuousRetractionOntoUnitaryLocalPoints
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.IntertwiningGlOfUnitary
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0218
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0214
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0214
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.PartsConj
 
 @[expose] public section

@@ -2,12 +2,13 @@ module
 
 public import Mathlib
 public import CompanionTheory.SpectralGeometry.CountingDefinitions.AdelicEulerProducts.HypJ
-public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.AdelicPrimitiveVectorCompactRescaleStatement
-public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.GramOrbitCompactRepresentativeStatement
-public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.HyperbolicAndBlockOneNondegenerateStatement
-public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.AdelicUnitaryGroupLocallyCompactStatement
-public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.TensorLocallyCompactRingStatement
-public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.AdelesLocallyCompactSecondCountable
+public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.Bundle0051
+public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.Bundle0056
+public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.Bundle0025
+public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.Bundle0021
+public import CompanionTheory.SpectralGeometry.CountingDefinitions.AdelicEulerProducts.IsEulerProd
+public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.Bundle0019
+public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.Bundle0042
 
 @[expose] public section
 
@@ -253,16 +254,16 @@ theorem iwasawa : ∀ (F E : Type) [Field F] [NumberField F] [Field E] [NumberFi
     obtain ⟨τ⟩ : Nonempty (E →+* ℂ) := inferInstance
     apply τ.injective
     rw [hCM.2.2.2, hCM.2.2.2, star_star]
-  have hJ' : IsHermND σ (hypJ J) := (GlobalTheory.T.hyperbolic_and_block_one_nondegenerate F E σ hCM M J hJ).1
+  have hJ' : IsHermND σ (hypJ J) := (_root_.GlobalTheory.CompanionTheory.SW.BlockForm.blockForms_isHermND F E σ hCM M J hJ).1
   obtain ⟨⟨lc, sc, t2⟩, -⟩ := GlobalTheory.CompanionTheory.AdeleTop.adele_top F
   haveI := lc
   haveI := sc
   haveI := t2
-  obtain ⟨hTG, -, -, -, -, hact⟩ := GlobalTheory.T.adelic_unitary_group_locally_compact F E σ hCM (M + 2) (hypJ J) hJ' (AF F)
-  obtain ⟨hTR, -, -, -, hsc, -⟩ := GlobalTheory.T.tensor_locally_compact_ring F E σ hCM (AF F)
+  obtain ⟨hTG, -, -, -, -, hact⟩ := _root_.GlobalTheory.CompanionTheory.SW.TopH.topH_props F E σ hCM (M + 2) (hypJ J) hJ' (AF F)
+  obtain ⟨hTR, -, -, -, hsc, -⟩ := _root_.GlobalTheory.CompanionTheory.SW.TopK.topTens_props F E σ hCM (AF F)
   haveI := hTG
   haveI := hTR
-  obtain ⟨Ω, hΩ, hprim⟩ := GlobalTheory.T.adelic_primitive_vector_compact_rescale F E σ hCM (M + 2)
+  obtain ⟨Ω, hΩ, hprim⟩ := _root_.GlobalTheory.CompanionTheory.SW.PrimA.unimodular_compact_mod_units F E σ hCM (M + 2)
   have hLh : ∀ i j, sigR (AF F) σ (JR (F := F) (AF F) (hypJ J) j i) = JR (F := F) (AF F) (hypJ J) i j := by
     intro i j
     simp only [JR, Matrix.map_apply, sigR_incl, hJ'.1 i j]
@@ -300,7 +301,7 @@ theorem iwasawa : ∀ (F E : Type) [Field F] [NumberField F] [Field E] [NumberFi
     (fun g x y => congrFun (congrFun ((hact 2).2.2.2 g ![x, y]) 0) 1)
     (ratTup (AF F) (frame E M)) hX Ω hΩ hprim
     (fun Ω₂ hΩ₂ => by
-      obtain ⟨C, hC, hp⟩ := GlobalTheory.T.gram_orbit_compact_representative F E σ hCM (M + 2) (hypJ J) hJ' 2 (frame E M) hdet Ω₂ hΩ₂
+      obtain ⟨C, hC, hp⟩ := _root_.GlobalTheory.CompanionTheory.SW.Proper.compact_gram_fibre F E σ hCM (M + 2) (hypJ J) hJ' 2 (frame E M) hdet Ω₂ hΩ₂
       refine ⟨C, hC, fun Y hY hg => ?_⟩
       obtain ⟨c, hc, hcY⟩ := hp Y hY (by
         rw [hmapG]

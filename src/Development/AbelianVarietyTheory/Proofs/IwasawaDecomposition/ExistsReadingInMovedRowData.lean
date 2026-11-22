@@ -2,20 +2,20 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.NonzeroPlacesOverPrimesLifts
-public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.ExistsIsBIffCoreB
+public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.Bundle0031
 public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.WeilRepresentationUnitaryPair
 public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.DsExistsOfDiscreteSeriesExists
-public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.HarishChandraFinite
-public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.ExistsNormLeHeightPow
+public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.Bundle0004
+public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.Bundle0007
 public import Formalism.LocalToGlobal.IndefiniteReal.LinksStage
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.RowIdentificationsRealRowSideOfChainComparisonStatement
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.LiftIdentificationsOfLiftsComparisonStatement
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsIdentificationTypeRepresentativesClassesStatement
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0467
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0465
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0459
+public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.Bundle0033
 public import Lean
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.GoodRowsLevelSubPrincipalLevelHilbertModel
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.LocalizationFreeStageTrueGroupColumnChoiceStep
-public import Formalism.LocalRingCardinality.DataBu
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.HeckeCharacterIdeleCharacterMatchUnique
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0139
+public import Formalism.LocalRingCardinality.Bundle0001
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0433
 
 @[expose] public section
 
@@ -171,7 +171,7 @@ theorem GlobalTheory.Mem.R3.Rw.read_of_moved : ∀ (B : Base) (f : Fr B.toPre) (
   obtain ⟨Iz, h0R, h0P, h0E, h0X⟩ := k0
   have kL := GlobalTheory.T.liftIdentifications_of_liftsComparison _ _ _ _ _ _ m.z.R.toRealDat m.z.F.lv2 m.y hin hB hU hN.lam m.t.rep _ m.t.lf
   obtain ⟨IL, mj, hLT, hPW, hMj, hMt, hEW⟩ := kL
-  have kF := GlobalTheory.T.exists_identification_typeRepresentatives_classes _ _ _ _ _ _ m.z.R.toRealDat m.z.F.lv2 m.y _ m.t.rep m.t.reps
+  have kF := _root_.GlobalTheory.Mem.R3.Rw.RepCls.reps_classes _ _ _ _ _ _ m.z.R.toRealDat m.z.F.lv2 m.y _ m.t.rep m.t.reps
   obtain ⟨eF, heF⟩ := kF
   have kE := exists_eE m.y hB true (m.t.ch true).jE (m.t.ch true).jE_range
   obtain ⟨eE, heE⟩ := kE

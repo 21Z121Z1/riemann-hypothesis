@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.SubClosed
+public import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.Bundle0001
 
 @[expose] public section
 

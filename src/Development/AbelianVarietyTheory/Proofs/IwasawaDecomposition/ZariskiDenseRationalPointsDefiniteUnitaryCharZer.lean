@@ -2,9 +2,9 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IncludeLInjective
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.CayleyTransformMemRationalUnitaryGroup
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsFinBasisCoeffsEmbeddingsEvalStatement
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsNormOneCmFieldDetOneAddNeZeroCharZeroStatement
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0040
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0005
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0008
 
 @[expose] public section
 
@@ -165,7 +165,7 @@ theorem family_surj (Wf : (L →+* K) → Matrix (Fin n) (Fin n) K)
     (hW : ∀ σ, Wf (σ.comp (IsCMField.complexConj L : L →+* L)) = -(Wf σ)ᵀ) :
     ∃ x : Fin (Module.finrank ℚ L) × Fin n × Fin n → K,
       ∀ σ, (skewPoly L K n σ).map (MvPolynomial.eval x) = Wf σ := by
-  choose y hy using fun ab : Fin n × Fin n => GlobalTheory.T.exists_finBasis_coeffs_embeddings_eval L K (fun σ => Wf σ ab.1 ab.2 / 2)
+  choose y hy using fun ab : Fin n × Fin n => _root_.GlobalTheory.embeddings_eval_onto L K (fun σ => Wf σ ab.1 ab.2 / 2)
   refine ⟨fun v => y (v.2.1, v.2.2) v.1, fun σ => ?_⟩
   ext a b
   rw [Matrix.map_apply, eval_skewPoly]
@@ -319,7 +319,7 @@ theorem unitary_points_dense : ∀ (L : Type) [Field L] [NumberField L] [IsCMFie
       intro σ
       simp only [Bm]
       rw [hB σ, ← Matrix.transpose_mul, ← Units.val_mul, mul_inv_cancel, Units.val_one, transpose_one]
-    obtain ⟨u, hu, hdet⟩ := GlobalTheory.T.exists_normOne_cmField_det_one_add_ne_zero_charZero L K n Bm
+    obtain ⟨u, hu, hdet⟩ := _root_.GlobalTheory.CMScalar.exists_unit_norm_one_det_ne_zero L K n Bm
     have hσu : ∀ σ : L →+* K, σ (c u) * σ u = 1 := fun σ => by
       rw [← map_mul, mul_comm, hu, map_one]
     let B' : (L →+* K) → Matrix (Fin n) (Fin n) K := fun σ => σ u • Bm σ

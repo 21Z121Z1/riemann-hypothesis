@@ -2,10 +2,9 @@ module
 
 public import Mathlib
 public import Formalism.DistinguishedUnitIdeals.GammaCongruentArcFromStart
-public import Formalism.SharpRestriction.LevelLetterCocycles.CyclotomicPowerSeries.ConstSectionStatement
-public import Formalism.SharpRestriction.LevelLetterCocycles.CyclotomicPowerSeries.PsCycloStatement
+public import Formalism.SharpRestriction.LevelLetterCocycles.CyclotomicPowerSeries.Bundle0001
 public import Formalism.SharpRestriction.LevelLetterCocycles.CyclotomicPowerSeries.EmultiplicityEqValuation
-public import Formalism.SharpRestriction.LevelLetterCocycles.CyclotomicPowerSeries.PowValMemPrimitiveRoots
+public import Formalism.SharpRestriction.LevelLetterCocycles.CyclotomicPowerSeries.Bundle0004
 
 @[expose] public section
 

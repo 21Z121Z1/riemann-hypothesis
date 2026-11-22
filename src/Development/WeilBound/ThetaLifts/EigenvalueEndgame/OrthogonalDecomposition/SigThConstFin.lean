@@ -1,7 +1,7 @@
 module
 
 public import Development.WeilBound.ThetaLifts.EigenvalueEndgame.OrthogonalDecomposition.LocDecompOf
-public import Development.WeilBound.ThetaLifts.EigenvalueEndgame.OrthogonalDecomposition.SigThConstOf
+public import Development.WeilBound.ThetaLifts.EigenvalueEndgame.OrthogonalDecomposition.Bundle0001
 public import Development.WeilBound.CoreStatements.LocallyConstantCoinvariants.PfDict
 
 @[expose] public section

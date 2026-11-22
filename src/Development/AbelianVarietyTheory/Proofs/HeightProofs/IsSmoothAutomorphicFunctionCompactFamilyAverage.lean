@@ -3,12 +3,12 @@ module
 public import Mathlib
 public import Formalism.LocalToGlobal.BesselHermitianTheta.AllTied
 public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.NormDwLeSobNorm
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.DifferentiableOneP
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0161
 public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsSmoothAutomorphicFunctionTranslateAtRealPlace
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ContinuousOnAtTau
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.RderMemAutFormsCuspForms
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.GrowthSizeRWordNeTopOfLe
-public import Development.AbelianVarietyTheory.Proofs.HeightProofs.CompactAverageSmoothFamilyClosedUnderDerivativesStatement
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0171
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0316
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0161
+public import Development.AbelianVarietyTheory.Proofs.HeightProofs.Bundle0045
 
 @[expose] public section
 
@@ -198,7 +198,7 @@ theorem famSpan_growth [CompactSpace K] (hθ : IsInfFam θ) (hκ : Continuous κ
     simp only [List.foldr_nil] at h3
     have h4 : normInf θ V (g * atTau θ V τ (κ k)) ^ N ≤ (normInf θ V g * Mh) ^ N :=
       pow_le_pow_left₀ (normInf_nonneg _)
-        (((GlobalTheory.T.normInf_submultiplicative_le_adelicHeight D θ V).1 _ _).trans (mul_le_mul_of_nonneg_left h2 (normInf_nonneg _))) N
+        (((_root_.GlobalTheory.SmoothForms.normInf_mul_le_and_le_height D θ V).1 _ _).trans (mul_le_mul_of_nonneg_left h2 (normInf_nonneg _))) N
     have h5 : ‖ψ (x * g * atTau θ V τ (κ k))‖ ≤ |C'| * (Mh ^ N * normInf θ V g ^ N) := by
       rw [mul_assoc x]
       refine h3.trans (mul_le_mul (le_abs_self _) ?_ (pow_nonneg (normInf_nonneg _) _) (abs_nonneg _))

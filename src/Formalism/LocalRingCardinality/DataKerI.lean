@@ -1,7 +1,7 @@
 module
 
-public import Formalism.LocalRingCardinality.DataKerP
-public import Formalism.LocalRingCardinality.DataDIVDefs
+public import Formalism.LocalRingCardinality.Bundle0004
+public import Formalism.LocalRingCardinality.Bundle0003
 public import Formalism.LocalRingCardinality.DataForced
 
 @[expose] public section

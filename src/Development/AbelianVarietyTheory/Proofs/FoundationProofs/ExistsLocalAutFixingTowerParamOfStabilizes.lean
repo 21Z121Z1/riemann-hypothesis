@@ -1,17 +1,15 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Foundations.ApplyEqOfMemAdjoin
-public import Development.AbelianVarietyTheory.Definitions.Foundations.IsTopWTopWOfExists
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsGaloisInvariantValuationIntegersEqIntegral
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.CompletedLaurentIsDVRStatement
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsCompletedLaurentQuotPrimeEquivLaurentFp
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.AutomorphismOnExtensionPointwise
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.AutomorphismExtensionUniform
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.FrobeniusPowerBasisIndependent
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.FrobeniusPowerReductionCongruence
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.LaurentSeriesAlgebraicConstant
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ResidueAlgebraicPolynomialDivisible
+public import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0010
+public import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0003
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0075
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0063
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0044
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0019
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0030
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0033
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0089
 
 @[expose] public section
 
@@ -259,9 +257,9 @@ theorem exists_gal_fix_qq_of_stab {Ω : Type} [Field Ω] [Algebra ℚ Ω] [IsAlg
   obtain ⟨_, hdvr, hirr⟩ := completed_laurent_isDVR p
   haveI : IsAdicComplete (IsLocalRing.maximalIdeal (O0 p)) (O0 p) := by
     rw [hirr.maximalIdeal_eq]
-    exact GlobalTheory.T.unramified_integers_adic_complete p
+    exact _root_.GlobalTheory.K5.o0_isAdicComplete_span_p p
   haveI := h.alg
-  obtain ⟨v, hv⟩ := GlobalTheory.T.exists_valuation_le_one_iff_isIntegral_of_complete_dvr (O0 p) Ωl h.inj
+  obtain ⟨v, hv⟩ := _root_.GlobalTheory.valuation_le_one_iff_isIntegral_of_complete_dvr (O0 p) Ωl h.inj
   have h1 : v (p : Ωl) < 1 := by
     haveI := Basic.charZero_of_isClo h
     have hle : v (p : Ωl) ≤ 1 := by

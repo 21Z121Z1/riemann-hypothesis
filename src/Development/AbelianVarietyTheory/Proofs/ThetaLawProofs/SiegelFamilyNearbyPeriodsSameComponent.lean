@@ -5,17 +5,16 @@ public import Development.AbelianVarietyTheory.Definitions.KeyFormula.GeomIntSel
 public import Development.AbelianVarietyTheory.Statements.FundamentalDomains.AtOfNumberField
 public import Development.AbelianVarietyTheory.Statements.ThetaLevelCharacters.MemThetaLevelCharDimZero
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.ValCalc
-public import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.ExistsSymmetricSqrtPrincipalSiegelFiniteEtaleStatement
-public import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.ExistsRigidTranslatePrincipalPolarisationOrderTw
-public import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.ExistsTwoTorsionTranslateSameLambdaBundleStatement
-public import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.SiegelFamilyComplexPointEqOfSamePeriodMatrixStatement
-public import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.ExistsLocalPeriodMatrix
-public import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.ExistsSeparatingPairs
-public import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.SameCompOfIsHolTo
-public import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.ExistsNhdsSubsetImage
-public import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.SqOfCalculus
-public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsHolomorphicChart
-public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsLinearEquivLift
+public import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.Bundle0056
+public import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.Bundle0053
+public import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.Bundle0057
+public import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.Bundle0054
+public import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.Bundle0047
+public import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.Bundle0042
+public import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.Bundle0043
+public import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.Bundle0041
+public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0020
+public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0021
 
 @[expose] public section
 
@@ -76,7 +75,7 @@ theorem exists_sqOf_polPB (hL : Out.Laws) {R : Type} [CommRing R] {c : SiegPre h
   obtain ⟨Q₀, ψ₀, hpb⟩ := exists_polPB hL.polBaseChange Q p
   have h₀ := (sqOf_calculus h k o ζ S _ _ s c f).1 p Q Q₀ φ ψ₀ hQ hpb
   obtain ⟨e, he, heφ, hlam⟩ := (sqOf_calculus h k o ζ S _ S s c (p ≫ f)).2.1 Q₀ P₀ _ _ h₀ hP
-  obtain ⟨t₀, ht₀, i₀⟩ := GlobalTheory.T.exists_twoTorsion_translate_same_lambdaBundle hL ℂ Q₀ P₀ e he hlam
+  obtain ⟨t₀, ht₀, i₀⟩ := _root_.GlobalTheory.SameLam.exists_two_torsion_translate hL ℂ Q₀ P₀ e he hlam
   obtain ⟨t, ht, hy⟩ := hT ℂ ((𝟙_ (Over (Sp ℂ))).hom ≫ p) (pushHom hpb.1 _ t₀) (by rw [← map_pow, ht₀, map_one])
   have et : t₀.left ≫ ψ₀ = p ≫ t.left := by
     refine (congrArg (fun q => q.left) hy).trans ?_
@@ -132,7 +131,7 @@ theorem exists_etale_sqrt (hL : Out.Laws) {K : Type} [Field K] {ζ : K} (σ : K 
   have : IsOpenImmersion f := inferInstanceAs (IsOpenImmersion hU.fromSpec)
   obtain ⟨β, -⟩ := Spec.map_surjective (f ≫ F.s)
   letI : Algebra ℚ Γ(F.X, U) := (β.hom.comp (algebraMap ℚ K)).toAlgebra
-  obtain ⟨R, _, _, Q, φ, ⟨h₁, h₂, h₃⟩, hQ, hT⟩ := GlobalTheory.T.exists_symmetric_sqrt_principal_siegel_finite_etale hL h k K ζ Γ(F.X, U) F.X F.s F.univ f hk hζ F.princ
+  obtain ⟨R, _, _, Q, φ, ⟨h₁, h₂, h₃⟩, hQ, hT⟩ := _root_.GlobalTheory.SiegelSqrt.exists_sqrt hL h k K ζ Γ(F.X, U) F.X F.s F.univ f hk hζ F.princ
   have : IsFinite (spMap (algebraMap Γ(F.X, U) R)) :=
     (IsFinite.SpecMap_iff _).2 (RingHom.finite_algebraMap.2 h₁)
   have : Surjective (spMap (algebraMap Γ(F.X, U) R)) := ⟨PrimeSpectrum.comap_surjective_of_faithfullyFlat⟩
@@ -177,13 +176,13 @@ theorem exists_nhds_sameComp : Out.Laws → Out.Laws2 → ThetaUnifAV → ∀ (h
     (Metric.mem_ball_self hε) (fun i j => (hτd i j).mono fun b hb => (hball hb).1)
     (fun b hb => let ⟨_, _, _, H, _⟩ := hpt b (hball hb).1; ⟨H.2.1, H.2.2.1⟩) fun b hb b' hb' e =>
       hyi (hbB hb) (hbB hb') (hinj b (hball hb).2 b' (hball hb').2
-        (GlobalTheory.T.siegelFamily_complexPoint_eq_of_same_periodMatrix hL hU h k K ζ σ F hh hk ho hζ (τ b) _ _ (hys' b (hbB hb)) (hys' b' (hbB hb'))
+        (_root_.GlobalTheory.SiegelPointUnique.eq_of_ptAt hL hU h k K ζ σ F hh hk ho hζ (τ b) _ _ (hys' b (hbB hb)) (hys' b' (hbB hb'))
           (hpt b (hball hb).1) (e ▸ hpt b' (hball hb').1)))
   refine ⟨N, hτ0 ▸ hN, fun t ht p hp hpt' => ?_⟩
   have H := hpt'
   obtain ⟨_, _, _, H, _⟩ := H
   obtain ⟨b, hb, rfl⟩ := hNτ t ht H.2.1 H.2.2.1
-  rw [GlobalTheory.T.siegelFamily_complexPoint_eq_of_same_periodMatrix hL hU h k K ζ σ F hh hk ho hζ (τ b) p _ hp (hys' b (hbB hb)) hpt' (hpt b (hball hb).1)]
+  rw [_root_.GlobalTheory.SiegelPointUnique.eq_of_ptAt hL hU h k K ζ σ F hh hk ho hζ (τ b) p _ hp (hys' b (hbB hb)) hpt' (hpt b (hball hb).1)]
   exact sameComp_of_isHolTo K σ _ F.s _ (Metric.ball 0 ε) (fun b => y b ≫ π) Metric.isOpen_ball
     (convex_ball _ _).isPreconnected (fun b hb => hys' b (hbB hb))
     (LocLift.isHolTo_comp_hom (LocLift.isHolTo_mono hyh Metric.isOpen_ball hbB) π) b hb 0 (Metric.mem_ball_self hε)

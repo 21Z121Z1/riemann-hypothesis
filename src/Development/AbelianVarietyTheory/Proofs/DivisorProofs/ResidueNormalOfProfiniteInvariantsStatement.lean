@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ResidueNormalOfProfiniteInvariants
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0101
 
 @[expose] public section
 

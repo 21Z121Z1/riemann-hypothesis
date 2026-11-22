@@ -1,14 +1,22 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsUMOfMem
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ContinuousLeviUnipotentProjStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FibreFunctionLocallyConstantCompactStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FibreIntegralIntertwinesUnipotentStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FibreIntegralIntertwinesLeviStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MemTwKerOfFibIntEqZero
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SmoothRightInv
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.DerivativeOfProductInducedIsoStatement
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0390
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0404
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0714
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0040
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0428
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0416
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0451
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0711
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0410
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0426
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0408
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0721
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0724
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0727
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0728
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0433
 
 @[expose] public section
 
@@ -65,8 +73,8 @@ include hτ hσ
 
 theorem fibInt_add (a b : cIndSpace (HPG k i t) (hRep τ σ)) (g : GL (Fin (i + t)) k) :
     fibInt μ (a + b) g = fibInt μ a g + fibInt μ b g := by
-  obtain ⟨a1, a2⟩ := GlobalTheory.T.fibre_function_locally_constant_compact k i t τ σ hτ hσ a g
-  obtain ⟨b1, b2⟩ := GlobalTheory.T.fibre_function_locally_constant_compact k i t τ σ hτ hσ b g
+  obtain ⟨a1, a2⟩ := _root_.GlobalTheory.CompanionTheory.BZPsiPG.FibCompact.fibV_main k i t τ σ hτ hσ a g
+  obtain ⟨b1, b2⟩ := _root_.GlobalTheory.CompanionTheory.BZPsiPG.FibCompact.fibV_main k i t τ σ hτ hσ b g
   have e : fibV (a + b) g = fibV a g + fibV b g := by
     funext v
     exact map_add (evL (uM k (i + t) (midV k i t v) * levi k (i + t) g)) a b
@@ -75,7 +83,7 @@ theorem fibInt_add (a b : cIndSpace (HPG k i t) (hRep τ σ)) (g : GL (Fin (i + 
 
 theorem fibInt_smul (c : ℂ) (a : cIndSpace (HPG k i t) (hRep τ σ)) (g : GL (Fin (i + t)) k) :
     fibInt μ (c • a) g = c • fibInt μ a g := by
-  obtain ⟨a1, a2⟩ := GlobalTheory.T.fibre_function_locally_constant_compact k i t τ σ hτ hσ a g
+  obtain ⟨a1, a2⟩ := _root_.GlobalTheory.CompanionTheory.BZPsiPG.FibCompact.fibV_main k i t τ σ hτ hσ a g
   have e : fibV (c • a) g = ((c • LinearMap.id : V ⊗[ℂ] W →ₗ[ℂ] V ⊗[ℂ] W)) ∘ fibV a g := by
     funext v
     exact map_smul (evL (uM k (i + t) (midV k i t v) * levi k (i + t) g)) c a
@@ -84,7 +92,7 @@ theorem fibInt_smul (c : ℂ) (a : cIndSpace (HPG k i t) (hRep τ σ)) (g : GL (
   exact (congrArg (fun x => clT τ W (smInt μ x)) e).trans ((congrArg (clT τ W) h).trans (map_smul (clT τ W) c _))
 
 def phiInd (f : cIndSpace (HPG k i t) (hRep τ σ)) : indSpace (Qp k i t) (qRep τ σ) :=
-  ⟨fibInt μ f, fun q g => GlobalTheory.T.fibre_integral_intertwines_unipotent k i t τ σ hτ hσ μ f q g⟩
+  ⟨fibInt μ f, fun q g => _root_.GlobalTheory.CompanionTheory.BZPsiPG.FibQ.main k i t τ σ hτ hσ μ f q g⟩
 
 theorem phiInd_right (f : cIndSpace (HPG k i t) (hRep τ σ)) (s : GL (Fin (i + t)) k)
     (hs : prodPG τ σ (levi k (i + t) s) f = f) :
@@ -98,7 +106,7 @@ theorem phiInd_mem (f : cIndSpace (HPG k i t) (hRep τ σ)) :
   have h : IsOpen {g | ind (Qp k i t) (qRep τ σ) g (phiInd τ σ hτ hσ μ f) = phiInd τ σ hτ hσ μ f} :=
     isOpen_stab_of (ind (Qp k i t) (qRep τ σ)) _
       (levi k (i + t) ⁻¹' {p | prodPG τ σ p f = f})
-      ((isOpen_cInd_stab f).preimage (GlobalTheory.T.continuous_levi_unipotent_proj k _).1)
+      ((isOpen_cInd_stab f).preimage (_root_.GlobalTheory.CompanionTheory.BZPsiPG.continuous_levi_uM_mirProj k _).1)
       (by
         have h0 : levi k (i + t) (1 : GL (Fin (i + t)) k) = 1 := (levi k (i + t)).map_one
         have h1 : prodPG τ σ (1 : Mir k (i + t)) = 1 := (prodPG τ σ).map_one
@@ -176,7 +184,7 @@ theorem isSmoothChar_dpowM (n : ℕ) (s : ℝ) : IsSmoothChar (dpowM (k := k) n 
 
 theorem psiPG : ∀ (k : Type) [Field k] [ValuativeRel k] [TopologicalSpace k] [IsNonarchimedeanLocalField k], PsiPG k := by
   intro k _ _ _ _ i t τ σ hτ hσ
-  exact GlobalTheory.T.derivative_of_product_induced_iso k i t τ σ hτ hσ
+  exact _root_.GlobalTheory.CompanionTheory.BZPsiPG.Norm.psiN_prodPGn_of_equiv k i t τ σ hτ hσ
     (core _ _ (isSmooth_twist hτ (isSmoothChar_dpowM _ _)) (isSmooth_twist hσ (isSmoothChar_dpow _ _)))
 
 end GlobalTheory.CompanionTheory.BZPsiPG.Hand

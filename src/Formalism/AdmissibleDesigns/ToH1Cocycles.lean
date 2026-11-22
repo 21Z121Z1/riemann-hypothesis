@@ -1,7 +1,7 @@
 module
 
-public import Formalism.AdmissibleDesigns.BkLocCol
-public import Formalism.AdmissibleDesigns.InvariantsMapEquivariant
+public import Formalism.AdmissibleDesigns.Bundle0005
+public import Formalism.AdmissibleDesigns.Bundle0009
 public import Formalism.AdmissibleDesigns.RankReductionIdempotentOne
 public import Formalism.AdmissibleDesigns.CoboundaryMemFiniteClasses
 public import Formalism.AdmissibleDesigns.FgTopContinuousLinearMap

@@ -1,11 +1,11 @@
 module
 
 public import Development.AutomorphicArithmetic.Foundations.IwahoriReduction.NormProducts.LUnH
-public import Development.AutomorphicArithmetic.Foundations.IwahoriReduction.NormProducts.CountSpanEqZero
+public import Development.AutomorphicArithmetic.Foundations.IwahoriReduction.NormProducts.Bundle0002
 public import Development.AutomorphicArithmetic.Foundations.IwahoriReduction.NormProducts.RelOfComap
-public import Development.AutomorphicArithmetic.Foundations.IwahoriReduction.NormProducts.ExistsOfFixed
-public import Development.AbelianVarietyTheory.Definitions.Foundations.HahnPowOrderLeadingCoeff
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.FiniteDimensionalLevStatement
+public import Development.AutomorphicArithmetic.Foundations.IwahoriReduction.NormProducts.Bundle0001
+public import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0006
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0186
 
 @[expose] public section
 

@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CardDvdSumOfInvariantOfCardStabilizerDvd
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0006
 
 @[expose] public section
 

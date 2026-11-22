@@ -1,6 +1,6 @@
 module
 
-public import Formalism.LocalToGlobal.IndefiniteReal.GramCEqTranspose
+public import Formalism.LocalToGlobal.IndefiniteReal.Bundle0001
 
 @[expose] public section
 

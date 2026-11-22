@@ -1,7 +1,7 @@
 module
 
 public import ReciprocityTheory.Automorphisms.Unitary
-public import ReciprocityTheory.Automorphisms.PlaceA
+public import ReciprocityTheory.Automorphisms.Bundle0001
 
 @[expose] public section
 

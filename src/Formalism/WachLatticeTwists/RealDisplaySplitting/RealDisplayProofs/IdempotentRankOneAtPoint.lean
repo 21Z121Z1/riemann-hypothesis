@@ -1,7 +1,7 @@
 module
 
 public import Formalism.WachLatticeTwists.RamifiedBlockRings.RamifiedBlockProofs.CompositeOfChainHolds
-public import Formalism.WachLatticeTwists.RamifiedBlockRings.RamifiedBlockProofs.SplitExt
+public import Formalism.WachLatticeTwists.RamifiedBlockRings.RamifiedBlockProofs.Bundle0002
 public import Formalism.WachLatticeTwists.RealDisplaySplitting.RealDisplayProofs.SurjectionOfRankOneIdempotent
 
 @[expose] public section

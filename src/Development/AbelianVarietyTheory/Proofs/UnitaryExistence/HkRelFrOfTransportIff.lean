@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Formalism.LocalToGlobal.ProjectiveLattices.HeckeFr
-public import Development.AbelianVarietyTheory.BlockTheory.ExistenceTori.FibrePushforward
-public import Development.AbelianVarietyTheory.Proofs.HomogeneousIdeals.IsReducedAlgebraOfSmoothOfIsNoetherianRing
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0011
+public import Development.AbelianVarietyTheory.BlockTheory.ExistenceTori.Bundle0002
+public import Development.AbelianVarietyTheory.Proofs.HomogeneousIdeals.Bundle0010
 
 @[expose] public section
 

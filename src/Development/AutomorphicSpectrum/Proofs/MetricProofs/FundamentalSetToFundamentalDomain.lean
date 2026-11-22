@@ -1,14 +1,14 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Definitions.MetricPeriods.GroupDict
+public import Development.AutomorphicSpectrum.Definitions.MetricPeriods.Bundle0004
 public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsSheetCover
 public import GroundTheory.HeightsAndTheta.Heights.FiniteCovolume.StatementsProved
 public import GroundTheory.HeightsAndTheta.Heights.CountingLowerBound.Assembly
-public import Development.AutomorphicSpectrum.Proofs.MetricProofs.HaarPushforwardEqBallDensityStatement
-public import Development.AutomorphicSpectrum.Proofs.MetricProofs.BallAutomorphismInverseExists
+public import Development.AutomorphicSpectrum.Proofs.MetricProofs.HaarPushforwardEqBallDensity
+public import Development.AutomorphicSpectrum.Proofs.MetricProofs.Bundle0138
 public import Development.AbelianVarietyTheory.Proofs.CovolumeBounds.DifferentiableOnOfTendstoLocallyUniformlyOn
-public import ReciprocityTheory.AnalyticForms.AnalyticCharts.NullZero
+public import ReciprocityTheory.AnalyticForms.AnalyticCharts.Bundle0001
 
 @[expose] public section
 
@@ -234,7 +234,7 @@ theorem pi_eq_of_eqvBy (Δ : GroupDict F) (γ : latticeStab Δ.h Δ.e.range) (a)
 
 theorem null_fixed (Δ : GroupDict F) (μ : Measure (archUnitary Δ.h 𝐯)) [μ.IsHaarMeasure] (u : archUnitary Δ.h 𝐯)
     (hu : ∃ a, Δ.π (u * a) ≠ Δ.π a) : μ {a | Δ.π (u * a) = Δ.π a} = 0 := by
-  obtain ⟨c, -, -, hc⟩ := GlobalTheory.T.haar_pushforward_eq_ball_density E Ψ j j' n g Λ F Δ μ
+  obtain ⟨c, -, -, hc⟩ := _root_.GlobalTheory.CompanionTheory.Ar.Cusp.DictMeas.haar_projects E Ψ j j' n g Λ F Δ μ
   obtain ⟨A, G, hA, -, hAπ, -⟩ := Δ.act u
   obtain ⟨a₀, ha₀⟩ := hu
   rw [hAπ] at ha₀
@@ -290,7 +290,7 @@ theorem exists_const_lintegral (Δ : GroupDict F) (μ : Measure (archUnitary Δ.
       (∀ t ∈ ballDom F.q, ∀ t' ∈ ballDom F.q, F.Eqv (autGrp F.form) t t' → Φ t = Φ t') →
       ∫⁻ t in FF, Φ t * ENNReal.ofReal (ballDens F.q t) = C * ∫⁻ a in FD, Φ (Δ.π a) ∂μ := by
   classical
-  obtain ⟨c, hc0, hcT, hc⟩ := GlobalTheory.T.haar_pushforward_eq_ball_density E Ψ j j' n g Λ F Δ μ
+  obtain ⟨c, hc0, hcT, hc⟩ := _root_.GlobalTheory.CompanionTheory.Ar.Cusp.DictMeas.haar_projects E Ψ j j' n g Λ F Δ μ
   set Γ₀ := archLatticeGroup Δ.h 𝐯 Δ.e.range with hΓ₀
   let φ : latticeStab Δ.h Δ.e.range →* archUnitary Δ.h 𝐯 := (archEmbed Δ.h 𝐯).comp (latticeStab Δ.h Δ.e.range).subtype
   let ψ : latticeStab Δ.h Δ.e.range →* (Λ ≃ₗ[𝓞 E] Λ) := (autGrp F.form).subtype.comp Δ.α.toMonoidHom

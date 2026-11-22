@@ -2,16 +2,16 @@ module
 
 public import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.LocalTypeDictionary.DiscreteSpectrumResidualClassification
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RealMatchingTiedRegularizationConstant
-public import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.LocalTypeDictionary.BernsteinUnitaryProductIrreducible
+public import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.LocalTypeDictionary.Bundle0001
 public import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.LocalTypeDictionary.TwistedSquareLocalMatching
-public import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.LocalTypeDictionary.TwistedWeilRepresentationConvergence
-public import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.LocalTypeDictionary.TwistedSquareThetaIntegralsEq
-public import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.LocalTypeDictionary.RegularisedIntegralComparison
+public import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.LocalTypeDictionary.Bundle0018
+public import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.LocalTypeDictionary.Bundle0095
+public import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.LocalTypeDictionary.Bundle0098
 public import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.LocalTypeDictionary.SquareIdentityOfMatching
 public import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.LocalTypeDictionary.ThetaKernelMatchOnOppositeParabolic
-public import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.LocalTypeDictionary.RankPolarizationPiLeAleph0
+public import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.LocalTypeDictionary.Bundle0010
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Divisors.RegConst
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0052
 
 @[expose] public section
 
@@ -34,7 +34,7 @@ theorem tied_pair_scalar_match (hP : _root_.GlobalTheory.FunPr.ThetaLocalInputs)
     (h₀ : IsMatch ψ θ A A₁ B α β ωA ωB Pi₀ rf₀ rl₀ p₀ p₀') (hM : IsMatch ψ θ A A₁ B α β ωA ωB Pi rf rl p p') :
     ∃ s : ℂ, s ≠ 0 ∧ ∀ Φ ∈ algF ψ θ true A B, ∀ Φ' ∈ algF ψ θ false A₁ B, p₀ Φ = p₀' Φ' → p' Φ' = s • p Φ := by
   obtain ⟨e, Bs, Γ, Xc, om, om', cA, cB, hO, hTD⟩ :=
-    GlobalTheory.T.exists_placewise_seesaw_triple_over_hermitian D ψ θ hθ W W₁ X A A₁ B α β hT ν 𝓕 ν₁ 𝓕₁ hν hν₁ ωA ωB hM.weilA hM.weilB
+    _root_.GlobalTheory.SquareAgree.exists_isOver D ψ θ hθ W W₁ X A A₁ B α β hT ν 𝓕 ν₁ 𝓕₁ hν hν₁ ωA ωB hM.weilA hM.weilB
   obtain ⟨R, Rf, hR⟩ := hL D.host.F D.host.E D.sp.cm.sig Bs W.rank W₁.rank Γ Xc om om' hTD
   have hRe := hP.howeDualityReal
   have kA : ∀ Φ ∈ algF ψ θ true A B, p Φ = 0 ↔ p₀ Φ = 0 := fun Φ hΦ => by
@@ -168,7 +168,7 @@ theorem tied_pair_regularization_constant (hP : _root_.GlobalTheory.FunPr.ThetaL
   obtain ⟨κ, hκ⟩ := hD.2 ωA ωB hm.weilA hm.weilB
   refine ⟨lam * c₀, fun M hM Θ Θ' hΘ g g₁ => ?_⟩
   obtain ⟨aA, aB, kA, kB, iA, iB⟩ := hκ B ρ Θ Θ' hΘ
-  have hconv := GlobalTheory.T.bigRoute_kernel_integrableOn_unitary_quotient hWC hL W B ρ t i j (GlobalTheory.T.squareThetaTripleHypotheses_of_standing hL W t i j hst) M hM Θ Θ' hΘ g₁ g
+  have hconv := _root_.GlobalTheory.FunObj.routeBig_kerBig_integrableOn hWC hL W B ρ t i j (GlobalTheory.T.squareThetaTripleHypotheses_of_standing hL W t i j hst) M hM Θ Θ' hΘ g₁ g
   have hpp := hlam Θ Θ' hΘ
   obtain ⟨z, -, hz0, hzS, hzM, hz⟩ := hc₀ _ aB
   have ez : zact ωB z (datumB W Θ') = GlobalTheory.RegCompare.wop ωB z (datumB W Θ') := (GlobalTheory.RegCompare.wop_apply _ _ _).symm

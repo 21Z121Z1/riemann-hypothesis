@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.ReferenceCharactersFactorTame
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsFiniteAdelicPointLatticeEqSelfDual
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0380
 public import Formalism.LocalToGlobal.Columns.AdelicLemmas
 
 @[expose] public section

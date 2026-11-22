@@ -2,16 +2,15 @@ module
 
 public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsThetaMeanSquareNorm
 public import Development.AutomorphicSpectrum.Statements.GeometryStatements.ZhangDimensionPushDownGrassmannianHeightBounds
-public import GroundTheory.HeightsAndTheta.Heights.KernelsLattice
+public import GroundTheory.HeightsAndTheta.Heights.Bundle0001
 public import GroundTheory.HeightsAndTheta.Heights.LatticeLemmas.StatementsBundles
-public import GroundTheory.HeightsAndTheta.Heights.KernelsMatrix
-public import GroundTheory.HeightsAndTheta.Heights.HeightKernels.AssemblyAnalytic
+public import GroundTheory.HeightsAndTheta.Heights.HeightKernels.Bundle0019
 public import GroundTheory.HeightsAndTheta.Heights.FactorialBounds.Assembly
 public import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.HasSumPolyDerivMulProdAddMatrix
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsFundamentalDomainMeanNormSqThetaChar
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0018
 public import Development.AbelianVarietyTheory.Proofs.ToricGeometry.IsUnitOfLagrangian
-public import GroundTheory.HeightsAndTheta.Heights.HeightKernels.CoordSiegel
-public import ReciprocityTheory.AnalyticForms.AnalyticCharts.NullZero
+public import GroundTheory.HeightsAndTheta.Heights.HeightKernels.Bundle0003
+public import ReciprocityTheory.AnalyticForms.AnalyticCharts.Bundle0001
 public import ReciprocityTheory.AnalyticForms.AnalyticCharts.Osgood
 
 @[expose] public section

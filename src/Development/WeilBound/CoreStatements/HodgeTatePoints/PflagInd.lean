@@ -1,18 +1,18 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.TrivFlagMod
-public import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.FlagMinor
+public import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.Bundle0004
+public import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.Bundle0001
 public import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.PluckerCoord
 public import Development.AutomorphicSpectrum.Definitions.DivisibilityTowers.BundleChernComparison
 public import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.StatementsBundles
-public import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.SameGenericSymm
-public import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.PHsymmShift
+public import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.Bundle0025
+public import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.Bundle0052
 public import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.PTwistedDualGensExist
-public import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.PSymmetricSpanHsymm
-public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.NumericalSegreClosed
-public import Development.WeilBound.CoreStatements.IdealCycleValues.ProjIdealIndependentOfBasis
-public import Development.WeilBound.CoreStatements.HodgeTatePoints.PflagZ
+public import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.Bundle0022
+public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.Bundle0047
+public import Development.WeilBound.CoreStatements.IdealCycleValues.Bundle0002
+public import Development.WeilBound.CoreStatements.HodgeTatePoints.Bundle0038
 
 @[expose] public section
 

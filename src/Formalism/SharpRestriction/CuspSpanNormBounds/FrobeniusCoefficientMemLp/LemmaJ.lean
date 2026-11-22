@@ -1,6 +1,6 @@
 module
 
-public import Formalism.SharpRestriction.CuspSpanNormBounds.SBridge
+public import Formalism.SharpRestriction.CuspSpanNormBounds.Bundle0005
 public import Formalism.HermitianCurvature.FiniteOrderIntersectionInSmooth
 
 @[expose] public section

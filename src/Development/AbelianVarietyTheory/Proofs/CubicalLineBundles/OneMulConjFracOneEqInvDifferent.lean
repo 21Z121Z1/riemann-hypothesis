@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import ReciprocityTheory.GeometryOfNumbers.LatticeCovolumes.InhabSt
-public import ReciprocityTheory.SemistableReduction.SemiDegCA
+public import ReciprocityTheory.SemistableReduction.Bundle0003
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.Rationality.QCoreGlobPf
 public import Development.AbelianVarietyTheory.Proofs.HermitianTraceForms.TraceFormDualOneTraceFormDual
 public import Development.AbelianVarietyTheory.Statements.PrincipalLattices.LogHermFormOfUnitDiscriminant

@@ -1,10 +1,14 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FreeCell
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LinearlyIndependentFramesOpenStatement
-public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.TensorLocallyCompactRingStatement
-public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.UnitsOpenEmbeddingLocalTensor
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0535
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0656
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0498
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0597
+public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.Bundle0063
+public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.Bundle0019
+public import CompanionTheory.SpectralGeometry.CountingDefinitions.AdelicEulerProducts.IsEulerProd
+public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.Bundle0029
 
 @[expose] public section
 
@@ -258,11 +262,11 @@ theorem freeCell_props : ∀ (F E : Type) [Field F] [NumberField F] [Field E] [N
   intro F E _ _ _ _ _ σ hCM M J _ R _ _ _ _ _ hR n
   obtain ⟨iTR, iLC, iSC, iT2, -⟩ := id hR
   haveI := iTR; haveI := iLC; haveI := iSC; haveI := iT2
-  obtain ⟨kTR, kLC, kSC, kT2, ksig, -, -, -, -, -⟩ := GlobalTheory.T.tensor_locally_compact_ring F E σ hCM R
+  obtain ⟨kTR, kLC, kSC, kT2, ksig, -, -, -, -, -⟩ := _root_.GlobalTheory.CompanionTheory.SW.TopK.topTens_props F E σ hCM R
   haveI := kTR; haveI := kLC; haveI := kSC; haveI := kT2
   haveI : BorelSpace (R ⊗[F] E) := ⟨rfl⟩
   have hU := GlobalTheory.CompanionTheory.SW.KUnits.units_val_isOpenEmbedding F E σ hCM R hR
-  refine ⟨isOpen_freeCell hU (GlobalTheory.T.linearly_independent_frames_open F E σ hCM R hR n M),
+  refine ⟨isOpen_freeCell hU (_root_.GlobalTheory.CompanionTheory.WeilSiegel.FreeOpen.isOpen_free F E σ hCM R hR n M),
     fun X hX => linearIndependent_of_yPart X hX.1 hX.2,
     fun X hX hg hu => ⟨hu, yPart_linearIndependent R σ J X hX hg hu⟩,
     fun x a s Y hu hY => ?_,

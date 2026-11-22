@@ -1,8 +1,8 @@
 module
 
 public import Development.AutomorphicArithmetic.DivisorFrames.MemAdjoinGelfandSupOfCommuteGlGenerators
-public import Development.AutomorphicArithmetic.DivisorFrames.GelfandElementMemAdjoinCapelliCoeffs
-public import Formalism.RealPlaceAnalysis.ThirdArithmeticHolds
+public import Development.AutomorphicArithmetic.DivisorFrames.Bundle0004
+public import Formalism.RealPlaceAnalysis.Bundle0004
 
 @[expose] public section
 

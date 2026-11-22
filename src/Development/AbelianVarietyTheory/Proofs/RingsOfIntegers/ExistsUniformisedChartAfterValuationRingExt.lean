@@ -4,9 +4,9 @@ public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.PlaceAdaptation.AdaptStd
 public import Formalism.LocalToGlobal.ProjectiveLattices.IntAllProofFree
 public import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.IsAbelianSchemeThick
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.SemiAbelianDvrExtensionsIsoCompatible
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.IsOpenOfRangeGenericSubset
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.IntChartFrTruncExists
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0082
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0104
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0102
 
 @[expose] public section
 

@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Development.EtaleCohomology.EtaleSheaves.H0TwistOverClosedField
-public import Development.EtaleCohomology.KummerTheory.FinSHInv
+public import Development.EtaleCohomology.EtaleSheaves.Bundle0006
+public import Development.EtaleCohomology.KummerTheory.Bundle0016
 
 @[expose] public section
 

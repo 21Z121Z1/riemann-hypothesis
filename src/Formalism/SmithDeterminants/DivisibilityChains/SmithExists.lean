@@ -1,6 +1,6 @@
 module
 
-public import Formalism.SmithDeterminants.StatementDVR
+public import Formalism.SmithDeterminants.Bundle0001
 
 @[expose] public section
 

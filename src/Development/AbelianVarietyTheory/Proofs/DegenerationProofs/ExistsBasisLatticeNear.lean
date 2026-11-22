@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.Degenerations.ArithBase
-public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsBasisAdaptedToIdempotents
+public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.Bundle0003
 
 @[expose] public section
 

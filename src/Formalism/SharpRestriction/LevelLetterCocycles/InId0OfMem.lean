@@ -1,8 +1,8 @@
 module
 
 public import Formalism.SharpRestriction.LevelLetterCocycles.InvLevAtOf
-public import Formalism.SharpRestriction.LevelLetterCocycles.LevLetEMul
-public import Formalism.SharpRestriction.LevelLetterCocycles.CrtFamDet
+public import Formalism.SharpRestriction.LevelLetterCocycles.Bundle0047
+public import Formalism.SharpRestriction.LevelLetterCocycles.Bundle0032
 
 @[expose] public section
 

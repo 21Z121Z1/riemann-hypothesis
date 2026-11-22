@@ -4,8 +4,8 @@ public import Development.WeilBound.RepresentationTheoryGL.TwistedFactors.Selmer
 public import GroundTheory.AutomorphicForms.CuspidalDiscreteness.CuspFormsHeight
 public import GroundTheory.AutomorphicForms.CuspidalDiscreteness.SiegelConj
 public import GroundTheory.GlobalFields.IdeleGroups.GaloisOnAdeles.Action
-public import Development.AutomorphicArithmetic.AdelicQuotients.OneLeEntryBoundOfBorelDiagonalDecomp
-public import Development.AutomorphicArithmetic.AdelicQuotients.ExistsLowerEntryNeZeroOfNormCharpolyIrreducible
+public import Development.AutomorphicArithmetic.AdelicQuotients.Bundle0007
+public import Development.AutomorphicArithmetic.AdelicQuotients.Bundle0006
 
 @[expose] public section
 

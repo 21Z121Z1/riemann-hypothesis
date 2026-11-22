@@ -1,7 +1,7 @@
 module
 
-public import ReciprocityTheory.AnalyticForms.PlurisubharmonicFunctions.GreenOfPoincareLelongHyperplane
-public import ReciprocityTheory.AnalyticForms.PlurisubharmonicFunctions.LogInt
+public import ReciprocityTheory.AnalyticForms.PlurisubharmonicFunctions.Bundle0001
+public import ReciprocityTheory.AnalyticForms.PlurisubharmonicFunctions.Bundle0002
 public import ReciprocityTheory.AnalyticForms.PlurisubharmonicFunctions.GreenCoord
 public import ReciprocityTheory.AnalyticForms.PlurisubharmonicFunctions.HasCompactSupportCompHypInclAt
 

@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import GroundTheory.PAdicHodge.ACrisLog
-public import GroundTheory.PAdicHodge.LogPowSeries
+public import GroundTheory.PAdicHodge.Bundle0001
 
 @[expose] public section
 

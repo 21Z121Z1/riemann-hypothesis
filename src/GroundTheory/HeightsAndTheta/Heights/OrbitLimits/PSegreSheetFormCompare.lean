@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.StSegreSheetFormCompare
-public import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.PSheetFormCompare
+public import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.Bundle0021
+public import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.Bundle0110
 
 @[expose] public section
 

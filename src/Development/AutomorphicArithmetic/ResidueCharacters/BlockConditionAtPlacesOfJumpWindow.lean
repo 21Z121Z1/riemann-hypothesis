@@ -1,11 +1,11 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicArithmetic.ResidueCharacters.ExistsUnion
-public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.JumpWindow
+public import Development.AutomorphicArithmetic.ResidueCharacters.Bundle0003
+public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.Bundle0008
 public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.FinrankMaxUnramifiedSubfieldPadicFinExtPos
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ValuationLtOneIffNorm
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FinrankLeOfSubsetClosureRange
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0672
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0276
 
 @[expose] public section
 

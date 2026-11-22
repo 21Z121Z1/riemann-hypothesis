@@ -1,6 +1,6 @@
 module
 
-public import Formalism.LocalToGlobal.GroupLattices.PendingLemmas.DelEquiv
+public import Formalism.LocalToGlobal.GroupLattices.PendingLemmas.Bundle0002
 
 @[expose] public section
 

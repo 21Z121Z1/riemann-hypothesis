@@ -1,13 +1,13 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.IntegrandSZero
+public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.Bundle0013
 public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsUniqueIsConjAt
 public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsDualFamilyOfIsLattice
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.TendstoOneOfSummable
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsOfValILeOne
-public import Formalism.LocalRingCardinality.ConjSqrtMinusD
-public import Formalism.LocalToGlobal.IndefiniteReal.FinitePlaces.ExistsNatSmulSingle
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0233
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0039
+public import Formalism.LocalRingCardinality.Bundle0001
+public import Formalism.LocalToGlobal.IndefiniteReal.FinitePlaces.Bundle0015
 
 @[expose] public section
 

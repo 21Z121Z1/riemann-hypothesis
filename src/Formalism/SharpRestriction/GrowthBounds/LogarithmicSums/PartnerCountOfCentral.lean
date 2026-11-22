@@ -1,9 +1,9 @@
 module
 
 public import Formalism.SharpRestriction.GrowthBounds.LogarithmicSums.Conclusion1OfGainBoundAll
-public import Formalism.SharpRestriction.GrowthBounds.LogarithmicSums.TsumTruncatedShiftLe
+public import Formalism.SharpRestriction.GrowthBounds.LogarithmicSums.Bundle0001
 public import Formalism.SharpRestriction.RamificationFrobenius.TotientGaloisClasses.FrameFacts
-public import Development.AutomorphicArithmetic.OrbitLabellings.EvenAddOrderOfHPOfPowLe
+public import Development.AutomorphicArithmetic.OrbitLabellings.Bundle0002
 
 @[expose] public section
 

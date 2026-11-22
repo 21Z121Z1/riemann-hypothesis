@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Foundations.HTLawAt
+public import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0022
 
 @[expose] public section
 

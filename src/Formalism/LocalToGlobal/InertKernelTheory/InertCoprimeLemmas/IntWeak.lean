@@ -1,7 +1,7 @@
 module
 
-public import Formalism.LocalToGlobal.InertKernelTheory.DefsInt
-public import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.UnimodGenus
+public import Formalism.LocalToGlobal.InertKernelTheory.Bundle0007
+public import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.Bundle0022
 
 @[expose] public section
 

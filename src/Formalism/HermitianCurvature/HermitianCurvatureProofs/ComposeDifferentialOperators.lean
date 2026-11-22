@@ -1,6 +1,6 @@
 module
 
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.ListMapSumApply
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0104
 
 @[expose] public section
 

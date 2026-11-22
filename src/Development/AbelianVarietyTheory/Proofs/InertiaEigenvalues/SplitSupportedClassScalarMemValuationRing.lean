@@ -1,16 +1,17 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ValRingLocRing
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SqrtPowOdd
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ValMulSqrtUnit
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsNumerator
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0784
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0829
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0576
 public import ReciprocityTheory.GaloisValuations.GlobalA
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.HeckeCharLocPowEqOneOnLocalUnitsStatement
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ValuationEmbeddingGeneratorEqOneStatement
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ValuationSqrtAbsNormEqOneStatement
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.HeckeCharOnIdMulSqrtAbsNormInvMemSubringStatement
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsElemStdLatticeSandwichSplitSupportStatement
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0374
+public import Formalism.LocalToGlobal.UnitaryNorms.IsUnitaryNormOf
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0093
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0046
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0119
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0769
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0765
 
 @[expose] public section
 
@@ -220,7 +221,7 @@ theorem val_mul_sqrt_unit (D : D7) (c : (AE D)ˣ →* Circle) (χ : Formalism.L2
   have hroot : ∀ (v : HeightOneSpectrum (𝓞 D.host.E)) (x : D.host.Eˣ), IsUnitAt v (atFin v x) →
       A.valuation ((χ.locK v x : ℂˣ) : ℂ) = 1 := by
     intro v x hx
-    obtain ⟨m, hm, hxm⟩ := GlobalTheory.T.heckeChar_loc_pow_eq_one_on_localUnits _ χ v _ hx
+    obtain ⟨m, hm, hxm⟩ := _root_.GlobalTheory.LocUnitPow.loc_pow_eq_one _ χ v _ hx
     apply val_eq_one_of_pow A hm.ne'
     rw [← Units.val_pow_eq_pow_val, show χ.locK v x = χ.loc v (atFin v x) from rfl, hxm, Units.val_one, map_one]
   have hw : ∀ τ, A.valuation (tauE D τ (k : D.host.E) / ((‖tauE D τ (k : D.host.E)‖ : ℝ) : ℂ)) = 1 := by
@@ -233,9 +234,9 @@ theorem val_mul_sqrt_unit (D : D7) (c : (AE D)ˣ →* Circle) (χ : Formalism.L2
     have e : (tauE D τ (k : D.host.E) / ((‖tauE D τ (k : D.host.E)‖ : ℝ) : ℂ)) ^ 2 =
         tauE D τ (k : D.host.E) / starRingEnd ℂ (tauE D τ (k : D.host.E)) := by
       rw [div_pow, hn]; field_simp
-    have h1 : A.valuation (tauE D τ (k : D.host.E)) = 1 := GlobalTheory.T.valuation_embedding_generator_eq_one' _ A p hp hpA P hpP α h hα (tauE D τ)
+    have h1 : A.valuation (tauE D τ (k : D.host.E)) = 1 := _root_.GlobalTheory.valuation_embedding_generator_eq_one _ A p hp hpA P hpP α h hα (tauE D τ)
     have h2 : A.valuation (starRingEnd ℂ (tauE D τ (k : D.host.E))) = 1 :=
-      GlobalTheory.T.valuation_embedding_generator_eq_one' _ A p hp hpA P hpP α h hα ((starRingEnd ℂ).comp (tauE D τ))
+      _root_.GlobalTheory.valuation_embedding_generator_eq_one _ A p hp hpA P hpP α h hα ((starRingEnd ℂ).comp (tauE D τ))
     rw [e, map_div₀, h1, h2, div_one]
   have hinfv : A.valuation ((χ.inf k : ℂˣ) : ℂ) = 1 := by
     rw [hχinf k, map_prod]
@@ -255,7 +256,7 @@ theorem val_mul_sqrt_unit (D : D7) (c : (AE D)ˣ →* Circle) (χ : Formalism.L2
     refine val_eq_one_of_pow A (m := M) (by have h3 := hN; rw [hM] at h3; omega) ?_
     rw [map_pow]; exact key
   have hfinal : A.valuation (((χ.val P : ℂˣ) : ℂ) * ((Real.sqrt (Ideal.absNorm P.asIdeal) : ℝ) : ℂ)) = 1 := by
-    rw [map_mul, hvalP, GlobalTheory.T.valuation_sqrt_absNorm_eq_one' _ A p hp hpA P hpP, one_mul]
+    rw [map_mul, hvalP, _root_.GlobalTheory.valuation_sqrt_absNorm_eq_one _ A p hp hpA P hpP, one_mul]
   exact ⟨(A.valuation_le_one_iff _).1 hfinal.le, (A.valuation_le_one_iff _).1 (by rw [map_inv₀, hfinal, inv_one])⟩
 
 end GlobalTheory.LevelSeriesScal
@@ -315,7 +316,7 @@ theorem GlobalTheory.LevelSeries.clsScal_mem_valRing : ∀ (D : D7) (ψ : AddCha
   let H := Formalism.L2.Pj.hostOfRecord D
   have hbar : (H.bar : 𝓞 D.host.E →+* 𝓞 D.host.E) = (GlobalTheory.IdemSupport.cO D : 𝓞 D.host.E →+* 𝓞 D.host.E) :=
     RingHom.ext fun a => RingOfIntegers.ext (H.bar_eq a)
-  obtain ⟨m, m0, m1, m2, m3⟩ := GlobalTheory.T.exists_elem_stdLattice_sandwich_splitSupport D V hg hL h e' Ps bad he hPs hsupp
+  obtain ⟨m, m0, m1, m2, m3⟩ := _root_.GlobalTheory.SuppLatStd.lat_std_of_suppAt D V hg hL h e' Ps bad he hPs hsupp
   have hS : GenLat.SplitSupp H (⟨L⟩ : GenLat D.host.E V.rank) :=
     ⟨m, m0, m1, m2, fun P hP hm => by rw [hbar]; exact (m3 P hP hm).1⟩
   have hU := GlobalTheory.ClassScalarIn.unimod_hLat V hg (GlobalTheory.ExportSeries.finPt V h)
@@ -376,7 +377,7 @@ theorem GlobalTheory.LevelSeries.clsScal_mem_valRing : ∀ (D : D7) (ψ : AddCha
   have hNcop : Nat.Coprime (Ideal.absNorm cc) p := Nat.Coprime.coprime_dvd_left (dvd_mul_right _ _) hcop
   have hkcop : Nat.Coprime kk p :=
     (Nat.coprime_pow_left_iff two_pos _ _).1 (Nat.Coprime.coprime_dvd_left (dvd_mul_left _ _) hcop)
-  have hv' := GlobalTheory.T.heckeChar_onId_mul_sqrt_absNorm_inv_mem_subring D.host.E χ O cc c0 fun P hP => by
+  have hv' := _root_.GlobalTheory.HeckeIdealValue.inv_mem D.host.E χ O cc c0 fun P hP => by
     have hb : ((bad : ℕ) : 𝓞 D.host.E) ∉ P.asIdeal := fun hb =>
       P.isPrime.ne_top (eq_top_iff.2 (c2 ▸ sup_le hP ((Ideal.span_singleton_le_iff_mem _).2 hb)))
     have hc : GlobalTheory.IdemSupport.cP P ≠ P := fun hc => by

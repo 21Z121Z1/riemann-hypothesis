@@ -1,15 +1,15 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Jets.ColValMonomial
-public import Development.AbelianVarietyTheory.Proofs.FormalGroupCharts.ExistsFormalBiextMap
+public import Development.AbelianVarietyTheory.Definitions.Jets.Bundle0002
+public import Development.AbelianVarietyTheory.Proofs.FormalGroupCharts.Bundle0006
 public import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.DofIterSmulDir
-public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.MapDofIterate
-public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.BilinPartEigenMemRange
-public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.NabValColumnsCongr
-public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.CoeffProdLeadingMinors
-public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.SumProdNabValLeadingMinors
-public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.SumProdNabValLeadingMinorsOfColumnJets
+public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0017
+public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0020
+public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0034
+public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0016
+public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0026
+public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0030
 
 @[expose] public section
 

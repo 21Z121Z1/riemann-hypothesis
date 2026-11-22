@@ -1,13 +1,12 @@
 module
 
-public import Formalism.LocalToGlobal.IndefiniteReal.FinitePlaces.LatMod
-public import Formalism.LocalToGlobal.IndefiniteReal.FinitePlaces.VacExApp
+public import Formalism.LocalToGlobal.IndefiniteReal.FinitePlaces.Bundle0013
+public import Formalism.LocalToGlobal.IndefiniteReal.FinitePlaces.Bundle0007
 public import Formalism.LocalToGlobal.IndefiniteReal.FinitePlaces.IdemElt
-public import Formalism.LocalToGlobal.IndefiniteReal.FinitePlaces.VacExA
 public import Formalism.LocalToGlobal.IndefiniteReal.FinitePlaces.FactPrincipalDatum
 public import Formalism.LocalToGlobal.IndefiniteReal.FinitePlaces.PlaceDualB
-public import Formalism.LocalToGlobal.IndefiniteReal.FinitePlaces.ExistsNatSmulSingle
-public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.LatticeVariant
+public import Formalism.LocalToGlobal.IndefiniteReal.FinitePlaces.Bundle0015
+public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0077
 
 @[expose] public section
 

@@ -3,7 +3,7 @@ module
 public import Mathlib
 public import Formalism.LocalToGlobal.IndefiniteReal.LinksDefs
 public import Formalism.LocalToGlobal.Columns.CoefColLemmas
-public import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.CsEquiv
+public import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Bundle0010
 
 @[expose] public section
 

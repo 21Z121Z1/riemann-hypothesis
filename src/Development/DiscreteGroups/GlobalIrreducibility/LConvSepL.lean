@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.DiscreteGroups.GlobalIrreducibility.LConvSepB
+public import Development.DiscreteGroups.GlobalIrreducibility.Bundle0008
 
 @[expose] public section
 

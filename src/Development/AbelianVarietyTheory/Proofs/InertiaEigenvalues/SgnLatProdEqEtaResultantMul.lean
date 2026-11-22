@@ -2,11 +2,11 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.UnitLemmaGroup
-public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.LinearDescent
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.DltEqZero
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CharpolyLeftMulBasis
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SgnLatSpanBasis
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CharpolyDvdPowOfAevalEqZero
+public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0002
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0076
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0005
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0090
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0113
 
 @[expose] public section
 

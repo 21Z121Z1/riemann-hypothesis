@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsFockMap
-public import Development.WeilBound.ThetaLifts.SchwartzMoments.SchwartzDqTendsto
-public import Development.WeilBound.ThetaLifts.SchwartzMoments.NormIterComp
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0922
+public import Development.WeilBound.ThetaLifts.SchwartzMoments.Bundle0002
+public import Development.WeilBound.ThetaLifts.SchwartzMoments.Bundle0001
 
 @[expose] public section
 

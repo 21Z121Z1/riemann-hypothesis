@@ -2,8 +2,8 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.Divisors.CTSmallCone
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LagrangianEvaluationGauss
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsArchimedeanPairNegativeSymplecticPairing
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1397
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0362
 
 @[expose] public section
 

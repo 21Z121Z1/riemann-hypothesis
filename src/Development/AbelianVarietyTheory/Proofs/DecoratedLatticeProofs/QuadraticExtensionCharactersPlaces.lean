@@ -1,18 +1,17 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.RescOne
-public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.IsRatDatum
+public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.Bundle0031
+public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.Bundle0022
 public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.IdempotentSubMulComplementEqComplement
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.MatrixSupportedAtPlaceOfIsHalfSplitPoint
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.HeisenbergCombinationTwoVariableModelAndLineExte
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.OmPureTensorOOfFinite
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.HeisenbergCombinationEqOnVacuaOfEqOneStatement
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ParahoricTestFunctionIntegralAdelicReductionStatement
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SplitPlaceFrameMovedBackIsLatticeBasisStatement
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.IntegralFrameMatrixIffMemSplitHalfHomLatticeStatement
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ListConvolutionDistinctPlacesSupportedAndComposiStatement
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SplitPlaceBaseEqOfSameIdempotentPrimeStatement
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0319
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0337
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0125
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0448
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0454
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DiagonalBlockDetBlockTriangular
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0456
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0452
 
 @[expose] public section
 
@@ -116,10 +115,10 @@ theorem puts (q : GlobalTheory.FinPl.SplitPt D k) {ψ : AddChar (AF D.host.F) �
     {c : WO S T →₀ ℂ} (hc : (ofSplit q).IsCombAt ψ GS GT c Ξ) :
     Puts ψ (om (g, h) ∘ₗ Tm) e βS βT P w loc c := by
   intro W hW
-  obtain ⟨π', hπ, hred, hint, hres⟩ := GlobalTheory.T.exists_finiteAdele_projection_integral_reduction D k q w hq
+  obtain ⟨π', hπ, hred, hint, hres⟩ := _root_.GlobalTheory.FinPl.SplitPt.exists_lift_isRed D k q w hq
   obtain ⟨T₁, hT₁, hT'⟩ := model q (moved (ofSplit q) GS g⁻¹) (moved (ofSplit q) GT h⁻¹) hom.std hS hT βS βT he hw hq hint hres W hW
     hf₀ hTm
-  obtain ⟨T₂, hT₂, hT''⟩ := GlobalTheory.T.isLocalModel_creation_weilAction_moved_frames D k (ofSplit q) Y Y' S T _ GS _ GT ψ θ _ _ om hθ hom g h
+  obtain ⟨T₂, hT₂, hT''⟩ := _root_.GlobalTheory.LocModMove.isModel_move D k (ofSplit q) Y Y' S T _ GS _ GT ψ θ _ _ om hθ hom g h
     (β_eq_moved _ GS g) (β_eq_moved _ GT h) 0 0 0 0 1 T₁ hT₁
   simp only [GlobalTheory.FiniteFock.pureTensorO_one] at hT''
   have hco := coords_down (ofSplit q) (moved (ofSplit q) GS g⁻¹) (moved (ofSplit q) GT h⁻¹) hπ
@@ -216,8 +215,8 @@ theorem gen {r : ℕ} {k : Fin r → Type} [∀ i, Field (k i)] [∀ i, Valuativ
     om (g, h) (comb ψ S T d f) = comb ψ S T (aconv (List.ofFn c)) (om (g, h) f) := by
   obtain ⟨hvac, e, he, ⟨Tm, hTm⟩, hall⟩ := hst
   rw [hL, Finset.empty_union] at he
-  have hpl : Function.Injective pl := fun i i' H => hv (GlobalTheory.T.splitPlace_baseEq_of_same_idempotentPrime D _ _ (q i) (q i') _ (hq i) (H ▸ hq i'))
-  have hcv := GlobalTheory.T.listConvolution_distinctPlaces_supported_and_composition D ψ S T (Fin r) (fun i => (q i).v) c hv
+  have hpl : Function.Injective pl := fun i i' H => hv (_root_.GlobalTheory.FinPl.SplitPlace.v_eq_of_isIdemAt D _ _ (q i) (q i') _ (hq i) (H ▸ hq i'))
+  have hcv := _root_.GlobalTheory.ConvDistinct.main D ψ S T (Fin r) (fun i => (q i).v) c hv
     (fun i u hu => GlobalTheory.FinPl.SplitHalfSupp.mxAt_of_isHalf_above D _ (q i) _ _ u (hc i u hu)) (List.finRange r) (List.nodup_finRange r)
   rw [← List.ofFn_eq_map] at hcv
   have hcP : GlobalTheory.FinPl.CombAt P (aconv (List.ofFn c)) := by
@@ -227,7 +226,7 @@ theorem gen {r : ℕ} {k : Fin r → Type} [∀ i, Field (k i)] [∀ i, Valuativ
     rw [← hTm.vac, one_smul]
     refine congrArg Tm (funext fun x => if_congr ?_ rfl rfl)
     rw [and_comm]
-    exact and_congr_left fun hx => GlobalTheory.T.integralFrameMatrix_iff_mem_splitHalfHomLattice D r k q pl Q e hq hU hpl hQ he S T ΛS ΛT hS hT βS βT hlat x hx
+    exact and_congr_left fun hx => _root_.GlobalTheory.HalfInt.isIntM_iff_mem_latO D r k q pl Q e hq hU hpl hQ he S T ΛS ΛT hS hT βS βT hlat x hx
   have e1 : comb ψ S T d vac = Tm (datum e βS βT fun y => ((List.finRange r).map fun i => locQ L.r (ξ (pl i)) (y (pl i))).prod) := by
     refine (hall Tm hTm).trans (congrArg Tm (funext fun x => if_congr Iff.rfl ?_ rfl))
     have hQ' : Q = Finset.univ.image pl := Finset.ext fun w => by simpa using hQ w
@@ -241,7 +240,7 @@ theorem gen {r : ℕ} {k : Fin r → Type} [∀ i, Field (k i)] [∀ i, Valuativ
     Module.End.one_apply] at e3
   have hle : latO S T (ΛS : Set _) (ΛT : Set _) P ≤ latO S T (ΛS : Set _) (ΛT : Set _) fun _ => True :=
     AddSubgroup.closure_mono fun w ⟨α, hα, _, hw⟩ => ⟨α, hα, fun _ h => absurd trivial h, hw⟩
-  rw [GlobalTheory.T.heisenbergCombination_eq_on_vacua_of_eq_one D r k q P hv hP ψ hom.std S T ΛS ΛT hS hT d _ hd (combAt_mapDomain hcP g⁻¹ h⁻¹) vac
+  rw [_root_.GlobalTheory.FinPl.Transfer.comb_eq_on_vacua D r k q P hv hP ψ hom.std S T ΛS ΛT hS hT d _ hd (combAt_mapDomain hcP g⁻¹ h⁻¹) vac
     ⟨hvac.2.theta, fun u hu => hvac.2.lat.1 u (hle hu), fun e he u hu hh => hvac.2.lat.2 e he u (hle hu) hh⟩ h0 e3 f hf,
     om_comb hom g h _ hf.1]
 
@@ -253,7 +252,7 @@ theorem lat_of_movedTo {k : Type} [Field k] [ValuativeRel k] [TopologicalSpace k
     (π' : EAf D →+* k) (hπ : ∀ a, π' (toEAf D a) = q.pr a) (y : Fin S.rank → k) :
     (∀ a, y a ∈ 𝒪[k]) ↔ (fun a => q.sec ((β.val.map π' *ᵥ y) a)) ∈ GlobalTheory.FinPl.latV S Λ (· = q.v) := by
   have h1 := map_eq_of_movedTo (ofSplit q) F hπ 1 σ (by rw [Matrix.mul_one]; exact hβ)
-  have h2 := GlobalTheory.T.splitPlaceFrame_movedBack_isLatticeBasis D k q S g Λ N P hP hΛ hN hm Y _ _ (β_eq_moved (ofSplit q) F g) hF (y ∘ σ.symm)
+  have h2 := _root_.GlobalTheory.FinPl.FrameBack.frame_back D k q S g Λ N P hP hΛ hN hm Y _ _ (β_eq_moved (ofSplit q) F g) hF (y ∘ σ.symm)
   rw [h1, Matrix.mul_one, Matrix.submatrix_mulVec_equiv]
   refine Iff.trans ⟨fun H i => H _, fun H a => ?_⟩ h2
   simpa using H (σ a)

@@ -1,7 +1,7 @@
 module
 
 public import Development.WeilBound.ThetaLifts.LocalTheory.ArchimedeanBumps.SliceMain
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsFockMap
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0922
 
 @[expose] public section
 

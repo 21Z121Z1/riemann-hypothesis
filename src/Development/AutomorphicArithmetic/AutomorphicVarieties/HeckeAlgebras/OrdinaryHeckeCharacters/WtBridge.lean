@@ -3,11 +3,11 @@ module
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.HeckeAlgebras.IsTheta
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.WeilGroupCharacters.LocCFTAll
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.PatchingModules.Classical
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.PadicHodgeTheory.LaCyc
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.PadicHodgeTheory.LaArtinLit
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.GlobalArtinLocalIdeleInjective
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ChevalleyUnits
-public import GroundTheory.LocalFields.ExistsUnitFiltrationUnitsLeAndRangePowLe
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.PadicHodgeTheory.Bundle0030
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.PadicHodgeTheory.Bundle0042
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0666
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0335
+public import GroundTheory.LocalFields.Bundle0003
 
 @[expose] public section
 

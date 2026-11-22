@@ -3,7 +3,7 @@ module
 public import Mathlib
 public import CompanionTheory.AutomorphicTheory.PieriRules.PieriDegreeBounds.Imports
 public import Development.AbelianVarietyTheory.Definitions.Jets.SumIoPr
-public import Formalism.RealPlaceAnalysis.RealPlaceTaylor.CartanInvolutionConjTransposeMul
+public import Formalism.RealPlaceAnalysis.RealPlaceTaylor.Bundle0003
 public import Formalism.HermitianCurvature.HermitianCurvatureProofs.ContinuousMulMt
 public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.ChainRuleSmooth.ExpIntertwine
 public import CompanionTheory.AutomorphicTheory.PieriRules.ThetaBesselIsometries.IsDSOfIsDG

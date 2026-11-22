@@ -1,9 +1,10 @@
 module
 
 public import Development.WeilBound.CoreStatements.PublishedTheorems.JacquetShalikaRigidity.ColumnConjugationMeasure
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.PeriodicEqZeroOfFourierCoefficientsZero
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.QuotientAverageTranslateInvariantStatement
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.QuotientAverageAddOfPeriodicStatement
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0597
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0607
+public import Mathlib
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.UnipotentBlockColumnIndex
 
 @[expose] public section
 
@@ -27,14 +28,14 @@ instance haar : (vecMeasure E ι).IsAddHaarMeasure := inferInstance
 
 theorem avg_eq_integral (f : (ι → Ad E) → ℂ) (hf : Per (ratV E ι) f) :
     avg (ratV E ι) f = ∫ x in vecDomain E ι, f x ∂vecMeasure E ι := by
-  have h := GlobalTheory.T.setIntegral_fundamentalDomain_eq_mass_mul_average (ι → Ad E) (ratV E ι) (isCoLat_ratV E ι) (vecMeasure E ι) (vecDomain E ι) inferInstance
+  have h := _root_.GlobalTheory.CuspGeneric.setIntegral_eq_mass_mul_avg (ι → Ad E) (ratV E ι) (isCoLat_ratV E ι) (vecMeasure E ι) (vecDomain E ι) inferInstance
     isAddFundamentalDomain_vecDomain f hf
   rw [h.2.2.2, vecMeasure_vecDomain]
   simp
 
 theorem integrableOn (f : (ι → Ad E) → ℂ) (hf : Per (ratV E ι) f) :
     IntegrableOn f (vecDomain E ι) (vecMeasure E ι) :=
-  (GlobalTheory.T.setIntegral_fundamentalDomain_eq_mass_mul_average (ι → Ad E) (ratV E ι) (isCoLat_ratV E ι) (vecMeasure E ι) (vecDomain E ι) inferInstance
+  (_root_.GlobalTheory.CuspGeneric.setIntegral_eq_mass_mul_avg (ι → Ad E) (ratV E ι) (isCoLat_ratV E ι) (vecMeasure E ι) (vecDomain E ι) inferInstance
     isAddFundamentalDomain_vecDomain f hf).2.2.1
 
 theorem exists_ne_one {ψ : AddChar (Ad E) ℂ} (hψ : StdPsi ψ) : ∃ a, ψ a ≠ 1 := by

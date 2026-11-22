@@ -4,7 +4,7 @@ public import Mathlib
 public import Formalism.LocalToGlobal.GlobalTheory.GL3.PHfTrace
 public import Formalism.FrobeniusOrbits.HostCorollaries
 public import Formalism.FrobeniusOrbits.FrobeniusOrbitsProofs.DiscrB
-public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.CanonicalTranslateJets
+public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0077
 
 @[expose] public section
 

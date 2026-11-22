@@ -2,9 +2,9 @@ module
 
 public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.InfinitesimalDecay.DecBoundJ
 public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.DiscreteSeriesExistence.DatumEmbeddingMemHlam
-public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.InfinitesimalDecay.SumFlatMapMap
+public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.InfinitesimalDecay.Bundle0001
 public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.InfinitesimalDecay.ExistsNearSmooth
-public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.InfinitesimalDecay.KsetMulConj
+public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.InfinitesimalDecay.Bundle0002
 public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.InfinitesimalDecay.SigLamSmoothOfGenSub
 
 @[expose] public section

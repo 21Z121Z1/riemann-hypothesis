@@ -1,31 +1,35 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.SlopeBoundSt
-public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.ArchBetween
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.Bundle0012
 public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.BdryChart
 public import Development.AutomorphicSpectrum.Definitions.MetricPeriods.ClopenCondOnto
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.UniformisationConclusion
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.HeckeKer
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.Bundle0003
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.BlowupProjections.BlowupProjStatement
 public import Development.AbelianVarietyTheory.PublishedTheorems.SemiabelianTori.GeometricallyConnectedSplitTorusAff
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.GrIsGenAt
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0026
 public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.FlagLabelBasesExist
 public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LatticeRegularAtLocalPoint
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LieLatticeEvalAtLocalRingStatement
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.PrimeChartExistsUniquePointStatement
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.RegAtIffChartLocalization
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsUniqueCentreLocalHomStatement
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LieModelPullbackCorrespondence
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0141
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.Bundle0004
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0019
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.Bundle0002
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0021
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0078
 public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsLieModel
 public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.IsExcisionNbhdAway
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.FunctionFieldRatioGenerators
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.RootOriginRootIndexBound
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0031
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0187
 public import Development.AbelianVarietyTheory.Counterexamples.ModuliSurvey.IsQProjOverOfIsProjOver
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LocalSubringCoordRatioValueStatement
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ValueScalingByMonomialStatement
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LocalSubringChartPointStatement
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LieModelLocalSubringPointStatement
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LocalSubringCoordRatioValue
+public import Development.AutomorphicSpectrum.Definitions.MetricPeriods.HasMultiplier
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0262
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0066
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0263
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0034
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0225
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0224
 
 @[expose] public section
 
@@ -43,14 +47,14 @@ theorem exists_locRing {K : Type} [Fintype K] {J : K → Type} [∀ k, Fintype (
       (∀ (k : K) (a b : J k), z ⟨k, b⟩ ≠ 0 → y ⟨k, b⟩ ≠ 0 ∧ y ⟨k, a⟩ / y ⟨k, b⟩ ∈ A) ∧
       (∀ n : ℕ, (n : L) ≠ 0 → (n : Ω) ≠ 0 ∧ (n : Ω)⁻¹ ∈ A) ∧
       ∀ s ∈ A, s⁻¹ ∈ A → s ≠ 0 → ∃ w : L, w ≠ 0 ∧ Small.HasVal y (0 : K → ℤ) s z w :=
-  GlobalTheory.T.local_subring_coord_ratio_value K J Ω y L z hz
+  _root_.GlobalTheory.CompanionTheory.Ar.ClosLoc.exists_localRing K J Ω y L z hz
 
 theorem hasVal_twist {K : Type} [Fintype K] {J : K → Type} [∀ k, Fintype (J k)] {Ω : Type} [Field Ω]
     (y : (Σ k, J k) → Ω) {L : Type} [Field L] (z : (Σ k, J k) → L) (a : K → ℤ) (s : Ω) (w : L)
     (hw : Small.HasVal y (0 : K → ℤ) s z w) (hw0 : w ≠ 0) (c : (k : K) → J k)
     (hy : ∀ k, y ⟨k, c k⟩ ≠ 0) (hc : ∀ k, z ⟨k, c k⟩ ≠ 0) :
     ∃ v : L, v ≠ 0 ∧ Small.HasVal y a (s * ∏ k, y ⟨k, c k⟩ ^ a k) z v :=
-  GlobalTheory.T.value_scaling_by_monomial K J Ω y L z a s w hw hw0 c hy hc
+  _root_.GlobalTheory.CompanionTheory.Ar.ChartTwist.hasVal_twist K J Ω y L z a s w hw hw0 c hy hc
 
 theorem exists_chartPoint {X : Scheme.{0}} {Ω : Type} [Field Ω] {ξ : Spec (CommRingCat.of Ω) ⟶ X} {κ : Type}
     {x : κ → Ω} {c : κ} (T : CoordTie ℤ ξ x) (hc : x c ≠ 0) {F : Type} [Field F] (θ : Ω →+* F)
@@ -59,7 +63,7 @@ theorem exists_chartPoint {X : Scheme.{0}} {Ω : Type} [Field Ω] {ξ : Spec (Co
       (∀ s : X.presheaf.stalk (centre z),
         (((Scheme.stalkClosedPointTo z).hom s : A) : F) = θ (genMap ξ ⟨centre z, h⟩ s)) ∧
       Spec.map (CommRingCat.ofHom A.subtype) ≫ z = Spec.map (CommRingCat.ofHom θ) ≫ ξ :=
-  GlobalTheory.T.local_subring_chart_point X Ω ξ κ x c T hc F θ A hA
+  _root_.GlobalTheory.CompanionTheory.Ar.ChartPoint.point_of_local_subring X Ω ξ κ x c T hc F θ A hA
 
 theorem model_ext {E : Type} [Field E] [NumberField E] [IsCMField E] {H : Host E} {D : Datum H} {l : Level H}
     {Xo : Moduli D l} {c : Coeff l} {O : Type} [CommRing O] {β : O →+* c.F} (Y : Model Xo c β)
@@ -109,7 +113,7 @@ theorem side {S X : Scheme.{0}} {G : Over S} [GrpObj G] {Gx : Over X} [GrpObj Gx
     (hreg : ∀ i, ∀ e ∈ M.lat ⟨centre z, h⟩, (m : Ω₁) * π i e ∈ regAt ξ ⟨centre z, h⟩) :
     ∃ (β : Fin r → ER) (g : Fin r → ER →ₗ[A] A), (∀ k, io (β k) = Lm ((m : Ω₁) • b k)) ∧
       ∀ i k, ((g i (β k) : A) : F) = if k = i then (m : F) ^ 2 else 0 :=
-  GlobalTheory.T.lie_model_local_subring_point S X G Gx φ Ω₁ ξ hξ Li M F θ A z h hs ER MR xF V MV io Lm hio hL r b π m hm hπ hreg
+  _root_.GlobalTheory.CompanionTheory.Ar.HodgeMetric.FrameDual.exists_frame_dual_sq S X G Gx φ Ω₁ ξ hξ Li M F θ A z h hs ER MR xF V MV io Lm hio hL r b π m hm hπ hreg
 
 theorem common_den {F : Type} [Field F] (A : Subring F) (hfrac : ∀ a : F, ∃ d ∈ A, d ≠ 0 ∧ d * a ∈ A)
     (s : Finset F) : ∃ d ∈ A, d ≠ 0 ∧ ∀ a ∈ s, d * a ∈ A := by

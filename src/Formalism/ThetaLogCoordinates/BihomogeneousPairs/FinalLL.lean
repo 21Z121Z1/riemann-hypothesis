@@ -1,11 +1,9 @@
 module
 
-public import Formalism.ThetaLogCoordinates.BihomogeneousPairs.LetterChainEmbeddings.PstScalMem
+public import Formalism.ThetaLogCoordinates.BihomogeneousPairs.LetterChainEmbeddings.Bundle0002
 public import Formalism.ThetaLogCoordinates.BihomogeneousPairs.LetterChainEmbeddings.PlusOp
-public import Formalism.ThetaLogCoordinates.BihomogeneousPairs.LetterChainEmbeddings.LatticeLinearHolds
+public import Formalism.ThetaLogCoordinates.BihomogeneousPairs.LetterChainEmbeddings.Bundle0001
 public import Formalism.ThetaLogCoordinates.BihomogeneousPairs.LetterChainEmbeddings.StepTie
-public import Formalism.ThetaLogCoordinates.BihomogeneousPairs.LetterChainEmbeddings.StepPlus
-public import Formalism.ThetaLogCoordinates.BihomogeneousPairs.LetterChainEmbeddings.LevelLatticeOf
 
 @[expose] public section
 

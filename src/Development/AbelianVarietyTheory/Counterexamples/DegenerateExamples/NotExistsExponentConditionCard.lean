@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Formalism.SharpRestriction.LevelLetterCocycles.BlochKatoPhases
-public import Development.AbelianVarietyTheory.BlockTheory.ThetaLiftGeometry.AgreementAtAlmostAllSplitPrimes
+public import Development.AbelianVarietyTheory.BlockTheory.ThetaLiftGeometry.Bundle0001
 
 @[expose] public section
 

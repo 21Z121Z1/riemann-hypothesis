@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Formalism.PadicSubsetSums.CentralIdempotents.GaloisIrreducibility
+public import Formalism.PadicSubsetSums.CentralIdempotents.Bundle0002
 
 @[expose] public section
 

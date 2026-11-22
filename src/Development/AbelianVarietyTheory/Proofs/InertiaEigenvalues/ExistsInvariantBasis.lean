@@ -2,9 +2,9 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.MemEurOfTeichmullerSeries
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CyclotomicPowerSeriesAlgHomActionLaws
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.NormPowSubOneOfNotDvd
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsAddValuationFinExt
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0218
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0123
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0231
 
 @[expose] public section
 

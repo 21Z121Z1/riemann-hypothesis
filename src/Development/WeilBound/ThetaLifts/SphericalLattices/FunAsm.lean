@@ -1,9 +1,8 @@
 module
 
 public import Development.WeilBound.ThetaLifts.SphericalLattices.FunDefs
-public import Development.WeilBound.CoreStatements.LocalThetaKernels.EvlMain
-public import Development.WeilBound.CoreStatements.CompactAveragingSplitting.EigenvectorLifting.Inertof
-public import Development.WeilBound.CoreStatements.CompactAveragingSplitting.EigenvectorLifting.Kcompact
+public import Development.WeilBound.CoreStatements.LocalThetaKernels.Bundle0003
+public import Development.WeilBound.CoreStatements.CompactAveragingSplitting.EigenvectorLifting.Bundle0002
 
 @[expose] public section
 

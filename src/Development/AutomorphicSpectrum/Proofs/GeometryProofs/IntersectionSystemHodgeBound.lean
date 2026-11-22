@@ -2,15 +2,14 @@ module
 
 public import Mathlib
 public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.BdryChart
-public import ReciprocityTheory.AnalyticForms.PlurisubharmonicFunctions.IsPshLocallyIntegrableStatement
+public import ReciprocityTheory.AnalyticForms.PlurisubharmonicFunctions.Bundle0001
 public import Development.AutomorphicSpectrum.Statements.GeometryStatements.FlatDegree
-public import Development.AutomorphicSpectrum.Statements.GeometryStatements.NineGeoU
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ComponentDataHodgeThirdStatement
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ComponentDataHodgeFourthStatement
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.BlockMatrixGramNormalStatement
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.GramMatrixTwoFramesStatement
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.GramMatrixChangeFrameStatement
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.InteriorPointPolarisedStatement
+public import Development.AutomorphicSpectrum.Statements.GeometryStatements.Bundle0006
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0219
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0167
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0218
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0109
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0154
 
 @[expose] public section
 
@@ -237,8 +236,8 @@ theorem quotNormSq_eq_det : ∀ (E : Type) [Field E] [NumberField E] [IsCMField 
   have hframe : (Lat.comap (fun p => Or.𝔐.V (Or.bg τ) p ⊔ Or.𝔐.V (Or.sm τ) p) (Or.i τ)).IsFrameAt b'
       ⟨centre z, h⟩ :=
     ⟨replaceTail_linearIndependent hj hb.1 hC, by rw [hb.2, hb', span_replaceTail hj _ hCA hC]⟩
-  obtain ⟨G', hG', hG'p⟩ := GlobalTheory.T.component_data_hodge_third E H D l Xo c Y II K J Ω W Dc Hd S₀ Or z τ b' h hI hframe
-  have hpol := GlobalTheory.T.interior_point_polarised E H D l Xo c Y S₀ Ω K J Dc.y Or.𝔐 z hI
+  obtain ⟨G', hG', hG'p⟩ := _root_.GlobalTheory.CompanionTheory.Ar.gramAt_posDef_of_isFrameAt_blocks E H D l Xo c Y II K J Ω W Dc Hd S₀ Or z τ b' h hI hframe
+  have hpol := _root_.GlobalTheory.CompanionTheory.Ar.HodgeMetric.polarisedAt_of_interior E H D l Xo c Y S₀ Ω K J Dc.y Or.𝔐 z hI
   have hchange : G' = (blk hj (Matrix.of Cz)).conjTranspose * G * blk hj (Matrix.of Cz) :=
     GlobalTheory.T.gram_matrix_two_frames E H D l Xo c Y S₀ Ω K J Dc.y Or.𝔐 z Dc.N (fun k => Or.i τ (b k)) (fun k => Or.i τ (b' k)) G G'
       (blk hj C) (blk hj (Matrix.of Cz)) hpol hG hG'
@@ -254,12 +253,12 @@ theorem quotNormSq_eq_det : ∀ (E : Type) [Field E] [NumberField E] [IsCMField 
   have htail : ∀ k, Or.i τ (b' (tailIdx hj k)) = s k := fun k => by
     rw [hb', replaceTail_tail, hx]
   have horth : ∀ a k, G' (headIdx hj a) (tailIdx hj k) = 0 := fun a k =>
-    GlobalTheory.T.component_data_hodge_fourth E H D l Xo c Y II K J Ω W Dc Hd S₀ Or z τ _ _ _ _ _ hI (hhead a)
+    _root_.GlobalTheory.CompanionTheory.Ar.Cusp.PhMuFree.hodgeInnerProduct_blocks_eq_zero E H D l Xo c Y II K J Ω W Dc Hd S₀ Or z τ _ _ _ _ _ hI (hhead a)
       (by show Or.i τ (b' (tailIdx hj k)) ∈ _; rw [htail]; exact hs k) (hv _) (hv _) (hip _ _)
   refine ⟨G'.submatrix (tailIdx hj) (tailIdx hj),
     ⟨fun k => v (tailIdx hj k), fun k => ?_, fun p q => hip _ _⟩, hG'p.submatrix (tailIdx_injective hj), ?_⟩
   · rw [← htail]; exact hv _
-  · exact GlobalTheory.T.block_matrix_gram_normal Dc.N Dc.j hj G G' _ _ hGp hchange (blk_hh hj _) (fun k a => blk_th hj _ a k) (blk_tt hj _)
+  · exact _root_.GlobalTheory.CompanionTheory.Ar.Cusp.BlockFrame.quotNormSq_eq_of_blockFrame Dc.N Dc.j hj G G' _ _ hGp hchange (blk_hh hj _) (fun k a => blk_th hj _ a k) (blk_tt hj _)
       horth (fun _ _ => rfl)
 
 end GlobalTheory.CompanionTheory.Ar.SmallGram

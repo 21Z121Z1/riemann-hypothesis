@@ -1,6 +1,6 @@
 module
 
-public import Formalism.SharpRestriction.LevelLetterCocycles.InvariantLetterPolynomialDerivation
+public import Formalism.SharpRestriction.LevelLetterCocycles.Bundle0024
 
 @[expose] public section
 

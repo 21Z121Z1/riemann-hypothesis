@@ -1,10 +1,10 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.GenericRegularity.ExistsComponentOfModelCharts
+public import Development.AbelianVarietyTheory.Proofs.GenericRegularity.Bundle0036
 public import Development.AbelianVarietyTheory.Proofs.TorusHaarMeasure.ExistsOpenSameModel
 public import Development.AbelianVarietyTheory.Proofs.GenericRegularity.FlagChartsCoverFramedFieldPoints
-public import Formalism.LocalToGlobal.ProjectiveLattices.CompFin
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0011
 
 @[expose] public section
 

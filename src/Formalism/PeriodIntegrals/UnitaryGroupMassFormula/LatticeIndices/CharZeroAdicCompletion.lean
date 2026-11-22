@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LatticeIndices.FirstEmbeddingAlgebraMap
-public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LevelStructures.LatTop
+public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LatticeIndices.Bundle0022
+public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LevelStructures.Bundle0002
 
 @[expose] public section
 

@@ -1,18 +1,16 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.TwistedStartColumnReading
+public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.Bundle0019
 public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.CardStabilizerForgetFr
 public import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.LevelGroupNeTopNeBot
 public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.PhiMapsAndOmegaLaw
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.AbsNormEqOfSplitFactor
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.HomConjEquivMemHomAt
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.XiTopInvariant
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.IntAtFormOfMemStdAt
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.PhiTopSource
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.PhiTopTargetGen
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.PhiTopTargetSym
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.PhiTopTargetTwist
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0155
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0174
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0177
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0173
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0176
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0175
 
 @[expose] public section
 

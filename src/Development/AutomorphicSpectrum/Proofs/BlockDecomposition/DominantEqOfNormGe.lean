@@ -1,6 +1,6 @@
 module
 
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IsCliff
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0360
 
 @[expose] public section
 

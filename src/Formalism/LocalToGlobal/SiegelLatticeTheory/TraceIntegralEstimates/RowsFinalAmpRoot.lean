@@ -1,9 +1,9 @@
 module
 
-public import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.AmpRelAtPt
-public import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.AmpRootJac
-public import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.AmpRootHaar
-public import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.AmpOrbQuot
+public import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.Bundle0026
+public import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.Bundle0028
+public import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.Bundle0031
+public import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.Bundle0029
 public import Formalism.SharpRestriction.CuspSpanNormBounds.FrobeniusCoefficientMemLp.AmpRootCut
 public import Formalism.SharpRestriction.CuspSpanNormBounds.BridgeCSB
 

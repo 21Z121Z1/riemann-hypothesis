@@ -1,16 +1,16 @@
 module
 
-public import Formalism.SizeWindowBrackets.FrameTraceRatioFinEquiv
+public import Formalism.SizeWindowBrackets.Bundle0004
 public import Formalism.HarderNarasimhan.ShiftInvariance
 public import Formalism.SizeWindowBrackets.ChainSlopeWindows.TraceConjTransposeMulSelf
-public import Formalism.SizeWindowBrackets.SlopeExcessBoundExponentZero
-public import Formalism.SizeWindowBrackets.RealSlopeBoundsSplit
+public import Formalism.SizeWindowBrackets.Bundle0002
+public import Formalism.SizeWindowBrackets.Bundle0001
 public import Mathlib.Tactic.Linarith
 public import Mathlib.Tactic.FieldSimp
 public import Mathlib.Tactic.NormNum
 public import Mathlib.Tactic.Ring
 public import Mathlib.Data.Fintype.BigOperators
-public import Formalism.RankGapBounds.RankGapProofs.WeightedMeanData
+public import Formalism.RankGapBounds.RankGapProofs.Bundle0001
 public import Formalism.SizeWindowBrackets.ChainSlopeWindows.ExistsNsmulMem
 
 @[expose] public section

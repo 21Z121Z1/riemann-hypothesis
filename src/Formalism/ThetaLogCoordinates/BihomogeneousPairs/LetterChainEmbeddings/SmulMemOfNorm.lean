@@ -1,6 +1,6 @@
 module
 
-public import Formalism.MahlerMeasure.LevelLattice
+public import Formalism.MahlerMeasure.Bundle0008
 public import Formalism.MahlerMeasure.MahlerMeasureProofs.PhiInt
 public import Formalism.ThetaLogCoordinates.BihomogeneousPairs.LetterChainEmbeddings.TieFPowMulFree
 

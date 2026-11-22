@@ -3,16 +3,29 @@ module
 public import Mathlib
 public import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.SatakeExponents.SatakeRigidity.ThetaOfCsdR
 public import Development.WeilBound.CoreStatements.AutomorphicKernels.IsobaricBaseChange.IntegralCoefficientBaseChange.ResidualRigidity.AllPlaceRigidityResidual
-public import Development.WeilBound.RepresentationTheoryGL.ResidualSpectrum.SliceTensors.PInfAsc
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HasSatGLOfInvT
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.InfinitesimalCharacterConjugateStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsInvariantHermitianFormStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsRightHaarMeasureStatement
+public import Development.WeilBound.RepresentationTheoryGL.ResidualSpectrum.SliceTensors.Bundle0007
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1033
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0562
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0513
+public import Formalism.RealPlaceAnalysis.Bundle0004
+public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.SubsingletonRankZero
+public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.T2SpaceAdelicGeneralLinearGroupNumberField
+public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.Bundle0008
+public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.CuspDiscreteDecompositionGL
+public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisGeometry₂.Bundle0004
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0147
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.FinGLMemOfPow
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0114
+public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.Bundle0002
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0002
+public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.DiscreteSpectrumGLTwoOfCuspidalSpectrum
+public import Development.WeilBound.CoreStatements.TemperedRepresentationTheory.ClozelPurity.EopV
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0495
 public import Development.WeilBound.RepresentationTheoryGL.ConstantTermFiniteness.LieInvariants.InvariantOfLieOneLEqZero
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsContinuousRetractionOntoUnitaryLocalPoints
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PlaceConjugationPropertiesCmField
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0214
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1277
 public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsSplitAtOfIsSplitPl
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.EqOfNodupSumMultisetOfEq
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0009
 
 @[expose] public section
 
@@ -166,10 +179,10 @@ theorem rCuspCsd : RCuspCsd := by
       (ComplexEmbedding.conjugate τ) _ (D.inf i _)
     obtain ⟨m2, hm2, e2⟩ := infAsc_holds E (D.N (s0 i)) (A (s0 i)) (Dd (s0 i)) (D.V (s0 i)) (PP (s0 i))
       (D.discrete _) (hE _) τ _ (D.inf _ τ)
-    obtain ⟨μ, hμ1, hμ2⟩ := GlobalTheory.T.exists_right_haar_measure E (A i)
+    obtain ⟨μ, hμ1, hμ2⟩ := _root_.GlobalTheory.CompanionTheory.AdelicHaar.exists_haar_rightInvariant E (A i)
     have := hμ1
     have := hμ2
-    obtain ⟨B, hB⟩ := GlobalTheory.T.exists_invariant_hermitian_form PositivityTheory.Rg.HF.GL.cuspFormsBoundedGL E (A i) μ (PP i) (hN i)
+    obtain ⟨B, hB⟩ := _root_.GlobalTheory.CompanionTheory.ClozelHerm.exists_isHerm PositivityTheory.Rg.HF.GL.cuspFormsBoundedGL E (A i) μ (PP i) (hN i)
     have hconj := GlobalTheory.T.infinitesimal_character_conjugate E (A i) (PP i) B hB τ m0 m1 hm0 hm1
     have hθ := hasInfChar_of_sigma (hs0 i).1 (hasInfChar_thetaSub (PP i) τ m1 hm1)
     have hmem : ∀ z ∈ m0, z + (spehExp (Dd i) ⟨0, hDd i⟩ : ℂ) ∈ D.m i τ := fun z hz => by

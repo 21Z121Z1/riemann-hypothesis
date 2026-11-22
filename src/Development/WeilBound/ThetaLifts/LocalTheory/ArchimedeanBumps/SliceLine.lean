@@ -3,7 +3,7 @@ module
 public import Development.WeilBound.ThetaLifts.LocalTheory.ArchimedeanBumps.TracePiReal
 public import Development.WeilBound.ThetaLifts.LocalTheory.ArchimedeanBumps.SliceAn
 public import Development.WeilBound.ThetaLifts.SmallCones.ExpAlg
-public import Development.WeilBound.ThetaLifts.LeviDeterminants.MixedModels.PlaneAd
+public import Development.WeilBound.ThetaLifts.LeviDeterminants.MixedModels.Bundle0001
 public import Development.WeilBound.ThetaLifts.CartanFactorisation.TensOfEval
 
 @[expose] public section

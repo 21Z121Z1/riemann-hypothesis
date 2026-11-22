@@ -1,10 +1,10 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.GoodChi
+public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.Bundle0013
 public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.NormEqZpowOfMemMaxUnramifiedSubfield
 public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ResEqIff
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.NormPowSubPowLe
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0016
 
 @[expose] public section
 

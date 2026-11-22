@@ -2,9 +2,9 @@ module
 
 public import Mathlib
 public import Formalism.SharpRestriction.CuspSpanNormBounds.FractionFieldToGenericStalkAlgebraMapEq
-public import Development.AbelianVarietyTheory.Definitions.Foundations.IsHermND
+public import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0007
 public import Development.AbelianVarietyTheory.Proofs.HermitianTraceForms.ExistsGlIsometryCompEqOfNondegenerate
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.IsIntegralValIntegerIff
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0023
 
 @[expose] public section
 

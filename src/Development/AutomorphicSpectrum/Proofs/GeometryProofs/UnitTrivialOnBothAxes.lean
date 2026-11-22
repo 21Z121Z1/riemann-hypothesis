@@ -1,10 +1,10 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.SqMap
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ProperHasPowerFns
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0085
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0084
 public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ExistsNormalisedGen
-public import Development.AbelianVarietyTheory.Proofs.HomogeneousIdeals.ExistsAppTopEqOfEffectiveEpi
+public import Development.AbelianVarietyTheory.Proofs.HomogeneousIdeals.Bundle0001
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.SABBaseChangeSt
 
 @[expose] public section

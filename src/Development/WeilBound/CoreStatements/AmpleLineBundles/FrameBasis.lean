@@ -1,9 +1,9 @@
 module
 
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LieLatticeEvalAtLocalRing
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LatticeFrameSpecializes
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0141
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0144
 public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.SegreChartBundle
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.CoordsAtSmul
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0094
 
 @[expose] public section
 
@@ -37,7 +37,7 @@ theorem lat_val (X : Scheme.{0}) (G : Over X) [GrpObj G] [IsCommMonObj G] (Ω : 
           Submodule.span R (Set.range fun k => j (b k)) = ⊤) := by
     subst hz
     letI := φ.toAlgebra
-    obtain ⟨j, h1, h2, h3⟩ := GlobalTheory.T.lie_model_base_change_map S G A R x E F M N
+    obtain ⟨j, h1, h2, h3⟩ := _root_.GlobalTheory.CompanionTheory.Ar.lieModel_baseChange S G A R x E F M N
     exact ⟨j, h1, h2, fun hs n b => (h3 hs n b).2⟩
   obtain ⟨EA, _, _, ⟨MA⟩⟩ := lieModel_exists X G (X.presheaf.stalk (centre z)) (X.fromSpecStalk (centre z))
   obtain ⟨j, hj, hjs, hjb⟩ := exists_base (A := X.presheaf.stalk (centre z)) (Scheme.stalkClosedPointTo z).hom _ z
@@ -87,7 +87,7 @@ theorem lat_val (X : Scheme.{0}) (G : Over X) [GrpObj G] [IsCommMonObj G] (Ω : 
     change j (q.symm (a • q b)) = _ • j (q.symm (q b))
     rw [this, q.symm_apply_apply, q.symm_apply_apply]
     exact hjs s b
-  · obtain ⟨hfin, hproj, -⟩ := GlobalTheory.T.lie_model_finite_base_change X G (X.presheaf.stalk (centre z)) (X.fromSpecStalk (centre z)) EA MA
+  · obtain ⟨hfin, hproj, -⟩ := _root_.GlobalTheory.CompanionTheory.Ar.LieProj.lie_finite_projective_baseChange X G (X.presheaf.stalk (centre z)) (X.fromSpecStalk (centre z)) EA MA
     have : Module.Free (X.presheaf.stalk (centre z)) EA := Module.free_of_flat_of_isLocalRing
     let n := Module.finrank (X.presheaf.stalk (centre z)) EA
     let b : Module.Basis (Fin n) (X.presheaf.stalk (centre z)) EA := Module.finBasis _ EA
@@ -244,7 +244,7 @@ theorem co_map [IsCommMonObj G] (τ : ℂ →+* ℂ) (M : LieModel G ξ Li) (B :
           Submodule.span R (Set.range fun k => j (b k)) = ⊤) := by
     subst hz
     letI := φ.toAlgebra
-    obtain ⟨j, h1, h2, h3⟩ := GlobalTheory.T.lie_model_base_change_map S G A R x E F M N
+    obtain ⟨j, h1, h2, h3⟩ := _root_.GlobalTheory.CompanionTheory.Ar.lieModel_baseChange S G A R x E F M N
     exact ⟨j, h1, h2, fun hs n b => (h3 hs n b).2⟩
   obtain ⟨V', _, _, ⟨M'⟩⟩ := lieModel_exists X G ℂ z'
   obtain ⟨j, hj, hjs, -⟩ := exists_base τ z z' hz Mz M'
@@ -302,7 +302,7 @@ theorem co_val [IsCommMonObj G] [Smooth G.hom] (hξ : IsCptGen ξ) (M : LieModel
           Submodule.span R (Set.range fun k => j (b k)) = ⊤) := by
     subst hz
     letI := φ.toAlgebra
-    obtain ⟨j, h1, h2, h3⟩ := GlobalTheory.T.lie_model_base_change_map S G A R x E F M N
+    obtain ⟨j, h1, h2, h3⟩ := _root_.GlobalTheory.CompanionTheory.Ar.lieModel_baseChange S G A R x E F M N
     exact ⟨j, h1, h2, fun hs n b => (h3 hs n b).2⟩
   obtain ⟨V, _, _, ⟨Mz⟩⟩ := lieModel_exists X G ℂ z
   obtain ⟨β, hβ, hβ'⟩ := frame_basis hξ M B z h hB Mz

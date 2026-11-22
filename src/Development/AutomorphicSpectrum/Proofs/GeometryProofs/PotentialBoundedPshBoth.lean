@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Development.AutomorphicSpectrum.Definitions.MetricPeriods.IsTwiceDifferentiableAt
-public import Development.AutomorphicSpectrum.Proofs.MetricProofs.SectionBoundaryClosedAndCodense
+public import Development.AutomorphicSpectrum.Proofs.MetricProofs.Bundle0012
 
 @[expose] public section
 

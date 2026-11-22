@@ -2,9 +2,9 @@ module
 
 public import Development.WeilBound.ThetaLifts.LocalTheory.ConeShifts.ExtendByZeroOnSubsetApplyCoe
 public import Development.WeilBound.ThetaLifts.LocalTheory.ConeShifts.FubTate
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.OrdLEqNegLog
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.NormCmExtensionSplitPlaceEqZpow
-public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.IntegralFiniteAdeleCompactClosedMultiples
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0086
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0088
+public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.Bundle0058
 
 @[expose] public section
 

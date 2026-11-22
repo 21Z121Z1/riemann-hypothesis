@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsQuasiInv
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2069
 
 @[expose] public section
 

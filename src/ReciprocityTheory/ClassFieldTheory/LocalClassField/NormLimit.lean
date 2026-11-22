@@ -3,7 +3,7 @@ module
 public import Mathlib
 public import ReciprocityTheory.ClassFieldTheory.LocalClassField.RecPairDefs
 public import ReciprocityTheory.ClassFieldTheory.LocalClassField.PairKEqZeroOfMemNormGrp
-public import ReciprocityTheory.ClassFieldTheory.LocalClassField.RestrictedMultiplicativeH1Subsingleton
+public import ReciprocityTheory.ClassFieldTheory.LocalClassField.Bundle0007
 
 @[expose] public section
 

@@ -2,12 +2,12 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Proofs.GenericRegularity.ExistsRealisationPrimeDataCurveLifting
-public import Formalism.LocalToGlobal.ProjectiveLattices.RegXInst
-public import Formalism.LocalToGlobal.ProjectiveLattices.CurveLocInst
-public import Formalism.LocalToGlobal.ProjectiveLattices.LocRingPf
-public import Formalism.LocalToGlobal.ProjectiveLattices.TieInst
-public import Formalism.LocalToGlobal.ProjectiveLattices.RealPtPf
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PullbackSections.NoCommonZeroSt
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0035
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0043
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0041
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0037
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0039
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PullbackSections.Bundle0013
 
 @[expose] public section
 

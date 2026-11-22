@@ -1,23 +1,23 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FiltGraded
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.AbPartActIsAdj
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.FormallyUnramifiedEtaleCompletion
-public import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.IsSymmetricOfSymmetryGenerator
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2939
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0534
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0570
+public import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.Bundle0028
 public import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.IsAbelianSchemeAndExtendOfGenericHoms
-public import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.ExistsEqNsmul
-public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.RankMulFinrank
+public import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.Bundle0040
+public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0103
 public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.TorsionSectionExtendsAbLocus
-public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.DeterminantConditionSpreadsOfDensePoints
-public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.AdmBaseOfCompleteDvr
-public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.LinearUniformisationTorsionIsomorphism
-public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.AllUniformizationLawsHold
+public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0075
+public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0202
+public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0212
+public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.Bundle0133
 public import Development.AbelianVarietyTheory.Proofs.HomogeneousIdeals.GenericExistsUniqueOActOfIsGrpPullback
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsSiegelObjectLoweredLevel
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LevelPointsCompatOfTateIsometriesStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsGradedTateIsoLowerDatumStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TateIsoSpreadGenericNoetherianDomainStatement
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1962
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle3033
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2980
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2970
 
 @[expose] public section
 
@@ -385,7 +385,7 @@ theorem exists_lowObj : ∀ {E : Type} [Field E] [NumberField E] [IsCMField E] {
         · rintro _ ⟨p, rfl⟩
           exact ⟨F0, inferInstance, inferInstance, inferInstance, jFK (R := R) F0 ≫ jK R, lowF C F0, ⟨p, rfl⟩,
             jFR_lowS C F0, hdet0⟩
-        obtain ⟨I, hIζ, hIev⟩ := GlobalTheory.T.tateIso_spread_generic_noetherian_domain D' R C.P.D.toPre.P (fun a => C.P.oD.onB.act a) (KA (lowLevel l)) (lowS C)
+        obtain ⟨I, hIζ, hIev⟩ := _root_.GlobalTheory.LowDat.tateIso_spread D' R C.P.D.toPre.P (fun a => C.P.oD.onB.act a) (KA (lowLevel l)) (lowS C)
           (baseKA (lowLevel l)).ζ l.M' hM hg sA F0 (jFK (R := R) F0 ≫ jK R) (lowF C F0) (dense_jFR R F0)
           (jFR_lowS C F0) J0 hζ0 hsA k x β hx
         refine ⟨I, hIζ, hIev, fun w hw => ?_⟩

@@ -1,6 +1,6 @@
 module
 
-public import Formalism.SharpRestriction.GrowthBounds.ChartRank.HypVin
+public import Formalism.SharpRestriction.GrowthBounds.ChartRank.Bundle0001
 public import Formalism.SharpRestriction.GrowthBounds.ChartComparison.LocCore
 
 @[expose] public section

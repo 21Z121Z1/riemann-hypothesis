@@ -1,6 +1,6 @@
 module
 
-public import Formalism.PeriodIntegrals.LatLocGlob
+public import Formalism.PeriodIntegrals.Bundle0004
 public import Lemmata.GeneralBFactThirdBisAlt.Imports
 
 @[expose] public section

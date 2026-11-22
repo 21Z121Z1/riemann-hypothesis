@@ -1,7 +1,7 @@
 module
 
 public import Formalism.SharpRestriction.GrowthBounds.MultisetValuation.EaRestSExpVOf
-public import Formalism.SharpRestriction.GrowthBounds.MultisetValuation.EaNuTwoLeOne
+public import Formalism.SharpRestriction.GrowthBounds.MultisetValuation.Bundle0003
 public import Formalism.ThetaLogCoordinates.UniformThetaSubstitution.FrobeniusLiftNorms.EGaussK
 
 @[expose] public section

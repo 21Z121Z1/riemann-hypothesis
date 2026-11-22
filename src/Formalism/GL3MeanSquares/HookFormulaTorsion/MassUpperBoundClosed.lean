@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Formalism.GL3MeanSquares.MassLowerBoundClosed
+public import Formalism.GL3MeanSquares.Bundle0005
 public import Formalism.GL3MeanSquares.GenusMeanAsymptotics.UnimodularClassRepresentatives.SiegelMassRatioOfLI
 public import Formalism.HermitianLattices.HermitianLatticesProofs.MassTelescope
 public import Formalism.LogVandermondeBounds.HookGammaAmgmMultinomialBounds

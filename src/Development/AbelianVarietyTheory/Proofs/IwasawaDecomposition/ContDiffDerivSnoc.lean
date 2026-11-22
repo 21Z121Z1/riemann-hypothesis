@@ -1,16 +1,16 @@
 module
 
 public import Mathlib
-public import Formalism.LocalToGlobal.IndefiniteReal.DatumVec
+public import Formalism.LocalToGlobal.IndefiniteReal.Bundle0016
 public import Formalism.LocalToGlobal.IndefiniteReal.SubgroupCharExtensionOneApply
 public import Formalism.LocalToGlobal.IndefiniteReal.ScalarOnPartsFull
 public import Formalism.LocalToGlobal.IndefiniteReal.OrthogonalComplementCharacterisation
 public import Formalism.LocalToGlobal.IndefiniteReal.IndefiniteWeightData
 public import Formalism.LocalToGlobal.IndefiniteReal.HeckeTupleStatement
-public import Formalism.LocalRingCardinality.DataExtra
+public import Formalism.LocalRingCardinality.Bundle0007
 public import Development.AbelianVarietyTheory.Proofs.HeightProofs.IsCuspFunIffConstTerm
-public import Development.AbelianVarietyTheory.Proofs.HeightProofs.UnitaryAdelicHeightCosetLeNormInfPow
-public import Development.AbelianVarietyTheory.Counterexamples.HeightSurvey.ConjAtFixedIff
+public import Development.AbelianVarietyTheory.Proofs.HeightProofs.Bundle0031
+public import Development.AbelianVarietyTheory.Counterexamples.HeightSurvey.Bundle0003
 
 @[expose] public section
 

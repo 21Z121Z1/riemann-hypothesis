@@ -1,6 +1,6 @@
 module
 
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.JDomBoundOfNnMaj
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0030
 public import Formalism.HermitianCurvature.HermitianCurvatureProofs.BetaSesquilinearity
 
 @[expose] public section

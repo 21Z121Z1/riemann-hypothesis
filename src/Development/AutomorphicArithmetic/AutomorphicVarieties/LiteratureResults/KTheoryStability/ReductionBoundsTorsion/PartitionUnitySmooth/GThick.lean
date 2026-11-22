@@ -1,10 +1,10 @@
 module
 
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.LiteratureResults.KTheoryStability.ReductionBoundsTorsion.PartitionUnitySmooth.Smoothing
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.HermiteNormalForms.Exbasis
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.HermiteNormalForms.Bundle0002
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.HermiteNormalForms.Hnf
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.HermiteNormalForms.Detlow
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.HermiteNormalForms.Hadam
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.HermiteNormalForms.Bundle0005
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.HermiteNormalForms.Bundle0001
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.HermiteNormalForms.Rypos
 
 @[expose] public section

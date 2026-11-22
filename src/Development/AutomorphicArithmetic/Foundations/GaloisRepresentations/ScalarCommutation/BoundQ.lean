@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsPowMemConj
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0878
 
 @[expose] public section
 

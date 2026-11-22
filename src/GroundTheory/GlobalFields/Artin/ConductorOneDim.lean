@@ -3,7 +3,7 @@ module
 public import Mathlib
 public import GroundTheory.GlobalFields.Artin.ConductorInflation
 public import GroundTheory.GlobalFields.Artin.OneDim
-public import GroundTheory.LocalFields.ArtinConductorAbelian
+public import GroundTheory.LocalFields.Bundle0018
 public import GroundTheory.LocalFields.SeparableClosure
 
 @[expose] public section

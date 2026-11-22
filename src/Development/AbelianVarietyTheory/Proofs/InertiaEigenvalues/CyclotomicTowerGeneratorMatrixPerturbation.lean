@@ -2,11 +2,11 @@ module
 
 public import Mathlib
 public import Formalism.SharpRestriction.LevelLetterCocycles.DataNLoc
-public import Development.AbelianVarietyTheory.Definitions.Foundations.HTBasis
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.NormPrimitiveRootPrimePowSubOnePadicComplex
+public import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0010
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0138
 public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.TateDecompositionCompletedCyclotomicIntegers
 public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsTateOperatorLevelComplement
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.NormPowSubOneLe
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0036
 
 @[expose] public section
 

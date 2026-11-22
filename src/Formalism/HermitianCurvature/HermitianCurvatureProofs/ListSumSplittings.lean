@@ -1,6 +1,6 @@
 module
 
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.ExponentWordRecursion
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0041
 
 @[expose] public section
 

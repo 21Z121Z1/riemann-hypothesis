@@ -2,8 +2,8 @@ module
 
 public import Mathlib
 public import Formalism.SharpRestriction.Divisibility.SchurIrreducible
-public import Formalism.LocalToGlobal.BesselHermitianTheta.DefsReal
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.EqOneOfSmulHaarEq
+public import Formalism.LocalToGlobal.BesselHermitianTheta.Bundle0001
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0279
 
 @[expose] public section
 

@@ -4,21 +4,20 @@ public import Mathlib
 public import Development.WeilBound.CoreStatements.TemperedRepresentationTheory.RegularClassTraces.RegClassFin
 public import Development.WeilBound.ThetaLifts.Reductions.SiegelCore
 public import Development.WeilBound.ThetaLifts.Reductions.SiegelOfCore
-public import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.ConstantTermVanishing
-public import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.CuspidalNoRadicalFixed
-public import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.StandardMaximalParabolic
+public import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.Bundle0020
+public import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.Bundle0022
+public import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.Bundle0016
 public import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.CentralizerTensorForms
 public import Development.AbelianVarietyTheory.Definitions.Foundations.ExistsAuxiliaryPlaceNotMemFinset
-public import Development.AbelianVarietyTheory.BlockTheory.TorsionBlocks.IwahoriSubgroup
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.KernelLocallyFiniteContinuous
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IntegrableDescendOfCover
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SiegelCompactTranslateBound
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IsIsoFrameFirstCols
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FiniteLatticePointsInSiegelSetBoundStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.RegularSemisimpleConjugateUnipotentTranslateStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MemParabolicOfFlagPreservingStatement
+public import Development.AbelianVarietyTheory.BlockTheory.TorsionBlocks.Bundle0001
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0296
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0481
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0505
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0497
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.RegularSemisimpleConjugateUnipotentTranslate
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0502
 public import Development.WeilBound.RepresentationTheoryGL.LimitMultiplicityWeights.RegularClassIntegrals.DecayFinal
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ConeIntegralFiniteLargeExponentStatement
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0494
 
 @[expose] public section
 
@@ -259,7 +258,7 @@ theorem class_bound {X Y : Matrix (Fin V.rank) (Fin r) D.host.E} (hW : IsWittFra
   have hWc : IsCompact W := hC₀.mul hK
   set C₁ : Set (GA D V) := W * tsupport f * W⁻¹ with hC₁
   have hC₁c : IsCompact C₁ := (hWc.mul hS).mul hWc.inv
-  obtain ⟨A₁, B₁, hcnt⟩ := GlobalTheory.T.finite_lattice_points_in_siegel_set_bound D V r X Y hW c hc C₁ hC₁c
+  obtain ⟨A₁, B₁, hcnt⟩ := _root_.GlobalTheory.CompanionTheory.TorusCount.torus_count D V r X Y hW c hc C₁ hC₁c
   have hdec := fun j : Fin r => MainStatements.WeightKernel.Dec.decay_holds D V r X Y hW c hc j f hf
     (hcusp _ (IsoFlag.proper_single _)) (W⁻¹ * C₁) W (hWc.inv.mul hC₁c) hWc
   choose A hA using hdec
@@ -356,11 +355,11 @@ theorem class_bound {X Y : Matrix (Fin V.rank) (Fin r) D.host.E} (hW : IsWittFra
       exact lt_of_le_of_lt (by gcongr) hρR
     have hstab : ∀ δ, h δ ≠ 0 → δ ∈ (frameFlag (isIsoFrame_firstCols hW j)).parRat D.sp.cm := by
       intro δ hδ
-      exact GlobalTheory.T.mem_parabolic_of_flag_preserving D V r X Y hW j δ
+      exact _root_.GlobalTheory.CompanionTheory.RegInt.mem_parRat_frameFlag_firstCols D V r X Y hW j δ
         (ht1 p hp t ht a ha k hk δ (subset_tsupport f hδ) j hc1 hc2)
     have hmul : ∀ δ ∈ Cl, h δ ≠ 0 → ∀ ν ∈ (frameFlag (isIsoFrame_firstCols hW j)).unipRat D.sp.cm, δ * ν ∈ Cl := by
       intro δ hδ hne ν hν
-      obtain ⟨g, hg⟩ := GlobalTheory.T.regular_semisimple_conjugate_unipotent_translate D V _ _ (isIsoFrame_firstCols hW j) δ (regSS_of_conj hδ hreg) (hstab δ hne) ν hν
+      obtain ⟨g, hg⟩ := _root_.GlobalTheory.CompanionTheory.ParabConj.conj_translate D V _ _ (isIsoFrame_firstCols hW j) δ (regSS_of_conj hδ hreg) (hstab δ hne) ν hν
       exact IsConj.trans hδ (isConj_iff.2 ⟨g, hg⟩)
     have hT' : T ≤ ρ ^ (r * r) := prod_max_le tpos hρ1 hall
     set β : ℝ := B₂ * T ^ A₂ * ρ⁻¹ ^ m' with hβ
@@ -425,7 +424,7 @@ theorem regClassInt : PositivityTheory.ThKR.SiegelCore → MainStatements.Regula
     continuous_classKernel hfc hfs (rat_mem γ)
   refine GlobalTheory.CompanionTheory.AutCover.integrable_descend_of_cover D V μ _ hcl.measurableSet hcov _ (fun δ hδ x => GlobalTheory.IndefiniteRowSideFullHecke.NonFieldTypeVanishingAlt.classKernel_mul _ _ hδ x)
     hcont.measurable ?_
-  obtain ⟨m₀, hm₀⟩ := GlobalTheory.T.cone_integral_finite_large_exponent D.host.F V.rank r c hc
+  obtain ⟨m₀, hm₀⟩ := _root_.GlobalTheory.CompanionTheory.ConeInt.lintegral_cone_lt_top D.host.F V.rank r c hc
   obtain ⟨B, hB0, hB⟩ := class_bound hWF hK hΩ hΩP hc hconj hf hcusp hreg m₀
   refine ⟨hcont.aestronglyMeasurable, ?_⟩
   have hm := hm₀ m₀ le_rfl

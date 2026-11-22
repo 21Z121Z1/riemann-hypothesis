@@ -2,10 +2,12 @@ module
 
 public import Mathlib
 public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.PotentialsBoundedRegSettingEqReference
-public import GroundTheory.HeightsAndTheta.Heights.Regularisation.BoundedStatements
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.InterSt
-public import Development.AutomorphicSpectrum.Proofs.MetricProofs.ExistsAnalyticLogResolutionStatement
-public import Development.AutomorphicSpectrum.Proofs.MetricProofs.MultiprojectivePointsNonemptyStatement
+public import GroundTheory.HeightsAndTheta.Heights.Regularisation.Bundle0002
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.Bundle0006
+public import Development.AutomorphicSpectrum.Proofs.MetricProofs.ExistsAnalyticLogResolution
+public import Development.AutomorphicSpectrum.Definitions.MetricPeriods.Pull1
+public import Development.AutomorphicSpectrum.Statements.MetricStatements.AgreementIffGuarded
+public import Development.AutomorphicSpectrum.Proofs.MetricProofs.Bundle0083
 
 @[expose] public section
 
@@ -170,5 +172,5 @@ theorem LevelTowerAlt.nonempty_component_model : ∀ (K : Type) [Fintype K] (J :
     refine ⟨i, fun h0 => hi ?_⟩
     rw [mCoordIdeal, RingHom.mem_ker, mConeMap]
     simp [h0]
-  obtain ⟨R⟩ := GlobalTheory.T.exists_analytic_log_resolution K J Ω D.y D.n D.arith D.smoothGeneric
+  obtain ⟨R⟩ := _root_.GlobalTheory.CompanionTheory.Ar.PB.nonempty_anLogRes_of_smoothGenericFibre K J Ω D.y D.n D.arith D.smoothGeneric
   exact LevelTowerAlt.cxModel_of_res R (GlobalTheory.T.multiprojective_points_nonempty K J Ω D.y hy)

@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.BlockTheory.GlobalSignature.StandardDeterminantUnit
+public import Development.AbelianVarietyTheory.BlockTheory.GlobalSignature.Bundle0008
 
 @[expose] public section
 

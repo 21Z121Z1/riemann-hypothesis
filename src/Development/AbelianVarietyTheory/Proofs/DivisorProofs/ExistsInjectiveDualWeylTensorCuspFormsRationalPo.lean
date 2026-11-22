@@ -1,19 +1,22 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Divisors.EigLatLe
-public import Formalism.LocalToGlobal.ProjectiveLattices.LiftLaSpec
-public import Formalism.LocalToGlobal.ProjectiveLattices.FnDefE
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.IdemAtEqOneIff
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.MemSuppOnIffIdemMulOfNatural
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EvalAtMulTriangularIntVec
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EqZeroOfTvalInvertible
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsTensorValueOfTriangularLawStatement
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsFrameRingOverTestRing
-public import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.FramePolynomialEquivariantAndNeZero
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0045
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0013
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0044
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0330
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0331
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0791
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0790
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsTensorValueOfTriangularLaw
+public import Development.AbelianVarietyTheory.Definitions.Divisors.IsAdelicOne
+public import Formalism.LocalToGlobal.CMDeterminantIdeals.Bundle0001
+public import Formalism.PolynomialDimension.Bundle0001
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0026
+public import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.Bundle0062
 public import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.ExistsEqProdBlockDetPolyPowMul
-public import Development.AbelianVarietyTheory.Proofs.TorusHaarMeasure.ExistsCompactOfDefinite
-public import Development.AbelianVarietyTheory.Proofs.TorusHaarMeasure.PoincarePointwiseStatement
+public import Development.AbelianVarietyTheory.Proofs.TorusHaarMeasure.Bundle0011
+public import Development.AbelianVarietyTheory.Proofs.TorusHaarMeasure.Bundle0036
 
 @[expose] public section
 
@@ -175,7 +178,7 @@ theorem exists_reads (h₀ : LiesOn Z y₀)
 
 theorem exists_coord {f : Rul Xo c} (hf : f ∈ sec Xo c a n) (hs : f ∈ suppOn Z) : ∃ x, Reads Z y₀ a n x f := by
   obtain ⟨G, hG, -⟩ := GlobalTheory.LamT.FieldPoly.exists_isFrPoly_isHomogeneous E H Dw l Xo c c.F y₀ a n f hf
-  obtain ⟨x, hx⟩ := GlobalTheory.T.exists_tensor_value_of_triangular_law _ Dw.mult (part Dw a) c.F G fun y b hy hb => by
+  obtain ⟨x, hx⟩ := _root_.GlobalTheory.TensorValue.exists_tval_of_triangular _ Dw.mult (part Dw a) c.F G fun y b hy hb => by
     have h := GlobalTheory.LamT.evalFr_mul_tri hf hG inferInstance (AlgHom.id c.F c.F) y b (fun τ => (hy τ).isUnit)
       (fun τ => by
         rw [Matrix.det_of_upperTriangular (hb τ).1]

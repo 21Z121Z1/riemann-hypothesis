@@ -1,14 +1,14 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Jets.SupWOfSup
+public import Development.AbelianVarietyTheory.Definitions.Jets.Bundle0002
 public import Development.AbelianVarietyTheory.Definitions.Jets.SumIoPr
 public import Formalism.HermitianCurvature.HermitianCurvatureProofs.NormSqUnitNormalizationLe
 public import CompanionTheory.AutomorphicTheory.BesselWaveGrids.WaveBallEstimateWeightedDualAlt
 public import CompanionTheory.AutomorphicTheory.BesselWaveGrids.WaveInputsOfHypothesesGlobal
 public import CompanionTheory.AutomorphicTheory.PieriRules.InfinitesimalCharacterDiscreteSeries
 public import CompanionTheory.AutomorphicTheory.ZuckermanCommutation.ZuckermanFunctors.ZuckermanGapSmall
-public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.CapelliKFiniteCoefficient
+public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0076
 
 @[expose] public section
 

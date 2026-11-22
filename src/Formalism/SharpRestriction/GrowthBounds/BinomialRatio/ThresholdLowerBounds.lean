@@ -1,6 +1,6 @@
 module
 
-public import Formalism.SharpRestriction.GrowthBounds.BinomialRatio.Transported
+public import Formalism.SharpRestriction.GrowthBounds.BinomialRatio.Bundle0001
 
 @[expose] public section
 

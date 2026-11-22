@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Formalism.PadicSubsetSums.CentralIdempotents.GaloisConjCentralIdempotent
+public import Formalism.PadicSubsetSums.CentralIdempotents.Bundle0002
 public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.GreenLabelCharpoly.IrreducibleCharpolyInv
 
 @[expose] public section

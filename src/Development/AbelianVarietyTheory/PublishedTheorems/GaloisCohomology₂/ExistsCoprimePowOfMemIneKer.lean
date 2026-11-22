@@ -1,11 +1,11 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.ContinuousCycMod
+public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.Bundle0002
 public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.WeilDeligneParamMonodromyEqZeroIff
 public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.TeichmullerInertiaLabelCondition
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ValuationPowApplyDivSubOneLt
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsPowCardEq
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0139
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0018
 
 @[expose] public section
 

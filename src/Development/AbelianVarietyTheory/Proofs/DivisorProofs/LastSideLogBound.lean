@@ -1,11 +1,11 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Divisors.FactorBounds
-public import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.WeightedNormSquareRows
-public import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.OrthogonalNormSquareSum
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CosetRefinement
-public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.NonnegSubOfLt
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0021
+public import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.Bundle0012
+public import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.Bundle0009
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0718
+public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0052
 
 @[expose] public section
 

@@ -1,10 +1,10 @@
 module
 
 public import Mathlib
-public import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.SatakeExponents.UniformizerValuations.FrameReading.FmTools
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FinsumOutOfLe
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LevelFamInf
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IsSat2InvTConj
+public import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.SatakeExponents.UniformizerValuations.FrameReading.Bundle0005
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0409
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0445
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0703
 public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsIsLocCompAndIsLocLoc
 
 @[expose] public section

@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import GroundTheory.GlobalFields.CyclotomicCharacters.Character
-public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.ContinuousToZModPow
+public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0009
 
 @[expose] public section
 

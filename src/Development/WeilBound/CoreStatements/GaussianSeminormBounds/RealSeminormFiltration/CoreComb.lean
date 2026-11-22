@@ -1,7 +1,6 @@
 module
 
-public import Development.WeilBound.CoreStatements.GaussianSeminormBounds.RealSeminormFiltration.CoreShape
-public import Development.WeilBound.CoreStatements.GaussianSeminormBounds.RealSeminormFiltration.CoreCasW
+public import Development.WeilBound.CoreStatements.GaussianSeminormBounds.RealSeminormFiltration.Bundle0003
 
 @[expose] public section
 

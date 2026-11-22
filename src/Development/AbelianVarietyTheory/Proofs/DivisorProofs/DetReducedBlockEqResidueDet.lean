@@ -2,13 +2,12 @@ module
 
 public import Mathlib
 public import Formalism.LocalToGlobal.IndefiniteReal.LinksDefs
-public import Formalism.LocalToGlobal.ProjectiveLattices.FamilyUniformisationBasePointOrthogonalBis
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.FiniteIdeleExistsLocalApprox
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0027
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0288
 public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsFinitePlaceIdempotentBaseChangeAdeles
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsBaseChangeFiniteAdeleRingEquiv
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.HeckeCharEqProdLocalComponentsApproximating
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsNormOneRootCongruentOddHostField
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.CharacterAtDetRootCongOneOddEqOne
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0293
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0292
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0295
 public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IdempotentMulEqZeroOfOrthogonal
 
 @[expose] public section
@@ -27,7 +26,7 @@ theorem finite_root_near (F E : Type) [Field F] [NumberField F] [Field E] [Numbe
     (hww : w * w' = 1 + n * z) :
     ∃ x y : RA F E, x ∈ intHat F E ∧ y ∈ intHat F E ∧ x * y = 1 ∧
       x = u * sg (FiniteAdeleRing (𝓞 F) F) c x ∧ ∃ p ∈ intHat F E, x = w + n * p := by
-  obtain ⟨x₁, hx₁, ⟨y₁, hy₁, hxy₁⟩, hr₁⟩ := GlobalTheory.T.exists_integral_unit_root_norm_one_adele F E c h2 hc hP u huO hu
+  obtain ⟨x₁, hx₁, ⟨y₁, hy₁, hxy₁⟩, hr₁⟩ := _root_.GlobalTheory.AdLat.exists_integral_unit_root F E c h2 hc hP u huO hu
   obtain ⟨e, f, hee, hef, hun⟩ :=
     exists_idem (fun v : HeightOneSpectrum (𝓞 F) => v.adicCompletionIntegers F) n
   obtain ⟨y₀, hy₀⟩ := (unit_of_integral (inclHat F E) (inclHat_integral F E) (e * n) hun ⟨z, hz⟩).exists_right_inv

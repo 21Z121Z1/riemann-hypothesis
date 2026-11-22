@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Formalism.QuotientMetricDivisors.EigenRatHermLcv
+public import Formalism.QuotientMetricDivisors.Bundle0003
 public import Formalism.QuotientMetricDivisors.HermitianTwistDivisors.ConjugateWeightLatticeOfGeneral
 
 @[expose] public section

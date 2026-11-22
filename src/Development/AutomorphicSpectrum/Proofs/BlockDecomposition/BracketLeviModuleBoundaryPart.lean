@@ -1,11 +1,11 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.InjectiveWedgeHighestCoefficient
-public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.LeviActionPreservesSupportDegree
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0375
+public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.Bundle0046
 public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.LeviActionCommutesWithTotalBoundary
-public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.LeviActionIsGlRepresentation
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.BracketWedgeFormula
+public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.Bundle0047
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0385
 
 @[expose] public section
 

@@ -3,8 +3,8 @@ module
 public import Mathlib
 public import Development.WeilBound.CoreStatements.PublishedTheorems.PoitouTateDuality.PtConclOfIsoOf
 public import Development.WeilBound.CoreStatements.TemperedRepresentationTheory.GelfandSpectralNormalisation.NormalisedInvariants.PoitouTateExactSecond
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsInvFamNormalised
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsSubfieldModel
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0533
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0127
 
 @[expose] public section
 

@@ -3,7 +3,7 @@ module
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.Foundations.SamePartIffOfNeZero
 public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.SquarefreeLabelTorusMassSamePartOneFactorLe
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.SquarefreeLabelTorusMassTwoFactorsLe
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0135
 
 @[expose] public section
 

@@ -1,7 +1,7 @@
 module
 
-public import Formalism.SharpRestriction.GrowthBounds.RootWeights.EBeta
-public import Formalism.SharpRestriction.GrowthBounds.RootWeights.ValuationBoundDetPowerFactor
+public import Formalism.SharpRestriction.GrowthBounds.RootWeights.Bundle0001
+public import Formalism.SharpRestriction.GrowthBounds.RootWeights.Bundle0010
 
 @[expose] public section
 

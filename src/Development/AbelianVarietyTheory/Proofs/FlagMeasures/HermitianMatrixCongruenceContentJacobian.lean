@@ -2,13 +2,13 @@ module
 
 public import Mathlib
 public import Formalism.SharpRestriction.CuspSpanNormBounds.FractionFieldToGenericStalkAlgebraMapEq
-public import Development.AbelianVarietyTheory.Definitions.Foundations.IsHermND
+public import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0007
 public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.ComplementReferenceCompactSubgroup
-public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.HermLat
+public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.Bundle0002
 public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.IsPrincipalIdealRingOfHenselian
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsEqZpowMulUnit
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.RelVolMul
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.RelativeLatticeVolumeOfDetValuationStatement
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0029
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0045
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0037
 
 @[expose] public section
 
@@ -222,7 +222,7 @@ theorem cont_congr : ∀ {F : Type} [Field F] [ValuativeRel F] [TopologicalSpace
   have hf' : (f' : _ →ₗ[F] _) = f := LinearMap.coe_equivOfIsUnitDet _
   let W0 : AddSubgroup (Fin m × Fin m → F) := AddSubgroup.pi Set.univ fun _ => (𝒪[F]).toAddSubgroup
   have hW0 : ∀ x, x ∈ W0 ↔ ∀ i, x i ∈ 𝒪[F] := fun x => by simp [W0, AddSubgroup.mem_pi]
-  obtain ⟨h1, h2, h3⟩ := GlobalTheory.T.relative_lattice_volume_of_det_valuation ϖ hϖ (Pi.basisFun F (Fin m × Fin m)) f'
+  obtain ⟨h1, h2, h3⟩ := _root_.GlobalTheory.HL.LatDet.relVol_map ϖ hϖ (Pi.basisFun F (Fin m × Fin m)) f'
     (vE L ϖ (A.det * L.cj A.det) * m) (u ^ m) (by
       rw [hf', hdet, zpow_mul, zpow_natCast]
       conv_lhs => rw [hu]

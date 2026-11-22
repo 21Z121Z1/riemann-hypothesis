@@ -1,13 +1,13 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CosetRefinement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CharacterSumLocalConstantFourth
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CharacterSumLocalConstantSecond
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0718
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0771
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0737
 public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.MemZmuOfPowPred
 public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.MemParahoricOfTrivialReduction
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.IntAtNatCast
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.SumModGPeriodValues
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0057
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0062
 
 @[expose] public section
 

@@ -2,10 +2,10 @@ module
 
 public import Mathlib
 public import Formalism.HermitianCurvature.BesselNonvanishingReduction
-public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.DecLowAndKFinDecayOfGapOfDecAll
+public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0145
 public import Formalism.LocalToGlobal.SiegelLatticeTheory.BesselDiscreteSeries.DecInfPf
 public import Formalism.LocalToGlobal.SiegelLatticeTheory.CasimirReductionTheory.GgExistsAddCharNeOne
-public import Formalism.LocalToGlobal.SiegelLatticeTheory.CasimirReductionTheory.OneParameterDerivatives.Admissible
+public import Formalism.LocalToGlobal.SiegelLatticeTheory.CasimirReductionTheory.OneParameterDerivatives.Bundle0001
 
 @[expose] public section
 

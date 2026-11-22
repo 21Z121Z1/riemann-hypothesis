@@ -1,8 +1,8 @@
 module
 
-public import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.SeparatingAlgebras.LocRho
+public import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.SeparatingAlgebras.Bundle0010
 public import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.SeparatingAlgebras.BlockBoundTheorem
-public import Development.AbelianVarietyTheory.Definitions.Divisors.WtSizeOver
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0045
 
 @[expose] public section
 

@@ -2,7 +2,7 @@ module
 
 public import Development.WeilBound.RepresentationTheoryGL.LimitMultiplicityWeights.RegularClassIntegrals.ClosedGraph
 public import Mathlib.LinearAlgebra.Lagrange
-public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.ImportsSideTer
+public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0033
 
 @[expose] public section
 

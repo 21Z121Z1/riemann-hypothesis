@@ -3,7 +3,7 @@ module
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.PredMemGamRanks
 public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.MemParahoricOfTrivialReduction
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.IntAtNatCast
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0057
 
 @[expose] public section
 

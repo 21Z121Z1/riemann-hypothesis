@@ -1,14 +1,17 @@
 module
 
-public import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.InfinitesimalCharacterLimits.LieSumDecompositions.PNoLogLie
-public import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.InfinitesimalCharacterLimits.LieSumDecompositions.PNoLogOde
-public import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.InfinitesimalCharacterLimits.LieSumDecompositions.PNoLogQ
+public import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.InfinitesimalCharacterLimits.LieSumDecompositions.Bundle0007
+public import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.InfinitesimalCharacterLimits.LieSumDecompositions.Bundle0001
+public import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.InfinitesimalCharacterLimits.LieSumDecompositions.Bundle0006
 public import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.InfinitesimalCharacterLimits.LieSumDecompositions.PSepFacB
 public import Development.WeilBound.RepresentationTheoryGL.ResidualSpectrum.ExponentialNegativity.NormalisedExistence.ExistsNormed
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ConstantTermTranslateFormulaStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ConstantTermAutomorphicCriterionStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.QuantumDeterminantPolynomialCoefficientsStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CapelliOperatorsCommuteStatement
+public import Mathlib
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0335
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0330
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0369
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0354
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0333
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0345
 
 @[expose] public section
 
@@ -119,8 +122,8 @@ theorem trace_ss (hm : ∀ τ, (m τ).Nodup ∧ Multiset.card (m τ) = r + s) (�
   set π := piQ V I
   set c₁ : ℂ := ((r : ℂ) - 1) / 2 - (s : ℂ) / 2 with hc₁
   set c₂ : ℂ := (r : ℂ) / 2 + ((s : ℂ) - 1) / 2 with hc₂
-  obtain ⟨a, ha1, haspan, haeq⟩ := GlobalTheory.T.quantum_determinant_polynomial_coefficients _ r (X1 r s τ) c₁
-  obtain ⟨b, hb1, hbspan, hbeq⟩ := GlobalTheory.T.quantum_determinant_polynomial_coefficients _ s (X2 r s τ) c₂
+  obtain ⟨a, ha1, haspan, haeq⟩ := _root_.GlobalTheory.CompanionTheory.CTFin.QdetCoeff.qdet_shift_coeff _ r (X1 r s τ) c₁
+  obtain ⟨b, hb1, hbspan, hbeq⟩ := _root_.GlobalTheory.CompanionTheory.CTFin.QdetCoeff.qdet_shift_coeff _ s (X2 r s τ) c₂
   have hqa : ∀ u, Formalism.REAL.qdet (X1 r s τ) (u + c₁) = capR r s τ (u - (s : ℂ) / 2) := fun u => by
     rw [capR_eq]; congr 1; rw [hc₁]; ring
   have hqb : ∀ u, Formalism.REAL.qdet (X2 r s τ) (u + c₂) = capS r s τ (u + (r : ℂ) / 2) := fun u => by
@@ -158,9 +161,9 @@ theorem trace_ss (hm : ∀ τ, (m τ).Nodup ∧ Multiset.card (m τ) = r + s) (�
     rw [e]
     simp [bP]
 
-  have hcRR := fun u v => (GlobalTheory.T.capelli_operators_commute E r s τ u v).1
-  have hcRS := fun u v => (GlobalTheory.T.capelli_operators_commute E r s τ u v).2.1
-  have hcSS := fun u v => (GlobalTheory.T.capelli_operators_commute E r s τ u v).2.2
+  have hcRR := fun u v => (_root_.GlobalTheory.CompanionTheory.CTFin.CapComm.capR_capS_commute E r s τ u v).1
+  have hcRS := fun u v => (_root_.GlobalTheory.CompanionTheory.CTFin.CapComm.capR_capS_commute E r s τ u v).2.1
+  have hcSS := fun u v => (_root_.GlobalTheory.CompanionTheory.CTFin.CapComm.capR_capS_commute E r s τ u v).2.2
   have hcab : ∀ i j, Commute (aP i) (aP j) ∧ Commute (aP i) (bP j) ∧ Commute (bP i) (bP j) := fun i j => by
     refine ⟨commute_val r s m ?_, commute_val r s m ?_, commute_val r s m ?_⟩
     · exact commute_span (fun u v => by rw [hqa, hqa]; exact hcRR _ _) (haspan i) (haspan j)
@@ -291,10 +294,10 @@ theorem ct_mem (hr : 0 < r) (hs : 0 < s) (ψ : Sm E (r + s)) (hψ : IsAutForm ψ
     exact h5 X g
   refine ⟨F, funext fun g => by rw [hF1, hct]; rfl, fun x g => ?_, fun τ u => ?_⟩
   · rw [hF1, hF1]
-    exact GlobalTheory.T.constant_term_translate_formula E (r + s) r ψ hψ.left hψ.level μ 𝓕 hμ h𝓕 x g
+    exact _root_.GlobalTheory.CompanionTheory.CTFin.constTerm_unip_left E (r + s) r ψ hψ.left hψ.level μ 𝓕 hμ h𝓕 x g
   · refine Subtype.ext (funext fun g => ?_)
     have hz : cap τ u ∈ Zalg E (r + s) := Algebra.subset_adjoin ⟨τ, u, rfl⟩
-    have h1 := GlobalTheory.T.constant_term_automorphic_criterion E (r + s) r μ 𝓕 hμ h𝓕 hlie ψ F hψ.left hψ.level hF1 (cap τ u) hz g
+    have h1 := _root_.GlobalTheory.CompanionTheory.CTFin.Central.ct_Zalg E (r + s) r μ 𝓕 hμ h𝓕 hlie ψ F hψ.left hψ.level hF1 (cap τ u) hz g
     rw [(hinf τ).2 u ψ (Submodule.mem_span_singleton_self ψ)] at h1
     rw [h1]
     simp only [Submodule.coe_smul, Pi.smul_apply, smul_eq_mul]

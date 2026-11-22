@@ -3,9 +3,9 @@ module
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.Foundations.AestronglyMeasurableQuotMeasureIffLift
 public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.BaseChangeDefiniteUnitary
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsCompactLatticeGL
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ContinuousOfIsOpenStab
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.DiscreteTopologyRatN
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0602
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0111
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0141
 
 @[expose] public section
 

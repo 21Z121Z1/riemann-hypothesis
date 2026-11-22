@@ -1,12 +1,13 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.EqTopOfTranslates
-public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.ExistsNormLeHeightPow
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.HasDerivAtWeilRepRealOneParamAdelicPointStatement
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsCcrOperatorsThetaFunctions
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsQuadOfNormal
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.FderivEqQuadComm
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0213
+public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.Bundle0007
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0303
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0220
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0235
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0038
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0036
 
 @[expose] public section
 
@@ -236,7 +237,7 @@ theorem exists_generator : ∀ (D : D7) (ψ : AddChar (AF D.host.F) ℂ) (S T : 
   intro D ψ S T χS χT om hom θ hθ τ X hX
   have hψ := hom.std
   obtain ⟨σ, h⟩ := GlobalTheory.RealLineAt.exists_inverse_chart hθ
-  obtain ⟨lam, hl⟩ := GlobalTheory.T.hasDerivAt_weilRep_realOneParam_adelicPoint D θ σ h ψ hψ S T om (GlobalTheory.Ker.isWeak_of_datum hom) hom.om_cont
+  obtain ⟨lam, hl⟩ := _root_.GlobalTheory.Mem.LiftGen.hasDerivAt_om D θ σ h ψ hψ S T om (GlobalTheory.Ker.isWeak_of_datum hom) hom.om_cont
     (fun t => (1, oneP θ T τ X t)) (continuous_const.prodMk (continuous_oneP hθ hX))
     (fun s t => by rw [oneP_add hθ hX, Prod.mk_mul_mk, one_mul])
     (fun t => ⟨one_mem _, (isAtTau_oneP hθ hX t).1⟩) (blk (Pi.single τ X) fun _ => 1) (fun k l => by

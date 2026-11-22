@@ -2,8 +2,8 @@ module
 
 public import Formalism.LocalToGlobal.ProjectiveLattices.ArchimedeanQuadraticData.D6P4Statement
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.FundamentalDomains.MaxBoundPf
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.FundamentalDomains.MajorantConjugateTransfer
-public import Formalism.LocalToGlobal.ProjectiveLattices.EquivariantFiniteGroup
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.FundamentalDomains.Bundle0015
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0019
 
 @[expose] public section
 

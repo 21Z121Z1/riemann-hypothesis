@@ -1,7 +1,6 @@
 module
 
-public import Development.EtaleCohomology.EtaleSheaves.StrictLocalStalks.PolyPO
-public import Development.EtaleCohomology.EtaleSheaves.StrictLocalStalks.FracOf
+public import Development.EtaleCohomology.EtaleSheaves.StrictLocalStalks.Bundle0001
 
 @[expose] public section
 

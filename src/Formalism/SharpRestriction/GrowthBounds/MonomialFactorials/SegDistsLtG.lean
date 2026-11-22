@@ -1,6 +1,6 @@
 module
 
-public import Formalism.SharpRestriction.GrowthBounds.MonomialFactorials.RestTMExists
+public import Formalism.SharpRestriction.GrowthBounds.MonomialFactorials.Bundle0011
 public import Formalism.SharpRestriction.GrowthBounds.MonomialFactorials.RatioConditionOfSegFacts
 
 @[expose] public section

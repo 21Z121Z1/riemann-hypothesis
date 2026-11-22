@@ -1,8 +1,7 @@
 module
 
 public import Formalism.FormalGroupWitt.FormalGroupWittProofs.SolveV
-public import Formalism.FormalGroupWitt.FormalGroupWittProofs.CoeffExpandEqZero
-public import Formalism.FormalGroupWitt.FormalGroupWittProofs.CoeffV
+public import Formalism.FormalGroupWitt.FormalGroupWittProofs.Bundle0001
 public import Formalism.FormalGroupWitt.FormalGroupWittProofs.InvIntV
 public import Formalism.FormalGroupWitt.FormalGroupWittProofs.FunctionalEquationSubstVector
 

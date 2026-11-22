@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import GroundTheory.LocalFields.Interface
-public import GroundTheory.LocalFields.FiniteExtension
+public import GroundTheory.LocalFields.Bundle0002
 public import GroundTheory.LocalFields.Uniqueness
 public import GroundTheory.LocalFields.IntermediateField
 

@@ -2,8 +2,8 @@ module
 
 public import Formalism.LocalToGlobal.ProjectiveLattices.IsCombAt
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.HasArcDataIff
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.IsNsmul
-public import Formalism.LocalToGlobal.ProjectiveLattices.VAtVNeBot
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.Bundle0005
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0010
 
 @[expose] public section
 

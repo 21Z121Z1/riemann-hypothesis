@@ -2,23 +2,21 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.Uniformization.FinrankComplexReal
-public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ExistsUniquePullB
-public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.TensorComponentNeZeroIff
-public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.LineBundleSectionsTorusTorsionWeightSpacesStatement
-public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.AdditionTensorAbelianPartNeZeroIffStatement
-public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.AdditionFormulaAlgClosureWithExpansionsStatement
-public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.AdditionTensorFullLeftSupportStatement
-public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ExistsLinearFourierJacobiExpansionFamilyStatement
-public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ExpFOneDimStatement
-public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.PullbackSectionFamilyNeZeroIffStatement
+public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.Bundle0059
+public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.Bundle0003
+public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.Bundle0107
+public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.Bundle0067
+public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.Bundle0083
+public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.Bundle0077
+public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.Bundle0088
+public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.Bundle0063
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.CubeVal
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.UnifUniqSt
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.IsNsmul
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.QkToAkU
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.Bundle0005
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.Bundle0006
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.DiscreteValuationRings.FamMod
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.DiscreteValuationRings.PhiGenPf
-public import Development.AbelianVarietyTheory.Definitions.Uniformization.PsiScal
-public import Development.AbelianVarietyTheory.Definitions.Uniformization.ExistsUniqueSamePt
+public import Development.AbelianVarietyTheory.Definitions.Uniformization.Bundle0002
 
 @[expose] public section
 
@@ -74,7 +72,7 @@ theorem supp_rel : Laws → Laws2 → (AllPre fun {V} _ _ _ {D} {A} {G} _ _ U =>
   obtain ⟨r, n, t, t', s, s', hr, hexp, hA, hAB⟩ := GlobalTheory.T.additionFormula_algClosure_with_expansions hL hL2 V hV D A G U θ f hθ th s₀ hth hs₀
   obtain ⟨hth0, -, -⟩ := GlobalTheory.T.expF_of_theta_degree_one hL hL2 V hV D A G U θ f hθ th s₀ hth hs₀
   obtain ⟨ex, hex, huniq, hsep, hsupp⟩ := GlobalTheory.T.exists_linear_fourierJacobi_expansion_family hL hL2 V hV D A G U (Kbar V) 2 (by norm_num)
-  obtain ⟨hcut, -, hinj⟩ := GlobalTheory.T.lineBundleSections_torusTorsion_weightSpaces hL hL2 V hV D A G U 2 (by norm_num)
+  obtain ⟨hcut, -, hinj⟩ := _root_.GlobalTheory.UU.Weight.main hL hL2 V hV D A G U 2 (by norm_num)
   obtain ⟨hon, hoff⟩ := GlobalTheory.T.additionTensor_abelianPart_ne_zero_iff V D (Kbar V) s₀ r n s s' hr hAB
   have hcV : CharZero V := hV.2.2
   have hchar : CharZero (FractionRing V) :=
@@ -82,7 +80,7 @@ theorem supp_rel : Laws → Laws2 → (AllPre fun {V} _ _ _ {D} {A} {G} _ _ U =>
   have h2 : (2 : Kbar V) ≠ 0 := two_ne_zero
   let u : Fin n → EA A (jFK (R := V) (Kbar V)) 2 := fun i => SecMod.mk _ (t i)
   let u' : Fin n → EA A (jFK (R := V) (Kbar V)) 2 := fun i => SecMod.mk _ (t' i)
-  have hfull := GlobalTheory.T.additionTensor_full_left_support hL hL2 _ A (Kbar V) (jFK (R := V) (Kbar V)) h2 (SecMod.mk _ th) n u u' hA
+  have hfull := _root_.GlobalTheory.AddTensor.full_left_support hL hL2 _ A (Kbar V) (jFK (R := V) (Kbar V)) h2 (SecMod.mk _ th) n u u' hA
     (fun h => by
       obtain ⟨j, hj⟩ := hth0
       exact hj ((SecMod.eq_zero_iff _).1 h j))
@@ -97,8 +95,8 @@ theorem supp_rel : Laws → Laws2 → (AllPre fun {V} _ _ _ {D} {A} {G} _ _ U =>
     rfl
   have key := component_ne_zero_iff_mod_two (Kbar V) D.X (EA A (jFK (R := V) (Kbar V)) 2)
     (fun α => WB D (Kbar V) 2 α) ex hsep ?_ ?_ _ hfull (fun α β h => (hmap α β).trans (hoff α β h)) a b
-  · rw [hsupp, hsupp, ← key, hmap, hon, GlobalTheory.T.pullbackSectionFamily_ne_zero_iff V D (Kbar V) 1 f s₀ hs₀ a,
-      GlobalTheory.T.pullbackSectionFamily_ne_zero_iff V D (Kbar V) 1 f s₀ hs₀ b]
+  · rw [hsupp, hsupp, ← key, hmap, hon, _root_.GlobalTheory.pullB_ne_zero_iff V D (Kbar V) 1 f s₀ hs₀ a,
+      _root_.GlobalTheory.pullB_ne_zero_iff V D (Kbar V) 1 f s₀ hs₀ b]
   · intro α v
     obtain ⟨v', p, hp, hβ⟩ := hcut α _ _ (hex v)
     refine ⟨SecMod.mk _ v', fun β => ⟨fun h => ?_, fun h => ?_⟩⟩

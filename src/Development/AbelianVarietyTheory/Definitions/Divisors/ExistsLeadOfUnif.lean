@@ -3,8 +3,8 @@ module
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.Divisors.IsProjOverWeierstrass
 public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.IsLinearHomPull
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.DiscreteValuationRings.ThetaArc
-public import Development.AbelianVarietyTheory.Counterexamples.JetSurvey.NotIsThetaOfNonunit
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.DiscreteValuationRings.Bundle0017
+public import Development.AbelianVarietyTheory.Counterexamples.JetSurvey.Bundle0006
 
 @[expose] public section
 

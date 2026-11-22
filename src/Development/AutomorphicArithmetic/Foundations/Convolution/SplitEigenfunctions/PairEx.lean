@@ -1,13 +1,13 @@
 module
 
 public import Development.AutomorphicArithmetic.Foundations.Convolution.SplitEigenfunctions.ProdBd
-public import Development.AutomorphicArithmetic.Foundations.Convolution.SplitEigenfunctions.IILaws
+public import Development.AutomorphicArithmetic.Foundations.Convolution.SplitEigenfunctions.Bundle0008
 public import Development.AutomorphicArithmetic.Foundations.Convolution.SplitEigenfunctions.DerCurve
-public import Development.AutomorphicArithmetic.Foundations.Convolution.SplitEigenfunctions.CoefZero
+public import Development.AutomorphicArithmetic.Foundations.Convolution.SplitEigenfunctions.Bundle0005
 public import Development.AutomorphicArithmetic.Foundations.Convolution.SplitEigenfunctions.MeanZero
-public import Development.AutomorphicArithmetic.Foundations.Convolution.SplitEigenfunctions.UnitsCpt
-public import Development.AutomorphicArithmetic.Foundations.Convolution.RealGroupAnalysis.WeilRepresentation.Stable
-public import Development.AutomorphicArithmetic.Foundations.Convolution.RealGroupAnalysis.UnramifiedSplitting.SpanCont
+public import Development.AutomorphicArithmetic.Foundations.Convolution.SplitEigenfunctions.Bundle0004
+public import Development.AutomorphicArithmetic.Foundations.Convolution.RealGroupAnalysis.WeilRepresentation.Bundle0004
+public import Development.AutomorphicArithmetic.Foundations.Convolution.RealGroupAnalysis.UnramifiedSplitting.Bundle0006
 
 @[expose] public section
 

@@ -3,8 +3,8 @@ module
 public import Mathlib
 public import Formalism.LocalRingCardinality.RhoDetPrimeEqMuTildeMulChiPow
 public import Formalism.LocalRingCardinality.DataDIV
-public import Formalism.SharpRestriction.Divisibility.LatticeTransfer
-public import Formalism.SharpRestriction.Divisibility.PrinLevClass
+public import Formalism.SharpRestriction.Divisibility.Bundle0002
+public import Formalism.SharpRestriction.Divisibility.Bundle0001
 public import Formalism.SharpRestriction.ParamsHeightRankConstant
 
 @[expose] public section

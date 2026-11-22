@@ -1,7 +1,13 @@
 module
 
-public import Development.AutomorphicArithmetic.Foundations.Convolution.SplitEigenfunctions.Entire
-public import PositivityTheory.AutomorphicForms.PublishedInputs.RealGaloisRepresentations.IwahoriSphericalTransfer.HeckeCharacterEqOfCofinite
+public import Development.AutomorphicArithmetic.Foundations.Convolution.SplitEigenfunctions.Bundle0001
+public import Mathlib
+public import PositivityTheory.AutomorphicForms.PublishedInputs.RealGaloisRepresentations.IwahoriSphericalTransfer.Bundle0001
+public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.Bundle0046
+public import PositivityTheory.AutomorphicForms.PublishedInputs.RealGaloisRepresentations.IwahoriSphericalTransfer.FinrankAdjoinSqrtNegOne
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.RealTransport.RealTransport
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.Bundle0006
+public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0025
 
 @[expose] public section
 
@@ -26,7 +32,7 @@ private theorem exists_bad {S : Set (H.P ℚ)} (hS : S.Finite) : ∃ m : ℕ, 0 
     exact Ideal.absNorm_mem _
 
 private theorem quad_sq {E : Type} [Field E] [NumberField E] {η : HChar ℚ} (hq : IsQuadCharOf E η) : η ^ 2 = 1 := by
-  apply GlobalTheory.T.hecke_character_eq_of_cofinite ℚ (η ^ 2) 1
+  apply _root_.GlobalTheory.HeckeMultOne.main ℚ (η ^ 2) 1
   have hc : ∀ᶠ v : H.P ℚ in cofinite, ∃ w : H.P E, w.under (𝓞 ℚ) = v ∧
       η.UnrAt v ∧ η.val v = if normV w = normV v then 1 else -1 := by
     unfold IsQuadCharOf at hq

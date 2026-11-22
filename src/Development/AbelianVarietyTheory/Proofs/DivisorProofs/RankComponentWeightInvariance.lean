@@ -1,60 +1,60 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Divisors.HypothesesX
-public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.InterNumDetNonposSplitTorus
-public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.GrothendieckDeformation
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0071
+public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.Bundle0019
+public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.Bundle0008
 public import Development.AbelianVarietyTheory.Definitions.Divisors.NormNegCmConstantEqAtAllEmbeddings
-public import Formalism.LocalRingCardinality.DataParamsT
-public import Development.AbelianVarietyTheory.Definitions.Divisors.ToKnownTheoremsOf
-public import Development.AbelianVarietyTheory.Definitions.Divisors.CuspIso
-public import Development.AbelianVarietyTheory.Definitions.Divisors.WellChosen
-public import Development.AbelianVarietyTheory.Definitions.Divisors.IntegralBound
-public import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsCoordAtPoints
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NormalizedPointHeightLatticeSmul
+public import Formalism.LocalRingCardinality.Bundle0003
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0059
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0053
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0041
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0042
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0043
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0891
 public import Development.AbelianVarietyTheory.Definitions.Divisors.IsHeightIffOfDegreeEq
 public import Development.AbelianVarietyTheory.Definitions.Divisors.WedgeNrmLeOfWedgeNormLe
-public import Development.AbelianVarietyTheory.Definitions.Divisors.VolMeasureOfAdd
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0048
 public import Development.AbelianVarietyTheory.Definitions.Divisors.MemLevEigenIffTransl
 public import Formalism.LocalToGlobal.IndefiniteForms.IndefiniteTree.RealCubicMeans.LogMeanShares.LogMeanStatements.HSClaim
 public import Development.AbelianVarietyTheory.Definitions.Divisors.GenRatios
 public import Development.AbelianVarietyTheory.Definitions.Divisors.BadElt
 public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.ToroidalCompactificationBis
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DegreeImageBirationalLinearSystemEqSelfInt
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NeBotOfNotMem
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GeometricallyConnectedStr
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FlagSpaceComponentSmoothProjectiveConnected
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AsIdealSpMapClosedPoint
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.VanBdLeSpace
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ToroidalFlagNonempty
-public import Development.AbelianVarietyTheory.Definitions.Divisors.P22
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1446
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1856
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1481
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2365
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1473
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2228
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2481
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0058
 public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.IsLogCanonicalMultipleCanonical
-public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.GeometricallyConnectedOfIsIsoRestrict
+public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.Bundle0004
 public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.DenseInterior
-public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.CrysToDRBijective
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CuspFormsExtendVanishCompactifiedFlagSpaceStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ToroidalIntegralWeightSection
-public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.SiegelToroidalIntegral
-public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.ToroidalChartsForFan
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EqLastAddGaps
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CommonRestrIsoTens
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FlagSpaceComponentSmoothProjectiveConnectedStatement
+public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.Bundle0006
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2714
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2927
+public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.Bundle0012
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1664
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1842
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2440
 public import Development.AbelianVarietyTheory.Proofs.CovolumeBounds.IsProjOverIffIsProperAndExistsIsAmpleLB
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HeadWeightLineNef
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsNefPullLLStepEx
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2452
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2457
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TorusFlagUnitWeightBundlesNef
-public import Development.AbelianVarietyTheory.Definitions.Divisors.CovolXOfCovol
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ToroidalFlagProportionalityOfGoodChernWeilStatement
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0055
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0699
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsEffCartierCompl
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsMulEqOfGenericUniqueComplexPoint
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1847
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WeightPositivityPrincipalisation
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WeightPositivityPrincipalisationDeep
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DivLeSubMulDiv
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsIntegralBaseChangeRationalFunctionFieldFiniteVStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TopologicalKrullDimFieldBaseChangeLeStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ModificationLineBundleGlobalSectionsDimPullEqStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TopSelfIntersectionNefLeCuspFormGrowthStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsIntegralOrIsEmptyGenericMemberLinearSystemStatement
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2950
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1843
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1346
+public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.Bundle0015
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1168
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1692
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1984
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1224
 
 @[expose] public section
 
@@ -202,8 +202,8 @@ theorem exists_step {k : Type} [Field k] {X : Scheme.{0}} [IsIntegral X] [a : Al
   set f' := pullback.snd f (spMap (algebraMap k K))
   letI := algebraΓOfHom f'
   obtain ⟨hpr, -⟩ := (isProjOver_iff_isProper_and_exists_isAmpleLB f).1 hp
-  have := GlobalTheory.T.isIntegral_baseChange_rationalFunctionField_finiteVars k N X _ f f' π H
-  obtain ⟨t, ht, hH⟩ := GlobalTheory.T.isIntegral_or_isEmpty_generic_member_linearSystem k N X _ f f' π H L hLB b hb
+  have := _root_.GlobalTheory.PureTransc.isIntegral_of_isPullback k N X _ f f' π H
+  obtain ⟨t, ht, hH⟩ := _root_.GlobalTheory.GenericMember.isIntegral_or_isEmpty_zeroScheme k N X _ f f' π H L hLB b hb
   have hp' : IsProjOver (strHom K (X := (pullback f (spMap (algebraMap k K))))) := by
     rw [strHom_eq (f := f') fun _ => rfl]
     exact PosBaseChange.isProjOver_of_isPullback H hp
@@ -213,7 +213,7 @@ theorem exists_step {k : Type} [Field k] {X : Scheme.{0}} [IsIntegral X] [a : Al
   set ι := (secIdeal hL' t).subschemeι
   letI := algebraΓAlong K ι
   refine ⟨K, inferInstance, _, algebraΓAlong K ι, ι ≫ π, isProjOver_along hp' ι, ?_, hH, fun B hB => ?_, fun e P hP => ?_⟩
-  · exact dim_zeroScheme_le hL' ht ((GlobalTheory.T.topologicalKrullDim_fieldBaseChange_le k K X _ f f' π H).trans hd)
+  · exact dim_zeroScheme_le hL' ht ((_root_.GlobalTheory.FieldExtDim.topologicalKrullDim_baseChange_le k K X _ f f' π H).trans hd)
   · have h1 := globalSections_dim_le_div_add_restriction hp' hL' (LB.isLB_pull hB π) ht
     have e1 : lbH0 K (B.pull π) = lbH0 k B := FieldChangeInter.hdim_pull H hB 0
     have e2 : lbH0 K ((LB.div B L).pull π) = lbH0 k (LB.div B L) := FieldChangeInter.hdim_pull H (LB.isLB_div hB hLB) 0

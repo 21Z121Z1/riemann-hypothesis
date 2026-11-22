@@ -2,7 +2,7 @@ module
 
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.UnitaryThreeDeformations.IsCharZeroPt
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.HeightAndVanishing.Counts
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.CommutativeAlgebra.OrbitVanishingLocal
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.CommutativeAlgebra.Bundle0003
 public import ReciprocityTheory.Hypotheses.GalCoh
 
 @[expose] public section

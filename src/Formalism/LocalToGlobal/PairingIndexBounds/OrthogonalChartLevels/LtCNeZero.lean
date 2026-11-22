@@ -1,6 +1,6 @@
 module
 
-public import Formalism.LocalToGlobal.GroupLattices.PendingLemmas.CoeffOneLNe
+public import Formalism.LocalToGlobal.GroupLattices.PendingLemmas.Bundle0001
 
 @[expose] public section
 

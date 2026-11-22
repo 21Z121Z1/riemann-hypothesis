@@ -6,9 +6,9 @@ public import Development.AbelianVarietyTheory.Definitions.Divisors.IsHomogeneou
 public import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsResolProjSpace
 public import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsUniqueIsTanFrameOfIsEmpty
 public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.DenseInterior
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FiniteFinrankLineBundleSectionsFiniteEtale
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EvRFrMapOfIsReduced
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.LeastOrderBoundOfOrdTieTriv
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0996
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1380
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0095
 
 @[expose] public section
 

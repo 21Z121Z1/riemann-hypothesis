@@ -1,9 +1,9 @@
 module
 
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.HeightTheory.ValNorm
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.HeightTheory.Bundle0013
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.HeightTheory.ValUFD
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.HeightTheory.HNormA
-public import ReciprocityTheory.SemistableReduction.AlgAll
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.HeightTheory.Bundle0004
+public import ReciprocityTheory.SemistableReduction.Bundle0017
 
 @[expose] public section
 

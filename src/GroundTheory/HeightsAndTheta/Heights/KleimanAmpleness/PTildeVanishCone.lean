@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.AlgebraMapMemChartRingLine
-public import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.PTildeTailLoc
+public import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.Bundle0030
 
 @[expose] public section
 

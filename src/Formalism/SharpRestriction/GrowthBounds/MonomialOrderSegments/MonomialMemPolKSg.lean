@@ -1,6 +1,6 @@
 module
 
-public import Formalism.SharpRestriction.GrowthBounds.MonomialOrderSegments.SubstitutionXFirstEmbedding
+public import Formalism.SharpRestriction.GrowthBounds.MonomialOrderSegments.Bundle0006
 
 @[expose] public section
 

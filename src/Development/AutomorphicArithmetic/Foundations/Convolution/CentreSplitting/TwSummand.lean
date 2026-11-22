@@ -1,7 +1,7 @@
 module
 
-public import Development.AutomorphicArithmetic.Foundations.Convolution.CentreSplitting.DefsTw
-public import Development.AutomorphicArithmetic.Foundations.Convolution.CentreSplitting.TwUnitary
+public import Development.AutomorphicArithmetic.Foundations.Convolution.CentreSplitting.Bundle0001
+public import Development.AutomorphicArithmetic.Foundations.Convolution.CentreSplitting.Bundle0003
 
 @[expose] public section
 

@@ -1,6 +1,6 @@
 module
 
-public import Formalism.LocalToGlobal.IndefiniteReal.FinitePlaces.LinIndepOneDelta
+public import Formalism.LocalToGlobal.IndefiniteReal.FinitePlaces.Bundle0001
 
 @[expose] public section
 

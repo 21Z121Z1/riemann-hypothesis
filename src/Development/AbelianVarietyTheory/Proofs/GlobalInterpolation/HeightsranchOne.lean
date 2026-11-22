@@ -3,7 +3,7 @@ module
 public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.PredMemGamRanks
 public import Formalism.LocalToGlobal.Columns.TiedValLatG
 public import Formalism.LocalToGlobal.Columns.CoefModB
-public import Formalism.LocalToGlobal.KernelLattices.InterlaceAll
+public import Formalism.LocalToGlobal.KernelLattices.Bundle0002
 public import Formalism.LocalToGlobal.KernelLattices.KernelLocalFactors.InterlaceDifferenceShiftInvariant
 
 @[expose] public section

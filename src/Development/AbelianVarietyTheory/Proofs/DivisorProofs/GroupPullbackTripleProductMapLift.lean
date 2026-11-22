@@ -1,12 +1,11 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SecCarriedOver
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SecCarried
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsGeneratorOfTheoremOfCubeTenPoints
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GrpPullbackPointsLiftMulInv
-public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.RigidifiedIsoRespectsCubeAndSymmetry
-public import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.GlobalFnsHolds
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2392
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2348
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2368
+public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.Bundle0028
+public import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.Bundle0011
 
 @[expose] public section
 

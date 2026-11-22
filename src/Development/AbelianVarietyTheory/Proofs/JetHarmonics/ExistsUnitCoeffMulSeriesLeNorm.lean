@@ -3,11 +3,11 @@ module
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.Jets.CmLatticeCommutatorPairingPowEqOneOfGoodLift
 public import Development.AbelianVarietyTheory.Proofs.HomogeneousIdeals.ExistsNumeratorOfInvolution
-public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.CpSeriesCoeffNormBoundedRingLaws
-public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.CpTransportedTaylorSeriesInChartRingHomLaws
-public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.NormLeOfDistinct
+public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0098
+public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0011
+public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0015
 public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.UwEllipticFlow
-public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.IntegralWeierstrassChartXyUnitSeries
+public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0103
 public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.MulPowTwoLeTripleProdOfGe
 
 @[expose] public section

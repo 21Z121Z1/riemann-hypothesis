@@ -1,13 +1,13 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.BlockAnti
-public import Formalism.PeriodIntegrals.QuotInv
+public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.Bundle0009
+public import Formalism.PeriodIntegrals.Bundle0006
 public import Formalism.HermitianCurvature.WeylElementCommutesLevelOne
 public import Formalism.LocalRingCardinality.DataCD
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ClosedMatrixSubgroupTheorem
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsUniqueHaarDensityAtIdentityStatement
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsDensityOriginOfAlmostHomogeneous
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0137
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsUniqueHaarDensityAtIdentity
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0058
 
 @[expose] public section
 
@@ -392,7 +392,7 @@ open scoped Matrix.Norms.Operator in
 theorem density_in_chart : ∀ (m : ℕ) (S : Set (Matrix (Fin m) (Fin m) ℂ)) (μ : Measure (PI.MtM m)) (c : ℝ≥0∞), PI.IsMatGroup S → PI.IsHaarOnM S μ → HasDens S μ c → ∀ (E : Type) [NormedAddCommGroup E] [NormedSpace ℝ E] (Φ : E → Matrix (Fin m) (Fin m) ℂ) (L : E ≃L[ℝ] lieE S), Φ 0 = 1 → (∀ᶠ x in 𝓝 (0 : E), Φ x ∈ S) → (∀ i j, ∃ D : E →L[ℝ] ℂ, HasStrictFDerivAt (fun x => Φ x i j) D 0 ∧ ∀ v, D v = unrealify ((L v : lieE S) : EuclideanSpace ℝ _) i j) → Tendsto (fun ρ : ℝ => μ ((fun x => Matrix.of.symm (Φ x)) '' Metric.ball 0 ρ) / volume (L '' Metric.ball (0 : E) ρ)) (𝓝[>] 0) (𝓝 c) := by
   intro m S μ c hS hμ hc E _ _ Φ L hΦ0 hΦS hD
   obtain ⟨hlie, hnb⟩ := GlobalTheory.ClosedMatGroup.closed_subgroup m S hS
-  obtain ⟨c₀, -, -, hu⟩ := GlobalTheory.T.exists_unique_haarDensity_at_identity m S μ hS hμ
+  obtain ⟨c₀, -, -, hu⟩ := _root_.GlobalTheory.MatHaarDensity.exists_hasDens m S μ hS hμ
   have hct : c ≠ ⊤ := by rw [hu c hc]; exact ENNReal.ofReal_ne_top
   haveI : FiniteDimensional ℝ E := L.symm.toLinearEquiv.finiteDimensional
   haveI : CompleteSpace E := FiniteDimensional.complete ℝ E

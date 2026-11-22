@@ -1,7 +1,7 @@
 module
 
-public import Formalism.SharpRestriction.GenusPolyhedralBounds.RelativeIndexClassSets.IntegralFormsEqSpan
-public import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.HasseJidPow
+public import Formalism.SharpRestriction.GenusPolyhedralBounds.RelativeIndexClassSets.Bundle0005
+public import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.Bundle0037
 
 @[expose] public section
 

@@ -1,7 +1,7 @@
 module
 
-public import Formalism.UnipotentAdelicQuotients.StdAdditiveCharExists
-public import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.StdCharTR
+public import Formalism.UnipotentAdelicQuotients.Bundle0002
+public import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.Bundle0012
 
 @[expose] public section
 

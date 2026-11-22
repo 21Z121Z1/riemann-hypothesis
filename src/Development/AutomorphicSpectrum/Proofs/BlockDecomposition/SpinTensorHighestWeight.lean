@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IsCliff
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SpinGlRelationsAdjointStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LoweringWordsSpanStatement
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0360
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0381
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0447
 
 @[expose] public section
 
@@ -241,7 +241,7 @@ theorem exists_spin_map : ∀ {n : ℕ} {ι : Type} [Fintype ι] [DecidableEq ι
       ∀ a f, φ (spinM c a a *ᵥ f) = E a a (φ f) - ((ν a : ℝ) : ℂ) • φ f := by
   classical
   intro n ι _ _ c hc q hq0 hqd hql Z _ _ E hE ν z hzd hz2
-  obtain ⟨hrel, hherm⟩ := GlobalTheory.T.spin_gl_relations_adjoint c hc
+  obtain ⟨hrel, hherm⟩ := _root_.GlobalTheory.CompanionTheory.RealCount.SpinRel.spinRel c hc
   let S : Fin n → Fin n → Module.End ℂ (ι → ℂ) := fun a b => Matrix.toLinAlgEquiv' (spinM c a b)
   have hSapp : ∀ a b f, S a b f = spinM c a b *ᵥ f := fun a b f => Matrix.toLinAlgEquiv'_apply _ _
   have hS : Formalism.REAL.GlRel S := glrel_map (Matrix.toLinAlgEquiv' (R := ℂ) (n := ι)) hrel
@@ -252,7 +252,7 @@ theorem exists_spin_map : ∀ {n : ℕ} {ι : Type} [Fintype ι] [DecidableEq ι
     rw [LinearMap.mem_ker] at hd ⊢
     let coef : List (Fin n × Fin n) → ℂ := fun l => if h : ∀ p ∈ l, p.2 < p.1 then d ⟨l, h⟩ else 0
     have hcoef : ∀ t : Lw n, coef t.1 = d t := fun t => dif_pos t.2
-    have key := GlobalTheory.T.lowering_words_span (tw S) (tw E) hwS hwE q hq0
+    have key := _root_.GlobalTheory.CompanionTheory.PresRho.pres_rho (tw S) (tw E) hwS hwE q hq0
       (fun a => by
         simp only [tw, LinearMap.neg_apply, hSapp, hqd a]
         push_cast

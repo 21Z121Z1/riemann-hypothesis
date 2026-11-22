@@ -1,8 +1,8 @@
 module
 
 public import Formalism.SharpRestriction.CuspSpanNormBounds.RelevantZeroGramTerms
-public import Formalism.SharpRestriction.CuspSpanNormBounds.SArith
-public import Formalism.SharpRestriction.CuspSpanNormBounds.LocalDataRealPlace
+public import Formalism.SharpRestriction.CuspSpanNormBounds.Bundle0001
+public import Formalism.SharpRestriction.CuspSpanNormBounds.Bundle0002
 public import Formalism.LocalRingCardinality.DataParams₂
 
 @[expose] public section

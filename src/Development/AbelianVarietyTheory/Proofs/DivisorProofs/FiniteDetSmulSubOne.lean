@@ -1,23 +1,26 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsIsHalfIdem
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GaussSumNondegenerateFiniteHermitianModuleStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RelIndexMapNsmulComapEqAbsNormDetStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RationalLatticeSelfDualFgFullIndexStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntegralGaussianRealIsometryNoFixedStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EtaTildeHeckeCharSplitMulSignOfNormFormulaStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsCartanInvolutionCommQuasiReflectionStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RationalIsometryVacuumScalarGaussSumIntegralStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FiniteWeilRepEqLatticeIntertwinerMulCharacterStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RationalSubstitutionThetaHeisenbergUnitaryStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SchurLemmaThetaFunctionsOrientedPairStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsSplitCharacter
-public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.UnitaryMatrixEqProdQuasiReflections
-public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.UnitaryQuasiReflectionLaws
-public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.MapFinNeg
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.AdelicUnitaryEqRealMulFiniteSplit
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsThetaFunNeZero
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0989
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GaussSumNondegenerateFiniteHermitianModule
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0010
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0102
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1120
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1034
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1056
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0720
+public import Formalism.LocalToGlobal.IndefiniteReal.LocalNewformFunction
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RationalIsometryVacuumScalarGaussSumIntegral
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FiniteWeilRepEqLatticeIntertwinerMulCharacter
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0894
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0024
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1083
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0808
+public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.Bundle0039
+public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.Bundle0030
+public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.Bundle0070
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0070
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0198
 public import Development.AbelianVarietyTheory.Definitions.Divisors.CmHostImaginaryGeneratorNeZero
 
 @[expose] public section
@@ -55,7 +58,7 @@ theorem gauss_isometry {R X M : Type} [CommRing R] [AddCommGroup X] [Module R X]
     simp only [β]
     rw [h.add_right, h.adj, h.adj, h.sg_sg]
   have hm : ∀ x, x ∈ A.comap (u - LinearMap.id) ↔ u x - x ∈ A := fun x => Iff.rfl
-  have key := GlobalTheory.T.gaussSum_nondegenerate_finite_hermitian_module σ w h.sg_sg h.w_add lam hlam β
+  have key := _root_.GlobalTheory.HermitianGauss.gauss_hermitian σ w h.sg_sg h.w_add lam hlam β
     (fun x y z => by
       rw [hβ', hβ', hβ', ← h.add_left, map_add (f := _)]
       congr 1
@@ -336,8 +339,8 @@ def IsScalar (ψ : AddChar (AF D.host.F) ℂ) (of oi : GA D S × GA D T →* Mod
 
 theorem exists_isScalar (hψ : IsStdChar D ψ (-1)) (hf : IsFinWeil ψ S T ΛS ΛT χS χT of) (hi : IsInfWeil ψ θ S T oi)
     {p : GA D S × GA D T} (h1 : p.1 ∈ GQ S) (h2 : p.2 ∈ GQ T) : ∃ c : ℂ, ‖c‖ = 1 ∧ IsScalar ψ of oi p c := by
-  have R := GlobalTheory.T.rational_substitution_theta_heisenberg_unitary D ψ hψ S T _ (inv_mem h1) _ (inv_mem h2)
-  have R' := GlobalTheory.T.rational_substitution_theta_heisenberg_unitary D ψ hψ S T _ h1 _ h2
+  have R := _root_.GlobalTheory.RatSubst.rational_substitution D ψ hψ S T _ (inv_mem h1) _ (inv_mem h2)
+  have R' := _root_.GlobalTheory.RatSubst.rational_substitution D ψ hψ S T _ h1 _ h2
   obtain ⟨a, k, a1, a2, k1, k2, e1, e2⟩ := exists_parts p
   have hoi : ∀ f, IsThetaFunO ψ S T f → oi p f = oi a f := fun f h => by
     rw [e1, map_mul, Module.End.mul_apply, hi.triv k.1 k1 k.2 k2 f h]
@@ -349,7 +352,7 @@ theorem exists_isScalar (hψ : IsStdChar D ψ (-1)) (hf : IsFinWeil ψ S T ΛS �
       rw [e, heisO_add_of_orth ψ S T (symplO_real_fin S T (real_smul_real u) (fin_smul_fin u))]
       exact GlobalTheory.WeilVacMove.isTheta_heisO_real hψ (real_smul_real u)
         (GlobalTheory.FinTranslate.isTheta_heisO_fin hψ.1 (fin_smul_fin u) h)
-  obtain ⟨c, hc, h⟩ := GlobalTheory.T.schurLemma_thetaFunctions_orientedPair D ψ hψ S T (of p * oi p * subst p⁻¹)
+  obtain ⟨c, hc, h⟩ := _root_.GlobalTheory.ThetaSchur.schur D ψ hψ S T (of p * oi p * subst p⁻¹)
     (fun f h => hf.pres _ _ (hi.pres _ _ (R f h).1))
     (fun w f h => by
       have t1 : IsThetaFunO ψ S T (subst p⁻¹ f) := (R f h).1
@@ -373,7 +376,7 @@ theorem IsScalar.mul (hψ : IsStdChar D ψ (-1)) (hi : IsInfWeil ψ θ S T oi)
     (hcomm : ∀ p q f, IsThetaFunO ψ S T f → of p (oi q f) = oi q (of p f)) {p q : GA D S × GA D T} {c c' : ℂ}
     (h : IsScalar ψ of oi p c) (h' : IsScalar ψ of oi q c') (h1 : q.1 ∈ GQ S) (h2 : q.2 ∈ GQ T) :
     IsScalar ψ of oi (p * q) (c * c') := fun f hf => by
-  have t : IsThetaFunO ψ S T (subst q f) := (GlobalTheory.T.rational_substitution_theta_heisenberg_unitary D ψ hψ S T _ h1 _ h2 f hf).1
+  have t : IsThetaFunO ψ S T (subst q f) := (_root_.GlobalTheory.RatSubst.rational_substitution D ψ hψ S T _ h1 _ h2 f hf).1
   rw [map_mul, map_mul, Module.End.mul_apply, Module.End.mul_apply, hcomm q p _ (hi.pres _ _ hf), h' f hf, map_smul,
     map_smul, h _ t, smul_smul, mul_comm c', subst_mul]
 
@@ -431,7 +434,7 @@ theorem finite_data (hψ : IsStdChar D ψ (-1)) (hS : IsSelfDualC S ΛS) (hT : I
       ((c * n : ℕ) : ℚ) = |Algebra.norm ℚ ((N : D.host.E) ^ M * (b ⊗ₖ aᵀ - 1).det)| ∧
       ((c * idx (latF S T ΛS ΛT) ((latF S T ΛS ΛT).map (rhoF S T (g, h))) : ℕ) : ℚ) =
         |Algebra.norm ℚ ((N : D.host.E) ^ M * (b ⊗ₖ aᵀ).det)| := by
-  obtain ⟨sd, fg, full, hidx⟩ := GlobalTheory.T.rational_lattice_selfDual_fg_full_index D ψ hψ S T ΛS ΛT hS hT
+  obtain ⟨sd, fg, full, hidx⟩ := _root_.GlobalTheory.RatLattice.latQ_selfDual_fg_full_index D ψ hψ S T ΛS ΛT hS hT
   rw [hidx g h a b ha hb]
   rw [← det_sandw] at hΔ ⊢
   rw [← det_sandw_sub_one] at hd ⊢
@@ -452,10 +455,10 @@ theorem finite_data (hψ : IsStdChar D ψ (-1)) (hS : IsSelfDualC S ΛS) (hT : I
     | zero => rw [map_zero, smul_zero]; exact zero_mem _
     | add x y _ _ hx hy => rw [map_add (f := _), smul_add]; exact add_mem hx hy
     | neg x _ hx => rw [map_neg, smul_neg]; exact neg_mem hx
-  have i1 := GlobalTheory.T.relIndex_map_nsmul_comap_eq_abs_norm_pow_mul_det _ _ A fg full (sandw b a - 1) N hN hd fun x hx => by
+  have i1 := _root_.GlobalTheory.relIndex_map_nsmul_comap_eq_abs_norm_det _ _ A fg full (sandw b a - 1) N hN hd fun x hx => by
     rw [LinearMap.sub_apply, smul_sub]
     exact sub_mem (hNA x hx) (nsmul_mem hx N)
-  have i2 := GlobalTheory.T.relIndex_map_nsmul_comap_eq_abs_norm_pow_mul_det _ _ A fg full (sandw b a) N hN hΔ hNA
+  have i2 := _root_.GlobalTheory.relIndex_map_nsmul_comap_eq_abs_norm_det _ _ A fg full (sandw b a) N hN hΔ hNA
   set B₁ := A.comap (sandw b a - 1).toAddMonoidHom with hB₁
   set B₂ := A.comap (sandw b a).toAddMonoidHom with hB₂
   set NA := A.map (N • AddMonoidHom.id _) with hNA'
@@ -481,7 +484,7 @@ theorem finite_data (hψ : IsStdChar D ψ (-1)) (hS : IsSelfDualC S ΛS) (hT : I
   obtain ⟨g1, g2⟩ := gauss_isometry (isHeis_gamQ hψ.1 S T hw) hlam sd ((sandw b a).restrictScalars (𝓞 D.host.E))
     (fun x y => by
       show ψ (symplO S T (finRat S T (b * x * a)) (finRat S T (b * y * a))) = _
-      rw [finRat_sandw ha hb, finRat_sandw ha hb, GlobalTheory.T.symplecticForm_unitaryPairAction]
+      rw [finRat_sandw ha hb, finRat_sandw ha hb, _root_.GlobalTheory.SymplOInv.symplO_actO]
       rfl) hbij.2 _ t t1 t2
   exact ⟨_, t, _, N, _, right_ne_zero_of_mul h0, left_ne_zero_of_mul h0, hN, t1, t2, g1, g2, m1 ▸ i1, m2 ▸ i2⟩
 

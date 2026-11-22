@@ -1,11 +1,10 @@
 module
 
 public import Mathlib
-public import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.GlintPrincRelIndexNeZero
-public import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.SplitUnitaryGroupIso
-public import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Transport
-public import Formalism.LocalToGlobal.GroupLattices.TrivialTransfer.ProGTransfer
-public import Formalism.LocalToGlobal.GroupLattices.TrivialTransfer.OneAddPowOfSq
+public import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Bundle0001
+public import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Bundle0003
+public import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Bundle0002
+public import Formalism.LocalToGlobal.GroupLattices.TrivialTransfer.Bundle0001
 public import Formalism.LocalToGlobal.GroupLattices.TrivialTransfer.GramTotallyDefinite
 public import Formalism.SharpRestriction.GlobalSchurBounds.StandardLattice
 public import Formalism.SharpRestriction.GlobalSchurBounds.FlipTwoThree

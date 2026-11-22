@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsBlockImageChi
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PBlockImageTop
+public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0035
+public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0072
 public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PResChiIndex
 
 @[expose] public section

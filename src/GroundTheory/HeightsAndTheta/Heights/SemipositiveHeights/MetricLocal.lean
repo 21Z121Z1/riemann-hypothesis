@@ -2,8 +2,8 @@ module
 
 public import Mathlib
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArithmeticIntersection.RationalSections.ThmISt
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.InterExtLocal
-public import GroundTheory.HeightsAndTheta.Heights.Intersections.PThmIUnique
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.Bundle0013
+public import GroundTheory.HeightsAndTheta.Heights.Intersections.Bundle0015
 
 @[expose] public section
 

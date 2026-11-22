@@ -1,10 +1,9 @@
 module
 
-public import Formalism.ThetaLogCoordinates.DualWeylCoordinates.DualWeylProofs.QnFactRowDivDiag
-public import Formalism.ThetaLogCoordinates.DualWeylCoordinates.DualWeylProofs.QnPtEmpty
+public import Formalism.ThetaLogCoordinates.DualWeylCoordinates.DualWeylProofs.Bundle0002
+public import Formalism.ThetaLogCoordinates.DualWeylCoordinates.DualWeylProofs.Bundle0001
 public import Formalism.ThetaLogCoordinates.DualWeylCoordinates.DualWeylProofs.CoeffTransposeVariables
-public import Formalism.ThetaLogCoordinates.DualWeylCoordinates.DualWeylProofs.QnInterlacedLowerTri
-public import Formalism.GradedWeylDivisibility.FockSpaceTableaux.LClosedeqLemmas
+public import Formalism.GradedWeylDivisibility.FockSpaceTableaux.Bundle0010
 
 @[expose] public section
 

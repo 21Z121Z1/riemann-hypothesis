@@ -5,10 +5,10 @@ public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.NotBadP
 public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.HzUnit
 public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.VacOfShape
 public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.CosInj
-public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.PairForm
+public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.Bundle0022
 public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.StabOrd
 public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.LatAtLattice
-public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.IsTwIffCanonEq
+public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.Bundle0030
 
 @[expose] public section
 

@@ -2,12 +2,12 @@ module
 
 public import Mathlib
 public import Formalism.PieriBlockIdeals.PieriColumnMinors.RecursionInclusionExceptional
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WeylLatticeExactExponentBlockCut
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BrPairFApply
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0735
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1570
 public import Development.AbelianVarietyTheory.Statements.PlaceShiftStatements.InfClassAt
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsUniqueIsFunForm
 public import Formalism.SharpRestriction.Divisibility.PrimeDegreeVariant
-public import Formalism.PieriBlockIdeals.StatementLA
+public import Formalism.PieriBlockIdeals.Bundle0003
 public import Formalism.MirabolicMackeyTheory.MirabolicMackeyProofs.RamBasic
 public import Development.AbelianVarietyTheory.Statements.HeckeThetaIntegrals.FormulaAt
 

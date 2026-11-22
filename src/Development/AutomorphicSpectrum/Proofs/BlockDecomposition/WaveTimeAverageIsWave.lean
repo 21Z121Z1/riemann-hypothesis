@@ -2,12 +2,12 @@ module
 
 public import Mathlib
 public import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.ArchimedeanGelfandKernels.WaveSt
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IsMultOfFintype
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IsOpenInvertibleMatrices
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SmoothTimeRightDerivativesCommute
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.WaveTimeReversal
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0189
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0199
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0201
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0200
 public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.WaveSolutionExistence
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.WaveUniqOfWaveSpeed
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0204
 
 @[expose] public section
 

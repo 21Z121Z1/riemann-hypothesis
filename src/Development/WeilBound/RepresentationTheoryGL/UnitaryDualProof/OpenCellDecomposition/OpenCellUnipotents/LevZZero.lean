@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Development.WeilBound.RepresentationTheoryGL.UnitaryDualProof.BernsteinExponentBounds.IsInvForm
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.OpenFns
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0331
 
 @[expose] public section
 

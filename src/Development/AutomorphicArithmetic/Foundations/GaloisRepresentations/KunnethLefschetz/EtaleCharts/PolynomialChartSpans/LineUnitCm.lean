@@ -3,7 +3,7 @@ module
 public import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.KunnethLefschetz.EtaleCharts.PBData
 public import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.KunnethLefschetz.EtaleCharts.PolynomialChartSpans.PBEx
 public import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.KunnethLefschetz.EtaleCharts.PolynomialChartSpans.PBOf
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FirstChernClassEqZeroOfUnitTrivialization
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0440
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AlternatingSumThreeTerms
 
 @[expose] public section

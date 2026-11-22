@@ -1,8 +1,8 @@
 module
 
-public import Formalism.LocalToGlobal.TorsionIntegrality.GaussSumParity.BiextensionHypothesesOfLevelOne
-public import Formalism.LocalToGlobal.TorsionIntegrality.GaussSumParity.StatementC
-public import Formalism.ThetaLogCoordinates.UniformThetaSubstitution.FinalS
+public import Formalism.LocalToGlobal.TorsionIntegrality.GaussSumParity.Bundle0003
+public import Formalism.LocalToGlobal.TorsionIntegrality.GaussSumParity.Bundle0001
+public import Formalism.ThetaLogCoordinates.UniformThetaSubstitution.Bundle0002
 
 @[expose] public section
 

@@ -1,6 +1,6 @@
 module
 
-public import Formalism.LocalToGlobal.TorsionIntegrality.GaussSumParity.StatementG
+public import Formalism.LocalToGlobal.TorsionIntegrality.GaussSumParity.Bundle0003
 public import Formalism.LocalToGlobal.TorsionIntegrality.EisensteinTranslationProducts.EisensteinS2LimitFormula
 
 @[expose] public section

@@ -1,15 +1,15 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Langlands
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.GaussSumNeZeroOfRamified
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Mono0OfLpDimEqOne
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.LocalEmbeddingsTowerCompatibleStatement
+public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0025
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0205
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0044
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0303
 public import Formalism.LocalToGlobal.GaloisLevelStructure.DefsGal
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.HasNormGroups
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.LocalFieldNormValuation
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.AddCharConductorAndHaarIntegersExist
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IsMulLeftInvariantVolGL
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0226
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0244
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0021
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0039
 public import GroundTheory.GlobalFields.TateThesis.HeckeChar
 public import GroundTheory.LocalFields.LocalZetaEpsilon
 public import GroundTheory.GlobalFields.TateThesis.HeckeLFunction
@@ -17,7 +17,7 @@ public import GroundTheory.GlobalFields.SemilocalAlgebras.ContinuousCompletionMa
 public import GroundTheory.GlobalFields.TateThesis.AdelicCharLocal
 public import GroundTheory.GlobalFields.TateThesis.RootNumberLocalFinite
 public import Development.WeilBound.CoreStatements.AutomorphicKernels.LocalLanglandsExistence.WeilEquivOfLocalDegreeOne
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.WeilGroupRestriction
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0652
 public import GroundTheory.GlobalFields.CompletionAtPlace.Degree
 
 @[expose] public section

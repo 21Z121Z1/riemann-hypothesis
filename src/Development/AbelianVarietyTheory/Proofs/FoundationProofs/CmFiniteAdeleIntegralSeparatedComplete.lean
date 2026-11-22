@@ -4,7 +4,7 @@ public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.Foundations.NormSumPairRankZeroOfCurveCoordNorm
 public import Formalism.PairingDivisors.StatementH
 public import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Levelaf
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.IntegralFiniteAdeleCompleteSeparated
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0008
 
 @[expose] public section
 

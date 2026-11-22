@@ -1,6 +1,6 @@
 module
 
-public import Formalism.CharacterColumnKernels.StatementNG
+public import Formalism.CharacterColumnKernels.Bundle0002
 public import Formalism.CharacterColumnKernels.IdempotentNormalForms.GlobalConcreteOf
 public import Formalism.CharacterColumnKernels.IdempotentNormalForms.LengthQuotSmulRangeFree
 

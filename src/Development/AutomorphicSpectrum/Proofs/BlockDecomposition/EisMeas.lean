@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ProdNonnegReal
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.BlockMatrixApplyInrInr
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsFinsetIntOff
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0681
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0672
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0696
 
 @[expose] public section
 

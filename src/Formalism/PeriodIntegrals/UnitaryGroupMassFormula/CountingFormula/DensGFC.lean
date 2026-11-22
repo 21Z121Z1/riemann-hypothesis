@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.CountingFormula.DensGF
-public import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.DensInert
+public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.CountingFormula.Bundle0008
+public import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.Bundle0009
 
 @[expose] public section
 

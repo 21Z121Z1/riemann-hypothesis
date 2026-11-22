@@ -3,18 +3,19 @@ module
 public import Mathlib
 public import Development.WeilBound.RepresentationTheoryGL.UnitaryDualProof.CentralProducts.UnitarisableHypotheses.IsUnitarisableCast
 public import Development.WeilBound.RepresentationTheoryGL.UnitaryDualProof.CentralProducts.UnitarisableHypotheses.IrrSub
-public import Development.WeilBound.CoreStatements.AutomorphicKernels.BernsteinUnitaryProducts.IrreducibleAdmissibleReps.AdmissibleParabolicInduction.AddChar
-public import Development.WeilBound.CoreStatements.AutomorphicKernels.BernsteinUnitaryProducts.IrreducibleAdmissibleReps.AdmissibleParabolicInduction.IrrAdm
+public import Development.WeilBound.CoreStatements.AutomorphicKernels.BernsteinUnitaryProducts.IrreducibleAdmissibleReps.AdmissibleParabolicInduction.Bundle0001
 public import Development.WeilBound.CoreStatements.AutomorphicKernels.BernsteinUnitaryProducts.IrreducibleAdmissibleReps.AdmissibleParabolicInduction.AdmProd
 public import Development.WeilBound.CoreStatements.AutomorphicKernels.BernsteinUnitaryProducts.IrreducibleAdmissibleReps.UnitaryAdmissibleComplements.UnitaryAdmissibleComplementHolds
 public import Development.WeilBound.CoreStatements.AutomorphicKernels.BernsteinUnitaryProducts.IrreducibleAdmissibleReps.UnitaryAdmissibleComplements.IsIrreducibleIffFinrank
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IsSmoothIterPhi
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CompactOpenSubgroupsBasisStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.HighestDerivativeOfProduct
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0563
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0285
+public import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.IsSubquotientDetRepParInd
+public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.ExistsCellOfIsSubquotient
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0392
 public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CellFunctorNonscalarOffdiag
 public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IsLocallyConstantModulus
 public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IsIrreducibleIffOfLinearEquiv
-public import GroundTheory.AutomorphicForms.SmoothRepSchur
+public import GroundTheory.AutomorphicForms.Bundle0011
 public import CompanionTheory.AutomorphicTheory.HeckeStandardModules.EqZeroOfCompAt
 
 @[expose] public section
@@ -139,7 +140,7 @@ theorem exists_nd_pos (ψ : AddChar k Circle) (hψc : Continuous ψ) (hψ1 : ψ 
   obtain ⟨n, hn, hnt⟩ := GlobalTheory.T.exists_nontrivial_derivative k ψ hψc hψ1 m (resM k X.ρ).V (resM k X.ρ).ρ
     (fun v => (hs v).preimage continuous_subtype_val) hX
   obtain ⟨j, rfl⟩ := Nat.exists_eq_add_of_le hn
-  obtain ⟨E⟩ := GlobalTheory.T.twisted_jacquet_iterated_phi_equiv k ψ n j (resM k X.ρ)
+  obtain ⟨E⟩ := _root_.GlobalTheory.CompanionTheory.BZMir.iterPhi_twJacquet_equiv k ψ n j (resM k X.ρ)
   exact ⟨j + 1, by omega, n, rfl, E.symm.injective.nontrivial⟩
 
 theorem norm_dpow_sc (n : ℕ) (s : ℝ) (x : kˣ) :
@@ -287,7 +288,7 @@ theorem prod_irreducible (hT : DerivTop k) (hP : PosProdD k) (hTop : TopProdD k)
   have hcompl := PositivityTheory.PfBern.Props2.unitaryAdmissibleComplement_at (r + t) _ (π₁.prod π₂).ρ hadm hun
   have : Nontrivial (π₁.prod π₂).V := nontrivial_of_nd ψ _ ((isTopD_iff ψ _ e).1 htop).1
   refine irreducible_of_top ψ (π₁.prod π₂) e hcompl (fun S hS => ?_) _ ((isIrreducible_cast e₂ _).2 hY) χ eqv
-  obtain ⟨S₀, hS₀, hle, hirr⟩ := exists_irreducible_le (π₁.prod π₂).ρ (GlobalTheory.T.compact_open_subgroups_basis k (r + t)) hadm hcompl S hS
+  obtain ⟨S₀, hS₀, hle, hirr⟩ := exists_irreducible_le (π₁.prod π₂).ρ (_root_.GlobalTheory.CompanionTheory.SmGL.exists_compact_open_subgroup_subset k (r + t)) hadm hcompl S hS
   obtain ⟨T₀, hc⟩ := hcompl S₀
   exact nd_mono ψ S₀ S T₀ hle hc.symm
     (nd_of_irr hT hP ψ hψc hψ1 π₁ π₂ s₁ i₁ u₁ s₂ i₂ u₂ e htop hadm.1 hun hcompl S₀ hS₀ hirr)

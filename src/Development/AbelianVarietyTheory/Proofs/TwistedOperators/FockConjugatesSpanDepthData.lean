@@ -1,16 +1,16 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.PartFixed
-public import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.IsVacFOfIsVacVec
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.TameFunctionalKillsFockVacuumRealTranslatesStatement
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.TameFunctionalVacuumIrreducibilityStatement
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.HeisenbergCommutantPermutesFirstRowCosetVectorsStatement
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ThetaHeisenbergConjugationNegHermitianSpace
-public import Formalism.LocalToGlobal.IndefiniteReal.LevelTypeEquivalence.SymplOHSmulRight
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.InfPartOneSubEInfSmul
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SplitLocalPlaceLocalModelsLinearSubspace
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.WeilActionNegPairPureTensorFock
+public import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.Bundle0007
+public import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.Bundle0002
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0531
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0519
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0616
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0123
+public import Formalism.LocalToGlobal.IndefiniteReal.LevelTypeEquivalence.Bundle0003
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0119
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0326
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0451
 
 @[expose] public section
 
@@ -197,7 +197,7 @@ theorem fockTot : FockTot := by
   intro D hoff T L μ0 hL sc G W M hM i ℓ hℓ hkill f hf
   have hψ := W.ψ_std
   have hi : i.1 < D.R.m := i.2
-  have cos := GlobalTheory.T.heisenbergCommutant_permutes_firstRowCosetVectors D hoff T L μ0 hL sc G W M hM i.1 hi
+  have cos := _root_.GlobalTheory.CosPerm.cosVec_perm D hoff T L μ0 hL sc G W M hM i.1 hi
   obtain ⟨A, hAc, hAo⟩ := frame_neg (G.V (.grid (i.1 + 1) 0)) (W.cart (.grid (i.1 + 1) 0)) (W.onb (.grid (i.1 + 1) 0))
     (W.onb_is _ ⟨by omega, Nat.zero_le _⟩)
   obtain ⟨B, hBc, hBo⟩ := frame_pos (G.V (.grid i.1 0)) (W.cart (.grid i.1 0)) (W.onb (.grid i.1 0))
@@ -220,12 +220,12 @@ theorem fockTot : FockTot := by
       rw [hfock]
       simp only [conjFun]
       rw [cj_eq_star, hkill κ P, map_zero]
-    have h := GlobalTheory.T.tameFunctional_kills_fockVacuum_realTranslates D W.ψ W.θ hψ W.θ_is _ _ A B (conjFun ℓ) (tame_conjFun hψ hℓ) _ hv hk w hw
+    have h := _root_.GlobalTheory.FockTransl.tame_kills_real_translates D W.ψ W.θ hψ W.θ_is _ _ A B (conjFun ℓ) (tame_conjFun hψ hℓ) _ hv hk w hw
     simp only [conjFun] at h
     rw [cj_heisO (S := G.V (.grid (i.1 + 1) 0)) hψ, map_eq_zero, cj_eq_star] at h
     exact h
   obtain ⟨hne₀, -, hVac₀, hspan₀⟩ := cos default
-  refine GlobalTheory.T.tame_functional_vacuum_irreducibility D W.ψ hψ _ _ (latRow G i.1) ℓ hℓ (star (W.cosVec i.1 default)) hVac₀ ?_ ?_ f hf
+  refine _root_.GlobalTheory.Irr.irr D W.ψ hψ _ _ (latRow G i.1) ℓ hℓ (star (W.cosVec i.1 default)) hVac₀ ?_ ?_ f hf
   · intro h0
     apply hne₀
     have := congrArg star h0

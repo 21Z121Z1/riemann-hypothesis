@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.WeilBound.CoreStatements.PublishedTheorems.PoitouTateDuality.FinalPtfsFoundSideB
+public import Development.WeilBound.CoreStatements.PublishedTheorems.PoitouTateDuality.Bundle0010
 
 @[expose] public section
 

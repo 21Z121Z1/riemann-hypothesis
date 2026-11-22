@@ -1,8 +1,8 @@
 module
 
 public import Formalism.SharpRestriction.GrowthBounds.MultisetValuation.HeckeValueEstimateOfRecordValue
-public import Formalism.SharpRestriction.GrowthBounds.MultisetValuation.SmulUpdate
-public import Formalism.SharpRestriction.GrowthBounds.MultisetValuation.RamifiedLatticeOfChainEstimates
+public import Formalism.SharpRestriction.GrowthBounds.MultisetValuation.Bundle0009
+public import Formalism.SharpRestriction.GrowthBounds.MultisetValuation.Bundle0005
 public import Formalism.SharpRestriction.GrowthBounds.MultisetValuation.GShiftRowGenMonomial
 
 @[expose] public section

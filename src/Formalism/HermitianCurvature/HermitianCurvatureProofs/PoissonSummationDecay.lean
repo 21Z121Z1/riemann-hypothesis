@@ -1,6 +1,6 @@
 module
 
-public import Formalism.HermitianCurvature.LevelRecursionCondNeeded
+public import Formalism.HermitianCurvature.Bundle0002
 public import Formalism.LatticeTheta.ThetaShiftInversion
 
 @[expose] public section

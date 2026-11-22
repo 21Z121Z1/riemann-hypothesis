@@ -1,14 +1,15 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.RingHomExtDense
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.DividedTwoVariableSubringSubsetGeneratorSetStatement
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FrobMemPPSetCongrStatement
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.UnramifiedWittPowerSeriesMemDividedPowerSeriesGeStatement
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.TaylorShiftFrobeniusMemDividedTwoVariableGeneratStatement
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FactorialMulCoeffMemDividedPowerSeriesSubringStatement
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.DvdPolyEvaluationOfMemDividedTwoVariableSetStatement
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsPolynomialApproxDividedTwoVariableSetStatement
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0497
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0474
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0458
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0565
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0519
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0516
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0482
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0507
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0511
 
 @[expose] public section
 
@@ -85,7 +86,7 @@ theorem acris_complete : IsAdicComplete (Ideal.span {(l : Per.Acris l)}) (Per.Ac
 
 theorem denseD (F : PPd t K e) (r : ℕ) : ∃ (n : ℕ) (b : Bp l a) (p h : PPd t K e),
     n ≠ 0 ∧ (n : PPd t K e) * p = iotaD K t b ∧ F = p + (l : PPd t K e) ^ r * h := by
-  obtain ⟨n, b, p, h, hn, hp, hh, hpb, hF⟩ := GlobalTheory.T.exists_polynomial_approx_dividedTwoVariableSet l a e O K t F (GlobalTheory.T.dividedTwoVariableSubring_subset_generatorSet l a e O K t _ F.2) r
+  obtain ⟨n, b, p, h, hn, hp, hh, hpb, hF⟩ := _root_.GlobalTheory.CrysEval.exists_poly_approx_PPSet l a e O K t F (_root_.GlobalTheory.CrysPrism.PPd_subset_PPSet l a e O K t _ F.2) r
   exact ⟨n, b, ⟨p, Subring.subset_closure hp⟩, ⟨h, Subring.subset_closure hh⟩, hn,
     Subtype.ext (by simpa [coe_iotaD] using hpb), Subtype.ext (by simpa using hF)⟩
 
@@ -96,7 +97,7 @@ theorem exists_E : ∃ E : PPd t K e →+* Per.Acris l,
   have := acris_complete (l := l)
   refine exists_ringHom (fun n x hn h => acris_nat_cancel hn h) (fun n b p hn hp => ?_) hl.out.ne_zero
     (fun F r => ?_)
-  · exact GlobalTheory.T.dvd_polyEvaluation_of_mem_dividedTwoVariableSet l a e O K t ϖ g b p (GlobalTheory.T.dividedTwoVariableSubring_subset_generatorSet l a e O K t _ p.2) n hn
+  · exact _root_.GlobalTheory.CrysEval.dvd_fP_of_mem_PPSet l a e O K t ϖ g b p (_root_.GlobalTheory.CrysPrism.PPd_subset_PPSet l a e O K t _ p.2) n hn
       (by simpa [coe_iotaD] using congrArg Subtype.val hp)
   · exact denseD t F r
 
@@ -263,7 +264,7 @@ variable (sh : K⟦X⟧ →+* K⟦X⟧⟦X⟧)
 include hsh hφC hφsh
 
 theorem bivariateFrobenius_mem_dividedSubring {F : ZMod a → K⟦X⟧⟦X⟧} (hF : F ∈ PPd t K e) : frob2 φ₂ F ∈ PPd t K e :=
-  Subring.subset_closure (GlobalTheory.T.frob2_mem_PPSet_and_eq_pow_add_mul l a e O K t sh hsh φ₂ hφC hφsh F (GlobalTheory.T.dividedTwoVariableSubring_subset_generatorSet l a e O K t F hF)).1
+  Subring.subset_closure (GlobalTheory.T.frob2_mem_PPSet_and_eq_pow_add_mul l a e O K t sh hsh φ₂ hφC hφsh F (_root_.GlobalTheory.CrysPrism.PPd_subset_PPSet l a e O K t F hF)).1
 
 omit [NeZero a] [NeZero e] [Module.Free ℤ_[l] O] [Module.Finite ℤ_[l] O] [IsUltrametricDist K] [IsUnitBall O K] in
 theorem φ₂_X : φ₂ X = (C X + X) ^ l - C (X ^ l) := by
@@ -404,13 +405,13 @@ theorem evE_taylor (F : ZMod a → K⟦X⟧⟦X⟧) (hF : F ∈ PPd t K e)
       ∑ i ∈ Finset.range n, ϖ.muDiv a O g i * ϖ.iC t K (fun τ => ⟨_, hS τ i⟩) := by
   let j : Per.Acris l →ₐ[ℤ_[l]] OCr l O := Algebra.TensorProduct.includeRight
   obtain ⟨N, b, p, h, hN, hp, hh, hpb, hFeq⟩ :=
-    GlobalTheory.T.exists_polynomial_approx_dividedTwoVariableSet l a e O K t F (GlobalTheory.T.dividedTwoVariableSubring_subset_generatorSet l a e O K t F hF) r
+    _root_.GlobalTheory.CrysEval.exists_poly_approx_PPSet l a e O K t F (_root_.GlobalTheory.CrysPrism.PPd_subset_PPSet l a e O K t F hF) r
   have hcoef : ∀ τ i, coeff i (F τ) = coeff i (p τ) + (l : K⟦X⟧) ^ r * coeff i (h τ) := fun τ i => by
     have h1 := congrFun hFeq τ
     simp only [Pi.add_apply, Pi.mul_apply, Pi.pow_apply, Pi.natCast_apply] at h1
     rw [h1, map_add (f := _), ← map_natCast (C : K⟦X⟧ →+* K⟦X⟧⟦X⟧), ← map_pow, coeff_C_mul]
   have hSh : ∀ τ i, (X : K⟦X⟧) ^ i * ((i.factorial : K⟦X⟧) * coeff i (h τ)) ∈ S O K e := fun τ i =>
-    mul_mem (pow_mem HasU.X_mem i) (GlobalTheory.T.factorial_mul_coeff_mem_dividedPowerSeriesSubring l a e O K t h hh τ i)
+    mul_mem (pow_mem HasU.X_mem i) (_root_.GlobalTheory.CrysPrism.factorial_mul_coeff_mem_S l a e O K t h hh τ i)
   have hSp : ∀ τ i, (X : K⟦X⟧) ^ i * ((i.factorial : K⟦X⟧) * coeff i (p τ)) ∈ S O K e := fun τ i => by
     have e1 : (X : K⟦X⟧) ^ i * ((i.factorial : K⟦X⟧) * coeff i (p τ)) =
         (X : K⟦X⟧) ^ i * ((i.factorial : K⟦X⟧) * coeff i (F τ)) -

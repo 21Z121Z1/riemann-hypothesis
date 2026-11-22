@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import GroundTheory.HeightsAndTheta.Heights.FieldsOfNumbers.Statements
-public import GroundTheory.HeightsAndTheta.Heights.FieldsOfNumbers.PPFContractedDim
+public import GroundTheory.HeightsAndTheta.Heights.FieldsOfNumbers.Bundle0005
 
 @[expose] public section
 

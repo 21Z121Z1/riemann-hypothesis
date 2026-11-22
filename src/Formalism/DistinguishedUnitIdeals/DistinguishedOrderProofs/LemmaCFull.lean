@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Formalism.DistinguishedUnitIdeals.LemmaCFull
+public import Formalism.DistinguishedUnitIdeals.Bundle0003
 public import Formalism.DistinguishedUnitIdeals.DistinguishedOrderProofs.LinExtEqZeroOfMemExt
-public import Formalism.DistinguishedUnitIdeals.DistinguishedOrderProofs.LevelsModConstIffOfNoDown
+public import Formalism.DistinguishedUnitIdeals.DistinguishedOrderProofs.Bundle0001
 public import Formalism.DistinguishedUnitIdeals.DistinguishedOrderProofs.ArcLiftOfLocalizationData
 
 @[expose] public section

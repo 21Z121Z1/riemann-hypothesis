@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.OfNatTrans
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.FaceFaceApply
+public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.Bundle0001
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0009
 public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.CoeEqAlgebraMapZeroEquiv
 
 @[expose] public section

@@ -1,13 +1,13 @@
 module
 
 public import Formalism.SharpRestriction.GrowthBounds.ValuationLowestDegreeRename
-public import Formalism.SharpRestriction.GrowthBounds.BinomialPolynomialIdentities.IndexOffRange
+public import Formalism.SharpRestriction.GrowthBounds.BinomialPolynomialIdentities.Bundle0002
 public import Formalism.ThetaLogCoordinates.JacobiPathWeights.FinalP
-public import Formalism.LocalToGlobal.GroupLattices.FockModels.WeylDim
+public import Formalism.LocalToGlobal.GroupLattices.FockModels.Bundle0002
 public import Formalism.SharpRestriction.GrowthBounds.LatticeSystems
 public import Formalism.LocalRingCardinality.Lemmas
 public import Formalism.SharpRestriction.GrowthBounds.CornerGLContinuity
-public import Formalism.SharpRestriction.GrowthBounds.AdmissibleIntegers.FirstTermSizeBound
+public import Formalism.SharpRestriction.GrowthBounds.AdmissibleIntegers.Bundle0001
 
 @[expose] public section
 

@@ -1,12 +1,12 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.GermSys
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.Bundle0013
 public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsFlatAnIffIsConstMul
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.UniformisationConclusion
 public import Development.WeilBound.CoreStatements.TorusUniformisation.ChowMahlerFamilies.ActGeneratorZero
 public import Development.WeilBound.CoreStatements.TorusUniformisation.ChowMahlerFamilies.CompListProd
-public import Development.WeilBound.CoreStatements.HodgeTatePoints.CdChart
+public import Development.WeilBound.CoreStatements.HodgeTatePoints.Bundle0058
 public import Development.WeilBound.CoreStatements.HodgeTatePoints.CdFrame
 public import Development.WeilBound.CoreStatements.HodgeTatePoints.Comp1IdentityLeft
 

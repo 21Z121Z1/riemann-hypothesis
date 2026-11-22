@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.MemCutQGrp
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsCouplingCosetWithGivenReduction
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0380
 
 @[expose] public section
 

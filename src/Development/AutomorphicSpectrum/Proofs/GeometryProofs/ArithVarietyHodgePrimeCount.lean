@@ -3,17 +3,16 @@ module
 public import Mathlib
 public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.IsLatFamilyCongr
 public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.MulMemSqOfSmulEqZero
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LemmaBTHolds
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0239
 public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LatticeEigenVectorBundle
 public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.IsExcisionNbhdAway
 public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsLieModel
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LieModelFiniteBaseChange
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LieOmegaLatticeVectorBundle
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.SpecStalkSpecializesComp
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.IsDerAtOneCompEndo
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ChartRingNoetherianNormalFraction
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ChartPointInChartDominated
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.SpMapEqFromSpecStalk
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0116
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0130
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0028
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0075
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0158
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0074
 
 @[expose] public section
 

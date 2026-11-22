@@ -1,10 +1,10 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsIsHalfIdem
-public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.MapFinNeg
-public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.StdCharacterHalfSymplecticFormRealPointStatement
-public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.RealSymplecticFormAlternatingInvariantDefiniteStatement
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0989
+public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.Bundle0070
+public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.Bundle0066
+public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.Bundle0060
 
 @[expose] public section
 
@@ -172,8 +172,8 @@ theorem series_theta_vacuum : ∀ (D : D7) (ψ : AddChar (AF D.host.F) ℂ) (hψ
   classical
   intro D ψ hψ θ σ hσ S T sS sT hS hT ΛS ΛT dS dT w hw a
   have hθ := hσ.inf
-  obtain ⟨hJJ, hskew, hinvJ, hneg⟩ := GlobalTheory.T.realSymplecticForm_alternating_invariant_definite D S T sS sT hS hT
-  obtain ⟨aL, aR, a0, -, acont, arat, -, -, -⟩ := GlobalTheory.T.homSymplecticHalfForm_algebraic_laws_continuous D S T
+  obtain ⟨hJJ, hskew, hinvJ, hneg⟩ := _root_.GlobalTheory.RealSymplForm.form_alt_inv_def D S T sS sT hS hT
+  obtain ⟨aL, aR, a0, -, acont, arat, -, -, -⟩ := _root_.GlobalTheory.OrientedFormLaws.symplOH_laws D S T
   have hA := selfDual_latF (GlobalTheory.LatVac.latO_selfDual_approx_sign D ψ S T ΛS ΛT hψ dS dT).1
   have htop : IsTopologicalAddGroup (WO S T) := (GlobalTheory.AdelicMatrixLattice.lattice D T S).1
   have hl : ∀ x y z : WO S T, ψ (symplOH S T (x + y) z) = ψ (symplOH S T x z) * ψ (symplOH S T y z) :=
@@ -183,7 +183,7 @@ theorem series_theta_vacuum : ∀ (D : D7) (ψ : AddChar (AF D.host.F) ℂ) (hψ
   have hd : ∀ x : WO S T, ψ (symplOH S T x x) = 1 := fun x => by rw [a0, AddChar.map_zero_eq_one]
   have hβ : ∀ (x : WO S T) (v : RW T S), ψ (symplOH S T x (iotaW σ T S v)) =
       Complex.exp (-(Real.pi * Complex.I) * (omO S T (piW θ T S x) v : ℝ)) := fun x v => by
-    have e := GlobalTheory.T.stdCharacter_halfSymplecticForm_realPoint D θ ψ hθ hψ S T x (iotaW σ T S v) (Or.inr (hσ.real_iota T S v))
+    have e := _root_.GlobalTheory.OrientedChar.char_symplOH D θ ψ hθ hψ S T x (iotaW σ T S v) (Or.inr (hσ.real_iota T S v))
     rw [hσ.pi_iota] at e
     exact e
   have fl : ∀ u ∈ latF S T ΛS ΛT, ∀ x : WO S T, phase ψ w u * (ψ (symplOH S T x u) *
@@ -215,7 +215,7 @@ theorem series_theta_vacuum : ∀ (D : D7) (ψ : AddChar (AF D.host.F) ℂ) (hψ
         exact (tauE D _).injective (e.trans (RingHom.map_zero _).symm)
       rw [this, map_zero])
     (fun R => by
-      refine ((GlobalTheory.T.finite_rational_points_completed_lattice D S T ΛS ΛT dS dT R).image (ratW T S)).subset ?_
+      refine ((_root_.GlobalTheory.CompletedLatticeFinite.finite_rational_points D S T ΛS ΛT dS dT R).image (ratW T S)).subset ?_
       rintro _ ⟨⟨g, rfl⟩, h1, h2⟩
       refine ⟨g, ⟨⟨_, h1, ?_⟩, fun τ i j => ?_⟩, rfl⟩
       · have e : (ratW T S g : WO S T) - (1 - realIdem D) • (ratW T S g : WO S T) =
@@ -231,14 +231,14 @@ theorem series_theta_vacuum : ∀ (D : D7) (ψ : AddChar (AF D.host.F) ℂ) (hψ
       · exact (hψ.1.2.1 _).le
       · rw [norm_zero]; exact zero_le_one)
     (fun x v => chiLat_add_real w x (hσ.real_iota T S v))
-    (GlobalTheory.T.isOpen_nsmul_completedHomLattice_finiteAdelic D S T ΛS ΛT dS dT 2 two_pos)
+    (_root_.GlobalTheory.LatOpen.isOpen_nsmul_latO D S T ΛS ΛT dS dT 2 two_pos)
     (fun u hu x => by
       obtain ⟨l, hl, e⟩ := hlev u hu
       have e2 := chiLat_add_lat hA hw (nsmul_mem hl 2) x
       rw [phase_two hA w hl, one_mul] at e2
       rw [e]
       exact e2) a
-  refine ⟨⟨fun g x => ?_, ⟨thick Λ 2, GlobalTheory.T.isOpen_nsmul_completedHomLattice_finiteAdelic D S T ΛS ΛT dS dT 2 two_pos, fun u hu h => ?_⟩, fc,
+  refine ⟨⟨fun g x => ?_, ⟨thick Λ 2, _root_.GlobalTheory.LatOpen.isOpen_nsmul_latO D S T ΛS ΛT dS dT 2 two_pos, fun u hu h => ?_⟩, fc,
     fun k L hL hL0 x => ?_⟩, fun u hu => Subtype.ext (funext fun x => fl u hu x), fun τ z => ?_⟩
   · have e : ψ (symplOH S T (ratW T S g) x) * serO ψ θ σ S T sS sT ΛS ΛT w a (ratW T S g + x) =
         serO ψ θ σ S T sS sT ΛS ΛT w a x :=

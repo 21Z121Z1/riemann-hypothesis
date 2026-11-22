@@ -1,12 +1,12 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.TranslateMemIndOrder
+public import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.Bundle0001
 public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.ExistsUnitFormLocalizationEtaleNbhd
-public import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.DualOrder
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.BaseChangePointsCompatStatement
+public import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.Bundle0002
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0016
 public import Development.WeilBound.CoreStatements.HodgeTatePoints.TwhopfSec
-public import Development.WeilBound.CoreStatements.HodgeTatePoints.HtatDesc
+public import Development.WeilBound.CoreStatements.HodgeTatePoints.Bundle0003
 
 @[expose] public section
 

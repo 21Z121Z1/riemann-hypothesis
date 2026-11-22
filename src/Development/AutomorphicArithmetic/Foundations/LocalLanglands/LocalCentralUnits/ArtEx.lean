@@ -1,10 +1,10 @@
 module
 
 public import Development.AutomorphicArithmetic.Foundations.LocalLanglands.RecTTransport
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.LocalArtinExistsHolds
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.GlobalArtinReciprocityHolds
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.GlobalArtinLocalIdeleInjective
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ChevalleyUnits
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0731
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0302
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0666
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0335
 
 @[expose] public section
 

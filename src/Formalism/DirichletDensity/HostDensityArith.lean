@@ -1,8 +1,7 @@
 module
 
-public import Formalism.DirichletDensity.DirichletDensityProofs.QuadDiscr
+public import Formalism.DirichletDensity.DirichletDensityProofs.Bundle0001
 public import Formalism.DirichletDensity.DirichletDensityProofs.MQDiscr
-public import Formalism.DirichletDensity.DirichletDensityProofs.APLogDensity
 public import Mathlib
 public import Formalism.DirichletDensity.Statement
 public import Formalism.CMTypeGalois.HalfTypesFromGeneral

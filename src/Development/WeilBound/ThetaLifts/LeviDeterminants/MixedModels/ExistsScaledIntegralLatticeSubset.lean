@@ -2,8 +2,8 @@ module
 
 public import Mathlib
 public import Development.WeilBound.ThetaLifts.LeviDeterminants.MixedModels.MixedModelPlanes.Imports
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsOpenScaledInt
-public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.IdeleCongruenceUnitCriterion
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1307
+public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.Bundle0031
 
 @[expose] public section
 

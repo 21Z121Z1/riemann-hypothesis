@@ -1,8 +1,8 @@
 module
 
-public import ReciprocityTheory.DualLattices.BlockOneMulMulBlockOne
-public import ReciprocityTheory.DualLattices.ProdDvdOfIso
-public import ReciprocityTheory.DualLattices.ExistsSmulMemOfMemSpan
+public import ReciprocityTheory.DualLattices.Bundle0013
+public import ReciprocityTheory.DualLattices.Bundle0015
+public import ReciprocityTheory.DualLattices.Bundle0004
 
 @[expose] public section
 

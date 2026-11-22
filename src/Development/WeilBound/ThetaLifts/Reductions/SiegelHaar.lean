@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Formalism.UnipotentAdelicQuotients.HaarProductClosedCompact
+public import Formalism.UnipotentAdelicQuotients.Bundle0001
 public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.HaarProductClosedCompactHolds
-public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.SmulNn
+public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0056
 
 @[expose] public section
 

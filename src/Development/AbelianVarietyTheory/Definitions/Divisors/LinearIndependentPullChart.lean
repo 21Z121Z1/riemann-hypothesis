@@ -3,9 +3,9 @@ module
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.Divisors.SecondCountableTopologyOfIsProjOver
 public import Development.AbelianVarietyTheory.Definitions.Divisors.QuasiRegularAlongOfEtale
-public import Development.AbelianVarietyTheory.Definitions.Divisors.LinearIndependentBasisCoords
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IndepBaseChange
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NonemptyHomologyEquiv
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0008
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0884
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0891
 
 @[expose] public section
 

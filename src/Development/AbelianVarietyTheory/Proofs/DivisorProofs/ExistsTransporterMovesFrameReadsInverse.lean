@@ -1,14 +1,14 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsTranspOfMovesAt
-public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.ExistsIsometryTriangularPeriodsOfFramePointMove
-public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.ExistsRationalIsometryOfTraceIsometry
-public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.NotAntiIsometryOfTriangularRelatedPeriods
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1821
+public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0153
+public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0037
+public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0154
 public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.FramesDifferByIsometryAndTriangularOfPeriods
-public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.ActLevFullLevelGroupFramedPoints
-public import Development.AbelianVarietyTheory.Proofs.GenericRegularity.FrameBorelGroupoidProperties
-public import Formalism.LocalToGlobal.ProjectiveLattices.FreeBridge
+public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0157
+public import Development.AbelianVarietyTheory.Proofs.GenericRegularity.Bundle0020
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0024
 
 @[expose] public section
 

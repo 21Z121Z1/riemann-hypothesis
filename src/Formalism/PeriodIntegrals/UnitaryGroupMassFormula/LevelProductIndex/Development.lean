@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Formalism.SatakeDualWeyl.StatementC
+public import Formalism.SatakeDualWeyl.Bundle0001
 
 @[expose] public section
 

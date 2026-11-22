@@ -2,8 +2,8 @@ module
 
 public import Mathlib
 public import Formalism.LocalToGlobal.IndefiniteReal.FWExist
-public import Formalism.LocalToGlobal.ProjectiveLattices.HeckeJ
-public import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.RealPoints
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0022
+public import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.Bundle0023
 
 @[expose] public section
 

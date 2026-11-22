@@ -2,10 +2,9 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.NormDwLeSobNorm
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsAvgClosure
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.InnerKAvgNeZero
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.CompactAverageKFiniteFiniteRank
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsRankOneIsAvg
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0207
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0233
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0254
 
 @[expose] public section
 

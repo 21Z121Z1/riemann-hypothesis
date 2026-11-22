@@ -1,8 +1,7 @@
 module
 
 public import Development.AutomorphicArithmetic.Foundations.Convolution.CentreSplitting.IsoEq
-public import Development.AutomorphicArithmetic.Foundations.Convolution.CentreSplitting.ExCusp
-public import Development.AutomorphicArithmetic.Foundations.Convolution.CentreSplitting.ExSummand
+public import Development.AutomorphicArithmetic.Foundations.Convolution.CentreSplitting.Bundle0004
 public import Development.AutomorphicArithmetic.Foundations.Convolution.CentreSplitting.LocalRepresentationL2
 
 @[expose] public section

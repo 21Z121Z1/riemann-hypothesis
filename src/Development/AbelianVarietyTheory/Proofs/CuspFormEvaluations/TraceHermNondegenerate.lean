@@ -1,10 +1,10 @@
 module
 
 public import Mathlib
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.FundamentalDomains.FundamentalDomainPointBound
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.HeightTheory.Transference
-public import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.EmbeddingHermSelf
-public import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.IsLocalizedModuleSubtype
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.FundamentalDomains.Bundle0003
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.HeightTheory.Bundle0006
+public import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.Bundle0006
+public import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.Bundle0007
 
 @[expose] public section
 

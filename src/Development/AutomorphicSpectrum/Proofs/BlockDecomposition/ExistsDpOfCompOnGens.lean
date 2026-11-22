@@ -4,7 +4,7 @@ public import Mathlib
 public import Development.WeilBound.CoreStatements.TemperedRepresentationTheory.SquareIdealLifts.NilpotentDividedPowerTrivial
 public import Development.AbelianVarietyTheory.Definitions.Divisors.RatBasisLinearIndependentInt
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsIsPreDividedPowersOfGenerators
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsDividedPowerEvalTwoVarsRingHom
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0026
 
 @[expose] public section
 

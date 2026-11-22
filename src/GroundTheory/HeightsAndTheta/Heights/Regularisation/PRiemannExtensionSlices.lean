@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import ReciprocityTheory.AnalyticForms.AnalyticCharts.Osgood
-public import GroundTheory.HeightsAndTheta.Heights.Regularisation.StRiemannSlices
+public import GroundTheory.HeightsAndTheta.Heights.Regularisation.Bundle0001
 
 @[expose] public section
 

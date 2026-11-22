@@ -3,13 +3,13 @@ module
 public import Mathlib
 public import Formalism.LocalToGlobal.SiegelLatticeTheory.FlagStabilizerTensors.RowDict
 public import Formalism.LocalToGlobal.SiegelLatticeTheory.FlagStabilizerTensors.RootLatticeThresholds.RowDictPf
-public import Formalism.SharpRestriction.LevelLetterCocycles.ArithmeticCylinders
-public import Formalism.SharpRestriction.CuspSpanNormBounds.PlaceDegreeData
+public import Formalism.SharpRestriction.LevelLetterCocycles.Bundle0004
+public import Formalism.SharpRestriction.CuspSpanNormBounds.Bundle0006
 public import Formalism.SharpRestriction.ParConsts
-public import Formalism.SharpRestriction.LevelLetterCocycles.CylinderCountFamily
+public import Formalism.SharpRestriction.LevelLetterCocycles.Bundle0025
 public import Formalism.SharpRestriction.LevelLetterCocycles.JointConditionsZpowers.JCountP
 public import Formalism.LocalToGlobal.SiegelLatticeTheory.HaarTransversals.UnitaryHaarProducts.BunExists
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsUniUpMul
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0712
 
 @[expose] public section
 

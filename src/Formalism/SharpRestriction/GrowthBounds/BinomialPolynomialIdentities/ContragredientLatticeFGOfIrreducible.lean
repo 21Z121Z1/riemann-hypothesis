@@ -1,6 +1,6 @@
 module
 
-public import Formalism.SharpRestriction.GrowthBounds.BinomialPolynomialIdentities.NablaDualLatticeOfIrreducibleLowestGenerated
+public import Formalism.SharpRestriction.GrowthBounds.BinomialPolynomialIdentities.Bundle0005
 
 @[expose] public section
 

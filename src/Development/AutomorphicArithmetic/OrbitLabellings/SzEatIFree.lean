@@ -1,7 +1,7 @@
 module
 
 public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.SizeAbsorption.PrimeWeightedRemainderBound
-public import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.PrimeLogOverP
+public import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.Bundle0005
 public import Development.AutomorphicArithmetic.OrbitLabellings.SumLogMulMaxZeroLeOfOddAddOrderOf
 
 @[expose] public section

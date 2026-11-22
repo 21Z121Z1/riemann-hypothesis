@@ -2,7 +2,7 @@ module
 
 public import Development.WeilBound.RepresentationTheoryGL.PeriodRingBases.PeriodRingUnits.DieudonneManinBasisModification
 public import Development.WeilBound.CoreStatements.CrystallinePeriodRings.AinfMapSurjective
-public import Development.WeilBound.CoreStatements.CrystallinePeriodRings.InvRestrictScalarsMem
+public import Development.WeilBound.CoreStatements.CrystallinePeriodRings.Bundle0002
 
 @[expose] public section
 

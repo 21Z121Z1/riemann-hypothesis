@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Formalism.WindowSums.Statement
-public import Formalism.FrobeniusContraction.Statement
+public import Formalism.FrobeniusContraction.Bundle0001
 public import Formalism.LagrangeIdealLifts.Statement
 
 @[expose] public section

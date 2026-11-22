@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.SegreJoin
+public import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.Bundle0035
 
 @[expose] public section
 

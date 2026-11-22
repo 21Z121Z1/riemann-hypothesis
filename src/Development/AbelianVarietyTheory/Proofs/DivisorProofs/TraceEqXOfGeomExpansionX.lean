@@ -2,16 +2,24 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.Divisors.TestFnConstTermVanishX
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.MeasurableEmbeddingEquiv
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RealStableOfCharacters
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GeometricExpansionOfParts
-public import Development.AbelianVarietyTheory.Definitions.Divisors.HasTypeVec
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TestFunctionsTransportLocalLatticeIsometriesStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.StableOrbitalIntegralPreservedLatticeIsometryStatement
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0311
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1252
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1202
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0040
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1232
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1229
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TraceInputsImplyCuspidalTrace
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CuspidalTraceMultiplicityGiven
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DiscreteSeriesOddRankGap
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CuspidalSpectrumFinitenessOfDecayHarishChandraStatement
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1744
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1198
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1325
+public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.Bundle0007
+public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.Bundle0004
+public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.Bundle0012
+public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.Bundle0007
+public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.Bundle0013
+public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.Bundle0008
+public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.ExistsCellOfIsSubquotient
+public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.RadfordShufflePolynomialHolds
 
 @[expose] public section
 
@@ -263,13 +271,13 @@ theorem realStableX : RealStableX := by
     · rw [hM, hk]; push_cast; ring
   rw [Phi, PhiReal]
   split_ifs with hc
-  · obtain ⟨hfin, y, θ, hbij, hexp, hconj⟩ := GlobalTheory.T.compactRealPlace_torusClasses_signVectors V M ρ P hc
+  · obtain ⟨hfin, y, θ, hbij, hexp, hconj⟩ := _root_.GlobalTheory.RealSigns.signs_real V M ρ P hc
     have hval : ∀ q : XSet P (placeOf D ρ).Completion V.gram, orbCls (J := V.gram) (μa (placeOf D ρ)) dt (fa (placeOf D ρ)) q =
         conj (dsChar (M.ε ρ) (M.lam ρ) (θ q)) / (dt.real univ : ℂ) := by
       intro q
-      obtain ⟨hH, hR, hvol, hcpt⟩ := GlobalTheory.T.centralizer_torusEllipticElement_realPlace V P ρ dt q.2.choose_spec.choose_spec.2
+      obtain ⟨hH, hR, hvol, hcpt⟩ := _root_.GlobalTheory.RealPlaceCentraliser.centMeas_real_place V P ρ dt q.2.choose_spec.choose_spec.2
       obtain ⟨g, hg⟩ := hconj q
-      have := hO ρ _ (GlobalTheory.T.isRegularSemisimple_torusEllipticElement_realPlace V P ρ q.2.choose_spec.choose_spec.2) (hcpt.2 hc) g (θ q) hg (centMeas _ dt)
+      have := hO ρ _ (_root_.GlobalTheory.RegularGamma.isRegSS_gam V P ρ q.2.choose_spec.choose_spec.2) (hcpt.2 hc) g (θ q) hg (centMeas _ dt)
       rw [orbCls, this.orbInt_eq, hvol]
     have : Finite (XSet P (placeOf D ρ).Completion V.gram) := hfin.to_subtype
     have hlam' : M.lam ρ = fun a => ((lam ρ a : ℤ) : ℝ) := funext (hM ρ)
@@ -277,14 +285,14 @@ theorem realStableX : RealStableX := by
       have := P.2.2.1.separable.map (f := (embOverOf D ρ).1)
       rw [cxRoots_spec] at this
       exact Polynomial.separable_prod_X_sub_C_iff.1 this
-    have h2 := GlobalTheory.T.finsum_discreteSeriesCharacter_eq_weylCharacter V.rank (M.ε ρ) (lam ρ) (cxRoots (embOverOf D ρ).1 P) _ y θ hodd hinj hbij hexp
+    have h2 := _root_.GlobalTheory.dsChar_finsum_eq_glChar V.rank (M.ε ρ) (lam ρ) (cxRoots (embOverOf D ρ).1 P) _ y θ hodd hinj hbij hexp
     rw [finsum_congr hval, hlam', ← h2]
     have := Fintype.ofFinite (XSet P (placeOf D ρ).Completion V.gram)
     set_option synthInstance.maxHeartbeats 100000 in
       rw [finsum_eq_sum_of_fintype, finsum_eq_sum_of_fintype, map_sum, Finset.sum_div]
   · refine (finsum_congr fun q => ?_).trans finsum_zero
-    obtain ⟨hH, hR, hvol, hcpt⟩ := GlobalTheory.T.centralizer_torusEllipticElement_realPlace V P ρ dt q.2.choose_spec.choose_spec.2
-    exact (hf.orb_noncompact _ (GlobalTheory.T.isRegularSemisimple_torusEllipticElement_realPlace V P ρ q.2.choose_spec.choose_spec.2) (mt hcpt.1 hc) _).orbInt_eq
+    obtain ⟨hH, hR, hvol, hcpt⟩ := _root_.GlobalTheory.RealPlaceCentraliser.centMeas_real_place V P ρ dt q.2.choose_spec.choose_spec.2
+    exact (hf.orb_noncompact _ (_root_.GlobalTheory.RegularGamma.isRegSS_gam V P ρ q.2.choose_spec.choose_spec.2) (mt hcpt.1 hc) _).orbInt_eq
 
 theorem geomExpansionX_of_parts : GlobalTheory.TrMult.EllTraceX → GlobalTheory.IndefiniteRowSideFullHecke.PlusPolynomialRoots.EllipticPartX → RealStableX →
     GeomExpansionX := by
@@ -307,7 +315,7 @@ theorem geomExpansionX_of_parts : GlobalTheory.TrMult.EllTraceX → GlobalTheory
 
 theorem traceEqX_of_geomExpansionX : GeomExpansionX → TraceEqX := by
   intro hG D V lam S M T U μa μf μ _ _ fa ff hTD hO V' hr S' M' hlam' j hj μa' μ' _ _ fa' hR' hA' hO'
-  obtain ⟨-, hTU⟩ := GlobalTheory.T.testFunctions_transport_localLatticeIsometries D V V' hr j hj
+  obtain ⟨-, hTU⟩ := _root_.GlobalTheory.LatTransport.isTestFin_transport D V V' hr j hj
   obtain ⟨T', U', hNF, hTF⟩ := hTU T U
   obtain ⟨hodd, hgap, hMl, hnf, hRP, hTA, hTFin⟩ := hTD
   set lam' : D.what₂.Tau → Fin V'.rank → ℤ := fun ρ i => lam ρ (i.cast hr) with hlamdef
@@ -373,14 +381,14 @@ set_option maxHeartbeats 1000000 in
 theorem trCusp'_of_steps (hL : LocalPC) (hF : SpecFin) (hT : GlobalTheory.TrMult.SpecTraceX) (hS : Separation)
     (hE : TraceEqX) : TRCusp' := by
   intro D V lam S M T hodd hgap hlam hnf V' hr S' M' hlam' j hj Φ hΦ μ _ _ μ' _ _ W _ _ σ hirr hadm htv
-  obtain ⟨U, hU⟩ := GlobalTheory.T.exists_splitPlaceHermitianSpace_notMem_finset D V T.S
+  obtain ⟨U, hU⟩ := _root_.GlobalTheory.AuxiliarySplitPlace.exists_auxiliarySplitPlace_notMem_finset D V T.S
   let μf : ∀ v, Measure (GLoc D.sp.cm.sig V.gram v) := fun v => haarLoc D.sp.cm.sig V.gram (frameLat V) v
   have hμf : ∀ v, (μf v).IsHaarMeasure := fun v => inferInstance
   have h1 : ∀ᶠ v in cofinite, μf v (Kv V v) = 1 := Eventually.of_forall fun v => haarLoc_stabLoc _ _ _ v
   have h1K : ∀ v, μf v (Kv V v) = 1 := fun v => haarLoc_stabLoc _ _ _ v
   clear_value μf
-  obtain ⟨⟨μa, hμa⟩, ν, hν⟩ := GlobalTheory.T.exists_restrictedProduct_haar_given_finiteFactors D V μ μf hμf h1
-  obtain ⟨hjK, hTU⟩ := GlobalTheory.T.testFunctions_transport_localLatticeIsometries D V V' hr j hj
+  obtain ⟨⟨μa, hμa⟩, ν, hν⟩ := _root_.GlobalTheory.ProdMeas.exists_prod_of_haar D V μ μf hμf h1
+  obtain ⟨hjK, hTU⟩ := _root_.GlobalTheory.LatTransport.isTestFin_transport D V V' hr j hj
   obtain ⟨T', U', hNF', hTF'⟩ := hTU T U
   let μf' : ∀ v, Measure (GLoc D.sp.cm.sig V'.gram v) := fun v => (μf v).map (j v)
   have hμf' : ∀ v, (μf' v).IsHaarMeasure := fun v => (j v).isHaarMeasure_map (μf v)
@@ -389,9 +397,9 @@ theorem trCusp'_of_steps (hL : LocalPC) (hF : SpecFin) (hT : GlobalTheory.TrMult
     rw [show μf' v (Kv V' v) = μf v ((j v) ⁻¹' (Kv V' v)) from Measure.map_apply (j v).continuous.measurable hm,
       show (j v) ⁻¹' (Kv V' v : Set _) = Kv V v from Set.ext fun g => hjK v g]
     exact h1K v
-  obtain ⟨⟨μa', hμa'⟩, -⟩ := GlobalTheory.T.exists_restrictedProduct_haar_given_finiteFactors D V' μ' μf' hμf' h1'
+  obtain ⟨⟨μa', hμa'⟩, -⟩ := _root_.GlobalTheory.ProdMeas.exists_prod_of_haar D V' μ' μf' hμf' h1'
   clear hμf'
-  obtain ⟨hfinFn, hνmap⟩ := GlobalTheory.T.transport_pureTensors_productMeasure_finiteAdelic D V V' j hjK Φ hΦ
+  obtain ⟨hfinFn, hνmap⟩ := _root_.GlobalTheory.TrMultTransport.transport D V V' j hjK Φ hΦ
   have hν' := hνmap μf ν hν
   let lam' : D.what₂.Tau → Fin V'.rank → ℤ := fun ρ i => lam ρ (i.cast hr)
   have hgap' : ∀ ρ, GapG V'.rank (lam' ρ) := fun ρ i k hik => by
@@ -400,7 +408,7 @@ theorem trCusp'_of_steps (hL : LocalPC) (hF : SpecFin) (hT : GlobalTheory.TrMult
   have hodd' : Odd V'.rank := hr ▸ hodd
   obtain ⟨fa, hfa, hfo⟩ := haveI := (isRestrictedProd_iff.1 hμa).1; exists_testArch hL M lam hodd hgap hlam μa
   obtain ⟨fa', hfa', hfo'⟩ := haveI := (isRestrictedProd_iff.1 hμa').1; exists_testArch hL M' lam' hodd' hgap' hlam' μa'
-  obtain ⟨K, hKo, hKc, hK⟩ := GlobalTheory.T.exists_openCompact_level_sphericalOffTypes D V T U
+  obtain ⟨K, hKo, hKc, hK⟩ := _root_.GlobalTheory.TrMult.oneLevel D V T U
   obtain ⟨hfin, hfam⟩ := hF D V S M μ
   obtain ⟨hfin', hfam'⟩ := hF D V' S' M' μ'
   obtain ⟨n₁, W₁, _, _, σ₁, hσ₁, hcov₁⟩ := hfam K hKo
@@ -413,14 +421,14 @@ theorem trCusp'_of_steps (hL : LocalPC) (hF : SpecFin) (hT : GlobalTheory.TrMult
   obtain ⟨m, Ws, _, _, τ, hne, hA, hB, hmem, j₀, hj₀⟩ := exists_family σ₁ B σ
 
   have hBi : ∀ i, (B i).IsIrreducible ∧ IsAdmissible (B i) := fun i =>
-    have h := GlobalTheory.T.representation_transport_topGroupEquiv _ _ Φ.symm (ν.map Φ) (W₂ i) (σ₂ i)
+    have h := _root_.GlobalTheory.TransportIso.irreducible_admissible_integralOp_transport _ _ Φ.symm (ν.map Φ) (W₂ i) (σ₂ i)
     ⟨h.1 (hσ₂.1 i), h.2.1 (hσ₂.2.1 i)⟩
   have hτ : ∀ i, (τ i).IsIrreducible ∧ IsAdmissible (τ i) :=
     hmem (fun X _ _ ρ => ρ.IsIrreducible ∧ IsAdmissible ρ) (fun i => ⟨hσ₁.1 i, hσ₁.2.1 i⟩) hBi ⟨hirr, hadm⟩
   let τ' : ∀ i, Representation ℂ (GfC V') (Ws i) := fun i => (τ i).comp Φ.symm.toMulEquiv.toMonoidHom
   have hfamτ : IsIrrFam τ := ⟨fun i => (hτ i).1, fun i => (hτ i).2, hne⟩
   have hfamτ' : IsIrrFam τ' := by
-    refine ⟨fun i => (GlobalTheory.T.representation_transport_topGroupEquiv _ _ Φ ν _ (τ i)).1 (hτ i).1, fun i => (GlobalTheory.T.representation_transport_topGroupEquiv _ _ Φ ν _ (τ i)).2.1 (hτ i).2,
+    refine ⟨fun i => (_root_.GlobalTheory.TransportIso.irreducible_admissible_integralOp_transport _ _ Φ ν _ (τ i)).1 (hτ i).1, fun i => (_root_.GlobalTheory.TransportIso.irreducible_admissible_integralOp_transport _ _ Φ ν _ (τ i)).2.1 (hτ i).2,
       fun i k hik => ⟨fun e => (hne i k hik).false ?_⟩⟩
     exact (equivCompSymm (τ i) Φ.toMulEquiv).trans
       ((equivComp e Φ.toMulEquiv.toMonoidHom).trans (equivCompSymm (τ k) Φ.toMulEquiv).symm)
@@ -430,7 +438,7 @@ theorem trCusp'_of_steps (hL : LocalPC) (hF : SpecFin) (hT : GlobalTheory.TrMult
         mCuspDS μ ρ M ≠ 0 → ¬ GlobalTheory.IndefiniteRowSideFullHecke.IwahoriDoubleCosets.IsIntegralOp ν ρ (finFn V ff) 0 → ∃ i, Nonempty (ρ.Equiv (τ i)) := by
     intro ff hffin hKinv X _ _ ρ hi ha hm hz
     haveI := hν.1
-    obtain ⟨x, hx0, hx⟩ := (GlobalTheory.T.admissibleRep_hasTrace_finiteAdelicPureTensorFunction D V ν ff hffin X ρ ha).2 K hKo hKc hKinv hz
+    obtain ⟨x, hx0, hx⟩ := (_root_.GlobalTheory.FinTrace.hasTrace_finFn D V ν ff hffin X ρ ha).2 K hKo hKc hKinv hz
     obtain ⟨i, ⟨e⟩⟩ := hcov₁ X ρ hi ha hm ⟨x, hx0, hx⟩
     obtain ⟨k, ⟨e'⟩⟩ := hA i
     exact ⟨k, ⟨e.trans e'⟩⟩
@@ -447,7 +455,7 @@ theorem trCusp'_of_steps (hL : LocalPC) (hF : SpecFin) (hT : GlobalTheory.TrMult
       obtain ⟨g₀, rfl⟩ := Φ.surjective g
       change finFn V' (transfer j ff) (Φ k₀ * Φ g₀) = _
       rw [← map_mul, hfinFn, hfinFn, hKinv k₀ hk₀]
-    obtain ⟨x, hx0, hx⟩ := (GlobalTheory.T.admissibleRep_hasTrace_finiteAdelicPureTensorFunction D V' (ν.map Φ) (transfer j ff) hffin X ρ ha).2 K' hK'o hK'c hKinv' hz
+    obtain ⟨x, hx0, hx⟩ := (_root_.GlobalTheory.FinTrace.hasTrace_finFn D V' (ν.map Φ) (transfer j ff) hffin X ρ ha).2 K' hK'o hK'c hKinv' hz
     obtain ⟨i, ⟨e⟩⟩ := hcov₂ X ρ hi ha hm ⟨x, hx0, hx⟩
     obtain ⟨k, ⟨e'⟩⟩ := hB i
     exact ⟨k, ⟨e.trans ((equivCompSymm' (σ₂ i) Φ).trans (equivComp e' Φ.symm.toMulEquiv.toMonoidHom))⟩⟩
@@ -467,7 +475,7 @@ theorem trCusp'_of_steps (hL : LocalPC) (hF : SpecFin) (hT : GlobalTheory.TrMult
     have hc' : ∀ i, GlobalTheory.IndefiniteRowSideFullHecke.IwahoriDoubleCosets.HasTrace (ν.map Φ) (τ' i) (finFn V' (transfer j ff)) (c i) := by
       intro i
       obtain ⟨A, hA, hA'⟩ := hc i
-      exact ⟨A, ((GlobalTheory.T.representation_transport_topGroupEquiv _ _ Φ ν _ (τ i)).2.2 (finFn V ff) (finFn V' (transfer j ff)) (hfinFn ff) A).2 hA, hA'⟩
+      exact ⟨A, ((_root_.GlobalTheory.TransportIso.irreducible_admissible_integralOp_transport _ _ Φ ν _ (τ i)).2.2 (finFn V ff) (finFn V' (transfer j ff)) (hfinFn ff) A).2 hA, hA'⟩
     have h₂ := hT D V' lam' S' M' T' U' μa' μf' μ' fa' (transfer j ff) htd' (ν.map Φ) hν' m Ws τ' hfamτ'
       (cov' ff hff'.isFinFamily hKinv) c hc'
     obtain ⟨c₀, hc₁, hc₂⟩ := hE D V lam S M T U μa μf μ fa ff htd hfo V' hr S' M' hlam' j hj μa' μ' fa' hμa' hfa' hfo'
@@ -482,7 +490,7 @@ theorem trCusp'_of_steps (hL : LocalPC) (hF : SpecFin) (hT : GlobalTheory.TrMult
     have : ((mCuspDS μ (τ j₀) M).toNat : ℂ) = ((mCuspDS μ' (τ' j₀) M').toNat : ℂ) := sub_eq_zero.1 ha
     rw [← hm₁, ← hm₂]
     exact_mod_cast this
-  have hσ' := GlobalTheory.T.representation_transport_topGroupEquiv _ _ Φ ν W σ
+  have hσ' := _root_.GlobalTheory.TransportIso.irreducible_admissible_integralOp_transport _ _ Φ ν W σ
   rw [← Cardinal.cast_toNat_of_lt_aleph0 (hfin W σ hirr hadm),
     ← Cardinal.cast_toNat_of_lt_aleph0 (hfin' W _ (hσ'.1 hirr) (hσ'.2.1 hadm)), hnat]
 
@@ -545,23 +553,23 @@ theorem multEq_of_trCusp' : GlobalTheory.Published.CuspRapidDecay → GlobalTheo
   intro hRD hHC hDM hGC hTR D G _ _ Pl0 T A Ks _ _ _ R F hG
   intro i M₀ j Φ hΦ W _ _ σ hirr hadm hgood
   obtain ⟨Ty, hNF, hTV⟩ := GlobalTheory.T.exists_typeVector_of_good_level_representation hGC R F hG W σ hadm hgood
-  obtain ⟨jl, Φ₀, b, hjl, hΦ₀, hb⟩ := GlobalTheory.T.exists_localIsometries_innerAut_adelicFrameIsometry R F hG i j Φ hΦ
+  obtain ⟨jl, Φ₀, b, hjl, hΦ₀, hb⟩ := _root_.GlobalTheory.FinIsoLocal.exists_local_inner R F hG i j Φ hΦ
   obtain ⟨hr, lam, hodd, hgap, hM₀, hMW⟩ := params_match' R F hG i M₀
   have hinf : IsInfFam R.θ := hG.core.models.inf
   let μ : Measure (GA D (Yc D 0)) := Measure.haar
   let μ' : Measure (GA D (Wc D i)) := Measure.haar
-  haveI : μ.IsMulRightInvariant := GlobalTheory.T.isMulRightInvariant_haar_adelicUnitaryGroup_hermitianSpace D _ μ inferInstance
-  haveI : μ'.IsMulRightInvariant := GlobalTheory.T.isMulRightInvariant_haar_adelicUnitaryGroup_hermitianSpace D _ μ' inferInstance
+  haveI : μ.IsMulRightInvariant := _root_.GlobalTheory.AdelicPointsUnimod.isMulRightInvariant_of_isHaarMeasure D _ μ inferInstance
+  haveI : μ'.IsMulRightInvariant := _root_.GlobalTheory.AdelicPointsUnimod.isMulRightInvariant_of_isHaarMeasure D _ μ' inferInstance
   have hadm' : IsAdmissible (σ.comp Φ.symm.toMulEquiv.toMonoidHom) :=
     GlobalTheory.CuspMult.isAdmissible_comp_equiv σ Φ.symm hadm
-  rw [GlobalTheory.T.cuspidalMultiplicity_eq_discreteSeriesModel_maps hRD hHC hDM D R.θ hinf (Yc D 0) _ M₀ μ W σ hadm.1,
-    GlobalTheory.T.cuspidalMultiplicity_eq_discreteSeriesModel_maps hRD hHC hDM D R.θ hinf (Wc D i) _ (R.MW i (sg0 D A)) μ' W _ hadm'.1,
+  rw [_root_.GlobalTheory.AutMult.cuspMult_eq_mCuspDS hRD hHC hDM D R.θ hinf (Yc D 0) _ M₀ μ W σ hadm.1,
+    _root_.GlobalTheory.AutMult.cuspMult_eq_mCuspDS hRD hHC hDM D R.θ hinf (Wc D i) _ (R.MW i (sg0 D A)) μ' W _ hadm'.1,
     hTR D (Yc D 0) lam _ M₀ Ty hodd hgap hM₀ hNF (Wc D i) hr _ (R.MW i (sg0 D A)) hMW jl hjl Φ₀ hΦ₀ μ μ' W σ hirr hadm hTV]
   exact ((mDS_congr (GlobalTheory.MultEqTrace.conjEquiv σ Φ.toMulEquiv Φ₀.toMulEquiv b hb)).2).symm
 
 theorem multEq_of_sides : LocalPC → GlobalTheory.Published.CuspRapidDecay → GlobalTheory.Published.HarishChandraFinite → GlobalTheory.Published.DixmierMalliavinFactorisation → GlobalTheory.Published.GreenCuspidal → SpecTraceX → Separation → EllTraceX → GlobalTheory.IndefiniteRowSideFullHecke.PlusPolynomialRoots.EllipticPartX → ∀ {D : D7} {G : Type} [Group G] [Fintype G] {Pl0 T : Type} {A : FamIn D.what₂.LL G Pl0 T D.R.m} {Ks : Type} [Field Ks] [NumberField Ks] [Algebra Ks D.what₂.LL] (R : RealDat D A Ks) (F : Face D A), Given R F → GlobalTheory.CuspMult.MultEq R := by
   intro hL rd hf dm gc hS hSep hE hP D G _ _ Pl0 T A Ks _ _ _ R F hG
-  exact multEq_of_trCusp' rd hf dm gc (trCusp'_of_steps hL (GlobalTheory.T.cuspidal_spectrum_finiteness_of_decay_harishChandra rd hf dm) hS hSep
+  exact multEq_of_trCusp' rd hf dm gc (trCusp'_of_steps hL (_root_.GlobalTheory.SpecFinite.specFin rd hf dm) hS hSep
     (traceEqX_of_geomExpansionX (geomExpansionX_of_parts hE hP realStableX))) R F hG
 
 end GlobalTheory.PsCo.Pc

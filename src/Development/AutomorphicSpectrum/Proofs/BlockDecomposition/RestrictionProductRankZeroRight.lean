@@ -2,8 +2,8 @@ module
 
 public import Mathlib
 public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SubsingletonOfGiso
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MultiProductSingleFactorEquiv
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.EGPgTrueEqLastIff
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0570
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0597
 
 @[expose] public section
 

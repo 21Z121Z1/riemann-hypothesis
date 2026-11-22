@@ -1,6 +1,6 @@
 module
 
-public import Formalism.PieriBlockIdeals.StatementTop
+public import Formalism.PieriBlockIdeals.Bundle0007
 public import Formalism.PieriBlockIdeals.StatementJoint
 
 @[expose] public section

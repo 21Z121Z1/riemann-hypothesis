@@ -4,15 +4,18 @@ public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.IsStepWeil
 public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.AdmissibleDiscreteSeriesOfHasParam
 public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.HarishChandraModulesOn
-public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.ExistsNormLeHeightPow
-public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.ExistsGrowthSobNeTopOfIsAutFunSm
+public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.Bundle0007
+public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.Bundle0009
 public import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.CovolOneIntegralAdd
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ConstantTermLiftIsotropicSubspaceStatement
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ThetaLiftLowerTowerVanishingStatement
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsLowerWittTowerIsotropicSplitEmbeddingStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsWeilDatumOfSplittingCharactersStatement
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0398
+public import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.Bundle0021
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0397
+public import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.Bundle0014
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0224
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1240
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0024
 public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsUnramifiedHeckeCharHalfExponentRestrictQua
-public import Formalism.LocalToGlobal.BesselHermitianTheta.LemmasChr
+public import Formalism.LocalToGlobal.BesselHermitianTheta.Bundle0002
 
 @[expose] public section
 
@@ -158,17 +161,17 @@ theorem constTerm_multT (hct : TowerConstTerm D) (hP : GlobalTheory.Published.Cu
 theorem liftCusp : GlobalTheory.Published.DiscreteSeriesCover → GlobalTheory.Published.HarishChandraModules → GlobalTheory.Published.CuspRapidDecay →
     ∀ D : D7, GlobalTheory.Chain.LiftCusp D := by
   intro hDS hHC hP D k V W M M' θ ψ hθ hch ω hω ν 𝓕 hν h𝓕 J χ F hF v f hf r C hC κ 𝓝 hκ h𝓝 g
-  obtain ⟨V', B, hs, hsig⟩ := GlobalTheory.T.exists_lowerWittTower_isotropicSplitEmbedding D V _ M r C hC
+  obtain ⟨V', B, hs, hsig⟩ := _root_.GlobalTheory.TowerSplit.exists_isoSplit D V _ M r C hC
   have hr : 1 ≤ r := by
     obtain ⟨h0, -⟩ := hC
     exact h0
   obtain ⟨χS, χT, hW, hexp⟩ := hω
   obtain ⟨η, h1, h2, h3, h4⟩ := GlobalTheory.Mem.EtaTilde.exists_etaTilde D
-  obtain ⟨ω', hW'⟩ := GlobalTheory.T.exists_weilDatum_of_splittingCharacters D ψ hW.std V' W χS χT (Exists.intro η (And.intro h1 (And.intro h4 (And.intro h3 h2))))
+  obtain ⟨ω', hW'⟩ := _root_.GlobalTheory.WeilExist.exists_isWeilDatumO D ψ hW.std V' W χS χT (Exists.intro η (And.intro h1 (And.intro h4 (And.intro h3 h2))))
     hW.hecS hW.hecT (resEta_parity hW.resS (by have := hs.rank; omega)) hW.resT
   have hst : GlobalTheory.Chain.IsStepWeil k ψ V' W ω' := Exists.intro χS (Exists.intro χT (And.intro hW' hexp))
-  exact constTerm_multT (GlobalTheory.T.constantTermLift_isotropicSubspace D) hP hs hθ hW hW' hν h𝓕 M' J χ F hF v hf
-    (fun f' hf' => congrFun (GlobalTheory.T.thetaLift_lowerTower_vanishing hDS hHC hP D k r V' W M' θ ψ hθ hch hr hsig ω' hst ν 𝓕 hν h𝓕 J χ F hF v f'
+  exact constTerm_multT (_root_.GlobalTheory.TowerConstTermObj.towerConstTerm D) hP hs hθ hW hW' hν h𝓕 M' J χ F hF v hf
+    (fun f' hf' => congrFun (_root_.GlobalTheory.LowVanishObj.lowVanish_obj hDS hHC hP D k r V' W M' θ ψ hθ hch hr hsig ω' hst ν 𝓕 hν h𝓕 J χ F hF v f'
       hf') 1) κ 𝓝 hκ h𝓝 g
 
 end GlobalTheory.LiftCuspObj

@@ -2,8 +2,8 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.StrongMultiplicityOne
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ValuationDivZpowOrd
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsFixedIff
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0046
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0116
 public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.HasSatakeGLOfIsSatVecGL
 
 @[expose] public section

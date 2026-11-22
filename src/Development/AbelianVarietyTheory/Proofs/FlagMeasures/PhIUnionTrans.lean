@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.IsMirClass
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.PatternGroupSubgroupOrderCharacterStatement
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.IsotypicTraceEqOfOneDoubleCosetStatement
+public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.Bundle0007
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0147
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0128
 
 @[expose] public section
 
@@ -273,7 +273,7 @@ theorem exchange (ψ : AddChar (ZMod g) ℂ) (hψ : ψ ≠ 1) (Φ₁ Φ₂ E : F
     exact exists_conj (Φ := fun a b => Φ₁ a b ∨ Φ₂ a b) ψ hψ hE hpq (c2 w hw) hu₂
       (Or.inl fun e => hp (by rw [e]; exact hw)) H₂ hH₂ hm₂ h hA hB (by rw [hqq, mul_one]; exact hpw)
   rw [tr_ePat ψ Φ₁ E H₁ hH₁ χ, tr_ePat ψ Φ₂ E H₂ hH₂ χ]
-  have key := GlobalTheory.T.isotypic_trace_eq_of_one_double_coset (Gn g N) H H₁ H₂ (patChar ψ E hE H₁ hm₁) (patChar ψ E hE H₂ hm₂)
+  have key := _root_.GlobalTheory.GLm.OneDoubleCoset.isotypic_trace_eq (Gn g N) H H₁ H₂ (patChar ψ E hE H₁ hm₁) (patChar ψ E hE H₂ hm₂)
     hle₁ hle₂ hcard heq hx₁ hx₂ χ hχ
   simpa only [Units.val_inv_eq_inv_val, patChar_val] using key
 

@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsE8WeightedBundle
-public import Development.AbelianVarietyTheory.Definitions.Divisors.IsChartMember
-public import ReciprocityTheory.AnalyticForms.RegularLocalRings.FinalTheorems
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2188
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0063
+public import ReciprocityTheory.AnalyticForms.RegularLocalRings.Bundle0001
 public import Development.AbelianVarietyTheory.Definitions.ModuliSpaces.GoodClass
 public import Development.AbelianVarietyTheory.Definitions.ModuliSpaces.ExistsArBaseAway
 public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ClsLinCombSingle

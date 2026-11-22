@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.Statements
-public import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.LogIntCircle
+public import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.Bundle0003
 
 @[expose] public section
 

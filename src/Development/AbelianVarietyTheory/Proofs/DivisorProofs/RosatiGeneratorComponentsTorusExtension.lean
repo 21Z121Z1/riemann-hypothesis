@@ -4,9 +4,9 @@ public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.Divisors.IsProjOverWeierstrass
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.UniformisationConclusion
 public import Development.AbelianVarietyTheory.Definitions.Degenerations.AdmissibleBaseOfCompleteDvr
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TensFacts
-public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.WithISelf
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GtRelVIff
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2318
+public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.Bundle0132
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2368
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RosatiAdjTensorPowerIntMatrixEndomorphism
 
 @[expose] public section

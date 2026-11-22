@@ -2,31 +2,29 @@ module
 
 public import Mathlib
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.SecBaseChangeAnySt
-public import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.AbelianSchemeLawsWithoutCohomologyStatement
-public import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.HasEnoughRootsOfUnityGlobalSections
-public import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.ExistsGenTranslEqPairing
-public import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.CubicalOfNormalised
-public import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.FlatOfIsFiniteOfFlatGeometricFibres
-public import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.IsAffineHomFromSpecResidueField
-public import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.FlatAndSurjectiveOfIsFiniteAbelianEnd
-public import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.ExistsUniqueDescendOfTorsionInvariant
+public import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.AbelianSchemeLawsWithoutCohomology
+public import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.Bundle0004
+public import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.Bundle0020
+public import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.Bundle0017
+public import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.Bundle0006
+public import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.Bundle0014
+public import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.Bundle0010
 public import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.LocGenOfTrivial
-public import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.MulPullOfCubeOfSymm
-public import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.MulAFiniteFlatSurjectiveEtale
-public import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.ExistsIsGenOfInvariant
+public import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.Bundle0015
+public import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.Bundle0007
+public import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.Bundle0013
 public import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.NonemptyEquivPiOfWeights
-public import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.ExistsGenOfMemChart
-public import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.ExistsGenOfLocalOnBase
-public import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.SymmetricLiftOddOrderExistsUniqueStatement
-public import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.TwistedPowTranslate
-public import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.FormallyUnramifiedMulInvertibleIntegerStatement
+public import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.Bundle0024
+public import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.Bundle0018
+public import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.SymmetricLiftOddOrderExistsUnique
+public import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.Bundle0016
+public import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.Bundle0011
 public import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.ExistsUniqueWeilIs
-public import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.ExistsCommVOfLe
 public import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.WeilIsAlternatingSkewNatural
 public import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.WeilIsValueEq
-public import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.WeilIsIffCommIsOfAndLiftSubsingleton
-public import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.WeilStOfParts
-public import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.ForallGeometricallyIntegralOfSmoothOfGeometrical
+public import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.Bundle0021
+public import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.Bundle0005
+public import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.Bundle0003
 
 @[expose] public section
 
@@ -60,7 +58,7 @@ theorem weil (h : CubeGen) : WeilSt :=
     (GlobalTheory.weilIs_alternating_skew_natural g lift) (GlobalTheory.PairingLevels.weilIs_mul_iff g h lift w₁)
 
 theorem symLift (h : CubeGen) : SymLiftSt :=
-  (GlobalTheory.T.symmetric_lift_odd_order_exists_unique GlobalTheory.T.abelianScheme_laws_without_cohomology.1 (GlobalTheory.kerPow_of_square (GlobalTheory.AbSquare.square_of_cube h).1).2.2
+  (_root_.GlobalTheory.symLift_odd GlobalTheory.T.abelianScheme_laws_without_cohomology.1 (GlobalTheory.kerPow_of_square (GlobalTheory.AbSquare.square_of_cube h).1).2.2
     (GlobalTheory.exists_gen_negLB GlobalTheory.T.abelianScheme_laws_without_cohomology.1)).2
 
 theorem mulA_props (h : CubeGen) :
@@ -79,7 +77,7 @@ theorem weilNondeg (h : CubeGen) : WeilNondegSt :=
   GlobalTheory.weilNondeg_of_descent (GlobalTheory.torsion_invariant_descends (mulA_props h))
     (GlobalTheory.DescentPairing.exists_gen_transl_eq_pairing g (cube h)
       (GlobalTheory.weilIs_iff_commIsOf_and_lift_subsingleton g lift
-        (GlobalTheory.T.symmetric_lift_odd_order_exists_unique g lift (GlobalTheory.exists_gen_negLB g)).1) (weil h))
+        (_root_.GlobalTheory.symLift_odd g lift (GlobalTheory.exists_gen_negLB g)).1) (weil h))
 
 theorem charPair (h : CubeGen) : CharPairSt :=
   GlobalTheory.charPair_of_weil (weil h)
@@ -95,7 +93,7 @@ theorem sec_split (h : CubeGen) :
     (mulA_props h) (GlobalTheory.torsion_invariant_descends (mulA_props h))
     (GlobalTheory.DescentPairing.exists_gen_transl_eq_pairing g (cube h)
       (GlobalTheory.weilIs_iff_commIsOf_and_lift_subsingleton g lift
-        (GlobalTheory.T.symmetric_lift_odd_order_exists_unique g lift (GlobalTheory.exists_gen_negLB g)).1) (weil h))
+        (_root_.GlobalTheory.symLift_odd g lift (GlobalTheory.exists_gen_negLB g)).1) (weil h))
     (charPair h) (weil h) (GlobalTheory.weilIs_alternating_skew_natural g lift)
     (GlobalTheory.twisted_pow_translate (GlobalTheory.AbSquare.square_of_cube h).1 (mulA_props h))
 

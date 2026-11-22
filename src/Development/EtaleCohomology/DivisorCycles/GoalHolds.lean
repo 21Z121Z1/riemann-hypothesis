@@ -1,19 +1,9 @@
 module
 
-public import Development.EtaleCohomology.DivisorCycles.Imports
-public import Development.EtaleCohomology.DivisorCycles.FinSpecLie
-public import Development.EtaleCohomology.DivisorCycles.FinDegAll
+public import Development.EtaleCohomology.DivisorCycles.Bundle0010
+public import Development.EtaleCohomology.DivisorCycles.Bundle0003
+public import Development.EtaleCohomology.DivisorCycles.Bundle0009
 public import Development.EtaleCohomology.DivisorCycles.FinStruct
-public import Development.EtaleCohomology.DivisorCycles.FinKey
-public import Development.EtaleCohomology.DivisorCycles.FinBigCorner
-public import Development.EtaleCohomology.DivisorCycles.FinSemis
-public import Development.EtaleCohomology.DivisorCycles.FinMatUnits
-public import Development.EtaleCohomology.DivisorCycles.FinRep
-public import Development.EtaleCohomology.DivisorCycles.FinDenseAlg
-public import Development.EtaleCohomology.DivisorCycles.FinFinSub
-public import Development.EtaleCohomology.DivisorCycles.FinFinDense
-public import Development.EtaleCohomology.DivisorCycles.FinFinPoly
-public import Development.EtaleCohomology.DivisorCycles.FinFinEmbed
 
 @[expose] public section
 

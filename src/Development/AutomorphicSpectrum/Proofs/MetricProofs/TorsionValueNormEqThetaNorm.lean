@@ -3,9 +3,9 @@ module
 public import Mathlib
 public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsThetaMeanSquareNorm
 public import Development.AutomorphicSpectrum.Statements.GeometryStatements.ZhangDimensionPushDownGrassmannianHeightBounds
-public import GroundTheory.HeightsAndTheta.Heights.KernelsLattice
+public import GroundTheory.HeightsAndTheta.Heights.Bundle0001
 public import GroundTheory.HeightsAndTheta.Heights.LatticeLemmas.StatementsBundles
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.SabPull
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.Bundle0007
 
 @[expose] public section
 

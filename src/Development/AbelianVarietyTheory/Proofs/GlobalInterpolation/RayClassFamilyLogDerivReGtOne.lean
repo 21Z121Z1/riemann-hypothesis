@@ -3,7 +3,7 @@ module
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.LamIdealOfNotPrimePow
 public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.RayClassLFunctionFamilyContinuationGrowth
-public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.TsumOneDivRpowLe
+public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0009
 
 @[expose] public section
 

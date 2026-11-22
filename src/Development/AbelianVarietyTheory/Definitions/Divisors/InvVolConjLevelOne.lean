@@ -2,11 +2,11 @@ module
 
 public import Mathlib
 public import Formalism.LocalToGlobal.Columns.FiniteSumNonzeroLargeDepth
-public import Formalism.LocalToGlobal.IndefiniteReal.BridgeTie
+public import Formalism.LocalToGlobal.IndefiniteReal.Bundle0009
 public import Development.AbelianVarietyTheory.Counterexamples.HeightSurvey.EmbRelExistsUnique
 public import Development.AbelianVarietyTheory.Definitions.Divisors.GridTestLatticeLargestSlopeBound
 public import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsGivenStageEqOne
-public import Development.AbelianVarietyTheory.Definitions.Divisors.MiddleNotMem
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0007
 public import Development.AbelianVarietyTheory.Definitions.Divisors.KernelNormConstantSpec
 
 @[expose] public section

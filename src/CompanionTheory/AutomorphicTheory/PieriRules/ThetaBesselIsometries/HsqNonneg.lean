@@ -3,8 +3,9 @@ module
 public import Mathlib
 public import CompanionTheory.AutomorphicTheory.PieriRules.PieriDegreeBounds.Imports
 public import Development.AbelianVarietyTheory.Definitions.Jets.SumIoPr
-public import CompanionTheory.AutomorphicTheory.PieriRules.PieriDegreeBounds.ImportsBisTer
-public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.BesselDatumBothSidesAreSidesStatement
+public import CompanionTheory.AutomorphicTheory.PieriRules.PieriDegreeBounds.Bundle0003
+public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0131
+public import Development.AbelianVarietyTheory.Definitions.Jets.SideFam
 public import CompanionTheory.AutomorphicTheory.PieriRules.ThetaBesselIsometries.FamilySetupMomentClosureStatement
 public import CompanionTheory.AutomorphicTheory.PieriRules.ThetaBesselIsometries.IsDSOfIsDG
 

@@ -1,6 +1,6 @@
 module
 
-public import ReciprocityTheory.SemistableReduction.SemiDegCD
+public import ReciprocityTheory.SemistableReduction.Bundle0019
 
 @[expose] public section
 

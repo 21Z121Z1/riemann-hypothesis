@@ -1,9 +1,8 @@
 module
 
 public import Mathlib
-public import GroundTheory.HeightsAndTheta.Heights.RemainderTerms.BlockValue
-public import GroundTheory.HeightsAndTheta.Heights.RemainderTerms.StatementsCoinv
-public import GroundTheory.HeightsAndTheta.Heights.RemainderTerms.StatementsTop
+public import GroundTheory.HeightsAndTheta.Heights.RemainderTerms.Bundle0003
+public import GroundTheory.HeightsAndTheta.Heights.RemainderTerms.Bundle0002
 
 @[expose] public section
 

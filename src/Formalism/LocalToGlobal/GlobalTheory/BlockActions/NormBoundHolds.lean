@@ -1,7 +1,7 @@
 module
 
 public import Formalism.LocalToGlobal.GlobalTheory.BlockActions.NormBoundOfInjectiveStable
-public import Formalism.LocalToGlobal.GlobalTheory.BlockActions.SymmetricClausesOfFormsNorm
+public import Formalism.LocalToGlobal.GlobalTheory.BlockActions.Bundle0012
 
 @[expose] public section
 

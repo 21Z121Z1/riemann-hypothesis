@@ -1,10 +1,9 @@
 module
 
 public import Mathlib
-public import Formalism.LocalToGlobal.ProjectiveLattices.ThProps
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0011
 public import Formalism.LocalToGlobal.ProjectiveLattices.ThGerm
-public import Development.AbelianVarietyTheory.BlockTheory.ExistenceTori.ReflexNormIndexIdeal
-public import Development.AbelianVarietyTheory.BlockTheory.ExistenceTori.NormFactorThetaValue
+public import Development.AbelianVarietyTheory.BlockTheory.ExistenceTori.Bundle0004
 public import Development.AbelianVarietyTheory.BlockTheory.ExistenceTori.DeltaDatumCombinedCoefficient
 
 @[expose] public section

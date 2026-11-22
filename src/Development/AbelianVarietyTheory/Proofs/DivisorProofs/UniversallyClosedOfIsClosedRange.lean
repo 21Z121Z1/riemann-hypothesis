@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsFgIsSeparated
-public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.IsProperOfPowerSeriesArcsOverAlgClosed
+public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.Bundle0115
 
 @[expose] public section
 

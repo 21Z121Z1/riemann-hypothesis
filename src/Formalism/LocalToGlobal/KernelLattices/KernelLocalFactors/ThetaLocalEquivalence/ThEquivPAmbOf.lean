@@ -2,8 +2,8 @@ module
 
 public import Mathlib
 public import Formalism.LocalToGlobal.KernelLattices.KernelLocalFactors.ThetaLocalEquivalence.ChiLawAmbOf
-public import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.VacEntire
-public import Formalism.PeriodIntegrals.VacEntire
+public import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.Bundle0004
+public import Formalism.PeriodIntegrals.Bundle0009
 public import Formalism.LocalToGlobal.InertKernelTheory.InertCoprimeLemmas.FourthTensorThetaEqKernel
 
 @[expose] public section

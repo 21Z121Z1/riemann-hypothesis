@@ -1,6 +1,6 @@
 module
 
-public import Formalism.SharpRestriction.GrowthBounds.RootWeights.EBeta
+public import Formalism.SharpRestriction.GrowthBounds.RootWeights.Bundle0001
 
 @[expose] public section
 

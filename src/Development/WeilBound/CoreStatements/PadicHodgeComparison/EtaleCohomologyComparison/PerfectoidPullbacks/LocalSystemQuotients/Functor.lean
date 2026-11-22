@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.PerfectoidPullbacks.LocalSystemQuotients.RedMk
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FlatThickeningQuotientStatement
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0310
 
 @[expose] public section
 

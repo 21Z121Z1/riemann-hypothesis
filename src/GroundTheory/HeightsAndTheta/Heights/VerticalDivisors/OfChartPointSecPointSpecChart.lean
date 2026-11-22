@@ -1,11 +1,11 @@
 module
 
 public import Mathlib
-public import GroundTheory.HeightsAndTheta.Heights.VerticalDivisors.Assembly
-public import GroundTheory.HeightsAndTheta.Heights.VerticalDivisors.PGenSecSeparable
-public import GroundTheory.HeightsAndTheta.Heights.VerticalDivisors.PFibreClosedComponent
+public import GroundTheory.HeightsAndTheta.Heights.VerticalDivisors.Bundle0016
+public import GroundTheory.HeightsAndTheta.Heights.VerticalDivisors.Bundle0013
+public import GroundTheory.HeightsAndTheta.Heights.VerticalDivisors.Bundle0002
 public import GroundTheory.HeightsAndTheta.Heights.VerticalDivisors.PGenSecKer
-public import GroundTheory.HeightsAndTheta.Heights.VerticalDivisors.PFiniteOrd
+public import GroundTheory.HeightsAndTheta.Heights.VerticalDivisors.Bundle0006
 
 @[expose] public section
 

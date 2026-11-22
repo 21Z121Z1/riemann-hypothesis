@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Formalism.QuotientMetricDivisors.Complement2Normaliser
+public import Formalism.QuotientMetricDivisors.Bundle0002
 public import Formalism.TranslateCocycles.StatementHC
-public import Formalism.QuotientMetricDivisors.HermitianTwistDivisors.SecondComplementParameterBounds
+public import Formalism.QuotientMetricDivisors.HermitianTwistDivisors.Bundle0003
 
 @[expose] public section
 

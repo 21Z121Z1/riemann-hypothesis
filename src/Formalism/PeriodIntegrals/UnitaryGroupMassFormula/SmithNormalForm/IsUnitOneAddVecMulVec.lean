@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Formalism.PeriodIntegrals.SmithMat
+public import Formalism.PeriodIntegrals.Bundle0006
 
 @[expose] public section
 

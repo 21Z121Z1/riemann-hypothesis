@@ -3,11 +3,11 @@ module
 public import Mathlib
 public import Formalism.SharpRestriction.CuspSpanNormBounds.CongruenceAtSplitFrobeniusHolds
 public import Formalism.SharpRestriction.CuspSpanNormBounds.AbsoluteAmplitudeSecondOfSource
-public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.RowMinor
+public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.Bundle0012
 public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.MemOfPerpPerp
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.DefiniteLatticeDiscriminantModuleCardDetSq
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsUniquePlace
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.CardLeOfSpan
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0223
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0199
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0114
 
 @[expose] public section
 

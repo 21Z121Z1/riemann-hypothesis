@@ -5,18 +5,16 @@ public import Formalism.LocalRingCardinality.RhoDetPrimeEqMuTildeMulChiPow
 public import Formalism.SharpRestriction.GlobalSchurBounds.GeneralLinearActions.IsDiscriminantTwelfthRootOfIdealLattice
 public import Formalism.SharpRestriction.GlobalSchurBounds.GL3Theta
 public import Formalism.SharpRestriction.GlobalSchurBounds.StandardLatticesGL3
-public import Development.AbelianVarietyTheory.Definitions.Foundations.LatticeIntegralCoordinates
-public import Development.AbelianVarietyTheory.BlockTheory.GlobalSignature.SignedLogMeans
-public import Development.AbelianVarietyTheory.BlockTheory.GlobalSignature.EquidistributedConjugates
-public import Development.AbelianVarietyTheory.BlockTheory.GlobalSignature.PeriodLatticeAgreement
-public import Development.AbelianVarietyTheory.BlockTheory.GlobalSignature.JacobiThetaHalfCharacteristic
+public import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0015
+public import Development.AbelianVarietyTheory.BlockTheory.GlobalSignature.Bundle0012
+public import Development.AbelianVarietyTheory.BlockTheory.GlobalSignature.Bundle0006
 public import Development.AbelianVarietyTheory.BlockTheory.GlobalSignature.ThetaConstantWeber
 public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.CmThetaTaylorCoeffAlgebraicAndConjugate
 public import Development.AbelianVarietyTheory.Proofs.HomogeneousIdeals.ExistsVariableChangeEqLatticeCurve
 public import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.DifferentiableAtDerivAtZero
-public import Formalism.GL3MeanSquares.HookFormulaTorsion.FourFoldOrthogonalSum
-public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.ThetaCharHalfPeriodEqZeroIffStatement
-public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.HalfPeriodWeierstrassValueMemConjStatement
+public import Formalism.GL3MeanSquares.HookFormulaTorsion.Bundle0002
+public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0111
+public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0108
 
 @[expose] public section
 
@@ -184,7 +182,7 @@ theorem modulus (hL : PeriodLatticeAgreement.LatticePeriodEta) (hT : ThetaConsta
   obtain ⟨m, n, hmn⟩ := half_coords hω hΛ h2
   have hη : ModularForm.eta (τ : ℂ) ≠ 0 := ModularForm.eta_ne_zero τ.2
   have hD := discr_eta hL hω hΛ hd
-  have hpar := (GlobalTheory.T.thetaChar_half_period_eq_zero_iff_odd_add_odd_add τ hjac m n a b hab).1 (by rw [← hmn]; exact hz)
+  have hpar := (_root_.GlobalTheory.Glob.ThetaParity.thetaChar_half_period_eq_zero_iff τ hjac m n a b hab).1 (by rw [← hmn]; exact hz)
   rw [hg2, hwp t ht, hmn, thetaChar_zero]
   unfold ThetaConstantWeber.JacobiProduct at hjac
   have hY : ∀ e g : ℂ, (12 * (e / ω₁ ^ 2) ^ 2 - g / ω₁ ^ 4) / 4 = (12 * e ^ 2 - g) / 4 / ω₁ ^ 4 := by
@@ -295,11 +293,11 @@ theorem exists_char {Λ : AddSubgroup ℂ} {ω₁ : ℂ} {τ : UpperHalfPlane} {
     rw [this, hmn]
     push_cast
     ring
-  · exact ⟨0, 1, by simp [JacobiThetaHalfCharacteristic.IsEvenChar], (GlobalTheory.T.thetaChar_half_period_eq_zero_iff_odd_add_odd_add τ hj m n 0 1 (by simp [JacobiThetaHalfCharacteristic.IsEvenChar])).2
+  · exact ⟨0, 1, by simp [JacobiThetaHalfCharacteristic.IsEvenChar], (_root_.GlobalTheory.Glob.ThetaParity.thetaChar_half_period_eq_zero_iff τ hj m n 0 1 (by simp [JacobiThetaHalfCharacteristic.IsEvenChar])).2
       ⟨by simpa using hm.add_one, by simpa using hn⟩⟩
-  · exact ⟨1, 0, by simp [JacobiThetaHalfCharacteristic.IsEvenChar], (GlobalTheory.T.thetaChar_half_period_eq_zero_iff_odd_add_odd_add τ hj m n 1 0 (by simp [JacobiThetaHalfCharacteristic.IsEvenChar])).2
+  · exact ⟨1, 0, by simp [JacobiThetaHalfCharacteristic.IsEvenChar], (_root_.GlobalTheory.Glob.ThetaParity.thetaChar_half_period_eq_zero_iff τ hj m n 1 0 (by simp [JacobiThetaHalfCharacteristic.IsEvenChar])).2
       ⟨by simpa using hm, by simpa using hn.add_one⟩⟩
-  · exact ⟨0, 0, by simp [JacobiThetaHalfCharacteristic.IsEvenChar], (GlobalTheory.T.thetaChar_half_period_eq_zero_iff_odd_add_odd_add τ hj m n 0 0 (by simp [JacobiThetaHalfCharacteristic.IsEvenChar])).2
+  · exact ⟨0, 0, by simp [JacobiThetaHalfCharacteristic.IsEvenChar], (_root_.GlobalTheory.Glob.ThetaParity.thetaChar_half_period_eq_zero_iff τ hj m n 0 0 (by simp [JacobiThetaHalfCharacteristic.IsEvenChar])).2
       ⟨by simpa using hm, by simpa using hn⟩⟩
 
 theorem exists_integral_theta_ratio : EquidistributedConjugates.ConjugatesEquidistributed → PeriodLatticeAgreement.LatticePeriodEta → ThetaConstantWeber.ThetaWeberStatement →
@@ -310,7 +308,7 @@ theorem exists_integral_theta_ratio : EquidistributedConjugates.ConjugatesEquidi
         JacobiThetaHalfCharacteristic.thetaChar a b (t ρ / ω₁) τ = 0 →
         ‖ρ X‖ = (‖JacobiThetaHalfCharacteristic.thetaChar a b 0 τ‖ / ‖ModularForm.eta τ‖) ^ 12 := by
   intro _ hL hT D hJ cc δ M _ t hS
-  obtain ⟨e, g, hg, hval, hρ⟩ := GlobalTheory.T.halfPeriod_weierstrassValue_mem_conj D cc δ M t hS
+  obtain ⟨e, g, hg, hval, hρ⟩ := _root_.GlobalTheory.HalfPeriodValue.halfPeriod_value D cc δ M t hS
   have crv : Formalism.MainNotions.StandardLatticesGL3.Crv D cc δ := ⟨hS.1, hS.2.1⟩
   have hYρ : ∀ ρ : M →ₐ[ℚ] ℂ, ρ ((12 * e ^ 2 - g) / 4) =
       (12 * Formalism.MainNotions.StandardLatticesGL3.wpF (lamConj M ρ (lamOf D cc δ)) (t ρ) ^ 2 - g2 (lamConj M ρ (lamOf D cc δ))) / 4 := by

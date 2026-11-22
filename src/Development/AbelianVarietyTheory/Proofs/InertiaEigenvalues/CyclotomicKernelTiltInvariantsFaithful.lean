@@ -2,10 +2,10 @@ module
 
 public import Mathlib
 public import Formalism.LocalRingCardinality.AdicCompletionLocal.LocTied
-public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.ConvZero
+public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0005
 public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.NormRootSubOneLt
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CyclotomicCharacterPadicBasicProperties
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CyclotomicTowerTraceAlmostSurjective
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0128
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0202
 
 @[expose] public section
 

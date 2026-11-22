@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.RelabelledWeight
-public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.ExistsIsBIffCoreB
+public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.Bundle0033
+public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.Bundle0031
 
 @[expose] public section
 

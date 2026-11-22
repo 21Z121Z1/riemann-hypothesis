@@ -1,6 +1,6 @@
 module
 
-public import Formalism.PeriodIntegrals.AmpRootH
+public import Formalism.PeriodIntegrals.Bundle0022
 public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.RootSubgroupHaar.ContinuousGS
 
 @[expose] public section

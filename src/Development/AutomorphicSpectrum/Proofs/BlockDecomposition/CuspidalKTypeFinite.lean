@@ -3,10 +3,10 @@ module
 public import Mathlib
 public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.CuspDiscreteDecompositionGL
 public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.NotIsFinitePartOfBot
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.UnitaryKTypeFiniteStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CuspidalConvolutionCompactStatement
-public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.ExistsIsOpenIsCompact
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsNonnegBump
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0474
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0610
+public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.Bundle0057
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0007
 
 @[expose] public section
 
@@ -370,7 +370,7 @@ theorem finiteDimensional_isotypic : ∀ (E : Type) [Field E] [NumberField E] [_
     (isUnitaryRep_comp (isUnitaryRep_R (latticeGL E a) μ) continuous_infGL) infGL_comm
     (fun g => ⟨_, _, (infGL_mul_finGL g).symm⟩) hI (fixedPart_le H _) (isSubrep_fixedPart hI.1 (U ⊓ K0))
     (enoughCompact_fixedPart hH hI.1 hU' hU'c) (Unitary.toUnits : Kinf E a →* GL (Fin a) (Cinf E)) ρ
-    (fun P _ _ _ σ h1 h2 => GlobalTheory.T.unitary_K_type_finite E a P σ h1 h2 W ρ)
+    (fun P _ _ _ σ h1 h2 => _root_.GlobalTheory.CompanionTheory.AdmGL.admissible_GL_Cinf E a P σ h1 h2 W ρ)
   have key : ∀ {M : Type} [AddCommGroup M] [Module ℂ M] {S T : Submodule ℂ M}, FiniteDimensional ℂ T → S ≤ T →
       FiniteDimensional ℂ S := fun _ h => Submodule.finiteDimensional_of_le h
   exact key hfd (iSup₂_le fun T hT =>

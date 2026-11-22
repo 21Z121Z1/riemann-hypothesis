@@ -1,8 +1,7 @@
 module
 
-public import Formalism.LocalToGlobal.GroupLattices.FockModels.FlatModels.MemNablaLTwLetter
-public import Formalism.LocalToGlobal.GroupLattices.FockModels.FlatModels.MatQTwDet
-public import Formalism.LocalToGlobal.GroupLattices.FockModels.FlatModels.EdgeLatOfG
+public import Formalism.LocalToGlobal.GroupLattices.FockModels.FlatModels.Bundle0002
+public import Formalism.LocalToGlobal.GroupLattices.FockModels.FlatModels.Bundle0001
 
 @[expose] public section
 

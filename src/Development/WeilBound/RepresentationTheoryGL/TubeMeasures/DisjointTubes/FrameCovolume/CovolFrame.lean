@@ -1,22 +1,27 @@
 module
 
 public import Development.WeilBound.RepresentationTheoryGL.TubeMeasures.DisjointTubes.TubeSt
-public import Development.WeilBound.RepresentationTheoryGL.TubeMeasures.DisjointTubes.FrameCovolume.TubeDisj
-public import Development.WeilBound.RepresentationTheoryGL.TubeMeasures.DisjointTubes.FrameCovolume.MeasTransl
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.LocallyCompactSecondCountableBorelCountable
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsIsFundamentalDomain
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsIsMinf
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsArchEquivEq
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.FiniteVolumeAdelicUnitaryQuotient
-public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.ExistsNormLeHeightPow
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsFlagDomainOrthonormalFrameIdentificationStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsContinuousRealComponentHomUnitaryAdelicStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsContinuousEquivariantDetOneFactorProjectioStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsPackingSetMeasureGeCovolumeStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CountableRationalSubgroupInRealSpecialUnitaryStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MeasurableSetDetImPosAtIndexStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ArchimedeanMassProductLowerBoundUnitaryPqStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RiemannianHaarIndependentOfOrthonormalFrameStatement
+public import Development.WeilBound.RepresentationTheoryGL.TubeMeasures.DisjointTubes.FrameCovolume.Bundle0001
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0119
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0162
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0132
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0291
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0175
+public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.Bundle0007
+public import Mathlib
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1955
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1930
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1951
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1952
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1959
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RiemannianHaarIndependentOfOrthonormalFrame
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1534
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0060
+public import Formalism.FrobeniusOrbits.FrobeniusOrbitsProofs.MuCardLeTwo
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1944
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1978
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2410
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.InstMeasurableSpaceRealSU
 public import Formalism.SharpRestriction.GlobalSchurBounds.ThickPlacesCorollaryOfAnyTranslate
 
 @[expose] public section
@@ -67,7 +72,7 @@ theorem covol_frame {E : Type} [Field E] [NumberField E] [IsCMField E] (r : ℕ)
     covolume (inReal Ψ G Γ) (realSU Ψ G) (riemHaar Ψ G x) = covolume (inReal Ψ' G' Γ) (realSU Ψ' G') (riemHaar Ψ' G' x') := by
   subst hΨ
   subst hG
-  rw [GlobalTheory.T.riemannianHaar_independent_of_orthonormal_frame E r p0 p1 Ψ G x x' hh hx hx']
+  rw [_root_.GlobalTheory.FrameIndep.riemHaar_frame_indep E r p0 p1 Ψ G x x' hh hx hx']
 
 end MainStatements.Tam.T2
 
@@ -90,11 +95,11 @@ theorem tube : VolSt → StabSt → IdxSt → TubeSt := by
   choose mm hmm using GlobalTheory.MinfMeasure.exists_isMinf
   let m : ∀ ρ, Measure (Upq V ρ) := fun ρ => mm _ _
   have hm : ∀ ρ, IsMinf (m ρ) := fun ρ => hmm _ _
-  obtain ⟨X₀, σ, x₀, e, hG, hσ, hx₀, hid⟩ := GlobalTheory.T.exists_flagDomain_orthonormalFrame_identification D V P Q hV hsig A hA
-  obtain ⟨rp, hrpc, hrp⟩ := GlobalTheory.T.exists_continuous_realComponentHom_unitaryAdelic D V θ A hV hθ hA
+  obtain ⟨X₀, σ, x₀, e, hG, hσ, hx₀, hid⟩ := _root_.GlobalTheory.CovTop.VolUp.exists_ident_frame D V P Q hV hsig A hA
+  obtain ⟨rp, hrpc, hrp⟩ := _root_.GlobalTheory.CovTop.VolUp.exists_realPart_hom D V θ A hV hθ hA
   let a₀ : ∀ ρ : D.what₂.Tau, Fin (V.sig (tauE D ρ)).1 ⊕ Fin (V.sig (tauE D ρ)).2 :=
     fun ρ => (e ρ).symm ⟨0, by omega⟩
-  obtain ⟨π, hπc, hπ, hπe⟩ := GlobalTheory.T.exists_continuous_equivariant_detOneFactorProjection D.host.E V.rank D.what₂.Tau _ _ X₀.Ψ X₀.Gm x₀ σ A e a₀ hid
+  obtain ⟨π, hπc, hπ, hπe⟩ := _root_.GlobalTheory.CovTop.VolUp.Proj.exists_proj D.host.E V.rank D.what₂.Tau _ _ X₀.Ψ X₀.Gm x₀ σ A e a₀ hid
   have hcard : X₀.Ψ.card = D.R.f := by
     rw [← Fintype.card_coe, ← Fintype.card_congr σ, D.what₂.card_Tau]
   have hf : 1 ≤ D.R.f := by unfold Ranks.f Ranks.n; have := And.intro (Nat.one_le_two_pow (n := D.R.e)) D.R.ord_pos; omega
@@ -115,13 +120,13 @@ theorem tube : VolSt → StabSt → IdxSt → TubeSt := by
       covolume (inReal X₀.Ψ X₀.Gm (X k).Γ) (realSU X₀.Ψ X₀.Gm) (riemHaar X₀.Ψ X₀.Gm x₀) := fun k =>
     covol_frame V.rank _ _ _ _ (x0 k) x₀ (X k).p0 X₀.p0 (X k).Γ (hΨk k) ((hX k).1.trans hG.symm) (X k).Gm_herm
       (hX k).2.2.2.2 hx₀
-  choose F hFm hFcov hFfree using fun k => GlobalTheory.T.exists_packingSet_measure_ge_covolume (realSU X₀.Ψ X₀.Gm) (riemHaar X₀.Ψ X₀.Gm x₀)
-    (inReal X₀.Ψ X₀.Gm (X k).Γ) (GlobalTheory.T.countable_rationalSubgroupInRealSpecialUnitary _ _ _ _ _)
+  choose F hFm hFcov hFfree using fun k => _root_.GlobalTheory.packing_set_covolume_le (realSU X₀.Ψ X₀.Gm) (riemHaar X₀.Ψ X₀.Gm x₀)
+    (inReal X₀.Ψ X₀.Gm (X k).Γ) (_root_.GlobalTheory.CovTop.VolUp.countable_inReal_of_numberField _ _ _ _ _)
   have := fun P Q => (GlobalTheory.UpqTopology.upq_lcsc P Q).2.2.2.1
   have := fun P Q => (GlobalTheory.UpqTopology.upq_lcsc P Q).2.2.2.2.1
   let B : ι → Set (∀ ρ, Upq V ρ) := fun k => π ⁻¹' F k ∩ {b | 0 < (UpqT.mat (b ρ₀)).det.im}
   have hBm : ∀ k, MeasurableSet (B k) := fun k =>
-    (hπc.measurable (hFm k)).inter (GlobalTheory.T.measurableSet_det_im_pos_at_index D.what₂.Tau _ _ ρ₀)
+    (hπc.measurable (hFm k)).inter (_root_.GlobalTheory.CovTop.VolUp.DetImMeas.measurableSet_det_im_pos D.what₂.Tau _ _ ρ₀)
   choose g' hg'C hg'f using fun k => GlobalTheory.SplitDec.exists_finPart V (g k)
   let T : ι → Set (GA D V) := fun k => {y | (g' k)⁻¹ * y ∈ KM V M ∧ rp y ∈ B k}
   have hKMo : IsOpen (KM V M) := (hstab.1 D V).2 M (by omega)
@@ -169,7 +174,7 @@ theorem tube : VolSt → StabSt → IdxSt → TubeSt := by
       Measure.pi m (B k) := by
     intro k
     rw [← hcard]
-    exact GlobalTheory.T.archimedean_mass_product_lower_bound_unitary_pq D.host.E V.rank D.what₂.Tau _ _ X₀.Ψ X₀.Gm x₀ σ A e a₀ π m ρ₀ (by omega) hid hπc hπ hπe hm
+    exact _root_.GlobalTheory.CovTop.VolUp.MassLow.massLow D.host.E V.rank D.what₂.Tau _ _ X₀.Ψ X₀.Gm x₀ σ A e a₀ π m ρ₀ (by omega) hid hπc hπ hπe hm
       (F k) (hFm k)
 
   have hvolU : 0 < ReciprocityTheory.ChartRestriction.DS.volU V.rank := by

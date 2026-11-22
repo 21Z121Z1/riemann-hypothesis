@@ -2,10 +2,10 @@ module
 
 public import Mathlib
 public import Development.AutomorphicSpectrum.Definitions.AdelicLattices.FactPrimes
-public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.ExistsPowPrincipal
-public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.ProdNormEmbeddingsEqAbsNorm
-public import Development.AutomorphicSpectrum.Proofs.AdelicProofs.ProductFormulaLogNormsStatement
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.PlaceOverPInducedByAlgebraicPadicEmbedding
+public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.Bundle0011
+public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.Bundle0004
+public import Development.AutomorphicSpectrum.Proofs.AdelicProofs.Bundle0004
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0171
 
 @[expose] public section
 

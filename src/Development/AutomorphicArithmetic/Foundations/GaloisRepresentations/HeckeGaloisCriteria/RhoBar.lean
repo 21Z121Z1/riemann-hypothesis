@@ -1,8 +1,8 @@
 module
 
-public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.ResidualIrreducibilityFormsEquivalent
+public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.Bundle0027
 public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.BoundAtTwoAndThreeForFamily
-public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.StepJumpDirect
+public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0014
 public import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.TypeConditions.AutomorphicGaloisAdmissible
 
 @[expose] public section

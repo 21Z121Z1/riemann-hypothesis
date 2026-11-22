@@ -7,7 +7,7 @@ public import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange
 public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.GelfandOperatorsCommute
 public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FlagFieldHolds
 public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ContDiffMulRight
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ImportsBisMore
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0374
 public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.PositiveConeStructure
 public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.PositiveConeHomotopy
 public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.TraceMulConjTranspose
@@ -26,7 +26,7 @@ theorem lef_top (hE : WaveEx) (hS : WaveSpeed) (hK : KerEx) (hM : MultAlg) (hC :
     GlobalTheory.CompanionTheory.GelFlagPf.gelFlag_holds GlobalTheory.CompanionTheory.FlagHerm.flagField_holds GlobalTheory.CompanionTheory.NilUnimod.nilUni
     GlobalTheory.CompanionTheory.KerZeroPf.main
   have hCh : Chain := LfSt.chainOf'_holds hE hS GlobalTheory.CompanionTheory.GelC.gelComm GlobalTheory.CompanionTheory.KerZeroPf.main
-  have hL : LSt := LfSt.lOf_of_kChain hC hE hS hK hM hCh GlobalTheory.T.positive_cone_structure GlobalTheory.T.positive_cone_homotopy
+  have hL : LSt := LfSt.lOf_of_kChain hC hE hS hK hM hCh _root_.GlobalTheory.CompanionTheory.ConeHaar.coneSt _root_.GlobalTheory.CompanionTheory.SuperHomot.homot
     GlobalTheory.CompanionTheory.SuppBound.suppSt
   exact lef_of cxEx_model hV hL
 

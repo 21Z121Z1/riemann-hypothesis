@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import GroundTheory.ProfiniteCohomology.LocalEulerCharacteristic.GroupStructureDefs
-public import GroundTheory.LocalFields.RamificationStructure
-public import GroundTheory.LocalFields.UnramifiedRootsOfUnity
+public import GroundTheory.ProfiniteCohomology.LocalEulerCharacteristic.Bundle0001
+public import GroundTheory.LocalFields.Bundle0007
+public import GroundTheory.LocalFields.Bundle0004
 
 @[expose] public section
 

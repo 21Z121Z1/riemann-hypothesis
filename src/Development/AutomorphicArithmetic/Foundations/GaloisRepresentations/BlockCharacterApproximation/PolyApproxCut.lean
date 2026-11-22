@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.PolyApproxZeroPadic
+public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.Bundle0002
 
 @[expose] public section
 

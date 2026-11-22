@@ -1,11 +1,11 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsTranspOfMovesAt
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1821
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsTransporterMovesFrameReadsInverse
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UniqueUpToTargetGroup
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsHolToOfOpenImmersion
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.FrameActionUpperTriangularBlockExists
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0509
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0496
 
 @[expose] public section
 

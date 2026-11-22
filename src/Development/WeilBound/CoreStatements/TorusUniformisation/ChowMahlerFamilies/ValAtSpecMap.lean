@@ -1,11 +1,13 @@
 module
 
 public import Mathlib
-public import Development.WeilBound.CoreStatements.TorusUniformisation.ChowMahlerFamilies.IsDerAt0
-public import Development.WeilBound.CoreStatements.HodgeTatePoints.ExtTensor
-public import Development.WeilBound.CoreStatements.HodgeTatePoints.HtatBcTors
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsUniqueTangentDualNumberStatement
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsDenominatorRegular
+public import Development.WeilBound.CoreStatements.TorusUniformisation.ChowMahlerFamilies.Bundle0022
+public import Development.WeilBound.CoreStatements.HodgeTatePoints.Bundle0006
+public import Development.WeilBound.CoreStatements.HodgeTatePoints.Bundle0008
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0017
+public import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.Bundle0001
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.ExistsUnitFormLocalizationEtaleNbhd
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.Bundle0002
 
 @[expose] public section
 

@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.BlockTheory.GlobalSignature.LocalDualIndex
+public import Development.AbelianVarietyTheory.BlockTheory.GlobalSignature.Bundle0004
 public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.ExistsUniqueIdeleOfLinearEquivQuotientLocal
-public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.HermitianFormFiniteZerosOnLineCmExt
+public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0015
 
 @[expose] public section
 

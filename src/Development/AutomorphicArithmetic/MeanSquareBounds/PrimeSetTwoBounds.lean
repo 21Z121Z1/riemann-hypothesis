@@ -2,8 +2,8 @@ module
 
 public import Mathlib
 public import Formalism.GL3MeanSquares.SecondEstimateOfIntervalHypothesis
-public import Formalism.GL3MeanSquares.GenusMeanAsymptotics.JacobiCharacterSums.MeanSquareHypWIff
-public import Formalism.PeriodIntegrals.ExplicitFormula
+public import Formalism.GL3MeanSquares.GenusMeanAsymptotics.JacobiCharacterSums.Bundle0006
+public import Formalism.PeriodIntegrals.Bundle0002
 
 @[expose] public section
 

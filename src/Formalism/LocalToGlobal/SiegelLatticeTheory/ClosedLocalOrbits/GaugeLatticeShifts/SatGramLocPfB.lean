@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Formalism.SatakeDualWeyl.Statement
-public import Formalism.LocalToGlobal.SiegelLatticeTheory.ClosedLocalOrbits.GaugeLatticeShifts.SatGramLoc
+public import Formalism.LocalToGlobal.SiegelLatticeTheory.ClosedLocalOrbits.GaugeLatticeShifts.Bundle0002
 
 @[expose] public section
 

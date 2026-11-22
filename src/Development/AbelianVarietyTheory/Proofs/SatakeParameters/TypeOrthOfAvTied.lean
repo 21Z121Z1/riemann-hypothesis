@@ -1,10 +1,10 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.BlockSplitAll
-public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.IsobaricDiscreteSelfDualStrongMultiplicityOne
+public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.Bundle0014
+public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.Bundle0007
 public import Formalism.LocalToGlobal.GaloisLevelStructure.TiedHecke
-public import Formalism.LocalToGlobal.GaloisLevelStructure.Checks
+public import Formalism.LocalToGlobal.GaloisLevelStructure.Bundle0001
 
 @[expose] public section
 

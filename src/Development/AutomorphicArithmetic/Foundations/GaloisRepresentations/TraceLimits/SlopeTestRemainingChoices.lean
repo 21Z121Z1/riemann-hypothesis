@@ -1,10 +1,10 @@
 module
 
-public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.LimWU4OfLimWU3
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.SatWDCharPolChars
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ApartOfNotMem
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExistsUniqueSplitPlaceComponentDefiniteUnitary
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PrincipalSeriesSatakeParameters
+public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.Bundle0024
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0242
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0284
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0233
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0969
 
 @[expose] public section
 

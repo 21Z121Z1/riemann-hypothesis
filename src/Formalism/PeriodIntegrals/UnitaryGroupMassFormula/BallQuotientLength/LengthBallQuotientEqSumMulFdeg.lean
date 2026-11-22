@@ -2,8 +2,8 @@ module
 
 public import Mathlib
 public import Formalism.SharpRestriction.GenusPolyhedralBounds.RelativeIndexClassSets.ExistsPowSmulMemBall
-public import Formalism.PeriodIntegrals.BallQuotLen
-public import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.EfRankSum
+public import Formalism.PeriodIntegrals.Bundle0011
+public import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.Bundle0007
 
 @[expose] public section
 

@@ -1,37 +1,37 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.NormalFam
-public import Development.AbelianVarietyTheory.Definitions.Divisors.GenReads
-public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.ThExprUniqOfChartIndep2
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.OneMapRow0OfRowsSmul
+public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.Bundle0015
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0034
+public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0007
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1312
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.OscillatorModelValuesSixth
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.OscillatorModelsCompatible
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LevelFormCompatBaseEmbedding
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.OscillatorModelValuesFirst
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WeilRepLatticeStabilizerVacuumEqDetCharSmulStatement
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1004
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1635
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1366
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0024
+public import Development.AbelianVarietyTheory.Definitions.Divisors.MarkAd
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.OscillatorModelValuesSecond
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsHomogeneousOfRowDeg
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0383
 public import Development.AbelianVarietyTheory.Proofs.HeightProofs.EmbeddingXiZeroNeZero
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaPairCharactersAtLevel
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.OscillatorModelValuesFourth
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.OmPureTensorOOfFinite
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LatticeIsometrySignThird
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1016
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1673
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0125
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1654
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.OscillatorModelExtensionFirst
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsHeckeCharMulInv
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConstRelIffTwistFactorAt
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsWeilDatumTwistHeckeCharacters
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WeilDatumUniqueOnThetaFunctionsStatement
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1306
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1288
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0830
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1127
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.OscillatorModelValuesThird
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CoordEqOfPerConj
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0983
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PullbackSections.HolomorphicFamilies.WeightFloorInequalities
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DictionaryComponentFrameMarkingUniformisation
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.OscillatorModelValuesFifth
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.WeilActionLiftPairStepVectorInvLevelCharStatement
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0475
+public import Formalism.LocalToGlobal.IndefiniteReal.FWExist
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LatticeIsometrySignSecond
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CoefMapNormEquivariantBasis
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaVectorFockVacuum
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaVectorNeZero
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0981
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1641
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LatticeIsometrySignFirst
 
 @[expose] public section
@@ -379,7 +379,7 @@ theorem om_lift_vac_of_coreNoChain {F : Face D A} (hR : GlobalTheory.Hk3.CoreNoC
     fun hk => GlobalTheory.MovedLat.actO_mem (Vc D i) (Wc D i) 1 _ (R.ΛV i) (R.ΛV i) (R.ΛW i) (R.ΛW i)
       (fun z hz => by rw [map_one, Units.val_one, Matrix.one_mulVec]; exact hz)
       (fun z hz => by rw [← hl] at hz ⊢; exact GlobalTheory.DictMove.mulVec_mem_latHat (hR.lev.βW i) hk hz)
-  refine GlobalTheory.T.weilRep_lattice_stabilizer_vacuum_eq_det_char_smul D _ _ _ _ _ _ _ hP mu (hχ ▸ hmu) H _ _ hV0 sV sW _
+  refine _root_.GlobalTheory.VacStab.om_vacuum_eq_smul D _ _ _ _ _ _ _ hP mu (hχ ▸ hmu) H _ _ hV0 sV sW _
     (GlobalTheory.FrameEquiv.isCartanInv_cart_model (R.MW i (sg0 D A))) _ (hR.thP.vP i A.μ0).1 k hk.1 fun u => ⟨mv hk u, fun hu => ?_⟩
   have h := mv (GlobalTheory.ProjComm.isLift_inv hk) _ hu
   rw [actO_one_left, actO_one_left, ← Matrix.mul_assoc] at h
@@ -496,7 +496,7 @@ theorem omega_level_vP_of_coreNoChain : ∀ (D : D7) (G : Type) [Group G] [Finty
   have hκ : Formalism.IndefR.Lev.IsLevelLift (Vc D i) (R.βV i) (R.datVt i t) 1 k := ⟨hf, hl.1, Subgroup.mem_bot.1 hl.2⟩
   have hκ' : Formalism.IndefR.Lev.IsLevelLift (Wc D i) (R.βW i) (R.datWp i R.triv) 1 1 :=
     ⟨Subgroup.one_mem _, by rw [map_one]; exact Subgroup.one_mem _, by rw [map_one]; exact Formalism.L2.DIV.rTup_one⟩
-  refine (GlobalTheory.T.weilAction_liftPair_stepVector_invLevelChar R h.lev h.models.inf h.thP.ωP h.thP.vP i t 1 k 1 hκ hκ').trans ?_
+  refine (_root_.GlobalTheory.VecInv.omega_lifts_vP R h.lev h.models.inf h.thP.ωP h.thP.vP i t 1 k 1 hκ hκ').trans ?_
   exact congrArg (fun z : ℂˣ => (z : ℂ)⁻¹ • R.vP i t)
     (Formalism.IndefR.Lev.levFn_flag1 (V := Vc D i) (β := R.βV i) (L := R.datVt i t) (Formalism.IndefR.Lev.finE (Vc D i) k)).symm
 
@@ -792,7 +792,7 @@ theorem thetaKO_eq_short_series_core_nc : ∀ (D : D7) (G : Type) [Group G] [Fin
       L₀ = Submodule.span (𝓞 D.host.E)
         {w | ∃ a : D.host.E, a ∈ D.host.AA ∧ ∃ v ∈ Bridge.hLat (Wc D i) (fin (Wc D i) k), w = a • v} →
       latR (rank_Wc i) (latG (Wc D i) k) = latR (rank_Wc i) L₀ := fun L₀ h₀ => by rw [h₀, hlat]
-  have hcl := GlobalTheory.T.weilRepresentation_split_support_projects_vacuum D _ _ _ _ _ _ _ hP _ g (rank_Wc i) X bas idx hM hS H hrt _ _ Λ.La _ hV0 hVs hks hVstd hL _ _ hx'
+  have hcl := _root_.GlobalTheory.AdTh.SplitClass.om_reads_projA D _ _ _ _ _ _ _ hP _ g (rank_Wc i) X bas idx hM hS H hrt _ _ Λ.La _ hV0 hVs hks hVstd hL _ _ hx'
     (isInvOf_move (rank_Wc i) X hinv k) _ hvac' _ hR e Ps h y he hsupp hdet hΛ
   rw [← Module.End.mul_apply, ← map_mul, Prod.mk_mul_mk, mul_one, one_mul, projA_smul, smul_smul] at hcl
   obtain ⟨-, hsd, huni, hfg⟩ := LatOf.isLatOf_tens D _ _ _ _ _ g (rank_Wc i) X bas idx hψ hP.inf hP.std hP.even hM hS
@@ -1139,7 +1139,7 @@ namespace GlobalTheory.AdThCore
 
 theorem weil_twist_of_coreNoChain : ∀ (D : D7) (G : Type) [Group G] [Fintype G] (Pl0 T0 : Type) (A : Formalism.L2.DIV.FamIn D.what₂.LL G Pl0 T0 D.R.m) (Ks : Type) [Field Ks] [NumberField Ks] [Algebra Ks D.what₂.LL] (R : RealDat D A Ks) (F : Face D A), GlobalTheory.Hk3.CoreNoChain R F → ∀ (i : Fin D.R.m) (t : T0) (k : GA D (Wc D i)) (x : (AE D)ˣ), IsDetRoot (Wc D i) k x → ∀ f, IsThetaFunO R.ψ (Vc D i) (Wc D i) f → R.ωP i t (1, k) f = ((R.xi t x : Circle) : ℂ) • R.ωP i A.μ0 (1, k) f := by
   intro D G _ _ Pl0 T0 A Ks _ _ _ R F hR i t k x hx f hf
-  have h := GlobalTheory.TwistFactorProof.frame_ratio R (GlobalTheory.T.weilDatum_unique_on_thetaFunctions D) (GlobalTheory.WeilChange.exists_weilDatum_twist D) hR.thP.ωP i A.μ0 t hx hf
+  have h := GlobalTheory.TwistFactorProof.frame_ratio R (_root_.GlobalTheory.WeilUniq.weilDatum_unique D) (GlobalTheory.WeilChange.exists_weilDatum_twist D) hR.thP.ωP i A.μ0 t hx hf
   rw [GlobalTheory.TwistFactorCompare.eq_one_of_chrEq_one (hR.lev.xi_base ▸ hR.lev.xi A.μ0) x, Circle.coe_one, one_smul] at h
   exact h
 

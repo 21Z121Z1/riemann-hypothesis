@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsLiftBirationalAmple
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsGeneratedNonzeroSection
+public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0037
+public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0065
 public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PGenOnFibres
 
 @[expose] public section

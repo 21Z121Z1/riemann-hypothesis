@@ -2,11 +2,11 @@ module
 
 public import Mathlib
 public import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.IntegralStructures.ZetaCharacterDivisibility.PhiOfDivOf
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FinrankDdREqOfEquiv
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1031
 public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.WdConjAbove
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.IsSstAtOfIsCrysAt
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.IsPstAtOfIsSstAt
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsDeRhamOfIsCrystallineSpan
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0208
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0347
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0325
 
 @[expose] public section
 

@@ -3,15 +3,14 @@ module
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.Foundations.NormSumPairRankZeroOfCurveCoordNorm
 public import Formalism.PairingDivisors.StatementH
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.LineDerivListCompForm
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.IdealPeriodLatticeOfCurveDatum
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.OddThetaFunctionExistenceUniqueness
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.InducedTypeThetaGenusOnePermutesStatement
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.WeilPairingGaloisEquivariantCmTorsionStatement
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ConjugateCurveDatumLatticeIsCurveLatticeStatement
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.GalStarComplexMultiplicationPointsStatement
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.GaloisConjTaylorThetaTranslateStatement
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.CmQuadraticPhaseEquivariantEmbeddingsStatement
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0242
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0224
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0230
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.WeilPairingGaloisEquivariantCmTorsion
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ConjugateCurveDatumLatticeIsCurveLattice
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.GalStarComplexMultiplicationPoints
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.GaloisConjTaylorThetaTranslate
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0268
 
 @[expose] public section
 
@@ -132,7 +131,7 @@ theorem exists_adp (hc : Crv D cc δ) (hK : FixK D ⊤ (topHom s)) {t : ℂ} {m 
     (ht : (m : ℂ) * t ∈ lamOf D cc δ) {n : ℕ} (hn : 0 < n) :
     ∃ t', Adp1 ⊤ (topHom s) (lamOf D cc δ) n t t' := by
   have hn' : (n : ℂ) ≠ 0 := by exact_mod_cast hn.ne'
-  obtain ⟨u, hu⟩ := (GlobalTheory.T.galStar_complexMultiplication_points D cc δ hc ⊤ _ hK trivial trivial).1 (t / n)
+  obtain ⟨u, hu⟩ := (_root_.GlobalTheory.ConjPoint.galStar_holds D cc δ hc ⊤ _ hK trivial trivial).1 (t / n)
     ⟨m * n, by positivity, by
       rw [show ((m * n : ℕ) : ℂ) * (t / n) = m * t by push_cast; field_simp]; exact ht⟩
     (Or.inr ⟨trivial, trivial⟩)
@@ -142,7 +141,7 @@ theorem adp_add (hc : Crv D cc δ) (hK : FixK D ⊤ (topHom s)) {n : ℕ} {x x' 
     (hx : Adp1 ⊤ (topHom s) (lamOf D cc δ) n x x') (ht : Adp1 ⊤ (topHom s) (lamOf D cc δ) n t t') :
     Adp1 ⊤ (topHom s) (lamOf D cc δ) n (x + t) (x' + t') := by
   rw [Adp1, add_div, add_div]
-  exact (GlobalTheory.T.galStar_complexMultiplication_points D cc δ hc ⊤ _ hK trivial trivial).2.2.2.1 _ _ _ _ hx ht
+  exact (_root_.GlobalTheory.ConjPoint.galStar_holds D cc δ hc ⊤ _ hK trivial trivial).2.2.2.1 _ _ _ _ hx ht
 
 theorem adp_half (hc : Crv D cc δ) (hK : FixK D ⊤ (topHom s)) {n : ℕ} {x x' : ℂ}
     (hx : Adp1 ⊤ (topHom s) (lamOf D cc δ) (2 * n) x x') :
@@ -157,7 +156,7 @@ theorem adp_mem (hc : Crv D cc δ) (hK : FixK D ⊤ (topHom s)) {n m : ℕ} (hn 
     (hx : Adp1 ⊤ (topHom s) (lamOf D cc δ) n x x') (hm : (m : ℂ) * x ∈ lamOf D cc δ) :
     (m : ℂ) * x' ∈ lamConj ⊤ (topHom s) (lamOf D cc δ) := by
   have hn' : (n : ℂ) ≠ 0 := by exact_mod_cast hn.ne'
-  have h := (GlobalTheory.T.galStar_complexMultiplication_points D cc δ hc ⊤ _ hK trivial trivial).2.2.2.2.2.1 (m * n) _ _ hx
+  have h := (_root_.GlobalTheory.ConjPoint.galStar_holds D cc δ hc ⊤ _ hK trivial trivial).2.2.2.2.2.1 (m * n) _ _ hx
   have e : ∀ y : ℂ, ((m * n : ℕ) : ℂ) * (y / n) = m * y := fun y => by
     push_cast; field_simp
   rw [e, e] at h
@@ -166,13 +165,13 @@ theorem adp_mem (hc : Crv D cc δ) (hK : FixK D ⊤ (topHom s)) {n m : ℕ} (hn 
 theorem sgStar_law (hc : Crv D cc δ) :
     Differentiable ℂ (sgStar (lamOf D cc δ)) ∧ OddLaw (lamOf D cc δ) (sgStar (lamOf D cc δ)) := by
   have h := (GlobalTheory.OddTheta.sgStar_laws _
-    (GlobalTheory.CurveLattice.lattice_of_curve D (GlobalTheory.T.inducedType_thetaGenusOne_permutes D).1 cc δ hc).1).1
+    (GlobalTheory.CurveLattice.lattice_of_curve D (_root_.GlobalTheory.InducedType.induced_type D).1 cc δ hc).1).1
   exact ⟨h.1, h.2.1, h.2.2.2⟩
 
 theorem sgStar_conj_law (hc : Crv D cc δ) (hK : FixK D ⊤ (topHom s)) :
     Differentiable ℂ (sgStar (lamConj ⊤ (topHom s) (lamOf D cc δ))) ∧
       OddLaw (lamConj ⊤ (topHom s) (lamOf D cc δ)) (sgStar (lamConj ⊤ (topHom s) (lamOf D cc δ))) := by
-  obtain ⟨cc', δ', hc', -, h⟩ := GlobalTheory.T.conjugate_curveDatum_lattice_isCurveLattice D cc δ hc ⊤ _ hK trivial trivial 1 one_pos
+  obtain ⟨cc', δ', hc', -, h⟩ := _root_.GlobalTheory.ConjCurve.galCurve_holds D cc δ hc ⊤ _ hK trivial trivial 1 one_pos
   rw [h]
   exact sgStar_law hc'
 
@@ -182,7 +181,7 @@ theorem coef_translate (hc : Crv D cc δ) (hK : FixK D ⊤ (topHom s)) {m : ℕ}
       coef1 (U1 (lamConj ⊤ (topHom s) (lamOf D cc δ)) t'
         (sgStar (lamConj ⊤ (topHom s) (lamOf D cc δ)))) n := by
   rw [← cj_topHom]
-  refine GlobalTheory.T.galois_conj_taylor_thetaTranslate D cc δ hc ⊤ _ hK trivial trivial t t' (2 * m) (by positivity) ?_ ha
+  refine _root_.GlobalTheory.JetConj.galois_translate_sgStar D cc δ hc ⊤ _ hK trivial trivial t t' (2 * m) (by positivity) ?_ ha
     (fun _ => trivial) n
   rwa [show ((2 * m : ℕ) : ℂ) * (t / 2) = m * t by push_cast; ring]
 
@@ -195,7 +194,7 @@ theorem coef_translate₂ (hc : Crv D cc δ) (hK : FixK D ⊤ (topHom s)) {m : �
         (sgStar (lamConj ⊤ (topHom s) (lamOf D cc δ))))) n := by
   have hm' : (m : ℂ) ≠ 0 := by exact_mod_cast hm.ne'
   obtain ⟨y, hy⟩ := exists_adp hc hK hm hx (n := 2 * (2 * m)) (by positivity)
-  have hμ := ((GlobalTheory.T.galStar_complexMultiplication_points D cc δ hc ⊤ _ hK trivial trivial).2.1 _ _ _ (adp_half hc hK hy)).1 hxa
+  have hμ := ((_root_.GlobalTheory.ConjPoint.galStar_holds D cc δ hc ⊤ _ hK trivial trivial).2.1 _ _ _ (adp_half hc hK hy)).1 hxa
   have hsh := (sgStar_conj_law hc hK).2.doubleTranslate_shift_lattice_mod_two_mul (adp_mem hc hK (by positivity) hxa hx)
     (adp_mem hc hK (by positivity) ha ht) hμ
   rw [show x' + 2 * m * (y / ((2 * m : ℕ) : ℂ) - x' / ((2 * m : ℕ) : ℂ)) = y by
@@ -204,7 +203,7 @@ theorem coef_translate₂ (hc : Crv D cc δ) (hK : FixK D ⊤ (topHom s)) {m : �
     coef_translate hc hK hm (by rw [mul_add]; exact AddSubgroup.add_mem _ hx ht) (adp_add hc hK hy ha),
     ← cj_topHom]
   congr 1
-  refine GlobalTheory.T.weilPairing_galois_equivariant_cm_torsion D cc δ hc ⊤ _ hK trivial trivial t (x / 2) t' (y / 2) (2 * m) (by positivity)
+  refine _root_.GlobalTheory.WeilPairingGalois.weilPairingGalois_all D cc δ hc ⊤ _ hK trivial trivial t (x / 2) t' (y / 2) (2 * m) (by positivity)
     ?_ ?_ (adp_half hc hK ha) ?_ trivial
   · rw [show ((2 * m : ℕ) : ℂ) * t = m * t + m * t by push_cast; ring]
     exact AddSubgroup.add_mem _ ht ht
@@ -329,7 +328,7 @@ theorem emb_conj (φ : D.host.E →+* ℂ) (x : D.host.E) :
 
 theorem sum_emb_pair (hb : OnB D b) (i j : Fin r) :
     ∑ τ, embT D τ (∑ a, ∑ c, b i a c * D.host.conj (b j a c)) = if i = j then 1 else 0 := by
-  rw [(GlobalTheory.T.inducedType_thetaGenusOne_permutes D).1.2]
+  rw [(_root_.GlobalTheory.InducedType.induced_type D).1.2]
   have h := hb.1 i j
   rw [hYY] at h
   rw [h]
@@ -410,7 +409,7 @@ theorem exists_conjPair (hc : Crv D cc δ) (hK : FixK D ⊤ (topHom s)) (hb : On
   · rw [wdPh_sum (frameCoordinate_orthonormal_baseTorus hb), wdPh_sum (ortho_torConj hb), map_prod]
     refine Finset.prod_congr rfl fun j _ => ?_
     rw [← cj_topHom]
-    exact (GlobalTheory.T.cmQuadraticPhase_equivariant_embeddings D cc δ hc).2 ⊤ _ hK trivial trivial _ _ m hm (hum j) (hu j) trivial
+    exact (_root_.GlobalTheory.QuadPhase.galPh1_all D cc δ hc).2 ⊤ _ hK trivial trivial _ _ m hm (hum j) (hu j) trivial
 
 end Main
 

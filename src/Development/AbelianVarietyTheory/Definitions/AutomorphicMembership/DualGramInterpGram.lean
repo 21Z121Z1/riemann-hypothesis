@@ -2,9 +2,9 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.ToroidalBoundaryMetricData
-public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.DegFrame
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsLocalHomOfAlgebraic
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsBaseChange
+public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.Bundle0037
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0509
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0501
 public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.GradedLineBundleExists
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArakelovVolumes.ArakelovInstances.LminorMapConj
 

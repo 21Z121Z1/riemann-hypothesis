@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.HomogeneousIdeals.ExistsIntegralModelOfForms
+public import Development.AbelianVarietyTheory.Proofs.HomogeneousIdeals.Bundle0008
 
 @[expose] public section
 

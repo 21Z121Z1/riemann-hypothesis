@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Development.WeilBound.RepresentationTheoryGL.TwistedFactors.LocalBaseChange.ElementaryCosets.CosetMap
-public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.ImportsExtraExtra
+public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0030
 
 @[expose] public section
 

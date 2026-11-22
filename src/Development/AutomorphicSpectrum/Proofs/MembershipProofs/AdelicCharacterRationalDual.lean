@@ -1,10 +1,10 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Proofs.MembershipProofs.AdelicCharacterRationalDualImports
+public import Development.AutomorphicSpectrum.Proofs.MembershipProofs.Bundle0002
 public import Development.AutomorphicSpectrum.Proofs.MembershipProofs.ThetaSumAdmissibility
 public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.IsOpenNsmulAdelicCompletionOfVectorSet
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.FiniteAdeleStrongApproximationModNat
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0008
 public import GroundTheory.GlobalFields.TateThesis.AdelicCharDual
 public import GroundTheory.AutomorphicForms.GL2.GJMatrixFinite
 public import Development.AutomorphicSpectrum.Proofs.MembershipProofs.ThetaDistributionHeisenbergInvariant

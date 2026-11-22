@@ -3,7 +3,7 @@ module
 public import Mathlib
 public import Formalism.SharpRestriction.LevelLetterCocycles.RamifiedCoefficientChains
 public import Formalism.JumpKernelCokernel.LengthTheoremsWithEarlier
-public import Formalism.EisensteinCokernelLengths.FactorialValuationBounds.LagrangeIdealSgProof
+public import Formalism.EisensteinCokernelLengths.FactorialValuationBounds.Bundle0002
 
 @[expose] public section
 

@@ -1,16 +1,16 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Divisors.KerDatTuple
-public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.NormalFam
-public import Development.AbelianVarietyTheory.Definitions.Divisors.GenReads
-public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.ThExprUniqOfChartIndep2
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LevelPointSmulIntegralOfFourierCoeffNeZero
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0035
+public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.Bundle0015
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0034
+public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0007
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1004
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LatticeIsometrySignSecond
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsPairRecordCore
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaKernelOneClassEqClassicalShortSeries
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MovedFiniteDatumEqSumRationalRootTranslates
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.VecOfEqSumHeis
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1036
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1675
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1655
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1049
 
 @[expose] public section
 
@@ -219,7 +219,7 @@ theorem thetaKO_eq_short_series_tw : ∀ (D : D7) (G : Type) [Group G] [Fintype 
       L₀ = Submodule.span (𝓞 D.host.E)
         {w | ∃ a : D.host.E, a ∈ D.host.AA ∧ ∃ v ∈ Bridge.hLat (Wc D i) (fin (Wc D i) k), w = a • v} →
       latR (rank_Wc i) (latG (Wc D i) k) = latR (rank_Wc i) L₀ := fun L₀ h₀ => by rw [h₀, hlat]
-  have hcl := GlobalTheory.T.weilRepresentation_split_support_projects_vacuum D _ _ _ _ _ _ _ hP _ g (rank_Wc i) X bas idx hM hS H hrt _ _ Λ.La _ hV0 hVs hks hVstd hL _ _ hx'
+  have hcl := _root_.GlobalTheory.AdTh.SplitClass.om_reads_projA D _ _ _ _ _ _ _ hP _ g (rank_Wc i) X bas idx hM hS H hrt _ _ Λ.La _ hV0 hVs hks hVstd hL _ _ hx'
     (isInvOf_move (rank_Wc i) X hinv k) _ hvac' _ hR e Ps h y he hsupp hdet hΛ
   rw [← Module.End.mul_apply, ← map_mul, Prod.mk_mul_mk, mul_one, one_mul, projA_smul, smul_smul] at hcl
   obtain ⟨-, hsd, huni, hfg⟩ := LatOf.isLatOf_tens D _ _ _ _ _ g (rank_Wc i) X bas idx hψ hP.inf hP.std hP.even hM hS

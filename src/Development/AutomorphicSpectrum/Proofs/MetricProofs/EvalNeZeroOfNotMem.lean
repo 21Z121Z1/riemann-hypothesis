@@ -5,10 +5,10 @@ public import Development.AutomorphicSpectrum.Definitions.MetricPeriods.Pull1
 public import Development.AutomorphicSpectrum.Definitions.MetricPeriods.IsPeriodOn
 public import Development.AutomorphicSpectrum.Proofs.MetricProofs.PartialFlagBlocks
 public import Development.AutomorphicSpectrum.Proofs.MetricProofs.FlagPotentialBlockDecomposition
-public import Development.AutomorphicSpectrum.Proofs.MetricProofs.SamePotBlock
-public import ReciprocityTheory.AnalyticForms.PotentialTheory.PshShiftA
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.InterRedC
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.InterBridgeB
+public import Development.AutomorphicSpectrum.Proofs.MetricProofs.Bundle0044
+public import ReciprocityTheory.AnalyticForms.PotentialTheory.Bundle0001
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.Bundle0013
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.Bundle0009
 public import GroundTheory.HeightsAndTheta.Heights.HeightKernels.PCoordConeArithVar
 
 @[expose] public section

@@ -2,10 +2,10 @@ module
 
 public import Mathlib
 public import Formalism.DistinguishedUnitIdeals.ArcLiftOfLocalizationData
-public import Formalism.DistinguishedUnitIdeals.FrobeniusDiffBijective
+public import Formalism.DistinguishedUnitIdeals.Bundle0002
 public import Formalism.DistinguishedUnitIdeals.ExistsConstOfInvariantMod
-public import Formalism.DistinguishedUnitIdeals.LemmaCFull
-public import Formalism.DistinguishedUnitIdeals.FrobeniusCoboundedArc
+public import Formalism.DistinguishedUnitIdeals.Bundle0003
+public import Formalism.DistinguishedUnitIdeals.Bundle0004
 
 @[expose] public section
 

@@ -5,9 +5,9 @@ public import CompanionTheory.RealGroups.FormalDegrees.ArchimedeanFormalDegrees.
 public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.ExceptionalGroupG2.FormalDegreeG2.FdCons
 public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.ExceptionalGroupG2.ExistenceG2.FormulaF
 public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.ExceptionalGroupG2.ExistenceG2.IsDSSigLam
-public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.CasimirCoefficients.PsiFor
+public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.CasimirCoefficients.Bundle0016
 public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.DiscreteSeriesExistence.NormSubOneLeOfHsdA
-public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.HighestWeights.Exists
+public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.HighestWeights.Bundle0005
 
 @[expose] public section
 

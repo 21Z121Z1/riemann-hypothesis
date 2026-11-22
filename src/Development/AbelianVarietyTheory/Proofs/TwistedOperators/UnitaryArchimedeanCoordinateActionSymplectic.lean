@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ArchActOne
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0377
 
 @[expose] public section
 

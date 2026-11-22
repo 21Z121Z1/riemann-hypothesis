@@ -1,11 +1,11 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.NotMemPlacesOverOfNe
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.NormEqOneOfCompact
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0110
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0115
 public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.CuspidalStrongMultiplicityOneOfAnalytic
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.CharpolyFactorizationSemisimple
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.SplitPlaceGoodSignature
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0070
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0031
 
 @[expose] public section
 

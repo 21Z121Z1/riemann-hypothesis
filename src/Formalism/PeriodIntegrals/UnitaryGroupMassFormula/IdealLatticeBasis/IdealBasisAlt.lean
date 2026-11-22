@@ -1,8 +1,7 @@
 module
 
 public import Mathlib
-public import Formalism.PeriodIntegrals.IdealLattice
-public import Formalism.PeriodIntegrals.AreaLat
+public import Formalism.PeriodIntegrals.Bundle0011
 
 @[expose] public section
 

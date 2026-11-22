@@ -1,8 +1,8 @@
 module
 
-public import Formalism.LocalToGlobal.IndefiniteReal.RealRec
+public import Formalism.LocalToGlobal.IndefiniteReal.Bundle0030
 public import Formalism.LocalRingCardinality.Lemmas
-public import Formalism.LocalToGlobal.Divisibility.TupUsed
+public import Formalism.LocalToGlobal.Divisibility.Bundle0008
 
 @[expose] public section
 

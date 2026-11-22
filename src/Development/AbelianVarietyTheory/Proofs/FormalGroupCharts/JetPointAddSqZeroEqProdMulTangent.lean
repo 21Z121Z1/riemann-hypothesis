@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Proofs.HomogeneousIdeals.ReductionSurjectiveOfIsNilpotent
-public import Development.AbelianVarietyTheory.Proofs.FormalGroupCharts.FirstJetEqProdTangent
+public import Development.AbelianVarietyTheory.Proofs.FormalGroupCharts.Bundle0011
 
 @[expose] public section
 

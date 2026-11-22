@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Formalism.UnipotentAdelicQuotients.FinOrdValGen
+public import Formalism.UnipotentAdelicQuotients.Bundle0001
 public import GroundTheory.GlobalFields.TateThesis.HeckeChar
 public import GroundTheory.GlobalFields.TateThesis.HeckeCharRayClass
 public import GroundTheory.GlobalFields.Adele.WeakApproxUnits

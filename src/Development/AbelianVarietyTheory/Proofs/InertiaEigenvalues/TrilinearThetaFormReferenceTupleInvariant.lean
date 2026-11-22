@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CharacteristicFunctionIntegralApply
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ThetaLiftEquivariance
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0928
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0303
 
 @[expose] public section
 

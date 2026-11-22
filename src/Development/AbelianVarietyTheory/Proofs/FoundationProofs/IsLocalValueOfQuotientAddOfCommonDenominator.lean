@@ -1,14 +1,13 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Foundations.ApplyEqOfMemAdjoin
-public import Development.AbelianVarietyTheory.Definitions.Foundations.IsTopWTopWOfExists
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.EvOfFintype
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.EvalSeriesAndDerivUniqueOfCoefficients
+public import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0010
+public import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0003
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0095
 public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsIntegralBasisOfIntegralAlgebraicElements
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.EvalSeriesCongIffCoeffAndIsUnitStatement
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsPrimitiveExpansionQuotientLevelOneStatement
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.MemTranslationInvariantSubfieldIffExponentsStatement
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0132
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0192
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0106
 
 @[expose] public section
 
@@ -282,7 +281,7 @@ theorem gal_alg (X : GlobalTheory.KZ.Tower Ω ε) (s : Ω ≃ₐ[ℚ] Ω) (κ : 
 
 theorem mem_KT_iff' [IsAlgClosure ℚ Ω] (X : GlobalTheory.KZ.Tower Ω ε) (p n : ℕ) [Fact p.Prime] (a : X.K) :
     a ∈ KT X (p ^ n) ↔ Supp p n (X.exp a) :=
-  GlobalTheory.T.mem_translationInvariantSubfield_iff_exponents ε X (p ^ n) (pow_pos (Fact.out : p.Prime).pos n) a
+  _root_.GlobalTheory.Glue.KTExp.mem_KT_iff ε X (p ^ n) (pow_pos (Fact.out : p.Prime).pos n) a
 
 def Good (X : GlobalTheory.KZ.Tower Ω ε) (A : ValuationSubring Ω) (p n : ℕ) (y a b : X.K) (κ : Ω) (S : Finset Ω) : Prop :=
   κ ≠ 0 ∧ a ∈ KT X (p ^ n) ∧ b ∈ KT X (p ^ n) ∧ y * b = algebraMap Ω X.K κ * a ∧
@@ -434,7 +433,7 @@ theorem isQ_exists (hX : ∃ φ : ℂ → ℂ, DifferentiableOn ℂ φ Hs ∧ X.
     ∃ v, IsQ X A j n ψ y v := by
   by_cases h0 : y = 0
   · exact ⟨0, h0 ▸ isQ_zero⟩
-  obtain ⟨a, b, κ, S, hκ, hrel, hPa, hPb, hinv, hS⟩ := GlobalTheory.T.exists_primitive_expansion_quotient_level_one ε X hX p A hpA y h0
+  obtain ⟨a, b, κ, S, hκ, hrel, hPa, hPb, hinv, hS⟩ := _root_.GlobalTheory.exists_prim_frac_level_one ε X hX p A hpA y h0
   have hbK : b ∈ KT X (p ^ n) := by
     rw [KT, RingHom.mem_eqLocusField]
     exact hinv _

@@ -2,18 +2,21 @@ module
 
 public import Mathlib
 public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.BdryChart
-public import ReciprocityTheory.AnalyticForms.PlurisubharmonicFunctions.IsPshLocallyIntegrableStatement
+public import ReciprocityTheory.AnalyticForms.PlurisubharmonicFunctions.Bundle0001
 public import Development.AutomorphicSpectrum.Statements.GeometryStatements.FlatDegree
-public import Development.AutomorphicSpectrum.Statements.GeometryStatements.NineGeoU
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ComponentDataHodgeSecondStatement
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.SumLatticeWedgeComapStatement
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.UnitValueFrameDomainStatement
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.TensorWedgeDetChangeStatement
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.GramMatrixTwoFramesStatement
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ValAtIffValueAtStatement
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ComplexPointsIffCentresStatement
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.HodgeCptInteriorGenericStatement
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.InteriorPointPolarisedStatement
+public import Development.AutomorphicSpectrum.Statements.GeometryStatements.Bundle0006
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0167
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0172
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0219
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ValAtIffValueAt
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.Bundle0004
+public import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.FrameDefinitions.Metric
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.IsGrpPullback
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0043
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.HodgeCptInteriorGeneric
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsHodgeLine
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0154
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0109
 
 @[expose] public section
 
@@ -143,7 +146,7 @@ theorem stalk_le_gen (𝔐 : HodgeCpt Y S₀ Dc.y) (t : CMType H ⊕ CMType H) (
 
 theorem blocks_disjoint (Or : CptOrigin Y S₀ Dc Hd) (τ : CMType H) :
     Disjoint (Or.𝔐.Vgen (Or.bg τ)) (Or.𝔐.Vgen (Or.sm τ)) := by
-  obtain ⟨-, -, -, -, -, -, hind, -⟩ := GlobalTheory.T.hodge_cpt_interior_generic E H D l Xo c _ _ Y S₀ Ω K J Dc.y Or.𝔐
+  obtain ⟨-, -, -, -, -, -, hind, -⟩ := _root_.GlobalTheory.CompanionTheory.Ar.HodgeCpt.basic E H D l Xo c _ _ Y S₀ Ω K J Dc.y Or.𝔐
     (FaithfulSMul.algebraMap_injective _ _)
   exact hind.pairwiseDisjoint (Or.bg_ne_sm τ τ)
 
@@ -151,8 +154,8 @@ theorem small_frame (Or : CptOrigin Y S₀ Dc Hd) {z : Spec (CommRingCat.of ℂ)
     (hw : CoordsAt Or.𝔐.ξ Dc.y z w) (d : MuFrameAt Hd w) {s : CMType H → Fin (Dc.N - Dc.j) → Or.𝔐.Li}
     (hs : Or.IsSmallPart d s) (τ : CMType H) (h : genPt Or.𝔐.ξ ⤳ centre z) :
     (Or.𝔐.V (Or.sm τ)).IsFrameAt (s τ) ⟨centre z, h⟩ := by
-  have hfr := GlobalTheory.T.component_data_hodge_second E H D l Xo c Y II K J Ω W Dc Hd S₀ Or z w τ d.c d.f (d.b τ) h hw (d.adapted τ).1 d.inDom
-  exact (GlobalTheory.T.is_frame_at_tail_of_is_frame_at_comap_sup_lattice Or.𝔐.X Ω Or.𝔐.ξ Or.𝔐.Li (W τ) (Or.i τ) (Or.𝔐.V (Or.bg τ)) (Or.𝔐.V (Or.sm τ))
+  have hfr := _root_.GlobalTheory.CompanionTheory.Ar.BlockSumFrame.frame_at E H D l Xo c Y II K J Ω W Dc Hd S₀ Or z w τ d.c d.f (d.b τ) h hw (d.adapted τ).1 d.inDom
+  exact (_root_.GlobalTheory.CompanionTheory.Ar.BlockFrame.frame_of_sum_frame Or.𝔐.X Ω Or.𝔐.ξ Or.𝔐.Li (W τ) (Or.i τ) (Or.𝔐.V (Or.bg τ)) (Or.𝔐.V (Or.sm τ))
     (Or.𝔐.Vgen (Or.bg τ)) (Or.𝔐.Vgen (Or.sm τ)) Dc.N Dc.j Dc.j_le_N (d.b τ) (s τ) ⟨centre z, h⟩ (Or.i_inj τ)
     (Or.i_range τ) (blocks_disjoint Or τ) (fun _ hx => stalk_le_gen _ _ _ hx) (fun _ hx => stalk_le_gen _ _ _ hx) hfr
     (by rw [(d.adapted τ).2.2, Or.F_eq τ]) (hs τ)).1
@@ -185,7 +188,7 @@ theorem norm_indep : ∀ (E : Type) [Field E] [NumberField E] [IsCMField E] (H :
   have : CharZero Ω := algebraRat.charZero Ω
   have h : genPt Or.𝔐.ξ ⤳ centre z := Or.𝔐.all _
   have htie : CoordTie ℤ Or.𝔐.ξ (segreCoord Dc.y) := Or.𝔐.tie
-  have hpol := GlobalTheory.T.interior_point_polarised E H D l Xo c Y S₀ Ω K J Dc.y Or.𝔐 z hi
+  have hpol := _root_.GlobalTheory.CompanionTheory.Ar.HodgeMetric.polarisedAt_of_interior E H D l Xo c Y S₀ Ω K J Dc.y Or.𝔐 z hi
 
   have hch : ∀ τ, ∃ T : Matrix (Fin (Dc.N - Dc.j)) (Fin (Dc.N - Dc.j)) (Or.𝔐.X.presheaf.stalk (centre z)),
       ∀ q, s' τ q = ∑ i, genMap Or.𝔐.ξ ⟨centre z, h⟩ (T i q) • s τ i := fun τ =>
@@ -203,7 +206,7 @@ theorem norm_indep : ∀ (E : Type) [Field E] [NumberField E] [IsCMField E] (H :
     sqrt_det_change (hpd τ) (hΓ τ)
 
   have hΩ : d.u * chartMono Dc.y d.c Hd.aMu = d'.u * chartMono Dc.y d'.c Hd.aMu * ∏ τ, (T τ).det :=
-    GlobalTheory.T.tensor_wedge_det_change (CMType H) Ω (fun τ => W τ ⧸ Hd.F τ) (Dc.N - Dc.j)
+    _root_.GlobalTheory.CompanionTheory.Ar.TopWedge.eq_mul_prod_det (CMType H) Ω (fun τ => W τ ⧸ Hd.F τ) (Dc.N - Dc.j)
       (fun τ a => (Hd.F τ).mkQ (d.b τ (tailIdx Dc.j_le_N a)))
       (fun τ a => (Hd.F τ).mkQ (d'.b τ (tailIdx Dc.j_le_N a))) T _ _
       (fun τ => (quot_basis Dc.j_le_N (b := d.b τ) (F := Hd.F τ)
@@ -228,8 +231,8 @@ theorem norm_indep : ∀ (E : Type) [Field E] [NumberField E] [IsCMField E] (H :
     rw [e, ← mul_div_assoc, hΩ]
     field_simp
 
-  have hu := GlobalTheory.T.unit_value_frame_domain Or.𝔐.X Ω Or.𝔐.ξ K J Dc.y z w d.c d.f d.u htie h hw d.inDom d.unit
-  have hu' := GlobalTheory.T.unit_value_frame_domain Or.𝔐.X Ω Or.𝔐.ξ K J Dc.y z w d'.c d'.f d'.u htie h hw d'.inDom d'.unit
+  have hu := _root_.GlobalTheory.CompanionTheory.Ar.UnitValue.valAt_ne_zero_of_isUnitOn Or.𝔐.X Ω Or.𝔐.ξ K J Dc.y z w d.c d.f d.u htie h hw d.inDom d.unit
+  have hu' := _root_.GlobalTheory.CompanionTheory.Ar.UnitValue.valAt_ne_zero_of_isUnitOn Or.𝔐.X Ω Or.𝔐.ξ K J Dc.y z w d'.c d'.f d'.u htie h hw d'.inDom d'.unit
   have hL : ValAt Or.𝔐.ξ z (d.u * ∏ k, (Dc.y ⟨k, d.c k⟩ / Dc.y ⟨k, d'.c k⟩) ^ Hd.aMu k)
       (valAt Dc.y d.u w * ∏ k, r k ^ Hd.aMu k) :=
     CxVal.mul hu.2 (valAt_prod h _ fun k => CxVal.zpow (hrv k) (hr0 k) _)

@@ -1,8 +1,8 @@
 module
 
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.IdeleGenerators.Adelise
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.IdeleGenerators.Bundle0002
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.IdeleGenerators.ConstSmall
-public import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.AdmissibleResidues.RW
+public import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.AdmissibleResidues.Bundle0007
 
 @[expose] public section
 

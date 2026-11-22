@@ -1,11 +1,10 @@
 module
 
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.GaloisRepUniqueBaseChange
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0533
 public import Mathlib
 public import Formalism.SharpRestriction.LevelLetterCocycles.ExistsInertiaCharpolyFactorOfTameType
-public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.IsobaricDiscreteSelfDualStrongMultiplicityOne
-public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.RankOneUnitary
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.SplitBCOfGalIso
+public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.Bundle0007
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0051
 public import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.TypeConditions.TrivialLocalCondition
 
 @[expose] public section

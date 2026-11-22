@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.BlockTheory.TorsionBlocks.GraphHeightLattice
+public import Development.AbelianVarietyTheory.BlockTheory.TorsionBlocks.Bundle0008
 
 @[expose] public section
 

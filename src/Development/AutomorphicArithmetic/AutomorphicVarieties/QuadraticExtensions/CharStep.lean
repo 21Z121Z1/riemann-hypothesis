@@ -2,7 +2,7 @@ module
 
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.QuadraticExtensions.ModulusAdjoinISqrtNegPrimes
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.QuadraticExtensions.TameGen
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.QuadraticExtensions.IneConj
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.QuadraticExtensions.Bundle0002
 
 @[expose] public section
 

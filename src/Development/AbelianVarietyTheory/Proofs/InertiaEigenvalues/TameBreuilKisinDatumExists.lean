@@ -1,13 +1,13 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.IsPotential
-public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.OneSubPhiOntoOfFilZero
-public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.BhattScholzeCrystallineLattices
-public import Development.AbelianVarietyTheory.BlockTheory.NonGaloisCusps.ConductorExponents
+public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0017
+public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.Bundle0007
+public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.Bundle0005
+public import Development.AbelianVarietyTheory.BlockTheory.NonGaloisCusps.Bundle0004
 public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.AcrisTorsionFreeComplete
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.BcrisTensorIdentificationNaturalStatement
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsPowMulNormLe
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0561
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0444
 
 @[expose] public section
 
@@ -61,7 +61,7 @@ theorem main (l : ℕ) [Fact l.Prime] (a e : ℕ) [NeZero a] [NeZero e] (O K : T
     IsMapOf R₁.I R₂.I f F.toHom → ∀ y c, R₁.ClassOf y c → R₂.ClassOf (F.app y) (f.post c) := by
   intro hF y c hc
   obtain ⟨b, ⟨hy, m₀, σ, b₀, h1, h2, h3, h4, hb⟩, hcob⟩ := hc
-  have N := GlobalTheory.T.bcrisTensorIdentification_natural l a e O K t ϖ ι D₁.toPhiMod T₁ R₁.I R₁.jB R₁.cmp κ D₂.toPhiMod T₂ R₂.I R₂.jB f
+  have N := _root_.GlobalTheory.BKGal.cris_natural l a e O K t ϖ ι D₁.toPhiMod T₁ R₁.I R₁.jB R₁.cmp κ D₂.toPhiMod T₂ R₂.I R₂.jB f
     F.toHom R₂.cmp hF
   set Φ := TensorProduct.map (R := O) (LinearMap.id (R := O) (M := OB l O))
     ((f.f.restrictScalars O).restrict f.T_le) with hΦ

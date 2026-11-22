@@ -1,11 +1,11 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Divisors.IsSmoothVector
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SmoothVectorsSubspaceStableSobolevFormDerivStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ComplexifiedDerivedActionIsLieActionStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsCompactTypeInCompactStableSubmoduleStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.VoganNormSqHolomorphicLowestKTypeSubRootLtStatement
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0033
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SmoothVectorsSubspaceStableSobolevFormDeriv
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0982
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsCompactTypeInCompactStableSubmodule
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0976
 
 @[expose] public section
 
@@ -347,8 +347,8 @@ theorem lowK_killed : ∀ (n p : ℕ) (ε : Fin n → Bool) (lam : Fin n → ℝ
   have hH : (Formalism.REAL.Jm ε).IsHermitian := Jm_conjTranspose ε
   have hdet : (Formalism.REAL.Jm ε).det ≠ 0 := (Matrix.isUnit_det_of_left_inverse (Jm_mul_self ε)).ne_zero
   have hU : IsURepOn (Formalism.QuantumDeterminants.UH (Formalism.REAL.Jm ε)) σ := hσ
-  obtain ⟨hspan, hsmv⟩ := GlobalTheory.T.smoothVectors_subspace_stable_sobolevForm_deriv n _ H σ hH hdet hU
-  have hlie := GlobalTheory.T.complexifiedDerivedAction_isLieAction n _ H σ hH hdet hU
+  obtain ⟨hspan, hsmv⟩ := _root_.GlobalTheory.UnitarySmVec.smoothVec_basic n _ H σ hH hdet hU
+  have hlie := _root_.GlobalTheory.HolDict.LieAct.main n _ H σ hH hdet hU
   obtain ⟨W, hWf, hWK, hWle, hvW⟩ := exists_fin_stable lam hv
   set J := Formalism.REAL.Jm ε with hJ
   let V : Submodule ℂ H := W ⊓ Submodule.span ℂ {w | SmoothVec (lieH J) σ w}
@@ -416,7 +416,7 @@ theorem lowK_killed : ∀ (n p : ℕ) (ε : Fin n → Bool) (lam : Fin n → ℝ
       · obtain ⟨rfl, rfl⟩ := h
         simp [hc]
       · simp [h]
-  obtain ⟨μ, S', hS'le, hS'⟩ := GlobalTheory.T.exists_compactType_in_compactStable_submodule n ε H σ hσ S hSf hSK hS0
+  obtain ⟨μ, S', hS'le, hS'⟩ := _root_.GlobalTheory.KTypeExists.exists_kType n ε H σ hσ S hSf hSK hS0
   obtain ⟨u, huS', hu0, hu⟩ := hS'.2.2.2.1
   have huS := hS'le huS'
   have hus := hSs u huS
@@ -467,6 +467,6 @@ theorem lowK_killed : ∀ (n p : ℕ) (ε : Fin n → Bool) (lam : Fin n → ℝ
     ring
   have hd := cdom_of_inner_ne hσ lam hy (hWle hw.1) hwu
   exact absurd (hmin μ S' hS') (not_le.2 (vNormSq_lt p ε hε _ μ (dominant_of_isKTypeOf hσ hS₀)
-    (dominant_of_isKTypeOf hσ hS') (GlobalTheory.T.voganNormSq_holomorphicLowestKType_sub_root_lt n p ε lam hlam hε) a' c' ha' hc' hd))
+    (dominant_of_isKTypeOf hσ hS') (_root_.GlobalTheory.HolDict.vNormSq_lowK_sub_noncompact_root_lt n p ε lam hlam hε) a' c' ha' hc' hd))
 
 end GlobalTheory.HolDict.Lowering

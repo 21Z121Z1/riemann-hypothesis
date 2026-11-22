@@ -2,9 +2,9 @@ module
 
 public import Mathlib
 public import Development.AutomorphicSpectrum.Statements.AlgebraStatements.IsPolarisationOfRelAmple
-public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.ExistsCrystalPairing
-public import Development.WeilBound.CoreStatements.AbelianHeightsDuality.ZarhinTrick.FibAmpleD
-public import Development.WeilBound.CoreStatements.AbelianHeightsDuality.ZarhinTrick.FibLamD
+public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.Bundle0022
+public import Development.WeilBound.CoreStatements.AbelianHeightsDuality.ZarhinTrick.Bundle0005
+public import Development.WeilBound.CoreStatements.AbelianHeightsDuality.ZarhinTrick.Bundle0008
 
 @[expose] public section
 

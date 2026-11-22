@@ -3,7 +3,7 @@ module
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.ArchimedeanThetaValues.DegeneratingToriPeriodMapEqBaseOfYEqZero
 public import Development.AbelianVarietyTheory.Proofs.CovolumeBounds.DifferentiableOnOfTendstoLocallyUniformlyOn
-public import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.SummableExpNegSumAbs
+public import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.Bundle0002
 
 @[expose] public section
 

@@ -2,8 +2,8 @@ module
 
 public import Mathlib
 public import CompanionTheory.SpectralGeometry.CountingDefinitions.AdelicEulerProducts.IsEulerProd
-public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.TensorInvolutionAlgebraPropertiesStatement
-public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.TensorLocallyCompactRingStatement
+public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.Bundle0020
+public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.Bundle0019
 
 @[expose] public section
 
@@ -327,8 +327,8 @@ theorem ldl_isOpenEmbedding : ∀ (F E : Type) [Field F] [NumberField F] [Field 
   haveI := hT2
   haveI := hAr
   haveI := hRed
-  obtain ⟨-, -, -, hinv, -, hfix, -⟩ := GlobalTheory.T.tensor_involution_algebra_properties F E σ hcm R
-  obtain ⟨hKT, -, -, -, hsc, htr, -⟩ := GlobalTheory.T.tensor_locally_compact_ring F E σ hcm R
+  obtain ⟨-, -, -, hinv, -, hfix, -⟩ := _root_.GlobalTheory.CompanionTheory.SW.KAlg.algebra_tensor_invol F E σ hcm R
+  obtain ⟨hKT, -, -, -, hsc, htr, -⟩ := _root_.GlobalTheory.CompanionTheory.SW.TopK.topTens_props F E σ hcm R
   haveI := hKT
   have hfr : Module.finrank F E = 2 := hcm.2.2.1
   haveI : IsModuleTopology R (R ⊗[F] E) := ⟨rfl⟩

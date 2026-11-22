@@ -1,8 +1,8 @@
 module
 
 public import Formalism.SharpRestriction.GrowthBounds.DualFockLinear.JetMatrixAlgebra
-public import Formalism.SharpRestriction.GrowthBounds.DualFockLinear.WspanLeOpCl
-public import Formalism.SharpRestriction.GrowthBounds.DualFockLinear.FockRAddRight
+public import Formalism.SharpRestriction.GrowthBounds.DualFockLinear.Bundle0011
+public import Formalism.SharpRestriction.GrowthBounds.DualFockLinear.Bundle0008
 
 @[expose] public section
 

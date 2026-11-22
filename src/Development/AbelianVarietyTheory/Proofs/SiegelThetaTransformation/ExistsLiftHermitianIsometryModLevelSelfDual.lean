@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.BlockTheory.JetGauges.ThetaSpanAdjoint
+public import Development.AbelianVarietyTheory.BlockTheory.JetGauges.Bundle0003
 public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.ExistsAdelicUnitaryTranslateStandardLattice
-public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.ExistsTautologicalMarking
+public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0039
 
 @[expose] public section
 

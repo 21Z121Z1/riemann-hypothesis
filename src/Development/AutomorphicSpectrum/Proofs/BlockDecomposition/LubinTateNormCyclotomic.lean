@@ -1,11 +1,11 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.EvalMod
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0236
 public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ValuationLtOneOfEq
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LubinTateUnramifiedDegreeOne
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsUniformizerGaloisAction
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LocalBridgeLubinTateField
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0469
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0514
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0468
 public import GroundTheory.LocalFields.LocalArtinBaseChange
 public import GroundTheory.LocalFields.ExplicitQp
 

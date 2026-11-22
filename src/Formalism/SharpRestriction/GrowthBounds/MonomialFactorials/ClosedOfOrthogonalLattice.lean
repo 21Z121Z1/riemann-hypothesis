@@ -1,7 +1,7 @@
 module
 
 public import Formalism.SharpRestriction.GrowthBounds.MonomialFactorials.SymmetryWindowOnAdmissible
-public import Formalism.SharpRestriction.GrowthBounds.MonomialFactorials.CmapMemRestrictSupport
+public import Formalism.SharpRestriction.GrowthBounds.MonomialFactorials.Bundle0012
 
 @[expose] public section
 

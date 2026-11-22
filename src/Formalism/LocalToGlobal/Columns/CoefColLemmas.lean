@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Formalism.LocalToGlobal.Columns.CoefCol
+public import Formalism.LocalToGlobal.Columns.Bundle0002
 public import Formalism.LocalToGlobal.Divisibility.CoefModLemmas
-public import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Bridge
+public import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Bundle0008
 public import Formalism.LocalToGlobal.Columns.BaseLemmas
 
 @[expose] public section

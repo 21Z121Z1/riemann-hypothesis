@@ -1,21 +1,20 @@
 module
 
 public import Mathlib
-public import Formalism.LocalToGlobal.ProjectiveLattices.RegXInst
-public import Formalism.LocalToGlobal.ProjectiveLattices.CurveLocInst
-public import Formalism.LocalToGlobal.ProjectiveLattices.LocRingPf
-public import Formalism.LocalToGlobal.ProjectiveLattices.TieInst
-public import Formalism.LocalToGlobal.ProjectiveLattices.RealPtPf
-public import Formalism.LocalToGlobal.ProjectiveLattices.CurveSec
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0035
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0043
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0041
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0037
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0039
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0031
 public import Formalism.LocalToGlobal.ProjectiveLattices.LiftSec
 public import Formalism.LocalToGlobal.ProjectiveLattices.LiftModelHolds
-public import Formalism.LocalToGlobal.ProjectiveLattices.SecPtRed
-public import Development.AbelianVarietyTheory.Proofs.GenericRegularity.CurveModelExistsAllPrimesAllPoints
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0030
+public import Development.AbelianVarietyTheory.Proofs.GenericRegularity.Bundle0028
 public import Development.AbelianVarietyTheory.Proofs.GenericRegularity.CurveSectionStatement
 public import Development.AbelianVarietyTheory.Proofs.GenericRegularity.LocStructStRecord
-public import Development.AbelianVarietyTheory.Proofs.GenericRegularity.SectionRatiosIntegral
-public import Development.AbelianVarietyTheory.Proofs.GenericRegularity.RealPtNZOfCurveHyp
-public import Development.AbelianVarietyTheory.Proofs.GenericRegularity.FiniteDimensionalOfModel
+public import Development.AbelianVarietyTheory.Proofs.GenericRegularity.Bundle0037
+public import Development.AbelianVarietyTheory.Proofs.GenericRegularity.Bundle0038
 
 @[expose] public section
 

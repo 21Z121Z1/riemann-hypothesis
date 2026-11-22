@@ -1,7 +1,7 @@
 module
 
 public import Formalism.SharpRestriction.GrowthBounds.MonomialFactorials.RestrictedBoundsWeakenFromEightToSeven
-public import Formalism.SharpRestriction.GrowthBounds.MonomialFactorials.SumFinrankLeOfIndep
+public import Formalism.SharpRestriction.GrowthBounds.MonomialFactorials.Bundle0018
 
 @[expose] public section
 

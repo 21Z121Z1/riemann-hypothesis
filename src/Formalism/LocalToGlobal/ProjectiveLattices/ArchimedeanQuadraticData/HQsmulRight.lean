@@ -1,7 +1,7 @@
 module
 
-public import Formalism.LocalToGlobal.ProjectiveLattices.ArchimedeanQuadraticData.RhoDotSelf
-public import ReciprocityTheory.SemistableReduction.TorsionNonvanishStatement
+public import Formalism.LocalToGlobal.ProjectiveLattices.ArchimedeanQuadraticData.Bundle0001
+public import ReciprocityTheory.SemistableReduction.Bundle0002
 
 @[expose] public section
 

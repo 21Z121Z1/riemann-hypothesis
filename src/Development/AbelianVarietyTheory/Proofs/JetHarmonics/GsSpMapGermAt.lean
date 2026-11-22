@@ -7,9 +7,9 @@ public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.DiscreteValua
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.DiscreteValuationRings.CartesianLiftThreeCompProjection
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.DivCalc
 public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.FBIdJet
-public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.IsLawOfOfMatch
-public import Development.AbelianVarietyTheory.Proofs.FormalGroupCharts.ValSerGermFnVal
-public import Development.AbelianVarietyTheory.Proofs.FormalGroupCharts.ExistsUniqueNormPrim
+public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0072
+public import Development.AbelianVarietyTheory.Proofs.FormalGroupCharts.Bundle0017
+public import Development.AbelianVarietyTheory.Proofs.FormalGroupCharts.Bundle0015
 
 @[expose] public section
 

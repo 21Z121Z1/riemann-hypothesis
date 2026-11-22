@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.SqMap
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0085
 public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.LinEig
 
 @[expose] public section

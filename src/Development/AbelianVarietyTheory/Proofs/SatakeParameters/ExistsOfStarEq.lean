@@ -3,10 +3,10 @@ module
 public import Mathlib
 public import Formalism.LocalToGlobal.Columns.FiniteSumNonzeroLargeDepth
 public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ContinuousOfCongSet
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.FinAfMemIntUIff
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.LocalIdeleSndSelf
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0255
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0095
 public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.CharacterValueAtT
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MemDivsOfMem
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0647
 public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.MemZmuOfPowPred
 
 @[expose] public section

@@ -1,12 +1,22 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Statements.PlaceShiftStatements.NormSmall
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.MatchedThetaIntegralValue
+public import Development.AbelianVarietyTheory.Statements.PlaceShiftStatements.Bundle0002
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0689
 public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.RegularisingTranslateCombination
 public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsLatticeForMatchedFrames
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsFiniteSupportMulLatticeStabilizerStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BigThetaKernelIntegrable
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0523
+public import Development.AbelianVarietyTheory.Definitions.Foundations.OfInfProjInfMulOfFinProjFin
+public import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.TwistPlacesOffPrimeQZero
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0041
+public import Development.AbelianVarietyTheory.Statements.PlaceShiftStatements.Bundle0003
+public import Development.AbelianVarietyTheory.Statements.HeckeThetaIntegrals.ThetaIntegralsAgree
+public import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.WeilTensorModels
+public import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.Bundle0015
+public import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.ToricSymbols
+public import Development.AbelianVarietyTheory.Definitions.Foundations.NormSumPairRankZeroOfCurveCoordNorm
+public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.Bundle0008
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2930
 
 @[expose] public section
 
@@ -256,7 +266,7 @@ theorem reg_const (hK : GlobalTheory.IndefiniteRowSideFullHecke.WeilTensorModels
   classical
   have k2 := exists_reg_at hK hL W B ρ t i j hst M hM Θ Θ' hΘ g g₁
   obtain ⟨Λ, S, hfg, hsp, hright⟩ := kerSmall_inv hL W B ρ t i j Θ Θ' hΘ g g₁
-  choose b' Pb hPb hKb using fun b => GlobalTheory.T.exists_finiteSupport_mul_latticeStabilizer (G.V (.grid i j)) Λ hfg hsp S b
+  choose b' Pb hPb hKb using fun b => _root_.GlobalTheory.TruncAway.exists_trunc_mul_inK (G.V (.grid i j)) Λ hfg hsp S b
   have hinv := kerSmall_rat_mid W B ρ t i j Θ Θ' hΘ g g₁
   set f := kerSmall W Θ' g g₁ with hf
   have kb : ∀ b u, f (u * b' b) = f (u * b) := fun b u => by

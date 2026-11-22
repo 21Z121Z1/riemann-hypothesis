@@ -3,13 +3,13 @@ module
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.ArchimedeanThetaValues.IsFramedPointChangedByLetters
 public import Development.AbelianVarietyTheory.Definitions.RegularCharts.ModelAt
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.SabPull
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.Bundle0007
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.UnifUniqSt
 public import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.IsoEqOfMapsAlongSection
-public import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.ExistsUniqueConstantTangentVectorsAlongArcStatement
-public import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.ExistsUniqueThetaOfStatement
+public import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.ExistsUniqueConstantTangentVectorsAlongArc
+public import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.Bundle0036
 public import Development.AbelianVarietyTheory.Proofs.GenericRegularity.ExistsPChartOfFramedPoint
-public import Development.AbelianVarietyTheory.Proofs.GenericRegularity.ModelChartLiftCoordsGeneratorIndep
+public import Development.AbelianVarietyTheory.Proofs.GenericRegularity.Bundle0018
 
 @[expose] public section
 
@@ -262,7 +262,7 @@ theorem isArcFr_unique_baseChange : Out.Laws → Out.Laws2 → ∀ (E : Type) [F
   intro hL hL2 E _ _ _ H Dw l Xo c O _ β Y A _ _ _ _ b a χ W e th hth S _ _ ι y hy
   refine ⟨fun hj y' hy' => FrUniq.unique W e th hL.globalFns (fun τ k v v' => ?_) (fun θ θ' => ?_) ι y y' hj hy hy',
     fun _ T _ _ φ y₁ hm => FrUniq.baseChange W e th ι y hy φ y₁ hm⟩
-  · exact (GlobalTheory.T.exists_unique_constant_tangent_vectors_along_arc hL.globalFns E H Dw l Xo c O β Y A b a χ W (e τ k)).1.unique
+  · exact (_root_.GlobalTheory.ConstLie.main hL.globalFns E H Dw l Xo c O β Y A b a χ W (e τ k)).1.unique
   · exact (GlobalTheory.T.existsUnique_thetaOf_alt hL hL2 E H Dw l Xo c O β Y A b a χ W th hth).1.unique
 
 end GlobalTheory.ArcQ

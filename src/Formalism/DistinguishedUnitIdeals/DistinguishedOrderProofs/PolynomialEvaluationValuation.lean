@@ -1,11 +1,11 @@
 module
 
 public import Mathlib
-public import Formalism.DistinguishedUnitIdeals.PhiFreeOfBasis
+public import Formalism.DistinguishedUnitIdeals.Bundle0004
 public import Formalism.DistinguishedUnitIdeals.DistinguishedOrderProofs.GoodOf
 public import Formalism.DistinguishedUnitIdeals.DistinguishedOrderProofs.Graded
 public import Formalism.DistinguishedUnitIdeals.DistinguishedOrderProofs.ThmEPrim
-public import Formalism.DistinguishedUnitIdeals.DistinguishedOrderProofs.Descent
+public import Formalism.DistinguishedUnitIdeals.DistinguishedOrderProofs.Bundle0001
 public import Formalism.WindowSums.PowerSeriesRelationList
 
 @[expose] public section

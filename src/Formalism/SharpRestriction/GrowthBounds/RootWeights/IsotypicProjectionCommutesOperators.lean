@@ -1,6 +1,6 @@
 module
 
-public import Formalism.SharpRestriction.GrowthBounds.RootWeights.StableSubspaceCompleteReducibility
+public import Formalism.SharpRestriction.GrowthBounds.RootWeights.Bundle0002
 
 @[expose] public section
 

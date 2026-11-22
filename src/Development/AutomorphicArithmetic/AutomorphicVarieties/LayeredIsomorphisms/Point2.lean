@@ -2,8 +2,8 @@ module
 
 public import Mathlib
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.LayeredIsomorphisms.SecondBound
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.LayeredIsomorphisms.ImportsAlt
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.LayeredIsomorphisms.Logs
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.LayeredIsomorphisms.Bundle0004
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.LayeredIsomorphisms.Bundle0002
 
 @[expose] public section
 

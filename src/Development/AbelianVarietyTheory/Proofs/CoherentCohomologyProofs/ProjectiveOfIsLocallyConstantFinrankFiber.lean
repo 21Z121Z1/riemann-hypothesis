@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.CoherentCohomologyProofs.MapSpanBaseChangeEquivSubmoduleOf
-public import Development.AbelianVarietyTheory.Proofs.CoherentCohomologyProofs.ExistsBasisMapOfLiftBaseChangeSurjective
+public import Development.AbelianVarietyTheory.Proofs.CoherentCohomologyProofs.Bundle0004
+public import Development.AbelianVarietyTheory.Proofs.CoherentCohomologyProofs.Bundle0002
 public import Development.AbelianVarietyTheory.Proofs.CoherentCohomologyProofs.ExistsFiniteProjectiveComplexQuasiIso
 
 @[expose] public section

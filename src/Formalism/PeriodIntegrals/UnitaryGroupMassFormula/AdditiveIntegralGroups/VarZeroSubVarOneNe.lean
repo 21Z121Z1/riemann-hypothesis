@@ -1,8 +1,8 @@
 module
 
 public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.AdditiveIntegralGroups.ThirdRootSubVarZeroNeZero
-public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.AdditiveIntegralGroups.DXEqDerivative
-public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.AdditiveIntegralGroups.DvCoeffMulEqZeroOfLtOrder
+public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.AdditiveIntegralGroups.Bundle0002
+public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.AdditiveIntegralGroups.Bundle0001
 
 @[expose] public section
 

@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import GroundTheory.ProfiniteCohomology.RealPlaces.VanishingCriterion
+public import GroundTheory.ProfiniteCohomology.RealPlaces.Bundle0002
 public import GroundTheory.ProfiniteCohomology.Shapiro
 public import GroundTheory.ProfiniteCohomology.CohomologicalDimension.SubsingletonCohomologyOfPrimaryOfFinite
 public import GroundTheory.ProfiniteCohomology.CartierDual

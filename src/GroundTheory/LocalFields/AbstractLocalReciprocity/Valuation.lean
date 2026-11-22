@@ -4,7 +4,7 @@ public import Mathlib
 public import GroundTheory.LocalFields.AbstractLocalReciprocity.ExistsOpenSubgroupMemFixedModule
 public import GroundTheory.LocalFields.AbstractLocalReciprocity.ExistsEqNsmulOfProjEqZero
 public import GroundTheory.LocalFields.AbstractLocalReciprocity.UniqueQuotientSubgroupOfSelf
-public import GroundTheory.PowerSubgroups.CountableNeighbourhoods.RelIndexSup
+public import GroundTheory.PowerSubgroups.CountableNeighbourhoods.Bundle0001
 
 @[expose] public section
 

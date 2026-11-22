@@ -2,14 +2,11 @@ module
 
 public import Formalism.FormalGroupWitt.Statement
 public import Formalism.FormalGroupWitt.FormalGroupWittProofs.FunctionalEquationHomVector
-public import Formalism.FormalGroupWitt.FormalGroupWittProofs.EqSingleOfDegreeEqOne
+public import Formalism.FormalGroupWitt.FormalGroupWittProofs.Bundle0001
 public import Formalism.FormalGroupLog.FormalGroupLogProofs.ChainRule
 public import Formalism.FormalGroupLog.FormalGroupLogProofs.ConstantCoeffSubstOfZero
 public import Formalism.FormalGroupWitt.FormalGroupWittProofs.SolveV
-public import Formalism.FormalGroupWitt.FormalGroupWittProofs.CoeffV
-public import Formalism.FormalGroupWitt.FormalGroupWittProofs.IntegralSubstVector
 public import Formalism.TorsionNormIteration.InverseIntegralClasses.SigmaNormLeOne
-public import Formalism.FormalGroupWitt.FormalGroupWittProofs.FrobSqV
 public import Formalism.FormalGroupWitt.FormalGroupWittProofs.WittTeichmullerRoot
 
 @[expose] public section

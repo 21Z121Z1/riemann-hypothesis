@@ -1,8 +1,9 @@
 module
 
-public import Development.WeilBound.CoreStatements.CentralCharts.ContDiffAtLogdet
-public import Development.WeilBound.CoreStatements.CentralCharts.AnalyticAtDet
-public import Development.AutomorphicSpectrum.Proofs.MetricProofs.PeriodMatrixLocalTrivializationStatement
+public import Development.WeilBound.CoreStatements.CentralCharts.Bundle0001
+public import Mathlib
+public import Development.AutomorphicSpectrum.Proofs.MetricProofs.Bundle0025
+public import Development.AutomorphicSpectrum.Definitions.MetricPeriods.ClopenCondOnto
 public import ReciprocityTheory.AnalyticForms.AnalyticCharts.Osgood
 
 @[expose] public section

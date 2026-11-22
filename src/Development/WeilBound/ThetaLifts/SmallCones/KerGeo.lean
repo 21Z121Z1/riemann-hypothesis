@@ -1,7 +1,7 @@
 module
 
 public import Development.WeilBound.ThetaLifts.SmallCones.ExpAlg
-public import Development.WeilBound.ThetaLifts.LeviDeterminants.MixedModels.PlaneAd
+public import Development.WeilBound.ThetaLifts.LeviDeterminants.MixedModels.Bundle0001
 
 @[expose] public section
 

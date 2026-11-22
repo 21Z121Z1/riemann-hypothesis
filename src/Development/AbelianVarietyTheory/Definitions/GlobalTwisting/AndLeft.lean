@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.TiedColumnData
-public import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.LowerTieTwAt
+public import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.Bundle0005
 public import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.ValidForConstructedPointClassesEventuallyWorking
 
 @[expose] public section

@@ -1,11 +1,10 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.SpanningFamilies.IsHeatZero
-public import Development.AbelianVarietyTheory.Definitions.SpanningFamilies.NotAdmissibleHalfLatticeFamily
-public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.FinsumQuotientOfLe
+public import Development.AbelianVarietyTheory.Definitions.SpanningFamilies.Bundle0001
+public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.Bundle0002
 public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.UnitaryActHalfSpace
-public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.HermitianWeilActionUnitaryGroupTestFunctions
+public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.Bundle0020
 public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.HermitianHeisenbergOperatorLaws
 
 @[expose] public section

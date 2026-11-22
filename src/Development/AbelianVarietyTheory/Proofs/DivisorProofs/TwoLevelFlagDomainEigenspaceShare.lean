@@ -1,14 +1,14 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsArchOne
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0056
 public import Development.AbelianVarietyTheory.BlockTheory.PoincareCuspForms.SmallUnipotentElements
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsCuspFormIndependentTranslatesStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CuspFormPullbackIsBoundedSectionStatement
-public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsLevelBlockOfEq
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.FundamentalDomains.SiegelSpaceAlgebraHolds
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.TaylorDiscriminants.WickVanishing.GGConn
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.FundamentalDomains.FourierCoefficientDomain
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1816
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0449
+public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0013
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.FundamentalDomains.Bundle0038
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.TaylorDiscriminants.WickVanishing.Bundle0011
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.FundamentalDomains.Bundle0014
 public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.RiemannExtensionOfLogGrowth
 
 @[expose] public section
@@ -182,7 +182,7 @@ theorem share_eig : ∀ (E : Type) [Field E] [NumberField E] [IsCMField E] (r : 
   classical
   letI : Fintype H := Fintype.ofFinite H
   obtain ⟨a, ha⟩ := hρ
-  obtain ⟨u0, hu0, hdet⟩ := GlobalTheory.T.exists_cuspForm_independent_translates E r H C (sub M H) hL (sOf M) (even_sOf M) (le_sOf M)
+  obtain ⟨u0, hu0, hdet⟩ := _root_.GlobalTheory.TranslatesDet.independentTranslates E r H C (sub M H) hL (sOf M) (even_sOf M) (le_sOf M)
   have hu0' : u0 ∈ M.SS (deMul M.Ψ r M.p0 (sOf M)) := hu0
   haveI : Module.Finite ℂ (M.cusp ka) := hR.1
   have hQ : ∀ (h : U) (c : C), (M.comp c).IsBddSec (castWt (M.comp_Ψ c) (deMul M.Ψ r M.p0 (sOf M)))

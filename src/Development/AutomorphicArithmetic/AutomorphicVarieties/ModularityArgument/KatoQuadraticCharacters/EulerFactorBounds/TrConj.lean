@@ -1,7 +1,7 @@
 module
 
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.KatoQuadraticCharacters.SymmetricPowerSymbols.WkTopEq
-public import Development.AbelianVarietyTheory.Definitions.Foundations.LiftSL
+public import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0021
 public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsIsSymplecticBasisToMatrixOffDiagDvd
 
 @[expose] public section

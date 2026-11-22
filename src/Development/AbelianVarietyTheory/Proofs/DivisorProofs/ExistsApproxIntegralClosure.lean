@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Divisors.IsChartMember
-public import ReciprocityTheory.AnalyticForms.RegularLocalRings.FinalTheorems
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0063
+public import ReciprocityTheory.AnalyticForms.RegularLocalRings.Bundle0001
 
 @[expose] public section
 

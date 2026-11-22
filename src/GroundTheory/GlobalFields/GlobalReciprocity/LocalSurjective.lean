@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import GroundTheory.GlobalFields.NormResidueSymbol.FunctorialFinite
+public import GroundTheory.GlobalFields.NormResidueSymbol.Bundle0002
 
 @[expose] public section
 

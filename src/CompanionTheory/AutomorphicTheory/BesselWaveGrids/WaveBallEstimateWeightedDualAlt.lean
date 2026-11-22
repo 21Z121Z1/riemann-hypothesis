@@ -1,34 +1,30 @@
 module
 
-public import CompanionTheory.AutomorphicTheory.PieriRules.ThetaBesselIsometries.TensorMomentEstimateStatement
-public import CompanionTheory.AutomorphicTheory.PieriRules.ThetaBesselIsometries.PieriTensorDecompositionStatement
+public import CompanionTheory.AutomorphicTheory.PieriRules.ThetaBesselIsometries.Bundle0011
+public import CompanionTheory.AutomorphicTheory.PieriRules.ThetaBesselIsometries.Bundle0010
 public import CompanionTheory.AutomorphicTheory.PieriRules.ThetaBesselIsometries.BesselSettingUniformConstantStatement
-public import CompanionTheory.AutomorphicTheory.PieriRules.ThetaBesselIsometries.DiscreteSeriesUnitarySmoothBasic
+public import CompanionTheory.AutomorphicTheory.PieriRules.ThetaBesselIsometries.Bundle0001
 public import CompanionTheory.AutomorphicTheory.PieriRules.ThetaBesselIsometries.HaarEqSmul
 public import CompanionTheory.AutomorphicTheory.PieriRules.ThetaBesselIsometries.FamilySetupMomentClosureStatement
-public import CompanionTheory.AutomorphicTheory.PieriRules.ThetaBesselIsometries.TensorWeightedBesselGapStatement
+public import CompanionTheory.AutomorphicTheory.PieriRules.ThetaBesselIsometries.Bundle0016
 public import Mathlib
 public import CompanionTheory.AutomorphicTheory.PieriRules.PieriDegreeBounds.Imports
 public import Development.AbelianVarietyTheory.Definitions.Jets.SumIoPr
-public import CompanionTheory.AutomorphicTheory.PieriRules.PieriDegreeBounds.ImportsBisTer
-public import CompanionTheory.AutomorphicTheory.PieriRules.PieriDegreeBounds.BesselNormSqEqBigCellNormSqAltImports
-public import CompanionTheory.AutomorphicTheory.PieriRules.PieriDegreeBounds.NumericalFamilyShapeGaps
+public import CompanionTheory.AutomorphicTheory.PieriRules.PieriDegreeBounds.Bundle0003
+public import CompanionTheory.AutomorphicTheory.PieriRules.PieriDegreeBounds.Bundle0004
+public import CompanionTheory.AutomorphicTheory.PieriRules.PieriDegreeBounds.Bundle0001
 public import CompanionTheory.AutomorphicTheory.PieriRules.ThetaBesselIsometries.IsDSOfIsDG
-public import CompanionTheory.AutomorphicTheory.PieriRules.ThetaBesselIsometries.CapelliKFiniteCoefficient
-public import CompanionTheory.AutomorphicTheory.PieriRules.ThetaBesselIsometries.ExistsKTypeNonzeroBessel
-public import CompanionTheory.AutomorphicTheory.PieriRules.ThetaBesselIsometries.BesselSettingGapDecayStatement
-public import CompanionTheory.AutomorphicTheory.PieriRules.ThetaBesselIsometries.BesselPeriodAdjointPairStatement
-public import CompanionTheory.AutomorphicTheory.PieriRules.ThetaBesselIsometries.ExistsFamilyFunctionalsStatement
-public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.NumericalFamilyShapeGapsStatement
-public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.BesselDatumBothSidesAreSidesStatement
-public import CompanionTheory.AutomorphicTheory.PieriRules.PieriDegreeBounds.IsHaarOnIffGroupsUnitaryUnipotentImports
-public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.FixesWedgeAndForm
-public import CompanionTheory.AutomorphicTheory.PieriRules.ThetaBesselIsometries.IsCoefContinuousOn
+public import CompanionTheory.AutomorphicTheory.PieriRules.ThetaBesselIsometries.Bundle0002
+public import CompanionTheory.AutomorphicTheory.PieriRules.ThetaBesselIsometries.Bundle0014
+public import CompanionTheory.AutomorphicTheory.PieriRules.ThetaBesselIsometries.Bundle0019
+public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0050
+public import Development.AbelianVarietyTheory.Definitions.Jets.SideFam
+public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0131
+public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0056
+public import CompanionTheory.AutomorphicTheory.PieriRules.ThetaBesselIsometries.Bundle0020
 public import CompanionTheory.AutomorphicTheory.PieriRules.ThetaBesselIsometries.HsqNonneg
-public import CompanionTheory.AutomorphicTheory.PieriRules.ThetaBesselIsometries.N1AddEZLe
-public import CompanionTheory.AutomorphicTheory.PieriRules.ThetaBesselIsometries.BaseRepCapelliEigenDual
 public import CompanionTheory.AutomorphicTheory.PieriRules.ThetaBesselIsometries.FamilySetupMomentClosure
-public import CompanionTheory.AutomorphicTheory.PieriRules.ThetaBesselIsometries.FamilySetupMomentRecursion
+public import CompanionTheory.AutomorphicTheory.PieriRules.ThetaBesselIsometries.Bundle0018
 public import CompanionTheory.AutomorphicTheory.BesselWaveGrids.ProductMoment
 
 @[expose] public section
@@ -86,7 +82,7 @@ theorem family_through_discreteSeries : HypsG → ∀ (k r : ℕ) (lam : Fin (2 
   have hC : ∃ P, PI.UpqRep.IsCayleyU k r (PI.BesselPeriodGGP.eps48 k r) P := by
     obtain ⟨P, hP, -⟩ := hR0.2
     exact ⟨P, hP⟩
-  have hfam := (GlobalTheory.T.numericalFamily_shape_gaps k r lam u b bv ga h q0 hN).2
+  have hfam := (_root_.GlobalTheory.NumFam.num_fam k r lam u b bv ga h q0 hN).2
   have key : ∀ ν : Fin (2 * r + k + 1) → ℤ, ∃ R : Rep k r,
       (∑ a, (ν a).natAbs ≤ q0 → R.IsDG (PI.BesselPeriodGGP.eps48 k r) (fun a => lam a + (ν a : ℝ))) ∧
       (ν = ν₀ → R = R0) := by
@@ -97,7 +93,7 @@ theorem family_through_discreteSeries : HypsG → ∀ (k r : ℕ) (lam : Fin (2 
       exact hR0
     · by_cases hq : ∑ a, (ν a).natAbs ≤ q0
       · obtain ⟨R, hR⟩ := hex k r _ _ (hfam ν hq).1 hC
-          ⟨h / 2, (hfam ν hq).2.2.1, (GlobalTheory.T.numericalFamily_shape_gaps k r lam u b bv ga h q0 hN).1.2.2.2.2⟩
+          ⟨h / 2, (hfam ν hq).2.2.1, (_root_.GlobalTheory.NumFam.num_fam k r lam u b bv ga h q0 hN).1.2.2.2.2⟩
         exact ⟨R, fun _ => hR, fun h => absurd h h0⟩
       · exact ⟨R0, fun h => absurd h hq, fun _ => rfl⟩
   choose R hR using key
@@ -151,7 +147,7 @@ theorem exists_tau : HypsG → ∀ (P : M.Par) (Wp Wq : Type) [NormedAddCommGrou
   haveI := FiniteDimensional.complete ℂ Wp
   haveI := FiniteDimensional.complete ℂ Wq
   obtain ⟨-, hz1, hz2, -, -, ht1, ht2⟩ := p.hP
-  obtain ⟨νq, νq', hS, hS'⟩ := GlobalTheory.T.besselDatum_both_sides_are_sides P.k P.r Wp Wq p.T.base P.u P.u' ht1 ht2
+  obtain ⟨νq, νq', hS, hS'⟩ := _root_.GlobalTheory.exists_sideG_both_of_isType P.k P.r Wp Wq p.T.base P.u P.u' ht1 ht2
   have key : ∀ ν, ∃ t : Finset (Fin (2 * P.r + P.k + 1)) → ℂ,
       (∀ I, J ν = 0 ∨ J (ν + eZ I) = 0 → t I = 0) ∧
       (n1 ν + (P.r + 1) * (P.r + 2) ≤ q0 →
@@ -238,14 +234,14 @@ theorem sup_norm : HypsG → ∀ (P : M.Par) (Wp Wq : Type) [NormedAddCommGroup 
   obtain ⟨hl', -, -⟩ := hS.right ν hν
   have hP := h1 _ _ (h / 2) (R ν) (l ν) (l' ν) (dg ν) hDS (hfam ν hν).2.2.1 hgap hl hl' hfd
   have h0 : TBB.jN2 p (0 : B.Mat P.k P.r → (Wq →L[ℂ] Wp)) = 0 := by
-    rw [GlobalTheory.T.jN2_eq_normSq_base, hP 0 0 ⟨0, fun i => i.elim0, fun i => i.elim0, fun i => i.elim0, fun i => i.elim0,
+    rw [_root_.GlobalTheory.jN2_eq_normSq_base.besselNormSq_eq_bigCellNormSq, hP 0 0 ⟨0, fun i => i.elim0, fun i => i.elim0, fun i => i.elim0, fun i => i.elim0,
       fun g _ => by simp, by simp⟩]
     simp
   by_cases hnz : NzOn (R ν) (l ν) ∧ NzOn (R ν) (l' ν)
   · right
     obtain ⟨hc, hs⟩ := hS.coef ν hν hnz.1 hnz.2
     have hj : TBB.jN2 p (J ν) = ENNReal.ofReal (c₁ * dg ν) := by
-      rw [GlobalTheory.T.jN2_eq_normSq_base, hP _ _ hc, hs]
+      rw [_root_.GlobalTheory.jN2_eq_normSq_base.besselNormSq_eq_bigCellNormSq, hP _ _ hc, hs]
       congr 1
       field_simp
     obtain ⟨w, hw, -⟩ := (GlobalTheory.rep_basic_of_isDS hy.1.2.2.1 P.k P.r _ _ (R ν) hDS).2.2.2.2.2.2.2.1
@@ -268,7 +264,7 @@ theorem sup_norm : HypsG → ∀ (P : M.Par) (Wp Wq : Type) [NormedAddCommGroup 
 
 theorem sup_meas : HypsG → ∀ (P : M.Par) (Wp Wq : Type) [NormedAddCommGroup Wp] [InnerProductSpace ℂ Wp] [NormedAddCommGroup Wq] [InnerProductSpace ℂ Wq] [FiniteDimensional ℂ Wp] [FiniteDimensional ℂ Wq] (p : KB.Pl P Wp Wq) (lam : Fin (2 * P.r + P.k + 1) → ℝ) (b bv ga h : ℝ) (q0 : ℕ) (R : (Fin (2 * P.r + P.k + 1) → ℤ) → Rep P.k P.r) (l : ∀ ν, (R ν).H → Wp) (l' : ∀ ν, (R ν).H → Wq) (dg : (Fin (2 * P.r + P.k + 1) → ℤ) → ℝ) (s : (Fin (2 * P.r + P.k + 1) → ℤ) → ℂ) (J : (Fin (2 * P.r + P.k + 1) → ℤ) → B.Mat P.k P.r → (Wq →L[ℂ] Wp)) (tau : (Fin (2 * P.r + P.k + 1) → ℤ) → Finset (Fin (2 * P.r + P.k + 1)) → ℂ), Num P.k P.r lam P.u b bv ga h q0 → Sup0 p lam q0 R l l' dg s J tau → ∀ ν, AEMeasurable fun c : Fin (P.r + 1) → ℂ => ENNReal.ofReal (TBB.Ew p (fun _ => 1) (J ν) (P.r + 1) [] (TBB.bigPt P.r c)) := by
   intro _ P Wp Wq _ _ _ _ _ _ p lam b bv ga h q0 R l l' dg s J tau _ hS ν
-  apply GlobalTheory.T.aemeasurable_besselNormIntegrand_bigCell
+  apply _root_.GlobalTheory.bigCell_density_aemeasurable
   by_cases hν : n1 ν ≤ q0 ∧ NzOn (R ν) (l ν) ∧ NzOn (R ν) (l' ν)
   · exact GlobalTheory.SupMeas.isCoef_continuousOn (hS.fam ν hν.1) (hS.coef ν hν.1 hν.2.1 hν.2.2).1
   · rw [hS.zero ν hν]
@@ -290,7 +286,7 @@ theorem tau_bound : HypsG → ∀ (P : M.Par) (Wp Wq : Type) [NormedAddCommGroup
     by_contra hc
     exact hz.2 (hS.zero _ hc)
   obtain ⟨-, -, -, hT, hT', hty, hty'⟩ := p.hP
-  obtain ⟨νq, νq', hG, hG'⟩ := GlobalTheory.T.besselDatum_both_sides_are_sides P.k P.r Wp Wq p.T.base P.u P.u' hty hty'
+  obtain ⟨νq, νq', hG, hG'⟩ := _root_.GlobalTheory.exists_sideG_both_of_isType P.k P.r Wp Wq p.T.base P.u P.u' hty hty'
   obtain ⟨io, pr, ep, hTens, hκ⟩ := hS.tau_eq ν hν
   obtain ⟨κ, κ', hk, hk', ht⟩ := hκ ⟨I, hI⟩ hz.1 hz.2
   have b1 := GlobalTheory.T.wedge_raising_scalar_sq_mul_degree_ratio_le hyp P.k P.r Wp lam P.u b bv ga h q0 _ _ _ _ _ νq R l dg
@@ -313,7 +309,7 @@ theorem supplied_pieri : HypsG → ∀ (P : M.Par) (Wp Wq : Type) [NormedAddComm
   intro H P Wp Wq _ _ _ _ _ _ p lam b bv ga h q0 R l l' dg s J tau hN hS ν hν c hc hG
   haveI := FiniteDimensional.complete ℂ Wp
   haveI := FiniteDimensional.complete ℂ Wq
-  obtain ⟨γ, hγ, hZ, hV⟩ := GlobalTheory.T.exists_regularRep_besselBigCellVector_eq_bessel P Wp Wq p c hc hG
+  obtain ⟨γ, hγ, hZ, hV⟩ := _root_.GlobalTheory.exists_regular_rep_vec_bigPt_eq_bessel P Wp Wq p c hc hG
   simp only [hV]
   by_cases hJ : J ν = 0
   · rw [hJ, GlobalTheory.SuppliedPieri.JF_zero, smul_zero]
@@ -366,14 +362,14 @@ theorem suppliedData_existsW : HypsG → ∀ (P : M.Par) (Wp Wq : Type) [NormedA
   obtain ⟨l, l', dg, hl, hl'⟩ := GlobalTheory.T.exists_family_functionals hH P Wp Wq p lam b bv ga h q0 R hN hfam
   have hK : PI.KFinSmooth := hH.1.2.2.1
   obtain ⟨s₀, hs₀⟩ := hf (l ν₀) (l' ν₀)
-  obtain ⟨⟨-, -, -, -, hgap⟩, hnum⟩ := GlobalTheory.T.numericalFamily_shape_gaps P.k P.r lam P.u b bv ga h q0 hN
+  obtain ⟨⟨-, -, -, -, hgap⟩, hnum⟩ := _root_.GlobalTheory.NumFam.num_fam P.k P.r lam P.u b bv ga h q0 hN
   have hg : Formalism.QuantumDeterminants.GapAtLeast (PI.BesselPeriodGGP.eps48 P.k P.r) (fun a => lam a + (ν₀ a : ℝ)) (h / 2) :=
     (hnum ν₀ h0).2.2.1
   obtain ⟨c, -, hc⟩ := GlobalTheory.T.bessel_setting_uniform_constant hH P.k P.r Wp Wq p.T.base
   have hne : s₀ ≠ 0 := by
     intro hz
     apply hj
-    rw [GlobalTheory.T.jN2_eq_normSq_base P Wp Wq p f,
+    rw [_root_.GlobalTheory.jN2_eq_normSq_base.besselNormSq_eq_bigCellNormSq P Wp Wq p f,
       hc _ _ (h / 2) (R ν₀) (l ν₀) (l' ν₀) (dg ν₀) hR0 hg hgap (hl ν₀ h0).1 (hl' ν₀ h0).1 (hl ν₀ h0).2.2 f s₀ hs₀, hz]
     simp
   obtain ⟨s, J, t, ht, hJ, -, hcoef, hzero⟩ :=
@@ -397,18 +393,18 @@ theorem coef_norm_finite_and_zeroW : HypsG → ∀ (P : M.Par) (Wp Wq : Type) [N
   obtain ⟨s, hs⟩ := hf (l ν₀) (l' ν₀)
   obtain ⟨c, hc, hnorm⟩ := GlobalTheory.T.bessel_setting_uniform_constant hH P.k P.r Wp Wq p.T.base
   have hj : TBB.jN2 p f = ENNReal.ofReal (c * ‖s‖ ^ 2 / dg ν₀) := by
-    rw [GlobalTheory.T.jN2_eq_normSq_base]
+    rw [_root_.GlobalTheory.jN2_eq_normSq_base.besselNormSq_eq_bigCellNormSq]
     exact hnorm _ _ (h / 2) (R ν₀) (l ν₀) (l' ν₀) (dg ν₀) hR0 hgap hok hB hB' hfd f s hs
   have hck := (GlobalTheory.T.smooth_and_inCC_of_isCoef_of_gap hH P.k P.r _ _ (h / 2) (R ν₀) Wp Wq (l ν₀) (l' ν₀) f s hR0 hgap hok hs).1
   refine ⟨by rw [hj]; exact ENNReal.ofReal_lt_top,
-    GlobalTheory.T.aemeasurable_besselNormIntegrand_bigCell P Wp Wq p f (GlobalTheory.CoefZero.continuousOn_of_ckOn hck), fun hz x hx hG => ?_⟩
+    _root_.GlobalTheory.bigCell_density_aemeasurable P Wp Wq p f (GlobalTheory.CoefZero.continuousOn_of_ckOn hck), fun hz x hx hG => ?_⟩
   have hs0 : s = 0 := by
     by_contra hne
     rw [hj, ENNReal.ofReal_eq_zero] at hz
     have hpos : 0 < ‖s‖ := norm_pos_iff.mpr hne
     have : 0 < c * ‖s‖ ^ 2 / dg ν₀ := by positivity
     linarith
-  obtain ⟨γ, hγ, -, hV⟩ := GlobalTheory.T.exists_regularRep_besselBigCellVector_eq_bessel P Wp Wq p x hx hG
+  obtain ⟨γ, hγ, -, hV⟩ := _root_.GlobalTheory.exists_regular_rep_vec_bigPt_eq_bessel P Wp Wq p x hx hG
   obtain ⟨OO, hOO⟩ := GlobalTheory.T.bessel_orbital_integral_integrable_and_eq_smul hH P.k P.r _ _ (h / 2) (R ν₀) Wp Wq p.T.base (l ν₀) (l' ν₀) hR0 hgap hok hB hB'
   rw [hV f, (hOO f s hs γ hγ).2, hs0, zero_smul]
 
@@ -427,7 +423,7 @@ theorem familyDerivativeExpansion_of_isDS_of_coefOf (H : HypsG) (C : ℝ) (hC : 
   have hν₀ : n1 ν₀ ≤ q0 := by omega
   obtain ⟨hfin, hmeas, hz⟩ := coef_norm_finite_and_zeroW H P Wp Wq p lam b bv ga h q0 R0 f ν₀ hν₀ hN hDS hf
   by_cases h0 : TBB.jN2 p f = 0
-  · exact GlobalTheory.T.familyDerivativeExpansion_of_V_eq_zero P Wp Wq p f b _ a₁ (by linarith) hmeas (hz h0)
+  · exact _root_.GlobalTheory.bigCellExpansion_of_besselFunction_zero P Wp Wq p f b _ a₁ (by linarith) hmeas (hz h0)
   obtain ⟨R, l, l', dg, s, J, tau, t, ht, hJ, hS⟩ :=
     suppliedData_existsW H P Wp Wq p lam b bv ga h q0 R0 f ν₀ hν₀ hN hDS hf h0
   have hn : ∀ μ : Fin (2 * P.r + P.k + 1) → ℤ, n1 μ ≤ Formalism.FourierDecayAlt.P.CutBP.LatticeNorms.N1 (μ - ν₀) + n1 ν₀ := fun μ => by
@@ -577,7 +573,7 @@ theorem product_moment : HypsG → ∀ (k r : ℕ) (Wp : Type) [NormedAddCommGro
   have hA : 0 ≤ (((2 * r + k + 1) : ℝ) ^ 2 * (Formalism.QuantumDeterminants.Tz k r z * b ^ 4) * (6 * bv) ^ (2 * (2 * r + 2))) := by
     have : 0 ≤ bv := by linarith
     positivity
-  have hmain := GlobalTheory.T.product_moment_bound_density_mass_one (Formalism.QuantumDeterminants.Mt k r) νq j (fun a x => lenA k r z (Matrix.of x) (Fin.castLE (Nat.succ_le_succ hj) a))
+  have hmain := _root_.GlobalTheory.MomentHolder.product_moment_le (Formalism.QuantumDeterminants.Mt k r) νq j (fun a x => lenA k r z (Matrix.of x) (Fin.castLE (Nat.succ_le_succ hj) a))
     (fun x => dg ν * ‖l ν ((R ν).σ (Matrix.of x) w)‖ ^ 2)
     (((2 * r + k + 1) : ℝ) ^ 2 * (Formalism.QuantumDeterminants.Tz k r z * b ^ 4) * (6 * bv) ^ (2 * (2 * r + 2))) (b ^ 2)
     (fun a => hlen (Fin.castLE (Nat.succ_le_succ hj) a))
@@ -600,7 +596,7 @@ theorem product_moment : HypsG → ∀ (k r : ℕ) (Wp : Type) [NormedAddCommGro
       simpa only [hw1, one_pow, mul_one] using this)
   refine hmain.trans (ENNReal.ofReal_le_ofReal ?_)
   have h1 : (b ^ 2) ^ (2 * j) ≤ (b ^ 2) ^ (2 * r) := pow_le_pow_right₀ (one_le_pow₀ hb) (by omega)
-  have h2 := (mul_le_mul_of_nonneg_left h1 hA).trans (GlobalTheory.T.numericalFamily_productBound_constant_le k r lam u b bv ga h q0 _ hNum hT)
+  have h2 := (mul_le_mul_of_nonneg_left h1 hA).trans (_root_.GlobalTheory.MomNum.mom_num k r lam u b bv ga h q0 _ hNum hT)
   have h3 : 1 ≤ Hsq r (Formalism.QuantumDeterminants.Tz k r z) b := one_le_mul_of_one_le_of_one_le (le_max_left _ _) (one_le_pow₀ hb)
   exact (pow_le_pow_left₀ (mul_nonneg hA (by positivity)) h2 _).trans (pow_le_pow_right₀ h3 (by omega))
 
@@ -702,7 +698,7 @@ theorem exists_tauL : HypsG → ∀ (P : M.Par) (Wp Wq : Type) [NormedAddCommGro
   haveI := FiniteDimensional.complete ℂ Wp
   haveI := FiniteDimensional.complete ℂ Wq
   obtain ⟨-, hz1, hz2, -, -, ht1, ht2⟩ := p.hP
-  obtain ⟨νq, νq', hS, hS'⟩ := GlobalTheory.T.besselDatum_both_sides_are_sides P.k P.r Wp Wq p.T.base P.u P.u' ht1 ht2
+  obtain ⟨νq, νq', hS, hS'⟩ := _root_.GlobalTheory.exists_sideG_both_of_isType P.k P.r Wp Wq p.T.base P.u P.u' ht1 ht2
   have key : ∀ ν, ∃ t : Finset (Fin (2 * P.r + P.k + 1)) → ℂ,
       (∀ I, J ν = 0 ∨ J (ν + eZ I) = 0 → t I = 0) ∧
       (n1 ν + (P.r + 1) * (P.r + 2) ≤ q0 →
@@ -788,7 +784,7 @@ theorem tau_boundL : HypsG → ∀ (P : M.Par) (Wp Wq : Type) [NormedAddCommGrou
     by_contra hc
     exact hz.2 (hS.zero _ hc)
   obtain ⟨-, -, -, hT, hT', hty, hty'⟩ := p.hP
-  obtain ⟨νq, νq', hG, hG'⟩ := GlobalTheory.T.besselDatum_both_sides_are_sides P.k P.r Wp Wq p.T.base P.u P.u' hty hty'
+  obtain ⟨νq, νq', hG, hG'⟩ := _root_.GlobalTheory.exists_sideG_both_of_isType P.k P.r Wp Wq p.T.base P.u P.u' hty hty'
   obtain ⟨io, pr, ep, hTens, hκ⟩ := hSL.tau_eq ν hν
   obtain ⟨κ, κ', hk, hk', ht⟩ := hκ ⟨I, hI⟩ hz.1 hz.2
   have b1 := kappa_bound hyp P.k P.r Wp lam P.u b bv ga h q0 _ _ _ _ _ νq R l dg
@@ -811,7 +807,7 @@ theorem supplied_pieriL : HypsG → ∀ (P : M.Par) (Wp Wq : Type) [NormedAddCom
   intro H P Wp Wq _ _ _ _ _ _ p lam b bv ga h q0 R l l' dg s J tau₀ hN hS j hj tau hSL ν hν c hc hG
   haveI := FiniteDimensional.complete ℂ Wp
   haveI := FiniteDimensional.complete ℂ Wq
-  obtain ⟨γ, hγ, hZ, hV⟩ := GlobalTheory.T.exists_regularRep_besselBigCellVector_eq_bessel P Wp Wq p c hc hG
+  obtain ⟨γ, hγ, hZ, hV⟩ := _root_.GlobalTheory.exists_regular_rep_vec_bigPt_eq_bessel P Wp Wq p c hc hG
   simp only [hV]
   by_cases hJ : J ν = 0
   · rw [hJ, GlobalTheory.SuppliedPieri.JF_zero, smul_zero]

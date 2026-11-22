@@ -2,13 +2,11 @@ module
 
 public import Formalism.HarderNarasimhan.DegSupermodZ
 public import Formalism.LatticeSlopes.ExistsSaturatedSlopeEqMuMax
-public import Formalism.HarderNarasimhan.HarderNarasimhanProofs.ExistsSmulMemOfFinrankEq
-public import Formalism.HarderNarasimhan.HarderNarasimhanProofs.SatBasic
+public import Formalism.HarderNarasimhan.HarderNarasimhanProofs.Bundle0001
+public import Formalism.HarderNarasimhan.HarderNarasimhanProofs.Bundle0002
 public import Formalism.HarderNarasimhan.HarderNarasimhanProofs.FinSup
-public import Formalism.HarderNarasimhan.HarderNarasimhanProofs.RatioMax
-public import Formalism.HarderNarasimhan.HarderNarasimhanProofs.DegSupermod
-public import Formalism.HarderNarasimhan.HarderNarasimhanProofs.MuChar
-public import Formalism.HarderNarasimhan.HarderNarasimhanProofs.HNStep
+public import Formalism.HarderNarasimhan.HarderNarasimhanProofs.Bundle0003
+public import Formalism.HarderNarasimhan.HarderNarasimhanProofs.Bundle0004
 
 @[expose] public section
 

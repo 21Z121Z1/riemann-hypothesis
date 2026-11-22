@@ -2,13 +2,13 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.MemBddFormsOfWithSmoothings
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AutomorphicFormsFiniteGL
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CuspRapidDecaySiegelGLOfFinite
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IdeleModuleDetDiagUnitsPosIdele
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1678
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1516
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0292
 public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsIsLocCompAndIsLocLoc
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CuspFormLinearCombination
-public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.ExistsIsOpenIsCompact
-public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.IsUnitaryOfCharIff
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0846
+public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.Bundle0057
+public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.Bundle0007
 
 @[expose] public section
 

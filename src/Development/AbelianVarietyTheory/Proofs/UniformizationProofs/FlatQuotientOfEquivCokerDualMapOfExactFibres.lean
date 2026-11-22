@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ExactDualMapOfExactFibresOfIsRegularLocalRing
-public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.FlatCokerOfComplexExactModMaximalIdeal
+public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.Bundle0007
+public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.Bundle0004
 
 @[expose] public section
 

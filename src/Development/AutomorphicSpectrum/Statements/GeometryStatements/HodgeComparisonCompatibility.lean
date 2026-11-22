@@ -3,7 +3,7 @@ module
 public import Mathlib
 public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.AdelicGroupAlgebraActionInjective
 public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsHodgeLine
-public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.TwTan
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.Bundle0007
 
 @[expose] public section
 

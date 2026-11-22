@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Formalism.LocalToGlobal.GlobalTheory.GL4.MemDualCrdLat
-public import Formalism.LocalToGlobal.Columns.BrpStarLatLattice
+public import Formalism.LocalToGlobal.Columns.Bundle0018
 public import Formalism.SharpRestriction.GlobalSchurBounds.TotallyPositiveTraceGeOfNormDiscr
 public import Formalism.LocalToGlobal.GlobalTheory.GL4.PZBasis
 

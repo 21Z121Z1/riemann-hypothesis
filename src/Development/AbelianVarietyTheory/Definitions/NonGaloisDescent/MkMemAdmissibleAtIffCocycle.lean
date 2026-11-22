@@ -3,7 +3,7 @@ module
 public import Mathlib
 public import Formalism.SharpRestriction.LevelLetterCocycles.QuotientHomNonvanishingBound
 public import Formalism.SharpRestriction.LevelLetterCocycles.DataNLoc
-public import Formalism.WeaklyAdmissibleFiltrations.StatementTor
+public import Formalism.WeaklyAdmissibleFiltrations.Bundle0001
 public import ReciprocityTheory.BasicDefinitions.AdRep
 public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.PowerSeriesOneAddConstMulXMulInv
 

@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Formalism.LocalToGlobal.AdelicCompactOpens.IntAdelesCompactOpen
+public import Formalism.LocalToGlobal.AdelicCompactOpens.Bundle0001
 
 @[expose] public section
 

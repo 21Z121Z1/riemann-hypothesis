@@ -2,8 +2,8 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.Divisors.IsActIffIsDiagEnd
-public import ReciprocityTheory.AnalyticForms.RegularLocalRings.FinalTheorems
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GmSpMapUnitOn
+public import ReciprocityTheory.AnalyticForms.RegularLocalRings.Bundle0001
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2182
 
 @[expose] public section
 

@@ -1,8 +1,7 @@
 module
 
-public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.AlgebraicValuesFinite.AlgValsFinOfTors
-public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.AlgebraicValuesFinite.TorsUnitsOfNbhd
-public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.AlgebraicValuesFinite.InvMemUFin
+public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.AlgebraicValuesFinite.Bundle0002
+public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.AlgebraicValuesFinite.Bundle0001
 
 @[expose] public section
 

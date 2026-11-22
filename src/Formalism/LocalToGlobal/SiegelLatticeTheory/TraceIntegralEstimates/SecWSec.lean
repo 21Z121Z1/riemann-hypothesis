@@ -3,7 +3,7 @@ module
 public import Mathlib
 public import Formalism.LocalToGlobal.SiegelLatticeTheory.TraceIntegralEstimates.SecWLoc
 public import Formalism.LocalToGlobal.SiegelLatticeTheory.ClosedLocalOrbits.RealObj
-public import Formalism.RealPlaceAnalysis.RealPlaceTaylor.KoszulLowersPower
+public import Formalism.RealPlaceAnalysis.RealPlaceTaylor.Bundle0005
 
 @[expose] public section
 

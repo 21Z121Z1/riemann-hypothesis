@@ -1,7 +1,7 @@
 module
 
 public import Development.WeilBound.RepresentationTheoryGL.TwistedFactors.SelmerRankBounds.EllipticityFromProductFormula
-public import GroundTheory.AutomorphicForms.TraceFormulaGeometric
+public import GroundTheory.AutomorphicForms.Bundle0016
 
 @[expose] public section
 

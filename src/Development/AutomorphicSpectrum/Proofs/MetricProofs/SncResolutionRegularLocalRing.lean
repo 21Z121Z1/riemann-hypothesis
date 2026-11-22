@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Proofs.MetricProofs.FiniteMinimalPrimes
+public import Development.AutomorphicSpectrum.Proofs.MetricProofs.Bundle0080
 public import ReciprocityTheory.AnalyticForms.RegularLocalRings.ConeChart
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.InterPCProof
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.Bundle0018
 
 @[expose] public section
 

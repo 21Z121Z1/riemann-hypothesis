@@ -2,15 +2,20 @@ module
 
 public import Mathlib
 public import Formalism.LocalToGlobal.IndefiniteReal.LinksChar
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.LiftLowestKTypeCompatibility
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.FiniteGroupActionPreservesPrincipalFlagMultiplic
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ThetaLiftTranslateOfKernelFixed
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.MultiplicitySpaceEqZeroOfApplyNonzeroTensorZero
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.LevelCharactersRamificationLevelPlaces
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.PostOnGaLMemGoodPart
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ParahoricLevelLiftsExistStatement
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.StepVectorLiftPairFlagLevelRealizedChainStatement
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.LastStepVectorLiftPairFlagLevelCharactersStatement
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0484
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0158
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0118
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0123
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0164
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0285
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ParahoricLevelLiftsExist
+public import Formalism.LocalToGlobal.IndefiniteReal.ScalarOnPartsFull
+public import Formalism.LocalToGlobal.IndefiniteReal.SubgroupCharExtensionOneApply
+public import Formalism.LocalToGlobal.IndefiniteReal.OrthogonalComplementCharacterisation
+public import Formalism.LocalToGlobal.IndefiniteReal.Bundle0016
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0467
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0583
+public import Formalism.LocalToGlobal.IndefiniteReal.FWExist
 
 @[expose] public section
 
@@ -107,7 +112,7 @@ variable {D : D7} {G : Type} [Group G] [Fintype G] {Pl0 T0 : Type} {A : FamIn D.
 theorem liftsExist_chain (h : R.toLevCh.Is A.μ0) (t : T0) (j : ℕ) (hj : j < D.R.m) :
     LiftsExist (Yc D j) (R.βY j) (R.datYt t j R.triv) := by
   obtain ⟨c, hc⟩ := h.βY j hj
-  refine GlobalTheory.T.parahoricLevel_liftsExist _ _ _ _ _ hc (fun PP hP PP' hP' => ?_)
+  refine _root_.GlobalTheory.ParahoricLift.liftsExist _ _ _ _ _ hc (fun PP hP PP' hP' => ?_)
     (GlobalTheory.LevelRamif.ramif_at_levels D T0 R.toLevCh A.μ0 h t ⟨j, hj⟩).1
   obtain ⟨k, hk⟩ := (h.Pg PP).1 hP
   rcases hP' with hP' | hP'
@@ -178,7 +183,7 @@ theorem stepX (h : R.toLevCh.Is A.μ0) (hM : R.IsModels) (hC : R.IsChain) (t : T
       (R.ioX t ((R.cX.toMap R.prX ∘ₗ (R.HX t).e).rangeRestrict y')) := by
   have ha := inv_ne_zero (levChi_ne_zero (V := Yc D (D.R.m - 1)) (β := R.βY (D.R.m - 1))
     (flagL (R.datYt t (D.R.m - 1) R.triv)) κ)
-  have hv := smul_eq_of ha (GlobalTheory.T.lastVector_lift_pair_flagLevel_characters R h hM.inf hC.ωX hC.vX t g0 κ κ' hκ hκ')
+  have hv := smul_eq_of ha (_root_.GlobalTheory.StepLaw.last_step_law R h hM.inf hC.ωX hC.vX t g0 κ κ' hκ hκ')
   have hpt := GlobalTheory.FiniteFock.om_pureTensorO_of_finite R.ψ R.θ (Yc D (D.R.m - 1)) D.sp.X' _ _ (R.ωX t) hM.inf (hC.ωX t)
     _ _ _ _ _ (hC.ptX t) κ hκ.1 κ' hκ'.1 _ hv
   exact step R.ψ R.θ hM.inf _ _ (R.ωX t) (hC.ωX t) (R.MY (D.R.m - 1)) _ _ (R.ptX t) (hC.ptX t) R.ItX (hC.ItX t).ne

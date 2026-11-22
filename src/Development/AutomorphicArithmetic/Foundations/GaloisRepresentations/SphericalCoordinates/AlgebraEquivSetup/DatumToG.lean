@@ -3,7 +3,7 @@ module
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsGDatumOneOneOne
 public import Development.AbelianVarietyTheory.Definitions.Divisors.HasDivPlace
-public import Development.AbelianVarietyTheory.Definitions.Divisors.CompactBIffCompact
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0009
 
 @[expose] public section
 

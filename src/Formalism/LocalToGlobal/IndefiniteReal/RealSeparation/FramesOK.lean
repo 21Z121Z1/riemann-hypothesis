@@ -1,6 +1,6 @@
 module
 
-public import Formalism.LocalToGlobal.IndefiniteReal.RealSeparation.NormalFrame0
+public import Formalism.LocalToGlobal.IndefiniteReal.RealSeparation.Bundle0002
 public import Formalism.LocalToGlobal.IndefiniteReal.ZeroPartEigenvalueConvention
 
 @[expose] public section

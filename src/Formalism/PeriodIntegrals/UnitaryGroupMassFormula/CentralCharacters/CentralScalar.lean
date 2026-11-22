@@ -1,6 +1,6 @@
 module
 
-public import Formalism.PeriodIntegrals.DSInfCharCap
+public import Formalism.PeriodIntegrals.Bundle0016
 
 @[expose] public section
 

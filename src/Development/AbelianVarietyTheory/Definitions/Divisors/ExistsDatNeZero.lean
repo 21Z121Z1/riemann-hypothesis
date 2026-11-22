@@ -1,11 +1,11 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.ExistsUniquePairsToTower
+public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.Bundle0023
 public import Development.AbelianVarietyTheory.Definitions.Divisors.IsKSValueOneOfRetraction
 public import Development.AbelianVarietyTheory.Definitions.Divisors.TorsionTowersOfDivisibleGroup
 public import Development.AbelianVarietyTheory.Proofs.HomogeneousIdeals.LeftEqIffLieVecSmul
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DpExpEqSumRangeOfVanish
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0632
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DividedPowerFiltration
 
 @[expose] public section

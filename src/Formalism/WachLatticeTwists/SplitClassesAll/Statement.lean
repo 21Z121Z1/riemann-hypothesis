@@ -3,7 +3,7 @@ module
 public import Formalism.WachLatticeTwists.CoprimeLiftBounds.WachTwistTheoremDeltaClause
 public import Formalism.WachLatticeTwists.SplitLocalLifts.Cocycles1MapOfEquivariant
 public import Formalism.WachLatticeTwists.CharacterSplitJumps.WachTwistTheoremFromTorsionBound
-public import Formalism.WachLatticeTwists.CoprimeLiftBounds.StatBridgeChiOne
+public import Formalism.WachLatticeTwists.CoprimeLiftBounds.Bundle0001
 public import Formalism.WachLatticeTwists.Statement
 
 @[expose] public section

@@ -1,15 +1,15 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.ActSingleNeZero
-public import Development.AbelianVarietyTheory.Statements.CuspFrameWeights.EigenfunctionFiniteCoefficients
+public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.Bundle0010
+public import Development.AbelianVarietyTheory.Statements.CuspFrameWeights.Bundle0001
 public import Formalism.RealPlaceAnalysis.RealPlaceTaylor.FirstSlotSliceSlotMixedCasimirZero
 public import Formalism.RealPlaceAnalysis.RealPlaceTaylor.IsCompactInvariantOrthogonalInf
 public import Formalism.RealPlaceAnalysis.FinalF
-public import Formalism.RealPlaceAnalysis.ThirdArithmeticHolds
+public import Formalism.RealPlaceAnalysis.Bundle0004
 public import Formalism.RealPlaceAnalysis.QuotientSettingHolds
-public import Formalism.RealPlaceAnalysis.RealPlaceTaylor.QuadraticInequalityBoundHolds
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.WeightLeOfMemWtSpan
+public import Formalism.RealPlaceAnalysis.RealPlaceTaylor.Bundle0002
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0174
 
 @[expose] public section
 

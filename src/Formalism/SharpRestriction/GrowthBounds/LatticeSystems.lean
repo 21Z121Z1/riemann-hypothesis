@@ -2,7 +2,7 @@ module
 
 public import Formalism.SubspaceCounting.ChoiceOfTopsRefined
 public import Formalism.GradedWeylDivisibility.FinalD
-public import Formalism.SharpRestriction.GrowthBounds.SelectionLemmas
+public import Formalism.SharpRestriction.GrowthBounds.Bundle0002
 
 @[expose] public section
 

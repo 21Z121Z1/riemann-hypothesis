@@ -3,9 +3,9 @@ module
 public import Mathlib
 public import CompanionTheory.RealGroups.DiscreteSeries.DiscreteSeriesClassification.DiscreteSeriesExhaustion.MatrixCoefficientDecay.LineFormulas.LineFacts
 public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.ExistsStandardIndModule
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.MeasurableFlagLocalSizesUnitary
-public import Formalism.RealPlaceAnalysis.RealPlaceTaylor.MemUnitaryGroupIffMulConjTranspose
-public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.FlagFacts
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0148
+public import Formalism.RealPlaceAnalysis.RealPlaceTaylor.Bundle0001
+public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.Bundle0048
 
 @[expose] public section
 

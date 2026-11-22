@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.HasCohomology
-public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.ProjectionCompact
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.Bundle0003
+public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0051
 
 @[expose] public section
 

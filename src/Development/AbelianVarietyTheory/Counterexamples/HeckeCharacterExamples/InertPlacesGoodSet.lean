@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Formalism.SharpRestriction.LevelLetterCocycles.JointConditionsZpowers.CommutingEndomorphismCondition
-public import Formalism.SharpRestriction.LevelLetterCocycles.JointConditionsZpowers.CrystallineLatticeOfJumpPoints
+public import Formalism.SharpRestriction.LevelLetterCocycles.JointConditionsZpowers.Bundle0008
 public import Formalism.SharpRestriction.LevelLetterCocycles.WachCoordinates
 public import Formalism.SharpRestriction.LevelLetterCocycles.RamifiedCoefficientChains
 public import Formalism.SharpRestriction.RamificationFrobenius.TotientGaloisClasses.HostFacts

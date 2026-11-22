@@ -1,6 +1,6 @@
 module
 
-public import ReciprocityTheory.CommutativeAlgebra.CohenMacaulay.Bridge
+public import ReciprocityTheory.CommutativeAlgebra.CohenMacaulay.Bundle0002
 public import ReciprocityTheory.CommutativeAlgebra.CohenMacaulay.Unmixed
 
 @[expose] public section

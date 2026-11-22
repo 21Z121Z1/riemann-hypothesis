@@ -1,7 +1,7 @@
 module
 
 public import Formalism.SharpRestriction.GrowthBounds.FormalGroupSystem
-public import Formalism.SharpRestriction.GrowthBounds.MultisetValuation.HkLatTupUpdate
+public import Formalism.SharpRestriction.GrowthBounds.MultisetValuation.Bundle0012
 
 @[expose] public section
 

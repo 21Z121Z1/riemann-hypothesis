@@ -1,8 +1,8 @@
 module
 
 public import Development.AutomorphicArithmetic.Foundations.UnitarySphericalFixing.SatakeParameters.GoodAUIso
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SphericalInertiaOfIsotypic
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.StandardFrameNonsplitMaxCompactInLevel
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0935
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0933
 
 @[expose] public section
 

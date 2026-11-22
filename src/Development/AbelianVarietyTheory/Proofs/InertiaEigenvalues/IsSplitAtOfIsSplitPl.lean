@@ -1,13 +1,13 @@
 module
 
 public import Mathlib
-public import Formalism.LocalToGlobal.ProjectiveLattices.UnramBridgeHolds
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0004
 public import Development.AbelianVarietyTheory.BlockTheory.NonGaloisCusps.BaseChangeDistinctness
 public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.BaseChangeDefiniteUnitary
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.EqOfNodupSumMultisetOfEq
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0009
 public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IsIrreducibleIffOfLinearEquiv
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.DualIsoDetGenMNeZero
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.HostCmData
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0085
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0081
 
 @[expose] public section
 

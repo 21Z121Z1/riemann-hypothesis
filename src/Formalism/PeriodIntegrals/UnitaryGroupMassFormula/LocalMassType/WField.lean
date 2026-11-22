@@ -2,7 +2,7 @@ module
 
 public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LocalMassType.WProof
 public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LocalMassType.TransitiveOverLocalRings
-public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LocalMassType.SaturatedSplitLattice
+public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LocalMassType.Bundle0006
 
 @[expose] public section
 

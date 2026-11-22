@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.UnitaryDensity.EvalBindTorusSubst
+public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.UnitaryDensity.Bundle0002
 
 @[expose] public section
 

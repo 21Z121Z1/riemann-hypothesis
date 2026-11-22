@@ -5,18 +5,15 @@ public import Formalism.SharpRestriction.GlobalSchurBounds.TaylorLogMetric
 public import Formalism.SharpRestriction.GlobalSchurBounds.FlipTwoThree
 public import Formalism.SharpRestriction.GlobalSchurBounds.StandardLattice
 public import Formalism.SharpRestriction.GlobalSchurBounds.CMFieldLemmas
-public import Formalism.SharpRestriction.GlobalSchurBounds.ShortIntervalPrimes
-public import Formalism.SharpRestriction.GlobalSchurBounds.LocalCountingBounds
-public import Formalism.SharpRestriction.GlobalSchurBounds.ZetaZeroFreeRegion
+public import Formalism.SharpRestriction.GlobalSchurBounds.Bundle0001
 public import Formalism.FrobeniusOrbits.HostCorollaries
-public import Formalism.LocalRingCardinality.DataLevelD
+public import Formalism.LocalRingCardinality.Bundle0001
 public import Formalism.SatakeDualWeyl.KpqSubgroupCompact
 public import Formalism.SizeWindowBrackets.ChainSlopeWindows.GaloisMapComplexConjugation
 public import Formalism.SharpRestriction.RamificationFrobenius.TotientGaloisClasses.HostFacts
 public import Formalism.SharpRestriction.RamificationFrobenius.TotientGaloisClasses.FrameFacts
-public import Development.AutomorphicArithmetic.PrimeDiscriminants.RamDiscr
-public import Development.AutomorphicArithmetic.ConductorsKronecker.dataField
-public import Development.AutomorphicArithmetic.ConductorsKronecker.Imports
+public import Development.AutomorphicArithmetic.PrimeDiscriminants.Bundle0002
+public import Development.AutomorphicArithmetic.ConductorsKronecker.Bundle0001
 
 @[expose] public section
 

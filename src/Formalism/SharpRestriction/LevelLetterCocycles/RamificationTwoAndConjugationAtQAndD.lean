@@ -1,8 +1,7 @@
 module
 
-public import Formalism.SharpRestriction.LevelLetterCocycles.BlochKatoDuality
-public import Formalism.WachLatticeTwists.LatticeDualFibres.LatticeDualProofs.LocDualOrth
-public import Formalism.WachLatticeTwists.LatticeDualFibres.LatticeDualProofs.QuotLen
+public import Formalism.SharpRestriction.LevelLetterCocycles.Bundle0004
+public import Formalism.WachLatticeTwists.LatticeDualFibres.LatticeDualProofs.Bundle0001
 public import Formalism.WachLatticeTwists.LatticeDualFibres.Statement
 public import ReciprocityTheory.GaloisValuations.ContinuousConstSMulQuotient
 public import Formalism.WachLatticeTwists.LatticeDualFibres.FibreDualStable

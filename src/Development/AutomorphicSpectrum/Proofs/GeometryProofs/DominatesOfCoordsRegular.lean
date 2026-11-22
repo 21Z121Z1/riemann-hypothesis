@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.EtaleLocalizationAtPrimeTensorOfLowHeight
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.GenMapGermEqGenMapGerm
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.GenMapStalkMap
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.Bundle0003
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0012
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0022
 
 @[expose] public section
 

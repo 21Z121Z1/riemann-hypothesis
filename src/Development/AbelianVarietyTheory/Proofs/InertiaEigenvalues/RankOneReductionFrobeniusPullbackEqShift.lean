@@ -1,10 +1,10 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.JSmul
-public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.ExistsPresOfRealD
+public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0009
+public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0028
 public import Formalism.LocalRingCardinality.AdicCompletionLocal.LocTied
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.GammaActionReduction
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0322
 
 @[expose] public section
 

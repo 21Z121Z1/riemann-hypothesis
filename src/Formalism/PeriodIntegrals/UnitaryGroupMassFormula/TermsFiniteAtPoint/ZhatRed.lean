@@ -1,10 +1,10 @@
 module
 
 public import Mathlib
-public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.TermsFiniteAtPoint.CarrierRow
+public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.TermsFiniteAtPoint.Bundle0001
 public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.RelativeEquivalence.DCRelEquivAllHolds
-public import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.TermAttrConst
-public import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.TermCarrierStable
+public import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.Bundle0036
+public import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.Bundle0031
 public import Formalism.LocalToGlobal.SiegelLatticeTheory.ClosedLocalOrbits.Saturated
 
 @[expose] public section

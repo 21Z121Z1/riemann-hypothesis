@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import GroundTheory.GlobalFields.SemilocalAlgebras.Galois
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FixedUnitsFinitelyManyNorms
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0055
 public import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsRootSelectionUnitaryRankOne
 
 @[expose] public section

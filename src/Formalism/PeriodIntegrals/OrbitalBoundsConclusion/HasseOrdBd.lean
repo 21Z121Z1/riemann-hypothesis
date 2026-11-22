@@ -2,9 +2,7 @@ module
 
 public import Formalism.PeriodIntegrals.HasseOrdBd
 public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.HasseOrderBound.Development
-public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.HasseOrderBound.CompositionalInverseSymm
-public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.HasseOrderBound.OrthogonalSplitPolarizationVanishes
-public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.HasseOrderBound.AddPreservesExpCongruence
+public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.HasseOrderBound.Bundle0001
 
 @[expose] public section
 

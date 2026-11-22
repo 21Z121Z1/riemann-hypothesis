@@ -2,10 +2,10 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.KerIsTerm
-public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.LevelChainSharpColumnValuationOfPointKernelLiftL
+public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0101
 public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.InvSmulMemOfRedL
-public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.TilLatticesOfLevel
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ClassSumPosHerm
+public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0112
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0117
 
 @[expose] public section
 

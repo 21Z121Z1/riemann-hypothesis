@@ -4,7 +4,7 @@ public import Mathlib
 public import Formalism.PeriodIntegrals.AdmissibleModel.WeylDim
 public import Formalism.LocalRingCardinality.RankBoundMonotoneInDimension
 public import Formalism.LocalToGlobal.Columns.PolyFnLemmas
-public import Formalism.PolynomialDimension.WeylDim
+public import Formalism.PolynomialDimension.Bundle0001
 
 @[expose] public section
 

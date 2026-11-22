@@ -1,11 +1,10 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.HeightProofs.EqOrConjOfPlaceOf
-public import Development.AbelianVarietyTheory.Proofs.HeightProofs.ExistsCompactAdeleRingModNumberFieldStatement
-public import Development.AbelianVarietyTheory.Proofs.HeightProofs.IntegrableOnFundamentalDomainOfCocompactStatement
-public import Development.AbelianVarietyTheory.Proofs.HeightProofs.MemAdelicLatticeIffLocalSelfDualCompletionStatement
-public import Development.AbelianVarietyTheory.Proofs.HeightProofs.TwoStepUnipotentCompactModSubringStatement
+public import Development.AbelianVarietyTheory.Proofs.HeightProofs.Bundle0028
+public import Development.AbelianVarietyTheory.Proofs.HeightProofs.Bundle0001
+public import Development.AbelianVarietyTheory.Proofs.HeightProofs.Bundle0014
+public import Development.AbelianVarietyTheory.Proofs.HeightProofs.Bundle0003
 
 @[expose] public section
 
@@ -195,7 +194,7 @@ theorem exists_dual {r : ℕ} (C : Matrix (Fin V.rank) (Fin r) E) (hC : LinearIn
 
 omit [StarRing E] in
 theorem tens_cocompact : ∃ K : Set (AF F ⊗[F] E), IsCompact K ∧ ∀ z, ∃ x : E, z - inclR (F := F) (AF F) x ∈ K := by
-  obtain ⟨K, hK, h⟩ := GlobalTheory.T.exists_compact_adeleRing_mod_numberField F
+  obtain ⟨K, hK, h⟩ := _root_.GlobalTheory.AdeleCocompact.exists_compact_adele F
   have : IsModuleTopology (AF F) (AF F ⊗[F] E) := ⟨rfl⟩
   have : IsTopologicalRing (AF F ⊗[F] E) := IsModuleTopology.isTopologicalRing (AF F) _
   let b := Module.finBasis F E
@@ -384,7 +383,7 @@ theorem integrableOn_constTerm (W : Submodule E V.V) (hW : IsIsotropic V W) (f :
   have : BorelSpace (GA hc V) := ⟨rfl⟩
   have := countable_unipRat hc V W
   obtain ⟨K, hK, h⟩ := unipRad_cocompact hc V W hW
-  refine GlobalTheory.T.integrableOn_fundamentalDomain_of_invariant_of_cocompact _ (unipRat hc V W) K hK h μ hμ 𝓕 h𝓕 _
+  refine _root_.GlobalTheory.integrableOn_fundamentalDomain_of_cocompact _ (unipRat hc V W) K hK h μ hμ 𝓕 h𝓕 _
     (hf.comp (continuous_subtype_val.mul continuous_const)) fun γ hγ n => ?_
   rw [Subgroup.coe_mul, mul_assoc]
   exact hl _ hγ _

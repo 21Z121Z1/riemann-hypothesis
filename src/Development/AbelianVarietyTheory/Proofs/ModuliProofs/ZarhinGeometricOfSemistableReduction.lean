@@ -2,16 +2,23 @@ module
 
 public import Mathlib
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.UniformisationConclusion
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.HeckeKer
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.Bundle0003
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.IsHolPeriods
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.ThetaUnifAV
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.UnifUniqSt
 public import Development.AbelianVarietyTheory.Statements.SemistableTorsion.ImmersedBy
 public import Development.AbelianVarietyTheory.PublishedTheorems.SemistableReduction₂.SemistableReductionSt
-public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.UniformisationExistenceAndTorsionStatements
-public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.HomExtensionSemiAbelianDiscreteValuationRing
-public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.SemiAbelianSchemeUniformisationExistsGeometricStatement
-public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.AllSixAbelianSchemeLawsHold
+public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0214
+public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0173
+public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.SemiAbelianSchemeUniformisationExistsGeometric
+public import Development.AbelianVarietyTheory.Definitions.Degenerations.LocTheta
+public import Development.AbelianVarietyTheory.Statements.SemistableTorsion.UTorsSt
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.SecBaseChangeAnySt
+public import Development.AbelianVarietyTheory.Definitions.Degenerations.BaseFacts
+public import Development.AbelianVarietyTheory.Definitions.Degenerations.IsAffineSplitTorusLeft
+public import Development.AbelianVarietyTheory.Definitions.Degenerations.CompanionTheory
+public import Development.AbelianVarietyTheory.Definitions.Degenerations.Bundle0001
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.OLinBaseChangeSt
+public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.Bundle0131
 
 @[expose] public section
 
@@ -24,7 +31,7 @@ namespace GlobalTheory
 theorem zhGeo_of_semistableReduction :
     GlobalTheory.Published.SemistableReductionSt → GlobalTheory.ZH.ZHGeoSt := fun S => by
   obtain ⟨L, L2, L3, L4, L5, -⟩ := GlobalTheory.allSixLaws
-  exact GlobalTheory.T.semiAbelianScheme_uniformisation_exists_geometric GlobalTheory.homExtension_semiAbelian_dvr S GlobalTheory.ZH.thmU_and_uTors.1 L L2 L3 L4 L5
+  exact _root_.GlobalTheory.ZH.GeoHalf.zhGeo GlobalTheory.homExtension_semiAbelian_dvr S GlobalTheory.ZH.thmU_and_uTors.1 L L2 L3 L4 L5
     GlobalTheory.ZH.thmU_and_uTors.2
 
 end GlobalTheory

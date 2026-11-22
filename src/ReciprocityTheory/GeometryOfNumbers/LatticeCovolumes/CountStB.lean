@@ -1,7 +1,7 @@
 module
 
 public import ReciprocityTheory.GeometryOfNumbers.LatticeCovolumes.ArakelovDegreeEqDegreeOfFamily
-public import ReciprocityTheory.GeometryOfNumbers.LatticeCovolumes.CountStA
+public import ReciprocityTheory.GeometryOfNumbers.LatticeCovolumes.Bundle0003
 
 @[expose] public section
 

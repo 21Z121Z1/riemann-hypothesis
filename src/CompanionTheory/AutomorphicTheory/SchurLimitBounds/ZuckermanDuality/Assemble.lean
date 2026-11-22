@@ -1,8 +1,8 @@
 module
 
 public import CompanionTheory.AutomorphicTheory.SchurLimitBounds.ZuckermanDuality.ZuckDualTOfZuckDual
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutLimBdPf
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutLimBdPfKFin
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0274
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0025
 
 @[expose] public section
 

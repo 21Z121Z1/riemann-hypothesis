@@ -1,12 +1,11 @@
 module
 
 public import Development.WeilBound.ThetaLifts.TowerModels.TowerCodimensionTwoOf
-public import Development.WeilBound.ThetaLifts.TowerModels.LeviEx
+public import Development.WeilBound.ThetaLifts.TowerModels.Bundle0005
 public import Development.WeilBound.ThetaLifts.TowerModels.PlaneSkew
-public import Development.WeilBound.ThetaLifts.TowerModels.StabEx
-public import Development.WeilBound.ThetaLifts.TowerModels.ModelEx
-public import Development.WeilBound.ThetaLifts.TowerModels.DetHerm
-public import Development.WeilBound.ThetaLifts.TowerModels.TwistedSums.StandardTraceAdelicAddCharLocalComponentNeOne
+public import Development.WeilBound.ThetaLifts.TowerModels.Bundle0006
+public import Development.WeilBound.ThetaLifts.TowerModels.Bundle0003
+public import Development.WeilBound.ThetaLifts.TowerModels.TwistedSums.Bundle0003
 public import Mathlib
 public import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.WeilTensorModels
 

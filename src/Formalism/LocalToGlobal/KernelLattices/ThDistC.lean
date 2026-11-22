@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Formalism.LocalToGlobal.Columns.FiniteSumNonzeroLargeDepth
-public import Formalism.LocalToGlobal.KernelLattices.XiIndCClass
+public import Formalism.LocalToGlobal.KernelLattices.Bundle0001
 public import Formalism.LocalToGlobal.KernelLattices.LateralTheory
 
 @[expose] public section

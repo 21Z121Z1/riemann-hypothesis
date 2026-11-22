@@ -1,6 +1,6 @@
 module
 
-public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.StabilizerFlagSplitting.MulVecColOfMul
+public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.StabilizerFlagSplitting.Bundle0002
 
 @[expose] public section
 

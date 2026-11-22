@@ -1,9 +1,9 @@
 module
 
-public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.GermCut
-public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.ThetaSwapFirstTwo
+public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0006
+public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0016
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.CubicalLawRight
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.TaylorDiscriminants.WickVanishing.ChartSer
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.TaylorDiscriminants.WickVanishing.Bundle0016
 
 @[expose] public section
 

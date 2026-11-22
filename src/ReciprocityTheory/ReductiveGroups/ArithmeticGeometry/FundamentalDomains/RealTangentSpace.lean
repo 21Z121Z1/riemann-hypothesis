@@ -1,7 +1,7 @@
 module
 
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.FundamentalDomains.LatticeSpanMembership
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.HeightTheory.Transference
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.HeightTheory.Bundle0006
 
 @[expose] public section
 

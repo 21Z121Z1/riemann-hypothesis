@@ -1,16 +1,15 @@
 module
 
 public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.BoundAtTwoAndThreeForFamily
-public import Formalism.SharpRestriction.GlobalTheoremInputs
-public import Formalism.SharpRestriction.LevelLetterCocycles.JointConditionsZpowers.JointConditionTameBound
-public import Formalism.SharpRestriction.LevelLetterCocycles.JointConditionsZpowers.CrysOnCond
+public import Formalism.SharpRestriction.Bundle0002
+public import Formalism.SharpRestriction.LevelLetterCocycles.JointConditionsZpowers.Bundle0005
 public import Formalism.SharpRestriction.LevelLetterCocycles.WachCoordinates
 public import Formalism.SharpRestriction.LevelLetterCocycles.RamifiedCoefficientChains
 public import Formalism.SharpRestriction.LevelLetterCocycles.ArcLiftingSetup
-public import Development.AbelianVarietyTheory.BlockTheory.NonGaloisCusps.BaseSizes
-public import Formalism.SharpRestriction.LevelLetterCocycles.AdmissibleParameterJ
+public import Development.AbelianVarietyTheory.BlockTheory.NonGaloisCusps.Bundle0007
+public import Formalism.SharpRestriction.LevelLetterCocycles.Bundle0010
 public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.JumpSetDistinctOfRealPlaceFacts
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExistsLetterOfLocalEmbedding
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0041
 
 @[expose] public section
 

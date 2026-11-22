@@ -1,9 +1,9 @@
 module
 
-public import Development.WeilBound.ThetaLifts.LatticeBasics.ThConstLoc
+public import Development.WeilBound.ThetaLifts.LatticeBasics.Bundle0009
 public import Development.WeilBound.CoreStatements.LocallyConstantCoinvariants.IndicatorMem
 public import Development.WeilBound.CoreStatements.LocallyConstantCoinvariants.PfActs
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EqOfComponentTensorAdelicFunctionEq
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1645
 
 @[expose] public section
 

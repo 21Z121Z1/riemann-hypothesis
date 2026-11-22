@@ -1,8 +1,8 @@
 module
 
-public import Formalism.LocalToGlobal.IndefiniteReal.FinitePlaces.ActsLinOfSplitLin
-public import Formalism.LocalToGlobal.IndefiniteReal.FinitePlaces.IdemUniq
-public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.TendstoCut
+public import Formalism.LocalToGlobal.IndefiniteReal.FinitePlaces.Bundle0003
+public import Formalism.LocalToGlobal.IndefiniteReal.FinitePlaces.Bundle0009
+public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0061
 
 @[expose] public section
 

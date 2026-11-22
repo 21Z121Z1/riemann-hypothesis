@@ -1,7 +1,7 @@
 module
 
 public import Formalism.LocalToGlobal.GroupLattices.FockModels.TestSideDef
-public import Formalism.LocalToGlobal.GroupLattices.FockModels.DualInclusionLattices
+public import Formalism.LocalToGlobal.GroupLattices.FockModels.Bundle0001
 
 @[expose] public section
 

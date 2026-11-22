@@ -1,6 +1,6 @@
 module
 
-public import Formalism.PeriodIntegrals.QmSkip
+public import Formalism.PeriodIntegrals.Bundle0017
 
 @[expose] public section
 

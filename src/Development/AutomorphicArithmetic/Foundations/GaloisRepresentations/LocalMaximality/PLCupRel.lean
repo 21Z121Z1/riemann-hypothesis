@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.LocalMaximality.LiftFactorization
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CechDeltaCupProduct
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0183
 
 @[expose] public section
 

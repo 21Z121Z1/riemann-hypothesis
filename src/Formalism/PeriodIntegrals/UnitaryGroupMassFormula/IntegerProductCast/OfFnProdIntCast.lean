@@ -1,9 +1,7 @@
 module
 
-public import Formalism.PeriodIntegrals.QmStar
-public import Formalism.PeriodIntegrals.QmRowForm
-public import Formalism.RealPlaceAnalysis.RealPlaceTaylor.QuantumDetHighestWeightHolds
-public import Formalism.RealPlaceAnalysis.RealPlaceTaylor.ShiftedGeneratorEqIteSmulAdd
+public import Formalism.PeriodIntegrals.Bundle0017
+public import Formalism.RealPlaceAnalysis.RealPlaceTaylor.Bundle0006
 
 @[expose] public section
 

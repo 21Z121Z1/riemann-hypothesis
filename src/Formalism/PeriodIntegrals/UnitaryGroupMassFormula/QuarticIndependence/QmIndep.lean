@@ -1,8 +1,7 @@
 module
 
-public import Formalism.PeriodIntegrals.RTTIndependence
-public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.QuarticIndependence.IndepC
-public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.QuarticIndependence.IndepPoly
+public import Formalism.PeriodIntegrals.Bundle0015
+public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.QuarticIndependence.Bundle0001
 
 @[expose] public section
 

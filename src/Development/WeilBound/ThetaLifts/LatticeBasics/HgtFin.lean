@@ -1,12 +1,11 @@
 module
 
 public import Mathlib
-public import Development.WeilBound.ThetaLifts.LatticeBasics.HgtWitt
-public import Development.WeilBound.CoreStatements.LocalThetaKernels.IwasFrame
-public import Development.AutomorphicSpectrum.Proofs.AdelicProofs.MemKFinOfFrameIntegral
-public import Development.AutomorphicSpectrum.Proofs.AdelicProofs.HasSatOfFamily
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PlaceSplitOrInert
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsIntAddConjEqOneOfBaseGood
+public import Development.WeilBound.ThetaLifts.LatticeBasics.Bundle0005
+public import Development.WeilBound.CoreStatements.LocalThetaKernels.Bundle0001
+public import Development.AutomorphicSpectrum.Proofs.AdelicProofs.Bundle0007
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1227
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1520
 
 @[expose] public section
 

@@ -2,7 +2,7 @@ module
 
 public import CompanionTheory.RealGroups.FormalDegrees.ArchimedeanFormalDegrees.FormalDegreeFormula.ModelFunctionsMultiply
 public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.HighestWeights.ModelTau
-public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.HighestWeights.Weight
+public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.HighestWeights.Bundle0003
 
 @[expose] public section
 

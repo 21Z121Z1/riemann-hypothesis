@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Formalism.FrobeniusOrbits.HostDiffSupport
+public import Formalism.FrobeniusOrbits.Bundle0001
 public import Formalism.FrobeniusOrbits.RealSubfieldLeCompositum
 public import Formalism.FrobeniusOrbits.FrobeniusOrbitsProofs.Inertia
 public import Formalism.FrobeniusOrbits.FrobeniusOrbitsProofs.Decomp

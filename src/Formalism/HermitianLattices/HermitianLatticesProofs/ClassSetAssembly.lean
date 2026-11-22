@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Formalism.HermitianLattices.GenusCovolBound
-public import Formalism.HermitianLattices.HermitianLatticesProofs.IsomAct
-public import Formalism.HermitianLattices.HermitianLatticesProofs.GenusBasic
+public import Formalism.HermitianLattices.Bundle0002
+public import Formalism.HermitianLattices.HermitianLatticesProofs.Bundle0001
+public import Formalism.HermitianLattices.HermitianLatticesProofs.Bundle0002
 
 @[expose] public section
 

@@ -1,7 +1,7 @@
 module
 
-public import Formalism.LocalToGlobal.IndefiniteReal.FinitePlaces.LatMod
-public import Formalism.LocalToGlobal.IndefiniteReal.FinitePlaces.CharDual
+public import Formalism.LocalToGlobal.IndefiniteReal.FinitePlaces.Bundle0013
+public import Formalism.LocalToGlobal.IndefiniteReal.FinitePlaces.Bundle0007
 public import Formalism.LocalToGlobal.IndefiniteReal.FinitePlaces.FactPrincipalDatum
 public import Formalism.SharpRestriction.CuspSpanNormBounds.NonemptyParameterModels.TermTiesEmptyOfLargeIndex
 

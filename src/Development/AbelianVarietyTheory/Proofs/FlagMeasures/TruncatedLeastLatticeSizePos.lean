@@ -1,13 +1,13 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.LayerProd
+public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.Bundle0006
 public import Formalism.HarderNarasimhan.ShiftInvariance
-public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.LamXEquivariant
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.NearTrivialPointwise
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.FgOfHtNeZero
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.PackingGeometricMeanSeparated
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.OrthogonalCanonicalFiltrationStepsAutPointStatement
+public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.Bundle0007
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0127
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0123
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0012
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.OrthogonalCanonicalFiltrationStepsAutPoint
 
 @[expose] public section
 
@@ -153,7 +153,7 @@ theorem separated (hn : 1 ≤ I.n) (x y a b : I.GA) (ha : a ∈ I.GFset) (hb : b
       rw [map_zero]
       refine LinearMap.ext_on (GlobalTheory.T.autPointLatticeIntersection_selfDual_properties I y).2.2.1 fun z hz => ?_
       exact (Submodule.eq_bot_iff _).1 h0 _ ⟨z, hz, rfl⟩)
-  rw [(GlobalTheory.T.orthogonal_canonicalFiltration_steps_autPoint I y).2.1 hn, div_inv_eq_mul] at h
+  rw [(_root_.GlobalTheory.Count.PerpStep.main I y).2.1 hn, div_inv_eq_mul] at h
   have e1 : (nPl I.E : ℝ) = Fintype.card (InfinitePlace I.F) := by
     rw [nPl, Fintype.card_of_bijective (comap_bijective I)]
   have e2 : ∏ w, opNormAt (bas I) (frm I y) (bas I) (frm I x) w

@@ -1,7 +1,7 @@
 module
 
 public import CompanionTheory.AutomorphicTheory.ZuckermanCommutation.ZuckermanFunctors.IsSimpleFam
-public import CompanionTheory.AutomorphicTheory.PieriRules.PieriDegreeBounds.IsFRepDualStandardUnitaryRep
+public import CompanionTheory.AutomorphicTheory.PieriRules.PieriDegreeBounds.Bundle0001
 public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.HighestWeightUniqueness.HpkMulMulHpkApply
 
 @[expose] public section

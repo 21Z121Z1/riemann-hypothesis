@@ -1,6 +1,6 @@
 module
 
-public import Formalism.AdmissibleDesigns.TheoremFromNormalizedOpen
+public import Formalism.AdmissibleDesigns.Bundle0014
 public import Formalism.AdmissibleDesigns.FiniteClassesLocalEq
 
 @[expose] public section

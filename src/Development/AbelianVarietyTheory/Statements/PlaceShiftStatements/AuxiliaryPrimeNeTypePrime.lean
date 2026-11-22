@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Statements.PlaceShiftStatements.NormSmall
+public import Development.AbelianVarietyTheory.Statements.PlaceShiftStatements.Bundle0002
 public import Development.AbelianVarietyTheory.Statements.PlaceShiftStatements.SetAtOfSizeAt
-public import Development.AbelianVarietyTheory.Definitions.Divisors.NonemptyGridDataIff
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0046
 
 @[expose] public section
 

@@ -1,6 +1,6 @@
 module
 
-public import Formalism.SizeWindowBrackets.TraceSquareAndDiagBounds
+public import Formalism.SizeWindowBrackets.Bundle0001
 
 @[expose] public section
 

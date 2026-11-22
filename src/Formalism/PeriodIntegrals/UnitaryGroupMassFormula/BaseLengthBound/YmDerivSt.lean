@@ -1,6 +1,6 @@
 module
 
-public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.BaseLengthBound.TaylorSpanGeneratorsAlt
+public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.BaseLengthBound.Bundle0001
 
 @[expose] public section
 

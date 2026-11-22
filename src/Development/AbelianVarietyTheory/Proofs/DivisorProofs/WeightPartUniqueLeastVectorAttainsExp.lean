@@ -1,15 +1,15 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WtChar
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GalLab
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsLabOntoAndKer
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaSetupDividingLabelPersistsDeeperLevelStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WeightPartAttainsBoundUniqueShortestVectorStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaTranslateValuesShiftByRootOfUnityStatement
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2229
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2179
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2189
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2906
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2578
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2672
 public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.UnitThetaConstantsGenerateIntegralTorsion
-public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.UTorsClosed
-public import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.AbelianSchemeLawsUnconditional
+public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.Bundle0133
+public import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.Bundle0029
 
 @[expose] public section
 
@@ -241,7 +241,7 @@ theorem main : ∀ (g n : ℕ) (F : SFam g n (zetaAway n)) (W : Matrix (Fin 8) (
   have hex : ∃ h' ∈ D.X.S.HH D.X.M z₂, D.m • h' = D.lab b := ⟨hh, hhH, hlb.symm⟩
   have hlift : GSum.lift D z₂ b = hex.choose := by rw [GSum.lift, dite_eq_left hex]
   obtain ⟨hH'', hm''⟩ := hex.choose_spec
-  obtain ⟨ξ, ⟨k', hk'pos, hξ⟩, hshift⟩ := GlobalTheory.T.theta_translate_values_shift_by_root_of_unity D.X.ρ (D.X.S.HH D.X.M z₂) D.m D.sq hh hex.choose
+  obtain ⟨ξ, ⟨k', hk'pos, hξ⟩, hshift⟩ := _root_.GlobalTheory.UPoinc.USum.sum_ev_shift D.X.ρ (D.X.S.HH D.X.M z₂) D.m D.sq hh hex.choose
     (by rw [hm'', hlb]) ((D.X.S.HH D.X.M z₂).sub_mem hH'' hhH)
   have hsh := sum_proj_shift (S := D.X.S) D.X.ρ.i₀ (T := D.X.S.TT D.X.M z₂) (GSum.wtChar D _ a) hshift
 
@@ -254,7 +254,7 @@ theorem main : ∀ (g n : ℕ) (F : SFam g n (zetaAway n)) (W : Matrix (Fin 8) (
   have hqz : D.q (y (cPt p)) = z₁ := by
     rw [← c.cen, ← h]
     rfl
-  have hx₀ := GlobalTheory.T.thetaSetup_dividingLabel_persists_deeperLevel g n F W Z i X₁ hg hn hodd himm hE8 hTI hproj ε₁ hdiag D z₁ (GSum.base X₁ z₁) hbase
+  have hx₀ := _root_.GlobalTheory.Poinc.DivDeep.main g n F W Z i X₁ hg hn hodd himm hE8 hTI hproj ε₁ hdiag D z₁ (GSum.base X₁ z₁) hbase
     (y (cPt p)) hqz
   have hth0 := norm_th_eq_delta D.X y (hth := hth) (hev := hev) (hc := hc) (fg := fg) (frac := frac) hR' y₀ hy₀ hx₀
   set x₀ := D.lab (GSum.base X₁ z₁) with hx₀def

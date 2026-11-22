@@ -1,28 +1,29 @@
 module
 
 public import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.ArchimedeanGelfandKernels.FriedrichsKernels.AsmKerOneOfSteps
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.AbsoluteFourierCoefficientsStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.AbsoluteCutoffBoundStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FriedrichsExtensionFactsStatement
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.AbsoluteFourierCoefficients
+public import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.ArchimedeanGelfandKernels.FriedrichsKernels.Friedrichs
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0191
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0198
 public import Mathlib
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FunctionalCalculusCurveStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.WvAlg
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ClosureOperatorFactsStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SobolevOperatorFactsStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CompactSobolevEmbeddingStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CasimirOperatorFormulaStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SobolevIntegrationByPartsStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.DenseDomainFactsStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SectionNormBoundStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SobolevSpacePreservedStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ConcentrationTimeBoundStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FunctionalCalculusJointCurveStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FunctionalCalculusFirstAssumptionStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.PaleyWienerDecayStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SmoothOperatorFactsStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.KernelRegularityStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.KernelLocalizationStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.KernelWeightFactsStatement
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FunctionalCalculusCurve
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0201
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0192
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0331
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0193
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0202
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0195
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0224
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0316
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ConcentrationTimeBound
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FunctionalCalculusJointCurve
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FunctionalCalculusFirstAssumption
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0209
+public import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.ArchimedeanGelfandKernels.FriedrichsKernels.CalcSteps
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0355
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0227
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0212
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.KernelWeightFacts
 
 @[expose] public section
 
@@ -31,15 +32,15 @@ namespace PositivityTheory.RgBcC.Fc
 open PositivityTheory.RgBcC
 
 theorem calcSteps : CalcSteps :=
-  ⟨GlobalTheory.T.absolute_fourier_coefficients, GlobalTheory.T.absolute_cutoff_bound, GlobalTheory.T.functional_calculus_curve, GlobalTheory.CompanionTheory.WaveFc.wvAlg, GlobalTheory.T.closure_operator_facts, GlobalTheory.T.sobolev_operator_facts, GlobalTheory.T.compact_sobolev_embedding,
-    GlobalTheory.T.section_norm_bound, GlobalTheory.T.sobolev_space_preserved, GlobalTheory.T.concentration_time_bound, GlobalTheory.T.functional_calculus_joint_curve, GlobalTheory.T.friedrichs_extension_facts, GlobalTheory.T.casimir_operator_formula, GlobalTheory.T.sobolev_integration_by_parts,
-    GlobalTheory.T.dense_domain_facts⟩
+  ⟨_root_.GlobalTheory.CompanionTheory.FuncCalc.absFC, _root_.GlobalTheory.CompanionTheory.FcCut.absCut, _root_.GlobalTheory.CompanionTheory.WaveCurve.fcurve, GlobalTheory.CompanionTheory.WaveFc.wvAlg, _root_.GlobalTheory.CompanionTheory.FcCls.clsFacts, _root_.GlobalTheory.CompanionTheory.SobOpsPf.sobOps, _root_.GlobalTheory.CompanionTheory.CptSobProof.cptSob,
+    _root_.GlobalTheory.CompanionTheory.SecBd.secBound_main, _root_.GlobalTheory.CompanionTheory.PresSobA.presSob, _root_.GlobalTheory.CompanionTheory.FcConcT.concT, _root_.GlobalTheory.CompanionTheory.CurveJ.curveJoint, _root_.GlobalTheory.CompanionTheory.FriedrichsFc.friedrichs, _root_.GlobalTheory.CompanionTheory.Casimir.omFormula, _root_.GlobalTheory.CompanionTheory.FcCalc.Ibp.ibpSob,
+    _root_.GlobalTheory.CompanionTheory.DenseCpt.denseD⟩
 
 theorem asmCpt : AsmCpt :=
-  GlobalTheory.T.functional_calculus_first_assumption GlobalTheory.T.absolute_fourier_coefficients GlobalTheory.T.absolute_cutoff_bound GlobalTheory.T.functional_calculus_curve GlobalTheory.CompanionTheory.WaveFc.wvAlg GlobalTheory.T.closure_operator_facts GlobalTheory.T.sobolev_operator_facts GlobalTheory.T.compact_sobolev_embedding
-    GlobalTheory.T.section_norm_bound GlobalTheory.T.sobolev_space_preserved GlobalTheory.T.concentration_time_bound GlobalTheory.T.functional_calculus_joint_curve GlobalTheory.T.friedrichs_extension_facts GlobalTheory.T.casimir_operator_formula GlobalTheory.T.sobolev_integration_by_parts GlobalTheory.T.dense_domain_facts
+  _root_.GlobalTheory.CompanionTheory.WaveFc.Asm.asm1 _root_.GlobalTheory.CompanionTheory.FuncCalc.absFC _root_.GlobalTheory.CompanionTheory.FcCut.absCut _root_.GlobalTheory.CompanionTheory.WaveCurve.fcurve GlobalTheory.CompanionTheory.WaveFc.wvAlg _root_.GlobalTheory.CompanionTheory.FcCls.clsFacts _root_.GlobalTheory.CompanionTheory.SobOpsPf.sobOps _root_.GlobalTheory.CompanionTheory.CptSobProof.cptSob
+    _root_.GlobalTheory.CompanionTheory.SecBd.secBound_main _root_.GlobalTheory.CompanionTheory.PresSobA.presSob _root_.GlobalTheory.CompanionTheory.FcConcT.concT _root_.GlobalTheory.CompanionTheory.CurveJ.curveJoint _root_.GlobalTheory.CompanionTheory.FriedrichsFc.friedrichs _root_.GlobalTheory.CompanionTheory.Casimir.omFormula _root_.GlobalTheory.CompanionTheory.FcCalc.Ibp.ibpSob _root_.GlobalTheory.CompanionTheory.DenseCpt.denseD
 
 theorem asmKerOne : AsmKerOne :=
-  asmKerOne_of_steps asmCpt calcSteps GlobalTheory.T.smooth_operator_facts GlobalTheory.T.paley_wiener_decay GlobalTheory.T.kernel_regularity GlobalTheory.T.kernel_localization GlobalTheory.T.kernel_weight_facts
+  asmKerOne_of_steps asmCpt calcSteps _root_.GlobalTheory.CompanionTheory.FcSmooth.smoothOp _root_.GlobalTheory.CompanionTheory.WaveCurve.Decay.pwdecay _root_.GlobalTheory.CompanionTheory.KerFc.kerCore _root_.GlobalTheory.CompanionTheory.WaveLoc.kerLoc _root_.GlobalTheory.CompanionTheory.KerWord.kerW
 
 end PositivityTheory.RgBcC.Fc

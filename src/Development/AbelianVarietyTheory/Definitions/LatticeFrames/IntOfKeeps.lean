@@ -2,10 +2,10 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.MemLineIff
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.IncAdjYZeroMulVec
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0449
 public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SelfDualLatticeHyperbolicLineIdealsAtPlace
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ExistsNatMulSelfDualLatticeAtPlaceIntegral
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SelfDualLatticeAtPlaceSmulIntegralMem
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0127
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0121
 
 @[expose] public section
 

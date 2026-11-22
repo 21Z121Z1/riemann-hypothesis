@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import GroundTheory.AutomorphicForms.HermitianBinaryValues
-public import GroundTheory.AutomorphicForms.UnitaryGroupScheme
+public import GroundTheory.AutomorphicForms.Bundle0011
 
 @[expose] public section
 

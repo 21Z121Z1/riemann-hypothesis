@@ -1,7 +1,6 @@
 module
 
-public import ReciprocityTheory.CommutativeAlgebra.PolynomialHeights.PolyStep
-public import ReciprocityTheory.CommutativeAlgebra.PolynomialHeights.PolyMax
+public import ReciprocityTheory.CommutativeAlgebra.PolynomialHeights.Bundle0001
 
 @[expose] public section
 

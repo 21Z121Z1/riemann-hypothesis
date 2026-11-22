@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Development.WeilBound.CoreStatements.PublishedTheorems.PoitouTateDuality.PtfsDefs
-public import Development.WeilBound.CoreStatements.EulerCharacteristicCounts.GcohCmp
+public import Development.WeilBound.CoreStatements.EulerCharacteristicCounts.Bundle0004
 
 @[expose] public section
 

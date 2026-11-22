@@ -2,10 +2,10 @@ module
 
 public import Mathlib
 public import GroundTheory.AutomorphicForms.FourierWhittaker
-public import GroundTheory.AutomorphicForms.MacdonaldWhittakerHecke
+public import GroundTheory.AutomorphicForms.Bundle0027
 public import GroundTheory.LocalFields.LocalZeta
 public import GroundTheory.GlobalFields.TateThesis.RootNumberLocalFinite
-public import Formalism.RealPlaceAnalysis.StatementE
+public import Formalism.RealPlaceAnalysis.Bundle0003
 
 @[expose] public section
 

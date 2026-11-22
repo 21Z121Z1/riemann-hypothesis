@@ -2,14 +2,13 @@ module
 
 public import Mathlib
 public import Development.AutomorphicSpectrum.Definitions.MetricPeriods.Pull1
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArithmeticIntersection.TsgPolyVolPolyCoeffEven
-public import GroundTheory.HeightsAndTheta.Heights.Intersections.StatementsFibreLocal
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArithmeticIntersection.Bundle0004
+public import GroundTheory.HeightsAndTheta.Heights.Intersections.Bundle0003
 public import Development.AutomorphicSpectrum.Statements.MetricStatements.AgreementIffGuarded
-public import Development.AutomorphicSpectrum.Proofs.MetricProofs.FormPolyIsHomogeneousAndEval
-public import Development.AutomorphicSpectrum.Proofs.MetricProofs.KillNoneFormPoly
-public import Development.AutomorphicSpectrum.Proofs.MetricProofs.FlagHeightPolynomialWeightForm
-public import Development.WeilBound.CoreStatements.PluriharmonicCharts.XFlArith
-public import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.PHFlProdLinear
+public import Development.AutomorphicSpectrum.Proofs.MetricProofs.Bundle0005
+public import Development.AutomorphicSpectrum.Proofs.MetricProofs.Bundle0033
+public import Development.WeilBound.CoreStatements.PluriharmonicCharts.Bundle0011
+public import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.Bundle0008
 
 @[expose] public section
 

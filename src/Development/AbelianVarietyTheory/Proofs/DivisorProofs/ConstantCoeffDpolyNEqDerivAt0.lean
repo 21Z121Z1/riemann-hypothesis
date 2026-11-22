@@ -2,11 +2,11 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.Divisors.NonemptyValExtOfOverLa
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsIntegralInvariantDerivationLog
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DerivAt0EqSumOfSubset
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.IsExpEqOfSubstLg
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0379
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0339
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0051
 public import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.ConstantCoeffInvariantOperatorAlongMatrix
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.TaylorDiscriminants.WickVanishing.LogChain
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.TaylorDiscriminants.WickVanishing.Bundle0008
 
 @[expose] public section
 

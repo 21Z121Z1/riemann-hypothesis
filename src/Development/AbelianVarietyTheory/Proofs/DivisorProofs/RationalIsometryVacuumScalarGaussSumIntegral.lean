@@ -1,12 +1,12 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsIsHalfIdem
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GaussianPoincareSeriesThetaVacuumStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnfoldPoincareSeriesLatticeFourierStatement
-public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.ApplyAddInfRat
-public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.HomSymplecticHalfFormAlgebraicLawsContinuous
-public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.FiniteRationalPointsCompletedLattice
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0989
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GaussianPoincareSeriesThetaVacuum
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0175
+public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.Bundle0069
+public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.Bundle0065
+public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.Bundle0057
 
 @[expose] public section
 
@@ -131,7 +131,7 @@ theorem omO_act (hσ : Chart θ σ) (u v : RW T S) :
       (actR S T (fun τ => a.map (tauE D τ)) (fun τ => b.map (tauE D τ)) v) = omO S T u v := by
   rw [← hσ.pi_iota T S u, ← hσ.pi_iota T S v, ← piW_act hg hh hσ.inf, ← piW_act hg hh hσ.inf, omO_apply, omO_apply]
   refine Finset.sum_congr rfl fun τ _ => ?_
-  rw [← GlobalTheory.OrientedChar.valTau_symplO hσ.inf, ← GlobalTheory.OrientedChar.valTau_symplO hσ.inf, GlobalTheory.T.symplecticForm_unitaryPairAction]
+  rw [← GlobalTheory.OrientedChar.valTau_symplO hσ.inf, ← GlobalTheory.OrientedChar.valTau_symplO hσ.inf, _root_.GlobalTheory.SymplOInv.symplO_actO]
 
 theorem actR_add_infRat (hσ : Chart θ σ) (y : Matrix (Fin T.rank) (Fin S.rank) D.host.E) (v : RW T S) :
     actR S T (fun τ => a.map (tauE D τ)) (fun τ => b.map (tauE D τ)) (infRat S T y + v) =
@@ -203,7 +203,7 @@ theorem chiLat_mul_exp (hψ : IsStdChar D ψ (-1)) (hσ : Chart θ σ) (LS : Set
       rw [← map_add (f := _), sub_add_cancel]
     have h1 := phase_identity (W := intA D w) (by rw [cA_intA, ← RingHom.map_add (f := _), hw, RingHom.map_one])
       (finRat S T (b * y * a - y)) (finRat S T y)
-      (by rw [e, ← act_finRat hg hh, ← actO_smul, symplOH, symplOH, GlobalTheory.T.symplecticForm_unitaryPairAction])
+      (by rw [e, ← act_finRat hg hh, ← actO_smul, symplOH, symplOH, _root_.GlobalTheory.SymplOInv.symplO_actO])
     have h2 : gamQ ψ S T (GlobalTheory.FinWeil.sgO D w • (b * y * a - y)) y =
         ψ (symplO S T (cA D (intA D w) • finRat S T (b * y * a - y)) (finRat S T y)) := by
       rw [gamQ_eq, map_smul, cA_intA]
@@ -506,7 +506,7 @@ theorem gauss_mul_integral : ∀ (D : D7) (ψ : AddChar (AF D.host.F) ℂ) (hψ 
     obtain ⟨z, hz⟩ := (GlobalTheory.RatSelfDual.psi_fin_iff hψ S T y c).1 h2
     exact ⟨-z, by rw [LinearMap.neg_apply, hz, Int.cast_neg]⟩
   · intro v
-    obtain ⟨hf, hfix, hvac⟩ := GlobalTheory.T.gaussian_poincare_series_theta_vacuum D ψ hψ θ σ hσ S T sS sT hS hT ΛS ΛT dS dT w hw (-v)
+    obtain ⟨hf, hfix, hvac⟩ := _root_.GlobalTheory.GaussSeriesVacuum.series_theta_vacuum D ψ hψ θ σ hσ S T sS sT hS hT ΛS ΛT dS dT w hw (-v)
     have e := hκ ⟨_, hf⟩ hfix hvac (iotaW σ T S v)
     rw [(sumOp_eq_sum_transversal H _ _ hB _ hfix _ u huB huT).1, Submodule.coe_sum, Finset.sum_apply] at e
     simp only [coe_opF, right_side hψ hσ halt, left_side hg hh hψ hσ halt sS sT _ _ hw hb] at e

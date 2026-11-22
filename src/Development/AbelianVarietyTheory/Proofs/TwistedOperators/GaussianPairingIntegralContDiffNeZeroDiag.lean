@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.PairInfApply
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0150
 
 @[expose] public section
 

@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.UltraDefs
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.Bundle0010
 
 @[expose] public section
 

@@ -1,10 +1,10 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicArithmetic.CyclotomicBounds.RootsOfUnity.MassNumeric
+public import Development.AutomorphicArithmetic.CyclotomicBounds.RootsOfUnity.Bundle0001
 public import Development.AutomorphicArithmetic.CyclotomicBounds.RootsOfUnity.HostTorsionOrderLe
-public import Development.AbelianVarietyTheory.Definitions.Divisors.FormalDegreeUpperC
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsLinearLift
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0036
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1061
 
 @[expose] public section
 

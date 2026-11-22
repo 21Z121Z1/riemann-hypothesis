@@ -2,17 +2,17 @@ module
 
 public import Mathlib
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.UniformisationConclusion
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.HeckeKer
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.Bundle0003
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.IsHolPeriods
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.UnifUniqSt
-public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.LineBundleGenericFibreSpreadsOutStatement
-public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsIsAffineOpenPreimageBasicOpen
-public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsBasicOpenKTrivOfFibre
+public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0152
+public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0135
+public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0171
 public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsAbelianSchemeAway
 public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ClsLinCombSingle
-public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.IsAbelianSchemeOfIsGrpPullback
-public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsProjectiveModel
-public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.LineBundleIsoExtendOfNormalBase
+public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0099
+public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.Bundle0111
+public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.Bundle0034
 
 @[expose] public section
 
@@ -136,7 +136,7 @@ theorem spreads_lb (h : HasGrp P R (algebraMap R K)) : Spreads R (HasLB P) := by
   obtain ⟨A, _, φ, h⟩ := h
   have := h.1.proper
   let i := h.2.2.1.isoPullback
-  obtain ⟨f, hf, M, hM, H⟩ := GlobalTheory.T.lineBundle_generic_fibre_spreads_out R K A.left A.hom (P.L.pull i.inv) inferInstance inferInstance
+  obtain ⟨f, hf, M, hM, H⟩ := _root_.GlobalTheory.lb_generic_spreads_out R K A.left A.hom (P.L.pull i.inv) inferInstance inferInstance
     (pull_isLB P.isLB _)
   let ψ₀ : Localization.Away f →+* K := IsLocalization.Away.lift f (isUnit_algebraMap hf)
   have h₀ : ψ₀.comp (algebraMap R _) = algebraMap R K := IsLocalization.Away.lift_comp f _

@@ -2,22 +2,20 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.LengthPosOfPosDef
-public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.AdjFormula
+public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0021
 public import Formalism.LocalToGlobal.IndefiniteReal.LinksStage
-public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.ExistsNormLeHeightPow
+public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.Bundle0007
 public import Formalism.LocalToGlobal.IndefiniteReal.ExistsChosenExtremalVector
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.LowestKTypeValuesKilledByLoweringPart
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0323
 public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.FockVectorMixedLaplacianKilledLoweringKilled
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ContinuousMovPair
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.HolomorphicTypeAtExtremalOfKEquivariantLoweringK
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.HolomorphicDiscreteSeriesLowestKTypeSmoothIrredu
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.FormsModelHolomorphicIntegralExtremalWeight
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.MixedLaplacianKillsProductOfMinors
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0220
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0291
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0225
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0228
 public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.MemSmoothFunctionsOfClosedRightDerivatives
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ContinuousOneP
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsThetaLiftLinearMapCuspFormMultiplicity
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.L2MatrixCoeffBoundedHolomorphicFormEqExtremalVec
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ThetaPairingInvariant
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0450
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1187
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0640
 
 @[expose] public section
 
@@ -99,7 +97,7 @@ theorem exists_gen (hom : IsWeilDatumO ψ S T χS χT om) (hθ : IsInfFam θ) (�
     {X : Matrix (Fin T.rank) (Fin T.rank) ℂ} (hX : X ∈ lieAt T τ) : ∃ L : Module.End ℂ (WO S T → ℂ),
       ∀ f, IsThetaFunO ψ S T f → IsThetaFunO ψ S T (L f) ∧
         ∀ h g w, HasDerivAt (fun t : ℝ => om (h, g * oneP θ T τ X t) f w) (om (h, g) (L f) w) 0 := by
-  obtain ⟨L, hL⟩ := GlobalTheory.T.exists_weilDatum_generator_realOneParamGroup D ψ S T χS χT om hom θ hθ τ X hX
+  obtain ⟨L, hL⟩ := _root_.GlobalTheory.DefLift.Gen.exists_generator D ψ S T χS χT om hom θ hθ τ X hX
   refine ⟨L, fun f hf => ⟨(hL f hf).1, fun h g w => ?_⟩⟩
   have := (hL f hf).2.2.2 (h, g) w
   simpa only [Prod.mk_mul_mk, mul_one] using this
@@ -179,9 +177,9 @@ theorem killed_of_harmonic (hom : IsWeilDatumO ψ S T χS χT om) (hθ : IsInfFa
   unfold conjAt at lX lY ⊢
   rw [eY] at lY ⊢
   generalize (1 / 2 : ℂ) • (Z + -((gramAt D T τ)⁻¹ * Zᴴ * gramAt D T τ)) = X at ha lX lY
-  obtain ⟨GX, hX⟩ : ∃ G, IsGen ψ om θ τ X G := GlobalTheory.T.exists_weilDatum_generator_realOneParamGroup D ψ S T χS χT om hom θ hθ τ _ lX
+  obtain ⟨GX, hX⟩ : ∃ G, IsGen ψ om θ τ X G := _root_.GlobalTheory.DefLift.Gen.exists_generator D ψ S T χS χT om hom θ hθ τ _ lX
   obtain ⟨GY, hY⟩ : ∃ G, IsGen ψ om θ τ (Complex.I • (cart M τ * X)) G :=
-    GlobalTheory.T.exists_weilDatum_generator_realOneParamGroup D ψ S T χS χT om hom θ hθ τ _ lY
+    _root_.GlobalTheory.DefLift.Gen.exists_generator D ψ S T χS χT om hom θ hθ τ _ lY
   have hφ : IsThetaFunO ψ S T (pureTensorO ψ θ S T (fun _ => 1) (cart M) BS (onb M) f P) :=
     pure_mem (P := IsThetaFunO ψ S T) (fun _ _ => theta_add) (fun a _ => theta_smul a)
       (fun _ _ h => aPlus_theta hψ hθ _ _ _ h) hf _
@@ -423,7 +421,7 @@ theorem coef_extremal : ∀ (D : D7) (G : Type) [Group G] [Fintype G] (Pl0 T : T
   have hΔ := killed_of_harmonic (hω i t) hm.inf (D.sp.V_sig _) (D.sp.W_sig _)
     (R.BV i) (hm.BV i) (R.MW i (sg0 D A)) (fun τ => ((Wc D i).sig (tauE D τ)).1) (hm.order i) (R.vP i t) hth
     (GlobalTheory.DatumFock.isFockVacAt_thPVec _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ (hv i t) hth) (RealDat.Delta i)
-    (fun τ => GlobalTheory.T.mixed_laplacian_kills_product_of_minors D _ _ _ _ _ _ hpq τ)
+    (fun τ => _root_.GlobalTheory.MinorHarmonic.laplacian_delta D _ _ _ _ _ _ hpq τ)
   exact coef_eq (hω i t) hcv hm.inf _ hM hw hext (hp i t _) (fun a ha =>
     holAd_coef (hω i t) hcv hm.inf _ hM hw _ (hm.cV i)
       (pureTensorO R.ψ R.θ (Vc D i) (Wc D i) (fun _ => 1) (cart (R.MW i (sg0 D A))) (R.BV i) (onb (R.MW i (sg0 D A)))

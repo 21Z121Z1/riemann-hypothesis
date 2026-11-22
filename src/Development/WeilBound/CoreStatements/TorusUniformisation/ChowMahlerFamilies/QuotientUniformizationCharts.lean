@@ -1,14 +1,24 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.AbBound
-public import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.CoordinateIdeals
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0091
+public import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.Bundle0002
 public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsFormNotInCoordIdeal
 public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.JoinModelPointsProject
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.AdjoinCoordsArithVarStatement
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsTorusStableSncChartsStatement
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.HodgeCptInteriorGenericStatement
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.IsArithVarOfBlockAlgebraicStatement
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.AdjoinCoordsArithVar
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.Bundle0008
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.BlowupProjections.BlowupProjStatement
+public import Development.AutomorphicSpectrum.Definitions.DivisibilityTowers.Proportional
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsTorusStableSncCharts
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.Bundle0013
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.EmbedsGeneric
+public import Development.AutomorphicSpectrum.Definitions.DivisibilityTowers.GoodOrigin
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.GlobalSectionsRankAlgClosed
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.Bundle0010
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.PotentialsBoundedRegSettingEqReference
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.HodgeCptInteriorGeneric
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsHodgeLine
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0081
 public import GroundTheory.HeightsAndTheta.Heights.HeightKernels.PCoordConeArithVar
 public import GroundTheory.HeightsAndTheta.Heights.WeightedHomogeneous.Assembly
 
@@ -97,7 +107,7 @@ theorem exists_charts (hR : Geo.ResK.ResKStatement) [CharZero Ω] (y : (Σ k, J 
         exact hβ0 (by simp)
       simpa [evC] using hm
   obtain ⟨e, he⟩ := exists_arith hK y c hc
-  obtain ⟨M, y', I, hy', hfn, hI, -, hsnc, hbd⟩ := GlobalTheory.T.adjoin_coords_arith_var hR K J Ω y e β b he hβ hβ0
+  obtain ⟨M, y', I, hy', hfn, hI, -, hsnc, hbd⟩ := _root_.GlobalTheory.CompanionTheory.Ar.SncRes.exists_snc_model hR K J Ω y e β b he hβ hβ0
   have eL : joinVec y y' ∘ joinInl J (fun _ : Unit => Fin M) = y := rfl
   have hA : IsArithVar (mCoordIdeal (joinVec y y')) (e + 1) := by
     have hblock : ReciprocityTheory.ChartRestriction.G.AI.I1.IsBlockMap (Sum.inl : K → K ⊕ Unit) (joinInl J fun _ : Unit => Fin M) := by
@@ -113,7 +123,7 @@ theorem exists_charts (hR : Geo.ResK.ResKStatement) [CharZero Ω] (y : (Σ k, J 
       (by rw [eL]; exact he) fun t ht => ?_
     rw [eL]
     exact isAlgebraic_algebraMap (⟨t, hfn ▸ ht⟩ : ReciprocityTheory.ChartRestriction.G.AI.I4.blockFnField y)
-  obtain ⟨nc, χ, hχ⟩ := GlobalTheory.T.exists_torus_stable_snc_charts _ _ Ω (joinVec y y') e I hsnc hA fun z hz b' hb' =>
+  obtain ⟨nc, χ, hχ⟩ := _root_.GlobalTheory.CompanionTheory.Ar.SncCpt.exists_sncCharts _ _ Ω (joinVec y y') e I hsnc hA fun z hz b' hb' =>
     ⟨torus_mem hA.2.1.2.1 hz.1 b' hb', torus_mem hI hz.2 b' hb'⟩
   refine ⟨e, nc, fun i t p => (χ i).γ t (joinInl J (fun _ : Unit => Fin M) p), fun i => (χ i).a, fun i => (χ i).a_le,
     fun i => ?_, fun i t ht => ?_, fun i t ht hne h0 => ?_, fun x hx => ?_⟩
@@ -218,7 +228,7 @@ theorem exists_open {E : Type} [Field E] [NumberField E] [IsCMField E] {H : Host
     ∃ V : 𝔐.X.Opens, genPt 𝔐.ξ ∈ V ∧ ∀ z : Sp ℂ ⟶ 𝔐.X, centre z ∈ V → 𝔐.Interior z := by
   haveI := c.fin
   haveI : NumberField c.F := ⟨⟩
-  obtain ⟨-, ⟨x, hx⟩, -⟩ := GlobalTheory.T.hodge_cpt_interior_generic E H D l Xo c _ _ Y S Ω K J y 𝔐 (IsFractionRing.injective (𝓞 c.F) c.F)
+  obtain ⟨-, ⟨x, hx⟩, -⟩ := _root_.GlobalTheory.CompanionTheory.Ar.HodgeCpt.basic E H D l Xo c _ _ Y S Ω K J y 𝔐 (IsFractionRing.injective (𝓞 c.F) c.F)
   haveI : IsPreimmersion (spMap (algebraMap (𝓞 c.F) c.F)) :=
     IsPreimmersion.of_isLocalization (nonZeroDivisors (𝓞 c.F))
   have hind : Topology.IsInducing (pullback.fst Y.s (spMap (algebraMap (𝓞 c.F) c.F))) :=

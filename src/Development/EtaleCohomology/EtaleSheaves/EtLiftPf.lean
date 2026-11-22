@@ -1,6 +1,6 @@
 module
 
-public import Development.EtaleCohomology.EtaleSheaves.EtaleDegreeZeroCohomologyEquivLocallyConstantFun
+public import Development.EtaleCohomology.EtaleSheaves.Bundle0003
 
 @[expose] public section
 

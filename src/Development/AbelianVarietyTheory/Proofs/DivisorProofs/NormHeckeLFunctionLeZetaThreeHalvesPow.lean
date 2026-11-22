@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Formalism.PairingDivisors.StatementA
+public import Formalism.PairingDivisors.Bundle0001
 public import Development.AbelianVarietyTheory.Definitions.Divisors.IsFinSetSplitPlacesCoprimeConductor
 
 @[expose] public section

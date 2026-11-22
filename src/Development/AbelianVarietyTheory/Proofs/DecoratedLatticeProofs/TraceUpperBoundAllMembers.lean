@@ -2,41 +2,43 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.IsStdFr
-public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.PinColL
+public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.Bundle0029
 public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.FrameTopAlt
-public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.XiEqXiOffMul
+public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.Bundle0030
 public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.HzUnit
 public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.CosInj
 public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.UnitRatio
-public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.ChartZero
 public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.TailRd
-public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.Placed
-public import Formalism.LocalToGlobal.IndefiniteReal.RealRec
-public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.ThetaChr
+public import Formalism.LocalToGlobal.IndefiniteReal.Bundle0030
+public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.Bundle0043
 public import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.ColumnCompatibleSelection
 public import Formalism.LocalToGlobal.SiegelLatticeTheory.FlagStabilizerTensors.STiesR
-public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.SameDegreeZeroFormsSelf
+public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.Bundle0016
 public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.DivisionPairOfAdelicFormsFaceColumnsData
-public import Formalism.LocalToGlobal.CarriedPlMap
-public import Formalism.LocalToGlobal.SelSide
+public import Formalism.LocalToGlobal.Bundle0002
+public import Formalism.LocalToGlobal.Bundle0001
 public import Formalism.LocalToGlobal.IndefiniteReal.DoubleCosetOperators.TwistedCharacterValue
 public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.TwArgs
-public import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.DivRows3GIff
-public import Formalism.LocalToGlobal.Divisibility.ColPins
-public import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.CountsIrreducibilityConstants
-public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.BrgStdR
-public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.IsScaleWithBoundedGamma
-public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.VanishingGramTermsBoundParams
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.AdmissibleRanksAllMembers
-public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.SzRowNumAt
-public import Development.AbelianVarietyTheory.Proofs.HeightProofs.EventuallyConstructedPointHostSizeNumerical
-public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.HypOver
+public import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.Bundle0008
+public import Formalism.LocalToGlobal.Divisibility.Bundle0007
+public import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.Bundle0007
+public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.Bundle0024
+public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.Bundle0022
+public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.Bundle0004
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0515
+public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0111
+public import Development.AbelianVarietyTheory.Proofs.HeightProofs.Bundle0073
+public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.Bundle0010
 public import Formalism.SharpRestriction.GlobalSchurBounds.GlobalRankLatticeProofs.LemmaFiveOneOfTheoremTwo
 public import Formalism.LocalToGlobal.GlobalTheory.GL5.DiscreteSeriesOfFormalDegree
-public import Formalism.SharpRestriction.ElevenLe
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.BinaryHermitianFormRepresentsTotallyPositive
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.FdegHCRowsMulSuperfactorialLeVandermondeStatement
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.CloudAddNodeLeTenBaseSizeStatement
+public import Formalism.SharpRestriction.Bundle0001
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0382
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0041
+public import Formalism.SharpRestriction.CuspSpanNormBounds.RelevantZeroGramTerms
+public import Formalism.FormalDegreeBessel.StatementDS
+public import Formalism.SharpRestriction.GlobalSchurBounds.GeneralLinearActions.Bundle0001
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0064
+public import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.Bundle0002
 
 @[expose] public section
 
@@ -339,8 +341,8 @@ theorem tr_le_of (C : Formalism.MainNotions.Inhab.FC) (hC : C.CTu = 25) (cD ch :
     have h1 : ∀ ρ ∈ (Finset.univ : Finset D.what₂.Tau), Real.log (D.dsig ρ * facProd D.R.r / vand (uColR D u ρ)) ≤
         ((D.R.k : ℝ) * D.R.m + (D.R.m : ℝ) ^ 2) * (L.sc.L + 3) := by
       intro ρ _
-      have hnb := GlobalTheory.T.cloud_add_node_le_ten_base_size C cD ch D L hv N.sizes hX ρ
-      have hP := GlobalTheory.T.fdegHC_rows_mul_superfactorial_le_vandermonde D.R (D.hc ρ) (D.hcW u ρ) (by rw [D.hcW_v]) (by rw [D.hcW_b]) (10 * L.sc.b)
+      have hnb := _root_.GlobalTheory.cloud_add_node_le_ten_b C cD ch D L hv N.sizes hX ρ
+      have hP := _root_.GlobalTheory.FdegRowsBound.fdeg_rows_le D.R (D.hc ρ) (D.hcW u ρ) (by rw [D.hcW_v]) (by rw [D.hcW_b]) (10 * L.sc.b)
         (by linarith) hnb.1 hnb.2
       have hdim := dim_weyl_pos_of_strictAnti _ (column_param_strictAnti D u ρ)
       have hvd : 0 < vand (uColR D u ρ) := by

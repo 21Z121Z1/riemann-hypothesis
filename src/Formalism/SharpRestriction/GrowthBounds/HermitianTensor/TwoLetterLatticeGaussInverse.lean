@@ -1,6 +1,6 @@
 module
 
-public import Formalism.SharpRestriction.GrowthBounds.HermitianTensor.TaIntOfRename
+public import Formalism.SharpRestriction.GrowthBounds.HermitianTensor.Bundle0007
 
 @[expose] public section
 

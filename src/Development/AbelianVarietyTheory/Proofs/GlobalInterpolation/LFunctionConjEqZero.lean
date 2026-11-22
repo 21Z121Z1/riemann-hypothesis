@@ -1,10 +1,9 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.LogDerivativeBound
-public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.NegSumLogDerivNonneg
-public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.LogDerivDirichletLFunctionLocalZeroSum
-public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.NegReLogDerivPrincipalLFunctionLe
+public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0005
+public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0015
+public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0021
 
 @[expose] public section
 

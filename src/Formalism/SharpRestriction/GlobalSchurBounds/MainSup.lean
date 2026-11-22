@@ -1,7 +1,7 @@
 module
 
-public import Formalism.SharpRestriction.GlobalSchurBounds.MainIn
-public import Formalism.SharpRestriction.GlobalTheoremInputs
+public import Formalism.SharpRestriction.GlobalSchurBounds.Bundle0002
+public import Formalism.SharpRestriction.Bundle0002
 public import Formalism.SharpRestriction.GlobalSchurBounds.FirstClaimLemmaTwoFourOfLemmaTwoThree
 public import Formalism.SharpRestriction.GlobalSchurBounds.ThickPlacesCorollaryOfAnyTranslate
 public import Formalism.SharpRestriction.GlobalSchurBounds.TopDensityNGeSixteen

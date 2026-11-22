@@ -2,11 +2,10 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.BlockTheory.CMModuli.ThetaTowerRecognition
-public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.CubNSucc
-public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.DegenerationWeilPairingProperties
-public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.NormRepGeneratorsAndThetaSeriesTerm
+public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.Bundle0032
+public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.Bundle0034
 public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.HomTransport
-public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.SummableVtQT
+public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.Bundle0036
 
 @[expose] public section
 

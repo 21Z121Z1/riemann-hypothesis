@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Formalism.LocalToGlobal.UnitaryNorms.IsUnitaryNormOf
-public import Formalism.LocalToGlobal.UnitaryNorms.UnrAe
+public import Formalism.LocalToGlobal.UnitaryNorms.Bundle0001
 
 @[expose] public section
 

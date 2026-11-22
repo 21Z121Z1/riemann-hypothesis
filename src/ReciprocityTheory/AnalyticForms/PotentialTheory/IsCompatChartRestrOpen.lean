@@ -1,8 +1,7 @@
 module
 
 public import ReciprocityTheory.AnalyticForms.PotentialTheory.MIntSumCont
-public import ReciprocityTheory.AnalyticForms.PotentialTheory.Partition
-public import ReciprocityTheory.AnalyticForms.PotentialTheory.ContDiffAtOfIsPotential
+public import ReciprocityTheory.AnalyticForms.PotentialTheory.Bundle0003
 
 @[expose] public section
 

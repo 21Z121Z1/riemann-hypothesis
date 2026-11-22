@@ -4,9 +4,9 @@ public import Mathlib
 public import Formalism.LocalRingCardinality.RhoDetPrimeEqMuTildeMulChiPow
 public import Formalism.LocalRingCardinality.AdicCompletionLocal.LocTied
 public import Formalism.SharpRestriction.LevelLetterCocycles.TableLineDegreeTwo
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.BlochKatoDimensionFormulaConcretePeriodRings
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.DeRhamComponentsCrystallineLettersFinrank
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.UnramifiedTrivialLocalStatement
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0609
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0391
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0627
 public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.CoboundaryMemBlochKatoCocycles
 
 @[expose] public section

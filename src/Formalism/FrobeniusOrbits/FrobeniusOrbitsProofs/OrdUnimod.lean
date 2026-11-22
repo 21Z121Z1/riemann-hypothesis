@@ -4,7 +4,7 @@ public import Mathlib
 public import Formalism.FrobeniusOrbits.HostThickExists
 public import Formalism.FrobeniusOrbits.RealSubfieldLeCompositum
 public import Formalism.FrobeniusOrbits.FrobeniusOrbitsProofs.Galois
-public import Formalism.FrobeniusOrbits.FrobeniusOrbitsProofs.FrobMulInertia
+public import Formalism.FrobeniusOrbits.FrobeniusOrbitsProofs.Bundle0001
 public import Formalism.FrobeniusOrbits.FrobeniusOrbitsProofs.Decomp
 public import Formalism.FrobeniusOrbits.FrobeniusOrbitsProofs.SplitK
 

@@ -1,14 +1,14 @@
 module
 
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.HeckePairTop
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.TameParahoricRepSplitsAsProduct
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.Bundle0018
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0195
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.IwJqEmbed
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.IwJqMult
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.IwJqInj
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.Bundle0034
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.IwJqTheta
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.IwThetaEx
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.IwMemIwC
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.IwHeckePairIwC
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.Bundle0032
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.Bundle0022
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.Bundle0023
 
 @[expose] public section
 

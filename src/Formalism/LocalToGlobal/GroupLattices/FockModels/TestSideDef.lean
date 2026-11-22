@@ -1,6 +1,6 @@
 module
 
-public import Formalism.LocalToGlobal.GroupLattices.FockModels.TestSideEdge
+public import Formalism.LocalToGlobal.GroupLattices.FockModels.Bundle0002
 
 @[expose] public section
 

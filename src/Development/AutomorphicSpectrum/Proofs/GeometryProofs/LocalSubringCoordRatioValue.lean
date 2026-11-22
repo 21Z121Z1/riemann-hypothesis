@@ -2,8 +2,8 @@ module
 
 public import Mathlib
 public import Development.AutomorphicSpectrum.Definitions.MetricPeriods.HasMultiplier
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.MemPtsOverOfMemMcPts
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.OneMemChartLatNm
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0262
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0066
 
 @[expose] public section
 

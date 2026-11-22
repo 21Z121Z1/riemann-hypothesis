@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import ReciprocityTheory.DualLattices.VEqZeroOfPowEqOne
+public import ReciprocityTheory.DualLattices.Bundle0003
 
 @[expose] public section
 

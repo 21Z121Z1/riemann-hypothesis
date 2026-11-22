@@ -1,7 +1,7 @@
 module
 
 public import Formalism.HermitianCurvature.HermitianCurvatureProofs.FubiniHeadLastPart
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.StabilizerBlockPoint
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0004
 public import Formalism.HermitianCurvature.HermitianCurvatureProofs.ContinuousInvUpper
 
 @[expose] public section

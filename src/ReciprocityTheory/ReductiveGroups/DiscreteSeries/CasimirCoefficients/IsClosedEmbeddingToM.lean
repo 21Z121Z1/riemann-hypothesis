@@ -1,7 +1,7 @@
 module
 
 public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.DefsRep
-public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.IsClosedEmbeddingToM
+public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0038
 
 @[expose] public section
 

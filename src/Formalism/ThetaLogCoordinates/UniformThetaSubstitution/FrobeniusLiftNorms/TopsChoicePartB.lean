@@ -3,7 +3,7 @@ module
 public import Mathlib
 public import Formalism.ThetaLogCoordinates.UniformThetaSubstitution.OddLogRelation
 public import Formalism.GaussJetBounds.GaussJetProofs.LogarithmWeightComparison
-public import Formalism.FormalGroupWitt.FormalGroupWittProofs.IntegralSubstVector
+public import Formalism.FormalGroupWitt.FormalGroupWittProofs.Bundle0001
 public import Formalism.ThetaLogCoordinates.UniformThetaSubstitution.FrobeniusLiftNorms.TopsChoicePartA
 
 @[expose] public section

@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Formalism.PeriodIntegrals.SplitIntLoc
+public import Formalism.PeriodIntegrals.Bundle0007
 
 @[expose] public section
 

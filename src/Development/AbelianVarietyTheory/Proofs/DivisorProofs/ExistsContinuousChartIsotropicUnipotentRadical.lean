@@ -1,18 +1,16 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Divisors.ScalesBy
-public import Development.AbelianVarietyTheory.Definitions.Divisors.IsLv
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsFrOfIsotropic
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnipotentRadicalCoordinatesGroupLaw
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsUnipotentFrameCoordsOfMemIsotropicUnipoten
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsUnipotentRadicalPointWithCoords
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsLeviSectionIsotropicFrame
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsotropicFrameDecompositionSubgroupProperties
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WittFrameLeviNormalizesRadicalProperties
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SemidirectHaarMeasureProduct
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.MulVecCEApply
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MemSkewA
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0049
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1519
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1568
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1554
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1551
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1531
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1542
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1738
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0115
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1533
 
 @[expose] public section
 

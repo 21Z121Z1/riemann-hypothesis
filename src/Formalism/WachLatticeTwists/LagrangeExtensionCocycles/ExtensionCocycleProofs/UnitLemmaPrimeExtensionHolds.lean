@@ -1,8 +1,8 @@
 module
 
 public import Formalism.WachLatticeTwists.LagrangeExtensionCocycles.StatWPrimeExt
-public import Formalism.WachLatticeTwists.LagrangeExtensionCocycles.ExtensionCocycleProofs.Letters
-public import Formalism.WachLatticeTwists.LagrangeExtensionCocycles.ExtensionCocycleProofs.ResidueSeriesExpansionHolds
+public import Formalism.WachLatticeTwists.LagrangeExtensionCocycles.ExtensionCocycleProofs.Bundle0004
+public import Formalism.WachLatticeTwists.LagrangeExtensionCocycles.ExtensionCocycleProofs.Bundle0002
 
 @[expose] public section
 

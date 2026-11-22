@@ -2,8 +2,8 @@ module
 
 public import Mathlib
 public import GroundTheory.HeightsAndTheta.Heights.ChowForms.StatementsSectionOrder
-public import GroundTheory.HeightsAndTheta.Heights.ChowForms.PFGNullstellensatz
-public import GroundTheory.HeightsAndTheta.Heights.ChowForms.PChowFormMultiHomog
+public import GroundTheory.HeightsAndTheta.Heights.ChowForms.Bundle0003
+public import GroundTheory.HeightsAndTheta.Heights.ChowForms.Bundle0008
 
 @[expose] public section
 

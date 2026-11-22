@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.CoherentCohomologyProofs.AlternatingMapSumSmulEqDetSmul
+public import Development.AbelianVarietyTheory.Proofs.CoherentCohomologyProofs.Bundle0001
 
 @[expose] public section
 

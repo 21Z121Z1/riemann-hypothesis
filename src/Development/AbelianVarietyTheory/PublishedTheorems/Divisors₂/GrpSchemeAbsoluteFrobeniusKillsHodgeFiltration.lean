@@ -1,11 +1,11 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.PoincareDeRhamDuality
-public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.CrysToDRBijective
+public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.Bundle0022
+public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.Bundle0006
 public import Development.AbelianVarietyTheory.Definitions.Divisors.IsQuasicoherentEigenQuot
-public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.IsPerfectOfIsDual
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsDeRhamSheafIffAlt
+public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.Bundle0023
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2091
 
 @[expose] public section
 

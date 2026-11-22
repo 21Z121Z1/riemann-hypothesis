@@ -1,7 +1,7 @@
 module
 
-public import Formalism.MahlerMeasure.HasOrder
-public import Formalism.MahlerMeasure.FinalM
+public import Formalism.MahlerMeasure.Bundle0004
+public import Formalism.MahlerMeasure.Bundle0005
 public import Formalism.MahlerMeasure.MahlerMeasureProofs.FreezeInto
 
 @[expose] public section

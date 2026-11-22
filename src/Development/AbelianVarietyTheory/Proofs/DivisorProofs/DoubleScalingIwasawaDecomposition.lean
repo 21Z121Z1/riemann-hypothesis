@@ -1,11 +1,11 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IndicatorIntMMemSB
-public import Development.AbelianVarietyTheory.Definitions.Divisors.DiscreteSeriesHermitianUnique
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaActionExistsStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FromBlocksSubOne
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.FinPartIdemMulMemIff
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1000
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0041
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1843
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1875
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0303
 
 @[expose] public section
 

@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsSectionNormSqExtension
+public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0078
 
 @[expose] public section
 

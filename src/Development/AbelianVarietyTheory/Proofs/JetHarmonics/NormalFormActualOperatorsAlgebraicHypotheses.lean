@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Jets.SameFns
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.ActualAlgebraFacts
+public import Development.AbelianVarietyTheory.Definitions.Jets.Bundle0002
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0155
 public import Formalism.HermitianCurvature.HermitianCurvatureProofs.DiagonalTransferAction
 
 @[expose] public section

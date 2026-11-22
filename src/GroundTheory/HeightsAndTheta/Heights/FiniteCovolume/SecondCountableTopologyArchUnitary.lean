@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import GroundTheory.HeightsAndTheta.Heights.FiniteCovolume.MajorantInvolutionDiagonalForm
+public import GroundTheory.HeightsAndTheta.Heights.FiniteCovolume.Bundle0004
 
 @[expose] public section
 

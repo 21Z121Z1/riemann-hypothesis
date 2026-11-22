@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.EtaleCohomology.EtaleSheaves.CoverIntegralClosure
+public import Development.EtaleCohomology.EtaleSheaves.Bundle0004
 
 @[expose] public section
 

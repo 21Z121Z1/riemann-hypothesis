@@ -2,10 +2,10 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.FirstIndexEqOfUnfolded
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsInverseBlock
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.CmTypeLetterFrameColumnDictionary
-public import Development.AbelianVarietyTheory.Proofs.GenericRegularity.TriangularFrameChangeOfTriangularPeriod
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArakelovVolumes.UpperBounds.ExhaustFStatementPfC
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0056
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0032
+public import Development.AbelianVarietyTheory.Proofs.GenericRegularity.Bundle0016
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArakelovVolumes.UpperBounds.Bundle0011
 
 @[expose] public section
 

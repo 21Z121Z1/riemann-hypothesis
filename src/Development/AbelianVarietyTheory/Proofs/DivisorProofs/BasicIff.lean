@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ComapBcComp
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0009
 
 @[expose] public section
 

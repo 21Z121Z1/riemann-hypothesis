@@ -1,7 +1,7 @@
 module
 
 public import Formalism.LocalToGlobal.UnitaryNorms.UnramT
-public import Formalism.LocalToGlobal.GlobalTheory.GL6.PBwLocInd
+public import Formalism.LocalToGlobal.GlobalTheory.GL6.Bundle0007
 
 @[expose] public section
 

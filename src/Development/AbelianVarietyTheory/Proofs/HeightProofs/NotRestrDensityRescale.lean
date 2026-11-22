@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Formalism.LocalToGlobal.ProjectiveLattices.AxHLAM
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0031
 public import Development.AbelianVarietyTheory.BlockTheory.HeightDefect.FrameNormRestrictedDensity
-public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.ConjCmHostRootNeSelf
+public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0150
 
 @[expose] public section
 

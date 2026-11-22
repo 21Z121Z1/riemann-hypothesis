@@ -1,8 +1,8 @@
 module
 
-public import Formalism.LocalToGlobal.HermitianColumns.StarConj
+public import Formalism.LocalToGlobal.HermitianColumns.Bundle0004
 public import Formalism.LocalToGlobal.HermitianForms.FormsTied
-public import Formalism.LocalToGlobal.HermitianForms.DefsChi
+public import Formalism.LocalToGlobal.HermitianForms.Bundle0002
 
 @[expose] public section
 

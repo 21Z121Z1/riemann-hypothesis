@@ -3,15 +3,15 @@ module
 public import Mathlib
 public import Formalism.LocalToGlobal.BesselHermitianTheta.AllTied
 public import Formalism.LocalRingCardinality.RankBoundMonotoneInDimension
-public import Development.AbelianVarietyTheory.BlockTheory.HeightDefect.OmegaUpDownForms
+public import Development.AbelianVarietyTheory.BlockTheory.HeightDefect.Bundle0005
 public import Development.AbelianVarietyTheory.Proofs.HeightProofs.MemberDatumOfFlagTie
 public import Development.AbelianVarietyTheory.Proofs.HeightProofs.EqNegOfCommute
-public import Development.AbelianVarietyTheory.Proofs.HeightProofs.ExistsSubmoduleThetaFunctions
-public import Development.AbelianVarietyTheory.Proofs.HeightProofs.HaarUpqEqOfOmegaDensity
+public import Development.AbelianVarietyTheory.Proofs.HeightProofs.Bundle0023
+public import Development.AbelianVarietyTheory.Proofs.HeightProofs.Bundle0019
 public import Development.AbelianVarietyTheory.Proofs.HeightProofs.IsFundamentalDomainOfHaar
 public import Development.AbelianVarietyTheory.Proofs.HeightProofs.IsCuspFunIffConstTerm
-public import Development.AbelianVarietyTheory.Counterexamples.HeightSurvey.NotHasInfExpThird
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsIsInfFamFamily
+public import Development.AbelianVarietyTheory.Counterexamples.HeightSurvey.Bundle0002
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0126
 public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.DiagSingleSingle
 
 @[expose] public section
@@ -120,9 +120,9 @@ def KfinS (ψ : AddChar (AF D.host.F) ℂ) (θ : InfF D) (Dc : OrthDec D) (V W :
 theorem OrthDec.exists_rel (Dc : OrthDec D) {V : HSp D} (hV : V.SigOK) :
     ∃ s : GlobalTheory.IndefiniteRowSideFullHecke.FockOrthogonalDecomposition.InvFam V, ∀ τ, GlobalTheory.FockCompare.Rel V τ (Dc.cpt V τ) (s τ) := by
   classical
-  obtain ⟨b, hb⟩ := (GlobalTheory.T.frame_basis_matrix_orthogonal_properties D V).1 _ (Dc.bas_unit V hV)
+  obtain ⟨b, hb⟩ := (_root_.GlobalTheory.FockBasisMatrix.basis_matrix D V).1 _ (Dc.bas_unit V hV)
   have ho : ∀ i j, i ≠ j → V.hT (b i) (b j) = 0 := fun i j hij => by
-    rw [← ((GlobalTheory.T.frame_basis_matrix_orthogonal_properties D V).2 b).2.1 i j, ← hb]
+    rw [← ((_root_.GlobalTheory.FockBasisMatrix.basis_matrix D V).2 b).2.1 i j, ← hb]
     exact Dc.bas_orth V hV i j hij
   refine ⟨fun τ => b.constr D.host.E fun i => if 0 < (tauE D τ (V.hT (b i) (b i))).re then b i else -b i, fun τ =>
     GlobalTheory.FockCompare.rel_of_monomial hV τ b ho (fun i => b.constr_basis _ _ i) (Dc.cpt_gram V hV τ) ?_⟩

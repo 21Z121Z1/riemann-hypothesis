@@ -1,10 +1,10 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HeisOApplyZero
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0811
 public import Development.AbelianVarietyTheory.Proofs.HeightProofs.IsCuspFunIffConstTerm
 public import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.CovolOneIntegralAdd
-public import Formalism.LocalToGlobal.IndefiniteReal.LevelTypeEquivalence.GinfCSecondCountable
+public import Formalism.LocalToGlobal.IndefiniteReal.LevelTypeEquivalence.Bundle0003
 
 @[expose] public section
 

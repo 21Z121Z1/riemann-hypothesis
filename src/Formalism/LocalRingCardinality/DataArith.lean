@@ -3,7 +3,7 @@ module
 public import Mathlib
 public import Formalism.LocalRingCardinality.Params
 public import Formalism.HarderNarasimhan.StatementPl
-public import Formalism.HarderNarasimhan.QuotRealize
+public import Formalism.HarderNarasimhan.Bundle0001
 public import Formalism.CorankShare.StatementFR
 
 @[expose] public section

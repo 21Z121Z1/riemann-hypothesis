@@ -4,7 +4,7 @@ public import Mathlib
 public import Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.PerfectoidPullbacks.Coords
 public import Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.CechPairings.Imports
 public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.NegOnePowBoundaryTermsCancel
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CupAssocC
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0101
 
 @[expose] public section
 

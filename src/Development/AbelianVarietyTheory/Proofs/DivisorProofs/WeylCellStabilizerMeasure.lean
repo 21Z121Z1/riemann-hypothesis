@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConvUAbsU
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MemWeylCellUnitaryGroupLongSimpleReflectionIff
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1094
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1158
 
 @[expose] public section
 

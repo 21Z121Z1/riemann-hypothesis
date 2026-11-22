@@ -1,11 +1,9 @@
 module
 
 public import Mathlib
-public import Formalism.LogFactorialIndices.StatementSize
-public import Formalism.LogFactorialIndices.StatementIdx
-public import Formalism.LogFactorialIndices.SignedSubspaceIndex.IdxBase
+public import Formalism.LogFactorialIndices.Bundle0001
+public import Formalism.LogFactorialIndices.SignedSubspaceIndex.Bundle0001
 public import Formalism.LogFactorialIndices.SignedSubspaceIndex.IdxDet
-public import Formalism.LogFactorialIndices.SignedSubspaceIndex.SubspaceLatticeIndex
 
 @[expose] public section
 

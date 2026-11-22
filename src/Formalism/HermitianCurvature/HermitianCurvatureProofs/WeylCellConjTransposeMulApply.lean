@@ -4,8 +4,7 @@ public import Formalism.HermitianCurvature.StatementQ
 public import Formalism.HermitianCurvature.HermitianCurvatureProofs.RegularisedPairingViaPhase
 public import Formalism.FormalDegreeBessel.FormalDegreeRatio.UnitaryWeylNormalHolds
 public import Formalism.FormalDegreeBessel.FormalDegreeRatio.GBasic
-public import Formalism.RealPlaceAnalysis.RealPlaceTaylor.CartanInvolutionConjTransposeMul
-public import Formalism.RealPlaceAnalysis.RealPlaceTaylor.ComplexifiedDerivativeCommutator
+public import Formalism.RealPlaceAnalysis.RealPlaceTaylor.Bundle0003
 
 @[expose] public section
 

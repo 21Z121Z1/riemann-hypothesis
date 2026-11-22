@@ -1,7 +1,7 @@
 module
 
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.AutomorphyLifting.UnitaryGaloisFamilies.IrrCaseT
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.BuildingsResidueChars.SumTwoOfHodgeTate
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.BuildingsResidueChars.Bundle0058
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.PadicHodgeTheory.PstExact
 
 @[expose] public section
@@ -122,6 +122,6 @@ private theorem isPstAt_sum (T : LocTied l P AI) {r : ↥Gw →* GL (Fin a) (Om 
   have n₁ := m₁.enlarge l₁
   have n₂ := m₂.enlarge l₂
   exact ⟨supExt L₁ L₂, _, ⟨n₁.1, by rw [GlobalTheory.Pst.SumParam.mapRep_sumRep, n₁.2, n₂.2]⟩,
-    isPst_sum Bw T _ _ (GlobalTheory.T.isPotentiallySemistable_coefficientField_enlarge P Bw l₁ r₁ p₁) (GlobalTheory.T.isPotentiallySemistable_coefficientField_enlarge P Bw l₂ r₂ p₂)⟩
+    isPst_sum Bw T _ _ (_root_.GlobalTheory.PstExt.isPst_enlarge P Bw l₁ r₁ p₁) (_root_.GlobalTheory.PstExt.isPst_enlarge P Bw l₂ r₂ p₂)⟩
 
 end Sum

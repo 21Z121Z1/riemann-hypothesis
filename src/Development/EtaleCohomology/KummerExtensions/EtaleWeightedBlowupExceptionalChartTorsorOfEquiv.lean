@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Development.EtaleCohomology.CohomologicalPurity.LeafWEqvLPf
-public import Development.EtaleCohomology.CohomologicalPurity.LeafWCechRec
+public import Development.EtaleCohomology.CohomologicalPurity.Bundle0027
+public import Development.EtaleCohomology.CohomologicalPurity.Bundle0030
 
 @[expose] public section
 

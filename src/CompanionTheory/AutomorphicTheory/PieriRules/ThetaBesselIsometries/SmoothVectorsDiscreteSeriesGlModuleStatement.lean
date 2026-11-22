@@ -1,11 +1,11 @@
 module
 
 public import Mathlib
-public import CompanionTheory.AutomorphicTheory.PieriRules.ThetaBesselIsometries.SmoothVectorsDiscreteSeriesGlModule
+public import CompanionTheory.AutomorphicTheory.PieriRules.ThetaBesselIsometries.Bundle0008
 public import CompanionTheory.AutomorphicTheory.PieriRules.PieriDegreeBounds.Imports
 public import Development.AbelianVarietyTheory.Definitions.Jets.SumIoPr
-public import Formalism.RealPlaceAnalysis.StatementE
-public import Formalism.RealPlaceAnalysis.StatementKT
+public import Formalism.RealPlaceAnalysis.Bundle0003
+public import Formalism.RealPlaceAnalysis.Bundle0002
 public import CompanionTheory.AutomorphicTheory.PieriRules.ThetaBesselIsometries.IsDSOfIsDG
 
 @[expose] public section

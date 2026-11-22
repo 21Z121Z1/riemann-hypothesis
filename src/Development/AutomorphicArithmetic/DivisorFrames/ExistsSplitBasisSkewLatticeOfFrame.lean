@@ -1,11 +1,11 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicArithmetic.LocalEmbeddings.StageGeoDefs
-public import Development.AbelianVarietyTheory.Statements.PlaceShiftStatements.NormSmall
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.RatInOfUnit
-public import Development.AbelianVarietyTheory.Definitions.Divisors.DiscreteSeriesHermitianUnique
-public import Development.AutomorphicArithmetic.DivisorFrames.ExistsMaxCompactEqFrameGramSplitBasis
+public import Development.AutomorphicArithmetic.LocalEmbeddings.Bundle0002
+public import Development.AbelianVarietyTheory.Statements.PlaceShiftStatements.Bundle0002
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0142
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0041
+public import Development.AutomorphicArithmetic.DivisorFrames.Bundle0007
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsPureTensorSumDatumRouteThroughSmallVertex
 
 @[expose] public section

@@ -1,6 +1,6 @@
 module
 
-public import Formalism.PieriBlockIdeals.ExZTranslate
+public import Formalism.PieriBlockIdeals.Bundle0004
 public import Formalism.PieriBlockIdeals.PieriColumnMinors.ProdInitialMinorsMemDetSpan
 
 @[expose] public section

@@ -1,25 +1,30 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.NodeAgree
-public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.NormalFam
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0250
+public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.Bundle0015
 public import Formalism.LocalToGlobal.IndefiniteReal.LinksLemmas
 public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.AdmissibleDiscreteSeriesOfHasParam
 public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.HarishChandraModulesOn
-public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.DiscreteSeriesUpqExistsIffDsExists
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsUniformRealThetaIntertwinerChainStep
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IsItWOfGlobIt
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.CartFrSgn
+public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.Bundle0003
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0401
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0227
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0221
 public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.RealThetaIntertwinerAdjointIsRealThetaIntertwine
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.HasInfExpIffHasInfQ
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0433
 public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.LocLineOfMatches
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsRealIntertwinerContractionOnePlaceStatement
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsRealPlaceThetaObjectsTheoremARPartsStatement
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ThetaModelsAreCoverDiscreteSeriesOfHarishChandraStatement
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ThetaVacuumCharactersRealPlacesStatement
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.GluingLawHoldsStatement
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.KFiniteVectorsDiscreteSeriesSmoothAbsolutelyIrre
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.DiscreteSeriesPureInnerProductsTensorProduct
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsRealIntertwinerContractionOnePlace
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0174
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0191
+public import Formalism.SharpRestriction.Divisibility.SchurIrreducible
+public import Formalism.LocalToGlobal.BesselHermitianTheta.Bundle0001
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0211
+public import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.Bundle0013
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0389
+public import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.Bundle0014
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0194
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0156
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0135
 
 @[expose] public section
 
@@ -85,10 +90,10 @@ theorem exists_adj_glue {V W : HSp D} {S S' : D.what₂.Tau → SPar} (M : DSMod
       ellT M (fun τ => (w τ : M.H τ)) (inclT M (It (glue Ps) (PiTensorProduct.tprod ℂ v))) =
         conj (ellT M' (fun τ => (v τ : M'.H τ)) (inclT M' u)) := by
   classical
-  obtain ⟨X, hX, -, -, -, -, h3, -⟩ := GlobalTheory.T.exists_provA_discreteSeries_archimedeanRallis hC hH
-  have hB := GlobalTheory.T.thetaModels_are_coverDiscreteSeries_of_harishChandra hC hH D
+  obtain ⟨X, hX, -, -, -, -, h3, -⟩ := _root_.GlobalTheory.RealPlaceTheta.exists_record_theta hC hH
+  have hB := _root_.GlobalTheory.CoverModel.modelsAreCoverSeries_all hC hH D
   obtain ⟨χS, χT, hωd, he⟩ := hω
-  have hv := fun τ => GlobalTheory.T.thetaVacuumCharacters_realPlaces D V W _ _ M M' θ ψ χS χT ω f τ _ _ hθ hωd (he τ).1 (he τ).2 hf
+  have hv := fun τ => _root_.GlobalTheory.VacuumCharacter.vacChar D V W _ _ M M' θ ψ χS χT ω f τ _ _ hθ hωd (he τ).1 (he τ).2 hf
   have key : ∀ τ, ∃ A₀ : LPol W.rank V.rank →ₗ[ℂ] M'.sm τ →ₗ[ℂ] M.H τ,
       ∀ A, LocW M M' τ (aS τ) (aT τ) A → ∃ c : ℂ, A = c • A₀ := fun τ => by
     obtain ⟨t, al, be, ga, de, hd, e1, e2⟩ := hP τ
@@ -99,7 +104,7 @@ theorem exists_adj_glue {V W : HSp D} {S S' : D.what₂.Tau → SPar} (M : DSMod
   have part : ∀ τ a, ∃ B : LPol W.rank V.rank →ₗ[ℂ] M'.sm τ →ₗ[ℂ] M.H τ, LocW M M' τ (aS τ) (aT τ) B ∧
       ∀ x, Fn (Function.update a τ x) = ⟪x.2.2, B x.1 x.2.1⟫_ℂ := by
     intro τ a
-    obtain ⟨A, hA, hA'⟩ := GlobalTheory.T.exists_realIntertwiner_contraction_one_place D V W _ _ M M' θ ψ ω f τ _ _ It hθ (hv τ).2.1 (hv τ).2.2 hI
+    obtain ⟨A, hA, hA'⟩ := _root_.GlobalTheory.Chain.RealLine.Semi.exists_semiW D V W _ _ M M' θ ψ ω f τ _ _ It hθ (hv τ).2.1 (hv τ).2.2 hI
       (fun ρ => (a ρ).2.1) (fun ρ => (a ρ).2.2)
     obtain ⟨j, hj⟩ := exists_ins (fun ρ => (a ρ).1) τ
     refine ⟨A ∘ₗ j, locW_of_semiW hA hj, fun x => ?_⟩
@@ -228,7 +233,7 @@ theorem adjoint_smooth : ∀ {D : D7} {V W : HSp D} {S S' : D.what₂.Tau → SP
     intro P w
     have hP' : P ∈ Submodule.span ℂ
         (Set.range (glue : (D.what₂.Tau → LPol W.rank V.rank) → PolF D W.rank V.rank)) := by
-      rw [(GlobalTheory.T.gluing_law_holds D V.rank W.rank).1]
+      rw [(_root_.GlobalTheory.Chain.RealIt.GlueProof.glueLaw D V.rank W.rank).1]
       trivial
     induction hP' using Submodule.span_induction with
     | mem P hP' =>

@@ -1,19 +1,18 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.JEvExists
+public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.Bundle0012
 public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.CoefMapNormEquivariantBasisOfPre
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.OscillatorModelValuesFirst
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1635
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.OscillatorModelValuesSecond
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.OscillatorModelValuesSixth
-public import Development.AbelianVarietyTheory.Definitions.Divisors.GenReads
-public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.ThExprUniqOfChartIndep2
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsLevelOfLinearMap
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ClsAt
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.OscillatorModelValuesFifth
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0034
+public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0007
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0440
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0220
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DictionaryComponentFrameMarkingUniformisation
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LevelFormCompatBaseEmbedding
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.LevelMapExtension
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1004
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0452
 
 @[expose] public section
 
@@ -119,7 +118,7 @@ theorem om_lift_vac_ofPre (hR : GlobalTheory.RealGeo.PreChar R) (i : Fin D.R.m) 
     fun hk => GlobalTheory.MovedLat.actO_mem (Vc D i) (Wc D i) 1 _ (R.ΛV i) (R.ΛV i) (R.ΛW i) (R.ΛW i)
       (fun z hz => by rw [map_one, Units.val_one, Matrix.one_mulVec]; exact hz)
       (fun z hz => by rw [← hl] at hz ⊢; exact GlobalTheory.DictMove.mulVec_mem_latHat (hR.lev.βW i) hk hz)
-  refine GlobalTheory.T.weilRep_lattice_stabilizer_vacuum_eq_det_char_smul D _ _ _ _ _ _ _ hP mu (hχ ▸ hmu) H _ _ hV0 sV sW _
+  refine _root_.GlobalTheory.VacStab.om_vacuum_eq_smul D _ _ _ _ _ _ _ hP mu (hχ ▸ hmu) H _ _ hV0 sV sW _
     (GlobalTheory.FrameEquiv.isCartanInv_cart_model (R.MW i (sg0 D A))) _ (hR.thP.vP i A.μ0).1 k hk.1 fun u => ⟨mv hk u, fun hu => ?_⟩
   have h := mv (GlobalTheory.ProjComm.isLift_inv hk) _ hu
   rw [actO_one_left, actO_one_left, ← Matrix.mul_assoc] at h

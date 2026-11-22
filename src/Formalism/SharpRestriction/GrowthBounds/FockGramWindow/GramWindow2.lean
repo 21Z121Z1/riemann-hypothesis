@@ -1,9 +1,9 @@
 module
 
-public import Formalism.SharpRestriction.GrowthBounds.MonomialFactorials.BejjSmulLeft
+public import Formalism.SharpRestriction.GrowthBounds.MonomialFactorials.Bundle0013
 public import Formalism.MahlerMeasure.MahlerMeasureProofs.MeanGam
-public import Formalism.MahlerMeasure.CoarseLevelSlackInequalities
-public import Formalism.MahlerMeasure.FinalD
+public import Formalism.MahlerMeasure.Bundle0007
+public import Formalism.MahlerMeasure.Bundle0006
 
 @[expose] public section
 

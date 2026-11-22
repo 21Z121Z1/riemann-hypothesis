@@ -1,8 +1,8 @@
 module
 
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.Rationality.QCoreH
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.Rationality.QuotShiftPf
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.Rationality.FreeQuotPf
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.Rationality.Bundle0004
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.Rationality.Bundle0003
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.Rationality.Bundle0002
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.Rationality.LocalLengthAverage
 
 @[expose] public section

@@ -1,16 +1,15 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.OnePlaceKF
+public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.Bundle0010
 public import Development.AbelianVarietyTheory.Definitions.Jets.SideFam
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.CellDataSupport
-public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.HaarEqSmul
-public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.DiscreteSeriesUnitarySmoothBasic
-public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.IsHaarOnIffGroupsUnitaryUnipotent
-public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.GrowthUnitaryGroupRpowNegIntegrable
-public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.BesselCharacterUnipotentRadicalProperties
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0260
+public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0056
+public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0069
+public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0049
+public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0045
 public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.UnipotentRadicalInterConjugateClosedUnimodular
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.SumNormSqEqTrace
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0120
 
 @[expose] public section
 

@@ -1,8 +1,8 @@
 module
 
 public import Development.AbelianVarietyTheory.Definitions.Divisors.BadElt
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FinrankRangeMulLeftIdempotentGroupAlgebra
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.UnitriSubOnePow
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0517
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0120
 public import Formalism.LocalToGlobal.Divisibility.ProjLemmas
 
 @[expose] public section

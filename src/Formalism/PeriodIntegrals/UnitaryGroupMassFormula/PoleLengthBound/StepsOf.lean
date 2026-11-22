@@ -1,14 +1,13 @@
 module
 
-public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.PoleLengthBound.AALeAAp
-public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.PoleLengthBound.Assemble
+public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.PoleLengthBound.Bundle0001
+public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.PoleLengthBound.Bundle0003
 public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.PoleLengthBound.LiftMul
-public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.PoleLengthBound.PiBallFrom
+public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.PoleLengthBound.Bundle0002
 public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.PoleLengthBound.Closed
 public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.PoleLengthBound.Taylor
-public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.PoleLengthBound.PiLenHolds
-public import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.FiltLenF
-public import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.SumAntidiagonalTuple
+public import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.Bundle0002
+public import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.Bundle0001
 
 @[expose] public section
 

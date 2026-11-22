@@ -1,10 +1,10 @@
 module
 
 public import Development.WeilBound.CoreStatements.CompactAveragingSplitting.EigenvectorLifting.VaceigenDual
-public import Development.WeilBound.CoreStatements.LocalThetaKernels.IwasFrame
+public import Development.WeilBound.CoreStatements.LocalThetaKernels.Bundle0001
 public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsDualFamilyOfIsLattice
-public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.ExistsSubConjNotMem
-public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.DisjointSpanPerpLat
+public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0023
+public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0018
 
 @[expose] public section
 

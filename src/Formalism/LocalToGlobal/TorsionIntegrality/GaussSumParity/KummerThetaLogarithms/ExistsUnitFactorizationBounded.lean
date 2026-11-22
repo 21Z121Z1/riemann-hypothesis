@@ -1,7 +1,7 @@
 module
 
-public import Formalism.LocalToGlobal.TorsionIntegrality.GaussSumParity.RingAFacts
-public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.NormRingALe
+public import Formalism.LocalToGlobal.TorsionIntegrality.GaussSumParity.Bundle0002
+public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0048
 
 @[expose] public section
 

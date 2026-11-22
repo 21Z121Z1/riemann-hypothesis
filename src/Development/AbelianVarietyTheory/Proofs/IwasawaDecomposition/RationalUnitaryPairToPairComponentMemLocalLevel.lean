@@ -2,9 +2,9 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.GlESymmApply
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.UnitaryCompletionMapsDualLattices
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.DualLatticeBidual
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ClassLatticeSupPrimeDualLocalizationEq
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0159
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0152
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0170
 
 @[expose] public section
 

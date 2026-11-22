@@ -1,7 +1,7 @@
 module
 
-public import Formalism.SharpRestriction.GrowthBounds.RootWeights.IsotypicComponentLeLowerWeights
-public import Formalism.SharpRestriction.GrowthBounds.RootWeights.CrAevalStable
+public import Formalism.SharpRestriction.GrowthBounds.RootWeights.Bundle0020
+public import Formalism.SharpRestriction.GrowthBounds.RootWeights.Bundle0016
 
 @[expose] public section
 

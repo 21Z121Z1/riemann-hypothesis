@@ -2,10 +2,10 @@ module
 
 public import Mathlib
 public import ReciprocityTheory.AnalyticForms.AnalyticCharts.Osgood
-public import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StTubeDeepAreaCount
-public import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StIsolatedPointsCount
+public import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.Bundle0083
+public import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.Bundle0022
 public import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.PSheetAreaCompare
-public import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.PAreaMultiplicityWeight
+public import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.Bundle0007
 
 @[expose] public section
 

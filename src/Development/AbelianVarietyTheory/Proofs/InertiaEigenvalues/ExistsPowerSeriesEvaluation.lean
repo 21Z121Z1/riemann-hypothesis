@@ -2,10 +2,10 @@ module
 
 public import Mathlib
 public import Formalism.LocalRingCardinality.RhoDetPrimeEqMuTildeMulChiPow
-public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.NotFullBot
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.MemRangeOfIsIntegral
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsInvFilD
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.MemFilPIffEvPt
+public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0004
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0282
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0220
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0259
 
 @[expose] public section
 

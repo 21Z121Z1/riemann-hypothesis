@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CasKOp
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EqZeroOfMemWeakIn
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0709
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1176
 
 @[expose] public section
 

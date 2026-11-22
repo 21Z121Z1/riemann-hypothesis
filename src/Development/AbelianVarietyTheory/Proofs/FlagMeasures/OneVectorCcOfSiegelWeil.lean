@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.SiegelMeanCc
-public import Formalism.UnipotentAdelicQuotients.SiegelWeilUnitaryConvergent
+public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.Bundle0013
+public import Formalism.UnipotentAdelicQuotients.Bundle0003
 
 @[expose] public section
 

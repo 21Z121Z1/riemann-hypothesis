@@ -1,6 +1,6 @@
 module
 
-public import Formalism.SharpRestriction.GrowthBounds.CoarseMultiplicity.ChainEmbInj
+public import Formalism.SharpRestriction.GrowthBounds.CoarseMultiplicity.Bundle0013
 
 @[expose] public section
 

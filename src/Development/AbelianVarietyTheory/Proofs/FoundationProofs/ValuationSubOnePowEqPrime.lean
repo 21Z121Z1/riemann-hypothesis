@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Foundations.CosetTrace
+public import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0001
 
 @[expose] public section
 

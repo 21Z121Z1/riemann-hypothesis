@@ -4,9 +4,9 @@ public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.HeightFunctions.NormComparisonConstants
 public import Formalism.LocalToGlobal.ProjectiveLattices.DepthTie
 public import Development.AbelianVarietyTheory.Definitions.Jets.EmbShortThLeThetaPlain
-public import Development.AbelianVarietyTheory.Definitions.ExistenceOfLattices.CoeSelfDualLatticeInFrameCoordinatesEq
-public import Development.AbelianVarietyTheory.Proofs.HeightProofs.JacobiSymEqOneOfDvdLevel
-public import Development.AbelianVarietyTheory.Proofs.HeightProofs.FunctionFieldAlgClosedLevel
+public import Development.AbelianVarietyTheory.Definitions.ExistenceOfLattices.Bundle0001
+public import Development.AbelianVarietyTheory.Proofs.HeightProofs.Bundle0071
+public import Development.AbelianVarietyTheory.Proofs.HeightProofs.Bundle0070
 
 @[expose] public section
 

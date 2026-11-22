@@ -3,12 +3,12 @@ module
 public import Mathlib
 public import Formalism.LocalRingCardinality.AdicCompletionLocal.LocTied
 public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.ExistsOfLayers
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.NormUnitPowSubOne
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0224
 public import Formalism.SharpRestriction.LevelLetterCocycles.LocalSituation
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FinrankCyclotomicExtAndCyclotomicCharSurjective
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.NormPowSubOneOfNotDvd
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.LocPrimeVNormalised
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsIntegralCyclotomicChar
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0159
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0123
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0258
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0219
 
 @[expose] public section
 

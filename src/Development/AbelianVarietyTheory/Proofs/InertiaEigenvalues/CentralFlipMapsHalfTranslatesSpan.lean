@@ -1,11 +1,11 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsFlipDet
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FlipIdxNeZero
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IdemSumMulOfSubset
-public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.OmVacuumEqSplitFacSmulSum
-public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.SmulMemLatO
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0788
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0798
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0479
+public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.Bundle0070
+public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.Bundle0058
 
 @[expose] public section
 

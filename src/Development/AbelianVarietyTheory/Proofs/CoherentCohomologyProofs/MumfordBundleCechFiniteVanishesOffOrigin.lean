@@ -5,11 +5,11 @@ public import Development.AbelianVarietyTheory.Definitions.AbelianSchemeLaws.IsS
 public import Development.AbelianVarietyTheory.Definitions.QuasicoherentCohomology.ExistsAwayFracOfMemHomLoc
 public import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.CubeTotalComplexAcyclicOfSlicesInductionOnCard
 public import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.IsLocalizedModuleResBasicOpenOfQcqs
-public import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.PolBaseChangeOfRelAmpleLocal
-public import Development.AbelianVarietyTheory.Proofs.CoherentCohomologyProofs.AbelianProjectiveBaseChange
-public import Development.AbelianVarietyTheory.Proofs.CoherentCohomologyProofs.ExistsSmulHomologyEqZeroOfAcyclicFibre
-public import Development.AbelianVarietyTheory.Proofs.CoherentCohomologyProofs.CechLBHomologyFiniteOfAffineCoverStatement
-public import Development.AbelianVarietyTheory.Proofs.CoherentCohomologyProofs.MumfordBundleFibreCechAcyclicOffOriginStatement
+public import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.Bundle0024
+public import Development.AbelianVarietyTheory.Proofs.CoherentCohomologyProofs.Bundle0022
+public import Development.AbelianVarietyTheory.Proofs.CoherentCohomologyProofs.Bundle0018
+public import Development.AbelianVarietyTheory.Proofs.CoherentCohomologyProofs.Bundle0027
+public import Development.AbelianVarietyTheory.Proofs.CoherentCohomologyProofs.MumfordBundleFibreCechAcyclicOffOrigin
 
 @[expose] public section
 
@@ -51,13 +51,13 @@ theorem cohomology_finite_and_vanishes_off_origin : ∀ (K : Type) [Field K] [Is
   have hI := isAffineOpen_biInf_of_isSeparated f hD
   have hflat : ∀ p, Module.Flat R ((cechLB f ((translDiff P.A P.L (𝟙 P.A)).pull π) D).X p) :=
     flat_cechLB_X f hM hI
-  have hfin := GlobalTheory.T.finite_cechLB_homology_of_affine_cover R Y f _ κ D hM hsep hproj hD hc
+  have hfin := _root_.GlobalTheory.AbLaw.cechLB_homology_finite_of_affine_cover R Y f _ κ D hM hsep hproj hD hc
   refine ⟨hN, hflat, hfin, fun χ h₁ h₂ => ?_⟩
   refine exists_smul_homology_eq_zero_of_acyclic_fibre R K χ _ (Fintype.card κ)
     (fun p hp => isZero_cechLB_X _ _ _ hp.le) hflat hfin ?_
   have h' := IsPullback.of_hasPullback f (Spec.map (CommRingCat.ofHom χ))
   obtain ⟨w, hw⟩ := exists_iso_pull_pull hF π (pullback.fst f (Spec.map (CommRingCat.ofHom χ)))
-  have hac := GlobalTheory.T.mumfordBundle_fibre_cech_acyclic_off_origin K P _ _ _ _ (h'.paste_horiz h) h₁ h₂ κ
+  have hac := _root_.GlobalTheory.MumfordFibre.fibre_acyclic K P _ _ _ _ (h'.paste_horiz h) h₁ h₂ κ
     (fun i => pullback.fst f (Spec.map (CommRingCat.ofHom χ)) ⁻¹ᵁ D i)
     (fun i => isAffineOpen_preimage_of_isPullback h' (hD i))
     (by rw [← Scheme.Hom.preimage_iSup, hc]; rfl)

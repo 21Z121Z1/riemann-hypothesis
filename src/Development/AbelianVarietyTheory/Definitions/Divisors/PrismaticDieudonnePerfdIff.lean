@@ -3,7 +3,7 @@ module
 public import Mathlib
 public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.PrismaticDieudonnePerfd
 public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.InjectiveOfSmulMemRange
-public import Development.AbelianVarietyTheory.Definitions.Divisors.PadicActionConstInjective
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0007
 public import Development.AbelianVarietyTheory.Definitions.Divisors.ToBaseChangePtsBijective
 
 @[expose] public section

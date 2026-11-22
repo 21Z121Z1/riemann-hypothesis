@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Formalism.UnipotentAdelicQuotients.SiegelWeilUnitaryConvergent
+public import Formalism.UnipotentAdelicQuotients.Bundle0003
 public import Formalism.SharpRestriction.GlobalSchurBounds.GeneralLinearActions.GenusMassVolumes
 
 @[expose] public section

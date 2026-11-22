@@ -1,21 +1,19 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsPeriodAtRestrict
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.Bundle0013
 public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.EmbedsGeneric
 public import Development.AutomorphicSpectrum.Definitions.DivisibilityTowers.GoodOrigin
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.GlobalSectionsRankAlgClosed
-public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IntegralClosureHeightEqOneOfLiesOver
-public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.GlueApplyOfNotInFibre
-public import Development.AutomorphicSpectrum.Statements.GeometryStatements.FlatLineGenerator
-public import Development.AutomorphicSpectrum.Statements.GeometryStatements.CardComapMulFinsumEqFinsumFibres
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.Bundle0010
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.Bundle0005
+public import Development.AutomorphicSpectrum.Statements.GeometryStatements.Bundle0007
 public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.PotentialsBoundedRegSettingEqReference
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.SncPts
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.PrimeChartExistsUniquePointStatement
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.RegAtIffChartLocalizationStatement
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0023
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0019
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.Bundle0002
 public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.HomogeneousFormNonvanishingPoint
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArakelovGeometry.IsMultiHomogXpow
-public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.InjectiveOfIsCptGen
 public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PSmallSectionsNonzero
 
 @[expose] public section
@@ -152,7 +150,7 @@ theorem exists_frac {X : Scheme.{0}} {ξ : Spec (CommRingCat.of Ω) ⟶ X} (hT :
     ∃ (d : K → ℕ) (F G : MRing J), IsMultiHomog F d ∧ IsMultiHomog G d ∧ MvPolynomial.aeval y G ≠ 0 ∧
       MvPolynomial.aeval y F = e * MvPolynomial.aeval y G := by
   have hy : ∀ k, y ⟨k, c k⟩ ≠ 0 := fun k => Finset.prod_ne_zero_iff.1 hc.1 k (Finset.mem_univ k)
-  obtain ⟨s, hs, hu, hse⟩ := (GlobalTheory.T.regAt_iff_chart_localization X Ω ξ ℤ _ (segCo y) hT c (CptModel.self ξ) hc e).1
+  obtain ⟨s, hs, hu, hse⟩ := (_root_.GlobalTheory.CompanionTheory.Ar.regAt_iff_exists_chart_fraction X Ω ξ ℤ _ (segCo y) hT c (CptModel.self ξ) hc e).1
     (by rw [CptModel.regAt_self hT.gen]; trivial)
   obtain ⟨d, G, hG⟩ := exists_rep hc.1 hs
   obtain ⟨d', F, hF⟩ := exists_rep hc.1 hse
@@ -183,7 +181,7 @@ theorem unit_off {X : Scheme.{0}} {ξ : Spec (CommRingCat.of Ω) ⟶ X} {p : ℕ
     (isMultiHomog_X' k (c k)) (by simpa using h0)))
   have hsc : segCo y c ≠ 0 := Finset.prod_ne_zero_iff.2 fun k _ => hy k
   obtain ⟨I, hI, hmem⟩ := exists_prime hsc hP hc
-  obtain ⟨q, ⟨hq, hu⟩, -⟩ := GlobalTheory.T.prime_chart_existsUnique_point X Ω ξ ℤ _ (segCo y) hT c hsc I hI
+  obtain ⟨q, ⟨hq, hu⟩, -⟩ := _root_.GlobalTheory.CompanionTheory.Ar.chart_point_of_prime X Ω ξ ℤ _ (segCo y) hT c hsc I hI
   have hpI : (p : chartA y c) ∉ I := fun h => by
     obtain ⟨d, G, hr, hG⟩ := (hmem _).1 h
     have h2 : IsRep y c (((p : chartA y c)) : Ω) 0 (MvPolynomial.C (p : ℤ)) :=
@@ -204,7 +202,7 @@ theorem unit_off {X : Scheme.{0}} {ξ : Spec (CommRingCat.of Ω) ⟶ X} {p : ℕ
   have hr3 : (r' : Ω) * s = 1 := by simpa [Subring.smul_def] using hr'
   have hsu : unitAt ξ q s := ⟨right_ne_zero_of_mul_eq_one hr3, hr2 ▸ r.2, by
     rw [← eq_inv_of_mul_eq_one_left hr3]; exact r'.2⟩
-  obtain ⟨t, ht, hut, hts⟩ := (GlobalTheory.T.regAt_iff_chart_localization X Ω ξ ℤ _ (segCo y) hT c q hq s).1 hsu.2.1
+  obtain ⟨t, ht, hut, hts⟩ := (_root_.GlobalTheory.CompanionTheory.Ar.regAt_iff_exists_chart_fraction X Ω ξ ℤ _ (segCo y) hT c q hq s).1 hsu.2.1
   have hv : (⟨t, ht⟩ : chartA y c) ∉ I := (hu _).2 hut
   have hu' : (⟨t * s, hts⟩ : chartA y c) ∉ I := (hu _).2 (unitAt_mul hut hsu)
   obtain ⟨dv, V, hV⟩ := exists_rep hsc ht

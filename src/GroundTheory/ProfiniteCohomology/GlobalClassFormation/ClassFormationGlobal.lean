@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import GroundTheory.ProfiniteCohomology.GlobalClassFormation.ExistsUnitsToIdelesEqOfIdelesSumInvEqZero
+public import GroundTheory.ProfiniteCohomology.GlobalClassFormation.Bundle0002
 public import GroundTheory.ProfiniteCohomology.GlobalClassFormation.OpenSubgroups
 public import GroundTheory.ProfiniteCohomology.InflationRestriction.DegreeOne
 

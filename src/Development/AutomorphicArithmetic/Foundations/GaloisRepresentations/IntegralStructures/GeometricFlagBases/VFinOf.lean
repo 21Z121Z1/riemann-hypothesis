@@ -1,6 +1,6 @@
 module
 
-public import Development.EtaleCohomology.EtaleTrace.LFinCut
+public import Development.EtaleCohomology.EtaleTrace.Bundle0008
 public import Development.EtaleCohomology.KummerTheory.FinBock
 public import Development.EtaleCohomology.WeilConjectures.AdicFinPf
 public import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.KunnethLefschetz.OneMul

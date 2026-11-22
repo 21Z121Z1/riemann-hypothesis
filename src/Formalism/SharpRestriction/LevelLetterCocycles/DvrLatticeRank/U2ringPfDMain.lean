@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Formalism.SharpRestriction.LevelLetterCocycles.DvrLatticeRank.ConstantCoeffUniformiserZero
+public import Formalism.SharpRestriction.LevelLetterCocycles.DvrLatticeRank.Bundle0012
 
 @[expose] public section
 

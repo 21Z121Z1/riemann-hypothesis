@@ -1,15 +1,14 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.FRatioSelf
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0036
 public import Development.AbelianVarietyTheory.Definitions.Divisors.IsAffCoverSpec
 public import Development.AbelianVarietyTheory.Definitions.Divisors.ComparisonMemCechHodgeFiltration
 public import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.RingKrullDimLeOfQuasiFinite
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExistsGenericForms
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExistsCotangentBasis
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.FRatioLinear
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.RatioSpanCotangentChangeDenominator
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExistsProjFormNonvanishingGenericPointComplexPoi
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0354
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0352
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0353
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0351
 
 @[expose] public section
 

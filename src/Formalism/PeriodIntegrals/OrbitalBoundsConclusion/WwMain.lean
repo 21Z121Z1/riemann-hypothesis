@@ -1,11 +1,9 @@
 module
 
 public import Mathlib
-public import Formalism.PeriodIntegrals.WwMain
+public import Formalism.PeriodIntegrals.Bundle0009
 public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LFunctionMinors.InfinitePadicComplex
-public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LFunctionMinors.LfunEqOfSubset
-public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LFunctionMinors.SumInjEqSumPairs
-public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LFunctionMinors.DeXCBOf
+public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LFunctionMinors.Bundle0001
 
 @[expose] public section
 

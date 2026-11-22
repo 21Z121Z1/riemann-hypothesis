@@ -3,8 +3,8 @@ module
 public import Mathlib
 public import Formalism.LocalRingCardinality.AdicCompletionLocal.LocTied
 public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.ExistsOfLayers
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IntegersCompleteDVR
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.TiltWittEqZeroOfPrimeMulEqZero
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0204
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0262
 
 @[expose] public section
 

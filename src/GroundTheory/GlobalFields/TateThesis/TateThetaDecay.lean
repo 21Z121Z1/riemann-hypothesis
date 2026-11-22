@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import GroundTheory.GlobalFields.TateThesis.TateTheta
+public import GroundTheory.GlobalFields.TateThesis.Bundle0011
 
 @[expose] public section
 

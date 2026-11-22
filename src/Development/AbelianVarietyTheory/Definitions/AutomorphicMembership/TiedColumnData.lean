@@ -1,23 +1,23 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.PositionOfIntro
-public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.FixedVectorEqOfStandardData
-public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.IsTwIffCanonEq
-public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.JetsInIffStepField
+public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.Bundle0028
+public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.Bundle0020
+public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.Bundle0030
+public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.Bundle0015
 public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.ExistsSplittingCharacterSelf
-public import Formalism.LocalToGlobal.GroupLattices.TiedFamilies.FullTiedCBase
-public import Formalism.LocalToGlobal.GroupLattices.TiedFamilies.IntSplitOf
+public import Formalism.LocalToGlobal.GroupLattices.TiedFamilies.Bundle0007
+public import Formalism.LocalToGlobal.GroupLattices.TiedFamilies.Bundle0001
 public import Formalism.LocalToGlobal.GroupLattices.ComparisonMaps.RecThm
-public import Formalism.LocalToGlobal.GroupLattices.TiedFamilies.TieIwLevTieOf
-public import Formalism.LocalToGlobal.GroupLattices.TiedFamilies.CmpHyp0P
-public import Formalism.LocalToGlobal.GroupLattices.TiedFamilies.SelfDualAtColLevel
-public import Formalism.LocalToGlobal.UnitaryNorms.CharGal
-public import Formalism.LocalToGlobal.UnitaryNorms.DefsDatum
+public import Formalism.LocalToGlobal.GroupLattices.TiedFamilies.Bundle0008
+public import Formalism.LocalToGlobal.GroupLattices.TiedFamilies.Bundle0004
+public import Formalism.LocalToGlobal.GroupLattices.TiedFamilies.Bundle0002
+public import Formalism.LocalToGlobal.UnitaryNorms.Bundle0007
+public import Formalism.LocalToGlobal.UnitaryNorms.Bundle0005
 public import Formalism.LocalToGlobal.Divisibility.QLocTied
 public import Formalism.LocalToGlobal.LatticeGeometry.GeoTiedP
 public import Formalism.LocalToGlobal.BesselHermitianTheta.AllTied
-public import Formalism.LocalToGlobal.BesselHermitianTheta.TiedWeilEq
+public import Formalism.LocalToGlobal.BesselHermitianTheta.Bundle0004
 public import Formalism.LocalToGlobal.JointCharacters.SameChr
 public import Formalism.LocalToGlobal.GlobalTheory.LinkTiesOm
 

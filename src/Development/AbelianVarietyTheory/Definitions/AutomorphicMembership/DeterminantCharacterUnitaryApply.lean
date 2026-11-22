@@ -3,10 +3,10 @@ module
 public import Mathlib
 public import Formalism.LocalRingCardinality.RhoDetPrimeEqMuTildeMulChiPow
 public import Formalism.LocalRingCardinality.RankBoundMonotoneInDimension
-public import Formalism.LocalToGlobal.UnitaryNorms.CharUniq
+public import Formalism.LocalToGlobal.UnitaryNorms.Bundle0005
 public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.IsRationalUnitaryDeterminantMapRationalUnitaryTo
-public import Formalism.LocalToGlobal.Divisibility.Tuples
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.UnitaryLatticeStabilizerDetRoot
+public import Formalism.LocalToGlobal.Divisibility.Bundle0001
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0068
 
 @[expose] public section
 

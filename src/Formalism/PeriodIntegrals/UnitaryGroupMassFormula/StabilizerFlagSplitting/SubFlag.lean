@@ -1,7 +1,7 @@
 module
 
 public import Formalism.HermitianCurvature.FiniteOrderIntersectionInSmooth
-public import Formalism.FormalDegreeBessel.FinalG
+public import Formalism.FormalDegreeBessel.Bundle0002
 
 @[expose] public section
 

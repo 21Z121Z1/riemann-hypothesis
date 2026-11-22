@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.StatementsTwistedDualGensExist
+public import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.Bundle0035
 
 @[expose] public section
 

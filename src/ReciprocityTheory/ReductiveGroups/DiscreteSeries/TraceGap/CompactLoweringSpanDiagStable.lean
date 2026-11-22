@@ -1,7 +1,7 @@
 module
 
 public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.DiscreteSeriesExistence.CFCoreA
-public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.HighestWeights.Unique
+public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.HighestWeights.Bundle0004
 
 @[expose] public section
 

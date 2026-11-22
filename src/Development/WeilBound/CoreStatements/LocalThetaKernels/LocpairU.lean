@@ -1,8 +1,8 @@
 module
 
 public import Development.WeilBound.CoreStatements.LocalThetaKernels.Locpair
-public import Development.WeilBound.CoreStatements.LocalThetaKernels.LocpairUnit
-public import Development.WeilBound.ThetaLifts.CartanFactorisation.MaxDef
+public import Development.WeilBound.CoreStatements.LocalThetaKernels.Bundle0003
+public import Development.WeilBound.ThetaLifts.CartanFactorisation.Bundle0004
 
 @[expose] public section
 

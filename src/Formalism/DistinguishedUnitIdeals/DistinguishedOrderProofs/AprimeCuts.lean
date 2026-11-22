@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Formalism.DistinguishedUnitIdeals.AprimeCuts
+public import Formalism.DistinguishedUnitIdeals.Bundle0002
 public import Formalism.DistinguishedUnitIdeals.DistinguishedOrderProofs.CutPlace
 public import Formalism.TruncatedSeriesCounting.TruncatedSeriesProofs.AprimeArith
 

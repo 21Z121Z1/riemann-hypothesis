@@ -1,6 +1,6 @@
 module
 
-public import Development.WeilBound.ThetaLifts.CartanFactorisation.ExistsBeta
+public import Development.WeilBound.ThetaLifts.CartanFactorisation.Bundle0004
 
 @[expose] public section
 

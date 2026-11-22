@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import GroundTheory.AutomorphicForms.AdelicUnitaryGroups.Anisotropic
+public import GroundTheory.AutomorphicForms.AdelicUnitaryGroups.Bundle0001
 
 @[expose] public section
 

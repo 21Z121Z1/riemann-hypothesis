@@ -1,10 +1,10 @@
 module
 
-public import Formalism.SharpRestriction.GenusPolyhedralBounds.RelativeIndexClassSets.CombBound4Of
+public import Formalism.SharpRestriction.GenusPolyhedralBounds.RelativeIndexClassSets.Bundle0003
 public import Formalism.SharpRestriction.GenusPolyhedralBounds.RelativeIndexClassSets.PvsDimYPos
 public import Formalism.SharpRestriction.GenusPolyhedralBounds.RelativeIndexClassSets.TheoremZeroSplitOfLocalAndSum
-public import Formalism.LocalRingCardinality.HeightBoundGeFourthPowerRank
-public import Formalism.LocalRingCardinality.FourthPowerRankLeNF
+public import Formalism.LocalRingCardinality.Bundle0005
+public import Formalism.LocalRingCardinality.Bundle0007
 
 @[expose] public section
 

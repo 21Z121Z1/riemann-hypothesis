@@ -3,13 +3,13 @@ module
 public import Mathlib
 public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.ModelSmall
 public import Development.AutomorphicSpectrum.Statements.TowerExistence.GoodTowerExistsX
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.InterNamed
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArithmeticIntersection.MultihomogeneousIdeals.ExistsUniqueStatement
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsEmbeddingPieces
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.Bundle0012
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArithmeticIntersection.MultihomogeneousIdeals.Bundle0001
+public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0036
 public import Development.AutomorphicSpectrum.Definitions.MetricPeriods.HasMultiplier
 public import Development.AutomorphicSpectrum.Definitions.DivisibilityTowers.HeckeSectionsIsotropicCommutatorPairingPower
 public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.OverLaUnique
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.InterSt
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.Bundle0006
 public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LabelSigBijective
 public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IntMemModelSmall
 public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ProdZpowLe
@@ -17,8 +17,8 @@ public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.TowerWeightO
 public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.GoodOriginModelComponentBoundStatement
 public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.WeightSectionComponentValueStatement
 public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.CompleteDvrPadicEmbeddingStatement
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.TraceIntegralSubringExtensionStatement
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ChartLatticeSpecializationValueStatement
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0016
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0183
 public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.IntegralFrameComponentValueStatement
 public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.UniformAllRootOriginBoundStatement
 public import Formalism.PadicSubsetSums.StableGradedCounts.ZBrauerNesbitt
@@ -125,7 +125,7 @@ theorem vs_fin : Top.Given → ∀ (E : Type) [Field E] [NumberField E] [IsCMFie
       (fun b hb => hB0 (Finset.mem_coe.2 (Finset.mem_union_right _ (Finset.mem_coe.1 hb)))) A' hB3 p (ev' j) (h2 j)
       la T' io' e' y' ι ev hla ho' hy' hι hreg (fun a' => ⟨hA a', h1 j a'⟩)
     have hHV' : ∀ b (hb : b ∈ B₁), Small.HasVal RM.y 0 b z (ev' j ⟨b, hAB1 b hb⟩) := fun b hb => hHV b _ hb
-    obtain ⟨w, hw, hwle⟩ := GlobalTheory.T.chart_lattice_specialization_value RM.K RM.ι RM.Ω RM.y (PadicAlgCl p) z hz.1 A (ev' j) (degOf RM u) s hs
+    obtain ⟨w, hw, hwle⟩ := _root_.GlobalTheory.CompanionTheory.Ar.Rec.FinRd.ChartPt.exists_hasVal_norm_le_supMet RM.K RM.ι RM.Ω RM.y (PadicAlgCl p) z hz.1 A (ev' j) (degOf RM u) s hs
       (fun c' _ => ⟨fun k i => ⟨hAB1 _ (hmrt (c', ⟨k, i⟩)), hHV' _ (hmrt (c', ⟨k, i⟩))⟩,
         ⟨hAB1 _ (hmsc c'), hHV' _ (hmsc c')⟩⟩)
     obtain ⟨v, hv, hvn⟩ := hrd _ (nOf u) hn f hfsec

@@ -2,20 +2,18 @@ module
 
 public import Mathlib
 public import Formalism.LocalToGlobal.BesselHermitianTheta.AllTied
-public import Formalism.LocalToGlobal.IndefiniteReal.DatumVec
+public import Formalism.LocalToGlobal.IndefiniteReal.Bundle0016
 public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.AdelicDataRowMeasureScaleTrivialTuple
 public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.BesselDatumAuxiliaryVectorOrthogonalImage
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.MeasureFundamentalDomainLtTop
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.CoeffRational
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ActEEqOfConjRelated
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.CoeffIntegrableContinuous
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsContinuousUnitaryRootExchangeMap
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.MemBesselExchangeGroupIffRootExchange
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.UnitaryRootExchangeMirrorIdentityStatement
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.AnnihilatorSubsetCompact
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsUniqueNormalizedHaarMeasureAdelicUnitary
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.DifferentiableOneP
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsContinuousAdelicUnitaryEmbedding
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0201
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0195
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0186
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0178
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0211
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0194
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0163
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0161
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0162
 
 @[expose] public section
 
@@ -152,7 +150,7 @@ theorem exch_finite (d : BesselDatum A B ι) {ψ} (hψ : IsStdChar D ψ (-1)) {�
   by_contra hne
   obtain ⟨t₀, ht₀, hu₀⟩ := (GlobalTheory.RootExch.ExStruct.mem_Ex_iff D A B ι d ε hε _ _).1 u.2
   refine hu ⟨⟨t₀, ht₀⟩, hCm t₀ ht₀ fun t htV ht => ?_, Subtype.ext (isK_unique (hK₀k _) hu₀)⟩
-  obtain ⟨k1, k2⟩ := GlobalTheory.T.unitaryRootExchange_mirror_identity D A B ι d ψ ε hε j t₀ t u (K ⟨t, ht⟩) ht₀ ht hu₀ (hKk _)
+  obtain ⟨k1, k2⟩ := _root_.GlobalTheory.RootExch.Mirror.mirror D A B ι d ψ ε hε j t₀ t u (K ⟨t, ht⟩) ht₀ ht hu₀ (hKk _)
   have e1 := exL_left d ψ ε m h2 (j.1 + 2) _ l hl _ k2 (u * g)
   have hn : (GfC B).Normal := MonoidHom.normal_ker _
   have hU' : g⁻¹ * K ⟨t, ht⟩ * g ∈ U := by

@@ -1,8 +1,8 @@
 module
 
 public import Formalism.LocalToGlobal.GlobalTheory.ColValS
-public import Formalism.LocalToGlobal.GlobalTheory.LevelZeroClassLatticeIntegral
-public import Formalism.LocalToGlobal.HermitianForms.BothSym
+public import Formalism.LocalToGlobal.GlobalTheory.Bundle0001
+public import Formalism.LocalToGlobal.HermitianForms.Bundle0006
 
 @[expose] public section
 

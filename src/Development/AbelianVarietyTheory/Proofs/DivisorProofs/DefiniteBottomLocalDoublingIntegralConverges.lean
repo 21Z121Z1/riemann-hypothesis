@@ -1,40 +1,40 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Statements.PlaceShiftStatements.NormSmall
+public import Development.AbelianVarietyTheory.Statements.PlaceShiftStatements.Bundle0002
 public import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.WeilTensorModels
-public import Development.AbelianVarietyTheory.Definitions.Divisors.DiscreteSeriesHermitianUnique
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.BottomExistsIntegrable
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.RatInOfUnit
-public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.IntegrandSZero
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HeckeFormAniso
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsBottomTriIs
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MemBottomPairFinitePlacesBelowOfMemExceptional
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsBottomInfinityExponentsGapLargeGridsStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsHaarFundamentalDomainUnitaryQuotientVolume
-public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.ExistsIsParamFunOne
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.LevelPlacesIntegralNonzeroConstant
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.HeisenbergCombinationCommFockPolynomialVectors
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.HeisenbergFixAndKillThetaOffSupportMoveStatement
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.WeilMatrixCoefficientEqZeroOfHeisenbergRelationsStatement
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.FinitePartMemLevelOfThetaDatumNeZero
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.SchrodingerIntertwinerInjectiveSchwartzBruhat
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.CompAtMtOfMemGfC
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.MemCompletedHomLatticeIffFrameStabiliserAction
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.WeilActionSchrodingerModelFiniteIdempotent
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0041
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0593
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0142
+public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.Bundle0013
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1222
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2799
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2825
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2816
+public import Development.AbelianVarietyTheory.Statements.HeckeThetaIntegrals.ThetaIntegralsAgree
+public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.Bundle0011
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2798
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2791
+public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.Bundle0020
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0530
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0150
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0290
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0160
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0507
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0419
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0124
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0126
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0451
 public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.FirstStandardPairMemberHasThetaFunction
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SignedUnitaryGroupCompat
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.FockPolynomialVectorInjectiveNonzeroVacuum
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.HasInfExpDiv
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.WeilActionNegPairPureTensorFock
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsIntEqExponentAddHalfIndex
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0252
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0498
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0290
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0604
 public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.WeilLatticeVacuumEqProdSplitPlaceFactors
-public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.LatNotSelfDual
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ConjPlEqCP
-public import Development.AutomorphicArithmetic.DivisorFrames.FiniteComponentMemStabilizerOfStandardSectionNeZ
+public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.Bundle0027
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0309
+public import Development.AutomorphicArithmetic.DivisorFrames.Bundle0015
 public import Development.AutomorphicArithmetic.DivisorFrames.StdFstActOOfMemStabilizer
-public import Development.AutomorphicArithmetic.DivisorFrames.IsUnitDetProdDetIdlOfMemSt
-public import Development.AutomorphicArithmetic.DivisorFrames.ExistsStdFstNeZeroOfRankLe
 
 @[expose] public section
 
@@ -244,7 +244,7 @@ private theorem fin_fix {μ₀ : T} (hL : L.Is μ₀) (hX : IsBottomTri W i j X)
   have hloc : ∀ v, proj D.sp.cm.sig (GlobalTheory.Grid.neg A).gram v k ∈ stabLoc D.sp.cm.sig (GlobalTheory.Grid.neg A).gram X.rA.Λ v :=
     fun v => hk' v (Finset.notMem_empty v)
   have hSt : Lev.finE (GlobalTheory.Grid.neg A) k ∈ Formalism.L2.DIV.St X.rA.β :=
-    (GlobalTheory.T.finitePart_mem_frameStabilizer_iff_local_stabilizer D (GlobalTheory.Grid.neg A) X.rA.β X.rA.Λ h.rigA.2.1 k).2 hloc
+    (_root_.GlobalTheory.ChainOnto.LStab.finE_mem_St_iff_stabLoc D (GlobalTheory.Grid.neg A) X.rA.β X.rA.Λ h.rigA.2.1 k).2 hloc
   have hid : ∀ w ∈ locPl G t, Formalism.L2.NTheta.IsIdemAt (GlobalTheory.RowVacScalar.idemAt w) w := fun w hw => by
     obtain ⟨⟨es, hes, -⟩, -⟩ := he
     exact Classical.epsilon_spec (p := fun e : AE D => Formalism.L2.NTheta.IsIdemAt e w) ⟨es w, hes w hw⟩
@@ -348,17 +348,17 @@ private theorem wcoef_off (hX : IsBottomTri W i j X) (t : T) {ν : Measure (WO (
       obtain ⟨w, hw, e⟩ := Finset.mem_image.1 hm
       exact hv w hw e
   have hsupp := fun x hx => by_contra fun hx' => hn fun v _ =>
-    (GlobalTheory.T.finitePart_mem_frameStabilizer_iff_local_stabilizer D (GlobalTheory.Grid.neg A) X.rA.β X.rA.Λ h.rigA.2.1 g).1
+    (_root_.GlobalTheory.ChainOnto.LStab.finE_mem_St_iff_stabLoc D (GlobalTheory.Grid.neg A) X.rA.β X.rA.Λ h.rigA.2.1 g).1
       (UpperTheory.finiteComponent_mem_stabilizer_of_standardSection_ne_zero D (GlobalTheory.Grid.neg A) WW X.rA.Λ X.rA.β X.rW.β (alphaB L i j t / betaB G i j) (X.e t) (locPl G t)
         (X.ideal (locPl G) t) sdA h.rigA.2.1 (show A.rank ≤ WW.rank from h.rank ▸ Nat.le_add_right _ _) he g hint x hx hx') v
-  obtain ⟨n, a, y, h0, h1, h2⟩ := GlobalTheory.T.heisenberg_fix_and_kill_theta_off_support_move D W.ψ (GlobalTheory.Grid.neg A) WW hW.std X.rA.Λ X.rW.Λ sdA h.rigW.1
+  obtain ⟨n, a, y, h0, h1, h2⟩ := _root_.GlobalTheory.HalfSep.sep D W.ψ (GlobalTheory.Grid.neg A) WW hW.std X.rA.Λ X.rW.Λ sdA h.rigW.1
     (locPl G t) (X.e t) he X.vac _ (X.f t) (std_isSB hX t) (h.fst t) g hsupp
   have k1 := GlobalTheory.FockFiniteHeis.heis_comb_pureTensorO D W.ψ W.θ (GlobalTheory.Grid.neg A) WW hW.std h.isVac.2.inf
     (fun τ => -X.rA.s τ) X.rW.s X.rA.B X.rW.B (X.f t) (f_theta hX t) n a y (fun l => (h0 l).1) P
   have k2 := GlobalTheory.FockFiniteHeis.heis_comb_pureTensorO D W.ψ W.θ (GlobalTheory.Grid.neg A) WW hW.std h.isVac.2.inf
     (fun τ => -X.rA.s τ) X.rW.s X.rA.B X.rW.B (X.f t) (f_theta hX t) n (fun l => conj (a l))
     (fun l => actO (GlobalTheory.Grid.neg A) WW g⁻¹ 1 (-(y l))) (fun l => (h0 l).2) P
-  exact GlobalTheory.T.weilMatrixCoefficient_eq_zero_of_heisenberg_relations D W.ψ (GlobalTheory.Grid.neg A) WW _ _ _ hW ν 𝓕 hν _ (pt_theta hX t P) g n a y
+  exact _root_.GlobalTheory.ChainOnto.coef_zero_of_heis_relations D W.ψ (GlobalTheory.Grid.neg A) WW _ _ _ hW ν 𝓕 hν _ (pt_theta hX t P) g n a y
     (k1.1.trans (by rw [h1])) (k2.1.trans (by rw [h2]; exact k2.2))
 
 private theorem openOff_eq (hX : IsBottomTri W i j X) (Λ : Lat (GlobalTheory.Grid.neg A)) {a : GL (Fin (GlobalTheory.Grid.neg A).rank) (AE D)}
@@ -389,7 +389,7 @@ theorem _root_.GlobalTheory.T.definiteBottom_localDoublingIntegral_converges : G
     ∫ g in openOff (GlobalTheory.Grid.neg A) X.rA.Λ (GlobalTheory.BottomIPData.sfB G t), wcoef ((X.ω t).toSgn true) νW 𝓕W (pureTensorO W.ψ W.θ (GlobalTheory.Grid.neg A) WW (fun τ => -X.rA.s τ) X.rW.s X.rA.B X.rW.B (X.f t) P) (pureTensorO W.ψ W.θ (GlobalTheory.Grid.neg A) WW (fun τ => -X.rA.s τ) X.rW.s X.rA.B X.rW.B (X.f t) P) g * rcoef m (fun _ => 1) (fun _ => 1) g ∂m ≠ 0 := by
   have H0 : GBig fun {_} _ Lc _ _ μ₀ _ _ _ => Lc.Is μ₀ :=
     ⟨0, fun _ _ _ => ⟨0, 0, fun _ _ _ _ _ _ _ _ _ _ hL _ => hL⟩⟩
-  refine gbig_mono (gbig_and H0 (gbig_and GlobalTheory.T.unramifiedInnerProductData_definiteBottom_largeGrids GlobalTheory.T.exists_bottomInfinityExponents_gap_largeGrids)) ?_
+  refine gbig_mono (gbig_and H0 (gbig_and GlobalTheory.T.unramifiedInnerProductData_definiteBottom_largeGrids _root_.GlobalTheory.BotDict.bottom_infExp_gap)) ?_
   intro D T Lc sc G μ₀ C x b ⟨hL, H1, H2⟩ W i j A A' WW X hX t cA a νW 𝓕W hP
   have h := isBottomTri_is hX
   have hr : A.rank ≤ WW.rank := h.rank ▸ Nat.le_add_right _ _

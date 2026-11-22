@@ -1,10 +1,10 @@
 module
 
 public import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.SphericalCoordinates.IsCoordA
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ConjMemOfMemHeckeLevel
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0001
 public import Formalism.SatakeDualWeyl.KpqSubgroupCompact
-public import Development.AbelianVarietyTheory.Definitions.Divisors.IsGPull
-public import Development.AbelianVarietyTheory.Definitions.Divisors.IsHeckeMap
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0010
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0017
 
 @[expose] public section
 

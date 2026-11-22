@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import GroundTheory.AutomorphicForms.LocallyProfinite
-public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.StabilizerOf
+public import GroundTheory.AutomorphicForms.Bundle0004
+public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0058
 
 @[expose] public section
 

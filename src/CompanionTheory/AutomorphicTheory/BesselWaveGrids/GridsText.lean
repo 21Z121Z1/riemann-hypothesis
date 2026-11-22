@@ -1,7 +1,7 @@
 module
 
 public import Formalism.HermitianCurvature.HermitianCurvatureProofs.ShiftAtRExistsEq
-public import CompanionTheory.AutomorphicTheory.BesselWaveGrids.FourLeOfFive
+public import CompanionTheory.AutomorphicTheory.BesselWaveGrids.Bundle0003
 public import CompanionTheory.AutomorphicTheory.BesselWaveGrids.PStarTie
 
 @[expose] public section

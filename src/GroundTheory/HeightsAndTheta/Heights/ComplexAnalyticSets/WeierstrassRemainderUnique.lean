@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StGermWeierstrassPreparation
+public import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.Bundle0056
 
 @[expose] public section
 

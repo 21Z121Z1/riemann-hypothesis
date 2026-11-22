@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Formalism.QuotientMetricDivisors.ProdFormula
+public import Formalism.QuotientMetricDivisors.Bundle0001
 public import Formalism.HarderNarasimhan.ShiftInvariance
 public import Formalism.HermitianLattices.HermitianLatticesProofs.IndexBasic
 

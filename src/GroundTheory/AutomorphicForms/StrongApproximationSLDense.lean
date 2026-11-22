@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import GroundTheory.AutomorphicForms.AdelicGLn
-public import GroundTheory.AutomorphicForms.StrongApproximationSLElementary
+public import GroundTheory.AutomorphicForms.Bundle0005
 public import GroundTheory.GlobalFields.Adele.Approximation
 public import GroundTheory.GlobalFields.TateThesis.AdelicCharDual
 

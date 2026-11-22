@@ -1,11 +1,11 @@
 module
 
 public import Formalism.SharpRestriction.GrowthBounds.AevalValuation.PlDefs
-public import Formalism.SharpRestriction.GrowthBounds.PlaneCoefficients.RestPlOf
+public import Formalism.SharpRestriction.GrowthBounds.PlaneCoefficients.Bundle0003
 public import Formalism.SharpRestriction.GrowthBounds.PlaneCoefficients.ProdRangeZmod
-public import Formalism.SharpRestriction.GrowthBounds.PlaneCoefficients.RenameMemSupported
+public import Formalism.SharpRestriction.GrowthBounds.PlaneCoefficients.Bundle0005
 public import Formalism.SharpRestriction.GrowthBounds.PolynomialLevels.FrRevInj
-public import Formalism.SharpRestriction.GrowthBounds.DiagonalSupport.PosULeIff
+public import Formalism.SharpRestriction.GrowthBounds.DiagonalSupport.Bundle0009
 public import Formalism.SharpRestriction.GrowthBounds.DiagonalSupport.ValuationOneEqZero
 public import Formalism.SharpRestriction.GrowthBounds.TwistedSubstitution.MemLin
 public import Formalism.SharpRestriction.GrowthBounds.ValuationLowestDegreeMapFractionField

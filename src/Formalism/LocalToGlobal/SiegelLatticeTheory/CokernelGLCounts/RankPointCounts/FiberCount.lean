@@ -2,7 +2,7 @@ module
 
 public import Formalism.LocalToGlobal.SiegelLatticeTheory.CokernelGLCounts.RankPointCounts.PartnerCount
 public import Formalism.LocalToGlobal.SiegelLatticeTheory.CokernelGLCounts.RankPointCounts.StepNormOneOfLeaves
-public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.CountingFormula.DensAtGoodOf
+public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.CountingFormula.Bundle0007
 
 @[expose] public section
 

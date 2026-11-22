@@ -1,14 +1,14 @@
 module
 
 public import Mathlib
-public import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.FlagIndices
+public import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.Bundle0009
 public import GroundTheory.HeightsAndTheta.Heights.AnalyticLimit.Objects
 public import ReciprocityTheory.AnalyticForms.LeviForms.IsRegFamilyInhabitStatement
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.InterRes
-public import ReciprocityTheory.AnalyticForms.LeviForms.RegGlue
-public import GroundTheory.HeightsAndTheta.Heights.AnalyticLimit.NormIteratedFDerivCompLeOfIsOpen
-public import GroundTheory.HeightsAndTheta.Heights.AnalyticLimit.PPropertyF
-public import GroundTheory.HeightsAndTheta.Heights.Regularisation.PGlueRegularised
+public import ReciprocityTheory.AnalyticForms.LeviForms.Bundle0004
+public import GroundTheory.HeightsAndTheta.Heights.AnalyticLimit.Bundle0003
+public import GroundTheory.HeightsAndTheta.Heights.AnalyticLimit.Bundle0004
+public import GroundTheory.HeightsAndTheta.Heights.Regularisation.Bundle0007
 
 @[expose] public section
 

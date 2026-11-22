@@ -1,11 +1,11 @@
 module
 
 public import Mathlib
-public import Development.ResolutionOfSingularities.EmbeddedResolution.EtaleCoordinates.EtaleCoordinates
-public import Development.ResolutionOfSingularities.EmbeddedResolution.DerivativeIdeal.LogDerivativesInBlowupCharts
+public import Development.ResolutionOfSingularities.EmbeddedResolution.EtaleCoordinates.Bundle0001
+public import Development.ResolutionOfSingularities.EmbeddedResolution.DerivativeIdeal.Bundle0004
 public import Development.ResolutionOfSingularities.EmbeddedResolution.DerivativeIdeal.PartialDerivativeIdeal
 public import Development.ResolutionOfSingularities.EmbeddedResolution.DerivativeIdeal.DerivativeIdeal
-public import Development.ResolutionOfSingularities.EmbeddedResolution.DerivativeIdeal.LogDerivativeIdeal
+public import Development.ResolutionOfSingularities.EmbeddedResolution.DerivativeIdeal.Bundle0002
 
 @[expose] public section
 

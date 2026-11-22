@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicArithmetic.OrbitLabellings.ColDefs
+public import Development.AutomorphicArithmetic.OrbitLabellings.Bundle0001
 public import Development.AutomorphicArithmetic.OrbitLabellings.ExistsFrobeniusEquivariantLocalBasisCoordinates
-public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.StdBases
+public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.Bundle0010
 public import Formalism.LocalRingCardinality.DataForced
 public import Formalism.LocalToGlobal.TorsionIntegrality.GaussSumParity.SingleLetterBiextensionRelation
 

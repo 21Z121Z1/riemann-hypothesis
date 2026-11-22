@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsIsCan
-public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.AbsGeneratorRatioEqOneOfUnitFrameMove
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.HeckeIsogenyLiftsToLatticeMapScalingForms
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0342
+public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0155
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0368
 
 @[expose] public section
 

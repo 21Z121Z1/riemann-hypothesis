@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.LayerProd
-public import Formalism.HermitianLattices.StatementMass
+public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.Bundle0006
+public import Formalism.HermitianLattices.Bundle0003
 
 @[expose] public section
 

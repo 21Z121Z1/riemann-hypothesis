@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Formalism.LocalToGlobal.IndefiniteReal.ConjSubConjSub
+public import Formalism.LocalToGlobal.IndefiniteReal.Bundle0023
 public import Formalism.LocalToGlobal.GaloisLevelStructure.TiedHecke
 public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.AdicIntegersCompact.IsCompactAdicCompletionIntegers
 

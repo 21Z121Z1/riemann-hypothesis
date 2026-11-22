@@ -1,11 +1,11 @@
 module
 
-public import Formalism.LocalToGlobal.TorsionIntegrality.UniformGaussModels.GoodModelAll
+public import Formalism.LocalToGlobal.TorsionIntegrality.UniformGaussModels.Bundle0001
 public import Formalism.LocalToGlobal.TorsionIntegrality.CMGoodModels.CmAll
-public import Formalism.LocalToGlobal.TorsionIntegrality.TorsionTranslationPowers.NonsingularJetNorms.CmIntegralityOfTorsionPoints
-public import Formalism.LocalToGlobal.TorsionIntegrality.EisensteinTranslationProducts.EllipticOnePole
+public import Formalism.LocalToGlobal.TorsionIntegrality.TorsionTranslationPowers.NonsingularJetNorms.Bundle0003
+public import Formalism.LocalToGlobal.TorsionIntegrality.EisensteinTranslationProducts.Bundle0003
 public import Formalism.LocalToGlobal.TorsionIntegrality.EisensteinTranslationProducts.MulStableIntegral
-public import ReciprocityTheory.ReductiveGroups.UnramifiedIntegrals.ModJInt
+public import ReciprocityTheory.ReductiveGroups.UnramifiedIntegrals.Bundle0016
 
 @[expose] public section
 

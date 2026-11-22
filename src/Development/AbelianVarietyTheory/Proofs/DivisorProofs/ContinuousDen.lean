@@ -2,9 +2,9 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.Divisors.RangeShape
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PBConjTranspose
-public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.FormalDegree.HaarMirror
-public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.FormalDegree.PolarInv
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1080
+public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.FormalDegree.Bundle0013
+public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.FormalDegree.Bundle0007
 
 @[expose] public section
 

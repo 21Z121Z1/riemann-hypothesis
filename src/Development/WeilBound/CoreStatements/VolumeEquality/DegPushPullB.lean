@@ -1,10 +1,9 @@
 module
 
-public import Development.WeilBound.CoreStatements.VolumeEquality.DegPushDim
-public import GroundTheory.HeightsAndTheta.Heights.FieldsOfNumbers.Assembly
-public import GroundTheory.HeightsAndTheta.Heights.FieldsOfNumbers.PDivPushForward
-public import GroundTheory.HeightsAndTheta.Heights.FieldsOfNumbers.PContractRelDimLe
-public import GroundTheory.HeightsAndTheta.Heights.SemipositiveHeights.NumericalSegre
+public import Development.WeilBound.CoreStatements.VolumeEquality.Bundle0010
+public import GroundTheory.HeightsAndTheta.Heights.FieldsOfNumbers.Bundle0012
+public import GroundTheory.HeightsAndTheta.Heights.FieldsOfNumbers.Bundle0008
+public import GroundTheory.HeightsAndTheta.Heights.SemipositiveHeights.Bundle0002
 
 @[expose] public section
 

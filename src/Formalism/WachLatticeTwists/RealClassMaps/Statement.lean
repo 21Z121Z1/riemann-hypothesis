@@ -2,8 +2,7 @@ module
 
 public import Formalism.WachLatticeTwists.ShapeRowIsomorphisms.Statement
 public import Formalism.WachLatticeTwists.ShapeRowIsomorphisms.StatClause5Row
-public import Formalism.WachLatticeTwists.CupProductVanishing.StatVhEInChi
-public import Formalism.WachLatticeTwists.CupProductVanishing.H2MapInjective
+public import Formalism.WachLatticeTwists.CupProductVanishing.Bundle0001
 
 @[expose] public section
 

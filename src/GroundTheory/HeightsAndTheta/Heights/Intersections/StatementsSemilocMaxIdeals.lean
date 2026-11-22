@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import GroundTheory.HeightsAndTheta.Heights.Intersections.StatementsFibreIncomp
+public import GroundTheory.HeightsAndTheta.Heights.Intersections.Bundle0044
 public import GroundTheory.HeightsAndTheta.Heights.Intersections.OneNotMemOfIsPrime
 
 @[expose] public section

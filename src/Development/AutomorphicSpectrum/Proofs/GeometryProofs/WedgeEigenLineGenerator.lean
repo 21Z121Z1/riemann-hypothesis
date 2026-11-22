@@ -3,28 +3,27 @@ module
 public import Mathlib
 public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.BdryChart
 public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsFlatAnIffIsConstMul
-public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.LevelSectionsExactKernelLocusOpen
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.Bundle0005
 public import Development.AutomorphicSpectrum.Definitions.MetricPeriods.ClopenCondOnto
 public import Development.AbelianVarietyTheory.Definitions.Uniformization.PointEqOfSubsingleton
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.BlowupProjections.BlowupProjStatement
 public import Development.AutomorphicSpectrum.PublishedTheorems.Geometry₂.GagaSections
-public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsGenericFlag
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.Bundle0004
 public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.IsExcisionNbhdAway
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.WedgeEqSpanOfIsFrameAt
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.CoordDegreeBoundOfFlag
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.EigenLatticeVectorBundleStatement
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.IsValFam
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.IsCombMatrixMulStatement
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.IsCombIdentityMatrixStatement
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.EigenvectorLinearCombinationStatement
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.IsCombFieldExtensionStatement
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.EigenFrameFieldExtensionStatement
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.MemSpanOfIotaMultiProportionalStatement
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.IotaMultiChangeOfBasisDetStatement
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.IotaMultiNeZeroOfLinIndepStatement
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ComponentSpecializationTangentCombStatement
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ComponentSpecializationFieldExtStatement
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ComponentPointCmEigenFrameStatement
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0023
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0143
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.EigenLatticeVectorBundle
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0062
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0061
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0058
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0140
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0014
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0005
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0013
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0064
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0146
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ComponentPointCmEigenFrame
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0141
 
 @[expose] public section
 
@@ -44,16 +43,16 @@ theorem comb_mul {m n k : ℕ} {v : Fin n → (epsAt x ⟶ G)} {u : Fin m → (e
     {A : Matrix (Fin k) (Fin m) F} {C : Matrix (Fin m) (Fin n) F}
     (hv : ∀ i, IsTanAt G x (v i)) (hC : ∀ i, IsComb (C i) v (u i)) (hA : ∀ i, IsComb (A i) u (w i)) :
     ∀ i, IsComb ((A * C) i) v (w i) :=
-  GlobalTheory.T.is_comb_matrix_mul S G F x m n k v u w A C hv hC hA
+  _root_.GlobalTheory.CompanionTheory.Ar.CombMul.isComb_mul S G F x m n k v u w A C hv hC hA
 
 theorem comb_self {n : ℕ} {v : Fin n → (epsAt x ⟶ G)} (hv : ∀ i, IsTanAt G x (v i)) :
     ∀ i, IsComb ((1 : Matrix (Fin n) (Fin n) F) i) v (v i) :=
-  GlobalTheory.T.is_comb_identity_matrix S G F x n v hv
+  _root_.GlobalTheory.CompanionTheory.Ar.Flat.isComb_unit_row S G F x n v hv
 
 theorem comb_eig {P : Type} [CommRing P] (act : OAct P G) (σ : P →+* F) {n : ℕ} {v : Fin n → (epsAt x ⟶ G)}
     {cf : Fin n → F} {w : epsAt x ⟶ G} (hv : ∀ i, IsEigVec act x σ (v i)) (h : IsComb cf v w) :
     IsEigVec act x σ w :=
-  GlobalTheory.T.eigenvector_linear_combination S G F x P act σ n v cf w hv h
+  _root_.GlobalTheory.CompanionTheory.Ar.CombEig.isEigVec_comb S G F x P act σ n v cf w hv h
 
 theorem comb_base {F' : Type} [Field F'] (f : F →+* F') {x' : Sp F' ⟶ S} (hx : spMap f ≫ x = x') {n : ℕ}
     {v : Fin n → (epsAt x ⟶ G)} {cf : Fin n → F} {w : epsAt x ⟶ G} {v' : Fin n → (epsAt x' ⟶ G)}
@@ -89,7 +88,7 @@ theorem wedge_span {Ω V : Type} [Field Ω] [AddCommGroup V] [Module Ω V] {n : 
 theorem wedge_matrix {Ω V : Type} [Field Ω] [AddCommGroup V] [Module Ω V] {n : ℕ} (e : Fin n → V)
     (P : Matrix (Fin n) (Fin n) Ω) :
     exteriorPower.ιMulti Ω n (fun i => ∑ j, P i j • e j) = P.det • exteriorPower.ιMulti Ω n e :=
-  GlobalTheory.T.iota_multi_change_of_basis_det Ω V n e P
+  _root_.GlobalTheory.CompanionTheory.Ar.Lat.wedge_matrix_mul_family Ω V n e P
 
 theorem wedge_ne_zero {Ω V : Type} [Field Ω] [AddCommGroup V] [Module Ω V] {n : ℕ} {e : Fin n → V}
     (he : LinearIndependent Ω e) : exteriorPower.ιMulti Ω n e ≠ 0 :=
@@ -105,7 +104,7 @@ theorem valFam_comb (Z : CptOver Y U) {F : Type} [Field F] {y : Sp F ⟶ Xo.XF c
     (hg : genPt (Z.ξ₀ ≫ Y.j) ⤳ centre (y ≫ Y.j))
     (h : IsValFam Z y b v) (hs : ∀ j, ValAt (Z.ξ₀ ≫ Y.j) (y ≫ Y.j) (s j) (r j)) (hw : IsComb r v w) :
     ∃ w', Z.M.ValAt (y ≫ Y.j) (∑ j, s j • b j) w' ∧ SameVec Y y w w' :=
-  GlobalTheory.T.component_specialization_tangent_comb E H D l Xo c O β Y U Z F y n b v s r w hg h hs hw
+  _root_.GlobalTheory.CompanionTheory.Ar.Flat.Rep.valFam_sum_comb E H D l Xo c O β Y U Z F y n b v s r w hg h hs hw
 
 theorem valFam_base (Z : CptOver Y U) {F F' : Type} [Field F] [Field F'] (f : F →+* F') {y : Sp F ⟶ Xo.XF c}
     {y' : Sp F' ⟶ Xo.XF c} (hy : y' = spMap f ≫ y) {n : ℕ} {b : Fin n → Z.V} {v : Vecs y n} {v' : Vecs y' n}
@@ -138,7 +137,7 @@ theorem exists_valFam (Z : CptOver Y U) (τ : E →+* ℂ)
     (hy : y ≫ pullback.snd _ _ = spMap βF) (hU : Set.range y ⊆ U) (h : genPt (Z.ξ₀ ≫ Y.j) ⤳ centre (y ≫ Y.j))
     (σ : E →+* ℂ) {n : ℕ} (b : Fin n → Z.V) (hb : (Z.eig σ).IsFrameAt b ⟨_, h⟩) :
     ∃ v : Vecs y n, IsValFam Z y b v ∧ IsEigFrame Xo.univ.t.act (under y) (βF.comp (tauIn c σ)) v :=
-  GlobalTheory.T.component_point_cm_eigen_frame E H D l Xo c O β Y U Z τ hβ hτ F βF y hy hU h σ n b hb
+  _root_.GlobalTheory.CompanionTheory.Ar.Flat.Rep.valFam_eigFrame E H D l Xo c O β Y U Z τ hβ hτ F βF y hy hU h σ n b hb
 
 end Val2
 
@@ -317,7 +316,7 @@ theorem exists_chart
       ValAt (Z.ξ₀ ≫ Y.j) (y ≫ Y.j) (α₀ / κ₀) r₀ ∧ r₀ ≠ 0 := by
   have h := spec_pt Z hU
   have hx := pt_mem_genFib Z y h
-  obtain ⟨hvb₁, hvb₂, -, -⟩ := GlobalTheory.T.eigen_lattice_vector_bundle E H D l Xo c O β Y U Z τ hβ hτ
+  obtain ⟨hvb₁, hvb₂, -, -⟩ := _root_.GlobalTheory.CompanionTheory.Ar.Flat.isVBOn_eig_genFib E H D l Xo c O β Y U Z τ hβ hτ
   obtain ⟨W₁, hW₁, c₁, -, hc₁⟩ := hvb₁ _ hx
   obtain ⟨W₂, hW₂, c₂, -, hc₂⟩ := hvb₂ _ hx
   have f₁ := hc₁ _ hx hW₁

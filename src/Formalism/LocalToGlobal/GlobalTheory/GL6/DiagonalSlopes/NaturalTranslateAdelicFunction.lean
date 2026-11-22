@@ -1,12 +1,11 @@
 module
 
 public import Formalism.LocalToGlobal.GlobalTheory.GL6.CongruenceNoKernelOfLevelZeroIdentities
-public import Formalism.LocalToGlobal.GlobalTheory.GL6.DiagonalSlopes.DiamondCommDistinctPlaces
+public import Formalism.LocalToGlobal.GlobalTheory.GL6.DiagonalSlopes.Bundle0001
 public import Formalism.LocalToGlobal.GlobalTheory.GL6.DiagonalSlopes.PSplitT
-public import Formalism.LocalToGlobal.GlobalTheory.GL6.DiagonalSlopes.AdmissibleStabilisersOfCompatibleForms
-public import Formalism.LocalToGlobal.GlobalTheory.GL6.DiagonalSlopes.ComplexSpanBlockActionStable
+public import Formalism.LocalToGlobal.GlobalTheory.GL6.DiagonalSlopes.Bundle0002
 public import Formalism.LocalToGlobal.GlobalTheory.GL6.DiagonalSlopes.LocalUnitaryOfMatchingZero
-public import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.CsEquiv
+public import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Bundle0010
 public import Formalism.LocalToGlobal.LatticeGeometry.GeometryDefinitions.PClassE
 public import Formalism.LocalToGlobal.GlobalTheory.EqGlobOfHat
 

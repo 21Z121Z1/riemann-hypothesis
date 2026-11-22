@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.IsCplAtSelf
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.Bundle0004
 
 @[expose] public section
 

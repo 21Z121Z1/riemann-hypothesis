@@ -1,12 +1,12 @@
 module
 
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.GaloisLibrary.CrystallineBaseChange.CqStmt
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.AdTransfer
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.Bundle0005
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.RTwist
 public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.AdelicLocalCompactness.AdeleLC
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsAveragingProjection
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SatakeParametersOfTwist
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.IsOpenIsCompactUnitaryIntegralPoints
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0023
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0896
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0204
 public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsIsSplitChartOfBasis
 
 @[expose] public section

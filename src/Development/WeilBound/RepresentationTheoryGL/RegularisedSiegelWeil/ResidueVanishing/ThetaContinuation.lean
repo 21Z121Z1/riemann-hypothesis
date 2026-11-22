@@ -1,10 +1,19 @@
 module
 
-public import Development.WeilBound.RepresentationTheoryGL.RegularisedSiegelWeil.ResidueVanishing.ContinuousInvariantCoefficients
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.DefiniteUnitaryQuotientCompactFundamentalDomainStatement
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.StandardUnitaryChartMemRationalIffStatement
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.IsHeckeCharRestrictionEtaInvStatement
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ThetaKillingImpliesVanishing
+public import Development.WeilBound.RepresentationTheoryGL.RegularisedSiegelWeil.ResidueVanishing.Bundle0001
+public import Mathlib
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0163
+public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.Bundle0015
+public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.IsThetaFam
+public import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.Bundle0018
+public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.Bundle0007
+public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.PairwiseDisjointCell
+public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.Bundle0005
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0226
+public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.Bundle0017
+public import Development.AbelianVarietyTheory.PublishedTheorems.SiegelWeil₂.SiegelWeilUnitaryConvergent
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0205
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0369
 
 @[expose] public section
 
@@ -34,10 +43,10 @@ theorem dblInt_eq_fd {D : D7} (A : HSp D) {μ : (AE D)ˣ →* Circle} (hμ : IsH
 
 theorem theta_continuation : K4 := by
   intro D ψ θ A cA a hA W χ omh hW ν 𝓨 hν μ hμ κ hκ omS hT p m hm u hu hui hKi F hF hFi hX
-  obtain ⟨-, X, K, hXm, hXf, hKc, hXK⟩ := GlobalTheory.T.definite_unitary_quotient_compact_fundamentalDomain D A hA.sig hA.pos m hm
-  have hχ := (GlobalTheory.T.isHeckeChar_restrictionEta_inv D χ W.rank hW.hecT hW.resT).1
-  obtain ⟨hκc, -⟩ := GlobalTheory.T.continuous_standardUnitaryChart_and_symm D A μ hμ κ hκ
-  have hG' := GlobalTheory.T.standardUnitaryChart_mem_rational_iff D A μ hμ κ hκ
+  obtain ⟨-, X, K, hXm, hXf, hKc, hXK⟩ := _root_.GlobalTheory.DefFund.coCpt_and_fundamentalDomain_subset_compact D A hA.sig hA.pos m hm
+  have hχ := (_root_.GlobalTheory.StdUnn.isHeckeChar_resEta_inv D χ W.rank hW.hecT hW.resT).1
+  obtain ⟨hκc, -⟩ := _root_.GlobalTheory.StdUnn.chart_continuous D A μ hμ κ hκ
+  have hG' := _root_.GlobalTheory.StdUnn.chart_mem_GF_iff D A μ hμ κ hκ
   have hcu : Continuous fun g => conj (u g) := Complex.continuous_conj.comp hu
   have hcui : LeftInv (GQ A) fun g => conj (u g) := fun γ hγ g => by simp only [hui γ hγ g]
   set w : GA D A × GA D A → ℂ := dblIntegrand A χ⁻¹ (fun _ => 1) (fun g => conj (u g)) (fun g => conj (u g)) with hw_def

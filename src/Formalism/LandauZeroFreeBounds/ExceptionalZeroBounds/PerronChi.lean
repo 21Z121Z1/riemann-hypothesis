@@ -2,7 +2,7 @@ module
 
 public import Formalism.LandauZeroFreeBounds.LogDerivRegionChiOf
 public import Formalism.ZeroFreeRegion.ZetaLogDerivativeBounds.Perron
-public import Formalism.ZetaNonvanishing.MellinSgen
+public import Formalism.ZetaNonvanishing.Bundle0002
 
 @[expose] public section
 

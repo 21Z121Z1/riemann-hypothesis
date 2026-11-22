@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.WeilBound.CoreStatements.HomogeneousNonvanishing.TwGXi
+public import Development.WeilBound.CoreStatements.HomogeneousNonvanishing.Bundle0003
 
 @[expose] public section
 

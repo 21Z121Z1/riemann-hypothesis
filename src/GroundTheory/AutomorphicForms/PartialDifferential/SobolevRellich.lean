@@ -2,8 +2,7 @@ module
 
 public import Mathlib
 public import GroundTheory.AutomorphicForms.PartialDifferential.SobolevInterpolation
-public import GroundTheory.AutomorphicForms.HilbertSchmidtKernel
-public import GroundTheory.AutomorphicForms.HilbertSchmidtCompact
+public import GroundTheory.AutomorphicForms.Bundle0006
 
 @[expose] public section
 

@@ -2,11 +2,11 @@ module
 
 public import Mathlib
 public import Formalism.SharpRestriction.LevelLetterCocycles.JointConditionsZpowers.CommutingEndomorphismCondition
-public import Formalism.LocalRingCardinality.DataNChTie
-public import Formalism.SharpRestriction.LevelLetterCocycles.VKEqOfFrac
-public import Formalism.CharacterColumnKernels.IdempotentNormalForms.LengthKerOfDetEqZero
+public import Formalism.LocalRingCardinality.Bundle0002
+public import Formalism.SharpRestriction.LevelLetterCocycles.Bundle0008
+public import Formalism.CharacterColumnKernels.IdempotentNormalForms.Bundle0001
 public import Formalism.SharpRestriction.LevelLetterCocycles.EndomorphismIndexBound
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.MemZpowersOfTameGen
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0493
 
 @[expose] public section
 

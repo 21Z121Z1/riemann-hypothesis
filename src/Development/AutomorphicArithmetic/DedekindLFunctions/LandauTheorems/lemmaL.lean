@@ -3,8 +3,8 @@ module
 public import Development.AutomorphicArithmetic.DedekindLFunctions.LandauZeroFreeCriterion
 public import Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.poleData
 public import Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.landauWindow
-public import Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.WindowHypUOfWindowHyp
-public import Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.CharFamilyLFunctionNeZeroOfOneLeRe
+public import Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.Bundle0002
+public import Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.Bundle0001
 
 @[expose] public section
 

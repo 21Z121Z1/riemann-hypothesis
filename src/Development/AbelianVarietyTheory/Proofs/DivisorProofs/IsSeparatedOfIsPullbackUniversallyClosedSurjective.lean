@@ -1,6 +1,6 @@
 module
 
-public import Development.AbelianVarietyTheory.Definitions.Divisors.QuasiCompact
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0065
 
 @[expose] public section
 

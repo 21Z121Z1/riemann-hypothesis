@@ -1,16 +1,17 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.IsQuasiFam
+public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.Bundle0008
 public import Formalism.LocalToGlobal.IndefiniteReal.OrthogonalComplementCharacterisation
 public import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.ExistsHeightLeTwoMulQuotHeight
 public import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.WittDecompSymplInclIsotropicInclAnisotropic
-public import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.TransvectionAction
-public import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.WeilDatumExistence
-public import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.ConjugateAdjointDagger
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.WeilOperatorOneVariableKeepsThetaFunctionsStatement
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.HermitianAdjointSymplecticActionThetaHeisenbergStatement
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ConjWeilDatumViaAdjointExchangedPairStatement
+public import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.Bundle0019
+public import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.Bundle0007
+public import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.Bundle0017
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0195
+public import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.Bundle0021
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0119
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0133
 
 @[expose] public section
 
@@ -41,9 +42,9 @@ theorem dagger_resS_symm (o : OrthDec T A B) (S : HSp D) (u : WO A S) (v : WO B 
 
 theorem main : ∀ (D : D7) (ψ : AddChar (AF D.host.F) ℂ) (T A B S : HSp D) (o : OrthDec T A B) (F : WO S T → ℂ), IsThetaFunO ψ S T F → ∀ (χ χ' : (AE D)ˣ →* Circle) (om : Om S A), IsWeilDatumO ψ S A χ χ' om → ∀ p, IsThetaFunO ψ S T fun x => om p (fun u => F ((o.resT S).symm (u, (o.resT S x).2))) (o.resT S x).1 := by
   intro D ψ T A B S o F hF χ χ' om hom p
-  have hd := (GlobalTheory.T.hermitianAdjoint_symplectic_action_theta_heisenberg D ψ hom.std S T).2.2.1
-  have h := (GlobalTheory.T.weilOperator_oneVariable_keeps_thetaFunctions D ψ T A B S o _ ((hd F).2 hF)).1 χ' χ (conjAdjoint om)
-    (GlobalTheory.T.conj_weil_datum_via_adjoint_exchanged_pair D ψ S A χ χ' om hom) p.swap
+  have hd := (_root_.GlobalTheory.AdjointPair.adjoint_clauses D ψ hom.std S T).2.2.1
+  have h := (_root_.GlobalTheory.WeilSlice.weilSlice_theta D ψ T A B S o _ ((hd F).2 hF)).1 χ' χ (conjAdjoint om)
+    (_root_.GlobalTheory.ConjAdjWeil.isWeilDatumO_conjAdjoint D ψ S A χ χ' om hom) p.swap
   refine (hd _).1 ?_
   convert h using 1
   funext y

@@ -1,9 +1,9 @@
 module
 
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.LevelCohomology.SoLocTors
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.LevelCohomology.SoCobPlace
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.LevelCohomology.Bundle0010
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.LevelCohomology.Bundle0002
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.LevelCohomology.CobDown
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.GaloisLibrary.SelmerTransport.Places
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.GaloisLibrary.SelmerTransport.Bundle0007
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.UnitaryThreeDeformations.FiniteResidue
 
 @[expose] public section

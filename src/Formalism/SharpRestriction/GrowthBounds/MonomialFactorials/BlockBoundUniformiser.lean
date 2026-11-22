@@ -1,7 +1,7 @@
 module
 
 public import Formalism.SharpRestriction.GrowthBounds.CountingStatementReduction
-public import Formalism.MahlerMeasure.LevelLattice
+public import Formalism.MahlerMeasure.Bundle0008
 
 @[expose] public section
 

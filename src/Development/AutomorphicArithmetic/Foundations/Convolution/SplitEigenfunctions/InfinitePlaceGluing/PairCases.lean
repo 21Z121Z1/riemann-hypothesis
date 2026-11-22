@@ -1,9 +1,9 @@
 module
 
-public import Development.AutomorphicArithmetic.Foundations.Convolution.SplitEigenfunctions.Entire
+public import Development.AutomorphicArithmetic.Foundations.Convolution.SplitEigenfunctions.Bundle0001
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.InvOneSubBound
 public import GroundTheory.GlobalFields.AnalyticClassNumber.DirichletHecke
-public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.PairCases
+public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0048
 
 @[expose] public section
 

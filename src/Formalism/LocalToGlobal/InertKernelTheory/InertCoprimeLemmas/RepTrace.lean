@@ -1,6 +1,6 @@
 module
 
-public import Formalism.LocalToGlobal.InertKernelTheory.DefsRepFrame
+public import Formalism.LocalToGlobal.InertKernelTheory.Bundle0012
 public import Formalism.LocalToGlobal.InertKernelTheory.InertCoprimeLemmas.IntBasis
 public import Formalism.LocalToGlobal.InertKernelTheory.InertCoprimeLemmas.FrLocB
 public import Formalism.LocalToGlobal.GlobalTheory.GL3.PHfTrace

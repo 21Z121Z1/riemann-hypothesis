@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Formalism.LocalToGlobal.UnitaryNorms.CharProd
-public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.ExistsPowLocKMulInf
+public import Formalism.LocalToGlobal.UnitaryNorms.Bundle0002
+public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0089
 
 @[expose] public section
 

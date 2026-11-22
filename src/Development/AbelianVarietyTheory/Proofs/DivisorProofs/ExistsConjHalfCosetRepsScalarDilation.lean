@@ -1,14 +1,14 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NabBaseChange
-public import Formalism.LocalToGlobal.IndefiniteReal.FinitePlaces.ActsLinOfSplitLin
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1855
+public import Formalism.LocalToGlobal.IndefiniteReal.FinitePlaces.Bundle0003
 public import Formalism.LocalToGlobal.IndefiniteReal.FinitePlaces.FinPartDetAtInvInt
 public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SelfDualSplitComponentIsLatticeStabilizerEq
-public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.SmulMemLatO
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.CompletedLatticeIntegralityFacts
-public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.AddNsmulResidueAssoc
-public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.OmVacuumEqSplitFacSmulSum
+public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.Bundle0058
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0107
+public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.Bundle0059
+public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.Bundle0070
 
 @[expose] public section
 

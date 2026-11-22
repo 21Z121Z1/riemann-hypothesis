@@ -5,7 +5,7 @@ public import Development.AbelianVarietyTheory.Definitions.Jets.JetsOnCopiesComp
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.UnifUniqSt
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.DiscreteValuationRings.TwistBCPf
 public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.SaturationChartsHolds
-public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.SurjectiveOfKerLeMapSupSq
+public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0006
 
 @[expose] public section
 

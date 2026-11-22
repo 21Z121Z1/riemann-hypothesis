@@ -2,7 +2,7 @@ module
 
 public import Formalism.HermitianCurvature.StatementU
 public import Formalism.FormalDegreeBessel.FormalDegreeRatio.GBasic
-public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.DetNormLe
+public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0012
 
 @[expose] public section
 

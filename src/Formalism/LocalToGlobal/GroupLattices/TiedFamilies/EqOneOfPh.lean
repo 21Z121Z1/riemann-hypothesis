@@ -1,8 +1,7 @@
 module
 
-public import Formalism.LocalToGlobal.GroupLattices.ComparisonMaps.NatActRVtupR
-public import Formalism.LocalToGlobal.GroupLattices.ComparisonMaps.FramesTr
-public import Formalism.LocalToGlobal.GroupLattices.ComparisonMaps.CastGLSymmApply
+public import Formalism.LocalToGlobal.GroupLattices.ComparisonMaps.Bundle0003
+public import Formalism.LocalToGlobal.GroupLattices.ComparisonMaps.Bundle0004
 public import Formalism.LocalToGlobal.GroupLattices.LevelGatherings.JPMemAwayP
 public import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Afsplit
 

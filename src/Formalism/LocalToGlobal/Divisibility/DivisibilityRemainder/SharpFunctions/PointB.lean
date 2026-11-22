@@ -1,12 +1,12 @@
 module
 
-public import Formalism.LocalToGlobal.PtKOfReal
+public import Formalism.LocalToGlobal.Bundle0002
 public import Mathlib
 public import Formalism.LocalToGlobal.Divisibility.RecBridge
 public import Formalism.SharpRestriction.Divisibility.PrimeDegreeVariant
-public import Formalism.SharpRestriction.ElevenLe
+public import Formalism.SharpRestriction.Bundle0001
 public import Formalism.SharpRestriction.Divisibility.SlopeExcess.FamilyStatementOfScaledLemmas
-public import Formalism.SharpRestriction.Divisibility.HookProducts.NormAtEqSqrtMajAt
+public import Formalism.SharpRestriction.Divisibility.HookProducts.Bundle0002
 public import Formalism.SharpRestriction.Divisibility.HookProducts.LambdaZeroLeFourB
 
 @[expose] public section

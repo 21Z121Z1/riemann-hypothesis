@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.PrimeSetBoundDataOfPrimitiveChar
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.Bundle0001
 public import Development.AutomorphicArithmetic.QuadraticCharacters.GaussRoot
 
 @[expose] public section

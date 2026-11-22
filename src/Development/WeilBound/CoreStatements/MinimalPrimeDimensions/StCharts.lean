@@ -1,7 +1,7 @@
 module
 
 public import Development.WeilBound.CoreStatements.MinimalPrimeDimensions.GenIdeal
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EtaleCoordinateNearGenericPoint
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1328
 
 @[expose] public section
 

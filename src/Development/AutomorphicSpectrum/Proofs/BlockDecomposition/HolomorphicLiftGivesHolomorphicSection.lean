@@ -3,8 +3,8 @@ module
 public import Mathlib
 public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IsSmoothHermCombLine
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.InterRed
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntegrableOnSourceIffOfDensity
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsUniqueComplexPointUnder
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0960
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0534
 
 @[expose] public section
 

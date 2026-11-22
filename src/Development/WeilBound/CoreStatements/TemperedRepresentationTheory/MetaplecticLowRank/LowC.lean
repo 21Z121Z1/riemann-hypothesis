@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisGeometry₂.MoyPrasadJacquetIsoTrivial
+public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisGeometry₂.Bundle0002
 
 @[expose] public section
 

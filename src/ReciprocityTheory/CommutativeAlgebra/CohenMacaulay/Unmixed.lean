@@ -1,7 +1,6 @@
 module
 
-public import ReciprocityTheory.CommutativeAlgebra.CohenMacaulay.ExistsIsRegularAppendOfModDepthGE
-public import ReciprocityTheory.CommutativeAlgebra.CohenMacaulay.AssDim
+public import ReciprocityTheory.CommutativeAlgebra.CohenMacaulay.Bundle0002
 
 @[expose] public section
 

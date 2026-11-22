@@ -3,7 +3,7 @@ module
 public import Mathlib
 public import Formalism.LocalToGlobal.GlobalTheory.GL3.PLinkThIndep
 public import Formalism.LocalToGlobal.GlobalTheory.GL3.PLinkThU
-public import Formalism.GL3MeanSquares.HookFormulaTorsion.SquareEqDiagOfQuadraticEven
+public import Formalism.GL3MeanSquares.HookFormulaTorsion.Bundle0003
 
 @[expose] public section
 

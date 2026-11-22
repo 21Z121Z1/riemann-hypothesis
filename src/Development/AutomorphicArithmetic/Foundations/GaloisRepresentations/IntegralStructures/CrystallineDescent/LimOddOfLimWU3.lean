@@ -1,10 +1,10 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.IsRegAlgTwistOfHalfIntegral
-public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.HasLevelOffOf
+public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.Bundle0023
+public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.Bundle0022
 public import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.ThetaParseval.AllCoreOf
-public import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.InertiaQuadraticRamification.ThreeApartOf
+public import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.InertiaQuadraticRamification.Bundle0005
 
 @[expose] public section
 

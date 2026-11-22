@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import GroundTheory.ProfiniteCohomology.CompactSupportCohomology.ConePairing
+public import GroundTheory.ProfiniteCohomology.CompactSupportCohomology.Bundle0002
 public import GroundTheory.ProfiniteCohomology.MackeyFormula.ConeHomotopy
 
 @[expose] public section

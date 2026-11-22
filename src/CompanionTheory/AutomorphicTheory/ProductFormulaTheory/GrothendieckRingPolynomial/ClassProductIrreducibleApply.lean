@@ -3,13 +3,17 @@ module
 public import Mathlib
 public import CompanionTheory.AutomorphicTheory.ProductFormulaTheory.GrothendieckRingPolynomial.SingleEqSmulSingle
 public import CompanionTheory.AutomorphicTheory.TemperedLocalSpectra.BernsteinZelevinsky.TopAdm
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LanglandsClassificationOrderFreeEquivStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.OrderedFormsInterleaveSumStatement
-public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.ContragredientProductIrreducibleImports
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0351
+public import Development.WeilBound.CoreStatements.TemperedRepresentationTheory.ZelevinskyJacquet.ZelevinskyInterleaving.LInjective
+public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.Bundle0002
+public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.Bundle0010
+public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.Bundle0008
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0363
+public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.Bundle0056
 public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.GlobalTheory.BernsteinZelevinskyFiniteness
-public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.WordOccursOfSubquotientImports
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LanglandsInjectiveOfSocleStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ProductIrreducibleFiniteLengthStatement
+public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.Bundle0048
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0670
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0603
 
 @[expose] public section
 
@@ -46,10 +50,10 @@ theorem isL_cls_unique (hf : LOrderFree k) {𝔪 : Multiset (Segment k)} {x y : 
   obtain ⟨m, b⟩ := y
   have e : n = m := (isL_deg hx).trans (isL_deg hy).symm
   subst e
-  exact congrArg (Sigma.mk n) (irrCl_eq_iff.2 (GlobalTheory.T.langlands_classification_order_free_equiv hf 𝔪 _ _ hx hy))
+  exact congrArg (Sigma.mk n) (irrCl_eq_iff.2 (_root_.GlobalTheory.CompanionTheory.LUniq.isL_unique hf 𝔪 _ _ hx hy))
 
 theorem exists_orderedForm (𝔪 : Multiset (Segment k)) : ∃ (h : ℕ) (Δ : Fin h → Segment k), IsOrderedForm Δ 𝔪 := by
-  obtain ⟨h₁, -, -, Δ₁, -, -, hΔ₁, -⟩ := GlobalTheory.T.ordered_forms_interleave_sum CompanionTheory.Tls2.BZGL.irreducibleAdmissibleGL_top 𝔪 0
+  obtain ⟨h₁, -, -, Δ₁, -, -, hΔ₁, -⟩ := _root_.GlobalTheory.CompanionTheory.ZcMerge.exists_common_orderedForm CompanionTheory.Tls2.BZGL.irreducibleAdmissibleGL_top 𝔪 0
   exact ⟨h₁, Δ₁, hΔ₁⟩
 
 theorem class_apply_same_degree {N : ℕ} {V : Type} [AddCommGroup V] [Module ℂ V] (π : Representation ℂ (GL (Fin N) k) V)

@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.TermAttractorConstant.GpLocPSubE
+public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.TermAttractorConstant.Bundle0001
 
 @[expose] public section
 

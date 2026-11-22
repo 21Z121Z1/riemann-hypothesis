@@ -5,13 +5,12 @@ public import Development.AbelianVarietyTheory.Definitions.AbelianSchemeLaws.IsS
 public import Development.AbelianVarietyTheory.Definitions.QuasicoherentCohomology.ExistsAwayFracOfMemHomLoc
 public import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.CubeTotalComplexAcyclicOfSlicesInductionOnCard
 public import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.RingKrullDimLeOfQuasiFinite
-public import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.ForallGeometricallyIntegralOfSmoothOfGeometrical
-public import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.TrdegEqOfLocallyIsStandardSmoothOfRelativeDimens
-public import Development.AbelianVarietyTheory.Proofs.CoherentCohomologyProofs.AbelianProjectiveBaseChange
-public import Development.AbelianVarietyTheory.Proofs.CoherentCohomologyProofs.CechLBPullIsoOfIsOpenImmersion
-public import Development.AbelianVarietyTheory.Proofs.CoherentCohomologyProofs.IsAffineOpenBiInfOfLe
-public import Development.AbelianVarietyTheory.Proofs.CoherentCohomologyProofs.SubsingletonOfPoints
-public import Development.AbelianVarietyTheory.Proofs.CoherentCohomologyProofs.FinrankMumfordBundleCechHomologyOriginStatement
+public import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.Bundle0003
+public import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.Bundle0009
+public import Development.AbelianVarietyTheory.Proofs.CoherentCohomologyProofs.Bundle0022
+public import Development.AbelianVarietyTheory.Proofs.CoherentCohomologyProofs.Bundle0017
+public import Development.AbelianVarietyTheory.Proofs.CoherentCohomologyProofs.Bundle0021
+public import Development.AbelianVarietyTheory.Proofs.CoherentCohomologyProofs.Bundle0031
 
 @[expose] public section
 
@@ -204,7 +203,7 @@ theorem finrank_cechLB_translDiff : ∀ (K : Type) [Field K] [IsAlgClosed K] (P 
     (fun i => (snd P.A P.A).left ⁻¹ᵁ B i) (fun j => (fst P.A P.A).left ⁻¹ᵁ V j) {0}
     ((fst P.A P.A).left ⁻¹ᵁ V 0) (by simp)
   obtain ⟨p, hp⟩ := (hV 0).range_fromSpec.ge hV₀
-  have h := (T.finrank_mumfordBundle_cech_homology_origin K P Γ(P.A.left, V 0) (hV 0).fromSpec Y π f H inferInstance ⟨p, q₀, hp⟩
+  have h := (_root_.GlobalTheory.OriginCohom.finrank_cechLB_homology K P Γ(P.A.left, V 0) (hV 0).fromSpec Y π f H inferInstance ⟨p, q₀, hp⟩
     E hE hEc n).2
   rw [← h]
   exact (e₁ ≪≫ₗ (e₂ ≪≫ (HomologicalComplex.homologyMapIso (i₁ ≪≫ i₂) n).symm).toLinearEquiv).finrank_eq

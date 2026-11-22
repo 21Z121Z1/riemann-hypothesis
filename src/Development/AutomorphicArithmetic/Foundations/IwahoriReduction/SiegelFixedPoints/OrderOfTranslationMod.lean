@@ -2,7 +2,7 @@ module
 
 public import Development.AutomorphicArithmetic.Foundations.IwahoriReduction.SiegelFixedPoints.IsThBIff
 public import Development.AbelianVarietyTheory.Definitions.Foundations.IsLamOfLSmulIff
-public import Development.AbelianVarietyTheory.Definitions.Foundations.LiftSLMapMulInvMem
+public import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0022
 
 @[expose] public section
 

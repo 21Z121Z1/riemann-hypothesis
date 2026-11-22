@@ -1,12 +1,12 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.IsRatDatum
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.UnitaryClassRepresentativesBijective
+public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.Bundle0022
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0285
 public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsCompactAdele
 public import Formalism.LocalToGlobal.GlobalTheory.GL5.FamilyMassVolumeIdentityOfClassDecomp
 public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.FiniteAdeleIdempotentOfFMulSelf
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ContinuousPf
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0298
 
 @[expose] public section
 

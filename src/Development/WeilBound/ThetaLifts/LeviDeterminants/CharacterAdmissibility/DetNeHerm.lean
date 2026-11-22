@@ -5,8 +5,8 @@ public import Development.WeilBound.ThetaLifts.LeviDeterminants.CharacterAdmissi
 public import Development.WeilBound.ThetaLifts.LeviDeterminants.CharacterAdmissibility.ExistsDoubledUnitaryBlock
 public import Development.WeilBound.ThetaLifts.LeviDeterminants.CharacterAdmissibility.AdelInt
 public import Development.WeilBound.ThetaLifts.LeviDeterminants.MixedModels.ExistsAdaptedIndexHermitian
-public import Development.WeilBound.ThetaLifts.LeviDeterminants.MixedModels.PlaneAd
-public import Development.WeilBound.ThetaLifts.LeviDeterminants.DoubledUnitaryCharacterTrivialOfSiegel
+public import Development.WeilBound.ThetaLifts.LeviDeterminants.MixedModels.Bundle0001
+public import Development.WeilBound.ThetaLifts.LeviDeterminants.Bundle0004
 
 @[expose] public section
 

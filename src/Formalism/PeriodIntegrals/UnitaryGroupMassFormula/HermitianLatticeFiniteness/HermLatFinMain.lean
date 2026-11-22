@@ -4,9 +4,8 @@ public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.HermitianLattice
 public import Formalism.HermitianLattices.HermitianLatticesProofs.ClassSetAssembly
 public import Formalism.HermitianLattices.HermitianLatticesProofs.GenusCovolBound
 public import Formalism.HermitianLattices.HermitianLatticesProofs.TraceReal
-public import Formalism.HermitianLattices.HermitianLatticesProofs.ShortVectors
-public import Formalism.HermitianLattices.HermitianLatticesProofs.FinIntermediate
-public import Formalism.HermitianLattices.HermitianLatticesProofs.IsomOfTrace
+public import Formalism.HermitianLattices.HermitianLatticesProofs.Bundle0003
+public import Formalism.HermitianLattices.HermitianLatticesProofs.Bundle0002
 
 @[expose] public section
 

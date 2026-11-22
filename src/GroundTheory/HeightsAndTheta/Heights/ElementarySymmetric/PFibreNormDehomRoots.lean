@@ -1,10 +1,9 @@
 module
 
 public import Mathlib
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsFibreNormDehomRoots
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsPullFormsGeneric
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsPullSectionIntegral
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsCharpolyRootLift
+public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0086
+public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0078
+public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0083
 
 @[expose] public section
 

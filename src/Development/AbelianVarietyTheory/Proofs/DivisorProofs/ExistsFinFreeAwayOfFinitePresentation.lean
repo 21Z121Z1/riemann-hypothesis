@@ -3,7 +3,7 @@ module
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.AbelianSchemeLaws.IsScalarTowerOfAlgebraMapEq
 public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ExistsSecOfFinite
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AffineFiniteProjectiveRankAtStalk
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0460
 
 @[expose] public section
 

@@ -4,7 +4,7 @@ public import Mathlib
 public import Formalism.LocalRingCardinality.RhoDetPrimeEqMuTildeMulChiPow
 public import Formalism.HermitianLattices.StatementLat
 public import Formalism.SharpRestriction.CuspSpanNormBounds.BlockEnds
-public import Formalism.SharpRestriction.CuspSpanNormBounds.SArith
+public import Formalism.SharpRestriction.CuspSpanNormBounds.Bundle0001
 
 @[expose] public section
 

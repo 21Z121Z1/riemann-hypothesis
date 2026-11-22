@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Formalism.DropLevelBounds.Statement
-public import Formalism.IncomingBounds.FlowDegreeBounds.ThmPExp
+public import Formalism.IncomingBounds.FlowDegreeBounds.Bundle0003
 
 @[expose] public section
 

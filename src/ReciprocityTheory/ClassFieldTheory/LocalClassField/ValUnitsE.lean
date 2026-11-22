@@ -1,6 +1,6 @@
 module
 
-public import ReciprocityTheory.ClassFieldTheory.LocalClassField.ValUnitsD
+public import ReciprocityTheory.ClassFieldTheory.LocalClassField.Bundle0010
 public import ReciprocityTheory.ClassFieldTheory.LocalClassField.ExistsDvdQKPowSubOne
 
 @[expose] public section

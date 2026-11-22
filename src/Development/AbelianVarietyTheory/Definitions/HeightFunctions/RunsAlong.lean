@@ -1,12 +1,11 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.FieldTies
-public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.DsigEq
+public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.Bundle0032
 public import Development.AbelianVarietyTheory.Definitions.HeightFunctions.IntUnit
-public import Formalism.LocalToGlobal.ProjectiveLattices.FullXi
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0035
 public import Formalism.LocalToGlobal.IndefiniteReal.LinksDefs
-public import Formalism.SharpRestriction.PageFix
+public import Formalism.SharpRestriction.Bundle0002
 
 @[expose] public section
 

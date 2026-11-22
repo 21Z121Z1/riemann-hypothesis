@@ -2,15 +2,17 @@ module
 
 public import Mathlib
 public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsHodgeLine
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.GrIsGenAt
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.HodgeCptAwayFromPrimesStatement
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.HodgeHermitianFormExistsStatement
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LieLatticeEvalAtLocalRingStatement
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LatticeRegularAtLocalPointStatement
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0026
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.HodgeCptAwayFromPrimes
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0215
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0141
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.Bundle0004
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LatticeRegularAtLocalPoint
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0093
 public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsLieModel
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.CoordsAtSmul
-public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ExistsPolAVGenericFibre
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.HodgeCptInteriorGenericStatement
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0094
+public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.Bundle0111
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.HodgeCptInteriorGeneric
 
 @[expose] public section
 
@@ -513,12 +515,12 @@ theorem exists_norm : ∀ (E : Type) [Field E] [NumberField E] [IsCMField E] (H 
   have hgen : genPt 𝔐.ξ ⤳ centre z := 𝔐.all _
   have hξ : IsCptGen 𝔐.ξ := 𝔐.tie.gen
   set q : Cpt 𝔐.ξ := ⟨centre z, hgen⟩ with hq
-  obtain ⟨-, -, -, -, -, -, hind, -⟩ := GlobalTheory.T.hodge_cpt_interior_generic E H D l Xo c O β Y S Ω K J y 𝔐 hβ
-  obtain ⟨hV, -, hlat⟩ := GlobalTheory.T.hodge_cpt_away_from_primes E H D l Xo c O β Y S Ω K J y 𝔐 hβ q fun r hr => not_inFibre hξ hgen hr
+  obtain ⟨-, -, -, -, -, -, hind, -⟩ := _root_.GlobalTheory.CompanionTheory.Ar.HodgeCpt.basic E H D l Xo c O β Y S Ω K J y 𝔐 hβ
+  obtain ⟨hV, -, hlat⟩ := _root_.GlobalTheory.CompanionTheory.Ar.HodgeChar0.lattices_of_char_zero E H D l Xo c O β Y S Ω K J y 𝔐 hβ q fun r hr => not_inFibre hξ hgen hr
   have hsm : Smooth 𝔐.t.G.hom := 𝔐.t.semi.smooth
   obtain ⟨Vz, _, _, ⟨MR⟩⟩ := lieModel_exists 𝔐.X 𝔐.t.G ℂ z
-  obtain ⟨ev, hev1, hev2, -⟩ := GlobalTheory.T.lie_lattice_eval_at_local_ring 𝔐.X 𝔐.t.G Ω 𝔐.ξ 𝔐.Li 𝔐.M ℂ z hgen Vz MR hξ hsm
-  obtain ⟨h, hHI, hh, hp⟩ := GlobalTheory.T.hodge_hermitian_form_exists E H 𝔐.X 𝔐.t z Vz MR (interior_pol 𝔐 hβ z hz)
+  obtain ⟨ev, hev1, hev2, -⟩ := _root_.GlobalTheory.CompanionTheory.Ar.lieLat_val 𝔐.X 𝔐.t.G Ω 𝔐.ξ 𝔐.Li 𝔐.M ℂ z hgen Vz MR hξ hsm
+  obtain ⟨h, hHI, hh, hp⟩ := _root_.GlobalTheory.CompanionTheory.Ar.exists_hodgeInnerProduct_form E H 𝔐.X 𝔐.t z Vz MR (interior_pol 𝔐 hβ z hz)
 
   let eA : 𝔐.X.presheaf.stalk q.1 ≃+* regAt 𝔐.ξ q :=
     RingEquiv.ofBijective (genMap 𝔐.ξ q).rangeRestrict ⟨fun a b e => hξ.inj q (congrArg Subtype.val e),
@@ -555,7 +557,7 @@ theorem exists_norm : ∀ (E : Type) [Field E] [NumberField E] [IsCMField E] (H 
     obtain ⟨π, hπ, hreg⟩ := exists_dual 𝔐 hind q hlat s b hb ((hV s).symm.trans hVb)
     have hbL : ∀ k, b k ∈ 𝔐.M.lat q := fun k => hVL (hVb ▸ Submodule.subset_span ⟨k, rfl⟩)
     have hg : ∀ j, ∃ g : Vz →ₗ[ℂ] ℂ, ∀ k, g (val (b k)) = if j = k then 1 else 0 := fun j => by
-      obtain ⟨g, hg⟩ := GlobalTheory.T.lattice_regular_at_local_point 𝔐.X 𝔐.t.G Ω 𝔐.ξ 𝔐.Li 𝔐.M ℂ z hgen Vz MR (π j) hξ (hreg j)
+      obtain ⟨g, hg⟩ := _root_.GlobalTheory.CompanionTheory.Ar.RootHt.exists_lieFunctional 𝔐.X 𝔐.t.G Ω 𝔐.ξ 𝔐.Li 𝔐.M ℂ z hgen Vz MR (π j) hξ (hreg j)
       refine ⟨g, fun k => hg (b k) _ _ (hvalAt _ (hbL k)) ?_⟩
       rw [hπ j k]
       split_ifs

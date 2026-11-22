@@ -1,8 +1,8 @@
 module
 
-public import CompanionTheory.AutomorphicTheory.NumberFieldModels.NFTieProv
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutGaugeGVsTr
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutGaugeGTrChain
+public import CompanionTheory.AutomorphicTheory.NumberFieldModels.Bundle0001
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0124
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0109
 public import Formalism.HermitianCurvature.HermitianCurvatureProofs.ActualAdjointnessFromHermitian
 
 @[expose] public section

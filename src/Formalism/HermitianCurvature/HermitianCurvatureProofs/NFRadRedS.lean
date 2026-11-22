@@ -1,6 +1,6 @@
 module
 
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.NFRadRedA
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0047
 
 @[expose] public section
 

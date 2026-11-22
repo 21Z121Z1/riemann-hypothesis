@@ -1,10 +1,8 @@
 module
 
-public import CompanionTheory.AutomorphicTheory.PadicCyclotomicFields.GcohCmp
-public import CompanionTheory.AutomorphicTheory.PadicCyclotomicFields.GcohField
-public import CompanionTheory.AutomorphicTheory.PadicCyclotomicFields.GcohMu
-public import CompanionTheory.AutomorphicTheory.PadicCyclotomicFields.GcohTate
-public import CompanionTheory.AutomorphicTheory.PadicCyclotomicFields.GcohFin
+public import CompanionTheory.AutomorphicTheory.PadicCyclotomicFields.Bundle0002
+public import CompanionTheory.AutomorphicTheory.PadicCyclotomicFields.Bundle0001
+public import CompanionTheory.AutomorphicTheory.PadicCyclotomicFields.Bundle0003
 
 @[expose] public section
 

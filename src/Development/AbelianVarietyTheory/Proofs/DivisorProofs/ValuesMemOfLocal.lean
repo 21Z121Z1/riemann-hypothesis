@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MaximalIdealEqJointEigen
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0162
 
 @[expose] public section
 

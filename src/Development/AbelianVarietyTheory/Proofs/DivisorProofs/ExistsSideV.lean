@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HasTuplesOfLaws
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsModelsExt
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1820
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2799
 public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.IntValuationEqOfMem
 public import Formalism.LocalToGlobal.IndefiniteReal.LinksW
 public import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.IsStepWeil

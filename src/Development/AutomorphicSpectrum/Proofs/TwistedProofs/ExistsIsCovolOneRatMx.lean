@@ -1,13 +1,13 @@
 module
 
 public import Mathlib
-public import Formalism.LocalToGlobal.IndefiniteReal.RealSeparation.ParabSt
-public import Formalism.LocalToGlobal.IndefiniteReal.RealSeparation.BesPerSt
+public import Formalism.LocalToGlobal.IndefiniteReal.RealSeparation.Bundle0001
+public import Formalism.LocalToGlobal.IndefiniteReal.RealSeparation.Bundle0002
 public import Formalism.LocalToGlobal.IndefiniteReal.OrthogonalComplementCharacterisation
-public import Formalism.LocalToGlobal.IndefiniteReal.DatumVec
-public import Formalism.LocalToGlobal.IndefiniteReal.AutomorphicFormsHyp
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ThetaRestrictIsotropicQuotientWittTowerPropertie
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsFundamentalDomainMassOneCocompactLattice
+public import Formalism.LocalToGlobal.IndefiniteReal.Bundle0016
+public import Formalism.LocalToGlobal.IndefiniteReal.Bundle0013
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0256
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0584
 
 @[expose] public section
 

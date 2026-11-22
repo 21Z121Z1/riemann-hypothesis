@@ -2,7 +2,7 @@ module
 
 public import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.HeckeFubiniCompatibility.PSmoothA
 public import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.IsotropicMahlerBounds.VeryCuspZero
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ContDiffOnInvReal
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0370
 
 @[expose] public section
 

@@ -1,11 +1,11 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Definitions.MetricPeriods.GroupDict
+public import Development.AutomorphicSpectrum.Definitions.MetricPeriods.Bundle0004
 public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsSheetCover
 public import GroundTheory.HeightsAndTheta.Heights.FiniteCovolume.StatementsProved
 public import GroundTheory.HeightsAndTheta.Heights.CountingLowerBound.Assembly
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArakelovGeometry.ComplexHessianTransposeIsHermitian
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArakelovGeometry.Bundle0007
 
 @[expose] public section
 

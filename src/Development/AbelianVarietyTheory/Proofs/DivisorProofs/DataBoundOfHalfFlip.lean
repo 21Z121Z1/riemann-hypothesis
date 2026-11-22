@@ -1,11 +1,11 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PlaceSzNonneg
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1611
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FiniteCoefficientBound
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.FlatIntegrandFlippedTensorLocallyConstantCompact
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IntegralUnfoldingVariablesMemFieldRange
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdelicScalarBase
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0604
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0425
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0901
 
 @[expose] public section
 

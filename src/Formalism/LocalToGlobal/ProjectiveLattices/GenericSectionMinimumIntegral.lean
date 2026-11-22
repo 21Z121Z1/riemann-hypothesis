@@ -2,7 +2,7 @@ module
 
 public import Formalism.LocalToGlobal.ProjectiveLattices.SumT0MulRatioEqOne
 public import Formalism.LocalToGlobal.ProjectiveLattices.TotalDegreePderivLt
-public import Formalism.LocalToGlobal.ProjectiveLattices.TieInst
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0037
 
 @[expose] public section
 

@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Development.WeilBound.CoreStatements.AutomorphicKernels.SiegelWeilFormula.UnramifiedWhittaker.CProps
+public import Development.WeilBound.CoreStatements.AutomorphicKernels.SiegelWeilFormula.UnramifiedWhittaker.Bundle0002
 public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.AdicIntegersCompact.IsCompactAdicCompletionIntegers
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SelfDualVol
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0607
 
 @[expose] public section
 

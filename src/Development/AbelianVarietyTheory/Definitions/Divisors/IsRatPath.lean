@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Divisors.IsIsoFromNormalization
-public import Development.AbelianVarietyTheory.Definitions.Divisors.IsAdmissibleIntegralBasisChangeOne
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0046
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0007
 
 @[expose] public section
 

@@ -3,16 +3,16 @@ module
 public import Mathlib
 public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.CuspDiscreteDecompositionGL
 public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.NotIsFinitePartOfBot
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CuspidalOfL2CuspidalMemStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SmoothKFiniteCenterStatement
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0463
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SmoothKFiniteCenter
 public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.KFiniteL2SmoothRepresentative
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CuspDiscreteDecompositionGL
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CuspRapidDecaySiegelGL
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0624
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0556
 public import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.DepthZeroSupport
-public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.LocalLanglandsGL
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IrreducibleCuspidalSmoothModuleStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IrreducibleSmoothModuleUniqueStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.KFiniteVectorsDenseStatement
+public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.Bundle0007
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0642
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0644
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0676
 
 @[expose] public section
 
@@ -31,7 +31,7 @@ theorem mem_of_stable {H : Submodule ℂ (L2 (latticeGL E a) μ)} (hH : H ≤ L2
       ∃ h : MemL2Quotient (latticeGL E a) μ φ.1, h.toL2 ∈ H) (φ : Sm E a)
     (hφ : IsCuspForm φ ∧ (∀ t g, φ.1 (splitCentre E a t * g) = φ.1 g) ∧
       ∃ h : MemL2Quotient (latticeGL E a) μ φ.1, h.toL2 ∈ H) : φ ∈ W :=
-  GlobalTheory.T.irreducible_smooth_module_unique E a μ H hH hi W hs h0 hW φ hφ
+  _root_.GlobalTheory.CompanionTheory.CuspIrred.irred_module E a μ H hH hi W hs h0 hW φ hφ
 
 theorem exists_cusp_form_of_K_finite {H : Submodule ℂ (L2 (latticeGL E a) μ)} (hH : H ≤ L2cusp μ)
     (hi : IsIrredSubrep (R (latticeGL E a) μ) H) {F : L2 (latticeGL E a) μ} (hF : F ∈ H) (hk : IsKFinL2 μ F) :
@@ -40,8 +40,8 @@ theorem exists_cusp_form_of_K_finite {H : Submodule ℂ (L2 (latticeGL E a) μ)}
   obtain ⟨φ, e, hm, hl, hz, hlev, hkf, hzf⟩ := GlobalTheory.CompanionTheory.SmoothRep.smoothRep E a μ H hH hi F hF hk
   have hc : Continuous φ.1 := ContAut.continuous_of_isOpen_stab E a φ hlev
   have hFe : hm.toL2 = F := l2DiscreteQuotient_ext_iff_lift_ae_eq.2 (hm.lift_toL2_ae_eq.trans e.symm)
-  have hcusp : IsCuspidal φ.1 := GlobalTheory.T.cuspidal_of_L2_cuspidal_mem E a μ φ.1 hc hl hz hm (by rw [hFe]; exact hH hF)
-  exact ⟨φ, e, ⟨⟨hl, hlev, hkf, hzf, GlobalTheory.T.smooth_K_finite_center E a μ φ hl hz hlev hkf hzf hm⟩, hcusp⟩, hz, hm,
+  have hcusp : IsCuspidal φ.1 := _root_.GlobalTheory.CompanionTheory.CuspL2.isCuspidal_of_toL2_mem E a μ φ.1 hc hl hz hm (by rw [hFe]; exact hH hF)
+  exact ⟨φ, e, ⟨⟨hl, hlev, hkf, hzf, _root_.GlobalTheory.CompanionTheory.Growth.moderate_growth E a μ φ hl hz hlev hkf hzf hm⟩, hcusp⟩, hz, hm,
     by rw [hFe]; exact hF⟩
 
 end RfCs.FrobeniusSplitPrimeDatum

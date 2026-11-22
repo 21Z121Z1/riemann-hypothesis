@@ -1,15 +1,21 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.PlacesToAdeles
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IntegrationByPartsRightDerivativeAdelicQuotient
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.AdelicUnitaryTopology
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.AdelicUnitaryUnimodularExistsFundamentalDomain
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ContinuousIntegralCompactAutomorphicQuotientParaStatement
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.WeilRepresentationRationalTranslateSubstitutionStatement
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.BesselToFourierJacobiHandedFamilyContinuousAutomStatement
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.PairedThetaKernelContinuousAndRationallyInvarianStatement
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.FourierJacobiHandOffAutomorphicStatement
+public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.Bundle0009
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0242
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0160
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0170
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0090
+public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.Bundle0008
+public import Formalism.LocalToGlobal.IndefiniteReal.OrthogonalComplementCharacterisation
+public import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.ExistsHeightLeTwoMulQuotHeight
+public import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.WittDecompSymplInclIsotropicInclAnisotropic
+public import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.Bundle0019
+public import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.Bundle0007
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0112
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0126
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0121
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0127
 
 @[expose] public section
 
@@ -33,7 +39,7 @@ theorem integral_right {V : HSp D} (v : Vol V) {F : GA D V → ℂ} (hF : ∀ γ
 
 theorem IsContAut.integrableOn {V : HSp D} (hV : CoCpt V) (v : Vol V) {F : GA D V → ℂ} (hF : IsContAut V F) :
     IntegrableOn F v.𝓕 v.μ :=
-  (GlobalTheory.T.continuous_integral_compactAutomorphicQuotient_param D V hV v Unit (fun g _ => F g) (hF.2.comp continuous_fst) (fun γ hγ g _ => hF.1 γ hγ g)).1 ()
+  (_root_.GlobalTheory.CocompactParam.continuous_integral_param D V hV v Unit (fun g _ => F g) (hF.2.comp continuous_fst) (fun γ hγ g _ => hF.1 γ hγ g)).1 ()
 
 section BF
 
@@ -108,7 +114,7 @@ theorem integrableOn_pair {Y : GA D J.W₀ → WO J.W₀ B.L → ℂ} {F : WO J.
 
 theorem contAut_pairKer {Y : GA D J.W₀ → WO J.W₀ B.L → ℂ} {Ξ : WO J.W₀ B.V₀ → ℂ} (hY : IsQuasiFam ψ J.W₀ B.L Y)
     (hΞ : IsThetaFunO ψ J.W₀ B.V₀ Ξ) (h₁ : GA D B.A) : IsContAut J.W₀ fun h₀ => pairKer s vL Y Ξ h₀ h₁ :=
-  have H := GlobalTheory.T.pairedThetaKernel_continuous_and_rationally_invariant D ψ σ J B s vL Y Ξ hY hΞ
+  have H := _root_.GlobalTheory.PairKer.pairKer_law D ψ σ J B s vL Y Ξ hY hΞ
   ⟨fun γ hγ h₀ => H.2.1 γ hγ h₀ h₁, H.1.comp (continuous_id.prodMk continuous_const)⟩
 
 theorem handFB_left {Y Y' : GA D J.W₀ → WO J.W₀ B.L → ℂ} {Ξ : WO J.W₀ B.V₀ → ℂ} (hY : IsQuasiFam ψ J.W₀ B.L Y)
@@ -160,11 +166,11 @@ variable {σ : ℕ} {B : BesLev D (σ + 1)} {J : JacLev D (σ + 1)} {B' : BesLev
 
 theorem quasi_handBF (hφ : IsContAut B.A φ) (h₁ : IsThetaFunO ψ B.V₀ J.W₀ Ξ₁) :
     IsQuasiFam ψ J.W₀ B'.L (handBF s₁ l φ Ξ₁) :=
-  GlobalTheory.T.besselToFourierJacobi_handedFamily_continuous_automorphic D ψ _ B J s₁ B'.L B'.ζ B'.line l φ Ξ₁ hφ h₁
+  _root_.GlobalTheory.HandFam.handBF_isQuasiFam D ψ _ B J s₁ B'.L B'.ζ B'.line l φ Ξ₁ hφ h₁
 
 theorem contAut_hand0 (hφ : IsContAut B.A φ) (h₁ : IsThetaFunO ψ B.V₀ J.W₀ Ξ₁) (h₂ : IsThetaFunO ψ J.W₀ B'.V₀ Ξ₂) :
     IsContAut B'.A (hand0 s₁ s₂ l vL φ Ξ₁ Ξ₂) :=
-  GlobalTheory.T.fourierJacobiHandOff_automorphic D ψ σ J B' s₂ vL _ Ξ₂ (quasi_handBF s₁ l hφ h₁) h₂
+  _root_.GlobalTheory.handFBLaw D ψ σ J B' s₂ vL _ Ξ₂ (quasi_handBF s₁ l hφ h₁) h₂
 
 theorem doubleThetaUnfolding_linear_function (hφ : IsContAut B.A φ) (hφ' : IsContAut B.A φ') (h₁ : IsThetaFunO ψ B.V₀ J.W₀ Ξ₁)
     (h₂ : IsThetaFunO ψ J.W₀ B'.V₀ Ξ₂) (c : ℂ) :

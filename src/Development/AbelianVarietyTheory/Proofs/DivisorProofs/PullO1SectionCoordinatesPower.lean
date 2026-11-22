@@ -1,6 +1,6 @@
 module
 
-public import Development.AbelianVarietyTheory.Definitions.Divisors.NotSymEOfNe
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0068
 public import Development.AbelianVarietyTheory.Definitions.Divisors.UnifAlong
 
 @[expose] public section

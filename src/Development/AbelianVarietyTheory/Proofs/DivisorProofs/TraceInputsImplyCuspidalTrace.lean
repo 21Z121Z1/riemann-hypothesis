@@ -1,16 +1,18 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Divisors.HasTypeVec
-public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.PseudoCoefficientUpqTrivial
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsAuxiliarySplitPlaceNotMemFinsetStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsOpenCompactLevelSphericalOffTypesStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsRestrictedProductHaarGivenFiniteFactorsStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TestFunctionsTransportLocalLatticeIsometriesStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TransportPureTensorsProductMeasureFiniteAdelicStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdmissibleRepHasTraceFiniteAdelicPureTensorFunctStatement
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.RepresentationTransportTopGroupEquivStatement
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsInequivalentRepresentativesThroughMemberStatement
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0040
+public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.Bundle0008
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1198
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1200
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1232
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TransportPureTensorsProductMeasureFiniteAdelic
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1215
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0282
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0033
+public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.Bundle0007
+public import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.Bundle0011
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0274
 
 @[expose] public section
 
@@ -63,7 +65,7 @@ theorem exists_family {G : Type} [Group G] [TopologicalSpace G]
       · exact Or.inr (Or.inl ⟨i, hbB i⟩)
     · exact Or.inr (Or.inr (by rw [Subsingleton.elim k' 0]; exact hbσ))
   obtain ⟨n, s, hne, ⟨j₀, hj₀⟩, hcov⟩ :=
-    GlobalTheory.T.exists_inequivalentRepresentatives_through_member G (n₁ + n₂ + 1) (fun k => (b k).X) (fun k => (b k).ρ) (Fin.natAdd (n₁ + n₂) 0)
+    _root_.GlobalTheory.TrUnion.exists_reps_through G (n₁ + n₂ + 1) (fun k => (b k).X) (fun k => (b k).ρ) (Fin.natAdd (n₁ + n₂) 0)
   refine ⟨n, fun j => (b (s j)).X, fun j => inferInstance, fun j => inferInstance, fun j => (b (s j)).ρ, hne,
     fun i => ?_, fun i => ?_, fun P hA hB hσ k => ?_, j₀, fun P hP => ?_⟩
   · obtain ⟨j, hj⟩ := hcov (Fin.castAdd 1 (Fin.castAdd n₂ i))

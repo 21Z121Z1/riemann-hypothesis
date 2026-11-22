@@ -9,7 +9,7 @@ public import GroundTheory.ProfiniteCohomology.LocalClassFormation.FiniteVanishi
 public import GroundTheory.ProfiniteCohomology.LocalClassFormation.FiniteVanishing.Vanishing
 public import GroundTheory.ProfiniteCohomology.LocalClassFormation.OrderScalars
 public import GroundTheory.ProfiniteCohomology.LocalEulerCharacteristic.Scalars
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.COneH2UnitsSubsingleton
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0370
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TsenAlgebraicExtensionRatFunc
 
 @[expose] public section

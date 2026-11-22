@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import ReciprocityTheory.DualLattices.VEqZeroOfPowEqOne
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.WeightedSumBounds.PtSolveMapFixedIff
+public import ReciprocityTheory.DualLattices.Bundle0003
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.WeightedSumBounds.Bundle0002
 
 @[expose] public section
 

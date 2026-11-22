@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Formalism.PeriodIntegrals.SSAscent
+public import Formalism.PeriodIntegrals.Bundle0006
 public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.SemisimpleTraceForm.TraceNilStep
 
 @[expose] public section

@@ -1,8 +1,8 @@
 module
 
 public import Development.WeilBound.CoreStatements.AutomorphicKernels.LocalGlobalCompatibility.TemperedLocalGlobal.LocalGlobalOfIwahori
-public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.PstAndWdAtOfIsRegAlg
-public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.RankOneUnitary
+public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.Bundle0012
+public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.Bundle0007
 public import Development.AutomorphicArithmetic.ThetaCorrespondence.CuspidalSupport.GaloisStatementWeakOfFull
 
 @[expose] public section

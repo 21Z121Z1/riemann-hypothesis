@@ -2,10 +2,10 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ResFinEqOneOfAway
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.PlacesBelowSplitCoprimeConductorOfAdmissible
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ValuedEqOneOfLe
-public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.AddCharTrivialIntegralFiniteAdeleMul
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsUnitaryRationalInfTypeSubgroupAndInfTypeUnique
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0190
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0101
+public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.Bundle0059
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0092
 
 @[expose] public section
 

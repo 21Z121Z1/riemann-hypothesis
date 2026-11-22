@@ -1,11 +1,10 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BalTau
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2046
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsTauLattice
-public import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.GlobalFnsHolds
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RosatiGeneratorValueCompEndomorphismsStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RosatiGeneratorValueAddEndomorphismsCubicalStatement
+public import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.Bundle0011
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2213
 
 @[expose] public section
 
@@ -199,7 +198,7 @@ theorem exists_balTau : ∀ (R : Type) [CommRing R] [IsLocalRing R] (B : Over (S
     have e3 := hδ b y z p J hJ
     have a1 := hadd (a • y) (b • y) z p J hJ
     have a2 := hadd2 y (star a • z) (star b • z) p J hJ
-    have r := GlobalTheory.T.rosatiGenerator_value_add_endomorphisms_cubical cub hG hA (act.act a) (act.act (star a)) (act.act b) (act.act (star b)) (act.act (a + b))
+    have r := _root_.GlobalTheory.RosAddPair.ros_val_padd cub hG hA (act.act a) (act.act (star a)) (act.act b) (act.act (star b)) (act.act (a + b))
       (act.act (star (a + b))) (act.map_add a b) (by rw [star_add, act.map_add]) (u a) (u b) (u (a + b)) (hug a) (hug b)
       (hug (a + b)) (hu0 a) (hu0 b) (hu0 (a + b)) hJ (c y) (c z)
     rw [← c_lin, ← c_lin, ← c_lin, ← c_lin] at r
@@ -221,7 +220,7 @@ theorem exists_balTau : ∀ (R : Type) [CommRing R] [IsLocalRing R] (B : Over (S
     have e1 := hδ (a * b) y z p J hJ
     have e2 := hδ a (b • y) z p J hJ
     have e3 := hδ b y (star a • z) p J hJ
-    have r := GlobalTheory.T.rosatiGenerator_value_comp_endomorphisms hG hA M.isLB (act.act a) (act.act (star a)) (act.act b) (act.act (star b)) (act.act (a * b))
+    have r := _root_.GlobalTheory.rosGen_comp_val hG hA M.isLB (act.act a) (act.act (star a)) (act.act b) (act.act (star b)) (act.act (a * b))
       (act.act (star (a * b))) (act.map_mul a b) (by rw [star_mul, act.map_mul]) (u a) (u b) (u (a * b)) (hug a) (hug b)
       (hug (a * b)) (hu0 a) (hu0 b) (hu0 (a * b)) hJ (c y) (c z)
     rw [← c_lin, ← c_lin] at r

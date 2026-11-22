@@ -1,7 +1,6 @@
 module
 
-public import Formalism.SharpRestriction.GrowthBounds.BinomialRatio.FamilyFourthBound
-public import Formalism.SharpRestriction.GrowthBounds.BinomialRatio.SegmentStatementHolds
+public import Formalism.SharpRestriction.GrowthBounds.BinomialRatio.Bundle0002
 public import Formalism.SharpRestriction.GrowthBounds.BinomialRatio.ThresholdLowerBounds
 
 @[expose] public section

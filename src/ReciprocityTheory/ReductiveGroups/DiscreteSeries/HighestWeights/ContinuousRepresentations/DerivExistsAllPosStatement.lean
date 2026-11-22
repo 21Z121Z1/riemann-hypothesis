@@ -2,7 +2,7 @@ module
 
 public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.DefsRep
 public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.CasimirCoefficients.PsiExistsStatement
-public import Formalism.RealPlaceAnalysis.StatementKT
+public import Formalism.RealPlaceAnalysis.Bundle0002
 
 @[expose] public section
 

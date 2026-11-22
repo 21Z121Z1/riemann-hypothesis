@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Formalism.UnipotentAdelicQuotients.HaarProductClosedCompact
+public import Formalism.UnipotentAdelicQuotients.Bundle0001
 
 @[expose] public section
 

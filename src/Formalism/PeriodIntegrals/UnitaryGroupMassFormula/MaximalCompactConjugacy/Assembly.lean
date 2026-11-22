@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Formalism.LocalToGlobal.SiegelLatticeTheory.FundamentalEquivalence.AdBridge
-public import Formalism.PeriodIntegrals.AdBridgeSteps
+public import Formalism.PeriodIntegrals.Bundle0021
 
 @[expose] public section
 

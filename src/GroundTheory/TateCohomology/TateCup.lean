@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import GroundTheory.TateCohomology.TateTheorem
-public import GroundTheory.TateCohomology.TateCupUnit
+public import GroundTheory.TateCohomology.Bundle0009
 
 @[expose] public section
 

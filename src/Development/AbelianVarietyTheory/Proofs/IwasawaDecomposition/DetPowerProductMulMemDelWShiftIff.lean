@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Formalism.UnipotentAdelicQuotients.WeylLatDual
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.PolFunApply
+public import Formalism.UnipotentAdelicQuotients.Bundle0002
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0017
 
 @[expose] public section
 

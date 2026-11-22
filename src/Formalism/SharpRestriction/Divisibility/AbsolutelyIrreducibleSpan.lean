@@ -5,13 +5,13 @@ public import Formalism.LocalRingCardinality.RhoDetPrimeEqMuTildeMulChiPow
 public import Formalism.LocalRingCardinality.DataParams₂
 public import Formalism.LocalRingCardinality.DataParams
 public import Formalism.LocalRingCardinality.DataDIV
-public import Formalism.LocalRingCardinality.DataDIVDefs
+public import Formalism.LocalRingCardinality.Bundle0003
 public import Formalism.LocalRingCardinality.DataTheta
 public import Formalism.LocalRingCardinality.PrincipalHermitianLattice
-public import Formalism.LocalRingCardinality.DataKap
-public import Formalism.LocalRingCardinality.DataAmbForm
+public import Formalism.LocalRingCardinality.Bundle0004
+public import Formalism.LocalRingCardinality.Bundle0002
 public import Formalism.HarderNarasimhan.StatementPl
-public import Formalism.HermitianLattices.StatementMaj
+public import Formalism.HermitianLattices.Bundle0002
 public import Formalism.SharpRestriction.Divisibility.SchurIrreducible
 public import Formalism.SharpRestriction.ParConsts
 public import Formalism.SharpRestriction.ParamsHeightRankConstant

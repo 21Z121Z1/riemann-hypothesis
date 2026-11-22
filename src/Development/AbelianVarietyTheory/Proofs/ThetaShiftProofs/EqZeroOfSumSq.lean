@@ -4,8 +4,8 @@ public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.ArchimedeanThetaValues.IsThetaL2NormSquared
 public import Development.AbelianVarietyTheory.Definitions.RegularCharts.ModelAt
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.UnifUniqSt
-public import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.HolArcNilpotent
-public import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.RiemannFormFramePeriodsEqMajorant
+public import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.Bundle0019
+public import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.Bundle0020
 
 @[expose] public section
 

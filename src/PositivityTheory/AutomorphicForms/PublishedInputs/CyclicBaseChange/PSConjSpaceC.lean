@@ -2,8 +2,8 @@ module
 
 public import PositivityTheory.AutomorphicForms.PublishedInputs.CyclicBaseChange.SConjSpaceC
 public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ContinuousMapGL
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsAdelicGLHomeomorphInfiniteFinite
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CapelliOperatorAlgebraStableUnderComplexConj
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0221
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1173
 
 @[expose] public section
 

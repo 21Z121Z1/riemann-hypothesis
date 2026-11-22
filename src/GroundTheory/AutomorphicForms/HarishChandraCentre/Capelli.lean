@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import GroundTheory.AutomorphicForms.HarishChandraCentre.MemCenterOfCommuteE
+public import GroundTheory.AutomorphicForms.HarishChandraCentre.Bundle0001
 public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.EMulSubMulCapelliMatrixPow
 
 @[expose] public section

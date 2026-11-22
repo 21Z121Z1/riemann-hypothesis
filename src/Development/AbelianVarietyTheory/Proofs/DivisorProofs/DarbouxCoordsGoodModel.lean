@@ -1,13 +1,13 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Divisors.SiegelWeilAnisotropicHermitian
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0044
 public import Development.AbelianVarietyTheory.Definitions.Divisors.CTSmallCone
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HasOpBOfMemClosure
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WeylElementOperatorBijectiveStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WeilOperatorForLeviMatrix
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WeilOperatorForUnipotentMatrix
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DarbouxCoordinatesGoodModel
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1580
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1778
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1591
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1702
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1784
 
 @[expose] public section
 

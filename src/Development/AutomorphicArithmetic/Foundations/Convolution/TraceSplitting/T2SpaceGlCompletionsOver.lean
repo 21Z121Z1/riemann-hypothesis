@@ -2,11 +2,11 @@ module
 
 public import Mathlib
 public import Development.AutomorphicArithmetic.Foundations.Convolution.TraceSplitting.NormCharSplit
-public import Development.AutomorphicArithmetic.Foundations.Convolution.TraceSplitting.Places
-public import Development.AutomorphicArithmetic.Foundations.Convolution.TraceSplitting.MatchOne
-public import Development.AutomorphicArithmetic.Foundations.Convolution.IntegrableConvolution.MatchProd
+public import Development.AutomorphicArithmetic.Foundations.Convolution.TraceSplitting.Bundle0002
+public import Development.AutomorphicArithmetic.Foundations.Convolution.TraceSplitting.Bundle0001
+public import Development.AutomorphicArithmetic.Foundations.Convolution.IntegrableConvolution.Bundle0009
 public import Development.AutomorphicArithmetic.Foundations.Convolution.IntegrableConvolution.SplitLoc
-public import Development.AutomorphicArithmetic.Foundations.Convolution.TwistedLocalOrbits.PlaceUp
+public import Development.AutomorphicArithmetic.Foundations.Convolution.TwistedLocalOrbits.Bundle0006
 
 @[expose] public section
 

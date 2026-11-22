@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsPadicAlgClRingEquivComplexCompEqOfCountabl
-public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.MkLeContinuumOfDenseRange
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0022
+public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0015
 
 @[expose] public section
 

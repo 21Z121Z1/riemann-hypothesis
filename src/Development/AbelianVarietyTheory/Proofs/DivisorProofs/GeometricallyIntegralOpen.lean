@@ -1,17 +1,17 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Divisors.FormalEnd
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0064
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.UniformisationConclusion
 public import Development.AbelianVarietyTheory.Definitions.Degenerations.AdmissibleBaseOfCompleteDvr
-public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.EndoLbIsoSymmetryHypothesisExtendNormalModel
+public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.Bundle0168
 public import Development.AbelianVarietyTheory.Proofs.HomogeneousIdeals.GenericExistsUniqueOActOfIsGrpPullback
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsCechPicardGlueFiniteDisjointCover
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsCechLineBundleAmbientOfOpenImmersion
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsLineBundlePullOfIsLineBundleOnOpen
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.DiscreteValuationRings.LBLocalC
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsSectionTranslatesCoverSemiAbelianStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsBundleExtensionTranslateOpenStatement
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2002
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0827
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0834
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.DiscreteValuationRings.Bundle0003
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2356
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2339
 
 @[expose] public section
 
@@ -391,8 +391,8 @@ theorem lb_extends_of_extLam : ∀ (R : Type) [CommRing R] [IsDomain R] [IsLocal
   have := hG.geomConnected
   have := geometricallyIntegral_of_smooth G.hom
   refine Spread.exists_extension_of_cover R G.left G.hom (eSec G) (Over.w η[G]) L hL fun x ↦ ?_
-  obtain ⟨a, ha⟩ := GlobalTheory.T.exists_section_translates_cover_semiAbelian R hR G hG O hO x
-  refine ⟨(𝟙 G * (toUnit G ≫ a)).left ⁻¹ᵁ O, ha, hO _ ?_, GlobalTheory.T.exists_bundle_extension_translate_open R G L PP hL hPP O N hN hiso a⟩
+  obtain ⟨a, ha⟩ := _root_.GlobalTheory.Mum.Cover.exists_section_translate_mem R hR G hG O hO x
+  refine ⟨(𝟙 G * (toUnit G ≫ a)).left ⁻¹ᵁ O, ha, hO _ ?_, _root_.GlobalTheory.Mum.exists_ext_translate R G L PP hL hPP O N hN hiso a⟩
   have h₁ : eSec G ≫ (𝟙 G * (toUnit G ≫ a)).left ≫ G.hom = 𝟙 _ := by
     rw [Over.w]; exact Over.w η[G]
   exact congrArg (fun q : Sp R ⟶ Sp R ↦ q (closedPoint R)) h₁

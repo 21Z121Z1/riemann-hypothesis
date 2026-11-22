@@ -1,19 +1,21 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.BhattScholzeCrystallineLattices
+public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.Bundle0005
 public import Formalism.LocalRingCardinality.AdicCompletionLocal.LocTied
-public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.ConvZero
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.WachInclusionInjectiveSaturatedInterStatement
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsWittTiltLatticeTensorCancelStatement
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.WittTwistInvariantBasisChangeStatement
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsWachPrismOverIntegersStatement
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsCrysLatOfTrivial
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.PrismaticFCrystalValueLocalPrismAinfWittTensorStatement
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsAdicCoordinatesOfBasisModPStatement
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsBaseChangeLatticeOfBasisAfterExtensionStatement
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsIsUnitMatrixOfPowSmulSpanInvertStatement
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ProjectiveOfFreeLatticeOverFiniteFreeRingStatement
+public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0005
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0312
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0229
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0409
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsWachPrismOverIntegers
+public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.NormLeOneOfMemOL
+public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.ExistsOfLayers
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0150
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0284
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0010
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0030
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0016
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0038
 
 @[expose] public section
 
@@ -154,7 +156,7 @@ theorem build (E : WEt I) [Nontrivial R.EE] {Zl S W : Type} [CommRing Zl] [CommR
           rw [hw, hw', Finset.univ_eq_empty, Finset.sum_empty, Finset.sum_empty])⟩
         infer_instance
       · exact Module.finite_of_finrank_pos h0
-    exact GlobalTheory.T.isBaseChange_lattice_of_basis_after_extension S (LetA O n) R.EE O W RW (E.DD T) (TW RW T) a I.ioE c (E.jD T).toAddMonoidHom hinj hunit
+    exact _root_.GlobalTheory.isBaseChange_subtype_of_basis_after_extension S (LetA O n) R.EE O W RW (E.DD T) (TW RW T) a I.ioE c (E.jD T).toAddMonoidHom hinj hunit
       (E.jD_smul T) (fun t => ⟨_, (hψ t).symm⟩) d _ o hE ⟨Module.finBasis R.EE (E.DD T)⟩ _ (x T hT)
       (by rw [hq, (E.DD_free T).2]) (hbas T hT) _ (hNx T hT)
   · intro T y hy
@@ -209,7 +211,7 @@ theorem build (E : WEt I) [Nontrivial R.EE] {Zl S W : Type} [CommRing Zl] [CommR
     rw [← he, ← jD_smulA, (E.jD_inj _).eq_iff, eq_comm]
   · intro T
     by_cases hT : IsCrys PD T.ρ
-    · refine GlobalTheory.T.projective_of_free_lattice_over_finite_free_ring _ S _ _ z a (N T) _ (x T hT) (hNx T hT) (fun t ht => ?_) hz
+    · refine _root_.GlobalTheory.projective_compHom_of_free_of_finite_free _ S _ _ z a (N T) _ (x T hT) (hNx T hT) (fun t ht => ?_) hz
       have h1 := congrArg (E.jD T) ht
       rw [hsum, map_zero] at h1
       have h2 := (hbas T hT 0).unique (y₁ := fun i => ψ (t i)) (y₂ := 0) h1.symm (by simp)
@@ -367,7 +369,7 @@ theorem coord_EE (I : WIo R RA RW inclR φR gR πA) {S W : Type} [CommRing S] [C
     {d : ℕ} (o : Fin d → O) (hRW : ∀ r : RW, ∃! w : Fin d → W, r = ∑ j, o j • c (w j))
     (hA : ∀ α : LetA O n, ∃ s : Fin d → S, α = ∑ j, o j • a (s j))
     (e : R.EE) : ∃ e' : Fin d → R.EE, (∀ j, I.ioE (e' j) ∈ Set.range c) ∧ e = ∑ j, o j • e' j := by
-  refine GlobalTheory.T.exists_adic_coordinates_of_basis_mod_p PD.p _ R.EE W RW I.ioE c d o hRW R.EE_complete hW (fun e => ?_) e
+  refine _root_.GlobalTheory.AdicCoord.exists_coord PD.p _ R.EE W RW I.ioE c d o hRW R.EE_complete hW (fun e => ?_) e
   obtain ⟨α, m, h⟩ := R.EE_dense e 1
   obtain ⟨t, rfl⟩ := hA α
   obtain ⟨u, hu⟩ := R.EE_π

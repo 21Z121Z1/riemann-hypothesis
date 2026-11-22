@@ -1,6 +1,6 @@
 module
 
-public import Formalism.SharpRestriction.GrowthBounds.MultisetValuation.AllPlacesOfRestrictions
+public import Formalism.SharpRestriction.GrowthBounds.MultisetValuation.Bundle0010
 public import Formalism.ThetaLogCoordinates.UniformThetaSubstitution.FrobeniusLiftNorms.OmegaOfTraceDuality
 
 @[expose] public section

@@ -1,6 +1,6 @@
 module
 
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicCases.AutomorphyClauseStatement
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicCases.Bundle0001
 
 @[expose] public section
 

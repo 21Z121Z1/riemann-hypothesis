@@ -1,14 +1,16 @@
 module
 
-public import CompanionTheory.AutomorphicTheory.ThetaDilations.Bounded
+public import CompanionTheory.AutomorphicTheory.ThetaDilations.Bundle0002
 public import CompanionTheory.AutomorphicTheory.ThetaDilations.FstarDil
-public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.StandardAdelicCharacterStatement
-public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.RealQuadraticFormLemmaStatement
-public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.SchurFunctionSmoothRightInvariantStatement
-public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.SchurFunctionWhittakerEquivariantStatement
-public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.QuadraticLevelSetDensityStatement
-public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.LatticeFundamentalDomainVolumeStatement
-public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.WeilOperatorIntegralInvarianceStatement
+public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.Bundle0049
+public import Mathlib
+public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.RealQuadraticFormLemma
+public import CompanionTheory.SpectralGeometry.CountingDefinitions.AdelicEulerProducts.CountData
+public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.SchurFunctionSmoothRightInvariant
+public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.SchurFunctionWhittakerEquivariant
+public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.Bundle0026
+public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.Bundle0006
+public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.Bundle0051
 
 @[expose] public section
 
@@ -21,7 +23,7 @@ namespace CompanionTheory.PlacePermOperatorBicommutantSpan
 
 theorem sb_indL {F : Type} [Field F] [NumberField F] {ι : Type} [Fintype ι] {a : ℕ} (ha : 0 < a) :
     SB (indL (F := F) (ι := ι) a) := by
-  have := (GlobalTheory.T.mem_Oh_iff_and_nat_mul_properties F).2.2.1
+  have := (_root_.GlobalTheory.CompanionTheory.SW.Core.AfTop.finiteAdele_topology F).2.2.1
   have ha' : (a : F) ≠ 0 := by exact_mod_cast ha.ne'
   have e : indL (F := F) (ι := ι) a = ind 0 (LN F ι 1) ∘ Homeomorph.smul (uA (Units.mk0 (a : F) ha')) := by
     funext u
@@ -56,7 +58,7 @@ theorem bounded_a : ∀ (F : Type) [Field F] [NumberField F] [MeasurableSpace (A
     convert if_congr h (rfl : (1 : ℂ) = 1) (rfl : (0 : ℂ) = 0) <;> rfl
   have e2 : (fun w => ((ρ w (a : F) : ℝ) : ℂ) ^ 2 * τ w) = fun w => (x w : ℂ) + Complex.I := by
     funext w; simp only [hτ, map_natCast]; push_cast; field_simp
-  have e3 := fun ω => (GlobalTheory.T.theta_function_modularity F ψ hψ ι M B ρ P hQ _ _ (hC.2.2.2.1 ω) (indL 1) τ).2.1 a ha'
+  have e3 := fun ω => (_root_.GlobalTheory.CompanionTheory.SW.ThetaUD.main F ψ hψ ι M B ρ P hQ _ _ (hC.2.2.2.1 ω) (indL 1) τ).2.1 a ha'
   have e4 := (ei_inv F lf hlf h1 ψ hψ ι M B ρ P hQ hM _ (sb_indL one_pos) τ hp).2.1 a ha'
   rw [e1, e2] at e4
   simp only [e1, e2] at e3
@@ -77,25 +79,25 @@ theorem core : ∀ (F : Type) [Field F] [NumberField F], IsTotallyReal F → ∀
   have hC : CountData M B ρ Pr gf gi := ⟨inferInstance, m1, m2, fun ω => ⟨o2 ω, o1 ω⟩, hcnt⟩
   obtain ⟨ψ, hψ⟩ := (GlobalTheory.T.standard_adelic_character F).1
   obtain ⟨C, hb⟩ := bounded_a F lf hlf h1 ψ hψ ι M B ρ P hQ hM Ω Pr gf gi hC
-  choose! Df d1 d2 d3 d4 d5 using GlobalTheory.T.schur_function_whittaker_equivariant F lf hlf h1 ψ hψ ι M B ρ P hQ hM
-  obtain ⟨Di, i1, i2, i3, i4, i5⟩ := GlobalTheory.T.quadratic_level_set_density F ι M B ρ P hQ hM
+  choose! Df d1 d2 d3 d4 d5 using _root_.GlobalTheory.CompanionTheory.SW.Core.Dens.density_main F lf hlf h1 ψ hψ ι M B ρ P hQ hM
+  obtain ⟨Di, i1, i2, i3, i4, i5⟩ := _root_.GlobalTheory.CompanionTheory.SW.Core.Dens.density_of_q F ι M B ρ P hQ hM
   refine ⟨C, Df, Di, fun a ha => ⟨d1 a ha, d2 a ha, d3 a ha⟩, ⟨i1, i2, i3⟩, fun a ha β hβ => ?_⟩
-  obtain ⟨-, -, -, -, -, -, hint, -, hK, -⟩ := GlobalTheory.T.mem_Oh_iff_and_nat_mul_properties F
+  obtain ⟨-, -, -, -, -, -, hint, -, hK, -⟩ := _root_.GlobalTheory.CompanionTheory.SW.Core.AfTop.finiteAdele_topology F
   have hs := sb_indL (F := F) (ι := ι) ha
-  obtain ⟨N₁, p1, n1⟩ := GlobalTheory.T.weil_operator_integral_invariance F lf hlf h1 ψ hψ ι M B ρ P hQ _ hs
+  obtain ⟨N₁, p1, n1⟩ := _root_.GlobalTheory.CompanionTheory.SW.FstarPer.fstar_periodic F lf hlf h1 ψ hψ ι M B ρ P hQ _ hs
   have hq : Continuous (qf (hf F) (Bf B) : (ι → A F) → A F) := by unfold qf; fun_prop
   obtain ⟨N₂, p2, n2⟩ := hK _ ((hs.2.isCompact.image hq).insert (algebraMap F (A F) β))
   have hN : 0 < N₁ * N₂ := Nat.mul_pos p1 p2
   have hβN : ∃ r : 𝓞 F, (r : F) = ((N₁ * N₂ : ℕ) : F) * β := (hint _).1 (by
     rw [map_mul, map_natCast, Nat.cast_mul, mul_assoc]
     exact oh_mul (oh_nat N₁) (n2 _ (Set.mem_insert _ _)))
-  obtain ⟨⟨D, hD⟩, -, -, hvol⟩ := GlobalTheory.T.lattice_fundamental_domain_volume F hF ρ hρ _ hN
-  obtain ⟨I, e1, j1, e2⟩ := GlobalTheory.T.real_quadratic_form_lemma F ι M B ρ P hQ Ω Pr gf gi hC a ha β hβ _ hN hβN (fun y hy => by
+  obtain ⟨⟨D, hD⟩, -, -, hvol⟩ := _root_.GlobalTheory.CompanionTheory.SW.FD.main F hF ρ hρ _ hN
+  obtain ⟨I, e1, j1, e2⟩ := _root_.GlobalTheory.CompanionTheory.SW.CoefTheta.fourier_coefficient F ι M B ρ P hQ Ω Pr gf gi hC a ha β hβ _ hN hβN (fun y hy => by
     rw [Nat.cast_mul, mul_assoc]
     refine oh_mul (oh_nat N₁) (n2 _ (Set.mem_insert_of_mem _ ⟨y, subset_tsupport _ ?_, rfl⟩))
     rw [Function.mem_support, indL, Set.indicator_of_mem (s := {x : ι → A F | ∀ i, (a : A F) * x i ∈ Oh F}) hy]
     exact one_ne_zero) D hD
-  obtain ⟨j2, e3⟩ := GlobalTheory.T.schur_function_smooth_right_invariant F lf hlf h1 ψ hψ ι M B ρ P hQ hM _ hs (d4 a ha) i4 β hβ _ hN hβN
+  obtain ⟨j2, e3⟩ := _root_.GlobalTheory.CompanionTheory.SW.CoefEis.fourier_coeff_eis F lf hlf h1 ψ hψ ι M B ρ P hQ hM _ hs (d4 a ha) i4 β hβ _ hN hβN
     (fun x hx y => by
       rw [Nat.cast_mul, mul_assoc]
       exact (n1 _ (oh_mul (oh_nat N₂) hx)).2 y) D hD

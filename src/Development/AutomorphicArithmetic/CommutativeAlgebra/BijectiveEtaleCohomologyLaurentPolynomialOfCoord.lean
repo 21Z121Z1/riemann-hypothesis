@@ -1,21 +1,23 @@
 module
 
 public import Development.AutomorphicArithmetic.CupPullbacks.ConstCompSingle
-public import Development.AbelianVarietyTheory.Definitions.Divisors.SecClass
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DegreeZeroSectionClassPropertiesStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EtaleCohomologyNegativeVanishingDegreeZeroStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TateTwistSectionsLocallyGeneratedStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TateTwistResolutionPairingSpecAndCupUniqueStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TateTwistCupProductAssocStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TateTwistUnitClassRootClassSpecStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TateTwistCupUnitAndPrimitiveRootClassesStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.KummerClassOfUnitCocycleNaturalAdditiveStatement
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0006
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0461
+public import Mathlib
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0478
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0007
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0430
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0550
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0593
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0471
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0604
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0467
 public import Development.AutomorphicArithmetic.Foundations.EtaleClopenDescent.EtaleCohomologyLocallyAcyclic
-public import Development.AutomorphicArithmetic.CommutativeAlgebra.CohomologySubsingletonPosOfStrictlyHenselian
-public import Development.AutomorphicArithmetic.CommutativeAlgebra.NonemptyPrimitiveRootOfStrictlyHenselian
-public import Development.AutomorphicArithmetic.CommutativeAlgebra.ConnectedSpaceSpecLocalAndLaurent
-public import Development.AutomorphicArithmetic.CommutativeAlgebra.TwistedSectionEqNsmulGeneratorOfConnected
-public import Development.AutomorphicArithmetic.CommutativeAlgebra.DvdExponentOfPowEqLaurentMonomial
+public import Development.AutomorphicArithmetic.CommutativeAlgebra.Bundle0039
+public import Development.AutomorphicArithmetic.CommutativeAlgebra.Bundle0010
+public import Development.AutomorphicArithmetic.CommutativeAlgebra.Bundle0009
+public import Development.AutomorphicArithmetic.CommutativeAlgebra.Bundle0027
+public import Development.AutomorphicArithmetic.CommutativeAlgebra.Bundle0001
 public import Development.AutomorphicArithmetic.CommutativeAlgebra.ExistsRootOfKummerClassEqZero
 
 @[expose] public section
@@ -133,7 +135,7 @@ theorem UpperTheory.bijective_etaleCohomology_laurentPolynomial_of_coordinate_un
   have hqL : IsUnit (q : Γ(Spec (CommRingCat.of (LaurentPolynomial O)), ⊤)) := ζ'.2.1
   have hC5 := UpperTheory.Cb.etale_cohomology_locally_acyclic q O hSH hq
   have hneg : ∀ (E : Spc) (n i : ℤ), n < 0 → Subsingleton (Ht q E n i) := fun E n i hn =>
-    (GlobalTheory.T.etaleCohomology_negative_vanishing_degree_zero (ZMod q) (tw q i)).1 E n hn
+    (_root_.GlobalTheory.EtC.etale_cohomology_vanishing_negative_degree_zero (ZMod q) (tw q i)).1 E n hn
   have hpos : ∀ (n i : ℤ), 0 < n → Subsingleton (Ht q (sp O) n i) := fun n i hn => UpperTheory.cohomology_subsingleton_pos_of_strictly_henselian (ZMod q) O hSH (tw q i) n hn
 
   have hinj : Function.Injective fun b : Ht q (sp O) 0 j => cup q (pull _ (sch.map f) _ _ b) (kum q u) := by

@@ -1,6 +1,6 @@
 module
 
-public import Formalism.LocalToGlobal.InertKernelTheory.StatementLoc
+public import Formalism.LocalToGlobal.InertKernelTheory.Bundle0012
 
 @[expose] public section
 

@@ -1,8 +1,8 @@
 module
 
 public import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.MixedUnlinkedExponents.ValsExtOf
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.BijectiveOfSplit
-public import Development.AutomorphicArithmetic.Foundations.Convolution.SphericalIdeles.WeakStable
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0328
+public import Development.AutomorphicArithmetic.Foundations.Convolution.SphericalIdeles.Bundle0003
 
 @[expose] public section
 

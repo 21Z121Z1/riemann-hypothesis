@@ -1,7 +1,7 @@
 module
 
-public import Formalism.LocalToGlobal.SiegelLatticeTheory.CokernelGLCounts.RankPointCounts.LsDatumAGlueCut
-public import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.LocGlue
+public import Formalism.LocalToGlobal.SiegelLatticeTheory.CokernelGLCounts.RankPointCounts.Bundle0017
+public import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.Bundle0013
 
 @[expose] public section
 

@@ -1,10 +1,10 @@
 module
 
 public import Mathlib
-public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.GermCut
+public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0006
 public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.GermBGen
 public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.GermBPrim
-public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.GermBSer
+public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0020
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.SecBaseChangeAnySt
 
 @[expose] public section

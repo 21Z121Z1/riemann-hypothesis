@@ -2,7 +2,7 @@ module
 
 public import Formalism.LocalToGlobal.Columns.BaseLemmas
 public import Formalism.LocalToGlobal.Divisibility.CoeffLemmas
-public import Formalism.LocalToGlobal.UnitaryNorms.Lemmas
+public import Formalism.LocalToGlobal.UnitaryNorms.Bundle0003
 public import Formalism.LocalRingCardinality.SpanPowerMembership.ExampleWeightMiddleEntries
 
 @[expose] public section

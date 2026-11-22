@@ -1,10 +1,10 @@
 module
 
-public import Development.WeilBound.CoreStatements.AutomorphicKernels.UnitarySchrodingerModel.UnitarySchrodingerLemmas.FockLatticeHeights.HWDefs
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SiegelParabolicUnnMatrixBlockUpperTriangular
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.AddEquivAddHaarCharMulVecArtinianReduced
+public import Development.WeilBound.CoreStatements.AutomorphicKernels.UnitarySchrodingerModel.UnitarySchrodingerLemmas.FockLatticeHeights.Bundle0001
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0262
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0130
 public import Development.AbelianVarietyTheory.Definitions.Divisors.IsCompactIsOpenUnitsAt
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntegrablePowerNormCompact
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1712
 
 @[expose] public section
 

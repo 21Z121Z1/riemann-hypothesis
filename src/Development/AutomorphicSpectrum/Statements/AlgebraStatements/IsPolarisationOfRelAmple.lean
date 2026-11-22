@@ -1,13 +1,13 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.ExistsCrystalPairing
+public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.Bundle0022
 public import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.ZeroSectionBase
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsDualOfIsPerfectOfAdditive
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AbelianDeRhamPoincareDualityOfCubeDual
-public import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.ExistsProdPolAV
-public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ConnectedSpaceSpecOfIsLocalRing
-public import Development.AutomorphicSpectrum.PublishedTheorems.Algebra₂.ZarhinStatement
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2091
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2126
+public import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.Bundle0031
+public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.Bundle0078
+public import Development.AutomorphicSpectrum.PublishedTheorems.Algebra₂.Bundle0001
 
 @[expose] public section
 

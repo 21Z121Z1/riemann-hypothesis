@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import GroundTheory.LocalFields.Different
-public import GroundTheory.LocalFields.LocalFourierExistence
+public import GroundTheory.LocalFields.Bundle0013
 
 @[expose] public section
 

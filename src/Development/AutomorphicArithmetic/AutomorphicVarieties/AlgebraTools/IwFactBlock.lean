@@ -1,7 +1,7 @@
 module
 
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.HeckePairTop
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.IwMemIwC
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.Bundle0018
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.Bundle0022
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.IwFactTorus
 
 @[expose] public section

@@ -1,6 +1,6 @@
 module
 
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.LiteratureResults.IsRelCochain
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.LiteratureResults.Bundle0001
 
 @[expose] public section
 

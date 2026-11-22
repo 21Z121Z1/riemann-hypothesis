@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.SmulMemRatForms
+public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0032
 
 @[expose] public section
 

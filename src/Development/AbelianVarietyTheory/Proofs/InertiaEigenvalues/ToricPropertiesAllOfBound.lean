@@ -1,12 +1,14 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.BoundedDenominatorsOfBeta
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0208
 public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsIsHeckeLOfHasInf
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ToricSumEqHeckeLValueMulAuxiliaryFactorsStatement
-public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.HeckeLPartialContinuationHolds
-public import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.VpBounds
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ClassTermBoundBetaOfToricDenominator
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0898
+public import Formalism.PairingDivisors.Bundle0001
+public import Development.AbelianVarietyTheory.Definitions.Divisors.IsFinSetSplitPlacesCoprimeConductor
+public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.Bundle0005
+public import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.Bundle0007
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0212
 
 @[expose] public section
 
@@ -17,7 +19,7 @@ open NumberField IsDedekindDomain ReciprocityTheory.Gal Formalism.ConjugateSelfD
 namespace GlobalTheory.ToricAssembly
 
 theorem toricSumFormula : ToricSumFormula :=
-  GlobalTheory.T.toric_sum_eq_hecke_L_value_mul_auxiliary_factors exists_isHeckeL_of_hasInf
+  _root_.GlobalTheory.ToricSumValue.toricSum_eq exists_isHeckeL_of_hasInf
 
 theorem not_isNormPow {E : Type} [Field E] [NumberField E] {I : Type} [Fintype I] {φ : I → E →+* ℂ} {s : ℕ} {κ : I → ℕ}
     {𝔣 : Ideal (OF E)} {χ : HChar E} (hb : IsBaseCond 𝔣) (hχ : IsValChar φ s κ 𝔣 ∅ χ) :

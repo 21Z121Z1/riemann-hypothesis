@@ -1,7 +1,7 @@
 module
 
-public import Development.WeilBound.CoreStatements.AutomorphicKernels.SiegelWeilFormula.LagrangianDecomposition.SDarb
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DetNeOfSig
+public import Development.WeilBound.CoreStatements.AutomorphicKernels.SiegelWeilFormula.LagrangianDecomposition.Bundle0001
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1946
 
 @[expose] public section
 

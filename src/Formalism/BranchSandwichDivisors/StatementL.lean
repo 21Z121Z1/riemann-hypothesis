@@ -1,8 +1,7 @@
 module
 
 public import Mathlib
-public import Formalism.HarderNarasimhan.QuotRealize
-public import Formalism.HarderNarasimhan.StatementMod
+public import Formalism.HarderNarasimhan.Bundle0001
 public import Formalism.QuotientMetricDivisors.Statement
 
 @[expose] public section

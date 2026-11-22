@@ -2,11 +2,11 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.JacquetShalikaRigidity
-public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.Brauer
-public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.HypothesesX
-public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.SeriesRatSOf
-public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.ResidualIrreducibilityFormsEquivalent
-public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.DepthZeroWild
+public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.Bundle0046
+public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.Bundle0021
+public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.Bundle0024
+public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.Bundle0027
+public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.Bundle0010
 public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.DepthZeroSupport
 
 @[expose] public section

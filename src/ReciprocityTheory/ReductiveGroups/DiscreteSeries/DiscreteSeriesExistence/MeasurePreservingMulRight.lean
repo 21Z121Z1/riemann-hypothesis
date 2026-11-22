@@ -2,8 +2,8 @@ module
 
 public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.CasimirCoefficients.PsiExistsStatement
 public import Formalism.SharpRestriction.CuspSpanNormBounds.RelevantZeroGramTerms
-public import Formalism.RealPlaceAnalysis.SmoothVectorGrowthBound
-public import Formalism.RealPlaceAnalysis.RealPlaceTaylor.ModularCharacterEqOneOnExpHermitian
+public import Formalism.RealPlaceAnalysis.Bundle0004
+public import Formalism.RealPlaceAnalysis.RealPlaceTaylor.Bundle0007
 
 @[expose] public section
 

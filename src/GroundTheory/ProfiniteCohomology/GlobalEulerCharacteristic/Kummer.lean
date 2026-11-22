@@ -7,8 +7,8 @@ public import GroundTheory.ProfiniteCohomology.RestrictedRamification.SInvariant
 public import GroundTheory.ProfiniteCohomology.RestrictedRamification.SPicFinite
 public import GroundTheory.GlobalFields.HerbrandQuotients.SUnitsRep
 public import GroundTheory.ProfiniteCohomology.GlobalEulerCharacteristic.StabilizersFinite
-public import GroundTheory.ProfiniteCohomology.GlobalEulerCharacteristic.UnitsDefs
-public import GroundTheory.ProfiniteCohomology.LocalEulerCharacteristic.Additive
+public import GroundTheory.ProfiniteCohomology.GlobalEulerCharacteristic.Bundle0002
+public import GroundTheory.ProfiniteCohomology.LocalEulerCharacteristic.Bundle0002
 
 @[expose] public section
 

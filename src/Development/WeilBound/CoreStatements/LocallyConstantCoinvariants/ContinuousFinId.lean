@@ -1,9 +1,9 @@
 module
 
-public import Development.WeilBound.CoreStatements.LocallyConstantCoinvariants.PfFree
+public import Development.WeilBound.CoreStatements.LocallyConstantCoinvariants.Bundle0001
 public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.RamificationIdxEqOneOfIsSquare
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.DenseRangeUnits
-public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.AdditiveCharConductorExists
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0099
+public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0010
 
 @[expose] public section
 

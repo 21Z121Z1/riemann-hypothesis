@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Divisors.ZetaPair
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0001
 
 @[expose] public section
 

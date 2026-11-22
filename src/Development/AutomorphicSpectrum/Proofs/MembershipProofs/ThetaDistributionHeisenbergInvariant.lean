@@ -4,8 +4,8 @@ public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.Divisors.HilbertNinetyQuotientHomEqIff
 public import GroundTheory.GlobalFields.TateThesis.AdelicCharDual
 public import GroundTheory.GlobalFields.TateThesis.RootNumberLocalPlace
-public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.ExistsInfiniteAdelicCharNeOne
-public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.FactorialTendstoZero
+public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0070
+public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0021
 public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.UnitaryAnnihilator
 
 @[expose] public section

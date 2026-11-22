@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.ExistsBoundRight
-public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.LogDerivLFunctionNearZero
+public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0020
 public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.AnalyticAtDslope
 
 @[expose] public section

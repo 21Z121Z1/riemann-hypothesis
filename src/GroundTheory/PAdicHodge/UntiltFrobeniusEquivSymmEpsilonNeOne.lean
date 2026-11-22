@@ -6,7 +6,7 @@ public import GroundTheory.PAdicHodge.BdRSeries
 public import GroundTheory.PAdicHodge.BdRLattice
 public import GroundTheory.PAdicHodge.BdRGalois
 public import GroundTheory.PAdicHodge.AInfXi
-public import GroundTheory.PAdicHodge.TateCpTwist
+public import GroundTheory.PAdicHodge.Bundle0002
 
 @[expose] public section
 

@@ -3,7 +3,7 @@ module
 public import ReciprocityTheory.Automorphisms.SplitCoeAlgebraMap
 public import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Levelaf
 public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExistsIntegerUnitSplitPlaceConjugatePrime
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.CmFieldAdeleSplitPlaceSupportIntegral
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0017
 
 @[expose] public section
 

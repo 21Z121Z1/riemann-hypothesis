@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import GroundTheory.GlobalFields.SplittingFromInequality
-public import GroundTheory.GlobalFields.IdeleGroups.SIdeleGroups
+public import GroundTheory.GlobalFields.IdeleGroups.Bundle0001
 public import GroundTheory.GlobalFields.KummerTheory.SplittingKummer
 public import GroundTheory.GlobalFields.KummerTheory.Unramified
 

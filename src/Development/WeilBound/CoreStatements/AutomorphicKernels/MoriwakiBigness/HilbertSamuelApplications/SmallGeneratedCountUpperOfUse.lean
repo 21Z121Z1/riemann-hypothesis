@@ -1,11 +1,11 @@
 module
 
 public import Mathlib
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArakelovGeometry.MoriwakiSt
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArakelovGeometry.Bundle0003
 public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsArith
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsArithKleiman
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PtsIntegralCurveConst
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PCurvePointsFinite
+public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0019
+public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0084
+public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0080
 
 @[expose] public section
 

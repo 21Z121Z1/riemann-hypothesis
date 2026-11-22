@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.GeometricLemmaFiltration
-public import GroundTheory.AutomorphicForms.GeometricLemma
+public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.Bundle0004
+public import GroundTheory.AutomorphicForms.Bundle0024
 
 @[expose] public section
 

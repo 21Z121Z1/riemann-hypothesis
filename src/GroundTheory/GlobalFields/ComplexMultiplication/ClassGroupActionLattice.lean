@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import GroundTheory.GlobalFields.ComplexMultiplication.ClassGroupActionIso
+public import GroundTheory.GlobalFields.ComplexMultiplication.Bundle0009
 
 @[expose] public section
 

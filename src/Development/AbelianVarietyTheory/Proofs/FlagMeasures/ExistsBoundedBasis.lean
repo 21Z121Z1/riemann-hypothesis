@@ -1,10 +1,10 @@
 module
 
 public import Mathlib
-public import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.TransferenceMinima
+public import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.Bundle0015
 public import Formalism.HermitianLattices.HermitianLatticesProofs.MassTelescope
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HermitianMassUpperBound
-public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.ExistsPositiveAdd
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0713
+public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0008
 
 @[expose] public section
 

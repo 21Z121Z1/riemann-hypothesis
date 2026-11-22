@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import GroundTheory.ProfiniteCohomology.CompactSupportCohomology.ConeMap
-public import GroundTheory.ProfiniteCohomology.CompactSupportCohomology.HomologyMapPiLiftPiHomologyIsoHom
+public import GroundTheory.ProfiniteCohomology.CompactSupportCohomology.Bundle0002
+public import GroundTheory.ProfiniteCohomology.CompactSupportCohomology.Bundle0001
 public import GroundTheory.ProfiniteCohomology.ContinuousCochains.LongExactSequence
 
 @[expose] public section

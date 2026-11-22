@@ -1,27 +1,29 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Divisors.EigLatLe
-public import Formalism.LocalToGlobal.ProjectiveLattices.LiftLaSpec
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DualWeylTensorEvaluationTranslateKronecker
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MulNormDualWeylTensorEvaluationLeFibreNormStatement
-public import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.MetricDataUnique
-public import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.MetricChangeOfFrame
-public import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.IsMetricConjugateFramedPoint
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0045
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0013
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0790
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0817
+public import Development.AbelianVarietyTheory.Definitions.Divisors.IsAdelicOne
+public import Formalism.LocalToGlobal.CMDeterminantIdeals.Bundle0001
+public import Formalism.PolynomialDimension.Bundle0001
+public import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.Bundle0066
+public import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.Bundle0062
+public import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.Bundle0065
 public import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.UnifMetricScalar
-public import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.CuspFormBoundedBySupNormAtGoodEmbeddingAllEmbedd
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsUniqueFrameChangeByMatrices
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.FrameChangeExistsUniqueOfSamePoint
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.FrameChangeByMatricesReflAndComp
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.FrameChangeCommBaseChange
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.LowerTriIsUnitDet
-public import Development.AbelianVarietyTheory.Proofs.GenericRegularity.PointwiseNormSectionEqFlagDomainNorm
+public import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.Bundle0068
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0027
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0028
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0024
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0039
+public import Development.AbelianVarietyTheory.Proofs.GenericRegularity.Bundle0031
 public import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.RecordAtOfIsArcFr
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PullbackSections.FrMapComp
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PullbackSections.PlaceBoundSplitOfIntegral
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PullbackSections.HolomorphicFamilies.SupAtUnit
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.FundamentalDomains.OrthonormalFlagTranslateHolds
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.FundamentalDomains.OrthogonalFrameDomain
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PullbackSections.Bundle0009
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PullbackSections.Bundle0007
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PullbackSections.HolomorphicFamilies.Bundle0014
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.FundamentalDomains.Bundle0019
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.FundamentalDomains.Bundle0033
 
 @[expose] public section
 
@@ -163,7 +165,7 @@ theorem cabs_le_matNorm {Z : Comp Xo c} (P : PtData Z) {a : (E →+* ℂ) × ℕ
   have hs : cabs (s : CAt σ) = (Real.sqrt (P.N σ))⁻¹ := by
     rw [← Real.sqrt_inv, ← eq_inv_of_mul_eq_one_left hN.symm]
     exact (Real.sqrt_sq (norm_nonneg (show ℂ from (s : CAt σ)))).symm
-  have hb := GlobalTheory.T.mul_norm_dualWeylTensorEvaluation_le_fibreNorm _ _ (part Dw a) (fun τ i j hij => hd.1 τ hij) (fun I => σ (x I)) (P.X σ)
+  have hb := _root_.GlobalTheory.TSup.mul_norm_tval_le_fibNorm _ _ (part Dw a) (fun τ i j hij => hd.1 τ hij) (fun I => σ (x I)) (P.X σ)
     (fun τ => ⟨W τ, Matrix.mem_unitaryGroup_iff'.2 (hW2 τ)⟩) ((Real.sqrt (P.N σ))⁻¹ ^ n) (by positivity)
   refine le_trans (le_of_eq ?_) hb
   have e : (fun τ => P.X σ τ * W τ) =

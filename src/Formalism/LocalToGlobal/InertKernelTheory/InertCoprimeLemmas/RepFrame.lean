@@ -1,8 +1,8 @@
 module
 
-public import Formalism.LocalToGlobal.InertKernelTheory.FrameLatMap
+public import Formalism.LocalToGlobal.InertKernelTheory.Bundle0014
 public import Formalism.LocalToGlobal.InertKernelTheory.InertCoprimeLemmas.LocalLevelIsKOneAtT
-public import Formalism.LocalToGlobal.InertKernelTheory.StatementJets
+public import Formalism.LocalToGlobal.InertKernelTheory.Bundle0007
 public import Formalism.LocalToGlobal.InertKernelTheory.InertCoprimeLemmas.IntBasis
 
 @[expose] public section

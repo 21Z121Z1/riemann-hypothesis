@@ -2,11 +2,11 @@ module
 
 public import Mathlib
 public import Formalism.LocalToGlobal.BesselHermitianTheta.AllTied
-public import Formalism.LocalToGlobal.IndefiniteReal.DatumVec
+public import Formalism.LocalToGlobal.IndefiniteReal.Bundle0016
 public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.AdelicDataRowMeasureScaleTrivialTuple
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.AdelicUnitaryTopology
-public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.RealIdemMulOfReal
-public import Development.AbelianVarietyTheory.Proofs.HeightProofs.SymplecticValTauCompat
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0160
+public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.Bundle0061
+public import Development.AbelianVarietyTheory.Proofs.HeightProofs.Bundle0025
 
 @[expose] public section
 

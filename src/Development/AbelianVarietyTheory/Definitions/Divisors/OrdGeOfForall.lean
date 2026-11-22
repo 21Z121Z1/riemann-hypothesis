@@ -2,8 +2,8 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.Divisors.IsUnimodMod
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.HomExtNormalSt
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WeightedLatticeQuadraticSumGeDiagonal
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0488
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1990
 
 @[expose] public section
 

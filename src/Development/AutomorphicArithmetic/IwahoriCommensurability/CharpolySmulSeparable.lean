@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.CharpolySmul
+public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0006
 
 @[expose] public section
 

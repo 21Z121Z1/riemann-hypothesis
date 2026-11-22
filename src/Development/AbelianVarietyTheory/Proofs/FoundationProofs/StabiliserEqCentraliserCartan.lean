@@ -4,8 +4,8 @@ public import Mathlib
 public import Formalism.LocalToGlobal.IndefiniteReal.LocalNewformFunction
 public import Development.AbelianVarietyTheory.Definitions.Foundations.T2SpaceAdeleRing
 public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsIsLatticeFrameIsMajorantFrame
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsArchEquivEq
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsBasisAdaptedToCartanInvolution
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0291
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0023
 
 @[expose] public section
 

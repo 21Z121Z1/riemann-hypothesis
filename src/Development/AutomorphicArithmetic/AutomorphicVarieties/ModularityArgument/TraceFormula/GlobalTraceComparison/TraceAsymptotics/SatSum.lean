@@ -1,7 +1,7 @@
 module
 
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.TraceFormula.GlobalTraceComparison.TraceAsymptotics.FinprodSplitAlt
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SumSatEqOfIsCT
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.TraceFormula.GlobalTraceComparison.TraceAsymptotics.Bundle0001
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1719
 
 @[expose] public section
 

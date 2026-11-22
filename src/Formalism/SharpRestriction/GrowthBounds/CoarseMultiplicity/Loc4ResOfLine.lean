@@ -1,7 +1,7 @@
 module
 
-public import Formalism.SharpRestriction.GrowthBounds.CoarseMultiplicity.Loc4DivOf
-public import Formalism.SharpRestriction.GrowthBounds.CoarseMultiplicity.KeyMinorDvd
+public import Formalism.SharpRestriction.GrowthBounds.CoarseMultiplicity.Bundle0014
+public import Formalism.SharpRestriction.GrowthBounds.CoarseMultiplicity.Bundle0011
 public import Formalism.SharpRestriction.GrowthBounds.BinomialRatio.OtherStart
 
 @[expose] public section

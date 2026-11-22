@@ -1,7 +1,6 @@
 module
 
-public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.RamificationRankSum.Lattice
-public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.RamificationRankSum.Points
+public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.RamificationRankSum.Bundle0001
 
 @[expose] public section
 

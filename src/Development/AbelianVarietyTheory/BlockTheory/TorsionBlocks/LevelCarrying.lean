@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Formalism.LocalToGlobal.ProjectiveLattices.IsCombAt
-public import Formalism.LocalToGlobal.ProjectiveLattices.CuspidalL2Subspace
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0024
 public import Formalism.SharpRestriction.LevelLetterCocycles.DataN
 
 @[expose] public section

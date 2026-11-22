@@ -7,7 +7,7 @@ public import Development.AbelianVarietyTheory.Definitions.Degenerations.OfDeriv
 public import Development.AbelianVarietyTheory.Definitions.Degenerations.PlOrdSomeOfAssociated
 public import Development.AbelianVarietyTheory.Statements.SemistableTorsion.SemistableFin
 public import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.MorphismsSpreadOutToFgSubalgebra
-public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.GlueModelsOverSubfield
+public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.Bundle0028
 
 @[expose] public section
 

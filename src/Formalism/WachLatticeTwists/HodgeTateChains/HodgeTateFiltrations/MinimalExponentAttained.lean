@@ -1,7 +1,7 @@
 module
 
 public import Formalism.WachLatticeTwists.HodgeTateChains.Statement
-public import Formalism.WindowSums.AnnihilatorPolynomials.ValProd
+public import Formalism.WindowSums.AnnihilatorPolynomials.Bundle0001
 public import Formalism.WindowSums.AnnihilatorPolynomials.ZpowVal
 
 @[expose] public section

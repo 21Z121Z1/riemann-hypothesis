@@ -1,20 +1,21 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.NormalFam
+public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.Bundle0015
 public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisGeometry₂.HoweUnram
 public import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.IsStepWeil
-public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.ExistsNormLeHeightPow
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FinRepApply
-public import Formalism.LocalToGlobal.IndefiniteReal.CutTuples2
+public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.Bundle0007
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0831
+public import Formalism.LocalToGlobal.IndefiniteReal.Bundle0004
 public import Formalism.LocalToGlobal.Divisibility.ProjLemmas
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.NormalFamilyOrthogonalDecomposition
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ThetaLiftLevelsGoodPrimesProperties
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.RealizationFamilyNormalOperatorsStatement
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.FamilySplitOperatorsEqLabelOperatorsModels
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ThetaLiftTransferHeckePolySplitPrimeStatement
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.SphericalOperatorsFormsOnRankSpaceNormalStatement
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ClassPresExtMemExtBijIsom
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0068
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0143
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0159
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0146
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0177
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0152
+public import Formalism.SatakeDualWeyl.KpqSubgroupCompact
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0106
 
 @[expose] public section
 
@@ -261,7 +262,7 @@ set_option maxHeartbeats 800000 in
 theorem range_adjoint_le : ∀ {D : D7} {G : Type} [Group G] [Fintype G] {Pl0 T : Type} {A : FamIn D.what₂.LL G Pl0 T D.R.m} {Ks : Type} [Field Ks] [NumberField Ks] [Algebra Ks D.what₂.LL] (R : RealDat D A Ks) (F : Face D A) {s : ℕ}, GlobalTheory.Chain.LiftInteg D → A.fam.Ok s → Core R F → SchurAll R → ∀ i t, LinearMap.range (LinearMap.adjoint (R.thG i t)) ≤ Submodule.span ℂ (R.jV i t '' ((A.fam.L i t).ZH : Set (A.fam.L i t).S.Forms)) := by
   intro D G _ _ Pl0 T A Ks _ _ _ R F s _ hOk hC hS i t
   refine (exists_isSF R).elim fun SF hSF => ?_
-  refine (GlobalTheory.T.sphericalOperators_forms_on_rank_space_normal R F hC hS hOk.irr SF hSF i).elim fun h hh => ?_
+  refine (_root_.GlobalTheory.SphOpsModel.sphericalOperators_forms_on_rank_space_normal_alt R F hC hS hOk.irr SF hSF i).elim fun h hh => ?_
   have hW := hh.1
   have hN := hh.2.1
   clear hh

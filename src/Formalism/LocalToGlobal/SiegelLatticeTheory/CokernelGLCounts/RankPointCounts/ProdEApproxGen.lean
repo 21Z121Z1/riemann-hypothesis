@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.StrongApproximation.DedekindLFunctions
+public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.StrongApproximation.Bundle0001
 
 @[expose] public section
 

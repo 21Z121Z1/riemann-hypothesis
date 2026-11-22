@@ -1,26 +1,26 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.SpanningFamilies.IsBaseClassLevelAdapted
-public import Formalism.LocalToGlobal.ProjectiveLattices.CuspFree
-public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.ThExprUniqOfChartIndep2
+public import Development.AbelianVarietyTheory.Definitions.SpanningFamilies.Bundle0002
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0011
+public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0007
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PullbackSections.HolomorphicFamilies.AnChartAsm
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.TaylorDiscriminants.Taylor
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PullbackSections.HolomorphicFamilies.CmHostUnitAddConjEqOne
-public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.AllUniformizationLawsHold
-public import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.CardToMultisetEqDegree
-public import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.FramedPointBaseChangeLaws
-public import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.ExistsTranslationSectionsUniversalObject
-public import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.ShortThetaValueExistsUniqueNaturalOfLaws
-public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.RationalSchwartzBruhatAlgebraIntegralLinear
-public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.HMatMulVecPerCrd
-public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.ThetaSeriesTestFunctionHolomorphicWeight
-public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.HermitianFormAtFrameLaws
-public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.FockHxDifferentiable
-public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.SectionsReadAsTranslatesAtScaledPointStatement
-public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.HarmonicConnectionValueEqPolynomialDerivativeStatement
-public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.ExistsEvenRepsTensorLatticeAndSumStatement
-public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.AnalyticFibreIsotropicPointsInjectiveRootsStatement
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PullbackSections.HolomorphicFamilies.Bundle0011
+public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.Bundle0133
+public import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.Bundle0009
+public import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.Bundle0032
+public import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.Bundle0040
+public import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.Bundle0057
+public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.Bundle0007
+public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.Bundle0025
+public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.Bundle0044
+public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.Bundle0032
+public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.Bundle0028
+public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.Bundle0051
+public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.Bundle0056
+public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.Bundle0036
+public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.AnalyticFibreIsotropicPointsInjectiveRoots
 
 @[expose] public section
 
@@ -211,9 +211,9 @@ theorem GlobalTheory.Dict.shortValAt_eq_thP : Formalism.MainNotions.ModuliIntegr
   have hΛ1 : Λ ∈ Vset E n 1 := by
     obtain ⟨h1, h2, s, hs, -, h3⟩ := hΛ
     exact ⟨h1, h2, s, hs, Nat.coprime_one_right s, h3⟩
-  obtain ⟨u, hu, huinj, hz, -, hsum⟩ := GlobalTheory.T.exists_even_reps_tensorLattice_and_sum E _ X g bas idx n hs hn (H.w0 : E) H.w0.isIntegral_coe hw L hL
+  obtain ⟨u, hu, huinj, hz, -, hsum⟩ := _root_.GlobalTheory.Dict.ZLat.exists_reps_sum E _ X g bas idx n hs hn (H.w0 : E) H.w0.isIntegral_coe hw L hL
     Λ hΛ1 N hodd (hN.2.2.trans inf_le_left)
-  obtain ⟨hgeo, hroot⟩ := GlobalTheory.T.analyticFibre_isotropic_points_injective_roots E H Dw l Xo c _ g X bas idx e x L y A hs hx hL n N Λ hodd.pos
+  obtain ⟨hgeo, hroot⟩ := _root_.GlobalTheory.Dict.points_inZh_geoInj_roots E H Dw l Xo c _ g X bas idx e x L y A hs hx hL n N Λ hodd.pos
   obtain ⟨hZ, hinj⟩ := hgeo _ u hu huinj
   replace hroot := hroot mk hmk hA hN.2.1 Y hY
   have hu2 (i b) : ∃ u' ∈ L, (N ^ 2 : ℕ) • ((N : E)⁻¹ • u i b) = (2 : ℕ) • u' := by
@@ -240,8 +240,8 @@ theorem GlobalTheory.Dict.shortValAt_eq_thP : Formalism.MainNotions.ModuliIntegr
       ∏ b, nab y ((N : ℤ) ^ 2) (F q i b) (colOf m b) =
       I2.polyDeriv (MvPolynomial.map (algebraMap c.F ℂ) P) (letterDir X hr idx ∘ eL)
         (fun z => κ * thA X bas idx (heisG X bas (Y q) (heisG X bas (u i) v)) x ((N : ℂ) • z)) 0 := by
-    rw [GlobalTheory.T.harmonicConnectionValue_eq_polynomial_derivative hC E H Dw l Xo c _ g X bas idx e x L y A hs hx hL nab hnab n N a P hP (F q i) _ fun b =>
-      (GlobalTheory.T.sections_read_as_translates_at_scaled_point E H Dw l Xo c _ g X bas idx e x L y A hs hx hL N hodd θ hθ).1 _ _ (hu2 i b)
+    rw [_root_.GlobalTheory.Dict.nab_harm_val_eq_polyDeriv hC E H Dw l Xo c _ g X bas idx e x L y A hs hx hL nab hnab n N a P hP (F q i) _ fun b =>
+      (_root_.GlobalTheory.Dict.reads_isUUOver_isVtOver E H Dw l Xo c _ g X bas idx e x L y A hs hx hL N hodd θ hθ).1 _ _ (hu2 i b)
         (hroot q b).2.2 _ (hF q i b)]
     congr 1
     · exact funext fun ℓ => (hdir ℓ).symm

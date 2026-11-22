@@ -2,7 +2,7 @@ module
 
 public import Formalism.LocalToGlobal.GroupLattices.PendingLemmas.WeightUpdateAtPlace
 public import Formalism.SharpRestriction.GrowthBounds.MultisetValuation.TminusLinApply
-public import Formalism.SharpRestriction.GrowthBounds.MultisetValuation.NatCastInvMemRp
+public import Formalism.SharpRestriction.GrowthBounds.MultisetValuation.Bundle0006
 
 @[expose] public section
 

@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Formalism.SharpRestriction.ParConsts
-public import Formalism.SharpRestriction.CuspSpanNormBounds.LeSCSCl
+public import Formalism.SharpRestriction.CuspSpanNormBounds.Bundle0007
 
 @[expose] public section
 

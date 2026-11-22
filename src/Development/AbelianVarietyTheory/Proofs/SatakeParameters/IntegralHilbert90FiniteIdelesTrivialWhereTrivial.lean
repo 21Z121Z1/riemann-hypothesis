@@ -6,8 +6,8 @@ public import Formalism.LocalToGlobal.Divisibility.DivisibilityProofs.TuplesP
 public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ContinuousOfCongSet
 public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsFiniteAdeleBaseChangeEquiv
 public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.H90RangeEqNormOneOfIsQuad
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.FiniteAdeleFieldIdentificationEqBaseChangeRingEq
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExistsIntegralHilbert90DetHostField
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0442
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0254
 
 @[expose] public section
 

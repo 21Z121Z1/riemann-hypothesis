@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Formalism.LocalToGlobal.LatticeGeometry.GeometryDefinitions.ClsSum
-public import Formalism.SharpRestriction.Divisibility.PlaceRankTwoOne
+public import Formalism.SharpRestriction.Divisibility.Bundle0001
 public import Formalism.QuotientMetricDivisors.Statement
 public import Formalism.LocalToGlobal.LatticeGeometry.GeometryDefinitions.ExistsFrameOfSig
 public import Formalism.QuotientMetricDivisors.HermitianTwistDivisors.ReductionSecondStep

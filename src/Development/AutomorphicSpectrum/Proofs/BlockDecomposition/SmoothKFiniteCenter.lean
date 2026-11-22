@@ -7,16 +7,15 @@ public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForm
 public import GroundTheory.AutomorphicForms.CuspidalDiscreteness.CuspFormsHeight
 public import GroundTheory.AutomorphicForms.CuspidalDiscreteness.DecayUniform
 public import GroundTheory.AutomorphicForms.AutomorphicFormSpaces.GKStable
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SmMemArchSmooth
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsOpenLevel
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsGrowthUniform
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FiniteZSpanIntegralRepresentationStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FiniteAdelicRestrictionMeasureStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FundamentalDomainIntegralCountBoundStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CompactAdelicIntegralDenominatorStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IntegersBoundedArchimedeanCountStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CompactConjugateCentrePowerBoundedStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CompactConjugateRationalEntriesBoundedStatement
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0454
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0436
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0437
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0535
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0478
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0033
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0403
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0034
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0461
 
 @[expose] public section
 
@@ -32,8 +31,8 @@ theorem count_rational (E : Type) [Field E] [NumberField E] (Q : Set (Af E)) (hQ
     ∃ (C : ℝ) (N : ℕ), 0 ≤ C ∧ ∀ R : ℝ, 1 ≤ R →
       {x : E | algebraMap E (Af E) x ∈ Q ∧ ∀ w : InfinitePlace E, w x ≤ R}.Finite ∧
       ({x : E | algebraMap E (Af E) x ∈ Q ∧ ∀ w : InfinitePlace E, w x ≤ R}.ncard : ℝ) ≤ C * R ^ N := by
-  obtain ⟨D, hD, hden⟩ := GlobalTheory.T.compact_adelic_integral_denominator E Q hQ
-  obtain ⟨C, N, hC⟩ := GlobalTheory.T.integers_bounded_archimedean_count E
+  obtain ⟨D, hD, hden⟩ := _root_.GlobalTheory.CompanionTheory.AdeleDen.exists_common_denominator E Q hQ
+  obtain ⟨C, N, hC⟩ := _root_.GlobalTheory.CompanionTheory.IntCount.finite_and_ncard_le E
   have hD1 : (1 : ℝ) ≤ D := by exact_mod_cast Nat.one_le_iff_ne_zero.2 hD
   have hDE : (D : E) ≠ 0 := by exact_mod_cast hD
   refine ⟨|C| * (D : ℝ) ^ N, N, by positivity, fun R hR => ?_⟩
@@ -72,8 +71,8 @@ theorem count_lattice (E : Type) [Field E] [NumberField E] [_root_.NumberField.I
     rw [h2] at this
     rw [pow_zero, mul_one]
     exact_mod_cast this
-  obtain ⟨n₀, hn₀⟩ := GlobalTheory.T.compact_conjugate_centre_power_bounded E a ha Q hQ
-  obtain ⟨Qf, C₁, hQf, hC₁, hent⟩ := GlobalTheory.T.compact_conjugate_rational_entries_bounded E a g₀ Q hQ n₀
+  obtain ⟨n₀, hn₀⟩ := _root_.GlobalTheory.CompanionTheory.CuspGrowth.abs_le_of_conj_mem_compact E a ha Q hQ
+  obtain ⟨Qf, C₁, hQf, hC₁, hent⟩ := _root_.GlobalTheory.CompanionTheory.GrowthEntries.entries_bound E a g₀ Q hQ n₀
   obtain ⟨C₂, N₂, hC₂, hcount⟩ := count_rational E Qf hQf
   obtain ⟨c₃, hc₃⟩ : ∃ c₃ : ℝ, c₃ = C₂ * (C₁ + 1) ^ N₂ := ⟨_, rfl⟩
   have hc₃0 : 0 ≤ c₃ := by rw [hc₃]; positivity
@@ -180,7 +179,7 @@ theorem moderate_growth : ∀ (E : Type) [Field E] [NumberField E] [_root_.Numbe
   haveI : ν.IsHaarMeasure := by
     rw [hν, hpdef, hqdef]
     exact GlobalTheory.T.finite_adelic_restriction_measure E a μ U hUc hU1
-  obtain ⟨κ, hκc, hκs, hκ⟩ := GlobalTheory.T.finite_z_span_integral_representation E a φ hK hZ ν
+  obtain ⟨κ, hκc, hκs, hκ⟩ := _root_.GlobalTheory.CompanionTheory.HCRep.GrowthKernel.exists_kernel_of_finite E a φ hK hZ ν
   obtain ⟨S, hS⟩ : ∃ S, S = tsupport κ := ⟨_, rfl⟩
   have hSc : IsCompact S := hS ▸ hκs
   have hSm : MeasurableSet S := hSc.isClosed.measurableSet

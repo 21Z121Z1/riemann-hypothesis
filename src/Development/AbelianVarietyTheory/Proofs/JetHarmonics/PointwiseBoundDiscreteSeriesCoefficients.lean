@@ -1,20 +1,20 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Jets.SupWOfSup
+public import Development.AbelianVarietyTheory.Definitions.Jets.Bundle0002
 public import Development.AbelianVarietyTheory.Statements.DiscreteSeriesShifts.ThmBpDS
 public import Development.AbelianVarietyTheory.PublishedTheorems.BesselIntegrals.BesselXiIntegrable
-public import Formalism.HermitianCurvature.HerGenC
+public import Formalism.HermitianCurvature.Bundle0007
 public import Formalism.HermitianCurvature.HermitianCurvatureProofs.RegularityAtPlaceOfSubadditive
-public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.NumericalFamilyShapeGaps
-public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.DiscreteSeriesKFiniteCoeffCapelliEigenDecayStatement
-public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.PointwiseBoundCapelliEigenfunctionStatement
+public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0050
+public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0182
+public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.PointwiseBoundCapelliEigenfunction
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0280
 public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.DiscreteSeriesCoefficientExpansionBoundBallStatement
-public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.HcParamSubIntegral
-public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.InterlaceHalf
-public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.MarginArithClosing
-public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.NumOfStdHyp
-public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.CapelliParamMemIntAddHalf
+public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0063
+public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0064
+public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0065
+public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0138
 
 @[expose] public section
 
@@ -33,7 +33,7 @@ theorem thmBpAt_mono {P : M.Par} {Wp Wq : Type} [NormedAddCommGroup Wp] [InnerPr
 theorem pointwise_bound_discreteSeries : GlobalTheory.HCXi.BesselXiIntegrable → P5.ThmPActualCpt → ThmBpDS := by
   intro hXi hP Ch C₀ hC₀
   have hC : 0 ≤ 2 * |Ch| := by positivity
-  obtain ⟨C₄, Cc, heig⟩ := GlobalTheory.T.pointwiseBound_capelli_eigenfunction hXi hP (2 * |Ch|) (2 * |Ch| / 2 + 6) C₀ hC (by positivity) hC₀
+  obtain ⟨C₄, Cc, heig⟩ := _root_.GlobalTheory.BpEigen.pointwise_bound_eigenfunction hXi hP (2 * |Ch|) (2 * |Ch| / 2 + 6) C₀ hC (by positivity) hC₀
   obtain ⟨G₁, hnum⟩ := GlobalTheory.BpStdNum.num_of_stdHyp (C₀ + 10) (by positivity)
   obtain ⟨G₂, hgrid⟩ := GlobalTheory.StdGrid.std_grid
   obtain ⟨G₃, -, hmar⟩ := GlobalTheory.margin_arith_closing Cc C₀ hC₀

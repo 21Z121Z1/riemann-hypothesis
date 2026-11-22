@@ -1,7 +1,6 @@
 module
 
-public import Formalism.LocalToGlobal.InertKernelTheory.DefsBeW
-public import Formalism.LocalToGlobal.InertKernelTheory.DefsSigma
+public import Formalism.LocalToGlobal.InertKernelTheory.Bundle0002
 public import Formalism.LocalToGlobal.InertKernelTheory.InertCoprimeLemmas.VarChange
 public import Formalism.LocalToGlobal.InertKernelTheory.InertCoprimeLemmas.FormalExponentialAgree
 public import Formalism.LocalToGlobal.InertKernelTheory.InertCoprimeLemmas.PowerSeriesEmbedding
@@ -9,12 +8,12 @@ public import Formalism.LocalToGlobal.InertKernelTheory.InertCoprimeLemmas.Padic
 public import Formalism.LocalToGlobal.InertKernelTheory.InertCoprimeLemmas.SigmaAlg
 public import Formalism.LocalToGlobal.TorsionIntegrality.SecondCoefficientNorms.PhNormFromDatum
 public import Formalism.LocalToGlobal.TorsionIntegrality.SecondCoefficientNorms.CurveSecondLogDerivative
-public import Formalism.LocalToGlobal.TorsionIntegrality.WeierstrassTwoTorsion.CubeThreeR
-public import ReciprocityTheory.ReductiveGroups.UnramifiedIntegrals.EndIntegral
-public import ReciprocityTheory.ReductiveGroups.UnramifiedIntegrals.ShortWIntModel
+public import Formalism.LocalToGlobal.TorsionIntegrality.WeierstrassTwoTorsion.Bundle0006
+public import ReciprocityTheory.ReductiveGroups.UnramifiedIntegrals.Bundle0033
+public import ReciprocityTheory.ReductiveGroups.UnramifiedIntegrals.Bundle0027
 public import Formalism.LocalToGlobal.GlobalTheory.GL3.CubicFields.EpsteinZeta.LatITopBasis
-public import Formalism.LocalToGlobal.GlobalTheory.GL3.CubicFields.PeriodRelations.LeadingConstantNeZero
-public import Formalism.SharpRestriction.GlobalSchurBounds.GlobalRankLatticeProofs.UnitTraceSumBounds.OkpDict
+public import Formalism.LocalToGlobal.GlobalTheory.GL3.CubicFields.PeriodRelations.Bundle0001
+public import Formalism.SharpRestriction.GlobalSchurBounds.GlobalRankLatticeProofs.UnitTraceSumBounds.Bundle0007
 
 @[expose] public section
 

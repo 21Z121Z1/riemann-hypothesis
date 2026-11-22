@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import GroundTheory.ArithmeticGeometry.AbelianVarieties.FormalGroupReduction
-public import GroundTheory.PowerSubgroups.CountableNeighbourhoods.SlopeVcCountableNeighbourhoods
+public import GroundTheory.PowerSubgroups.CountableNeighbourhoods.Bundle0001
 
 @[expose] public section
 

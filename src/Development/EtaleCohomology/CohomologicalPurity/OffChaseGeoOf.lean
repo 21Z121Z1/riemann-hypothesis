@@ -1,6 +1,6 @@
 module
 
-public import Development.EtaleCohomology.CohomologicalPurity.EtalePurityContinuityOffClosedOfLocalAndChase
+public import Development.EtaleCohomology.CohomologicalPurity.Bundle0025
 
 @[expose] public section
 

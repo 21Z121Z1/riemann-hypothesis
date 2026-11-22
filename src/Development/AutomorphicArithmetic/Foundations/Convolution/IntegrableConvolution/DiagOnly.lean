@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicArithmetic.Foundations.Convolution.IntegrableConvolution.TrDefs
+public import Development.AutomorphicArithmetic.Foundations.Convolution.IntegrableConvolution.Bundle0001
 
 @[expose] public section
 

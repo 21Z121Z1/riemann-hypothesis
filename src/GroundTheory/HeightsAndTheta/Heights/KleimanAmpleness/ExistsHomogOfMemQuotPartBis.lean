@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.CellResMemLocPart
+public import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.Bundle0043
 
 @[expose] public section
 

@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.DifferentiableAtDirD
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsConjFsBasisOfUnitary
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0887
 
 @[expose] public section
 

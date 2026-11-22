@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.Edge1
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.GermCompatId
+public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.Bundle0015
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0354
 
 @[expose] public section
 

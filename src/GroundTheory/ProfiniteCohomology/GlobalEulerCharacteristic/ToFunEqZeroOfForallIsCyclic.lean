@@ -1,10 +1,10 @@
 module
 
 public import Mathlib
-public import GroundTheory.ProfiniteCohomology.LocalEulerCharacteristic.Additive
+public import GroundTheory.ProfiniteCohomology.LocalEulerCharacteristic.Bundle0002
 public import GroundTheory.ProfiniteCohomology.GlobalEulerCharacteristic.ArtinDefs
-public import GroundTheory.ProfiniteCohomology.GlobalEulerCharacteristic.ArtinCount
-public import GroundTheory.ProfiniteCohomology.GlobalEulerCharacteristic.PermLattice
+public import GroundTheory.ProfiniteCohomology.GlobalEulerCharacteristic.Bundle0001
+public import GroundTheory.ProfiniteCohomology.GlobalEulerCharacteristic.Bundle0002
 public import GroundTheory.ProfiniteCohomology.GlobalEulerCharacteristic.OrbitInvariants
 
 @[expose] public section

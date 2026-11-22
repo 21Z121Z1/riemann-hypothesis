@@ -1,43 +1,50 @@
 module
 
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.JacobiMapsExistStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.HeightFunctionsExistStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FourierJacobiUnfoldingStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ThetaTwistIdentityStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FourierJacobiEisensteinStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.PartialConstantTermBoundStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.RegularSectionOfHeightsStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.EisensteinHolomorphyOfHeightsStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ThetaTotalOfHeckeEtaStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FourierJacobiCoefficientOfBoundStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.PartialConstantFourierCoefficientStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SphericalBoundOfHeightsStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.HeckeCharacterEtaConditionStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.RightIdentityStatementStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.PoleRealityStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ResidueMeasureIdentityStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.PolarPartIdentityStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FourierZeroHoldsStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CoefficientDataExistsStatement
+public import Mathlib
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.JacobiMapsExist
+public import Development.WeilBound.RepresentationTheoryGL.RegularisedSiegelWeil.ThetaIdempotents.HeckeEta
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0634
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0735
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ThetaTwistIdentity
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0733
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.PartialConstantTermBound
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.RegularSectionOfHeights
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0708
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0726
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0649
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0688
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SphericalBoundOfHeights
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0512
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0523
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0684
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.PolarPartIdentity
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0672
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0632
+public import Development.WeilBound.CoreStatements.AutomorphicKernels.UnitarySchrodingerModel.CoefDataExists
+public import Development.WeilBound.CoreStatements.PublishedTheorems.SiegelWeilSchrodinger.SiegelWeilUnitarySchrodingerLit
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0261
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0262
+public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.Bundle0016
+public import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0018
 
 @[expose] public section
 
 namespace PositivityTheory.Rg.Rsw
 
-theorem mapsExist : MapsExist := GlobalTheory.T.jacobi_maps_exist
-theorem htExist : HtExist := GlobalTheory.T.height_functions_exist
-theorem heckeEta : HeckeEta := GlobalTheory.T.hecke_character_eta_condition
-theorem fjEis : FJEis := GlobalTheory.T.fourier_jacobi_eisenstein GlobalTheory.T.fourier_jacobi_unfolding GlobalTheory.T.theta_twist_identity
-theorem pcBound : PcBound := GlobalTheory.T.partial_constant_term_bound
-theorem rSec : RSec := GlobalTheory.T.regular_section_of_heights htExist
-theorem eisHol : EisHol := GlobalTheory.T.eisenstein_holomorphy_of_heights htExist
-theorem thTotal : ThTotal := GlobalTheory.T.theta_total_of_hecke_eta heckeEta
+theorem mapsExist : MapsExist := _root_.GlobalTheory.CompanionTheory.JacobiMaps.mapsExist
+theorem htExist : HtExist := _root_.GlobalTheory.CompanionTheory.HtEx.htExist
+theorem heckeEta : HeckeEta := _root_.GlobalTheory.CompanionTheory.HeckeEtaExist.heckeEta
+theorem fjEis : FJEis := _root_.GlobalTheory.CompanionTheory.FJE.fjEis _root_.GlobalTheory.CompanionTheory.ZUnf.zUnfold _root_.GlobalTheory.CompanionTheory.ThTw.thTwist
+theorem pcBound : PcBound := _root_.GlobalTheory.CompanionTheory.PcB.pcBound
+theorem rSec : RSec := _root_.GlobalTheory.CompanionTheory.RSecPf.rSec_of_htExist htExist
+theorem eisHol : EisHol := _root_.GlobalTheory.CompanionTheory.EisHolFam.eisHol_of_htExist htExist
+theorem thTotal : ThTotal := _root_.GlobalTheory.CompanionTheory.ThTot.thTotal heckeEta
 theorem cfFJ : CfFJ := GlobalTheory.T.fourier_jacobi_coefficient_of_bound pcBound
-theorem pcFc : PcFc := GlobalTheory.T.partial_constant_fourier_coefficient mapsExist GlobalTheory.T.fourier_zero_holds
-theorem sphBound : SphBound := GlobalTheory.T.spherical_bound_of_heights htExist
+theorem pcFc : PcFc := _root_.GlobalTheory.CompanionTheory.PcFc.target mapsExist GlobalTheory.T.fourier_zero_holds
+theorem sphBound : SphBound := _root_.GlobalTheory.CompanionTheory.SphPole.sphBound_of_htExist htExist
 theorem resMu : ResMu :=
-  GlobalTheory.T.residue_measure_identity mapsExist htExist heckeEta fjEis pcBound rSec eisHol thTotal pcFc sphBound GlobalTheory.T.fourier_zero_holds GlobalTheory.T.coefficient_data_exists
+  _root_.GlobalTheory.CompanionTheory.ResMu.resMu_main mapsExist htExist heckeEta fjEis pcBound rSec eisHol thTotal pcFc sphBound GlobalTheory.T.fourier_zero_holds _root_.GlobalTheory.CompanionTheory.SWCoef.coefDataExists
 theorem polar : Polar :=
-  GlobalTheory.T.polar_part_identity mapsExist htExist heckeEta GlobalTheory.T.right_identity_statement GlobalTheory.T.pole_reality fjEis pcBound rSec eisHol thTotal cfFJ pcFc sphBound
+  _root_.GlobalTheory.CompanionTheory.RswPolar.polar mapsExist htExist heckeEta _root_.GlobalTheory.CompanionTheory.Dblock.rightId _root_.GlobalTheory.CompanionTheory.PoleBound.poleReal fjEis pcBound rSec eisHol thTotal cfFJ pcFc sphBound
 
 end PositivityTheory.Rg.Rsw

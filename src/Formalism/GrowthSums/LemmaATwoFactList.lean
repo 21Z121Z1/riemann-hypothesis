@@ -1,13 +1,8 @@
 module
 
-public import Formalism.GrowthSums.FactorialBaseGrowth.Coarse
-public import Formalism.GrowthSums.FactorialBaseGrowth.Harmonic
-public import Formalism.GrowthSums.FactorialBaseGrowth.QuadraticExponentIdentity
-public import Formalism.GrowthSums.FactorialBaseGrowth.Segment
-public import Formalism.GrowthSums.FactorialBaseGrowth.NextEvenTopHolds
-public import Formalism.GrowthSums.FactorialBaseGrowth.LogCoef
+public import Formalism.GrowthSums.FactorialBaseGrowth.Bundle0001
+public import Formalism.GrowthSums.FactorialBaseGrowth.Bundle0002
 public import Mathlib
-public import Formalism.GrowthSums.FactorialBaseGrowth.PathBasisOfCount
 
 @[expose] public section
 

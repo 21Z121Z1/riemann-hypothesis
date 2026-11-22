@@ -3,15 +3,15 @@ module
 public import Mathlib
 public import Development.AutomorphicArithmetic.OrbitLabellings.RowDefs
 public import Development.AbelianVarietyTheory.Definitions.Jets.DepthNumbersThresholdEq
-public import Formalism.LocalToGlobal.CharacterGerms.RowTieMemCHarm
+public import Formalism.LocalToGlobal.CharacterGerms.Bundle0030
 public import Formalism.LocalToGlobal.CharacterGerms.RowTieFlagS
 public import Development.AutomorphicArithmetic.OrbitLabellings.ExistsOrbitLabellingAtInertPrimeOfOddOrder
 public import Development.AutomorphicArithmetic.OrbitLabellings.LabelSetGeoOfEvenOfRankOKOfNotDvdDiscr
-public import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.IsCanonGaugeMapFB
-public import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.CmHostIdempotentTraceEqOne
-public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.ExistsClosedCompleteFieldOverPlace
-public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.GapParts
-public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.RealPlaceLabellingInertFrobeniusNotConj
+public import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.Bundle0039
+public import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.Bundle0038
+public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0124
+public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0126
+public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0129
 
 @[expose] public section
 

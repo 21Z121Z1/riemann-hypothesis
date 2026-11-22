@@ -1,7 +1,7 @@
 module
 
 public import Formalism.SharpRestriction.GrowthBounds.SegmentDegree.CoarseLabelFactorisation
-public import Formalism.SharpRestriction.GrowthBounds.SegmentDegree.FrobeniusReductionProduct
+public import Formalism.SharpRestriction.GrowthBounds.SegmentDegree.Bundle0006
 
 @[expose] public section
 

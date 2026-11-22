@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ZAEqAlgebraMapPt
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.BreuilKisinXiExtMemRigidTensorIff
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.BreuilKisinSectionTrivialisesInvertPrimeTensor
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0466
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0188
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0194
 
 @[expose] public section
 

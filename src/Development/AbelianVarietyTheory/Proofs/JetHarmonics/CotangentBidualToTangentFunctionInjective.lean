@@ -3,7 +3,7 @@ module
 public import Mathlib
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PlaceDivisors.AlWellDefSt
 public import Development.AbelianVarietyTheory.BlockTheory.JetGauges.HodgeTateCharacterSystems
-public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.ExistsUniqueIsAl
+public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0044
 public import Development.AbelianVarietyTheory.Proofs.HomogeneousIdeals.FinrankOfIsStandardSmoothOfRelativeDimension
 
 @[expose] public section

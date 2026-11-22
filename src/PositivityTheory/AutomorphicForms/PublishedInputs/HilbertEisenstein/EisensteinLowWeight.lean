@@ -1,8 +1,8 @@
 module
 
 public import PositivityTheory.AutomorphicForms.PublishedInputs.HilbertEisenstein.SSmooth
-public import PositivityTheory.AutomorphicForms.PublishedInputs.HilbertEisenstein.CentralCharacterHolds
-public import PositivityTheory.AutomorphicForms.PublishedInputs.HilbertEisenstein.LibFresh
+public import PositivityTheory.AutomorphicForms.PublishedInputs.HilbertEisenstein.Bundle0001
+public import PositivityTheory.AutomorphicForms.PublishedInputs.HilbertEisenstein.Bundle0003
 public import PositivityTheory.AutomorphicForms.PublishedInputs.HilbertEisenstein.ChartEisIntDifferentiableAt
 
 @[expose] public section

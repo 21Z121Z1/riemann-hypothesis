@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.IntegralFramedPointModelPolarisedGenericFibre
-public import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.CubWeilOfInjective
+public import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.Bundle0078
+public import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.Bundle0070
 
 @[expose] public section
 

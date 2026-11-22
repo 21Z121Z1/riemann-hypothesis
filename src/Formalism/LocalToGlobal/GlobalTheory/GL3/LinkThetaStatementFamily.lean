@@ -2,8 +2,8 @@ module
 
 public import Mathlib
 public import Formalism.LocalToGlobal.GlobalTheory.GL3.PFourSq
-public import Formalism.LocalToGlobal.GlobalTheory.GL3.IsometryLinkageTrivialLevel
-public import Formalism.LocalToGlobal.PairingIndexBounds.HalvesRecursion.RecursiveLatticeMembership.MemLamOfIff
+public import Formalism.LocalToGlobal.GlobalTheory.GL3.Bundle0003
+public import Formalism.LocalToGlobal.PairingIndexBounds.HalvesRecursion.RecursiveLatticeMembership.Bundle0001
 
 @[expose] public section
 

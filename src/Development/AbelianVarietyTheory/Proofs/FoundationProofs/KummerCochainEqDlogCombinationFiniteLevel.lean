@@ -2,19 +2,18 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.Foundations.NotCoboundaryConstantOne
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.KummerTowerQqPowLevelEqQ
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.IsIntPrimeDivRootOfUnitySubOnePowStatement
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsAlmostGaloisCoordinatesStatement
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.TraceTowerAlmostDualBasesAdjoinKummerRootStatement
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsDerivationModIntegralExtensionPCubeStatement
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.DerivationModIntegralAlmostDualPSqIsIntStatement
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.TowerLevelEmbeddingInjectiveRangeAdjoinRootsStatement
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.TowerGaloisFixedEqDivLevelElementsStatement
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.TowerLevelAdjoinRootsIntegrallyClosedQuotientStatement
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsDlogDerivationsTowerLevelModIntegralStatement
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsDlogDerivationsGluedTowerLevelsStatement
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.KaehlerRelationDerivationModIntegralStatement
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.TowerGnExponentsKummerCochainsStatement
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0035
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0066
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0187
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0070
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0063
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0062
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0112
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0059
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0131
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0115
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0046
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0068
 
 @[expose] public section
 
@@ -26,7 +25,7 @@ variable {p : ℕ} [Fact p.Prime] {Ω : Type} [Field Ω] [Algebra (O0 p) Ω]
 
 theorem emb_mem_Lev {T : Tower p Ω} {n : ℕ} {ι : On p n →ₐ[O0 p] Ω} (hΩ : IsClo p Ω) (hn : 1 ≤ n)
     (hι : IsEmb T n ι) (x : On p n) : ι x ∈ Lev T n := by
-  rw [← (GlobalTheory.T.towerLevelEmbedding_injective_range_adjoinRoots p Ω hΩ T n hn ι hι).2]; exact ⟨x, rfl⟩
+  rw [← (_root_.GlobalTheory.K5.LevEmb.emb_inj_range p Ω hΩ T n hn ι hι).2]; exact ⟨x, rfl⟩
 
 theorem p_ne (T : Tower p Ω) : (p : Ω) ≠ 0 := by
   have h := (T.prim 1).neZero'
@@ -38,7 +37,7 @@ theorem conj_mem_Hinf {T : Tower p Ω} {n : ℕ} {lz lq : Gal p Ω → ZMod (p ^
     {g h : Gal p Ω} (hg : g ∈ Gn T n) (hh : h ∈ Hinf T) : g⁻¹ * h * g ∈ Hinf T := by
   rw [mem_Hinf] at hh ⊢
   intro m
-  obtain ⟨i, j, -, -, e1, e2, -⟩ := GlobalTheory.T.towerGn_exponents_kummer_cochains p Ω T n (m + 2 * n) (by omega) lz lq hz hq g hg
+  obtain ⟨i, j, -, -, e1, e2, -⟩ := _root_.GlobalTheory.KumExpo.exponents p Ω T n (m + 2 * n) (by omega) lz lq hz hq g hg
   have k1 : (g⁻¹ * h * g) (T.ζ (m + 2 * n)) = T.ζ (m + 2 * n) := by
     show g.symm (h (g _)) = _
     rw [AlgEquiv.symm_apply_eq, e1, map_pow, (hh _).1]
@@ -66,7 +65,7 @@ theorem gal_mem_fix {T : Tower p Ω} {n : ℕ} {a lz lq : Gal p Ω → ZMod (p ^
 theorem fix_mem_Lev (hΩ : IsClo p Ω) (T : Tower p Ω) :
     ∀ x ∈ FixI (Hinf T), ∃ m : ℕ, x ∈ Lev T m := by
   intro x hx
-  obtain ⟨m, a, ha, b, hb, hb0, rfl⟩ := GlobalTheory.T.towerGaloisFixed_eq_div_levelElements p Ω hΩ T x hx.2
+  obtain ⟨m, a, ha, b, hb, hb0, rfl⟩ := _root_.GlobalTheory.FixFrac.fixed_eq_div p Ω hΩ T x hx.2
   exact ⟨m + 1, GlobalTheory.T.towerLevelAdjoinRoots_integrallyClosed_quotient p Ω hΩ T (m + 1) (by omega) a (Lev_mono T (by omega) ha) b
     (Lev_mono T (by omega) hb) hb0 hx.1⟩
 
@@ -93,8 +92,8 @@ theorem exists_ders (hp2 : p ≠ 2) (hΩ : IsClo p Ω) (T : Tower p Ω) (n : ℕ
   have hH : ∀ h ∈ Hinf T, ∃ i : ℕ, h r = T.ζ n ^ i * r := fun h hh => ⟨_, ha h (Hinf_le T n hh)⟩
   obtain ⟨ι, _, u, v, hu, hv, huv, h0⟩ := GlobalTheory.T.exists_almostGalois_coordinates p hp2 Ω hΩ T n r hr hH
   obtain ⟨tr, hd⟩ := GlobalTheory.T.traceTower_almostDualBases_adjoin_kummer_root p Ω T n r hr hH ι u v hu hv huv h0
-  obtain ⟨dz, dq, hdz, hdq, hval⟩ := GlobalTheory.T.exists_dlog_derivations_glued_tower_levels p Ω hΩ T _ (fix_mem_Lev hΩ T)
-    (fun m hm => GlobalTheory.T.exists_dlog_derivations_towerLevel_mod_integral p Ω hΩ T m hm)
+  obtain ⟨dz, dq, hdz, hdq, hval⟩ := _root_.GlobalTheory.LevGlue.glue p Ω hΩ T _ (fix_mem_Lev hΩ T)
+    (fun m hm => _root_.GlobalTheory.LevDer.exists_levDer p Ω hΩ T m hm)
   obtain ⟨Dz, hDz, ez⟩ := GlobalTheory.T.exists_derivationModIntegral_extension_p_cube p Ω _ _ ι u v tr hd dz hdz
   obtain ⟨Dq, hDq, eq⟩ := GlobalTheory.T.exists_derivationModIntegral_extension_p_cube p Ω _ _ ι u v tr hd dq hdq
   have hC := hd.2.1
@@ -119,7 +118,7 @@ theorem exists_ders (hp2 : p ≠ 2) (hΩ : IsClo p Ω) (T : Tower p Ω) (n : ℕ
   obtain ⟨m, hm2, hmM⟩ : ∃ m, 2 * n ≤ m ∧ ∀ kl, M kl ≤ m :=
     ⟨max (2 * n) (Finset.univ.sup M), le_max_left _ _, fun kl =>
       le_trans (Finset.le_sup (f := M) (Finset.mem_univ kl)) (le_max_right _ _)⟩
-  obtain ⟨i, j, s, t, e1, e2, hi, hj⟩ := GlobalTheory.T.towerGn_exponents_kummer_cochains p Ω T n m hm2 lz lq hz hq g hg
+  obtain ⟨i, j, s, t, e1, e2, hi, hj⟩ := _root_.GlobalTheory.KumExpo.exponents p Ω T n m hm2 lz lq hz hq g hg
   obtain ⟨y1, y2, y3, y4⟩ := V m (by omega)
   have zC := hd.1 (hLB m (zeta_mem_Lev T m))
   have qC := hd.1 (hLB m (qq_mem_Lev T m))

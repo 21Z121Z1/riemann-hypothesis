@@ -2,14 +2,14 @@ module
 
 public import Mathlib
 public import Development.WeilBound.CoreStatements.TemperedRepresentationTheory.MirabolicDerivatives.LeibnizDerivatives.GenericProdIff
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.OpenFns
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.UnipotentRadicalDecompositionNormal
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.OpenCellUnipotentUniquenessClosed
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SmoothIntegralLinear
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.UnipotentConjugationMeasureInvariant
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.OpenCellFunctionCompactSupportUnipotentStatement
-public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.IsGenericIffIsGenericFor
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsCompactSubgroupOfFinset
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0331
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0344
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0470
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0341
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0503
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SmoothVectorCompactUnipotentFixer
+public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.Bundle0016
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0464
 
 @[expose] public section
 
@@ -80,7 +80,7 @@ theorem isClosed_unipU : IsClosed (unipU k d hd : Set (GL (Fin N) k)) := (Global
 
 theorem hasCompactSupport_phi (ψ : AddChar k Circle) (hρ : IsSmooth ρ) (f : IndSp (stdBlocks d hd) ρ)
     (hf : f ∈ openFns d hd ρ) : HasCompactSupport (phi ψ f) := by
-  obtain ⟨L, hLU, hLc, -, hL⟩ := GlobalTheory.T.open_cell_function_compact_support_unipotent k h N d hd ρ hρ f hf
+  obtain ⟨L, hLU, hLc, -, hL⟩ := _root_.GlobalTheory.CompanionTheory.Rodier.exists_compact_open_support k h N d hd ρ hρ f hf
   refine HasCompactSupport.of_support_subset_isCompact (K := Subtype.val ⁻¹' (L : Set (GL (Fin N) k)))
     ((isClosed_unipU (k := k) (d := d) (hd := hd)).isClosedEmbedding_subtypeVal.isCompact_preimage hLc) ?_
   intro u hu

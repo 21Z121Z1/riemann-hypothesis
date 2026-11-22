@@ -1,7 +1,7 @@
 module
 
 public import Development.AutomorphicArithmetic.Foundations.Convolution.LocalGroupAnalysis.SplitEquiv
-public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.HaarConstOfHaarExists
+public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0070
 
 @[expose] public section
 

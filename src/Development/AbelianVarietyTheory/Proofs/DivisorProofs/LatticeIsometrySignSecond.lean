@@ -2,19 +2,19 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LatticeIsometrySignFirst
-public import Development.AbelianVarietyTheory.Definitions.Divisors.GenReads
-public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.ThExprUniqOfChartIndep2
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaPairCharactersAtLevel
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LevelPointSmulIntegralOfFourierCoeffNeZeroStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.OneSubIdempotentSmulMemLatticeStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IdempotentSumConjSumOrthogonalDvdStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FiniteAdelicMatrixMemLatticeOfColumnsStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsSelfDualCHLat
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0034
+public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0007
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1016
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1037
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1610
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1581
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0995
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0923
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GenMapTranspose
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FinPartConjMem
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0831
 public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.SelfDualLatticePairingDual
 public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.IsSelfDualCLatFrame
-public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.SmulMemLatO
+public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.Bundle0058
 public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IdempotentMulEqZeroOfOrthogonal
 
 @[expose] public section
@@ -320,7 +320,7 @@ theorem step (ψ : AddChar (AF D.host.F) ℂ) (hψ : IsStdChar D ψ (-1)) (V W :
   obtain ⟨-, -, m4, -, m5, -⟩ := GlobalTheory.MovedLat.moved_lattices D V W ΛV ΛW a1 a2 a3 a4 1 k
   rw [show fin V 1 = 1 from map_one _, m5, a5] at m4
   obtain ⟨-, e', P', he', hP', hs'⟩ := hh
-  have horth := GlobalTheory.T.idempotentSum_conjSum_orthogonal_dvd D e e' P P' bad he he' hbad hP'
+  have horth := _root_.GlobalTheory.IdemOrth.idemSum_orth D e e' P P' bad he he' hbad hP'
   have hee := GlobalTheory.PlaceDatum.idemSum_mul_self he
   have hec := he.2
   have hcc : cA D e * cA D e = cA D e := by rw [← RingHom.map_mul, hee]
@@ -371,7 +371,7 @@ theorem step (ψ : AddChar (AF D.host.F) ℂ) (hψ : IsStdChar D ψ (-1)) (V W :
           (Bridge.hLat W (fin W k) : Set (Fin W.rank → D.host.E)) fun _ => True := by
     intro s hs
     rw [smul_moved]
-    refine GlobalTheory.T.finite_adelic_matrix_mem_lattice_of_columns D V W hV k _ (infPart_moved V W k _) fun b => ?_
+    refine _root_.GlobalTheory.ColsInLat.mem_latO_of_cols D V W hV k _ (infPart_moved V W k _) fun b => ?_
     obtain ⟨z, hz⟩ := hs b
     rw [finPart_moved]
     convert hιm (δ • z) using 3
@@ -389,7 +389,7 @@ theorem step (ψ : AddChar (AF D.host.F) ℂ) (hψ : IsStdChar D ψ (-1)) (V W :
     choose v hv hv' using fun b => hj b s (Ideal.pow_le_pow_right
       ((Finset.single_le_sum (fun _ _ => Nat.zero_le _) (Finset.mem_univ b)).trans (Nat.le_succ _)) hs)
     refine ⟨GlobalTheory.LatVac.finTens 1 (Matrix.of fun a b => (δ • v b) a),
-      GlobalTheory.T.finite_adelic_matrix_mem_lattice_of_columns D V W hV k _ (infPart_finTens _) fun b =>
+      _root_.GlobalTheory.ColsInLat.mem_latO_of_cols D V W hV k _ (infPart_finTens _) fun b =>
         finVec_mem W k _ (Submodule.smul_of_tower_mem _ δ (hR _ (hv b))), ?_⟩
     rw [hu', smul_finTens, ← incA_nat, smul_finTens]
     congr 1
@@ -402,7 +402,7 @@ theorem step (ψ : AddChar (AF D.host.F) ℂ) (hψ : IsStdChar D ψ (-1)) (V W :
   have h1 : u - Formalism.L2.Theta.mt W k * GlobalTheory.LatVac.finTens (D := D) 1 ρ ∈
       latO V W (Formalism.L2.Pj.stdLat D.host.E V.rank : Set (Fin V.rank → D.host.E))
         (Bridge.hLat W (fin W k) : Set (Fin W.rank → D.host.E)) fun _ => True := by
-    refine GlobalTheory.T.finite_adelic_matrix_mem_lattice_of_columns D V W hV k _ ?_ fun b => ?_
+    refine _root_.GlobalTheory.ColsInLat.mem_latO_of_cols D V W hV k _ ?_ fun b => ?_
     · rw [Matrix.map_sub _ (RingHom.map_sub _), hu.1, infPart_moved, sub_zero]
     obtain ⟨a, ha, haq, hYa⟩ := (hY q b).1
     obtain ⟨z, hz⟩ := sub_sep_mem l (q b) a ha haq
@@ -453,7 +453,7 @@ theorem step (ψ : AddChar (AF D.host.F) ℂ) (hψ : IsStdChar D ψ (-1)) (V W :
     (nsmul_mem_latO V W _ _ _ N (nsmul_std Λ.La _ hΛ N (hN.trans inf_le_left)))
     (nsmul_mem_latO V W _ _ _ k₀ (nsmul_std Λ.La _ hΛ k₀ hk₁)) hk₀ l.odd hMN
     (idem_div_mem he 2 fun PP hPP => (hP PP hPP).2) u _ h1
-    (GlobalTheory.T.one_sub_idempotent_smul_mem_lattice D V W _ _ e P he _ fun s hs => hX s (hq s hs)) hMX _ w hw hw' s hs0 hsi w₂ hw₂ hw₂'
+    (_root_.GlobalTheory.OffIdem.one_sub_smul_mem_latO D V W _ _ e P he _ fun s hs => hX s (hq s hs)) hMX _ w hw hw' s hs0 hsi w₂ hw₂ hw₂'
   obtain ⟨c₀, hc₀, rfl⟩ := (m3 c).1 hc
   rw [hy, actO_smul V W h k e f1]
   exact ⟨c₀, hc₀, hc1, hc2⟩

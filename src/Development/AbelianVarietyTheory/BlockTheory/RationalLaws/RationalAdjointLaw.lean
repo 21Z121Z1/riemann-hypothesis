@@ -2,8 +2,8 @@ module
 
 public import Mathlib
 public import Formalism.LocalToGlobal.IndefiniteReal.ThPinsR
-public import Formalism.LocalToGlobal.IndefiniteReal.FWTie
-public import Formalism.LocalToGlobal.ProjectiveLattices.ThClassPins
+public import Formalism.LocalToGlobal.IndefiniteReal.Bundle0025
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0033
 
 @[expose] public section
 

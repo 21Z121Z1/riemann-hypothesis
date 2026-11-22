@@ -2,22 +2,20 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.Foundations.FinalTheorems
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.IntegralTwoCocycleReciprocityTrivialAtLastPlaceStatement
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.CupProductUnramifiedClassesVanishesStatement
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0355
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0371
 public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.UnramifiedCocycleKillsRootsStatement
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsAuxiliaryPrimeFrobeniusNearCommutatorStatement
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.CupProductCoboundaryModStatement
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.LocalHeightFrobeniusPlaceStatement
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsCharacterPrimeConductorDegreePrimePowStatement
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.CocyclePairingLocallyConstantStatement
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.LocalConditionsIndependentOfPlaceOverStatement
-public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.EqOfNatCastMem
-public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.CongruenceMulOfUnitFactor
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.MemOfFinTwo
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.NormAlgebraMapLeOne
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.IsOpenKerAndIsLocallyConstant
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ColRepApplyOfOne
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.InertiaFixesRootOfUnity
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0346
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0373
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0345
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0348
+public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0014
+public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0008
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0342
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0012
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0340
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0337
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0341
 
 @[expose] public section
 
@@ -216,7 +214,7 @@ theorem ht_vanish_commutator : GlobalTheory.Mem.LiteralAutomorphy.LitCoh → ∀
   have hker2 : (toGS Ω (S2 : Set Pl)).ker ≤ N0g W ⊓ ψ.ker := by
     rw [htc_ker_toGS]
     exact le_inf ((htc_NS_anti hsub).trans hNS_N0) hNSψ
-  have hxi := GlobalTheory.T.cocycle_pairing_locally_constant l Ω c n S2 W y z d u P ψ hWc hO hdet2 hker2 hψlc hPO hy hz hyO hzO
+  have hxi := _root_.GlobalTheory.Ord2.cup_product_two_cocycle l Ω c n S2 W y z d u P ψ hWc hO hdet2 hker2 hψlc hPO hy hz hyO hzO
     (fun a ha => by
       rw [htc_ker_toGS] at ha
       have ha' := htc_NS_anti hsub ha
@@ -255,7 +253,7 @@ theorem ht_vanish_commutator : GlobalTheory.Mem.LiteralAutomorphy.LitCoh → ∀
       subst hvv'
       refine ⟨A, hAv', hξDec v hvS A hAv' ?_⟩
       obtain ⟨x, hxO, hx⟩ := hzl
-      exact GlobalTheory.T.cup_product_coboundary_mod l Ω c n W (Dec (F := ℚ) A) d z hWc hO hdet2 (hCocd v hvS A hAv') (hCocz _)
+      exact _root_.GlobalTheory.Ord2.CupCob.cup_cob l Ω c n W (Dec (F := ℚ) A) d z hWc hO hdet2 (hCocd v hvS A hAv') (hCocz _)
         (Or.inr ⟨x, hxO, fun s hs => by rw [hx s hs]; exact hCv _⟩)
     · obtain ⟨B', hB', hcobd⟩ := hdq v hvS hvl
       obtain ⟨x, hxO, hx⟩ := hzq v hvl B' hB'

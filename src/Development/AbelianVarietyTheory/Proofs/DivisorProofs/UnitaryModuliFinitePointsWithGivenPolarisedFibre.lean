@@ -1,14 +1,14 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Divisors.SymTupOne
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0067
 public import Development.AbelianVarietyTheory.Statements.TorsionEndomorphisms.EndDeterminedOnTorsion
-public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.SiegelToroidalIntegral
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FiniteIntegerRingActionsPrincipallyPolarisedStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ModuliGeometricPointEqOfSameFibreActionLevelStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PolarizationPartBaseChange
+public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.Bundle0012
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2531
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2464
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2207
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.VtUniq
-public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.PushEquivSymmLeft
+public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0087
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.BCTools
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.SABBaseChangeSt
 
@@ -202,7 +202,7 @@ theorem finite_points : ∀ (E : Type) [Field E] [NumberField E] [IsCMField E] (
     simp only [F, Prod.mk.injEq] at h
     obtain ⟨h1, h2, h3⟩ := h
     apply Subtype.ext
-    refine GlobalTheory.T.moduli_geometric_point_eq_of_same_fibre_action_level E H Dw l Xo K P x.1 x'.1 (α x) (α x') (x.2.1.trans x'.2.1.symm) (hα x) (hα x') (hL x) (hL x')
+    refine _root_.GlobalTheory.UMin.moduli_point_eq_of_same_fibre E H Dw l Xo K P x.1 x'.1 (α x) (α x') (x.2.1.trans x'.2.1.symm) (hα x) (hα x') (hL x) (hL x')
       (fun a => ⟨(ρ x).act a, hρ x a, by rw [congrFun h1 a]; exact hρ x' a⟩)
       (fun a => ⟨pt x (Xo.univ.eta a), ObjPull.secPull_left (hα x) _, by
         rw [congrFun h2 a]; exact ObjPull.secPull_left (hα x') _⟩)

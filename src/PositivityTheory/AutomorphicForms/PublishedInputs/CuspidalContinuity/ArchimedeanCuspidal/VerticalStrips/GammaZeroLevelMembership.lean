@@ -2,7 +2,7 @@ module
 
 public import PositivityTheory.AutomorphicForms.PublishedInputs.CuspidalContinuity.ArchimedeanCuspidal.SquareIntegrable.WhittakerModelGL2
 public import Mathlib
-public import GroundTheory.AutomorphicForms.GL2Classical.Smooth
+public import GroundTheory.AutomorphicForms.GL2Classical.Bundle0002
 public import GroundTheory.AutomorphicForms.GL2.GodementSectionFactor
 public import GroundTheory.AutomorphicForms.ReductionMeasure
 

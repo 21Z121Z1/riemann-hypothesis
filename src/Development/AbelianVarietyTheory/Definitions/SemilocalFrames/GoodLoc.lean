@@ -4,9 +4,9 @@ public import Mathlib
 public import Formalism.LocalToGlobal.SiegelLatticeTheory.FlagStabilizerTensors.PoincareConstantEq
 public import Formalism.LocalToGlobal.SiegelLatticeTheory.FlagStabilizerTensors.LocWSOf
 public import Formalism.LocalToGlobal.SiegelLatticeTheory.ClosedLocalOrbits.GaugeLatticeShifts.Vanish
-public import Formalism.PeriodIntegrals.BesselMapUniq
-public import Formalism.LocalRingCardinality.DataTies
-public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.IsFundOne
+public import Formalism.PeriodIntegrals.Bundle0016
+public import Formalism.LocalRingCardinality.Bundle0003
+public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.Bundle0011
 
 @[expose] public section
 

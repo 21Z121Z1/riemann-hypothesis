@@ -3,7 +3,7 @@ module
 public import Mathlib
 public import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.ThetaParseval.CartanIdeles.SpacesExOf
 public import GroundTheory.GlobalFields.ClassFieldConsequences.TrivialModulus
-public import GroundTheory.GlobalFields.IdeleGroups.LocalConditionIndex
+public import GroundTheory.GlobalFields.IdeleGroups.Bundle0002
 
 @[expose] public section
 

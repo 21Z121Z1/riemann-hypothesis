@@ -1,9 +1,9 @@
 module
 
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.HermiteNormalForms.SmulNeZeroLat
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.HermiteNormalForms.DetPull
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.HermiteNormalForms.Cramer
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.HermiteNormalForms.Scinv
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.HermiteNormalForms.Bundle0006
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.HermiteNormalForms.Bundle0001
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.HermiteNormalForms.Bundle0003
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.HermiteNormalForms.Rypos
 
 @[expose] public section

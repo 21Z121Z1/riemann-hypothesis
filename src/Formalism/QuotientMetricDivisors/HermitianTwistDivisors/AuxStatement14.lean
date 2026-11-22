@@ -1,18 +1,15 @@
 module
 
 public import Mathlib
-public import Formalism.QuotientMetricDivisors.ClassSumDualLe
+public import Formalism.QuotientMetricDivisors.Bundle0001
 public import Formalism.QuotientMetricDivisors.HermitianTwistDivisors.RatHerm
 public import Formalism.QuotientMetricDivisors.HermitianTwistDivisors.IdxChange
-public import Formalism.QuotientMetricDivisors.HermitianTwistDivisors.LocBasis
-public import Formalism.QuotientMetricDivisors.HermitianTwistDivisors.ReductionLemmaFirst
-public import Formalism.QuotientMetricDivisors.ProdFormula
+public import Formalism.QuotientMetricDivisors.HermitianTwistDivisors.Bundle0001
+public import Formalism.QuotientMetricDivisors.HermitianTwistDivisors.Bundle0002
 public import Formalism.QuotientMetricDivisors.HermitianTwistDivisors.ValBasic
-public import Formalism.QuotientMetricDivisors.HermitianTwistDivisors.ProdFormula
-public import Formalism.HermitianLattices.HermitianLatticesProofs.LocDual
+public import Formalism.HermitianLattices.HermitianLatticesProofs.Bundle0003
 public import Formalism.HermitianLattices.HermitianLatticesProofs.DualLattice
-public import Formalism.HermitianLattices.HermitianLatticesProofs.DualBasic
-public import Formalism.HermitianLattices.HermitianLatticesProofs.LocBasic
+public import Formalism.HermitianLattices.HermitianLatticesProofs.Bundle0001
 
 @[expose] public section
 

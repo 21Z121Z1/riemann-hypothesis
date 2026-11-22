@@ -2,8 +2,8 @@ module
 
 public import Formalism.LocalToGlobal.InertKernelTheory.SubBSplit
 public import Formalism.LocalToGlobal.InertKernelTheory.InertCoprimeLemmas.K2Hermitian
-public import Formalism.LocalToGlobal.GroupLattices.PendingLemmas.InvarianceIffAdditiveMapsExist
-public import Formalism.LocalToGlobal.GroupLattices.ComparisonMaps.NatActRVtupR
+public import Formalism.LocalToGlobal.GroupLattices.PendingLemmas.Bundle0003
+public import Formalism.LocalToGlobal.GroupLattices.ComparisonMaps.Bundle0003
 
 @[expose] public section
 

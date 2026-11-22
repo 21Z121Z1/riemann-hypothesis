@@ -3,7 +3,7 @@ module
 public import Mathlib
 public import GroundTheory.TateCohomology.CupCochains
 public import GroundTheory.ProfiniteCohomology.ContinuousCochains
-public import GroundTheory.ProfiniteCohomology.Bridge
+public import GroundTheory.ProfiniteCohomology.Bundle0004
 
 @[expose] public section
 

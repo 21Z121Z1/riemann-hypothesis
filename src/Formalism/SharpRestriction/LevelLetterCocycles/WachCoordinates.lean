@@ -1,13 +1,13 @@
 module
 
 public import Mathlib
-public import Formalism.SharpRestriction.LevelLetterCocycles.UsedLocalConclusion
+public import Formalism.SharpRestriction.LevelLetterCocycles.Bundle0006
 public import Formalism.WeaklyAdmissibleFiltrations.Statement
 public import Formalism.SharpRestriction.LevelLetterCocycles.DataNLoc
 public import Formalism.LocalRingCardinality.RhoDetPrimeEqMuTildeMulChiPow
 public import Formalism.SharpRestriction.LevelLetterCocycles.LiftingTheory
 public import Formalism.SharpRestriction.LevelLetterCocycles.DeltaInvariantLattices
-public import Formalism.SharpRestriction.LevelLetterCocycles.LocalTheoryWindows
+public import Formalism.SharpRestriction.LevelLetterCocycles.Bundle0009
 public import Formalism.WindowSums.Statement
 
 @[expose] public section

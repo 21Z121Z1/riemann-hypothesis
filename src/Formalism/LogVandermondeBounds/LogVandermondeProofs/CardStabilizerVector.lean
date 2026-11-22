@@ -1,6 +1,6 @@
 module
 
-public import Formalism.LogVandermondeBounds.LogVandermondeVariationUnbounded
+public import Formalism.LogVandermondeBounds.Bundle0001
 
 @[expose] public section
 

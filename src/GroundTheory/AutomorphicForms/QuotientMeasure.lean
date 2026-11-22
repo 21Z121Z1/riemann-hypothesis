@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.RightCosetSpaceCompact
+public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0053
 
 @[expose] public section
 

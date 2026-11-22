@@ -1,7 +1,7 @@
 module
 
 public import Formalism.HermitianCurvature.HermitianCurvatureProofs.ModelPlaceBuilt2OfPublished
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutEllRegW
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0188
 
 @[expose] public section
 

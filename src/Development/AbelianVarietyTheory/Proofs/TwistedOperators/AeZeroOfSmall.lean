@@ -2,10 +2,10 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.HasDerivAtAndIsTheta
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.RationalSymplecticPointsSelfAnnihilator
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsDescendPeriodicTrig
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.FourierCoeffMulCharConvAndHasDerivAt
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.MeanPeriodicIndepOfCovolumeOne
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0247
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0017
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0022
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0010
 public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SetIntegralPosOfPeriodicNonneg
 
 @[expose] public section

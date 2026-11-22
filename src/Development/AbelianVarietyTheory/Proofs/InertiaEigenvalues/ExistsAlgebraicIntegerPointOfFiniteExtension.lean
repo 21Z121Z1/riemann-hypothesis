@@ -2,10 +2,11 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.NatCastMemPlaceAt
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.EvLawsGenFrNonemptyComp
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0089
 public import Formalism.LocalToGlobal.ProjectiveLattices.LocFld
-public import Formalism.LocalToGlobal.ProjectiveLattices.IntAll
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsCdvrReadingInCpOfFiniteResidueStatement
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0022
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0761
+public import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.Bundle0023
 
 @[expose] public section
 
@@ -365,7 +366,7 @@ theorem exists_ptC_of_finExt : ∀ (E : Type) [Field E] [NumberField E] [IsCMFie
     · exact h0
   have hOσ' : OverLa (placeAt σ) T'.V (ψ.comp ι) (r * e1) := hOσ.bc ψ hrpos hr
 
-  obtain ⟨k', hk'⟩ := GlobalTheory.T.exists_cdvrReadingInCp_of_finiteResidue p L σ T' (ψ.comp ι) (r * e1) hOσ' hy'alg
+  obtain ⟨k', hk'⟩ := _root_.GlobalTheory.GeoTie.ReadExist.exists_isReading p L σ T' (ψ.comp ι) (r * e1) hOσ' hy'alg
   have hk : IsReading φ T' io' k' := by
     refine ⟨fun b => ?_, hk'.int⟩
     rw [← hψio, ← hσ b]

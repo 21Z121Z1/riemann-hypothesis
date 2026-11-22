@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsSupBoundCount
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PSupBoundBlock
+public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0026
+public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0054
 
 @[expose] public section
 

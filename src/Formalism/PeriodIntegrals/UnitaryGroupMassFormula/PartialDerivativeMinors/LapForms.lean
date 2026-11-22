@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.PartialDerivativeMinors.PMinorAff
-public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.MsMul
+public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0046
 
 @[expose] public section
 

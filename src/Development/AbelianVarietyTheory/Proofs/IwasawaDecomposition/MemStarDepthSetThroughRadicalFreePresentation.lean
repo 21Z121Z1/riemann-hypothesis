@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.StarDepthToFunNonneg
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0596
 
 @[expose] public section
 

@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.Divisors.CTSmallCone
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MemLowLat
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1005
 
 @[expose] public section
 

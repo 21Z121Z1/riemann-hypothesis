@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Formalism.EllipticTorsion.EllipticTorsionWeights
-public import Formalism.EllipticTorsion.EllipticTorsionProofs.CompExp
+public import Formalism.EllipticTorsion.Bundle0004
+public import Formalism.EllipticTorsion.EllipticTorsionProofs.Bundle0003
 public import Formalism.FormalGroupLog.LogDeterminesLaw
 
 @[expose] public section

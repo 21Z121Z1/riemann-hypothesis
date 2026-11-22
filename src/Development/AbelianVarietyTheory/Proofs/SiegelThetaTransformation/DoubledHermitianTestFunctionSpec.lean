@@ -2,22 +2,21 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.SpanningFamilies.IsSystem
-public import Development.AbelianVarietyTheory.Definitions.SpanningFamilies.IsHeatZero
+public import Development.AbelianVarietyTheory.Definitions.SpanningFamilies.Bundle0001
 public import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.DifferentiableOnDetHMat
 public import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.ExistsNetOfThickPoints
 public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.ThHEqThSDictionary
-public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.HMatMulVecPerCrd
-public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.DblZMemHn
+public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.Bundle0025
+public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.Bundle0024
 public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.ConjKappa
-public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.HermitianThetaSummableAndDeterminesTestFnStatement
-public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.SymplecticSiegelActionMemUpperHalfSpaceAndCocyclStatement
-public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.ExistsSymplecticActionOfPeriodLatticeMapStatement
-public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.SiegelThetaMulConjEqBlockThetaStatement
-public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.ExistsSymplecticDoubledHermitianCoordinatesStatement
-public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.GaussianQuadFormRationalCoordsHermitianStatement
-public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.DetDoubledCoordinatesToRationalCoordsStatement
-public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.CanonicalThetaExponentSymplecticInvariantStatement
-public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.ExistsWeilOfSymplecticStatement
+public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.Bundle0018
+public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.Bundle0004
+public import Development.AbelianVarietyTheory.Definitions.SpanningFamilies.IMemSiegel
+public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.Bundle0005
+public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.Bundle0008
+public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.Bundle0032
+public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.Bundle0009
+public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.Bundle0013
 
 @[expose] public section
 
@@ -124,7 +123,7 @@ theorem can_trans {κ ι ι' : Type} [Fintype κ] [Fintype ι] [DecidableEq ι] 
   have hd : ∀ a b : ι' → ℚ, (a ∘ e) ⬝ᵥ (b ∘ e) = a ⬝ᵥ b := fun a b => e.sum_comp fun i => a i * b i
   obtain ⟨σ, hσ, H⟩ := GlobalTheory.T.exists_symplectic_action_of_period_lattice_map ι (R ∘ₗ F) (fun u v => by
     rw [← hF u v, ← hd, ← hd (F u).2]; rfl)
-  obtain ⟨ω, hω⟩ := GlobalTheory.T.exists_weil_of_symplectic' κ ι σ hκ hσ
+  obtain ⟨ω, hω⟩ := _root_.GlobalTheory.SW.exists_weil_of_symplectic κ ι σ hκ hσ
   obtain ⟨h1, h2, -⟩ := hω φ hφ
   refine ⟨_, isSB_reindex e h1, fun τ hτ τ' M hs hM ζ => ?_⟩
   obtain ⟨e1, e2⟩ := H τ hτ (τ'.submatrix e e) (M.submatrix e id) (hs.submatrix e) (fun u => by
@@ -133,7 +132,7 @@ theorem can_trans {κ ι ι' : Type} [Fintype κ] [Fintype ι] [DecidableEq ι] 
     have h3 := congrFun (hM u) (e i)
     simp only [Pi.add_apply, mulVec, dotProduct, ← e.sum_comp] at h3 ⊢
     exact h3)
-  have hD := (GlobalTheory.T.symplecticSiegelAction_mem_upperHalfSpace_and_cocycle ι σ hσ τ hτ).1
+  have hD := (_root_.GlobalTheory.SiegelAction.symplectic_action ι σ hσ τ hτ).1
   have hζ : ∀ k, (M *ᵥ ζ k) ∘ e = ζ k ᵥ* (spDen σ τ)⁻¹ := fun k => by
     rw [← mulVec_transpose, ← e2]; rfl
   have hq : ∀ k, (M *ᵥ ζ k) ⬝ᵥ (τ'.map fun t => (t.im : ℂ))⁻¹ *ᵥ (M *ᵥ ζ k) =
@@ -202,10 +201,10 @@ theorem exists_isDbl (hs : IsSympl X bas) (hn : Even n) {φ₁ φ₂ : TF n g} (
     (h₂ : IsSB φ₂) : ∃ ψ, IsSB ψ ∧ IsDbl X bas idx φ₁ φ₂ ψ := by
   obtain ⟨e⟩ := nonempty_equiv X idx
   have hΨ := Base.isType_data X
-  obtain ⟨F, hF, hFu⟩ := GlobalTheory.T.exists_symplectic_doubled_hermitian_coordinates E r X g bas hs
-  obtain ⟨hφ, hprod⟩ := GlobalTheory.T.siegelTheta_mul_conj_eq_blockTheta (Fin n) (Fin g) (Fin g) φ₁ φ₂ h₁ h₂
+  obtain ⟨F, hF, hFu⟩ := _root_.GlobalTheory.SW.DblLat.dbl_lat E r X g bas hs
+  obtain ⟨hφ, hprod⟩ := _root_.GlobalTheory.SW.ThetaProd.thS_mul_conj_thS (Fin n) (Fin g) (Fin g) φ₁ φ₂ h₁ h₂
   obtain ⟨ψ, hψ, H⟩ := can_trans e F hF (by simpa using hn) hφ
-  obtain ⟨c, hc⟩ := GlobalTheory.T.det_doubledCoordinates_to_rationalCoords E r X g idx e
+  obtain ⟨c, hc⟩ := _root_.GlobalTheory.SW.det_dbl_coords E r X g idx e
   let ψ' : Matrix (Fin n) (Fin r) E → ℂ := fun x => c ^ (n / 2) * ψ ((Dict.ofQEquiv E n r).symm x)
   have hψ' : (fun m : Matrix (Fin n) (QI E r) ℚ => ψ' (ofQ m)) = fun m => c ^ (n / 2) * ψ m := by
     funext m
@@ -258,7 +257,7 @@ theorem exists_isDbl (hs : IsSympl X bas) (hn : Even n) {φ₁ φ₂ : TF n g} (
     rw [← hv]; congr 2; funext i; simp
   have hd2 : ((L * h⁻¹).submatrix e id).det = (L.submatrix e id).det * (h.det)⁻¹ := by
     rw [← Ring.inverse_eq_inv', ← Matrix.det_nonsing_inv, ← Matrix.det_mul]; rfl
-  simp only [hM, ← hLz, GlobalTheory.T.gaussian_quadForm_rationalCoords_hermitian E X.Ψ hΨ n r _ hZ, hd2, hL, Fintype.card_fin] at key
+  simp only [hM, ← hLz, _root_.GlobalTheory.SW.gauss_form_dictionary E X.Ψ hΨ n r _ hZ, hd2, hL, Fintype.card_fin] at key
   simp only [hw, quad_blocks _ _ t₁ t₂, ← hth, Finset.sum_add_distrib, mul_add,
     Complex.exp_add] at key
   rw [Dict.thH_eq, hψ']
@@ -298,7 +297,7 @@ theorem dbl_spec : ∀ (E : Type) [Field E] [NumberField E] [IsCMField E] (r : �
   obtain ⟨a, b⟩ := hd ▸ h.choose_spec
   refine ⟨a, b, fun ψ hψ hψ' => ?_⟩
   obtain ⟨x, hx⟩ := FiniteNet.dom_nonempty X
-  refine (GlobalTheory.T.hermitianTheta_summable_and_determines_testFn E X.Ψ (Base.isType_data X) n r ψ hψ _ (DblPoint.dblZ_mem hx hx)).2 _ a
+  refine (_root_.GlobalTheory.SW.thH_summable_and_inj E X.Ψ (Base.isType_data X) n r ψ hψ _ (DblPoint.dblZ_mem hx hx)).2 _ a
     fun z z' => ?_
   obtain ⟨z₁, w, rfl, rfl⟩ := dblz_surj E r X g idx n x hx x hx z z'
   have hk : kZero X idx x x z₁ w ≠ 0 := Finset.prod_ne_zero_iff.2 fun τ _ =>

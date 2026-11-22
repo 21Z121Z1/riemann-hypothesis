@@ -1,6 +1,6 @@
 module
 
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.OpLEqZeroOfEventually
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0154
 public import Formalism.FormalDegreeBessel.FormalDegreeRatio.GroupFactorizationHolds
 public import Formalism.HermitianCurvature.HermitianCurvatureProofs.CompactGroupHaarExists
 public import Formalism.HermitianCurvature.HermitianCurvatureProofs.OppositeWeylSubgroupClosed

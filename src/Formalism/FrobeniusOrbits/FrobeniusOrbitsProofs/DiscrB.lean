@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Formalism.FrobeniusOrbits.DiscrMaximalRealCyclotomic
+public import Formalism.FrobeniusOrbits.Bundle0001
 public import Formalism.FrobeniusOrbits.RealSubfieldLeCompositum
 public import Formalism.DirichletDensity.HostDensityArith
 public import Formalism.CMTypeGalois.HalfTypesFromGeneral

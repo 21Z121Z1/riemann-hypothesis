@@ -1,10 +1,10 @@
 module
 
 public import Mathlib
-public import Formalism.ThetaLogCoordinates.UniformThetaSubstitution.StatementAB
+public import Formalism.ThetaLogCoordinates.UniformThetaSubstitution.Bundle0001
 public import Formalism.GaussJetBounds.GaussJetProofs.ConstantCoeffAevalLinP
-public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.BiHomSum
-public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.DegLESum
+public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0003
+public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0011
 
 @[expose] public section
 

@@ -3,12 +3,14 @@ module
 public import Mathlib
 public import Development.AutomorphicArithmetic.ThetaCorrespondence.BesselModels.BurGapOfHyp
 public import Development.AutomorphicArithmetic.ThetaCorrespondence.BesselModels.GapArith
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SeparationLineOfBessel
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IsBesselFrameOfBesselDatumRealPlaceStatement
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.StandardCharTraceSingleRealPlaceStatement
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.BesselCharacterRealPlaceUnipotentEqTraceStatement
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.TopLineFromSeparation
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.FactorisationFromTopLine
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0331
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0617
+public import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.Bundle0006
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0041
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0332
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0533
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0334
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0320
 public import Formalism.LocalToGlobal.IndefiniteReal.LevelTypeEquivalence.InfFam
 
 @[expose] public section
@@ -162,13 +164,13 @@ theorem lastVertex_besselDatum_isFrame_isGeneric {D : D7} {T : Type} {L : LevCh 
       (fun k => tauE D τ (G.besTop.z k)) ∧
     GlobalTheory.RealBessel.IsGeneric (gramAt D (G.V (.grid D.R.m 0)) τ) (G.besTop.e.map (tauE D τ)) (fun k => tauE D τ (G.besTop.z k))
       fun u => besChar W.ψ G.besTop (atTau W.θ _ τ u) := by
-  refine ⟨GlobalTheory.T.isBesselFrame_of_besselDatum_realPlace D _ _ _ (G.rowDec 0 (by have := D.R.two_le_m; omega)).isom G.besTop τ, ?_⟩
+  refine ⟨_root_.GlobalTheory.BesselFrameReal.isFrame_of_besDat D _ _ _ (G.rowDec 0 (by have := D.R.two_le_m; omega)).isom G.besTop τ, ?_⟩
   refine ⟨fun j => -(4 * Real.pi : ℂ) * tauE D τ (G.besTop.c j), fun j => ?_, fun u hu a ha => ?_⟩
   · refine mul_ne_zero (neg_ne_zero.2 (by exact_mod_cast (by positivity : (4 * Real.pi : ℝ) ≠ 0))) ?_
     exact (map_ne_zero _).2 (G.besTop.c_ne j)
-  · obtain ⟨t, h1, h2, h3, h4⟩ := GlobalTheory.T.besselCharacter_realPlace_unipotent_eq_trace D W.θ W.θ_is W.ψ _ _ _ G.besTop τ u hu a ha
+  · obtain ⟨t, h1, h2, h3, h4⟩ := _root_.GlobalTheory.BesselCoords.besChar_atTau_coords D W.θ W.θ_is W.ψ _ _ _ G.besTop τ u hu a ha
     show besChar W.ψ G.besTop (atTau W.θ _ τ u) = _
-    rw [h4, GlobalTheory.T.standardChar_trace_single_realPlace D W.ψ W.ψ_std W.θ W.θ_is τ t h1 h2, h3, Finset.mul_sum]
+    rw [h4, _root_.GlobalTheory.PhaseReal.psi_trace_single D W.ψ W.ψ_std W.θ W.θ_is τ t h1 h2, h3, Finset.mul_sum]
     simp only [mul_assoc]
 
 

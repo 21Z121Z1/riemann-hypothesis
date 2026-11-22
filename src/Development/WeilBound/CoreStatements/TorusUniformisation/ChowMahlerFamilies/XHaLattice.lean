@@ -1,10 +1,10 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.LieLatticeData
-public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.ExistsUniformDenominator
-public import Development.WeilBound.CoreStatements.TorusUniformisation.ChowMahlerFamilies.XTestptExists
-public import GroundTheory.ArithmeticGeometry.ToricVarieties.KrullDomain
+public import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.Bundle0002
+public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.Bundle0007
+public import Development.WeilBound.CoreStatements.TorusUniformisation.ChowMahlerFamilies.Bundle0004
+public import GroundTheory.ArithmeticGeometry.ToricVarieties.Bundle0001
 
 @[expose] public section
 

@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Formalism.QuotientMetricDivisors.ProdFormula
-public import Formalism.HermitianLattices.HermitianLatticesProofs.LocBasic
+public import Formalism.QuotientMetricDivisors.Bundle0001
+public import Formalism.HermitianLattices.HermitianLatticesProofs.Bundle0001
 public import Formalism.HermitianLattices.HermitianLatticesProofs.IndexBasic
 
 @[expose] public section

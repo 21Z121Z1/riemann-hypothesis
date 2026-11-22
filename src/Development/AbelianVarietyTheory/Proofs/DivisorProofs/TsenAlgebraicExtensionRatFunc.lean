@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.COnePropertyFiniteExtensionStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsNonzeroZeroFormPolynomialIsAlgClosed
-public import Development.AbelianVarietyTheory.Definitions.Foundations.IsFirstChernClassOfLineBundle
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0126
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0422
+public import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0001
 
 @[expose] public section
 

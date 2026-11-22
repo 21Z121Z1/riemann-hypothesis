@@ -1,7 +1,7 @@
 module
 
 public import Formalism.LocalToGlobal.KernelLattices.ColumnData.ColumnDataEquations.SqLLaw
-public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.WeightThresholdDefs
+public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0081
 
 @[expose] public section
 

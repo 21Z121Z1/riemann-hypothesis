@@ -1,10 +1,10 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.LamV
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsCompletionEquiv
-public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.FrobOrderSpec
-public import Formalism.LocalRingCardinality.ConjSqrtMinusD
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0087
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0119
+public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.Bundle0006
+public import Formalism.LocalRingCardinality.Bundle0001
 public import Formalism.LocalRingCardinality.RankBoundMonotoneInDimension
 public import Formalism.LocalToGlobal.GroupLattices.PerfectRings.ICIntCp
 public import Formalism.LocalToGlobal.GroupLattices.PendingLemmas.WittFractionToCpAlgebraMap

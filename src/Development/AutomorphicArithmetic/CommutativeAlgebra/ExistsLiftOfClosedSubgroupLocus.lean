@@ -1,10 +1,10 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsQuasiInv
-public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.RangeSubsetOfGeom
-public import Development.AutomorphicArithmetic.Foundations.EtaleClopenDescent.SubRepPull
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.OverSchemeGrpObjOfMonoFactorStatement
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2069
+public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0030
+public import Development.AutomorphicArithmetic.Foundations.EtaleClopenDescent.Bundle0011
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0091
 
 @[expose] public section
 
@@ -182,7 +182,7 @@ theorem UpperTheory.exists_lift_of_closed_subgroup_locus :
     (snd _ _ ≫ subJ hP inc U) ⟨_, rfl⟩ ⟨_, rfl⟩
   obtain ⟨e, he'⟩ := fac_one hP inc U hc (𝟙_ (Over Y.left))
   obtain ⟨v, hv⟩ := fac_inv hP inc U hc (subH U) (subJ hP inc U) ⟨𝟙 _, Category.id_comp _⟩
-  obtain ⟨gH, hj⟩ := GlobalTheory.T.exists_grpObj_isMonHom_of_mono_factor Y.left A₀ (subH U) (subJ hP inc U) hmj
+  obtain ⟨gH, hj⟩ := _root_.GlobalTheory.overScheme_grpObj_of_mono_factor Y.left A₀ (subH U) (subJ hP inc U) hmj
     ⟨m, by rw [hm', Hom.mul_def, lift_fst_comp_snd_comp]⟩
     ⟨e, by rw [he', Hom.one_def, toUnit_unique (toUnit _) (𝟙 _), Category.id_comp]⟩
     ⟨v, by rw [hv, Hom.inv_def]⟩

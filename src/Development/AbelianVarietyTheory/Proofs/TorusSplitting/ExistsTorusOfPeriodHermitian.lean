@@ -2,11 +2,11 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.TorusSections.IsTorusOf
-public import Formalism.LocalToGlobal.ProjectiveLattices.AllTest
-public import Formalism.LocalToGlobal.ProjectiveLattices.NormsFree
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArakelovVolumes.UpperBounds.IsOrth
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0010
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0013
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArakelovVolumes.UpperBounds.Bundle0003
 public import Development.AbelianVarietyTheory.Proofs.TorusSplitting.TorusAtExistsOfParts
-public import Development.AbelianVarietyTheory.Proofs.TorusSplitting.ConjEqNegOfSqEqNegNat
+public import Development.AbelianVarietyTheory.Proofs.TorusSplitting.Bundle0007
 
 @[expose] public section
 

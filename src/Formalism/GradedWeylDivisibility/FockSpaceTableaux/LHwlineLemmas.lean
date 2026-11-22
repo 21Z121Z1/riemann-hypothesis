@@ -1,8 +1,8 @@
 module
 
-public import Formalism.GradedWeylDivisibility.StatementB
+public import Formalism.GradedWeylDivisibility.Bundle0001
 public import Formalism.GradedWeylDivisibility.DualWeylDominanceOf
-public import Formalism.GradedWeylDivisibility.FockSpaceTableaux.LHwrowLemmas
+public import Formalism.GradedWeylDivisibility.FockSpaceTableaux.Bundle0002
 
 @[expose] public section
 

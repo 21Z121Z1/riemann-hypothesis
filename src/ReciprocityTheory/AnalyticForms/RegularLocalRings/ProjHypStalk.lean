@@ -1,7 +1,7 @@
 module
 
 public import ReciprocityTheory.AnalyticForms.RegularLocalRings.ProjDehom
-public import ReciprocityTheory.AnalyticForms.RegularLocalRings.FromSpecResidueFieldAppTopIso
+public import ReciprocityTheory.AnalyticForms.RegularLocalRings.Bundle0001
 public import ReciprocityTheory.AnalyticForms.RegularLocalRings.StalkLoc
 
 @[expose] public section

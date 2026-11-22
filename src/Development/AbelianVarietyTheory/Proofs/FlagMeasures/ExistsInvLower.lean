@@ -5,7 +5,7 @@ public import Formalism.FlagUnipotentLattices.MinkowskiFactorialBounds.ExistsHas
 public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.FlagPairDefinitePartLattice
 public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.ChartGen
 public import Development.AbelianVarietyTheory.PublishedTheorems.DiscreteSeriesUnitary₂.MaxMass
-public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.NormalFormDualOrthogonalLast
+public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.Bundle0004
 
 @[expose] public section
 

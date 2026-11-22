@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.RenameProdMapMul
+public import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.Bundle0004
 
 @[expose] public section
 

@@ -1,6 +1,6 @@
 module
 
-public import Formalism.GaussJetBounds.GenLogInverse
+public import Formalism.GaussJetBounds.Bundle0001
 public import Formalism.GaussJetBounds.StatementM
 public import Formalism.GaussJetBounds.GaussJetProofs.FrameA
 public import Formalism.GaussJetBounds.Statement

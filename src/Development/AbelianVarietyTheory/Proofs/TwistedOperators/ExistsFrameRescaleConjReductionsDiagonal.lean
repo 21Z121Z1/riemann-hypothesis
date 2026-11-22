@@ -1,11 +1,11 @@
 module
 
 public import Formalism.LocalToGlobal.IndefiniteReal.ZeroPartEigenvalueConvention
-public import Formalism.LocalToGlobal.IndefiniteReal.EvalTieTOne
-public import Formalism.LocalToGlobal.IndefiniteReal.RationalEmbedding
+public import Formalism.LocalToGlobal.IndefiniteReal.Bundle0029
+public import Formalism.LocalToGlobal.IndefiniteReal.Bundle0012
 public import Formalism.LocalToGlobal.SiegelLatticeTheory.FlagStabilizerTensors.RowLevelMatch
-public import Development.AbelianVarietyTheory.PublishedTheorems.DiscreteSeriesUnitary₂.DiscreteSeriesClassificationIff
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.DiagGLConjApply
+public import Development.AbelianVarietyTheory.PublishedTheorems.DiscreteSeriesUnitary₂.Bundle0001
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0391
 public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.MemHatIffOfSelfDual
 
 @[expose] public section

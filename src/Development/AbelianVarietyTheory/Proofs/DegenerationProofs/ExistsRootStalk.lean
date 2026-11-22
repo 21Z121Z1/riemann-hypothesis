@@ -5,17 +5,23 @@ public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDesc
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.DiscreteValuationRings.TWMain
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.DiscreteValuationRings.TwistBCPf
 public import Development.AbelianVarietyTheory.Definitions.Degenerations.RigGen
-public import Development.AbelianVarietyTheory.Definitions.Uniformization.AllDV
-public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.TwistedPrincipalPolarisationSectionsBaseChange
-public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.FurtherLawsOfLaws
+public import Development.AbelianVarietyTheory.Definitions.Uniformization.Bundle0001
+public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.Bundle0130
+public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.Bundle0118
 public import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.ValuationThetaRatioEqBilinear
 public import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.ExistsBasisOfCoord
-public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.NormLtOneOfIrreducible
+public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.Bundle0057
 public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ThetaPtEqUnitMulTh
-public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ExistsFrameRatio
-public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ThetaConstantValuationsUnitsEveryCoset
-public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ExistsUniqueThetaConst
-public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.UniformisationTorsionMapsCompatibleInLevelStatement
+public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.Bundle0026
+public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.Bundle0129
+public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.Bundle0073
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.ExistsZeroGt
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.Bundle0011
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.Bundle0004
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.UnifUniqSt
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.ThetaVV
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.DiscreteValuationRings.PhiGenPf
+public import Development.AbelianVarietyTheory.Definitions.Uniformization.TXFrame
 
 @[expose] public section
 
@@ -224,7 +230,7 @@ theorem val_theta : LL → TwistBCSpanStatement → TWM.VRatioGtStatement → TW
   have hB := D.tau_bimult
   have m2 : m ^ 2 ≠ 0 := (pow_pos hm.pos 2).ne'
   obtain ⟨ua₁, ua₂⟩ := ThetaConstVal.main hL h₁ h₂ h₃ h₄ V hc ϖ hϖ D Q hQ F v hv A G hG U w₀ rig hN th ϑ hE hP m hm hu
-  have up := GlobalTheory.T.uniformisation_torsion_maps_compatible_in_level hL V _ hA D A G hG U F m m (m ^ 2) hm.pos hm.pos (sq m)
+  have up := _root_.GlobalTheory.LevelCompat.qkToAkU_level hL V _ hA D A G hG U F m m (m ^ 2) hm.pos hm.pos (sq m)
   obtain ⟨g, hg⟩ := (gt_onto_divisible_kernel hL V _ hA D F).2.1 m hm.pos p.g
   have hg' := (isNsmul_iff_eq _ _ _).1 hg
   let q : QkPt D.toPre F (m ^ 2) := ⟨p.y, g, by

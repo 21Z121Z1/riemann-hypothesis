@@ -3,10 +3,10 @@ module
 public import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.SatakeExponents.UniformizerValuations.LocalSeparation.ParabolicInductionCongr
 public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ParabolicProductEquivProductOfPartition
 public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsEquivProdIrrTw
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.EquivContraLocComp
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.EquivOfISupRange
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0664
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0112
 public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsIrreducibleFixed
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsTwistDiscreteCsd
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1102
 
 @[expose] public section
 

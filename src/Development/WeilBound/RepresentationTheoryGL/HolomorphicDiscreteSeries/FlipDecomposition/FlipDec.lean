@@ -1,7 +1,7 @@
 module
 
 public import Development.WeilBound.RepresentationTheoryGL.HolomorphicDiscreteSeries.FlipDecomposition.FlipDecAlt
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FlipUSymmCont
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0410
 
 @[expose] public section
 

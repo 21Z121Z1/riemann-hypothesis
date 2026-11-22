@@ -3,9 +3,9 @@ module
 public import Mathlib
 public import Formalism.LocalRingCardinality.RhoDetPrimeEqMuTildeMulChiPow
 public import Formalism.SharpRestriction.LevelLetterCocycles.LocalSituation
-public import Development.AbelianVarietyTheory.Definitions.Foundations.HTBasis
-public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.ExpStar
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FrobeniusIntegralityTensorAinfCoefficientsStatement
+public import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0010
+public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0008
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0236
 
 @[expose] public section
 
@@ -274,7 +274,7 @@ theorem φRW_teichmuller {l : ℕ} [Fact l.Prime] (LL : FinExt l) (e : OCb l) :
 theorem sandwich : ∀ (D : Formalism.BasicNotions.D7) (HW : HWOf D.loc) (F : FonOf D.loc D.locA HW), ∀ (l : ℕ) [Fact l.Prime] (K : FinExt l) (s : ℕ) (LL : FinExt l) (h : Good K s LL), let S := sit D.loc HW l (D.locA l) K s LL h; let E : S.Comparison₂ := ((F l).E K s LL h).tie; ∀ (T : LocLat S.G S.Qp S.LL S.O) (M0 h0 : ℕ) (N : Submodule (LetA S.O S.n) (S.W.DD T)), WClauses S E T M0 h0 N → (∀ y ∈ N, (S.inclR (E.io S.W.X)) ^ M0 • E.jD T y ∈ LinearMap.range (TWincl S.inclR T)) ∧ ∀ t : ↥T.L.T, (S.inclR (E.io S.W.X)) ^ h0 • ((1 : S.RW) ⊗ₜ[S.O] t) ∈ Submodule.span S.O {z : TW S.RW T | ∃ (a : S.RA), ∃ y ∈ N, z = S.inclR a • E.jD T y} := by
   intro D HW F l _ K s LL h S E T M0 h0 N hW
   have : Nontrivial S.O := inferInstanceAs (Nontrivial ↥(OL LL))
-  refine sandwich_of S E (GlobalTheory.T.frobenius_integrality_tensor_ainf_coefficients l LL) (frobenius_inclusion_X_eq_mul_Q S E ?_) T M0 h0 N hW
+  refine sandwich_of S E (_root_.GlobalTheory.FrobIntegralCoeff.frobenius_integrality_coeff l LL) (frobenius_inclusion_X_eq_mul_Q S E ?_) T M0 h0 N hW
   have hp : S.PD.p = l := (D.loc l).PD_p K
   rw [hp]
   exact φRW_teichmuller LL _

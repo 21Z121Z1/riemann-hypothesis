@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.LimitOfModuleForms
-public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.BetaFinsetSumSmulOfXiExists
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0201
+public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0140
 
 @[expose] public section
 

@@ -1,12 +1,12 @@
 module
 
-public import Development.WeilBound.CoreStatements.FlagImmersions.FibSandwich
+public import Development.WeilBound.CoreStatements.FlagImmersions.Bundle0015
 public import Development.WeilBound.CoreStatements.VolumeEquality.PrimeIdealOfFromSpec
 public import Development.WeilBound.CoreStatements.VolumeEquality.ChartMeetsPoint
 public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsFormNotInCoordIdeal
 public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.DvrModelOfNumberFieldPlace
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsUniqueValuationRingLift
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ValAtCompLocalHom
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0001
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0020
 
 @[expose] public section
 

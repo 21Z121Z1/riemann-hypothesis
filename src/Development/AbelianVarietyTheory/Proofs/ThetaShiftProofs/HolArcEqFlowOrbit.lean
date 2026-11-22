@@ -5,16 +5,16 @@ public import Development.AbelianVarietyTheory.Definitions.ArchimedeanThetaValue
 public import Development.AbelianVarietyTheory.Definitions.RegularCharts.ModelAt
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.UnifUniqSt
 public import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.EqZeroOfTraceLattice
-public import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.HolArcNilpotent
-public import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.FramePeriodsAlongIsotropicFlowAndBlockChange
-public import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.RiemannFormFramePeriodsEqMajorantStatement
-public import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.ExistsInvariantNatLengthLattice
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsUniqueScaledBaseChangeFibreSection
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsLocalGeneratorStableBaseChange
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.CmTypeLetterFrameColumnDictionary
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsTangentEigenbasisExponential
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsInverseBlock
-public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.PeriodsEqFramePeriods
+public import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.Bundle0019
+public import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.Bundle0018
+public import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.Bundle0020
+public import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.Bundle0010
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0023
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0062
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0032
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0037
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0056
+public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0013
 
 @[expose] public section
 
@@ -279,7 +279,7 @@ lemma orbit (hL : Out.Laws) (hσ : GoodEmb c σ) (hU : IsUnf U) {Y : Type} [AddC
       rw [← ht, ht0]; simp
     · exact h
   obtain ⟨-, -, -, -, Hm, hHm⟩ := Uw.period k x₀
-  have hκ := (GlobalTheory.T.riemann_form_frame_periods_eq_majorant E H Dw l Xo c σ r U Uw k x₀ Hm hσ hU hHm).2.1 hr
+  have hκ := (_root_.GlobalTheory.RiemMaj.riemann_eq_majorant E H Dw l Xo c σ r U Uw k x₀ Hm hσ hU hHm).2.1 hr
   obtain ⟨sE, hiso, hbe, hsp, hlev, hform⟩ := rank_one (U.X k) (Uw.φ k) _ (Uw.iso k) y hY hκ hy be hsym hpos nn hnn
     hrep ξ hξ t ht hyt
   refine ⟨k, _, sE, hiso, hbe, fun τ => hsp τ.1, hlev, fun z hz => ?_⟩

@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import GroundTheory.TateCohomology.HerbrandAbstract
-public import GroundTheory.GlobalFields.HerbrandQuotients.CycTate
+public import GroundTheory.GlobalFields.HerbrandQuotients.Bundle0001
 
 @[expose] public section
 

@@ -1,6 +1,6 @@
 module
 
-public import Development.WeilBound.ThetaLifts.SphericalLattices.IndexComapOfCover
+public import Development.WeilBound.ThetaLifts.SphericalLattices.Bundle0006
 
 @[expose] public section
 

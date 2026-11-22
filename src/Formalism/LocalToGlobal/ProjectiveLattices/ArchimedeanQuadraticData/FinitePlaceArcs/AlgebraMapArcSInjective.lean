@@ -2,9 +2,9 @@ module
 
 public import Formalism.LocalToGlobal.ProjectiveLattices.ArchimedeanQuadraticData.FinitePlaceArcs.ExistsCoeffNormOne
 public import Formalism.LocalToGlobal.ProjectiveLattices.ArchimedeanQuadraticData.FinitePlaceArcs.BeSumPf
-public import Formalism.LocalToGlobal.ProjectiveLattices.ArchimedeanQuadraticData.ArcLineFunctions.ArcSPin
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.Rationality.FinCorePf
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.Rationality.BasisChangePf
+public import Formalism.LocalToGlobal.ProjectiveLattices.ArchimedeanQuadraticData.ArcLineFunctions.Bundle0001
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.Rationality.Bundle0005
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.Rationality.Bundle0002
 
 @[expose] public section
 

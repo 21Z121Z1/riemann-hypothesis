@@ -1,8 +1,8 @@
 module
 
 public import Formalism.LandauZeroFreeBounds.ExceptionalZeroBounds.PerronChi
-public import Formalism.LandauZeroFreeBounds.ExceptionalZeroBounds.RectShiftChi
-public import Formalism.ZeroFreeRegion.ZetaLogDerivativeBounds.IntegralEqIntervalIntegralAddCompl
+public import Formalism.LandauZeroFreeBounds.ExceptionalZeroBounds.Bundle0007
+public import Formalism.ZeroFreeRegion.ZetaLogDerivativeBounds.Bundle0001
 
 @[expose] public section
 

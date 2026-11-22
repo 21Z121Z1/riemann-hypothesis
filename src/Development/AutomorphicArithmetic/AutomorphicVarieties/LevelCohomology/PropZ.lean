@@ -1,12 +1,12 @@
 module
 
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.LevelCohomology.UnramifiedCocycleIsCoboundaryOfBernoulliUnit
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.LevelCohomology.Bundle0002
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.HeightAndVanishing.Counts
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.GeneratorCountTuples.LemmaK
-public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.ExistsPrimitiveRootPow
+public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.Bundle0003
 public import Formalism.GaloisCohomology.LocalTateDualityK
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.LevelCohomology.TorsClass
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.LevelCohomology.ZqField
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.LevelCohomology.Bundle0014
 
 @[expose] public section
 

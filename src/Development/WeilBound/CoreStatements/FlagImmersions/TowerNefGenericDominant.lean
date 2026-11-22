@@ -1,12 +1,12 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Definitions.DivisibilityTowers.RefLinked
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.InterSt
+public import Development.AutomorphicSpectrum.Definitions.DivisibilityTowers.Bundle0001
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.Bundle0006
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArithmeticIntersection.MultihomogeneousIdeals.MultiIsProjVarFOfRatDiv
-public import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.AssemblyBridgeFull
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.ExistsLinearIndependentOfGenerates
-public import Development.AutomorphicSpectrum.Proofs.MetricProofs.DegreeGenericOfDegree
+public import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.Bundle0033
+public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0094
+public import Development.AutomorphicSpectrum.Proofs.MetricProofs.Bundle0059
 
 @[expose] public section
 

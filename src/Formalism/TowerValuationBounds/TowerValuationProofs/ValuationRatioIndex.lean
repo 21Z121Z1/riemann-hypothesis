@@ -1,6 +1,6 @@
 module
 
-public import Formalism.TowerValuationBounds.TowerValuationBoundIndexed
+public import Formalism.TowerValuationBounds.Bundle0001
 public import Formalism.TowerValuationBounds.TowerValuationProofs.SumAdditiveCharacterEqZero
 
 @[expose] public section

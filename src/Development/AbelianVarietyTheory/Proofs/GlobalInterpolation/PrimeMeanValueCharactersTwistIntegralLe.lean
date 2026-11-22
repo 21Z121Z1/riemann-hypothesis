@@ -2,8 +2,8 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.ZerosDisc
-public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.IntegralNormSqLp
-public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.BrunTitchmarshExistsConstStatement
+public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0004
+public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0048
 
 @[expose] public section
 
@@ -187,7 +187,7 @@ theorem prime_mean_value : ∃ C : ℝ, 0 < C ∧ ∀ (q : ℕ) [NeZero q] (T N 
       ‖∑ p ∈ primesIoc N y, a p * χ (p : ZMod q) * (p : ℂ) ^ (-(t * I))‖ ^ 2) ≤
       C * ∑ p ∈ primesIoc N y, (p : ℝ) * ‖a p‖ ^ 2 / Real.log p := by
   obtain ⟨C, hC, hG⟩ := GlobalTheory.GallagherLemma.gallagher
-  obtain ⟨B, hB0, hB⟩ := GlobalTheory.T.brunTitchmarsh_exists_const
+  obtain ⟨B, hB0, hB⟩ := _root_.GlobalTheory.Lin.brun_titchmarsh_const
   refine ⟨C * (4 * B), by positivity, fun q _ T N y a hT hN => ?_⟩
   have hT0 : 0 < T := by linarith
   have hδ : 0 ≤ 1 / T := by positivity

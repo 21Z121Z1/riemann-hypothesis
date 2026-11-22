@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Formalism.LocalToGlobal.Columns.HeckeInert
-public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.HfsAevalRestrict
+public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0026
 
 @[expose] public section
 

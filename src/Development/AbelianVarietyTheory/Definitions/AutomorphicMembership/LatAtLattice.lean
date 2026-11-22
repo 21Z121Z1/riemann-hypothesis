@@ -8,9 +8,9 @@ public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership
 public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.ReferenceCharactersFactorTame
 public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.StandardBaseFlagComplementIntegralLattice
 public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.H90USurjective
-public import Formalism.LocalToGlobal.Columns.RowFormsSym
-public import Formalism.LocalRingCardinality.DataKerP
-public import Formalism.LocalToGlobal.HermitianForms.BothSym
+public import Formalism.LocalToGlobal.Columns.Bundle0005
+public import Formalism.LocalRingCardinality.Bundle0004
+public import Formalism.LocalToGlobal.HermitianForms.Bundle0006
 
 @[expose] public section
 

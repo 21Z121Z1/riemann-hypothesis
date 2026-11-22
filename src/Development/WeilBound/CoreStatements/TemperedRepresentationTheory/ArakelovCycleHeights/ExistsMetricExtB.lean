@@ -3,9 +3,8 @@ module
 public import Mathlib
 public import Development.WeilBound.CoreStatements.TemperedRepresentationTheory.ArakelovCycleHeights.QpSndStr
 public import Development.WeilBound.CoreStatements.AbelianHeightsDuality.ArakelovSingularities.Bridge
-public import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.ArFormExistsOfInt
-public import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.ArMixOfBaseInt
-public import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.HeightProjectionOfInt
+public import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.Bundle0037
+public import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.Bundle0036
 
 @[expose] public section
 

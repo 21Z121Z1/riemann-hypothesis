@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Divisors.FibreRankCompOfSurjective
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0004
 
 @[expose] public section
 

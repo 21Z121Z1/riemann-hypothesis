@@ -1,11 +1,11 @@
 module
 
 public import Mathlib
-public import Formalism.PeriodIntegrals.DSInfCharCap
-public import Formalism.PeriodIntegrals.IsLowUnitH
-public import Formalism.RealPlaceAnalysis.StatementA
-public import Formalism.RealPlaceAnalysis.StatementB
-public import Formalism.RealPlaceAnalysis.StatementE
+public import Formalism.PeriodIntegrals.Bundle0016
+public import Formalism.PeriodIntegrals.Bundle0011
+public import Formalism.RealPlaceAnalysis.Bundle0001
+public import Formalism.RealPlaceAnalysis.Bundle0002
+public import Formalism.RealPlaceAnalysis.Bundle0003
 
 @[expose] public section
 

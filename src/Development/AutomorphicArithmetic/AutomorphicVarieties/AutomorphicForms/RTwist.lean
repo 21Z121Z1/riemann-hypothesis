@@ -2,8 +2,8 @@ module
 
 public import Mathlib
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.RealCusp
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.RChar2
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SatakeParametersOfTwist
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.Bundle0001
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0896
 
 @[expose] public section
 

@@ -2,8 +2,8 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.StableIffCarrierEq
-public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.IsComp
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsLiftAt
+public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0029
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0720
 public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsAdelicUnitaryTrivialOutsideSplitPlaceLocEq
 
 @[expose] public section

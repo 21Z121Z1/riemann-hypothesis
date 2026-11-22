@@ -1,9 +1,9 @@
 module
 
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FinrankWsp
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1105
 public import ReciprocityTheory.ReductiveGroups.SymplecticTraces.WeylCharacters.SqChar
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.RowActCoefPolyAndUnitaryDense
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsCommonEigenvectorCommuting
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0210
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0055
 
 @[expose] public section
 

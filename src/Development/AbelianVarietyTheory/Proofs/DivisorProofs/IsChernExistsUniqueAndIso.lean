@@ -2,8 +2,8 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.Divisors.IsKSValueOneOfRetraction
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CrystallineH2SmallCoverBijectiveStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DpExpEqSumRangeOfVanish
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0684
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0632
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DividedPowerFiltration
 
 @[expose] public section

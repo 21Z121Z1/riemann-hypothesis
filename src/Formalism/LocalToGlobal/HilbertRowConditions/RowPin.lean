@@ -1,8 +1,8 @@
 module
 
 public import Formalism.LocalToGlobal.ClassSK
-public import Formalism.LocalRingCardinality.DataBu
-public import Formalism.LocalToGlobal.HermitianForms.TiedBr
+public import Formalism.LocalRingCardinality.Bundle0001
+public import Formalism.LocalToGlobal.HermitianForms.Bundle0008
 
 @[expose] public section
 

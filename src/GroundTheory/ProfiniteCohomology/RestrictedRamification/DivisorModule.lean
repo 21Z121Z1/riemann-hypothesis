@@ -4,13 +4,13 @@ public import Mathlib
 public import GroundTheory.ProfiniteCohomology.CohomologyFunctoriality.QuotientToInvariantsFunctorPreservesZeroMorphism
 public import GroundTheory.ProfiniteCohomology.ContinuousCochains.LongExactSequence
 public import GroundTheory.ProfiniteCohomology.GaloisModules.CoeGalRootsOfUnityHomApply
-public import GroundTheory.ProfiniteCohomology.Colimit
+public import GroundTheory.ProfiniteCohomology.Bundle0006
 public import GroundTheory.ProfiniteCohomology.TorsionDualDefs
 public import GroundTheory.ProfiniteCohomology.GaloisCohomology.Kummer
 public import GroundTheory.ProfiniteCohomology.CupProducts
 public import GroundTheory.ProfiniteCohomology.CohomologicalDimension.SubsingletonCohomologyOfPrimaryOfFinite
 public import GroundTheory.ProfiniteCohomology.Procyclic
-public import GroundTheory.ProfiniteCohomology.FilteredHomology
+public import GroundTheory.ProfiniteCohomology.Bundle0001
 public import GroundTheory.ProfiniteCohomology.CupProducts.Cocycles
 
 @[expose] public section

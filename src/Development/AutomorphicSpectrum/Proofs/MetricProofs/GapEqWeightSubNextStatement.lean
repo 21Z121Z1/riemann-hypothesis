@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Proofs.MetricProofs.GapEqWeightSubNext
-public import Development.AutomorphicSpectrum.Definitions.MetricPeriods.PairRelationOfScaledRatio
+public import Development.AutomorphicSpectrum.Proofs.MetricProofs.Bundle0007
+public import Development.AutomorphicSpectrum.Definitions.MetricPeriods.Bundle0001
 public import GroundTheory.HeightsAndTheta.Heights.Antisymmetric.Statements
 
 @[expose] public section

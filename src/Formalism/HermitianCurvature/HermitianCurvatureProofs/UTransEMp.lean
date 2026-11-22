@@ -1,6 +1,6 @@
 module
 
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.LowerCoordinateProd
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0122
 public import Formalism.HermitianCurvature.HermitianCurvatureProofs.MulVecBvecApply
 
 @[expose] public section

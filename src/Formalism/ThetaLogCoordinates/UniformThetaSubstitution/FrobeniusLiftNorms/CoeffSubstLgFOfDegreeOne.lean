@@ -5,7 +5,7 @@ public import Formalism.ThetaLogCoordinates.UniformThetaSubstitution.FirstDeriv
 public import Formalism.ThetaLogCoordinates.UniformThetaSubstitution.FrobeniusLiftNorms.TopsChoicePartA
 public import Formalism.FormalGroupLog.FormalGroupLogProofs.HomPsSubstMvSubst
 public import Formalism.TorsionNormIteration.LubinTateExample
-public import Formalism.FormalGroupWitt.FormalGroupWittProofs.FrobSqV
+public import Formalism.FormalGroupWitt.FormalGroupWittProofs.Bundle0001
 
 @[expose] public section
 

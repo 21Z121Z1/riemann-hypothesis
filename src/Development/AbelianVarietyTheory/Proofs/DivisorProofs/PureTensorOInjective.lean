@@ -1,13 +1,12 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Divisors.PerCEmb
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0024
 public import Development.AbelianVarietyTheory.Definitions.Divisors.MarkAd
-public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.EqZeroOfLintegralEqZero
-public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.ExistsRealPlaceSymplecticFormPositiveComplexStru
+public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.Bundle0065
 public import Development.AbelianVarietyTheory.Proofs.HeightProofs.EmbeddingXiZeroNeZero
-public import Development.AbelianVarietyTheory.Proofs.HeightProofs.ExistsHeisenbergDerivativeLinearOperators
-public import Development.AbelianVarietyTheory.Proofs.HeightProofs.HeisenbergDerivativeCommutatorRelation
+public import Development.AbelianVarietyTheory.Proofs.HeightProofs.Bundle0021
+public import Development.AbelianVarietyTheory.Proofs.HeightProofs.Bundle0023
 
 @[expose] public section
 

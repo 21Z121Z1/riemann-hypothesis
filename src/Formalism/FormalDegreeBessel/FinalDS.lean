@@ -1,8 +1,6 @@
 module
 
-public import Formalism.FormalDegreeBessel.FormalDegreeRatio.DSLowK
-public import Formalism.FormalDegreeBessel.FormalDegreeRatio.DSFdeg
-public import Formalism.FormalDegreeBessel.FormalDegreeRatio.DSRatio
+public import Formalism.FormalDegreeBessel.FormalDegreeRatio.Bundle0003
 
 @[expose] public section
 

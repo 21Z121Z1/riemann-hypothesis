@@ -1,9 +1,9 @@
 module
 
-public import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.IsLatticeFamily
+public import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.Bundle0005
 public import Development.AutomorphicSpectrum.Definitions.DivisibilityTowers.BundleChernComparison
-public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.LocallyFreeFiniteProjectiveBaseChange
-public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.AffineGenerators
+public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.Bundle0008
+public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0068
 
 @[expose] public section
 

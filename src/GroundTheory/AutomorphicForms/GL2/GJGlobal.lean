@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import GroundTheory.AutomorphicForms.GL2.GJGlobalBound
-public import GroundTheory.AutomorphicForms.GL2.GJGlobalEntire
+public import GroundTheory.AutomorphicForms.GL2.Bundle0001
 
 @[expose] public section
 

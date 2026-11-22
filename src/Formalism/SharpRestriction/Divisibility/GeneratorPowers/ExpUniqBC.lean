@@ -1,8 +1,8 @@
 module
 
-public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.ExpUniqTan
-public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.ExpUniqSt
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.ChartPullbacks.UniversalCharts.UnivChartLoc
+public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0009
+public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0005
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.ChartPullbacks.UniversalCharts.Bundle0002
 
 @[expose] public section
 

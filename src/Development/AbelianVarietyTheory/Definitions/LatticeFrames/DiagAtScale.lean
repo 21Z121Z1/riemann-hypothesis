@@ -4,7 +4,7 @@ public import Mathlib
 public import Formalism.LocalToGlobal.SiegelLatticeTheory.FlagStabilizerTensors.ThmSOwn
 public import Formalism.SharpRestriction.CuspSpanNormBounds.LocalBesselAndTopKernel
 public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.UnfoldingConstantsPos
-public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.VanishingGramTermsBoundParams
+public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.Bundle0004
 
 @[expose] public section
 

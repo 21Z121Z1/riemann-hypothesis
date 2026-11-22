@@ -2,8 +2,8 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.Foundations.FinalTheorems
-public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.MemIneSmulIff
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.NormSmulLeSelf
+public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0050
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0343
 
 @[expose] public section
 

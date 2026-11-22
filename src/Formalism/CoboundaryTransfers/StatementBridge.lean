@@ -3,7 +3,7 @@ module
 public import Formalism.CoboundaryTransfers.StatementAPI
 public import Formalism.WachModuleLifts.StatementW
 public import Formalism.LagrangeIdealLifts.Statement
-public import Formalism.FrobeniusContraction.Statement
+public import Formalism.FrobeniusContraction.Bundle0001
 
 @[expose] public section
 

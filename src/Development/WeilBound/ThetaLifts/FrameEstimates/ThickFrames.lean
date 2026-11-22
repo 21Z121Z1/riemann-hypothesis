@@ -1,6 +1,6 @@
 module
 
-public import Development.WeilBound.ThetaLifts.FrameEstimates.HodgeTateFromSandwich
+public import Development.WeilBound.ThetaLifts.FrameEstimates.Bundle0002
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsNatMulIntegralOfIsCompact
 
 @[expose] public section

@@ -1,7 +1,7 @@
 module
 
 public import Formalism.SharpRestriction.CuspSpanNormBounds.BruhatCellsKronecker.CellDef
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsUpUniMul
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0238
 
 @[expose] public section
 

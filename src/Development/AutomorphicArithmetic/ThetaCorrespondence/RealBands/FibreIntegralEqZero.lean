@@ -1,8 +1,8 @@
 module
 
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsClosedParabolicSubgroups
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0604
 public import Development.AutomorphicArithmetic.ThetaCorrespondence.RealBands.IntegralCoefEqZero
-public import Development.AutomorphicArithmetic.ThetaCorrespondence.RealBands.IsCompactBall
+public import Development.AutomorphicArithmetic.ThetaCorrespondence.RealBands.Bundle0003
 
 @[expose] public section
 

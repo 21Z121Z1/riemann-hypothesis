@@ -1,10 +1,10 @@
 module
 
 public import Mathlib
-public import Development.WeilBound.RepresentationTheoryGL.GenericUnitaryGL.ComplementarySeries.SegmentJacquetSubquotients.ExistsNabsNeOne
+public import Development.WeilBound.RepresentationTheoryGL.GenericUnitaryGL.ComplementarySeries.SegmentJacquetSubquotients.Bundle0001
 public import Development.WeilBound.CoreStatements.TemperedRepresentationTheory.ZelevinskyJacquet.LSegJacquet
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.JacquetMultiplicityCuspidalProductStatement
-public import Development.AutomorphicSpectrum.Proofs.GlobalProofs.BernsteinZelevinskyFiniteness
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0645
+public import Development.AutomorphicSpectrum.Proofs.GlobalProofs.Bundle0030
 
 @[expose] public section
 

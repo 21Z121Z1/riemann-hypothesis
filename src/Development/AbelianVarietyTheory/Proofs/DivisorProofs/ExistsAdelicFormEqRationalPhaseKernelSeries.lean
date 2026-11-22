@@ -1,13 +1,13 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TraceOfAt
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1858
 public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.DeltaPrimeIsAuxiliarySplitSquarefreeLevel
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BaseTupleThetaSpanHasType
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1704
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaKernelVectorMovedByRootsOfUnity
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.MemOfOrderDvd
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsLevelDatumReferenceTupleSmallField
-public import Formalism.LocalRingCardinality.ConjSqrtMinusD
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0352
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0924
+public import Formalism.LocalRingCardinality.Bundle0001
 
 @[expose] public section
 
@@ -123,10 +123,10 @@ theorem isLevDatum_kerDat (hL : R.toLevCh.Is A.μ0) {ξ χ ξR Q ω φ} (hK : Ke
     exact hN P0 (Finset.mem_union.1 hP0)
   · intro t ht
     by_cases hc : IsHalf (cA D e) t ∧ IsIntM (frMapAdj (Vc D j) (Wc D j) (R.βV j) (R.βW j) t)
-    · exact ⟨GlobalTheory.T.idempotent_sum_self_dual_frames_bound D _ _ _ _ _ _ hsV hsW hfV hfW _ e he hP2 t hc.1 hc.2, hc.1⟩
+    · exact ⟨_root_.GlobalTheory.HalfAdjLattice.mem_latO_of_adj_int D _ _ _ _ _ _ hsV hsW hfV hfW _ e he hP2 t hc.1 hc.2, hc.1⟩
     · exact absurd (if_neg hc) ht
   · intro u hu hue t
-    have hN' := GlobalTheory.T.adjointFrameMatrix_integral_of_conjugate_half D _ _ _ _ _ _ hsV hsW hfV hfW _ e he hP2 u hu hue
+    have hN' := _root_.GlobalTheory.HalfAdjInt.frMapAdj_int_of_half D _ _ _ _ _ _ hsV hsW hfV hfW _ e he hP2 u hu hue
     have hfr : frMapAdj (Vc D j) (Wc D j) (R.βV j) (R.βW j) (t + N • u) =
         frMapAdj (Vc D j) (Wc D j) (R.βV j) (R.βW j) t + N • frMapAdj (Vc D j) (Wc D j) (R.βV j) (R.βW j) u := by
       rw [GlobalTheory.RefDatumLev.frMapAdj_add', GlobalTheory.RefDatumLev.frMapAdj_nsmul']

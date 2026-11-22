@@ -1,9 +1,8 @@
 module
 
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.LiteratureResults.KTheoryStability.FinitelyGeneratedTorsion.TensTorsion
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.TorsionBoundsChains.QuotientsEquivOfKerEq
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.TorsionBoundsChains.GroupHomologyLongExact
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.TorsionBoundsChains.ImageRep
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.TorsionBoundsChains.Bundle0003
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.TorsionBoundsChains.Bundle0001
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.TorsionBoundsChains.PermCard
 
 @[expose] public section

@@ -1,7 +1,7 @@
 module
 
 public import Formalism.SharpRestriction.GrowthBounds.MonomialFactorials.ClosedOfOrthogonalSplitting
-public import Formalism.SharpRestriction.GrowthBounds.MonomialFactorials.GoodLeSmallMat
+public import Formalism.SharpRestriction.GrowthBounds.MonomialFactorials.Bundle0017
 
 @[expose] public section
 

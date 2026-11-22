@@ -4,7 +4,7 @@ public import Mathlib
 public import Formalism.LocalToGlobal.UnitaryNorms.IsUnitaryNormOf
 public import Formalism.PairingDivisors.StatementH
 public import Development.AbelianVarietyTheory.Proofs.HomogeneousIdeals.ExistsVariableChangeEqLatticeCurve
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EntireEqOfEqOnHalfPlane
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0019
 
 @[expose] public section
 

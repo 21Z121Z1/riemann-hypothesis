@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Formalism.LocalToGlobal.Divisibility.Tuples
-public import Formalism.GL3MeanSquares.RankMulPowThreeHalvesLeFourthPower
+public import Formalism.LocalToGlobal.Divisibility.Bundle0001
+public import Formalism.GL3MeanSquares.Bundle0005
 
 @[expose] public section
 

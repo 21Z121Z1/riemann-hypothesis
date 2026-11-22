@@ -1,6 +1,6 @@
 module
 
-public import Formalism.SharpRestriction.GrowthBounds.MonomialOrderSegments.GlobalTheory
+public import Formalism.SharpRestriction.GrowthBounds.MonomialOrderSegments.Bundle0004
 
 @[expose] public section
 

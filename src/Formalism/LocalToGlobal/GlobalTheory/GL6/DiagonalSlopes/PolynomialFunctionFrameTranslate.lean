@@ -3,7 +3,7 @@ module
 public import Formalism.LocalToGlobal.GlobalTheory.GL6.DiagonalSlopes.MetricDisjointSupportOrthogonal
 public import Formalism.LocalToGlobal.GlobalTheory.GL6.DiagonalSlopes.CharacterFiniteLevelZeroOfForms
 public import Formalism.LocalToGlobal.GlobalTheory.GL6.DiagonalSlopes.PSplitT
-public import Formalism.LocalToGlobal.GlobalTheory.GL6.LatticeInclusionFamilyOf
+public import Formalism.LocalToGlobal.GlobalTheory.GL6.Bundle0002
 public import Formalism.LocalToGlobal.GlobalTheory.GL6.BwAValIntegralNonneg
 
 @[expose] public section

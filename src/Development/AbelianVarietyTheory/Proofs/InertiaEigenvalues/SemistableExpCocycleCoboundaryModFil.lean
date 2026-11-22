@@ -3,13 +3,13 @@ module
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.TrivIsCr
 public import Formalism.SharpRestriction.LevelLetterCocycles.LocCoh
-public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.TwistStep
+public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0011
 public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.AcrisTorsionFreeComplete
 public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.DeRhamPotSemistable
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.EcoefQNormLe
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0360
 public import Development.AbelianVarietyTheory.CrystallinePeriods.RingIface
-public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.IsCrisP
-public import Development.AbelianVarietyTheory.CrystallinePeriods.CrisMaps
+public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.Bundle0002
+public import Development.AbelianVarietyTheory.CrystallinePeriods.Bundle0001
 public import Development.AbelianVarietyTheory.CrystallinePeriods.CrisMapsLoc
 
 @[expose] public section

@@ -1,10 +1,8 @@
 module
 
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.ConvexNerveComplexes.NerveFaceClosed
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.ConvexNerveComplexes.NerveSep
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.ConvexNerveComplexes.NerveCut
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.ConvexNerveComplexes.AcycUnion
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.ConvexNerveComplexes.AcycCone
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.ConvexNerveComplexes.Bundle0001
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.ConvexNerveComplexes.Bundle0002
 
 @[expose] public section
 

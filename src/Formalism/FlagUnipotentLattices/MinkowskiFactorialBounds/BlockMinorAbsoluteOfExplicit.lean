@@ -2,7 +2,7 @@ module
 
 public import Formalism.FlagUnipotentLattices.StabiliserComplementDecomposition
 public import Formalism.FlagUnipotentLattices.AlgebraicIdentityHigherDegree
-public import Formalism.FormalDegreeBessel.FinalG
+public import Formalism.FormalDegreeBessel.Bundle0002
 
 @[expose] public section
 

@@ -3,7 +3,7 @@ module
 public import Formalism.LocalRingCardinality.DataHost
 public import Formalism.FrobeniusOrbits.HostCorollaries
 public import Formalism.TameInertiaTowers.TowerFieldFoundations
-public import Formalism.CyclotomicNorms.StatementI
+public import Formalism.CyclotomicNorms.Bundle0001
 public import Formalism.SharpRestriction.RamificationFrobenius.TotientGaloisClasses.NonemptyFieldAxiomsCyclicPow
 
 @[expose] public section

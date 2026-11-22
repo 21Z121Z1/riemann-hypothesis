@@ -2,9 +2,9 @@ module
 
 public import Mathlib
 public import GroundTheory.ProfiniteCohomology.GlobalClassFormation.LevelTower
-public import GroundTheory.TateCohomology.TateResEqZeroOfNsmulEqZero
+public import GroundTheory.TateCohomology.Bundle0008
 public import GroundTheory.TateCohomology.ResCoresPos
-public import GroundTheory.TateCohomology.Annihilation
+public import GroundTheory.TateCohomology.Bundle0005
 
 @[expose] public section
 

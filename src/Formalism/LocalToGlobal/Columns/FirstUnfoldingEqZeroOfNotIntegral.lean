@@ -1,6 +1,6 @@
 module
 
-public import Formalism.LocalToGlobal.Columns.OcbBEntEntB
+public import Formalism.LocalToGlobal.Columns.Bundle0031
 
 @[expose] public section
 

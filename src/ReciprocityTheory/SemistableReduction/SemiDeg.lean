@@ -1,10 +1,8 @@
 module
 
 public import ReciprocityTheory.SemistableReduction.SemiDegZA
-public import ReciprocityTheory.SemistableReduction.SemiDegA
-public import ReciprocityTheory.SemistableReduction.SemiDegB
-public import ReciprocityTheory.SemistableReduction.SemiDegC
-public import ReciprocityTheory.SemistableReduction.SemiDegD
+public import ReciprocityTheory.SemistableReduction.Bundle0024
+public import ReciprocityTheory.SemistableReduction.Bundle0023
 
 @[expose] public section
 

@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.BlockTheory.ExistenceTori.PrimitiveGermFrames
-public import Formalism.LocalToGlobal.ProjectiveLattices.IsChartIff
-public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.GermDJet
+public import Development.AbelianVarietyTheory.BlockTheory.ExistenceTori.Bundle0002
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0013
+public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0009
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.ValCalc
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.DiscreteValuationRings.LBCorr
 

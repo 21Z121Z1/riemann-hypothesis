@@ -1,6 +1,6 @@
 module
 
-public import Formalism.LocalToGlobal.GlobalTheory.GL3.IntegralityIffAwayAtD
+public import Formalism.LocalToGlobal.GlobalTheory.GL3.Bundle0001
 
 @[expose] public section
 

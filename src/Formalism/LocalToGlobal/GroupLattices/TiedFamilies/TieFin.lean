@@ -2,11 +2,10 @@ module
 
 public import Formalism.LocalToGlobal.GroupLattices.TiedFamilies.TieAll
 public import Formalism.LocalToGlobal.GroupLattices.TiedFamilies.GTiedFOfIsRecCEv
-public import Formalism.LocalToGlobal.GroupLattices.TiedFamilies.CompanionOfBaseTied
-public import Formalism.LocalToGlobal.GroupLattices.TiedFamilies.TieTrF
-public import Formalism.LocalToGlobal.GroupLattices.TiedFamilies.FullTiedCBase
-public import Formalism.LocalToGlobal.GroupLattices.TiedFamilies.SelfDualAtColLevel
-public import Formalism.LocalToGlobal.GroupLattices.TiedFamilies.TiePsiC
+public import Formalism.LocalToGlobal.GroupLattices.TiedFamilies.Bundle0004
+public import Formalism.LocalToGlobal.GroupLattices.TiedFamilies.Bundle0002
+public import Formalism.LocalToGlobal.GroupLattices.TiedFamilies.Bundle0007
+public import Formalism.LocalToGlobal.GroupLattices.TiedFamilies.Bundle0008
 
 @[expose] public section
 

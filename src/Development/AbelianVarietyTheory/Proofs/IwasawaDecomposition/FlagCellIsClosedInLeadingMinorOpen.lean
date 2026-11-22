@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsFrameCover
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.CauchyBinetPluckerAndCellCoordinatesStatement
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0535
 
 @[expose] public section
 

@@ -1,7 +1,7 @@
 module
 
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.CptCopy2
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutSETopFinal
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0296
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0290
 public import CompanionTheory.AutomorphicTheory.CompactTopologicalForms.JacobiFieldSquareIntegrable
 public import CompanionTheory.AutomorphicTheory.DiscreteGroupWaves.NFTopFormCpt
 

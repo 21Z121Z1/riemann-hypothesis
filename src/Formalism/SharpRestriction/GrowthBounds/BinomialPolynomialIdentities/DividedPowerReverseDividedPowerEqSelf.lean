@@ -1,8 +1,8 @@
 module
 
-public import Formalism.SharpRestriction.GrowthBounds.BinomialPolynomialIdentities.ContragredientIrreducibleGeneratedByHighestWeigh
-public import Formalism.SharpRestriction.GrowthBounds.RootWeights.WeightEntriesBetweenExtremeHighest
-public import Formalism.SharpRestriction.GrowthBounds.RootWeights.DeltaIntegralEnvelopingStable
+public import Formalism.SharpRestriction.GrowthBounds.BinomialPolynomialIdentities.Bundle0003
+public import Formalism.SharpRestriction.GrowthBounds.RootWeights.Bundle0022
+public import Formalism.SharpRestriction.GrowthBounds.RootWeights.Bundle0019
 
 @[expose] public section
 

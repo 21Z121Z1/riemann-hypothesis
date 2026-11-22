@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsZModTorsorIff
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EventuallyFiniteBaseChangeFilteredColimitStatement
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0270
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0301
 
 @[expose] public section
 

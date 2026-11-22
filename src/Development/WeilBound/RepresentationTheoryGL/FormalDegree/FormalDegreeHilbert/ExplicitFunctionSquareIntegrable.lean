@@ -1,7 +1,7 @@
 module
 
 public import Development.WeilBound.RepresentationTheoryGL.FormalDegree.FormalDegreeHilbert.NormIndOfSteps
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.NormInductionOfEstimates
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0671
 public import Development.WeilBound.RepresentationTheoryGL.FormalDegree.FormalDegreeHilbert.FormalDegreeFormula.CoefPow
 
 @[expose] public section

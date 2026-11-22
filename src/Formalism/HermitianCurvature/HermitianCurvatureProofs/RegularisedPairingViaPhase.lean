@@ -2,10 +2,9 @@ module
 
 public import Formalism.HermitianCurvature.StatementB
 public import Formalism.HermitianCurvature.HermitianCurvatureProofs.IntegralZeroFrequencyInvariant
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.AdjointnessPolynomiallyBounded
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0025
 public import Formalism.FormalDegreeBessel.FormalDegreeRatio.UnitaryWeylNormalHolds
-public import Formalism.RealPlaceAnalysis.RealPlaceTaylor.CartanInvolutionConjTransposeMul
-public import Formalism.RealPlaceAnalysis.RealPlaceTaylor.ComplexifiedDerivativeCommutator
+public import Formalism.RealPlaceAnalysis.RealPlaceTaylor.Bundle0003
 
 @[expose] public section
 

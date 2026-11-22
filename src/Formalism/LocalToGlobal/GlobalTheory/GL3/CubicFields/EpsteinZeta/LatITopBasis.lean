@@ -1,7 +1,7 @@
 module
 
 public import Formalism.LocalToGlobal.GlobalTheory.GL3.CubicFields.EpsteinZeta.DedekindFactorK
-public import Formalism.DirichletDensity.DirichletDensityProofs.QuadDiscr
+public import Formalism.DirichletDensity.DirichletDensityProofs.Bundle0001
 
 @[expose] public section
 

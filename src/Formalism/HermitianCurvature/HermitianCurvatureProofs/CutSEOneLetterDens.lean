@@ -1,7 +1,7 @@
 module
 
 public import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutSE2
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.PositionInsertionDiagonalCompat
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0018
 
 @[expose] public section
 

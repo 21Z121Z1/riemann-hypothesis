@@ -1,6 +1,6 @@
 module
 
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.StickelbergerElements.SamePrimesMulPow
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.StickelbergerElements.Bundle0001
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.GaloisLibrary.StickelbergerTheorem.StickelbergerAt
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.StmtFields
 public import Mathlib.RingTheory.Ideal.Norm.RelNorm

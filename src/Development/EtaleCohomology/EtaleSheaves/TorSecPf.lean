@@ -1,6 +1,6 @@
 module
 
-public import Development.EtaleCohomology.EtaleSheaves.LCSplitPf
+public import Development.EtaleCohomology.EtaleSheaves.Bundle0006
 
 @[expose] public section
 

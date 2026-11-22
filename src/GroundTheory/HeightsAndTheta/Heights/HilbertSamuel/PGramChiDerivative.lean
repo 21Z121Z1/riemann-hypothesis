@@ -1,10 +1,10 @@
 module
 
 public import Mathlib
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsGramChiDerivative
+public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0037
 public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PIntegralOfBergman
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PMetricChange
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.HasDerivAtDet
+public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0049
+public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0014
 
 @[expose] public section
 

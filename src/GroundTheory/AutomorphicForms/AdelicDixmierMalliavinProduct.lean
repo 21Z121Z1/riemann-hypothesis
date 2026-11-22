@@ -1,8 +1,7 @@
 module
 
 public import Mathlib
-public import GroundTheory.AutomorphicForms.DixmierMalliavin
-public import GroundTheory.AutomorphicForms.TraceFormulaConvolution
+public import GroundTheory.AutomorphicForms.Bundle0015
 public import GroundTheory.AutomorphicForms.GKModules.Garding
 
 @[expose] public section

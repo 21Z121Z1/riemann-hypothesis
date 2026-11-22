@@ -1,8 +1,8 @@
 module
 
 public import ReciprocityTheory.SemistableReduction.SemiDeg
-public import ReciprocityTheory.SemistableReduction.SemiContract
-public import ReciprocityTheory.SemistableReduction.LatAll
+public import ReciprocityTheory.SemistableReduction.Bundle0018
+public import ReciprocityTheory.SemistableReduction.Bundle0029
 
 @[expose] public section
 

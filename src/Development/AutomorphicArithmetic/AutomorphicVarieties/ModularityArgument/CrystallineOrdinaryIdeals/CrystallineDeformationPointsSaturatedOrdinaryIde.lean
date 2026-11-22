@@ -4,11 +4,11 @@ public import Mathlib
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.CrystallineOrdinaryIdeals.Imports
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.PadicHodgeTheory.UnramifiedLiftDeformation
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.CrystallineOrdinaryIdeals.CrystallineDeformationAmalgamateOverFibreProductStatement
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.CrystallineOrdinaryIdeals.OrdIdealEqBotOfCrystallineDeformationStatement
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.CrystallineOrdinaryIdeals.SaturatingElementUnramifiedTwistEqPowMulUnitStatement
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.CrystallineOrdinaryIdeals.OrdinaryIdealSaturatorsMapAlgHomStatement
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.CrystallineOrdinaryIdeals.ExistsTruncatedPolynomialThickeningFibreSquareStatement
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.CrystallineOrdinaryIdeals.CrystallineTwistByUnramifiedCharacterStatement
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.CrystallineOrdinaryIdeals.Bundle0008
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.CrystallineOrdinaryIdeals.Bundle0006
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.CrystallineOrdinaryIdeals.Bundle0003
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.CrystallineOrdinaryIdeals.Bundle0002
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.CrystallineOrdinaryIdeals.Bundle0004
 
 @[expose] public section
 
@@ -41,7 +41,7 @@ theorem core (hL : LocalPublishedTheorems) {l : ℕ} [Fact l.Prime] {O : Type} [
     (hcanc : ∀ (P y : T) (j : ℕ) (v : Cˣ), j ≤ 2 * k → p₂ P = t ^ j * v → P * y = 0 → p₁ y = 0)
     (a : U.R) (ha : GlobalTheory.OrdLoc.del D U.r.hom ^ k * a ∈ GlobalTheory.OrdLoc.ordIdeal D U.r.hom) : f a = 0 := by
   obtain ⟨u, hu1, hu2, hu3, j, v, hj, hdel⟩ := GlobalTheory.T.saturatingElement_unramified_twist_eq_pow_mul_unit D E C t ht
-  have hr₂ := GlobalTheory.T.crystalline_twist_by_unramified_character D E C πC hπC u hu1 hu2 hu3
+  have hr₂ := _root_.GlobalTheory.OrdTwist.twist_inDcr D E C πC hπC u hu1 hu2 hu3
   obtain ⟨r, hr, hr1, hr2⟩ := GlobalTheory.T.crystallineDeformation_amalgamate_over_fibre_product_cover hL D E B π hπ C πC hπC T (π.comp p₁) hπT p₁ p₂ rfl hcomp.symm hsurj
     (push f U.r.hom) _ hf hr₂
   have hx : (GG.map (π : B →+* E)).comp (push f U.r.hom) = push ((π.restrictScalars O).comp f) U.r.hom :=

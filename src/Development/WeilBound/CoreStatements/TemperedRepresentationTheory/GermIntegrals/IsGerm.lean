@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.IsParahoricVec
-public import Development.AbelianVarietyTheory.Definitions.Foundations.SecondCountableAndT2LocalField
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.LeviRep
+public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.Bundle0004
+public import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0005
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0018
 
 @[expose] public section
 

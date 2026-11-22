@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import GroundTheory.GlobalFields.TateThesis.IdeleMeasureNormOne
-public import GroundTheory.GlobalFields.TateThesis.IdeleMeasureCosets
+public import GroundTheory.GlobalFields.TateThesis.Bundle0007
 public import GroundTheory.GlobalFields.IdeleGroups.NormOneCompact
 public import GroundTheory.GlobalFields.Adele.Discrete
 

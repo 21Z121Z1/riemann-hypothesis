@@ -1,14 +1,14 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.PrinInf
+public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.Bundle0015
 public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.IsThetaFam
-public import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.SkewGramHalfModule
-public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.ExistsNormLeHeightPow
+public import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.Bundle0018
+public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.Bundle0007
 public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.PairwiseDisjointCell
-public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.HeckeLPartialContinuationHolds
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.DoublingZetaValueAtEisensteinHolomorphicPoint
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SiegelEisensteinContinuationAndPoles
+public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.Bundle0005
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0277
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0325
 
 @[expose] public section
 
@@ -60,8 +60,8 @@ theorem dblInt_family {μ : (AE D)ˣ →* Circle} (hμ : IsHeckeChar D μ) {m : 
     (∀ s ∈ ball z r, DblConv V μ m (H s) f₁ f₂) ∧
       DifferentiableOn ℂ (fun s => dblInt V μ m (H s) f₁ f₂) (ball z r) := by
   obtain ⟨C, N, hb⟩ := hB
-  obtain ⟨C', c, hio⟩ := GlobalTheory.T.exists_height_doublingEmbedding_le_pow_mul_heights D V
-  obtain ⟨bound, hbi, hbd⟩ := GlobalTheory.T.exists_integrable_bound_doubling_integrand_quotient D V μ m hm f₁ f₂ h₁ h₂ C' c hio C N
+  obtain ⟨C', c, hio⟩ := _root_.GlobalTheory.Cont.HeightIo.height_io_bound D V
+  obtain ⟨bound, hbi, hbd⟩ := _root_.GlobalTheory.Core.Rk.Dom.exists_integrable_bound_dblIntegrandQ D V μ m hm f₁ f₂ h₁ h₂ C' c hio C N
   have hcont : ∀ s ∈ ball z r, Continuous (H s) := fun s hs =>
     hc.comp_continuous (f := fun g => (s, g)) (by fun_prop) fun g => ⟨hs, trivial⟩
   have hli : ∀ s ∈ ball z r, LeftInv ((GQ V).prod (GQ V)) (dblIntegrand V μ (H s) f₁ f₂) := fun s hs =>

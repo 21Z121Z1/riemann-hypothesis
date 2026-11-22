@@ -1,19 +1,19 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Divisors.IsSmoothVector
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LocallyIntegrableRep
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BoundedAutomorphicHasRepresentative
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0033
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0078
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0940
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LocalSobolevInequalityAdelicUnitary
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NcardRationalPointsTranslatedCompactLePowStatement
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.AdelicUnitaryTopology
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RepresentativeParametricIntegralContinuousFamilyStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsContinuousRepresentativeAverageStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsFixedAverageApproxOfSubgroupFixedStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsEvaluationExtensionClosureRepresentativesStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EqSumIntegralCubeDerivativesStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SmoothAlongCurveProductsStableStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FundamentalDomainL2BoundStatement
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NcardRationalPointsTranslatedCompactLePow
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0160
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0169
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0136
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0139
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0190
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0231
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0221
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0199
 
 @[expose] public section
 
@@ -55,7 +55,7 @@ theorem hasDerivAt_rep [μ.IsMulRightInvariant]
     · rfl
   have hw : Continuous fun t => ρ (c t) v' := (hρ v').comp hc
   have key : ∀ a b : ℝ, a ≤ b → ∀ y, φ (y * c b) - φ (y * c a) = ∫ t in a..b, φ' (y * c t) := fun a b hab => by
-    obtain ⟨p1, p2⟩ := GlobalTheory.T.representative_parametric_integral_continuous_family G μ K ι hloc hlin ℝ volume (Set.Icc a b) (fun t => ρ (c t) v')
+    obtain ⟨p1, p2⟩ := _root_.GlobalTheory.LocRep.rep_parametric_integral G μ K ι hloc hlin ℝ volume (Set.Icc a b) (fun t => ρ (c t) v')
       (fun t y => φ' (y * c t)) isCompact_Icc hw (hφ'.comp (continuous_snd.mul (hc.comp continuous_fst)))
       fun t => rep_tr htr hv' _
     rw [integral_Icc_eq_integral_Ioc, ← intervalIntegral.integral_of_le hab,
@@ -115,7 +115,7 @@ theorem exists_eval [μ.IsMulRightInvariant]
           rw [e1, e2]⟩ }
   have hA : ∀ v (φ : G → ℂ), Continuous φ → ι v =ᵐ[μ] φ → (Continuous fun x => ∫ t in Q, κ t * φ (x * Θ t)) ∧
       ι (A v) =ᵐ[μ] fun x => ∫ t in Q, κ t * φ (x * Θ t) := fun v φ hφ hv =>
-    GlobalTheory.T.representative_parametric_integral_continuous_family G μ K ι hloc hlin _ volume Q (fun t => κ t • ρ (Θ t) v) (fun t x => κ t * φ (x * Θ t)) hQ (hw v)
+    _root_.GlobalTheory.LocRep.rep_parametric_integral G μ K ι hloc hlin _ volume Q (fun t => κ t • ρ (Θ t) v) (fun t x => κ t * φ (x * Θ t)) hQ (hw v)
       ((hκ.comp continuous_fst).mul (hφ.comp (continuous_snd.mul (hΘ.comp continuous_fst)))) fun t => by
         filter_upwards [rep_smul hlin (κ t) (ρ (Θ t) v), rep_tr htr hv (Θ t)] with x e1 e2
         rw [e1, e2]
@@ -151,8 +151,8 @@ theorem exists_eval [μ.IsMulRightInvariant]
           rw [integral_const_mul, mul_assoc, mul_assoc]
           exact mul_le_mul_of_nonneg_left (h1.trans (mul_le_mul_of_nonneg_left h2 hC)) (le_max_right _ _)
   refine ⟨Λ, fun v hv => hΛ v (Metric.mem_closure_iff.2 fun ε hε => ?_)⟩
-  obtain ⟨η, e1, e2, e3, e4⟩ := GlobalTheory.T.exists_fixed_average_approx_of_subgroup_fixed G μ K ρ hiso hρ H U hU hH v hv ε hε
-  exact ⟨_, ⟨e3, GlobalTheory.T.exists_continuous_representative_average G μ K ι hloc hlin ρ hiso hρ htr η v e1 e2⟩, by rwa [dist_eq_norm]⟩
+  obtain ⟨η, e1, e2, e3, e4⟩ := _root_.GlobalTheory.exists_average_fixed_approx_of_fixed G μ K ρ hiso hρ H U hU hH v hv ε hε
+  exact ⟨_, ⟨e3, _root_.GlobalTheory.LocRep.exists_continuous_rep_average G μ K ι hloc hlin ρ hiso hρ htr η v e1 e2⟩, by rwa [dist_eq_norm]⟩
 
 def Sm (ρ : G →* (K →L[ℂ] K)) {P : Type} (A : Set P) (e : P → ℝ → G) (v : K) : Prop :=
   ∀ (k : ℕ) (ps : Fin k → P), (∀ i, ps i ∈ A) →
@@ -277,7 +277,7 @@ theorem exists_smooth_repr : ∀ (D : D7) (θ : InfFam D) (V : HSp D), IsInfFam 
     (H := U ⊓ GfC V) (U := U) (A := {p : D.what₂.Tau × Mt V.rank | p.2 ∈ lieAt V p.1})
     (e := fun p => oneP θ V p.1 p.2) (qs := fun i => (τs i, Xs i))
     (fun C hC => by
-      obtain ⟨m, hm⟩ := GlobalTheory.T.ncard_rationalPoints_translatedCompact_le_pow D θ V hθ C hC
+      obtain ⟨m, hm⟩ := _root_.GlobalTheory.RatCount.ncard_rational_le D θ V hθ C hC
       obtain ⟨c, hc⟩ := hm 1
       refine GlobalTheory.T.fundamental_domain_L2_bound (GA D V) μ (GQ V) 𝓕 hp.fd C hC (c * normInf θ V 1 ^ m) fun y => ?_
       simpa using hc 1 (one_mem _) y)

@@ -2,9 +2,9 @@ module
 
 public import Mathlib
 public import Formalism.HermitianCurvature.HermitianCurvatureProofs.cut_GCore_GTConnCut
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.cut_GCore_GenTransferKapCut
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0067
 public import Formalism.HermitianCurvature.HermitianCurvatureProofs.TheSection
-public import Formalism.HermitianCurvature.FrameExists2
+public import Formalism.HermitianCurvature.Bundle0009
 
 @[expose] public section
 

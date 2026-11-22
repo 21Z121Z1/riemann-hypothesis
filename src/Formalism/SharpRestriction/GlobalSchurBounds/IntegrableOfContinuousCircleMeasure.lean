@@ -3,10 +3,10 @@ module
 public import Formalism.SharpRestriction.GlobalSchurBounds.FlipTwoThree
 public import Formalism.LocalRingCardinality.Lemmas
 public import Formalism.LogVandermondeBounds.HookGammaAmgmMultinomialBounds
-public import Formalism.GL3MeanSquares.HookFormulaTorsion.SquareMomentFromBound
+public import Formalism.GL3MeanSquares.HookFormulaTorsion.Bundle0001
 public import Mathlib
-public import Formalism.GL3MeanSquares.ConcavityEquidistribution
-public import Formalism.LogVandermondeBounds.MultinomialPowerBound
+public import Formalism.GL3MeanSquares.Bundle0001
+public import Formalism.LogVandermondeBounds.Bundle0001
 public import Formalism.GL3MeanSquares.HookFormulaTorsion.SquareMomentArithmeticBound
 
 @[expose] public section

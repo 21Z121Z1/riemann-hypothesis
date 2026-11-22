@@ -2,8 +2,8 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ContinuousMatQApply
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.SelNZero
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsCommutatorDetNonzero
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0341
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0347
 
 @[expose] public section
 

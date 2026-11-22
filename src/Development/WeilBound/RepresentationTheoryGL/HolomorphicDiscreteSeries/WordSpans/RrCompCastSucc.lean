@@ -1,8 +1,8 @@
 module
 
 public import Development.WeilBound.RepresentationTheoryGL.HolomorphicDiscreteSeries.WordSpans.WordSpan
-public import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.QmRowExp
-public import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.QmColExp
+public import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.Bundle0014
+public import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.Bundle0012
 
 @[expose] public section
 

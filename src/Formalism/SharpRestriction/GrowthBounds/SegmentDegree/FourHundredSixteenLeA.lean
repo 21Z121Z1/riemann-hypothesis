@@ -1,6 +1,6 @@
 module
 
-public import Formalism.SharpRestriction.GrowthBounds.SegmentDegree.SortGetDSpec
+public import Formalism.SharpRestriction.GrowthBounds.SegmentDegree.Bundle0014
 public import Formalism.SharpRestriction.GrowthBounds.SegmentDegree.ThresholdPowerBoundOfCounts
 
 @[expose] public section

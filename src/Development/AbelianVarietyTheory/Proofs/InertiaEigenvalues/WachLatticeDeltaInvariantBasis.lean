@@ -1,10 +1,10 @@
 module
 
 public import Mathlib
-public import Formalism.SharpRestriction.LevelLetterCocycles.UsedLocalConclusion
-public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.NotFullBot
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.RingsCyclotomic
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.NBasisLoc
+public import Formalism.SharpRestriction.LevelLetterCocycles.Bundle0006
+public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0004
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0285
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0327
 
 @[expose] public section
 

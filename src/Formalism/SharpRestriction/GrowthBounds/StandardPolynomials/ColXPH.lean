@@ -1,7 +1,7 @@
 module
 
-public import Formalism.SharpRestriction.GrowthBounds.StandardPolynomials.ColsS
-public import Formalism.SharpRestriction.GrowthBounds.StandardPolynomials.ColXCnt
+public import Formalism.SharpRestriction.GrowthBounds.StandardPolynomials.Bundle0009
+public import Formalism.SharpRestriction.GrowthBounds.StandardPolynomials.Bundle0005
 public import Formalism.SharpRestriction.GrowthBounds.StandardPolynomials.ColXSeg
 
 @[expose] public section

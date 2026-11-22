@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.StatementsFlagLineDegree
-public import GroundTheory.HeightsAndTheta.Heights.FieldsOfNumbers.PSplitRelDeg
+public import GroundTheory.HeightsAndTheta.Heights.FieldsOfNumbers.Bundle0009
 
 @[expose] public section
 

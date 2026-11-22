@@ -1,7 +1,7 @@
 module
 
 public import Development.WeilBound.ThetaLifts.WeilDomination.FacNeGauss
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsIsSplitChartOne
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0303
 public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.RamificationIdxEqOneOfIsSquare
 
 @[expose] public section

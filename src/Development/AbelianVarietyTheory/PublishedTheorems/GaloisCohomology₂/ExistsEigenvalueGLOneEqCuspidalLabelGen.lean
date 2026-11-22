@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.CharacterIdempotents.Scalar
-public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.MemRootsBarXSubC
-public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.GreenCuspidalIff
+public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.CharacterIdempotents.Bundle0001
+public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0009
+public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.Bundle0004
 
 @[expose] public section
 

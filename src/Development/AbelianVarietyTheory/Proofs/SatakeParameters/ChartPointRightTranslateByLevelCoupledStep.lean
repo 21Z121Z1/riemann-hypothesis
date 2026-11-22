@@ -1,12 +1,12 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.UnderTie
+public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.Bundle0023
 public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.SmulCompSmul
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.LatAdXMulLev
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.AbsNormEqOfSplitFactor
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0256
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0155
 public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.XiAtCongInvariant
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.IntegralDivUniformizerOfRedZero
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0057
 
 @[expose] public section
 

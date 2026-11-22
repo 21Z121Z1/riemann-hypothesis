@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.BlockSplitAll
+public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.Bundle0014
 
 @[expose] public section
 

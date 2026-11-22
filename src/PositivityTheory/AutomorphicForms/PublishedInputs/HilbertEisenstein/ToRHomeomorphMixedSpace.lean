@@ -1,10 +1,10 @@
 module
 
-public import PositivityTheory.AutomorphicForms.PublishedInputs.HilbertEisenstein.Imports
-public import GroundTheory.GlobalFields.TateThesis.GaussianSchwartz
+public import PositivityTheory.AutomorphicForms.PublishedInputs.HilbertEisenstein.Bundle0001
+public import GroundTheory.GlobalFields.TateThesis.Bundle0002
 public import GroundTheory.AutomorphicForms.GL2.SummableNormIffAndTsumEqCoset2
 public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.ExistsUniqueHcharOfFiniteOrder
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsOpenIdeleSubgroupContainsCongruenceUnits
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0043
 
 @[expose] public section
 

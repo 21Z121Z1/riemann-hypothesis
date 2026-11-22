@@ -2,11 +2,10 @@ module
 
 public import Mathlib
 public import Development.AutomorphicArithmetic.Foundations.Convolution.IntegrableConvolution.TensFactor
-public import Development.AutomorphicArithmetic.Foundations.Convolution.PowerSumTraces.OfinProd
-public import Development.AutomorphicArithmetic.Foundations.Convolution.CentreSplitting.DefsObj
-public import Development.AutomorphicArithmetic.Foundations.Convolution.CentreSplitting.DefsTw
+public import Development.AutomorphicArithmetic.Foundations.Convolution.PowerSumTraces.Bundle0003
+public import Development.AutomorphicArithmetic.Foundations.Convolution.CentreSplitting.Bundle0001
 public import Development.AutomorphicArithmetic.Foundations.Convolution.NormCharacterPowers.SumSatUnit
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.BaseChangeUnits.ComplexBaseChangeOfLiterature
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.BaseChangeUnits.Bundle0001
 
 @[expose] public section
 

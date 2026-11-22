@@ -2,10 +2,10 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.SpanningFamilies.IsWeakOfDatum
-public import Development.AbelianVarietyTheory.Definitions.SpanningFamilies.IsHeatZero
-public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.HeisenbergDerivativeThetaFunctionLaws
-public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.FockPolynomialVectorLawsStatement
-public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.FockPolynomialVectorTestThetaZeroEqThetaSeriesStatement
+public import Development.AbelianVarietyTheory.Definitions.SpanningFamilies.Bundle0001
+public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.Bundle0050
+public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.FockPolynomialVectorLaws
+public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.Bundle0055
 
 @[expose] public section
 
@@ -236,9 +236,9 @@ theorem col_change : ∀ (D : D7) (S T : HSp D) (C : Ctx S T), ∀ h : GA D S, �
       simp
     · simp [Matrix.one_apply_ne hab]
   · intro Q Q' hQ B hB f hf
-    have hL := GlobalTheory.T.fockPolynomialVector_laws D S T C B hB
+    have hL := _root_.GlobalTheory.Ker.FockAlg.fock_vec_laws D S T C B hB
     have hQ' : Q' = sub C h Q := by
-      apply (GlobalTheory.T.fockPolynomialVector_testTheta_zero_eq_thetaSeries D S T C).1.1
+      apply (_root_.GlobalTheory.Ker.fvec_Th_zero D S T C).1.1
       have e := congrArg (fun F => F Q) (toH_sub C h)
       simp only [AlgHom.comp_apply] at e
       rw [hQ, ← e]

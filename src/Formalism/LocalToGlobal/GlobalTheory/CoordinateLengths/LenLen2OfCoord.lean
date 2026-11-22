@@ -1,7 +1,7 @@
 module
 
 public import Formalism.LocalToGlobal.GlobalTheory.CoordinateLengths.PairingAdjointness
-public import Formalism.LocalToGlobal.GlobalTheory.GL6.SecondBranchInclLengthOfLengths
+public import Formalism.LocalToGlobal.GlobalTheory.GL6.Bundle0009
 
 @[expose] public section
 

@@ -1,16 +1,15 @@
 module
 
-public import Formalism.SharpRestriction.GenusPolyhedralBounds.RelativeIndexClassSets.WeightedPrimeSumBound
+public import Formalism.SharpRestriction.GenusPolyhedralBounds.RelativeIndexClassSets.Bundle0002
 public import Formalism.SharpRestriction.InertJacobiLevels.HostFam
 public import Formalism.SharpRestriction.Divisibility.WeightAlgebra
 public import Formalism.SharpRestriction.Divisibility.LocalNonemptiness.WeightFamilies
 public import Formalism.SharpRestriction.Divisibility.LocalNonemptiness.SubsingletonRankIndicatorIff
-public import Formalism.SharpRestriction.ElevenLe
-public import Formalism.LocalRingCardinality.DataParamsT
+public import Formalism.SharpRestriction.Bundle0001
+public import Formalism.LocalRingCardinality.Bundle0003
 public import Formalism.LocalRingCardinality.CoeNeZeroOfNotMem
-public import Development.AutomorphicArithmetic.CyclotomicBounds.RamifiedDiscriminants.TwoFmLeRdE
-public import Development.AutomorphicArithmetic.CyclotomicBounds.RamifiedDiscriminants.CondLam
-public import Development.AutomorphicArithmetic.CyclotomicBounds.RamifiedDiscriminants.FourMulQLeCondN
+public import Development.AutomorphicArithmetic.CyclotomicBounds.RamifiedDiscriminants.Bundle0005
+public import Development.AutomorphicArithmetic.CyclotomicBounds.RamifiedDiscriminants.Bundle0001
 
 @[expose] public section
 

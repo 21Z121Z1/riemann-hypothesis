@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import GroundTheory.HeightsAndTheta.Heights.RemainderTerms.DegPolynomialIsHomogeneous
+public import GroundTheory.HeightsAndTheta.Heights.RemainderTerms.Bundle0016
 public import GroundTheory.HeightsAndTheta.Heights.RemainderTerms.FlagIntegralRealTransferOfSyzygy
-public import GroundTheory.HeightsAndTheta.Heights.RemainderTerms.StaircaseIsHomogeneous
+public import GroundTheory.HeightsAndTheta.Heights.RemainderTerms.Bundle0020
 
 @[expose] public section
 

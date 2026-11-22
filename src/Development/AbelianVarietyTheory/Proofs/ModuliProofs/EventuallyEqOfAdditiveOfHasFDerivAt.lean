@@ -2,10 +2,10 @@ module
 
 public import Mathlib
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.IsHolPeriods
-public import Development.AbelianVarietyTheory.Proofs.ToricGeometry.TopLePreimageOfValAtNeZero
-public import Development.AbelianVarietyTheory.Proofs.ToricGeometry.HolFamilyOfIsPullback
+public import Development.AbelianVarietyTheory.Proofs.ToricGeometry.Bundle0018
+public import Development.AbelianVarietyTheory.Proofs.ToricGeometry.Bundle0016
 public import Development.AbelianVarietyTheory.Proofs.CovolumeBounds.DifferentiableOnOfTendstoLocallyUniformlyOn
-public import Development.AbelianVarietyTheory.Proofs.HomogeneousIdeals.TendstoUniformlyOnDoublingLogOfContraction
+public import Development.AbelianVarietyTheory.Proofs.HomogeneousIdeals.Bundle0007
 
 @[expose] public section
 

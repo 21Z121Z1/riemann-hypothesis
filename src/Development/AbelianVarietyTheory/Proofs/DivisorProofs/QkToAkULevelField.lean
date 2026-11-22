@@ -2,11 +2,11 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SectionValueEqAdicSumAtImageOfZeroPair
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SumFConvOfCrossAny
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExhaustOfLabels
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2396
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1198
 public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.QkToAkUInvariantUnderFieldEmbedding
-public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.TxFrameTranslate
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.HeightTheory.FiniteAlgebraLocalCompletion
+public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.Bundle0135
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.HeightTheory.Bundle0005
 
 @[expose] public section
 
@@ -83,7 +83,7 @@ theorem sumF_field : LL → FieldD fun {R} _ _ {I} D F _ _ => ∀ (K : Type) [Fi
   have := hR.1
   have := D.toPre.P.isAb.smooth
   have hL := D.toPre.P.isLB
-  obtain ⟨P⟩ := GlobalTheory.T.nonempty_perfectSectionsComplex_of_noetherian R _ D.toPre.P.A.hom inferInstance
+  obtain ⟨P⟩ := _root_.GlobalTheory.AbLaw.nonempty_perf_of_noetherian R _ D.toPre.P.A.hom inferInstance
     (GlobalTheory.AbProj.isProjBy_of_isPullback D.toPre.P (IsPullback.id_horiz _)) _ (LB.isLB_linComb hL φ ε)
   choose v hv hv' using fun i => exists_vec P (n i)
   obtain ⟨v₀, hv₀, hv₀'⟩ := exists_vec P n₀

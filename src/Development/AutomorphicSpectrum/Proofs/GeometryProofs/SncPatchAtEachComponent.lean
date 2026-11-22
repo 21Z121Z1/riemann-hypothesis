@@ -1,11 +1,11 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.IsSncPatchRat
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0017
 public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.EmbedsGeneric
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.BlowupProjections.BlowupProjStatement
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.SncChartOfSmoothCoords
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.RegAtIsLocalRingIsFractionRingStalk
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0122
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0014
 
 @[expose] public section
 

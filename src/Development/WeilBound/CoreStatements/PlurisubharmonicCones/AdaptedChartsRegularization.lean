@@ -2,11 +2,11 @@ module
 
 public import Mathlib
 public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.PotentialsBoundedRegSettingEqReference
-public import GroundTheory.HeightsAndTheta.Heights.Regularisation.BoundedStatements
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.InterSt
+public import GroundTheory.HeightsAndTheta.Heights.Regularisation.Bundle0002
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.Bundle0006
 public import ReciprocityTheory.AnalyticForms.AnalyticCharts.Osgood
-public import Development.WeilBound.CoreStatements.PlurisubharmonicCones.ProdEqZeroIffCoordDiv
-public import Development.WeilBound.CoreStatements.PlurisubharmonicCones.SymmetricChartsCutoffFamily
+public import Development.WeilBound.CoreStatements.PlurisubharmonicCones.Bundle0013
+public import Development.WeilBound.CoreStatements.PlurisubharmonicCones.Bundle0010
 
 @[expose] public section
 

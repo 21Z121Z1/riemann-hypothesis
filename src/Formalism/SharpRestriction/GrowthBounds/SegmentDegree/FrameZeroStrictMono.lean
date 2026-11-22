@@ -1,6 +1,6 @@
 module
 
-public import Formalism.SharpRestriction.GrowthBounds.SegmentDegree.SumPosOfPer
+public import Formalism.SharpRestriction.GrowthBounds.SegmentDegree.Bundle0019
 
 @[expose] public section
 

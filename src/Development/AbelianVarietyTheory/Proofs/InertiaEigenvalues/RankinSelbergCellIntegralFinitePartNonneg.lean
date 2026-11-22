@@ -1,33 +1,33 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.PadNatZero
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.RsTermZero
-public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.ZintZero
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0857
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0618
+public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0021
 public import Development.AbelianVarietyTheory.Definitions.Divisors.IsAddHaarMeasureVolumeLie
-public import Development.AbelianVarietyTheory.Definitions.Divisors.UnrOutside
-public import Development.AbelianVarietyTheory.Definitions.Divisors.IsRapidInf
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SchurDir
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0020
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0025
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0828
 public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.T2SpaceAdelicGeneralLinearGroupNumberField
 public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.AdelicUnitriangularMulMemUnipotentTimesIntegral
 public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.StrongMultiplicityOne
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CellLintegral
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ContinuousOfMemSmoothSpan
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0763
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0808
 public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.LintegralUnipotentCellPosLtTopContinuous
-public import Development.AbelianVarietyTheory.Definitions.Divisors.NAInterSupSSubset
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CuspFormRapidKernelSmoothSpanSmoothCuspidalBound
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0030
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0717
 public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsEquivariantProj
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WhitMulLocGLDiagPowOfFixed
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ContinuousGlobalWhittakerCoefficientGLAdeles
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FinsuppVanishingOnEquivComplProd
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsOpenAdelicUnipotentTimesIntegralOutsideSet
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0900
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0600
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0024
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0455
 public import GroundTheory.AutomorphicForms.MultiplicityOne.Injective
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SuperDiagBlockGL
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsMulSupSFinGL
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0868
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0864
 public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.LintegralRankinSelbergThetaEqWhittakerUnfolding
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsMirabolicWhittakerStageTopOfVanishingBlockAver
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.LintegralThetaAboveDetOne
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.LintegralThetaBelowDetOne
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0867
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0878
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0877
 
 @[expose] public section
 
@@ -356,9 +356,9 @@ theorem lintegral_whit_sq_eq : ∀ (E : Type) [Field E] [NumberField E] [_root_.
     simp only [hw, GlobalTheory.RSnm.detAbs]
     rw [row_mul (blkU_row hℓ y), map_mul, det_blkU, one_mul]
   have hgood : Good ψC (m + 1 - 1) F := GlobalTheory.CuspGeneric.good_top E m ψC F hB.cont hB.left
-    fun r hr hra g => GlobalTheory.T.cuspidal_blockAverage_lastColumn_eq_zero E (m + 1) F hB.cont hB.left hB.cusp r hr hra g
-  have e2 := (GlobalTheory.T.unfold_mirabolic_alt E (m + 1) μ ψC (GlobalTheory.T.isStandardAdelicAddChar_global_adelicChar E) 𝓕P 𝓕₀ h𝓕P h𝓕₀' w hwm hwl hwu).1 F hgood
-  rw [GlobalTheory.T.iteratedColumnTransform_eq_globalWhittaker E (m + 1) F (Nat.succ_pos m) hB.cont hB.left] at e2
+    fun r hr hra g => _root_.GlobalTheory.CuspGeneric.avg_blk_last_eq_zero E (m + 1) F hB.cont hB.left hB.cusp r hr hra g
+  have e2 := (_root_.GlobalTheory.MirTower.unfold_mirabolic E (m + 1) μ ψC (_root_.GlobalTheory.StdCharStd.stdPsi_adelicChar E) 𝓕P 𝓕₀ h𝓕P h𝓕₀' w hwm hwl hwu).1 F hgood
+  rw [_root_.GlobalTheory.CuspGeneric.WhitEq.whit_eq_whittaker E (m + 1) F (Nat.succ_pos m) hB.cont hB.left] at e2
   simp_rw [mul_assoc]
   exact e2.symm
 
@@ -400,7 +400,7 @@ theorem lintegral_whit_sq_ne_top {E : Type} [Field E] [NumberField E] [_root_.Nu
     obtain ⟨C, hC⟩ := GlobalTheory.ThetaSqLow.exists_bound hπ hφ hG
     have hi : IntegrableOn (fun g : GA E (m + 1) => GlobalTheory.RSnm.detAbs g ^ (x - 1))
         (𝓕 ∩ {g | GlobalTheory.RSnm.detAbs g ≤ 1}) μ :=
-      GlobalTheory.T.integrableOn_absDet_rpow_le_one_fundamentalDomain
+      _root_.GlobalTheory.RSThetaLow.integrableOn_absDet_rpow_low
         E (m + 1) m.succ_pos μ 𝓕 h1 (x - 1) (by linarith)
     refine ne_top_of_le_ne_top (hi.const_mul C).lintegral_lt_top.ne (lintegral_mono fun g => ?_)
     have hδ := GlobalTheory.RSnm.detAbs_pos g

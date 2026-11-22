@@ -1,9 +1,9 @@
 module
 
 public import Development.AutomorphicArithmetic.Foundations.Convolution.HermitianDescent.NormAlmostAll
-public import Development.AutomorphicArithmetic.Foundations.Convolution.HermitianDescent.NmPoly
-public import Development.AutomorphicArithmetic.Foundations.Convolution.HermitianDescent.SeparableOfMap
-public import Development.AutomorphicArithmetic.Foundations.Convolution.HermitianDescent.NmCent
+public import Development.AutomorphicArithmetic.Foundations.Convolution.HermitianDescent.Bundle0001
+public import Development.AutomorphicArithmetic.Foundations.Convolution.HermitianDescent.Bundle0003
+public import Development.AutomorphicArithmetic.Foundations.Convolution.HermitianDescent.Bundle0002
 
 @[expose] public section
 

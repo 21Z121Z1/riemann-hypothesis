@@ -2,7 +2,7 @@ module
 
 public import CompanionTheory.AutomorphicTheory.LocalBesselUniqueness.HatCap
 public import CompanionTheory.AutomorphicTheory.LocalBesselUniqueness.HatKBSOf
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutNFHatProdKBStmt
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0286
 
 @[expose] public section
 

@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ValuationGdetKapAt
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsInverseUnipotentVolumeConjDiagonalEq
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0609
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0379
 
 @[expose] public section
 

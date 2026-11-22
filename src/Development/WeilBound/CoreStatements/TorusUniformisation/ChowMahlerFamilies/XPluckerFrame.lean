@@ -1,15 +1,15 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.TrivFlagMod
-public import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.FlagMinor
+public import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.Bundle0004
+public import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.Bundle0001
 public import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.PluckerCoord
 public import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.StatementsBundles
-public import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.SameGenericSymm
-public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.LocallyFreeFiniteProjectiveBaseChange
+public import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.Bundle0025
+public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.Bundle0008
 public import Development.WeilBound.CoreStatements.TorusUniformisation.ChowMahlerFamilies.XMinorGraded
-public import Development.WeilBound.CoreStatements.TorusUniformisation.ChowMahlerFamilies.XBundleOfFamily
-public import Development.WeilBound.CoreStatements.TorusUniformisation.ChowMahlerFamilies.XPullLine
+public import Development.WeilBound.CoreStatements.TorusUniformisation.ChowMahlerFamilies.Bundle0009
+public import Development.WeilBound.CoreStatements.TorusUniformisation.ChowMahlerFamilies.Bundle0010
 
 @[expose] public section
 

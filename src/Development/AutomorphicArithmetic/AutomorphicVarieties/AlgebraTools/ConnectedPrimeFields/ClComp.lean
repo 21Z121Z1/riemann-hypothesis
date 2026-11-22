@@ -1,6 +1,6 @@
 module
 
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.CommutativeAlgebraHeight.IsLocalHom
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.CommutativeAlgebraHeight.Bundle0002
 public import Mathlib
 public import ReciprocityTheory.CommutativeAlgebra.ChainConnInDim
 public import ReciprocityTheory.CommutativeAlgebra.SaturatedChains.IsSaturatedChain

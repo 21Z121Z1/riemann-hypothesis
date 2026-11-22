@@ -3,13 +3,13 @@ module
 public import Mathlib
 public import CompanionTheory.AutomorphicTheory.PieriRules.PieriDegreeBounds.Imports
 public import Development.AbelianVarietyTheory.Definitions.Jets.SumIoPr
-public import CompanionTheory.AutomorphicTheory.PieriRules.ThetaBesselIsometries.DiscreteSeriesUnitarySmoothBasic
+public import CompanionTheory.AutomorphicTheory.PieriRules.ThetaBesselIsometries.Bundle0001
 public import CompanionTheory.AutomorphicTheory.PieriRules.ThetaBesselIsometries.HaarEqSmul
-public import CompanionTheory.AutomorphicTheory.PieriRules.PieriDegreeBounds.WeilFormulaIntegrableComplexImports
-public import CompanionTheory.AutomorphicTheory.PieriRules.ThetaBesselIsometries.BesselGapVanishingStatement
-public import CompanionTheory.AutomorphicTheory.PieriRules.ThetaBesselIsometries.GapCoefficientBoundStatement
-public import CompanionTheory.AutomorphicTheory.PieriRules.ThetaBesselIsometries.GapCoefficientBoundDualStatement
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.ReproducingFormulaReduction
+public import CompanionTheory.AutomorphicTheory.PieriRules.PieriDegreeBounds.Bundle0002
+public import CompanionTheory.AutomorphicTheory.PieriRules.ThetaBesselIsometries.Bundle0004
+public import CompanionTheory.AutomorphicTheory.PieriRules.ThetaBesselIsometries.Bundle0005
+public import CompanionTheory.AutomorphicTheory.PieriRules.ThetaBesselIsometries.Bundle0002
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0076
 public import CompanionTheory.AutomorphicTheory.PieriRules.ThetaBesselIsometries.IsDSOfIsDG
 
 @[expose] public section
@@ -128,8 +128,8 @@ theorem norm_integral (hy : HypsG) (k r : ℕ) (ε : Fin (2 * r + k + 1) → Boo
     ((∫ x : Formalism.QuantumDeterminants.Mt k r, ‖be z Formalism.QuantumDeterminants.cStd π R.σ μW μN (R.σ (Matrix.of x) w) v ξ‖ ^ 2 ∂νq : ℝ) : ℂ) =
       ((‖w‖ ^ 2 : ℝ) : ℂ) / (d : ℂ) * ⟪be z Formalism.QuantumDeterminants.cStd π R.σ μW μN v v ξ, ξ⟫_ℂ := by
   obtain ⟨hmul, hone, hun, hsm, hTK, -, -, -, hcont⟩ := GlobalTheory.rep_basic_of_isDS hy.1.2.2.1 k r ε mu R hR
-  have hfub := GlobalTheory.T.integrable_coefficient_mul_star_translate hy k r ε mu h R Wp z π u μW μN μG νq hR hgap hok hS v hv w hw
-  have hpt := GlobalTheory.T.coefficient_psi_pairing_eq_iterated_integral hy k r ε mu h R Wp z π u μW μN μG νq hR hgap hok hS v hv
+  have hfub := _root_.Gp91.GlobalTheory.BesselFubini.integrable_GS hy k r ε mu h R Wp z π u μW μN μG νq hR hgap hok hS v hv w hw
+  have hpt := _root_.Gp91.GlobalTheory.bessel_norm_sq_double_integral hy k r ε mu h R Wp z π u μW μN μG νq hR hgap hok hS v hv
   have hconv := (GlobalTheory.T.besselIntegral_integrable_and_cwContinuous_of_gap hy k r ε mu h R Wp z π u μW μN μG νq hR hgap hok hS v hv).1 v (hTK v hv)
   obtain ⟨hz, hT, ⟨u₀, hπ⟩, -, hWh, hNh, hGh, hq⟩ := hS
   have := hWh.1; have := hNh.1; have := hGh.1
@@ -167,7 +167,7 @@ theorem norm_integral (hy : HypsG) (k r : ℕ) (ε : Fin (2 * r + k + 1) → Boo
   set f : Formalism.QuantumDeterminants.Mt k r → ℂ := fun x => ∫ q, F (x, q) ∂(μW.prod μN) with hf
   have hfm : Measurable f := (hFm.stronglyMeasurable.integral_prod_right' (ν := μW.prod μN)).measurable
   have hfi : Integrable f μG := hFi.integral_prod_left
-  obtain ⟨-, hgi, hge⟩ := GlobalTheory.T.weil_formula_integrable_complex k r μG (muSof μW μN) νq f hq hfm hfi
+  obtain ⟨-, hgi, hge⟩ := _root_.GlobalTheory.weil_formula_integrable k r μG (muSof μW μN) νq f hq hfm hfi
 
   have hg : ∀ᵐ x ∂νq, ∫ s, f (fun i j => (Matrix.of s * Matrix.of x) i j) ∂(muSof μW μN) =
       ((‖be z Formalism.QuantumDeterminants.cStd π R.σ μW μN (R.σ (Matrix.of x) w) v ξ‖ ^ 2 : ℝ) : ℂ) := by

@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.EqZeroOfForallMemFilV
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.LinearIndependentOfInvariant
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0121
 
 @[expose] public section
 

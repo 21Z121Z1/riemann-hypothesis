@@ -2,8 +2,8 @@ module
 
 public import Mathlib
 public import Formalism.LocalToGlobal.ProjectiveLattices.ThShort
-public import Formalism.LocalToGlobal.ProjectiveLattices.IsThRule
-public import Formalism.LocalToGlobal.ProjectiveLattices.RowDeg
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0010
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0003
 public import Formalism.LocalToGlobal.ProjectiveLattices.IsCombAt
 public import Development.AbelianVarietyTheory.BlockTheory.ExistenceTori.AdelicNormWeight
 

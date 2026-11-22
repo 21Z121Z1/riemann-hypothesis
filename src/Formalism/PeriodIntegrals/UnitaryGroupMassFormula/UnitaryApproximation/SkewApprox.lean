@@ -1,9 +1,8 @@
 module
 
 public import Mathlib
-public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.UnitaryApproximation.SigmaMemIntOE
-public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.UnitaryApproximation.Cayley
-public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.UnitaryApproximation.Development
+public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.UnitaryApproximation.Bundle0002
+public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.UnitaryApproximation.Bundle0001
 
 @[expose] public section
 

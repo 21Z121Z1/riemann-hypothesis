@@ -2,21 +2,21 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.SpanningFamilies.IsWeakOfDatum
-public import Development.AbelianVarietyTheory.Definitions.SpanningFamilies.IsHeatZero
+public import Development.AbelianVarietyTheory.Definitions.SpanningFamilies.Bundle0001
 public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.LevelTestFunctionFiniteSumEquivariant
-public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.LevelTestFunctionFiniteSumEquivariantStatement
-public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.ThetaKernelOrthonormalFrameInDomainPeriodLinearStatement
-public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.RationalUnitaryGroupStructureStatement
-public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.AdelicZakThetaExistsUniqueStatement
-public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.FiniteAdelicLatticeTransportLawsStatement
-public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.ExistsRationalRealTrivialAtCongruentFactorStatement
-public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.SelfDualLatticesAtLevelStatement
-public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.WeilActionTranslatesThetaByUnitScalar
-public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.LevelDatumVectorEqThetaOfTestFunctionStatement
-public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.WeilPairLevelTrivialMapsLevelVectorStatement
-public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.WeilActionFixesLevelVectorUpToUnit
-public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.FockPolynomialVectorLawsStatement
-public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.WeakWeilRepCarriesDerivativesVacuaFockVectorsStatement
+public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.Bundle0039
+public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.ThetaKernelOrthonormalFrameInDomainPeriodLinear
+public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.RationalUnitaryGroupStructure
+public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.AdelicZakThetaExistsUnique
+public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.Bundle0046
+public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.ExistsRationalRealTrivialAtCongruentFactor
+public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.SelfDualLatticesAtLevel
+public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.Bundle0056
+public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.Bundle0057
+public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.Bundle0059
+public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.Bundle0058
+public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.FockPolynomialVectorLaws
+public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.Bundle0052
 
 @[expose] public section
 
@@ -71,7 +71,7 @@ theorem om_fvec (C : Ctx S T) (om : GA D S × GA D T →* Module.End ℂ (WO S T
     om (h, g) (C.fvec B f Q) = C.fvec (C.mvB g B) (om (h, g) f) Q := by
   have hc : (fun τ => compAt C.θ τ (Formalism.L2.Theta.mt S h)) = fun _ => (1 : Matrix (Fin S.rank) (Fin S.rank) ℂ) :=
     funext fun τ => compAt_of_fin C.θ τ S h hh
-  rw [((GlobalTheory.T.weakWeilRep_carries_derivatives_vacua_fockVectors D S T C om hW h g f hf).2 B hB).2 Q, hc]
+  rw [((_root_.GlobalTheory.Ker.WeakMove.om_move D S T C om hW h g f hf).2 B hB).2 Q, hc]
   rfl
 
 theorem levK_one (C : Ctx S T) (Lv : SW.Level C.X) (k : GA D T) (hk : k ∈ GfC T)
@@ -79,7 +79,7 @@ theorem levK_one (C : Ctx S T) (Lv : SW.Level C.X) (k : GA D T) (hk : k ∈ GfC 
     (hc : ∀ u ∈ hatV C.X.Λ, fmt T k *ᵥ u - u ∈ hatV (Lv.𝔪 • C.X.Λ)) : C.LevK Lv k 1 := by
   refine ⟨hk, hm, 1, by simp, fun i => ?_⟩
   have hβ : toAf (Lv.β i) ∈ hatV C.X.Λ :=
-    ((GlobalTheory.T.finiteAdelicLatticeTransport_laws D T.rank C.X.Λ ⟨C.X.Λ_fg, C.X.Λ_span⟩).1 (Lv.β i)).2 (Lv.β_mem i)
+    ((_root_.GlobalTheory.Ker.isMov_laws D T.rank C.X.Λ ⟨C.X.Λ_fg, C.X.Λ_span⟩).1 (Lv.β i)).2 (Lv.β_mem i)
   have hsum : (∑ j, (1 : Matrix (Fin T.rank) (Fin T.rank) (𝓞 D.host.E)) j i • Lv.β j) = Lv.β i := by
     simp [Matrix.one_apply]
   rw [hsum]

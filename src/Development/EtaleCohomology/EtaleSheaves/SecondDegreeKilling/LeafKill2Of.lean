@@ -1,6 +1,6 @@
 module
 
-public import Development.EtaleCohomology.EtaleSheaves.SecondDegreeKilling
+public import Development.EtaleCohomology.EtaleSheaves.Bundle0059
 public import Development.EtaleCohomology.EtaleSheaves.SecondDegreeKilling.HkpullComp
 
 @[expose] public section

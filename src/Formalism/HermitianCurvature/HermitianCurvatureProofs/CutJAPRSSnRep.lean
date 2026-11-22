@@ -1,7 +1,7 @@
 module
 
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutJAPRFinal
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutJASSnRepDone
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0295
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0296
 
 @[expose] public section
 

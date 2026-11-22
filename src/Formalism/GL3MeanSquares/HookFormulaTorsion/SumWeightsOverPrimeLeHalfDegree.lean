@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Formalism.GL3MeanSquares.RankMulPowThreeHalvesLeFourthPower
+public import Formalism.GL3MeanSquares.Bundle0005
 
 @[expose] public section
 

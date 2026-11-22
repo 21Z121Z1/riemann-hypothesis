@@ -3,8 +3,8 @@ module
 public import Mathlib
 public import Development.WeilBound.RepresentationTheoryGL.GaloisPermutationReps.SubquotientEquivalence.IsTypeMap
 public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ApplyMemTwKerOfNormalizer
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.IsCommensuratedKO
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SubsingletonJacquetOfPerm
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0204
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0034
 
 @[expose] public section
 

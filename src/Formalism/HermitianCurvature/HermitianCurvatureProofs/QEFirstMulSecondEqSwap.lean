@@ -1,9 +1,8 @@
 module
 
 public import Formalism.HermitianCurvature.StatementWd
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.FirstEmbeddingOne
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.PositionInsertionDiagonalCompat
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.SecondEmbedMulFirstEmbedApply
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0011
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0018
 
 @[expose] public section
 

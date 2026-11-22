@@ -1,6 +1,6 @@
 module
 
-public import Formalism.SharpRestriction.LevelLetterCocycles.FinalLevelsOf
+public import Formalism.SharpRestriction.LevelLetterCocycles.Bundle0027
 public import Formalism.SharpRestriction.LevelLetterCocycles.LevelKernelDetection.PfLvBasisCmp
 
 @[expose] public section

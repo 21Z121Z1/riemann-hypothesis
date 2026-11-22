@@ -2,7 +2,7 @@ module
 
 public import Development.WeilBound.ThetaLifts.CartanFactorisation.FockSecondActionMatrixUnitEq
 public import Development.WeilBound.ThetaLifts.Reductions.LocalPoly
-public import Development.WeilBound.ThetaLifts.Reductions.TensJoin
+public import Development.WeilBound.ThetaLifts.Reductions.Bundle0002
 public import Development.WeilBound.ThetaLifts.Reductions.JoinDef
 
 @[expose] public section

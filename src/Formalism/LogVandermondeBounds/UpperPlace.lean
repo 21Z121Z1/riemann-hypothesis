@@ -1,6 +1,6 @@
 module
 
-public import Formalism.LogVandermondeBounds.LogRatioUpperBound
+public import Formalism.LogVandermondeBounds.Bundle0002
 
 @[expose] public section
 

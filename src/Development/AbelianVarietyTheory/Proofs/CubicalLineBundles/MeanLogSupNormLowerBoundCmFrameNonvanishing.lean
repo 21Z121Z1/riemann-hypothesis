@@ -4,33 +4,32 @@ public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.CMLattices.IntegralOf
 public import Development.AbelianVarietyTheory.Statements.PrincipalLattices.ExistsPrincipalLattice
 public import Development.AbelianVarietyTheory.Definitions.RegularCharts.BaseNorm
-public import Formalism.LocalToGlobal.ProjectiveLattices.L2DefiniteCuspForms
-public import Formalism.LocalToGlobal.ProjectiveLattices.NonnegIffOfLiesTotal
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0023
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0021
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PullbackSections.NonemptyUnitAt
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.FundamentalDomains.NonvanishingNearMaximum
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.FundamentalDomains.IsotropicCoefficientSplitting
-public import Formalism.LocalToGlobal.CMDeterminantIdeals.CMIdealValuations.OneLeAbsNormOfLeOne
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.FundamentalDomains.Bundle0010
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.FundamentalDomains.Bundle0008
+public import Formalism.LocalToGlobal.CMDeterminantIdeals.CMIdealValuations.Bundle0001
 public import Formalism.LocalToGlobal.CMDeterminantIdeals.CMIdealValuations.ProdMulLeDetIdeal
 public import Formalism.LocalToGlobal.CMDeterminantIdeals.CMIdealValuations.ValuationLeOfEqAlgebraMap
 public import Formalism.LocalToGlobal.CMDeterminantIdeals.CMIdealValuations.AbsNormSpanGalois
-public import Formalism.LocalToGlobal.CMDeterminantIdeals.CMIdealValuations.DetValuationLeOne
+public import Formalism.LocalToGlobal.CMDeterminantIdeals.CMIdealValuations.Bundle0002
 public import Formalism.LocalToGlobal.CMDeterminantIdeals.CMIdealValuations.ExistsEvalNeZeroOfTotalDegreeLt
-public import Formalism.LocalToGlobal.CMDeterminantIdeals.CMIdealValuations.ExistsMonicIrreducibleCardGt
 public import Formalism.LocalToGlobal.CMDeterminantIdeals.CMIdealValuations.FiniteDetAddSmulOneEqZero
 public import Formalism.LocalToGlobal.CMDeterminantIdeals.CMIdealValuations.LargeResidueExtensionLemma
 public import Formalism.LocalToGlobal.CMDeterminantIdeals.CMIdealValuations.HermitianFormGramBlockBasis
 public import Formalism.LocalToGlobal.ProjectiveLattices.RosatiLatticeNorms.LinkNum
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.UniformisationConclusion
-public import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.ArchimedeanHypothesisLowerBoundCmPointStatement
-public import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.FramePolynomialEquivariantAndNeZeroStatement
-public import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.LocalLowerBoundCmPointFramePolynomialEveryPrimeStatement
-public import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.ExistsIsFramePolynomialOfRuleNumberFieldStatement
-public import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.ExistsGoodCmPointAtCmBasisFrameStatement
-public import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.CmPointLowerBoundFree
-public import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.LamDegStLogOm
-public import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.EqZeroOfPow
-public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.AllUniformizationLawsHold
-public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ThetaUniformisationComplexAbelianVariety
+public import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.ArchimedeanHypothesisLowerBoundCmPoint
+public import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.Bundle0062
+public import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.Bundle0068
+public import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.Bundle0064
+public import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.Bundle0067
+public import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.Bundle0066
+public import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.Bundle0060
+public import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.Bundle0038
+public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.Bundle0133
+public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.Bundle0132
 
 @[expose] public section
 
@@ -69,8 +68,8 @@ theorem meanLogSup_lowerBound : ∀ (E : Type) [Field E] [NumberField E] [IsCMFi
   have hU0 := hU _ hgood
   have hr : r = Dw.p + Dw.q := hU0.1
   have hFs : F ∈ sec Xo c a n := cusp_le_sec Xo c U a n hF
-  obtain ⟨z, σ₁, hz, hx⟩ := GlobalTheory.T.exists_good_cmPoint_at_cmBasis_frame E H Dw l Xo c hstar r _ hU0 (by omega) k x₀ Xx hX 𝔄 h𝔄 hΛ La lam hB
-  obtain ⟨G, hG⟩ := GlobalTheory.T.exists_isFramePolynomialOfRule_numberField E H Dw l Xo c z.K z.y a n F hFs
+  obtain ⟨z, σ₁, hz, hx⟩ := _root_.GlobalTheory.LamT.exists_good_cmPt_at_frame E H Dw l Xo c hstar r _ hU0 (by omega) k x₀ Xx hX 𝔄 h𝔄 hΛ La lam hB
+  obtain ⟨G, hG⟩ := _root_.GlobalTheory.LamT.exists_isFrPoly E H Dw l Xo c z.K z.y a n F hFs
   have hev : evR Xo c F ((U c.F.val.toRingHom).un k x₀) ≠ 0 := by
     intro h0
     apply hne
@@ -78,9 +77,9 @@ theorem meanLogSup_lowerBound : ∀ (E : Type) [Field E] [NumberField E] [IsCMFi
       toC (evR Xo c F ((U c.F.val.toRingHom).un k ⟨x₀.1, h⟩)) else 0) = 0
     rw [dite_eq_left x₀.2]
     exact h0
-  have hG0 : G ≠ 0 := (GlobalTheory.T.framePolynomial_equivariant_and_ne_zero E H Dw l Xo c z.K z.y a n F hFs G hG).2 _ σ₁ _ hx hev
-  have hloc := GlobalTheory.T.localLowerBound_cmPoint_framePolynomial_every_prime E H Dw l Xo c z _ La hz a n F hFs hint G hG
-  have harch := GlobalTheory.T.archimedeanHypothesis_lowerBound_cmPoint E H Dw l Xo c r U ξ hU hξ hpq z _ La hz a n hd F hF G hG
+  have hG0 : G ≠ 0 := (_root_.GlobalTheory.LamT.isFrPoly_equiv_and_ne_zero E H Dw l Xo c z.K z.y a n F hFs G hG).2 _ σ₁ _ hx hev
+  have hloc := _root_.GlobalTheory.LamT.LocClause.step5Loc_cmPt E H Dw l Xo c z _ La hz a n F hFs hint G hG
+  have harch := _root_.GlobalTheory.LamT.step5Arch_cm E H Dw l Xo c r U ξ hU hξ hpq z _ La hz a n hd F hF G hG
   obtain ⟨hGood, hL, -⟩ := hz
   have hdeg := LamF.lamDegSt_logOm GlobalTheory.thetaUnifAV_all GlobalTheory.firstFiveLaws.1 E H χ hχ l c hstar _ _ _ z.obj La hGood
   have hdet := LamF.Ind.lamInd E H l c hstar _ _ _ z.obj La hGood z.letters hL

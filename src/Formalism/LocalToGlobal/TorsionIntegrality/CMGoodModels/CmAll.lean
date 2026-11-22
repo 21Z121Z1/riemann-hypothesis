@@ -1,18 +1,17 @@
 module
 
 public import Formalism.LocalToGlobal.TorsionIntegrality.CMGoodModels.CM4
-public import ReciprocityTheory.ReductiveGroups.UnramifiedIntegrals.IsIntegralOfRoot
-public import ReciprocityTheory.ReductiveGroups.UnramifiedIntegrals.TorStatus
+public import ReciprocityTheory.ReductiveGroups.UnramifiedIntegrals.Bundle0015
+public import ReciprocityTheory.ReductiveGroups.UnramifiedIntegrals.Bundle0029
 public import ReciprocityTheory.ReductiveGroups.UnramifiedIntegrals.FgStatus
-public import ReciprocityTheory.ReductiveGroups.UnramifiedIntegrals.RedStatus
+public import ReciprocityTheory.ReductiveGroups.UnramifiedIntegrals.Bundle0034
 public import Mathlib
-public import ReciprocityTheory.ReductiveGroups.UnramifiedIntegrals.ModJInt
+public import ReciprocityTheory.ReductiveGroups.UnramifiedIntegrals.Bundle0016
 public import ReciprocityTheory.ReductiveGroups.UnramifiedIntegrals.ModGDefs
-public import ReciprocityTheory.ReductiveGroups.UnramifiedIntegrals.Interface
-public import ReciprocityTheory.ReductiveGroups.UnramifiedIntegrals.ModGBasic
-public import ReciprocityTheory.ReductiveGroups.UnramifiedIntegrals.ModFixJ
-public import ReciprocityTheory.ReductiveGroups.UnramifiedIntegrals.ModInertKur
-public import ReciprocityTheory.ReductiveGroups.UnramifiedIntegrals.FgClose
+public import ReciprocityTheory.ReductiveGroups.UnramifiedIntegrals.Bundle0002
+public import ReciprocityTheory.ReductiveGroups.UnramifiedIntegrals.Bundle0007
+public import ReciprocityTheory.ReductiveGroups.UnramifiedIntegrals.Bundle0018
+public import ReciprocityTheory.ReductiveGroups.UnramifiedIntegrals.Bundle0026
 
 @[expose] public section
 

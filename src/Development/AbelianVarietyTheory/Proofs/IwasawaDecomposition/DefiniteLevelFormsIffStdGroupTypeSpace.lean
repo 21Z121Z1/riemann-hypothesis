@@ -1,8 +1,9 @@
 module
 
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.DatVtEq
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.MemRationalGLOfUnitaryGroupGramUnitGram
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.StdFrameLevelSubgroupBoundedOpenHyperspecialStatement
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0357
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0373
+public import Mathlib
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.StdFrameLevelSubgroupBoundedOpenHyperspecial
 
 @[expose] public section
 
@@ -271,7 +272,7 @@ theorem cutSp_iff_typeSp : ∀ (D : D7) (V : HSp D) (hr : D.R.r ≤ V.rank) (Pg 
   constructor
   · intro hF
     refine ⟨⟨fun γ g => fwd_rat hR hF.1 γ g, ?_⟩, fun κ => funext fun g => fwd_law hg hU red hred hF.2 κ.1 κ.2 g⟩
-    have hC := (GlobalTheory.T.stdFrameLevelSubgroup_bounded_open_hyperspecial D V.rank (datV D V.rank hr Pg Q (levPOf eG D.what₂.embLL P₀ ψ₀) chi xi)).2.1
+    have hC := (_root_.GlobalTheory.MtIn.OpenLev.stdJ_open D V.rank (datV D V.rank hr Pg Q (levPOf eG D.what₂.embLL P₀ ψ₀) chi xi)).2.1
     refine ⟨hC.choose, hC.choose_spec.1, fun κ hκ g => ?_⟩
     have hC' := hC.choose_spec.2 κ hκ
     refine (fwd_law hg hU red hred hF.2 κ hC'.1 g).trans ?_

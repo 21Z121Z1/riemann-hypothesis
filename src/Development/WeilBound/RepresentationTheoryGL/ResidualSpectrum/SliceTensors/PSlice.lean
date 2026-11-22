@@ -1,6 +1,6 @@
 module
 
-public import Development.WeilBound.RepresentationTheoryGL.ResidualSpectrum.SliceTensors.PSliceE
+public import Development.WeilBound.RepresentationTheoryGL.ResidualSpectrum.SliceTensors.Bundle0011
 public import Development.WeilBound.RepresentationTheoryGL.ResidualSpectrum.SliceTensors.PSliceF
 
 @[expose] public section

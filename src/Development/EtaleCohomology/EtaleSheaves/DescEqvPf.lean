@@ -1,8 +1,8 @@
 module
 
-public import Development.EtaleCohomology.EtaleSheaves.ClsBiprodEqZero
-public import Development.EtaleCohomology.EtaleSheaves.LeafCover2Of
-public import Development.EtaleCohomology.EtaleSheaves.LeafKunEmptyPf
+public import Development.EtaleCohomology.EtaleSheaves.Bundle0035
+public import Development.EtaleCohomology.EtaleSheaves.Bundle0012
+public import Development.EtaleCohomology.EtaleSheaves.Bundle0003
 
 @[expose] public section
 

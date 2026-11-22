@@ -1,23 +1,23 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.RangeSndRel
-public import Development.AbelianVarietyTheory.Definitions.Divisors.DiscreteSeriesHermitianUnique
-public import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.CuspAlongSmoothRows
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0432
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0041
+public import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.Bundle0015
 public import Development.AbelianVarietyTheory.Statements.HeckeThetaIntegrals.ThetaIntegralsAgree
 public import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.WeilTensorModels
-public import Development.AbelianVarietyTheory.Proofs.HeightProofs.ExistsAllTiedNotStable
-public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.DiscreteSeriesHermitianUniqueOfClassification
-public import Development.AbelianVarietyTheory.BlockTheory.HeightDefect.FinitePartTypes
-public import Development.AbelianVarietyTheory.Proofs.HeightProofs.AutomorphicFormUniformLimitDiscreteSeriesSeriesStatement
-public import Formalism.LocalToGlobal.IndefiniteReal.MultLemmas
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsSumOfMemMultSpan
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IsLocSubLocGen
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.DifferentiableOneP
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.AutomorphicTypeFiniteDimStable
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SubmodulePowSimpleEqSumEquivValuesStatement
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.DiscreteSeriesModelKFinite
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.RealPlacesDistinctTranslationsDerivativesCommuteStatement
+public import Development.AbelianVarietyTheory.Proofs.HeightProofs.Bundle0069
+public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.Bundle0003
+public import Development.AbelianVarietyTheory.BlockTheory.HeightDefect.Bundle0005
+public import Development.AbelianVarietyTheory.Proofs.HeightProofs.Bundle0067
+public import Formalism.LocalToGlobal.IndefiniteReal.Bundle0020
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0440
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0458
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0161
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0452
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0013
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0453
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0486
 
 @[expose] public section
 
@@ -33,7 +33,7 @@ theorem sub_pow_sum : ∀ {P : Type} [AddCommGroup P] [Module ℂ P] {ι : Type}
     (∀ B : Submodule ℂ P, (∀ i, ∀ p ∈ B, a i p ∈ B) → B ≠ ⊥ → B = ⊤) →
     ∀ (m : ℕ) (N : Submodule ℂ (Fin m → P)), (∀ i, ∀ y ∈ N, (fun j => a i (y j)) ∈ N) →
     ∀ y ∈ N, ∃ (n : ℕ) (Sm : Fin n → (P →ₗ[ℂ] (Fin m → P))) (q : Fin n → P),
-      (∀ l i p, Sm l (a i p) = fun j => a i (Sm l p j)) ∧ (∀ l p, Sm l p ∈ N) ∧ y = ∑ l, Sm l (q l) := GlobalTheory.T.exists_sum_intertwined_of_mem_invariant_submodule
+      (∀ l i p, Sm l (a i p) = fun j => a i (Sm l p j)) ∧ (∀ l p, Sm l p ∈ N) ∧ y = ∑ l, Sm l (q l) := _root_.GlobalTheory.submodule_pow_simple_eq_sum_equiv_values
 
 theorem place_comm : ∀ {D : D7} (θ : D.what₂.Tau → (Ainf D.host.F ⊗[D.host.F] D.host.E →+* ℂ)) (V : HSp D),
     IsInfFam (D := D) θ → ∀ τ τ' : D.what₂.Tau, τ ≠ τ' →

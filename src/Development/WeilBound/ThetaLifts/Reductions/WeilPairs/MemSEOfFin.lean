@@ -2,14 +2,14 @@ module
 
 public import Mathlib
 public import Development.WeilBound.ThetaLifts.Reductions.WeilPairs.EtaDef
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsUnitaryHeckeCharacterExtendingBaseCharacte
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsCongruenceKernelIdeleCharacterTrivialAtInf
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MemTensorCongruenceOfSupportedAtInfinity
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1103
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1025
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1039
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsHalfAbstract
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnitEqNormCompletionTensorOfIsInertAt
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsFieldCompletionTensorOfIsInertAtStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PlaceSplitOrInertStatement
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.MemNormGroupIffEverywhereNorm
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1246
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1247
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0167
 
 @[expose] public section
 

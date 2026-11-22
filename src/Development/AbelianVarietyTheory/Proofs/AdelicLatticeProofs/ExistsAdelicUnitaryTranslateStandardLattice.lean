@@ -1,10 +1,10 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.AdelicHermitianForms.IsHermForm
-public import Formalism.LocalToGlobal.ProjectiveLattices.ThClass
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.AdelicCompletionRationalPointsAndApproximation
-public import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.ExistsUnitaryOfSelfDual
+public import Development.AbelianVarietyTheory.Definitions.AdelicHermitianForms.Bundle0002
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0026
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0017
+public import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.Bundle0046
 
 @[expose] public section
 

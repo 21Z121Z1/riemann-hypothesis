@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.FourierMatch
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ConjTransposeVecMulVecSelf
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsCompactIntMatrix
+public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0001
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0052
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0063
 
 @[expose] public section
 

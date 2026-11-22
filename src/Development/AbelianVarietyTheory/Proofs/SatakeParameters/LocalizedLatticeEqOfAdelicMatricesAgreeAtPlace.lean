@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.UnderTie
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.PrimeLocalizationCompanionLatticeEqOfLocalizatioStatement
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.AdelicMatrixOneAtPlaceScaledPreservesCompletedLaStatement
+public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.Bundle0023
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0263
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0261
 
 @[expose] public section
 

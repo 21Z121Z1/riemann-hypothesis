@@ -1,24 +1,25 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Divisors.IsGaloisCover
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0025
 public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.OmegaPullOmegaTraceOfSecTraceOne
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExistsHodgeCohomologyEquivCechDifferentials
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExistsFiniteCoverProjSpaceReducedFibreOriginStatement
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExistsChartLiftOfFiniteCover
+public import Development.AutomorphicArithmetic.Foundations.EtaleClopenDescent.ExistsHodgeCohomologyEquivCechDifferentials
+public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.SortSign
+public import Development.AbelianVarietyTheory.Proofs.CoherentCohomologyProofs.CechModulesFunctorShortExactOfIsAffineOpen
+public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.Bundle0006
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0365
+public import Development.AbelianVarietyTheory.Definitions.Divisors.IsAffCoverSpec
+public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.ToPtIdPtBijective
 public import Development.AutomorphicArithmetic.Foundations.EtaleClopenDescent.EFam
-public import Development.AutomorphicArithmetic.Foundations.EtaleClopenDescent.IsSeparatedOfProj
+public import Development.AutomorphicArithmetic.Foundations.EtaleClopenDescent.Bundle0012
 public import Development.AutomorphicArithmetic.Foundations.EtaleClopenDescent.IsIntegralRBIff
-public import Development.AutomorphicArithmetic.CommutativeAlgebra.FiniteDimensionalHodgeCohomologyOfSmoothProj
-public import Development.AutomorphicArithmetic.CommutativeAlgebra.EtaleCorrespondenceSectionsStatement
-public import Development.AutomorphicArithmetic.CommutativeAlgebra.ComplexPointsBijectiveAlgHomAffineOpen
-public import Development.AutomorphicArithmetic.CommutativeAlgebra.ComplexPointEvalPullbackSection
+public import Development.AutomorphicArithmetic.CommutativeAlgebra.Bundle0044
+public import Development.AutomorphicArithmetic.CommutativeAlgebra.Bundle0060
+public import Development.AutomorphicArithmetic.CommutativeAlgebra.Bundle0059
 public import Development.AutomorphicArithmetic.CommutativeAlgebra.EtaleCorrespondenceComplexPointsStatement
-public import Development.AutomorphicArithmetic.CommutativeAlgebra.EtaleCorrespondenceDifferentialsStatement
-public import Development.AutomorphicArithmetic.CommutativeAlgebra.EtaleCorrespondenceFieldExtensionStatement
 public import Development.AutomorphicArithmetic.CommutativeAlgebra.ExistsRegularParametersOfReducedQuotient
 public import Development.AutomorphicArithmetic.CommutativeAlgebra.EtaleCorrespondenceLocalParametersStatement
-public import Development.AutomorphicArithmetic.CommutativeAlgebra.EtaleCorrespondenceFamilyStatement
+public import Development.AutomorphicArithmetic.CommutativeAlgebra.Bundle0061
 
 @[expose] public section
 
@@ -105,7 +106,7 @@ theorem UpperTheory.Cb.holomorphic_lefschetz_finiteEtale_integral :
       (Y.presheaf.germ (c1 ⁻¹ᵁ V) (genericPoint Y) hV').hom ((c1.app V).hom g) =
         algebraMap Z.functionField Y.functionField ((Z.presheaf.germ V (genericPoint Z) hV).hom g) :=
     fun V hV hV' g => (hψ V hV hV' g).symm
-  obtain ⟨F, x, U, hx, hU, hred, hS⟩ := GlobalTheory.T.exists_finiteCover_projSpace_reduced_fibre_origin Z s d rfl hP (Fx.image (UpperTheory.A.zpt c1 h1))
+  obtain ⟨F, x, U, hx, hU, hred, hS⟩ := _root_.GlobalTheory.PD.FibRed.exists_finCover_fibre_reduced Z s d rfl hP (Fx.image (UpperTheory.A.zpt c1 h1))
   letI : Algebra F Y.functionField := ((algebraMap Z.functionField Y.functionField).comp (algebraMap F Z.functionField)).toAlgebra
   haveI : @IsScalarTower F Z.functionField Y.functionField Algebra.toSMul Algebra.toSMul Algebra.toSMul := IsScalarTower.of_algebraMap_eq fun _ => rfl
   haveI : @IsScalarTower ℂ F Y.functionField Algebra.toSMul Algebra.toSMul Algebra.toSMul := IsScalarTower.of_algebraMap_eq fun c => by
@@ -207,7 +208,7 @@ theorem UpperTheory.Cb.holomorphic_lefschetz_finiteEtale_integral :
         (Matrix.det (1 + (Polynomial.X : Polynomial ℂ) • (A y.1).map Polynomial.C)).coeff a := fun y => by
     obtain ⟨P, hPu, hPe⟩ := hconj y
     exact UpperTheory.A.conj_inv (A y.1) (A' (ef y)) P hPu hPe a
-  obtain ⟨E, nP, nT⟩ := GlobalTheory.T.exists_hodge_cohomology_equiv_cech_differentials
+  obtain ⟨E, nP, nT⟩ := _root_.UpperTheory.Cb.exists_hodge_cohomology_equiv_cech_differentials
   have key := GlobalTheory.T.exists_chart_lift_of_finite_cover d a F Z.functionField Y.functionField x j2 hx hxY
     (UpperTheory.etaleCorrespondence_sections_statement d Z Y s s' hP c1 c2 h1 h2 rfl rfl g1 j2 g2 F x U hx hU) hredY
     (by

@@ -1,13 +1,13 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Jets.IsSelfOf
+public import Development.AbelianVarietyTheory.Definitions.Jets.Bundle0003
 public import Development.AbelianVarietyTheory.Definitions.Jets.TwoPlaces
 public import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.AdjointEndPairMemGaugedCurveLogarithms
 public import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.ExistsNotMemForallMem
-public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.MvPowerSeriesLthPowerOfPderivVanishModMaximalStatement
-public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.IntegralSmulCurveCoeffSeriesOfChartHOfLinearLogStatement
-public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.FormalGroupCocycleLthPowerCoboundaryModMaximalStatement
+public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0132
+public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0135
+public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.FormalGroupCocycleLthPowerCoboundaryModMaximal
 
 @[expose] public section
 
@@ -332,7 +332,7 @@ theorem tangent_mm_of_nonDeg : ∀ (C : Type) [Field C] (V : VF C) (d : ℕ) [Ne
       · rw [PowerSeries.coeff_smul, tl, hx1 c, smul_zero]
       · exact map_zero _
   obtain ⟨hbi, hbd⟩ := GlobalTheory.T.integral_smul_curveCoeffSeriesOfChartH_of_linear_log C V d I κ Y H γ hγ hlow
-  obtain ⟨hci, hcb⟩ := GlobalTheory.T.formalGroupCocycle_lthPower_coboundary_mod_maximal C V d I κ Y H γ hγ hlow
+  obtain ⟨hci, hcb⟩ := _root_.GlobalTheory.CocyclePow.cocycle_pow_coboundary C V d I κ Y H γ hγ hlow
   have hcob := cob_root H hci hbi (hbd (sg_all H hP hγ h1 hq)) hcb
   have htan : ∀ i, V.MM (PowerSeries.coeff 1 (γ i)) := by
     by_contra hne

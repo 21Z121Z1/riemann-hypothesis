@@ -4,9 +4,9 @@ public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.FlagPairDefinitePartLattice
 public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.ChartGen
 public import Development.AbelianVarietyTheory.PublishedTheorems.DiscreteSeriesUnitary₂.MaxMass
-public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.NormalFormDualOrthogonalLast
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.IsLocalizedModuleSubtype
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.MemOfForall
+public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.Bundle0004
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0096
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0100
 
 @[expose] public section
 

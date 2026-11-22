@@ -1,18 +1,18 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.FinIso
+public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0020
 public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.RingSpecNormalisedCharacterEq
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.RecProdRecSatakeLL
-public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.StandardCosocleGL
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0690
+public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.Bundle0008
 public import Formalism.SharpRestriction.LevelLetterCocycles.SphericalInertData
 public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.ContinuousMapPFin
 public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.DefiniteUnitaryClassSetFinite
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SpanRepMatrixEqTopOfAbsIrreducible
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsAdelicExtensionOfAlgebraicWeightDefiniteUnStatement
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsFinitePartMulDefiniteUnitaryInfinitePointStatement
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsUnitaryRationalMatrixOfFirstPresentationPoStatement
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsOpenNhdOneInUnitaryPrincipalCongruenceStatement
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0463
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0727
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0710
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0709
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0717
 
 @[expose] public section
 
@@ -161,7 +161,7 @@ theorem isAutFormU_phi (hfin : ∀ k ∈ finU (E := L) (n := n), R k = 1)
     change lam (R g⁻¹ (f (fy F g0))) = lam (R g⁻¹ (f (fy F g)))
     rw [e, hOf _ hg]
   · intro γ hγ g
-    obtain ⟨γQ, γ₀, h1, h2, h3⟩ := GlobalTheory.T.exists_finite_part_mul_definite_unitary_infinite_point L n F γ hγ
+    obtain ⟨γQ, γ₀, h1, h2, h3⟩ := _root_.GlobalTheory.RatFinPart.exists_gq_mul_infU L n F γ hγ
     have hy : fy F γ = γQ := by
       have := fy_mul F (γ * (F.j γQ)⁻¹) (F.j γQ)
       rw [inv_mul_cancel_right, fy_inf F h3, fy_j, one_mul] at this
@@ -278,7 +278,7 @@ theorem dict_span [FiniteDimensional ℂ W] (hρ : ρ.IsIrreducible) (S : Submod
       have htop : Submodule.span ℂ (Set.range ρ) ≤ W'.comap T := by
         rw [Submodule.span_le]
         rintro _ ⟨γQ, rfl⟩
-        obtain ⟨γ, γ₀, h1, h2⟩ := GlobalTheory.T.exists_unitary_rational_matrix_of_first_presentation_point L n γQ
+        obtain ⟨γ, γ₀, h1, h2⟩ := _root_.GlobalTheory.RatPtsBridge.exists_ratGL L n γQ
         have hx : γ * (fpt γ)⁻¹ ∈ infU L n := by
           change GeneralLinearGroup.map (pFin L) (γ * (fpt γ)⁻¹).1 = 1
           rw [Subgroup.coe_mul, Subgroup.coe_inv, map_mul, map_inv]

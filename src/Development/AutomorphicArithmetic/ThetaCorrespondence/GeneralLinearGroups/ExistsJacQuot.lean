@@ -1,13 +1,13 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicArithmetic.ThetaCorrespondence.GeneralLinearGroups.FirstIn
+public import Development.AutomorphicArithmetic.ThetaCorrespondence.GeneralLinearGroups.Bundle0001
 public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.ExistsCellOfIsSubquotient
-public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.HasFiniteLengthOfIsIrreducible
-public import Development.AutomorphicSpectrum.Proofs.GlobalProofs.LanglandsClassificationCuspidalSupport
+public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.Bundle0001
+public import Development.AutomorphicSpectrum.Proofs.GlobalProofs.Bundle0043
 public import Development.AutomorphicSpectrum.Proofs.GlobalProofs.LanglandsDistinctCuspidalPairEmbedding
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CuspidalMultiplicityProductZero
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExistsEmbeddingParIndOfJacquetNontrivial
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0595
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0189
 public import GroundTheory.AutomorphicForms.CuspidalSplittingIsotypic
 
 @[expose] public section
@@ -245,7 +245,7 @@ theorem exists_jac_quot (hBZ : GlobalTheory.Published.BernsteinZelevinskyFiniten
         simp [ψ]
       · simp [ψ, Pi.mulSingle_eq_of_ne ha]⟩
   have h3 : (piTensor fun a => (q a).rep).IsIrreducible :=
-    GlobalTheory.T.piExteriorTensor_smoothIrreducible_isIrreducible hBZ k (Fin s) (fun a => Fin (q a).1) fun a => (q a).2.rep
+    _root_.GlobalTheory.ExtTensorIrr.piTensor_isIrreducible hBZ k (Fin s) (fun a => Fin (q a).1) fun a => (q a).2.rep
   have h4 : ∀ z ∈ Subgroup.center (GL (Fin (q i).1) k), ∀ y, (piTensor fun a => (q a).rep) (ψ z) y = c z • y := by
     intro z hz y
     have h1 := GlobalTheory.CompanionTheory.Hypotheses₂.TDSwap.piTensor_scalar (fun a => (q a).rep) (ψ z)
@@ -279,7 +279,7 @@ theorem exists_emb (hG : GlobalTheory.Published.GeometricLemma) (hBZ : GlobalThe
   obtain ⟨φ, hφ⟩ := h1
   obtain ⟨σ, hσ⟩ := h2
   have hirr : (piTensor fun a => (σ a).π).IsIrreducible :=
-    GlobalTheory.T.piExteriorTensor_smoothIrreducible_isIrreducible hBZ k (Fin s) (fun a => Fin (q a).1) fun a => (σ a).toIrrRep
+    _root_.GlobalTheory.ExtTensorIrr.piTensor_isIrreducible hBZ k (Fin s) (fun a => Fin (q a).1) fun a => (σ a).toIrrRep
   have h3 := hσ.nonempty_equiv hν hirr
   obtain ⟨ε⟩ := h3
   have h4 : IsSubquotient (q i).rep (σ i).π :=

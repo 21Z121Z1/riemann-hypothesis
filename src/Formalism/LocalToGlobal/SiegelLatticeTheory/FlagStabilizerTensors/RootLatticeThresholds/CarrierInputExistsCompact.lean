@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Formalism.LocalToGlobal.SiegelLatticeTheory.FlagStabilizerTensors.RootLatticeThresholds.CarrierPOfRepairedModel
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.RealInputsClosedCompactSupportOf
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0098
 public import Formalism.HermitianCurvature.HermitianCurvatureProofs.PositiveDensityCompactSupport
 
 @[expose] public section

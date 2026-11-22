@@ -1,9 +1,9 @@
 module
 
 public import Development.WeilBound.CoreStatements.VolumeEquality.BaseUnifGood
-public import Development.WeilBound.CoreStatements.VolumeEquality.BaseUnifEx2
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.RingOfIntegersHomInjective
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.InducedModelMorphismCompStructureMap
+public import Development.WeilBound.CoreStatements.VolumeEquality.Bundle0006
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0111
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0096
 public import Development.AbelianVarietyTheory.Statements.HyperbolicHypotheses.HypothesesInhabitedHyperbolic
 
 @[expose] public section

@@ -1,7 +1,6 @@
 module
 
-public import Formalism.LocalToGlobal.HermitianColumns.StepLevelQ
-public import Formalism.LocalToGlobal.HermitianColumns.CoordinateLatticeSelfDual
+public import Formalism.LocalToGlobal.HermitianColumns.Bundle0001
 public import Formalism.LocalRingCardinality.RhoDetPrimeEqMuTildeMulChiPow
 
 @[expose] public section

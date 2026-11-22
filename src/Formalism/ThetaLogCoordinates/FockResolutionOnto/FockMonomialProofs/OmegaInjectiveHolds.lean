@@ -2,8 +2,7 @@ module
 
 public import Formalism.ThetaLogCoordinates.FockResolutionOnto.StatementD
 public import Formalism.ThetaLogCoordinates.FockResolutionOnto.FockMonomialProofs.RaisingKeepsEarlyLetters
-public import Formalism.ThetaLogCoordinates.FockResolutionOnto.FockMonomialProofs.Sl2RaisePowSuccLowerApplyEq
-public import Formalism.ThetaLogCoordinates.FockResolutionOnto.FockMonomialProofs.EArith
+public import Formalism.ThetaLogCoordinates.FockResolutionOnto.FockMonomialProofs.Bundle0001
 public import Formalism.ThetaLogCoordinates.FockResolutionOnto.FockMonomialProofs.TypesLELeYcondC
 
 @[expose] public section

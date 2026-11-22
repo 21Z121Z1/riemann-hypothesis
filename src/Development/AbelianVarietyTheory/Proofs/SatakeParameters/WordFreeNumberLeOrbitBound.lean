@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.StdBases
-public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.BeData
+public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.Bundle0010
+public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.Bundle0011
 public import Formalism.LocalRingCardinality.CoeNeZeroOfNotMem
 public import Formalism.LocalToGlobal.TorsionIntegrality.GaussSumParity.StatementB
 public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.OrbitValuationBounds.SummableTruncatedGeometric

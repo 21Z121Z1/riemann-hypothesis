@@ -1,14 +1,14 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.RankWeightComponentEq
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0670
 public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.DefiniteThetaLiftLocalVector
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.NsmulProjectionXColumnsMemSelfDualLattice
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.GramMapMulInv
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0582
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0198
 public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.PadOneMemSecondBlockTriangular
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.TameHeckeIntegralUnitsEqResidueCharProduct
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.AdjointFrameMatrixAddIntegralReduction
-public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.RealIdemMulOfReal
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0449
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0155
+public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.Bundle0061
 
 @[expose] public section
 

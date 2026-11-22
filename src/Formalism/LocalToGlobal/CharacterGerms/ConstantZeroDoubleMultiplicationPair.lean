@@ -1,6 +1,6 @@
 module
 
-public import Formalism.LocalToGlobal.CharacterGerms.RankMaximalOfNondegenerateOfUnitSeriesIntegral
+public import Formalism.LocalToGlobal.CharacterGerms.Bundle0024
 public import Formalism.LocalToGlobal.CharacterGerms.RowTiePGerm
 
 @[expose] public section

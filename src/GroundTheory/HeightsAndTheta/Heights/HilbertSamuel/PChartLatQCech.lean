@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsChartLatQCech
+public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0061
 public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PGenOnFibres
 public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PZeroCocycleSection
 

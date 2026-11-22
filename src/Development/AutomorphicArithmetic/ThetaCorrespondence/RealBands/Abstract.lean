@@ -2,13 +2,9 @@ module
 
 public import Mathlib
 public import Development.AutomorphicArithmetic.ThetaCorrespondence.RealBands.IsBand
-public import Development.AutomorphicArithmetic.ThetaCorrespondence.RealBands.ConvEig
-public import Development.AutomorphicArithmetic.ThetaCorrespondence.RealBands.ConvAssoc
-public import Development.AutomorphicArithmetic.ThetaCorrespondence.RealBands.BandCc
+public import Development.AutomorphicArithmetic.ThetaCorrespondence.RealBands.Bundle0001
 public import Development.AutomorphicArithmetic.ThetaCorrespondence.RealBands.KillsOfIdem
-public import Development.AutomorphicArithmetic.ThetaCorrespondence.RealBands.BandKill
-public import Development.AutomorphicArithmetic.ThetaCorrespondence.RealBands.Unfold
-public import Development.AutomorphicArithmetic.ThetaCorrespondence.RealBands.EqZeroOfTest
+public import Development.AutomorphicArithmetic.ThetaCorrespondence.RealBands.Bundle0002
 
 @[expose] public section
 

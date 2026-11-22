@@ -1,8 +1,6 @@
 module
 
-public import Development.AutomorphicArithmetic.ThetaCorrespondence.CrystallineComparison.ZeroEquiv
-public import Development.AutomorphicArithmetic.ThetaCorrespondence.CrystallineComparison.Zt2
-public import Development.AutomorphicArithmetic.ThetaCorrespondence.CrystallineComparison.Zt3
+public import Development.AutomorphicArithmetic.ThetaCorrespondence.CrystallineComparison.Bundle0003
 
 @[expose] public section
 

@@ -4,7 +4,7 @@ public import Mathlib
 public import GroundTheory.GlobalFields.TateThesis.RayClassDensity
 public import GroundTheory.GlobalFields.GlobalReciprocity.General
 public import GroundTheory.GlobalFields.GlobalReciprocity.Frobenius
-public import GroundTheory.GlobalFields.NormResidueSymbol.Surjective
+public import GroundTheory.GlobalFields.NormResidueSymbol.Bundle0001
 public import GroundTheory.GlobalFields.KummerTheory.Splitting
 
 @[expose] public section

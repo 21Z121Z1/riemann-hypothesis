@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Proofs.GlobalProofs.IsSmoothVec
-public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.IwasawaMeasureExistence.NormExpSubOneSubLe
+public import Development.AutomorphicSpectrum.Proofs.GlobalProofs.Bundle0031
+public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.IwasawaMeasureExistence.Bundle0003
 public import GroundTheory.HeightsAndTheta.Theta.EisensteinZeta.MirabolicInduction.HsInnerSelfEqSumSq
 
 @[expose] public section

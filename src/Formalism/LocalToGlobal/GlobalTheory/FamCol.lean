@@ -5,10 +5,10 @@ public import Formalism.SharpRestriction.GlobalSchurBounds.QuadraticLogDerivCong
 public import Formalism.LocalRingCardinality.Lemmas
 public import Formalism.SizeWindowBrackets.Chain2aCoreNoAnalytic
 public import Formalism.SizeWindowBrackets.ChainSlopeWindows.PChain
-public import Formalism.SizeWindowBrackets.ClaimGaFree
-public import Formalism.SizeWindowBrackets.QuotientSlopeBoundsWith
-public import Formalism.SizeWindowBrackets.FrameTraceRatioFinEquiv
-public import Formalism.SizeWindowBrackets.SlopesHypothesisFinitePlaces
+public import Formalism.SizeWindowBrackets.Bundle0001
+public import Formalism.SizeWindowBrackets.Bundle0002
+public import Formalism.SizeWindowBrackets.Bundle0004
+public import Formalism.SizeWindowBrackets.Bundle0003
 public import Formalism.SizeWindowBrackets.ChainSlopeWindows.WeightedSlopeExcessDecomposition
 public import Formalism.SizeWindowBrackets.ChainSlopeWindows.LevelOfCongruence
 public import Formalism.SizeWindowBrackets.ChainSlopeWindows.JointDModelAppliesUnitLattice
@@ -21,8 +21,7 @@ public import Formalism.HarderNarasimhan.HarderNarasimhanProofs.SlopeIneqMean
 public import Formalism.HarderNarasimhan.HarderNarasimhanProofs.HtGram
 public import Formalism.HarderNarasimhan.HarderNarasimhanProofs.PolygonSlopeSum
 public import Formalism.HarderNarasimhan.HarderNarasimhanProofs.SizeMu
-public import Formalism.SizeWindowBrackets.ErrorFormsWeakWindowsFalse
-public import Formalism.LogVandermondeBounds.LogRatioUpperBound
+public import Formalism.LogVandermondeBounds.Bundle0002
 public import Formalism.SizeWindowBrackets.SlopesFromSizeAndCount
 
 @[expose] public section

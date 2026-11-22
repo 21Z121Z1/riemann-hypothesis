@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import GroundTheory.ProfiniteCohomology.GlobalClassFormation.IdeleLimits.LevelsColimit
-public import GroundTheory.ProfiniteCohomology.GlobalClassFormation.IdeleLimits.LevelsTrans
+public import GroundTheory.ProfiniteCohomology.GlobalClassFormation.IdeleLimits.Bundle0001
 
 @[expose] public section
 

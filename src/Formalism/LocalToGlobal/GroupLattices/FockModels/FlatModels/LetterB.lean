@@ -1,6 +1,6 @@
 module
 
-public import Formalism.LocalToGlobal.GroupLattices.FockModels.FlatModels.Letter
+public import Formalism.LocalToGlobal.GroupLattices.FockModels.FlatModels.Bundle0001
 
 @[expose] public section
 

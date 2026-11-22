@@ -1,6 +1,6 @@
 module
 
-public import Development.WeilBound.CoreStatements.SesquilinearFractions.PrincipalRootReZeroImSq
+public import Development.WeilBound.CoreStatements.SesquilinearFractions.Bundle0012
 
 @[expose] public section
 

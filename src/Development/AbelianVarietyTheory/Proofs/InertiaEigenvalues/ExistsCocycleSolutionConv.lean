@@ -2,11 +2,11 @@ module
 
 public import Mathlib
 public import Formalism.LocalRingCardinality.RhoDetPrimeEqMuTildeMulChiPow
-public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.NotFullBot
-public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.ConvZero
+public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0004
+public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0005
 public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CyclotomicFrobeniusSystemContinuationOpenDisc
 public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsInvariantBasisConvergingOpenDisc
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.RingsCyclotomic
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0285
 
 @[expose] public section
 

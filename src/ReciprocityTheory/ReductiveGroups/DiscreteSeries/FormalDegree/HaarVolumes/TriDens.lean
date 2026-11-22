@@ -1,6 +1,6 @@
 module
 
-public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.FormalDegree.VolUFactProdMulLe
+public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.FormalDegree.Bundle0002
 
 @[expose] public section
 

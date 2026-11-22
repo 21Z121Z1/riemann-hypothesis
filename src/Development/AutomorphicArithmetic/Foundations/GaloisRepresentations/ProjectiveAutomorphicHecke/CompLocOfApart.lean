@@ -3,10 +3,10 @@ module
 public import Mathlib
 public import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.ProjectiveAutomorphicHecke.MapWopWmap
 public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.ContinuousMapPFin
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.SplitPlaceUnitaryLocalPointsEquivGL
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0218
 public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.LatticeDataThicknessBound
 public import Development.AbelianVarietyTheory.Definitions.Divisors.EntireEqOfHalfPlane
-public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.DefiniteUnitaryRealApproxAndFiniteInfiniteSplit
+public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0146
 public import GroundTheory.GlobalFields.Adele.BaseChange.FiniteMap
 
 @[expose] public section

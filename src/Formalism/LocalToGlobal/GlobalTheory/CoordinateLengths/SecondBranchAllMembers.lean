@@ -1,7 +1,7 @@
 module
 
 public import Formalism.LocalToGlobal.GlobalTheory.CoordinateLengths.SecondBranchOfRationality
-public import Formalism.LocalToGlobal.GlobalTheory.CoordinateLengths.RatStab
+public import Formalism.LocalToGlobal.GlobalTheory.CoordinateLengths.Bundle0002
 
 @[expose] public section
 

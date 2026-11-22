@@ -1,9 +1,8 @@
 module
 
-public import Formalism.PeriodIntegrals.QmBorderES
-public import Formalism.PeriodIntegrals.QmColExp
-public import Formalism.PeriodIntegrals.QmRowExp
-public import Formalism.RealPlaceAnalysis.RealPlaceTaylor.QuantumDetHighestWeightHolds
+public import Formalism.PeriodIntegrals.Bundle0016
+public import Formalism.PeriodIntegrals.Bundle0017
+public import Formalism.RealPlaceAnalysis.RealPlaceTaylor.Bundle0006
 
 @[expose] public section
 

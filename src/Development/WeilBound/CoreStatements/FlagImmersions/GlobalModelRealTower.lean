@@ -1,30 +1,24 @@
 module
 
 public import Development.AutomorphicSpectrum.Statements.TowerExistence.GoodTowerExistsX
-public import Development.AutomorphicSpectrum.Statements.GeometryStatements.HodgeLatticeFlagBound
-public import Development.AutomorphicSpectrum.Statements.GeometryStatements.TrivFlagOnHodge
+public import Development.AutomorphicSpectrum.Statements.GeometryStatements.Bundle0003
 public import Development.AutomorphicSpectrum.Statements.GeometryStatements.FlatDegree
-public import Development.AutomorphicSpectrum.Statements.GeometryStatements.PadicIntegersHenselianFiniteResidue
+public import Development.AutomorphicSpectrum.Statements.GeometryStatements.Bundle0002
 public import Development.AutomorphicSpectrum.Statements.GeometryStatements.HodgeComparisonCompatibility
 public import Development.AutomorphicSpectrum.Statements.GeometryStatements.CmpSt
 public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.NumberField
 public import Development.AutomorphicSpectrum.Definitions.DivisibilityTowers.LocalAtPlaces
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.InterSt
-public import Development.WeilBound.CoreStatements.FlagImmersions.ContAtOfHoloOn
-public import Development.WeilBound.CoreStatements.FlagImmersions.AnalyticAtAeval
-public import Development.WeilBound.CoreStatements.FlagImmersions.HasPerConj
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.Bundle0006
+public import Development.WeilBound.CoreStatements.FlagImmersions.Bundle0012
+public import Development.WeilBound.CoreStatements.FlagImmersions.Bundle0021
 public import Development.WeilBound.CoreStatements.FlagImmersions.ExistsModelOfEq
 public import Development.WeilBound.CoreStatements.FlagImmersions.NormDetEq
-public import Development.WeilBound.CoreStatements.FlagImmersions.PerCoord
+public import Development.WeilBound.CoreStatements.FlagImmersions.Bundle0017
 public import Development.WeilBound.CoreStatements.FlagImmersions.ExistsRightInv
-public import Development.WeilBound.CoreStatements.FlagImmersions.RankLem
-public import Development.WeilBound.CoreStatements.FlagImmersions.EqZeroOfTri
+public import Development.WeilBound.CoreStatements.FlagImmersions.Bundle0019
 public import Development.WeilBound.CoreStatements.FlagImmersions.GenRigidOf
-public import Development.WeilBound.CoreStatements.FlagImmersions.CountableBall
-public import Development.WeilBound.CoreStatements.FlagImmersions.CoordsOrbit
-public import Development.WeilBound.CoreStatements.FlagImmersions.IsHolToOfLocal
+public import Development.WeilBound.CoreStatements.FlagImmersions.Bundle0020
 public import Development.WeilBound.CoreStatements.FlagImmersions.Imports
-public import Development.WeilBound.CoreStatements.FlagImmersions.FlagImmersion
 
 @[expose] public section
 

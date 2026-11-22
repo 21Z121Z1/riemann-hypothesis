@@ -1,7 +1,7 @@
 module
 
-public import Formalism.PeriodIntegrals.OrbRestrOne
-public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.OrbitPowerSeriesCoefficients.KillSubst
+public import Formalism.PeriodIntegrals.Bundle0023
+public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.OrbitPowerSeriesCoefficients.Bundle0001
 
 @[expose] public section
 

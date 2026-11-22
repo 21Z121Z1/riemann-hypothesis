@@ -3,8 +3,8 @@ module
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.Foundations.ClassMassEqSumOfBijective
 public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsUnitaryClassRepTrivialAtCm
-public import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.ClassSet
-public import Formalism.HermitianLattices.HermitianLatticesProofs.LocBasic
+public import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Bundle0013
+public import Formalism.HermitianLattices.HermitianLatticesProofs.Bundle0001
 
 @[expose] public section
 

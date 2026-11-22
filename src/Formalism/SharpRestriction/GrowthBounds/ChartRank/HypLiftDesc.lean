@@ -1,6 +1,6 @@
 module
 
-public import Formalism.SharpRestriction.GrowthBounds.ChartRank.HypLift
+public import Formalism.SharpRestriction.GrowthBounds.ChartRank.Bundle0003
 
 @[expose] public section
 

@@ -1,8 +1,8 @@
 module
 
-public import Development.WeilBound.ThetaLifts.SphericalLattices.RelIndexTransport
+public import Development.WeilBound.ThetaLifts.SphericalLattices.Bundle0007
 public import Development.WeilBound.ThetaLifts.SphericalLattices.LocMod
-public import Development.WeilBound.ThetaLifts.SphericalLattices.ExistsFrameLag
+public import Development.WeilBound.ThetaLifts.SphericalLattices.Bundle0006
 
 @[expose] public section
 

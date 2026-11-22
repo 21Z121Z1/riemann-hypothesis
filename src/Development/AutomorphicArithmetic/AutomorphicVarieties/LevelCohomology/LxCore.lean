@@ -1,7 +1,6 @@
 module
 
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.LevelCohomology.ExistsPowDvdSubOfTwoPowDvdSubOne
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.LevelCohomology.TwoPowDvdSubOneOrAddOneOfPowTwoPow
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.LevelCohomology.Bundle0001
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.LevelCohomology.SumFilterTwoPowRootsEqZeroOfSumEqZero
 
 @[expose] public section

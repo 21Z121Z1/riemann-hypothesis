@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Formalism.SharpRestriction.LevelLetterCocycles.ArcLiftingSetup
-public import Formalism.SharpRestriction.LevelLetterCocycles.AlgebraMapUnitZpow
+public import Formalism.SharpRestriction.LevelLetterCocycles.Bundle0012
 
 @[expose] public section
 

@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsSubquotientOfEquiv
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0105
 
 @[expose] public section
 

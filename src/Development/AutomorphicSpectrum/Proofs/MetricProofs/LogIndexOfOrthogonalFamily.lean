@@ -1,11 +1,10 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Definitions.MetricPeriods.IsAdapted
-public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.RelatedPairsOrbitalTermEq
-public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.ProjSumSumEmbeddingsEqTrace
+public import Development.AutomorphicSpectrum.Definitions.MetricPeriods.Bundle0004
+public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.Bundle0016
 public import GroundTheory.HeightsAndTheta.Heights.StabilizerCovolume.PDifferentLatIndex
-public import Development.AutomorphicSpectrum.Proofs.MetricProofs.EigenLatticesDifferentStatementHoldsStatement
+public import Development.AutomorphicSpectrum.Proofs.MetricProofs.Bundle0037
 
 @[expose] public section
 

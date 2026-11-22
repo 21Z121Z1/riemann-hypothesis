@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.HodgePeriodGram
+public import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.Bundle0004
 public import ReciprocityTheory.AnalyticForms.AnalyticCharts.Osgood
 
 @[expose] public section

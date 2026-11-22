@@ -2,7 +2,7 @@ module
 
 public import Formalism.SharpRestriction.GlobalSchurBounds.JointsF
 public import Formalism.SharpRestriction.GlobalSchurBounds.QuadraticLogDerivCongr
-public import Formalism.SharpRestriction.GlobalSchurBounds.Chosen
+public import Formalism.SharpRestriction.GlobalSchurBounds.Bundle0001
 public import Formalism.LocalRingCardinality.Lemmas
 public import Formalism.LocalRingCardinality.RankBoundMonotoneInDimension
 public import Formalism.SharpRestriction.ParamsHeightRankConstant

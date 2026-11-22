@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsSerreGraded
+public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0002
 
 @[expose] public section
 

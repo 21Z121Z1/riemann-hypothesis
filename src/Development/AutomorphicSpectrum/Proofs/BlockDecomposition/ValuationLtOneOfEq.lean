@@ -1,13 +1,13 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.HeckeLAdicCharacterDeRham
+public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.Bundle0006
 public import Development.WeilBound.CoreStatements.TemperedRepresentationTheory.DeRhamJacobian.IsdRJ
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.HasPeriods
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0206
 public import GroundTheory.PAdicHodge.LocalBridge
 public import GroundTheory.PAdicHodge.FieldOfNormsCyclBase
 public import GroundTheory.LocalFields.LubinTateLimitGalois
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.MemFiniteExtPadicRingOfIntegersIffNormLeOne
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0311
 
 @[expose] public section
 

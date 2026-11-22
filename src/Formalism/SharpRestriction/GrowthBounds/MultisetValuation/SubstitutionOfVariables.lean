@@ -1,6 +1,6 @@
 module
 
-public import Formalism.SharpRestriction.GrowthBounds.MultisetValuation.IntegralExpRename
+public import Formalism.SharpRestriction.GrowthBounds.MultisetValuation.Bundle0015
 
 @[expose] public section
 

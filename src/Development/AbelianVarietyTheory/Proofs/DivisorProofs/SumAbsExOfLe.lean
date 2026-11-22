@@ -1,14 +1,14 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Divisors.SemiposAtOfPositive
-public import Development.AbelianVarietyTheory.Definitions.Divisors.ToKnownTheoremsOf
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsIsHTFrameCpAndNonempty
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DiagNeZeroOfLinearIndependent
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0063
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0059
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1799
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1517
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HodgeTateInclusionRaynaudExtensionAlgebraicPoint
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsMapToModel
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1495
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WeilCharSurjectiveAndMapRangeAl
-public import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.GradedDifferentComparison
+public import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.Bundle0020
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PullbackSections.HolomorphicFamilies.PadicValNatAbsNormEqZero
 
 @[expose] public section

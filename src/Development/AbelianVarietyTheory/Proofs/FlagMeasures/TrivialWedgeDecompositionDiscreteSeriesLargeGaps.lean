@@ -2,9 +2,11 @@ module
 
 public import Mathlib
 public import CompanionTheory.AutomorphicTheory.PieriRules.ThetaBesselIsometries.IsDSOfIsDG
-public import CompanionTheory.AutomorphicTheory.PieriRules.ThetaBesselIsometries.PieriTensorDecompositionStatement
-public import CompanionTheory.AutomorphicTheory.PieriRules.ThetaBesselIsometries.TensorDecompositionParametersStatement
-public import CompanionTheory.AutomorphicTheory.PieriRules.ThetaBesselIsometries.DiscreteSeriesParameterUniqueStatement
+public import CompanionTheory.AutomorphicTheory.PieriRules.ThetaBesselIsometries.Bundle0010
+public import CompanionTheory.AutomorphicTheory.PieriRules.ThetaBesselIsometries.TensorDecompositionParameters
+public import CompanionTheory.AutomorphicTheory.PieriRules.PieriDegreeBounds.Imports
+public import Development.AbelianVarietyTheory.Definitions.Jets.SumIoPr
+public import CompanionTheory.AutomorphicTheory.PieriRules.ThetaBesselIsometries.DiscreteSeriesParameterUnique
 public import CompanionTheory.AutomorphicTheory.PieriRules.ThetaBesselIsometries.TensorDecompositionInjectiveParameters
 public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.ChainRuleSmooth.ExpIntertwine
 
@@ -189,7 +191,7 @@ theorem exists_equiv (hH : HypsG) {ε : Fin (2 * r + k + 1) → Bool} {κ ι : T
     · by_cases hs : s = a
       · subst hs
         exact absurd ⟨U, hU⟩ hno
-      · exact absurd (Gp91.GlobalTheory.T.discrete_series_parameter_unique hH k r ε _ _ _ _ (hd1 a) (hd2 s) U hU) (hne s hs)
+      · exact absurd (_root_.Gp91.GlobalTheory.DSInequiv.param_eq_of_equiv hH k r ε _ _ _ _ (hd1 a) (hd2 s) U hU) (hne s hs)
   obtain ⟨-, -, -, -, h5, -, h7, ⟨w, hw, hwK, -⟩, -⟩ := Gp91.GlobalTheory.T.discreteSeries_unitary_smooth_basic hK k r ε _ _ (hd1 a)
   have hwsm : w ∈ (RI1 a).sm := h5 w (h7 w hwK)
   have hx : ∀ c, io1 a c w ∈ S.sm := fun c => (h1.io_sm a c).mem w hwsm

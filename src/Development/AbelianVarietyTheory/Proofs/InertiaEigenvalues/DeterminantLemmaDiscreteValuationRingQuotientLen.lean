@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.GlobalCore
-public import Development.AbelianVarietyTheory.Proofs.CoherentCohomologyProofs.LengthCommensurableSpanSpanOfDetNeZero
+public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0009
+public import Development.AbelianVarietyTheory.Proofs.CoherentCohomologyProofs.Bundle0008
 
 @[expose] public section
 

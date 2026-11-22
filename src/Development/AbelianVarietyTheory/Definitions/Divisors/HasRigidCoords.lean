@@ -3,8 +3,8 @@ module
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.Divisors.FromBaseAlt
 public import Development.AbelianVarietyTheory.Definitions.Divisors.GalRigidOfSurjective
-public import Development.AbelianVarietyTheory.Definitions.Divisors.EvenDefect
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FiltGraded
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0061
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2939
 
 @[expose] public section
 

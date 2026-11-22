@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Divisors.CentralNilGL
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BlkEquivInl
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0019
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0709
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BlkGLOneCorner
 public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.T2SpaceAdelicGeneralLinearGroupNumberField
 

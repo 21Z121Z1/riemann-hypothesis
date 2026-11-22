@@ -1,6 +1,6 @@
 module
 
-public import Formalism.PeriodIntegrals.HCMult
+public import Formalism.PeriodIntegrals.Bundle0011
 public import CompanionTheory.HarishChandraModules.KFiniteAnalyticVectors.AdmissibleSmoothVectors.FinalAll
 
 @[expose] public section

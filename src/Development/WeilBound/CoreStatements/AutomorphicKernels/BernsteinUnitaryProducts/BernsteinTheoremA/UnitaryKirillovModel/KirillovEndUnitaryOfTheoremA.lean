@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import GroundTheory.AutomorphicForms.SmoothRepSchur
-public import GroundTheory.AutomorphicForms.LocallyConstantCompact
-public import GroundTheory.AutomorphicForms.LocallyProfinite
+public import GroundTheory.AutomorphicForms.Bundle0011
+public import GroundTheory.AutomorphicForms.Bundle0007
+public import GroundTheory.AutomorphicForms.Bundle0004
 public import GroundTheory.AutomorphicForms.GLnLocal
 public import Development.WeilBound.CoreStatements.TemperedRepresentationTheory.MirabolicDerivatives.UnipApplyCastSuccLast
 

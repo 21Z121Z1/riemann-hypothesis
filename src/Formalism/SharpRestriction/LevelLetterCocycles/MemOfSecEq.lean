@@ -1,6 +1,6 @@
 module
 
-public import Formalism.SharpRestriction.LevelLetterCocycles.InFNcSmul
+public import Formalism.SharpRestriction.LevelLetterCocycles.Bundle0046
 
 @[expose] public section
 

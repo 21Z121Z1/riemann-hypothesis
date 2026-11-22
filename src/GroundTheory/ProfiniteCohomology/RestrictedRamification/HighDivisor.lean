@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import GroundTheory.ProfiniteCohomology.Shapiro
-public import GroundTheory.ProfiniteCohomology.ColimitUnion
+public import GroundTheory.ProfiniteCohomology.Bundle0005
 public import GroundTheory.ProfiniteCohomology.CohomologicalDimension.Closed
 public import GroundTheory.ProfiniteCohomology.CohomologicalDimension.SubsingletonCohomologyOfPrimaryOfFinite
 public import GroundTheory.ProfiniteCohomology.ClassFormations.IsIsoCohomologyMapAlongResSubgroupOfHom

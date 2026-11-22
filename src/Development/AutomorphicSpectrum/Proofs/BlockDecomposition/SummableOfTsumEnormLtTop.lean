@@ -2,9 +2,9 @@ module
 
 public import Mathlib
 public import Development.WeilBound.CoreStatements.TemperedRepresentationTheory.WeilSiegelTheta.ThetaOrbits
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.RangeVecMulLinearEq
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SchwartzBoundFiniteInfinite
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AbsoluteThetaIntegralLeContinuousSeminorm
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0018
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0424
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1617
 
 @[expose] public section
 

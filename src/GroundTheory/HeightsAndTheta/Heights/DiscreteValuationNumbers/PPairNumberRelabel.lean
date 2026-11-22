@@ -1,11 +1,10 @@
 module
 
 public import Mathlib
-public import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.StatementsPairNumberRelabel
-public import GroundTheory.HeightsAndTheta.Heights.FieldsOfNumbers.IntNumRelabel
-public import GroundTheory.HeightsAndTheta.Heights.FieldsOfNumbers.PRenameMultiHomog
-public import GroundTheory.HeightsAndTheta.Heights.FieldsOfNumbers.PRenameMultiProjPrime
-public import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.PExistsUniqueRelabel
+public import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.Bundle0014
+public import GroundTheory.HeightsAndTheta.Heights.FieldsOfNumbers.Bundle0008
+public import GroundTheory.HeightsAndTheta.Heights.FieldsOfNumbers.Bundle0007
+public import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.Bundle0012
 
 @[expose] public section
 

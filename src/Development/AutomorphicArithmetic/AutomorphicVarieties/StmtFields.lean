@@ -1,6 +1,6 @@
 module
 
-public import Development.AutomorphicArithmetic.CharacterBoxes.ExistsPageN
+public import Development.AutomorphicArithmetic.CharacterBoxes.Bundle0002
 
 @[expose] public section
 

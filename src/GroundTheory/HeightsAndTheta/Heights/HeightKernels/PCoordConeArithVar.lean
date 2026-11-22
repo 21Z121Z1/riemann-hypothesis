@@ -1,10 +1,10 @@
 module
 
 public import Mathlib
-public import GroundTheory.HeightsAndTheta.Heights.HeightKernels.StatementsGrassHeight
-public import GroundTheory.HeightsAndTheta.Heights.WeightedHomogeneous.StatementsIntDim
-public import GroundTheory.HeightsAndTheta.Heights.WeightedHomogeneous.PConeTrdeg
-public import GroundTheory.HeightsAndTheta.Heights.HeightComparison.IsMultiHomogIdealIff
+public import GroundTheory.HeightsAndTheta.Heights.HeightKernels.Bundle0014
+public import GroundTheory.HeightsAndTheta.Heights.WeightedHomogeneous.Bundle0001
+public import GroundTheory.HeightsAndTheta.Heights.WeightedHomogeneous.Bundle0004
+public import GroundTheory.HeightsAndTheta.Heights.HeightComparison.Bundle0003
 
 @[expose] public section
 

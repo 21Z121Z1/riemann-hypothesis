@@ -1,14 +1,13 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Divisors.ScalesBy
-public import Development.AbelianVarietyTheory.Definitions.Divisors.IsLv
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FiniteCovolumeCommonAdelicFixatorOfColumnsStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CovolumeNeTopOfContinuousMulEquivSubgroup
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LintegralBoundLtTop
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0049
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1601
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1515
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1039
 public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.T2SpaceAdelicGeneralLinearGroupNumberField
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ContinuousSplitCentre
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsFiniteMeasureQuotMeasure
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0278
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0282
 
 @[expose] public section
 

@@ -1,6 +1,6 @@
 module
 
-public import Development.WeilBound.ThetaLifts.SmallCones.SoDefs
+public import Development.WeilBound.ThetaLifts.SmallCones.Bundle0001
 public import Development.WeilBound.ThetaLifts.SmallCones.ExpAlg
 public import Development.WeilBound.ThetaLifts.SmallCones.FourierUniq
 public import Development.WeilBound.CoreStatements.LocallyConstantCoinvariants.SoStatement

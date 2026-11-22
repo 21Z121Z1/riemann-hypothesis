@@ -1,20 +1,20 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.IsQuasiFam
+public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.Bundle0008
 public import Formalism.LocalToGlobal.IndefiniteReal.OrthogonalComplementCharacterisation
 public import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.ExistsHeightLeTwoMulQuotHeight
 public import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.WittDecompSymplInclIsotropicInclAnisotropic
-public import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.TransvectionAction
-public import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.WeilDatumExistence
-public import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.AdjointIsotropicDecomposition
-public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.RealSizeNonneg
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SupNormWordSumSubLeAndDerivativeCost
-public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.EqZeroOfLintegralEqZero
-public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.ExistsInverseChart
+public import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.Bundle0019
+public import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.Bundle0007
+public import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.Bundle0021
+public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.Bundle0009
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0253
+public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.Bundle0065
+public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.Bundle0057
 public import Development.AbelianVarietyTheory.Proofs.HeightProofs.IsTopologicalRingAE
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ThetaKernelModerateGrowthWithSeminorms
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ThetaFunctionProductsSlicesOrthogonalDecompositiStatement
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0183
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0123
 
 @[expose] public section
 
@@ -207,7 +207,7 @@ theorem isSobForm_slice {ψ : AddChar (AF D.host.F) ℂ} {θ : InfFam D} (hθ : 
     obtain ⟨K, hKs⟩ := sobO_slice_le (T := T) hψ hθ o d
     refine ⟨d, C * (ENNReal.ofReal ((height A p.1 * height T p.2) ^ e)).toNNReal * K, fun f hf => ?_⟩
     have hsl : slA o f ∈ thetaLevel ψ A T U' := by
-      refine ⟨((GlobalTheory.T.thetaFunction_products_slices_orthogonalDecomposition D ψ hψ S A B T o).2.2.2 f hf.1).1 0, fun u hu h0 => ?_⟩
+      refine ⟨((_root_.GlobalTheory.BoxSlice.main D ψ hψ S A B T o).2.2.2 f hf.1).1 0, fun u hu h0 => ?_⟩
       rw [heisO_slice, ← extA_apply, hf.2 _ hu]
       rw [extA_apply, symm_left, Matrix.map_mul, h0, Matrix.zero_mul]
     have h := hC χ χ' om hom μ 𝓕 hμ (slA o f) hsl p.1 p.2

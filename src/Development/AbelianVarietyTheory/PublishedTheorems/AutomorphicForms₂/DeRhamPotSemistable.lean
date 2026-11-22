@@ -4,7 +4,7 @@ public import Mathlib
 public import Formalism.SharpRestriction.LevelLetterCocycles.LocCoh
 public import Formalism.LocalRingCardinality.AdicCompletionLocal.LocTied
 public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.FiniteDimensionalWdSpace
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsSstResToOfIsPst
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0083
 
 @[expose] public section
 

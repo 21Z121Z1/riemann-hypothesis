@@ -1,9 +1,9 @@
 module
 
 public import Development.WeilBound.CoreStatements.LocalThetaKernels.LocpairAlg
-public import Development.WeilBound.CoreStatements.LocallyConstantCoinvariants.PfDictAd
-public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.GlobalUnitScalingHaarProductFormula
-public import Development.AutomorphicSpectrum.Proofs.MembershipProofs.BoxFunMemSB
+public import Development.WeilBound.CoreStatements.LocallyConstantCoinvariants.Bundle0004
+public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.Bundle0037
+public import Development.AutomorphicSpectrum.Proofs.MembershipProofs.Bundle0003
 
 @[expose] public section
 

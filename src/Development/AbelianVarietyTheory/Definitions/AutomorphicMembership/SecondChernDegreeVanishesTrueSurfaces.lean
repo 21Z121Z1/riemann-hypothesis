@@ -5,12 +5,12 @@ public import Formalism.SharpRestriction.Divisibility.WeightThresholdDefs
 public import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsFlagModelHermSum
 public import Development.AbelianVarietyTheory.Definitions.Divisors.ToNatLengthEqRangeAddRange
 public import Development.AbelianVarietyTheory.Definitions.Divisors.IsTorsionFreeOfForallExists
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.OneCompOfIsGrpPullback
-public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.EqOfIsometricTrivShift
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1312
+public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.Bundle0012
 public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ClsLinCombSingle
-public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.IsProjOverCompFinite
+public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0135
 public import Development.AbelianVarietyTheory.Proofs.CovolumeBounds.IsProjOverMorphismRestrictOfRelAmple
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.RingKrullDimRingOfIntegers
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0284
 
 @[expose] public section
 

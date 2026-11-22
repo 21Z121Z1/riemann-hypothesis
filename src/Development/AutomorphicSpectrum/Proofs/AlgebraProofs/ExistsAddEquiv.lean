@@ -1,17 +1,15 @@
 module
 
 public import Mathlib
-public import ReciprocityTheory.DualLattices.CotangentSurjective
+public import ReciprocityTheory.DualLattices.Bundle0004
 public import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.IsTight
-public import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.StepOrderRes
+public import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.Bundle0003
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.NonzeroLocus
 public import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.IsFinFlatSub
-public import Development.AutomorphicSpectrum.PublishedTheorems.Algebra₂.QuotientByFiniteFlatStatement
-public import Development.AutomorphicSpectrum.PublishedTheorems.Algebra₂.ZarhinStatement
-public import Development.AutomorphicSpectrum.Statements.AlgebraStatements.HodgeTateDatumStatement
-public import Development.AutomorphicSpectrum.Statements.AlgebraStatements.OrdinaryCurveStatement
-public import Development.AutomorphicSpectrum.Statements.AlgebraStatements.PolarisedFlagStatement
-public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.PolarisedAugmentationTheoremStatement
+public import Development.AutomorphicSpectrum.PublishedTheorems.Algebra₂.Bundle0001
+public import Development.AutomorphicSpectrum.Statements.AlgebraStatements.Bundle0002
+public import Development.AutomorphicSpectrum.Statements.AlgebraStatements.Bundle0001
+public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.Bundle0041
 
 @[expose] public section
 
@@ -268,7 +266,7 @@ theorem gp_polAV : HodgeTateDatumStatement → ∀ (p : ℕ) [Fact p.Prime] (C :
   letI : Algebra ℤ_[p] R := (Av.zpLift p R hc).toAlgebra
   obtain ⟨-, cp, US, H, pt₀, h₀, hT⟩ := hHT p C v R hint hp hc P
   obtain ⟨e, he⟩ := Av.exists_addEquiv h₀ hpt
-  have key := GlobalTheory.T.polarised_augmentation_theorem p P.g C v R ℤ_[p] AlgEquiv.refl cp US H
+  have key := _root_.GlobalTheory.CompanionTheory.Ar.GR.polarisedAF p P.g C v R ℤ_[p] AlgEquiv.refl cp US H
   dsimp only at key
   obtain ⟨-, -, -, -, -, -, -, hG, hTi⟩ := key
   rw [hT T] at hG hTi

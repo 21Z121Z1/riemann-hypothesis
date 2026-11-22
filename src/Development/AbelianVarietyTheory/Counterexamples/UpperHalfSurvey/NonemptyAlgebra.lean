@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import ReciprocityTheory.DualLattices.Imports
-public import ReciprocityTheory.DualLattices.CyclicRecursion
-public import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.ValuationCoeEqNorm
+public import ReciprocityTheory.DualLattices.Bundle0014
+public import ReciprocityTheory.DualLattices.Bundle0004
+public import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.Bundle0028
 
 @[expose] public section
 

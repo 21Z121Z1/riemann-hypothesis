@@ -1,16 +1,18 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.PrincipalNearBoundary
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.HolUnifPeriodMatrixMiddle
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0242
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0213
 public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.HolUnifPeriodMatrixRight
 public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.PeriodLatticeSpans
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.PeriodLatticeDiscreteFreeStatement
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExponentialSurjectiveSemiabelian
-public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsCocharLieLieModel
-public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.ExistsUniqueLeftBasisCoordsAdicCompletion
-public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.VerticalDerivativeInCoordinates
-public import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.SmulPeriodMapMkZeroFstEqNegForm
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0118
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.Bundle0009
+public import Development.AbelianVarietyTheory.Definitions.Uniformization.PointEqOfSubsingleton
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0233
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.Bundle0008
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.Bundle0014
+public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0032
+public import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.Bundle0006
 
 @[expose] public section
 
@@ -218,7 +220,7 @@ theorem torus_lift (e : FamExp t.G M B ψ) {b : Fin n → ℂ} (hb : b ∈ B) (P
       fun y s hs => Over.OverMorphism.ext ((hρ' _).trans (hl y s ((hρ s).symm.trans (congrArg (·.left) hs))))
     constructor
     · intro hy
-      obtain ⟨Γ₀, hΓ, hd, -, -⟩ := GlobalTheory.T.period_lattice_discrete_free R t.G g n M B ψ e b hb
+      obtain ⟨Γ₀, hΓ, hd, -, -⟩ := _root_.GlobalTheory.CompanionTheory.Ar.Flat.FamExp.per_discrete R t.G g n M B ψ e b hb
       have hcount : (e.per b).Countable := by
         rw [← hΓ]
         haveI := hd

@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.CentralExponentBoundOver
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SubsingletonJacquetOfPerm
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsInvariantForm
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0035
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0034
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0036
 
 @[expose] public section
 

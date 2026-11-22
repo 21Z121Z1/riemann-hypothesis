@@ -1,11 +1,11 @@
 module
 
 public import Mathlib
-public import GroundTheory.ProfiniteCohomology.CharactersDefs
-public import GroundTheory.ProfiniteCohomology.Colimit
+public import GroundTheory.ProfiniteCohomology.Bundle0002
+public import GroundTheory.ProfiniteCohomology.Bundle0006
 public import GroundTheory.ProfiniteCohomology.ContinuousCochains.LongExactSequence
 public import GroundTheory.ProfiniteCohomology.CupProducts
-public import GroundTheory.TateCohomology.Characters
+public import GroundTheory.TateCohomology.Bundle0005
 
 @[expose] public section
 

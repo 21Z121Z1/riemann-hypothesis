@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.ImportsRestSide
-public import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.TwistModNatMul
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArithmeticIntersection.MultihomogeneousIdeals.ExistsMonomialNotMem
+public import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.Bundle0033
+public import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.Bundle0061
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArithmeticIntersection.MultihomogeneousIdeals.Bundle0001
 
 @[expose] public section
 

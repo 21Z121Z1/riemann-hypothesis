@@ -1,9 +1,8 @@
 module
 
-public import ReciprocityTheory.DualLattices.EigenQuotientSmithStatement
-public import ReciprocityTheory.DualLattices.StdJForm4
-public import ReciprocityTheory.DualLattices.ExistsMatOfEquiv
-public import ReciprocityTheory.DualLattices.BlockOneMulMulBlockOne
+public import ReciprocityTheory.DualLattices.Bundle0023
+public import ReciprocityTheory.DualLattices.Bundle0032
+public import ReciprocityTheory.DualLattices.Bundle0013
 public import ReciprocityTheory.DualLattices.MatEquivApply
 
 @[expose] public section

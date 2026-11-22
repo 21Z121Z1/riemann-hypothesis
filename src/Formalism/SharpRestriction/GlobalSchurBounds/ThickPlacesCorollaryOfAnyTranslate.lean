@@ -3,18 +3,15 @@ module
 public import Formalism.SharpRestriction.GlobalSchurBounds.StandardLattice
 public import Formalism.LocalRingCardinality.RankBoundMonotoneInDimension
 public import Formalism.LogVandermondeBounds.HookGammaAmgmMultinomialBounds
-public import Formalism.GL3MeanSquares.HookFormulaTorsion.FiniteEulerProductLeZeta
+public import Formalism.GL3MeanSquares.HookFormulaTorsion.Bundle0004
 public import Formalism.GL3MeanSquares.HookFormulaTorsion.SumWeightsOverPrimeLeHalfDegree
-public import Formalism.GL3MeanSquares.HookFormulaTorsion.OneAddInvPowLeExpOne
 public import Mathlib
-public import Formalism.GL3MeanSquares.RankMulPowThreeHalvesLeFourthPower
-public import Formalism.GL3MeanSquares.HookFormulaTorsion.DimensionMassJointBound
+public import Formalism.GL3MeanSquares.Bundle0005
 public import Formalism.GL3MeanSquares.HookFormulaTorsion.GlobalBoundRefinements
 public import Formalism.HermitianLattices.FinalMass
-public import Formalism.GL3MeanSquares.InvariantSeriesBidegreeOneOne
-public import Formalism.GL3MeanSquares.ConcavityEquidistribution
-public import Formalism.GL3MeanSquares.HookFormulaTorsion.HilbertSchmidtHalfBound
-public import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.InclusionInjective
+public import Formalism.GL3MeanSquares.Bundle0003
+public import Formalism.GL3MeanSquares.Bundle0001
+public import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Bundle0002
 public import Formalism.LocalRingCardinality.SpanPowerMembership.Spaces
 
 @[expose] public section

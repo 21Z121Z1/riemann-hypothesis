@@ -1,7 +1,7 @@
 module
 
-public import Development.AutomorphicArithmetic.Foundations.Convolution.PowerSumTraces.DecayTraceClassAlt
-public import Development.AutomorphicArithmetic.Foundations.Convolution.ConvolutionKernels.QmapPres
+public import Development.AutomorphicArithmetic.Foundations.Convolution.PowerSumTraces.Bundle0001
+public import Development.AutomorphicArithmetic.Foundations.Convolution.ConvolutionKernels.Bundle0002
 
 @[expose] public section
 

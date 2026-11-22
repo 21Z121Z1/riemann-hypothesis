@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import GroundTheory.ProfiniteCohomology.InflationRestriction.CohomologyResMemCohomologyConjInvariants
-public import GroundTheory.ProfiniteCohomology.Factor
+public import GroundTheory.ProfiniteCohomology.Bundle0002
 public import GroundTheory.ProfiniteCohomology.PoincareDuality.NsmulEqZeroOfNonemptyAddEquiv
 public import GroundTheory.ProfiniteCohomology.CohomologyFunctoriality.Naturality
 public import GroundTheory.ProfiniteCohomology.ContinuousCochains.Functoriality

@@ -1,6 +1,6 @@
 module
 
-public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.InertDensity.FinrankValPerp
+public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.InertDensity.Bundle0001
 
 @[expose] public section
 

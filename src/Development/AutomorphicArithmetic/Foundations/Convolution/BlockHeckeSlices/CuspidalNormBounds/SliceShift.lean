@@ -1,10 +1,10 @@
 module
 
 public import Development.AutomorphicArithmetic.Foundations.Convolution.BlockHeckeSlices.DatCons
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.HasDerivAtTorusTranslate
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0703
 public import Development.WeilBound.RepresentationTheoryGL.ResidualSpectrum.SliceTensors.PSliceA
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IdeleModuleDetDiagUnitsPosIdele
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SplitCentreDerivativeLieAction
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0292
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0455
 public import GroundTheory.AutomorphicForms.CuspidalDiscreteness.CuspFormsHeight
 
 @[expose] public section

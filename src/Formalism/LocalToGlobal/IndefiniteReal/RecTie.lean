@@ -3,7 +3,7 @@ module
 public import Formalism.LocalToGlobal.IndefiniteReal.OrthogonalComplementCharacterisation
 public import Formalism.LocalToGlobal.IndefiniteReal.ScalarOnPartsFull
 public import Formalism.LocalRingCardinality.PrincipalHermitianLattice
-public import Formalism.LocalToGlobal.IndefiniteReal.GramCEqTranspose
+public import Formalism.LocalToGlobal.IndefiniteReal.Bundle0001
 
 @[expose] public section
 

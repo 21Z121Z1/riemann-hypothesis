@@ -1,7 +1,7 @@
 module
 
-public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.GramFormPhiStatement
-public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.PhiCMinima
+public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0024
+public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0026
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.FirstCohomology.ReducedBasis
 
 @[expose] public section

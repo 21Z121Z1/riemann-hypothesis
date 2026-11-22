@@ -1,7 +1,7 @@
 module
 
-public import Formalism.LocalRingCardinality.SpanPowerMembership.LeOfEventuallyDown
-public import Formalism.LocalRingCardinality.SpanPowerMembership.HasStrictFDerivAtExpZero
+public import Formalism.LocalRingCardinality.SpanPowerMembership.Bundle0002
+public import Formalism.LocalRingCardinality.SpanPowerMembership.Bundle0001
 
 @[expose] public section
 

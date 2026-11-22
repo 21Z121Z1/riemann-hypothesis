@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IsHermRingRat
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0394
 
 @[expose] public section
 

@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Development.ResolutionOfSingularities.Foundations.Blowup.BlowupBasic
-public import Development.ResolutionOfSingularities.Foundations.Blowup.BlowupIsoOffCenter
+public import Development.ResolutionOfSingularities.Foundations.Blowup.Bundle0001
+public import Development.ResolutionOfSingularities.Foundations.Blowup.Bundle0002
 public import Development.ResolutionOfSingularities.Foundations.Blowup.BlowupProperties
 public import Development.ResolutionOfSingularities.EmbeddedResolution.IteratedBlowups.ClopenRestriction
 public import Development.ResolutionOfSingularities.EmbeddedResolution.IteratedBlowups.NoetherianBlowup

@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.RankOneUnitary
-public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.IsParahoricVec
+public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.Bundle0007
+public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.Bundle0004
 public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsContinuousPadic
 public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.NontrivialOfIrreducible
 

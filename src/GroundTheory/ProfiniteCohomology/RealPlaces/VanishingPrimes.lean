@@ -4,7 +4,7 @@ public import Mathlib
 public import GroundTheory.ProfiniteCohomology.RealPlaces.GSDefs
 public import GroundTheory.ProfiniteCohomology.RealPlaces.VanishingIndex
 public import GroundTheory.ProfiniteCohomology.RestrictedRamification.Dimension
-public import GroundTheory.ProfiniteCohomology.Colimit
+public import GroundTheory.ProfiniteCohomology.Bundle0006
 public import GroundTheory.ProfiniteCohomology.RealPlaces.LocalDualityPlace
 
 @[expose] public section

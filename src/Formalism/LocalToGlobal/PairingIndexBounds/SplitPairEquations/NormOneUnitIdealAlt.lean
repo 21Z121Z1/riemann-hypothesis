@@ -3,7 +3,7 @@ module
 public import Formalism.LocalToGlobal.PairingIndexBounds.SplitPairEquations.Reduction
 public import Formalism.LocalToGlobal.TorsionIntegrality.QuadraticSemicharacters.QuadraticSemicharacterIdentityReformulated2
 public import Formalism.LocalToGlobal.GlobalTheory.GL3.DeterminantNormOneOfUnitDisc
-public import Formalism.LocalRingCardinality.SpanPowerMembership.RelDet
+public import Formalism.LocalRingCardinality.SpanPowerMembership.Bundle0003
 public import Formalism.SharpRestriction.GlobalSchurBounds.StandardIntegralLatticeExists
 
 @[expose] public section

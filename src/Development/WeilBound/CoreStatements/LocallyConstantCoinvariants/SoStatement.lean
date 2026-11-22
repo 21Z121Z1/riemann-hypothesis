@@ -1,6 +1,6 @@
 module
 
-public import Development.WeilBound.CoreStatements.LocallyConstantCoinvariants.CompFinLiftE
+public import Development.WeilBound.CoreStatements.LocallyConstantCoinvariants.Bundle0003
 
 @[expose] public section
 

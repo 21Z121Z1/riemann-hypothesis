@@ -1,6 +1,6 @@
 module
 
-public import Formalism.PadicSubsetSums.CentralIdempotents.PrimitiveRootFifteenSubOneUnit
+public import Formalism.PadicSubsetSums.CentralIdempotents.Bundle0001
 public import Lemmata.GeneralBFactSecondVersion.Imports
 
 @[expose] public section

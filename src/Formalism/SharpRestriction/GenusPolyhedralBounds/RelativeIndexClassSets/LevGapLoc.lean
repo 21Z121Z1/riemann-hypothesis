@@ -5,8 +5,7 @@ public import Formalism.SharpRestriction.GenusPolyhedralBounds.RelativeIndexClas
 public import Formalism.SharpRestriction.GenusPolyhedralBounds.RelativeIndexClassSets.LevGapSplit
 public import Formalism.LocalRingCardinality.SpanPowerMembership.Adelic
 public import Formalism.LocalRingCardinality.SpanPowerMembership.LocAtB
-public import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Levelvsplit
-public import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.SatakeRes
+public import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Bundle0005
 public import Formalism.SatakeDualWeyl.KpqSubgroupCompact
 
 @[expose] public section

@@ -2,10 +2,10 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.Divisors.DlogRatioVolumeFormNeZero
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MemTraceDualLocalizationIffForallRegularFormStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MemOfForallHeightOneLocalizationIntegrallyClosedStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsLocalKaehlerDBasisSmoothSubalgebraStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.KahlerFormsOverSubalgebraClosurePropertiesStatement
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0468
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0390
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0378
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0388
 
 @[expose] public section
 

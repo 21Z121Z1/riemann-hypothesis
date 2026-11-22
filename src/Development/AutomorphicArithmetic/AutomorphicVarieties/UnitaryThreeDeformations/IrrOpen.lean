@@ -1,9 +1,9 @@
 module
 
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.UnitaryThreeDeformations.HostNumber
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.UnitaryThreeDeformations.DyadicCharacterPowerNeOne
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CyclotomicCharInertiaSurjective
-public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.SingleMemSubmodule
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.UnitaryThreeDeformations.Bundle0014
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0128
+public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0055
 
 @[expose] public section
 

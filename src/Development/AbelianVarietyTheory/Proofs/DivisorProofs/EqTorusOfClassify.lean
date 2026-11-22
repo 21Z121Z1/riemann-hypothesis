@@ -1,11 +1,11 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Divisors.TorMatch
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0066
 public import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsToricRankOne
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsToricTorsionSectionsUniformisation
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ClassifiedTorusTorsionPointEqUniformisationTorus
-public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.PtEqOfProportional
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0487
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0475
+public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.Bundle0082
 
 @[expose] public section
 

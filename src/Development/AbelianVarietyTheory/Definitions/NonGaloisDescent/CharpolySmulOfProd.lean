@@ -2,10 +2,10 @@ module
 
 public import Mathlib
 public import Formalism.SharpRestriction.LevelLetterCocycles.BlochKatoPhases
-public import Formalism.LocalToGlobal.UnitaryNorms.CharTied
-public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.GaloisSideTwistedSelmerAuxiliaryPrimes
-public import Development.AbelianVarietyTheory.BlockTheory.TorsionBlocks.TameGeneratorProjectors
-public import Development.AbelianVarietyTheory.BlockTheory.TorsionBlocks.JumpDictionary
+public import Formalism.LocalToGlobal.UnitaryNorms.Bundle0006
+public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0012
+public import Development.AbelianVarietyTheory.BlockTheory.TorsionBlocks.Bundle0002
+public import Development.AbelianVarietyTheory.BlockTheory.TorsionBlocks.Bundle0006
 public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.InertialOrderFifteenCharAuxiliaryPrimeSpec
 public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.PolarizedGaloisRep
 

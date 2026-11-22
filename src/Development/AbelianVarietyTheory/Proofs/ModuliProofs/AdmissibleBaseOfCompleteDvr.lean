@@ -4,26 +4,28 @@ public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.Degenerations.AdmissibleBaseOfCompleteDvr
 public import Development.AbelianVarietyTheory.BlockTheory.CMModuli.ThetaTowerRecognition
 public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.SummableEvTOfQMap
-public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsIsFib
+public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.Bundle0128
 public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.TorusTorsionPointsCorrespondValues
 public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.DegenerationValuesIntOfAdmissibleBase
-public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.AbelianPartValuesTorsionPairingSeparationIntegra
-public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsNumOf
-public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsIntegralGauge
-public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsNumDHomDegenerationValuesFieldExtension
+public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.Bundle0164
+public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.Bundle0121
+public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.Bundle0118
+public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.Bundle0130
 public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.DegenerationDataTorsionStructureAlgClosed
-public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.IsSemiAbelianOfUniformisationOverDvr
-public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.UniformisationTorsionMapsCompatibleInLevel
-public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.AllUniformizationLawsHold
+public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.Bundle0102
+public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.Bundle0129
+public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.Bundle0133
 public import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.RelationsAreFunctions
-public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.AbelianPartValuesOfExpansionLawsStatement
-public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ThetaConstantTermRepresentativeDependenceStatement
-public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.TxCosetCriterionStatement
-public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsUniqueDescentAutomorphismInvariantMorphismStatement
-public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.PolarisedIsoCommutesFieldAutomorphismOfTorsionStatement
-public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsIsoPolarisedAbelianSchemesDvrOfFieldExtensStatement
-public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsPullbackDegenerationOfValuesIsoDvrStatement
-public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsGeometricValuesIsoOfIdentificationDvrStatement
+public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.Bundle0127
+public import Development.AbelianVarietyTheory.Definitions.Degenerations.Bundle0001
+public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.Bundle0043
+public import Development.AbelianVarietyTheory.Definitions.Degenerations.SepticCharacterInjective
+public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.TxCosetCriterion
+public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0163
+public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0164
+public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0175
+public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0166
+public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsGeometricValuesIsoOfIdentificationDvr
 
 @[expose] public section
 
@@ -180,7 +182,7 @@ theorem exists_pullDeg {C : Type} [Field C] [IsAlgClosed C] [CharZero C] [Algebr
       exact inferInstanceAs (IsIso (Spec.map σ.toRingEquiv.toCommRingCatIso.hom))
     haveI : IsIso ((Over.forget _).map s) := this
     haveI : IsIso s := isIso_of_reflects_iso s (Over.forget _)
-    refine GlobalTheory.T.polarisedIso_commutes_fieldAutomorphism_of_torsion hL _ D.P D'.P C _ φ g₁ h1 ⟨w, g₂⟩ k hk (Nat.cast_ne_zero.2 hk0) (asIso s) fun x hx => ?_
+    refine _root_.GlobalTheory.SerreTwist.whisker_comp_eq hL _ D.P D'.P C _ φ g₁ h1 ⟨w, g₂⟩ k hk (Nat.cast_ne_zero.2 hk0) (asIso s) fun x hx => ?_
     obtain ⟨b, rfl⟩ := ν.eA.surjective x
     obtain ⟨g, rfl, hg⟩ := QStr.root_over N hk0 1 b (ν.eA.injective (by rw [map_pow, hx]; exact (map_one _).symm))
     let q : N.QT k := ⟨(1, g), hg.trans N.io_zero.symm⟩
@@ -205,7 +207,7 @@ theorem exists_pullDeg {C : Type} [Field C] [IsAlgClosed C] [CharZero C] [Algebr
     have b₂ : s ≫ ν'.eA (J.φ g.b) = ν'.eA qσ'.1.2.b :=
       Over.OverMorphism.ext (by rw [hqσ'.2.1, hpσ'.2.1, ← hp'.2.1, Over.comp_left, hs, rb])
     rw [asIso_hom, b₁, pt, pt, b₂, hz', rb]
-  obtain ⟨g, hg, -⟩ := GlobalTheory.T.existsUnique_descent_automorphism_invariant_morphism (FractionRing V) C _ (jK V) D.P.A D'.P.A
+  obtain ⟨g, hg, -⟩ := _root_.GlobalTheory.InvariantMorDescent.existsUnique_desc (FractionRing V) C _ (jK V) D.P.A D'.P.A
     (haveI := D'.P.isAb.proper; inferInstance) (Over.homMk (jFK (R := V) C) rfl) rfl (φ.hom ≫ snd _ _) inv
   obtain ⟨Ψ, a₁, a₂, a₃⟩ := GlobalTheory.T.exists_iso_polarisedAbelianSchemes_dvr_of_fieldExtension hL hL2 V D.P D'.P C φ g₁ h1 ⟨w, g₂⟩ _ g hg
   obtain ⟨e, hc⟩ := GlobalTheory.T.exists_pullbackDegeneration_of_values_iso_dvr hL V D D' C N N' ν ν' J Ψ a₁ a₃ φ w g₁ a₂ g₂ g₃
@@ -255,7 +257,7 @@ theorem onQ_of_inducedBy (hn : n ≠ 0) (h : SameMatch mt w)
     ∃ J : NumD.Iso N N', mt.OnQ J ∧ GeoIso ν ν' J.toIso := by
   haveI := hV.1
   obtain ⟨e, he⟩ := H
-  obtain ⟨J, hJ, hc⟩ := GlobalTheory.T.exists_geometric_values_iso_of_identification_dvr firstFiveLaws.1 V D D' e C N N' ν ν'
+  obtain ⟨J, hJ, hc⟩ := _root_.GlobalTheory.IdentifiedValues.exists_geoIso_rel firstFiveLaws.1 V D D' e C N N' ν ν'
   refine ⟨J, fun j p p' h₁ h₂ => ?_, hJ⟩
   refine (r_incl mt (sq (n ^ j)) (pow_ne_zero _ hn) p p' (up (sq _) p) (up (sq _) p') rfl rfl rfl rfl).2 ((h j _ _).2 ?_)
   obtain ⟨r, r', q', a₁, a₂, a₃, a₄⟩ := he j (up (sq (n ^ j)) p)
@@ -309,9 +311,9 @@ theorem recognition_iff : RecognitionSt ↔ URecDvrSt := by
     have hO : CExt V ⊥ C := ⟨hC.1, fun r hr => hC.2 r (bot_le (a := IsLocalRing.maximalIdeal V) hr)⟩
     obtain ⟨M, ν₀, q, I, hI, hq, hl, hB, hP⟩ := exists_integral hV D hC ν
     obtain ⟨M', ν₀', q', I', hI', hq', hl', hB', hP'⟩ := exists_integral hV D' hC ν'
-    have hT := ValuesTorsion.tors_of_integral hL firstFiveLaws.2.1 (GlobalTheory.T.abelianPartValues_of_expansionLaws hL) V _ D.psi_even D.tau_bimult C hO M ν₀
+    have hT := ValuesTorsion.tors_of_integral hL firstFiveLaws.2.1 (_root_.GlobalTheory.ThetaInValues.brUth_of_laws hL) V _ D.psi_even D.tau_bimult C hO M ν₀
       hI n hn ho h1
-    have hT' := ValuesTorsion.tors_of_integral hL firstFiveLaws.2.1 (GlobalTheory.T.abelianPartValues_of_expansionLaws hL) V _ D'.psi_even D'.tau_bimult C hO M'
+    have hT' := ValuesTorsion.tors_of_integral hL firstFiveLaws.2.1 (_root_.GlobalTheory.ThetaInValues.brUth_of_laws hL) V _ D'.psi_even D'.tau_bimult C hO M'
       ν₀' hI' n hn ho h1
     obtain ⟨w₀, hw₀⟩ := exists_move I I' hB hB' w
     have hp₀ : w₀.Proportional c₀ := fun i p => by
@@ -320,11 +322,11 @@ theorem recognition_iff : RecognitionSt ↔ URecDvrSt := by
       exact ⟨v, (hasSum_qMap I hl ho.pow p v).2 a, by rw [hw₀]; exact (hasSum_qMap I' hl' ho.pow _ _).2 b⟩
     have hc : ∀ i (p p' : M'.QT ((n ^ i) ^ 2)), M'.QEq p p' → M'.tx (n ^ i) p' = M'.tx (n ^ i) p := by
       rintro i p p' ⟨z, a, b⟩
-      exact (tsum_congr fun χ => (GlobalTheory.T.thetaConstantTerm_representative_dependence C M' _ ho.pow p p' χ).1 z a b).trans
+      exact (tsum_congr fun χ => (_root_.GlobalTheory.Ex.txT_shift C M' _ ho.pow p p' χ).1 z a b).trans
         ((Equiv.addRight (n ^ i • z)).tsum_eq fun χ => M'.txT (n ^ i) p χ)
     have h0 : c₀ ≠ 0 := by
       rintro rfl
-      obtain ⟨t, -, -, ht⟩ := (GlobalTheory.T.tx_coset_norm_one_and_ne_zero C M' q' hq' n _ hn ho h1 hT' 1 le_rfl).2.2 1
+      obtain ⟨t, -, -, ht⟩ := (_root_.GlobalTheory.tx_coset_criterion C M' q' hq' n _ hn ho h1 hT' 1 le_rfl).2.2 1
       obtain ⟨p, hp⟩ := w₀.onto 1 (1 * t)
       obtain ⟨v, -, b⟩ := hp₀ 1 p
       exact ht ((hc 1 _ _ hp).trans (b.tsum_eq.trans (zero_mul v)))

@@ -1,7 +1,7 @@
 module
 
 public import Formalism.CharacterColumnKernels.CharacterColumnKernelEqualityForm
-public import Formalism.CharacterColumnKernels.IdempotentNormalForms.ColKer
+public import Formalism.CharacterColumnKernels.IdempotentNormalForms.Bundle0006
 public import Formalism.CharacterColumnKernels.IdempotentNormalForms.LengthKerSmulLe
 
 @[expose] public section

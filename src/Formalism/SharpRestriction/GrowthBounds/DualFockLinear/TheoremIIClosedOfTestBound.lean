@@ -1,7 +1,7 @@
 module
 
-public import Formalism.SharpRestriction.GrowthBounds.DualFockLinear.RestrictedWeightFirstTwoEq
-public import Formalism.SharpRestriction.GrowthBounds.DualFockLinear.Imports
+public import Formalism.SharpRestriction.GrowthBounds.DualFockLinear.Bundle0003
+public import Formalism.SharpRestriction.GrowthBounds.DualFockLinear.Bundle0004
 
 @[expose] public section
 

@@ -1,6 +1,6 @@
 module
 
-public import PositivityTheory.AutomorphicForms.PublishedInputs.NonzeroTypes.NonzeroBasicTwistOfSpecialForm
+public import PositivityTheory.AutomorphicForms.PublishedInputs.NonzeroTypes.Bundle0012
 
 @[expose] public section
 

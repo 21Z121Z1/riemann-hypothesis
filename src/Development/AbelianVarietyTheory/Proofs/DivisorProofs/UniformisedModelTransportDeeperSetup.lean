@@ -4,10 +4,10 @@ public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.Divisors.NonemptyUWit
 public import Development.AbelianVarietyTheory.Statements.SemistableTorsion.ImmersedBy
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LabRange
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsCommonBaseChangePolarizedAbelianSchemeOfGe
-public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsSpecializesIsLocalization
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsCompleteDvrValuesUnitary
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UniformisedModelBaseChangeCompleteDvrExtension
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2341
+public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.Bundle0048
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2425
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2227
 
 @[expose] public section
 

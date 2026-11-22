@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BlockSub
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsUniqueDualWeylWeightProjector
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1797
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1028
 
 @[expose] public section
 

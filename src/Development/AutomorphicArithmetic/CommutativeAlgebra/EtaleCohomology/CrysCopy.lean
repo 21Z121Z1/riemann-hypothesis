@@ -1,8 +1,8 @@
 module
 
-public import Development.AutomorphicArithmetic.CommutativeAlgebra.EtaleCohomology.NilToPhiAlt
+public import Development.AutomorphicArithmetic.CommutativeAlgebra.EtaleCohomology.Bundle0010
 public import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.CrystallineTowers.LocTower
-public import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.AnnihilatorModels.HeckeCl
+public import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.AnnihilatorModels.Bundle0013
 
 @[expose] public section
 

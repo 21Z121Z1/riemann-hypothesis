@@ -3,8 +3,8 @@ module
 public import Development.WeilBound.ThetaLifts.LocalTheory.UnramifiedCohomology.MemLineStab
 public import Development.WeilBound.ThetaLifts.LocalTheory.UnramifiedCohomology.ExistsSelfDual
 public import Development.WeilBound.CoreStatements.LocalThetaKernels.IwasMain
-public import Development.WeilBound.CoreStatements.CompactAveragingSplitting.EigenvectorLifting.Inertof
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsIntegerAddConjEqOneOfFormallyUnramified
+public import Development.WeilBound.CoreStatements.CompactAveragingSplitting.EigenvectorLifting.Bundle0002
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0279
 public import Development.AbelianVarietyTheory.Definitions.Foundations.EqPlaceIdemOfIsPrimeIdem
 public import Development.AbelianVarietyTheory.Definitions.Divisors.CTSmallCone
 

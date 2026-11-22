@@ -5,10 +5,10 @@ public import GroundTheory.ProfiniteCohomology.RestrictedRamification.BaseKummer
 public import GroundTheory.ProfiniteCohomology.RestrictedRamification.SInvariantToInvariantsEqZeroIff
 public import GroundTheory.ProfiniteCohomology.RestrictedRamification.SPicFinite
 public import GroundTheory.ProfiniteCohomology.RestrictedRamification.ClassFieldGSPresentation
-public import GroundTheory.ProfiniteCohomology.CyclicCupProf
+public import GroundTheory.ProfiniteCohomology.Bundle0008
 public import GroundTheory.ProfiniteCohomology.LocalTateDuality.Bockstein
 public import GroundTheory.ProfiniteCohomology.InflationRestriction.DegreeOne
-public import GroundTheory.ProfiniteCohomology.CompactSupportCohomology.ConePairing
+public import GroundTheory.ProfiniteCohomology.CompactSupportCohomology.Bundle0002
 
 @[expose] public section
 

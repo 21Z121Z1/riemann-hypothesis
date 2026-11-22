@@ -1,6 +1,6 @@
 module
 
-public import Formalism.SharpRestriction.RamificationFrobenius.TotientGaloisClasses.InertiaGaloisSymmetry.CycLift
+public import Formalism.SharpRestriction.RamificationFrobenius.TotientGaloisClasses.InertiaGaloisSymmetry.Bundle0002
 
 @[expose] public section
 

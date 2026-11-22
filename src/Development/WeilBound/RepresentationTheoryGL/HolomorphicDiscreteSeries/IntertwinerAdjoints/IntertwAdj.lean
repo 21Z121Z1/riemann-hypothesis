@@ -4,7 +4,7 @@ public import Development.WeilBound.RepresentationTheoryGL.HolomorphicDiscreteSe
 public import Development.WeilBound.CoreStatements.BranchingTraces.BranchingComatrices.OneLeDiff
 public import Development.WeilBound.CoreStatements.BranchingTraces.FormTSingle
 public import Development.WeilBound.CoreStatements.BranchingTraces.ExistsIntertwiner
-public import Development.WeilBound.CoreStatements.BranchingTraces.HilbertSchmidtTraces.ColSq
+public import Development.WeilBound.CoreStatements.BranchingTraces.HilbertSchmidtTraces.Bundle0003
 public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.ExceptionalGroupG2.HarishChandraMultiplicityBound
 
 @[expose] public section

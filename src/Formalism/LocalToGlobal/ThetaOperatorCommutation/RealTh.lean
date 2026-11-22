@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Formalism.PeriodIntegrals.JointBlockShapes.JointShape
-public import ReciprocityTheory.ThetaSummability.RealCoinvariants.CoinvSubLeComap
+public import ReciprocityTheory.ThetaSummability.RealCoinvariants.Bundle0001
 
 @[expose] public section
 

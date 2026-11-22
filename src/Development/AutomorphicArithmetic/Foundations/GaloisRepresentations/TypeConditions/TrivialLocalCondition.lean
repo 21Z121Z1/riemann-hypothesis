@@ -2,7 +2,7 @@ module
 
 public import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.StringRepresentations.HeckeCharacterEqualityOfRealisation
 public import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.TypeConditions.AutomorphicGaloisAdmissible
-public import Formalism.SharpRestriction.LevelLetterCocycles.AdmissibleParameterJ
+public import Formalism.SharpRestriction.LevelLetterCocycles.Bundle0010
 public import Formalism.SharpRestriction.LevelLetterCocycles.PairedCharacterCondition
 
 @[expose] public section

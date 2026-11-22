@@ -1,11 +1,11 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.TameOnOne
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.MemCompletedHomLatticeIffFrameStabiliserActionStatement
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsEqMulOfResSNeOne
-public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.OmVacuumEqSplitFacSmulSum
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RelIndexNeZeroOfFinite
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0123
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0126
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0430
+public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.Bundle0070
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0931
 
 @[expose] public section
 
@@ -242,7 +242,7 @@ theorem om_vacuum_eq_vacScal_smul : ∀ (D : D7) (ψ : AddChar (AF D.host.F) ℂ
   intro D ψ S T χS χT om θ sS sT ΛS ΛT βS βT e P cS cT f hW hθ hS hT hsS hsT hΛS hΛT hβS hβT he hχS hχT hfix hf
     g _ h _ hg hh v ε hε hgε hhε
   obtain ⟨⟨es, hes, rfl⟩, hc⟩ := he
-  have hstab := GlobalTheory.T.mem_completedHomLattice_iff_frameStabiliser_action D S T ΛS ΛT βS βT hΛS.1 hΛT.1 hβS hβT g h hg hh
+  have hstab := _root_.GlobalTheory.LatStab.mem_latO_iff_actO_mem D S T ΛS ΛT βS βT hΛS.1 hΛT.1 hβS hβT g h hg hh
   by_cases hsp : ∃ b : AE D, IsSplitIdem D b ∧ b + cA D b = algebraMap (AF D.host.F) (AE D) ε
   · obtain ⟨b, hb, hbε⟩ := hsp
     obtain ⟨a, ha, haε, hca, hP⟩ := exists_adapted hes hc hε hb hbε

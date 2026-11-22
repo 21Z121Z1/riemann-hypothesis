@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.StatementsCurveVertPointLengthSteps
+public import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.Bundle0041
 public import GroundTheory.HeightsAndTheta.Heights.HeightKernels.StatementsVertPointNagata
 
 @[expose] public section

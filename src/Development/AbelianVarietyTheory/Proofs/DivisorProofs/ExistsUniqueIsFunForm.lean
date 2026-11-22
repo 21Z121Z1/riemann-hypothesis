@@ -2,11 +2,10 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.Divisors.KernelNormConstantSpec
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExistsCofactorTwistDualWeyl
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.WeylLatticeExistsCofactorTwistDual
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.CofactorTwistRelationDualWeightInvolutive
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.CofactorTwistRelationRowActEquivariant
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.DualIsoDetGenMNeZero
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0061
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0083
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0054
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0085
 
 @[expose] public section
 

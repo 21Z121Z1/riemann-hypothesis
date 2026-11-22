@@ -1,7 +1,7 @@
 module
 
 public import Development.WeilBound.ThetaLifts.EigenvalueEndgame.UnipotentGroups.ContinuousExpG
-public import Development.WeilBound.ThetaLifts.FrameEstimates.TowerRallisLemma
+public import Development.WeilBound.ThetaLifts.FrameEstimates.Bundle0006
 public import Development.WeilBound.ThetaLifts.SmallCones.ThetaUniq
 public import Development.WeilBound.ThetaLifts.ConeHypotheses.PureEqPureA
 public import Development.WeilBound.ThetaLifts.CartanFactorisation.CartanConj

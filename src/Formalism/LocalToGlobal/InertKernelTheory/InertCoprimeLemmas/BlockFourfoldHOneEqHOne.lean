@@ -1,16 +1,16 @@
 module
 
-public import Formalism.LocalToGlobal.InertKernelTheory.DefsFrONB
+public import Formalism.LocalToGlobal.InertKernelTheory.Bundle0011
 public import Formalism.LocalToGlobal.InertKernelTheory.InertCoprimeLemmas.KappaSelfDualFourthPowerLattice
 public import Formalism.LocalToGlobal.InertKernelTheory.InertCoprimeLemmas.CurveIdealPrimeReduction
 public import Formalism.LocalToGlobal.InertKernelTheory.InertCoprimeLemmas.IntBasis
 public import Mathlib
-public import Formalism.LocalToGlobal.InertKernelTheory.StatementAlg
-public import Formalism.LocalToGlobal.InertKernelTheory.InertCoprimeLemmas.ReBase
+public import Formalism.LocalToGlobal.InertKernelTheory.Bundle0005
+public import Formalism.LocalToGlobal.InertKernelTheory.InertCoprimeLemmas.Bundle0006
 public import Formalism.LocalToGlobal.TorsionIntegrality.UniformGaussModels.FinalFree
-public import Formalism.LocalToGlobal.TorsionIntegrality.UniformGaussModels.OrthogonalGaussModels.HermitianBlockFrames.MemLatticeFourfoldOfMemDualLattice
+public import Formalism.LocalToGlobal.TorsionIntegrality.UniformGaussModels.OrthogonalGaussModels.HermitianBlockFrames.Bundle0003
 public import Formalism.LocalToGlobal.GlobalTheory.GL3.PHfTrace
-public import Formalism.LocalToGlobal.TorsionIntegrality.EisensteinTranslationProducts.AnalyticIdentityTheorems.QuasiPeriodConstUniqueOf
+public import Formalism.LocalToGlobal.TorsionIntegrality.EisensteinTranslationProducts.AnalyticIdentityTheorems.Bundle0004
 
 @[expose] public section
 

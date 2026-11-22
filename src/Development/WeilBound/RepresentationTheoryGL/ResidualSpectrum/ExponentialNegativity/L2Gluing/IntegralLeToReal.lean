@@ -1,11 +1,9 @@
 module
 
 public import Development.WeilBound.RepresentationTheoryGL.ResidualSpectrum.ExponentialNegativity.L2DecayOfCountEscape
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LintegralEnormSqLe
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.TendstoSetLIntegralDiffCompactCovering
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IntegralNormSqLeToRealLintegralEnormSq
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SetLIntegralLeMulFundamentalDomainDiff
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CountableSubgroupClosure
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0280
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0281
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0275
 
 @[expose] public section
 

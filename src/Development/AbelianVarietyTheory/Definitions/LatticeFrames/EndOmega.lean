@@ -2,8 +2,8 @@ module
 
 public import Mathlib
 public import Formalism.LocalToGlobal.TorsionIntegrality.CMGoodModels.CM4
-public import Formalism.LocalToGlobal.TorsionIntegrality.WeierstrassTwoTorsion.StatementK
-public import Formalism.LocalToGlobal.TorsionIntegrality.SecondCoefficientNorms.IsotropicVanish
+public import Formalism.LocalToGlobal.TorsionIntegrality.WeierstrassTwoTorsion.Bundle0004
+public import Formalism.LocalToGlobal.TorsionIntegrality.SecondCoefficientNorms.Bundle0001
 public import Formalism.FormalGroupLog.Statement
 
 @[expose] public section

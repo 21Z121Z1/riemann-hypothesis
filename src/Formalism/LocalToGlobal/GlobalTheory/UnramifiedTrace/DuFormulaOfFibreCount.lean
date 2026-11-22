@@ -1,7 +1,7 @@
 module
 
 public import Formalism.LocalToGlobal.GlobalTheory.UnramifiedTrace.EopUEq
-public import Formalism.LocalToGlobal.GlobalTheory.UnramifiedTrace.SumFib
+public import Formalism.LocalToGlobal.GlobalTheory.UnramifiedTrace.Bundle0001
 
 @[expose] public section
 

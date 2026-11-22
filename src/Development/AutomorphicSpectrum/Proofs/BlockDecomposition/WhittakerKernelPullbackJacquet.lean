@@ -2,8 +2,8 @@ module
 
 public import Mathlib
 public import Development.WeilBound.CoreStatements.TemperedRepresentationTheory.MirabolicDerivatives.UnipotentDerivatives.DerUnipLeUnipB
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.WhitKerLeComapMap
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.StdMaxParabolicRadicalLeBlockUnipotentRadical
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0428
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0152
 
 @[expose] public section
 

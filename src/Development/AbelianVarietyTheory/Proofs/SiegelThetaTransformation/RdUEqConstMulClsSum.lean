@@ -2,24 +2,24 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.SpanningFamilies.DatEqZero
-public import Formalism.LocalToGlobal.ProjectiveLattices.CuspFree
-public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.ThExprUniqOfChartIndep2
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PullbackSections.HolomorphicFamilies.CmHostUnitAddConjEqOne
-public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.RationalSchwartzBruhatAlgebraIntegralLinear
-public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.HMatMulVecPerCrd
-public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.ThetaSeriesTestFunctionHolomorphicWeight
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0011
+public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0007
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PullbackSections.HolomorphicFamilies.Bundle0011
+public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.Bundle0007
+public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.Bundle0025
+public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.Bundle0044
 public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.TensorLatticeVacuaExistUnique
-public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.ConstOfNormFactorUnitFr
-public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.FgOfSmulLe
-public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.FramedPointGeneratorIsThetaLevelOne
+public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.Bundle0027
+public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.Bundle0032
+public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.Bundle0039
 public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.ExistsSymplOfSelfDual
-public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.AnalyticFibreUnitFrameUniformisation
+public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.Bundle0035
 public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.UniformisationComponentLatticesMarkings
 public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.ProdLevelOneThetaEqVacuumTheta
 public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.ExistsLiftMarked
-public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.InjectiveOfKerCountable
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.GeometricLiftsOfFrames
-public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.ClassSumEvalComplexPointEqClassicalStatement
+public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.Bundle0067
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0088
+public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.Bundle0062
 
 @[expose] public section
 
@@ -297,7 +297,7 @@ theorem GlobalTheory.ClsVal.rdU_eq_const_mul_clsSum : Formalism.MainNotions.Modu
           rw [← h1, halg]
           exact hσ
         exact Reach.exists_lift_of_reached d halg hσ₂ hlev hA1 hA2 hr1 A Dc.sympl hx hL hmk hA hmk₂ hover x₀.2 A₀ h₀ hA₀
-    have hval := GlobalTheory.T.classSum_eval_complex_point_eq_classical hCI E H Dw l Xo c n d halg hnab r _ _ Dc.bas Dc.idx W.e x _ _ y₂ A₂ hy₂ Dc.sympl hx hL
+    have hval := _root_.GlobalTheory.ClsVal.evR_eq_clsSum hCI E H Dw l Xo c n d halg hnab r _ _ Dc.bas Dc.idx W.e x _ _ y₂ A₂ hy₂ Dc.sympl hx hL
       _ Dc.hr Dc.eL hU.1 hn (hDe ▸ Dc.dir_eq) θ v _ (hrd θ hθ) hv hprod mk₂ hmk₂ hA₂ Cl w La Nc gam vol ep Vs io xs a
       hlat hP Y hY f hcls
     have hrd' : Formalism.L2.PjFree.rdU U f k x = evR Xo c f (unC U k ⟨x, hx⟩) := dif_pos hx

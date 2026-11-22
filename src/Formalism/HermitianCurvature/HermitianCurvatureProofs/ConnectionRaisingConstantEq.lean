@@ -3,7 +3,7 @@ module
 public import Formalism.HermitianCurvature.StatementNF
 public import Formalism.HermitianCurvature.HermitianCurvatureProofs.QuasiDeterminantFromEntries
 public import Formalism.HermitianCurvature.HermitianCurvatureProofs.InterlaceSignTwo
-public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.IsPFSum
+public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0065
 
 @[expose] public section
 

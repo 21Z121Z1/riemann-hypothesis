@@ -3,8 +3,7 @@ module
 public import Mathlib
 public import Formalism.LocalToGlobal.Columns.FiniteSumNonzeroLargeDepth
 public import Formalism.LocalToGlobal.Columns.BaseLemmas
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsNatCongrOfAbsNormPrime
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsCharactersPrescribedValues
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0091
 
 @[expose] public section
 

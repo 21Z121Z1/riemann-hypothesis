@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.GoodChi
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsCharpoly
+public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.Bundle0013
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0235
 public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.GoodTupleConditionOfIdempotentZero
 public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsTameGenAtOfValuationSubring
 

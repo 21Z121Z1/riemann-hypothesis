@@ -3,7 +3,7 @@ module
 public import Mathlib
 public import Development.WeilBound.CoreStatements.PeriodRingComparison.CrystallinePeriodRings.AcrisNAlgebraMapAinf
 public import Development.WeilBound.CoreStatements.PeriodRingComparison.AinfAlgebraMaps.CAAlgebraMapGOC
-public import Development.WeilBound.CoreStatements.CrystallinePeriodRings.FrobAinfMapFrobenius
+public import Development.WeilBound.CoreStatements.CrystallinePeriodRings.Bundle0001
 
 @[expose] public section
 

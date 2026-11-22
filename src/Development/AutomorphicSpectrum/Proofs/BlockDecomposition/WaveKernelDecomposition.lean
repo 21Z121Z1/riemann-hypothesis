@@ -2,20 +2,20 @@ module
 
 public import Mathlib
 public import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.ArchimedeanGelfandKernels.WaveSt
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IsMultOfFintype
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0189
 public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.WaveKernelExistence
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.EventuallyEqOfAgreeGLs
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ActEqSumOfKernel
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0196
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0191
 public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.InnerIntegralLeft
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SectionOrthCptZero
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.WaveCptBoundedTime
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.GelfandOperatorPairingAdjointStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.WavePairingTimeSymmetryStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CenterOperatorPreservesWaveStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CenterOperatorCommutesIntegralStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.KernelActionEquivariantStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.KernelAdjointRegularStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.WaveTimeAverageIsWaveStatement
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0201
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0202
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0222
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.WavePairingTimeSymmetry
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CenterOperatorPreservesWave
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0192
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0199
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0206
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.WaveTimeAverageIsWave
 
 @[expose] public section
 
@@ -122,7 +122,7 @@ theorem term_eq (hL : LgFacts) (hR : RCalc) (hS : WaveSpeed) {E : KMod n}
     ∫ y : G n, ⟪zOp w' f y.val, ∫ t, (g t : ℂ) • v t y.val⟫_ℂ ∂μ
       = ∫ y : G n, ⟪act μ E K' f y.val, h y.val⟫_ℂ ∂μ := by
   haveI := FiniteDimensional.complete ℂ E.V
-  have hui : IsWave E (fun t => zOp w' (u t)) := GlobalTheory.T.center_operator_preserves_wave hR n E u w' hu
+  have hui : IsWave E (fun t => zOp w' (u t)) := _root_.GlobalTheory.CompanionTheory.WaveMult.WaveZ.isWave_zOp hR n E u w' hu
   have cu0 : Cpt (u 0) := by
     obtain ⟨R, hR'⟩ := cf
     exact ⟨R, fun y hy hl => by rw [hu0 y hy]; exact hR' y hy hl⟩
@@ -143,7 +143,7 @@ theorem term_eq (hL : LgFacts) (hR : RCalc) (hS : WaveSpeed) {E : KMod n}
       _ = _ := by
           refine integral_congr_ae (Eventually.of_forall fun t => ?_)
           simp only
-          rw [GlobalTheory.T.wave_pairing_time_symmetry hL hR hS n μ E _ v hui hv cui0 cv0 t]
+          rw [_root_.GlobalTheory.CompanionTheory.WaveMult.wave_symm hL hR hS n μ E _ v hui hv cui0 cv0 t]
   have Rr : ∫ y : G n, ⟪act μ E K' f y.val, h y.val⟫_ℂ ∂μ
       = ∫ t, (g t : ℂ) * ∫ y : G n, ⟪zOp w' (u t) y.val, v 0 y.val⟫_ℂ ∂μ := by
     have hF := pair_avg μ hL c2 cv0 hui.1.continuousOn hb
@@ -156,7 +156,7 @@ theorem term_eq (hL : LgFacts) (hR : RCalc) (hS : WaveSpeed) {E : KMod n}
             simp only
             rw [hu0 _ (GlobalTheory.CompanionTheory.WaveKer.mul_mem_GLs hy (PairAdj.val_mem_GLs z))]
           simp only
-          rw [e1, hK.2.2.2 u hu _ hy, GlobalTheory.T.center_operator_commutes_integral n u g T w' hu.1 hb _ hy, hv0 _ hy]
+          rw [e1, hK.2.2.2 u hu _ hy, _root_.GlobalTheory.CompanionTheory.WaveMult.ZOpAvg.zOp_avg n u g T w' hu.1 hb _ hy, hv0 _ hy]
       _ = conj (∫ y : G n, ⟪v 0 y.val, ∫ t, (g t : ℂ) • zOp w' (u t) y.val⟫_ℂ ∂μ) := by
           rw [← integral_conj]
           simp only [inner_conj_symm]
@@ -185,7 +185,7 @@ theorem chain (hL : LgFacts) (hU : Unimod) (hR : RCalc) (hS : WaveSpeed) (hE : W
   obtain ⟨u, hu, hu0⟩ := hE n E f hf
   obtain ⟨v, hv, hv0⟩ := hE n E h hh
   have hHs : ContDiffOn ℝ ∞ (fun x => ∫ t, (g t : ℂ) • v t x) (GLs n) := by
-    have h1 := ((GlobalTheory.T.wave_time_average_is_wave hS n E v g T hv hb).2.1 0).1
+    have h1 := ((_root_.GlobalTheory.CompanionTheory.WaveMult.WaveAvg.isWave_avg hS n E v g T hv hb).2.1 0).1
     simpa only [zero_add] using h1
   have cv0 : Cpt (v 0) := by
     obtain ⟨R, hR'⟩ := ch
@@ -230,7 +230,7 @@ end Chain
 theorem kernel_adjoint : LgFacts → Unimod → RCalc → WaveSpeed → WaveEx → KerUniq → KerOne → ∀ (n : ℕ) [MeasurableSpace (G n)] [BorelSpace (G n)] (μ : Measure (G n)) [μ.IsHaarMeasure] (E : KMod n) (w : List (Bool × ℕ)) (g : ℝ → ℝ) (T : ℝ) (k : Mat n → (E.V →L[ℂ] E.V)), IsBump g T → IsKer μ E w g k → ∃ (N : ℕ) (c : Fin N → ℂ) (w₁ : Fin N → List (Bool × ℕ)) (K : Fin N → Mat n → (E.V →L[ℂ] E.V)), (∀ i, IsKer μ E (w₁ i) g (K i)) ∧ (haveI := FiniteDimensional.complete ℂ E.V; ∀ y ∈ GLs n, ContinuousLinearMap.adjoint (k y⁻¹) = ∑ i, c i • K i y) ∧ ∀ χ : Inf n, IsHerm χ → conj (zVal w χ) = ∑ i, c i * zVal (w₁ i) χ := by
   intro hL hU hR hS hE hQ hO n _ _ μ _ E w g T k hb hk
   haveI := FiniteDimensional.complete ℂ E.V
-  obtain ⟨N, c, w₁, hval, hop⟩ := GlobalTheory.T.gelfand_operator_pairing_adjoint n w
+  obtain ⟨N, c, w₁, hval, hop⟩ := _root_.GlobalTheory.CompanionTheory.WaveMult.WordAdj.word_adjoint n w
   choose K hK using fun i => hO n μ E (w₁ i) g T hb
   refine ⟨N, c, w₁, K, hK, ?_, hval⟩
   have hw := hop hL hR μ E.V
@@ -259,8 +259,8 @@ theorem kernel_adjoint : LgFacts → Unimod → RCalc → WaveSpeed → WaveEx �
       simp only [rp y hy k₂, rK _ y hy k₂, sub_mul, Finset.sum_mul, smul_mul_assoc]
     · intro f hf cf _
       have hfc := hf.1.continuousOn
-      have ap := GlobalTheory.T.kernel_action_equivariant hL n μ E _ f regp hfc lp
-      have aK := fun i => GlobalTheory.T.kernel_action_equivariant hL n μ E (K i) f (regK i) hfc (lK i)
+      have ap := _root_.GlobalTheory.CompanionTheory.WaveMult.act_kReg_section hL n μ E _ f regp hfc lp
+      have aK := fun i => _root_.GlobalTheory.CompanionTheory.WaveMult.act_kReg_section hL n μ E (K i) f (regK i) hfc (lK i)
       have hA0 := section_orth_cpt_zero hQ n μ E
         (fun x => act μ E (fun y => ContinuousLinearMap.adjoint (k y⁻¹)) f x - ∑ i, c i • act μ E (K i) f x)
         (ap.1.sub (continuousOn_finsetSum _ fun i _ => (aK i).1.const_smul (c i)))

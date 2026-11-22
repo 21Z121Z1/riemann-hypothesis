@@ -3,7 +3,7 @@ module
 public import GroundTheory.AutomorphicForms.AutomorphicFormSpaces.Height
 public import GroundTheory.AutomorphicForms.ReductionMahler
 public import Formalism.LocalToGlobal.UnitaryNorms.CharTransport
-public import Development.AutomorphicArithmetic.Foundations.Convolution.ConvolutionKernels.AdBasic
+public import Development.AutomorphicArithmetic.Foundations.Convolution.ConvolutionKernels.Bundle0003
 
 @[expose] public section
 

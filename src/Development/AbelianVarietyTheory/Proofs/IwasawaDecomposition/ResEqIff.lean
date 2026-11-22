@@ -2,8 +2,8 @@ module
 
 public import Mathlib
 public import Formalism.LocalRingCardinality.AdicCompletionLocal.LocTied
-public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.IsCrisP
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsMemWpNormSubLtOne
+public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.Bundle0002
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0208
 public import Development.AbelianVarietyTheory.Proofs.CoherentCohomologyProofs.ClosedBallValuationSubringToSubring
 
 @[expose] public section

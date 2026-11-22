@@ -1,7 +1,7 @@
 module
 
 public import Formalism.LocalToGlobal.HilbertRowConditions.IsHilbertCF
-public import Formalism.LocalRingCardinality.DataKap
+public import Formalism.LocalRingCardinality.Bundle0004
 
 @[expose] public section
 

@@ -2,10 +2,9 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsOfPoint
-public import Development.AbelianVarietyTheory.Definitions.Divisors.IsMumfordFamOfSubsingleton
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0061
 public import Development.AbelianVarietyTheory.Definitions.Divisors.IsNoetherianRingCompletedStalkSiegelFibrePower
-public import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsMinAt
-public import Development.AbelianVarietyTheory.Definitions.Divisors.FromBase
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0062
 
 @[expose] public section
 

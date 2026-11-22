@@ -3,31 +3,29 @@ module
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.KeyFormula.LevBasis
 public import Development.AbelianVarietyTheory.Statements.ThetaLevelCharacters.MemThetaLevelCharDimZero
-public import Development.AbelianVarietyTheory.Definitions.KeyFormula.IsSquareDeterminantComparison
-public import Development.AbelianVarietyTheory.Definitions.KeyFormula.KaRuleK
+public import Development.AbelianVarietyTheory.Definitions.KeyFormula.Bundle0001
 public import Development.AbelianVarietyTheory.Definitions.AbelianSchemeLaws.FirstCohomologyVanishesSpecOfIsLocalRing
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.ValCalc
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.SymplecticGenerators.IsPluriharmonicSiegel
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.ThetaUnifAV
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.MapsAtLeA
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.Bundle0003
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.Bundle0004
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.GlobalSectionsRankAlgClosed
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.SymplecticGenerators.SymplecticCharacters.OneEqSpTranslZero
-public import Development.AbelianVarietyTheory.Proofs.ToricGeometry.TopLePreimageOfValAtNeZero
-public import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.SurjectiveOfComplexPointsLiftOfUniversallyClosed
-public import Development.AbelianVarietyTheory.Proofs.ThetaFamilyOrigin.IsIntegralOfIsAbelianSchemeField
-public import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.ExistsLevBasisReal
-public import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.DifferentiableOnCoordOfLinearIndependent
+public import Development.AbelianVarietyTheory.Proofs.ToricGeometry.Bundle0018
+public import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.Bundle0005
+public import Development.AbelianVarietyTheory.Proofs.ThetaFamilyOrigin.Bundle0001
+public import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.Bundle0023
+public import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.Bundle0001
 public import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.SimpleZerosMoveHolomorphically
 public import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.UnifValueJacZeros
 public import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.KosBlockMulKosD
-public import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.KaFormHomogeneous
-public import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.ExistsDifferentiableOnTorsSq
-public import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.SubmatrixMulOfVanish
+public import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.Bundle0005
+public import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.Bundle0007
 public import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.SignInsert
-public import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.LineBundlePowSectionsEqThetaLevelStatement
+public import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.Bundle0025
 public import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.ExistsHolomorphicThetaOfLevelBasisStatement
-public import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.ExistsKoszulTorsionTransversalSplitZerosStatement
-public import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.ExistsSquareDeterminantComparisonIsAlgClosedStatement
+public import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.ExistsKoszulTorsionTransversalSplitZeros
+public import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.Bundle0035
 
 @[expose] public section
 
@@ -125,7 +123,7 @@ theorem isBasis_of_levB (hT : ThetaUnifAV) (h : x.P.g = g) {τ : Matrix (Fin g) 
     (hab : charHalf g a b) (hW : Wit x h u τ a b) {l N : ℕ} {Th : Fin N → (Fin g → ℂ) → ℂ} (hTh : LevB τ a b l Th)
     (bs : Fin N → RR x l) (hb : ∀ k, FnPw x u (bs k) (Th k)) : IsBasis x bs := by
   intro s
-  obtain ⟨F, ⟨hF, hs⟩, -⟩ := (GlobalTheory.T.lineBundlePow_sections_eq_theta_level hT g x h u τ a b l hab hW).1 s
+  obtain ⟨F, ⟨hF, hs⟩, -⟩ := (_root_.GlobalTheory.LevelDict.sections_eq_level hT g x h u τ a b l hab hW).1 s
   simpa only [coords_iff x u bs Th hb s.f F hs] using hTh.2 F hF
 
 end Geo
@@ -228,7 +226,7 @@ theorem exists_degree (laws : Out.Laws) (hT : ThetaUnifAV) (hab : charHalf x.P.g
       TorsSq kdeg (kosD (N := fun j => (l - j * n) ^ x.P.g) m (evAn (N := fun j => (l - j * n) ^ x.P.g) Th z)) (t : ℂ) := by
   have h1 : ∀ j k, ∃ s : RR x (l - j * n), j ≤ x.P.g → FnPw x u s (Th j k) := by
     intro j k
-    have hd := (GlobalTheory.T.lineBundlePow_sections_eq_theta_level hT _ x rfl u τ a b (l - j * n) hab hW).2
+    have hd := (_root_.GlobalTheory.LevelDict.sections_eq_level hT _ x rfl u τ a b (l - j * n) hab hW).2
     by_cases hj : j ≤ x.P.g
     · obtain ⟨s, hs, -⟩ := hd _ ((hTh j hj).1 k)
       exact ⟨s, fun _ => hs⟩
@@ -241,11 +239,11 @@ theorem exists_degree (laws : Out.Laws) (hT : ThetaUnifAV) (hab : charHalf x.P.g
     intro j
     by_cases hj : j ≤ x.P.g
     · have : j * n ≤ x.P.g * n := Nat.mul_le_mul_right _ hj
-      obtain ⟨la, hla⟩ := GlobalTheory.T.exists_squareDeterminantComparison_isAlgClosed laws ℂ x (l - j * n) _ (bs j) (Nat.cast_ne_zero.2 (by omega)) (hal _) (hb j hj)
+      obtain ⟨la, hla⟩ := _root_.GlobalTheory.SimilDet.exists_l2Val laws ℂ x (l - j * n) _ (bs j) (Nat.cast_ne_zero.2 (by omega)) (hal _) (hb j hj)
       exact ⟨la, fun _ => hla⟩
     · exact ⟨1, fun h => absurd h hj⟩
   choose la hla using h2
-  obtain ⟨-, t₀, m₀, hm₀, ht₀⟩ := GlobalTheory.T.exists_koszulTorsion_transversal_split_zeros laws ℂ x n l d s bs _ ch hn hl hb hE
+  obtain ⟨-, t₀, m₀, hm₀, ht₀⟩ := _root_.GlobalTheory.KeyKa.KoszulEx.exists_kosVal laws ℂ x n l d s bs _ ch hn hl hb hE
   have hcx := (KoszulCx.koszul_isCx ℂ x n l d s bs _ ch hl hb).2 m₀ hm₀ hE.1 hE.2.1
   have hfr : ∀ e, u.fr (ch e) (z e) ≠ 0 := fun e => u.fr_ne _ _ (hE.1 e)
   have hdet : (Matrix.diagonal fun e => u.fr (ch e) (z e) ^ l).det = (U : ℂ) ^ l := by
@@ -303,7 +301,7 @@ theorem exists_kaVal (laws : Out.Laws) (hT : ThetaUnifAV) {g n l l' : ℕ} {al :
       (∀ j ≤ g, lam j ≠ 0 ∧ lam' j ≠ 0) ∧ (κ : ℂ) = formC g n l l' t t' lam lam' (jacAn F z) := by
   subst h
   obtain ⟨hn, hl, hl', hal⟩ := hadm
-  choose s hs using fun i => ((GlobalTheory.T.lineBundlePow_sections_eq_theta_level hT _ x rfl u τ a b n hab hW).2 _ (hF i)).exists
+  choose s hs using fun i => ((_root_.GlobalTheory.LevelDict.sections_eq_level hT _ x rfl u τ a b n hab hW).2 _ (hF i)).exists
   choose ch hch using fun e => exists_chart x u (z e)
   have hE := etZ_of_simpleZeros x u hT hW (fun i => ⟨(hF i).1, hs i⟩) hz hch
   have hU : (∏ e, u.fr (ch e) (z e)) ≠ 0 := Finset.prod_ne_zero_iff.2 fun e _ => u.fr_ne _ _ (hch e)
@@ -331,7 +329,7 @@ theorem exists_simpleZeros (hT : ThetaUnifAV) {g n l l' : ℕ} {al : ℕ → Mat
       (∀ i, IsLevel τ a b n (F i)) ∧ SimpleZeros τ F z := by
   subst h
   obtain ⟨q, ch, -, -, -, -, -, -, -, hE, -⟩ := hk
-  choose F hF hs using fun i => ((GlobalTheory.T.lineBundlePow_sections_eq_theta_level hT _ x rfl u τ a b n hab hW).1 (s i)).exists
+  choose F hF hs using fun i => ((_root_.GlobalTheory.LevelDict.sections_eq_level hT _ x rfl u τ a b n hab hW).1 (s i)).exists
   choose z hz using fun e => u.ex_onto (q e)
   obtain rfl : q = fun e => u.ex (z e) := funext fun e => (hz e).symm
   exact ⟨F, z, hF, simpleZeros_of_etZ x u hT hW (fun i => ⟨(hF i).1, hs i⟩) hE⟩

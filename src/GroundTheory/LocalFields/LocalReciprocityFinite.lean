@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import GroundTheory.LocalFields.LocalAxiom
+public import GroundTheory.LocalFields.Bundle0010
 public import GroundTheory.LocalFields.LocalReciprocityLimitAbstract
 
 @[expose] public section

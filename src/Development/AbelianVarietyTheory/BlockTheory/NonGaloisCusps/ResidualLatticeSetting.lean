@@ -3,7 +3,7 @@ module
 public import Mathlib
 public import Formalism.SharpRestriction.LevelLetterCocycles.BlochKatoPhases
 public import Formalism.SharpRestriction.LevelLetterCocycles.IntegralHeckeForms
-public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.IsTameInertiaElementAtTwistPrime
+public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0010
 
 @[expose] public section
 

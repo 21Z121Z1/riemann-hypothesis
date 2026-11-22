@@ -1,22 +1,29 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.SameForm
+public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.Bundle0019
 public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.TiedColumnData
 public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.ExistsUniqueHcharOfFiniteOrder
-public import Formalism.LocalRingCardinality.DataTies
+public import Formalism.LocalRingCardinality.Bundle0003
 public import Formalism.LocalRingCardinality.SpanPowerMembership.RankRecordRowDimensionZero
 public import Formalism.LocalRingCardinality.SpanPowerMembership.SignSplitEquivInl
 public import Formalism.LocalToGlobal.KernelLattices.ColumnData.KerEntHyp
 public import Formalism.SharpRestriction.GlobalSchurBounds.ThickPlacesCorollaryOfAnyTranslate
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.MtOfFactors
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0306
 public import Formalism.LocalToGlobal.GroupLattices.ComparisonMaps.ComparisonZeroEmbedding
-public import Formalism.LocalRingCardinality.SpanPowerMembership.EntPlNonempty
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.TrueColumnChoicesKernelDatumAdaptedBasesStatement
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.LatticeLayerTrueColumnsParametersFreeStatement
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.LevelsKernelDataAtServedPlaceStatement
-public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.ScalePolynomialQuantitiesComparisonStatement
-public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.ExplicitRanksBasicBoundsLargeScaleStatement
+public import Formalism.LocalRingCardinality.SpanPowerMembership.Bundle0007
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0305
+public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.Bundle0023
+public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.Bundle0015
+public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.Bundle0020
+public import Formalism.LocalToGlobal.KernelLattices.TopPin
+public import Formalism.LocalToGlobal.KernelLattices.Bundle0002
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.LatticeLayerTrueColumnsSizeFree
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0712
+public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0065
+public import Formalism.SharpRestriction.InertJacobiLevels.AsmIface
+public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0069
+public import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.Bundle0002
 public import Formalism.LocalToGlobal.GroupLattices.CloudFilling.WLeWjOne
 
 @[expose] public section
@@ -32,8 +39,8 @@ def ScaleOK (K : Ctx) : Prop :=
 
 theorem scaleOK_large (eps : ℝ) (he : 0 < eps) (he' : eps < 1 / 52) (cD : ℝ) (hcD : 0 ≤ cD) :
     ∃ x1 : ℝ, ∀ K : Ctx, K.s.eps = eps → K.cD = cD → x1 ≤ K.s.x → ScaleOK K := by
-  obtain ⟨x2, hx2⟩ := GlobalTheory.T.scale_polynomial_quantities_comparison eps (cD + 6) (1 / 2) he (by norm_num)
-  obtain ⟨x3, hx3⟩ := GlobalTheory.T.explicitRanks_basic_bounds_large_scale eps he he'
+  obtain ⟨x2, hx2⟩ := _root_.GlobalTheory.scale_poly_comparison eps (cD + 6) (1 / 2) he (by norm_num)
+  obtain ⟨x3, hx3⟩ := _root_.GlobalTheory.EX.rank_basic_bounds eps he he'
   refine ⟨max 35 (max x2 x3), fun K e1 e2 hx R hR => ?_⟩
   have h35 : 35 ≤ K.s.x := le_trans (le_max_left _ _) hx
   have hxa : x2 ≤ K.s.x := le_trans (le_trans (le_max_left _ _) (le_max_right _ _)) hx

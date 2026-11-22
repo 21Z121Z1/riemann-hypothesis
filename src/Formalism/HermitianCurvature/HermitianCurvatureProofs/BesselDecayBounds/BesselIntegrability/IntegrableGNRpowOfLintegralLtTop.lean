@@ -2,7 +2,7 @@ module
 
 public import Formalism.HermitianCurvature.BesselNonvanishingReduction
 public import Formalism.SharpRestriction.CuspSpanNormBounds.BridgeLemma3
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.SettingExistence
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0047
 
 @[expose] public section
 

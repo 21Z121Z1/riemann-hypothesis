@@ -2,17 +2,14 @@ module
 
 public import Mathlib
 public import Development.WeilBound.RepresentationTheoryGL.RegularisedSiegelWeil.SingularNullSets.WeakApproximationFinitePlace
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HaarScalingMultiplicative
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IsFieldIdemOne
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MeasureUnitImage
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MeasureComplementImageEqZero
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.PointEqTranslate
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.PieceMeasureLtTop
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsDependentColumn
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.GUEqOneAdd
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsGlGD
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1390
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0013
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0039
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0044
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0031
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0033
 public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CompInfSingleInfSelf
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsFrameLeftInvGram
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0533
 
 @[expose] public section
 

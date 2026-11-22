@@ -1,10 +1,10 @@
 module
 
 public import Mathlib
-public import Formalism.UnipotentAdelicQuotients.WeylLatDual
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.PolFunApply
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.WeylRowActionMemWeylLatticeSquare
-public import Formalism.GradedWeylDivisibility.FockSpaceTableaux.LClosedeqLemmas
+public import Formalism.UnipotentAdelicQuotients.Bundle0002
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0017
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0032
+public import Formalism.GradedWeylDivisibility.FockSpaceTableaux.Bundle0010
 public import Development.AbelianVarietyTheory.Proofs.CoherentCohomologyProofs.ClosedBallValuationSubringToSubring
 
 @[expose] public section

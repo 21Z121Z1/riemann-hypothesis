@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Development.ResolutionOfSingularities.EmbeddedResolution.DerivativeIdeal.DerivativeIdeal
-public import Development.ResolutionOfSingularities.EmbeddedResolution.DerivativeIdeal.DerivativeIdealLocalization
+public import Development.ResolutionOfSingularities.EmbeddedResolution.DerivativeIdeal.Bundle0002
 public import Development.ResolutionOfSingularities.Foundations.Schemes.IdealSheafData
 
 @[expose] public section

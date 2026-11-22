@@ -2,12 +2,11 @@ module
 
 public import Formalism.SharpRestriction.GlobalSchurBounds.GlobalRankLatticeProofs.UnitTraceSumBounds.BeConjOfNormHolds
 public import Formalism.SharpRestriction.GlobalSchurBounds.GlobalRankLatticeProofs.UnitTraceSumBounds.AdditionIdentityOfSigmaFormulaUnit
-public import Formalism.SharpRestriction.GlobalSchurBounds.GlobalRankLatticeProofs.UnitTraceSumBounds.FormalGroupLawFirstHalfHolds
+public import Formalism.SharpRestriction.GlobalSchurBounds.GlobalRankLatticeProofs.UnitTraceSumBounds.Bundle0004
 public import Mathlib
-public import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.FglTriFactor
-public import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.FglChordFactor
-public import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.CubicExponentialFactor
-public import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.PhiCubeOfFactor
+public import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.Bundle0018
+public import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.Bundle0020
+public import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.Bundle0013
 
 @[expose] public section
 

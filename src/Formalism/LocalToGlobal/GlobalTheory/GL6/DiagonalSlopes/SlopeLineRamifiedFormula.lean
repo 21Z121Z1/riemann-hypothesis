@@ -4,7 +4,7 @@ public import Formalism.LocalToGlobal.GlobalTheory.GL6.DiagonalSlopes.SlopeFormu
 public import Formalism.LocalToGlobal.GlobalTheory.GL6.DiagonalSlopes.CharacterFiniteLevelZeroOfForms
 public import Formalism.LocalToGlobal.GlobalTheory.GL6.DiagonalSlopes.GroupActionMulSingleEqDilation
 public import Formalism.SharpRestriction.GlobalSchurBounds.FiniteModelOfAdmissibleTransports
-public import Formalism.LocalToGlobal.GlobalTheory.GL6.DiagonalSlopes.AdmissibleStabilisersOfCompatibleForms
+public import Formalism.LocalToGlobal.GlobalTheory.GL6.DiagonalSlopes.Bundle0002
 public import Formalism.SharpRestriction.GlobalSchurBounds.LinkMin
 
 @[expose] public section

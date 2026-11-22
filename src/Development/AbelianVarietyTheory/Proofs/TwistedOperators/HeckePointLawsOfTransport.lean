@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IsHkIsogEtaleUnique
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.FramedPointBaseChangeUniqueReflIff
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0371
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0023
 
 @[expose] public section
 

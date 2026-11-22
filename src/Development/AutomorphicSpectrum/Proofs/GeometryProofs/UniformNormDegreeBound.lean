@@ -4,18 +4,54 @@ public import Mathlib
 public import Development.AutomorphicSpectrum.PublishedTheorems.Geometry₂.NefRR
 public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.ModelSmall
 public import Development.AutomorphicSpectrum.Statements.TowerExistence.GoodTowerExistsX
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.InterNamed
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArithmeticIntersection.MultihomogeneousIdeals.ExistsUniqueStatement
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsEmbeddingPieces
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.Bundle0012
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArithmeticIntersection.MultihomogeneousIdeals.Bundle0001
+public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0036
 public import Development.AutomorphicSpectrum.Definitions.MetricPeriods.HasMultiplier
 public import Development.AutomorphicSpectrum.Definitions.DivisibilityTowers.HeckeSectionsIsotropicCommutatorPairingPower
 public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.OverLaUnique
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.InterSt
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.Bundle0006
 public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.UniformNormHeightCountStatement
 public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.UniformNormHeightEstimateStatement
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.AllWeightSectionsCompatStatement
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LatticeSectionsCuspLawsStatement
-public import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.FlagDegreeWeightFormula
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.AllWeightSectionsCompat
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.CInfGood
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.Bundle0016
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0027
+public import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.Bundle0002
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArakelovVolumes.UpperBounds.Bundle0007
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArakelovVolumes.UpperBounds.Bundle0008
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.FundamentalDomains.Bundle0004
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArakelovVolumes.ArakelovInstances.Bundle0001
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0021
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.SquareIntegrability.Bundle0005
+public import Development.AutomorphicSpectrum.Definitions.DivisibilityTowers.GoodOrigin
+public import Development.AbelianVarietyTheory.BlockTheory.ExistenceTori.UnitaryHaarVolume
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.FundamentalDomains.Bundle0010
+public import Formalism.LocalToGlobal.CMDeterminantIdeals.CMIdealValuations.Bundle0001
+public import Formalism.LocalToGlobal.CMDeterminantIdeals.CMIdealValuations.ProdMulLeDetIdeal
+public import Formalism.LocalToGlobal.CMDeterminantIdeals.CMIdealValuations.ValuationLeOfEqAlgebraMap
+public import Formalism.LocalToGlobal.CMDeterminantIdeals.CMIdealValuations.AbsNormSpanGalois
+public import Formalism.LocalToGlobal.CMDeterminantIdeals.CMIdealValuations.Bundle0002
+public import Formalism.LocalToGlobal.CMDeterminantIdeals.CMIdealValuations.ExistsEvalNeZeroOfTotalDegreeLt
+public import Formalism.LocalToGlobal.CMDeterminantIdeals.CMIdealValuations.FiniteDetAddSmulOneEqZero
+public import Formalism.LocalToGlobal.CMDeterminantIdeals.CMIdealValuations.LargeResidueExtensionLemma
+public import Formalism.LocalToGlobal.CMDeterminantIdeals.CMIdealValuations.HermitianFormGramBlockBasis
+public import Development.AbelianVarietyTheory.Definitions.Foundations.IsProbabilityMeasureMuPart
+public import Formalism.LocalToGlobal.ProjectiveLattices.PartitionExtendByZeroAntitone
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.FundamentalDomains.Bundle0003
+public import Formalism.LocalToGlobal.Divisibility.Bundle0001
+public import Development.AutomorphicSpectrum.Statements.GeometryStatements.Bundle0004
+public import Development.AutomorphicSpectrum.Statements.GeometryStatements.FlatDegree
+public import Formalism.MeanHeightDescent.CombinedAverageDegreeBound
+public import Formalism.MonomialMeanResidues.FilteredDegree
+public import ReciprocityTheory.L2DbarEstimates.PlurisubharmonicCharts.Bundle0001
+public import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.Statements
+public import Formalism.LocalToGlobal.ProjectiveLattices.CompHt
+public import Formalism.LocalToGlobal.IndefiniteForms.IndefiniteTree.RealCubicMeans.LogMeanShares.LogMeanStatements.HSClaim
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.HeightTheory.TheoremA
+public import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.Bundle0021
+public import Development.WeilBound.CoreStatements.HomogeneousNonvanishing.YBrLat
+public import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.Bundle0002
 
 @[expose] public section
 
@@ -118,8 +154,8 @@ theorem volL_eq_of_growth [DecidableEq (CMType H)] {U : ∀ σ : c.F →+* ℂ, 
   have hcusp : ∀ n : ℕ, cuspOn U h (n • a) Z = GlobalTheory.AllWt.cuspOn U Z (n • GlobalTheory.AllWt.wtOf Dw u 0) := by
     intro n
     have hWn : WEq Dw (n • a) (n • (GlobalTheory.AllWt.wtOf Dw u 0).1) := fun τ i hi => by simp [hW τ i hi]
-    rw [(((GlobalTheory.T.lattice_sections_cusp_laws E H Dw l Xo c r U h e hL (n • a) 0).2 _ hWn).2.2.2.2.2 Z).1,
-      (GlobalTheory.T.all_weight_sections_compat E H Dw l Xo c r U h e hL (n • (GlobalTheory.AllWt.wtOf Dw u 0).1) Z).2.2.1]
+    rw [(((_root_.PositivityTheory.UnitarySelfGeneration.y_br_lat E H Dw l Xo c r U h e hL (n • a) 0).2 _ hWn).2.2.2.2.2 Z).1,
+      (_root_.GlobalTheory.CompanionTheory.Ar.Rec.bridge_allWt E H Dw l Xo c r U h e hL (n • (GlobalTheory.AllWt.wtOf Dw u 0).1) Z).2.2.1]
     conv_rhs => rw [hG0]
     rw [Prod.smul_mk, smul_zero]
   have hfun : (fun n : ℕ => ((Top.dimFl (CMType H) (Dw.p + Dw.q)).factorial : ℝ) *

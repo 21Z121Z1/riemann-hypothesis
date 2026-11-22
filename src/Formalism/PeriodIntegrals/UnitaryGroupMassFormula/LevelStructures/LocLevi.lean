@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LevelStructures.ConjugateLevelLeMaximalCompact
+public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LevelStructures.Bundle0001
 
 @[expose] public section
 

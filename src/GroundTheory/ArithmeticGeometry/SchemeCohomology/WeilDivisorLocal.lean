@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import GroundTheory.ArithmeticGeometry.SchemeCohomology.WeilDivisor
+public import GroundTheory.ArithmeticGeometry.SchemeCohomology.Bundle0001
 
 @[expose] public section
 

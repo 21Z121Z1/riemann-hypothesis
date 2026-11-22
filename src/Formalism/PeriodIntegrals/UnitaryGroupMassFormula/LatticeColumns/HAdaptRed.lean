@@ -1,8 +1,8 @@
 module
 
-public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LatticeColumns.HAdaptGen
+public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LatticeColumns.Bundle0009
 public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LatticeColumns.LevelClauseAdaptedBasis
-public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LatticeIndices.SecondCoordsMulGL
+public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LatticeIndices.Bundle0025
 
 @[expose] public section
 

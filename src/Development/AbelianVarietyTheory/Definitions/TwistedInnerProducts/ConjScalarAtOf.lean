@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.ConjScalarThm
+public import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.Bundle0004
 
 @[expose] public section
 

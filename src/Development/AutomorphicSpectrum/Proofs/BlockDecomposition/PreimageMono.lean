@@ -6,25 +6,23 @@ public import Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCoh
 public import Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.PerfectoidPullbacks.GlobalSerreRelations.GlobSerreSt
 public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SubMemOfMk
 public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.StCocycle
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.GradedFormCocycle
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.GradedFormAdd
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.GradedFormAction
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.GradedFormLocalOfFrame
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SheafFiltrationProperty
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ChartIsGood
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ChartDividedPowersGradedConstant
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0147
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0148
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0131
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0232
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0135
 public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsChartFromCoordinates
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsChart
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0237
 public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LiftCocycleMem
 public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SubMemOfLift
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.GradedCechCohomologyFinite
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CoverCupActionBasis
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.StableCoverCechVanishing
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.TruncatedWittIsNoetherian
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0497
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0146
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0167
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0239
 public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LocalGradedVanishing
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CoordinatesRestrictAffineOpenStatement
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0123
 public import Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.PerfectoidPullbacks.GlobSerre
-public import Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.PerfectoidPullbacks.PolynomialSiteTraces.PolyAll
+public import Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.PerfectoidPullbacks.PolynomialSiteTraces.Bundle0001
 
 @[expose] public section
 
@@ -218,7 +216,7 @@ theorem free_at (hp : p ≠ 0) (hn : IsNilpotent (p : R)) {V W : X.Opens} (h : W
     (c : Coord q V d) {u : Fin d → ∀ T : Thick (nlFun γ p X q κ), T.B}
     (hu : IsLift (fib hI q κ γ p) (jF hI q κ ⁻¹ᵁ V) (fun i => jf hI q κ V (c.t i)) u) (r : ℕ) :
     Free (fib hI q κ γ p) (jF hI q κ ⁻¹ᵁ W) (SQ q κ γ p W) r u := by
-  obtain ⟨c', hc'⟩ := GlobalTheory.T.coordinates_restrict_affine_open c h hW
+  obtain ⟨c', hc'⟩ := _root_.GlobalTheory.CompanionTheory.CoordRes.main c h hW
   have hu' : IsLift (fib hI q κ γ p) (jF hI q κ ⁻¹ᵁ W) (fun i => jf hI q κ W (c'.t i)) u :=
     isLift_res _ (preimage_mono' hI h) hu fun i => by rw [hc', jf_rs]
   obtain ⟨E, σ, θ, hGr, hbot, hco, hσ, hpt⟩ := frame_at hI hp hn c' u hu'

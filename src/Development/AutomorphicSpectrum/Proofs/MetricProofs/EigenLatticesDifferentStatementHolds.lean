@@ -2,9 +2,9 @@ module
 
 public import Mathlib
 public import GroundTheory.HeightsAndTheta.Heights.StabilizerCovolume.EigenLatDifferent
-public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.ProjSumSumEmbeddingsEqTrace
-public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.DifferentGeneratorDualIntegral
-public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.CapelliComplements.GeneralBFactThird
+public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.Bundle0016
+public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.Bundle0014
+public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.CapelliComplements.Bundle0002
 
 @[expose] public section
 

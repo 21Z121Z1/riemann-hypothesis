@@ -1,10 +1,10 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.IsGaugeAll
-public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.ExistsIsSatFlagOne
+public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.Bundle0009
+public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.Bundle0010
 public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.OrthogonalCanonicalFiltrationStepsAutPoint
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.AutPointMajorantFramesGiveMajorants
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0121
 
 @[expose] public section
 

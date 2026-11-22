@@ -1,14 +1,13 @@
 module
 
 public import Mathlib
-public import Formalism.LocalToGlobal.Columns.ColFormsLemmas
+public import Formalism.LocalToGlobal.Columns.Bundle0004
 public import Formalism.LocalToGlobal.Columns.LevGCount
 public import Formalism.LocalToGlobal.Columns.AlgebraMapMemMaximalIdealPowIff
 public import Formalism.LocalToGlobal.Columns.HeckeSpCount
-public import Formalism.LocalToGlobal.Columns.Inputs
-public import Formalism.GL3MeanSquares.HookFormulaTorsion.DimensionMassJointBound
-public import Formalism.GL3MeanSquares.HookFormulaTorsion.OneAddInvPowLeExpOne
-public import Formalism.GL3MeanSquares.RankMulPowThreeHalvesLeFourthPower
+public import Formalism.LocalToGlobal.Columns.Bundle0008
+public import Formalism.GL3MeanSquares.HookFormulaTorsion.Bundle0004
+public import Formalism.GL3MeanSquares.Bundle0005
 public import Formalism.GL3MeanSquares.HookFormulaTorsion.SumWeightsOverPrimeLeHalfDegree
 public import Formalism.HermitianLattices.FinalNeighbourConstruct
 public import Formalism.HermitianLattices.FinalMass

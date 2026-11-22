@@ -1,7 +1,7 @@
 module
 
 public import Formalism.SharpRestriction.GrowthBounds.TwistedSubstitution.TypeBound
-public import Formalism.SharpRestriction.GrowthBounds.GLWeightTheory
+public import Formalism.SharpRestriction.GrowthBounds.Bundle0003
 
 @[expose] public section
 

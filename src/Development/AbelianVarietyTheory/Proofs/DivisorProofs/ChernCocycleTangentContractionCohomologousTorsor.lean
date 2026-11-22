@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsCocCocOf
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsTangentVectorContractionTwoCochainProduct
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2188
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2173
 public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.PreimageEqTopOfSurjective
 
 @[expose] public section

@@ -5,7 +5,7 @@ public import Formalism.LocalToGlobal.IndefiniteForms.IndefSide
 public import Formalism.QuotientMetricDivisors.Statement
 public import Formalism.JacquetSubsetSums.JacquetSubsetSum
 public import Formalism.DivisorInequality.StatementObj
-public import Formalism.QuotientMetricDivisors.DivIntoDualShift
+public import Formalism.QuotientMetricDivisors.Bundle0002
 import Formalism.QuotientMetricDivisors.HermitianTwistDivisors.ImageLcv
 
 @[expose] public section

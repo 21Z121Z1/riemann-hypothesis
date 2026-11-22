@@ -2,9 +2,9 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.ArchimedeanThetaValues.IsFramedPointChangedByLetters
-public import Formalism.LocalToGlobal.ProjectiveLattices.PtFree
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.Rationality.FinCoreSt
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.Rationality.QuotSt
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0011
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.Rationality.Bundle0002
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.Rationality.Bundle0001
 
 @[expose] public section
 

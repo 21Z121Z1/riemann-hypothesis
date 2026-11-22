@@ -1,9 +1,9 @@
 module
 
-public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.TensorRepresentations.Resolvent
+public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.TensorRepresentations.Bundle0004
 public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.TensorRepresentations.Residue
-public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.RigidityTheorems.MultOne
-public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.RigidityTheorems.IsInLieAlgebraISmulAddConjTranspose
+public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.RigidityTheorems.Bundle0003
+public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.RigidityTheorems.Bundle0001
 
 @[expose] public section
 

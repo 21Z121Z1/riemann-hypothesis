@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.ResolutionOfSingularities.Foundations.Blowup.BlowupBasic
+public import Development.ResolutionOfSingularities.Foundations.Blowup.Bundle0001
 public import Development.ResolutionOfSingularities.EmbeddedResolution.EtaleCoordinates.StrictNormalCrossings
 public import Development.ResolutionOfSingularities.EmbeddedResolution.DerivativeIdeal.IdealSheafOrder
 public import Development.ResolutionOfSingularities.Foundations.Schemes.IdealSheafData

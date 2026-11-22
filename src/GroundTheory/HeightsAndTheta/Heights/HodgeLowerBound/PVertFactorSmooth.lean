@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.StatementsVertFactorSmooth
+public import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.Bundle0017
 
 @[expose] public section
 

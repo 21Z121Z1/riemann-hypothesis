@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.StatementsChartResidueDegreeAlgClosed
-public import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.StatementsChowFormBirationalAlgClosed
+public import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.Bundle0014
+public import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.Bundle0015
 public import GroundTheory.HeightsAndTheta.Heights.ChowForms.PChartResidueDegree
 
 @[expose] public section

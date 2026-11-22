@@ -1,7 +1,7 @@
 module
 
 public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.TensorRepresentations.DecompB
-public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.DcAevalIntertwine
+public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0011
 
 @[expose] public section
 

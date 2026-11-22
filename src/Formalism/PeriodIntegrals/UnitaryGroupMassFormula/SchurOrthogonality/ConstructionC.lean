@@ -1,9 +1,8 @@
 module
 
 public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.SchurOrthogonality.InstMeasurableSpaceMat
-public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.SchurOrthogonality.CzDiagUnitary
+public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.SchurOrthogonality.Bundle0001
 public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.SchurOrthogonality.CiEvalMSmul
-public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.SchurOrthogonality.CfEqSumOfSubset
 public import Formalism.GradedWeylDivisibility.FinalD
 
 @[expose] public section

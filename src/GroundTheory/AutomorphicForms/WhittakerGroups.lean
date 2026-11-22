@@ -4,9 +4,9 @@ public import Mathlib
 public import GroundTheory.AutomorphicForms.FiniteBruhat
 public import GroundTheory.AutomorphicForms.Iwasawa
 public import GroundTheory.AutomorphicForms.GLnLocal
-public import GroundTheory.AutomorphicForms.LocallyProfinite
+public import GroundTheory.AutomorphicForms.Bundle0004
 public import GroundTheory.AutomorphicForms.MeasuresModulus
-public import GroundTheory.PowerSubgroups.CountableNeighbourhoods.NormZpow
+public import GroundTheory.PowerSubgroups.CountableNeighbourhoods.Bundle0001
 
 @[expose] public section
 

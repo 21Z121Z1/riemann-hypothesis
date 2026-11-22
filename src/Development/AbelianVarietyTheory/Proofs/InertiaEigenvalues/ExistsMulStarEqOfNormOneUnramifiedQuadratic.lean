@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.FourierMatch
+public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0001
 public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.TotalDegreeCMulXMulX
 
 @[expose] public section

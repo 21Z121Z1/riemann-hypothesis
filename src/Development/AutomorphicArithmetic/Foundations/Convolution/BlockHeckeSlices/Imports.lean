@@ -1,7 +1,7 @@
 module
 
 public import Development.AutomorphicArithmetic.Foundations.Convolution.ASmooth
-public import Development.AutomorphicArithmetic.Foundations.Convolution.BlockHeckeSlices.DatDatum
+public import Development.AutomorphicArithmetic.Foundations.Convolution.BlockHeckeSlices.Bundle0001
 public import Development.AutomorphicArithmetic.Foundations.Convolution.BlockHeckeSlices.KillCore
 public import Development.AutomorphicArithmetic.Foundations.Convolution.BlockHeckeSlices.CuspidalNormBounds.FunKill
 public import Development.AutomorphicArithmetic.Foundations.Convolution.BlockHeckeSlices.CuspidalNormBounds.DatDatum

@@ -3,8 +3,8 @@ module
 public import Mathlib
 public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.NotIsCompactUnivFv
 public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.MemClosureUnitary
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ContinuousLocAdele
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ClosureDivMem
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0790
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0789
 
 @[expose] public section
 

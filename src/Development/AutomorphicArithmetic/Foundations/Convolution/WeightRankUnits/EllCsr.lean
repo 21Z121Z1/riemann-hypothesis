@@ -1,7 +1,7 @@
 module
 
 public import Development.AutomorphicArithmetic.Foundations.Convolution.WeightRankUnits.DeltaProdAlt
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.EllipticLocalIdentity
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0559
 
 @[expose] public section
 

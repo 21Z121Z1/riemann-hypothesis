@@ -2,7 +2,7 @@ module
 
 public import Formalism.SharpRestriction.LevelLetterCocycles.DataN
 public import Formalism.SharpRestriction.LevelLetterCocycles.DataNLoc
-public import Formalism.WeaklyAdmissibleFiltrations.StatementTor
+public import Formalism.WeaklyAdmissibleFiltrations.Bundle0001
 public import Formalism.GaloisCohomology.Statement
 
 @[expose] public section

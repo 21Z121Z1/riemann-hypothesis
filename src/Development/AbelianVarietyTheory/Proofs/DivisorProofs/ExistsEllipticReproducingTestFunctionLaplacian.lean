@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CasKOp
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EqZeroOfMemWeakIn
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsTestFunctionReproducingLaplacianPolySolutiStatement
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0709
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1176
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsTestFunctionReproducingLaplacianPolySoluti
 
 @[expose] public section
 
@@ -45,6 +45,6 @@ theorem reproduce : ∀ (E : Type) [Field E] [NumberField E] [_root_.NumberField
     ν.IsAddHaarMeasure → ∀ p : Polynomial ℂ, p ≠ 0 → ∃ α : Lie E a → ℂ, IsTest (invSet E a) α ∧
       ∀ f : Lie E a → ℂ, ContDiffOn ℝ ∞ f (invSet E a) → (∀ y ∈ invSet E a, polyF E a p f y = 0) →
         ∫ y, α y * f y ∂ν = f (oneL E a) :=
-  GlobalTheory.T.exists_testFunction_reproducing_laplacianPoly_solutions
+  _root_.GlobalTheory.GLParametrix.exists_test_reproducing
 
 end GlobalTheory.HCParam

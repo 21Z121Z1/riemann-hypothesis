@@ -1,9 +1,9 @@
 module
 
-public import Formalism.GaussJetBounds.GenLogInverse
+public import Formalism.GaussJetBounds.Bundle0001
 public import Formalism.GaussJetBounds.StatementG
-public import Formalism.GaussJetBounds.GaussJetProofs.ThmAJet
-public import Formalism.GaussJetBounds.GaussJetProofs.LemmaRA
+public import Formalism.GaussJetBounds.GaussJetProofs.Bundle0005
+public import Formalism.GaussJetBounds.GaussJetProofs.Bundle0004
 
 @[expose] public section
 

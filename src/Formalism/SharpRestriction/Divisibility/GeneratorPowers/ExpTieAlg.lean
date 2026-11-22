@@ -1,7 +1,7 @@
 module
 
-public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.ExpTie
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.TaylorDiscriminants.WickVanishing.MonoVal
+public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0006
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.TaylorDiscriminants.WickVanishing.Bundle0001
 
 @[expose] public section
 

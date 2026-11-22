@@ -1,11 +1,11 @@
 module
 
 public import Formalism.LocalToGlobal.InertKernelTheory.DefsMMIsom
-public import Formalism.LocalToGlobal.InertKernelTheory.InertCoprimeLemmas.ReBase
+public import Formalism.LocalToGlobal.InertKernelTheory.InertCoprimeLemmas.Bundle0006
 public import Formalism.LocalToGlobal.TorsionIntegrality.UniformGaussModels.FinalFree
-public import Formalism.LocalToGlobal.InertKernelTheory.DefsFrONB
+public import Formalism.LocalToGlobal.InertKernelTheory.Bundle0011
 public import Formalism.LocalToGlobal.InertKernelTheory.InertCoprimeLemmas.UnitSubstOfLoc
-public import Formalism.LocalToGlobal.InertKernelTheory.InertCoprimeLemmas.TestVectorMemSchwartzBruhat
+public import Formalism.LocalToGlobal.InertKernelTheory.InertCoprimeLemmas.Bundle0001
 public import Formalism.LocalToGlobal.InertKernelTheory.InertCoprimeLemmas.AlgTrans
 
 @[expose] public section

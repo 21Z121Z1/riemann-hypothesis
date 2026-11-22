@@ -2,9 +2,8 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.Jets.CmLatticeCommutatorPairingPowEqOneOfGoodLift
-public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.ConstantCoeffShiftS
-public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.CpTransportedTaylorSeriesInChartRingHomLaws
-public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.DvdAevalSubAevalTwo
+public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0011
+public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0012
 public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.UwEllipticFlow
 
 @[expose] public section

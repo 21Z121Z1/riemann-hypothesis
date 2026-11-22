@@ -4,17 +4,17 @@ public import Mathlib
 public import Development.AutomorphicSpectrum.Statements.GeometryStatements.KeyBadSt
 public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsThetaMeanSquareNorm
 public import Development.AutomorphicSpectrum.Statements.GeometryStatements.ZhangDimensionPushDownGrassmannianHeightBounds
-public import GroundTheory.HeightsAndTheta.Heights.KernelsLattice
+public import GroundTheory.HeightsAndTheta.Heights.Bundle0001
 public import GroundTheory.HeightsAndTheta.Heights.LatticeLemmas.StatementsBundles
-public import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.RulePow
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsLevelGoodAtAllPrimesAndIdx
-public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsLieCoordinatesLieMultIff
-public import Development.WeilBound.CoreStatements.HodgeTatePoints.KftwoHost
+public import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.Bundle0059
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0040
+public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0067
+public import Development.WeilBound.CoreStatements.HodgeTatePoints.Bundle0027
 public import Development.WeilBound.CoreStatements.HodgeTatePoints.KftwoSquare
-public import Development.WeilBound.CoreStatements.HodgeTatePoints.KftwoDatum
+public import Development.WeilBound.CoreStatements.HodgeTatePoints.Bundle0061
 public import Development.WeilBound.CoreStatements.HodgeTatePoints.KftwoPoint
-public import Development.WeilBound.CoreStatements.HodgeTatePoints.KftwoExt
-public import Development.WeilBound.CoreStatements.HodgeTatePoints.KftwoFrame
+public import Development.WeilBound.CoreStatements.HodgeTatePoints.Bundle0004
+public import Development.WeilBound.CoreStatements.HodgeTatePoints.Bundle0063
 public import Development.WeilBound.CoreStatements.HodgeTatePoints.KftwoModel
 
 @[expose] public section

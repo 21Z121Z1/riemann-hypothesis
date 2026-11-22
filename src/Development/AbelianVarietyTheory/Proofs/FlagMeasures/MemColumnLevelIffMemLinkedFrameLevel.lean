@@ -1,11 +1,11 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.LevelMatchIff
-public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.FrLink
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.AdelicColumnLatticeEqSpanPartTransportedFrameStatement
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsCoprimeProjectionAdelicLatticeIntoColumnsStatement
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ColumnsGroupFixesAdelicLatticeIffColumnsLatticeStatement
+public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.Bundle0015
+public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.Bundle0014
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0321
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsCoprimeProjectionAdelicLatticeIntoColumns
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ColumnsGroupFixesAdelicLatticeIffColumnsLattice
 
 @[expose] public section
 
@@ -381,10 +381,10 @@ end Cols
 
 theorem level_link : ∀ (D : D7) (X : HidaSetting D) (u : D.what₂.Word) (wt : (VS D).V ≃ₗ[D.host.E] (VS D).V) (ιA : X.B.I.E ⊗[X.B.I.F] Af X.B.I.F ≃+* D.host.E ⊗[D.host.F] Ad D.host.F), WittX X u wt → IsAdeleIso X ιA → ∀ (hK : X.LevelSubgroupCharacter) (Fr : FrQ D wt), FrLink X u wt ιA Fr → ∀ (h : Hfin X u) (y : Formalism.UG.UPts (Formalism.L2.Forms.sigD D) (Formalism.L2.Forms.gramN D 0 (Nat.zero_le _)) (Ad D.host.F)), RepF X wt ιA (h : X.B.I.Gf) y → (h ∈ Ku X u hK ↔ Fr.InK y.1) := by
   intro D X u wt ιA hW hι hK Fr hL h y hR
-  obtain ⟨hΛ, -, hinj, -, -, hrepA⟩ := GlobalTheory.T.adelicColumnLattice_eq_spanPart_transportedFrame D X u wt ιA hW hι
+  obtain ⟨hΛ, -, hinj, -, -, hrepA⟩ := _root_.GlobalTheory.St.G.MHat.mhat_coords D X u wt ιA hW hι
   have hrep := hrepA h y hR
-  obtain ⟨c, p, hc, himg, hfix, hpL, hpe, -, -⟩ := GlobalTheory.T.exists_coprime_projection_adelic_lattice_into_columns D X u wt ιA hW hι
-  have hst := GlobalTheory.T.columns_group_fixes_adelic_lattice_iff_columns_lattice D X u wt ιA hW hι h y hR
+  obtain ⟨c, p, hc, himg, hfix, hpL, hpe, -, -⟩ := _root_.GlobalTheory.St.G.g_proj D X u wt ιA hW hι
+  have hst := _root_.GlobalTheory.St.G.stabK_iff D X u wt ιA hW hι h y hR
   have hcop : Nat.Coprime c X.B.g := by
     have := hc.gcd_eq
     simpa [Nat.Coprime] using this

@@ -3,7 +3,7 @@ module
 public import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.ThetaNormCommutation.FactorFields.TensorCompl
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FiniteTwistedClassesCharpoly
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.KappaConstantMulOfCoprimeEllipticPolynomials
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.LeftMulMatrixTransfer
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0024
 
 @[expose] public section
 

@@ -1,10 +1,9 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.ExistsFactorisationCuspidal
-public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.FlathTensorProduct
-public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.UnitaryIrreducibleAdmissible
-public import Development.AbelianVarietyTheory.Definitions.Foundations.SmoothPartStable
+public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.Bundle0013
+public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.Bundle0014
+public import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0002
 
 @[expose] public section
 

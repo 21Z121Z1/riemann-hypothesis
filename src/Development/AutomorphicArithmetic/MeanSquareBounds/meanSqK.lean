@@ -2,11 +2,11 @@ module
 
 public import Development.AutomorphicArithmetic.MeanSquareBounds.PrimeSetTwoBounds
 public import Development.AutomorphicArithmetic.MeanSquareBounds.twistK
-public import Development.AutomorphicArithmetic.MeanSquareBounds.SumMinLeDiv
+public import Development.AutomorphicArithmetic.MeanSquareBounds.Bundle0002
 public import Development.AutomorphicArithmetic.MeanSquareBounds.SPsqLe
-public import Development.AutomorphicArithmetic.MeanSquareBounds.RRLe
-public import Development.AutomorphicArithmetic.MeanSquareBounds.SumCNLe
-public import Development.AutomorphicArithmetic.MeanSquareBounds.MeanSqAbs
+public import Development.AutomorphicArithmetic.MeanSquareBounds.Bundle0003
+public import Development.AutomorphicArithmetic.MeanSquareBounds.Bundle0001
+public import Development.AutomorphicArithmetic.MeanSquareBounds.Bundle0005
 
 @[expose] public section
 

@@ -1,7 +1,7 @@
 module
 
 public import Formalism.LocalToGlobal.TorsionIntegrality.GaussSumParity.KurComplete
-public import Formalism.LocalToGlobal.TorsionIntegrality.GaussSumParity.KummerThetaLogarithms.NonVac
+public import Formalism.LocalToGlobal.TorsionIntegrality.GaussSumParity.KummerThetaLogarithms.Bundle0004
 public import Formalism.LocalToGlobal.TorsionIntegrality.GaussSumParity.KummerThetaLogarithms.SecondLevelOfNormHolds
 
 @[expose] public section

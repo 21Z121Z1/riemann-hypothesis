@@ -1,10 +1,10 @@
 module
 
 public import Mathlib
-public import Development.ResolutionOfSingularities.EmbeddedResolution.EtaleCoordinates.EtaleCoordinates
+public import Development.ResolutionOfSingularities.EmbeddedResolution.EtaleCoordinates.Bundle0001
 public import Development.ResolutionOfSingularities.EmbeddedResolution.EtaleCoordinates.FormallyEtaleCoordinates
 public import Development.ResolutionOfSingularities.EmbeddedResolution.EtaleCoordinates.IdealGeneratorsFromBase
-public import Development.ResolutionOfSingularities.EmbeddedResolution.AlgebraicPreliminaries.SpanSingletonProduct
+public import Development.ResolutionOfSingularities.EmbeddedResolution.AlgebraicPreliminaries.Bundle0002
 
 @[expose] public section
 

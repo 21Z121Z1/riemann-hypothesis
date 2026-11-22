@@ -1,12 +1,12 @@
 module
 
-public import Development.AutomorphicArithmetic.FrobeniusLocalisation.DiffDefs
-public import Development.AutomorphicArithmetic.FrobeniusLocalisation.MemRam
-public import Development.AutomorphicArithmetic.FrobeniusLocalisation.InertD
-public import Development.AutomorphicArithmetic.FrobeniusLocalisation.inertQ
-public import Development.AutomorphicArithmetic.FrobeniusLocalisation.CondESpec
-public import Development.AutomorphicArithmetic.FrobeniusLocalisation.LogRdSum
-public import Development.AutomorphicArithmetic.FrobeniusLocalisation.LayerBot
+public import Development.AutomorphicArithmetic.FrobeniusLocalisation.Bundle0001
+public import Development.AutomorphicArithmetic.FrobeniusLocalisation.Bundle0006
+public import Development.AutomorphicArithmetic.FrobeniusLocalisation.Bundle0009
+public import Development.AutomorphicArithmetic.FrobeniusLocalisation.Bundle0008
+public import Development.AutomorphicArithmetic.FrobeniusLocalisation.Bundle0004
+public import Development.AutomorphicArithmetic.FrobeniusLocalisation.Bundle0002
+public import Development.AutomorphicArithmetic.FrobeniusLocalisation.Bundle0005
 public import Formalism.SharpRestriction.RamificationFrobenius.TotientGaloisClasses.InertiaGaloisSymmetry.DvdDiscrOfInertia
 
 @[expose] public section

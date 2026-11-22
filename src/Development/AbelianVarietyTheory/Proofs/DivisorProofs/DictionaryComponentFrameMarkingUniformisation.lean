@@ -1,15 +1,22 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Divisors.GenReads
-public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.ThExprUniqOfChartIndep2
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsUniqueLinearLiftUniformisedFibres
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.IsDerivAt0CompLinear
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.UnitFrameEqOrthonormalMulTriangular
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0034
+public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0007
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0038
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0029
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0031
 public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.FrameUniformEmbeddingSecond
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.RealAdelesCmFieldEquivComplexCmType
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ArchimedeanMatrixUnitaryContinuousMultiplicativeStatement
-public import Development.AbelianVarietyTheory.Counterexamples.LevelGroupExamples.OrthonormalBaseFrameNeg
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0072
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0074
+public import Development.AbelianVarietyTheory.Definitions.ExistenceOfLattices.Bundle0001
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0031
+public import Formalism.LocalToGlobal.ProjectiveLattices.ExistsParameterConditions
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0023
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0022
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0010
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0020
+public import Development.AbelianVarietyTheory.Counterexamples.LevelGroupExamples.Bundle0004
 
 @[expose] public section
 
@@ -178,7 +185,7 @@ theorem GlobalTheory.AdTh.dict_atComp_markAd : ∀ (D : D7) (H : Geo.Tor.Host D.
   subst hr
   obtain ⟨γ, hγ, hΛ, hm, hfr⟩ := hD.2 h
   obtain ⟨θ', hθ'⟩ := (GlobalTheory.Member.infiniteAdele_bijective D).1
-  obtain ⟨hAr, -, -⟩ := GlobalTheory.T.archimedeanMatrix_unitary_continuous_multiplicative D W θ' hθ'
+  obtain ⟨hAr, -, -⟩ := _root_.GlobalTheory.Member.Arch.archM_spec D W θ' hθ'
   generalize hk : dict h = kx at hΛ hm hfr
   obtain ⟨k, x⟩ := kx
   dsimp only at hΛ hm hfr ⊢

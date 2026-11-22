@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicArithmetic.PrimeDiscriminants.RamDiscr
+public import Development.AutomorphicArithmetic.PrimeDiscriminants.Bundle0002
 
 @[expose] public section
 

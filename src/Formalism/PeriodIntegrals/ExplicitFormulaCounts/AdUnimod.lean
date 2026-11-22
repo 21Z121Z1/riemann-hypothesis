@@ -1,9 +1,8 @@
 module
 
-public import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.AdIndexEq
+public import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.Bundle0025
 public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.AdelicUnimodularity.ConstructionA
-public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.AdelicUnimodularity.ConstructionB
-public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.AdelicUnimodularity.ConstructionD
+public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.AdelicUnimodularity.Bundle0003
 
 @[expose] public section
 

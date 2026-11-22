@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.AmbientBaseHeq
+public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.Bundle0023
 
 @[expose] public section
 

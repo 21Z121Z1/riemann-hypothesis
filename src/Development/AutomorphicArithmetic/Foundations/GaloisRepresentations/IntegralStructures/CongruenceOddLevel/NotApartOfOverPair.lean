@@ -1,16 +1,19 @@
 module
 
-public import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.IntegralStructures.CongruenceOddLevel.ApartOfNotMem
-public import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.IntegralStructures.CongruenceOddLevel.WtDefs
-public import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.IntegralStructures.CongruenceOddLevel.OpenCompactMap
-public import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.IntegralStructures.CongruenceOddLevel.LacunaryBaseWeightAntitone
-public import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.IntegralStructures.CongruenceOddLevel.ExistsTestOp
+public import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.IntegralStructures.CongruenceOddLevel.Bundle0001
+public import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.IntegralStructures.CongruenceOddLevel.Bundle0002
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Divisors.OverPair
-public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.LimWU4OfLimWU3
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsUniqueWeightDefiniteUnitaryAt
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExistsAlgebraicWeightDefiniteUnitaryAutRepStatement
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExistsAlgebraicFormWeightLevelSmoothAtPlaceStatement
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0044
+public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.Bundle0024
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0225
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0232
+public import Development.AbelianVarietyTheory.Statements.EllipticCurveLevels.HasLevel
+public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.RegPolOfRepOf
+public import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.Imports
+public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.Bundle0005
+public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisGeometry₂.ArthurClozelStrongTC
+public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.Bundle0009
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0182
 
 @[expose] public section
 
@@ -118,7 +121,7 @@ theorem congUWG_of (H : StepSt) (hFin : FinU) (D : ∀ a : ℕ, MvPolynomial (Fi
   classical
   intro E _ _ _ l _ ι a ha T _ U hU w₀ v' hw₀ hs₀ hv' hsv hap
   obtain ⟨K, Kw, Kv, hK, hKvo, hfix, hKwv, hoc, hsph, hns, hKs⟩ := exists_level hU hs₀ hsv hap
-  obtain ⟨lam, hlam⟩ := GlobalTheory.T.exists_algebraicWeight_definiteUnitaryAutRep E a U hU.1
+  obtain ⟨lam, hlam⟩ := _root_.GlobalTheory.Cong.exists_weight_of_isAutRepU E a U hU.1
   set K' := K ⊓ Kv.comap (cLoc v') with hK'def
   have hK' : IsLevelAway w₀ K' := isLevelAway_inf hK v' hKvo
   have hOf : OfType lam K' U := ⟨hU.1, hlam, hfix⟩

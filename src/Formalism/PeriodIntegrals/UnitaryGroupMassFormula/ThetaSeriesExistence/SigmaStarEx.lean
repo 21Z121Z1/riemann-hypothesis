@@ -3,11 +3,9 @@ module
 public import Mathlib
 public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.ThetaSeriesExistence.ThetaDerivNe
 public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.ThetaSeriesExistence.Development
-public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.ThetaSeriesExistence.ThetaA
-public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.ThetaSeriesExistence.ThetaNz
-public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.ThetaSeriesExistence.Reduce
+public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.ThetaSeriesExistence.Bundle0002
+public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.ThetaSeriesExistence.Bundle0001
 public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.ThetaSeriesExistence.GenEqOf
-public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.ThetaSeriesExistence.LatExt
 
 @[expose] public section
 

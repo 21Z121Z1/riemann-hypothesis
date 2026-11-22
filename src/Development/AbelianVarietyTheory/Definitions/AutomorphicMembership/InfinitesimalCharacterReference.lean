@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.CenLocOfCenReal
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.DirectSumCancelRight
+public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.Bundle0046
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0019
 public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ContinuousNormFin
 
 @[expose] public section

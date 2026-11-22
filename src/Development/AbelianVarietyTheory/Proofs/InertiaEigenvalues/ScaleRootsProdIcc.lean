@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.LiftQMk
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0878
 
 @[expose] public section
 

@@ -2,9 +2,10 @@ module
 
 public import Development.WeilBound.CoreStatements.AutomorphicKernels.SiegelWeilFormula.LowerRankDatum
 public import Development.WeilBound.CoreStatements.AutomorphicKernels.SiegelWeilFormula.FourierCompactness.SigmaSigmaOfGood
-public import Development.WeilBound.CoreStatements.AutomorphicKernels.SiegelWeilFormula.CayleyTransform.RDIota
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.DenseRationalsPlusSinglePlaceAdelesStatement
-public import Development.WeilBound.CoreStatements.AutomorphicKernels.EisensteinSeriesG2.G2HaarMeasure.UnipotentLeDiagonalStabiliser
+public import Development.WeilBound.CoreStatements.AutomorphicKernels.SiegelWeilFormula.CayleyTransform.Bundle0002
+public import Mathlib
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0255
+public import Development.WeilBound.CoreStatements.AutomorphicKernels.EisensteinSeriesG2.G2HaarMeasure.Bundle0001
 
 @[expose] public section
 
@@ -291,7 +292,7 @@ theorem sum_mem_Sw (w : InfinitePlace F) (s : Fin (Module.finrank F E) → AF F)
     rw [smul_smul, finOne_mul (hs k).1, zero_smul]
 
 theorem dense_Sw (w : InfinitePlace F) : Dense {z : AE F E | ∃ e : E, ∃ s ∈ Sw d w, inclR (F := F) (AF F) e + s = z} := by
-  have hA := GlobalTheory.T.dense_rationals_plus_single_place_adeles F w
+  have hA := _root_.GlobalTheory.CompanionTheory.AddSA.dense_add_place F w
   let Φ : (Fin (Module.finrank F E) → AF F) → AE F E := fun a => ∑ k, a k • kfour.bsA F E k
   have hΦc : Continuous Φ := continuous_finsetSum _ fun k _ => (continuous_apply k).smul continuous_const
   have hΦs : Function.Surjective Φ := fun z => ⟨fun k => (kfour.bsA F E).repr z k, (kfour.bsA F E).sum_repr z⟩

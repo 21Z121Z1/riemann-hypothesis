@@ -5,8 +5,7 @@ public import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange
 public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MatchingTransferOf
 public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SphericalOneOfLocalAlgebra
 public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ConstantTermMultiplicative
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LocMIterateDiag
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IsCompactMaximalPairPlace
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0645
 public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MatchingIdentityOf
 
 @[expose] public section

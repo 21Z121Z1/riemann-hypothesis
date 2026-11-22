@@ -1,12 +1,13 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.PublishedTheorems.Algebra₂.FarguesExact
+public import Development.AutomorphicSpectrum.PublishedTheorems.Algebra₂.Bundle0001
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HodgeTatePairingSandwich
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsIntegrallyClosedInOfIntegers
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HodgeTateSandwichOfPrismaticDieudonneStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PDivGroupOmegaFiniteFreeAndPSqMemDlogSpanStatement
-public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.PrismaticDieudonneAt
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1500
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HodgeTateSandwichOfPrismaticDieudonne
+public import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.Bundle0005
+public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.InjectiveOfSmulMemRange
+public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.Bundle0004
 public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.ExistsCobOneOfIntegral
 
 @[expose] public section
@@ -70,7 +71,7 @@ theorem farguesExact_of_hodge (hP : GlobalTheory.Published.PrismaticDieudonneHod
     exact Nat.cast_ne_zero.2 (Fact.out : p.Prime).ne_zero h5
   obtain ⟨ε, hε₁⟩ := ReciprocityTheory.PGsh.exists_eps (p := p) C _ O hv
   have hε : GlobalTheory.IndefiniteRowSideFullHecke.EpsilonPairingZeta.IsPrimitiveSystem ε := GlobalTheory.PrismModel.isPrimitiveSystem_of_one hε₁
-  have hS := GlobalTheory.T.hodgeTateSandwich_of_prismaticDieudonne hP p C v O hv ε hε
+  have hS := _root_.GlobalTheory.DieudonneSandwich.hodgeTateSandwich_of_prismaticDieudonne₂ hP p C v O hv ε hε
   have hζ : Function.Bijective fun a : ℤ_[p] => a • muTate O ζ h0 h :=
     smul_muTate_bijective ζ h0 h (primitive h0 h h1)
   obtain ⟨B₀, hB₀, -, -⟩ := GlobalTheory.PointGroup.exists_form hv G _ hζ

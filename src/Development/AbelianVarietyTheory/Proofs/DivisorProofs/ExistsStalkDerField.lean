@@ -1,14 +1,14 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Divisors.HasDefect
-public import Development.AbelianVarietyTheory.Definitions.Divisors.RigidForFan
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0060
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0071
 public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.ToroidalCompactificationBis
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsConnK
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2863
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AbelianPartConst
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsRaynaudTorusWeightFunctionInvariantField
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TorusInvariantLiftAddInvariantCombination
-public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.LogDerivativePrincipalPolarisationIndependent
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2864
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2907
+public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0100
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.DivCalc
 
 @[expose] public section

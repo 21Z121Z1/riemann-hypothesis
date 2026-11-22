@@ -1,13 +1,13 @@
 module
 
 public import Mathlib
-public import GroundTheory.GlobalFields.ComplexMultiplication.InseparableFrobeniusFactor
+public import GroundTheory.GlobalFields.ComplexMultiplication.Bundle0011
 public import GroundTheory.ArithmeticGeometry.AbelianVarieties.IsogenyRamification
 public import GroundTheory.ArithmeticGeometry.AbelianVarieties.DivisorsTranslate
 public import GroundTheory.ArithmeticGeometry.AbelianVarieties.DivisorsValuation
 public import GroundTheory.ArithmeticGeometry.AbelianVarieties.DivisorsPic
-public import GroundTheory.GlobalFields.ComplexMultiplication.VariableChangePoints
-public import GroundTheory.GlobalFields.ComplexMultiplication.DualDescentBase
+public import GroundTheory.GlobalFields.ComplexMultiplication.Bundle0001
+public import GroundTheory.GlobalFields.ComplexMultiplication.Bundle0009
 
 @[expose] public section
 

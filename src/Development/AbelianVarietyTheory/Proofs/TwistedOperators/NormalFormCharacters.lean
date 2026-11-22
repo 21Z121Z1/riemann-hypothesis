@@ -2,19 +2,21 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.TwistPlacesOffPrimeQZero
-public import Development.AbelianVarietyTheory.Definitions.Divisors.DiscreteSeriesHermitianUnique
-public import Development.AbelianVarietyTheory.Statements.PlaceShiftStatements.NormSmall
-public import Development.AbelianVarietyTheory.Statements.PlaceShiftStatements.DictAt
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0041
+public import Development.AbelianVarietyTheory.Statements.PlaceShiftStatements.Bundle0002
+public import Development.AbelianVarietyTheory.Statements.PlaceShiftStatements.Bundle0003
 public import Development.AbelianVarietyTheory.Statements.HeckeThetaIntegrals.ThetaIntegralsAgree
 public import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.WeilTensorModels
-public import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.CuspAlongSmoothRows
+public import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.Bundle0015
 public import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.ToricSymbols
 public import Development.AbelianVarietyTheory.Definitions.Foundations.NormSumPairRankZeroOfCurveCoordNorm
 public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.AlgebraicValuesFinite.AlgValsFinMain
 public import Formalism.LocalToGlobal.UnitaryNorms.CharHost
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.HeckeCharUniformiserValueIsAlgebraicStatement
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.HeckeCharLocalValueDivUniformiserPowStatement
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsNumberFieldValuesInEtaCharHalfTwistStatement
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0064
+public import Formalism.LocalToGlobal.UnitaryNorms.IsUnitaryNormOf
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0062
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0093
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0092
 
 @[expose] public section
 
@@ -133,14 +135,14 @@ theorem locIn_alg (L : Type) [Field L] [NumberField L] (χ : HChar L) (m : (L �
     (hS : ∀ v, v ∉ S → χ.UnrAt v) :
     ∃ M : IntermediateField ℚ ℂ, FiniteDimensional ℚ M ∧ ∀ w x, ((χ.loc w x : ℂˣ) : ℂ) ∈ M := by
   classical
-  obtain ⟨N, hN, hdec⟩ := GlobalTheory.T.heckeChar_local_value_div_uniformiser_pow L χ
+  obtain ⟨N, hN, hdec⟩ := _root_.GlobalTheory.HeckeLocDec.loc_div_val_pow L χ
   obtain ⟨M0, hM0, hval⟩ := unr_vals' L χ m hm
   let Z : Finset ℂ := S.image (fun w => ((χ.val w : ℂˣ) : ℂ)) ∪ (Polynomial.nthRoots N (1 : ℂ)).toFinset
   have hint : ∀ z ∈ (Z : Set ℂ), IsIntegral ℚ z := fun z hz => by
     rw [Finset.coe_union, Set.mem_union] at hz
     rcases hz with hz | hz
     · obtain ⟨w, -, rfl⟩ := Finset.mem_image.1 hz
-      exact (GlobalTheory.T.heckeChar_uniformiser_value_isAlgebraic L χ m hm w).isIntegral
+      exact (_root_.GlobalTheory.heckeChar_val_isAlgebraic L χ m hm w).isIntegral
     · have hz' : z ^ N = 1 := by simpa [Polynomial.mem_nthRoots hN] using hz
       exact ⟨Polynomial.X ^ N - 1, Polynomial.monic_X_pow_sub_C 1 hN.ne', by simp [hz']⟩
   haveI : FiniteDimensional ℚ (IntermediateField.adjoin ℚ (Z : Set ℂ)) := IntermediateField.finiteDimensional_adjoin hint
@@ -231,7 +233,7 @@ theorem charsIn_nf {D : D7} {T : Type} [Finite T] {L : LevCh D T} {μ0 : T} (hL 
       ∀ w x, ((L.C.del'.loc w x : ℂˣ) : ℂ) ∈ M := by
     obtain ⟨n, hn, h⟩ := L.C.isDel'.fin
     exact locIn_fin _ n hn h
-  obtain ⟨Me, hMe, he⟩ := GlobalTheory.T.exists_numberField_valuesIn_etaChar_halfTwist D.host L.C.eta L.C.isEta
+  obtain ⟨Me, hMe, he⟩ := _root_.GlobalTheory.EtaValsNumberField.etaVals D.host L.C.eta L.C.isEta
   choose Mmu hMmu hmu using hmu
   choose Mxi hMxi hxi using hxi
   choose Mchi hMchi hchi using hchi

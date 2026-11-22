@@ -3,7 +3,7 @@ module
 public import Mathlib
 public import Formalism.ThetaLogCoordinates.JacobiPathWeights.JacobiMinorProofs.AntitoneOfMemGtBox
 public import Formalism.ThetaLogCoordinates.JacobiPathWeights.JacobiMinorProofs.Branch
-public import Formalism.ThetaLogCoordinates.JacobiPathWeights.JacobiMinorProofs.NormIndexCountBound
+public import Formalism.ThetaLogCoordinates.JacobiPathWeights.JacobiMinorProofs.Bundle0002
 
 @[expose] public section
 

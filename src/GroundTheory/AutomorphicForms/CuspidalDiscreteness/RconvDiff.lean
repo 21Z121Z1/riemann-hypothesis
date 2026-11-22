@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import GroundTheory.AutomorphicForms.CuspidalDiscreteness.DiffBound
+public import GroundTheory.AutomorphicForms.CuspidalDiscreteness.Bundle0001
 public import GroundTheory.AutomorphicForms.CuspidalDiscreteness.TorusReduction
 
 @[expose] public section

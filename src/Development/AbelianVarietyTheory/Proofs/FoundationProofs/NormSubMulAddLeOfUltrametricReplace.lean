@@ -1,17 +1,17 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Foundations.ShCocOn
-public import Development.AbelianVarietyTheory.Definitions.Foundations.IsLocallyConstantCycMod
-public import Development.AbelianVarietyTheory.Definitions.Foundations.IwSys2
+public import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0001
+public import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0020
+public import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0021
 public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.UnramifiedCocycleKillsRoots
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.LocalConditionsIndependentOfPlaceOver
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsIsPlaceOverRat
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.RatUnramToIntUnram
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.TameOfShCoc
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.GlobOfShapiroSystem
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.TameClassLimitOfNormCompatibleShapiroSystemStatement
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.TameShapiroSystemLimitUnramifiedAwayFromLStatement
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0342
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0347
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0349
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0350
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0375
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0356
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0369
 
 @[expose] public section
 
@@ -62,7 +62,7 @@ theorem glob_of_shapiro_system_noLayer (l : ℕ) [Fact l.Prime] (Ω : Type) [Fie
     rw [hWθ s, Matrix.smul_mulVec]
     exact h
   have hcoc : ∀ s t, y (s * t) = y s + mat W s *ᵥ y t :=
-    GlobalTheory.T.isCocycle_of_padic_limit_of_approx_cocycles l (mat W) a y (fun s i j => norm_le_one_of_mem c (hWO s i j)) haN happ
+    _root_.GlobalTheory.LimCoc.limit_cocycle l (mat W) a y (fun s i j => norm_le_one_of_mem c (hWO s i j)) haN happ
       (fun r s i => hyA s i r)
   have hac : ∀ r i, Continuous fun s => a r s i := by
     intro r i
@@ -84,7 +84,7 @@ theorem glob_of_shapiro_system_noLayer (l : ℕ) [Fact l.Prime] (Ω : Type) [Fie
     rw [hcoc g h]
     rfl
   refine ⟨y, hZ1, hyO, ?_, fun r s i => hyA s i r, GlobalTheory.T.kummerScalarLayerLink_of_shapiroSpecialization_approx l Ω A e χ Y y (fun r s _ _ => hyA s 1 r)⟩
-  exact GlobalTheory.T.unramified_away_from_l_of_twisted_shapiro_limit l Ω W c θ ρ Y η y hWc hθc hWO hWθ hρO hYc hYO hY hYp hηO (fun r s x => hcong r s x) hZ1
+  exact _root_.GlobalTheory.KA.unr_of_twisted_limit l Ω W c θ ρ Y η y hWc hθc hWO hWθ hρO hYc hYO hY hYp hηO (fun r s x => hcong r s x) hZ1
     (fun r s i => hyA s i r)
 
 theorem iwSys2_of_shCoc (l : ℕ) [Fact l.Prime] (Ω : Type) [Field Ω] [Algebra ℚ Ω] (W : R2 Ω l) (c : Coef l)
@@ -186,7 +186,7 @@ theorem middle_glue2 : ∀ (l : ℕ) [Fact l.Prime] (Ω : Type) [Field Ω] [Alge
       simp only [Pi.add_apply, Pi.smul_apply, smul_eq_mul] at h1 ⊢
       exact norm_sub_mul_add_le_of_ultrametric_replace h1 (hap0 r s i) hP1
     obtain ⟨Yt, b', hYt, hYtc, hYtO, hb'O, hsum, hYtap⟩ :=
-      GlobalTheory.T.tameClass_limit_of_normCompatible_shapiroSystem l Ω W c e n χ θ ρ ψ Yw y0 P b hWO hWθ hρO hχO hχcomp hχtw hYw hYwc hYwO hYwpush hP hb hy0O happ'
+      _root_.GlobalTheory.KA.tame_limit l Ω W c e n χ θ ρ ψ Yw y0 P b hWO hWθ hρO hχO hχcomp hχtw hYw hYwc hYwO hYwpush hP hb hy0O happ'
     refine GlobalTheory.KZ.tame_of_shCoc l Ω c W _ n w ψ (fun s x => ((l : ℕ) : Qbar l) ^ S.sup mq • Yt s x) P u
       (((l : ℕ) : Qbar l) ^ S.sup mq • b') ?_ ?_ ?_ hP hu ?_ ?_ hfrob ?_
     · intro s t x

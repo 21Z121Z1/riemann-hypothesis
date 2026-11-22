@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Formalism.LocalToGlobal.IndefiniteReal.LinksChar
-public import Formalism.LocalRingCardinality.PosOfIsomEmb
+public import Formalism.LocalRingCardinality.Bundle0005
 
 @[expose] public section
 

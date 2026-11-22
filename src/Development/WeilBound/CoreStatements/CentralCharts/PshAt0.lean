@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ContDiffUncentre
-public import ReciprocityTheory.AnalyticForms.PotentialTheory.PshShiftA
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0109
+public import ReciprocityTheory.AnalyticForms.PotentialTheory.Bundle0001
 
 @[expose] public section
 

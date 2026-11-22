@@ -1,7 +1,6 @@
 module
 
-public import Development.AutomorphicArithmetic.CyclotomicBounds.ClassNumberBounds.UnimodularGram.UnitVector
-public import Development.AutomorphicArithmetic.CyclotomicBounds.ClassNumberBounds.UnimodularGram.IsUnimodIffGram
+public import Development.AutomorphicArithmetic.CyclotomicBounds.ClassNumberBounds.UnimodularGram.Bundle0001
 
 @[expose] public section
 

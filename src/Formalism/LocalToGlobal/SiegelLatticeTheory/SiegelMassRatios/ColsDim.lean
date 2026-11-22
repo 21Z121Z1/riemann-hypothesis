@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Formalism.SatakeDualWeyl.Statement
-public import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.RationalPointsLeHolds
+public import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Bundle0002
 
 @[expose] public section
 

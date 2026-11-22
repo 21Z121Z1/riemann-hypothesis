@@ -1,6 +1,6 @@
 module
 
-public import Development.EtaleCohomology.KummerTheory.AdicLimPf
+public import Development.EtaleCohomology.KummerTheory.Bundle0005
 
 @[expose] public section
 

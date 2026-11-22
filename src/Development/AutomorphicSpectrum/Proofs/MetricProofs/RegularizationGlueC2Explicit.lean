@@ -1,11 +1,11 @@
 module
 
 public import Mathlib
-public import ReciprocityTheory.AnalyticForms.LeviForms.RegGlue
+public import ReciprocityTheory.AnalyticForms.LeviForms.Bundle0004
 public import ReciprocityTheory.AnalyticForms.LeviForms.RegChartC
 public import ReciprocityTheory.AnalyticForms.LeviForms.TailCut
 public import GroundTheory.HeightsAndTheta.Heights.AnalyticLimit.RegularizedMaxC2ExampleRealLine
-public import GroundTheory.HeightsAndTheta.Heights.AnalyticLimit.TendstoLocallyUniformlyOnOfNhds
+public import GroundTheory.HeightsAndTheta.Heights.AnalyticLimit.Bundle0008
 
 @[expose] public section
 

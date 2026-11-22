@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import GroundTheory.AutomorphicForms.CuspidalDiscreteness.SiegelFinite
+public import GroundTheory.AutomorphicForms.CuspidalDiscreteness.Bundle0001
 
 @[expose] public section
 

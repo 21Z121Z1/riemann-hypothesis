@@ -3,7 +3,7 @@ module
 public import Mathlib
 public import CompanionTheory.RealGroups.DiscreteSeries.DiscreteSeriesClassification.DiscreteSeriesExhaustion.MatrixCoefficientDecay.HilbertSchmidtDecay.AbsoluteL2Bound
 public import CompanionTheory.RealGroups.DiscreteSeries.DiscreteSeriesClassification.DiscreteSeriesExhaustion.MatrixCoefficientDecay.LineFormulas.Fub2
-public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.InitialStatement
+public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.Bundle0048
 public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.HaarExistence
 
 @[expose] public section

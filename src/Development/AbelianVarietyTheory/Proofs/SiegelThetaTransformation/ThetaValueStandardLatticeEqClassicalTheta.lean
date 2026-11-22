@@ -1,21 +1,21 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.SpanningFamilies.IsBaseClassLevelAdapted
-public import Formalism.LocalToGlobal.ProjectiveLattices.CuspFree
-public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.ThExprUniqOfChartIndep2
+public import Development.AbelianVarietyTheory.Definitions.SpanningFamilies.Bundle0002
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0011
+public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0007
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PullbackSections.HolomorphicFamilies.AnChartAsm
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.TaylorDiscriminants.Taylor
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.SquareIntegrability.L2NormFundamentalDomain
-public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.AllUniformizationLawsHold
-public import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.FramedPointBaseChangeLaws
-public import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.ThetaValueExistsUniqueOfChartIndependence
-public import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.ExistsTranslationSectionsUniversalObject
-public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.ThetaSeriesTestFunctionHolomorphicWeight
-public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.HeisenbergOperatorRationalPointLaws
-public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.FockHxDifferentiable
-public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.HarmonicConnectionValueEqPolynomialDerivativeStatement
-public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.SectionsReadAsTranslatesAtScaledPointStatement
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.SquareIntegrability.Bundle0009
+public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.Bundle0133
+public import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.Bundle0032
+public import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.Bundle0045
+public import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.Bundle0040
+public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.Bundle0044
+public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.Bundle0009
+public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.Bundle0028
+public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.Bundle0056
+public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.Bundle0051
 
 @[expose] public section
 
@@ -237,9 +237,9 @@ theorem thVal_eq_thP : Formalism.MainNotions.ModuliIntegralCharts.H1.ChartIndepS
   have huniq := (GlobalTheory.thValTot_of_chartIndep hlaws hci E H Dw l Xo c nab hnab ℂ y a n xs P hP).unique hv0 hval
   have hread : ∀ b, A.Reads ((l.M : ℤ) ^ 2) (F b)
       (fun z => fock X bas idx x 1 (pv X idx x (Y b)) θ ((l.M : ℂ) • z)) := fun b => by
-    have := (GlobalTheory.T.sections_read_as_translates_at_scaled_point E H Dw l Xo c r g X bas idx e x L y A hs hx hL l.M l.odd θ hθ).2 _ (hroot b).2 _ _ (hF b)
+    have := (_root_.GlobalTheory.Dict.reads_isUUOver_isVtOver E H Dw l Xo c r g X bas idx e x L y A hs hx hL l.M l.odd θ hθ).2 _ (hroot b).2 _ _ (hF b)
     rwa [hMY] at this
-  have hnv := GlobalTheory.T.harmonicConnectionValue_eq_polynomial_derivative hci E H Dw l Xo c r g X bas idx e x L y A hs hx hL nab hnab n l.M a P hP.1 F _ hread
+  have hnv := _root_.GlobalTheory.Dict.nab_harm_val_eq_polyDeriv hci E H Dw l Xo c r g X bas idx e x L y A hs hx hL nab hnab n l.M a P hP.1 F _ hread
   have hfock := (GlobalTheory.Dict.fock_laws E r X g bas idx n hs hn x hx 1 θ).2.2.2.2 (fun _ => θ) κ v hv.1 hκ Y
   have hsb : IsSB (heisG X bas Y v) := (GlobalTheory.SW.heisS_laws _ _ _ _ v hv.1).1
   have han := (GlobalTheory.SW.theta_holomorphic_weight E r X g q0 hr bas idx n hs hn (fun _ _ => 0) (fun _ _ => 0) _ hsb 0

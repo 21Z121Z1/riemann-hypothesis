@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Formalism.UnipotentAdelicQuotients.SiegelSetsSL2Adelic
+public import Formalism.UnipotentAdelicQuotients.Bundle0001
 public import GroundTheory.AutomorphicForms.ReductionSiegel
-public import GroundTheory.AutomorphicForms.ReductionSplitting
+public import GroundTheory.AutomorphicForms.Bundle0022
 
 @[expose] public section
 

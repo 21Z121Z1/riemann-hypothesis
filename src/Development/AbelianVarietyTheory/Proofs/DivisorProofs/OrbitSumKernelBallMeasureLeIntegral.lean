@@ -2,12 +2,12 @@ module
 
 public import Mathlib
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArakelovVolumes.UpperBounds.KronHolPsiStatementHolds
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArakelovVolumes.UpperBounds.PoinStatementPfI
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArakelovVolumes.UpperBounds.Bundle0033
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.OrbitSumExpPotentialUniformBound
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PoinConvBdd
 public import Development.AbelianVarietyTheory.Proofs.TorusHaarMeasure.MeasurableSetSatFrames
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DetNearOneMatrixNormBoundsStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GramChartSubFormEntryLeStatement
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0132
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0712
 
 @[expose] public section
 
@@ -35,7 +35,7 @@ theorem norm_lminor_Gw_ge (X : Data E r) (w : V (nd X)) (τ : X.Ψ) (hw : 3 * (r
       · subst h; simp [sgn, i.isLt]
       · rfl
     rw [Matrix.submatrix_apply, ← hJ]
-    exact GlobalTheory.T.gramChart_sub_form_entry_le E r X w τ _ _ hw0
+    exact _root_.GlobalTheory.GramChartNear.gw_sub_jd_le E r X w τ _ _ hw0
   · have : (X.p0 : ℝ) ≤ r := by exact_mod_cast hp
     nlinarith [norm_nonneg w]
 

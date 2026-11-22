@@ -1,11 +1,17 @@
 module
 
-public import Development.WeilBound.CoreStatements.FlagImmersions.FibSandwich
+public import Development.WeilBound.CoreStatements.FlagImmersions.Bundle0015
 public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.IsExcisionNbhdAway
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LieModelPullbackCorrespondence
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LieModelActionBaseChangeStatement
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.EigenFrameIffEigenspaceBasisStatement
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.SabPull
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0078
+public import Mathlib
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0141
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsTransition
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0081
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.Bundle0013
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsFlatAnIffIsConstMul
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.UniformisationConclusion
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0077
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.Bundle0007
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.LawsProved
 
 @[expose] public section
@@ -87,7 +93,7 @@ theorem exists_coords {X : Scheme.{0}} (t : SAB H X) {Ω : Type} [Field Ω] {ξ 
   classical
   let R : Type := X.presheaf.stalk (centre z)
   let fV : R →+* V := (Scheme.stalkClosedPointTo z).hom
-  obtain ⟨g, MR, ρR, -, hbc⟩ := GlobalTheory.T.lie_model_action_base_change E H X t R (X.fromSpecStalk (centre z))
+  obtain ⟨g, MR, ρR, -, hbc⟩ := _root_.GlobalTheory.CompanionTheory.Ar.Ggeo.lieModel_coordinates_baseChange E H X t R (X.fromSpecStalk (centre z))
   have hz : spMap fV ≫ X.fromSpecStalk (centre z) = z := spec_centre z
   obtain ⟨MV, ρV, aV, hV, -⟩ := hbc V fV z hz.symm
   obtain ⟨MC, ρC, aC, hC, -⟩ := hbc L ((algebraMap V L).comp fV) (Spec.map (CommRingCat.ofHom (algebraMap V L)) ≫ z)
@@ -218,7 +224,7 @@ theorem intFrames : IntFrames := by
     have hsum : ∀ cf : Fin n → V, algebraMap V L ∘ (∑ k, cf k • xV k) = ∑ k, cf k • x k := fun cf => by
       ext i; simp [Finset.sum_apply, hxe, Algebra.smul_def]
     refine ⟨σ, fun k => MT.pt (xV k), rfl, ?_, fun k => ⟨(MK.pt (x k)).left, hU _, ?_⟩⟩
-    · refine (GlobalTheory.T.eigen_frame_iff_eigenspace_basis _ V T.G (𝟙 _) _ MT _ T.act ρV σ n xV aT).2 ⟨fun k => (heig _).2 (hxe k ▸ (hmem k).2), ?_⟩
+    · refine (_root_.GlobalTheory.CompanionTheory.Ar.Flat.LieEigFrame.isEigFrame_pt_iff _ V T.G (𝟙 _) _ MT _ T.act ρV σ n xV aT).2 ⟨fun k => (heig _).2 (hxe k ▸ (hmem k).2), ?_⟩
       intro e he
       have h1 : algebraMap V L ∘ e ∈ Submodule.span V (Set.range x) := by
         rw [hspan]

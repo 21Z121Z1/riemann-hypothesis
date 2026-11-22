@@ -1,7 +1,7 @@
 module
 
 public import CompanionTheory.HarishChandraModules.KFiniteAnalyticVectors.HaarBumpFunctions.ExistsIsBump
-public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.SmoothOnAdditive
+public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0055
 
 @[expose] public section
 

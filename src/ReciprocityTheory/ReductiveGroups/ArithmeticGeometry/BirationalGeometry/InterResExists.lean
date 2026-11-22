@@ -1,10 +1,10 @@
 module
 
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.InterAlgRes
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.InterMinor
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.Bundle0018
 public import ReciprocityTheory.AnalyticForms.RegularLocalRings.SchemeRes
 public import ReciprocityTheory.AnalyticForms.RegularLocalRings.ConeChart
-public import ReciprocityTheory.AnalyticForms.RegularLocalRings.ProjLogResCOfCR
+public import ReciprocityTheory.AnalyticForms.RegularLocalRings.Bundle0012
 
 @[expose] public section
 

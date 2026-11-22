@@ -3,8 +3,8 @@ module
 public import Mathlib
 public import Formalism.LocalToGlobal.SiegelLatticeTheory.HaarTransversals.PoincareInHH
 public import Formalism.LocalToGlobal.SiegelLatticeTheory.HaarTransversals.RowsDef
-public import Formalism.SharpRestriction.CuspSpanNormBounds.DstarEq
-public import Formalism.SharpRestriction.GlobalSchurBounds.GeneralLinearActions.GapAtLeast
+public import Formalism.SharpRestriction.CuspSpanNormBounds.Bundle0002
+public import Formalism.SharpRestriction.GlobalSchurBounds.GeneralLinearActions.Bundle0001
 public import Formalism.LocalToGlobal.SiegelLatticeTheory.ClosedVolumeStatements.LevelSubgroupProperties
 
 @[expose] public section

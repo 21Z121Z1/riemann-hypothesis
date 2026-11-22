@@ -2,11 +2,11 @@ module
 
 public import Mathlib
 public import Development.WeilBound.CoreStatements.TemperedRepresentationTheory.ZelevinskyJacquet.FineJacquetModules.SegDefs
-public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.IrreducibleAdmissibleGL
-public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.SegmentRepresentation
-public import Development.AutomorphicSpectrum.Proofs.GlobalProofs.GeometricLemma
-public import Development.AutomorphicSpectrum.Proofs.GlobalProofs.BernsteinZelevinskyFiniteness
-public import Development.AutomorphicSpectrum.Proofs.GlobalProofs.IsSubquotientCompMulSingle
+public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.Bundle0002
+public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.Bundle0004
+public import Development.AutomorphicSpectrum.Proofs.GlobalProofs.Bundle0044
+public import Development.AutomorphicSpectrum.Proofs.GlobalProofs.Bundle0030
+public import Development.AutomorphicSpectrum.Proofs.GlobalProofs.Bundle0045
 public import Lean.LibrarySuggestions.Basic
 public import Lean.Elab.Command
 

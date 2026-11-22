@@ -1,10 +1,10 @@
 module
 
-public import ReciprocityTheory.DualLattices.CotangentSurjective
+public import ReciprocityTheory.DualLattices.Bundle0004
 public import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.IsTight
-public import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.StepOrderRes
-public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.CharacterIdealPrincipalEigen
-public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.TeichmullerCharacterOrderGenerates
+public import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.Bundle0003
+public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.Bundle0017
+public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.Bundle0005
 public import ReciprocityTheory.DualLattices.VIntCastLtOneOfDvd
 public import ReciprocityTheory.DualLattices.PowMemCarrier
 

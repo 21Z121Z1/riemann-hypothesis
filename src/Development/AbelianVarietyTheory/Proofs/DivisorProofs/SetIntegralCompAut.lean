@@ -1,13 +1,13 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsTransportF
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsDblCoordDblD
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaDiagInt
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1345
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1346
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1407
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsDiagonalLagrangianInvariantForm
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaFunctionHeisenbergInvariant
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RationalMatricesDiscreteCocompactAdelicMatrixSpa
-public import Development.AbelianVarietyTheory.Proofs.HeightProofs.MeanSquareAddFundamentalDomainOfCocompact
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1043
+public import Development.AbelianVarietyTheory.Proofs.HeightProofs.Bundle0003
 
 @[expose] public section
 

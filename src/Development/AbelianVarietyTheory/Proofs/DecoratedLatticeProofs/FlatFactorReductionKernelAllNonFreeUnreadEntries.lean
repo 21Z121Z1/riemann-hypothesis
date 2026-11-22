@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.IsRead
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.KernelReductionExtendEvaluatedIntegrated
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.LinearMapKillingPartialEvalIntegralKernelTransla
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0025
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0035
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0032
 
 @[expose] public section
 

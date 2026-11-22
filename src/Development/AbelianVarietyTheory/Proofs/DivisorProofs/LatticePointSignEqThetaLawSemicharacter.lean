@@ -1,14 +1,14 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TorusHermitianFormScaledCoordinateEq
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.IdealPeriodLatticeOfCurveDatum
-public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.ExistsSemicharacterCompletedSelfDualLattice
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RationalPointFinitePartIsotropicPairing
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsSelfDualLatticeSemicharacterVacuumStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.StdCharFiniteAdeleRationalEqExpTraceStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CmTraceEqAddStarStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RationalHomHermitianTraceFormSelfEqFrameNormSumStatement
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1614
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0224
+public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.Bundle0069
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1211
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1626
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1655
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1618
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1635
 
 @[expose] public section
 
@@ -25,13 +25,13 @@ namespace GlobalTheory.ThetaSignLat
 
 variable {D : D7}
 
-theorem semichar_value : ∀ {D : D7} (ψ : AddChar (AF D.host.F) ℂ) (S T : HSp D) (ΛS : Submodule (𝓞 D.host.E) (Fin S.rank → D.host.E)) (ΛT : Submodule (𝓞 D.host.E) (Fin T.rank → D.host.E)), IsStdChar D ψ (-1) → IsSelfDualC S ΛS → IsSelfDualC T ΛT → ∀ b : 𝓞 D.host.E, (b : D.host.E) + star (b : D.host.E) = 1 → ∃ χ : WO S T → ℂ, IsLatVac (heisO ψ S T) (latO S T (ΛS : Set (Fin S.rank → D.host.E)) (ΛT : Set (Fin T.rank → D.host.E)) fun _ => True) χ ∧ ∀ l ∈ latO S T (ΛS : Set (Fin S.rank → D.host.E)) (ΛT : Set (Fin T.rank → D.host.E)) (fun _ => True), χ l = ψ (symplOH S T (l.map fun z => incA D (b : D.host.E) * z) l) := GlobalTheory.T.exists_selfDualLattice_semicharacter_vacuum
+theorem semichar_value : ∀ {D : D7} (ψ : AddChar (AF D.host.F) ℂ) (S T : HSp D) (ΛS : Submodule (𝓞 D.host.E) (Fin S.rank → D.host.E)) (ΛT : Submodule (𝓞 D.host.E) (Fin T.rank → D.host.E)), IsStdChar D ψ (-1) → IsSelfDualC S ΛS → IsSelfDualC T ΛT → ∀ b : 𝓞 D.host.E, (b : D.host.E) + star (b : D.host.E) = 1 → ∃ χ : WO S T → ℂ, IsLatVac (heisO ψ S T) (latO S T (ΛS : Set (Fin S.rank → D.host.E)) (ΛT : Set (Fin T.rank → D.host.E)) fun _ => True) χ ∧ ∀ l ∈ latO S T (ΛS : Set (Fin S.rank → D.host.E)) (ΛT : Set (Fin T.rank → D.host.E)) (fun _ => True), χ l = ψ (symplOH S T (l.map fun z => incA D (b : D.host.E) * z) l) := _root_.GlobalTheory.SemiCharValue.exists_semichar_value
 
 theorem psi_fin_rat : ∀ {D : D7} (ψ : AddChar (AF D.host.F) ℂ), IsStdChar D ψ (-1) → ∀ q : D.host.F, ψ (pairA D.host.F 0 (algebraMap D.host.F (Af D.host.F) q)) = Complex.exp (2 * Real.pi * Complex.I * ∑ τ, tauE D τ (q : D.host.E)) := GlobalTheory.T.stdChar_finiteAdele_rational_eq_exp_trace
 
-theorem trace_eq_add_star : ∀ {D : D7} (x : D.host.E), ((Algebra.trace D.host.F D.host.E x : D.host.F) : D.host.E) = x + star x := GlobalTheory.T.cmTrace_eq_add_star
+theorem trace_eq_add_star : ∀ {D : D7} (x : D.host.E), ((Algebra.trace D.host.F D.host.E x : D.host.F) : D.host.E) = x + star x := _root_.GlobalTheory.TraceAddStar.trace_eq_add_star
 
-theorem hRat_frame : ∀ {D : D7} (S T : HSp D) (frS : GL (Fin S.rank) D.host.E) (frT : GL (Fin T.rank) D.host.E), Formalism.UG.cT (D.sp.cm.sig : D.host.E →+* D.host.E) frS.1 * S.gram * frS.1 = 1 → Formalism.UG.cT (D.sp.cm.sig : D.host.E →+* D.host.E) frT.1 * T.gram * frT.1 = 1 → ∀ v : Matrix (Fin T.rank) (Fin S.rank) D.host.E, GlobalTheory.LatVac.hRat S T v v = ∑ a, ∑ b, star (((frT⁻¹ : GL (Fin T.rank) D.host.E).1 * v * frS.1) a b) * ((frT⁻¹ : GL (Fin T.rank) D.host.E).1 * v * frS.1) a b := GlobalTheory.T.rationalHomHermitianTraceForm_self_eq_frame_normSum
+theorem hRat_frame : ∀ {D : D7} (S T : HSp D) (frS : GL (Fin S.rank) D.host.E) (frT : GL (Fin T.rank) D.host.E), Formalism.UG.cT (D.sp.cm.sig : D.host.E →+* D.host.E) frS.1 * S.gram * frS.1 = 1 → Formalism.UG.cT (D.sp.cm.sig : D.host.E →+* D.host.E) frT.1 * T.gram * frT.1 = 1 → ∀ v : Matrix (Fin T.rank) (Fin S.rank) D.host.E, GlobalTheory.LatVac.hRat S T v v = ∑ a, ∑ b, star (((frT⁻¹ : GL (Fin T.rank) D.host.E).1 * v * frS.1) a b) * ((frT⁻¹ : GL (Fin T.rank) D.host.E).1 * v * frS.1) a b := _root_.GlobalTheory.HRatFrame.hRat_frame
 
 theorem sign_of_exp (t : ℝ)
     (h : Complex.exp (-(Real.pi : ℂ) * Complex.I * t) = 1 ∨ Complex.exp (-(Real.pi : ℂ) * Complex.I * t) = -1) :
@@ -150,7 +150,7 @@ theorem sign_eq_alpha : ∀ {D : D7} (ψ : AddChar (AF D.host.F) ℂ) (S T : HSp
     ring
   have hb : (b : D.host.E) + star (b : D.host.E) = 1 := by rw [hbs]; ring
   obtain ⟨χ, hχ, hval⟩ := GlobalTheory.ThetaSignLat.semichar_value ψ S T (colLat frS) (colLat frT) hψ hSd hTd b hb
-  obtain ⟨f1, -, f3, -⟩ := GlobalTheory.T.homSymplecticHalfForm_algebraic_laws_continuous D S T
+  obtain ⟨f1, -, f3, -⟩ := _root_.GlobalTheory.OrientedFormLaws.symplOH_laws D S T
   have hz : ∀ w : WO S T, symplOH S T 0 w = 0 := fun w => by
     have := f1 0 0 w
     rw [add_zero] at this
@@ -168,7 +168,7 @@ theorem sign_eq_alpha : ∀ {D : D7} (ψ : AddChar (AF D.host.F) ℂ) (S T : HSp
     rw [e1] at this
     rw [this, Pi.smul_apply, e0, smul_eq_mul, mul_one]
   have hpm : ε = 1 ∨ ε = -1 := by
-    obtain ⟨ε', h1, h2⟩ := (GlobalTheory.T.self_dual_lattice_pairing_dual D ψ S T (colLat frS) (colLat frT) hψ hSd hTd).2.2 χ hχ u huL
+    obtain ⟨ε', h1, h2⟩ := (_root_.GlobalTheory.LatVac.latO_selfDual_approx_sign D ψ S T (colLat frS) (colLat frT) hψ hSd hTd).2.2 χ hχ u huL
     have := congrFun (h2 χ hχ) 0
     rw [e1, Pi.smul_apply, e0, smul_eq_mul, mul_one] at this
     rw [hεu, this]; exact h1

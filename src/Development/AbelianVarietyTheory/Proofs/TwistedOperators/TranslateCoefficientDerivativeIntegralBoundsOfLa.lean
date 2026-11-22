@@ -3,7 +3,7 @@ module
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.OneMemNbh
 public import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.ProjExists
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.DKerHasCompactSupport
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0115
 
 @[expose] public section
 

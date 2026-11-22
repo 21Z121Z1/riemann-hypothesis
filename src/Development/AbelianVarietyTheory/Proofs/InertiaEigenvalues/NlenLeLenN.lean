@@ -2,10 +2,10 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.IsRhoPtOfSplitting
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsIsUnitReprOne
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ValuationLtOneIff
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.LocalCoefficientChangeCompare
-public import Development.AbelianVarietyTheory.Proofs.CoherentCohomologyProofs.LengthQuotientMaximalIdealPowSmulTop
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0187
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0190
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0227
+public import Development.AbelianVarietyTheory.Proofs.CoherentCohomologyProofs.Bundle0007
 
 @[expose] public section
 

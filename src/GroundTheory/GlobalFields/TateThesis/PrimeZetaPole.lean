@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import GroundTheory.GlobalFields.TateThesis.DegreeOnePrimes
+public import GroundTheory.GlobalFields.TateThesis.Bundle0001
 
 @[expose] public section
 

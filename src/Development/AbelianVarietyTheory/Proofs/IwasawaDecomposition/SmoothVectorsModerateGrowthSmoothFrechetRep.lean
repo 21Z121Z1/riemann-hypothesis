@@ -2,8 +2,8 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.NormDwLeSobNorm
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsLocalLog
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsClosedDerivativeFamiliesModerateGrowthStatement
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0204
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0214
 
 @[expose] public section
 

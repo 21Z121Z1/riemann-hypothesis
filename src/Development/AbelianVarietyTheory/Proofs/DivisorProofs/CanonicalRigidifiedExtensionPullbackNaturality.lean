@@ -3,9 +3,9 @@ module
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsDatNeZero
 public import Development.AbelianVarietyTheory.Definitions.Divisors.TorsionTowersOfDivisibleGroup
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CocycleTensorLiftApplyEqTwoPointValueStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CrystallineCocycleOnPointsIsCocycleAndEvalEqStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CrystallineCocycleCotangentValueBaseChangeNaturaStatement
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2324
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2235
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2238
 
 @[expose] public section
 

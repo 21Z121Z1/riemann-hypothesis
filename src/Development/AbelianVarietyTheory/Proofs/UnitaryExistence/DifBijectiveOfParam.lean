@@ -1,11 +1,11 @@
 module
 
 public import Mathlib
-public import Formalism.LocalToGlobal.ProjectiveLattices.IsChartIff
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.SabPull
-public import Development.AbelianVarietyTheory.BlockTheory.ExistenceTori.JetChartLaws
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0013
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.Bundle0007
+public import Development.AbelianVarietyTheory.BlockTheory.ExistenceTori.Bundle0001
 public import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.GlobalBasisAlgebra
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsUniqueCoord
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0038
 
 @[expose] public section
 

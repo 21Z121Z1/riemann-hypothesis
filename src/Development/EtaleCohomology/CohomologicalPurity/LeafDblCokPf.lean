@@ -1,6 +1,6 @@
 module
 
-public import Development.EtaleCohomology.CohomologicalPurity.LeafHsRelPfSplit
+public import Development.EtaleCohomology.CohomologicalPurity.Bundle0030
 
 @[expose] public section
 

@@ -2,21 +2,18 @@ module
 
 public import Mathlib
 public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.PotentialsBoundedRegSettingEqReference
-public import GroundTheory.HeightsAndTheta.Heights.Regularisation.BoundedStatements
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.InterSt
-public import GroundTheory.HeightsAndTheta.Heights.Regularisation.PMaxOscillation
-public import GroundTheory.HeightsAndTheta.Heights.Regularisation.PMollifierLowerBound
-public import GroundTheory.HeightsAndTheta.Heights.Regularisation.PChartComparison
-public import GroundTheory.HeightsAndTheta.Heights.Regularisation.PPolyMaxLowerBound
-public import GroundTheory.HeightsAndTheta.Heights.Regularisation.PTruncPsh
-public import GroundTheory.HeightsAndTheta.Heights.Regularisation.PTruncTransfer
-public import GroundTheory.HeightsAndTheta.Heights.Regularisation.PCutoffs
-public import Development.AutomorphicSpectrum.Proofs.MetricProofs.ExistsSmoothConjInvariantMetricStatement
-public import Development.AutomorphicSpectrum.Proofs.MetricProofs.ExistsPotentialChartsWithRadiiStatement
-public import Development.AutomorphicSpectrum.Proofs.MetricProofs.HodgeMetricFramePropertiesStatement
-public import Development.AutomorphicSpectrum.Proofs.MetricProofs.HodgePotentialSmoothOffBoundaryStatement
-public import Development.AutomorphicSpectrum.Proofs.MetricProofs.ExistsPotentialFromSncChartsStatement
-public import Development.WeilBound.CoreStatements.PlurisubharmonicCones.ExpLeLogR
+public import GroundTheory.HeightsAndTheta.Heights.Regularisation.Bundle0002
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.Bundle0006
+public import GroundTheory.HeightsAndTheta.Heights.Regularisation.Bundle0004
+public import GroundTheory.HeightsAndTheta.Heights.Regularisation.Bundle0005
+public import GroundTheory.HeightsAndTheta.Heights.Regularisation.Bundle0003
+public import GroundTheory.HeightsAndTheta.Heights.Regularisation.Bundle0008
+public import Development.AutomorphicSpectrum.Proofs.MetricProofs.Bundle0095
+public import Development.WeilBound.CoreStatements.PlurisubharmonicCones.Bundle0012
+public import Development.WeilBound.CoreStatements.PlurisubharmonicCones.Bundle0009
+public import Development.WeilBound.CoreStatements.PlurisubharmonicCones.Bundle0010
+public import Development.WeilBound.CoreStatements.PlurisubharmonicCones.AdaptedChartsRegularization
+public import Development.WeilBound.CoreStatements.PlurisubharmonicCones.Bundle0002
 
 @[expose] public section
 
@@ -117,10 +114,10 @@ theorem mem_Yo {M : XModel D} {z : (Σ k, J k) → ℂ} (hz : z ∈ mcPts (mCoor
 theorem main (Hd : HodgeData D) (M : XModel D) (hP : ChartPsh D (phMu Hd)) :
     ∃ S : LogLogRegularisationSetting M D.Xo (muLine Hd), S.IsTied := by
   classical
-  obtain ⟨ref, hra, hrs, hrc⟩ := GlobalTheory.T.exists_smooth_conj_invariant_metric K J Hd.aMu
-  have hreg := GlobalTheory.T.hodge_potential_smooth_off_boundary K J II Ψ Ω W D Hd
+  obtain ⟨ref, hra, hrs, hrc⟩ := _root_.GlobalTheory.CompanionTheory.Relay.exists_smooth_conj_invariant_metric K J Hd.aMu
+  have hreg := _root_.LevelTowerAlt.mu_potential_smooth_off_boundary K J II Ψ Ω W D Hd
   obtain ⟨hsm, hbd⟩ := hreg
-  obtain ⟨-, -, -, hO⟩ := GlobalTheory.T.hodge_metric_frame_properties K J II Ψ Ω W D Hd
+  obtain ⟨-, -, -, hO⟩ := _root_.LevelTowerAlt.mu_frame_norm_line K J II Ψ Ω W D Hd
   have hrad : ∀ (a : Fin D.nCharts) (t₀ : Fin (Fintype.card Ψ * D.j * (D.N - D.j)) → ℂ), ∃ r > (0 : ℝ), (∀ i, t₀ i ≠ 0 → r ≤ ‖t₀ i‖) ∧
       (‖t₀‖ ≤ 1 / 2 → ∃ C > (0 : ℝ), ∀ t ∈ offBd D a, ‖t - t₀‖ < r →
         -(C * Real.log ((D.chart a).logR t)) ≤ phMu Hd ((D.chart a).γ t) ∧ phMu Hd ((D.chart a).γ t) ≤ C ∧
@@ -134,8 +131,8 @@ theorem main (Hd : HodgeData D) (M : XModel D) (hP : ChartPsh D (phMu Hd)) :
     · obtain ⟨r, hr, -, hri⟩ := exists_radius t₀ one_pos
       exact ⟨r, hr, hri, fun h' => absurd h' h⟩
   choose r hr hri hrb using hrad
-  obtain ⟨P, S, -, hth, had, hsnc, -, hpc⟩ := GlobalTheory.T.exists_potential_charts_with_radii K J II Ψ Ω W D M ref r hrs hrc hr
-  obtain ⟨rf, f, Bf, hr1, hf, hrf⟩ := GlobalTheory.T.exists_potential_from_snc_charts K J II Ψ Ω W D M P S had hsnc
+  obtain ⟨P, S, -, hth, had, hsnc, -, hpc⟩ := _root_.LevelTowerAlt.exists_potential_charts K J II Ψ Ω W D M ref r hrs hrc hr
+  obtain ⟨rf, f, Bf, hr1, hf, hrf⟩ := _root_.LevelTowerAlt.adapted_charts_regularization K J II Ψ Ω W D M P S had hsnc
   let ph : M.Xc → ℝ := logRat M (muLine Hd) ref
   have hph : ∀ z ∈ mcPts (mCoordIdeal D.y), ph (M.proj z) = phMu Hd z - Real.log (ref.h z) :=
     fun z hz => logRat_proj M hra hz

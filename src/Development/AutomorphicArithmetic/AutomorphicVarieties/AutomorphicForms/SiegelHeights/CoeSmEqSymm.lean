@@ -2,8 +2,7 @@ module
 
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.SiegelHeights.SiegelHeight
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.SiegelHeights.MultiCentre
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.IsArchSmoothOfContDiffChart
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.ContDiffChartOfIsArchSmooth
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.Bundle0002
 
 @[expose] public section
 

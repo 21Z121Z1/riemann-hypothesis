@@ -5,7 +5,7 @@ public import GroundTheory.AutomorphicForms.GKModules.GKModule
 public import GroundTheory.AutomorphicForms.GKModules.Garding
 public import GroundTheory.AutomorphicForms.GKModules.Casimir
 public import GroundTheory.AutomorphicForms.Reduction
-public import GroundTheory.GlobalFields.Adele.IntegersLattice
+public import GroundTheory.GlobalFields.Adele.Bundle0001
 
 @[expose] public section
 

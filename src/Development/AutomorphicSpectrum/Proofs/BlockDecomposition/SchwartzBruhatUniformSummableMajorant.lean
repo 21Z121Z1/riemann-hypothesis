@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import GroundTheory.AutomorphicForms.GL2.GodementSection
+public import GroundTheory.AutomorphicForms.GL2.Bundle0003
 public import GroundTheory.GlobalFields.TateThesis.TateMain
-public import GroundTheory.GlobalFields.TateThesis.AdelePoissonUniform
+public import GroundTheory.GlobalFields.TateThesis.Bundle0009
 
 @[expose] public section
 

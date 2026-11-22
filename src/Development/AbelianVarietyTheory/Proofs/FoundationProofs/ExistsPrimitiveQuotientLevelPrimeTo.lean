@@ -1,12 +1,12 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.DiagMod
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.NatDegreeMinpolyLe
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0075
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0107
 public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsFinsetSpanPrincipalCongruenceLevelFunction
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.MemClosureOfFixed
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsNumberFieldExpansionCoeffs
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.JTranslatesLevelAndScalarModStatement
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0105
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0098
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0124
 
 @[expose] public section
 

@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Formalism.HermitianCurvature.StatementQ
-public import Formalism.FormalDegreeBessel.FinalG
+public import Formalism.FormalDegreeBessel.Bundle0002
 public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LevelTransfer.ExpLz
 
 @[expose] public section

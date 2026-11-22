@@ -2,16 +2,17 @@ module
 
 public import Mathlib
 public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.PotentialsBoundedRegSettingEqReference
-public import GroundTheory.HeightsAndTheta.Heights.Regularisation.BoundedStatements
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.InterSt
-public import GroundTheory.HeightsAndTheta.Heights.StabilizerCovolume.PMUcSmooth
-public import GroundTheory.HeightsAndTheta.Heights.StabilizerCovolume.BRegWeightLevi
+public import GroundTheory.HeightsAndTheta.Heights.Regularisation.Bundle0002
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.Bundle0006
+public import GroundTheory.HeightsAndTheta.Heights.StabilizerCovolume.Bundle0005
+public import GroundTheory.HeightsAndTheta.Heights.StabilizerCovolume.Bundle0002
 public import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.RegWeightLimits
 public import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.PHermExtend
-public import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.PProjSmoothAlong
-public import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.PHoloInjDerivInj
-public import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.PVertFactorPos
-public import Development.AutomorphicSpectrum.Proofs.MetricProofs.LocalOrbitChartStatement
+public import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.Bundle0019
+public import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.Bundle0003
+public import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.Bundle0016
+public import Development.AutomorphicSpectrum.Proofs.MetricProofs.Bundle0112
+public import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.Bundle0004
 
 @[expose] public section
 
@@ -113,7 +114,7 @@ theorem bregWeight_ge_and_MUc_smooth : ∀ (K : Type) [Fintype K] (J : K → Typ
       obtain ⟨j, hj⟩ := M.atlas.cover x₀
       set e := M.atlas.chart j with he
       obtain ⟨W, hWo, hxW, s, hs, hsh⟩ := M.sections x₀
-      obtain ⟨N, hNo, hzN, κ, hκa, hκt, hκi⟩ := GlobalTheory.T.local_orbit_chart_statement_holds K JJ Ω D.y D.n D.arith D.smoothGeneric z₀ hz₀
+      obtain ⟨N, hNo, hzN, κ, hκa, hκt, hκi⟩ := _root_.GlobalTheory.CompanionTheory.Ar.Giv.localOrbitChart K JJ Ω D.y D.n D.arith D.smoothGeneric z₀ hz₀
       set σ : (Fin D.n → ℂ) → (Σ k, JJ k) → ℂ := fun u => s (e.symm u) with hσ
       set f : (Fin D.n → ℂ) → (Fin D.n → ℂ) := fun u => κ (σ u) with hf
       set u₀ := e x₀ with hu₀

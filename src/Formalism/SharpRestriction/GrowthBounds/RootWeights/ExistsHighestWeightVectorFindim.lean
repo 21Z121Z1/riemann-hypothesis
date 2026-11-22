@@ -1,7 +1,7 @@
 module
 
-public import Formalism.SharpRestriction.GrowthBounds.RootWeights.WeightComponentsMemInvariant
-public import Formalism.SharpRestriction.GrowthBounds.RootWeights.HighestWeightDominantHolds
+public import Formalism.SharpRestriction.GrowthBounds.RootWeights.Bundle0013
+public import Formalism.SharpRestriction.GrowthBounds.RootWeights.Bundle0008
 
 @[expose] public section
 

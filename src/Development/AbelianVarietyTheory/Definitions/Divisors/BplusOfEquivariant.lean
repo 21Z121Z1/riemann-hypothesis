@@ -4,9 +4,9 @@ public import Mathlib
 public import Formalism.LocalToGlobal.IndefiniteReal.LinksChar
 public import Development.AbelianVarietyTheory.Definitions.Divisors.BasePlaceNotMemChiGridBadPlaces
 public import Development.AbelianVarietyTheory.Counterexamples.HeightSurvey.EmbRelExistsUnique
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsUnitOfCocompact
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GridFirstColumnSpaceRankSignatureSelfDual
-public import Development.AbelianVarietyTheory.Definitions.Divisors.NatCastSmulMemHatL
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0181
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1146
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0039
 
 @[expose] public section
 

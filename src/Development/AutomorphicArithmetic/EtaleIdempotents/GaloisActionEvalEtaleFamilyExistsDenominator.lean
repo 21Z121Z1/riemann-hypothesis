@@ -1,6 +1,6 @@
 module
 
-public import Development.AutomorphicArithmetic.CommutativeAlgebra.EtaleCohomology.TorsionOfVec
+public import Development.AutomorphicArithmetic.CommutativeAlgebra.EtaleCohomology.Bundle0006
 
 @[expose] public section
 

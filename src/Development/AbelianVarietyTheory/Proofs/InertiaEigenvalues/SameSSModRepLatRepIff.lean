@@ -3,8 +3,8 @@ module
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.ResBound
 public import Formalism.LocalRingCardinality.AdicCompletionLocal.LocTied
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FiniteLengthOfFiniteDimensional
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.BrauerNesbittSemisimpleMatrixRepresentationsStatement
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0511
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0096
 
 @[expose] public section
 
@@ -195,7 +195,7 @@ variable {k G : Type} [Field k] [Group G]
 
 theorem brauerNesbitt : GlobalTheory.ConstituentsCompare.BrauerNesbitt := by
   intro Γ k _ _ a ρ ρ' h h' hc
-  obtain ⟨P, hP⟩ := GlobalTheory.T.brauer_nesbitt_semisimple_matrix_representations a ((Units.coeHom _).comp ρ) ((Units.coeHom _).comp ρ')
+  obtain ⟨P, hP⟩ := _root_.GlobalTheory.BrauerNesbittMatrix.main a ((Units.coeHom _).comp ρ) ((Units.coeHom _).comp ρ')
     (fun W hW => (h W hW).imp fun _ h => ⟨h.2, h.1⟩) (fun W hW => (h' W hW).imp fun _ h => ⟨h.2, h.1⟩) hc
   refine ⟨P, fun g => ?_⟩
   rw [eq_mul_inv_iff_mul_eq]

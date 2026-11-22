@@ -1,12 +1,13 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.TrivFlagMod
-public import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.FlagMinor
+public import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.Bundle0004
+public import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.Bundle0001
 public import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.StatementsBundles
-public import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.SameGenericSymm
+public import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.Bundle0025
 public import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.ClassListMapDomainPerm
-public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.ChernClassOnFlagPairStatement
+public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.Bundle0072
+public import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.Bundle0015
 
 @[expose] public section
 
@@ -298,7 +299,7 @@ theorem main : ∀ (O : Type) [CommRing O] [IsDomain O] [IsDiscreteValuationRing
         field_simp
         linear_combination hgen }
   refine ⟨(BundleExamples.sameGeneric_iff hϖ x A A').2 hSF, fun k hk1 hk2 q L Q hQ => ?_⟩
-  exact (GlobalTheory.T.chern_class_on_flag_pair O ϖ hϖ Ω K ι x d hK hModel 1 Ω A A' hSF (lineBasis hu) (lineBasis hu')
+  exact (_root_.GlobalTheory.CompanionTheory.ChernFlagPairRootPolynomial.main O ϖ hϖ Ω K ι x d hK hModel 1 Ω A A' hSF (lineBasis hu) (lineBasis hu')
     (fun _ => a) (fun _ => a') (fun _ => f) (fun _ => g) hFP).1 k hk1 hk2 (psumExpansion 1 k)
     (isPairExpansion_psum 1 k) q L Q hQ
 

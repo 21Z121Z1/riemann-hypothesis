@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.TsumIdealEqSumClassGroup
-public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.IdealSumPeriodicDilate
-public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.ExistsSmoothHomogeneousHasSumUnitSmul
+public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.Bundle0004
+public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.Bundle0047
+public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.Bundle0024
 
 @[expose] public section
 

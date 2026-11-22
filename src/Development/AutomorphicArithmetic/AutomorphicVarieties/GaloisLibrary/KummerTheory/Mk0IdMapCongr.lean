@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.PartsSign
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.Bundle0001
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.GaloisLibrary.SelmerTransport.ConjStableShaFam
 
 @[expose] public section

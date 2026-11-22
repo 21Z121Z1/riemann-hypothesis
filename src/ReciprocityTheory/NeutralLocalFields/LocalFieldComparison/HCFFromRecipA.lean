@@ -1,6 +1,6 @@
 module
 
-public import ReciprocityTheory.NeutralLocalFields.Reciprocity
+public import ReciprocityTheory.NeutralLocalFields.Bundle0001
 public import ReciprocityTheory.NeutralLocalFields.LocalFieldComparison.HilbertClassFieldA
 
 @[expose] public section

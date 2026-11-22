@@ -1,10 +1,10 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.NotIsPrimZero
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0582
 public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.NonnegSumSmulIntBilinFormToRealMemPsdCone
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.SumMulEqOfSumToRealEq
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsStrictFaceOfSmoothConePolyhedralFanStatement
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0576
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0592
 
 @[expose] public section
 
@@ -441,7 +441,7 @@ theorem onModule (hD : ∀ (X : Type) [AddCommGroup X] [Module O X] [Module.Fini
   have hDX : Dominates bar X := hD X
   obtain ⟨hfree, hfin⟩ := balForms_free_and_finite (bar := bar) X
   refine ⟨⟨hP.homog, hP.superadd, hP.integral, hP.pos,
-    fun m m' γ s hγ => hγ.comp s (GlobalTheory.T.isStrict_face_of_smoothCone_polyhedralFan O bar φ X hP hDX m m' γ s hγ), ?_, ?_⟩, ?_⟩
+    fun m m' γ s hγ => hγ.comp s (_root_.GlobalTheory.PolFan.FaceStrict.isStrict_face_of_isCone O bar φ X hP hDX m m' γ s hγ), ?_, ?_⟩, ?_⟩
   · intro B hB
     obtain ⟨S0, -, hS0⟩ := hP.finite
     obtain ⟨e, m, δ, c, hδ, -, hc, hBe⟩ := hS0 B hB

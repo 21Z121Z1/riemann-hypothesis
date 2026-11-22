@@ -1,12 +1,11 @@
 module
 
 public import Formalism.SharpRestriction.LevelLetterCocycles.DecompositionData
-public import Formalism.SharpRestriction.LevelLetterCocycles.LargeLevelLemmas
+public import Formalism.SharpRestriction.LevelLetterCocycles.Bundle0005
 public import Formalism.SharpRestriction.LevelLetterCocycles.SumRepresentations
-public import Formalism.SharpRestriction.LevelLetterCocycles.ArithmeticCylinders
+public import Formalism.SharpRestriction.LevelLetterCocycles.Bundle0004
 public import Formalism.SharpRestriction.LevelLetterCocycles.ElementDenominator
 public import Formalism.SharpRestriction.LevelLetterCocycles.LocalSituation
-public import Formalism.SharpRestriction.LevelLetterCocycles.BlochKatoDuality
 
 @[expose] public section
 

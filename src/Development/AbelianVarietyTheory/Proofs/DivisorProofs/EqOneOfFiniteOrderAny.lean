@@ -2,18 +2,18 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.Uniformization.TXFrame
-public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.AdicSumSectionsOfFiniteSumsOnThickenings
+public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.Bundle0118
 public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ProductOfSectionsExpandsToConvolution
-public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.HeckeOperatorMultiplicativeOnSectionProducts
-public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ExistsAutomorphismInducingFrobeniusAllDegrees
-public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.EqOneOfFiniteOrderOfFixThreeTorsion
-public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.InducedFrobeniusCompUniqueOrigin
-public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ExistsInducedTranslationFrobeniusOnSections
-public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.InducesFrobeniusOnSectionsTranslationIffImage
-public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.DimEqRankAddDim
-public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.CardQuotientKTorsionPairs
-public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.UniformisationTorsionIdentificationWithPairing
-public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.AllUniformizationLawsHold
+public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.Bundle0122
+public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.Bundle0123
+public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.Bundle0105
+public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.Bundle0102
+public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.Bundle0126
+public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.Bundle0084
+public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.Bundle0100
+public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.Bundle0068
+public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.Bundle0128
+public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.Bundle0133
 
 @[expose] public section
 
@@ -199,7 +199,7 @@ theorem sumF_any : LL → AnyD fun {R} _ _ {I} D F _ _ => ∀ (K : Type) [Fintyp
   have := hR.1
   have := D.toPre.P.isAb.smooth
   have hL := D.toPre.P.isLB
-  obtain ⟨P⟩ := GlobalTheory.T.nonempty_perfectSectionsComplex_of_noetherian R _ D.toPre.P.A.hom inferInstance
+  obtain ⟨P⟩ := _root_.GlobalTheory.AbLaw.nonempty_perf_of_noetherian R _ D.toPre.P.A.hom inferInstance
     (GlobalTheory.AbProj.isProjBy_of_isPullback D.toPre.P (IsPullback.id_horiz _)) _ (LB.isLB_linComb hL φ ε)
   choose v hv hv' using fun i => exists_vec P (n i)
   obtain ⟨v₀, hv₀, hv₀'⟩ := exists_vec P n₀

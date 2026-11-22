@@ -2,22 +2,32 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.CosInj
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.PeriodSumHolds
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.MemSupportAconvPair
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.AdelicPointComponentsAtPlacesLatticesVacuaStatement
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0208
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0390
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.AdelicPointComponentsAtPlacesLatticesVacua
+public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.Bundle0008
 public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.PlacewiseToAdelicDecompositionForall
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.MatrixSupportedAtPlaceOfIsHalfSplitPoint
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ThetaFunctionProductsSlicesOrthogonalDecompositi
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.HandBFSmul
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0319
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0123
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0203
 public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.BilinearVacuumCentralCharacter
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SeeSawUnfoldedDataEqKernelDataAtLevel
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.FlatThetaMapsPreserveThetaFunctions
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.FlatThetaMapsConvergeThetaFunctionsStatement
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.BesselThetaContractionExtendByZeroVacuumSmoothStatement
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0365
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0093
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0354
+public import Formalism.LocalToGlobal.IndefiniteReal.OrthogonalComplementCharacterisation
+public import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.ExistsHeightLeTwoMulQuotHeight
+public import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.WittDecompSymplInclIsotropicInclAnisotropic
+public import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.Bundle0019
+public import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.Bundle0007
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0241
+public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.Bundle0018
 public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.DoubleThetaUnfoldingEquivariantUnitaryGroups
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.DoubleStepEqTwoThetaColumnLifts
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.HeisenbergCombinationDisjointPlacesCommuteVacuaStatement
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.HeisenbergCombinationTwoVariableModelAndLineExte
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0264
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0337
+public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.HzUnit
+public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.Bundle0007
+public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.AdmissibleDiscreteSeriesOfHasParam
+public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.HarishChandraModulesOn
 
 @[expose] public section
 
@@ -63,14 +73,14 @@ variable {D : D7}
 
 theorem moves_iff_forall {S : HSp D} {L : Lat S} (hL : IsSelfDualC S L) (P : Pl D → Prop) (g : GA D S) :
     Moves S g L L P ↔ ∀ v, P v → Moves S g L L (· = v) := by
-  have hP := fun z => ((GlobalTheory.T.adelicPoint_components_atPlaces_lattices_vacua D P).2 S).2.2.2 L z hL.1
+  have hP := fun z => ((_root_.GlobalTheory.FinPl.localComponents D P).2 S).2.2.2 L z hL.1
   have hmv := fun (R : Pl D → Prop) (y : Fin S.rank → AE D) (hy : ∀ i, y i ∈ idAt D R) =>
     GlobalTheory.FinPl.PlacesAdeles.supp_mulVec S R g hy
   constructor
   · intro h v hv y hy
     have key : ∀ z : Fin S.rank → AE D, (∀ i, z i ∈ idAt D (· = v)) → (z ∈ latV S L P ↔ z ∈ latV S L (· = v)) := by
       intro z hz
-      rw [hP, ((GlobalTheory.T.adelicPoint_components_atPlaces_lattices_vacua D (· = v)).2 S).2.2.2 L z hL.1]
+      rw [hP, ((_root_.GlobalTheory.FinPl.localComponents D (· = v)).2 S).2.2.2 L z hL.1]
       constructor
       · rintro ⟨_, h⟩
         exact ⟨hz, fun w hw e he => h w (hw ▸ hv) e he⟩
@@ -78,7 +88,7 @@ theorem moves_iff_forall {S : HSp D} {L : Lat S} (hL : IsSelfDualC S L) (P : Pl 
         refine ⟨fun i => GlobalTheory.FinPl.PlacesAdeles.idAt_single_le hv (hz i), fun w _ e he => ?_⟩
         by_cases hwv : w = v
         · exact h w hwv e he
-        · obtain ⟨ε, -, -, -, hAt, hOff⟩ := (GlobalTheory.T.adelicPoint_components_atPlaces_lattices_vacua D (· = w)).1
+        · obtain ⟨ε, -, -, -, hAt, hOff⟩ := (_root_.GlobalTheory.FinPl.localComponents D (· = w)).1
           have hzero : e • z = 0 := by
             funext i
             have h1 : ε * e = e := (hAt e).1 he.1
@@ -123,7 +133,7 @@ variable {ψ : AddChar (AF D.host.F) ℂ}
 theorem vac_single (hψ : IsStdChar D ψ (-1)) {S T : HSp D} {LS : Lat S} {LT : Lat T} (hS : IsSelfDualC S LS)
     (hT : IsSelfDualC T LT) {P : Pl D → Prop} {v : Pl D} (hv : P v) {f : WO S T → ℂ} (hf : Vac ψ S T LS LT P f) :
     Vac ψ S T LS LT (· = v) f := by
-  have key := (GlobalTheory.T.heisenbergCombination_disjoint_places_commute_vacua D ψ hψ S T (· = v) (fun p => P p ∧ p ≠ v) (fun p hp hn => hn.2 hp)).2.2.2.2 LS LT f hS hT
+  have key := (_root_.GlobalTheory.DisjComb.main D ψ hψ S T (· = v) (fun p => P p ∧ p ≠ v) (fun p hp hn => hn.2 hp)).2.2.2.2 LS LT f hS hT
   have e : (fun p => p = v ∨ (P p ∧ p ≠ v)) = P := funext fun p => propext
     ⟨fun h => h.elim (fun h => h ▸ hv) (·.1), fun h => (em (p = v)).imp id fun h' => ⟨h, h'⟩⟩
   rw [e] at key
@@ -227,10 +237,10 @@ def HandIsLift : Prop :=
 variable {S}
 
 theorem theta_flatBF {f : WO S.B.V S.J.W → ℂ} (hf : IsThetaFunO ψ _ _ f) : IsThetaFunO ψ _ _ (flatBF S.s₁ f) :=
-  (GlobalTheory.Unf.FlatTheta.flat_isThetaFun D (GlobalTheory.T.flatThetaMaps_converge_thetaFunctions D) ψ).1 _ _ _ S.s₁ f hf
+  (GlobalTheory.Unf.FlatTheta.flat_isThetaFun D (_root_.GlobalTheory.Unf.Flat.flatLaw D) ψ).1 _ _ _ S.s₁ f hf
 
 theorem theta_flatFB {f : WO S.J.W S.B'.V → ℂ} (hf : IsThetaFunO ψ _ _ f) : IsThetaFunO ψ _ _ (flatFB S.s₂ f) :=
-  (GlobalTheory.Unf.FlatTheta.flat_isThetaFun D (GlobalTheory.T.flatThetaMaps_converge_thetaFunctions D) ψ).2 _ _ _ S.s₂ f hf
+  (GlobalTheory.Unf.FlatTheta.flat_isThetaFun D (_root_.GlobalTheory.Unf.Flat.flatLaw D) ψ).2 _ _ _ S.s₂ f hf
 
 theorem val_eq_hand (hS : HandIsLift S) {Φ₁ : WO S.B.V S.J.W → ℂ} {Φ₂ : WO S.J.W S.B'.V → ℂ} (h₁ : IsThetaFunO ψ _ _ Φ₁)
     (h₂ : IsThetaFunO ψ _ _ Φ₂) {φ : GA D S.B.A → ℂ} (hφ : IsContAut _ φ) (f : GA D S.B'.V → ℂ) (g x y) :
@@ -257,7 +267,7 @@ theorem contAut_lift (hψ : IsStdChar D ψ (-1)) (hS : HandIsLift S) {c₁ : WO 
       (GlobalTheory.Unf.contr S.l S.J.W₀ S.vL (flatBF S.s₁ Φ₁) (flatFB S.s₂ Φ₂)))) := by
   have t₁ := GlobalTheory.AvgMid.theta_comb hψ (isFinComb_extS S.B.o S.J.W₀ hc₁) (theta_flatBF h₁)
   have t₂ := GlobalTheory.AvgMid.theta_comb hψ (isFinComb_extT S.B'.o S.J.W₀ hc₂) (theta_flatFB h₂)
-  rw [← (GlobalTheory.T.besselThetaContraction_extendByZero_vacuum_smooth D ψ hψ _ _ S.B S.B' S.l S.J.W₀ S.vL _ _ (theta_flatBF h₁) (theta_flatFB h₂)).2.1, ← hS φ _ _ hφ t₁ t₂]
+  rw [← (_root_.GlobalTheory.ContrComb.contr_comb_main D ψ hψ _ _ S.B S.B' S.l S.J.W₀ S.vL _ _ (theta_flatBF h₁) (theta_flatFB h₂)).2.1, ← hS φ _ _ hφ t₁ t₂]
   exact GlobalTheory.FinPl.Comm.contAut_hand0 _ _ _ _ hφ t₁ t₂
 
 end Step

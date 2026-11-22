@@ -6,8 +6,8 @@ public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeo
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.SecBaseChangeAnySt
 public import Development.AbelianVarietyTheory.Definitions.ArchimedeanThetaValues.IdealPart
 public import Development.AbelianVarietyTheory.Definitions.ThetaMetrics.MemRangeCompIffOfIsClosedImmersion
-public import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.SmulEqZeroOfRelation
-public import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.CoeffMulFSum
+public import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.Bundle0039
+public import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.Bundle0022
 
 @[expose] public section
 

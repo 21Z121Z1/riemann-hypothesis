@@ -1,9 +1,9 @@
 module
 
-public import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.SatakeExponents.UniformizerValuations.FrameReading.FmTools
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ContinuousCj
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ContinuousInvolutiveLocalTransposeInverse
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsBallSubset
+public import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.SatakeExponents.UniformizerValuations.FrameReading.Bundle0005
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0751
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1288
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1292
 
 @[expose] public section
 

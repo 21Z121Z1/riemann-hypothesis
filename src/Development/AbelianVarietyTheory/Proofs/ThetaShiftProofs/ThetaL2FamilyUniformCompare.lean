@@ -4,10 +4,10 @@ public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.ArchimedeanThetaValues.IsThetaL2NormSquared
 public import Development.AbelianVarietyTheory.Definitions.RegularCharts.ModelAt
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.UnifUniqSt
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.SecValuesComplexFibreAbelianScheme
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.FamilyUnifExpUnique
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.IsHolToFibPtAndCompFibre
-public import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.WeilEqIffHermFormEqComplex
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0060
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0044
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0035
+public import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.Bundle0026
 public import Development.AbelianVarietyTheory.Definitions.ThetaMetrics.IsAddFundamentalDomainLatticeDomain
 
 @[expose] public section

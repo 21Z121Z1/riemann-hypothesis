@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import GroundTheory.ProfiniteCohomology.MackeyDefs
+public import GroundTheory.ProfiniteCohomology.Bundle0006
 
 @[expose] public section
 

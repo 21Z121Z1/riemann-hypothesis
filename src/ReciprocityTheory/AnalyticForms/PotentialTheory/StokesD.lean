@@ -1,7 +1,7 @@
 module
 
 public import ReciprocityTheory.AnalyticForms.PotentialTheory.StokesC
-public import ReciprocityTheory.AnalyticForms.PotentialTheory.ContDiffAtOfIsPotential
+public import ReciprocityTheory.AnalyticForms.PotentialTheory.Bundle0003
 
 @[expose] public section
 

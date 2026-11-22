@@ -1,10 +1,10 @@
 module
 
 public import Development.WeilBound.CoreStatements.AutomorphicKernels.SiegelWeilFormula.AdelicEisensteinSeries.GodementSumW
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FlatSectionGrowthBound
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.EisensteinSeriesContinuation
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.EisensteinVerticalBound
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ContinuousDerivFamily
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0440
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0530
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0532
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0462
 public import Development.WeilBound.CoreStatements.TemperedRepresentationTheory.EisensteinGrowthForms.GrowForms
 
 @[expose] public section

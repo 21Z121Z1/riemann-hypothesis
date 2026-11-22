@@ -5,7 +5,7 @@ public import GroundTheory.ProfiniteCohomology.GlobalClassFormation.LocalLimits.
 public import GroundTheory.ProfiniteCohomology.GlobalClassFormation.IdeleCohomology.Unramified
 public import GroundTheory.ProfiniteCohomology.GaloisCohomology.BrauerInflation
 public import GroundTheory.ProfiniteCohomology.LocalClassFormation.CupSymbolUnramified
-public import GroundTheory.ProfiniteCohomology.FilteredHomology
+public import GroundTheory.ProfiniteCohomology.Bundle0001
 public import GroundTheory.ProfiniteCohomology.CupProducts
 
 @[expose] public section

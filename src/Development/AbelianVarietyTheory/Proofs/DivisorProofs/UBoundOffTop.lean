@@ -3,7 +3,7 @@ module
 public import Mathlib
 public import Formalism.SharpRestriction.Divisibility.LocalQuadraticParts
 public import Formalism.SharpRestriction.GrowthBounds.WeilJacquetShalikaLaw
-public import Formalism.SharpRestriction.GlobalSchurBounds.MainIn
+public import Formalism.SharpRestriction.GlobalSchurBounds.Bundle0002
 public import Formalism.QuotientMetricDivisors.FinalW
 public import Formalism.QuotientMetricDivisors.SixthReductionExplicit
 public import Formalism.LocalRingCardinality.RankBoundMonotoneInDimension

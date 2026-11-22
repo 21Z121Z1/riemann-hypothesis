@@ -1,8 +1,7 @@
 module
 
 public import Mathlib
-public import GroundTheory.AutomorphicForms.NormDetDiagUnitsPosRealToUnits
-public import GroundTheory.AutomorphicForms.ReductionSplitting
+public import GroundTheory.AutomorphicForms.Bundle0022
 public import GroundTheory.AutomorphicForms.ReductionMeasure
 public import GroundTheory.AutomorphicForms.ReductionLocalVolume
 

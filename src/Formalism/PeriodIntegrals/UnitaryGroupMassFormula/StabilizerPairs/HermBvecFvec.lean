@@ -1,7 +1,7 @@
 module
 
 public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.StabilizerPairs.IsUnitDetOfMemGV
-public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.StabilizerPairs.UtSubOneLast
+public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.StabilizerPairs.Bundle0001
 
 @[expose] public section
 

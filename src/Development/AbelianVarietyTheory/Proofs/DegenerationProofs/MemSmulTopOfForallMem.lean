@@ -2,8 +2,8 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.IsSMulRegularCokerDualMapOfExactFibres
-public import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.IsRegularRingOfSmooth
-public import Development.AbelianVarietyTheory.Proofs.ThetaFamilyOrigin.RingKrullDimOfEtaleMvPolynomial
+public import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.Bundle0007
+public import Development.AbelianVarietyTheory.Proofs.ThetaFamilyOrigin.Bundle0001
 
 @[expose] public section
 

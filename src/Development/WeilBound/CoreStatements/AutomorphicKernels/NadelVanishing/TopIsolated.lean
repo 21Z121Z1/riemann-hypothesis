@@ -1,7 +1,7 @@
 module
 
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsolatedNonKltDivisorOfPrincipalisation
-public import Development.WeilBound.CoreStatements.ResolutionCharZero.PrincipalisationClosed
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle3115
+public import Development.WeilBound.CoreStatements.ResolutionCharZero.Bundle0003
 
 @[expose] public section
 

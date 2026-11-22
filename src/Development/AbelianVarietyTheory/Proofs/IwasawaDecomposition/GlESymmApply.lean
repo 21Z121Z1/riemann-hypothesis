@@ -4,7 +4,7 @@ public import Mathlib
 public import Formalism.LocalToGlobal.GroupLattices.DownNaturalLevelZero
 public import Formalism.LocalToGlobal.GlobalTheory.GL6.PRLocV
 public import Formalism.LocalToGlobal.GlobalTheory.GL6.PBwLocBases
-public import Formalism.LocalToGlobal.GlobalTheory.GL6.PBwLcInt
+public import Formalism.LocalToGlobal.GlobalTheory.GL6.Bundle0006
 
 @[expose] public section
 

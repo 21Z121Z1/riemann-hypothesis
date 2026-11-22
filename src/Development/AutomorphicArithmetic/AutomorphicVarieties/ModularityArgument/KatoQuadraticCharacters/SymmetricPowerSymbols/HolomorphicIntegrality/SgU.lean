@@ -2,8 +2,8 @@ module
 
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.KatoQuadraticCharacters.SymmetricPowerSymbols.SymExOf
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.KatoQuadraticCharacters.SymmetricPowerSymbols.HolomorphicIntegrality.HolInt
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.MemRingOfIntegersOfHol
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.SiegelUnitInTowerNeZero
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0188
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0179
 
 @[expose] public section
 

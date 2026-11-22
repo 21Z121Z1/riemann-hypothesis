@@ -1,14 +1,14 @@
 module
 
 public import Mathlib
-public import Formalism.LocalToGlobal.IndefiniteReal.ConcretePkgSpec
+public import Formalism.LocalToGlobal.IndefiniteReal.Bundle0023
 public import Formalism.LocalToGlobal.IndefiniteReal.FWExist
 public import Formalism.LocalToGlobal.IndefiniteForms.IndefiniteTree.ONLeaves
 public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.LiftWeightComplexPointEqTwist
 public import Development.AbelianVarietyTheory.Definitions.Foundations.ThetaSeriesTies
-public import Formalism.LocalToGlobal.UnitaryNorms.CharUniq
+public import Formalism.LocalToGlobal.UnitaryNorms.Bundle0005
 public import Formalism.MirabolicMackeyTheory.MirabolicMackeyProofs.RamBasic
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ClassPresBasic
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0066
 
 @[expose] public section
 

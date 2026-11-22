@@ -3,10 +3,10 @@ module
 public import Mathlib
 public import Formalism.LocalToGlobal.SiegelLatticeTheory.FlagStabilizerTensors.RowDict
 public import Formalism.LocalToGlobal.SiegelLatticeTheory.FlagStabilizerTensors.RowLevelMatch
-public import Formalism.SharpRestriction.LevelLetterCocycles.ArithmeticCylinders
+public import Formalism.SharpRestriction.LevelLetterCocycles.Bundle0004
 public import Formalism.LocalToGlobal.GaloisLevelStructure.DefsFinTyp
 public import Formalism.LocalToGlobal.GaloisLevelStructure.DefsAutLoc
-public import Formalism.LocalToGlobal.IndefiniteReal.TensCastR
+public import Formalism.LocalToGlobal.IndefiniteReal.Bundle0024
 
 @[expose] public section
 

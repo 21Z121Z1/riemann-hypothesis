@@ -3,20 +3,16 @@ module
 public import Mathlib
 public import Formalism.FormalGroupLog.FormalGroupLogProofs.ChainRule
 public import ReciprocityTheory.DualLattices.DetPolyMulCayleyOmegaPow
-public import ReciprocityTheory.DualLattices.VEqZeroOfPowEqOne
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.WeightedSumBounds.PeriodValuation
+public import ReciprocityTheory.DualLattices.Bundle0003
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.WeightedSumBounds.Bundle0001
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.TaylorDiscriminants.WickVanishing.CalcExp
-public import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.LegendreBoundsFactorialMultiIndexCapelliStatement
-public import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.DetFrobeniusSubPowSupportStatement
-public import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.WeightNonnegExpOfWeightGeInvPrimeSubOneStatement
+public import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.Bundle0006
+public import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.Bundle0004
+public import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.Bundle0010
 public import Formalism.LocalToGlobal.CharacterGerms.BiadditiveInSingleVariables
-public import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.FactorialWeightedPairingDetPowProportionalStatement
-public import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.DeterminantPairingQuotientValuationLowerBoundStatement
-public import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.ProdIccMulFactorial
-public import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.LegendreAndCapelli
+public import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.Bundle0008
 public import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.RadiiValuationDifferences
-public import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.NewtonBoundPosAndNewtonStep
-public import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.BlockValueOnRowsEqStatement
+public import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.Bundle0011
 
 @[expose] public section
 
@@ -607,7 +603,7 @@ theorem main :
       rw [act_eq, map_sum]
     refine v.map_le_sum fun m hm => ?_
     rw [hψ, ← map_pow] at hm ⊢
-    obtain ⟨a1, a2, a3⟩ := GlobalTheory.T.det_frobenius_sub_pow_support_bounds l i E n s hl hi1 (psi l (l ^ i) E n) rfl m
+    obtain ⟨a1, a2, a3⟩ := _root_.GlobalTheory.det_frobenius_sub_pow_support l i E n s hl hi1 (psi l (l ^ i) E n) rfl m
       (MvPolynomial.support_map_subset _ _ hm)
     rw [actMon, LinearMap.map_smul, LinearMap.map_smul, MvPowerSeries.coeff_monomial_mul, smul_eq_mul, smul_eq_mul]
     split_ifs with hle
@@ -636,7 +632,7 @@ theorem main :
       Finsupp.snd_sumFinsuppEquivProdFinsupp]
     have := real_bound (L := l ^ i) (E := E) h5 (Nat.one_le_pow _ _ hl.pos) (by push_cast; exact hE)
       hs hn a1 (padicValNat l (∏ j, (m (Sum.inr j)).factorial)) (by positivity) (fun hK => by
-        have := (GlobalTheory.T.legendre_bounds_factorial_multiIndex_capelli l hl).2.1 (Fin n × Fin n) (fun j => m (Sum.inr j)) hK
+        have := (_root_.GlobalTheory.LegendreBounds.legendre_bounds l hl).2.1 (Fin n × Fin n) (fun j => m (Sum.inr j)) hK
         simpa [sq] using this)
     simpa only [Nat.cast_mul, Nat.cast_pow] using this
   · intro y
@@ -859,7 +855,7 @@ theorem main : CoefficientExpansionLambda := by
     rw [pair_self, pair_self] at h4
     rw [eq_div_of_mul_eq (hcap _) h4]
     ring
-  · have := GlobalTheory.T.determinantPairing_quotient_valuation_lower_bound C v l hl hv i n0 s (Q s) hs hn (hQv s hs hn)
+  · have := _root_.GlobalTheory.DetPairingBound.main C v l hl hv i n0 s (Q s) hs hn (hQv s hs hn)
     rw [pair_self] at this
     exact this
 

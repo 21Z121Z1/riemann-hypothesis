@@ -3,8 +3,8 @@ module
 public import Mathlib
 public import Formalism.SharpRestriction.LevelLetterCocycles.DeltaInvariantLattices
 public import Development.AbelianVarietyTheory.BlockTheory.NonGaloisCusps.LocalRingStructure
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.LetterSandwichOfFrobMatrices
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.NBasisLoc
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0137
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0327
 public import Development.AbelianVarietyTheory.Counterexamples.NonGaloisSurvey.CriterionWithoutRoot
 
 @[expose] public section

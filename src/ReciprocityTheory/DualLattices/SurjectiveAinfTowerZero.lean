@@ -1,6 +1,6 @@
 module
 
-public import ReciprocityTheory.DualLattices.SubMemOfCompat
+public import ReciprocityTheory.DualLattices.Bundle0031
 
 @[expose] public section
 

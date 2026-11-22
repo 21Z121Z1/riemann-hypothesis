@@ -5,9 +5,9 @@ public import Formalism.SharpRestriction.InertJacobiLevels.AsmIface
 public import Formalism.LocalToGlobal.GlobalTheory.IsResidueClassZero
 public import Formalism.SharpRestriction.GrowthBounds.SmallOrderPrimes
 public import Formalism.SharpRestriction.Divisibility.LocalQuadraticParts
-public import Formalism.SharpRestriction.LevelLetterCocycles.TwGood
-public import Formalism.LocalRingCardinality.DataAmbForm
-public import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.DisjointExceptional
+public import Formalism.SharpRestriction.LevelLetterCocycles.Bundle0018
+public import Formalism.LocalRingCardinality.Bundle0002
+public import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.Bundle0003
 public import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.AuxiliaryPrimeMemAvoidedPrimes
 public import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.SetUnipotentTranslate
 

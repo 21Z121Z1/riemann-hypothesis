@@ -1,7 +1,7 @@
 module
 
 public import Formalism.LocalToGlobal.NormalizedHeckeFactors.HeckeStdTwOfStd
-public import Formalism.LocalToGlobal.NormalizedHeckeFactors.TwoPowS0EqTwoPartModulus
+public import Formalism.LocalToGlobal.NormalizedHeckeFactors.Bundle0003
 public import Formalism.GaloisCohomology.GaloisCohomologyProofs.LdataNonempty
 public import Formalism.LocalRingCardinality.SpanPowerMembership.ExistsTameGen
 public import Formalism.LocalRingCardinality.SpanPowerMembership.Places

@@ -2,12 +2,15 @@ module
 
 public import Mathlib
 public import Formalism.FrobeniusOrbits.RealSubfieldLeCompositum
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsFCocIff
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.LocalDualityFiniteDiscreteModulesStatement
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.MemDualBlochKatoOfOrthogonalResidualStatement
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ResidualBlochKatoLatticeDualOrthogonalStatement
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ResidualSelmerBaseChangeCoefficientFieldStatement
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.LocalCountOfSetupStatement
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0344
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0401
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0492
+public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.PoitouTateNineTermTransgressionZeroApply
+public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.Bundle0002
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0497
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0376
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.LocalCountOfSetup
+public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0013
 public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ContinuousAlgebraMapPadicInt
 
 @[expose] public section
@@ -224,8 +227,8 @@ theorem card_eq (hPT : PoitouTateTotallyComplex) (hLF : LocalFiniteness) (hLD : 
       rcases Finset.mem_union.1 hv with hv | hv
       · rw [hSl] at hv
         rw [cl _ v hv, cl _ v hv]
-        exact ⟨fun hy x hx => GlobalTheory.T.residualBlochKato_lattice_dual_orthogonal hLD D N X bkP i s h (IsLocalRing.ResidueField (X.O0 i)) hres ρ hρ v hv x y hx hy,
-          GlobalTheory.T.mem_dualBlochKato_of_orthogonal_residual D N X bkP i s h (IsLocalRing.ResidueField (X.O0 i)) hres hsurj ρ hρ v hv y⟩
+        exact ⟨fun hy x hx => _root_.GlobalTheory.ResOrth.bkOn_orthogonal hLD D N X bkP i s h (IsLocalRing.ResidueField (X.O0 i)) hres ρ hρ v hv x y hx hy,
+          _root_.GlobalTheory.ResDual.Perp.mem_bkOn_of_orthogonal D N X bkP i s h (IsLocalRing.ResidueField (X.O0 i)) hres hsurj ρ hρ v hv y⟩
       · rw [hSp] at hv
         rw [cp _ v hv, cp _ v hv]
         refine ⟨fun _ x _ => cupCob_of_mk_eq_zero _ _ _ _ (fun g => dot_equiv (IsLocalRing.ResidueField (X.O0 i)) hρ g.1) x y ?_, fun _ => Submodule.mem_top⟩
@@ -234,7 +237,7 @@ theorem card_eq (hPT : PoitouTateTotallyComplex) (hLF : LocalFiniteness) (hLD : 
   have hset : Setup bkP i s (1 : GE N →* ((IsLocalRing.ResidueField (X.O0 i)))ˣ) ∅ :=
     ⟨h, hloc, Module.Finite.of_surjective (Algebra.linearMap (X.O0 i) (IsLocalRing.ResidueField (X.O0 i))) hsurj, hker, fun g => ⟨0, by simp⟩,
       fun _ _ _ _ _ _ => rfl, by simp, fun _ _ _ _ _ _ => rfl⟩
-  have cnt := GlobalTheory.T.local_count_of_setup hLF hLD hLE h4 D N X bkP i s (IsLocalRing.ResidueField (X.O0 i)) 1 ∅ hset (IsLocalRing.ResidueField (X.O0 i)) inferInstance
+  have cnt := _root_.GlobalTheory.LocalConditionCount.locCount hLF hLD hLE h4 D N X bkP i s (IsLocalRing.ResidueField (X.O0 i)) 1 ∅ hset (IsLocalRing.ResidueField (X.O0 i)) inferInstance
   have hSl' : placesOver D.host.E (X.l i) = (Sl : Set (PlE D.host)) := Set.ext fun v => (hSl v).symm
   rw [hSl', finprod_mem_coe_finset, finprod_mem_coe_finset] at cnt
   rw [Finset.prod_union hdis, Finset.prod_union hdis, h0_red hr h.2.1.1, h0_red_dual hr h.2.1.1 hρ,

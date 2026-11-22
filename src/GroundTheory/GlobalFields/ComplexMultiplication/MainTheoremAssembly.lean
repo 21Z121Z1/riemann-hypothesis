@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import GroundTheory.GlobalFields.ComplexMultiplication.MainTheoremLattice
+public import GroundTheory.GlobalFields.ComplexMultiplication.Bundle0017
 public import GroundTheory.GlobalFields.ComplexMultiplication.MainTheoremFrobenius
 public import GroundTheory.GlobalFields.ComplexMultiplication.MainTheoremIdeles
 public import GroundTheory.GlobalFields.ComplexMultiplication.AnalyticUniformizationClassification

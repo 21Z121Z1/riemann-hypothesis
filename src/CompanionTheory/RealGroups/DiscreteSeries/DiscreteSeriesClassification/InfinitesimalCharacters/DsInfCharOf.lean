@@ -1,9 +1,9 @@
 module
 
-public import Formalism.RealPlaceAnalysis.ThirdArithmeticHolds
-public import Formalism.PeriodIntegrals.DSInfCharCap
+public import Formalism.RealPlaceAnalysis.Bundle0004
+public import Formalism.PeriodIntegrals.Bundle0016
 public import Development.AbelianVarietyTheory.Statements.CuspFrameWeights.DiscreteSpectrumKFiniteDecomposition
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.CapelliOperatorOnUnitaryCoefficientEqDerived
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0136
 
 @[expose] public section
 

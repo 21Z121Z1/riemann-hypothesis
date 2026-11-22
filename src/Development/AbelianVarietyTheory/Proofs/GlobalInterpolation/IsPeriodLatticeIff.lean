@@ -4,20 +4,17 @@ public import Mathlib
 public import Formalism.LocalRingCardinality.RhoDetPrimeEqMuTildeMulChiPow
 public import Formalism.SharpRestriction.GlobalSchurBounds.GeneralLinearActions.IsDiscriminantTwelfthRootOfIdealLattice
 public import Formalism.SharpRestriction.GlobalSchurBounds.GL3Theta
-public import Formalism.GL3MeanSquares.HookFormulaTorsion.FourFoldOrthogonalSum
-public import Development.AbelianVarietyTheory.Definitions.Foundations.LatticeIntegralCoordinates
-public import Development.AbelianVarietyTheory.BlockTheory.GlobalSignature.SignedLogMeans
-public import Development.AbelianVarietyTheory.BlockTheory.GlobalSignature.ClassMeanPeriods
-public import Development.AbelianVarietyTheory.BlockTheory.GlobalSignature.EquidistributedConjugates
-public import Development.AbelianVarietyTheory.BlockTheory.GlobalSignature.JacobiThetaHalfCharacteristic
+public import Formalism.GL3MeanSquares.HookFormulaTorsion.Bundle0002
+public import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0015
+public import Development.AbelianVarietyTheory.BlockTheory.GlobalSignature.Bundle0012
+public import Development.AbelianVarietyTheory.BlockTheory.GlobalSignature.Bundle0006
 public import Development.AbelianVarietyTheory.BlockTheory.GlobalSignature.ThetaConstantWeber
-public import Development.AbelianVarietyTheory.BlockTheory.GlobalSignature.PeriodLatticeAgreement
-public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.ExplicitPosMeanOfPositivePart
+public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0056
 public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.ExistsAnalyticSetupPeriodLatticePair
-public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.ExistsReduced
-public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.UniformizationHolds
-public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.ExistsIntegralPeriodElementStatement
-public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.NormThetaCharTermLe
+public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0078
+public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0075
+public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.ExistsIntegralPeriodElement
+public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0057
 
 @[expose] public section
 
@@ -45,7 +42,7 @@ theorem lemC : EquidistributedConjugates.ConjugatesEquidistributed → PeriodLat
       ∃ X : M, X ≠ 0 ∧ IsIntegral ℤ (X : ℂ) ∧ ∀ (ρ : M →ₐ[ℚ] ℂ) (ω₁ τ : ℂ), ω₁ ≠ 0 → 0 < τ.im →
         JacobiThetaHalfCharacteristic.IsPeriodLattice (lamConj M ρ (lamOf D cc δ)) ω₁ τ → ∀ a b : Fin 2, JacobiThetaHalfCharacteristic.IsEvenChar a b →
         JacobiThetaHalfCharacteristic.thetaChar a b (t ρ / ω₁) τ = 0 →
-        ‖ρ X‖ = (‖JacobiThetaHalfCharacteristic.thetaChar a b 0 τ‖ / ‖ModularForm.eta τ‖) ^ 12 := GlobalTheory.T.exists_integral_period_element
+        ‖ρ X‖ = (‖JacobiThetaHalfCharacteristic.thetaChar a b 0 τ‖ / ‖ModularForm.eta τ‖) ^ 12 := _root_.GlobalTheory.IntegralX.exists_integral_theta_ratio
 
 theorem lemD : ∃ C₀ : ℝ, 0 < C₀ ∧ ∀ (a b : Fin 2) (τ : ℂ), 1 / 2 ≤ τ.im →
     ‖JacobiThetaHalfCharacteristic.thetaChar a b 0 τ‖ ≤ C₀ := GlobalTheory.Glob.EvenThetaBound.evenThetaConst_bounded

@@ -1,6 +1,6 @@
 module
 
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.HeightTheory.HDiscBDefs
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.HeightTheory.Bundle0014
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.HeightTheory.SupportFreeOfBlockSubstInvariant
 
 @[expose] public section

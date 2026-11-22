@@ -1,7 +1,7 @@
 module
 
 public import Formalism.LocalToGlobal.GlobalTheory.GL6.Statement
-public import Formalism.LocalToGlobal.GroupLattices.TrivialTransfer.OneAddPowOfSq
+public import Formalism.LocalToGlobal.GroupLattices.TrivialTransfer.Bundle0001
 
 @[expose] public section
 

@@ -1,7 +1,7 @@
 module
 
-public import Development.WeilBound.CoreStatements.HodgeTatePoints.IsMaximalOfNeBot
-public import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.PFiniteBirationalLength
+public import Development.WeilBound.CoreStatements.HodgeTatePoints.Bundle0012
+public import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.Bundle0051
 
 @[expose] public section
 

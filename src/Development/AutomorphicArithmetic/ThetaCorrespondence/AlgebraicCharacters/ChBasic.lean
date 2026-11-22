@@ -2,8 +2,8 @@ module
 
 public import Development.AutomorphicArithmetic.ThetaCorrespondence.AlgebraicCharacters.EmbOrbit
 public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisGeometry₂.ConclusionFinite
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.FontaineParameterTwistPotentiallySemistable
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.RootsCharpolySmulMatrix
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0229
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0037
 
 @[expose] public section
 

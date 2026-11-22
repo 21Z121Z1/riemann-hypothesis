@@ -1,7 +1,7 @@
 module
 
 public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LocalMassType.WProof
-public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LocalMassType.LatBasis
+public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LocalMassType.Bundle0001
 
 @[expose] public section
 

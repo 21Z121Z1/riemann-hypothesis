@@ -1,10 +1,10 @@
 module
 
 public import Mathlib
-public import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.QuotientVanishing.NonEllFlag
-public import Development.AbelianVarietyTheory.Proofs.CharacterTheory.CharpolyBlockAndInvariantUnderStabilizerNilradic
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.TwCentPreservesFlag
-public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.AevalIntertwining
+public import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.QuotientVanishing.Bundle0001
+public import Development.AbelianVarietyTheory.Proofs.CharacterTheory.Bundle0003
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0308
+public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0002
 
 @[expose] public section
 

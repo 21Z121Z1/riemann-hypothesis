@@ -1,11 +1,10 @@
 module
 
-public import Development.AutomorphicArithmetic.Foundations.Convolution.CentreSplitting.DefsTw
-public import Development.AutomorphicArithmetic.Foundations.Convolution.CentreSplitting.ConjCarries
+public import Development.AutomorphicArithmetic.Foundations.Convolution.CentreSplitting.Bundle0001
+public import Development.AutomorphicArithmetic.Foundations.Convolution.CentreSplitting.Bundle0005
 public import Development.AutomorphicArithmetic.Foundations.Convolution.CentreSplitting.IsoEq
-public import Development.AutomorphicArithmetic.Foundations.Convolution.CentreSplitting.ExSummand
-public import Development.AutomorphicArithmetic.Foundations.Convolution.CentreSplitting.ExCusp
-public import Development.AutomorphicArithmetic.Foundations.Convolution.CentreSplitting.GalCentral
+public import Development.AutomorphicArithmetic.Foundations.Convolution.CentreSplitting.Bundle0004
+public import Development.AutomorphicArithmetic.Foundations.Convolution.CentreSplitting.Bundle0002
 public import PositivityTheory.AutomorphicForms.PublishedInputs.CyclicBaseChange.PSConjSpaceC
 
 @[expose] public section

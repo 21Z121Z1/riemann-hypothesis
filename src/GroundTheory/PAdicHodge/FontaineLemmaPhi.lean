@@ -3,7 +3,7 @@ module
 public import Mathlib
 public import GroundTheory.PAdicHodge.FontaineLemmaAInf
 public import GroundTheory.PAdicHodge.ACrisFrobFixed
-public import GroundTheory.PowerSubgroups.CountableNeighbourhoods.FontainePhiPowerSubgroups
+public import GroundTheory.PowerSubgroups.CountableNeighbourhoods.Bundle0001
 
 @[expose] public section
 

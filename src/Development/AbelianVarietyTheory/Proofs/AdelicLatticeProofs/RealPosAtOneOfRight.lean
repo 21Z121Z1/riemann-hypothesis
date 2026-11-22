@@ -2,12 +2,12 @@ module
 
 public import Mathlib
 public import Formalism.UnipotentAdelicQuotients.ThmBInHecke
-public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.IdealCharacterLContinuationNeZeroOne
+public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.Bundle0052
 public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.CmCharacterConjugationSymmetry
-public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.RayCharacterExtendsToIdeals
-public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.RayInvariantContinuousEqOne
-public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.UnitaryCharPiComplexUnitsEqProdZpow
-public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.IdeleCongruenceUnitCriterion
+public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.Bundle0004
+public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.Bundle0005
+public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.Bundle0018
+public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.Bundle0031
 
 @[expose] public section
 

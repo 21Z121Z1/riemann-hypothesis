@@ -1,8 +1,8 @@
 module
 
-public import ReciprocityTheory.DualLattices.SubgroupQuotientStatement
-public import ReciprocityTheory.DualLattices.ExistsSmulMemOfMemSpan
-public import ReciprocityTheory.DualLattices.MapTensorSpan
+public import ReciprocityTheory.DualLattices.Bundle0007
+public import ReciprocityTheory.DualLattices.Bundle0004
+public import ReciprocityTheory.DualLattices.Bundle0006
 
 @[expose] public section
 

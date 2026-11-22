@@ -2,11 +2,11 @@ module
 
 public import Development.WeilBound.RepresentationTheoryGL.GenericUnitaryGL.ComplementarySeries.ComapTwKer
 public import Development.WeilBound.RepresentationTheoryGL.GenericUnitaryGL.ComplementarySeries.DerFin
-public import Development.WeilBound.RepresentationTheoryGL.GenericUnitaryGL.ComplementarySeries.JacquetModuleThetaTwist
-public import Development.WeilBound.RepresentationTheoryGL.GenericUnitaryGL.ComplementarySeries.NontrivialOfIsIrreducible
+public import Development.WeilBound.RepresentationTheoryGL.GenericUnitaryGL.ComplementarySeries.Bundle0002
+public import Development.WeilBound.RepresentationTheoryGL.GenericUnitaryGL.ComplementarySeries.Bundle0003
 public import Development.WeilBound.RepresentationTheoryGL.GenericUnitaryGL.ComplementarySeries.CuspPair
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.DerivativeJacquetHoldsStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IsSmoothIterPhi
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0580
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0563
 
 @[expose] public section
 

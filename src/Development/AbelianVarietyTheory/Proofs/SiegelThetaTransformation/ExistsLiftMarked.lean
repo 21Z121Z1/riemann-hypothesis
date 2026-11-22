@@ -2,14 +2,14 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.SpanningFamilies.DatEqZero
-public import Formalism.LocalToGlobal.ProjectiveLattices.CuspFree
-public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.ThExprUniqOfChartIndep2
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0011
+public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0007
 public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.AnFibLift
 public import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.ExistsLevMoveOfFrOver
 public import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.FramedPointsLiftToLevelCover
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.FrMoveTransfer
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0101
 public import Development.AbelianVarietyTheory.Proofs.HomogeneousIdeals.HomLieEquivScalarTmul
-public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.AllUniformizationLawsHold
+public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.Bundle0133
 
 @[expose] public section
 

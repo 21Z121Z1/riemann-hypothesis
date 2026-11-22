@@ -7,7 +7,7 @@ public import Development.ResolutionOfSingularities.Foundations.Blowup.StrictTra
 public import Development.ResolutionOfSingularities.Foundations.Schemes.IdealSheafData
 public import Development.ResolutionOfSingularities.Foundations.BlowupUniversalProperty
 public import Development.ResolutionOfSingularities.EmbeddedResolution.ResolutionOfSingularities
-public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.SaturationByPowers
+public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0053
 
 @[expose] public section
 

@@ -1,9 +1,9 @@
 module
 
 public import Development.WeilBound.ThetaLifts.LatticeBasics.ExistsIsHeckeLOfCompleted
-public import Development.WeilBound.ThetaLifts.LatticeBasics.ConstOfGood
+public import Development.WeilBound.ThetaLifts.LatticeBasics.Bundle0007
 public import Development.WeilBound.ThetaLifts.Reductions.WeightConstants.Bridge
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.HeckeLEntireAndNonzeroAtOneHolds
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0097
 
 @[expose] public section
 

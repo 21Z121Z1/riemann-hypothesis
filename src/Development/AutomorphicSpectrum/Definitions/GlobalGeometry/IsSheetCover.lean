@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Definitions.MetricPeriods.IsFundSet
-public import Development.AutomorphicSpectrum.Statements.GeometryStatements.NineGeoU
+public import Development.AutomorphicSpectrum.Definitions.MetricPeriods.Bundle0003
+public import Development.AutomorphicSpectrum.Statements.GeometryStatements.Bundle0006
 
 @[expose] public section
 

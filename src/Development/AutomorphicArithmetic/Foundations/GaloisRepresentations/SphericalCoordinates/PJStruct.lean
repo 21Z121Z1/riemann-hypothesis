@@ -1,7 +1,7 @@
 module
 
-public import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.SphericalCoordinates.LineBasis
-public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.HermitianForm
+public import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.SphericalCoordinates.Bundle0017
+public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0027
 
 @[expose] public section
 

@@ -1,6 +1,6 @@
 module
 
-public import Formalism.PolynomialDimension.FinalHar
+public import Formalism.PolynomialDimension.Bundle0004
 
 @[expose] public section
 

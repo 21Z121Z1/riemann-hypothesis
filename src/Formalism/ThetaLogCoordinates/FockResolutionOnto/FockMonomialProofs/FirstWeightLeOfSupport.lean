@@ -1,6 +1,6 @@
 module
 
-public import Formalism.ThetaLogCoordinates.FockResolutionOnto.FockMonomialProofs.InitPartZeroXMul
+public import Formalism.ThetaLogCoordinates.FockResolutionOnto.FockMonomialProofs.Bundle0002
 
 @[expose] public section
 

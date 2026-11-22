@@ -2,9 +2,8 @@ module
 
 public import Mathlib
 public import GroundTheory.HeightsAndTheta.Heights.Regularisation.Statements
-public import GroundTheory.HeightsAndTheta.Heights.Regularisation.StRiemannSlices
-public import GroundTheory.HeightsAndTheta.Heights.Regularisation.StPuncturedExpOrder
-public import GroundTheory.HeightsAndTheta.Heights.Regularisation.StLogCoverDescent
+public import GroundTheory.HeightsAndTheta.Heights.Regularisation.Bundle0001
+public import GroundTheory.HeightsAndTheta.Heights.Regularisation.Bundle0002
 
 @[expose] public section
 

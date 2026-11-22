@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.CoordinateIdeals.MemMCoordIdealOfAevalEqZero
-public import GroundTheory.HeightsAndTheta.Heights.Intersections.Statements
+public import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.CoordinateIdeals.Bundle0001
+public import GroundTheory.HeightsAndTheta.Heights.Intersections.Bundle0005
 
 @[expose] public section
 

@@ -5,7 +5,7 @@ public import Formalism.LocalToGlobal.KernelLattices.ColInst
 public import Formalism.LocalToGlobal.KernelLattices.KernelLocalFactors.ThDistC
 public import Formalism.LocalToGlobal.KernelLattices.KernelLocalFactors.StdOK
 public import Formalism.LocalToGlobal.KernelLattices.KernelLocalFactors.PeriodLatticeFinitelyGenerated
-public import Formalism.LocalToGlobal.Columns.CyclotomicIsCyclotomicExtension
+public import Formalism.LocalToGlobal.Columns.Bundle0016
 
 @[expose] public section
 

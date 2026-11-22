@@ -2,7 +2,7 @@ module
 
 public import CompanionTheory.AutomorphicTheory.BesselWaveGrids.WaveBallEstimateWeightedDualAlt
 public import CompanionTheory.AutomorphicTheory.BesselWaveGrids.PowFourLeRpowNineHalves
-public import CompanionTheory.AutomorphicTheory.PieriRules.PieriDegreeBounds.NumericalFamilyShapeGaps
+public import CompanionTheory.AutomorphicTheory.PieriRules.PieriDegreeBounds.Bundle0001
 
 @[expose] public section
 

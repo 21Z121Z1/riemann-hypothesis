@@ -1,21 +1,21 @@
 module
 
 public import Mathlib
-public import Development.WeilBound.CoreStatements.HodgeTatePoints.TwhopfFin
+public import Development.WeilBound.CoreStatements.HodgeTatePoints.Bundle0021
 public import Development.WeilBound.CoreStatements.HodgeTatePoints.HtatRed
-public import Development.WeilBound.CoreStatements.HodgeTatePoints.GcField
-public import Development.WeilBound.CoreStatements.HodgeTatePoints.HtatBcTors
-public import Development.WeilBound.CoreStatements.HodgeTatePoints.HtatLieIso
-public import Development.WeilBound.CoreStatements.HodgeTatePoints.HtatLieBc
+public import Development.WeilBound.CoreStatements.HodgeTatePoints.Bundle0029
+public import Development.WeilBound.CoreStatements.HodgeTatePoints.Bundle0008
+public import Development.WeilBound.CoreStatements.HodgeTatePoints.Bundle0050
 public import Development.AutomorphicSpectrum.Statements.GeometryStatements.IsPolLatticePlane
-public import Development.AutomorphicSpectrum.Statements.GeometryStatements.HTChartExists
+public import Development.AutomorphicSpectrum.Statements.GeometryStatements.Bundle0001
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.TwoWeightEqOneAddRoot
-public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.HodgeTateConstantDividesPSqStatement
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.TateIsoTorsionTowerStatement
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.TorsionTowerWeilPairingStatement
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LieModelExistsUniqueAct
+public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.Bundle0030
+public import Development.AutomorphicSpectrum.Statements.AlgebraStatements.Bundle0003
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0238
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0161
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0019
 public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsLieModel
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LieModelRankEqGeneric
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0137
 
 @[expose] public section
 
@@ -123,7 +123,7 @@ theorem reduces_at_point (hPt : PointHT) (E : Type) [Field E] [NumberField E] [I
   subst hz
   have hppos : ∀ m, 0 < p ^ m := fun m => pow_pos (Fact.out : p.Prime).pos m
   haveI : CharZero O := charZero_of_injective_ringHom hinj
-  obtain ⟨X, hX, hXi⟩ := GlobalTheory.T.tate_iso_torsion_tower E H D S t p O _ I
+  obtain ⟨X, hX, hXi⟩ := _root_.GlobalTheory.CompanionTheory.Ar.HT.tower_exists E H D S t p O _ I
   have hroot : ∀ m, ∃ w : Oˣ, algebraMap O (FractionRing O) w = (I.ζ (p ^ m) : (FractionRing O)ˣ) := fun m =>
     exists_unit_of_pow _ (p ^ m) (hppos m) (I.ζ_prim _ (hppos m)).pow_eq_one
   choose ζ hζ using hroot
@@ -148,7 +148,7 @@ theorem reduces_at_point (hPt : PointHT) (E : Type) [Field E] [NumberField E] [I
     rw [← Category.assoc, hsq, Category.assoc]
     exact isProper_snd_comp _ _ _
   have hreg : X.PairingRegular D.EF ζ := by
-    refine GlobalTheory.T.torsion_tower_weil_pairing E H S t p O _ D.La X D.EF ζ hprop' ?_
+    refine _root_.GlobalTheory.CompanionTheory.Ar.HT.weil_regular E H S t p O _ D.La X D.EF ζ hprop' ?_
     intro m a b ga gb hga hgb
     have e1 : ga = I.ev (p ^ m) a := Over.OverMorphism.ext (hga.trans (hX m a))
     have e2 : gb = I.ev (p ^ m) b := Over.OverMorphism.ext (hgb.trans (hX m b))
@@ -174,7 +174,7 @@ theorem reduces_at_point (hPt : PointHT) (E : Type) [Field E] [NumberField E] [I
   haveI hsm : Smooth t.G.hom := t.semi.smooth
   have hrank' : 2 * Module.finrank O L' = Module.finrank ℤ D.La := by
     rw [finrank_lie_eq S t.G R O x L L' M M']; exact hrank
-  obtain ⟨hκ1, -⟩ := GlobalTheory.T.hodge_tate_constant_divides_p_sq C v O hv p R (algebraMap R O) κ hp hκ
+  obtain ⟨hκ1, -⟩ := _root_.GlobalTheory.CompanionTheory.Ar.HT.isHTConst_of_isCp C v O hv p R (algebraMap R O) κ hp hκ
   obtain ⟨P, hP⟩ := hPt p C v O hv hp hO E (IsCMField.complexConj E).toRingEquiv
     (fun a => IsCMField.complexConj_apply_apply E a) S t.G t.semi _ D.La D.EF (D.p + D.q) u hu X L' M' t.act.act ρ'
     t.act.hom hρ' hXi hrank' ζ hprim hcompat hreg (algebraMap R O κ) hκ1

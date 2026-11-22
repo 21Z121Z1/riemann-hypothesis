@@ -1,19 +1,14 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.JpUnif
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.UniformBoundednessStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ReductionUniqueUpToParabolicStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LevelSquareCongruenceConjugationStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ResidueUpperUnipotentLiftStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ReductionCorankEqRankLowerLeftStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ParabolicDoubleCosetOfEqualCorankStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.AverageOverMaximalCompactResidueStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.AverageInvariantRightTranslationStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CardRankLowerLeftEqLowerRightStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CardFixedLowerRightBlockStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CardCompletionsToFullRankStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CardRankCompletionSymmetryStatement
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0036
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0069
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0080
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0077
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0068
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0066
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0072
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0053
 
 @[expose] public section
 
@@ -34,7 +29,7 @@ theorem twist_gam : ∀ (O L : Type) [CommRing O] [IsDomain O] [IsDiscreteValuat
 theorem twist_low : ∀ (O L : Type) [CommRing O] [IsDomain O] [IsDiscreteValuationRing O] [Field L] [Algebra O L] [IsFractionRing O L]
     (n : ℕ) (ϖ : O), Irreducible ϖ → ∀ w : Lˣ, (w : L) = algebraMap O L ϖ →
     ∀ x : GL (Ix n) (IsLocalRing.ResidueField O), x.1.toBlocks₁₂ = 0 →
-      ∃ j j' : GL (Ix n) O, inL j * tauM w = tauM w * inL j' ∧ resK j' = x := GlobalTheory.T.residue_upper_unipotent_lift
+      ∃ j j' : GL (Ix n) O, inL j * tauM w = tauM w * inL j' ∧ resK j' = x := _root_.GlobalTheory.CompanionTheory.Jp.twist_low
 
 theorem red_rank : ∀ (O L : Type) [CommRing O] [IsDomain O] [IsDiscreteValuationRing O] [Field L] [Algebra O L] [IsFractionRing O L]
     (n : ℕ) (ϖ : O), Irreducible ϖ → ∀ w : Lˣ, (w : L) = algebraMap O L ϖ →
@@ -43,27 +38,27 @@ theorem red_rank : ∀ (O L : Type) [CommRing O] [IsDomain O] [IsDiscreteValuati
 
 theorem dbl : ∀ (k : Type) [Field k] (n : ℕ) (g₁ g₂ : GL (Ix n) k), iD g₁ = iD g₂ →
     ∃ (a d : GL (Fin n) k) (b : Matrix (Fin n) (Fin n) k) (x : GL (Ix n) k),
-      x.1.toBlocks₁₂ = 0 ∧ g₂ = pM a d b * g₁ * x := GlobalTheory.T.parabolic_double_coset_of_equal_corank
+      x.1.toBlocks₁₂ = 0 ∧ g₂ = pM a d b * g₁ * x := _root_.GlobalTheory.CompanionTheory.Jp.Dbl.main
 
 theorem avg_res : ∀ (O : Type) [CommRing O] [IsDomain O] [IsDiscreteValuationRing O] [Fintype (IsLocalRing.ResidueField O)]
     (n : ℕ) (ϖ : O), Irreducible ϖ → ∀ f : GL (Ix n) (IsLocalRing.ResidueField O) → ℂ,
-      avgK ϖ (fun κ => f (resK κ)) = sumG f / (Nat.card (GL (Ix n) (IsLocalRing.ResidueField O)) : ℂ) := GlobalTheory.T.average_over_maximal_compact_residue
+      avgK ϖ (fun κ => f (resK κ)) = sumG f / (Nat.card (GL (Ix n) (IsLocalRing.ResidueField O)) : ℂ) := _root_.GlobalTheory.CompanionTheory.Jp.AvgRes.avgK_res
 
 theorem avg_right : ∀ (O : Type) [CommRing O] [IsLocalRing O] (n : ℕ) (ϖ : O) (φ : GL (Ix n) O → ℂ),
     (∀ κ, ∀ γ ∈ Gam2 (n := n) ϖ, φ (κ * γ) = φ κ) → ∀ j : GL (Ix n) O,
       avgK ϖ (fun κ => φ (κ * j)) = avgK ϖ φ := GlobalTheory.T.average_invariant_right_translation
 
 theorem cnt_swap : ∀ (k : Type) [Field k] [Fintype k] (n i : ℕ),
-    Nat.card {g : GL (Ix n) k // (lowerLeftBlock g).rank = i} = Nat.card {g : GL (Ix n) k // (dBlk g).rank = i} := GlobalTheory.T.card_rank_lower_left_eq_lower_right
+    Nat.card {g : GL (Ix n) k // (lowerLeftBlock g).rank = i} = Nat.card {g : GL (Ix n) k // (dBlk g).rank = i} := _root_.GlobalTheory.CompanionTheory.Jp.CntSwap.card_lower_left_rank_eq_card_lower_right_rank
 
 theorem cnt_half : ∀ (k : Type) [Field k] [Fintype k] (n : ℕ) (D : Matrix (Fin n) (Fin n) k),
     Nat.card {g : GL (Ix n) k // dBlk g = D} =
       Nat.card {g : GL (Ix n) k // lowerLeftBlock g = 0 ∧ dBlk g = 1} *
-        Nat.card {C : Matrix (Fin n) (Fin n) k // (Matrix.fromCols C D).rank = n} := GlobalTheory.T.card_fixed_lower_right_block
+        Nat.card {C : Matrix (Fin n) (Fin n) k // (Matrix.fromCols C D).rank = n} := _root_.GlobalTheory.CompanionTheory.Jp.CntHalf.card_lowerRightBlock_eq_fibre_formula
 
 theorem cnt_cols : ∀ (k : Type) [Field k] [Fintype k] (n ρ : ℕ) (D : Matrix (Fin n) (Fin n) k), D.rank = ρ →
     Nat.card {C : Matrix (Fin n) (Fin n) k // (Matrix.fromCols C D).rank = n} =
-      Fintype.card k ^ (n * ρ) * ∏ j ∈ Finset.range (n - ρ), (Fintype.card k ^ n - Fintype.card k ^ j) := GlobalTheory.T.card_completions_to_full_rank
+      Fintype.card k ^ (n * ρ) * ∏ j ∈ Finset.range (n - ρ), (Fintype.card k ^ n - Fintype.card k ^ j) := _root_.GlobalTheory.CompanionTheory.Jp.CntCols.card_completions
 
 theorem cnt_rank : ∀ (k : Type) [Field k] [Fintype k] (n ρ : ℕ), ρ ≤ n →
     Nat.card {D : Matrix (Fin n) (Fin n) k // D.rank = ρ} *

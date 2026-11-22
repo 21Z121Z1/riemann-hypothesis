@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsOmPinsEnl
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.NormalisedDataCoefficientMapInjective
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0523
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0515
 
 @[expose] public section
 

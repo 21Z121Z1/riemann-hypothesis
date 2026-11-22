@@ -1,9 +1,8 @@
 module
 
-public import Formalism.LocalToGlobal.KernelLattices.ColumnData.ColumnDataEquations.JArith
+public import Formalism.LocalToGlobal.KernelLattices.ColumnData.ColumnDataEquations.Bundle0003
 public import Formalism.LocalToGlobal.KernelLattices.ColumnData.ColumnDataEquations.OneEntryMem
-public import Formalism.LocalToGlobal.KernelLattices.ColumnData.ColumnDataEquations.SecondConstantOfTrianglesData
-public import Formalism.LocalToGlobal.KernelLattices.ColumnData.ColumnDataEquations.EqPOf
+public import Formalism.LocalToGlobal.KernelLattices.ColumnData.ColumnDataEquations.Bundle0001
 
 @[expose] public section
 

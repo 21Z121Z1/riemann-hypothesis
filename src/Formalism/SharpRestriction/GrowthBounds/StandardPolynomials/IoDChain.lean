@@ -1,6 +1,6 @@
 module
 
-public import Formalism.SharpRestriction.GrowthBounds.StandardPolynomials.HomGMonomial
+public import Formalism.SharpRestriction.GrowthBounds.StandardPolynomials.Bundle0011
 
 @[expose] public section
 

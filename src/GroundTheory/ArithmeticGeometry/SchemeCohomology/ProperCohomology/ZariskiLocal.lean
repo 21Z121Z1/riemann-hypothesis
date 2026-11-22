@@ -2,8 +2,8 @@ module
 
 public import Mathlib
 public import GroundTheory.ArithmeticGeometry.SchemeCohomology.ProperCohomology.FormalIdeal
-public import GroundTheory.ArithmeticGeometry.SchemeCohomology.ProperCohomology.FormalLimit
-public import GroundTheory.ArithmeticGeometry.SchemeCohomology.ProperCohomology.SupportMore
+public import GroundTheory.ArithmeticGeometry.SchemeCohomology.ProperCohomology.Bundle0001
+public import GroundTheory.ArithmeticGeometry.SchemeCohomology.ProperCohomology.Bundle0008
 public import GroundTheory.ArithmeticGeometry.SchemeCohomology.ProperCohomology.HasExtInstances
 
 @[expose] public section

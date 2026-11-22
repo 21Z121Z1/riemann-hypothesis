@@ -6,7 +6,7 @@ public import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.
 public import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.ExistsHeightLeTwoMulQuotHeight
 public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.IsBesPosOfBesselTied
 public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.BesselCharacterGenericCharacterLaws
-public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.IsUnitriGlEquiv
+public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0042
 
 namespace I195MixedCoordinates_14b5fd3aa93c7f4842f1a892
 

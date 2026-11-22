@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import ReciprocityTheory.DualLattices.WFrobStatement
-public import ReciprocityTheory.DualLattices.ATowerInh
+public import ReciprocityTheory.DualLattices.Bundle0029
+public import ReciprocityTheory.DualLattices.Bundle0021
 
 @[expose] public section
 

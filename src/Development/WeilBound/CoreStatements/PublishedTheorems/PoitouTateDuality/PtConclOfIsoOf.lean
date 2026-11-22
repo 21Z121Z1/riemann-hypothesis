@@ -2,18 +2,16 @@ module
 
 public import Mathlib
 public import Development.WeilBound.CoreStatements.TemperedRepresentationTheory.GelfandSpectralNormalisation.NormalisedInvariants.PTConclAt
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.NineTermExactIff
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.GaloisGroupTransportIsomorphismStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.RingIsomorphismTransportsPlacesStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.TotallyComplexOfRingEquivStatement
-public import Development.WeilBound.CoreStatements.PublishedTheorems.PoitouTateDuality.PtfsHyp
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.RingEquivTransportsDecompositionStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.InertiaQuotientTransportStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.RingEquivCyclotomicCharacterStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.RingEquivTransportsInertiaStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.RingEquivTransportsResidueStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.PoitouTateSequenceTransportStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.TateShafarevichTransportStatement
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0130
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0139
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0142
+public import Development.WeilBound.CoreStatements.PublishedTheorems.PoitouTateDuality.Bundle0001
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0141
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0146
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0140
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0147
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.PoitouTateSequenceTransport
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0149
 
 @[expose] public section
 
@@ -26,11 +24,11 @@ namespace PositivityTheory.PTN
 theorem ptConcl_of_iso_of (hL : PositivityTheory.PTN.LocHyp) : ∀ (F Ω F' Ω' : Type) [Field F] [NumberField F] [Field Ω] [Algebra F Ω] [IsAlgClosure F Ω] [Field F'] [NumberField F'] [Field Ω'] [Algebra F' Ω'] [IsAlgClosure F' Ω'] (e : F ≃+* F') (E : Ω ≃+* Ω'), (∀ x : F, E (algebraMap F Ω x) = algebraMap F' Ω' (e x)) → PTConclAt F' Ω' → PTConclAt F Ω := by
   intro F Ω F' Ω' _ _ _ _ _ _ _ _ _ _ e E hE hPT
   intro l _ r hl hr ζ hζ inv hinv S hS Av hAv μ hμ M _ _ _ _ _ ρ hρ
-  obtain ⟨Φ, hΦ⟩ := GlobalTheory.T.galois_group_transport_isomorphism F Ω F' Ω' e E hE
-  obtain ⟨eO, eV, heO, hV, hV2, hN⟩ := GlobalTheory.T.ring_isomorphism_transports_places F F' e
+  obtain ⟨Φ, hΦ⟩ := _root_.GlobalTheory.CompanionTheory.PTIso.exists_galContinuousMulEquiv F Ω F' Ω' e E hE
+  obtain ⟨eO, eV, heO, hV, hV2, hN⟩ := _root_.GlobalTheory.CompanionTheory.PTIso.Places.exists_places_of_ringEquiv F F' e
   have hloc := hL F Ω F' Ω' e E hE Φ hΦ
-  have hpl := GlobalTheory.T.ring_equiv_transports_decomposition F Ω F' Ω' e E hE eO eV heO hV
-  have hcyc := GlobalTheory.T.ring_equiv_cyclotomic_character F Ω F' Ω' e E hE Φ hΦ l r
+  have hpl := _root_.GlobalTheory.CompanionTheory.PTIso.isPlaceOver_transfer_fieldIso F Ω F' Ω' e E hE eO eV heO hV
+  have hcyc := _root_.GlobalTheory.CompanionTheory.PTIso.cycMod_intrinsic F Ω F' Ω' e E hE Φ hΦ l r
   obtain ⟨inv', hinv'⟩ := GlobalTheory.T.ring_equiv_transports_inertia F Ω F' Ω' e E hE Φ hΦ
     (fun A A' hA σ => (hloc A A' hA σ).1) l r hcyc inv
 
@@ -64,7 +62,7 @@ theorem ptConcl_of_iso_of (hL : PositivityTheory.PTN.LocHyp) : ∀ (F Ω F' Ω' 
     ρ.comp (Ψ.symm : GS Ω' (S' : Set (HeightOneSpectrum (𝓞 F'))) →* _)
   have hρ' : ContAction ρ' := hρ.comp' Ψ.symm.continuous
 
-  have hl' : l ≠ 2 ∨ IsTotallyComplex F' := hl.imp id (GlobalTheory.T.totally_complex_of_ring_equiv F F' e)
+  have hl' : l ≠ 2 ∨ IsTotallyComplex F' := hl.imp id (_root_.GlobalTheory.CompanionTheory.PTIso.isTotallyComplex_of_ringEquiv F F' e)
   have hζ' : IsPrimitiveRoot (E ζ) (l ^ r) := hζ.map_of_injective E.injective
   have hnorm' : InvNormalised (E ζ) inv' := by
     intro A' v' hP
@@ -93,7 +91,7 @@ theorem ptConcl_of_iso_of (hL : PositivityTheory.PTN.LocHyp) : ∀ (F Ω F' Ω' 
   have hρc : ∀ g m, ρ' (Ψ g) m = ρ g m := fun g m => by simp [ρ']
   refine ⟨?_, ?_⟩
   · refine (nineTermExact_iff S Av μ _ ρ hρ).2 ?_
-    refine GlobalTheory.T.poitou_tate_sequence_transport (locFam S Av) (continuous_locFam S Av) (locFam S' Av') (continuous_locFam S' Av')
+    refine _root_.GlobalTheory.CompanionTheory.PTIso.NineTransfer.nineG_of_iso (locFam S Av) (continuous_locFam S Av) (locFam S' Av') (continuous_locFam S' Av')
       μ μ' ρ ρ' Ψ eI eD hcomp hχ hρc _ _ hρ hρ' ?_ ((nineTermExact_iff S' Av' μ' _ ρ' hρ').1 h9)
     intro v z z' hz
     refine (hinv' _ _ (hAv'' v)).2 (cocycles2Map _ _ LinearMap.id continuous_id (locFam_apply_eq S Av μ hμ v) z)

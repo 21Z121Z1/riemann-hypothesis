@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Formalism.LocalRingCardinality.RhoDetPrimeEqMuTildeMulChiPow
-public import Formalism.LocalToGlobal.UnitaryNorms.CharTied
+public import Formalism.LocalToGlobal.UnitaryNorms.Bundle0006
 public import Formalism.FrobeniusOrbits.HostCorollaries
 
 @[expose] public section

@@ -2,10 +2,9 @@ module
 
 public import Mathlib
 public import Formalism.LocalToGlobal.ProjectiveLattices.ThShort
-public import Formalism.LocalToGlobal.ProjectiveLattices.IsLevMove
-public import Formalism.LocalToGlobal.ProjectiveLattices.AllTest
-public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.ThExprUniqOfChartIndep2
-public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.CIndBC
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0010
+public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0007
+public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0006
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.SecBaseChangeAnySt
 
 @[expose] public section

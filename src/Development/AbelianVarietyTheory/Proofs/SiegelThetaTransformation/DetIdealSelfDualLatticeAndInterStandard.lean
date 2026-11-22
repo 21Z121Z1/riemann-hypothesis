@@ -2,9 +2,9 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.SpanningFamilies.IntMIffInt
-public import Development.AbelianVarietyTheory.Definitions.SpanningFamilies.IsBaseClassLevelAdapted
-public import Development.AbelianVarietyTheory.BlockTheory.JetGauges.ThetaSpanAdjoint
-public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.ThExprUniqOfChartIndep2
+public import Development.AbelianVarietyTheory.Definitions.SpanningFamilies.Bundle0002
+public import Development.AbelianVarietyTheory.BlockTheory.JetGauges.Bundle0003
+public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0007
 public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsIndexIdeal
 
 @[expose] public section

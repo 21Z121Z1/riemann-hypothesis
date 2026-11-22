@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.KappaOK
-public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.AbelianSchemeIdPowFiniteEtaleSurjective
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2942
+public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0015
 
 @[expose] public section
 

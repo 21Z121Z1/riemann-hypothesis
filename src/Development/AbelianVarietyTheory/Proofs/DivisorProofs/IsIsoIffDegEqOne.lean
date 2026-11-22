@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsDimEqOne
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsogenyFlatFinrankStatement
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2696
 
 @[expose] public section
 
@@ -45,7 +45,7 @@ theorem isIso_iff_deg_eq_one : ∀ (K : Type) [Field K] (A B : AbVar K) (f : A �
       by_contra h
       rw [deg, if_neg h] at hd
       exact zero_ne_one hd
-    obtain ⟨-, hfl, -, hr⟩ := GlobalTheory.T.dim_eq_flat_finrank_eq_deg_of_isIsogeny K A B f hI
+    obtain ⟨-, hfl, -, hr⟩ := _root_.GlobalTheory.AV.AbVar.isogeny_flat_finrank K A B f hI
     have : IsFinite f.hom.left := hI.1
     have : IsIso f.hom.left := by
       rw [Scheme.Hom.isIso_iff_finrank_eq]

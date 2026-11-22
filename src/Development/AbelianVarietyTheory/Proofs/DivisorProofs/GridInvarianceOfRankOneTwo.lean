@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NablaSchur
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CommutatorPowOfCommutatorEqSmul
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0569
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0004
 
 @[expose] public section
 

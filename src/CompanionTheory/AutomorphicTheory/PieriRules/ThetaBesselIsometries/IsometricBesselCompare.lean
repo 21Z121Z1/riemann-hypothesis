@@ -3,13 +3,16 @@ module
 public import Mathlib
 public import CompanionTheory.AutomorphicTheory.PieriRules.PieriDegreeBounds.Imports
 public import Development.AbelianVarietyTheory.Definitions.Jets.SumIoPr
-public import CompanionTheory.AutomorphicTheory.PieriRules.ThetaBesselIsometries.IsometricBesselSideBoundStatement
-public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.QuotientMeasureIntegralRmulBesselGroupStatement
-public import CompanionTheory.AutomorphicTheory.PieriRules.ThetaBesselIsometries.FrechetContinuousContinuousOnOrbitHasDerivAtStatement
+public import CompanionTheory.AutomorphicTheory.PieriRules.ThetaBesselIsometries.Bundle0011
+public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0067
+public import Development.AbelianVarietyTheory.Definitions.Jets.SideFam
+public import Formalism.PeriodIntegrals.Bundle0011
+public import Formalism.PeriodIntegrals.Bundle0006
+public import CompanionTheory.AutomorphicTheory.PieriRules.ThetaBesselIsometries.Bundle0005
 public import CompanionTheory.AutomorphicTheory.PieriRules.ThetaBesselIsometries.DiscreteSeriesParameterUnique
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.UhMeasurableSet
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0039
 public import Formalism.HermitianCurvature.HermitianCurvatureProofs.ContinuousMulMt
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.ReproducingFormulaReduction
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0076
 public import CompanionTheory.AutomorphicTheory.PieriRules.ThetaBesselIsometries.IsDSOfIsDG
 
 @[expose] public section
@@ -70,7 +73,7 @@ theorem bessel_orth_of_param_ne : HypsG → ∀ (k r : ℕ) (ε : Fin (2 * r + k
   have hP : PoulsenG := hH.2.2.2.2.2.1
   obtain ⟨hL, hI⟩ := GlobalTheory.T.isometric_bessel_memLp_and_integral_inner_eq hK k r ε mu R Wp z π u μW μN μG νq Bm hR hS hB
   obtain ⟨hL', hI'⟩ := GlobalTheory.T.isometric_bessel_memLp_and_integral_inner_eq hK k r ε mu' R' Wp z π u μW μN μG νq Bm' hR' hS hB'
-  have hq := GlobalTheory.T.quotientMeasure_integral_rmul_besselGroup k r Wp z π u μW μN μG νq
+  have hq := _root_.GlobalTheory.quot_integral_rmul k r Wp z π u μW μN μG νq
   obtain ⟨⟨ha, hs, he, hc⟩, -⟩ := hB
   obtain ⟨⟨ha', hs', he', hc'⟩, -⟩ := hB'
   have hco := GlobalTheory.T.frechetContinuous_continuousOn_orbit_hasDerivAt hK k r ε mu R hR Wp Bm ha hs hc

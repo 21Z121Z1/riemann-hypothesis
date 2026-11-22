@@ -1,8 +1,8 @@
 module
 
-public import Formalism.SharpRestriction.LevelLetterCocycles.AdmBoundsBOfAdm
+public import Formalism.SharpRestriction.LevelLetterCocycles.Bundle0012
 public import Formalism.SharpRestriction.LevelLetterCocycles.BaseChangePreservesUnitaryOf
-public import Formalism.SharpRestriction.LevelLetterCocycles.RepresentationCongruences.InvSubOneSqLeInv
+public import Formalism.SharpRestriction.LevelLetterCocycles.RepresentationCongruences.Bundle0001
 
 @[expose] public section
 

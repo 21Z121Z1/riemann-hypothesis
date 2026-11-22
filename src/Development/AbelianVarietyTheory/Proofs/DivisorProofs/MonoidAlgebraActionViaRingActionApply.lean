@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.QActMSubAlgebraMap
-public import Development.AbelianVarietyTheory.Definitions.Divisors.KottwitzDimSignatureOneOne
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0098
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0045
 
 @[expose] public section
 

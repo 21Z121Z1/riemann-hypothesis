@@ -2,14 +2,11 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ExistsSingle
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.NormaliserUnipSymCharPatternStatement
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.IsScalarMulIntegralOfNormalizesSymmetricLevelStatement
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.IsScalarMulIntegralOfConjIntegralGeneratorsStatement
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.AdjoinRangeGLEqTopMatrixStatement
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.AdjoinUnitaryGroupHermitianLocalEqTopStatement
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.UnitaryScalarMulIntegralLocalToGlobalStatement
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ExistsUnitaryIntegralOfSplitPlaceComponentStatement
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ExistsNormOneWithResiduesAtSplitPlacesStatement
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.NormaliserUnipSymCharPattern
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0051
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0050
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0047
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.UnitaryScalarMulIntegralLocalToGlobal
 
 @[expose] public section
 
@@ -110,7 +107,7 @@ theorem loc_inert (hσ : ∀ a, σ (σ a) = a) (hS : ∀ a ∈ S, σ a ∈ S) (h
     exact hδ.isUnit
   have inj : Function.Injective fun M : Matrix (Fin n) (Fin n) (Z.O Q) => M.map (Z.O Q).subtype :=
     Matrix.map_injective (Z.O Q).subtype_injective
-  have hgen := GlobalTheory.T.adjoin_unitaryGroup_hermitian_local_eq_top (Z.O Q) t htt ⟨_, hδ'⟩ n hn ((bc (Z.pO Q) G : GL (Fin n) (Z.O Q)) : Matrix (Fin n) (Fin n) (Z.O Q))
+  have hgen := _root_.GlobalTheory.UnitaryGen.adjoin_unitary_eq_top (Z.O Q) t htt ⟨_, hδ'⟩ n hn ((bc (Z.pO Q) G : GL (Fin n) (Z.O Q)) : Matrix (Fin n) (Fin n) (Z.O Q))
     (inj ((map_cT Z hs _).symm.trans (congrArg (Z.p Q).mapMatrix hG))) (Units.isUnit _)
   refine GlobalTheory.T.isScalarMulIntegral_of_conj_integral_generators _ _ n _ _ hgen fun y hy => ?_
   obtain ⟨x, hx1, hx2⟩ := Z.gl_single Q (bc (Z.O Q).subtype y)
@@ -183,7 +180,7 @@ theorem normaliser_core (hσ : ∀ a, σ (σ a) = a) (hS : ∀ a ∈ S, σ a ∈
       (fun y hy => by
         obtain ⟨y', h1, -⟩ := loc_split Z hσ hS hG (hbar Q) (hb1 Q hQ) (hb2 Q hQ) (hf Q) hm' y fun _ => hy
         exact ⟨y', by rwa [map_inv, inv_inv] at h1⟩)
-  obtain ⟨z₁, x₁, hz₁, hx₁⟩ := GlobalTheory.T.unitary_scalarMulIntegral_local_to_global Z σ hσ hS n G m hU fun Q => by
+  obtain ⟨z₁, x₁, hz₁, hx₁⟩ := _root_.GlobalTheory.LevNorm.PlaceSys.unitary_locScal_glue Z σ hσ hS n G m hU fun Q => by
     by_cases hQ : Q ∈ T
     · exact Or.inl (hscT Q hQ)
     by_cases hQ' : bar Q ∈ T
@@ -193,7 +190,7 @@ theorem normaliser_core (hσ : ∀ a, σ (σ a) = a) (hS : ∀ a ∈ S, σ a ∈
     · have h1 : σ (Z.e Q) = Z.e Q := by rw [hbar, ← e]
       obtain ⟨δ, hδ⟩ := hun Q h1
       exact loc_inert Z hσ hS (by omega) hG h1 hQ δ hδ hm
-    · refine GlobalTheory.T.isScalarMulIntegral_of_conj_integral_generators _ _ n _ _ (GlobalTheory.T.adjoin_range_GL_eq_top_matrix _ n) fun y _ => ?_
+    · refine GlobalTheory.T.isScalarMulIntegral_of_conj_integral_generators _ _ n _ _ (_root_.GlobalTheory.adjoin_range_GL_eq_top _ n) fun y _ => ?_
       obtain ⟨y', h1, -⟩ := loc_split Z hσ hS hG (hbar Q) e hQ' (hf Q) hm y fun h => absurd h hQ
       exact ⟨y', h1⟩
   have red : ∀ x : GL (Fin n) S, Keeps r σ ρ κ G T ψ a (bc S.subtype x) → ∀ Q ∈ T, ∀ h ∈ unipSym (k Q) n ρ κ,
@@ -216,7 +213,7 @@ theorem normaliser_core (hσ : ∀ a, σ (σ a) = a) (hS : ∀ a ∈ S, σ a ∈
       ((bc (r Q) x₁ : GL (Fin n) (k Q)) : Matrix (Fin n) (Fin n) (k Q)) =
         midDiag n ρ κ (s : k Q) (c : k Q) * (h : Matrix (Fin n) (Fin n) (k Q)) := fun Q => by
     by_cases hQ : Q ∈ T
-    · obtain ⟨s, c, h⟩ := GlobalTheory.T.normaliser_unipSym_char_pattern (k Q) n ρ κ hn hρ hκ (ψ Q) (hψ Q hQ) (a Q) (ha Q hQ) _ (red x₁ k1 Q hQ) fun h hh => by
+    · obtain ⟨s, c, h⟩ := _root_.GlobalTheory.SymNorm.normaliser_unipSym_char (k Q) n ρ κ hn hρ hκ (ψ Q) (hψ Q hQ) (a Q) (ha Q hQ) _ (red x₁ k1 Q hQ) fun h hh => by
         have := (red _ k2 Q hQ h hh).1
         rwa [map_inv, inv_inv] at this
       exact ⟨s, c, fun _ => h⟩

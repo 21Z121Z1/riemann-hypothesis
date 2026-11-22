@@ -2,9 +2,11 @@ module
 
 public import Mathlib
 public import Development.WeilBound.RepresentationTheoryGL.GenericUnitaryGL.GenericUnlinkedGL.UnlinkedRealize
-public import Development.AutomorphicSpectrum.Proofs.GlobalProofs.HasSupportOfIsSubquotientProdIrr
-public import Development.AutomorphicSpectrum.Proofs.GlobalProofs.BernsteinZelevinskyFinitenessStatement
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.GeometricLemmaOfFiltrationStatement
+public import Development.AutomorphicSpectrum.Proofs.GlobalProofs.Bundle0042
+public import Development.AutomorphicSpectrum.Proofs.GlobalProofs.Bundle0030
+public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.Bundle0001
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0382
+public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.Bundle0004
 public import Development.WeilBound.CoreStatements.TemperedRepresentationTheory.GeometricSplitting.Imports
 
 @[expose] public section
@@ -18,8 +20,8 @@ namespace GlobalTheory.RgGu
 theorem suppExists (k : Type) [Field k] [ValuativeRel k] [TopologicalSpace k] [IsNonarchimedeanLocalField k] :
     SuppExists k := by
   intro N V _ _ π hs hi
-  have hG : GlobalTheory.Published.GeometricLemma := GlobalTheory.T.geometricLemma_of_bzFiniteness_of_filtration GlobalTheory.T.bernstein_zelevinsky_finiteness PositivityTheory.Geo.geometricLemmaFiltration
-  obtain ⟨s, h⟩ := GlobalTheory.CompanionTheory.Hypotheses₂.TD.exists_hasSupport GlobalTheory.T.bernstein_zelevinsky_finiteness hG (IrrGL.of π hs hi)
+  have hG : GlobalTheory.Published.GeometricLemma := _root_.GlobalTheory.geometricLemma_of_filtration _root_.GlobalTheory.CompanionTheory.Published.bernsteinZelevinskyFiniteness PositivityTheory.Geo.geometricLemmaFiltration
+  obtain ⟨s, h⟩ := GlobalTheory.CompanionTheory.Hypotheses₂.TD.exists_hasSupport _root_.GlobalTheory.CompanionTheory.Published.bernsteinZelevinskyFiniteness hG (IrrGL.of π hs hi)
   exact ⟨s, h.of_equiv (IrrGL.equivOf π hs hi).symm⟩
 
 theorem genericUnlinkedGL_of

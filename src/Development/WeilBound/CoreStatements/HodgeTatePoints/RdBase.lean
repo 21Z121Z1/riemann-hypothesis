@@ -1,10 +1,10 @@
 module
 
 public import Mathlib
-public import ReciprocityTheory.DualLattices.CotangentSurjective
+public import ReciprocityTheory.DualLattices.Bundle0004
 public import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.IsTight
-public import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.StepOrderRes
-public import ReciprocityTheory.DualLattices.ProdDvdOfIso
+public import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.Bundle0003
+public import ReciprocityTheory.DualLattices.Bundle0015
 
 @[expose] public section
 

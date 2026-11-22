@@ -1,12 +1,12 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsUSplittingInl
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ImportsBis
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DoubledUnitaryPartnerDiagStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsContOnOfLocal
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdeleJoinZero
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HeisenbergWordL2Bound
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1308
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0184
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1725
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0211
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1320
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1425
 
 @[expose] public section
 

@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Dchart
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.UnipotentRadicalBlockUnitriangularFlag
-public import Formalism.FormalDegreeBessel.FinalG
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0137
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0172
+public import Formalism.FormalDegreeBessel.Bundle0002
 
 @[expose] public section
 

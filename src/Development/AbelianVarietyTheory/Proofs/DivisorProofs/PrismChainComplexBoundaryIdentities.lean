@@ -1,8 +1,8 @@
 module
 
-public import Development.AbelianVarietyTheory.Definitions.Divisors.DivisorSupportCondition
-public import Development.AbelianVarietyTheory.Definitions.Divisors.SecClass
-public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.AlternatingSumZero
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0007
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0006
+public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0003
 
 @[expose] public section
 

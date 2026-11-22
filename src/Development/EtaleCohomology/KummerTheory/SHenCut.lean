@@ -1,6 +1,6 @@
 module
 
-public import Development.EtaleCohomology.KummerTheory.InjSlice
+public import Development.EtaleCohomology.KummerTheory.Bundle0001
 public import Mathlib.RingTheory.Etale.StandardEtale
 public import Mathlib.Algebra.Category.CommAlgCat.FiniteType
 public import Mathlib.CategoryTheory.Limits.MorphismProperty

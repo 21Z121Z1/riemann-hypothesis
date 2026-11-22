@@ -1,7 +1,7 @@
 module
 
-public import Formalism.WachLatticeTwists.RamifiedBlockRings.LocalToDisplayFree
-public import Formalism.CharacterColumnKernels.StatementBC
+public import Formalism.WachLatticeTwists.RamifiedBlockRings.Bundle0001
+public import Formalism.CharacterColumnKernels.Bundle0002
 
 @[expose] public section
 

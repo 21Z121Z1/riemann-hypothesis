@@ -1,10 +1,10 @@
 module
 
-public import Formalism.LocalToGlobal.CharacterGerms.UncurryLinearCombination
+public import Formalism.LocalToGlobal.CharacterGerms.Bundle0029
 public import Formalism.LocalToGlobal.CharacterGerms.ConstantZeroFirstThenZero
 public import Formalism.LocalToGlobal.CharacterGerms.ConstantZeroDoubleMultiplicationPair
-public import Formalism.LocalToGlobal.CharacterGerms.RowTiePAddCvSelf
-public import Formalism.LocalToGlobal.CharacterGerms.RowTieSelfCuts
+public import Formalism.LocalToGlobal.CharacterGerms.Bundle0027
+public import Formalism.LocalToGlobal.CharacterGerms.Bundle0022
 
 @[expose] public section
 

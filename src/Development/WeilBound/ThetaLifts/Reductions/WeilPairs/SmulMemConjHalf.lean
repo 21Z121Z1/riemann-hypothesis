@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Development.WeilBound.ThetaLifts.Reductions.WeilPairs.SetIntegralAddRight
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SplitPlaceThetaFunctionVacuumConjugatePlace
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntegralNeZeroOfCocompact
+public import Development.WeilBound.ThetaLifts.Reductions.WeilPairs.Bundle0006
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1718
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1461
 
 @[expose] public section
 

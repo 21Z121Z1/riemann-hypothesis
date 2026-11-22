@@ -2,9 +2,9 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.Divisors.DlogRatioVolumeFormNeZero
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsFormOneAddMulSmul
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DelDbarAdditiveComplexLinearOne
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HolAtlasIsFormDelDbarSmooth
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2540
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2500
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2658
 public import Development.AbelianVarietyTheory.Definitions.Divisors.DetJacMatCoordsEqTransitionJacobianDet
 public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.ExactFormsLeClosedForms
 

@@ -2,16 +2,17 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.HzUnit
-public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.ExistsNormLeHeightPow
+public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.Bundle0007
 public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.AdmissibleDiscreteSeriesOfHasParam
 public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.HarishChandraModulesOn
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SeeSawWeilBiActionCommutesStatement
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.WittDecompositionMixedCoordsRankZero
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SetIntegralFundamentalDomainRightTranslateInvari
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ContinuousIntegralCompactAutomorphicQuotientPara
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0264
+public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.Bundle0017
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0124
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0173
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0090
 public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.WeilDatumTransportSourceRationalIsometry
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.WittHyperbolicRankZeroProjMulEmb
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.HermitianLinkMapAdditiveRationalEquivariant
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0132
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0094
 
 @[expose] public section
 
@@ -345,7 +346,7 @@ theorem main : ∀ (D : D7) (c : Comm D) (v : VCom c) (t : Tup c), c.Is → c.Vo
     (t.kom (j + 1)) omT omz'' (hχV ▸ s.weil₀) hWa hWz hWX hWT hWz'' (flatBF s Φ₁') _ hΞ hΦ₂'').2
   have hC := lastBi_biTheta D c.ψ (c.bes j 0 h).V₀ (c.X j) (c.bes j 0 h).L (c.X (j + 1)) (c.X (j + 1 + 1)) c.T c.Lz
     (c.bes j 0 h).o (c.oT (j + 1 + 1) h) (v.τ j h) hτ (flatBF s Φ₁') _ hΞ hΦ₂''
-  have hBA := (GlobalTheory.T.seeSawWeilBiAction_commutes D c.ψ (c.X j) (c.X (j + 1)) (c.X (j + 1 + 1)) χA s.χW χS' (χT * χz⁻¹) (t.kom j) (t.kom (j + 1))
+  have hBA := (_root_.GlobalTheory.SeeSaw.biAct_all D c.ψ (c.X j) (c.X (j + 1)) (c.X (j + 1 + 1)) χA s.χW χS' (χT * χz⁻¹) (t.kom j) (t.kom (j + 1))
     hWa hWX _ hC).2.2.1
   show ∫ h' in c.volT.𝓕, rTrans bT F h' * (∫ x in s.vW.𝓕, t.omT j h (x, h') Φ₂' 0 *
       (∫ h₀ in (c.x j).vol.𝓕, φ h₀ * s.om (embA (c.bes j 0 h).d (c.bes j 0 h).o h₀, x) Φ₁' 0 ∂(c.x j).vol.μ) ∂s.vW.μ)

@@ -1,8 +1,7 @@
 module
 
 public import Mathlib
-public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.TermCarrierStability.AdmissibleStableUnderFrameChange
-public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.TermCarrierStability.MemSpanImageEquiv
+public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.TermCarrierStability.Bundle0001
 
 @[expose] public section
 

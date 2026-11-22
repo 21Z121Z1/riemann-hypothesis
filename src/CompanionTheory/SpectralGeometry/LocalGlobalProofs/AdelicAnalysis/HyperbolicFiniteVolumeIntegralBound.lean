@@ -2,10 +2,10 @@ module
 
 public import Mathlib
 public import CompanionTheory.SpectralGeometry.CountingDefinitions.AdelicEulerProducts.HypJ
-public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.TensorLocallyCompactRing
-public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.AdelesLocallyCompactSecondCountable
-public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.GeomSumIntLe
-public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.FlowLatticeCountBoundedStatement
+public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.Bundle0019
+public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.Bundle0042
+public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.Bundle0001
+public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.Bundle0055
 public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.HyperbolicFundamentalDomainCoverStatement
 
 @[expose] public section
@@ -36,7 +36,7 @@ theorem mean_isotropic_count_le : ∀ (F E : Type) [Field F] [NumberField F] [Fi
     exact continuous_finsetSum _ fun i _ => continuous_finsetSum _ fun j _ =>
       ((hsc.comp ((continuous_apply_apply 0 i).comp continuous_fst.snd)).mul continuous_const).mul
         ((continuous_apply_apply 0 j).comp continuous_snd)
-  obtain ⟨x₀, C, hlat⟩ := GlobalTheory.T.flow_lattice_count_bounded F E σ hcm τ hτ 1 _ ((hY.prod hΩ).image hc)
+  obtain ⟨x₀, C, hlat⟩ := _root_.GlobalTheory.CompanionTheory.SW.LatCount.count_le F E σ hcm τ hτ 1 _ ((hY.prod hΩ).image hc)
   obtain ⟨C', hC'⟩ := GlobalTheory.CompanionTheory.Adelic.geom_sum_int (Module.finrank ℚ F) M Module.finrank_pos hM x₀ C
   refine ⟨Kc.toReal * C', fun r hr => ?_⟩
   set t : AF F ⊗[F] E := ((τ (Multiplicative.ofAdd (-Real.log r)) : (AF F ⊗[F] E)ˣ) : AF F ⊗[F] E) with ht

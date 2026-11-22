@@ -1,7 +1,7 @@
 module
 
-public import Formalism.SharpRestriction.GrowthBounds.BinomialRatio.NkExponent
-public import Formalism.SharpRestriction.GrowthBounds.BinomialRatio.CoarseDegreesLargeBeyond
+public import Formalism.SharpRestriction.GrowthBounds.BinomialRatio.Bundle0010
+public import Formalism.SharpRestriction.GrowthBounds.BinomialRatio.Bundle0011
 
 @[expose] public section
 

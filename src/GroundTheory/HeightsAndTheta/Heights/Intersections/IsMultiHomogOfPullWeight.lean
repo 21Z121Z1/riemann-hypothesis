@@ -1,10 +1,10 @@
 module
 
 public import Mathlib
-public import GroundTheory.HeightsAndTheta.Heights.Intersections.ImportsFurtherRest
+public import GroundTheory.HeightsAndTheta.Heights.Intersections.Bundle0036
 public import GroundTheory.HeightsAndTheta.Heights.Intersections.PBlockRatioAlg
-public import GroundTheory.HeightsAndTheta.Heights.Intersections.PLocRingPow
-public import GroundTheory.HeightsAndTheta.Heights.Intersections.PProjBundleMultiHomogGrad
+public import GroundTheory.HeightsAndTheta.Heights.Intersections.Bundle0020
+public import GroundTheory.HeightsAndTheta.Heights.Intersections.Bundle0001
 
 @[expose] public section
 

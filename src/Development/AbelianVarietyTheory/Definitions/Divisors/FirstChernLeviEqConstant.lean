@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import ReciprocityTheory.AnalyticForms.PotentialTheory.IsPotentialPullbackStatement
+public import ReciprocityTheory.AnalyticForms.PotentialTheory.Bundle0002
 public import ReciprocityTheory.AnalyticForms.LeviForms.IsRegFamilyInhabitStatement
-public import Development.AbelianVarietyTheory.Definitions.Divisors.SlopeTestRemainingChoices
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0020
 
 @[expose] public section
 

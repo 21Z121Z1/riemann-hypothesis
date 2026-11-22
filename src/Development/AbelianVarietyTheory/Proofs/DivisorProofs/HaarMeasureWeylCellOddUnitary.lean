@@ -1,11 +1,11 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConvUAbsU
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MemShellUIffDepth
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SwapLtSwapIffOfAddTwo
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1094
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1158
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1193
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AntiJMulApply
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.IsOpenIsCompactUnitaryIntegralPoints
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0204
 
 @[expose] public section
 

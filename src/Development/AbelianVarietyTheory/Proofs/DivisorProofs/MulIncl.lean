@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GrpPullbackId
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2182
 
 @[expose] public section
 

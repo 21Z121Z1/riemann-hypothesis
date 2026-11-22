@@ -1,8 +1,8 @@
 module
 
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutJDHatJDCapRGrpMCont
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0141
 public import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutJDHatJDCapRGrpPConseq
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutJDHatJDCapRGrpPPCommPf
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0142
 
 @[expose] public section
 

@@ -1,14 +1,11 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicArithmetic.Foundations.Convolution.TraceSplitting.Places
-public import Development.AutomorphicArithmetic.Foundations.Convolution.TraceSplitting.CoreLift
+public import Development.AutomorphicArithmetic.Foundations.Convolution.TraceSplitting.Bundle0002
+public import Development.AutomorphicArithmetic.Foundations.Convolution.TraceSplitting.Bundle0006
 public import Development.AutomorphicArithmetic.Foundations.Convolution.TraceSplitting.CoreDesc
-public import Development.AutomorphicArithmetic.Foundations.Convolution.TraceSplitting.LiftStep
-public import Development.AutomorphicArithmetic.Foundations.Convolution.TraceSplitting.LiftAll
-public import Development.AutomorphicArithmetic.Foundations.Convolution.TraceSplitting.DescStep
-public import Development.AutomorphicArithmetic.Foundations.Convolution.TraceSplitting.SplitStrong
-public import Development.AutomorphicArithmetic.Foundations.Convolution.TraceSplitting.Cbcc
+public import Development.AutomorphicArithmetic.Foundations.Convolution.TraceSplitting.Bundle0007
+public import Development.AutomorphicArithmetic.Foundations.Convolution.TraceSplitting.Bundle0008
 
 @[expose] public section
 

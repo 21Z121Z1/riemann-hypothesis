@@ -2,7 +2,7 @@ module
 
 public import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.KunnethLefschetz.BasisOne
 public import Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.BocksteinBaseChange.EtProps
-public import Development.EtaleCohomology.EtaleTrace.FrobTraceOf
+public import Development.EtaleCohomology.EtaleTrace.Bundle0001
 
 @[expose] public section
 

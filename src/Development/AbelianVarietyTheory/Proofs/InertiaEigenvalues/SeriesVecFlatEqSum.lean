@@ -3,13 +3,19 @@ module
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.ToUnitsCompToCircle
 public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.LevelLiftIsLiftPrincipalLevelDatumRealisation
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ConjugateThetaSeriesFlatDatumRootOfUnityStatement
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ChangeOfSplittingPair
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ConjugateThetaLiftsIsConjugateCuspExpansion
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaOneMapBaseTupleOfCharacterisationExtremalStatement
-public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.PureTensorLIntertwine
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.PureTensorOTransSumLin
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FlatVecExistsUnique
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0949
+public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0025
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0034
+public import Development.AbelianVarietyTheory.Definitions.ThetaValues.ExistsRootNotMem
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1656
+public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0007
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0684
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0909
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1890
+public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.Bundle0015
+public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.Bundle0068
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0771
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0800
 
 @[expose] public section
 
@@ -219,8 +225,8 @@ theorem conj_gen : Formalism.MainNotions.ModuliIntegralCharts.H1.ChartIndepSt2 �
   obtain ⟨fw⟩ := hFW
   have hTie : TieIn T R κ v₀ := ⟨fw.laws, fw.alg_eq, fw.kap, fw.hv₀, fw.chiR, fw.x0⟩
   have hE : (O i).EquivAt (κ i) (T.cE ((i : ℕ) + 1) (O i).s0) :=
-    (hPT (GlobalTheory.T.thetaOneMap_baseTuple_of_characterisation_extremal hCI D G Pl0 T0 A T R F κ v₀ hC hTie hio O i hOP)).1
-  obtain ⟨ζ0, hζ0, hgb⟩ := GlobalTheory.T.conjugate_thetaSeries_flatDatum_rootOfUnity hCI D G Pl0 T0 A T R F κ v₀ O ph hnV hC hT0 ⟨fw⟩ hio hQG i hOP hPT c hc u hu τ hτ
+    (hPT (_root_.GlobalTheory.OneMapTies.oneMapRow0_of_ties_core hCI D G Pl0 T0 A T R F κ v₀ hC hTie hio O i hOP)).1
+  obtain ⟨ζ0, hζ0, hgb⟩ := _root_.GlobalTheory.ConjTwist.FlatSeries.conj_flat_series hCI D G Pl0 T0 A T R F κ v₀ O ph hnV hC hT0 ⟨fw⟩ hio hQG i hOP hPT c hc u hu τ hτ
   refine ⟨ζ0, hζ0, fun ψ ψ' t t' hψ hψ' hQ hQ' ht ht' hcc => ?_⟩
   obtain ⟨f, hf⟩ := (GlobalTheory.FlatVecExist.flatVec_existsUnique D G Pl0 T0 A _ R F hC hQG i t).1
   obtain ⟨f', hf'⟩ := (GlobalTheory.FlatVecExist.flatVec_existsUnique D G Pl0 T0 A _ R F hC hQG i t').1

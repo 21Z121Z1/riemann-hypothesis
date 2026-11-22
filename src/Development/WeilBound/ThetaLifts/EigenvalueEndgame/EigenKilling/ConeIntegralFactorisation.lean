@@ -1,8 +1,8 @@
 module
 
 public import Development.WeilBound.ThetaLifts.EigenvalueEndgame.PlaneRemovalConfiguration
-public import Development.WeilBound.ThetaLifts.SmallCones.ThetaKernelGeneralIdentity
-public import Development.WeilBound.ThetaLifts.FrameEstimates.HodgeTateFromSandwich
+public import Development.WeilBound.ThetaLifts.SmallCones.Bundle0002
+public import Development.WeilBound.ThetaLifts.FrameEstimates.Bundle0002
 public import Development.WeilBound.ThetaLifts.LocalTheory.UnramifiedDeterminedBySpherical
 
 @[expose] public section

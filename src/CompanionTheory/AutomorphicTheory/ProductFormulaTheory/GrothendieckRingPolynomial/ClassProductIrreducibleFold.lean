@@ -2,8 +2,8 @@ module
 
 public import Mathlib
 public import CompanionTheory.AutomorphicTheory.ProductFormulaTheory.GrothendieckRingPolynomial.ProdList
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ProductIrreducibleAppendEquivStatement
-public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.NonemptyEquivProdIrrZero
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0589
+public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0023
 
 @[expose] public section
 

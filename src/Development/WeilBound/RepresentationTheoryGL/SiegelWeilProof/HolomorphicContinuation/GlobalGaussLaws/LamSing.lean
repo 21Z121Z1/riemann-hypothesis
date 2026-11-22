@@ -1,7 +1,7 @@
 module
 
-public import Development.WeilBound.RepresentationTheoryGL.SiegelWeilProof.HolomorphicContinuation.GlobalGaussLaws.HermCocompact
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.PoissonSummationHermitianLattice
+public import Development.WeilBound.RepresentationTheoryGL.SiegelWeilProof.HolomorphicContinuation.GlobalGaussLaws.Bundle0006
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0640
 public import Formalism.LocalToGlobal.IndefiniteReal.SobolevIteration.FdSetIntegralCharEqZero
 
 @[expose] public section

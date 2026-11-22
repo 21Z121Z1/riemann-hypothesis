@@ -2,11 +2,11 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.Foundations.HermitianSpaceBaseLatticeEqFrameLattice
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.IsOpenIsCompactLevelOffFinEmpty
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0293
 public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsIsLatticeFrameIsMajorantFrame
-public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.AlgebraMapNormTensorEqProdConjugates
+public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.Bundle0019
 public import Development.AbelianVarietyTheory.Definitions.Foundations.NormEulerPolySubOneLe
-public import Development.AbelianVarietyTheory.Definitions.Foundations.ExistsGLSubmatrix
+public import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0017
 
 @[expose] public section
 

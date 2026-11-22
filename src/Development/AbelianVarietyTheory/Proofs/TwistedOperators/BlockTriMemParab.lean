@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.EvAtParabNeZero
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsPermMatrixRepParabolicDoubleCoset
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0102
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0703
 
 @[expose] public section
 

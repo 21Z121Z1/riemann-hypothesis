@@ -3,16 +3,14 @@ module
 public import Mathlib
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PlaceDivisors.StChartFH
 public import Development.AbelianVarietyTheory.Definitions.TwoChartAtlas.TwoChartSt
-public import Development.AbelianVarietyTheory.Proofs.FormalGroupCharts.NonemptyTensorQuotientEquiv
-public import Development.AbelianVarietyTheory.Proofs.FormalGroupCharts.IsAdicCompleteOfFgOfNatCastMem
-public import Development.AbelianVarietyTheory.Proofs.FormalGroupCharts.AlgHomDualNumberExt
-public import Development.AbelianVarietyTheory.Proofs.FormalGroupCharts.MapMaximalIdealEqKerMapResidue
-public import Development.AbelianVarietyTheory.Proofs.FormalGroupCharts.DetJacobianFormalMulNEqPowMulUnitStatement
-public import Development.AbelianVarietyTheory.Proofs.FormalGroupCharts.MvPowerSeriesMemMapCOfCoeffMem
-public import Development.AbelianVarietyTheory.Proofs.FormalGroupCharts.MulFConstAndMap
-public import Development.AbelianVarietyTheory.Proofs.FormalGroupCharts.IsReducedGenericFibreOfIsReduced
-public import Development.AbelianVarietyTheory.Proofs.FormalGroupCharts.FormalGroupLawChartFiniteHeightSpecialFibreStatement
-public import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.FinEtaleFormallyUnramified
+public import Development.AbelianVarietyTheory.Proofs.FormalGroupCharts.Bundle0009
+public import Development.AbelianVarietyTheory.Proofs.FormalGroupCharts.Bundle0001
+public import Development.AbelianVarietyTheory.Proofs.FormalGroupCharts.Bundle0003
+public import Development.AbelianVarietyTheory.Proofs.FormalGroupCharts.Bundle0007
+public import Development.AbelianVarietyTheory.Proofs.FormalGroupCharts.Bundle0018
+public import Development.AbelianVarietyTheory.Proofs.FormalGroupCharts.Bundle0015
+public import Development.AbelianVarietyTheory.Proofs.FormalGroupCharts.FormalGroupLawChartFiniteHeightSpecialFibre
+public import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.Bundle0023
 
 @[expose] public section
 
@@ -76,7 +74,7 @@ theorem fhSt : ∀ (p : ℕ) [Fact p.Prime], FHSt p := by
   have hmap : ∀ j, mulF (F.mapF iota) (p ^ m) j = MvPowerSeries.map iota (mulF F.F (p ^ m) j) :=
     fun j => (GlobalTheory.FormalMul.mulF_const_and_map T O iota d F (p ^ m) j).2
 
-  obtain ⟨M, hM⟩ := GlobalTheory.T.formalGroupLaw_chart_finiteHeight_specialFibre T G D A hU d F x hx (p ^ m) hN1
+  obtain ⟨M, hM⟩ := _root_.GlobalTheory.FiniteHeight.exists_pow_span_X_le_span_map_residue_mulF T G D A hU d F x hx (p ^ m) hN1
   obtain ⟨hFree, hFin⟩ := GlobalTheory.FiniteColength.free_finite_quotient T inferInstance (Fin 1 × Fin d) d e
     (mulF F.F (p ^ m)) hc ⟨M, hM⟩
   have hMT := GlobalTheory.span_X_pow_le_sup_of_residue T (Fin 1 × Fin d) (Fin d) (mulF F.F (p ^ m)) M hM

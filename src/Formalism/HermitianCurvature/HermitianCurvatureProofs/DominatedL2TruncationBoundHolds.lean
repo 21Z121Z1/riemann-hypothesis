@@ -1,7 +1,7 @@
 module
 
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutNFApxDom
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutNFApxDomThQ
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0282
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0059
 public import Formalism.HermitianCurvature.HermitianCurvatureProofs.DominatedL2OperatorBoundHolds
 
 @[expose] public section

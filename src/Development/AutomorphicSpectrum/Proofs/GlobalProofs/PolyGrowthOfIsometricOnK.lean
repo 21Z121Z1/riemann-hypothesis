@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Proofs.GlobalProofs.IsSmoothVec
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.PosDefConjTransposeMulSelfEqExpPolynomial
+public import Development.AutomorphicSpectrum.Proofs.GlobalProofs.Bundle0031
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0012
 
 @[expose] public section
 

@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Formalism.LocalRingCardinality.DataCD
-public import Formalism.RealPlaceAnalysis.RealPlaceTaylor.ModularCharacterEqOneOnExpHermitian
+public import Formalism.RealPlaceAnalysis.RealPlaceTaylor.Bundle0007
 
 @[expose] public section
 

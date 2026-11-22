@@ -1,6 +1,6 @@
 module
 
-public import Formalism.SharpRestriction.GrowthBounds.BinomialRatio.SegmentStatementHolds
+public import Formalism.SharpRestriction.GrowthBounds.BinomialRatio.Bundle0002
 
 @[expose] public section
 

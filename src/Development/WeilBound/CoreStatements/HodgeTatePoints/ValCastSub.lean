@@ -3,8 +3,8 @@ module
 public import Mathlib
 public import Development.WeilBound.CoreStatements.TorusUniformisation.ChowMahlerFamilies.ValLeOfMem
 public import Development.WeilBound.CoreStatements.HodgeTatePoints.ExistsDualOf
-public import Development.WeilBound.CoreStatements.HodgeTatePoints.CompMemAddFun
-public import ReciprocityTheory.DualLattices.HasLenLeOfSurj
+public import Development.WeilBound.CoreStatements.HodgeTatePoints.Bundle0008
+public import ReciprocityTheory.DualLattices.Bundle0030
 
 @[expose] public section
 

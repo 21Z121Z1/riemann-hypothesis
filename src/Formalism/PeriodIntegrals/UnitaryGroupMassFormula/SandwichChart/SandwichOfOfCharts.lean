@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Formalism.PeriodIntegrals.LongWeylElementSquare
-public import Formalism.PeriodIntegrals.SwSand
+public import Formalism.PeriodIntegrals.Bundle0004
+public import Formalism.PeriodIntegrals.Bundle0012
 
 @[expose] public section
 

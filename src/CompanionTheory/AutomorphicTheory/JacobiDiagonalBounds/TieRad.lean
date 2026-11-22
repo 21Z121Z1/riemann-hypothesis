@@ -1,7 +1,7 @@
 module
 
 public import Formalism.HermitianCurvature.RealInputsClosedAdmissibleSettings
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutJDHat
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0053
 public import CompanionTheory.AutomorphicTheory.JacobiDiagonalBounds.TieAlg
 
 @[expose] public section

@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.ResidueDegreeOfIsClosedImmersion
-public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.ArFormExists
+public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.Bundle0015
+public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.Bundle0016
 
 @[expose] public section
 

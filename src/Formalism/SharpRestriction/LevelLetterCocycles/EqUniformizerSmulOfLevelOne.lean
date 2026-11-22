@@ -1,7 +1,7 @@
 module
 
 public import Formalism.SharpRestriction.LevelLetterCocycles.HermFlagUnipotentAnisotropicVectorSubMem
-public import Formalism.SharpRestriction.LevelLetterCocycles.IsTruncIff
+public import Formalism.SharpRestriction.LevelLetterCocycles.Bundle0010
 
 @[expose] public section
 

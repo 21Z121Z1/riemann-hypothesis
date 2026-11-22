@@ -1,22 +1,22 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Divisors.HasDefect
-public import Development.AbelianVarietyTheory.Definitions.Divisors.RigidForFan
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0060
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0071
 public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.ToroidalCompactificationBis
 public import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.ExistsUniqueIsPointOfDualNumber
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TorusInvariantHeatOperatorActsOnFourierTermsStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HeatOperatorValueAtPointEqRingOperatorStatement
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsGeneratingFramesComplete
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.FramesGeneratingAtPoint
-public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.ExistsDivOfExpandsAt
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2907
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2861
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0553
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0556
+public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0096
 public import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.ExistsGeneratorOfBasis
-public import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.ExpansionOfIntegralSectionIsIntegral
+public import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.Bundle0023
 public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.ConstantCoeffDmonOfProdLinear
-public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.LogDerivativePrincipalPolarisationIndependent
-public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ExpansionTranslateTorus
+public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0100
+public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.Bundle0073
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.DiscreteValuationRings.FamMod
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.DiscreteValuationRings.SectionScalarValuation
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.DiscreteValuationRings.Bundle0007
 
 @[expose] public section
 
@@ -245,7 +245,7 @@ theorem core {R : Type} [CommRing R] [IsDomain R] [IsLocalRing R] [IsNoetherianR
   refine ⟨ρU * uU⁻¹, fun k hk σ ω hσ => ?_⟩
   obtain ⟨r₀, σ₀, f₀, F, hr₀, hσ₀, hE₀, hF₀⟩ := exists_integral U k hk σ
   have hsh₀ := shiftEq_of_fam D.toPre k F f₀ r₀ hF₀
-  choose f₁ hf₁ using fun α => GlobalTheory.T.torusInvariant_heatOperator_acts_on_fourierTerms R D O oD Y n vH dd hinv Dr h hbasic k α (f₀ α)
+  choose f₁ hf₁ using fun α => _root_.GlobalTheory.Heat.heat_acts_on_terms R D O oD Y n vH dd hinv Dr h hbasic k α (f₀ α)
   have hsh₁ : ∀ mu α, ShiftEq D.toPre k mu α (f₁ α) (f₁ (α + k • mu)) 0 (f₀ (α + k • mu)) :=
     fun mu α => hdef k mu α (f₀ α) (f₁ α) (f₀ (α + k • mu)) (f₁ (α + k • mu)) hk (hsh₀ mu α) (hf₁ α)
       (hf₁ (α + k • mu))
@@ -254,7 +254,7 @@ theorem core {R : Type} [CommRing R] [IsDomain R] [IsLocalRing R] [IsNoetherianR
   have hf₂₁ : ∀ α, DVR.SecIsMul D.toPre.P.A.hom r₁ (f₂ α) (f₁ α) := fun α =>
     GlobalTheory.IntegralExpansion.secIsMul_of_secScal hM _ (GlobalTheory.IntegralExpansion.prB_app_injective D.toPre) (hF₁ α)
       (by rw [Over.w (DegPre.prB D.toPre (FractionRing R))]; exact hf₂ α)
-  obtain ⟨hdφ, hact⟩ := GlobalTheory.T.heatOperator_value_at_point_eq_ringOperator R Y.H D.toPre.P.A.left Y.q.left D.toPre.P.L n dd ⇑Dr h i0 Ω φ x hx δ hδ dΩ
+  obtain ⟨hdφ, hact⟩ := _root_.GlobalTheory.HeatPointValue.value_acts R Y.H D.toPre.P.A.left Y.q.left D.toPre.P.L n dd ⇑Dr h i0 Ω φ x hx δ hδ dΩ
     hW hd
   obtain ⟨s₀, t₀, hs₀, ht₀, had₀⟩ := GlobalTheory.RayEv.Transport.exists_adic_expansion R (maximalIdeal R) D A G
     U.toUnifPre Ω φ ξ (Over.homMk x' hx') hpx ξ.b.left rfl g' gM hg' hgM hfr k σ₀ f₀ hE₀

@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Divisors.FormalEnd
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0064
 public import Development.AbelianVarietyTheory.Definitions.Uniformization.TXFrame
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.RosVal
 

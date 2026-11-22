@@ -1,10 +1,10 @@
 module
 
-public import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.SatakeExponents.UniformizerValuations.FrameL
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FinsumOutOfLe
+public import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.SatakeExponents.UniformizerValuations.Bundle0007
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0409
 public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SphericalOneOfLocalAlgebra
 public import Formalism.SatakeDualWeyl.KpqSubgroupCompact
-public import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Heckecomm
+public import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Bundle0007
 
 @[expose] public section
 

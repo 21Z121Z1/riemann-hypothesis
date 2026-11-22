@@ -2,10 +2,10 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.HeightFunctions.NormComparisonConstants
-public import Development.AbelianVarietyTheory.Proofs.HeightProofs.ExistsPageRunRecordSubFour
-public import Development.AbelianVarietyTheory.Proofs.HeightProofs.FieldSmallIffOpo
+public import Development.AbelianVarietyTheory.Proofs.HeightProofs.Bundle0061
+public import Development.AbelianVarietyTheory.Proofs.HeightProofs.Bundle0059
 public import Development.AbelianVarietyTheory.Proofs.HeightProofs.ExistsThresholdRunHolds
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PullbackSections.NoCommonZeroSt
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PullbackSections.Bundle0013
 public import Formalism.LocalToGlobal.ProjectiveLattices.DepthTie
 
 @[expose] public section

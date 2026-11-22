@@ -4,8 +4,8 @@ public import Mathlib
 public import Formalism.SharpRestriction.GrowthBounds.IsResidueClassZero
 public import Formalism.SharpRestriction.RamificationFrobenius.TotientGaloisClasses.FrameFacts
 public import Formalism.SharpRestriction.RamificationFrobenius.TotientGaloisClasses.HostFacts
-public import Development.AutomorphicArithmetic.OrbitLabellings.GalEArithFrobEqIotaHP
-public import Development.AutomorphicArithmetic.FrobeniusLocalisation.FrobHOrder
+public import Development.AutomorphicArithmetic.OrbitLabellings.Bundle0002
+public import Development.AutomorphicArithmetic.FrobeniusLocalisation.Bundle0004
 
 @[expose] public section
 

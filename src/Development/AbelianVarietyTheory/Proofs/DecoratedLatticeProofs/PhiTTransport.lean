@@ -1,12 +1,12 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.SplitPart
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.CongAt
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ClassLatticeSelfDual
+public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.Bundle0023
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0286
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0080
 public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ValuedInvMulLe
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ValSubLtOfHasRes
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.AdelicMatrixCongruenceBadPrimeIffCompletion
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0377
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0438
 
 @[expose] public section
 

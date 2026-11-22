@@ -4,8 +4,8 @@ public import Mathlib
 public import Development.AutomorphicSpectrum.Definitions.MetricPeriods.IsTwiceDifferentiableAt
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArithmeticIntersection.CompRightEqZero
 public import GroundTheory.HeightsAndTheta.Heights.Antisymmetric.Statements
-public import Development.AutomorphicSpectrum.Proofs.MetricProofs.PullbackStatementHolds
-public import Development.AutomorphicSpectrum.Proofs.MetricProofs.HolomorphicConjugatePullback
+public import Development.AutomorphicSpectrum.Proofs.MetricProofs.Bundle0062
+public import Development.AutomorphicSpectrum.Proofs.MetricProofs.Bundle0039
 
 @[expose] public section
 

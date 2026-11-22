@@ -1,8 +1,8 @@
 module
 
 public import Development.AutomorphicArithmetic.CommutativeAlgebra.EtaleCohomology.CIn
-public import Development.AutomorphicArithmetic.CommutativeAlgebra.EtaleCohomology.FinAllOf
-public import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.IntegralStructures.GeometricFlagBases.PGeoSide
+public import Development.AutomorphicArithmetic.CommutativeAlgebra.EtaleCohomology.Bundle0010
+public import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.IntegralStructures.GeometricFlagBases.Bundle0006
 public import Development.AutomorphicArithmetic.CommutativeAlgebra.EtaleCohomology.PhiStepOf
 public import Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.BocksteinBaseChange.CstSmooth2
 

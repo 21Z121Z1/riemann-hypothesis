@@ -3,8 +3,7 @@ module
 public import Mathlib
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.AdditiveValuationNorms.CokLenLeOfRangeLe
 public import Formalism.GaloisCohomology.Statement
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.AdditiveValuationNorms.DualDiv
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.AdditiveValuationNorms.TorsFin
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.AdditiveValuationNorms.Bundle0005
 
 @[expose] public section
 

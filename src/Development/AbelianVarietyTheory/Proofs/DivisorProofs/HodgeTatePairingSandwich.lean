@@ -1,16 +1,16 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Divisors.IotaScalarOne
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0003
 public import Development.AbelianVarietyTheory.Definitions.Divisors.HodgeTateLatticePointFinrankTateModule
-public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.ScholzeWeinsteinB
-public import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.EpsilonPairingZeta
-public import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.HodgeTateKernel
+public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.Bundle0003
+public import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.Bundle0005
+public import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.Bundle0020
 public import Development.AbelianVarietyTheory.Definitions.Divisors.TorsionTowersOfDivisibleGroup
 public import Development.AbelianVarietyTheory.Definitions.Divisors.IsLatBasisHtLatIffSpanEq
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SandwichKernelRangeExact
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0430
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConvEqOneOfForallPairing
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PadicRingHomEqCanonical
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0249
 
 @[expose] public section
 

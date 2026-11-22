@@ -1,31 +1,32 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.SlopeBoundSt
-public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.ArchBetween
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.Bundle0012
 public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.BdryChart
 public import Development.AutomorphicSpectrum.Definitions.MetricPeriods.ClopenCondOnto
 public import Development.AbelianVarietyTheory.Definitions.Uniformization.PointEqOfSubsingleton
 public import Development.AbelianVarietyTheory.Definitions.Degenerations.AdmissiblePadicIntMaximalIdeal
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.UniformisationConclusion
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.HeckeKer
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.Bundle0003
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.BlowupProjections.BlowupProjStatement
 public import Development.AbelianVarietyTheory.PublishedTheorems.SemiabelianTori.GeometricallyConnectedSplitTorusAff
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.IsAbLift
-public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.FamilyUniformisationOfAbelianSchemeLaws
-public import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.AbelianSchemeLawsUnconditional
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0162
+public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0192
+public import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.Bundle0029
 public import Development.AbelianVarietyTheory.Statements.HyperbolicHypotheses.HypothesesInhabitedHyperbolic
-public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.LevelLabelExtendsOfOrthogonalToExtended
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsFamilyExponentialLocallyStatement
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.PeriodLatticeDiscreteFreeStatement
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.PeriodHolomorphicContinuationStatement
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.PeriodSetClosedStatement
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.PeriodLatticeSpansStatement
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.TorsionSectionEqOfConnectedStatement
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.TorsionPeriodsFiniteQuotientStatement
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.BoundaryChartHodgeMatrixStatement
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.PeriodLatticeOnPuncturedDiscStatement
-public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.ImportsExtraTail
+public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0186
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsFamilyExponentialLocally
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.Bundle0009
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0118
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0120
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsFlatAnIffIsConstMul
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.Bundle0005
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.PeriodLatticeSpans
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0131
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.TorsionPeriodsFiniteQuotient
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.BoundaryChartHodgeMatrix
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.PeriodLatticeOnPuncturedDisc
+public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0031
 
 @[expose] public section
 
@@ -244,7 +245,7 @@ theorem cubWeil_carry {R : Type} [CommRing R] {t : SAB H (Sp R)} {g n : ℕ} {M 
     have hNc : (N : ℂ) ≠ 0 := Nat.cast_ne_zero.2 hN.ne'
     rw [← ex_nsmul e hb, smul_smul, mul_inv_cancel₀ hNc, _root_.one_smul]
     exact hu b hb
-  exact GlobalTheory.T.torsion_section_eq_of_connected (Sp R) t.G t.PP t.cub n N (Metric.ball 0 ρ) (fun b => spMap (ψ b))
+  exact _root_.GlobalTheory.CompanionTheory.Ar.Flat.cubWeil_const_of_isHolTo_family (Sp R) t.G t.PP t.cub n N (Metric.ball 0 ρ) (fun b => spMap (ψ b))
     (fun b => e.ex b ((N : ℂ)⁻¹ • s b)) (fun b => e.ex b ((N : ℂ)⁻¹ • s' b)) ζ 0 hN Metric.isOpen_ball
     (convex_ball _ _).isPreconnected (Metric.mem_ball_self hρ) (hhol s hs) (hhol s' hs')
     (fun b hb => ⟨htor s hp b hb, htor s' hp' b hb, (Over.w _).trans (Over.w _).symm⟩) h0
@@ -271,17 +272,17 @@ theorem exists_logPeriods_famExp : ∀ (E : Type) [Field E] [NumberField E] [IsC
   obtain ⟨g', ty, hty⟩ := GlobalTheory.AllClasses.exists_isTypeFn H D.p D.q
   obtain ⟨FU⟩ := GlobalTheory.familyUnif_of_laws GlobalTheory.abelianSchemeLaws_all.1 E H D l Xo σ g' ty hpq hσ hty
   have hsemi : IsSemiAbelian C.t.G := C.t.semi
-  obtain ⟨ε, hε, hεB, ⟨e₀⟩⟩ := GlobalTheory.T.exists_family_exponential_locally C.R C.t.G C.g n C.M (Metric.ball 0 1) C.ψ hsemi.smooth C.hol 0
+  obtain ⟨ε, hε, hεB, ⟨e₀⟩⟩ := _root_.GlobalTheory.CompanionTheory.Ar.Flat.exists_famExp_near C.R C.t.G C.g n C.M (Metric.ball 0 1) C.ψ hsemi.smooth C.hol 0
     (Metric.mem_ball_self one_pos)
   have h0ε : (0 : Fin n → ℂ) ∈ Metric.ball (0 : Fin n → ℂ) ε := Metric.mem_ball_self hε
-  obtain ⟨Γ₀, hΓ₀, -, hfin, hfree⟩ := GlobalTheory.T.period_lattice_discrete_free C.R C.t.G C.g n C.M _ C.ψ e₀ 0 h0ε
+  obtain ⟨Γ₀, hΓ₀, -, hfin, hfree⟩ := _root_.GlobalTheory.CompanionTheory.Ar.Flat.FamExp.per_discrete C.R C.t.G C.g n C.M _ C.ψ e₀ 0 h0ε
   let Q : (Fin n → ℂ) → AddSubgroup (Fin C.g → ℂ) := fun b => AddSubgroup.closure (e₀.per b)
   have hQ : ∀ b ∈ Metric.ball (0 : Fin n → ℂ) ε, ∀ p, p ∈ Q b ↔ p ∈ e₀.per b := fun b hb p =>
     mem_closure_per e₀ hb p
   have hsp : ∀ x : Γ₀, ∃ (ε' : ℝ) (s : (Fin n → ℂ) → (Fin C.g → ℂ)), 0 < ε' ∧
       DifferentiableOn ℂ s (Metric.ball 0 ε') ∧ s 0 = x ∧ ∀ b ∈ Metric.ball (0 : Fin n → ℂ) ε', s b ∈ Q b := by
     intro x
-    obtain ⟨ε', s, h0, hsub, hd, hs0, hs⟩ := GlobalTheory.T.period_holomorphic_continuation C.R C.t.G C.g n C.M _ C.ψ e₀ Metric.isOpen_ball 0 h0ε x
+    obtain ⟨ε', s, h0, hsub, hd, hs0, hs⟩ := _root_.GlobalTheory.CompanionTheory.Ar.Flat.per_spreads C.R C.t.G C.g n C.M _ C.ψ e₀ Metric.isOpen_ball 0 h0ε x
       (by rw [← hΓ₀]; exact x.2)
     exact ⟨ε', s, h0, hd, hs0, fun b hb => (hQ b (hsub hb) _).2 (hs b hb)⟩
   obtain ⟨ρ, hρ0, hρc, S, hSd, hS0, hSa, hSq⟩ := exists_additive_sections Γ₀ Q (min 1 ε) (lt_min one_pos hε) hsp
@@ -295,13 +296,13 @@ theorem exists_logPeriods_famExp : ∀ (E : Type) [Field E] [NumberField E] [IsC
   have hΓ₀' : (Γ₀ : Set (Fin C.g → ℂ)) = e.per 0 := hΓ₀
   have hSp : ∀ x, ∀ b ∈ Metric.ball (0 : Fin n → ℂ) ρ, S x b ∈ e.per b := fun x b hb =>
     (hQ' b hb _).1 (hSq x b hb)
-  obtain ⟨i, Hf, hrank, hopen, hloc⟩ := GlobalTheory.T.boundary_chart_hodge_matrix E H D l Xo σ n a C g' ty FU ρ e hρ0 hρ1
+  obtain ⟨i, Hf, hrank, hopen, hloc⟩ := _root_.GlobalTheory.CompanionTheory.Ar.Flat.exists_marking E H D l Xo σ n a C g' ty FU ρ e hρ0 hρ1
   obtain ⟨hfreeL, hfinL, -⟩ := GlobalTheory.Coisotropic.lattice_rank E H (FU.Di i)
   have hU : ∀ z ∈ punct n a 1, (ρ : ℂ) • z ∈ punct n a ρ := fun z hz => (smul_mem_punct hρ0).2 hz
   have hsm : Differentiable ℂ (fun z : Fin n → ℂ => (ρ : ℂ) • z) := differentiable_id.fun_const_smul _
   have key : ∃ L : Flat.LogPeriods n a C.g (FU.Di i).La, L.H = (fun z => Hf ((ρ : ℂ) • z)) ∧
       ∀ w ∈ logCover L.a_le, (L.P w).range = Q ((ρ : ℂ) • expCover a w) := by
-    refine GlobalTheory.T.period_lattice_on_punctured_disc n a C.g C.a_le (FU.Di i).La (FU.Di i).EF (fun z => Q ((ρ : ℂ) • z))
+    refine _root_.GlobalTheory.CompanionTheory.Ar.Flat.exists_logPeriods_range_eq n a C.g C.a_le (FU.Di i).La (FU.Di i).EF (fun z => Q ((ρ : ℂ) • z))
       (fun z => Hf ((ρ : ℂ) • z)) (punct n a 1) Γ₀ (fun x z => S x ((ρ : ℂ) • z)) rfl hrank (FU.Di i).alt
       (FU.Di i).unimod ?_ ?_ ?_ ?_ ?_ ?_ ?_
     · exact fun z hz => ⟨(hopen _ (hU z hz)).1, fun x hx => (hopen _ (hU z hz)).2.1 x hx⟩
@@ -330,7 +331,7 @@ theorem exists_logPeriods_famExp : ∀ (E : Type) [Field E] [NumberField E] [IsC
       have htend : Tendsto (fun k => (ρ : ℂ) • u k) atTop (𝓝 0) := by
         have h := hu.const_smul (ρ : ℂ)
         rwa [smul_zero] at h
-      have hcl := GlobalTheory.T.period_set_closed C.R C.t.G C.g n C.M (Metric.ball 0 ρ) C.ψ e hsemi.separated
+      have hcl := _root_.GlobalTheory.CompanionTheory.Ar.Flat.mem_per_of_frequently C.R C.t.G C.g n C.M (Metric.ball 0 ρ) C.ψ e hsemi.separated
         ⟨Metric.isOpen_ball, fun r => (C.hol.2 r).mono hball1⟩ 0 h0ρ (fun b => s ((ρ : ℂ)⁻¹ • b))
         (ContinuousAt.comp_of_eq hs (continuous_const_smul _).continuousAt (smul_zero _))
         (htend.frequently (Eventually.frequently (Eventually.of_forall fun k => by
@@ -342,9 +343,9 @@ theorem exists_logPeriods_famExp : ∀ (E : Type) [Field E] [NumberField E] [IsC
       rw [← hΓ₀'] at h0
       exact h0
     · rw [hΓ₀']
-      exact GlobalTheory.T.period_lattice_spans C.R C.t.G C.g n C.M _ C.ψ e hsemi 0 h0ρ
+      exact _root_.GlobalTheory.CompanionTheory.Ar.Flat.span_per_eq_top C.R C.t.G C.g n C.M _ C.ψ e hsemi 0 h0ρ
     · intro N hN
-      obtain ⟨T, hT, hTw⟩ := GlobalTheory.T.torsion_periods_finite_quotient E H C.R C.t C.g n C.M (Metric.ball 0 ρ) C.ψ e C.dim 0 h0ρ Γ₀ hΓ₀' N hN
+      obtain ⟨T, hT, hTw⟩ := _root_.GlobalTheory.CompanionTheory.Ar.Flat.toric_torsion_radical_period E H C.R C.t C.g n C.M (Metric.ball 0 ρ) C.ψ e C.dim 0 h0ρ Γ₀ hΓ₀' N hN
       refine ⟨T, hT, fun x y hx z hz => ?_⟩
       have hb := hU z hz
       have hbm := punct_subset_ball hb

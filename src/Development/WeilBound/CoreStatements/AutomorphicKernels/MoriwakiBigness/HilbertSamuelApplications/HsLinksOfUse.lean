@@ -3,17 +3,17 @@ module
 public import Mathlib
 public import Development.WeilBound.CoreStatements.AutomorphicKernels.MoriwakiBigness.HilbertSamuelApplications.SmallGeneratedCountUpperOfUse
 public import Development.AutomorphicSpectrum.Statements.GeometryStatements.ZhangDimensionPushDownGrassmannianHeightBounds
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArakelovGeometry.MoriwakiSt
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArakelovGeometry.Bundle0003
 public import GroundTheory.HeightsAndTheta.Heights.SemipositiveHeights.Imports
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PtsIntegralCurveConst
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PNefOnGenericOfSemipos
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PCurvePointsFinite
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsBirationalModelExists
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PBirationalModelExists
+public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0084
+public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0019
+public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0080
+public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0020
+public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0071
 public import GroundTheory.HeightsAndTheta.Heights.SemipositiveHeights.ImportsBis
-public import GroundTheory.HeightsAndTheta.Heights.SemipositiveHeights.BigLineBundleMoriwaki
-public import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.PZhangLowerX
-public import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.RingKrullDimLocalizationInt
+public import GroundTheory.HeightsAndTheta.Heights.SemipositiveHeights.Bundle0001
+public import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.Bundle0014
+public import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.Bundle0008
 
 @[expose] public section
 

@@ -3,9 +3,9 @@ module
 public import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.SeparatingAlgebras.StGlob
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.Divisors.IsIntegralOpW
-public import Development.AbelianVarietyTheory.Definitions.Foundations.NotHasParamOfSubsingleton
+public import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0018
 public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.HasSatakeGLOfIsSatVecGL
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExistsLocalComponentEigenvectorSplitPlace
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0179
 public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SatakeParameterSphericalProductSpehQuotients
 
 @[expose] public section

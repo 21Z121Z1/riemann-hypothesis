@@ -1,11 +1,11 @@
 module
 
 public import Mathlib
-public import ReciprocityTheory.ReductiveGroups.UnramifiedIntegrals.RedValA
-public import ReciprocityTheory.ReductiveGroups.UnramifiedIntegrals.RedValB
-public import ReciprocityTheory.ReductiveGroups.UnramifiedIntegrals.RedKerProd
-public import ReciprocityTheory.ReductiveGroups.UnramifiedIntegrals.RedKurOmega
-public import ReciprocityTheory.ReductiveGroups.UnramifiedIntegrals.G2EqZeroOfHasCMByThree
+public import ReciprocityTheory.ReductiveGroups.UnramifiedIntegrals.Bundle0021
+public import ReciprocityTheory.ReductiveGroups.UnramifiedIntegrals.Bundle0032
+public import ReciprocityTheory.ReductiveGroups.UnramifiedIntegrals.Bundle0028
+public import ReciprocityTheory.ReductiveGroups.UnramifiedIntegrals.Bundle0031
+public import ReciprocityTheory.ReductiveGroups.UnramifiedIntegrals.Bundle0019
 
 @[expose] public section
 

@@ -4,12 +4,12 @@ public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsIsLevWithGeometric
 public import Development.AbelianVarietyTheory.Definitions.Divisors.IsHomogeneousCompIdeal
 public import Development.AbelianVarietyTheory.Definitions.Foundations.ExistsFlatSecRankZero
-public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.FlagComponentFramedPointFrame
+public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.Bundle0036
 public import Development.AbelianVarietyTheory.Definitions.TorusSections.IsTorusOf
-public import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.CardLevGrpAndSpan
+public import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.Bundle0014
 public import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.IsEtaRuleExistsUniqueMemSec
-public import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.ExistsShiftNullValNeZero
-public import Development.AbelianVarietyTheory.Proofs.CovolumeBounds.EqZeroOfEvalGridEqZeroOfTotalDegreeLe
+public import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.Bundle0054
+public import Development.AbelianVarietyTheory.Proofs.CovolumeBounds.Bundle0002
 
 @[expose] public section
 

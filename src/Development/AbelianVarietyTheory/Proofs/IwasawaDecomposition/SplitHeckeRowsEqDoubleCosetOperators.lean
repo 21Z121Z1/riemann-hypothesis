@@ -1,24 +1,23 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ReadsDeco
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0359
 public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.NVNeZero
-public import Formalism.LocalToGlobal.Columns.MtHeckeSum
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntegralEqZero
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.FiniteAdelicUnitaryConjIntegralFrame
+public import Formalism.LocalToGlobal.Columns.Bundle0028
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0886
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0388
 public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.SplitPlaceSupportLevelStandardCoordinates
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.LiftFormLevelSplitsAtOffLevelSplitPlace
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.LiftLevelTypeTrivialSplitPlaceSupport
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IdentityIntegralUnitaryFrameCoordinatesOfUnitGra
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0371
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0401
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0367
 public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.InvolutionSphericalHeckeAnti
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsAdelicPointFinitePartEqRealOneStatement
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ConjUniformizerIsUniformizerConjPrimeStatement
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsSplitIdempotentAtConjugatePrimeStatement
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ConjPrimeIdempotentMulEqZeroOfVanishingAtPlaceStatement
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.MemCompletedSelfDualLatticeIffIntegralStdFrameStatement
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.FrameTransportEtaSupportedAtPlaceIdempotentStatement
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.HeckeElementInvLatticeClausesOfFrameConjStatement
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.HeckeElementUniformizerRatioDeterminantStatement
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0393
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0363
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0366
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0372
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0387
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0663
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0368
 
 @[expose] public section
 
@@ -233,7 +232,7 @@ theorem lev_split (β : GL (Fin V.rank) (Formalism.IndefR.Lev.EAf D)) (Λ : Subm
     rw [Formalism.DivisionValues.GluingInclusion.conjIdeal_eq, GlobalTheory.SplitHeckeAdj.eq_conj_of_isConjPl hc, Formalism.DivisionValues.ValuationRepresentative.conjPl_conjPl]
   obtain ⟨e, he⟩ := GlobalTheory.MovedIdem.exists_isIdemAt (pl x.1) hPc
   have hpi : IsPrimeIdem (pl x.1) e (e + cA D e) := Or.inl ⟨he, rfl⟩
-  have h01 := (GlobalTheory.T.supported_subgroup_split_commute_primeIdempotents V).2.2.1 (pl x.1) e _ hpi
+  have h01 := (_root_.GlobalTheory.IdemSupport.supported_group_and_prime_idempotents V).2.2.1 (pl x.1) e _ hpi
   have hff := h01.1
   have hcf := h01.2.1
   have h1 : ((1 : ℕ) : 𝓞 D.host.E) ∉ (pl x.1).asIdeal := by
@@ -290,16 +289,16 @@ theorem eta_isT_std (Λ : Submodule (𝓞 D.host.E) (Fin V.rank → D.host.E)) (
     isTEnv V pl ok x g := by
   intro hx2
   obtain ⟨α₀, hα₀, hfin⟩ := GlobalTheory.T.exists_adelicPoint_finitePart_eq_realOne V g
-  obtain ⟨e, he⟩ := GlobalTheory.T.exists_splitIdempotent_at_conjugatePrime Pb Ut
-  obtain ⟨h1, h2⟩ := GlobalTheory.T.conj_uniformizer_isUniformizer_conjPrime Pb Ut
-  have hdict := GlobalTheory.T.mem_completedSelfDualLattice_iff_integral_stdFrame V Λ hβ
-  have heps := GlobalTheory.T.conjPrimeIdempotent_mul_eq_zero_of_vanishing_at_place v Pb e hv he
+  obtain ⟨e, he⟩ := _root_.GlobalTheory.SplitEtaIdem.exists_isIdemAt_conjP Pb Ut
+  obtain ⟨h1, h2⟩ := _root_.GlobalTheory.Mem.UnifConj.conj_unif_isUnif Pb Ut
+  have hdict := _root_.GlobalTheory.Mem.SDFrameStd.lamHat_iff_int V Λ hβ
+  have heps := _root_.GlobalTheory.IdemSupp.idem_mul_eq_zero v Pb e hv he
   have hg' : castGL h.symm (Formalism.UG.bc (swapAE D) (finHom V α₀)) =
       1 * ((Formalism.L2.Col.mhlEta D.sp.cm n v Ut.hπ0 x.2 : Formalism.L2.Col.UAd D.sp.cm n) : GL (Fin n) (Formalism.IndefR.Lev.EAf D)) * 1⁻¹ := by
     rw [hfin, inv_one, mul_one, one_mul]; exact hg
-  have hs := GlobalTheory.T.frameTransport_eta_supported_at_placeIdempotent V n h v Pb Ut x.2 e 1 α₀ hv he hα₀ hg'
-  have hl := GlobalTheory.T.heckeElementInv_latticeClauses_of_frameConj V n h v Pb Ut x.2 e 1 α₀ he heps hdict (one_mem _) hα₀ hg'
-  have hd := GlobalTheory.T.heckeElement_uniformizerRatio_determinant V n h v Pb Ut x.2 e 1 α₀ (h ▸ hx2) he heps hα₀ hg'
+  have hs := _root_.GlobalTheory.Mem.R3.LiftBrg.eta_suppAt V n h v Pb Ut x.2 e 1 α₀ hv he hα₀ hg'
+  have hl := _root_.GlobalTheory.Mem.R3.LiftBrg.EtaInvLat.eta_inv_lat V n h v Pb Ut x.2 e 1 α₀ he heps hdict (one_mem _) hα₀ hg'
+  have hd := _root_.GlobalTheory.Mem.R3.LiftBrg.EtaDet.det_clause V n h v Pb Ut x.2 e 1 α₀ (h ▸ hx2) he heps hα₀ hg'
   rw [← hPb]
   refine ⟨α₀⁻¹, ⟨e, Formalism.L2.Col.cO D.host.E Ut.π, he, h1, h2, (GfC _).inv_mem hα₀, GlobalTheory.SplitPlace.suppAt_inv hs, hl.1, hl.2, hd⟩, ?_⟩
   rw [inv_inv, hfin]

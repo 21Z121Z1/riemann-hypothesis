@@ -3,8 +3,8 @@ module
 public import Development.AutomorphicArithmetic.MeanSquareBounds.PrimeSetTwoBounds
 public import Development.AutomorphicArithmetic.CharacterBoxes.PairGood
 public import Development.AutomorphicArithmetic.MeanSquareBounds.PairExists
-public import Development.AutomorphicArithmetic.MeanSquareBounds.Kappa4Loglog
-public import Development.AutomorphicArithmetic.MeanSquareBounds.IndDrop
+public import Development.AutomorphicArithmetic.MeanSquareBounds.Bundle0003
+public import Development.AutomorphicArithmetic.MeanSquareBounds.Bundle0002
 
 @[expose] public section
 

@@ -1,29 +1,29 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HasString
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1033
 public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisGeometry₂.IsTemperedGLOfIsUnitaryLSeg
-public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisGeometry₂.ClozelCohomologicalModel
+public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisGeometry₂.Bundle0004
 public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.ExistsUniqueHcharOfFiniteOrder
-public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.ChebotarevDegreeOneIffCheb
-public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.IsNormalisedOfIsDiscrete
-public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.GaloisRepOfPolarizedCuspidal
+public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.Bundle0006
+public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.Bundle0008
+public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.Bundle0010
 public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.BaseChangeDefiniteUnitary
-public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.BhattScholzeCrystallineLattices
+public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.Bundle0005
 public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.HeckeLAdicCharacterAboveIff
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.BaseChangeSpehOfDiscreteSeries
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0664
 public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SatakeParameterSphericalProductSpehQuotients
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.BlockIsTheRun
-public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.CharAbove
-public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.LocalLanglandsGL
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CmGaloisRepresentationCrystallineStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsSphericalOfIsCompAlongSplit
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HasSatGLOfIsCompAlongSplit
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CohomologicalLocalComponentExponentsStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SpehPartIsRun
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnitaryStringForcesLongPart
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SpehInfMapSubEqSumTwists
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SatakeLinearFactorsRegroup
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0003
+public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0012
+public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.Bundle0007
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1323
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1273
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1106
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CohomologicalLocalComponentExponents
+public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0024
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1122
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1126
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1121
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsCommonModel
 
 @[expose] public section
@@ -222,7 +222,7 @@ theorem GlobalTheory.GalAut.galoisRep_definiteUnitary : GlobalTheory.Published.B
       push_cast at hj ⊢
       linear_combination -hj
     have htemp : ∀ i, ∀ s ∈ S i, ‖(s : ℂ)‖ = 1 := fun i =>
-      GlobalTheory.T.cohomological_local_component_exponents H4 H5 E (a i) (hP.pos i).1 (P i) (hP.csd i) (m i) (hP.inf i) (hnd i) _ (hfz i) w (ρ i w)
+      _root_.GlobalTheory.TempSat.norm_satake_eq_one H4 H5 E (a i) (hP.pos i).1 (P i) (hP.csd i) (m i) (hP.inf i) (hnd i) _ (hfz i) w (ρ i w)
         (hP.loc i w) (S i) (hS1 i)
     have ht1 : 1 ≤ t := by omega
     obtain ⟨i0, hi0⟩ := GlobalTheory.unitary_string_forces_long_part E w c d S T t ν ht1 htemp hν hS2 (by rw [GlobalTheory.GalAut.lift_eq]; exact hle)

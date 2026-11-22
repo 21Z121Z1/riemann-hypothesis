@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import GroundTheory.ProfiniteCohomology.LocalEulerCharacteristic.UnitsPower
+public import GroundTheory.ProfiniteCohomology.LocalEulerCharacteristic.Bundle0002
 public import GroundTheory.LocalFields.UnitsBasic
 
 @[expose] public section

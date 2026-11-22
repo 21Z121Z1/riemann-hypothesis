@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Divisors.QuasiCompact
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsOpenConnectedComponentOfIsLocallyNoetherian
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0065
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0068
 
 @[expose] public section
 

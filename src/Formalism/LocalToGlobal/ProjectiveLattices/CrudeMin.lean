@@ -1,6 +1,6 @@
 module
 
-public import Formalism.LocalToGlobal.ProjectiveLattices.RowDeg
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0003
 
 @[expose] public section
 

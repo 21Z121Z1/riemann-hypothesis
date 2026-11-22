@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.DefiniteUnitaryAction
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.FiniteGroupActsUnitarily
+public import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.Bundle0013
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0177
 
 @[expose] public section
 
@@ -21,8 +21,8 @@ theorem actsUnitarily_of_clauses (R : RealDat D A Ks) (hE : R.models_HE) (gE : R
     (hW : R.models_HW) (gW : R.models_gW) (hν : R.models_νW) (ht : R.fam_tie) (hX : R.models_cX) (hV : R.models_cV) :
     ActsUnitarily R :=
   have h := GlobalTheory.FiniteGroupUnitary.definiteUnitary R ht hX hV
-  ⟨GlobalTheory.FiniteGroupUnitary.isUnitaryRep_of_norm _ (GlobalTheory.T.norm_goodRows_finiteGroup_action R hE gE h0),
-    fun i σ => GlobalTheory.FiniteGroupUnitary.isUnitaryRep_of_norm _ (GlobalTheory.T.norm_liftForms_finiteGroup_action R hW gW hν i σ),
+  ⟨GlobalTheory.FiniteGroupUnitary.isUnitaryRep_of_norm _ (_root_.GlobalTheory.norm_gE_rows R hE gE h0),
+    fun i σ => GlobalTheory.FiniteGroupUnitary.isUnitaryRep_of_norm _ (_root_.GlobalTheory.gW_norm_eq R hW gW hν i σ),
     fun t σ => h.1 t σ, fun i t σ => h.2 i t σ⟩
 
 theorem geometric_unitary (R : RealDat D A Ks) (hU : R.LUnif) (hW : R.models_HW) (gW : R.models_gW) (h : ActsUnitarily R)

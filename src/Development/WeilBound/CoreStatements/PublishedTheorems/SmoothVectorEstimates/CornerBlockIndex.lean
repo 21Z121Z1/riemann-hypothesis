@@ -1,7 +1,7 @@
 module
 
 public import Development.WeilBound.CoreStatements.PublishedTheorems.SmoothVectorEstimates.IntegralMem
-public import Development.WeilBound.CoreStatements.PublishedTheorems.SmoothVectorEstimates.BlkUInvVal
+public import Development.WeilBound.CoreStatements.PublishedTheorems.SmoothVectorEstimates.Bundle0003
 
 @[expose] public section
 

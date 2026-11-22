@@ -1,13 +1,13 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.IsLatMeasurableConst
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.RationalUnitaryPointsDiscreteFundamentalDomain
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.UnitaryLatticeStabilizerDetRoot
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.LintegralRpowNegChangeOfVariable
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.LeftQuotientCovolumeWithDensityDetNormSqStatement
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.FlagLeviRealPlacesProductMeasureStatement
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsScalarStableLatticeAutomorphismFundamentalStatement
+public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.Bundle0011
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0273
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0068
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0147
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0225
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0330
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0191
 
 @[expose] public section
 
@@ -435,7 +435,7 @@ theorem covol_leviGroup_le : ∀ (I I₀ : AutInst) (e : I₀.E ≃+* I.E) (xf :
   have hNpos : ∀ i, (0 : ℝ) < 2 * (I.f : ℝ) * j i := fun i =>
     mul_pos (mul_pos two_pos hfpos) (Nat.cast_pos.2 (by have := hj i; omega))
   obtain ⟨Θ, κ, hΘm, hκ, hΘA, hΘγ, hΘsz, hΘinj, hΘint⟩ :=
-    GlobalTheory.T.flagLevi_realPlaces_product_measure I I₀ e xf a j S Λ x₀ T T' T₀ hj hA μM c₀ hM hc₀
+    _root_.GlobalTheory.LeviIso.levi_product I I₀ e xf a j S Λ x₀ T T' T₀ hj hA μM c₀ hM hc₀
   choose D hDm hDpos hDcov hDint using fun i =>
     exists_dom hE (hj i) (hA.2.2.1 i) (hNpos i) (hκ i)
   refine le_trans (le_mul_covol (latGroup I₀ x₀) (Measure.pi fun v => Formalism.REAL.muG (I₀.ε v))

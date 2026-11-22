@@ -1,7 +1,7 @@
 module
 
 public import Formalism.LocalToGlobal.Columns.Adelic
-public import Formalism.LocalToGlobal.Columns.Inputs
+public import Formalism.LocalToGlobal.Columns.Bundle0008
 
 @[expose] public section
 

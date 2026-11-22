@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import GroundTheory.HeightsAndTheta.Heights.FiniteCovolume.Examples
+public import GroundTheory.HeightsAndTheta.Heights.FiniteCovolume.Bundle0003
 
 @[expose] public section
 

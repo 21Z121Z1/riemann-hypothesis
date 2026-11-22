@@ -1,12 +1,12 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.ActSingleNeZero
-public import Development.AbelianVarietyTheory.Statements.CuspFrameWeights.EigenfunctionFiniteCoefficients
+public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.Bundle0010
+public import Development.AbelianVarietyTheory.Statements.CuspFrameWeights.Bundle0001
 public import Formalism.RealPlaceAnalysis.RealPlaceTaylor.FirstSlotSliceSlotMixedCasimirZero
 public import Formalism.RealPlaceAnalysis.RealPlaceTaylor.IsCompactInvariantOrthogonalInf
 public import Formalism.RealPlaceAnalysis.FinalF
-public import Formalism.RealPlaceAnalysis.RealPlaceTaylor.CompactExponentialSurjective
+public import Formalism.RealPlaceAnalysis.RealPlaceTaylor.Bundle0008
 
 @[expose] public section
 

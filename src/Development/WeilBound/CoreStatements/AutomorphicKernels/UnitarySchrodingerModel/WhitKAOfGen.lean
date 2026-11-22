@@ -2,7 +2,7 @@ module
 
 public import Development.WeilBound.CoreStatements.AutomorphicKernels.UnitarySchrodingerModel.WhitNDgOfLocalOfSteps
 public import Development.WeilBound.CoreStatements.AutomorphicKernels.SiegelWeilFormula.WhitGenOf
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.WhitKA
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0637
 
 @[expose] public section
 

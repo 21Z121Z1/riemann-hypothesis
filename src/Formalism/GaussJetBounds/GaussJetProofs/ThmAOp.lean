@@ -1,6 +1,6 @@
 module
 
-public import Formalism.GaussJetBounds.GenLogInverse
+public import Formalism.GaussJetBounds.Bundle0001
 public import Formalism.GaussJetBounds.StatementI
 public import Formalism.GaussJetBounds.MonoShapeTop
 

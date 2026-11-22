@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.FlagLevelCharacterEqPsiDivN
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0050
 
 @[expose] public section
 

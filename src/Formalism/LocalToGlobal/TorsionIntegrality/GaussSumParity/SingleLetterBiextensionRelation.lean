@@ -1,9 +1,9 @@
 module
 
 public import Formalism.LocalToGlobal.TorsionIntegrality.GaussSumParity.FinalOfNRDense
-public import Formalism.LocalToGlobal.TorsionIntegrality.GaussSumParity.StatementG
+public import Formalism.LocalToGlobal.TorsionIntegrality.GaussSumParity.Bundle0003
 public import Formalism.LocalToGlobal.TorsionIntegrality.GaussSumParity.BiextensionRelation
-public import Formalism.LocalToGlobal.TorsionIntegrality.GaussSumParity.KummerThetaLogarithms.NRCMOf
+public import Formalism.LocalToGlobal.TorsionIntegrality.GaussSumParity.KummerThetaLogarithms.Bundle0005
 public import Formalism.LocalToGlobal.TorsionIntegrality.GaussSumParity.KummerThetaLogarithms.SecondLogDerivativeUnique
 
 @[expose] public section

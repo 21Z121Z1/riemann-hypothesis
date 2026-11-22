@@ -1,6 +1,6 @@
 module
 
-public import Formalism.SharpRestriction.GrowthBounds.MonomialFactorials.DigitsOKOfCompat
+public import Formalism.SharpRestriction.GrowthBounds.MonomialFactorials.Bundle0006
 
 @[expose] public section
 

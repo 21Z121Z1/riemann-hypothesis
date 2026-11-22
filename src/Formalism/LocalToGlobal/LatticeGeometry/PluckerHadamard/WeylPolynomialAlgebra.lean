@@ -1,7 +1,7 @@
 module
 
 public import Formalism.LocalToGlobal.LatticeGeometry.PluckerHadamard.BlockVandermondeForms
-public import Formalism.DegreeFormula.PointDegree.FlagDeg
+public import Formalism.DegreeFormula.PointDegree.Bundle0001
 
 @[expose] public section
 

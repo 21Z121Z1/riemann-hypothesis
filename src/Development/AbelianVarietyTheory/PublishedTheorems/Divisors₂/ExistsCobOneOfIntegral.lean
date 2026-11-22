@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.PrismaticDieudonneAt
-public import ReciprocityTheory.DualLattices.ExistsPrimitiveRoot
+public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.Bundle0004
+public import ReciprocityTheory.DualLattices.Bundle0005
 
 @[expose] public section
 

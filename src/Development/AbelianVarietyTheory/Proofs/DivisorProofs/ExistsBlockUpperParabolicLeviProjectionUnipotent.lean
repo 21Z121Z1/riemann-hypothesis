@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ParP
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConjAverageUnipotentLocallyConstantCompactSuppor
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ProductOfLocalLevelsUnitaryIsOpenIsCompactIsLeve
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1080
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1094
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1081
 
 @[expose] public section
 

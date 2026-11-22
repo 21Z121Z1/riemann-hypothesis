@@ -2,10 +2,10 @@ module
 
 public import Mathlib
 public import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.SatakeExponents.FiniteDiscreteFamilies.FinCut
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.AdmissibleDiscreteSpaces
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.DiscreteAutomorphicRepGLExistsLocalComponent
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.EquivOfISupRange
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnitaryDivisorDualLabel
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0690
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0636
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0112
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0841
 
 @[expose] public section
 

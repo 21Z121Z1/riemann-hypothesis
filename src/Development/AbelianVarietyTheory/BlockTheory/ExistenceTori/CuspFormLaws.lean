@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.BlockTheory.ExistenceTori.ConjugateFieldNorm
+public import Development.AbelianVarietyTheory.BlockTheory.ExistenceTori.Bundle0004
 
 @[expose] public section
 

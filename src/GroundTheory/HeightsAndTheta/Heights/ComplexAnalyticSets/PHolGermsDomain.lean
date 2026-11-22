@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StZariskiAnalyticNormality
+public import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.Bundle0023
 
 @[expose] public section
 

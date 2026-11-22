@@ -1,48 +1,48 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GoodModModT
-public import Development.AbelianVarietyTheory.Statements.PlaceShiftStatements.NormSmall
-public import Development.AbelianVarietyTheory.Definitions.Divisors.DiscreteSeriesHermitianUnique
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FockVectorIsThetaFunctionDefinitePairStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WeilRepRealFixesFockMaximalMinorsStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntegralDefiniteUnitaryQuotientEqClassSumStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsAdelicThetaReadsCurveThetaFunctionStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsFockVacuumOfReadsGaussianEntireStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MovedThetaFunctionsReadOfMovedVacuumReadsStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WeilDatumFinitePartMovesVacuumAsThetaModelStatement
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2841
+public import Development.AbelianVarietyTheory.Statements.PlaceShiftStatements.Bundle0002
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0041
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1242
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1233
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1364
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1502
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1815
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1634
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1653
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1810
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle3002
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsCongLevelOfIsBlockLevel
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HeckeFormAnisoOfGlobalEuler
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RelIndexBlockLevel
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AlphaHFinIdlIncU
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BottomPairsExistEveryTupleOfCmThetaHypotheses
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CosetVecMemThetaSpace
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.FockMatrixCoefficientSplitsRealFiniteFactors
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2772
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1637
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1679
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2835
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1546
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0429
 public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ThetaChainStepFockVectorSphericalOffS
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.PartialNormalizingFactorProductAnalyticNeZero
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0154
 public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.FockVectorsInnerEqFockInnerProductMulNorm
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.FockPolynomialVectorInjectiveNonzeroVacuum
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IsThetaIsLatticeVacuumFockPureTensor
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ThetaPairingInvariant
-public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.ExistsIsParamFunOne
-public import Development.AbelianVarietyTheory.Definitions.Divisors.IsValCharTwist
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0498
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0326
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0640
+public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.Bundle0020
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0054
 public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.EventuallyCongOne
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FockFormMinorProductEqProdHookProducts
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.JointHarmonicsLowestKTypeCoefficientReal
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsNeZeroOfIsVacO
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsThetaDoublingPairDataIdentityCartanStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.StandardLatticeSelfDualAndIntegralIffStabilizesStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DoublingIntegrandIntegrableOfCoefficientConstComStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsSelfDualLatticeVacuumReadingStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaCosetIndicatorReadingSphericalOffModulusStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WeilRepKeepsSphericalOfLatticeStabilizerStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HeckeCharEqOfFinitePartPowerInverseStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SquareNuUnramifiedOffPairPartialLPrimitiveStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CosetVectorOrthogonalTranslateFinitePointStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaLineReadingAdelicNormEqTorusMeanSquareStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaCosetIndicatorReadingNormSqEqVacuumStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CardTransversalCongruenceMulNormEqLocalNormStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LocalIndexLocalNormNormalizingFactorEqPartialStatement
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1067
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0410
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0902
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2858
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2871
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2851
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsSelfDualLatticeVacuumReading
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaCosetIndicatorReadingSphericalOffModulus
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2875
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2862
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CosetVectorOrthogonalTranslateFinitePoint
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2904
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2850
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2865
 
 @[expose] public section
 
@@ -122,7 +122,7 @@ theorem volQ_eq_mass (V : HSp D) (n : ℕ) (ι : Formalism.MainNotions.StandardL
     (h4 : ∀ x, (∃ γ ∈ GQ V, finHom V γ = finHom V (ι x)) ↔ x ∈ ratG D n)
     (h5 : GlobalTheory.IndefiniteRowSideFullHecke.ClassFunctionSumIntegral.IsOpenCompactLevel V K) (h6 : ∀ x, Lev.finE V (ι x) ∈ K ↔ x ∈ intG D n)
     (h7 : Links.IsMeasDef V K μ 𝓕) : (volQ V μ : ℂ) = mass D n := by
-  have h := (GlobalTheory.T.integral_definiteUnitaryQuotient_eq_classSum V n ι (intG D n) K μ 𝓕 h1 h2 h3 h4 h5 h6 h7 (fun _ => 1)
+  have h := (_root_.GlobalTheory.NormDictClassSum.integral_eq_classSum V n ι (intG D n) K μ 𝓕 h1 h2 h3 h4 h5 h6 h7 (fun _ => 1)
     ⟨fun _ _ _ => rfl, fun _ _ _ => rfl, fun _ _ _ => rfl⟩).2.2
   simpa [GlobalTheory.AutomorphicL2Unitary.descend, volQ, mass] using h
 
@@ -213,15 +213,15 @@ theorem vac_eq_sum (hI : GlobalTheory.NormSum.Inp D) (h : IsExact P X r) {𝔪 :
 
 theorem exists_reads_coset (h : IsExact P X r) {𝔪 : Ideal (𝓞 D.host.E)} (hm : 𝔪 ≠ ⊥) (o : ℕ) :
     ∃ φ, Reads X.ψ X.θ X.rkA X.rkB ⊤ δ r (cosetVec P 𝔪 o) φ :=
-  GlobalTheory.T.exists_adelicTheta_reads_curveThetaFunction X.ψ X.θ X.A X.B X.rkA X.rkB ⊤ δ r h.setup (cosetVec P 𝔪 o) (GlobalTheory.FunObj.CosetTheta.cosetVec_mem_TT P hm o)
+  _root_.GlobalTheory.NormExact.ReadEx.exists_reads X.ψ X.θ X.A X.B X.rkA X.rkB ⊤ δ r h.setup (cosetVec P 𝔪 o) (GlobalTheory.FunObj.CosetTheta.cosetVec_mem_TT P hm o)
 
 theorem exists_reads_vacuum (h : IsExact P X r) : ∃ f₀, Reads X.ψ X.θ X.rkA X.rkB ⊤ δ r P.e0 f₀ :=
-  GlobalTheory.T.exists_adelicTheta_reads_curveThetaFunction X.ψ X.θ X.A X.B X.rkA X.rkB ⊤ δ r h.setup P.e0
+  _root_.GlobalTheory.NormExact.ReadEx.exists_reads X.ψ X.θ X.A X.B X.rkA X.rkB ⊤ δ r h.setup P.e0
     (GlobalTheory.NormSum.VacMove.vac_TT (GlobalTheory.InducedType.induced_type D).1 P.crv P.vac.1)
 
 theorem mem_openOff (h : IsExact P X r) {x : Formalism.MainNotions.StandardLatticesGL3.GA D P.a} (hx : x ∈ intG D P.a) (Sf : Finset (FinPl D)) :
     X.ιA x ∈ openOff X.A (stdLat X.A) Sf := fun v _ =>
-  (GlobalTheory.T.standardLattice_selfDual_and_integral_iff_stabilizes X.A P.a (X.ιA x) x h.std.frame.gramA X.rkA (h.std.ptA x)).2.1 hx v (Finset.notMem_empty v)
+  (_root_.GlobalTheory.NormRatio.selfDual_and_mem_intG_iff X.A P.a (X.ιA x) x h.std.frame.gramA X.rkA (h.std.ptA x)).2.1 hx v (Finset.notMem_empty v)
 
 theorem norm_transl (h : IsExact P X r) {𝔪 : Ideal (𝓞 D.host.E)} {Sf : Finset (FinPl D)}
     {R : Finset (Formalism.MainNotions.StandardLatticesGL3.GA D P.a)} (hR : ∀ y ∈ R, y ∈ intG D P.a)
@@ -256,19 +256,19 @@ theorem finite_data (hI : GlobalTheory.NormSum.Inp D) (h : IsExact P X r) {𝔪 
   obtain ⟨R, hR, hRu, hF⟩ := hstd
   refine (exists_reads_coset h hm.1 o).elim fun φ hφ => ?_
   refine (exists_reads_vacuum h).elim fun f₀ hf₀ => ?_
-  refine (GlobalTheory.T.exists_selfDualLattice_vacuumReading X.ψ X.θ X.A X.B X.rkA X.rkB δ r h.setup).elim fun LB ⟨hLB, hz, hsph⟩ => ?_
+  refine (_root_.GlobalTheory.NormRatio.vacLat_of_reads X.ψ X.θ X.A X.B X.rkA X.rkB δ r h.setup).elim fun LB ⟨hLB, hz, hsph⟩ => ?_
   have hs₀ := hsph P.e0 P.vac.1 f₀ hf₀
-  have hsd := (GlobalTheory.T.standardLattice_selfDual_and_integral_iff_stabilizes X.A P.a (X.ιA 1) 1 h.std.frame.gramA X.rkA (h.std.ptA 1)).1
+  have hsd := (_root_.GlobalTheory.NormRatio.selfDual_and_mem_intG_iff X.A P.a (X.ιA 1) 1 h.std.frame.gramA X.rkA (h.std.ptA 1)).1
   have hv := vac_eq_sum hI h hm.1 hF hφ
-  have hsφ := GlobalTheory.T.thetaCosetIndicatorReading_spherical_off_modulus P X r h 𝔪 Sf o hm LB hLB hz f₀ φ hf₀ hs₀ hφ
+  have hsφ := _root_.GlobalTheory.NormRatio.SphCoset.sph P X r h 𝔪 Sf o hm LB hLB hz f₀ φ hf₀ hs₀ hφ
   have hs := isSphOff_sum R (fun y => X.om (X.ιA y, 1) φ) fun y hy =>
-    GlobalTheory.T.weilRep_keeps_spherical_of_lattice_stabilizer X.ψ X.A X.B X.χA X.χB X.om h.weil _ _ hsd hLB Sf _ (mem_openOff h (hR y hy) Sf) φ hφ.1 hsφ
+    _root_.GlobalTheory.SphMove.isSphOff_om X.ψ X.A X.B X.χA X.χB X.om h.weil _ _ hsd hLB Sf _ (mem_openOff h (hR y hy) Sf) φ hφ.1 hsφ
   refine ⟨⟨LB, hLB, by rw [hv]; exact hs⟩, fun ν 𝓕 hν => ?_⟩
-  have horth := GlobalTheory.T.cosetVector_orthogonal_translate_finite_point P X r h 𝔪 Sf o hm LB hLB hz f₀ φ hf₀ hs₀ hφ ho ν 𝓕 hν
+  have horth := _root_.GlobalTheory.NormRatio.ip_om_cosetVec_eq_zero P X r h 𝔪 Sf o hm LB hLB hz f₀ φ hf₀ hs₀ hφ ho ν 𝓕 hν
   refine ⟨?_, fun x hx hx' => by rw [hv]; exact supp_transl h hR hφ.1 hν horth hx hx'⟩
   have h3 := GlobalTheory.T.thetaCosetIndicatorReading_normSq_eq_absNorm_inv_mul_vacuum P X r h 𝔪 Sf o hm LB hLB hz f₀ φ hf₀ hs₀ hφ ν 𝓕 hν
   have h4 := GlobalTheory.T.thetaLineReading_adelicNorm_eq_torusMeanSquare X.ψ X.θ X.A X.B X.rkA X.rkB δ r h.setup LB hLB hz P.e0 P.vac.1 f₀ hf₀ hs₀ ν 𝓕 hν
-  have h5 := GlobalTheory.T.card_transversal_congruence_mul_norm_eq_localNorm D 𝔪 hm.1 hm.2.1 P.a (P.d - P.a) R hR hRu
+  have h5 := _root_.GlobalTheory.NormRatio.card_transversal_mul D 𝔪 hm.1 hm.2.1 P.a (P.d - P.a) R hR hRu
   rw [Nat.add_sub_cancel' P.a_le] at h5
   have h6 := norm_transl h hR hRu hφ.1 hν horth
   exact norm_arith (by rw [hv]; exact h6) h3 h4 P.vac.2.2.1 h5
@@ -324,7 +324,7 @@ theorem isFockVec_fock (hX : IsDict P X) (T : Tup D P.a P.d P.n) :
 theorem wcoef_fock (hX : IsDict P X) (ν : Measure (WO X.A X.B)) (𝓕 : Set (WO X.A X.B)) (T : Tup D P.a P.d P.n)
     (g : GA D X.A) {k : GA D X.A} (hk : k ∈ GinfC X.A) : wcoef X.om ν 𝓕 (X.fock T) (X.fock T) (g * k) =
       ip X.A X.B ν 𝓕 (X.om (g, 1) (X.fock T)) (X.fock T) := by
-  rw [wcoef, om_mul_one, GlobalTheory.T.weilRep_real_fixes_fock_maximal_minors P X hX hX.2.infB k hk T]
+  rw [wcoef, om_mul_one, _root_.GlobalTheory.NormDict.om_real_fock_eq P X hX hX.2.infB k hk T]
 
 end Fock
 

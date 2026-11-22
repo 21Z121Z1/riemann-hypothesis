@@ -1,10 +1,10 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CentreCompat
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsScalarTowerCenAlgebra
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CycleListPermInvariant
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BijectiveIffIsUnitDet
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0007
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0212
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0131
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0005
 public import GroundTheory.Brauer.IsBrauerEquivalentIffNonemptyAlgEquiv
 
 @[expose] public section

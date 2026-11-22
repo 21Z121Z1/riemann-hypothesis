@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.StatementsFnDegRelDeg
-public import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.PIntNumPoint
+public import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.Bundle0004
+public import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.Bundle0017
 
 @[expose] public section
 

@@ -2,8 +2,8 @@ module
 
 public import Mathlib
 public import Development.WeilBound.ThetaLifts.Reductions.WeilPairs.WeilPairData.ImportsAlt
-public import Development.WeilBound.ThetaLifts.Reductions.WeilPairs.WeilPairData.DoubledTargetWeilTransportRestrictFirstFactorImp
-public import Development.WeilBound.ThetaLifts.Reductions.WeilPairs.WeilPairData.ThetaFunctionHeisenbergInvariant
+public import Development.WeilBound.ThetaLifts.Reductions.WeilPairs.WeilPairData.Bundle0002
+public import Development.WeilBound.ThetaLifts.Reductions.WeilPairs.WeilPairData.Bundle0001
 public import Development.WeilBound.ThetaLifts.Reductions.WeilPairs.WeilPairData.StandardTraceAddCharIsStandardCharOfAdmissibleCM
 
 @[expose] public section

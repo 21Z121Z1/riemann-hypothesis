@@ -1,7 +1,6 @@
 module
 
-public import Formalism.FrobeniusContraction.Statement
-public import Formalism.FrobeniusContraction.StatementTop
+public import Formalism.FrobeniusContraction.Bundle0001
 
 @[expose] public section
 

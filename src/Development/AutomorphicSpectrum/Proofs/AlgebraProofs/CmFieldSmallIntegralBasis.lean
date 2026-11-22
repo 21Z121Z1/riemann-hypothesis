@@ -1,13 +1,13 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Definitions.MetricPeriods.GroupDict
+public import Development.AutomorphicSpectrum.Definitions.MetricPeriods.Bundle0004
 public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsSheetCover
 public import GroundTheory.HeightsAndTheta.Heights.FiniteCovolume.StatementsProved
 public import GroundTheory.HeightsAndTheta.Heights.CountingLowerBound.Assembly
-public import GroundTheory.GlobalFields.TateThesis.TraceDualLattice
-public import Development.AbelianVarietyTheory.Proofs.CovolumeBounds.FinrankMulDiscrRpowLeSumSqOfMemTraceDual
-public import Development.AutomorphicSpectrum.Proofs.MetricProofs.ExistsIndependentLeOfDualMin
+public import GroundTheory.GlobalFields.TateThesis.Bundle0005
+public import Development.AbelianVarietyTheory.Proofs.CovolumeBounds.Bundle0004
+public import Development.AutomorphicSpectrum.Proofs.MetricProofs.Bundle0134
 
 @[expose] public section
 

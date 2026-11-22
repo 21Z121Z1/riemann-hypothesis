@@ -3,9 +3,9 @@ module
 public import Mathlib
 public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsFrobGBaseChange
 public import Development.AbelianVarietyTheory.Definitions.Divisors.NotCompactOfMEqOne
-public import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsTjCorrDiagModel
-public import Development.AbelianVarietyTheory.Definitions.Divisors.IsEtPlace
-public import Development.AbelianVarietyTheory.Proofs.HomogeneousIdeals.IsReducedAlgebraOfSmoothOfIsNoetherianRing
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0061
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0016
+public import Development.AbelianVarietyTheory.Proofs.HomogeneousIdeals.Bundle0010
 
 @[expose] public section
 

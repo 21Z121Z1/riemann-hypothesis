@@ -1,9 +1,9 @@
 module
 
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.Rationality.QCoreSt
-public import Formalism.FilteredPoleLength.LocalDescentLevels.LengthBaseChange
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.Rationality.Bundle0003
+public import Formalism.FilteredPoleLength.LocalDescentLevels.Bundle0004
 public import Formalism.LocalToGlobal.ProjectiveLattices.ArchimedeanQuadraticData.TieLDA
-public import Formalism.LocalToGlobal.ProjectiveLattices.ArchimedeanQuadraticData.TieLDB
+public import Formalism.LocalToGlobal.ProjectiveLattices.ArchimedeanQuadraticData.Bundle0001
 
 @[expose] public section
 

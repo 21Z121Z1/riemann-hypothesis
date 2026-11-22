@@ -1,16 +1,17 @@
 module
 
 public import Development.AutomorphicArithmetic.CupPullbacks.ConstCompSingle
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EtaleLocalPropertyCalculusRules
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EtaleSheafSectionsExtAndGlueStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EtaleToSheafifyLocallyBijectiveAndLiftStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ChosenInjectiveResolutionEtaleSheafSectionsExactStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EtaleCochainEvalOnSimplexBasicPropertiesStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsCochainEvEqOfNaturalStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EtaleCochainEvalOnSimplexDifferentialValuesStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.KummerClassOfUnitCocycleNaturalAdditiveStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FirstChernClassTateTwistCocycleUniqueNaturalAddiStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.KummerSequenceEtaleTateTwistStatement
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0305
+public import Mathlib
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0306
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0007
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0006
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0342
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0433
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0340
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0467
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0440
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0454
 
 @[expose] public section
 
@@ -214,12 +215,12 @@ def IsC (q : ℕ) [NeZero q] {E : Spc} (ℓ : ∀ U : Scheme.{0}, Sx E 1 U → (
 
 theorem sep_root (q : ℕ) [NeZero q] {F : Shv (ZMod q)} {U : Scheme.{0}} (hq : IsUnit (q : Γ(U, ⊤))) (u : (Γ(U, ⊤))ˣ)
     (a b : Sec F U) (h : ∀ (V : Scheme.{0}) (g : V ⟶ U) (v : (Γ(V, ⊤))ˣ), v ^ q = um g u → Sec.res g a = Sec.res g b) : a = b :=
-  (GlobalTheory.T.etaleSheafSections_ext_and_glue _ F U).1 a b (loc_mono U _ _ (locRoot q hq u) fun V g ⟨v, hv⟩ => h V g v hv)
+  (_root_.GlobalTheory.EtC.sec_ext_glue _ F U).1 a b (loc_mono U _ _ (locRoot q hq u) fun V g ⟨v, hv⟩ => h V g v hv)
 
 theorem sep_root2 (q : ℕ) [NeZero q] {F : Shv (ZMod q)} {U : Scheme.{0}} (hq : IsUnit (q : Γ(U, ⊤))) (u u' : (Γ(U, ⊤))ˣ)
     (a b : Sec F U) (h : ∀ (V : Scheme.{0}) (g : V ⟶ U) (v v' : (Γ(V, ⊤))ˣ), v ^ q = um g u → v' ^ q = um g u' →
       Sec.res g a = Sec.res g b) : a = b :=
-  (GlobalTheory.T.etaleSheafSections_ext_and_glue _ F U).1 a b (loc_mono U _ _ (loc_and U _ _ (locRoot q hq u) (locRoot q hq u'))
+  (_root_.GlobalTheory.EtC.sec_ext_glue _ F U).1 a b (loc_mono U _ _ (loc_and U _ _ (locRoot q hq u) (locRoot q hq u'))
     fun V g ⟨⟨v, hv⟩, ⟨v', hv'⟩⟩ => h V g v v' hv hv')
 
 theorem ev_res {R : Type} [CommRing R] {E : Spc} {I : Cx R} {n : ℤ} (α : Cochain ((chains R).obj E) I n) (p : ℕ) (s : ℤ)

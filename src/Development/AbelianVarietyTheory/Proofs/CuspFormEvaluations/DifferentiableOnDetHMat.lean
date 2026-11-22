@@ -6,7 +6,7 @@ public import Development.AbelianVarietyTheory.Definitions.ThetaValues.PolyDeriv
 public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.MemIffConjugateNotMem
 public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.DetOfTriangular
 public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.DifferentiableOnLeftInverse
-public import Development.AbelianVarietyTheory.Proofs.TorusHaarMeasure.MajLactRmul
+public import Development.AbelianVarietyTheory.Proofs.TorusHaarMeasure.Bundle0018
 
 @[expose] public section
 

@@ -5,7 +5,7 @@ public import Development.AbelianVarietyTheory.Definitions.Divisors.CTSmallCone
 public import Formalism.SharpRestriction.GlobalSchurBounds.GeneralLinearActions.GenusMassVolumes
 public import Development.AbelianVarietyTheory.Definitions.Foundations.EventuallyNormFinLeOne
 public import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.WeilTensorModels
-public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.ClosureSpanCoefficients
+public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0006
 
 @[expose] public section
 

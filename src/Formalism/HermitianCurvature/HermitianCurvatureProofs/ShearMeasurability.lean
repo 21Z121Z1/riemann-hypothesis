@@ -1,7 +1,7 @@
 module
 
 public import Formalism.HermitianCurvature.FiniteOrderIntersectionInSmooth
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.LowerParabolicCoordinates
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0027
 
 @[expose] public section
 

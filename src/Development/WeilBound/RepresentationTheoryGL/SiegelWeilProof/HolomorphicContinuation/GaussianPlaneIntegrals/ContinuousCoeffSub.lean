@@ -2,7 +2,7 @@ module
 
 public import Development.WeilBound.RepresentationTheoryGL.SiegelWeilProof.HolomorphicContinuation.GaussianPlaneIntegrals.AssemblyAlt
 public import Formalism.RealPlaceAnalysis.InstMeasurableSpaceUJ
-public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.TotalDegreeLinear
+public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0061
 
 @[expose] public section
 

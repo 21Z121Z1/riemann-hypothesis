@@ -2,8 +2,8 @@ module
 
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.ConjugateRepresentations.PartHOfSs
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.ConjugateRepresentations.CuspidalSupport.HasCapOneFn
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.ConjSep
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.LiteratureResults.ClozelConjCOf
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.Bundle0004
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.LiteratureResults.Bundle0001
 
 @[expose] public section
 

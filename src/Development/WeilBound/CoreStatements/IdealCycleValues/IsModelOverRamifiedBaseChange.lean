@@ -1,11 +1,11 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsPreFamilyOfLatticeFamilyTwo
-public import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.StatementsFlagIndependence
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.Bundle0011
+public import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.Bundle0017
 public import GroundTheory.HeightsAndTheta.Heights.FieldsOfNumbers.PIntNumBaseChange
-public import Development.WeilBound.CoreStatements.IdealCycleValues.FlatColon
-public import Development.WeilBound.CoreStatements.IdealCycleValues.OfIdealCycleNe
+public import Development.WeilBound.CoreStatements.IdealCycleValues.Bundle0001
+public import Development.WeilBound.CoreStatements.IdealCycleValues.Bundle0004
 
 @[expose] public section
 

@@ -1,8 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Divisors.DivisorSupportCondition
-public import Development.AbelianVarietyTheory.Definitions.Divisors.IdTower
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0007
 
 @[expose] public section
 

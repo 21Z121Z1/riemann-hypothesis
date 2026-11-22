@@ -5,7 +5,7 @@ public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership
 public import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.IntegralGLSuccEmbeddingMemParahoricTimesPrincipa
 public import Formalism.LocalToGlobal.Columns.LevGCount
 public import Formalism.LocalToGlobal.Columns.RowFormsLemmas
-public import Formalism.LocalToGlobal.Columns.ColFormsLemmas
+public import Formalism.LocalToGlobal.Columns.Bundle0004
 
 @[expose] public section
 

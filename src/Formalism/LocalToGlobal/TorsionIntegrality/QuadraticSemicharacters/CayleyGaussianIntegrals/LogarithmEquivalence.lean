@@ -1,7 +1,6 @@
 module
 
-public import Formalism.LocalToGlobal.TorsionIntegrality.QuadraticSemicharacters.SemiCharBasic
-public import Formalism.LocalToGlobal.TorsionIntegrality.QuadraticSemicharacters.LineTransport
+public import Formalism.LocalToGlobal.TorsionIntegrality.QuadraticSemicharacters.Bundle0001
 
 @[expose] public section
 

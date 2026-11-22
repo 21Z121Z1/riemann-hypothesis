@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import GroundTheory.FunctionField.PlaceAbove
+public import GroundTheory.FunctionField.Bundle0001
 
 @[expose] public section
 

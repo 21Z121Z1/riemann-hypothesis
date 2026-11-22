@@ -1,7 +1,6 @@
 module
 
-public import Development.AutomorphicArithmetic.CyclotomicBounds.ClassNumberBounds.IdealCounting.ClassA
-public import Development.AutomorphicArithmetic.CyclotomicBounds.ClassNumberBounds.IdealCounting.ClassB
+public import Development.AutomorphicArithmetic.CyclotomicBounds.ClassNumberBounds.IdealCounting.Bundle0001
 
 @[expose] public section
 

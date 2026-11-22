@@ -2,15 +2,14 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.ThetaValues.ThConst
-public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.ThExprUniqOfChartIndep2
+public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0007
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.SecBaseChangeAnySt
 public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.FBIdAd
 public import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.ExistsAdjReadingOne
-public import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.JetRdMulInvPow
-public import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.CorrOfJetsOfAnalyticFrameProducts
-public import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.AppLESpMapJetPt
-public import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.JetReadingLinearSubstitutionPoints
-public import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.CmFrameJetPointsAreExponentialJets
+public import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.Bundle0021
+public import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.Bundle0024
+public import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.Bundle0019
+public import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.Bundle0023
 
 @[expose] public section
 

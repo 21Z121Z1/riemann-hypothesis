@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.PSnapperHyperplane
-public import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.PSnapperDevissage
+public import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.Bundle0029
+public import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.Bundle0028
 
 @[expose] public section
 

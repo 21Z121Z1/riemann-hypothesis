@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import GroundTheory.HeightsAndTheta.Heights.HeightKernels.StatementsDualStackedExcReduced
-public import GroundTheory.HeightsAndTheta.Heights.HeightKernels.PDualStackedGraphHorizontal
-public import GroundTheory.HeightsAndTheta.Heights.HeightKernels.PDualArithVar
+public import GroundTheory.HeightsAndTheta.Heights.HeightKernels.Bundle0036
+public import GroundTheory.HeightsAndTheta.Heights.HeightKernels.Bundle0047
+public import GroundTheory.HeightsAndTheta.Heights.HeightKernels.Bundle0024
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArithmeticIntersection.MultihomogeneousIdeals.MemDivSuppOfDivCycleNeZero
 
 @[expose] public section

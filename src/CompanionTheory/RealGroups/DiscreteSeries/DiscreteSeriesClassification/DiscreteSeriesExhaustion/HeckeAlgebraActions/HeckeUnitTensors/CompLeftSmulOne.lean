@@ -45,11 +45,11 @@ theorem compLeft_zero' : (0 : Module.End ℂ X.V).compLeft (Fin (m + 1)) = 0 := 
   ext f d; simp
 
 theorem ct_omg (hS : ScalChar X χ) : qdet (tensE X) (omg χ s) = minorOp X (omg χ s - 1) := by
-  rw [GlobalTheory.T.HeckeRankOne m X, qdet_omg hS, compLeft_zero', zero_add]
+  rw [_root_.GlobalTheory.CompanionTheory.RgExhHecke.rankOne m X, qdet_omg hS, compLeft_zero', zero_add]
 
 theorem om_ct (hS : ScalChar X χ) (f : Fin (m + 1) → X.V) :
     om X (qdet (tensE X) (omg χ s) f) = (χ s - cn (m + 1)) • qdet (tensE X) (omg χ s) f := by
-  have h := LinearMap.congr_fun (GlobalTheory.T.OmegaMinor m X (omg χ s)) f
+  have h := LinearMap.congr_fun (_root_.GlobalTheory.CompanionTheory.HeckeCapelli.omMinor m X (omg χ s)) f
   rw [qdet_omg hS, compLeft_zero'] at h
   simp only [Module.End.mul_apply, LinearMap.add_apply, LinearMap.smul_apply, Module.End.one_apply,
     LinearMap.zero_apply] at h
@@ -137,7 +137,7 @@ theorem ptr_Pr (hS : ScalChar X χ) (v : X.V) :
     · intro b _ hb; rw [Pi.single_eq_of_ne hb, map_zero, smul_zero]
     · intro h; exact absurd (mem_univ c) h
   simp only [e, ← Finset.smul_sum]
-  have hp := GlobalTheory.T.PrincipalSum m X.V X.E X.gl (omg χ s)
+  have hp := _root_.GlobalTheory.CompanionTheory.PrinSumP.prinSum m X.V X.E X.gl (omg χ s)
   rw [← LinearMap.sum_apply, hp, LinearMap.sub_apply, qdet_omg hS, LinearMap.zero_apply, zero_sub,
     qdet_scal hS, show omg χ s - 1 - cn (m + 1) = -χ s - 1 by rw [omg]; ring, LinearMap.smul_apply,
     Module.End.one_apply, smul_neg, smul_smul, ← neg_smul]

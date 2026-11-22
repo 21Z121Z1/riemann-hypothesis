@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Formalism.LocalToGlobal.IndefiniteReal.AllPartsTransfer
+public import Formalism.LocalToGlobal.IndefiniteReal.Bundle0002
 
 @[expose] public section
 

@@ -1,9 +1,9 @@
 module
 
-public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.DiscreteSeriesExistence.RightDerivativeToL2
-public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.HighestWeights.Exists
-public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.HighestWeights.SingleMulJmComm
-public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.HighestWeights.Weight
+public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.DiscreteSeriesExistence.Bundle0009
+public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.HighestWeights.Bundle0005
+public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.HighestWeights.Bundle0002
+public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.HighestWeights.Bundle0003
 public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.DiscreteSeriesExistence.DatumA
 
 @[expose] public section

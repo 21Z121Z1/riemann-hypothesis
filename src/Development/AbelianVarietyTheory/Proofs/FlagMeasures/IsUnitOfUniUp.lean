@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.IsMirClass
+public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.Bundle0007
 
 @[expose] public section
 

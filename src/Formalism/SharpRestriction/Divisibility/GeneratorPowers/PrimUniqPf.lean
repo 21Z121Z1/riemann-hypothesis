@@ -1,7 +1,7 @@
 module
 
-public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.PrimUniqSt
-public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.GermFunPf
+public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0005
+public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0007
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.DiscreteValuationRings.LBTransport
 
 @[expose] public section

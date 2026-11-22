@@ -1,15 +1,16 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.UnramifiedCharacter
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SplitPlaceWeilRepLatticeVacuumCharacter
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.WeilOperatorLatticeStabiliserFixesVacuumNonsplit
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WeilDatumFixesVacuumNonSplitPlaceUnramifiedStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MemLocalHomLatticeOfKeepsCompletedLattices
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsIsDetAtUnram
+public import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.Bundle0007
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0168
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0335
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WeilDatumFixesVacuumNonSplitPlaceUnramified
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0024
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0784
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0407
 public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsUnramifiedHeckeCharHalfExponentRestrictQua
-public import Development.AbelianVarietyTheory.Proofs.HeightProofs.MemAdelicLatticeIffLocalSelfDualCompletion
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsAdeleRingTensorEquivInfiniteProdFinite
+public import Development.AbelianVarietyTheory.Proofs.HeightProofs.Bundle0013
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0005
 
 @[expose] public section
 
@@ -266,7 +267,7 @@ theorem vacFixedAt (D : D7) (v : HeightOneSpectrum (𝓞 D.host.F)) : VacFixedAt
       Circle.coe_one, one_smul] at key
   · have hv : NonSplitAt D v ε := ⟨hε, hsp⟩
     obtain ⟨η, e1, e2, e3, e4⟩ := GlobalTheory.Mem.EtaTilde.exists_etaTilde D
-    refine GlobalTheory.T.weilDatum_fixes_vacuum_nonSplitPlace_unramified D ψ hW.std S T LS LT hS hT χS χT om ⟨η, e1, e4, e3, e2⟩ hW v ε hv uS' uT' k k' sk sk'
+    refine _root_.GlobalTheory.VacInert.fixesVacAt_of_unram D ψ hW.std S T LS LT hS hT χS χT om ⟨η, e1, e4, e3, e2⟩ hW v ε hv uS' uT' k k' sk sk'
       (GlobalTheory.LocalLatStab.mem_latO_place_iff_actO D S T LS LT hS hT v ε hε k k' hk.2.2 hk'.2.2) f hf fun u hu => ?_
     obtain ⟨a, ha, ha2⟩ := GlobalTheory.FinWeilO.exists_half_of_nonSplit hv
     have h1 : 2 • (a • u) = u := by

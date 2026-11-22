@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import CompanionTheory.RealGroups.DiscreteSeries.DiscreteSeriesClassification.DiscreteSeriesExhaustion.HeckeAlgebraActions.BackStable
-public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.QuantumDeterminantEquality
+public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.Bundle0007
 
 @[expose] public section
 

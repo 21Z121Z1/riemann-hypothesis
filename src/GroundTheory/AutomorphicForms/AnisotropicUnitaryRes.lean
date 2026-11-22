@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import GroundTheory.AutomorphicForms.AnisotropicRestrict
-public import GroundTheory.AutomorphicForms.AdelicUnitaryGroups
+public import GroundTheory.AutomorphicForms.Bundle0001
+public import GroundTheory.AutomorphicForms.Bundle0018
 
 @[expose] public section
 

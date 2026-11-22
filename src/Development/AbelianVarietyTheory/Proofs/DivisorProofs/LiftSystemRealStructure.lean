@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsTjCorrDiagModel
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0061
 
 @[expose] public section
 

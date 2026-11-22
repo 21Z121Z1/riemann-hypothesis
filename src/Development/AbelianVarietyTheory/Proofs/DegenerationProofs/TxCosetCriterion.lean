@@ -2,11 +2,11 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.Degenerations.SepticCharacterInjective
-public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsTorsionTwistTsumNormGe
+public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.Bundle0007
 public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.EqOfIsMinInClassTwoOfSameClassFour
-public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ThetaConstantTermRepresentativeDependenceStatement
-public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.NormRepGeneratorsAndThetaSeriesTermStatement
-public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.DegenerationDataTorsionStructureAlgClosedStatement
+public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.Bundle0043
+public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.Bundle0034
+public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.DegenerationDataTorsionStructureAlgClosed
 
 @[expose] public section
 
@@ -60,7 +60,7 @@ variable {C : Type} [NontriviallyNormedField C] [IsUltrametricDist C] [CompleteS
 omit [IsUltrametricDist C] [CompleteSpace C] [IsAlgClosed C] in
 theorem norm_txT_le (hI : N.Int q) {m : ℕ} (hm : Odd m) (p : N.QT (m ^ 2)) (χ : N.X) :
     ‖N.txT m p χ‖ ≤ Real.exp (-(q (p.1.1.toAdd + m • χ) / (m : ℝ) ^ 2)) := by
-  rw [(GlobalTheory.T.norm_rep_generators_and_thetaSeriesTerm C N q hI).2 m hm p χ]
+  rw [(_root_.GlobalTheory.Ex.norm_QT_s_and_norm_txT C N q hI).2 m hm p χ]
   exact mul_le_of_le_one_right (Real.exp_pos _).le (hI.th _)
 
 
@@ -76,7 +76,7 @@ theorem norm_tx_le (hI : N.Int q) {m : ℕ} (hm : Odd m) (p : N.QT (m ^ 2)) {χ�
 omit [IsUltrametricDist C] [CompleteSpace C] in
 theorem exists_lift {n g : ℕ} (hn : (n : C) ≠ 0) (hT : N.Tors n g) (j : ℕ) {t : N.A} (ht : t ^ n = 1) :
     ∃ γ : N.Gt, γ ^ n ^ (j + 1) = 1 ∧ γ.b ^ n ^ j = t := by
-  obtain ⟨h1, h2, -⟩ := GlobalTheory.T.degenerationData_torsion_structure_algClosed C N n g hn hT j
+  obtain ⟨h1, h2, -⟩ := _root_.GlobalTheory.Ex.QStr.qStructure C N n g hn hT j
   have hn0 : 0 < n := Nat.pos_of_ne_zero (by rintro rfl; simp at hn)
   obtain ⟨γ₀, rfl⟩ := h1 t
   obtain ⟨s, hs⟩ := (N.exists_tor_iff (γ₀ ^ n)).2 (by rw [NumD.Gt.pow_b, ht])
@@ -121,7 +121,7 @@ theorem exists_norm_tx_ge (hI : N.Int q) {n g : ℕ} (hp : n.Prime) (ho : Odd n)
     (Real.exp_pos _) (by simpa using Real.exp_lt_exp.2 (show (-1 : ℝ) < 0 by norm_num))
     ((tendsto_class hI.pos _ hm0.ne').atTop_div_const hsq)
     (fun χ => by rw [hr, ← hy]; exact norm_txT_le hI hm p₁ χ) χ₀
-    (by rw [hr, (GlobalTheory.T.norm_rep_generators_and_thetaSeriesTerm C N q hI).2 _ hm p₁ χ₀, hy, hb, NumD.Gt.mul_b, mul_pow, hγb, ← mul_assoc, hth,
+    (by rw [hr, (_root_.GlobalTheory.Ex.norm_QT_s_and_norm_txT C N q hI).2 _ hm p₁ χ₀, hy, hb, NumD.Gt.mul_b, mul_pow, hγb, ← mul_assoc, hth,
           mul_one])
     (fun μ hμ => by
       refine div_lt_div_of_pos_right ?_ hsq
@@ -143,7 +143,7 @@ theorem exists_norm_tx_ge (hI : N.Int q) {n g : ℕ} (hp : n.Prime) (ho : Odd n)
   have hterm : ∀ χ, N.txT (n ^ j) p₂ χ =
       ((s' p₁.1.1 : C) ^ (((n ^ j) ^ 2 - 1) / 2) * (s' p₁.1.1 : C)) *
         (N.txT (n ^ j) p₁ χ * ((s' ^ n ^ j) (Multiplicative.ofAdd χ) : C)) := fun χ => by
-    rw [(GlobalTheory.T.thetaConstantTerm_representative_dependence C N (n ^ j) hm p₁ p₂ χ).2 s' ((mul_one _).trans hy.symm) (mul_assoc _ _ _).symm,
+    rw [(_root_.GlobalTheory.Ex.txT_shift C N (n ^ j) hm p₁ p₂ χ).2 s' ((mul_one _).trans hy.symm) (mul_assoc _ _ _).symm,
       ofAdd_add, ofAdd_nsmul, map_mul, map_pow, ofAdd_toAdd, MonoidHom.pow_apply]
     push_cast
     ring

@@ -1,13 +1,13 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsTjCorrDiagModel
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsEtLevOver
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0061
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0620
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EpsZeroPtEpsScalePt
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CardTorsionBySetPowOfDivisibleNumberField
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsPowEqOfIsAlgClosed
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RemainderTermSummable
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AbelianSchemeCardKernelEqNormPowStatement
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0007
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle3101
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle3117
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle3133
 
 @[expose] public section
 

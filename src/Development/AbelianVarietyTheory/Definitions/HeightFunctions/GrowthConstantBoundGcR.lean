@@ -1,16 +1,14 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Jets.ExistsSecTieFOfTies
-public import Development.AbelianVarietyTheory.Definitions.ThetaValues.IsBlockProd
-public import Development.AbelianVarietyTheory.Definitions.ThetaValues.SWEqSOf
-public import Formalism.SharpRestriction.GenusPolyhedralBounds.RelativeIndexClassSets.AdmissibleModuleIffLatticeQuotients
-public import Formalism.SharpRestriction.GenusPolyhedralBounds.RelativeIndexClassSets.TheoremZeroOfReducedInputs
-public import Formalism.SharpRestriction.GenusPolyhedralBounds.RelativeIndexClassSets.CombBound4Of
-public import Formalism.LocalToGlobal.ProjectiveLattices.SupNDataOfNonneg
-public import Formalism.LocalToGlobal.ProjectiveLattices.EtArch
+public import Development.AbelianVarietyTheory.Definitions.Jets.Bundle0003
+public import Development.AbelianVarietyTheory.Definitions.ThetaValues.Bundle0001
+public import Development.AbelianVarietyTheory.Definitions.ThetaValues.Bundle0002
+public import Formalism.SharpRestriction.GenusPolyhedralBounds.RelativeIndexClassSets.Bundle0003
+public import Formalism.SharpRestriction.GenusPolyhedralBounds.RelativeIndexClassSets.Bundle0007
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0037
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0035
 public import Formalism.LocalToGlobal.ProjectiveLattices.CompHt
-public import Formalism.LocalToGlobal.ProjectiveLattices.RegXInst
 
 @[expose] public section
 

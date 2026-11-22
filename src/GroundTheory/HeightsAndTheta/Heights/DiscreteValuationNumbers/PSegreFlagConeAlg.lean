@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.StatementsSegreFlagConeAlg
+public import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.Bundle0054
 public import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.PPairConeAlg
-public import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.PSegreFlagClosureModel
+public import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.Bundle0059
 
 @[expose] public section
 

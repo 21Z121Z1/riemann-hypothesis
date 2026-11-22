@@ -4,10 +4,10 @@ public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.Divisors.AxesVanishingStructureSheafDegOne
 public import Development.AbelianVarietyTheory.Definitions.AbelianSchemeLaws.IsScalarTowerOfAlgebraMapEq
 public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.AbelianHodgeDeRham
-public import Development.AbelianVarietyTheory.Definitions.Divisors.HopfLaurent
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0010
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.QuasiCompactZeroSec
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsUniqueRingHomOfSqZeroExtPointAffineStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsTranslationSqZeroPointsUnitToPointStatement
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1239
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1220
 
 @[expose] public section
 
@@ -294,7 +294,7 @@ theorem exists_globForm_isBaseChange : ∀ (R : Type) [CommRing R] (A : Over (Sp
     [AddCommGroup W] [Module R W], TanRep A W → ∃ j : W →ₗ[R] GlobForm A.hom, ∀ T : AffOp A.left,
     ∃ e : W →ₗ[R] Ω[(OAff A.hom).obj T⁄R], (∀ w, e w = (j w).1 T) ∧ IsBaseChange ((OAff A.hom).obj T) e := by
   intro R _ A _ W _ _ tr
-  obtain ⟨τ, hb, hn⟩ := GlobalTheory.T.exists_translation_sqZeroPoints_unit_to_point R A
+  obtain ⟨τ, hb, hn⟩ := _root_.GlobalTheory.AbTan.exists_translation R A
   let j : W →ₗ[R] GlobForm A.hom :=
     { toFun := fun w ↦ ⟨fun T ↦ eU tr τ T.unop w, fun T T' a ↦ eU_nat tr hb hn a w⟩
       map_add' := fun w w' ↦ Subtype.ext (funext fun T ↦ map_add (eU tr τ T.unop) w w')

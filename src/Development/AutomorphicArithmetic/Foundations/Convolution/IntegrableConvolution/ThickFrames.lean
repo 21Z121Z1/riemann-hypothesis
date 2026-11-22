@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Development.AutomorphicArithmetic.Foundations.Convolution.GeneralizedMeasures.LocHeckeInert
-public import Development.AutomorphicArithmetic.Foundations.Convolution.IntegrableConvolution.TensSmooth
+public import Development.AutomorphicArithmetic.Foundations.Convolution.IntegrableConvolution.Bundle0004
 
 @[expose] public section
 

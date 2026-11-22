@@ -1,12 +1,11 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.BlockTheory.ExistenceTori.BlockPolyLevelMove
-public import Development.AbelianVarietyTheory.BlockTheory.ExistenceTori.BlockProductLattices
+public import Development.AbelianVarietyTheory.BlockTheory.ExistenceTori.Bundle0004
 public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsIndexIdeal
 public import Formalism.LocalToGlobal.ProjectiveLattices.ThShort
-public import Development.AbelianVarietyTheory.Counterexamples.LevelGroupExamples.ZeroNotAdmissibleOfRankPos
-public import Development.AbelianVarietyTheory.Counterexamples.LevelGroupExamples.BaseClassMove
+public import Development.AbelianVarietyTheory.Counterexamples.LevelGroupExamples.Bundle0002
+public import Development.AbelianVarietyTheory.Counterexamples.LevelGroupExamples.Bundle0003
 
 @[expose] public section
 

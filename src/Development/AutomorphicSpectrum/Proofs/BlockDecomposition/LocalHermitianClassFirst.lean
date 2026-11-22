@@ -1,14 +1,14 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CTUnitsLeft
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NonsplitCentraliserNormElement
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1286
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1352
 public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.DetGramRatOneNeZero
 public import Development.WeilBound.CoreStatements.AutomorphicKernels.IsobaricBaseChange.IntegralCoefficientBaseChange.UnitaryBaseChangeCharacters.UnitaryBaseChangeLemmas.ToComplBijective
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GramKernelSignNonsplitBaseChangeEq
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HermitianFormSignatureRealisation
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FinprodNonsplitSignTotallyPositiveEqOne
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsCyclicVectorOfSeparable
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1339
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1392
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1337
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0320
 
 @[expose] public section
 

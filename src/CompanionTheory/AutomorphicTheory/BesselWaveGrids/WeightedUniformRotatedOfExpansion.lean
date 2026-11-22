@@ -1,6 +1,6 @@
 module
 
-public import CompanionTheory.AutomorphicTheory.BesselWaveGrids.TiedNum
+public import CompanionTheory.AutomorphicTheory.BesselWaveGrids.Bundle0004
 public import CompanionTheory.AutomorphicTheory.BesselWaveGrids.NormalizedMeasureScaling
 public import CompanionTheory.AutomorphicTheory.BesselWaveGrids.PowFourLeRpowNineHalves
 public import Formalism.SharpRestriction.CuspSpanNormBounds.TheoremBConstants

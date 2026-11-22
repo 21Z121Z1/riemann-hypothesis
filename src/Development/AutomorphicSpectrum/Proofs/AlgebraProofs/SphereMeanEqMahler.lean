@@ -2,10 +2,10 @@ module
 
 public import Mathlib
 public import Formalism.LocalToGlobal.IndefiniteForms.IndefiniteTree.RealCubicMeans.LogMeanShares.LogMeanStatements.HSClaim
-public import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.OnbMat
+public import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.Bundle0002
 public import Formalism.MeanHeightDescent.CombinedAverageDegreeBound
 public import Formalism.MonomialMeanResidues.FilteredDegree
-public import ReciprocityTheory.L2DbarEstimates.PlurisubharmonicCharts.GROWCountStatement
+public import ReciprocityTheory.L2DbarEstimates.PlurisubharmonicCharts.Bundle0001
 public import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.Statements
 
 @[expose] public section

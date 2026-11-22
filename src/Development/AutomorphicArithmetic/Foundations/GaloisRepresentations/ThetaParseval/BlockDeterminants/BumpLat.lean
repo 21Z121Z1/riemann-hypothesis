@@ -2,7 +2,7 @@ module
 
 public import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.ThetaParseval.SchurStep
 public import Development.WeilBound.CoreStatements.LocalThetaKernels.Locrep
-public import Development.WeilBound.CoreStatements.LocalThetaKernels.IwasAd
+public import Development.WeilBound.CoreStatements.LocalThetaKernels.Bundle0001
 
 @[expose] public section
 

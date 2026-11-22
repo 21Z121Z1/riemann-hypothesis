@@ -1,11 +1,11 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FactorResIEqResS
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.CompletedLatticeEqAdelicCompletionAndGram
-public import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.IsPrincipalIdealRingLoc
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0809
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0070
+public import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.Bundle0034
 public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsRootNear
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NatMulIntegral
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0086
 
 @[expose] public section
 

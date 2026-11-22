@@ -1,6 +1,6 @@
 module
 
-public import Formalism.LocalToGlobal.ProjectiveLattices.UnifGam
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0042
 
 @[expose] public section
 

@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.HermiteNormalForms.Gramlow
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.HermiteNormalForms.Grampsd
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.HermiteNormalForms.Bundle0001
 
 @[expose] public section
 

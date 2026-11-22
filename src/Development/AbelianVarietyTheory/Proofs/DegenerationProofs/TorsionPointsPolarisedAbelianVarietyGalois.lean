@@ -7,9 +7,10 @@ public import Development.AbelianVarietyTheory.Definitions.Degenerations.OfDeriv
 public import Development.AbelianVarietyTheory.Definitions.Degenerations.PlOrdSomeOfAssociated
 public import Development.AbelianVarietyTheory.Statements.SemistableTorsion.SemistableFin
 public import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.WeilIsAlternatingSkewNatural
-public import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.AbelianSchemeLawsUnconditionalStatement
-public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsFieldOfValuesStatement
-public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ExistsProjectiveRep
+public import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.Bundle0029
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.SecBaseChangeAnySt
+public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.Bundle0019
+public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.Bundle0058
 
 @[expose] public section
 
@@ -96,7 +97,7 @@ theorem exists_field [CharZero K] [IsAlgClosure K Ω] (P : Out.PolAV (Sp K)) (l 
         (∀ τ : Ω ≃ₐ[K] Ω, τ ∈ L.fixingSubgroup ↔ tw τ ≫ x.1 = x.1) ∧
         ∀ L' : IntermediateField K Ω, L ≤ L' → ∃ y : Sp L' ⟶ P.A.left, spMap (algebraMap L' Ω) ≫ y = x.1.left := by
     intro x
-    obtain ⟨E, h1, h2, h3⟩ := GlobalTheory.T.exists_field_of_definition_of_point P.A.left Ω x.1.left
+    obtain ⟨E, h1, h2, h3⟩ := _root_.GlobalTheory.SS.exists_fieldOfValues P.A.left Ω x.1.left
     obtain ⟨L, hL, rfl⟩ := h3 K P.A.hom inferInstance (Over.w x.1) inferInstance
     refine ⟨L, hL, fun τ => ?_, fun L' hL' => (h2 L' (algebraMap L' Ω)).1 fun c hc => ⟨⟨c, hL' hc⟩, rfl⟩⟩
     have e : spMap (RingHom.id Ω) ≫ x.1.left = x.1.left := by

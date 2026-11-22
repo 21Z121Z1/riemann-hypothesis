@@ -5,11 +5,11 @@ public import Development.AbelianVarietyTheory.Definitions.Divisors.OfFactorE
 public import Development.AbelianVarietyTheory.Definitions.Divisors.IsProjOverWeierstrass
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.UniformisationConclusion
 public import Development.AbelianVarietyTheory.Definitions.Degenerations.AdmissibleBaseOfCompleteDvr
-public import Development.AbelianVarietyTheory.Proofs.CharacterTheory.W8AddTransposeEqE8
+public import Development.AbelianVarietyTheory.Proofs.CharacterTheory.Bundle0002
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AlgIdemBinv
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RosVec
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsStronglyTrivialCubicalThetaFinsuppTensor
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TransportedGeneratorUniqueGlobalFunctionsBase
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2392
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2459
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2484
 
 @[expose] public section
 

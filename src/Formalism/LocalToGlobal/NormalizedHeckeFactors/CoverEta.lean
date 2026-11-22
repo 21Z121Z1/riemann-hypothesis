@@ -1,7 +1,7 @@
 module
 
-public import Formalism.LocalToGlobal.NormalizedHeckeFactors.CoverThm
-public import Formalism.LocalToGlobal.NormalizedHeckeFactors.CoverLen
+public import Formalism.LocalToGlobal.NormalizedHeckeFactors.Bundle0004
+public import Formalism.LocalToGlobal.NormalizedHeckeFactors.Bundle0001
 
 @[expose] public section
 

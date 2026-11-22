@@ -2,10 +2,10 @@ module
 
 public import Mathlib
 public import Formalism.LocalToGlobal.GlobalTheory.GL4.PColStd
-public import Formalism.LocalToGlobal.GlobalTheory.GL4.KronDetScalar
-public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.StandardSlopeBound.Inhabit
-public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.StandardSlopeBound.GramMatrixDuality
-public import Formalism.LocalToGlobal.Columns.CoefficientsModP
+public import Formalism.LocalToGlobal.GlobalTheory.GL4.Bundle0002
+public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.StandardSlopeBound.Bundle0002
+public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.StandardSlopeBound.Bundle0001
+public import Formalism.LocalToGlobal.Columns.Bundle0011
 
 @[expose] public section
 

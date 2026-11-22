@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 import all Mathlib.MeasureTheory.Constructions.Pi
-public import Development.AbelianVarietyTheory.Statements.CuspFrameWeights.ConvolutionSmoothL2
+public import Development.AbelianVarietyTheory.Statements.CuspFrameWeights.Bundle0001
 public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsLimitOfChart
 public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.EventuallyBallSubset
 

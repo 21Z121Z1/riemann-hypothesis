@@ -5,7 +5,7 @@ public import Formalism.LocalToGlobal.Columns.AbelianHostFieldConditions
 public import Formalism.LocalToGlobal.Columns.RowForms
 public import Formalism.LocalToGlobal.NormalizedHeckeFactors.TypesDefs
 public import Formalism.LocalToGlobal.Divisibility.GoodPartHermitianSpec
-public import Formalism.LocalToGlobal.Columns.GoodXgFin
+public import Formalism.LocalToGlobal.Columns.Bundle0001
 public import Formalism.LocalToGlobal.Divisibility.ProjLemmas
 
 @[expose] public section

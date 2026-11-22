@@ -1,7 +1,7 @@
 module
 
-public import Formalism.PieriBlockIdeals.StatementLPR
-public import Formalism.PieriBlockIdeals.PieriColumnMinors.PieriGenerated
+public import Formalism.PieriBlockIdeals.Bundle0008
+public import Formalism.PieriBlockIdeals.PieriColumnMinors.Bundle0007
 public import Formalism.PieriBlockIdeals.PieriColumnMinors.HighestWeightMemWZero
 
 @[expose] public section

@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.BetaModuloX.Skeleton
-public import Formalism.HermitianLattices.HermitianLatticesProofs.DualBasic
+public import Formalism.HermitianLattices.HermitianLatticesProofs.Bundle0001
 public import Formalism.HermitianLattices.HermitianLatticesProofs.DualLattice
 public import Lemmata.GeneralBFactThirdSide.Imports
 

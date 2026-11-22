@@ -1,7 +1,7 @@
 module
 
 public import Formalism.LocalToGlobal.ExponentGrids.ScaledCoordinatesValuationLemma
-public import Formalism.TowerValuationBounds.TowerValuationBoundIndexed
+public import Formalism.TowerValuationBounds.Bundle0001
 
 @[expose] public section
 

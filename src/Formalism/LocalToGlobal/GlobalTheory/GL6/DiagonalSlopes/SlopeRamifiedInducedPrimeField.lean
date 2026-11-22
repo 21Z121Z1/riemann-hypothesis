@@ -2,7 +2,7 @@ module
 
 public import Formalism.LocalToGlobal.Columns.SliceIntegralDeltaNeBot
 public import Formalism.LocalToGlobal.GlobalTheory.GL6.DiagonalSlopes.CharacterFiniteLevelZeroOfForms
-public import Formalism.LocalToGlobal.GlobalTheory.GL6.RamifiedLatticePropsOfModel
+public import Formalism.LocalToGlobal.GlobalTheory.GL6.Bundle0003
 public import Formalism.LocalToGlobal.GlobalTheory.GL6.DiagonalSlopes.GroupActionMulSingleEqDilation
 
 @[expose] public section

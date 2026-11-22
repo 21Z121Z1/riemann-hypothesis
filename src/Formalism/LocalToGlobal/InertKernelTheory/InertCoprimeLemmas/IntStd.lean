@@ -1,6 +1,6 @@
 module
 
-public import Formalism.LocalToGlobal.InertKernelTheory.DefsInt
+public import Formalism.LocalToGlobal.InertKernelTheory.Bundle0007
 public import Formalism.LocalToGlobal.GlobalTheory.GL3.PIopIso
 public import Formalism.LocalToGlobal.GlobalTheory.GL3.PHfGen
 public import Formalism.LocalToGlobal.GlobalTheory.GL3.PThIndep

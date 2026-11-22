@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Formalism.PadicSubsetSums.CentralIdempotents.GaloisConjCentralIdempotent
-public import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.CuspidalProductMultiplicity
+public import Formalism.PadicSubsetSums.CentralIdempotents.Bundle0002
+public import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.Bundle0008
 
 @[expose] public section
 

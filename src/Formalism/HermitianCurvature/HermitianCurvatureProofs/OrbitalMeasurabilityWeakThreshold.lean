@@ -3,9 +3,9 @@ module
 public import Formalism.HermitianCurvature.StatementJF
 public import Formalism.HermitianCurvature.HermitianCurvatureProofs.LUFactorOrbitBounds
 public import Formalism.HermitianCurvature.HermitianCurvatureProofs.BesselDomainMeasurable
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.SmoothWordsAll
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.SandwichRhoAction
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.WordIntegralScaling
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0048
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0032
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0031
 
 @[expose] public section
 

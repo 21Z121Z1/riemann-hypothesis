@@ -1,9 +1,8 @@
 module
 
 public import Formalism.YangianSpanCharacter.StatementF
-public import Formalism.YangianSpanCharacter.StatementY
-public import Formalism.HermitianCurvature.StatementR
-public import Formalism.HermitianCurvature.StatementI
+public import Formalism.YangianSpanCharacter.Bundle0001
+public import Formalism.HermitianCurvature.Bundle0001
 public import Formalism.HermitianCurvature.StatementWd
 
 @[expose] public section

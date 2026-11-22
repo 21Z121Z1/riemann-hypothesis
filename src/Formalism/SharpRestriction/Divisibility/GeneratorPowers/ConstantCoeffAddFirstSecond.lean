@@ -1,7 +1,7 @@
 module
 
 public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.ConstantCoeffAddSecondThird
-public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.MulGenScaleRight
+public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0016
 public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.JetSubstPSTrunc
 
 @[expose] public section

@@ -1,11 +1,11 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.UnderTie
-public import Formalism.LocalToGlobal.GlobalTheory.BlockActions.ClsCrdEqGlob
+public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.Bundle0023
+public import Formalism.LocalToGlobal.GlobalTheory.BlockActions.Bundle0011
 public import Formalism.LocalToGlobal.LatticeGeometry.GeometryDefinitions.PNeatB
 public import Formalism.SharpRestriction.GrowthBounds.ChartedClasses.ToLEInvApply
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.IsSDLatLatK
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0317
 
 @[expose] public section
 

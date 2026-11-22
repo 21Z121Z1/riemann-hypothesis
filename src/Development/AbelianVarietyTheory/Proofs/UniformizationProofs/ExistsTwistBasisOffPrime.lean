@@ -6,7 +6,7 @@ public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDesc
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.ValCalc
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.DiscreteValuationRings.FamMod
 public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.NonemptyCubicalPull
-public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ExistsUniqueSecPull
+public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.Bundle0027
 
 @[expose] public section
 

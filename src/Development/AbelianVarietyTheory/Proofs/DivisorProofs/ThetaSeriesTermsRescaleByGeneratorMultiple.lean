@@ -5,8 +5,8 @@ public import Development.AbelianVarietyTheory.Definitions.Divisors.IsProjOverWe
 public import Development.AbelianVarietyTheory.Definitions.Degenerations.AdmissibleBaseOfCompleteDvr
 public import Development.AbelianVarietyTheory.Definitions.Uniformization.TXFrame
 public import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.MeetsOpensOfSeparatesSections
-public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.BasisValueAtOrigin
-public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.CmFieldHostElementAddConjEqOne
+public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.Bundle0067
+public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.Bundle0135
 
 @[expose] public section
 

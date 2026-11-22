@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import GroundTheory.ProfiniteCohomology.CupProducts.Functoriality
+public import GroundTheory.ProfiniteCohomology.CupProducts.Bundle0001
 public import GroundTheory.ProfiniteCohomology.Shapiro
 
 @[expose] public section

@@ -1,10 +1,10 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.ArchimedeanThetaValues.CarchAt
+public import Development.AbelianVarietyTheory.Definitions.ArchimedeanThetaValues.Bundle0001
 public import Development.AbelianVarietyTheory.Definitions.ThetaValues.GamAt
-public import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.IsBoundedByPowerOfAtLeastTwoInvD4ep0
-public import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.LogLeSelf
+public import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.Bundle0048
+public import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.Bundle0049
 
 @[expose] public section
 

@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.IsGaugeAll
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.IsotropicFlagLeviMaxCompactClosedSubgroups
+public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.Bundle0009
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0146
 
 @[expose] public section
 

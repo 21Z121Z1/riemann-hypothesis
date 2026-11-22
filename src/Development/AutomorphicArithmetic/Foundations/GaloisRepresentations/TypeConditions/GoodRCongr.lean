@@ -1,13 +1,13 @@
 module
 
 public import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.TypeConditions.TrivialLocalCondition
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsGaloisRepBaseChange
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsGaloisRepTwist
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.GaloisRepWeilJumps
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0727
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0250
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0236
 public import Mathlib
 public import Formalism.SharpRestriction.LevelLetterCocycles.SumRepresentations
 public import Formalism.SharpRestriction.LevelLetterCocycles.ExistsInertiaCharpolyFactorOfTameType
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.AwayRepIsoLoc
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0187
 
 @[expose] public section
 
@@ -216,7 +216,7 @@ theorem goodR_part (D : D7) (h0 : SumRepresentations.tie0 D) (h2 : AutomorphicGa
       (fun τ => (((List.range p.d).map fun k : ℕ =>
         (D.naut.infG p.π τ).map (· + (((p.d : ℂ) - 1) / 2 - (k : ℂ)))).sum).map
           (fun z => -z + ((D.R.nV : ℂ) - 1) / 2)) := by
-  have hreg := GlobalTheory.T.infWt_nodup_and_half_integral D i P
+  have hreg := _root_.GlobalTheory.weight_localisation_regular_algebraic D i P
   set e : ℕ → ℤ := fun k => (p.d : ℤ) - 2 * k - D.R.nV with he
   have hne : List.range p.d ≠ [] := by
     rw [Ne, List.range_eq_nil]; omega

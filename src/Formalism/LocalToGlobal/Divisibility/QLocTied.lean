@@ -1,16 +1,16 @@
 module
 
-public import Formalism.LocalToGlobal.UnitaryNorms.CharDiv
-public import Formalism.LocalToGlobal.UnitaryNorms.DefsDatum
-public import Formalism.SharpRestriction.Divisibility.ZetaProductPairs
+public import Formalism.LocalToGlobal.UnitaryNorms.Bundle0007
+public import Formalism.LocalToGlobal.UnitaryNorms.Bundle0005
+public import Formalism.SharpRestriction.Divisibility.Bundle0002
 public import Formalism.LocalRingCardinality.DataIdx
-public import Formalism.LocalRingCardinality.SpanPowerMembership.DivXExample
-public import Formalism.LocalRingCardinality.DataAmbForm
-public import Formalism.LocalRingCardinality.DataKap
-public import Formalism.LocalRingCardinality.DataDIVDefs
+public import Formalism.LocalRingCardinality.SpanPowerMembership.Bundle0005
+public import Formalism.LocalRingCardinality.Bundle0002
+public import Formalism.LocalRingCardinality.Bundle0004
+public import Formalism.LocalRingCardinality.Bundle0003
 public import Formalism.LocalRingCardinality.DataRows
 public import Formalism.LocalRingCardinality.DataForms
-public import Formalism.LocalRingCardinality.SpanPowerMembership.NZRowC
+public import Formalism.LocalRingCardinality.SpanPowerMembership.Bundle0004
 
 @[expose] public section
 

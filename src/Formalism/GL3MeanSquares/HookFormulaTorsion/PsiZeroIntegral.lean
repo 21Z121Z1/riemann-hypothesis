@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Formalism.GL3MeanSquares.PrimeCountAsymptoticInProgressions
+public import Formalism.GL3MeanSquares.Bundle0002
 public import Formalism.LandauZeroFreeBounds.SiegelWalfiszAPOfSiegelLower
 
 @[expose] public section

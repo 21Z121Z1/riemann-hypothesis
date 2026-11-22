@@ -1,6 +1,6 @@
 module
 
-public import Formalism.SharpRestriction.LevelLetterCocycles.KillWinFromCut
+public import Formalism.SharpRestriction.LevelLetterCocycles.Bundle0032
 public import Formalism.SharpRestriction.LevelLetterCocycles.PsCoprimeOf
 
 @[expose] public section

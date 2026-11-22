@@ -1,17 +1,16 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Divisors.BudgetAt
-public import Development.AbelianVarietyTheory.Definitions.Divisors.ToKnownTheoremsOf
-public import Development.AbelianVarietyTheory.Definitions.Divisors.EightDvdNCol
-public import Development.AbelianVarietyTheory.Definitions.Divisors.QuoIff
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SumLogDivPredLeReal
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WeightDivisionL1Bound
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PosDividedSlopeWeightsBaseHeight
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SpreadLeAt
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SumPadicValNatMulLogLeLog
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LogDivPredMemOfPrime
-public import Development.AutomorphicArithmetic.PrimeDiscriminants.BadCount
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0064
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0059
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0056
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0174
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0757
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0768
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0769
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0733
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0749
+public import Development.AutomorphicArithmetic.PrimeDiscriminants.Bundle0002
 
 @[expose] public section
 

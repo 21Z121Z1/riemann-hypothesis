@@ -1,6 +1,6 @@
 module
 
-public import Formalism.LocalToGlobal.UnitaryNorms.Lemmas
+public import Formalism.LocalToGlobal.UnitaryNorms.Bundle0003
 
 @[expose] public section
 

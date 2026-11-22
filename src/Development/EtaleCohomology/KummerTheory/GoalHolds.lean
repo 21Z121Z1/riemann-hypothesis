@@ -1,12 +1,10 @@
 module
 
-public import Development.EtaleCohomology.KummerTheory.InvOfField
-public import Development.EtaleCohomology.KummerTheory.LocalHomotopyEtaleCohomology
-public import Development.EtaleCohomology.KummerTheory.FinSHInv
-public import Development.EtaleCohomology.KummerTheory.FinStalk
+public import Development.EtaleCohomology.KummerTheory.Bundle0003
+public import Development.EtaleCohomology.KummerTheory.Bundle0016
+public import Development.EtaleCohomology.KummerTheory.Bundle0017
 public import Development.EtaleCohomology.KummerTheory.FinBock
-public import Development.EtaleCohomology.KummerTheory.FinAdicDeg
-public import Development.EtaleCohomology.KummerTheory.FinLimit
+public import Development.EtaleCohomology.KummerTheory.Bundle0013
 
 @[expose] public section
 

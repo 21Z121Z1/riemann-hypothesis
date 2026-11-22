@@ -1,7 +1,7 @@
 module
 
-public import Formalism.SharpRestriction.GrowthBounds.BinomialRatio.ExtendedStatementOfParts
-public import Formalism.SharpRestriction.GrowthBounds.BinomialRatio.KeptFin
+public import Formalism.SharpRestriction.GrowthBounds.BinomialRatio.Bundle0003
+public import Formalism.SharpRestriction.GrowthBounds.BinomialRatio.Bundle0001
 
 @[expose] public section
 

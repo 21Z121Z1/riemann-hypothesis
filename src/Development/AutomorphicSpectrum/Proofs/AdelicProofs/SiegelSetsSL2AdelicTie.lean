@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Formalism.UnipotentAdelicQuotients.SiegelSetsSL2Adelic
+public import Formalism.UnipotentAdelicQuotients.Bundle0001
 public import GroundTheory.IdeleRoots.ClassicalIdeles.ExistsPosBoundsOfIsCompact
 
 @[expose] public section

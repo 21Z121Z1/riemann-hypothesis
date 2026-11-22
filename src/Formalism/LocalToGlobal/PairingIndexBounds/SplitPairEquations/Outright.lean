@@ -1,7 +1,7 @@
 module
 
 public import Formalism.LocalToGlobal.PairingIndexBounds.SplitPairEquations.EqPAll
-public import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.SplitPairGen
+public import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.Bundle0026
 
 @[expose] public section
 

@@ -1,6 +1,6 @@
 module
 
-public import Formalism.SizeWindowBrackets.ClaimGaFree
+public import Formalism.SizeWindowBrackets.Bundle0001
 
 @[expose] public section
 

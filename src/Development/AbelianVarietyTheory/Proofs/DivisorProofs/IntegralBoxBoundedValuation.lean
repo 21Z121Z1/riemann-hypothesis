@@ -1,11 +1,11 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Divisors.MatchingOfParts
-public import Development.AbelianVarietyTheory.Definitions.Divisors.DiscreteSeriesHermitianUnique
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0033
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0041
 public import Development.AbelianVarietyTheory.Definitions.Divisors.RankEqCardIffExistsFrameMatrixFirstColumnBlock
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RowsInSpanOfRankNormalFormStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SubMemTwistSpan
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1278
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1231
 
 @[expose] public section
 

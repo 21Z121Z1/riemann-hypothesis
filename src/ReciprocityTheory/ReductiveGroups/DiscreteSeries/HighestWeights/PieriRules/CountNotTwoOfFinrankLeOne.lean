@@ -4,9 +4,8 @@ public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.HighestWeights.Pi
 public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.HighestWeights.ContinuousRepresentations.DerivExistsAllPosStatement
 public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.HighestWeights.Finrank
 public import Formalism.RealPlaceAnalysis.QuotientSettingHolds
-public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.HighestWeights.PieriRules.TensRepB
-public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.HighestWeights.PieriRules.TensHW
-public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.HighestWeights.PieriRules.WeylPos
+public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.HighestWeights.PieriRules.Bundle0003
+public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.HighestWeights.PieriRules.Bundle0002
 
 @[expose] public section
 

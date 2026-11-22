@@ -2,7 +2,7 @@ module
 
 public import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsIsClosedImmersionGenericPoint
 public import Development.AbelianVarietyTheory.Definitions.Divisors.AevalEqZeroOfMemConeIdeal
-public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.IsHomOpenPart
+public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.Bundle0073
 public import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.Statements
 
 @[expose] public section

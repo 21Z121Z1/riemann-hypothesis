@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import ReciprocityTheory.ReducedBases.ExistsRedOf
-public import ReciprocityTheory.ReducedBases.PrefixProdGeOne
+public import ReciprocityTheory.ReducedBases.Bundle0003
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArakelovVolumes.IntegralModuleBases.NormGsoSqLeTwoPowMulOfValEqAdd
 public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsBimultiplicativeOfSecondQuotConst
 

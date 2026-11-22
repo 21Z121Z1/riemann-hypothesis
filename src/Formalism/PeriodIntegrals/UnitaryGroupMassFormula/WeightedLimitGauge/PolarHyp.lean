@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Formalism.PeriodIntegrals.RhsWLim
+public import Formalism.PeriodIntegrals.Bundle0006
 public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.WeightedLimitGauge.VolumeLieE
 
 @[expose] public section

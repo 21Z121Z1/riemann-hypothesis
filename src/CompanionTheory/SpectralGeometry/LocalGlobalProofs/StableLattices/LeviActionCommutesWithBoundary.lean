@@ -3,7 +3,7 @@ module
 public import Mathlib
 public import CompanionTheory.RealGroups.DiscreteSeries.DiscreteSeriesClassification.DiscreteSeriesExhaustion.FarRegularity.LKTExists
 public import CompanionTheory.HarishChandraModules.LowKTypeMultiplicity.EigenspaceCyclicDensity.CreationOperators.DifferentialBoundedSupport
-public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.CanonicalAnticommutationRelationsConsequenceStatement
+public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.Bundle0037
 
 @[expose] public section
 
@@ -265,7 +265,7 @@ theorem GlobalTheory.CompanionTheory.LeviChain.lF_bd_comm : ∀ (n : ℕ) (lev :
       lF E p q (bd (allT n) E x) = bd (allT n) E (lF E p q x) := by
   intro n lev V _ _ E hm hE p q hpq x hx
   have hx' : x ∈ SU V lev := hx
-  have hc := GlobalTheory.T.canonical_anticommutation_relations_consequence n (Module.End ℂ (Cn n V)) (tau lev) (cT lev) (dT lev) (LT E) p q
+  have hc := _root_.GlobalTheory.CompanionTheory.CliffordCoeff.commute_shifted_dirac n (Module.End ℂ (Cn n V)) (tau lev) (cT lev) (dT lev) (LT E) p q
     (fun a b a' b' => by
       by_cases h : tau lev a b
       · by_cases h' : tau lev a' b'

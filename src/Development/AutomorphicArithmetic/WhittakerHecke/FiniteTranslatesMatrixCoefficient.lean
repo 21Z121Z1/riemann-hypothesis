@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.ShiftMap
+public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0055
 
 @[expose] public section
 

@@ -2,13 +2,12 @@ module
 
 public import Mathlib
 public import GroundTheory.LocalFields.Interface
-public import GroundTheory.LocalFields.FiniteExtension
+public import GroundTheory.LocalFields.Bundle0002
 public import GroundTheory.LocalFields.Uniqueness
 public import GroundTheory.LocalFields.Integers
-public import GroundTheory.LocalFields.UnitsPowers
-public import GroundTheory.LocalFields.UnramifiedRootsOfUnity
+public import GroundTheory.LocalFields.Bundle0004
 public import GroundTheory.LocalFields.UnramifiedGalois
-public import GroundTheory.LocalFields.UnramifiedExistence
+public import GroundTheory.LocalFields.Bundle0008
 public import GroundTheory.LocalFields.AbstractLocalReciprocity.ProfiniteInteger
 public import GroundTheory.LocalFields.AbstractLocalReciprocity.ExistsEqNsmulOfProjEqZero
 public import GroundTheory.LocalFields.AbstractLocalReciprocity.Frobenius

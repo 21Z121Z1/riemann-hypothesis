@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EtaleChartLocalizationFiniteTypeFormallyUnramifi
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EtChart
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0134
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0019
 
 @[expose] public section
 

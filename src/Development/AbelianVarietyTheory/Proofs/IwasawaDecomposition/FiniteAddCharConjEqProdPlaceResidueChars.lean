@@ -1,13 +1,11 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.OtherInstanceCharacterEqPsiSymmetricArgument
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IntTraceModEqSumResiduesSplitPrimeStatement
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.PlacesOverTypePrimeChosenAndConjStatement
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.MemPrimeOfInclEMemPlaceIdealIntegralAdelicSpanStatement
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsIntegerLiftModNatIntegralAdeleTensorStatement
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExpDivMulEqStdAddCharMulOfCoprimeStatement
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.StarFiniteAddCharDivNatEqExpTraceStatement
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0397
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0013
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0409
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0407
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0406
 
 @[expose] public section
 
@@ -118,7 +116,7 @@ theorem psiEf_conj_eq_prod : ∀ (D : D7) (X : HidaSetting D) (h : X.B.I = Forma
       ∑ v : D.nd.PlG k, (t ⟨k, v⟩ + u ⟨k, v⟩) := by
     intro k
     obtain ⟨hinj, hcov, hcard⟩ := GlobalTheory.T.places_over_typePrime_chosen_and_conj D k
-    rw [GlobalTheory.T.intTrace_modEq_sum_residues_split_prime (D.host.g k) (D.host.g_prime k) _ hinj hcov hcard α
+    rw [_root_.GlobalTheory.SplitTrace.intTrace_modEq_sum (D.host.g k) (D.host.g_prime k) _ hinj hcov hcard α
       (Sum.elim (fun v => (((t ⟨k, v⟩).val : ℕ) : ℤ)) (fun v => (((u ⟨k, v⟩).val : ℕ) : ℤ))) ?_]
     · rw [Fintype.sum_sum_type, Finset.sum_add_distrib]; simp
     · rintro (v | v)

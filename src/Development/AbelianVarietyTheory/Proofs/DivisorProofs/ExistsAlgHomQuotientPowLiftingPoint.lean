@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TorsionFreeOver
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FaithfullyFlatAdicCompletionSpan
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HasHartogsPropertyQuotientSpanPowRetractionStatement
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0116
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0145
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2179
 
 @[expose] public section
 

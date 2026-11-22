@@ -1,9 +1,9 @@
 module
 
-public import Development.WeilBound.ThetaLifts.CartanFactorisation.Kills0Of
+public import Development.WeilBound.ThetaLifts.CartanFactorisation.Bundle0006
 public import Development.WeilBound.ThetaLifts.CartanFactorisation.KillInf
 public import Development.WeilBound.ThetaLifts.Reductions.JoinDef
-public import Development.WeilBound.ThetaLifts.SphericalLattices.ThetaSubSup
+public import Development.WeilBound.ThetaLifts.SphericalLattices.Bundle0009
 public import Development.WeilBound.ThetaLifts.SphericalLattices.HoweInert
 
 @[expose] public section

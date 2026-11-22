@@ -1,6 +1,6 @@
 module
 
-public import Development.WeilBound.ThetaLifts.FrameEstimates.DomContinuous
+public import Development.WeilBound.ThetaLifts.FrameEstimates.Bundle0009
 public import Development.WeilBound.ThetaLifts.CartanFactorisation.CartanConj
 
 @[expose] public section

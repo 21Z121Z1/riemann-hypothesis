@@ -1,24 +1,22 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicArithmetic.ThetaCorrespondence.LocalComparison.LocTied6
-public import Development.AutomorphicArithmetic.ThetaCorrespondence.LocalComparison.LocTiedOf6
-public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.HeckeLAdicCharacterDeRham
+public import Development.AutomorphicArithmetic.ThetaCorrespondence.LocalComparison.Bundle0001
+public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.Bundle0006
 public import Development.WeilBound.CoreStatements.TemperedRepresentationTheory.DeRhamJacobian.IsdRJ
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.HasPeriods
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.UniqueEmbeddingExtension
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsLubinTateCharacterUnitaryStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LocalGaloisEmbeddingExtensionStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ImportsTer
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.DeRhamRankLubinTateLineStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.GaloisCharacterArtinCompatStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsOpenUnitSubgroupKerStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.GaloisOpenSubgroupLocalUnitsStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LocalCharacterFiniteExtensionStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LocalCharacterInducedTiedStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LocalCharacterInducedTiedSixStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.UnramifiedCharactersDeRhamJumpZeroStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.UniqueEmbeddingExtensionStatement
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0206
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0210
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0512
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0222
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0562
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0255
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0212
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0533
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0393
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0234
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0238
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0261
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0214
 
 @[expose] public section
 
@@ -56,7 +54,7 @@ theorem lubinTate_at_embedding (HP : LTPeriods) : ∀ {E Ω : Type} [Field E] [N
       ∀ (x : (w.adicCompletion E)ˣ) (σ : ↥(Dec (F := E) A)), IsUnitAt w x → (σ : G E Ω) ∈ Ine (F := E) A →
         art (localIdele E w x) = toAb E Ω σ → ((lam σ : ↥LL'.1) : Qbar l) = j.1 x := by
   intro E Ω _ _ _ _ _ l _ P AI hT w A hA O _ _ _ Bw hI art hart LL' hLL j
-  obtain ⟨χ, hχ, hc, hn⟩ := GlobalTheory.T.exists_lubin_tate_character_unitary Bw.Kw
+  obtain ⟨χ, hχ, hc, hn⟩ := _root_.GlobalTheory.CompanionTheory.LTHodge.exists_lubinTateChar Bw.Kw
   obtain ⟨φ, τ, hφc, hφ, hτ, hu⟩ := GlobalTheory.T.local_galois_embedding_extension w A hA O Bw hI LL' hLL j
   have hper := HP P AI hT Bw.Kw χ hχ hc
   have hsplit : ∀ (μ : ↥Bw.Kw.1 →ₐ[ℚ_[l]] Om l) (x : ↥Bw.Kw.1), μ x ∈ LL'.1 :=
@@ -201,7 +199,7 @@ theorem field_of_ltPeriods (HP : LTPeriods) : GlobalTheory.Published.HeckeLAdicC
     intro g
     rw [hφv, norm_mul, norm_inv, hψn, hΛv, norm_prod]
     simp [norm_zpow, hln]
-  obtain ⟨U, hUo, hUu, hUχ⟩ := GlobalTheory.T.exists_open_subgroup_heckeChar_eq_one χ w
+  obtain ⟨U, hUo, hUu, hUχ⟩ := _root_.GlobalTheory.CompanionTheory.HeckeSmooth.exists_open_unit_subgroup_ker χ w
   obtain ⟨V, hVo, hV⟩ := GlobalTheory.T.galois_open_subgroup_local_units (l := l) art hart w A hA U hUo hUu
   have hφ0 : IsdRJ Bw P LL' φ 0 := by
     refine GlobalTheory.T.local_character_induced_agree P AI hT w A hA O Bw hI LL' hLL φ hφc hφn V hVo ?_

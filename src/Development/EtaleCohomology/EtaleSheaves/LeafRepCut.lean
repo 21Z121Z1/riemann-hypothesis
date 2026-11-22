@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.EtaleCohomology.EtaleSheaves.LeafGhostRelCut
+public import Development.EtaleCohomology.EtaleSheaves.Bundle0026
 
 @[expose] public section
 

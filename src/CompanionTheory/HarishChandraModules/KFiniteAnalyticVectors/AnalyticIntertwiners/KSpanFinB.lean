@@ -1,6 +1,6 @@
 module
 
-public import CompanionTheory.HarishChandraModules.KFiniteAnalyticVectors.AnalyticIntertwiners.SecondDerivativeHolds
+public import CompanionTheory.HarishChandraModules.KFiniteAnalyticVectors.AnalyticIntertwiners.Bundle0002
 
 @[expose] public section
 

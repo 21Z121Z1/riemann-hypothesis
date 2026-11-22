@@ -1,12 +1,12 @@
 module
 
 public import Mathlib
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsZCombLimit
+public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0026
 public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsHilbert
-public import GroundTheory.HeightsAndTheta.Heights.Intersections.PThmAExpand
-public import GroundTheory.HeightsAndTheta.Heights.HeightComparison.IsMultiHomogIdealIff
+public import GroundTheory.HeightsAndTheta.Heights.Intersections.Bundle0010
+public import GroundTheory.HeightsAndTheta.Heights.HeightComparison.Bundle0003
 public import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.PGenericFibreDim
-public import ReciprocityTheory.AnalyticForms.RegularLocalRings.IntToRat
+public import ReciprocityTheory.AnalyticForms.RegularLocalRings.Bundle0007
 
 @[expose] public section
 

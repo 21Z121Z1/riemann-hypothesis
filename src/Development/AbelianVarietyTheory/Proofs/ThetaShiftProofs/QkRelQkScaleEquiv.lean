@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.IsScalarFormTraceForm
+public import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.Bundle0012
 
 @[expose] public section
 

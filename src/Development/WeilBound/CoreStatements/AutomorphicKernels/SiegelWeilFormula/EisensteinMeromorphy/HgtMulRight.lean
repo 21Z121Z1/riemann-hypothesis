@@ -1,11 +1,11 @@
 module
 
 public import Development.WeilBound.CoreStatements.AutomorphicKernels.SiegelWeilFormula.AuxiliaryPrimeFunction
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IsCompactStandardMaximalStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.HeightContinuousPosStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FlatSectionGrowthBoundStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.EisensteinSeriesConvergentStatement
-public import Development.WeilBound.ThetaLifts.LatticeBasics.ContinuousFlat
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0466
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0496
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0465
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0511
+public import Development.WeilBound.ThetaLifts.LatticeBasics.Bundle0013
 
 @[expose] public section
 

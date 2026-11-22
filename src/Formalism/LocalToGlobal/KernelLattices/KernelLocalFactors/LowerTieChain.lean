@@ -4,9 +4,9 @@ public import Mathlib
 public import Formalism.LocalToGlobal.KernelLattices.KernelLocalFactors.InterlaceDifferenceShiftInvariant
 public import Formalism.LocalToGlobal.LatticeGeometry.GeometryDefinitions.ClsSum
 public import Formalism.GradedWeylDivisibility.FinalD
-public import Formalism.RealPlaceAnalysis.FockPairGl
+public import Formalism.RealPlaceAnalysis.Bundle0002
 public import Formalism.LocalRingCardinality.DataCoeff
-public import Formalism.RealPlaceAnalysis.RealPlaceTaylor.ProdFactorialSupportSubSingle
+public import Formalism.RealPlaceAnalysis.RealPlaceTaylor.Bundle0005
 
 @[expose] public section
 

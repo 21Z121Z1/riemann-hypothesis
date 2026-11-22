@@ -2,9 +2,9 @@ module
 
 public import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.CrystallineTowers.CrystallinePeriodsOfSmooth
 public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.JointApproxOfMem
-public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.FiltrationZeroMembership
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.TensorProductBasisCoordinates
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FinrankInvariantsEqOfInvertiblePeriodMatrix
+public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0010
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0043
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0024
 public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.FiniteDimensionalFilDR
 
 @[expose] public section

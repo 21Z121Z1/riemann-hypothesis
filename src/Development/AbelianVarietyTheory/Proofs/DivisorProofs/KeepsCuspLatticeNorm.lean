@@ -4,12 +4,12 @@ public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.Divisors.NormNegCmConstantEqAtAllEmbeddings
 public import Development.AbelianVarietyTheory.Definitions.Divisors.MemLevEigenIffTransl
 public import Development.AbelianVarietyTheory.Definitions.Foundations.CanonicalExponents
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.KeepsCuspOfIsUnifAt
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LevelMoveStabiliserCharacterDet
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0335
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1808
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsUnitaryPart
-public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.IntegralFramedPointOfLevelMove
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.OnlySecondOfFormLaws
-public import Development.AbelianVarietyTheory.Proofs.HeightProofs.VolPairExAndFinVol
+public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0116
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0078
+public import Development.AbelianVarietyTheory.Proofs.HeightProofs.Bundle0060
 
 @[expose] public section
 

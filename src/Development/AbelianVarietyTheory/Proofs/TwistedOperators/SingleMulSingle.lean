@@ -1,10 +1,10 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.RestrictedTensorBasePointNormSq
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.IsIntOv
-public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.RealIdemMulOfReal
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.EqZeroOrEqOfPlaceIdem
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0128
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0093
+public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.Bundle0061
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0187
 
 @[expose] public section
 

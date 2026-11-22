@@ -4,10 +4,10 @@ public import Mathlib
 public import GroundTheory.GlobalFields.LocalFieldAtPlace
 public import GroundTheory.GlobalFields.Adele.Topology
 public import GroundTheory.GlobalFields.Adele.Discrete
-public import GroundTheory.GlobalFields.Adele.Compact
+public import GroundTheory.GlobalFields.Adele.Bundle0002
 public import GroundTheory.AutomorphicForms.GLnLocal
-public import GroundTheory.AutomorphicForms.LocallyProfinite
-public import GroundTheory.AutomorphicForms.RestrictedProductMatrix
+public import GroundTheory.AutomorphicForms.Bundle0004
+public import GroundTheory.AutomorphicForms.Bundle0010
 
 @[expose] public section
 

@@ -1,6 +1,6 @@
 module
 
-public import Formalism.SharpRestriction.GrowthBounds.RootWeights.FockLatticeFiniteSpanning
+public import Formalism.SharpRestriction.GrowthBounds.RootWeights.Bundle0005
 
 @[expose] public section
 

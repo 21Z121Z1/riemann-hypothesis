@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import GroundTheory.ArithmeticGeometry.SchemeCohomology.RegularUFDSerre
+public import GroundTheory.ArithmeticGeometry.SchemeCohomology.Bundle0002
 
 @[expose] public section
 

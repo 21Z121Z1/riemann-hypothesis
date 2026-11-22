@@ -5,8 +5,8 @@ public import Formalism.SharpRestriction.LevelLetterCocycles.DataNLoc
 public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CoeffZeroEqZeroIff
 public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.RootEqOfNormLt
 public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.EqTopOfSpanImage
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CyclotomicLevelSubgroupMemWachSubgroups
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.InclWFrobIter
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0248
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0184
 
 @[expose] public section
 

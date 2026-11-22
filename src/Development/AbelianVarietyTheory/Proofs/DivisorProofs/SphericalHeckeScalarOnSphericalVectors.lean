@@ -1,21 +1,23 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.NormalFam
+public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.Bundle0015
 public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisGeometry₂.HoweUnram
 public import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.IsStepWeil
-public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.ExistsNormLeHeightPow
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FinRepApply
-public import Development.AbelianVarietyTheory.Definitions.Divisors.InstCMHostS
-public import Formalism.LocalToGlobal.IndefiniteReal.PartsRow
+public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.Bundle0007
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0831
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0029
+public import Formalism.LocalToGlobal.IndefiniteReal.Bundle0025
 public import Formalism.LocalToGlobal.IndefiniteReal.BaseLiftsPackageOfPrimitiveLinks
 public import Formalism.LocalToGlobal.Divisibility.TrivialExtensionSideWellFormed
 public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.SphericalLabelOperatorsOnHyperspecialFixedVector
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.SphericalHeckeCombinationsCommuteFixedVectorsStatement
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0135
+public import Formalism.SatakeDualWeyl.KpqSubgroupCompact
 public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.SupportedSubgroupSplitCommutePrimeIdempotents
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.AlgebraMapIntertwiningMapBijectiveOfIsSmooth
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SumTranslatesEqDoubleCosetAverageStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RankLeAleph0SmoothIrreducibleUnitaryAdelicStatement
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0621
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0113
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RankLeAleph0SmoothIrreducibleUnitaryAdelic
+public import Formalism.LocalToGlobal.GaloisLevelStructure.DefsFinTyp
 
 @[expose] public section
 
@@ -45,7 +47,7 @@ theorem avg (ρ : G →* Module.End ℂ M) (K : Subgroup G) {ι : Type} (s : Fin
     (hw : ∀ i ∈ s, ∀ k ∈ K, ρ k (w i) = w i)
     (hm : ∀ k ∈ K, ρ k (∑ i ∈ s, ρ (a i) (w i)) = ∑ i ∈ s, ρ (a i) (w i)) :
     ∑ i ∈ s, ρ (a i) (w i) = ∑ i ∈ s, ((R i).card : ℂ)⁻¹ • ∑ γ ∈ R i, ρ γ (w i) :=
-  GlobalTheory.T.sum_translates_eq_doubleCoset_average ρ K s a R w hR hw hm
+  _root_.GlobalTheory.CosetAvg.sum_translates_eq_avg ρ K s a R w hR hw hm
 
 def fixS (ρ : G →* Module.End ℂ M) (S : Submodule ℂ M) (K : Subgroup G) : Submodule ℂ M where
   carrier := {x | x ∈ S ∧ ∀ k ∈ K, ρ k x = x}
@@ -206,7 +208,7 @@ variable {D : D7} {V : HSp D} {n : ℕ}
 
 theorem countRank {L : Type} [Field L] [NumberField L] [IsCMField L] {n : ℕ} (π : Formalism.L2.NG.FinTyp L n) :
     Module.rank ℂ π.S ≤ Cardinal.aleph0 :=
-  GlobalTheory.T.rank_le_aleph0_smooth_irreducible_unitaryAdelic π
+  _root_.GlobalTheory.FinTyp.rank_le_aleph0 π
 
 def rtHom (L : Type) [Field L] [NumberField L] [IsCMField L] (n : ℕ) :
     Formalism.AUTREP.GAf L n →* Module.End ℂ (Formalism.AUTREP.GAf L n → ℂ) where
@@ -468,7 +470,7 @@ theorem spherical_scalar : ∀ {D : D7} {V : HSp D} {n : ℕ} (hF : D.host.F = m
         rw [hBop x hx.2]
         exact hopfix _ x hx.2
       rw [hBop _ hx', hRop a ha, hRop a ha, hBop x hx.2]
-      exact GlobalTheory.T.sphericalHeckeCombinations_commute_fixedVectors V Pr _ _ _ (rtA V) _ (hfixA x hx.2)
+      exact _root_.GlobalTheory.SphLabelComm.label_ops_comm V Pr _ _ _ (rtA V) _ (hfixA x hx.2)
 
   exact ⟨c, fun x hx hfx => hc x ⟨hx, fun k hk => hfx k (by rw [hKv]; exact hk)⟩⟩
 

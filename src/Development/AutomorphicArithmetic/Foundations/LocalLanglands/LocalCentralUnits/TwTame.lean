@@ -2,8 +2,8 @@ module
 
 public import Development.AutomorphicArithmetic.Foundations.LocalLanglands.RecTTransport
 public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ApplyMemTwKerOfNormalizer
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IsSatakeParameterOfIsSubquotientOfInjective
-public import GroundTheory.AutomorphicForms.CompactModCentre
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0628
+public import GroundTheory.AutomorphicForms.Bundle0014
 public import GroundTheory.AutomorphicForms.Cartan
 
 @[expose] public section

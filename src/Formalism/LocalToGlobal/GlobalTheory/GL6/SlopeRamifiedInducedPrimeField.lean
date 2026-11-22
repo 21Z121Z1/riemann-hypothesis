@@ -1,7 +1,7 @@
 module
 
 public import Formalism.LocalToGlobal.Columns.SliceIntegralDeltaNeBot
-public import Formalism.LocalToGlobal.GlobalTheory.GL6.RamifiedLatticePropsOfModel
+public import Formalism.LocalToGlobal.GlobalTheory.GL6.Bundle0003
 public import Formalism.LocalToGlobal.GlobalTheory.GL6.RamifiedLatticeOfRankSlopeLength
 
 @[expose] public section

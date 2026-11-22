@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Proofs.GlobalProofs.IsAdaptedEmpty
+public import Development.AutomorphicSpectrum.Proofs.GlobalProofs.Bundle0052
 
 @[expose] public section
 

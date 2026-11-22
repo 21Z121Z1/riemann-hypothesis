@@ -1,12 +1,12 @@
 module
 
 public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.AdelicGroupAlgebraActionInjective
-public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsHTFormOver
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.PushInvertible
-public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.GlueApplyOfNotInFibre
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.Bundle0005
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.Bundle0002
 public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsHodgeLine
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.SabPull
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.HodgeInnerProductPullbackIffStatement
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.Bundle0007
+public import Mathlib
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0162
 
 @[expose] public section
 
@@ -92,7 +92,7 @@ theorem gr_ip {E : Type} [Field E] [NumberField E] [IsCMField E] {H : Host E} {S
     (v' w' : epsAt z' ⟶ t'.G) (v w : epsAt z ⟶ t.G) (c : ℂ) (hv : v'.left ≫ m.φ = v.left)
     (hw : w'.left ≫ m.φ = w.left) : HodgeIP t'.G t'.PP.L z' v' w' c ↔ HodgeIP t.G t.PP.L z v w c := by
   subst e
-  exact GlobalTheory.T.hodge_inner_product_pullback_iff E H S S' t t' f m z' v' w' v w c hv hw
+  exact _root_.GlobalTheory.CompanionTheory.Ar.HodgePullBack.hodgeInnerProduct_iff_of_abelianSchemeMap E H S S' t t' f m z' v' w' v w c hv hw
 
 theorem gram_matrix_twisted_lie_models : ∀ (E : Type) [Field E] [NumberField E] [IsCMField E] (H : Host E) (g : HostAut H) (X : Scheme.{0}) (Ω : Type) [Field Ω] (ξ : Sp Ω ⟶ X) (p : Cpt ξ) (t t' : SAB H X) (tp : SAB H (Spec (X.presheaf.stalk p.1))) (m : SABMap tp t (X.fromSpecStalk p.1)) (m' : SABMap (twistSAB tp g) t' (X.fromSpecStalk p.1)) (V : Type) [AddCommGroup V] [Module Ω V] (M : LieModel t.G ξ V) (M' : LieModel t'.G ξ V), (∀ e, ∃ v : Sp (DualNumber Ω) ⟶ tp.G.left, v ≫ m.φ = (M.pt e).left ∧ v ≫ m'.φ = (M'.pt e).left) → ∀ (z : Sp ℂ ⟶ X), centre z = p.1 → ∀ (r : ℕ) (b : Fin r → V) (Γ : Matrix (Fin r) (Fin r) ℂ), M.GramAt t.PP.L z b Γ ↔ M'.GramAt t'.PP.L z b Γ := by
   rintro E _ _ _ H g X Ω _ ξ ⟨q, hq⟩ t t' tp m m' V _ _ M M' tie z (rfl : centre z = q) r b Γ

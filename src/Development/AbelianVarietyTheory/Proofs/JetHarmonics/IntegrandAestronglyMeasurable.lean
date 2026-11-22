@@ -4,7 +4,7 @@ public import Mathlib
 public import Formalism.HermitianCurvature.HermitianCurvatureProofs.NormDiagonalEntryDilationGeneratorLeOne
 public import Formalism.HermitianCurvature.HermitianCurvatureProofs.DilationScalesHeisenbergMeasure
 public import Formalism.HermitianCurvature.HermitianCurvatureProofs.HermitianFormFactor
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.SettingExistence
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0047
 
 @[expose] public section
 

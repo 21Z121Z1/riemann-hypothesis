@@ -1,7 +1,7 @@
 module
 
-public import Development.AutomorphicArithmetic.CommutativeAlgebra.EtaleCohomology.VanishOfExact
-public import Development.AutomorphicArithmetic.CommutativeAlgebra.EtaleCohomology.FaceSnocCastSucc
+public import Development.AutomorphicArithmetic.CommutativeAlgebra.EtaleCohomology.Bundle0004
+public import Development.AutomorphicArithmetic.CommutativeAlgebra.EtaleCohomology.Bundle0002
 
 @[expose] public section
 

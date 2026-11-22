@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Formalism.LocalToGlobal.IndefiniteReal.LinksChar
-public import Formalism.LocalToGlobal.BesselHermitianTheta.LemmasWeil
+public import Formalism.LocalToGlobal.BesselHermitianTheta.Bundle0003
 public import Development.AbelianVarietyTheory.Definitions.Foundations.StrictInterlaceIffDescEnum
 
 @[expose] public section

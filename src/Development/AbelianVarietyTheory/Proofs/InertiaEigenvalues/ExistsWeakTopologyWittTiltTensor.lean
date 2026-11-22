@@ -4,9 +4,9 @@ public import Mathlib
 public import Formalism.LocalRingCardinality.AdicCompletionLocal.LocTied
 public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.ExistsOfLayers
 public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsAlgClosedTiltFieldAndValuationRing
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ContinuousOrbitPadicComplex
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsContinuousGaloisLatticeMatrixIntegral
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IntegersCompleteDVR
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0127
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0232
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0204
 
 @[expose] public section
 

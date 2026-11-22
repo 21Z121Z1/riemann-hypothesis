@@ -4,9 +4,9 @@ public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.Divisors.IsLatBasisHtLatIffSpanEq
 public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.CharAtOfMultiplicativeSeries
 public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.ExistsCharactersBoundedMinorsOfHodgeTateChartBou
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.IsOpenOfRangeGenericSubset
-public import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.HodgeTateInclusionChartCharacters
-public import Development.AbelianVarietyTheory.Proofs.FormalGroupCharts.AddOfPtPt
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0104
+public import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.Bundle0082
+public import Development.AbelianVarietyTheory.Proofs.FormalGroupCharts.Bundle0014
 
 @[expose] public section
 

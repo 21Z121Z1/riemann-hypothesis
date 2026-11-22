@@ -1,11 +1,11 @@
 module
 
 public import Mathlib
-public import GroundTheory.HeightsAndTheta.Heights.FiniteCovolume.StLineNormalForm
-public import GroundTheory.HeightsAndTheta.Heights.FiniteCovolume.PIdealClassesFinite
-public import GroundTheory.HeightsAndTheta.Heights.FiniteCovolume.PLineCoeffsFG
-public import GroundTheory.HeightsAndTheta.Heights.FiniteCovolume.PLinePairOrbitsFinite
-public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.ExistsCommonMultiple
+public import GroundTheory.HeightsAndTheta.Heights.FiniteCovolume.Bundle0016
+public import GroundTheory.HeightsAndTheta.Heights.FiniteCovolume.Bundle0006
+public import GroundTheory.HeightsAndTheta.Heights.FiniteCovolume.Bundle0007
+public import GroundTheory.HeightsAndTheta.Heights.FiniteCovolume.Bundle0019
+public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0016
 
 @[expose] public section
 

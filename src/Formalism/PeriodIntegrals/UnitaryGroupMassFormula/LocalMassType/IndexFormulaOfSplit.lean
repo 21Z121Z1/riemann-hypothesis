@@ -1,7 +1,7 @@
 module
 
 public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LocalMassType.CongruenceLiftOfBasis
-public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LocalMassType.IdxTop
+public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LocalMassType.Bundle0007
 
 @[expose] public section
 

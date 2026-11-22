@@ -2,8 +2,8 @@ module
 
 public import Mathlib
 public import Formalism.LocalToGlobal.SiegelLatticeTheory.HaarTransversals.UnitaryHaarProducts.LevelSubgroupCharacterUnitary
-public import Formalism.LocalToGlobal.SiegelLatticeTheory.ClosedLocalOrbits.GaugeLatticeShifts.NormStepsLeviOntoS
-public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.SignActionMapComm
+public import Formalism.LocalToGlobal.SiegelLatticeTheory.ClosedLocalOrbits.GaugeLatticeShifts.Bundle0008
+public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0073
 
 @[expose] public section
 

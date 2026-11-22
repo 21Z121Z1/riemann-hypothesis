@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Statements.CuspFrameWeights.SameKindIsometric
+public import Development.AbelianVarietyTheory.Statements.CuspFrameWeights.Bundle0001
 
 @[expose] public section
 

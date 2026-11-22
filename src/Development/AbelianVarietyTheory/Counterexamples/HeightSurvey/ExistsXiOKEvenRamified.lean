@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.HeightFunctions.XiValIffXiAt
-public import Development.AbelianVarietyTheory.Proofs.HeightProofs.PowClassNumberIntegral
+public import Development.AbelianVarietyTheory.Proofs.HeightProofs.Bundle0033
 
 @[expose] public section
 

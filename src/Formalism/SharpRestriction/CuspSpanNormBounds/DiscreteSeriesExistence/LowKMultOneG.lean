@@ -1,6 +1,6 @@
 module
 
-public import Formalism.SharpRestriction.CuspSpanNormBounds.BridgeLitG
+public import Formalism.SharpRestriction.CuspSpanNormBounds.Bundle0017
 public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.DiscreteSeriesExistence.EquivSigLamOfIsDS
 
 @[expose] public section

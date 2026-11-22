@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Formalism.PeriodIntegrals.ScalPairs
+public import Formalism.PeriodIntegrals.Bundle0024
 
 @[expose] public section
 

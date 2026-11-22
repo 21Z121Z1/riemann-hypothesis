@@ -2,21 +2,29 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.Degenerations.AdmissibleBaseOfCompleteDvr
-public import Development.AbelianVarietyTheory.Definitions.Degenerations.HomExtSt
-public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.PolarisationExtendsOverDvrGoodReductionStatement
+public import Development.AbelianVarietyTheory.Definitions.Degenerations.Bundle0001
+public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0191
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.UniformisationConclusion
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.Bundle0003
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.IsHolPeriods
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.UnifUniqSt
+public import Development.AbelianVarietyTheory.Definitions.ModuliSpaces.FiniteHomogeneousInf
+public import Development.AbelianVarietyTheory.Definitions.Uniformization.PointEqOfSubsingleton
+public import Development.AbelianVarietyTheory.Statements.SemistableTorsion.SemistableFin
+public import Development.AbelianVarietyTheory.Statements.SemistableTorsion.UTorsSt
+public import Development.AbelianVarietyTheory.Definitions.AbelianSchemeLaws.FirstCohomologyVanishesSpecOfIsLocalRing
 public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.WeilIsGrpPullbackOfCommute
-public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsPushEquiv
+public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0022
 public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.HasThetaConstantsIffOfThetaLevelPullback
-public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.HasThetaConstantsRingBaseChange
-public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsThetaConstantsLocallyOnBase
-public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ThetaConstantsUniqueUpToUnit
-public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ThetaCosetNonvanishingOfHasTh
-public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsUnitOfPowEqOne
-public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.DeterminantConditionSpreadsOfDensePoints
-public import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.ExistsPullback
-public import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.ExistsOfCmTriplePullback
-public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ConnectedSpaceSpecOfIsLocalRing
-public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.AbelianSchemeCubicalBundleExistsAndMaps
+public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0118
+public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0173
+public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0132
+public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0104
+public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0075
+public import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.Bundle0025
+public import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.Bundle0021
+public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.Bundle0078
+public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.Bundle0055
 public import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.WeilIsAlternatingSkewNatural
 
 @[expose] public section
@@ -53,7 +61,7 @@ theorem exists_pat (h₁ : Laws) (h₂ : Laws2) {C : Type} [NormedField C] (o : 
     exact LBIso.chartPull (chartPullSec _ _ _ hi) (chartPullSame _ _ _ _ _ fun _ => rfl) e
   obtain ⟨N, hN⟩ := AbPackage.exists_cp h₁.globalFns hA M.t.PP ⟨M.t.cub.t, M.t.cub.isGen⟩ (by
     rw [← M.P.bundle]; exact ⟨M.P.U.symG, M.P.U.symG_gen⟩)
-  obtain ⟨ha, hk⟩ := GlobalTheory.T.polarisation_extends_over_dvr_goodReduction h₁ h₂ M.W (FractionRing M.W) M.P.A M.t.G N ψ hA hψ (by rw [hN]; exact hL)
+  obtain ⟨ha, hk⟩ := _root_.GlobalTheory.polarisation_extends_dvr h₁ h₂ M.W (FractionRing M.W) M.P.A M.t.G N ψ hA hψ (by rw [hN]; exact hL)
   rw [hN] at ha hk
   obtain ⟨g, hg⟩ := AbelianDim.exists_relDim M.W M.t.G hA
   have hs : Out.Sym M.t.G M.t.PP.L := by

@@ -1,8 +1,7 @@
 module
 
 public import Mathlib
-public import GroundTheory.ArithmeticGeometry.SchemeCohomology.ProperCohomology.FormalDegree
-public import GroundTheory.ArithmeticGeometry.SchemeCohomology.ProperCohomology.ReesCech
+public import GroundTheory.ArithmeticGeometry.SchemeCohomology.ProperCohomology.Bundle0012
 
 @[expose] public section
 

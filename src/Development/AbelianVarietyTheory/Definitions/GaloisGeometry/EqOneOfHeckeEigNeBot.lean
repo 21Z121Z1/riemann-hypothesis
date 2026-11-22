@@ -2,12 +2,12 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsGDatumOneOneOne
-public import Development.AbelianVarietyTheory.Definitions.Divisors.HxiTZeroComb
-public import Development.AbelianVarietyTheory.Definitions.Divisors.NontrivialOfArtinQE
-public import Development.AbelianVarietyTheory.Definitions.Divisors.IsHeckeMap
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0025
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0027
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0017
 public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.OmegaPullOmegaTraceOfSecTraceOne
-public import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsIsGHeckeMapForget
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.OmegaPullId
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0062
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0029
 
 @[expose] public section
 

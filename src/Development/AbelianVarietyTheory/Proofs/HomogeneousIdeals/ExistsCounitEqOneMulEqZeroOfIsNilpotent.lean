@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.CoherentCohomologyProofs.NatCardAlgHomEqFinrankOfIsReducedOfIsFractionRin
-public import Development.AbelianVarietyTheory.Proofs.CoherentCohomologyProofs.IsCounitDerivationCounitComp
+public import Development.AbelianVarietyTheory.Proofs.CoherentCohomologyProofs.Bundle0012
+public import Development.AbelianVarietyTheory.Proofs.CoherentCohomologyProofs.Bundle0002
 
 @[expose] public section
 

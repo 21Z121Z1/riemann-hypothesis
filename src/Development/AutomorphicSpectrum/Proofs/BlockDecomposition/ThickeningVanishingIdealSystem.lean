@@ -2,11 +2,10 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.ThetaMetrics.ExistsFormOfEqRatioPowMul
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.VanIdealHomog
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MemVanishingIdealIffKillsForm
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ChartVanishingKillsFormMulPow
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ClosedImmersionPullbackKernelSup
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ThickeningSectionHomogeneousForm
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0266
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0272
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0267
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0273
 
 @[expose] public section
 

@@ -1,14 +1,12 @@
 module
 
-public import Formalism.YangianSpanCharacter.YangianRTTProofs.TransposeSymplecticShift
-public import Formalism.YangianSpanCharacter.YangianRTTProofs.RttRelation
-public import Formalism.YangianSpanCharacter.StatementY
+public import Formalism.YangianSpanCharacter.YangianRTTProofs.Bundle0001
+public import Formalism.YangianSpanCharacter.Bundle0001
 public import Formalism.YangianSpanCharacter.YangianRTTProofs.DiagonalEntryEqOfModularRelation
 public import Mathlib
 public import Formalism.YangianSpanCharacter.YangianRTTProofs.MinusFrameIdentity
 public import Formalism.YangianSpanCharacter.StatementT
-public import Formalism.FormalDegreeBessel.FinalWR
-public import Formalism.YangianSpanCharacter.ExchangeGen
+public import Formalism.FormalDegreeBessel.Bundle0001
 
 @[expose] public section
 

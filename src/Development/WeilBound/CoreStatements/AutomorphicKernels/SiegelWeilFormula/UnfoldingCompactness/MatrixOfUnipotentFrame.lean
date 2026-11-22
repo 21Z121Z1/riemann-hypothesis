@@ -2,10 +2,10 @@ module
 
 public import Development.WeilBound.CoreStatements.AutomorphicKernels.SiegelWeilFormula.AuxiliaryPrimeFunction
 public import Development.WeilBound.CoreStatements.AutomorphicKernels.EisensteinSeriesG2.G2HaarMeasure.CountableRationalPointsDoubled
-public import Development.WeilBound.CoreStatements.AutomorphicKernels.EisensteinSeriesG2.G2HaarMeasure.ContinuousInFrame
+public import Development.WeilBound.CoreStatements.AutomorphicKernels.EisensteinSeriesG2.G2HaarMeasure.Bundle0001
 public import Development.WeilBound.CoreStatements.AutomorphicKernels.EisensteinSeriesG2.UnitsBorelSpace.BorelSpaceDoubledGroup
-public import Development.WeilBound.ThetaLifts.LatticeBasics.ContinuousFlat
-public import Development.WeilBound.ThetaLifts.LatticeBasics.IsCompactOfUnits
+public import Development.WeilBound.ThetaLifts.LatticeBasics.Bundle0013
+public import Development.WeilBound.ThetaLifts.LatticeBasics.Bundle0008
 public import Development.WeilBound.CoreStatements.AutomorphicKernels.SiegelWeilFormula.UnfoldingCompactness.IncMTranspose
 
 @[expose] public section

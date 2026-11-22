@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Formalism.PeriodIntegrals.LowCyc
-public import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.LowSmooth
+public import Formalism.PeriodIntegrals.Bundle0013
+public import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.Bundle0008
 public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.UnitaryQuotientCompactness.MaximalCompactIsCompact
 public import CompanionTheory.HarishChandraModules.BesselParameterIntegrals.SmoothCyclicVectors.IntegralMemOfIsClosed
 public import CompanionTheory.HarishChandraModules.BesselParameterIntegrals.SmoothCyclicVectors.PhMeas

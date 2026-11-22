@@ -3,7 +3,7 @@ module
 public import Mathlib
 public import Development.AutomorphicSpectrum.Proofs.MetricProofs.ColFlags
 public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.SncModelReindexedCoords
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ComplexCoordsReindexed
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0126
 public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsCoordsForComponent
 
 @[expose] public section

@@ -2,8 +2,8 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.StdLvPr
-public import Formalism.LocalToGlobal.HermitianForms.TiedTwJSym
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.TrueColumnSpacesStandardInFrameCoords
+public import Formalism.LocalToGlobal.HermitianForms.Bundle0006
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0297
 
 @[expose] public section
 

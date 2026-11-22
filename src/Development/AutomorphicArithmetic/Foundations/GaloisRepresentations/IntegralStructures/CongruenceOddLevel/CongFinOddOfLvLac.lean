@@ -1,8 +1,8 @@
 module
 
 public import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.IntegralStructures.CongruenceOddLevel.NotApartOfOverPair
-public import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.IntegralStructures.CongruenceOddLevel.ExistsEllType
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.LinearIndependentSimulEigen
+public import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.IntegralStructures.CongruenceOddLevel.Bundle0001
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0229
 
 @[expose] public section
 

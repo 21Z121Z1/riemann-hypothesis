@@ -2,16 +2,17 @@ module
 
 public import Mathlib
 public import GroundTheory.HeightsAndTheta.Heights.Antisymmetric.Statements
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.InterSt
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArithmeticIntersection.MultihomogeneousIdeals.ExistsUniqueStatement
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.Bundle0006
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArithmeticIntersection.MultihomogeneousIdeals.Bundle0001
 public import Development.AutomorphicSpectrum.Definitions.DivisibilityTowers.HeckeSectionsIsotropicCommutatorPairingPower
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.InterNamed
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArakelovGeometry.KleimanNefness.KleimanSt
-public import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.CutoffCoefficientsBoundStatement
-public import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.TowerHeightIdentityExpansionStatement
-public import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.HomogeneousPowerSumDecompositionStatement
-public import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.TestPolynomialShiftTotalStatement
-public import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.TestPolynomialRemainderBoundStatement
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.Bundle0012
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArakelovGeometry.KleimanNefness.Bundle0001
+public import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.Bundle0009
+public import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.Bundle0011
+public import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.Bundle0004
+public import Development.AutomorphicSpectrum.Definitions.DivisibilityTowers.CompactGapsGE
+public import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.Bundle0028
+public import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.TestPolynomialRemainderBound
 
 @[expose] public section
 
@@ -38,11 +39,11 @@ theorem test_height_bound_slope_flat : ∀ II : IntersectionSystem, ∀ (Ψ : Ty
   intro II Ψ _ _ N T _ hh frob C C' rd Lval hC hC' hrd hprop hI9 hPF hSL hhh B₀ A₀ b₀ hB128 hB4 hbad hId
   have hj1 := T.j_pos
   have hjN := T.j_lt
-  obtain ⟨hhom, htd, hcase1, hcase2⟩ := GlobalTheory.T.test_polynomial_shift_total Ψ N T.j hj1 hjN
-  obtain ⟨Q, hQ1, hQ2⟩ := GlobalTheory.T.homogeneous_power_sum_decomposition Ψ N (testPoly T.j) (by omega) hhom
+  obtain ⟨hhom, htd, hcase1, hcase2⟩ := _root_.GlobalTheory.CompanionTheory.Ar.Top.testPoly_facts Ψ N T.j hj1 hjN
+  obtain ⟨Q, hQ1, hQ2⟩ := _root_.GlobalTheory.CompanionTheory.Ar.Top.form_top_succ_eq_sum_pk Ψ N (testPoly T.j) (by omega) hhom
   have hdec : IsDecomp (testPoly T.j) Q := ⟨hQ1, hQ2⟩
-  have hPP := GlobalTheory.T.tower_height_identity_expansion II Ψ N T hh frob B₀ A₀ b₀ (testPoly T.j) Q hId hdec
-  have hR := GlobalTheory.T.test_polynomial_remainder_bound Ψ N T.j T.bad frob B₀ Q hj1 hjN hB4 hdec
+  have hPP := _root_.GlobalTheory.CompanionTheory.Ar.Top.identOnDecomposedForm II Ψ N T hh frob B₀ A₀ b₀ (testPoly T.j) Q hId hdec
+  have hR := _root_.GlobalTheory.CompanionTheory.Ar.Top.testRest_bound Ψ N T.j T.bad frob B₀ Q hj1 hjN hB4 hdec
   have hAb := GlobalTheory.T.cutoff_coefficients_bound II Ψ N T hh frob C' rd Lval B₀ A₀ b₀ hprop hI9 hPF hB128 hbad hId
   have hSL' := hSL B₀ hB128 hB4 hbad
   have hvol : 0 < T.volT := by

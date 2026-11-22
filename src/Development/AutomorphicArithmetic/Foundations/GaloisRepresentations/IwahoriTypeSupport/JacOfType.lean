@@ -2,8 +2,8 @@ module
 
 public import Mathlib
 public import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.IwahoriTypeSupport.TorusScalar
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsJLeviMulJPlus
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.IwahoriNeBotOfSpherical
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0616
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0277
 
 @[expose] public section
 

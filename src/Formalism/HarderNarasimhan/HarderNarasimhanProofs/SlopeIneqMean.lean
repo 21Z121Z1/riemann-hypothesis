@@ -3,12 +3,10 @@ module
 public import Formalism.HarderNarasimhan.StatementPl
 public import Formalism.LatticeSlopes.ExistsSaturatedSlopeEqMuMax
 public import Formalism.HarderNarasimhan.HarderNarasimhanProofs.SlopeIneq
-public import Formalism.HarderNarasimhan.HarderNarasimhanProofs.TwistFinrankEq
+public import Formalism.HarderNarasimhan.HarderNarasimhanProofs.Bundle0004
 public import Formalism.HarderNarasimhan.HarderNarasimhanProofs.DiscreteSpanOfLinIndep
-public import Formalism.HarderNarasimhan.HarderNarasimhanProofs.RescaleCovol
-public import Formalism.HarderNarasimhan.HarderNarasimhanProofs.ShiftInvariance
+public import Formalism.HarderNarasimhan.HarderNarasimhanProofs.Bundle0003
 public import Formalism.HarderNarasimhan.HarderNarasimhanProofs.HNSlopes
-public import Formalism.HarderNarasimhan.HarderNarasimhanProofs.MuChar
 
 @[expose] public section
 

@@ -2,24 +2,25 @@ module
 
 public import Mathlib
 public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.BdryChart
-public import ReciprocityTheory.AnalyticForms.PlurisubharmonicFunctions.IsPshLocallyIntegrableStatement
+public import ReciprocityTheory.AnalyticForms.PlurisubharmonicFunctions.Bundle0001
 public import Development.AutomorphicSpectrum.Statements.GeometryStatements.FlatDegree
-public import Development.AutomorphicSpectrum.Statements.GeometryStatements.NineGeoU
-public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.ExistsUniqueLeftBasisCoordsAdicCompletion
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.InteriorPointLatticeDataStatement
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.HodgeGramPullbackIff
+public import Development.AutomorphicSpectrum.Statements.GeometryStatements.Bundle0006
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.Bundle0014
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0216
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.BlowupProjections.BlowupProjStatement
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0117
 public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsLinearLiftOfAdditiveFamily
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExponentialSurjectiveSemiabelian
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.PeriodLatticeDiscreteFree
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.IsDerivAt0CompLinMap
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.HodgeFormOfIsHodgeGram
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.HodgeHermitianFormExists
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.InteriorPointPolarised
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0233
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0118
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0201
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0159
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0215
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0154
 public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsLieModel
-public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.VerticalDerivativeInCoordinates
-public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.TorsionEqAndWeilIsOfIsHolTo
-public import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.ExistsHolUnifReparam
-public import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.SmulPeriodMapMkZeroFstEqNegForm
+public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0032
+public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0060
+public import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.Bundle0012
+public import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.Bundle0006
 
 @[expose] public section
 
@@ -344,7 +345,7 @@ section Main
 theorem exists_unif_of_interior : Top.Given → ∀ (E : Type) [Field E] [NumberField E] [IsCMField E] (H : Host E) (D : Datum H) (l : Tor.Level H) (Xo : Moduli D l) (c : Coeff l) (Y : Model Xo c (algebraMap (𝓞 c.F) c.F)) (S : Finset ℕ) (Ω : Type) [Field Ω] [CharZero Ω] (K : Type) [Fintype K] (J : K → Type) [∀ k, Fintype (J k)] (y : (Σ k, J k) → Ω) (𝔐 : HodgeCpt Y S y) (σ : KA l →+* ℂ) (n a : ℕ) (C : Flat.BdryChart Xo σ n a) (jj : Sp C.R ⟶ 𝔐.X) (m : SABMap C.t 𝔐.t jj) (B₀ : Set (Fin n → ℂ)) (e : Flat.FamExp C.t.G C.M B₀ C.ψ) (b : Fin n → ℂ) (Bb : 𝓞 E →+* Module.End ℂ (Fin C.g → ℂ)) (Hm : Matrix (Fin C.g) (Fin C.g) ℂ), 1 ≤ D.p + D.q → b ∈ B₀ → 𝔐.Interior (spMap (C.ψ b) ≫ jj) → C.IsRiem b Hm → (∀ a' x, e.ex b (Bb a' x) = e.ex b x ≫ C.t.act.act a') → ∃ (A : Over (Sp ℂ)) (_ : GrpObj A) (φ : A.left ⟶ 𝔐.t.G.left) (u : HolUnif A (𝔐.t.PP.L.pull φ) C.g) (χ : u.Λ → ℂ), IsGrpPullback A 𝔐.t.G (spMap (C.ψ b) ≫ jj) φ ∧ u.IsAH Hm χ ∧ (∀ x, (u.ex x).left ≫ φ = (e.ex b x).left ≫ m.φ) ∧ (∀ x, x ∈ u.Λ ↔ x ∈ e.per b) ∧ (∀ (x : Fin C.g → ℂ) (v : Sp (DualNumber ℂ) ⟶ C.t.G.left), IsDerivAt0 (fun x => (e.ex b x).left) x v → ∃ v' : epsR ℂ ⟶ A, v'.left ≫ φ = v ≫ m.φ ∧ u.IsDiff x v') ∧ ∀ a' a'' : 𝓞 E, (a'' : E) = IsCMField.complexConj E (a' : E) → ∀ x x', hermForm Hm (Bb a' x) x' = hermForm Hm x (Bb a'' x') := by
   intro hG E _ _ _ H D l Xo c Y S Ω _ _ K _ J _ y 𝔐 σ n a C jj m B₀ e b Bb Hm hD hb hint hR hact
   have hpol := HodgeMetric.polarisedAt_of_interior E H D l Xo c Y S Ω K J y 𝔐 (spMap (C.ψ b) ≫ jj) hint
-  obtain ⟨g', Λ, i₁, i₂, R', x, hF, -, -⟩ := GlobalTheory.T.interior_point_lattice_data hG.2.2.2.2.1 E H D l Xo c Y S Ω K J y 𝔐
+  obtain ⟨g', Λ, i₁, i₂, R', x, hF, -, -⟩ := _root_.GlobalTheory.CompanionTheory.Ar.Cusp.FibreEx.exists_riemLat_of_interior hG.2.2.2.2.1 E H D l Xo c Y S Ω K J y 𝔐
     (spMap (C.ψ b) ≫ jj) hD hint hG Empty (fun i => i.elim) (fun i => i.elim)
   obtain ⟨A, iA, φ, u', χ', hp, hAH, hact', hinj, hmem, -⟩ := hF
   obtain ⟨φ', h, h1, hex, hiff, hcount, e0, hone, hder⟩ := exists_fibre_lift m e hb u' hp

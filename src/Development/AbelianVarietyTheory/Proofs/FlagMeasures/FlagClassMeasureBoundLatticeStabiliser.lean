@@ -1,28 +1,28 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.IsLatMeasurableConst
-public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.ExistsIsSatFlagOne
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.UnitaryIwasawaIntegrationFormulaRealPlaceStatement
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.UnipotentRadicalIntegralPointsCovolumeStatement
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.IsSaturatedIsotropicFlagOfAdaptedBasisStatement
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.IsTotallyIsotropicFlagComplexifiedSaturatedFlagStatement
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsGaugeMeasuresIsotropicFlagParabolicStatement
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.AutInstDegreeRootDiscriminantRankStatement
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.IwasawaDecompositionUnitaryIsotropicFlagStatement
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.LeviFactorIntegralModIntegralPointsLeStatement
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.GradedPieceSizesUnipotentLeviCompactMoveStatement
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsMeasurableCosetSectionStatement
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.MeasurableSetIwasawaSliceOfTransversalStatement
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.IwasawaSliceIndicatorLintegralLeStatement
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.IwasawaNMKIntegrationPiProductStatement
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.MeasurableFlagLocalSizesUnitaryStatement
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.IsRiemannianHaarOnSubgroupMapMulRightUnitaryStatement
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.IsotropicFlagUnipotentRadicalClosedSubgroupKeepsStatement
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.IsotropicFlagLeviMaxCompactClosedSubgroupsStatement
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.FlagGradedPieceSizesStabiliserMulStatement
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.FlagLatticeStabiliserRealGroupMulMemStatement
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.FlagLayerProductMeasureMulProdLocalStatement
+public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.Bundle0011
+public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.Bundle0010
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0355
+public import Development.AbelianVarietyTheory.Statements.CuspFrameWeights.Bundle0001
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.UnipotentRadicalIntegralPointsCovolume
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0192
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0163
+public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.Bundle0009
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0268
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0135
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.IwasawaDecompositionUnitaryIsotropicFlag
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.LeviFactorIntegralModIntegralPointsLe
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.GradedPieceSizesUnipotentLeviCompactMove
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0018
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0010
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0240
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0148
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0158
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0160
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0180
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0279
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0142
 
 @[expose] public section
 
@@ -79,7 +79,7 @@ theorem covol_le {G : Type} [Group G] [TopologicalSpace G] [IsTopologicalGroup G
       _ ≤ _ := by
           rw [hform _ (measurable_one.indicator hD)]
           gcongr
-          exact GlobalTheory.T.iwasawa_slice_indicator_lintegral_le G N M K μN μM μK δ (fun k => k * (σ k)⁻¹) D DN (DM ∩ Z) hδ
+          exact _root_.GlobalTheory.iwasawa_slice_lintegral_le G N M K μN μM μK δ (fun k => k * (σ k)⁻¹) D DN (DM ∩ Z) hδ
             (measurable_id.mul hσ.inv) hDN (hDM.inter hZ) h1 h2 h3 h4 (fun k _ => hκ k) hr hδr
             (fun u hu m hm k hk h => (hiff u hu m hm k hk).1 h)
   have hcR0 : c * R ≠ 0 := mul_ne_zero hc0 hR0
@@ -186,10 +186,10 @@ theorem bound : ∀ (I I₀ : AutInst) (e : I₀.E ≃+* I.E) (xf : I.Gf) (a : �
     exact zero_le
   obtain ⟨g₀, hg₀⟩ := Set.nonempty_iff_ne_empty.2 hA
   have hsat := GlobalTheory.T.isSaturatedIsotropicFlag_of_adaptedBasis I I₀ e xf a j S Λ x₀ T T' T₀ hj had
-  have hiso := GlobalTheory.T.isTotallyIsotropicFlag_complexified_saturatedFlag I _ a j S hsat
-  obtain ⟨-, hrd, hrd1, hf, hcard, -⟩ := GlobalTheory.T.autInst_degree_rootDiscriminant_rank I
+  have hiso := _root_.GlobalTheory.FlagMeas.isIsoFlag_flagAt_of_isSatFlag I _ a j S hsat
+  obtain ⟨-, hrd, hrd1, hf, hcard, -⟩ := _root_.GlobalTheory.FlagMeas.instance_numbers I
   have hf0 : I.f ≠ 0 := by omega
-  have hex := fun v => GlobalTheory.T.exists_gauge_measures_isotropicFlag_parabolic I.n (I.ε v) a j _ hj (hiso v)
+  have hex := fun v => _root_.GlobalTheory.FlagMeas.gaugeSubEx I.n (I.ε v) a j _ hj (hiso v)
   choose μN hσN hμN using fun v => (hex v).1
   choose μM hσM hμM using fun v => (hex v).2.1
   choose μK hK0 hK1 hKl using fun v => (hex v).2.2
@@ -208,7 +208,7 @@ theorem bound : ∀ (I I₀ : AutInst) (e : I₀.E ≃+* I.E) (xf : I.Gf) (a : �
   haveI : ∀ v, PolishSpace (Formalism.REAL.UJ (I.ε v)) := fun v => by
     haveI : PolishSpace (Matrix (Fin I.n) (Fin I.n) ℂ) := inferInstanceAs (PolishSpace (Fin I.n → Fin I.n → ℂ))
     exact (Formalism.REAL.isClosedEmbeddingMatrix I.n (I.ε v)).1.polishSpace
-  have hiw := fun v => GlobalTheory.T.iwasawa_decomposition_unitary_isotropicFlag I.n (I.ε v) a j _ (hiso v)
+  have hiw := fun v => _root_.GlobalTheory.RealIwasawa.iwasawa I.n (I.ε v) a j _ (hiso v)
   have hdec : ∀ g : I.Ginf, ∃ u ∈ Subgroup.pi Set.univ N, ∃ m ∈ Subgroup.pi Set.univ M,
       ∃ k ∈ Subgroup.pi Set.univ K, g = u * m * k := by
     intro g
@@ -216,7 +216,7 @@ theorem bound : ∀ (I I₀ : AutInst) (e : I₀.E ≃+* I.E) (xf : I.Gf) (a : �
     exact ⟨u, (mN _).2 hu, m, (mM _).2 hm, k, (mK _).2 hk, funext he⟩
   have hmove : ∀ u ∈ Subgroup.pi Set.univ N, ∀ m ∈ Subgroup.pi Set.univ M, ∀ k ∈ Subgroup.pi Set.univ K, ∀ i,
       sizesAt I xf S (u * m * k) i ^ I.f = sizesAt I xf S 1 i ^ I.f * ∏ v, locSize j (flagAt I S v) (uMat (m v)) i :=
-    fun u hu m hm k hk i => GlobalTheory.T.gradedPieceSizes_unipotent_levi_compact_move I xf a j hj S hsat u m k ((mN _).1 hu) ((mM _).1 hm) ((mK _).1 hk) i
+    fun u hu m hm k hk i => _root_.GlobalTheory.FlagMeas.SizeMove.size_move I xf a j hj S hsat u m k ((mN _).1 hu) ((mM _).1 hm) ((mK _).1 hk) i
   have hs0 : ∀ g i, 0 ≤ sizesAt I xf S g i := fun g i => size_nonneg I _ _ _
   have hm1 : ∀ m ∈ Subgroup.pi Set.univ M, ∀ i,
       sizesAt I xf S m i ^ I.f = sizesAt I xf S 1 i ^ I.f * ∏ v, locSize j (flagAt I S v) (uMat (m v)) i := by
@@ -232,10 +232,10 @@ theorem bound : ∀ (I I₀ : AutInst) (e : I₀.E ≃+* I.E) (xf : I.Gf) (a : �
   let s : I.Ginf → Fin a → ℝ := fun m i =>
     (sizesAt I xf S 1 i ^ I.f * ∏ v, locSize j (flagAt I S v) (uMat (m v)) i) ^ ((I.f : ℝ)⁻¹)
   have hloc : ∀ v, Measurable fun (g : Formalism.REAL.UJ (I.ε v)) (i : Fin a) => locSize j (flagAt I S v) (uMat g) i :=
-    fun v => measurable_pi_iff.2 fun i => GlobalTheory.T.measurable_flagLocalSizes_unitary _ _ _ _ _ i
+    fun v => measurable_pi_iff.2 fun i => _root_.GlobalTheory.FlagMeas.measurable_locSize_uMat _ _ _ _ _ i
   have hsm : Measurable s := measurable_pi_iff.2 fun i =>
     (measurable_const.mul (Finset.measurable_prod _ fun v _ =>
-      (GlobalTheory.T.measurable_flagLocalSizes_unitary _ _ _ _ _ i).comp (measurable_pi_apply v))).pow_const _
+      (_root_.GlobalTheory.FlagMeas.measurable_locSize_uMat _ _ _ _ _ i).comp (measurable_pi_apply v))).pow_const _
   have hs : ∀ u ∈ Subgroup.pi Set.univ N, ∀ m ∈ Subgroup.pi Set.univ M, ∀ k ∈ Subgroup.pi Set.univ K,
       s m = sizesAt I xf S (u * m * k) := by
     intro u hu m hm k hk
@@ -251,7 +251,7 @@ theorem bound : ∀ (I I₀ : AutInst) (e : I₀.E ≃+* I.E) (xf : I.Gf) (a : �
   have htδ : ∀ m ∈ Subgroup.pi Set.univ M, ENNReal.ofReal (layerProd I.n I.f j (sizesAt I xf S 1) id) *
       ∏ v, δ v (m v) = ENNReal.ofReal (layerProd I.n I.f j (sizesAt I xf S m) id) := by
     intro m hm
-    rw [GlobalTheory.T.flagLayerProductMeasure_mul_prod_local _ I.n I.f a j _ _ (fun v => locSize j (flagAt I S v) (uMat (m v))) (hm1 m hm),
+    rw [_root_.GlobalTheory.FlagMeas.layerProd_mul_prod _ I.n I.f a j _ _ (fun v => locSize j (flagAt I S v) (uMat (m v))) (hm1 m hm),
       ENNReal.ofReal_mul hL1.le,
       ENNReal.ofReal_prod_of_nonneg fun v _ => layerProd_nonneg _ _ _ (locSize_nonneg _ _ _)]
   have ht0 : ENNReal.ofReal (layerProd I.n I.f j (sizesAt I xf S 1) id) ≠ 0 := by simpa using hL1
@@ -261,15 +261,15 @@ theorem bound : ∀ (I I₀ : AutInst) (e : I₀.E ≃+* I.E) (xf : I.Gf) (a : �
     Real.rpow_pos_of_pos (by rw [hrd]; linarith) _
   let F : (Fin a → ℝ) → ENNReal := B.indicator fun τ => ENNReal.ofReal (layerProd I.n I.f j τ id)
   have hF : Measurable F := (measurable_layerProd I.n I.f j).ennreal_ofReal.indicator hB
-  have hform := GlobalTheory.T.iwasawaNMKIntegration_pi_product _ (fun v => Formalism.REAL.UJ (I.ε v)) (fun v => Formalism.REAL.muG (I.ε v)) μN μM μK
+  have hform := _root_.GlobalTheory.NMKProd.prod_formula _ (fun v => Formalism.REAL.UJ (I.ε v)) (fun v => Formalism.REAL.muG (I.ε v)) μN μM μK
     (fun v => ENNReal.ofReal (c v)) (fun _ => ENNReal.ofReal (cIw p q j)) δ (fun v => by simpa using hcp v)
-    (fun v => ENNReal.ofReal_ne_top) hδ (fun v φ hφ => GlobalTheory.T.unitary_iwasawa_integration_formula_real_place I.n (I.ε v) p q (hsig v).1 (hsig v).2 a j hj _
+    (fun v => ENNReal.ofReal_ne_top) hδ (fun v φ hφ => _root_.GlobalTheory.FlagMeas.iwasawaFormula I.n (I.ε v) p q (hsig v).1 (hsig v).2 a j hj _
       (hiso v) (c v) (μN v) (μM v) (μK v) (hc v) (hμN v) (hμM v) (hK0 v) (hK1 v) (hKl v) φ hφ)
   rw [← ENNReal.ofReal_prod_of_nonneg fun v _ => (hcp v).le, Finset.prod_const, Finset.card_univ, hcard,
     ← ENNReal.ofReal_pow hIw.le] at hform
-  have hrad := GlobalTheory.T.unipotentRadical_integral_points_covolume I xf a j hj S hsat μN hμN
+  have hrad := _root_.GlobalTheory.RadCov.radicalCovolume I xf a j hj S hsat μN hμN
   rw [ENNReal.ofReal_mul hR.le] at hrad
-  have hlevi := GlobalTheory.T.levi_factor_integral_mod_integral_points_le I I₀ e xf a j S Λ x₀ T T' T₀ hj had μM c₀ hμM hc₀ F hF
+  have hlevi := _root_.GlobalTheory.FlagBase.LeviInt.covol_leviGroup_le I I₀ e xf a j S Λ x₀ T T' T₀ hj had μM c₀ hμM hc₀ F hF
   have eN : {g : I.Ginf | ∀ v, g v ∈ flagN (I.ε v) (flagAt I S v)} =
       ((Subgroup.pi Set.univ N : Subgroup I.Ginf) : Set I.Ginf) := Set.ext fun x => (mN x).symm
   have eM : {g : I.Ginf | ∀ v, g v ∈ flagM (I.ε v) (flagAt I S v)} =
@@ -300,12 +300,12 @@ theorem bound : ∀ (I I₀ : AutInst) (e : I₀.E ≃+* I.E) (xf : I.Gf) (a : �
     ENNReal.ofReal_ne_top hform (flagGroup I xf S)
     {g : I.Ginf | ∃ γ ∈ I.GFset, γ.1 = g ∧ xf⁻¹ * γ.2 * xf ∈ I.Kset ∧ ∀ v, g v ∈ flagN (I.ε v) (flagAt I S v)}
     (leviGroup I xf S) {g | sizesAt I xf S g ∈ B} (s ⁻¹' B)
-    (hsm hB) (GlobalTheory.T.flagLatticeStabiliserRealGroup_mul_mem I xf a S)
+    (hsm hB) (_root_.GlobalTheory.FlagStabMul.flagGroup_mul I xf a S)
     (fun x ⟨γ, h1, h2, h3, h4⟩ => ⟨⟨γ, h1, h2, h3⟩, fun v => (hgN v).2.2 _ (h4 v)⟩)
     (fun m ⟨h1, g, hg, u, hu, h2⟩ => ⟨(mM _).2 h1, g, hg, u, (mN _).2 hu, h2⟩)
     (fun x ⟨γ, h1, h2, h3, h4⟩ => (mN _).2 h4)
     (fun γ hγ g hg => by
-      rw [Set.mem_setOf_eq, GlobalTheory.T.flagGradedPieceSizes_stabiliser_mul I xf a j S hsat γ hγ g]
+      rw [Set.mem_setOf_eq, _root_.GlobalTheory.FlagSizeInv.sizesAt_mul I xf a j S hsat γ hγ g]
       exact hg)
     (fun u hu m hm k hk h => by
       rw [Set.mem_preimage, hs u hu m hm k hk]

@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Development.WeilBound.ThetaLifts.SchwartzMoments.MulLPowApply
-public import Development.WeilBound.ThetaLifts.SchwartzMoments.JetApply
+public import Development.WeilBound.ThetaLifts.SchwartzMoments.Bundle0002
+public import Development.WeilBound.ThetaLifts.SchwartzMoments.Bundle0001
 public import Development.WeilBound.ThetaLifts.SchwartzMoments.DenseC
 public import Development.WeilBound.ThetaLifts.LocalTheory.ArchimedeanBumps.DictIrr
 

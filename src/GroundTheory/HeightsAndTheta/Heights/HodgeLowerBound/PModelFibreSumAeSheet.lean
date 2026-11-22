@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.PModelFibreSumAeFibres
+public import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.Bundle0024
 
 @[expose] public section
 

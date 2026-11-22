@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import ReciprocityTheory.CommutativeAlgebra.CohenMacaulay.ModDepthGE
+public import ReciprocityTheory.CommutativeAlgebra.CohenMacaulay.Bundle0001
 
 @[expose] public section
 

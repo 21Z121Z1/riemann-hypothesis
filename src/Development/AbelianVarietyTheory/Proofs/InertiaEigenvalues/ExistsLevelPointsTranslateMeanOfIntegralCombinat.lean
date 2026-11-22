@@ -1,13 +1,13 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ValRingLocRing
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0784
 public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.TranslateSumVacuumMovedByAdelicPair
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.HeisenbergOperatorFixThetaDatumAwaySplitPlaces
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0118
 public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.IsSelfDualCLatFrame
-public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.SmulMemLatO
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.DatumFnLevPeriod
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.MovedLevPoint
+public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.Bundle0058
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0785
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0771
 
 @[expose] public section
 

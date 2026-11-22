@@ -1,10 +1,10 @@
 module
 
 public import Development.WeilBound.RepresentationTheoryGL.ResidualSpectrum.ExponentialNegativity.ExpNegGlue
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IdeleModuleDetDiagUnitsPosIdele
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IsLeftInvariantOfIsAutForm
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IsAddHaarMeasureUnipMeasure
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.LcscAdelicUnitaryGroup
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0292
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0442
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0440
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0061
 
 @[expose] public section
 

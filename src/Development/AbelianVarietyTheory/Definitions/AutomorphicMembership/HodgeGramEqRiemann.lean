@@ -2,12 +2,12 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.DualGramInterpGram
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsFrPtOfEigFrame
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.PtEqOfPtOfFrameEq
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0495
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0491
 public import Development.AbelianVarietyTheory.Proofs.GenericRegularity.CabsDiagEqOne
-public import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.NonemptyUnifWitnessDataOfIsUnf
-public import Formalism.LocalToGlobal.ProjectiveLattices.RecConj
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArakelovVolumes.UpperBounds.OrthoStatementPf
+public import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.Bundle0017
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0032
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArakelovVolumes.UpperBounds.Bundle0005
 
 @[expose] public section
 

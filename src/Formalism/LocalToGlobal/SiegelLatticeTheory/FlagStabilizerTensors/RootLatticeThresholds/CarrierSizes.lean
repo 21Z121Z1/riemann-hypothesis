@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Formalism.SharpRestriction.CuspSpanNormBounds.StandingNumericalData
-public import Formalism.HermitianCurvature.StatementJCT
+public import Formalism.HermitianCurvature.Bundle0008
 public import Formalism.SharpRestriction.CuspSpanNormBounds.LocalModelPeriodLattices
 public import Formalism.HermitianCurvature.HermitianCurvatureProofs.SupremumAIsMajorant
 

@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.PhiCSt
+public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0023
 
 @[expose] public section
 

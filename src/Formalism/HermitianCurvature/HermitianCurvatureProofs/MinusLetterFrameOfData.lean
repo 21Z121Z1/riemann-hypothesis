@@ -1,8 +1,8 @@
 module
 
 public import Formalism.HermitianCurvature.StatementFr
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.PositionInsertionDiagonalCompat
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CommuteInvLeft
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0018
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0005
 
 @[expose] public section
 

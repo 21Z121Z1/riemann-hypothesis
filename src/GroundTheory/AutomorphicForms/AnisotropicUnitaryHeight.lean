@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import GroundTheory.AutomorphicForms.AnisotropicUnitaryRes
-public import GroundTheory.AutomorphicForms.AnisotropicHeight
+public import GroundTheory.AutomorphicForms.Bundle0023
 
 @[expose] public section
 

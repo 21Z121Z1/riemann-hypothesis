@@ -1,7 +1,7 @@
 module
 
-public import Formalism.CyclotomicNorms.StatementI
-public import Formalism.GaloisIrreducibility.GaloisIrreducibilityProofs.PowerPCycle
+public import Formalism.CyclotomicNorms.Bundle0001
+public import Formalism.GaloisIrreducibility.GaloisIrreducibilityProofs.Bundle0001
 
 @[expose] public section
 

@@ -1,6 +1,6 @@
 module
 
-public import Formalism.SharpRestriction.GrowthBounds.CoeffOneAlongCvLg
+public import Formalism.SharpRestriction.GrowthBounds.Bundle0002
 
 @[expose] public section
 

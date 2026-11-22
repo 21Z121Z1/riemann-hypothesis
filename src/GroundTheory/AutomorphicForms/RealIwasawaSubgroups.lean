@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import GroundTheory.AutomorphicForms.RealGroups
-public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.StrictlyUpperRank
+public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0059
 
 @[expose] public section
 

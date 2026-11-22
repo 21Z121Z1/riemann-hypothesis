@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.WeightGoodReductionAtPrime
-public import Development.AutomorphicArithmetic.ResidueCharacters.TwistDef
+public import Development.AutomorphicArithmetic.ResidueCharacters.Bundle0001
 
 @[expose] public section
 

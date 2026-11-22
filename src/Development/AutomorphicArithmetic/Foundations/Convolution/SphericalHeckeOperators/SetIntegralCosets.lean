@@ -1,7 +1,7 @@
 module
 
 public import Development.AutomorphicArithmetic.Foundations.Convolution.SphericalHeckeOperators.SymSum
-public import Development.AutomorphicArithmetic.Foundations.Convolution.SphericalHeckeOperators.DcoShape
+public import Development.AutomorphicArithmetic.Foundations.Convolution.SphericalHeckeOperators.Bundle0001
 public import GroundTheory.AutomorphicForms.WhittakerGroups
 
 @[expose] public section

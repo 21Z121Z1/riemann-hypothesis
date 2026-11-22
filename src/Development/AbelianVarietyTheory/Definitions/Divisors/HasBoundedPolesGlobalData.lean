@@ -5,7 +5,7 @@ public import Development.AbelianVarietyTheory.Definitions.Divisors.LineBundleGl
 public import Development.AbelianVarietyTheory.Definitions.Divisors.IsHeightIffOfDegreeEq
 public import Development.AbelianVarietyTheory.Definitions.Divisors.LinearIndependentPullChart
 public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.GeometricallyIntegralIffGeometricallyConnectedOf
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsAffineOpenPreimageOfIsPullback
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0765
 
 @[expose] public section
 

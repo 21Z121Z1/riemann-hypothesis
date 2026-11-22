@@ -1,9 +1,9 @@
 module
 
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.TorsionBoundsChains.FaceDSingle
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.TorsionBoundsChains.Shapiro
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.TorsionBoundsChains.FinGroup
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.TorsionBoundsChains.Transport
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.TorsionBoundsChains.Bundle0003
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.TorsionBoundsChains.Bundle0005
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.TorsionBoundsChains.Bundle0002
 
 @[expose] public section
 

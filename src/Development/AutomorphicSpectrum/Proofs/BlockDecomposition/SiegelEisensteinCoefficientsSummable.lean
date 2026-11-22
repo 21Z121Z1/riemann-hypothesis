@@ -1,23 +1,23 @@
 module
 
 public import Mathlib
-public import Development.WeilBound.CoreStatements.TemperedRepresentationTheory.WeilSiegelTheta.BigCellDefs
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ContinuousRs
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ThetaIntegralContinuousStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ThetaIntegralLocallySummableBoundStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.PoissonSummationHermitianLatticeStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SummableOfLatticeDecayStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FourierOneParameterIntegralStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FourierParameterDerivativeStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.TemperateMultiplierPreservesSchwartzStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ArchimedeanMultiplierTemperateStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CharacterAlongOneParameterPathStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.InjectivePairingFiniteFamilyStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IntegralMultiplePathTrivialCharacterStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IntegrableSchwartzAHaarStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ThetaSumInvariantUnipotentTranslate
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SchwartzBoundFiniteInfinite
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ContinuousHermPart
+public import Development.WeilBound.CoreStatements.TemperedRepresentationTheory.WeilSiegelTheta.Bundle0001
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0478
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0657
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0717
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0645
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0041
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0032
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0033
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0504
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0491
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0493
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0500
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0636
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0583
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0472
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0424
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0461
 
 @[expose] public section
 
@@ -215,9 +215,9 @@ theorem W_mult {ψ : AddChar (AF D.host.F) ℂ} (hψ : IsCharAF D.host.F ψ) {θ
   have hμ' : ∃ 𝓕, IsCovolOne (ratMx D V.rank r) μ 𝓕 := ⟨𝓕, hF⟩
   have hMφ := hmem φ hφ
   have cont : ∀ φ ∈ schwartzA θ V.rank r, Continuous (Jt ψ V μ φ) :=
-    fun φ h => GlobalTheory.T.theta_integral_continuous D r V ψ θ μ φ hψ hθ hμ' h
+    fun φ h => _root_.GlobalTheory.CompanionTheory.BigCellJ.jt_continuous D r V ψ θ μ φ hψ hθ hμ' h
   have intg : ∀ φ ∈ schwartzA θ V.rank r, Integrable (Jt ψ V μ φ) lam' := fun φ h =>
-    (GlobalTheory.T.poisson_summation_hermitian_lattice D r ψ hψ lam' 𝓖 hlam _ (cont φ h) (GlobalTheory.T.theta_integral_locally_summable_bound D r V ψ θ μ φ hm hψ hθ hμ' h)).1
+    (GlobalTheory.T.poisson_summation_hermitian_lattice D r ψ hψ lam' 𝓖 hlam _ (cont φ h) (_root_.GlobalTheory.CompanionTheory.JtUnif.jt_unif D r V ψ θ μ φ hm hψ hθ hμ' h)).1
   have hc : ∀ (s : ℝ) y, ψ (halfTr (tq V (path hσ a s).1 y)) =
       Complex.exp (2 * Real.pi * Complex.I * ((s * multM θ α V a y : ℝ) : ℂ)) := fun s y => by
     rw [tq_path]
@@ -225,8 +225,8 @@ theorem W_mult {ψ : AddChar (AF D.host.F) ℂ} (hψ : IsCharAF D.host.F ψ) {θ
   exact GlobalTheory.T.fourier_one_parameter_integral (hermA D r) lam' (path hσ a) (continuous_path hσ a) _ _ (cont φ hφ) (cont _ hMφ)
     (intg φ hφ) (intg _ hMφ) (chi ψ β) (continuous_chi hψ β) (norm_chi hψ β) (pairF θ α a β)
     (chi_path hσ hph a β)
-    (hasDeriv_Jt hψ V μ (GlobalTheory.T.integrable_of_mem_schwartzA D θ hθ _ _ μ φ hφ) hMc.measurable
-      (GlobalTheory.T.integrable_of_mem_schwartzA D θ hθ _ _ μ _ hMφ) (path hσ a) hc)
+    (hasDeriv_Jt hψ V μ (_root_.GlobalTheory.CompanionTheory.WSum.integrable_schwartzA_haar D θ hθ _ _ μ φ hφ) hMc.measurable
+      (_root_.GlobalTheory.CompanionTheory.WSum.integrable_schwartzA_haar D θ hθ _ _ μ _ hMφ) (path hσ a) hc)
 
 set_option synthInstance.maxHeartbeats 400000 in
 theorem W_int {ψ : AddChar (AF D.host.F) ℂ} (hψ : IsCharAF D.host.F ψ) {θ : InfFam D}
@@ -298,9 +298,9 @@ theorem GlobalTheory.CompanionTheory.WSum.summable_W_of_two_mul_lt_rank : ∀ (D
   haveI : lam.IsAddHaarMeasure := hlam.1
   obtain ⟨ψ₀, h₀, α, hα0, hα⟩ := GlobalTheory.ThetaAllChar.exists_std hψ
   obtain ⟨σ, hσ⟩ := GlobalTheory.RealLineAt.exists_inverse_chart hθ
-  have hph := GlobalTheory.T.character_along_one_parameter_path D ψ ψ₀ h₀ α hα θ σ hσ
-  obtain ⟨d, a, hinj⟩ := GlobalTheory.T.injective_pairing_finite_family D r θ hθ α hα0
-  have hq := fun k => GlobalTheory.T.archimedean_multiplier_temperate D r θ hθ α V (a k)
+  have hph := _root_.GlobalTheory.CompanionTheory.WSum.psi_halfTr_rs D ψ ψ₀ h₀ α hα θ σ hσ
+  obtain ⟨d, a, hinj⟩ := _root_.GlobalTheory.CompanionTheory.WSum.Sep.exists_separating D r θ hθ α hα0
+  have hq := fun k => _root_.GlobalTheory.CompanionTheory.WSum.multM_tempered D r θ hθ α V (a k)
   choose q hqt hqe using hq
   have hcomp : Continuous fun y : Mx D V.rank r => (fun τ i j => compAt θ τ y i j :
       D.what₂.Tau → Fin V.rank → Fin r → ℂ) :=
@@ -314,14 +314,14 @@ theorem GlobalTheory.CompanionTheory.WSum.summable_W_of_two_mul_lt_rank : ∀ (D
   have hmem : ∀ k, ∀ φ ∈ schwartzA θ V.rank r,
       (fun y => (GlobalTheory.CompanionTheory.WSum.multM θ α V (a k) y : ℂ) * φ y) ∈ schwartzA θ V.rank r := fun k φ h => by
     simp only [hqe k]
-    exact GlobalTheory.T.temperate_multiplier_preserves_schwartz D θ _ _ (q k) (hqt k) φ h
+    exact _root_.GlobalTheory.CompanionTheory.WSum.mul_mem_schwartzA D θ _ _ (q k) (hqt k) φ h
   have hdec := GlobalTheory.CompanionTheory.WSum.decay_abs (schwartzA θ V.rank r : Set (Mx D V.rank r → ℂ))
     (fun φ β => W ψ V μ lam φ β) (fun k φ y => (GlobalTheory.CompanionTheory.WSum.multM θ α V (a k) y : ℂ) * φ y)
     (fun k β => GlobalTheory.CompanionTheory.WSum.pairF θ α (a k) β)
     (fun φ _ => ⟨_, fun β => GlobalTheory.CompanionTheory.WSum.norm_W_le hψ V μ lam φ β⟩) hmem
     (fun k φ h β => GlobalTheory.CompanionTheory.WSum.W_mult hψ hθ hσ hph hm hμ hlam (a k) (hmem k) (hMc k) h β) Finset.univ φ hφ
   obtain ⟨C, hC⟩ := hdec
-  have hlev := fun k => GlobalTheory.T.integral_multiple_path_trivial_character D r V ψ hψ θ σ hσ (a k) φ hφ
+  have hlev := fun k => _root_.GlobalTheory.CompanionTheory.WSum.Level.level D r V ψ hψ θ σ hσ (a k) φ hφ
   choose Nk hNk hNy using hlev
   refine GlobalTheory.T.summable_of_lattice_decay_of_injective (HermE D r) d _ (fun β k => GlobalTheory.CompanionTheory.WSum.pairF θ α (a k) β) hinj (∏ k, Nk k)
     (Finset.prod_pos fun k _ => hNk k) C hC fun β hW k => ?_

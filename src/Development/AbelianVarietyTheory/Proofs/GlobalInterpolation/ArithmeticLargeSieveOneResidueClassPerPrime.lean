@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.MultiplicativeLargeSieve
+public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0045
 
 @[expose] public section
 

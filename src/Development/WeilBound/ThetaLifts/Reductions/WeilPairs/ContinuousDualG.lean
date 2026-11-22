@@ -3,7 +3,7 @@ module
 public import Mathlib
 public import Development.WeilBound.ThetaLifts.Reductions.WeilPairs.WeilPairData.Imports
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaDistributionAutomorphySourceGroup
-public import Development.WeilBound.ThetaLifts.Reductions.WeilPairs.LatH
+public import Development.WeilBound.ThetaLifts.Reductions.WeilPairs.Bundle0003
 
 @[expose] public section
 

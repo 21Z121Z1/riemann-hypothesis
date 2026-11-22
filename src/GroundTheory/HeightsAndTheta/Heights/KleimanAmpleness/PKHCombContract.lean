@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.KHCombContractSt
+public import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.Bundle0025
 
 @[expose] public section
 

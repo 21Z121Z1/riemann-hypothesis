@@ -1,12 +1,11 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsEquivLift
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ReadingEqZero
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.EquivAllEnl
-public import Development.AutomorphicArithmetic.UnitTensorPairings.GeometricActionOverCoefficientExtension
-public import Development.AutomorphicArithmetic.UnitTensorPairings.ThetaLiftDataOverCoefficientExtension
-public import Development.AutomorphicArithmetic.UnitTensorPairings.CuspSectionsOverCoefficientExtension
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0523
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0498
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0494
+public import Development.AutomorphicArithmetic.UnitTensorPairings.Bundle0002
+public import Development.AutomorphicArithmetic.UnitTensorPairings.Bundle0003
 
 @[expose] public section
 

@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsRootSelectionUnitaryRankOne
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsIntBTmulBasis
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0886
 
 @[expose] public section
 

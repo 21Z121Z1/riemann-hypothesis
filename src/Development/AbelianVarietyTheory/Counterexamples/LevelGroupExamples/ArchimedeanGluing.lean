@@ -1,14 +1,14 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.BlockTheory.ExistenceTori.PrincipalCongruenceGamma
+public import Development.AbelianVarietyTheory.BlockTheory.ExistenceTori.Bundle0006
 public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.CoreArithmeticGroupContainsPrincipalCongruence
 public import Development.AbelianVarietyTheory.Definitions.ThetaValues.GamAt
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.CongrOfDvdModulus
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsHermCoordOfDatum
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0099
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0015
 public import Formalism.LocalToGlobal.ProjectiveLattices.FamilyUniformisationBasePointOrthogonal
-public import Formalism.LocalToGlobal.LatticeGeometry.DegFlLApply
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.AdelicUnitaryExistsWithPrescribedParts
+public import Formalism.LocalToGlobal.LatticeGeometry.Bundle0001
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0067
 
 @[expose] public section
 

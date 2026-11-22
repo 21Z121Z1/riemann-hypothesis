@@ -2,48 +2,50 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.IsStdFr
-public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.PinColL
+public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.Bundle0029
 public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.FrameTopAlt
-public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.XiEqXiOffMul
+public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.Bundle0030
 public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.HzUnit
 public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.CosInj
 public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.UnitRatio
-public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.ChartZero
 public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.TailRd
-public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.Placed
-public import Formalism.LocalToGlobal.IndefiniteReal.RealRec
-public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.ThetaChr
+public import Formalism.LocalToGlobal.IndefiniteReal.Bundle0030
+public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.Bundle0043
 public import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.ColumnCompatibleSelection
 public import Formalism.LocalToGlobal.SiegelLatticeTheory.FlagStabilizerTensors.STiesR
-public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.SameDegreeZeroFormsSelf
+public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.Bundle0016
 public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.DivisionPairOfAdelicFormsFaceColumnsData
-public import Formalism.LocalToGlobal.CarriedPlMap
-public import Formalism.LocalToGlobal.SelSide
+public import Formalism.LocalToGlobal.Bundle0002
+public import Formalism.LocalToGlobal.Bundle0001
 public import Formalism.LocalToGlobal.IndefiniteReal.DoubleCosetOperators.TwistedCharacterValue
 public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.TwArgs
-public import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.DivRows3GIff
-public import Formalism.LocalToGlobal.Divisibility.ColPins
-public import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.CountsIrreducibilityConstants
-public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.BrgStdR
-public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.IsScaleWithBoundedGamma
-public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.VanishingGramTermsBoundParams
+public import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.Bundle0008
+public import Formalism.LocalToGlobal.Divisibility.Bundle0007
+public import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.Bundle0007
+public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.Bundle0024
+public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.Bundle0022
+public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.Bundle0004
 public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.UnfoldingConstantsPos
 public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.GlobalRowsOfSizeParameters
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.NodesOfSizeData
-public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.SzRowNumAt
-public import Development.AbelianVarietyTheory.Proofs.HeightProofs.EventuallyConstructedPointHostSizeNumerical
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.DiagonalHypothesesOfRowsAndWindowStatement
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.DuWinThreeOfCount
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.SiegelMassRatioUnimodularDefinite
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ThrEAddOneLt
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.RankConditionAllMembers
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.SizesEqCount
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ClassNumberAll
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.FirstTypePrimeLargeOfRecord
-public import Formalism.SharpRestriction.AdmissibleParameterJoins.SfromGLu
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0068
+public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0111
+public import Development.AbelianVarietyTheory.Proofs.HeightProofs.Bundle0073
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0419
+public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.Bundle0006
+public import Formalism.SharpRestriction.CuspSpanNormBounds.StandingHypothesesHoldFamily
+public import Formalism.LocalToGlobal.SiegelLatticeTheory.FlagStabilizerTensors.RootLatticeThresholds.Bundle0051
+public import Formalism.LocalToGlobal.SiegelLatticeTheory.CokernelGLCounts.RowsConc
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0116
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0359
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0428
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0516
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0346
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0323
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0244
+public import Formalism.SharpRestriction.AdmissibleParameterJoins.Bundle0006
 public import Formalism.SharpRestriction.GlobalSchurBounds.TheoremThreeFamilyOfFormalDegreeInput
 public import Formalism.SharpRestriction.GlobalSchurBounds.GlobalRankLatticeProofs.UnitTraceSumBounds.RankConditionsOfLayerTwo
-public import Formalism.SharpRestriction.GlobalSchurBounds.GlobalRankLatticeProofs.UnitTraceSumBounds.LwRankTies
+public import Formalism.SharpRestriction.GlobalSchurBounds.GlobalRankLatticeProofs.UnitTraceSumBounds.Bundle0008
 
 @[expose] public section
 
@@ -104,7 +106,7 @@ theorem eventually_le_trace : EvP fun _ K => ∀ β : BPt K, LocalBesselAndTopKe
   refine ⟨c2, fun ch hch _ => ?_⟩
   obtain ⟨x1, hN⟩ := hN ch hch
   obtain ⟨x2, hNo⟩ := GlobalTheory.Diag.PG.NodeParameters.nodes_of_parameters eps he he52
-  obtain ⟨x3, hP⟩ := GlobalTheory.T.diagonal_hypotheses_of_rows_and_window GlobalTheory.Mass.siegelMassRatio_holds GlobalTheory.DsigSize.dsigHC eps 40 he he52 (by norm_num)
+  obtain ⟨x3, hP⟩ := _root_.GlobalTheory.Diag.PG.lemmaPG_record GlobalTheory.Mass.siegelMassRatio_holds GlobalTheory.DsigSize.dsigHC eps 40 he he52 (by norm_num)
     (8 * C.CGam) 40 (C.P.CYL + 1) 0 le_rfl le_rfl
   refine ⟨max (max x1 x2) (max x3 ((max 2 (5 / (eps / 100))) ^ (eps / 100)⁻¹)), fun K hK hx β hAdm hMu => ?_⟩
   obtain ⟨hC, hcD', hch', heps, -⟩ := hK

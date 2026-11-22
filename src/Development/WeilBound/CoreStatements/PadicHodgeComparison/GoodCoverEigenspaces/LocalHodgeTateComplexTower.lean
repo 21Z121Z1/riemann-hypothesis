@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Divisors.IdTower
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0007
 public import Development.AbelianVarietyTheory.Statements.PlaceShiftStatements.HTSpecAllHodge
 public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.OmegaPullOmegaTraceOfSecTraceOne
 public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.FiniteDimensionalWdSpace

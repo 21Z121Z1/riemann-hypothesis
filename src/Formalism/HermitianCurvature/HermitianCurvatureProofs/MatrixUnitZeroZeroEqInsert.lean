@@ -2,9 +2,9 @@ module
 
 public import Formalism.HermitianCurvature.StatementTL
 public import Formalism.HermitianCurvature.HermitianCurvatureProofs.ReflectionTransposeEntriesMem
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.PairOperatorCommute
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0117
 public import Formalism.HermitianCurvature.HermitianCurvatureProofs.LiftMatrixTransferConjTransposeCommute
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.FreeOf2RmatrixTranspose
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0019
 
 @[expose] public section
 

@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IsOpenFixedOfSubgroup
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsFiniteSupport
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0031
 
 @[expose] public section
 

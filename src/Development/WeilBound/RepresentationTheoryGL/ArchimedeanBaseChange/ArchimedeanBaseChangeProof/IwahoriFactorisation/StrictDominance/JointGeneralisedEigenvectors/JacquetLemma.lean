@@ -1,23 +1,24 @@
 module
 
 public import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.IwahoriFactorisation.StrictDominance.JointGeneralisedEigenvectors.CasselmanStrictlyDominantExample
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CasselmanFirstPropertyStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.JacquetProjectionHeckeHoldsStatement
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0402
+public import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.IwahoriFactorisation.StrictDominance.JointGeneralisedEigenvectors.IsJointGenEig
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0414
 public import Mathlib
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.NilpotentOfProjectionZero
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.JacquetLemmaHoldsStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.DominantHeckeOperatorsCommute
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IwahoriGlCasselmanDatum
-public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.DepthZeroCuspidalLL
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0450
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0467
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0432
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0289
+public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.Bundle0011
 public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.NonemptyEquivMultiProdOne
 public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.InstAddCommGroupTwo
 public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.NotIsGenericDetRepTwo
 public import Development.AbelianVarietyTheory.Definitions.Foundations.IsSatVecUOfIsSphericalU
 public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ApplyMemTwKerOfNormalizer
-public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.IsGenericIffIsGenericFor
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ParIndJacPlacing
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IwahoriUnipotentDatumStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.DominantUnipotentContractionStatement
+public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.Bundle0016
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0032
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IwahoriUnipotentDatum
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0211
 
 @[expose] public section
 
@@ -26,13 +27,13 @@ noncomputable section
 namespace PositivityTheory.SphericalProduct
 
 theorem jacquet_hecke (G : Type) [Group G] [TopologicalSpace G] [IsTopologicalGroup G] : A2 G :=
-  GlobalTheory.T.jacquet_projection_hecke_holds G
+  _root_.GlobalTheory.CompanionTheory.Cass.jacquet_projection_hecke_intertwines G
 
 theorem iwahori_u : IwahoriU :=
-  GlobalTheory.T.iwahori_unipotent_datum
+  _root_.GlobalTheory.CompanionTheory.IwUnit.iwahoriU
 
 theorem dom_u : DomU :=
-  GlobalTheory.T.dominant_unipotent_contraction
+  _root_.GlobalTheory.CompanionTheory.DomUnitary.domU
 
 end PositivityTheory.SphericalProduct
 

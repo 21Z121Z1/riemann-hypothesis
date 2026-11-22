@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Formalism.WeaklyAdmissibleFiltrations.Statement
-public import Formalism.WeaklyAdmissibleFiltrations.CocyclesFunctorial
+public import Formalism.WeaklyAdmissibleFiltrations.Bundle0001
 
 @[expose] public section
 

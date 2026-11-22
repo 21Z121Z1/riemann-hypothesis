@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ValHalfInf
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0307
 
 @[expose] public section
 

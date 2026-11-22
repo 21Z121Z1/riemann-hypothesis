@@ -1,6 +1,6 @@
 module
 
-public import Formalism.LocalToGlobal.CharacterGerms.RowTiePPTAvg
+public import Formalism.LocalToGlobal.CharacterGerms.Bundle0026
 
 @[expose] public section
 

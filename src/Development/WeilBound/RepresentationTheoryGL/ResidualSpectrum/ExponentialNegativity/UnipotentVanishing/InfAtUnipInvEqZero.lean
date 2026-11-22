@@ -2,10 +2,10 @@ module
 
 public import Development.WeilBound.RepresentationTheoryGL.ResidualSpectrum.ExponentialNegativity.L2DecayOfCountEscape
 public import GroundTheory.AutomorphicForms.CuspidalDiscreteness.SiegelCount
-public import GroundTheory.AutomorphicForms.ReductionSplitting
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsNcardEntrywiseBoxLe
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ProdEntrywiseLe
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExponentMemFinset
+public import GroundTheory.AutomorphicForms.Bundle0022
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0088
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0018
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0278
 
 @[expose] public section
 

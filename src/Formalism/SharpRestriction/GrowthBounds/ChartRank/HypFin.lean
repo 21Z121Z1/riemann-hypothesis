@@ -1,6 +1,6 @@
 module
 
-public import Formalism.SharpRestriction.GrowthBounds.ChartedClasses.ExistsIsCGBases
+public import Formalism.SharpRestriction.GrowthBounds.ChartedClasses.Bundle0002
 
 @[expose] public section
 

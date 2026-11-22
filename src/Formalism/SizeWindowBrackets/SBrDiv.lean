@@ -1,8 +1,8 @@
 module
 
 public import Formalism.SizeWindowBrackets.Chain2aCoreNoAnalytic
-public import Formalism.LogFactorialIndices.StatementSize
-public import Formalism.HarderNarasimhan.QuotRealize
+public import Formalism.LogFactorialIndices.Bundle0001
+public import Formalism.HarderNarasimhan.Bundle0001
 
 @[expose] public section
 

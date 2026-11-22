@@ -1,9 +1,8 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsConstMul
-public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.EigLat
-public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsLineGenOn
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.Bundle0010
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.Bundle0004
 
 @[expose] public section
 

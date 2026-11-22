@@ -1,7 +1,7 @@
 module
 
 public import Development.AbelianVarietyTheory.Definitions.Foundations.FinalTheorems
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.GaloisCochains.DecZhat
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.GaloisCochains.Bundle0001
 
 @[expose] public section
 

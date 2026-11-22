@@ -4,7 +4,7 @@ public import Mathlib
 public import GroundTheory.HeightsAndTheta.Heights.RemainderTerms.Statements
 public import GroundTheory.HeightsAndTheta.Heights.RemainderTerms.JacobiTrudi
 public import GroundTheory.HeightsAndTheta.Heights.RemainderTerms.AltCoeff
-public import GroundTheory.HeightsAndTheta.Heights.KernelsRest
+public import GroundTheory.HeightsAndTheta.Heights.Bundle0001
 
 @[expose] public section
 

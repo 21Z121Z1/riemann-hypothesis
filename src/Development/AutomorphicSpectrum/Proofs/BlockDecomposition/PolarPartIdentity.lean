@@ -2,8 +2,8 @@ module
 
 public import Mathlib
 public import Development.WeilBound.RepresentationTheoryGL.RegularisedSiegelWeil.ThetaIdempotents.HeckeEta
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SiegelParabolicUnnMatrixBlockUpperTriangular
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IntegrableSchwartzAHaar
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0262
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0583
 
 @[expose] public section
 

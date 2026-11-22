@@ -2,10 +2,10 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.Foundations.SimpleSum
-public import Development.AbelianVarietyTheory.Definitions.Foundations.SimpleSumRowCol
+public import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0007
 public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.PadicIsNonarchimedeanLocalField
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.RootExchangeSupportAndFourierRelation
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.LinearChangeOfVariablesLocalFieldMatrix
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0027
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0031
 
 @[expose] public section
 

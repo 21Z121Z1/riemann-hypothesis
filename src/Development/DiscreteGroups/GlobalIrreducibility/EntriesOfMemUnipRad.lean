@@ -1,6 +1,6 @@
 module
 
-public import Development.DiscreteGroups.GlobalIrreducibility.GoodColUInv
+public import Development.DiscreteGroups.GlobalIrreducibility.Bundle0013
 
 @[expose] public section
 

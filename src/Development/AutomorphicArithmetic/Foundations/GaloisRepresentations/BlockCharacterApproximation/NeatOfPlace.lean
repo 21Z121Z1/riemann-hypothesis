@@ -2,8 +2,12 @@ module
 
 public import Mathlib
 public import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.BlockCharacterApproximation.OfVecFixedIff
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExistsInvariantZmodLift
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.IsOfFinOrderOfCompactConjMemUnitaryRationalPointStatement
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0201
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0180
+public import Development.AbelianVarietyTheory.Statements.EllipticCurveLevels.ClosedAtLConclusionOfMem
+public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.ContinuousMapPFin
+public import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.IsSubquotientDetRepParInd
+public import Development.AbelianVarietyTheory.Definitions.Foundations.IsSatVecUOfIsSphericalU
 public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsSatakeParameterDefiniteUnitaryInertPlace
 
 @[expose] public section
@@ -31,7 +35,7 @@ theorem UpperTheory.Gal.CharacterCongruences.neatOfPlace_holds :
   have hd : c * x ∈ C ⊔ infU E a :=
     Subgroup.mul_mem _ (le_sup_left (a := C) hc) (le_sup_right (a := C) hx)
   have e : γ = g * (c * x) * g⁻¹ := by rw [← mul_assoc, ← h, mul_inv_cancel_right]
-  have hfo : IsOfFinOrder (c * x) := GlobalTheory.T.isOfFinOrder_of_compact_conj_mem_unitaryRationalPoints E a _ hDc g (c * x) hd (e ▸ hγ)
+  have hfo : IsOfFinOrder (c * x) := _root_.GlobalTheory.isOfFinOrder_of_conj_mem_ratU E a _ hDc g (c * x) hd (e ▸ hγ)
   have hcx : cLoc u (c * x) = cLoc u c := by rw [map_mul, hxl, mul_one]
   have ht := MonoidHom.isOfFinOrder (cLoc u) (x := c * x) hfo
   rw [hcx] at ht

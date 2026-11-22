@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.TracePowerSumModEq
+public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0004
 
 @[expose] public section
 

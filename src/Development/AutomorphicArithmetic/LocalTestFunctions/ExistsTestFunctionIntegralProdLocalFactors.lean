@@ -1,13 +1,11 @@
 module
 
 public import Development.AutomorphicArithmetic.Foundations.Convolution.TensFun
-public import Development.AutomorphicArithmetic.Foundations.Convolution.ConvolutionKernels.KernelTransforms.HopBasic
-public import Development.AutomorphicArithmetic.Foundations.Convolution.ConvolutionKernels.KernelTransforms.PrjFix
-public import Development.AutomorphicArithmetic.Foundations.Convolution.ConvolutionKernels.KernelTransforms.LocEmb
-public import Development.AutomorphicArithmetic.Foundations.Convolution.ConvolutionKernels.KernelTransforms.NormIntLe
-public import Development.AutomorphicArithmetic.Foundations.Convolution.ConvolutionKernels.KernelTransforms.HomConv
+public import Development.AutomorphicArithmetic.Foundations.Convolution.ConvolutionKernels.KernelTransforms.Bundle0004
+public import Development.AutomorphicArithmetic.Foundations.Convolution.ConvolutionKernels.KernelTransforms.Bundle0002
+public import Development.AutomorphicArithmetic.Foundations.Convolution.ConvolutionKernels.KernelTransforms.Bundle0003
 public import Development.AutomorphicArithmetic.Foundations.Convolution.PowerSumTraces.SummandFactor
-public import Development.AutomorphicArithmetic.LocalTestFunctions.ExistsTestFunctionIntegralLocalFactor
+public import Development.AutomorphicArithmetic.LocalTestFunctions.Bundle0001
 
 @[expose] public section
 

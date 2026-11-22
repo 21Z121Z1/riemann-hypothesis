@@ -1,7 +1,7 @@
 module
 
 public import Development.WeilBound.CoreStatements.PublishedTheorems.SmoothVectorEstimates.WhittakerVanishingImpliesZero
-public import GroundTheory.GlobalFields.Adele.WeakApprox
+public import GroundTheory.GlobalFields.Adele.Bundle0001
 
 @[expose] public section
 

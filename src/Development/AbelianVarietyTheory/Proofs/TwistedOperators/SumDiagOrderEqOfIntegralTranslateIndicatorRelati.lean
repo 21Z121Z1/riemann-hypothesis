@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsPairingSingleNe
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsSymmetricElementaryDivisorsUnitary
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0140
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0309
 
 @[expose] public section
 

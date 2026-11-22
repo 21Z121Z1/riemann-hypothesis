@@ -2,15 +2,17 @@ module
 
 public import Mathlib
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.HasArcDataIff
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.EigLatBasis
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.Bundle0002
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.SecBaseChangeAnySt
 public import Development.AbelianVarietyTheory.Definitions.ArchimedeanThetaValues.IdealPart
 public import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.HolomorphicHomDetermined
-public import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.ExistsSumsAtHalfCurveFraction
-public import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.EqSpMapOfInjective
-public import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.TangentConstantDirectionSpecialisesDerivStatement
-public import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.IsTangentConstantCoordsGenericFibreStatement
-public import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.ArcLevelPointTangentVectorTransportIffStatement
+public import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.Bundle0008
+public import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.Bundle0028
+public import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.Bundle0035
+public import Development.AbelianVarietyTheory.Definitions.ArchimedeanThetaValues.ArcDictExpZeroSection
+public import Development.AbelianVarietyTheory.Definitions.ArchimedeanThetaValues.IsFShiftZeroIff
+public import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.Bundle0040
+public import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.ArcLevelPointTangentVectorTransportIff
 
 @[expose] public section
 
@@ -189,7 +191,7 @@ theorem isTanPt_iff {S S' : Scheme.{0}} {t : SAB H S} {t' : SAB H S'} {f : S' �
     {Φ : GenPts A t y} (hw : w.IsGen) (h : GenPts.Rel m w Φ' Φ) (z₀ : A.V)
     {n : Sp (DualNumber ℂ⸨X⸩) ⟶ t'.G.left} (hn : n ≫ t'.G.hom = spMap (algebraMap ℂ⸨X⸩ _) ≫ y') :
     IsTanPt Φ' z₀ n ↔ IsTanPt Φ z₀ (n ≫ m.φ) := by
-  have key := (T.arcLevelPoint_tangentVector_transport_iff E H S S' A t t' f m w y' y Φ' Φ hw h).2 z₀
+  have key := (_root_.GlobalTheory.LevelTransport.levelPt_isTan_iff E H S S' A t t' f m w y' y Φ' Φ hw h).2 z₀
   have hn' : (n ≫ m.φ) ≫ t.G.hom = spMap (algebraMap ℂ⸨X⸩ _) ≫ y := by
     rw [Category.assoc, m.cart.1.w, reassoc_of% hn, h.1]
   constructor
@@ -222,7 +224,7 @@ theorem deriv_sumsAt : Out.Laws → Out.Laws2 → ∀ (E : Type) [Field E] [Numb
   have := Xo.smooth
   have : Smooth Xo.s := SmoothOfRelativeDimension.smooth D.dim _
   have : IsLocallyNoetherian Xo.X := LocallyOfFiniteType.isLocallyNoetherian Xo.s
-  obtain ⟨T₀, -, h₀⟩ := T.tangent_constant_direction_specialises_deriv hL hL₂ E H D l _ _ Xo.X Xo.s Xo.univ Λ.A _ C.Φ Γ Ψ hA hΦ _ νU tU
+  obtain ⟨T₀, -, h₀⟩ := _root_.GlobalTheory.SpecTangent.spec_tangent hL hL₂ E H D l _ _ Xo.X Xo.s Xo.univ Λ.A _ C.Φ Γ Ψ hA hΦ _ νU tU
   have HP : IsPullback Y.m0.toSABMap.φ (Y.oF.t.G.hom ≫ pullback.snd _ _) (Xo.univ.t.G.hom ≫ Xo.s)
       (spMap (IntermediateField.inclusion c.le).toRingHom) :=
     Y.m0.toSABMap.cart.1.paste_vert (IsPullback.of_hasPullback _ _)

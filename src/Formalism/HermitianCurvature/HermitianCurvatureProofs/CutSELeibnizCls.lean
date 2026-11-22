@@ -1,7 +1,7 @@
 module
 
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutSELeib
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.WaveOperatorLeL2Subspace
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0256
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0257
 public import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutSEOuterLeib
 public import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutSEPairAtDeriv
 

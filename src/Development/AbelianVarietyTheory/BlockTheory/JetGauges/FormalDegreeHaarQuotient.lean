@@ -2,11 +2,11 @@ module
 
 public import Mathlib
 public import Formalism.PeriodIntegrals.UpqRep
-public import Formalism.PeriodIntegrals.IsLowUnitH
-public import Formalism.PeriodIntegrals.BesselMapUniq
+public import Formalism.PeriodIntegrals.Bundle0011
+public import Formalism.PeriodIntegrals.Bundle0016
 public import Formalism.FormalDegreeBessel.StatementG
 public import Formalism.FormalDegreeBessel.StatementDS
-public import Formalism.FormalDegreeBessel.StatementBF
+public import Formalism.FormalDegreeBessel.Bundle0001
 
 @[expose] public section
 

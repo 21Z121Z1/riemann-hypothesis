@@ -1,9 +1,9 @@
 module
 
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.AutomorphyLifting.AAcrossOf
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.AutomorphyLifting.Bundle0001
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.HeckeAlgebras.Distinct
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.WeilGroupCharacters.UniversalOrdinaryDeterminantRing
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.GuDefs
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.Bundle0010
 
 @[expose] public section
 

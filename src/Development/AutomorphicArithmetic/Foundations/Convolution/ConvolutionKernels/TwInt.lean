@@ -1,14 +1,11 @@
 module
 
-public import Development.AutomorphicArithmetic.Foundations.Convolution.ConvolutionKernels.CuspTrInt
-public import Development.AutomorphicArithmetic.Foundations.Convolution.ConvolutionKernels.IntEst
-public import Development.AutomorphicArithmetic.Foundations.Convolution.ConvolutionKernels.KerId
-public import Development.AutomorphicArithmetic.Foundations.Convolution.ConvolutionKernels.NormLeOfSq
-public import Development.AutomorphicArithmetic.Foundations.Convolution.ConvolutionKernels.KvCont
-public import Development.AutomorphicArithmetic.Foundations.Convolution.ConvolutionKernels.RopAe
-public import Development.AutomorphicArithmetic.Foundations.Convolution.ConvolutionKernels.QhtBasic
-public import Development.AutomorphicArithmetic.Foundations.Convolution.ConvolutionKernels.QhtTw
-public import Development.AutomorphicArithmetic.Foundations.Convolution.ConvolutionKernels.QmapPres
+public import Development.AutomorphicArithmetic.Foundations.Convolution.ConvolutionKernels.Bundle0007
+public import Development.AutomorphicArithmetic.Foundations.Convolution.ConvolutionKernels.Bundle0001
+public import Development.AutomorphicArithmetic.Foundations.Convolution.ConvolutionKernels.Bundle0006
+public import Development.AutomorphicArithmetic.Foundations.Convolution.ConvolutionKernels.Bundle0004
+public import Development.AutomorphicArithmetic.Foundations.Convolution.ConvolutionKernels.Bundle0005
+public import Development.AutomorphicArithmetic.Foundations.Convolution.ConvolutionKernels.Bundle0002
 public import Development.AutomorphicArithmetic.Foundations.Convolution.ConvolutionKernels.GalTwistEx
 
 @[expose] public section

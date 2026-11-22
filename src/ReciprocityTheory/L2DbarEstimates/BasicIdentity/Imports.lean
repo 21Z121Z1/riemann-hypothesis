@@ -5,7 +5,7 @@ public import ReciprocityTheory.L2DbarEstimates.BasicIdentity.BasicIdentityState
 public import ReciprocityTheory.L2DbarEstimates.BasicIdentity.HasCompactSupportDTw
 public import ReciprocityTheory.L2DbarEstimates.BasicIdentity.HalfSumNormSubSq
 public import ReciprocityTheory.L2DbarEstimates.BasicIdentity.HasCompactSupportOfVanish
-public import ReciprocityTheory.L2DbarEstimates.BasicIdentity.TstarNormSq
+public import ReciprocityTheory.L2DbarEstimates.BasicIdentity.Bundle0001
 
 @[expose] public section
 

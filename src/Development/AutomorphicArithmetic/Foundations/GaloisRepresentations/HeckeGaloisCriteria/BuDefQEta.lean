@@ -1,8 +1,8 @@
 module
 
-public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.NStageTrivialCharacterCoeffEqAlt
+public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.Bundle0014
 public import Formalism.SharpRestriction.ParConsts
-public import Formalism.SharpRestriction.LevelLetterCocycles.TwGood
+public import Formalism.SharpRestriction.LevelLetterCocycles.Bundle0018
 
 @[expose] public section
 

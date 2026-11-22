@@ -1,11 +1,11 @@
 module
 
 public import Development.AutomorphicArithmetic.Foundations.IwahoriReduction.LangPolynomials.MemOfMulMem
-public import Development.AutomorphicArithmetic.Foundations.IwahoriReduction.LangPolynomials.FrobEx
-public import Development.AbelianVarietyTheory.Definitions.Foundations.HTPresNuOfPolys
-public import Development.AbelianVarietyTheory.Definitions.Foundations.ZetaElementsUnramifiedOrdinaryOfEulerSystemInert
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.NonvanishingTransferCharacterSumsPowerSeriesStatement
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.QuotientCharTrivialInertiaCyclotomicTowerStatement
+public import Development.AutomorphicArithmetic.Foundations.IwahoriReduction.LangPolynomials.Bundle0002
+public import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0023
+public import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0022
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0378
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0368
 
 @[expose] public section
 

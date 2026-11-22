@@ -5,9 +5,8 @@ public import Formalism.SharpRestriction.Divisibility.OrbitPlaces
 public import Formalism.LocalToGlobal.GroupLattices.PendingLemmas.ExistsCoprimePowEqOne
 public import Formalism.SharpRestriction.ParConsts
 public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.IsPlaceCofactorValuationLowerBound
-public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.ModelsOK
-public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.Cobdry
-public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.DualOm
+public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.Bundle0011
+public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.Bundle0010
 
 @[expose] public section
 

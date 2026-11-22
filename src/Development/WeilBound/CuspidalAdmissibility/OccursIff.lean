@@ -1,8 +1,7 @@
 module
 
 public import Development.AutomorphicArithmetic.Foundations.Convolution.PowerSumTraces.SummandFactor
-public import Development.WeilBound.CuspidalAdmissibility.OccPair
-public import Development.WeilBound.CuspidalAdmissibility.OccTrace
+public import Development.WeilBound.CuspidalAdmissibility.Bundle0001
 public import Development.WeilBound.CuspidalAdmissibility.CuspProjectionOrthogonality
 
 @[expose] public section

@@ -7,7 +7,7 @@ public import Mathlib.LinearAlgebra.Eigenspace.Triangularizable
 public import Mathlib.RingTheory.Support
 public import Mathlib.RingTheory.LocalRing.ResidueField.Ideal
 public import Mathlib.RingTheory.Flat.FaithfullyFlat.Basic
-public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.ExistsSemi
+public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0020
 
 @[expose] public section
 

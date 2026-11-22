@@ -3,11 +3,11 @@ module
 public import Mathlib
 public import Formalism.SharpRestriction.Divisibility.StatementFT.PeriodPointConditions
 public import Formalism.LocalToGlobal.HilbertRowConditions.RowPin
-public import Formalism.LocalToGlobal.HermitianForms.TiedBrRep
-public import Formalism.LocalRingCardinality.PosOfIsomEmb
+public import Formalism.LocalToGlobal.HermitianForms.Bundle0009
+public import Formalism.LocalRingCardinality.Bundle0005
 public import Formalism.LocalRingCardinality.CoeNeZeroOfNotMem
 public import Formalism.LocalRingCardinality.RankBoundMonotoneInDimension
-public import Formalism.SharpRestriction.LevelLetterCocycles.TwGuard
+public import Formalism.SharpRestriction.LevelLetterCocycles.Bundle0021
 public import Formalism.SharpRestriction.Divisibility.ThetaNormsAndLinks
 public import Formalism.SharpRestriction.Divisibility.WeightDegreeSizes
 

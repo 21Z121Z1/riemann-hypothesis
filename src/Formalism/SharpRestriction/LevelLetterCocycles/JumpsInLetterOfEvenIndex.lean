@@ -3,7 +3,7 @@ module
 public import Mathlib
 public import Formalism.SharpRestriction.LevelLetterCocycles.WachQuotientCyclicDecomposition
 public import Formalism.SharpRestriction.LevelLetterCocycles.UniformizerUnitAndQFactor
-public import Formalism.SharpRestriction.LevelLetterCocycles.GCoordProp
+public import Formalism.SharpRestriction.LevelLetterCocycles.Bundle0032
 
 @[expose] public section
 

@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Formalism.PieriBlockIdeals.Statement
+public import Formalism.PieriBlockIdeals.Bundle0001
 
 @[expose] public section
 

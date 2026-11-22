@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.OmegaPullOmegaTraceOfSecTraceOne
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.HodgePullHodgePull
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0028
 
 @[expose] public section
 

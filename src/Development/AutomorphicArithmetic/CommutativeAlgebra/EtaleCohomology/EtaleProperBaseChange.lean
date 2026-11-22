@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicArithmetic.CommutativeAlgebra.EtaleCohomology.LocallyExactCech
+public import Development.AutomorphicArithmetic.CommutativeAlgebra.EtaleCohomology.Bundle0001
 public import Development.AbelianVarietyTheory.Definitions.Divisors.PullHlComp
 
 @[expose] public section

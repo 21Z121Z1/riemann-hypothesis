@@ -1,9 +1,9 @@
 module
 
-public import Development.WeilBound.ThetaLifts.LatticeBasics.LocUnrInertA
+public import Development.WeilBound.ThetaLifts.LatticeBasics.Bundle0020
 public import Development.WeilBound.ThetaLifts.LocalTheory.UnramifiedCohomology.ExistsSelfDual
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.IdeleCharacterEqOneIntegralUnitsUnramifiedAdelic
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnramifiedCharacterAtUniformizer
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0150
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0976
 public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsIsSplitChartOfBasis
 
 @[expose] public section

@@ -1,10 +1,10 @@
 module
 
 public import Mathlib
-public import GroundTheory.HeightsAndTheta.Heights.Intersections.StatementsArith
-public import GroundTheory.HeightsAndTheta.Heights.Intersections.ImportsFurtherTail
-public import GroundTheory.HeightsAndTheta.Heights.Intersections.IsMultiHomogFirstCoordinate
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.InterDivSupp
+public import GroundTheory.HeightsAndTheta.Heights.Intersections.Bundle0007
+public import GroundTheory.HeightsAndTheta.Heights.Intersections.Bundle0017
+public import GroundTheory.HeightsAndTheta.Heights.Intersections.Bundle0018
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.Bundle0017
 
 @[expose] public section
 

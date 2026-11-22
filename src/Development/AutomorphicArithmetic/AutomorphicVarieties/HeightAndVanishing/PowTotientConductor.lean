@@ -1,9 +1,9 @@
 module
 
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.HeightAndVanishing.LayerLe
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.HeightAndVanishing.HostComp
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.HeightAndVanishing.CmDatumCharTwoAdicOrderBounds
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.HeightAndVanishing.CompCond
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.HeightAndVanishing.Bundle0005
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.HeightAndVanishing.Bundle0007
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.HeightAndVanishing.Bundle0004
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.HeightAndVanishing.CompAlg
 
 @[expose] public section

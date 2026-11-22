@@ -2,14 +2,14 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.SpanningFamilies.IsWeakOfDatum
-public import Development.AbelianVarietyTheory.Definitions.SpanningFamilies.IsHeatZero
+public import Development.AbelianVarietyTheory.Definitions.SpanningFamilies.Bundle0001
 public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.TensorLatticeSelfDualSemicharacterIndex
-public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.AddCharTrivialIntegralFiniteAdeleMul
+public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.Bundle0059
 public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.SelfDualLatticePairingDual
-public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.RealIdemMulOfReal
-public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.CompletedTensorLatticeStrongApproxOpenCompactStatement
-public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.SymplecticCharacterRealFinitePointsMatchStatement
-public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.ExistsSplitIdempotentsOfRelTraceOneModTwoStatement
+public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.Bundle0061
+public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.CompletedTensorLatticeStrongApproxOpenCompact
+public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.SymplecticCharacterRealFinitePointsMatch
+public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.Bundle0050
 
 @[expose] public section
 
@@ -178,7 +178,7 @@ theorem isLatVac_iff : ∀ (D : D7) (S T : HSp D) (C : Ctx S T), ∀ w : D.host.
   intro D S T C w hw hw1 hw2 M Λ hΛ L hL f hf
   have hA : ∀ o : 𝓞 D.host.E, ∀ y ∈ tens Λ L, (o : D.host.E) • y ∈ tens Λ L := fun o y hy =>
     TensLat.smul_mem_tens hΛ o.isIntegral_coe hy
-  have hfin := (GlobalTheory.T.symplecticCharacter_real_finite_points_match D S T C).2.2.1
+  have hfin := (_root_.GlobalTheory.FormMatch.forms_match D S T C).2.2.1
   have hH : ∀ u ∈ hatA S T (tens Λ L), ∀ u' ∈ hatA S T (tens Λ L), C.ψ (symplO S T u u') = 1 := by
     refine fun u hu u' hu' => char_sympl_hatA C.std.1.1 hA (fun y hy y' hy' => ?_) hu hu'
     obtain ⟨k, hk⟩ := (TensLat.tens_selfDual hΛ hL y).1 hy y' hy'
@@ -241,7 +241,7 @@ theorem isLatVac_iff : ∀ (D : D7) (S T : HSp D) (C : Ctx S T), ∀ w : D.host.
     rw [← heps y hy]
     exact hG.2
   · intro hv
-    obtain ⟨-, -, hap, hop, -⟩ := GlobalTheory.T.completedTensorLattice_strongApprox_open_compact D S T C Λ L
+    obtain ⟨-, -, hap, hop, -⟩ := _root_.GlobalTheory.Ker.HatLat.hatA_tens D S T C Λ L
       ⟨hΛ.1, DualFamily.span_eq_top Λ hΛ.1 fun x => (hΛ.2.1 x).2⟩ ⟨hL.1, TensLat.span_of_selfD C.X hL⟩
     obtain ⟨U, hU, hUf⟩ := hf.level
     obtain ⟨N, hN, hNU⟩ := hop U hU

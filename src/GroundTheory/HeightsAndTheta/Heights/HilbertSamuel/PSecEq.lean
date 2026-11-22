@@ -1,10 +1,10 @@
 module
 
 public import Mathlib
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsSecEq
+public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0025
 public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PSectionBounded
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PUpperNormalisation
-public import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.AssemblyBase
+public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0069
+public import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.Bundle0043
 
 @[expose] public section
 

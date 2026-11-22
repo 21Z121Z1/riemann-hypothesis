@@ -1,8 +1,7 @@
 module
 
-public import Development.WeilBound.CoreStatements.BranchingTraces.HilbertSchmidtTraces.IsFdAbs
-public import Development.WeilBound.CoreStatements.BranchingTraces.HilbertSchmidtTraces.HsTrace
-public import Development.WeilBound.CoreStatements.BranchingTraces.HilbertSchmidtTraces.ReflEx
+public import Development.WeilBound.CoreStatements.BranchingTraces.HilbertSchmidtTraces.Bundle0002
+public import Development.WeilBound.CoreStatements.BranchingTraces.HilbertSchmidtTraces.Bundle0001
 
 @[expose] public section
 

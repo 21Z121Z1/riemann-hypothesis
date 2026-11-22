@@ -1,6 +1,6 @@
 module
 
-public import Formalism.LocalToGlobal.GlobalTheory.MemIffOfLocBasisG
+public import Formalism.LocalToGlobal.GlobalTheory.Bundle0002
 public import Formalism.SharpRestriction.GlobalSchurBounds.StandardIntegralLatticeExists
 public import Formalism.SharpRestriction.GlobalSchurBounds.LinkGLOBAL7Tied4
 

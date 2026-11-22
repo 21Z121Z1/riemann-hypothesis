@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Formalism.ThetaSupremumBounds.StatementA
-public import Formalism.LogFactorialIndices.StatementSize
+public import Formalism.LogFactorialIndices.Bundle0001
 
 @[expose] public section
 

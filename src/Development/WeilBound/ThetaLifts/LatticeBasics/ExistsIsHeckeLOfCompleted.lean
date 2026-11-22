@@ -1,10 +1,10 @@
 module
 
 public import Mathlib
-public import Development.WeilBound.ThetaLifts.LatticeBasics.GoodNe
+public import Development.WeilBound.ThetaLifts.LatticeBasics.Bundle0017
 public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.HeckeTateFunctionalEquationCM
-public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.IsCMTypeEmbedding
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HeckeLNeZeroNat
+public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.Bundle0019
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0692
 
 @[expose] public section
 

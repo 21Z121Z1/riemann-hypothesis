@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import GroundTheory.HeightsAndTheta.Heights.StabilizerCovolume.TorusIndex
+public import GroundTheory.HeightsAndTheta.Heights.StabilizerCovolume.Bundle0001
 
 @[expose] public section
 

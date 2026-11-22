@@ -5,8 +5,8 @@ public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.FormalDegreeGap.
 public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.FormalDegreeGap.DimensionFamilyOfWeylMultiplicity
 public import Formalism.SharpRestriction.GlobalSchurBounds.StandardLattice
 public import Formalism.SharpRestriction.CuspSpanNormBounds.BridgeCSchur
-public import Formalism.SharpRestriction.CuspSpanNormBounds.DiscreteSeriesWeylDimension
-public import Formalism.SharpRestriction.AdmissibleParameterJoins.SfromGLe
+public import Formalism.SharpRestriction.CuspSpanNormBounds.Bundle0016
+public import Formalism.SharpRestriction.AdmissibleParameterJoins.Bundle0004
 public import Formalism.PeriodIntegrals.ExplicitFormulaCounts.WeylForK
 public import Formalism.SharpRestriction.CuspSpanNormBounds.DiscreteSeriesExistence.LowKMultOneG
 

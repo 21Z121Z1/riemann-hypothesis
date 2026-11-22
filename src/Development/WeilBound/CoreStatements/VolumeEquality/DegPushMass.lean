@@ -1,20 +1,39 @@
 module
 
-public import Development.WeilBound.CoreStatements.VolumeEquality.DegPushDefs
-public import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.PMuRegSmooth
+public import Development.WeilBound.CoreStatements.VolumeEquality.Bundle0007
+public import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.Bundle0018
 public import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.PHermExtend
-public import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.PProjSmoothAlong
-public import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.PHoloInjDerivInj
+public import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.Bundle0019
+public import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.Bundle0003
 public import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.PVertFactorSmooth
-public import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.PVertFactorPos
-public import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.PVerticalTwistGenDeg
-public import Development.AutomorphicSpectrum.Proofs.MetricProofs.LocalOrbitChartStatement
-public import Development.AutomorphicSpectrum.Proofs.MetricProofs.MeasureLimitStatementHoldsStatement
-public import Development.AutomorphicSpectrum.Proofs.MetricProofs.GenericDegreeEqGeometricDegreeStatement
-public import Development.AutomorphicSpectrum.Proofs.MetricProofs.ExistsCuspDataForTorusInvariantStatement
-public import Development.AutomorphicSpectrum.Proofs.MetricProofs.HeightComparisonBetweenModelsStatement
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.CuspWeightRegularisationsTiedStatement
-public import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.CmHostRankBoundsStatement
+public import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.Bundle0016
+public import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.Bundle0025
+public import Mathlib
+public import Development.AutomorphicSpectrum.Proofs.MetricProofs.Bundle0112
+public import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.Bundle0004
+public import Development.AutomorphicSpectrum.Proofs.MetricProofs.MeasureLimitStatementHolds
+public import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.Bundle0012
+public import Development.AutomorphicSpectrum.Proofs.MetricProofs.Bundle0064
+public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0021
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.BlowupProjections.BlowupProjStatement
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.Bundle0012
+public import Development.AutomorphicSpectrum.Proofs.MetricProofs.ExistsCuspDataForTorusInvariant
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.PotentialsBoundedRegSettingEqReference
+public import GroundTheory.HeightsAndTheta.Heights.Regularisation.Bundle0002
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.Bundle0006
+public import Development.AutomorphicSpectrum.Proofs.MetricProofs.Bundle0131
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0255
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.GlobalSectionsRankAlgClosed
+public import Development.AutomorphicSpectrum.Definitions.DivisibilityTowers.GoodOrigin
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.Bundle0010
+public import Development.AutomorphicSpectrum.Statements.GeometryStatements.FlatDegree
+public import Development.AutomorphicSpectrum.Statements.GeometryStatements.Bundle0002
+public import Development.AutomorphicSpectrum.Statements.GeometryStatements.HodgeComparisonCompatibility
+public import Development.AutomorphicSpectrum.Statements.GeometryStatements.CmpSt
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.NumberField
+public import Development.AutomorphicSpectrum.Definitions.DivisibilityTowers.LocalAtPlaces
+public import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.Bundle0029
+public import Development.AutomorphicSpectrum.Statements.GeometryStatements.Bundle0003
 
 @[expose] public section
 
@@ -29,15 +48,15 @@ open GroundTheory.Heights₂.Heights.LowerBoundFree GroundTheory.Heights₂.Heig
 theorem muMass : MuMass := by
   intro hG hP E _ _ _ _ H D Xo l c Y II K _ J _ Ω _ _ W _ _ Dc Hd S₀ Or hII
   classical
-  have : Nonempty (CMType H) := (GlobalTheory.T.cm_host_rank_bounds E H).2.1
-  obtain ⟨U, M, S, S', -, h0, ht, hS, hS', -⟩ := GlobalTheory.T.cusp_weight_regularisations_tied hG E H D Xo l c Y II K J Ω W Dc Hd S₀ Or
-  obtain ⟨Cd, rfl⟩ := GlobalTheory.T.exists_cusp_data_for_torus_invariant K J II _ Ω W Dc U h0 ht
+  have : Nonempty (CMType H) := (_root_.GlobalTheory.CompanionTheory.Ar.Top.HostNumbers.host_numbers E H).2.1
+  obtain ⟨U, M, S, S', -, h0, ht, hS, hS', -⟩ := _root_.GlobalTheory.CompanionTheory.Relay.cusp_weight_regularisations_tied hG E H D Xo l c Y II K J Ω W Dc Hd S₀ Or
+  obtain ⟨Cd, rfl⟩ := _root_.GlobalTheory.CompanionTheory.Ar.Cusp.Fake.every_weight_is_cusp_weight K J II _ Ω W Dc U h0 ht
   let X : ComponentSetting Dc ℤ (Fin 2 → ℤ) := ⟨Hd, Cd, M, S, hS, S', hS', 0, 0⟩
   have hA := (GlobalTheory.T.height_comparison_between_models hG hP K J II _ Ω W Dc Hd M M S S 0 hII hS hS).1
-  have hL := (GlobalTheory.T.measure_limit_statement_holds II _ K J Ω W Dc ℤ (Fin 2 → ℤ) X 0 hII.1 hA).2
-  have hSm := MuRegSmooth.proof HermExtend.proof (ProjSmoothAlong.proof HoloInjDerivInj.proof GlobalTheory.T.local_orbit_chart_statement_holds)
+  have hL := (_root_.GlobalTheory.CompanionTheory.Ar.Giv.muMeasureLimit II _ K J Ω W Dc ℤ (Fin 2 → ℤ) X 0 hII.1 hA).2
+  have hSm := MuRegSmooth.proof HermExtend.proof (ProjSmoothAlong.proof HoloInjDerivInj.proof _root_.GlobalTheory.CompanionTheory.Ar.Giv.localOrbitChart)
     (VertFactorSmooth.proof VertFactorPos.proof) VertFactorPos.proof II _ K J Ω W Dc ℤ (Fin 2 → ℤ) X 0
-  have hg := GlobalTheory.T.generic_degree_eq_geometric_degree ⟨II, hII⟩ hG.2.2.2.2.1
+  have hg := _root_.GlobalTheory.CompanionTheory.Ar.Giv.genDegGeomDeg_of_system ⟨II, hII⟩ hG.2.2.2.2.1
   refine tendsto_nhds_unique hL (tendsto_const_nhds.congr' ?_)
   filter_upwards [hSm] with t hs
   have hvert : ∀ p ∈ Dc.SB 0, p.Prime ∧ IsVerticalDivisorAt (mCoordIdeal Dc.y) p (Dc.vdeg p) (Dc.vnum p) (Dc.vden p) :=

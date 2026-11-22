@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import GroundTheory.GlobalFields.ComplexMultiplication.AlgebraicityGalois
+public import GroundTheory.GlobalFields.ComplexMultiplication.Bundle0016
 
 @[expose] public section
 

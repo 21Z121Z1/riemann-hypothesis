@@ -1,10 +1,10 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.IsSumFrame
-public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.StdCharFinitePartRationalEqExpTrace
-public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.AddCharTrivialIntegralFiniteAdeleMul
-public import Development.AbelianVarietyTheory.Proofs.HeightProofs.SymplecticValTauCompat
+public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.Bundle0008
+public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.Bundle0062
+public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.Bundle0059
+public import Development.AbelianVarietyTheory.Proofs.HeightProofs.Bundle0025
 public import Formalism.LocalToGlobal.ProjectiveLattices.HostInt
 public import Formalism.LocalToGlobal.IndefiniteReal.FinitePlaces.FactPrincipalDatum
 public import Formalism.LocalRingCardinality.SpanPowerMembership.Spaces

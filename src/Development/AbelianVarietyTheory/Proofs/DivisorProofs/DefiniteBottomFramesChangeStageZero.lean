@@ -1,26 +1,26 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Statements.PlaceShiftStatements.NormSmall
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.RatInOfUnit
+public import Development.AbelianVarietyTheory.Statements.PlaceShiftStatements.Bundle0002
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0142
 public import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.WeilTensorModels
-public import Development.AbelianVarietyTheory.Definitions.Divisors.DiscreteSeriesHermitianUnique
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NegIdxOfIsStd
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0041
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1561
 public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IdempotentMulCutSubOneEntry
 public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.FirstStandardPairMemberHasThetaFunction
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.FrameMatrixAdjointJointAction
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SelfDualFrameConjIntegralSmulOfIntegral
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.DefiniteBottomWeilActionFockPureTensorSubstituti
-public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.PureTensorLIntertwine
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.HeckeCharEqProdLocalComponentsApproximating
-public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.ContinuousCharacterFiniteOrderIntegralUnits
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExistsAdelicUnitarySplitPlaceComponent
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.LawsRescaleWithS
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GridSquareCharQuotientFiniteUnitIdeleRootOfUnityStatement
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0176
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0184
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0602
+public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.Bundle0068
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0293
+public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.Bundle0063
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0098
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0338
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1629
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.StandardThetaPairSecondIsSchwartzBruhatConjHalf
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.StandardThetaPairFirstFrameChangeUnitTranslate
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.StandardThetaPairSecondFrameChangeUnitTranslate
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsUnitaryStabilizerTransitionSelfDualFrames
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1627
 
 @[expose] public section
 
@@ -243,9 +243,9 @@ theorem frames_change : ∀ {D : D7} {T : Type} {Lc : LevCh D T} {sc : GlobalThe
 
   have hv : ∀ t, ∃ ζ : D.what₂.LL, (∃ n : ℕ, 0 < n ∧ ζ ^ n = 1) ∧ D.what₂.embLL ζ = c1 t / c2 t := by
     intro t
-    obtain ⟨z1, ⟨n1, hn1, hz1⟩, e1⟩ := GlobalTheory.T.gridSquareCharQuotient_finiteUnitIdele_rootOfUnity μ₀ hL hN.chars i j t (x1 t) (hx1 t)
-    obtain ⟨z2, ⟨n2, hn2, hz2⟩, e2⟩ := GlobalTheory.T.gridSquareCharQuotient_finiteUnitIdele_rootOfUnity μ₀ hL hN.chars i j t (x2 t) (hx2 t)
-    obtain ⟨z3, ⟨n3, hn3, hz3⟩, e3⟩ := GlobalTheory.T.gridSquareCharQuotient_finiteUnitIdele_rootOfUnity μ₀ hL hN.chars i j t (y t) (hk4 t _ (hy1 t))
+    obtain ⟨z1, ⟨n1, hn1, hz1⟩, e1⟩ := _root_.GlobalTheory.SquareCharUnit.nu_finUnit_root μ₀ hL hN.chars i j t (x1 t) (hx1 t)
+    obtain ⟨z2, ⟨n2, hn2, hz2⟩, e2⟩ := _root_.GlobalTheory.SquareCharUnit.nu_finUnit_root μ₀ hL hN.chars i j t (x2 t) (hx2 t)
+    obtain ⟨z3, ⟨n3, hn3, hz3⟩, e3⟩ := _root_.GlobalTheory.SquareCharUnit.nu_finUnit_root μ₀ hL hN.chars i j t (y t) (hk4 t _ (hy1 t))
     refine ⟨z1 * z3 / z2, ⟨n1 * n2 * n3, by positivity, ?_⟩, ?_⟩
     · have r1 : z1 ^ (n1 * n2 * n3) = 1 := by rw [mul_assoc, pow_mul, hz1, one_pow]
       have r2 : z2 ^ (n1 * n2 * n3) = 1 := by rw [mul_comm n1 n2, mul_assoc, pow_mul, hz2, one_pow]

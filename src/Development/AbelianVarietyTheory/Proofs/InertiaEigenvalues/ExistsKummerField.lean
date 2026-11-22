@@ -2,10 +2,10 @@ module
 
 public import Mathlib
 public import Formalism.LocalToGlobal.UnitaryNorms.IsUnitaryNormOf
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ChevalleyUnits
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsPowDescentCyclotomic
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsFrobFixesRootOfOneModPlace
-public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.SUnitsNumberFieldFg
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0335
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0019
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0103
+public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.Bundle0016
 
 @[expose] public section
 

@@ -1,17 +1,17 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.PairPtsClasses
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.PairPtsEqSum
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.MovFn
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.WeilActionSchrodingerModelFiniteIdempotent
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0431
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0446
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0460
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0451
 public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IdempotentMulEqZeroOfOrthogonal
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsIsThetaAtOfVac
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.MemHomLatticeIffFrameStabilizerActMem
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1577
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0165
 public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.LevelHyperspecialTrivialCharacterSplitsOffPlaces
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsSelfDualAdelicFrameLevelOne
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ConjugatedLevelElementKeepsStandardLatticeStatement
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ChiArrowPairMovesStandardVacuumByScalarStatement
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0198
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0476
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0588
 
 @[expose] public section
 
@@ -148,7 +148,7 @@ theorem vacScalar (S : GridChoice W U) {i : ℕ} (hi : i + 1 ≤ D.R.m) (x : Fin
       actO _ _ (G.toPair (.chi i D.R.m) x y).1 (G.toPair (.chi i D.R.m) x y).2 u ∈
         latO (G.pS (.chi i D.R.m : Pair T)) (G.pT (.chi i D.R.m : Pair T)) (S.N.latS (.chi i D.R.m) : Set _) (S.N.latT (.chi i D.R.m) : Set _) (fun _ => True)) :
     ∃ c : ℂ, W.om (.chi i D.R.m) (G.toPair (.chi i D.R.m) x y) (S.Z.vac (.chi i D.R.m)) = c • S.Z.vac (.chi i D.R.m) :=
-  GlobalTheory.T.chiArrowPair_moves_standardVacuum_by_scalar S hi x y hΛ
+  _root_.GlobalTheory.RowChiVac.vac_chi_scalar S hi x y hΛ
 
 end GlobalTheory.RowVertexInv.FactorTheta
 

@@ -1,6 +1,6 @@
 module
 
-public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.CocycleProductThree
+public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0022
 
 @[expose] public section
 

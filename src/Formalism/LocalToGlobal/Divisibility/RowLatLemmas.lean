@@ -6,9 +6,8 @@ public import Formalism.LocalToGlobal.Divisibility.ProjLemmas
 public import Formalism.LocalToGlobal.Divisibility.FramesLemmas
 public import Formalism.QuotientMetricDivisors.HermitianTwistDivisors.SecondStepGluing
 public import Formalism.QuotientMetricDivisors.HermitianTwistDivisors.PlaceSumSquares
-public import Formalism.QuotientMetricDivisors.HermitianTwistDivisors.LocBasis
-public import Formalism.QuotientMetricDivisors.HermitianTwistDivisors.ConjTransposeEqOfPosDef
-public import Formalism.QuotientMetricDivisors.HermitianTwistDivisors.ReductionLemmaFirst
+public import Formalism.QuotientMetricDivisors.HermitianTwistDivisors.Bundle0001
+public import Formalism.QuotientMetricDivisors.HermitianTwistDivisors.Bundle0002
 
 @[expose] public section
 

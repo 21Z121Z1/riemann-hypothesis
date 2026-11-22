@@ -6,7 +6,7 @@ public import Formalism.SharpRestriction.CuspSpanNormBounds.GlobAut
 public import Formalism.SharpRestriction.CuspSpanNormBounds.BridgeCSchur
 public import Formalism.SharpRestriction.CuspSpanNormBounds.UnimodularSchurMeasures.RrExistsMeasRep
 public import Formalism.SharpRestriction.CuspSpanNormBounds.UnimodularSchurMeasures.RrgCountableField
-public import Formalism.RealPlaceAnalysis.RealPlaceTaylor.ModularCharacterEqOneOnExpHermitian
+public import Formalism.RealPlaceAnalysis.RealPlaceTaylor.Bundle0007
 public import Formalism.LocalToGlobal.SiegelLatticeTheory.HaarTransversals.ProjRows
 public import Formalism.LocalToGlobal.SiegelLatticeTheory.HaarTransversals.RowsDef
 

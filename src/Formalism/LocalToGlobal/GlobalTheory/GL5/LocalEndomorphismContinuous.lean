@@ -1,6 +1,6 @@
 module
 
-public import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.LocalEnd
+public import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.Bundle0009
 public import Formalism.LocalToGlobal.GlobalTheory.GL5.LevelsProGOfSplitAlgebra
 
 @[expose] public section

@@ -1,10 +1,10 @@
 module
 
-public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.ExpAct
+public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0008
 public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.ExpTieAlg
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.TaylorDiscriminants.WickVanishing.ActLin
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.TaylorDiscriminants.WickVanishing.Bundle0009
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.TaylorDiscriminants.WickVanishing.PderivSecondEvFirstPointEqZero
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.TaylorDiscriminants.WickVanishing.ExpLaw
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.TaylorDiscriminants.WickVanishing.Bundle0007
 
 @[expose] public section
 

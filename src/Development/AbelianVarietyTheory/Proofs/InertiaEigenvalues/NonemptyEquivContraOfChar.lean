@@ -3,9 +3,8 @@ module
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.NonemptyEquivMultiProdOne
 public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.InductionContragredient
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsEqSumBallFn
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.BallFnSubMemOfRadial
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.BallFnMemAndOneMemOfSubMem
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0622
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0628
 
 @[expose] public section
 

@@ -2,13 +2,13 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.CMLattices.ExistsIsThetaDegOfIsLocalModel
-public import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.CmCurveBaseChangeComp
-public import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.SemiAbelianHomExtensionUnique
-public import Development.AbelianVarietyTheory.Proofs.GenericRegularity.LieCombBaseChange
-public import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.IsLieBasisIffIsUnitDet
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsIsLieBasisBaseChange
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.UnivChartOfStandardSmooth
-public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.IsAbelianSchemeOfIsGrpPullback
+public import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.Bundle0027
+public import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.Bundle0016
+public import Development.AbelianVarietyTheory.Proofs.GenericRegularity.Bundle0011
+public import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.Bundle0014
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0041
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0042
+public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0099
 
 @[expose] public section
 

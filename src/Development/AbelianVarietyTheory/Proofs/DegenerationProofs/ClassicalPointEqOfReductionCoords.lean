@@ -3,9 +3,9 @@ module
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.Degenerations.IsNormalSchemeSp
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.UniformisationConclusion
-public import Development.AbelianVarietyTheory.Proofs.HomogeneousIdeals.IsReducedAlgebraOfSmoothOfIsNoetherianRing
-public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.KbIsAlgClosedAndConj
-public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.AlgHomEqOfReductionEqOfCoordsEq
+public import Development.AbelianVarietyTheory.Proofs.HomogeneousIdeals.Bundle0010
+public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.Bundle0053
+public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.Bundle0010
 
 @[expose] public section
 

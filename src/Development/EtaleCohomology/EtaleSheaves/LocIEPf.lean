@@ -1,6 +1,6 @@
 module
 
-public import Development.EtaleCohomology.EtaleSheaves.EtaleBaseChangeFractionFieldIndEtaleOverPolynomi
+public import Development.EtaleCohomology.EtaleSheaves.Bundle0005
 public import Mathlib.Algebra.Category.Ring.FilteredColimits
 
 @[expose] public section

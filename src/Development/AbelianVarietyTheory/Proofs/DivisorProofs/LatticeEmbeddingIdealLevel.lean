@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsLevelPlaceDatumOverNumberField
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0951
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LatticeIsometrySignFirst
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsNonvanishingFiniteDatumDefiniteLift
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0419
 
 @[expose] public section
 

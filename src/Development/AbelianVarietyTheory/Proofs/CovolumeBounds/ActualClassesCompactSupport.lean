@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutSE2
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutSETopFinal
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0290
 
 @[expose] public section
 

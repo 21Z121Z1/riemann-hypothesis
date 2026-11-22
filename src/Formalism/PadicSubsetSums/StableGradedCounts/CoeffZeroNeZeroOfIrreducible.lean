@@ -1,9 +1,8 @@
 module
 
 public import Formalism.PadicSubsetSums.CentralIdempotents.EigenbasisOfDistinctRoots
-public import Formalism.PadicSubsetSums.StableGradedCounts.IRRFrobOrbitIrred
-public import Formalism.PadicSubsetSums.StableGradedCounts.IRRSamePartCount
-public import Formalism.PadicSubsetSums.StableGradedCounts.IRRIrredCountUpper
+public import Formalism.PadicSubsetSums.StableGradedCounts.Bundle0004
+public import Formalism.PadicSubsetSums.StableGradedCounts.Bundle0009
 public import Formalism.PadicSubsetSums.StableGradedCounts.LocalEstimateIVOfTypeSetWeight
 
 @[expose] public section

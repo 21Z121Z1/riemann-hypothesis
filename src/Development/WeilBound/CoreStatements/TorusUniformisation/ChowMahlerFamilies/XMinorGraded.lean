@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.FlagMinor
-public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.ExistsUniformDenominator
+public import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.Bundle0001
+public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.Bundle0007
 
 @[expose] public section
 

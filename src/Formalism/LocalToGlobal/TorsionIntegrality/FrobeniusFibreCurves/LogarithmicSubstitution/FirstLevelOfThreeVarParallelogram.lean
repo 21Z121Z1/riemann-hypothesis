@@ -1,7 +1,7 @@
 module
 
 public import Formalism.LocalToGlobal.TorsionIntegrality.FrobeniusFibreCurves.FinalB
-public import Formalism.LocalToGlobal.TorsionIntegrality.FrobeniusFibreCurves.StatementD
+public import Formalism.LocalToGlobal.TorsionIntegrality.FrobeniusFibreCurves.Bundle0002
 
 @[expose] public section
 

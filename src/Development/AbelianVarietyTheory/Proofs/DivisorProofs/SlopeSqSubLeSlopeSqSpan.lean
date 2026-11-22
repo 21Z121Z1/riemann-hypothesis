@@ -4,7 +4,7 @@ public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.Foundations.IsProbabilityMeasureMuPart
 public import Formalism.MeanHeightDescent.DivisionInequalityWithCovolume
 public import Formalism.MeanHeightDescent.AverageDegreeBounds.GlobalBoundRefinements
-public import Formalism.QuotientMetricDivisors.HermitianTwistDivisors.DeterminantCauchySchwarz
+public import Formalism.QuotientMetricDivisors.HermitianTwistDivisors.Bundle0001
 public import Formalism.MeanHeightDescent.AverageDegreeBounds.GoodBadCut
 
 @[expose] public section

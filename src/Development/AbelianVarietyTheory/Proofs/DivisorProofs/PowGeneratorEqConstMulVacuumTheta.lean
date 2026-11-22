@@ -1,16 +1,17 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Divisors.GenReads
-public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.ThExprUniqOfChartIndep2
-public import Formalism.LocalToGlobal.ProjectiveLattices.ThProps
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0034
+public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0007
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0011
 public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.RdUEqConstMulClsSum
 public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.ReadingEqThP
-public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.ExistsLetterRowWeightDictionary
-public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.FockHxDifferentiable
-public import Development.AbelianVarietyTheory.Proofs.FormalGroupCharts.ExistsIsNabUncond
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AnalyticFibreDescriptionUniqueStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsLevelOneThetaNeZeroOnIdealHalfLatticeStatement
+public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.Bundle0043
+public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.Bundle0028
+public import Development.AbelianVarietyTheory.Proofs.FormalGroupCharts.Bundle0038
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0978
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0711
+public import Development.AbelianVarietyTheory.Definitions.SpanningFamilies.IsStabForm
 
 @[expose] public section
 
@@ -187,7 +188,7 @@ theorem exists_root_ne_zero {X : Data E r} {bas : (Fin g ⊕ Fin g → ℤ) ≃�
   have hM : 0 < l.M := lt_of_lt_of_le (by norm_num) l.three_le
   have hM0 : (l.M : E) ≠ 0 := Nat.cast_ne_zero.2 hM.ne'
   obtain ⟨-, -, h1, h2, -⟩ := DualMark.dual_marking E H Dw l r X L mk _ hL hmk (Complex.isPrimitiveRoot_exp l.M hM.ne')
-  obtain ⟨u, hu, hne⟩ := GlobalTheory.T.exists_levelOne_theta_ne_zero_on_ideal_half_lattice E r X g bas idx hs w L hL x hx (Mfr l) l.M (le_trans (by norm_num) l.three_le)
+  obtain ⟨u, hu, hne⟩ := _root_.GlobalTheory.Dict.ThetaHalf.exists_ne_zero_on_half E r X g bas idx hs w L hL x hx (Mfr l) l.M (le_trans (by norm_num) l.three_le)
     (by rw [h1, h2]) ϑ h h0
   obtain ⟨a, ha, t, ht, rfl⟩ := hmk.surj u hu
   refine ⟨fun _ => Submodule.Quotient.mk a, fun b hb => hne ?_⟩
@@ -313,7 +314,7 @@ theorem GlobalTheory.AdTh.prod_gen_eq_const_mul_thA : Formalism.MainNotions.Modu
   obtain ⟨A, ϑ, hϑ, h1⟩ := h x hux
   refine ⟨⟨ϑ, A, hϑ⟩, ?_⟩
   rintro ϑ' ⟨A', hϑ'⟩
-  have h2 := ((GlobalTheory.T.analyticFibreDescription_unique E H Dw l Xo c r g _ bas idx e x.1 _ _ A A' hs x.2 hL).2 ϑ').2 hϑ'
+  have h2 := ((_root_.GlobalTheory.AnUniq.anFib_unique E H Dw l Xo c r g _ bas idx e x.1 _ _ A A' hs x.2 hL).2 ϑ').2 hϑ'
   obtain rfl : ϑ = ϑ' :=
     (reads_existsUnique_theta E H Dw l Xo c r g _ bas idx e x.1 _ _ A hs x.2 hL 1 _).1.unique hϑ h2
   exact h1

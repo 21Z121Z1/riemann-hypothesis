@@ -1,6 +1,6 @@
 module
 
-public import Formalism.SharpRestriction.GrowthBounds.CoarseMultiplicity.CoarseMultiplicityAtIdentity
+public import Formalism.SharpRestriction.GrowthBounds.CoarseMultiplicity.Bundle0001
 public import Formalism.SharpRestriction.GrowthBounds.BinomialRatio.TopDegreeLeTwoB
 public import Formalism.SharpRestriction.GrowthBounds.BinomialRatio.CoarseDegreeAlternative
 

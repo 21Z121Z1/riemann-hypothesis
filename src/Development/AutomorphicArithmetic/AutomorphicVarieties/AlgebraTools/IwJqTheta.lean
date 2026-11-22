@@ -1,12 +1,11 @@
 module
 
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.HeckePairTop
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.TameParahoricRepSplitsAsProduct
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.Bundle0018
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0195
 public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.PadicIsNonarchimedeanLocalField
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.IwDomSum
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.Bundle0031
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.IwDomCard
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.IwDomMul
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.IwMemIwC
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.Bundle0022
 
 @[expose] public section
 

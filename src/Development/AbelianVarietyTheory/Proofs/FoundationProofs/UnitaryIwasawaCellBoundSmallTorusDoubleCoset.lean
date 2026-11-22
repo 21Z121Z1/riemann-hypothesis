@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.HeckeVecMemFixed
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0200
 public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExistsAntiJFrame
 
 @[expose] public section

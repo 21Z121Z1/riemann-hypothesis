@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.MultOfNotMem
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0604
 public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.HodgeMetricUniformisationSmoothOnInterior
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.EqOfConjEqOne
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0565
 public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsFramedChartExponentialToroidalModel
 
 @[expose] public section

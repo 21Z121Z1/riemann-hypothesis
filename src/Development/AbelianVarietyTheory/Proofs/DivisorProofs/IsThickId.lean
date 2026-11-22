@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Divisors.PrimitiveStructureSheafDegTwoVanish
-public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.IsAdditiveOfUniversal
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0019
+public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.Bundle0009
 
 @[expose] public section
 

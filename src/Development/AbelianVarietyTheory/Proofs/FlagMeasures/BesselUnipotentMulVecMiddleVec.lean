@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.BlockAnti
-public import Formalism.FormalDegreeBessel.FinalG
+public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.Bundle0009
+public import Formalism.FormalDegreeBessel.Bundle0002
 
 @[expose] public section
 

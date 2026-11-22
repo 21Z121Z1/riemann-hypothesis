@@ -6,9 +6,9 @@ public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForm
 public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.HarishChandraModulesOn
 public import Development.AbelianVarietyTheory.Proofs.HeightProofs.SchurOrthogonalityIndefiniteUnitaryGroup
 public import Formalism.RealPlaceAnalysis.RealPlaceTaylor.CompactHaarRightInvariantInst
-public import Formalism.RealPlaceAnalysis.RealPlaceTaylor.ComplexificationHolds
+public import Formalism.RealPlaceAnalysis.RealPlaceTaylor.Bundle0001
 public import Formalism.RealPlaceAnalysis.RealPlaceTaylor.IndefiniteUnitaryPreservesForm
-public import Development.AbelianVarietyTheory.Proofs.CoherentCohomologyProofs.IsKStableOnKFiniteVectors
+public import Development.AbelianVarietyTheory.Proofs.CoherentCohomologyProofs.Bundle0021
 
 @[expose] public section
 

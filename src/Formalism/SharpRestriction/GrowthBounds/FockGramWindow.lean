@@ -2,8 +2,8 @@ module
 
 public import Formalism.SharpRestriction.GrowthBounds.FockGramWindow.InitialPointNumericBound
 public import Formalism.SharpRestriction.GrowthBounds.FockGramWindow.WinLvl
-public import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.LatMin
-public import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.DiagRank
+public import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.Bundle0003
+public import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.Bundle0002
 
 @[expose] public section
 

@@ -5,7 +5,7 @@ public import Development.AutomorphicArithmetic.Foundations.GaloisRepresentation
 public import Formalism.SharpRestriction.GlobalSchurBounds.GeneralLinearActions.GenusMassVolumes
 public import Development.AbelianVarietyTheory.Definitions.Foundations.HermitianSpaceBaseLatticeEqFrameLattice
 public import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.WeilTensorModels
-public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.UnramifiedAntiInvariantLocal
+public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0063
 
 @[expose] public section
 

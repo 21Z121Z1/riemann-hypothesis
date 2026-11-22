@@ -1,6 +1,6 @@
 module
 
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ChartSome
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2234
 
 @[expose] public section
 

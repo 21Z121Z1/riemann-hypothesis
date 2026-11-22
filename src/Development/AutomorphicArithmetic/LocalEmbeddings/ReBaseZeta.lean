@@ -3,9 +3,11 @@ module
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.Divisors.CTSmallCone
 public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ZetaIdentityPersistsRowColumnChanges
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.HeisenbergOperatorIsotropicTranslationCharSplitStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SplitPlaceCharacterAndTranslationCoordsSurjectivStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EqSmulOfCommuteHeisenbergLinearModelSchwartzBruhStatement
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0525
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1738
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0340
+public import Development.AbelianVarietyTheory.Definitions.Divisors.HilbertNinetyQuotientHomEqIff
+public import Development.AbelianVarietyTheory.Definitions.Divisors.RankEqCardIffExistsFrameMatrixFirstColumnBlock
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LinearModelUnitaryConjugate
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MatchedFiniteMapsRestriction
 
@@ -141,7 +143,7 @@ theorem linW_change (hB : B.IsGood σ) (hX : X.IsHerm σ B r s) (hW : W.IsSkew �
   have x0 : ∀ b c Z, coX t b c (zY Z) = 0 := fun b c Z => by simp [coX, hzY0]
   have p0 : ∀ Y : Matrix (Fin n) (Fin d) (Fv F v), pairM Y 0 = 0 := fun Y => by simp [pairM]
   have p0' : ∀ Y : Matrix (Fin n) (Fin d) (Fv F v), pairM 0 Y = 0 := fun Y => by simp [pairM]
-  refine GlobalTheory.T.eq_smul_of_commute_heisenberg_linearModel_schwartzBruhat (SB (Fin n × Fin d → Fv F v)) (GlobalTheory.LatVac.psiAt B.ψ v) hψc hψ1 ι₂
+  refine _root_.GlobalTheory.LinSchur.eq_smul_of_commute (SB (Fin n × Fin d → Fv F v)) (GlobalTheory.LatVac.psiAt B.ψ v) hψc hψ1 ι₂
     (fun φ Y => ι φ (g.val * Y * k.valᵀ)) (Model.IsLin.bij hι₂) (fun x _ y _ a => by rw [map_add (f := _), map_smul]; rfl)
     (fun C φ => schr (GlobalTheory.LatVac.psiAt B.ψ v) (GlobalTheory.LatVac.locCo M.co v (zX C)) φ)
     (fun l φ => schr (GlobalTheory.LatVac.psiAt B.ψ v)
@@ -187,7 +189,7 @@ theorem linBar_change (hB : B.IsGood σ) (hX : X.IsHerm σ B r s) (hW : W.IsSkew
   have eX : ∀ u, coX t (b * g) (c * k) u = (GlobalTheory.SplitFlip.invT g).valᵀ * coX t b c u * (k⁻¹).valᵀ := fun u => by
     have := coX_mul t (b * g) g⁻¹ (c * k) k⁻¹ u
     rwa [mul_inv_cancel_right, mul_inv_cancel_right] at this
-  refine GlobalTheory.T.eq_smul_of_commute_heisenberg_linearModel_schwartzBruhat (SB (Fin n × Fin d → Fv F v)) (GlobalTheory.LatVac.psiAt B.ψ v) hψc hψ1 ι₂
+  refine _root_.GlobalTheory.LinSchur.eq_smul_of_commute (SB (Fin n × Fin d → Fv F v)) (GlobalTheory.LatVac.psiAt B.ψ v) hψc hψ1 ι₂
     (fun φ Y => ι φ ((GlobalTheory.SplitFlip.invT g).val * Y * (k⁻¹).val)) (Model.IsLin.bij hι₂)
     (fun x _ y _ a => by rw [map_add (f := _), map_smul]; rfl)
     (fun C φ => schr (GlobalTheory.LatVac.psiAt B.ψ v) (GlobalTheory.LatVac.locCo M.co v (zY C)) φ)

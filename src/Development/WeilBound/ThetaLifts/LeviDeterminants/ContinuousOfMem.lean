@@ -1,6 +1,6 @@
 module
 
-public import Development.WeilBound.ThetaLifts.LeviDeterminants.GrowLine
+public import Development.WeilBound.ThetaLifts.LeviDeterminants.Bundle0003
 public import Development.WeilBound.ThetaLifts.LeviDeterminants.GrowSplit
 
 @[expose] public section

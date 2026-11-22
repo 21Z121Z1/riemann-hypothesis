@@ -1,7 +1,7 @@
 module
 
-public import Formalism.SharpRestriction.GrowthBounds.RootWeights.LoweringSpanHighestComponentIntegral
-public import Formalism.SharpRestriction.GrowthBounds.RootWeights.InvariantDenominatorLinftyBound
+public import Formalism.SharpRestriction.GrowthBounds.RootWeights.Bundle0027
+public import Formalism.SharpRestriction.GrowthBounds.RootWeights.Bundle0001
 
 @[expose] public section
 

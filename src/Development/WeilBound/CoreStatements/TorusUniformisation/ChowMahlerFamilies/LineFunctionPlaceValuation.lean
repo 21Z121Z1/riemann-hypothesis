@@ -1,13 +1,13 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.HasBareNormDisc
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.Bundle0012
 public import Development.AutomorphicSpectrum.PublishedTheorems.Geometry₂.GagaSections
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.BlowupProjections.BlowupProjStatement
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.UniformisationConclusion
 public import Development.AutomorphicSpectrum.Statements.GeometryStatements.FlatDegree
 public import Formalism.LocalToGlobal.ProjectiveLattices.CompHt
-public import Development.AbelianVarietyTheory.Definitions.Divisors.HtValOnSubset
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0049
 public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.NormLeOneIffLogValuation
 public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.CapelliComplements.KappaIntegralBound
 

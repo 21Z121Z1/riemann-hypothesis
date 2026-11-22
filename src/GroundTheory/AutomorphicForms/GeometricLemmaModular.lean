@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import GroundTheory.AutomorphicForms.AdmissibleInduction
+public import GroundTheory.AutomorphicForms.Bundle0019
 public import GroundTheory.AutomorphicForms.CuspidalAdmissible
 
 @[expose] public section

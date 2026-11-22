@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Formalism.SharpRestriction.LevelLetterCocycles.LocalSituation
-public import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.ValuationCoeEqNorm
+public import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.Bundle0028
 
 @[expose] public section
 

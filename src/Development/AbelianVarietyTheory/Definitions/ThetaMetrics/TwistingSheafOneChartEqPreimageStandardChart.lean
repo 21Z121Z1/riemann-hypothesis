@@ -2,10 +2,10 @@ module
 
 public import Mathlib
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.NonzeroLocus
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.ThetaUnifAV
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.Bundle0003
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.SemiabelianSchemes.PrecompleteBases.PsbLb
-public import ReciprocityTheory.AnalyticForms.RegularLocalRings.ProjDehomA
-public import Development.AbelianVarietyTheory.Proofs.CoherentCohomologyProofs.IsAffineHomOfIsPullbackSpecMap
+public import ReciprocityTheory.AnalyticForms.RegularLocalRings.Bundle0009
+public import Development.AbelianVarietyTheory.Proofs.CoherentCohomologyProofs.Bundle0008
 public import Development.AbelianVarietyTheory.Definitions.ThetaMetrics.AwayToSectionFromZero
 
 @[expose] public section

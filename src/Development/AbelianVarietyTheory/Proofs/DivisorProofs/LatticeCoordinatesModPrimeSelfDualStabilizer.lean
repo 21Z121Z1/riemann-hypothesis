@@ -2,8 +2,8 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.Divisors.MemLevEigenIffTransl
-public import Development.AbelianVarietyTheory.Definitions.Divisors.CongModRefl
-public import Formalism.LocalToGlobal.IndefiniteReal.RhoGeo
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0045
+public import Formalism.LocalToGlobal.IndefiniteReal.Bundle0027
 public import Formalism.LocalToGlobal.IndefiniteReal.LinksChar
 public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.MulVecMemOfFrame
 public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.MemHomLatticeIffIntegralMatrixSplitChart

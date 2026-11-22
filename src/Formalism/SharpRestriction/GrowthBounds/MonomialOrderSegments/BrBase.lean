@@ -3,7 +3,7 @@ module
 public import Formalism.SharpRestriction.GrowthBounds.MonomialOrderSegments.LiftBoundOfHypotheses
 public import Formalism.SharpRestriction.GrowthBounds.Lemma5aAt
 public import Formalism.SharpRestriction.GrowthBounds.ProjectionOfIsotypicDecomposition
-public import Formalism.SharpRestriction.GrowthBounds.GLWeightTheory
+public import Formalism.SharpRestriction.GrowthBounds.Bundle0003
 
 @[expose] public section
 

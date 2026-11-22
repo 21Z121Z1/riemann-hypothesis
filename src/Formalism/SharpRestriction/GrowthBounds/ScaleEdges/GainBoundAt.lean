@@ -1,7 +1,7 @@
 module
 
-public import Formalism.SharpRestriction.GrowthBounds.ScaleEdges.FramesOf
-public import Formalism.PolynomialDimension.FinalNum
+public import Formalism.SharpRestriction.GrowthBounds.ScaleEdges.Bundle0001
+public import Formalism.PolynomialDimension.Bundle0004
 
 @[expose] public section
 

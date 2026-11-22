@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.EvalDet
+public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0015
 
 @[expose] public section
 

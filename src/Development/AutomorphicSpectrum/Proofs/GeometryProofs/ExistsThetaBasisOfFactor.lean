@@ -1,10 +1,10 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.HodgeIPIffHodgeFormConj
-public import Development.AbelianVarietyTheory.Proofs.ToricGeometry.TopLePreimageOfValAtNeZero
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.Bundle0008
+public import Development.AbelianVarietyTheory.Proofs.ToricGeometry.Bundle0018
 public import Development.AbelianVarietyTheory.Proofs.ToricGeometry.TangentBijectionOfValues
-public import Development.AbelianVarietyTheory.Proofs.ToricGeometry.SectionsPowThetaFunctions
+public import Development.AbelianVarietyTheory.Proofs.ToricGeometry.Bundle0017
 
 @[expose] public section
 

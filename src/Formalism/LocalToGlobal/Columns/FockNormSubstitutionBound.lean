@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Formalism.LocalToGlobal.Columns.CoefficientMapHeightBound
+public import Formalism.LocalToGlobal.Columns.Bundle0021
 
 @[expose] public section
 

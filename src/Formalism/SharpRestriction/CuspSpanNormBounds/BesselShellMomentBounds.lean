@@ -1,10 +1,10 @@
 module
 
 public import Formalism.FlagUnipotentLattices.AlgebraicIdentityHigherDegree
-public import Formalism.FormalDegreeBessel.FinalG
+public import Formalism.FormalDegreeBessel.Bundle0002
 public import Formalism.SharpRestriction.CuspSpanNormBounds.OnePlaceEstimates
 public import Formalism.LocalRingCardinality.RankBoundMonotoneInDimension
-public import Formalism.SharpRestriction.CuspSpanNormBounds.RotatedWeightedBound
+public import Formalism.SharpRestriction.CuspSpanNormBounds.Bundle0004
 
 @[expose] public section
 

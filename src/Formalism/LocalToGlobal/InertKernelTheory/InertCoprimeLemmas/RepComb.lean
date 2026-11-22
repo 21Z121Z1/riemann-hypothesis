@@ -1,6 +1,6 @@
 module
 
-public import Formalism.LocalToGlobal.InertKernelTheory.DefsRepComb
+public import Formalism.LocalToGlobal.InertKernelTheory.Bundle0012
 public import Formalism.LocalToGlobal.InertKernelTheory.InertCoprimeLemmas.IntEasy
 public import Formalism.LocalToGlobal.KernelLattices.KernelLocalFactors.PeriodLatticeFinitelyGenerated
 public import Formalism.LocalToGlobal.KernelLattices.KernelLocalFactors.ExistsIntegralMulOrderElement

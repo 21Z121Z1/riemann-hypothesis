@@ -2,8 +2,8 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.Degenerations.CharZeroOfIsPrimitiveRoot
-public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.CardTorsionOverZero
-public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.DetCondIffOfFieldExtension
+public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.Bundle0056
+public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0045
 
 @[expose] public section
 

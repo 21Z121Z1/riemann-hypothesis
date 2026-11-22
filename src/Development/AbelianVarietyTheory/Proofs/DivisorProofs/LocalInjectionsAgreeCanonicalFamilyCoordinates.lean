@@ -2,21 +2,23 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.OnTorusComp
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TautologicalLatticeIdentificationEqId
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SmoothConeSumGeneratorsEqOfCommonInteriorPoint
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TautologicalCoordsEqOfMatchingData
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsLevelPointPairsLowerBase
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsCDvrTwoEmbeddings
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ComesFromBaseOfPullbackInjectiveDomains
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PeriodPartMemTautologicalPointTorsionStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TautologicalPointTransportFieldMapStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TautologicalBaseMatchingMonomialsRatioUnitStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DegenerationDataNsmulRescaleKeepsLawsStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CanonicalFamilyBaseInjectionsAgreeStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsTautologicalBaseNsmulDegenerationDataStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ComesFromTautBaseOfRescaledPullbackMonomialStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EqOfMumfordBundleTorsionPresentationsStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EqOfProdZpowEqBalancedFormsBasisStatement
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2623
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2564
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2706
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2594
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2505
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2495
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2755
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0068
+public import Development.AbelianVarietyTheory.Definitions.Divisors.IsUnimodMod
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2671
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2568
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle3006
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle3074
+public import Development.AbelianVarietyTheory.Definitions.Divisors.HasRigidCoords
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2987
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2975
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2978
 
 @[expose] public section
 
@@ -105,7 +107,7 @@ theorem monomials_eq {o W : Type} [CommRing o] [CommRing W] [IsLocalRing W] (T :
   intro hn hD₁ hD₂ hF₁ hF₂ hM he hb H c a
   obtain ⟨hbm, -, -, hu, -⟩ := hM
   obtain ⟨p₁, p₂, hy₁, ht₁, hy₂, ht₂, p', hy', hA, hE⟩ := H a
-  have hg : p'.g = p₂.g := GlobalTheory.T.torsionPoint_torusPart_eq_of_equiv_same_lattice V D₂ hD₂ F n hn p' p₂ (by
+  have hg : p'.g = p₂.g := _root_.GlobalTheory.TInj.qkPt_g_eq_of_equiv V D₂ hD₂ F n hn p' p₂ (by
     rw [hy', hy₁, hy₂]; apply e₂.injective; rw [he, e₁.apply_symm_apply, e₂.apply_symm_apply]) hE
   rw [hg] at hA
   have hχ : e₁ (φ.symm (e₂.symm c)) = e₂ (e₂.symm c) := by rw [← he, φ.apply_symm_apply]
@@ -120,7 +122,7 @@ theorem monomials_eq {o W : Type} [CommRing o] [CommRing W] [IsLocalRing W] (T :
   have a₁ := hv₁ z J₀ (rl J) hJ₀ ((isPart_inl D₁.P.L D₂.P.L).good hJ)
   have a₂ := hv₂ z J₀ (rr J) hJ₀ ((isPart_inr D₁.P.L D₂.P.L).good hJ)
   have a₃ := hA.2 (e₂.symm c) u hun z J hJ
-  have a₄ := GlobalTheory.T.mumfordBundleIso_comparison_normalisedGenerator T ε n V ω D₁ D₂ s₁ e₁ β₁ ββ₁ w₁ s₂ e₂ β₂ ββ₂ w₂ b hD₁ hD₂ hF₁ hF₂ hbm hb
+  have a₄ := _root_.GlobalTheory.TInj.lamVal_cmp T ε n V ω D₁ D₂ s₁ e₁ β₁ ββ₁ w₁ s₂ e₂ β₂ ββ₂ w₂ b hD₁ hD₂ hF₁ hF₂ hbm hb
     (φ.symm (e₂.symm c)) (e₂.symm c) hχ u hun (TF (R := V) F) p₁.g.b z J J₀ hJ hJ₀
   rw [← hA.1] at a₄
   rw [hχ] at a₁
@@ -165,7 +167,7 @@ theorem torsion_fixed {W R V : Type} [CommRing W] [CommRing R] [IsDomain R] [Com
   have e₁ := tr_base hj₁ htr1 _ _ hg₀
   have e₂ := tr_base hj₂ htr2 _ _ hg₀
   rw [← Category.assoc (spMap _), ← hsp] at e₁ e₂
-  have hg : p'.g = p₂.g := GlobalTheory.T.torsionPoint_torusPart_eq_of_equiv_same_lattice V D₂ h₂ F n hn p' p₂ (by rw [hp'y, h1y, h2y, hp₀y, map_zero, map_zero, map_zero]) heqv
+  have hg : p'.g = p₂.g := _root_.GlobalTheory.TInj.qkPt_g_eq_of_equiv V D₂ h₂ F n hn p' p₂ (by rw [hp'y, h1y, h2y, hp₀y, map_zero, map_zero, map_zero]) heqv
   have hx₁ : x.left = p₁.g.b.left := by
     apply hβ₁.1.hom_ext
     · rw [hxσ', e₁, Category.assoc]
@@ -176,7 +178,7 @@ theorem torsion_fixed {W R V : Type} [CommRing W] [CommRing R] [IsDomain R] [Com
 set_option maxHeartbeats 1000000 in
 theorem coords_eq : ∀ {E : Type} [Field E] [NumberField E] [IsCMField E] {H : Host E} {Dw : Datum H} {l : Geo.Tor.Level H} (Xo : Moduli Dw l) (c : Coeff l) (φ : InvFun (𝓞 E)), 1 ≤ Dw.p + Dw.q → IsPolFan H.bar (min Dw.p Dw.q) φ → NoSelfInt H.bar (min Dw.p Dw.q) φ → ∀ (R : Type) [CommRing R] [IsDomain R] [IsLocalRing R], GlobalTheory.Mum.Base R → ∀ (C : MonoFam Xo c φ R) (Cn : Canon C), ∀ (R' : Type) [CommRing R'] [IsDomain R'] [IsLocalRing R'], GlobalTheory.Mum.Base R' → ∀ θ₁ θ₂ : R →+* R', Function.Injective θ₁ → Function.Injective θ₂ → IsLocalHom θ₁ → IsLocalHom θ₂ → ∀ κ₁ κ₂ : Sp (FractionRing R') ⟶ Sp (FractionRing R), κ₁ ≫ jK R = jK R' ≫ spMap θ₁ → κ₂ ≫ jK R = jK R' ≫ spMap θ₂ → κ₁ ≫ C.y = κ₂ ≫ C.y → ∀ k, θ₁ (Cn.ψ (MvPolynomial.X k)) = θ₂ (Cn.ψ (MvPolynomial.X k)) := by
   intro E _ _ _ H Dw l Xo c φ hpq hφ hns R _ _ _ hR C Cn R' _ _ _ hR' θ₁ θ₂ i₁ i₂ l₁ l₂ κ₁ κ₂ hκ₁ hκ₂ hy
-  have hW := GlobalTheory.T.canonicalFamily_base_injections_agree Xo c φ hpq hφ hns R hR C Cn R' hR' θ₁ θ₂ i₁ i₂ l₁ l₂ κ₁ κ₂ hκ₁ hκ₂ hy
+  have hW := _root_.GlobalTheory.UCanon.injBase Xo c φ hpq hφ hns R hR C Cn R' hR' θ₁ θ₂ i₁ i₂ l₁ l₂ κ₁ κ₂ hκ₁ hκ₂ hy
   letI := H.starRing
   have hn : 3 ≤ l.M' := l.three_le.trans (Nat.le_of_dvd (level_pos l) (Nat.dvd_lcm_left _ _))
   have hn1 : 1 ≤ l.M' := by omega
@@ -194,7 +196,7 @@ theorem coords_eq : ∀ {E : Type} [Field E] [NumberField E] [IsCMField E] {H : 
     · exact (Cn.bd k).trans_ne (C.s_ne_zero k)
     · exact (Cn.tor k).ne_zero
   obtain ⟨hev, hbi, hgen, -⟩ := GlobalTheory.T.degenerationDataNsmulRescale_keeps_laws Cn.L.W Cn.L.D (𝓞 E) Cn.L.oa H.w0 l.M' Cn.L.even Cn.L.bimult Cn.L.w0 Cn.L.gen
-  obtain ⟨T, ib, β₀, ββ₀, w₀, hF₀⟩ := GlobalTheory.T.exists_tautologicalBase_nsmul_degenerationData Cn.L.b Cn.L.D Cn.L.bimult Cn.L.gen l.M'
+  obtain ⟨T, ib, β₀, ββ₀, w₀, hF₀⟩ := _root_.GlobalTheory.TInjBase.main Cn.L.b Cn.L.D Cn.L.bimult Cn.L.gen l.M'
   obtain ⟨g, hD, hg, hxe, -⟩ := Cn.data
   let ε : Fin C.m ⊕ Fin Cn.N → LinearMap.BilinForm ℤ (Fin T.r → ℤ) := fun k =>
     (Cn.ε k : LinearMap.BilinForm ℤ Cn.L.D.X).compl₁₂ ib.symm.toIntLinearEquiv.toLinearMap ib.symm.toIntLinearEquiv.toLinearMap
@@ -202,7 +204,7 @@ theorem coords_eq : ∀ {E : Type} [Field E] [NumberField E] [IsCMField E] {H : 
     congrArg₂ (fun x y => (Cn.ε k : LinearMap.BilinForm ℤ Cn.L.D.X) x y) (ib.symm_apply_apply a) (ib.symm_apply_apply b)
   let e : C.P.D.toPre.X ≃+ (Fin T.r → ℤ) := Cn.e.toAddEquiv.trans ib
   have he : ∀ y, e y = ib (Cn.e y) := fun _ => rfl
-  obtain ⟨β, ββ, w, hF⟩ := GlobalTheory.T.comesFromTautBase_of_rescaled_pullback_monomial T l.M' (mulDeg Cn.L.D l.M') hev hbi hgen ib β₀ ββ₀ w₀ hF₀ R iw hiw C.P.D.toPre g hD
+  obtain ⟨β, ββ, w, hF⟩ := _root_.GlobalTheory.TInj.from_rescale_pull T l.M' (mulDeg Cn.L.D l.M') hev hbi hgen ib β₀ ββ₀ w₀ hF₀ R iw hiw C.P.D.toPre g hD
     s ε e (fun y => congrArg ib (hxe y).symm) (fun a a' => by
       simp only [he, hε]
       exact second_diff Cn.e _ (fun k => (map_ne_zero_iff _ (IsFractionRing.injective R _)).2 (hs0 k)) _
@@ -229,13 +231,13 @@ theorem coords_eq : ∀ {E : Type} [Field E] [NumberField E] [IsCMField E] {H : 
         ((hD₂.e.hom.left ≫ pullback.fst C.P.D.toPre.P.A.hom (specOf f₂)) ≫ β) ββ₂ w₂ (AlgebraicClosure (FractionRing V)) a p₂.g ∧
       QImg b ph p₁ p₂ := by
     intro a
-    obtain ⟨p₀, hp₀y, hp₀⟩ := GlobalTheory.T.periodPart_mem_tautologicalPoint_torsion T ε l.M' R C.P.D.toPre iw s e β ββ w C.P.D.tau_bimult hF hs0
+    obtain ⟨p₀, hp₀y, hp₀⟩ := _root_.GlobalTheory.TInj.exists_qkPt_tautPt T ε l.M' R C.P.D.toPre iw s e β ββ w C.P.D.tau_bimult hF hs0
       (AlgebraicClosure (FractionRing R)) a
     obtain ⟨p₁, p₂, hp₁y, hTr₁, hp₂y, hTr₂, hQ⟩ := hpairs p₀
     exact ⟨p₁, p₂, by rw [hp₁y, hp₀y]; rfl,
-      GlobalTheory.T.tautologicalPoint_transport_fieldMap T ε l.M' R V _ C.P.D iw s e β ββ w f₁ D₁.toPre hD₁ ββ₁ w₁ hf₁ D₁.tau_bimult hF hF₁ _ _ j₁ hE₁ a _ _ hp₀ hTr₁,
+      _root_.GlobalTheory.TautTransport.tautPt_tr T ε l.M' R V _ C.P.D iw s e β ββ w f₁ D₁.toPre hD₁ ββ₁ w₁ hf₁ D₁.tau_bimult hF hF₁ _ _ j₁ hE₁ a _ _ hp₀ hTr₁,
       by rw [hp₂y, hp₀y]; rfl,
-      GlobalTheory.T.tautologicalPoint_transport_fieldMap T ε l.M' R V _ C.P.D iw s e β ββ w f₂ D₂.toPre hD₂ ββ₂ w₂ hf₂ D₂.tau_bimult hF hF₂ _ _ j₂ hE₂ a _ _ hp₀ hTr₂,
+      _root_.GlobalTheory.TautTransport.tautPt_tr T ε l.M' R V _ C.P.D iw s e β ββ w f₂ D₂.toPre hD₂ ββ₂ w₂ hf₂ D₂.tau_bimult hF hF₂ _ _ j₂ hE₂ a _ _ hp₀ hTr₂,
       hQ⟩
 
   let ga : C.P.D.toPre.X ≃ₗ[𝓞 E] C.P.D.toPre.X :=
@@ -244,8 +246,8 @@ theorem coords_eq : ∀ {E : Type} [Field E] [NumberField E] [IsCMField E] {H : 
   have hbd : ∀ f : R →+* V, Function.Injective f → IsLocalHom f → ∀ k, f (s (.inl k)) ∈ maximalIdeal V ∧ f (s (.inl k)) ≠ 0 :=
     fun f hf hl k => ⟨map_nonunit f _ (show Cn.ψ _ ∈ maximalIdeal R from (Cn.bd k).symm ▸ C.s_mem k),
       (map_ne_zero_iff f hf).2 (hs0 _)⟩
-  have hpu := GlobalTheory.T.tautologicalBase_matching_monomials_ratio_unit T ε l.M' V D₁.toPre D₂.toPre _ _ _ _ ββ₁ w₁ _ _ _ _ ββ₂ w₂ b ph _ D₁.tau_bimult D₂.tau_bimult hF₁ hF₂ hM
-  obtain ⟨d₁, d₂, hd₁, hd₂, hsum⟩ := GlobalTheory.T.monomials_differ_by_units_positive_boundaryCombination V T.r C.m Cn.N l.M' hn1 ε (fun k => f₁ (s k)) (fun k => f₂ (s k))
+  have hpu := _root_.GlobalTheory.TInj.PerUnit.monomial_ratio_unit T ε l.M' V D₁.toPre D₂.toPre _ _ _ _ ββ₁ w₁ _ _ _ _ ββ₂ w₂ b ph _ D₁.tau_bimult D₂.tau_bimult hF₁ hF₂ hM
+  obtain ⟨d₁, d₂, hd₁, hd₂, hsum⟩ := _root_.GlobalTheory.TInj.coneval V T.r C.m Cn.N l.M' hn1 ε (fun k => f₁ (s k)) (fun k => f₂ (s k))
     ((e.symm.trans ga.toAddEquiv).trans e).toIntLinearEquiv (hbd f₁ hf₁ lf₁) (fun k => (Cn.tor k).map f₁) (hbd f₂ hf₂ lf₂)
     (fun k => (Cn.tor k).map f₂) (fun a a' => by
       obtain ⟨u, hu⟩ := hpu (hD₁.xe.symm (e.symm a)) (hD₁.xe.symm (e.symm a'))
@@ -288,7 +290,7 @@ theorem coords_eq : ∀ {E : Type} [Field E] [NumberField E] [IsCMField E] {H : 
   let f : V →+* AlgebraicClosure (FractionRing V) := (algebraMap (FractionRing V) _).comp (algebraMap V (FractionRing V))
   have hf : Function.Injective f :=
     (algebraMap (FractionRing V) _).injective.comp (IsFractionRing.injective V (FractionRing V))
-  have hx := GlobalTheory.T.eq_of_prod_zpow_eq_balancedForms_basis H Cn.L.D.X _ _ Cn.ε (fun k => f (f₁ (s k))) (fun k => f (f₂ (s k)))
+  have hx := _root_.GlobalTheory.BalMono.eq_of_prod_zpow_eq H Cn.L.D.X _ _ Cn.ε (fun k => f (f₁ (s k))) (fun k => f (f₂ (s k)))
     (fun k => (map_ne_zero_iff _ hf).2 ((map_ne_zero_iff _ hf₁).2 (hs0 k)))
     (fun k => (map_ne_zero_iff _ hf).2 ((map_ne_zero_iff _ hf₂).2 (hs0 k)))
     (fun a a' => by

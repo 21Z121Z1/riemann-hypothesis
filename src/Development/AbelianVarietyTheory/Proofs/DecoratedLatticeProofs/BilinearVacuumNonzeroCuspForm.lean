@@ -1,25 +1,32 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.IsBiSmooth
-public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.ExistsNormLeHeightPow
+public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.Bundle0017
+public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.Bundle0007
 public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.AdmissibleDiscreteSeriesOfHasParam
 public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.HarishChandraModulesOn
-public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.EqZeroOfAeFundamentalDomain
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.IsBiThetaIffJoin
+public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.Bundle0064
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0204
 public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.BiThetaOfVac
 public import Development.AbelianVarietyTheory.Proofs.CovolumeBounds.IntegralConjInnerMulInnerOfIsEmptyEquiv
-public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.AdelicUnitaryTopCong
-public import Development.AbelianVarietyTheory.Proofs.HeightProofs.CompactAverageSmoothFamilyClosedUnderDerivatives
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SetIntegralFundamentalDomainRightTranslateInvariStatement
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.WeilOperatorIntegralCommOfBoundedFiniteMeasureStatement
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ContinuousIntegralCompactAutomorphicQuotientParaStatement
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.CompactAverageThetaFamilySmoothStatement
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.IsJointlySmoothBiThetaHeisenbergDerivStatement
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.HeisenbergOneParamDerivOrthDecJoinedEqSumStatement
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.WeilOperatorFirstCommutesHeisenbergDerivativeSecStatement
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.HeisenbergDerivWeilTranslateContinuousCombinatioStatement
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.IsCompactRealPointsOfDefiniteHermitianSpaceDataStatement
+public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.Bundle0051
+public import Development.AbelianVarietyTheory.Proofs.HeightProofs.Bundle0044
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0173
+public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.Bundle0015
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0140
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0136
+public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.Bundle0008
+public import Formalism.LocalToGlobal.IndefiniteReal.OrthogonalComplementCharacterisation
+public import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.ExistsHeightLeTwoMulQuotHeight
+public import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.WittDecompSymplInclIsotropicInclAnisotropic
+public import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.Bundle0019
+public import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.Bundle0007
+public import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.Bundle0021
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0090
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0216
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0220
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0240
+public import Formalism.LocalToGlobal.IndefiniteReal.LevelTypeEquivalence.Bundle0010
 
 @[expose] public section
 
@@ -110,19 +117,19 @@ theorem isBiSmooth_avg (ha : IsWeilDatumO ψ A S χA χS oma) (hb : IsWeilDatumO
     | mem F h =>
       obtain ⟨c, G, hc, hG, rfl⟩ := h
       have hT := (hB ψ A S A' _ _ _ _ oma omb ha hb G hG).1
-      obtain ⟨f1, f2, -⟩ := GlobalTheory.T.heisenbergOneParamDeriv_orthDecJoined_eq_sum D ψ hψ _ A S A' d G hG M hM hM0
+      obtain ⟨f1, f2, -⟩ := _root_.GlobalTheory.BiJoinDeriv.dLine_join D ψ hψ _ A S A' d G hG M hM hM0
       have c1 : Continuous ((fstH d S).comp M) := (continuous_fstH d S).comp hM
       have c2 : Continuous ((sndH d S).comp M) := (continuous_sndH d S).comp hM
-      obtain ⟨m, N, e, hN, hN0, he, hexp⟩ := GlobalTheory.T.heisenbergDeriv_weilTranslate_continuous_combination D ψ A S χA χS oma ha _ c1 f1
+      obtain ⟨m, N, e, hN, hN0, he, hexp⟩ := _root_.GlobalTheory.HeisLineComb.dLine_om_comb D ψ A S χA χS oma ha _ c1 f1
       have key : (fun k => dLine ψ _ S M (c k • join d S fun u v => oma (p k) (fun u' => G u' v) u)) =
           (∑ i, fun k => (c k * e i (p k)) • join d S fun u v =>
             oma (p k) (fun u' => dLine ψ A S (N i) (fun u'' => G u'' v) u') u) +
           fun k => c k • join d S fun u v => oma (p k) (fun u' => dLine ψ S A' ((sndH d S).comp M) (G u') v) u := by
         funext k
-        rw [dLine_smul, (GlobalTheory.T.heisenbergOneParamDeriv_orthDecJoined_eq_sum D ψ hψ _ A S A' d _ (hT (p k)) M hM hM0).2.2]
+        rw [dLine_smul, (_root_.GlobalTheory.BiJoinDeriv.dLine_join D ψ hψ _ A S A' d _ (hT (p k)) M hM hM0).2.2]
         funext x
         simp only [Pi.smul_apply, Pi.add_apply, Finset.sum_apply, join_apply, smul_eq_mul]
-        rw [GlobalTheory.T.weilOperator_first_commutes_heisenbergDerivative_second D ψ A S A' _ _ _ _ oma omb ha hb hB G hG _ c2 f2, mul_add]
+        rw [_root_.GlobalTheory.DerivComm.om_dLine_right D ψ A S A' _ _ _ _ oma omb ha hb hB G hG _ c2 f2, mul_add]
         congr 1
         have := congrFun (hexp (p k) _ (GlobalTheory.FrComb.slice_left hG (sndH d S x))) (fstH d S x)
         simp only [Pi.smul_apply, Finset.sum_apply, smul_eq_mul] at this
@@ -131,8 +138,8 @@ theorem isBiSmooth_avg (ha : IsWeilDatumO ψ A S χA χS oma) (hb : IsWeilDatumO
         exact Finset.sum_congr rfl fun i _ => (mul_assoc _ _ _).symm
       rw [key]
       refine Submodule.add_mem _ (Submodule.sum_mem _ fun i _ => Submodule.subset_span ?_) (Submodule.subset_span ?_)
-      · exact ⟨_, _, hc.mul ((he i).comp hp), (GlobalTheory.T.isJointlySmoothBiTheta_heisenbergDeriv D ψ hψ A S A' G hG).1 _ (hN i) (hN0 i), rfl⟩
-      · exact ⟨_, _, hc, (GlobalTheory.T.isJointlySmoothBiTheta_heisenbergDeriv D ψ hψ A S A' G hG).2 _ c2 f2, rfl⟩
+      · exact ⟨_, _, hc.mul ((he i).comp hp), (_root_.GlobalTheory.BiDeriv.isBiTheta_dLine D ψ hψ A S A' G hG).1 _ (hN i) (hN0 i), rfl⟩
+      · exact ⟨_, _, hc, (_root_.GlobalTheory.BiDeriv.isBiTheta_dLine D ψ hψ A S A' G hG).2 _ c2 f2, rfl⟩
     | zero =>
       have : (fun k : K => dLine ψ _ S M ((0 : K → WO (GlobalTheory.Doubling.hsum A (GlobalTheory.ChiGrid.negSp A')) S → ℂ) k)) = 0 := by
         funext k x
@@ -150,7 +157,7 @@ theorem isBiSmooth_avg (ha : IsWeilDatumO ψ A S χA χS oma) (hb : IsWeilDatumO
       rw [this]
       exact Submodule.smul_mem _ a h
   intro n L L' hL hL' h0 h0' u v
-  have := GlobalTheory.T.compactAverage_thetaFamily_smooth D ψ hψ _ S K μ (Submodule.span ℂ gen : Set _) h1 h2 h3 _ (Submodule.subset_span (show _ ∈ gen from ⟨c, G, hc, hG, rfl⟩)) n
+  have := _root_.GlobalTheory.ThetaAvgSmooth.avg_smooth D ψ hψ _ S K μ (Submodule.span ℂ gen : Set _) h1 h2 h3 _ (Submodule.subset_span (show _ ∈ gen from ⟨c, G, hc, hG, rfl⟩)) n
     ((inlH d S).comp L + (inrH d S).comp L') (((continuous_inlH d S).comp hL).add ((continuous_inrH d S).comp hL'))
     (fun t => by
       show (inlH d S (L t) + inrH d S (L' t)).map (finPart D) = 0
@@ -192,7 +199,7 @@ theorem om_integral [IsFiniteMeasure μ] {S T : HSp D} {χS χT : (AE D)ˣ →* 
   have h2' : Continuous fun q : K × WO S T => om p (c q.1 • F q.1) q.2 := by
     simp only [map_smul]
     exact (hc.comp continuous_fst).mul h2
-  have := GlobalTheory.T.weilOperator_integral_comm_of_bounded_finiteMeasure D ψ S T χS χT om hom K μ (fun k => c k • F k) p hF' h1' (exists_bound_fam hom.std hF' h1') h2'
+  have := _root_.GlobalTheory.CommIntBdd.om_integral_comm_bdd D ψ S T χS χT om hom K μ (fun k => c k • F k) p hF' h1' (exists_bound_fam hom.std hF' h1') h2'
     (exists_bound_fam hom.std (fun k => hom.om_pres p _ (hF' k)) h2') hI x
   simpa only [map_smul, Pi.smul_apply, smul_eq_mul] using this
 
@@ -201,16 +208,16 @@ omit [CompactSpace K] in
 theorem integral_mean [IsProbabilityMeasure μ] {A : HSp D} (hA : CoCpt A) (vA : Vol A) {j : K → GA D A} (hj : Continuous j)
     {F : GA D A → ℂ} (hF : IsContAut A F) : ∫ h in vA.𝓕, ∫ k, F (h * j k) ∂μ ∂vA.μ = ∫ h in vA.𝓕, F h ∂vA.μ := by
   obtain ⟨i1, -, i3, -, i5, -⟩ := GlobalTheory.Ker.CongTop.adelicUnitary_top_cong D A
-  have hfin := (GlobalTheory.T.continuous_integral_compactAutomorphicQuotient_param D A hA vA Unit (fun _ _ => 1) continuous_const (fun _ _ _ _ => rfl)).1 ()
+  have hfin := (_root_.GlobalTheory.CocompactParam.continuous_integral_param D A hA vA Unit (fun _ _ => 1) continuous_const (fun _ _ _ _ => rfl)).1 ()
   haveI : IsFiniteMeasure (vA.μ.restrict vA.𝓕) := by
     rcases (integrable_const_iff (c := (1 : ℂ))).1 hfin with h | h
     · exact absurd h one_ne_zero
     · exact h
-  obtain ⟨C, hC⟩ := (GlobalTheory.T.continuous_integral_compactAutomorphicQuotient_param D A hA vA Unit (fun g _ => F g) (hF.2.comp continuous_fst)
+  obtain ⟨C, hC⟩ := (_root_.GlobalTheory.CocompactParam.continuous_integral_param D A hA vA Unit (fun g _ => F g) (hF.2.comp continuous_fst)
     (fun γ hγ g _ => hF.1 γ hγ g)).2.2 ()
   have hC' := hC.self_of_nhds
   rw [integral_integral_swap]
-  · simp_rw [GlobalTheory.T.setIntegral_fundamentalDomain_right_translate_invariant D A vA.μ vA.𝓕 vA.haar vA.fund F hF.1]
+  · simp_rw [_root_.GlobalTheory.ChainOnto.setIntegral_fd_mul_right D A vA.μ vA.𝓕 vA.haar vA.fund F hF.1]
     simp
   · refine Integrable.mono' (integrable_const C) ?_ (ae_of_all _ fun q => hC' _)
     exact (hF.2.comp (continuous_fst.mul (hj.comp continuous_snd))).aestronglyMeasurable

@@ -1,7 +1,6 @@
 module
 
-public import Development.WeilBound.ThetaLifts.EigenvalueEndgame.SignatureSplitting.Emb2DiaMulVecIncVY
-public import Development.WeilBound.ThetaLifts.EigenvalueEndgame.SignatureSplitting.AeFacts
+public import Development.WeilBound.ThetaLifts.EigenvalueEndgame.SignatureSplitting.Bundle0001
 
 @[expose] public section
 

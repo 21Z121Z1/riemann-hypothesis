@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.Foundations.IsLamOfLSmulIff
-public import Development.AbelianVarietyTheory.Definitions.Foundations.HtCoIOfEq
+public import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0022
 
 @[expose] public section
 

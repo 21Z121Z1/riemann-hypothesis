@@ -1,6 +1,6 @@
 module
 
-public import ReciprocityTheory.DualLattices.RestrictedHopfOrderApproximationStatement
+public import ReciprocityTheory.DualLattices.Bundle0021
 
 @[expose] public section
 

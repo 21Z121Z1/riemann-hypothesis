@@ -1,7 +1,7 @@
 module
 
 public import Development.WeilBound.ThetaLifts.Reductions.WeilPairs.IsScalarOneOfComm
-public import Development.WeilBound.ThetaLifts.Reductions.WeilPairs.LatRep
+public import Development.WeilBound.ThetaLifts.Reductions.WeilPairs.Bundle0011
 
 @[expose] public section
 

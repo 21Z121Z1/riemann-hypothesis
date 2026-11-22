@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import GroundTheory.HeightsAndTheta.Heights.StabilizerCovolume.DifferentLatIndex
-public import GroundTheory.HeightsAndTheta.Heights.StabilizerCovolume.PTorusIndex
+public import GroundTheory.HeightsAndTheta.Heights.StabilizerCovolume.Bundle0002
+public import GroundTheory.HeightsAndTheta.Heights.StabilizerCovolume.Bundle0003
 public import GroundTheory.HeightsAndTheta.Heights.StabilizerCovolume.DiffLatStep
 
 @[expose] public section

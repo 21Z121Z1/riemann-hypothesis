@@ -1,8 +1,8 @@
 module
 
-public import Development.WeilBound.CoreStatements.FlagImmersions.FibSandwich
-public import Development.WeilBound.CoreStatements.HodgeTatePoints.GhModel
-public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.DifferentGeneratorDualIntegral
+public import Development.WeilBound.CoreStatements.FlagImmersions.Bundle0015
+public import Development.WeilBound.CoreStatements.HodgeTatePoints.Bundle0051
+public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.Bundle0014
 
 @[expose] public section
 

@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.CoeffMemOfMemMaxPow
+public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0010
 
 @[expose] public section
 

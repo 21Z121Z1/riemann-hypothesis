@@ -1,6 +1,6 @@
 module
 
-public import Formalism.LocalToGlobal.CharacterGerms.LatticeInclusionFormsInjective
+public import Formalism.LocalToGlobal.CharacterGerms.Bundle0005
 public import Formalism.FrobeniusBaseCase.Statement
 public import Formalism.FrobeniusBaseCase.FrobeniusBaseCaseProofs.HasUniqueFixedPoint
 

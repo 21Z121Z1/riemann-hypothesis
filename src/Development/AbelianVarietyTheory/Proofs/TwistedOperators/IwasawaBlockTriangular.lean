@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.Foundations.SimpleSum
-public import Formalism.LocalToGlobal.ProjectiveLattices.ExistsOfValILeOne
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0003
 
 @[expose] public section
 

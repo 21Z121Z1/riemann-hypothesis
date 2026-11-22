@@ -1,6 +1,6 @@
 module
 
-public import Formalism.RealPlaceAnalysis.RealPlaceTaylor.ShiftedGeneratorEqIteSmulAdd
+public import Formalism.RealPlaceAnalysis.RealPlaceTaylor.Bundle0006
 public import Mathlib.LinearAlgebra.Matrix.Determinant.Basic
 
 @[expose] public section

@@ -1,7 +1,7 @@
 module
 
 public import Formalism.HermitianCurvature.WeylElementCommutesLevelOne
-public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.BlochKatoDuality
+public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0075
 
 @[expose] public section
 

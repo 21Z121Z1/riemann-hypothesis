@@ -1,6 +1,6 @@
 module
 
-public import Formalism.LocalToGlobal.GroupLattices.JointServices.ValIntNonneg
+public import Formalism.LocalToGlobal.GroupLattices.JointServices.Bundle0001
 public import Formalism.LocalToGlobal.Divisibility.DivisibilityProofs.NumbersP
 
 @[expose] public section

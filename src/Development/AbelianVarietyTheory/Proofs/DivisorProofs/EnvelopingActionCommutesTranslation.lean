@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EnvRepAllEnvIncl
-public import Development.AbelianVarietyTheory.Proofs.HeightProofs.RightDerivativeAlongLieSmoothAndLinear
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1133
+public import Development.AbelianVarietyTheory.Proofs.HeightProofs.Bundle0006
 
 @[expose] public section
 

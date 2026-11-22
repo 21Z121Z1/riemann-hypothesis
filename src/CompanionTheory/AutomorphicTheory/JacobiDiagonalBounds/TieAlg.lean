@@ -1,6 +1,6 @@
 module
 
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.FrameOfAdmissibleWord
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0024
 
 @[expose] public section
 

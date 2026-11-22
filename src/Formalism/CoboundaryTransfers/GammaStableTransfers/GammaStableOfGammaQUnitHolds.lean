@@ -1,7 +1,7 @@
 module
 
 public import Formalism.CoboundaryTransfers.StatementAPI
-public import Formalism.CoboundaryTransfers.GammaStableTransfers.MemCoboundariesOfIsOneCoboundary
+public import Formalism.CoboundaryTransfers.GammaStableTransfers.Bundle0001
 public import Formalism.FrobeniusContraction.FrobeniusContractionProofs.LenBound
 
 @[expose] public section

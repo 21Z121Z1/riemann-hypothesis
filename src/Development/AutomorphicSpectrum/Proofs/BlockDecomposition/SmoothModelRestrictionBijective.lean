@@ -6,8 +6,8 @@ public import Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCoh
 public import Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.PerfectoidPullbacks.LocVan
 public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SmulMPull
 public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MemBiInf
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FlatOfEtalePoly
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsNormalProjectiveModel
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0233
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0991
 
 @[expose] public section
 
@@ -166,7 +166,7 @@ theorem glue (hp : p ≠ 0) (hn : IsNilpotent (p : R)) (U : Cov q) (j : ℕ) :
   have bL : Function.Bijective (rL.pull j) := CrystallineSemistableComparison.P.adj _ _ _ aL j
   have bO : Function.Bijective (rO.pull j) := CrystallineSemistableComparison.P.adj _ _ _ aO j
   obtain ⟨α, hα⟩ := id hS
-  obtain ⟨c', -⟩ := GlobalTheory.T.coordinates_restrict_affine_open (U.c α) (iInf₂_le α hα : (⨅ α ∈ S, U.U α) ≤ U.U α) (U.inter S ⟨α, hα⟩)
+  obtain ⟨c', -⟩ := _root_.GlobalTheory.CompanionTheory.CoordRes.main (U.c α) (iInf₂_le α hα : (⨅ α ∈ S, U.U α) ≤ U.U α) (U.inter S ⟨α, hα⟩)
   have hloc := local_bij γ p hp hn q κ c' (st_le _) j
   refine (Function.Bijective.of_comp_iff' bO _).1 ?_
   have e : ∀ x, rO.pull j ((morU (incl (st_le (γ := γ) (p := p) (q := q) (κ := κ) (Set.range U.U))).o

@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import ReciprocityTheory.AnalyticForms.RegularLocalRings.ProjHypA
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.ThetaUnifAV
+public import ReciprocityTheory.AnalyticForms.RegularLocalRings.Bundle0011
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.Bundle0003
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.GlobalSectionsRankAlgClosed
 
 @[expose] public section

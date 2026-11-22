@@ -1,13 +1,13 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SepAtBIff
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2970
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsDominantToUnitLeft
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsUniqueScalar
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2175
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.CubeVal
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ValMemOfCorrPull
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2407
 public import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.ValuationThetaRatioEqBilinear
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FromBaseWith
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2990
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsGenOfIsoRel
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsTorsionNe
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SecScalOneVal

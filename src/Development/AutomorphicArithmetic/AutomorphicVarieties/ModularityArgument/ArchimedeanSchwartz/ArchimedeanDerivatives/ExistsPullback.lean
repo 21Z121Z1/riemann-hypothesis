@@ -1,10 +1,16 @@
 module
 
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.ArchimedeanSchwartz.NormChar
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsExpOfMultiset
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsIsUnitaryTwistAbsPow
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsIdelicAbsValueCpowCharacterStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CuspidalLetterCentralExponentPropertiesStatement
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2790
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0629
+public import Mathlib
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1027
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0032
+public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.Bundle0009
+public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.Bundle0011
+public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.Bundle0010
+public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.Bundle0008
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1724
 public import GroundTheory.AutomorphicForms.TensorProductTheorem.CentralCusp
 public import GroundTheory.AutomorphicForms.UnitaryAdmissible.CuspCentral
 
@@ -63,10 +69,10 @@ private theorem exists_twist {E : Type} [Field E] [NumberField E] [_root_.Number
   have hd : ((a : ℂ) * (Module.finrank ℚ E : ℂ)) ≠ 0 :=
     mul_ne_zero (Nat.cast_ne_zero.2 (by omega)) (Nat.cast_ne_zero.2 Module.finrank_pos.ne')
   set c : ℂ := GlobalTheory.ResW.cex (⟨a, σ⟩ : GlobalTheory.ResW.Letter E) with hc
-  obtain ⟨χ, hz, hv, -, -⟩ := GlobalTheory.T.exists_idelic_absValue_cpow_character E (-c / ((a : ℂ) * (Module.finrank ℚ E : ℂ)))
+  obtain ⟨χ, hz, hv, -, -⟩ := _root_.GlobalTheory.ResW.exists_abs_cpow E (-c / ((a : ℂ) * (Module.finrank ℚ E : ℂ)))
   refine ⟨χ, -(-c / ((a : ℂ) * (Module.finrank ℚ E : ℂ))).re, ?_, fun w => ⟨(hv w).1, ?_⟩⟩
   · rintro _ ⟨φ, hφ, rfl⟩
-    have e1 : GlobalTheory.ResW.zc E a φ = c • φ := (GlobalTheory.T.cuspidalLetter_centralExponent_properties E ⟨a, σ⟩).1 φ hφ
+    have e1 : GlobalTheory.ResW.zc E a φ = c • φ := (_root_.GlobalTheory.ResW.letter_centralExponent E ⟨a, σ⟩).1 φ hφ
     have e2 : GlobalTheory.ResW.zc E a (mulChi a χ φ) = 0 := by
       rw [hz, e1, ← add_smul, mul_div_cancel₀ _ hd, add_neg_cancel, zero_smul, map_zero]
     exact e2

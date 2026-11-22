@@ -2,12 +2,12 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.MonodromyZeroOfWeilDeligneRepClassIff
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.TeichmullerRoots
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0185
 public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.DepthZeroLabelsOfLabelLaws
-public import Development.AbelianVarietyTheory.Proofs.CharacterTheory.RootsCharpolyPowEqMapPow
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsTameGenAt
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsTeichmullerMaps
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsCongOfCongOnFixed
+public import Development.AbelianVarietyTheory.Proofs.CharacterTheory.Bundle0011
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0234
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0254
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0041
 
 @[expose] public section
 

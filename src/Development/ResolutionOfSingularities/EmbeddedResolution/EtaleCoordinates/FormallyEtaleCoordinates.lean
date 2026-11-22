@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Development.ResolutionOfSingularities.EmbeddedResolution.EtaleCoordinates.EtaleCoordinates
+public import Development.ResolutionOfSingularities.EmbeddedResolution.EtaleCoordinates.Bundle0001
 public import Development.ResolutionOfSingularities.EmbeddedResolution.EtaleCoordinates.JacobianCriterion
-public import Development.ResolutionOfSingularities.EmbeddedResolution.AlgebraicPreliminaries.SpanSingletonProduct
+public import Development.ResolutionOfSingularities.EmbeddedResolution.AlgebraicPreliminaries.Bundle0002
 
 @[expose] public section
 

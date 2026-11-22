@@ -2,14 +2,11 @@ module
 
 public import Mathlib
 public import Formalism.HermitianCurvature.HermitianCurvatureProofs.ShiftAtRExistsEq
-public import Formalism.HermitianCurvature.FrameExists2
+public import Formalism.HermitianCurvature.Bundle0009
 public import Development.AbelianVarietyTheory.Definitions.Jets.WigMap
-public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.ExistsShiftedTypesLowerBound
-public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.WeylGroupActions.TypeExponentsConsecutiveGapStatement
-public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.WeylGroupActions.WignerMapContinuousRepStatement
-public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.WeylGroupActions.WignerMapPolynomialOperatorStatement
-public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.WeylGroupActions.WignerMapUpperBoundStatement
-public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.WeylGroupActions.WignerPlusMinusDecompositionStatement
+public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0097
+public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.WeylGroupActions.Bundle0003
+public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.WeylGroupActions.Bundle0001
 
 @[expose] public section
 
@@ -37,7 +34,7 @@ theorem update_eq_uMinus (u : ℕ → ℝ) (l n₀ : ℕ) :
 
 theorem wigExists : WigExists := by
   intro k r z z' Wq _ _ _ π' u l n₀ b hz hz' hT hT' hπ hdec hl1 hlk hgap hb3 hb
-  have hreg := GlobalTheory.T.type_exponents_consecutive_gap Wq k r z' π' u hz' hT' hπ hdec
+  have hreg := _root_.GlobalTheory.CompanionTheory.TypeGaps.gap_eq_nat_add_one Wq k r z' π' u hz' hT' hπ hdec
   have h1 := abs_le.mp (hb l (Finset.mem_Icc.mpr ⟨hl1, hlk.le⟩))
   have h2 := abs_le.mp (hb (l + 1) (Finset.mem_Icc.mpr ⟨by omega, hlk⟩))
   have hn : (n₀ : ℝ) ≤ b := by linarith [h1.2, h2.1]
@@ -55,12 +52,12 @@ theorem wigExists : WigExists := by
     Am := fun g => Am (GlobalTheory.WigSh.omg k r z z' g)
     typeP := hπp
     typeM := hπm
-    polyP := GlobalTheory.T.wigner_map_polynomial_operator Wq Vp k r z z' π' πp n₀ Ap hz hT hz' hT' hAp
-    polyM := GlobalTheory.T.wigner_map_polynomial_operator Wq Vm k r z z' π' πm n₀ Am hz hT hz' hT' hAm
+    polyP := _root_.GlobalTheory.CompanionTheory.WigOmgPoly.polyOp_wigMap_omg Wq Vp k r z z' π' πp n₀ Ap hz hT hz' hT' hAp
+    polyM := _root_.GlobalTheory.CompanionTheory.WigOmgPoly.polyOp_wigMap_omg Wq Vm k r z z' π' πm n₀ Am hz hT hz' hT' hAm
     equivP := GlobalTheory.T.wigEquiv_of_wigMap_of_isCRepOn Wq Vp k r z z' π' πp n₀ Ap hz hT hz' hT' hAp hπp.2.1
     equivM := GlobalTheory.T.wigEquiv_of_wigMap_of_isCRepOn Wq Vm k r z z' π' πm n₀ Am hz hT hz' hT' hAm hπm.2.1
-    upperP := GlobalTheory.T.wigner_map_upper_bound Wq Vp k r z z' π' πp n₀ Ap hz hT hz' hT' hAp
-    upperM := GlobalTheory.T.wigner_map_upper_bound Wq Vm k r z z' π' πm n₀ Am hz hT hz' hT' hAm
-    lower := GlobalTheory.T.wigLower_of_adjoint_norm_sq_lower_bound Wq Vp Vm k r z z' b n₀ Ap Am hz hT hz' hT' hlow }⟩
+    upperP := _root_.GlobalTheory.CompanionTheory.WigAtOmega.wigUpper_omg Wq Vp k r z z' π' πp n₀ Ap hz hT hz' hT' hAp
+    upperM := _root_.GlobalTheory.CompanionTheory.WigAtOmega.wigUpper_omg Wq Vm k r z z' π' πm n₀ Am hz hT hz' hT' hAm
+    lower := _root_.GlobalTheory.CompanionTheory.WigLowerOmg.wigLower_omg Wq Vp Vm k r z z' b n₀ Ap Am hz hT hz' hT' hlow }⟩
 
 end GlobalTheory.CompanionTheory.WignerShift

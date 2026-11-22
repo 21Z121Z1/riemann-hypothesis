@@ -3,9 +3,9 @@ module
 public import Mathlib
 public import GroundTheory.TateCohomology.TateCup
 public import GroundTheory.TateCohomology.CupTateShift
-public import GroundTheory.TateCohomology.CupTateNatural
-public import GroundTheory.TateCohomology.CupFunctorial
-public import GroundTheory.TateCohomology.Annihilation
+public import GroundTheory.TateCohomology.Bundle0009
+public import GroundTheory.TateCohomology.Bundle0004
+public import GroundTheory.TateCohomology.Bundle0005
 
 @[expose] public section
 

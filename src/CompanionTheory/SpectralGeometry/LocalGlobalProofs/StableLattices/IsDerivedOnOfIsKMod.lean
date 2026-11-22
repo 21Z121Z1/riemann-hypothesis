@@ -3,7 +3,7 @@ module
 public import Mathlib
 public import CompanionTheory.HarishChandraModules.LowKTypeMultiplicity.EigenspaceCyclicDensity.LowKMultOnePOf
 public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.AnalyticVectors.Closure
-public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.RigidityTheorems.SopNegComm
+public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.RigidityTheorems.Bundle0001
 
 @[expose] public section
 

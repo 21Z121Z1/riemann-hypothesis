@@ -1,11 +1,11 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.GeometricallyConnectedOfIsIsoRestrict
+public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.Bundle0004
 public import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsIsLocModelIsPrimeOf
-public import Development.AbelianVarietyTheory.Definitions.Divisors.NotDominatesTopPlace
-public import Development.AbelianVarietyTheory.Definitions.Divisors.DominatesIffIsLocalHom
-public import Development.AbelianVarietyTheory.Proofs.HomogeneousIdeals.IsDomainAndIsIntegrallyClosedAtPrimeOfSmoothOfCo
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0038
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0039
+public import Development.AbelianVarietyTheory.Proofs.HomogeneousIdeals.Bundle0004
 
 @[expose] public section
 

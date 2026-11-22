@@ -1,8 +1,8 @@
 module
 
 public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.WittEndomorphism.FlogConstantCoeff
-public import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.WfRing
-public import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.WfSubst
+public import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.Bundle0008
+public import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.Bundle0010
 
 @[expose] public section
 

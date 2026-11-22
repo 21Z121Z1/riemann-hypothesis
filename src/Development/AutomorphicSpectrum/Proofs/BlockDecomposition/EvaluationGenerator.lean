@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.InjectiveWedgeHighestCoefficient
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0375
 
 @[expose] public section
 

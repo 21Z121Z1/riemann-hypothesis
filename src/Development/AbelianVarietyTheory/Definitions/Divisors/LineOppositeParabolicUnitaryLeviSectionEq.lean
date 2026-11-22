@@ -2,10 +2,10 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.Foundations.MatrixMeasurableSpace
-public import Development.AbelianVarietyTheory.Definitions.Foundations.SmoothPartStable
-public import Formalism.SatakeDualWeyl.StatementF
+public import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0002
+public import Formalism.SatakeDualWeyl.Bundle0001
 public import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.IsSubquotientDetRepParInd
-public import Development.AbelianVarietyTheory.Definitions.Divisors.EqOfHasValueAtInfinite
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0004
 
 @[expose] public section
 

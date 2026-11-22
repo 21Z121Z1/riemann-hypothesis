@@ -2,8 +2,8 @@ module
 
 public import Mathlib
 public import Development.WeilBound.CoreStatements.AutomorphicKernels.BernsteinUnitaryProducts.IrreducibleAdmissibleReps.Assembly
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsIrreducibleSubrepFixedOfUnitary
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CompactOpenSubgroupsBasis
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0057
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0285
 
 @[expose] public section
 

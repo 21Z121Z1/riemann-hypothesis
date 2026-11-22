@@ -1,8 +1,8 @@
 module
 
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.SymmetricPowerTransfer.GeneralizedEigenspaces.GlobalRationalGL.EStar
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LocalComponentDefiniteUnitaryFinitePartEqLocalPo
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.SatakeMatchBaseChange
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1075
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0238
 
 @[expose] public section
 

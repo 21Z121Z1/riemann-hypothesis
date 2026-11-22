@@ -1,17 +1,16 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.BlockTheory.GlobalSignature.InterlacingEquivariance
-public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.TensorMapDescent
+public import Development.AbelianVarietyTheory.BlockTheory.GlobalSignature.Bundle0009
+public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0053
 public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.SplitLastBlockActX
-public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.WeightedLeadingTermSplitZMinor
-public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.EquivariantMapEqSmul
-public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.IsBasisAtBlock
-public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.NonnegSubOfLt
+public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0054
+public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0066
+public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0052
 public import Development.AbelianVarietyTheory.PublishedTheorems.PublishedFoundations.FiniteIntertwining
 public import Formalism.LocalToGlobal.Columns.PolyFnLemmas
 public import Formalism.GradedWeylDivisibility.DualWeylDominanceOf
-public import Formalism.GradedWeylDivisibility.FockSpaceTableaux.LClosedeqLemmas
+public import Formalism.GradedWeylDivisibility.FockSpaceTableaux.Bundle0010
 
 @[expose] public section
 

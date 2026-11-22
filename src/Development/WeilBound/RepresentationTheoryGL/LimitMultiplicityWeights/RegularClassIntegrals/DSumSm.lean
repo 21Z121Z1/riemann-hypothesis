@@ -1,8 +1,8 @@
 module
 
-public import Development.WeilBound.RepresentationTheoryGL.LimitMultiplicityWeights.RegularClassIntegrals.Variation
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.KernelLocallyFiniteContinuous
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RealLineContinuous
+public import Development.WeilBound.RepresentationTheoryGL.LimitMultiplicityWeights.RegularClassIntegrals.Bundle0003
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0296
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1355
 
 @[expose] public section
 

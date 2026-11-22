@@ -2,13 +2,14 @@ module
 
 public import Mathlib
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.GlobalSectionsRankAlgClosed
-public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.GenWeil
-public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.GlueApplyOfNotInFibre
-public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsHTFormOver
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.IsVBOneOfChartGenerators
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.Bundle0007
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.Bundle0005
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0023
 public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LieLatticeDominantCompat
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.TangentSectionAdditiveStatement
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.DualMapSnd
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0041
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.Bundle0004
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.IsGrpPullback
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0076
 
 @[expose] public section
 

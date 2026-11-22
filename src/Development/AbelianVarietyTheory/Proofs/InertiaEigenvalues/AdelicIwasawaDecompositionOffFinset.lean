@@ -2,10 +2,10 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.AdelicUnitriangularMulMemUnipotentTimesIntegral
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IwasawaCellDecomposition
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.HeckeDEqSumOfAgree
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsFixedIff
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EventuallyDefiniteUnitaryLocalPointMemMaxCompact
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0257
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0383
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0116
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1056
 
 @[expose] public section
 

@@ -3,12 +3,12 @@ module
 public import Mathlib
 public import Formalism.SharpRestriction.CuspSpanNormBounds.FractionFieldToGenericStalkAlgebraMapEq
 public import Formalism.SharpRestriction.CuspSpanNormBounds.PsiEDef
-public import Development.AbelianVarietyTheory.Definitions.Foundations.IsHermND
+public import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0007
 public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.ComplementReferenceCompactSubgroup
-public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.GFrames
+public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.Bundle0003
 public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.BasisOfIsCompl
 public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.FramesCommonStabiliserEqPairingMatrixStabiliser
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.RationalExtend
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0047
 
 @[expose] public section
 

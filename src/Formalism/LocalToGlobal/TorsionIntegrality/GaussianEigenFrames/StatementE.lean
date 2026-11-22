@@ -1,6 +1,6 @@
 module
 
-public import Formalism.LocalToGlobal.TorsionIntegrality.GaussSumParity.StatementK
+public import Formalism.LocalToGlobal.TorsionIntegrality.GaussSumParity.Bundle0001
 
 @[expose] public section
 

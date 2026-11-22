@@ -1,9 +1,9 @@
 module
 
 public import Development.WeilBound.CoreStatements.LocalThetaKernels.LocrepSB
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdelicSchrodingerTensorEqLocalOfSupportedAt
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1512
 public import Development.AutomorphicSpectrum.Proofs.MembershipProofs.WeilRepresentationThetaEquivariance
-public import Development.AutomorphicSpectrum.Proofs.MembershipProofs.ThetaDistributionNonzeroAdmissible
+public import Development.AutomorphicSpectrum.Proofs.MembershipProofs.Bundle0007
 public import Development.AutomorphicSpectrum.Proofs.MembershipProofs.ThetaSumAdmissibility
 
 @[expose] public section

@@ -1,8 +1,8 @@
 module
 
-public import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.SatakeExponents.UniformizerValuations.FrameL
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.UnitaryLevelSubgroupProperties
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.HasCompactSupportTj
+public import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.SatakeExponents.UniformizerValuations.Bundle0007
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0577
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0749
 
 @[expose] public section
 

@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Development.AutomorphicArithmetic.Foundations.Convolution.IntegrableConvolution.ThickFrames
-public import Development.AutomorphicArithmetic.Foundations.Convolution.IntegrableConvolution.MatchProd
+public import Development.AutomorphicArithmetic.Foundations.Convolution.IntegrableConvolution.Bundle0009
 public import Development.AutomorphicArithmetic.Foundations.Convolution.IntegrableConvolution.SplitLoc
 
 @[expose] public section

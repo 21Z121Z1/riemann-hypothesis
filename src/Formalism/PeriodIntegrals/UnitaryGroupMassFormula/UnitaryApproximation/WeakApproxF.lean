@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Formalism.PeriodIntegrals.UnitaryApproxFin
+public import Formalism.PeriodIntegrals.Bundle0012
 
 @[expose] public section
 

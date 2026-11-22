@@ -1,6 +1,6 @@
 module
 
-public import Formalism.SatakeDualWeyl.StatementE
+public import Formalism.SatakeDualWeyl.Bundle0001
 public import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.SatakeComb
 
 @[expose] public section

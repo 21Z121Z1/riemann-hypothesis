@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MemStabilizerIff
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FinsumOrbitsInvStabilizerCardMass
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0146
 
 @[expose] public section
 

@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicArithmetic.IntegralCasts.CrystallinePeriods.Section
+public import Development.AutomorphicArithmetic.IntegralCasts.CrystallinePeriods.Bundle0001
 public import Development.AutomorphicArithmetic.IntegralCasts.CrystallinePeriods.UniformContinuousConstSMulOfIsIsometricSMul
 
 @[expose] public section

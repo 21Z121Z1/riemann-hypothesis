@@ -1,24 +1,25 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.SlopeBoundSt
-public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.ArchBetween
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.Bundle0012
 public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.BdryChart
 public import Development.AutomorphicSpectrum.Definitions.MetricPeriods.ClopenCondOnto
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.UniformisationConclusion
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.HeckeKer
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.Bundle0003
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.BlowupProjections.BlowupProjStatement
 public import Development.AbelianVarietyTheory.PublishedTheorems.SemiabelianTori.GeometricallyConnectedSplitTorusAff
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.BCRing
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.AmplePt
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.SabComp
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.Bundle0018
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.Bundle0006
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.PullCub
 public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsLieModel
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LieModelExistsUniqueSemilinear
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LieModelFiniteProjectiveStatement
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LieModelIsBaseChangeStatement
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.HodgeHermitianFormExists
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.HodgeInnerProductConjugateStatement
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0034
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0129
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.Bundle0004
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.IsGrpPullback
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0215
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.HodgeInnerProductConjugate
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsHodgeLine
 
 @[expose] public section
 
@@ -100,7 +101,7 @@ theorem exists_fibre_equiv {S : Scheme.{0}} (G : Over S) [GrpObj G] [Smooth G.ho
     rfl⟩
   let j' : V →ₗ[𝓞 L] W := { toFun := j, map_add' := map_add j, map_smul' := fun a v => j.map_smulₛₗ a v }
   have hb : IsBaseChange ℂ j' :=
-    GlobalTheory.T.lie_model_isBaseChange S G (𝓞 L) ℂ x V W M Mσ j' hj
+    _root_.GlobalTheory.CompanionTheory.Ar.lieModel_isBaseChange S G (𝓞 L) ℂ x V W M Mσ j' hj
   let l : ComplexAt σ ≃ₗ[𝓞 L] ℂ :=
     { toFun := (ofComplex σ).symm, invFun := ofComplex σ, map_add' := map_add _,
       map_smul' := fun a z => rfl, left_inv := (ofComplex σ).left_inv, right_inv := (ofComplex σ).right_inv }
@@ -157,7 +158,7 @@ theorem hodgeInnerProduct_conj_of_eq {X : Scheme.{0}} (t : SAB H X) {z z' : Sp �
     (hw : w'.left = spMap (dualMap (starRingEnd ℂ)) ≫ w.left) (h : HodgeIP t.G t.PP.L z v w c) :
     HodgeIP t.G t.PP.L z' v' w' (starRingEnd ℂ c) := by
   subst hz
-  exact GlobalTheory.T.hodge_inner_product_conjugate E H X t z v w v' w' c hv hw h
+  exact _root_.GlobalTheory.CompanionTheory.Ar.HodgeConj.hodgeInnerProduct_conj_abelianScheme E H X t z v w v' w' c hv hw h
 
 end Geo
 
@@ -165,7 +166,7 @@ theorem exists_hermitianBundle : ∀ (E : Type) [Field E] [NumberField E] [IsCMF
   intro E _ _ _ H L _ _ t tK m hK
   haveI : Smooth t.G.hom := t.semi.smooth
   obtain ⟨V, i₁, i₂, ⟨M⟩⟩ := GlobalTheory.CompanionTheory.Ar.lieModel_exists _ t.G (𝓞 L) (𝟙 _)
-  obtain ⟨hf, hpj⟩ := GlobalTheory.T.lie_model_finite_projective _ t.G (𝓞 L) (𝟙 _) V M
+  obtain ⟨hf, hpj⟩ := _root_.GlobalTheory.CompanionTheory.Ar.lieModel_finite_projective _ t.G (𝓞 L) (𝟙 _) V M
   have hW := fun σ : L →+* ℂ => GlobalTheory.CompanionTheory.Ar.lieModel_exists _ t.G ℂ (spMap (σ.comp (algebraMap (𝓞 L) L)) ≫ 𝟙 _)
   choose W iW₁ iW₂ hM using hW
   let Mσ : ∀ σ : L →+* ℂ, LieModel t.G (spMap (σ.comp (algebraMap (𝓞 L) L)) ≫ 𝟙 _) (W σ) := fun σ => (hM σ).some

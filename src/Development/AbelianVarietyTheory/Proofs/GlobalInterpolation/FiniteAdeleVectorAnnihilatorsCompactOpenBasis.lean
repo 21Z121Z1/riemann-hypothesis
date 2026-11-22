@@ -2,10 +2,10 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.DecayZero
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.LocalComponentsNontrivialAdelicCharacter
-public import Development.AbelianVarietyTheory.Proofs.HeightProofs.ExistsPosNatMemOpenAdeleSubgroup
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0191
+public import Development.AbelianVarietyTheory.Proofs.HeightProofs.Bundle0022
 public import Formalism.LocalToGlobal.Columns.RecLevelTop
-public import GroundTheory.GlobalFields.TateThesis.NoSmallSubgroups
+public import GroundTheory.GlobalFields.TateThesis.Bundle0002
 
 @[expose] public section
 

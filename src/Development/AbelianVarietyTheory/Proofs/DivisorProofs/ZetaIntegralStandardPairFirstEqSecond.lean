@@ -1,10 +1,10 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsMixModelB
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsAwayUnitOfPowEqOne
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MemKOOfIsGLO
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SmallFStdB
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1733
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2799
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1736
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1739
 
 @[expose] public section
 

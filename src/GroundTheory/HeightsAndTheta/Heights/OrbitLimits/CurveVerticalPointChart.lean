@@ -1,10 +1,10 @@
 module
 
 public import Mathlib
-public import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.StatementsCurveVertPointLengthSteps
-public import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.CurveCountObjects
+public import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.Bundle0041
+public import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.Bundle0034
 public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PSmallSectionsNonzero
-public import GroundTheory.HeightsAndTheta.Heights.Intersections.AvoidRing
+public import GroundTheory.HeightsAndTheta.Heights.Intersections.Bundle0004
 
 @[expose] public section
 

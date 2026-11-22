@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Development.EtaleCohomology.EtaleSheaves.BridgeYfiPf
-public import Development.EtaleCohomology.EtaleSheaves.GlueRelPfCone
+public import Development.EtaleCohomology.EtaleSheaves.Bundle0072
+public import Development.EtaleCohomology.EtaleSheaves.Bundle0036
 
 @[expose] public section
 

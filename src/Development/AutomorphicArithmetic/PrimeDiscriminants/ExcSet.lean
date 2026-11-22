@@ -3,7 +3,7 @@ module
 public import Mathlib
 public import Formalism.SharpRestriction.Divisibility.JumpSets
 public import Formalism.PieriBlockIdeals.PieriColumnMinors.ParameterBounds
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SumExponentLogLeOfCut
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0732
 
 @[expose] public section
 

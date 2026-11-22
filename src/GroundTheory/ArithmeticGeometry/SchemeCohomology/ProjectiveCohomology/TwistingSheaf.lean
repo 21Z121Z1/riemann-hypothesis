@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import GroundTheory.ArithmeticGeometry.SchemeCohomology.InvertibleSheaf
-public import GroundTheory.ArithmeticGeometry.SchemeCohomology.ProjSpace
+public import GroundTheory.ArithmeticGeometry.SchemeCohomology.Bundle0003
 public import GroundTheory.ArithmeticGeometry.SchemeCohomology.ProjTwist
 public import GroundTheory.ArithmeticGeometry.SchemeCohomology.CechNaturality.Linear
 

@@ -1,10 +1,10 @@
 module
 
-public import Development.WeilBound.CoreStatements.VolumeEquality.DegPushDefs
-public import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.PDivCycleMul
-public import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.Cartier
+public import Development.WeilBound.CoreStatements.VolumeEquality.Bundle0007
+public import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.Bundle0012
+public import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.Bundle0002
 public import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.PGenericProjClosureDivisor
-public import GroundTheory.HeightsAndTheta.Heights.FieldsOfNumbers.Assembly
+public import GroundTheory.HeightsAndTheta.Heights.FieldsOfNumbers.Bundle0012
 
 @[expose] public section
 

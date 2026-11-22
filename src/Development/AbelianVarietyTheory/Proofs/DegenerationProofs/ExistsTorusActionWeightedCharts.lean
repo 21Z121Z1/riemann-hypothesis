@@ -5,16 +5,14 @@ public import Development.AbelianVarietyTheory.Definitions.Degenerations.BaseFac
 public import Development.AbelianVarietyTheory.Definitions.Degenerations.IsAffineSplitTorusLeft
 public import Development.AbelianVarietyTheory.Definitions.Degenerations.CompanionTheory
 public import Development.AbelianVarietyTheory.Statements.SemistableTorsion.UTorsSt
-public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsUniqueIsRatio
-public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.IsClosedImmersionBySectionsOfSpan
-public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsClosedImmersionAbelianPartBundleStatement
-public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.IsPartPartSec
-public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.EqOfWeightEq
-public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsPureWeightSectionNeZeroAtStatement
-public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsPointTranslatePure
-public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsBasisUniqueMinAndSumsSeparated
-public import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.ExistsIsPowGrpSplitTorus
-public import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.NonemptyTorusExtensionOfIsGt
+public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.Bundle0016
+public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.Bundle0091
+public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.Bundle0089
+public import Development.AbelianVarietyTheory.Definitions.Degenerations.PullChartIsLB
+public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.Bundle0017
+public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.Bundle0009
+public import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.Bundle0010
+public import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.Bundle0022
 
 @[expose] public section
 
@@ -375,7 +373,7 @@ theorem exists_split : Out.Laws → Out.Laws2 → ∀ (k : Type) [Field k] [IsAl
   have pure0 : ∀ i : {i // Ch.wt i = Ch.c₀}, Φ.Pure 0 (F' (e i.1)) := fun i => pure 0 h0 _ (i.2.trans hc₀.symm)
   choose s hs₁ hs₂ hs₃ using fun i => (FibPre.pure_zero k Φ).2 _ (pure0 i)
   have hs : ImmBy Φ.E.B.hom Φ.N₀ s Set.univ := by
-    obtain ⟨n, t, ht⟩ := GlobalTheory.T.exists_closedImmersion_abelianPart_bundle hL hL2 k Φ N hB.four π
+    obtain ⟨n, t, ht⟩ := _root_.GlobalTheory.VeryAmpleMove.exists_immBy_abelianPart hL hL2 k Φ N hB.four π
     have := Φ.E.isAbelian.proper
     refine SpanImm.immBy_of_span k _ _ _ Φ.isLB _ _ t s ht fun i => ?_
     obtain ⟨φ, hφ, hw⟩ := (FibPre.pure_zero k Φ).1 (t i)
@@ -400,7 +398,7 @@ theorem exists_split : Out.Laws → Out.Laws2 → ∀ (k : Type) [Field k] [IsAl
   · have := hasWt_map f.toAddMonoidHom (hasWt_ratio Φ (pure _ (hb' n) j hj) (pure0 a) (hW a).1.le ((hW a).2 j))
     rwa [hf] at this
   · have hU := eq_top_of_points Φ (⨆ j : {i // Ch.wt i = cl (b n)}, nonzeroLocus (F' (e j.1))) fun y => by
-      obtain ⟨φ, hφ, hy⟩ := GlobalTheory.T.exists_pureWeight_section_ne_zero_at hL hL2 k Φ N hB.four π (b n) y
+      obtain ⟨φ, hφ, hy⟩ := _root_.GlobalTheory.ZH.FibPre.exists_pure_ne_zero_at hL hL2 k Φ N hB.four π (b n) y
       obtain ⟨a, ha⟩ := span _ (hb' n) _ rfl φ hφ
       exact fun z hz => TopologicalSpace.Opens.mem_iSup.2 (exists_mem_of_isLin ha (hy hz))
     obtain ⟨j, hj⟩ := TopologicalSpace.Opens.mem_iSup.1 (hU.ge (show x ∈ ⊤ from trivial))

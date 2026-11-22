@@ -6,7 +6,7 @@ public import Development.AbelianVarietyTheory.Definitions.RegularCharts.ModelAt
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.UnifUniqSt
 public import Development.AbelianVarietyTheory.Definitions.RegularCharts.BaseNorm
 public import Development.AbelianVarietyTheory.Proofs.GenericRegularity.CabsDiagEqOne
-public import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.HolArcNilpotent
+public import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.Bundle0019
 public import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.HermFormSumSmul
 
 @[expose] public section

@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Formalism.PeriodIntegrals.FglTriFactor
+public import Formalism.PeriodIntegrals.Bundle0003
 public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.FormalGroupTriangles.CoeffSubstUpdZero
 
 @[expose] public section

@@ -1,7 +1,7 @@
 module
 
-public import Formalism.LocalToGlobal.CharacterGerms.CoefficientIdentitySelfConjugate
-public import Formalism.LocalToGlobal.CharacterGerms.RowTiePHStabSelf
+public import Formalism.LocalToGlobal.CharacterGerms.Bundle0013
+public import Formalism.LocalToGlobal.CharacterGerms.Bundle0021
 public import Formalism.LocalToGlobal.CharacterGerms.MaximalOfValuationGeOne
 
 @[expose] public section

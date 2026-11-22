@@ -1,8 +1,8 @@
 module
 
 public import Formalism.SatakeDualWeyl.KpqSubgroupCompact
-public import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.HeckeActMem
-public import Formalism.SharpRestriction.LevelLetterCocycles.LatticeVariant
+public import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Bundle0002
+public import Formalism.SharpRestriction.LevelLetterCocycles.Bundle0007
 public import Formalism.LocalToGlobal.BesselHermitianTheta.IsAutFunDef
 public import Formalism.LocalToGlobal.IndefiniteReal.SubgroupCharExtensionOneApply
 

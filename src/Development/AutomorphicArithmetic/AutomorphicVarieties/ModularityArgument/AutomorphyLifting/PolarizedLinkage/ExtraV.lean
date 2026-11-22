@@ -2,13 +2,23 @@ module
 
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.AutomorphyLifting.AbsCentral
 public import Development.AutomorphicArithmetic.Foundations.LocalLanglands.Multi
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsLanglandsClassificationDetCharacterStatement
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.TwistRecCompatible
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CentralCharacterRecCompatible
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.LFactorRecCompatible
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.EpsilonFactorRecCompatible
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SupercuspidalSupportOfPrincipalSeriesSubquotientStatement
-public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.SumTrWEqZeroOfFrobCoset
+public import Mathlib
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0659
+public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0025
+public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.Bundle0011
+public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.Bundle0009
+public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.Bundle0008
+public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.Bundle0001
+public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.Bundle0010
+public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.ExistsCellOfIsSubquotient
+public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.Bundle0001
+public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.ExistsUniqueHcharOfFiniteOrder
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0672
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0673
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0758
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0748
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0660
+public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0027
 
 @[expose] public section
 
@@ -52,7 +62,7 @@ private theorem det_law (H : LawsT a ha rc) (t : ℕ) (χ : (w.adicCompletion E)
     rc (cls (IrrRep.det (Fin t) χ hχ)) =
       sumList ((List.range t).map fun j : ℕ => (rc (.ofChar χ hχ)).lpTw (((t : ℝ) - 1) / 2 - j)) := by
   haveI := cz (E := E) (w := w)
-  have hL := GlobalTheory.T.isLanglandsClassification_detCharacter Pr.cos (w.adicCompletion E) t χ hχ
+  have hL := _root_.GlobalTheory.LocGL.isL_det Pr.cos (w.adicCompletion E) t χ hχ
   obtain ⟨φ⟩ := (IrrRep.det (Fin t) χ hχ).nonempty_equiv_rep
   rw [H.langlands _ (cls (IrrRep.det (Fin t) χ hχ)) (hL.of_equiv φ.symm), segSum, List.map_map]
   congr 1
@@ -69,7 +79,7 @@ private theorem prod_law (H : LawsT a ha rc) (r t : ℕ) (σ : IrrRep (GL (Fin r
   haveI := cz (E := E) (w := w)
   obtain ⟨𝔪, h𝔪⟩ := Pr.exh _ (cls σ)
   obtain ⟨𝔫, h𝔫⟩ := Pr.exh _ (cls τ)
-  have hp := GlobalTheory.T.isLanglandsClassification_add_of_irreducible_product Pr.multi Pr.cos _ r t σ τ π 𝔪 𝔫 (h𝔪.of_equiv (equivRep σ).symm)
+  have hp := _root_.GlobalTheory.LocGL.SumProd.isL_add_of_equiv_prod₂ Pr.multi Pr.cos _ r t σ τ π 𝔪 𝔫 (h𝔪.of_equiv (equivRep σ).symm)
     (h𝔫.of_equiv (equivRep τ).symm) hπ
   rw [H.langlands 𝔪.toList (cls σ) (by rwa [Multiset.coe_toList]),
     H.langlands 𝔫.toList (cls τ) (by rwa [Multiset.coe_toList]),
@@ -117,7 +127,7 @@ private theorem sat_law (H : LawsT a ha rc) (x : IrrGL (k := w.adicCompletion E)
 private theorem good_of_hasSatake (x : IrrGL (k := w.adicCompletion E)) (α : Fin x.1 → ℂˣ) (hα : HasSatake x.rep α) :
     Good x := by
   haveI := cz (E := E) (w := w)
-  refine ⟨_, GlobalTheory.T.supercuspidalSupport_of_principalSeries_subquotient (w.adicCompletion E) x.1 (fun i => GlobalTheory.SmGL.unrChar _ (α i))
+  refine ⟨_, _root_.GlobalTheory.LocLanglands.hasSupport_of_isSubquotient_prinSeries (w.adicCompletion E) x.1 (fun i => GlobalTheory.SmGL.unrChar _ (α i))
     (fun i => isSmoothChar_of_isUnram (isUnram_unrChar _ (α i))) x.2.rep hα.2.2, fun y hy => ?_⟩
   obtain ⟨i, -, rfl⟩ := Multiset.mem_map.1 hy
   exact Or.inl rfl
@@ -130,7 +140,7 @@ private theorem sph_law (H : LawsT a ha rc) (x : IrrGL (k := w.adicCompletion E)
     rw [sat_law H x α hα]
     exact (WD.unr_mk _).2 (WDRep.unr_diag _)
   · intro hu
-    obtain ⟨α, hα⟩ := GlobalTheory.T.unramified_weilDeligne_eq_diagonal_inv E Ω A w h (rc x) hu
+    obtain ⟨α, hα⟩ := _root_.GlobalTheory.LocLanglands.unr_eq_diag_inv E Ω A w h (rc x) hu
     obtain ⟨π, hπ⟩ := GlobalTheory.CuspRep.ParLaws.exists_hasSatake (k := w.adicCompletion E) α
     have φ := equivRep π
     have hπ' : HasSatake (cls π).rep α := ⟨IrrRep.irr _, fixed_ne_bot_of_equiv φ hπ.2.1,

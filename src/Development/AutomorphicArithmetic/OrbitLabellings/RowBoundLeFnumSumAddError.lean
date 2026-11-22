@@ -5,8 +5,8 @@ public import Development.AutomorphicArithmetic.OrbitLabellings.RowDefs
 public import Formalism.DropLevelBounds.ThBounds
 public import Formalism.IncomingBounds.IncomingBound
 public import Development.AutomorphicArithmetic.OrbitLabellings.AttainsBlockListOfWeightsAlongOrbits
-public import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.DropLevelsBasic
-public import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.MulFlowValLe
+public import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.Bundle0008
+public import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.Bundle0009
 
 @[expose] public section
 

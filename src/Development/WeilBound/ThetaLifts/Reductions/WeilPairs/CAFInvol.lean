@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.WeilBound.ThetaLifts.Reductions.WeilPairs.SplitPlaceSiegelLawDiagonalLagrangianCharacterIm
+public import Development.WeilBound.ThetaLifts.Reductions.WeilPairs.Bundle0003
 
 @[expose] public section
 

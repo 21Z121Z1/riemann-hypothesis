@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import GroundTheory.ProfiniteCohomology.CyclicCupDefs
+public import GroundTheory.ProfiniteCohomology.Bundle0005
 public import GroundTheory.TateCohomology.TateLow
 
 @[expose] public section

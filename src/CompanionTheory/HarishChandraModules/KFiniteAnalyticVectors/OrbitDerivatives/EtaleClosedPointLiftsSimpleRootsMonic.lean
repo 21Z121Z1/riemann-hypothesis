@@ -5,8 +5,8 @@ public import CompanionTheory.HarishChandraModules.KFiniteAnalyticVectors.HaarBu
 public import CompanionTheory.HarishChandraModules.KFiniteAnalyticVectors.AdmissibleSmoothVectors.AdmissibleOfIwasawa
 public import CompanionTheory.AutomorphicTheory.ZuckermanCommutation.ZuckermanFunctors.IsSimpleFam
 public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LowerSmoothStability.ExistsFinStableOfMemSSup
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.SettingExistence
-public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.PolynomialProperness.ZhatNormLinearBound
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0047
+public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.PolynomialProperness.Bundle0001
 
 @[expose] public section
 

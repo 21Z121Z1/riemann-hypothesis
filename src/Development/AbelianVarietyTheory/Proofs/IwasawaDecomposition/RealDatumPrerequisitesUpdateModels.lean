@@ -3,7 +3,7 @@ module
 public import Mathlib
 public import Formalism.LocalToGlobal.IndefiniteReal.LinksExistW
 public import Formalism.LocalToGlobal.IndefiniteReal.ZeroPartEigenvalueConvention
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IoPOfIsIoWAt
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0780
 public import Lean
 
 @[expose] public section

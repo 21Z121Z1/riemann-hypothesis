@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import GroundTheory.LocalFields.LubinTatePrimitive
+public import GroundTheory.LocalFields.Bundle0013
 public import GroundTheory.LocalFields.LubinTateTowerMaps
 public import GroundTheory.LocalFields.LubinTateLimitGalois
 public import GroundTheory.LocalFields.LubinTateUnramified

@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.NonemptyEquivMultiProdOne
-public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.IsTemperedCoeff
+public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.Bundle0016
 
 @[expose] public section
 

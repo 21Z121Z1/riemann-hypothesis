@@ -2,11 +2,11 @@ module
 
 public import Mathlib
 public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsFlatAnIffIsConstMul
-public import Formalism.LocalToGlobal.ProjectiveLattices.VAtVNeBot
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0010
 public import Formalism.LocalToGlobal.ProjectiveLattices.RulInst
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.FramePointVectorsStatement
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.FrameBorelChangeVectorsStatement
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.FlatModelTorusRingStatement
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0102
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0065
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0179
 
 @[expose] public section
 
@@ -211,14 +211,14 @@ theorem pointRule {U : Set (Xo.XF c)} {τ : E →+* ℂ} {O : Type} [CommRing O]
         r = φ F (fpt z ψ) v w))
     (fun F _ ψ r r' h h' => by
       by_cases hr : Set.range (fpt z ψ) ⊆ U
-      · obtain ⟨v, w, ev, ew, -⟩ := GlobalTheory.T.frame_point_vectors E H D l Xo c τ p.R z F ψ (fpt z ψ) hp hq (fpt_under z ψ) (fpt_snd z ψ)
+      · obtain ⟨v, w, ev, ew, -⟩ := _root_.GlobalTheory.CompanionTheory.Ar.FrameEig.isFramed_frPt E H D l Xo c τ p.R z F ψ (fpt z ψ) hp hq (fpt_under z ψ) (fpt_snd z ψ)
         rw [h.2 hr v w ev ew, h'.2 hr v w ev ew]
       · rw [h.1 hr, h'.1 hr])
     (fun q => by
       by_cases hx : (frPtF z) (show Sp p.R from q) ∈ U
       · have hr₀ : Set.range (fpt z (algebraMap p.R q.asIdeal.ResidueField)) ⊆ U := by
           rw [range_fpt_subset_iff, kerPt_residue]; exact hx
-        obtain ⟨g, a, h0, h⟩ := GlobalTheory.T.flat_model_torus_ring E H D l Xo c U τ O β Y Z φ hτ hU hl hf p z q.asIdeal.ResidueField
+        obtain ⟨g, a, h0, h⟩ := _root_.GlobalTheory.CompanionTheory.Ar.LocFn.exists_regular_near E H D l Xo c U τ O β Y Z φ hτ hU hl hf p z q.asIdeal.ResidueField
           (algebraMap p.R _) _ (fpt_under z _) (fpt_snd z _) hr₀
         refine ⟨g, a, fun hg => h0 ?_, fun F _ ψ hg => ?_⟩
         · have : g ∈ RingHom.ker (algebraMap p.R q.asIdeal.ResidueField) := by
@@ -293,7 +293,7 @@ theorem exists_flat_rule : ∀ (E : Type) [Field E] [NumberField E] [IsCMField E
     hse p z F ψ (fpt z ψ) (fpt_under z ψ) (fpt_snd z ψ)
   have FS : ∀ (p : Formalism.L2.Pj.TRing c.F) (z : Formalism.L2.Pj.FrPt Xo c p.R) (F : Type) [Field F] (ψ : p.R →+* F),
       Set.range (fpt z ψ) ⊆ U → ψ (s p z) ≠ 0 := fun p z F _ ψ h => by
-    obtain ⟨v, w, ev, ew, hfr⟩ := GlobalTheory.T.frame_point_vectors E H D l Xo c τ p.R z F ψ (fpt z ψ) hp hq (fpt_under z ψ) (fpt_snd z ψ)
+    obtain ⟨v, w, ev, ew, hfr⟩ := _root_.GlobalTheory.CompanionTheory.Ar.FrameEig.isFramed_frPt E H D l Xo c τ p.R z F ψ (fpt z ψ) hp hq (fpt_under z ψ) (fpt_snd z ψ)
     rw [((C p z F ψ).2 h).2 v w hp hq ev ew]
     exact hl.ne F _ _ v w (hfr U h)
   have zero : ∀ (p : Formalism.L2.Pj.TRing c.F) (x : p.R), (∀ (F : Type) [Field F] (ψ : p.R →+* F), ψ x = 0) → x = 0 :=
@@ -355,7 +355,7 @@ theorem exists_flat_rule : ∀ (E : Type) [Field E] [NumberField E] [IsCMField E
       have e1 : ∀ x : p.R, ψ (f x) = ψ' x := fun _ => rfl
       rw [e1, e1]
       by_cases hr : Set.range (fpt z ψ) ⊆ U
-      · obtain ⟨v, w, ev, ew, -⟩ := GlobalTheory.T.frame_point_vectors E H D l Xo c τ q.R z F ψ (fpt z ψ) hp hq (fpt_under z ψ) (fpt_snd z ψ)
+      · obtain ⟨v, w, ev, ew, -⟩ := _root_.GlobalTheory.CompanionTheory.Ar.FrameEig.isFramed_frPt E H D l Xo c τ q.R z F ψ (fpt z ψ) hp hq (fpt_under z ψ) (fpt_snd z ψ)
         refine ⟨by rw [(D1.2 hr).1, (D2.2 hr).1], ?_⟩
         rw [(D1.2 hr).2 v w hp hq ev ew, (D2.2 hr).2 v w hp hq (fun i => ?_) (fun j => ?_)]
         · rw [ev i, h.2.1, ← Category.assoc, dualMap_spMap_comp]
@@ -386,8 +386,8 @@ theorem exists_flat_rule : ∀ (E : Type) [Field E] [NumberField E] [IsCMField E
       have D1 := C p y F ψ
       rw [ψ.map_mul, ψ.map_mul]
       by_cases hr : Set.range (fpt y ψ) ⊆ U
-      · obtain ⟨v, w, ev, ew, hfr⟩ := GlobalTheory.T.frame_point_vectors E H D l Xo c τ p.R y F ψ (fpt y ψ) hp hq (fpt_under y ψ) (fpt_snd y ψ)
-        obtain ⟨v', w', ev', ew', hfr'⟩ := GlobalTheory.T.frame_point_vectors E H D l Xo c τ p.R y' F ψ (fpt y ψ) hp hq h1 (fpt_snd y ψ)
+      · obtain ⟨v, w, ev, ew, hfr⟩ := _root_.GlobalTheory.CompanionTheory.Ar.FrameEig.isFramed_frPt E H D l Xo c τ p.R y F ψ (fpt y ψ) hp hq (fpt_under y ψ) (fpt_snd y ψ)
+        obtain ⟨v', w', ev', ew', hfr'⟩ := _root_.GlobalTheory.CompanionTheory.Ar.FrameEig.isFramed_frPt E H D l Xo c τ p.R y' F ψ (fpt y ψ) hp hq h1 (fpt_snd y ψ)
         obtain ⟨A, B, hA, hB, dA, dB⟩ := GlobalTheory.T.frame_borel_change_vectors E H D l Xo c τ p.R t y y' h F ψ (fpt y ψ) hp hq v v' w w' (fpt_under y ψ) ev ew ev' ew'
         refine ⟨by rw [(D1.2 hr).1, (D2.2 hr).1], ?_⟩
         rw [(D1.2 hr).2 v w hp hq ev ew, (D2.2 hr).2 v' w' hp hq ev' ew', wchar_detE τ hp, wchar_detE _ hq, map_prod, map_prod,

@@ -2,9 +2,9 @@ module
 
 public import Mathlib
 public import Formalism.SharpRestriction.GlobalSchurBounds.GeneralLinearActions.GenusMassVolumes
-public import Development.AbelianVarietyTheory.BlockTheory.GlobalSignature.SelfDualUnramifiedPlaces
-public import Development.AbelianVarietyTheory.BlockTheory.GlobalSignature.SelfDualLatticeActions
-public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.DisjointSpanPerpLat
+public import Development.AbelianVarietyTheory.BlockTheory.GlobalSignature.Bundle0002
+public import Development.AbelianVarietyTheory.BlockTheory.GlobalSignature.Bundle0003
+public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0018
 public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.IsSelfDualLatticeIff
 public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.FiniteResidueFieldAdicCompletionIntegers
 

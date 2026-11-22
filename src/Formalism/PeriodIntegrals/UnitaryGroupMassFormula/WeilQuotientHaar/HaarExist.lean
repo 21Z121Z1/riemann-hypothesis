@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Formalism.PeriodIntegrals.QuotProdK
+public import Formalism.PeriodIntegrals.Bundle0017
 
 @[expose] public section
 

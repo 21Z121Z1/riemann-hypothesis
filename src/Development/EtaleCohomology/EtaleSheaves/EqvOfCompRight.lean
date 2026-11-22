@@ -1,6 +1,6 @@
 module
 
-public import Development.EtaleCohomology.EtaleSheaves.ZariskiLocalCech
+public import Development.EtaleCohomology.EtaleSheaves.Bundle0019
 
 @[expose] public section
 

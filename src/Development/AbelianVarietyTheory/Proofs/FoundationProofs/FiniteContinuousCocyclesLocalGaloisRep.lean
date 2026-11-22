@@ -12,7 +12,7 @@ public import Formalism.GaloisCohomology.LocalTateDualityK
 public import Formalism.WeaklyAdmissibleFiltrations.Statement
 public import ReciprocityTheory.GaloisValuations.ContinuousConstSMulQuotient
 public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.IsDiscreteValuationRingIntegralClosurePadicInt
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FixingSubgroupEquivBicontinuous
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0236
 
 @[expose] public section
 

@@ -1,12 +1,12 @@
 module
 
 public import Mathlib
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.IsLieBasis
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.Bundle0002
 public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.EqZeroOfFderivEqZero
 public import Development.AbelianVarietyTheory.Proofs.ToricGeometry.ContinuousOnValue
-public import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.AppellHumbertUnifTangentWeilPairing
-public import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.LiftIdempotentEqOfSameComplexComponent
-public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.AbelianSectionsProportionalOfCoordinates
+public import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.Bundle0021
+public import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.Bundle0043
+public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.Bundle0079
 
 @[expose] public section
 

@@ -2,8 +2,7 @@ module
 
 public import Mathlib
 public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.DiscreteSeriesExistence.Smooth
-public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.CentralCharacters.QuasiDeterminantConjInv
-public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.CentralCharacters.AdjointEquivalence
+public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.CentralCharacters.Bundle0001
 public import Formalism.FormalDegreeBessel.FinalIO
 
 @[expose] public section

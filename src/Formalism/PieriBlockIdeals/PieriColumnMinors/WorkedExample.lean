@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Formalism.PieriBlockIdeals.MultiplicityZeroThickEmbedding
+public import Formalism.PieriBlockIdeals.Bundle0004
 public import Formalism.PieriBlockIdeals.PieriColumnMinors.HeckeLFunctionIdealEulerProduct
 public import Formalism.PieriBlockIdeals.PieriColumnMinors.ParameterBounds
 

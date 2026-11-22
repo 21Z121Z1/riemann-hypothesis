@@ -1,7 +1,7 @@
 module
 
 public import Formalism.SharpRestriction.GrowthBounds.MonomialFactorials.ClosedOfOrthogonalLattice
-public import Formalism.SharpRestriction.GrowthBounds.MonomialFactorials.OrthCountOf
+public import Formalism.SharpRestriction.GrowthBounds.MonomialFactorials.Bundle0015
 
 @[expose] public section
 

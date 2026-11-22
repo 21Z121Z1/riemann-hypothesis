@@ -1,8 +1,8 @@
 module
 
 public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.HighestWeights.PRVComponents.HighestWeightDifferencesNat
-public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.HighestWeights.Exists
-public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.HighestWeights.Weight
+public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.HighestWeights.Bundle0005
+public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.HighestWeights.Bundle0003
 public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.HighestWeights.PieriRules.KTypeIntDomStatement
 
 @[expose] public section

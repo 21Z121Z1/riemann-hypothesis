@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import GroundTheory.LocalFields.FilteredSurj
+public import GroundTheory.LocalFields.Bundle0001
 
 @[expose] public section
 

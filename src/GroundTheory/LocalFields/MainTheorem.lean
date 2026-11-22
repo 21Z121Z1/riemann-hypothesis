@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import GroundTheory.LocalFields.LocalArtinUniqueness
-public import GroundTheory.LocalFields.LocalArtinCompletion
-public import GroundTheory.LocalFields.LocalArtinFunctoriality
+public import GroundTheory.LocalFields.Bundle0016
+public import GroundTheory.LocalFields.Bundle0017
+public import GroundTheory.LocalFields.Bundle0018
 public import GroundTheory.LocalFields.LocalArtinTransport
 
 @[expose] public section

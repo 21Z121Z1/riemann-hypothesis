@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExOfHodgeWt
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1903
 
 @[expose] public section
 

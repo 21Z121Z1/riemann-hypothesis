@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import GroundTheory.AutomorphicForms.PartialDifferential.Sobolev
-public import GroundTheory.AutomorphicForms.PartialDifferential.SobolevDuality
+public import GroundTheory.AutomorphicForms.PartialDifferential.Bundle0001
 
 @[expose] public section
 

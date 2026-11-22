@@ -2,8 +2,7 @@ module
 
 public import Mathlib
 public import CompanionTheory.RealGroups.GeneralUnitaryRepresentations.WhittakerModels.WhitLeOneOfDict
-public import CompanionTheory.RealGroups.GeneralUnitaryRepresentations.WhittakerModels.UnipBEqUnipotent
-public import CompanionTheory.RealGroups.GeneralUnitaryRepresentations.WhittakerModels.RankDual
+public import CompanionTheory.RealGroups.GeneralUnitaryRepresentations.WhittakerModels.Bundle0001
 
 @[expose] public section
 

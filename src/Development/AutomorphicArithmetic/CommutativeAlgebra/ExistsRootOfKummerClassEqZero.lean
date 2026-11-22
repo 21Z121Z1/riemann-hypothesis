@@ -1,19 +1,19 @@
 module
 
-public import Development.AbelianVarietyTheory.Definitions.Divisors.DivisorSupportCondition
-public import Development.AbelianVarietyTheory.Definitions.Divisors.SecClass
-public import Development.AutomorphicArithmetic.CommutativeAlgebra.KumSExact
-public import Development.AutomorphicArithmetic.CommutativeAlgebra.EqOfUnitGlobalSectionEq
-public import Development.AutomorphicArithmetic.CommutativeAlgebra.KummerClassAddOfUnitSecAdd
-public import Development.AutomorphicArithmetic.CommutativeAlgebra.ExistsUnitEqMultiplicativeGroupSection
-public import Development.AutomorphicArithmetic.CommutativeAlgebra.PicUnit
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EtaleSheafSectionsExtAndGlueStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EtaleCochainEvalOnSimplexBasicPropertiesStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SchClsCocycleSecStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DegreeZeroSectionClassPropertiesStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EtaleLocalPrimitiveRootAndRootsOfUnityStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsKummerTorsorSplittingKummerTorsorSplittingStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.KummerClassOfUnitCocycleNaturalAdditiveStatement
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0007
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0006
+public import Development.AutomorphicArithmetic.CommutativeAlgebra.Bundle0032
+public import Development.AutomorphicArithmetic.CommutativeAlgebra.Bundle0037
+public import Development.AutomorphicArithmetic.CommutativeAlgebra.Bundle0014
+public import Development.AutomorphicArithmetic.CommutativeAlgebra.Bundle0028
+public import Mathlib
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0306
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0340
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0363
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0461
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0375
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0484
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0467
 
 @[expose] public section
 
@@ -168,13 +168,13 @@ theorem UpperTheory.exists_root_of_kummer_class_eq_zero :
   have hloc : Loc X fun V g => ∃ b, D V g b :=
     GlobalTheory.T.etaleLocal_property_calculus_rules.2.1 X _ _ ((GlobalTheory.T.etaleLocal_primitiveRoot_and_roots_of_unity q X).2.2.2 hq w) (fun V g ⟨v, hv⟩ => hA g v hv)
   obtain ⟨S, hS, hSP⟩ := hloc
-  obtain ⟨b0, hb0⟩ := (GlobalTheory.T.etaleSheafSections_ext_and_glue ℤ Gm X).2 S hS (fun V g hg => Classical.choose (hSP V g hg))
+  obtain ⟨b0, hb0⟩ := (_root_.GlobalTheory.EtC.sec_ext_glue ℤ Gm X).2 S hS (fun V g hg => Classical.choose (hSP V g hg))
     (fun V W g k hg => hB (k ≫ g) _ _ (hC g k _ (Classical.choose_spec (hSP V g hg)))
       (Classical.choose_spec (hSP W (k ≫ g) (S.downward_closed hg k))))
   obtain ⟨u, hu⟩ := UpperTheory.exists_unit_eq_multiplicativeGroup_section X b0
   refine ⟨u, UpperTheory.eq_of_unitGlobalSection_eq X _ _ ?_⟩
   rw [unitSec_pow, hu]
-  apply (GlobalTheory.T.etaleSheafSections_ext_and_glue ℤ Gm X).1
+  apply (_root_.GlobalTheory.EtC.sec_ext_glue ℤ Gm X).1
   refine ⟨S, hS, fun V g hg => ?_⟩
   obtain ⟨v, s, hv, -, hb⟩ := Classical.choose_spec (hSP V g hg)
   rw [sec_res_nsmul, hb0 V g hg, hb, nsmul_add, kp_nsmul, add_zero, ← unitSec_pow, hv,

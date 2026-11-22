@@ -1,13 +1,13 @@
 module
 
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutEX2
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.EmbeddedGroupMeasurePreserving
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0246
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0133
 public import Formalism.HermitianCurvature.HermitianCurvatureProofs.MulVecBvecApply
 public import Formalism.HermitianCurvature.HermitianCurvatureProofs.UnipotentCoordinatesMeasurePreserving
 public import Formalism.HermitianCurvature.HermitianCurvatureProofs.ConjugationInvarianceEverySetting
 public import Formalism.HermitianCurvature.HermitianCurvatureProofs.LieBracketMultiplication
 public import Formalism.HermitianCurvature.HermitianCurvatureProofs.SigmaFiniteOfHaar
-public import Formalism.FormalDegreeBessel.FinalG
+public import Formalism.FormalDegreeBessel.Bundle0002
 
 @[expose] public section
 

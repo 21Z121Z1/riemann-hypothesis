@@ -2,8 +2,8 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.Divisors.EqZeroOfForallPowDvd
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SandwichKernelRangeExact
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsPowEqOfIntegers
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0430
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0516
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConvEqOneOfForallPairing
 
 @[expose] public section

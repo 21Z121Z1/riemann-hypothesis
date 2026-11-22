@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Proofs.MetricProofs.IsLocSec
-public import Development.AutomorphicSpectrum.Proofs.MetricProofs.MinorIJMap
-public import Development.AutomorphicSpectrum.Proofs.MetricProofs.FrameChangeScalarFactor
+public import Development.AutomorphicSpectrum.Proofs.MetricProofs.Bundle0040
+public import Development.AutomorphicSpectrum.Proofs.MetricProofs.Bundle0073
+public import Development.AutomorphicSpectrum.Proofs.MetricProofs.Bundle0082
 
 @[expose] public section
 
@@ -132,7 +132,7 @@ theorem detFac_improper (hz : zb ∈ mcPts (mCoordIdeal M.x)) (hF₁ : M.IsFrame
   have hT₂ := hF₂.1 p.1
   have hu₁ : IsUnit (F₁.T p.1).det := hT₁.2.isUnit
   have hC : IsBlockDiag j ((F₁.T p.1)⁻¹ * F₂.T p.1) := (hT₁.1.inv hu₁).mul hT₂.1
-  have hm := ((GlobalTheory.T.block_diagonal_minor_vanishing M.Ω N j p.2 M.j_le).2.2.2 _ _ hT₁.1 hC).2
+  have hm := ((_root_.GlobalTheory.CompanionTheory.Ar.PB.MinorCalc.minors_main M.Ω N j p.2 M.j_le).2.2.2 _ _ hT₁.1 hC).2
   rw [Matrix.mul_nonsing_inv_cancel_left _ _ hu₁] at hm
   have e₁ := hF₁.2.2.2 p hp
   have e₂ := hF₂.2.2.2 p hp
@@ -181,7 +181,7 @@ theorem minor_change (hz : zb ∈ mcPts (mCoordIdeal M.x)) (hF₁ : M.IsFrame F�
   have hT₁ := hF₁.1 p.1
   have hT₂ := hF₂.1 p.1
   have hu₁ : IsUnit (F₁.T p.1).det := hT₁.2.isUnit
-  have hi := GlobalTheory.T.block_diagonal_minor_vanishing M.Ω N j p.2 hj
+  have hi := _root_.GlobalTheory.CompanionTheory.Ar.PB.MinorCalc.minors_main M.Ω N j p.2 hj
   have hC : IsBlockDiag j ((F₁.T p.1)⁻¹ * F₂.T p.1) := (hT₁.1.inv hu₁).mul hT₂.1
   have hdet : ((F₁.T p.1)⁻¹ * F₂.T p.1).det ≠ 0 := by
     rw [Matrix.det_mul, Matrix.det_nonsing_inv]

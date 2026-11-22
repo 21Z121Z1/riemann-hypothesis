@@ -2,12 +2,12 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.Divisors.InvVolConjLevelOne
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsIsThetaAtOfVac
-public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.JetOpIdentityOfEntire
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.HeisenbergCombinationCommFockPolynomialVectors
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsThetaFunOOfThetaAt
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BaseThetaKernelSeriesUnique
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MultilinearVanishOfProdVanishStatement
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1577
+public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0094
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0150
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0175
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1679
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0165
 
 @[expose] public section
 

@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import GroundTheory.ArithmeticGeometry.AbelianVarieties.IsogenySeparable
-public import GroundTheory.ArithmeticGeometry.AbelianVarieties.IsogenyFrobeniusSep
+public import GroundTheory.ArithmeticGeometry.AbelianVarieties.Bundle0001
 
 @[expose] public section
 

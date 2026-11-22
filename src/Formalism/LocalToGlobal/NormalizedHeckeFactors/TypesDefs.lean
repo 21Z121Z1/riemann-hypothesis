@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Formalism.LocalToGlobal.UnitaryNorms.RealCyclotomicTwoPower
+public import Formalism.LocalToGlobal.UnitaryNorms.Bundle0002
 public import Formalism.CyclotomicNorms.StatementT
 
 @[expose] public section

@@ -2,9 +2,9 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.Divisors.IsUnitMkOfFormallyUnramified
-public import Development.AbelianVarietyTheory.Definitions.Divisors.ChartMeasApplyOfSubset
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0009
 public import Development.AbelianVarietyTheory.Proofs.CovolumeBounds.ExistsIsClosedEmbeddingOfAffine
-public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsHolomorphicSections
+public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0020
 
 @[expose] public section
 

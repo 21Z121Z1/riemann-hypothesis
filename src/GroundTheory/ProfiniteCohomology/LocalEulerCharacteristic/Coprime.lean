@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import GroundTheory.ProfiniteCohomology.LocalEulerCharacteristic.Scalars
-public import GroundTheory.ProfiniteCohomology.LocalEulerCharacteristic.CoprimeRegular
+public import GroundTheory.ProfiniteCohomology.LocalEulerCharacteristic.Bundle0001
 public import GroundTheory.ProfiniteCohomology.LocalEulerCharacteristic.CoprimeTwist
 public import GroundTheory.ProfiniteCohomology.LocalEulerCharacteristic.ModNEquivOfSurjectiveApplyModNRep
 public import GroundTheory.ProfiniteCohomology.LocalEulerCharacteristic.AdditiveInvariants

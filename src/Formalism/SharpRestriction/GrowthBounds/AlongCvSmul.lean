@@ -1,9 +1,8 @@
 module
 
-public import Formalism.SharpRestriction.GrowthBounds.PowerSeriesFrobeniusCongruence
-public import Formalism.SharpRestriction.GrowthBounds.CoeffIdentityPlainChartOfThree
+public import Formalism.SharpRestriction.GrowthBounds.Bundle0002
 public import Formalism.LocalToGlobal.CharacterGerms.TripleSubstSecondCoordinate
-public import Formalism.LocalToGlobal.CharacterGerms.RowTieCartAdd
+public import Formalism.LocalToGlobal.CharacterGerms.Bundle0018
 
 @[expose] public section
 

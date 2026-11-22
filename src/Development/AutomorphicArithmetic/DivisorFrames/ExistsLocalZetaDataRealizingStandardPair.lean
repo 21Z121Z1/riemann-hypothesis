@@ -1,13 +1,13 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicArithmetic.LocalEmbeddings.StageGeoDefs
-public import Development.AbelianVarietyTheory.Statements.PlaceShiftStatements.NormSmall
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.RatInOfUnit
-public import Development.AbelianVarietyTheory.Definitions.Divisors.DiscreteSeriesHermitianUnique
-public import Development.AutomorphicArithmetic.DivisorFrames.StdAStdBMemSchwartzBruhat
+public import Development.AutomorphicArithmetic.LocalEmbeddings.Bundle0002
+public import Development.AbelianVarietyTheory.Statements.PlaceShiftStatements.Bundle0002
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0142
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0041
+public import Development.AutomorphicArithmetic.DivisorFrames.Bundle0008
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.StandardPairFrameBlocksDetAndNegTranspose
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SplitPlaceCharacterComponentSmoothUnitaryConductStatement
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1403
 
 @[expose] public section
 

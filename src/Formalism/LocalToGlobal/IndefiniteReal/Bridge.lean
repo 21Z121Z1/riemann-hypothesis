@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Formalism.LocalToGlobal.Divisibility.LiftLat
+public import Formalism.LocalToGlobal.Divisibility.Bundle0003
 public import Formalism.LocalToGlobal.BesselHermitianTheta.IsAutFunDef
 
 @[expose] public section

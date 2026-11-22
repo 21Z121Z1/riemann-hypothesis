@@ -1,6 +1,6 @@
 module
 
-public import ReciprocityTheory.AnalyticForms.RegularLocalRings.NeZeroOfSpanEqMaximalIdeal
+public import ReciprocityTheory.AnalyticForms.RegularLocalRings.Bundle0015
 
 @[expose] public section
 

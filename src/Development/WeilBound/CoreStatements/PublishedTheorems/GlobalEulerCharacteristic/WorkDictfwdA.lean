@@ -1,7 +1,7 @@
 module
 
 public import ReciprocityTheory.Hypotheses.GalCoh
-public import Development.WeilBound.CoreStatements.PublishedTheorems.GlobalEulerCharacteristic.RatioOneKilled
+public import Development.WeilBound.CoreStatements.PublishedTheorems.GlobalEulerCharacteristic.Bundle0001
 public import Development.WeilBound.CoreStatements.PublishedTheorems.GlobalFiniteness.Transport
 public import GroundTheory.ProfiniteCohomology.GlobalEulerCharacteristic.ShapiroCoind
 public import GroundTheory.ProfiniteCohomology.GlobalEulerCharacteristic.DefsForms

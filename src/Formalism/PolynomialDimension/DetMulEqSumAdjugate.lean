@@ -1,8 +1,6 @@
 module
 
-public import Formalism.PolynomialDimension.MultinomialDepth.ExistsNonzeroExchangedMinorHolds
-public import Formalism.PolynomialDimension.MultinomialDepth.FrobeniusDetVanishingHolds
-public import Formalism.PolynomialDimension.MultinomialDepth.FockGaussComparisonHolds
+public import Formalism.PolynomialDimension.MultinomialDepth.Bundle0001
 
 @[expose] public section
 

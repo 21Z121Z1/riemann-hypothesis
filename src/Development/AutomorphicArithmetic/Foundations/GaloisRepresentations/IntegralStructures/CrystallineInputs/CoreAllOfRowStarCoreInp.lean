@@ -2,43 +2,39 @@ module
 
 public import Mathlib
 public import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.IntegralStructures.CrystallineInputs.OfInputs
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.UnramifiedGoodOfSelfDual
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0345
 public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.CyclicStrongAtCusp
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExistsGoodConjSelfDualTwistSplitUnramifiedStatement
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.QuadraticTwists.AttTwist
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.RepERankOne
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.HeckeLAdicCharacterAndPrincipalIdealSt
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AutomorphicFormsFiniteGL
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.HoldsCsdCrysOfHoldsS
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.FrobeniusGoodOfSelfDual
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.InfiniteQuadraticCMGoodBaseChangeSplit
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.PolarizedPairBaseChangePolarizedSameWeight
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0336
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.QuadraticTwists.Bundle0001
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0579
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0165
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1678
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0347
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0350
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0323
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0334
 public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.WeaklyAttachedGaloisRepresentationBaseChangeRest
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExistsPlaceNormVEq
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.QuadLift
-public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.IsWeight
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0315
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0235
+public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.Bundle0019
 public import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.Imports
-public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.ExistsSpanFormsNeBot
-public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.IsComplementaryProductOfIsCuspidal
+public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.Bundle0005
+public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.Bundle0009
 public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.StrongMultiplicityOne
 public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisGeometry₂.GelfandKazhdanDual
 public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.HeckeLAdicCharacterAboveIff
-public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisGeometry₂.AlgebraicCharacterWD
+public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisGeometry₂.Bundle0006
 public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.DeRhamPotSemistable
 public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsPolarizedTwistAbsPow
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.QuadraticTwists.ExBridge
-public import PositivityTheory.AutomorphicForms.PublishedInputs.RealGaloisRepresentations.IwahoriSphericalTransfer.BridgeJMemKwOfDecLe
-public import PositivityTheory.AutomorphicForms.PublishedInputs.RealGaloisRepresentations.IwahoriSphericalTransfer.DRSstCrysPstJumpsDescend
-public import PositivityTheory.AutomorphicForms.PublishedInputs.RealGaloisRepresentations.IwahoriSphericalTransfer.InducedEmbeddingExtends
+public import PositivityTheory.AutomorphicForms.PublishedInputs.RealGaloisRepresentations.IwahoriSphericalTransfer.Bundle0001
 public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsIsLocCompAndIsLocLoc
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.PlaceOverTransportRingIso
-public import PositivityTheory.AutomorphicForms.PublishedInputs.RealGaloisRepresentations.IwahoriSphericalTransfer.RamificationIdxEqOneAndInertiaDegEqOne
-public import PositivityTheory.AutomorphicForms.PublishedInputs.RealGaloisRepresentations.IwahoriSphericalTransfer.IwahoriSphericalTransfer
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.FrobeniusAllOfGood
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExAllOfGood
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ContinuousTwOfContinuous
-public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.IsRegAlgTwistOfHalfIntegral
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.NormalCodimOneStalkDvr
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0670
+public import PositivityTheory.AutomorphicForms.PublishedInputs.RealGaloisRepresentations.IwahoriSphericalTransfer.Bundle0003
+public import PositivityTheory.AutomorphicForms.PublishedInputs.RealGaloisRepresentations.IwahoriSphericalTransfer.Bundle0002
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0337
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0342
+public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.Bundle0023
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0324
 
 @[expose] public section
 
@@ -103,7 +99,7 @@ theorem _root_.UpperTheory.Gal.Int.Inp.holdsS_good_dR_of_csd : UpperTheory.Gal.I
   intro hI hC E Ω _ _ _ _ _ _ l _ ι a ha π χ hs r hr w hw B hB
   have hF := GlobalTheory.automorphicFormsFiniteGL
   have hA := hI.hk
-  obtain ⟨κ, m, hκ, hu, hcs⟩ := GlobalTheory.T.exists_good_conjSelfDual_twist_split_unramified hF E l a ha π χ hs w hw
+  obtain ⟨κ, m, hκ, hu, hcs⟩ := _root_.GlobalTheory.GoodCsdTwist.exists_goodCsd_twist hF E l a ha π χ hs w hw
   obtain ⟨art, hart, hμ⟩ := (GlobalTheory.Published.GlobalArtinReciprocity.heckeLAdicCharacter_and_principalIdealSt
     GlobalTheory.globalArtinReciprocity_holds).1 E Ω
   have hκp : GlobalTheory.HeckeGal.IsAlgPos κ m := GlobalTheory.HeckeGal.isAlgPos_of_isAlg hκ
@@ -440,9 +436,9 @@ theorem _root_.UpperTheory.Gal.Int.Inp.holdsS_all_phi : UpperTheory.Gal.Int.Inp.
   have hQ := GlobalTheory.QuadLiftBridge.quadLift hIn.ac hIn.js
   obtain ⟨Q, hQdec, hQsplit, hQram, hQgood⟩ := (GlobalTheory.T.infinite_quadraticCM_goodBaseChange_split hF E Ω l a π w).nonempty
   obtain ⟨P, hP⟩ := hQ E Q.K Q.two a ha π hQram
-  obtain ⟨⟨χ', hsc'⟩, -⟩ := GlobalTheory.T.polarizedPair_baseChange_polarized_same_weight hF hIn.js hIn.gk E Q.K l a ha π χ P hP hsc.all
+  obtain ⟨⟨χ', hsc'⟩, -⟩ := _root_.GlobalTheory.LiftPolar.main hF hIn.js hIn.gk E Q.K l a ha π χ P hP hsc.all
   have hsc'' : InScope .good l P χ' := ⟨hsc'.1, hsc'.2.1, hQgood P hP⟩
-  have hr' := GlobalTheory.T.weaklyAttachedGaloisRepresentation_baseChange_restrict E Q.K Ω l ι a π P hP r hr
+  have hr' := _root_.GlobalTheory.GalCut.weak_comp_res E Q.K Ω l ι a π P hP r hr
   have hdec := hQdec A h
   have hjK := GlobalTheory.RealGal.bridge_j_mem_Kw_of_dec_le E Ω Q.K l A O Bw hdec
   obtain ⟨Bw', e1, e2, e3⟩ := UpperTheory.V.Af.Cq.exBridge E Q.K Ω l A O Bw hjK
@@ -453,7 +449,7 @@ theorem _root_.UpperTheory.Gal.Int.Inp.holdsS_all_phi : UpperTheory.Gal.Int.Inp.
     ext1
     exact this.over.symm
   obtain ⟨c, hc, hdegc, hq, -⟩ :=
-    GlobalTheory.T.place_over_transport_ring_iso E Ω A w h Q.K Ω A w' h' (RingEquiv.refl Ω) (algebraMap E Q.K) i hi
+    _root_.GlobalTheory.WeilTransport.weil_equiv E Ω A w h Q.K Ω A w' h' (RingEquiv.refl Ω) (algebraMap E Q.K) i hi
   obtain ⟨S, hS, -, -, -, -, hTw, -⟩ :=
     GlobalTheory.T.place_over_transport_ring_iso_symm E Ω A w h Q.K Ω A w' h' (RingEquiv.refl Ω) (algebraMap E Q.K) i hi
   have hB' : (CG.mk P).HasSat w' B := by

@@ -4,7 +4,7 @@ public import Formalism.LocalRingCardinality.DataParams₂
 public import Formalism.ThetaLiftIndependence.FinalThetaLiftAMFKIndep
 public import Formalism.FrobeniusOrbits.HostCorollaries
 public import Formalism.LocalRingCardinality.HostCls
-public import Formalism.SharpRestriction.RamificationFrobenius.TotientGaloisClasses.FrameCyclicGenerator
+public import Formalism.SharpRestriction.RamificationFrobenius.TotientGaloisClasses.Bundle0001
 public import Formalism.HarderNarasimhan.ShiftInvariance
 public import Formalism.GradedWeylDivisibility.DualWeylDominanceOf
 public import Formalism.GradedWeylDivisibility.FinalB

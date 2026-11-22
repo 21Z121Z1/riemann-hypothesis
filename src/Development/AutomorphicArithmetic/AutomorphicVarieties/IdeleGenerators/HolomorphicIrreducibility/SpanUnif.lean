@@ -1,6 +1,6 @@
 module
 
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.IdeleGenerators.Adelise
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.IdeleGenerators.Bundle0002
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.IdeleGenerators.HolomorphicIrreducibility.UopSum
 public import GroundTheory.GlobalFields.LocalAtPlace
 

@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import GroundTheory.GlobalFields.ComplexMultiplication.AutCFixed
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CharpolyScaledInverse
+public import GroundTheory.GlobalFields.ComplexMultiplication.Bundle0002
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0824
 
 @[expose] public section
 

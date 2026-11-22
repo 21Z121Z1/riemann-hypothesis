@@ -5,7 +5,7 @@ public import Development.AbelianVarietyTheory.Definitions.Divisors.SurjectiveOf
 public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.IsNoetherianRingDualNumber
 public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.AbelianHodgeDeRham
 public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.BijectiveCechDeRhamComparisonDegreeOne
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsLocalizationAwayOfFlatLift
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2092
 
 @[expose] public section
 

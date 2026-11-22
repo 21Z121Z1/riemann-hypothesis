@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import GroundTheory.AutomorphicForms.GL2.GJStandardLUnramified
+public import GroundTheory.AutomorphicForms.GL2.Bundle0005
 public import GroundTheory.AutomorphicForms.WhittakerCriterion
-public import GroundTheory.AutomorphicForms.SmoothRepContragredient
+public import GroundTheory.AutomorphicForms.Bundle0010
 
 @[expose] public section
 

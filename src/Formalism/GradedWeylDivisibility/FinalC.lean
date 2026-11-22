@@ -1,23 +1,15 @@
 module
 
 public import Formalism.GradedWeylDivisibility.FinalB
-public import Formalism.GradedWeylDivisibility.FockSpaceTableaux.MinorExpLt
-public import Formalism.GradedWeylDivisibility.FockSpaceTableaux.ColLexInitMinor
-public import Formalism.GradedWeylDivisibility.FockSpaceTableaux.ColumnLexBideterminant
-public import Formalism.GradedWeylDivisibility.FockSpaceTableaux.ColSums
+public import Formalism.GradedWeylDivisibility.FockSpaceTableaux.Bundle0007
+public import Formalism.GradedWeylDivisibility.FockSpaceTableaux.Bundle0003
 public import Formalism.GradedWeylDivisibility.FockSpaceTableaux.SSYTPeel
-public import Formalism.GradedWeylDivisibility.FockSpaceTableaux.SSYTExists
-public import Formalism.GradedWeylDivisibility.FockSpaceTableaux.CompDeg
-public import Formalism.GradedWeylDivisibility.FockSpaceTableaux.LeadComp
-public import Formalism.GradedWeylDivisibility.FockSpaceTableaux.PeelDecomp
-public import Formalism.GradedWeylDivisibility.FockSpaceTableaux.PeelHomog
-public import Formalism.GradedWeylDivisibility.FockSpaceTableaux.PeelLead
-public import Formalism.GradedWeylDivisibility.FockSpaceTableaux.EvalDeg
-public import Formalism.GradedWeylDivisibility.FockSpaceTableaux.PeelDegBound
+public import Formalism.GradedWeylDivisibility.FockSpaceTableaux.Bundle0009
+public import Formalism.GradedWeylDivisibility.FockSpaceTableaux.Bundle0008
+public import Formalism.GradedWeylDivisibility.FockSpaceTableaux.Bundle0005
 public import Formalism.GradedWeylDivisibility.FockSpaceTableaux.TwoColumn
-public import Formalism.GradedWeylDivisibility.FockSpaceTableaux.LeadInterlaced
-public import Formalism.GradedWeylDivisibility.FockSpaceTableaux.SMSAssembly
-public import Formalism.GradedWeylDivisibility.FockSpaceTableaux.StandardMonomialSpanOf
+public import Formalism.GradedWeylDivisibility.FockSpaceTableaux.Bundle0006
+public import Formalism.GradedWeylDivisibility.FockSpaceTableaux.Bundle0010
 
 @[expose] public section
 

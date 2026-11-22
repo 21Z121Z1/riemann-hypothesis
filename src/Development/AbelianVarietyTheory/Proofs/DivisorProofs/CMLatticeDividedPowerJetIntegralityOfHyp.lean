@@ -2,25 +2,28 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.Divisors.JetAnalytic
-public import Development.AbelianVarietyTheory.Definitions.Divisors.HasLevelStd
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0012
 public import Development.AbelianVarietyTheory.Definitions.Divisors.ZetaActRefl
 public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.ExistsEqOfNatCastMulMem
-public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.SiegelKlingenDeligneRibet
+public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.Bundle0006
 public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.PartialZetaFunctionalEquation
 public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.HeckeTateFunctionalEquationCM
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LatticeValueIntegralityRamifiedOfExpansion
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HeckeWeightTwoContinuationOfFunctionalEquationStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LipschitzFormulaTotallyRealPoissonStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HilbertEisensteinExpansionOfLipschitzHeckeZetaStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DeformedLatticeSumDerivativesEqEisensteinJets
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsEquivCmTypeRealEmbeddingsStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ImportsRestLast
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MemPassScaled
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FinrankLeTwoMulPadicValIntDiscr
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PadicValIntDiscrDivLeDeltaVp
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntOfIsIntegral
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsAlgebraicOfRationalValuation
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SzJetConj
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0597
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0592
+public import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.OmegaFactorization
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0323
+public import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.Bundle0001
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2184
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2500
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2253
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0001
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0675
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2380
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2177
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2206
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2187
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0542
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2734
 
 @[expose] public section
 
@@ -194,7 +197,7 @@ theorem core (hjsz : EisExp → ∀ (F : Type) [Field F] [NumberField F] [IsTota
       beta_reduce
       rw [h1]
       exact hγ'
-  · obtain ⟨e, he⟩ := GlobalTheory.T.exists_equiv_cmType_realEmbeddings E I φ hCM
+  · obtain ⟨e, he⟩ := _root_.GlobalTheory.CMTypeEmb.exists_equiv E I φ hCM
     have hD := GlobalTheory.HilbFam.iterD_defSum_eq_jet hEis E I φ e θ τ _ L (M * D) s _ g κ u hf2 hs hNpos hL he hφθ
       (Nat.mul_pos hMpos hD0) hLm hg hu
     obtain ⟨hω, hj, hst⟩ := GlobalTheory.SzTau.main l lam d Λ 1 Ω τ hd h4 hΛ htau hΩ
@@ -255,6 +258,6 @@ theorem core (hjsz : EisExp → ∀ (F : Type) [Field F] [NumberField F] [IsTota
     nlinarith
 
 theorem jetInt : GlobalTheory.Published.SiegelKlingenDeligneRibet → GlobalTheory.Published.PartialZetaFunctionalEquation → GlobalTheory.Published.HilbertClassFieldJ → GlobalTheory.Published.EllipticMainTheoremCM → GlobalTheory.LatJet.JetInt := fun _ hPZ _ _ =>
-  core GlobalTheory.HilbFam.sz_jet_conj (GlobalTheory.T.hilbertEisensteinExpansion_of_lipschitz_hecke_zeta GlobalTheory.T.lipschitz_formula_totally_real_poisson (GlobalTheory.T.heckeWeightTwoContinuation_of_functionalEquation hPZ) hPZ)
+  core GlobalTheory.HilbFam.sz_jet_conj (_root_.GlobalTheory.HilbertEis.eisExp _root_.GlobalTheory.LipschitzTR.lipschitz (_root_.GlobalTheory.HeckeTwo.heckeWeightTwo_of_fe hPZ) hPZ)
 
 end GlobalTheory.JetIntElliptic

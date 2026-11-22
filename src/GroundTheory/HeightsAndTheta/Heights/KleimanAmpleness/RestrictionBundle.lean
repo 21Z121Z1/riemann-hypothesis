@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.RestrictionSystems
+public import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.Bundle0024
 
 @[expose] public section
 

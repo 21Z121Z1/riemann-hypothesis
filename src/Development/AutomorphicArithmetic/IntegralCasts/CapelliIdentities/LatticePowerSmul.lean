@@ -4,8 +4,8 @@ public import Mathlib
 public import Formalism.WeaklyAdmissibleFiltrations.Statement
 public import Formalism.SharpRestriction.LevelLetterCocycles.DataNLoc
 public import Formalism.SharpRestriction.LevelLetterCocycles.ElementDenominator
-public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.IsPotential
-public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.ExistsPowSmulMemAlt
+public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0017
+public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0019
 
 @[expose] public section
 

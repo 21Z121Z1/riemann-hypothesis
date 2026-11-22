@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.NonemptyAllIff
+public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.Bundle0022
 
 @[expose] public section
 

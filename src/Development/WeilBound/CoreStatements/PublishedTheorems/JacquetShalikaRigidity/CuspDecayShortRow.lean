@@ -1,8 +1,8 @@
 module
 
 public import Development.WeilBound.CoreStatements.PublishedTheorems.JacquetShalikaRigidity.ColumnConjugationMeasure
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CuspRapidDecaySiegelGL
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IdeleModuleDetDiagUnitsPosIdele
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0556
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0292
 public import GroundTheory.AutomorphicForms.CuspidalDiscreteness.SiegelConj
 
 @[expose] public section

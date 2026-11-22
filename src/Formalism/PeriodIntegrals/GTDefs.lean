@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Formalism.LocalRingCardinality.DataCoeff
-public import Formalism.PeriodIntegrals.GTBranch
+public import Formalism.PeriodIntegrals.Bundle0019
 
 @[expose] public section
 

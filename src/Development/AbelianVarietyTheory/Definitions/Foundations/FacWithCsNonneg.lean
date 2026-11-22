@@ -1,8 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Foundations.ThetaExponentIdentities
-public import Development.AbelianVarietyTheory.Definitions.Foundations.NonnegOfMemCStarSet
+public import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0019
 public import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.HalfLatticeTypes
 public import Development.AbelianVarietyTheory.Proofs.GenericRegularity.MemRangeOfIsAlgebraicRatFun
 

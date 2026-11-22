@@ -2,8 +2,8 @@ module
 
 public import Mathlib
 public import Development.WeilBound.ThetaLifts.LatticeBasics.FrameB
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsSiegelHProjArchEq
-public import Development.WeilBound.ThetaLifts.LatticeBasics.HypothesesE
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0305
+public import Development.WeilBound.ThetaLifts.LatticeBasics.Bundle0007
 
 @[expose] public section
 

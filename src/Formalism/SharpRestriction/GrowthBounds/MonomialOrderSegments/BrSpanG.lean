@@ -4,7 +4,7 @@ public import Formalism.SharpRestriction.GrowthBounds.Lemma5aAt
 public import Formalism.SharpRestriction.GrowthBounds.ProjectionOfIsotypicDecomposition
 public import Formalism.SharpRestriction.GrowthBounds.Joints
 public import Formalism.SharpRestriction.GrowthBounds.ValuationLowestDegreeMapFractionField
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CardFilterValLt
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0003
 
 @[expose] public section
 

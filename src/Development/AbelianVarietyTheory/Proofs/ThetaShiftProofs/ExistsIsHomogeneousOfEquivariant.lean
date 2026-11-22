@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Formalism.LocalToGlobal.ProjectiveLattices.SectionOfLineBundleOne
-public import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.IrreducibleDetOfIsRelPrime
+public import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.Bundle0001
 
 @[expose] public section
 

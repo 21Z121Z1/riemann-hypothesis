@@ -1,6 +1,6 @@
 module
 
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsCoreTiesOfHyp
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1844
 public import Development.AbelianVarietyTheory.Definitions.HeightFunctions.RunsAlong
 
 @[expose] public section

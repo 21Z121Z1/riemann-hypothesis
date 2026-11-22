@@ -1,6 +1,6 @@
 module
 
-public import Formalism.SharpRestriction.GrowthBounds.ColumnSpanDensity.RhoUpperBoundOfEdgeCount
+public import Formalism.SharpRestriction.GrowthBounds.ColumnSpanDensity.Bundle0006
 
 @[expose] public section
 

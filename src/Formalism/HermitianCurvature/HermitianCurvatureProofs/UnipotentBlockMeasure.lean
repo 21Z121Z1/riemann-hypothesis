@@ -1,7 +1,7 @@
 module
 
 public import Formalism.HermitianCurvature.StatementPN
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.LocalVolumePositivity
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0012
 
 @[expose] public section
 

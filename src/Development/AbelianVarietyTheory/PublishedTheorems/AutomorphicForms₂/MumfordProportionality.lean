@@ -2,10 +2,10 @@ module
 
 public import Mathlib
 public import Formalism.DegreeFormula.Statement
-public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.FlagComponentFramedPointFrame
+public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.Bundle0036
 public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.FinrankRiemannRochNsmulHyperplane
 public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.FirstIndexEqOfUnfolded
-public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.AntisymmFibrePointTwo
+public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.Bundle0010
 
 @[expose] public section
 

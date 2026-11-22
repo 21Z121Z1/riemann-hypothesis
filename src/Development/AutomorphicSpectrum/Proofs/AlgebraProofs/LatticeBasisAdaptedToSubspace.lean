@@ -1,8 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.IsSplitGaussChars
-public import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.GapCondExample
+public import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.Bundle0001
 
 @[expose] public section
 

@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.ContrFactor
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsEmbXMul
+public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.Bundle0002
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0036
 
 @[expose] public section
 

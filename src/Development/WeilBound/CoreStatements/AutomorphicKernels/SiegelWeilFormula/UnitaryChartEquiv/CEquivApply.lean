@@ -1,8 +1,8 @@
 module
 
 public import Development.WeilBound.CoreStatements.AutomorphicKernels.SiegelWeilFormula.ThetaBijections.SymplecticFormCoordinates
-public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.TensorLocallyCompactRing
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DoublingPairLatticeTheta
+public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.Bundle0019
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1866
 
 @[expose] public section
 

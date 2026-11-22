@@ -1,15 +1,15 @@
 module
 
 public import Formalism.LocalToGlobal.SiegelLatticeTheory.HaarTransversals.UnitaryHaarProducts.SettingBlocks
-public import Formalism.LocalToGlobal.SiegelLatticeTheory.CasimirReductionTheory.OneParameterDerivatives.BesselNVG
-public import Formalism.SharpRestriction.CuspSpanNormBounds.BridgeLitG
-public import Formalism.SharpRestriction.CuspSpanNormBounds.DiscreteSeriesWeylDimension
+public import Formalism.LocalToGlobal.SiegelLatticeTheory.CasimirReductionTheory.OneParameterDerivatives.Bundle0001
+public import Formalism.SharpRestriction.CuspSpanNormBounds.Bundle0017
+public import Formalism.SharpRestriction.CuspSpanNormBounds.Bundle0016
 public import Formalism.HermitianCurvature.BesselNonvanishingReduction
 public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.FormalDegree.CoefLoc
 public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.LaplaceOperators.BesselVectors.Closed
 public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.LaplaceOperators.BesselVectors.DecLow
 public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.DiscreteSeriesExistence.FinalClosed
-public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.HighestWeights.HWExists
+public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.HighestWeights.Bundle0006
 
 @[expose] public section
 

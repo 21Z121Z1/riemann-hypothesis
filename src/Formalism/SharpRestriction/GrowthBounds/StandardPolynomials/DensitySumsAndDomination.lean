@@ -1,9 +1,9 @@
 module
 
-public import Formalism.SharpRestriction.GrowthBounds.StandardPolynomials.RestSegCore
+public import Formalism.SharpRestriction.GrowthBounds.StandardPolynomials.Bundle0002
 public import Formalism.SharpRestriction.GrowthBounds.StandardPolynomials.RecursionWithDensities
-public import Formalism.SharpRestriction.GrowthBounds.StandardPolynomials.LatticeLeSpanPsiImage
-public import Formalism.SharpRestriction.GrowthBounds.CoarseMultiplicity.DivDerZero
+public import Formalism.SharpRestriction.GrowthBounds.StandardPolynomials.Bundle0001
+public import Formalism.SharpRestriction.GrowthBounds.CoarseMultiplicity.Bundle0008
 
 @[expose] public section
 

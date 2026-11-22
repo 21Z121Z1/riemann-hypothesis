@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.StatementsSegreFlagCutProjection
+public import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.Bundle0055
 
 @[expose] public section
 

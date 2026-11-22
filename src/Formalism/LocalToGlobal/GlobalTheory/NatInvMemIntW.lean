@@ -1,7 +1,7 @@
 module
 
 public import Formalism.LocalToGlobal.GlobalTheory.ColValOfTiedSOfFin
-public import Formalism.LocalToGlobal.GlobalTheory.ColMemOfIsLocBasis
+public import Formalism.LocalToGlobal.GlobalTheory.Bundle0005
 
 @[expose] public section
 

@@ -1,6 +1,6 @@
 module
 
-public import Formalism.LocalToGlobal.GlobalTheory.IrreducibleOfCountSizes
+public import Formalism.LocalToGlobal.GlobalTheory.Bundle0004
 public import Formalism.PadicSubsetSums.StableGradedCounts.PropertyWOfEstimates
 public import Formalism.PadicSubsetSums.StableGradedCounts.LocalEstimateIVOfTypeSetWeight
 

@@ -5,7 +5,7 @@ public import Development.AbelianVarietyTheory.Definitions.Foundations.NormSumPa
 public import Formalism.PairingDivisors.StatementH
 public import Formalism.LocalRingCardinality.RankBoundMonotoneInDimension
 public import Formalism.FrobeniusOrbits.FrobeniusOrbitsProofs.Principal
-public import Formalism.SharpRestriction.RamificationFrobenius.TotientGaloisClasses.InertiaGaloisSymmetry.KcDiffSmulMem
+public import Formalism.SharpRestriction.RamificationFrobenius.TotientGaloisClasses.InertiaGaloisSymmetry.Bundle0001
 
 @[expose] public section
 

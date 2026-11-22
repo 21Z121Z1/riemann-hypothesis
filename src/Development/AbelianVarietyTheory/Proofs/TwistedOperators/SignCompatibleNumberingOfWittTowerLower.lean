@@ -4,7 +4,7 @@ public import Mathlib
 public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.L2UnitaryRepresentationData
 public import Development.AbelianVarietyTheory.Proofs.HeightProofs.IsFundamentalDomainOfHaar
 public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.HasSignatureFromBlocks
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.FrameExistsSignCompat
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0160
 public import Development.AbelianVarietyTheory.Proofs.HeightProofs.IsTopologicalRingAE
 
 @[expose] public section

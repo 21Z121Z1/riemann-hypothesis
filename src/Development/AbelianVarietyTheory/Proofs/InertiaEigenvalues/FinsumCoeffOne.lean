@@ -2,9 +2,9 @@ module
 
 public import Mathlib
 public import Formalism.LocalRingCardinality.AdicCompletionLocal.LocTied
-public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.ConvZero
+public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0005
 public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.PeriodDiscExtensionTateElement
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SeriesTransport
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0177
 
 @[expose] public section
 

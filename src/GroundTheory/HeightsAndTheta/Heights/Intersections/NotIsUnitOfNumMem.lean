@@ -1,10 +1,10 @@
 module
 
 public import Mathlib
-public import GroundTheory.HeightsAndTheta.Heights.Intersections.ImportsTerRest
-public import GroundTheory.HeightsAndTheta.Heights.Intersections.AvoidRing
-public import GroundTheory.HeightsAndTheta.Heights.Intersections.ArithVarZero
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.InterDivSupp
+public import GroundTheory.HeightsAndTheta.Heights.Intersections.Bundle0013
+public import GroundTheory.HeightsAndTheta.Heights.Intersections.Bundle0004
+public import GroundTheory.HeightsAndTheta.Heights.Intersections.Bundle0017
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.Bundle0017
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArithmeticIntersection.MultihomogeneousIdeals.CurvePt
 
 @[expose] public section

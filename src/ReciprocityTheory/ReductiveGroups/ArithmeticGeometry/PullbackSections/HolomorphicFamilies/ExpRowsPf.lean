@@ -1,9 +1,9 @@
 module
 
-public import Formalism.LocalToGlobal.ProjectiveLattices.CuspFree
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0011
 public import Formalism.LocalToGlobal.ProjectiveLattices.IntegrableOnIntegrand
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PullbackSections.HolomorphicFamilies.HolJetF
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PullbackSections.HolomorphicFamilies.AnChartX
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PullbackSections.HolomorphicFamilies.Bundle0006
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PullbackSections.HolomorphicFamilies.Bundle0008
 
 @[expose] public section
 

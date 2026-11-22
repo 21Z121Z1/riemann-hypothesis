@@ -1,7 +1,7 @@
 module
 
 public import Formalism.ThetaLogCoordinates.ProductIdealMonotone.ElementarySymmetricExpBound
-public import Formalism.SubspaceCounting.SubspaceCountingProofs.ManyOrbits
+public import Formalism.SubspaceCounting.SubspaceCountingProofs.Bundle0002
 public import Mathlib
 
 @[expose] public section

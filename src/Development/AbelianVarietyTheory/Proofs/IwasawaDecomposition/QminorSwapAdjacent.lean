@@ -2,9 +2,9 @@ module
 
 public import Mathlib
 public import Formalism.LocalToGlobal.UnitaryNorms.IsUnitaryNormOf
-public import Formalism.RealPlaceAnalysis.ThirdArithmeticHolds
-public import Development.AbelianVarietyTheory.Definitions.Foundations.SmoothPartStable
-public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.TwConj
+public import Formalism.RealPlaceAnalysis.Bundle0004
+public import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0002
+public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0001
 
 @[expose] public section
 

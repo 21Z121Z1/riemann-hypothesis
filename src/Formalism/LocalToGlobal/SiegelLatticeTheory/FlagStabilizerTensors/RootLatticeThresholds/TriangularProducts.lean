@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Formalism.SharpRestriction.CuspSpanNormBounds.RootMeasBig
+public import Formalism.SharpRestriction.CuspSpanNormBounds.Bundle0002
 
 @[expose] public section
 

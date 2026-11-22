@@ -1,11 +1,11 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.ThetaValues.LeCovCoeff
-public import Formalism.LocalToGlobal.ProjectiveLattices.ThClassPinsRec
-public import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.MemOfForallLocP
-public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.TensorMapDescent
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PullbackSections.FFVMap
+public import Development.AbelianVarietyTheory.Definitions.ThetaValues.Bundle0002
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0028
+public import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.Bundle0042
+public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0053
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PullbackSections.Bundle0002
 
 @[expose] public section
 

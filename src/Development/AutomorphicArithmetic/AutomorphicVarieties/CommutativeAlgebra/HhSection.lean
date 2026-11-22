@@ -1,7 +1,7 @@
 module
 
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.CommutativeAlgebra.FramedTwoCoboundaries
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.CommutativeAlgebra.ContSection
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.CommutativeAlgebra.Bundle0005
 
 @[expose] public section
 

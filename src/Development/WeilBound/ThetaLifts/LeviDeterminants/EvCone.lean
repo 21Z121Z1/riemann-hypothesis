@@ -1,7 +1,7 @@
 module
 
 public import Development.WeilBound.ThetaLifts.LeviDeterminants.EvAdel
-public import Development.WeilBound.ThetaLifts.LeviDeterminants.SchwartzDq
+public import Development.WeilBound.ThetaLifts.LeviDeterminants.Bundle0002
 public import Development.WeilBound.ThetaLifts.LeviDeterminants.MixedModels.AdelicEstimatesHolds
 
 @[expose] public section

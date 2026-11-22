@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.OrderedCechToCatCochainsOneApplyValueAtSubset
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0422
 public import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.ArchimedeanGelfandKernels.LeftEquivariantFunctions.ComplexMatrixCalculus.DeterminantPowerSmoothness.DetPowSmooth
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LowIrreducibleKStable
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1076
 
 @[expose] public section
 

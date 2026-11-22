@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Formalism.SatakeDualWeyl.StatementC
+public import Formalism.SatakeDualWeyl.Bundle0001
 public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LevelProductIndex.Development
 
 @[expose] public section

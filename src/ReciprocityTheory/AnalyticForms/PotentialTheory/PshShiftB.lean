@@ -1,7 +1,7 @@
 module
 
-public import ReciprocityTheory.AnalyticForms.PotentialTheory.IsPotentialPullbackStatement
-public import ReciprocityTheory.AnalyticForms.PotentialTheory.PshShiftA
+public import ReciprocityTheory.AnalyticForms.PotentialTheory.Bundle0002
+public import ReciprocityTheory.AnalyticForms.PotentialTheory.Bundle0001
 
 @[expose] public section
 

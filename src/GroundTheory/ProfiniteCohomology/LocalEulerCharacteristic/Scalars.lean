@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import GroundTheory.ProfiniteCohomology.LocalEulerCharacteristic.ConjAction
+public import GroundTheory.ProfiniteCohomology.LocalEulerCharacteristic.Bundle0003
 
 @[expose] public section
 

@@ -1,6 +1,6 @@
 module
 
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CongruenceSubgroupIndicatorWeight
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2049
 
 @[expose] public section
 

@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.BlockTheory.GlobalSignature.InvariantRadonFibre
-public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.ExistsBruhatFunctionClosedSubgroup
-public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.ExistsUniqueHaarOfInvariantRadonOnCosets
+public import Development.AbelianVarietyTheory.BlockTheory.GlobalSignature.Bundle0001
+public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0011
+public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0012
 
 @[expose] public section
 

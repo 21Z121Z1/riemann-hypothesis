@@ -3,10 +3,10 @@ module
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.IsRealFam
 public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.IsCombAt
-public import Development.AbelianVarietyTheory.Definitions.Divisors.DiscreteSeriesHermitianUnique
-public import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.CuspAlongSmoothRows
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.QEqColPer
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.FlatBFSource
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0041
+public import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.Bundle0015
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0665
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0558
 
 @[expose] public section
 
@@ -67,9 +67,9 @@ theorem handAt_contAut (j σ : ℕ) (hj : j + 2 * (σ + 1) + 2 = D.R.m) (Φ : Sc
   let s₂ : GlobalTheory.Unf.StepFB W.ψ J B' :=
     stepAt G W t hM (j + 1) (by omega) (rowJac G (j + 1) (by omega) (σ + 1) (by omega)) (besDecAt G (j + 1 + 1) σ (by omega))
   have t₁ : IsThetaFunO W.ψ B.V₀ J.W₀ (GlobalTheory.Unf.flatBF s₁ (s₁.om (g, h₁) (Φ ⟨j, by omega⟩))) :=
-    (GlobalTheory.Unf.FlatTheta.flat_isThetaFun D (GlobalTheory.T.flatThetaMaps_converge_thetaFunctions D) W.ψ).1 _ B J s₁ _ (s₁.weil.om_pres (g, h₁) _ (hΦ ⟨j, by omega⟩))
+    (GlobalTheory.Unf.FlatTheta.flat_isThetaFun D (_root_.GlobalTheory.Unf.Flat.flatLaw D) W.ψ).1 _ B J s₁ _ (s₁.weil.om_pres (g, h₁) _ (hΦ ⟨j, by omega⟩))
   have t₂ : IsThetaFunO W.ψ J.W₀ B'.V₀ (GlobalTheory.Unf.flatFB s₂ (s₂.om (h₁, h₂) (Φ ⟨j + 1, by omega⟩))) :=
-    (GlobalTheory.Unf.FlatTheta.flat_isThetaFun D (GlobalTheory.T.flatThetaMaps_converge_thetaFunctions D) W.ψ).2 _ J B' s₂ _
+    (GlobalTheory.Unf.FlatTheta.flat_isThetaFun D (_root_.GlobalTheory.Unf.Flat.flatLaw D) W.ψ).2 _ J B' s₂ _
       (s₂.weil.om_pres (h₁, h₂) _ (hΦ ⟨j + 1, by omega⟩))
   exact GlobalTheory.FinPl.ValDbl.contAut_hand0 s₁ s₂ (linkAt hM j σ hj _ (by omega) (GlobalTheory.Unf.Inhab.nonempty_volN _).some)
     ((GlobalTheory.Unf.Inhab.nonempty_volM D _ _).some) hφ t₁ t₂
@@ -116,7 +116,7 @@ theorem even_second (Φ : SchDown G t) (hΦ : ∀ j, IsThetaFunO W.ψ _ _ (Φ j)
   · have e : ∀ h' : Pts G, conAt W hM Φ h' j = lastDat W hM j hj (GlobalTheory.Unf.Inhab.nonempty_volN _).some (h' j) (Φ ⟨j, by omega⟩)
         (castSch G (show j + 1 + 1 = D.R.m by omega) (Φ ⟨j + 1, by omega⟩)) := fun h' => dif_pos hj
     rw [e, e, Function.update_self]
-    obtain ⟨χz, hzH, hzE, -, -, hodd⟩ := GlobalTheory.T.thetaGrid_lastRow_column_characters_differ G W t
+    obtain ⟨χz, hzH, hzE, -, -, hodd⟩ := _root_.GlobalTheory.RowChars.rowChars G W t
     obtain ⟨hS0, hT0⟩ := hodd j (by omega) (by omega)
     let B := besAt G hM j 0 hj (GlobalTheory.Unf.Inhab.nonempty_volN _).some
     let s := (lastAt G W t hM j hj (GlobalTheory.Unf.Inhab.nonempty_volN _).some).s
@@ -126,7 +126,7 @@ theorem even_second (Φ : SchDown G t) (hΦ : ∀ j, IsThetaFunO W.ψ _ _ (Φ j)
       rw [← hS0, ← hT0]; exact s.weil₀
     obtain ⟨omz, homz⟩ := GlobalTheory.WeilDatumExistence.weilDatumExists D (GlobalTheory.SeeSaw.Model.nLine D) (G.V (.top (j + 1))) W.ψ χz
       (G.chrT (.top t j)) W.ψ_std hzH homa.hecT hzE homa.resT
-    have hΞ := (GlobalTheory.Unf.FlatTheta.flat_isThetaFun D (GlobalTheory.T.flatThetaMaps_converge_thetaFunctions D) W.ψ).1 _ B _ s _
+    have hΞ := (GlobalTheory.Unf.FlatTheta.flat_isThetaFun D (_root_.GlobalTheory.Unf.Flat.flatLaw D) W.ψ).1 _ B _ s _
       (s.weil.om_pres (h j, 1) _ (hΦ ⟨j, by omega⟩))
     have k := GlobalTheory.BesMove.flatBF_bes (B := B) s (hΦ ⟨j, by omega⟩) hn a (h j) 1
     have k' := GlobalTheory.BesMove.biLift_last B.o (topOrthAt G (show D.R.m = j + 1 + 1 by omega)) lastTau hom₁ homa homz

@@ -1,16 +1,16 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.DropPlInsert
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.UnramifiedLocalPairActsOnVacuaByHeisenbergComb
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.HoweUnramifiedAllVacua
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExistsUnramifiedLocalPairOfInertWeilDatum
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0654
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0154
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0158
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0156
 public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.HyperspecialFixesAllChainVacuaAtInertPrime
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.SplittingCharactersUnramifiedOffLevels
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.LevelOperatorsAtPrimeOffLevelDatum
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ThetaVacuumHeckeIdentitySplitPlace
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.FockVectorsChainIsVacuumOffThetaLevels
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HyperspecialFixesVacuaGoodInertPlace
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0152
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0141
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0137
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0157
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1393
 
 @[expose] public section
 
@@ -419,8 +419,8 @@ theorem step_inert : GlobalTheory.Hk3.HoweUnram → ∀ (D : D7) (G : Type) [Gro
     exact congrArg HeightOneSpectrum.asIdeal h1.symm
   have hV : (Vc D i).rank = D.R.r + D.R.t := D.sp.V_rank _ (Nat.le_add_left _ _) i.2
   have hWr : (Wc D i).rank = D.R.r := D.sp.W_rank _ (Nat.le_add_left _ _) i.2
-  have unr := GlobalTheory.FixAllGood.unrPl_chrTh ((GlobalTheory.T.splittingCharacters_unramified_offLevels R F hC.lev t P hgood).2 ((i : ℕ) + 1) (by omega) i.2)
-      (GlobalTheory.T.splittingCharacters_unramified_offLevels R F hC.lev t P hgood).1
+  have unr := GlobalTheory.FixAllGood.unrPl_chrTh ((_root_.GlobalTheory.UnrOffLevels.unrPl_of_good R F hC.lev t P hgood).2 ((i : ℕ) + 1) (by omega) i.2)
+      (_root_.GlobalTheory.UnrOffLevels.unrPl_of_good R F hC.lev t P hgood).1
   have hr : Odd D.R.r := GlobalTheory.VacFixInert.r_odd
   have ht : Odd D.R.t := D.R.t_odd
   have hfx : VacFix R.ψ (R.ωP i t) P :=

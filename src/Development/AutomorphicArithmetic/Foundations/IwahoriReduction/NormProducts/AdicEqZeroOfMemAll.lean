@@ -1,7 +1,7 @@
 module
 
-public import Development.AbelianVarietyTheory.Definitions.Foundations.ShCocOn
-public import Development.AbelianVarietyTheory.Definitions.Foundations.Letter
+public import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0001
+public import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0004
 
 @[expose] public section
 

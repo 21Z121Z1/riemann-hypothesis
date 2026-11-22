@@ -3,8 +3,8 @@ module
 public import Mathlib
 public import Formalism.DegreeFormula.FlagDegFormula
 public import Formalism.DegreeFormula.PointDegree.PowSum
-public import Formalism.DegreeFormula.PointDegree.PermExpInj
-public import Development.AbelianVarietyTheory.Definitions.Foundations.CurveCl
+public import Formalism.DegreeFormula.PointDegree.Bundle0001
+public import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0003
 public import Development.AutomorphicSpectrum.Definitions.DivisibilityTowers.CompactGapsGE
 
 @[expose] public section

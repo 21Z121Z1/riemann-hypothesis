@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.BlockAnti
-public import Formalism.FormalDegreeBessel.FinalG
-public import Formalism.FlagUnipotentLattices.CardSubgroupsOfIndexLe
+public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.Bundle0009
+public import Formalism.FormalDegreeBessel.Bundle0002
+public import Formalism.FlagUnipotentLattices.Bundle0004
 
 @[expose] public section
 

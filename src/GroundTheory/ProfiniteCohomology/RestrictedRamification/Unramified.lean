@@ -2,8 +2,7 @@ module
 
 public import Mathlib
 public import GroundTheory.ProfiniteCohomology.GaloisModules.FixedField
-public import GroundTheory.ProfiniteCohomology.RestrictedRamification.MaxUnramifiedOutside
-public import GroundTheory.ProfiniteCohomology.RestrictedRamification.Ramification
+public import GroundTheory.ProfiniteCohomology.RestrictedRamification.Bundle0001
 
 @[expose] public section
 

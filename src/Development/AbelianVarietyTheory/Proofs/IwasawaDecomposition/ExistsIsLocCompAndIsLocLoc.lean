@@ -2,12 +2,11 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.ExpoConjOfIsCsd
-public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.ExistsSpanFormsNeBot
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.CapCommuteRtInfGL
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.CommuteCapOfCommuteEop
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.HasInfCharInfCharOfCommute
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.EquivOfISupRange
-public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.ExistsIsOpenIsCompact
+public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.Bundle0005
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0111
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0113
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0112
+public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.Bundle0057
 public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.NonemptyEquivOfRangeEq
 
 @[expose] public section

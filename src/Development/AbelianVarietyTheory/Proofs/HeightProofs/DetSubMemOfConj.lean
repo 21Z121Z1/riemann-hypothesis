@@ -2,8 +2,8 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.ExistenceOfLattices.Hat1
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.AdelicCompletionFractionalIdealProperties
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.AdelicCompletionRationalPointsAndApproximation
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0005
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0017
 
 @[expose] public section
 

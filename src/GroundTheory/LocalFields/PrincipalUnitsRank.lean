@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import GroundTheory.LocalFields.PadicLogLinear
+public import GroundTheory.LocalFields.Bundle0011
 public import GroundTheory.LocalFields.Integers
 
 @[expose] public section

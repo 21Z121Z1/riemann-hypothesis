@@ -2,7 +2,7 @@ module
 
 public import Formalism.LocalToGlobal.PairingIndexBounds.SplitPairEquations.IntegralSquareRoots.HenselQuad
 public import Formalism.LocalToGlobal.KernelLattices.ColumnData.ColumnDataEquations.JFinal
-public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.StarSqrtNeg
+public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0081
 
 @[expose] public section
 

@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.StrongApproximation.EichPreserves
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.StrongApproximation.Bundle0002
 
 @[expose] public section
 

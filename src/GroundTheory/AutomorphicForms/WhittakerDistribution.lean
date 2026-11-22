@@ -5,7 +5,7 @@ public import GroundTheory.AutomorphicForms.WhittakerLSpace
 public import GroundTheory.AutomorphicForms.WhittakerOrbit
 public import GroundTheory.AutomorphicForms.WhittakerGroups
 public import GroundTheory.AutomorphicForms.WhittakerCells
-public import GroundTheory.AutomorphicForms.WhittakerRelevance
+public import GroundTheory.AutomorphicForms.Bundle0005
 
 @[expose] public section
 

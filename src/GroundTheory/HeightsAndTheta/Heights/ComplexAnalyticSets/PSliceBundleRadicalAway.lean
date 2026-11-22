@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StSliceBundleRadicalAway
+public import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.Bundle0073
 
 @[expose] public section
 

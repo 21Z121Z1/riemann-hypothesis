@@ -1,6 +1,6 @@
 module
 
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.FdegOfSchur
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0121
 public import Formalism.HermitianCurvature.HermitianCurvatureProofs.LUFactorOrbitBounds
 public import Formalism.SharpRestriction.CuspSpanNormBounds.BridgeLemma3
 public import Formalism.SharpRestriction.CuspSpanNormBounds.BridgeCSB

@@ -2,8 +2,8 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.CharacterValueAtT
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ValLocCharUnit
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.AbsNormEqOfSplitFactor
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0160
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0155
 
 @[expose] public section
 

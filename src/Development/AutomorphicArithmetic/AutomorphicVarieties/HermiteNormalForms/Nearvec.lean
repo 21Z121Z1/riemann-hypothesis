@@ -1,9 +1,9 @@
 module
 
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.HermiteNormalForms.SmulNeZeroLat
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.HermiteNormalForms.Scinv
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.HermiteNormalForms.Bundle0003
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.HermiteNormalForms.Nearcoord
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.HermiteNormalForms.Cntconj
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.HermiteNormalForms.Bundle0002
 
 @[expose] public section
 

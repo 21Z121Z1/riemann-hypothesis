@@ -3,11 +3,11 @@ module
 public import Mathlib
 public import Development.AbelianVarietyTheory.Proofs.TorusSplitting.ExistsCuspFormFourClausesExplicitConstant
 public import Development.AbelianVarietyTheory.Definitions.TorusSections.IsTorusOf
-public import Formalism.LocalToGlobal.ProjectiveLattices.EtArch
-public import Formalism.LocalToGlobal.ProjectiveLattices.FreeBridge
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0035
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0024
 public import Formalism.LocalToGlobal.ProjectiveLattices.HostSize
 public import Formalism.LocalToGlobal.ProjectiveLattices.CompHt
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PullbackSections.SupBoundPageRows
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PullbackSections.Bundle0003
 
 @[expose] public section
 

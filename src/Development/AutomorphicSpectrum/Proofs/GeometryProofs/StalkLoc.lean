@@ -2,10 +2,13 @@ module
 
 public import Mathlib
 public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.HodgeTateWeilOpenChart
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.GenMapFromSpecStalk
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.SectionExtendsFromStalkPullbackStatement
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.TorsionLiftIsClosedImmersionStatement
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.SectionEqZeroOfValuesStatement
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0025
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0011
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0015
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.ExistsUnitFormLocalizationEtaleNbhd
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0023
+public import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.Bundle0001
+public import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.Bundle0002
 
 @[expose] public section
 
@@ -97,7 +100,7 @@ theorem lift_sec {X : Scheme.{0}} (G : Over X) [GrpObj G] [IsSeparated G.hom] {R
       ∀ {B : Type} [CommRing B] (y : Spec (CommRingCat.of B) ⟶ Γ.G.left)
         (b : Spec (CommRingCat.of B) ⟶ Spec (X.presheaf.stalk q)), y ≫ Γ.G.hom = b ≫ a →
         ∀ hy : ⊤ ≤ (y ≫ i) ⁻¹ᵁ W, valAt (y ≫ i) W hy f = valAt y ⊤ le_top s := by
-  haveI := GlobalTheory.T.torsion_lift_is_closed_immersion G R T Γ x N i h
+  haveI := _root_.GlobalTheory.CompanionTheory.Ar.BT.isClosedImmersion_torsion_lift G R T Γ x N i h
   let c : pullback Γ.G.hom a ⟶ pullback G.hom (X.fromSpecStalk q) :=
     pullback.lift (pullback.fst _ _ ≫ i) (pullback.snd _ _) (by
       rw [Category.assoc, h.isOver, ← ha, pullback.condition_assoc])
@@ -120,7 +123,7 @@ theorem lift_sec {X : Scheme.{0}} (G : Over X) [GrpObj G] [IsSeparated G.hom] {R
       rw [Over.w]
       rfl
     exact e
-  obtain ⟨W, f, hW, hf⟩ := GlobalTheory.T.section_extends_from_stalk_pullback G.hom q _ hover c (((pullback.fst Γ.G.hom a).app ⊤).hom s)
+  obtain ⟨W, f, hW, hf⟩ := _root_.GlobalTheory.CompanionTheory.Ggeo.LocalLift.exists_open_extension G.hom q _ hover c (((pullback.fst Γ.G.hom a).app ⊤).hom s)
   refine ⟨W, f, hW, fun {B} _ y b hy hyW => ?_⟩
   let y' : Spec (CommRingCat.of B) ⟶ pullback Γ.G.hom a := pullback.lift y b hy
   have e1 : y ≫ i = y' ≫ c ≫ pullback.fst _ _ := by
@@ -131,7 +134,7 @@ theorem lift_sec {X : Scheme.{0}} (G : Over X) [GrpObj G] [IsSeparated G.hom] {R
   refine (congrArg (valAt y' _ _) hf).trans ?_
   exact valAt_res y' _ ⊤ le_top _ le_top _
 
-theorem exists_denom (h455 : type_of% @GlobalTheory.T.lie_model_finite_base_change) {X : Scheme.{0}} (G : Over X) [GrpObj G] [IsCommMonObj G] [Smooth G.hom]
+theorem exists_denom (h455 : type_of% @_root_.GlobalTheory.CompanionTheory.Ar.LieProj.lie_finite_projective_baseChange) {X : Scheme.{0}} (G : Over X) [GrpObj G] [IsCommMonObj G] [Smooth G.hom]
     {R O : Type} [CommRing R] [CommRing O] [Algebra R O] (S : Submonoid R) [IsLocalization S O]
     (x : Spec (CommRingCat.of R) ⟶ X) {L₀ : Type} [AddCommGroup L₀] [Module R L₀] (M₀ : LieModel G x L₀)
     {z : Spec (CommRingCat.of O) ⟶ X} (hz : Spec.map (CommRingCat.ofHom (algebraMap R O)) ≫ x = z)
@@ -180,7 +183,7 @@ theorem exists_denom (h455 : type_of% @GlobalTheory.T.lie_model_finite_base_chan
   rw [← h1, ← hjl]
   congr 3
 
-theorem core_tan (h455 : type_of% @GlobalTheory.T.lie_model_finite_base_change) {X : Scheme.{0}} {Ω : Type} [Field Ω] {ξ : Spec (CommRingCat.of Ω) ⟶ X} {G : Over X} [GrpObj G]
+theorem core_tan (h455 : type_of% @_root_.GlobalTheory.CompanionTheory.Ar.LieProj.lie_finite_projective_baseChange) {X : Scheme.{0}} {Ω : Type} [Field Ω] {ξ : Spec (CommRingCat.of Ω) ⟶ X} {G : Over X} [GrpObj G]
     [IsCommMonObj G] [Smooth G.hom] {E : Type} [AddCommGroup E] [Module Ω E]
     (M : LieModel G ξ E) {R O : Type} [CommRing R] [IsDomain R] [CommRing O] [Algebra R O]
     (S : Submonoid R) [IsLocalization S O] {T : Type} [CommGroup T] (Γ : BT.QFGroup R T)

@@ -3,7 +3,7 @@ module
 public import Mathlib
 public import Formalism.SharpRestriction.Divisibility.OrbitPlaces
 public import Formalism.LocalRingCardinality.CoeNeZeroOfNotMem
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.CapLeWidth
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0079
 
 @[expose] public section
 

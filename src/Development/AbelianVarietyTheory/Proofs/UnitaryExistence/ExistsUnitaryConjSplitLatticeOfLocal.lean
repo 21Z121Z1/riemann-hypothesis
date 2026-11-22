@@ -1,11 +1,10 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.AdelicHermitianForms.IsHermHyperbolic
-public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.UnitaryTransvectionSubmonoidAdjustIntegralAway
-public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.UnitaryEqQuasiReflectionMulTransvections
-public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.UnitaryTransvectionSubmonoidNormalDetOne
-public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.TransvectionIdentitiesUnitary
+public import Development.AbelianVarietyTheory.Definitions.AdelicHermitianForms.Bundle0001
+public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.Bundle0030
+public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.Bundle0041
+public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.Bundle0018
 
 @[expose] public section
 

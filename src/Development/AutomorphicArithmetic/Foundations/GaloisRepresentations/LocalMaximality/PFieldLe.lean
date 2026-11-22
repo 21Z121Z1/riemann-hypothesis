@@ -2,9 +2,9 @@ module
 
 public import Mathlib
 public import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.LocalMaximality.ResidueOfTraceIsFiberSum
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.KahlerFormsOverSubalgebraClosurePropertiesStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsLaurentConstantTermFormFunctionFieldStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsTopDegreeCoefficientFormAndEqOnTopFormsStatement
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0388
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0378
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0380
 
 @[expose] public section
 

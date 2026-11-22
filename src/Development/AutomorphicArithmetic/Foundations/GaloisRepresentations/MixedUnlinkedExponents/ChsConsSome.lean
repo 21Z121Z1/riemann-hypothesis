@@ -1,7 +1,7 @@
 module
 
 public import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.MixedUnlinkedExponents.GamMixedOf
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.PlainTorExistsChars
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0241
 
 @[expose] public section
 

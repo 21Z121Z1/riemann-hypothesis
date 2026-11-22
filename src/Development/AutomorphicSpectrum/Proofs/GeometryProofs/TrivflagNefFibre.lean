@@ -1,11 +1,11 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IntegralClosureHeightEqOneOfLiesOver
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.Bundle0010
 public import Development.AutomorphicSpectrum.Statements.GeometryStatements.IsPolLatticePlane
-public import Development.AutomorphicSpectrum.Statements.AlgebraStatements.HodgeTateNormComparison
+public import Development.AutomorphicSpectrum.Statements.AlgebraStatements.Bundle0003
 public import Development.AutomorphicSpectrum.Definitions.DivisibilityTowers.Birational
-public import Development.WeilBound.CoreStatements.HodgeTatePoints.TrivflagNef
+public import Development.WeilBound.CoreStatements.HodgeTatePoints.Bundle0039
 
 @[expose] public section
 

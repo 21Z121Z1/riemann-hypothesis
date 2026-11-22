@@ -1,10 +1,10 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HasLatticesComplete
-public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.ExistsUniquePairsToTower
-public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.CubeTheorem
-public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.CubWeilOneLeft
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2861
+public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.Bundle0023
+public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.Bundle0010
+public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.Bundle0037
 public import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.WeilIsValueEq
 
 @[expose] public section

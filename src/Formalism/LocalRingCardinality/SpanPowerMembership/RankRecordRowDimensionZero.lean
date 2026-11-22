@@ -1,6 +1,6 @@
 module
 
-public import Formalism.LocalRingCardinality.SpanPowerMembership.GenericMemberLevelNearLower
+public import Formalism.LocalRingCardinality.SpanPowerMembership.Bundle0005
 public import Formalism.LocalRingCardinality.SpanPowerMembership.BaseFormAnisotropicOrthogonalSingle
 
 @[expose] public section

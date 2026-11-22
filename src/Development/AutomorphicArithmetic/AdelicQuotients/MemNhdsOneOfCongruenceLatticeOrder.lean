@@ -1,7 +1,7 @@
 module
 
 public import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.ThetaParseval.BlockDeterminants.BumpLat
-public import Development.WeilBound.ThetaLifts.LatticeBasics.NearUnits
+public import Development.WeilBound.ThetaLifts.LatticeBasics.Bundle0024
 public import Development.WeilBound.CoreStatements.LocalThetaKernels.ExistsSmallSubgroups
 
 @[expose] public section

@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.ExistsUniqueIdeleOfLinearEquivQuotientLocal
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.EqZeroOfForallLeExp
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0012
 
 @[expose] public section
 

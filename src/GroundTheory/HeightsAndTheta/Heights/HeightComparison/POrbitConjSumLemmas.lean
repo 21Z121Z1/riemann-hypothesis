@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import GroundTheory.HeightsAndTheta.Heights.HeightComparison.HeightOrbitConjSum
-public import GroundTheory.HeightsAndTheta.Heights.HeightsOfSets.FieldChange
+public import GroundTheory.HeightsAndTheta.Heights.HeightComparison.Bundle0009
+public import GroundTheory.HeightsAndTheta.Heights.HeightsOfSets.Bundle0002
 
 @[expose] public section
 

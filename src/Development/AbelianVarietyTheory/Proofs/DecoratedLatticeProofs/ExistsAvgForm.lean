@@ -1,12 +1,12 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.ToOneSucc
+public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.Bundle0001
 public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SymmetricPositionsDoubleIntegralExistsUnique
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.FourierJacobiTargetBilinearFormIntegral
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0035
 public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SchwartzBruhatSelfAverageHeisenberg
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.MemFourierJacobiSubgroupIffParabolicMulColumn
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.UnipotentRadicalBasic
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0052
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0028
 public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IntegrableOfMemSB
 
 @[expose] public section

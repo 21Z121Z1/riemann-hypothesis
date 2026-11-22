@@ -4,10 +4,10 @@ public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.Foundations.NormSumPairRankZeroOfCurveCoordNorm
 public import Formalism.PairingDivisors.StatementH
 public import Formalism.SharpRestriction.Divisibility.WeightFamilies
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.LatticeInvariantsPeriodPairDictionary
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsIntegerMapEqHalfOneAddSqrt
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.IdealPeriodLatticeOfCurveDatumStatement
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.OddThetaFunctionExistenceUniquenessStatement
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0226
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0220
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0224
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0230
 
 @[expose] public section
 
@@ -304,8 +304,8 @@ theorem pullbackOrthonormal_normalizedTheta_mem_thetaSpace (D : D7) (hD : admG1 
     (ht : GL3Theta.IsTwoTorsionPointUnkilled D (lamOf D cc δ) t0) {N N' r : ℕ} (b : Fin r → Matrix (Fin N') (Fin N) D.host.E)
     (hb : Orthonormal D b) :
     pullB D (tor0 D cc δ) b (GL3Theta.th0 (lamOf D cc δ) t0) ∈ ThSp D (tor0 D cc δ) (LaB D (tor0 D cc δ) b) := by
-  obtain ⟨hl, -, -, -, hO⟩ := GlobalTheory.T.idealPeriodLattice_of_curveDatum D hD cc δ hc
-  obtain ⟨⟨hdiff, -, -, hG⟩, -⟩ := GlobalTheory.T.oddThetaFunction_existence_uniqueness _ hl
+  obtain ⟨hl, -, -, -, hO⟩ := _root_.GlobalTheory.CurveLattice.lattice_of_curve D hD cc δ hc
+  obtain ⟨⟨hdiff, -, -, hG⟩, -⟩ := _root_.GlobalTheory.OddTheta.sgStar_laws _ hl
   obtain ⟨w₁, w₂, hi, hl⟩ := hl
   obtain ⟨a, ha⟩ := exists_integer_map_eq_w0 D
   have h : ∀ z, z ∈ lamOf D cc δ ↔ z ∈ (⟨w₁, w₂, hi⟩ : PeriodPair).lattice := fun z => by

@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import GroundTheory.AutomorphicForms.GeometricLemmaUnnormalized
+public import GroundTheory.AutomorphicForms.Bundle0021
 public import GroundTheory.AutomorphicForms.GeometricLemmaCharacters
 public import GroundTheory.AutomorphicForms.GeometricLemmaModular
 public import GroundTheory.AutomorphicForms.GeometricLemmaCellChar

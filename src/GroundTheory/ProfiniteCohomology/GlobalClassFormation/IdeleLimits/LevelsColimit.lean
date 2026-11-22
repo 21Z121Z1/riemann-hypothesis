@@ -2,8 +2,8 @@ module
 
 public import Mathlib
 public import GroundTheory.ProfiniteCohomology.GlobalClassFormation.IdeleLimits.Levels
-public import GroundTheory.ProfiniteCohomology.FilteredHomology
-public import GroundTheory.ProfiniteCohomology.Factor
+public import GroundTheory.ProfiniteCohomology.Bundle0001
+public import GroundTheory.ProfiniteCohomology.Bundle0002
 public import GroundTheory.ProfiniteCohomology.InflationRestriction.DegreeOne
 
 @[expose] public section

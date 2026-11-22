@@ -1,18 +1,15 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RigOfOmegaInjectiveOfEqZero
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0362
 public import Development.AbelianVarietyTheory.Definitions.Divisors.PrismaticDieudonnePerfdIff
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BialgebraPullbackTwoConvMulSymmetricCocycleStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsPullbackMulPOfPTorsionInvariantStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CoboundaryTranslationInvariantPTorsionStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MemSymmetricCocyclesOfPullbackMulPStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsExtensionAdditiveFnPDivGroupStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PDivCocycleMemRangeCobOfPullbackMulPStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdditiveFunctionCartierDualTangentBijectiveStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.OmegaBaseChangeBijectiveOfPEqZeroStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdditiveFunctionsFlatBaseChangeBijectiveStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PrimitiveSemilinearLiftBaseChangeBijectiveStatement
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0398
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0436
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0399
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0410
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0504
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0411
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0444
 
 @[expose] public section
 
@@ -162,7 +159,7 @@ theorem extChar_eq_iff (hp : (p : R) = 0) (x : G.VecExt) (b : G.A 1) :
 theorem extChar_bijective (hp : (p : R) = 0) : Function.Bijective (G.extChar hp) := by
   refine ⟨(injective_iff_map_eq_zero _).2 fun x hx => ?_, fun b => ?_⟩
   · obtain ⟨c, B, rfl, h1, -, h3⟩ := (G.extChar_eq_iff hp x 0).1 (congrArg Subtype.val hx)
-    exact (Submodule.Quotient.mk_eq_zero _).2 (T.pDivCocycle_mem_range_cob_of_pullback_mulP G c B h1 h3)
+    exact (Submodule.Quotient.mk_eq_zero _).2 (_root_.GlobalTheory.cocycle_mem_range_cob_of_pullback_mulP G c B h1 h3)
   · obtain ⟨x, hx⟩ := exists_of_cobOne_eq_zero b.2
     exact ⟨x, Subtype.ext ((G.extChar_eq_iff hp x _).2 hx)⟩
 

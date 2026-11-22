@@ -7,7 +7,7 @@ public import Formalism.SharpRestriction.CuspSpanNormBounds.LocalModelPeriodLatt
 public import Formalism.LocalToGlobal.SiegelLatticeTheory.PtEquivApply
 public import Formalism.LocalToGlobal.SiegelLatticeTheory.CokernelGLCounts.CntLocal
 public import Formalism.LocalToGlobal.SiegelLatticeTheory.ClosedLocalOrbits.PairVal
-public import Formalism.LocalToGlobal.SiegelLatticeTheory.ClosedLocalOrbits.Corank
+public import Formalism.LocalToGlobal.SiegelLatticeTheory.ClosedLocalOrbits.Bundle0001
 public import Formalism.LocalRingCardinality.SpanPowerMembership.ExampleLayerExistsGenerators
 
 @[expose] public section

@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Formalism.HarderNarasimhan.Statement
-public import Formalism.HermitianLattices.StatementMaj
+public import Formalism.HermitianLattices.Bundle0002
 
 @[expose] public section
 

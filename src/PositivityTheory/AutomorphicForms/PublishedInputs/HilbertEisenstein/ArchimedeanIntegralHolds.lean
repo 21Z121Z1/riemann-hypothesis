@@ -1,6 +1,6 @@
 module
 
-public import PositivityTheory.AutomorphicForms.PublishedInputs.HilbertEisenstein.ArchInt
+public import PositivityTheory.AutomorphicForms.PublishedInputs.HilbertEisenstein.Bundle0006
 public import GroundTheory.GlobalFields.TateThesis.EulerFactorsArch
 public import GroundTheory.GlobalFields.TateThesis.HeckeCharRayClass
 

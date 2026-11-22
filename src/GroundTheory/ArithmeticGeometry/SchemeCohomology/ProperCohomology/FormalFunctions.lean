@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import GroundTheory.ArithmeticGeometry.SchemeCohomology.ProperCohomology.FormalVanish
-public import GroundTheory.ArithmeticGeometry.SchemeCohomology.ProperCohomology.FormalCompare
+public import GroundTheory.ArithmeticGeometry.SchemeCohomology.ProperCohomology.Bundle0012
 public import GroundTheory.ArithmeticGeometry.SchemeCohomology.ProperCohomology.HasExtInstances
 
 @[expose] public section

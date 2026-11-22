@@ -1,16 +1,15 @@
 module
 
 public import Formalism.AdmissibleDesigns.StatementOneBChangedOfOpen
-public import Formalism.AdmissibleDesigns.HRhoFull
-public import Formalism.AdmissibleDesigns.FirstCharacterIndexNeZero
-public import Formalism.AdmissibleDesigns.PhiWRhoT
+public import Formalism.AdmissibleDesigns.Bundle0017
+public import Formalism.AdmissibleDesigns.Bundle0015
 public import Formalism.AdmissibleDesigns.RowTieInOf
-public import Formalism.SharpRestriction.LevelLetterCocycles.JointConditionsZpowers.BaseLin
-public import Formalism.SharpRestriction.LevelLetterCocycles.JointConditionsZpowers.BlochKatoAnnihilatorAboveL
-public import Development.AutomorphicArithmetic.ResidueCharacters.LenLeTorsion
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.WachHypothesisCrystallineLattices
-public import Formalism.AdmissibleDesigns.AdmG5OfAdm51AdmG5
-public import Formalism.SharpRestriction.LevelLetterCocycles.QpowOfTw
+public import Formalism.SharpRestriction.LevelLetterCocycles.JointConditionsZpowers.Bundle0001
+public import Formalism.SharpRestriction.LevelLetterCocycles.JointConditionsZpowers.Bundle0006
+public import Development.AutomorphicArithmetic.ResidueCharacters.Bundle0005
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0314
+public import Formalism.AdmissibleDesigns.Bundle0001
+public import Formalism.SharpRestriction.LevelLetterCocycles.Bundle0004
 public import Formalism.SharpRestriction.LevelLetterCocycles.WildPro
 
 @[expose] public section

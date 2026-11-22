@@ -1,7 +1,7 @@
 module
 
-public import Development.WeilBound.ThetaLifts.LocalTheory.ArchimedeanBumps.ExistsDensity
-public import GroundTheory.GlobalFields.TateThesis.GaussianComplexFourier
+public import Development.WeilBound.ThetaLifts.LocalTheory.ArchimedeanBumps.Bundle0001
+public import GroundTheory.GlobalFields.TateThesis.Bundle0004
 
 @[expose] public section
 

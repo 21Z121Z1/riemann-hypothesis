@@ -3,8 +3,7 @@ module
 public import Mathlib
 public import GroundTheory.HeightsAndTheta.Heights.FactorialBounds.Statements
 public import GroundTheory.HeightsAndTheta.Heights.FactorialBounds.PTorsionEquidistribution
-public import GroundTheory.HeightsAndTheta.Heights.FactorialBounds.PSupOfOrthonormalSum
-public import GroundTheory.HeightsAndTheta.Heights.FactorialBounds.PSlopeParameterChoice
+public import GroundTheory.HeightsAndTheta.Heights.FactorialBounds.Bundle0001
 
 @[expose] public section
 

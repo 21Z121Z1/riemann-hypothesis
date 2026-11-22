@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import ReciprocityTheory.Automorphisms.InstMainA
+public import ReciprocityTheory.Automorphisms.Bundle0001
 
 @[expose] public section
 

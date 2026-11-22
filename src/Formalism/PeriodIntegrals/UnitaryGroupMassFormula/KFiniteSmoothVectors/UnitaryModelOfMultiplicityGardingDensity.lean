@@ -2,8 +2,7 @@ module
 
 public import Mathlib
 public import Formalism.PeriodIntegrals.UpqRep
-public import Formalism.PeriodIntegrals.KFinSmooth
-public import Formalism.PeriodIntegrals.HCMult
+public import Formalism.PeriodIntegrals.Bundle0011
 
 @[expose] public section
 

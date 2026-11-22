@@ -2,15 +2,13 @@ module
 
 public import Mathlib
 public import Formalism.LocalToGlobal.Divisibility.QLocTied
-public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.HostPins
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsIsUnrM
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsIsNrm
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsAddHaarCompletionIntegralMatricesVolOne
+public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.Bundle0023
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0349
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0348
 public import Development.AbelianVarietyTheory.Definitions.Divisors.T2SpaceGeneralLinearGroup
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsOpenIsCompactParahoricGLCompletionStatement
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.BlockUpperTriangularGLMulDetInvStatement
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ParahoricTypeRCMulInvMemStatement
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ParahoricCharacterMulOfTameStatement
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0359
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0356
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0360
 
 @[expose] public section
 
@@ -26,28 +24,28 @@ variable {F : Type} [Field F] {r c : ℕ}
 theorem bDA_mul {p q : GL (Fin (r + c)) F} (hp : bDA (p : Matrix (Fin (r + c)) (Fin (r + c)) F) = 0)
     (hq : bDA (q : Matrix (Fin (r + c)) (Fin (r + c)) F) = 0) :
     bDA ((p * q : GL (Fin (r + c)) F) : Matrix (Fin (r + c)) (Fin (r + c)) F) = 0 :=
-  (GlobalTheory.T.blockUpperTriangular_GL_mul_det_inv F r c p q hp hq).1
+  (_root_.GlobalTheory.HQStepBlocks.main F r c p q hp hq).1
 
 theorem bAA_mul {p q : GL (Fin (r + c)) F} (hp : bDA (p : Matrix (Fin (r + c)) (Fin (r + c)) F) = 0)
     (hq : bDA (q : Matrix (Fin (r + c)) (Fin (r + c)) F) = 0) :
     bAA ((p * q : GL (Fin (r + c)) F) : Matrix (Fin (r + c)) (Fin (r + c)) F) =
       bAA (p : Matrix (Fin (r + c)) (Fin (r + c)) F) * bAA (q : Matrix (Fin (r + c)) (Fin (r + c)) F) :=
-  (GlobalTheory.T.blockUpperTriangular_GL_mul_det_inv F r c p q hp hq).2.1
+  (_root_.GlobalTheory.HQStepBlocks.main F r c p q hp hq).2.1
 
 theorem bDD_mul {p q : GL (Fin (r + c)) F} (hp : bDA (p : Matrix (Fin (r + c)) (Fin (r + c)) F) = 0)
     (hq : bDA (q : Matrix (Fin (r + c)) (Fin (r + c)) F) = 0) :
     bDD ((p * q : GL (Fin (r + c)) F) : Matrix (Fin (r + c)) (Fin (r + c)) F) =
       bDD (p : Matrix (Fin (r + c)) (Fin (r + c)) F) * bDD (q : Matrix (Fin (r + c)) (Fin (r + c)) F) :=
-  (GlobalTheory.T.blockUpperTriangular_GL_mul_det_inv F r c p q hp hq).2.2.1
+  (_root_.GlobalTheory.HQStepBlocks.main F r c p q hp hq).2.2.1
 
 theorem det_blocks {p : GL (Fin (r + c)) F} (hp : bDA (p : Matrix (Fin (r + c)) (Fin (r + c)) F) = 0) :
     (p : Matrix (Fin (r + c)) (Fin (r + c)) F).det =
       (bAA (p : Matrix (Fin (r + c)) (Fin (r + c)) F)).det * (bDD (p : Matrix (Fin (r + c)) (Fin (r + c)) F)).det :=
-  (GlobalTheory.T.blockUpperTriangular_GL_mul_det_inv F r c p p hp hp).2.2.2.1
+  (_root_.GlobalTheory.HQStepBlocks.main F r c p p hp hp).2.2.2.1
 
 theorem bDA_inv {p : GL (Fin (r + c)) F} (hp : bDA (p : Matrix (Fin (r + c)) (Fin (r + c)) F) = 0) :
     bDA ((p⁻¹ : GL (Fin (r + c)) F) : Matrix (Fin (r + c)) (Fin (r + c)) F) = 0 :=
-  (GlobalTheory.T.blockUpperTriangular_GL_mul_det_inv F r c p p hp hp).2.2.2.2
+  (_root_.GlobalTheory.HQStepBlocks.main F r c p p hp hp).2.2.2.2
 
 theorem detA_ne {p : GL (Fin (r + c)) F} (hp : bDA (p : Matrix (Fin (r + c)) (Fin (r + c)) F) = 0) :
     (bAA (p : Matrix (Fin (r + c)) (Fin (r + c)) F)).det ≠ 0 := fun h =>
@@ -325,8 +323,8 @@ theorem exists_typeVec (P : HeightOneSpectrum (𝓞 L)) (δ : (P.adicCompletion 
     ∃ f ∈ typeSp (OP P) (piP P : P.adicCompletion L) nrm δ r c ρ, ∃ U : Set (GL (Fin (r + c)) (P.adicCompletion L)),
       IsOpen U ∧ parJ (OP P) (piP P : P.adicCompletion L) r c ⊆ U ∧
       ∀ k ∈ GLint (OP P) (r + c), ‖f k‖ = U.indicator 1 k := by
-  have hgrp := GlobalTheory.T.parahoricTypeRC_mul_inv_mem (P.adicCompletion L) (OP P) (piP P : P.adicCompletion L) (piP_mem P) r c
-  have hlam := GlobalTheory.T.parahoricCharacter_mul_of_tame L P δ hδ r c
+  have hgrp := _root_.GlobalTheory.ParGroup.parJ_mul_inv (P.adicCompletion L) (OP P) (piP P : P.adicCompletion L) (piP_mem P) r c
+  have hlam := _root_.GlobalTheory.Mem.LamMul.lamJ_mul L P δ hδ r c
   have hfix : ∀ q : GL (Fin (r + c)) (P.adicCompletion L), q ∈ parJ (OP P) (piP P : P.adicCompletion L) r c →
       bDA (q : Matrix (Fin (r + c)) (Fin (r + c)) (P.adicCompletion L)) = 0 →
       ρ (levA q, levD q) v₀ = v₀ ∧ chiP nrm δ q = lamJ δ q := by
@@ -342,7 +340,7 @@ theorem exists_typeVec (P : HeightOneSpectrum (𝓞 L)) (δ : (P.adicCompletion 
   refine ⟨fvec (OP P) (piP P : P.adicCompletion L) nrm δ ρ v₀, fvec_mem hgrp hlam hfix,
     PJset (OP P) (piP P : P.adicCompletion L) r c, ?_, fun k hk => ⟨1, bDA_one, k, hk, (one_mul k).symm⟩,
     fun k hk => ?_⟩
-  · have ho := (GlobalTheory.T.isOpen_isCompact_parahoric_GL_completion L P r c).1
+  · have ho := (_root_.GlobalTheory.ParahoricTopo.isOpen_isCompact_parJ L P r c).1
     have e : PJset (OP P) (piP P : P.adicCompletion L) r c = ⋃ p : {p : GL (Fin (r + c)) (P.adicCompletion L) //
         bDA (p : Matrix (Fin (r + c)) (Fin (r + c)) (P.adicCompletion L)) = 0},
         (fun g => p.1 * g) '' parJ (OP P) (piP P : P.adicCompletion L) r c := by
@@ -423,7 +421,7 @@ theorem exists_haar_parJ (P : HeightOneSpectrum (𝓞 L)) (r c : ℕ) :
   letI : MeasurableSpace (P.adicCompletion L) := borel _
   letI := GlobalTheory.LocalData.complRel P
   haveI := GlobalTheory.LocalData.isLocalField P
-  obtain ⟨ho, hc⟩ := GlobalTheory.T.isOpen_isCompact_parahoric_GL_completion L P r c
+  obtain ⟨ho, hc⟩ := _root_.GlobalTheory.ParahoricTopo.isOpen_isCompact_parJ L P r c
   let K₀ : TopologicalSpace.PositiveCompacts (GL (Fin (r + c)) (P.adicCompletion L)) :=
     ⟨⟨_, hc⟩, by
       rw [ho.interior_eq]

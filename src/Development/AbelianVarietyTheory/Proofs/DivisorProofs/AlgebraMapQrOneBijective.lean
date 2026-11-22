@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FormGroupToPadicPointsDegreeOneEqUnitaryPoints
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0917
 
 @[expose] public section
 

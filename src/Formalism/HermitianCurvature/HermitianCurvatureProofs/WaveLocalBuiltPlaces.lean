@@ -1,6 +1,6 @@
 module
 
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.BlockKWave
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0206
 
 @[expose] public section
 

@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SchwartzVanishingDecomposition
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0107
 
 @[expose] public section
 

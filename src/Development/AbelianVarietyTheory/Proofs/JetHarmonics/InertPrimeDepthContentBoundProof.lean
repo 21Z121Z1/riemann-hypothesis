@@ -2,11 +2,14 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.Jets.DepthNumbersThresholdEq
-public import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.OddLevelBlockBoundAttainedStatement
-public import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.LevelsUsedBalancedValueOrbitSumsStatement
-public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.FlowProgrammeBoundsAndLowLevelOptimumStatement
-public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.ExistsGoodIntegerPlanLowLevelsBoundStatement
-public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.InertPrimeValueLePlanBlocksStatement
+public import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.Bundle0068
+public import Formalism.LocalToGlobal.CharacterGerms.Bundle0018
+public import Formalism.LocalToGlobal.CharacterGerms.Bundle0005
+public import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.Bundle0043
+public import Formalism.LocalToGlobal.CharacterGerms.Bundle0017
+public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0056
+public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0059
+public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.InertPrimeValueLePlanBlocks
 
 @[expose] public section
 
@@ -101,7 +104,7 @@ theorem orbit (l d : ℕ) [NeZero d] (hl : 5 ≤ l) (m k : ℕ) (hmk : m + 3 ≤
   have hth : 0 ≤ thl k l := by
     rw [(GlobalTheory.T.levelsUsed_balancedValue_orbitSums.1 k l (by omega) (by omega)).2.2.2]; positivity
   have hθ1 : 0 ≤ 1 - θ := by linarith [hθ.2]
-  obtain ⟨p, h1, h2, h3⟩ := GlobalTheory.T.exists_goodIntegerPlan_low_levels_bound l d hl (k - 1) m k (S0 l (i0 k l) (k - 1)) (by omega) (by omega) W
+  obtain ⟨p, h1, h2, h3⟩ := _root_.GlobalTheory.GoodPlan.exists_plan l d hl (k - 1) m k (S0 l (i0 k l) (k - 1)) (by omega) (by omega) W
     (fun a => (1 - θ) * w a / T) Good
     (fun a => ⟨div_nonneg (mul_nonneg hθ1 (hw a).le) hT0.le, by
       rw [div_le_iff₀ hT0]; linarith [hlo a]⟩) hG
@@ -109,7 +112,7 @@ theorem orbit (l d : ℕ) [NeZero d] (hl : 5 ≤ l) (m k : ℕ) (hmk : m + 3 ≤
   have hadd := add_le l k (i0 k l) hl (by omega) hi
   obtain ⟨g1, g2, g3, g4⟩ := inv_le hl
   have hD : ∀ a, 0 ≤ ((k : ℝ) - 1) * w a := fun a => mul_nonneg (by linarith) (hw a).le
-  obtain ⟨f1, f2, -⟩ := GlobalTheory.T.flow_programme_bounds_and_low_level_optimum l d (fun a => ((k : ℝ) - 1) * w a) (by omega) hD
+  obtain ⟨f1, f2, -⟩ := _root_.GlobalTheory.FlowProgrammeFacts.main l d (fun a => ((k : ℝ) - 1) * w a) (by omega) hD
   have hF0 : 0 ≤ Fnum l d (fun a => ((k : ℝ) - 1) * w a) :=
     le_trans (mul_nonneg g4 (Finset.sum_nonneg fun a _ => hD a)) f1
   have hF : Fnum l d (fun a => ((k - 1 : ℕ) : ℝ) * ((1 - θ) * w a / T)) =
@@ -225,7 +228,7 @@ theorem main : InertBd := by
       exact ⟨p, fun _ => hp⟩
     · exact ⟨Plan.triv _ _ _, fun h => absurd h hz⟩
   choose p hp using key
-  have hν := GlobalTheory.T.inertPrime_value_le_planBlocks P l C1 hP hl Pk p (fun z hz => (hp z hz).1) (fun z hz => (hp z hz).2.1)
+  have hν := _root_.GlobalTheory.PlanValue.val_le_plan P l C1 hP hl Pk p (fun z hz => (hp z hz).1) (fun z hz => (hp z hz).2.1)
   have hT0 : 0 < Pk.T := by linarith [dg.T_one]
   have h1 := mul_le_mul_of_nonneg_left hν hT0.le
   rw [mul_add, Finset.mul_sum] at h1

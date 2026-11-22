@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Formalism.PeriodIntegrals.WeylForU
+public import Formalism.PeriodIntegrals.Bundle0019
 public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.CompactGroupIntegrability.InstCompactUG
 
 @[expose] public section

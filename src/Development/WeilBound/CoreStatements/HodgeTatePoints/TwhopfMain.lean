@@ -2,11 +2,11 @@ module
 
 public import Mathlib
 public import Development.AutomorphicSpectrum.Statements.GeometryStatements.IsPolLatticePlane
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsFinitePartMulConstant
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0196
 public import Development.WeilBound.CoreStatements.HodgeTatePoints.TwhopfSec
 public import Development.WeilBound.CoreStatements.HodgeTatePoints.TwhopfDiv
-public import Development.WeilBound.CoreStatements.HodgeTatePoints.TwhopfFin
-public import Development.WeilBound.CoreStatements.HodgeTatePoints.TwhopfInd
+public import Development.WeilBound.CoreStatements.HodgeTatePoints.Bundle0021
+public import Development.WeilBound.CoreStatements.HodgeTatePoints.Bundle0005
 
 @[expose] public section
 

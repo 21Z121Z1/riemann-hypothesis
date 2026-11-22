@@ -4,11 +4,11 @@ public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.Jets.JetsOnCopiesCompatibleFrames
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.UnifUniqSt
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.DiscreteValuationRings.TwistBCPf
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.DiscreteValuationRings.SectionScalarValuation
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.DiscreteValuationRings.Bundle0007
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.DiscreteValuationRings.LBCorr
-public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.GermDJet
-public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.ChartJetTrA
-public import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.ExpansionValueZero
+public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0009
+public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0012
+public import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.Bundle0017
 
 @[expose] public section
 

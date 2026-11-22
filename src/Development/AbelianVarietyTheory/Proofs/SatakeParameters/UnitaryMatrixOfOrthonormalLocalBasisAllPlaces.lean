@@ -1,17 +1,17 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.StdBases
-public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.BeData
-public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.ExistsConstantCoeffOne
+public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.Bundle0010
+public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.Bundle0011
+public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.Bundle0013
 public import Formalism.LocalRingCardinality.CoeNeZeroOfNotMem
 public import Formalism.LocalRingCardinality.FactDelDualNabla
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExistsKurFrobTauEmbPosPl
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.NormLeOneOfValuationLeOne
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0168
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0230
 public import Formalism.LocalToGlobal.InertKernelTheory.InertCoprimeLemmas.RepFrame
 public import Formalism.LocalToGlobal.InertKernelTheory.InertCoprimeLemmas.RepTrace
 public import Formalism.LocalToGlobal.InertKernelTheory.InertCoprimeLemmas.IntBasis
-public import Formalism.GaussJetBounds.GaussJetProofs.NormNatCastEqPowPadicValNat
+public import Formalism.GaussJetBounds.GaussJetProofs.Bundle0002
 
 @[expose] public section
 

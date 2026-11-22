@@ -1,7 +1,7 @@
 module
 
 public import Formalism.LocalToGlobal.ProjectiveLattices.SatLeaves
-public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.ChartTransportSt
+public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0008
 public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.FrTanAlg
 
 @[expose] public section

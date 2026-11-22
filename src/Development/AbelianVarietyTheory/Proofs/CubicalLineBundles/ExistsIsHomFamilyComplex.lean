@@ -2,14 +2,16 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Statements.PrincipalLattices.FiniteDimensionalBase
-public import Development.AbelianVarietyTheory.Statements.PrincipalLattices.PrimeSpectrumDualEq
+public import Development.AbelianVarietyTheory.Statements.PrincipalLattices.Bundle0001
 public import Development.AbelianVarietyTheory.Definitions.ThetaMetrics.MemNonzeroLocusIffPowFn
-public import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.ExistsLinearOfIsMonHom
+public import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.Bundle0010
 public import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.ExistsHomOfLinearScalingHermForm
-public import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.LbIsoPowOfHermFormPullEq
-public import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.FamilyUniformisationFibreThetaStatement
-public import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.PureTypeVectorSpansQuadraticLattice
-public import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.ExistsPolAVPullbackOfIsLocalRing
+public import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.Bundle0012
+public import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.FamilyUniformisationFibreTheta
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.IsHolPeriods
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.GlobalSectionsRankAlgClosed
+public import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.Bundle0008
+public import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.Bundle0011
 
 @[expose] public section
 
@@ -166,7 +168,7 @@ theorem exists_isHomFamily_complex (hT : ThetaUnifAV) (hW : Out.WeilSt) {D : Dat
     { A := t.G, g := d, smoothDim := hd, L := t.PP.L, isLB := t.PP.isLB, ample := ham, ktriv := hk, isAb := hab
       rigid := ⟨t.PP.rig, t.PP.rigGen⟩, sym := hs }
   obtain ⟨u, Hm, χ, F, hAH, -, hD, hθ, hex, hF, hE⟩ :=
-    T.familyUniformisation_fibre_theta hT hW E H D l Xo σ g ty FU i Pe hP P m.φ m.cart hL
+    _root_.GlobalTheory.familyUnif_fibre_theta hT hW E H D l Xo σ g ty FU i Pe hP P m.φ m.cart hL
   obtain ⟨Hm₀, χ₀, Ef, hAH₀, hD₀, -, hθ₀, hE₀, hb⟩ := hu
   let i₀ : Fin PC.g := ⟨0, by omega⟩
   let G : lat hP ρ → (Fin PC.g → ℂ) →ₗ[ℂ] (Fin P.g → ℂ) := fun a =>

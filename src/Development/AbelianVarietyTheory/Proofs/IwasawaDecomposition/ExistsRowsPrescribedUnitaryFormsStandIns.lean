@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.SameForm
+public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.Bundle0019
 public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.ExistsSStageUnconditional
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsNonnegShaOK
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0253
 
 @[expose] public section
 

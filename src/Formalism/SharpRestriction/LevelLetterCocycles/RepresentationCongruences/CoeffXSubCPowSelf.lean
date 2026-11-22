@@ -1,6 +1,6 @@
 module
 
-public import Formalism.SharpRestriction.LevelLetterCocycles.RepresentationCongruences.RepVVSmulA
+public import Formalism.SharpRestriction.LevelLetterCocycles.RepresentationCongruences.Bundle0023
 
 @[expose] public section
 

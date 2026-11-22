@@ -1,16 +1,16 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.CenUsedOfCenReal
+public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.Bundle0045
 public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.SettingsFormsExistList
 public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.OmPinsTr
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.SideTw
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.AdmissibleTwistOfTwistingCharacter
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.KeepSideBMtVPlaces
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SideBTies
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0678
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0806
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0814
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0816
 public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.YsOfFi
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsDefiniteLevelRecharacterisedStatement
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.PlacesOverRealSubfieldSplit
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0692
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0546
 
 @[expose] public section
 
@@ -40,7 +40,7 @@ abbrev mtAt (i : D.ntw.Tw) (j : ℕ) (b : Bool) (k : ℕ) (Q : Finset (PlE D.hos
 def chiAt (i : D.ntw.Tw) (j : ℕ) (b : Bool) (k : ℕ) (Q : Finset (PlE D.host))
     (ψ : Formalism.ConjugateSelfDual.G D.host.E D.nd.Om →* (D.ntw.Ok i k)ˣ) (c : Cond D i j k Q ψ) :
     (mtAt E i j b k Q ψ c).J →* (NX.Kk D i k)ˣ :=
-  (GlobalTheory.T.exists_definiteLevel_recharacterised D i j b k Q ψ E.sgnT (E.Wt i j b) (E.rhoW i j b) (E.tauG i j b) (τ' i j b) (mtAt E i j b k Q ψ c)).choose
+  (_root_.GlobalTheory.LevelRechar.exists_rechar D i j b k Q ψ E.sgnT (E.Wt i j b) (E.rhoW i j b) (E.tauG i j b) (τ' i j b) (mtAt E i j b k Q ψ c)).choose
 
 abbrev Sp (i : D.ntw.Tw) (j : ℕ) (b : Bool) (k : ℕ) (Q : Finset (PlE D.host))
     (ψ : Formalism.ConjugateSelfDual.G D.host.E D.nd.Om →* (D.ntw.Ok i k)ˣ) (c : Cond D i j k Q ψ) : Type :=
@@ -50,7 +50,7 @@ theorem fdSp (i : D.ntw.Tw) (j : ℕ) (b : Bool) (k : ℕ) (Q : Finset (PlE D.ho
     (ψ : Formalism.ConjugateSelfDual.G D.host.E D.nd.Om →* (D.ntw.Ok i k)ˣ) (c : Cond D i j k Q ψ) :
     FiniteDimensional (NX.Kk D i k) (Sp E τ' i j b k Q ψ c) :=
   GlobalTheory.LevForms.typeSpF_finiteDimensional D.host.E D.R.nV (NX.Kk D i k) _ _ _
-    (GlobalTheory.T.exists_definiteLevel_recharacterised D i j b k Q ψ E.sgnT (E.Wt i j b) (E.rhoW i j b) (E.tauG i j b) (τ' i j b)
+    (_root_.GlobalTheory.LevelRechar.exists_rechar D i j b k Q ψ E.sgnT (E.Wt i j b) (E.rhoW i j b) (E.tauG i j b) (τ' i j b)
       (mtAt E i j b k Q ψ c)).choose_spec.1
 
 def MtN (i : D.ntw.Tw) (j : ℕ) (b : Bool) (k : ℕ) (Q : Finset (PlE D.host))
@@ -185,7 +185,7 @@ def expN (hτ : ∀ i j b kv x, 1 ≤ j → j ≤ D.R.m → NX.pG D kv ∉ place
     mtV := fun i j b k Q ψ h1 h2 h =>
       @realN D (exN Mt) D.nStage_trivialCharacter_coeff_eq nth' (twN_psi Mt nth') i j b k Q ψ E.sgnT (E.Wt i j b) (E.acgWt i j b) (E.modWt i j b) (E.rhoW i j b)
         (E.tauG i j b) (τ' i j b) (mtAt E i j b k Q ψ ⟨⟨h1, h2, h⟩⟩) (chiAt E τ' i j b k Q ψ ⟨⟨h1, h2, h⟩⟩)
-        (@GlobalTheory.T.exists_definiteLevel_recharacterised D i j b k Q ψ E.sgnT (E.Wt i j b) (E.acgWt i j b) (E.modWt i j b) (E.rhoW i j b) (E.tauG i j b) (τ' i j b)
+        (@_root_.GlobalTheory.LevelRechar.exists_rechar D i j b k Q ψ E.sgnT (E.Wt i j b) (E.acgWt i j b) (E.modWt i j b) (E.rhoW i j b) (E.tauG i j b) (τ' i j b)
           (mtAt E i j b k Q ψ ⟨⟨h1, h2, h⟩⟩)).choose_spec
         (r i j b k Q ψ ⟨⟨h1, h2, h⟩⟩) }
 

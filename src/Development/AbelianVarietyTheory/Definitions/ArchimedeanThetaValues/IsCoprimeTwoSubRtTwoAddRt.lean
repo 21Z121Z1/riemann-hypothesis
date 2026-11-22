@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.TwoWeightEqOneAddRoot
-public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.ConjEmbeddingRt
+public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0071
 
 @[expose] public section
 

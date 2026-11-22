@@ -2,12 +2,12 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.ToUnitsCompToCircle
-public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.UnivCoefNeZero
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ThetaSeriesTypeUnderSupportedLifts
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsPlaceModelCompTensorHalf
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.VacuumVectorDropAuxiliaryPlaces
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FrameMatrixReductionEqOfHalfIdempotentSubset
-public import Formalism.LocalToGlobal.BesselHermitianTheta.LemmasWeil
+public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0031
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0869
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0780
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0784
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0770
+public import Formalism.LocalToGlobal.BesselHermitianTheta.Bundle0003
 
 @[expose] public section
 

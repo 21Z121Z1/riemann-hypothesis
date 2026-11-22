@@ -3,8 +3,8 @@ module
 public import Mathlib
 public import Development.WeilBound.CoreStatements.PadicHodgeComparison.HodgeSurjectivity.NLeA
 public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.AlgebraMapConeRing
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MonLNegMul
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MonomialMemExceptionalIdeal
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0119
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0120
 
 @[expose] public section
 

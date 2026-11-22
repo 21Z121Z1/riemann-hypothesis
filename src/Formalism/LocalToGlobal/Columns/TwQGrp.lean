@@ -1,7 +1,7 @@
 module
 
-public import Formalism.LocalToGlobal.Columns.TwQCmp
-public import Formalism.LocalToGlobal.Columns.TwQThetaOpen
+public import Formalism.LocalToGlobal.Columns.Bundle0024
+public import Formalism.LocalToGlobal.Columns.Bundle0008
 
 @[expose] public section
 

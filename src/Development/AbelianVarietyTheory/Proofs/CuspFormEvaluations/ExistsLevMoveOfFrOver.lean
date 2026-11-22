@@ -2,17 +2,15 @@ module
 
 public import Mathlib
 public import Formalism.LocalToGlobal.ProjectiveLattices.ThShort
-public import Formalism.LocalToGlobal.ProjectiveLattices.IsLevMove
-public import Formalism.LocalToGlobal.ProjectiveLattices.AllTest
-public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.ThExprUniqOfChartIndep2
-public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.CIndBC
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0010
+public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0007
+public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0006
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.SecBaseChangeAnySt
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.DivCalc
 public import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.IsoEqOfMapsAlongSection
 public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ObjIsAbelianSchemeDimRigidifiedSym
 public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.LevelMapFibreSimplyTransitive
-public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.SabMapEqOfLevelEq
-public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ObjPull
+public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0118
 
 @[expose] public section
 

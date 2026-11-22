@@ -1,7 +1,7 @@
 module
 
 public import Development.AutomorphicArithmetic.DedekindLFunctions.LandauZeroFreeCriterion
-public import Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.MellinRamp
+public import Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.Bundle0002
 
 @[expose] public section
 

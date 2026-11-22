@@ -1,12 +1,12 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GoodModModT
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.HeisenbergVacuumCommutantPreservesLatticeVacua
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HeisenbergFinitePointReadsClassicalTranslation
-public import Formalism.LocalToGlobal.IndefiniteReal.FinitePlaces.LatAnn
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2841
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0345
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1650
+public import Formalism.LocalToGlobal.IndefiniteReal.FinitePlaces.Bundle0015
 public import Formalism.SharpRestriction.GlobalSchurBounds.StandardIntegralLatticeExists
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.HomLatticeCompletionSelfAnnihilatorAtPlaces
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0094
 
 @[expose] public section
 

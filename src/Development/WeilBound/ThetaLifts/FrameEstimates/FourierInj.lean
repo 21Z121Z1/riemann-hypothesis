@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Development.WeilBound.ThetaLifts.FrameEstimates.SquareIntegrableWeilRange
-public import Development.WeilBound.ThetaLifts.FrameEstimates.FourierInjA
+public import Development.WeilBound.ThetaLifts.FrameEstimates.Bundle0001
 public import Development.AutomorphicSpectrum.Proofs.MembershipProofs.ThetaDistributionHeisenbergInvariant
 
 @[expose] public section

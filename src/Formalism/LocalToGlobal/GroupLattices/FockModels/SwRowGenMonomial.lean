@@ -1,8 +1,8 @@
 module
 
 public import Formalism.LocalToGlobal.GroupLattices.FockModels.SwRowDivZero
-public import Formalism.GradedWeylDivisibility.FockSpaceTableaux.LEhwLemmas
-public import Formalism.GradedWeylDivisibility.FockSpaceTableaux.LGradedLemmas
+public import Formalism.GradedWeylDivisibility.FockSpaceTableaux.Bundle0014
+public import Formalism.GradedWeylDivisibility.FockSpaceTableaux.Bundle0006
 
 @[expose] public section
 

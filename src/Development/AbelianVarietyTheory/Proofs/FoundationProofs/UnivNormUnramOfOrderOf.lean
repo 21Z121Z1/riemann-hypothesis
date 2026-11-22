@@ -1,11 +1,11 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Foundations.ShCocOn
-public import Development.AbelianVarietyTheory.Definitions.Foundations.IsLocallyConstantCycMod
+public import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0001
+public import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0020
 public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.ExistsCoprimePowOfMemIneKer
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.LocalCohomologyVanishesTameInertiaNoFixed
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.MemIntegersOfNormLeOne
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0050
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0348
 
 @[expose] public section
 

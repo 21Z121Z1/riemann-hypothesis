@@ -5,17 +5,11 @@ public import Formalism.LandauZeroFreeBounds.SiegelWalfiszAP
 public import Formalism.ZeroFreeRegion.Statement
 public import Formalism.LandauZeroFreeBounds.LogDerivRegionChiOf
 public import Formalism.SizeWindowBrackets.SBrDiv
-public import Formalism.SizeWindowBrackets.ClaimGaFree
-public import Formalism.SizeWindowBrackets.QuotientSlopeBoundsWith
-public import Formalism.SizeWindowBrackets.FrameTraceRatioFinEquiv
-public import Formalism.SizeWindowBrackets.SlopesHypothesisFinitePlaces
-public import Formalism.SizeWindowBrackets.ErrorFormsWeakWindowsFalse
-public import Formalism.LogVandermondeBounds.LogRatioUpperBound
-public import Formalism.SizeWindowBrackets.TraceSquareAndDiagBounds
-public import Formalism.SizeWindowBrackets.GaloisToProductIsIso
-public import Formalism.SizeWindowBrackets.GrowthBoundGivesRiemannHypothesis
-public import Formalism.SizeWindowBrackets.SecondKindBucket
-public import Formalism.SizeWindowBrackets.SlopeExcessBoundExponentZero
+public import Formalism.SizeWindowBrackets.Bundle0001
+public import Formalism.SizeWindowBrackets.Bundle0002
+public import Formalism.SizeWindowBrackets.Bundle0004
+public import Formalism.SizeWindowBrackets.Bundle0003
+public import Formalism.LogVandermondeBounds.Bundle0002
 public import Mathlib
 
 @[expose] public section

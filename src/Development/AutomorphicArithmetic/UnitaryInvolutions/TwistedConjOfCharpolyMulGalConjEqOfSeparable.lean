@@ -1,11 +1,8 @@
 module
 
 public import Development.AutomorphicArithmetic.Foundations.Convolution.HermitianDescent.UniformExportStatement
-public import Development.AutomorphicArithmetic.Foundations.Convolution.HermitianDescent.ModelEx
-public import Development.AutomorphicArithmetic.Foundations.Convolution.HermitianDescent.ReflectCpInv
-public import Development.AutomorphicArithmetic.Foundations.Convolution.HermitianDescent.TBase
-public import Development.AutomorphicArithmetic.Foundations.Convolution.HermitianDescent.TClass
-public import Development.AutomorphicArithmetic.Foundations.Convolution.HermitianDescent.ThInvVal
+public import Development.AutomorphicArithmetic.Foundations.Convolution.HermitianDescent.Bundle0004
+public import Development.AutomorphicArithmetic.Foundations.Convolution.HermitianDescent.Bundle0005
 
 @[expose] public section
 

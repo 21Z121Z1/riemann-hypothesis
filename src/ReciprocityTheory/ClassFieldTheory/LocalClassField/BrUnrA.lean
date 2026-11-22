@@ -2,8 +2,8 @@ module
 
 public import Mathlib
 public import ReciprocityTheory.GroupCohomology.ImportsAlt
-public import ReciprocityTheory.ClassFieldTheory.LocalClassField.HSubsingletonOfUniquelyDivisible
-public import ReciprocityTheory.ClassFieldTheory.LocalClassField.FinCoh
+public import ReciprocityTheory.ClassFieldTheory.LocalClassField.Bundle0010
+public import ReciprocityTheory.ClassFieldTheory.LocalClassField.Bundle0003
 
 @[expose] public section
 

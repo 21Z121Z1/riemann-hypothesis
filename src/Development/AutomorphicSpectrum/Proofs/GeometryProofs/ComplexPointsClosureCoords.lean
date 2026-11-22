@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LocRatio
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.GrGenOfIsFlagVBOn
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.CoordsAtSmul
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0093
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0026
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0094
 
 @[expose] public section
 

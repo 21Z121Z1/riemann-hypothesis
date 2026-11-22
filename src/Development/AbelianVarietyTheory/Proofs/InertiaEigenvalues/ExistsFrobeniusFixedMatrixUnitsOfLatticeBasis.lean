@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.TwistStep
-public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.FiltrationZeroMembership
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsUnitDetResMat
+public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0011
+public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0010
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0278
 
 @[expose] public section
 

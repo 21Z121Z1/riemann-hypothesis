@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.IsLatMeasurableConst
+public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.Bundle0011
 public import Development.AbelianVarietyTheory.Definitions.ThetaMetrics.IsAddFundamentalDomainLatticeDomain
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsSmulMemOfMemSpanFraction
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0015
 
 @[expose] public section
 

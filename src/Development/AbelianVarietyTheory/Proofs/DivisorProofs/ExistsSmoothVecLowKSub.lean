@@ -2,9 +2,9 @@ module
 
 public import Mathlib
 public import Formalism.LocalToGlobal.IndefiniteReal.LinksDefs
-public import Formalism.RealPlaceAnalysis.RealPlaceTaylor.ModularCharacterEqOneOnExpHermitian
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ContDiffSetIntegralNat
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsKTypeOfMap
+public import Formalism.RealPlaceAnalysis.RealPlaceTaylor.Bundle0007
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0151
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0795
 
 @[expose] public section
 

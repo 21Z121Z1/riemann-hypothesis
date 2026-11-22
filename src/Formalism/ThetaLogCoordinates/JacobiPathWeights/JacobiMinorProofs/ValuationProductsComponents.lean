@@ -1,11 +1,11 @@
 module
 
 public import Mathlib
-public import Formalism.ThetaLogCoordinates.JacobiPathWeights.StatementA
-public import Formalism.ThetaLogCoordinates.JacobiPathWeights.StatementE
+public import Formalism.ThetaLogCoordinates.JacobiPathWeights.Bundle0003
+public import Formalism.ThetaLogCoordinates.JacobiPathWeights.Bundle0002
 public import Formalism.ThetaLogCoordinates.JacobiPathWeights.JacobiMinorProofs.ActFormContract
 public import Formalism.ThetaLogCoordinates.JacobiPathWeights.JacobiMinorProofs.LeIffLtColHeight
-public import Formalism.ThetaLogCoordinates.JacobiPathWeights.JacobiMinorProofs.PathProductHighestWeight
+public import Formalism.ThetaLogCoordinates.JacobiPathWeights.JacobiMinorProofs.Bundle0001
 public import Formalism.ThetaLogCoordinates.JacobiPathWeights.JacobiMinorProofs.ExistsSuppOfEvalNe
 
 @[expose] public section

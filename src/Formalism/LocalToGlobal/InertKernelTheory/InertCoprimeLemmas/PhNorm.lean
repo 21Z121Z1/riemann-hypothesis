@@ -1,9 +1,9 @@
 module
 
 public import Formalism.LocalToGlobal.InertKernelTheory.InertCoprimeLemmas.EndInt
-public import Formalism.LocalToGlobal.InertKernelTheory.DefsBeW
+public import Formalism.LocalToGlobal.InertKernelTheory.Bundle0002
 public import Formalism.LocalToGlobal.TorsionIntegrality.FrobeniusFibreCurves.FinalC
-public import Formalism.LocalToGlobal.TorsionIntegrality.EisensteinTranslationProducts.HasCMByStable
+public import Formalism.LocalToGlobal.TorsionIntegrality.EisensteinTranslationProducts.Bundle0005
 public import Formalism.LocalToGlobal.TorsionIntegrality.SecondCoefficientNorms.SecondCoeffConsistency
 public import Formalism.LocalToGlobal.TorsionIntegrality.UniformGaussModels.OneLetterGaussSharpTranslateHolds
 

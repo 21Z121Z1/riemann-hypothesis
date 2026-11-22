@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Formalism.PeriodIntegrals.SqPair
+public import Formalism.PeriodIntegrals.Bundle0013
 public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.SquarePairLocal.SqPairLocalOfSteps
-public import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.UnimodGenus
+public import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.Bundle0022
 
 @[expose] public section
 

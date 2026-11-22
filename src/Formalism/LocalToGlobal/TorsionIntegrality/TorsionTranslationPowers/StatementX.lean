@@ -1,7 +1,7 @@
 module
 
-public import Formalism.LocalToGlobal.TorsionIntegrality.TorsionTranslationPowers.StatementV
-public import Formalism.LocalToGlobal.TorsionIntegrality.TorsionTranslationPowers.StatementW
+public import Formalism.LocalToGlobal.TorsionIntegrality.TorsionTranslationPowers.Bundle0002
+public import Formalism.LocalToGlobal.TorsionIntegrality.TorsionTranslationPowers.Bundle0003
 public import Formalism.LocalToGlobal.TorsionIntegrality.FrobeniusFibreCurves.StatementW
 
 @[expose] public section

@@ -3,8 +3,8 @@ module
 public import Mathlib
 public import GroundTheory.AutomorphicForms.HeckeIrreducible
 public import GroundTheory.AutomorphicForms.WhittakerCriterion
-public import GroundTheory.AutomorphicForms.SmoothRepContragredient
-public import GroundTheory.AutomorphicForms.SmoothRepSchur
+public import GroundTheory.AutomorphicForms.Bundle0010
+public import GroundTheory.AutomorphicForms.Bundle0011
 
 @[expose] public section
 

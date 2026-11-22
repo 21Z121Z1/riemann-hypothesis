@@ -2,10 +2,10 @@ module
 
 public import Mathlib
 public import Formalism.LocalRingCardinality.AdicCompletionLocal.LocTied
-public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.CentralIdemCoeff
+public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0008
 public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FontaineFormalismOfRegular
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.AlgClosureTensorBcrisToBdRInjective
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.BcrisRegularOfTensorInj
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0266
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0544
 
 @[expose] public section
 

@@ -2,12 +2,13 @@ module
 
 public import Mathlib
 public import Development.WeilBound.CoreStatements.AutomorphicKernels.AbelianDeRham.AbelianHodgeDeRham.H1DimGeAbelianDim
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Pull1RestrictPairRestriction
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0165
 public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsFiniteTorusExtensionOfModel
 public import Development.AbelianVarietyTheory.Definitions.ShimuraVarieties.MulLeftCompOfPullbackPointEquivMul
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsAbelianSchemeAndRelDimOfIsGrpPullback
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0718
 public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IsPullbackSecondCohomologyOfEq
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.PrimitiveTorsorClassAdditiveStatement
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0740
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0170
 
 @[expose] public section
 
@@ -192,7 +193,7 @@ theorem lift_aux (hD : DescentSt) (hL : LowSt) (hAx : AxOSt) (hNP : NoPrimSt)
   have pm := isPullO_pullHO1 (wOver (fst A₀ A₀ * snd A₀ A₀)) c'
   have pp := isPullO_pullHO1 (wOver (fst A₀ A₀)) c'
   have pq := isPullO_pullHO1 (wOver (snd A₀ A₀)) c'
-  have prim := GlobalTheory.T.primitive_torsor_class_additive hD hL hAx _ A₀ g hA₀ hg₀ c' _ _ _ pm pp pq
+  have prim := _root_.GlobalTheory.CompanionTheory.SmallLift.primitive_HO1_abelian hD hL hAx _ A₀ g hA₀ hg₀ c' _ _ _ pm pp pq
   obtain ⟨yp, Bp⟩ := bd_exists haY hbY ((resSys (A₀ ⊗ A₀).hom (pullSys hY₀ (idSys (A ⊗ A).left))).pull1
     (pullHO1 (wOver (fst A₀ A₀)) c'))
   obtain ⟨yq, Bq⟩ := bd_exists haY hbY ((resSys (A₀ ⊗ A₀).hom (pullSys hY₀ (idSys (A ⊗ A).left))).pull1

@@ -1,10 +1,10 @@
 module
 
-public import Formalism.EllipticTorsion.CoeffRing
+public import Formalism.EllipticTorsion.Bundle0002
 public import Formalism.EllipticTorsion.EllipticTorsionProofs.WChord
 public import Formalism.EllipticTorsion.EllipticTorsionProofs.ExistsUnitFactor
 public import Formalism.EllipticTorsion.EllipticTorsionProofs.WSubst
-public import Formalism.EllipticTorsion.EllipticTorsionProofs.WSeries
+public import Formalism.EllipticTorsion.EllipticTorsionProofs.Bundle0001
 
 @[expose] public section
 

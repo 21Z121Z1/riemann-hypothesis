@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.HeckeCharEqOfLAdicRealisation
+public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.Bundle0009
 
 @[expose] public section
 

@@ -2,7 +2,7 @@ module
 
 public import ReciprocityTheory.AnalyticForms.LeviForms.IsRegFamilyInhabitStatement
 public import ReciprocityTheory.AnalyticForms.PotentialTheory.ContDiffFubiniStudyRatioCompChart0
-public import ReciprocityTheory.AnalyticForms.PotentialTheory.PshShiftA
+public import ReciprocityTheory.AnalyticForms.PotentialTheory.Bundle0001
 public import ReciprocityTheory.AnalyticForms.PlurisubharmonicFunctions.PshRegMax
 
 @[expose] public section

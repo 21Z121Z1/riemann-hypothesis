@@ -7,8 +7,10 @@ public import Development.AbelianVarietyTheory.Definitions.AbelianSchemeLaws.Fir
 public import Development.AbelianVarietyTheory.Definitions.Degenerations.OfDerivationFnOn
 public import Development.AbelianVarietyTheory.Definitions.Degenerations.PlOrdSomeOfAssociated
 public import Development.AbelianVarietyTheory.Statements.SemistableTorsion.SemistableFin
-public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.AbelianVarietyPotentialSemiAbelianModelStatement
-public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.SemistableOfPotentialSemiAbelianModelStatement
+public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.AbelianVarietyPotentialSemiAbelianModel
+public import Development.AbelianVarietyTheory.Statements.SemistableTorsion.ImmersedBy
+public import Development.AbelianVarietyTheory.PublishedTheorems.RelativeAmpleness.RelAmpleAndKTrivIff
+public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.Bundle0054
 
 @[expose] public section
 
@@ -19,6 +21,6 @@ open GlobalTheory.SS
 
 namespace GlobalTheory.SS
 
-theorem semistableReduction_zero : SemistableReductionZero := (GlobalTheory.T.semistable_of_potential_semiAbelian_model GlobalTheory.T.abelianVariety_potential_semiAbelian_model).1
+theorem semistableReduction_zero : SemistableReductionZero := (_root_.GlobalTheory.SS.semistable_of_potModel_semiAbelian _root_.GlobalTheory.SS.potModel_isSemiAbelian).1
 
 end GlobalTheory.SS

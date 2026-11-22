@@ -1,9 +1,9 @@
 module
 
-public import ReciprocityTheory.GroupCohomology.CupConnRightStatement
-public import ReciprocityTheory.GroupCohomology.DEqZeroOfMemB
+public import ReciprocityTheory.GroupCohomology.Bundle0002
+public import ReciprocityTheory.GroupCohomology.Bundle0003
 public import ReciprocityTheory.GroupCohomology.ConnNatHolds
-public import ReciprocityTheory.GroupCohomology.IsSuccSubset
+public import ReciprocityTheory.GroupCohomology.Bundle0005
 
 @[expose] public section
 

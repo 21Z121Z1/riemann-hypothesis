@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import GroundTheory.HeightsAndTheta.Heights.Intersections.ExistsFunFieldMulEq
+public import GroundTheory.HeightsAndTheta.Heights.Intersections.Bundle0011
 
 @[expose] public section
 

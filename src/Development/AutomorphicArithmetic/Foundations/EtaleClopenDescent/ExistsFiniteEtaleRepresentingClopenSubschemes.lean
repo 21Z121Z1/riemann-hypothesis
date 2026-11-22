@@ -1,12 +1,12 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsQuasiInv
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2069
 public import Development.AutomorphicArithmetic.RepresentationRank.RepOfRank
-public import Development.AutomorphicArithmetic.CommutativeAlgebra.ExistsClopRepPullback
+public import Development.AutomorphicArithmetic.CommutativeAlgebra.Bundle0047
 public import Development.AutomorphicArithmetic.CommutativeAlgebra.ClopRepFiniteEtaleOfConstantRank
 public import Development.AutomorphicArithmetic.CommutativeAlgebra.ExistsClopRepOfClopRepOfRank
-public import Development.AutomorphicArithmetic.CommutativeAlgebra.ExistsClopRepOfRankOfLocallyNoetherian
+public import Development.AutomorphicArithmetic.CommutativeAlgebra.Bundle0049
 
 @[expose] public section
 

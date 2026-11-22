@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import GroundTheory.ProfiniteCohomology.GlobalEulerCharacteristic.UnitsDefs
+public import GroundTheory.ProfiniteCohomology.GlobalEulerCharacteristic.Bundle0002
 public import GroundTheory.ProfiniteCohomology.LocalEulerCharacteristic.ModNEquivOfSurjectiveApplyModNRep
 public import GroundTheory.GlobalFields.HerbrandQuotients.SUnits
 

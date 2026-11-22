@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import GroundTheory.ArithmeticGeometry.EtaleCompletion.QcohZariski
+public import GroundTheory.ArithmeticGeometry.EtaleCompletion.Bundle0001
 public import GroundTheory.ArithmeticGeometry.SchemeCohomology.InvertibleDual
 
 @[expose] public section

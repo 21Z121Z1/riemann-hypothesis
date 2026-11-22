@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.TwistAlg
-public import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.PAmpleTwistLocal
+public import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.Bundle0009
+public import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.Bundle0003
 
 @[expose] public section
 

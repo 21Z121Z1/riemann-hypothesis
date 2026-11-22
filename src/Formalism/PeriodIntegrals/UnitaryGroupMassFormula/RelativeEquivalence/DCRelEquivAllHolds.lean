@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Formalism.PeriodIntegrals.DCRelEquiv
+public import Formalism.PeriodIntegrals.Bundle0024
 
 @[expose] public section
 

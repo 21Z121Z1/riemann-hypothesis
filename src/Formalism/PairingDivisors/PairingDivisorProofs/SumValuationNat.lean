@@ -1,10 +1,9 @@
 module
 
 public import Mathlib
-public import Formalism.PairingDivisors.StatementA
-public import Formalism.PairingDivisors.StatementX
+public import Formalism.PairingDivisors.Bundle0001
 public import Formalism.QuotientMetricDivisors.HermitianTwistDivisors.ValBasic
-public import Formalism.QuotientMetricDivisors.HermitianTwistDivisors.ProdFormula
+public import Formalism.QuotientMetricDivisors.HermitianTwistDivisors.Bundle0002
 
 @[expose] public section
 

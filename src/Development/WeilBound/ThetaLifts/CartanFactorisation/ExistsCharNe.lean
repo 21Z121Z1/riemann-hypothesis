@@ -3,7 +3,7 @@ module
 public import Mathlib
 public import Development.WeilBound.ThetaLifts.CartanFactorisation.ArchimedeanUnitIdempotentSmulMixedSpaceVecPairAs
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WeilRepresentationPreservesSchwartz
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.StandardAdelicCharacterNontrivialAtPlaces
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1566
 public import Development.WeilBound.ThetaLifts.CartanFactorisation.EqOfInner
 
 @[expose] public section

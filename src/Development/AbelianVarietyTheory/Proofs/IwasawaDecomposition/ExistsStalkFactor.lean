@@ -1,13 +1,13 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.FlagComponentFramedPointFrame
-public import Formalism.LocalToGlobal.ProjectiveLattices.MulCMemSec
-public import Formalism.LocalToGlobal.ProjectiveLattices.AllTest
+public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.Bundle0036
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0021
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0010
 public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.NotIsCompactUnivFv
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TangentVectorsUniversalBasis
-public import Formalism.LocalToGlobal.ProjectiveLattices.LocFrLoc
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.AbProj
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0841
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0029
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.Bundle0006
 
 @[expose] public section
 

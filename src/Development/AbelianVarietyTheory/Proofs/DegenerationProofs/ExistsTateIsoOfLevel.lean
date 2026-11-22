@@ -3,12 +3,12 @@ module
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.Degenerations.CharZeroOfIsPrimitiveRoot
 public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.HasThetaConstantsIffOfThetaLevelPullback
-public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.HasThetaConstantsRingBaseChange
-public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsThetaConstantsLocallyOnBase
-public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ThetaConstantsUniqueUpToUnit
-public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsFiniteEtaleLatticeTorsionHom
-public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.PushEquivSymmLeft
-public import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.ExistsTateIsoZetaEq
+public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0118
+public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0173
+public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0132
+public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0019
+public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0087
+public import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.Bundle0031
 public import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.WeilIsAlternatingSkewNatural
 
 @[expose] public section

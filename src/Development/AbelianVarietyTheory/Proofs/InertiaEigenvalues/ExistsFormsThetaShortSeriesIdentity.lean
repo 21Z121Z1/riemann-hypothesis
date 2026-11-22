@@ -1,21 +1,19 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ValRingLocRing
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SqRootIdentity
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsCuspCoefficient
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.BddAllOfThetaSumOnCover
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsBasisIntegralCoords
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CoefMapSmulMap
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.PureTensorOTransSumLin
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsRingEquivComplexCompEq
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsDeltaDatumHigherLevel
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsIsUnf
-public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.CmModuliConsequenceOfAbelianSchemeLaws
-public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.HasseNormTheoremQuadraticExtension
-public import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.AbelianSchemeLawsUnconditional
-public import Formalism.LocalToGlobal.ProjectiveLattices.CuspFormsFiniteDimensionalOf
-public import Formalism.LocalToGlobal.ProjectiveLattices.FreeBridge
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0784
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0816
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0776
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0838
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0768
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0771
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0005
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0108
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0103
+public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0200
+public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.Bundle0053
+public import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.Bundle0029
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0024
 
 @[expose] public section
 
@@ -152,7 +150,7 @@ theorem thetaSum_value_emb : ∀ (D : D7) (H : Geo.Tor.Host D.host.E) (Dw : Datu
     have hthF := GlobalTheory.GalLift.Vec.theta_pureTensorO hψ hθ (fun _ => 1) (fun _ => 1) s BW
       (AddValue.theta_transSum hψ V W d.l₂ ι e hf₀ (fun q => σ (w t q))) (MvPolynomial.rename lt (MvPolynomial.map σ (P t)))
     rw [hmove _ hthF, hren]
-    refine (GlobalTheory.T.thetaKernel_translateSum_eq_classicalShortSeries D H Dw ψ θ V W χV χW om ΛV ΛW s f₀ hVP ι hiota.emb hrt d.l₂ e he r g' Dw.p hr _
+    refine (_root_.GlobalTheory.SingleDatum.ShortSum.thetaKO_transSum_eq_short_series D H Dw ψ θ V W χV χW om ΛV ΛW s f₀ hVP ι hiota.emb hrt d.l₂ e he r g' Dw.p hr _
       Dc.hr Dc.bas Dc.idx (fun τ => x₀ τ.1) vr BW (hMod _) Dc.sympl hON (hF _).1 ((hF _).2 Dc.hr) hvr bad N h (γ * g) Λ mk₂
       e' Ps y hbad he' hPs hh hs hy hΛ hT hN ha₂ Y (by rw [hΛk]; exact hY) v (cc (dict g).1 * mu g * κ')
       (by rw [hΛk]; exact hv) (by rw [← hfr]; exact hrd) _ _ (degA Dw a) hhom).trans ?_

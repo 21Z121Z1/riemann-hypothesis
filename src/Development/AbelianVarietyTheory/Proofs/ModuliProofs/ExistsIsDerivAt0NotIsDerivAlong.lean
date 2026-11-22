@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.IsHolPeriods
-public import Development.AbelianVarietyTheory.BlockTheory.CMModuli.PeriodMapPresentation
+public import Development.AbelianVarietyTheory.BlockTheory.CMModuli.Bundle0002
 public import Development.AbelianVarietyTheory.Proofs.ToricGeometry.ExistsEquivOfSumEq
 
 @[expose] public section

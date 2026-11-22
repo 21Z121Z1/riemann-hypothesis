@@ -1,6 +1,6 @@
 module
 
-public import ReciprocityTheory.L2DbarEstimates.SkodaWeights.HlinVsqPos
+public import ReciprocityTheory.L2DbarEstimates.SkodaWeights.Bundle0001
 public import ReciprocityTheory.L2DbarEstimates.SkodaWeights.LeviVA
 
 @[expose] public section

@@ -3,8 +3,8 @@ module
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.ExistenceOfLattices.PermutesRefl
 public import Formalism.LocalToGlobal.ProjectiveLattices.UnFree
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsScaledIsometry
-public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.HasseNormTheoremQuadraticExtension
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0033
+public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.Bundle0053
 public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.FiniteNotIsUnitOneAddSmul
 public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.UnitaryGroupWeakApproximationAtPrimes
 

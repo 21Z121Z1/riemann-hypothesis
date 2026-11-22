@@ -1,13 +1,13 @@
 module
 
 public import Mathlib
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.InterDerived
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.InterDivSupp
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.Bundle0011
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.Bundle0017
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArithmeticIntersection.MultihomogeneousIdeals.MultiIsProjVarFOfRatDiv
-public import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.ExistsUnique
-public import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.ImageArithClosed
-public import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.ChangeOfModel
-public import GroundTheory.HeightsAndTheta.Heights.Intersections.PConsequences
+public import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.Bundle0011
+public import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.Bundle0026
+public import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.Bundle0032
+public import GroundTheory.HeightsAndTheta.Heights.Intersections.Bundle0029
 
 @[expose] public section
 

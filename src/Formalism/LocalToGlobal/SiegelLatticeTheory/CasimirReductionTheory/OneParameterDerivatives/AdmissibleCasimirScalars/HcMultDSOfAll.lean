@@ -3,7 +3,7 @@ module
 public import Formalism.LocalToGlobal.SiegelLatticeTheory.CasimirReductionTheory.OneParameterDerivatives.AdmissibleCasimirScalars.CompactDerivativesBounded
 public import Formalism.SharpRestriction.CuspSpanNormBounds.BridgeCSchur
 public import Formalism.SharpRestriction.CuspSpanNormBounds.LowestKTypeMultiplicity
-public import Formalism.SharpRestriction.CuspSpanNormBounds.ExpansionFromLemmaB
+public import Formalism.SharpRestriction.CuspSpanNormBounds.Bundle0010
 
 @[expose] public section
 

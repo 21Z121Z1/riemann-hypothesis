@@ -2,8 +2,8 @@ module
 
 public import Formalism.LocalToGlobal.GlobalTheory.GL5.FamilyMassVolumeIdentityOfClassDecomp
 public import Formalism.LocalToGlobal.GlobalTheory.GL1.CompactFixesLattice.ExistsDenOfIsCompact
-public import Formalism.LocalRingCardinality.PosOfIsomEmb
-public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.EmbeddingTypeJumps
+public import Formalism.LocalRingCardinality.Bundle0005
+public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0072
 
 @[expose] public section
 

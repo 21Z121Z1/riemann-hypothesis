@@ -1,8 +1,8 @@
 module
 
 public import Formalism.SharpRestriction.GrowthBounds.BaseLevels.LevelsGEmpty
-public import Formalism.SharpRestriction.GrowthBounds.ChartedClasses.ClsCharted1AtInTw
-public import Formalism.SharpRestriction.GrowthBounds.ChartComparison.OneChartLev
+public import Formalism.SharpRestriction.GrowthBounds.ChartedClasses.Bundle0005
+public import Formalism.SharpRestriction.GrowthBounds.ChartComparison.Bundle0001
 public import Formalism.SharpRestriction.GrowthBounds.ChartComparison.BadQNotOver
 
 @[expose] public section

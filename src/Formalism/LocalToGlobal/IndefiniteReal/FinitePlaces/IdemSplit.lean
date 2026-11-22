@@ -1,8 +1,8 @@
 module
 
-public import Formalism.LocalToGlobal.IndefiniteReal.FinitePlaces.IdemOrth
-public import Formalism.LocalToGlobal.SiegelLatticeTheory.TraceIntegralEstimates.PsiTrCoreApprox
-public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.DecompositionAlmostEverywhere
+public import Formalism.LocalToGlobal.IndefiniteReal.FinitePlaces.Bundle0010
+public import Formalism.LocalToGlobal.SiegelLatticeTheory.TraceIntegralEstimates.Bundle0001
+public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0080
 
 @[expose] public section
 

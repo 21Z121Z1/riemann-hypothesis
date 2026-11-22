@@ -1,10 +1,10 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Divisors.IsEtPlace
-public import Development.AbelianVarietyTheory.Definitions.Divisors.IsHeckeMap
-public import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsTjCorrDiagModel
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsEtLevOver
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0016
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0017
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0061
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0620
 
 @[expose] public section
 

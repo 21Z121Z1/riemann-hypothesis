@@ -2,8 +2,8 @@ module
 
 public import Mathlib
 public import Formalism.LocalToGlobal.SiegelLatticeTheory.CasimirReductionTheory.OneParameterDerivatives.WeilIndicatorMeasures.MeasurableUnitMulIndicator
-public import Formalism.PeriodIntegrals.QuotInv
-public import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.QuotSetU
+public import Formalism.PeriodIntegrals.Bundle0006
+public import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.Bundle0016
 public import Formalism.SharpRestriction.CuspSpanNormBounds.RelevantZeroGramTerms
 
 @[expose] public section

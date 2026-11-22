@@ -2,11 +2,12 @@ module
 
 public import Mathlib
 public import Development.WeilBound.CoreStatements.TemperedRepresentationTheory.ZelevinskyJacquet.ZelevinskyInterleaving.LInjective
-public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.IrreducibleAdmissibleGL
-public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.LanglandsMultisegments
-public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.LanglandsExhaustionGL
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.AlgebraMapIntertwiningMapBijectiveOfIsSmooth
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ShuffleWeightAntisymmetricEqStatement
+public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.Bundle0002
+public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.Bundle0010
+public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.Bundle0008
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0621
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0082
+public import Development.WeilBound.CoreStatements.TemperedRepresentationTheory.ZelevinskyJacquet.ZelevinskyInterleaving.Interleave
 
 @[expose] public section
 
@@ -150,7 +151,7 @@ theorem eq_of_inShW_wtW : ∀ {k : Type} [Field k] [ValuativeRel k] [Topological
   intro k _ _ _ _ _ 𝔪 𝔫 h h' Δ Γ hΔ hΓ h1 h2
   have hL := coe_map_ofFn hΔ
   have hM := coe_map_ofFn hΓ
-  have key := GlobalTheory.T.shuffle_weight_antisymmetric_eq sNu sNu_injective sNu_aperiodic ((List.ofFn Δ).map toA) ((List.ofFn Γ).map toA)
+  have key := _root_.GlobalTheory.CompanionTheory.SegmentWords.wt_inSh_antisymm sNu sNu_injective sNu_aperiodic ((List.ofFn Δ).map toA) ((List.ofFn Γ).map toA)
     (aOrdered_of_isOrderedForm hΔ) (aOrdered_of_isOrderedForm hΓ) (by rw [hM]; exact inSh_of_inShW h1)
     (by rw [hL]; exact inSh_of_inShW h2)
   rw [hL, hM] at key

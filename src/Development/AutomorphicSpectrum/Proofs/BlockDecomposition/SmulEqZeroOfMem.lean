@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SubPairRight
-public import Development.AbelianVarietyTheory.Proofs.CoherentCohomologyProofs.ExistsHomLocBijectiveGrSum
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0265
+public import Development.AbelianVarietyTheory.Proofs.CoherentCohomologyProofs.Bundle0017
 public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsFinsetSum
 
 @[expose] public section

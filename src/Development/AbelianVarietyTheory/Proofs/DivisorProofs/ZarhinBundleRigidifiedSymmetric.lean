@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.KappaOK
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsMonHomOfClassifying
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AbelianSchemeHomEqOfPowEqStatement
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2942
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2022
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2974
 
 @[expose] public section
 

@@ -3,8 +3,8 @@ module
 public import Mathlib
 public import GroundTheory.HeightsAndTheta.Heights.HeightKernels.StatementsVertRIndexSteps
 public import GroundTheory.HeightsAndTheta.Heights.Intersections.NotIsUnitOfNumMem
-public import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.CoordinateIdeals.MemMCoordIdealOfAevalEqZero
-public import GroundTheory.HeightsAndTheta.Heights.HeightsOfSets.PCurveDivVertical
+public import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.CoordinateIdeals.Bundle0001
+public import GroundTheory.HeightsAndTheta.Heights.HeightsOfSets.Bundle0004
 
 @[expose] public section
 

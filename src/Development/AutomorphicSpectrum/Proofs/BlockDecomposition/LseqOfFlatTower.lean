@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.PerfectoidPullbacks.LocalSystemQuotients.FlatL
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MapHCompEqSmul
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0096
 public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MkOfMemB
 
 @[expose] public section

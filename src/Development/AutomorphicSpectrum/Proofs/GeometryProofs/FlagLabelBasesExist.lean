@@ -1,18 +1,18 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.SlopeBoundSt
-public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.ArchBetween
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.Bundle0012
 public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.BdryChart
 public import Development.AutomorphicSpectrum.Definitions.MetricPeriods.ClopenCondOnto
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.UniformisationConclusion
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.HeckeKer
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.Bundle0003
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.BlowupProjections.BlowupProjStatement
 public import Development.AbelianVarietyTheory.PublishedTheorems.SemiabelianTori.GeometricallyConnectedSplitTorusAff
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.ThetaCore
 public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.IsExcisionNbhdAway
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.StalkClosedPointToGermTop
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LieLatticeVectorBundleOfSmoothStatement
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0036
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LieLatticeVectorBundleOfSmooth
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.Bundle0004
 
 @[expose] public section
 
@@ -484,7 +484,7 @@ theorem exists_local (Fl : 𝔐.Flag) (s : CMType H ⊕ CMType H) (x : 𝔐.X) :
   haveI := connectedSpace_X 𝔐
   haveI : ConnectedSpace 𝔐.t.G.left := GeometricallyConnected.connectedSpace 𝔐.t.G.hom 𝔐.t.G.hom.isOpenMap
   obtain ⟨g, hdim⟩ := exists_dim_of_preconnected 𝔐.t.G.hom (Classical.arbitrary _)
-  have hVB := (GlobalTheory.T.lie_lattice_vector_bundle_of_smooth 𝔐.X 𝔐.t.G g Ω 𝔐.ξ 𝔐.Li 𝔐.M hgen hdim).1
+  have hVB := (_root_.GlobalTheory.CompanionTheory.Ar.lieLat_isVB 𝔐.X 𝔐.t.G g Ω 𝔐.ξ 𝔐.Li 𝔐.M hgen hdim).1
   let p₀ : Cpt 𝔐.ξ := ⟨x, 𝔐.all x⟩
   obtain ⟨U₁, hx₁, b, hbs, hbf⟩ := Fl.sub s p₀ (Set.mem_univ _)
   obtain ⟨U₂, hx₂, c', hcs, hcf⟩ := hVB p₀ (Set.mem_univ _)

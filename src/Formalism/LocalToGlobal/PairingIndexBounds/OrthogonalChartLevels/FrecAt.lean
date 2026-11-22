@@ -4,7 +4,7 @@ public import Formalism.LocalToGlobal.PairingIndexBounds.OrthogonalChartLevels.B
 public import Formalism.LocalToGlobal.PairingIndexBounds.OrthogonalChartLevels.GramLevelZeroEqReindex
 public import Formalism.LocalToGlobal.PairingIndexBounds.OrthogonalChartLevels.FdOfCharts
 public import Formalism.LocalToGlobal.InertKernelTheory.SecondKernelEntrywiseLastLevel
-public import Formalism.SharpRestriction.GrowthBounds.ChartComparison
+public import Formalism.SharpRestriction.GrowthBounds.Bundle0006
 public import Formalism.LocalToGlobal.GlobalTheory.GL3.PHfTrace
 
 @[expose] public section

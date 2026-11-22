@@ -2,7 +2,7 @@ module
 
 public import Formalism.CharacterColumnKernels.CharacterColumnKernelEqualityForm
 public import Formalism.CharacterColumnKernels.StatementGC
-public import Formalism.CharacterColumnKernels.IdempotentNormalForms.GlobalModuleOf
+public import Formalism.CharacterColumnKernels.IdempotentNormalForms.Bundle0005
 public import Formalism.CharacterColumnKernels.IdempotentNormalForms.CupKillAdm
 public import Formalism.CharacterColumnKernels.IdempotentNormalForms.GlobalConcreteOf
 public import Formalism.CharacterColumnKernels.IdempotentNormalForms.BlockRhoFull

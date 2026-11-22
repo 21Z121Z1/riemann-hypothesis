@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.InverseDerivativeContinuity
+public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0088
 
 @[expose] public section
 

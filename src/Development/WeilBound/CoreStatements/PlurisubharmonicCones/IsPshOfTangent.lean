@@ -3,7 +3,7 @@ module
 public import Mathlib
 public import ReciprocityTheory.AnalyticForms.PlurisubharmonicFunctions.PshExtB
 public import ReciprocityTheory.AnalyticForms.AnalyticCharts.Osgood
-public import Formalism.QuotientMetricDivisors.HermitianTwistDivisors.DeterminantCauchySchwarz
+public import Formalism.QuotientMetricDivisors.HermitianTwistDivisors.Bundle0001
 
 @[expose] public section
 

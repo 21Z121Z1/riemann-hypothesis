@@ -1,6 +1,6 @@
 module
 
-public import Formalism.LocalToGlobal.InertKernelTheory.StatementAlgT
+public import Formalism.LocalToGlobal.InertKernelTheory.Bundle0004
 public import Formalism.LocalToGlobal.InertKernelTheory.InertCoprimeLemmas.AlgKleinPf
 
 @[expose] public section

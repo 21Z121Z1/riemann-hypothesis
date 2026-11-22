@@ -1,12 +1,12 @@
 module
 
 public import Mathlib
-public import Formalism.LocalToGlobal.CharacterGerms.SelfConjugateRowData
-public import Formalism.LocalToGlobal.CharacterGerms.RowTieLab
-public import Formalism.LocalToGlobal.CharacterGerms.CartesianBoundOnCurves
+public import Formalism.LocalToGlobal.CharacterGerms.Bundle0017
+public import Formalism.LocalToGlobal.CharacterGerms.Bundle0019
+public import Formalism.LocalToGlobal.CharacterGerms.Bundle0006
 public import Formalism.LocalToGlobal.CharacterGerms.RestNonneg
 public import Formalism.LocalToGlobal.Divisibility.Numbers
-public import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.ExistsMulInvolutionAddOneMemPow
+public import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.Bundle0001
 
 @[expose] public section
 

@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.PKHCechMapDeg
+public import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.Bundle0070
 
 @[expose] public section
 

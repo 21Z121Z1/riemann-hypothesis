@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Formalism.LocalRingCardinality.DataErr
+public import Formalism.LocalRingCardinality.Bundle0004
 
 @[expose] public section
 

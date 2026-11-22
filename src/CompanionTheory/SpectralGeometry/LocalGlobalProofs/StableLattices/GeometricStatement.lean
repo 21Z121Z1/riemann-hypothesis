@@ -4,14 +4,13 @@ public import Mathlib
 public import CompanionTheory.RealGroups.DiscreteSeries.DiscreteSeriesClassification.DiscreteSeriesExhaustion.MatrixCoefficientDecay.HilbertSchmidtDecay.AbsoluteL2Bound
 public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.HsConjTranspose
 public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.HaarExistence
-public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.IwasawaParabolicCompactFactorizationStatement
-public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.UnitaryMaximalCompactIsCompactStatement
-public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.HilbertSchmidtProjectionBoundStatement
-public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.ExistsGradedMatrixEigenBoundStatement
-public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.InverseGramEigenvaluesSumHsStatement
-public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.EigenvalueGapExistsStatement
-public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.FiniteNetOfGradedProjectionsStatement
-public import Formalism.RealPlaceAnalysis.Complexify
+public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.Bundle0051
+public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.Bundle0022
+public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.Bundle0052
+public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.Bundle0007
+public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.Bundle0001
+public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.Bundle0050
+public import Formalism.RealPlaceAnalysis.Bundle0001
 
 @[expose] public section
 
@@ -308,7 +307,7 @@ theorem gap (g : S7.UJ ε) (hn : (n : ℝ) < hs (S7.toM g)) :
       _ ≤ l i₁ := le_abs_self _
       _ ≤ L := hmax _ (Finset.mem_univ _)
   have hLpos : 0 < L := lt_of_lt_of_le (Real.log_pos hq) hLlog
-  obtain ⟨r, hr, hgap⟩ := GlobalTheory.T.exists_gap_interval_avoiding_finite_family n l L hLpos (fun i => ⟨abs_nonneg _, hmax i (Finset.mem_univ _)⟩) ⟨i₀, rfl⟩
+  obtain ⟨r, hr, hgap⟩ := _root_.GlobalTheory.CompanionTheory.UGeoGap.exists_gap_of_mem_Icc_top n l L hLpos (fun i => ⟨abs_nonneg _, hmax i (Finset.mem_univ _)⟩) ⟨i₀, rfl⟩
   set w := L / ((n : ℝ) + 1) with hw
   have hwpos : 0 < w := div_pos hLpos (by positivity)
   have hLw : L = ((n : ℝ) + 1) * w := by rw [hw]; field_simp
@@ -368,7 +367,7 @@ theorem gap (g : S7.UJ ε) (hn : (n : ℝ) < hs (S7.toM g)) :
       norm_num at hi
     · simp only [f, if_neg hc, if_neg h2] at hi
       norm_num at hi
-  obtain ⟨A', hA', hy⟩ := GlobalTheory.T.exists_graded_matrix_eigen_bound n ε g hT f α β hf
+  obtain ⟨A', hA', hy⟩ := _root_.GlobalTheory.CompanionTheory.UGeo.SpecGrad.grading_of_spectral n ε g hT f α β hf
     (fun i hi => hneg _ hi)
     (fun i hi => by
       have h1 := hzero i hi
@@ -396,7 +395,7 @@ theorem cover (n : ℕ) (ε : Fin n → Bool) :
       ∀ g : S7.UJ ε, R₀ < hs (S7.toM g) → ∃ (j : Fin m) (x : PSub ε (A j)) (k : S7.KG ε),
         g = (x : S7.UJ ε) * (k : S7.UJ ε) ∧
         c₁ * Real.log (hs (S7.toM (x : S7.UJ ε))) ≤ tauG (A j) (S7.toM (x : S7.UJ ε)) := by
-  obtain ⟨m, A, hA, hnet⟩ := GlobalTheory.T.finite_net_of_graded_projections n ε
+  obtain ⟨m, A, hA, hnet⟩ := _root_.GlobalTheory.CompanionTheory.UGeo.GradNet.exists_net n ε
   set large₂ := Real.log (20 * (n : ℝ) ^ 2) with hLg
   set E := 2 * ((n : ℝ) + 1) * large₂ + 2 * Real.log n with hE
   refine ⟨m, A, 1 / (4 * ((n : ℝ) + 1)), n + Real.exp E, by positivity, hA, fun g hg => ?_⟩
@@ -412,7 +411,7 @@ theorem cover (n : ℕ) (ε : Fin n → Bool) :
     · exact h
   have hnR : (1 : ℝ) ≤ n := by exact_mod_cast hn0
   subst hxk
-  obtain ⟨ea, eb⟩ := GlobalTheory.T.hilbert_schmidt_projection_bound n ε (A j) A' α β x k (hA j) hA' h1 h2 hβ1 hβα hy
+  obtain ⟨ea, eb⟩ := _root_.GlobalTheory.CompanionTheory.UGeo.Est.est n ε (A j) A' α β x k (hA j) hA' h1 h2 hβ1 hβα hy
   have hs_eq : hs (S7.toM ((x : S7.UJ ε) * (k : S7.UJ ε))) = hs (S7.toM (x : S7.UJ ε)) :=
     hs_mul_unitary _ _ (toMK_unitary k)
   rw [hs_eq] at hlog hg hn1

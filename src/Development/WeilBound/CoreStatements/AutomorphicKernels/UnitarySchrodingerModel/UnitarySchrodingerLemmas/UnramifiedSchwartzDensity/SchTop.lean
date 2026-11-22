@@ -1,15 +1,15 @@
 module
 
 public import Development.WeilBound.CoreStatements.AutomorphicKernels.UnitarySchrodingerModel.UnitarySchrodingerLemmas.UnramifiedSchwartzDensity.Assemble
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ArchimedeanFamilyContinuityStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ArchimedeanSectionStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ArchimedeanCoordinatesStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ArchimedeanScalingStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FinitePartOpenStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.DensityIntegralStatement
+public import Mathlib
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0510
+public import Development.WeilBound.CoreStatements.AutomorphicKernels.UnitarySchrodingerModel.UnitarySchrodingerLemmas.UnramifiedSchwartzDensity.SchCut
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ArchimedeanSection
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0514
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0511
 
 @[expose] public section
 
 theorem PositivityTheory.PfSWUS.SchInf.schwartzDensInf : PositivityTheory.PfSWUS.HMass.SchwartzDensInf :=
-  PositivityTheory.PfSWUS.SchInf.schwartzDensInf_of GlobalTheory.T.archimedean_family_continuity GlobalTheory.T.archimedean_section GlobalTheory.T.archimedean_coordinates GlobalTheory.T.archimedean_scaling GlobalTheory.T.finite_part_open
+  PositivityTheory.PfSWUS.SchInf.schwartzDensInf_of _root_.GlobalTheory.CompanionTheory.PushFam.integrable_continuousAt_of_linear_push _root_.GlobalTheory.CompanionTheory.SecInf.secInf _root_.GlobalTheory.CompanionTheory.SW.CoordR.coordInf _root_.GlobalTheory.CompanionTheory.SW.HaarScale.scaleInf _root_.GlobalTheory.CompanionTheory.SW.FinOpenGram.finOpen
     GlobalTheory.T.density_integral

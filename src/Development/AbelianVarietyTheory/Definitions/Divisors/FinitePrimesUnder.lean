@@ -1,13 +1,13 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsNotRelZero
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0047
 public import Development.AbelianVarietyTheory.Statements.CuspidalUnitaryTwists.ExistsSmallSpherical
-public import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.VpBounds
+public import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.Bundle0007
 public import Development.AbelianVarietyTheory.Counterexamples.RotationExamples.LeafHypothesesConst
 public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsOfBalanced
 public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.VacuumUnderAdelicPairModulusOne
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.InducedTypeThetaGenusOnePermutes
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0224
 
 @[expose] public section
 

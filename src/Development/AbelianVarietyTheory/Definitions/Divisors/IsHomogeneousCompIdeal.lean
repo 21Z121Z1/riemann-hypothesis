@@ -1,18 +1,18 @@
 module
 
 public import Mathlib
-public import Formalism.LocalToGlobal.ProjectiveLattices.CurveComp
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0036
 public import Development.AbelianVarietyTheory.Definitions.Foundations.IsProbabilityMeasureMuPart
 public import Development.AbelianVarietyTheory.Definitions.Divisors.AevalEqZeroOfMemConeIdeal
-public import Development.AbelianVarietyTheory.Proofs.GenericRegularity.GenFrExAndGenFromTest
+public import Development.AbelianVarietyTheory.Proofs.GenericRegularity.Bundle0029
 public import Formalism.LocalRingCardinality.DataDIV
 public import Formalism.LocalRingCardinality.DataParams₂
-public import Formalism.SharpRestriction.Divisibility.PrinLevClass
+public import Formalism.SharpRestriction.Divisibility.Bundle0001
 public import Formalism.SharpRestriction.Divisibility.WeightThresholdDefs
 public import Formalism.SharpRestriction.ParamsHeightRankConstant
 public import Formalism.DegreeFormula.FlagDegFormula
-public import Development.AbelianVarietyTheory.Definitions.Foundations.CurveCl
-public import Development.AbelianVarietyTheory.Definitions.Divisors.IsLimDeg
+public import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0003
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0019
 
 @[expose] public section
 

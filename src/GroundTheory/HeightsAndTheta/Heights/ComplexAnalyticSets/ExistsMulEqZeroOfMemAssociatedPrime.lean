@@ -1,10 +1,10 @@
 module
 
 public import Mathlib
-public import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.Imports
-public import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.PCMRegularElement
-public import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.PFlatNormalFibres
-public import GroundTheory.ArithmeticGeometry.SchemeCohomology.RegularCurve
+public import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.Bundle0024
+public import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.Bundle0106
+public import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.Bundle0038
+public import GroundTheory.ArithmeticGeometry.SchemeCohomology.Bundle0003
 
 @[expose] public section
 

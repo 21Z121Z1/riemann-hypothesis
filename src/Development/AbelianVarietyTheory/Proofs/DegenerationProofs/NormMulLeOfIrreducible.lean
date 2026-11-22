@@ -2,8 +2,8 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsBasisLatticeNear
-public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.AddHomExtSingle
-public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsAdaptedBasisTestLattice
+public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.Bundle0050
+public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.Bundle0055
 public import Development.AbelianVarietyTheory.Definitions.Degenerations.BaseFacts
 public import Development.AbelianVarietyTheory.Definitions.Degenerations.IsAffineSplitTorusLeft
 public import Development.AbelianVarietyTheory.Definitions.Degenerations.CompanionTheory

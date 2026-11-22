@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Formalism.LocalToGlobal.SiegelLatticeTheory.CokernelGLCounts.RankPointCounts.CoefPhase
-public import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.ProdFormulaE
+public import Formalism.LocalToGlobal.SiegelLatticeTheory.CokernelGLCounts.RankPointCounts.Bundle0050
+public import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.Bundle0013
 
 @[expose] public section
 

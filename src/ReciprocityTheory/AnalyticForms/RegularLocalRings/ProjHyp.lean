@@ -1,9 +1,8 @@
 module
 
 public import ReciprocityTheory.AnalyticForms.RegularLocalRings.ProjDehom
-public import ReciprocityTheory.AnalyticForms.RegularLocalRings.LogResStC
-public import ReciprocityTheory.AnalyticForms.RegularLocalRings.FinTypeQE
-public import ReciprocityTheory.AnalyticForms.RegularLocalRings.ProjHypA
+public import ReciprocityTheory.AnalyticForms.RegularLocalRings.Bundle0002
+public import ReciprocityTheory.AnalyticForms.RegularLocalRings.Bundle0011
 public import ReciprocityTheory.AnalyticForms.RegularLocalRings.ProjHypStalk
 public import ReciprocityTheory.AnalyticForms.RegularLocalRings.ProjHypB
 public import ReciprocityTheory.AnalyticForms.RegularLocalRings.ProjHypC

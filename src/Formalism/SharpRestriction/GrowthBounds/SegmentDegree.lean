@@ -1,18 +1,15 @@
 module
 
 public import Formalism.SharpRestriction.GrowthBounds.SegmentDegree.NonemptyDvrSettingOfStandard
-public import Formalism.SharpRestriction.GrowthBounds.SegmentDegree.Coarse
-public import Formalism.SharpRestriction.GrowthBounds.SegmentDegree.RestCountOf
-public import Formalism.SharpRestriction.GrowthBounds.SegmentDegree.GoodPathWeight
+public import Formalism.SharpRestriction.GrowthBounds.SegmentDegree.Bundle0001
+public import Formalism.SharpRestriction.GrowthBounds.SegmentDegree.Bundle0002
+public import Formalism.SharpRestriction.GrowthBounds.SegmentDegree.Bundle0003
 public import Formalism.SharpRestriction.GrowthBounds.SegmentDegree.StrictMonoIntExists
-public import Formalism.SharpRestriction.GrowthBounds.SegmentDegree.SelIsComplRestrictSupport
-public import Formalism.SharpRestriction.GrowthBounds.SegmentDegree.FiniteRestrictSupport
-public import Formalism.SharpRestriction.GrowthBounds.SegmentDegree.DiscriminantNonzeroModUniformiser
-public import Formalism.SharpRestriction.GrowthBounds.SegmentDegree.DivMulSubLeDivSubDiv
+public import Formalism.SharpRestriction.GrowthBounds.SegmentDegree.Bundle0005
+public import Formalism.SharpRestriction.GrowthBounds.SegmentDegree.Bundle0021
+public import Formalism.SharpRestriction.GrowthBounds.SegmentDegree.Bundle0020
 public import Formalism.SharpRestriction.GrowthBounds.SegmentDegree.SumSingleApplyZero
-public import Formalism.SharpRestriction.GrowthBounds.SegmentDegree.BetaRatioBound
-public import Formalism.SharpRestriction.GrowthBounds.SegmentDegree.GoodPathWeightAlt
-public import Formalism.SharpRestriction.GrowthBounds.SegmentDegree.RestLamOf
+public import Formalism.SharpRestriction.GrowthBounds.SegmentDegree.Bundle0022
 public import Formalism.SharpRestriction.GrowthBounds.SegmentDegree.M0LeBwOfIsW
 public import Formalism.SharpRestriction.GrowthBounds.SegmentDegree.BfamAtWLetterEq
 

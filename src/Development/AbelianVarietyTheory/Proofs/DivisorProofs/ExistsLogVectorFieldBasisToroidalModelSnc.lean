@@ -1,10 +1,10 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Divisors.HasDefect
-public import Development.AbelianVarietyTheory.Definitions.Divisors.HasRigidChart
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0060
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0071
 public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.ToroidalCompactificationBis
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RegularSequenceExtendCoords
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2210
 
 @[expose] public section
 

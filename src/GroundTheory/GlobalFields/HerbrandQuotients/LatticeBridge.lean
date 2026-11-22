@@ -1,10 +1,9 @@
 module
 
 public import Mathlib
-public import GroundTheory.GlobalFields.HerbrandQuotients.Cyclic
-public import GroundTheory.GlobalFields.HerbrandQuotients.Lattice
+public import GroundTheory.GlobalFields.HerbrandQuotients.Bundle0001
+public import GroundTheory.GlobalFields.HerbrandQuotients.Bundle0002
 public import GroundTheory.GlobalFields.HerbrandQuotients.Permutation
-public import GroundTheory.GlobalFields.HerbrandQuotients.CycTate
 
 @[expose] public section
 

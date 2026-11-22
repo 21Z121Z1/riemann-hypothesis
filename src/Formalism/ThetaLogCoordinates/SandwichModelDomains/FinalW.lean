@@ -1,11 +1,8 @@
 module
 
-public import Formalism.ThetaLogCoordinates.SandwichModelDomains.SandwichModelProofs.GlFirstLineDividedPowers
+public import Formalism.ThetaLogCoordinates.SandwichModelDomains.SandwichModelProofs.Bundle0001
 public import Formalism.ThetaLogCoordinates.SandwichModelDomains.SandwichModelProofs.SwappedHighestWeightNeZero
-public import Formalism.ThetaLogCoordinates.SandwichModelDomains.SandwichModelProofs.Spread
-public import Formalism.ThetaLogCoordinates.SandwichModelDomains.SandwichModelProofs.Descent
-public import Formalism.ThetaLogCoordinates.SandwichModelDomains.SandwichModelProofs.Ascent
-public import Formalism.ThetaLogCoordinates.SandwichModelDomains.SandwichModelProofs.Assemble
+public import Formalism.ThetaLogCoordinates.SandwichModelDomains.SandwichModelProofs.Bundle0002
 
 @[expose] public section
 

@@ -2,9 +2,9 @@ module
 
 public import Mathlib
 public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.OverLaUnique
-public import Development.AbelianVarietyTheory.Proofs.HeightProofs.NoCommonZeroIffOfSec
-public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.ExistsFiniteExtAllModelsUniformised
-public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.TypingsAgree
+public import Development.AbelianVarietyTheory.Proofs.HeightProofs.Bundle0060
+public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0163
+public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0090
 
 @[expose] public section
 

@@ -2,35 +2,34 @@ module
 
 public import Mathlib
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.ExistsZeroGt
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.DataRigidSt
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.DvrLem
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.Bundle0011
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.Bundle0004
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.UnifUniqSt
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.ThetaVV
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.DiscreteValuationRings.PhiGenPf
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.DiscreteValuationRings.VRatioGtStatement
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.DiscreteValuationRings.ValuationMultiplicationInvariance
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.DiscreteValuationRings.Bundle0012
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.DiscreteValuationRings.Bundle0004
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.DiscreteValuationRings.PeriodicValuation
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.DiscreteValuationRings.TwistBC
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.DiscreteValuationRings.ExistsRosatiGen
 public import Development.AbelianVarietyTheory.Definitions.Uniformization.TXFrame
-public import Development.AbelianVarietyTheory.Definitions.Uniformization.AllDV
+public import Development.AbelianVarietyTheory.Definitions.Uniformization.Bundle0001
 public import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.RelationsAreFunctions
-public import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.ThetaGrpActsLinearly
-public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ExistsThetaActs
-public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ExistsSmulEqBilinOfAnisotropic
-public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ExistsLeOnFinset
-public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ExistsFrameRatio
-public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ExpBijFAndExpandsFLin
-public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.CrossIffOfIsActOf
-public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.CoeffMapDomainMul
-public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.CubNMul
-public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.CrossRelationGivesConvolutionRelationStatement
+public import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.Bundle0019
+public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.Bundle0026
+public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.Bundle0002
+public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.Bundle0049
+public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.Bundle0027
+public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.Bundle0069
+public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.Bundle0047
+public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.Bundle0032
+public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.CrossRelationGivesConvolutionRelation
 public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ValueAtOrigin
-public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ExistsSecTwist
-public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.UniformisationTorsionIdentificationWithPairing
-public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.UniformisationTorsionMapsCompatibleInLevelStatement
-public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ValuationsTorusPointsFramesFamilyTerms
-public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.SmallTorusPointKeepingRatiosIsZeroStatement
+public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.Bundle0106
+public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.Bundle0128
+public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.Bundle0129
+public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.Bundle0090
+public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.Bundle0107
 
 @[expose] public section
 
@@ -159,8 +158,8 @@ theorem main : LL → TwistBCSpanStatement → TWM.VRatioGtStatement → TWState
   have := E.homA
   have CV := GlobalTheory.UT.CoefVal.main hL h₁ h₂ h₃ h₄ V hV ϖ hϖ D Q hQ F v hv
   have EV := GlobalTheory.UT.EvalZero.value_at_origin hL V _ hA D A G hG U F
-  have LU := GlobalTheory.T.uniformisation_torsion_maps_compatible_in_level hL V _ hA D A G hG U F
-  have MX := GlobalTheory.T.crossRelation_gives_convolution_relation hL V _ hA D A G hG U F E
+  have LU := _root_.GlobalTheory.LevelCompat.qkToAkU_level hL V _ hA D A G hG U F
+  have MX := _root_.GlobalTheory.UT.MixedConv.sumF_conv_of_cross hL V _ hA D A G hG U F E
   have BJ := (expBijF_and_expandsF_lin hL V _ hA D A G hG U).1 F
   have SV := fun Ix => AdicValSum.main V ϖ hϖ F v hv Ix
   obtain ⟨f, f₁, f₂, f₃, -⟩ := GlobalTheory.TorsionIso.torsion_eq hL V _ hA D A G hG U F k hk
@@ -186,7 +185,7 @@ theorem main : LL → TwistBCSpanStatement → TWM.VRatioGtStatement → TWState
   have gu : ∀ (g : GtPtF D.toPre F) (a b : D.toPre.X →+ ℚ), GtV hϖ hv g a → GtV hϖ hv g b → a = b := fun g a b ha hb =>
     (CV g).1.unique ha hb
   have k0 : (0 : ℚ) < k := by exact_mod_cast hk
-  refine GlobalTheory.T.smallTorusPoint_keeping_ratios_isZero hL h₁ h₂ h₃ h₄ V hV ϖ hϖ D Q hQ F v hv k hk d 0 l ho hl (fun m => ?_) fun n j hn hj w₁ hw₁ => ?_
+  refine _root_.GlobalTheory.UT.SmallZero.main hL h₁ h₂ h₃ h₄ V hV ϖ hϖ D Q hQ F v hv k hk d 0 l ho hl (fun m => ?_) fun n j hn hj w₁ hw₁ => ?_
   · have e₁ := gu g' l' (l + l₁) hl' ((CV d).2.2.2.1 p₁.g g' l l₁ hd hl hl₁)
     have e₂ := gu p₁.g l₁ ((k : ℚ)⁻¹ • (Int.castAddHom ℚ).comp (QForm.bHom hϖ D hQ p₁.y)) hl₁ (by
       have := (CV p₁.g).2.2.2.2.1 k hk p₁

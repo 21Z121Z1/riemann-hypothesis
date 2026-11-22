@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Proofs.GlobalProofs.IsSmoothVec
+public import Development.AutomorphicSpectrum.Proofs.GlobalProofs.Bundle0031
 
 @[expose] public section
 

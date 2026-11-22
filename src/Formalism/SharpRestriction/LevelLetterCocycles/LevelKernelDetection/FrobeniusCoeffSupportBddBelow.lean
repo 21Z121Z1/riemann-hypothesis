@@ -1,10 +1,8 @@
 module
 
-public import Formalism.SharpRestriction.LevelLetterCocycles.LevelKernelDetection.PrimitiveRootPowPrime
-public import Formalism.SharpRestriction.LevelLetterCocycles.LevelKernelDetection.CrystallineToDeRhamInjective
-public import Formalism.SharpRestriction.LevelLetterCocycles.LevelKernelDetection.PfKapUnit
-public import Formalism.SharpRestriction.LevelLetterCocycles.LevelKernelDetection.PfLvLoc
-public import Formalism.SharpRestriction.LevelLetterCocycles.LevelKernelDetection.PfLvExp
+public import Formalism.SharpRestriction.LevelLetterCocycles.LevelKernelDetection.Bundle0004
+public import Formalism.SharpRestriction.LevelLetterCocycles.LevelKernelDetection.Bundle0005
+public import Formalism.SharpRestriction.LevelLetterCocycles.LevelKernelDetection.Bundle0003
 public import Formalism.SharpRestriction.LevelLetterCocycles.ArcCoordinatesOfMembership
 
 @[expose] public section

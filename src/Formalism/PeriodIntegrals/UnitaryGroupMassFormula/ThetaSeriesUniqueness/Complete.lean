@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Formalism.PeriodIntegrals.LatDefs
-public import Formalism.PeriodIntegrals.SigmaStarUniq
-public import Formalism.PeriodIntegrals.AreaLat
+public import Formalism.PeriodIntegrals.Bundle0004
+public import Formalism.PeriodIntegrals.Bundle0012
+public import Formalism.PeriodIntegrals.Bundle0011
 
 @[expose] public section
 

@@ -1,6 +1,6 @@
 module
 
-public import Development.WeilBound.ThetaLifts.LatticeBasics.SiegelWeilAnisoOf
+public import Development.WeilBound.ThetaLifts.LatticeBasics.Bundle0026
 
 @[expose] public section
 

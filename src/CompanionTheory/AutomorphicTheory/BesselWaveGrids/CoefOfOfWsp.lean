@@ -1,20 +1,20 @@
 module
 
 public import CompanionTheory.AutomorphicTheory.BesselWaveGrids.SpanBall
-public import CompanionTheory.AutomorphicTheory.BesselWaveGrids.EigStrOfMem
+public import CompanionTheory.AutomorphicTheory.BesselWaveGrids.Bundle0004
 public import CompanionTheory.AutomorphicTheory.BesselWaveGrids.ProductMoment
 public import CompanionTheory.AutomorphicTheory.BesselWaveGrids.BigCellDerivativeExpansionOfIsDSOfCoefOf
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutNFIdPolTop
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0282
 public import Formalism.HermitianCurvature.HermitianCurvatureProofs.NormSqUnitNormalizationLe
 public import Formalism.HermitianCurvature.BesselNonvanishingReduction
 public import Mathlib
 public import Formalism.PeriodIntegrals.UpqRep
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.UhMeasurableSet
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0039
 public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.HermitianFormalDegree.VUnitInvVal
 public import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutLemB
 public import Formalism.HermitianCurvature.WeylElementCommutesLevelOne
-public import Formalism.PeriodIntegrals.KFinSmooth
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.BigCellZetaMinors
+public import Formalism.PeriodIntegrals.Bundle0011
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0040
 
 @[expose] public section
 
@@ -278,7 +278,7 @@ theorem weighted : ∃ c₃ : ℝ, ∀ {t : ∀ n : ℕ, (Fin n → Bool) → �
         have := congrFun e s
         simp only [add_right_inj, Int.cast_inj] at this
         exact this)) (hF _) (hF _)) hν
-    rw [← GlobalTheory.T.jN2_eq_normSq_base, ← GlobalTheory.T.jN2_eq_normSq_base] at h1
+    rw [← _root_.GlobalTheory.jN2_eq_normSq_base.besselNormSq_eq_bigCellNormSq, ← _root_.GlobalTheory.jN2_eq_normSq_base.besselNormSq_eq_bigCellNormSq] at h1
     refine h1.trans (lintegral_mono fun c => ENNReal.ofReal_le_ofReal ?_)
     by_cases hc : D.IsLocPt (TBB.bigPt P.r c) (P.r + 1) ∧ 0 < TBB.Gp p (TBB.bigPt P.r c)
     · have hne : mnr hj (TBB.bigPt P.r c) ^ a ≠ 0 := pow_ne_zero _ (mnr_bigPt_ne hj c hc.1)

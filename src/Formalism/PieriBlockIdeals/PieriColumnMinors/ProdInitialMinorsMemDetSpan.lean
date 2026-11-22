@@ -1,15 +1,13 @@
 module
 
-public import Formalism.PieriBlockIdeals.StatementLA
+public import Formalism.PieriBlockIdeals.Bundle0003
 public import Formalism.GradedWeylDivisibility.FinalC
-public import Formalism.GradedWeylDivisibility.FockSpaceTableaux.LDlatLemmas
+public import Formalism.GradedWeylDivisibility.FockSpaceTableaux.Bundle0012
 public import Mathlib
-public import Formalism.PieriBlockIdeals.Statement
-public import Formalism.RankGapBounds.LargePrimeFactor
-public import Formalism.RankGapBounds.CloudMinFalse
-public import Formalism.RankGapBounds.RankGapProofs.CardLargePrimeFactorsLeOneHolds
-public import Formalism.PieriBlockIdeals.PieriColumnMinors.MaxValEqZeroOfLt
-public import Formalism.PieriBlockIdeals.PieriColumnMinors.LocalComponentGL
+public import Formalism.PieriBlockIdeals.Bundle0001
+public import Formalism.RankGapBounds.Bundle0001
+public import Formalism.RankGapBounds.RankGapProofs.Bundle0001
+public import Formalism.PieriBlockIdeals.PieriColumnMinors.Bundle0002
 
 @[expose] public section
 

@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Degenerations.IsBasisB
+public import Development.AbelianVarietyTheory.Definitions.Degenerations.Bundle0002
 public import Development.AbelianVarietyTheory.Definitions.Degenerations.IsNormalSchemeSp
 
 @[expose] public section

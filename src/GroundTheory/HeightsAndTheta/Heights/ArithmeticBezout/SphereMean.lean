@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.Statements
-public import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.SphereMeanSlice
+public import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.Bundle0016
 
 @[expose] public section
 

@@ -3,12 +3,13 @@ module
 public import Mathlib
 public import Development.AutomorphicSpectrum.Definitions.MetricPeriods.Pull1
 public import Development.AutomorphicSpectrum.Definitions.MetricPeriods.IsPeriodOn
-public import Development.AutomorphicSpectrum.Proofs.MetricProofs.UpVApply
+public import Development.AutomorphicSpectrum.Proofs.MetricProofs.Bundle0054
 public import Development.AutomorphicSpectrum.Proofs.MetricProofs.FlagModelBaseProjectionPoints
-public import Development.AutomorphicSpectrum.Proofs.MetricProofs.FrameDataLocalResolutionOpenStatement
-public import Development.AutomorphicSpectrum.Proofs.MetricProofs.FrameDataLocalIntegrabilityStatement
-public import Development.AutomorphicSpectrum.Proofs.MetricProofs.PMatStepColsEntryStatement
-public import Development.AutomorphicSpectrum.Proofs.MetricProofs.MinorIJLowerUniSwapStatement
+public import Development.AutomorphicSpectrum.Proofs.MetricProofs.Bundle0057
+public import Development.AutomorphicSpectrum.Proofs.MetricProofs.Bundle0121
+public import Development.AutomorphicSpectrum.Proofs.MetricProofs.Bundle0060
+public import Development.AutomorphicSpectrum.Proofs.MetricProofs.Bundle0058
+public import Development.AutomorphicSpectrum.Proofs.MetricProofs.Bundle0059
 public import Development.AutomorphicSpectrum.Proofs.MetricProofs.FlagAdjacentChartNinth
 
 @[expose] public section
@@ -224,8 +225,8 @@ theorem line_zero (hc : IsPCtx M Rb keep κ v F kb V bl r h) {w : Fin e → ℂ}
     (hD : HasFDerivAt (fun w' => affCoord p (pPhi M F keep v bl h ε w')) D w)
     {u : Fin e → ℂ} (hu : D u = 0) (hb0 : pB ε u = 0) : u = 0 := by
   have hb : IsBaseChart M Rb F kb V bl := hc.2.2.2.1
-  have hE := GlobalTheory.T.frameData_local_resolution_open K ι Φ y Ψ N j M n e Rb keep Kk ιk κ v F kb V bl r h ε hc
-  have hR := GlobalTheory.T.frameData_local_integrability K ι Φ y Ψ N j M n e Rb keep Kk ιk κ v F kb V bl r h ε hc
+  have hE := _root_.GlobalTheory.CompanionTheory.Ar.PB.PFl.Exact.chart_points K ι Φ y Ψ N j M n e Rb keep Kk ιk κ v F kb V bl r h ε hc
+  have hR := _root_.GlobalTheory.CompanionTheory.Ar.PB.PFl.ChartRead.chart_reads K ι Φ y Ψ N j M n e Rb keep Kk ιk κ v F kb V bl r h ε hc
   have hwB : ∀ s : ℂ, pB ε (w + s • u) = pB ε w := fun s => by
     funext i
     have : u (ε (Sum.inl i)) = 0 := congrFun hb0 i

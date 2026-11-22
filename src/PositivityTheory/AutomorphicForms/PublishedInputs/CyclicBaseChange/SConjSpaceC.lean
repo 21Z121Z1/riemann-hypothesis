@@ -2,7 +2,7 @@ module
 
 public import PositivityTheory.AutomorphicForms.PublishedInputs.CyclicBaseChange.IsGalAd
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.PublishedTheorems.GelfandKazhdanReal
-public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.Brauer
+public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.Bundle0046
 
 @[expose] public section
 

@@ -1,7 +1,7 @@
 module
 
-public import ReciprocityTheory.AnalyticForms.PotentialTheory.FubiniStudyPotentialProductIsPotential
-public import ReciprocityTheory.AnalyticForms.PlurisubharmonicFunctions.LintegralImageEqLintegralNormSqDetMul
+public import ReciprocityTheory.AnalyticForms.PotentialTheory.Bundle0006
+public import ReciprocityTheory.AnalyticForms.PlurisubharmonicFunctions.Bundle0004
 public import ReciprocityTheory.AnalyticForms.PlurisubharmonicFunctions.MdiscSt
 
 @[expose] public section

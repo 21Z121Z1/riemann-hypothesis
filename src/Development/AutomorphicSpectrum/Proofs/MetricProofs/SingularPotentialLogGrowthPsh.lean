@@ -5,9 +5,9 @@ public import Development.AutomorphicSpectrum.Definitions.MetricPeriods.IsTwiceD
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArithmeticIntersection.CompRightEqZero
 public import GroundTheory.HeightsAndTheta.Heights.Antisymmetric.Statements
 public import ReciprocityTheory.AnalyticForms.PlurisubharmonicFunctions.PshExt
-public import ReciprocityTheory.AnalyticForms.PlurisubharmonicFunctions.PshBasic
-public import ReciprocityTheory.AnalyticForms.PotentialTheory.PshShiftA
-public import ReciprocityTheory.AnalyticForms.PotentialTheory.LogInt
+public import ReciprocityTheory.AnalyticForms.PlurisubharmonicFunctions.Bundle0004
+public import ReciprocityTheory.AnalyticForms.PotentialTheory.Bundle0001
+public import ReciprocityTheory.AnalyticForms.PotentialTheory.Bundle0007
 public import ReciprocityTheory.AnalyticForms.LeviForms.TailCut
 
 @[expose] public section

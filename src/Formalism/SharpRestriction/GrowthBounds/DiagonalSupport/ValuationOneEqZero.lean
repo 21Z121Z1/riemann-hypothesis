@@ -1,6 +1,6 @@
 module
 
-public import Formalism.SharpRestriction.GrowthBounds.DiagonalSupport.LevImgCoeffBigM
+public import Formalism.SharpRestriction.GrowthBounds.DiagonalSupport.Bundle0004
 
 @[expose] public section
 

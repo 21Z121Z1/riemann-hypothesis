@@ -1,8 +1,7 @@
 module
 
 public import Development.AutomorphicArithmetic.MeanSquareBounds.PrimeSetTwoBounds
-public import Development.AutomorphicArithmetic.MeanSquareBounds.Stage1Succ
-public import Development.AutomorphicArithmetic.MeanSquareBounds.CharOf
+public import Development.AutomorphicArithmetic.MeanSquareBounds.Bundle0006
 
 @[expose] public section
 

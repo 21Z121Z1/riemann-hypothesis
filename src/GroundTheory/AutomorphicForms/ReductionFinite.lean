@@ -2,9 +2,9 @@ module
 
 public import Mathlib
 public import GroundTheory.AutomorphicForms.ReductionHeight
-public import GroundTheory.AutomorphicForms.ReductionIdele
+public import GroundTheory.AutomorphicForms.Bundle0019
 public import GroundTheory.GlobalFields.Adele.Discrete
-public import GroundTheory.GlobalFields.Adele.Compact
+public import GroundTheory.GlobalFields.Adele.Bundle0002
 public import GroundTheory.GlobalFields.IdeleGroups.Restricted
 public import GroundTheory.GlobalFields.IdeleGroups.UnitBound
 

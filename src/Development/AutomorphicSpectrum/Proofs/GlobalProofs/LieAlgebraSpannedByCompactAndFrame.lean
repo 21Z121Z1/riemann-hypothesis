@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Proofs.GlobalProofs.IoInjective
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.QuadraticGelfandInvariantEqNegSumSqDefinite
+public import Development.AutomorphicSpectrum.Proofs.GlobalProofs.Bundle0040
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0168
 
 @[expose] public section
 

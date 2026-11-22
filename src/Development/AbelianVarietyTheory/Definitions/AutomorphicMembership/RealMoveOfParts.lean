@@ -1,12 +1,12 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.StrictHenselianAcyclic
-public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.Forms
-public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.OfFirstStepLoc
+public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.Bundle0044
+public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.Bundle0035
+public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0033
 public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.SignAtBasePlaceEqEmbedding
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsUnlocalizedSaturatedState
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ThetaPsi
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0671
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0678
 
 @[expose] public section
 

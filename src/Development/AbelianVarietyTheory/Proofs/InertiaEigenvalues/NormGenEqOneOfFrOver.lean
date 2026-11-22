@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CabsGenEqOneOfNormPin
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1414
 public import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.FramedPointsLiftToLevelCover
 
 @[expose] public section

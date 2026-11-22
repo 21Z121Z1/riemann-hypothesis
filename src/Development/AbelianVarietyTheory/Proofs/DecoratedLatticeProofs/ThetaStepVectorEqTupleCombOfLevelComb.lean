@@ -2,30 +2,30 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.FrameTopAlt
-public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.PairForm
+public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.Bundle0022
 public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.TailRd
 public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.NotBadPrimeBase
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ValuationEqZeroOfRootOfSUnitRatio
-public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.ChainParSucc
-public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.ExistsNormLeHeightPow
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0350
+public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.Bundle0013
+public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.Bundle0007
 public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.AdmissibleDiscreteSeriesOfHasParam
 public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.HarishChandraModulesOn
 public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.HasDRepIffHasDerivAt
 public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.WeilRepresentationUnitaryPair
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.HeisenbergCombinationDisjointPlacesCommuteVacua
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsPlaceModelCompRestrictToHalfLatticeIndicator
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0337
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0771
 public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IdempotentMulEqZeroOfOrthogonal
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.IdempotentSumDisjointUnion
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.IsFinCombOfIsThetaAt
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.EqZeroOrEqOfPlaceIdem
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ExistsLocComb
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ContinuousSingleAt
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.NeConjOfIdemSum
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.AdAtToEAfOfIsIdemSum
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FrameMatrixReductionEqOfHalfIdempotentSubset
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.IsPlaceModelProdHalf
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.StepDatumEqMulHalvesStatement
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SupportedTranslatesCombinationCommutesSchrodingeStatement
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0354
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0283
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0187
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0445
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0091
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0319
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0286
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0770
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0466
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0514
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0476
 
 @[expose] public section
 
@@ -165,7 +165,7 @@ theorem stepVec_of_prod : ∀ (D : D7) (ψ : AddChar (AF D.host.F) ℂ) (θ : In
   rw [hbase, ← LinearMap.comp_apply, ← hvQ] at hL1
   have hd : ∀ PP ∈ Pg, ¬ (fun p => ∃ PP ∈ Q, p = (_root_.IsDedekindDomain.HeightOneSpectrum.under (𝓞 D.host.F) PP)) ((_root_.IsDedekindDomain.HeightOneSpectrum.under (𝓞 D.host.F) PP)) :=
     fun PP hP ⟨PP', hP', h⟩ => hunder PP hP PP' hP' h
-  have hL2 := GlobalTheory.T.supportedTranslatesCombination_commutes_schrodinger D ψ hvac.1 S T _ eG Pg _ heG hd dQ hdQ f₀ _ (combL ψ S T dQ ∘ₗ
+  have hL2 := _root_.GlobalTheory.PlaceModelComb.main D ψ hvac.1 S T _ eG Pg _ heG hd dQ hdQ f₀ _ (combL ψ S T dQ ∘ₗ
     (Tm ∘ₗ restrictHalf eG eQ (latO S T (ΛS : Set (Fin S.rank → D.host.E)) (ΛT : Set (Fin T.rank → D.host.E)) fun _ => True)))
     hTG fun Φ => by rw [LinearMap.comp_apply, combL_apply]
   have hu := placeModel_eq hvac.1 hS hT hGG (infPart_idemSum heG) hL1 hL2 hsbG

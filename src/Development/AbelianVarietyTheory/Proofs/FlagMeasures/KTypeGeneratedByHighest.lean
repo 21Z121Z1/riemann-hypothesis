@@ -3,9 +3,9 @@ module
 public import Mathlib
 public import Formalism.RealPlaceAnalysis.SmoothOnGVIff
 public import Formalism.RealPlaceAnalysis.StatementU
-public import Formalism.RealPlaceAnalysis.RealPlaceTaylor.CompactExponentialSurjective
+public import Formalism.RealPlaceAnalysis.RealPlaceTaylor.Bundle0008
 public import Formalism.RealPlaceAnalysis.RealPlaceTaylor.CompactCasimirHighestWeight
-public import Development.AbelianVarietyTheory.BlockTheory.SiegelWeilLocal.OrbitStepSpace
+public import Development.AbelianVarietyTheory.BlockTheory.SiegelWeilLocal.Bundle0001
 
 @[expose] public section
 

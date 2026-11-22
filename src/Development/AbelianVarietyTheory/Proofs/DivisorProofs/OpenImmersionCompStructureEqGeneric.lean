@@ -2,15 +2,15 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsFrPtOfClosedPoint
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ChartStatementHolds
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LocalPointFactorsOpenImmersion
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsLevelChangeMap
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ModulipointLiftToFinerLevelCompleteDVR
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsGoodLevelMultipleSameAdelicPart
-public import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.IntegralFramedPointBaseChangeStable
-public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.CompactifiedModuliPartOne
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1896
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1928
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1911
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2612
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2593
+public import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.Bundle0052
+public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0224
 public import Development.AbelianVarietyTheory.Definitions.Divisors.NormNegCmConstantEqAtAllEmbeddings
-public import Formalism.LocalToGlobal.ProjectiveLattices.ExtPtUnique
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0016
 
 @[expose] public section
 

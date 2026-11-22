@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.DegZero
+public import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.Bundle0001
 
 @[expose] public section
 

@@ -1,8 +1,8 @@
 module
 
-public import Formalism.SizeWindowBrackets.QuotientSlopeBoundsWith
-public import Formalism.RankGapBounds.RankGapProofs.WeightedMeanData
-public import Formalism.RankGapBounds.MeanBoundSecondForm
+public import Formalism.SizeWindowBrackets.Bundle0002
+public import Formalism.RankGapBounds.RankGapProofs.Bundle0001
+public import Formalism.RankGapBounds.Bundle0001
 
 @[expose] public section
 

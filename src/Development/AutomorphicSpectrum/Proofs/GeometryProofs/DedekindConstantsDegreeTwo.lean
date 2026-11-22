@@ -1,13 +1,13 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsLatFlagPair
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.Bundle0010
 public import Development.AutomorphicSpectrum.Definitions.DivisibilityTowers.HeckeSectionsIsotropicCommutatorPairingPower
-public import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.StatementsFlagIndependence
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.DedekindConstantsDegreeOneStatement
-public import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.LocalizationModelOverPlaceStatement
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.RegAtIffChartLocalization
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.PrimeChartExistsUniquePoint
+public import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.Bundle0017
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.DedekindConstantsDegreeOne
+public import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.LocalizationModelOverPlace
+public import Development.AutomorphicSpectrum.Definitions.DivisibilityTowers.LocalAtPlaces
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0019
 
 @[expose] public section
 
@@ -595,11 +595,11 @@ theorem flag_pair_of_lat : ∀ (X : Scheme.{0}) (Ω : Type) [Field Ω] (ξ : Spe
   choose e e' he he' hdeg hg0 hfg using hi
   have he0 : ∀ i, e i ≠ 0 := fun i => (he i).1
   have he0' : ∀ i, e' i ≠ 0 := fun i => (he' i).1
-  obtain ⟨B, hBl, hBf⟩ := GlobalTheory.T.dedekind_constants_degree_one X Ω ξ K J y hT d hd A hAinj hconst p hp m hpm O E r w L hvb
-  obtain ⟨B', hBl', hBf'⟩ := GlobalTheory.T.dedekind_constants_degree_one X Ω ξ K J y hT d hd A hAinj hconst p hp m hpm O E r w L' hvb'
+  obtain ⟨B, hBl, hBf⟩ := _root_.GlobalTheory.CompanionTheory.Ar.Num.LatChart.exists_chartBundle_of_isFlagVBOn X Ω ξ K J y hT d hd A hAinj hconst p hp m hpm O E r w L hvb
+  obtain ⟨B', hBl', hBf'⟩ := _root_.GlobalTheory.CompanionTheory.Ar.Num.LatChart.exists_chartBundle_of_isFlagVBOn X Ω ξ K J y hT d hd A hAinj hconst p hp m hpm O E r w L' hvb'
   have hfr := hBf Q.x e he0 he
   have hfr' := hBf' Q.x' e' he0' he'
-  obtain ⟨-, hmod, -⟩ := GlobalTheory.T.localization_model_over_place K J Ω y A hAinj hconst d hd m O
+  obtain ⟨-, hmod, -⟩ := _root_.GlobalTheory.CompanionTheory.Ar.Num.pl_model K J Ω y A hAinj hconst d hd m O
   have hT' : CoordTie ℤ ξ (segreVec y) := hT
   have hinj : Function.Injective (algebraMap A O) := by
     intro a b hab

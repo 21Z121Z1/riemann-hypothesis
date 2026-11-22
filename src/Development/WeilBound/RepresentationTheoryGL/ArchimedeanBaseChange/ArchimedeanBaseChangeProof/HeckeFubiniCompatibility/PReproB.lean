@@ -4,10 +4,10 @@ public import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange
 public import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.ArchimedeanGelfandKernels.InfinitesimalCharacterGL.BridgeSt
 public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.UnitaryMemGLs
 public import Mathlib
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.AverageDerivativeL1Bound
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0188
 public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.WaveKernelUniqueness
 public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.WaveSolutionExistence
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.RightDerivativeCalculusHolds
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0324
 
 @[expose] public section
 

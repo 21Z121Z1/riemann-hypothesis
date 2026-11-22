@@ -2,7 +2,7 @@ module
 
 public import Development.WeilBound.CoreStatements.PublishedTheorems.GlobalEulerCharacteristic.GaloisCohomologyRatios.SumEqCardMulSub
 public import Development.WeilBound.CoreStatements.PublishedTheorems.GlobalEulerCharacteristic.GaloisCohomologyRatios.RatioEqOneOfAltSum
-public import Development.WeilBound.CoreStatements.PublishedTheorems.GlobalEulerCharacteristic.LemmaX
+public import Development.WeilBound.CoreStatements.PublishedTheorems.GlobalEulerCharacteristic.Bundle0001
 
 @[expose] public section
 

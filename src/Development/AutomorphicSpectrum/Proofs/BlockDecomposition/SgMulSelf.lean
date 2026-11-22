@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.PairStructureOnLine
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0379
 public import CompanionTheory.HarishChandraModules.LowKTypeMultiplicity.EigenspaceCyclicDensity.CreationOperators.KoszulDifferentialAnticommutator
 
 @[expose] public section

@@ -3,8 +3,8 @@ module
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.Jets.EmbShortThLeThetaPlain
 public import Formalism.LocalToGlobal.IndefiniteForms.IndefiniteTree.ExampleSatisfiesConditionsAtFive
-public import Formalism.LocalToGlobal.ProjectiveLattices.FullExists
-public import Formalism.LocalToGlobal.IndefiniteReal.FWTie
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0034
+public import Formalism.LocalToGlobal.IndefiniteReal.Bundle0025
 public import Formalism.LocalToGlobal.IndefiniteReal.OneMapT
 public import Formalism.LocalToGlobal.IndefiniteReal.LinksChar
 

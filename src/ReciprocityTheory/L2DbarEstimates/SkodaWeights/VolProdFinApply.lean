@@ -1,9 +1,9 @@
 module
 
-public import ReciprocityTheory.L2DbarEstimates.SkodaWeights.NeedBergmanClosed
+public import ReciprocityTheory.L2DbarEstimates.SkodaWeights.Bundle0001
 public import ReciprocityTheory.L2DbarEstimates.SkodaWeights.SkodaOps
 public import ReciprocityTheory.L2DbarEstimates.SkodaWeights.NearContinuousOfSmoothR
-public import ReciprocityTheory.L2DbarEstimates.MinimalSolutions.OntoWithBoundTop
+public import ReciprocityTheory.L2DbarEstimates.MinimalSolutions.Bundle0002
 
 @[expose] public section
 

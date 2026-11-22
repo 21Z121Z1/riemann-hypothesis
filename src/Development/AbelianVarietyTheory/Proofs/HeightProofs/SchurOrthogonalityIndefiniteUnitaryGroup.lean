@@ -2,8 +2,8 @@ module
 
 public import Mathlib
 public import Formalism.SharpRestriction.CuspSpanNormBounds.RelevantZeroGramTerms
-public import Formalism.RealPlaceAnalysis.RealPlaceTaylor.ModularCharacterEqOneOnExpHermitian
-public import Development.AbelianVarietyTheory.Proofs.HeightProofs.HilbertSchurUnitaryIrreducibleScalarStatement
+public import Formalism.RealPlaceAnalysis.RealPlaceTaylor.Bundle0007
+public import Development.AbelianVarietyTheory.Proofs.HeightProofs.HilbertSchurUnitaryIrreducibleScalar
 
 @[expose] public section
 
@@ -84,7 +84,7 @@ theorem schur_orthogonality [Nontrivial H] [TopologicalSpace G] [MeasurableMul G
     exact integral_congr_ae (hae v w v' w')
   have hsc : ∀ w w', ∃ c : ℂ, ∀ v v', I v w v' w' = c * ⟪v', v⟫_ℂ := by
     intro w w'
-    obtain ⟨c, hc⟩ := GlobalTheory.T.hilbert_schur_unitary_irreducible_scalar H G π hπ hirr
+    obtain ⟨c, hc⟩ := _root_.GlobalTheory.hilbert_schur H G π hπ hirr
       ((ContinuousLinearMap.adjoint (T w')).comp (T w)) (by
         intro g
         ext v

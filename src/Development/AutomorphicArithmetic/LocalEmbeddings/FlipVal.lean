@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Formalism.MirabolicMackeyTheory.StatementT
-public import Formalism.LocalToGlobal.UnitaryNorms.CharProd
+public import Formalism.MirabolicMackeyTheory.Bundle0001
+public import Formalism.LocalToGlobal.UnitaryNorms.Bundle0002
 public import Development.AutomorphicArithmetic.DivisorFrames.ExistsPowLocKMulInfEqOneOfLevelLeTwo
 public import Development.AutomorphicArithmetic.DivisorFrames.IsIntegralCmTypeUnitaryPartMulAbsNormPow
 

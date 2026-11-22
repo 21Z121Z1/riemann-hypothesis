@@ -1,10 +1,10 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SameSetup
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.StarMulSelfOfPair
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0835
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0829
 public import Formalism.LocalToGlobal.Columns.CoefficientsModP.BaseCh
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.RatCopyIff
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0847
 
 @[expose] public section
 

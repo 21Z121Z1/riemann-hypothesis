@@ -1,12 +1,12 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Divisors.SpecializesGenericImage
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0066
 public import Formalism.LocalToGlobal.ProjectiveLattices.KapTrdegPf
-public import Development.AbelianVarietyTheory.Proofs.GenericRegularity.ExistsIsOpenImmersionIsStandardSmoothOfRelativeD
+public import Development.AbelianVarietyTheory.Proofs.GenericRegularity.Bundle0003
 public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.RingKrullDimQuotientAddOneOfMemMinimalPrimesSup
 public import Development.AbelianVarietyTheory.Definitions.ThetaMetrics.ExistsAlgebraicIndependentGenericPoint
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.AbProj
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.Bundle0006
 public import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsMonoFamNontrivial
 
 @[expose] public section

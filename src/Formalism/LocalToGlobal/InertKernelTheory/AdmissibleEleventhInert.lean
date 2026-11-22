@@ -1,10 +1,10 @@
 module
 
-public import Formalism.LocalToGlobal.InertKernelTheory.FinalA
+public import Formalism.LocalToGlobal.InertKernelTheory.Bundle0014
 public import Formalism.LocalToGlobal.InertKernelTheory.InertCoprimeLemmas.SigmaAlg
 public import Formalism.LocalToGlobal.InertKernelTheory.InertCoprimeLemmas.EndInt
 public import Formalism.LocalToGlobal.InertKernelTheory.InertCoprimeLemmas.PhNorm
-public import Formalism.LocalToGlobal.InertKernelTheory.InertCoprimeLemmas.GenusOneDatumExistence
+public import Formalism.LocalToGlobal.InertKernelTheory.InertCoprimeLemmas.Bundle0001
 public import Formalism.LocalToGlobal.InertKernelTheory.InertCoprimeLemmas.ExistsWittSeriesInverseFormalGroupIso
 
 @[expose] public section

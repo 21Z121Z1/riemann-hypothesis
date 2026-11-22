@@ -2,9 +2,9 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.Divisors.NonemptyValExtOfOverLa
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DetFactorDepthInChartChartIndependent
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1023
 public import Development.AbelianVarietyTheory.Proofs.FormalGroupCharts.RelatedMap
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DerivAt0SubstLinearLipschitz
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0187
 
 @[expose] public section
 

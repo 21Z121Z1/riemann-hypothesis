@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.CompletedLStripBounds
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NormWt
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GaussZero
+public import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.Bundle0007
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0456
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0465
 
 @[expose] public section
 

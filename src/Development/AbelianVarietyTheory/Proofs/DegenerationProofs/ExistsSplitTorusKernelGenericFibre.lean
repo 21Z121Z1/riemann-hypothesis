@@ -4,9 +4,9 @@ public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.Degenerations.IsNormalSchemeSp
 public import Development.AbelianVarietyTheory.Definitions.Degenerations.IsAffineSplitTorusLeft
 public import Development.AbelianVarietyTheory.Definitions.Degenerations.OfTorusBased
-public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.IsIsoGenericOfDenseFibres
-public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.PullPullAndSplitPull
-public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.TorusCutByInvariantRatiosField
+public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.Bundle0012
+public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.Bundle0043
+public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.Bundle0078
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.UniformisationConclusion
 
 @[expose] public section

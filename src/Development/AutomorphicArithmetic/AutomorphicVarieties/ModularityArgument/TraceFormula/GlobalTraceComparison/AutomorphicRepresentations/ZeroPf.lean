@@ -2,8 +2,8 @@ module
 
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.TraceFormula.GlobalTraceComparison.AutomorphicRepresentations.EvalBasis
 public import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.ThetaCellCovers.KernelDiagonalIntegrableHolds
-public import Development.DiscreteGroups.PiInvariants.CompactSupportTwists.PiInvTop
-public import Development.DiscreteGroups.PiInvariants.CompactSupportTwists.PiVecExHolds
+public import Development.DiscreteGroups.PiInvariants.CompactSupportTwists.Bundle0007
+public import Development.DiscreteGroups.PiInvariants.CompactSupportTwists.Bundle0008
 public import Development.DiscreteGroups.PiInvariants.CompactSupportTwists.PiSeenA
 
 @[expose] public section

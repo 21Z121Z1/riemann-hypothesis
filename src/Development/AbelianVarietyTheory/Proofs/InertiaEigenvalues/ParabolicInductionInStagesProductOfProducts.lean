@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.StandardCosocleGL
+public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.Bundle0008
 public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsEquivProdIrrTw
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.MultiProdCompCongr
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0193
 public import Lean.LibrarySuggestions.Basic
 public import Lean.Elab.Command
 

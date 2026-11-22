@@ -1,8 +1,8 @@
 module
 
 public import Formalism.SharpRestriction.LevelLetterCocycles.RepresentationCongruences.Pi0MemADelta
-public import Formalism.SharpRestriction.LevelLetterCocycles.RepresentationCongruences.ImportsBis
-public import Formalism.SharpRestriction.LevelLetterCocycles.RepresentationCongruences.SaturationFractionModule
+public import Formalism.SharpRestriction.LevelLetterCocycles.RepresentationCongruences.Bundle0004
+public import Formalism.SharpRestriction.LevelLetterCocycles.RepresentationCongruences.Bundle0007
 public import Formalism.SharpRestriction.LevelLetterCocycles.RepresentationCongruences.GammaPi0EqPi0MulUnit
 
 @[expose] public section

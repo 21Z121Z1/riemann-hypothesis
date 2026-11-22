@@ -3,7 +3,7 @@ module
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.ResBound
 public import Formalism.LocalRingCardinality.AdicCompletionLocal.LocTied
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.GoodCoefficientRingPadicIntegersFinExt
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0252
 public import Lean.LibrarySuggestions.Basic
 public import Lean.Elab.Command
 

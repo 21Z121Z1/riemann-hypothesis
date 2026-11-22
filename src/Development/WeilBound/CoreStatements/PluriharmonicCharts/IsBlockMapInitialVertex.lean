@@ -2,10 +2,10 @@ module
 
 public import Mathlib
 public import Development.WeilBound.CoreStatements.PluriharmonicCharts.MCoordIdealLeOfHomog
-public import Development.AutomorphicSpectrum.Proofs.MetricProofs.FlagCoverTransferIdealEq
-public import Development.AutomorphicSpectrum.Proofs.MetricProofs.PullbackPullback
-public import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.PFnFieldTrdeg
-public import GroundTheory.HeightsAndTheta.Heights.Intersections.PDiagFormDiv
+public import Development.AutomorphicSpectrum.Proofs.MetricProofs.Bundle0070
+public import Development.AutomorphicSpectrum.Proofs.MetricProofs.Bundle0034
+public import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.Bundle0011
+public import GroundTheory.HeightsAndTheta.Heights.Intersections.Bundle0024
 
 @[expose] public section
 

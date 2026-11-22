@@ -2,7 +2,7 @@ module
 
 public import CompanionTheory.HarishChandraModules.KFiniteAnalyticVectors.AnalyticIntertwiners.LogNormEstimates
 public import CompanionTheory.HarishChandraModules.KFiniteAnalyticVectors.AnalyticIntertwiners.HarishChandraThirdIndefiniteUnitary
-public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.RigidityTheorems.SopNegComm
+public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.RigidityTheorems.Bundle0001
 
 @[expose] public section
 

@@ -1,6 +1,6 @@
 module
 
-public import Formalism.PeriodIntegrals.NUnimodLoc
+public import Formalism.PeriodIntegrals.Bundle0016
 public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LocalUnimodularLattice.NonstandardUnimodularLattice
 
 @[expose] public section

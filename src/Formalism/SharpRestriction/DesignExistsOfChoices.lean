@@ -1,9 +1,9 @@
 module
 
 public import Formalism.SharpRestriction.MuTuOfTuSize
-public import Formalism.SharpRestriction.GlobalSchurBounds.MainIn
-public import Formalism.SharpRestriction.LevelLetterCocycles.AlignN
-public import Formalism.LocalRingCardinality.MinkMEqMinkowskiNumber
+public import Formalism.SharpRestriction.GlobalSchurBounds.Bundle0002
+public import Formalism.SharpRestriction.LevelLetterCocycles.Bundle0015
+public import Formalism.LocalRingCardinality.Bundle0006
 
 @[expose] public section
 

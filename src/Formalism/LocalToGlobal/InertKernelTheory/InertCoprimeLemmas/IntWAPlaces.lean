@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Formalism.PeriodIntegrals.UnimodGenus
-public import Formalism.PeriodIntegrals.UnitaryApproxFin
-public import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.UnitaryApproxFin
+public import Formalism.PeriodIntegrals.Bundle0008
+public import Formalism.PeriodIntegrals.Bundle0012
+public import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.Bundle0013
 public import Formalism.LocalToGlobal.InertKernelTheory.InertCoprimeLemmas.IntWeak
 
 @[expose] public section

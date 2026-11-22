@@ -1,7 +1,7 @@
 module
 
 public import CompanionTheory.AutomorphicTheory.PadicCyclotomicFields.GcohTop
-public import CompanionTheory.AutomorphicTheory.PadicCyclotomicFields.GcohEuler
+public import CompanionTheory.AutomorphicTheory.PadicCyclotomicFields.Bundle0001
 
 @[expose] public section
 

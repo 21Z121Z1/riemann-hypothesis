@@ -1,10 +1,10 @@
 module
 
-public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.CIndFrFix
+public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0008
 public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.ExpOfPf
-public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.HarmInvA
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.TaylorDiscriminants.WickVanishing.CalcAdd
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.TaylorDiscriminants.KillAdd
+public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0013
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.TaylorDiscriminants.WickVanishing.Bundle0001
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.TaylorDiscriminants.Bundle0003
 
 @[expose] public section
 

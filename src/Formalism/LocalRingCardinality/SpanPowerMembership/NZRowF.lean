@@ -1,6 +1,6 @@
 module
 
-public import Formalism.LocalRingCardinality.DataTies
+public import Formalism.LocalRingCardinality.Bundle0003
 public import Formalism.LocalRingCardinality.SpanPowerMembership.NZRowE
 
 @[expose] public section

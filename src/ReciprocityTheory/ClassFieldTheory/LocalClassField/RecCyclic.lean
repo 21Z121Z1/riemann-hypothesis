@@ -2,11 +2,11 @@ module
 
 public import Mathlib
 public import ReciprocityTheory.ClassFieldTheory.LocalClassField.RecPairDefs
-public import ReciprocityTheory.ClassFieldTheory.LocalClassField.RecPair
-public import ReciprocityTheory.ClassFieldTheory.LocalClassField.NormOpen
-public import ReciprocityTheory.ClassFieldTheory.LocalClassField.CyclicBr
-public import ReciprocityTheory.ClassFieldTheory.LocalClassField.EqZeroOfMemBrKerOfCoprime
-public import ReciprocityTheory.ClassFieldTheory.LocalClassField.RecCyclicB
+public import ReciprocityTheory.ClassFieldTheory.LocalClassField.Bundle0017
+public import ReciprocityTheory.ClassFieldTheory.LocalClassField.Bundle0013
+public import ReciprocityTheory.ClassFieldTheory.LocalClassField.Bundle0011
+public import ReciprocityTheory.ClassFieldTheory.LocalClassField.Bundle0010
+public import ReciprocityTheory.ClassFieldTheory.LocalClassField.Bundle0019
 
 @[expose] public section
 

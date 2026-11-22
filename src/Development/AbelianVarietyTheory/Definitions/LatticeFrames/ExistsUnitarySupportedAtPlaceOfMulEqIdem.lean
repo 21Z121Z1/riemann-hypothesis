@@ -1,11 +1,10 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.IsQuasiFam
-public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.ContrFactor
-public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.IsSumFrame
-public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.ReflectionBoostMatrixConjTransposeMulSelf
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ExistsLinearOfBilinearSchwartzBruhatProduct
+public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.Bundle0008
+public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.Bundle0002
+public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.Bundle0023
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0010
 
 @[expose] public section
 

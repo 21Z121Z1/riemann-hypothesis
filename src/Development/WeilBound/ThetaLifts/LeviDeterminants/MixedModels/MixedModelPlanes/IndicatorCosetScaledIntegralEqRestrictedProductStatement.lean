@@ -1,7 +1,7 @@
 module
 
 public import Development.WeilBound.ThetaLifts.LeviDeterminants.MixedModels.MixedModelPlanes.Imports
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IndicatorCosetScaledIntegralEqRestrictedProduct
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1343
 public import Mathlib
 
 @[expose] public section

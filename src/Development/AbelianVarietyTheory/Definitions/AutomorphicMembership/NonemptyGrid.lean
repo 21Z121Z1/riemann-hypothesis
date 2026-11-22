@@ -2,9 +2,9 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.SettingsFormsExistList
-public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.StrictHenselianAcyclic
+public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.Bundle0044
 public import Development.AbelianVarietyTheory.Definitions.Divisors.TwistedPlaceChoiceLiesOverPair
-public import Development.AbelianVarietyTheory.Definitions.Divisors.NonemptyGridDataIff
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0046
 
 @[expose] public section
 

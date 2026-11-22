@@ -3,7 +3,7 @@ module
 public import Mathlib
 public import Formalism.LocalToGlobal.SiegelLatticeTheory.ClosedLocalOrbits.TermDef
 public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.RelativeEquivalence.DCRelEquivAllHolds
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsUpUniMulAlt
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0377
 
 @[expose] public section
 

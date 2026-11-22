@@ -1,14 +1,14 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.SpanningFamilies.IsHeatZero
+public import Development.AbelianVarietyTheory.Definitions.SpanningFamilies.Bundle0001
 public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.UnitaryActHalfSpace
-public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.QuadCocycle
-public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.SchwartzBruhatInnerProductSelfNonnegBoundsStatement
-public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.HermitianWeilActionUnitaryGroupTestFunctionsStatement
-public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.HermitianWeilActionSiegelParabolicExplicitStatement
-public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.HermitianThetaEisensteinConvergeBoundedStatement
-public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.PosSemidefSubSmulOne
+public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.Bundle0019
+public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.Bundle0009
+public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.Bundle0020
+public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.HermitianWeilActionSiegelParabolicExplicit
+public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.HermitianThetaEisensteinConvergeBounded
+public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.Bundle0015
 
 @[expose] public section
 
@@ -140,7 +140,7 @@ theorem GlobalTheory.SW.eis_automorphy_linear : ∀ (E : Type) [Field E] [Number
     rintro φ ⟨R, hR, hφ⟩ Z hZ z z'
     obtain ⟨δ, hδ, hZ'⟩ := exists_mem_HnGe Ψ hZ
     obtain ⟨B, hB⟩ := (GlobalTheory.T.schwartzBruhatInnerProduct_self_nonneg_bounds E _ _ R φ hR hφ).2.2.2.2.1
-    obtain ⟨C, hC⟩ := GlobalTheory.T.hermitianTheta_eisenstein_converge_bounded E Ψ hΨ n N hn hN R δ hR hδ
+    obtain ⟨C, hC⟩ := _root_.GlobalTheory.SW.theta_eis_bounded E Ψ hΨ n N hn hN R δ hR hδ
     obtain ⟨K, hK⟩ := hFac_inv_bound Ψ hZ z z'
     refine Summable.of_nonneg_of_le (fun _ => norm_nonneg _) (fun U => ?_)
       ((hC φ hφ B hB Z hZ').1.mul_left K)
@@ -152,7 +152,7 @@ theorem GlobalTheory.SW.eis_automorphy_linear : ∀ (E : Type) [Field E] [Number
     rw [← (lagEquiv hγ).tsum_eq (fun U => eisTerm Ψ U.2.choose φ Z 0 0), ← tsum_mul_left]
     refine tsum_congr fun U => ?_
     have hg := U.2.choose_spec.1
-    rw [(GlobalTheory.T.hermitianWeilAction_siegelParabolic_explicit E Ψ hΨ n N hn φ hφ).2 _ (lagEquiv hγ U).2.choose_spec.1 _
+    rw [(_root_.GlobalTheory.SW.weil_parabolic E Ψ hΨ n N hn φ hφ).2 _ (lagEquiv hγ U).2.choose_spec.1 _
       (HAct.mul_mem hγ hg) (by
         rw [(lagEquiv hγ U).2.choose_spec.2, botSpan_mul, U.2.choose_spec.2]; rfl) Z hZ]
     have ha := (unitary_act_halfSpace E Ψ N γ hγ).2 Z hZ
@@ -162,15 +162,15 @@ theorem GlobalTheory.SW.eis_automorphy_linear : ∀ (E : Type) [Field E] [Number
     have h1 : hFac Ψ (U.2.choose * γ) Z (0 : CM Ψ n N) 0 =
         hFac Ψ U.2.choose (hAct Ψ γ Z) (0 : CM Ψ n N) 0 * hFac Ψ γ Z (0 : CM Ψ n N) 0 := by
       simp only [hFac_zero, (ha.2.2.2 _ hg).2.1, det_mul, mul_pow, Finset.prod_mul_distrib]
-    rw [eisTerm, eisTerm, h1, (GlobalTheory.T.hermitianWeilAction_unitaryGroup_testFunctions E Ψ hΨ n N hn γ hγ φ hφ).2.2.2.2.2.1 _ hg, mul_inv]
+    rw [eisTerm, eisTerm, h1, (_root_.GlobalTheory.SW.weil_action E Ψ hΨ n N hn γ hγ φ hφ).2.2.2.2.2.1 _ hg, mul_inv]
     field_simp
   · unfold eis
     rw [← (hs φ hφ Z hZ z z').of_norm.tsum_add (hs ψ hψ Z hZ z z').of_norm]
     refine tsum_congr fun U => ?_
     rw [eisTerm, eisTerm, eisTerm,
-      ((GlobalTheory.T.hermitianWeilAction_unitaryGroup_testFunctions E Ψ hΨ n N hn _ U.2.choose_spec.1 φ hφ).2.2.2.1 ψ hψ).2, Pi.add_apply, add_mul]
+      ((_root_.GlobalTheory.SW.weil_action E Ψ hΨ n N hn _ U.2.choose_spec.1 φ hφ).2.2.2.1 ψ hψ).2, Pi.add_apply, add_mul]
   · unfold eis
     rw [← tsum_mul_left]
     refine tsum_congr fun U => ?_
-    rw [eisTerm, eisTerm, (GlobalTheory.T.hermitianWeilAction_unitaryGroup_testFunctions E Ψ hΨ n N hn _ U.2.choose_spec.1 φ hφ).2.2.2.2.1 c,
+    rw [eisTerm, eisTerm, (_root_.GlobalTheory.SW.weil_action E Ψ hΨ n N hn _ U.2.choose_spec.1 φ hφ).2.2.2.2.1 c,
       Pi.smul_apply, smul_eq_mul, mul_assoc]

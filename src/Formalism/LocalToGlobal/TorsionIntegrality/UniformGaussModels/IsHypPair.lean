@@ -1,8 +1,8 @@
 module
 
-public import Formalism.LocalToGlobal.TorsionIntegrality.GaussSumParity.StatementG
-public import Formalism.LocalToGlobal.TorsionIntegrality.TorsionTranslationPowers.StatementP
-public import Formalism.LocalToGlobal.TorsionIntegrality.TorsionTranslationPowers.StatementV
+public import Formalism.LocalToGlobal.TorsionIntegrality.GaussSumParity.Bundle0003
+public import Formalism.LocalToGlobal.TorsionIntegrality.TorsionTranslationPowers.Bundle0001
+public import Formalism.LocalToGlobal.TorsionIntegrality.TorsionTranslationPowers.Bundle0002
 
 @[expose] public section
 

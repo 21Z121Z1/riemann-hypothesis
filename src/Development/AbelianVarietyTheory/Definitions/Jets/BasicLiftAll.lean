@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Jets.SameFns
-public import Formalism.HermitianCurvature.StatementTBB
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutJDHatOpA
+public import Development.AbelianVarietyTheory.Definitions.Jets.Bundle0002
+public import Formalism.HermitianCurvature.Bundle0010
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0058
 
 @[expose] public section
 

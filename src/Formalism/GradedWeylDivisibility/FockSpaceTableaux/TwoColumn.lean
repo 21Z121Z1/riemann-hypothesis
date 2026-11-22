@@ -1,6 +1,6 @@
 module
 
-public import Formalism.GradedWeylDivisibility.StatementC
+public import Formalism.GradedWeylDivisibility.Bundle0001
 
 @[expose] public section
 

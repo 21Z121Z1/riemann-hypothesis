@@ -1,14 +1,12 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IsHermRingRat
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0394
 public import Formalism.SatakeDualWeyl.Statement
 public import Development.AbelianVarietyTheory.Definitions.Foundations.OfInfProjInfMulOfFinProjFin
 public import Formalism.SharpRestriction.GlobalSchurBounds.GeneralLinearActions.GenusMassVolumes
 public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.IsSmoothModerateOfIsAutFunSm
-public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.HermitianBlockTriangular
-public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.HermitianBlockDiagonal
-public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.HermitianProjectionEq
+public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0027
 
 @[expose] public section
 

@@ -1,6 +1,6 @@
 module
 
-public import Formalism.LocalToGlobal.GlobalTheory.GL6.AdelicFunctionRightTranslateDiamond
+public import Formalism.LocalToGlobal.GlobalTheory.GL6.Bundle0002
 
 @[expose] public section
 

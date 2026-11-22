@@ -1,14 +1,12 @@
 module
 
-public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsSncModel
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.Bundle0008
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.BlowupProjections.BlowupProjStatement
 public import Development.AutomorphicSpectrum.Definitions.DivisibilityTowers.Proportional
-public import Development.WeilBound.CoreStatements.HomogeneousNonvanishing.IsOpenHoloPreimage
-public import Development.WeilBound.CoreStatements.HomogeneousNonvanishing.JPull
-public import Development.WeilBound.CoreStatements.HomogeneousNonvanishing.RHolmap
+public import Development.WeilBound.CoreStatements.HomogeneousNonvanishing.Bundle0008
+public import Development.WeilBound.CoreStatements.HomogeneousNonvanishing.Bundle0009
 public import Development.WeilBound.CoreStatements.HomogeneousNonvanishing.NonvanishingDense
-public import Development.WeilBound.CoreStatements.HomogeneousNonvanishing.RPluri
-public import ReciprocityTheory.AnalyticForms.PotentialTheory.ContDiffAtOfIsPotential
+public import ReciprocityTheory.AnalyticForms.PotentialTheory.Bundle0003
 
 @[expose] public section
 

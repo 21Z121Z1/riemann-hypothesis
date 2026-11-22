@@ -1,7 +1,7 @@
 module
 
-public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.TwistedEisensteinCoset.IsUnitRedP
-public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.TwistedNormLattice.UniformContinuityGaloisGroup
+public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.TwistedEisensteinCoset.Bundle0002
+public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.TwistedNormLattice.Bundle0001
 
 @[expose] public section
 

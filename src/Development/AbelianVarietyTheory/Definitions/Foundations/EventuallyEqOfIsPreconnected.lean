@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LaurentConstEqOfTendsto
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0713
 
 @[expose] public section
 

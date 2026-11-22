@@ -1,9 +1,9 @@
 module
 
 public import Formalism.LocalToGlobal.CharacterGerms.RowTieFB
-public import Formalism.LocalToGlobal.CharacterGerms.WipDworkInvG
+public import Formalism.LocalToGlobal.CharacterGerms.Bundle0003
 public import Formalism.FormalGroupWitt.FormalGroupWittProofs.SolveV
-public import Formalism.FormalGroupWitt.FormalGroupWittProofs.EqSingleOfDegreeEqOne
+public import Formalism.FormalGroupWitt.FormalGroupWittProofs.Bundle0001
 
 @[expose] public section
 

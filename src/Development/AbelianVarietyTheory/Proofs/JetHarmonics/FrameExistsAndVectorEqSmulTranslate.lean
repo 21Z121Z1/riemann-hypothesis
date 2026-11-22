@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.DifferentialOperatorBracket
-public import Formalism.RealPlaceAnalysis.ThirdArithmeticHolds
-public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.ExistsUnitaryWFrameToFrame
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0075
+public import Formalism.RealPlaceAnalysis.Bundle0004
+public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0077
 
 @[expose] public section
 

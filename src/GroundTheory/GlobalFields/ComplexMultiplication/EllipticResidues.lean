@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import GroundTheory.GlobalFields.ComplexMultiplication.EllipticFunctions
+public import GroundTheory.GlobalFields.ComplexMultiplication.Bundle0001
 public import GroundTheory.GlobalFields.ComplexMultiplication.Residue
 public import GroundTheory.GlobalFields.ComplexMultiplication.RectangleIntegral
 public import GroundTheory.GlobalFields.ComplexMultiplication.ResidueTheorem

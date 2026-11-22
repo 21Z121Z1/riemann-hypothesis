@@ -1,11 +1,11 @@
 module
 
 public import Mathlib
-public import Formalism.EllipticTorsion.FormalGroupPointsParametrisation
+public import Formalism.EllipticTorsion.Bundle0004
 public import Formalism.LocalToGlobal.TorsionIntegrality.TorsionTranslationPowers.StatementU
-public import Formalism.LocalToGlobal.TorsionIntegrality.WeierstrassTwoTorsion.StatementK
+public import Formalism.LocalToGlobal.TorsionIntegrality.WeierstrassTwoTorsion.Bundle0004
 public import Formalism.LocalToGlobal.TorsionIntegrality.CMGoodModels.CM4
-public import ReciprocityTheory.ReductiveGroups.UnramifiedIntegrals.KurDefs
+public import ReciprocityTheory.ReductiveGroups.UnramifiedIntegrals.Bundle0002
 
 @[expose] public section
 

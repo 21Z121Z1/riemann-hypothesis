@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Proofs.MetricProofs.BigZe
-public import Development.WeilBound.CoreStatements.VolumeEquality.BaseUnifRiem
+public import Development.AutomorphicSpectrum.Proofs.MetricProofs.Bundle0134
+public import Development.WeilBound.CoreStatements.VolumeEquality.Bundle0002
 
 @[expose] public section
 

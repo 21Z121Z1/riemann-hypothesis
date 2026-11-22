@@ -1,8 +1,8 @@
 module
 
 public import Formalism.WachLatticeTwists.RamifiedBlockRings.RamifiedBlockProofs.RankDiagIte
-public import Formalism.WachLatticeTwists.RamifiedBlockRings.RightIdealImageOfSurjective
-public import Formalism.TruncatedSeriesCounting.TruncatedSeriesProofs.BridgeDet
+public import Formalism.WachLatticeTwists.RamifiedBlockRings.Bundle0001
+public import Formalism.TruncatedSeriesCounting.TruncatedSeriesProofs.Bundle0007
 public import Formalism.CharacterColumnKernels.IdempotentNormalForms.IsUnitDetOfConst
 
 @[expose] public section

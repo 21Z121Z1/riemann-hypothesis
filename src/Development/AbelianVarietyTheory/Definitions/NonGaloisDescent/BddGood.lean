@@ -1,8 +1,8 @@
 module
 
-public import Formalism.LocalToGlobal.ProjectiveLattices.VAtVNeBot
-public import Formalism.LocalToGlobal.ProjectiveLattices.ThClass
-public import Formalism.LocalToGlobal.ProjectiveLattices.LiftLaSpec
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0010
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0026
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0013
 
 @[expose] public section
 

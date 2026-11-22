@@ -2,8 +2,15 @@ module
 
 public import Development.WeilBound.CoreStatements.CentralCharts.PotLoc
 public import Development.WeilBound.CoreStatements.VolumeEquality.BaseUnifVec
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.CuspCorrespondenceBoundStatement
-public import Development.AutomorphicSpectrum.Proofs.MetricProofs.SectionBoundaryClosedAndCodenseStatement
+public import Mathlib
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0168
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.PotentialsBoundedRegSettingEqReference
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.GlobalSectionsRankAlgClosed
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.BdryChart
+public import ReciprocityTheory.AnalyticForms.PlurisubharmonicFunctions.Bundle0001
+public import Development.AutomorphicSpectrum.Statements.GeometryStatements.FlatDegree
+public import Development.AutomorphicSpectrum.Statements.GeometryStatements.Bundle0006
+public import Development.AutomorphicSpectrum.Proofs.MetricProofs.Bundle0014
 
 @[expose] public section
 
@@ -156,7 +163,7 @@ theorem locChart (hLP : LocPer) (hT : Transport) (hFV : FrameVals) (hPM : PerMat
     obtain ⟨h1, -, -, -, v, hv, hf⟩ := h3 t ht
     exact (hFV hG E H D l Xo c Y Gr.Ω Gr.K Gr.J Gr.y Gr.𝔐 (z' t) s (b s) hN (hint _ (h21 h1)) (hfr₃ t ht s)).2 g Λ (R t) σ
       _ (fun i => v ⟨s, i⟩) (hlab t h1) (fun i => hv ⟨s, i⟩) (fibreLatVec_comp hf fun i => ⟨s, i⟩)
-  obtain ⟨σ', -, hσu, -, -, -, hσ⟩ := GlobalTheory.T.cusp_correspondence_bound E H D l Xo c Y ∅ Gr.Ω Gr.K Gr.J Gr.y Gr.𝔐 ℂ (z' t₀)
+  obtain ⟨σ', -, hσu, -, -, -, hσ⟩ := _root_.GlobalTheory.CompanionTheory.Ar.Cusp.LabPt.exists_labVal E H D l Xo c Y ∅ Gr.Ω Gr.K Gr.J Gr.y Gr.𝔐 ℂ (z' t₀)
   obtain rfl := hσu σ (hlab _ ht₂)
   obtain ⟨hcm, -, hconj⟩ := hσ (RingHom.id ℂ)
   simp only [RingHom.id_comp] at hcm hconj

@@ -1,10 +1,10 @@
 module
 
 public import Formalism.SharpRestriction.GenusPolyhedralBounds.RelativeIndexClassSets.LevGapFacts
-public import Formalism.SharpRestriction.GlobalSchurBounds.GeneralLinearActions.GapAtLeast
+public import Formalism.SharpRestriction.GlobalSchurBounds.GeneralLinearActions.Bundle0001
 public import Formalism.SatakeDualWeyl.DefsCS
 public import Formalism.ThetaLiftIndependence.Statement
-public import Formalism.HermitianLattices.StatementMass
+public import Formalism.HermitianLattices.Bundle0003
 
 @[expose] public section
 

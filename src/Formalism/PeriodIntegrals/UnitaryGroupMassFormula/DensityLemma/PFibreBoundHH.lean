@@ -1,6 +1,6 @@
 module
 
-public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.DensityLemma.PFibreBoundVDefs
+public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.DensityLemma.Bundle0001
 public import Formalism.HermitianCurvature.HermitianCurvatureProofs.ConjugationContinuousOnInvertible
 
 @[expose] public section

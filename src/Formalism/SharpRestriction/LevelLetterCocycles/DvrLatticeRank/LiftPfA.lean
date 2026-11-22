@@ -1,7 +1,7 @@
 module
 
-public import Formalism.SharpRestriction.LevelLetterCocycles.LocalFormOfThreeInputs
-public import Formalism.SharpRestriction.LevelLetterCocycles.FinrankMaxUnramifiedSubfieldPadicFinExtPos
+public import Formalism.SharpRestriction.LevelLetterCocycles.Bundle0014
+public import Formalism.SharpRestriction.LevelLetterCocycles.Bundle0010
 
 @[expose] public section
 

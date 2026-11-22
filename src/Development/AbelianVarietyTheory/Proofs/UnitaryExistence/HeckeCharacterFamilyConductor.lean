@@ -1,24 +1,24 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.ExistenceOfLattices.CoeSelfDualLatticeInFrameCoordinatesEq
-public import Formalism.LocalToGlobal.ProjectiveLattices.ParCanon
+public import Development.AbelianVarietyTheory.Definitions.ExistenceOfLattices.Bundle0001
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0031
 public import Formalism.LocalToGlobal.ProjectiveLattices.ExistsParameterConditions
-public import Formalism.LocalToGlobal.ProjectiveLattices.ValSetAlgSubset
-public import Formalism.LocalToGlobal.ProjectiveLattices.IntAll
-public import Formalism.LocalToGlobal.ProjectiveLattices.AllTest
-public import Formalism.LocalToGlobal.ProjectiveLattices.VolProofs
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.LinearIndependentSingleAdd
-public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.HasseNormTheoremQuadraticExtension
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsUniformisationWithComponentAtEveryEmbeddinStatement
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0023
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0022
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0010
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0020
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0036
+public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.Bundle0053
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0097
 public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.AlgebraicLawsModuliSchemeGoodLevelStatement
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsMemberDictionaryContextGoodEmbeddingStatement
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsLatticeEmbeddingLiftDatumHermitianSpaceStatement
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.PrincipalLevelEqHalfMarkingStabilizerStatement
-public import Formalism.LocalToGlobal.ProjectiveLattices.ReadQuot
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.LevelGoodAndHalfEqPrimeProductStatement
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsPrincipalLevelSubgroupOpenStatement
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsUniformisationDictionaryCharacterLawsStatement
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0089
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0077
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0076
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0032
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0072
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0078
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0102
 
 @[expose] public section
 
@@ -36,7 +36,7 @@ theorem exists_iotaAll (Q : Par D) (hQ : Q.Pins) (j : ℕ) :
     ∃ ι₀ : (Q.Dw j).La →ₗ[𝓞 D.host.E] (Fin D.R.r → D.host.E), InR D j → ∀ hr : (D.sp.W j).rank = D.R.r,
       IotaOK (Q.Dw j) (D.sp.W j) (LinearMap.funLeft (𝓞 D.host.E) D.host.E (Fin.cast hr) ∘ₗ ι₀) := by
   by_cases hj : InR D j
-  · obtain ⟨⟨ι, hι⟩, -⟩ := GlobalTheory.T.exists_latticeEmbedding_liftDatum_hermitianSpace D Q hQ j hj
+  · obtain ⟨⟨ι, hι⟩, -⟩ := _root_.GlobalTheory.Member.exists_iotaOK D Q hQ j hj
     refine ⟨LinearMap.funLeft (𝓞 D.host.E) D.host.E (Fin.cast (D.sp.W_rank j hj.1 hj.2).symm) ∘ₗ ι,
       fun _ hr => ?_⟩
     have e : LinearMap.funLeft (𝓞 D.host.E) D.host.E (Fin.cast hr) ∘ₗ
@@ -60,13 +60,13 @@ theorem exists_pkgAll (Q : Par D) (hQ : Q.Pins) (hpq : ∀ j, 1 ≤ (Q.Dw j).p +
           (LinearMap.funLeft (𝓞 D.host.E) D.host.E (Fin.cast (D.sp.W_rank j hj.1 hj.2)) ∘ₗ ι₀) Kf χ U dict mu x₀ := by
   by_cases h : InR D j ∧ GoodEmb Q.c σ
   · obtain ⟨hj, hσ⟩ := h
-    obtain ⟨⟨C, hC, hCι⟩, -⟩ := GlobalTheory.T.exists_memberDictionaryContext_goodEmbedding D Q.H (Q.Dw j) Q.l (Q.Xo j) Q.c σ (D.sp.W j) D.R.r
+    obtain ⟨⟨C, hC, hCι⟩, -⟩ := _root_.GlobalTheory.Member.exists_ctx D Q.H (Q.Dw j) Q.l (Q.Xo j) Q.c σ (D.sp.W j) D.R.r
       (D.sp.W_rank j hj.1 hj.2) _ (hι hj (D.sp.W_rank j hj.1 hj.2)) (hpq j) hQ.2.1.2 hσ
-    obtain ⟨un, dict, mu, -, -, hP⟩ := GlobalTheory.T.exists_uniformisation_dictionary_character_laws D Q.H (Q.Dw j) Q.l (Q.Xo j) Q.c σ (D.sp.W j) D.R.r C hC Kf hK χ
+    obtain ⟨un, dict, mu, -, -, hP⟩ := _root_.GlobalTheory.Member.exists_pkgLaws D Q.H (Q.Dw j) Q.l (Q.Xo j) Q.c σ (D.sp.W j) D.R.r C hC Kf hK χ
       (hχ hj hσ).1 (hχ hj hσ).2
     rw [hCι] at hP
     exact ⟨C.unf un, dict, mu, C.x₀, fun _ _ => ⟨fun k => (hC.base.type k).1, hP⟩⟩
-  · obtain ⟨U, ⟨k⟩⟩ := GlobalTheory.T.exists_uniformisation_with_component_at_every_embedding D Q hQ hpq j σ
+  · obtain ⟨U, ⟨k⟩⟩ := _root_.GlobalTheory.exists_unf_nonempty_comp_all D Q hQ hpq j σ
     exact ⟨U, fun _ => ⟨k, fun _ _ _ => 0⟩, fun _ => 1, fun _ => 1, fun hj hσ => absurd ⟨hj, hσ⟩ h⟩
 
 end GlobalTheory.Member

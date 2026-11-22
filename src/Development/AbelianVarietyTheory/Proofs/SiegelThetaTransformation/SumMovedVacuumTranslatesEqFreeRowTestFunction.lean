@@ -4,7 +4,7 @@ public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.SpanningFamilies.IsStabForm
 public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.LevelStructureProperties
 public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.LevelTestFunctionFiniteSumEquivariant
-public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.ProjProjOfGood
+public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.Bundle0036
 
 @[expose] public section
 

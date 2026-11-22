@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsConstantsDescend
+public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0001
 
 @[expose] public section
 

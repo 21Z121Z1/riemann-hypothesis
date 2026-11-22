@@ -1,13 +1,8 @@
 module
 
-public import Formalism.LatticeTheta.LatticeThetaProofs.Assembly
-public import Formalism.LatticeTheta.LatticeThetaProofs.LatticeSummableDecay
-public import Formalism.LatticeTheta.LatticeThetaProofs.Periodization
-public import Formalism.LatticeTheta.LatticeThetaProofs.UnfoldCoeff
+public import Formalism.LatticeTheta.LatticeThetaProofs.Bundle0002
 public import Formalism.LatticeTheta.LatticeThetaProofs.LatticeFourierSeries
-public import Formalism.LatticeTheta.LatticeThetaProofs.GaussSchwartz
-public import Formalism.LatticeTheta.LatticeThetaProofs.DualLattice
-public import Formalism.LatticeTheta.LatticeThetaProofs.CovolumeDual
+public import Formalism.LatticeTheta.LatticeThetaProofs.Bundle0001
 
 @[expose] public section
 

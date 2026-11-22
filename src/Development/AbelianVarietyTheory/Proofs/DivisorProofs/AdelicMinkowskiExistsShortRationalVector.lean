@@ -5,7 +5,7 @@ public import Development.AbelianVarietyTheory.Definitions.Divisors.OneMemH0Weig
 public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.NotIsCompactUnivFv
 public import GroundTheory.GlobalFields.IdeleGroups.IdeleNorms
 public import CompanionTheory.AutomorphicTheory.UnitriangularMeasure.AdeleCoordinateMeasure.GJGlobalModulus
-public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.RationalVectorsAdelesFundamentalDomainMassOne
+public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0118
 
 @[expose] public section
 

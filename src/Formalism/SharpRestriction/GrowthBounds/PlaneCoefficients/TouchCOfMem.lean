@@ -1,6 +1,6 @@
 module
 
-public import Formalism.SharpRestriction.GrowthBounds.PlaneCoefficients.DigOKAddInl
+public import Formalism.SharpRestriction.GrowthBounds.PlaneCoefficients.Bundle0003
 
 @[expose] public section
 

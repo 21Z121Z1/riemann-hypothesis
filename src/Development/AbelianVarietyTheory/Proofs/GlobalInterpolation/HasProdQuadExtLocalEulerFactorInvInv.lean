@@ -1,11 +1,11 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.BlockTheory.GlobalSignature.LocalDualIndex
-public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.ExistsSubConjNotMem
+public import Development.AbelianVarietyTheory.BlockTheory.GlobalSignature.Bundle0004
+public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0023
 public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.IsFieldAdicCompletionTensorOfInert
-public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.NotIsFieldAdicCompletionTensorOfSplit
-public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.QuadraticUnramifiedIffInertOrSplit
+public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0038
+public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0007
 public import Formalism.GL3MeanSquares.HookFormulaTorsion.SumWeightsOverPrimeLeHalfDegree
 
 @[expose] public section

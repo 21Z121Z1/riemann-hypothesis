@@ -2,7 +2,8 @@ module
 
 public import Mathlib
 public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.IsLatFamilyCongr
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.HodgeTateChartDualActionStatement
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0045
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0038
 public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.HodgeTateFreeCmTypeWeight
 
 @[expose] public section
@@ -269,7 +270,7 @@ theorem seqHyp_chart : ∀ (o Ω Li : Type) [CommRing o] [Field Ω] [CharZero Ω
   have hσσ : (σ.comp c.toRingHom).comp c.toRingHom = σ := by
     ext x
     simp [hc]
-  obtain ⟨J, Rr', hJ1, hJ2, hJ3⟩ := GlobalTheory.T.hodge_tate_chart_dual_action R Ω E c hc p Rr N Li D ρ hact σ 1 m i₀ (by simp) hex
+  obtain ⟨J, Rr', hJ1, hJ2, hJ3⟩ := _root_.GlobalTheory.CompanionTheory.Ar.Flat.HTL.exists_lift_retract R Ω E c hc p Rr N Li D ρ hact σ 1 m i₀ (by simp) hex
   obtain ⟨hVv, hSv, hIv⟩ := frame hv hvs
   obtain ⟨hVv', hSv', hIv'⟩ := frame hv' hvs'
   have hLat : ∀ e, e ∈ HTL.latOn D (GlobalTheory.CompanionTheory.Ar.HT.eigSp ρ σ) (algebraMap R Ω 1) (algebraMap R Ω).range ↔

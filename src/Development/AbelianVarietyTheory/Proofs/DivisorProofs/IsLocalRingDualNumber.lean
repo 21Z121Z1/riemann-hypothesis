@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Divisors.HasDefect
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntDerApply
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0060
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1970
 
 @[expose] public section
 

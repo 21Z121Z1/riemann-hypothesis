@@ -62,10 +62,10 @@ theorem coreSharp (hSC : SharpCount) (lam : Measure (Fv F v)) (hlam : IsStdV v l
   let 𝒪 := v.adicCompletionIntegers F
   let 𝓴 := IsLocalRing.ResidueField 𝒪
   let res := IsLocalRing.residue 𝒪
-  have hLoc := GlobalTheory.T.completion_is_local_ring F v
+  have hLoc := _root_.GlobalTheory.CompanionTheory.SW.LocFv.isLocR_Fv F v
   haveI : SecondCountableTopology (Fv F v) := hLoc.2.2.1
   haveI : BorelSpace (Fv F v) := ⟨rfl⟩
-  obtain ⟨-, -, -, hcard⟩ := GlobalTheory.T.standard_local_haar_properties F v lam hlam
+  obtain ⟨-, -, -, hcard⟩ := _root_.GlobalTheory.CompanionTheory.SW.Vol.volumes_in_completion F v lam hlam
   have hq0 : Ideal.absNorm v.asIdeal ≠ 0 := by
     rw [Ne, Ideal.absNorm_eq_zero_iff]
     exact v.ne_bot
@@ -178,7 +178,7 @@ theorem coreSharp (hSC : SharpCount) (lam : Measure (Fv F v)) (hlam : IsStdV v l
       have hy0 : y ≠ 0 := (Finset.mem_filter.1 hy).2
       obtain ⟨hint, hprim⟩ := (cover (lf y)).2 ⟨y, hy0, fun i => by simp⟩
       obtain ⟨a, haQ, har⟩ := res_Q c hc hr BO y
-      have key := GlobalTheory.T.primitive_vector_quadratic_level_measure F v lam hlam h2 ι (BO.map phi) hBs hBint hBdet (lf y) hint hprim A hA
+      have key := _root_.GlobalTheory.CompanionTheory.SW.Hensel.measure_residue_class F v lam hlam h2 ι (BO.map phi) hBs hBint hBdet (lf y) hint hprim A hA
       have hkey : (Measure.pi fun _ : ι => lam) (P y) = _ := key
       rw [hkey, hM]
       have hcl : Valued.v (s - Qf (lf y)) < 1 ↔ qk y = sb := by

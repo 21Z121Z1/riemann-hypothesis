@@ -1,12 +1,11 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsLinearHomProd
-public import Development.AbelianVarietyTheory.Proofs.HeightProofs.IsAbelianSchemeOfIsPrincipal
-public import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.ExistsLinearOfIsMonHom
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1526
+public import Development.AbelianVarietyTheory.Proofs.HeightProofs.Bundle0062
+public import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.Bundle0010
 public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.EqZeroOfFderivEqZero
-public import Development.AutomorphicArithmetic.DivisorFrames.ExistsNsmulMemSumImageLatticeOfSurjectiveMod
-public import Development.AutomorphicArithmetic.DivisorFrames.ExistsInjectiveLatticeHomRingOfIntegersOfFinrank
+public import Development.AutomorphicArithmetic.DivisorFrames.Bundle0001
 
 @[expose] public section
 

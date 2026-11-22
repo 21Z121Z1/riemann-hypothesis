@@ -1,7 +1,7 @@
 module
 
 public import Development.WeilBound.CoreStatements.LocalThetaKernels.EvlLoc
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsLocallyConstantAddChar
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0212
 
 @[expose] public section
 

@@ -1,119 +1,120 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Divisors.Params
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0052
 public import Development.AbelianVarietyTheory.PublishedTheorems.SiegelWeil₂.SiegelWeilUnitaryConvergent
 public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.HasDRepIffHasDerivAt
-public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.HeckeFormNSOfHeckeForm
+public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.Bundle0016
 public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.WeilSiegelFormulaUnitary
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.HeckeFormOfDoubling
-public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.RegularisedSiegelWeilFirstTerm
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0532
+public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.Bundle0011
 public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.NonzeroPlacesOverPrimesLifts
 public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.WeakCharInertPartRealAdelicDataTransport
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RowEigensystemCarriedByFiniteType
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsPartnerCombinationGoodInertLift
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BaseLevelWFormsEqPrincipalForms
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BaseLevelWOrthogonalSumOfParts
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.HeckeClose
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.InertJunkColIn3
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsRowPartNeBotPositiveDimension
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.PosAtBase
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.FiniteTypeCarriesOnePart
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsUnitaryRep
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsPart
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.GoodFormsDefiniteExist
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1279
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1420
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1472
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0240
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0148
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0410
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0165
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0411
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0176
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0287
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0160
 public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IsNilpotentSubOneOfFullBlockUnipotent
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HyperspecialFixesVacuaGoodInertPlace
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1393
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EOpEqAsAlgebraHom
-public import Development.AbelianVarietyTheory.PublishedTheorems.SiegelWeil₂.SiegelEisensteinContinuationOfDoublingMethod
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ThetaLiftScalarIdentityMatchingAdjointInjectiveStatement
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ThetaInnerProductEqConstMulLValueStatement
-public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.PrinInf
+public import Development.AbelianVarietyTheory.PublishedTheorems.SiegelWeil₂.Bundle0001
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0545
+public import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.Bundle0001
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0524
+public import Formalism.UnipotentAdelicQuotients.Bundle0003
+public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.Bundle0015
 public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.IsThetaFam
-public import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.SkewGramHalfModule
-public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.ExistsNormLeHeightPow
+public import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.Bundle0018
+public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.Bundle0007
 public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.PairwiseDisjointCell
-public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.HeckeLPartialContinuationHolds
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.DoublingSiegelWeilSectionMemDegeneratePrincipalSStatement
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.AdelicIwasawaDoubledGroupSelfDualLatticeStatement
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SiegelWeilSectionDoublingEqMatrixCoefficientStatement
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.DoublingMapThetaIdentityAnyWeilDataStatement
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.DoublingVectorFockPairIsCompactFiniteStatement
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.CuspFormsArchimedeanKFiniteStarCompMemStatement
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ImportsBis
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.BoxProductsOrthogonalSumTargetCartanFockStatement
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.DoublingIntegralsVanishOfAllLiftsVanishStatement
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.LevelPlacesIntegralNonzeroConstantStatement
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ZetaResidueNeZeroOfSimplePoleLiftLFunctionStatement
+public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.Bundle0005
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0270
+public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.Bundle0013
+public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.WeilRepresentationUnitaryPair
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0156
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0251
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0144
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0184
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0196
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0530
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0195
 public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsIsLatticeFrameIsMajorantFrame
-public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.ExistsInfFamAndStdChar
+public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.Bundle0050
 public import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.CovolOneIntegralAdd
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.AdelicIwasawaDoubledGroupSelfDualLattice
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ThetaKillingImpliesVanishing
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ThetaKernelExistsForContinuous
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0241
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0369
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0347
 public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.TameOfHeisDer
-public import Development.AbelianVarietyTheory.Proofs.HeightProofs.AdelicUnitaryRealPointsStructureRealPlaces
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.FinrankOrth
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsWittDecompositionIsotropicSplitUnipotent
+public import Development.AbelianVarietyTheory.Proofs.HeightProofs.Bundle0033
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0165
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0241
 public import Development.AbelianVarietyTheory.Counterexamples.HeightSurvey.EmbRelExistsUnique
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.AdelicIwasawaDecompositionWittIsotropicStabilizeStatement
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ThetaMajorantAverageIdentity
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ExistsVacuumVectorPrincipalCongruenceSupportStatement
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ExistsSumHyperbolicPlanesOrthogonalWittDecomposiStatement
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.DefiniteRealGroupFixesSplitSpaceWeilVacuumStatement
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.DefiniteUnitaryQuotientCompactFundamentalDomainStatement
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.DoublingZetaValueAtEisensteinHolomorphicPoint
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ContAutRapidDecBoundedIntegrable
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ExistsWeilDatumHermitianSpaceDoubled
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.IsThetaFunctionDoublingSeesawOfStandardChar
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.DoublingVectorFockPairIsCompactFinite
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0264
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0272
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0514
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0407
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0198
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0163
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0277
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0101
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0146
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0153
 public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.WeilDatumAtPlaceEqLatticeIntertwinerMulDetChar
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.DoublingEulerProductFarRightOfRapidDecayUnramifiStatement
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ThetaLiftNonvanishingOnStringOfDefiniteDownStatement
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.UnramifiedThetaCorrespondenceAllGoodPrimesStatement
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.DownwardThetaLiftEigenformIsEigenformStatement
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ThetaLiftGenerationFinitePlacesStatement
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ThetaLiftGenerationAtRealPlacesStatement
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.DownwardThetaLiftPreservesGoodStatement
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.GoodTypesExcludeLevelCharacterStatement
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.HasStringOfLift
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsParamDefinite
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.TypeNZOfNonVanGen
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SimplePoleOfHecke
-public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.TransferOn
-public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.ParamsEx
-public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.AdjFormula
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0528
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0420
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0441
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0748
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0945
+public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.LengthPosOfPosDef
+public import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.GaussianBinomialClosedForm
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0918
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0796
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0695
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0645
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0713
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0650
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0140
+public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0025
+public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0021
 public import Formalism.LocalToGlobal.IndefiniteReal.LinksStage
 public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisGeometry₂.HoweUnram
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.UpInjWOfAForm
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CoreClausesOfWeakCharacterisation
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SchurConstantsExistOnChainOfCuspRapidDecay
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ScalarHypothesesOfTopRows
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ThetaLiftOntoOfInjectiveEigenspacesStatement
-public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.GreenCuspidalIff
-public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.HarishChandraFinite
-public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.EisRegularAtOfEisPoleLE
-public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.HasFiniteLengthOfIsIrreducible
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0178
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0942
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1121
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0183
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0617
+public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.Bundle0004
+public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.Bundle0004
+public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.Bundle0010
+public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.Bundle0001
 public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.AdmissibleDiscreteSeriesOfHasParam
 public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.HarishChandraModulesOn
 public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.SchurOrthogonalitySquareIntegrable
-public import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.RealLowestKTypeCoeffSquareIntegrable
+public import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.Bundle0002
 public import Formalism.LocalToGlobal.IndefiniteReal.BaseLiftsPackageOfPrimitiveLinks
 public import Formalism.LocalToGlobal.IndefiniteReal.NormalDecomposition.LiftHeckeOperators
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FinRepApply
-public import Formalism.SharpRestriction.ElevenLe
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.LiftIntegOfCuspRapidDecay
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FiniteDimensionalFixed
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TransferEigensystemPartsThreeLevelsOfMultEqStatement
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.GoodCharactersDualStableOfThetaLiftScalarsStatement
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.HeckeOperatorsRowsLiftsRationalAdjointClosed
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.GUnitOfModels
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.PGEquivOfBaseW
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdjointLiftRangeLeGoodBlockEigenspaces
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ThetaLiftTheoremAPublishedHypothesesStatement
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ThetaLiftTheoremBPublishedHypothesesStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LiftTestsModularLatticeOfCoreCompatibilityStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AlgebraicFormNormEqAtConjugateEmbedding
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0831
+public import Formalism.SharpRestriction.Bundle0001
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0194
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1105
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1590
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0051
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0401
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0040
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0173
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0175
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0608
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1258
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0547
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2098
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1678
 
 @[expose] public section
 
@@ -144,7 +145,7 @@ theorem carries_of_upInj (hCusp : GlobalTheory.Published.CuspRapidDecay) (hHowe 
   have hSch : SchurAll R.toRealDat := GlobalTheory.Hk3.schurAll_of_cuspRapidDecay hCusp R.toRealDat
   have hTw := GlobalTheory.VmTwo.twoSided_goodInert hHowe R F hLI hCW hEx hSch
   have hHk := (GlobalTheory.Hk3.inertJunk_iff A3).1 hJ
-  obtain ⟨Tc, hTc, hx⟩ := GlobalTheory.T.operatorFamily_adjointLift_single_eigensystem R F hLI hOk hCW hEx hSch hTw hHk
+  obtain ⟨Tc, hTc, hx⟩ := _root_.GlobalTheory.UpSystem.up_sys R F hLI hOk hCW hEx hSch hTw hHk
   obtain ⟨x, hxc⟩ := hx c
   obtain ⟨w, hw, hw0⟩ := (Submodule.ne_bot_iff _).1 hc
   have hne : LinearMap.adjoint (R.Th A3.A.μ0) w ≠ 0 := fun h => hw0 (hUp A3.A.μ0 (h.trans (map_zero _).symm))
@@ -168,7 +169,7 @@ theorem carries_of_upInj (hCusp : GlobalTheory.Published.CuspRapidDecay) (hHowe 
     rintro (i | k)
     · exact (hOk.ok2.what₂ A3.A.μ0).split i
     · exact (hOk.what₂ A3.A.μ0).split k
-  have hZ := (GlobalTheory.T.range_adjoint_le_span_jX_image_ZHg R F hLI hOk hCW hEx hSch hPG).1 A3.A.μ0
+  have hZ := (_root_.GlobalTheory.AdjBlockSpan.range_adjoint_le_span_good_block R F hLI hOk hCW hEx hSch hPG).1 A3.A.μ0
   obtain ⟨s', hxs, heig, f, hf0, hfZ, hfE⟩ := GlobalTheory.Div.exists_sys_of_mem_span D.what₂.embLL j b op Tc
     ((A3.A.fam.R A3.A.μ0).ZHg A3.A.X) hli hjX.2.2 hcomm hpc hso x (LinearMap.adjoint (R.Th A3.A.μ0) w) (hxc w hw) hne
     (hZ ⟨w, rfl⟩)
@@ -210,10 +211,10 @@ theorem levW_of_span (hCusp : GlobalTheory.Published.CuspRapidDecay) (R : RealDa
     (hScal : 0 < R.kap ∧ ∀ i t p, 0 < R.lam3 i t p A3.A.v0) (hA : R.PThmA) (hLT : Formalism.IndefR.Rat.LiftTest (R.toCx3 F))
     (hU : R.toRealDat.LUnif) : R.PLevW F := by
   have hSchur := GlobalTheory.Hk3.schurAll_of_cuspRapidDecay hCusp R.toRealDat
-  have hSpan := GlobalTheory.T.cuspidal_multiplicity_carriers R F hOk hC hEx hSchur hGS hCD hME hCar
+  have hSpan := _root_.GlobalTheory.SpanW.iSup_wp3_eq_range_eH R F hOk hC hEx hSchur hGS hCD hME hCar
   have hW := GlobalTheory.T.principalFormsSubspace_eq_good_forms R F hOk hC hEx hSpan hScal hA hLT hBlock
   intro j
-  exact (GlobalTheory.T.range_goodProjector_baseLevel_twistedModel R F hOk hC hEx hU j).trans (congrArg (· ⊓ _) (hW j).symm)
+  exact (_root_.GlobalTheory.WType.range_w0C_type R F hOk hC hEx hU j).trans (congrArg (· ⊓ _) (hW j).symm)
 
 theorem partsW_of_carried (hCRD : GlobalTheory.Published.CuspRapidDecay) (R : RealDat3 D A3 Ks) (F : Face3 D A3) {s : ℕ}
     (hOk : A3.fam3.Ok3 s) (hW : R.WeakCharacterisation F) (hEx : R.toRealDat.ExAt) (hGS : GoodStable A3.A.X) (hCD : GlobalTheory.CuspMult.CuspDecomp D)
@@ -223,14 +224,14 @@ theorem partsW_of_carried (hCRD : GlobalTheory.Published.CuspRapidDecay) (R : Re
   have hS : SchurAll R.toRealDat := GlobalTheory.Hk3.schurAll_of_cuspRapidDecay hCRD R.toRealDat
   obtain ⟨hCore, hSF, -, hWc⟩ := GlobalTheory.CoreOfWeak.core_of_weak R F hW hEx
   have hirr : ∀ χ ∈ A3.A.X, IsAbsIrrChar χ := hOk.ok2.irr
-  have hspan := GlobalTheory.T.cuspidal_multiplicity_carriers R F hOk hW hEx hS hGS hCD hME hcar
-  have horth := GlobalTheory.T.W_forms_parts_of_distinct_types_orthogonal R F hOk hW hEx hS hOkH hkap hB
+  have hspan := _root_.GlobalTheory.SpanW.iSup_wp3_eq_range_eH R F hOk hW hEx hS hGS hCD hME hcar
+  have horth := _root_.GlobalTheory.OrthW.inner_wp3_eq_zero_of_ne R F hOk hW hEx hS hOkH hkap hB
   intro j
-  have htype := GlobalTheory.T.range_goodProjector_baseLevel_twistedModel R F hOk hW hEx hU j
+  have htype := _root_.GlobalTheory.WType.range_w0C_type R F hOk hW hEx hU j
   refine ⟨fun p q hpq w hw w' hw' => ?_, ?_⟩
   · exact GlobalTheory.SumW.inner_tw_eq_zero (E := (R.HW j (sg0 D A3.A)).H) (twAt D.what₂.embLL A3.A.v0) w w'
       (horth j p q hpq _ hw.1 _ hw'.1)
-  · obtain ⟨-, -, -, -, -, hst, -⟩ := GlobalTheory.T.sphericalOperators_forms_on_rank_space_normal R.toRealDat F.lv2 hCore hS hirr R.SF hSF j
+  · obtain ⟨-, -, -, -, -, hst, -⟩ := _root_.GlobalTheory.SphOpsModel.sphericalOperators_forms_on_rank_space_normal_alt R.toRealDat F.lv2 hCore hS hirr R.SF hSF j
     have hstab : ∀ p g, (R.Wp3 j p).map (R.gW j (sg0 D A3.A) g) ≤ R.Wp3 j p := by
       intro p g
       unfold RealDat3.Wp3

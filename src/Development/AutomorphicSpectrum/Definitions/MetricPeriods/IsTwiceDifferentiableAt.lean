@@ -2,9 +2,8 @@ module
 
 public import Mathlib
 public import ReciprocityTheory.AnalyticForms.LeviForms.IsRegFamilyInhabitStatement
-public import ReciprocityTheory.AnalyticForms.PotentialTheory.IsPotentialPullbackStatement
-public import Development.AutomorphicSpectrum.Definitions.MetricPeriods.PairRelationOfScaledRatio
-public import Development.AutomorphicSpectrum.Definitions.MetricPeriods.InFlagDomainOne
+public import ReciprocityTheory.AnalyticForms.PotentialTheory.Bundle0002
+public import Development.AutomorphicSpectrum.Definitions.MetricPeriods.Bundle0001
 
 @[expose] public section
 

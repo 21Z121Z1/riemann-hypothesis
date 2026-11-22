@@ -2,16 +2,16 @@ module
 
 public import Mathlib
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PlaceDivisors.StChartFH
-public import ReciprocityTheory.DualLattices.TowerZeroSurjective
-public import ReciprocityTheory.DualLattices.LinPairStatement
-public import ReciprocityTheory.DualLattices.LengthDegreeAbelianVariety
+public import ReciprocityTheory.DualLattices.Bundle0028
+public import ReciprocityTheory.DualLattices.Bundle0014
+public import ReciprocityTheory.DualLattices.Bundle0035
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.ChartPullbacks.UniversalCharts.LePreimageOfNil
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.Clauses
 public import Development.AbelianVarietyTheory.Definitions.TeichmullerDepth.IsEigBasisIff
-public import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.NEvalSqZero
-public import Development.AbelianVarietyTheory.Proofs.FormalGroupCharts.IsUniversalChartOfFormalGroupChart
+public import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.Bundle0036
+public import Development.AbelianVarietyTheory.Proofs.FormalGroupCharts.Bundle0016
 public import Development.AbelianVarietyTheory.Proofs.FormalGroupCharts.GermEvalOneStandardPointSelf
-public import Development.AbelianVarietyTheory.Proofs.FormalGroupCharts.ExistsToJetEq
+public import Development.AbelianVarietyTheory.Proofs.FormalGroupCharts.Bundle0015
 
 @[expose] public section
 

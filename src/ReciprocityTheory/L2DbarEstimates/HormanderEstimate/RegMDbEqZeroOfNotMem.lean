@@ -3,7 +3,7 @@ module
 public import ReciprocityTheory.L2DbarEstimates.Localization.UnweightBackStatement
 public import ReciprocityTheory.L2DbarEstimates.ChartDerivatives.Imports
 public import ReciprocityTheory.L2DbarEstimates.WeakHolomorphy.HoloWeakStatement
-public import ReciprocityTheory.L2DbarEstimates.WeakHolomorphy.RegGlue
+public import ReciprocityTheory.L2DbarEstimates.WeakHolomorphy.Bundle0001
 
 @[expose] public section
 

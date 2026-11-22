@@ -1,7 +1,7 @@
 module
 
 public import Formalism.SharpRestriction.ParamsHeightRankConstant
-public import Formalism.SharpRestriction.GlobalSchurBounds.MainIn
+public import Formalism.SharpRestriction.GlobalSchurBounds.Bundle0002
 
 @[expose] public section
 

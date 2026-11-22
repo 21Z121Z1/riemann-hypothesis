@@ -1,8 +1,8 @@
 module
 
-public import PositivityTheory.AutomorphicForms.PublishedInputs.HilbertEisenstein.ContinuousPInfApply
+public import PositivityTheory.AutomorphicForms.PublishedInputs.HilbertEisenstein.Bundle0001
 public import PositivityTheory.AutomorphicForms.PublishedInputs.HilbertEisenstein.ContinuousPInfCoord
-public import PositivityTheory.AutomorphicForms.PublishedInputs.HilbertEisenstein.IdeleModuleSectionMul
+public import PositivityTheory.AutomorphicForms.PublishedInputs.HilbertEisenstein.Bundle0003
 
 @[expose] public section
 

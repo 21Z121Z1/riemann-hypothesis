@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Formalism.ThetaLogCoordinates.UniformThetaSubstitution.ThmSUniform
-public import Formalism.ThetaLogCoordinates.UniformThetaSubstitution.FinalS
+public import Formalism.ThetaLogCoordinates.UniformThetaSubstitution.Bundle0001
+public import Formalism.ThetaLogCoordinates.UniformThetaSubstitution.Bundle0002
 
 @[expose] public section
 

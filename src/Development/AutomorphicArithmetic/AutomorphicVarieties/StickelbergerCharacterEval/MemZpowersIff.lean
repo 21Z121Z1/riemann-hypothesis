@@ -1,6 +1,6 @@
 module
 
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.StickelbergerElements.CoefMapSingle
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.StickelbergerElements.Bundle0001
 
 @[expose] public section
 

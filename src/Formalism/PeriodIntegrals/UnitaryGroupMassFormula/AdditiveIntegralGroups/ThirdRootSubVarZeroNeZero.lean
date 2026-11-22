@@ -1,6 +1,6 @@
 module
 
-public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.AdditiveIntegralGroups.CoeffWSeriesVarZero
+public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.AdditiveIntegralGroups.Bundle0002
 public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.AdditiveIntegralGroups.SubstMem
 
 @[expose] public section

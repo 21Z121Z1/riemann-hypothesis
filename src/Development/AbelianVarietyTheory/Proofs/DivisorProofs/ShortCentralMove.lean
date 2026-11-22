@@ -1,31 +1,31 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Divisors.KerDatTuple
-public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.NormalFam
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.OneMapOfOfExtends
-public import Development.AbelianVarietyTheory.Definitions.Divisors.GenReads
-public import Formalism.LocalToGlobal.IndefiniteReal.RhoGeo
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0035
+public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.Bundle0015
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1656
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0034
+public import Formalism.LocalToGlobal.IndefiniteReal.Bundle0027
 public import Formalism.LocalToGlobal.IndefiniteReal.FWExist
-public import Development.AbelianVarietyTheory.Definitions.Divisors.IsDeltaDelAtOwnAt
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.BaseRatAtOfPhaseOne
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsAdelicLiftEqGeometricClassSumAllTuples
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsFrameConstantsOfCharacterisationCore
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConstUpToCenter
-public import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.EmbeddingsDifferOnInteger
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0054
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0509
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1707
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1645
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1724
+public import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.Bundle0076
 public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.LeafDataOfOnTieOfIntegral
 public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.TwistTrivialOnRational
 public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsDetOfMemSt
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FiniteGroupLevelStructureActionFixedRuns
-public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.ExistsLevelChangeActionOnCuspForms
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.OneMapAllComparison
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1688
+public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0162
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0928
 public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.MulVecMemOfFrame
-public import Formalism.LocalToGlobal.ProjectiveLattices.IsBlockProd
-public import Formalism.LocalToGlobal.ProjectiveLattices.EtArchPf
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PullbackSections.ThetaValCAlpha
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PullbackSections.TorusPin
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0038
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0036
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PullbackSections.Bundle0008
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PullbackSections.Bundle0005
 public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.LevelActionShortThetaSeriesRootOfUnityMul
-public import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.HeckeTransferRankOne
+public import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.Bundle0016
 
 @[expose] public section
 
@@ -60,7 +60,7 @@ theorem exists_const_int {D : D7} (T : Full D) (hT : LawsFull T) {j : ℕ} (hj :
   obtain ⟨inst, hnab⟩ := hT.sh.dNab j hj w.n
   obtain ⟨ph, ψ, x₀, -, hpin, htie⟩ := hT.sh.dPhi j hj w.n hw
   have hTot := hT.sh.shTot j hj (wtA w) w.n (dom_wtA w)
-  obtain ⟨g, hν, hγ, hg⟩ := GlobalTheory.T.exists_completed_isometry_inducing_half_level_automorphism _ _ (T.Q.Dw j) T.Q.l γ
+  obtain ⟨g, hν, hγ, hg⟩ := _root_.GlobalTheory.LevelIsometry.exists_isometry_inducing _ _ (T.Q.Dw j) T.Q.l γ
   obtain ⟨ρ₂, hρ₂⟩ := GlobalTheory.LevelActionLaws.exists_levAut hpq (T.dδ j w.n).Xo₂ g (by rw [hν, sub_self]; exact dvd_zero _)
   obtain ⟨u, hu, hcd⟩ := GlobalTheory.ShortMove.exists_root T hT hj hxi hw g hν ρ₂ hρ₂
   refine ⟨u, hu, fun Λ N P x0 x0' f f' hG hx hf hf' => ?_⟩
@@ -108,7 +108,7 @@ theorem exists_const_int {D : D7} (T : Full D) (hT : LawsFull T) {j : ℕ} (hj :
   have e₁ := GlobalTheory.ShortLiftInvariance.cover_product_indep_of_lift hL hC _ _ _ _ _ _ _ d
     (GlobalTheory.T.moduliScheme_levelMaps_heckePoints'.2 _ _ _ hpq).1 hLev (hA₂.trans hA.symm) hnab ⟨ph, ψ, x₀, hpin, htie⟩ Λ N hU hb₂ hO _ _ hP₂ x0 _
     r' m' hE' k hk y' z₂ y₂' hz₂ ho' v v' hv hv'
-  have e₂ := GlobalTheory.T.shortThetaValue_under_levelMove hL hC _ _ _ _ d.Xo₂ d.c₂ d.nab₂ hnab k ρ₂.hom ν₂ _ _ y₂ y₂' hmv₂ hfr₂ σq hσ
+  have e₂ := _root_.GlobalTheory.ShortValMove.shortValAt_move hL hC _ _ _ _ d.Xo₂ d.c₂ d.nab₂ hnab k ρ₂.hom ν₂ _ _ y₂ y₂' hmv₂ hfr₂ σq hσ
     _ _ _ hP₂ (d.w x0) Λ _ N v' hv'
   rw [funext hw'] at e₂
   refine ⟨v', e₂, (evalAt_smul _ _ _ _ y).trans ?_⟩

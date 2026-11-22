@@ -1,12 +1,11 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Divisors.DblActId
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RealisedOne
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsRealisedOnAdelicSchwartzWeylFourier
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsRealisedOnAdelicSchwartzLeviInverseTranspose
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0034
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0930
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0963
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WeilRepresentationPreservesSchwartz
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.LcscAdelicUnitaryGroup
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0061
 
 @[expose] public section
 

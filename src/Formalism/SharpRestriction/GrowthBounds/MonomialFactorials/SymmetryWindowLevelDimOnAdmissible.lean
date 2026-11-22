@@ -1,7 +1,7 @@
 module
 
 public import Formalism.SharpRestriction.GrowthBounds.MonomialFactorials.ClosedOfCoefficientFunction
-public import Formalism.SharpRestriction.GrowthBounds.MonomialFactorials.RestLjjFinProved
+public import Formalism.SharpRestriction.GrowthBounds.MonomialFactorials.Bundle0016
 
 @[expose] public section
 

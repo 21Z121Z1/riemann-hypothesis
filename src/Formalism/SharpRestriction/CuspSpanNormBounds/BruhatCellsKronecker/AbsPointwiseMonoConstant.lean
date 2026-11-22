@@ -1,15 +1,15 @@
 module
 
 public import Formalism.SharpRestriction.CuspSpanNormBounds.BesselShellMomentBounds
-public import Formalism.SharpRestriction.CuspSpanNormBounds.SBridge
+public import Formalism.SharpRestriction.CuspSpanNormBounds.Bundle0005
 public import Formalism.SharpRestriction.CuspSpanNormBounds.BranchingAndRankConstants
-public import Formalism.FormalDegreeBessel.FinalG
+public import Formalism.FormalDegreeBessel.Bundle0002
 public import Formalism.SharpRestriction.CuspSpanNormBounds.BruhatCellsKronecker.OwnEvIntro
 public import Formalism.SharpRestriction.CuspSpanNormBounds.LatticeGluingRadicals
 public import Formalism.SharpRestriction.CuspSpanNormBounds.BruhatCellsKronecker.CfgTopFalseIff
 public import Formalism.HermitianCurvature.HermitianCurvatureProofs.SettingConstruction
 public import Formalism.FlagUnipotentLattices.MinkowskiFactorialBounds.LatticeSumBounds
-public import Formalism.SharpRestriction.CuspSpanNormBounds.BruhatCellsKronecker.ParabolicSumAdmissibleOfParabolic
+public import Formalism.SharpRestriction.CuspSpanNormBounds.BruhatCellsKronecker.Bundle0004
 
 @[expose] public section
 

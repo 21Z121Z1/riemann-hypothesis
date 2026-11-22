@@ -1,27 +1,29 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Divisors.NotSymEOfNe
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0068
 public import Development.AbelianVarietyTheory.Definitions.Divisors.UnifAlong
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsLevelCoverMatrices
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsSharpGen
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2688
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2012
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FinitePointsCycAway
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SharpPolarizationPullbackStable
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsNormalModelNormalisationDedekind
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsChartFiniteEtaleCoverGenericPointStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SiegelModuliIntegralNormalLocallyNoetherianStatement
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2113
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2069
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2056
+public import Development.AbelianVarietyTheory.Definitions.Divisors.ThetaSetupStructureMapComp
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2563
 public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsBigThetaSysWithAction
-public import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.AbelianSchemeLawsUnconditional
-public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsThetaSystemOfPolarisedLevel
+public import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.Bundle0029
+public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.Bundle0112
 public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsIsSharpAndPrim
-public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ThetaLevelShapePrimitivityPullbackDescent
-public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsThetaLevelAbelianSchemePullback
-public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsIsE8IsSharpBasis
-public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsPolAVHypSRetract
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsSiegelObjectLoweredLevel
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.SmoothProjectiveStalkFactorial
+public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0161
+public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0117
+public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0052
+public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.Bundle0181
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1962
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0576
 public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsThetaFamilyOverThetaPointScheme
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FiniteFractionFieldOfFinitelyManyProportionalImaStatement
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2080
+public import Development.AbelianVarietyTheory.Definitions.Degenerations.InducedModelMorphismCompStructureMap
 
 @[expose] public section
 
@@ -162,7 +164,7 @@ namespace GlobalTheory.SiegLevSys
 open GlobalTheory.SiegLev GlobalTheory.AbLaw GlobalTheory.Poinc
 
 theorem finite_ratios_of_finite_fibres : ∀ (o Ω : Type) [CommRing o] [Field Ω] [Algebra o Ω] (R : Subalgebra o Ω) (X : Scheme.{0}) (x : Sp R ⟶ X) (I : Type) [Finite I] (v : I → R), R.FG → (∀ z : Ω, ∃ a ∈ R, ∃ c ∈ R, z = a / c) → ((spMap R.val.toRingHom ≫ x).stalkMap (genericPoint (Sp Ω))).hom.Finite → (∀ (K : Type) [Field K] [IsAlgClosed K] (c : I → K), Set.Finite {y : Sp K ⟶ X | ∃ σ : R →+* K, spMap σ ≫ x = y ∧ ∃ u : K, u ≠ 0 ∧ ∀ i, σ (v i) = u * c i}) → Module.Finite (Subfield.closure (Set.range (algebraMap o Ω) ∪ {z | ∃ i i', z = (v i : Ω) / (v i' : Ω)})) Ω :=
-  GlobalTheory.T.finite_fractionField_of_finitely_many_proportional_images
+  _root_.GlobalTheory.LevelFinite.finite_ratio_field
 
 theorem exists_hasTh_shrink : ∀ (o Ω : Type) [CommRing o] [Field Ω] [Algebra o Ω] (R : Subalgebra o Ω) (g N' : ℕ) (J : Type) (b : TBase o (N' ^ 2)) (t : TObj g (N' ^ 2) J b (spMap (algebraMap o R))), Odd N' → R.FG → (∀ z : Ω, ∃ a ∈ R, ∃ c ∈ R, z = a / c) → ∃ (R' : Subalgebra o Ω) (hR : R ≤ R') (t' : TObj g (N' ^ 2) J b (spMap (algebraMap o R'))) (v : Ix g (N' ^ 2) → R'), R'.FG ∧ (∀ z : Ω, ∃ a ∈ R', ∃ c ∈ R', z = a / c) ∧ TMap t' t (spMap (Subalgebra.inclusion hR).toRingHom) ∧ t'.HasTh (𝟙 _) v := by
   intro o Ω _ _ _ R g N' J b t hN hfg hfr
@@ -229,7 +231,7 @@ open GlobalTheory.SiegLev GlobalTheory.AbLaw GlobalTheory.Poinc
 
 theorem exists_sys_levModel : ∀ (ℓ : ℕ), ℓ.Prime → Odd ℓ → ∀ j₀ : ℕ, ∀ (g n : ℕ), 1 ≤ g → 3 ≤ n → Odd n → ∀ (F : SFam g n (zetaAway n)) (W : Matrix (Fin 8) (Fin 8) ℤ), IsE8 W → ℓ ∣ n → (∃ bas : (Fin (2 * (8 * g)) → ℤ) ≃ₗ[ℤ] (Fin 8 → (Fin g ⊕ Fin g → ℤ)), IsSharpBasis W bas) → ∃ (o Ω : Type) (_ : CommRing o) (_ : Field Ω) (_ : Algebra o Ω) (_ : ArithBase o Ω) (β : cycAway n →+* o) (S : ThetaSys o Ω) (ρ : S.Real) (u : Sp S.R ⟶ F.X) (Y : RatModel o Ω) (q : Y.Z ⟶ F.X), SysAt F W β S ρ u ∧ LevAt F β u Y q ∧ S.Big ∧ Module.Finite (Subfield.closure (Set.range (algebraMap o Ω) ∪ {x | ∃ i j, x = S.th j / S.th i})) Ω := by
   intro ℓ hℓ hℓo j₀ g n hg hn hodd F W hW hℓn ⟨bas, hbas⟩
-  obtain ⟨hint, -, -⟩ := GlobalTheory.T.siegelModuli_integral_normal_locallyNoetherian g n hg hn hodd F
+  obtain ⟨hint, -, -⟩ := _root_.GlobalTheory.SiegelIntegral.integral_normal_noetherian g n hg hn hodd F
   obtain ⟨j₁, hj₁⟩ := ThetaQuasiFinite.finite_theta_fibres g ℓ hℓ hℓo W bas hW
   obtain ⟨k, j₂, hsys⟩ := exists_big_thetaSys_genus ℓ (8 * g) hℓ hℓo
   set j := max (max j₁ j₂) 1 with hjdef
@@ -253,7 +255,7 @@ theorem exists_sys_levModel : ∀ (ℓ : ℕ), ℓ.Prime → Odd ℓ → ∀ j�
   haveI := F'.smooth
   haveI : Smooth F'.s := SmoothOfRelativeDimension.smooth (g * (g + 1) / 2) F'.s
   obtain ⟨Ω, _, _, _, R, y, hRfg, hfrac, hys, hpt, hstalk⟩ :=
-    GlobalTheory.T.exists_chart_finite_etale_cover_generic_point n (n * (ℓ ^ j) ^ 2) F.X F'.X F.s F'.s q (by omega) (by positivity) inferInstance inferInstance
+    _root_.GlobalTheory.Poinc.Chart.exists_chart n (n * (ℓ ^ j) ^ 2) F.X F'.X F.s F'.s q (by omega) (by positivity) inferInstance inferInstance
       hqfin hqet hqsurj (genericPoint F.X) (genericPoint_mem F.X)
   obtain ⟨t, ht⟩ := GlobalTheory.tObj_pull _ (8 * g) _ _ b F'.X (Sp R) F'.s (spMap (algebraMap _ R)) y t' hys
   have hp : t.Prim w w' :=

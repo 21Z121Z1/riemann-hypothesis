@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.LayerProd
-public import Development.AbelianVarietyTheory.BlockTheory.SiegelWeilLocal.CenteredPerpendicularSets
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.CoveringRadiiIff
+public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.Bundle0006
+public import Development.AbelianVarietyTheory.BlockTheory.SiegelWeilLocal.Bundle0001
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0122
 
 @[expose] public section
 

@@ -3,11 +3,11 @@ module
 public import Mathlib
 public import Formalism.LocalRingCardinality.DataHost
 public import Formalism.SharpRestriction.RamificationFrobenius.TotientGaloisClasses.HostFacts
-public import Formalism.SharpRestriction.RamificationFrobenius.TotientGaloisClasses.InertiaGaloisSymmetry.KcEqOfPowEqOne
-public import Development.AutomorphicArithmetic.WeightCongruences.ProdNegOneZpow
+public import Formalism.SharpRestriction.RamificationFrobenius.TotientGaloisClasses.InertiaGaloisSymmetry.Bundle0001
+public import Development.AutomorphicArithmetic.WeightCongruences.Bundle0001
 public import Development.AutomorphicArithmetic.WeightCongruences.RootOfUnityGaloisActionCMDatum
 public import Development.AutomorphicArithmetic.WeightCongruences.ProdCmTypePhaseOneAddRootOfUnity
-public import Development.AutomorphicArithmetic.PrimeDiscriminants.ExistsPrimitiveRootTorsionOrder
+public import Development.AutomorphicArithmetic.PrimeDiscriminants.Bundle0001
 
 @[expose] public section
 

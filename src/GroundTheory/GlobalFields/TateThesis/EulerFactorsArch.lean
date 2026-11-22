@@ -3,9 +3,9 @@ module
 public import Mathlib
 public import GroundTheory.GlobalFields.TateThesis.HeckeChar
 public import GroundTheory.GlobalFields.TateThesis.IdeleMeasure
-public import GroundTheory.GlobalFields.TateThesis.ArchCharsUnitary
-public import GroundTheory.GlobalFields.TateThesis.Gaussian
-public import GroundTheory.GlobalFields.TateThesis.GaussianComplex
+public import GroundTheory.GlobalFields.TateThesis.Bundle0004
+public import GroundTheory.GlobalFields.TateThesis.Bundle0001
+public import GroundTheory.GlobalFields.TateThesis.Bundle0003
 
 @[expose] public section
 

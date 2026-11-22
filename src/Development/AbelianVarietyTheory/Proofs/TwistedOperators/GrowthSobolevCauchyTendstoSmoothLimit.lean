@@ -1,13 +1,13 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.IsVacFOfIsVacVec
+public import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.Bundle0002
 public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.HasDRepIffHasDerivAt
-public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.ExistsGrowthSobNeTopOfIsAutFunSm
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.RWordRTrAdelic
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsModGrowthExpLeNormInfPow
+public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.Bundle0009
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0165
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0121
 public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.MemSmoothFunctionsOfClosedRightDerivatives
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsCuspFunctionClosedUnderOperations
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0165
 
 @[expose] public section
 

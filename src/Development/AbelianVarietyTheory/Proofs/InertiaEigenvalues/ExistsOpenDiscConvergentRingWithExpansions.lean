@@ -2,12 +2,11 @@ module
 
 public import Mathlib
 public import Formalism.LocalRingCardinality.AdicCompletionLocal.LocTied
-public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.ConvZero
-public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.SandZero
+public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0005
 public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.PeriodDiscExtensionTateElement
 public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CompleteSpaceFinExt
 public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.NormCoeffSubstLe
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.LocAinfUntiltEpsOneEqZeta
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0223
 
 @[expose] public section
 

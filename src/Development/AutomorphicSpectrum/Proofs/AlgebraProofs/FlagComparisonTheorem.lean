@@ -1,27 +1,23 @@
 module
 
 public import Mathlib
-public import ReciprocityTheory.DualLattices.CotangentSurjective
-public import ReciprocityTheory.DualLattices.ProdDvdOfIso
-public import ReciprocityTheory.DualLattices.InvolutionPermApplyZero
+public import ReciprocityTheory.DualLattices.Bundle0004
+public import ReciprocityTheory.DualLattices.Bundle0015
+public import ReciprocityTheory.DualLattices.Bundle0031
 public import ReciprocityTheory.DualLattices.PowMemCarrier
 public import Development.AbelianVarietyTheory.Counterexamples.UpperHalfSurvey.HasColenNotUniqueWithoutGuard
 public import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.IsTight
-public import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.StepOrderRes
-public import Development.AutomorphicSpectrum.Statements.AlgebraStatements.PolarisedFlagStatement
-public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.StableHopfOrderSubgroupGenerationStatement
-public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.StableHopfOrderFundamentalLengthsStatement
-public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.StableHopfOrderBasisIdealsStatement
-public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.StableHopfOrderBasisLengthsStatement
-public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.TeichmullerCharacterOrderGeneratesStatement
-public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.StableHopfOrderBasisColengthStatement
-public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.ProductInequalitiesForceEqualityStatement
-public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.StableHopfOrderFundamentalIdealStatement
-public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.FundamentalIdealFrobeniusValuationStatement
-public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.NonFundamentalEigenLeSquareAugmentationStatement
-public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.FundamentalIdealFrobeniusProductStatement
-public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.CharacterIdealPrincipalEigenStatement
-public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.StableHopfOrderSubgroupTranslationStatement
+public import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.Bundle0003
+public import Development.AutomorphicSpectrum.Statements.AlgebraStatements.Bundle0001
+public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.Bundle0056
+public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.Bundle0032
+public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.Bundle0040
+public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.Bundle0049
+public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.Bundle0005
+public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.Bundle0008
+public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.Bundle0042
+public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.Bundle0047
+public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.Bundle0019
 
 @[expose] public section
 
@@ -153,7 +149,7 @@ theorem flagStatement_holds : FlagStatement := by
     obtain ⟨k, -, e⟩ := FiniteField.card F p
     exact ⟨k, k.pos, e⟩
   have hpp : p.Prime := Fact.out
-  obtain ⟨hord, -, hfp, hfund, -⟩ := GlobalTheory.T.teichmuller_character_order_generates p C v R hv hp F f hf σ hσ
+  obtain ⟨hord, -, hfp, hfund, -⟩ := _root_.GlobalTheory.CompanionTheory.Ar.GR.FundGen.main p C v R hv hp F f hf σ hσ
   have hFp : ∀ s, IsFund p (σ ^ p ^ s) := hfp
   have hbK : ∀ i : Fin n, b i ∉ flagSub b i := fun i =>
     b.linearIndependent.notMem_span_image (by simp)
@@ -276,7 +272,7 @@ theorem flagStatement_holds : FlagStatement := by
     have h2 := prod_chars hpp hf0 σ hord (fun m hm => hfund _ hm) L hnf
     have h3 := hasLen_unique hv (hLprod (fun m => L (σ ^ m)) (fun m _ => hL _)) hcO
     exact h1.trans (h2.symm.trans h3)
-  obtain ⟨hDx, hlen⟩ := GlobalTheory.T.product_inequalities_force_equality (Fin n) (Fin f) (Fintype.card N) (p - 1) Fintype.card_pos
+  obtain ⟨hDx, hlen⟩ := _root_.GlobalTheory.CompanionTheory.Ar.GR.grcount (Fin n) (Fin f) (Fintype.card N) (p - 1) Fintype.card_pos
     (Nat.sub_pos_of_lt hpp.one_lt)
     (fun t s => v (algebraMap R C (c t s))) (fun t s => v (algebraMap R C (d t s)))
     (fun t s => v (algebraMap R C (δ t s))) (fun s => L (σ ^ p ^ ((s : ℕ) + 1))) cA cN cO hcN0

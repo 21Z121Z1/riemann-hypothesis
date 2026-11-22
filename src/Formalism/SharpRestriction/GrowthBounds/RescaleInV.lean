@@ -1,7 +1,7 @@
 module
 
-public import Formalism.LocalToGlobal.CharacterGerms.RowTieDefs
-public import Formalism.LocalToGlobal.CharacterGerms.RowTieCartFB
+public import Formalism.LocalToGlobal.CharacterGerms.Bundle0008
+public import Formalism.LocalToGlobal.CharacterGerms.Bundle0016
 
 @[expose] public section
 

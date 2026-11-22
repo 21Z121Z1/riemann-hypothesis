@@ -4,9 +4,9 @@ public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.Divisors.OneMemH0WeightZero
 public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.NotIsCompactUnivFv
 public import GroundTheory.GlobalFields.IdeleGroups.IdeleNorms
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ClosureNormOneProductsSubgroupPropertiesStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ContinuousAtInvS
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ContinuousLocAdele
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0737
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0717
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0790
 
 @[expose] public section
 

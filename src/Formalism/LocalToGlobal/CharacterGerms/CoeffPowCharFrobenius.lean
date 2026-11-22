@@ -1,6 +1,6 @@
 module
 
-public import Formalism.LocalToGlobal.CharacterGerms.IndependenceBoundRaw
+public import Formalism.LocalToGlobal.CharacterGerms.Bundle0009
 
 @[expose] public section
 

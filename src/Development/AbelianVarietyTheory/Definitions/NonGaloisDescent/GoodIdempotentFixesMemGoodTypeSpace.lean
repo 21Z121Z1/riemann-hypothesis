@@ -3,12 +3,12 @@ module
 public import Mathlib
 public import Formalism.SharpRestriction.LevelLetterCocycles.IntegralHeckeForms
 public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.CharpolySmulOfProd
-public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.TripleAtt
+public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0009
 public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.WdOfMono0L
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Eps0UnramFrob
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.PadicEmbeddingsConjugate
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.EmbeddingIntegralContinuous
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SmallIdealNeBot
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0416
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0014
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0009
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0697
 
 @[expose] public section
 

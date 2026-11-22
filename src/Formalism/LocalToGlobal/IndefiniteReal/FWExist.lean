@@ -1,7 +1,7 @@
 module
 
-public import Formalism.LocalToGlobal.IndefiniteReal.FWTie
-public import Formalism.LocalToGlobal.IndefiniteReal.ConcretePkgSpec
+public import Formalism.LocalToGlobal.IndefiniteReal.Bundle0025
+public import Formalism.LocalToGlobal.IndefiniteReal.Bundle0023
 
 @[expose] public section
 

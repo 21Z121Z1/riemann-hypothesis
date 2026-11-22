@@ -2,24 +2,25 @@ module
 
 public import Mathlib
 public import Formalism.LocalToGlobal.IndefiniteReal.OneMapT
-public import Formalism.LocalToGlobal.IndefiniteReal.ConcretePkgSpec
+public import Formalism.LocalToGlobal.IndefiniteReal.Bundle0023
 public import Formalism.LocalToGlobal.IndefiniteReal.FWExist
-public import Formalism.LocalRingCardinality.DataExtra
-public import Formalism.LocalRingCardinality.DataTies
+public import Formalism.LocalRingCardinality.Bundle0007
+public import Formalism.LocalRingCardinality.Bundle0003
 public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsCoversOfHalves
 public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsRepsOfFiniteIndex
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsFirstOfSecond
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0094
 public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsIndexIdeal
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsGaloisGe
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsCoeffExtRationalFormsValuesFieldStatement
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsLevelAtEachIndexStatement
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.LevelCoefficientCompatibilityStatement
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.LawOfSquaresSelfDualSplitLatticeStatement
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsHarmonicCoefficientMapAtWeightsStatement
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsNumberFieldHeckeCharacterSqrtNormValuesStatement
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ConjPrincipalFractionalIntegralIdempotentSumStatement
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.SelfDualVectorPairsIntegralFrameColumnsStatement
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.InverseSelfDualFrameStandardSpaceIntegralStatement
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0105
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0213
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0204
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0382
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0156
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0026
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0203
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0205
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0202
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0208
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0206
 
 @[expose] public section
 
@@ -70,7 +71,7 @@ theorem rowP_int (W : HSp D) (β : GL (Fin W.rank) (EAf D)) (Λ : Submodule (�
   | mem x hx =>
     obtain ⟨c, hc, v, hv, rfl⟩ := hx
     rw [rowPairing_smul, rowP, ← mul_assoc, mul_comm _ (toEAf D e)]
-    exact mul_mem (GlobalTheory.T.conj_principalFractional_integral_idempotentSum D e P he hP c hc) (GlobalTheory.T.selfDual_vector_pairs_integral_frame_columns D W β Λ hβ v hv a)
+    exact mul_mem (_root_.GlobalTheory.IdemIntegral.conj_mem_intAf D e P he hP c hc) (_root_.GlobalTheory.PairIntegral.pair_mem_intAf D W β Λ hβ v hv a)
   | zero => rw [rowPairing_zero]; exact zero_mem _
   | add x y _ _ hx hy => rw [rowPairing_add]; exact add_mem hx hy
   | smul c x _ hx =>
@@ -200,7 +201,7 @@ theorem exists_phi {F : Face D A} (hR : R.Char F) (hV : VStd D i) (t : T0) {La :
   obtain ⟨M, hM, hv⟩ := exists_omega_field R.Pg (R.Q t)
   refine ⟨M, hM, fun M' hle hP J hJ => ?_⟩
   obtain ⟨-, e, he, -⟩ := hR.thP.vP i t
-  have hβ := GlobalTheory.T.inverse_selfDual_frame_standard_space_integral D i _ _ hV (hR.lev.βV i)
+  have hβ := _root_.GlobalTheory.StdFrameInv.isIntM_inv D i _ _ hV (hR.lev.βV i)
   have hi : ∀ x a, rowP (Wc D i) (R.βW i) e (ι x) a ∈ Formalism.L2.Herm.intAf D.host.F D.host.E := fun x a =>
     rowP_int _ _ _ (hR.lev.βW i) e _ he (fun PP h => hP PP (by simpa using h)) _
       (hι.2.le (LinearMap.mem_range_self ι x)) a
@@ -242,7 +243,7 @@ theorem exists_pins : ∀ (D : D7) (G : Type) [Group G] [Fintype G] (Pl0 T0 : Ty
   have hT := fw.laws
   obtain ⟨pd, l₂, c₁, h1, h2, hc⟩ := GlobalTheory.TupleCover.exists_covers_of_char T R F hT hR hpb hG i
   choose Mφ hMφ hφ using fun t => exists_phi R i hR hV t (iotaW T i) (latEmb_iotaW T hT i)
-  choose MB hMB hB using fun t => GlobalTheory.T.exists_numberField_heckeCharacter_sqrtNorm_values D G Pl0 T0 A _ R hR.lev i t
+  choose MB hMB hB using fun t => _root_.GlobalTheory.Mem.BVal.exists_field_BIs D G Pl0 T0 A _ R hR.lev i t
   have := c₁.fin
   obtain ⟨c', hc'⟩ := GlobalTheory.TupleCover.exists_coeff_ge T.Q.l (c₁.F ⊔ ⨆ t, (Mφ t ⊔ MB t))
   have h3 : c₁.F ≤ c'.F := le_sup_left.trans hc'
@@ -252,8 +253,8 @@ theorem exists_pins : ∀ (D : D7) (G : Type) [Group G] [Fintype G] (Pl0 T0 : Ty
   obtain ⟨dδ, U₂, dict₂, xi, -, hcov, hhalf, hxi, hcxi, hmod, -⟩ := hc c' hle h3
   let jL : D.what₂.LL →+* c'.F := D.what₂.embLL.codRestrict c'.F fun x => hLL ⟨x, rfl⟩
   have hjL : (inC c').comp jL = D.what₂.embLL := RingHom.ext fun _ => rfl
-  obtain ⟨c0', hc0, hplace⟩ := GlobalTheory.T.exists_coeffExt_rationalForms_values_field D G Pl0 T0 A T R F κ v₀ hR hfw hpb i c'.F jL (inC c') hjL
-  obtain ⟨lev, hlev⟩ := GlobalTheory.T.exists_level_at_each_index D G Pl0 T0 A T R F κ v₀ hR hfw hpb i
+  obtain ⟨c0', hc0, hplace⟩ := _root_.GlobalTheory.Mem.PlaceVal.exists_coef_placeEx D G Pl0 T0 A T R F κ v₀ hR hfw hpb i c'.F jL (inC c') hjL
+  obtain ⟨lev, hlev⟩ := _root_.GlobalTheory.LevelAction.exists_levIs D G Pl0 T0 A T R F κ v₀ hR hfw hpb i
   obtain ⟨Cl, fCl, h, J', bad, Lh, gam, vol, La, Nc, hrep, hbad, hcl⟩ :=
     (GlobalTheory.SplitReps.reps_exist R i F hR c'.F).2 hV (T.Q.Xo ((i : ℕ) + 1)) c' id dδ
   choose B hBis using fun t => hB t c'.F (le_sup_right.trans (h4 t)) (bad t) (hbad t).2.2.2.2
@@ -268,8 +269,8 @@ theorem exists_pins : ∀ (D : D7) (G : Type) [Group G] [Fintype G] (Pl0 T0 : Ty
     simp only [Ranks.sigW, Ranks.r]
     omega
   choose epF hepF using fun t => (GlobalTheory.ClassTieCompare.exists_epIs_iff (n := (Vc D i).rank) (Dw := T.Q.Dw ((i : ℕ) + 1))
-    (bad t) (B t)).2 fun L cc g d => GlobalTheory.T.law_of_squares_selfDual_splitLattice _ _ _ _ hodd L cc g.1 g.2.2 d.1 d.2
-  obtain ⟨io, hw, hio⟩ := GlobalTheory.T.exists_harmonicCoefficientMap_at_weights D T.Q hT.pins κ fw.kap i c'
+    (bad t) (B t)).2 fun L cc g d => _root_.GlobalTheory.LawOfSquares.law_of_squares _ _ _ _ hodd L cc g.1 g.2.2 d.1 d.2
+  obtain ⟨io, hw, hio⟩ := _root_.GlobalTheory.CoefMapRecord.exists_io_record D T.Q hT.pins κ fw.kap i c'
   choose φ hφis using fun t => hφ t c'.F (le_sup_left.trans (h4 t)) (hhalf t).2.2 (Mfr (dδ t).l₂) fun PP hPP c hc => by
     have hM : (dδ t).l₂.Mb ≤ PP.asIdeal := by
       rw [(hcov t).1.2.2.2.1]

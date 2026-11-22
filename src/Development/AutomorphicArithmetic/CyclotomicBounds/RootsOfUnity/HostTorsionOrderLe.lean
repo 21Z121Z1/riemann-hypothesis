@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Formalism.LocalRingCardinality.DataHost
-public import Development.AutomorphicArithmetic.CyclotomicBounds.RootsOfUnity.Monomial
+public import Development.AutomorphicArithmetic.CyclotomicBounds.RootsOfUnity.Bundle0001
 
 @[expose] public section
 

@@ -1,6 +1,6 @@
 module
 
-public import Formalism.SharpRestriction.GrowthBounds.MonomialFactorials.BlockValuationZpOfValuationBound
+public import Formalism.SharpRestriction.GrowthBounds.MonomialFactorials.Bundle0010
 
 @[expose] public section
 

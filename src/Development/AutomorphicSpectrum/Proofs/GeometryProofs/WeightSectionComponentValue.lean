@@ -3,20 +3,21 @@ module
 public import Mathlib
 public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.ModelSmall
 public import Development.AutomorphicSpectrum.Statements.TowerExistence.GoodTowerExistsX
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.InterNamed
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArithmeticIntersection.MultihomogeneousIdeals.ExistsUniqueStatement
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsEmbeddingPieces
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.Bundle0012
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArithmeticIntersection.MultihomogeneousIdeals.Bundle0001
+public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0036
 public import Development.AutomorphicSpectrum.Definitions.MetricPeriods.HasMultiplier
 public import Development.AutomorphicSpectrum.Definitions.DivisibilityTowers.HeckeSectionsIsotropicCommutatorPairingPower
 public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.OverLaUnique
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.InterSt
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.Bundle0006
 public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LabelSigBijective
 public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IntMemModelSmall
 public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ProdZpowLe
 public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.AllWeightSectionsCompat
-public import Development.AbelianVarietyTheory.Proofs.GenericRegularity.EvaluationLawsGenericFramesAtlasHold
+public import Development.AbelianVarietyTheory.Proofs.GenericRegularity.Bundle0029
 public import Development.AbelianVarietyTheory.Definitions.RegularCharts.NotFamConstZero
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.AlgebraicApproximationCompleteDvrStatement
+public import Formalism.LocalToGlobal.ProjectiveLattices.OneLtAbsNormReal
+public import Development.WeilBound.CoreStatements.CommonZeroEvaluation.AlgebraicApproximationValued
 public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.IntegralFrameSubalgebraRelayStatement
 public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.FrameChartNonzeroDenominatorStatement
 
@@ -217,7 +218,7 @@ theorem approx_main : Top.Given → ∀ (E : Type) [Field E] [NumberField E] [Is
   have hg₂ : g₂ ≠ 0 := Finset.prod_ne_zero_iff.2 fun b hb => hna0' b (Finset.mem_filter.1 hb).2
   have hg : g ≠ 0 := mul_ne_zero (mul_ne_zero hg₀ hg₁) hg₂
   let n' : ℕ := max n (vV T.V (ψ fS) + 1).toNat
-  obtain ⟨ψ₁, hψ₁c, hψ₁a, hψ₁n, hψ₁g⟩ := GlobalTheory.T.algebraic_approximation_complete_dvr c.F C.R T hy io ψ.toRingHom
+  obtain ⟨ψ₁, hψ₁c, hψ₁a, hψ₁n, hψ₁g⟩ := _root_.ModelDimension.algebraic_approximation_valued c.F C.R T hy io ψ.toRingHom
     (RingHom.ext fun a => ψ.commutes a) (insert fS F) n' g hg
   let ψ' : C.R →ₐ[c.F] T.Fr := { ψ₁ with commutes' := fun a => RingHom.congr_fun hψ₁c a }
   have hψ' : ∀ x, ψ' x = ψ₁ x := fun _ => rfl

@@ -1,16 +1,17 @@
 module
 
-public import Development.WeilBound.RepresentationTheoryGL.TubeMeasures.DisjointTubes.LowSt
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MeasureTranslateLevelRealBoxLeIndexMulStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FinitePartMemFullLevelOfKeepsSelfDualLatticeStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsContinuousRealComponentHomUnitaryAdelicStatement
+public import Development.WeilBound.RepresentationTheoryGL.TubeMeasures.DisjointTubes.Bundle0001
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1978
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1930
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1965
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1951
 public import Mathlib
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LevelIndexBoundOfPublished
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MeasAtOf
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HermitianMassUpperBound
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IsCompactParahoricLevelAndContainsLifts
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.UpqLocallyCompactGroup
-public import Formalism.LocalToGlobal.LatticeGeometry.DegFlLApply
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1884
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0713
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0142
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0060
+public import Formalism.LocalToGlobal.LatticeGeometry.Bundle0001
 
 @[expose] public section
 
@@ -106,7 +107,7 @@ theorem up_core (hV : VolSt) (hS : StabSt) (hN : NumSt) (D : D7) (Tu : Type) (C 
   obtain ⟨⟨θ, hθ⟩, H1⟩ := hF.1.2
   obtain ⟨⟨A, hA⟩, H2⟩ := H1 θ hθ
   obtain ⟨⟨m, hm⟩, -⟩ := H2 A hA
-  obtain ⟨rp, hrpc, hrp⟩ := GlobalTheory.T.exists_continuous_realComponentHom_unitaryAdelic D (Wc D i) θ A (D.sp.W_sig _) hθ hA
+  obtain ⟨rp, hrpc, hrp⟩ := _root_.GlobalTheory.CovTop.VolUp.exists_realPart_hom D (Wc D i) θ A (D.sp.W_sig _) hθ hA
   haveI := fun P Q => (GlobalTheory.UpqTopology.upq_lcsc P Q).1
   haveI := fun P Q => (GlobalTheory.UpqTopology.upq_lcsc P Q).2.1
   haveI := fun P Q => (GlobalTheory.UpqTopology.upq_lcsc P Q).2.2.1
@@ -123,8 +124,8 @@ theorem up_core (hV : VolSt) (hS : StabSt) (hN : NumSt) (D : D7) (Tu : Type) (C 
     refine ⟨?_, hb⟩
     rw [inv_one, one_mul]
     have hk : h ∈ KM (Wc D i) 1 := (hS.1 D (Wc D i)).1 ▸ hh
-    exact GlobalTheory.T.finitePart_mem_fullLevel_of_keeps_selfDualLattice D (Wc D i) (C.βW i) (C.ΛW i) _ (hC.βW i) hrk.le rfl h hk
-  have h44 := GlobalTheory.T.measure_translateLevel_realBox_le_index_mul D (Wc D i) θ A m rp (levW C i P) K₀ μ (D.sp.W_sig _) hθ hA hm hrpc hrp
+    exact _root_.GlobalTheory.CovTop.VolUp.FullLevel.finE_mem_lev_of_isKM D (Wc D i) (C.βW i) (C.ΛW i) _ (hC.βW i) hrk.le rfl h hk
+  have h44 := _root_.GlobalTheory.CovTop.VolBox.meas_translate_le D (Wc D i) θ A m rp (levW C i P) K₀ μ (D.sp.W_sig _) hθ hA hm hrpc hrp
     (fun k hk => ⟨hk.1, Subgroup.mem_top _⟩) hn (GlobalTheory.ParahoricCompact.isOpen_comap_lev _ _ _) hF.1 1 (GfC _).one_mem B hBm
   set c := ReciprocityTheory.ChartRestriction.DS.volU (Wc D i).rank ^ D.R.f * Formalism.MainNotions.StandardLattice.massI D (Wc D i).rank with hc
   have hkey : μ 𝓕 * Measure.pi m B ≤ ((n : ℝ≥0∞) * ENNReal.ofReal c) * Measure.pi m B := by

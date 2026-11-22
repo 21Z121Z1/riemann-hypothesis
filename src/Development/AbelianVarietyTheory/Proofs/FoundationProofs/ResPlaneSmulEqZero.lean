@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.PowMulMemAdd
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.LevelCohomology.SoLevFacts
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0344
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.LevelCohomology.Bundle0003
 
 @[expose] public section
 

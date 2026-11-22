@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.ExistsCmAdeleTensorEquivMixedFinite
+public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.Bundle0056
 
 @[expose] public section
 

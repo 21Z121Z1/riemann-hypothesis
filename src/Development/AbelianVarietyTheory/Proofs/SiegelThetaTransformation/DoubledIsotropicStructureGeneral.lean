@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.FundamentalDomains.HermitianPairingAlgebra
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.FundamentalDomains.Bundle0005
 public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.MemIffForallMemLocalizeRingOfIntegers
-public import Development.AbelianVarietyTheory.Proofs.HermitianTraceForms.DifferentiableToContinuousLinearMap
+public import Development.AbelianVarietyTheory.Proofs.HermitianTraceForms.Bundle0001
 
 @[expose] public section
 

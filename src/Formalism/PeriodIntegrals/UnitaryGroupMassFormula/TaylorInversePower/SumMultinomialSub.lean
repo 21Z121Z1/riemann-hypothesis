@@ -1,6 +1,6 @@
 module
 
-public import Formalism.PeriodIntegrals.TayInvPow
+public import Formalism.PeriodIntegrals.Bundle0007
 
 @[expose] public section
 

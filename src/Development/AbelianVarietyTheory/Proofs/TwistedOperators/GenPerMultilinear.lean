@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.DefPerEqGenPer
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0477
 
 @[expose] public section
 

@@ -4,7 +4,7 @@ public import Mathlib
 public import Formalism.LocalToGlobal.KernelLattices.ColumnData
 public import Formalism.LocalToGlobal.KernelLattices.ColumnData.HfTrace
 public import Formalism.FrobeniusOrbits.FrobeniusOrbitsProofs.SplitK
-public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.IntegralClosureCriterion
+public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0081
 
 @[expose] public section
 

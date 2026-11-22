@@ -1,10 +1,10 @@
 module
 
 public import Mathlib
-public import GroundTheory.GlobalFields.ComplexMultiplication.AnalyticAlgebraicIndependent
-public import GroundTheory.GlobalFields.ComplexMultiplication.AnalyticAlgebraicUnivAdd
+public import GroundTheory.GlobalFields.ComplexMultiplication.Bundle0005
+public import GroundTheory.GlobalFields.ComplexMultiplication.Bundle0006
 public import GroundTheory.GlobalFields.ComplexMultiplication.DifferentialConstant
-public import GroundTheory.ArithmeticGeometry.AbelianVarieties.DualWeil
+public import GroundTheory.ArithmeticGeometry.AbelianVarieties.Bundle0005
 
 @[expose] public section
 

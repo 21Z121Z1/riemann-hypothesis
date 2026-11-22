@@ -1,6 +1,6 @@
 module
 
-public import Formalism.SharpRestriction.GrowthBounds.RootWeights.DegreeZeroWeightsBounded
+public import Formalism.SharpRestriction.GrowthBounds.RootWeights.Bundle0014
 
 @[expose] public section
 

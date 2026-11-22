@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.WeilBound.CoreStatements.AutomorphicKernels.GrothendieckRingPolynomial.PhiZBijective
+public import Development.WeilBound.CoreStatements.AutomorphicKernels.GrothendieckRingPolynomial.Bundle0004
 
 @[expose] public section
 

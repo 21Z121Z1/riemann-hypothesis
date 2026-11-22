@@ -2,12 +2,12 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.IsStratHom
-public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.BhattScholzeIntegral
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.BreuilKisinEvWIsUnitInjectiveDvd
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.AinfDivisibilityBreuilKisinFacts
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.BreuilKisinOEModPrimeLaurentField
+public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.Bundle0005
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0333
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0331
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0355
 public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FrobeniusIntegralityWittTiltAinf
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SmodEqIffDvd
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0040
 
 @[expose] public section
 

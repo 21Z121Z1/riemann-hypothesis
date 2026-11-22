@@ -1,16 +1,14 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Divisors.OmAUnipFourierInv
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0006
 public import Development.AutomorphicArithmetic.DivisorFrames.IntegralMemAddSubgroupOfRamifiedTwistedInvariant
 public import Development.AutomorphicArithmetic.DivisorFrames.ExistsMemKOEqStdFrameMulOfIsPrimFrame
-public import Development.AutomorphicArithmetic.DivisorFrames.IsIntegralUnitCharOfConductorLe
-public import Development.AutomorphicArithmetic.DivisorFrames.HaarVolSelfEqOneOfOpenSubgroupLeKO
-public import Development.AutomorphicArithmetic.DivisorFrames.FourierSumBlockTransposeInvEq
-public import Development.AutomorphicArithmetic.DivisorFrames.NuDetMulSliceBBlockAction
+public import Development.AutomorphicArithmetic.DivisorFrames.Bundle0002
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SumOKEx
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsTranslatesEqPrimFrameLat
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SplitThetaGridIsAdmissibleFlipTensorStatement
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SplitThetaGridIsAdmissibleFlipTensor
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0609
 
 @[expose] public section
 
@@ -297,7 +295,7 @@ theorem flips_mem {G : Grid k} {ψ : AddChar k Circle} {ϖ : kˣ} {e : ℕ} (hϖ
     obtain _ | ⟨hp, hc'⟩ := hc
     obtain ⟨x1, x2, x3, x4, x5⟩ := hν x List.mem_cons_self
     have := ih (S.flip .one ψ ϖ e x) _ (fun y hy => hν y (List.mem_cons_of_mem _ hy)) hc' (fun X => ?_)
-      (GlobalTheory.T.splitThetaGrid_isAdmissible_flipTensor ψ ϖ e hϖ hψc he S x x1 hp hJ hT)
+      (_root_.GlobalTheory.FlipAdm.isAdmissible_flip ψ ϖ e hϖ hψc he S x x1 hp hJ hT)
       (flip_mem hϖ hψc hq hψ x1 x2 x3 x4 x5 S hp (hJ _).1 (hJ _).2 hT hF) z
     · rw [List.length_cons, Nat.succ_mul, add_comm (l.length * _), ← add_assoc]
       exact this

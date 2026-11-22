@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.Divisors.NonemptyCuspFrame
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.SmoothOfAlgClosedUnif
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0575
 
 @[expose] public section
 

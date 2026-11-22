@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.LinearIndependentOfCommSmul
+public import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.Bundle0008
 
 @[expose] public section
 

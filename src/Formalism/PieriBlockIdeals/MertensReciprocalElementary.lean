@@ -1,7 +1,7 @@
 module
 
-public import Formalism.PieriBlockIdeals.Statement
-public import Formalism.PieriBlockIdeals.ContentDistanceBounds
+public import Formalism.PieriBlockIdeals.Bundle0001
+public import Formalism.PieriBlockIdeals.Bundle0002
 
 @[expose] public section
 

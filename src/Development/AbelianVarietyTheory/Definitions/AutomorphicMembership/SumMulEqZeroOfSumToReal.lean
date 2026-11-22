@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.ExistsIvDOfDefinite
-public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.EqZeroOfApplySelf
+public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.Bundle0039
 
 @[expose] public section
 

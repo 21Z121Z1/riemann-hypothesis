@@ -1,8 +1,8 @@
 module
 
 public import Formalism.LocalToGlobal.ProjectiveLattices.IsGenFrGenFr
-public import Formalism.LocalToGlobal.ProjectiveLattices.GenFrPfB
-public import Formalism.LocalToGlobal.ProjectiveLattices.GenFrPfS
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0018
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0022
 
 @[expose] public section
 

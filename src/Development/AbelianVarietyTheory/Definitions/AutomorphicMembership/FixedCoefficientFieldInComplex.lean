@@ -3,8 +3,8 @@ module
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.Foundations.RootOfUnityEightQMemCoeffGaloisSubfield
 public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.IsRationalUnitaryDeterminantMapRationalUnitaryTo
-public import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.LFunctionPositiveConductorFourEight
-public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.CmCurveGoodOutsidePrimePremises
+public import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.Bundle0002
+public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.Bundle0002
 public import Development.AbelianVarietyTheory.BlockTheory.JetGauges.RootValueClassBasis
 
 @[expose] public section

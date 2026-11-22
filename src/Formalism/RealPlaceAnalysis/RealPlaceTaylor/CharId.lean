@@ -1,7 +1,7 @@
 module
 
-public import Formalism.RealPlaceAnalysis.StatementC
-public import Formalism.RealPlaceAnalysis.RealPlaceTaylor.GeneratorPowUpperVanishHolds
+public import Formalism.RealPlaceAnalysis.Bundle0003
+public import Formalism.RealPlaceAnalysis.RealPlaceTaylor.Bundle0003
 
 @[expose] public section
 

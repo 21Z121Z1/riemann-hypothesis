@@ -2,9 +2,9 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.RegPolOfRepOf
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.BcDefs
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.Bundle0006
 public import GroundTheory.GlobalFields.IdeleGroups.IdeleNorms.BaseChange
-public import GroundTheory.GlobalFields.NormResidueSymbol.FunctorialFinite
+public import GroundTheory.GlobalFields.NormResidueSymbol.Bundle0002
 public import CompanionTheory.AutomorphicTheory.UnitriangularMeasure.AdeleCoordinateMeasure.EllipticTorusNorm
 
 @[expose] public section

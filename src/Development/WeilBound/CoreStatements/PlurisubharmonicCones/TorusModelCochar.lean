@@ -1,24 +1,38 @@
 module
 
 public import Mathlib
-public import Development.WeilBound.CoreStatements.PlurisubharmonicCones.IntValSmul
-public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.ExistsUniqueLeftBasisCoordsAdicCompletion
+public import Development.WeilBound.CoreStatements.PlurisubharmonicCones.Bundle0008
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.Bundle0014
 public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.LieMultIffExistsFrame
 public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.IsExcisionNbhdAway
 public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsLieModel
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LieModelFunctorialMap
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LieModelExistsUniqueAct
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LieModelExistsUniqueSemilinearStatement
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LieModelFiniteBaseChangeStatement
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LieModelPullbackCorrespondenceStatement
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0014
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0019
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0034
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.Bundle0004
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.IsGrpPullback
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0116
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.Bundle0001
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0078
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.AdelicGroupAlgebraActionInjective
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.Bundle0005
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.Bundle0002
 public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.HodgeInnerProductPullbackUnique
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.IsPrincipalBaseChangeIffStatement
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.HodgeInnerProductAdjointStatement
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.SemiAbelianPullbackTorusExtensionStatement
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.TorusExtensionModuleStructureStatement
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.AbelianPartBaseChangeStatement
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.PolarizedDataFieldExtension
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.SabComp
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0165
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.Bundle0012
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.BdryChart
+public import Development.AutomorphicSpectrum.Definitions.MetricPeriods.ClopenCondOnto
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.UniformisationConclusion
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.Bundle0003
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.BlowupProjections.BlowupProjStatement
+public import Development.AbelianVarietyTheory.PublishedTheorems.SemiabelianTori.GeometricallyConnectedSplitTorusAff
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.HodgeInnerProductAdjoint
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsHodgeLine
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0198
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0112
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0109
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0220
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.Bundle0006
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.PullCub
 
 @[expose] public section
@@ -63,18 +77,18 @@ theorem exists_generic {X : Scheme.{0}} (G : Over X) [GrpObj G] [IsCommMonObj G]
   haveI : IsScalarTower (𝓞 L) L V := ⟨fun a b x => by
     show (a • b) • x = algebraMap (𝓞 L) L a • b • x
     rw [Algebra.smul_def, mul_smul]⟩
-  obtain ⟨j₀, hj₀, -⟩ := GlobalTheory.T.lie_model_existsUnique_semilinear X G (𝓞 L) L (algebraMap (𝓞 L) L) z V₀ V M₀ Mz
+  obtain ⟨j₀, hj₀, -⟩ := _root_.GlobalTheory.CompanionTheory.Ar.LieBaseChange.existsUnique_semilinear_lifts X G (𝓞 L) L (algebraMap (𝓞 L) L) z V₀ V M₀ Mz
   let j : V₀ →ₗ[𝓞 L] V :=
     { toFun := j₀
       map_add' := j₀.map_add
       map_smul' := fun a x => j₀.map_smulₛₗ a x }
   have hj : ∀ e, (Mz.pt (j e)).left = spMap (dualMap (algebraMap (𝓞 L) L)) ≫ (M₀.pt e).left := fun e =>
     (Category.comp_id _).symm.trans (hj₀ e)
-  obtain ⟨hf, hp, hb⟩ := GlobalTheory.T.lie_model_finite_base_change X G (𝓞 L) z V₀ M₀
+  obtain ⟨hf, hp, hb⟩ := _root_.GlobalTheory.CompanionTheory.Ar.LieProj.lie_finite_projective_baseChange X G (𝓞 L) z V₀ M₀
   have hbc : IsBaseChange L j := hb L V Mz j hj
   haveI : IsLocalizedModule (nonZeroDivisors (𝓞 L)) j := (isLocalizedModule_iff_isBaseChange _ L j).2 hbc
   refine ⟨V, inferInstance, inferInstance, inferInstance, inferInstance, Mz, j, hj, ?_, ?_, hf,
-    (GlobalTheory.T.lie_model_finite_base_change X G L _ V Mz).1⟩
+    (_root_.GlobalTheory.CompanionTheory.Ar.LieProj.lie_finite_projective_baseChange X G L _ V Mz).1⟩
   · refine (injective_iff_map_eq_zero j).2 fun x hx => ?_
     obtain ⟨s, hs⟩ := (IsLocalizedModule.eq_zero_iff (nonZeroDivisors (𝓞 L)) j).1 hx
     exact (smul_eq_zero.1 (show (s : 𝓞 L) • x = 0 from hs)).resolve_left (nonZeroDivisors.coe_ne_zero s)
@@ -142,12 +156,12 @@ theorem adj_model (t' : SAB H (Sp (𝓞 L))) (tB : SAB H (Sp L)) (m' : SABMap tB
     rw [Category.comp_id, ← Sl.BaseExt.spMap_comp]
     obtain ⟨t'', ⟨m⟩⟩ := Sl.BaseExt.exists_pull (spMap eC) tB
     obtain ⟨n, -⟩ := sabComp pullCubComp E H _ _ _ t' tB t'' _ _ m' m
-    have := (GlobalTheory.T.isPrincipal_base_change_iff E H L ℂ eC tB t'' m).2 hpr
+    have := (_root_.GlobalTheory.CompanionTheory.Ar.isPrincipal_iff_of_sabMap_field E H L ℂ eC tB t'' m).2 hpr
     exact ⟨t'', n, this.1, this.2.1⟩
   have h1 := hB eC (ρ' a x) y _ _ (hl _) (hl _)
   have h2 := hB eC x (ρ' (H.bar a) y) _ _ (hl _) (hl _)
   rw [ha] at h1 h2
-  exact HodgeUnique.hodgeInnerProduct_eq ((GlobalTheory.T.hodge_inner_product_adjoint E H _ t' _ (w x) (w y) a _ hpol (ht x) (ht y)).1 h1) h2
+  exact HodgeUnique.hodgeInnerProduct_eq ((_root_.GlobalTheory.CompanionTheory.Ar.hodgeInnerProduct_act_adjoint E H _ t' _ (w x) (w y) a _ hpol (ht x) (ht y)).1 h1) h2
 
 theorem closure_basis {X V : Type} [AddCommGroup X] [AddCommGroup V] {r : ℕ} (bs : Module.Basis (Fin r) ℤ X)
     (κ : X →+ V) (x : V) : x ∈ AddSubgroup.closure (Set.range fun i => κ (bs i)) ↔ ∃ δ, κ δ = x := by
@@ -190,7 +204,7 @@ theorem exists_lin {Ψ : Type} {X : Scheme.{0}} (t : SAB H X) (z : Sp (𝓞 L) �
   haveI : Smooth t'.G.hom := t'.semi.smooth
   obtain ⟨V₀, _, _, ⟨M₀⟩⟩ := lieModel_exists X t.G (𝓞 L) z
   obtain ⟨V, _, _, _, _, Mz, j, hj, hinj, hspan, hfin₀, hfin⟩ := exists_generic t.G z M₀
-  obtain ⟨MV, hMV⟩ := (GlobalTheory.T.lie_model_pullback_correspondence L X _ t.G P.tK.G P.m.φ V P.m.cart).1 Mz
+  obtain ⟨MV, hMV⟩ := (_root_.GlobalTheory.CompanionTheory.Ar.LieMove.main L X _ t.G P.tK.G P.m.φ V P.m.cart).1 Mz
   have hj' : ∀ e, (MV.pt (j e)).left ≫ P.m.φ = spMap (dualMap (algebraMap (𝓞 L) L)) ≫ (M₀.pt e).left :=
     fun e => (hMV _).trans (hj e)
   obtain ⟨ρ, hρ, -⟩ := lieModel_exists_unique_act _ _ L (𝟙 _) _ MV (𝓞 E) P.tK.act.act P.tK.act.hom

@@ -7,8 +7,7 @@ public import GroundTheory.ArithmeticGeometry.SchemeCohomology.CechNaturality.Ce
 public import GroundTheory.ArithmeticGeometry.SchemeCohomology.CurveDivisors
 public import GroundTheory.FunctionField.ExistsBoundDegSubFinrankL
 public import GroundTheory.ArithmeticGeometry.SchemeCohomology.CurveCanonical
-public import GroundTheory.ArithmeticGeometry.SchemeCohomology.CurveFunctionField
-public import GroundTheory.ArithmeticGeometry.SchemeCohomology.CurveProper
+public import GroundTheory.ArithmeticGeometry.SchemeCohomology.Bundle0005
 public import GroundTheory.FunctionField.WeilDifferential
 
 @[expose] public section

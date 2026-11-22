@@ -1,6 +1,6 @@
 module
 
-public import Formalism.LocalToGlobal.CharacterGerms.ScaledSecondIntegral
+public import Formalism.LocalToGlobal.CharacterGerms.Bundle0003
 public import Formalism.LocalToGlobal.CharacterGerms.BiadditiveInSingleVariables
 
 @[expose] public section

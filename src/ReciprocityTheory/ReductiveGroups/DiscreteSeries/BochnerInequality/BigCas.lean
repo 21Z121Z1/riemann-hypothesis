@@ -1,7 +1,7 @@
 module
 
 public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.BochnerInequality.BigRep
-public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.BochnerInequality.BigCasA
+public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.BochnerInequality.Bundle0002
 
 @[expose] public section
 

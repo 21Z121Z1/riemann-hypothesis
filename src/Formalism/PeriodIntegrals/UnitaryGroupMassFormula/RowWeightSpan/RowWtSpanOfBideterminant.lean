@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Formalism.PeriodIntegrals.RowWtSpan
+public import Formalism.PeriodIntegrals.Bundle0006
 
 @[expose] public section
 

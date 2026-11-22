@@ -5,12 +5,12 @@ public import Development.AbelianVarietyTheory.Definitions.KeyFormula.GeomIntSel
 public import Development.AbelianVarietyTheory.Statements.FundamentalDomains.AtOfNumberField
 public import Development.AbelianVarietyTheory.Statements.ThetaLevelCharacters.MemThetaLevelCharDimZero
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.ValCalc
-public import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.SqOfCalculus
-public import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.ExistsKeyPBRing
-public import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.StalkOfAppLEEq
-public import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.LbIsoDescendsToSubfieldContainingFinset
-public import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.ExistsTwoTorsionTranslateSameLambdaBundleStatement
-public import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.ThetaFrameValueKnownOfTwoTorsionTranslateStatement
+public import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.Bundle0043
+public import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.Bundle0035
+public import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.Bundle0036
+public import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.Bundle0033
+public import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.Bundle0057
+public import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.ThetaFrameValueKnownOfTwoTorsionTranslate
 
 @[expose] public section
 
@@ -124,7 +124,7 @@ theorem known_of_point (hL : Out.Laws) (hT : ThetaUnifAV) {K F : Type} [Field K]
   let t : 𝟙_ (Over (Sp F)) ⟶ z.P.A :=
     Over.homMk (hχ.1.1.lift p (𝟙 _) (hp.trans (Category.id_comp _).symm)) (hχ.1.1.lift_snd _ _ _)
   have ht : t.left ≫ χ = p := hχ.1.1.lift_fst _ _ _
-  refine GlobalTheory.T.thetaFrameValueKnown_of_twoTorsion_translate hL hT F z y' e t hm ?_ ?_ ⟨_, known_of_keyPB hz hk⟩
+  refine _root_.GlobalTheory.KnownTwist.known_of_translate hL hT F z y' e t hm ?_ ?_ ⟨_, known_of_keyPB hz hk⟩
   · have h1 : (1 : 𝟙_ (Over (Sp F)) ⟶ z.P.A).left = eSec z.P.A := by
       rw [Hom.one_def, toUnit_unit, Category.id_comp]; rfl
     rw [pow_two]
@@ -180,7 +180,7 @@ theorem exists_point (hL : Out.Laws) {K Ω : Type} [Field K] [Field Ω] [IsAlgCl
     rw [isSquare_unique (isSquare_comp (isSquare_tensor e'.hom) s₂) s₂' he'] at k₁
     exact LBIso.trans (DVR.linComb_isLB _ P'.isLB _ _) (LB.isLB_pull lQ _)
       (LB.isLB_pull (DVR.linComb_isLB _ Q'.isLB _ _) _) i₂' k₁.symm
-  obtain ⟨t, ht, hi⟩ := GlobalTheory.T.exists_twoTorsion_translate_same_lambdaBundle hL Ω Q' P' e' hm hl'
+  obtain ⟨t, ht, hi⟩ := _root_.GlobalTheory.SameLam.exists_two_torsion_translate hL Ω Q' P' e' hm hl'
   refine ⟨t.left ≫ χ, P'.A, ψ, (e'.hom ≫ ((toUnit Q'.A ≫ t) * 𝟙 Q'.A)).left ≫ χ, ?_, ?_, hψ.1.1, ?_, ?_⟩
   · rw [Category.assoc, hχ.1.1.w, ← Category.assoc, Over.w t]
     exact Category.id_comp _

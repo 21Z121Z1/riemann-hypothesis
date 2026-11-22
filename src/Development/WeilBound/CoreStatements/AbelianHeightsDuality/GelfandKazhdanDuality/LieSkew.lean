@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Development.WeilBound.CoreStatements.AbelianHeightsDuality.GelfandKazhdanDuality.PairingL2
-public import Development.AutomorphicSpectrum.Proofs.GlobalProofs.HasDerivAtLpOfDominated
+public import Development.AutomorphicSpectrum.Proofs.GlobalProofs.Bundle0005
 
 @[expose] public section
 

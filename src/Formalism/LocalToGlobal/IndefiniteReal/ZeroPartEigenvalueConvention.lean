@@ -2,9 +2,9 @@ module
 
 public import Formalism.LocalToGlobal.IndefiniteReal.LinksLemmas
 public import Formalism.LocalToGlobal.IndefiniteReal.LinksW
-public import Formalism.LocalToGlobal.IndefiniteReal.WeilFull
+public import Formalism.LocalToGlobal.IndefiniteReal.Bundle0020
 public import Formalism.LocalToGlobal.IndefiniteReal.PrimitiveStatementsWithPassage
-public import Formalism.LocalToGlobal.IndefiniteReal.HeckeIndexRange
+public import Formalism.LocalToGlobal.IndefiniteReal.Bundle0010
 public import Formalism.LocalToGlobal.Columns.HeckeInertComm
 
 @[expose] public section

@@ -1,9 +1,9 @@
 module
 
 public import Formalism.SharpRestriction.GrowthBounds.BinomialRatio.Bracket
-public import Formalism.SharpRestriction.GrowthBounds.BinomialRatio.PairFacts
+public import Formalism.SharpRestriction.GrowthBounds.BinomialRatio.Bundle0011
 public import Formalism.SharpRestriction.GrowthBounds.BinomialRatio.WtBound
-public import Formalism.SharpRestriction.GrowthBounds.BinomialRatio.KeptBlocksOfSLine
+public import Formalism.SharpRestriction.GrowthBounds.BinomialRatio.Bundle0013
 
 @[expose] public section
 

@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Formalism.HermitianLattices.DefsCS
+public import Formalism.HermitianLattices.Bundle0001
 public import Formalism.HermitianLattices.HermitianLatticesProofs.ThetaSummable
 public import Lemmata.GeneralBFactSecondSide.Imports
 

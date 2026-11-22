@@ -2,7 +2,7 @@ module
 
 public import Formalism.LocalToGlobal.Columns.PolyFn
 public import Formalism.GradedWeylDivisibility.FinalD
-public import Formalism.GradedWeylDivisibility.FockSpaceTableaux.LDlatLemmas
+public import Formalism.GradedWeylDivisibility.FockSpaceTableaux.Bundle0012
 
 @[expose] public section
 

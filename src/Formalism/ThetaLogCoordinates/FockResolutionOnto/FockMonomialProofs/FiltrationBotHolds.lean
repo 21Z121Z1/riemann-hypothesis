@@ -1,8 +1,8 @@
 module
 
-public import Formalism.ThetaLogCoordinates.FockResolutionOnto.StatementB
+public import Formalism.ThetaLogCoordinates.FockResolutionOnto.Bundle0001
 public import Formalism.ThetaLogCoordinates.FockResolutionOnto.FockMonomialProofs.MulEarlyLettersHolds
-public import Formalism.ThetaLogCoordinates.FockResolutionOnto.FockMonomialProofs.InitPartZeroXMul
+public import Formalism.ThetaLogCoordinates.FockResolutionOnto.FockMonomialProofs.Bundle0002
 
 @[expose] public section
 

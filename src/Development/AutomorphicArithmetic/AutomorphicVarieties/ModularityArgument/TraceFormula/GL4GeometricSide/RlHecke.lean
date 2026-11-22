@@ -1,8 +1,8 @@
 module
 
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.TraceFormula.GL4GeometricSide.InnerEq
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsIntegralEqSum
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsThetaInvolution
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0613
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0702
 public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ContinuousMapGL
 
 @[expose] public section

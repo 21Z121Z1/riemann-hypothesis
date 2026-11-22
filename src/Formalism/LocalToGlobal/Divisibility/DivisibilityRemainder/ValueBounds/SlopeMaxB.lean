@@ -3,11 +3,11 @@ module
 public import Formalism.SharpRestriction.Divisibility.SlopeExcess.ConstRankBaseLePolyFourth
 public import Formalism.SharpRestriction.Divisibility.SlopeExcess.UniformSizeBoundOfOpenFamily
 public import Formalism.SharpRestriction.Divisibility.SlopeExcess.HeightBoundOfComponentBounds
-public import Formalism.SharpRestriction.AdmissibleParameterJoins.DIVfromGLm
+public import Formalism.SharpRestriction.AdmissibleParameterJoins.Bundle0006
 public import Formalism.SharpRestriction.GlobalSchurBounds.GlobalLinkOfBranchIdentitiesAndMultiplicity
 public import Formalism.LocalToGlobal.GlobalTheory.GL4.PStmtFree
 public import Formalism.LocalToGlobal.GlobalTheory.GL4.LowerSlopeInequalityFamily
-public import Formalism.LocalToGlobal.ThresholdSelection
+public import Formalism.LocalToGlobal.Bundle0001
 public import Formalism.LocalToGlobal.ClassOfRecordOfChoice
 
 @[expose] public section

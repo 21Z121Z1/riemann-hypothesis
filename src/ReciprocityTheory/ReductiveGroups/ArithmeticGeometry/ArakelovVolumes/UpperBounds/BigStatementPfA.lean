@@ -1,6 +1,6 @@
 module
 
-public import ReciprocityTheory.L2DbarEstimates.LeviForms.LogNormSq
+public import ReciprocityTheory.L2DbarEstimates.LeviForms.Bundle0002
 
 @[expose] public section
 

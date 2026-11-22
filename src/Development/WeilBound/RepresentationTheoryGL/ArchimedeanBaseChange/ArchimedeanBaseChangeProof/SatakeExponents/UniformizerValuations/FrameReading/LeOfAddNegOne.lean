@@ -1,7 +1,12 @@
 module
 
 public import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.SatakeExponents.UniformizerValuations.FrameReading.ExpToSat
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ResidueCardEqAbsNormStatement
+public import Mathlib
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0450
+public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.StrongMultiplicityOne
+public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.Bundle0009
+public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.Bundle0008
+public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.Bundle0016
 public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.PairwiseDisjointCell
 
 @[expose] public section
@@ -92,7 +97,7 @@ theorem dlBridge' : DlBridge := by
   refine ⟨hu, fun N x => ?_⟩
   set q : ℝ := ((qV E w : ℕ) : ℝ) with hq
   have hn : nabs (w.adicCompletion E) ϖ = q⁻¹ := by
-    rw [GlobalTheory.GLDoubling.nabs_unif hu, GlobalTheory.T.residue_card_eq_abs_norm]
+    rw [GlobalTheory.GLDoubling.nabs_unif hu, _root_.GlobalTheory.CompanionTheory.ResCardAbsNorm.resCard_completion_eq_absNorm]
     rfl
   have hqpos : 0 < q := by
     have := nabs_pos' (w.adicCompletion E) ϖ

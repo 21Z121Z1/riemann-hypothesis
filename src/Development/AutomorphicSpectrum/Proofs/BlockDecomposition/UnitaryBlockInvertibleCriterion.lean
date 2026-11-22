@@ -2,13 +2,13 @@ module
 
 public import Mathlib
 public import Development.WeilBound.RepresentationTheoryGL.RegularisedSiegelWeil.ThetaIdempotents.HeckeEta
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.UnfoldingHolds
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FundamentalDomainFourierUnfolding
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.BigCellCosetsHermitianParam
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CosetCellInvariantUnipotent
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0726
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0012
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0713
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0714
 public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.NondegenerateCharacterCellFactorization
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SiegelEisensteinConvergent
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.RowD
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0706
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0728
 
 @[expose] public section
 

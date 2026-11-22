@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Formalism.PieriBlockIdeals.WEChain
+public import Formalism.PieriBlockIdeals.Bundle0002
 
 @[expose] public section
 

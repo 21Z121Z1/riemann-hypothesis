@@ -2,7 +2,7 @@ module
 
 public import Formalism.LocalToGlobal.IndefiniteReal.ScalarOnPartsFull
 public import Mathlib
-public import Formalism.LocalToGlobal.IndefiniteReal.SmExpSmulContDiff
+public import Formalism.LocalToGlobal.IndefiniteReal.Bundle0022
 public import Formalism.SharpRestriction.CuspSpanNormBounds.BridgeCSchur
 
 @[expose] public section

@@ -1,8 +1,8 @@
 module
 
 public import Formalism.GradedWeylDivisibility.FinalD
-public import Formalism.GradedWeylDivisibility.FockSpaceTableaux.LClosedeqLemmas
-public import Formalism.GradedWeylDivisibility.FockSpaceTableaux.LRowdivLemmas
+public import Formalism.GradedWeylDivisibility.FockSpaceTableaux.Bundle0010
+public import Formalism.GradedWeylDivisibility.FockSpaceTableaux.Bundle0001
 
 @[expose] public section
 

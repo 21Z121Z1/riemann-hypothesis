@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.StatementsProjSecDegree
+public import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.Bundle0010
 
 @[expose] public section
 

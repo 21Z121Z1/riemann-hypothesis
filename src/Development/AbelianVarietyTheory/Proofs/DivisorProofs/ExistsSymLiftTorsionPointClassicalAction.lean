@@ -1,13 +1,13 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Divisors.IsPolAVSectionInverseImage
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0027
 public import Development.AbelianVarietyTheory.Definitions.Divisors.ToricPeriodBlockIsSymm
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CoeffTopMonEqZero
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EqZeroOfEntireMulEqZero
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1863
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1948
 public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.SymmetricLiftTorsionPointActionOnTheta
 public import Development.AbelianVarietyTheory.Statements.TorsionEndomorphisms.ExistsGeneratorOfIsField
-public import Development.AbelianVarietyTheory.Counterexamples.JetSurvey.InVVwIffOfNotTorsion
+public import Development.AbelianVarietyTheory.Counterexamples.JetSurvey.Bundle0008
 
 @[expose] public section
 

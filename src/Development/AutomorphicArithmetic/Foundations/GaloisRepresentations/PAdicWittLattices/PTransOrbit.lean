@@ -1,8 +1,8 @@
 module
 
 public import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.PAdicWittLattices.TransCancel
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsIntIntCast
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HarrisTaylorInverseHeckeTranslatesForgetLevel
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle3063
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1340
 
 @[expose] public section
 

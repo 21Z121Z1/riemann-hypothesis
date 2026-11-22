@@ -5,14 +5,13 @@ public import Development.WeilBound.CoreStatements.PadicHodgeComparison.HodgeSur
 public import Development.WeilBound.CoreStatements.PadicHodgeComparison.HodgeSurjectivity.NLeA
 public import Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.CechPairings.Imports
 public import Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.PerfectoidPullbacks.ChartGrConst
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.DFormMem
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0086
 public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FormAlternating
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.GradedFormAdd
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.GradedFormFrame
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.GradedFormLocalOfFrame
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.GradedFormVanishOfFrame
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0147
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0244
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0148
 public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LocalGradedVanishing
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.PolynomialTransfer
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0272
 
 @[expose] public section
 

@@ -1,16 +1,14 @@
 module
 
 public import Mathlib
-public import Development.WeilBound.CoreStatements.TemperedRepresentationTheory.WeilSiegelTheta.BigCellDefs
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ThetaPartD
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsBoundUnitary
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ThetaIntegralContinuousStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ThetaIntegralLocallySummableBoundStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.PoissonSummationHermitianLatticeStatement
+public import Development.WeilBound.CoreStatements.TemperedRepresentationTheory.WeilSiegelTheta.Bundle0001
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0471
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0827
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0657
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0717
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0645
 public import Development.WeilBound.CoreStatements.AutomorphicKernels.WeilSiegelFormula.WeilSiegelSchwartz.HermitianIntegrability.UntupTupOf
-public import Development.WeilBound.CoreStatements.AutomorphicKernels.WeilSiegelFormula.WeilSiegelSchwartz.HermitianIntegrability.ExistsSchwartzOfIsSchwartzArch
-public import Development.WeilBound.CoreStatements.AutomorphicKernels.WeilSiegelFormula.WeilSiegelSchwartz.HermitianIntegrability.ExistsIntegralEqMul
-public import Development.WeilBound.CoreStatements.AutomorphicKernels.WeilSiegelFormula.WeilSiegelSchwartz.HermitianIntegrability.IntegrableOfAddEquiv
+public import Development.WeilBound.CoreStatements.AutomorphicKernels.WeilSiegelFormula.WeilSiegelSchwartz.HermitianIntegrability.Bundle0001
 
 @[expose] public section
 
@@ -43,8 +41,8 @@ theorem hermitian_unfolding_integral (r : ℕ) (V : HSp D) (ψ : AddChar (AF D.h
   have hφ := mem_schwartzA_of_sb θ hθ Φ hΦ
   obtain ⟨𝓖, h𝓖⟩ := hlam
   have hJ : Integrable (Jt ψ V μ fun y => Φ (untup y)) lam :=
-    (GlobalTheory.T.poisson_summation_hermitian_lattice D r ψ hψ lam 𝓖 h𝓖 _ (GlobalTheory.T.theta_integral_continuous D r V ψ θ μ _ hψ hθ hμ hφ)
-      (GlobalTheory.T.theta_integral_locally_summable_bound D r V ψ θ μ _ hr hψ hθ hμ hφ)).1
+    (GlobalTheory.T.poisson_summation_hermitian_lattice D r ψ hψ lam 𝓖 h𝓖 _ (_root_.GlobalTheory.CompanionTheory.BigCellJ.jt_continuous D r V ψ θ μ _ hψ hθ hμ hφ)
+      (_root_.GlobalTheory.CompanionTheory.JtUnif.jt_unif D r V ψ θ μ _ hr hψ hθ hμ hφ)).1
   obtain ⟨c, hc⟩ := starN_hermE V (r := r) ψ μ hμ.choose_spec.1 dx hdx
   refine integrable_of_hermE lam h𝓖.1 db hdb _ ?_
   simp only [hc]

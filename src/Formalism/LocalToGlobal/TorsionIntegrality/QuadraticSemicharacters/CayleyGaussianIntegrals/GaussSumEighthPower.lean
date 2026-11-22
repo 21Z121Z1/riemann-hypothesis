@@ -1,6 +1,6 @@
 module
 
-public import Formalism.LocalToGlobal.TorsionIntegrality.QuadraticSemicharacters.UnitaryConstant
+public import Formalism.LocalToGlobal.TorsionIntegrality.QuadraticSemicharacters.Bundle0001
 
 @[expose] public section
 

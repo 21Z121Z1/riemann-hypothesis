@@ -2,8 +2,8 @@ module
 
 public import Mathlib
 public import Formalism.SharpRestriction.GlobalSchurBounds.StandardLattice
-public import Development.AbelianVarietyTheory.Proofs.HeightProofs.EqOrConjOfPlaceOf
-public import Development.AbelianVarietyTheory.Proofs.HeightProofs.MemAdelicLatticeIffLocalSelfDualCompletion
+public import Development.AbelianVarietyTheory.Proofs.HeightProofs.Bundle0028
+public import Development.AbelianVarietyTheory.Proofs.HeightProofs.Bundle0013
 
 @[expose] public section
 

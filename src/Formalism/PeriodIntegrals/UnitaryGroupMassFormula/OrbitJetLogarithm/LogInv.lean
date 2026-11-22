@@ -1,7 +1,7 @@
 module
 
 public import Formalism.PeriodIntegrals.OrbJetBase
-public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.OrbitPowerSeriesCoefficients.ExpSum
+public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.OrbitPowerSeriesCoefficients.Bundle0001
 
 @[expose] public section
 

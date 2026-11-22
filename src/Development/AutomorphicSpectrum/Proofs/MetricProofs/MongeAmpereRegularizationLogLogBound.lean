@@ -6,32 +6,24 @@ public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArithmeticInt
 public import GroundTheory.HeightsAndTheta.Heights.Antisymmetric.Statements
 public import ReciprocityTheory.AnalyticForms.LeviForms.Energy
 public import ReciprocityTheory.AnalyticForms.LeviForms.TailBoundA
-public import ReciprocityTheory.AnalyticForms.PotentialTheory.ContDiffAtOfIsPotential
-public import ReciprocityTheory.AnalyticForms.PotentialTheory.Partition
-public import ReciprocityTheory.AnalyticForms.PotentialTheory.LocDens
-public import ReciprocityTheory.AnalyticForms.PotentialTheory.IntegrableOnTargetOfTsupport
-public import ReciprocityTheory.AnalyticForms.PotentialTheory.PotentialContDiffAt
-public import ReciprocityTheory.AnalyticForms.PotentialTheory.MaMeasure
-public import ReciprocityTheory.AnalyticForms.PotentialTheory.PshShift
+public import ReciprocityTheory.AnalyticForms.PotentialTheory.Bundle0003
+public import ReciprocityTheory.AnalyticForms.PotentialTheory.Bundle0005
+public import ReciprocityTheory.AnalyticForms.PotentialTheory.Bundle0006
+public import ReciprocityTheory.AnalyticForms.PotentialTheory.Bundle0007
+public import ReciprocityTheory.AnalyticForms.PotentialTheory.Bundle0008
 public import ReciprocityTheory.AnalyticForms.PotentialTheory.Stokes
-public import ReciprocityTheory.AnalyticForms.PotentialTheory.LogInt
 public import ReciprocityTheory.AnalyticForms.PotentialTheory.SNCAtlas
-public import ReciprocityTheory.AnalyticForms.PotentialTheory.IsPotentialPullbackStatement
-public import ReciprocityTheory.AnalyticForms.PlurisubharmonicFunctions.GreenSt
+public import ReciprocityTheory.AnalyticForms.PotentialTheory.Bundle0002
+public import ReciprocityTheory.AnalyticForms.PlurisubharmonicFunctions.Bundle0001
 public import ReciprocityTheory.AnalyticForms.PotentialTheory.PLCurveA
 public import ReciprocityTheory.AnalyticForms.PotentialTheory.PLLocalStatement
-public import ReciprocityTheory.AnalyticForms.PotentialTheory.PushAFinsumInter
 public import ReciprocityTheory.AnalyticForms.PotentialTheory.Pullback
-public import ReciprocityTheory.AnalyticForms.PotentialTheory.AnalyticSubsetChartLocal
-public import ReciprocityTheory.AnalyticForms.PotentialTheory.Measure
 public import ReciprocityTheory.AnalyticForms.PotentialTheory.AtlasIndep
-public import ReciprocityTheory.AnalyticForms.PotentialTheory.Degree
 public import ReciprocityTheory.AnalyticForms.PotentialTheory.DegreeInt
 public import ReciprocityTheory.AnalyticForms.PotentialTheory.ContDiffFubiniStudyRatioCompChart0
-public import ReciprocityTheory.AnalyticForms.PotentialTheory.ProjectiveLinePartitionContinuousCoe
-public import Development.AutomorphicSpectrum.Proofs.MetricProofs.LoglogQuotNonneg
-public import Development.AutomorphicSpectrum.Proofs.MetricProofs.FixedMemberBase
-public import Development.AutomorphicSpectrum.Proofs.MetricProofs.SingularWeightMonotoneRegularizationStatement
+public import Development.AutomorphicSpectrum.Proofs.MetricProofs.Bundle0017
+public import Development.AutomorphicSpectrum.Proofs.MetricProofs.Bundle0080
+public import Development.AutomorphicSpectrum.Proofs.MetricProofs.Bundle0019
 
 @[expose] public section
 
@@ -179,7 +171,7 @@ theorem signed_rate : ConvergenceRateStatement → ∀ (e : ℕ) (σ : Type) [Fi
   have hΘ := S.potΘ
   have hΘp := S.posΘ
   have hΘpsh : IsPsh S.A S.Θ := TailBoundAlt.isPsh_of_isPosPot S.A S.Θ hΘp
-  obtain ⟨h1, -, h3⟩ := GlobalTheory.T.singular_weight_monotone_regularization e S.X S.A S.Θ S.L S.s S.nb S.m S.W S.potL S.sec S.snc S.norm_le hΘ hΘp
+  obtain ⟨h1, -, h3⟩ := _root_.GlobalTheory.CompanionTheory.Ar.PB.enlarging_constants_smooth_members e S.X S.A S.Θ S.L S.s S.nb S.m S.W S.potL S.sec S.snc S.norm_le hΘ hΘp
   obtain ⟨C₀, z1, z2, -⟩ := h3 (LocPot.ofFun 0) 0 (isPotential_ofFun S.A 0 (Rate.smooth_zero S.A))
     (Rate.smooth_zero S.A) (Rate.isPsh_zero S.A)
   obtain ⟨ts, hts⟩ : ∃ ts, ts = min S.t₀ (Real.exp (-Real.exp 1)) := ⟨_, rfl⟩

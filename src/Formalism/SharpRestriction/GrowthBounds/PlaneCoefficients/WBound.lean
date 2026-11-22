@@ -1,6 +1,6 @@
 module
 
-public import Formalism.SharpRestriction.GrowthBounds.TwistedSubstitution.WordLossNonneg
+public import Formalism.SharpRestriction.GrowthBounds.TwistedSubstitution.Bundle0004
 
 @[expose] public section
 

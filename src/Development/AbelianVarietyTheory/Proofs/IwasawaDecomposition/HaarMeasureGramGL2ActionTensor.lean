@@ -2,8 +2,8 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.T2SpaceNumberFieldInfiniteAdeles
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ContinuousDistribHaarCharUnits
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.HaarModulusTensorEqModulusNorm
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0140
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0143
 
 @[expose] public section
 

@@ -2,9 +2,9 @@ module
 
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.OddResidueBounds.ZeroMemUnrHom
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.GaloisLibrary.KummerTheory.PullOnto
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.GaloisLibrary.KummerTheory.ArtConj
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.GaloisLibrary.KummerTheory.Bundle0012
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.OddResidueBounds.ClKill
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.OddResidueBounds.FixField
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.OddResidueBounds.Bundle0003
 
 @[expose] public section
 

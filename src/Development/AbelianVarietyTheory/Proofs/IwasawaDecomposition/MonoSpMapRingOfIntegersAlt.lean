@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.FlagComponentFramedPointFrame
-public import Formalism.LocalToGlobal.ProjectiveLattices.MulCMemSec
-public import Formalism.LocalToGlobal.ProjectiveLattices.AllTest
+public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.Bundle0036
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0021
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0010
 public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.NotIsCompactUnivFv
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.HasArcDataIff
 

@@ -1,7 +1,7 @@
 module
 
 public import Formalism.SharpRestriction.GrowthBounds.MonomialOrderSegments.DigitPartMonomial
-public import Formalism.SharpRestriction.GrowthBounds.MonomialOrderSegments.ProjKeepsLetter
+public import Formalism.SharpRestriction.GrowthBounds.MonomialOrderSegments.Bundle0002
 public import Formalism.SharpRestriction.GrowthBounds.MonomialOrderSegments.AddMemSupportOfMemSupportCoefOut
 
 @[expose] public section

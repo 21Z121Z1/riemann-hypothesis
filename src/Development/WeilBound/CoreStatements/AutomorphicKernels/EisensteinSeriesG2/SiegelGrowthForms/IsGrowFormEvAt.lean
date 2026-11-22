@@ -1,9 +1,11 @@
 module
 
 public import Development.WeilBound.CoreStatements.AutomorphicKernels.EisensteinSeriesG2.SiegelGrowthForms.SiegelMult
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.EisensteinHalfHoldsStatement
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0581
+public import Development.WeilBound.CoreStatements.TemperedRepresentationTheory.EisensteinGrowthForms.GrowForms
+public import Development.WeilBound.ThetaLifts.LatticeBasics.Bundle0014
 public import Mathlib
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LocalFactorisationHolomorphic
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0016
 
 @[expose] public section
 

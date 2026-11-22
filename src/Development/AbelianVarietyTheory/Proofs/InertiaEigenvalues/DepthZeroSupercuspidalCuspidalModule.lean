@@ -1,10 +1,10 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.IsComp
+public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0029
 public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.HasSupportOfIsSubquotientProdIrr
 public import Formalism.LocalToGlobal.NormalizedHeckeFactors.TypesDefs
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.PrincipalCongruenceFixedVectorsLeSmoothVectors
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0634
 public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IsLocallyConstantOrbit
 public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.MatrixRegular
 

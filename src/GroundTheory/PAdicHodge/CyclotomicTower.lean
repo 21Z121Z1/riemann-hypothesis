@@ -3,7 +3,7 @@ module
 public import Mathlib
 public import GroundTheory.PAdicHodge.NormalizedTrace
 public import GroundTheory.PAdicHodge.CyclotomicField
-public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.NormNatCastPrime
+public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0021
 
 @[expose] public section
 

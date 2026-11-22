@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Divisors.FderivFnCongr
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0001
 public import Development.AbelianVarietyTheory.Definitions.Divisors.CommAlgFunctorCoboundaryZeroMemCocyclesOne
 
 @[expose] public section

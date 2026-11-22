@@ -7,14 +7,14 @@ public import Formalism.LocalToGlobal.SiegelLatticeTheory.ClosedLocalOrbits.Gaug
 public import Formalism.LocalToGlobal.SiegelLatticeTheory.ClosedLocalOrbits.GaugeLatticeShifts.SaturatedPf
 public import Formalism.LocalToGlobal.SiegelLatticeTheory.ClosedLocalOrbits.GaugeLatticeShifts.SatGram
 public import Formalism.LocalToGlobal.SiegelLatticeTheory.ClosedVolumeStatements.GenericRatioOfBoundHolds
-public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.LocClosed
-public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.AtBase
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.RationalUnitriangularFrameChangeLocalScalings
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.UnsignedLocalTermRowLatticeIsTerm
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsDatumOfTwoCongruentFramesStatement
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.RationalIsometryExtendsLocalIsometryStatement
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.LocalTermDefectEqOfLatticeEqStatement
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.TermAtBasePointOfFramesStatement
+public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.Bundle0014
+public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.Bundle0013
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0367
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0370
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0237
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0281
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0092
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0424
 
 @[expose] public section
 
@@ -340,7 +340,7 @@ theorem rank_loc (p : PlF D) : Module.finrank (D.s.atP p).Ep (Vp D p) = D.R.k + 
 
 theorem generic_iff_local : ∀ (D : D7) (X : HidaSetting D) (Y : Full X) (u u' : D.what₂.Word), ∀ (F : LFlag (D.sp.Y 0) D.R.rS (((D.mem u).A.T : ℕ) : D.host.E)) (F' : LFlag (D.sp.Y 0) D.R.rS (((D.mem u').A.T : ℕ) : D.host.E)) (w : Point D.host.E (D.R.rS + 1)), ZhatOM (ZhatL F F') = ptMat w → Gval F F' ≠ 0 → ∀ (Z : LocDat D) (FP : ∀ p : PlF D, LocNG.FPair (locH Z p) D.R.rS), Based Z FP (Tu D u) (Tu D u') F F' → (∀ p, (FP p).RelG (LocNG.theta (Z.M p))) → ∀ (t : TauC Y u u') (Λ : LV D), TG F F' t Λ → (t.generic ↔ ∀ p d τ, LocNG.IsTermOver (FP p) d τ → τ.abelian₂ = lattice₂ D Z.M p Λ → ¬ LocNG.BBne (H := locH Z p) τ) := by
   intro D X Y u u' F F' w hZw hGv Z FP hB hRel t Λ hTG
-  have hC := GlobalTheory.T.term_at_base_point_of_frames D X Y u u' F F' w hZw hGv t Λ hTG
+  have hC := _root_.GlobalTheory.Unfold.BasePt.term_at_base_point D X Y u u' F F' w hZw hGv t Λ hTG
   have hPD : Formalism.L2.SG.TermDef.PD D t.lam (lf D (X.Fu u)) u' (GTerm.frame t) := (Quot.out t.cls).2.2.2.2
   have hR : IsRowLat D (X.Fu u) t.lam := (Y.rowsOK u).1 _ t.mem
   have hgf := (Formalism.L2.SG.Closed.TermFun_holds D u u' (X.Fu u) t.lam hR).1
@@ -364,7 +364,7 @@ theorem generic_iff_local : ∀ (D : D7) (X : HidaSetting D) (Y : Full X) (u u' 
   have htB : GlobalTheory.LocOver.Tri (D.s.atP p).Ep (FP p).B.f τ0.f' := by
     rw [hfB]
     exact tri_trans (tri_loc Z p g (GTerm.frame t) F' hA2 gp hext) (tri_map gp htriU)
-  obtain ⟨d0, hd0⟩ := GlobalTheory.T.exists_datum_of_two_congruent_frames (Z.M p) hOK (locH Z p) D.R.rS (FP p) τ0 hτ0T hTA.symm hTB.symm htA htB
+  obtain ⟨d0, hd0⟩ := _root_.GlobalTheory.LocOver.TermOver.exists_datum (Z.M p) hOK (locH Z p) D.R.rS (FP p) τ0 hτ0T hTA.symm hTB.symm htA htB
   have hLam : τ0.abelian₂ = lattice₂ D Z.M p Λ := by
     rw [hΛ]
     exact himg t.lam

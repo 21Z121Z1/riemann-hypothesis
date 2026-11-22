@@ -2,13 +2,13 @@ module
 
 public import Mathlib
 public import GroundTheory.AutomorphicForms.AutomorphicFormSpaces.Height
-public import GroundTheory.AutomorphicForms.TraceFormulaConvolution
+public import GroundTheory.AutomorphicForms.Bundle0015
 public import GroundTheory.AutomorphicForms.CuspidalDiscreteness.SummandsAreCuspForms
 public import GroundTheory.AutomorphicForms.MultiplicityOne.OpenSubgroupRep
 public import GroundTheory.AutomorphicForms.MultiplicityOne.FiniteLevelGroups
-public import GroundTheory.AutomorphicForms.MultiplicityOne.FiniteAdelicHaar
+public import GroundTheory.AutomorphicForms.MultiplicityOne.Bundle0001
 public import GroundTheory.AutomorphicForms.L2LocalComponents.CenterCommute
-public import Development.AutomorphicArithmetic.Foundations.Convolution.ConvolutionKernels.KernelTransforms.TensCont
+public import Development.AutomorphicArithmetic.Foundations.Convolution.ConvolutionKernels.KernelTransforms.Bundle0002
 
 @[expose] public section
 

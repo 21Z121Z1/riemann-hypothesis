@@ -1,7 +1,7 @@
 module
 
-public import Formalism.HermitianCurvature.CompositeFormulaOfDensities
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.HsInnerAddSmulRight
+public import Formalism.HermitianCurvature.Bundle0007
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0035
 
 @[expose] public section
 

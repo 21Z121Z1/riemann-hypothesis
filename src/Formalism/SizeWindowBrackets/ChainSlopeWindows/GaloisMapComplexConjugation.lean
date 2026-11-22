@@ -1,10 +1,10 @@
 module
 
-public import Formalism.SizeWindowBrackets.GaloisToProductIsIso
+public import Formalism.SizeWindowBrackets.Bundle0003
 public import Formalism.SizeWindowBrackets.ChainSlopeWindows.StronglyIrreducible
 public import Formalism.FrobeniusOrbits.FrobeniusOrbitsProofs.CoprimeTwoPow
 public import Formalism.FrobeniusOrbits.FrobeniusOrbitsProofs.Galois
-public import Formalism.FrobeniusOrbits.FrobeniusOrbitsProofs.FrobMulInertia
+public import Formalism.FrobeniusOrbits.FrobeniusOrbitsProofs.Bundle0001
 public import Formalism.FrobeniusOrbits.FrobeniusOrbitsProofs.Inertia
 public import Formalism.FrobeniusOrbits.FrobeniusOrbitsProofs.Decomp
 

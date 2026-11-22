@@ -2,11 +2,11 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.FiniteDimensionalWdSpace
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsDeRhamFilGradedSymbolToTateTwist
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.NonemptyThetaDeRhamFilZeroConcretePeriod
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0232
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0084
 public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.EqZeroOfTateTwistInvariantFiniteExtension
-public import Formalism.SharpRestriction.LevelLetterCocycles.NormOfVOne
-public import Development.AbelianVarietyTheory.CrystallinePeriods.RingBasics
+public import Formalism.SharpRestriction.LevelLetterCocycles.Bundle0023
+public import Development.AbelianVarietyTheory.CrystallinePeriods.Bundle0001
 
 @[expose] public section
 

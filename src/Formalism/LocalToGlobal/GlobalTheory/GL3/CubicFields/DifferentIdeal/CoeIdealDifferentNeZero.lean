@@ -1,9 +1,7 @@
 module
 
-public import Formalism.LocalToGlobal.GlobalTheory.GL3.CubicFields.DifferentIdeal.SumEmbDualBasisComplex
+public import Formalism.LocalToGlobal.GlobalTheory.GL3.CubicFields.DifferentIdeal.Bundle0001
 public import Formalism.LocalToGlobal.GlobalTheory.GL3.CubicFields.DifferentIdeal.FractionalIdealDualFamily
-public import Formalism.LocalToGlobal.GlobalTheory.GL3.CubicFields.DifferentIdeal.LiftMOneExt
-public import Formalism.LocalToGlobal.GlobalTheory.GL3.CubicFields.DifferentIdeal.MapMulLeftDenSpanImageEqMapNum
 
 @[expose] public section
 

@@ -3,7 +3,7 @@ module
 public import Formalism.HermitianCurvature.HermitianCurvatureProofs.TheSection
 public import Formalism.HermitianCurvature.StatementNF
 public import Formalism.HermitianCurvature.HermitianCurvatureProofs.TwoByOneBlock
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutGCoreCut
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0052
 
 @[expose] public section
 

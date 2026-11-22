@@ -2,9 +2,9 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsIsHeckeLOfHasInf
-public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsValuationSubringIntegralClosureCompleteDVR
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FinPartEqOneOfLevel
-public import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.LatticeNormTransport
+public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.Bundle0109
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0439
+public import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.Bundle0007
 
 @[expose] public section
 

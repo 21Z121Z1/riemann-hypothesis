@@ -3,26 +3,25 @@ module
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.HeightFunctions.GrowthConstantBoundGcR
 public import Development.AbelianVarietyTheory.Definitions.ThetaValues.GamAt
-public import Development.AbelianVarietyTheory.Definitions.ArchimedeanThetaValues.CarchAt
+public import Development.AbelianVarietyTheory.Definitions.ArchimedeanThetaValues.Bundle0001
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PlaceDivisors.StChartF
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PullbackSections.NoCommonZeroSt
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PullbackSections.SupBoundPageRows
-public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.ThExprUniqOfChartIndep2
-public import Formalism.SharpRestriction.GenusPolyhedralBounds.RelativeIndexClassSets.InnerEuclideanEmbeddingEqAverage
-public import Formalism.LocalToGlobal.ProjectiveLattices.CurveAsm
-public import Formalism.LocalToGlobal.ProjectiveLattices.CurveLocInst
-public import Formalism.LocalToGlobal.ProjectiveLattices.RealPtPf
-public import Formalism.LocalToGlobal.ProjectiveLattices.TieInst
-public import Formalism.LocalToGlobal.ProjectiveLattices.CombAlgOfCombBound
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PullbackSections.Bundle0013
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PullbackSections.Bundle0003
+public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0007
+public import Formalism.SharpRestriction.GenusPolyhedralBounds.RelativeIndexClassSets.Bundle0005
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0040
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0043
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0039
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0037
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0034
 public import Formalism.LocalToGlobal.ProjectiveLattices.DepthTie
-public import Formalism.LocalToGlobal.ProjectiveLattices.FullExists
 public import Development.AbelianVarietyTheory.Definitions.ThetaValues.Generic
-public import Formalism.LocalToGlobal.ProjectiveLattices.AxHLAM
-public import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.H2XNIffH2
-public import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.FinrankHost
-public import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.ExistsInBasisSharesInContain
-public import Development.AbelianVarietyTheory.Proofs.TorusHaarMeasure.ThetaArchimedeanDataIndefiniteModelsStatement
-public import Development.AbelianVarietyTheory.Proofs.TorusHaarMeasure.CuspReadingsSpanModelFormsShiftedWeightsStatement
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0031
+public import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.Bundle0066
+public import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.Bundle0065
+public import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.Bundle0076
+public import Development.AbelianVarietyTheory.Proofs.TorusHaarMeasure.Bundle0042
+public import Development.AbelianVarietyTheory.Proofs.TorusHaarMeasure.CuspReadingsSpanModelFormsShiftedWeights
 
 @[expose] public section
 
@@ -79,8 +78,8 @@ theorem sharesAt_of_lt : ∀ (D : D7) (T : Top D) (h : LawsP T) (j : ℕ) (hj : 
     exact ⟨a, b, c, d, e, rfl, rfl, f, le_rfl, le_rfl, le_rfl, le_rfl, le_rfl, le_rfl, le_rfl⟩
   obtain ⟨-, -, -, -, hadd, h2, h11⟩ := GlobalTheory.ExtraWeight.numbers D _ _ j (recPJ h j hj) _ 1 4 0 11 large₂ H C2 A2 7 CT
     ka wL wF Tn nP nW h0 hPg.hyp ht hPg.page hjm hj.1 (le_trans (by norm_num) hPg.df)
-  have hA := GlobalTheory.T.thetaArchimedeanData_indefiniteModels D T h j hj large₂ H C2 A2 CT ka wL wF Tn nP nW h0 EX p S nus hPar hPg hH hjm G hG hE
-  obtain ⟨hR, hMg⟩ := GlobalTheory.T.cuspReadings_span_model_forms_shifted_weights D T h j hj large₂ H C2 A2 CT ka wL wF Tn nP nW h0 EX p hPar hPg
+  have hA := _root_.GlobalTheory.RunJoin.archAt_of_run D T h j hj large₂ H C2 A2 CT ka wL wF Tn nP nW h0 EX p S nus hPar hPg hH hjm G hG hE
+  obtain ⟨hR, hMg⟩ := _root_.GlobalTheory.RunJoin.onto_of_page D T h j hj large₂ H C2 A2 CT ka wL wF Tn nP nW h0 EX p hPar hPg
   obtain ⟨-, -, ⟨-, -, -, -, -, po, -, -, PL, -, -, -, hS0, -⟩, -⟩ := hH
   let n := ownNorm (recB h.toLawsCore)
   refine sharesAt_of_xplus (recPJ h j hj) (extAll h j hj) (intAtExt_extAll h j hj) G S Tn _ Sh

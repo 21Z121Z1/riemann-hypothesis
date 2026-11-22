@@ -1,6 +1,6 @@
 module
 
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.PBGHead
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0098
 public import Formalism.HermitianCurvature.HermitianCurvatureProofs.ActualAdjointnessFromHermitian
 
 @[expose] public section

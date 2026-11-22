@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LocHomAlgebraMap
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0076
 
 @[expose] public section
 

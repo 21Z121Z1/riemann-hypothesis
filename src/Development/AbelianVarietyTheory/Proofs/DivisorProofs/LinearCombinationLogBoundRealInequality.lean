@@ -1,12 +1,12 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Statements.PlaceShiftStatements.NormSmall
-public import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.ZetaValueIdeals
+public import Development.AbelianVarietyTheory.Statements.PlaceShiftStatements.Bundle0002
+public import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.Bundle0002
 public import Development.AutomorphicArithmetic.CyclotomicBounds.RamifiedDiscriminants.FunDen
-public import Development.AbelianVarietyTheory.Definitions.Divisors.IsValCharTwist
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ClassC0PrimeNotExceptional
-public import Formalism.SharpRestriction.AdmissibleParameterJoins.SfromGLu
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0054
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0316
+public import Formalism.SharpRestriction.AdmissibleParameterJoins.Bundle0006
 
 @[expose] public section
 

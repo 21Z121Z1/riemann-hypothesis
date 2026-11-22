@@ -1,10 +1,9 @@
 module
 
-public import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.PairRowIffQdRows
-public import Development.AutomorphicArithmetic.CharacterBoxes.TwistForm
+public import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.Bundle0002
+public import Development.AutomorphicArithmetic.CharacterBoxes.Bundle0003
 public import Development.AutomorphicArithmetic.CharacterBoxes.EventuallyRankLeRpowOfLtOneDivFiftytwo
-public import Development.AutomorphicArithmetic.MeanSquareBounds.IndUnique
-public import Development.AutomorphicArithmetic.MeanSquareBounds.TwistPrim
+public import Development.AutomorphicArithmetic.MeanSquareBounds.Bundle0001
 
 @[expose] public section
 

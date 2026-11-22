@@ -4,11 +4,11 @@ public import Mathlib
 public import Formalism.LocalRingCardinality.RhoDetPrimeEqMuTildeMulChiPow
 public import Formalism.LocalRingCardinality.DataParams₂
 public import Formalism.LocalRingCardinality.DataDIV
-public import Formalism.LocalRingCardinality.DataParamsT
-public import Formalism.LocalRingCardinality.ConjSqrtMinusD
+public import Formalism.LocalRingCardinality.Bundle0003
+public import Formalism.LocalRingCardinality.Bundle0001
 public import Formalism.SharpRestriction.ParamsHeightRankConstant
 public import Formalism.SharpRestriction.Divisibility.ModuliIntegralCharts
-public import Formalism.GelfandTransference.EnergyIdentity
+public import Formalism.GelfandTransference.Bundle0001
 
 @[expose] public section
 

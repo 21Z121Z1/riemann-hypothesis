@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.SncChartPoint
-public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsSncModel
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0008
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.Bundle0008
 
 @[expose] public section
 

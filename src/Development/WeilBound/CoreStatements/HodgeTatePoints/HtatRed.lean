@@ -1,13 +1,12 @@
 module
 
 public import Mathlib
-public import Development.WeilBound.CoreStatements.HodgeTatePoints.HtatHtBc
-public import Development.WeilBound.CoreStatements.HodgeTatePoints.HtatLieBc
-public import Development.WeilBound.CoreStatements.HodgeTatePoints.HtatLieIso
+public import Development.WeilBound.CoreStatements.HodgeTatePoints.Bundle0029
+public import Development.WeilBound.CoreStatements.HodgeTatePoints.Bundle0050
 public import Development.AutomorphicSpectrum.Statements.GeometryStatements.IsPolLatticePlane
-public import Development.AutomorphicSpectrum.Statements.GeometryStatements.HTChartExists
+public import Development.AutomorphicSpectrum.Statements.GeometryStatements.Bundle0001
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.TwoWeightEqOneAddRoot
-public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.ImportsLast
+public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0031
 
 @[expose] public section
 

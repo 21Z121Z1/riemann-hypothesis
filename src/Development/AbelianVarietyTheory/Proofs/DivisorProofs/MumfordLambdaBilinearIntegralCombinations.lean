@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FinProdIsGen
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2362
 
 @[expose] public section
 

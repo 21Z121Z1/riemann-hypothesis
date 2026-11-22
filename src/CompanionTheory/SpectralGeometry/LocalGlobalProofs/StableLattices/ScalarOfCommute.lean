@@ -3,12 +3,13 @@ module
 public import Mathlib
 public import CompanionTheory.RealGroups.DiscreteSeries.DiscreteSeriesClassification.DiscreteSeriesExhaustion.SimpleDistinctness.ScalarCharacterOfL2Embedding
 public import CompanionTheory.HarishChandraModules.KFiniteAnalyticVectors.AnalyticIntertwiners.KSpanFinB
-public import CompanionTheory.HarishChandraModules.KFiniteAnalyticVectors.AnalyticIntertwiners.NilpotentOfPowerTraces
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.KFiniteModuleIrreducibleOfIrreducibleUnitaryRep
+public import CompanionTheory.HarishChandraModules.KFiniteAnalyticVectors.AnalyticIntertwiners.Bundle0002
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1606
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsCompactTypeInCompactStableSubmodule
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CoeffMemSubmoduleOfComplexPolyValuesMem
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ShiftedCapelliDeterminantSubleadingCoeffTraceStatement
-public import Formalism.RealPlaceAnalysis.ThirdArithmeticHolds
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1131
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1165
+public import Development.AbelianVarietyTheory.Definitions.Divisors.IsSquareIntegrableIffMemL2
+public import Formalism.RealPlaceAnalysis.Bundle0004
 
 @[expose] public section
 
@@ -52,7 +53,7 @@ theorem exists_char {n : ℕ} {V : Type} [AddCommGroup V] [Module ℂ V]
     | zero => exact ⟨fun _ => 1, rfl, fun Y => by simp [qdet, Formalism.REAL.qminor]⟩
     | succ m =>
       obtain ⟨c, _, hc, _, heval⟩ :=
-        GlobalTheory.T.shifted_capelli_determinant_subleading_coeff_trace A m E (-s)
+        _root_.GlobalTheory.CapelliNext.qdet_shift_next_coeff A m E (-s)
       exact ⟨c, hc, fun Y => by simpa only [sub_neg_eq_add] using heval Y⟩
   obtain ⟨c, hlead, heval⟩ := hexpand
   let B : Subalgebra ℂ A := ⊥

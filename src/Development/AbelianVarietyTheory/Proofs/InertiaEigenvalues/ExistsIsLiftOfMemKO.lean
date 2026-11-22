@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.IsTypeGroupBlockLift
-public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.IsCharLab
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsContractNeZero
+public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0030
+public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0009
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0616
 
 @[expose] public section
 

@@ -1,13 +1,13 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Divisors.IsFlatLift
-public import Development.WeilBound.CoreStatements.PublishedTheorems.NadelVanishingPairs.NadelVanishingLemmas.CupProductFiltrationBoundStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CechAntisymmetrizedCupProductVanishAboveDegreeStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CartierPropertyAtSignMulFactorialScalingStatement
-public import Development.WeilBound.CoreStatements.PublishedTheorems.NadelVanishingPairs.NadelVanishingLemmas.FrobeniusSplittingClosedStatement
-public import Development.WeilBound.CoreStatements.PublishedTheorems.NadelVanishingPairs.NadelVanishingLemmas.ExistsFrobeniusSplittingDatumStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CechAntisymmetrizedCupProductLeadingTermStatement
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0002
+public import Development.WeilBound.CoreStatements.PublishedTheorems.NadelVanishingPairs.NadelVanishingLemmas.Bundle0004
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0183
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0181
+public import Development.WeilBound.CoreStatements.PublishedTheorems.NadelVanishingPairs.NadelVanishingLemmas.Bundle0003
+public import Development.WeilBound.CoreStatements.PublishedTheorems.NadelVanishingPairs.NadelVanishingLemmas.Bundle0002
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0182
 public import Development.WeilBound.CoreStatements.PublishedTheorems.NadelVanishingPairs.NadelVanishingLemmas.SplittingIntegralFormsBoundStatement
 
 @[expose] public section
@@ -41,7 +41,7 @@ theorem decomp_pointwise : ∀ {K : Type} [CommRing K] {V : Type} [AddCommGroup 
   intro K _ V _ _ ι _ p _ _ d f h γ P U A B L N T hd hD hγ hNm hTm hTd hNu hNp hNU hT hfA hhA hC
   obtain ⟨Φ, hΦ⟩ := GlobalTheory.T.exists_frobenius_splitting_datum p d f h hD
   obtain ⟨h0, hcl⟩ := GlobalTheory.T.frobenius_splitting_closed p d f h Φ hd hD hΦ
-  have hvan := (GlobalTheory.T.cechAntisymmetrizedCupProduct_vanish_above_degree p f h).2 Φ hΦ
+  have hvan := (_root_.GlobalTheory.DI.alt_and_phi_vanish_above_degree p f h).2 Φ hΦ
   apply GlobalTheory.T.cechZero_of_hypZero_of_cartier d N T Φ hd.sq hNm hTm hTd h0 hcl
   · intro a u t x hu htu hx
     have hxu : x ∈ forms (Set.univ : Set K) (Set.univ : Set V) a := hNu a u hu hx
@@ -56,8 +56,8 @@ theorem decomp_pointwise : ∀ {K : Type} [CommRing K] {V : Type} [AddCommGroup 
         (hNU a u hu y hy hx)
   · intro s j hj
     have hs : s.Nonempty := ⟨j, hj⟩
-    exact GlobalTheory.T.cartierPropertyAt_sign_mul_factorial_scaling p d (γ j).toAddMonoidHom (fun x => Φ x {j}) (fun a => N a s) (fun a => T a s)
+    exact _root_.GlobalTheory.DI.cartierAt_signFactorial p d (γ j).toAddMonoidHom (fun x => Φ x {j}) (fun a => N a s) (fun a => T a s)
       (psmul_zero' p) (fun a ha => hNp a s hs ha)
-      (fun a x hx => (GlobalTheory.T.cechAntisymmetrizedCupProduct_leading_term p f h).2 Φ j (γ j) hΦ (hγ j) a x (hNu a s hs hx)) (hC s j hj)
+      (fun a x hx => (_root_.GlobalTheory.DI.PhiLead.leading_term p f h).2 Φ j (γ j) hΦ (hγ j) a x (hNu a s hs hx)) (hC s j hj)
 
 end GlobalTheory.DI

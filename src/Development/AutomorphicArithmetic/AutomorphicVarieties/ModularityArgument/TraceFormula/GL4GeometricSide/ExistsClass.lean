@@ -1,12 +1,12 @@
 module
 
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.TraceFormula.GL4GeometricSide.InnerEq
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.NormalisedCuspFormL2Bounded
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LieActionSkewAdjointL2
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CuspRapidDecaySiegelGL
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.GaloisRepresentationAdmitted
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsThetaInvolution
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsRightHaarMeasure
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0503
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0501
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0556
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0709
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0702
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0495
 public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsIrreducibleFixed
 
 @[expose] public section

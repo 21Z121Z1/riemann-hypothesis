@@ -1,6 +1,6 @@
 module
 
-public import Formalism.SharpRestriction.GrowthBounds.BinomialRatio.RankDefs
+public import Formalism.SharpRestriction.GrowthBounds.BinomialRatio.Bundle0003
 public import Formalism.SharpRestriction.GrowthBounds.BinomialRatio.ThresholdLowerBounds
 public import Formalism.SharpRestriction.GrowthBounds.BinomialRatio.CoarseDegreeAlternative
 

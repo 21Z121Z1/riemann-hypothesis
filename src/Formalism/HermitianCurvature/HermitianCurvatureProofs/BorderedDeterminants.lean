@@ -1,11 +1,10 @@
 module
 
-public import Formalism.HermitianCurvature.CapelliDeterminantAndBranching
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.LemmaDDeterminantIdentity
+public import Formalism.HermitianCurvature.Bundle0008
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0047
 public import Formalism.HermitianCurvature.HermitianCurvatureProofs.ChainRecursionFromSingleDescent
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.QuantumMinorCommutation
-public import Formalism.RealPlaceAnalysis.RealPlaceTaylor.QuantumDetHighestWeightHolds
-public import Formalism.RealPlaceAnalysis.RealPlaceTaylor.ShiftedGeneratorEqIteSmulAdd
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0055
+public import Formalism.RealPlaceAnalysis.RealPlaceTaylor.Bundle0006
 public import Formalism.RealPlaceAnalysis.RealPlaceTaylor.GeneratorCommutatorQuantumDet
 
 @[expose] public section

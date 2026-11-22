@@ -1,7 +1,7 @@
 module
 
 public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.FrameInduction.Counts
-public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.FrameInduction.NegativeBound
+public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.FrameInduction.Bundle0001
 
 @[expose] public section
 

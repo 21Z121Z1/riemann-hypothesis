@@ -4,19 +4,24 @@ public import Mathlib
 public import Development.WeilBound.CoreStatements.AutomorphicKernels.UnitarySchrodingerModel.DictKAOfParts
 public import Development.WeilBound.CoreStatements.AutomorphicKernels.UnitarySchrodingerModel.CoefDataExists
 public import Development.WeilBound.CoreStatements.PublishedTheorems.SiegelWeilSchrodinger.SiegelWeilUnitarySchrodingerLit
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.IwasawaDecompositionUnitary
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SiegelParabolicUnnMatrixBlockUpperTriangular
-public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.EisensteinIsotropicLine
-public import Development.AbelianVarietyTheory.Definitions.Foundations.AnalyticOnNhdTsumNpow
-public import Development.AbelianVarietyTheory.PublishedTheorems.SiegelWeil₂.LeftInvOfIsSection
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.WeilSchrodingerRealParameter
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ExistsWeilDatumDoubledOfSchrodingerFormulasStatement
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ArchimedeanParametersAddCharUniqueStatement
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ShiftedAdditiveCharacterArchimedeanParameters
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0261
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0262
+public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.Bundle0016
+public import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0018
+public import Development.AbelianVarietyTheory.PublishedTheorems.SiegelWeil₂.Bundle0003
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0497
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0464
+public import Development.AbelianVarietyTheory.PublishedTheorems.SiegelWeil₂.SiegelWeilUnitarySchrodinger
+public import Development.AbelianVarietyTheory.PublishedTheorems.SiegelWeil₂.Bundle0001
+public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.WeilThetaConvergence
+public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.Bundle0017
+public import Development.AbelianVarietyTheory.PublishedTheorems.SiegelWeil₂.SiegelWeilUnitaryConvergent
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0229
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0210
 public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.GaussianIsSchwartzFunction
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.PureFiniteAdelicTestFunctionContinuousCompact
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.UnfoldingHolds
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.NondegenerateOfWhittaker
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0339
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0726
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0639
 
 @[expose] public section
 
@@ -40,12 +45,12 @@ theorem par_ne_zero {V : HSp D} {ψ : AddChar (AF D.host.F) ℂ} {χ : (AE D)ˣ 
   obtain ⟨𝓕, hμ⟩ := hS.hμ
   let A : HSp D := Formalism.BasicNotions.Examples₂.posSpace (E := D.host.E) Formalism.BasicNotions.Examples₂.star_isIntegral n
   obtain ⟨ψ₀, μ', lam, κ, omh, hstd, hsk, hlam, hψeq, hchart, hdat, htr⟩ :=
-    GlobalTheory.T.exists_weilDatum_doubled_of_schrodingerFormulas D A V ψ hS.hψ χ hS.hχ hS.hη θ hS.hθ μ 𝓕 hμ ω hS.hω
+    _root_.GlobalTheory.StdUnn.SchDatum.exists_datum D A V ψ hS.hψ χ hS.hχ hS.hη θ hS.hθ μ 𝓕 hμ ω hS.hω
   obtain ⟨lam', hlam', -, l', hl', habs⟩ := GlobalTheory.StdUnn.shift_char_realPar D ψ₀ hstd θ hS.hθ μ' hsk
   have hll : lam' = lam := (algebraMap D.host.F D.host.E).injective (hlam'.trans hlam.symm)
   subst hll
   have hl'' : HasRealPar ψ θ l' := hψeq ▸ hl'
-  have hleq : l = l' := GlobalTheory.T.archimedean_parameters_addChar_unique D ψ θ hS.hθ l l' hS.hl hl''
+  have hleq : l = l' := _root_.GlobalTheory.StdUnn.RealPar.realPar_unique D ψ θ hS.hθ l l' hS.hl hl''
   subst hleq
   intro τ h0
   have h := habs τ

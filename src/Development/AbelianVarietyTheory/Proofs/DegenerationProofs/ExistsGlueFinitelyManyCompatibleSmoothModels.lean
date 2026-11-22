@@ -6,7 +6,7 @@ public import Development.AbelianVarietyTheory.Definitions.AbelianSchemeLaws.Fir
 public import Development.AbelianVarietyTheory.Definitions.Degenerations.OfDerivationFnOn
 public import Development.AbelianVarietyTheory.Definitions.Degenerations.PlOrdSomeOfAssociated
 public import Development.AbelianVarietyTheory.Statements.SemistableTorsion.SemistableFin
-public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.GlueModelsOverSubfield
+public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.Bundle0028
 
 @[expose] public section
 

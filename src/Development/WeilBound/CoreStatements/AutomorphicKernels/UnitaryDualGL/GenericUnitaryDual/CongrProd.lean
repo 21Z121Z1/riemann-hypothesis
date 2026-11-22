@@ -1,15 +1,17 @@
 module
 
-public import Development.WeilBound.CoreStatements.AutomorphicKernels.UnitaryDualGL.GenericUnitaryDual.PSSeg
+public import Development.WeilBound.CoreStatements.AutomorphicKernels.UnitaryDualGL.GenericUnitaryDual.Bundle0001
 public import Development.WeilBound.CoreStatements.AutomorphicKernels.UnitaryDualGL.GenericUnitaryDual.PSLang
 public import Development.WeilBound.CoreStatements.AutomorphicKernels.UnitaryDualGL.GenericUnitaryDual.PS_conj
-public import Development.WeilBound.CoreStatements.AutomorphicKernels.UnitaryDualGL.GenericUnitaryDual.PUnit
 public import Development.WeilBound.CoreStatements.AutomorphicKernels.UnitaryDualGL.GenericUnitaryDual.PCentred
 public import Development.WeilBound.CoreStatements.AutomorphicKernels.UnitaryDualGL.TemperedEigenvalueNorms.AddOneLeOfPrecedes
-public import Development.WeilBound.RepresentationTheoryGL.GenericUnitaryGL.ComplementarySeries.ConjDual
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ContragredientProductIrreducibleStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.DualClassTwistNegStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SegmentDualPrecedesIffStatement
+public import Development.WeilBound.RepresentationTheoryGL.GenericUnitaryGL.ComplementarySeries.Bundle0001
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0554
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0387
+public import Mathlib
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0425
+public import Development.WeilBound.CoreStatements.TemperedRepresentationTheory.ZelevinskyJacquet.LSegJacquet
+public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.Bundle0002
 
 @[expose] public section
 
@@ -49,7 +51,7 @@ theorem segs_symm [CharZero k] {h N : ℕ} (δ : Fin h → IrrGL (k := k)) (Δ :
     intro t ht i j hP
     have r : ∀ a, (Zc.segDual (Δ a)).nu (t a : ℂ) = Zc.segDual ((Δ a).nu ((-t a : ℝ) : ℂ)) := fun a => by
       rw [PositivityTheory.Gud.Symm.Pf.segDual_nu hA]; push_cast; rw [neg_neg]
-    rw [r, r, GlobalTheory.T.segment_dual_precedes_iff hA] at hP
+    rw [r, r, _root_.GlobalTheory.CompanionTheory.SegDualPrec.segDual_precedes hA] at hP
     have := PositivityTheory.UdReth2.add_one_le_of_precedes _ _ (hc j) (hc i) _ _ hP
     have h1 := ht i; have h2 := ht j
     rw [abs_lt] at h1 h2

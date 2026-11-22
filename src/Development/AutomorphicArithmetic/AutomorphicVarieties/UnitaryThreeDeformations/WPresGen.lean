@@ -1,7 +1,7 @@
 module
 
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.CommutativeAlgebra.ResMapBijective
-public import Development.AbelianVarietyTheory.Proofs.FormalGroupCharts.MvPowerSeriesEvalOfPowMem
+public import Development.AbelianVarietyTheory.Proofs.FormalGroupCharts.Bundle0003
 
 @[expose] public section
 

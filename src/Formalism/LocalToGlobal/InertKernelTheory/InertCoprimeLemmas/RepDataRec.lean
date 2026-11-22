@@ -1,6 +1,6 @@
 module
 
-public import Formalism.LocalToGlobal.InertKernelTheory.DefsRepRec
+public import Formalism.LocalToGlobal.InertKernelTheory.Bundle0013
 public import Formalism.LocalToGlobal.InertKernelTheory.InertCoprimeLemmas.RepComb
 
 @[expose] public section

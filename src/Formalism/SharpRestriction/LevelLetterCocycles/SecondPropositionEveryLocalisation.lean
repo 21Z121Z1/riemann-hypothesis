@@ -1,9 +1,9 @@
 module
 
-public import Formalism.SharpRestriction.LevelLetterCocycles.LargeLevelLemmas
+public import Formalism.SharpRestriction.LevelLetterCocycles.Bundle0005
 public import Formalism.SharpRestriction.LevelLetterCocycles.EndomorphismIndexBound
 public import Formalism.TruncatedSeriesCounting.TruncatedSeriesProofs.LemmaDetPoly
-public import Formalism.TruncatedSeriesCounting.TruncatedSeriesProofs.BridgeDet
+public import Formalism.TruncatedSeriesCounting.TruncatedSeriesProofs.Bundle0007
 
 @[expose] public section
 

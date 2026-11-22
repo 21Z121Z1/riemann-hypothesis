@@ -1,8 +1,8 @@
 module
 
 public import Development.AutomorphicArithmetic.CommutativeAlgebra.EtaleCohomology.PhiAZero
-public import Development.AutomorphicArithmetic.CommutativeAlgebra.EtaleCohomology.TorsionOfVec
-public import Development.AutomorphicArithmetic.CommutativeAlgebra.EtaleCohomology.NatCastQb
+public import Development.AutomorphicArithmetic.CommutativeAlgebra.EtaleCohomology.Bundle0006
+public import Development.AutomorphicArithmetic.CommutativeAlgebra.EtaleCohomology.Bundle0005
 
 @[expose] public section
 

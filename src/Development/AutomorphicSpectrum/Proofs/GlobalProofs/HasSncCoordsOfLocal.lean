@@ -2,12 +2,10 @@ module
 
 public import Mathlib
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.BlowupProjections.BlowupProjStatement
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.FirstCohomology.DimSplitPf
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsCoordinatesExtendingRegularParameters
-public import Development.AutomorphicSpectrum.Proofs.GlobalProofs.KaehlerBasisSpreadsToNeighbourhoodStatement
-public import Development.AutomorphicSpectrum.Proofs.GlobalProofs.SmoothLocalRingFreeDifferentialsStatement
-public import Development.AutomorphicSpectrum.Proofs.GlobalProofs.RegularSequenceGermsRegularLocalStatement
-public import Development.AutomorphicSpectrum.Proofs.GlobalProofs.KaehlerBasisOnLocalizationAwayStatement
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.FirstCohomology.Bundle0003
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2003
+public import Development.AutomorphicSpectrum.Proofs.GlobalProofs.Bundle0004
+public import Development.AutomorphicSpectrum.Proofs.GlobalProofs.Bundle0005
 
 @[expose] public section
 
@@ -49,7 +47,7 @@ theorem basis_spread (K A : Type) [Field K] [CommRing A] [Algebra K A] [Algebra.
     ∃ s ∉ P, ∀ (B : Type) [CommRing B] [Algebra A B] [Algebra K B] [IsScalarTower K A B]
       [IsLocalization.Away s B],
       LinearIndependent B (fun i => KaehlerDifferential.D K B (algebraMap A B (x i))) ∧
-        Submodule.span B (Set.range fun i => KaehlerDifferential.D K B (algebraMap A B (x i))) = ⊤ := GlobalTheory.T.kaehler_basis_spreads_to_neighbourhood K A P x hx
+        Submodule.span B (Set.range fun i => KaehlerDifferential.D K B (algebraMap A B (x i))) = ⊤ := _root_.GlobalTheory.CompanionTheory.KaehlerSpread.spread K A P x hx
 
 theorem omega_free (K : Type) [Field K] (D : ℕ) (Y : Scheme.{0}) (g : Y ⟶ Sp K)
     (hD : SmoothOfRelativeDimension D g) (U : Y.affineOpens) (P : Ideal Γ(Y, U.1)) [P.IsPrime] :
@@ -65,7 +63,7 @@ theorem stalk_transfer (Y : Scheme.{0}) (U : Y.affineOpens) (y : Y) (hy : y ∈ 
     IsRegularLocalRing (Localization.AtPrime (U.2.primeIdealOf ⟨y, hy⟩).asIdeal) ∧
       FinalTheorems.Rsp (Localization.AtPrime (U.2.primeIdealOf ⟨y, hy⟩).asIdeal) m
         (fun i => algebraMap Γ(Y, U.1) _ (f i)) ∧
-      ∀ s : Γ(Y, U.1), y ∈ Y.basicOpen s ↔ s ∉ (U.2.primeIdealOf ⟨y, hy⟩).asIdeal := GlobalTheory.T.regular_sequence_germs_regular_local Y U y hy hreg m f hf
+      ∀ s : Γ(Y, U.1), y ∈ Y.basicOpen s ↔ s ∉ (U.2.primeIdealOf ⟨y, hy⟩).asIdeal := _root_.GlobalTheory.CompanionTheory.ResKCoords.stalk_to_localization Y U y hy hreg m f hf
 
 theorem isCoords_basicOpen (K : Type) [Field K] (Y : Scheme.{0}) (g : Y ⟶ Sp K) (U : Y.affineOpens)
     (s : Γ(Y, U.1)) {n : ℕ} (x : Fin n → Γ(Y, U.1))

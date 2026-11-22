@@ -3,15 +3,16 @@ module
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.ExistenceOfLattices.PermutesRefl
 public import Formalism.LocalToGlobal.ProjectiveLattices.UnFree
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsSplitLatticeDatumEverySignatureStatement
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsCoprimeScaledIsometrySameSignatureStatement
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsUnitaryConjSplitLatticeOfLocalStatement
-public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.ExistsIsotropicOfIndefinite
-public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.TransvectionIdentitiesUnitary
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0102
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0092
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsUnitaryConjSplitLatticeOfLocal
+public import Development.AbelianVarietyTheory.Definitions.AdelicHermitianForms.Bundle0001
+public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.Bundle0054
+public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.Bundle0018
 public import Formalism.LocalToGlobal.ProjectiveLattices.PetersonNormSubspace
 public import Formalism.LocalToGlobal.ProjectiveLattices.PartitionExtendByZeroAntitone
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsScaledIsometry
-public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.HasseNormTheoremQuadraticExtension
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0033
+public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.Bundle0053
 
 @[expose] public section
 
@@ -272,7 +273,7 @@ theorem exists_projector (D₀ : Datum H) (G : Matrix (Fin r) (Fin r) E) (φ₀ 
 
 theorem splitLat_of_indefinite : ∀ (E : Type) [Field E] [NumberField E] [IsCMField E] (H : Host E) (D : Datum H), (∃ D₁ : Datum H, D₁.p = 1 ∧ D₁.q = 0) → 3 ≤ D.p + D.q → 1 ≤ D.p → 1 ≤ D.q → SplitLat D := by
   intro E _ _ _ H D h1 h3 hp hq
-  obtain ⟨D₀, ep, eq, Lp, Lm, htop, ho, rp, rm, sp, sm⟩ := GlobalTheory.T.exists_splitLattice_datum_every_signature E H D.p D.q h1
+  obtain ⟨D₀, ep, eq, Lp, Lm, htop, ho, rp, rm, sp, sm⟩ := _root_.GlobalTheory.CompRat.exists_splitLat_of_signature E H D.p D.q h1
   have := D.fin
   have := D₀.fin
   have hξ := GlobalTheory.OneSpace.cc_rt H
@@ -333,7 +334,7 @@ theorem splitLat_of_indefinite : ∀ (E : Type) [Field E] [NumberField E] [IsCMF
       rfl) x y
     rwa [one_mulVec, one_mulVec] at this
   have hd₀ := isUnit_det hdet hU₀
-  obtain ⟨γ, hU, hγ⟩ := GlobalTheory.T.exists_unitary_conj_split_lattice_of_local (maximalRealSubfield E) E (IsCMField.complexConj E) _ G
+  obtain ⟨γ, hU, hγ⟩ := _root_.GlobalTheory.UTrans.exists_isU_conj_mem (maximalRealSubfield E) E (IsCMField.complexConj E) _ G
     (Algebra.IsQuadraticExtension.finrank_eq_two _ _) hh hz (LinearMap.range φ) (LinearMap.range φ₀) hfg span
     π γ₀ (φ₀ a) (2 * b₁ * b₂) k π1 π2 ((π4 a).2 ha) hxx (by rintro _ ⟨y, rfl⟩; exact π3 y) (by positivity)
     (by

@@ -1,11 +1,11 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AppInjectiveOfIsDominant
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2326
 public import Development.AbelianVarietyTheory.Definitions.Degenerations.OfDerivationFnOn
 public import Development.AbelianVarietyTheory.Proofs.HomogeneousIdeals.ExistsUniqueFactorCompletedStalkOfMap
-public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsMonHomExtension
-public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.SemiAbelianReductionAlongIsogenyStrictHenselian
+public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.Bundle0020
+public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.Bundle0174
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.ChartPullbacks.UniformBaseChange.PullbackDegree.EpsPullbackFst
 
 @[expose] public section

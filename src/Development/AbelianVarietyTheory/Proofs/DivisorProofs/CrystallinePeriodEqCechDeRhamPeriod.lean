@@ -1,14 +1,13 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Divisors.IsPeriodHom
-public import Development.AbelianVarietyTheory.Definitions.Divisors.FstTszeSec
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0018
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0003
 public import Development.AbelianVarietyTheory.Definitions.Divisors.IsRatioCover
-public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.CrysToDRBijective
-public import Development.AbelianVarietyTheory.Proofs.ToricGeometry.TopLePreimageOfValAtNeZero
+public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.Bundle0006
+public import Development.AbelianVarietyTheory.Proofs.ToricGeometry.Bundle0018
 public import Development.AbelianVarietyTheory.Proofs.CovolumeBounds.DifferentiableOnOfTendstoLocallyUniformlyOn
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UniformisationPreimageValueRulesStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UniformisedOneFormEvaluationRulesStatement
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0665
 
 @[expose] public section
 
@@ -37,7 +36,7 @@ def valHom (U : A.left.Opens) : Sec (str A) U →ₐ[ℂ] Hol (W u U) where
   map_zero' := Subtype.ext (funext fun p => valAt'_zero _ _)
   map_add' a b := Subtype.ext (funext fun p => valAt'_add _ _ a b)
   commutes' c := Subtype.ext (funext fun p => by
-    obtain ⟨e, he⟩ := (GlobalTheory.T.uniformisation_preimage_value_rules A g L u).2.2.2.2.2.2.2.2.2.1 U p.1.2 p.2
+    obtain ⟨e, he⟩ := (_root_.GlobalTheory.CechPer.pre_val_rules A g L u).2.2.2.2.2.2.2.2.2.1 U p.1.2 p.2
     exact (he _).trans (e.commutes c))
 
 theorem fn_valHom (U : A.left.Opens) (b : Sec (str A) U) {p : Tot Empty g} (hp : p ∈ W u U) :
@@ -50,14 +49,14 @@ theorem fn_valHom (U : A.left.Opens) (b : Sec (str A) U) {p : Tot Empty g} (hp :
   le _ U' U := U' ≤ U
   le_refl _ := le_rfl
   le_trans h h' := h'.trans h
-  maps {l U U'} h p hp := ((GlobalTheory.T.uniformisation_preimage_value_rules A g L u).2.2.1 U.1 l p.2).2 ((GlobalTheory.T.uniformisation_preimage_value_rules A g L u).2.2.2.2.2.1 U.1 U'.1 h hp)
+  maps {l U U'} h p hp := ((_root_.GlobalTheory.CechPer.pre_val_rules A g L u).2.2.1 U.1 l p.2).2 ((_root_.GlobalTheory.CechPer.pre_val_rules A g L u).2.2.2.2.2.1 U.1 U'.1 h hp)
 
 theorem sh_valHom {l : u.Λ} {U V : A.left.affineOpens} (h : (ch u).le l V U) (b : Sec (str A) U.1) :
     Charts.sh h (valHom u U.1 b) = valHom u V.1 (Sec.res (str A) h b) :=
   Hol.ext_fn fun p hp => by
     rw [Charts.fn_sh h _ hp, fn_valHom u _ _ ((ch u).maps h p hp), fn_valHom u _ _ hp,
-      (GlobalTheory.T.uniformisation_preimage_value_rules A g L u).2.2.2.2.2.2.2.2.1 U.1 V.1 h b p.2 hp]
-    exact (GlobalTheory.T.uniformisation_preimage_value_rules A g L u).2.2.2.1 U.1 b l p.2
+      (_root_.GlobalTheory.CechPer.pre_val_rules A g L u).2.2.2.2.2.2.2.2.1 U.1 V.1 h b p.2 hp]
+    exact (_root_.GlobalTheory.CechPer.pre_val_rules A g L u).2.2.2.1 U.1 b l p.2
 
 def rl : Real (ch u) (str A) (algebraMap ℂ (Hol (fibFam u).V)) where
   x U := spMap (valHom u U.1 : Sec (str A) U.1 →+* Hol (W u U.1)) ≫ affPt (str A) U
@@ -225,7 +224,7 @@ theorem lift_fn (U : A.left.Opens) (ℓ : Ω[Sec (str A) U⁄ℂ] →+ (Fin g �
     (h : ∀ b ω, ℓ (b • ω) = valHom u U b • ℓ ω)
     (hD : ∀ b a, ℓ (KaehlerDifferential.D ℂ _ b) a = dw a (valHom u U b)) (a : Fin g) {p : Tot Empty g} (hp : p ∈ W u U)
     (ω : Ω[Sec (str A) U⁄ℂ]) : (ℓ ω a).fn p = evForm u.ex U p.2 ω (Pi.single a 1) := by
-  obtain ⟨-, e2, e3⟩ := GlobalTheory.T.uniformisedOneFormEvaluation_rules A g L u U p.2 hp
+  obtain ⟨-, e2, e3⟩ := _root_.GlobalTheory.CechPer.evForm_rules A g L u U p.2 hp
   have hm : ω ∈ Submodule.span (Sec (str A) U) (Set.range (KaehlerDifferential.D ℂ (Sec (str A) U))) := by
     rw [KaehlerDifferential.span_range_derivation]; trivial
   induction hm using Submodule.span_induction with

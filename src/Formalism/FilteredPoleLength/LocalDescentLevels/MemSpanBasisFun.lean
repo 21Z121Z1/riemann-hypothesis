@@ -1,6 +1,6 @@
 module
 
-public import Formalism.FilteredPoleLength.ReducedBasisBounds.ReductionQuotient
+public import Formalism.FilteredPoleLength.ReducedBasisBounds.Bundle0002
 public import Formalism.LogFactorialIndices.SignedSubspaceIndex.IdxDet
 
 @[expose] public section

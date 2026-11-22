@@ -1,17 +1,11 @@
 module
 
-public import Formalism.SubspaceCounting.Statement
-public import Formalism.SubspaceCounting.SubspaceCountingProofs.LengthLayers
-public import Formalism.SubspaceCounting.StatementB
-public import Formalism.SubspaceCounting.SubspaceCountingProofs.ManyOrbits
-public import Formalism.SubspaceCounting.SubspaceCountingProofs.QVandermonde
-public import Formalism.SubspaceCounting.SubspaceCountingProofs.TopsChoicePartA
-public import Formalism.SubspaceCounting.SubspaceCountingProofs.SubspaceCount
-public import Formalism.SubspaceCounting.SubspaceCountingProofs.TypeIIDown
+public import Formalism.SubspaceCounting.Bundle0001
+public import Formalism.SubspaceCounting.SubspaceCountingProofs.Bundle0001
+public import Formalism.SubspaceCounting.SubspaceCountingProofs.Bundle0002
 public import Formalism.SubspaceCounting.SubspaceCountingProofs.WalkSharp
 public import Formalism.SubspaceCounting.SubspaceCountingProofs.ManyOrbitsRefined
 public import Formalism.SubspaceCounting.GoodOrbitIntervalTileCondition
-public import Formalism.SubspaceCounting.SubspaceCountingProofs.MarkedRun
 public import Mathlib
 
 @[expose] public section

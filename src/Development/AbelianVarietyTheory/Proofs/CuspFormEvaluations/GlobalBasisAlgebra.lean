@@ -3,7 +3,7 @@ module
 public import Mathlib
 public import Formalism.LocalToGlobal.ProjectiveLattices.ThShort
 public import Formalism.LocalToGlobal.ProjectiveLattices.ThGerm
-public import Formalism.LocalToGlobal.ProjectiveLattices.IsChartIff
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0013
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.SecBaseChangeAnySt
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.VtUniq
 public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.FrTanAlg

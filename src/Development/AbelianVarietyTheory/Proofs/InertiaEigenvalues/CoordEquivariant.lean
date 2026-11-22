@@ -3,15 +3,16 @@ module
 public import Mathlib
 public import Formalism.LocalRingCardinality.RhoDetPrimeEqMuTildeMulChiPow
 public import Formalism.SharpRestriction.LevelLetterCocycles.LocalSituation
-public import Development.AbelianVarietyTheory.Definitions.Foundations.HTBasis
-public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.ExpStar
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ContinuousAdicModuleIff
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsHodgeTateBasisOfCrystallineOverKsStatement
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.HodgeTateBasisOfIsDecompletionAtLevelStatement
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CocycleTwistCoboundaryOnBallStatement
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsDecompletionFrameOfLatticeStatement
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsContinuousGaloisLatticeMatrixIntegralStatement
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.XiGradedPieceIsoTwistedOCStatement
+public import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0010
+public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0008
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0218
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0665
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0237
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CocycleTwistCoboundaryOnBall
+public import Formalism.SharpRestriction.LevelLetterCocycles.DataNLoc
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0338
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0232
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.XiGradedPieceIsoTwistedOC
 
 @[expose] public section
 
@@ -247,12 +248,12 @@ theorem of_basis (P : LocPrime l) (AI : LocAinf l P) (K : FinExt l)
       (repQ AI (Gj K m) ρ i (i + 1)) (l : ℤ_[l]) ((l : ℤ_[l]) ^ (2 + max 1 (rI l m J i))) := by
   have ha : IsActC AI.actC := ⟨AI.actC_ext, AI.actC_norm⟩
   have hχ : IsCyc P.χQ := P.χQ_cyc
-  have hHT' := GlobalTheory.T.hodgeTateBasis_of_isDecompletionAtLevel l _ _ ha hχ K _ d M U Dm g _ hD hHT
+  have hHT' := _root_.GlobalTheory.Cyc.htBasis_of_isDec l _ _ ha hχ K _ d M U Dm g _ hD hHT
   have hJ : J = (hfin.toFinset : Set ℤ) := hfin.coe_toFinset.symm
-  have hc6 := GlobalTheory.T.cocycle_twist_coboundary_on_ball l _ _ ha hχ K _ d hlev U g hD.2.2.2.1 hfin.toFinset (hJ ▸ hHT') i
+  have hc6 := _root_.GlobalTheory.Cyc.FrameTorsion.torsion_killed l _ _ ha hχ K _ d hlev U g hD.2.2.2.1 hfin.toFinset (hJ ▸ hHT') i
   rw [← rI_eq, ← hJ] at hc6
   have hs := sandwich hD i _ hc6
-  obtain ⟨Φ, hinj, hr, hz, hact⟩ := GlobalTheory.T.xiGradedPiece_iso_twistedOC l P AI i
+  obtain ⟨Φ, hinj, hr, hz, hact⟩ := _root_.GlobalTheory.Cyc.Graded.graded_iso l P AI i
   obtain ⟨Ψ, hΨi, hΨr, hΨz, hΨ⟩ := exists_coord b Φ hinj hr hz
   have hn : 2 + max 1 (rI l m J i) = 1 + max 1 (rI l m J i) + 1 := by omega
   rw [hn]
@@ -273,7 +274,7 @@ theorem torsion_killed : ∀ (D : Formalism.BasicNotions.D7) (HW : HWOf D.loc) (
   have hsm : s ≤ mN l s (M0 + h0) := by unfold mN; omega
   have hlev : Lev l (mN l s (M0 + h0)) :=
     ⟨le_trans h.1 hsm, fun h2 => le_trans (h.2.1 h2) hsm⟩
-  have h1 := (GlobalTheory.T.exists_continuous_galoisLatticeMatrix_integral l K LL T).1
+  have h1 := (_root_.GlobalTheory.Cyc.isMat_exists_and_props l K LL T).1
   refine h1.elim fun d h1 => h1.elim fun M h1 => h1.elim fun A hM => ?_
   have h2 := GlobalTheory.T.exists_decompletion_frame_of_lattice D HW F l K s LL h T M0 h0 hW d M A hM
   refine h2.elim fun Dm h2 => h2.elim fun U h2 => h2.elim fun g hD => ?_

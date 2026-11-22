@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.CGTrue
+public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.Bundle0020
 public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsCsdOfCharOfRes
 
 @[expose] public section

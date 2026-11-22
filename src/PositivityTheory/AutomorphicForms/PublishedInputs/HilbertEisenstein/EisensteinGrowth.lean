@@ -1,7 +1,7 @@
 module
 
-public import PositivityTheory.AutomorphicForms.PublishedInputs.HilbertEisenstein.AbsPInfModuleSection
-public import PositivityTheory.AutomorphicForms.PublishedInputs.HilbertEisenstein.PFinInvModuleSectionMul
+public import PositivityTheory.AutomorphicForms.PublishedInputs.HilbertEisenstein.Bundle0006
+public import PositivityTheory.AutomorphicForms.PublishedInputs.HilbertEisenstein.Bundle0008
 
 @[expose] public section
 

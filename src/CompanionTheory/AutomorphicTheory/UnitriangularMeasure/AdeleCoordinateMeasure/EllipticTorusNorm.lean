@@ -3,7 +3,7 @@ module
 public import Mathlib
 public import CompanionTheory.AutomorphicTheory.UnitriangularMeasure.AdeleCoordinateMeasure.GJGlobalModulus
 public import GroundTheory.GlobalFields.IdeleGroups.IdeleNorms.BaseChange
-public import GroundTheory.GlobalFields.TateThesis.AdeleScaling
+public import GroundTheory.GlobalFields.TateThesis.Bundle0006
 
 @[expose] public section
 

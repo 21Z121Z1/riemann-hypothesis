@@ -1,7 +1,7 @@
 module
 
 public import Formalism.AlgebraicWeights.IsAlgWeight
-public import Formalism.SatakeDualWeyl.StatementG
+public import Formalism.SatakeDualWeyl.Bundle0002
 
 @[expose] public section
 

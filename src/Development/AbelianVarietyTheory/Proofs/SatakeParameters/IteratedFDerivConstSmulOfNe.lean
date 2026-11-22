@@ -5,9 +5,9 @@ public import Formalism.LocalToGlobal.InertKernelTheory.InertCoprimeLemmas.IntPu
 public import Formalism.LocalToGlobal.InertKernelTheory.InertCoprimeLemmas.LocalLevelIsKOneAtT
 public import Development.AbelianVarietyTheory.Proofs.CovolumeBounds.DifferentiableOnOfTendstoLocallyUniformlyOn
 public import Formalism.LocalToGlobal.PairingIndexBounds.OrthogonalChartLevels.FdOfCharts
-public import Formalism.LocalToGlobal.GroupLattices.PendingLemmas.InvarianceRepresentativesLaw
-public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.NatCastMemOfPlace
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.KernelThetaAdmissibleLatticesStatement
+public import Formalism.LocalToGlobal.GroupLattices.PendingLemmas.Bundle0004
+public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.Bundle0016
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0226
 
 @[expose] public section
 

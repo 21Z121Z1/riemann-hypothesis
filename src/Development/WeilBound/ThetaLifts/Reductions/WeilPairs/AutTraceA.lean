@@ -1,10 +1,10 @@
 module
 
-public import Development.WeilBound.ThetaLifts.Reductions.WeilPairs.AutSer
+public import Development.WeilBound.ThetaLifts.Reductions.WeilPairs.Bundle0013
 public import Development.WeilBound.ThetaLifts.Reductions.WeilPairs.HermitianFormRealCoordinateMatrixHermitianDetNeZ
 public import Development.WeilBound.ThetaLifts.Reductions.WeilPairs.WeilPairData.StandardTraceAddCharIsStandardCharOfAdmissibleCM
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnfoldPoincareSeriesLatticeFourierStatement
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.SumOpTransversal
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0175
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0040
 
 @[expose] public section
 

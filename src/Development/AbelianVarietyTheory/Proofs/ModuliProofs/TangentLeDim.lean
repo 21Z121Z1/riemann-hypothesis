@@ -3,19 +3,19 @@ module
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.ModuliSpaces.IsGaloisCover
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.UniformisationConclusion
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.HeckeKer
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.Bundle0003
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.IsHolPeriods
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.UnifUniqSt
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.BCTools
-public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.LineBundleSymmetryHypothesisBaseChange
-public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsPushEquiv
-public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ThetaLevelShapePrimitivityPullbackDescent
-public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsThetaLevelAbelianSchemePullback
-public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ThetaLevelPullbackIdCompCancel
-public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsKsMatrixStatement
-public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ThetaLevelAbelianSchemeConstOverDualNumbers
-public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.CardTypeLe
-public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsAdaptedLieBasis
+public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.Bundle0064
+public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0022
+public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0161
+public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0117
+public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0107
+public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0135
+public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0121
+public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0062
+public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0063
 
 @[expose] public section
 
@@ -146,7 +146,7 @@ theorem tangent_le_dim : Out.Laws → Out.Laws2 → (∀ (S : Scheme.{0}) (P : O
     have := (hdet K p β hp).1 σ
     exact ⟨fun x => key _ (this.1 x), fun x => key _ (this.2 x)⟩
   obtain ⟨n, v, ty, hv, hty, hdiag⟩ := GlobalTheory.exists_adapted_lieBasis E H D K t₀.A A₀ (β ρ) t₀.ab.smooth det
-  obtain ⟨Θ, hsym, hcomm, hker⟩ := GlobalTheory.T.exists_ksMatrix_alt L1 L2 L3 K r t.pol t₀.pol φ₀ n v h₀ hL₀ hv
+  obtain ⟨Θ, hsym, hcomm, hker⟩ := _root_.GlobalTheory.KSField.exists_ksMatrix L1 L2 L3 K r t.pol t₀.pol φ₀ n v h₀ hL₀ hv
   have inj : Function.Injective Θ := by
     set_option backward.isDefEq.respectTransparency.instanceSearchTypes false in rw [injective_iff_map_eq_zero]
     intro lam h0

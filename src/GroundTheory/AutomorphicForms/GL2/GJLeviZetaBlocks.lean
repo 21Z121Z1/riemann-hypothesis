@@ -1,9 +1,8 @@
 module
 
 public import Mathlib
-public import GroundTheory.AutomorphicForms.GL2.GJZetaDefs
+public import GroundTheory.AutomorphicForms.GL2.Bundle0002
 public import GroundTheory.AutomorphicForms.GL2.ExistsEqPowMulOfValuationLe
-public import GroundTheory.AutomorphicForms.GL2.GJLeviSupport
 public import GroundTheory.AutomorphicForms.LeviStagesProduct
 public import GroundTheory.LocalFields.ExistsUnitFiltrationUnitsLeRangeNormUnits
 

@@ -1,12 +1,10 @@
 module
 
 public import Formalism.LocalToGlobal.CharacterGerms.CharacteristicFromRanks
-public import ReciprocityTheory.DualLattices.LengthDegreeAbelianVariety
-public import ReciprocityTheory.DualLattices.LengthDegreeOfFrobenius
-public import ReciprocityTheory.DualLattices.FrobeniusOfGroupDivisorsRank
-public import ReciprocityTheory.DualLattices.KilledGen
-public import ReciprocityTheory.DualLattices.IdemGen
-public import ReciprocityTheory.DualLattices.LenEx
+public import ReciprocityTheory.DualLattices.Bundle0035
+public import ReciprocityTheory.DualLattices.Bundle0034
+public import ReciprocityTheory.DualLattices.Bundle0019
+public import ReciprocityTheory.DualLattices.Bundle0020
 public import Formalism.SharpRestriction.GrowthBounds.FittingIdeal.DetMulMemFitt0
 
 @[expose] public section

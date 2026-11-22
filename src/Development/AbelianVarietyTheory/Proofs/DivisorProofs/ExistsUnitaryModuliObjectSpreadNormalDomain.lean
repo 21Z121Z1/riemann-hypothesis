@@ -3,14 +3,13 @@ module
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.Divisors.HasRigidCoords
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.ThetaCore
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DeterminantConditionSpreadsFromGeometricPointStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsLevelIsometryOfPointStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsGrpPullbackSelf
-public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsIsPELTripleOfDenseFibres
-public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.PushEquivSymmLeft
-public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.TorsionIsometryPrimitiveRootBijectiveModN
-public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.TateIsometryOfFiniteLevelIsometries
-public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.AllSixAbelianSchemeLawsHold
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2977
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2983
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2373
+public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0182
+public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0087
+public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0032
+public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.Bundle0131
 
 @[expose] public section
 
@@ -189,7 +188,7 @@ theorem exists_tateIso {A : Type} [CommRing A] [IsDomain A] [IsNoetherianRing A]
     rw [e]
     exact PELFamily.weilIs_lower P hL.weil hm u' hy hy' h
   · have hn := Nat.mul_pos hN hm
-    obtain ⟨ζ, ev, k₁, k₂, k₃, k₄, k₅, k₆, k₇⟩ := GlobalTheory.T.exists_levelIsometry_of_point_alt E H D A P act z κ lam pt (N * m) m N hn hN ⟨q⟩ hz hpt
+    obtain ⟨ζ, ev, k₁, k₂, k₃, k₄, k₅, k₆, k₇⟩ := _root_.GlobalTheory.exists_levelIsometry_of_point E H D A P act z κ lam pt (N * m) m N hn hN ⟨q⟩ hz hpt
       hact ⟨K₀, inferInstance, g₀, I₀.ζ (N * m), I₀.ev (N * m), I₀.ζ_prim _ hn, I₀.add _,
         fun v => (I₀.onto _ hn _).2 ⟨v, rfl⟩, I₀.lin _, I₀.isom _ hn,
         by rw [← h₁, ← I₀.ζ_pow N m hN hm, Units.val_pow_eq_pow_val],
@@ -223,7 +222,7 @@ theorem exists_obj : ∀ {E : Type} [Field E] [NumberField E] [IsCMField E] {H :
   let g₀ : A →+* AlgebraicClosure K := i.comp g
   obtain ⟨hdet, I₀, hζ, hτ, hσ⟩ := geom_push oK m σ τ σc τc (AlgebraicClosure K) (spMap i) (g₀.comp (b.comp j))
     (by rw [hsK, ← Category.assoc, ← spMap_comp g i, ← spMap_comp]) (spMap g₀) (spMap_comp _ _)
-  refine ⟨GlobalTheory.T.determinantCondition_spreads_from_geometricPoint D A t.G t.act (b (j (baseKA l).ρ)) hab
+  refine ⟨_root_.GlobalTheory.SpreadOnePoint.detCond_of_point D A t.G t.act (b (j (baseKA l).ρ)) hab
     (by rw [← map_pow, ← map_pow, (baseKA l).ρ_sq, map_neg, map_neg, map_natCast, map_natCast]) hQ _ g₀ hdet k ρ, ?_⟩
   have : ConnectedSpace (Sp A) := inferInstanceAs (ConnectedSpace (PrimeSpectrum A))
   have := t.semi.smooth

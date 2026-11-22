@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Foundations.LatticeIntegralCoordinates
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsPeriodPairIdealCurveLattice
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsFixedOfContract
+public import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0015
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0221
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0220
 public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.DatumCurveIntegralUnitDiscModel
 
 @[expose] public section

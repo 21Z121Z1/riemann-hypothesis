@@ -2,9 +2,9 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NontrivialIsomClassInt
-public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.ArFormExists
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PolEqMultiDiff
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RationalSectionDivisorPullbackGeneric
+public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.Bundle0016
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1042
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2390
 
 @[expose] public section
 

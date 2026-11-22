@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.FiniteDimensionalSpanMultilinearValues
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0003
 
 @[expose] public section
 

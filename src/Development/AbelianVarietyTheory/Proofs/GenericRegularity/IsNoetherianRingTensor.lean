@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.GenericRegularity.IsIntegrallyClosedQuotientOfMemMinimalPrimes
+public import Development.AbelianVarietyTheory.Proofs.GenericRegularity.Bundle0005
 
 @[expose] public section
 

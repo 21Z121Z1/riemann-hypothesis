@@ -2,9 +2,9 @@ module
 
 public import Mathlib
 public import GroundTheory.AutomorphicForms.AdelicGLn
-public import GroundTheory.AutomorphicForms.Satake
+public import GroundTheory.AutomorphicForms.Bundle0024
 public import GroundTheory.AutomorphicForms.TensorProductTheorem.Existence
-public import GroundTheory.AutomorphicForms.TensorProductTheorem.Places
+public import GroundTheory.AutomorphicForms.TensorProductTheorem.Bundle0004
 
 @[expose] public section
 

@@ -7,9 +7,9 @@ public import Development.AbelianVarietyTheory.Definitions.Degenerations.OfDeriv
 public import Development.AbelianVarietyTheory.Definitions.Degenerations.PlOrdSomeOfAssociated
 public import Development.AbelianVarietyTheory.Statements.SemistableTorsion.SemistableFin
 public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsCompletionPointClosedPointMemOfSmooth
-public import Development.AbelianVarietyTheory.Proofs.ThetaFamilyOrigin.IsIntegralOfIsAbelianSchemeField
-public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.TranslationBySection
-public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.IsOpenImmersionOfSections
+public import Development.AbelianVarietyTheory.Proofs.ThetaFamilyOrigin.Bundle0001
+public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.Bundle0026
+public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.Bundle0025
 public meta import Lean.Elab.Command
 
 @[expose] public section

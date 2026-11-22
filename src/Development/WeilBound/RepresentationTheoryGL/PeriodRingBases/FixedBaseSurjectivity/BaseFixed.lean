@@ -1,8 +1,8 @@
 module
 
 public import Development.WeilBound.RepresentationTheoryGL.PeriodRingBases.FixedBaseSurjectivity.GaloisPeriodCyclotomic
-public import Development.WeilBound.CoreStatements.CrystallinePeriodRings.InvRestrictScalarsMem
-public import Development.WeilBound.CoreStatements.CrystallinePeriodRings.FrobAinfMapFrobenius
+public import Development.WeilBound.CoreStatements.CrystallinePeriodRings.Bundle0002
+public import Development.WeilBound.CoreStatements.CrystallinePeriodRings.Bundle0001
 public import Development.WeilBound.RepresentationTheoryGL.PeriodRingBases.ThetaAlgebraMap.ThAlgebraMap
 
 @[expose] public section

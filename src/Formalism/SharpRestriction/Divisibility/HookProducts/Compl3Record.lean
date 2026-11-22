@@ -2,7 +2,7 @@ module
 
 public import Formalism.SharpRestriction.Divisibility.HookProducts.AbsPhFSubLeOfLe
 public import Formalism.SharpRestriction.ParConsts
-public import Formalism.SharpRestriction.ElevenLe
+public import Formalism.SharpRestriction.Bundle0001
 
 @[expose] public section
 

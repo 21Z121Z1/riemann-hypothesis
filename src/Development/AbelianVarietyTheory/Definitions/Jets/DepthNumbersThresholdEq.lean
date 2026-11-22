@@ -3,8 +3,8 @@ module
 public import Mathlib
 public import Formalism.LocalToGlobal.CharacterGerms.RestNonneg
 public import Development.AutomorphicArithmetic.OrbitLabellings.RowDefs
-public import Formalism.LocalToGlobal.CharacterGerms.ValuationChoiceHypothesis
-public import Formalism.LocalToGlobal.ProjectiveLattices.DepRun
+public import Formalism.LocalToGlobal.CharacterGerms.Bundle0017
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0032
 public import Formalism.LocalToGlobal.IndefiniteForms.IndefiniteTree.DepthTie
 
 @[expose] public section

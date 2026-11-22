@@ -1,6 +1,6 @@
 module
 
-public import Formalism.LocalToGlobal.NumberFieldFamilies.NPartCNdStd
+public import Formalism.LocalToGlobal.NumberFieldFamilies.Bundle0001
 public import Formalism.LocalToGlobal.NumberFieldFamilies.GamCSpec
 
 @[expose] public section

@@ -1,6 +1,6 @@
 module
 
-public import Formalism.LocalToGlobal.CharacterGerms.MemVarsProdAll
+public import Formalism.LocalToGlobal.CharacterGerms.Bundle0005
 
 @[expose] public section
 

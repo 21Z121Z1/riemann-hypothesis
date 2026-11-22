@@ -2,9 +2,8 @@ module
 
 public import Mathlib
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArakelovGeometry.StepTStB
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.InterBridgeB
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsHSMTransport
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsKrullDimMatAct
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.Bundle0009
+public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0022
 
 @[expose] public section
 

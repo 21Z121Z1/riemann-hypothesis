@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import GroundTheory.HeightsAndTheta.Heights.RemainderTerms.Statements
-public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.VandermondeOfEqDet
+public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0064
 
 @[expose] public section
 

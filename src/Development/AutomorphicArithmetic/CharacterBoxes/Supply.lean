@@ -1,7 +1,7 @@
 module
 
 public import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.AuxiliaryPrimeMemAvoidedPrimes
-public import Development.AutomorphicArithmetic.CharacterBoxes.TwistForm
+public import Development.AutomorphicArithmetic.CharacterBoxes.Bundle0003
 
 @[expose] public section
 

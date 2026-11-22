@@ -1,10 +1,10 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Divisors.LabExt
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0067
 public import Development.AbelianVarietyTheory.Definitions.Degenerations.AdmissibleBaseOfCompleteDvr
-public import Development.AbelianVarietyTheory.Definitions.Uniformization.SeriesFrame
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SecTw
+public import Development.AbelianVarietyTheory.Definitions.Uniformization.Bundle0002
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2472
 public import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.ExistsFinsetRepresentatives
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.DiscreteValuationRings.LBPull
 

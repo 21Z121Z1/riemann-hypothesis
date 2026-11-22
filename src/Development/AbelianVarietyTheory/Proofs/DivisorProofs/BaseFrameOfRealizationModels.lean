@@ -1,13 +1,13 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Divisors.IsSmoothVector
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsArchimedeanLiftUnitaryGroupProduct
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DiscreteSeriesModelUnitaryIrreducibleOrthonormal
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FlagDomainFramesEqGramFramesUnitary
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.RationalPointsAdelicUnitaryEqUnitary
-public import Development.AbelianVarietyTheory.Proofs.HeightProofs.AdelicUnitaryRealPointsStructureRealPlaces
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.OneAddSmulMemUnitary
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0033
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0948
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0945
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0955
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0073
+public import Development.AbelianVarietyTheory.Proofs.HeightProofs.Bundle0033
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0966
 
 @[expose] public section
 

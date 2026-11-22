@@ -4,7 +4,7 @@ public import Development.WeilBound.CoreStatements.AutomorphicKernels.DeRhamPote
 public import Mathlib
 public import GroundTheory.PAdicHodge.ExistsNormLeOfNormLtOneFinite
 public import GroundTheory.PAdicHodge.FundamentalSeqBCris
-public import GroundTheory.PAdicHodge.SenTateCharClosure
+public import GroundTheory.PAdicHodge.Bundle0003
 
 @[expose] public section
 

@@ -3,13 +3,13 @@ module
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.Jets.SideFam
 public import Development.AbelianVarietyTheory.Definitions.Jets.SumIoPr
-public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.NumericalFamilyShapeGapsStatement
-public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.DiscreteSeriesUnitarySmoothBasicStatement
-public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.SmoothMapsClosureStatement
+public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0050
+public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0077
+public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0063
 public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.DiscreteSeriesParameterUnique
-public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.TensorDecompositionParameters
-public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.IsFRepDualStandardUnitaryRepStatement
-public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.IsFRepExteriorPowerStandardRepStatement
+public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0052
+public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0056
+public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0060
 
 @[expose] public section
 
@@ -242,7 +242,7 @@ theorem sub_single_inj {n : ℕ} (mu : Fin n → ℝ) :
 theorem tens_exists : Hyps → ∀ (k r : ℕ) (lam : Fin (2 * r + k + 1) → ℝ) (u : ℕ → ℝ) (b bv ga h : ℝ) (q0 : ℕ) (R : (Fin (2 * r + k + 1) → ℤ) → Rep k r), Num k r lam u b bv ga h q0 → IsFam lam q0 R → ∀ ν, (∀ l, n1 ν + l ≤ q0 → ∃ io pr ep, TensH (cmp l) (cmp l (Formalism.QuantumDeterminants.Hpk k r)) (R ν) (fun I : Sub (2 * r + k + 1) l => R (ν + eZ I.1)) io pr ep) ∧ (n1 ν + 1 ≤ q0 → ∃ io pr ep, TensH dualM (Formalism.QuantumDeterminants.Hpk k r) (R ν) (fun s => R (ν - Pi.single s 1)) io pr ep) := by
   intro hH k r lam u b bv ga h q0 R hN hF ν
   have hZ : Zuckerman := hH.2.2.2.2.1
-  have hnum := (GlobalTheory.T.numericalFamily_shape_gaps k r lam u b bv ga h q0 hN).2 ν
+  have hnum := (_root_.GlobalTheory.NumFam.num_fam k r lam u b bv ga h q0 hN).2 ν
   constructor
   · intro l hl
     have h0 : n1 ν ≤ q0 := by omega

@@ -1,10 +1,10 @@
 module
 
-public import Development.WeilBound.ThetaLifts.LeviDeterminants.GrowDef
+public import Development.WeilBound.ThetaLifts.LeviDeterminants.Bundle0002
 public import Development.WeilBound.ThetaLifts.LeviDeterminants.GrowSobA
 public import Development.WeilBound.ThetaLifts.LeviDeterminants.GrowSobB
 public import Development.WeilBound.ThetaLifts.LeviDeterminants.GrowSplit
-public import Development.AbelianVarietyTheory.Proofs.HeightProofs.ExistsCompactAdeleRingModNumberField
+public import Development.AbelianVarietyTheory.Proofs.HeightProofs.Bundle0028
 
 @[expose] public section
 

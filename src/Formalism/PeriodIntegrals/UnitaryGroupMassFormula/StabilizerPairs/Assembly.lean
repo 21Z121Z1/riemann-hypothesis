@@ -1,8 +1,8 @@
 module
 
-public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.StabilizerPairs.StabPairsOf
+public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.StabilizerPairs.Bundle0001
 public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.StabilizerPairs.Forward
-public import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.FrameInd
+public import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.Bundle0024
 
 @[expose] public section
 

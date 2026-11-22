@@ -1,13 +1,13 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Divisors.OfCore
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ReadingsExistRow
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0030
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0970
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CoefMapNormEquivariantBasisOfFive
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LiftEquivarianceWeilModel
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.OscillatorModelsEvaluateFirst
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.OscillatorModelsEvaluateSecond
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EtaValuesCoefficientExists
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1004
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1042
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1353
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1328
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaLiftUniqueUpToUnit
 
 @[expose] public section

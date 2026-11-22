@@ -1,10 +1,10 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CosetRefinement
-public import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.TopPlaceLogTheta
-public import Formalism.LocalToGlobal.Columns.ToHLat
-public import Formalism.HarderNarasimhan.QuotRealize
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0718
+public import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.Bundle0012
+public import Formalism.LocalToGlobal.Columns.Bundle0007
+public import Formalism.HarderNarasimhan.Bundle0001
 
 @[expose] public section
 

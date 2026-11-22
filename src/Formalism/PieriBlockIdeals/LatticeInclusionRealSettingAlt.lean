@@ -3,8 +3,8 @@ module
 public import Formalism.PieriBlockIdeals.LocalFaithfullyFlat
 public import Formalism.PieriBlockIdeals.BlockIdealBound5Derived
 public import Formalism.PieriBlockIdeals.MertensReciprocalElementary
-public import Formalism.PieriBlockIdeals.LastGradedOfGradedAlone
-public import Formalism.PieriBlockIdeals.MultiplicityZeroThickEmbedding
+public import Formalism.PieriBlockIdeals.Bundle0005
+public import Formalism.PieriBlockIdeals.Bundle0004
 
 @[expose] public section
 

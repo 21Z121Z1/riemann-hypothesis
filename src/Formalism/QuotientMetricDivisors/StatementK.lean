@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Formalism.QuotientMetricDivisors.StatementE
-public import Formalism.QuotientMetricDivisors.StatementJ
+public import Formalism.QuotientMetricDivisors.Bundle0003
+public import Formalism.QuotientMetricDivisors.Bundle0002
 
 @[expose] public section
 

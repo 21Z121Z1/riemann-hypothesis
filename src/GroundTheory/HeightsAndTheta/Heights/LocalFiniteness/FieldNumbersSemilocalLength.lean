@@ -1,10 +1,9 @@
 module
 
-public import GroundTheory.HeightsAndTheta.Heights.LocalFiniteness.HilbertSamuelIrreducibleBasicOpenConnected
+public import GroundTheory.HeightsAndTheta.Heights.LocalFiniteness.Bundle0004
 public import GroundTheory.HeightsAndTheta.Heights.LocalFiniteness.FieldNumbersSemilocalLengthSum
-public import GroundTheory.HeightsAndTheta.Heights.FieldsOfNumbers.PDivCycleMinimal
-public import GroundTheory.HeightsAndTheta.Heights.FieldsOfNumbers.PFibreRelDim
-public import GroundTheory.HeightsAndTheta.Heights.FieldsOfNumbers.PSemilocalLength
+public import GroundTheory.HeightsAndTheta.Heights.FieldsOfNumbers.Bundle0014
+public import GroundTheory.HeightsAndTheta.Heights.FieldsOfNumbers.Bundle0017
 
 @[expose] public section
 

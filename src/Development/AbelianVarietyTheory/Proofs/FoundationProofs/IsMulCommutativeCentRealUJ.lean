@@ -2,8 +2,8 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.Foundations.ExistsAuxiliaryPlaceNotMemFinset
-public import Development.AbelianVarietyTheory.Definitions.Foundations.SecondCountableAndT2LocalField
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.LeftMulMatrixTransfer
+public import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0005
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0024
 public import Formalism.RealPlaceAnalysis.InstMeasurableSpaceUJ
 
 @[expose] public section

@@ -1,11 +1,11 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SubsingletonJacquetOfPerm
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0034
 public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IsIrreducibleIffOfLinearEquiv
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.InSupportOfIsSubquotient
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.AlgebraMapIntertwiningMapBijectiveOfIsSmooth
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.UnitaryAdmissibleMatrixCoefficient
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0050
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0621
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0021
 
 @[expose] public section
 

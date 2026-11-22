@@ -1,12 +1,12 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Proofs.GlobalProofs.FiniteDimensionalOfSlices
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsBlockEmb
+public import Development.AutomorphicSpectrum.Proofs.GlobalProofs.Bundle0050
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1342
 public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsSmoothAutomorphicFunctionTranslateAtRealPlace
-public import Development.AutomorphicSpectrum.Proofs.GlobalProofs.MemUnipOfArchFrame
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ContinuousOneP
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsArchEquivEq
+public import Development.AutomorphicSpectrum.Proofs.GlobalProofs.Bundle0045
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0220
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0291
 
 @[expose] public section
 

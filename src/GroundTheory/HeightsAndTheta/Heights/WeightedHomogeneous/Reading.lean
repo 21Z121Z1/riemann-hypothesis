@@ -2,9 +2,9 @@ module
 
 public import Mathlib
 public import GroundTheory.HeightsAndTheta.Heights.WeightedHomogeneous.Objects
-public import GroundTheory.HeightsAndTheta.Heights.WeightedHomogeneous.Examples
+public import GroundTheory.HeightsAndTheta.Heights.WeightedHomogeneous.Bundle0002
 public import GroundTheory.HeightsAndTheta.Heights.HeightComparison.HeightObjects
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArakelovGeometry.KleimanNefness.TargetSt
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArakelovGeometry.KleimanNefness.Bundle0002
 
 @[expose] public section
 

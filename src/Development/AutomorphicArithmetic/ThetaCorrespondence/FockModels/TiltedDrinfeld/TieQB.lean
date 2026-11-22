@@ -1,7 +1,7 @@
 module
 
 public import Development.WeilBound.RepresentationTheoryGL.PeriodRingBases.PeriodRingUnits.DieudonneManinBasisModification
-public import Development.WeilBound.CoreStatements.CrystallinePeriodRings.MaximalIdealEqSpanT
+public import Development.WeilBound.CoreStatements.CrystallinePeriodRings.Bundle0002
 
 @[expose] public section
 

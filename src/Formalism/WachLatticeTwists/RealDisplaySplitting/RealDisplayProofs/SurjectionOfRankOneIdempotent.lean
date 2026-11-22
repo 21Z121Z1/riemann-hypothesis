@@ -1,7 +1,7 @@
 module
 
 public import Formalism.WachLatticeTwists.RealDisplaySplitting.SurjectionRankOneIdempotent
-public import Formalism.WachLatticeTwists.RamifiedBlockRings.RamifiedBlockProofs.Normal
+public import Formalism.WachLatticeTwists.RamifiedBlockRings.RamifiedBlockProofs.Bundle0003
 
 @[expose] public section
 

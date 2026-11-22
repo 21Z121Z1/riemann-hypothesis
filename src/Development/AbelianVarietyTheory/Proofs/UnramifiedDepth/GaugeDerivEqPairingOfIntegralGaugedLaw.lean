@@ -1,12 +1,11 @@
 module
 
 public import Mathlib
-public import Formalism.LocalToGlobal.CharacterGerms.NondegenerateCharts
-public import Formalism.LocalToGlobal.CharacterGerms.RowTieSelf
-public import Formalism.LocalToGlobal.CharacterGerms.BlockAdmissibleChart
-public import Formalism.LocalToGlobal.CharacterGerms.NegMem
+public import Formalism.LocalToGlobal.CharacterGerms.Bundle0015
+public import Formalism.LocalToGlobal.CharacterGerms.Bundle0012
+public import Formalism.LocalToGlobal.CharacterGerms.Bundle0011
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PlaceDivisors.StChartF
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.TaylorDiscriminants.WickVanishing.LogChain
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.TaylorDiscriminants.WickVanishing.Bundle0008
 public import Development.AbelianVarietyTheory.Definitions.TeichmullerDepth.HasTeich
 
 @[expose] public section

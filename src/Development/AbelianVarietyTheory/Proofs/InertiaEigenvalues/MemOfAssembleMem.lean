@@ -1,10 +1,10 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.BlockTheory.NonGaloisCusps.OnePlusPowerAssembly
+public import Development.AbelianVarietyTheory.BlockTheory.NonGaloisCusps.Bundle0001
 public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CyclotomicExistsIff
 public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ZpowSmulMem
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CompOneAddPowMul
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0006
 
 @[expose] public section
 

@@ -1,7 +1,7 @@
 module
 
 public import Formalism.SharpRestriction.Divisibility.JetPolynomialLogs.DworkPowerSeriesWeights
-public import Formalism.GaussJetBounds.GaussJetProofs.ConstantCoeffEvenDerivativeEqZero
+public import Formalism.GaussJetBounds.GaussJetProofs.Bundle0003
 
 @[expose] public section
 

@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.WeilBound.CoreStatements.FlagImmersions.IsPotentialSumPot
+public import Development.WeilBound.CoreStatements.FlagImmersions.Bundle0003
 
 @[expose] public section
 

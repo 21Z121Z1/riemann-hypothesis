@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Formalism.LocalToGlobal.Columns.ScaledRamifiedLattice
+public import Formalism.LocalToGlobal.Columns.Bundle0004
 public import Formalism.LocalToGlobal.Columns.BaseLemmas
 public import Formalism.LocalToGlobal.KernelLattices.ThDistC
 public import Formalism.LocalRingCardinality.CoeNeZeroOfNotMem

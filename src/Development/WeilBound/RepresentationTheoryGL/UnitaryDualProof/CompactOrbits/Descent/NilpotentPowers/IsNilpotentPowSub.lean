@@ -1,7 +1,7 @@
 module
 
 public import Development.WeilBound.RepresentationTheoryGL.UnitaryDualProof.CompactOrbits.Descent.SliceVan
-public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.ImportsRestSide
+public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0032
 
 @[expose] public section
 

@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import GroundTheory.AutomorphicForms.LeviCartan
+public import GroundTheory.AutomorphicForms.Bundle0020
 public import GroundTheory.AutomorphicForms.LeviStagesInduction
 
 @[expose] public section

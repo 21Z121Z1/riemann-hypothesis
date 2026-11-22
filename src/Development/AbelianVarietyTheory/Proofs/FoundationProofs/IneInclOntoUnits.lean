@@ -1,8 +1,8 @@
 module
 
-public import Development.AbelianVarietyTheory.Definitions.Foundations.OrderedConst
-public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.Brauer
-public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.LocalLanglandsGL
+public import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0009
+public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.Bundle0046
+public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.Bundle0007
 public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.IsIrreducibleIff
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.Foundations.IsSatVecUOfIsSphericalU

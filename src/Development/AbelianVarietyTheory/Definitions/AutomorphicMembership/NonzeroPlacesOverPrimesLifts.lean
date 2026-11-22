@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.BrgStdR
-public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.ReadPk
+public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.Bundle0024
+public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.Bundle0033
 public import Formalism.SharpRestriction.Divisibility.WeightDegreeSizes
 public import Lean.LibrarySuggestions.Basic
 public import Lean.Elab.Command

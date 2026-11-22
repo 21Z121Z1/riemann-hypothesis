@@ -1,9 +1,9 @@
 module
 
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.PatchingModules.EpsilonEtaMatrices.EpsilonEtaTensorDual
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.PatchingModules.DegreeCountCohomology.FinAm
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.LemmaB
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.CardEqPowLength
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.PatchingModules.DegreeCountCohomology.Bundle0003
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.Bundle0008
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.Bundle0001
 
 @[expose] public section
 

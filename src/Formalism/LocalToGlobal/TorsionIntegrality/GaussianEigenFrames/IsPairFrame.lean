@@ -1,8 +1,8 @@
 module
 
 public import Formalism.LocalToGlobal.TorsionIntegrality.UniformGaussModels.UniformGaussModelConditionEquivalent
-public import Formalism.LocalToGlobal.TorsionIntegrality.UniformGaussModels.GoodModelAll
-public import Formalism.LocalToGlobal.TorsionIntegrality.QuadraticSemicharacters.QuadraticSemicharactersFactAltForm
+public import Formalism.LocalToGlobal.TorsionIntegrality.UniformGaussModels.Bundle0001
+public import Formalism.LocalToGlobal.TorsionIntegrality.QuadraticSemicharacters.Bundle0003
 
 @[expose] public section
 

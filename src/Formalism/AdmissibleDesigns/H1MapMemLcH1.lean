@@ -1,7 +1,7 @@
 module
 
-public import Formalism.AdmissibleDesigns.BlockTwistedCyclotomic
-public import Formalism.AdmissibleDesigns.SmulEval
+public import Formalism.AdmissibleDesigns.Bundle0004
+public import Formalism.AdmissibleDesigns.Bundle0006
 
 @[expose] public section
 

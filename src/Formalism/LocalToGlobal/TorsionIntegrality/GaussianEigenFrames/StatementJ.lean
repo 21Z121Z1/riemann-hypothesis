@@ -1,7 +1,7 @@
 module
 
 public import Formalism.LocalToGlobal.TorsionIntegrality.GaussianEigenFrames.StatementC
-public import Formalism.LocalToGlobal.TorsionIntegrality.GaussianEigenFrames.StatementF
+public import Formalism.LocalToGlobal.TorsionIntegrality.GaussianEigenFrames.Bundle0001
 public import Formalism.LocalToGlobal.TorsionIntegrality.GaussianEigenFrames.StatementG
 
 @[expose] public section

@@ -1,11 +1,12 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.StdBases
-public import Formalism.LocalToGlobal.KernelLattices.AdaptedEnt
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.IsRBasisOfLocBasis
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.NormTauEmbPosPlConjEq
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.PartnerPlaceInvolutiveNormConjEqStatement
+public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.Bundle0010
+public import Formalism.LocalToGlobal.KernelLattices.Bundle0005
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0073
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0081
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0086
+public import Formalism.LocalRingCardinality.CoeNeZeroOfNotMem
 
 @[expose] public section
 
@@ -248,7 +249,7 @@ theorem stdBases_of_basR : ∀ (D : D7) (p : ℕ) [Fact p.Prime] (lam : Qbar →
       rw [norm_tauEmb_posPl_conj_eq D p lam hcl z]
     rw [hconj _ _ hc]
     exact dualM_left _ (hdet _)
-  · obtain ⟨-, -, hn⟩ := GlobalTheory.T.partnerPlace_involutive_norm_conj_eq D p lam hd τ
+  · obtain ⟨-, -, hn⟩ := _root_.GlobalTheory.KerStd.tauSg_invol_norm_conj_eq D p lam hd τ
     have hc : Formalism.L2.Ker.ConjPr lam τ (tauSg D τ) := fun x => by rw [hn]
     rw [hconj _ _ hc]
     exact dualM_left _ (hdet _)

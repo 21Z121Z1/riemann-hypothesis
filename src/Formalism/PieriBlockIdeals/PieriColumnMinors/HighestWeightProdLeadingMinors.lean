@@ -1,9 +1,9 @@
 module
 
-public import Formalism.PieriBlockIdeals.LastGradedOfGradedAlone
-public import Formalism.PieriBlockIdeals.PieriColumnMinors.LastGradedImpliesOneBlock
+public import Formalism.PieriBlockIdeals.Bundle0005
+public import Formalism.PieriBlockIdeals.PieriColumnMinors.Bundle0004
 public import Formalism.PieriBlockIdeals.PieriColumnMinors.HighestWeightShiftEqDetMul
-public import Formalism.GradedWeylDivisibility.FockSpaceTableaux.LEhwLemmas
+public import Formalism.GradedWeylDivisibility.FockSpaceTableaux.Bundle0014
 
 @[expose] public section
 

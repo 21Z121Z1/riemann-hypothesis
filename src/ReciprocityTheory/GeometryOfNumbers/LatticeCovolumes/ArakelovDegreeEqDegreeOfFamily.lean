@@ -1,6 +1,6 @@
 module
 
-public import ReciprocityTheory.GeometryOfNumbers.LatticeCovolumes.DegStB
+public import ReciprocityTheory.GeometryOfNumbers.LatticeCovolumes.Bundle0003
 
 @[expose] public section
 

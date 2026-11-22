@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsSmallSectionsNonzero
+public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0026
 
 @[expose] public section
 

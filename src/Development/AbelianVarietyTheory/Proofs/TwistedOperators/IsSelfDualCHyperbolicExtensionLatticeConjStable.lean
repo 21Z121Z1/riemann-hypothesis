@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.FlatSpaceComponents
+public import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.Bundle0009
 
 @[expose] public section
 

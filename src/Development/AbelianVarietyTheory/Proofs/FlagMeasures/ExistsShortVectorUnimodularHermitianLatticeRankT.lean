@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.IsGaugeAll
+public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.Bundle0009
 public import ReciprocityTheory.GeometryOfNumbers.LatticeCovolumes.CountSt
-public import ReciprocityTheory.SemistableReduction.SemiDegC
+public import ReciprocityTheory.SemistableReduction.Bundle0024
 
 @[expose] public section
 

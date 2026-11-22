@@ -1,6 +1,6 @@
 module
 
-public import CompanionTheory.AutomorphicTheory.BesselWaveGrids.NQText
+public import CompanionTheory.AutomorphicTheory.BesselWaveGrids.Bundle0002
 
 @[expose] public section
 

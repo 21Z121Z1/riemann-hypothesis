@@ -1,7 +1,7 @@
 module
 
-public import ReciprocityTheory.AnalyticForms.PotentialTheory.IsPotentialPullbackStatement
-public import ReciprocityTheory.AnalyticForms.PotentialTheory.PotentialContDiffAt
+public import ReciprocityTheory.AnalyticForms.PotentialTheory.Bundle0002
+public import ReciprocityTheory.AnalyticForms.PotentialTheory.Bundle0007
 public import ReciprocityTheory.AnalyticForms.PlurisubharmonicFunctions.PartsSt
 public import ReciprocityTheory.AnalyticForms.PlurisubharmonicFunctions.HessCRestrictThm
 public import ReciprocityTheory.AnalyticForms.PlurisubharmonicFunctions.PartsAlg

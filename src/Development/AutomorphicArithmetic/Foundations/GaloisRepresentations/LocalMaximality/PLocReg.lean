@@ -2,8 +2,8 @@ module
 
 public import Mathlib
 public import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.LocalMaximality.ResidueOfTraceIsFiberSum
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.StandardAffineOpenRingPolynomialEquivStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntegralClosureProjectiveOverStandardOpenRingStatement
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0414
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0482
 
 @[expose] public section
 

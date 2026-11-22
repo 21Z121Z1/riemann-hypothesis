@@ -3,12 +3,11 @@ module
 public import Mathlib
 public import ReciprocityTheory.AdicCompleteness.IsAdicCompleteComapConstantCoeff
 public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.NormLeOneOfMemOL
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ConstantCoeffTeichSub
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0247
 public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.UnramifiedIntegersTensorEqLetterwiseProductAinf
-public import Development.AbelianVarietyTheory.Proofs.FormalGroupCharts.ExistsPolynomialSubMem
+public import Development.AbelianVarietyTheory.Proofs.FormalGroupCharts.Bundle0001
 public import Development.AbelianVarietyTheory.CrystallinePeriods.RingIface
-public import Development.AbelianVarietyTheory.CrystallinePeriods.AdicMaps
-public import Development.AbelianVarietyTheory.CrystallinePeriods.RingBasics
+public import Development.AbelianVarietyTheory.CrystallinePeriods.Bundle0001
 
 @[expose] public section
 

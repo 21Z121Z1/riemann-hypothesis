@@ -1,8 +1,8 @@
 module
 
-public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.ParabolicSubgroupEquality
+public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.Bundle0049
 public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.LineFacts
-public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.FubiniParabolicMultiple
+public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.Bundle0050
 public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.LineFormulaOfFubiniAndParabolic
 
 @[expose] public section

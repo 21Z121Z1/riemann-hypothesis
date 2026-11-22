@@ -1,11 +1,8 @@
 module
 
 public import Mathlib
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsBlockImageArith
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsAnResNullForm
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsBlockImageInverse
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsBlockImageMetrics
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsBlockImageChi
+public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0035
+public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0034
 
 @[expose] public section
 

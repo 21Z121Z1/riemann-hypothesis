@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Divisors.IsDeltaDelAtOwnAt
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0054
 
 @[expose] public section
 

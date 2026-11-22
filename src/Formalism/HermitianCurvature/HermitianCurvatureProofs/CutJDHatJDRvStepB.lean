@@ -1,7 +1,7 @@
 module
 
 public import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutJDHatJDRvStepBRules
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutJDHatJDCapRGrpMRad
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0138
 
 @[expose] public section
 

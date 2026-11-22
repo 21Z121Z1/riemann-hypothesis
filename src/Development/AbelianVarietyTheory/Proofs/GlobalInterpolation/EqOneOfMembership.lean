@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Formalism.SharpRestriction.GlobalSchurBounds.ThickPlacesCorollaryOfAnyTranslate
-public import Development.AbelianVarietyTheory.BlockTheory.GlobalSignature.TrivialColumnStabiliser
+public import Development.AbelianVarietyTheory.BlockTheory.GlobalSignature.Bundle0011
 
 @[expose] public section
 

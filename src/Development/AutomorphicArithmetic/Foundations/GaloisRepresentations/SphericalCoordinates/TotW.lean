@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.SphericalCoordinates.LevelChange
-public import Development.AbelianVarietyTheory.Definitions.Divisors.HxiTZeroComb
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0025
 
 @[expose] public section
 

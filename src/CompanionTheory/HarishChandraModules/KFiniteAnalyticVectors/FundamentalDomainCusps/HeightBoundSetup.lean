@@ -1,7 +1,7 @@
 module
 
 public import CompanionTheory.HarishChandraModules.KFiniteAnalyticVectors.FundamentalDomainCusps.ShortIsot
-public import Formalism.RealPlaceAnalysis.RealPlaceTaylor.KoszulLowersPower
+public import Formalism.RealPlaceAnalysis.RealPlaceTaylor.Bundle0005
 
 @[expose] public section
 

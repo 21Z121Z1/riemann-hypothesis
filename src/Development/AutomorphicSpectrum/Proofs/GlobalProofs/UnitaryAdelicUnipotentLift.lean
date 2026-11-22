@@ -1,10 +1,10 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Proofs.GlobalProofs.FiniteDimensionalOfSlices
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsBlockEmb
+public import Development.AutomorphicSpectrum.Proofs.GlobalProofs.Bundle0050
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1342
 public import Development.AutomorphicSpectrum.Proofs.GlobalProofs.LeviEqISupParts
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BlockEmbNormalises
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1371
 
 @[expose] public section
 

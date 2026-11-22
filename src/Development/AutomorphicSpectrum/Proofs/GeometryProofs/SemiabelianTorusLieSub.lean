@@ -1,23 +1,21 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.EigLat
-public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsCocharLie
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.Bundle0004
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.IsGrpPullback
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.SABBaseChangeSt
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.BCTools
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.SabComp
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.SabPull
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LieModelExistsUniqueSemilinear
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LieModelPullbackEquivalence
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LieModelFunctorialMap
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.Bundle0006
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.Bundle0007
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0034
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0028
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0014
 public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsLieModel
 public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.IsExcisionNbhdAway
 public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.SemiabelianHomLieExtends
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.SemiabelianHomLieExtendsStatement
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.TorusEmbeddingLieInjectiveStatement
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsCocharacterLieModelStatement
-public import Development.AbelianVarietyTheory.Proofs.CoherentCohomologyProofs.ExistsUniqueHomExtensionSemiAbelian
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0139
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0110
+public import Development.AbelianVarietyTheory.Proofs.CoherentCohomologyProofs.Bundle0030
 public import Development.AbelianVarietyTheory.Proofs.HomogeneousIdeals.LocallyOfFinitePresentationDiagMap
 
 @[expose] public section
@@ -164,9 +162,9 @@ theorem exists_local_quot {O T K : Type} [CommRing O] [CommRing T] [IsDomain T] 
   obtain ⟨L', hL'⟩ := gen (𝟙 (Sp T) ≫ y₀) (by simp [y₀])
   obtain ⟨MH, hMH⟩ := (LiePull.lieModel_pullback _ _ G H y₀ _ hH T (𝟙 _) ET).1 L'
   obtain ⟨jT, hjT, -⟩ := LieBaseChange.existsUnique_semilinear_lifts (Sp O) G O T a (𝟙 _) E ET M L
-  obtain ⟨MTT, hMTT⟩ := GlobalTheory.T.exists_cocharacter_lie_model (Sp T) X T (𝟙 _)
+  obtain ⟨MTT, hMTT⟩ := _root_.GlobalTheory.CompanionTheory.Ar.TorusLie.exists_lieModel_splitTorus (Sp T) X T (𝟙 _)
   obtain ⟨A, hAd, -⟩ := lieModel_exists_unique_diff (Sp T) TT H T (𝟙 _) (X →+ T) ET MTT MH F
-  obtain ⟨hinj, hsat⟩ := GlobalTheory.T.torus_embedding_lie_injective T K (Sp T) (𝟙 _) H X F hgen MTT hMTT ET MH A hAd
+  obtain ⟨hinj, hsat⟩ := _root_.GlobalTheory.CompanionTheory.Ar.TorusSat.lie_torus_saturated T K (Sp T) (𝟙 _) H X F hgen MTT hMTT ET MH A hAd
   let δa : X →+ T := a.toAddMonoidHom.comp δ
   let v := MT.pt (((algebraMap T K).comp a).toAddMonoidHom.comp δ)
   have e₁ : v.left ≫ φT = spMap (dualMap (algebraMap T K)) ≫ (MTT.pt δa).left :=
@@ -241,9 +239,9 @@ theorem saturated : ∀ (O K : Type) [CommRing O] [IsDedekindDomain O] [Field K]
   intro O K _ _ _ _ _ G _ GK _ φ hG h X _ _ _ i _ _ MT hMT E _ _ M
   have := hG.comm
   have := hG.separated
-  obtain ⟨MTO, hMTO⟩ := GlobalTheory.T.exists_cocharacter_lie_model (Sp O) X O (𝟙 _)
+  obtain ⟨MTO, hMTO⟩ := _root_.GlobalTheory.CompanionTheory.Ar.TorusLie.exists_lieModel_splitTorus (Sp O) X O (𝟙 _)
   have hT := GlobalTheory.Diag.isGrpPullback X (spMap (algebraMap O K))
-  obtain ⟨io, hio⟩ := GlobalTheory.T.semiabelian_hom_lie_extends O K (splitTorus (Sp O) X) G (splitTorus (Sp K) X) GK _ φ
+  obtain ⟨io, hio⟩ := _root_.GlobalTheory.CompanionTheory.Ar.LieHomOk.hom_maps_lie O K (splitTorus (Sp O) X) G (splitTorus (Sp K) X) GK _ φ
     (GlobalTheory.Diag.isSemiAbelian _ X) hG hT h i (X →+ O) E MTO M
   have hL : ∀ δ, M.Lifts (algebraMap O K) φ (io δ)
       (MT.pt ((algebraMap O K).toAddMonoidHom.comp δ) ≫ i) := fun δ =>

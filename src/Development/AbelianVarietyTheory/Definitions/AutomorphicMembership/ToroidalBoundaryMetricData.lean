@@ -1,10 +1,10 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.FlagComponentFramedPointFrame
+public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.Bundle0036
 public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.IsBlockMetricDiagForm
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.StrictPosOfExists
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsConjFsBasisOfUnitary
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0898
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0887
 
 @[expose] public section
 

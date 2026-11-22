@@ -2,8 +2,8 @@ module
 
 public import Mathlib
 public import ReciprocityTheory.AnalyticForms.LeviForms.UnifInt
-public import ReciprocityTheory.AnalyticForms.PotentialTheory.PshShiftA
-public import GroundTheory.HeightsAndTheta.Heights.AnalyticLimit.PHyperplaneDivisible
+public import ReciprocityTheory.AnalyticForms.PotentialTheory.Bundle0001
+public import GroundTheory.HeightsAndTheta.Heights.AnalyticLimit.Bundle0007
 
 @[expose] public section
 

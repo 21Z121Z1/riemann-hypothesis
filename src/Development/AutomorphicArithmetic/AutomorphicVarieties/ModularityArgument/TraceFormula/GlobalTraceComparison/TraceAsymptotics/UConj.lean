@@ -1,7 +1,7 @@
 module
 
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.TraceFormula.GlobalTraceComparison.TraceAsymptotics.SplitLineAlt
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ContinuousFlipGL
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0719
 
 @[expose] public section
 

@@ -1,7 +1,6 @@
 module
 
-public import Formalism.PeriodIntegrals.HasseJidPow
-public import Formalism.PeriodIntegrals.HassePresH
+public import Formalism.PeriodIntegrals.Bundle0026
 
 @[expose] public section
 

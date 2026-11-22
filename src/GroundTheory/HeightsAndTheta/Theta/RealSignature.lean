@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import GroundTheory.HeightsAndTheta.Theta.Cartan
-public import GroundTheory.AutomorphicForms.HermitianSpaces
+public import GroundTheory.AutomorphicForms.Bundle0006
 
 @[expose] public section
 

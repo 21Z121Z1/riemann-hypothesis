@@ -1,6 +1,6 @@
 module
 
-public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.HighestWeights.FromHCA
+public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.HighestWeights.Bundle0006
 public import Formalism.SharpRestriction.CuspSpanNormBounds.RelevantZeroGramTerms
 
 @[expose] public section

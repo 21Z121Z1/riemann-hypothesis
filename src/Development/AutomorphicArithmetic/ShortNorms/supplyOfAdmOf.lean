@@ -1,12 +1,9 @@
 module
 
 public import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.ThinScalesIffHostBound
-public import Development.AutomorphicArithmetic.CharacterBoxes.Imports
-public import Development.AutomorphicArithmetic.CharacterBoxes.WinPairs
+public import Development.AutomorphicArithmetic.CharacterBoxes.Bundle0003
+public import Development.AutomorphicArithmetic.CharacterBoxes.Bundle0004
 public import Development.AutomorphicArithmetic.CharacterBoxes.FieldChi
-public import Development.AutomorphicArithmetic.CharacterBoxes.IsChiField
-public import Development.AutomorphicArithmetic.CharacterBoxes.BoundedTw
-public import Development.AutomorphicArithmetic.CharacterBoxes.PairHyp
 public import Development.AutomorphicArithmetic.CharacterBoxes.EventuallyRankLeRpowOfLtOneDivFiftytwo
 public import Development.AutomorphicArithmetic.MeanSquareBounds.pairEx
 

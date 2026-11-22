@@ -1,7 +1,7 @@
 module
 
 public import Formalism.SharpRestriction.Divisibility.ChainOperators.WeightFramesOfSubgroupFrames
-public import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.GenFrameSB
+public import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.Bundle0011
 
 @[expose] public section
 

@@ -1,9 +1,9 @@
 module
 
-public import Development.WeilBound.CoreStatements.CompactAveragingSplitting.EigenvectorLifting.SplitAsm
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsIsSplitChartOne
+public import Development.WeilBound.CoreStatements.CompactAveragingSplitting.EigenvectorLifting.Bundle0004
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0303
 public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.RamificationIdxEqOneOfIsSquare
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GSEqZeroOfLt
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1301
 
 @[expose] public section
 

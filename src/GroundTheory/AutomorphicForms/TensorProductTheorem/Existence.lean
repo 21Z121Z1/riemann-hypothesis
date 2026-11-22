@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import GroundTheory.AutomorphicForms.TensorProductTheorem.Places
+public import GroundTheory.AutomorphicForms.TensorProductTheorem.Bundle0004
 
 @[expose] public section
 

@@ -4,39 +4,29 @@ public import Mathlib
 public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.AdmissibleDiscreteSeriesOfHasParam
 public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.HasDRepIffHasDerivAt
 public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.HarishChandraModulesOn
-public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.CenUsedOfCenReal
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ChoiceSideWithE
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FockOfApply
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.AuxiliaryPrimeNeTypePrime
+public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.Bundle0045
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0919
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0923
 public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.StandardLatticesDiagonal
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.EventuallyDefiniteSpacesStandardAndLarge
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.TwistedPlaceIndexMemFirstPairOfCompatibleChoice
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.RationalLatticeTwistedTupleSpanTopStatement
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.LinearIndependentComplexOfSubfieldCoeffLatticeStatement
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CoefficientLatticeEqSmallCoefficientFieldStatement
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ChosenFieldFormsProportionalOfReadings
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ClassSumsTwistedDefiniteFormsRationalStatement
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.DefiniteComplexFormsEqTwistComplexFormsFockModel
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.LevelTwistCharacterMemCoefficientIntegersStatement
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.LiftFormAtEvaluationVectorEqRealisationLiftStatement
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ThetaLiftTwistLevelFormEqUnitMulClassSumStatement
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IntegralFormsCentralTranslateIffStatement
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ConjugationScaledCoordsIntegralFormsTwistStatement
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.TwistConjugateTuplesSameRealisationExtensionStatement
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FixBaseOfFixingField
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0378
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0347
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0934
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0931
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0928
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0927
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0938
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0944
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ThetaLiftTwistLevelFormEqUnitMulClassSum
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0929
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0948
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1820
 public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.PureTensorOSmul
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ConjugateFunctionAtPlace
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsScaleTwistedPlaceCoefficientMapStatement
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ClassSumsConjugateTwistsConjugateExpansionsStatement
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ChosenTwistViaEmbeddingGoodConjugateStatement
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsUnitPrimeProductOfTwistedPlaceTupleStatement
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsExtensionComplexDataEmbeddingRestrictCoeffStatement
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsIntegralUnitOfIsUnitAwayFromLevelEmbeddingStatement
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.RationalRowSeries
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ClassSumsConjugateTwistsConjugateExpansions
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0950
 public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.TwistingOkClassAtPlace
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ThetaSeriesIntegralFormsEqSpanDedekindCoefRingStatement
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ThetaSeriesIntegralFormsEqSpanDedekindCoefRing
 public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.RationalLatticeFockPolysSpanIntegralForms
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.DefiniteFormReadingInjectiveLatticeIntegralFormsStatement
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0936
 
 @[expose] public section
 
@@ -213,7 +203,7 @@ theorem span_translate (H : AtPlace Y Z c w j) {ι : KE c w →+* ℂ} (hι : �
       Submodule.span (ringOf ι) ((fun x h => (κ⁻¹ • fockOf Y (used_of_tw H.tw) j u (D.what₂.jMt (D.what₂.muTw w) (j.1 + 1) x))
         (h * finPt (Vc D j) z)) '' latS w (j.1 + 1)) := by
   have hB := Z.good.base (c.twI w) j (c.sd w)
-  obtain ⟨hg, ha, -⟩ := GlobalTheory.T.chosen_twist_via_embedding_good_conjugate D c w Z.ρ Z.good H.ok j ι
+  obtain ⟨hg, ha, -⟩ := _root_.GlobalTheory.PlaceRead.twVia_good D c w Z.ρ Z.good H.ok j ι
   have hle := intLL_le hι
   obtain ⟨hN0, hNP, o, ho⟩ := GlobalTheory.T.isUnit_primeProduct_of_twistedPlaceTuple D X X0 Y S YS Z c w j H ι hι
   have hNi : ((GlobalTheory.TwistField.tupPrime X.R.toRealDat (Y.tupT (D.what₂.muTw w)) : ℕ) : ℂ)⁻¹ ∈ ringOf ι := by
@@ -226,14 +216,14 @@ theorem span_translate (H : AtPlace Y Z c w j) {ι : KE c w →+* ℂ} (hι : �
     have e1 : (baseOf Z c w j).mtLat (embLL0 D) (labLL0 D) (ringOf ι) (twVia Z.ρ ι) =
         (baseOf Z c w j).mtLat D.what₂.embLL (labLL D) (ringOf ι) (twVia Z.ρ ι) := by
       unfold Base.mtLat
-      rw [funext (GlobalTheory.T.coefficient_lattice_eq_small_coefficient_field D _ _ _ hB _ hle)]
-    have e2 := GlobalTheory.T.thetaSeriesIntegralForms_eq_span_dedekindCoefRing D _ _ _ hB _ hg ha _ D.what₂.embLL (labLL D) (𝓞 D.what₂.LL) (D.what₂.embLL.comp (algebraMap _ _))
+      rw [funext (_root_.GlobalTheory.PlaceSmall.coefLat_eq_small D _ _ _ hB _ hle)]
+    have e2 := _root_.GlobalTheory.FormsBaseChange.mtLat_eq_span D _ _ _ hB _ hg ha _ D.what₂.embLL (labLL D) (𝓞 D.what₂.LL) (D.what₂.embLL.comp (algebraMap _ _))
       (D.what₂.embLL.injective.comp RingOfIntegers.coe_injective) (coefRing_LL le_rfl) (GlobalTheory.T.level_twist_character_mem_coefficientIntegers D X X0 Y S YS Z c w j H ι hι) _ hle
     have e3 := GlobalTheory.T.rational_lattice_fock_polys_span_integral_forms D X X0 Y S YS Z c w j H ι hι u hu κ hκ hs
     rw [e1, e2]
     exact (congrArg (fun M : Submodule (intLL D) (Amb D j) => Submodule.span (ringOf ι) (M : Set (Amb D j))) e3).trans
       (span_span_sub hle _)
-  have hc := GlobalTheory.T.integral_forms_central_translate_iff D j _ hB (twVia Z.ρ ι) _ (embLL0 D) (labLL0 D) _ (coefficient_ring_of_integral_le hle) _ z hz _ hN0 hNP hNi
+  have hc := _root_.GlobalTheory.CentralTranslate.mem_mtLat_iff_translate D j _ hB (twVia Z.ρ ι) _ (embLL0 D) (labLL0 D) _ (coefficient_ring_of_integral_le hle) _ z hz _ hN0 hNP hNi
   let Tz : Amb D j →ₗ[ℂ] Amb D j := LinearMap.funLeft ℂ _ fun h => h * finPt (Vc D j) z
   have h2 := image_span (ringOf ι).subtype (ringOf ι) (Subring.range_subtype _).symm Tz.toAddMonoidHom
     (fun r v => Tz.map_smul (r : ℂ) v)

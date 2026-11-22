@@ -1,7 +1,7 @@
 module
 
 public import Formalism.ThetaLogCoordinates.TraceIsometryWeights.StatementC
-public import Formalism.MahlerMeasure.StatementTM
+public import Formalism.MahlerMeasure.Bundle0007
 
 @[expose] public section
 

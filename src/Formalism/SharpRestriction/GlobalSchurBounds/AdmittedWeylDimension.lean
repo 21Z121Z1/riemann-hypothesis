@@ -1,7 +1,7 @@
 module
 
 public import Formalism.SharpRestriction.GlobalSchurBounds.TheoremThreeOfExplicitAndCompact
-public import Formalism.SharpRestriction.CuspSpanNormBounds.PlaceDegreeData
+public import Formalism.SharpRestriction.CuspSpanNormBounds.Bundle0006
 public import Formalism.SharpRestriction.ParamsHeightRankConstant
 
 @[expose] public section

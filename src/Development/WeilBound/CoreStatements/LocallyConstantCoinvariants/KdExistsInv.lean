@@ -1,7 +1,7 @@
 module
 
-public import Development.WeilBound.CoreStatements.LocallyConstantCoinvariants.KdMulRight
-public import Development.AutomorphicSpectrum.Proofs.MembershipProofs.ExistsEqMulApplyZero
+public import Development.WeilBound.CoreStatements.LocallyConstantCoinvariants.Bundle0002
+public import Development.AutomorphicSpectrum.Proofs.MembershipProofs.Bundle0004
 
 @[expose] public section
 

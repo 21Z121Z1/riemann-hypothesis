@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LatticeIndices.StRedCore
+public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LatticeIndices.Bundle0002
 
 @[expose] public section
 

@@ -4,7 +4,7 @@ public import Mathlib
 public import GroundTheory.GlobalFields.NormResidueSymbol.CyclotomicCompositum
 public import GroundTheory.GlobalFields.IdeleGroups.NormOneCompact
 public import GroundTheory.GlobalFields.CyclotomicCharacters.Degree
-public import GroundTheory.GlobalFields.NormResidueSymbol.RationalContinuous
+public import GroundTheory.GlobalFields.NormResidueSymbol.Bundle0002
 
 @[expose] public section
 

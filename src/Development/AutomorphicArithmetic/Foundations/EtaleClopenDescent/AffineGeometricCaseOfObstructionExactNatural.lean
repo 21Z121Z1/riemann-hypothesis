@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Development.EtaleCohomology.EtaleSheaves.GeoProof
-public import Development.EtaleCohomology.KummerTheory.FinSHen
-public import Development.EtaleCohomology.KummerTheory.FinCont
+public import Development.EtaleCohomology.EtaleSheaves.Bundle0076
+public import Development.EtaleCohomology.KummerTheory.Bundle0013
+public import Development.EtaleCohomology.KummerTheory.Bundle0016
 
 @[expose] public section
 

@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.SetIntegralFderivEqZeroOfLatticePeriodic
-public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.CauchyRiemannIffDifferentiableOnComplex
-public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.PeriodicCechCocycleSmoothCoboundaryStatement
+public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0004
+public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0005
+public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0006
 
 @[expose] public section
 
@@ -168,7 +168,7 @@ theorem symm_of_cocycle (g : ℕ) (Λ : Submodule ℤ (Fin g → ℂ)) (hd : Dis
     rw [hG, hG, hG, ← hkc i j n z hz]
     simp only [mul_sub, Finset.sum_sub_distrib]
     ring
-  obtain ⟨b, hb, hbG⟩ := GlobalTheory.T.exists_periodic_smooth_coboundary_of_cech_cocycle g Λ hd hsp ι U G hU hinv hcov hGs hGper hGc
+  obtain ⟨b, hb, hbG⟩ := _root_.GlobalTheory.periodic_cech_cocycle_smooth_coboundary g Λ hd hsp ι U G hU hinv hcov hGs hGper hGc
   have hbA : ∀ i, ∀ x ∈ U i, ContDiffAt ℝ 2 (b i) x := fun i x hx =>
     contDiffAt_two_of_contDiffOn_infty_of_isOpen (hb i).1 (hU i) hx
   have hbD : ∀ i, ∀ x ∈ U i, DifferentiableAt ℝ (b i) x := fun i x hx =>

@@ -5,10 +5,9 @@ public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.Cry
 public import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.RadicalStalks.EpsMulSub
 public import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.RadicalStalks.ArtTangent
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HarrisTaylorRhoPartLieDeRhamQuotient
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsIdemKernel
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FiniteGroupSchemeStalkLengthConstantStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FinrankFiberEqCardSectionsMulLengthStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GermSystemHeightFree
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle3131
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1422
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2084
 
 @[expose] public section
 

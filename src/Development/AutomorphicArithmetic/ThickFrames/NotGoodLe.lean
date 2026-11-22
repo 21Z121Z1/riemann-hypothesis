@@ -1,8 +1,8 @@
 module
 
 public import Development.AutomorphicArithmetic.ThickFrames.MarkedLow
-public import Development.AutomorphicArithmetic.ThickFrames.expectationSpec
-public import Development.AutomorphicArithmetic.ThickFrames.TailLe
+public import Development.AutomorphicArithmetic.ThickFrames.Bundle0001
+public import Development.AutomorphicArithmetic.ThickFrames.Bundle0002
 public import Development.AutomorphicArithmetic.ThickFrames.TilesLe
 
 @[expose] public section

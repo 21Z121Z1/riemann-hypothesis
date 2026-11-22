@@ -1,10 +1,12 @@
 module
 
-public import Development.WeilBound.CoreStatements.AutomorphicKernels.SiegelWeilFormula.LagrangianDecomposition.PartCharInv
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DarbouxCoordinateChangeRealisedWithDoubleStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CharacterInvariantAdelicFormEqMulEvalZeroStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsAdelicSchwartzNeZeroAtOriginStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SkewAdaptedPlanePairConverse
+public import Development.WeilBound.CoreStatements.AutomorphicKernels.SiegelWeilFormula.LagrangianDecomposition.Bundle0002
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1723
+public import Mathlib
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1797
+public import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.WeilTensorModels
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0908
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1838
 
 @[expose] public section
 
@@ -104,7 +106,7 @@ theorem bigT : BigT := by
       exact (Matrix.mul_assoc _ _ _).symm
     rw [e2]
     exact d.ok.dbl.kill _ _ (hop.pres' φ hφ)
-  obtain ⟨c, hc⟩ := GlobalTheory.T.character_invariant_adelic_form_eq_mul_eval_zero F d.B.ψ hψ (Fin d.m × Fin d.n × Fin 2) l' hadm hinv
+  obtain ⟨c, hc⟩ := _root_.GlobalTheory.CharInvForm.main F d.B.ψ hψ (Fin d.m × Fin d.n × Fin 2) l' hadm hinv
 
   have hform : ∀ Φ ∈ d.sch, ∀ X, d.T Φ X = c * S0 Φ (crdB d.bs X) := by
     intro Φ hΦ X
@@ -120,7 +122,7 @@ theorem bigT : BigT := by
     simp [Darboux.rho, h0, schr]
   refine ⟨S0, S0', c, ?_, hS, hform⟩
   rintro rfl
-  obtain ⟨φ, hφ, hφ0⟩ := GlobalTheory.T.exists_adelicSchwartz_ne_zero_at_origin F d.κ
+  obtain ⟨φ, hφ, hφ0⟩ := _root_.GlobalTheory.SchANonzero.exists_mem_schA_ne_zero F d.κ
   have hz : d.T φ = 0 := by
     funext X
     rw [hform φ hφ X, zero_mul]

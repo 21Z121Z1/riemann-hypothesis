@@ -1,10 +1,10 @@
 module
 
 public import Development.WeilBound.ThetaLifts.LeviDeterminants.MixedModels.PureSt
-public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.IdeleCongruenceUnitCriterion
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsStdCharNegOneOfStandardTraceAdelicAddChar
+public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.Bundle0031
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1558
 public import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.ExistsNhdsInvariant
-public import Development.AutomorphicSpectrum.Proofs.MembershipProofs.ThetaDistributionNonzeroAdmissible
+public import Development.AutomorphicSpectrum.Proofs.MembershipProofs.Bundle0007
 
 @[expose] public section
 

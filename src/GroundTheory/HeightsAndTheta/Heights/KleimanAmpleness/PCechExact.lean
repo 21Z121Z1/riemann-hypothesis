@@ -1,9 +1,8 @@
 module
 
 public import Mathlib
-public import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.Statements
-public import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.StatementsCechDSq
-public import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.StatementsDegLocExact
+public import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.Bundle0002
+public import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.Bundle0005
 
 @[expose] public section
 

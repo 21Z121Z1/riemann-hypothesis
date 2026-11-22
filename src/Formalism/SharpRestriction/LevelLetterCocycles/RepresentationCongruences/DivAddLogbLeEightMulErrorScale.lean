@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Formalism.SharpRestriction.LevelLetterCocycles.RepresentationCongruences.TsumThree
-public import Formalism.SharpRestriction.LevelLetterCocycles.RepresentationCongruences.LogbNn
+public import Formalism.SharpRestriction.LevelLetterCocycles.RepresentationCongruences.Bundle0003
 
 @[expose] public section
 

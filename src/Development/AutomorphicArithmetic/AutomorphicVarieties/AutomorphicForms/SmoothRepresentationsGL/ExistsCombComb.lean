@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.FoundBridge
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.Bundle0008
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.RTwist
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.PublishedTheorems.GelfandKazhdanReal
 public import GroundTheory.AutomorphicForms.FourierWhittaker

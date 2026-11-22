@@ -1,7 +1,7 @@
 module
 
-public import Formalism.LocalToGlobal.Columns.ChainTopTilQ
-public import Formalism.LocalToGlobal.Columns.ChainLawXi
+public import Formalism.LocalToGlobal.Columns.Bundle0048
+public import Formalism.LocalToGlobal.Columns.Bundle0036
 public import Formalism.LocalToGlobal.KernelLattices.KernelLocalFactors.TopLawQ
 public import Formalism.LocalToGlobal.Columns.BaseLemmas
 

@@ -1,12 +1,12 @@
 module
 
-public import Development.WeilBound.RepresentationTheoryGL.RegularisedSiegelWeil.SingularNullSets.LFixThB
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IdeleCharacterNormEulerFactorization
+public import Development.WeilBound.RepresentationTheoryGL.RegularisedSiegelWeil.SingularNullSets.Bundle0025
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1751
 public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CharacterConductorCondition
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdelicAddCharEqArchimedeanMulFinprodLocal
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1569
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.InertPlaceLocalFieldDataExists
 public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsDualFamilyOfIsLattice
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.EventuallyAlgebraMapMemIntegers
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0292
 
 @[expose] public section
 

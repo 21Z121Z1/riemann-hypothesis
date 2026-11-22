@@ -2,10 +2,9 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.Jets.BasicLiftAll
-public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.JdPolyOKPolynomialOperators
-public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.PolyOpExistsComposition
+public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0072
 public import Formalism.HermitianCurvature.HermitianCurvatureProofs.LiftClosedUnderOperations
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.LiftCapelliOperators
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0164
 
 @[expose] public section
 

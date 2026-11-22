@@ -3,10 +3,10 @@ module
 public import Mathlib
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.SquareIntegrability.GCauchyStatement
 public import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.ExistsTranslateJetNeZero
-public import Development.AbelianVarietyTheory.Proofs.TorusSplitting.CoeffEqZeroOfOrthonormal
+public import Development.AbelianVarietyTheory.Proofs.TorusSplitting.Bundle0004
 public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsImEqLattice
 public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.DifferentiableFderivApply
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ImFormApply
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0019
 
 @[expose] public section
 

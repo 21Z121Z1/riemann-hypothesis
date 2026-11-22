@@ -1,7 +1,7 @@
 module
 
 public import Development.WeilBound.ThetaLifts.SmallCones.ThetaUniq
-public import Development.WeilBound.ThetaLifts.SmallCones.ConeLawAB
+public import Development.WeilBound.ThetaLifts.SmallCones.Bundle0007
 
 @[expose] public section
 

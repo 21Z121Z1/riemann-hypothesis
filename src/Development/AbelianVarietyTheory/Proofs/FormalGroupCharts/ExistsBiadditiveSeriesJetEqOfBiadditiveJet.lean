@@ -2,12 +2,12 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.TwoChartAtlas.AdditionLawSecondIdentity
-public import Development.AbelianVarietyTheory.Proofs.FormalGroupCharts.ExistsFormalBiextMap
-public import Development.AbelianVarietyTheory.Proofs.FormalGroupCharts.FormalCompApplyEqMvPowerSeriesSubst
+public import Development.AbelianVarietyTheory.Proofs.FormalGroupCharts.Bundle0006
+public import Development.AbelianVarietyTheory.Proofs.FormalGroupCharts.Bundle0007
 public import Development.AbelianVarietyTheory.Proofs.FormalGroupCharts.PderivSecondEvFirstPointEqZero
-public import Development.AbelianVarietyTheory.Proofs.FormalGroupCharts.JetEqBilinearSeriesOfBiadditiveStatement
-public import Development.AbelianVarietyTheory.Proofs.FormalGroupCharts.MvPowerSeriesJetEqCalculus
-public import Development.AbelianVarietyTheory.Proofs.FormalGroupCharts.FormalGroupLogEndomorphismLinear
+public import Development.AbelianVarietyTheory.Proofs.FormalGroupCharts.Bundle0029
+public import Development.AbelianVarietyTheory.Proofs.FormalGroupCharts.Bundle0026
+public import Development.AbelianVarietyTheory.Proofs.FormalGroupCharts.Bundle0024
 
 @[expose] public section
 

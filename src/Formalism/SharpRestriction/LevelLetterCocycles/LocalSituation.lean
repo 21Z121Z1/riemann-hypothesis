@@ -3,7 +3,7 @@ module
 public import Formalism.LocalRingCardinality.RhoDetPrimeEqMuTildeMulChiPow
 public import Formalism.SharpRestriction.LevelLetterCocycles.DataNLoc
 public import Formalism.SharpRestriction.LevelLetterCocycles.LocCoh
-public import Formalism.WeaklyAdmissibleFiltrations.StatementTor
+public import Formalism.WeaklyAdmissibleFiltrations.Bundle0001
 public import Formalism.GaloisCohomology.LocalTateDualityK
 
 @[expose] public section

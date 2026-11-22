@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.Objects
-public import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.Statements
+public import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.Bundle0002
 
 @[expose] public section
 

@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CrysActApply
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.QActMSubAlgebraMap
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1945
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0098
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsSimpleRingOfIsSemisimpleRing
 public import GroundTheory.Brauer.BaseChangeCSA
 

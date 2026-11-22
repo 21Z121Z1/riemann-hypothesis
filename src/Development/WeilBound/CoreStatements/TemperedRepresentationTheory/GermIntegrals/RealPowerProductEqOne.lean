@@ -1,7 +1,7 @@
 module
 
 public import Development.WeilBound.CoreStatements.TemperedRepresentationTheory.GermIntegrals.StepSt
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ThetaPairDetTwist
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0026
 
 @[expose] public section
 

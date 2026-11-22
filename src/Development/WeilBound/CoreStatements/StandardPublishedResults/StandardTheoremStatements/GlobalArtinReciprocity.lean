@@ -2,8 +2,8 @@ module
 
 public import CompanionTheory.AutomorphicTheory.PlaceSeparation.IsOpenQuotientMapArt0
 public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.MemConnectedComponentOfOneOfPos
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsOpenKerOfInfConn
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.PrincipalIdealSt
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0104
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0157
 
 @[expose] public section
 

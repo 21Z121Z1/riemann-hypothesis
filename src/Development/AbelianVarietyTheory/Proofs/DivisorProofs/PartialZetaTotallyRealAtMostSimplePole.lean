@@ -3,8 +3,8 @@ module
 public import Mathlib
 public import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.OmegaFactorization
 public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.PartialZetaFunctionalEquation
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.KFacDifferentiable
-public import ReciprocityTheory.Chebotarev.EulerSum
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0157
+public import ReciprocityTheory.Chebotarev.Bundle0001
 
 @[expose] public section
 

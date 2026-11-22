@@ -1,9 +1,9 @@
 module
 
 public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.AevalDiagMonomial
-public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.CIndFrFix
-public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.ThetaSwapFirstTwo
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.TaylorDiscriminants.WickVanishing.GaugeBilinearTermEqNegDoubleSum
+public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0008
+public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0016
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.TaylorDiscriminants.WickVanishing.Bundle0002
 
 @[expose] public section
 

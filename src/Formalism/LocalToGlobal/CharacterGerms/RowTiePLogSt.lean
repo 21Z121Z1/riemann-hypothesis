@@ -1,6 +1,6 @@
 module
 
-public import Formalism.LocalToGlobal.CharacterGerms.RowTiePLogExSt
+public import Formalism.LocalToGlobal.CharacterGerms.Bundle0016
 public import Formalism.LocalToGlobal.CharacterGerms.RowTiePGerm
 public import Mathlib
 

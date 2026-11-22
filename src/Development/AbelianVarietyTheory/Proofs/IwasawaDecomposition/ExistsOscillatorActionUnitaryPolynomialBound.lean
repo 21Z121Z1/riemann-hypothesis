@@ -1,13 +1,13 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsQuadOfPlane
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0024
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsOscillatorActionUnitaryGroupHermitian
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsOscillatorActionOfGaussianPairings
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HeisenbergSmoothOfWeakDerivativeClosedSet
-public import Development.AbelianVarietyTheory.Proofs.HeightProofs.PolarConjTranspose
-public import Development.AbelianVarietyTheory.Proofs.HeightProofs.CommuteGelfandInvariantMatrixUnitsOfGlRel
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.HasDerivAtOscillatorIntegralSymplecticPathStatement
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0151
+public import Development.AbelianVarietyTheory.Proofs.HeightProofs.Bundle0008
+public import Development.AbelianVarietyTheory.Proofs.HeightProofs.Bundle0007
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0049
 
 @[expose] public section
 
@@ -189,7 +189,7 @@ theorem detPlus_cocycle {s : Matrix ι ι ℂ} (hs1 : sᴴ = s) (hs2 : s * s = 1
     (∀ g, star (dP s (m g)) * dP s (m g) * lam (kM m g) = 1) ∧
     ∀ g g', dP s (m g) * dP s (m g') * mu (cplx s hs1 hs2) (kM m (g * g')) (kM m g) =
       dP s (m (g * g')) * lam (kM m (g * g')) := by
-  obtain ⟨hl, hmu⟩ := GlobalTheory.T.gaussianPairing_unitaryGroup_two_three (EuclideanSpace ℂ ι) ι (crd ι) norm_sq_crd s hs1 hs2 (cplx s hs1 hs2)
+  obtain ⟨hl, hmu⟩ := _root_.GlobalTheory.RealWeil.GaussPairing.lam_mu_eq (EuclideanSpace ℂ ι) ι (crd ι) norm_sq_crd s hs1 hs2 (cplx s hs1 hs2)
     (crd_cplx s hs1 hs2)
   have hk := crd_kM m
   refine ⟨fun g => ?_, fun g g' => ?_⟩

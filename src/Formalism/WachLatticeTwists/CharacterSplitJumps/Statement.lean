@@ -1,7 +1,7 @@
 module
 
 public import Formalism.WachLatticeTwists.HodgeTateChains.H2KilledByTateDuality
-public import Formalism.WachLatticeTwists.CoprimeLiftBounds.StatBridgeChiOne
+public import Formalism.WachLatticeTwists.CoprimeLiftBounds.Bundle0001
 public import Formalism.WachLatticeTwists.LatticeDualFibres.Statement
 
 @[expose] public section

@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.PiTensorSubmoduleEqTopOfAbsolutelyIrreducibleSta
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0136
 
 @[expose] public section
 

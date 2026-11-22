@@ -2,15 +2,21 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.ExistsIsScalar
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.VacuumVectorDropAuxiliaryPlaces
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0784
 public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IdempotentMulAddOneSubInverse
 public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.CardInversePrimeRepsIntegralRightMulHecke
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ThetaVacuumHeckeIdentitySplitPlace
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SumHeckeIndicatorIntegralEqPrimitiveStatement
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SplitPlaceChartFiniteAdeleTensorLevelsStatement
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SumUniversalDeterminantDatumCoeffEqPrimitiveStatement
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ArtinMapSplitPlaceUniformiserEqFrobeniusInvStatement
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ModulusUnramifiedCharDetHeckeDoubleCosetSplitStatement
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0137
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0641
+public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.UnivOfNotLinearIndependent
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0106
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0773
+public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.AdmissibleEmptyOfGood
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.FockVectorsKilledHeisenbergAverageIsotropic
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsIdempotentMulNatPowOfMul
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0590
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0113
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0820
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0791
 
 @[expose] public section
 
@@ -157,7 +163,7 @@ theorem lat_iff {F : Frame S T} (hF : F.Good) {P : Pl D.host.E} (hPs : PlacesOK 
     rw [frMapO_smul]
     exact forall₂_congr fun i j => hφ2 _
   rw [← hint]
-  exact ⟨fun h => (GlobalTheory.T.frameMatrices_integral_of_mem_completedLattice hF hPs hh h).1, fun h => GlobalTheory.T.mem_completedLattice_of_frameMatrix_integral hF hPs hh h⟩
+  exact ⟨fun h => (_root_.GlobalTheory.LatHalfInt.frMap_int_of_mem_lat hF hPs hh h).1, fun h => _root_.GlobalTheory.IntHalfLat.mem_lat_of_frMapO_int hF hPs hh h⟩
 
 theorem halfInd_smul {m n : ℕ} {e : AE D} (he : e * e = e) (Λ : AddSubgroup (Mx D m n)) (y : Mx D m n) :
     halfInd e Λ (e • y) = if e • y ∈ Λ then 1 else 0 := by
@@ -252,7 +258,7 @@ theorem datum_rel (B : Base S T) (hB : B.Good) {Q : Finset (Pl D.host.E)} (hQ : 
   rw [Finset.sum_congr rfl fun k hk => by rw [hsum k hk]]
   by_cases hY0 : IntM (Ov D v) Y
   · obtain ⟨z, hz⟩ := intM_iff.1 hY0
-    have hm := GlobalTheory.T.sum_hecke_indicator_integral_eq_primitive (Ov D v) (Fv D.host.F v) p hp T.rank S.rank (GA D T) (fun k => rho T π β' (α k)) R (rho T π β')
+    have hm := _root_.GlobalTheory.HeckeMobius.sum_hecke_indicator_eq_prim (Ov D v) (Fv D.host.F v) p hp T.rank S.rank (GA D T) (fun k => rho T π β' (α k)) R (rho T π β')
       hHk z
     rw [hz] at hm
     rw [if_pos hY0, mul_one]
@@ -356,9 +362,9 @@ theorem vec_rel (B : Base S T) (hB : B.Good) (hbT : Lev.IsBaseFrame T B.F.βT B.
           ∑ γ ∈ R k, ω (1, γ) (B.vecAt Q fun PP y => if PP.1 = P then 1 else φ PP.1 y) := by
   obtain ⟨S', -, hq', hS'⟩ := hQ.1.split
   have he : IsIdemAt (idemAt P) P := hS'.isIdemAt (hq' (Finset.mem_union_right _ hP))
-  obtain ⟨v, π, hπ⟩ := GlobalTheory.T.exists_place_chart_of_splitIdempotent (idemAt P) he.1
-  obtain ⟨⟨p, hpϖ, hp⟩, hq⟩ := GlobalTheory.T.splitChart_uniformiser_and_residueCard (idemAt P) P v π he hπ ϖ hϖ1 hϖ2
-  obtain ⟨φv, hφ1, hφ2, hφ3, hfr⟩ := GlobalTheory.T.splitPlaceChart_finiteAdeleTensor_levels D (idemAt P) P v π he hπ
+  obtain ⟨v, π, hπ⟩ := _root_.GlobalTheory.SplitChart.exists_chart (idemAt P) he.1
+  obtain ⟨⟨p, hpϖ, hp⟩, hq⟩ := _root_.GlobalTheory.SplitUnif.unif_chart (idemAt P) P v π he hπ ϖ hϖ1 hϖ2
+  obtain ⟨φv, hφ1, hφ2, hφ3, hfr⟩ := _root_.GlobalTheory.ChartLevels.chart_levels D (idemAt P) P v π he hπ
   have hq0 : Ideal.absNorm P.asIdeal ≠ 0 := fun h => P.ne_bot (Ideal.absNorm_eq_zero_iff.1 h)
   have : Finite (IsLocalRing.ResidueField (Ov D v)) := Nat.finite_of_card_ne_zero (hq ▸ hq0)
   have hdr := datum_rel B hB hQ hP φ he.1 hπ φv hφ1 hφ2 hφ3 (hfr T B.F.βT B.F.ΛT hbT) hp hpϖ α R hα
@@ -391,7 +397,7 @@ theorem vec_rel (B : Base S T) (hB : B.Good) (hbT : Lev.IsBaseFrame T B.F.βT B.
     rw [hL]
     congr 1
     obtain ⟨-, k₁, hk₁, k₂, hk₂, hγe⟩ := ((hα k hk).2.2.1 γ hγ)
-    have hH := GlobalTheory.T.modulus_unramifiedChar_det_heckeDoubleCoset_split D T P (idemAt P) he ϖ hϖ1 hϖ2 x hx k (α k) (hα k hk).1 k₁ hk₁ k₂ hk₂
+    have hH := _root_.GlobalTheory.SplitDetValue.det_modulus_chi D T P (idemAt P) he ϖ hϖ1 hϖ2 x hx k (α k) (hα k hk).1 k₁ hk₁ k₂ hk₂
       (GlobalTheory.VecInv.detAt (idemAt P) he.1.1 T γ) (by rw [← hγe]; exact GlobalTheory.VecInv.isDetAt_detAt _ he.1.1 T γ)
     obtain ⟨hH1, hH2⟩ := hH
     have hmu := hH2 Circle (B.mu * 1) (fun y h1 h2 h3 => by

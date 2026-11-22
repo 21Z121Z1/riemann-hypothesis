@@ -1,6 +1,6 @@
 module
 
-public import Formalism.MahlerMeasure.TieVars
+public import Formalism.MahlerMeasure.Bundle0003
 public import Formalism.MahlerMeasure.MahlerMeasureProofs.LevelAct
 
 @[expose] public section

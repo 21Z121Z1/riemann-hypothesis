@@ -1,6 +1,6 @@
 module
 
-public import Formalism.SharpRestriction.GrowthBounds.DiagonalSupport.RestValBdG
+public import Formalism.SharpRestriction.GrowthBounds.DiagonalSupport.Bundle0007
 
 @[expose] public section
 

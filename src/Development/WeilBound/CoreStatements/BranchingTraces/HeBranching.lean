@@ -1,8 +1,8 @@
 module
 
 public import Formalism.SharpRestriction.CuspSpanNormBounds.RelevantZeroGramTerms
-public import Formalism.PeriodIntegrals.DSInfCharCap
-public import Formalism.LocalToGlobal.BesselHermitianTheta.TiedType
+public import Formalism.PeriodIntegrals.Bundle0016
+public import Formalism.LocalToGlobal.BesselHermitianTheta.Bundle0003
 
 @[expose] public section
 

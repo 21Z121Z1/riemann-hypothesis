@@ -3,14 +3,14 @@ module
 public import Mathlib
 public import Formalism.LocalToGlobal.SiegelLatticeTheory.CokernelGLCounts.NGData
 public import Formalism.LocalToGlobal.SiegelLatticeTheory.ClosedLocalOrbits.TermLoc
-public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.LocClosed
+public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.Bundle0014
 public import Formalism.LocalToGlobal.SiegelLatticeTheory.ClosedLocalOrbits.GaugeLatticeShifts.NilradicalLatticeZMemSpan
 public import Formalism.LocalToGlobal.SiegelLatticeTheory.HaarTransversals.UnitaryHaarProducts.ConcreteLevelAdelicSubset
 public import Formalism.LocalToGlobal.SiegelLatticeTheory.ClosedLocalOrbits.GaugeLatticeShifts.SaturatedPf
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.IntegralRowFrameMapIsometry
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.FrameAdmissibleOfCongrUnitriangularStatement
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.FlagCoefIntegralOfLocalIntegralStatement
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.InvUnitriangularMoveFrameMemFlagSubspaceStatement
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0268
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0123
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0117
+public import Formalism.SharpRestriction.CuspSpanNormBounds.IsPrimitiveSub
 
 @[expose] public section
 
@@ -230,7 +230,7 @@ theorem isAdmissible_flagPair_of_unitriangular_right_automorphism (Λ Λ' : Subm
     IsAdmissible Λ g F (Formalism.L2.SG.Saturated.mapL (γ * a'⁻¹) (Subgroup.mul_mem _ hγ (Subgroup.inv_mem _ ha'I)) F') := by
   obtain ⟨ξ, hξ0, hξ1, hξc⟩ := hA
   obtain ⟨K, hK0, hK1, hKi, hKe⟩ := adapt_mat Λ' g F' hconv' hl' a'⁻¹ (Formalism.L2.SG.Pf.gmap_inv ha'Λ)
-    (GlobalTheory.T.inv_unitriangular_move_frame_mem_flagSubspace F' a' ha'f)
+    (_root_.GlobalTheory.FlagInv.inv_moves F' a' ha'f)
   refine GlobalTheory.T.frame_admissible_of_congr_unitriangular Λ g hg F _ (ξ.map (fun x : 𝓞 E => (x : E)) * K)
     (mul_lower _ _ (map_lower ξ hξ0) hK0) (mul_diag _ _ (map_lower ξ hξ0) hK0 (map_diag ξ hξ1) hK1)
     (fun P hP => mul_IA P _ _ (fun a b => by simpa using IA_coe P (ξ a b)) (hKi P hP))

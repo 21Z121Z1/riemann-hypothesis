@@ -1,6 +1,6 @@
 module
 
-public import CompanionTheory.HarishChandraModules.KFiniteAnalyticVectors.FundamentalDomainCusps.NilpAlg
+public import CompanionTheory.HarishChandraModules.KFiniteAnalyticVectors.FundamentalDomainCusps.Bundle0001
 
 @[expose] public section
 

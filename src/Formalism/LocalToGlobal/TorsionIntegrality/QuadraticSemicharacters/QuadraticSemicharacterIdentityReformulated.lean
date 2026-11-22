@@ -1,7 +1,7 @@
 module
 
 public import Formalism.LocalToGlobal.TorsionIntegrality.QuadraticSemicharacters.FinalKappa
-public import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.UnimodLocStd
+public import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.Bundle0018
 
 @[expose] public section
 

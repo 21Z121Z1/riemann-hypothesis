@@ -2,14 +2,14 @@ module
 
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.PadicHodgeTheory.LocalPublishedTheorems
 public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.DeRhamPotSemistable
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.PadicHodgeTheory.OpenField
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.PadicHodgeTheory.ExistsMonicUnitCoeffZeroAnnihilatingOfSpectrumNo
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.PadicHodgeTheory.InertiaFixesOfFrobeniusAnnihilatedMemFilZero
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.PadicHodgeTheory.NormLeOneOfMemSpectrumFrobeniusMatrixFilZero
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.DeRhamDieudonneSpansTensorDeRhamPeriods
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.PadicHodgeTheory.Bundle0008
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.PadicHodgeTheory.Bundle0007
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.PadicHodgeTheory.Bundle0022
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.PadicHodgeTheory.Bundle0029
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0229
 public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.DeRhamComparisonIsFiltered
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.KummerNotFrac
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.FinrankDpstUnramifiedLeDimRepresentation
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0104
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0061
 public import Development.AbelianVarietyTheory.CrystallinePeriods.RingIface
 
 @[expose] public section
@@ -480,9 +480,9 @@ private theorem exists_log (l : ℕ) [Fact l.Prime] (P : LocPrime l) (AI : LocAi
     have := hr 0
     rw [lRoot_zero, map_natCast] at this
     exact this.trans (SubringClass.coe_natCast _ _).symm)
-  obtain ⟨u, hu⟩ := GlobalTheory.T.exists_logOnePlus_kerTheta_deRhamPlus l (beta ϖ) (by
-    rw [GlobalTheory.T.kerP_eq_span_beta_of_untilt_eq l ϖ hϖ]; exact Ideal.mem_span_singleton_self _)
-  have hg := GlobalTheory.T.galois_logTeichmullerRatio_eq_add_kummer l P Co hC.ζ ϖ hr hϖ u hu
+  obtain ⟨u, hu⟩ := _root_.GlobalTheory.Pst.LogExist.exists_isLogP l (beta ϖ) (by
+    rw [_root_.GlobalTheory.Pst.StLat.ker_localizedTheta_eq_span_beta l ϖ hϖ]; exact Ideal.mem_span_singleton_self _)
+  have hg := _root_.GlobalTheory.Pst.StLat.gal_log l P Co hC.ζ ϖ hr hϖ u hu
   have hct : ∀ g : GQ l, T.eD (P.ιB ((kummer P g : ℚ_[l]) • P.tB)) =
       algebraMap (Per.BdRp l) (Per.BdR l)
         (Co.j (algebraMap (Per.Ainf l) (Per.Acris l) (Per.zA l (kummer P g)) * Co.t)) := by

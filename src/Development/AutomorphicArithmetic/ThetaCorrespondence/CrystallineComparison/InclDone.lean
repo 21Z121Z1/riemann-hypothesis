@@ -1,6 +1,6 @@
 module
 
-public import Development.AutomorphicArithmetic.ThetaCorrespondence.CrystallineComparison.InclAsm
+public import Development.AutomorphicArithmetic.ThetaCorrespondence.CrystallineComparison.Bundle0002
 public import Development.AutomorphicArithmetic.ThetaCorrespondence.CrystallineComparison.LeafMain
 
 @[expose] public section

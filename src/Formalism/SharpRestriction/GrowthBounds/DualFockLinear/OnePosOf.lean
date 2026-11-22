@@ -1,6 +1,6 @@
 module
 
-public import Formalism.SharpRestriction.GrowthBounds.DualFockLinear.LetterRowOperator
+public import Formalism.SharpRestriction.GrowthBounds.DualFockLinear.Bundle0001
 
 @[expose] public section
 

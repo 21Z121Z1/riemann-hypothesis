@@ -1,14 +1,14 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.GermSys
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.Bundle0013
 public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsFlatAnIffIsConstMul
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.UniformisationConclusion
-public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.FormalIsomorphismTransportStatement
-public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.FormalDataBaseChangeStatement
-public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.FormalHermitianActionPairingStatement
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.GenMapFromSpecStalk
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.GenMapGermEqGenMapGerm
+public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.Bundle0042
+public import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.Bundle0004
+public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.Bundle0047
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0025
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0012
 
 @[expose] public section
 
@@ -127,7 +127,7 @@ theorem card_eq [Nontrivial R] {J : Type} [Fintype J] (w : J → (Fin d → R) �
 
 theorem rhoH_mp {O : Type} [CommRing O] [StarRing O] (f : R →+* Ω) {B : Germ.FB R d O} {B₂ : Germ.FB Ω d O}
     (h : IsMapOf f B B₂) (a : O) (y : (Fin d → R) × (Fin d → R)) : rhoH B₂ a (mp f y) = mp f (rhoH B a y) := by
-  have h1 := (GlobalTheory.T.formal_data_base_change R Ω f d O B B₂ h).1
+  have h1 := (_root_.GlobalTheory.CompanionTheory.Ar.Conj.map_mats_baseChange R Ω f d O B B₂ h).1
   have hv : ∀ (N : Matrix (Fin d) (Fin d) R) (v : Fin d → R) (i : Fin d),
       (N.map f).mulVec (fun j => f (v j)) i = f (N.mulVec v i) := fun N v i => (RingHom.map_mulVec _ _ _ _).symm
   rw [rhoH_apply, rhoH_apply, (h1 a).1, (h1 a).2, (h1 (star a)).1, ← Matrix.transpose_map, ← Matrix.transpose_map]

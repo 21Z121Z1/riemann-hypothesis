@@ -5,8 +5,8 @@ public import Formalism.LocalToGlobal.KernelLattices.KerStd
 public import Formalism.LocalToGlobal.KernelLattices.KernelLocalFactors.BaseEx
 public import Formalism.LocalToGlobal.GlobalTheory.GL3.NormNatCoprime
 public import Formalism.LocalToGlobal.GlobalTheory.GL3.PStdOK
-public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.UnitDeterminantRoot.NsmulRelIdxMem
-public import Formalism.LocalToGlobal.TorsionIntegrality.EisensteinTranslationProducts.AnalyticIdentityTheorems.QuasiPeriodConstUniqueOf
+public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.UnitDeterminantRoot.Bundle0001
+public import Formalism.LocalToGlobal.TorsionIntegrality.EisensteinTranslationProducts.AnalyticIdentityTheorems.Bundle0004
 
 @[expose] public section
 

@@ -2,17 +2,18 @@ module
 
 public import Mathlib
 public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.AdelicGroupAlgebraActionInjective
-public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsHTFormOver
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.PushInvertible
-public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.GlueApplyOfNotInFibre
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.Bundle0005
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.Bundle0002
 public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsHodgeLine
 public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.ExistsOfPolAV
 public import Development.WeilBound.CoreStatements.HomogeneousNonvanishing.NatCastSmulMemHtLatK
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsTorsionQuasiFiniteGroupStatement
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.WeilPairingPullbackIffStatement
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsGenericWeilPairingStatement
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0235
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.WeilPairingPullbackIff
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsGenericWeilPairing
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.GlobalSectionsRankAlgClosed
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.Bundle0007
 public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ObjIsAbelianSchemeDimRigidifiedSym
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.SabComp
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.Bundle0006
 
 @[expose] public section
 
@@ -287,7 +288,7 @@ theorem genWeil_trivial (o : Obj D l b s) (t : SAB H X) (m : SABMap o.t t ξ) {n
       have h2 := congrArg (fun w => w.left) (push_one m.cart (Over.mk (spMap i)))
       rw [hz]
       exact h2.trans (congrArg (fun w => w.left) h1).symm
-    rw [← GlobalTheory.T.weil_pairing_pullback_iff E H X (Sp Ω) t o.t ξ m k (spMap i) 1 1 xk gk n c (e1 xk hxk) (e1 gk hgk)]
+    rw [← _root_.GlobalTheory.CompanionTheory.Ar.WeilPull.main E H X (Sp Ω) t o.t ξ m k (spMap i) 1 1 xk gk n c (e1 xk hxk) (e1 gk hgk)]
     have hx1 := hW _ (GlobalTheory.Obj.toPolAV o) n (Over.mk (spMap i))
     have h1 : WeilIs o.t.G o.t.PP.L n (1 : Over.mk (spMap i) ⟶ o.t.G) 1 (unitOn (1 : kˣ)) := by
       rw [GenWeilModel.unitOn_one]
@@ -334,12 +335,12 @@ theorem htOm_eq_htLat : ∀ (E : Type) [Field E] [NumberField E] [IsCMField E] (
   haveI hc : CharZero (X.presheaf.stalk q.1) := ⟨fun a b h => Nat.cast_injective (R := Ω) (by
     rw [← map_natCast (genMap ξ q), h, map_natCast])⟩
   have hft := fullTorsion_frac hξ q hfull
-  obtain ⟨T, _, _, Γ', i, htor⟩ := @GlobalTheory.T.exists_torsion_quasi_finite_group (X.presheaf.stalk q.1) _ hd _ hc X t.G _ (X.fromSpecStalk q.1) n t.semi hn hft
+  obtain ⟨T, _, _, Γ', i, htor⟩ := @_root_.GlobalTheory.CompanionTheory.Ar.TorsQF.torsion_qfGroup (X.presheaf.stalk q.1) _ hd _ hc X t.G _ (X.fromSpecStalk q.1) n t.semi hn hft
   have hroot : 0 < D.p + D.q → ∃ ζ : Ω, IsPrimitiveRoot ζ n := fun h => root o t m hfull hn h
   have hw : ∃ e, GenWeil t.G t.PP.L ξ n e := by
     rcases Nat.eq_zero_or_pos (D.p + D.q) with h | h
     · exact ⟨_, genWeil_trivial o t m hn h⟩
-    · have := GlobalTheory.T.exists_generic_weil_pairing GlobalTheory.PairingLawZeroCounterexample.laws.1 E H D l B b (Sp Ω) X s o t ξ m Ω (𝟙 _) n hn
+    · have := _root_.GlobalTheory.CompanionTheory.Ar.WeilObj.genWeil_of_obj GlobalTheory.PairingLawZeroCounterexample.laws.1 E H D l B b (Sp Ω) X s o t ξ m Ω (𝟙 _) n hn
         (by rwa [Category.id_comp]) (by simpa using hroot h)
       rwa [Category.id_comp] at this
   obtain ⟨e, hw⟩ := hw

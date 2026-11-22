@@ -1,14 +1,14 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Divisors.LabExt
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0067
 public import Development.AbelianVarietyTheory.Definitions.Degenerations.AdmissibleBaseOfCompleteDvr
-public import Development.AbelianVarietyTheory.Definitions.Uniformization.SeriesFrame
+public import Development.AbelianVarietyTheory.Definitions.Uniformization.Bundle0002
 public import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.ExistsIsFibreIso
 public import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.IsExtensionPullOver
-public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ExistsUniqueSecPull
+public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.Bundle0027
 public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.UnivIdentity
-public import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.GlobalFnsHolds
+public import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.Bundle0011
 
 @[expose] public section
 

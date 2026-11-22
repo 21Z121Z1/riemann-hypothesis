@@ -1,11 +1,11 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Divisors.IsSmoothVector
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsIsometricIntertwinerOfMatrixCoeffEq
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExtremalVectorMatrixCoeffHolomorphicTypeStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DiscreteSeriesModelUnitaryIrreducibleOrthonormalStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HolomorphicTypeEqZeroOfTorusLawAtOneStatement
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0033
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0004
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1143
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0945
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1029
 
 @[expose] public section
 
@@ -316,10 +316,10 @@ theorem holModel_unique : ∀ (D : D7) (θ : InfFam D) (V : HSp D) (S : D.what�
   have hs' : HolShape M' := fun τ => by rw [hl, he]; exact hs τ
   have hw' : WtIs M' w := fun τ c => by
     rw [hw τ c]; unfold extWt; rw [hl, he]
-  obtain ⟨f1, t1⟩ := GlobalTheory.T.extremalVector_matrixCoeff_holomorphicType D θ V S M w v hθ hs hw hv
-  obtain ⟨f2, t2⟩ := GlobalTheory.T.extremalVector_matrixCoeff_holomorphicType D θ V S M' w v' hθ hs' hw' hv'
-  have m1 := GlobalTheory.T.discreteSeriesModel_unitary_irreducible_orthonormal D V S M
-  have m2 := GlobalTheory.T.discreteSeriesModel_unitary_irreducible_orthonormal D V S M'
+  obtain ⟨f1, t1⟩ := _root_.GlobalTheory.HolDict.holFn_coef_extVec D θ V S M w v hθ hs hw hv
+  obtain ⟨f2, t2⟩ := _root_.GlobalTheory.HolDict.holFn_coef_extVec D θ V S M' w v' hθ hs' hw' hv'
+  have m1 := _root_.GlobalTheory.HolDict.ModelRep.model_rep D V S M
+  have m2 := _root_.GlobalTheory.HolDict.ModelRep.model_rep D V S M'
   haveI := fun τ => (m1 τ).1
   haveI := fun τ => (m2 τ).1
   simp only [he] at f2

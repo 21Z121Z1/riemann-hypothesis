@@ -2,8 +2,8 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.KeyFormula.DegProd
-public import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.SubmatrixMulOfSupport
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.HeightTheory.HDiscAA
+public import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.Bundle0007
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.HeightTheory.Bundle0011
 
 @[expose] public section
 

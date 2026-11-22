@@ -1,11 +1,11 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HInv
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.RingKrullDimLtTopOfEssFiniteType
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EtaleHomotopyInvariantTwistsOfRingEquivStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EtaleHomotopyInvarianceCechDescentIntegralStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EtaleCohomologyProdRingProjectionsBijectiveStatement
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0314
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0018
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0341
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0906
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0400
 
 @[expose] public section
 
@@ -178,7 +178,7 @@ variable {A : Type} [CommRing A]
 
 theorem hinv_of_algEquiv {q : ℕ} [NeZero q] {X Y : Type} [CommRing X] [CommRing Y] [Algebra A X] [Algebra A Y]
     (e : X ≃ₐ[A] Y) (h : HInv q X) : HInv q Y :=
-  GlobalTheory.T.etaleHomotopyInvariantTwists_of_ringEquiv q X Y e.toRingEquiv h
+  _root_.GlobalTheory.EtC.hInv_of_ringEquiv q X Y e.toRingEquiv h
 
 def Good (I J L : Ideal A) : Prop := L = I ∨ L = J ∨ L = I ⊔ J
 

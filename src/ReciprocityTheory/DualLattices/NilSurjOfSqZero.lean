@@ -1,6 +1,6 @@
 module
 
-public import ReciprocityTheory.DualLattices.ModuliPointsState
+public import ReciprocityTheory.DualLattices.Bundle0010
 
 @[expose] public section
 

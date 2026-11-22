@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsSelfDualFor
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsArchimedeanSchwartzTraceFourierBijective
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1582
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1573
 
 @[expose] public section
 

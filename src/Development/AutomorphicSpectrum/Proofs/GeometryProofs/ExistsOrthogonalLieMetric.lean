@@ -1,16 +1,15 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.SlopeBoundSt
-public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.ArchBetween
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.Bundle0012
 public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.BdryChart
 public import Development.AutomorphicSpectrum.Definitions.MetricPeriods.ClopenCondOnto
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.UniformisationConclusion
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.HeckeKer
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.Bundle0003
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.BlowupProjections.BlowupProjStatement
 public import Development.AbelianVarietyTheory.PublishedTheorems.SemiabelianTori.GeometricallyConnectedSplitTorusAff
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsLieMetricStatement
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LieModelExistsUniqueAct
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0154
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0019
 public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsLieModel
 
 @[expose] public section
@@ -331,7 +330,7 @@ theorem main : ∀ (E : Type) [Field E] [NumberField E] [IsCMField E] (H : Host 
   intro E _ _ _ H D l Xo c Y S Ω _ K _ J _ y 𝔐
   haveI : Smooth 𝔐.t.G.hom := 𝔐.t.semi.smooth
   have hch : CharZero Ω := (RingHom.charZero_iff 𝔐.cst.injective).1 inferInstance
-  obtain ⟨h₀⟩ := GlobalTheory.T.exists_lie_metric 𝔐.X Ω K J y 𝔐.ξ hch 𝔐.all 𝔐.tie 𝔐.t.G 𝔐.Li 𝔐.M
+  obtain ⟨h₀⟩ := _root_.GlobalTheory.CompanionTheory.Ar.MetricAny.exists_lieMetric 𝔐.X Ω K J y 𝔐.ξ hch 𝔐.all 𝔐.tie 𝔐.t.G 𝔐.Li 𝔐.M
   exact exists_orth E 𝔐.M 𝔐.t.act 𝔐.ρ 𝔐.act h₀
 
 end GlobalTheory.CompanionTheory.Ar.MetricOrth

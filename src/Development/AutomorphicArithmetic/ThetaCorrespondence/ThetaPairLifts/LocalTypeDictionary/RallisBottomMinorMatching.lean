@@ -1,21 +1,21 @@
 module
 
 public import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.LocalTypeDictionary.DiscreteSpectrumResidualClassification
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsConstantTripleCoefficient
-public import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.LocalTypeDictionary.BernsteinUnitaryProductIrreducible
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle3126
+public import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.LocalTypeDictionary.Bundle0001
 public import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.LocalTypeDictionary.TwistedSquareLocalMatching
-public import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.LocalTypeDictionary.TwistedSquareThetaIntegralsEq
-public import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.LocalTypeDictionary.ThetaBottomFinitePlaceMatching
-public import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.LocalTypeDictionary.BottomDegreeMatchRealQuotient
-public import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.LocalTypeDictionary.TripleWeilTransferMatching
-public import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.LocalTypeDictionary.ThetaIntegralVanishesOnFiniteRelations
-public import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.LocalTypeDictionary.ThetaLiftVanishesOfIrreducibleDefect
+public import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.LocalTypeDictionary.Bundle0095
+public import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.LocalTypeDictionary.Bundle0107
+public import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.LocalTypeDictionary.Bundle0021
+public import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.LocalTypeDictionary.Bundle0053
+public import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.LocalTypeDictionary.Bundle0091
+public import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.LocalTypeDictionary.Bundle0092
 public import Mathlib
-public import Development.AbelianVarietyTheory.Statements.PlaceShiftStatements.NormSmall
+public import Development.AbelianVarietyTheory.Statements.PlaceShiftStatements.Bundle0002
 public import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.WeilTensorModels
-public import Development.AbelianVarietyTheory.Definitions.Divisors.DiscreteSeriesHermitianUnique
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsFinPt
-public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisGeometry₂.HypothesesAbsDet
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0041
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1557
+public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisGeometry₂.Bundle0001
 
 @[expose] public section
 
@@ -47,7 +47,7 @@ theorem theta_bottom_minor_match : _root_.GlobalTheory.FunPr.ThetaLocalInputs �
   have hH : GlobalTheory.Published.HoweDualityReal := hP.howeDualityReal
   have hLM := _root_.GlobalTheory.T.twisted_local_factors_match hH hP hK hM
   have hTA := _root_.GlobalTheory.T.twisted_square_theta_integrals_eq hP hK hM
-  obtain ⟨CF1, H1⟩ := GlobalTheory.T.definiteBottom_dictionary_frames_exponents_kernel
+  obtain ⟨CF1, H1⟩ := _root_.GlobalTheory.BotDict.bottom_dictionary
   obtain ⟨CF2, H2⟩ := _root_.GlobalTheory.T.theta_bottom_finite_place_matching hH hP hK hM
   refine ⟨max CF1 CF2, fun ε CF hCF => ?_⟩
   obtain ⟨C1, x1, G1⟩ := H1 ε CF (le_trans (le_max_left _ _) hCF)
@@ -197,7 +197,7 @@ theorem theta_bottom_minor_match : _root_.GlobalTheory.FunPr.ThetaLocalInputs �
     have h2 := (smul_eq_zero.1 h1).resolve_right hq0
     rw [eq_div_iff hκ0]; exact sub_eq_zero.1 h2
   refine ⟨ρ / κ, div_ne_zero hρ hκ0, fun s Q δ t0 P P' hB ea ea' ed ed' => ?_⟩
-  have hn : P'.n = P.n := GlobalTheory.T.squareBottomPairs_weights_eq G s i j _ P P' hB
+  have hn : P'.n = P.n := _root_.GlobalTheory.BottomWeights.isBottom_n_eq G s i j _ P P' hB
   have core : ∀ (a₁ a₁' d₁ d₁' : ℕ) (n n' : D.what₂.Tau → ℕ) (ea : a₁ = A.rank) (ea' : a₁' = A'.rank) (ed : d₁ = WW.rank)
       (ed' : d₁' = WW.rank) (hn : n' = n), ∃ (M : Tup D a₁ d₁ n → Tup D a₁' d₁' n' → ℤ) (M' : Tup D a₁' d₁' n' → Tup D a₁ d₁ n → ℤ),
         (∀ T₁ T₂, ∑ T, M' T₁ T * M T T₂ = if T₁ = T₂ then 1 else 0) ∧

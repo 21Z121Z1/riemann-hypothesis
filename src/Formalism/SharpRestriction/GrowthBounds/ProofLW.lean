@@ -1,6 +1,6 @@
 module
 
-public import Formalism.SharpRestriction.GrowthBounds.MultisetValuation.StmtNumFEx
+public import Formalism.SharpRestriction.GrowthBounds.MultisetValuation.Bundle0025
 
 @[expose] public section
 

@@ -1,23 +1,23 @@
 module
 
-public import Development.AbelianVarietyTheory.Definitions.Divisors.DivisorSupportCondition
-public import Development.AbelianVarietyTheory.Definitions.Divisors.SecClass
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ChosenInjectiveResolutionEtaleSheafPropertiesStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EtaleLocalPropertyCalculusRulesStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EtaleSheafSectionsExtAndGlueStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EtaleToSheafifyLocallyBijectiveAndLiftStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ChosenInjectiveResolutionEtaleSheafSectionsExactStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EtaleCochainEvalOnSimplexBasicPropertiesStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SchClsCocycleSecStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsKummerTorsorSplittingKummerTorsorSplittingStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.KummerClassOfUnitCocycleNaturalAdditiveStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.KummerSequenceEtaleTateTwistStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RestrictScalarsResolutionMapAugmentationSpecStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EtaleLocalPrimitiveRootAndRootsOfUnityStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TateTwistSectionsLocallyGeneratedStatement
-public import Development.AutomorphicArithmetic.CommutativeAlgebra.ExistsUnitEqMultiplicativeGroupSection
-public import Development.AutomorphicArithmetic.CommutativeAlgebra.KummerMapAddOfUnitSecAdd
-public import Development.AutomorphicArithmetic.CommutativeAlgebra.ExistsInjectiveH1GmToPic
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0007
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0006
+public import Mathlib
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0301
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0340
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0306
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0342
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0433
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0363
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0484
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0467
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0454
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0444
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0375
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0430
+public import Development.AutomorphicArithmetic.CommutativeAlgebra.Bundle0014
+public import Development.AutomorphicArithmetic.CommutativeAlgebra.Bundle0037
+public import Development.AutomorphicArithmetic.CommutativeAlgebra.Bundle0034
 
 @[expose] public section
 
@@ -125,7 +125,7 @@ private theorem rho_ex (q : ℕ) [NeZero q] (κ : RT q ⟶ Gm) :
   · intro U a
     change Sec.map ((resMap ℤ κ).f 0) _ = _
     rw [GlobalTheory.T.restrictScalarsResolutionMap_augmentation_spec]
-    obtain ⟨-, -, -, -, -, -, -, h⟩ := GlobalTheory.T.chosenInjectiveResolution_etaleSheaf_properties ℤ (RT q)
+    obtain ⟨-, -, -, -, -, -, -, h⟩ := _root_.GlobalTheory.EtC.ResBasic.res_basic ℤ (RT q)
     exact congrArg (fun f => Sec.map f (show Sec (RT q) U from a)) (h Gm κ).2
 
 private theorem tors_zero (q : ℕ) (A : Type) [CommRing A] (hpic : ∀ c : CommRing.Pic A, c ^ q = 1 → c = 1)
@@ -242,10 +242,10 @@ private theorem glue (κ : RT q ⟶ Gm)
     ∃ Y : Sec ((II q).X 0) X, Sec.map ((II q).d 0 1) Y = z + zu := by
   obtain ⟨S, hS, hP⟩ := good_ex ρnat ρd hz hw
   choose s hs using hP
-  obtain ⟨Y, hY⟩ := (GlobalTheory.T.etaleSheafSections_ext_and_glue (ZMod q) ((II q).X 0) X).2 S hS s (fun V W g k hg =>
+  obtain ⟨Y, hY⟩ := (_root_.GlobalTheory.EtC.sec_ext_glue (ZMod q) ((II q).X 0) X).2 S hS s (fun V W g k hg =>
     good_unique κ hκ ρι hq (k ≫ g) (good_res ρnat hq g k (hs V g hg)) (hs W (k ≫ g) _))
   refine ⟨Y, ?_⟩
-  apply (GlobalTheory.T.etaleSheafSections_ext_and_glue (ZMod q) ((II q).X 1) X).1
+  apply (_root_.GlobalTheory.EtC.sec_ext_glue (ZMod q) ((II q).X 1) X).1
   refine GlobalTheory.T.etaleLocal_property_calculus_rules.2.2.2.2.1 X _ ⟨S, hS, ?_⟩
   intro V g hg
   obtain ⟨y, v, h1, h2, h3⟩ := hs V g hg

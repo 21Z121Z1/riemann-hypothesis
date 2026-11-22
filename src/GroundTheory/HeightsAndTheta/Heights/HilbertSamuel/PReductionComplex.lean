@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsReductionComplex
+public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0070
 
 @[expose] public section
 

@@ -1,13 +1,12 @@
 module
 
-public import Formalism.SharpRestriction.GlobalTheoremInputs
+public import Formalism.SharpRestriction.Bundle0002
 public import Formalism.SharpRestriction.GrowthBounds.BinomialPolynomialIdentities
-public import Formalism.SharpRestriction.GrowthBounds.FrobeniusPaths
-public import Formalism.SharpRestriction.GrowthBounds.MonomialOrderSegments
+public import Formalism.SharpRestriction.GrowthBounds.Bundle0004
 public import Formalism.SharpRestriction.GrowthBounds.CountingStatementReduction
 public import Formalism.SharpRestriction.GrowthBounds.PathWeight
 public import Formalism.SharpRestriction.GrowthBounds.PolBridge
-public import Formalism.SharpRestriction.GlobalSchurBounds.GlobalRankLatticeProofs.CMFieldLemmas
+public import Formalism.SharpRestriction.GlobalSchurBounds.GlobalRankLatticeProofs.Bundle0005
 public import Formalism.SharpRestriction.ParConsts
 public import Formalism.SharpRestriction.ParamsHeightRankConstant
 public import Formalism.SharpRestriction.GrowthBounds.SmallOrderPrimes
@@ -15,20 +14,19 @@ public import Formalism.SharpRestriction.GrowthBounds.IsResidueClassZero
 public import Formalism.SharpRestriction.GrowthBounds.Joints
 public import Formalism.LocalRingCardinality.RankBoundMonotoneInDimension
 public import Formalism.LocalRingCardinality.Lemmas
-public import Formalism.SharpRestriction.GrowthBounds.GLWeightTheory
+public import Formalism.SharpRestriction.GrowthBounds.Bundle0003
 public import Formalism.SharpRestriction.GrowthBounds.TopChoiceBounds
 public import Formalism.SharpRestriction.GrowthBounds.CornerGLContinuity
 public import Formalism.SharpRestriction.GrowthBounds.FormalGroupSystem
 public import Formalism.SharpRestriction.GrowthBounds.ProofLW
-public import Formalism.SharpRestriction.GrowthBounds.SelectionLemmas
+public import Formalism.SharpRestriction.GrowthBounds.Bundle0002
 public import Formalism.SharpRestriction.GrowthBounds.LatticeSystems
-public import Formalism.SharpRestriction.AdmissibleParameterJoins.GandSk
+public import Formalism.SharpRestriction.AdmissibleParameterJoins.Bundle0003
 public import Formalism.SharpRestriction.GrowthBounds.ProjectionOfIsotypicDecomposition
 public import Formalism.SharpRestriction.GrowthBounds.ValuationLowestDegreeMapFractionField
 public import Formalism.LocalRingCardinality.HostCls
-public import Development.AutomorphicArithmetic.OrbitLabellings.EvenAddOrderOfHPOfPowLe
-public import Development.AutomorphicArithmetic.OrbitLabellings.GalEArithFrobEqIotaHP
-public import Development.AutomorphicArithmetic.PrimeDiscriminants.SplitLow
+public import Development.AutomorphicArithmetic.OrbitLabellings.Bundle0002
+public import Development.AutomorphicArithmetic.PrimeDiscriminants.Bundle0003
 public import Lemmata.GeneralBFactUpperBis.Imports
 
 @[expose] public section

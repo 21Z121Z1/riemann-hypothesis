@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.FormOffSpecializationRing
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.RootOriginGenericFrameBound
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0184
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0242
 
 @[expose] public section
 

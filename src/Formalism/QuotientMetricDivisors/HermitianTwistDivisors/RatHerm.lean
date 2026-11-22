@@ -1,13 +1,13 @@
 module
 
 public import Mathlib
-public import Formalism.QuotientMetricDivisors.ProdFormula
+public import Formalism.QuotientMetricDivisors.Bundle0001
 public import Formalism.QuotientMetricDivisors.HermitianTwistDivisors.ValBasic
-public import Formalism.QuotientMetricDivisors.HermitianTwistDivisors.ProdFormula
-public import Formalism.HermitianLattices.HermitianLatticesProofs.LocDual
+public import Formalism.QuotientMetricDivisors.HermitianTwistDivisors.Bundle0002
+public import Formalism.HermitianLattices.HermitianLatticesProofs.Bundle0003
 public import Formalism.HermitianLattices.HermitianLatticesProofs.IndexBasic
 public import Formalism.HermitianLattices.HermitianLatticesProofs.DualLattice
-public import Formalism.HermitianLattices.HermitianLatticesProofs.DualBasic
+public import Formalism.HermitianLattices.HermitianLatticesProofs.Bundle0001
 
 @[expose] public section
 

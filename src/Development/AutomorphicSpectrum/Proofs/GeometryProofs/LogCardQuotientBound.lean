@@ -1,10 +1,9 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LocRatio
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.GrGenOfIsFlagVBOn
-public import GroundTheory.HeightsAndTheta.Heights.HeightsOfSets.FieldChange
-public import GroundTheory.HeightsAndTheta.Heights.HeightsOfSets.DenseHeight
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0093
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0026
+public import GroundTheory.HeightsAndTheta.Heights.HeightsOfSets.Bundle0002
 
 @[expose] public section
 

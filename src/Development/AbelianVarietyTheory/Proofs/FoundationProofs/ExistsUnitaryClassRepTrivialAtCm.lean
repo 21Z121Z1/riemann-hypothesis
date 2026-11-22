@@ -3,12 +3,12 @@ module
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.Foundations.NormSumPairRankZeroOfCurveCoordNorm
 public import Formalism.PairingDivisors.StatementH
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.RationalPointsIntegralPointsMembership
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0231
 public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.UnitaryGroupWeakApproximationAtPrimes
 public import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Afsplit
 public import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.CsGlob
 public import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.CsScale
-public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.ConjugateMinimaInstance
+public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0027
 
 @[expose] public section
 

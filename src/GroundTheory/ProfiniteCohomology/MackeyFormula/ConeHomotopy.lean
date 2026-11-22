@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import GroundTheory.ProfiniteCohomology.CompactSupportCohomology.ConeMap
+public import GroundTheory.ProfiniteCohomology.CompactSupportCohomology.Bundle0002
 
 @[expose] public section
 

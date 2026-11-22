@@ -1,14 +1,14 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Divisors.IsGPull
-public import Development.AbelianVarietyTheory.Definitions.Divisors.IsHeckeMap
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsTateSimilitudeHeckeTranslateGeometric
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CommutatorPairingHeckeTranslateEqZeta
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsWeilCommutatorPairingTorsionGeometricPoint
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TateSimilitudePrimeToPPullbackSquare
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsHarrisTaylorObjectPullbackBis
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HarrisTaylorObjectPullbackComp
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0010
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0017
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2720
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1996
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2651
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0716
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0828
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0813
 
 @[expose] public section
 

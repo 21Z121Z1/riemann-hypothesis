@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Proofs.MetricProofs.ValueConstantOnOrbit
-public import Development.WeilBound.CoreStatements.PluriharmonicCharts.MinorIJConjTranspose
+public import Development.AutomorphicSpectrum.Proofs.MetricProofs.Bundle0054
+public import Development.WeilBound.CoreStatements.PluriharmonicCharts.Bundle0010
 
 @[expose] public section
 

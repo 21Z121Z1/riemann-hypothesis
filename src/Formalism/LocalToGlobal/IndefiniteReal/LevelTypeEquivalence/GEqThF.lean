@@ -1,11 +1,9 @@
 module
 
-public import Formalism.LocalToGlobal.IndefiniteReal.LevelTypeEquivalence.GEqTie
-public import Formalism.LocalToGlobal.IndefiniteReal.LevelTypeEquivalence.GEqBase
-public import Formalism.LocalToGlobal.IndefiniteReal.MultLemmas
-public import Formalism.LocalToGlobal.IndefiniteReal.LevelTypeEquivalence.IoUniq
-public import Formalism.LocalToGlobal.IndefiniteReal.LevelTypeEquivalence.GEqMain
-public import Formalism.LocalToGlobal.IndefiniteReal.LevelTypeEquivalence.RightInv
+public import Formalism.LocalToGlobal.IndefiniteReal.LevelTypeEquivalence.Bundle0008
+public import Formalism.LocalToGlobal.IndefiniteReal.LevelTypeEquivalence.Bundle0004
+public import Formalism.LocalToGlobal.IndefiniteReal.Bundle0020
+public import Formalism.LocalToGlobal.IndefiniteReal.LevelTypeEquivalence.Bundle0006
 public import Formalism.LocalToGlobal.Divisibility.DefGroupLemmas
 
 @[expose] public section

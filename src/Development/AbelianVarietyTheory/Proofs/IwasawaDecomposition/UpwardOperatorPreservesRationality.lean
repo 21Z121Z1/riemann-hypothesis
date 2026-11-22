@@ -4,9 +4,9 @@ public import Mathlib
 public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.GlESymmApply
 public import Formalism.LocalRingCardinality.DataLatDefs
 public import Formalism.LocalRingCardinality.Lemmas
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.IndexAtLevelIffOuterClausesAnd
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0214
 public import Formalism.LocalToGlobal.Columns.PolyFnLemmas
-public import Formalism.LocalToGlobal.HermitianForms.FramesLemmas
+public import Formalism.LocalToGlobal.HermitianForms.Bundle0003
 public import Formalism.LocalToGlobal.GlobalTheory.GL6.BwAValIntegralNonneg
 
 @[expose] public section

@@ -1,17 +1,17 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.ModuliSpaces.SectionsHaveFiniteDimension
+public import Development.AbelianVarietyTheory.Definitions.ModuliSpaces.Bundle0001
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.UniformisationConclusion
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.HeckeKer
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.Bundle0003
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.IsHolPeriods
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.UnifUniqSt
 public import Development.AbelianVarietyTheory.Proofs.CovolumeBounds.IsProjOverIffIsProperAndExistsIsAmpleLB
-public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsHeckeQuotientTriple
+public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0108
 public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.SectionsHaveFiniteDimensionInvarianceIsomorphism
-public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.PrincipalPolarisationVolumeFormSymmetricAmpleStatement
-public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.SectionsCountSqEqDetFormOnTorsionStatement
-public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.SqIsPowGrp
+public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0107
+public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.SectionsCountSqEqDetFormOnTorsion
+public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0106
 
 @[expose] public section
 
@@ -137,7 +137,7 @@ theorem sectionsDim_additionGraph_principalPolarisation : Out.Laws → Out.Laws2
   obtain ⟨rig, hrig⟩ := P.rigid
   obtain ⟨cub⟩ := (laws.cube _ P ⟨P.L, rig, hL, hrig⟩ rfl).1
   have hΘ : ∃ t : LB.Gen (Theta P.A P.L), t.IsGen := ⟨cub.t, cub.isGen⟩
-  obtain ⟨-, -, hsym, -, -, htor⟩ := GlobalTheory.T.principalPolarisation_volume_form_symmetric_ample laws laws₂ K P
+  obtain ⟨-, -, hsym, -, -, htor⟩ := _root_.GlobalTheory.principal_polarisation_numerics laws laws₂ K P
   let Φ := pointsEquiv φ
   set p := φ.hom ≫ fst P.A P.A with hpd
   set q := φ.hom ≫ snd P.A P.A with hqd
@@ -208,7 +208,7 @@ theorem sectionsDim_additionGraph_principalPolarisation : Out.Laws → Out.Laws2
       push_cast at h h'
       linear_combination h' - h
     · exact ⟨2, Nat.prime_two, h⟩
-  obtain ⟨δ, -, hδ, hdet⟩ := GlobalTheory.T.sections_count_sq_eq_det_form_on_torsion laws laws₂ K Q M s l hl hlK hM hamp hsymM hform
+  obtain ⟨δ, -, hδ, hdet⟩ := _root_.GlobalTheory.SectionCount.sq_vol_eq_det laws laws₂ K Q M s l hl hlK hM hamp hsymM hform
   have hsq : δ ^ 2 = ((3 * N ^ 2) ^ P.g) ^ 2 := by
     refine eq_of_forall_zmod hl fun j => ?_
     obtain ⟨pt, ⟨h₀, h₁, h₂⟩, -⟩ := htor (l ^ j) (by rw [Nat.cast_pow]; exact pow_ne_zero _ hlK)

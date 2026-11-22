@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.NStageTrivialCharacterCoeffEqAlt
+public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.Bundle0014
 
 @[expose] public section
 

@@ -1,7 +1,7 @@
 module
 
 public import Formalism.LocalToGlobal.NumberFieldFamilies.ThetaCB
-public import Formalism.SharpRestriction.InertJacobiLevels.ExtraTheta
+public import Formalism.SharpRestriction.InertJacobiLevels.Bundle0001
 public import Formalism.LocalRingCardinality.SpanPowerMembership.BaseFormAnisotropicOrthogonalSingle
 
 @[expose] public section

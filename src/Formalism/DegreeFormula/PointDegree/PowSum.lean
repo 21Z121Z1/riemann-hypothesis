@@ -1,7 +1,7 @@
 module
 
 public import Formalism.DegreeFormula.FlagDegFormula
-public import Formalism.DegreeFormula.PointDegree.PermExpInj
+public import Formalism.DegreeFormula.PointDegree.Bundle0001
 
 @[expose] public section
 

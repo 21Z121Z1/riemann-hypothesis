@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import GroundTheory.HeightsAndTheta.Heights.HeightComparison.HeightPlaceCentredSum
+public import GroundTheory.HeightsAndTheta.Heights.HeightComparison.Bundle0007
 
 @[expose] public section
 

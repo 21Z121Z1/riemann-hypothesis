@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import GroundTheory.HeightsAndTheta.Heights.VerticalDivisors.Statements
+public import GroundTheory.HeightsAndTheta.Heights.VerticalDivisors.Bundle0002
 
 @[expose] public section
 

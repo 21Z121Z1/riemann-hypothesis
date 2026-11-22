@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Formalism.LocalToGlobal.BesselHermitianTheta.TiedType
+public import Formalism.LocalToGlobal.BesselHermitianTheta.Bundle0003
 
 @[expose] public section
 

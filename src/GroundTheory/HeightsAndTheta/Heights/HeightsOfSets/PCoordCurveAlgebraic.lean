@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import GroundTheory.HeightsAndTheta.Heights.HeightsOfSets.CoordCurveDegree
+public import GroundTheory.HeightsAndTheta.Heights.HeightsOfSets.Bundle0003
 public import GroundTheory.ArithmeticGeometry.AbelianVarieties.JacobianSmoothness.RingKrullDimLeRingKrullDimQuotientAddOne
-public import ReciprocityTheory.AnalyticForms.RegularLocalRings.IntToRat
+public import ReciprocityTheory.AnalyticForms.RegularLocalRings.Bundle0007
 
 @[expose] public section
 

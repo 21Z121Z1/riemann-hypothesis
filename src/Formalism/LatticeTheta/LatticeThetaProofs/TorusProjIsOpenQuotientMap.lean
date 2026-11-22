@@ -1,7 +1,6 @@
 module
 
-public import Formalism.LatticeTheta.LatticeThetaProofs.InnerDualVecBasis
-public import Formalism.LatticeTheta.LatticeThetaProofs.FundamentalDomainEqPreimage
+public import Formalism.LatticeTheta.LatticeThetaProofs.Bundle0002
 
 @[expose] public section
 

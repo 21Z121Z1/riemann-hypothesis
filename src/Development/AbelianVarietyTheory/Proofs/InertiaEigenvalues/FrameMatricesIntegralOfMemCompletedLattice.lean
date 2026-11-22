@@ -1,12 +1,12 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.RestrictHalfApply
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.GramMapMulInv
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0766
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0198
 public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsNsmulIntMemLatO
 public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IdempotentMulEqZeroOfOrthogonal
-public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.FinTensMemLatO
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsDenNotMemOfCountEqZero
+public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.Bundle0057
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0012
 
 @[expose] public section
 

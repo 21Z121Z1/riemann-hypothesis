@@ -1,6 +1,6 @@
 module
 
-public import Formalism.LocalToGlobal.CharacterGerms.FirstVanishingCore
+public import Formalism.LocalToGlobal.CharacterGerms.Bundle0033
 public import Formalism.LocalToGlobal.CharacterGerms.PderivDoubleMultiplicationJacobian
 
 @[expose] public section

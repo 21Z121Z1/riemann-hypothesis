@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.EtaleCohomology.EtaleSheaves.LeafChartRing
+public import Development.EtaleCohomology.EtaleSheaves.Bundle0003
 
 @[expose] public section
 

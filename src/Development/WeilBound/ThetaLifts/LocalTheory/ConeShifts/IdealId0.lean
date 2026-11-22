@@ -1,7 +1,7 @@
 module
 
 public import Development.WeilBound.ThetaLifts.LocalTheory.ConeShifts.IdealB
-public import Development.WeilBound.ThetaLifts.LocalTheory.ConeShifts.IdealStmt
+public import Development.WeilBound.ThetaLifts.LocalTheory.ConeShifts.Bundle0001
 
 @[expose] public section
 

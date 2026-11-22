@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Formalism.LocalToGlobal.InertKernelTheory.StatementAlgT
+public import Formalism.LocalToGlobal.InertKernelTheory.Bundle0004
 public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.VacuumEntireAndNormalizedJetsAlgebraic
-public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.TranslateMomentsAllOfJetMomR
+public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0127
 
 @[expose] public section
 

@@ -1,9 +1,9 @@
 module
 
 public import CompanionTheory.AutomorphicTheory.ProductFormulaTheory.CuspidalExhaustion.CuspEmbP
-public import CompanionTheory.AutomorphicTheory.ProductFormulaTheory.CuspidalExhaustion.MidGen
-public import CompanionTheory.AutomorphicTheory.ProductFormulaTheory.CuspidalExhaustion.MidExact
-public import CompanionTheory.AutomorphicTheory.ProductFormulaTheory.CuspidalExhaustion.EquivTripleProductOfIso
+public import CompanionTheory.AutomorphicTheory.ProductFormulaTheory.CuspidalExhaustion.Bundle0004
+public import CompanionTheory.AutomorphicTheory.ProductFormulaTheory.CuspidalExhaustion.Bundle0002
+public import CompanionTheory.AutomorphicTheory.ProductFormulaTheory.CuspidalExhaustion.Bundle0003
 
 @[expose] public section
 

@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import ReciprocityTheory.AnalyticForms.PotentialTheory.IsPotentialOfFun
-public import ReciprocityTheory.AnalyticForms.PlurisubharmonicFunctions.LintegralImageEqLintegralNormSqDetMul
+public import ReciprocityTheory.AnalyticForms.PlurisubharmonicFunctions.Bundle0004
 public import GroundTheory.HeightsAndTheta.Heights.LocalDensities.PChartPartitionExists
 public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.ArithRes
 

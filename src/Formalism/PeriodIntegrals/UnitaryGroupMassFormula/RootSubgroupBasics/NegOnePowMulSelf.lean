@@ -1,8 +1,7 @@
 module
 
-public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.RootSubgroupBasics.FlagMatLower
-public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.RootSubgroupBasics.PtEntryNeZeroImp
-public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.RootSubgroupBasics.SuperdiagPairingAdjacent
+public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.RootSubgroupBasics.Bundle0002
+public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.RootSubgroupBasics.Bundle0001
 
 @[expose] public section
 

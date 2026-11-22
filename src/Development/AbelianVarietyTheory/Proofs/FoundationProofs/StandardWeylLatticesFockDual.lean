@@ -1,20 +1,19 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Foundations.IsSelfDualE
+public import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0013
 public import Formalism.LocalToGlobal.Columns.CoefficientsModP.PairingNondegenerateHolds
 public import Formalism.LocalToGlobal.Columns.CoefficientsModP.FkPderivBlockEmbNe
 public import Formalism.GradedWeylDivisibility.StatementE
-public import Formalism.GradedWeylDivisibility.FockSpaceTableaux.LClosedeqLemmas
+public import Formalism.GradedWeylDivisibility.FockSpaceTableaux.Bundle0010
 public import Formalism.HarderNarasimhan.ShiftInvariance
 public import Formalism.QuotientMetricDivisors.ReductionLemmaZero
-public import Formalism.QuotientMetricDivisors.ProdFormula
+public import Formalism.QuotientMetricDivisors.Bundle0001
 public import Formalism.LocalToGlobal.IndefiniteForms.IndefiniteTree.RealCubicMeans.LeafBounds.MeanMaxLeaf.LeafMMFree
 public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.StdWeylLatticesFgAndSpanCoeffSpace
 public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.UnitriMonomialOfLowerTri
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.LowerTriOfInterlaced
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.FockQWordRowActAdj
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.LowerTriIntegral
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0189
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0187
 public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ApplyWordMemDualWeyl
 
 @[expose] public section

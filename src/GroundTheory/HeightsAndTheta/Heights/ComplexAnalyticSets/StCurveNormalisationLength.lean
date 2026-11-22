@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StSliceObjects
+public import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.Bundle0058
 
 @[expose] public section
 

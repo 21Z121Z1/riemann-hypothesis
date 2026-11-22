@@ -1,7 +1,7 @@
 module
 
-public import Formalism.SharpRestriction.GenusPolyhedralBounds.RelativeIndexClassSets.IntegralFormsEqSpan
-public import Formalism.LogFactorialIndices.SignedSubspaceIndex.IdxBase
+public import Formalism.SharpRestriction.GenusPolyhedralBounds.RelativeIndexClassSets.Bundle0005
+public import Formalism.LogFactorialIndices.SignedSubspaceIndex.Bundle0001
 
 @[expose] public section
 

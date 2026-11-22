@@ -1,19 +1,19 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.LanglandsDataDualGL
-public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.StandardCosocleGL
-public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.GeometricLemmaFiltration
-public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.IrreducibleAdmissibleGL
-public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.StandardFunctorsFiniteLength
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExistsLevelCharacterAtConjugateSplitPlace
+public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.Bundle0012
+public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.Bundle0008
+public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.Bundle0004
+public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.Bundle0002
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0202
 public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.InductionContragredient
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IrreducibleAdmissible
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0355
 public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.SmoothContragredientIrreducibleAndReflexive
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ParabolicInductionTensorProductHasFiniteLength
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SchurAdmissibleAlt
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0195
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0293
 public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.CuspLaws
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FiniteDimensionalCompactFixedVectorsPiTensorSmooStatement
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0284
+public import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.IsUnitarisableOfCharIff
 
 @[expose] public section
 
@@ -44,7 +44,7 @@ theorem finiteDimensional_fixed_piTensor {α : Type} [Finite α] {Γ X : α → 
     (K : ∀ a, Subgroup (Γ a)) (hK : ∀ a, IsCompact (K a : Set (Γ a)))
     (hf : ∀ a, FiniteDimensional ℂ (fixed (ρ a) (K a))) :
     FiniteDimensional ℂ (fixed (piTensor ρ) (Subgroup.pi Set.univ K)) :=
-  GlobalTheory.T.finiteDimensional_compact_fixed_vectors_piTensor_smooth ρ hρ K hK hf
+  _root_.GlobalTheory.PiTensorFixed.finiteDimensional_fixed_piTensor ρ hρ K hK hf
 
 end Fixed
 

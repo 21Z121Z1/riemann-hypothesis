@@ -2,9 +2,9 @@ module
 
 public import Development.WeilBound.RepresentationTheoryGL.UnitaryDualProof.HermitianForms.SelfAdjointForms.FixK
 public import Development.WeilBound.RepresentationTheoryGL.UnitaryDualProof.HermitianForms.SelfAdjointForms.MirabolicVectors.ContinuousMulVec
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsCosetRepsOpenInCompactStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CardCosetRepsEqRelIndexStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsCharacterSeparatingLatticeStatement
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0026
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0024
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0087
 public import Mathlib
 
 @[expose] public section

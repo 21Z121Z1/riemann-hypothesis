@@ -3,9 +3,9 @@ module
 public import Mathlib
 public import Formalism.LocalToGlobal.SiegelLatticeTheory.ClosedLocalOrbits.TermDef
 public import Formalism.LocalToGlobal.SiegelLatticeTheory.ClosedLocalOrbits.GaugeLatticeShifts.PtCellUniq
-public import Formalism.SharpRestriction.CuspSpanNormBounds.BruhatCellsKronecker.CellInv
+public import Formalism.SharpRestriction.CuspSpanNormBounds.BruhatCellsKronecker.Bundle0001
 public import Formalism.SharpRestriction.CuspSpanNormBounds.BruhatCellsKronecker.CellGeo
-public import Formalism.SharpRestriction.CuspSpanNormBounds.BruhatCellsKronecker.CellFin
+public import Formalism.SharpRestriction.CuspSpanNormBounds.BruhatCellsKronecker.Bundle0006
 public import Formalism.SharpRestriction.CuspSpanNormBounds.FlagEEqHyperbolic
 
 @[expose] public section

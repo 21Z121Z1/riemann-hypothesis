@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.TorusHaarMeasure.PolyImgSuccAbove
+public import Development.AbelianVarietyTheory.Proofs.TorusHaarMeasure.Bundle0006
 
 @[expose] public section
 

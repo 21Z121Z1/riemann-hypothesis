@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Formalism.HermitianCurvature.LatticeHerglotzBound
+public import Formalism.HermitianCurvature.Bundle0004
 
 @[expose] public section
 

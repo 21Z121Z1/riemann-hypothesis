@@ -1,10 +1,10 @@
 module
 
 public import Formalism.LocalRingCardinality.RhoDetPrimeEqMuTildeMulChiPow
-public import Formalism.LocalRingCardinality.DataDIVDefs
+public import Formalism.LocalRingCardinality.Bundle0003
 public import Formalism.LocalRingCardinality.DataLatDefs
-public import Formalism.LocalRingCardinality.DataKap
-public import Formalism.LocalRingCardinality.DataExtra
+public import Formalism.LocalRingCardinality.Bundle0004
+public import Formalism.LocalRingCardinality.Bundle0007
 public import Formalism.LocalRingCardinality.DataParams
 public import Formalism.LocalRingCardinality.RankBoundMonotoneInDimension
 public import Formalism.HarderNarasimhan.HarderNarasimhanProofs.Rerealize

@@ -1,10 +1,7 @@
 module
 
 public import Mathlib
-public import GroundTheory.HeightsAndTheta.Heights.AnalyticLimit.GreenMassZero
-public import GroundTheory.HeightsAndTheta.Heights.AnalyticLimit.GreenMassStep
-public import GroundTheory.HeightsAndTheta.Heights.AnalyticLimit.GreenMassReplace
-public import GroundTheory.HeightsAndTheta.Heights.AnalyticLimit.GreenMassError
+public import GroundTheory.HeightsAndTheta.Heights.AnalyticLimit.Bundle0003
 
 @[expose] public section
 

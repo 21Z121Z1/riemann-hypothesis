@@ -1,6 +1,6 @@
 module
 
-public import Formalism.SubspaceCounting.Statement
+public import Formalism.SubspaceCounting.Bundle0001
 
 @[expose] public section
 

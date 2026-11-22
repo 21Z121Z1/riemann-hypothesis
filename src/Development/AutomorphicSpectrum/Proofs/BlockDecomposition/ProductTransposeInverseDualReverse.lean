@@ -2,11 +2,11 @@ module
 
 public import Mathlib
 public import Development.WeilBound.CoreStatements.TemperedRepresentationTheory.ZelevinskyJacquet.ZelevinskyCosocles.GKLocal
-public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.IrreducibleAdmissibleGL
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.NormalisedParabolicInductionReindexEquiv
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.TransposeInverseInvolutionApply
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.GelfandKazhdanContragredient
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.DualClassInvolutive
+public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.Bundle0002
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0209
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0356
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0351
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0349
 
 @[expose] public section
 

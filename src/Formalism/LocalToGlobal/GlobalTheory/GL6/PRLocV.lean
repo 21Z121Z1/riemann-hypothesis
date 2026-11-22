@@ -1,6 +1,6 @@
 module
 
-public import Formalism.LocalToGlobal.GlobalTheory.GL6.RndLinkAdmTOf
+public import Formalism.LocalToGlobal.GlobalTheory.GL6.Bundle0005
 public import Formalism.LocalToGlobal.GlobalTheory.GL6.PSplitT
 public import Formalism.LocalToGlobal.GlobalTheory.GL4.PFrLoc
 

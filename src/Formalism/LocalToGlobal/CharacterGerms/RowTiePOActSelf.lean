@@ -1,7 +1,7 @@
 module
 
-public import Formalism.LocalToGlobal.CharacterGerms.RowTiePOAct
-public import Formalism.LocalToGlobal.CharacterGerms.RowTiePPTSelf
+public import Formalism.LocalToGlobal.CharacterGerms.Bundle0028
+public import Formalism.LocalToGlobal.CharacterGerms.Bundle0032
 
 @[expose] public section
 

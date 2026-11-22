@@ -1,12 +1,12 @@
 module
 
 public import Mathlib
-public import GroundTheory.HeightsAndTheta.Heights.ElementarySymmetric.StInterNumPointDeg
-public import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.InterNumRestrictSt
-public import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.PInterNumPoint
+public import GroundTheory.HeightsAndTheta.Heights.ElementarySymmetric.Bundle0005
+public import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.Bundle0010
+public import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.Bundle0018
 public import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.PHilbertPoint
-public import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.PHilbertPositive
-public import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.PVeryAmpleDim
+public import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.Bundle0035
+public import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.Bundle0023
 
 @[expose] public section
 

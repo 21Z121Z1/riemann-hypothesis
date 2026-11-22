@@ -1,7 +1,7 @@
 module
 
-public import Formalism.SharpRestriction.GenusPolyhedralBounds.RelativeIndexClassSets.WeightedPrimeSumBound
-public import Formalism.LocalToGlobal.ProjectiveLattices.ExtendedPointBaseChange
+public import Formalism.SharpRestriction.GenusPolyhedralBounds.RelativeIndexClassSets.Bundle0002
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0019
 
 @[expose] public section
 

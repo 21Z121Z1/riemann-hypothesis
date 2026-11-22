@@ -1,13 +1,13 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Divisors.SimpleTwistedTraceFormulaStable
-public import Development.AbelianVarietyTheory.Definitions.Divisors.IsUnifAt
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0026
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0036
 public import Development.WeilBound.RepresentationTheoryGL.TwistedFactors.LocalBaseChange.ElementaryCosets.CosetMap
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LocalConjugationInvolutiveValuationPreservingStatement
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1075
 public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsNormalisedThetaSub
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IwahoriAndMaximalCompactCriteriaStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.DiagonalTorusCommutativeStatement
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0563
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0372
 
 @[expose] public section
 
@@ -27,9 +27,9 @@ theorem thL_eq_thetaGL (w : Pl E) (hw : ¬ IsSplitAt w) (n : ℕ) : thL n w = Gl
   unfold thL
   rw [if_neg hw]
 
-theorem cj_cj' (w : Pl E) (x : w.adicCompletion E) : cj w (cj w x) = x := (GlobalTheory.T.localConjugation_involutive_valuation_preserving E w).1 x
+theorem cj_cj' (w : Pl E) (x : w.adicCompletion E) : cj w (cj w x) = x := (_root_.GlobalTheory.BCT.cj_involutive_valuation E w).1 x
 
-theorem v_cj' (w : Pl E) (x : w.adicCompletion E) : Valued.v (cj w x) = Valued.v x := (GlobalTheory.T.localConjugation_involutive_valuation_preserving E w).2 x
+theorem v_cj' (w : Pl E) (x : w.adicCompletion E) : Valued.v (cj w x) = Valued.v x := (_root_.GlobalTheory.BCT.cj_involutive_valuation E w).2 x
 
 theorem continuous_cj' (w : Pl E) : Continuous (cj w) := by
   unfold cj
@@ -163,7 +163,7 @@ theorem thL_mem_Nlo (w : Pl E) (hw : ¬ IsSplitAt w) (n : ℕ) {g : GLw n w}
 
 theorem thL_mem_Tor (w : Pl E) (hw : ¬ IsSplitAt w) (n : ℕ) {g : GLw n w}
     (hg : g ∈ PositivityTheory.Lbc.Tor (w.adicCompletion E) n) : thL n w g ∈ PositivityTheory.Lbc.Tor (w.adicCompletion E) n := by
-  have hT := fun x : GLw n w => (GlobalTheory.T.diagonal_torus_commutative (k := w.adicCompletion E) n).2 x
+  have hT := fun x : GLw n w => (_root_.GlobalTheory.CompanionTheory.LbElem.TorComm.tor_comm_and_mem_iff (k := w.adicCompletion E) n).2 x
   have h0 := (hT g⁻¹).1 (inv_mem hg)
   refine (hT _).2 fun i j hij => ?_
   show (thL n w g).val i j = 0

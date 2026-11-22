@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Development.WeilBound.CoreStatements.AutomorphicKernels.BernsteinUnitaryProducts.BernsteinTheoremA.FrobeniusReciprocity.SupportedInIffOfFrob
-public import GroundTheory.AutomorphicForms.LocallyConstantCompact
+public import GroundTheory.AutomorphicForms.Bundle0007
 public import Development.WeilBound.RepresentationTheoryGL.UnitaryDualProof.FrobeniusReciprocity.PowNear
 
 @[expose] public section

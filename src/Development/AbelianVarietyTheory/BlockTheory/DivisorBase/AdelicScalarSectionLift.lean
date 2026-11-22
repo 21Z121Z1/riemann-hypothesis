@@ -2,8 +2,8 @@ module
 
 public import Mathlib
 public import Formalism.LocalToGlobal.IndefiniteReal.OneMapT
-public import Formalism.LocalToGlobal.IndefiniteReal.FWTie
-public import Formalism.LogFactorialIndices.StatementSize
+public import Formalism.LocalToGlobal.IndefiniteReal.Bundle0025
+public import Formalism.LogFactorialIndices.Bundle0001
 
 @[expose] public section
 

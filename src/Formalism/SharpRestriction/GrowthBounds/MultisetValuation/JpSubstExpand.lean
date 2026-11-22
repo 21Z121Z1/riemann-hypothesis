@@ -1,6 +1,6 @@
 module
 
-public import Formalism.SharpRestriction.GrowthBounds.MultisetValuation.CoeffProdRename
+public import Formalism.SharpRestriction.GrowthBounds.MultisetValuation.Bundle0001
 
 @[expose] public section
 

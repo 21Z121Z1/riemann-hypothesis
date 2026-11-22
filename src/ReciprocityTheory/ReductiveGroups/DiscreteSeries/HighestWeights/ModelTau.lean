@@ -1,7 +1,7 @@
 module
 
 public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.HighestWeights.ModelInner
-public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.HighestWeights.ModelGen
+public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.HighestWeights.Bundle0004
 
 @[expose] public section
 

@@ -6,10 +6,10 @@ public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDesc
 public import Development.AbelianVarietyTheory.Definitions.ArchimedeanThetaValues.ArcDictExpZeroSection
 public import Development.AbelianVarietyTheory.Definitions.ArchimedeanThetaValues.IsFShiftZeroIff
 public import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.HasSumLocallyUniformlyOnTerm
-public import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.ExistsBasisFSum
-public import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.ExistsCoeffMemSubfield
-public import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.RepTransport
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ObjIsAbelianSchemeDimRigidifiedSym
+public import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.Bundle0023
+public import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.Bundle0022
+public import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.Bundle0026
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0054
 
 @[expose] public section
 

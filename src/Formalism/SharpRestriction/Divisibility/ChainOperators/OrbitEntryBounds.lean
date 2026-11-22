@@ -1,15 +1,12 @@
 module
 
-public import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.OrbAddUp
-public import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.OrbAddOne
-public import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.OrbRestr
-public import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.OrbRestrOne
-public import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.EntAtD
-public import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.SumOrbC
-public import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.OrbBoundF
+public import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.Bundle0032
+public import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.Bundle0031
+public import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.Bundle0029
+public import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.Bundle0030
+public import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.Bundle0035
 public import Formalism.SharpRestriction.Divisibility.OrbitPlaces
-public import Development.AutomorphicArithmetic.OrbitLabellings.KvalGeThetaOfShape
-public import Development.AutomorphicArithmetic.OrbitLabellings.FInertSubEatILeOrbitAverageSubErrors
+public import Development.AutomorphicArithmetic.OrbitLabellings.Bundle0003
 
 @[expose] public section
 

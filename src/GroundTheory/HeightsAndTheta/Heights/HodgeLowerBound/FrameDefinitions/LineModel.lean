@@ -4,7 +4,7 @@ public import Mathlib
 public import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.FrameDefinitions.LineMu
 public import GroundTheory.HeightsAndTheta.Heights.Regularisation.Statements
 public import GroundTheory.HeightsAndTheta.Heights.FubiniStudyCharts
-public import GroundTheory.HeightsAndTheta.Heights.Regularisation.PBoundedGlue
+public import GroundTheory.HeightsAndTheta.Heights.Regularisation.Bundle0006
 
 @[expose] public section
 

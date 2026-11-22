@@ -1,15 +1,15 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsQuasiInv
-public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.RangeSubsetOfGeom
-public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsFiniteEtaleLatticeTorsionHom
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.OverSchemeGrpObjOfMonoFactorStatement
-public import Development.AutomorphicArithmetic.Foundations.EtaleClopenDescent.SubRepPull
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2069
+public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0030
+public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0019
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0091
+public import Development.AutomorphicArithmetic.Foundations.EtaleClopenDescent.Bundle0011
 public import Development.AutomorphicArithmetic.Foundations.EtaleClopenDescent.ExistsFiniteEtaleRepresentingClopenSubschemes
-public import Development.AutomorphicArithmetic.CommutativeAlgebra.ClopenCondOfIsClosedSubgroupLocus
+public import Development.AutomorphicArithmetic.CommutativeAlgebra.Bundle0046
 public import Development.AutomorphicArithmetic.CommutativeAlgebra.ExistsLiftOfClosedSubgroupLocus
-public import Development.AutomorphicArithmetic.CommutativeAlgebra.ExistsClosedLocusOfTorsionAbelianScheme
+public import Development.AutomorphicArithmetic.CommutativeAlgebra.Bundle0047
 
 @[expose] public section
 
@@ -233,7 +233,7 @@ theorem UpperTheory.Cb.exists_finite_etale_trivializing_torsion_abelianScheme :
   have hinv : ∃ v, v ≫ torsion.ι A k = torsion.ι A k ≫ ι := by
     refine (GlobalTheory.LatticeTorsion.existsUnique_torsion A k _ ?_).exists
     rw [← Hom.inv_def, inv_pow, GlobalTheory.LatticeTorsion.torsionι_pow_eq_one, inv_one]
-  obtain ⟨inst, hmon⟩ := GlobalTheory.T.exists_grpObj_isMonHom_of_mono_factor S A (torsion A k) (torsion.ι A k) hmono hmul hone hinv
+  obtain ⟨inst, hmon⟩ := _root_.GlobalTheory.overScheme_grpObj_of_mono_factor S A (torsion A k) (torsion.ι A k) hmono hmul hone hinv
   haveI := hfin
   haveI := het
   exact UpperTheory.SubRep.core A (torsion A k) (torsion.ι A k) hmono hmon k hu

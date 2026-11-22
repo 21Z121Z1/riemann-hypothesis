@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsFiltrationHilbSum
-public import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.PFiltrationStepHilb
-public import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.PGradedPieceQuot
+public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0008
+public import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.Bundle0006
+public import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.Bundle0007
 
 @[expose] public section
 

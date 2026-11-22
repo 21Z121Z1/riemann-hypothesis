@@ -2,8 +2,8 @@ module
 
 public import Formalism.HarderNarasimhan.StatementPl
 public import Formalism.LatticeSlopes.ExistsSaturatedSlopeEqMuMax
-public import Formalism.HarderNarasimhan.HarderNarasimhanProofs.SatBasic
-public import Formalism.HarderNarasimhan.HarderNarasimhanProofs.MuChar
+public import Formalism.HarderNarasimhan.HarderNarasimhanProofs.Bundle0002
+public import Formalism.HarderNarasimhan.HarderNarasimhanProofs.Bundle0004
 public import Formalism.HarderNarasimhan.HarderNarasimhanProofs.DiscreteSpanOfLinIndep
 
 @[expose] public section

@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Formalism.LocalToGlobal.KernelLattices.MuProd
+public import Formalism.LocalToGlobal.KernelLattices.Bundle0003
 public import Formalism.LocalToGlobal.KernelLattices.KernelLocalFactors.ThDistC
-public import Formalism.LocalToGlobal.Columns.RowFormsSel
+public import Formalism.LocalToGlobal.Columns.Bundle0005
 public import Formalism.LocalToGlobal.Columns.ChainInst
 
 @[expose] public section

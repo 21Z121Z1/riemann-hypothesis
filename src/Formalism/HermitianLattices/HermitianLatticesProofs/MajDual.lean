@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Formalism.HermitianLattices.StatementMaj
-public import Formalism.HermitianLattices.HermitianLatticesProofs.MajLattice
+public import Formalism.HermitianLattices.Bundle0002
+public import Formalism.HermitianLattices.HermitianLatticesProofs.Bundle0004
 
 @[expose] public section
 

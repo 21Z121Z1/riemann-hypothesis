@@ -1,7 +1,7 @@
 module
 
-public import Development.AutomorphicArithmetic.Foundations.Convolution.SplitEigenfunctions.CharacterNorms.FacDefs
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.CharpolySmulMap
+public import Development.AutomorphicArithmetic.Foundations.Convolution.SplitEigenfunctions.CharacterNorms.Bundle0001
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0336
 public import PositivityTheory.AutomorphicForms.PublishedInputs.HilbertEisenstein.IdeleModuleInfIdDetLe
 
 @[expose] public section

@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.HasBareNormDisc
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ComplexUniformisationHolds
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsNumberFieldPoint
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.Bundle0012
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0201
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0331
 public import Development.AbelianVarietyTheory.Statements.HyperbolicHypotheses.HypothesesInhabitedHyperbolic
 public import Development.WeilBound.CoreStatements.TorusUniformisation.ChowMahlerFamilies.LocallyQuasiFiniteSpMap
 

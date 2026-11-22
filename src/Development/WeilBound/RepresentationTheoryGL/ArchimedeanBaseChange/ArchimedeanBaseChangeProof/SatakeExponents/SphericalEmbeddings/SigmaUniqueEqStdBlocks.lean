@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.LeviEmbMulSingle
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0039
 public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IsIrreducibleIffOfLinearEquiv
 
 @[expose] public section

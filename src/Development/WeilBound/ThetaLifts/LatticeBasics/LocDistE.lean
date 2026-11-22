@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.WeilBound.ThetaLifts.LatticeBasics.LocDistB
+public import Development.WeilBound.ThetaLifts.LatticeBasics.Bundle0003
 public import Development.WeilBound.ThetaLifts.LatticeBasics.LocDistD
 
 @[expose] public section

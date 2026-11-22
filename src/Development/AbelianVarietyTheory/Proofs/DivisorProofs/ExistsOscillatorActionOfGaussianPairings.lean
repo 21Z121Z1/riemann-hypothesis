@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ContinuousFourierGau
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntegralGauTwistedConv
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PowMulNormGauLe
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0012
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0153
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0167
 
 @[expose] public section
 

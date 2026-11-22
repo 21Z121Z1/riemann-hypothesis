@@ -1,13 +1,13 @@
 module
 
 public import Mathlib
-public import Formalism.SharpRestriction.LevelLetterCocycles.UsedLocalConclusion
-public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.NotFullBot
+public import Formalism.SharpRestriction.LevelLetterCocycles.Bundle0006
+public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0004
 public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.ApplyLayers
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FrobeniusSubOneWittTensorLatticeSurjectiveFixed
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0255
 public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsGammaLayerPadicCoordinates
 public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsUniqueFits
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.EtaleComparisonPiWachLatticeClosedWeakStatement
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0527
 
 @[expose] public section
 

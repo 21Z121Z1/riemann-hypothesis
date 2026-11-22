@@ -1,7 +1,7 @@
 module
 
-public import Formalism.SharpRestriction.CuspSpanNormBounds.FrobeniusCoefficientMemLp.SigmaFiniteAmplitudes.RStabInv
-public import Formalism.PeriodIntegrals.ContinuousExpLie
+public import Formalism.SharpRestriction.CuspSpanNormBounds.FrobeniusCoefficientMemLp.SigmaFiniteAmplitudes.Bundle0001
+public import Formalism.PeriodIntegrals.Bundle0018
 
 @[expose] public section
 

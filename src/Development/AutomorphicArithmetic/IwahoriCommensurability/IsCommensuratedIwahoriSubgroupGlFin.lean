@@ -2,11 +2,11 @@ module
 
 public import Mathlib
 public import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.ScalarCommutation.AuxiliaryPrimeFunction
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IwahoriDoubleCosetTorusNilpotent
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsAddCharConductorMaxIdeal
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SeedOrbKVanish
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.IwahoriSubgroupDefinitionsAgree
-public import Development.AutomorphicArithmetic.IwahoriCommensurability.IsCommensuratedIwahoriGl
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0443
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0686
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1211
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0353
+public import Development.AutomorphicArithmetic.IwahoriCommensurability.Bundle0001
 
 @[expose] public section
 

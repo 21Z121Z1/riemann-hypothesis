@@ -1,10 +1,10 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsFockMap
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TrPairApply
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsAtEvIPiInfEq
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EqZeroOfAtOfPiInf
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0922
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1231
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1292
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1291
 
 @[expose] public section
 

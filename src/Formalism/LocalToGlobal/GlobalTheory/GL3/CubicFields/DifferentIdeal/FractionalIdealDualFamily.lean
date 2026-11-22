@@ -1,7 +1,7 @@
 module
 
 public import Formalism.LocalToGlobal.GlobalTheory.GL3.CubicFields.DifferentIdeal.LineR
-public import Formalism.LocalToGlobal.GlobalTheory.GL3.CubicFields.DifferentIdeal.SumEmbDualBasisComplex
+public import Formalism.LocalToGlobal.GlobalTheory.GL3.CubicFields.DifferentIdeal.Bundle0001
 
 @[expose] public section
 

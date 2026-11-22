@@ -3,7 +3,7 @@ module
 public import Mathlib
 public import Development.WeilBound.CoreStatements.PeriodRingComparison.CrystallinePeriodRings.GammaEqDpow
 public import Development.AutomorphicArithmetic.IntegralCasts.CrystallinePeriods.DeRham
-public import Development.AutomorphicArithmetic.IntegralCasts.CrystallinePeriods.DeRhamMap
+public import Development.AutomorphicArithmetic.IntegralCasts.CrystallinePeriods.Bundle0001
 public import Development.WeilBound.CoreStatements.CrystallinePeriodRings.ExistsMapEqOfPowMul
 
 @[expose] public section

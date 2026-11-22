@@ -1,12 +1,11 @@
 module
 
 public import Mathlib
-public import Formalism.LocalToGlobal.CharacterGerms.HostTraceIdentity
+public import Formalism.LocalToGlobal.CharacterGerms.Bundle0012
 public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.SaturationChartsHolds
 public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.IntegralChartDirectionsAreEigenvectors
-public import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.EigenvectorMemSpanBlockOfBasis
-public import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.SaturatedBlocksSummand
-public import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.VVAlgebraMapNonnegDvr
+public import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.Bundle0032
+public import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.Bundle0033
 
 @[expose] public section
 

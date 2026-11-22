@@ -1,11 +1,11 @@
 module
 
 public import Mathlib
-public import ReciprocityTheory.DualLattices.CotangentSurjective
+public import ReciprocityTheory.DualLattices.Bundle0004
 public import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.IsTight
-public import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.StepOrderRes
-public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.FundamentalIdealFrobeniusPowersStatement
-public import Development.WeilBound.CoreStatements.TorusUniformisation.ChowMahlerFamilies.XXgrROm
+public import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.Bundle0003
+public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.Bundle0044
+public import Development.WeilBound.CoreStatements.TorusUniformisation.ChowMahlerFamilies.Bundle0024
 
 @[expose] public section
 

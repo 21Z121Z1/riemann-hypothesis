@@ -2,11 +2,11 @@ module
 
 public import Mathlib
 public import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.InfinitesimalCharacterLimits.TwistStripLimits.BlockTypes
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FinStable
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FlatAbsoluteCharacter
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.TypedSecondBlockRestriction
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0697
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0702
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0707
 public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CommuteRtOfMemZalg
-public import Development.WeilBound.RepresentationTheoryGL.ResidualSpectrum.SliceTensors.PProjA
+public import Development.WeilBound.RepresentationTheoryGL.ResidualSpectrum.SliceTensors.Bundle0003
 
 @[expose] public section
 

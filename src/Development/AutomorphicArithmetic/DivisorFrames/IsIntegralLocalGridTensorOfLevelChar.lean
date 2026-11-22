@@ -3,7 +3,7 @@ module
 public import Mathlib
 public import Development.AbelianVarietyTheory.Statements.HeckeThetaIntegrals.FormulaAt
 public import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsGivenStageEqOne
-public import Development.AutomorphicArithmetic.DivisorFrames.IsIntegralUnitCharOfConductorLe
+public import Development.AutomorphicArithmetic.DivisorFrames.Bundle0002
 
 @[expose] public section
 

@@ -1,8 +1,8 @@
 module
 
-public import Formalism.SizeWindowBrackets.QuotientSlopeBoundsWith
-public import Formalism.SizeWindowBrackets.GrowthBoundGivesRiemannHypothesis
-public import Formalism.SizeWindowBrackets.ErrorFormsWeakWindowsFalse
+public import Formalism.SizeWindowBrackets.Bundle0002
+public import Formalism.SizeWindowBrackets.Bundle0003
+public import Formalism.SizeWindowBrackets.Bundle0004
 
 @[expose] public section
 

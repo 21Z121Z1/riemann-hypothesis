@@ -4,10 +4,10 @@ public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.Jets.JetsOnCopiesCompatibleFrames
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.UnifUniqSt
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.DiscreteValuationRings.TwistBCPf
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.FirstCohomology.GenProd
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.FirstCohomology.Bundle0002
 public import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.FrameBiextDictionarySecondPartialLaw
-public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.IsLawOfOfMatch
-public import Development.AbelianVarietyTheory.Proofs.FormalGroupCharts.RosIdSt
+public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0072
+public import Development.AbelianVarietyTheory.Proofs.FormalGroupCharts.Bundle0031
 
 @[expose] public section
 

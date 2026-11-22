@@ -2,12 +2,12 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.RegularCharts.ModelAt
-public import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.FramedPointBaseChangeLaws
-public import Formalism.LocalToGlobal.ProjectiveLattices.IntFrames
+public import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.Bundle0032
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0016
 public import Formalism.LocalToGlobal.ProjectiveLattices.ThetaFramePf
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.SecBaseChangeAnySt
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.ChartPullbacks.CubePullbacks.CubePull
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.RankLie
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.Bundle0008
 
 @[expose] public section
 

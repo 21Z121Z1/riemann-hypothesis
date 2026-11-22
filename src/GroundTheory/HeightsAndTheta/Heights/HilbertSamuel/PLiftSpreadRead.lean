@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PGenOnFibres
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsKodairaGeneric
+public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0022
 
 @[expose] public section
 

@@ -3,8 +3,8 @@ module
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.Divisors.HilbertNinetyQuotientHomEqIff
 public import GroundTheory.AutomorphicForms.GL2.GJMatrixInfinite
-public import GroundTheory.GlobalFields.TateThesis.AdelePoissonUniform
-public import GroundTheory.GlobalFields.Adele.Compact
+public import GroundTheory.GlobalFields.TateThesis.Bundle0009
+public import GroundTheory.GlobalFields.Adele.Bundle0002
 
 @[expose] public section
 

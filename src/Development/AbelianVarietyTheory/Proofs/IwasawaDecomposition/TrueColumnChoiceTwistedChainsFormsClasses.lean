@@ -2,24 +2,23 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.StdLvPr
-public import Formalism.LocalToGlobal.HermitianForms.TiedTwJSym
-public import Formalism.LocalToGlobal.HermitianForms.TiedTwSym
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ChartsTupleTrivQ
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ChartLastStepTwistBasePointStatement
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.HermitianChartComplexRationalIntegralFormsStatement
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.DiamondOperatorsOnChartsStatement
+public import Formalism.LocalToGlobal.HermitianForms.Bundle0006
+public import Formalism.LocalToGlobal.HermitianForms.Bundle0007
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0447
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0430
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0389
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0399
 public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.UnitaryOfIsON
 public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ChartWiden
 public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.InclMulInvMul
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.NonemptyClassMapAboveLastStepStatement
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.TwistPlacesPrimeToLevelAndTypePrimesStatement
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.NotTwistPlaceReferenceTupleStatement
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.StepZeroClassEquivReferenceTupleEqSelfStatement
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.StepZeroFormsIdentificationReferenceTupleEqSelfStatement
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.DecoStabTrivial
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.StepQOfReindex
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsPenultimateLevelCouplingCosetsStatement
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsLevelJCharacterEqMemberOffPlacesStatement
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0305
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0308
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0311
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0315
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0301
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0458
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0691
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0318
 
 @[expose] public section
 
@@ -161,7 +160,7 @@ theorem twStep_mid (hok : I.Ok) (pins : TC.Pins B X) {H : Formalism.L2.Herm.Herm
     (hQ : ∀ v, v ∈ Q ↔ I.UnderQ a v)
     (hF : ∀ u, I.StdF l Z u (F u)) (hC : CarH H F) : Nonempty (TwStep I l Z H F Q u a i) := by
   have hoff : ∀ v ∈ Q, ((B.T u : ℕ) : 𝓞 (_root_.GlobalTheory.Mem.assemble _ _ Z.W Z.V Z.S Z.N Z.G).host.F) ∉ v.asIdeal ∧ ∀ j, (((_root_.GlobalTheory.Mem.assemble _ _ Z.W Z.V Z.S Z.N Z.G).host.g j : ℕ) : 𝓞 (_root_.GlobalTheory.Mem.assemble _ _ Z.W Z.V Z.S Z.N Z.G).host.F) ∉ v.asIdeal :=
-    fun v hv => GlobalTheory.T.twistPlaces_prime_to_levelAndTypePrimes I hok l u a v ((hQ v).1 hv)
+    fun v hv => _root_.GlobalTheory.Mem.Col2.TC.underQ_prime_to_bad I hok l u a v ((hQ v).1 hv)
   have hi : i ≤ B.R.m := le_of_succ_m h2
   by_cases ha : a = I.mu0
   · subst ha
@@ -206,7 +205,7 @@ theorem twStep_top (hok : I.Ok) (pins : TC.Pins B X) {H : Formalism.L2.Herm.Herm
     (hQ : ∀ v, v ∈ Q ↔ I.UnderQ a v)
     (hF : ∀ u, I.StdF l Z u (F u)) (hC : CarH H F) : ∃ S : TwStep I l Z H F Q u a B.R.m, TopP S := by
   have hoff : ∀ v ∈ Q, ((B.T u : ℕ) : 𝓞 (_root_.GlobalTheory.Mem.assemble _ _ Z.W Z.V Z.S Z.N Z.G).host.F) ∉ v.asIdeal ∧ ∀ j, (((_root_.GlobalTheory.Mem.assemble _ _ Z.W Z.V Z.S Z.N Z.G).host.g j : ℕ) : 𝓞 (_root_.GlobalTheory.Mem.assemble _ _ Z.W Z.V Z.S Z.N Z.G).host.F) ∉ v.asIdeal :=
-    fun v hv => GlobalTheory.T.twistPlaces_prime_to_levelAndTypePrimes I hok l u a v ((hQ v).1 hv)
+    fun v hv => _root_.GlobalTheory.Mem.Col2.TC.underQ_prime_to_bad I hok l u a v ((hQ v).1 hv)
   have h1m : 1 ≤ B.R.m := one_le_m B.R
   have hr0 := (hF u).ends B.R.m le_rfl (Or.inr rfl)
   have hno : ∀ h2 : B.R.m + 1 ≤ B.R.m, False := fun h2 => by omega
@@ -288,7 +287,7 @@ theorem twPack_ex (hok : I.Ok) (pins : TC.Pins B X) {H : Formalism.L2.Herm.HermC
       · by_cases h3 : i = B.R.m
         · subst h3
           exact (twStep_top hok pins u a hQ hF hC).elim fun S _ => ⟨S⟩
-        · obtain ⟨f⟩ := GlobalTheory.T.nonempty_classMap_above_lastStep I hok u a i (by omega)
+        · obtain ⟨f⟩ := _root_.GlobalTheory.Mem.Col2.TC.nonempty_clDown I hok u a i (by omega)
           exact twStep_out u a i (by omega) (fun c => H.chOf u i (f c))
   obtain ⟨Sm, hSm⟩ := twStep_top (F := F) (Q := Q) hok pins u a hQ hF hC
   let St : ∀ i, TwStep I l Z H F Q u a i := Function.update (fun i => (ex i).some) B.R.m Sm
@@ -444,7 +443,7 @@ def twW (hok : I.Ok) (pins : TC.Pins B X) (l0 : I.Law0 l) {H : Formalism.L2.Herm
           exact (hF u).eV v)
       ipV u μ i hi := (GlobalTheory.Mem.Col2.MetricTie.ipV_norm_tie I hok pins l Z u μ i hi _ (idY_twYS hF Q hQ p u μ i hi)).1
       norm u μ i hi := (GlobalTheory.Mem.Col2.MetricTie.ipV_norm_tie I hok pins l Z u μ i hi _ (idY_twYS hF Q hQ p u μ i hi)).2
-      twisted_e0_at_mu0_eq_eMu0 u x := GlobalTheory.T.stepZeroFormsIdentification_referenceTuple_eq_self I hok l Z l0 u x, .. }
+      twisted_e0_at_mu0_eq_eMu0 u x := _root_.GlobalTheory.Mem.Col2.TC.MuZeroForms.law0_choose_mu0_eq_self I hok l Z l0 u x, .. }
   all_goals
     intro u μ h κ κ' e hv
     exact (p u μ).off κ κ' e hv
@@ -478,9 +477,9 @@ theorem tw_chains : ∀ {B : Base} {X : PreX B.toPre} (I : TC B X), I.Ok → TC.
   let p := fun u a => (P u a).some
   choose A hA hA' using fun u a => GlobalTheory.Mem.Col2.TwAtStd.twAtT_exists I hok pins l Z l0 u a
   have hoff : ∀ (u : B.Word) a, ∀ v ∈ Q a, ((B.T u : ℕ) : 𝓞 (I.rec7 l Z).host.F) ∉ v.asIdeal ∧ ∀ j, (((I.rec7 l Z).host.g j : ℕ) : 𝓞 (I.rec7 l Z).host.F) ∉ v.asIdeal :=
-    fun u a v hv => GlobalTheory.T.twistPlaces_prime_to_levelAndTypePrimes I hok l u a v ((hQ a v).1 hv)
+    fun u a v hv => _root_.GlobalTheory.Mem.Col2.TC.underQ_prime_to_bad I hok l u a v ((hQ a v).1 hv)
   refine ⟨twT Q hQ' p, twJ Q hQ' p hoff, twW hok pins l0 hF' Q hQ' p hoff A hA, ⟨fun u i hi => Equiv.ext fun y => rfl,
-    fun u => Equiv.ext fun c => GlobalTheory.T.eCls0_mu0_eq_self I hok l u c⟩, ⟨fun _ _ => rfl, fun _ _ _ _ => rfl, fun _ _ _ => rfl, hA, ?_,
+    fun u => Equiv.ext fun c => _root_.GlobalTheory.Mem.Col2.TC.MuZeroCls.stepZeroClassEquiv_referenceTuple_eq_self I hok l u c⟩, ⟨fun _ _ => rfl, fun _ _ _ _ => rfl, fun _ _ _ => rfl, hA, ?_,
     fun u a _ i h1 hm => ((p u a).St i).reads h1 hm, fun u a ha h1 β => (p u a).top.top ha h1 β,
     fun u a ha h1 => (p u a).top.topk ha h1, fun u a _ i h1 hm β => ((p u a).St i).fk h1 hm β⟩, ⟨twJS Q hQ' p⟩⟩
   intro u a v r

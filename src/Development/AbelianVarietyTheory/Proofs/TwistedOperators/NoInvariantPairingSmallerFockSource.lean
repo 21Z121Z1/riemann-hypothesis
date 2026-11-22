@@ -2,10 +2,10 @@ module
 
 public import Mathlib
 public import Formalism.SharpRestriction.Divisibility.SchurIrreducible
-public import Formalism.LocalToGlobal.BesselHermitianTheta.DefsReal
+public import Formalism.LocalToGlobal.BesselHermitianTheta.Bundle0001
 public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsFiniteDimensionalKill
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FockOperatorsLieRepresentationCommute
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FockPolynomialsLocallyFiniteRationalWeights
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0545
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0518
 
 @[expose] public section
 

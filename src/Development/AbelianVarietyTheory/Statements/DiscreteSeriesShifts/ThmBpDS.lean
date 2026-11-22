@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.Jets.SumIoPrAlt
-public import Formalism.HermitianCurvature.StatementTBB
+public import Formalism.HermitianCurvature.Bundle0010
 public import Formalism.SharpRestriction.CuspSpanNormBounds.LeadMinorK
 
 @[expose] public section

@@ -1,6 +1,6 @@
 module
 
-public import Formalism.LocalToGlobal.ThresholdSelection
+public import Formalism.LocalToGlobal.Bundle0001
 public import Formalism.SharpRestriction.SmoothDesignExistence.SumOverPrimesHypotheses
 
 @[expose] public section

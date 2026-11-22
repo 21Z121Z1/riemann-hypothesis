@@ -1,11 +1,11 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.ThetaValues.IsNullVal
-public import Development.AbelianVarietyTheory.Definitions.Uniformization.AllDV
+public import Development.AbelianVarietyTheory.Definitions.ThetaValues.Bundle0001
+public import Development.AbelianVarietyTheory.Definitions.Uniformization.Bundle0001
 public import Formalism.LocalToGlobal.ProjectiveLattices.ChartDirectionsIntegral
 public import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.HarmonicValuesInvariantUniversalEndomorphism
-public import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.ExistsPolAVPullbackOfIsLocalRing
+public import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.Bundle0011
 public import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.LinearIndependentOfIsExtension
 
 @[expose] public section

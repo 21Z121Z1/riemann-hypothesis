@@ -1,8 +1,7 @@
 module
 
-public import Formalism.ThetaLogCoordinates.TraceIsometryWeights.StatementB
-public import Formalism.ThetaLogCoordinates.TraceIsometryWeights.SchurTraceProofs.HomRelationHolds
-public import Formalism.ThetaLogCoordinates.TraceIsometryWeights.SchurTraceProofs.InvInt
+public import Formalism.ThetaLogCoordinates.TraceIsometryWeights.Bundle0001
+public import Formalism.ThetaLogCoordinates.TraceIsometryWeights.SchurTraceProofs.Bundle0001
 
 @[expose] public section
 

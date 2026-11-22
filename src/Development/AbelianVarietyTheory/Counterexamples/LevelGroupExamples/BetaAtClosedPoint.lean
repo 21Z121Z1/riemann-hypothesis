@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Formalism.LocalToGlobal.ProjectiveLattices.BetaAtSymm
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.PsiCoordExistsUniqueUpToUnitLocal
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0009
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0049
 
 @[expose] public section
 

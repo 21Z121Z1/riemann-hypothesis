@@ -1,6 +1,6 @@
 module
 
-public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.WeylFormulaCompact.DimStepB
+public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.WeylFormulaCompact.Bundle0002
 
 @[expose] public section
 

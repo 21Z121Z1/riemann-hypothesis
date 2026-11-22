@@ -2,8 +2,8 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.Foundations.IsProbabilityMeasureMuPart
-public import Formalism.LocalToGlobal.ProjectiveLattices.FamilyUniformisationBasePointOrthogonalBis
-public import Formalism.LocalToGlobal.ProjectiveLattices.LiftLaSpec
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0027
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0013
 public import Formalism.LocalToGlobal.ProjectiveLattices.ThShort
 public import Formalism.LocalToGlobal.Divisibility.GoodPartHermitianSpec
 public import Formalism.LocalToGlobal.IndefiniteReal.FWExist

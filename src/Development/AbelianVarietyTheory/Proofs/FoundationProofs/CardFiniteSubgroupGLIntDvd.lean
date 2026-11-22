@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.ExistsInvariantNatLengthLattice
+public import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.Bundle0010
 
 @[expose] public section
 

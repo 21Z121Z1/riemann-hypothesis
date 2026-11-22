@@ -1,8 +1,8 @@
 module
 
-public import Formalism.SharpRestriction.GrowthBounds.CoarseMultiplicity.BFDefs
-public import Formalism.SharpRestriction.GrowthBounds.BinomialRatio.FinrankTensor
-public import Formalism.SharpRestriction.GrowthBounds.BinomialRatio.ExtendedStatementOfParts
+public import Formalism.SharpRestriction.GrowthBounds.CoarseMultiplicity.Bundle0005
+public import Formalism.SharpRestriction.GrowthBounds.BinomialRatio.Bundle0004
+public import Formalism.SharpRestriction.GrowthBounds.BinomialRatio.Bundle0003
 
 @[expose] public section
 

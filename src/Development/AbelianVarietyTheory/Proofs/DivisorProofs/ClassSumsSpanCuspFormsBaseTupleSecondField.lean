@@ -1,18 +1,23 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.NormalFam
+public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.Bundle0015
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ClassSumsSpan
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.OscillatorModelExtensionSecond
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1715
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LatticeEmbeddingIdealLevel
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ModelsAtRecordCore
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LettersEqFockVarsCore
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsFrameConstantsOfCharacterisationCoreStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsCuspFormClassSumNormalisedData
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsAdelicLiftEqGeometricClassSumAllTuplesStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FockCoefficientMapExtremalEqPhaseSmulLettersStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaKernelOneClassEqClassicalShortSeriesStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaKernelFinitePointMemSpanRationalFormLiftsStatement
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1041
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1037
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1645
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0034
+public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0007
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1684
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1707
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1668
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1675
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1719
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1673
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsRepsOfFiniteIndex
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0106
 
 @[expose] public section
 
@@ -317,8 +322,8 @@ theorem classSumsSpan_of_pins_core (hR : GlobalTheory.Hk3.Core R F) (ht : TieIn 
   have hrk : (Vc D i).rank = D.R.nV := D.sp.V_rank _ (Nat.le_add_left _ _) i.2
   have hn : (κ i).n = (Vc D i).rank := (ht.kap i (D.eTau.symm 1)).2.2.trans hrk.symm
   have hV := hP.lift.std
-  obtain ⟨cc, hcc⟩ := GlobalTheory.T.exists_frameConstants_of_characterisationCore hCI D G Pl0 T0 A T R F κ v₀ hR ht i _ _ O hP
-  obtain ⟨u, hu, -, -, hser⟩ := GlobalTheory.T.exists_adelicLift_eq_geometric_classSum_all_tuples hCI D G Pl0 T0 A T R F κ v₀ hR ht hio i _ _ O hP cc hcc
+  obtain ⟨cc, hcc⟩ := _root_.GlobalTheory.AdTh.CcExCore.exists_ccIs_core hCI D G Pl0 T0 A T R F κ v₀ hR ht i _ _ O hP
+  obtain ⟨u, hu, -, -, hser⟩ := _root_.GlobalTheory.AdTh.SerCore.exists_serOf_core hCI D G Pl0 T0 A T R F κ v₀ hR ht hio i _ _ O hP cc hcc
   have hpair (W : HSp D) (hV : T.V ((i : ℕ) + 1) O.s0 = W) (hr : W.rank = D.R.r) :
       LatEmb W (LinearMap.funLeft (𝓞 D.host.E) D.host.E (Fin.cast hr) ∘ₗ T.iota ((i : ℕ) + 1)) ∧
       LatIsom W (T.Q.Dw ((i : ℕ) + 1)).EF (LinearMap.funLeft (𝓞 D.host.E) D.host.E (Fin.cast hr) ∘ₗ T.iota ((i : ℕ) + 1)) := by
@@ -326,8 +331,8 @@ theorem classSumsSpan_of_pins_core (hR : GlobalTheory.Hk3.Core R F) (ht : TieIn 
     obtain ⟨_, _, _, _, _, _, _, h1, h2, _, _⟩ := hT.adPin _ (inR i) O.s0 (goodEmbedding_baseEmbedding_coreData O)
     exact ⟨h1, h2⟩
   obtain ⟨h1', h2'⟩ := hpair (Wc D i) O.hV (rank_Wc i)
-  obtain ⟨δ, hδ⟩ := GlobalTheory.T.thetaKernel_oneClass_eq_classicalShortSeries D G Pl0 T0 A _ R F hR i hV _ _ (iotaW T i) h1' h2'
-  obtain ⟨ka, hka, hio'⟩ := GlobalTheory.T.fockCoefficientMap_extremal_eq_phase_smul_letters D G Pl0 T0 A T R F κ v₀ hR ht hio i _ _ O hP
+  obtain ⟨δ, hδ⟩ := _root_.GlobalTheory.AdTh.ShortSeriesCore.thetaKO_eq_short_series_core D G Pl0 T0 A _ R F hR i hV _ _ (iotaW T i) h1' h2'
+  obtain ⟨ka, hka, hio'⟩ := _root_.GlobalTheory.AdTh.PhaseMapCore.io_eq_phase_smul_core D G Pl0 T0 A T R F κ v₀ hR ht hio i _ _ O hP
   have hex := GlobalTheory.ClassSumRule.exists_cusp_isThClsD_core hCI D G Pl0 T0 A T R F κ v₀ hR ht i _ _ O hP ()
   obtain ⟨w₀, -, hw₀, -⟩ := (ht.hv₀ i (sg0 D A)).2 rfl (hio i)
   have hw₁ : (fun ρ => (w₀ ρ : (R.MW i (sg0 D A)).sm ρ)) = v₀ i (sg0 D A) := funext hw₀
@@ -371,7 +376,7 @@ theorem classSumsSpan_of_pins_core (hR : GlobalTheory.Hk3.Core R F) (ht : TieIn 
     have e : atDict O (rdU (unfO O) s) = inC O.c' z • t := funext fun g => (dif_pos (dict_mem hT O g)).trans (t2 g)
     rw [SetLike.mem_coe, e]
     refine Submodule.smul_mem _ _ (mem_of_mul ha (mul_ne_zero (mul_ne_zero hu0' (inv_ne_zero hl0)) ((map_ne_zero (inC O.c')).2 hep))
-      (GlobalTheory.T.thetaKernel_finitePoint_mem_span_rationalFormLifts D G Pl0 T0 A _ R F hR i A.μ0 hV h' d1.1 (O.c0' v) w₀) (fun x₀ => ?_) fun g => ?_)
+      (_root_.GlobalTheory.KernelSpanCore.kernel_mem_span_core D G Pl0 T0 A _ R F hR i A.μ0 hV h' d1.1 (O.c0' v) w₀) (fun x₀ => ?_) fun g => ?_)
     · obtain ⟨x, hx⟩ := hpe x₀
       obtain ⟨f', hf', hcl⟩ := hex x
       refine ⟨u • atDict O (rdU (unfO O) f'), Submodule.smul_mem _ _

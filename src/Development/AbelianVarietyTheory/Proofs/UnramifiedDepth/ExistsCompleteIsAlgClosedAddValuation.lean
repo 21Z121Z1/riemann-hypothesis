@@ -3,7 +3,7 @@ module
 public import Mathlib
 public import Formalism.LocalToGlobal.ProjectiveLattices.PlaceBelow
 public import Development.AbelianVarietyTheory.Proofs.HomogeneousIdeals.ExistsAbsoluteValueOfIsDiscreteValuationRing
-public import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.ExistsFinSiteSiteAlg
+public import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.Bundle0018
 
 @[expose] public section
 

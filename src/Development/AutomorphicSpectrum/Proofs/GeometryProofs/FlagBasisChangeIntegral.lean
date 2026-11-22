@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.CoordTieCompEquiv
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0024
 
 @[expose] public section
 

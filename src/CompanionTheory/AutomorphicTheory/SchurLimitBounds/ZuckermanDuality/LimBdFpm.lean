@@ -2,10 +2,10 @@ module
 
 public import CompanionTheory.AutomorphicTheory.SchurLimitBounds.ZuckermanDuality.Assemble
 public import CompanionTheory.AutomorphicTheory.SchurLimitBounds.ZuckermanDuality.BetaAtInfinityZero
-public import CompanionTheory.AutomorphicTheory.SchurLimitBounds.ZuckermanDuality.GeneratingFunctionPolynomial
+public import CompanionTheory.AutomorphicTheory.SchurLimitBounds.ZuckermanDuality.Bundle0001
 public import CompanionTheory.AutomorphicTheory.KFiniteVectors.KDecay
 public import CompanionTheory.AutomorphicTheory.ZuckermanCommutation.CapelliEigenvalues.CoefEigOfInfChar
-public import CompanionTheory.AutomorphicTheory.ZuckermanCommutation.CapelliEigenvalues.CoefCC
+public import CompanionTheory.AutomorphicTheory.ZuckermanCommutation.CapelliEigenvalues.Bundle0001
 
 @[expose] public section
 

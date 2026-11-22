@@ -2,20 +2,22 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Statements.PlaceShiftStatements.InfClassAt
-public import Development.AbelianVarietyTheory.Statements.PlaceShiftStatements.DictAt
-public import Development.AbelianVarietyTheory.Definitions.Divisors.DiscreteSeriesHermitianUnique
+public import Development.AbelianVarietyTheory.Statements.PlaceShiftStatements.Bundle0003
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0041
 public import Development.AbelianVarietyTheory.Definitions.Foundations.NormSumPairRankZeroOfCurveCoordNorm
 public import Development.AbelianVarietyTheory.Statements.CuspidalUnitaryTwists.ExistsSmallSpherical
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.PadicValuationThetaKernelJetBound
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0329
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HighestWeightBelow
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.VwNatCastNonneg
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.JetKapIff
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsRationalSplitStabilizerDecompositionStatement
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.MemSplitPlaceFinitePointsOffPrimesOfSupportedStatement
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.LatticeOfStabiliserMulInvEqStandardLatticeStatement
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.VertexLatticeEqAtMulSplitSupportedStatement
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.VertexLatticeCoordsRationalPointMulEqCoordMatrixStatement
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsUnitaryCoordinateOfRationalPointDefiniteVe
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1615
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0484
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0495
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0485
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0474
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0536
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.VertexLatticeEqAtMulSplitSupported
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0507
+public import Formalism.LocalToGlobal.InertKernelTheory.Bundle0007
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0496
 
 @[expose] public section
 
@@ -45,7 +47,7 @@ theorem UpperTheory.WildA.toStd :
       rwa [smul_smul, ← Nat.cast_mul, mul_comm] at this
   obtain ⟨r, s, k, hr, hs, hk, e⟩ := GlobalTheory.T.exists_rational_split_stabilizer_decomposition (G.V X) (S.N.fr X) (∏ q ∈ ({l} : Finset ℕ), q)
     (by simpa using hl.pos) (x * S.N.u X)
-  have hs' := GlobalTheory.T.mem_splitPlaceFinitePointsOffPrimes_of_supported _ {l} s hs
+  have hs' := _root_.GlobalTheory.MovedKappaEx.mem_splitOff_of_suppSplit _ {l} s hs
   have hB := GlobalTheory.T.latticeOf_stabiliser_mul_inv_eq_standardLattice S X hX k hk
   have key : ∀ s' ∈ GlobalTheory.MovedKappaEx.splitOff (G.V X) {l}, ∀ y : FinPt G X,
       Formalism.MainNotions.TaylorLogMetric.EqAt D l (latAt S X (s' * y)) (latAt S X y) := by
@@ -53,7 +55,7 @@ theorem UpperTheory.WildA.toStd :
     induction hs' using Subgroup.closure_induction with
     | mem g hg =>
       obtain ⟨e, he, hoff, hsupp⟩ := hg
-      exact fun y => GlobalTheory.T.vertexLattice_eqAt_mul_splitSupported S X hX l hl e he (hoff l (Finset.mem_singleton_self l)) g y hsupp
+      exact fun y => _root_.GlobalTheory.MovedSplitEq.eqAt_latAt_mul S X hX l hl e he (hoff l (Finset.mem_singleton_self l)) g y hsupp
     | one => exact fun y => by rw [one_mul]; exact erefl _
     | mul a b _ _ ha hb => exact fun y => by rw [mul_assoc]; exact etrans (ha (b * y)) (hb y)
     | inv a _ ha =>
@@ -68,7 +70,7 @@ theorem UpperTheory.WildA.toStd :
     refine ⟨γ⁻¹, inv_mem hγ, ?_⟩
     rw [map_inv, hγr, Subgroup.coe_inv, map_inv]
   obtain ⟨U, hU⟩ := GlobalTheory.RatMoveJets.exists_unitary_ratCoord S X hX r⁻¹ hr'
-  refine ⟨r⁻¹, U, hU, GlobalTheory.T.vertexLatticeCoords_rationalPoint_mul_eq_coordMatrix S X _ U hU x, ?_⟩
+  refine ⟨r⁻¹, U, hU, _root_.GlobalTheory.RatMoveLat.latAt_rat S X _ U hU x, ?_⟩
   have hx : r⁻¹ * x = s * (k * (S.N.u X)⁻¹) := by
     rw [inv_mul_eq_iff_eq_mul, ← mul_assoc, ← mul_assoc, ← e, mul_inv_cancel_right]
   rw [hx]

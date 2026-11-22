@@ -3,7 +3,7 @@ module
 public import Mathlib
 public import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.IwahoriFactorisation.StrictDominance.UnitaryExtremality.SatPowNonvan
 public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ConjTransposeAntidiagFixed
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LocCompactSecondCountable
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0784
 
 @[expose] public section
 

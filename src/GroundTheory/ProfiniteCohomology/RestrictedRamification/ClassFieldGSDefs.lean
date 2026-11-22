@@ -3,7 +3,7 @@ module
 public import Mathlib
 public import GroundTheory.GlobalFields.ClassFieldConsequences.CongruenceSubgroupLeStandardOpenSubgroup
 public import GroundTheory.GlobalFields.IdeleGroups.ClassGroup
-public import GroundTheory.ProfiniteCohomology.RestrictedRamification.SPicDefs
+public import GroundTheory.ProfiniteCohomology.RestrictedRamification.Bundle0001
 
 @[expose] public section
 

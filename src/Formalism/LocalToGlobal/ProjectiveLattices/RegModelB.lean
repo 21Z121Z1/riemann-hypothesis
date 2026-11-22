@@ -1,8 +1,8 @@
 module
 
 public import Formalism.LocalToGlobal.ProjectiveLattices.RegModelA
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.HeightTheory.RegHor
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.HeightTheory.RegKrull
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.HeightTheory.Bundle0015
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.HeightTheory.Bundle0003
 
 @[expose] public section
 

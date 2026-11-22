@@ -1,7 +1,7 @@
 module
 
-public import Formalism.LocalToGlobal.IndefiniteReal.WeakCharacterisationWithError
-public import Formalism.LocalToGlobal.IndefiniteReal.LevelTypeEquivalence.BaseSt
+public import Formalism.LocalToGlobal.IndefiniteReal.Bundle0027
+public import Formalism.LocalToGlobal.IndefiniteReal.LevelTypeEquivalence.Bundle0001
 
 @[expose] public section
 

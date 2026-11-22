@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RigExtMapRelFrobCompRigOfOmega
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0537
 
 @[expose] public section
 

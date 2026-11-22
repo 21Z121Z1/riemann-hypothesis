@@ -2,11 +2,11 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.Divisors.EqZeroOfForallPowDvd
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PDivGroupFormalChartEvNatMultipleEqConvPower
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PAdicEvaluationSubstCompatibleThickening
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConstantCoeffNmul
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DividedInOfQuasiLogarithm
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsUniqueHasPAdicPowerSeriesValueOfDiffCoeffs
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0623
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0677
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0579
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0633
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0588
 
 @[expose] public section
 

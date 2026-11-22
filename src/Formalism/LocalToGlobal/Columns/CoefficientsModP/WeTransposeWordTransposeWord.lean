@@ -3,9 +3,9 @@ module
 public import Formalism.GradedWeylDivisibility.FinalD
 public import Formalism.GradedWeylDivisibility.StatementE
 public import Formalism.GradedWeylDivisibility.FockSpaceTableaux.FockQHW
-public import Formalism.GradedWeylDivisibility.FockSpaceTableaux.FockQWordAdj
-public import Formalism.GradedWeylDivisibility.FockSpaceTableaux.LClosedeqLemmas
-public import Formalism.PieriBlockIdeals.PieriColumnMinors.LowerTriangularIntegral
+public import Formalism.GradedWeylDivisibility.FockSpaceTableaux.Bundle0014
+public import Formalism.GradedWeylDivisibility.FockSpaceTableaux.Bundle0010
+public import Formalism.PieriBlockIdeals.PieriColumnMinors.Bundle0004
 public import Formalism.PieriBlockIdeals.PieriColumnMinors.LrfcApplyWordAppendSingle
 public import Formalism.HermitianLattices.HermitianLatticesProofs.DualLattice
 

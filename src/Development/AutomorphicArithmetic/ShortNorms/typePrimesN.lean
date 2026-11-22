@@ -1,8 +1,8 @@
 module
 
 public import Development.AutomorphicArithmetic.ShortNorms.ShortNorm
-public import Development.AutomorphicArithmetic.ShortNorms.normPrimesN
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.DivLeRpowThreeQuarters
+public import Development.AutomorphicArithmetic.ShortNorms.Bundle0001
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0043
 
 @[expose] public section
 

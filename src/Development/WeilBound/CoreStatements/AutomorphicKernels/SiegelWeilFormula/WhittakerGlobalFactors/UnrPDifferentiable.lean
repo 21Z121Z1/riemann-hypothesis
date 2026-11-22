@@ -1,7 +1,7 @@
 module
 
 public import Development.WeilBound.CoreStatements.AutomorphicKernels.SiegelWeilFormula.WhitGenOf
-public import Development.WeilBound.ThetaLifts.LatticeBasics.EulerHalf
+public import Development.WeilBound.ThetaLifts.LatticeBasics.Bundle0010
 
 @[expose] public section
 

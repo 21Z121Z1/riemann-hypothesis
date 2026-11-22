@@ -1,7 +1,7 @@
 module
 
-public import Formalism.SharpRestriction.CuspSpanNormBounds.LocalDataRealPlace
-public import Formalism.SharpRestriction.CuspSpanNormBounds.IsGramNorm
+public import Formalism.SharpRestriction.CuspSpanNormBounds.Bundle0002
+public import Formalism.SharpRestriction.CuspSpanNormBounds.Bundle0003
 
 @[expose] public section
 

@@ -1,7 +1,7 @@
 module
 
-public import Formalism.LocalToGlobal.GroupLattices.ComparisonMaps.RecAct
-public import Formalism.LocalToGlobal.GroupLattices.ComparisonMaps.FramesTr
+public import Formalism.LocalToGlobal.GroupLattices.ComparisonMaps.Bundle0009
+public import Formalism.LocalToGlobal.GroupLattices.ComparisonMaps.Bundle0003
 
 @[expose] public section
 

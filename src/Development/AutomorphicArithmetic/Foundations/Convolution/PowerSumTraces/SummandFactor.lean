@@ -2,7 +2,7 @@ module
 
 public import Development.AutomorphicArithmetic.Foundations.Convolution.TensFun
 public import Development.AutomorphicArithmetic.Foundations.Convolution.CentreSplitting.LocalRepresentationL2
-public import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.IwahoriDoubleCosets
+public import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.Bundle0005
 
 @[expose] public section
 

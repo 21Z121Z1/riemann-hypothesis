@@ -1,6 +1,6 @@
 module
 
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.AdmissibleWordLengthLe
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0050
 
 @[expose] public section
 

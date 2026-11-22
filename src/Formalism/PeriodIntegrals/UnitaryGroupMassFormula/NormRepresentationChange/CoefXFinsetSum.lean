@@ -1,12 +1,12 @@
 module
 
 public import Mathlib
-public import Formalism.PeriodIntegrals.PairValDefs
+public import Formalism.PeriodIntegrals.Bundle0025
 public import Formalism.PeriodIntegrals.NormRepChange
 public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.NormRepresentationChange.Development
-public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.NormRepresentationChange.NlamFrameMem
+public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.NormRepresentationChange.Bundle0001
 public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.NormRepresentationChange.CoefXOfMemXS
-public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.NormRepresentationChange.CoefXOfMemSpanO
+public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.NormRepresentationChange.Bundle0002
 
 @[expose] public section
 

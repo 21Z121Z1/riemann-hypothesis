@@ -2,8 +2,8 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.Jets.CmLatticeCommutatorPairingPowEqOneOfGoodLift
-public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.RingHomPointBijective
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.NormXLeOneOfNsmulEqZero
+public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0022
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0036
 
 @[expose] public section
 

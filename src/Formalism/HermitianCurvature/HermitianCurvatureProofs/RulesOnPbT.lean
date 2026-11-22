@@ -1,6 +1,6 @@
 module
 
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.IsOpenDomP
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0242
 public import Formalism.HermitianCurvature.HermitianCurvatureProofs.UwClosedSubgroup
 
 @[expose] public section

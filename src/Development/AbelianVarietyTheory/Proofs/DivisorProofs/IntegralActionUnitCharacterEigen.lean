@@ -1,11 +1,11 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsApprox
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WeilOperatorFixesCosetVector
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1646
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1615
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.StandardLatticeDoubleCosetClassesStabilisers
 public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.FirstStandardPairMemberHasThetaFunction
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MulMemHatMul
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1754
 
 @[expose] public section
 

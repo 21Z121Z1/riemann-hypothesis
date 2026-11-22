@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.BlockTheory.GlobalSignature.SignatureFrame
+public import Development.AbelianVarietyTheory.BlockTheory.GlobalSignature.Bundle0006
 public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.KTypesAboveOfDsClass
 
 @[expose] public section

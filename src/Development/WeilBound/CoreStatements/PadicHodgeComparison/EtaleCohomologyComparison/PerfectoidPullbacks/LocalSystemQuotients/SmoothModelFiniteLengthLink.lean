@@ -5,12 +5,14 @@ public import Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCoh
 public import Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.PerfectoidPullbacks.TwistedRepresentations.Tens
 public import Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.PerfectoidPullbacks.ChartGrConst
 public import Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.PerfectoidPullbacks.IsProperOfProj
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FiniteLengthWittCohomologyStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.TruncatedWittIsNoetherianStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SquarePullBijectiveOfAcyclicStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FilteredModuleFiniteOfGradedStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.WittLevelOneVanishAboveDimStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.WittLevelOneGradedFiniteStatement
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0243
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0239
+public import Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.BocksteinBaseChange.ResCoeff
+public import Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.PerfectoidPullbacks.InclStd
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0251
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0238
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0288
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0575
 
 @[expose] public section
 
@@ -28,7 +30,7 @@ private lemma isHecke_div_and_resEtaPow_div {b : Base} {L : b.Fun} (Q : ObjectPr
     (hN : IsNoetherianRing b.R)
     (hgr : ∀ r j : ℕ, Module.Finite b.R (CH.H (sq (sFil Q ↑r) (sFil Q (↑r + 1))) j)) (j : ℕ) :
     Module.Finite b.R (HO Q j) := by
-  have hfin := GlobalTheory.T.filtered_module_finite_of_graded (sFil Q) (fun r r' h T => (isFil Q).anti h T) (d + 1) (fun r _ j' => hgr r j') j
+  have hfin := _root_.GlobalTheory.CompanionTheory.LenDev.finite_H_sq (sFil Q) (fun r r' h T => (isFil Q).anti h T) (d + 1) (fun r _ j' => hgr r j') j
   rw [Nat.cast_add, Nat.cast_one] at hfin
   have ha : ∀ T, (sFil Q 0).S T = ⊤ := fun T => (isFil Q).top 0 le_rfl T
   have hb := GlobalTheory.T.square_pull_bijective_of_acyclic (sFil Q 0) (sFil Q (↑d + 1)) ha ?hv j
@@ -51,7 +53,7 @@ theorem wittCohomology_finite_length {l : ℕ} [Fact l.Prime] {k : Type} [Field 
       · exact Or.inr ⟨(Fact.out : l.Prime).ne_zero, Or.inl rfl⟩
       · intro W hW
         rw [Set.mem_singleton_iff.mp hW, sSup_range, U.cover]
-  · exact GlobalTheory.T.truncated_witt_isNoetherian
+  · exact _root_.GlobalTheory.CompanionTheory.WittLevel.isNoetherianRing_Wm_one
   · exact GlobalTheory.T.witt_level_one_graded_finite q ρ U
 
 theorem smooth_model_finite_length_link {l : ℕ} [Fact l.Prime] {K : IntermediateField ℚ_[l] (PadicAlgCl l)} (r : Res l K) (M : Model l K)

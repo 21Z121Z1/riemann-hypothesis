@@ -1,12 +1,12 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsEigenBasisSameVec
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FramesOnEqModel
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1550
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1834
 public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.MemIffConjugateNotMem
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ModelBaseTrivModels
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0024
 public import Development.AbelianVarietyTheory.Definitions.Divisors.IsLocalRingTrivSqZeroExt
-public import Development.AbelianVarietyTheory.Definitions.Divisors.ToKnownTheoremsOf
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0059
 public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.ExistsHorizontalGeneratorOfCharts
 public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.ToroidalCompactification
 

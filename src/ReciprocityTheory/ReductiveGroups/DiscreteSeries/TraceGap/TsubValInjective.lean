@@ -1,6 +1,6 @@
 module
 
-public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.TraceGap.ProdModeCharExp
+public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.TraceGap.Bundle0006
 public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.TraceGap.GeneratedSubStable
 
 @[expose] public section

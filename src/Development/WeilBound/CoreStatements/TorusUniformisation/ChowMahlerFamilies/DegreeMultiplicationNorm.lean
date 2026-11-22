@@ -1,19 +1,22 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.GermSys
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.Bundle0013
 public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsFlatAnIffIsConstMul
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.UniformisationConclusion
-public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.CardTorsionPointsAbelianVariety
-public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.FinrankSecPullSandwich
+public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.Bundle0115
+public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.Bundle0041
 public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ClsLinCombSingle
-public import Development.AbelianVarietyTheory.Proofs.CoherentCohomologyProofs.ExistsHighTwistSectionNeZeroStatement
-public import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.FlatAndSurjectiveOfIsFiniteAbelianEnd
-public import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.GlobalFnsHolds
+public import Development.AbelianVarietyTheory.Proofs.CoherentCohomologyProofs.Bundle0022
+public import Development.AbelianVarietyTheory.Definitions.AbelianSchemeLaws.IsScalarTowerOfAlgebraMapEq
+public import Development.AbelianVarietyTheory.Definitions.QuasicoherentCohomology.ExistsAwayFracOfMemHomLoc
+public import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.CubeTotalComplexAcyclicOfSlicesInductionOnCard
+public import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.Bundle0006
+public import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.Bundle0011
 public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsPositiveDefiniteQuadraticFormEndomorphisms
-public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ConnectedSpaceSpecOfIsLocalRing
+public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.Bundle0078
 public import Development.AbelianVarietyTheory.Statements.FundamentalDomains.ExistsIsAddFundamentalDomain
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.LiePush
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.Bundle0010
 
 @[expose] public section
 
@@ -319,7 +322,7 @@ theorem exists_eff_sub [IsIntegral X] {R : Type} [CommRing R] (f : X ⟶ Spec (C
     (hH : H.IsLB) {m : ℕ} {s : Fin (m + 1) → LB.Sec H} (hs : VeryAmpleBy f H s) (c : Pic X) :
     ∃ N : ℕ, Eff (N • cls H hH - c) := by
   obtain ⟨M, hM, e⟩ := cls_surj (-c)
-  obtain ⟨t₀, ht⟩ := GlobalTheory.T.exists_high_twist_section_ne_zero R X f H m s M hH hM hs
+  obtain ⟨t₀, ht⟩ := _root_.GlobalTheory.AbLaw.exists_sec_tw_ne_zero R X f H m s M hH hM hs
   obtain ⟨σ, i, hσ⟩ := ht (t₀.toNat : ℕ) (Int.self_le_toNat t₀)
   have := eff_of_sec (isLB_tw hM hH _) σ i hσ
   rw [cls_tw hM hH, e, natCast_zsmul] at this
@@ -470,7 +473,7 @@ theorem finrank_act {E : Type} [Field E] [NumberField E] (hB : IsAbelianScheme B
   haveI : GeometricallyIntegral B.hom :=
     GlobalTheory.forall_geometricallyIntegral_of_smooth_of_geometricallyConnected _ _ _ hB.smooth hB.geomConnected
   haveI : IsIntegral B.left := GeometricallyIntegral.isIntegral_of_subsingleton B.hom
-  have hproj := GlobalTheory.T.isProjectiveOverRingByCharts_abelian_variety k B hB
+  have hproj := _root_.GlobalTheory.AbelianProjective.isProjBy_of_isAbelianScheme k B hB
   obtain ⟨H, m, s, hH, hs, hsym⟩ := GlobalTheory.SymVeryAmple.exists_symmetric_veryAmpleBy k B hB hproj
   have hΘ := GlobalTheory.AbLaw.CubeProj.exists_gen_theta_abelianVariety hG k B hB hproj H hH
   let q : 𝓞 E → Pic B.left := fun a => pull (ρ.act a).left (cls H hH)
@@ -496,7 +499,7 @@ theorem finrank_act {E : Type} [Field E] [NumberField E] (hB : IsAbelianScheme B
     obtain ⟨b, hb⟩ := Ideal.mem_span_singleton'.1 (Ideal.absNorm_mem (Ideal.span {a}))
     have hN : Ideal.absNorm (Ideal.span {a}) ≠ 0 := by
       rw [Ne, Ideal.absNorm_eq_zero_iff, Ideal.span_singleton_eq_bot]; exact ha
-    have h := GlobalTheory.T.isFinite_of_pull_veryAmple_iso_pow k _ _ B.hom _ H H m s _ hH hH inferInstance (by rw [hw]; exact hs)
+    have h := _root_.GlobalTheory.PullAmpleFinite.isFinite_of_pull_iso_pow k _ _ B.hom _ H H m s _ hH hH inferInstance (by rw [hw]; exact hs)
       (Nat.one_le_iff_ne_zero.2 (pow_ne_zero 2 hN)) (hiso _)
     rw [← hb, mul_comm, ρ.mul, Over.comp_left] at h
     haveI : IsSeparated ((ρ.act b).left ≫ B.hom) := by rw [hw]; infer_instance

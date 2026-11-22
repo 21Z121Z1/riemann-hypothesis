@@ -3,8 +3,8 @@ module
 public import Mathlib
 public import GroundTheory.ProfiniteCohomology.CompactSupportCohomology.CompactCupEqCompactCupRight
 public import GroundTheory.ProfiniteCohomology.PoincarePairs.IsDiscreteRepResHomCoindRes
-public import GroundTheory.TateCohomology.CupGraded
-public import GroundTheory.ProfiniteCohomology.Bridge
+public import GroundTheory.TateCohomology.Bundle0006
+public import GroundTheory.ProfiniteCohomology.Bundle0004
 public import GroundTheory.ProfiniteCohomology.PoincarePairs.ConeProduct
 
 @[expose] public section

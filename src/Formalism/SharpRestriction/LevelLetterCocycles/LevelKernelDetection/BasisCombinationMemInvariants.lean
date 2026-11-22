@@ -1,7 +1,7 @@
 module
 
 public import Formalism.SharpRestriction.LevelLetterCocycles.LevelKernelDetection.IdempotentMemInvariants
-public import Formalism.SharpRestriction.LevelLetterCocycles.LevelKernelDetection.ExistsBasisOfSurjective
+public import Formalism.SharpRestriction.LevelLetterCocycles.LevelKernelDetection.Bundle0001
 
 @[expose] public section
 

@@ -1,7 +1,7 @@
 module
 
-public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.ArchBetween
-public import GroundTheory.HeightsAndTheta.Heights.HeightsOfSets.PCurveIsOrbit
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.Bundle0012
+public import GroundTheory.HeightsAndTheta.Heights.HeightsOfSets.Bundle0005
 
 @[expose] public section
 

@@ -1,9 +1,8 @@
 module
 
 public import Formalism.LocalToGlobal.NormalizedHeckeFactors.CoverStd
-public import Formalism.LocalToGlobal.NormalizedHeckeFactors.CoverAct
-public import Formalism.LocalToGlobal.NormalizedHeckeFactors.CoverPoly
-public import Formalism.LocalToGlobal.NormalizedHeckeFactors.CoverVal
+public import Formalism.LocalToGlobal.NormalizedHeckeFactors.Bundle0005
+public import Formalism.LocalToGlobal.NormalizedHeckeFactors.Bundle0001
 
 @[expose] public section
 

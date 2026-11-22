@@ -1,10 +1,9 @@
 module
 
-public import Formalism.LocalToGlobal.CharacterGerms.RowTieUpFBrS
+public import Formalism.LocalToGlobal.CharacterGerms.Bundle0041
 public import Formalism.LocalToGlobal.CharacterGerms.RowTieUpFBrRP
-public import Formalism.LocalToGlobal.CharacterGerms.RowTieUpFBrEF
-public import Formalism.LocalToGlobal.CharacterGerms.RowTieUpFBrPlB
-public import Formalism.LocalToGlobal.CharacterGerms.RowTiePEmbIntSt
+public import Formalism.LocalToGlobal.CharacterGerms.Bundle0042
+public import Formalism.LocalToGlobal.CharacterGerms.Bundle0016
 
 @[expose] public section
 

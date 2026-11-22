@@ -1,9 +1,9 @@
 module
 
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.PatchingModules.NilpotentLevelLowering.ActUVariableEqPow
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.IwDomSum
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.IwHkNorm
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.IwMemIwC
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.Bundle0031
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.Bundle0025
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.Bundle0022
 
 @[expose] public section
 

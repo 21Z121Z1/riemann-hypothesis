@@ -1,13 +1,11 @@
 module
 
 public import Formalism.TameInertiaTowers.CentralOrderTwo.OrderOfThreeUnitsTwoPow
-public import Formalism.TameInertiaTowers.CentralOrderTwo.TwoAdic
+public import Formalism.TameInertiaTowers.CentralOrderTwo.Bundle0001
 public import Formalism.TameInertiaTowers.CentralOrderTwo.MemDecompositionSubgroupIff
 public import Formalism.TameInertiaTowers.CentralOrderTwo.NegOneNeOneUnitsZmodFour
-public import Formalism.TameInertiaTowers.CentralOrderTwo.Groups
-public import Formalism.TameInertiaTowers.CentralOrderTwo.NormalOrderTwoCentral
+public import Formalism.TameInertiaTowers.CentralOrderTwo.Bundle0002
 public import Formalism.TameInertiaTowers.CentralOrderTwo.Galois
-public import Formalism.TameInertiaTowers.CentralOrderTwo.ConjEqInvOfPowEqOne
 public import Formalism.TameInertiaTowers.CentralOrderTwo.DecompositionSubgroupIndex
 public import Formalism.TameInertiaTowers.CentralOrderTwo.OddEqOneOfSubOneMem
 

@@ -1,8 +1,8 @@
 module
 
 public import ReciprocityTheory.AnalyticForms.RegularLocalRings.SegreIdealIsHomogeneous
-public import ReciprocityTheory.AnalyticForms.RegularLocalRings.FromSpecResidueFieldAppTopIso
-public import ReciprocityTheory.AnalyticForms.RegularLocalRings.ProjDehomA
+public import ReciprocityTheory.AnalyticForms.RegularLocalRings.Bundle0001
+public import ReciprocityTheory.AnalyticForms.RegularLocalRings.Bundle0009
 
 @[expose] public section
 

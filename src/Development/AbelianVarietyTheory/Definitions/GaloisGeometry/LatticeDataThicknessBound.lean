@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.ApartAllEmpty
+public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.Bundle0020
 
 @[expose] public section
 

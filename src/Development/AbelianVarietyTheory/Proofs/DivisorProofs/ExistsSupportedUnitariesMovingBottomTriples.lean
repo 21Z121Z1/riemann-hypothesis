@@ -2,15 +2,14 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.MemHalfCosetSelf
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsStdLatEq
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.EqZeroOrEqOfPlaceIdem
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsIdempotentPlaceChartFiniteAdeles
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1528
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0187
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0769
 public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.LocalisationEqStdAtOfCongruentOneAtPrime
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FiniteAdeleCMMemIntegralOfIdempotent
 public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.LevelHyperspecialTrivialCharacterSplitsOffPlaces
 public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.MemLatOIffExistsActO
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsThetaLiftIdempotentFormStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnitaryFinitePartIdempotentBlendMemLatticeStabilStatement
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1727
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1742
 
 @[expose] public section
 
@@ -66,7 +65,7 @@ theorem exists_unitary : ∀ {D : D7} (V : HSp D), V.gram = 1 → ∀ (e : AE D)
       e • (Q * P) = e • (1 : Matrix (Fin V.rank) (Fin V.rank) (AE D)) →
     ∃ g : GA D V,
       Formalism.L2.Theta.mt V g = (1 - e - cA D e) • (1 : Matrix (Fin V.rank) (Fin V.rank) (AE D)) + e • P + cA D e • (Q.map (cA D)).transpose ∧
-      Formalism.L2.Theta.mt V g⁻¹ = (1 - e - cA D e) • (1 : Matrix (Fin V.rank) (Fin V.rank) (AE D)) + e • Q + cA D e • (P.map (cA D)).transpose := GlobalTheory.T.exists_theta_lift_idempotent_form
+      Formalism.L2.Theta.mt V g⁻¹ = (1 - e - cA D e) • (1 : Matrix (Fin V.rank) (Fin V.rank) (AE D)) + e • Q + cA D e • (P.map (cA D)).transpose := _root_.GlobalTheory.UnitaryMove.exists_blockUnit
 
 theorem mem_St : ∀ {D : D7} (V : HSp D) (g : GA D V) (β₀ β₁ : GL (Fin V.rank) (Lev.EAf D)),
     (∀ i j, β₀.val i j ∈ Formalism.L2.Herm.intAf D.host.F D.host.E ∧ (β₀⁻¹).val i j ∈ Formalism.L2.Herm.intAf D.host.F D.host.E) →
@@ -76,7 +75,7 @@ theorem mem_St : ∀ {D : D7} (V : HSp D) (g : GA D V) (β₀ β₁ : GL (Fin V.
       ε • (β₁ * β₀⁻¹).val + φ • ((β₀ * β₁⁻¹).val.map (GlobalTheory.AdelicLatMove.cF D)).transpose →
     (Formalism.L2.Theta.mt V g⁻¹).map (toEAf D) = (1 - ε - φ) • (1 : Matrix (Fin V.rank) (Fin V.rank) (Lev.EAf D)) +
       ε • (β₀ * β₁⁻¹).val + φ • ((β₁ * β₀⁻¹).val.map (GlobalTheory.AdelicLatMove.cF D)).transpose →
-    Formalism.IndefR.Lev.finE V g ∈ Formalism.L2.DIV.St β₁ := GlobalTheory.T.unitaryFinitePart_idempotentBlend_mem_latticeStabilizer
+    Formalism.IndefR.Lev.finE V g ∈ Formalism.L2.DIV.St β₁ := _root_.GlobalTheory.StabMove.finE_mem_St
 
 theorem smul_entry {e : AE D} {n : ℕ} (P Q : Matrix (Fin n) (Fin n) (AE D)) (he : e * e = e) (hef : e * cA D e = 0)
     (i k : Fin n) :

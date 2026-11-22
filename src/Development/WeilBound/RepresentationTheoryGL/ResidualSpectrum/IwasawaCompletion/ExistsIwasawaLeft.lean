@@ -1,7 +1,6 @@
 module
 
-public import Development.WeilBound.RepresentationTheoryGL.ResidualSpectrum.IwasawaCompletion.AwayPartMulIotaWPart
-public import Development.WeilBound.RepresentationTheoryGL.ResidualSpectrum.IwasawaCompletion.ExistsUpperUnitaryComplex
+public import Development.WeilBound.RepresentationTheoryGL.ResidualSpectrum.IwasawaCompletion.Bundle0001
 
 @[expose] public section
 

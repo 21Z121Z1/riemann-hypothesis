@@ -2,9 +2,9 @@ module
 
 public import Mathlib
 public import CompanionTheory.AutomorphicTheory.TemperedLocalSpectra.ZelevinskyClassification.ZelevinskyCosets.Imports
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ProductIrreducibleAppendEquivStatement
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0589
 public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsEquivProdIrrTw
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsListPairwiseNotRel
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0630
 public import Lean.LibrarySuggestions.Basic
 public import Lean.Elab.Command
 

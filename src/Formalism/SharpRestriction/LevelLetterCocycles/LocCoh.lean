@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Formalism.WeaklyAdmissibleFiltrations.Statement
-public import Formalism.WeaklyAdmissibleFiltrations.StatementTor
+public import Formalism.WeaklyAdmissibleFiltrations.Bundle0001
 public import ReciprocityTheory.BasicDefinitions.AdRep
 
 @[expose] public section

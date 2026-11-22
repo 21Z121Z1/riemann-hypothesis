@@ -2,10 +2,11 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WeilIsIffPull
-public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.TorsionLabelSystemsSeriesScalarIndependentOfLeve
-public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.TorsionPairingValuesOfFamiliesValues
+public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.Bundle0149
+public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.Bundle0133
 public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.TorusTorsionPointsCorrespondValues
-public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.DegenerationSeriesTermsNestStatement
+public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.Bundle0041
+public import Development.AbelianVarietyTheory.Definitions.Degenerations.SepticCharacterInjective
 public import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.ExistsPowEqOfBaseChange
 
 @[expose] public section
@@ -28,7 +29,7 @@ variable {O : Type} [CommRing O] [TopologicalSpace O] (N : NumD O)
 theorem tx_nest {n m M : ℕ} (hn : Odd n) (hm : Odd m) (hM : M = n * m) (Q : N.QT (M ^ 2)) (q : N.QT (m ^ 2))
     (h₁ : Q.1.1 = q.1.1 ^ n) (h₂ : q.1.2 = Q.1.2 ^ n) : N.tx M Q = N.tx m q := by
   subst hM
-  exact tsum_congr fun χ => GlobalTheory.T.degenerationSeriesTerms_nest O N n m hn hm Q q h₁ h₂ χ
+  exact tsum_congr fun χ => _root_.GlobalTheory.Ex.Nest.txT_nest O N n m hn hm Q q h₁ h₂ χ
 
 end Nest
 
@@ -208,8 +209,8 @@ section Rec
 attribute [local instance] gtGroup
 
 theorem recognitionSt : RecognitionSt :=
-  recognition_iff.2 (uRecDvr_of_uRec (GlobalTheory.T.degenerationRecognition_of_abelianPartsIsoLabels (GlobalTheory.T.abelianPartsIsoLabels_of_thetaPoint_and_values GlobalTheory.firstFiveLaws.1
-    GlobalTheory.thetaPtDetermines_and_endDeterminedOnTorsion.1 (GlobalTheory.T.abelianPartValues_of_expansionLaws GlobalTheory.firstFiveLaws.1))))
+  recognition_iff.2 (uRecDvr_of_uRec (_root_.GlobalTheory.Ex.Recognition.urec_of_abelian (_root_.GlobalTheory.Ex.AbPartIso.main GlobalTheory.firstFiveLaws.1
+    GlobalTheory.thetaPtDetermines_and_endDeterminedOnTorsion.1 (_root_.GlobalTheory.ThetaInValues.brUth_of_laws GlobalTheory.firstFiveLaws.1))))
 
 def upQ {R : Type} [CommRing R] [IsDomain R] {D : DegPre R} {F : Type} [Field F] [Algebra (FractionRing R) F]
     (hb : D.TauBimult) {k : ℕ} (p : QkPt D F k) : QkPt D F (k ^ 2) :=

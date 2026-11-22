@@ -1,7 +1,6 @@
 module
 
-public import Formalism.LocalToGlobal.LatticeGeometry.NormDetInf
-public import Formalism.LocalToGlobal.LatticeGeometry.ArVolEqOfNef
+public import Formalism.LocalToGlobal.LatticeGeometry.Bundle0002
 public import Formalism.LocalToGlobal.LatticeGeometry.AmpleOnAbelianBase
 
 @[expose] public section

@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import GroundTheory.HeightsAndTheta.Heights.Intersections.ExistsFunFieldMulEq
-public import GroundTheory.HeightsAndTheta.Heights.Intersections.ArithVarZero
-public import GroundTheory.HeightsAndTheta.Heights.Intersections.NotIsHorizontalOfDimOne
+public import GroundTheory.HeightsAndTheta.Heights.Intersections.Bundle0011
+public import GroundTheory.HeightsAndTheta.Heights.Intersections.Bundle0017
+public import GroundTheory.HeightsAndTheta.Heights.Intersections.Bundle0014
 
 @[expose] public section
 

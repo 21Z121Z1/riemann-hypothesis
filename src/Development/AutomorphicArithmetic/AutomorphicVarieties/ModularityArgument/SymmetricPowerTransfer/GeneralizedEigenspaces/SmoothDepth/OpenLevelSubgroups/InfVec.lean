@@ -1,8 +1,10 @@
 module
 
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.SymmetricPowerTransfer.GeneralizedEigenspaces.SmoothDepth.ContCoef
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsNeZeroWeightTensorIntertwiningAutRepStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SpanInfinitePlacesWeightRepresentationEqTop
+public import Mathlib
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1384
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EqSplitFinMulSplitInf
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1404
 
 @[expose] public section
 
@@ -192,7 +194,7 @@ theorem UpperTheory.V.Z.Sym.Al.infVec :
   classical
   intro L _ _ _ π hπ j hW
   choose lam hlam hj using hW
-  obtain ⟨T, hT0, hTπ, hT⟩ := GlobalTheory.T.exists_ne_zero_weightTensor_intertwining_autRep L 2 lam π hπ hlam
+  obtain ⟨T, hT0, hTπ, hT⟩ := _root_.GlobalTheory.BCT.TrKer.exists_ne_zero_wsp_intertwining L 2 lam π hπ hlam
   let c : (InfinitePlace L → Fin (j + 1)) → GlobalTheory.BCT.TrKer.Wsp lam := fun κ =>
     PiTensorProduct.tprod ℂ fun v => mon (lam v) (hj v) (κ v)
   let a : (InfinitePlace L → Fin (j + 1)) → Wt.VD (InfinitePlace L) j := fun κ => ⟨A _ j κ, A_mem _ j κ⟩

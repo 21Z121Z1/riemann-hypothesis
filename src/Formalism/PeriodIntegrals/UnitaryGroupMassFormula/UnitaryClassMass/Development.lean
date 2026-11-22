@@ -2,7 +2,7 @@ module
 
 public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.UnitaryClassMass.Reduce
 public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.UnitaryClassFiniteness.Development
-public import Formalism.PeriodIntegrals.UJClassMassAlt
+public import Formalism.PeriodIntegrals.Bundle0019
 
 @[expose] public section
 

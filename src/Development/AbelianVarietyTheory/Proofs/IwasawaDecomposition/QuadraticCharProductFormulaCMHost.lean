@@ -2,10 +2,10 @@ module
 
 public import Mathlib
 public import Formalism.LocalRingCardinality.RhoDetPrimeEqMuTildeMulChiPow
-public import Formalism.LocalToGlobal.UnitaryNorms.CharTied
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.UnderEqIffConjPl
+public import Formalism.LocalToGlobal.UnitaryNorms.Bundle0006
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0095
 public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.EtaEqJacobiSym
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsUnitNormOfIsCoprime
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0055
 
 @[expose] public section
 

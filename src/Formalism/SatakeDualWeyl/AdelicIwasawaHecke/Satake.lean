@@ -1,10 +1,10 @@
 module
 
-public import Formalism.SatakeDualWeyl.StatementE
+public import Formalism.SatakeDualWeyl.Bundle0001
 public import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.SatakeComb
 public import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.SatakeMat
-public import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.SatakeRes
-public import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.HeckeActMem
+public import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Bundle0005
+public import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Bundle0002
 
 @[expose] public section
 

@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Formalism.ThetaLogCoordinates.UniformThetaSubstitution.CyclicPowerClassOfExpEquiv
-public import Formalism.ThetaLogCoordinates.UniformThetaSubstitution.StatementAB
+public import Formalism.ThetaLogCoordinates.UniformThetaSubstitution.Bundle0001
 
 @[expose] public section
 

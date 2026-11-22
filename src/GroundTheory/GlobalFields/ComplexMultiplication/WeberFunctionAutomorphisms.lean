@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import GroundTheory.GlobalFields.ComplexMultiplication.WeberFunction
+public import GroundTheory.GlobalFields.ComplexMultiplication.Bundle0002
 
 @[expose] public section
 

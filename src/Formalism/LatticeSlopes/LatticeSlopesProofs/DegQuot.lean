@@ -1,8 +1,7 @@
 module
 
 public import Formalism.LatticeSlopes.Statement
-public import Formalism.LatticeSlopes.LatticeSlopesProofs.DiscreteTopologyOfLe
-public import Formalism.LatticeSlopes.LatticeSlopesProofs.CovolEqGram
+public import Formalism.LatticeSlopes.LatticeSlopesProofs.Bundle0001
 
 @[expose] public section
 

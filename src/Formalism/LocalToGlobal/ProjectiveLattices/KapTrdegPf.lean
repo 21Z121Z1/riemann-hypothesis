@@ -1,7 +1,7 @@
 module
 
-public import Formalism.LocalToGlobal.ProjectiveLattices.FnTrdegOf
-public import Formalism.LocalToGlobal.ProjectiveLattices.KapTrdegPfB
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0014
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0002
 
 @[expose] public section
 

@@ -1,7 +1,7 @@
 module
 
 public import Formalism.HermitianCurvature.HermitianCurvatureProofs.PBGWave
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.LagrangeExtraction
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0011
 
 @[expose] public section
 

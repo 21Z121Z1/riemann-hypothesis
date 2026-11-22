@@ -3,7 +3,7 @@ module
 public import Mathlib
 public import CompanionTheory.RealGroups.UnitaryAdmissibility.ArchimedeanUnitaryDual.StSandwich
 public import CompanionTheory.RealGroups.UnitaryAdmissibility.ArchimedeanUnitaryDual.InhabitedFinite
-public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.ImportsTerLast
+public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0034
 
 @[expose] public section
 

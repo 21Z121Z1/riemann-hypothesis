@@ -1,7 +1,7 @@
 module
 
 public import Formalism.LocalToGlobal.GlobalTheory.BlockActions.LatSOfMem
-public import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.AfsplitB
+public import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Bundle0006
 
 @[expose] public section
 

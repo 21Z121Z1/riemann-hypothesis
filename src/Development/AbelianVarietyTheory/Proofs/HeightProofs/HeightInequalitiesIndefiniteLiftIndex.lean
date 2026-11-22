@@ -1,36 +1,38 @@
 module
 
 public import Mathlib
-public import Formalism.LocalToGlobal.ProjectiveLattices.RegXInst
-public import Formalism.LocalToGlobal.ProjectiveLattices.CurveLocInst
-public import Formalism.LocalToGlobal.ProjectiveLattices.LocRingPf
-public import Formalism.LocalToGlobal.ProjectiveLattices.TieInst
-public import Formalism.LocalToGlobal.ProjectiveLattices.RealPtPf
-public import Formalism.LocalToGlobal.ProjectiveLattices.HtXfer
-public import Formalism.LocalToGlobal.ProjectiveLattices.CompTie
-public import Formalism.LocalToGlobal.ProjectiveLattices.AxHInst
-public import Formalism.LocalToGlobal.ProjectiveLattices.SupNDataOfNonneg
-public import Formalism.LocalToGlobal.ProjectiveLattices.CombAlgOfCombBound
-public import Formalism.LocalToGlobal.ProjectiveLattices.ProdInLatPf
-public import Formalism.LocalToGlobal.ProjectiveLattices.FreeBridge
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PullbackSections.HolomorphicFamilies.SumSingleEmbeddingExtendLe
-public import Development.AbelianVarietyTheory.Proofs.GenericRegularity.KapDivFinStLocDataOf
-public import Development.AbelianVarietyTheory.Proofs.GenericRegularity.FrameNormConjugatePointsEqPointwise
-public import Development.AbelianVarietyTheory.Proofs.GenericRegularity.NotGoodConj
-public import Development.AbelianVarietyTheory.Proofs.GenericRegularity.SupBddAndSupREqSupN
-public import Development.AbelianVarietyTheory.Proofs.GenericRegularity.LawBddDataOf
-public import Development.AbelianVarietyTheory.Proofs.GenericRegularity.FrameNormsContinuousAlongEmbeddingFamiliesStatement
-public import Formalism.LocalToGlobal.ProjectiveLattices.NrmContPf
-public import Development.AbelianVarietyTheory.Proofs.HeightProofs.RamOverZRealPos
-public import Development.AbelianVarietyTheory.Proofs.HeightProofs.ExistsUnitOfVVEqZero
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0035
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0043
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0041
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0037
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0039
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0028
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0024
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0034
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PullbackSections.HolomorphicFamilies.Bundle0014
+public import Development.AbelianVarietyTheory.Proofs.GenericRegularity.Bundle0022
+public import Development.AbelianVarietyTheory.Proofs.GenericRegularity.Bundle0030
+public import Development.AbelianVarietyTheory.Proofs.GenericRegularity.Bundle0032
+public import Development.AbelianVarietyTheory.Proofs.GenericRegularity.Bundle0034
+public import Development.AbelianVarietyTheory.Proofs.GenericRegularity.Bundle0015
+public import Development.AbelianVarietyTheory.Proofs.GenericRegularity.Bundle0035
+public import Development.AbelianVarietyTheory.Definitions.RegularCharts.BaseNorm
+public import Development.AbelianVarietyTheory.Definitions.RegularCharts.Reframe
+public import Development.AbelianVarietyTheory.Definitions.RegularCharts.ModelAt
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0014
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0013
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.UniformisationConclusion
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.FundamentalDomains.MaxBoundPf
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0015
+public import Development.AbelianVarietyTheory.Proofs.HeightProofs.Bundle0033
+public import Development.AbelianVarietyTheory.Proofs.HeightProofs.Bundle0076
 public import Development.AbelianVarietyTheory.Proofs.HeightProofs.SupCLeISupGeneric
-public import Development.AbelianVarietyTheory.Proofs.HeightProofs.LengthsAtPrimesLeFunctionFieldDataOfCurveStatement
-public import Development.AbelianVarietyTheory.Proofs.HeightProofs.OrdersAuxiliaryFormAtPrimesEqFunctionFieldStatement
+public import Development.AbelianVarietyTheory.Proofs.HeightProofs.Bundle0078
 public import Development.AbelianVarietyTheory.Proofs.HeightProofs.NotRestrDensityRescale
-public import Development.AbelianVarietyTheory.Proofs.GenericRegularity.EvaluationLawsGenericFramesAtlasHold
-public import Development.AbelianVarietyTheory.Proofs.GenericRegularity.ExistsCBaseValAtCx
-public import Development.AbelianVarietyTheory.Proofs.GenericRegularity.NumericalConsequencesOfPins
-public import Development.AbelianVarietyTheory.Proofs.TorusHaarMeasure.IndependentDifferentialsRatiosOfTrdegValues
+public import Development.AbelianVarietyTheory.Proofs.GenericRegularity.Bundle0029
+public import Development.AbelianVarietyTheory.Proofs.GenericRegularity.Bundle0020
+public import Development.AbelianVarietyTheory.Proofs.GenericRegularity.Bundle0021
+public import Development.AbelianVarietyTheory.Proofs.TorusHaarMeasure.Bundle0040
 public import Development.AbelianVarietyTheory.Proofs.TorusHaarMeasure.ChosenFormsRestrictBasisFunctionField
 
 @[expose] public section
@@ -324,7 +326,7 @@ theorem heights_indefinite :
   have ha3 : LawA3' d := lawA3'_dataOf hG δ fn yP (WeightFamilies.dimY D j) N 0 G.iet (WeightAlgebra.g0 D) c (wtA wL, wL.n) (wtA wF, wF.n) (wtA wL, wL.n) (0, 1) (wtA (wEt D j G.iet), (wEt D j G.iet).n) (wtA w1, w1.n) (wtA w2, w2.n) wR jc G.del (fun i => (G.th' i).1) 0 Fin.elim0 (wtA wL, wL.n) 0 Fin.elim0 ∅ G.et.1 t1.1 t2.1 (nuOf T.Q.c fun la => nus la / (ramOverZ la : ℝ)) (fun _ _ _ => 0) wsize (WeightAlgebra.DF wL : ℝ) PN' 1 1 PP0' 1 Gc PI4' Pet tableLineDegreeFive tableLineDegreeTwo Prw POb 0 0 hDF' (hFr d hDF')
   have ha13 : A13Measurable d := lawA13_of_data hG δ fn yP (WeightFamilies.dimY D j) N 0 G.iet (WeightAlgebra.g0 D) c (wtA wL, wL.n) (wtA wF, wF.n) (wtA wL, wL.n) (0, 1) (wtA (wEt D j G.iet), (wEt D j G.iet).n) (wtA w1, w1.n) (wtA w2, w2.n) wR jc G.del (fun i => (G.th' i).1) 0 Fin.elim0 (wtA wL, wL.n) 0 Fin.elim0 ∅ G.et.1 t1.1 t2.1 (nuOf T.Q.c fun la => nus la / (ramOverZ la : ℝ)) (fun _ _ _ => 0) wsize (WeightAlgebra.DF wL : ℝ) PN' 1 1 PP0' 1 Gc PI4' Pet tableLineDegreeFive tableLineDegreeTwo Prw POb 0 0
     (nrmContOff_of hG fn yP _ _ _ _ _ hST
-      (GlobalTheory.T.frameNorms_continuous_along_embedding_families _ _ _ _ (T.Q.Xo j) T.Q.c D.R.r _ hU (xiR D) fn hx hpin hG yP hyP).1 hfn htr hfg hwb)
+      (_root_.GlobalTheory.FrameNorm.nrmAlong_of_fnPin _ _ _ _ (T.Q.Xo j) T.Q.c D.R.r _ hU (xiR D) fn hx hpin hG yP hyP).1 hfn htr hfg hwb)
   have hnum : NumOK d := by
     have hg0' : (1 : ℝ) ≤ WeightAlgebra.g0 D := by exact_mod_cast hg0
     refine ⟨hD3, hi, hg0, hc0, ?_, hcg, ?_, ?_, ?_, hnK, hrd, p1, le_rfl, le_rfl, p2, le_rfl, p3, p4, p5, p6, p7,

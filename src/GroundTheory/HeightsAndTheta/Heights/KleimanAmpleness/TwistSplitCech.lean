@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.TwistSplitLoc
+public import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.Bundle0031
 
 @[expose] public section
 

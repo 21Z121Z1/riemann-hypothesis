@@ -1,8 +1,8 @@
 module
 
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.KappaSignMultiplicative
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1308
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Divisors.IsUnifAt
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0036
 
 @[expose] public section
 

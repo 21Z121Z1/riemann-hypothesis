@@ -2,9 +2,9 @@ module
 
 public import Development.WeilBound.CoreStatements.MinimalPrimeDimensions.RangeOfMemSupportPush
 public import Development.WeilBound.CoreStatements.MinimalPrimeDimensions.FinrankEqOfDimZero
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.TopologicalKrullDimLeZeroOfSubset
-public import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.StatementsChowDegreeSection
-public import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.StatementsChowDegreeClosedPoint
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0286
+public import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.Bundle0009
+public import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.Bundle0005
 public import GroundTheory.HeightsAndTheta.Heights.ChowForms.PConeDimComponent
 
 @[expose] public section

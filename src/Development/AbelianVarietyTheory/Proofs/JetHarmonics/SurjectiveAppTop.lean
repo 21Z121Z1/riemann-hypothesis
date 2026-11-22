@@ -1,12 +1,12 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Jets.ColValMonomial
+public import Development.AbelianVarietyTheory.Definitions.Jets.Bundle0002
 public import Development.AbelianVarietyTheory.Definitions.Jets.SurjectiveAppTopSqCube
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.DiscreteValuationRings.VRatioGtStatement
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.DiscreteValuationRings.Bundle0012
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.DiscreteValuationRings.TwistBC
 public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.ThreePointSeriesExponentialOfDefect
-public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.StalkMapInjectiveOfFlat
+public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0097
 public import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.SecLinIffComb
 
 @[expose] public section
@@ -269,7 +269,7 @@ theorem germ_pullback : Laws → Laws4 → TwistBCSpanStatement → JetSer.JetAl
       rw [zero_smul, zero_smul] at this
       rw [hs, Fin.sum_univ_zero, Fin.sum_univ_zero]
       exact this
-    · have := GlobalTheory.T.pullAl_linear_combination hL.globalFns V y.P.D F _ y.P.oD a k N l hl c' _ _ hPi
+    · have := _root_.GlobalTheory.PullComb.main hL.globalFns V y.P.D F _ y.P.oD a k N l hl c' _ _ hPi
       simp only [smul_smul, hc'] at this
       rw [hs]
       exact this

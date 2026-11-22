@@ -3,7 +3,7 @@ module
 public import Mathlib
 public import ReciprocityTheory.SemistableReduction.SemiAll
 public import ReciprocityTheory.SemistableReduction.SemiDegZ
-public import ReciprocityTheory.SemistableReduction.LatTest
+public import ReciprocityTheory.SemistableReduction.Bundle0011
 public import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.CmApproximationTransference
 public import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.ExistsThickPointHyperbolic
 public import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.ExistsFinsetTypesOfBoundedBases

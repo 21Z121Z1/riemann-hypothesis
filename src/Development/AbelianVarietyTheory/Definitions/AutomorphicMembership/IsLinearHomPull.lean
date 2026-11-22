@@ -5,7 +5,7 @@ public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership
 public import Development.AbelianVarietyTheory.Definitions.Divisors.IsKSValueOneOfRetraction
 public import Development.AbelianVarietyTheory.Definitions.ThetaMetrics.IsWeightedHomogeneousOfMemOrbitSpan
 public import Development.AbelianVarietyTheory.Definitions.Divisors.LogAbsVpOfNormalised
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsAdicColimitOfIsNilpotent
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1483
 
 @[expose] public section
 

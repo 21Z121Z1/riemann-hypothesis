@@ -1,9 +1,9 @@
 module
 
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.PatchingModules.NilpotentLevelLowering.ActUVariableEqPow
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.IwThetaEx
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.IwHkApply
-public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.FixPiIff
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.Bundle0032
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.Bundle0021
+public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0083
 
 @[expose] public section
 

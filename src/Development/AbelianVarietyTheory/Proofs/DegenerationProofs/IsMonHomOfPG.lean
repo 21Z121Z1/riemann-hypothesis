@@ -1,23 +1,23 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.UnifPreAbelianPartIso
+public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.Bundle0009
 public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.UnifPreCharacterGroupIso
-public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.UniformisationPolarisationsAgreeAtLevel
-public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.UniformisationPolarisedAbelianSchemesIso
-public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.AbelianPartIsoIsMonHomAndRigidified
+public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.Bundle0054
+public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.Bundle0112
+public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.Bundle0023
 public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.UnifPreCAndCoordCorrespond
 public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ExistsIsoOfCompatibleAbelianThickenings
-public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.PreUniformisationComparisonTorusInvariantStatement
+public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.Bundle0065
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.RigidSys
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.CubeVal
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.IsMonHomOfMul
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.UnifUniqSt
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.IsNsmul
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.QkToAkU
-public import Development.AbelianVarietyTheory.Definitions.Degenerations.ExistsUniquePartner
-public import Development.AbelianVarietyTheory.Definitions.Uniformization.WCompat
-public import Development.AbelianVarietyTheory.Definitions.Uniformization.PsiScal
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.Bundle0005
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.Bundle0006
+public import Development.AbelianVarietyTheory.Definitions.Degenerations.Bundle0002
+public import Development.AbelianVarietyTheory.Definitions.Uniformization.Bundle0001
+public import Development.AbelianVarietyTheory.Definitions.Uniformization.Bundle0002
 
 @[expose] public section
 
@@ -113,7 +113,7 @@ theorem exists_level [IsLocalRing R] (hwL : IsCPMap U'.P U.P (𝟙 _) (𝟙 G.le
         gw (U.w e) r z jM (fun _ => jL) * gw wL (r ≫ (fstG I e G).left) z jL jL' := by
   obtain ⟨u, hu, hu'⟩ := LevelComparison.exists_comparison D.P.isLB D'.P.isLB U.P.L.isLB U'.P.L.isLB
     (U.w_gen e) (U'.w_gen e) hwL.gen
-  have inv := GlobalTheory.T.preUniformisation_comparison_torus_invariant R I D D' A A' G U U' wL hw hwL e β hq u hu hu'
+  have inv := _root_.GlobalTheory.preU_comparison_torus_invariant R I D D' A A' G U U' wL hw hwL e β hq u hu hu'
   haveI := (U'.gt e).q_flat
   haveI := (U'.gt e).q_surj
   haveI := (U'.gt e).q_affine

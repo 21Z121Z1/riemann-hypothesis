@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Formalism.HyperbolicPlaceProducts.Statement
+public import Formalism.HyperbolicPlaceProducts.Bundle0001
 public import Formalism.GelfandTransference.HadamardGelfand.Hadamard
 
 @[expose] public section

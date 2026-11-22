@@ -3,9 +3,8 @@ module
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.RegularCharts.MatrixTwoByTwoCongr
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PullbackSections.LieBridgeG
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.AbProj
-public import Development.AbelianVarietyTheory.Proofs.GenericRegularity.ExistsFiniteMchartCover
-public import Development.AbelianVarietyTheory.Proofs.GenericRegularity.NonemptyLift
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.Bundle0006
+public import Development.AbelianVarietyTheory.Proofs.GenericRegularity.Bundle0013
 public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ClsLinCombSingle
 
 @[expose] public section

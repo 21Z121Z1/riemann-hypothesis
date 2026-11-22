@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.CommutativeAlgebra.ResMapBijective
-public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.CoboundaryCriterion
+public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0007
 
 @[expose] public section
 

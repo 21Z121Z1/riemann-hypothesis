@@ -3,25 +3,61 @@ module
 public import Mathlib
 public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.ModelSmall
 public import Development.AutomorphicSpectrum.Statements.TowerExistence.GoodTowerExistsX
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.InterNamed
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArithmeticIntersection.MultihomogeneousIdeals.ExistsUniqueStatement
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsEmbeddingPieces
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.Bundle0012
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArithmeticIntersection.MultihomogeneousIdeals.Bundle0001
+public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0036
 public import Development.AutomorphicSpectrum.Definitions.MetricPeriods.HasMultiplier
 public import Development.AutomorphicSpectrum.Definitions.DivisibilityTowers.HeckeSectionsIsotropicCommutatorPairingPower
 public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.OverLaUnique
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.InterSt
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.Bundle0006
 public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.GeoRead
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsIntegerExponentSectionOfChartRegular
-public import Development.AbelianVarietyTheory.Proofs.GenericRegularity.EvaluationLawsGenericFramesAtlasHold
-public import Development.AbelianVarietyTheory.Proofs.HomogeneousIdeals.IsDomainAndIsIntegrallyClosedAtPrimeOfSmoothOfCo
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0506
+public import Development.AbelianVarietyTheory.Proofs.GenericRegularity.Bundle0029
+public import Development.AbelianVarietyTheory.Proofs.HomogeneousIdeals.Bundle0004
 public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.SectionsGenericIndicators
 public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LabelSigBijective
 public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.RootOriginGenericFrameRelayStatement
 public import Development.AbelianVarietyTheory.Definitions.Foundations.ExistsFlatSecRankZero
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.MemSuppOnIffIdemMulOfNatural
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0331
 public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.AllWeightSectionsCompat
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.TowerComponentsEquivOfGivenStatement
-public import Development.AutomorphicSpectrum.Proofs.MetricProofs.RootOriginWeightIdentity
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.CInfGood
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.Bundle0016
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0027
+public import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.Bundle0002
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArakelovVolumes.UpperBounds.Bundle0007
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArakelovVolumes.UpperBounds.Bundle0008
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.FundamentalDomains.Bundle0004
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArakelovVolumes.ArakelovInstances.Bundle0001
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0021
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.SquareIntegrability.Bundle0005
+public import Development.AutomorphicSpectrum.Definitions.DivisibilityTowers.GoodOrigin
+public import Development.AbelianVarietyTheory.BlockTheory.ExistenceTori.UnitaryHaarVolume
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.FundamentalDomains.Bundle0010
+public import Formalism.LocalToGlobal.CMDeterminantIdeals.CMIdealValuations.Bundle0001
+public import Formalism.LocalToGlobal.CMDeterminantIdeals.CMIdealValuations.ProdMulLeDetIdeal
+public import Formalism.LocalToGlobal.CMDeterminantIdeals.CMIdealValuations.ValuationLeOfEqAlgebraMap
+public import Formalism.LocalToGlobal.CMDeterminantIdeals.CMIdealValuations.AbsNormSpanGalois
+public import Formalism.LocalToGlobal.CMDeterminantIdeals.CMIdealValuations.Bundle0002
+public import Formalism.LocalToGlobal.CMDeterminantIdeals.CMIdealValuations.ExistsEvalNeZeroOfTotalDegreeLt
+public import Formalism.LocalToGlobal.CMDeterminantIdeals.CMIdealValuations.FiniteDetAddSmulOneEqZero
+public import Formalism.LocalToGlobal.CMDeterminantIdeals.CMIdealValuations.LargeResidueExtensionLemma
+public import Formalism.LocalToGlobal.CMDeterminantIdeals.CMIdealValuations.HermitianFormGramBlockBasis
+public import Development.AbelianVarietyTheory.Definitions.Foundations.IsProbabilityMeasureMuPart
+public import Formalism.LocalToGlobal.ProjectiveLattices.PartitionExtendByZeroAntitone
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.FundamentalDomains.Bundle0003
+public import Formalism.LocalToGlobal.Divisibility.Bundle0001
+public import Development.AutomorphicSpectrum.Statements.GeometryStatements.Bundle0004
+public import Development.AutomorphicSpectrum.Statements.GeometryStatements.FlatDegree
+public import Formalism.MeanHeightDescent.CombinedAverageDegreeBound
+public import Formalism.MonomialMeanResidues.FilteredDegree
+public import ReciprocityTheory.L2DbarEstimates.PlurisubharmonicCharts.Bundle0001
+public import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.Statements
+public import Formalism.LocalToGlobal.ProjectiveLattices.CompHt
+public import Formalism.LocalToGlobal.IndefiniteForms.IndefiniteTree.RealCubicMeans.LogMeanShares.LogMeanStatements.HSClaim
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.HeightTheory.TheoremA
+public import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.Bundle0021
+public import Development.WeilBound.CoreStatements.HomogeneousNonvanishing.YCompOf
+public import Development.AutomorphicSpectrum.Proofs.MetricProofs.Bundle0106
 public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.RootOriginGenericFrame
 public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.CompLawsRootModelRelayStatement
 
@@ -493,7 +529,7 @@ namespace GlobalTheory.CompanionTheory.Ar.Plug.BirEx
 
 theorem bir_exists : Top.Given → ∀ (E : Type) [Field E] [NumberField E] [IsCMField E] (H : ReciprocityTheory.ChartRestriction.G.Geo.Tor.Host E) (Dw : Datum H) (l : Level H) (Xo : Moduli Dw l) (c : Coeff l) (r : ℕ) (U : ∀ σ : c.F →+* ℂ, Unf Xo c σ r) (h : GenFrEx Xo c) (e : Comp Xo c → Rul Xo c), CompLaws U h e → ∀ (Y : Model Xo c (algebraMap (𝓞 c.F) c.F)) [DecidableEq (CMType H)] (T : Top.RootTower (CMType H) (Dw.p + Dw.q)) (_ : Top.GoodOrigin Y T) (Z : Comp Xo c), ∃ (a : WZ E) (N : ℕ) (g : Fin (N + 1) → Rul Xo c), (∀ j, g j ∈ GlobalTheory.CompanionTheory.Ar.Rec.secZ Xo c a) ∧ BirOn h Z g := by
   intro hG E _ _ _ H Dw l Xo c r U h e hC Y _ T o Z
-  obtain ⟨κ, hκ⟩ := GlobalTheory.T.tower_components_equiv_of_given E H Dw l Xo c Y T o.toTowerOrigin hG
+  obtain ⟨κ, hκ⟩ := _root_.PositivityTheory.UnitarySelfGeneration.y_comp_of E H Dw l Xo c Y T o.toTowerOrigin hG
   obtain ⟨Fr⟩ := GlobalTheory.CompanionTheory.Ar.GenEx.exists_genFrame (o.refOr (κ Z))
   exact bir_of_origin E H Dw l Xo c r U h e hC Y ∅ (o.R (κ Z)) (o.Sys (κ Z)) (o.Fx (κ Z)) (o.refOr (κ Z)) Fr T.nu (o.nu_eq (κ Z))
     (o.ref_deg (κ Z)) Z (hκ Z)

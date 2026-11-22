@@ -4,7 +4,7 @@ public import Mathlib
 public import Formalism.LocalRingCardinality.DataDIV
 public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.FinrankRiemannRochNsmulHyperplane
 public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.MemEqnSetOmegaCoeff
-public import Development.AbelianVarietyTheory.Definitions.Divisors.NefFibOfIsNef
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0034
 
 @[expose] public section
 

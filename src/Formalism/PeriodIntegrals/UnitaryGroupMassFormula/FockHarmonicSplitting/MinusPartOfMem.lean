@@ -2,7 +2,7 @@ module
 
 public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.FockHarmonicSplitting.FockCore
 public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.FockHarmonicSplitting.ConjTransposeOneKronecker
-public import Formalism.PeriodIntegrals.FockDegreeTwoParts
+public import Formalism.PeriodIntegrals.Bundle0013
 
 @[expose] public section
 

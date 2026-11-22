@@ -2,12 +2,13 @@ module
 
 public import Development.AutomorphicArithmetic.Foundations.LocalLanglands.RecTTransport
 public import Development.WeilBound.RepresentationTheoryGL.GaloisPermutationReps.SubquotientEquivalence.ConjTorusSubApply
-public import Development.DiscreteGroups.GlobalIrreducibility.DzIsoKO
-public import Development.DiscreteGroups.GlobalIrreducibility.DzIsoRes
-public import Development.DiscreteGroups.GlobalIrreducibility.DzLCusp
+public import Development.DiscreteGroups.GlobalIrreducibility.Bundle0015
+public import Development.DiscreteGroups.GlobalIrreducibility.Bundle0005
 public import Development.DiscreteGroups.GlobalIrreducibility.DzKSchur
 public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.AdmissibleLabelWeightsOfGreenCuspidalParametrisa
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SimpleIffIrreducibleStatement
+public import Mathlib
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0099
+public import Development.WeilBound.CoreStatements.FiniteTypeHarishChandra.SupportExistsAll
 
 @[expose] public section
 

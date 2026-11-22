@@ -1,9 +1,9 @@
 module
 
-public import Formalism.LocalToGlobal.IndefiniteReal.FinitePlaces.AlgebraMapAEEqZero
-public import Formalism.LocalToGlobal.IndefiniteReal.FinitePlaces.TameAtOne
+public import Formalism.LocalToGlobal.IndefiniteReal.FinitePlaces.Bundle0011
+public import Formalism.LocalToGlobal.IndefiniteReal.FinitePlaces.Bundle0005
 public import Formalism.LocalToGlobal.IndefiniteReal.FinitePlaces.InfPartOfSplitIdem
-public import Formalism.LocalToGlobal.IndefiniteReal.FinitePlaces.SplitOrInertP
+public import Formalism.LocalToGlobal.IndefiniteReal.FinitePlaces.Bundle0016
 public import Formalism.LocalToGlobal.IndefiniteReal.FinitePlaces.PlaceFinal
 public import Formalism.LocalToGlobal.IndefiniteReal.FinitePlaces.LatSelf
 public import Formalism.LocalToGlobal.IndefiniteReal.FinitePlaces.SplitLinF

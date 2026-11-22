@@ -3,7 +3,7 @@ module
 public import Mathlib
 public import GroundTheory.ProfiniteCohomology.CohomologicalDimension.PrimaryComponentCohomologyEqBotOfScdpLt
 public import GroundTheory.ProfiniteCohomology.CoinducedModules.CohomologyCoindCokernelIsoHom
-public import GroundTheory.ProfiniteCohomology.ColimitUnion
+public import GroundTheory.ProfiniteCohomology.Bundle0005
 
 @[expose] public section
 

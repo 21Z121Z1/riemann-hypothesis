@@ -1,8 +1,8 @@
 module
 
 public import Formalism.HermitianCurvature.RealInputsClosedAdmissibleSettings
-public import Formalism.HermitianCurvature.HerGenC
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.RadialTransportPlus
+public import Formalism.HermitianCurvature.Bundle0007
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0137
 
 @[expose] public section
 

@@ -1,8 +1,8 @@
 module
 
 public import Formalism.SharpRestriction.CuspSpanNormBounds.NormalizedLocalScale
-public import Formalism.SharpRestriction.CuspSpanNormBounds.CntPartners
-public import Formalism.SharpRestriction.CuspSpanNormBounds.LeSCSCl
+public import Formalism.SharpRestriction.CuspSpanNormBounds.Bundle0004
+public import Formalism.SharpRestriction.CuspSpanNormBounds.Bundle0007
 public import Formalism.SharpRestriction.CuspSpanNormBounds.CongruenceAtSplitFrobeniusHolds
 
 @[expose] public section

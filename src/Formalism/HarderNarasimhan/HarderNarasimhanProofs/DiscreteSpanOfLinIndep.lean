@@ -1,9 +1,9 @@
 module
 
 public import Formalism.HarderNarasimhan.StatementPl
-public import Formalism.HarderNarasimhan.HarderNarasimhanProofs.SatBasic
+public import Formalism.HarderNarasimhan.HarderNarasimhanProofs.Bundle0002
 public import Formalism.LatticeSlopes.ExistsSaturatedSlopeEqMuMax
-public import Formalism.LatticeSlopes.LatticeSlopesProofs.DiscreteTopologyOfLe
+public import Formalism.LatticeSlopes.LatticeSlopesProofs.Bundle0001
 
 @[expose] public section
 

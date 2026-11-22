@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import GroundTheory.AutomorphicForms.CuspidalSplittingCoeff
+public import GroundTheory.AutomorphicForms.Bundle0023
 
 @[expose] public section
 

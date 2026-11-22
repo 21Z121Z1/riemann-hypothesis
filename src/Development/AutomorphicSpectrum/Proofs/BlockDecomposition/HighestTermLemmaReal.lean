@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.RealDescent.RealLeviDescent.ExpansionTerms
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.RealCompression
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SignAntisymmetric
+public import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.RealDescent.RealLeviDescent.Bundle0001
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0354
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0398
 
 @[expose] public section
 

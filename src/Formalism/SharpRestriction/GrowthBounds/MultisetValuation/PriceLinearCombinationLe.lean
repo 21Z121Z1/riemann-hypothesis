@@ -1,6 +1,6 @@
 module
 
-public import Formalism.SharpRestriction.GrowthBounds.MultisetValuation.NeSumLe
+public import Formalism.SharpRestriction.GrowthBounds.MultisetValuation.Bundle0024
 
 @[expose] public section
 

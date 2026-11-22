@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Formalism.SharpRestriction.LevelLetterCocycles.DualLemmaOfDeterminant
+public import Formalism.SharpRestriction.LevelLetterCocycles.Bundle0027
 
 @[expose] public section
 

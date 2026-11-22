@@ -1,7 +1,7 @@
 module
 
 public import Formalism.AdmissibleDesigns.FiniteClassesContinuousLattice
-public import Formalism.AdmissibleDesigns.SelfGood
+public import Formalism.AdmissibleDesigns.Bundle0003
 
 @[expose] public section
 

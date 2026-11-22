@@ -1,17 +1,17 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Divisors.TwistAtEach
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0072
 public import Development.AbelianVarietyTheory.Definitions.Divisors.HasTraitsOnOfHasTraitsP
-public import ReciprocityTheory.AnalyticForms.RegularLocalRings.FinalTheorems
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SumFCompEquiv
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsStalkZeta
-public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.TxFrameTranslate
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FrExp
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsRigTorsFrame
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsThetaFrameCubeConstantRootOfUnity
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaFamilyTermsEqUpToNormalisingThetaConst
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FramedTorsionTorusExtensionRespectCubicalStatement
+public import ReciprocityTheory.AnalyticForms.RegularLocalRings.Bundle0001
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle3048
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2441
+public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.Bundle0135
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle3056
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle3027
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2599
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2758
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2793
 
 @[expose] public section
 

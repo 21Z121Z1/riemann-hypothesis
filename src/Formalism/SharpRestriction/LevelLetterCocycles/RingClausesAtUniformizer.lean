@@ -2,8 +2,8 @@ module
 
 public import Formalism.SharpRestriction.LevelLetterCocycles.UniversalGeneralOfRestriction
 public import Formalism.SharpRestriction.LevelLetterCocycles.EvaluationAtUniformizerPower
-public import Formalism.SharpRestriction.LevelLetterCocycles.DualLemmaOfDeterminant
-public import Formalism.SharpRestriction.LevelLetterCocycles.DvOZeroHigh
+public import Formalism.SharpRestriction.LevelLetterCocycles.Bundle0027
+public import Formalism.SharpRestriction.LevelLetterCocycles.Bundle0043
 public import Formalism.SharpRestriction.LevelLetterCocycles.QuotientImageDivisibility.RkMultVNonneg
 public import Formalism.SharpRestriction.LevelLetterCocycles.QuotientImageDivisibility.FilDimOf
 

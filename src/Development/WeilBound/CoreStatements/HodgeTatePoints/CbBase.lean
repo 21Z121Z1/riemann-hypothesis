@@ -1,6 +1,6 @@
 module
 
-public import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.GermComp1ZeroPointLeft
+public import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.Bundle0004
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.TaylorDiscriminants.WickVanishing.LogClosed
 
 @[expose] public section

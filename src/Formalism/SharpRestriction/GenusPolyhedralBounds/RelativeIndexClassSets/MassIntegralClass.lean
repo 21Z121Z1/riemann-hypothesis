@@ -1,8 +1,8 @@
 module
 
-public import Formalism.SharpRestriction.InertJacobiLevels.ExtraNum
+public import Formalism.SharpRestriction.InertJacobiLevels.Bundle0001
 public import Formalism.ThetaLiftIndependence.Statement
-public import Formalism.HermitianLattices.StatementMass
+public import Formalism.HermitianLattices.Bundle0003
 public import Formalism.ThetaLiftIndependence.ThetaOrbitSums.ClassRepsDefinite
 public import Formalism.HermitianLattices.HermitianLatticesProofs.MassBasic
 

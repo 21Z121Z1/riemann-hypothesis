@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.PrimeEqBotOrMaximalIdealOfIsFieldAway
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.HeightTheory.FiniteAlgebraLocalCompletion
-public import ReciprocityTheory.AnalyticForms.RegularLocalRings.IntToRatA
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0015
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.HeightTheory.Bundle0005
+public import ReciprocityTheory.AnalyticForms.RegularLocalRings.Bundle0004
 
 @[expose] public section
 

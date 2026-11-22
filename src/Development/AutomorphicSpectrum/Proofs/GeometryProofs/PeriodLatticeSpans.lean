@@ -1,17 +1,16 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.ExponentialFamilyPeriods
-public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsHodgeGram
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.Bundle0009
 public import Development.AbelianVarietyTheory.Definitions.Uniformization.PointEqOfSubsingleton
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExponentialSurjectiveSemiabelianStatement
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0233
 public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsLinearLiftOfAdditiveFamily
 public import Development.AbelianVarietyTheory.Proofs.CovolumeBounds.ExistsIsClosedEmbeddingOfAffine
 public import Development.AbelianVarietyTheory.Proofs.CovolumeBounds.IsProjOverIffIsProperAndExistsIsAmpleLB
-public import Development.AbelianVarietyTheory.Proofs.CoherentCohomologyProofs.ExistsSymmetricVeryAmple
-public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.TorusExtensionPointsDivisible
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.IsHolToOfComponents
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PullbackSections.HolomorphicFamilies.HolPairA
+public import Development.AbelianVarietyTheory.Proofs.CoherentCohomologyProofs.Bundle0026
+public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.Bundle0160
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0038
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PullbackSections.HolomorphicFamilies.Bundle0004
 
 @[expose] public section
 
@@ -351,7 +350,7 @@ theorem span_per_eq_top : ∀ (R : Type) [CommRing R] (G : Over (Sp R)) [GrpObj 
     (e : FamExp G M B ψ), IsSemiAbelian G → ∀ b ∈ B, Submodule.span ℂ (e.per b) = ⊤ := by
   intro R _ G _ _ g n M B ψ e hG b hb
   obtain ⟨T⟩ := hG.fibres ℂ (spMap (ψ b))
-  have hsurj := GlobalTheory.T.exponential_surjective_semiabelian R G g n M B ψ e hG b hb
+  have hsurj := _root_.GlobalTheory.CompanionTheory.Ar.Flat.famExp_ex_surjective R G g n M B ψ e hG b hb
   have hq := T.q_hom
   have hi := T.i_hom
   letI := T.addCommGroup

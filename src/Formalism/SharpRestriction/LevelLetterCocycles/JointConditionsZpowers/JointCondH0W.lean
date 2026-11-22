@@ -1,7 +1,7 @@
 module
 
-public import Formalism.SharpRestriction.LevelLetterCocycles.JointConditionsZpowers.InvariantsConstantConditions
-public import Formalism.SharpRestriction.LevelLetterCocycles.JointConditionsZpowers.CoefficientCompatibilityOf
+public import Formalism.SharpRestriction.LevelLetterCocycles.JointConditionsZpowers.Bundle0007
+public import Formalism.SharpRestriction.LevelLetterCocycles.JointConditionsZpowers.Bundle0004
 public import Mathlib
 public import Formalism.SharpRestriction.LevelLetterCocycles.JointConditionsZpowers.CommutingEndomorphismCondition
 

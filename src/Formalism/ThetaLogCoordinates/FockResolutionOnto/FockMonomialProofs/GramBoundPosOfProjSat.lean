@@ -1,8 +1,7 @@
 module
 
 public import Formalism.ThetaLogCoordinates.FockResolutionOnto.StatementH
-public import Formalism.ThetaLogCoordinates.FockResolutionOnto.FockMonomialProofs.GramBoundUnconditionalOfSat
-public import Formalism.ThetaLogCoordinates.FockResolutionOnto.FockMonomialProofs.Vanish
+public import Formalism.ThetaLogCoordinates.FockResolutionOnto.FockMonomialProofs.Bundle0003
 
 @[expose] public section
 

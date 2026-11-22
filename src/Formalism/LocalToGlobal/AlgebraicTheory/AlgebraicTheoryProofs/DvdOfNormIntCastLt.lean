@@ -1,6 +1,6 @@
 module
 
-public import Formalism.LocalToGlobal.AlgebraicTheory.StatementD
+public import Formalism.LocalToGlobal.AlgebraicTheory.Bundle0001
 public import Formalism.LocalToGlobal.AlgebraicTheory.AlgebraicTheoryProofs.TensZEt
 public import Formalism.LocalToGlobal.AlgebraicTheory.AlgebraicTheoryProofs.TensorFourthPowerScaling
 public import Formalism.LocalToGlobal.TorsionIntegrality.QuadraticSemicharacters.QuadraticSemicharacterIdentityReformulated2

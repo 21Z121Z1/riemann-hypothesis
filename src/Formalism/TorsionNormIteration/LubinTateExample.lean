@@ -1,16 +1,11 @@
 module
 
-public import Formalism.TorsionNormIteration.InverseIntegralClasses.SolveExistsProof
+public import Formalism.TorsionNormIteration.InverseIntegralClasses.Bundle0001
 public import Formalism.TorsionNormIteration.InverseIntegralClasses.InvInt
 public import Formalism.TorsionNormIteration.InverseIntegralClasses.SigmaNormLeOne
-public import Formalism.TorsionNormIteration.InverseIntegralClasses.MemSpanOfNormLe
-public import Formalism.TorsionNormIteration.InverseIntegralClasses.NormSigmaLeOne
-public import Formalism.TorsionNormIteration.InverseIntegralClasses.MapSubtypeInjective
+public import Formalism.TorsionNormIteration.InverseIntegralClasses.Bundle0002
 public import Formalism.TorsionNormIteration.InvIntegralOfClass
-public import Formalism.TorsionNormIteration.InverseIntegralClasses.IsHomOfSubstEqSmul
 public import Formalism.FormalGroupLog.Statement
-public import Formalism.TorsionNormIteration.InverseIntegralClasses.NormNatCastOfNotDvd
-public import Formalism.TorsionNormIteration.InverseIntegralClasses.LTLemma
 
 @[expose] public section
 

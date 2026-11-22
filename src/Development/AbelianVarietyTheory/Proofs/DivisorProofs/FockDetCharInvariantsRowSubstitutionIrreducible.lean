@@ -1,18 +1,18 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Statements.PlaceShiftStatements.NormSmall
+public import Development.AbelianVarietyTheory.Statements.PlaceShiftStatements.Bundle0002
 public import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.WeilTensorModels
-public import Development.AbelianVarietyTheory.Definitions.Divisors.DiscreteSeriesHermitianUnique
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsFinPt
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ComplTupBijective
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0041
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1557
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1571
 public import Development.AbelianVarietyTheory.Statements.HeckeThetaIntegrals.ThetaIntegralsAgree
-public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.HoweDualityReal
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ProdMinorsMemInv
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EvalBasePtTopMinors
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ColSubEqDetCharSmulOfMemInv
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BigMatConjTransposeMul
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FockDetCharInvariantsLeSpanProdMaximalMinors
+public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.Bundle0011
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0522
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0528
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0526
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0576
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0562
 
 @[expose] public section
 

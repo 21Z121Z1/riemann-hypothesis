@@ -2,15 +2,13 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.KerIsTerm
-public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.LevelChainSharpColumnValuationOfPointKernelLiftL
+public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0101
 public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ValuationLeOneOfMemZmu
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.AbsNormEqOfSplitFactor
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.HeckeUnit
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ValuationFinOrderApply
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.UnfoldingIsGoodCyclotomicInvariantReferenceLatti
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.VolqExistsPow
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.IntOfHomAt
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ValuationLeOneOfPow
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0155
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0157
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0161
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0160
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0158
 
 @[expose] public section
 

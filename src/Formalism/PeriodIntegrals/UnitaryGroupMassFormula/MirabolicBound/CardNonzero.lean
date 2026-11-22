@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.MirabolicBound.Development
-public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.MirabolicBound.LastRowMul
+public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.MirabolicBound.Bundle0001
 
 @[expose] public section
 

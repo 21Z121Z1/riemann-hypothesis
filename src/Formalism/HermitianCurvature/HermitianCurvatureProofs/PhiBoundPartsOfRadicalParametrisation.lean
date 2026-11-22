@@ -8,7 +8,7 @@ public import Formalism.HermitianCurvature.HermitianCurvatureProofs.SymmetricSca
 public import Formalism.HermitianCurvature.HermitianCurvatureProofs.DirectionsInParabolic
 public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Block3MulBlocks
 public import Formalism.HermitianCurvature.HermitianCurvatureProofs.CoordinateSizesOfHypotheses
-public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.CayleyTransformPreservesForm
+public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0005
 
 @[expose] public section
 

@@ -1,8 +1,8 @@
 module
 
-public import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.SatakeExponents.UniformizerValuations.EigInert
+public import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.SatakeExponents.UniformizerValuations.Bundle0001
 public import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.IwahoriFactorisation.StrictDominance.JointGeneralisedEigenvectors.JacquetLemma
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsIdealWeight
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0344
 public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.DominantElementsGlValued
 
 @[expose] public section

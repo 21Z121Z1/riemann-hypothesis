@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.ExistsIsUnitFormSelfOfNotMem
-public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.BinaryFormUniversal
+public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.Bundle0001
 
 @[expose] public section
 

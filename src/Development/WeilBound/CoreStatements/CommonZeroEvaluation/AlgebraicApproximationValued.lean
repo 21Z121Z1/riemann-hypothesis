@@ -2,8 +2,8 @@ module
 
 public import Mathlib
 public import Formalism.LocalToGlobal.ProjectiveLattices.OneLtAbsNormReal
-public import Development.WeilBound.CoreStatements.CommonZeroEvaluation.ExistsRootAdicComplete
-public import Development.WeilBound.CoreStatements.CommonZeroEvaluation.IsAlgebraicStd
+public import Development.WeilBound.CoreStatements.CommonZeroEvaluation.Bundle0001
+public import Development.WeilBound.CoreStatements.CommonZeroEvaluation.Bundle0002
 
 @[expose] public section
 

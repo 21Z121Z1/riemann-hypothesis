@@ -1,11 +1,11 @@
 module
 
 public import Development.WeilBound.RepresentationTheoryGL.ResidualSpectrum.ExponentialNegativity.ExpNegGlue
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SmMemArchSmooth
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IsLeftInvariantOfIsAutForm
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsOpenLevel
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ArchLieDerivativeExists
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ContinuousOfIsOpenStab
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0454
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0442
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0436
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0509
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0111
 public import GroundTheory.AutomorphicForms.CuspidalDiscreteness.CuspFormsDiff
 
 @[expose] public section

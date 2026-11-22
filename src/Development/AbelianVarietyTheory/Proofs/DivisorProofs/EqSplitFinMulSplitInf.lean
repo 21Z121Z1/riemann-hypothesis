@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FinrankWsp
-public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.DefiniteUnitaryRealApproxAndFiniteInfiniteSplit
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1105
+public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0146
 
 @[expose] public section
 

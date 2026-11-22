@@ -1,21 +1,21 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.MeanPair
-public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.SphericalEisensteinSeriesOnGroup
-public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.EisensteinIsotropicLine
-public import Development.AbelianVarietyTheory.Definitions.Foundations.AnalyticOnNhdTsumNpow
-public import Development.AbelianVarietyTheory.PublishedTheorems.SiegelWeil₂.SiegelEisensteinPolesStd
+public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.Bundle0018
+public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.Bundle0011
+public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.Bundle0016
+public import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0018
+public import Development.AbelianVarietyTheory.PublishedTheorems.SiegelWeil₂.Bundle0001
 public import Development.AbelianVarietyTheory.PublishedTheorems.SiegelWeil₂.SiegelEisensteinSimplePoleOfDoublingMethod
 public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.WeilThetaConvergence
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.DifferentiableOneP
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.MixedCoordinatesOfThetaFunctionAreThetaFunctions
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.HeisenbergOperatorThetaFunctionalMixedSourceMode
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.DoubledPairSchrodingerFunctionContinuousIntegrab
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.AdelicMatrixSchwartzMajorantMeasurableRationalSh
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ContinuousIsotropicSandwichMeanTranslation
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HeisThetaLaws
-public import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.MixedModelTargetHeisenbergAnisotropicPart
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0161
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0135
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0141
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0333
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0099
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0237
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0879
+public import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.Bundle0002
 
 namespace I195MixedCoordinates_41e0c4a6f0d84a965825a95e
 
@@ -244,7 +244,7 @@ theorem integrable_slice (hψ : IsStdChar D ψ (-1)) (v : GlobalTheory.Unf.VolM 
   obtain ⟨U, hU, hfU⟩ := hf.level
   obtain ⟨K, hK, hKN⟩ := GlobalTheory.Unf.mixS_le_maj D ψ hψ θ hθ S (zeroSp D) T ρ e v U hU
   obtain ⟨C, hC⟩ := hKN N
-  have hfin := ENNReal.mul_ne_top (ENNReal.coe_ne_top (r := C)) ((GlobalTheory.T.heisenberg_sup_sobolev_seminorm_theta_laws D ψ hψ θ hθ S T).1 N f hf)
+  have hfin := ENNReal.mul_ne_top (ENNReal.coe_ne_top (r := C)) ((_root_.GlobalTheory.Unf.SupFin.supSob_laws D ψ hψ θ hθ S T).1 N f hf)
   have hli : LinearIndependent D.host.E d.e.transpose := by
     have h1 : d.qX * d.e = 1 := d.e'e
     refine Matrix.mulVec_injective_iff.1 fun a b hab => ?_

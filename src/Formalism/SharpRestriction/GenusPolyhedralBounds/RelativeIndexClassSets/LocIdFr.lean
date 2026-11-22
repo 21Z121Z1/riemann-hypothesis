@@ -1,6 +1,6 @@
 module
 
-public import Formalism.LocalToGlobal.GroupLattices.LevelGatherings.CompletionIntegersIff
+public import Formalism.LocalToGlobal.GroupLattices.LevelGatherings.Bundle0002
 public import Formalism.SharpRestriction.GenusPolyhedralBounds.RelativeIndexClassSets.LevGapLoc
 
 @[expose] public section

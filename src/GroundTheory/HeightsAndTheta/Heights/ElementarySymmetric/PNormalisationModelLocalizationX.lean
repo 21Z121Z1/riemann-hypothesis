@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StNormalisationModelLocalization
+public import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.Bundle0095
 
 @[expose] public section
 

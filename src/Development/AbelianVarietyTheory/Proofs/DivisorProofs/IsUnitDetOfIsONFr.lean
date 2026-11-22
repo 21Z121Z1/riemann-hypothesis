@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Divisors.PerCEmb
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0024
 public import Formalism.LocalToGlobal.IndefiniteReal.ThPinsR
 
 @[expose] public section

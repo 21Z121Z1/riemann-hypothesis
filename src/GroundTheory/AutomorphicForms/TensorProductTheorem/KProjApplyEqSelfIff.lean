@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import GroundTheory.AutomorphicForms.TensorProductTheorem.KFinite
+public import GroundTheory.AutomorphicForms.TensorProductTheorem.Bundle0004
 public import GroundTheory.AutomorphicForms.TensorProductTheorem.GenWindow
 
 @[expose] public section

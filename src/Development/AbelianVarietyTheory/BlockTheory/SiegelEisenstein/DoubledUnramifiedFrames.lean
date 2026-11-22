@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.IsQuasiFam
-public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.ContrFactor
-public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.PlacesToAdeles
+public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.Bundle0008
+public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.Bundle0002
+public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.Bundle0009
 
 @[expose] public section
 

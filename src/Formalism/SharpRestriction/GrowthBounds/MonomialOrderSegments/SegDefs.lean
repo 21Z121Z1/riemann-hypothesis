@@ -1,6 +1,6 @@
 module
 
-public import Formalism.SharpRestriction.GrowthBounds.MonomialOrderSegments.CollapseExponent
+public import Formalism.SharpRestriction.GrowthBounds.MonomialOrderSegments.Bundle0001
 
 @[expose] public section
 

@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Formalism.PeriodIntegrals.SqPair
+public import Formalism.PeriodIntegrals.Bundle0013
 public import Formalism.HermitianLattices.HermitianLatticesProofs.UnimodUnramUnique
 
 @[expose] public section

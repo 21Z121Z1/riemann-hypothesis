@@ -2,11 +2,11 @@ module
 
 public import Mathlib
 public import GroundTheory.AutomorphicForms.ReductionHeight
-public import GroundTheory.AutomorphicForms.ReductionIdele
+public import GroundTheory.AutomorphicForms.Bundle0019
 public import GroundTheory.GlobalFields.Adele.Approximation
 public import GroundTheory.GlobalFields.Adele.Discrete
-public import GroundTheory.GlobalFields.Adele.IntegersLattice
-public import GroundTheory.GlobalFields.IdeleGroups.LocalConditionIndex
+public import GroundTheory.GlobalFields.Adele.Bundle0001
+public import GroundTheory.GlobalFields.IdeleGroups.Bundle0002
 
 @[expose] public section
 

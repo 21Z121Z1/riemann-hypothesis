@@ -2,25 +2,26 @@ module
 
 public import Mathlib
 public import Formalism.SharpRestriction.CuspSpanNormBounds.IsTermOver
-public import Development.AbelianVarietyTheory.Definitions.Foundations.IsHermND
+public import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0007
 public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.ComplementReferenceCompactSubgroup
-public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.GgNone
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.NotField
+public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.Bundle0003
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0046
 public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.SpanToZero
 public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.FramePairCoordinatesTransportUnitaryMass
 public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.HermitianFramePairCoordinatesTransportInnerData
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.TermsCorrespond
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.FramePairCoordinatesLocalHeightEqResidueCard
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0082
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0052
 public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.BasisOfIsCompl
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.SpanToLePerp
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.HermitianDoubleCosetTermBasicFacts
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.HermitianDoubleCosetFrameClassProperties
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0037
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0043
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0032
 public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.HermitianFramesStabilizerActsOnTerms
 public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.UnitEntries
 public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.IntegralOfMulVec
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.GenericLocalTermsSelfDualLatticesStatement
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.UnitaryComplementMovesHermitianTermsStatement
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.HermitianDataWithTermSingleOrbitPrimeToStatement
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0237
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0086
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0225
+public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.Bundle0013
 
 @[expose] public section
 
@@ -248,6 +249,6 @@ theorem main : ∀ {F : Type} [Field F] [ValuativeRel F] [TopologicalSpace F] {E
     exact ⟨LocNG.img g Λ0, hmem, fun Λ hΛ => huniq d _ _ hΛ hmem⟩
   · obtain ⟨t, ht⟩ := ht
     obtain ⟨t0, ht0⟩ := hd0
-    exact GlobalTheory.T.hermitianData_with_term_single_orbit_primeTo M hM H r k P hdim hrel hpt d0 d t0 t ht0 ht
+    exact _root_.GlobalTheory.HL.PrimeToOrbit.main M hM H r k P hdim hrel hpt d0 d t0 t ht0 ht
 
 end GlobalTheory.HL.GoodFrames

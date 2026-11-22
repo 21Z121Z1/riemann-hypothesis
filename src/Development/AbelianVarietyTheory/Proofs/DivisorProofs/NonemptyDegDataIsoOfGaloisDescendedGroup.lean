@@ -1,16 +1,16 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Divisors.QuasiCompact
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GaloisInvariantFunctionsFlatBaseChange
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GaloisDescentInvariantMorphismFlatExistsUniqueStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsPullbackUniformisationOfLineBundleIsoStatement
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0065
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2281
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2367
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2458
 public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.UniformisationDegenerationDataUnique
-public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.IsIsoOfIsClosedImmersionOfThickeningsOfIsProper
+public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.Bundle0014
 public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.IsPullFOfGenRel
-public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsIsPullDegOfVal
-public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.PolarisedAVIsoDescendsOfRationalThreeTorsion
-public import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.AbelianSchemeLawsUnconditional
+public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.Bundle0070
+public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.Bundle0157
+public import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.Bundle0029
 
 @[expose] public section
 
@@ -189,7 +189,7 @@ theorem cancel_of_gal (hρ : FinExt ρ) (hG : IsGal ρ) {Y Y' : Scheme.{0}} {y :
     (hy : Flat y) (pb : IsPullback β y' y (spMap ρ)) {W : Scheme.{0}} {g g' : Y ⟶ W} (h : β ≫ g = β ≫ g') : g = g' := by
   let act : Gal ρ → (Y' ⟶ Y') := fun σ => pb.lift β (y' ≫ spMap (Gal.hom σ)) (by rw [Category.assoc, spMap_gal, pb.w])
   have a : ∀ σ, act σ ≫ β = β := fun σ => pb.lift_fst _ _ _
-  exact (GlobalTheory.T.galoisDescent_invariant_morphism_flat_existsUnique R R' ρ hρ hG Y Y' y y' β hy pb act a (fun σ => pb.lift_snd _ _ _) W (β ≫ g')
+  exact (_root_.GlobalTheory.GalDescent.descend R R' ρ hρ hG Y Y' y y' β hy pb act a (fun σ => pb.lift_snd _ _ _) W (β ≫ g')
     (fun σ => by rw [← Category.assoc, a])).unique h rfl
 
 theorem nonempty_isPullDeg (hρ : FinExt ρ) (hG : IsGal ρ) {D D₁ : DegPre R} (hB : D₁.TauBimult) {D' : DegPre R'}
@@ -203,8 +203,8 @@ theorem nonempty_isPullDeg (hρ : FinExt ρ) (hG : IsGal ρ) {D D₁ : DegPre R}
   have pb : IsPullback (proj hD) D'.P.A.hom D.P.A.hom (spMap ρ) := (pull_grp hD).1
   have pb₁ : IsPullback (proj h₁) D'.P.A.hom D₁.P.A.hom (spMap ρ) := (pull_grp h₁).1
   have pb₀ : IsPullback (spMap ρ) (𝟙 _) (𝟙 _) (spMap ρ) := IsPullback.id_vert _
-  obtain ⟨f, hf, -⟩ := GlobalTheory.T.galoisDescent_invariant_morphism_flat_existsUnique R R' ρ hρ hG _ _ _ _ _ fl pb act a a₀ _ (proj h₁) a₁
-  obtain ⟨g, hg, -⟩ := GlobalTheory.T.galoisDescent_invariant_morphism_flat_existsUnique R R' ρ hρ hG _ _ _ _ _ fl₁ pb₁ act a₁ a₀ _ (proj hD) a
+  obtain ⟨f, hf, -⟩ := _root_.GlobalTheory.GalDescent.descend R R' ρ hρ hG _ _ _ _ _ fl pb act a a₀ _ (proj h₁) a₁
+  obtain ⟨g, hg, -⟩ := _root_.GlobalTheory.GalDescent.descend R R' ρ hρ hG _ _ _ _ _ fl₁ pb₁ act a₁ a₀ _ (proj hD) a
   replace hf : proj hD ≫ f = proj h₁ := hf
   replace hg : proj h₁ ≫ g = proj hD := hg
   have : IsIso f := ⟨g, cancel_of_gal hρ hG fl pb (by rw [← Category.assoc, hf, hg, Category.comp_id]),
@@ -312,7 +312,7 @@ open GlobalTheory.PsiEvenPull (proj)
 
 theorem nonempty_isPullDeg_of_galAct : ∀ (R : Type) [CommRing R] [IsDomain R] [IsLocalRing R], Base R → ∀ (R' : Type) [CommRing R'] [IsDomain R'] [IsLocalRing R'] (ρ : R →+* R'), FinExt ρ → IsGal ρ → ∀ (D : DegData R (maximalIdeal R)) (D' : DegData R' (maximalIdeal R')) (hD : IsPullDeg ρ D.toPre D'.toPre) (A' : PolAV (Sp (FractionRing R'))) (G' : Over (Sp R')) [GrpObj G'] [IsCommMonObj G'], IsSemiAbelian G' → ∀ (U' : Unif (maximalIdeal R') D' A' G'), ∀ (a : GalAct ρ hD U') (G : Over (Sp R)) [GrpObj G] [IsCommMonObj G] (β : G'.left ⟶ G.left), IsSemiAbelian G → IsGrpPullback G' G (spMap ρ) β → (∀ σ, a.act σ ≫ β = β) → ∀ (A : PolAV (Sp (FractionRing R))) (D₁ : DegData R (maximalIdeal R)) (U₁ : Unif (maximalIdeal R) D₁ A G), LBIso U'.LG.L (U₁.LG.L.pull β) → Nonempty (IsPullDeg (RingHom.id R) D₁.toPre D.toPre) := by
   intro R _ _ _ hR R' _ _ _ ρ hρ hG D D' hD A' G' _ _ hs' U' a G _ _ β hs gp ha A D₁ U₁ hL
-  obtain ⟨h₁, bc, hbc, ⟨_, -, _, -, K⟩⟩ := GlobalTheory.T.isPullbackUniformisation_of_lineBundle_iso R hR R' ρ hρ D' A' G' hs' U' G β hs gp A D₁ U₁ hL
+  obtain ⟨h₁, bc, hbc, ⟨_, -, _, -, K⟩⟩ := _root_.GlobalTheory.Mum.isPullUnif_of_lbIso R hR R' ρ hρ D' A' G' hs' U' G β hs gp A D₁ U₁ hL
   choose h b hb H P using a.unif
   have a₀ : ∀ σ, proj (h σ) ≫ D'.toPre.P.A.hom = D'.toPre.P.A.hom ≫ spMap (Gal.hom σ) := fun σ => (pull_grp (h σ)).1.w
   refine DataDescent.nonempty_isPullDeg hρ hG D₁.tau_bimult hD h₁ (fun σ => proj (h σ)) a₀

@@ -1,6 +1,6 @@
 module
 
-public import Formalism.MahlerMeasure.LevelSum
+public import Formalism.MahlerMeasure.Bundle0001
 
 @[expose] public section
 

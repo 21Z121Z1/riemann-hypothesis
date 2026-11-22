@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import GroundTheory.AutomorphicForms.MacdonaldWhittakerHecke
+public import GroundTheory.AutomorphicForms.Bundle0027
 public import GroundTheory.AutomorphicForms.MeasuresModulus
 
 @[expose] public section

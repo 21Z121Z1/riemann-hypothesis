@@ -1,8 +1,8 @@
 module
 
-public import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.SatakeExponents.UniformizerValuations.ReadMod
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IsNormalisedOfDualIsConj
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HasSatGLOfInvT
+public import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.SatakeExponents.UniformizerValuations.Bundle0005
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0697
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1033
 
 @[expose] public section
 

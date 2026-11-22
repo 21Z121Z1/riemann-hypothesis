@@ -1,10 +1,9 @@
 module
 
-public import Formalism.LocalToGlobal.GlobalTheory.BlockActions.TilEqLevel
-public import Formalism.LocalToGlobal.GlobalTheory.BlockActions.DefNOfFact
-public import Formalism.LocalToGlobal.GlobalTheory.BlockActions.ExistsOnOfPosDef
-public import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.RationalPointsLeHolds
-public import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.AfsplitB
+public import Formalism.LocalToGlobal.GlobalTheory.BlockActions.Bundle0002
+public import Formalism.LocalToGlobal.GlobalTheory.BlockActions.Bundle0003
+public import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Bundle0002
+public import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Bundle0006
 
 @[expose] public section
 

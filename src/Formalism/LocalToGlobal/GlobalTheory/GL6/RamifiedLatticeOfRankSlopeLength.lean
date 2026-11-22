@@ -1,10 +1,8 @@
 module
 
-public import Formalism.LocalToGlobal.GlobalTheory.GL6.ValuationClassTranslateMem
-public import Formalism.LocalToGlobal.GlobalTheory.GL6.CoordMapInjective
-public import Formalism.LocalToGlobal.GlobalTheory.GL6.RamifiedLatticePropsOfModel
-public import Formalism.LocalToGlobal.GlobalTheory.GL6.DiamondCommDistinctPlaces
-public import Formalism.LocalToGlobal.GlobalTheory.GL6.AdmissibleOfSplitAndRoundTrips
+public import Formalism.LocalToGlobal.GlobalTheory.GL6.Bundle0004
+public import Formalism.LocalToGlobal.GlobalTheory.GL6.Bundle0001
+public import Formalism.LocalToGlobal.GlobalTheory.GL6.Bundle0003
 
 @[expose] public section
 

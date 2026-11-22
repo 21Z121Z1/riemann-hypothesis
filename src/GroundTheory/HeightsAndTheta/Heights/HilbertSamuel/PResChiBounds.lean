@@ -1,9 +1,8 @@
 module
 
 public import Mathlib
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsResChiBounds
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsResolutionSup
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.ResChiSandwichLower
+public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0024
+public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0107
 public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.ResSymGram
 
 @[expose] public section

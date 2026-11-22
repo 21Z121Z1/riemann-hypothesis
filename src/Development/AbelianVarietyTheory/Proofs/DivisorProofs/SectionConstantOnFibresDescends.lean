@@ -1,17 +1,17 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Divisors.CongModRefl
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArakelovVolumes.UpperBounds.WeightFunctionOnFrames
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0045
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArakelovVolumes.UpperBounds.Bundle0007
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SectionPullbackExistsUnique
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.FramedPointBaseChangeUniqueReflIff
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0023
 public import Formalism.LocalToGlobal.ProjectiveLattices.FrameCharts
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PullbackSections.FrMapComp
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PullbackSections.EvNatPf
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsLiftGeometricPointOfFaithfullyFlatFiniteTyStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EtaleFaithfullyFlatDescentGeometricPointsStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsLiftFiniteEtaleSurjectionTestRingStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsFiniteEtaleGoodCoverLevelMapStatement
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PullbackSections.Bundle0009
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PullbackSections.Bundle0002
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0140
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0581
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1833
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1817
 
 @[expose] public section
 
@@ -30,7 +30,7 @@ theorem exists_lift_pt : ∀ (A B : Type) [CommRing A] [CommRing B] [Algebra A B
 theorem exists_eq_of_geom : ∀ (A B : Type) [CommRing A] [CommRing B] [Algebra A B] [IsReduced A] [IsJacobsonRing A],
     Module.FaithfullyFlat A B → Algebra.Etale A B → ∀ b : B,
     (∀ (k : Type) [Field k] [IsAlgClosed k] (φ ψ : B →+* k), φ.comp (algebraMap A B) = ψ.comp (algebraMap A B) →
-      φ b = ψ b) → ∃ a : A, algebraMap A B a = b := GlobalTheory.T.etale_faithfullyFlat_descent_geometric_points
+      φ b = ψ b) → ∃ a : A, algebraMap A B a = b := _root_.GlobalTheory.EtaleGeomDescent.descent
 
 theorem exists_etale_lift : ∀ (Y Z : Scheme.{0}) (π : Z ⟶ Y), IsFinite π → Etale π → Surjective π →
     ∀ (K : Type) [Field K] (p : TRing K) (x : Sp p.R ⟶ Y), ∃ (q : TRing K) (ι : p.R →ₐ[K] q.R),
@@ -42,7 +42,7 @@ theorem exists_good_cover : ∀ (E : Type) [Field E] [NumberField E] [IsCMField 
     ∃ (Z : Scheme.{0}) (π : Z ⟶ Xo.XF c) (z₂ : Z ⟶ d.Xo₂.X), IsFinite π ∧ Etale π ∧ Surjective π ∧
       z₂ ≫ d.r = π ≫ pullback.fst _ _ ∧
       z₂ ≫ d.Xo₂.s = π ≫ pullback.snd _ _ ≫
-        spMap ((d.eF.symm : d.c₂.F →+* c.F).comp (IntermediateField.inclusion d.c₂.le).toRingHom) := GlobalTheory.T.exists_finiteEtale_goodCover_levelMap
+        spMap ((d.eF.symm : d.c₂.F →+* c.F).comp (IntermediateField.inclusion d.c₂.le).toRingHom) := _root_.GlobalTheory.CoverGood.exists_good_cover
 
 end GlobalTheory.CoverDesc
 

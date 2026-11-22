@@ -2,13 +2,11 @@ module
 
 public import Mathlib
 public import Formalism.SharpRestriction.Divisibility.SchurIrreducible
-public import Formalism.LocalToGlobal.BesselHermitianTheta.DefsReal
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SymbolCongr
+public import Formalism.LocalToGlobal.BesselHermitianTheta.Bundle0001
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0096
 public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.DegreeSingleAdd
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ProdXEqMonomial
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.UgMemSpanListProd
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ProdPLinIsHomogeneous
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SymmetrisationEquivariant
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0100
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0101
 
 @[expose] public section
 

@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Formalism.LocalToGlobal.HilbertRowConditions.RowPin
-public import Formalism.LocalToGlobal.KernelLattices.InterlaceAll
+public import Formalism.LocalToGlobal.KernelLattices.Bundle0002
 public import Formalism.SharpRestriction.GlobalSchurBounds.ProductFirstZerothParts
 public import Formalism.SharpRestriction.GlobalSchurBounds.FiniteModelOfAdmissibleTransports
 public import Formalism.LocalToGlobal.GlobalTheory.BlockActions.SymmetricLevelClausesHold

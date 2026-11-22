@@ -2,8 +2,8 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.Foundations.SamePartIffOfNeZero
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.MemMonicSquarefreeUnitConstPolysIffMonicSquarefrStatement
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.SquarefreeLabelTorusCardBoundsAndMulStatement
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0080
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0070
 
 @[expose] public section
 

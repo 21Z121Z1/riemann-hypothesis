@@ -2,19 +2,19 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.Divisors.FinitePrimesUnder
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConjSmulNeBot
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CosetVecEq
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WeilOperatorIntegralPointVacuumRootOfUnitySmul
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WeilIntegralPointSkewLatticeUnitVectorSameEigenStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WeilActionCosetVectorEqTranslateUnitVector
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.StandardLatticeTranslateUnitVectorVacuumExpansioStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IndexStandardInfSkewThetaLatticeEqAbsNormPowStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SkewIdealLatticePointRationalNormKillsStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsAddCharThetaCommutatorPhaseSkewLatticeStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.StabilizerCongruentOfCommutatorPhaseEqStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CardPrincipalCongruenceTransversalLeAbsNormPowStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SumNormSqLeOfRootOfUnityAddCharCombinationStatement
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PullbackSections.HolomorphicFamilies.ModelLatIn
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1490
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1491
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1539
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1591
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1590
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1657
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1529
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1587
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1518
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1674
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1570
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1538
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PullbackSections.HolomorphicFamilies.Bundle0013
 
 @[expose] public section
 
@@ -168,7 +168,7 @@ theorem pres_stdSum_last (D : D7) (δ t0 : ℂ) (hc : Crv D ⊤ δ) {o a d : ℕ
   have had : a ≤ d := by omega
   have he : e0 ∈ Th D (tor0 D ⊤ δ) (stdL D a) (stdL D d) := hv.1
   have hN0 : 0 < Ideal.absNorm 𝔪 := Nat.pos_of_ne_zero (Ideal.absNorm_eq_zero_iff.not.2 h𝔪)
-  have hidx := GlobalTheory.T.index_standard_inf_skewThetaLattice_eq_absNorm_pow D δ hc 𝔪 h𝔪 hco a d
+  have hidx := _root_.GlobalTheory.SkewIndex.index_inter_skew D δ hc 𝔪 h𝔪 hco a d
   haveI hfin : Finite (La D (tor0 D ⊤ δ) (stdL D a) (skewLat D 𝔪 d) ⧸
       (La0 D (tor0 D ⊤ δ) a d).addSubgroupOf (La D (tor0 D ⊤ δ) (stdL D a) (skewLat D 𝔪 d))) :=
     AddSubgroup.index_ne_zero_iff_finite.1 (by rw [hidx]; positivity)
@@ -187,9 +187,9 @@ theorem pres_stdSum_last (D : D7) (δ t0 : ℂ) (hc : Crv D ⊤ δ) {o a d : ℕ
     obtain ⟨c, hcm, hce⟩ := GlobalTheory.FunObj.StdDatum.vacuum_int_root_of_unity D δ hc e0 he W i (hR i i.2)
     obtain ⟨x, hx, hxc, hom⟩ := om_cosetV_eq o D δ hc e0 he W 𝔪 h𝔪 i (hR i i.2)
     refine ⟨c, x, hcm, hx, hxc, ?_⟩
-    rw [hom, GlobalTheory.T.weil_integralPoint_skewLatticeUnitVector_same_eigen D δ hc e0 he W 𝔪 h𝔪 i (hR i i.2) c hce, wsm]
+    rw [hom, _root_.GlobalTheory.FunObj.EigUnit.eig_unit D δ hc e0 he W 𝔪 h𝔪 i (hR i i.2) c hce, wsm]
   choose c x hcm hx hxc hom using hr
-  choose χ hχ using fun i : R => GlobalTheory.T.exists_addChar_thetaCommutatorPhase_skewLattice D δ hc 𝔪 (pt D (tor0 D ⊤ δ) δ (x i)) (hx i)
+  choose χ hχ using fun i : R => _root_.GlobalTheory.CommPhase.chars D δ hc 𝔪 (pt D (tor0 D ⊤ δ) δ (x i)) (hx i)
   have hone : ∀ k : GA D a, CongOne D 𝔪 (k⁻¹ * k) := by
     intro k i' j
     rw [inv_mul_cancel]
@@ -205,13 +205,13 @@ theorem pres_stdSum_last (D : D7) (δ t0 : ℂ) (hc : Crv D ⊤ δ) {o a d : ℕ
     exact Subtype.ext ((huniq j (hR j j.2)).unique ⟨i.2, h1⟩ ⟨j.2, hone j⟩)
   have hcard : Fintype.card R ≤ Ideal.absNorm 𝔪 ^ (a * d) := by
     rw [Fintype.card_coe]
-    refine (GlobalTheory.T.card_principalCongruence_transversal_le_absNorm_pow D 𝔪 h𝔪 a R hR huniq).trans (Nat.pow_le_pow_right hN0 ?_)
+    refine (_root_.GlobalTheory.card_congRep_le D 𝔪 h𝔪 a R hR huniq).trans (Nat.pow_le_pow_right hN0 ?_)
     rw [pow_two]; exact Nat.mul_le_mul_left a had
-  obtain ⟨rr, hrr, hint, hρ⟩ := GlobalTheory.T.sum_norm_sq_le_of_rootOfUnity_addChar_combination (Ideal.absNorm 𝔪) (a * d) c χ hN0 hcm hinj
+  obtain ⟨rr, hrr, hint, hρ⟩ := _root_.GlobalTheory.ParsevalRootsOfUnity.exists_integral_coeffs_sum_norm_sq_le_of_rootOfUnity (Ideal.absNorm 𝔪) (a * d) c χ hN0 hcm hinj
     (by rw [← hidx, AddSubgroup.index_eq_card, Nat.card_eq_fintype_card]) hcard
   choose z hz hzN using fun q : (La D (tor0 D ⊤ δ) (stdL D a) (skewLat D 𝔪 d) ⧸
       (La0 D (tor0 D ⊤ δ) a d).addSubgroupOf (La D (tor0 D ⊤ δ) (stdL D a) (skewLat D 𝔪 d))) =>
-    GlobalTheory.T.skewIdealLattice_point_rational_normKills D δ hc 𝔪 h𝔪 _ (Quotient.out q).2
+    _root_.GlobalTheory.FunObj.StdDatum.SkewPoints.points D δ hc 𝔪 h𝔪 _ (Quotient.out q).2
   set e := Fintype.equivFin (La D (tor0 D ⊤ δ) (stdL D a) (skewLat D 𝔪 d) ⧸
       (La0 D (tor0 D ⊤ δ) a d).addSubgroupOf (La D (tor0 D ⊤ δ) (stdL D a) (skewLat D 𝔪 d)))
   refine ⟨_, fun i => rr (e.symm i), fun i => z (e.symm i), fun i => hzN _, fun i => hint _, fun ρ => ?_, ?_⟩
@@ -220,7 +220,7 @@ theorem pres_stdSum_last (D : D7) (δ t0 : ℂ) (hc : Crv D ⊤ δ) {o a d : ℕ
   rw [e.symm.sum_comp (fun q => ((rr q : Qbar) : ℂ) * Wd D (tor0 D ⊤ δ) (pt D (tor0 D ⊤ δ) δ (z q)) e0 y)]
   simp only [stdSum, Finset.sum_apply]
   rw [← Finset.sum_coe_sort R]
-  simp only [hom, Pi.smul_apply, smul_eq_mul, GlobalTheory.T.standardLattice_translate_unitVector_vacuum_expansion D δ hc 𝔪 h𝔪 e0 he _ (hx _), hidx,
+  simp only [hom, Pi.smul_apply, smul_eq_mul, _root_.GlobalTheory.FunObj.TransExp.wd_iop_expand D δ hc 𝔪 h𝔪 e0 he _ (hx _), hidx,
     finsum_eq_sum_of_fintype, hrr, ← hz]
   have hs : ((Real.sqrt ((Ideal.absNorm 𝔪 : ℝ) ^ (a * d)) : ℂ))⁻¹ *
       ((Real.sqrt (((Ideal.absNorm 𝔪 ^ (a * d) : ℕ) : ℝ)) : ℂ))⁻¹ = (((Ideal.absNorm 𝔪 : ℂ)) ^ (a * d))⁻¹ := by

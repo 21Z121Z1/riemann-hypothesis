@@ -1,7 +1,7 @@
 module
 
 public import Formalism.UnipotentAdelicQuotients.ThmBInHecke
-public import Formalism.LocalToGlobal.IndefiniteReal.RealSeparation.NotRootUnity
+public import Formalism.LocalToGlobal.IndefiniteReal.RealSeparation.Bundle0002
 public import Lean
 
 @[expose] public section

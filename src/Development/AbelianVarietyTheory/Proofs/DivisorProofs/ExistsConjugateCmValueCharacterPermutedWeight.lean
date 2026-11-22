@@ -1,12 +1,12 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.LatticeNormTransport
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ContinuousOfTameLoc
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsNatHeckeCharacterTrivialCongruentUnits
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.UnitOpenAndCongrOpen
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.HeckeCharFiniteOrderUnitIdele
-public import Formalism.LocalToGlobal.UnitaryNorms.CharExGen
+public import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.Bundle0007
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0098
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1667
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0096
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0108
+public import Formalism.LocalToGlobal.UnitaryNorms.Bundle0001
 
 @[expose] public section
 

@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import GroundTheory.ArithmeticGeometry.SchemeCohomology.ProperCohomology.Support
+public import GroundTheory.ArithmeticGeometry.SchemeCohomology.ProperCohomology.Bundle0005
 
 @[expose] public section
 

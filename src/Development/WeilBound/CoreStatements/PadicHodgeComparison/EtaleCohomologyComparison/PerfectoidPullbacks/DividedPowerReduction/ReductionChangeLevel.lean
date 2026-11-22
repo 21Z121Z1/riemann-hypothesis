@@ -1,12 +1,11 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MuBNat
-public import Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.PerfectoidPullbacks.DividedPowerReduction.IsFirstChernThickening
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0247
+public import Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.PerfectoidPullbacks.DividedPowerReduction.Bundle0001
 public import Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.CechPairings.Imports
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.DPullCEqZero
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.InclRedM
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ResKOne
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0242
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0258
 
 @[expose] public section
 

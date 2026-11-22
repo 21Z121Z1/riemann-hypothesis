@@ -1,23 +1,23 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Statements.PlaceShiftStatements.NormSmall
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.RatInOfUnit
+public import Development.AbelianVarietyTheory.Statements.PlaceShiftStatements.Bundle0002
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0142
 public import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.WeilTensorModels
-public import Development.AbelianVarietyTheory.Definitions.Divisors.DiscreteSeriesHermitianUnique
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NegIdxOfIsStd
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BaseFits
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GSEqZeroOfLt
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0041
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1561
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1569
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1301
 public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.RamificationIdxEqOneOfIsSquare
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsMulPowIntegral
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.IsSplitChartSplitChart
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0192
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0305
 public import Development.AbelianVarietyTheory.BlockTheory.NonGaloisCusps.CentralInvolutionRing
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EpsMulOfCondExp
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GaussMulUnram
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ValuedUnifAt
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LocalGaussSumIntegerDvdResidueCardPow
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaFactorNonzero
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.LevelCharactersUnramifiedOffLevelPlaces
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1597
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1602
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1614
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1609
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1360
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0164
 
 @[expose] public section
 

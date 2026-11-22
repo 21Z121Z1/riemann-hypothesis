@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Divisors.IsEulerContraction
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0032
 
 @[expose] public section
 

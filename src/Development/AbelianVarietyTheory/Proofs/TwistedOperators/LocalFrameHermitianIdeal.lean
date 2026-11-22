@@ -1,19 +1,20 @@
 module
 
 public import Formalism.LocalToGlobal.IndefiniteReal.ZeroPartEigenvalueConvention
-public import Formalism.LocalToGlobal.IndefiniteReal.EvalTieTOne
-public import Formalism.LocalToGlobal.IndefiniteReal.RationalEmbedding
+public import Formalism.LocalToGlobal.IndefiniteReal.Bundle0029
+public import Formalism.LocalToGlobal.IndefiniteReal.Bundle0012
 public import Formalism.LocalToGlobal.SiegelLatticeTheory.FlagStabilizerTensors.RowLevelMatch
-public import Development.AbelianVarietyTheory.PublishedTheorems.DiscreteSeriesUnitary₂.DiscreteSeriesClassificationIff
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.DiagGLConjApply
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.LevelPlacesNotIsConjPlaceRealDat
+public import Development.AbelianVarietyTheory.PublishedTheorems.DiscreteSeriesUnitary₂.Bundle0001
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0391
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0211
 public import Formalism.LocalToGlobal.SiegelLatticeTheory.HaarTransversals.UnitaryHaarProducts.BunExists
 public import Formalism.LocalToGlobal.SiegelLatticeTheory.HaarTransversals.UnitaryHaarProducts.LevelSubgroupCharacterUnitary
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.BSlotD
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0398
 public import Formalism.LocalToGlobal.IndefiniteReal.LevelTypeEquivalence.NatCastKPZero
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.HermitianFormDualFlagEqReducedFrameCoordinatesStatement
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.MemSpanAddSmulLatticeOfFrameCoeffsZmodStatement
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ResidueCoordinatesInFrameLinearStabiliserStatement
+public import Mathlib
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0414
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0415
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0419
 
 @[expose] public section
 
@@ -250,7 +251,7 @@ theorem cong_of_pairs (h : FH I g e0 f0 z0 bw bwd ew) {x : I.Gf} (hx : x ∈ I.K
   have hm := h.mem
   obtain ⟨h1, h2, h3, h4, h5, h6, h7, h8, h9, h10⟩ := hT
   refine ⟨fun a => ?_, ?_, fun i => ?_⟩
-  · have := GlobalTheory.T.mem_span_add_smul_lattice_of_frame_coeffs_zmod I g e0 f0 z0 bw bwd ew h _ (K_sub_mv I hx (hm.1 a).1) {b | b.1 < a.1} ∅
+  · have := _root_.GlobalTheory.mo_of_coef_mod I g e0 f0 z0 bw bwd ew h _ (K_sub_mv I hx (hm.1 a).1) {b | b.1 < a.1} ∅
       (fun c hc => hP _ (hm.1 c).2 _ (hm.1 a).1 (h1 a c (not_lt.1 hc)).1 (h1 a c (not_lt.1 hc)).2)
       (fun c => hP _ (hm.1 c).1 _ (hm.1 a).1 (h2 c a) (h2 a c))
       (hP _ hm.2.1 _ (hm.1 a).1 (h3 a).1 (h3 a).2)
@@ -258,7 +259,7 @@ theorem cong_of_pairs (h : FH I g e0 f0 z0 bw bwd ew) {x : I.Gf} (hx : x ∈ I.K
       (fun i => hP _ (hm.2.2 i).1 _ (hm.1 a).1 (h5 a i).1 (h5 a i).2)
     rw [Set.image_empty, Set.union_empty] at this
     exact this
-  · have := GlobalTheory.T.mem_span_add_smul_lattice_of_frame_coeffs_zmod I g e0 f0 z0 bw bwd ew h _ (K_sub_mv I hx hm.2.1) Set.univ ∅
+  · have := _root_.GlobalTheory.mo_of_coef_mod I g e0 f0 z0 bw bwd ew h _ (K_sub_mv I hx hm.2.1) Set.univ ∅
       (fun c hc => absurd (Set.mem_univ c) hc)
       (fun c => hP _ (hm.1 c).1 _ hm.2.1 (h3 c).2 (h3 c).1)
       (hP _ hm.2.1 _ hm.2.1 h6 h6)
@@ -266,7 +267,7 @@ theorem cong_of_pairs (h : FH I g e0 f0 z0 bw bwd ew) {x : I.Gf} (hx : x ∈ I.K
       (fun i => hP _ (hm.2.2 i).1 _ hm.2.1 (h8 i).1 (h8 i).2)
     rw [Set.image_empty, Set.union_empty, Set.image_univ] at this
     exact this
-  · have := GlobalTheory.T.mem_span_add_smul_lattice_of_frame_coeffs_zmod I g e0 f0 z0 bw bwd ew h _ (K_sub_mv I hx (hm.2.2 i).1) Set.univ {j | j.1 < i.1}
+  · have := _root_.GlobalTheory.mo_of_coef_mod I g e0 f0 z0 bw bwd ew h _ (K_sub_mv I hx (hm.2.2 i).1) Set.univ {j | j.1 < i.1}
       (fun c hc => absurd (Set.mem_univ c) hc)
       (fun c => hP _ (hm.1 c).1 _ (hm.2.2 i).1 (h5 c i).2 (h5 c i).1)
       (hP _ hm.2.1 _ (hm.2.2 i).1 (h8 i).2 (h8 i).1)
@@ -307,7 +308,7 @@ theorem core (h : FH (II D) g e0 f0 z0 bw bwd ew) (hβ : IsFrame β (II D).L) (h
     · exact (hm.2.2 _).1
   have hv : ((II D).fmat y - 1) *ᵥ s ∈ (II D).Lf := K_sub_mv (II D) hy hsL
   intro h1
-  rw [(GlobalTheory.T.hermitianForm_dualFlag_eq_reduced_frame_coordinates g e0 f0 z0 bw bwd ew h β PP w hβ hl _ hv).1 p h1]
+  rw [(_root_.GlobalTheory.SeeConjGroup.CoefRead.coef_read g e0 f0 z0 bw bwd ew h β PP w hβ hl _ hv).1 p h1]
   obtain ⟨hadd, -, hmul⟩ := GlobalTheory.T.residueCoordinatesInFrame_linear_stabiliser β (II D).L hβ PP
   have hsH := (mem_hat (II D).L s).1 hsL
   have hvH := (mem_hat (II D).L _).1 hv
@@ -340,7 +341,7 @@ theorem tab_loc (h : FH (II D) g e0 f0 z0 bw bwd ew) (hβ : IsFrame β (II D).L)
     (core h hβ hl hy hyM hM hu) (fun s hs => ?_) (fun i s hs => ?_) (fun i t ht => ?_)
   · rw [hA_neg_left] at hs
     exact ZD_neg hs
-  · exact (GlobalTheory.T.hermitianForm_dualFlag_eq_reduced_frame_coordinates g e0 f0 z0 bw bwd ew h β PP w hβ hl _ (K_sub_mv (II D) hy hs)).2 i
+  · exact (_root_.GlobalTheory.SeeConjGroup.CoefRead.coef_read g e0 f0 z0 bw bwd ew h β PP w hβ hl _ (K_sub_mv (II D) hy hs)).2 i
   · cases w
     · show ZD D PP (hA (II D) t (((II D).fmat y - 1) *ᵥ bw i))
       rw [hA_abs y t (bw i) _ (h.bw_w i)]

@@ -1,6 +1,6 @@
 module
 
-public import Formalism.ThetaLogCoordinates.BihomogeneousPairs.LetterChainEmbeddings.LatticeEqualHolds
+public import Formalism.ThetaLogCoordinates.BihomogeneousPairs.LetterChainEmbeddings.Bundle0001
 
 @[expose] public section
 

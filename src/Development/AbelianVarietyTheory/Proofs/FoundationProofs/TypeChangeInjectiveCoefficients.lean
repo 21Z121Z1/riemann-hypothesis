@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.BlockTheory.TorsionBlocks.LatticeConditions
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.CrystallineCocycleTransportConjugation
-public import Development.AbelianVarietyTheory.Proofs.CoherentCohomologyProofs.LengthBaseChangeQuotientOfMapMaximalIdeal
+public import Development.AbelianVarietyTheory.BlockTheory.TorsionBlocks.Bundle0006
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0212
+public import Development.AbelianVarietyTheory.Proofs.CoherentCohomologyProofs.Bundle0003
 
 @[expose] public section
 

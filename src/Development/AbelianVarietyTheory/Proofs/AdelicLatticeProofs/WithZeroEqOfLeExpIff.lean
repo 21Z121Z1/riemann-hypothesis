@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.AdelicHermitianForms.SqSubLeNormSub
+public import Development.AbelianVarietyTheory.Definitions.AdelicHermitianForms.Bundle0001
 
 @[expose] public section
 

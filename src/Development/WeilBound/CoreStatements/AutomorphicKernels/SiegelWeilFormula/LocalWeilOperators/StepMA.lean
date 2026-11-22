@@ -1,7 +1,8 @@
 module
 
 public import Development.WeilBound.CoreStatements.AutomorphicKernels.SiegelWeilFormula.LocalWeilOperators.StepNC
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SchwartzLinearChangeStatement
+public import Mathlib
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0019
 
 @[expose] public section
 
@@ -132,7 +133,7 @@ theorem stepM_pf (hT : TAll) : ∀ (y : GR d.n) (a : Matrix (Fin d.n) (Fin d.n) 
     rw [Complex.ofReal_ne_zero]
     exact (Real.rpow_pos_of_pos (lt_of_le_of_ne (NNReal.coe_nonneg _) (absE_ne _).symm) _).ne'
   · obtain ⟨φ, rfl⟩ := hf
-    obtain ⟨ψ, hψ⟩ := GlobalTheory.T.schwartz_linear_change d.m d.n c a ha φ
+    obtain ⟨ψ, hψ⟩ := _root_.GlobalTheory.CompanionTheory.KlocopSw.exists_schwartz_rightMul d.m d.n c a ha φ
     exact ⟨ψ, hψ⟩
   · funext X
     rw [(hT.2.1 F E σ d Φ hΦ).2.1 (R.ι w y) t u hMtu X, hTΦ]

@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Formalism.MirabolicMackeyTheory.StatementL
-public import Formalism.HermitianLattices.HermitianLatticesProofs.LocBasic
+public import Formalism.MirabolicMackeyTheory.Bundle0001
+public import Formalism.HermitianLattices.HermitianLatticesProofs.Bundle0001
 public import Formalism.HermitianLattices.HermitianLatticesProofs.IndexBasic
 public import Formalism.QuotientMetricDivisors.HermitianTwistDivisors.ImageLcv
 public import Formalism.QuotientMetricDivisors.HermitianTwistDivisors.IdxChange

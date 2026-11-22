@@ -3,28 +3,26 @@ module
 public import Mathlib
 public import Development.WeilBound.CoreStatements.TemperedRepresentationTheory.AffineGLForms.CuspInvariantsFinite.CuspInvFin
 public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.CuspRapidDecaySiegelGL
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IdeleModuleDetDiagUnitsPosIdele
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0292
 public import GroundTheory.AutomorphicForms.CuspidalDiscreteness.CuspFormsHeight
 public import GroundTheory.AutomorphicForms.CuspidalDiscreteness.DecayUniform
 public import GroundTheory.AutomorphicForms.AutomorphicFormSpaces.GKStable
 public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SmoothAutomorphicOpenInvariant
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.RapidDecayOfOneParabolicBounds
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SmMemArchSmooth
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IsLeftInvariantOfIsAutForm
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsOpenLevel
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IsAddHaarMeasureUnipMeasure
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsGrowthUniform
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ArchLieDerivativeExists
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LieOneLMemZalg
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsMonicAevalMemOfLeSup
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CuspidalGeneralizedSpaceSpanClosedStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SplitCentreTranslatePreservesCuspSpaceStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LinearOdeValueDeterminedByShiftsStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SplitCentreDerivativeLieActionStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FiniteGeneralizedEigenspaceCofiniteDecompositionStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FiniteDimOfAnnihilatingPolyEigenspacesStatement
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0452
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0454
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0442
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0436
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0440
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0437
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0509
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0445
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0435
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0432
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0455
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0446
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0438
 public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsMonicAevalAddOfKill
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MemL2OfBoundedContinuousInvariant
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0680
 
 @[expose] public section
 
@@ -57,7 +55,7 @@ theorem invariant_of_lie_oneL_eq_zero {a : ℕ} (ψ : Sm E a) (h : lie E a (oneL
   rw [CuspidalL2GL.splitCentre_comm]
   have hd : ∀ s, HasDerivAt (fun s : ℝ => ψ.1 (g * GlobalTheory.UnitaryBC.splitCentre E a s)) 0 s := by
     intro s
-    have := GlobalTheory.T.split_centre_derivative_lie_action E a ψ g s
+    have := _root_.GlobalTheory.CompanionTheory.CuspFinDeriv.hasDerivAt_splitCentre E a ψ g s
     rwa [h] at this
   have := is_const_of_deriv_eq_zero (f := fun s : ℝ => ψ.1 (g * GlobalTheory.UnitaryBC.splitCentre E a s))
     (fun s => (hd s).differentiableAt) (fun s => (hd s).deriv) t 0
@@ -66,10 +64,10 @@ theorem invariant_of_lie_oneL_eq_zero {a : ℕ} (ψ : Sm E a) (h : lie E a (oneL
 theorem cuspFin_pos {a : ℕ} (ha : 0 < a) : CuspFin E a := by
   intro L hL W _ _ _ ρ hρ J hJ
   set V := Submodule.span ℂ {φ : Sm E a | φ ∈ genSpace L ρ J ∧ IsCuspidal φ.1} with hV
-  have hVC : ∀ φ ∈ V, φ ∈ genSpace L ρ J ∧ IsCuspidal φ.1 := GlobalTheory.T.cuspidal_generalized_space_span_closed E a L W ρ J
+  have hVC : ∀ φ ∈ V, φ ∈ genSpace L ρ J ∧ IsCuspidal φ.1 := _root_.GlobalTheory.CompanionTheory.CuspSubspace.mem_of_mem_span_cuspForms E a L W ρ J
   set z := lie E a (oneL E a) with hz
   obtain ⟨p, hpm, hp⟩ := GlobalTheory.CompanionTheory.Affgl.minpoly_on_killed E a J hJ z (GlobalTheory.CompanionTheory.CapelliTrace.lie_oneL_mem_Zalg E a)
-  obtain ⟨T, w, hTw⟩ := GlobalTheory.T.linear_ode_value_determined_by_shifts p hpm
+  obtain ⟨T, w, hTw⟩ := _root_.GlobalTheory.CompanionTheory.LinearODE.deriv_zero_eq_sum p hpm
   have hstab : ∀ φ ∈ V, z φ ∈ V := by
     intro φ hφ
     obtain ⟨hg, hc⟩ := hVC φ hφ
@@ -78,7 +76,7 @@ theorem cuspFin_pos {a : ℕ} (ha : 0 < a) : CuspFin E a := by
       funext g
       have h := hTw (fun k s => ((z ^ k) φ).1 (g * GlobalTheory.UnitaryBC.splitCentre E a s))
         (fun k s => by
-          have h := GlobalTheory.T.split_centre_derivative_lie_action E a ((z ^ k) φ) g s
+          have h := _root_.GlobalTheory.CompanionTheory.CuspFinDeriv.hasDerivAt_splitCentre E a ((z ^ k) φ) g s
           rwa [← Module.End.mul_apply, ← pow_succ'] at h)
         (fun s => by
           have h0 := congrArg (fun ψ : Sm E a => ψ.1 (g * GlobalTheory.UnitaryBC.splitCentre E a s)) (hp φ hg.2.2.2)
@@ -88,9 +86,9 @@ theorem cuspFin_pos {a : ℕ} (ha : 0 < a) : CuspFin E a := by
       rfl
     rw [key]
     exact Submodule.sum_mem _ fun t _ => Submodule.smul_mem _ _
-      (Submodule.subset_span (GlobalTheory.T.split_centre_translate_preserves_cusp_space E a L W ρ J hJ.1 φ hg hc t))
-  refine GlobalTheory.T.finite_dim_of_annihilating_poly_eigenspaces (Sm E a) z V hstab p hpm.ne_zero (fun v hv => hp v (hVC v hv).1.2.2.2) fun c => ?_
-  obtain ⟨χ, L', J', hL', hJ', hχ⟩ := GlobalTheory.T.exists_char_twist_cuspidal_lie_eigenvalue_zero E a ha L hL W ρ hρ J hJ c
+      (Submodule.subset_span (_root_.GlobalTheory.CompanionTheory.CuspFinGL.Transl.rt_splitCentre_mem E a L W ρ J hJ.1 φ hg hc t))
+  refine _root_.GlobalTheory.CompanionTheory.LinAlg.finiteDimensional_of_polynomial_of_eigenspaces (Sm E a) z V hstab p hpm.ne_zero (fun v hv => hp v (hVC v hv).1.2.2.2) fun c => ?_
+  obtain ⟨χ, L', J', hL', hJ', hχ⟩ := _root_.GlobalTheory.CompanionTheory.CuspTwist.twist_central E a ha L hL W ρ hρ J hJ c
   have hfin := GlobalTheory.CompanionTheory.CuspInvariant.cuspInvFin cuspFormsBoundedGL GlobalTheory.CompanionTheory.UnifAlpha.unifAlpha E a L' hL' W ρ hρ J' hJ'
   have hle : (Submodule.span ℂ {v | v ∈ V ∧ z v = c • v}).map (mulChi a χ).toLinearMap ≤
       Submodule.span ℂ {φ | φ ∈ genSpace L' ρ J' ∧ IsCuspidal φ.1 ∧

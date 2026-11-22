@@ -1,9 +1,9 @@
 module
 
 public import Development.AutomorphicArithmetic.Foundations.Convolution.CentreSplitting.LocalRepresentationL2
-public import Development.AutomorphicArithmetic.Foundations.Convolution.CentreSplitting.ExCusp
-public import Development.AutomorphicArithmetic.Foundations.Convolution.CentreSplitting.FormsIrr
-public import Development.AutomorphicArithmetic.Foundations.Convolution.CentreSplitting.OrthOrIso
+public import Development.AutomorphicArithmetic.Foundations.Convolution.CentreSplitting.Bundle0004
+public import Development.AutomorphicArithmetic.Foundations.Convolution.CentreSplitting.Bundle0002
+public import Development.AutomorphicArithmetic.Foundations.Convolution.CentreSplitting.Bundle0003
 public import Development.AutomorphicArithmetic.Foundations.Convolution.CentreSplitting.IsoIff
 
 @[expose] public section

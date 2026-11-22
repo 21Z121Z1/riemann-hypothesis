@@ -1,6 +1,6 @@
 module
 
-public import Formalism.LocalRingCardinality.DataAmbForm
+public import Formalism.LocalRingCardinality.Bundle0002
 public import Formalism.LocalRingCardinality.DataDIV
 public import Formalism.LocalRingCardinality.DataParams₂
 

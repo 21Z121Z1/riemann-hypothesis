@@ -3,7 +3,7 @@ module
 public import Mathlib
 public import Formalism.LocalToGlobal.IndefiniteReal.OneMapT
 public import Formalism.LocalToGlobal.ProjectiveLattices.LevelPb
-public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.GSplit
+public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0013
 
 @[expose] public section
 

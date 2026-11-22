@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Formalism.PeriodIntegrals.MinkowskiQ
-public import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.Minkowski
+public import Formalism.PeriodIntegrals.Bundle0011
+public import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.Bundle0008
 
 @[expose] public section
 

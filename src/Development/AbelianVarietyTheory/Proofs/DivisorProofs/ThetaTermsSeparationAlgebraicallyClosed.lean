@@ -2,13 +2,13 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsDominantToUnitLeft
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsUniqueScalar
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SepAtBIff
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2175
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2970
 public import Development.AbelianVarietyTheory.Definitions.ModuliSpaces.GoodClass
-public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsGeneratorThetaConstantsOverAlgClosedExtens
+public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.Bundle0154
 public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.HasThetaConstantsIffOfThetaLevelPullback
 public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ThetaPtEqUnitMulTh
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.DiscreteValuationRings.LBLocalC
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.DiscreteValuationRings.Bundle0003
 
 @[expose] public section
 

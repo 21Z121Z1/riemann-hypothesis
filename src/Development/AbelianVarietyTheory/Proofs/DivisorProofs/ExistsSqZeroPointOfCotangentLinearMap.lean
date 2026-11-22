@@ -4,11 +4,11 @@ public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.Divisors.AxesVanishingStructureSheafDegOne
 public import Development.AbelianVarietyTheory.Definitions.AbelianSchemeLaws.IsScalarTowerOfAlgebraMapEq
 public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.AbelianHodgeDeRham
-public import Development.AbelianVarietyTheory.Definitions.Divisors.HopfLaurent
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0010
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.QuasiCompactZeroSec
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsIsoToBidualOfLocalFrames
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TangentSurjective
-public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.MulEqZeroOfAppEqZero
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1209
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1212
+public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.Bundle0034
 
 @[expose] public section
 

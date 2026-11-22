@@ -3,10 +3,10 @@ module
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.Jets.SideFam
 public import Development.AbelianVarietyTheory.Definitions.Jets.SumIoPr
-public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.QuotientMeasureAeMemAndMeasurableBesselModelStatement
-public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.IsometricBesselSideBoundStatement
-public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.IsometricBesselCompareStatement
-public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.TensorBesselTransferStatement
+public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0077
+public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0086
+public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0094
+public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0083
 
 @[expose] public section
 

@@ -2,13 +2,13 @@ module
 
 public import Mathlib
 public import GroundTheory.Brauer.TensorSimple
-public import Development.AbelianVarietyTheory.Definitions.Divisors.DiagHermitianTrivialOfSumFourSquares
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HermitianTripleTrivializationsDifferByGroupPoint
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TwistedConjOfTwistedNormConjHermitianTripleRegulStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MapCentralizerRegularTwistedCentraliser
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.KottwitzIsogenyClassPointSumConjData
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.KottwitzIsogenyClassPointSumCompMulEquiv
-public import Development.AbelianVarietyTheory.Proofs.CoherentCohomologyProofs.SigmaSplitSymmInl
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0032
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0882
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1085
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1040
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0888
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0887
+public import Development.AbelianVarietyTheory.Proofs.CoherentCohomologyProofs.Bundle0005
 
 @[expose] public section
 

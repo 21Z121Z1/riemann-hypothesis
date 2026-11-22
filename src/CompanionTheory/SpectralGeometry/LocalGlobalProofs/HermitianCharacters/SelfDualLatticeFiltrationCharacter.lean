@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Formalism.UnipotentAdelicQuotients.SiegelWeilUnitaryConvergent
-public import Formalism.UnipotentAdelicQuotients.StdAdditiveCharExists
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.FiniteAdeleStrongApproximationModNat
+public import Formalism.UnipotentAdelicQuotients.Bundle0003
+public import Formalism.UnipotentAdelicQuotients.Bundle0002
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0008
 public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.IsOpenNsmulAdelicCompletionOfVectorSet
 
 @[expose] public section

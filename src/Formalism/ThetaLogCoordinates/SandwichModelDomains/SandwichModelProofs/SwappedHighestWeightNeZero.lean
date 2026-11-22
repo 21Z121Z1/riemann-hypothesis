@@ -2,10 +2,10 @@ module
 
 public import Formalism.ThetaLogCoordinates.SandwichModelDomains.SpreadSquare
 public import Formalism.ThetaLogCoordinates.TraceIsometryWeights.DischargeHeightBound
-public import Formalism.ThetaLogCoordinates.TraceIsometryWeights.SchurTraceProofs.LatData
+public import Formalism.ThetaLogCoordinates.TraceIsometryWeights.SchurTraceProofs.Bundle0003
 public import Formalism.GradedWeylDivisibility.FinalD
-public import Formalism.GradedWeylDivisibility.FockSpaceTableaux.LClosedeqLemmas
-public import Formalism.GradedWeylDivisibility.FockSpaceTableaux.LHwrowLemmas
+public import Formalism.GradedWeylDivisibility.FockSpaceTableaux.Bundle0010
+public import Formalism.GradedWeylDivisibility.FockSpaceTableaux.Bundle0002
 
 @[expose] public section
 

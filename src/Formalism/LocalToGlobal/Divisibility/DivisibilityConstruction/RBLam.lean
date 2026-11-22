@@ -1,9 +1,9 @@
 module
 
 public import Formalism.LocalToGlobal.Divisibility.NumbersLemmas
-public import Formalism.LocalToGlobal.Divisibility.ZscOfNum
-public import Formalism.SharpRestriction.ElevenLe
-public import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.GZeroLogBound
+public import Formalism.LocalToGlobal.Divisibility.Bundle0005
+public import Formalism.SharpRestriction.Bundle0001
+public import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.Bundle0025
 
 @[expose] public section
 

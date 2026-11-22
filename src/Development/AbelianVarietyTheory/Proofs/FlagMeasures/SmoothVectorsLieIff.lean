@@ -3,7 +3,7 @@ module
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.LinMulti
 public import Formalism.FormalDegreeBessel.FormalDegreeRatio.GBasic
-public import Development.AbelianVarietyTheory.Proofs.CoherentCohomologyProofs.ISmulOneMemUnitaryLie
+public import Development.AbelianVarietyTheory.Proofs.CoherentCohomologyProofs.Bundle0002
 
 @[expose] public section
 

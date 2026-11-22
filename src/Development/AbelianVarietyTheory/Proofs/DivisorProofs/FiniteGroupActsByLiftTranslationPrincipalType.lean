@@ -2,10 +2,9 @@ module
 
 public import Mathlib
 public import Formalism.LocalToGlobal.IndefiniteReal.OneMapT
-public import Formalism.LocalToGlobal.IndefiniteReal.FWTie
-public import Formalism.LocalToGlobal.ProjectiveLattices.ChiProofs
-public import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.SecBCAndCuspBC
-public import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.ActLevAndActBC
+public import Formalism.LocalToGlobal.IndefiniteReal.Bundle0025
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0027
+public import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.Bundle0074
 
 @[expose] public section
 

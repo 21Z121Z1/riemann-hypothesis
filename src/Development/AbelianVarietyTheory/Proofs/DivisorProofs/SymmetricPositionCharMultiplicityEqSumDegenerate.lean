@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.Divisors.SplitDoublingNBlock
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FinrankMirabolicWhittakerEigenspaceStatement
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0560
 
 @[expose] public section
 

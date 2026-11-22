@@ -1,12 +1,10 @@
 module
 
 public import Mathlib
-public import GroundTheory.HeightsAndTheta.Heights.FieldsOfNumbers.StatementsSemilocalResidueLength
-public import GroundTheory.HeightsAndTheta.Heights.FieldsOfNumbers.StatementsDegZeroLocResidue
-public import GroundTheory.HeightsAndTheta.Heights.FieldsOfNumbers.StatementsDegZeroLocLocalize
-public import GroundTheory.HeightsAndTheta.Heights.FieldsOfNumbers.StatementsSemilocalLengthSum
-public import GroundTheory.HeightsAndTheta.Heights.FieldsOfNumbers.PDegZeroLocQuot
-public import GroundTheory.HeightsAndTheta.Heights.FieldsOfNumbers.PFibreFinite
+public import GroundTheory.HeightsAndTheta.Heights.FieldsOfNumbers.Bundle0015
+public import GroundTheory.HeightsAndTheta.Heights.FieldsOfNumbers.Bundle0018
+public import GroundTheory.HeightsAndTheta.Heights.FieldsOfNumbers.Bundle0017
+public import GroundTheory.HeightsAndTheta.Heights.FieldsOfNumbers.Bundle0016
 
 @[expose] public section
 

@@ -1,9 +1,9 @@
 module
 
 public import Formalism.SharpRestriction.GrowthBounds.FormalGroupSystem
-public import Formalism.LocalToGlobal.GroupLattices.PendingLemmas.CoeffOneLNe
+public import Formalism.LocalToGlobal.GroupLattices.PendingLemmas.Bundle0001
 public import Formalism.LocalToGlobal.TorsionIntegrality.FrobeniusFibreCurves.StatementW
-public import Formalism.LocalToGlobal.TorsionIntegrality.UniformGaussModels.UniformGaussModelCondition
+public import Formalism.LocalToGlobal.TorsionIntegrality.UniformGaussModels.Bundle0002
 
 @[expose] public section
 

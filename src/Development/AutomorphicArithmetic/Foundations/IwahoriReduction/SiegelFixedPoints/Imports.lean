@@ -4,10 +4,12 @@ public import Development.AutomorphicArithmetic.Foundations.IwahoriReduction.Sie
 public import Development.AbelianVarietyTheory.Definitions.Foundations.IsLamOfLSmulIff
 public import Development.AbelianVarietyTheory.Definitions.Foundations.IsLamFROfIsLamF
 public import Development.AbelianVarietyTheory.Definitions.Foundations.ActWBOfInvariant
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.GalBActCommGamma0CapGamma0LevelShimuraReciprocitStatement
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.DiamondCommutesHeckeU
+public import Mathlib
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0354
+public import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0008
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0358
 public import Development.AutomorphicArithmetic.Foundations.IwahoriReduction.SiegelFixedPoints.ExistsSeries
-public import Development.AutomorphicArithmetic.Foundations.IwahoriReduction.SiegelFixedPoints.Actcls
+public import Development.AutomorphicArithmetic.Foundations.IwahoriReduction.SiegelFixedPoints.Bundle0001
 
 @[expose] public section
 
@@ -47,7 +49,7 @@ theorem UpperTheory.Kd.L.twist :
         simp only [GlobalTheory.KA.push, Tower.diam, map_sum]
       refine Finset.sum_congr rfl fun y' _ => ?_
       simp only [bTop]
-      exact GlobalTheory.T.galB_act_comm_gamma0CapGamma0Level_shimuraReciprocity ε X ε.injective ⟨ψ, hψ2, hψ1⟩ N l w hP.odd hP.five hcop hw _ hD.1 _ _
+      exact _root_.GlobalTheory.KZ.GammaZeroComm.galB_act_comm ε X ε.injective ⟨ψ, hψ2, hψ1⟩ N l w hP.odd hP.five hcop hw _ hD.1 _ _
         (hB _ (shArg_mem_fixMu _ s y')).1
     rw [hpush]
     exact hφ

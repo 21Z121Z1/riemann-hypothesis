@@ -1,10 +1,10 @@
 module
 
 public import Mathlib
-public import GroundTheory.HeightsAndTheta.Heights.HeightComparison.HeightOrbitChartMax
-public import GroundTheory.HeightsAndTheta.Heights.HeightComparison.PSubringPrimeMaximal
+public import GroundTheory.HeightsAndTheta.Heights.HeightComparison.Bundle0006
+public import GroundTheory.HeightsAndTheta.Heights.HeightComparison.Bundle0002
 public import GroundTheory.HeightsAndTheta.Heights.HeightComparison.POrbitCurve
-public import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.PMinimalPrimeMultiHomog
+public import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.Bundle0013
 
 @[expose] public section
 

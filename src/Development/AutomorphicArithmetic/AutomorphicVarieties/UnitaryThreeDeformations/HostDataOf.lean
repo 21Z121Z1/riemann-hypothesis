@@ -2,9 +2,9 @@ module
 
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.UnitaryThreeDeformations.IsHostFrame
 public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.PoitouTateNormalised
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.HeightAndVanishing.CmDatumCharTwoAdicOrderBounds
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.HeightAndVanishing.OrdProjNDvd
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.HeightAndVanishing.HostIndex
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.HeightAndVanishing.Bundle0007
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.HeightAndVanishing.Bundle0006
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.HeightAndVanishing.Bundle0002
 
 @[expose] public section
 

@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.OneMemBand
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0713
 public import GroundTheory.AutomorphicForms.CuspidalDiscreteness.ExistsNormRconvLeSiegel
 public import GroundTheory.AutomorphicForms.ReductionSiegel
 

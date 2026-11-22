@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Development.AutomorphicArithmetic.IntegralCasts.CrystallinePeriods.ExistsFactorialMulEqPow
-public import Development.AutomorphicArithmetic.IntegralCasts.CrystallinePeriods.DeRhamMap
+public import Development.AutomorphicArithmetic.IntegralCasts.CrystallinePeriods.Bundle0001
 
 @[expose] public section
 

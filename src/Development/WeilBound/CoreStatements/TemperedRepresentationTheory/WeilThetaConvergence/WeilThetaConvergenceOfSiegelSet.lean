@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ThetaConvergenceOfSiegelSetStatement
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0706
 public import Development.WeilBound.ThetaLifts.Reductions.SiegelOfCore
 
 @[expose] public section

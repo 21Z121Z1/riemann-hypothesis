@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicArithmetic.CommutativeAlgebra.EtaleCohomology.IsChart
-public import Development.AutomorphicArithmetic.CommutativeAlgebra.SpecializationTensorRingHomProperties
-public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.ExistsPsi
+public import Development.AutomorphicArithmetic.CommutativeAlgebra.EtaleCohomology.Bundle0004
+public import Development.AutomorphicArithmetic.CommutativeAlgebra.Bundle0020
+public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0019
 
 @[expose] public section
 

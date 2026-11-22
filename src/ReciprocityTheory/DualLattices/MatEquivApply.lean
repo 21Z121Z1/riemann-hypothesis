@@ -1,7 +1,7 @@
 module
 
-public import ReciprocityTheory.DualLattices.DualLenStatement
-public import ReciprocityTheory.DualLattices.BlockOneMulMulBlockOne
+public import ReciprocityTheory.DualLattices.Bundle0023
+public import ReciprocityTheory.DualLattices.Bundle0013
 
 @[expose] public section
 

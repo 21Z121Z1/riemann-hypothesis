@@ -2,7 +2,7 @@ module
 
 public import Development.WeilBound.RepresentationTheoryGL.GenericUnitaryGL.ComplementarySeries.Complementary
 public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IsLocallyConstantModulus
-public import Development.AbelianVarietyTheory.Definitions.Divisors.EqOfHasValueAtInfinite
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0004
 
 @[expose] public section
 

@@ -4,11 +4,11 @@ public import Mathlib
 public import Formalism.LocalRingCardinality.AdicCompletionLocal.LocTied
 public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.ExistsOfLayers
 public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.CyclotomicFrobeniusPowerSeriesXEqMulQuotient
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IntegersCompleteDVR
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0204
 public import Formalism.SharpRestriction.LevelLetterCocycles.LocalSituation
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FinrankCyclotomicExtAndCyclotomicCharSurjective
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.LocPrimeVNormalised
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsUniqueEv
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0159
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0258
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0208
 
 @[expose] public section
 

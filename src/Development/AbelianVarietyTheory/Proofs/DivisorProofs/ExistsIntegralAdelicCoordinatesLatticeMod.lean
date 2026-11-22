@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FactorResIEqResS
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.AdelicElementLatticeFullAndCompletion
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.AdelicCompletionRationalPointsAndApproximation
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0809
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0074
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0017
 
 @[expose] public section
 

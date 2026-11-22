@@ -1,10 +1,9 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.EqMulProdOfPartial
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.DiscreteSeriesPureInnerProductsTensorProduct
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SubstitutionTotalDegreeLe
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ContinuousOnAtTau
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0174
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0185
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0171
 
 @[expose] public section
 

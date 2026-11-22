@@ -4,7 +4,7 @@ public import Mathlib
 public import Formalism.SharpRestriction.LevelLetterCocycles.DataNLoc
 public import Formalism.LocalRingCardinality.AdicCompletionLocal.LocTied
 public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.MkMemAdmissibleAtIffCocycle
-public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.TwistedModelAdmissibleCocycles
+public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0007
 
 @[expose] public section
 

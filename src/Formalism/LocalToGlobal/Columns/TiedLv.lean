@@ -1,7 +1,7 @@
 module
 
-public import Formalism.LocalToGlobal.Columns.TiedAtT
-public import Formalism.LocalToGlobal.Columns.BtExistsSmulLeOfFg
+public import Formalism.LocalToGlobal.Columns.Bundle0023
+public import Formalism.LocalToGlobal.Columns.Bundle0012
 
 @[expose] public section
 

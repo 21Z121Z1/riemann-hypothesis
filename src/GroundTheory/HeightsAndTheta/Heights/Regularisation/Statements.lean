@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import ReciprocityTheory.AnalyticForms.PlurisubharmonicFunctions.IsPshLocallyIntegrableStatement
-public import ReciprocityTheory.AnalyticForms.PlurisubharmonicFunctions.PshBasic
+public import ReciprocityTheory.AnalyticForms.PlurisubharmonicFunctions.Bundle0001
+public import ReciprocityTheory.AnalyticForms.PlurisubharmonicFunctions.Bundle0004
 public import ReciprocityTheory.AnalyticForms.PotentialTheory.IsPotentialOfFun
 public import GroundTheory.HeightsAndTheta.Heights.MatrixCharts.Statements
 

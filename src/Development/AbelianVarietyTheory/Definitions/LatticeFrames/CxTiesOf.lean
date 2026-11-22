@@ -1,13 +1,13 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.MiStarOfMid
+public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.Bundle0007
 public import Formalism.LocalToGlobal.SiegelLatticeTheory.FlagStabilizerTensors.JoinSI
 public import Formalism.LocalToGlobal.IndefiniteReal.RecTie
 public import Formalism.LocalToGlobal.IndefiniteReal.RealSeparation.FramesOKg2
-public import Formalism.LocalToGlobal.IndefiniteReal.RealSeparation.SignsG
-public import Formalism.LocalToGlobal.IndefiniteReal.AutomorphicEvaluation
-public import Formalism.LocalToGlobal.IndefiniteReal.EvalTieTOne
+public import Formalism.LocalToGlobal.IndefiniteReal.RealSeparation.Bundle0003
+public import Formalism.LocalToGlobal.IndefiniteReal.Bundle0028
+public import Formalism.LocalToGlobal.IndefiniteReal.Bundle0029
 public import Formalism.LocalToGlobal.IndefiniteReal.LinksDefs
 
 @[expose] public section

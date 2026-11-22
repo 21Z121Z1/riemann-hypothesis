@@ -2,18 +2,17 @@ module
 
 public import Mathlib
 public import Formalism.LocalToGlobal.ProjectiveLattices.ThShort
-public import Formalism.LocalToGlobal.ProjectiveLattices.IsLevMove
-public import Formalism.LocalToGlobal.ProjectiveLattices.AllTest
-public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.ThExprUniqOfChartIndep2
-public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.CIndBC
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0010
+public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0007
+public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0006
 public import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.ExistsAdjointnessSeriesOfFrames
-public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.GermDPf
-public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.CIndBCNab
+public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0018
+public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0008
 public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.PrimUniqPf
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.SecBaseChangeAnySt
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.VtUniq
 public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.NonemptyCubicalPull
-public import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.ExistsNatCastSmulCoeffIsIntegral
+public import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.Bundle0031
 
 @[expose] public section
 

@@ -2,9 +2,9 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.Divisors.HodgeTateLatticePointFinrankTateModule
-public import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.ExistsSeriesOfTorsionCharacters
-public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.ExistsAlgHomValuationSubring
-public import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.ExistsTateOfCharacter
+public import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.Bundle0046
+public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0062
+public import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.Bundle0035
 
 @[expose] public section
 

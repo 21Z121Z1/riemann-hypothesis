@@ -2,9 +2,9 @@ module
 
 public import Formalism.LocalRingCardinality.DataForced
 public import Formalism.LocalRingCardinality.RankBoundMonotoneInDimension
-public import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.LpLower
-public import Formalism.LocalToGlobal.Columns.CoefficientsModP
-public import Formalism.LocalRingCardinality.MinkMEqMinkowskiNumber
+public import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.Bundle0003
+public import Formalism.LocalToGlobal.Columns.Bundle0011
+public import Formalism.LocalRingCardinality.Bundle0006
 public import Formalism.LocalRingCardinality.CoeNeZeroOfNotMem
 
 @[expose] public section

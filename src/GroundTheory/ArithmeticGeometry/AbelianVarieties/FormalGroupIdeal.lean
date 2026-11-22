@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import GroundTheory.ArithmeticGeometry.AbelianVarieties.FormalGroupInverse
+public import GroundTheory.ArithmeticGeometry.AbelianVarieties.Bundle0001
 
 @[expose] public section
 

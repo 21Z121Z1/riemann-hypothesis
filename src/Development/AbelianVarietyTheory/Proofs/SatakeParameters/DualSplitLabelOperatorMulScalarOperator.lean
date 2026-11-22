@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.NormalFam
+public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.Bundle0015
 public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisGeometry₂.HoweUnram
 public import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.IsStepWeil
 public import Formalism.SatakeDualWeyl.KpqSubgroupCompact
@@ -9,10 +9,10 @@ public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Spherical
 public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.CardInversePrimeRepsIntegralRightMulHecke
 public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.InvolutionSphericalHeckeAnti
 public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.SupportedSubgroupSplitCommutePrimeIdempotents
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ElementaryDivisorsInvHeckeElementSplitPlace
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.DivisorsAtInvDualLabelAndStabilizerMul
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExistsCoordField
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExistsMatrixOfIsLattice
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0118
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0090
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0091
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0092
 
 @[expose] public section
 

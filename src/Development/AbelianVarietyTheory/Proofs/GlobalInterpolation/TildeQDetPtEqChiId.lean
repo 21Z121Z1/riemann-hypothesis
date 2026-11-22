@@ -3,10 +3,10 @@ module
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.KerIsTerm
 public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.ReferenceCharactersFactorTame
-public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.JetsInIffStepField
+public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.Bundle0015
 public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExistsOfStarEq
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.MkDetPtEqRelDetQ
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.OrdSubDetSubStdL
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0274
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0259
 
 @[expose] public section
 

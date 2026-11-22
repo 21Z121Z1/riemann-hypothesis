@@ -1,7 +1,7 @@
 module
 
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.FirstCohomology.ReducedBasisStatement
-public import ReciprocityTheory.ReducedBases.LatticeReduction
+public import ReciprocityTheory.ReducedBases.Bundle0003
 
 @[expose] public section
 

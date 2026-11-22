@@ -1,15 +1,15 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Definitions.MetricPeriods.GroupDict
+public import Development.AutomorphicSpectrum.Definitions.MetricPeriods.Bundle0004
 public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsSheetCover
 public import GroundTheory.HeightsAndTheta.Heights.FiniteCovolume.StatementsProved
 public import GroundTheory.HeightsAndTheta.Heights.CountingLowerBound.Assembly
-public import GroundTheory.HeightsAndTheta.Heights.FiniteCovolume.PMajorantStabCompact
-public import Development.AutomorphicSpectrum.Proofs.MetricProofs.BallAutomorphismInverseExists
+public import GroundTheory.HeightsAndTheta.Heights.FiniteCovolume.Bundle0020
+public import Development.AutomorphicSpectrum.Proofs.MetricProofs.Bundle0138
 public import Development.AbelianVarietyTheory.Proofs.CovolumeBounds.DifferentiableOnOfTendstoLocallyUniformlyOn
-public import Development.AutomorphicSpectrum.Proofs.MetricProofs.MongeAmpereDensityOfBallPotentialStatement
-public import Development.AutomorphicSpectrum.Proofs.MetricProofs.MongeAmpereDensityChangeOfVariablesStatement
+public import Development.AutomorphicSpectrum.Proofs.MetricProofs.MongeAmpereDensityOfBallPotential
+public import Development.AutomorphicSpectrum.Proofs.MetricProofs.Bundle0134
 
 @[expose] public section
 
@@ -343,7 +343,7 @@ theorem ballDens_transform {A : (Fin n → ℂ) → Fin n → ℂ} {Gf : (Fin n 
       ‖LinearMap.det ((fderiv ℂ A t : (Fin n → ℂ) →L[ℂ] (Fin n → ℂ)) : (Fin n → ℂ) →ₗ[ℂ] (Fin n → ℂ))‖ ^ 2 *
         ballDens q (A t) := by
   have hD : IsOpen (ballDom q) := BallInverse.isOpen_ballDom q
-  obtain ⟨c, hc, hdens⟩ := GlobalTheory.T.monge_ampere_density_of_ball_potential Ψ j j' n q
+  obtain ⟨c, hc, hdens⟩ := _root_.GlobalTheory.CompanionTheory.Ar.Cusp.BallHess.maDensity_half_ballPot Ψ j j' n q
   have hAan : AnalyticAt ℂ A t :=
     GlobalTheory.SCV.analyticAt_of_differentiableOn hA (hD.mem_nhds ht)
   have hGan : AnalyticAt ℂ (fun t' => -(Gf t') / 2) t :=
@@ -355,7 +355,7 @@ theorem ballDens_transform {A : (Fin n → ℂ) → Fin n → ℂ} {Gf : (Fin n 
     ring
   have hφ : ContDiffAt ℝ 2 (fun t' => ballPot q t' / 2) (A t) :=
     (contDiffAt_ballPot q (hAD t ht)).div_const 2
-  have h := GlobalTheory.T.monge_ampere_density_change_of_variables n (fun t' => ballPot q t' / 2) (fun t' => ballPot q t' / 2) A
+  have h := _root_.GlobalTheory.CompanionTheory.Ar.Cusp.maDensity_const_eq_normSq_jacobian_mul n (fun t' => ballPot q t' / 2) (fun t' => ballPot q t' / 2) A
     (fun t' => -(Gf t') / 2) t hAan hGan hφ hev
   rw [hdens t ht, hdens _ (hAD t ht)] at h
   have hc' : c ≠ 0 := hc.ne'

@@ -1,16 +1,16 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.OneMemBand
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0713
 public import GroundTheory.AutomorphicForms.ReductionSiegel
 public import GroundTheory.AutomorphicForms.CuspidalDiscreteness.ExistsNormRconvLeSiegel
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ContinuousOfIsOpenStab
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsConjFiniteUnipotentMemOpenSubgroupStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CuspidalNormLeOfAlternatingSumScaledUnipFDStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ReproducingIdentityExtendsHarishChandraSpanStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsUnitOneAddOfSqStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NormToLMapPInfLeStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HeightLeOfIsCompactStatement
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0111
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0772
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0759
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0769
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsUnitOneAddOfSq
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0766
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0764
 
 @[expose] public section
 
@@ -25,13 +25,13 @@ theorem meanIter : ∀ (E : Type) [Field E] [NumberField E] [_root_.NumberField.
     ∀ M : ℕ, 0 < M → ∀ (x : GA E a) (m : ℕ) (B : ℝ),
       (∀ y : Fin m → BlockIx a r → Ad E, (∀ i, y i ∈ GroundTheory.Automorphic.scaledUnipFD E a r M) →
         ‖∑ ε : Fin m → Bool, (GroundTheory.Automorphic.altSign ε : ℂ) * φ (unip (GroundTheory.Automorphic.altPoint y ε) * x)‖ ≤ B) →
-      ‖φ x‖ ≤ B := GlobalTheory.T.cuspidal_norm_le_of_alternatingSum_scaledUnipFD
+      ‖φ x‖ ≤ B := _root_.GlobalTheory.CuspTail.norm_le_of_altSum_scaledUnipFD
 
 theorem reproSpan : ∀ (E : Type) [Field E] [NumberField E] [_root_.NumberField.IsTotallyComplex E] (a : ℕ) (L : Subgroup (GL (Fin a) (Af E)))
     (W : Submodule ℂ (Kinf E a → ℂ)) (X : Set (Module.End ℂ (Sm E a) → ℂ)) (N : ℕ) (β : Lie E a → ℂ),
     ContDiff ℝ ∞ β → HasCompactSupport β → tsupport β ⊆ invSet E a →
     (∀ φ ∈ formsGL E a L W X N, ∀ g : GA E a, ∫ x, chart φ.1 g x * β x = φ.1 g) →
-    ∀ φ ∈ Submodule.span ℂ (formsGL E a L W X N), ∀ g : GA E a, ∫ x, chart φ.1 g x * β x = φ.1 g := GlobalTheory.T.reproducingIdentity_extends_harishChandraSpan
+    ∀ φ ∈ Submodule.span ℂ (formsGL E a L W X N), ∀ g : GA E a, ∫ x, chart φ.1 g x * β x = φ.1 g := _root_.GlobalTheory.HCF.repro_span
 
 theorem diffInt : ∀ (E : Type) [Field E] [NumberField E] (a : ℕ) (β : Lie E a → ℂ), ContDiff ℝ ∞ β →
     HasCompactSupport β → tsupport β ⊆ invSet E a → ∀ (m : ℕ) (R : ℝ), ∃ (c : ℝ) (Q : Set (Lie E a)),
@@ -39,15 +39,15 @@ theorem diffInt : ∀ (E : Type) [Field E] [NumberField E] (a : ℕ) (β : Lie E
     ∀ F : ℝ, 0 ≤ F → (∀ w ∈ Q, ‖f w‖ ≤ F) →
     ∀ Y : Fin m → Matrix (Fin a) (Fin a) (Cinf E), (∀ i j, Y i * Y j = 0) → (∀ i, ‖toL (Y i)‖ ≤ R) →
     ‖∑ ε : Fin m → Bool, (GroundTheory.Automorphic.altSign ε : ℂ) *
-        ∫ w, f (toL ((1 + GroundTheory.Automorphic.altPoint Y ε) * Matrix.of w)) * β w‖ ≤ c * F * ∏ i, ‖toL (Y i)‖ := GlobalTheory.T.norm_signed_sum_integral_le
+        ∫ w, f (toL ((1 + GroundTheory.Automorphic.altPoint Y ε) * Matrix.of w)) * β w‖ ≤ c * F * ∏ i, ‖toL (Y i)‖ := _root_.GlobalTheory.AltConv.norm_sum_altSign_integral_le
 
 theorem normTransfer : ∀ (E : Type) [Field E] [NumberField E] [_root_.NumberField.IsTotallyComplex E] (a : ℕ), ∃ c : ℝ, 0 ≤ c ∧
     ∀ M : Matrix (Fin a) (Fin a) (Ad E),
-      ‖toL (M.map (pInf E))‖ ≤ c * ‖GroundTheory.Automorphic.CuspidalSpectrum.archMat E a M‖ := GlobalTheory.T.norm_toL_map_pInf_le'
+      ‖toL (M.map (pInf E))‖ ≤ c * ‖GroundTheory.Automorphic.CuspidalSpectrum.archMat E a M‖ := _root_.GlobalTheory.GLCuspNorm.norm_toL_map_pInf_le
 
 theorem heightBound : ∀ (E : Type) [Field E] [NumberField E] [_root_.NumberField.IsTotallyComplex E] (a : ℕ) (Q : Set (Lie E a)),
     IsCompact Q → Q ⊆ invSet E a →
-    ∃ H : ℝ, ∀ y : GL (Fin a) (Cinf E), toL y.val ∈ Q → GlobalTheory.CuspRep.height y ≤ H := GlobalTheory.T.height_bounded_of_toL_mem_isCompact
+    ∃ H : ℝ, ∀ y : GL (Fin a) (Cinf E), toL y.val ∈ Q → GlobalTheory.CuspRep.height y ≤ H := _root_.GlobalTheory.HeightBound.height_le_of_isCompact
 
 section Span
 variable {E : Type} [Field E] [NumberField E] [_root_.NumberField.IsTotallyComplex E] {a : ℕ} {L : Subgroup (GL (Fin a) (Af E))}

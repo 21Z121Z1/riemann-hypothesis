@@ -3,7 +3,7 @@ module
 public import Mathlib
 public import Formalism.LocalRingCardinality.DataHost
 public import Formalism.SharpRestriction.RamificationFrobenius.TotientGaloisClasses.HostFacts
-public import Development.AutomorphicArithmetic.WeightCongruences.ProdNegOneZpow
+public import Development.AutomorphicArithmetic.WeightCongruences.Bundle0001
 public import Development.AutomorphicArithmetic.WeightCongruences.RootOfUnityGaloisActionCMDatum
 
 @[expose] public section

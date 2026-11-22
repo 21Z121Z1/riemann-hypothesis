@@ -1,14 +1,14 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.ThetaValues.IsNullVal
+public import Development.AbelianVarietyTheory.Definitions.ThetaValues.Bundle0001
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.SecBaseChangeAnySt
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.FundamentalDomains.FundamentalDomainPointBound
-public import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.ExistsFramedPointBaseChangeAlgHom
-public import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.ThetaNullValueExistsUniqueNaturalLinear
-public import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.EtaValAtExistsUniqueNatural
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.FrameChangeCommBaseChange
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.LowerTriIsUnitDet
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.FundamentalDomains.Bundle0003
+public import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.Bundle0039
+public import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.Bundle0055
+public import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.Bundle0056
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0024
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0039
 
 @[expose] public section
 

@@ -2,8 +2,8 @@ module
 
 public import Mathlib
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.SemisimpleLevels.AbW
-public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisGeometry₂.CaraianiLocalGlobalDual
-public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Langlands
+public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisGeometry₂.Bundle0005
+public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0025
 
 @[expose] public section
 

@@ -3,10 +3,9 @@ module
 public import Mathlib
 public import ReciprocityTheory.NeutralLocalFields.Duality
 public import ReciprocityTheory.GroupCohomology.InfRes
-public import ReciprocityTheory.GroupCohomology.CardLenStatement
+public import ReciprocityTheory.GroupCohomology.Bundle0004
 public import ReciprocityTheory.ClassFieldTheory.LocalClassField.KbarRepContAction
-public import ReciprocityTheory.ClassFieldTheory.LocalClassField.Herbrand
-public import ReciprocityTheory.ClassFieldTheory.LocalClassField.UnrDefs
+public import ReciprocityTheory.ClassFieldTheory.LocalClassField.Bundle0002
 public import ReciprocityTheory.ClassFieldTheory.LocalClassField.QZDefs
 
 @[expose] public section

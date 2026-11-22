@@ -1,8 +1,8 @@
 module
 
-public import Formalism.PeriodIntegrals.CapelliEig
-public import Formalism.PeriodIntegrals.KFinSmooth
-public import Formalism.PeriodIntegrals.DSInfCharCap
+public import Formalism.PeriodIntegrals.Bundle0021
+public import Formalism.PeriodIntegrals.Bundle0011
+public import Formalism.PeriodIntegrals.Bundle0016
 
 @[expose] public section
 

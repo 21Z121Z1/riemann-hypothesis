@@ -3,7 +3,7 @@ module
 public import Formalism.CharacterColumnKernels.StatementPsi
 public import Formalism.CharacterColumnKernels.StatBlockRhoCount
 public import Formalism.CharacterColumnKernels.StatementGC
-public import Formalism.CharacterColumnKernels.StatementNG
+public import Formalism.CharacterColumnKernels.Bundle0002
 
 @[expose] public section
 

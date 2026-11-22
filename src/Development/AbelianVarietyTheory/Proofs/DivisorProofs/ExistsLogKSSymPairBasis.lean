@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TopPairDForm
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1936
 
 @[expose] public section
 

@@ -1,15 +1,15 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Divisors.PerCEmb
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0024
 public import Development.AbelianVarietyTheory.Definitions.Divisors.MarkAd
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CplxOfFrame
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0846
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FinTensAlgebraMap
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ProjAGphiEqSum
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaReadingLinearInjectiveAtOrthonormalFrame
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HxTranslateExponent
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0862
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1360
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0884
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GenMapTranspose
-public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.OmVacuumEqSplitFacSmulSum
+public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.Bundle0070
 
 @[expose] public section
 

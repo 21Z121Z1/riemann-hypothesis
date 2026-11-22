@@ -3,13 +3,13 @@ module
 public import Mathlib
 public import Development.AutomorphicSpectrum.Definitions.MetricPeriods.IsTwiceDifferentiableAt
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArithmeticIntersection.CompRightEqZero
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArithmeticIntersection.KappaSt
-public import GroundTheory.HeightsAndTheta.Heights.Intersections.StatementsFibreLocal
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArithmeticIntersection.Bundle0001
+public import GroundTheory.HeightsAndTheta.Heights.Intersections.Bundle0003
 public import GroundTheory.HeightsAndTheta.Heights.Antisymmetric.Statements
 public import Development.WeilBound.CoreStatements.PluriharmonicCharts.XPerPoint
-public import Development.WeilBound.CoreStatements.PluriharmonicCharts.XPolyDelta
-public import Development.AutomorphicSpectrum.Proofs.MetricProofs.MongeAmpereIntegralMultilinearExpansion
-public import ReciprocityTheory.AnalyticForms.PotentialTheory.LocDens
+public import Development.WeilBound.CoreStatements.PluriharmonicCharts.Bundle0002
+public import Development.AutomorphicSpectrum.Proofs.MetricProofs.Bundle0020
+public import ReciprocityTheory.AnalyticForms.PotentialTheory.Bundle0005
 
 @[expose] public section
 

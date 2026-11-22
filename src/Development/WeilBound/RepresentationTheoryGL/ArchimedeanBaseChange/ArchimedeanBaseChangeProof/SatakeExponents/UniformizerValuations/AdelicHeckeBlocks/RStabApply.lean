@@ -1,7 +1,7 @@
 module
 
-public import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.SatakeExponents.UniformizerValuations.AdelRep
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FinsumOutOfLe
+public import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.SatakeExponents.UniformizerValuations.Bundle0005
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0409
 
 @[expose] public section
 

@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.NonzeroLocusSecMonoConst
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0259
 
 @[expose] public section
 

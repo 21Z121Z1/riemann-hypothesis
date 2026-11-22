@@ -1,8 +1,7 @@
 module
 
-public import Formalism.GaussJetBounds.GenLogInverse
-public import Formalism.GaussJetBounds.StatementA
-public import Formalism.IncomingBounds.FlowDegreeBounds.PadicValFactorialRatioProd
+public import Formalism.GaussJetBounds.Bundle0001
+public import Formalism.IncomingBounds.FlowDegreeBounds.Bundle0001
 
 @[expose] public section
 

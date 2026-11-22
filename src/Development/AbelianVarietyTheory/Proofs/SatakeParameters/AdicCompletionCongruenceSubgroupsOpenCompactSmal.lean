@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.PolyApproxZeroPadic
+public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.Bundle0002
 public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.ContinuousMapPFin
 public import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.IsSubquotientDetRepParInd
 public import ReciprocityTheory.GeneralLinearIntegers.AlgebraMapIntMemOint

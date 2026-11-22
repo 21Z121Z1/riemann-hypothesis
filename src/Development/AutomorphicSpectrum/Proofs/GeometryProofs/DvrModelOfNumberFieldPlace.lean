@@ -1,10 +1,10 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.IsPullWedge
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.FiniteTypeOverIntegersModel
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0066
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0070
 public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ValuativeLiftExistsUnique
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsUniqueSection
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0030
 public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ProperPullbackLineBundle
 
 @[expose] public section

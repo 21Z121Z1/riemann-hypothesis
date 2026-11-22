@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Development.AutomorphicArithmetic.ThetaCorrespondence.GoodReduction.NeronOggShafarevich
-public import Development.AutomorphicArithmetic.ThetaCorrespondence.GoodReduction.CMGood
+public import Development.AutomorphicArithmetic.ThetaCorrespondence.GoodReduction.Bundle0002
 
 @[expose] public section
 

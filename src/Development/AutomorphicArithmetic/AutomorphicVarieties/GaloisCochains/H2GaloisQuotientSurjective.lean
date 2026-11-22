@@ -1,9 +1,9 @@
 module
 
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.GaloisCochains.GLinkQuot
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.GaloisCochains.H2GaloisQuotientEq
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.GaloisCochains.H2RightExactModL
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.GaloisCochains.LocEuler
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.GaloisCochains.Bundle0004
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.GaloisCochains.Bundle0001
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.GaloisCochains.Bundle0002
 
 @[expose] public section
 

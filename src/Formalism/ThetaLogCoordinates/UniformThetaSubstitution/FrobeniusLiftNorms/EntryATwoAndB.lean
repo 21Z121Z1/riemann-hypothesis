@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Formalism.ThetaLogCoordinates.UniformThetaSubstitution.StatementE
-public import Formalism.GrowthSums.StatementG
+public import Formalism.GrowthSums.Bundle0001
 
 @[expose] public section
 

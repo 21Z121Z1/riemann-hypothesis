@@ -1,10 +1,10 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Divisors.ESmall
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0057
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PlaceDivisors.StChartF
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FormalGroupExpTwoSidedInverseUnique
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsIntProdRename
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0349
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0387
 public import Development.AbelianVarietyTheory.Proofs.CovolumeBounds.NatCastMulCoeffOfPderivEq
 
 @[expose] public section

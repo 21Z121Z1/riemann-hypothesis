@@ -3,11 +3,12 @@ module
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.Divisors.HasTraitsOnOfHasTraitsP
 public import Development.AbelianVarietyTheory.Definitions.Divisors.LamRange
-public import ReciprocityTheory.AnalyticForms.RegularLocalRings.FinalTheorems
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MemDividingLabelsIffClassZeroStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaConstantsTranslateEqTwistedSumsStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaLabelsSurjectiveHomLatticeModLevelStatement
-public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsAdaptedBasisTestLattice
+public import ReciprocityTheory.AnalyticForms.RegularLocalRings.Bundle0001
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle3064
+public import Development.AbelianVarietyTheory.Definitions.Divisors.IsActIffIsDiagEnd
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle3132
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle3035
+public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.Bundle0055
 
 @[expose] public section
 
@@ -167,8 +168,8 @@ theorem exists_classSum_fun : ∀ (I : Type) (X₁ : GlobalTheory.GSep.GSet) (z�
     have : K a τ = K a' τ := by simp only [hK, h0]
     rw [this]
   · intro V _ _ _ ev X _ t δ 𝔪 C lab hlab T hT c a κ hκ h hh
-    obtain ⟨hex, hsurj, hcong, hadd⟩ := GlobalTheory.T.thetaLabels_surjective_hom_lattice_mod_level I X₁ z₁ act V ev X t δ 𝔪
-    have hint := GlobalTheory.T.mem_dividingLabels_iff_class_zero I X₁ z₁ act x₀ hdiv V ev X t δ 𝔪
+    obtain ⟨hex, hsurj, hcong, hadd⟩ := _root_.GlobalTheory.GSep.Labels.yy_hom I X₁ z₁ act V ev X t δ 𝔪
+    have hint := _root_.GlobalTheory.GSep.mem_HH_iff_yy_zero I X₁ z₁ act x₀ hdiv V ev X t δ 𝔪
     have hY0 : 𝔪.YY 0 0 := (hint 0).1 (AddSubgroup.zero_mem _)
     have hneg : ∀ a mu, 𝔪.YY a mu → 𝔪.YY (-a) (-mu) := by
       intro a mu ha

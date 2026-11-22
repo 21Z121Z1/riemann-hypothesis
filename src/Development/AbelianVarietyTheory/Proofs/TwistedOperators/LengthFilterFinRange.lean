@@ -2,23 +2,23 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.InstAddCommGroupTwo
-public import Development.AbelianVarietyTheory.Definitions.Foundations.SecondCountableAndT2LocalField
+public import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0005
 public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.RadfordShufflePolynomialHolds
-public import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.ExponentSeparation
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.JacquetModuleMapInjectiveOfInjectiveStatement
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ParabolicProductTwoRepsEquivTwoBlockInductionStatement
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsEquivDetCharacterOfIrreducibleRankLeOneStatement
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ParabolicInductionDetCharactersRankOneEquivStatement
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.DetTensorEquivLeviCharacter
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.JordanHolderMultiplicityJacquetEqBorelJacquetOfSStatement
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.CountBindWordShuffleByPositionsStatement
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SubsingletonBorelJacquetOfCuspidalSegmentJacquetStatement
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.JordanHolderMultiplicityNormalizedBorelJacquetUnStatement
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsUnramifiedExponentOfIwahoriFixedVectorStatement
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.UnramifiedCharSumsStrictConeVanishEachStatement
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ShuffleCountLinearIndependentClassesStatement
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.JacquetWordMultiplicityAdditiveJordanHolderStatement
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.JordanHolderMultiplicityLeviCharGeometricLemmaCeStatement
+public import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.Bundle0011
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0158
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0151
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0156
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0162
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0144
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0160
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0016
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0167
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0150
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0157
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0134
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0020
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0181
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0193
 
 @[expose] public section
 
@@ -103,7 +103,7 @@ theorem wordMult_prod₂ (hG : JacquetOfInducedFiltration k) (hC : CellSemisimpl
   have hl : ∀ i, HasFiniteLength (twoRep π₁ π₂ i) := by
     rintro (_ | _)
     exacts [h₁, h₂]
-  obtain ⟨φ⟩ := T.parabolicProductTwoReps_equiv_two_block_induction k r t V W π₁ π₂
+  obtain ⟨φ⟩ := _root_.GlobalTheory.SmGL.Exponents.prod₂_equiv_multiProd k r t V W π₁ π₂
   have e1 := T.jordanHolderMultiplicity_jacquet_eq_borelJacquet_of_small k (Fin (r + t)) (Fin (r + t)) (fun _ => Unit) (points _) (fun _ _ h => h) _
     (prod₂ π₁ π₂) fun j => unrChar k (w j)
   rw [wordMult_ofFn]
@@ -288,7 +288,7 @@ theorem Realised.mul (hG : JacquetOfInducedFiltration k) (hC : CellSemisimplific
   · by_cases hw : w.length = r + t
     · obtain ⟨z, rfl⟩ : ∃ z : Fin (r + t) → ℂˣ, w = List.ofFn z :=
         ⟨fun i => w.get (i.cast hw.symm), List.ext_getElem (by simp [hw]) fun i h1 h2 => by simp⟩
-      rw [wordMult_prod₂ hG hC s₁ s₂ h₁ h₂, T.count_bind_wordShuffle_by_positions]
+      rw [wordMult_prod₂ hG hC s₁ s₂ h₁ h₂, _root_.GlobalTheory.ShufflePositions.count_bind_shuffle]
       simp [ha, hb]
     · rw [wordMult_of_ne _ hw, Multiset.count_eq_zero.2, Nat.cast_zero]
       simp only [Multiset.mem_bind]
@@ -330,7 +330,7 @@ theorem Realised.effective {P : MvPolynomial (Segment k) ℤ} {y : ShuffleAlgebr
   rw [Ψ.symm_apply_apply]
   refine ⟨Finsupp.mapDomain_nonneg fun c => ?_, s, fun w => ?_, h2⟩
   · rw [cls_apply]; exact Int.natCast_nonneg _
-  · rw [clsGL, Finsupp.sum_mapDomain_index_inj sigma_mk_injective, ← h1, T.jacquetWordMultiplicity_additive_jordanHolder k n V π h hs w]
+  · rw [clsGL, Finsupp.sum_mapDomain_index_inj sigma_mk_injective, ← h1, _root_.GlobalTheory.SmGL.Exponents.Additive.wordMult_additive k n V π h hs w]
 
 end GlobalTheory.SmGL.Exponents
 
@@ -393,7 +393,7 @@ theorem exponentsSeparate (hG : Published.GeometricLemma) (hZ : Published.Zelevi
   have hM : ∀ i (z : Fin r → ℂˣ), wordMult (σ i).cl.rep.ρ (List.ofFn z) =
       ((E i).count ((torusChar fun j => unrChar k (z j)) * δ) : ℕ∞) := fun i z => by
     rw [wordMult_congr (σ i).nonempty_equiv_rep.some, wordMult_ofFn,
-      T.jordanHolderMultiplicity_normalizedBorelJacquet_unramified k r _ _ (σ i).smooth _ fun t ht => by
+      _root_.GlobalTheory.SmGL.UnramFixed.jhMult_jacB_eq_expMult k r _ _ (σ i).smooth _ fun t ht => by
         rw [torusChar_apply]
         exact Finset.prod_eq_one fun j _ => isUnram_unrChar k _ _ (ht j)]
     exact hE i _
@@ -419,7 +419,7 @@ theorem exponentsSeparate (hG : Published.GeometricLemma) (hZ : Published.Zelevi
     · obtain ⟨z, l, hl, -, -, h2⟩ := hℓ Δ h
       exact ⟨{ℓ Δ}, h2, by simp [φ, h]⟩
     · exact ⟨0, by simpa using (wordMult_segment hϖ hZ Δ).resolve_left h, by simp [φ, h]⟩
-  refine @T.shuffle_count_linearIndependent_classes _ _ ℂˣ _ modArgOrder Ψ (fun x w => wordMult x.2.rep.ρ w) U ℓ φ ?_ ?_
+  refine @_root_.GlobalTheory.ShuffleCount.separates_of_shuffle_count _ _ ℂˣ _ modArgOrder Ψ (fun x w => wordMult x.2.rep.ρ w) U ℓ φ ?_ ?_
     (fun Δ h => if_neg h) (fun m => (Realised.monomial (hG k).1 (hG k).2 hΨ hR m).effective)
     n (fun i => ⟨r, (σ i).cl⟩) c ?_ ?_ ?_
   · intro Δ h Δ' h' e

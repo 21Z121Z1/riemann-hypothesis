@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.CharSumInv
+public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.Bundle0001
 
 @[expose] public section
 

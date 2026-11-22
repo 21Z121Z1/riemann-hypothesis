@@ -1,8 +1,8 @@
 module
 
 public import Formalism.HermitianCurvature.HermitianCurvatureProofs.BesselDecayBounds.NonnegNormSums.SumNonnegNorms
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.BesselDecayBounds.BesselUnitNorm.BesselNormSteps.BesselLine.ConvMeas
-public import Formalism.SharpRestriction.CuspSpanNormBounds.KfinOfMemLowKSub
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.BesselDecayBounds.BesselUnitNorm.BesselNormSteps.BesselLine.Bundle0002
+public import Formalism.SharpRestriction.CuspSpanNormBounds.Bundle0011
 
 @[expose] public section
 

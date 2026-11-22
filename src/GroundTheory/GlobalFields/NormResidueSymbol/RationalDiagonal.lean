@@ -3,7 +3,7 @@ module
 public import Mathlib
 public import GroundTheory.GlobalFields.NormResidueSymbol.RationalLocal
 public import GroundTheory.GlobalFields.NormResidueSymbol.RangeIdeleNormLeKerIdeleSymbol
-public import GroundTheory.GlobalFields.IdeleGroups.Rational
+public import GroundTheory.GlobalFields.IdeleGroups.Bundle0002
 
 @[expose] public section
 

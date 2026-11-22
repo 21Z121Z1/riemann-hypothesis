@@ -5,7 +5,7 @@ public import Formalism.LocalToGlobal.InertKernelTheory.InertCoprimeLemmas.Globa
 public import Formalism.LocalToGlobal.InertKernelTheory.InertCoprimeLemmas.MMIsom
 public import Formalism.LocalToGlobal.InertKernelTheory.InertCoprimeLemmas.MMConj
 public import Formalism.LocalToGlobal.InertKernelTheory.InertCoprimeLemmas.BlockFourfoldHOneEqHOne
-public import Formalism.LocalToGlobal.InertKernelTheory.InertCoprimeLemmas.ConjugationFixedClosure
+public import Formalism.LocalToGlobal.InertKernelTheory.InertCoprimeLemmas.Bundle0005
 
 @[expose] public section
 

@@ -2,8 +2,8 @@ module
 
 public import Formalism.LocalToGlobal.TorsionIntegrality.UniformGaussModels.StatementH
 public import Formalism.LocalToGlobal.TorsionIntegrality.UniformGaussModels.OrthogonalGaussModels.KJoint
-public import Formalism.LocalToGlobal.TorsionIntegrality.RamifiedCurveKernels.PairedSquareJets.ThetaZeroJetsCurveHolds
-public import Formalism.LocalToGlobal.TorsionIntegrality.TorsionTranslationPowers.FacShapeZero
+public import Formalism.LocalToGlobal.TorsionIntegrality.RamifiedCurveKernels.PairedSquareJets.Bundle0001
+public import Formalism.LocalToGlobal.TorsionIntegrality.TorsionTranslationPowers.Bundle0003
 public import Formalism.LocalToGlobal.TorsionIntegrality.FrobeniusFibreCurves.FinalL
 
 @[expose] public section

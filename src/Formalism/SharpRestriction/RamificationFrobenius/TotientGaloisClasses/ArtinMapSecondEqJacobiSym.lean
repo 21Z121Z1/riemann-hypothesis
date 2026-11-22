@@ -1,7 +1,7 @@
 module
 
 public import Formalism.SharpRestriction.RamificationFrobenius.TotientGaloisClasses.ConjEMemHostFIff
-public import Formalism.SharpRestriction.RamificationFrobenius.TotientGaloisClasses.FrameCyclicGenerator
+public import Formalism.SharpRestriction.RamificationFrobenius.TotientGaloisClasses.Bundle0001
 public import Formalism.FrobeniusOrbits.HostCorollaries
 
 @[expose] public section

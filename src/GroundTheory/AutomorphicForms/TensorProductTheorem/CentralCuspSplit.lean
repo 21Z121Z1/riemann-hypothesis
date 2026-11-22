@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import GroundTheory.AutomorphicForms.TensorProductTheorem.CentralCusp
-public import GroundTheory.AutomorphicForms.TensorProductTheorem.PeterssonComplement
+public import GroundTheory.AutomorphicForms.TensorProductTheorem.Bundle0001
 public import GroundTheory.AutomorphicForms.AutomorphicFormSpaces.GKStableCartan
 public import GroundTheory.AutomorphicForms.UnitaryAdmissible.CuspCentral
 

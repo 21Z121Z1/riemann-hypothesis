@@ -1,9 +1,9 @@
 module
 
-public import Formalism.SharpRestriction.LevelLetterCocycles.ArithmeticCylinders
-public import Formalism.SharpRestriction.CuspSpanNormBounds.PlaceDegreeData
-public import Formalism.SharpRestriction.CuspSpanNormBounds.DstarEq
-public import Formalism.LocalToGlobal.GlobalTheory.IrreducibleOfCountSizes
+public import Formalism.SharpRestriction.LevelLetterCocycles.Bundle0004
+public import Formalism.SharpRestriction.CuspSpanNormBounds.Bundle0006
+public import Formalism.SharpRestriction.CuspSpanNormBounds.Bundle0002
+public import Formalism.LocalToGlobal.GlobalTheory.Bundle0004
 
 @[expose] public section
 

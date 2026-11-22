@@ -4,8 +4,8 @@ public import Mathlib
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.HasArcDataIff
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.SecBaseChangeAnySt
 public import Development.AbelianVarietyTheory.Definitions.ArchimedeanThetaValues.IdealPart
-public import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.IsAdicCompleteIdealEps
-public import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.ToUnitCompLeft
+public import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.Bundle0029
+public import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.Bundle0030
 
 @[expose] public section
 

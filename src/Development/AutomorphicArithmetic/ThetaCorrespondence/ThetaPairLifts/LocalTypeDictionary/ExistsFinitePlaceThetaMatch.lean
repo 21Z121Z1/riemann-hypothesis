@@ -2,57 +2,49 @@ module
 
 public import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.LocalTypeDictionary.DiscreteSpectrumResidualClassification
 public import Mathlib
-public import Development.AbelianVarietyTheory.Statements.PlaceShiftStatements.NormSmall
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.RatInOfUnit
+public import Development.AbelianVarietyTheory.Statements.PlaceShiftStatements.Bundle0002
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0142
 public import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.WeilTensorModels
-public import Development.AbelianVarietyTheory.Definitions.Divisors.DiscreteSeriesHermitianUnique
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NegIdxOfIsStd
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0041
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1561
 public import Development.AbelianVarietyTheory.Statements.HeckeThetaIntegrals.ThetaIntegralsAgree
-public import Development.AutomorphicArithmetic.LocalEmbeddings.FinMatchDefs
-public import Development.AutomorphicArithmetic.DivisorFrames.ExistsThOEqOfIsLatVacThetaFun
+public import Development.AutomorphicArithmetic.LocalEmbeddings.Bundle0001
+public import Development.AutomorphicArithmetic.DivisorFrames.Bundle0012
 public import Development.AutomorphicArithmetic.DivisorFrames.IsSBHalfThetaFunOfHalfIdempotentPlaces
-public import Development.AutomorphicArithmetic.DivisorFrames.ExistsGlStdFstEqProductLocal
-public import Development.AutomorphicArithmetic.DivisorFrames.ExistsGlStdSndEqProductLocal
+public import Development.AutomorphicArithmetic.DivisorFrames.Bundle0010
 public import Development.AutomorphicArithmetic.DivisorFrames.BigPStdSchwartzTranslateEqSmallPOfIsUnif
-public import Development.AutomorphicArithmetic.DivisorFrames.ExistsPolynomialOfIsFinFThetaLiftPureTensor
-public import Development.AutomorphicArithmetic.DivisorFrames.IdempotentSumFixesIffHalfEl
-public import Development.AutomorphicArithmetic.DivisorFrames.StdAStdBMemSchwartzBruhat
+public import Development.AutomorphicArithmetic.DivisorFrames.Bundle0017
+public import Development.AutomorphicArithmetic.DivisorFrames.Bundle0007
+public import Development.AutomorphicArithmetic.DivisorFrames.Bundle0008
 public import Development.AutomorphicArithmetic.DivisorFrames.ExistsLatticeThetaDataOfRamificationPlacesCMDatu
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SplitPlaceCharacterComponentSmoothUnitaryConductStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CartFrSgnFalseRigFr
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GridSquareInfinityExponentGapLargeGridsStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TowerStageFinitePlacesUnramifiedOrSplit
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsRtensOp
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.FockAlgebraicThetaVectorsStableFiniteAdelesLieStatement
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SeesawFramesWeilEquivalence
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SeesawWeilIntertwiningValue
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SeesawWeilLocalFactorEq
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SeesawWeilArchimedeanFactor
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsArchimedeanOneParamLineTransposeGramUnitarStatement
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsRealLieOperatorThetaQuotientLineStatement
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ThetaTransformDarbouxModelLinearInjectiveStatement
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.DarbouxModelAlgebraicVectorsLeAdelicSchwartzStatement
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SeesawWeilFactorization
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1403
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1570
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1649
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2674
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0301
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0324
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0694
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0695
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0320
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0323
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0492
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0693
 public import Development.AbelianVarietyTheory.Proofs.HeightProofs.EmbeddingXiZeroNeZero
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsLineOperatorPolynomial
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.RestrictionLineOperatorSum
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ThetaEqB
-public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.HoweDualityUnitary
-public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.HoweDualityReal
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ThetaTransformDarbouxModelLinearInjective
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsFinPartNeZero
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EqOfComponentTensorAdelicFunctionEq
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SeesawWeilZetaIdentity
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SeesawWeilZetaFactor
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0524
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0504
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0295
+public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.Bundle0011
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0489
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1665
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1645
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0518
 public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SeesawWeilGlobalFactor
-public import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.LocalTypeDictionary.BernsteinUnitaryProductIrreducible
-public import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.LocalTypeDictionary.FirstFactorMapThetaSumPureTensor
-public import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.LocalTypeDictionary.TripleProductSecondMapThetaPure
-public import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.LocalTypeDictionary.TripleProductAlgebraWeilRepRangeEqTop
-public import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.LocalTypeDictionary.TripleMapCompInverseFinite
-public import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.LocalTypeDictionary.ThetaTripleMapsLieActionEqZero
-public import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.LocalTypeDictionary.ThetaTripleMapsEquivariantOnFiniteVectors
-public import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.LocalTypeDictionary.ThetaTripleMapsLieEquivariant
+public import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.LocalTypeDictionary.Bundle0001
+public import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.LocalTypeDictionary.Bundle0006
+public import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.LocalTypeDictionary.Bundle0097
+public import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.LocalTypeDictionary.Bundle0096
+public import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.LocalTypeDictionary.Bundle0098
+public import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.LocalTypeDictionary.Bundle0100
 public import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.LocalTypeDictionary.ThetaTripleIrreducibleAtRealPlace
 
 @[expose] public section
@@ -323,8 +315,8 @@ theorem exists_finite_place_theta_match (hP : _root_.GlobalTheory.FunPr.ThetaLoc
     (by rw [Fin.sum_univ_one]; exact Submodule.subset_span ⟨f', φ', hfP', sb', cof', rfl⟩)
   rw [Fin.sum_univ_one, Fin.sum_univ_one, ← hQ, hfy] at mA
   rw [Fin.sum_univ_one, Fin.sum_univ_one, ← hQ', hfy', ← funext fun v => (im v).1] at mB
-  have sA := GlobalTheory.T.fockAlgebraicThetaVectors_stable_finiteAdeles_lie D ψ θ hψ hθ true A WW FA FW _ _ _ hA
-  have sB := GlobalTheory.T.fockAlgebraicThetaVectors_stable_finiteAdeles_lie D ψ θ hψ hθ false A' WW FA' FW _ _ _ hB
+  have sA := _root_.GlobalTheory.AlgStable.algF_isStable D ψ θ hψ hθ true A WW FA FW _ _ _ hA
+  have sB := _root_.GlobalTheory.AlgStable.algF_isStable D ψ θ hψ hθ false A' WW FA' FW _ _ _ hB
   obtain ⟨oA, oB⟩ := _root_.GlobalTheory.T.triple_algebra_map_surjective hH hP D ψ θ hψ hθ A A' WW FA FA' FW _ _ hT _ _ hA hB _ Bs Γ Xc om om' h hTA hTB R Rf hM
   obtain ⟨iA, iB⟩ := _root_.GlobalTheory.T.triple_assembly_inverse_finite hH hP D ψ θ hψ hθ A A' WW FA FA' FW _ _ hT _ _ hA hB _ Bs Γ Xc om om' h hTA hTB R Rf hM
   obtain ⟨lA, lB⟩ := _root_.GlobalTheory.T.theta_triple_lift_lie_invariant hH hP D ψ θ hψ hθ A A' WW FA FA' FW _ _ hT _ _ hA hB _ Bs Γ Xc om om' h hTA hTB R Rf hM
@@ -465,7 +457,7 @@ theorem _root_.GlobalTheory.T.finite_place_theta_matching : _root_.GlobalTheory.
         p (GlobalTheory.SquareComm.fockF W.ψ W.θ true FA FW (X.f t) P) ≠ 0 ∧
         p (GlobalTheory.SquareComm.fockF W.ψ W.θ true FA FW (X.f t) P) = κ • p' (GlobalTheory.SquareComm.fockF W.ψ W.θ false FA' FW (X.f' t) P') := by
   intro hP _ hLM
-  obtain ⟨a₁, h₁⟩ := GlobalTheory.T.gridSquare_infinityExponent_gap_largeGrids
+  obtain ⟨a₁, h₁⟩ := _root_.GlobalTheory.SquareInfGap.square_infExp_gap
   obtain ⟨a₂, h₂⟩ := GlobalTheory.T.towerStage_finitePlaces_unramified_or_split
   refine ⟨max a₁ a₂, fun ε CF hCF => ?_⟩
   obtain ⟨C₁, x₁, h₁⟩ := h₁ ε CF (le_of_max_le_left hCF)

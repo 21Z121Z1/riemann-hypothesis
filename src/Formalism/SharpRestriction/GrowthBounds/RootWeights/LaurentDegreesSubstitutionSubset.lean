@@ -1,6 +1,6 @@
 module
 
-public import Formalism.SharpRestriction.GrowthBounds.RootWeights.SpecialiseGenericMatrixInverse
+public import Formalism.SharpRestriction.GrowthBounds.RootWeights.Bundle0023
 
 @[expose] public section
 

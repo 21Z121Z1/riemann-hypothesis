@@ -4,7 +4,7 @@ public import Formalism.SharpRestriction.Divisibility.SlopeExcess.ConstRankBaseL
 public import Formalism.SharpRestriction.GrowthBounds.TopChoiceBounds
 public import Formalism.SharpRestriction.GrowthBounds.JointsLit
 public import Formalism.SharpRestriction.GrowthBounds.LogarithmicSums.NotSingularOfCentral
-public import Formalism.SharpRestriction.GrowthBounds.AdmissibleIntegers.FirstTermSizeBound
+public import Formalism.SharpRestriction.GrowthBounds.AdmissibleIntegers.Bundle0001
 public import Formalism.SharpRestriction.Divisibility.WeightDegreeSizes
 
 @[expose] public section

@@ -1,21 +1,23 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Statements.PlaceShiftStatements.NormSmall
-public import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.VpBounds
+public import Development.AbelianVarietyTheory.Statements.PlaceShiftStatements.Bundle0002
+public import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.Bundle0007
 public import Formalism.PairingDivisors.PairingDivisorProofs.Height
-public import Formalism.LocalToGlobal.TorsionIntegrality.EisensteinTranslationProducts.EllipticOnePole
+public import Formalism.LocalToGlobal.TorsionIntegrality.EisensteinTranslationProducts.Bundle0003
 public import Formalism.LocalToGlobal.IndefiniteForms.IndefiniteTree.FunctionalLowerBoundOfConditionsNumeric
 public import Formalism.LocalToGlobal.IndefiniteForms.IndefiniteTree.SlopeBoundSingleLiftOfDefinitions
 public import Formalism.LocalToGlobal.IndefiniteForms.IndefiniteTree.SlopeBoundOfConditionsWithErrorForFrames
 public import Formalism.LocalToGlobal.IndefiniteForms.IndefiniteTree.ExampleSatisfiesConditionsAtFive
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsMulPowIntegral
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0192
 public import Formalism.LocalToGlobal.IndefiniteForms.IndefiniteTree.DepthTie
-public import Formalism.QuotientMetricDivisors.HermitianTwistDivisors.ReductionLemmaFirst
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AbsNormMinpolyCoeffZeroPowNumberFieldStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MeanInfLogNormEmbeddingEqLogNormDivStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ValuationMinpolyCoeffZeroGeOfPowMulIntegralStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MeanValuationNormOverDegreeSmulEqAddValuationStatement
+public import Formalism.QuotientMetricDivisors.HermitianTwistDivisors.Bundle0002
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1511
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1522
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1510
+public import Development.AbelianVarietyTheory.Definitions.Divisors.FinitePrimesUnder
+public import Formalism.PairingDivisors.StatementH
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1504
 
 @[expose] public section
 
@@ -67,7 +69,7 @@ theorem height_meanVal [StarRing K] [_root_.NumberField.IsTotallyComplex K] (σ 
     · obtain ⟨l, hl, hlw⟩ := exists_prime_mem w
       have hlS : l ∈ S := by
         rw [hSdef, Set.Finite.mem_toFinset]; exact ⟨hl, w, h, hlw⟩
-      have key := GlobalTheory.T.valuation_minpoly_coeff_zero_ge_of_pow_mul_integral K σ β p l (12 * n l) hp hl (hlow l hl) w hlw
+      have key := _root_.GlobalTheory.FunObj.SqNum.LowVal.vw_coeff_zero_ge K σ β p l (12 * n l) hp hl (hlow l hl) w hlw
       have h1 : N0 l * (vw w (l : K) : ℝ) ≤ Formalism.PairingDivisionLocalBalance.wt S N0 w :=
         Finset.single_le_sum (f := fun l => N0 l * (vw w (l : K) : ℝ))
           (fun l' _ => mul_nonneg (Nat.cast_nonneg _) (by exact_mod_cast Formalism.PairingDivisionLocalBalance.vw_natCast_nonneg w l')) hlS
@@ -241,7 +243,7 @@ theorem thbSt_of_inputs : GlobalTheory.IndefiniteRowSideFullHecke.ClassZetaValua
     unfold GlobalTheory.CMVal.beta; rw [map_pow]; ring
   have hqc' := hqc
   rw [e12] at hqc'
-  have hmv := GlobalTheory.T.meanValuationNormOverDegree_smul_eq_add_valuation D.what₂.LL D.what₂.embLL _ (zd c ^ 12) p qc hp hqc' (beta_ne x hx0) (pow_ne_zero _ hz0)
+  have hmv := _root_.GlobalTheory.FunObj.SqNum.meanVal_vw_smul D.what₂.LL D.what₂.embLL _ (zd c ^ 12) p qc hp hqc' (beta_ne x hx0) (pow_ne_zero _ hz0)
   obtain ⟨finc, sumc⟩ := fam_bd (some c) _ qc hxc' hqc
   refine ⟨hz0, GlobalTheory.HeightMeanValueBounds.htLe_of_real g _ _ (zd c) _ hg (fun w => ?_) fin0 finc sum0 sumc⟩
   rw [hmv w, Formalism.PairingDivisionLocalBalance.vw_pow w _ hz0]

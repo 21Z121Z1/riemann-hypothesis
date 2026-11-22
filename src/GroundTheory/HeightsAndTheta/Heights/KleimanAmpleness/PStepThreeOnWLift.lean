@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.StatementsStepThreeOnWLift
-public import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.StatementsClaimSeq
-public import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.PClaimVanish
+public import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.Bundle0024
+public import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.Bundle0015
+public import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.Bundle0017
 public import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.PSurjectiveClosed
 
 @[expose] public section

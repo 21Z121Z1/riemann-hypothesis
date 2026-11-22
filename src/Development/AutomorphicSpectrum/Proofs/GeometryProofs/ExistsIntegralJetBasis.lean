@@ -3,14 +3,14 @@ module
 public import Mathlib
 public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsThetaMeanSquareNorm
 public import Development.AutomorphicSpectrum.Statements.GeometryStatements.ZhangDimensionPushDownGrassmannianHeightBounds
-public import GroundTheory.HeightsAndTheta.Heights.KernelsLattice
+public import GroundTheory.HeightsAndTheta.Heights.Bundle0001
 public import GroundTheory.HeightsAndTheta.Heights.LatticeLemmas.StatementsBundles
 public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.SpecMapCompAppLE
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.DerivationHolUnifTangentStatement
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.IteratedDerivativeFactorStatement
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.SectionRatioOverlapStatement
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PullbackSections.HolomorphicFamilies.HolJetC
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.SabPull
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0094
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0093
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.SectionRatioOverlap
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PullbackSections.HolomorphicFamilies.Bundle0003
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.Bundle0007
 
 @[expose] public section
 
@@ -151,7 +151,7 @@ theorem L_int : ∀ (R K A : Type) [CommRing R] [Field K] [CommRing A] [IsLocalR
       have : e ≫ G.hom = 𝟙 _ := Over.w η[G]
       rw [Category.assoc, this, Category.comp_id]
     rw [h1, bmap_spMap]
-  have key := GlobalTheory.T.section_ratio_overlap R K G v₀ hv₀ y V V₁ hV hV₁ h₀ t₁ t r _ _ uu huu hcompat i c (by
+  have key := _root_.GlobalTheory.CompanionTheory.Ar.InvDer.JetCmp.jet_cmp R K G v₀ hv₀ y V V₁ hV hV₁ h₀ t₁ t r _ _ uu huu hcompat i c (by
     simpa only [hb] using hvan)
   simp only [hb] at key
 
@@ -350,7 +350,7 @@ theorem jets : ∀ (E : Type) [Field E] [NumberField E] [IsCMField E] (H : Host 
       refine (ev_res _ hle hW hτ' _).trans ?_
       refine (valF_eq _ _ hW _).symm.trans ?_
       exact hf j i₀ (τ • v) hU
-    have key := GlobalTheory.T.iterated_derivative_factor r _ c _ _ (fun j => (AN j).1) hFan (by rw [hF0]; exact hσr) hev i
+    have key := _root_.GlobalTheory.CompanionTheory.Ar.JetLeib.jet_first_nonzero r _ c _ _ (fun j => (AN j).1) hFan (by rw [hF0]; exact hσr) hev i
     have hJ : ∀ k : ℕ, ∑ j, c j * σ (ev (spMap (algebraMap (𝓞 L) L) ≫ (eSec D.t.G : Sp (𝓞 L) ⟶ D.t.G.left)) V h₀
         ((der (D.MB.pt x) hv₀ hV)^[k] ((D.t.G.left.presheaf.map (homOfLE hle).op).hom ((s j).f fun _ => i₀))) /
         ev (spMap (algebraMap (𝓞 L) L)) _ hr (D.t.PP.rig.s fun _ => i₀).val ^ n) =

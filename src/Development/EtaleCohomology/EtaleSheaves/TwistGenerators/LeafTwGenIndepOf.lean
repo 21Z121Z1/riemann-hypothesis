@@ -1,6 +1,6 @@
 module
 
-public import Development.EtaleCohomology.EtaleSheaves.TwistGenerators
+public import Development.EtaleCohomology.EtaleSheaves.Bundle0032
 
 @[expose] public section
 

@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import GroundTheory.AutomorphicForms.AutomorphicFormSpaces.GKStableConv
+public import GroundTheory.AutomorphicForms.AutomorphicFormSpaces.Bundle0001
 public import GroundTheory.AutomorphicForms.AutomorphicFormSpaces.GKStableCartan
 public import GroundTheory.AutomorphicForms.AutomorphicFormSpaces.GKStableLaplacian
 public import GroundTheory.AutomorphicForms.AutomorphicFormSpaces.GKStableParabolic

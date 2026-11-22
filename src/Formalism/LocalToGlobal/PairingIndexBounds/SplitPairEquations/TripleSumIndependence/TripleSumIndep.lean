@@ -1,7 +1,7 @@
 module
 
 public import Formalism.LocalToGlobal.TorsionIntegrality.QuadraticSemicharacters.SelfDualCovolume
-public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.RepsProd
+public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0052
 
 @[expose] public section
 

@@ -1,7 +1,7 @@
 module
 
 public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.IsInfUnitary
-public import Formalism.RealPlaceAnalysis.StatementKT
+public import Formalism.RealPlaceAnalysis.Bundle0002
 
 @[expose] public section
 

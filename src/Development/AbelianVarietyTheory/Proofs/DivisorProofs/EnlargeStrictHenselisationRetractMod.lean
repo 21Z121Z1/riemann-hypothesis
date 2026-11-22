@@ -1,12 +1,12 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TorsorsTrivial
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.OriginIdeal
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ClosureFiniteEtale
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PointAtZero
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FittingDatumBaseChangeLocalEnlargementStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LocalRingModTEmbedsStrictHenselianStatement
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0175
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0218
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0230
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0272
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0531
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0550
 
 @[expose] public section
 

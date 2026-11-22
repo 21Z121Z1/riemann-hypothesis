@@ -1,7 +1,7 @@
 module
 
 public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.FormalDegree.CoefWeightedG
-public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.FormalDegree.CoefLocGap
+public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.FormalDegree.Bundle0009
 
 @[expose] public section
 

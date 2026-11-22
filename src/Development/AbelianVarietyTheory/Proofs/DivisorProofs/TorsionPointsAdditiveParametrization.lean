@@ -1,11 +1,11 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsEtLevOver
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CardTorsionBySetPowOfDivisibleNumberFieldStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TorsionBySetPowFreeOfCardPowNumberFieldStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CardTorsionKilledByPrimeAtEtalePlaceStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsPowEqOfIsAlgClosedStatement
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0620
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0126
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0174
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle3137
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle3107
 
 @[expose] public section
 

@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Formalism.SharpRestriction.LevelLetterCocycles.RamifiedCoefficientChains
-public import Formalism.SharpRestriction.LevelLetterCocycles.QuotientImageDivisibility.MemCrit
+public import Formalism.SharpRestriction.LevelLetterCocycles.QuotientImageDivisibility.Bundle0003
 public import Formalism.SharpRestriction.LevelLetterCocycles.QuotientImageDivisibility.ConstantCoeffQZeroEqP
 
 @[expose] public section

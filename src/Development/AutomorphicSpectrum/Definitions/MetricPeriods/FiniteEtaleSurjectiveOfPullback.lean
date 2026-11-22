@@ -3,9 +3,8 @@ module
 public import Mathlib
 public import Development.AutomorphicSpectrum.Definitions.MetricPeriods.IsPeriodOn
 public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsHodgeLine
-public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.ExistsCoordsAtOfCoordTie
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LatRestrictComapSpan
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.IsVBOnDualAndBidual
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.Bundle0003
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0023
 public import GroundTheory.HeightsAndTheta.Heights.HeightKernels.PCoordConeArithVar
 
 @[expose] public section

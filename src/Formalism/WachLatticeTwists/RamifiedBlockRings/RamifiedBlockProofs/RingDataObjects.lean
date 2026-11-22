@@ -1,7 +1,7 @@
 module
 
-public import Formalism.WachLatticeTwists.RamifiedBlockRings.RamifiedBlockProofs.CharpolyRevMap
-public import Formalism.CharacterColumnKernels.IdempotentNormalForms.IdemNormalForm
+public import Formalism.WachLatticeTwists.RamifiedBlockRings.RamifiedBlockProofs.Bundle0002
+public import Formalism.CharacterColumnKernels.IdempotentNormalForms.Bundle0004
 
 @[expose] public section
 

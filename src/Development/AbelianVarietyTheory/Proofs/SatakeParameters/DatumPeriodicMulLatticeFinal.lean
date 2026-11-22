@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.BlockTheory.ThetaLiftGeometry.WeightedChainData
+public import Development.AbelianVarietyTheory.BlockTheory.ThetaLiftGeometry.Bundle0004
 
 @[expose] public section
 

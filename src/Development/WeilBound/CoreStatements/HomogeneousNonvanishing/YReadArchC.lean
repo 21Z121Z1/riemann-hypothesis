@@ -3,7 +3,48 @@ module
 public import Mathlib
 public import Development.WeilBound.CoreStatements.HomogeneousNonvanishing.YReadArchA
 public import Development.WeilBound.CoreStatements.HomogeneousNonvanishing.YReadArchB
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.CompactificationCompEquivStatement
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.CompactificationCompEquiv
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.CInfGood
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.Bundle0016
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0027
+public import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.Bundle0002
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArakelovVolumes.UpperBounds.Bundle0007
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArakelovVolumes.UpperBounds.Bundle0008
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.FundamentalDomains.Bundle0004
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArakelovVolumes.ArakelovInstances.Bundle0001
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0021
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.SquareIntegrability.Bundle0005
+public import Development.AutomorphicSpectrum.Definitions.DivisibilityTowers.GoodOrigin
+public import Development.AbelianVarietyTheory.BlockTheory.ExistenceTori.UnitaryHaarVolume
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.FundamentalDomains.Bundle0010
+public import Formalism.LocalToGlobal.CMDeterminantIdeals.CMIdealValuations.Bundle0001
+public import Formalism.LocalToGlobal.CMDeterminantIdeals.CMIdealValuations.ProdMulLeDetIdeal
+public import Formalism.LocalToGlobal.CMDeterminantIdeals.CMIdealValuations.ValuationLeOfEqAlgebraMap
+public import Formalism.LocalToGlobal.CMDeterminantIdeals.CMIdealValuations.AbsNormSpanGalois
+public import Formalism.LocalToGlobal.CMDeterminantIdeals.CMIdealValuations.Bundle0002
+public import Formalism.LocalToGlobal.CMDeterminantIdeals.CMIdealValuations.ExistsEvalNeZeroOfTotalDegreeLt
+public import Formalism.LocalToGlobal.CMDeterminantIdeals.CMIdealValuations.FiniteDetAddSmulOneEqZero
+public import Formalism.LocalToGlobal.CMDeterminantIdeals.CMIdealValuations.LargeResidueExtensionLemma
+public import Formalism.LocalToGlobal.CMDeterminantIdeals.CMIdealValuations.HermitianFormGramBlockBasis
+public import Development.AbelianVarietyTheory.Definitions.Foundations.IsProbabilityMeasureMuPart
+public import Formalism.LocalToGlobal.ProjectiveLattices.PartitionExtendByZeroAntitone
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.FundamentalDomains.Bundle0003
+public import Formalism.LocalToGlobal.Divisibility.Bundle0001
+public import Development.AutomorphicSpectrum.Statements.GeometryStatements.Bundle0004
+public import Development.AutomorphicSpectrum.Statements.GeometryStatements.FlatDegree
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.Bundle0012
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArithmeticIntersection.MultihomogeneousIdeals.Bundle0001
+public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0036
+public import Development.AutomorphicSpectrum.Definitions.MetricPeriods.HasMultiplier
+public import Development.AutomorphicSpectrum.Definitions.DivisibilityTowers.HeckeSectionsIsotropicCommutatorPairingPower
+public import Formalism.MeanHeightDescent.CombinedAverageDegreeBound
+public import Formalism.MonomialMeanResidues.FilteredDegree
+public import ReciprocityTheory.L2DbarEstimates.PlurisubharmonicCharts.Bundle0001
+public import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.Statements
+public import Formalism.LocalToGlobal.ProjectiveLattices.CompHt
+public import Formalism.LocalToGlobal.IndefiniteForms.IndefiniteTree.RealCubicMeans.LogMeanShares.LogMeanStatements.HSClaim
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.HeightTheory.TheoremA
+public import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.Bundle0021
 
 @[expose] public section
 
@@ -95,7 +136,7 @@ theorem core {r : ℕ} {U : ∀ σ : c.F →+* ℂ, Unf Xo c σ r} {h : GenFrEx 
           (Fr.rd f * (∏ r', Or.e r' ^ (-n' (some r')))) z (θ * rdU (U σ) f k y) := by
   letI := Small.cstAlg Or
   have hU := hL.unf σ hσ
-  obtain ⟨zC, ⟨hgen, hc⟩, -⟩ := (GlobalTheory.T.local_ring_points_existsUnique Or.𝔐.X RM.Ω Or.𝔐.ξ RM.K RM.ι RM.y Or.𝔐.tie ℂ).1 z
+  obtain ⟨zC, ⟨hgen, hc⟩, -⟩ := (_root_.GlobalTheory.CompanionTheory.Ar.tie_points Or.𝔐.X RM.Ω Or.𝔐.ξ RM.K RM.ι RM.y Or.𝔐.tie ℂ).1 z
     (fun k => (hz.1 k).imp fun _ hi => IsUnit.mk0 _ hi) hz.2
   have hva : ∀ a : A, ValAt Or.𝔐.ξ zC (a : RM.Ω) (ev a) := fun a => valAt_of_hasVal hz hgen hc (hev a)
   obtain ⟨q, φ, yq, hφ, hφA⟩ := hG.2.1
@@ -168,7 +209,7 @@ theorem core {r : ℕ} {U : ∀ σ : c.F →+* ℂ, Unf Xo c σ r} {h : GenFrEx 
     rw [hrd, ← h2]
     exact h1
   refine ⟨k, ?_, x₁.1, x₁.2, fun a n' hn => ?_⟩
-  · obtain ⟨κ, hκ1, hκ2⟩ := GlobalTheory.T.compactification_comp_equiv E H Dw l Xo c r U h e hL σ hσ
+  · obtain ⟨κ, hκ1, hκ2⟩ := _root_.GlobalTheory.CompanionTheory.Ar.Rec.comp_over E H Dw l Xo c r U h e hL σ hσ
     refine (hκ1 Z k).2 (by_contra fun hne => ?_)
     have he0 : e Z ∈ secZ Xo c 0 := by
       have h1 := hL.e_sec Z

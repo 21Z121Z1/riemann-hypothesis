@@ -2,7 +2,7 @@ module
 
 public import Formalism.LocalToGlobal.Columns.PolyFnLemmas
 public import Formalism.LocalToGlobal.Columns.LocWLemmas
-public import Formalism.LocalToGlobal.Columns.CoefficientsModP
+public import Formalism.LocalToGlobal.Columns.Bundle0011
 public import Formalism.LocalToGlobal.GlobalTheory.GL6.PBwLocGen
 
 @[expose] public section

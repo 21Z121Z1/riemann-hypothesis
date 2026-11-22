@@ -2,20 +2,24 @@ module
 
 public import Mathlib
 public import Formalism.LocalToGlobal.SiegelLatticeTheory.CokernelGLCounts.NGData
-public import Formalism.LocalToGlobal.SiegelLatticeTheory.FlagStabilizerTensors.VolPin
+public import Formalism.LocalToGlobal.SiegelLatticeTheory.FlagStabilizerTensors.Bundle0001
 public import Formalism.LocalToGlobal.SiegelLatticeTheory.ClosedLocalOrbits.GaugeLatticeShifts.Vanish
-public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.AtBase
+public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.Bundle0013
 public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.PlacesOf
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsAdmissibleIntegralFrameOfLocalTermsStatement
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.TermRowEqIffMovedLatticeInnerDataEqStatement
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.RationalUnipotentGroupsLatticesGlobalCoordinatesStatement
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.MovedTermLatticeIsGlobalTermPhaseStatement
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.RatLinkPoints
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0309
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0433
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0428
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0362
 public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.NumberFieldLatticeDeterminedByLocalLattices
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.GlobalHermitianFramesRationalWitnessesPhaseStatement
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.RationalExtend
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.HermitianLatticeDatumEquivariantFlagIsometries
-public import Formalism.SharpRestriction.CuspSpanNormBounds.CayleyDegreeNondegeneracy.FibreCountOfPositions
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.GlobalHermitianFramesRationalWitnessesPhase
+public import Formalism.SharpRestriction.CuspSpanNormBounds.FractionFieldToGenericStalkAlgebraMapEq
+public import Formalism.SharpRestriction.CuspSpanNormBounds.PsiEDef
+public import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0007
+public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.ComplementReferenceCompactSubgroup
+public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.Bundle0003
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0047
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0262
+public import Formalism.SharpRestriction.CuspSpanNormBounds.CayleyDegreeNondegeneracy.Bundle0002
 
 @[expose] public section
 
@@ -109,8 +113,8 @@ theorem term_eq_map {A : Places F E sig} {r k : ℕ} (G : GFrames A r k) (hk : 4
     {Λ Γ : G.Lt} (hΛ : G.IsTerm d Λ) (hΓ : G.IsTerm d Γ) :
     (∃ x ∈ G.N, Γ = Λ.map ((x : G.V →ₗ[E] G.V).restrictScalars (𝓞 E))) ∧
       ∃ x ∈ G.N', Γ = Λ.map ((x : G.V →ₗ[E] G.V).restrictScalars (𝓞 E)) := by
-  obtain ⟨⟨n0, hn0, n0', hn0', h0⟩, -⟩ := GlobalTheory.T.globalHermitianFrames_rational_witnesses_phase A r k G hk d Λ hΛ
-  obtain ⟨⟨n1, hn1, n1', hn1', h1⟩, -⟩ := GlobalTheory.T.globalHermitianFrames_rational_witnesses_phase A r k G hk d Γ hΓ
+  obtain ⟨⟨n0, hn0, n0', hn0', h0⟩, -⟩ := _root_.GlobalTheory.HL.GlobalWit.global_witnesses A r k G hk d Λ hΛ
+  obtain ⟨⟨n1, hn1, n1', hn1', h1⟩, -⟩ := _root_.GlobalTheory.HL.GlobalWit.global_witnesses A r k G hk d Γ hΓ
   have hΛfull := full_lattice_of_term G hΛ
   have hΓfull := full_lattice_of_term G hΓ
   refine ⟨⟨n1 * n0⁻¹, G.N.mul_mem hn1 (G.N.inv_mem hn0), eq_map_of_local A hΛfull hΓfull _ fun p => ?_⟩,
@@ -216,7 +220,7 @@ theorem exists_term_of_global : ∀ (D : D7) (X : HidaSetting D) (Y : Full X) (u
   intro D X Y u u' hSt hk w F00 F'0 FP hZ hG hAt G c t₀ ρ U U' hMv Γ hΓ
   obtain ⟨hNiff, hN'iff, hlat, hsurj, -, -⟩ :=
     GlobalTheory.T.rational_unipotent_groups_lattices_global_coordinates D X Y u u' hSt hk w F00 F'0 FP hZ hG hAt G c t₀ ρ U U' hMv
-  have hT0 := (GlobalTheory.T.movedTermLattice_isGlobalTerm_phase D X Y u u' hSt hk w F00 F'0 FP hZ hG hAt G c t₀ ρ U U' hMv).1
+  have hT0 := (_root_.GlobalTheory.HL.MovedTermPhase.main D X Y u u' hSt hk w F00 F'0 FP hZ hG hAt G c t₀ ρ U U' hMv).1
   have ht0 : Formalism.HermitianLatticesTheory.gmap t₀.lin t₀.lam' = t₀.lam := t₀.rep.2.2.2.1
   have e3 : c.lat ρ t₀.lam = c.lat (ρ * t₀.lin) t₀.lam' := by rw [← ht0, lat_gmap']
   obtain ⟨⟨x, hx, hΓx⟩, ⟨x', hx', hΓx'⟩⟩ := term_eq_map G hk hT0 hΓ
@@ -233,7 +237,7 @@ theorem exists_term_of_global : ∀ (D : D7) (X : HidaSetting D) (Y : Full X) (u
     group
   have hγiso : n⁻¹ * t₀.lin * m ∈ Formalism.HermitianLatticesTheory.isom (VS D).hT :=
     (Formalism.HermitianLatticesTheory.isom _).mul_mem ((Formalism.HermitianLatticesTheory.isom _).mul_mem ((Formalism.HermitianLatticesTheory.isom _).inv_mem hn.1) t₀.rep.2.2.1) hm.1
-  have hPD := GlobalTheory.T.exists_admissible_integralFrame_of_localTerms D X Y u u' hSt hk w F00 F'0 FP hZ hG hAt G c t₀ ρ U U' hMv n m hn hm hγmap
+  have hPD := _root_.GlobalTheory.HL.AdmFrame.exists_admissible_integralFrame_of_localTerms_alt D X Y u u' hSt hk w F00 F'0 FP hZ hG hAt G c t₀ ρ U U' hMv n m hn hm hγmap
     ⟨_, hΓn ▸ hΓ⟩
   obtain ⟨xp, hxp, -⟩ := (GlobalTheory.RatIsomPoint.ratLink_points D X).1 _ hγiso
   let p : GCar X u u' (X.Fu u) (X.Fu u') t₀.lam t₀.lam' := ⟨(xp, n⁻¹ * t₀.lin * m), hxp, hγiso, hγmap, hPD⟩
@@ -257,7 +261,7 @@ theorem exists_term_of_global : ∀ (D : D7) (X : HidaSetting D) (Y : Full X) (u
   have hΓ₂ : Γ = c.lat (ρ * (n * a⁻¹)) t.lam := by
     show Γ = c.lat (ρ * (n * a⁻¹)) t₀.lam
     rw [← mul_assoc, ← lat_gmap', (nlam_inv' ha).1.2, hΓn]
-  have hrow := (GlobalTheory.T.termRow_eq_iff_movedLatticeInnerData_eq D X Y u u' hSt hk w F00 F'0 FP hZ hG hAt G c t₀ ρ U U' hMv t (n * a⁻¹) (m * b)
+  have hrow := (_root_.GlobalTheory.HL.DatEq.row_eq_iff_datOf_eq D X Y u u' hSt hk w F00 F'0 FP hZ hG hAt G c t₀ ρ U U' hMv t (n * a⁻¹) (m * b)
     rfl rfl ⟨hn₂, hm₂, hlin⟩).2 (by
       rw [← hΓ₂]
       funext p

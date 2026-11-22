@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import CompanionTheory.AutomorphicTheory.TemperedLocalSpectra.ZelevinskyClassification.Imports
-public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.IsTemperedCoeff
+public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.Bundle0016
 public import Development.WeilBound.CoreStatements.TemperedRepresentationTheory.SquareIntegrableTempered.CasselmanNecTemp
 
 @[expose] public section

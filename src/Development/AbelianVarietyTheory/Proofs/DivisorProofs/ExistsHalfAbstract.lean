@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.InfPartFPlaceIdem
-public import Development.AbelianVarietyTheory.Proofs.HeightProofs.QuadraticExtNormFormOverAlgebra
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1000
+public import Development.AbelianVarietyTheory.Proofs.HeightProofs.Bundle0006
 
 @[expose] public section
 

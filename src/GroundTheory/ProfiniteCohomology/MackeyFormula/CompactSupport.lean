@@ -3,7 +3,7 @@ module
 public import Mathlib
 public import GroundTheory.ProfiniteCohomology.MackeyFormula.Homotopy
 public import GroundTheory.ProfiniteCohomology.MackeyFormula.ConeHomotopy
-public import GroundTheory.ProfiniteCohomology.CompactSupportCohomology.HomologyMapPiLiftPiHomologyIsoHom
+public import GroundTheory.ProfiniteCohomology.CompactSupportCohomology.Bundle0001
 
 @[expose] public section
 

@@ -2,7 +2,7 @@ module
 
 public import Formalism.SharpRestriction.LevelLetterCocycles.DvrLatticeRank.ExpansionLowCoeffsIntegral
 public import Formalism.SharpRestriction.LevelLetterCocycles.DvrLatticeRank.PiNSOfPi
-public import Formalism.SharpRestriction.LevelLetterCocycles.DvrLatticeRank.ModelFPfB
+public import Formalism.SharpRestriction.LevelLetterCocycles.DvrLatticeRank.Bundle0011
 
 @[expose] public section
 

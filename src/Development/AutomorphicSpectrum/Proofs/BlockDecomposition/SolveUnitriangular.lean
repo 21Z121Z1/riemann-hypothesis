@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsUdlOfIsUnit
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0009
 
 @[expose] public section
 

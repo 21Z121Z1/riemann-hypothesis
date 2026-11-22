@@ -2,17 +2,17 @@ module
 
 public import Mathlib
 public import Development.AutomorphicArithmetic.IntegralCasts.Imports
-public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.EvalProd
+public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0015
 public import Formalism.LocalToGlobal.UnitaryNorms.IsUnitaryNormOf
-public import Formalism.RealPlaceAnalysis.ThirdArithmeticHolds
-public import Development.AbelianVarietyTheory.Definitions.Foundations.SmoothPartStable
-public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.TwConj
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ContinuousOfValuedEq
-public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.IsOpenKerFinIdele
+public import Formalism.RealPlaceAnalysis.Bundle0004
+public import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0002
+public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0001
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0099
+public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.Bundle0001
 public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.DifferentiableAtChart
 public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.ContinuousConjFin
 public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.IsIrreducibleIff
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.HeckeCharacterUnramifiedAeAndExistsLevel
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0093
 
 @[expose] public section
 

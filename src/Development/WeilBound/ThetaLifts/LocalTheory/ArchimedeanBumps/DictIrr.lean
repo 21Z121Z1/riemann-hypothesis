@@ -1,8 +1,8 @@
 module
 
-public import Development.WeilBound.ThetaLifts.LocalTheory.ArchimedeanBumps.ExistsDensity
+public import Development.WeilBound.ThetaLifts.LocalTheory.ArchimedeanBumps.Bundle0001
 public import Development.WeilBound.ThetaLifts.SchwartzMoments.DenseC
-public import Development.AutomorphicSpectrum.Proofs.MembershipProofs.ThetaDistributionNonzeroAdmissible
+public import Development.AutomorphicSpectrum.Proofs.MembershipProofs.Bundle0007
 
 @[expose] public section
 

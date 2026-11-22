@@ -2,11 +2,11 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.HeightFunctions.FiniteDimensionalOfSz
-public import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.LFunctionPositiveConductorFourEight
-public import Development.AbelianVarietyTheory.Proofs.HeightProofs.ExistsWeierstrassPMulOde
-public import Development.AbelianVarietyTheory.Proofs.HeightProofs.QuotientEqLinearPowCharOfDerivativeEqZero
+public import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.Bundle0002
+public import Development.AbelianVarietyTheory.Proofs.HeightProofs.Bundle0015
+public import Development.AbelianVarietyTheory.Proofs.HeightProofs.Bundle0017
 public import Development.AbelianVarietyTheory.Proofs.HeightProofs.WeierstrassPTorsionIntegralAndDistinctMod
-public import Development.AbelianVarietyTheory.Proofs.HeightProofs.ThreeDistinctRoots
+public import Development.AbelianVarietyTheory.Proofs.HeightProofs.Bundle0002
 
 @[expose] public section
 

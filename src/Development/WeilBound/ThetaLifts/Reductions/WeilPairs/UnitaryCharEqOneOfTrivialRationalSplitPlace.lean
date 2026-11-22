@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Development.WeilBound.ThetaLifts.Reductions.WeilPairs.ExistsSplitAt
+public import Development.WeilBound.ThetaLifts.Reductions.WeilPairs.Bundle0001
 public import Development.WeilBound.ThetaLifts.Reductions.WeilPairs.WeilPairData.ImportsAlt
-public import Development.WeilBound.ThetaLifts.Reductions.WeilPairs.WeilPairData.DoubledTargetWeilTransportRestrictFirstFactorImp
+public import Development.WeilBound.ThetaLifts.Reductions.WeilPairs.WeilPairData.Bundle0002
 
 @[expose] public section
 

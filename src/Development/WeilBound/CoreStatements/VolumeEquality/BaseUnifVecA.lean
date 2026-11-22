@@ -1,10 +1,10 @@
 module
 
 public import Development.WeilBound.CoreStatements.VolumeEquality.BaseUnifDefsB
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.FibreLatticeBaseChangeConj
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LieModelPullbackEquivalence
-public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.VerticalDerivativeInCoordinates
-public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.TorsionEqAndWeilIsOfIsHolTo
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0156
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0028
+public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0032
+public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0060
 
 @[expose] public section
 

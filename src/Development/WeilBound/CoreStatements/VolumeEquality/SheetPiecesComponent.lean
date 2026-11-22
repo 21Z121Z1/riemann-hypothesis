@@ -4,9 +4,12 @@ public import Mathlib
 public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsSheetCover
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.IsHolPeriods
 public import GroundTheory.HeightsAndTheta.Heights.StabilizerCovolume.ThreeLeLevel
-public import Development.AutomorphicSpectrum.Proofs.MetricProofs.MongeAmpereDensityOfBallPotentialStatement
-public import Development.AutomorphicSpectrum.Proofs.MetricProofs.MongeAmpereDensityChangeOfVariablesStatement
-public import Development.AutomorphicSpectrum.Proofs.MetricProofs.SheetCoverOfArithmeticVarietyStatement
+public import Development.AutomorphicSpectrum.Proofs.MetricProofs.MongeAmpereDensityOfBallPotential
+public import Development.AutomorphicSpectrum.Definitions.MetricPeriods.Bundle0004
+public import GroundTheory.HeightsAndTheta.Heights.FiniteCovolume.StatementsProved
+public import GroundTheory.HeightsAndTheta.Heights.CountingLowerBound.Assembly
+public import Development.AutomorphicSpectrum.Proofs.MetricProofs.Bundle0134
+public import Development.AutomorphicSpectrum.Proofs.MetricProofs.Bundle0147
 public import Development.WeilBound.CoreStatements.VolumeEquality.ContDiffAtBallPot
 
 @[expose] public section
@@ -22,12 +25,12 @@ theorem densU : ∃ κ : ℕ → ℕ → ℕ → ℝ, (∀ f j j', 0 < κ f j j'
       maDensity (fun (_ : Fin n) t' => ballPot q t' / 2) t = κ (Fintype.card Ψ) j j' * ballDens q t := by
   have hq : ∀ f j j' : ℕ, Nonempty (Fin f × Fin j × Fin j' ≃ Fin (f * j * j')) := fun f j j' =>
     ⟨Fintype.equivFinOfCardEq (by simp [_root_.mul_assoc])⟩
-  choose κ hκ hκ' using fun f j j' : ℕ => GlobalTheory.T.monge_ampere_density_of_ball_potential (Fin f) j j' (f * j * j') (hq f j j').some
+  choose κ hκ hκ' using fun f j j' : ℕ => _root_.GlobalTheory.CompanionTheory.Ar.Cusp.BallHess.maDensity_half_ballPot (Fin f) j j' (f * j * j') (hq f j j').some
   refine ⟨κ, hκ, fun Ψ _ j j' n q t ht => ?_⟩
   obtain rfl : n = Fintype.card Ψ * j * j' := by
     have := Fintype.card_congr q
     simpa [_root_.mul_assoc] using this.symm
-  obtain ⟨c, -, hc⟩ := GlobalTheory.T.monge_ampere_density_of_ball_potential Ψ j j' _ q
+  obtain ⟨c, -, hc⟩ := _root_.GlobalTheory.CompanionTheory.Ar.Cusp.BallHess.maDensity_half_ballPot Ψ j j' _ q
   rw [hc t ht]
   congr 1
   have h0 := hc 0 (zero_mem_ballDom q)
@@ -35,7 +38,7 @@ theorem densU : ∃ κ : ℕ → ℕ → ℕ → ℝ, (∀ f j j', 0 < κ f j j'
   rw [ballDens_zero, _root_.mul_one] at h0 h1
   rw [← h0, ← h1]
   obtain ⟨σ, hσ⟩ := ballPot_renumber (Fintype.equivFin Ψ) q (hq (Fintype.card Ψ) j j').some
-  have h2 := GlobalTheory.T.monge_ampere_density_change_of_variables _ (fun t' => ballPot (hq (Fintype.card Ψ) j j').some t' / 2) (fun t' => ballPot q t' / 2)
+  have h2 := _root_.GlobalTheory.CompanionTheory.Ar.Cusp.maDensity_const_eq_normSq_jacobian_mul _ (fun t' => ballPot (hq (Fintype.card Ψ) j j').some t' / 2) (fun t' => ballPot q t' / 2)
     (fun t i => t (σ i)) (fun _ => 0) 0
     (analyticAt_pi_iff.2 fun i => (ContinuousLinearMap.proj (R := ℂ) (φ := fun _ => ℂ) (σ i)).analyticAt 0)
     analyticAt_const (contDiffAt_ballPot _ (zero_mem_ballDom _))
@@ -57,7 +60,7 @@ theorem transferU : ∃ κ : ℕ → ℕ → ℕ → ℝ, (∀ f j j', 0 < κ f 
       κ Dc.f Dc.j Dc.j' * ballDens (Q.F (Q.pc m)).q t := by
     intro m t ht
     obtain ⟨g, hg, hev⟩ := Q.pot m t ht
-    have h2 := GlobalTheory.T.monge_ampere_density_change_of_variables _ (fun t' => ballPot (Q.F (Q.pc m)).q t' / 2)
+    have h2 := _root_.GlobalTheory.CompanionTheory.Ar.Cusp.maDensity_const_eq_normSq_jacobian_mul _ (fun t' => ballPot (Q.F (Q.pc m)).q t' / 2)
       (fun t' => Real.log ((muLine Hd).h (Q.γ m t'))) (fun t => t) g t analyticAt_id hg
       (contDiffAt_ballPot _ (Q.V_sub m ht)) hev
     rw [h2, norm_det_id, one_pow, _root_.one_mul]

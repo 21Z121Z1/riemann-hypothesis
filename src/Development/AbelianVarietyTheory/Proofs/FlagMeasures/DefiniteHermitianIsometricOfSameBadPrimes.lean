@@ -3,12 +3,12 @@ module
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.ChartGen
 public import Development.AbelianVarietyTheory.PublishedTheorems.DiscreteSeriesUnitary₂.MaxMass
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.WittExtensionTotallyDefiniteHermitianStatement
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsMaximalIntegralHermitianLatticeOrthonormalStatement
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.MaximalHermitianLatticeBadPrimesIffGramDetStatement
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.WittExtensionTotallyDefiniteHermitian
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0094
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0084
 public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.MemHcompl
 public import Development.AbelianVarietyTheory.Proofs.HermitianTraceForms.ExistsOrthogonalBasisDotProductApplyEq
-public import Formalism.HermitianLattices.HermitianLatticesProofs.LocDual
+public import Formalism.HermitianLattices.HermitianLatticesProofs.Bundle0003
 
 @[expose] public section
 
@@ -327,7 +327,7 @@ theorem cancel {W : Type} [AddCommGroup W] [Module K W] [FiniteDimensional K V] 
   have w0 : φ (0, 1) ≠ 0 := by simp
   let e1 := LinearEquiv.toSpanNonzeroSingleton K _ _ w0
   let e2 := LinearEquiv.toSpanNonzeroSingleton K _ _ u0
-  obtain ⟨g, hg, hg1⟩ := (GlobalTheory.T.witt_extension_totally_definite_hermitian K (W × K) (ext k β) hK hs hp).1 _ _ (e1.symm.trans e2) (by
+  obtain ⟨g, hg, hg1⟩ := (_root_.GlobalTheory.Mass.Witt.witt_definite K (W × K) (ext k β) hK hs hp).1 _ _ (e1.symm.trans e2) (by
     intro x y
     obtain ⟨s, rfl⟩ := e1.surjective x
     obtain ⟨t, rfl⟩ := e1.surjective y

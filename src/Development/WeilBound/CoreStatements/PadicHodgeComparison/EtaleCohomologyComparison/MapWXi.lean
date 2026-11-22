@@ -3,7 +3,7 @@ module
 public import Mathlib
 public import GroundTheory.PAdicHodge.BStPeriod
 public import GroundTheory.PAdicHodge.ACrisPhi
-public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.OfNatTrans
+public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.Bundle0001
 
 @[expose] public section
 

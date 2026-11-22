@@ -1,11 +1,11 @@
 module
 
 public import Mathlib
-public import Formalism.PeriodIntegrals.BesselPeriodGGP
+public import Formalism.PeriodIntegrals.Bundle0016
 public import Formalism.HermitianCurvature.HermitianCurvatureProofs.ConjugationContinuousOnInvertible
 public import Formalism.HermitianCurvature.HermitianCurvatureProofs.CompactGroupHaarExists
 public import Formalism.HermitianCurvature.HermitianCurvatureProofs.OppositeWeylSubgroupClosed
-public import Formalism.FormalDegreeBessel.FinalG
+public import Formalism.FormalDegreeBessel.Bundle0002
 public import Development.AbelianVarietyTheory.BlockTheory.JetGauges.FormalDegreeHaarQuotient
 
 @[expose] public section

@@ -2,12 +2,12 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.HeckePointLawsOfTransport
-public import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.IsThetaTraceMulTIff
-public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsSubgroupOfFinite
-public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsGenOfInvariant
-public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.IsFiniteSurjectiveOfPoints
-public import Formalism.LocalToGlobal.ProjectiveLattices.LocFrLoc
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsIsRigIsoOfBaseChange
+public import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.Bundle0007
+public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0006
+public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0097
+public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0177
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0029
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0364
 
 @[expose] public section
 

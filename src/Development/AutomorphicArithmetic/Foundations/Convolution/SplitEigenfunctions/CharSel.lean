@@ -1,12 +1,12 @@
 module
 
-public import Development.AutomorphicArithmetic.Foundations.Convolution.SplitEigenfunctions.SplitEig
-public import Development.AutomorphicArithmetic.Foundations.Convolution.SplitEigenfunctions.UILaws
-public import GroundTheory.AutomorphicForms.CompactAbelianCharacters
+public import Development.AutomorphicArithmetic.Foundations.Convolution.SplitEigenfunctions.Bundle0003
+public import Development.AutomorphicArithmetic.Foundations.Convolution.SplitEigenfunctions.Bundle0007
+public import GroundTheory.AutomorphicForms.Bundle0008
 public import GroundTheory.GlobalFields.IdeleGroups.GaloisOnAdeles.Action
 public import GroundTheory.GlobalFields.TateThesis.IdeleMeasureQuotient
 public import CompanionTheory.AutomorphicTheory.UnitriangularMeasure.AdeleCoordinateMeasure.EllipticTorusNorm
-public import Development.AutomorphicArithmetic.AdelicQuotients.CentralSectionBaseChange
+public import Development.AutomorphicArithmetic.AdelicQuotients.Bundle0009
 
 @[expose] public section
 

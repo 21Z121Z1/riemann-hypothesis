@@ -1,10 +1,9 @@
 module
 
 public import Mathlib
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsBlockComplexGramMetricChange
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsBlockResolutionMetricPair
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsBlockResolutionFormsIndependent
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsBlockResolutionDegree
+public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0035
+public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0036
+public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0081
 
 @[expose] public section
 

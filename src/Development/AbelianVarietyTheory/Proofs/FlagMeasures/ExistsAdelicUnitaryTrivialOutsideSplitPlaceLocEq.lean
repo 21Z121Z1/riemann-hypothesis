@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.MemMaxCompactOfTrivOutsideLocalIntegral
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0333
 
 @[expose] public section
 

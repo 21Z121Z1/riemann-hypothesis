@@ -3,13 +3,12 @@ module
 public import Mathlib
 public import Formalism.SharpRestriction.Divisibility.OrbitPlaces
 public import Formalism.LocalToGlobal.GroupLattices.PendingLemmas.ExistsCoprimePowEqOne
-public import Formalism.ThetaLogCoordinates.UniformThetaSubstitution.FinalS
-public import Formalism.LocalToGlobal.TorsionIntegrality.GaussSumParity.BiextensionHypothesesOfLevelOne
+public import Formalism.ThetaLogCoordinates.UniformThetaSubstitution.Bundle0002
+public import Formalism.LocalToGlobal.TorsionIntegrality.GaussSumParity.Bundle0003
 public import Formalism.LocalToGlobal.TorsionIntegrality.GaussSumParity.KurComplete
-public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.Cobdry
-public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.DualOm
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.IntegralWOfMulEqOne
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.StandardSeriesBConditionsLargePrime
+public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.Bundle0010
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0087
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0083
 public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExistsIntegralOrbitSeries
 
 @[expose] public section

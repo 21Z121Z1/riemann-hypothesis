@@ -1,24 +1,24 @@
 module
 
 public import Mathlib
-public import Formalism.LocalToGlobal.IndefiniteReal.FWTie
+public import Formalism.LocalToGlobal.IndefiniteReal.Bundle0025
 public import Formalism.LocalToGlobal.ProjectiveLattices.DatProofs
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PullbackSections.HolomorphicFamilies.CmHostUnitAddConjEqOne
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.FibExtMarked
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.OrthonormalNegFirstFamilyFrameCartanMove
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.WeilVacuumFiniteSelfDualLatticeSplittingStatement
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsFinUnitIsDetRoot
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsConstOrtho
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.SymplecticBasesMatched
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaPairCharactersAtLevel
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaActionDeterminantRoot
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PullbackSections.HolomorphicFamilies.Bundle0011
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0200
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0209
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.WeilVacuumFiniteSelfDualLatticeSplitting
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0203
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0407
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0210
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1016
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1359
 public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.NormSqGaussProd
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.RealPointMovesAdelicThetaByDetCharacterStatement
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.OmegaFormIntegrality
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.OmegaFormGaloisEquivariance
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0345
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0217
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0284
 public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.TensorLatticeVacuaExistUnique
-public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.FramedPointGeneratorIsThetaLevelOne
-public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.SqNormIntegralFundamentalDomainEqL2NormSq
+public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.Bundle0039
+public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.Bundle0068
 
 @[expose] public section
 
@@ -188,7 +188,7 @@ theorem om_vac_move {g : ℕ} {hr : T.rank = r} {ψ : AddChar (AF D.host.F) ℂ}
   rw [← hke] at hk hmov
   have e1 : g₁ = a * g₀ * k := by rw [hke, mul_inv_cancel_left]
   obtain ⟨y, hy, hyk⟩ := GlobalTheory.LatticeUnitRoot.exists_finUnit_isDetRoot D T ΛT dT k hk hmov
-  have h1 := GlobalTheory.T.weil_vacuum_finite_selfDualLattice_splitting D S T ψ θ hS.2.1 sS sT χS χT om hW hη hun (fun _ => 1) _ (isCartanInv_one hS.2.2.1) hc
+  have h1 := _root_.GlobalTheory.FinVac.om_vacuum_finite D S T ψ θ hS.2.1 sS sT χS χT om hW hη hun (fun _ => 1) _ (isCartanInv_one hS.2.2.1) hc
     ΛS ΛT dS dT f₀ hf 1 (one_mem _) k hk (isMov_one _) hmov 1 y finUnit_one hy isDetRoot_one hyk
   obtain ⟨ya, hya⟩ := hmu.1 a
   obtain ⟨y₀, hy₀⟩ := hmu.1 g₀

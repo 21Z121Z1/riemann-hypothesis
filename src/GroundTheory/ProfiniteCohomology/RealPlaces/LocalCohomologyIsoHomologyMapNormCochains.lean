@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import GroundTheory.ProfiniteCohomology.RealPlaces.ConeDefs
-public import GroundTheory.ProfiniteCohomology.CompactSupportCohomology.Pairing
+public import GroundTheory.ProfiniteCohomology.CompactSupportCohomology.Bundle0001
 
 @[expose] public section
 

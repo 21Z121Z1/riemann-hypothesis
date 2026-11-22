@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Formalism.LocalToGlobal.BesselHermitianTheta.TiedKfin
+public import Formalism.LocalToGlobal.BesselHermitianTheta.Bundle0004
 public import Formalism.SharpRestriction.Divisibility.KudlaSiegelWeil
 
 @[expose] public section

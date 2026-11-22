@@ -1,9 +1,8 @@
 module
 
-public import ReciprocityTheory.AnalyticForms.PotentialTheory.MaMeasureA
-public import ReciprocityTheory.AnalyticForms.PotentialTheory.IntegrableOnTargetOfTsupport
-public import ReciprocityTheory.AnalyticForms.PotentialTheory.LocDens
-public import ReciprocityTheory.AnalyticForms.PotentialTheory.Partition
+public import ReciprocityTheory.AnalyticForms.PotentialTheory.Bundle0005
+public import ReciprocityTheory.AnalyticForms.PotentialTheory.Bundle0006
+public import ReciprocityTheory.AnalyticForms.PotentialTheory.Bundle0003
 
 @[expose] public section
 

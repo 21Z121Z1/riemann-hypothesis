@@ -1,14 +1,12 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.DisjointSpanPerpLat
+public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0018
 public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.ExistsEqTransposeMulMapOfIdempotent
 public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.FiniteResidueFieldAdicCompletionIntegers
-public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.ExistsSubConjNotMem
-public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.ExistsReflection
-public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.SelfDualLatticeProjectionMemOfUnitLength
-public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.StabLatInfStabVec
-public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.RestrHomSurjective
+public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0023
+public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0028
+public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0027
 
 @[expose] public section
 

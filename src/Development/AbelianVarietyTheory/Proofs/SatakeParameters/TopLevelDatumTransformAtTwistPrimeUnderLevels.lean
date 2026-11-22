@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.XiTopEqProd
-public import Formalism.LocalToGlobal.Columns.XtPhiTopGCongr
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0260
+public import Formalism.LocalToGlobal.Columns.Bundle0035
 public import Formalism.LocalToGlobal.KernelLattices.KernelLocalFactors.TopLawQ
 public import Formalism.LocalToGlobal.Columns.ChainTopLawTw
 

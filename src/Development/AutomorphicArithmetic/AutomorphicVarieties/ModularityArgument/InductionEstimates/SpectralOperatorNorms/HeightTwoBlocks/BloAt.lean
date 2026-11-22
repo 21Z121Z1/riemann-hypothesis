@@ -1,12 +1,11 @@
 module
 
-public import Development.AutomorphicArithmetic.Foundations.Convolution.CentreSplitting.ExCusp
+public import Development.AutomorphicArithmetic.Foundations.Convolution.CentreSplitting.Bundle0004
 public import Development.AutomorphicArithmetic.Foundations.Convolution.CentreSplitting.SInfEx
-public import Development.AutomorphicArithmetic.Foundations.Convolution.CentreSplitting.SInfIff
-public import Development.AutomorphicArithmetic.Foundations.Convolution.CentreSplitting.SSatIff
+public import Development.AutomorphicArithmetic.Foundations.Convolution.CentreSplitting.Bundle0006
 public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CuspidalSatakeAlmostAll
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.BaseChangeSpehOfDiscreteSeries
-public import Development.AutomorphicArithmetic.Foundations.Convolution.BlockHeckeSlices.DatDatum
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0664
+public import Development.AutomorphicArithmetic.Foundations.Convolution.BlockHeckeSlices.Bundle0001
 public import Development.AutomorphicArithmetic.Foundations.Convolution.ASmooth
 
 @[expose] public section

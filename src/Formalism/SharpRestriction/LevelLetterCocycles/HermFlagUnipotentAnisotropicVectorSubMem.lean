@@ -4,7 +4,7 @@ public import Formalism.SharpRestriction.LevelLetterCocycles.CrystallineLiftingI
 public import Formalism.SharpRestriction.LevelLetterCocycles.RelayGeneralCaseOfAdmissible
 public import Formalism.SharpRestriction.LevelLetterCocycles.BaseChangePreservesUnitaryOf
 public import Formalism.SharpRestriction.LevelLetterCocycles.LevelClauseOfOpenTool
-public import Formalism.SharpRestriction.LevelLetterCocycles.CompleteOfPow
+public import Formalism.SharpRestriction.LevelLetterCocycles.Bundle0019
 public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.IntegerSpanGenerators
 
 @[expose] public section

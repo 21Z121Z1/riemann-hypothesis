@@ -2,21 +2,21 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.Divisors.MulSmulIdemMem
-public import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.ComponentMassSum
+public import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.Bundle0014
 public import Development.AbelianVarietyTheory.Definitions.Divisors.IsHomogeneousCompIdeal
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.KchMul
-public import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.FibreFramesOnModels
-public import Formalism.LocalToGlobal.ProjectiveLattices.CuspidalL2Subspace
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0496
+public import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.Bundle0006
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0024
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ColengthDvdOfNeZero
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaKeyScalarIsUnitOnIntegralModelsStatement
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsUniversalTripleFibreAtFramedPoint
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2479
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0507
 public import Development.AbelianVarietyTheory.Proofs.TorusSplitting.DegenerationDataAtModelPointOfUniformisation
-public import Development.AbelianVarietyTheory.Proofs.GenericRegularity.ExistsValuationSubringComapEqNonunits
-public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.CompactifiedModuliPartOne
-public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsModuliSchemePolarizedAbelianLevel
+public import Development.AbelianVarietyTheory.Proofs.GenericRegularity.Bundle0007
+public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0224
+public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0218
 public import Development.AbelianVarietyTheory.Proofs.HomogeneousIdeals.HomLieEquivScalarTmul
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsIsLieBasisBaseChange
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.LiePush
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0041
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.Bundle0010
 
 @[expose] public section
 
@@ -217,7 +217,7 @@ theorem key_unit {κ : KeyRule} (hκ : IsKeyRule κ) (hpq : 1 ≤ Dw.p + Dw.q) (
     MorphismProperty.of_isPullback (P := @IsProper) m1.cart.1 Xo.univ.proper
   obtain ⟨ψ, -⟩ := GlobalTheory.semiAbelian_model_determined_by_generic_fibre E H T.V inferInstance G tP t' hprop m2 mK
   obtain ⟨n', -⟩ := sabComp pullCubComp E H _ _ _ Y.t tP G yt (𝟙 _) mP' ψ
-  exact (((GlobalTheory.T.thetaKeyScalar_isUnit_on_integralModels κ hκ E H Dw l Xo c _ _ Y p hpq (isBaseRing_local c W) hp h2 h3 h4 h5).1 T.V T.Fr z yt h1 G
+  exact (((_root_.GlobalTheory.KeyUnitModels.keyUnitOnModels κ hκ E H Dw l Xo c _ _ Y p hpq (isBaseRing_local c W) hp h2 h3 h4 h5).1 T.V T.Fr z yt h1 G
     (PullbackSections.sabMapCast n' (Category.id_comp yt)) n w hw θ k hk).1 hθ).1
 
 theorem isFibreOf_of_sabMap {S S' : Type} [CommRing S] [CommRing S'] (φ : S →+* S') {G : SAB H (Sp S)}

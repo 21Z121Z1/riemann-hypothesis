@@ -2,20 +2,20 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.ExistenceOfLattices.UnivFrame
-public import Formalism.LocalToGlobal.ProjectiveLattices.AllTest
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.IsLieBasis
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0010
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.Bundle0002
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.SecBaseChangeAnySt
 public import Formalism.LocalToGlobal.ProjectiveLattices.IntAllProofFree
-public import Formalism.LocalToGlobal.ProjectiveLattices.RealPtGeo
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0017
 public import Formalism.LocalToGlobal.ProjectiveLattices.UnitIndepOfCharts
 public import Formalism.LocalToGlobal.ProjectiveLattices.GenFrPf
-public import Formalism.LocalToGlobal.ProjectiveLattices.ReadAlg
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0005
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.UniformisationConclusion
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.HeckeKer
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.SabComp
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.Bundle0003
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.Bundle0006
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.SemiabelianSchemes.Biextensions.CubicalExtendsSt
-public import Formalism.LocalToGlobal.ProjectiveLattices.IsChartIff
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.FramedPointFieldFromTestRingStatement
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0013
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0075
 
 @[expose] public section
 
@@ -701,4 +701,4 @@ open AlgebraicGeometry CategoryTheory Limits MonoidalCategory CartesianMonoidalC
 open ReciprocityTheory.ChartRestriction.G ReciprocityTheory.ChartRestriction.G.Semi ReciprocityTheory.ChartRestriction.G.Geo.Tor Formalism.L2.Pj GlobalTheory.Frames
 
 theorem GlobalTheory.IntRebase.intRebase : Out.SecBaseChangeSt → ∀ (E : Type) [Field E] [NumberField E] [IsCMField E] (H : Host E) (Dw : Datum H) (l : Level H) (Xo : Moduli Dw l) (c : Coeff l), Formalism.L2.PjFree.IntRebase Xo c :=
-  fun h E _ _ _ H Dw l Xo c => GlobalTheory.IntRebase.intRebase_of (GlobalTheory.T.framedPoint_field_from_testRing h E H Dw l Xo c)
+  fun h E _ _ _ H Dw l Xo c => GlobalTheory.IntRebase.intRebase_of (_root_.GlobalTheory.Frames.framedPoint_field_fromTest h E H Dw l Xo c)

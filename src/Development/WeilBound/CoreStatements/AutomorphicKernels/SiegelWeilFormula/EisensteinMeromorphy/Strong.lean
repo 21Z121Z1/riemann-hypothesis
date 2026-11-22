@@ -2,9 +2,9 @@ module
 
 public import Development.WeilBound.CoreStatements.AutomorphicKernels.SiegelWeilFormula.EisensteinMeromorphy.DiffContOfReg
 public import Development.WeilBound.CoreStatements.AutomorphicKernels.SiegelWeilFormula.EisensteinMeromorphy.HgtMulRight
-public import Development.WeilBound.CoreStatements.AutomorphicKernels.SiegelWeilFormula.EisensteinMeromorphy.MeromorphicOnOfWeak
-public import Development.WeilBound.ThetaLifts.LatticeBasics.EisCont
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.EisensteinHeckeFunctionalStatement
+public import Development.WeilBound.CoreStatements.AutomorphicKernels.SiegelWeilFormula.EisensteinMeromorphy.Bundle0001
+public import Development.WeilBound.ThetaLifts.LatticeBasics.Bundle0015
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0461
 
 @[expose] public section
 

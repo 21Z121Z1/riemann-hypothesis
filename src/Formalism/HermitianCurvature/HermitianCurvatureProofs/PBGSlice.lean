@@ -1,7 +1,7 @@
 module
 
 public import Formalism.HermitianCurvature.HermitianCurvatureProofs.PBGDegW
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.PBGInt
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0180
 public import Formalism.HermitianCurvature.HermitianCurvatureProofs.SliceCompactSupportCoefficient
 
 @[expose] public section

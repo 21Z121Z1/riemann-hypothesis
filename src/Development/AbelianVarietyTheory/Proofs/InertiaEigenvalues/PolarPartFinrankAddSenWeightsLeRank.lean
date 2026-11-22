@@ -2,9 +2,9 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.PowerSeriesOneAddConstMulXMulInv
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.GammaConditionShiftAndDivVariableMemStatement
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.GenEigenMultiplicityLaurentShiftEqSumSenStatement
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.NabBijectiveWindow
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0081
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0101
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0067
 
 @[expose] public section
 
@@ -205,7 +205,7 @@ theorem main : ∀ {k : Type} [Field k] {l : ℕ} [Fact l.Prime] [CharP k l] (R 
   intro k _ l _ _ R n _ V _ _ _ _ _ _ _ _ D ψ ψ0 hψ _ hψ1 _ hP i N₀ N ws s w hN₀ hN hC₀ hC hws hl hb ha hd hs
     hPSI he Z hZ
   have hv : vv k ≠ 0 := vv_ne
-  have hr := GlobalTheory.T.genEigenMultiplicity_laurentShift_eq_sum_sen R (D.γ i) (D.γ_semi i) N hN hC 0 (ws + 1) 0
+  have hr := _root_.GlobalTheory.PhiGam.Range.qmult_sh_range R (D.γ i) (D.γ_semi i) N hN hC 0 (ws + 1) 0
   simp only [zero_add, Int.cast_natCast, sh_zero] at hr
   rw [← hr, Nat.cast_succ]
   obtain ⟨r, e, hre, hspan⟩ := gens N₀ hN₀.1
@@ -230,7 +230,7 @@ theorem main : ∀ {k : Type} [Field k] {l : ℕ} [Fact l.Prime] [CharP k l] (R 
   · have := sh_anti (show (0 : ℤ) ≤ ws + 1 by omega) N
     rwa [sh_zero] at this
   · intro x hx
-    exact (GlobalTheory.T.gammaCondition_shift_and_divVariable_mem R (D.γ i) (D.γ_semi i) N hC (ws + 1)).2 x hx
+    exact (_root_.GlobalTheory.PhiGam.condC_sh_and_nab_mem R (D.γ i) (D.γ_semi i) N hC (ws + 1)).2 x hx
   · refine le_trans ?_ hF'
     intro x hx
     have := sh_mono (-ws) ha hx

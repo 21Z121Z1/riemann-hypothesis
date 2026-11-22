@@ -2,8 +2,10 @@ module
 
 public import Development.AutomorphicArithmetic.Foundations.IwahoriReduction.NormProducts.LUnH
 public import Development.AbelianVarietyTheory.Definitions.Foundations.ActWBOfInvariant
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.LocalPowerUnitsTowerClosurePropertiesStatement
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ModularFunctionTowerUnitGroupStableSlashGaloisStatement
+public import Mathlib
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0085
+public import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0008
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0139
 
 @[expose] public section
 
@@ -276,9 +278,9 @@ private theorem jHol (X : Tower Ω ε) : ∃ φ : ℂ → ℂ, DifferentiableOn 
 
 private def unS [IsAlgClosure ℚ Ω] (X : Tower Ω ε) (m : ℕ) : Subgroup X.Kˣ where
   carrier := X.Un m
-  mul_mem' := fun {f g} hf hg => (GlobalTheory.T.localPowerUnitsTower_closure_properties ε X ε.injective (jHol X) m).2.1 f g hf hg
-  one_mem' := (GlobalTheory.T.localPowerUnitsTower_closure_properties ε X ε.injective (jHol X) m).1
-  inv_mem' := fun {f} hf => (GlobalTheory.T.localPowerUnitsTower_closure_properties ε X ε.injective (jHol X) m).2.2.1 f hf
+  mul_mem' := fun {f g} hf hg => (_root_.GlobalTheory.KZ.UnClosure.un_closure ε X ε.injective (jHol X) m).2.1 f g hf hg
+  one_mem' := (_root_.GlobalTheory.KZ.UnClosure.un_closure ε X ε.injective (jHol X) m).1
+  inv_mem' := fun {f} hf => (_root_.GlobalTheory.KZ.UnClosure.un_closure ε X ε.injective (jHol X) m).2.2.1 f hf
 
 private theorem polMod_tr [IsAlgClosure ℚ Ω] {X : Tower Ω ε} {l : ℕ} [Fact l.Prime] {n w : ℕ} {a : X.Kˣ}
     {x : X.Khat l} (hx : Rep X l n a x) (ha : a ∈ X.Un (l ^ n)) (lam : Fin 2 → ℤ) {ι : Type} [Fintype ι]
@@ -289,7 +291,7 @@ private theorem polMod_tr [IsAlgClosure ℚ Ω] {X : Tower Ω ε} {l : ℕ} [Fac
   let q : ι → ℤ := fun i => lam 0 * γ i 0 1 + lam 1 * γ i 1 1
   let z : ι → ℕ → ℤ := fun i k => p i ^ k * q i ^ (w - k) * (w.choose k : ℤ)
   have hb : ∀ i, b i ∈ X.Un (l ^ n) := fun i =>
-    (GlobalTheory.T.modularFunctionTower_unitGroup_stable_slash_galois ε X ε.injective (jHol X) (l ^ n) a ha).1 (ofSL (γ i)) (b i) rfl
+    (_root_.GlobalTheory.KZ.Tower.Un_sl_gal ε X ε.injective (jHol X) (l ^ n) a ha).1 (ofSL (γ i)) (b i) rfl
   have hr : ∀ i, Rep X l n (b i) (X.kmap l (X.sl (ofSL (γ i))).toRingEquiv x) := fun i => rep_kmap hx _
   refine ⟨fun k => ∑ i, ((z i k : ℤ) : ℤ_[l]) • X.kmap l (X.sl (ofSL (γ i))).toRingEquiv x,
     fun k => ⟨∏ i, b i ^ z i k, ?_, ?_⟩, fun u => ?_⟩

@@ -1,12 +1,12 @@
 module
 
-public import Development.DiscreteGroups.GlobalIrreducibility.DzBigDef
+public import Development.DiscreteGroups.GlobalIrreducibility.Bundle0014
 public import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.TypeConditions.Triple
 public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.CharpolySmulOfProd
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SideEigenExport
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.MemMaximalIdealIff
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ResidualCompatibleRows
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.EqOneOfIsOfFinOrderOfCharpoly
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0848
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0557
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0945
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0476
 
 @[expose] public section
 

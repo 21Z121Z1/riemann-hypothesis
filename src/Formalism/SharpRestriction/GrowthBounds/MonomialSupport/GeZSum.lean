@@ -1,8 +1,8 @@
 module
 
-public import Formalism.SharpRestriction.GrowthBounds.PlaneCoefficients.RestPlOf
+public import Formalism.SharpRestriction.GrowthBounds.PlaneCoefficients.Bundle0003
 public import Formalism.SharpRestriction.GrowthBounds.DiagonalSupport.LowestWeightCNonpos
-public import Formalism.SharpRestriction.GrowthBounds.RootWeights.ValuationBoundDetPowerFactor
+public import Formalism.SharpRestriction.GrowthBounds.RootWeights.Bundle0010
 public import Formalism.SharpRestriction.GrowthBounds.RootWeights.DerivativeValuationBounds
 
 @[expose] public section

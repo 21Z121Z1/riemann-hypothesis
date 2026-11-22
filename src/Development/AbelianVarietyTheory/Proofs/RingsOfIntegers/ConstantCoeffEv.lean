@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.TaylorDiscriminants.ConnectionKillsSeries
-public import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.IntAASubstOfHasSubst
-public import Development.AbelianVarietyTheory.Proofs.CovolumeBounds.FormalExpMulFormalExpNeg
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.TaylorDiscriminants.Bundle0002
+public import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.Bundle0002
+public import Development.AbelianVarietyTheory.Proofs.CovolumeBounds.Bundle0007
 
 @[expose] public section
 

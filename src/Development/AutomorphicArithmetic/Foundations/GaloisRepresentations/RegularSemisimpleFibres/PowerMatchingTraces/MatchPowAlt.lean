@@ -1,7 +1,7 @@
 module
 
 public import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.RegularSemisimpleFibres.PowerMatchingTraces.MatchCut
-public import Development.AutomorphicArithmetic.Foundations.Convolution.TraceSplitting.NormCharSplitAlt
+public import Development.AutomorphicArithmetic.Foundations.Convolution.TraceSplitting.Bundle0007
 
 @[expose] public section
 

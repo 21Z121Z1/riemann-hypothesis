@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.LineModel
-public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.CardLiesOverEqIndex
+public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.Bundle0038
+public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.Bundle0030
 public import Development.AbelianVarietyTheory.Definitions.Divisors.LineBundleGlobalSectionsDimCongrPicardClass
 public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.CoefficientFieldIntegersDedekindFractionField
 

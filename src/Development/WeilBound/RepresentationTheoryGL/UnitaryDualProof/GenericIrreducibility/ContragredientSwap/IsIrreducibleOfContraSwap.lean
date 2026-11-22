@@ -1,7 +1,7 @@
 module
 
 public import Development.WeilBound.RepresentationTheoryGL.UnitaryDualProof.GenericIrreducibility.CentralProd2
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.CuspidalPairIrreducibleProduct
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0217
 
 @[expose] public section
 

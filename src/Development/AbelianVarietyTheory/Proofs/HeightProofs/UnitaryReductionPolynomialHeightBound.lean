@@ -1,12 +1,12 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.HeightProofs.DenomBound
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.CompletedLatticeEqAdelicCompletionAndGram
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.FinitePartPreservesFormDetNormOne
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.RationalPointsAdelicUnitaryEqUnitary
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.AdelicElementLatticeFullAndCompletion
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.AdelicUnitaryLatticeSelfDualTraceForm
+public import Development.AbelianVarietyTheory.Proofs.HeightProofs.Bundle0029
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0070
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0072
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0073
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0074
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0077
 
 @[expose] public section
 

@@ -1,9 +1,7 @@
 module
 
-public import Development.AutomorphicSpectrum.Proofs.AdelicProofs.RelIndexInfEqOfMemMul
-public import Development.AutomorphicSpectrum.Proofs.AdelicProofs.RelIndexRatioCocycle
-public import Development.AutomorphicSpectrum.Proofs.AdelicProofs.EqOneOfPowEqLeExponent
-public import Development.AutomorphicSpectrum.Proofs.MetricProofs.ExistsIsFundamentalDomainOfRelIndexNeZero
+public import Development.AutomorphicSpectrum.Proofs.AdelicProofs.Bundle0001
+public import Development.AutomorphicSpectrum.Proofs.MetricProofs.Bundle0001
 public import Development.WeilBound.CoreStatements.EqualVolumeCompactOpens.IsIsotropicHermitianSetting
 
 @[expose] public section

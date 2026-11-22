@@ -1,7 +1,7 @@
 module
 
 public import Formalism.LocalToGlobal.TorsionIntegrality.GaussSumParity.LetterShift
-public import Formalism.GL3MeanSquares.HookFormulaTorsion.BimultiplicativeDivisibleTorsion
+public import Formalism.GL3MeanSquares.HookFormulaTorsion.Bundle0002
 
 @[expose] public section
 

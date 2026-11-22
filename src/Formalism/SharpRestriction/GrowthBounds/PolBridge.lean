@@ -2,7 +2,7 @@ module
 
 public import Formalism.SharpRestriction.GrowthBounds.ObjSeg
 public import Formalism.SharpRestriction.GrowthBounds.CovariantDegrees
-public import Formalism.SharpRestriction.GrowthBounds.GLWeightTheory
+public import Formalism.SharpRestriction.GrowthBounds.Bundle0003
 public import Formalism.SharpRestriction.GrowthBounds.ProjectionOfIsotypicDecomposition
 public import Formalism.SharpRestriction.GrowthBounds.ValuationLowestDegreeMapFractionField
 public import Formalism.SharpRestriction.GrowthBounds.FlipOneThree

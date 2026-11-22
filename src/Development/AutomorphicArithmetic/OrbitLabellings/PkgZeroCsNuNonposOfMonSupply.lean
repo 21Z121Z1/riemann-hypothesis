@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Development.AutomorphicArithmetic.OrbitLabellings.RowDefs
-public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.ExistsCutIntoBoundedGroupsFinset
+public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0001
 
 @[expose] public section
 

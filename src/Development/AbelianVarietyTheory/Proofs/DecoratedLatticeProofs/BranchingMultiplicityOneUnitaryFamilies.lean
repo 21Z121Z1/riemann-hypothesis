@@ -2,14 +2,14 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.EvalAtOneExtremalMul
-public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.SplitPart
-public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.TopFormula
+public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.Bundle0023
+public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.Bundle0005
 public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.BrEqv
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.EqSmulOfUnitaryEquivariant
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0288
 public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.MemSpanTprodOfCommuteAtEachPlace
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ExistsPiTensorMvPolynomialEquivBlocks
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0065
 public import Formalism.LocalRingCardinality.RankBoundMonotoneInDimension
-public import Formalism.LocalToGlobal.GlobalTheory.GL4.BranchingNormalisedOfAdjoint
+public import Formalism.LocalToGlobal.GlobalTheory.GL4.Bundle0001
 
 @[expose] public section
 

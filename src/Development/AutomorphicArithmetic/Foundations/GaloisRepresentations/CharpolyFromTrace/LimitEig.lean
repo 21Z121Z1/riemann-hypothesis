@@ -1,6 +1,6 @@
 module
 
-public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.PolyApproxZeroPadic
+public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.Bundle0002
 public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.WeilDeligneParamMonodromyEqZeroIff
 public import Formalism.SharpRestriction.LevelLetterCocycles.DataN
 

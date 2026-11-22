@@ -2,8 +2,8 @@ module
 
 public import Mathlib
 public import Formalism.HermitianCurvature.BesselNonvanishingReduction
-public import Formalism.PeriodIntegrals.BesselL2FixAtZero
-public import Formalism.PeriodIntegrals.QuotInv
+public import Formalism.PeriodIntegrals.Bundle0016
+public import Formalism.PeriodIntegrals.Bundle0006
 public import Formalism.FormalDegreeBessel.FormalDegreeRatio.UnitaryWeylNormalHolds
 
 @[expose] public section

@@ -2,26 +2,25 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.LengthPosOfPosDef
-public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.AdjFormula
-public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.ParamsEx
+public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0021
+public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0025
 public import Formalism.LocalToGlobal.IndefiniteReal.LinksStage
-public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.ExistsNormLeHeightPow
+public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.Bundle0007
 public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisGeometry₂.HoweUnram
 public import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.GaussianBinomialClosedForm
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsRangeRestrictEq
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ThetaProjectionIntertwinesLevelLifts
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.GoodProjectorUnitaryFormsModelLaws
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.SphericalOperatorsFormsOnRankSpaceNormal
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.EigenvectorAdjointIntertwinerNormalOperators
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ThetaIntertwinesMatchedOperators
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0585
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0506
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0117
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0152
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0166
 public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.RealizationFamilyNormalOperators
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.SphericalThetaCorrespondenceInertPlaceOfHowe
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0167
 public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ThetaLiftGoodProjectorIntertwinesMatchedHecke
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.TwoSidedHeckePartnerInertPrime
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ThetaLiftTransferHeckePolySplitPrime
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0181
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0172
 public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.WeightCocharacterEqOfGoodPlaces
 public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.HyperspecialFixesAllChainVacuaAtInertPrime
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SchurConstantsExistOnChainOfCuspRapidDecay
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1121
 
 @[expose] public section
 
@@ -144,7 +143,7 @@ theorem good_adjoint (R : RealDat D A Ks) (F : Face D A) (hC : Core R F) (i : Fi
   have hc : GlobalTheory.IndefiniteRowSideFullHecke.TranslateRepresentations.Commutes π (R.gW i (sg0 D A)) (R.thG i t) := fun g y =>
     (GlobalTheory.LiftEquivariance.exists_adelic_lift (hπ.2 g y)).elim fun κ hκ =>
       GlobalTheory.ThetaProjEquiv.thG_intertwines_core R F hC i t g κ hκ.1 y _ hκ.2
-  have ha := GlobalTheory.LiftEquivariance.commutes_adjoint π _ hπ.1 (GlobalTheory.T.norm_liftForms_finiteGroup_action R hC.models.HW hC.models.gW hC.models.νW i _) _ hc
+  have ha := GlobalTheory.LiftEquivariance.commutes_adjoint π _ hπ.1 (_root_.GlobalTheory.gW_norm_eq R hC.models.HW hC.models.gW hC.models.νW i _) _ hc
   have hx' : (∑ g, RealDat.eC (A := A) (sg0 D A) g • R.gW i (sg0 D A) g) x = x := hx
   have h1 := sum_fix _ _ _ ha (RealDat.eC (A := A) (sg0 D A)) x hx'
   exact goodVt_of R i t _ fun l => gaL_fix (V := Vc D i) (β := R.βV i) (L := R.datVt i t) (R.cV i) (hC.models.cV i) R.eG (R.HV i t) π hπ.2 _ _ h1 l
@@ -152,7 +151,7 @@ theorem good_adjoint (R : RealDat D A Ks) (F : Face D A) (hC : Core R F) (i : Fi
 theorem partner_inert (hH : HoweUnram) (R : RealDat D A Ks) (F : Face D A) (hC : Core R F) (hS : SchurAll R) (hF : R.FullP)
     (i : Fin D.R.m) (t : T) (P : Pl D.host.E) (hG : Good R t P) (hP : Formalism.DivisionValues.conjPl P = P) (cV : List ℤ →₀ ℂ) :
     ∃ cW, MatchW R i t P cV cW := by
-  have hU := GlobalTheory.T.splittingCharacters_unramified_offLevels R F hC.lev t P hG
+  have hU := _root_.GlobalTheory.UnrOffLevels.unrPl_of_good R F hC.lev t P hG
   have u1 : UnrPl P (R.toLevCh.mu t ((i : ℕ) + 1)) := hU.2 ((i : ℕ) + 1) (by omega) i.2
   have hV : (Vc D i).rank = D.R.r + D.R.t := D.sp.V_rank _ (Nat.le_add_left _ _) i.2
   have hWr : (Wc D i).rank = D.R.r := D.sp.W_rank _ (Nat.le_add_left _ _) i.2
@@ -161,13 +160,13 @@ theorem partner_inert (hH : HoweUnram) (R : RealDat D A Ks) (F : Face D A) (hC :
     refine GlobalTheory.VacFixInert.vacFix_of_inert _ _ P (hF i t).inert ?_ ?_ hP u1 (GlobalTheory.VacFixInert.unrPl_mul_inv' u1 hU.1)
     · rw [hV, hWr]; have := ht.pos; omega
     · left; rw [hV]; exact GlobalTheory.VacFixInert.r_odd.add_odd ht
-  have hc : SphCorr R.ψ (R.ωP i t) P := GlobalTheory.T.sphericalThetaCorrespondence_inertPlace_of_howe hH R.ψ _ _ _ _ _ P (hC.thP.ωP i t) hP hfix
-  exact (hc.2.2 (dualC cV)).imp fun cW h => GlobalTheory.T.thetaLiftGoodProjector_intertwines_matchedHecke R F hC hS i t P hG hfix cV cW h
+  have hc : SphCorr R.ψ (R.ωP i t) P := _root_.GlobalTheory.Hk3.CorrInert.sphCorr_of_inert hH R.ψ _ _ _ _ _ P (hC.thP.ωP i t) hP hfix
+  exact (hc.2.2 (dualC cV)).imp fun cW h => _root_.GlobalTheory.DefLiftHecke.matchW_of_match R F hC hS i t P hG hfix cV cW h
 
 theorem partner_split (R : RealDat D A Ks) (F : Face D A) (hC : Core R F) (hS : SchurAll R)
     (i : Fin D.R.m) (t : T) (P : Pl D.host.E) (hG : Good R t P) (hP : Formalism.DivisionValues.conjPl P ≠ P) (k : ℕ) (hk : k ≤ (Vc D i).rank) :
     ∃ cW, MatchW R i t P (Finsupp.single (splitLab (Vc D i).rank k) 1) cW := by
-  have hU := GlobalTheory.T.splittingCharacters_unramified_offLevels R F hC.lev t P hG
+  have hU := _root_.GlobalTheory.UnrOffLevels.unrPl_of_good R F hC.lev t P hG
   obtain ⟨e, he⟩ := GlobalTheory.ParahoricLift.exists_isIdemAt (GlobalTheory.ThetaPrimeHecke.not_isConjPl hP)
   obtain ⟨ϖ, hϖ1, hϖ2, hϖ3⟩ := GlobalTheory.ThetaPrimeHecke.exists_unif P
   have hϖ0 : (ϖ : D.host.E) ≠ 0 := fun h => by
@@ -184,7 +183,7 @@ theorem partner_split (R : RealDat D A Ks) (F : Face D A) (hC : Core R F) (hS : 
   have hV : (Vc D i).rank = (Wc D i).rank + D.R.t := by
     rw [hW]
     exact D.sp.V_rank _ (Nat.le_add_left _ _) i.2
-  exact ⟨_, GlobalTheory.T.thetaLiftGoodProjector_intertwines_matchedHecke R F hC hS i t _ hG hM.1 _ _ ((hM.2 e ϖ _ D.R.t he hϖ1 hϖ2 hx').2 hV k hk)⟩
+  exact ⟨_, _root_.GlobalTheory.DefLiftHecke.matchW_of_match R F hC hS i t _ hG hM.1 _ _ ((hM.2 e ϖ _ D.R.t he hϖ1 hϖ2 hx').2 hV k hk)⟩
 
 theorem exists_isSF (R : RealDat D A Ks) : ∃ SF, IsSF R SF := by
   classical
@@ -211,10 +210,10 @@ theorem eig_of_match (R : RealDat D A Ks) (F : Face D A) (hC : Core R F) (hS : S
     (P : Pl D.host.E) (hG : Good R t P) (cV : List ℤ →₀ ℂ) (hM : ∃ cW, MatchW R i t P cV cW) (l : ℂ) (y : (R.HV i t).H)
     (hy : h P cV y = l • y) :
     h P cV (LinearMap.adjoint (R.thG i t) (R.thG i t y)) = l • LinearMap.adjoint (R.thG i t) (R.thG i t y) := by
-  refine hM.elim fun cW hM => (exists_isSF R).elim fun SF hSF => (GlobalTheory.T.sphericalOperators_forms_on_rank_space_normal R F hC hS hX SF hSF i).elim fun hW hhW => ?_
-  have hP0 : Good R A.μ0 P := ((GlobalTheory.T.theta_lift_levels_good_primes_properties R F hC.lev).2.1 t P hG).2.2
+  refine hM.elim fun cW hM => (exists_isSF R).elim fun SF hSF => (_root_.GlobalTheory.SphOpsModel.sphericalOperators_forms_on_rank_space_normal_alt R F hC hS hX SF hSF i).elim fun hW hhW => ?_
+  have hP0 : Good R A.μ0 P := ((_root_.GlobalTheory.GoodPrimes.good_primes R F hC.lev).2.1 t P hG).2.2
   have key := (GlobalTheory.SysW.matched_operators_theta_intertwine R F hC hS hX SF hSF i t P hG cV cW hM h hh).1 hW hhW.1
-  exact GlobalTheory.T.eigenvector_adjoint_intertwiner_normal_operators (R.thG i t) (fun _ : Unit => h P cV) (fun _ : Unit => hW P cW) (fun _ u => key u)
+  exact _root_.GlobalTheory.HkUp.eigen_up_along_adjoint (R.thG i t) (fun _ : Unit => h P cV) (fun _ : Unit => hW P cW) (fun _ u => key u)
     (fun _ => NormalFam.normal hN hG cV) (fun _ => NormalFam.normal hhW.2.1 hP0 cW) () l _
     ((key y).symm.trans ((congrArg (R.thG i t) hy).trans (map_smul _ _ _)))
 
@@ -246,7 +245,7 @@ theorem eig_of_split {V : HSp D} {X : Type} [AddCommGroup X] [Module ℂ X] (π 
       have nn := NormalFam.normal hN hok (Finsupp.single (splitLab V.rank k) 1)
       exact ⟨star l, by rw [ho, ← e, adjoint_eig _ nn l y hl, map_smul],
         by rw [ho, ← e, adjoint_eig _ nn l u (hu k hk l hl), map_smul]⟩
-  obtain ⟨a, ha1, ha2⟩ := GlobalTheory.T.exists_adjoin_splitHeckeGenerators_duals_spherical V P hP X π d
+  obtain ⟨a, ha1, ha2⟩ := _root_.GlobalTheory.SplitGen.gen_split V P hP X π d
   obtain ⟨l, e1, e2⟩ := GlobalTheory.Hk3.LabDet.adjoin_common _ (E y) (E u) hs a ha1
   rw [ha2 _ (hfix y), ho, hy d hd, map_smul] at e1
   rw [ha2 _ (hfix u), ho, ← map_smul] at e2

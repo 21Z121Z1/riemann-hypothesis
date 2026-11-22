@@ -1,8 +1,10 @@
 module
 
 public import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.ThetaParseval.SchurStep
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.BuildingsResidueChars.MemISupAutomorphicRepsOfInvariantForm
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsInvariantPositivePeterssonFormStatement
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.BuildingsResidueChars.Bundle0034
+public import Mathlib
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1137
+public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.ContinuousMapPFin
 
 @[expose] public section
 
@@ -102,7 +104,7 @@ private theorem proj_of_sum {G V : Type} [Group G] [AddCommGroup V] [Module ℂ 
 theorem UpperTheory.TP.projEx :
     UpperTheory.TP.ProjEx := by
   intro E _ _ _ d ψ hψ hψ0
-  obtain ⟨B₀, -, -, hd, hi⟩ := GlobalTheory.T.exists_invariant_positive_petersson_form E d
+  obtain ⟨B₀, -, -, hd, hi⟩ := _root_.GlobalTheory.DefU.Petersson.exists_invariant_pos_form E d
   obtain ⟨p, hp⟩ := LinearMap.exists_leftInverse_of_injective (autU E d).subtype (autU E d).ker_subtype
   have hpv : ∀ (φ : UA E d → ℂ) (h : IsAutFormU φ), p φ = ⟨φ, h⟩ := fun φ h =>
     LinearMap.congr_fun hp (⟨φ, h⟩ : autU E d)

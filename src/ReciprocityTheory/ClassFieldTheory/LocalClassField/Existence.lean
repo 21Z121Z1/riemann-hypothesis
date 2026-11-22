@@ -4,12 +4,11 @@ public import Mathlib
 public import ReciprocityTheory.ClassFieldTheory.LocalClassField.RecPairDefs
 public import ReciprocityTheory.ClassFieldTheory.LocalClassField.PairKEqZeroOfMemNormGrp
 public import ReciprocityTheory.ClassFieldTheory.LocalClassField.NormLimit
-public import ReciprocityTheory.ClassFieldTheory.LocalClassField.NormOpen
-public import ReciprocityTheory.ClassFieldTheory.LocalClassField.Kummer
+public import ReciprocityTheory.ClassFieldTheory.LocalClassField.Bundle0013
+public import ReciprocityTheory.ClassFieldTheory.LocalClassField.Bundle0009
 public import ReciprocityTheory.ClassFieldTheory.LocalClassField.ExistsIntEKMulVbar
-public import ReciprocityTheory.ClassFieldTheory.LocalClassField.FinCoh
-public import ReciprocityTheory.ClassFieldTheory.LocalClassField.EqZeroOfResEqZeroOfCoprime
-public import ReciprocityTheory.ClassFieldTheory.LocalClassField.ExistenceA
+public import ReciprocityTheory.ClassFieldTheory.LocalClassField.Bundle0003
+public import ReciprocityTheory.ClassFieldTheory.LocalClassField.Bundle0016
 public import ReciprocityTheory.ClassFieldTheory.LocalClassField.ExistenceB
 
 @[expose] public section

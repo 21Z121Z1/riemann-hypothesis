@@ -2,12 +2,11 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.ArchimedeanThetaValues.ModelsAt
-public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsDegenerationPreDataOverSubfield
-public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsPullDegCancelTowerOfFields
-public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsRatioDescendsDegenerationPsiFamily
-public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.AdditivePointsDescendFieldExtension
-public import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.ExistsNumberFieldTorsionPoints
-public import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.CmCurveBaseChangeComp
+public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.Bundle0080
+public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.Bundle0083
+public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.Bundle0067
+public import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.Bundle0030
+public import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.Bundle0027
 
 @[expose] public section
 

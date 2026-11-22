@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsBergman
+public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0020
 
 @[expose] public section
 

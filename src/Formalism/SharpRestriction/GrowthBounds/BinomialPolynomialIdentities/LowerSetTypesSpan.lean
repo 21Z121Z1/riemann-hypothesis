@@ -1,6 +1,6 @@
 module
 
-public import Formalism.SharpRestriction.GrowthBounds.BinomialPolynomialIdentities.RestSplit
+public import Formalism.SharpRestriction.GrowthBounds.BinomialPolynomialIdentities.Bundle0003
 public import Formalism.SharpRestriction.GrowthBounds.ProjectionOfIsotypicDecomposition
 public import Formalism.SharpRestriction.GrowthBounds.PolBridge
 

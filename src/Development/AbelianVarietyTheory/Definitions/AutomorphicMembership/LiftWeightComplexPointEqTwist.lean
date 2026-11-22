@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Formalism.LocalToGlobal.IndefiniteReal.ConcretePkgSpec
+public import Formalism.LocalToGlobal.IndefiniteReal.Bundle0023
 public import Formalism.LocalToGlobal.IndefiniteForms.IndefiniteTree.ONLeaves
 public import Formalism.LocalToGlobal.Divisibility.LiftLatLemmas
 public import Formalism.LocalRingCardinality.DataParams

@@ -5,7 +5,7 @@ public import Development.AbelianVarietyTheory.Proofs.HeightProofs.ExistsSpecial
 public import Development.AbelianVarietyTheory.Definitions.HeightFunctions.NormComparisonConstants
 public import Formalism.LocalToGlobal.ProjectiveLattices.DepthTie
 public import Development.AbelianVarietyTheory.Definitions.Jets.EmbShortThLeThetaPlain
-public import Development.AbelianVarietyTheory.Definitions.ExistenceOfLattices.CoeSelfDualLatticeInFrameCoordinatesEq
+public import Development.AbelianVarietyTheory.Definitions.ExistenceOfLattices.Bundle0001
 
 @[expose] public section
 

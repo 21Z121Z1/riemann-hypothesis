@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import GroundTheory.ProfiniteCohomology.GlobalClassFormation.LevelCyclic
-public import GroundTheory.ProfiniteCohomology.LocalClassFormation.OrderInfRes
+public import GroundTheory.ProfiniteCohomology.LocalClassFormation.Bundle0001
 public import GroundTheory.GlobalFields.IdeleClassGroup.IdeleClassEquivIdeleClassMapOfComm
 public import GroundTheory.TateCohomology.InfRes
 

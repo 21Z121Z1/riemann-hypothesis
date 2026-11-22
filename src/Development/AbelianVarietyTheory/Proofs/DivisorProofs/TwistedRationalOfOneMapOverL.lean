@@ -3,15 +3,16 @@ module
 public import Mathlib
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NotOntoOfCharAlone
 public import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.TupPrimeEmpty
-public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.NormalFam
-public import Development.AbelianVarietyTheory.Definitions.Divisors.GenReads
+public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.Bundle0015
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0034
 public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.OneMapOfOfPtIdent
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IpMSelfEqZero
-public import Development.AbelianVarietyTheory.Proofs.FormalGroupCharts.ChartIndependenceUnconditional
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsFrameConstantsOfCharacterisationCoreStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsCuspFormClassSumNormalisedDataStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsAdelicLiftEqGeometricClassSumAllTuplesStatement
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsNormalisedTupleDataOverCoefficientFieldStatement
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0148
+public import Development.AbelianVarietyTheory.Proofs.FormalGroupCharts.Bundle0038
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1645
+public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0007
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1684
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1707
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0476
 
 @[expose] public section
 
@@ -342,9 +343,9 @@ theorem tieIn (fw : FWTie T R κ v₀) : TieIn T R κ v₀ := ⟨fw.laws, fw.alg
 theorem seriesIdentity_of_core (hC : GlobalTheory.Hk3.Core R F) (fw : FWTie T R κ v₀) (hio : IoExt R) (i : Fin D.R.m) :
     SeriesIdentity T R κ v₀ i := fun O₀ h₀ => by
   have hI := GlobalTheory.chartIndependence_unconditional
-  obtain ⟨cc, hcc⟩ := GlobalTheory.T.exists_frameConstants_of_characterisationCore hI D G Pl0 T0 A T R F κ v₀ hC (tieIn fw) i _ _ O₀ h₀
-  exact ⟨cc, fun O h => ⟨(GlobalTheory.T.exists_adelicLift_eq_geometric_classSum_all_tuples hI D G Pl0 T0 A T R F κ v₀ hC (tieIn fw) hio i _ _ O h cc hcc).imp fun _ h => h.2,
-    GlobalTheory.T.exists_cuspForm_classSum_normalisedData hI D G Pl0 T0 A T R F κ v₀ hC (tieIn fw) i _ _ O h⟩⟩
+  obtain ⟨cc, hcc⟩ := _root_.GlobalTheory.AdTh.CcExCore.exists_ccIs_core hI D G Pl0 T0 A T R F κ v₀ hC (tieIn fw) i _ _ O₀ h₀
+  exact ⟨cc, fun O h => ⟨(_root_.GlobalTheory.AdTh.SerCore.exists_serOf_core hI D G Pl0 T0 A T R F κ v₀ hC (tieIn fw) hio i _ _ O h cc hcc).imp fun _ h => h.2,
+    _root_.GlobalTheory.ClassSumRule.exists_cusp_isThClsD_core hI D G Pl0 T0 A T R F κ v₀ hC (tieIn fw) i _ _ O h⟩⟩
 
 theorem allRational_of_core (hC : GlobalTheory.Hk3.Core R F) (fw : FWTie T R κ v₀) (hio : IoExt R) (hU : R.LUnif)
     {O : ∀ i, OMDat T.toCore R i Unit (fun _ => A.μ0)} (hQ : QGuard R) (hrow : ∀ i, OneMapRowR T R κ v₀ O ph i)

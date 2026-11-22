@@ -1,16 +1,18 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PullSpMapComp
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LaurentMapIsIntegral
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntegralSurjectionCechDescentTateTwist
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EtaleCohomologyNegativeVanishingDegreeZeroStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SimplicialCochainClassesBasicPropertiesStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EtaleCohomologyOneCechCocycleOfPullbackZeroStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SimplicialCochainCoboundaryOfClassZeroStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsZeroChains
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SpecWidePushoutIsoWidePullbackYonedaStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TateTwistCohomologyZeroLaurentSurjectiveStatement
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0361
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0358
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0857
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0478
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0007
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0006
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0364
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0374
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0394
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0291
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0172
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0521
 
 @[expose] public section
 
@@ -246,7 +248,7 @@ theorem tateTwistCohomology_zero_laurent_from_base (q : ℕ) [NeZero q] (T : Typ
 theorem sec_flat (q : ℕ) [NeZero q] (T : Type) [CommRing T] (hq : IsUnit (q : T)) (i : ℤ)
     (s : Sec (tw q i) (Spec (CommRingCat.of (LaurentPolynomial T)))) :
     Sec.res (Spec.map (CommRingCat.ofHom (flat T))) s = s := by
-  obtain ⟨-, e, he, -⟩ := GlobalTheory.T.etaleCohomology_negative_vanishing_degree_zero (ZMod q) (tw q i)
+  obtain ⟨-, e, he, -⟩ := _root_.GlobalTheory.EtC.etale_cohomology_vanishing_negative_degree_zero (ZMod q) (tw q i)
   apply (e _).injective
   rw [← he]
   obtain ⟨y, hy⟩ := tateTwistCohomology_zero_laurent_from_base q T hq i (e _ s)

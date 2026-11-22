@@ -2,9 +2,9 @@ module
 
 public import Mathlib
 public import GroundTheory.GlobalFields.ComplexMultiplication.DifferentialSeparable
-public import GroundTheory.ArithmeticGeometry.AbelianVarieties.IsogenyFrobeniusSep
+public import GroundTheory.ArithmeticGeometry.AbelianVarieties.Bundle0001
 public import GroundTheory.ArithmeticGeometry.AbelianVarieties.IsogenyPoints
-public import GroundTheory.ArithmeticGeometry.AbelianVarieties.SupersingularPowField
+public import GroundTheory.ArithmeticGeometry.AbelianVarieties.Bundle0005
 
 @[expose] public section
 

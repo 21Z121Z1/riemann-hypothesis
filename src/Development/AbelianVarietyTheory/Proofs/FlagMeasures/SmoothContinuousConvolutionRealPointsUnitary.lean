@@ -5,7 +5,7 @@ public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.Hermi
 public import Development.AbelianVarietyTheory.Statements.CuspFrameWeights.DiscreteSpectrumKFiniteDecomposition
 public import Formalism.HarderNarasimhan.ShiftInvariance
 public import Formalism.RealPlaceAnalysis.FinalF
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsContDiffExtensionOfIsClosed
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0059
 
 @[expose] public section
 

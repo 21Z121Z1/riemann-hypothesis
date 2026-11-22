@@ -1,15 +1,15 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Foundations.IsSatFrame
-public import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.FormalGroupLawLogarithm
+public import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0003
+public import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.Bundle0012
 public import Development.AbelianVarietyTheory.Definitions.Jets.TwoPlaces
-public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.NonemptyClosedValuedExtensionOfCDVR
-public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.ChartLocalDepthLeOfValuedExtensionBound
+public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0117
+public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0112
 public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.ProdDetMemHaO
 public import Formalism.LocalToGlobal.ProjectiveLattices.PlaceBelow
 public import Formalism.LocalToGlobal.ProjectiveLattices.SatLeaves
-public import Formalism.LocalToGlobal.ProjectiveLattices.CompSplitPfB
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0021
 public import Formalism.LocalToGlobal.ProjectiveLattices.TowerOfAt
 
 @[expose] public section

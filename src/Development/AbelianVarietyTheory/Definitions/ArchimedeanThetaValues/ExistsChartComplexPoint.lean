@@ -5,9 +5,9 @@ public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeo
 public import Development.AbelianVarietyTheory.Definitions.ArchimedeanThetaValues.CoeffFSumDerivEqFderiv
 public import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.RelationsAreFunctions
 public import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.ZeroFLeftExt
-public import Development.AbelianVarietyTheory.Proofs.ToricGeometry.TopLePreimageOfValAtNeZero
-public import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.SurjectiveOfComplexPointsLiftOfUniversallyClosed
-public import Development.AbelianVarietyTheory.Proofs.ToricGeometry.IsReducedSchemeOfSmoothOfIsIntegrallyClosed
+public import Development.AbelianVarietyTheory.Proofs.ToricGeometry.Bundle0018
+public import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.Bundle0005
+public import Development.AbelianVarietyTheory.Proofs.ToricGeometry.Bundle0014
 
 @[expose] public section
 

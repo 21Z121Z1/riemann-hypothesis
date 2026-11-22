@@ -1,14 +1,14 @@
 module
 
 public import Mathlib
-public import Formalism.LocalRingCardinality.ConjSqrtMinusD
+public import Formalism.LocalRingCardinality.Bundle0001
 public import Formalism.SharpRestriction.LevelLetterCocycles.QuotientHomNonvanishingBound
 public import Formalism.SharpRestriction.ParamsHeightRankConstant
 public import Formalism.LocalRingCardinality.RhoDetPrimeEqMuTildeMulChiPow
 public import Formalism.SharpRestriction.LevelLetterCocycles.DataN
 public import Formalism.SharpRestriction.CuspSpanNormBounds.GlobAut
-public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.GaloisSideTwistedSelmerAuxiliaryPrimes
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsComplDescCompl
+public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0012
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0400
 
 @[expose] public section
 

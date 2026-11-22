@@ -3,24 +3,24 @@ module
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.Divisors.OfFactorE
 public import Development.AbelianVarietyTheory.Definitions.Divisors.IsProjOverWeierstrass
-public import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsTensElliptic
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0067
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.UniformisationConclusion
 public import Development.AbelianVarietyTheory.Definitions.Degenerations.AdmissibleBaseOfCompleteDvr
-public import Development.AbelianVarietyTheory.Proofs.CharacterTheory.W8AddTransposeEqE8
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsPowPolAV
+public import Development.AbelianVarietyTheory.Proofs.CharacterTheory.Bundle0002
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2266
 public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.SelfTorusExtensionCoordValuesEqOne
 public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.UniformizationLawsAndExpansionStatements
-public import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.ValPsiZero
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsLaws
-public import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.CubeConclusionIff
+public import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.Bundle0015
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0074
+public import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.Bundle0012
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.ChartPullbacks.UniformBaseChange.Transport
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.DiscreteValuationRings.ProdIso
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.DiscreteValuationRings.LBLocal
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsTensorBundleRigidification
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsPrincipallyPolarisedPowerUnimodularFormStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TensorDegenerationDataPsiEvenStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TensorDegenerationDataTauBimultiplicativeStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TensorDegenerationDataPsiPosTendstoZeroStatement
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.DiscreteValuationRings.Bundle0002
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2358
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2885
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TensorDegenerationDataPsiEven
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2477
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2671
 
 @[expose] public section
 
@@ -206,7 +206,7 @@ theorem exists_tensPol : ∀ (R : Type) [CommRing R] [IsDomain R] [IsLocalRing R
         ∏ i, ∏ j, val (Q.tau (xe y i) (xe y j)) (𝟙 _) z J ^ W i j := by
   intro R _ _ _ hR Q hQ r W hW hdet
   haveI : IsNoetherianRing R := hR.1
-  obtain ⟨P', pr, hpr, ⟨lim⟩, ⟨w, hw⟩⟩ := GlobalTheory.T.exists_principally_polarised_power_unimodular_form R Q W hW hdet
+  obtain ⟨P', pr, hpr, ⟨lim⟩, ⟨w, hw⟩⟩ := _root_.GlobalTheory.Mum.TensPow.exists_pow_data_polAV R Q W hW hdet
   obtain ⟨sym, hsym, hsr⟩ := GlobalTheory.SelfUnif.exists_sym P'
   obtain ⟨rig, hrig, hrv⟩ := rig_exists Q.M.isLB W P'.isLB pr hpr w hw
   have hL : Laws := GlobalTheory.lawsAndExpansions.1.1
@@ -249,9 +249,9 @@ theorem exists_tensPol : ∀ (R : Type) [CommRing R] [IsDomain R] [IsLocalRing R
     generalize cpt lim 0 = x at hz ⊢
     subst hz
     exact id
-  obtain ⟨hpos, htend⟩ := GlobalTheory.T.tensorDegenerationData_psi_pos_tendsto_zero R hR Q D' W pr hpr lim (AddEquiv.refl _) hc w hw hv hW hQ
-  exact ⟨⟨D', GlobalTheory.T.tensorDegenerationData_psi_even R hR Q D' W pr hpr lim (AddEquiv.refl _) hc w hw hv,
-    GlobalTheory.T.tensorDegenerationData_tau_bimultiplicative R hR Q D' W pr hpr lim (AddEquiv.refl _) hc w hw hv h0, hpos, htend⟩,
+  obtain ⟨hpos, htend⟩ := _root_.GlobalTheory.Mum.TensPol.psi_pos_tendsto R hR Q D' W pr hpr lim (AddEquiv.refl _) hc w hw hv hW hQ
+  exact ⟨⟨D', _root_.GlobalTheory.PolTensEven.main R hR Q D' W pr hpr lim (AddEquiv.refl _) hc w hw hv,
+    _root_.GlobalTheory.TensPolBimult.main R hR Q D' W pr hpr lim (AddEquiv.refl _) hc w hw hv h0, hpos, htend⟩,
     pr, AddEquiv.refl _, w, hpr, ⟨lim⟩, hc, hw, hv⟩
 
 end GlobalTheory.Mum.TensPol

@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.Divisors.TateProductRigidificationTrivial
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EtChart
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0019
 
 @[expose] public section
 

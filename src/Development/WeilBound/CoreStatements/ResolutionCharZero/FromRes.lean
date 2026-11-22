@@ -5,7 +5,7 @@ public import Development.ResolutionOfSingularities.Statements
 public import Development.WeilBound.CoreStatements.ResolutionCharZero.WeakPair
 public import Development.WeilBound.CoreStatements.ResolutionCharZero.FromResIso
 public import Development.WeilBound.CoreStatements.ResolutionCharZero.FromResSnc
-public import Development.ResolutionOfSingularities.EmbeddedResolution.EtaleCoordinates.StrictNormalCrossingsNil
+public import Development.ResolutionOfSingularities.EmbeddedResolution.EtaleCoordinates.Bundle0003
 
 @[expose] public section
 

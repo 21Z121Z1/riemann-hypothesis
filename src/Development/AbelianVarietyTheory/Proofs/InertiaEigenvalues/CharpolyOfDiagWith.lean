@@ -3,15 +3,15 @@ module
 public import Mathlib
 public import Formalism.SharpRestriction.LevelLetterCocycles.DataNLoc
 public import Development.AbelianVarietyTheory.BlockTheory.NonGaloisCusps.DiagonalQuotientEigen
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CompletionLines
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0188
 public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.InjectiveOfSpan
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CoeffEqOfApply
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsSubstInvariants
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.DvrComplete
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsPrimitiveRootCoeffRingOfGood
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.MemXSmulOfProjective
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsBasisAddPiSmul
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsMatrixFrobenius
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0202
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0321
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0248
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0117
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0282
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0129
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0131
 
 @[expose] public section
 

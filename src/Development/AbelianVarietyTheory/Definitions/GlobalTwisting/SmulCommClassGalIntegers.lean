@@ -1,10 +1,10 @@
 module
 
 public import Mathlib
-public import Formalism.SharpRestriction.GlobalSchurBounds.MainIn
-public import Formalism.GL3MeanSquares.SmoothedRemainderRealIntegralFormula
-public import Formalism.CyclotomicNorms.StatementI
-public import Development.AbelianVarietyTheory.Definitions.Foundations.RayPrimes
+public import Formalism.SharpRestriction.GlobalSchurBounds.Bundle0002
+public import Formalism.GL3MeanSquares.Bundle0001
+public import Formalism.CyclotomicNorms.Bundle0001
+public import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0008
 
 @[expose] public section
 

@@ -1,12 +1,10 @@
 module
 
-public import Development.AutomorphicArithmetic.CharacterBoxes.TwistForm
+public import Development.AutomorphicArithmetic.CharacterBoxes.Bundle0003
 public import Formalism.SharpRestriction.RamificationFrobenius.TotientGaloisClasses.InertiaGaloisSymmetry.OfRawToHostRaw
 public import Formalism.SharpRestriction.RamificationFrobenius.TotientGaloisClasses.InertiaGaloisSymmetry.AnyLevel
 public import Development.AutomorphicArithmetic.CoprimeRanks.SecondSetNoRelation
-public import Development.AutomorphicArithmetic.CharacterBoxes.OrdAny
-public import Development.AutomorphicArithmetic.CharacterBoxes.KerChiAny
-public import Development.AutomorphicArithmetic.CharacterBoxes.TwistAny
+public import Development.AutomorphicArithmetic.CharacterBoxes.Bundle0005
 
 @[expose] public section
 

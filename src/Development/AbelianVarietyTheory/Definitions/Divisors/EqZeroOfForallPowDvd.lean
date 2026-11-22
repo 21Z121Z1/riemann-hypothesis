@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Divisors.GhostFrobenius
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0012
 public import Development.AbelianVarietyTheory.Definitions.Divisors.FormalCoboundarySmul
 
 @[expose] public section

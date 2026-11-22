@@ -1,23 +1,25 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.OneMapOfOfExtends
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HolSub0LeSpanRaw
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RawSeriesMoveDatum
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnfoldingFrameDeltaChange
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1656
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1604
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1657
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1318
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.OscillatorModelValuesThird
 public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsRepsOfFiniteIndex
-public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.AdelicLinearIndependent
+public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.Bundle0060
 public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsOmegaField
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsHomogeneousOfRowDeg
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.OscillatorModelValuesFirst
-public import Development.AbelianVarietyTheory.Definitions.Divisors.GenReads
-public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.ThExprUniqOfChartIndep2
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.OscillatorModelExtensionSecond
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0383
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1635
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0034
+public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0007
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1715
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.OscillatorModelValuesSixth
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.OscillatorModelUnitValues
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsRationalUnitaryMoveSelfDualToSplitStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaKernelTensorValues
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1737
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1454
+public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.ExistsAdelicUnitaryTranslateStandardLattice
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsMatrixDetNotMem
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1699
 
 @[expose] public section
 
@@ -94,7 +96,7 @@ theorem exists_split_move {D : D7} (V : HSp D) (hg : V.gram = 1) (hL : Bridge.hL
   have hT2 : Λ.TrivAt (bad * l.M) := by
     obtain ⟨k, hk, h⟩ := hT
     exact ⟨k, hk.mul_right (hk.coprime_dvd_right hM), h⟩
-  obtain ⟨γ, h, hγ, hc, hh, hs, e⟩ := GlobalTheory.T.exists_rationalUnitary_move_selfDual_to_split D V hg hL H (bad * l.M) (Nat.mul_pos hb hM0) Λ hU hT2
+  obtain ⟨γ, h, hγ, hc, hh, hs, e⟩ := _root_.GlobalTheory.SplitMove.exists_move_to_split D V hg hL H (bad * l.M) (Nat.mul_pos hb hM0) Λ hU hT2
   obtain ⟨N', c1, c2, c3, c4, c5⟩ := GlobalTheory.SplitReps.exists_conjLat V hg hL H l bad h2 h hs
   have g := GlobalTheory.ClassScalarCompare.guard_conjLat (H := H)
     (L := (GlobalTheory.UnRep.FullReps.conjLat H (Bridge.hLat V (fin V h))).La) ⟨c1, c2, c5⟩

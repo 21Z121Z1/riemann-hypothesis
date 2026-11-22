@@ -4,7 +4,7 @@ public import Development.WeilBound.CoreStatements.AutomorphicKernels.SiegelWeil
 public import Development.WeilBound.CoreStatements.AutomorphicKernels.SiegelWeilFormula.EisensteinMeromorphy.DiffContOfReg
 public import Development.WeilBound.CoreStatements.AutomorphicKernels.SiegelWeilFormula.EisensteinMeromorphy.HgtMulRight
 public import Development.WeilBound.CoreStatements.AutomorphicKernels.SiegelWeilFormula.LowerRankDatum
-public import Development.WeilBound.ThetaLifts.LatticeBasics.EisCont
+public import Development.WeilBound.ThetaLifts.LatticeBasics.Bundle0015
 
 @[expose] public section
 

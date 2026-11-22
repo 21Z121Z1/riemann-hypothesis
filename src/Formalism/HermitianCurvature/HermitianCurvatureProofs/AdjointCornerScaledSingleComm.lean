@@ -1,6 +1,6 @@
 module
 
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.UpperMinorOfLevelPoint
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0244
 
 @[expose] public section
 

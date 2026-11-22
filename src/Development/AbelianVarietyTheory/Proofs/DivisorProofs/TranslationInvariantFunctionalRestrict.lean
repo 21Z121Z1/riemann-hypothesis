@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TrPApply
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1361
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NormIteratedFDerivRemCompLe
 
 @[expose] public section

@@ -1,11 +1,11 @@
 module
 
 public import Mathlib
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsAddBlockIsometric
+public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0068
 public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PSectionPointValue
-public import GroundTheory.HeightsAndTheta.Heights.Intersections.StatementsSemilocRing
-public import GroundTheory.HeightsAndTheta.Heights.WeightedHomogeneous.LiftOldChartMonomialMemPrimeCompl
-public import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.ImageCoord
+public import GroundTheory.HeightsAndTheta.Heights.Intersections.Bundle0035
+public import GroundTheory.HeightsAndTheta.Heights.WeightedHomogeneous.Bundle0003
+public import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.Bundle0007
 
 @[expose] public section
 

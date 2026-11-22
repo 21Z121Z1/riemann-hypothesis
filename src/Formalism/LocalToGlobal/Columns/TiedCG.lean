@@ -1,6 +1,6 @@
 module
 
-public import Formalism.LocalToGlobal.Columns.TiedCF
+public import Formalism.LocalToGlobal.Columns.Bundle0006
 
 @[expose] public section
 

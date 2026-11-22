@@ -1,8 +1,8 @@
 module
 
 public import Formalism.ThetaLogCoordinates.UniformThetaSubstitution.KernelFromKOneK
-public import Formalism.ThetaLogCoordinates.UniformThetaSubstitution.EdgeNoTrunc
-public import Formalism.ThetaLogCoordinates.UniformThetaSubstitution.FrobeniusLiftNorms.EChain
+public import Formalism.ThetaLogCoordinates.UniformThetaSubstitution.Bundle0003
+public import Formalism.ThetaLogCoordinates.UniformThetaSubstitution.FrobeniusLiftNorms.Bundle0001
 public import Mathlib
 public import Formalism.ThetaLogCoordinates.UniformThetaSubstitution.StatementE
 public import Formalism.ThetaLogCoordinates.UniformThetaSubstitution.CyclicPowerClassOfExpEquiv

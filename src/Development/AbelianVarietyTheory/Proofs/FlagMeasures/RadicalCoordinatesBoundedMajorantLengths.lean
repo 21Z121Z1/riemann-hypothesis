@@ -1,14 +1,14 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.BlockAnti
+public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.Bundle0009
 public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.IsotropicLeviEmbeddingHomomorphismProperties
 public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.IsotropicStabilizerRadicalStructure
 public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.MajorantFlagLengthsInvarianceTorusPositivity
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.GramSchmidtLengths
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0142
 public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.NormalFormFlagZeroMiddleInverseMinorOrthogonal
-public import Formalism.FlagUnipotentLattices.CardSubgroupsOfIndexLe
-public import Formalism.FormalDegreeBessel.FinalG
+public import Formalism.FlagUnipotentLattices.Bundle0004
+public import Formalism.FormalDegreeBessel.Bundle0002
 
 @[expose] public section
 

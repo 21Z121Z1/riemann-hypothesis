@@ -1,14 +1,14 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.GaugeUnfold
+public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.Bundle0011
 public import Formalism.LocalToGlobal.GlobalTheory.GL5.Statement
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.GaussianRapidDecay
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.CmDataIsCMExtAndGramIsHermND
-public import Development.AbelianVarietyTheory.Proofs.HeightProofs.SymplecticValTauCompat
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.SelfDualMeasureRealDiagonalStatement
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ComplexCoordinatesMeasurePreservingStatement
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.GaussianPushforwardDensityStatement
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0299
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0111
+public import Development.AbelianVarietyTheory.Proofs.HeightProofs.Bundle0025
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.SelfDualMeasureRealDiagonal
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0251
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0255
 
 @[expose] public section
 
@@ -59,7 +59,7 @@ theorem selfDual_complex {ι : Type} [Fintype ι] {n : ℕ} (d : ι → Fin n �
     (h : SelfDual μ (fun x y => Complex.exp (2 * Real.pi * Complex.I *
       ((∑ v, ∑ i, d v i * ((x v i).re * (y v i).re + (x v i).im * (y v i).im) : ℝ) : ℂ)))) :
     μ = ENNReal.ofReal (∏ v, ∏ i, |d v i|) • (volume : Measure (ι → Fin n → ℂ)) := by
-  obtain ⟨T, hTm, hTv⟩ := GlobalTheory.T.complex_coordinates_measure_preserving ι n
+  obtain ⟨T, hTm, hTv⟩ := _root_.GlobalTheory.ReImVolume.exists_reIm_measurePreserving ι n
 
   let d' : ι × Fin n × Bool → ℝ := fun k => d k.1 k.2.1
   have hd'0 : ∀ k, d' k ≠ 0 := fun k => hd k.1 k.2.1
@@ -76,7 +76,7 @@ theorem selfDual_complex {ι : Type} [Fintype ι] {n : ℕ} (d : ι → Fin n �
   have hmap : SelfDual (μ.map T) (fun x y : ι × Fin n × Bool → ℝ =>
       Complex.exp (2 * Real.pi * Complex.I * ((∑ k, d' k * (x k * y k) : ℝ) : ℂ))) :=
     selfDual_map T h (fun x y => by simp only [hsum])
-  have h2 := GlobalTheory.T.self_dual_measure_real_diagonal (ι × Fin n × Bool) d' hd'0 (μ.map T) hmap
+  have h2 := _root_.GlobalTheory.SelfDualDiagReal.eq_of_selfDual_diag (ι × Fin n × Bool) d' hd'0 (μ.map T) hmap
   have hconst : (∏ k, √|d' k|) = ∏ v, ∏ i, |d v i| := by
     rw [Fintype.prod_prod_type]
     refine Finset.prod_congr rfl fun v _ => ?_
@@ -467,7 +467,7 @@ theorem density_at_sign : ∀ (I : AutInst) (θ : InfinitePlace I.F → (Ainf I.
     intro x y
     rw [hχ]
     simp only [ha, Complex.ofReal_re, hmult]
-  have hνeq := GlobalTheory.T.self_dual_measure_real_diagonal (InfinitePlace I.F) lamv hlam (νi.map a) (selfDual_map a hν hνpair)
+  have hνeq := _root_.GlobalTheory.SelfDualDiagReal.eq_of_selfDual_diag (InfinitePlace I.F) lamv hlam (νi.map a) (selfDual_map a hν hνpair)
 
   have hq : ∀ X, a (qR (Ainf I.F) I.cm.sig I.J (X 0)) = fun v => qEps (I.ε v) (T X v) := by
     intro X

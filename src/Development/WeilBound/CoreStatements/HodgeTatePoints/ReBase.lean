@@ -1,14 +1,14 @@
 module
 
 public import Mathlib
-public import ReciprocityTheory.DualLattices.CotangentSurjective
+public import ReciprocityTheory.DualLattices.Bundle0004
 public import ReciprocityTheory.DualLattices.MemDualLat
-public import ReciprocityTheory.DualLattices.IsUnitDetOfSpanEq
+public import ReciprocityTheory.DualLattices.Bundle0002
 public import ReciprocityTheory.DualLattices.PowMemCarrier
-public import ReciprocityTheory.DualLattices.HasLenCokerDet
-public import ReciprocityTheory.DualLattices.MemOfSumSingleEqZero
+public import ReciprocityTheory.DualLattices.Bundle0021
+public import ReciprocityTheory.DualLattices.Bundle0017
 public import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.IsTight
-public import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.StepOrderRes
+public import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.Bundle0003
 
 @[expose] public section
 

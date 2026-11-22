@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.FiniteDimensionalSpan
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsUnivCharWithUnivChar
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0401
 
 @[expose] public section
 

@@ -1,12 +1,12 @@
 module
 
 public import Mathlib
-public import Formalism.LocalToGlobal.LatticeGeometry.LevPrPrime
+public import Formalism.LocalToGlobal.LatticeGeometry.Bundle0003
 public import Formalism.LocalToGlobal.ProjectiveLattices.PartitionExtendByZeroAntitone
 public import Formalism.LocalToGlobal.ProjectiveLattices.UnFree
-public import Formalism.LocalToGlobal.ProjectiveLattices.NormsFree
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0013
 public import Formalism.LocalToGlobal.ProjectiveLattices.CompHt
-public import Formalism.LocalToGlobal.ProjectiveLattices.CuspidalL2Subspace
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0024
 public import Formalism.LocalToGlobal.ProjectiveLattices.XcLat
 public import Formalism.LocalToGlobal.ProjectiveLattices.ExistsParameterConditions
 public import Formalism.LocalToGlobal.ProjectiveLattices.LevelPb
@@ -17,13 +17,13 @@ public import Development.AbelianVarietyTheory.Definitions.ExistenceOfLattices.P
 public import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsChartOfIsLocalRing
 public import Development.AbelianVarietyTheory.Definitions.ThetaMetrics.IsAmpleLBOfRelAmpleOfIsAffine
 public import Development.AbelianVarietyTheory.Definitions.ExistenceOfLattices.ExistsCtxOkOfPins
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsUnfFamily
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsSplitLatticeDatumEverySignature
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsDatumRankOne
-public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.CompactifiedModuliPartOne
-public import Development.AbelianVarietyTheory.Proofs.GenericRegularity.GenFrExAndGenFromTest
-public import Development.AbelianVarietyTheory.Proofs.GenericRegularity.NumericalConsequencesOfPins
-public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.FnAlgClosedOfFixedPoints
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0111
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0102
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0081
+public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0224
+public import Development.AbelianVarietyTheory.Proofs.GenericRegularity.Bundle0029
+public import Development.AbelianVarietyTheory.Proofs.GenericRegularity.Bundle0021
+public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.Bundle0029
 
 @[expose] public section
 

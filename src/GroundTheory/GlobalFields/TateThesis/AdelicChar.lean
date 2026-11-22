@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import GroundTheory.GlobalFields.Adele.Approximation
-public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.InfiniteTraceAlgebraMap
+public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0035
 
 @[expose] public section
 

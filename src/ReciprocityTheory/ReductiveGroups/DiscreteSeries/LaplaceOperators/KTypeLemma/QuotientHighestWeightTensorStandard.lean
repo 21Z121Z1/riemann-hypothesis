@@ -1,8 +1,8 @@
 module
 
 public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.DefsRep
-public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.BochnerInequality.Permute
-public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.LaplaceOperators.EquivariantL2Space
+public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.BochnerInequality.Bundle0001
+public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.LaplaceOperators.Bundle0001
 
 @[expose] public section
 

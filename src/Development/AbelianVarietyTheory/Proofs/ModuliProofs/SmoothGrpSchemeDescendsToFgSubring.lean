@@ -2,17 +2,17 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.MorphismsSpreadOutToFgSubalgebra
-public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.GlueModelsOverSubfield
-public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsFgIsSeparatedStatement
-public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.SmoothModelsIsoOverFgSubalgebraStatement
-public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.GrpObjDescendsToFgSubalgebraStatement
-public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsFiniteTypeModelOfSmoothAffineStatement
+public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.Bundle0028
+public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0062
+public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0059
+public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.GrpObjDescendsToFgSubalgebra
+public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0051
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.UniformisationConclusion
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.HeckeKer
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.Bundle0003
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.RigidSys
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.Splits
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.GtBaseChangeSt
-public import Development.AbelianVarietyTheory.Definitions.ModuliSpaces.AuxiliaryInertOddPrime
+public import Development.AbelianVarietyTheory.Definitions.ModuliSpaces.Bundle0001
 public import Development.AbelianVarietyTheory.Definitions.Degenerations.AdmissiblePadicIntMaximalIdeal
 public import Development.AbelianVarietyTheory.Definitions.ArchimedeanThetaValues.OneAddZeta21PowSevenAddPowFourteenEqZero
 public import Development.AbelianVarietyTheory.Definitions.ArchimedeanThetaValues.IsCoprimeTwoSubRtTwoAddRt
@@ -242,7 +242,7 @@ theorem hasModel_of_two {X W : Scheme.{0}} (q : X ⟶ Sp V) [IsSeparated q] (u :
   obtain ⟨N⟩ : Nonempty (PairModel (spMap (algebraMap k V)) (v ≫ q) (pullback.snd u v)) := ⟨N₁.baseChange _ _ e₂⟩
   have hN := N.hτ.paste_vert N.hφ
   rw [← pullback.condition_assoc] at hN
-  obtain ⟨R, e, hR, he, he'⟩ := GlobalTheory.T.exists_iso_pullback_over_fg_subalgebra k V M.T₀ N.T₀ _ (M.a₀ ≫ M.p₀) (N.a₀ ≫ N.p₀) _ M.τ N.τ
+  obtain ⟨R, e, hR, he, he'⟩ := _root_.GlobalTheory.smooth_models_iso_over_fg_subalgebra k V M.T₀ N.T₀ _ (M.a₀ ≫ M.p₀) (N.a₀ ≫ N.p₀) _ M.τ N.τ
     inferInstance inferInstance inferInstance inferInstance inferInstance inferInstance
     (M.hτ.paste_vert M.hφ) hN
   have w := spMap_algHom_comp R.val
@@ -264,7 +264,7 @@ theorem hasModel_of_two {X W : Scheme.{0}} (q : X ⟶ Sp V) [IsSeparated q] (u :
     ‹_›, inferInstance, isPullback_lift hφ' _ _ (spMap_algHom_comp R'.val)⟩
 
 theorem hasModel_of_isAffine {X : Scheme.{0}} (q : X ⟶ Sp V) [IsAffine X] [Smooth q] : HasModel q := by
-  obtain ⟨R, _, f, X₀, p₀, φ, h, _, _, hφ⟩ := GlobalTheory.T.exists_finiteType_model_of_smooth_affine' V X q ‹_› ‹_›
+  obtain ⟨R, _, f, X₀, p₀, φ, h, _, _, hφ⟩ := _root_.GlobalTheory.exists_finiteType_model_of_smooth_affine V X q ‹_› ‹_›
   exact ⟨R, _, f, X₀, p₀, φ, h, ‹_›, inferInstance, inferInstance, hφ⟩
 
 theorem hasModel {X : Scheme.{0}} (q : X ⟶ Sp V) [Smooth q] [IsSeparated q] [QuasiCompact q] : HasModel q := by
@@ -295,7 +295,7 @@ theorem smooth_grpScheme_descends_to_fg_subring : ∀ (V : Type) [CommRing V] (A
   intro V _ A _ _ F h₁ h₂ h₃
   obtain ⟨k, _, f, X₀, p₀, φ, hk, g₁, g₂, g₃, hφ⟩ := SpreadGroup.hasModel A.hom
   letI := f.toAlgebra
-  obtain ⟨R, A₀, i₁, i₂, ψ, hF, hR, s₁, s₂, s₃, hψ⟩ := GlobalTheory.T.exists_fg_subalgebra_grpObj_model k V A X₀ p₀ φ F g₁ g₂ g₃ hφ
+  obtain ⟨R, A₀, i₁, i₂, ψ, hF, hR, s₁, s₂, s₃, hψ⟩ := _root_.GlobalTheory.grpObj_descends_to_fg_subalgebra k V A X₀ p₀ φ F g₁ g₂ g₃ hφ
   exact ⟨R.toSubring, A₀, i₁, i₂, ψ, hF, SpreadGroup.finiteType_of_fg hk hR, s₁, s₂, s₃, hψ⟩
 
 end GlobalTheory

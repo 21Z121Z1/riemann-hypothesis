@@ -1,8 +1,7 @@
 module
 
 public import Mathlib
-public import Formalism.PeriodIntegrals.LocProdFormula
-public import Formalism.PeriodIntegrals.ProdFormulaE
+public import Formalism.PeriodIntegrals.Bundle0014
 
 @[expose] public section
 

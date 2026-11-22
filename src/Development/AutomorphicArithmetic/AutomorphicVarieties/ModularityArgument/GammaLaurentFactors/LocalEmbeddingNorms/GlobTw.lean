@@ -1,7 +1,7 @@
 module
 
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.GammaLaurentFactors.MatchIndOf
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsHcharPrescribedTrivial
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0753
 public import GroundTheory.GlobalFields.SemilocalAlgebras.LocalDegree
 
 @[expose] public section

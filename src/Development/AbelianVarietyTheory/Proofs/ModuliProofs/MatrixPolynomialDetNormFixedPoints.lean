@@ -2,11 +2,11 @@ module
 
 public import Mathlib
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.UniformisationConclusion
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.HeckeKer
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.Bundle0003
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.IsHolPeriods
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.UnifUniqSt
-public import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.TateBasisMatrix
-public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.NormCardQuotientSpan
+public import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.Bundle0027
+public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0003
 
 @[expose] public section
 

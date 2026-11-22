@@ -2,7 +2,7 @@ module
 
 public import Formalism.LocalToGlobal.HilbertRowConditions.RowPin
 public import Formalism.LocalToGlobal.IndefiniteForms.PairingConditionOfInverseMatrixIdentity
-public import Formalism.LocalToGlobal.Divisibility.DivisionCompatibleToSub2Indef2
+public import Formalism.LocalToGlobal.Divisibility.Bundle0004
 public import Formalism.LocalToGlobal.ClassSK
 public import Formalism.SharpRestriction.Divisibility.StatementFT.PeriodPointConditions
 public import Formalism.SharpRestriction.Divisibility.HookProducts.AdmPtTw

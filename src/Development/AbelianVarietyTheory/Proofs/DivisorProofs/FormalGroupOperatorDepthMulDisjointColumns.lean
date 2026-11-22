@@ -2,14 +2,13 @@ module
 
 public import Mathlib
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.WeightedSumBounds.TypicalCurveStructureConstants
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.WeightedSumBounds.RootStatement
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.WeightedSumBounds.FactorialWeightedSumBound
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.WeightedSumBounds.OmBStatement
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.WeightedSumBounds.WtSubOneLe
-public import Development.AbelianVarietyTheory.Definitions.Foundations.IsSatFrame
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FormalGroupExpTwoSidedInverseUnique
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DerivAt0EqSumOfSubset
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FormalGroupDifferentialOperatorDepthEqIInfMonomiStatement
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.WeightedSumBounds.Bundle0005
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.WeightedSumBounds.Bundle0001
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.WeightedSumBounds.Bundle0002
+public import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0003
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0349
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0339
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0853
 
 @[expose] public section
 
@@ -300,7 +299,7 @@ theorem exists_monomial_depth_eq (C : Type) [Field C] [CharZero C] (v : AddValua
   obtain ⟨γ, hγ, hmin⟩ := Set.exists_min_image _
     (fun γ => toE (v (derivAt0 R (monAlong G u γ)))) hfin ⟨0, by simp⟩
   refine ⟨γ, ?_⟩
-  rw [GlobalTheory.T.formalGroupDifferentialOperatorDepth_eq_iInf_monomial C v κ d G ι u R]
+  rw [_root_.GlobalTheory.DepthDegree.depth_eq_iInf_monomial_degree_le C v κ d G ι u R]
   exact le_antisymm (iInf₂_le γ hγ) (le_iInf₂ fun β hβ => hmin β hβ)
 
 end

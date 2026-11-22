@@ -1,6 +1,6 @@
 module
 
-public import Formalism.CharacterColumnKernels.StatementG
+public import Formalism.CharacterColumnKernels.Bundle0001
 public import Formalism.CharacterColumnKernels.StatementX
 
 @[expose] public section

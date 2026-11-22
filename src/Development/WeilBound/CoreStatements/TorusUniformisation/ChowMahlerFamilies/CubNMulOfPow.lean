@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.WeilBound.CoreStatements.HodgeTatePoints.WeilfunCore
+public import Development.WeilBound.CoreStatements.HodgeTatePoints.Bundle0053
 
 @[expose] public section
 

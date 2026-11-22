@@ -2,11 +2,11 @@ module
 
 public import Mathlib
 public import CompanionTheory.SpectralGeometry.CountingDefinitions.AdelicEulerProducts.CountData
-public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.FiniteAdeleTopologyStatement
-public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.StandardAdelicCharacterStatement
-public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.AdelicHaarMeasureScalingStatement
-public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.AnnihilatorOfAnnihilatorLeStatement
-public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.StabilizerVolume.LocDensHI
+public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.Bundle0045
+public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.Bundle0049
+public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.AdelicHaarMeasureScaling
+public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.AnnihilatorOfAnnihilatorLe
+public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.StabilizerVolume.Bundle0025
 
 @[expose] public section
 
@@ -173,7 +173,7 @@ theorem algebraMap_mem_MG_iff (hψ : IsStdChar F ψ) {b : F} :
     rw [mul_comm]
 
 theorem MG_eq (hψ : IsStdChar F ψ) : MG ψ = (dinv F).map (fr F) ⊔ ohG F := by
-  obtain ⟨-, -, -, -, hop, hden, -⟩ := GlobalTheory.T.mem_Oh_iff_and_nat_mul_properties F
+  obtain ⟨-, -, -, -, hop, hden, -⟩ := _root_.GlobalTheory.CompanionTheory.SW.Core.AfTop.finiteAdele_topology F
   apply le_antisymm
   · intro x hx
     have hopen : IsOpen {y : A F | y - x ∈ Oh F} :=
@@ -195,7 +195,7 @@ theorem MG_eq (hψ : IsStdChar F ψ) : MG ψ = (dinv F).map (fr F) ⊔ ohG F := 
     exact (algebraMap_mem_MG_iff hψ).2 hb
 
 theorem comap_ohG : (ohG F).comap (fr F) = oG F := by
-  obtain ⟨-, -, -, -, -, -, hint, -⟩ := GlobalTheory.T.mem_Oh_iff_and_nat_mul_properties F
+  obtain ⟨-, -, -, -, -, -, hint, -⟩ := _root_.GlobalTheory.CompanionTheory.SW.Core.AfTop.finiteAdele_topology F
   ext b
   rw [mem_oG, ← hint b]
   rfl
@@ -206,7 +206,7 @@ theorem relIndex_MG (hψ : IsStdChar F ψ) : (ohG F).relIndex (MG ψ) = (discr F
 
 theorem perp_MG_subset (hψ : IsStdChar F ψ) :
     perp (fun x y => ψ (x * y)) (MG ψ : Set (A F)) ⊆ Oh F := by
-  obtain ⟨-, -, -, -, -, -, hint, -⟩ := GlobalTheory.T.mem_Oh_iff_and_nat_mul_properties F
+  obtain ⟨-, -, -, -, -, -, hint, -⟩ := _root_.GlobalTheory.CompanionTheory.SW.Core.AfTop.finiteAdele_topology F
   intro y hy
   have hyM : y ∈ MG ψ := fun z hz => hy z (ohG_le_MG hψ hz)
   rw [MG_eq hψ] at hyM
@@ -311,7 +311,7 @@ theorem lat_all (hψ : IsStdChar F ψ) (lf : Measure (A F)) (hlf : lf.IsAddHaarM
         (lat c : Set (A F)) ∧
       (ENNReal.ofReal (kap F) • lf) (lat c : Set (A F)) *
         (ENNReal.ofReal (kap F) • lf) (perp (fun x y => ψ (x * y)) (lat c : Set (A F))) = 1 := by
-  obtain ⟨hlc, hsc, ht2, hcpt, hop, -⟩ := GlobalTheory.T.mem_Oh_iff_and_nat_mul_properties F
+  obtain ⟨hlc, hsc, ht2, hcpt, hop, -⟩ := _root_.GlobalTheory.CompanionTheory.SW.Core.AfTop.finiteAdele_topology F
   have hne : (ohG F).relIndex (MG ψ) ≠ 0 := by
     rw [relIndex_MG hψ]
     exact Int.natAbs_ne_zero.2 (discr_ne_zero F)
@@ -324,7 +324,7 @@ theorem lat_all (hψ : IsStdChar F ψ) (lf : Measure (A F)) (hlf : lf.IsAddHaarM
     have h1' : lf (ohG F : Set (A F)) = 1 := h1
     rw [h1', mul_one]
   have hci : c⁻¹ ≠ 0 := inv_ne_zero hc
-  have hs := (GlobalTheory.T.adelic_haar_measure_scaling F lf hlf h1).1
+  have hs := (_root_.GlobalTheory.CompanionTheory.SW.Core.Scale.lf_scale F lf hlf h1).1
   refine ⟨?_, ?_, ?_, ?_, perp_perp_lat hψ hc, ?_⟩
   · rw [coe_lat]
     exact hcpt.image (sc c hc).continuous
@@ -362,7 +362,7 @@ theorem finiteAdeles_selfDual : ∀ (F : Type) [Field F] [NumberField F] [Measur
     ∀ ψ : AddChar (A F) ℂ, IsStdChar F ψ →
       NADual (A F) (fun x y => ψ (x * y)) (ENNReal.ofReal (kap F) • lf) := by
   intro F _ _ _ _ lf hlf h1 ψ hψ
-  obtain ⟨hlc, hsc, ht2, hcpt, hop, -, -, hsm, hbd, -⟩ := GlobalTheory.T.mem_Oh_iff_and_nat_mul_properties F
+  obtain ⟨hlc, hsc, ht2, hcpt, hop, -, -, hsm, hbd, -⟩ := _root_.GlobalTheory.CompanionTheory.SW.Core.AfTop.finiteAdele_topology F
   have hnorm := ((GlobalTheory.T.standard_adelic_character F).2 ψ hψ).1
   have hμ : (ENNReal.ofReal (kap F) • lf).IsAddHaarMeasure :=
     Measure.IsAddHaarMeasure.smul lf (by simpa using kap_pos) ENNReal.ofReal_ne_top
@@ -395,7 +395,7 @@ theorem finiteAdeles_selfDual : ∀ (F : Type) [Field F] [NumberField F] [Measur
     obtain ⟨N₂, hN₂, k₂⟩ := hbd _ hLc
     have a := hl (hNF hN₁)
     have b := hl (inv_ne_zero (hNF hN₂))
-    refine GlobalTheory.T.annihilator_of_annihilator_le (A F) (fun x y => ψ (x * y)) (ENNReal.ofReal (kap F) • lf) hμ hsymm
+    refine _root_.GlobalTheory.CompanionTheory.SW.CofinalDual.selfDual_of_between (A F) (fun x y => ψ (x * y)) (ENNReal.ofReal (kap F) • lf) hμ hsymm
       (fun x y => hnorm _) hadd (lat (N₁ : F)) L (lat (N₂ : F)⁻¹) ?_ ?_ a.2.1 b.1 a.2.2.1 b.2.2.2.1
       a.2.2.2.2.1 b.2.2.2.2.1 a.2.2.2.2.2 b.2.2.2.2.2
     · rintro _ ⟨z, hz, rfl⟩

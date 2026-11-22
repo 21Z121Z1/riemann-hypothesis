@@ -1,8 +1,8 @@
 module
 
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.FrobeniusSmoothVectors.Integral
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.FrobeniusSmoothVectors.Imports
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.SqrtOneAdd
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.FrobeniusSmoothVectors.Bundle0002
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.Bundle0005
 
 @[expose] public section
 

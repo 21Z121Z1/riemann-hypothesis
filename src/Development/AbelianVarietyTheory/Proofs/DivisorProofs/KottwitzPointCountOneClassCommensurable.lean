@@ -2,8 +2,8 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsRootSelectionUnitaryRankOne
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RelIndexNeZeroOpenCompact
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.VolEqIdxRatio
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1191
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1171
 
 @[expose] public section
 

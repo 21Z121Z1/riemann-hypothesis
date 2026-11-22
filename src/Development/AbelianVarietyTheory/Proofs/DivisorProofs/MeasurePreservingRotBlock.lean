@@ -2,11 +2,11 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.Divisors.AevalEqZeroOfMemConeIdeal
-public import ReciprocityTheory.SemistableReduction.TorusL2CauchyInequality
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LinSubstLinSubst
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GaussAbsProdLeOne
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LogGaussAbsSupportFinite
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsMultiHomogeneousProd
+public import ReciprocityTheory.SemistableReduction.Bundle0025
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0889
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1243
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1248
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1273
 
 @[expose] public section
 

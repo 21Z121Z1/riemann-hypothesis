@@ -1,7 +1,7 @@
 module
 
 public import Formalism.ZeroFreeRegion.SmallHeightLogDeriv
-public import Formalism.ZetaNonvanishing.MellinSgen
+public import Formalism.ZetaNonvanishing.Bundle0002
 
 @[expose] public section
 

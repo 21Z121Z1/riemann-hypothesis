@@ -1,10 +1,9 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Foundations.HTPresNuOfPolys
-public import Development.AbelianVarietyTheory.Statements.CuspidalUnitaryTwists.ZetaUr
-public import Development.AbelianVarietyTheory.Definitions.Foundations.IsLocallyConstantCycMod
-public import Development.AbelianVarietyTheory.Definitions.Foundations.HtCoLOfEq
+public import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0023
+public import Development.AbelianVarietyTheory.Statements.CuspidalUnitaryTwists.Bundle0001
+public import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0020
 public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.UniqTrue
 public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.RecipConj
 

@@ -1,7 +1,7 @@
 module
 
 public import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.PAdicWittLattices.TransCancel
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsIntIntCast
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle3063
 
 @[expose] public section
 

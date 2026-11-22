@@ -3,8 +3,8 @@ module
 public import Mathlib
 public import Development.AutomorphicArithmetic.Foundations.Convolution.IntegrableConvolution.TensFactor
 public import Development.AutomorphicArithmetic.Foundations.Convolution.IntegrableConvolution.EigBasic
-public import Development.AutomorphicArithmetic.Foundations.Convolution.ConvolutionKernels.KernelTransforms.LocEmb
-public import GroundTheory.AutomorphicForms.CuspidalDiscreteness.FixedOpen
+public import Development.AutomorphicArithmetic.Foundations.Convolution.ConvolutionKernels.KernelTransforms.Bundle0002
+public import GroundTheory.AutomorphicForms.CuspidalDiscreteness.Bundle0002
 
 @[expose] public section
 

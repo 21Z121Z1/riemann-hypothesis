@@ -2,9 +2,9 @@ module
 
 public import Mathlib
 public import ReciprocityTheory.AnalyticForms.PlurisubharmonicFunctions.MdiscSt
-public import GroundTheory.HeightsAndTheta.Heights.HeightKernels.StatementsChartCutoffEnergy
+public import GroundTheory.HeightsAndTheta.Heights.HeightKernels.Bundle0012
 public import GroundTheory.HeightsAndTheta.Heights.HeightKernels.PChartHessCompare
-public import GroundTheory.HeightsAndTheta.Heights.HeightKernels.PHermFormCompare
+public import GroundTheory.HeightsAndTheta.Heights.HeightKernels.Bundle0004
 
 @[expose] public section
 

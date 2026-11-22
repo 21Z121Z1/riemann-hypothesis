@@ -1,11 +1,11 @@
 module
 
 public import Mathlib
-public import GroundTheory.HeightsAndTheta.Heights.Intersections.StSemilocRankFrac
-public import GroundTheory.HeightsAndTheta.Heights.Intersections.StatementsSemilocFinite
-public import GroundTheory.HeightsAndTheta.Heights.Intersections.StRankFracDegree
-public import GroundTheory.HeightsAndTheta.Heights.Intersections.StSemilocChartRatio
-public import GroundTheory.HeightsAndTheta.Heights.Intersections.AvoidRing
+public import GroundTheory.HeightsAndTheta.Heights.Intersections.Bundle0047
+public import GroundTheory.HeightsAndTheta.Heights.Intersections.Bundle0039
+public import GroundTheory.HeightsAndTheta.Heights.Intersections.Bundle0001
+public import GroundTheory.HeightsAndTheta.Heights.Intersections.Bundle0049
+public import GroundTheory.HeightsAndTheta.Heights.Intersections.Bundle0004
 
 @[expose] public section
 

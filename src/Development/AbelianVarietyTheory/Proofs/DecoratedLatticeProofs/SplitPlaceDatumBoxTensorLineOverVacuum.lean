@@ -1,13 +1,13 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.LatIndLastKerRow
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ExtendByZeroTargetTensorRowProduct
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0222
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0232
 public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SplitPlaceDatumCarriedBackToBaseVacuum
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ExistsNsmulHalf
-public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.ScaledFiniteMatrixMemLattice
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.InfPartOneSubEInfSmul
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.NsmulProjectionXColumnsMemSelfDualLattice
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0299
+public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.Bundle0063
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0119
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0582
 
 @[expose] public section
 

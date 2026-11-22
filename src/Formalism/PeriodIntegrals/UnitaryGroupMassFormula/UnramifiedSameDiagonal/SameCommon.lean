@@ -1,6 +1,6 @@
 module
 
-public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.CrossDiagonalMatching.Common
+public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.CrossDiagonalMatching.Bundle0001
 public import Formalism.LocalToGlobal.GlobalTheory.UnramifiedDiagonal.DiaFun
 
 @[expose] public section

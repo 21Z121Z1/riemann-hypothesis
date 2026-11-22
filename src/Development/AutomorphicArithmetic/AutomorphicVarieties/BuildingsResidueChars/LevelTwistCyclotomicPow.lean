@@ -1,7 +1,7 @@
 module
 
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.Classifies
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.GaloisHodgeOfCuspidal
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0811
 public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.ToZModPowKummerEqIff
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.BuildingsResidueChars.IsCrysAtCyclotomicZpowRestrictDecompositionGroup
 

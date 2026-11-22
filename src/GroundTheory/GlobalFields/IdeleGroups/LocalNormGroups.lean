@@ -1,10 +1,10 @@
 module
 
 public import Mathlib
-public import GroundTheory.GlobalFields.IdeleGroups.LocalNorms
+public import GroundTheory.GlobalFields.IdeleGroups.Bundle0003
 public import GroundTheory.GlobalFields.KummerTheory.Splitting
 public import GroundTheory.LocalFields.ExistsUnitFiltrationUnitsLeRangeNormUnits
-public import GroundTheory.LocalFields.UnramifiedNorms
+public import GroundTheory.LocalFields.Bundle0008
 public import GroundTheory.GlobalFields.CompletionAtPlace.Integers
 
 @[expose] public section

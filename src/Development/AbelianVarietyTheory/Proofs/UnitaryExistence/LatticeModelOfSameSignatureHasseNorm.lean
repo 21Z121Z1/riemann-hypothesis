@@ -3,19 +3,19 @@ module
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.ExistenceOfLattices.UnivFrame
 public import Development.AbelianVarietyTheory.Definitions.ExistenceOfLattices.NormConst
-public import Formalism.LocalToGlobal.ProjectiveLattices.CuspFree
-public import Formalism.LocalToGlobal.ProjectiveLattices.RdOrbIntOfLatZ
-public import Formalism.LocalToGlobal.ProjectiveLattices.AllTest
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.FundamentalDomains.FundamentalDomainPointBound
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0011
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0007
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0010
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.FundamentalDomains.Bundle0003
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.SecBaseChangeAnySt
 public import Development.AbelianVarietyTheory.PublishedTheorems.Landherr₂.ExistsNormTensor
 public import Development.AbelianVarietyTheory.Statements.HyperbolicHypotheses.HypothesesInhabitedHyperbolic
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.FinrankEqOfInjectiveOfSpan
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.HermitianFormsSameSignatureSameSpace
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.LandherrStOfHasseNormSt
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.PrincipalLevelGroupFiniteIndexUnitaryStabiliserStatement
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.PrincipalGroupActsFreelyOnFlagsStatement
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.TransvectionMemPrincipalCongruenceGroupStatement
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0016
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0021
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0029
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0030
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0048
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0031
 
 @[expose] public section
 
@@ -72,8 +72,8 @@ theorem latModel_of_same_signature : GlobalTheory.Published.HasseNormSt → ∀ 
   obtain ⟨φ0, h0⟩ := GlobalTheory.model_in_same_space (GlobalTheory.LocalQuad.landherrSt_of_hasseNormSt hN) hN
     E H Dw Di r (-ξ₀) Gm φ hp hq hξ' h
   refine ⟨φ0, h0.1, h0.2.2.2.2, ?_, exists_den_herm_model E H Di r (-ξ₀) Gm φ0 hξ' h0,
-    GlobalTheory.T.principalLevelGroup_finiteIndex_unitaryStabiliser E H l Di r ξ₀ Gm φ0 hξ h0, GlobalTheory.T.principalGroup_acts_freely_on_flags E H l Di r ξ₀ Gm φ0 hξ h0 Ψ Dw.q hΨ,
-    GlobalTheory.T.transvection_mem_principalCongruenceGroup E H l Di r ξ₀ Gm φ0 hξ h0⟩
+    _root_.GlobalTheory.FrameUnif.princ_finiteIndex E H l Di r ξ₀ Gm φ0 hξ h0, _root_.GlobalTheory.PrincFree.princ_free E H l Di r ξ₀ Gm φ0 hξ h0 Ψ Dw.q hΨ,
+    _root_.GlobalTheory.PrincTransv.transv_mem_princ E H l Di r ξ₀ Gm φ0 hξ h0⟩
   rw [LinearMap.coe_range]; exact h0.2.1
 
 end GlobalTheory.FrameUnif

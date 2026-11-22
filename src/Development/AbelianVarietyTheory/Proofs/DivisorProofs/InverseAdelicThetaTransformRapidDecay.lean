@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TwoMulInvOf
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntegrandPeriodic
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0787
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0794
 
 @[expose] public section
 

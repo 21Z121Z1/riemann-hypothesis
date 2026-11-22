@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.BelowFiniteNonempty
+public import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.Bundle0004
 public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.StandardRankOneLatticeOfLocal
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.FiniteDivLatticeQuotient
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0056
 
 @[expose] public section
 

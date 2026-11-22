@@ -1,12 +1,11 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RosatiFor
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.SabComp
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdjugateGramSymm
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TraceCompPosOfAdjoint
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntegralCasimirElementCentralStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntegralCasimirElementMulPosStatement
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2111
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.Bundle0006
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0124
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0416
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0242
 
 @[expose] public section
 
@@ -264,7 +263,7 @@ theorem exists_W_datum (D : Datum p) : ∃ (r : ℕ) (x : Module.Basis (Fin r) �
         have hz : ∀ y : D.La, (D.star x).unop • y = 0 := fun y => hinj _ (by
           have := LinearMap.congr_fun h0 ((1 : ℝ) ⊗ₜ y)
           rwa [hA, LinearMap.zero_apply] at this)
-        have h1 := GlobalTheory.T.harrisTaylor_order_faithful_lattice p D _ hz
+        have h1 := _root_.GlobalTheory.HTFaith.faithful p D _ hz
         rw [← D.star_star x, h1]
         simp
       have htr := trace_comp_pos_of_adjoint (D.EF.baseChange ℝ ∘ₗ J)

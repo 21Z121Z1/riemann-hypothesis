@@ -1,9 +1,9 @@
 module
 
-public import Development.WeilBound.RepresentationTheoryGL.LimitMultiplicityWeights.RegularClassIntegrals.Variation
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AutomorphicConstantTermParabolic
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsAutLaurentCoeffSubConst
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RealLineContinuous
+public import Development.WeilBound.RepresentationTheoryGL.LimitMultiplicityWeights.RegularClassIntegrals.Bundle0003
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1412
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1394
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1355
 
 @[expose] public section
 

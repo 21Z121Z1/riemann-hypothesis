@@ -1,6 +1,6 @@
 module
 
-public import Development.WeilBound.ThetaLifts.LatticeBasics.OffOpenAlt
+public import Development.WeilBound.ThetaLifts.LatticeBasics.Bundle0007
 public import Development.WeilBound.ThetaLifts.LatticeBasics.UnfoldB
 
 @[expose] public section

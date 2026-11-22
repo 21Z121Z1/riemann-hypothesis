@@ -1,8 +1,8 @@
 module
 
-public import Formalism.GaussJetBounds.GaussJetProofs.LemmaRA
+public import Formalism.GaussJetBounds.GaussJetProofs.Bundle0004
 public import Formalism.GaussJetBounds.GaussJetProofs.TheoremAOneMonomialLogLoss
-public import Formalism.GaussJetBounds.GaussJetProofs.MinorProductSupportTop
+public import Formalism.GaussJetBounds.GaussJetProofs.Bundle0001
 
 @[expose] public section
 

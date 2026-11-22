@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import ReciprocityTheory.ClassFieldTheory.LocalClassField.RecDefs
+public import ReciprocityTheory.ClassFieldTheory.LocalClassField.Bundle0005
 public import ReciprocityTheory.ClassFieldTheory.LocalClassField.QZDefs
-public import ReciprocityTheory.ClassFieldTheory.LocalClassField.Brauer
+public import ReciprocityTheory.ClassFieldTheory.LocalClassField.Bundle0015
 
 @[expose] public section
 

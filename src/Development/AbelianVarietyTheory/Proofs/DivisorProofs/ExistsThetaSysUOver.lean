@@ -1,11 +1,11 @@
 module
 
-public import Development.AbelianVarietyTheory.Definitions.Divisors.SpecializesGenericImage
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0066
 public import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsMonoFamNontrivial
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsNormalModelNormalisationDedekind
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsSymplecticLevelAfterFiniteExtensionBase
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsThetaSystemSpreadOfLevelFractionField
-public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsSymplecticLevelBaseChangePolarisedAbelian
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2069
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2359
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2274
+public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.Bundle0104
 
 @[expose] public section
 

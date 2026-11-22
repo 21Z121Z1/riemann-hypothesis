@@ -1,6 +1,6 @@
 module
 
-public import Formalism.LocalToGlobal.CharacterGerms.ConstantZeroRestrictPoints
+public import Formalism.LocalToGlobal.CharacterGerms.Bundle0033
 
 @[expose] public section
 

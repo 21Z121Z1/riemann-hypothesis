@@ -1,11 +1,11 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.KerInfMemLocSpan
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0835
 public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.StrongMultiplicityOne
 public import GroundTheory.AutomorphicForms.MultiplicityOne.Injective
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SelfMemCell
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsCompactOpenSubgroupSubsetNhdsOne
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0864
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1238
 
 @[expose] public section
 

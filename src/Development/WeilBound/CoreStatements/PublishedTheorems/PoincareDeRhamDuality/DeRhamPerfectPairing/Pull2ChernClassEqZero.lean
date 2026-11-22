@@ -2,9 +2,9 @@ module
 
 public import Mathlib
 public import Development.WeilBound.CoreStatements.PublishedTheorems.PoincareDeRhamDuality.DeRhamPerfectPairing.H1OnPointsEqZeroOfIsIso
-public import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.RestrictTrivEqZero
-public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.IsAbelianSchemeOfIsGrpPullback
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.SabPull
+public import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.Bundle0033
+public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0099
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.Bundle0007
 
 @[expose] public section
 

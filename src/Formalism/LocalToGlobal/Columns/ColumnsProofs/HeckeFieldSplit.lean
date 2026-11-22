@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Formalism.LocalToGlobal.Columns.ColumnsProofs.HFSCoef
-public import Formalism.LocalToGlobal.Columns.PathCountSymmetricHolds
+public import Formalism.LocalToGlobal.Columns.Bundle0009
 public import Formalism.LocalToGlobal.Divisibility.LiftLatInst
 
 @[expose] public section

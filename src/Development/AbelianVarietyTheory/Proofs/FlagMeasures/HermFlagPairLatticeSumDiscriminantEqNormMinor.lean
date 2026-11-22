@@ -4,11 +4,11 @@ public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.FlagPairDefinitePartLattice
 public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.ChartGen
 public import Development.AbelianVarietyTheory.PublishedTheorems.DiscreteSeriesUnitary₂.MaxMass
-public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.NormalFormDualOrthogonalLast
+public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.Bundle0004
 public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.LeOfLatMod
 public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsStarStableIdealAbsorbingMinors
 public import Development.AbelianVarietyTheory.Definitions.ThetaMetrics.ExistsSmulMemOfMemSpanLattice
-public import ReciprocityTheory.SemistableReduction.SemiDegCA
+public import ReciprocityTheory.SemistableReduction.Bundle0003
 
 @[expose] public section
 

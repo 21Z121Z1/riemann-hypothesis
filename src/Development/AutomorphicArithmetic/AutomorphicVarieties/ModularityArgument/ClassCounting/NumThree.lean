@@ -1,7 +1,7 @@
 module
 
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.ClassCounting.LemmaKOfSteps
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.GeneratorCountTuples.NumGens
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.GeneratorCountTuples.Bundle0002
 
 @[expose] public section
 

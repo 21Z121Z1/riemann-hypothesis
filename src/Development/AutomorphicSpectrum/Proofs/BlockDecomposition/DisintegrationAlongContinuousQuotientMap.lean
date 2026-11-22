@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IsSplitK
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0519
 
 @[expose] public section
 

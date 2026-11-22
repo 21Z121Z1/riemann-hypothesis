@@ -3,7 +3,7 @@ module
 public import Mathlib
 public import GroundTheory.AutomorphicForms.CuspidalProjection.Global
 public import GroundTheory.AutomorphicForms.TraceClass
-public import GroundTheory.AutomorphicForms.TraceFormulaConvolution
+public import GroundTheory.AutomorphicForms.Bundle0015
 
 @[expose] public section
 

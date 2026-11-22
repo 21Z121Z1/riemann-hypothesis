@@ -1,7 +1,7 @@
 module
 
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.WaveLocalPositiveCompactSupport
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.LiftLocalBuiltPlaces
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0244
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0224
 
 @[expose] public section
 

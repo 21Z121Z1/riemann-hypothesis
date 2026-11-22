@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.EtaleCohomology.EtaleSheaves.EtaleBaseChangeFractionFieldIndEtaleOverPolynomi
+public import Development.EtaleCohomology.EtaleSheaves.Bundle0005
 
 @[expose] public section
 

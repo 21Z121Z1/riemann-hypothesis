@@ -3,7 +3,7 @@ module
 public import Mathlib
 public import Formalism.SharpRestriction.GlobalSchurBounds.GL3Columns
 public import Formalism.LocalToGlobal.KernelLattices.FirstKernelLawReading
-public import Formalism.LocalRingCardinality.SpanPowerMembership.EntPlNonempty
+public import Formalism.LocalRingCardinality.SpanPowerMembership.Bundle0007
 
 @[expose] public section
 

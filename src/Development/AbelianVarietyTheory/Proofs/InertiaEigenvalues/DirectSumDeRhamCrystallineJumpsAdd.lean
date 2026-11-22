@@ -4,10 +4,10 @@ public import Mathlib
 public import Formalism.LocalRingCardinality.AdicCompletionLocal.LocTied
 public import Formalism.SharpRestriction.LevelLetterCocycles.LocalSituation
 public import Formalism.SharpRestriction.LevelLetterCocycles.LocCoh
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.LinearIndepOnOfInvariant
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.MemMaxUnramifiedOfCrystallineRatio
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.RatioInvariantInK0
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ConcretePeriodDeRhamModuleFinrankLe
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0240
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0281
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0310
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0246
 
 @[expose] public section
 

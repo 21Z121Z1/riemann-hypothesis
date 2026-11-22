@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import GroundTheory.HeightsAndTheta.Heights.HeightKernels.StatementsDualStackedExcChartParts
-public import GroundTheory.HeightsAndTheta.Heights.HeightKernels.PDualStackedExcChart
+public import GroundTheory.HeightsAndTheta.Heights.HeightKernels.Bundle0041
+public import GroundTheory.HeightsAndTheta.Heights.HeightKernels.Bundle0049
 public import GroundTheory.HeightsAndTheta.Heights.HeightKernels.PDualStackedExcGeoFirst
 
 @[expose] public section

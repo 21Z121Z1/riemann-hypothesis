@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.DetCharacterMemPrincipalCongruenceFixedVectors
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.MemChainVecsDet
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.LabelEqOfSuppAdds
+public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0013
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0198
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0294
 
 @[expose] public section
 

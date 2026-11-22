@@ -1,13 +1,10 @@
 module
 
-public import Formalism.SharpRestriction.GrowthBounds.HermitianTensor.TheoremIOfTwoLetterClausesContraction
+public import Formalism.SharpRestriction.GrowthBounds.HermitianTensor.Bundle0008
 public import Formalism.SharpRestriction.GrowthBounds.HermitianTensor.TwoLetterLatticeGaussInverse
-public import Formalism.SharpRestriction.GrowthBounds.HermitianTensor.ContractionOfPairingLemmas
-public import Formalism.SharpRestriction.GrowthBounds.HermitianTensor.SubCoeffP
-public import Formalism.SharpRestriction.GrowthBounds.HermitianTensor.ImportsAlt
-public import Formalism.SharpRestriction.GrowthBounds.HermitianTensor.SubYDPsiMonomial
-public import Formalism.SharpRestriction.GrowthBounds.HermitianTensor.TopLinePOf
-public import Formalism.SharpRestriction.GrowthBounds.HermitianTensor.DetYNeZero
+public import Formalism.SharpRestriction.GrowthBounds.HermitianTensor.Bundle0010
+public import Formalism.SharpRestriction.GrowthBounds.HermitianTensor.Bundle0011
+public import Formalism.SharpRestriction.GrowthBounds.HermitianTensor.Bundle0009
 public import Formalism.SharpRestriction.GrowthBounds.HermitianTensor.DetFactsP
 
 @[expose] public section

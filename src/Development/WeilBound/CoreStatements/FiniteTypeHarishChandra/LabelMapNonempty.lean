@@ -1,10 +1,12 @@
 module
 
 public import Development.WeilBound.CoreStatements.FiniteTypeHarishChandra.IntertwiningIsomorphisms.IsoIffIntertwiningHolds
-public import Formalism.SharpRestriction.LevelLetterCocycles.FourthHypothesisOfLifting
-public import Formalism.LocalToGlobal.NormalizedHeckeFactors.GlobalDatumRegularityOfTypesCompatibility
+public import Formalism.SharpRestriction.LevelLetterCocycles.Bundle0011
+public import Formalism.LocalToGlobal.NormalizedHeckeFactors.Bundle0004
 public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.GreenLabelCharpoly.GaloisClause
-public import Development.AbelianVarietyTheory.Proofs.CharacterTheory.RegularIffNatDegreeAndExistsEllipticGLStatement
+public import Mathlib
+public import Development.AbelianVarietyTheory.Proofs.CharacterTheory.Bundle0011
+public import Development.AbelianVarietyTheory.Definitions.CommutativeAlgebra.Bundle0001
 
 @[expose] public section
 
@@ -38,7 +40,7 @@ theorem exists_label (C : LabelConv K) {d : ℕ} (hd : 1 ≤ d) (τ : FDRep ℂ 
     exact zero_ne_one hx1
   have hint : IsIntegral K x₀ := Algebra.IsIntegral.isIntegral x₀
   have hdeg : (minpoly K x₀).natDegree = d := by
-    refine ((GlobalTheory.T.regular_iff_natDegree_and_exists_elliptic_GL K d hd x₀ (by
+    refine ((_root_.GlobalTheory.CuspGL.regular_iff_natDegree_and_exists_elliptic K d hd x₀ (by
       show x₀ ^ (Nat.card K ^ d - 1) = 1
       rw [hcard]; exact hx1)).1).1 fun e he hed hh => hreg e he hed ?_
     rw [← hkx, ← pow_mul, hfin.pow_eq_pow_iff_modEq, C.gen_order d hd] at hh
@@ -52,7 +54,7 @@ theorem exists_label (C : LabelConv K) {d : ℕ} (hd : 1 ≤ d) (τ : FDRep ℂ 
     fun w hw => by rw [← hdeg]; exact root_pow_eq_one hmon hirr hX hw
   have hminP : ∀ w : AlgebraicClosure K, aeval w (minpoly K x₀) = 0 → minpoly K w = minpoly K x₀ := fun w hw =>
     (minpoly.eq_of_irreducible_of_monic hirr hw hmon).symm
-  have hadd := (GlobalTheory.T.rootPowerSumCharacter_additive_and_X_sub_one_pow K C.ι k).1
+  have hadd := (_root_.GlobalTheory.CuspGL.rootSum_isAdditive_and_pow_X_sub_one K C.ι k).1
   refine ⟨minpoly K x₀, hmon, hirr, hX, by simpa using hdeg, ?_⟩
   intro x hx γ hγ z hz m hm
   simp only [Fintype.card_fin] at hm ⊢
@@ -62,7 +64,7 @@ theorem exists_label (C : LabelConv K) {d : ℕ} (hd : 1 ≤ d) (τ : FDRep ℂ 
     rw [hQ, Matrix.charpoly_natDegree_eq_dim]; simp
   have hz1 : z ^ (Fintype.card K ^ d - 1) = 1 := by
     rw [← hm, ← pow_mul, mul_comm, pow_mul, hg1, one_pow]
-  have hval := GlobalTheory.T.invariantSubspaceMobiusInverseCharpoly_of_irreducible K (Fin d → K) _ hadd
+  have hval := _root_.GlobalTheory.CuspGL.psi_of_irreducible_charpoly K (Fin d → K) _ hadd
     (Matrix.toLin' (γ : Matrix (Fin d) (Fin d) K)) (by rw [Matrix.charpoly_toLin']; exact hγ)
   rw [Matrix.charpoly_toLin'] at hval
   show τ.character γ = _
@@ -126,9 +128,9 @@ theorem iso_of_label (C : LabelConv K) {d : ℕ} (hd : 1 ≤ d) (τ τ' : FDRep 
 
 theorem cuspParam_all (C : LabelConv K) : CuspParam K C := fun d hd =>
   ⟨fun τ hs hc => ⟨(exists_label C hd τ hs hc).elim fun P hP =>
-      ⟨P, hP, fun Q hQ => GlobalTheory.T.cuspidal_label_unique K C _ τ Q P hQ hP⟩,
+      ⟨P, hP, fun Q hQ => _root_.GlobalTheory.CompanionTheory.TyFin.LabelUniq.hasCuspLabel_unique K C _ τ Q P hQ hP⟩,
       GlobalTheory.CompanionTheory.TyFin.finrank_of_simple_cuspidal C.ι C.ι_inj hd τ hs hc⟩,
-    GlobalTheory.T.exists_cuspidal_with_label K C d hd, fun τ τ' P => iso_of_label C hd τ τ' P⟩
+    _root_.GlobalTheory.CompanionTheory.TyFin.CuspLabel.exists_cuspidal_label K C d hd, fun τ τ' P => iso_of_label C hd τ τ' P⟩
 
 end
 

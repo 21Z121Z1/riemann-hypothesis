@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Formalism.RealPlaceAnalysis.StatementC
+public import Formalism.RealPlaceAnalysis.Bundle0003
 public import Formalism.FormalDegreeBessel.StatementDS
-public import Formalism.RealPlaceAnalysis.ThirdArithmeticHolds
+public import Formalism.RealPlaceAnalysis.Bundle0004
 
 @[expose] public section
 

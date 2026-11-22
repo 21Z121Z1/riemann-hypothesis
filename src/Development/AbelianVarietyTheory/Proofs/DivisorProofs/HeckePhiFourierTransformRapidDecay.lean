@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.KFacDifferentiable
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0157
 
 @[expose] public section
 

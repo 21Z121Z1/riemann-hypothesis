@@ -2,9 +2,9 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.LatAtLattice
-public import Formalism.LocalToGlobal.HermitianForms.TiedTwSym
+public import Formalism.LocalToGlobal.HermitianForms.Bundle0007
 public import Formalism.LocalToGlobal.KernelLattices.FirstKernelLawReading
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.FunKilled
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0071
 
 @[expose] public section
 

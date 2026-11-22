@@ -3,20 +3,21 @@ module
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.ModuliSpaces.IsGaloisCover
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.UniformisationConclusion
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.HeckeKer
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.Bundle0003
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.IsHolPeriods
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.UnifUniqSt
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.OneArc
-public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.LineBundleIsoLinCombSymmBiadditiveSubstitution
-public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.SharpRelations
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.Bundle0007
+public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0113
+public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0054
 public import Development.AbelianVarietyTheory.Proofs.HomogeneousIdeals.HomLieEquivScalarTmul
 public import Development.AbelianVarietyTheory.Statements.FundamentalDomains.ExistsIsAddFundamentalDomain
-public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.BiadditiveOfTrivAxes
-public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsKsMatrixStatement
-public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.FinrankSymmCommutantKroneckerLeStatement
-public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ThetaLevelAbelianSchemeConstOverDualNumbersStatement
-public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ThetaLevelPullbackIdCompCancelStatement
-public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsThetaLevelAbelianSchemePullback
+public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0156
+public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0135
+public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0068
+public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0121
+public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0107
+public import Development.AbelianVarietyTheory.Definitions.ModuliSpaces.FiniteHomogeneousInf
+public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0117
 
 @[expose] public section
 
@@ -321,7 +322,7 @@ theorem tmap_constPt (L1 : Out.Laws) (L2 : Out.Laws2)
     (by rw [Category.assoc, e, hφ.1.w])
   have i₁ : io ≫ ψ = φ₀ := hψ.1.lift_fst _ _ _
   have i₂ : io ≫ t'.A.hom = t₀.A.hom ≫ spMap (TrivSqZeroExt.fstHom K K K).toRingHom := hψ.1.lift_snd _ _ _
-  have key := GlobalTheory.T.thetaLevelAbelianScheme_const_over_dualNumbers L1 L2 hT o g k J b w w' K _ _ t' t₀ io ψ₀ hp' (hψ.cancel (hφ.congr e.symm i₁.symm) i₂)
+  have key := _root_.GlobalTheory.ConstTheta.tMap_of_const L1 L2 hT o g k J b w w' K _ _ t' t₀ io ψ₀ hp' (hψ.cancel (hφ.congr e.symm i₁.symm) i₂)
     (by
       refine (GlobalTheory.CechPic.cls_eq_iff t₀.isLB (pull_isLB t'.isLB _)).1 ?_
       rw [(GlobalTheory.CechPic.cls_eq_iff t₀.isLB (pull_isLB t.isLB _)).2 hL, GlobalTheory.CechPic.cls_pull t'.isLB,
@@ -336,7 +337,7 @@ theorem tmap_constPt (L1 : Out.Laws) (L2 : Out.Laws2)
       (by rw [Category.assoc, i₁, ha, Category.assoc, hψa, ← Category.assoc, i₁])
       (by rw [Category.assoc, i₂, ← Category.assoc, Over.w, Category.assoc, Over.w, i₂]))
     hψ₀ (hio io i₁ i₂)
-  have := ((GlobalTheory.T.thetaLevelPullback_id_comp_cancel o g k J b _ _ _ _ _ _ t t₀ t').2 _ _ ⟨φ₀, hφ, hL, hp, ha⟩).1 key
+  have := ((_root_.GlobalTheory.ZM.tmap_id_comp_cancel o g k J b _ _ _ _ _ _ t t₀ t').2 _ _ ⟨φ₀, hφ, hL, hp, ha⟩).1 key
   rwa [← e] at this
 
 theorem main : Out.Laws → Out.Laws2 → (∀ (S : Scheme.{0}) (P : Out.PolAV S) (M : LB P.A.left), M.IsLB → ∃ t : LB.Gen (Theta P.A M), t.IsGen) → ∀ (h g : ℕ) (W : Matrix (Fin 8) (Fin 8) ℤ) (J : Type) (a : J → Matrix (Fin 8) (Fin 8) ℤ) (bas : (Fin (2 * g) → ℤ) ≃ₗ[ℤ] (Fin 8 → (Fin h ⊕ Fin h → ℤ))), IsE8 W → IsSharpBasis W bas → ∀ (w w' : J), (W + W.transpose) * a w = W → (W + W.transpose) * a w' = W.transpose → ∀ (k : ℕ) (o : Type) [CommRing o] (b : TBase o k) (K : Type) [Field K] [IsAlgClosed K] (r : ℕ) (β : o →+* K) (t : TObj g k J b (spMap ((algebraMap K (TrivSqZeroExt K (Fin r → K))).comp β))) (c : SiegPre h k (b.ζ : o) (spMap ((algebraMap K (TrivSqZeroExt K (Fin r → K))).comp β))), c.Principal → IsSharp W a bas t c → (∀ (lam : (Fin r → K) →ₗ[K] K) (t' : TObj g k J b (spMap ((algebraMap K (DualNumber K)).comp β))), TMap t' t (spMap (dirMap lam)) → TMap t' t (constPt (spMap (dirMap lam))) → lam = 0) → r ≤ h * (h + 1) / 2 := by
@@ -370,7 +371,7 @@ theorem main : Out.Laws → Out.Laws2 → (∀ (S : Scheme.{0}) (P : Out.PolAV S
     ((spMap_comp _ _).symm.trans (congrArg spMap (RingHom.ext fun z => by simp)))
   letI := t₀.ab.comm
   obtain ⟨v, f₀, hv, hf₀, hF⟩ := exists_isLieBasis_kronecker (n := 7) hφ pr hpr hinj f hf t₀.dim
-  obtain ⟨Θ, hs, hcomm, hzero⟩ := GlobalTheory.T.exists_ksMatrix_alt L1 L2 hT K r t.pol t₀.pol φ₀ _ v hφ hL₀ hv
+  obtain ⟨Θ, hs, hcomm, hzero⟩ := _root_.GlobalTheory.KSField.exists_ksMatrix L1 L2 hT K r t.pol t₀.pol φ₀ _ v hφ hL₀ hv
   let Θ' := (Matrix.reindexLinearEquiv K K finProdFinEquiv.symm finProdFinEquiv.symm).toLinearMap ∘ₗ Θ
   have hΘ : Function.Injective Θ' := by
     refine (Matrix.reindexLinearEquiv K K finProdFinEquiv.symm finProdFinEquiv.symm).injective.comp
@@ -381,7 +382,7 @@ theorem main : Out.Laws → Out.Laws2 → (∀ (S : Scheme.{0}) (P : Out.PolAV S
     rw [LinearMap.finrank_range_of_inj hΘ]
     simp
   rw [← hr]
-  refine GlobalTheory.T.finrank_symm_commutant_kronecker_le K h (W + W.transpose) (W + W.transpose)⁻¹ _ hsym (Matrix.nonsing_inv_mul _ hdet) ?_
+  refine _root_.GlobalTheory.ZM.finrank_symm_commutant_le K h (W + W.transpose) (W + W.transpose)⁻¹ _ hsym (Matrix.nonsing_inv_mul _ hdet) ?_
   rintro _ ⟨lam, rfl⟩
   refine ⟨(hs lam).submatrix _, fun u u' => ?_⟩
   have key := hcomm _ _ _ _ _ _ (isMonHom_of_matrix pr hpr hinj _ _ (hf _)) (isMonHom_of_matrix pr hpr hinj _ _ (hf _))

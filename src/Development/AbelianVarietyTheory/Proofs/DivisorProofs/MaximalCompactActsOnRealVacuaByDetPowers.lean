@@ -1,25 +1,30 @@
 module
 
 public import Mathlib
-public import Formalism.LocalToGlobal.IndefiniteReal.DatumVec
-public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.ApplyAddInfRat
-public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.MapFinNeg
+public import Formalism.LocalToGlobal.IndefiniteReal.Bundle0016
+public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.Bundle0069
+public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.Bundle0070
 public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.IsSelfDualCLatFrame
-public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.SqNormIntegralFundamentalDomainEqL2NormSq
-public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.RealIdemMulOfReal
+public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.Bundle0068
+public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.Bundle0061
 public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.SelfDualLatticePairingDual
-public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.AddNsmulResidueAssoc
-public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.ExistsNormaliseMeanSquareOfCocompact
-public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.DifferentiableOfChar
-public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.EventuallyFinEqOne
-public import Development.AbelianVarietyTheory.Proofs.HeightProofs.AdelicUnitaryActionAtRealPlace
-public import Development.AbelianVarietyTheory.Proofs.HeightProofs.AdelicUnitaryRealPointsStructureRealPlaces
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ContinuousOnAtTau
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CompletedHomLatticeFinitelyGeneratedStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CompletedHomLatticeMultipleMemOpenLevelStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MemSpanHeisenbergTranslatesOfVacuumStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsBasisAdaptedToCartanInvolutionStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnitaryPQContinuousCharacterEqDetPowProdStatement
+public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.Bundle0059
+public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.Bundle0022
+public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.Bundle0064
+public import Development.AbelianVarietyTheory.Proofs.HeightProofs.Bundle0021
+public import Development.AbelianVarietyTheory.Proofs.HeightProofs.Bundle0033
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0171
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0844
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0024
+public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.Bundle0058
+public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.Bundle0060
+public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.Bundle0067
+public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.ThetaNormSqSumHeisenbergTranslatesDistinctChars
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0233
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0845
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0163
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0023
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0227
 
 @[expose] public section
 
@@ -65,8 +70,8 @@ theorem real_char {θ : InfFam D} (hθ : IsInfFam θ) (V : HSp D) (s : D.what₂
       s τ * k = k * s τ → c (atTau θ V τ k) = ((1 / 2 : ℂ) • (1 + s τ) * k + (1 / 2 : ℂ) • (1 - s τ)).det ^ x *
         ((1 / 2 : ℂ) • (1 - s τ) * k + (1 / 2 : ℂ) • (1 + s τ)).det ^ y := by
     intro τ
-    obtain ⟨p, q, B, B', b1, b2, b3, b4⟩ := GlobalTheory.T.exists_basis_adapted_to_cartan_involution' _ _ _ (hs τ).1 (hs τ).2.1 (hs τ).2.2
-    refine GlobalTheory.T.unitaryPQ_continuous_character_eq_det_pow_prod _ p q _ _ B B' b1 b2 b3 b4 (fun k => c (atTau θ V τ k)) (fun k k' h1 h2 h3 h4 => ?_)
+    obtain ⟨p, q, B, B', b1, b2, b3, b4⟩ := _root_.GlobalTheory.exists_basis_adapted_to_cartan_involution _ _ _ (hs τ).1 (hs τ).2.1 (hs τ).2.2
+    refine _root_.GlobalTheory.UpqChar.char_Upq _ p q _ _ B B' b1 b2 b3 b4 (fun k => c (atTau θ V τ k)) (fun k k' h1 h2 h3 h4 => ?_)
       (fun k h1 h2 => hn _ (hK τ k h1 h2)) ?_
     · rw [← hm _ _ (hK τ k h1 h2) (hK τ k' h3 h4)]
       exact congrArg c (GlobalTheory.PointAtPlaceHom.atTau_mul hθ V τ h1 h3)
@@ -220,7 +225,7 @@ theorem mem_span (kS : S.SigOK) (kT : T.SigOK) (hS : ∀ τ, IsCartanInv (gramAt
   have hθ := h₀.2.inf
   obtain ⟨h1, -, h3⟩ := GlobalTheory.LatVac.latO_selfDual_approx_sign D ψ S T ΛS ΛT hψ dS dT
   have hfin := GlobalTheory.LatFinMod.latO_finite_mod D S T ΛS ΛT dS.1.fg dT.1.fg fun _ => True
-  have hlev := (GlobalTheory.T.completedHomLattice_multiple_mem_open_level D S T ΛS ΛT dS dT (GlobalTheory.T.completedHomLattice_finitelyGenerated D S T ΛS ΛT dS dT)).1
+  have hlev := (_root_.GlobalTheory.LatLevel.level_of_generators D S T ΛS ΛT dS dT (_root_.GlobalTheory.LatFinGen.latO_finitely_generated D S T ΛS ΛT dS dT)).1
   have hinf := fun u => GlobalTheory.SplitScalar.latO_fin (u := u) (S := S) (T := T) (LS := (ΛS : Set (Fin S.rank → D.host.E)))
     (LT := (ΛT : Set (Fin T.rank → D.host.E)))
   let M := realVac hψ hθ fun τ => cplxO (sS τ) (sT τ)
@@ -245,7 +250,7 @@ theorem mem_span (kS : S.SigOK) (kT : T.SigOK) (hS : ∀ τ, IsCartanInv (gramAt
     (fun x y z => by
       rw [← AddChar.map_add_eq_mul, ← GlobalTheory.SplitScalar.symplOH_add_right]; rfl)
     (fun x => by
-      have : symplO S T x x = 0 := (GlobalTheory.T.symplecticAdelicForm_biadditive_alternating_rational D S T).2.2.2.1 x
+      have : symplO S T x x = 0 := (_root_.GlobalTheory.SymplecticOrthogonalSesquilinear.symplO_alt D S T).2.2.2.1 x
       simp only [symplOH, this, mul_zero, AddChar.map_zero_eq_one])
     (fun v => Subtype.ext (GlobalTheory.SplitScalar.heisO_zero ψ S T v))
     (fun x y v => Subtype.ext (GlobalTheory.SplitScalar.heisO_heisO ψ S T x y v))

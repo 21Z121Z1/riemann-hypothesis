@@ -2,9 +2,10 @@ module
 
 public import Mathlib
 public import CompanionTheory.SpectralGeometry.CountingDefinitions.AdelicEulerProducts.HypJ
-public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.RationalTuplesDiscreteCocompactAdelicStatement
-public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.TensorLocallyCompactRingStatement
-public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.AdelesLocallyCompactSecondCountable
+public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.Bundle0054
+public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.Bundle0019
+public import CompanionTheory.SpectralGeometry.CountingDefinitions.AdelicEulerProducts.IsEulerProd
+public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.Bundle0042
 
 @[expose] public section
 
@@ -113,12 +114,12 @@ theorem gram_rational_finite : ∀ (F E : Type) [Field F] [NumberField F] [Field
   · intro Ω hΩ
     obtain ⟨⟨hlc, hsc, ht2⟩, -⟩ := GlobalTheory.CompanionTheory.AdeleTop.adele_top F
     have hcont : Continuous (gramR (AF F) σ J : (Fin 1 → Fin M → AF F ⊗[F] E) → _) :=
-      (GlobalTheory.T.tensor_locally_compact_ring F E σ hcm (AF F)).2.2.2.2.2.2.2.2.2 1 M J
+      (_root_.GlobalTheory.CompanionTheory.SW.TopK.topTens_props F E σ hcm (AF F)).2.2.2.2.2.2.2.2.2 1 M J
     let φ : (Fin 1 → Fin M → AF F ⊗[F] E) → Fin 1 → Fin 1 → AF F ⊗[F] E :=
       fun Y _ _ => gramR (AF F) σ J Y 0 0
     have hφ : Continuous φ :=
       continuous_pi fun _ => continuous_pi fun _ => hcont.matrix_elem 0 0
-    have hfin := (GlobalTheory.T.rational_tuples_discrete_cocompact_adelic F E σ hcm 1 1).2.1 _ (hΩ.image hφ)
+    have hfin := (_root_.GlobalTheory.CompanionTheory.SW.CocW.main F E σ hcm 1 1).2.1 _ (hΩ.image hφ)
     let ι : F → Fin 1 → Fin 1 → E := fun t _ _ => algebraMap F E t
     refine Set.Finite.of_injOn (f := ι) ?_ ?_ hfin
     · rintro t ⟨Y, hY, hYt⟩

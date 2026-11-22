@@ -1,6 +1,6 @@
 module
 
-public import Formalism.LocalRingCardinality.DataBu
+public import Formalism.LocalRingCardinality.Bundle0001
 
 @[expose] public section
 

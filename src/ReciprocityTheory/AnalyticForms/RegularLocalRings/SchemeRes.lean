@@ -1,10 +1,8 @@
 module
 
 public import ReciprocityTheory.AnalyticForms.RegularLocalRings.ExistsSncDataW
-public import ReciprocityTheory.AnalyticForms.RegularLocalRings.WeightedSieveThreeParameter
-public import ReciprocityTheory.AnalyticForms.RegularLocalRings.NormEvalLeOfVarsSubset
-public import ReciprocityTheory.AnalyticForms.RegularLocalRings.WCharts
-public import ReciprocityTheory.AnalyticForms.RegularLocalRings.NeZeroOfSpanEqMaximalIdeal
+public import ReciprocityTheory.AnalyticForms.RegularLocalRings.Bundle0015
+public import ReciprocityTheory.AnalyticForms.RegularLocalRings.Bundle0016
 
 @[expose] public section
 

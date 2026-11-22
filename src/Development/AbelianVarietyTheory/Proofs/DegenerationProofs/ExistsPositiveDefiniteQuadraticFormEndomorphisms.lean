@@ -6,9 +6,9 @@ public import Development.AbelianVarietyTheory.Definitions.AbelianSchemeLaws.Fir
 public import Development.AbelianVarietyTheory.Definitions.Degenerations.OfDerivationFnOn
 public import Development.AbelianVarietyTheory.Definitions.Degenerations.PlOrdSomeOfAssociated
 public import Development.AbelianVarietyTheory.Statements.SemistableTorsion.SemistableFin
-public import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.ForallGeometricallyIntegralOfSmoothOfGeometrical
-public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsProductFormulaPlacesOfFgFieldStatement
-public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsLineBundleHeightProperSchemeStatement
+public import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.Bundle0003
+public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.Bundle0029
+public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsLineBundleHeightProperScheme
 
 @[expose] public section
 
@@ -176,7 +176,7 @@ theorem exists_quadraticForm_end : ∀ (k : Type) [Field k] [IsAlgClosed k] (B :
   have : IsIntegral B.left := GeometricallyIntegral.isIntegral_of_subsingleton B.hom
   obtain ⟨K, _, _, hK, P, hP⟩ := exists_generic B
   obtain ⟨Pl, hPl⟩ := GlobalTheory.T.exists_productFormula_places_of_fg_field k K hK
-  obtain ⟨h, hrel, hpos⟩ := GlobalTheory.T.exists_lineBundle_height_properScheme k K Pl B hpr L hL
+  obtain ⟨h, hrel, hpos⟩ := _root_.GlobalTheory.SS.exists_height k K Pl B hpr L hL
   have hrel' : ∀ (Z : Over (Sp k)), IsProper Z.hom → ∀ (I : Type) [Fintype I] (φ : I → (Z ⟶ B)) (ε : I → ℤ),
       (∃ t : LB.Gen (LB.LinComb L (fun i => (φ i).left) ε), t.IsGen) →
       ∀ z : Over.mk (spMap (algebraMap k K)) ⟶ Z, ∑ i, ε i * h (z ≫ φ i) = 0 := by

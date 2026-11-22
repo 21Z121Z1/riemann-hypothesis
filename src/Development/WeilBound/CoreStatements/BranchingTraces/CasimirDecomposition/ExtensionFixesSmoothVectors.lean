@@ -2,8 +2,8 @@ module
 
 public import Development.WeilBound.CoreStatements.BranchingTraces.CasimirDecomposition.CasApply
 public import Development.WeilBound.CoreStatements.BranchingTraces.HeBranching
-public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.SmoothVectorsComplexDerivedActionCayleyTransport
-public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.DerivedActionExpandMatrixUnitsStatement
+public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0052
+public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0077
 public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.CasimirDiagonalSum
 public import Formalism.SharpRestriction.CuspSpanNormBounds.NonemptyParameterModels.NumericSettingWithGapSatisfiable
 

@@ -2,7 +2,7 @@ module
 
 public import Formalism.LocalToGlobal.AlgebraicTheory.ColBoundOfPaths
 public import Formalism.LocalToGlobal.AlgebraicTheory.AlgebraicTheoryProofs.XiConn
-public import Formalism.LocalToGlobal.AlgebraicTheory.AlgebraicTheoryProofs.EigenFrameDualOf
+public import Formalism.LocalToGlobal.AlgebraicTheory.AlgebraicTheoryProofs.Bundle0001
 public import ReciprocityTheory.EigenFrames.EigenPf
 
 @[expose] public section

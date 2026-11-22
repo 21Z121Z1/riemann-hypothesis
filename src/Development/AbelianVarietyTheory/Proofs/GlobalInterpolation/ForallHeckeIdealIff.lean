@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.LFunctionPositiveConductorFourEight
+public import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.Bundle0002
 public import Development.AbelianVarietyTheory.BlockTheory.GlobalSignature.RayPrincipalIdeals
 
 @[expose] public section

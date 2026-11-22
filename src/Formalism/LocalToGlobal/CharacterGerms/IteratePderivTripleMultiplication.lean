@@ -1,6 +1,6 @@
 module
 
-public import Formalism.LocalToGlobal.CharacterGerms.PderivTripleMultiplicationMaximal
+public import Formalism.LocalToGlobal.CharacterGerms.Bundle0037
 
 @[expose] public section
 

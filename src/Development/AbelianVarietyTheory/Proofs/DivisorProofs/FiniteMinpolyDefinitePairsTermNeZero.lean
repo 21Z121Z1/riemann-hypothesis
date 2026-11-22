@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Statements.PlaceShiftStatements.TraceDefinitePairsEqAutomorphicTrace
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FiniteClassesFixedGammaIrr
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DpairEigenRootNormSq
+public import Development.AbelianVarietyTheory.Statements.PlaceShiftStatements.Bundle0001
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1203
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0944
 
 @[expose] public section
 

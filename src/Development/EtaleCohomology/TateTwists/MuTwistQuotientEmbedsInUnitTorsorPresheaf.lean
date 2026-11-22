@@ -1,6 +1,6 @@
 module
 
-public import Development.EtaleCohomology.TateTwists.ExistsEtaleMonoMuTwistIntoTorsorSheafOfMuQuotientAndPreshe
+public import Development.EtaleCohomology.TateTwists.Bundle0027
 
 @[expose] public section
 

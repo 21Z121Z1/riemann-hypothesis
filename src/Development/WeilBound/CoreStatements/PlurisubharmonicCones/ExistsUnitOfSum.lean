@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.WeilBound.CoreStatements.PlurisubharmonicCones.DeterminantLatticeGradedTensor
+public import Development.WeilBound.CoreStatements.PlurisubharmonicCones.Bundle0010
 public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.SpecializesOfUnits
 
 @[expose] public section

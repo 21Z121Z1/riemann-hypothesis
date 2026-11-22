@@ -1,10 +1,10 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LaurentVarUnit
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LaurentMapIsIntegral
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EtaleCohomologyProdRingProjectionsBijective
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FiniteAlgebraStrictlyHenselianInductionStatement
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0322
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0358
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0375
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0404
 
 @[expose] public section
 

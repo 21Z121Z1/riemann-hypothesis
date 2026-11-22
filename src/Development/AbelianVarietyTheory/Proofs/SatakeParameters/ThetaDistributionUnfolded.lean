@@ -4,10 +4,10 @@ public import Mathlib
 public import Formalism.LocalToGlobal.KernelLattices.FirstKernelLawReading
 public import Formalism.LocalToGlobal.KernelLattices.KernelLocalFactors.ThDistC
 public import Formalism.LocalRingCardinality.RankBoundMonotoneInDimension
-public import Formalism.GradedWeylDivisibility.FockSpaceTableaux.DualWeylPoint
+public import Formalism.GradedWeylDivisibility.FockSpaceTableaux.Bundle0003
 public import Formalism.GradedWeylDivisibility.FockSpaceTableaux.TensorBasis
 public import Formalism.LocalRingCardinality.CoeNeZeroOfNotMem
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ProdFinEqProdCastLE
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0007
 
 @[expose] public section
 

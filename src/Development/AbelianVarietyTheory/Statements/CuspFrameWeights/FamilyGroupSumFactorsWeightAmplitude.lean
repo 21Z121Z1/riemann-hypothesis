@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Formalism.LocalToGlobal.SiegelLatticeTheory.CokernelGLCounts.RankPointCounts.FamDefs
-public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.LocOf
+public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.Bundle0016
 
 @[expose] public section
 

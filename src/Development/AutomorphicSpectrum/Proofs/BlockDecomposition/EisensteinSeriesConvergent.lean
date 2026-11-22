@@ -1,20 +1,17 @@
 module
 
 public import Mathlib
-public import Development.WeilBound.ThetaLifts.LatticeBasics.HypothesesE
-public import Development.WeilBound.ThetaLifts.LatticeBasics.UnfoldC
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.EmbBar
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IntegersBoundedEmbeddingsCountStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.DenominatorBoundByHeightStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.QuadraticIntegralCoefficientsBoundStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SummableHeightPowOfPolynomialCountStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LeftInvertibleExistsNonzeroMinorStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.PluckerMinorsDetermineColumnSpaceStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FinitePlaceMinorHeightBoundStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ArchimedeanMinorHeightBoundStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.StandardCompactEntriesIntegralStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LocalNormFinitePlaceBoundStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LocalNormInfinitePlaceBoundStatement
+public import Development.WeilBound.ThetaLifts.LatticeBasics.Bundle0007
+public import Development.WeilBound.ThetaLifts.LatticeBasics.Bundle0014
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0434
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0466
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0478
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0483
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0472
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0468
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0470
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0476
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0481
 
 @[expose] public section
 
@@ -187,7 +184,7 @@ theorem count (hcm : IsCMExt F E σ) (J : Type) [Fintype J] : ∃ (C : ℝ) (c :
     {u : J → E | (∃ f₀, u f₀ = 1) ∧ (vecHt σ u : ℝ) ≤ T}.Finite ∧
     (Set.ncard {u : J → E | (∃ f₀, u f₀ = 1) ∧ (vecHt σ u : ℝ) ≤ T} : ℝ) ≤ C * T ^ c := by
   classical
-  obtain ⟨C₀, hC₀, hlat⟩ := GlobalTheory.T.integers_bounded_embeddings_count E
+  obtain ⟨C₀, hC₀, hlat⟩ := _root_.GlobalTheory.CompanionTheory.IntegerCount.card_bounded_conjugates_le E
   set Jc := Fintype.card J with hJc
   set d := Module.finrank ℚ E with hd
   refine ⟨C₀ ^ Jc, 2 * Jc + (2 * Jc + 1) * d * Jc, pow_pos hC₀ _, fun T hT => ?_⟩
@@ -444,7 +441,7 @@ theorem godement_sum : ∀ (F E : Type) [Field F] [NumberField F] [Field E] [Num
     obtain ⟨P, hP⟩ := hP
     have hg1 : ((g q).1 : Matrix (Ix n) (Ix n) E) * ((g q)⁻¹).1 = 1 := by rw [← Units.val_mul, mul_inv_cancel, Units.val_one]
     have hb1 : (b.1 : Matrix (Ix n) (Ix n) E) * (b⁻¹).1 = 1 := by rw [← Units.val_mul, mul_inv_cancel, Units.val_one]
-    refine GlobalTheory.T.left_invertible_exists_nonzero_minor E (Ix n) n (pl b (g q)) ((P * ((g q).1 : Matrix (Ix n) (Ix n) E)) * (b.1 : Matrix (Ix n) (Ix n) E)) ?_
+    refine _root_.GlobalTheory.CompanionTheory.GodementH.exists_mnr_ne_zero_of_left_inverse E (Ix n) n (pl b (g q)) ((P * ((g q).1 : Matrix (Ix n) (Ix n) E)) * (b.1 : Matrix (Ix n) (Ix n) E)) ?_
     calc (P * ((g q).1 : Matrix (Ix n) (Ix n) E)) * (b.1 : Matrix (Ix n) (Ix n) E) * pl b (g q)
         = P * ((g q).1 : Matrix (Ix n) (Ix n) E) * ((b.1 : Matrix (Ix n) (Ix n) E) * (b⁻¹).1) * ((g q)⁻¹).1 *
           (diagCols (Fin n) : Matrix (Ix n) (Fin n) E) := by simp only [pl, Matrix.mul_assoc]
@@ -457,7 +454,7 @@ theorem godement_sum : ∀ (F E : Type) [Field F] [NumberField F] [Field E] [Num
   have hu1 : ∀ q, u q (f₀ q) = 1 := fun q => div_self (hf₀ q)
   have hinj : Function.Injective u := by
     intro q q' e
-    obtain ⟨c, hc⟩ := GlobalTheory.T.plucker_minors_determine_column_space E (Ix n) n _ _ _ _ (hf₀ q) (hf₀ q') (fun f => congrFun e f)
+    obtain ⟨c, hc⟩ := _root_.GlobalTheory.CompanionTheory.GodementH.Cramer.main E (Ix n) n _ _ _ _ (hf₀ q) (hf₀ q') (fun f => congrFun e f)
     have hp := isPar_of_pl (hg q) (hg q') hc
     have : (Quotient.mk _ (Quotient.out q') : Cos σ Y) = Quotient.mk _ (Quotient.out q) :=
       cos_eq.2 (Subgroup.subset_closure ⟨_, hp⟩)
@@ -480,7 +477,7 @@ theorem godement_sum : ∀ (F E : Type) [Field F] [NumberField F] [Field E] [Num
     rw [ha.val p t hp k hk]; exact NNReal.coe_nonneg _
   refine ⟨c, fun s' hs' => ?_⟩
   have hs0 : 0 < s' := lt_of_le_of_lt (Nat.cast_nonneg c) hs'
-  have hsum : Summable fun q => h q ^ (-s') := GlobalTheory.T.summable_height_pow_of_polynomial_count _ h h1 C₁ c hcnt s' hs'
+  have hsum : Summable fun q => h q ^ (-s') := _root_.GlobalTheory.CompanionTheory.GodementH.summable_rpow_neg_of_polynomial_count _ h h1 C₁ c hcnt s' hs'
   have hterm : ∀ (x : G2 σ Y) (q : Cos σ Y), a ((Quotient.out q).1 * x) ^ s' ≤
       ((C : ℝ) * (ht2 x : ℝ) ^ (2 * n)) ^ s' * h q ^ (-s') := by
     intro x q

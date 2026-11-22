@@ -1,10 +1,10 @@
 module
 
-public import Formalism.LocalToGlobal.UnitaryNorms.ArtGCut
-public import Formalism.LocalToGlobal.UnitaryNorms.JointCut
+public import Formalism.LocalToGlobal.UnitaryNorms.Bundle0003
+public import Formalism.LocalToGlobal.UnitaryNorms.Bundle0004
 public import Formalism.SharpRestriction.Divisibility.AbsolutelyIrreducibleSpan
 public import Formalism.LocalRingCardinality.SpanPowerMembership.PlacesOverNcardOfSplitInj
-public import Formalism.SharpRestriction.GlobalTheoremInputs
+public import Formalism.SharpRestriction.Bundle0002
 public import Formalism.LocalRingCardinality.HostCls
 
 @[expose] public section

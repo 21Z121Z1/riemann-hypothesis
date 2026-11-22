@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsStableGauss
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0085
 
 @[expose] public section
 

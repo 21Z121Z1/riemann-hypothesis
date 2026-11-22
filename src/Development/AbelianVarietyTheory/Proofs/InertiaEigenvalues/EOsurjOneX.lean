@@ -1,10 +1,12 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SpanLStable
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0540
 public import Formalism.LocalRingCardinality.SpanPowerMembership.NDLocE
 public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SplitOfClosure
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.PotentiallyCrystallineModuleEqCrystallineRestricStatement
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0241
+public import Formalism.LocalRingCardinality.AdicCompletionLocal.LocTied
+public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0008
 
 @[expose] public section
 

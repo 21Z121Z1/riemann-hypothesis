@@ -1,10 +1,10 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MarkedFieldPairsSumEqDefinitePairsSum
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MarkWeightedFixedPointDefinitePairOddOfCounts
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FinitelyManyMarkedClassesTermDegreeOne
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LieModelBaseChangeMap
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1432
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1399
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1336
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2895
 public import Development.AutomorphicArithmetic.Foundations.EtaleClopenDescent.ComplexCountRegularMarkedPoints
 
 @[expose] public section

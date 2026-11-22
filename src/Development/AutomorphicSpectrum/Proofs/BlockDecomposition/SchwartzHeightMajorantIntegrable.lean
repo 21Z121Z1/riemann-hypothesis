@@ -2,12 +2,12 @@ module
 
 public import Mathlib
 public import Development.WeilBound.RepresentationTheoryGL.RegularisedSiegelWeil.ThetaIdempotents.HeckeEta
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntegrableOfMem
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.TemperateMultiplierPreservesSchwartz
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ShAdd
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.HeightRightTranslateCompactBound
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1393
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0504
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0679
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0561
 public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.JacobiMapsExist
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ContinuousStandardUnitaryChartAndSymm
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0216
 
 @[expose] public section
 

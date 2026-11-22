@@ -1,7 +1,7 @@
 module
 
 public import Formalism.HermitianCurvature.HermitianCurvatureProofs.BesselDecayBounds.SchurDecayBounds.NormIdDec
-public import Formalism.SharpRestriction.CuspSpanNormBounds.KfinOfMemLowKSub
+public import Formalism.SharpRestriction.CuspSpanNormBounds.Bundle0011
 
 @[expose] public section
 

@@ -3,9 +3,9 @@ module
 public import Mathlib
 public import Formalism.LocalToGlobal.Columns.FiniteSumNonzeroLargeDepth
 public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.PredMemGamRanks
-public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.RationalFractionsRepresentPrimeNormQuotient
-public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.ExpNegOneLtOne
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.IntegralDivUniformizerOfRedZero
+public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0058
+public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0068
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0057
 
 @[expose] public section
 

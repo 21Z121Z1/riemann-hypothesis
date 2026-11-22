@@ -2,8 +2,8 @@ module
 
 public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.HermitianHaarMeasure.Development
 public import Formalism.FormalDegreeBessel.FormalDegreeRatio.UnitaryWeylNormalHolds
-public import Formalism.FormalDegreeBessel.FinalG
-public import Formalism.RealPlaceAnalysis.RealPlaceTaylor.CartanInvolutionConjTransposeMul
+public import Formalism.FormalDegreeBessel.Bundle0002
+public import Formalism.RealPlaceAnalysis.RealPlaceTaylor.Bundle0003
 
 @[expose] public section
 

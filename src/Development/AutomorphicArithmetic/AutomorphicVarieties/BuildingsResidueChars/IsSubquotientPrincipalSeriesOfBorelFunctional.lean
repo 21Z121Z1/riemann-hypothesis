@@ -2,7 +2,7 @@ module
 
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.IdeleGenerators.WeightChange
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.HeckeAlgebras.Distinct
-public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.Brauer
+public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.Bundle0046
 
 @[expose] public section
 

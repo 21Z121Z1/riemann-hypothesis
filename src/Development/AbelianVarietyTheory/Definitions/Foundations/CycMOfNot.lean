@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Foundations.AdmissibleTwistIffAdmissibleUntwisted
+public import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0023
 
 @[expose] public section
 

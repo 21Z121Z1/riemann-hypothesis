@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import GroundTheory.AutomorphicForms.SphericalSatake
+public import GroundTheory.AutomorphicForms.Bundle0020
 
 @[expose] public section
 

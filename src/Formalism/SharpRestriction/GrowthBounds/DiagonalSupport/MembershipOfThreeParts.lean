@@ -1,11 +1,9 @@
 module
 
-public import Formalism.SharpRestriction.GrowthBounds.DiagonalSupport.DecIdentity
+public import Formalism.SharpRestriction.GrowthBounds.DiagonalSupport.Bundle0009
 public import Formalism.SharpRestriction.GrowthBounds.DiagonalSupport.ProjectionMemPartialSpan
-public import Formalism.SharpRestriction.GrowthBounds.DiagonalSupport.ImportsAlt
-public import Formalism.SharpRestriction.GrowthBounds.DiagonalSupport.MembAlgF
-public import Formalism.SharpRestriction.GrowthBounds.DiagonalSupport.MembDegF
-public import Formalism.SharpRestriction.GrowthBounds.DiagonalSupport.MembLabF
+public import Formalism.SharpRestriction.GrowthBounds.DiagonalSupport.Bundle0006
+public import Formalism.SharpRestriction.GrowthBounds.DiagonalSupport.Bundle0011
 
 @[expose] public section
 

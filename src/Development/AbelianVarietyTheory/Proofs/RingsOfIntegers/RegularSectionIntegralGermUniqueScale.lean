@@ -2,11 +2,11 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.PlaceAdaptation.AdaptStd
-public import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.FrameTieHolds
-public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.GermDPf
-public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.GermDVal
-public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.GermFunPf
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.DiscreteValuationRings.SectionScalarValuation
+public import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.Bundle0032
+public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0018
+public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0015
+public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0007
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.DiscreteValuationRings.Bundle0007
 
 @[expose] public section
 

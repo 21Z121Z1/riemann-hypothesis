@@ -6,18 +6,19 @@ public import Development.AbelianVarietyTheory.Definitions.Uniformization.PointE
 public import Development.AbelianVarietyTheory.Definitions.Uniformization.ExistsInKNeOne
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.CubeVal
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.UnifUniqSt
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.IsNsmul
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.QkToAkU
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.Bundle0005
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.Bundle0006
 public import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.CoordOfHasWeight
 public import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.ExistsKernelVector
 public import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.TrivBasicOpenOfTrivFibre
 public import Development.AbelianVarietyTheory.Proofs.CoherentCohomologyProofs.VeryAmpleCompactQuasiSeparatedAffineCharts
-public import Development.AbelianVarietyTheory.Proofs.CoherentCohomologyProofs.ThreeTermComplexOfProjectiveCechModel
-public import Development.AbelianVarietyTheory.Proofs.CoherentCohomologyProofs.CechLBHomologyFiniteOfAffineCover
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.IsProjByBaseChange
-public import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.UnifPreGenericFibreSurjectiveAppTopAndIsIntegral
-public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.CechLBExactAtOfDimLt
-public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.CechComplexAcyclicPrimitiveNontrivialAlgClosedStatement
+public import Development.AbelianVarietyTheory.Proofs.CoherentCohomologyProofs.Bundle0021
+public import Development.AbelianVarietyTheory.Proofs.CoherentCohomologyProofs.Bundle0027
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0035
+public import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.Bundle0006
+public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.Bundle0100
+public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.Bundle0118
+public import Development.AbelianVarietyTheory.Definitions.AbelianSchemeLaws.IsScalarTowerOfAlgebraMapEq
 
 @[expose] public section
 
@@ -409,7 +410,7 @@ theorem exists_free_complex_of_primitive : ∀ (A : Type) [CommRing A] [IsNoethe
     exact cechLB_exactAt_of_dim_lt K B'.left B'.hom g _
       (MorphismProperty.of_isPullback (P := @SmoothOfRelativeDimension g) sq hg) hP' inferInstance hF' _ _ ha hc i hi
   · obtain ⟨U, ⟨c⟩⟩ := GtBaseChange.exists_lamChart t B F
-    exact GlobalTheory.T.cechComplex_acyclic_primitive_nontrivial_algClosed K B' hB' hP' _ hF' ⟨_, GtBaseChange.genPull_isGen c hu⟩
+    exact _root_.GlobalTheory.PrimVan.acyclic_cechLB_of_primitive K B' hB' hP' _ hF' ⟨_, GtBaseChange.genPull_isGen c hu⟩
       (fun h => hi (CubeOpen.triv_comp (hX.isoIsPullback _ _ sq).hom (hX.isoIsPullback_hom_fst _ _ sq) h))
       _ _ ha hc i
 

@@ -4,7 +4,7 @@ public import Mathlib
 public import Formalism.LocalToGlobal.Columns.RowForms
 public import Formalism.LocalToGlobal.Columns.GSetLemmas
 public import Formalism.LocalToGlobal.Columns.CoefColLemmas
-public import Formalism.LocalToGlobal.Columns.ColFormsLemmas
+public import Formalism.LocalToGlobal.Columns.Bundle0004
 
 @[expose] public section
 

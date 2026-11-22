@@ -2,9 +2,9 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.IsSubquotientDetRepParInd
-public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.BernsteinUnitaryProductIrreducible
+public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.Bundle0001
 public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IsLocallyConstantModulus
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.LowerEquivUpperSwap
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0032
 
 @[expose] public section
 

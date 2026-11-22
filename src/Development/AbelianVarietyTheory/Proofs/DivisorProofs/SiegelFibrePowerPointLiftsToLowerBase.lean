@@ -1,20 +1,22 @@
 module
 
 public import Development.AbelianVarietyTheory.Definitions.Divisors.GalRigidOfSurjective
-public import Development.AbelianVarietyTheory.Definitions.Divisors.MinSt5OfMinSt4
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0064
 public import Development.AbelianVarietyTheory.Definitions.Divisors.IsThetaCompact
 public import Development.AbelianVarietyTheory.Definitions.Divisors.IsNoetherianRingCompletedStalkSiegelFibrePower
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsRigidifiedCubicalRootPolarisationEtaleStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsGrpPullbackPasteFactorisation
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle3028
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0063
+public import Development.AbelianVarietyTheory.Definitions.Divisors.TateProductRigidificationTrivial
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2540
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsSharpGen
-public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.IsSquareUnique
-public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsProjectiveModel
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2012
+public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0151
+public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.Bundle0111
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.BCTools
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.SabPull
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.Bundle0007
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PlaceDivisors.SiegelPullbackTransfer.AdelicGL2ExtOfLocalComponents
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RegularOfFiniteOfFormallyUnramified
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsCompleteDVROfFiniteEtaleBaseChangeStatement
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle3034
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle3042
 
 @[expose] public section
 
@@ -103,7 +105,7 @@ theorem main : ∀ (n : ℕ), 3 ≤ n → Odd n → ∀ (h : ℕ) (F : SFam h n 
   obtain ⟨ψ, hψl, hψ⟩ := GlobalTheory.LowChart.exists_local_hom F w V₁ v rfl
   haveI : IsNoetherianRing (GlobalTheory.LowChart.W F w) := GlobalTheory.LowChart.isNoetherianRing_completedStalkSiegelFibrePower F w
   obtain ⟨R', _, _, ρ, hc', hloc, hinj, hfin, het, B, _, _, β, β₂, M, cub, hpb, hsq, hamp, hk, hiso⟩ :=
-    GlobalTheory.T.exists_rigidified_cubical_root_polarisation_etale F (GlobalTheory.LowChart.W F w) (GlobalTheory.LowChart.isAdicComplete_completedStalkSiegelFibrePower F w) (GlobalTheory.LowChart.toPow F w ≫ (GlobalTheory.LowChart.powA F r).hom)
+    _root_.GlobalTheory.PolBundleLocEt.exists_rigLB_sFam_etale F (GlobalTheory.LowChart.W F w) (GlobalTheory.LowChart.isAdicComplete_completedStalkSiegelFibrePower F w) (GlobalTheory.LowChart.toPow F w ≫ (GlobalTheory.LowChart.powA F r).hom)
 
   let pt : Fin r → (𝟙_ (Over (Sp R')) ⟶ B) := fun i => Over.homMk
     (hpb.1.lift (spMap ρ ≫ GlobalTheory.LowChart.toPow F w ≫ (GlobalTheory.LowChart.coord F i).left) (𝟙 _) (by
@@ -175,7 +177,7 @@ theorem main : ∀ (n : ℕ), 3 ≤ n → Odd n → ∀ (h : ℕ) (F : SFam h n 
         rw [hsingle, hpt, Category.assoc] }
 
   obtain ⟨V', _, _, _, f, κ, hV', hdvr', hfi, hff, hfl, hκl, hκρ⟩ :=
-    GlobalTheory.T.exists_completeDVR_of_finite_etale_baseChange (GlobalTheory.LowChart.W F w) R' V₁ ρ ψ hloc hfin het hV0 hdvr hψl
+    _root_.GlobalTheory.HenselLift.exists_dvr_of_finite_etale (GlobalTheory.LowChart.W F w) R' V₁ ρ ψ hloc hfin het hV0 hdvr hψl
   have hspec : spMap κ ≫ (spMap ρ ≫ GlobalTheory.LowChart.toPow F w) = spMap f ≫ v := by
     rw [← Category.assoc, ← spMap_comp', hκρ, spMap_comp', Category.assoc, hψ]
   have hb : κ.comp T.b = f.comp b₁ := by

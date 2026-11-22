@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.IntegralStructures.CrystallineDescent.PatchOneAlt
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.AbsNormMemOfUnderEq
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0280
 
 @[expose] public section
 

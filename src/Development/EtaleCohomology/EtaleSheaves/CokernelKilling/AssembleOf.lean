@@ -1,6 +1,6 @@
 module
 
-public import Development.EtaleCohomology.EtaleSheaves.CokernelKilling
+public import Development.EtaleCohomology.EtaleSheaves.Bundle0043
 public import Development.EtaleCohomology.EtaleSheaves.CokernelKilling.FiniteSubcover
 
 @[expose] public section

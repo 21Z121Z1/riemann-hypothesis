@@ -1,7 +1,7 @@
 module
 
-public import Formalism.LocalToGlobal.GroupLattices.ComparisonMaps.EvenBlockRowActionEval
-public import Formalism.LocalToGlobal.GroupLattices.ComparisonMaps.NatActRVtupR
+public import Formalism.LocalToGlobal.GroupLattices.ComparisonMaps.Bundle0010
+public import Formalism.LocalToGlobal.GroupLattices.ComparisonMaps.Bundle0003
 
 @[expose] public section
 

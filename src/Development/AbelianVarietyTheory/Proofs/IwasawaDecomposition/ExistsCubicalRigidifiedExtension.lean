@@ -6,8 +6,8 @@ public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeo
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.IsMonHomOfMul
 public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsRigidifiedCubicalSymmetricExtensionNormalB
 public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsLineBundleGeneratorExtendingDensePart
-public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.IsIsoStalkMapOfFlatOfSurjectiveOnStalks
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsUniqueGeneratorExtendDenseProOpenStatement
+public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0027
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0090
 
 @[expose] public section
 
@@ -174,7 +174,7 @@ theorem exists_extension {S : Scheme.{0}} [IsLocallyNoetherian S] (hS : Geo.Tor.
     exact exists_up hw hL hL' s hg
   obtain ⟨t, ht, hv⟩ := key _ hφ
   obtain ⟨ρ, hρ, vρ⟩ := exists_gen hL f₁ (LB.oneGen L) (LB.isGen_oneGen L)
-  obtain ⟨c, ⟨hc₁, hc₂⟩, -⟩ := GlobalTheory.T.existsUnique_generator_extend_dense_proOpen S U H HU X j hS p e jH pU eU hs
+  obtain ⟨c, ⟨hc₁, hc₂⟩, -⟩ := _root_.GlobalTheory.GenExtendDense.existsUnique_gen_extend S U H HU X j hS p e jH pU eU hs
     (forall_geometricallyIntegral_of_smooth_of_geometricallyConnected _ _ _ hs hc) he hp heU L hL K φ ε t ρ ht hρ
     (corr_of_val hL fun y J hJ => by
       refine (val_pull hJ _ _ _).trans (Eq.trans ?_

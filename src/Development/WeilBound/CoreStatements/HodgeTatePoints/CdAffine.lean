@@ -1,6 +1,6 @@
 module
 
-public import Development.WeilBound.CoreStatements.HodgeTatePoints.CdChart
+public import Development.WeilBound.CoreStatements.HodgeTatePoints.Bundle0058
 public import Development.WeilBound.CoreStatements.HodgeTatePoints.CdFrame
 public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.FBIdAd
 

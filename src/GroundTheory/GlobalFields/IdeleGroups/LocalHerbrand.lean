@@ -1,11 +1,11 @@
 module
 
 public import Mathlib
-public import GroundTheory.GlobalFields.HerbrandQuotients.CycTate
+public import GroundTheory.GlobalFields.HerbrandQuotients.Bundle0001
 public import GroundTheory.GlobalFields.CompletionAtPlace.Galois
-public import GroundTheory.LocalFields.HerbrandLocal
-public import GroundTheory.LocalFields.UnramifiedNorms
-public import GroundTheory.LocalFields.HerbrandCyclic
+public import GroundTheory.LocalFields.Bundle0007
+public import GroundTheory.LocalFields.Bundle0008
+public import GroundTheory.LocalFields.Bundle0003
 
 @[expose] public section
 

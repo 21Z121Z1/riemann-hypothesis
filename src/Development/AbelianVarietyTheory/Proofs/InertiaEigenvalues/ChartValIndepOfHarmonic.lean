@@ -1,11 +1,11 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.FormalGroupCharts.HarmonicValueGermsIndependentOfChart
-public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.HarmonicConnectionValueBaseChangeField
+public import Development.AbelianVarietyTheory.Proofs.FormalGroupCharts.Bundle0034
+public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0115
 public import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.ShortThetaValueFieldEqMapSubfieldData
-public import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.FaithfullyFlatPointsBaseChangeDescent
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.FramedPointBaseChangeUniqueReflIff
+public import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.Bundle0031
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0023
 
 @[expose] public section
 

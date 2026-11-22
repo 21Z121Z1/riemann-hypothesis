@@ -1,6 +1,6 @@
 module
 
-public import Development.EtaleCohomology.TateTwists.EtaleTensorPreservesQuasiIsoOfAcyclicAndCone
+public import Development.EtaleCohomology.TateTwists.Bundle0012
 
 @[expose] public section
 

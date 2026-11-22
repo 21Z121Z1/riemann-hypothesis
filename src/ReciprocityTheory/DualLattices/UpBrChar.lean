@@ -1,8 +1,8 @@
 module
 
-public import ReciprocityTheory.DualLattices.FrobeniusOfGroupDivisorsRank
-public import ReciprocityTheory.DualLattices.KilledGen
-public import ReciprocityTheory.DualLattices.IdemGen
+public import ReciprocityTheory.DualLattices.Bundle0035
+public import ReciprocityTheory.DualLattices.Bundle0019
+public import ReciprocityTheory.DualLattices.Bundle0020
 
 @[expose] public section
 

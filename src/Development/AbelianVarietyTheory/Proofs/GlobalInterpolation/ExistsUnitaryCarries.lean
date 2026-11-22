@@ -3,7 +3,7 @@ module
 public import Mathlib
 public import Formalism.LocalRingCardinality.CoeNeZeroOfNotMem
 public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.StrongApproximationUnitaryCongruence
-public import Development.AbelianVarietyTheory.BlockTheory.GlobalSignature.StandardDeterminantUnit
+public import Development.AbelianVarietyTheory.BlockTheory.GlobalSignature.Bundle0008
 
 @[expose] public section
 

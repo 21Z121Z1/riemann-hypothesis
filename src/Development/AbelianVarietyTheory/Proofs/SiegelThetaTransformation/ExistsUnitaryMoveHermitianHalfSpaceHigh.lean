@@ -1,12 +1,11 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.SpanningFamilies.IsHeatZero
+public import Development.AbelianVarietyTheory.Definitions.SpanningFamilies.Bundle0001
 public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.UnitaryActHalfSpace
-public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.ExistsNearlyPrimitive
-public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.ExistsUnitaryExt
+public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.Bundle0015
 public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.ExistsShortIso
-public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.ShortIsotropicVectorsExistenceSuccOfVeryShortSteStatement
+public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.ShortIsotropicVectorsExistenceSuccOfVeryShortSte
 
 @[expose] public section
 
@@ -133,7 +132,7 @@ theorem shortIso_all {Ψ : Finset (E →+* ℂ)} (hΨ : IsType Ψ) (N : ℕ) :
     obtain ⟨W, hW⟩ := hW
     exact ⟨W, fun i => i.elim0, hW, fun i => i.elim0⟩
   | succ N ih =>
-    exact GlobalTheory.T.shortIsotropicVectorsExistence_succ_of_very_short_step E Ψ hΨ N ih fun D ε hD hε => GlobalTheory.SW.exists_shortIso E Ψ hΨ (N + 1) D ε hD hε
+    exact _root_.GlobalTheory.SW.shortIso_step E Ψ hΨ N ih fun D ε hD hε => GlobalTheory.SW.exists_shortIso E Ψ hΨ (N + 1) D ε hD hε
 
 theorem exists_imag : ∃ (ξ : E) (D : ℕ), ξ ≠ 0 ∧ cc ξ = -ξ ∧ 0 < D ∧ IsIntegral ℤ ((D : E) * ξ) ∧
     IsIntegral ℤ ((D : E) * ξ⁻¹) := by

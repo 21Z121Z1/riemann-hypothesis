@@ -1,7 +1,7 @@
 module
 
 public import Formalism.LocalToGlobal.BesselHermitianTheta.TiedWeil
-public import Formalism.LocalToGlobal.UnitaryNorms.CharTied
+public import Formalism.LocalToGlobal.UnitaryNorms.Bundle0006
 
 @[expose] public section
 

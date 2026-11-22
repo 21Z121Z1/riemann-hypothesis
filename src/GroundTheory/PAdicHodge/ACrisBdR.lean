@@ -3,7 +3,7 @@ module
 public import Mathlib
 public import GroundTheory.PAdicHodge.FactorizationFactorialLe
 public import GroundTheory.PAdicHodge.BdRLattice
-public import GroundTheory.PowerSubgroups.CountableNeighbourhoods.PrecompleteOfSurjective
+public import GroundTheory.PowerSubgroups.CountableNeighbourhoods.Bundle0001
 
 @[expose] public section
 

@@ -1,9 +1,9 @@
 module
 
 public import PositivityTheory.AutomorphicForms.PublishedInputs.HilbertEisenstein.SSmooth
-public import PositivityTheory.AutomorphicForms.PublishedInputs.HilbertEisenstein.PolyVHasTemperateGrowth
+public import PositivityTheory.AutomorphicForms.PublishedInputs.HilbertEisenstein.Bundle0004
 public import GroundTheory.GlobalFields.TateThesis.TateThetaDecay
-public import GroundTheory.GlobalFields.TateThesis.AdelePoissonUniform
+public import GroundTheory.GlobalFields.TateThesis.Bundle0009
 
 @[expose] public section
 

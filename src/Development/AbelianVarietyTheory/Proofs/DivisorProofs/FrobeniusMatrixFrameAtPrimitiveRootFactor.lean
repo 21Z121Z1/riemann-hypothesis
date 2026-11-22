@@ -2,9 +2,9 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RankOfMulEqOne
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConstantCoeffExpSub
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CompletionLinesOfLatticeAtLevels
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.WachLatticeExpansionAtLowLevelPoints
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0558
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0434
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0620
 public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.LatticeAtLevelsIffUpToLevel
 
 @[expose] public section

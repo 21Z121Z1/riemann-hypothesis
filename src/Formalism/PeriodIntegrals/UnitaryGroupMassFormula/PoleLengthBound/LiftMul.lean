@@ -1,7 +1,7 @@
 module
 
 public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.PoleLengthBound.LeOrdASmulOsK
-public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.HasseOrderBound.CompositionalInverseSymm
+public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.HasseOrderBound.Bundle0001
 
 @[expose] public section
 

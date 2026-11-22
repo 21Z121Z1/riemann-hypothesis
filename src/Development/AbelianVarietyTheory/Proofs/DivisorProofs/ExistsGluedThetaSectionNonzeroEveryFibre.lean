@@ -3,8 +3,8 @@ module
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.Divisors.UnifAlong
 public import Development.AbelianVarietyTheory.Definitions.ModuliSpaces.FiniteHomogeneousInf
-public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsSecOnPowerOfLocalBases
-public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsSecOnOfPowOne
+public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.Bundle0084
+public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.Bundle0169
 
 @[expose] public section
 

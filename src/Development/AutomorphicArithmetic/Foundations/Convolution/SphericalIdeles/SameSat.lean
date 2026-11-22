@@ -4,14 +4,14 @@ public import Mathlib
 public import Development.AutomorphicArithmetic.Foundations.Convolution.SphericalIdeles.SphConj
 public import Development.AutomorphicArithmetic.Foundations.Convolution.SphericalIdeles.LiftAll
 public import Development.AutomorphicArithmetic.Foundations.Convolution.SphericalIdeles.SmoEq
-public import Development.AutomorphicArithmetic.Foundations.Convolution.SphericalIdeles.PowSat
+public import Development.AutomorphicArithmetic.Foundations.Convolution.SphericalIdeles.Bundle0001
 public import Development.AutomorphicArithmetic.Foundations.Convolution.TraceSplitting.PowTwist
 public import Development.AutomorphicArithmetic.Foundations.Convolution.TraceSplitting.CarryLift
 public import Development.AutomorphicArithmetic.Foundations.Convolution.TraceSplitting.FamParts
-public import Development.AutomorphicArithmetic.Foundations.Convolution.TraceSplitting.CoreLift
+public import Development.AutomorphicArithmetic.Foundations.Convolution.TraceSplitting.Bundle0006
 public import Development.AutomorphicArithmetic.Foundations.Convolution.CentreSplitting.ExTwist
-public import Development.AutomorphicArithmetic.Foundations.Convolution.CentreSplitting.ExCusp
-public import Development.AutomorphicArithmetic.Foundations.Convolution.CentreSplitting.SSatIff
+public import Development.AutomorphicArithmetic.Foundations.Convolution.CentreSplitting.Bundle0004
+public import Development.AutomorphicArithmetic.Foundations.Convolution.CentreSplitting.Bundle0006
 public import Development.AutomorphicArithmetic.Foundations.Convolution.NormCharacterPowers.NormCharPowHolds
 
 @[expose] public section

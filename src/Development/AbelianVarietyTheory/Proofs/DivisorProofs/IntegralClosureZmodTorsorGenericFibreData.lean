@@ -1,13 +1,13 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TorsorsTrivial
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.OriginIdeal
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ClosureFiniteEtale
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TorsionFreeOver
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.InjectiveTraceGaloisData
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntegralClosureOverGenericFibreHartogsStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsMulMemIntegralClosureOverGenericFibreStatement
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0175
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0218
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0230
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0116
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0268
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0287
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0282
 
 @[expose] public section
 

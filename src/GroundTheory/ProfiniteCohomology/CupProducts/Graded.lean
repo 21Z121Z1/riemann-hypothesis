@@ -2,8 +2,8 @@ module
 
 public import Mathlib
 public import GroundTheory.ProfiniteCohomology.CupProducts.GroupCohomology
-public import GroundTheory.ProfiniteCohomology.Colimit
-public import GroundTheory.TateCohomology.CupGraded
+public import GroundTheory.ProfiniteCohomology.Bundle0006
+public import GroundTheory.TateCohomology.Bundle0006
 
 @[expose] public section
 

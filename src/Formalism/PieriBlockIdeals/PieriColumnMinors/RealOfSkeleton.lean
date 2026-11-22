@@ -1,7 +1,6 @@
 module
 
-public import Formalism.PieriBlockIdeals.PieriColumnMinors.LrjTransposeLift
-public import Formalism.PieriBlockIdeals.PieriColumnMinors.LriEVPowCoe
+public import Formalism.PieriBlockIdeals.PieriColumnMinors.Bundle0009
 public import Formalism.PieriBlockIdeals.PieriColumnMinors.LrfcApplyWordAppendSingle
 
 @[expose] public section

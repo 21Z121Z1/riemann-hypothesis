@@ -6,8 +6,8 @@ public import Development.AbelianVarietyTheory.Definitions.Divisors.TateProductR
 public import Development.AbelianVarietyTheory.Definitions.Degenerations.AdmissibleBaseOfCompleteDvr
 public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.UniformisationDegenerationDataUnique
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MumfordLambdaBilinearIntegralCombinations
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsLineBundleIsoPullbackOfCoprodJoinStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GeneratorValEqOneOfGenericSpecDomainStatement
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2515
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2533
 
 @[expose] public section
 
@@ -81,7 +81,7 @@ theorem isPullDeg_of_primitive : ∀ (R : Type) [CommRing R] [IsDomain R] [IsLoc
       simp only [ofMul_mul, ofMul_inv, ofMul_zpow, zpow_one]
       clear q1 q2 q3 q4 q6 q8 q9 E1 t₁ u u' P₁ P₂ wΛ xe hΦ hact
       abel) _ g
-  obtain ⟨w₀, hw₀, vw₀⟩ := GlobalTheory.T.exists_lineBundleIso_pullback_of_coprodJoin D.toPre.P.L D'.toPre.P.L hM hM' inferInstance inferInstance Φ.hom.left t ht
+  obtain ⟨w₀, hw₀, vw₀⟩ := _root_.GlobalTheory.JoinPull.exists_iso_of_joinGen D.toPre.P.L D'.toPre.P.L hM hM' inferInstance inferInstance Φ.hom.left t ht
   have vw : ∀ (Z : Scheme.{0}) (f : Z ⟶ D'.toPre.P.A.left) (z : Z)
       (J : (Z ⟶ D'.toPre.P.A.left ⨿ D.toPre.P.A.left) → (join D'.toPre.P.L D.toPre.P.L).ι),
       Good (join D'.toPre.P.L D.toPre.P.L) z J →
@@ -118,7 +118,7 @@ theorem isPullDeg_of_primitive : ∀ (R : Type) [CommRing R] [IsDomain R] [IsLoc
         (lift (1 : 𝟙_ (Over (Spec (CommRingCat.of R))) ⟶ D.toPre.P.A) 1).left := by
       rw [← Over.comp_left, comp_lift, lift_fst_assoc, lift_snd_assoc, MonObj.one_comp]
     intro Z r z J hJ
-    have key := GlobalTheory.T.generator_val_eq_one_of_generic_spec_domain R (join D'.toPre.P.L D.toPre.P.L) hN _ _ (by
+    have key := _root_.GlobalTheory.Mum.GenOne.val_eq_one_of_generic R (join D'.toPre.P.L D.toPre.P.L) hN _ _ (by
         intro U _ h
         simp only [Fintype.prod_sum_type, Sum.elim_inl, Sum.elim_inr, Fintype.prod_empty, E0]
         rw [lamF 1 1 _ _ E0', lamFneg, _root_.mul_one, _root_.mul_one]

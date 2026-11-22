@@ -3,7 +3,7 @@ module
 public import Development.WeilBound.ThetaLifts.LocalTheory.ConeShifts.MemIntLocOfIdem
 public import Development.WeilBound.CoreStatements.LocalThetaKernels.Locrep
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsDiagonalLagrangianInvariantForm
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ProductFunctionOnSumCoordsMemAdelicSchwartzSpace
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0930
 
 @[expose] public section
 

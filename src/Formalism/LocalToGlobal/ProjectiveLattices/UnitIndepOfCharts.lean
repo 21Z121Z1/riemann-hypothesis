@@ -1,7 +1,7 @@
 module
 
-public import Formalism.LocalToGlobal.ProjectiveLattices.FrameProofs
-public import Formalism.LocalToGlobal.ProjectiveLattices.ChartWD
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0012
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0005
 
 @[expose] public section
 

@@ -1,10 +1,10 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsQuasiInv
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CompEqOneOfTransl
-public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsGenMovePow
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsWeilCommutatorPairingTorsionGeometricPointStatement
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2069
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0557
+public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0066
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2687
 
 @[expose] public section
 

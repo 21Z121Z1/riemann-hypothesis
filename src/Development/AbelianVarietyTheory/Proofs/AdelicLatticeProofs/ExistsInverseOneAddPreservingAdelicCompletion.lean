@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.AdelicHermitianForms.IsHermForm
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.AdelicCompletionRationalPointsAndApproximation
+public import Development.AbelianVarietyTheory.Definitions.AdelicHermitianForms.Bundle0002
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0017
 
 @[expose] public section
 

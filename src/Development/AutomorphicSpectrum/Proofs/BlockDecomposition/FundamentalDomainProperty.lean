@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SigmaFiniteParameterProductMeasure
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ExistsClopenCompactNbhdZero
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0549
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0199
 
 @[expose] public section
 

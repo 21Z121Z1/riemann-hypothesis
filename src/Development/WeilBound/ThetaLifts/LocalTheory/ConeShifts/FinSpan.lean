@@ -1,8 +1,8 @@
 module
 
 public import Development.WeilBound.ThetaLifts.LocalTheory.ConeShifts.ArchCone
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EqOfComponentTensorAdelicFunctionEq
-public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.IdeleCongruenceUnitCriterion
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1645
+public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.Bundle0031
 
 @[expose] public section
 

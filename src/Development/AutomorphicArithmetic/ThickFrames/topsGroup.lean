@@ -3,8 +3,7 @@ module
 public import Development.AutomorphicArithmetic.ThickFrames.MarkedLow
 public import Formalism.SharpRestriction.GrowthBounds.UnramifiedQuadraticSetting
 public import Development.AutomorphicArithmetic.ThickFrames.select
-public import Development.AutomorphicArithmetic.ThickFrames.orbitSum
-public import Development.AutomorphicArithmetic.ThickFrames.SharesOfCounts
+public import Development.AutomorphicArithmetic.ThickFrames.Bundle0001
 public import Development.AutomorphicArithmetic.ThickFrames.orbitTerms
 public import Development.AutomorphicArithmetic.ThickFrames.NotGoodLe
 

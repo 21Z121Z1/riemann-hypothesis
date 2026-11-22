@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.Wp3ApplyEqSqMulSubSqMul
+public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.Bundle0022
 
 @[expose] public section
 

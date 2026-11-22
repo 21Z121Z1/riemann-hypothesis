@@ -2,14 +2,14 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.JoinEquivEqAtReference
-public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.BrgStdR
+public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.Bundle0024
 public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.EventuallyCongOne
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.LamRdefEqSgTrue
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ReadsDeco
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0370
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0359
 public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.MemOfPerpPerp
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ClassPresBasic
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.MulVecMemHatSwap
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.AdelicUnitaryEqRealMulFiniteSplit
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0066
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0310
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0070
 public import Formalism.LocalToGlobal.Columns.RowFormsGood
 
 @[expose] public section

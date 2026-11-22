@@ -2,8 +2,8 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.HasLenOfLatLen
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnitaryLeviNormalizesUnipotentRadical
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnitaryBlockTriangularLeviPartUnitary
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0492
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0490
 
 @[expose] public section
 

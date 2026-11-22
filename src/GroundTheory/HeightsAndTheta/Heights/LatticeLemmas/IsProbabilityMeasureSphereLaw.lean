@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.LogGaussNormSupportFinite
+public import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.Bundle0003
 public import GroundTheory.HeightsAndTheta.Heights.HermitianDual
 public import GroundTheory.HeightsAndTheta.Heights.ArithDegree
 

@@ -2,12 +2,12 @@ module
 
 public import Development.WeilBound.ThetaLifts.FrameEstimates.SquareIntegrableWeilRange
 public import Development.WeilBound.ThetaLifts.FrameEstimates.CoefSumA
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IndicatorMemSBOfIsClopen
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0499
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsNatMulIntegralOfIsCompact
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsStdCharNegOneOfStandardTraceAdelicAddChar
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.DiscreteSubgroupCountableAndExistsStrictFundamen
-public import Development.AbelianVarietyTheory.Proofs.HeightProofs.ExistsNhdsZeroPrincipalEqZero
-public import Development.AbelianVarietyTheory.Proofs.HeightProofs.ExistsCompactAdeleRingModNumberField
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1558
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0003
+public import Development.AbelianVarietyTheory.Proofs.HeightProofs.Bundle0001
+public import Development.AbelianVarietyTheory.Proofs.HeightProofs.Bundle0028
 
 @[expose] public section
 

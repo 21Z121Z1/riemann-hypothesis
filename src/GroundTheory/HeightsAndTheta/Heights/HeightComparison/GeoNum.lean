@@ -1,10 +1,10 @@
 module
 
 public import Mathlib
-public import GroundTheory.HeightsAndTheta.Heights.FieldsOfNumbers.Assembly
-public import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.PIntNumPoint
-public import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.PSpecialMultAt
-public import GroundTheory.HeightsAndTheta.Heights.HeightComparison.IsMultiHomogIdealIff
+public import GroundTheory.HeightsAndTheta.Heights.FieldsOfNumbers.Bundle0012
+public import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.Bundle0017
+public import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.Bundle0010
+public import GroundTheory.HeightsAndTheta.Heights.HeightComparison.Bundle0003
 
 @[expose] public section
 

@@ -1,19 +1,19 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsNotRelZero
-public import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.UnitaryConjugation
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0047
+public import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.Bundle0019
 public import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.WeilTensorModels
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SquareTriple
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SquareStanding
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1487
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1507
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ContinuousAtPlace
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.LcscAdelicUnitaryGroup
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsLocallyConstantHeisenbergLatticeVacuumFunction
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsSplittingSplitOm
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ContinuousCharacterCocycleTrivialNearZeroStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsSubgroupSymplecticAnnihilatorLocalFieldStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsSchwartzBruhatSchroedingerFixedLocalFieldStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SchroedingerMemSchwartzBruhatFinitePlaceStatement
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0061
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1558
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0213
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0130
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1601
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1600
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1611
 
 @[expose] public section
 
@@ -174,7 +174,7 @@ theorem exists_schr_eigen : ∀ {F : Type} [Field F] [NumberField F] (v : Global
     have h1 := hNN (Set.mk_mem_prod hx hy)
     rw [Set.mem_preimage] at h1
     exact hU₀ _ h1
-  obtain ⟨U, hU, hUχ⟩ := GlobalTheory.T.continuous_character_cocycle_trivial_near_zero lamH hlamc ε hεN hε0 χ hχc (fun a h => hker a h) (fun a b => hco a b)
+  obtain ⟨U, hU, hUχ⟩ := _root_.GlobalTheory.CocycleChar.cocycle_char_trivial_near_zero lamH hlamc ε hεN hε0 χ hχc (fun a h => hker a h) (fun a b => hco a b)
   obtain ⟨φ₁, hφ₁SB, hφ₁0, U', hU', hU'φ⟩ := GlobalTheory.T.exists_schwartzBruhat_schroedingerFixed_localField v ψ hψc (κ := κ)
   obtain ⟨Y, hYsep, N', hN', hN'Y⟩ := GlobalTheory.T.exists_subgroup_symplecticAnnihilator_localField v ψ hψc hψ1 (U ∩ U') (Filter.inter_mem hU hU')
 

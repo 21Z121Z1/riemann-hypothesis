@@ -9,7 +9,7 @@ public import Formalism.GaloisCohomology.LocalTateDualityK
 public import Formalism.SharpRestriction.LevelLetterCocycles.RamificationTwoAndConjugationAtQAndD
 public import ReciprocityTheory.NeutralLocalFields.LocalFieldComparison.Transport
 public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.H2EquivOfTorsionCharacter
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CoefficientRingIntegersCompactAdicProperties
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0247
 
 @[expose] public section
 

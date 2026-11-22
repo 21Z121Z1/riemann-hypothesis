@@ -1,8 +1,8 @@
 module
 
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.PadicHodgeTheory.IsFirstOrderDeformationOfRZero
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.PadicHodgeTheory.ChartChange
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsUniqueFixedPointOfAdicContraction
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.PadicHodgeTheory.Bundle0012
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.PadicHodgeTheory.Bundle0010
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0029
 
 @[expose] public section
 

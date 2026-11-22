@@ -2,20 +2,20 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.TailRd
-public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.PairForm
+public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.Bundle0022
 public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.UnitRatio
 public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.UnitOfUnitary
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.IntegralDefiniteQuotientEqClassSumStatement
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.IntegralDefiniteQuotientEqClassSum
 public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ContinuousFinGL
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.UnitaryClassRepresentativesBijective
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ContinuousPhiPrV
-public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.ExistsTransportAdelicCorrection
-public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.ChartNonempty
-public import Development.AbelianVarietyTheory.Proofs.HeightProofs.AdelicUnitaryRealPointsStructureRealPlaces
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.AdelicUnitaryTopology
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsBoundUnitary
-public import Formalism.LocalToGlobal.IndefiniteReal.LevelTypeEquivalence.LevelADef
-public import Formalism.LocalRingCardinality.PosOfIsomEmb
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0285
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0063
+public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.Bundle0017
+public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.Bundle0006
+public import Development.AbelianVarietyTheory.Proofs.HeightProofs.Bundle0033
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0160
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0827
+public import Formalism.LocalToGlobal.IndefiniteReal.LevelTypeEquivalence.Bundle0010
+public import Formalism.LocalRingCardinality.Bundle0005
 
 @[expose] public section
 
@@ -185,7 +185,7 @@ theorem integral_rdS {D : D7} (θ : InfFam D) (hθ : IsInfFam θ) (V : HSp D) {n
     rw [hP] at this
     exact GlobalTheory.DefiniteQuotient.posDef_of_signature this
   choose h hh1 hh2 using fun a => GlobalTheory.Core.Mi.PinModel.exists_finM V rfl (yc a)
-  obtain ⟨vol, ν, hvol, hν, -, hsum⟩ := GlobalTheory.T.integral_definiteQuotient_eq_classSum D θ hθ V _ rfl _ rfl T f bad S cl yc hb hS hPD μ 𝓕 hμ h𝓕 h
+  obtain ⟨vol, ν, hvol, hν, -, hsum⟩ := _root_.GlobalTheory.ClassSumLevel.integral_eq_classSum D θ hθ V _ rfl _ rfl T f bad S cl yc hb hS hPD μ 𝓕 hμ h𝓕 h
     fun a => ⟨hh1 a, hh2 a⟩
   haveI := Formalism.L2.GlobalTheoryTheory.GenusMassVolumes.Unfold.topGroupHA D.sp.cm.sig V.gram
   haveI : BorelSpace (GA D V) := ⟨rfl⟩

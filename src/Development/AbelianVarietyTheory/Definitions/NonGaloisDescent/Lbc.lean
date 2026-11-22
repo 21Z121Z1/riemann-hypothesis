@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.IsOrbitProd
-public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.IsLevelProjLevelProj
+public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0023
 
 @[expose] public section
 

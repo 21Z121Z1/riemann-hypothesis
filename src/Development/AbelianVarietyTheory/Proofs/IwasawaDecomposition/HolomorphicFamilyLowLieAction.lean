@@ -1,13 +1,13 @@
 module
 
 public import Mathlib
-public import Formalism.LocalToGlobal.IndefiniteReal.ConcretePkgSpec
-public import Formalism.LocalRingCardinality.DataExtra
-public import Formalism.LocalRingCardinality.DataTies
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsHolRepOfIsTau
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.MemUJsetOfKset
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsOperatorLowestWeightHolomorphicKTypeStatement
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsLowestKTypeLeSmoothVectorsStatement
+public import Formalism.LocalToGlobal.IndefiniteReal.Bundle0023
+public import Formalism.LocalRingCardinality.Bundle0007
+public import Formalism.LocalRingCardinality.Bundle0003
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0175
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0111
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0197
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0180
 
 @[expose] public section
 
@@ -207,9 +207,9 @@ theorem lowest_types_act : ∀ (D : D7) (V : HSp D) (Sp : D.what₂.Tau → SPar
     obtain ⟨⟨d1, d2⟩, d3, d4⟩ := (M.ds τ).2.2.1
     exact ⟨⟨d1, fun a ha b hb => d2 a (hKU τ a ha) b (hKU τ b hb)⟩, fun g hg => d3 g (hKU τ g hg),
       fun v => (d4 v).mono (fun g hg => hKU τ g hg)⟩
-  choose S hSK hSsm using GlobalTheory.T.exists_lowestKType_le_smoothVectors D V Sp M
+  choose S hSK hSsm using _root_.GlobalTheory.SmoothLowType.exists_lowK_le_sm D V Sp M
   choose w T hw0 hTspan hTbot using fun τ =>
-    GlobalTheory.T.exists_operator_lowestWeight_holomorphic_KType V.rank (M.ε τ) (Formalism.QuantumDeterminants.lowK (M.ε τ) (M.lam τ)) (M.H τ) (M.σ τ) (S τ) (hUR τ)
+    _root_.GlobalTheory.JointHarm.KTypeOp.exists_op V.rank (M.ε τ) (Formalism.QuantumDeterminants.lowK (M.ε τ) (M.lam τ)) (M.H τ) (M.σ τ) (S τ) (hUR τ)
       (hSK τ) P B (fun g => ϖ (Pi.mulSingle τ g)) (h.2.2.2 τ)
   have : ∀ τ, FiniteDimensional ℂ (S τ) := fun τ => (hSK τ).1
 

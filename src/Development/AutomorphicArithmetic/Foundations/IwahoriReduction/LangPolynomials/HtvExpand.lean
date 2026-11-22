@@ -1,13 +1,12 @@
 module
 
 public import Development.AutomorphicArithmetic.Foundations.IwahoriReduction.LangPolynomials.FixedIntegersIsUnitOfNotMemPrimeSpan
-public import Development.AutomorphicArithmetic.Foundations.IwahoriReduction.LangPolynomials.PresTr
-public import Development.AutomorphicArithmetic.Foundations.IwahoriReduction.LangPolynomials.PresDl
-public import Development.AutomorphicArithmetic.Foundations.IwahoriReduction.LangPolynomials.PresMono
-public import Development.AutomorphicArithmetic.Foundations.IwahoriReduction.LangPolynomials.KumAlg
+public import Development.AutomorphicArithmetic.Foundations.IwahoriReduction.LangPolynomials.Bundle0004
+public import Development.AutomorphicArithmetic.Foundations.IwahoriReduction.LangPolynomials.Bundle0009
+public import Development.AutomorphicArithmetic.Foundations.IwahoriReduction.LangPolynomials.Bundle0003
+public import Development.AutomorphicArithmetic.Foundations.IwahoriReduction.LangPolynomials.Bundle0002
 public import Development.AutomorphicArithmetic.Foundations.IwahoriReduction.LangPolynomials.WdVal
-public import Development.AutomorphicArithmetic.Foundations.IwahoriReduction.LangPolynomials.PEvHom
-public import Development.AutomorphicArithmetic.Foundations.IwahoriReduction.LangPolynomials.DvdOfNormLe
+public import Development.AutomorphicArithmetic.Foundations.IwahoriReduction.LangPolynomials.Bundle0001
 
 @[expose] public section
 

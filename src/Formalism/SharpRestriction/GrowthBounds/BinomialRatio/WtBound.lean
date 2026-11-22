@@ -1,6 +1,6 @@
 module
 
-public import Formalism.SharpRestriction.GrowthBounds.BinomialRatio.NotKept
+public import Formalism.SharpRestriction.GrowthBounds.BinomialRatio.Bundle0009
 public import Formalism.SharpRestriction.GrowthBounds.BinomialRatio.WdimUp
 
 @[expose] public section

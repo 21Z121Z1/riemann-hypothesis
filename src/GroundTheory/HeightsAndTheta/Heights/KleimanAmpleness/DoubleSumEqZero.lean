@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.ImportsBisFurther
+public import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.Bundle0006
 
 @[expose] public section
 

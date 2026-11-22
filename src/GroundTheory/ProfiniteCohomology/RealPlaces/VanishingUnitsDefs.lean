@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import GroundTheory.ProfiniteCohomology.RealPlaces.GSDefs
-public import GroundTheory.ProfiniteCohomology.RealPlaces.VanishingCriterion
+public import GroundTheory.ProfiniteCohomology.RealPlaces.Bundle0002
 public import GroundTheory.ProfiniteCohomology.RestrictedRamification.EqZeroOfPowNsmulCohomologySUnitsOfOdd
 public import GroundTheory.ProfiniteCohomology.RestrictedRamification.Brauer
 public import GroundTheory.ProfiniteCohomology.RestrictedRamification.Dimension

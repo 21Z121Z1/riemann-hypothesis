@@ -3,8 +3,9 @@ module
 public import ReciprocityTheory.Hypotheses.GalCoh
 public import GroundTheory.ProfiniteCohomology.RestrictedRamification.IsUnramifiedOutsideIffLeMaxUnramifiedOutside
 public import GroundTheory.ProfiniteCohomology.ContinuousCochains
-public import Development.AutomorphicSpectrum.Proofs.GlobalProofs.DifferentDvdRamifiedPrimePowerStatement
-public import Development.AutomorphicSpectrum.Proofs.GlobalProofs.RamifiedPrimeContainsDiscriminantStatement
+public import Mathlib
+public import Development.AutomorphicSpectrum.Proofs.GlobalProofs.Bundle0004
+public import Development.AutomorphicSpectrum.Proofs.GlobalProofs.Bundle0002
 
 @[expose] public section
 
@@ -29,7 +30,7 @@ theorem natAbs_discr_dvd {F E : Type} [Field F] [NumberField F] [Field E] [Numbe
     [Algebra F E] (S : Finset (HeightOneSpectrum (𝓞 F)))
     (hE : ∀ v ∉ S, Algebra.IsUnramifiedIn (𝓞 E) v.asIdeal) :
     (discr E).natAbs ∣ bound S ^ (Module.finrank ℚ E * Module.finrank ℚ E) := by
-  have hdvd := GlobalTheory.T.different_dvd_ramified_prime_power E (bound S) (bound_ne_zero S) fun P hP hP0 hPd => by
+  have hdvd := _root_.GlobalTheory.CompanionTheory.Glob.differentIdeal_dvd_span_pow E (bound S) (bound_ne_zero S) fun P hP hP0 hPd => by
     haveI := hP
     exact GlobalTheory.T.ramified_prime_contains_discriminant F E S hE P hP0 hPd
   have h := map_dvd Ideal.absNorm hdvd

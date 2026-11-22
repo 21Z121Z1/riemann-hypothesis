@@ -1,17 +1,16 @@
 module
 
 public import Mathlib
-public import Formalism.LocalToGlobal.KernelLattices.BaseEx
+public import Formalism.LocalToGlobal.KernelLattices.Bundle0002
 public import Formalism.LocalToGlobal.KernelLattices.KernelLocalFactors.IsAdmissibleFlagPairOfUnitriangularLeftAutomorph
 public import Formalism.LocalRingCardinality.RankBoundMonotoneInDimension
 public import Formalism.FrobeniusOrbits.FrobeniusOrbitsProofs.SplitK
-public import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.KerPerPair
-public import Formalism.PeriodIntegrals.KerLat
-public import Formalism.PeriodIntegrals.KerIso
-public import Formalism.PeriodIntegrals.SelfDualOfDiff
-public import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.KerSplit
-public import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.KerDetOrd
-public import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.KerDetFin
+public import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.Bundle0003
+public import Formalism.PeriodIntegrals.Bundle0003
+public import Formalism.PeriodIntegrals.Bundle0004
+public import Formalism.PeriodIntegrals.Bundle0012
+public import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.Bundle0005
+public import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.Bundle0008
 public import Formalism.LocalToGlobal.TorsionIntegrality.QuadraticSemicharacters.ProductThetaMem
 public import Formalism.LocalRingCardinality.SpanPowerMembership.ExampleLayerExistsGenerators
 

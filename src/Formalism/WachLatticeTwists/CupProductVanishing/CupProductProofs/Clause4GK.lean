@@ -1,18 +1,15 @@
 module
 
-public import Formalism.WachLatticeTwists.CupProductVanishing.Statement
+public import Formalism.WachLatticeTwists.CupProductVanishing.Bundle0001
 public import Formalism.WachLatticeTwists.LatticeDualFibres.FibreDualStable
 public import Formalism.WachLatticeTwists.CharacterSplitJumps.CharacterJumpProofs.MemAnnih
-public import Formalism.WachLatticeTwists.LatticeDualFibres.LatticeDualProofs.LocDualOrth
-public import Formalism.WachLatticeTwists.LatticeDualFibres.LatticeDualProofs.QuotLen
+public import Formalism.WachLatticeTwists.LatticeDualFibres.LatticeDualProofs.Bundle0001
 public import Formalism.WachLatticeTwists.LatticeDualFibres.Statement
 public import ReciprocityTheory.GaloisValuations.ContinuousConstSMulQuotient
 public import Formalism.WachLatticeTwists.LatticeDualFibres.LatticeDualProofs.ExistsPowSmulIntegral
 public import Formalism.WachLatticeTwists.LatticeDualFibres.StatDualFibreLattice
-public import Formalism.WachLatticeTwists.CupProductVanishing.CupProductProofs.H2MapInjectiveStatement
-public import ReciprocityTheory.ReductiveGroups.TraceFormulas.LatClose
-public import ReciprocityTheory.ReductiveGroups.TraceFormulas.LatInv
-public import ReciprocityTheory.ReductiveGroups.TraceFormulas.LatIso
+public import Formalism.WachLatticeTwists.CupProductVanishing.CupProductProofs.Bundle0001
+public import ReciprocityTheory.ReductiveGroups.TraceFormulas.Bundle0001
 
 @[expose] public section
 

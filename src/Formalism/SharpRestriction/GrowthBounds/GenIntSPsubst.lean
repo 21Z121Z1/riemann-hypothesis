@@ -1,6 +1,6 @@
 module
 
-public import Formalism.SharpRestriction.GrowthBounds.PowerSeriesFrobeniusCongruence
+public import Formalism.SharpRestriction.GrowthBounds.Bundle0002
 public import Formalism.LocalToGlobal.CharacterGerms.SubstSubst
 
 @[expose] public section

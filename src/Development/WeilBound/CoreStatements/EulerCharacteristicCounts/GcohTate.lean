@@ -1,6 +1,6 @@
 module
 
-public import Development.WeilBound.CoreStatements.EulerCharacteristicCounts.GcohTateB
+public import Development.WeilBound.CoreStatements.EulerCharacteristicCounts.Bundle0004
 
 @[expose] public section
 

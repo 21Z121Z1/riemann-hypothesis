@@ -2,10 +2,10 @@ module
 
 public import Mathlib
 public import Formalism.SharpRestriction.CuspSpanNormBounds.LeadMinorK
-public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.Admissible
-public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.ThresholdProductsBounded
+public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.Bundle0006
+public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.Bundle0010
 public import Formalism.HermitianCurvature.HermitianCurvatureProofs.IntegrableUnipotentNormRpowNeg
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.UnipotentLevelZeroEqOne
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0100
 public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.IsOrbQuotWithDensity
 
 @[expose] public section

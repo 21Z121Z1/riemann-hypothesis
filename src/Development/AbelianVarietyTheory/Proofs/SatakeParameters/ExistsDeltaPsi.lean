@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.NormalFam
+public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.Bundle0015
 public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisGeometry₂.HoweUnram
 public import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.IsStepWeil
 public import Formalism.SatakeDualWeyl.KpqSubgroupCompact
@@ -9,7 +9,7 @@ public import Formalism.SharpRestriction.Divisibility.KudlaSiegelWeil
 public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.InertPlaceHeckeDoubleCosetsInverseRepsLabel
 public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.SupportedSubgroupSplitCommutePrimeIdempotents
 public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.MemHomLatticeIffIntegralMatrixSplitChart
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnramifiedConjugatePlaceUniformiser
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0935
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsIsFinWeil
 
 @[expose] public section
@@ -111,7 +111,7 @@ theorem exists_chart_cm (hc : CMData (maximalRealSubfield E) E)
         ∀ g, (IsFin hc V (ι g) ∧ Stab hc V (ι g)) ↔ g.1 ∈ GLint (Fin V.rank) (intL _) := by
   have hur := unramified hc
   obtain ⟨σ, ϖ, hσE, hU⟩ := GlobalTheory.FixedPrime.exists_isUnramInv v P hin
-  obtain ⟨ψ, hψE, hψσ, hψO⟩ := GlobalTheory.T.exists_ringEquiv_tensor_inert_adicCompletion E v P hin σ hσE hU.2.1
+  obtain ⟨ψ, hψE, hψσ, hψO⟩ := _root_.GlobalTheory.InertCompletion.exists_ringEquiv_completion E v P hin σ hσE hU.2.1
   let ψ' : LocAlg v →+* P.adicCompletion E := ψ
   have hO : ∀ z, z ∈ ordAt E v ↔ ψ' z ∈ intL _ := fun z => (mem_ordAt_iff v z).trans (hψO z)
   let π : AF (maximalRealSubfield E) ⊗[maximalRealSubfield E] E →+* P.adicCompletion E :=
@@ -145,13 +145,13 @@ theorem exists_chart_cm (hc : CMData (maximalRealSubfield E) E)
     | zero => simp only [map_zero]
     | add x y hx hy => simp only [map_add (f := _), hx, hy]
     | tmul a x => rfl
-  · rw [GlobalTheory.T.mem_integralFiniteAdelesTensor_iff_localOrders]
+  · rw [_root_.GlobalTheory.PlaceComp.IntLocal.mem_intA_iff]
     refine Iff.trans ⟨fun h => hev a ▸ h v, fun h w => ?_⟩ (hO _)
     by_cases hw : w = v
     · subst hw; rwa [hev]
     · rw [hew a w hw]; exact zero_mem _
   obtain ⟨h, hfr, hon⟩ := exists_orthonormal hc V v
-  obtain ⟨s1, s2, s3⟩ := GlobalTheory.T.adelicUnitary_supportedAtFinitePlace_eq_localUnitary _ E hc V v e he
+  obtain ⟨s1, s2, s3⟩ := _root_.GlobalTheory.SuppLocal.supp_local _ E hc V v e he
   let χ : P.adicCompletion E →+* LocAlg v := ψ.symm
   have hback' : ∀ x : GL (Fin V.rank) (P.adicCompletion E), bc ψ' (bc χ x) = x :=
     fun x => Units.ext (Matrix.ext fun i j => ψ.apply_symm_apply _)

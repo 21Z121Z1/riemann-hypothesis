@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.HomogeneousIdeals.ExistsRingEquivOfIsTranscendenceBasis
-public import Development.AbelianVarietyTheory.Proofs.HomogeneousIdeals.MvPolynomialIsHomogeneousComapWeighted
-public import Development.AbelianVarietyTheory.Proofs.HomogeneousIdeals.ExistsUniqueComapEqVanishingIdeal
+public import Development.AbelianVarietyTheory.Proofs.HomogeneousIdeals.Bundle0002
+public import Development.AbelianVarietyTheory.Proofs.HomogeneousIdeals.Bundle0007
+public import Development.AbelianVarietyTheory.Proofs.HomogeneousIdeals.Bundle0009
 
 @[expose] public section
 

@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import GroundTheory.GlobalFields.ComplexMultiplication.AlgebraicityGalois
-public import GroundTheory.GlobalFields.ComplexMultiplication.DualDescent
+public import GroundTheory.GlobalFields.ComplexMultiplication.Bundle0016
+public import GroundTheory.GlobalFields.ComplexMultiplication.Bundle0010
 
 @[expose] public section
 

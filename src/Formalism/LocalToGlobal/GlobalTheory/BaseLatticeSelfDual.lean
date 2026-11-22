@@ -3,7 +3,7 @@ module
 public import Formalism.LocalToGlobal.GlobalTheory.ExistsUnitaryOneDetEq
 public import Formalism.LocalToGlobal.HermitianColumns.InLocalDiscriminantKernel
 public import Formalism.HermitianLattices.HermitianLatticesProofs.DualLattice
-public import Formalism.HermitianLattices.HermitianLatticesProofs.DualBasic
+public import Formalism.HermitianLattices.HermitianLatticesProofs.Bundle0001
 public import Formalism.HermitianLattices.HermitianLatticesProofs.MajDual
 
 @[expose] public section

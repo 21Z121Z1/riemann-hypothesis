@@ -4,7 +4,7 @@ public import Development.WeilBound.CoreStatements.BranchingTraces.HeBranching
 public import Development.WeilBound.HeckeVectors.HeckeDoubleCosets.HeckeCoefficientDegrees.DegreeHcOfGoodPresentFamily
 public import CompanionTheory.HarishChandraModules.BesselParameterIntegrals.SmoothCyclicVectors.SmoothVec
 public import Formalism.SharpRestriction.CuspSpanNormBounds.BridgeCSchur
-public import Formalism.SharpRestriction.CuspSpanNormBounds.BruhatCellsKronecker.FamilyProjectorSectionLocal
+public import Formalism.SharpRestriction.CuspSpanNormBounds.BruhatCellsKronecker.Bundle0002
 
 @[expose] public section
 

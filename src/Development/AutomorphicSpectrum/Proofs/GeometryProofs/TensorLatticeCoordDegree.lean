@@ -2,11 +2,11 @@ module
 
 public import Mathlib
 public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.PotentialsBoundedRegSettingEqReference
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LocRatio
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.IsValues
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.CoordValuationBoundLocal
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0093
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0083
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0094
 public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.CoordDegreeBoundCharZero
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.GrGenOfIsFlagVBOn
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0026
 
 @[expose] public section
 

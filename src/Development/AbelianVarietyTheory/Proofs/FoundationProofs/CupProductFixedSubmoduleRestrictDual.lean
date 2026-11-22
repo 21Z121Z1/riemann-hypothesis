@@ -2,9 +2,9 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.Foundations.FinalTheorems
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.UnramifiedH1CardInvariantsStatement
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.TwistedDualEvalBidualApply
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CardKerMulCardEq
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0350
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0288
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0073
 
 @[expose] public section
 

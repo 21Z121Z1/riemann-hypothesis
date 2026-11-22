@@ -1,6 +1,6 @@
 module
 
-public import Formalism.LocalToGlobal.CharacterGerms.RowTiePOActLog
+public import Formalism.LocalToGlobal.CharacterGerms.Bundle0023
 public import Formalism.LocalToGlobal.CharacterGerms.RowTiePGerm
 
 @[expose] public section

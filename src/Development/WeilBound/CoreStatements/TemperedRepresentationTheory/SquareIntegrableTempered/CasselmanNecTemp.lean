@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Development.WeilBound.CoreStatements.TemperedRepresentationTheory.ZelevinskyJacquet.LSegJacquet
-public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.IsTemperedCoeff
+public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.Bundle0016
 
 @[expose] public section
 

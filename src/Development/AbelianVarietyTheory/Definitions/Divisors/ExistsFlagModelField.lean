@@ -2,10 +2,10 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.Divisors.UnitaryWeightExponentVectorSignatureWeightMuZero
-public import Development.AbelianVarietyTheory.Proofs.GenericRegularity.ExistsRingHomOfIsLieComb
-public import Development.AbelianVarietyTheory.Proofs.GenericRegularity.FinrankEqOfExistsUniqueComb
-public import Development.AbelianVarietyTheory.Proofs.GenericRegularity.ExistsEigenProjectorRingOfIntegers
-public import Development.AbelianVarietyTheory.Proofs.GenericRegularity.IsOpenImmersionOfSurj
+public import Development.AbelianVarietyTheory.Proofs.GenericRegularity.Bundle0013
+public import Development.AbelianVarietyTheory.Proofs.GenericRegularity.Bundle0022
+public import Development.AbelianVarietyTheory.Proofs.GenericRegularity.Bundle0002
+public import Development.AbelianVarietyTheory.Proofs.GenericRegularity.Bundle0015
 
 @[expose] public section
 

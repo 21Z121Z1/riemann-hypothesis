@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Formalism.PeriodIntegrals.ClassNumImQ
-public import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.ClassNumImQInt
+public import Formalism.PeriodIntegrals.Bundle0001
+public import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.Bundle0005
 public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.QuadraticInvariants.QuadPolyIrreducible
 
 @[expose] public section

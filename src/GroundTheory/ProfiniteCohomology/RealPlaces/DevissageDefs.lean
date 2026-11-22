@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import GroundTheory.ProfiniteCohomology.RealPlaces.CupSequence
+public import GroundTheory.ProfiniteCohomology.RealPlaces.Bundle0003
 public import GroundTheory.ProfiniteCohomology.PoincarePairs.Devissage
 
 @[expose] public section

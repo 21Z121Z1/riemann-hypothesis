@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Development.AutomorphicSpectrum.Definitions.JetCones.SymCapRev
-public import Formalism.RealPlaceAnalysis.ThirdArithmeticHolds
+public import Formalism.RealPlaceAnalysis.Bundle0004
 public import Formalism.RealPlaceAnalysis.FinalF
 public import Development.AutomorphicSpectrum.Proofs.JetProofs.EvFirst
 

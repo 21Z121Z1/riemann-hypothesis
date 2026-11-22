@@ -1,14 +1,14 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ReadsZero
-public import Development.AbelianVarietyTheory.Definitions.Divisors.ToKnownTheoremsOf
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1535
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0059
 public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.ExistsHorizontalGeneratorOfCharts
 public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.ToroidalCompactification
 public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.DeterminantSectionRule
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.CompactificationOpenOfClosed
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.FlatSectionAndDegree
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.FramePointCombinationMatrix
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0334
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0335
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0542
 
 @[expose] public section
 

@@ -3,7 +3,7 @@ module
 public import Mathlib
 public import Formalism.WachLatticeTwists.LagrangeExtensionCocycles.DualWByLettersExtended
 public import Formalism.SharpRestriction.LevelLetterCocycles.FrobeniusPowUniformizerFactorisation
-public import Formalism.SharpRestriction.LevelLetterCocycles.CrystallineLiftingBounds
+public import Formalism.SharpRestriction.LevelLetterCocycles.Bundle0007
 
 @[expose] public section
 

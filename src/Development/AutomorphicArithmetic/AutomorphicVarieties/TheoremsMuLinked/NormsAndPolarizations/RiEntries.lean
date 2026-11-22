@@ -1,10 +1,10 @@
 module
 
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.TheoremsMuLinked.NormsAndPolarizations.CjApply
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.LevelCohomology.SoCoefOf
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.HeightAndVanishing.CoefSup
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.WeakShimuraTheory.EigenbasisLifts.IntModel
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.TheoremsMuLinked.CharacteristicPolynomials.CocField
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.LevelCohomology.Bundle0002
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.HeightAndVanishing.Bundle0001
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.WeakShimuraTheory.EigenbasisLifts.Bundle0003
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.TheoremsMuLinked.CharacteristicPolynomials.Bundle0001
 
 @[expose] public section
 

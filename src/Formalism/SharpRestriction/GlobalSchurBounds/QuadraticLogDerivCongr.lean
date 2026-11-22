@@ -1,6 +1,6 @@
 module
 
-public import Formalism.SharpRestriction.GlobalTheoremInputs
+public import Formalism.SharpRestriction.Bundle0002
 public import Formalism.LocalRingCardinality.RankBoundMonotoneInDimension
 public import Formalism.SizeWindowBrackets.ChainSlopeWindows.GaloisMapComplexConjugation
 public import Formalism.SizeWindowBrackets.ChainSlopeWindows.JointDModelAppliesUnitLattice

@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Development.WeilBound.ThetaLifts.Reductions.SiegelCore
-public import Development.AbelianVarietyTheory.Proofs.CharacterTheory.InvariantSubspaceMobiusInverseCharpolyOfIrreduci
+public import Development.AbelianVarietyTheory.Proofs.CharacterTheory.Bundle0008
 public import Formalism.GaloisIrreducibility.GaloisIrreducibilityProofs.RestrictRoots
 
 @[expose] public section

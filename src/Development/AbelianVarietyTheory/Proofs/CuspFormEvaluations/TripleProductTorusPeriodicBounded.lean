@@ -3,8 +3,8 @@ module
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.TwoChartAtlas.TwoChartSt
 public import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.HermFormPullEqOfLbIsoPow
-public import Development.AbelianVarietyTheory.Proofs.ToricGeometry.TopLePreimageOfValAtNeZero
-public import Development.AbelianVarietyTheory.Proofs.ToricGeometry.HolFamilyOfIsPullback
+public import Development.AbelianVarietyTheory.Proofs.ToricGeometry.Bundle0018
+public import Development.AbelianVarietyTheory.Proofs.ToricGeometry.Bundle0016
 public import Development.AbelianVarietyTheory.Proofs.ToricGeometry.AppellHumbertDataOfIsoCube
 
 @[expose] public section

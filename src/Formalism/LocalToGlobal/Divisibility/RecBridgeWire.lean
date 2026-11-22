@@ -1,8 +1,7 @@
 module
 
 public import Formalism.LocalToGlobal.Divisibility.RecBridge
-public import Formalism.LocalToGlobal.GroupLattices.JointServices.ValIntNonneg
-public import Formalism.LocalToGlobal.GroupLattices.JointServices.Cut
+public import Formalism.LocalToGlobal.GroupLattices.JointServices.Bundle0001
 public import Formalism.SharpRestriction.Divisibility.ClosedSizeLink.DivisionAdmissibleFamilyOfData
 public import Formalism.SharpRestriction.Divisibility.WeightDegreeSizes
 public import Formalism.SharpRestriction.Divisibility.HookProducts.Compl3Record

@@ -1,12 +1,9 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicArithmetic.PrimeDiscriminants.ExistsPrimitiveRootTorsionOrder
-public import Development.AutomorphicArithmetic.CyclotomicBounds.ClassNumberBounds.CyclotomicTotient.NuBasic
-public import Development.AutomorphicArithmetic.CyclotomicBounds.ClassNumberBounds.CyclotomicTotient.TotientLeOfCycPowEqOne
-public import Development.AutomorphicArithmetic.CyclotomicBounds.ClassNumberBounds.CyclotomicTotient.NuSumApprox
-public import Development.AutomorphicArithmetic.CyclotomicBounds.RootsOfUnity.NuLe
-public import Development.AutomorphicArithmetic.CyclotomicBounds.RootsOfUnity.NuQDUnit
+public import Development.AutomorphicArithmetic.PrimeDiscriminants.Bundle0001
+public import Development.AutomorphicArithmetic.CyclotomicBounds.ClassNumberBounds.CyclotomicTotient.Bundle0002
+public import Development.AutomorphicArithmetic.CyclotomicBounds.RootsOfUnity.Bundle0003
 
 @[expose] public section
 

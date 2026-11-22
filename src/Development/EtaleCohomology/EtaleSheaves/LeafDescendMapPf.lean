@@ -1,6 +1,6 @@
 module
 
-public import Development.EtaleCohomology.EtaleSheaves.LeafDescendVCut
+public import Development.EtaleCohomology.EtaleSheaves.Bundle0047
 
 @[expose] public section
 

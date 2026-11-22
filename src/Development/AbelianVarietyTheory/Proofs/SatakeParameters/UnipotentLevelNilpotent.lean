@@ -4,7 +4,7 @@ public import Mathlib
 public import Formalism.LocalToGlobal.KernelLattices.FirstKernelLawReading
 public import Formalism.LocalToGlobal.KernelLattices.KernelLocalFactors.PeriodLatticeFinitelyGenerated
 public import Formalism.LocalToGlobal.InertKernelTheory.InertCoprimeLemmas.RepDataRec
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.NatCastMemOfPrimeDvdAbsNorm
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0081
 
 @[expose] public section
 

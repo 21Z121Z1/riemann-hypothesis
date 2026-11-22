@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Proofs.MetricProofs.DegreeOfIsIntersectionSystem
-public import Development.AutomorphicSpectrum.Proofs.MetricProofs.DegreeGenericOfDegree
+public import Development.AutomorphicSpectrum.Proofs.MetricProofs.Bundle0027
+public import Development.AutomorphicSpectrum.Proofs.MetricProofs.Bundle0059
 public import Development.WeilBound.CoreStatements.AutomorphicKernels.MoriwakiBigness.MoriwakiRankBounds.OfDegreeGeneric
 public import Development.WeilBound.CoreStatements.AutomorphicKernels.MoriwakiBigness.MoriwakiRankBounds.OfUpper
 

@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Statements.PlaceShiftStatements.TraceDefinitePairsEqAutomorphicTrace
+public import Development.AbelianVarietyTheory.Statements.PlaceShiftStatements.Bundle0001
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RelatedPairsOrbitalTermEq
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FinsumOrbitFibreSwap
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0054
 
 @[expose] public section
 

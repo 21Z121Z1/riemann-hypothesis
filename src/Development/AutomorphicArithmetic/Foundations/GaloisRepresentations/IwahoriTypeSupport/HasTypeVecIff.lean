@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.NonemptyEquivMultiProdOne
-public import PositivityTheory.AutomorphicForms.PublishedInputs.NonzeroTypes.GIface
+public import PositivityTheory.AutomorphicForms.PublishedInputs.NonzeroTypes.Bundle0001
 
 @[expose] public section
 

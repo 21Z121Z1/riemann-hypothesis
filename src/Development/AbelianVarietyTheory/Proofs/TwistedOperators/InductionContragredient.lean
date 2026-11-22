@@ -1,12 +1,11 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.HasFiniteLengthOfIsIrreducible
+public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.Bundle0001
 public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IwahoriProjSurjective
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.LeviIntegralFacts
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsOpenNormalisedSubgroupSubset
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsInvariantForm
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IntegralIntegralGLMulRightComplexProductSigma
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0043
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0037
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0036
 
 @[expose] public section
 

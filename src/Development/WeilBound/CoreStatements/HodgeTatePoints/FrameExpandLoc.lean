@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.LeadMinor
-public import Development.WeilBound.CoreStatements.HodgeTatePoints.CoefMemDual
+public import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.Bundle0005
+public import Development.WeilBound.CoreStatements.HodgeTatePoints.Bundle0023
 
 @[expose] public section
 

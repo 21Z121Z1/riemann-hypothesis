@@ -1,11 +1,10 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Proofs.MetricProofs.HasStepCharts
-public import Development.AutomorphicSpectrum.Proofs.MetricProofs.SelM
-public import Development.AutomorphicSpectrum.Proofs.MetricProofs.IsClosedSectionBoundary
-public import Development.AutomorphicSpectrum.Proofs.MetricProofs.LinearIndependentMulSelM
-public import Development.AutomorphicSpectrum.Proofs.MetricProofs.GramMatrixSubScalarPosSemidefStatement
+public import Development.AutomorphicSpectrum.Proofs.MetricProofs.Bundle0032
+public import Development.AutomorphicSpectrum.Proofs.MetricProofs.Bundle0035
+public import Development.AutomorphicSpectrum.Proofs.MetricProofs.Bundle0039
+public import Development.AutomorphicSpectrum.Proofs.MetricProofs.Bundle0040
 
 @[expose] public section
 
@@ -296,7 +295,7 @@ theorem gramterm : ∀ (N : ℕ) (S : Finset (Fin N)) (E : Type) [NormedAddCommG
   have hP : 0 < b * R := by positivity
   have hPQ : b * R ≤ b * R * Ex := le_mul_of_one_le_right hP.le hE1
   have hbR : b ≤ b * R := le_mul_of_one_le_right hb0.le hR1
-  have hmain := GlobalTheory.T.gram_matrix_sub_scalar_posSemidef N S.card E G (fun y => A y * selM S) u (a₀ / t) (b * R) (b * R * Ex) ha' hP hPQ
+  have hmain := _root_.GlobalTheory.CompanionTheory.Ar.PB.StepW.gram_grad_scaled N S.card E G (fun y => A y * selM S) u (a₀ / t) (b * R) (b * R * Ex) ha' hP hPQ
     hGd hVd (hev.mono fun y hy => ⟨hy.1, GramPot.linearIndependent_mul_selM hy.2 S⟩) hlow
     (fun p q => ⟨(hGe p q).trans (htR.trans (le_mul_of_one_le_left (by linarith) hb)), hGb p q⟩)
     (fun p q => ⟨by

@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Formalism.LocalToGlobal.BesselHermitianTheta.TiedWeil
-public import Formalism.LocalRingCardinality.ConjSqrtMinusD
+public import Formalism.LocalRingCardinality.Bundle0001
 
 @[expose] public section
 

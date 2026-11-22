@@ -1,12 +1,12 @@
 module
 
-public import Formalism.AdmissibleDesigns.NormalizedRingData
-public import Formalism.AdmissibleDesigns.DisplayForms
+public import Formalism.AdmissibleDesigns.Bundle0006
+public import Formalism.AdmissibleDesigns.Bundle0004
 public import Formalism.AdmissibleDesigns.RankReductionIdempotentOne
 public import Formalism.AdmissibleDesigns.FgTopContinuousLinearMap
 public import Formalism.AdmissibleDesigns.HigherColumnInvariantsBound
-public import Formalism.AdmissibleDesigns.InertiaActsTrivially
-public import Formalism.AdmissibleDesigns.KernelLengthHigherColumns
+public import Formalism.AdmissibleDesigns.Bundle0003
+public import Formalism.AdmissibleDesigns.Bundle0008
 
 @[expose] public section
 

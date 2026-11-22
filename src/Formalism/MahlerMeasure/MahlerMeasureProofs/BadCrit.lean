@@ -1,6 +1,6 @@
 module
 
-public import Formalism.MahlerMeasure.StatementT
+public import Formalism.MahlerMeasure.Bundle0006
 
 @[expose] public section
 

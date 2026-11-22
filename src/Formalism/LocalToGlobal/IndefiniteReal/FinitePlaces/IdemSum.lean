@@ -1,7 +1,7 @@
 module
 
 public import Formalism.LocalToGlobal.IndefiniteReal.FinitePlaces.FinPartPhiE
-public import Formalism.LocalToGlobal.IndefiniteReal.FinitePlaces.TwoSplit
+public import Formalism.LocalToGlobal.IndefiniteReal.FinitePlaces.Bundle0004
 
 @[expose] public section
 

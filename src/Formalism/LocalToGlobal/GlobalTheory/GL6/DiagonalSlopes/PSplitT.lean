@@ -1,9 +1,9 @@
 module
 
-public import Formalism.LocalToGlobal.GlobalTheory.GL6.DiagonalSlopes.LocalDiamondOfSplitIdempotent
+public import Formalism.LocalToGlobal.GlobalTheory.GL6.DiagonalSlopes.Bundle0002
 public import Formalism.LocalToGlobal.GlobalTheory.GL6.DiagonalSlopes.CharacterFiniteLevelZeroOfForms
 public import Formalism.LocalRingCardinality.RankBoundMonotoneInDimension
-public import Formalism.LocalRingCardinality.IntCastDvdOfDvdIntegers
+public import Formalism.LocalRingCardinality.Bundle0001
 
 @[expose] public section
 

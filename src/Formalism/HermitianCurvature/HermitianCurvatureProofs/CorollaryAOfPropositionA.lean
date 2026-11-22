@@ -1,7 +1,7 @@
 module
 
 public import Formalism.HermitianCurvature.StatementSz
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.MassRatioFormula
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0004
 
 @[expose] public section
 

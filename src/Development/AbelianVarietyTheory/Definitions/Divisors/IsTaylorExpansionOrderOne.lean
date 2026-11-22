@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.Divisors.AnalyticChartsRealizationCompPointEq
-public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.GaussManinPeriods
+public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.Bundle0006
 
 @[expose] public section
 

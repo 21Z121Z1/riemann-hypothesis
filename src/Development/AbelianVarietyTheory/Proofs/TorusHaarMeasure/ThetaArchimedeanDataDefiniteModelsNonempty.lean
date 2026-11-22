@@ -3,32 +3,37 @@ module
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.HeightFunctions.GrowthConstantBoundGcR
 public import Development.AbelianVarietyTheory.Definitions.ThetaValues.GamAt
-public import Development.AbelianVarietyTheory.Definitions.ArchimedeanThetaValues.CarchAt
+public import Development.AbelianVarietyTheory.Definitions.ArchimedeanThetaValues.Bundle0001
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PlaceDivisors.StChartF
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PullbackSections.NoCommonZeroSt
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PullbackSections.SupBoundPageRows
-public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.ThExprUniqOfChartIndep2
-public import Formalism.SharpRestriction.GenusPolyhedralBounds.RelativeIndexClassSets.InnerEuclideanEmbeddingEqAverage
-public import Formalism.LocalToGlobal.ProjectiveLattices.CurveAsm
-public import Formalism.LocalToGlobal.ProjectiveLattices.CurveLocInst
-public import Formalism.LocalToGlobal.ProjectiveLattices.RealPtPf
-public import Formalism.LocalToGlobal.ProjectiveLattices.TieInst
-public import Formalism.LocalToGlobal.ProjectiveLattices.CombAlgOfCombBound
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PullbackSections.Bundle0013
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PullbackSections.Bundle0003
+public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0007
+public import Formalism.SharpRestriction.GenusPolyhedralBounds.RelativeIndexClassSets.Bundle0005
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0040
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0043
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0039
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0037
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0034
 public import Formalism.LocalToGlobal.ProjectiveLattices.DepthTie
-public import Formalism.LocalToGlobal.ProjectiveLattices.FullExists
 public import Development.AbelianVarietyTheory.Definitions.ThetaValues.Generic
-public import Formalism.LocalToGlobal.ProjectiveLattices.AxHLAM
-public import Formalism.LocalToGlobal.ProjectiveLattices.OneCusp
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.FundamentalDomains.SiegelSpaceAlgebraHolds
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArakelovVolumes.UpperBounds.RhGradStatementPfB
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0031
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0032
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.FundamentalDomains.Bundle0038
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArakelovVolumes.UpperBounds.Bundle0016
 public import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.ValAtAlgebraMap
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArakelovVolumes.UpperBounds.BigStatementPfB
-public import Development.AbelianVarietyTheory.Proofs.TorusHaarMeasure.ExistsCompactOfDefinite
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArakelovVolumes.UpperBounds.Bundle0021
+public import Development.AbelianVarietyTheory.Proofs.TorusHaarMeasure.Bundle0011
 public import Development.AbelianVarietyTheory.Proofs.TorusHaarMeasure.TranscendenceDegreeRatiosCuspFormsComponents
-public import Development.AbelianVarietyTheory.Proofs.GenericRegularity.GenFrExAndGenFromTest
-public import Development.AbelianVarietyTheory.Proofs.TorusHaarMeasure.CurvatureMarginsDefiniteCaseStatement
-public import Development.AbelianVarietyTheory.Proofs.TorusHaarMeasure.RunWeightDominantAndGapsDefiniteCaseStatement
-public import Development.AbelianVarietyTheory.Proofs.GenericRegularity.ExistsCuspFormNonzeroEveryComponentStatement
+public import Development.AbelianVarietyTheory.Proofs.GenericRegularity.Bundle0029
+public import Development.AbelianVarietyTheory.Proofs.TorusHaarMeasure.Bundle0040
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArakelovVolumes.UpperBounds.LocalUnfoldBStatementHolds
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.FundamentalDomains.Bundle0004
+public import Development.AbelianVarietyTheory.Proofs.TorusHaarMeasure.Bundle0041
+public import Formalism.SharpRestriction.GenusPolyhedralBounds.RelativeIndexClassSets.Bundle0007
+public import Formalism.SharpRestriction.GenusPolyhedralBounds.RelativeIndexClassSets.LiftIndexPowFourLeDegree
+public import Formalism.SharpRestriction.GenusPolyhedralBounds.RelativeIndexClassSets.Bundle0003
+public import Formalism.LocalToGlobal.ProjectiveLattices.ArchimedeanQuadraticData.ArcLineFunctions.ArcDatumIsArcPointBasis
+public import Development.AbelianVarietyTheory.Proofs.GenericRegularity.Bundle0036
 
 @[expose] public section
 
@@ -287,7 +292,7 @@ theorem exists_archInM (X : Data E r) (hr : 0 < r) (hp : X.p0 = 0) (hΨ : Nonemp
         rw [← mul_assoc]
         exact mul_le_mul_of_nonneg_right h' (by positivity)⟩ }
   refine ⟨Xa, rfl, k0, rfl, rfl, rfl, rfl, fun a => rfl, by norm_num [Xa], fun x => one_mul _, ?_⟩
-  exact GlobalTheory.T.curvature_margins_definite_case E r X Xa hp hΨ (fun _ => rfl) hL hA
+  exact _root_.GlobalTheory.Shares.margins_of_definite E r X Xa hp hΨ (fun _ => rfl) hL hA
 
 end Model
 
@@ -301,7 +306,7 @@ theorem archAt_nonempty_of_definite : ∀ (D : D7) (T : Top D) (h : LawsP T) (EX
   have hG : GenFrEx (T.Q.Xo D.R.m) T.Q.c :=
     (GlobalTheory.Reg.genFrEx_and_genFromTest _ _ _ _ (T.Q.Xo D.R.m) T.Q.c).1
   obtain ⟨⟨g0, hg0, -⟩, hnz⟩ :=
-    GlobalTheory.T.exists_cuspForm_nonzero_everyComponent D T h D.R.m hj large₂ H C2 A2 CT ka wL wF Tn nP nW h0 hG hPg
+    _root_.GlobalTheory.RunJoin.exists_nonZeroComp_and_ne_zero D T h D.R.m hj large₂ H C2 A2 CT ka wL wF Tn nP nW h0 hG hPg
   obtain ⟨-, -, -, -, -, w2, hG2, th, -, hth, -⟩ :=
     ((Formalism.MainNotions.Gaps.FamilyHypotheses.hypC_iff large₂ _ H C2 A2 7 CT S ka wL wF Tn nP nW h0 nus).mp hC).2.2.2.2
   have hσ : GoodEmb T.Q.c T.σ₀ := Formalism.L2.Pj.Core.good_σ₀ T.toCore
@@ -325,7 +330,7 @@ theorem archAt_nonempty_of_definite : ∀ (D : D7) (T : Top D) (h : LawsP T) (EX
     intro k
     obtain ⟨hadd, hsm, -, -, hnd, -⟩ := GlobalTheory.Shares.WtDic.weights_dictionary D T h D.R.m hj k
     obtain ⟨hp0, hSD, hgap⟩ :=
-      GlobalTheory.T.runWeight_dominant_and_gaps_definiteCase D T h D.R.m hj large₂ H C2 A2 7 CT ka wL wF Tn nP nW h0 hPg.hyp rfl hPg.r8 k
+      _root_.GlobalTheory.RunWeightDomDef.run_weight_dom_definite D T h D.R.m hj large₂ H C2 A2 7 CT ka wL wF Tn nP nW h0 hPg.hyp rfl hPg.r8 k
     have hw2 : laR T D.R.m w2 k =
         (nd ((T.U D.R.m T.σ₀).X k) + 4) • laR T D.R.m wL k - laR T D.R.m wF k := by
       have heq : wadd w2 wF = wsmul (WeightFamilies.dimY D D.R.m + 4) wL :=

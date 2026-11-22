@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.HomogeneousIdeals.PowLeComapMapPow
+public import Development.AbelianVarietyTheory.Proofs.HomogeneousIdeals.Bundle0003
 
 @[expose] public section
 

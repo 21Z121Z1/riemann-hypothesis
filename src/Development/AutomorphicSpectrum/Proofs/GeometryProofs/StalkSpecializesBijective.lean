@@ -1,12 +1,12 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.TwTan
-public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.GlueApplyOfNotInFibre
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.Bundle0007
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.Bundle0005
 public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsHodgeLine
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.InterNamed
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.GrIsGenAt
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.GenMapStalkMap
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.Bundle0012
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0026
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0022
 
 @[expose] public section
 

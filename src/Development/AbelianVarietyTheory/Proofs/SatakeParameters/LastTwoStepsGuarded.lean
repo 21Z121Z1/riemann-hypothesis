@@ -3,9 +3,9 @@ module
 public import Mathlib
 public import Formalism.LocalToGlobal.Columns.FiniteSumNonzeroLargeDepth
 public import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.RedPEqZeroOfDiv
-public import Development.AbelianVarietyTheory.BlockTheory.ThetaLiftGeometry.FourierColumnIndicator
+public import Development.AbelianVarietyTheory.BlockTheory.ThetaLiftGeometry.Bundle0002
 public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.MemZmuOfPowPred
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ChainDataGuarded
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0060
 
 @[expose] public section
 

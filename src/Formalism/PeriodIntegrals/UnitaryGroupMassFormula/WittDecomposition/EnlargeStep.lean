@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.WittDecomposition.Imports
+public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.WittDecomposition.Bundle0001
 
 @[expose] public section
 

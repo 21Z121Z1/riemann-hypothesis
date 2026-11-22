@@ -2,13 +2,13 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.PlaceAdaptation.AdaptStd
-public import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.ExistsPowSpanXLeSpanFormalModuleMatrixStatement
-public import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.MvPowerSeriesSubstConstTermsLocalAlgHomSpec
-public import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.ExistsFiniteBasisPowerSeriesSubstFiniteColength
-public import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.InvariantsAndTraceFiniteFreeDomainEndomorphisms
-public import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.FormalMatrixKernelFiniteNcardEqRankStatement
-public import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.FormalModuleMatrixApplyPointsActionLawsStatement
-public import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.FormalGroupTranslateAutomorphismAndMatrixKernelStatement
+public import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.Bundle0044
+public import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.Bundle0035
+public import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.Bundle0031
+public import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.Bundle0033
+public import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.Bundle0045
+public import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.Bundle0041
+public import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.FormalGroupTranslateAutomorphismAndMatrixKernel
 
 @[expose] public section
 
@@ -80,7 +80,7 @@ theorem descends_of_invariant : ∀ (V : Type) [CommRing V] [IsDomain V] [IsDisc
   obtain ⟨r, b, hr, hb⟩ := GlobalTheory.FiniteColength.exists_basis_subst_finrank_quotient V (Fin n × Fin d) φ hφ0 (GlobalTheory.T.exists_pow_span_X_le_span_formalModuleMatrix V d O B hB n q q' N hN hq)
   obtain ⟨hfin, hcard⟩ := GlobalTheory.T.formalMatrixKernel_finite_ncard_eq_rank V d O B hB n q q' N hN hq hj hs
   have : IsDomain (MvPowerSeries (Fin n × Fin d) V) := NoZeroDivisors.to_isDomain _
-  have hsh := (GlobalTheory.T.formalGroupTranslate_automorphism_and_matrixKernel V d O B n q).2.2
+  have hsh := (_root_.GlobalTheory.PlaceInt.shift_kerM V d O B n q).2.2
   obtain ⟨a, ha⟩ := mem_range_of_invariant (MvPowerSeries (Fin n × Fin d) V) (MvPowerSeries (Fin n × Fin d) V)
     (Ψ : MvPowerSeries (Fin n × Fin d) V →+* MvPowerSeries (Fin n × Fin d) V) r b
     (fun f => by simpa only [hs', RingHom.coe_coe] using hb f) (kerM B q) hfin (hcard.trans hr) (shift B.G.F)

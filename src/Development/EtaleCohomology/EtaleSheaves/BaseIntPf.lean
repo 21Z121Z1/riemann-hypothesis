@@ -1,7 +1,7 @@
 module
 
-public import Development.EtaleCohomology.EtaleSheaves.AlgebraicIntegralClosure
-public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.EqClosedPointOfNotMemRange
+public import Development.EtaleCohomology.EtaleSheaves.Bundle0054
+public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.Bundle0048
 
 @[expose] public section
 

@@ -1,6 +1,6 @@
 module
 
-public import Formalism.SharpRestriction.GrowthBounds.SegmentDegree.SumMemLaSet
+public import Formalism.SharpRestriction.GrowthBounds.SegmentDegree.Bundle0006
 
 @[expose] public section
 

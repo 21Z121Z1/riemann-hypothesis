@@ -6,15 +6,15 @@ public import Development.AbelianVarietyTheory.Statements.SemistableTorsion.UTor
 public import Development.AbelianVarietyTheory.PublishedTheorems.SemistableReduction₂.SemistableReductionSt
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.SecBaseChangeAnySt
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.UniformisationConclusion
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.AmplePt
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.SabComp
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.Bundle0018
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.Bundle0006
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.ChartPullbacks.CubePullbacks.CubePull
-public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.EndoLbIsoSymmetryHypothesisExtendNormalModel
-public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsChartUnit
-public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.LineBundleIsoExtendOfNormalBase
-public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.KTrivOfKTrivNonemptyOpenNormalCharZeroStatement
+public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.Bundle0168
+public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.Bundle0068
+public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.Bundle0034
+public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.KTrivOfKTrivNonemptyOpenNormalCharZero
 public import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.RelAmpleOfLocallyOnBase
-public import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.IsIntegralOfSmoothFieldOfConnectedSpace
+public import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.Bundle0001
 public import Development.AbelianVarietyTheory.Proofs.CovolumeBounds.IsProjOverIffIsProperAndExistsIsAmpleLB
 
 @[expose] public section
@@ -272,7 +272,7 @@ theorem relAmple_and_kTriv : ∀ (o Ω : Type) [CommRing o] [Field Ω] [Algebra 
   have hab : IsAbelianScheme ((Over.pullback W.ι).obj Q.G) :=
     ⟨inferInstance, MorphismProperty.of_isPullback (P := @Smooth) gp.1 ‹_›, hA.2 W hW,
       MorphismProperty.of_isPullback (P := @GeometricallyConnected) gp.1 ‹_›⟩
-  refine GlobalTheory.T.kTriv_of_kTriv_nonemptyOpen_normal_charZero laws W (isNormalScheme_opens hO.normal W) (fun n hn h => ?_) (W.ι ⁻¹ᵁ U₀) ?_ _
+  refine _root_.GlobalTheory.KTrivSpread.kTriv_of_open_normal laws W (isNormalScheme_opens hO.normal W) (fun n hn h => ?_) (W.ι ⁻¹ᵁ U₀) ?_ _
     ((cubeMapOf gp).rigLB Q.L hL' hr) c hab ha ?_
   · have e := congrArg ((M.res W hne).comp W.topIso.hom.hom) h
     rw [map_natCast, map_zero] at e

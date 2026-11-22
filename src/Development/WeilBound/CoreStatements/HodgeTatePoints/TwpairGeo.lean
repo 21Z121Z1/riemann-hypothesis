@@ -3,8 +3,8 @@ module
 public import Mathlib
 public import Development.WeilBound.CoreStatements.HodgeTatePoints.TwpairAlg
 public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.FiniteOpenHopfOrder
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.IsFinOpenSubOfFinite
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsDenominatorRegular
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0027
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0017
 public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.FinitePartLePreimageOfClosedFibreSubset
 
 @[expose] public section

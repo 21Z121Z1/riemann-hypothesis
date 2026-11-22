@@ -1,11 +1,11 @@
 module
 
 public import Mathlib
-public import Development.WeilBound.CoreStatements.TorusUniformisation.ChowMahlerFamilies.IsDerAt0
-public import Development.WeilBound.CoreStatements.HodgeTatePoints.CntCoord
-public import Development.WeilBound.CoreStatements.HodgeTatePoints.RaChar
-public import Development.WeilBound.CoreStatements.HodgeTatePoints.DetUpdateRowDiagonal
-public import ReciprocityTheory.DualLattices.HasLenCokerDet
+public import Development.WeilBound.CoreStatements.TorusUniformisation.ChowMahlerFamilies.Bundle0022
+public import Development.WeilBound.CoreStatements.HodgeTatePoints.Bundle0023
+public import Development.WeilBound.CoreStatements.HodgeTatePoints.Bundle0009
+public import Development.WeilBound.CoreStatements.HodgeTatePoints.Bundle0010
+public import ReciprocityTheory.DualLattices.Bundle0021
 
 @[expose] public section
 

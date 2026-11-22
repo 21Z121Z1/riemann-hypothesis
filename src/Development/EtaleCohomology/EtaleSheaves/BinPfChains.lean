@@ -1,6 +1,6 @@
 module
 
-public import Development.EtaleCohomology.EtaleSheaves.ClsBiprodEqZero
+public import Development.EtaleCohomology.EtaleSheaves.Bundle0035
 
 @[expose] public section
 

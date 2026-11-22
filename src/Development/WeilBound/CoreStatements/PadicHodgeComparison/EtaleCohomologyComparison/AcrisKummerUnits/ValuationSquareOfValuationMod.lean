@@ -1,31 +1,27 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ComparableQuotientOfValuation
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SurjectivePreservesClosednessComparabilityStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IdempotentLocalInductionStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MemIdempotentComplementIffStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IdempotentLocalizationDichotomyStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ValuationOfLocalDichotomyStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ComparableModSquareLocalizationStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.DichotomyOfComparableModSquareStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.PolynomialRootsOfClosedQuotientStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.AbsolutelyClosedPolynomialSplitsStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.AbsolutelyClosedUnitCoefficientRootStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.NewtonPolygonSlopeExistenceStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.NewtonApproximationOfDichotomyStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.NewtonApproximationLocalToGlobalStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.PowerDivisibilityRootExtractionStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.AbsolutelyIntegrallyClosedOfNewtonStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IntegralLocalizationAwayInRingStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LocalizationPreservesClosednessStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ValuationPowerIffStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.EtaleSurjectiveLocalSectionStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SectionOverIdempotentPropertiesStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SectionOrthogonalIdempotentSumStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.DividedPowerIdealTorsionFree
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.DividedPowerQuotientExistsStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.DividedPowerMorphismCompatibleStatement
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0028
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0068
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0034
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0039
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0061
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0070
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0073
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0055
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0065
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0052
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0085
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0041
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0104
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0079
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0044
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0035
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0050
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0095
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0047
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0048
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0029
 public import Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.AcrisKummerUnits.Splits
 
 @[expose] public section
@@ -34,18 +30,18 @@ open CategoryTheory AlgebraicGeometry CrystallineSemistableComparison Crystallin
 
 theorem CrystallineSemistableComparison.RL.surj_pass : ∀ {S : Type} [CommRing S] {T : Type} [CommRing T] (φ : S →+* T), Function.Surjective φ → (Aic (S := S) → Aic (S := T)) ∧ (Val0 (S := S) → Val0 (S := T)) := GlobalTheory.T.surjective_preserves_closedness_comparability
 
-theorem CrystallineSemistableComparison.RL.glue : ∀ {S : Type} [CommRing S] (Q : S → Prop), Q 0 → (∀ e e' : S, IsIdempotentElem e → IsIdempotentElem e' → Q e → Q (e * e')) → (∀ e e' : S, IsIdempotentElem e → IsIdempotentElem e' → e * e' = 0 → Q e → Q e' → Q (e + e')) → (∀ m : Ideal S, m.IsMaximal → ∃ e, IsIdempotentElem e ∧ e ∉ m ∧ Q e) → Q 1 := GlobalTheory.T.idempotent_local_induction
+theorem CrystallineSemistableComparison.RL.glue : ∀ {S : Type} [CommRing S] (Q : S → Prop), Q 0 → (∀ e e' : S, IsIdempotentElem e → IsIdempotentElem e' → Q e → Q (e * e')) → (∀ e e' : S, IsIdempotentElem e → IsIdempotentElem e' → e * e' = 0 → Q e → Q e' → Q (e + e')) → (∀ m : Ideal S, m.IsMaximal → ∃ e, IsIdempotentElem e ∧ e ∉ m ∧ Q e) → Q 1 := _root_.GlobalTheory.CompanionTheory.Idem.glue_idempotent_property
 
-theorem CrystallineSemistableComparison.RL.dich_comp : ∀ {S : Type} [CommRing S] (ϖ : S) (P : Ideal S), P.IsPrime → (Val ϖ → Dich (Ideal.Quotient.mk (compI P) ϖ)) ∧ (ϖ ∈ nonZeroDivisors S → Ideal.Quotient.mk (compI P) ϖ ∈ nonZeroDivisors (S ⧸ compI P)) := GlobalTheory.T.idempotent_localization_dichotomy
+theorem CrystallineSemistableComparison.RL.dich_comp : ∀ {S : Type} [CommRing S] (ϖ : S) (P : Ideal S), P.IsPrime → (Val ϖ → Dich (Ideal.Quotient.mk (compI P) ϖ)) ∧ (ϖ ∈ nonZeroDivisors S → Ideal.Quotient.mk (compI P) ϖ ∈ nonZeroDivisors (S ⧸ compI P)) := _root_.GlobalTheory.CompanionTheory.CompDich.dich_comp
 
-theorem CrystallineSemistableComparison.RL.val_of_dich : ∀ {S : Type} [CommRing S] (ϖ : S), (∀ m : Ideal S, m.IsMaximal → Dich (Ideal.Quotient.mk (compI m) ϖ)) → Val ϖ := GlobalTheory.T.valuation_of_local_dichotomy
+theorem CrystallineSemistableComparison.RL.val_of_dich : ∀ {S : Type} [CommRing S] (ϖ : S), (∀ m : Ideal S, m.IsMaximal → Dich (Ideal.Quotient.mk (compI m) ϖ)) → Val ϖ := _root_.GlobalTheory.CompanionTheory.Idem.val_of_dich
 
 theorem CrystallineSemistableComparison.RL.valuation_square_of_valuation_mod : ∀ {S : Type} [CommRing S] (ϖ : S) [IsAdicComplete (Ideal.span {ϖ}) S], Val0 (S := S ⧸ Ideal.span {ϖ ^ 2}) → ∀ P : Ideal S, P.IsPrime → ∀ f g : S ⧸ compI P, f ∈ Ideal.span {g, Ideal.Quotient.mk (compI P) ϖ ^ 2} ∨ g ∈ Ideal.span {f, Ideal.Quotient.mk (compI P) ϖ ^ 2} := by
   intro S _ ϖ _ h P hP f g
   have hcomp := GlobalTheory.CompanionTheory.CompMod.mem_span_or_mem_span ϖ h P hP f g
   exact hcomp
 
-theorem CrystallineSemistableComparison.RL.dich_of_mod : ∀ {S : Type} [CommRing S] (ϖ : S), ϖ ∈ (⊥ : Ideal S).jacobson → (∀ f g : S, f ∈ Ideal.span {g, ϖ ^ 2} ∨ g ∈ Ideal.span {f, ϖ ^ 2}) → Dich ϖ := GlobalTheory.T.dichotomy_of_comparable_mod_square
+theorem CrystallineSemistableComparison.RL.dich_of_mod : ∀ {S : Type} [CommRing S] (ϖ : S), ϖ ∈ (⊥ : Ideal S).jacobson → (∀ f g : S, f ∈ Ideal.span {g, ϖ ^ 2} ∨ g ∈ Ideal.span {f, ϖ ^ 2}) → Dich ϖ := _root_.GlobalTheory.CompanionTheory.DichMod.dich_of_mod
 
 open Polynomial in
 theorem CrystallineSemistableComparison.RL.step_comp : ∀ {S : Type} [CommRing S] (ϖ : S), ϖ ∈ (⊥ : Ideal S).jacobson → ϖ ∈ nonZeroDivisors S → Dich ϖ → Aic (S := S ⧸ Ideal.span {ϖ ^ 2}) → Step ϖ := by
@@ -68,7 +64,7 @@ theorem CrystallineSemistableComparison.RL.step_comp : ∀ {S : Type} [CommRing 
         have h0 : ϖ ^ (n + 1) * x = 0 := by
           rw [he]; linear_combination e * hx
         exact (mem_nonZeroDivisors_iff_right.mp hpow) x (by rw [mul_comm]; exact h0)
-      obtain ⟨c, hc1, i0, hi1, hi2, hi3⟩ := GlobalTheory.T.newton_polygon_slope_existence ϖ hD hRoots (fun i => Q.coeff i)
+      obtain ⟨c, hc1, i0, hi1, hi2, hi3⟩ := _root_.GlobalTheory.CompanionTheory.NewtonSlope.first_slope ϖ hD hRoots (fun i => Q.coeff i)
         Q.natDegree (n + 1) hd hQ.coeff_natDegree hdiv
       have hs : ∀ i, ∃ t, (i = 0 → t = 1) ∧
           (i ≤ Q.natDegree → Q.coeff i * c ^ i = Q.coeff 0 * t) := by
@@ -192,18 +188,18 @@ theorem CrystallineSemistableComparison.RL.step_comp : ∀ {S : Type} [CommRing 
 
 theorem CrystallineSemistableComparison.RL.step_glob : ∀ {S : Type} [CommRing S] (ϖ : S), (∀ m : Ideal S, m.IsMaximal → Step (Ideal.Quotient.mk (compI m) ϖ)) → Step ϖ := GlobalTheory.T.newton_approximation_local_to_global
 
-theorem CrystallineSemistableComparison.RL.pow_dvd : ∀ {S : Type} [CommRing S] (ϖ : S), ϖ ∈ nonZeroDivisors S → Val ϖ → ∀ (z : S) (m d : ℕ), 0 < d → ϖ ^ (m * d) ∣ z ^ d → ϖ ^ m ∣ z := GlobalTheory.T.power_divisibility_root_extraction
+theorem CrystallineSemistableComparison.RL.pow_dvd : ∀ {S : Type} [CommRing S] (ϖ : S), ϖ ∈ nonZeroDivisors S → Val ϖ → ∀ (z : S) (m d : ℕ), 0 < d → ϖ ^ (m * d) ∣ z ^ d → ϖ ^ m ∣ z := _root_.GlobalTheory.CompanionTheory.ValPowDvd.dvd_of_pow_mul_dvd_pow
 
 theorem CrystallineSemistableComparison.RL.aic_limit : ∀ {S : Type} [CommRing S] (ϖ : S) [IsAdicComplete (Ideal.span {ϖ}) S], Step ϖ → (∀ (z : S) (m d : ℕ), 0 < d → ϖ ^ (m * d) ∣ z ^ d → ϖ ^ m ∣ z) → Aic (S := S) := GlobalTheory.T.absolutely_integrally_closed_of_newton
 
-theorem CrystallineSemistableComparison.RL.int_closed : ∀ {S : Type} [CommRing S] (ϖ : S), ϖ ∈ nonZeroDivisors S → Val ϖ → ∀ x : Localization.Away ϖ, IsIntegral S x → ∃ y : S, algebraMap S (Localization.Away ϖ) y = x := GlobalTheory.T.integral_localization_away_in_ring
+theorem CrystallineSemistableComparison.RL.int_closed : ∀ {S : Type} [CommRing S] (ϖ : S), ϖ ∈ nonZeroDivisors S → Val ϖ → ∀ x : Localization.Away ϖ, IsIntegral S x → ∃ y : S, algebraMap S (Localization.Away ϖ) y = x := _root_.GlobalTheory.CompanionTheory.ValIntClosed.exists_eq_of_isIntegral
 
 theorem CrystallineSemistableComparison.RL.loc_aic : ∀ {S : Type} [CommRing S] (ϖ : S), (Val ϖ → Loc (S := S) ∧ Loc (S := Localization.Away ϖ)) ∧ (Aic (S := S) → Aic (S := Localization.Away ϖ)) := by
   intro S _ ϖ
   have hloc := GlobalTheory.CompanionTheory.LocAic.main ϖ
   exact hloc
 
-theorem CrystallineSemistableComparison.RL.val_pow : ∀ {S : Type} [CommRing S] (ϖ : S) (k : ℕ), k ≠ 0 → (Val (ϖ ^ k) ↔ Val ϖ) ∧ (IsAdicComplete (Ideal.span {ϖ ^ k}) S → IsAdicComplete (Ideal.span {ϖ}) S) := GlobalTheory.T.valuation_power_iff
+theorem CrystallineSemistableComparison.RL.val_pow : ∀ {S : Type} [CommRing S] (ϖ : S) (k : ℕ), k ≠ 0 → (Val (ϖ ^ k) ↔ Val ϖ) ∧ (IsAdicComplete (Ideal.span {ϖ ^ k}) S → IsAdicComplete (Ideal.span {ϖ}) S) := _root_.GlobalTheory.CompanionTheory.PowComp.val_pow
 
 theorem CrystallineSemistableComparison.RL.split_pt : ∀ {S : Type} [CommRing S] , Aic (S := S) → Loc (S := S) → ∀ (Y : Scheme.{0}) (f : Y ⟶ Spec (CommRingCat.of S)), Etale f → Surjective f → ∀ m : Ideal S, m.IsMaximal → ∃ e : S, IsIdempotentElem e ∧ e ∉ m ∧ SecOn f e := by
   intro S _ hA hL Y f hE hS m hm
@@ -300,13 +296,13 @@ theorem CrystallineSemistableComparison.RL.split_pt : ∀ {S : Type} [CommRing S
   ext a
   exact ψ.commutes a
 
-theorem CrystallineSemistableComparison.RL.sec_rules : ∀ {S : Type} [CommRing S] (Y : Scheme.{0}) (f : Y ⟶ Spec (CommRingCat.of S)), SecOn f 0 ∧ (∀ e e' : S, SecOn f e → SecOn f (e * e')) ∧ (SecOn f 1 → ∃ s : Spec (CommRingCat.of S) ⟶ Y, s ≫ f = 𝟙 _) := GlobalTheory.T.section_over_idempotent_properties
+theorem CrystallineSemistableComparison.RL.sec_rules : ∀ {S : Type} [CommRing S] (Y : Scheme.{0}) (f : Y ⟶ Spec (CommRingCat.of S)), SecOn f 0 ∧ (∀ e e' : S, SecOn f e → SecOn f (e * e')) ∧ (SecOn f 1 → ∃ s : Spec (CommRingCat.of S) ⟶ Y, s ≫ f = 𝟙 _) := _root_.GlobalTheory.CompanionTheory.SecRules.main
 
-theorem CrystallineSemistableComparison.RL.sec_add : ∀ {S : Type} [CommRing S] (Y : Scheme.{0}) (f : Y ⟶ Spec (CommRingCat.of S)) (e e' : S), IsIdempotentElem e → IsIdempotentElem e' → e * e' = 0 → SecOn f e → SecOn f e' → SecOn f (e + e') := GlobalTheory.T.section_orthogonal_idempotent_sum
+theorem CrystallineSemistableComparison.RL.sec_add : ∀ {S : Type} [CommRing S] (Y : Scheme.{0}) (f : Y ⟶ Spec (CommRingCat.of S)) (e e' : S), IsIdempotentElem e → IsIdempotentElem e' → e * e' = 0 → SecOn f e → SecOn f e' → SecOn f (e + e') := _root_.GlobalTheory.CompanionTheory.SecAdd.secOn_add
 
 theorem CrystallineSemistableComparison.RL.pd_quot : ∀ {S : Type} [CommRing S] , TF (S := S) → ∀ I J : Ideal S, PdI I → (∀ x ∈ I, x ∈ J → ∀ k : ℕ, k ≠ 0 → ∀ y : S, (k.factorial : S) * y = x ^ k → y ∈ J) → ∃ δ : DividedPowers (I.map (Ideal.Quotient.mk J)), IsPd (Ideal.Quotient.mk J) I δ := by
   intro S _ hS I J hI hJ
   have hpd := GlobalTheory.CompanionTheory.PdTF.exists_dividedPowers_map_quotient hS I J hI hJ
   exact hpd
 
-theorem CrystallineSemistableComparison.RL.pd_mor : ∀ {S : Type} [CommRing S] {S' E E' : Type} [CommRing S'] [CommRing E] [CommRing E'] (π : S →+* E) (π' : S' →+* E') (I : Ideal S) (I' : Ideal S') {J : Ideal E} {J' : Ideal E'} (δ : DividedPowers J) (δ' : DividedPowers J') (F₀ : S →+* S') (F : E →+* E'), Function.Surjective π → PdI I → IsPd π I δ → IsPd π' I' δ' → (∀ x ∈ I, F₀ x ∈ I') → (∀ x, F (π x) = π' (F₀ x)) → DividedPowers.IsDPMorphism δ δ' F := GlobalTheory.T.divided_power_morphism_compatible
+theorem CrystallineSemistableComparison.RL.pd_mor : ∀ {S : Type} [CommRing S] {S' E E' : Type} [CommRing S'] [CommRing E] [CommRing E'] (π : S →+* E) (π' : S' →+* E') (I : Ideal S) (I' : Ideal S') {J : Ideal E} {J' : Ideal E'} (δ : DividedPowers J) (δ' : DividedPowers J') (F₀ : S →+* S') (F : E →+* E'), Function.Surjective π → PdI I → IsPd π I δ → IsPd π' I' δ' → (∀ x ∈ I, F₀ x ∈ I') → (∀ x, F (π x) = π' (F₀ x)) → DividedPowers.IsDPMorphism δ δ' F := _root_.GlobalTheory.CompanionTheory.PdMor.isDPMorphism_of_isPd

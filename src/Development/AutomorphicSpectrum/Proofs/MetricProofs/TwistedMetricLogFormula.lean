@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Proofs.MetricProofs.IsLocSec
-public import Development.AutomorphicSpectrum.Proofs.MetricProofs.MinorIJMap
+public import Development.AutomorphicSpectrum.Proofs.MetricProofs.Bundle0040
+public import Development.AutomorphicSpectrum.Proofs.MetricProofs.Bundle0073
 
 @[expose] public section
 

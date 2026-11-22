@@ -3,7 +3,7 @@ module
 public import Development.WeilBound.ThetaLifts.LeviDeterminants.LagrangianUniqueness.LagLine
 public import Development.WeilBound.ThetaLifts.LeviDeterminants.LagrangianUniqueness.GeoCore
 public import Development.WeilBound.ThetaLifts.LeviDeterminants.LagrangianUniqueness.GeoAdm
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EigenIntertwinerTransitive
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1664
 
 @[expose] public section
 

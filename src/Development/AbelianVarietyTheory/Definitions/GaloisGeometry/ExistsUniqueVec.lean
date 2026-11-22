@@ -2,14 +2,13 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.ThetaMod
-public import Formalism.LocalToGlobal.IndefiniteReal.IsMultMapUnivZero
-public import Formalism.LocalToGlobal.IndefiniteReal.ThetaFireRow
-public import Formalism.LocalToGlobal.IndefiniteReal.TensCastR
+public import Formalism.LocalToGlobal.IndefiniteReal.Bundle0024
+public import Formalism.LocalToGlobal.IndefiniteReal.Bundle0025
 public import Formalism.LocalToGlobal.IndefiniteReal.LinksStage
-public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.ParamsEx
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsThetaPToLiftReal
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ResInjLToLiftReal
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaAdjointAtLiftEqLowestKTypeRestriction
+public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0025
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0887
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0895
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1758
 
 @[expose] public section
 

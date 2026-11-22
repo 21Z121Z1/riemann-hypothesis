@@ -2,7 +2,7 @@ module
 
 public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.FormalDegreeGap.HCFdegRGapHolds
 public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.FormalDegreeGap.DimensionBoundOfGapUniform
-public import Formalism.SharpRestriction.GlobalSchurBounds.GlobalRankLatticeProofs.PartFiveExplicitOfPropositions
+public import Formalism.SharpRestriction.GlobalSchurBounds.GlobalRankLatticeProofs.Bundle0002
 public import Formalism.SharpRestriction.GlobalSchurBounds.FlipTwoThree
 public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.ExceptionalGroupG2.HarishChandraMultiplicityBound
 

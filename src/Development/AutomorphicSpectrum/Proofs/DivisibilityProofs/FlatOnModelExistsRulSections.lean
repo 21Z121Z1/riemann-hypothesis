@@ -1,17 +1,19 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.HasBareNormDisc
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.Bundle0012
 public import Development.AutomorphicSpectrum.PublishedTheorems.Geometry₂.GagaSections
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.BlowupProjections.BlowupProjStatement
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.UniformisationConclusion
 public import Development.AutomorphicSpectrum.Statements.GeometryStatements.FlatDegree
 public import Formalism.LocalToGlobal.ProjectiveLattices.CompHt
-public import Development.AbelianVarietyTheory.Definitions.Divisors.HtValOnSubset
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.FlatLineIdempotentSectionsStatement
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0049
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsFlatAnIffIsConstMul
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0010
+public import Formalism.LocalToGlobal.ProjectiveLattices.RulInst
 public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.FlatLineIdempotentSections
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.FramePointVectors
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.FrameBorelChangeVectors
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0102
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0060
 
 @[expose] public section
 
@@ -130,7 +132,7 @@ theorem exists_flat_sec : ∀ (E : Type) [Field E] [NumberField E] [IsCMField E]
     Formalism.L2.Pj.CompSplitPfB.cspB_isClopen (Formalism.L2.Pj.CompSplitPfD.cspD_comp_disj Xo c) Z
   have hl := hf.1
   obtain ⟨s, s', e, -, hss₀, hsE₀, hs'E₀, -, hval⟩ :=
-    GlobalTheory.T.flat_line_idempotent_sections E H D l Xo c (Z : Set (Xo.XF c)) τ.1 O β Y Z' φ hτ hC hl hf
+    _root_.GlobalTheory.CompanionTheory.Ar.Flat.exists_flat_rule E H D l Xo c (Z : Set (Xo.XF c)) τ.1 O β Y Z' φ hτ hC hl hf
   have hp : D.mult τ.1 = D.p := by rw [Datum.mult, if_pos hτ]
   have hq : D.mult (ComplexEmbedding.conjugate τ.1) = D.q := conj_mult hτ
   have red : ∀ p : Formalism.L2.Pj.TRing c.F, IsReduced p.R := fun p => (Ideal.isRadical_iff_quotient_reduced _).1 p.rad
@@ -175,7 +177,7 @@ theorem exists_flat_sec : ∀ (E : Type) [Field E] [NumberField E] [IsCMField E]
       have e1 : ∀ x : p.R, ψ (f x) = ψ' x := fun _ => rfl
       rw [e1, e1]
       by_cases hr : Set.range (fpt z ψ) ⊆ (Z : Set (Xo.XF c))
-      · obtain ⟨v, w, ev, ew, -⟩ := GlobalTheory.T.frame_point_vectors E H D l Xo c τ.1 q.R z F ψ (fpt z ψ) hp hq (fpt_under z ψ) (fpt_snd z ψ)
+      · obtain ⟨v, w, ev, ew, -⟩ := _root_.GlobalTheory.CompanionTheory.Ar.FrameEig.isFramed_frPt E H D l Xo c τ.1 q.R z F ψ (fpt z ψ) hp hq (fpt_under z ψ) (fpt_snd z ψ)
         refine ⟨by rw [(D1.2 hr).1, (D2.2 hr).1], ?_⟩
         rw [(D1.2 hr).2 v w hp hq ev ew, (D2.2 hr).2 v w hp hq (fun i => ?_) (fun j => ?_)]
         · rw [ev i, h.2.1, ← Category.assoc, dualMap_spMap_comp]
@@ -206,8 +208,8 @@ theorem exists_flat_sec : ∀ (E : Type) [Field E] [NumberField E] [IsCMField E]
       have D1 := C p y F ψ
       rw [map_mul, map_mul]
       by_cases hr : Set.range (fpt y ψ) ⊆ (Z : Set (Xo.XF c))
-      · obtain ⟨v, w, ev, ew, hfr⟩ := GlobalTheory.T.frame_point_vectors E H D l Xo c τ.1 p.R y F ψ (fpt y ψ) hp hq (fpt_under y ψ) (fpt_snd y ψ)
-        obtain ⟨v', w', ev', ew', hfr'⟩ := GlobalTheory.T.frame_point_vectors E H D l Xo c τ.1 p.R y' F ψ (fpt y ψ) hp hq h1 (fpt_snd y ψ)
+      · obtain ⟨v, w, ev, ew, hfr⟩ := _root_.GlobalTheory.CompanionTheory.Ar.FrameEig.isFramed_frPt E H D l Xo c τ.1 p.R y F ψ (fpt y ψ) hp hq (fpt_under y ψ) (fpt_snd y ψ)
+        obtain ⟨v', w', ev', ew', hfr'⟩ := _root_.GlobalTheory.CompanionTheory.Ar.FrameEig.isFramed_frPt E H D l Xo c τ.1 p.R y' F ψ (fpt y ψ) hp hq h1 (fpt_snd y ψ)
         obtain ⟨A, B, hA, hB, dA, dB⟩ := GlobalTheory.T.frame_borel_change_vectors E H D l Xo c τ.1 p.R t y y' h F ψ (fpt y ψ) hp hq v v' w w' (fpt_under y ψ) ev ew ev' ew'
         refine ⟨by rw [(D1.2 hr).1, (D2.2 hr).1], ?_⟩
         rw [(D1.2 hr).2 v w hp hq ev ew, (D2.2 hr).2 v' w' hp hq ev' ew', wchar_detE τ.1 hp, wchar_detE _ hq, map_prod, map_prod,

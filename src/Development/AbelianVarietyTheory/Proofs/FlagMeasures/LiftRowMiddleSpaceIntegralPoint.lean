@@ -2,11 +2,10 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.IsVolData
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.RowEmbeddingMemIntegralOrthogonalGroupStatement
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.RowIsometryEntriesInModelCoordinates
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0241
 public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.IntegralUnipotentAntidiagonalMemSkewLattice
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.FormallyUnramifiedRingOfIntegersIffDifferentIdea
-public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.DisjointSpanPerpLat
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0004
+public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0018
 
 @[expose] public section
 
@@ -211,7 +210,7 @@ theorem lift_row : ∀ (F E : Type) [Field F] [NumberField F] [Field E] [NumberF
       exact h1.1
     · simp only [hy, form, Matrix.mulVec_neg, dotProduct_neg, neg_eq_zero]
       exact h1.2
-  have hγ := GlobalTheory.T.rowE_mem_GN_of_form_add_trace_eq_zero F E σ k r J Λ P f T A s hD' a y t (fun b _ => (horth b).1) hsum hyΛ htm
+  have hγ := _root_.GlobalTheory.SnMass.VolN.RowIso.rowE_mem_GN F E σ k r J Λ P f T A s hD' a y t (fun b _ => (horth b).1) hsum hyΛ htm
   have hent := GlobalTheory.SnMass.VolN.rowE_entries F E σ k r J Λ P f T A s hD' a y t
 
   have hzS : ∀ (w : InfinitePlace E) (b : Fin r), ((A w).mulVec fun l => w.embedding (y l)) (esI k r b) = 0 := by

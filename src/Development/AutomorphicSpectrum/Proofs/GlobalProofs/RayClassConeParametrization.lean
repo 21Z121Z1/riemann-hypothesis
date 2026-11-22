@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.SiegelKlingenDeligneRibet
-public import Development.AutomorphicSpectrum.Proofs.GlobalProofs.AbelContinuation
+public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.Bundle0006
+public import Development.AutomorphicSpectrum.Proofs.GlobalProofs.Bundle0013
 
 @[expose] public section
 

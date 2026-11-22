@@ -3,8 +3,8 @@ module
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.Jets.CmLatticeCommutatorPairingPowEqOneOfGoodLift
 public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.UwEllipticFlow
-public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.RingHomPointBijective
-public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.CpTransportedTaylorSeriesInChartRingHomLaws
+public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0022
+public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0011
 
 @[expose] public section
 

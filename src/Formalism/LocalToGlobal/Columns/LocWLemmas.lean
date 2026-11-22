@@ -3,15 +3,15 @@ module
 public import Formalism.LocalToGlobal.Columns.AlgebraMapMemMaximalIdealPowIff
 public import Formalism.SizeWindowBrackets.ChainSlopeWindows.ExistsNsmulMem
 public import Formalism.SizeWindowBrackets.SBrDiv
-public import Formalism.LocalRingCardinality.DataDIVDefs
+public import Formalism.LocalRingCardinality.Bundle0003
 public import Formalism.LocalRingCardinality.DataForms
 public import Formalism.LocalRingCardinality.SpanPowerMembership.Places
 public import Formalism.HermitianLattices.HermitianLatticesProofs.IndexBasic
-public import Formalism.GL3MeanSquares.HookFormulaTorsion.InvariantKernelTraceVanishes
+public import Formalism.GL3MeanSquares.HookFormulaTorsion.Bundle0002
 public import Formalism.LocalRingCardinality.DataIdx
 public import Formalism.LocalRingCardinality.Lemmas
 public import Mathlib
-public import Formalism.SizeWindowBrackets.SlopesHypothesisFinitePlaces
+public import Formalism.SizeWindowBrackets.Bundle0003
 public import Formalism.SizeWindowBrackets.Chain2aCoreNoAnalytic
 public import Formalism.LocalToGlobal.GlobalTheory.IsResidueClassZero
 

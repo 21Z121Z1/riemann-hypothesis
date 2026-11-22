@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Formalism.RealPlaceAnalysis.FockPairGl
+public import Formalism.RealPlaceAnalysis.Bundle0002
 public import Formalism.SatakeDualWeyl.Statement
 
 @[expose] public section

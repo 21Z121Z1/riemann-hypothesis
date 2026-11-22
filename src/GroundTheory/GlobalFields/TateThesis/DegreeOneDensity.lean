@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import GroundTheory.GlobalFields.TateThesis.DegreeOnePrimes
+public import GroundTheory.GlobalFields.TateThesis.Bundle0001
 public import GroundTheory.GlobalFields.TateThesis.PrimeZetaPole
 public import GroundTheory.GlobalFields.KummerTheory.Splitting
 

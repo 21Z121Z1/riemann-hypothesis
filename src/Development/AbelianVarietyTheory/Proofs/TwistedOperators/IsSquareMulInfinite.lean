@@ -2,13 +2,12 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.QuadraticClassFieldTheory
-public import Development.AbelianVarietyTheory.Proofs.HeightProofs.QuadraticExtNormFormOverAlgebra
+public import Development.AbelianVarietyTheory.Proofs.HeightProofs.Bundle0006
 public import Development.AbelianVarietyTheory.Proofs.HeightProofs.UnitNormFormAtOddPlace
-public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.ExistsUnitMulSqQuadraticDefectStep
-public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.ExistsGlobalUniformizerResidueRepresentatives
-public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.ExistsSubSqLtOneOfTwoLtOne
+public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.Bundle0010
+public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.Bundle0021
 public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.IsSquareMulOfNonsquareUnits
-public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.IsSquareOfValuedSubOneLt
+public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.Bundle0004
 
 @[expose] public section
 

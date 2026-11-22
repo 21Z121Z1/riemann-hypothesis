@@ -1,6 +1,6 @@
 module
 
-public import Formalism.SharpRestriction.GrowthBounds.StandardPolynomials.ColNumDef
+public import Formalism.SharpRestriction.GrowthBounds.StandardPolynomials.Bundle0005
 public import Formalism.SharpRestriction.GrowthBounds.BinomialRatio.FirstCoefficientFacts
 public import Formalism.SharpRestriction.GrowthBounds.CoarseMultiplicity.PolyUpperBoundDelta
 

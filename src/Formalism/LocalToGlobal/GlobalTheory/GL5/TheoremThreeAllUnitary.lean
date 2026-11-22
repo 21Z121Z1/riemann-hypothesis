@@ -1,7 +1,7 @@
 module
 
 public import Formalism.LocalToGlobal.GlobalTheory.GL5.Statement
-public import Formalism.LocalToGlobal.BesselHermitianTheta.Lemmas
+public import Formalism.LocalToGlobal.BesselHermitianTheta.Bundle0003
 public import Formalism.SharpRestriction.GlobalSchurBounds.ThickPlacesCorollaryOfAnyTranslate
 
 @[expose] public section

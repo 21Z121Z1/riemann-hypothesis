@@ -3,7 +3,7 @@ module
 public import Mathlib
 public import GroundTheory.ProfiniteCohomology.GlobalClassFormation.ResLocal
 public import GroundTheory.ProfiniteCohomology.GlobalClassFormation.LocalResConj
-public import GroundTheory.ProfiniteCohomology.GlobalClassFormation.LocalResKill
+public import GroundTheory.ProfiniteCohomology.GlobalClassFormation.Bundle0001
 public import GroundTheory.ProfiniteCohomology.GlobalClassFormation.LocalInvariants
 public import GroundTheory.GlobalFields.Adele.BaseChange.FiniteMap
 

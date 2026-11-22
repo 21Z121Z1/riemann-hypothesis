@@ -3,7 +3,7 @@ module
 public import Mathlib
 public import GroundTheory.AutomorphicForms.CuspidalProjection.OrthogonalProjectionOntoCompSubtypeL
 public import GroundTheory.AutomorphicForms.AutomorphicFormSpaces.Height
-public import GroundTheory.AutomorphicForms.HarishChandraCentre
+public import GroundTheory.AutomorphicForms.Bundle0016
 
 @[expose] public section
 

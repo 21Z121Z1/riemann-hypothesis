@@ -1,24 +1,27 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.KleimanInputNefAmpleSectionCountStatement
-public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.KleimanGenericPointSectionInputStatement
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArakelovGeometry.KleimanNefness.AmpleSt
-public import Development.WeilBound.CoreStatements.HodgeTatePoints.A12
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PAmpleOfGenTwist
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PGenTwistVanish
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PGenKoszulStep
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArakelovGeometry.KleimanNefness.Bundle0002
+public import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.GenericPointSectionHypotheses
+public import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.IsFieldSubalgebraSelf
+public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0022
+public import Development.WeilBound.CoreStatements.HodgeTatePoints.Bundle0051
+public import Development.WeilBound.CoreStatements.HodgeTatePoints.Bundle0040
+public import Development.WeilBound.CoreStatements.HodgeTatePoints.Bundle0049
+public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0042
+public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0062
+public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0081
 public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PKoszulCechComplex
 public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PKoszulCechExact
 public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.AssemblyBase
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PKleimanScheme
-public import GroundTheory.HeightsAndTheta.Heights.ElementarySymmetric.PGeneratedCechTieX
+public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0073
+public import GroundTheory.HeightsAndTheta.Heights.ElementarySymmetric.Bundle0013
 public import GroundTheory.HeightsAndTheta.Heights.SemipositiveHeights.KleimanNefF
 public import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.PSegreBase
-public import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.RelDimMIdealOverEqTrdeg
-public import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.IsMultiProjPrimeSegreLift
+public import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.Bundle0054
+public import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.Bundle0059
 public import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.ExistsNeZeroOfWeight
-public import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.ZpowMemSubalgebraOfInvMem
+public import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.Bundle0056
 
 @[expose] public section
 
@@ -29,7 +32,7 @@ open GroundTheory.Heights₂.Heights
 open GroundTheory.Heights₂.Heights.IndefiniteRowSideFullHecke.Kleiman2 (IsNef IsGenerated KAt baseDeg)
 open GroundTheory.Heights₂.Heights.Kleiman.SectionsOverLocalization (segreJoin)
 
-theorem kAt_all (d : ℕ) : KAt d := (GlobalTheory.T.kleiman_input_nef_ample_section_count GlobalTheory.T.kleiman_genericPointSectionInput).2.1 d
+theorem kAt_all (d : ℕ) : KAt d := (_root_.PositivityTheory.HtPt.Ktw.k_twins _root_.PositivityTheory.HtPt.Kra.kleiman_input_universe_zero).2.1 d
 
 theorem genTwistVanish : HilbertSamuel.GenTwistVanish.Statement :=
   HilbertSamuel.GenTwistVanish.proof PositivityTheory.HtPt.Ktw.a11 HilbertSamuel.QuotPartGraded.full

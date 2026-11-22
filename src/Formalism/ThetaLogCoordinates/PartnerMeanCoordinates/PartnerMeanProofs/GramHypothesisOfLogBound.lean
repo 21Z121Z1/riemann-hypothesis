@@ -2,7 +2,7 @@ module
 
 public import Formalism.PolynomialDimension.ChainOrderLetters
 public import Formalism.ThetaLogCoordinates.TraceIsometryWeights.StatementF
-public import Formalism.ThetaLogCoordinates.FockResolutionOnto.StatementC
+public import Formalism.ThetaLogCoordinates.FockResolutionOnto.Bundle0001
 public import Formalism.ThetaLogCoordinates.FockResolutionOnto.StatementH
 public import Formalism.ThetaLogCoordinates.BihomogeneousPairs.LetterChainEmbeddings.PairStep
 public import Formalism.ThetaLogCoordinates.PartnerMeanCoordinates.PartnerMeanProofs.GamIntC

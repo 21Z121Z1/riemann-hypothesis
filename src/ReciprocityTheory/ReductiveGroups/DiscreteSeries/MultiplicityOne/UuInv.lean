@@ -2,10 +2,10 @@ module
 
 public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.MultiplicityOne.PiInvApply
 public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.MultiplicityOne.UnitaryGroupStructuralFacts
-public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.MultiplicityOne.JInvGroup
-public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.MultiplicityOne.JInvChar
+public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.MultiplicityOne.Bundle0006
+public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.MultiplicityOne.Bundle0008
 public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.MultiplicityOne.StReps
-public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.MultiplicityOne.JTransM
+public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.MultiplicityOne.Bundle0011
 
 @[expose] public section
 

@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.ClosedPhiFunctoriality.IsOp2One
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ClosedAtL
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.IsSstAtOfIsCrysAt
+public import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.ClosedPhiFunctoriality.Bundle0003
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0239
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0208
 
 @[expose] public section
 

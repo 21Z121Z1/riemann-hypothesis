@@ -2,11 +2,10 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.ShimuraVarieties.MemPrimitiveTensorsIffIsPrimitiveElem
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.FrobeniusStableSubspaceElementStatement
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.SubspaceContainsUnitStatement
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.NilpotentDerivationRankStatement
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.MultiplicativeDerivationRankStatement
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.PrimitiveElementPowersIndepStatement
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0004
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0009
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0008
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0014
 
 @[expose] public section
 
@@ -108,7 +107,7 @@ theorem key (k : Type) [Field k] [IsAlgClosed k] (p : ℕ) [hp : Fact p.Prime] [
           · intro b _ hb; simp [hb]
           · intro h; simp at h; omega) (p - 1) (by omega)
         simp at this
-      obtain ⟨w, hw, hwu⟩ := GlobalTheory.T.subspace_contains_unit k (CartierDual k A)
+      obtain ⟨w, hw, hwu⟩ := _root_.GlobalTheory.CompanionTheory.FiniteAlgebraUnit.exists_isUnit_mem_of_forall_point k (CartierDual k A)
         (LinearMap.range (((D : CartierDual k A →ₗ[k] CartierDual k A)) ^ (p - 1))) (by
         intro x
         obtain ⟨g, hgu, hg⟩ := point_eval x
@@ -117,7 +116,7 @@ theorem key (k : Type) [Field k] [IsAlgClosed k] (p : ℕ) [hp : Fact p.Prime] [
         rw [hg, Module.End.pow_apply]
         exact (dualDer_iter f hf (p - 1) w g).symm ▸ hw)
       obtain ⟨t, rfl⟩ := hw
-      exact GlobalTheory.T.nilpotent_derivation_rank k p _ D ε hD t (by simpa [Module.End.pow_apply] using hwu)
+      exact _root_.GlobalTheory.CompanionTheory.Ggeo.DerivFree.finrank_and_vanishing k p _ D ε hD t (by simpa [Module.End.pow_apply] using hwu)
     · have hD : ∀ a, (⇑D)^[p] a = D a := fun a => CartierDual.ext_apply fun c => by
         rw [dualDer_iter, hc]; rfl
       let u0 : A := ∑ i ∈ Finset.Ico 1 p, f ^ i
@@ -136,7 +135,7 @@ theorem key (k : Type) [Field k] [IsAlgClosed k] (p : ℕ) [hp : Fact p.Prime] [
           have : i ≠ 0 := by have := (Finset.mem_Ico.1 hi).1; omega
           simp [this]) 1 (by omega)
         simp at this
-      obtain ⟨w, hw, hwu⟩ := GlobalTheory.T.subspace_contains_unit k (CartierDual k A)
+      obtain ⟨w, hw, hwu⟩ := _root_.GlobalTheory.CompanionTheory.FiniteAlgebraUnit.exists_isUnit_mem_of_forall_point k (CartierDual k A)
         (LinearMap.ker ((D : CartierDual k A →ₗ[k] CartierDual k A) - LinearMap.id)) (by
         intro x
         obtain ⟨g, hgu, hg⟩ := point_eval x
@@ -149,7 +148,7 @@ theorem key (k : Type) [Field k] [IsAlgClosed k] (p : ℕ) [hp : Fact p.Prime] [
         · rw [hg]; exact hw)
       have hw' : D w = w := by
         simpa [sub_eq_zero] using hw
-      exact GlobalTheory.T.multiplicative_derivation_rank k p _ D ε hD w hwu hw'
+      exact _root_.GlobalTheory.CompanionTheory.PowerDerivation.finrank_eq_and_derivation_eq_zero k p _ D ε hD w hwu hw'
   obtain ⟨hdim, z, hz, hu⟩ := hG
   refine ⟨?_, ?_⟩
   · let Ik : Submodule k A := (Ideal.span {f}).restrictScalars k
@@ -308,7 +307,7 @@ theorem stepP (k : Type) [Field k] [IsAlgClosed k] (p : ℕ) [hp : Fact p.Prime]
     · obtain ⟨q, rfl⟩ : ∃ q, p = q + 1 := ⟨p - 1, by omega⟩
       rw [pow_succ, hW v hv, h2 v hv, hcf]
       simp
-  obtain ⟨f, hfQ, hf0, hfc⟩ := GlobalTheory.T.frobenius_stable_subspace_element k p A Q hQ0 hfrob
+  obtain ⟨f, hfQ, hf0, hfc⟩ := _root_.GlobalTheory.CompanionTheory.HopfFrob.exists_frobenius_fixed_or_killed k p A Q hQ0 hfrob
   obtain ⟨hfp, hfW⟩ := (memQ f).1 hfQ
   obtain ⟨hdim, hker⟩ := key k p A f hfp hf0 hfc
   have : (Ideal.span {f}).IsHopfIdeal k := isHopfIdeal_span hfp

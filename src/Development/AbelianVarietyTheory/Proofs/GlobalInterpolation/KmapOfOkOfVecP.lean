@@ -5,24 +5,24 @@ public import Formalism.LocalToGlobal.KernelLattices.KernelLocalFactors.ThDistC
 public import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.KerIsTerm
 public import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.ExistsRecordDat
 public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.ReferenceCharactersFactorTame
-public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.JetsInIffStepField
-public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.JetStepEqZeroExample
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.FiniteDivLatticeQuotient
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ThetaSupportInDivLattice
+public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.Bundle0015
+public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.Bundle0015
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0056
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0074
 public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExistsOfStarEq
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.InertAtLeCongN
-public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.SubDSharpInDeg
-public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.NotDvdDifferent
-public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.RelIndexLocPNeZero
-public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.AbsNormEqOfSplit
-public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.NormalisedFamilyLatticeHypAndSmooth
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.BaseFieldsPrimesOk
+public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0081
+public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0096
+public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0105
+public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0101
+public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0114
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0117
 public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ValuedCompAtDetIdl
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.LevOkTwists
-public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.TameCharacterValuesEqHeckeCharLocalValuesStatement
-public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.LocalCharEqHeckeCharLocalComponentOfValues
-public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.IntAtOfLocTop
-public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.OrdSubEqOrdDet
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0273
+public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0138
+public import Formalism.LocalToGlobal.KernelLattices.ThDistC
+public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0109
+public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0142
+public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0141
 public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.TildeQDetPtEqChiId
 
 @[expose] public section
@@ -216,7 +216,7 @@ theorem map_muAtT (hX : X.Ok) (hPr : Pr.Ok) (hsel : IsSel X sel) (hg : ∀ k, Pr
   classical
   have hlp := GlobalTheory.ColPeriod.levelPrimes X Pr sel S mu hX hPr hsel P
   have hta := GlobalTheory.Mem.ReadTwist.tameAt h fun v => Subgroup.mem_iInf.1 mu.2.1.2 v
-  have hq := (GlobalTheory.T.tame_character_values_eq_heckeChar_local_values X.F X.E X.K σ _ ξ h hta P.1).2 hlp.1.2
+  have hq := (_root_.GlobalTheory.TwistVal.main X.F X.E X.K σ _ ξ h hta P.1).2 hlp.1.2
   have hm : ∀ x, (((m0 j * ξ)⁻¹.locK P.1 x : ℂˣ) : ℂ) = (((m0 j).locK P.1 x : ℂˣ) : ℂ)⁻¹ * ((ξ.locK P.1 x : ℂˣ) : ℂ)⁻¹ := fun x => by
     rw [← mul_inv, ← Units.val_mul, ← Units.val_inv_eq_inv_val]
     rfl
@@ -270,7 +270,7 @@ theorem map_muInvDet (hX : X.Ok) (hPr : Pr.Ok) (hsel : IsSel X sel) (hg : ∀ k,
       exacts [h1 (Finset.mem_union_right _ (e ▸ h3)), h2 (Finset.mem_union_right _ (e ▸ h3))]
     refine ⟨((ht.mu0 j).unr w hg').mul hun, ?_⟩
     rw [mUof, dite_eq_left j.2, Units.val_mul, Units.val_inv_eq_inv_val, Units.val_inv_eq_inv_val, map_mul, map_inv₀, map_inv₀,
-      ht.muVal j w hg', (GlobalTheory.T.tame_character_values_eq_heckeChar_local_values X.F X.E X.K σ _ ξ h hta w).1 hun, Formalism.L2.Host.HChar.val_mul, Units.val_mul, mul_inv]
+      ht.muVal j w hg', (_root_.GlobalTheory.TwistVal.main X.F X.E X.K σ _ ξ h hta w).1 hun, Formalism.L2.Host.HChar.val_mul, Units.val_mul, mul_inv]
 
 end Scalar
 

@@ -3,7 +3,7 @@ module
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.Divisors.RankEqCardIffExistsFrameMatrixFirstColumnBlock
 public import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.ScaledIntegerPeriodic
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsGlLatCongMove
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1479
 
 @[expose] public section
 

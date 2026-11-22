@@ -4,9 +4,9 @@ public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.Divisors.HodgeTateLatticePointFinrankTateModule
 public import Development.AbelianVarietyTheory.Definitions.Divisors.IsLatBasisHtLatIffSpanEq
 public import Development.AbelianVarietyTheory.Definitions.CMLattices.IsDiffOf
-public import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.RosatiAdjIffLamEq
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SumBLieMemHtLatIffOfPointOver
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TateTorusLeLieSpan
+public import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.Bundle0035
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1509
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1488
 
 @[expose] public section
 

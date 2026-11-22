@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsSectionRing
+public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0025
 public import GroundTheory.PowerSubgroups.CountableNeighbourhoods.PSectionBoundedCountable
 
 @[expose] public section

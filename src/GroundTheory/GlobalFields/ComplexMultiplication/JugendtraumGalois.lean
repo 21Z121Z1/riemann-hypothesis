@@ -3,8 +3,8 @@ module
 public import Mathlib
 public import GroundTheory.GlobalFields.ComplexMultiplication.JugendtraumUniformization
 public import GroundTheory.GlobalFields.ComplexMultiplication.MainTheoremIdeles
-public import GroundTheory.GlobalFields.ComplexMultiplication.HilbertClassField
-public import GroundTheory.GlobalFields.ComplexMultiplication.AutCFixed
+public import GroundTheory.GlobalFields.ComplexMultiplication.Bundle0018
+public import GroundTheory.GlobalFields.ComplexMultiplication.Bundle0002
 
 @[expose] public section
 

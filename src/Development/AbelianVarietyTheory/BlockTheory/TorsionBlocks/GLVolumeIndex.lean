@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Formalism.SharpRestriction.Divisibility.ZetaProductPairs
+public import Formalism.SharpRestriction.Divisibility.Bundle0002
 
 @[expose] public section
 

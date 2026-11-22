@@ -1,7 +1,7 @@
 module
 
-public import Formalism.SharpRestriction.GrowthBounds.ScaleEdges.EdgeLatticeAdaptedBasis
-public import Formalism.SharpRestriction.GrowthBounds.ScaleEdges.RestCloudOfX
+public import Formalism.SharpRestriction.GrowthBounds.ScaleEdges.Bundle0003
+public import Formalism.SharpRestriction.GrowthBounds.ScaleEdges.Bundle0009
 
 @[expose] public section
 

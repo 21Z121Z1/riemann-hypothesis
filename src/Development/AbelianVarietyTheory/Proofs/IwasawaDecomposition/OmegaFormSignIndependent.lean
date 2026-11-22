@@ -1,22 +1,22 @@
 module
 
 public import Mathlib
-public import Formalism.LocalToGlobal.IndefiniteReal.FWTie
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.FibExtMarked
+public import Formalism.LocalToGlobal.IndefiniteReal.Bundle0025
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0200
 public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsConjugateModelSameThetaFunctions
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.OrthonormalNegFirstFamilyFrameCartanMove
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.OmegaFormIntegrality
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.OmegaFormSignExists
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.SplitFinitePointMovesVacuumToProjectionStatement
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.OmegaFormPeriodRelation
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.AdelicThetaOfTestFunctionExistsLawsFockVectorsStatement
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0209
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0217
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0434
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.SplitFinitePointMovesVacuumToProjection
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0414
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0220
 public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.IsLatticeVacuumIffSignedRationalFixed
-public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.CompletedTensorLatticeLatticeVacuumTransport
-public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.WeilActionFixesLevelVectorUpToUnit
-public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.HostElementIdempotentModTwo
+public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.Bundle0052
+public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.Bundle0058
+public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.Bundle0068
 public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.DualHalfLevelMarkingExistsAndMatch
 public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.RdUEqConstMulClsSum
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.AdelicElementLatticeFullAndCompletion
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0074
 
 @[expose] public section
 
@@ -299,7 +299,7 @@ theorem char_hatA (C : Ctx S T) {Λ : Lt D.host.E S.rank} (hΛ : Λ ∈ Vset D.h
     TensLat.smul_mem_tens hΛ o.isIntegral_coe hy
   refine fun u hu u' hu' => SignVac.char_sympl_hatA C.std.1.1 hA (fun y hy y' hy' => ?_) hu hu'
   obtain ⟨k, hk⟩ := (TensLat.tens_selfDual hΛ hL y).1 hy y' hy'
-  rw [← SplitScalar.symplOH_add_self, AddChar.map_add_eq_mul, (GlobalTheory.T.symplecticCharacter_real_finite_points_match D S T C).2.2.1, hk, ← Complex.exp_add,
+  rw [← SplitScalar.symplOH_add_self, AddChar.map_add_eq_mul, (_root_.GlobalTheory.FormMatch.forms_match D S T C).2.2.1, hk, ← Complex.exp_add,
     ← Complex.exp_int_mul_two_pi_mul_I (-k)]
   congr 1
   push_cast
@@ -444,7 +444,7 @@ theorem heis_root_zak {r g : ℕ} (hr : T.rank = r) {ψ : AddChar (AF D.host.F) 
   replace hEF : ∀ u v, EF X' u v = EF X u v := hEF
   have hL' : SelfD X' (latG T g') := ⟨hL.1, by simpa only [hEF] using hL.2⟩
   let C := ctxOf hS.1 hS.2.1 hS.2.2.2.1 X' m hq' bas' idx' hsy
-  have hz := (GlobalTheory.T.adelicTheta_of_testFunction_exists_laws_fockVectors D S T _ g rfl ψ θ X eT bas idx hS Z hZ).1
+  have hz := (_root_.GlobalTheory.OneMapRef.zak_laws D S T _ g rfl ψ θ X eT bas idx hS Z hZ).1
   have hsb := Const.isSB_smul_tf a hv.1
   have hlat : IsLatVac (heisO ψ S T) (hatA S T (tens (stdL D.host.E S.rank) (latG T g'))) f := by
     refine (SignVac.isLatVac_iff D S T C w hw hw' hw2 1 _ (Base.stdL_mem_Vset _ 1) _ hL' f hf.1).2 fun y hy => ?_
@@ -473,7 +473,7 @@ theorem zak_sum {r g : ℕ} {hr : T.rank = r} {ψ : AddChar (AF D.host.F) ℂ} {
     Zak ψ θ hr eT bas idx (frOf hr eT Z) (c • ∑ q, W q • heisG X bas (Y q) φ)
       (c • ∑ q, W q • heisO ψ S T (finR S hr (-Y q)) f) := by
   classical
-  have hz := (GlobalTheory.T.adelicTheta_of_testFunction_exists_laws_fockVectors D S T _ g hr ψ θ X eT bas idx hS Z hZ).1
+  have hz := (_root_.GlobalTheory.OneMapRef.zak_laws D S T _ g hr ψ θ X eT bas idx hS Z hZ).1
   have key : ∀ s : Finset Q, SW.IsSB (∑ q ∈ s, W q • heisG X bas (Y q) φ) ∧ Zak ψ θ hr eT bas idx (frOf hr eT Z)
       (∑ q ∈ s, W q • heisG X bas (Y q) φ) (∑ q ∈ s, W q • heisO ψ S T (finR S hr (-Y q)) f) := by
     intro s

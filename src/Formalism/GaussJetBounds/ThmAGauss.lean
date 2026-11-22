@@ -1,9 +1,9 @@
 module
 
 public import Formalism.GaussJetBounds.GaussJetProofs.ThmAGaussOf
-public import Formalism.GaussJetBounds.GaussJetProofs.Transfer
-public import Formalism.GaussJetBounds.GaussJetProofs.FJEval
-public import Formalism.GaussJetBounds.GaussJetProofs.Labels
+public import Formalism.GaussJetBounds.GaussJetProofs.Bundle0005
+public import Formalism.GaussJetBounds.GaussJetProofs.Bundle0006
+public import Formalism.GaussJetBounds.GaussJetProofs.Bundle0004
 
 @[expose] public section
 

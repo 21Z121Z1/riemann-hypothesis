@@ -2,12 +2,12 @@ module
 
 public import Mathlib
 public import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.ThetaNormCommutation.LocalComparisonSplitting.EulerFactorLevels.LocCompareSplit
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MemTwCentSwTw
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FiniteConjugacyExists
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FiniteRestrictionVanishing
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.G8FiniteAuxiliaryStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LocalComparisonInert
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.SplitPlaceUnitaryLocalPointsEquivGL
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0521
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0513
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0516
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0536
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0567
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0218
 
 @[expose] public section
 

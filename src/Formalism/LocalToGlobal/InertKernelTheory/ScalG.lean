@@ -2,8 +2,8 @@ module
 
 public import Formalism.LocalToGlobal.PairingIndexBounds.OrthogonalChartLevels.FdOfCharts
 public import Formalism.LocalToGlobal.PairingIndexBounds.OrthogonalChartLevels.LtCNeZero
-public import Formalism.LocalToGlobal.InertKernelTheory.FrameLatMap
-public import Formalism.LocalToGlobal.InertKernelTheory.DefsRepRec
+public import Formalism.LocalToGlobal.InertKernelTheory.Bundle0014
+public import Formalism.LocalToGlobal.InertKernelTheory.Bundle0013
 
 @[expose] public section
 

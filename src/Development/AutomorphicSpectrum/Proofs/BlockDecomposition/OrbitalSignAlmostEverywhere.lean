@@ -2,13 +2,13 @@ module
 
 public import Mathlib
 public import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.ThetaNormCommutation.WeylSplitting.WeylSplit
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.OrbitalIntegralUnitIndicatorEventuallyOneClass
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.KapOrbUnitEqOne
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsIntegralElementCharPolyNonsplit
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1160
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1484
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1452
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsHermitianFormCharPoly
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EventuallyExistsIntegralCharpolySplitPlace
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsConjSameSeparableCharpolySplitPlace
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EventuallyUnitaryConjOfSameEllipticCharpolyInert
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1056
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1057
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1329
 
 @[expose] public section
 
@@ -44,8 +44,8 @@ theorem kapOrb_unit_pos (hU : Unr E) (n : ℕ) (hn : 1 ≤ n) (p₁ p₂ : E[X])
     ∀ᶠ w : Pl E in cofinite, kapOrb n w (atPl w p₁) (atPl w p₂) ((KL n w : Set (UL n w)).indicator 1) = 1 := by
   have hP := ell_mul p₁ p₂ h1 h2 hc hd
   obtain ⟨S, hS⟩ := exists_section (E := E)
-  filter_upwards [GlobalTheory.BCT.OrbUnit.orbUnit_ae E hU n hn S hS _ hP, GlobalTheory.T.eventually_exists_integral_charpoly_split_place E hU n hn _ hP,
-    exists_integral_unitary hU n _ hP, GlobalTheory.T.eventually_unitary_conj_of_same_elliptic_charpoly_inert E hU n hn _ hP] with w hA hE1 hE2 hU2
+  filter_upwards [GlobalTheory.BCT.OrbUnit.orbUnit_ae E hU n hn S hS _ hP, _root_.GlobalTheory.BCT.exists_int_charpoly_atPl_split E hU n hn _ hP,
+    exists_integral_unitary hU n _ hP, _root_.GlobalTheory.BCT.UnitInert.conj_of_charpoly_inert E hU n hn _ hP] with w hA hE1 hE2 hU2
   have hmap : atPl w (p₁ * p₂) = atPl w p₁ * atPl w p₂ := Polynomial.map_mul _
   rw [hmap] at hA hE1 hE2 hU2
   obtain ⟨γ₀, hγ₀K, hγ₀P⟩ : ∃ γ : UL n w, γ ∈ KL n w ∧ γ.1.val.charpoly = atPl w p₁ * atPl w p₂ := by
@@ -56,7 +56,7 @@ theorem kapOrb_unit_pos (hU : Unr E) (n : ℕ) (hn : 1 ≤ n) (p₁ p₂ : E[X])
       γ'.1.val.charpoly = atPl w p₁ * atPl w p₂ → ∃ g : UL n w, γ' = g⁻¹ * γ * g := by
     intro γ γ' hk hk' hp hp'
     by_cases hs : IsSplitAt w
-    · have := GlobalTheory.T.exists_conj_same_separable_charpoly_split_place E n _ hP w hs γ γ'
+    · have := _root_.GlobalTheory.BCT.SplitConj.exists_conj_of_isSplitAt E n _ hP w hs γ γ'
       rw [hmap] at this
       exact this hp hp'
     · exact hU2 hs γ γ' hk hk' hp hp'

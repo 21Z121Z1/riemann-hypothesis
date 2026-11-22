@@ -2,10 +2,9 @@ module
 
 public import Formalism.HarderNarasimhan.DegSupermodZ
 public import Formalism.LatticeSlopes.ExistsSaturatedSlopeEqMuMax
-public import Formalism.LatticeSlopes.LatticeSlopesProofs.DiscreteTopologyOfLe
-public import Formalism.HarderNarasimhan.HarderNarasimhanProofs.DegSupermod
-public import Formalism.HarderNarasimhan.HarderNarasimhanProofs.MuChar
-public import Formalism.HarderNarasimhan.HarderNarasimhanProofs.SatBasic
+public import Formalism.LatticeSlopes.LatticeSlopesProofs.Bundle0001
+public import Formalism.HarderNarasimhan.HarderNarasimhanProofs.Bundle0002
+public import Formalism.HarderNarasimhan.HarderNarasimhanProofs.Bundle0004
 
 @[expose] public section
 

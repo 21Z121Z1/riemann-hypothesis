@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IsLocIsoRefl
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.NormalizedAbsValueLocalFieldUnitMapHomeomorph
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0444
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0624
 
 @[expose] public section
 

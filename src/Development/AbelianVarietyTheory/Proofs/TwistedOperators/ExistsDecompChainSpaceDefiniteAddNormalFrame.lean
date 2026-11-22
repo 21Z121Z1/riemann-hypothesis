@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.ChainMatrices
+public import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.Bundle0009
 public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.LatSelfDualOfUnimod
 
 @[expose] public section

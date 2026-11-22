@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.BlockAnti
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.IsHCParamOfSetup
+public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.Bundle0009
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0315
 
 @[expose] public section
 

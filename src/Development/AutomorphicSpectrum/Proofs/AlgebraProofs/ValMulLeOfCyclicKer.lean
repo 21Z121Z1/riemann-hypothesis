@@ -1,12 +1,12 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.LieLatticeData
-public import Development.AutomorphicSpectrum.Statements.AlgebraStatements.PolarisedFlagStatement
-public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.HopfOrderLatticeBaseStatement
-public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.HasFinColengthOfHasLen
-public import ReciprocityTheory.DualLattices.HasLenCokerDet
-public import ReciprocityTheory.DualLattices.MemAugIdeal
+public import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.Bundle0002
+public import Development.AutomorphicSpectrum.Statements.AlgebraStatements.Bundle0001
+public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.Bundle0031
+public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0121
+public import ReciprocityTheory.DualLattices.Bundle0021
+public import ReciprocityTheory.DualLattices.Bundle0011
 
 @[expose] public section
 

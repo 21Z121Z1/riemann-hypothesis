@@ -3,36 +3,35 @@ module
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.LengthPosOfPosDef
 public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.IsWeilDatumOOneOfRankZero
-public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.ExistsNormLeHeightPow
-public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.UnifModGrowthOfIsUnifModerate
+public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.Bundle0007
+public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.Bundle0007
 public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.WeilSiegelFormulaUnitary
 public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.DetGramSmul
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.AdelicIwasawaDoubledGroupSelfDualLattice
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.DoublingMapThetaIdentityAnyWeilData
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SiegelWeilSectionIntegrableAndContinuous
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SiegelWeilSectionDegeneratePrincipalSeriesLaw
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SiegelHeightFinitePlaceDoublingEmbeddingLeOne
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ConjWeilDatumViaAdjointExchangedPair
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.HeightIoLe
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ImportsBis
-public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.HeckeFormNSOfHeckeForm
-public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.ExistsIsParamFunOne
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.DoublingVectorFockPairIsCompactFinite
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.DoubledThetaVectorFixedUnramifiedStabilizer
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.DoublingSphericalVacuaToDoubledLatticeVacuum
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.IsThetaFunctionDoublingSeesawOfStandardChar
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ExistsHaarCovolumeOneSkewHermitianAdelic
-public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.IntegrandSZero
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.IsParamFunVIffIsSysParamDOfLevel
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsSplitPlOfTwoMem
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsWeilDatumOfSplittingCharacters
-public import Development.AbelianVarietyTheory.PublishedTheorems.SiegelWeil₂.EisPoleLEZeroOfLt
-public import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.SkewGramHalfModule
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0241
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0251
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0156
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0266
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0524
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0133
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0274
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0184
+public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.Bundle0016
+public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.Bundle0020
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0287
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0146
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0153
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0102
+public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.Bundle0013
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0315
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0400
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1240
+public import Development.AbelianVarietyTheory.PublishedTheorems.SiegelWeil₂.Bundle0002
+public import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.Bundle0018
 public import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.SqNormIntegralFundamentalDomainEqL2NormSq
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.DblApply
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.RationalSourceActsOnOrientedThetaBySubstitution
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.DoubledLagrangianTermFrameIndependent
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SiegelEisensteinDoubledThetaTermsEqLagrangianIntStatement
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0699
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0639
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0637
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0723
 
 @[expose] public section
 
@@ -264,7 +263,7 @@ theorem tsum_lagTerm_le : ∀ (D : D7) (ψ : AddChar (AF D.host.F) ℂ) (V W : H
   have h₂' := hw.om_pres (1, g₂) f₂ h₂
   have hF' : IsThetaFunO ψ (GlobalTheory.Doubling.dblSp W) V (GlobalTheory.SWPairProof.dbl V W (om (1, g₁) f₁) (om (1, g₂) f₂)) :=
     (TC _ _ (hS.theta _ h₂') (hS.theta _ h₁')).1
-  obtain ⟨e, he⟩ := GlobalTheory.T.siegelEisenstein_doubledTheta_terms_eq_lagrangianIntegrals D ψ V W χV χW om νV 𝓗 νW 𝓖 μ 𝓕 fr hs _ _ h₁' h₂' ν 𝓖' hν
+  obtain ⟨e, he⟩ := _root_.GlobalTheory.SWLagTerms.lagTerms_eq D ψ V W χV χW om νV 𝓗 νW 𝓖 μ 𝓕 fr hs _ _ h₁' h₂' ν 𝓖' hν
   have hmove := (hrest g₂ g₁ 1).1
   rw [GlobalTheory.ConjAdjWeil.conjAdjoint_apply, GlobalTheory.ConjAdjWeil.conjAdjoint_apply, dd, dd] at hmove
   have hterm : ∀ q, ‖lagTerm μ 𝓕 (fr (e q)) (om (1, g₁) f₁) (om (1, g₂) f₂)‖ₑ =

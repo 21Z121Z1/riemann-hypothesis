@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.AdelicClassFiniteness.DictRing
-public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.InvariantTopologyComparison.FiniteNeighbourhoodSecond
+public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.InvariantTopologyComparison.Bundle0001
 
 @[expose] public section
 

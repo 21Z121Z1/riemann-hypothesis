@@ -7,7 +7,7 @@ public import Formalism.SharpRestriction.LevelLetterCocycles.SumRepresentations
 public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.FiniteDimensionalFilDR
 public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.LocalIndepBridge
 public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.CharpolyWeilDelignePotSemistableEnlargeCoefficie
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.IsPotentiallySemistableCoefficientFieldEnlarge
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0050
 
 @[expose] public section
 

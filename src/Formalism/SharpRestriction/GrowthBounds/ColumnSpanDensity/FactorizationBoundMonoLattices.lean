@@ -1,8 +1,8 @@
 module
 
-public import Formalism.SharpRestriction.GrowthBounds.ColumnSpanDensity.MeanDefs
-public import Formalism.SharpRestriction.GrowthBounds.ColumnSpanDensity.SgSegUnique
-public import Formalism.PolynomialDimension.DigitClassCount
+public import Formalism.SharpRestriction.GrowthBounds.ColumnSpanDensity.Bundle0002
+public import Formalism.SharpRestriction.GrowthBounds.ColumnSpanDensity.Bundle0004
+public import Formalism.PolynomialDimension.Bundle0004
 
 @[expose] public section
 

@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SubsingletonOfGiso
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.PhiPreservesIsomorphism
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0451
 
 @[expose] public section
 

@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import GroundTheory.ArithmeticGeometry.SchemeCohomology.ProjTwistAway
-public import GroundTheory.ArithmeticGeometry.SchemeCohomology.CechSeparated
+public import GroundTheory.ArithmeticGeometry.SchemeCohomology.Bundle0004
 public import GroundTheory.ArithmeticGeometry.SchemeCohomology.ProjCechModel
 
 @[expose] public section

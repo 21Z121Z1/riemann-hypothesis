@@ -1,8 +1,7 @@
 module
 
-public import CompanionTheory.AutomorphicTheory.SchurLimitBounds.ZuckermanDuality.Letter
+public import CompanionTheory.AutomorphicTheory.SchurLimitBounds.ZuckermanDuality.Bundle0001
 public import CompanionTheory.AutomorphicTheory.SchurLimitBounds.ZuckermanDuality.Assemble
-public import CompanionTheory.AutomorphicTheory.SchurLimitBounds.ZuckermanDuality.GeneratingFunctionPolynomial
 
 @[expose] public section
 

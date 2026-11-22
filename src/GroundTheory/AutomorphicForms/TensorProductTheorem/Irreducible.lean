@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import GroundTheory.AutomorphicForms.TensorProductTheorem.Smooth
-public import GroundTheory.AutomorphicForms.TensorProductTheorem.Window
+public import GroundTheory.AutomorphicForms.TensorProductTheorem.Bundle0002
 
 @[expose] public section
 

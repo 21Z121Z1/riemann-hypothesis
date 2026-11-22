@@ -1,6 +1,6 @@
 module
 
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.Rationality.LocalQuotientRank
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.Rationality.Bundle0005
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.Rationality.LocalLengthFraction
 
 @[expose] public section

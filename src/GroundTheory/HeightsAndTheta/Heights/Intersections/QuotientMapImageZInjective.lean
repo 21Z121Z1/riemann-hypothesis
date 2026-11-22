@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import GroundTheory.HeightsAndTheta.Heights.Intersections.IsPrimeSpanXb
+public import GroundTheory.HeightsAndTheta.Heights.Intersections.Bundle0023
 
 @[expose] public section
 

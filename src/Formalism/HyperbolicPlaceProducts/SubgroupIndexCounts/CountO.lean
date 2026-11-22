@@ -1,6 +1,6 @@
 module
 
-public import Formalism.HyperbolicPlaceProducts.Statement
+public import Formalism.HyperbolicPlaceProducts.Bundle0001
 
 @[expose] public section
 

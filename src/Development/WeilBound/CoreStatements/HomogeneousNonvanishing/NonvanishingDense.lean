@@ -1,17 +1,13 @@
 module
 
-public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsSncModel
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.Bundle0008
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.BlowupProjections.BlowupProjStatement
 public import Development.AutomorphicSpectrum.Definitions.DivisibilityTowers.Proportional
-public import Development.WeilBound.CoreStatements.HomogeneousNonvanishing.ContinuousAtOfClosedRel
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PNonvanishingDense
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PRatPrimeDense
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PFiniteSeparatingModel
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PRootsNear
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PNoetherProjection
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PRootsLiftToZeros
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PRootsBounded
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PPolyNonvanishDense
+public import Development.WeilBound.CoreStatements.HomogeneousNonvanishing.Bundle0005
+public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0032
+public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0004
+public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0003
+public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0005
 
 @[expose] public section
 

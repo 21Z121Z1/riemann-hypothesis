@@ -2,8 +2,7 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Proofs.CharacterTheory.RootPowerSumCharpolyMemVirtualCharactersGL
-public import Development.AbelianVarietyTheory.Definitions.CommutativeAlgebra.AbByPOfComm
-public import Development.AbelianVarietyTheory.Definitions.CommutativeAlgebra.InvariantSubspaceMobiusInverseRecEqOfFinrankLt
+public import Development.AbelianVarietyTheory.Definitions.CommutativeAlgebra.Bundle0001
 
 @[expose] public section
 

@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Formalism.PeriodIntegrals.NMeasInv
+public import Formalism.PeriodIntegrals.Bundle0020
 public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.MeasureInverseContraction.AmatInvMul
 
 @[expose] public section

@@ -1,10 +1,9 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.PolyRep
-public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.GoodTopChernForm
-public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.ChernWeilNumbers
-public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.AntisymmFibrePointTwo
+public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.Bundle0016
+public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.Bundle0011
+public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.Bundle0010
 
 @[expose] public section
 

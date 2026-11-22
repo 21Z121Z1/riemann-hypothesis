@@ -2,9 +2,9 @@ module
 
 public import Development.AutomorphicArithmetic.Foundations.IwahoriReduction.SiegelFixedPoints.IsThBIff
 public import Development.AbelianVarietyTheory.Definitions.Foundations.IsLamOfLSmulIff
-public import Development.AbelianVarietyTheory.Definitions.Foundations.ExistsOfEmbedding
+public import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0011
 public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsIntModLevelPrimePowEqAddMul
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.SmoothedEisensteinFxCoefficientSeqOneMemSubring
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0039
 
 @[expose] public section
 

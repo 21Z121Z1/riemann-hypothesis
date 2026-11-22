@@ -1,8 +1,8 @@
 module
 
-public import Formalism.SharpRestriction.GrowthBounds.TwistedSubstitution.CommPresIsoSub
+public import Formalism.SharpRestriction.GrowthBounds.TwistedSubstitution.Bundle0001
 public import Formalism.SharpRestriction.GrowthBounds.ProjectionOfIsotypicDecomposition
-public import Formalism.SharpRestriction.GrowthBounds.GLWeightTheory
+public import Formalism.SharpRestriction.GrowthBounds.Bundle0003
 public import Formalism.SharpRestriction.GrowthBounds.MonomialOrderSegments.BrBase
 
 @[expose] public section

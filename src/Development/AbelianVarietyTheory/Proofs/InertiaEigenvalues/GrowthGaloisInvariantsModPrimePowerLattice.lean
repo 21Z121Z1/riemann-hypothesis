@@ -6,9 +6,9 @@ public import Formalism.LocalRingCardinality.AdicCompletionLocal.LocTied
 public import Formalism.SharpRestriction.LevelLetterCocycles.LocalSituation
 public import Formalism.SharpRestriction.LevelLetterCocycles.LocCoh
 public import Formalism.GaloisCohomology.LocalTateDualityK
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CoefficientRingIntegersCompactAdicProperties
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ImportsTail
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsFinsetFixedMemInvariants
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0247
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0028
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0218
 
 @[expose] public section
 

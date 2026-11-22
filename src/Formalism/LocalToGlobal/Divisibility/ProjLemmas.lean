@@ -2,8 +2,8 @@ module
 
 public import Mathlib
 public import Formalism.LocalToGlobal.Divisibility.GoodPartHermitianSpec
-public import Formalism.LocalToGlobal.Divisibility.ClassSumLemmas
-public import Formalism.QuotientMetricDivisors.HermitianTwistDivisors.ClassSumDualGeOfFamily
+public import Formalism.LocalToGlobal.Divisibility.Bundle0002
+public import Formalism.QuotientMetricDivisors.HermitianTwistDivisors.Bundle0004
 
 @[expose] public section
 

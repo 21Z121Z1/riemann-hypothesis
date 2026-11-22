@@ -4,13 +4,13 @@ public import Formalism.SharpRestriction.ParamsHeightRankConstant
 public import Formalism.LocalToGlobal.GaloisLevelStructure.TiedGal
 public import Formalism.LocalToGlobal.UnitaryNorms.MemFIffReal
 public import Formalism.LocalToGlobal.UnitaryNorms.LeastSplitAuxiliaryPrimeThetaChainSpec
-public import Formalism.LocalToGlobal.UnitaryNorms.CharGal
+public import Formalism.LocalToGlobal.UnitaryNorms.Bundle0007
 public import Formalism.LocalToGlobal.HermitianForms.RankEqFirstLevel
-public import Formalism.LocalToGlobal.HermitianForms.TiedTwAll
+public import Formalism.LocalToGlobal.HermitianForms.Bundle0006
 public import Formalism.LocalToGlobal.JointCharacters.SameChr
 public import Formalism.LocalToGlobal.HilbertRowConditions.KaTiedIffKapDef
 public import Formalism.LocalToGlobal.BesselHermitianTheta.AllTied
-public import Formalism.LocalToGlobal.NormalizedHeckeFactors.EMtLevel
+public import Formalism.LocalToGlobal.NormalizedHeckeFactors.Bundle0008
 
 @[expose] public section
 

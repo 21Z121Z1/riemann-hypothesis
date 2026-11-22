@@ -1,6 +1,6 @@
 module
 
-public import Formalism.LocalRingCardinality.SpanPowerMembership.GatRing
+public import Formalism.LocalRingCardinality.SpanPowerMembership.Bundle0001
 
 @[expose] public section
 

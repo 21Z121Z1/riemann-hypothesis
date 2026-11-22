@@ -1,7 +1,7 @@
 module
 
 public import ReciprocityTheory.GeometryOfNumbers.PluriharmonicAnalysis.BergmanSt
-public import ReciprocityTheory.GeometryOfNumbers.PluriharmonicAnalysis.LogDetSt
+public import ReciprocityTheory.GeometryOfNumbers.PluriharmonicAnalysis.Bundle0001
 
 @[expose] public section
 

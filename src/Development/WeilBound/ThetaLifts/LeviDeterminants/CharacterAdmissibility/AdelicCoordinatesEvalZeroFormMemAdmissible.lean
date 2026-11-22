@@ -1,11 +1,11 @@
 module
 
 public import Development.WeilBound.ThetaLifts.LeviDeterminants.CharacterAdmissibility.ResAdm
-public import Development.WeilBound.ThetaLifts.LeviDeterminants.ExistsNeOfSurjOn
+public import Development.WeilBound.ThetaLifts.LeviDeterminants.Bundle0010
 public import Development.WeilBound.ThetaLifts.LeviDeterminants.LagrangianUniqueness.RealTest
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExtendByZeroMemSchA
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ProductFunctionOnSumCoordsMemAdelicSchwartzSpace
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsAdelicSchwartzNeZeroAtOrigin
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0995
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0930
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0908
 
 @[expose] public section
 
@@ -117,7 +117,7 @@ theorem box_adm (κ κ' : Type) [Fintype κ] [Fintype κ'] : ∀ φ₂ ∈ schA 
 theorem axB (hψ : IsStd ψ) : AxB (adeleClass F) ψ := by
   refine ⟨?_, ?_, ?_, ?_, ?_, ?_, ?_⟩
   · intro κ _
-    exact (GlobalTheory.T.theta_distribution_heisenberg_invariant F κ ψ hψ.1 (isStd_ne_one hψ) hψ.2.1).1
+    exact (_root_.GlobalTheory.CompanionTheory.AdelicHeis.schr_mem_and_thetaSum F κ ψ hψ.1 (isStd_ne_one hψ) hψ.2.1).1
   · intro κ _
     obtain ⟨φ, h, h0⟩ := GlobalTheory.SchANonzero.exists_mem_schA_ne_zero F κ
     exact ⟨φ, h, fun e => h0 (congrFun e 0)⟩

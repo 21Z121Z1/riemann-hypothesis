@@ -2,9 +2,8 @@ module
 
 public import Formalism.WeightedDeltaMeans.LowerBoundLinearPower
 public import Mathlib
-public import Formalism.LocalToGlobal.LatticeGeometry.ShimuraSheafOfIndefiniteSubspace
+public import Formalism.LocalToGlobal.LatticeGeometry.Bundle0003
 public import Formalism.LocalToGlobal.LatticeGeometry.CompNe
-public import Formalism.LocalToGlobal.LatticeGeometry.LevPrPrime
 public import Formalism.LocalRingCardinality.RhoDetPrimeEqMuTildeMulChiPow
 public import Formalism.LocalRingCardinality.DataDIV
 public import Formalism.SharpRestriction.ParConsts
@@ -15,9 +14,9 @@ public import Formalism.SharpRestriction.Divisibility.WeightThresholdDefs
 public import Formalism.SharpRestriction.Divisibility.WeightAlgebra
 public import Formalism.LocalRingCardinality.DataParams₂
 public import Formalism.DegreeFormula.FlagDegFormula
-public import Formalism.SharpRestriction.Divisibility.LatticeTransfer
-public import Formalism.SharpRestriction.Divisibility.PrinLevClass
-public import Formalism.LocalRingCardinality.HeightBoundGeFourthPowerRank
+public import Formalism.SharpRestriction.Divisibility.Bundle0002
+public import Formalism.SharpRestriction.Divisibility.Bundle0001
+public import Formalism.LocalRingCardinality.Bundle0005
 
 @[expose] public section
 

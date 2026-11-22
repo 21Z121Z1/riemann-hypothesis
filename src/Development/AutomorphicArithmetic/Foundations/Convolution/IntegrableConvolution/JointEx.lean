@@ -1,10 +1,10 @@
 module
 
 public import Mathlib
-public import GroundTheory.AutomorphicForms.CompactSelfAdjoint
-public import Development.AutomorphicArithmetic.Foundations.Convolution.IntegrableConvolution.TrDefs
-public import Development.AutomorphicArithmetic.Foundations.Convolution.IntegrableConvolution.CutIrr
-public import Development.AutomorphicArithmetic.Foundations.Convolution.IntegrableConvolution.JointNe
+public import GroundTheory.AutomorphicForms.Bundle0001
+public import Development.AutomorphicArithmetic.Foundations.Convolution.IntegrableConvolution.Bundle0001
+public import Development.AutomorphicArithmetic.Foundations.Convolution.IntegrableConvolution.Bundle0002
+public import Development.AutomorphicArithmetic.Foundations.Convolution.IntegrableConvolution.Bundle0006
 
 @[expose] public section
 

@@ -3,7 +3,7 @@ module
 public import Mathlib
 public import Formalism.SharpRestriction.LevelLetterCocycles.ArcCoordinatesOfFrame
 public import Formalism.SharpRestriction.LevelLetterCocycles.PsCoprimeOf
-public import Formalism.SharpRestriction.LevelLetterCocycles.AnnihilatorGeneralOfRingCondition
+public import Formalism.SharpRestriction.LevelLetterCocycles.Bundle0019
 public import Formalism.SharpRestriction.LevelLetterCocycles.SecondComparisonInCoordinates
 
 @[expose] public section

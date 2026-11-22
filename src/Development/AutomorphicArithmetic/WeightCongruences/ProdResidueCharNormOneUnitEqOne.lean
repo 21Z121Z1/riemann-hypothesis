@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicArithmetic.WeightCongruences.ProdNegOneZpow
+public import Development.AutomorphicArithmetic.WeightCongruences.Bundle0001
 
 @[expose] public section
 

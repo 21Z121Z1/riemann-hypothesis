@@ -2,10 +2,10 @@ module
 
 public import Mathlib
 public import Formalism.LocalToGlobal.Divisibility.Inputs
-public import Formalism.QuotientMetricDivisors.Complement2Normaliser
+public import Formalism.QuotientMetricDivisors.Bundle0002
 public import Formalism.TranslateCocycles.StatementHC
 public import Formalism.SizeWindowBrackets.SlopesFromSizeAndCount
-public import Formalism.LocalRingCardinality.DataErr
+public import Formalism.LocalRingCardinality.Bundle0004
 public import Formalism.LocalToGlobal.GlobalTheory.IsResidueClassZero
 
 @[expose] public section

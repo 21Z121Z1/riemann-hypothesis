@@ -1,7 +1,7 @@
 module
 
-public import Formalism.SharpRestriction.CuspSpanNormBounds.CayleySignature
-public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.LaplaceOperators.EquivariantL2Space
+public import Formalism.SharpRestriction.CuspSpanNormBounds.Bundle0006
+public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.LaplaceOperators.Bundle0001
 public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.DefsRep
 
 @[expose] public section

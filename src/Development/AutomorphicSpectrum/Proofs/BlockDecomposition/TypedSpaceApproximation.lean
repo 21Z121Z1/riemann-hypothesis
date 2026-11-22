@@ -3,29 +3,30 @@ module
 public import Mathlib
 public import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.InfinitesimalCharacterLimits.InfinitesimalCharacterGlue
 public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.T2SpaceAdelicGeneralLinearGroupNumberField
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ContinuousOfIsOpenStab
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0111
 public import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.InfinitesimalCharacterLimits.AllLeaves
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.UfamConst
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0282
 public import Development.WeilBound.RepresentationTheoryGL.ResidualSpectrum.ExponentialNegativity.SquareIntegrableCovers.SetLIntegralLeOfCover
 public import Development.WeilBound.RepresentationTheoryGL.ResidualSpectrum.ExponentialNegativity.AutomorphicLipschitz.NiceAut
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.UpdateLeUpdate
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0283
 public import Development.WeilBound.RepresentationTheoryGL.ResidualSpectrum.ExponentialNegativity.NormalisedExistence.ExistsNormed
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.DiscreteAutomorphicRepGLLocalComponentIsUnitaris
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.UniformBoundConstantTermStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.UniformBoundOfArchimedeanLipschitzStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ContinuousArchimedeanSmoothingStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SmoothingLipschitzBoundStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.UniformFamilySmoothingStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.UniformBoundSmoothingStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.KilledByPolynomialSmoothingStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.UniformBoundSiegelSetStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.KernelEigenfunctionBoundStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FiniteLatticePointsSiegelStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsExponentPolynomialDiscreteStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SmoothingFundamentalDomainIntegralStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SmoothingFundamentalDomainBoundStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.KernelEigenfunctionEquicontinuousStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsOpenIntegralSubgroupStatement
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0636
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0400
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0378
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0399
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0370
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0380
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0383
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0396
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0377
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0424
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0393
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0496
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsExponentPolynomialDiscrete
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0575
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0534
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0566
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0464
 
 @[expose] public section
 
@@ -95,11 +96,11 @@ theorem step {β : archGroup K n → ℝ} (hβ : Ker ν β) {ι : Type} {f : ι 
     (hp : ∀ i, (p i).Monic ∧ (p i).natDegree ≤ D ∧ An.Kill r (sm ν β (f i)) (p i) ∧
       ∀ z, (p i).IsRoot z → ‖z‖ ≤ Real.exp κ') :
     UBnd (fun i => sm ν β (f i)) (Function.update m r (max (m r - 1) κ)) := by
-  have hf₁ : UFam (fun i => sm ν β (f i)) := GlobalTheory.T.uniform_family_smoothing K n ν β ι f hβ hf
+  have hf₁ : UFam (fun i => sm ν β (f i)) := _root_.GlobalTheory.CompanionTheory.Conc.uFam_sm K n ν β ι f hβ hf
   have hb₁ : UBnd (fun i => sm ν β (f i)) m := GlobalTheory.T.uniform_bound_smoothing K n ν β ι f m hβ hf.cont hb
-  have hct := GlobalTheory.T.uniform_bound_constant_term K n ι (fun i => sm ν β (f i)) m r D κ' κ p h0 h1 hf₁ hb₁ hk hp
+  have hct := _root_.GlobalTheory.CompanionTheory.Conc.ubnd_ctn_step K n ι (fun i => sm ν β (f i)) m r D κ' κ p h0 h1 hf₁ hb₁ hk hp
   have hdiff := GlobalTheory.T.uniform_bound_of_archimedean_lipschitz K n ι f (fun i => sm ν β (f i)) m r h0 h1 hf₁ (fun R => by
-    obtain ⟨Q₀, C, hQ₀, hC, h⟩ := GlobalTheory.T.smoothing_lipschitz_bound K n ν β hβ R
+    obtain ⟨Q₀, C, hQ₀, hC, h⟩ := _root_.GlobalTheory.CompanionTheory.Conc.sm_lip_of_sq_zero K n ν β hβ R
     exact ⟨Q₀, C, hQ₀, hC, fun i g Y M hY hR hM => h (f i) (hf.cont i) g Y M hY hR hM⟩) hb
   have a : UBnd (fun i g => sm ν β (f i) g - An.ctn r (sm ν β (f i)) g) (Function.update m r (max (m r - 1) κ)) :=
     ubnd_mono (fun s _ _ => GlobalTheory.CompanionTheory.AnBoot.update_le_update m r (le_max_left _ _) s) hdiff
@@ -114,7 +115,7 @@ theorem iter_fam {β : archGroup K n → ℝ} (hβ : Ker ν β) {ι : Type} {f :
   | zero => simpa using hf
   | succ j ih =>
     simp only [Function.iterate_succ_apply']
-    exact GlobalTheory.T.uniform_family_smoothing K n ν β ι _ hβ ih
+    exact _root_.GlobalTheory.CompanionTheory.Conc.uFam_sm K n ν β ι _ hβ ih
 
 theorem iter_kill {β : archGroup K n → ℝ} (hβ : Ker ν β) {ι : Type} {f : ι → AdelicGLn.AdelicGL K n → ℂ} {r : ℕ}
     {p : ℂ[X]} (h0 : 0 < r) (h1 : r < n) (hf : UFam f) (i : ι) (hk : An.Kill r (f i) p) (j : ℕ) :
@@ -123,7 +124,7 @@ theorem iter_kill {β : archGroup K n → ℝ} (hβ : Ker ν β) {ι : Type} {f 
   | zero => simpa using hk
   | succ j ih =>
     simp only [Function.iterate_succ_apply']
-    exact GlobalTheory.T.killed_by_polynomial_smoothing K n ν β _ r p hβ h0 h1 ((iter_fam ν hβ hf j).cont i) ih
+    exact _root_.GlobalTheory.CompanionTheory.Conc.kill_sm K n ν β _ r p hβ h0 h1 ((iter_fam ν hβ hf j).cont i) ih
 
 theorem iter_one {β : archGroup K n → ℝ} (hβ : Ker ν β) {ι : Type} {f : ι → AdelicGLn.AdelicGL K n → ℂ} {m : ℕ → ℝ}
     {r D : ℕ} {κ' κ : ℝ} {p : ι → ℂ[X]} (h0 : 0 < r) (h1 : r < n) (hf : UFam f) (hb : UBnd f m) (hk : κ' < κ)
@@ -280,7 +281,7 @@ theorem iter_cont {β : archGroup E N → ℝ} (hβ : Ker ν β) {f : GA E N →
   | zero => simpa using hf
   | succ j ih =>
     rw [Function.iterate_succ_apply']
-    exact GlobalTheory.T.continuous_archimedean_smoothing E N ν β _ hβ ih
+    exact _root_.GlobalTheory.CompanionTheory.Conc.continuous_sm_of_ker E N ν β _ hβ ih
 
 theorem iter_left {β : archGroup E N → ℝ} {f : GA E N → ℂ} (hf : ∀ γ ∈ latticeGL E N, ∀ g, f (γ * g) = f g) (j : ℕ) :
     ∀ γ ∈ latticeGL E N, ∀ g, (sm ν β)^[j] f (γ * g) = (sm ν β)^[j] f g := by
@@ -304,14 +305,14 @@ theorem approxU [MeasurableSpace (GA E N)] [BorelSpace (GA E N)] (μ : Measure (
   have h4' : (4 : ℝ≥0∞) ^ k ≠ ⊤ := ENNReal.pow_ne_top (by norm_num)
   set e : ℝ≥0∞ := η / 4 ^ k with he
   have he0 : 0 < e := ENNReal.div_pos hη.ne' h4'
-  obtain ⟨U, hU, hUψ⟩ := GlobalTheory.T.kernel_eigenfunction_equicontinuous E N μ α δ F hα hαc hδ hF e he0
+  obtain ⟨U, hU, hUψ⟩ := _root_.GlobalTheory.CompanionTheory.Conc.translate_sq_mean_close E N μ α δ F hα hαc hδ hF e he0
   have hU' : (infEmb E N) ⁻¹' U ∈ 𝓝 (1 : archGroup E N) := by
     refine continuous_infEmb.continuousAt.preimage_mem_nhds ?_
     rwa [map_one]
   obtain ⟨β, hβ, hsupp⟩ := exists_ker ν hU'
   refine ⟨β, hβ, fun ψ hc hl hs hn => ?_⟩
   have hnear : ∫⁻ x in F, ‖ψ x - sm ν β ψ x‖ₑ ^ 2 ∂μ ≤ e :=
-    GlobalTheory.T.smoothing_fundamental_domain_bound E N μ ν F β e hF hβ ψ hc fun y hy => hUψ ψ hc hl hs hn _ (hsupp hy)
+    _root_.GlobalTheory.CompanionTheory.Conc.smNear E N μ ν F β e hF hβ ψ hc fun y hy => hUψ ψ hc hl hs hn _ (hsupp hy)
   have key : ∀ j : ℕ, ∫⁻ x in F, ‖ψ x - (sm ν β)^[j] ψ x‖ₑ ^ 2 ∂μ ≤ 4 ^ j * e := by
     intro j
     induction j with
@@ -320,9 +321,9 @@ theorem approxU [MeasurableSpace (GA E N)] [BorelSpace (GA E N)] (μ : Measure (
       have hcj := iter_cont ν hβ hc j
       have hcj1 := iter_cont ν hβ hc (j + 1)
       have hh : Continuous fun x => ψ x - (sm ν β)^[j] ψ x := hc.sub hcj
-      have hcontr := GlobalTheory.T.smoothing_fundamental_domain_integral E N μ ν F β hF hβ _ hh (fun γ hγ g => by
+      have hcontr := _root_.GlobalTheory.CompanionTheory.Conc.sm_sq_mass_le E N μ ν F β hF hβ _ hh (fun γ hγ g => by
         simp only [hl γ hγ g, iter_left ν hl j γ hγ g])
-      have hS1 : Continuous (sm ν β ψ) := GlobalTheory.T.continuous_archimedean_smoothing E N ν β ψ hβ hc
+      have hS1 : Continuous (sm ν β ψ) := _root_.GlobalTheory.CompanionTheory.Conc.continuous_sm_of_ker E N ν β ψ hβ hc
       have hpt : ∀ x, ‖ψ x - (sm ν β)^[j + 1] ψ x‖ₑ ^ 2 ≤
           2 * ‖ψ x - sm ν β ψ x‖ₑ ^ 2 + 2 * ‖sm ν β (fun x => ψ x - (sm ν β)^[j] ψ x) x‖ₑ ^ 2 := by
         intro x
@@ -509,7 +510,7 @@ theorem conc : ∀ (E : Type) [Field E] [NumberField E] [IsCMField E] (N : ℕ) 
     have : latticeGL E N ≤ S :=
       sup_le (by rintro _ ⟨γ, rfl⟩; exact (hAut i).left γ) (Subgroup.zpowers_le.2 (hcen i 1))
     exact this
-  obtain ⟨U, hU, hUk⟩ := GlobalTheory.T.exists_open_integral_subgroup E N K hK
+  obtain ⟨U, hU, hUk⟩ := _root_.GlobalTheory.CompanionTheory.Conc.LevelU.exists_level E N K hK
   have hfam : UFam f := by
     refine ⟨hcont, hLI, U, hU, fun i g u => ?_⟩
     obtain ⟨k, hk, e⟩ := hUk u
@@ -530,7 +531,7 @@ theorem conc : ∀ (E : Type) [Field E] [NumberField E] [IsCMField E] (N : ℕ) 
         ∀ z, p.IsRoot z → ∃ c ∈ Exp r φ.1, z = Complex.exp c := by
     intro r
     by_cases hr : 0 < r ∧ r < N
-    · obtain ⟨D, h⟩ := GlobalTheory.T.exists_exponent_polynomial_discrete E N r hr.1 hr.2
+    · obtain ⟨D, h⟩ := _root_.GlobalTheory.CompanionTheory.KillU.killU E N r hr.1 hr.2
       exact ⟨D, fun _ _ => h⟩
     · exact ⟨0, fun h0 h1 => (hr ⟨h0, h1⟩).elim⟩
   choose Dr hDr using hD

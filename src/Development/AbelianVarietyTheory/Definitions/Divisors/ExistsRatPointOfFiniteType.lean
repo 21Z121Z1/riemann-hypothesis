@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsOverIff
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0062
 public import Development.AbelianVarietyTheory.Definitions.Divisors.ThetaSetupStructureMapComp
-public import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.ExistsPolAVFiniteTypeSubring
+public import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.Bundle0056
 
 @[expose] public section
 

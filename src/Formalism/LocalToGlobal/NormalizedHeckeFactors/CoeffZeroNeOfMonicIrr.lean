@@ -1,6 +1,6 @@
 module
 
-public import Formalism.PadicSubsetSums.CentralIdempotents.GaloisConjCentralIdempotent
+public import Formalism.PadicSubsetSums.CentralIdempotents.Bundle0002
 public import Formalism.LocalToGlobal.NormalizedHeckeFactors.TypesDefs
 
 @[expose] public section

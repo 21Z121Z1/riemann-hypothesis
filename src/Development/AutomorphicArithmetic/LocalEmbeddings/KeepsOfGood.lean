@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicArithmetic.LocalEmbeddings.RootInCore
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FinrankIInfKerSemilinear
+public import Development.AutomorphicArithmetic.LocalEmbeddings.Bundle0004
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0531
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.KeepsCuspLatticeNorm
 
 @[expose] public section

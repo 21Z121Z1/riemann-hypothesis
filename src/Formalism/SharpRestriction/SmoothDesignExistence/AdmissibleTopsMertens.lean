@@ -1,10 +1,10 @@
 module
 
 public import Formalism.SharpRestriction.GrowthBounds.PlaneCountTheoremWithConstants
-public import Formalism.SharpRestriction.AdmissibleParameterJoins.GandSa
-public import Formalism.SharpRestriction.GrowthBounds.SelectionLemmas
+public import Formalism.SharpRestriction.AdmissibleParameterJoins.Bundle0002
+public import Formalism.SharpRestriction.GrowthBounds.Bundle0002
 public import Formalism.SharpRestriction.GlobalSchurBounds.CMFieldLemmas
-public import Formalism.SharpRestriction.GlobalSchurBounds.GlobalRankLatticeProofs.CMFieldLemmas
+public import Formalism.SharpRestriction.GlobalSchurBounds.GlobalRankLatticeProofs.Bundle0005
 public import Formalism.SharpRestriction.SmoothDesignExistence.DGamSmooth
 public import Formalism.SharpRestriction.GrowthBounds.TopChoiceBounds
 public import Formalism.SharpRestriction.GrowthBounds.JointsLit

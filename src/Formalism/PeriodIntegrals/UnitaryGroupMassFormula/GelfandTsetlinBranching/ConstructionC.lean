@@ -1,7 +1,7 @@
 module
 
 public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.GelfandTsetlinBranching.ExtremalFacts
-public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.GelfandTsetlinBranching.NatWAntiC
+public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.GelfandTsetlinBranching.Bundle0003
 
 @[expose] public section
 

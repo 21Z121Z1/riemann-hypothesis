@@ -4,20 +4,20 @@ public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.ThetaMod
 public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.ExistsUniqueVec
 public import Formalism.SharpRestriction.LevelLetterCocycles.ExistsInertiaCharpolyFactorOfTameType
-public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.ExistsSpanFormsNeBot
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.TendstoOneOfSummable
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.InertSatakeParametersEqOfIso
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.UnitaryDoubleCosetFiniteLeftCosetsStatement
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.MemMaxCompactOfTrivOutsideLocalIntegralStatement
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.FiniteInertHeckeSupportCosetsStatement
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.InertDoubleCosetOperatorEqInertHeckeOperator
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.InertDatumLocalMemUnitaryGroupAntidiagonalStatement
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.InertDatumLocalStdLatticeStabilizerMemMaxCompactStatement
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExistsTrivOutsideInertDatumLocalEqStatement
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.InertDatumLocalInjectiveOnTrivOutsideStatement
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.SplitPlaceIdempotentMulEqSelfOfSupported
+public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.Bundle0005
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0233
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0331
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.UnitaryDoubleCosetFiniteLeftCosets
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0320
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0333
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0329
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0222
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0216
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0221
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0220
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0294
 public import Development.AbelianVarietyTheory.Definitions.Foundations.EqPlaceIdemOfIsPrimeIdem
-public import Formalism.LocalToGlobal.IndefiniteReal.TopMult
+public import Formalism.LocalToGlobal.IndefiniteReal.Bundle0025
 
 @[expose] public section
 
@@ -266,7 +266,7 @@ theorem transport_succ {D : D7} {cf : CharFrame D} {nch : NChoice D} {tp : TupTi
   have hp := rep_pull A.hF (A.PV j) (A.stdV j) hd hv
   obtain ⟨a, R₀, ha, hR₀, hs⟩ := hp
   have hq := GlobalTheory.InertDCOp.dcOp_eq_heckeFunI D.host.E D.R.nV v Pp Dv
-    (GlobalTheory.T.inertDatum_local_mem_unitaryGroup_antidiagonal _ _ v Pp Dv) (GlobalTheory.T.inertDatum_local_stdLatticeStabilizer_mem_maxCompact _ _ v Pp Dv) (GlobalTheory.T.exists_trivOutside_inertDatum_local_eq _ _ v Pp Dv) (GlobalTheory.T.inertDatum_local_injective_on_trivOutside _ _ v Pp Dv) a ha
+    (_root_.GlobalTheory.inertLoc_mem_GU _ _ v Pp Dv) (_root_.GlobalTheory.InertStdLat.loc_mem_KU _ _ v Pp Dv) (_root_.GlobalTheory.InertLift.exists_trivOutside_loc_eq _ _ v Pp Dv) (_root_.GlobalTheory.InertLocInj.loc_injective _ _ v Pp Dv) a ha
   obtain ⟨R₁, h0, hR₁, hh0, hsum⟩ := hq
   refine ⟨h0, hh0, fun f' y' c hy hfix hc => ?_⟩
   refine eigen_of_fin X j _ h hh Pp hG d y' c fun g hg => ?_

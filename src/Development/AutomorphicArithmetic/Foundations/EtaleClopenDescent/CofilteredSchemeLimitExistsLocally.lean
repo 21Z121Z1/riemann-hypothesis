@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.EtaleCohomology.EtaleSheaves.HasLimPf
+public import Development.EtaleCohomology.EtaleSheaves.Bundle0055
 
 @[expose] public section
 

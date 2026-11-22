@@ -1,8 +1,8 @@
 module
 
 public import Formalism.LocalToGlobal.IndefiniteRealisationChoice
-public import Formalism.LocalToGlobal.PtKOfReal
-public import Formalism.LocalToGlobal.Divisibility.ArithClauseRec
+public import Formalism.LocalToGlobal.Bundle0002
+public import Formalism.LocalToGlobal.Divisibility.Bundle0008
 public import Mathlib
 public import Formalism.LocalToGlobal.Divisibility.DivisibilityConstruction.RBDGam
 public import Formalism.LocalToGlobal.HilbertRowConditions.ColumnsFunctionAtSubspaces

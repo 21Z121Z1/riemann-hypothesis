@@ -4,7 +4,7 @@ public import Mathlib
 public import Formalism.ThetaLogCoordinates.UniformThetaSubstitution.CyclicPowerClassOfExpEquiv
 public import Formalism.ThetaLogCoordinates.UniformThetaSubstitution.FrobeniusLiftNorms.TopsChoicePartA
 public import Formalism.ThetaLogCoordinates.UniformThetaSubstitution.FrobeniusLiftNorms.TopsChoicePartB
-public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.BallRing
+public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0003
 
 @[expose] public section
 

@@ -4,7 +4,7 @@ public import Mathlib
 public import GroundTheory.ProfiniteCohomology.PoitouTate.PtCompactDualMapEqZeroOfPtCompactToGlobalEqZero
 public import GroundTheory.ProfiniteCohomology.RealPlaces.DevissageNatural
 public import GroundTheory.ProfiniteCohomology.RealPlaces.LocalDualityDefs
-public import GroundTheory.ProfiniteCohomology.RealPlaces.NormHomotopy
+public import GroundTheory.ProfiniteCohomology.RealPlaces.Bundle0001
 public import GroundTheory.ProfiniteCohomology.InflationRestriction.DegreeOne
 
 @[expose] public section

@@ -2,8 +2,8 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.Divisors.JetAnalytic
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PowerIntegralValuationLowerBoundIffForallEmbeddiStatement
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.NotDvdDiscrIffRamificationIdx
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0566
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0138
 
 @[expose] public section
 

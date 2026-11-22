@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import GroundTheory.HeightsAndTheta.Heights.HeightKernels.StatementsDualStackedExcLead
-public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.DenominatorOfSpan
-public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.ImportsExtraLast
+public import GroundTheory.HeightsAndTheta.Heights.HeightKernels.Bundle0041
+public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0011
+public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0030
 
 @[expose] public section
 

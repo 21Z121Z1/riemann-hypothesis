@@ -1,6 +1,6 @@
 module
 
-public import Formalism.CyclotomicNorms.StatementI
+public import Formalism.CyclotomicNorms.Bundle0001
 public import Formalism.GaloisIrreducibility.NoSolvableTransitive
 
 @[expose] public section

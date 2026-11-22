@@ -3,10 +3,10 @@ module
 public import Mathlib
 public import Formalism.LocalRingCardinality.RhoDetPrimeEqMuTildeMulChiPow
 public import Formalism.SharpRestriction.ParConsts
-public import Formalism.SharpRestriction.GrowthBounds.Imports
+public import Formalism.SharpRestriction.GrowthBounds.Bundle0001
 public import Formalism.SharpRestriction.GrowthBounds.DataG
 public import Formalism.SharpRestriction.GrowthBounds.DataGChain
-public import Formalism.SharpRestriction.GrowthBounds.SelectionLemmas
+public import Formalism.SharpRestriction.GrowthBounds.Bundle0002
 public import Formalism.SharpRestriction.GrowthBounds.IsResidueClassZero
 
 @[expose] public section

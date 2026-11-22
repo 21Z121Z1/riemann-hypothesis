@@ -2,10 +2,10 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.DeRhamPotSemistable
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.FinrankDpstUnramifiedLeDimRepresentation
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.KummerNotFrac
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0061
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0104
 public import Development.AutomorphicArithmetic.ThetaCorrespondence.FockModels.TiltedDrinfeld.ExistsBeta
-public import Development.AutomorphicArithmetic.ThetaCorrespondence.LocalComparison.LocTied6
+public import Development.AutomorphicArithmetic.ThetaCorrespondence.LocalComparison.Bundle0001
 
 @[expose] public section
 

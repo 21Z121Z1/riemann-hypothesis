@@ -1,9 +1,9 @@
 module
 
 public import CompanionTheory.AutomorphicTheory.RankOneEstimates.RankOne
-public import Formalism.SharpRestriction.CuspSpanNormBounds.IsPtRepTrDat
+public import Formalism.SharpRestriction.CuspSpanNormBounds.Bundle0012
 public import Formalism.SharpRestriction.CuspSpanNormBounds.FrobeniusCoefficientMemLp.SigmaFiniteAmplitudes.SigmaFiniteOfUnfold
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.BesselNeZeroOfCyclicOrbit
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0033
 
 @[expose] public section
 

@@ -1,7 +1,6 @@
 module
 
-public import Formalism.SharpRestriction.GrowthBounds.StandardPolynomials.StdPolyEq
-public import Formalism.SharpRestriction.GrowthBounds.StandardPolynomials.TopOddNeEndAny
+public import Formalism.SharpRestriction.GrowthBounds.StandardPolynomials.Bundle0014
 public import Formalism.SharpRestriction.GrowthBounds.StandardPolynomials.MonomialSumEqProdTensor
 
 @[expose] public section

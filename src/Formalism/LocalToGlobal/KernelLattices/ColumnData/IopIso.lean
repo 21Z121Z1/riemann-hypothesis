@@ -2,9 +2,9 @@ module
 
 public import Mathlib
 public import Formalism.LocalToGlobal.KernelLattices.ColumnData
-public import Formalism.LocalToGlobal.KernelLattices.ColumnData.LinkThIndep
+public import Formalism.LocalToGlobal.KernelLattices.ColumnData.Bundle0001
 public import Formalism.LocalToGlobal.KernelLattices.ColumnData.LinkThU
-public import Formalism.GL3MeanSquares.HookFormulaTorsion.SquareEqDiagOfQuadraticEven
+public import Formalism.GL3MeanSquares.HookFormulaTorsion.Bundle0003
 
 @[expose] public section
 

@@ -2,11 +2,9 @@ module
 
 public import Mathlib
 public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SlantProductSecondAction
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CoboundaryCup1
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CoboundaryCup0
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ValSuccAbove
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsFactorOfExactIsField
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsDualFunctionalsOfLinearIndependent
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0742
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0746
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0743
 public import Development.WeilBound.CoreStatements.AutomorphicKernels.AbelianDeRham.AbelianHodgeDeRham.H1DimGeAbelianDim
 
 @[expose] public section

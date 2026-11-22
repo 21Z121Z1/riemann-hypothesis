@@ -1,38 +1,37 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Proofs.GlobalProofs.IsAdaptedEmpty
+public import Development.AutomorphicSpectrum.Proofs.GlobalProofs.Bundle0052
 public import Development.AutomorphicSpectrum.Proofs.GlobalProofs.LeviNormalizesUnipotentVariant
 public import Development.AutomorphicSpectrum.Proofs.GlobalProofs.ArchimedeanIwasawaMinimalParabolic
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsContinuousAdelicUnitaryEmbedding
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsBlockEmb
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0162
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1342
 public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsSmoothAutomorphicFunctionTranslateAtRealPlace
-public import Development.AbelianVarietyTheory.Proofs.HeightProofs.CommuteGelfandInvariantMatrixUnitsOfGlRel
-public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.QminorPolyMap
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.QdetAddOneSubEqSumQminorStatement
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.TracedQminorComatrixTruncatedInverseStatement
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.QdetPolyMapMonicStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.QuantumDeterminantPolynomialCoefficients
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CapelliPolynomialCoefficientsIdeal
-public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.IsGenericIffIsGenericFor
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ParIndJacPlacing
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CapelliLeviFactorizationSum
+public import Development.AbelianVarietyTheory.Proofs.HeightProofs.Bundle0007
+public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0025
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0045
+public import Formalism.RealPlaceAnalysis.Bundle0004
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0354
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0025
+public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.Bundle0016
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0032
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0368
 public import Formalism.LocalToGlobal.IndefiniteReal.RealSeparation.FrameMatEqGlobal
-public import Development.AbelianVarietyTheory.Proofs.HeightProofs.AdelicUnitaryRealPointsStructureRealPlaces
+public import Development.AbelianVarietyTheory.Proofs.HeightProofs.Bundle0033
 public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ContinuousKapSymm
 public import Formalism.LocalToGlobal.GlobalTheory.VolumeCarry.VolumeTheoremTwoOfRationalFrames
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.EmbRelAtRealPlaceOfUnitaryEmbedding
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.CenterActionTransportChart
-public import Development.AutomorphicSpectrum.Proofs.GlobalProofs.ContinuousConjBlockEmbeddingStatement
-public import Development.AutomorphicSpectrum.Proofs.GlobalProofs.BlockBasisChangeEntriesStatement
-public import Development.AutomorphicSpectrum.Proofs.GlobalProofs.AdaptedFrameOrthogonalSubspaceStatement
-public import Development.AutomorphicSpectrum.Proofs.GlobalProofs.AdelicCharacterLocalNontrivialStatement
-public import Development.AutomorphicSpectrum.Proofs.GlobalProofs.GlRelationsDerivativePreservedStatement
-public import Development.AutomorphicSpectrum.Proofs.GlobalProofs.GelfandEigenvalueCasimirScalarStatement
-public import Development.AutomorphicSpectrum.Proofs.GlobalProofs.AutomorphicFunctionRestrictBlockStatement
-public import Development.AutomorphicSpectrum.Proofs.GlobalProofs.AdaptedBasisConjugateZeroEntriesStatement
-public import Development.AutomorphicSpectrum.Proofs.GlobalProofs.ConjugatedMatrixUnitEntriesStatement
-public import Development.AutomorphicSpectrum.Proofs.GlobalProofs.OrthogonalSubspaceWittFrameExtensionStatement
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0429
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0241
+public import Development.AutomorphicSpectrum.Proofs.GlobalProofs.Bundle0056
+public import Development.AutomorphicSpectrum.Proofs.GlobalProofs.Bundle0003
+public import Development.AutomorphicSpectrum.Proofs.GlobalProofs.Bundle0002
+public import Development.AutomorphicSpectrum.Proofs.GlobalProofs.AdelicCharacterLocalNontrivial
+public import Development.AutomorphicSpectrum.Proofs.GlobalProofs.GlRelationsDerivativePreserved
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.DiscreteSpectrumOfResidual
+public import Development.AutomorphicSpectrum.Proofs.GlobalProofs.Bundle0050
+public import Development.AutomorphicSpectrum.Proofs.GlobalProofs.AdaptedBasisConjugateZeroEntries
+public import Development.AutomorphicSpectrum.Proofs.GlobalProofs.ConjugatedMatrixUnitEntries
+public import Development.AutomorphicSpectrum.Proofs.GlobalProofs.Bundle0053
 
 @[expose] public section
 
@@ -68,7 +67,7 @@ theorem etr_mem_adjoin_qdet' (A : Type) [Ring A] [Algebra ℂ A] (n : ℕ) (X : 
   | succ m =>
     induction N using Nat.strong_induction_on with
     | _ N ih =>
-      obtain ⟨c, hc1, hc⟩ := GlobalTheory.T.exists_monic_poly_eq_qdet A (m + 1) X
+      obtain ⟨c, hc1, hc⟩ := _root_.GlobalTheory.qdet_polyMap_monic A (m + 1) X
       have hmin : ∀ i j : Fin (m + 1), ∃ c' : ℕ → A, ∀ w : ℂ,
           qminor X (Fin.succAbove j) (Fin.succAbove i) w = ∑ d ∈ range (m + 1), w ^ d • c' d := by
         intro i j
@@ -95,8 +94,8 @@ theorem etr_mem_adjoin_qdet' (A : Type) [Ring A] [Algebra ℂ A] (n : ℕ) (X : 
         exact sum_congr rfl fun i hi => by rw [if_pos (mem_range.mp hi)]
       have hmem : ∀ u, f u ∈ S := by
         intro u
-        have h1 := GlobalTheory.T.traced_qminor_comatrix_truncated_inverse A m X hX u N
-        rw [← GlobalTheory.T.qdet_add_one_sub_eq_sum_qminor', sum_range_succ, Nat.sub_self, pow_zero, mul_one, mul_add] at h1
+        have h1 := _root_.GlobalTheory.TracedComatrix.traced_comatrix A m X hX u N
+        rw [← _root_.GlobalTheory.qdet_add_one_sub_eq_sum_qminor, sum_range_succ, Nat.sub_self, pow_zero, mul_one, mul_add] at h1
         have key : algebraMap ℂ A ((-1) ^ N) * f u = algebraMap ℂ A ((u - m) ^ (N + 1)) * (qdet X (u + 1) - qdet X u)
             - qdet X u * ∑ k ∈ range N, algebraMap ℂ A ((-1) ^ k * (u - m) ^ (N - k)) * etr X k := by
           simp only [f]
@@ -178,7 +177,7 @@ theorem monic_gelf_block {c N : ℕ} (n : Fin c → ℕ) (h : ∑ i, n i = N) (X
     exact this
   have hL : ∀ p q, GlobalTheory.SmGL.blk (GlobalTheory.SmGL.stdBlocks n h) p < GlobalTheory.SmGL.blk (GlobalTheory.SmGL.stdBlocks n h) q → ∀ F ∈ Wn, I.mkQ (Xf p q F) = 0 :=
     fun p q hpq F hF => (Submodule.Quotient.mk_eq_zero I).2 (Submodule.subset_span ⟨p, q, hpq, F, hF, rfl⟩)
-  have hq := GlobalTheory.T.gl_relations_triangular_annihilation W (W ⧸ I) c N n h Xf hX Wn hW I.mkQ hL W₀ h0 hs i
+  have hq := _root_.GlobalTheory.CompanionTheory.Dblock.CentreManyBlocks.monic_relations_along_block W (W ⧸ I) c N n h Xf hX Wn hW I.mkQ hL W₀ h0 hs i
   have hEI : ∀ p q, ∀ G ∈ I, Ei p q G ∈ I := fun p q =>
     block_keeps n h Xf hX Wn hW _ _ (by simp [GlobalTheory.SmGL.blk])
   let pres : Subalgebra ℂ (Module.End ℂ W) := GlobalTheory.CompanionTheory.Dblock.CentreBlocks.preserving I
@@ -264,8 +263,8 @@ theorem s_oneP (hθ : IsInfFam θ) {V V' : HSp D} {ι : V'.V →ₗ[D.host.E] V.
     s (oneP θ V' τ A t) = oneP θ V τ ((frameMat V V' ι).map (tauE D τ) * A *
       ((gramAt D V' τ)⁻¹ * ((frameMat V V' ι).map (tauE D τ))ᴴ * gramAt D V τ)) t := by
   obtain ⟨-, -, f3, f4, f5⟩ := GlobalTheory.T.hermitian_form_change_of_basis_lie (gramAt D V τ) (gramAt D V' τ) ((frameMat V V' ι).map (tauE D τ)) (GlobalTheory.SmoothForms.RealPts.gramAt_herm V τ) (GlobalTheory.SmoothForms.RealPts.gramAt_herm V' τ) (GlobalTheory.SmoothForms.RealPts.gramAt_unit V τ) (GlobalTheory.SmoothForms.RealPts.gramAt_unit V' τ) (frame_isom hι τ)
-  have R := (GlobalTheory.T.adelicUnitary_realPoints_structure_realPlaces D).2 θ hθ V
-  have R' := (GlobalTheory.T.adelicUnitary_realPoints_structure_realPlaces D).2 θ hθ V'
+  have R := (_root_.GlobalTheory.SmoothForms.RealPts.realPoints D).2 θ hθ V
+  have R' := (_root_.GlobalTheory.SmoothForms.RealPts.realPoints D).2 θ hθ V'
   obtain ⟨s₀, -, hs₀, -⟩ := GlobalTheory.Mem.UnitaryEmb.exists_embHom D V V' ι hι
   have hg := GlobalTheory.SmoothAutCheck.exp_mem_UH (R.1 τ).2 (X := (frameMat V V' ι).map (tauE D τ) * A *
       ((gramAt D V' τ)⁻¹ * ((frameMat V V' ι).map (tauE D τ))ᴴ * gramAt D V τ)) (f3 A hA) t
@@ -316,7 +315,7 @@ theorem mid_frame : ∀ (D : D7) (V V' : HSp D) (ι : V'.V →ₗ[D.host.E] V.V)
             (C.1.map (tauE D τ) * Matrix.single (⟨a + r.val, by omega⟩ : Fin V.rank) (⟨a + u.val, by omega⟩ : Fin V.rank) (1 : ℂ) *
               (C.1.map (tauE D τ))⁻¹) := by
   intro D V V' ι hι m X Y hW T hr C hC a ham hup
-  obtain ⟨hdim, B, Bi, hBB, hB, hperp⟩ := GlobalTheory.T.adapted_frame_orthogonal_subspace D V V' ι hι m X Y hW T hr C hC a ham hup
+  obtain ⟨hdim, B, Bi, hBB, hB, hperp⟩ := _root_.GlobalTheory.CompanionTheory.Hypotheses₂.LeviPart.ComplFrame.frame_cols D V V' ι hι m X Y hW T hr C hC a ham hup
   refine ⟨hdim, fun τ => ⟨B.map (tauE D τ), Bi.map (tauE D τ), ?_, ?_⟩⟩
   · rw [← Matrix.map_mul, hBB, Matrix.map_one _ (map_zero _) (map_one _)]
   · obtain ⟨f1, -, -, -, -⟩ := GlobalTheory.T.hermitian_form_change_of_basis_lie (gramAt D V τ) (gramAt D V' τ) ((frameMat V V' ι).map (tauE D τ)) (GlobalTheory.SmoothForms.RealPts.gramAt_herm V τ) (GlobalTheory.SmoothForms.RealPts.gramAt_herm V' τ) (GlobalTheory.SmoothForms.RealPts.gramAt_unit V τ) (GlobalTheory.SmoothForms.RealPts.gramAt_unit V' τ) (frame_isom hι τ)
@@ -400,7 +399,7 @@ theorem der_unip_vanish (hθ : IsInfFam θ) {V : HSp D} {m : ℕ} {X Y : Matrix 
     rw [Matrix.nonsing_inv_mul _ hPu, Matrix.mul_one, ← Matrix.mul_assoc, Matrix.nonsing_inv_mul _ hPu, Matrix.one_mul]
   have hc1 : ∀ b c : Fin V.rank, (P⁻¹ * conjAt V τ Z * P) b c ≠ 0 →
       ∃ e : ℕ, (e = 0 ∨ e = 0 + a ∨ e + 0 + a = V.rank ∨ e + 0 = V.rank) ∧ b.val < e ∧ e ≤ c.val :=
-    fun b c h => GlobalTheory.T.adapted_basis_conjugate_zero_entries D V m X Y hW 0 a (by omega) C hC τ p q b c hcut h
+    fun b c h => _root_.GlobalTheory.CompanionTheory.Hypotheses₂.ConjAdapted.conj_strict D V m X Y hW 0 a (by omega) C hC τ p q b c hcut h
   have hc0 : ∀ b c : Fin V.rank, (P⁻¹ * Z * P) b c ≠ 0 →
       ∃ e : ℕ, (e = 0 ∨ e = 0 + a ∨ e + 0 + a = V.rank ∨ e + 0 = V.rank) ∧ b.val < e ∧ e ≤ c.val := by
     intro b c h
@@ -419,9 +418,9 @@ theorem der_unip_vanish (hθ : IsInfFam θ) {V : HSp D} {m : ℕ} {X Y : Matrix 
       simp only [Matrix.mul_add, Matrix.add_mul, Matrix.mul_smul, Matrix.smul_mul, Matrix.add_apply, Matrix.smul_apply, h0, h1,
         smul_zero, add_zero]
     · exact hc0 b c h0
-  have u1 := fun t => GlobalTheory.T.adapted_basis_block_entries D θ hθ V m X Y hW T 0 a (by omega) (by simpa using hk) (Or.inl rfl) C hC τ _ h1
+  have u1 := fun t => _root_.GlobalTheory.CompanionTheory.Hypotheses₂.LeviPart.UnipOne.oneP_mem_unip D θ hθ V m X Y hW T 0 a (by omega) (by simpa using hk) (Or.inl rfl) C hC τ _ h1
     (hA (1 / 2) (1 / 2) _ (by simp only [smul_add])) t
-  have u2 := fun t => GlobalTheory.T.adapted_basis_block_entries D θ hθ V m X Y hW T 0 a (by omega) (by simpa using hk) (Or.inl rfl) C hC τ _ h2
+  have u2 := fun t => _root_.GlobalTheory.CompanionTheory.Hypotheses₂.LeviPart.UnipOne.oneP_mem_unip D θ hθ V m X Y hW T 0 a (by omega) (by simpa using hk) (Or.inl rfl) C hC τ _ h2
     (hA (1 / (2 * Complex.I)) (-(1 / (2 * Complex.I))) _ (by rw [smul_sub, neg_smul, sub_eq_add_neg])) t
   rw [derEnd_coe']
   simp only [RderC, Pi.add_apply, Pi.smul_apply, rder_eq_zero hW u1 hF hg, rder_eq_zero hW u2 hF hg, smul_zero, add_zero]
@@ -524,13 +523,13 @@ theorem key_monic (hθ : IsInfFam θ) {V : HSp D} {m : ℕ} {X Y : Matrix (Fin V
   let M : Fin V.rank → Fin V.rank → Matrix (Fin V.rank) (Fin V.rank) ℂ := fun i j => P * Matrix.single i j (1 : ℂ) * P⁻¹
   have hM : Formalism.REAL.GlRel M := glRel_conj hQP
   let Xf : Fin V.rank → Fin V.rank → Module.End ℂ (GlobalTheory.Mem.AutSpace.SmFun θ V) := fun i j => GlobalTheory.Mem.RealTranslate.derEnd hθ τ (M i j)
-  have hX : Formalism.REAL.GlRel Xf := GlobalTheory.T.gl_relations_derivative_preserved D θ hθ V τ M hM
+  have hX : Formalism.REAL.GlRel Xf := _root_.GlobalTheory.CompanionTheory.DerGlRel.glRel_derEnd_family D θ hθ V τ M hM
   let Wn := leftSm θ V (unip D.sp.cm.sig V.gram X T)
   have hWn : ∀ p q, ∀ F ∈ Wn, Xf p q F ∈ Wn := fun p q F hF u hu g =>
     rderC_left τ _ (hF u hu) g
   let W₀ : Set (GlobalTheory.Mem.AutSpace.SmFun θ V) := {F | F ∈ Wn ∧ ∀ k', gelf θ V τ k' F.1 = c k' • F.1}
   have hs : ∀ v : ℂ, ∃ s : ℂ, ∀ F ∈ W₀, Formalism.REAL.qdet Xf v F = s • F := fun v => by
-    obtain ⟨s, hs⟩ := GlobalTheory.T.gelfand_eigenvalue_casimir_scalar D θ hθ V τ M hM (span_conj hPQ) c v
+    obtain ⟨s, hs⟩ := _root_.GlobalTheory.CompanionTheory.CoreGL.qdet_scalar_of_gelf D θ hθ V τ M hM (span_conj hPQ) c v
     exact ⟨s, fun F hF => hs F hF.2⟩
   obtain ⟨q, hqm, hq⟩ := monic_gelf_block nn h Xf hX Wn hWn W₀ (fun F hF => hF.1) hs (1 : Fin 3) k
   have hmid : ∀ p : Fin n', (GlobalTheory.SmGL.stdBlocks nn h ⟨(1 : Fin 3), p⟩ : Fin V.rank) = ⟨a + p.val, by omega⟩ := fun p =>
@@ -639,7 +638,7 @@ end Final
 theorem gelf_slices_monic : ∀ (D : D7) (θ : D.what₂.Tau → (Ainf D.host.F ⊗[D.host.F] D.host.E →+* ℂ)), IsInfFam θ → ∀ (V : HSp D) (U : Subgroup (GA D V)) (ε : D.what₂.Tau → Fin V.rank → Bool) (fr : D.what₂.Tau → Matrix (Fin V.rank) (Fin V.rank) ℂ) (W : D.what₂.Tau → Type) [∀ τ, AddCommGroup (W τ)] [∀ τ, Module ℂ (W τ)] (ρ : ∀ τ, Representation ℂ (Formalism.REAL.KG (ε τ)) (W τ)) (c : D.what₂.Tau → ℕ → ℂ) (m : ℕ) (X Y : Matrix (Fin V.rank) (Fin m) D.host.E), GlobalTheory.SiegelSet.IsWittFrame D.sp.cm.sig V.gram X Y → ∀ (T : Finset (Fin m)) (V' : HSp D) (ι : V'.V →ₗ[D.host.E] V.V), HSpace.IsIsomEmb V' V ι → (∀ v : V.V, v ∈ LinearMap.range ι ↔ ∀ i ∈ GlobalTheory.CompanionTheory.Hypotheses₂.LeviPart.upTo T, V.hT (V.frame.equivFun.symm fun j => X j i) v = 0 ∧ V.hT (V.frame.equivFun.symm fun j => Y j i) v = 0) → ∀ s : GA D V' →* GA D V, (∀ h, EmbRel V V' ι (s h) h) → ∃ A : D.what₂.Tau → ℕ → List ℂ, ∀ ψ ∈ formsOn θ V X Y T U ε fr ρ c, ∀ y ∈ levi D.sp.cm.sig V.gram X Y T, (∀ t ∈ uPart D.sp.cm.sig V.gram X Y T, t * y = y * t) → ∀ τ k, (A τ k).foldr (fun a f => gelf θ V' τ k f - a • f) (fun h => ψ (s h * y)) = 0 := by
   intro D θ hθ V U ε fr W _ _ ρ c m X Y hW T V' ι hι hr s hs
   classical
-  obtain ⟨C, hC⟩ := GlobalTheory.T.exists_adapted_witt_basis D V m X Y hW
+  obtain ⟨C, hC⟩ := _root_.GlobalTheory.CompanionTheory.Hypotheses₂.AdaptedBasis.exists_isAdapted D V m X Y hW
   obtain ⟨a, ham, hup, hcut⟩ := exists_cut T
   obtain ⟨hdim, hB⟩ := mid_frame D V V' ι hι m X Y hW T hr C hC a ham hup
   have key : ∀ τ k, ∃ q : Polynomial ℂ, q.Monic ∧ ∀ F : GlobalTheory.Mem.AutSpace.SmFun θ V,
@@ -664,7 +663,7 @@ theorem gelf_slices_monic : ∀ (D : D7) (θ : D.what₂.Tau → (Ainf D.host.F 
     exact hq F h1 h2 g hg
   choose q hqm hq using key
   refine ⟨fun τ k => (q τ k).roots.toList, fun ψ hψ y hy hcomm τ k => ?_⟩
-  have hsu := (GlobalTheory.T.orthogonal_subspace_unitary_embedding D V m X Y hW T V' ι hι hr s hs).1
+  have hsu := (_root_.GlobalTheory.CompanionTheory.Hypotheses₂.LeviPart.UEmb.range_embHom D V m X Y hW T V' ι hι hr s hs).1
   have hy' : ∀ h, s h * y = y * s h := fun h => hcomm _ (hsu h)
   let G : GlobalTheory.Mem.AutSpace.SmFun θ V := ⟨ψ, GlobalTheory.SphSmooth.mem_smFun_of_isSm hθ hψ.1.smooth⟩
   have e := foldr_slice τ k _ (fun G' => gelf_slice hθ hι hs τ hy' k G') (q τ k).roots.toList G

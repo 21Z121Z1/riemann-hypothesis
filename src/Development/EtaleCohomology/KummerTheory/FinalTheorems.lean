@@ -1,6 +1,6 @@
 module
 
-public import Development.EtaleCohomology.KummerTheory.InjSlice
+public import Development.EtaleCohomology.KummerTheory.Bundle0001
 
 @[expose] public section
 

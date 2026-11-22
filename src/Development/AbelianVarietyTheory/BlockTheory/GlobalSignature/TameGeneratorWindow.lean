@@ -5,7 +5,7 @@ public import Formalism.SharpRestriction.ParConsts
 public import Formalism.SharpRestriction.ParamsHeightRankConstant
 public import Formalism.SharpRestriction.GrowthBounds.SmallOrderPrimes
 public import Formalism.LocalToGlobal.UnitaryNorms.CharHost
-public import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.DisjointExceptional
+public import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.Bundle0003
 public import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.ThinScalesIffHostBound
 
 @[expose] public section

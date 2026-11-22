@@ -1,11 +1,11 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.GeometricallyConnectedOfIsIsoRestrict
+public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.Bundle0004
 public import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsIsLocModelIsPrimeOf
-public import Development.AbelianVarietyTheory.Definitions.Divisors.NotDominatesTopPlace
-public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.SmoothOfRelativeDimensionDescendsEtaleCover
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MapComapMaximalIdealEqOfFormallyUnramifiedStatement
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0038
+public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0072
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0080
 
 @[expose] public section
 
@@ -139,7 +139,7 @@ theorem ord_eq_of_etTower : ∀ {K L : Type} [Field K] [Field L] (cK : ℂ →+*
   haveI : Algebra.EssFiniteType T P.ring :=
     Algebra.EssFiniteType.of_isLocalization P.ring ((IsUnit.submonoid P.ring).comap j)
   haveI : Algebra.EssFiniteType A P.ring := Algebra.EssFiniteType.comp A T P.ring
-  have hmax := GlobalTheory.T.map_comap_maximalIdeal_eq_of_formallyUnramified' A P.ring
+  have hmax := _root_.GlobalTheory.map_comap_maximalIdeal_eq_of_formallyUnramified A P.ring
   let q : Ideal T := (IsLocalRing.maximalIdeal P.ring).comap j
   let p : Ideal R := (IsLocalRing.maximalIdeal P0.ring).comap (incl P0 hP0.1)
   haveI : q.IsPrime := Ideal.comap_isPrime _ _

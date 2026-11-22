@@ -1,13 +1,13 @@
 module
 
-public import Formalism.LocalToGlobal.GroupLattices.TiedFamilies.FullTiedCBase
+public import Formalism.LocalToGlobal.GroupLattices.TiedFamilies.Bundle0007
 public import Formalism.LocalToGlobal.GroupLattices.LinkGConcreteNoKer
 public import Formalism.SharpRestriction.SmoothDesignExistence.DGamSmooth
-public import Formalism.LocalToGlobal.GroupLattices.TiedFamilies.IntSplitOf
+public import Formalism.LocalToGlobal.GroupLattices.TiedFamilies.Bundle0001
 public import Formalism.LocalToGlobal.GroupLattices.ComparisonMaps.RecThm
-public import Formalism.LocalToGlobal.GroupLattices.TiedFamilies.TieIwLevTieOf
-public import Formalism.LocalToGlobal.GroupLattices.TiedFamilies.CmpHyp0P
-public import Formalism.LocalToGlobal.GroupLattices.TiedFamilies.SelfDualAtColLevel
+public import Formalism.LocalToGlobal.GroupLattices.TiedFamilies.Bundle0008
+public import Formalism.LocalToGlobal.GroupLattices.TiedFamilies.Bundle0004
+public import Formalism.LocalToGlobal.GroupLattices.TiedFamilies.Bundle0002
 
 @[expose] public section
 

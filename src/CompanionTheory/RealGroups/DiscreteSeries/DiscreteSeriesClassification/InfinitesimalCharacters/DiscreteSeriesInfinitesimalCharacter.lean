@@ -2,14 +2,11 @@ module
 
 public import CompanionTheory.RealGroups.DiscreteSeries.DiscreteSeriesClassification.InfinitesimalCharacters.DsInfCharOf
 public import CompanionTheory.HarishChandraModules.LowKTypeMultiplicity.DiscreteSeriesCharacters.DiscreteSeriesInfinitesimalCharacter
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.TraceElementsActByGelfandValues
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.UnitActGlRel
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MapQdetEtr
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.EwordCoef
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SumCycWordEqEtr
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.KFinSmoothBoth
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IsDSSkImpUpqRep
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CoefSmoothOnG
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0427
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0189
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0188
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0397
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0760
 
 @[expose] public section
 

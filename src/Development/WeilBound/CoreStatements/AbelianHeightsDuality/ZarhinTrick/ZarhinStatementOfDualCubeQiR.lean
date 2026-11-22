@@ -2,15 +2,12 @@ module
 
 public import Mathlib
 public import Development.WeilBound.CoreStatements.AbelianHeightsDuality.ZarhinTrick.PolQuasiInverse
-public import Development.WeilBound.CoreStatements.AbelianHeightsDuality.ZarhinTrick.OneCompPrj
-public import Development.WeilBound.CoreStatements.AbelianHeightsDuality.ZarhinTrick.IsLBZb
-public import Development.WeilBound.CoreStatements.AbelianHeightsDuality.ZarhinTrick.FibLam
-public import Development.WeilBound.CoreStatements.AbelianHeightsDuality.ZarhinTrick.KLiftSqToBase
+public import Development.WeilBound.CoreStatements.AbelianHeightsDuality.ZarhinTrick.Bundle0004
+public import Development.WeilBound.CoreStatements.AbelianHeightsDuality.ZarhinTrick.Bundle0009
+public import Development.WeilBound.CoreStatements.AbelianHeightsDuality.ZarhinTrick.Bundle0010
 public import Development.WeilBound.CoreStatements.AbelianHeightsDuality.ZarhinTrick.FibAmple
-public import Development.WeilBound.CoreStatements.AbelianHeightsDuality.ZarhinTrick.ExistsQuat
+public import Development.WeilBound.CoreStatements.AbelianHeightsDuality.ZarhinTrick.Bundle0001
 public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.RelAmpleOfCls
-public import Development.WeilBound.CoreStatements.AbelianHeightsDuality.ZarhinTrick.QiDefs
-public import Development.WeilBound.CoreStatements.AbelianHeightsDuality.ZarhinTrick.QiIsMonHomIdPow
 
 @[expose] public section
 

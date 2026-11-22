@@ -2,8 +2,8 @@ module
 
 public import Mathlib
 public import Development.WeilBound.CoreStatements.FiniteTypeHarishChandra.SupportExistsAll
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ColGeR
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.PatternGroupStatement
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0094
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0098
 
 @[expose] public section
 

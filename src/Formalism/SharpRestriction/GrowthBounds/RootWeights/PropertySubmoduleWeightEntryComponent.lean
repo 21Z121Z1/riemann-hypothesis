@@ -1,6 +1,6 @@
 module
 
-public import Formalism.SharpRestriction.GrowthBounds.RootWeights.LaurentCoefficientsMemProperty
+public import Formalism.SharpRestriction.GrowthBounds.RootWeights.Bundle0017
 
 @[expose] public section
 

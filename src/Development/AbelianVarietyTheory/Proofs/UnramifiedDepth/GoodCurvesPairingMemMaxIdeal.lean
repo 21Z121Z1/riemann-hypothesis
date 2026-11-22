@@ -1,16 +1,15 @@
 module
 
 public import Mathlib
-public import Formalism.LocalToGlobal.CharacterGerms.NondegenerateCharts
-public import Formalism.LocalToGlobal.CharacterGerms.RowTieSelf
-public import Formalism.LocalToGlobal.CharacterGerms.BlockAdmissibleChart
-public import Formalism.LocalToGlobal.CharacterGerms.NegMem
+public import Formalism.LocalToGlobal.CharacterGerms.Bundle0015
+public import Formalism.LocalToGlobal.CharacterGerms.Bundle0012
+public import Formalism.LocalToGlobal.CharacterGerms.Bundle0011
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PlaceDivisors.StChartF
 public import Development.AbelianVarietyTheory.Definitions.TeichmullerDepth.HasTeich
 public import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.AddCurveStableOfIntegralGaugedFormalGroupLaw
 public import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.AdjointEndPairMemGaugedCurveLogarithms
-public import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.FrobeniusMemTypicalCurveSet
-public import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.IntSOfMulEqOne
+public import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.Bundle0055
+public import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.Bundle0046
 
 @[expose] public section
 

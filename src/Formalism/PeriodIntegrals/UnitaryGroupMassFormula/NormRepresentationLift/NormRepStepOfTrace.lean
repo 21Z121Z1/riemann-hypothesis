@@ -2,8 +2,8 @@ module
 
 public import Mathlib
 public import Formalism.LocalToGlobal.SiegelLatticeTheory.ClosedLocalOrbits.TermDef
-public import Formalism.PeriodIntegrals.NormRepLift
-public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.NormRepresentationLift.IntLatOfUnimod
+public import Formalism.PeriodIntegrals.Bundle0024
+public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.NormRepresentationLift.Bundle0002
 public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.NormRepresentationLift.PreRowvec
 
 @[expose] public section

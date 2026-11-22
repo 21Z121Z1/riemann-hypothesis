@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import GroundTheory.HeightsAndTheta.Heights.IntegralModels.FiniteIntegralClosureLocal
+public import GroundTheory.HeightsAndTheta.Heights.IntegralModels.Bundle0001
 
 @[expose] public section
 

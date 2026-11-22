@@ -2,25 +2,32 @@ module
 
 public import Mathlib
 public import Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.PerfectoidPullbacks.GlobalSerreRelations.GlobSerreSt
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsChartFromCoordinatesStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FilteredCohomologyRestrictionBijectiveStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CechRefinementCohomologyBijectiveStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CohomologyVanishingAlongIdealFiltrationStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FiniteModulesSerreClassStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SerreClassOfCechSpectralSequenceStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.AffineCoverCohomologyFiniteStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.AffineCoverHigherCohomologyVanishesStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CechVanishingFromCoverStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsSmoothCoordinateCoverStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CoordinatesRestrictAffineOpenStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ChartIsGoodStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ChartDividedPowersGradedConstantStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SheafFiltrationPropertyStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FlatBaseChangeCohomology
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0138
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FilteredCohomologyRestrictionBijective
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CechRefinementCohomologyBijective
+public import Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.ZariskiEtaleLifting.ZariskiCocycleRefinement
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0125
+public import Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.PerfectoidPullbacks.InclStd
+public import Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.CechPairings.MapHComp
+public import Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.CechPairings.MemBoundariesZeroIff
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0127
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SerreClassOfCechSpectralSequence
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.AffineCoverCohomologyFinite
+public import GroundTheory.ArithmeticGeometry.SchemeCohomology.ProperFiniteness
+public import GroundTheory.ArithmeticGeometry.SchemeCohomology.Bundle0004
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.AffineCoverHigherCohomologyVanishes
+public import GroundTheory.ArithmeticGeometry.SchemeCohomology.AffineVanishing
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0135
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0126
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0123
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0236
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0131
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0158
 public import Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.PerfectoidPullbacks.Coords
 public import Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.CechPairings.Imports
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.InOpenOfThickeningMorphismStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.InOpenFiniteInfIffStatement
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0118
+public import Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.PerfectoidPullbacks.SEqOne
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0117
 
 @[expose] public section
 
@@ -201,11 +208,11 @@ theorem capT_eq (Q : ObjectProperty (Thick (smFun X q))) {ι : Type} [DecidableE
     capT (fun α => St Q {U α}) i = St Q {⨅ α ∈ Finset.univ.image i, U α} := by
   funext T
   refine propext ⟨fun h => ?_, fun h a => ?_⟩
-  · refine (st_single_iff T).2 ⟨((st_single_iff T).1 (h 0)).1, (GlobalTheory.T.inOpen_finite_inf_iff U _ T).2 fun α hα => ?_⟩
+  · refine (st_single_iff T).2 ⟨((st_single_iff T).1 (h 0)).1, (_root_.GlobalTheory.CompanionTheory.Thick.inU_iInf_finset U _ T).2 fun α hα => ?_⟩
     obtain ⟨a, -, rfl⟩ := Finset.mem_image.1 hα
     exact ((st_single_iff T).1 (h a)).2
   · obtain ⟨h1, h2⟩ := (st_single_iff T).1 h
-    exact (st_single_iff T).2 ⟨h1, (GlobalTheory.T.inOpen_finite_inf_iff U _ T).1 h2 _ (Finset.mem_image_of_mem i (Finset.mem_univ a))⟩
+    exact (st_single_iff T).2 ⟨h1, (_root_.GlobalTheory.CompanionTheory.Thick.inU_iInf_finset U _ T).1 h2 _ (Finset.mem_image_of_mem i (Finset.mem_univ a))⟩
 
 theorem gr_van (hVan : KH.GlobVanSt) (hAff : KH.GrAff) [Smooth q] (U : Cov q) (s r : ℕ) (hr : r < s) (j : ℕ) (hj : j < r) :
     Subsingleton (HQ (KS q s (Set.range U.U)) r ((r : ℤ) + 1) j) :=
@@ -239,7 +246,7 @@ namespace GlobalTheory.CompanionTheory.KFin
 theorem fil_anti {K : Type} [CommRing K] {X : Scheme.{0}} (q : X ⟶ Spec (CommRingCat.of K))
     (Q : ObjectProperty (Thick (smFun X q))) (k l : ℕ) (h : k ≤ l) (T) :
     (sFil Q (l : ℤ)).S T ≤ (sFil Q (k : ℤ)).S T :=
-  (GlobalTheory.T.sheaf_filtration_property Q).anti (by exact_mod_cast h) T
+  (_root_.GlobalTheory.CompanionTheory.DPFil.isFil_sFil Q).anti (by exact_mod_cast h) T
 
 theorem fil_bot {K : Type} [CommRing K] {X : Scheme.{0}} (q : X ⟶ Spec (CommRingCat.of K)) (s : ℕ) (𝒱 : Set X.Opens) (T) :
     (sFil (KS q s 𝒱) (s : ℤ)).S T = ⊥ := T.property.1.1
@@ -249,8 +256,8 @@ end GlobalTheory.CompanionTheory.KFin
 theorem GlobalTheory.CompanionTheory.KFin.main : KH.LocGr → KH.LocVan → KH.PolyTf → KH.GlobSerreSt → KH.GlobVanSt → KH.KIso → KH.GrAff → KH.GrCechFin → ∀ {K : Type} [Field K] [CharZero K] {X : Scheme.{0}} (q : X ⟶ Spec (CommRingCat.of K)) [IsProper q] [Smooth q] (j : ℕ),
     FiniteDimensional K (HdR q j) ∧ ∀ x ∈ FilR q j (j + 1), x = 0 := by
   intro _ _ _ hSerre hVan hK hAff hCech K _ _ X q _ _ j
-  obtain ⟨U⟩ := (GlobalTheory.T.exists_smooth_coordinate_cover q).1 inferInstance
-  obtain ⟨𝒮, h𝒮⟩ := GlobalTheory.T.finite_modules_serre_class K
+  obtain ⟨U⟩ := (_root_.GlobalTheory.CompanionTheory.CovEx.exists_cov q).1 inferInstance
+  obtain ⟨𝒮, h𝒮⟩ := _root_.GlobalTheory.CompanionTheory.SerreFin.exists_serre_finite K
   let s : ℕ := (Finset.univ.sup U.d) + j + 1
   have hs : ∀ α, U.d α < s := fun α => by
     have : U.d α ≤ Finset.univ.sup U.d := Finset.le_sup (Finset.mem_univ α)

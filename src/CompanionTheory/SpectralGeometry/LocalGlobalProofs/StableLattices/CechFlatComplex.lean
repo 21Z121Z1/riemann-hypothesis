@@ -2,10 +2,10 @@ module
 
 public import Mathlib
 public import CompanionTheory.AutomorphicTheory.TemperedLocalSpectra.ObstructionLifting.H1StructureDimLe
-public import Development.AbelianVarietyTheory.Proofs.FormalGroupCharts.FlatQuotientWeaklyRegular
+public import Development.AbelianVarietyTheory.Proofs.FormalGroupCharts.Bundle0002
 public import Development.AbelianVarietyTheory.Proofs.CoherentCohomologyProofs.IsRegularOfSupportDimQuotientAddLengthLe
-public import GroundTheory.ArithmeticGeometry.SchemeCohomology.RegularSmooth
-public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.LocalizationOfIsStandardSmooth
+public import GroundTheory.ArithmeticGeometry.SchemeCohomology.Bundle0002
+public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.Bundle0019
 
 @[expose] public section
 

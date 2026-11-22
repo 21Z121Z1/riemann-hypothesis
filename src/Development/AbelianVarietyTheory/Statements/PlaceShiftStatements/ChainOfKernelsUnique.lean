@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.Divisors.CompEqOneIffPush
-public import Development.AbelianVarietyTheory.Definitions.Divisors.Subsingleton
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0045
 
 @[expose] public section
 

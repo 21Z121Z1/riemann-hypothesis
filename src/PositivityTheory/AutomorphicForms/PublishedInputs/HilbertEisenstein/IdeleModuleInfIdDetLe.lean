@@ -2,9 +2,9 @@ module
 
 public import PositivityTheory.AutomorphicForms.PublishedInputs.HilbertEisenstein.SSmooth
 public import GroundTheory.GlobalFields.TateThesis.TateThetaDecay
-public import GroundTheory.GlobalFields.TateThesis.AdelePoissonUniform
+public import GroundTheory.GlobalFields.TateThesis.Bundle0009
 public import GroundTheory.IdeleRoots.ClassicalIdeles.FinOrdValGenProof
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsOpenIdeleSubgroupContainsCongruenceUnits
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0043
 
 @[expose] public section
 

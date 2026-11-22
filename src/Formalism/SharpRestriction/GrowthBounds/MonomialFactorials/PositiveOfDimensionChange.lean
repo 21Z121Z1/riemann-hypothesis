@@ -1,7 +1,7 @@
 module
 
 public import Formalism.SharpRestriction.GrowthBounds.MonomialFactorials.DirectionsOfPositivePart
-public import Formalism.SharpRestriction.GrowthBounds.MonomialFactorials.RestDimBCProved
+public import Formalism.SharpRestriction.GrowthBounds.MonomialFactorials.Bundle0010
 
 @[expose] public section
 

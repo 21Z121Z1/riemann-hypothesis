@@ -5,10 +5,10 @@ public import Formalism.HermitianCurvature.BesselNonvanishingReduction
 public import Formalism.HermitianCurvature.WeylElementCommutesLevelOne
 public import Formalism.RealPlaceAnalysis.QuotientSettingHolds
 public import Formalism.RealPlaceAnalysis.FinalF
-public import Formalism.RealPlaceAnalysis.RealPlaceTaylor.CompactExponentialSurjective
+public import Formalism.RealPlaceAnalysis.RealPlaceTaylor.Bundle0008
 public import Formalism.PeriodIntegrals.UpqRep
 public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.IsWtOnIffOfTorus
-public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.SetIntegralDifferentiability
+public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0054
 
 @[expose] public section
 

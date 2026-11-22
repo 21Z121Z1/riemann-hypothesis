@@ -1,17 +1,16 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.ThetaIndexBoundHypothesesAtInstance
-public import Development.AbelianVarietyTheory.Definitions.ThetaValues.SWEqSOf
+public import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.Bundle0087
+public import Development.AbelianVarietyTheory.Definitions.ThetaValues.Bundle0002
 public import Development.AbelianVarietyTheory.Definitions.ThetaValues.GamAt
-public import Formalism.SharpRestriction.GenusPolyhedralBounds.RelativeIndexClassSets.AdmissibleModuleIffLatticeQuotients
-public import Formalism.SharpRestriction.GenusPolyhedralBounds.RelativeIndexClassSets.TheoremZeroOfReducedInputs
+public import Formalism.SharpRestriction.GenusPolyhedralBounds.RelativeIndexClassSets.Bundle0003
+public import Formalism.SharpRestriction.GenusPolyhedralBounds.RelativeIndexClassSets.Bundle0007
 public import Formalism.SharpRestriction.GenusPolyhedralBounds.RelativeIndexClassSets.LiftIndexPowFourLeDegree
 public import Formalism.LocalRingCardinality.CoeNeZeroOfNotMem
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PullbackSections.SupBoundPageRows
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PullbackSections.LatOfLamSt
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PullbackSections.NoCommonZeroSt
-public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.ThExprUniqOfChartIndep2
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PullbackSections.Bundle0003
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PullbackSections.Bundle0013
+public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0007
 
 @[expose] public section
 
@@ -23,7 +22,7 @@ theorem _root_.GlobalTheory.T.thetaIndexBound_hypotheses_at_instance : Formalism
   intro hCI D T h hGam hSh hbad hA1 hUX hinj EX p j hj large₂ H C2 A2 CR CT ka wL wF Tn nP nW h0 Gc Prw
     hOwn hHP hPA hCK hThG2 hThG1 hH2 hG4 hPrw
 
-  obtain ⟨hRows, h16⟩ := GlobalTheory.T.sizePageRows_of_sizePageAt D (recB h.toLawsCore) T.G.P j (recPJ h j hj) large₂ H C2 A2 CR CT ka wL wF Tn nP
+  obtain ⟨hRows, h16⟩ := _root_.GlobalTheory.pageRows_of_pageAt D (recB h.toLawsCore) T.G.P j (recPJ h j hj) large₂ H C2 A2 CR CT ka wL wF Tn nP
     nW h0 hHP hPA hCK
 
   obtain ⟨hW, hWn, -, -⟩ := GlobalTheory.RunWeights.weights_below D (recB h.toLawsCore) T.G.P j (recPJ h j hj) large₂ H C2 A2 CR CT
@@ -31,17 +30,17 @@ theorem _root_.GlobalTheory.T.thetaIndexBound_hypotheses_at_instance : Formalism
 
   have hSpan : ∀ w, w ∈ ({wL, wF, (recPJ h j hj).wF0 wL wF, ka} : Set (WeightFamilies.Wt D j)) →
       8 * D.R.f * D.R.r + 4 ≤ w.n → ReciprocityTheory.ChartRestriction.G.PullbackSections.SpanAt (recPJ h j hj) w := fun w hw hn =>
-    GlobalTheory.T.shortThetaSeries_span_cuspForms_weight hCI D T h hSh hGam hbad hUX j hj.1 hj.2 w
+    _root_.GlobalTheory.Dict.spanAt_record hCI D T h hSh hGam hbad hUX j hj.1 hj.2 w
       (ReciprocityTheory.ChartRestriction.G.PullbackSections.Pf.lastPos_wtA h hj w (hW w hw).2.2.2) hn
-  have hSB := GlobalTheory.T.runScalars_nonzero_bounded_supBound hCI D T h hGam hSh hA1 hinj EX p j hj large₂ H C2 A2 CR CT ka wL wF Tn nP nW h0 hOwn hHP hRows
+  have hSB := _root_.GlobalTheory.RunIn.scalB_rec hCI D T h hGam hSh hA1 hinj EX p j hj large₂ H C2 A2 CR CT ka wL wF Tn nP nW h0 hOwn hHP hRows
     (hSpan wF (by simp) (hWn wF (by simp))) (hSpan _ (by simp) (hWn _ (by simp))) (hSpan ka (by simp) (hWn ka (by simp)))
-  have hI4 := GlobalTheory.T.exists_integral_auxiliary_cuspForms_supBound hCI D T h hGam hinj EX p j hj large₂ H C2 A2 CR CT ka wL wF Tn nP nW h0 hHP hRows h16 hThG2 hThG1
+  have hI4 := _root_.GlobalTheory.ThetaIntegralWeights.familyHypothesesI4_recPJ_of_supBound_thInt hCI D T h hGam hinj EX p j hj large₂ H C2 A2 CR CT ka wL wF Tn nP nW h0 hHP hRows h16 hThG2 hThG1
 
   have hThL : ThInt (recPJ h j hj) hinj EX wL := by
     have hW0 := hH2.1
     rw [sW_eq_sOf] at hW0
     exact hW0
-  obtain ⟨G₀, hG₀⟩ := GlobalTheory.T.exists_runData_generating_scaled_thetaLattice_weight hCI D T h hGam hinj EX p j hj large₂ H C2 A2 CR CT ka wL wF Tn nP nW h0 Gc Prw hHP hRows
+  obtain ⟨G₀, hG₀⟩ := _root_.GlobalTheory.RunIn.exists_tiedW_rec hCI D T h hGam hinj EX p j hj large₂ H C2 A2 CR CT ka wL wF Tn nP nW h0 Gc Prw hHP hRows
     hThL hG4 hPrw
   obtain ⟨Sh, hSh', -, hTh⟩ := GlobalTheory.exists_short_span_thetaTie_of_scalars D (recB h.toLawsCore) T.G.P j (recPJ h j hj) large₂
     H.C1 H.A1 Gc (scalOfP (recB h.toLawsCore) hinj EX p ka wL wF Tn) ka wL wF Tn hSB hG4
@@ -50,4 +49,4 @@ theorem _root_.GlobalTheory.T.thetaIndexBound_hypotheses_at_instance : Formalism
     exact (sOf_ne_zero_and_log_bounds D (recB h.toLawsCore) hinj EX j wL).1
   refine ⟨fun nus hnus => (FamilyHypotheses.hypC_iff large₂ (recPJ h j hj) H C2 A2 CR CT _ ka wL wF Tn nP nW h0 nus).2
       ⟨hHP, hSB, hnus, hH2, hI4⟩, G₀, Sh, hSh', hG₀, ?_, hTh⟩
-  exact GlobalTheory.T.scaledThetaLattice_generators_noCommonZero hCI D T h EX j hj _ large₂ H C2 A2 CR CT ka wL wF Tn nP nW h0 Gc Prw hHP hsW G₀ hG₀
+  exact _root_.GlobalTheory.RunIn.noCommonZero_of_tiedW hCI D T h EX j hj _ large₂ H C2 A2 CR CT ka wL wF Tn nP nW h0 Gc Prw hHP hsW G₀ hG₀

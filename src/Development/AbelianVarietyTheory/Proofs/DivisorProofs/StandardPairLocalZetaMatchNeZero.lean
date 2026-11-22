@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsLocPart
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PrimitiveFrameDatumZetaIntegralEqSmaller
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1712
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1636
 
 @[expose] public section
 

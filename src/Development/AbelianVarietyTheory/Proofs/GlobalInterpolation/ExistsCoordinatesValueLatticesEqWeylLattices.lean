@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.KerIsTerm
-public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.LevelChainSharpColumnValuationOfPointKernelLiftL
+public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0101
 public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.MemClosureIff
 
 @[expose] public section

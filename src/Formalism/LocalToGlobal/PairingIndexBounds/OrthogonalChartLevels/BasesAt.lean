@@ -2,7 +2,7 @@ module
 
 public import Formalism.LocalToGlobal.PairingIndexBounds.OrthogonalChartLevels.FdOfCharts
 public import Formalism.LocalToGlobal.InertKernelTheory.SecondKernelEntrywiseLastLevel
-public import Formalism.SharpRestriction.GrowthBounds.ChartComparison
+public import Formalism.SharpRestriction.GrowthBounds.Bundle0006
 
 @[expose] public section
 

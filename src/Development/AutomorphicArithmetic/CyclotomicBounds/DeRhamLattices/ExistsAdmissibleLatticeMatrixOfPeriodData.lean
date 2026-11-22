@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Development.AutomorphicArithmetic.CyclotomicBounds.DeRhamLattices.HasPres
-public import Development.AutomorphicArithmetic.CyclotomicBounds.DeRhamLattices.ExistsGaloisStableLatticeOfPeriodData
+public import Development.AutomorphicArithmetic.CyclotomicBounds.DeRhamLattices.Bundle0003
 
 @[expose] public section
 

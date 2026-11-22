@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Formalism.MirabolicMackeyTheory.StatementT
+public import Formalism.MirabolicMackeyTheory.Bundle0001
 public import Formalism.QuotientMetricDivisors.HermitianTwistDivisors.ValBasic
 public import Formalism.MirabolicMackeyTheory.MirabolicMackeyProofs.RamBasic
 

@@ -1,8 +1,8 @@
 module
 
 public import Formalism.HermitianCurvature.StatementHeads
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.PBGLift
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.PBGFormJ
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0202
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0158
 
 @[expose] public section
 

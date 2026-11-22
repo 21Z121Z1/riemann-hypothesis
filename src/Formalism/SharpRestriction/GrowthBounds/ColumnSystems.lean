@@ -3,7 +3,7 @@ module
 public import Formalism.LocalRingCardinality.RhoDetPrimeEqMuTildeMulChiPow
 public import Formalism.SharpRestriction.ParConsts
 public import Formalism.SharpRestriction.GrowthBounds.ObjSeg
-public import Formalism.SharpRestriction.GrowthBounds.ObjBridge
+public import Formalism.SharpRestriction.GrowthBounds.Bundle0001
 public import Formalism.SharpRestriction.GrowthBounds.CovariantDegrees
 public import Formalism.SharpRestriction.GrowthBounds.StatementOfDegreeAndBound
 public import Formalism.SharpRestriction.GrowthBounds.ConclusionA2

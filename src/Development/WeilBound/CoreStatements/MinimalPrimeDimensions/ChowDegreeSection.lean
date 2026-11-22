@@ -1,7 +1,7 @@
 module
 
 public import Development.WeilBound.CoreStatements.MinimalPrimeDimensions.DimClosureAddOneLe
-public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.ChartResidueDegreeAlgClosedClosed
+public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.Bundle0059
 
 @[expose] public section
 

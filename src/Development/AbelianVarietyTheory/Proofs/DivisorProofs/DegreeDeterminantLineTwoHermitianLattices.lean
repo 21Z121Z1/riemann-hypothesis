@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FrameCoord
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1523
 public import Formalism.LocalRingCardinality.CoeNeZeroOfNotMem
 public import Formalism.QuotientMetricDivisors.HermitianTwistDivisors.LcvBasis
 public import Formalism.MirabolicMackeyTheory.MirabolicMackeyProofs.IdxRules

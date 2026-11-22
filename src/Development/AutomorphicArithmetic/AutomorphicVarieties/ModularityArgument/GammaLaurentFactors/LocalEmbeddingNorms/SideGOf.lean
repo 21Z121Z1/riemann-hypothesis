@@ -1,9 +1,9 @@
 module
 
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.GammaLaurentFactors.MatchIndOf
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsIsUnitaryTwistAbsPow
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsIdelicAbsValueCpowCharacter
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CuspidalLetterCentralExponentProperties
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0629
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1027
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1724
 
 @[expose] public section
 

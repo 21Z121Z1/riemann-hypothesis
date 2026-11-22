@@ -1,10 +1,10 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.InfPartFPlaceIdem
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1000
 public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.IsOpenNsmulAdelicCompletionOfVectorSet
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HasDerivAtOfContinuousRealToComplexExponential
-public import GroundTheory.GlobalFields.TateThesis.NoSmallSubgroups
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0148
+public import GroundTheory.GlobalFields.TateThesis.Bundle0002
 
 @[expose] public section
 

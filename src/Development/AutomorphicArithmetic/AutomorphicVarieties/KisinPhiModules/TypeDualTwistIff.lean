@@ -1,7 +1,7 @@
 module
 
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.LiteratureResults.KisinCrystalline.TypeSt
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.PadicHodgeTheory.CycFacts
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.PadicHodgeTheory.Bundle0006
 
 @[expose] public section
 

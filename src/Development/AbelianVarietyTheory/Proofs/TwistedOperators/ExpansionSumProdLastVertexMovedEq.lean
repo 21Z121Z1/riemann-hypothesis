@@ -1,17 +1,16 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.RowShiftEq
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.FlippedLocalTotalTensorFixedByInnerVertexLevel
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ActOChiRight
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.GridStandardVacuumScalarEqProdLocalPlaces
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.LatHatStabOfHatL
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ColPtInvMemStdLatIff
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.GivenLevelInner
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.TopPairSourceCharProdLocalIdeles
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.DetUnitaryConjAtPlaceEqDetLatticeBasisComponent
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.WeilActionSchrodingerModelFiniteIdempotent
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsIsThetaAtOfVac
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0461
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0668
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0508
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0606
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0484
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0493
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0629
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0610
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0451
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1577
 
 @[expose] public section
 
@@ -525,7 +524,7 @@ theorem col_scalar (S : GridChoice W U) {t μ₀ : T} (hL : L.Is μ₀) (ht : t 
       Formalism.UG.stabGL (Formalism.L2.Herm.hatL (F := D.host.F) (G.Λ (.top D.R.m))) := by
     rw [e]; exact GlobalTheory.LastColLat.finEmb_stab G.sp.topDec _ k h1
   have h4 := GlobalTheory.LastColLat.topLast_stab S.N _ (GlobalTheory.LastColLat.conj_stab S.N (X := .top D.R.m) le_rfl _ h2)
-  have key := GlobalTheory.T.weilLatticeVacuum_eq_prod_splitPlace_factors hW (S.N.selfDual hn.1) (S.N.selfDual hn.2) (locPl G t) (fun w hw => isIdemAt_idemAt hL G t hw)
+  have key := _root_.GlobalTheory.LatStabScalar.om_eq_prod_splitFac hW (S.N.selfDual hn.1) (S.N.selfDual hn.2) (locPl G t) (fun w hw => isIdemAt_idemAt hL G t hw)
     (Good.under_injOn hL G t) (fun v hv' => by rw [hS, hT]; exact ⟨mu_charUnramAt hL G t _ hv', mu_charUnramAt hL G t _ hv'⟩)
     1 (one_mem _) (GlobalTheory.LastVertexInv.topLast h).1 (GlobalTheory.LastVertexInv.topLast h).2 (one_lat _ _)
     (GlobalTheory.RowMovedLat.latHat_stab_of_hatL _ _ _ h4) _ hv.theta hv.lat

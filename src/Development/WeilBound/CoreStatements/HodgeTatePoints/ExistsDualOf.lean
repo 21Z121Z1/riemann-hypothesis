@@ -1,10 +1,10 @@
 module
 
 public import Mathlib
-public import Development.WeilBound.CoreStatements.TorusUniformisation.ChowMahlerFamilies.IsDerAt0
-public import Development.WeilBound.CoreStatements.HodgeTatePoints.FormMemLin
-public import ReciprocityTheory.DualLattices.PrimeHopfOrderOfAddEquiv
-public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.RelatedPairsOrbitalTermEq
+public import Development.WeilBound.CoreStatements.TorusUniformisation.ChowMahlerFamilies.Bundle0022
+public import Development.WeilBound.CoreStatements.HodgeTatePoints.Bundle0009
+public import ReciprocityTheory.DualLattices.Bundle0015
+public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.Bundle0016
 
 @[expose] public section
 

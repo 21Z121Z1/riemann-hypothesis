@@ -3,8 +3,7 @@ module
 public import Formalism.LocalToGlobal.InertKernelTheory.InertCoprimeLemmas.NotSquareOfJacobiNegOne
 public import Formalism.LocalToGlobal.InertKernelTheory.InertCoprimeLemmas.MMScale
 public import Formalism.LocalToGlobal.InertKernelTheory.InertCoprimeLemmas.MMModelS
-public import Formalism.LocalToGlobal.InertKernelTheory.InertCoprimeLemmas.MMReadS
-public import Formalism.LocalToGlobal.InertKernelTheory.InertCoprimeLemmas.MMCoord
+public import Formalism.LocalToGlobal.InertKernelTheory.InertCoprimeLemmas.Bundle0004
 public import Formalism.LocalToGlobal.InertKernelTheory.InertCoprimeLemmas.PowerSeriesEmbedding
 
 @[expose] public section

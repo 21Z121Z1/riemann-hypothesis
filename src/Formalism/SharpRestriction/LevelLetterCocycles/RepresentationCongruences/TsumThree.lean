@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Formalism.SharpRestriction.LevelLetterCocycles.RepresentationCongruences.InvSubOneSqLeInv
+public import Formalism.SharpRestriction.LevelLetterCocycles.RepresentationCongruences.Bundle0001
 
 @[expose] public section
 

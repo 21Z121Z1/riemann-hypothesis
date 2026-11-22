@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Development.AutomorphicArithmetic.IntegralCasts.Imports
-public import Development.AbelianVarietyTheory.Definitions.Foundations.SmoothPartStable
+public import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0002
 
 @[expose] public section
 

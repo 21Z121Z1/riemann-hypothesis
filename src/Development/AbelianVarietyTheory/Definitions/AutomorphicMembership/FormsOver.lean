@@ -1,8 +1,7 @@
 module
 
 public import Mathlib
-public import Formalism.LocalToGlobal.LatticeGeometry.LevPrPrime
-public import Formalism.LocalToGlobal.LatticeGeometry.ShimuraSheafOfIndefiniteSubspace
+public import Formalism.LocalToGlobal.LatticeGeometry.Bundle0003
 public import Formalism.LocalRingCardinality.RhoDetPrimeEqMuTildeMulChiPow
 public import Formalism.LocalRingCardinality.DataDIV
 public import Formalism.SharpRestriction.ParConsts
@@ -11,8 +10,8 @@ public import Formalism.SharpRestriction.Divisibility.ModuliIntegralCharts
 public import Formalism.SharpRestriction.Divisibility.BoundaryLocalData
 public import Formalism.SharpRestriction.Divisibility.WeightThresholdDefs
 public import Formalism.SharpRestriction.Divisibility.WeightAlgebra
-public import Formalism.LocalToGlobal.ProjectiveLattices.RecPJThAllNeBot
-public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.FlagComponentFramedPointFrame
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0033
+public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.Bundle0036
 public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.RingKrullDimIntegers
 public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.FirstIndexEqOfUnfolded
 

@@ -4,7 +4,7 @@ public import Mathlib
 public import Development.EtaleCohomology.EtaleSheaves.CechLevels.Cech0Iso
 public import Development.EtaleCohomology.EtaleSheaves.SpectrumLimits.LevelsGenOfSpecLim
 public import Development.EtaleCohomology.EtaleSheaves.CechLevelsGeneration.LevelsOfGen
-public import Development.EtaleCohomology.EtaleSheaves.SpecLimPf
+public import Development.EtaleCohomology.EtaleSheaves.Bundle0052
 
 @[expose] public section
 

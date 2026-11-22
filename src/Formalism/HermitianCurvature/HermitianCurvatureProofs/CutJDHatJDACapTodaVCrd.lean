@@ -1,8 +1,8 @@
 module
 
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutJDHatJDACapTodaVCrdAlg
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutJDHatJDACapTodaVCrdLoc
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutJDHatJDACapTodaVCrdGerm
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0208
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0209
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0207
 
 @[expose] public section
 

@@ -2,7 +2,7 @@ module
 
 public import Development.AutomorphicArithmetic.Foundations.Convolution.BlockHeckeSlices.DatCons
 public import Development.AutomorphicArithmetic.Foundations.Convolution.BlockHeckeSlices.CuspidalNormBounds.SliceShift
-public import Development.AutomorphicArithmetic.Foundations.Convolution.BlockHeckeSlices.CuspidalNormBounds.CompBound
+public import Development.AutomorphicArithmetic.Foundations.Convolution.BlockHeckeSlices.CuspidalNormBounds.Bundle0006
 
 @[expose] public section
 

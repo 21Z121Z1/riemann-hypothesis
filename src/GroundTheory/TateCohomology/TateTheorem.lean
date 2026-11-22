@@ -2,10 +2,9 @@ module
 
 public import Mathlib
 public import GroundTheory.TateCohomology.SplittingCohTrivial
-public import GroundTheory.TateCohomology.TateDeltaZero
-public import GroundTheory.TateCohomology.CohTrivialBasic
+public import GroundTheory.TateCohomology.Bundle0006
+public import GroundTheory.TateCohomology.Bundle0005
 public import GroundTheory.TateCohomology.DimensionShift
-public import GroundTheory.TateCohomology.TateGroupIso
 public import GroundTheory.TateCohomology.TateLow
 public import GroundTheory.TateCohomology.CoresRes
 

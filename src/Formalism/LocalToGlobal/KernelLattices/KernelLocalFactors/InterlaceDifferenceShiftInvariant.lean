@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Formalism.LocalToGlobal.KernelLattices.InterlaceAll
+public import Formalism.LocalToGlobal.KernelLattices.Bundle0002
 public import Formalism.BranchSandwichDivisors.BranchIsometryProofs.BranchMap
 public import Formalism.BranchSandwichDivisors.BranchIsometryProofs.Numeric
 public import Formalism.LocalToGlobal.Columns.CoefficientsModP.StdDual
@@ -11,7 +11,7 @@ public import Formalism.LocalRingCardinality.FactDelDualNabla
 public import Formalism.BranchSandwichDivisors.BranchIsometryProofs.BranchScale
 public import Formalism.GradedWeylDivisibility.DualWeylDominanceOf
 public import Formalism.BranchSandwichDivisors.DivFromPassageAndNorm
-public import Formalism.LocalToGlobal.GroupLattices.FockModels.WeylDim
+public import Formalism.LocalToGlobal.GroupLattices.FockModels.Bundle0002
 public import Formalism.SharpRestriction.GlobalSchurBounds.FiniteModelOfAdmissibleTransports
 public import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Wlocal
 

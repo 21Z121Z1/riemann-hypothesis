@@ -5,7 +5,7 @@ public import Formalism.LocalToGlobal.AlgebraicTheory.AlgebraicTheoryProofs.Line
 public import Formalism.LocalToGlobal.AlgebraicTheory.AlgebraicTheoryProofs.KernelIndexForm
 public import Formalism.LocalToGlobal.AlgebraicTheory.AlgebraicTheoryProofs.CardTwoSidedQuotient
 public import Formalism.LocalToGlobal.AlgebraicTheory.AlgebraicTheoryProofs.KerHalf
-public import Formalism.LocalToGlobal.AlgebraicTheory.AlgebraicTheoryProofs.KerJet
+public import Formalism.LocalToGlobal.AlgebraicTheory.AlgebraicTheoryProofs.Bundle0001
 public import Formalism.LocalToGlobal.AlgebraicTheory.AlgebraicTheoryProofs.NormInter
 public import Formalism.LocalToGlobal.AlgebraicTheory.AlgebraicTheoryProofs.NormPow
 

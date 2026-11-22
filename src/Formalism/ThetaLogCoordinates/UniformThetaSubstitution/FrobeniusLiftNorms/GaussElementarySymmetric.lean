@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Formalism.ThetaLogCoordinates.UniformThetaSubstitution.StatementC
-public import Formalism.SubspaceCounting.SubspaceCountingProofs.QVandermonde
+public import Formalism.SubspaceCounting.SubspaceCountingProofs.Bundle0001
 public import Formalism.ArtinHasse.ArtinHasseProofs.SymmSeries
 
 @[expose] public section

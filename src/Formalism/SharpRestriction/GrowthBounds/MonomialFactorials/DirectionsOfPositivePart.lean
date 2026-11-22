@@ -1,7 +1,7 @@
 module
 
-public import Formalism.SharpRestriction.GrowthBounds.MonomialFactorials.ThresholdsMonoNormalized
-public import Formalism.SharpRestriction.GrowthBounds.MonomialFactorials.PlusAWICondition
+public import Formalism.SharpRestriction.GrowthBounds.MonomialFactorials.Bundle0020
+public import Formalism.SharpRestriction.GrowthBounds.MonomialFactorials.Bundle0012
 
 @[expose] public section
 

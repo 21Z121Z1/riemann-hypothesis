@@ -2,21 +2,17 @@ module
 
 public import Mathlib
 public import Development.WeilBound.RepresentationTheoryGL.RegularisedSiegelWeil.ThetaIdempotents.HeckeEta
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.UnfoldingHolds
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FundamentalDomainFourierUnfolding
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.BigCellCosetsHermitianParam
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CosetCellInvariantUnipotent
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0726
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0012
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0713
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0714
 public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.NondegenerateCharacterCellFactorization
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SiegelEisensteinConvergent
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.RowD
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SiegelParabolicQuotientIffRowsStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.UnitaryCellBlockNormalFormStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.UnitaryBlockInvertibleCriterionStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ParabolicFactorizationRowsStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.RowsProportionalOfTransformStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.RowsOfWeylHeisenbergProductStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.WeylHeisenbergLeviRationalStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.HeisenbergCentreRationalFormStatement
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0706
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0728
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0731
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0732
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.UnitaryBlockInvertibleCriterion
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0730
 
 @[expose] public section
 
@@ -122,7 +118,7 @@ theorem cell : ∀ {D : D7} {n ρ p : ℕ} (hn : ρ + p = n) (M : Maps D hn),
           f (M.w * M.nzx l.1 0 * M.sh (u.2.map (incA D)) * M.emb (u.1.out : GF D p) * y) := by
   intro D n ρ p hn M
   have hσ : ∀ x, sg D (sg D x) = x := sg_sg D
-  obtain ⟨hadd, hsh, hemb, hc⟩ := GlobalTheory.T.heisenberg_centre_rational_form M
+  obtain ⟨hadd, hsh, hemb, hc⟩ := _root_.GlobalTheory.CompanionTheory.ZUnf.centre_nzx M
   choose hnm ζ hζ hζm using hc
   choose a b hab using fun q : Cosets (P D p) (GF D p) =>
     GlobalTheory.CompanionTheory.SwUnf.BigCell.exists_blockMatrixTwoByTwoFin_eq (ratOf (Quotient.out q))
@@ -134,7 +130,7 @@ theorem cell : ∀ {D : D7} {n ρ p : ℕ} (hn : ρ + p = n) (M : Maps D hn),
     rw [← hab']
     exact mat_ratOf _
   have hI := fun (l : ratHerm D ρ) (u : Cosets (P D p) (GF D p) × Matrix (Fin ρ) (Fin p) D.host.E) =>
-    GlobalTheory.T.weyl_heisenberg_levi_rational hn M l.1 (ζ l) (hζ l) u.2 (Quotient.out u.1) (a u.1) (b u.1) (cc u.1) (dd u.1) (hmat u.1)
+    _root_.GlobalTheory.CompanionTheory.ZUnf.Rat.rat_cell hn M l.1 (ζ l) (hζ l) u.2 (Quotient.out u.1) (a u.1) (b u.1) (cc u.1) (dd u.1) (hmat u.1)
   let R : ratHerm D ρ → Cosets (P D p) (GF D p) × Matrix (Fin ρ) (Fin p) D.host.E →
       Matrix (Fin (n + n)) (Fin (n + n)) D.host.E :=
     fun l u => wM hn * nM hn (ζ l) * sM hn (sg D) u.2 * eM hn (a u.1) (b u.1) (cc u.1) (dd u.1)
@@ -146,23 +142,23 @@ theorem cell : ∀ {D : D7} {n ρ p : ℕ} (hn : ρ + p = n) (M : Maps D hn),
     rw [← e]
     exact GlobalTheory.CompanionTheory.SwUnf.BigCell.ratOf_spec _
   have hRC : ∀ l u, lowerC (R l u) = rowC hn u.2 (a u.1) (cc u.1) := fun l u =>
-    (GlobalTheory.T.rows_of_weyl_heisenberg_product (sg D) hσ hn _ _ _ _ _ _).1
+    (_root_.GlobalTheory.CompanionTheory.ZUnf.LowerRows.lower_rows (sg D) hσ hn _ _ _ _ _ _).1
   have hRD : ∀ l u, GlobalTheory.CompanionTheory.RatPtsUnn.blkD (R l u) = rowD hn (sg D) (ζ l) u.2 (b u.1) (dd u.1) := fun l u =>
-    (GlobalTheory.T.rows_of_weyl_heisenberg_product (sg D) hσ hn _ _ _ _ _ _).2
+    (_root_.GlobalTheory.CompanionTheory.ZUnf.LowerRows.lower_rows (sg D) hσ hn _ _ _ _ _ _).2
   refine ⟨fun x => mk ((P D n).subgroupOf (GF D n)) (c x.1 x.2), ?_, ?_, ?_, ?_⟩
   · rintro ⟨l₁, q₁, η₁⟩ ⟨l₂, q₂, η₂⟩ h
     have hS := (mk_eq_iff_siegel GlobalTheory.CompanionTheory.RatPtsUnn.ratPtsUnn (c l₁ (q₁, η₁)) (c l₂ (q₂, η₂)) (hRs l₁ _).1
       (hcm l₁ _) (hcm l₂ _)).1 h
-    obtain ⟨T, hT1, hT2⟩ := (GlobalTheory.T.siegel_parabolic_quotient_iff_rows (sg D) hσ (R l₂ (q₂, η₂)) (R l₁ (q₁, η₁)) (hRs l₁ _).1 (hRs l₂ _).2
+    obtain ⟨T, hT1, hT2⟩ := (_root_.GlobalTheory.CompanionTheory.ZUnf.siegel_mul_inv_iff_rows (sg D) hσ (R l₂ (q₂, η₂)) (R l₁ (q₁, η₁)) (hRs l₁ _).1 (hRs l₂ _).2
       (hRs l₁ _).2).1 hS
     rw [hRC, hRC] at hT1
     rw [hRD, hRD] at hT2
-    obtain ⟨⟨T', h1, h2⟩, h3⟩ := GlobalTheory.T.rows_proportional_of_transform (sg D) hσ hn (a q₁) (b q₁) (cc q₁) (dd q₁) (a q₂) (b q₂) (cc q₂) (dd q₂)
+    obtain ⟨⟨T', h1, h2⟩, h3⟩ := _root_.GlobalTheory.CompanionTheory.ZUnf.lowerRows_determine (sg D) hσ hn (a q₁) (b q₁) (cc q₁) (dd q₁) (a q₂) (b q₂) (cc q₂) (dd q₂)
       (ζ l₁) (ζ l₂) η₁ η₂ T hT1 hT2
     have hq : q₁ = q₂ := by
       have hs1 := GlobalTheory.CompanionTheory.SwUnf.BigCell.ratOf_spec (Quotient.out q₁)
       have hs2 := GlobalTheory.CompanionTheory.SwUnf.BigCell.ratOf_spec (Quotient.out q₂)
-      have hSp := (GlobalTheory.T.siegel_parabolic_quotient_iff_rows (sg D) hσ (ratOf (Quotient.out q₂)) (ratOf (Quotient.out q₁)) hs1.1 hs2.2 hs1.2).2
+      have hSp := (_root_.GlobalTheory.CompanionTheory.ZUnf.siegel_mul_inv_iff_rows (sg D) hσ (ratOf (Quotient.out q₂)) (ratOf (Quotient.out q₁)) hs1.1 hs2.2 hs1.2).2
         ⟨T', h1, h2⟩
       have := (mk_eq_iff_siegel GlobalTheory.CompanionTheory.RatPtsUnn.ratPtsUnn (Quotient.out q₁) (Quotient.out q₂) hs1.1
         (mat_ratOf _) (mat_ratOf _)).2 hSp
@@ -182,9 +178,9 @@ theorem cell : ∀ {D : D7} {n ρ p : ℕ} (hn : ρ + p = n) (M : Maps D hn),
         rw [LinearMap.ker_comp]
         exact hz
       obtain ⟨T₀, a₁, b₁, Z, a₂, b₂, X, Y, a₃, b₃, W, a₄, b₄, c', d', hU, hD, hL1, hL2⟩ :=
-        GlobalTheory.T.unitary_cell_block_normal_form (sg D) hσ hn _ hspec.1 hspec.2 hker
+        _root_.GlobalTheory.CompanionTheory.ZUnf.rowReduce_lowerC (sg D) hσ hn _ hspec.1 hspec.2 hker
       obtain ⟨ζ₀, η₀, T, hyD, hyU, hζ₀, hr1, hr2⟩ :=
-        GlobalTheory.T.unitary_block_invertible_criterion (sg D) hσ hn a₁ b₁ Z a₂ b₂ X Y a₃ b₃ W a₄ b₄ c' d' hU hD
+        _root_.GlobalTheory.CompanionTheory.ZUnf.NormalRow.normal_form (sg D) hσ hn a₁ b₁ Z a₂ b₂ X Y a₃ b₃ W a₄ b₄ c' d' hU hD
       generalize a₄ + a₃ * X = a' at hyD hyU hr1
       generalize b₄ + a₃ * Y = b' at hyD hyU hr2
       obtain ⟨γ, hγ, hγm⟩ := GlobalTheory.CompanionTheory.RatPtsUnn.clause2 _ hyD hyU
@@ -200,14 +196,14 @@ theorem cell : ∀ {D : D7} {n ρ p : ℕ} (hn : ρ + p = n) (M : Maps D hn),
       rw [hsb] at hsU
       have hy : blk4 a' b' c' d' = blk4 A B 0 Dd * blk4 (a q') (b q') (cc q') (dd q') := by
         rw [← hsb, ← hab', mul_assoc, Matrix.nonsing_inv_mul _ hs2.1, mul_one]
-      obtain ⟨ζ₂, η₂, T₂, hζ₂, hC, hDd⟩ := GlobalTheory.T.parabolic_factorization_rows (sg D) hσ hn a' b' c' d' (a q') (b q') (cc q') (dd q') A B Dd
+      obtain ⟨ζ₂, η₂, T₂, hζ₂, hC, hDd⟩ := _root_.GlobalTheory.CompanionTheory.ZUnf.ClassRep.exists_change_rep (sg D) hσ hn a' b' c' d' (a q') (b q') (cc q') (dd q') A B Dd
         hsU hy ζ₀ η₀ hζ₀
       let bq : HermQ D ρ := ⟨ζ₂, fun i j => congrFun (congrFun hζ₂ i) j⟩
       let l₂ : ratHerm D ρ := ⟨⟨ζ₂.map (incA D), adj_map_herm bq⟩, ⟨ζ₂, rfl⟩⟩
       have hl : ζ l₂ = ζ₂ := Matrix.map_injective incA_injective (hζ l₂)
       refine ⟨(l₂, (q', η₂)), ?_⟩
       have hsp : IsSiegelP (ratOf (Quotient.out q) * (R l₂ (q', η₂))⁻¹) :=
-        (GlobalTheory.T.siegel_parabolic_quotient_iff_rows (sg D) hσ _ _ (hRs l₂ _).1 hspec.2 (hRs l₂ _).2).2 ⟨T₀ * T * T₂, by
+        (_root_.GlobalTheory.CompanionTheory.ZUnf.siegel_mul_inv_iff_rows (sg D) hσ _ _ (hRs l₂ _).1 hspec.2 (hRs l₂ _).2).2 ⟨T₀ * T * T₂, by
           rw [hRC, hL1, hr1, hC]
           simp only [mul_assoc], by
           rw [hRD, hL2, hr2, hDd, hl]

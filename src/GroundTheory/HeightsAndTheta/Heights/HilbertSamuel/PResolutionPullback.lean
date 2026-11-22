@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsResolutionPullback
-public import ReciprocityTheory.AnalyticForms.PotentialTheory.PshShiftA
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArakelovGeometry.ADensStC
+public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0038
+public import ReciprocityTheory.AnalyticForms.PotentialTheory.Bundle0001
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArakelovGeometry.Bundle0012
 
 @[expose] public section
 

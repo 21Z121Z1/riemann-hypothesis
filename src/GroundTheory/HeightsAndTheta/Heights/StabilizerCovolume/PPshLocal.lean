@@ -1,10 +1,10 @@
 module
 
 public import Mathlib
-public import ReciprocityTheory.AnalyticForms.PlurisubharmonicFunctions.PshBasic
+public import ReciprocityTheory.AnalyticForms.PlurisubharmonicFunctions.Bundle0004
 public import ReciprocityTheory.AnalyticForms.PlurisubharmonicFunctions.PshMoll
 public import ReciprocityTheory.AnalyticForms.PlurisubharmonicFunctions.PshExtB
-public import ReciprocityTheory.AnalyticForms.PlurisubharmonicFunctions.IsPshLocallyIntegrableStatement
+public import ReciprocityTheory.AnalyticForms.PlurisubharmonicFunctions.Bundle0001
 
 @[expose] public section
 

@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Divisors.IsBasOpens
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0025
 public import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsIsObUNeZero
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ResPullURes
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsChartsSquareZeroPresentedScheme

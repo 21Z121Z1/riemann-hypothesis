@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.TopOrthEmb
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.WeilRepRankZeroWittEmbeddingValueAtZero
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0629
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0273
 public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.MeasureToRealEqMass
 public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.LevelHyperspecialTrivialCharacterSplitsOffPlaces
 

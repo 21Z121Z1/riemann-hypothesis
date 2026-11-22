@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.FIwasawaE
-public import Development.AutomorphicSpectrum.Proofs.MembershipProofs.BigCellLocal
+public import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Bundle0013
+public import Development.AutomorphicSpectrum.Proofs.MembershipProofs.Bundle0006
 
 @[expose] public section
 

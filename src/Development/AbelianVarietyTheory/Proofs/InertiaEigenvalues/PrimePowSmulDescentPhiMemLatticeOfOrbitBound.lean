@@ -2,8 +2,8 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.ExistsAlgebraMapEqRoot
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsSmulMemMMOfEqLphiUAdd
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.PowSmulPhiMemMM
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0172
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0176
 
 @[expose] public section
 

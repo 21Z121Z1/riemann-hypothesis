@@ -3,7 +3,7 @@ module
 public import Formalism.LocalToGlobal.Columns.HeckeSpCount
 public import Mathlib
 public import Formalism.LocalToGlobal.Columns.RowFormsLemmas
-public import Formalism.LocalToGlobal.Columns.CoefficientsModP
+public import Formalism.LocalToGlobal.Columns.Bundle0011
 
 @[expose] public section
 

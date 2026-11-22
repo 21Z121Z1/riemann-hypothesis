@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PeriodRel
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2303
 
 @[expose] public section
 

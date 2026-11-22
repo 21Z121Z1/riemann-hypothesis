@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.ExistsIsHodgeFrameIff
-public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.MemSupportBDIff
-public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.NotIsBettiZero
+public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.Bundle0041
+public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.Bundle0042
+public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.Bundle0039
 
 @[expose] public section
 

@@ -1,6 +1,6 @@
 module
 
-public import Formalism.SharpRestriction.GlobalTheoremInputs
+public import Formalism.SharpRestriction.Bundle0002
 
 @[expose] public section
 

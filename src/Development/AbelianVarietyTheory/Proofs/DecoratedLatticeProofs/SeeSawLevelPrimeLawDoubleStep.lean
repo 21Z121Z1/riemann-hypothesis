@@ -1,19 +1,21 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.SmallPair
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.DataAsCombinationsAtSplitPlacesProofStatement
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.VacuumChangeAtSplitPlacesProofStatement
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SelfDualLatticePrescribedFinitelyManySplitPlacesStatement
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ExtensionByZeroAtSplitPlacesProofStatement
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ContractionOfVacuumCombinationsProofStatement
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.BiVacuumOperatorZeroOrLeftInvertibleStatement
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.DoubleStepSmallPairsValueAllGluedSplitPlacesProoStatement
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.FlatMapPreservesVacuumProofStatement
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.DoubleStepEqTwoThetaColumnLiftsStatement
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.BesselThetaContractionExtendByZeroVacuumSmoothStatement
+public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.Bundle0020
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0352
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.VacuumChangeAtSplitPlacesProof
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0275
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ExtensionByZeroAtSplitPlacesProof
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0514
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.BiVacuumOperatorZeroOrLeftInvertible
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0491
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0465
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0269
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0241
+public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.Bundle0018
 public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.BilinearVacuumCentralCharacter
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.RamifiedOperatorsBijectiveAtPlacesStatement
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0279
+public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.Bundle0010
 
 @[expose] public section
 
@@ -143,22 +145,22 @@ theorem lawLevelPrime_double : ∀ (D : D7) (c : Comm D) (v : VCom c) (k : Type)
   have sd2 : IsSelfDualC _ (c.x (j + 1 + 1)).L := (hc.x (j + 1 + 1) (by omega)).sd
   have sdG : IsSelfDualC _ (o.M j (σ + 1) h) := ((hS.good x₀).bf j (σ + 1) h).sdV₀
   have sdG' : IsSelfDualC _ (o.M (j + 1 + 1) σ (idx_step h)) := ((hS.good x₀).fb j σ h).sdW₀
-  obtain ⟨M0, sdM0, latM0, -⟩ := GlobalTheory.T.selfDualLattice_prescribed_finitelyManySplitPlaces D k ι o.p o.I _ hPl _ _ (o.β₀ j (σ + 1) h) (o.M j (σ + 1) h) sdG
+  obtain ⟨M0, sdM0, latM0, -⟩ := _root_.GlobalTheory.LatPresc.latAll D k ι o.p o.I _ hPl _ _ (o.β₀ j (σ + 1) h) (o.M j (σ + 1) h) sdG
     (fun i => lastKer (o.Q j i).lat) (fun i => by rw [GlobalTheory.IndefiniteRowSideFullHecke.AppendedVectorData.lastKer_eq o.q]; exact gluedLat_isLattice o.q 1 2 _ 0)
-  obtain ⟨M0', sdM0', latM0', -⟩ := GlobalTheory.T.selfDualLattice_prescribed_finitelyManySplitPlaces D k ι o.p o.I _ hPl _ _ (o.β₀ (j + 1 + 1) σ (idx_step h))
+  obtain ⟨M0', sdM0', latM0', -⟩ := _root_.GlobalTheory.LatPresc.latAll D k ι o.p o.I _ hPl _ _ (o.β₀ (j + 1 + 1) σ (idx_step h))
     (o.M (j + 1 + 1) σ (idx_step h)) sdG' (fun i => lastKer (o.Q (j + 1 + 1) i).lat) (fun i => by rw [GlobalTheory.IndefiniteRowSideFullHecke.AppendedVectorData.lastKer_eq o.q]; exact gluedLat_isLattice o.q 1 2 _ 0)
-  obtain ⟨e1, e1', he1, he1', hR1⟩ := GlobalTheory.T.vacuumChangeAtSplitPlaces_proof D k ι o.p o.I _ hPl (Fin (c.X (j + 1)).rank) (Fin (c.X j).rank ⊕ Fin 1)
+  obtain ⟨e1, e1', he1, he1', hR1⟩ := _root_.GlobalTheory.FinPl.RebaseProof.rebaseAll D k ι o.p o.I _ hPl (Fin (c.X (j + 1)).rank) (Fin (c.X j).rank ⊕ Fin 1)
     c.ψ hstd _ _ (o.β₀ j (σ + 1) h) (o.β (j + 1)) (o.M j (σ + 1) h) M0 (c.x (j + 1)).L (c.x (j + 1)).L sdG sd1 sdM0 sd1
-  obtain ⟨e2, e2', he2, he2', hR2⟩ := GlobalTheory.T.vacuumChangeAtSplitPlaces_proof D k ι o.p o.I _ hPl (Fin (c.X (j + 1 + 1)).rank ⊕ Fin 1)
+  obtain ⟨e2, e2', he2, he2', hR2⟩ := _root_.GlobalTheory.FinPl.RebaseProof.rebaseAll D k ι o.p o.I _ hPl (Fin (c.X (j + 1 + 1)).rank ⊕ Fin 1)
     (Fin (c.X (j + 1)).rank) c.ψ hstd _ _ (o.β (j + 1)) (o.β₀ (j + 1 + 1) σ (idx_step h)) (c.x (j + 1)).L (c.x (j + 1)).L
     (o.M (j + 1 + 1) σ (idx_step h)) M0' sd1 sdG' sd1 sdM0'
 
-  have hext1 := GlobalTheory.T.extensionByZeroAtSplitPlaces_proof D k ι o.p o.I _ hPl (Fin (c.X (j + 1)).rank) (Fin (c.X j).rank) c.ψ hstd
+  have hext1 := _root_.GlobalTheory.FinPl.ExtAllPf.ext_all D k ι o.p o.I _ hPl (Fin (c.X (j + 1)).rank) (Fin (c.X j).rank) c.ψ hstd
     (c.bes j (σ + 1) h).V₀ (c.X j) (c.bes j (σ + 1) h).L (c.X (j + 1)) (c.bes j (σ + 1) h).o (c.bes j (σ + 1) h).ζ
     (c.bes j (σ + 1) h).line (o.β j) (o.β₀ j (σ + 1) h) (o.β (j + 1)) (fun i => (hS.glued j (σ + 1) h i).sum)
     (c.x j).L M0 (c.x (j + 1)).L (fun i => (o.Q j i).lat) (fun i => (o.Q (j + 1) i).lat) sd0 sdM0 sd1
     (fun i => ⟨hS.pre.latT j (by omega) i, latM0 i, hS.pre.latT (j + 1) (by omega) i⟩)
-  have hext2 := GlobalTheory.T.extensionByZeroAtSplitPlaces_proof D k ι o.p o.I _ hPl (Fin (c.X (j + 1)).rank) (Fin (c.X (j + 1 + 1)).rank) c.ψ hstd
+  have hext2 := _root_.GlobalTheory.FinPl.ExtAllPf.ext_all D k ι o.p o.I _ hPl (Fin (c.X (j + 1)).rank) (Fin (c.X (j + 1 + 1)).rank) c.ψ hstd
     (c.bes (j + 1 + 1) σ (idx_step h)).V₀ (c.X (j + 1 + 1)) (c.bes (j + 1 + 1) σ (idx_step h)).L (c.X (j + 1))
     (c.bes (j + 1 + 1) σ (idx_step h)).o (c.bes (j + 1 + 1) σ (idx_step h)).ζ (c.bes (j + 1 + 1) σ (idx_step h)).line
     (o.β (j + 1 + 1)) (o.β₀ (j + 1 + 1) σ (idx_step h)) (o.β (j + 1)) (fun i => (hS.glued (j + 1 + 1) σ (idx_step h) i).sum)
@@ -176,9 +178,9 @@ theorem lawLevelPrime_double : ∀ (D : D7) (c : Comm D) (v : VCom c) (k : Type)
     (o.β₀ j (σ + 1) h) (o.β (j + 1 + 1)) (o.β₀ (j + 1 + 1) σ (idx_step h)) M0 (c.x (j + 1)).L M0'
     (fun i => (o.Q j i).lat) (fun i => (o.Q (j + 1 + 1) i).lat) sdM0 sd1 sdM0'
     (fun i => ⟨(hS.glued j (σ + 1) h i).sum, (hS.glued (j + 1 + 1) σ (idx_step h) i).sum, latM0 i, latM0' i⟩) e1' e2' he1' he2'
-  have hInv := (GlobalTheory.T.biVacuumOperator_zero_or_left_invertible D k ι o.p o.I _ hPl c.ψ hstd _ _ _ op0 hop0).1 (c.x j).L (c.x (j + 1)).L (c.x (j + 1 + 1)).L
+  have hInv := (_root_.GlobalTheory.FinPl.biInv_main D k ι o.p o.I _ hPl c.ψ hstd _ _ _ op0 hop0).1 (c.x j).L (c.x (j + 1)).L (c.x (j + 1 + 1)).L
     sd0 sd1 sd2
-  obtain ⟨ε, -, hV⟩ := GlobalTheory.T.doubleStepSmallPairsValueAllGluedSplitPlaces_proof D k ι o.p o.I _ hPl o.q c.ψ o.χ o.hχ (fun i => (hS.pre.char i).1)
+  obtain ⟨ε, -, hV⟩ := _root_.GlobalTheory.FinPl.vertexAll D k ι o.p o.I _ hPl o.q c.ψ o.χ o.hχ (fun i => (hS.pre.char i).1)
   obtain ⟨r, e, hr, hVE⟩ := hV (Fin (c.X (j + 1)).rank) (Fin (c.X j).rank) (Fin (c.X (j + 1 + 1)).rank)
 
   let a : PairDat o.p (c.B j (σ + 1) h).A (c.B j (σ + 1) h).V₀ (Fin (c.X j).rank) := ⟨o.β j, o.β₀ j (σ + 1) h, o.Q j⟩
@@ -207,7 +209,7 @@ theorem lawLevelPrime_double : ∀ (D : D7) (c : Comm D) (v : VCom c) (k : Type)
           (fun i => tensRow (phiOne (b.Q i) (a'.P i)) (dualInd (b.Q i).lat)) o.I
           (flatFB (t.sFB j σ h) Ψ₂) (comb c.ψ _ _ (extT (c.bes (j + 1 + 1) σ (idx_step h)).o (c.X (j + 1)) (v.dT (j + 1))) f₂) := by
     intro t Ψ₁ Ψ₂ hΨ₁ hΨ₂
-    have hF := GlobalTheory.T.flatMapPreservesVacuum_proof D c.ψ (· ∈ v.tP)
+    have hF := _root_.GlobalTheory.FinPl.FlatVacuum.flatVac D c.ψ (· ∈ v.tP)
     have hXi1 := hF.1 (σ + 1) (c.B j (σ + 1) h) (c.J j (σ + 1) h) (t.sBF j (σ + 1) h) (v.N j) (o.M j (σ + 1) h) (v.N (j + 1))
       (c.x (j + 1)).L (fun x _ => (hS.good x).bf j (σ + 1) h) Ψ₁ hΨ₁
     have hXi2 := hF.2.1 σ (c.J j (σ + 1) h) (c.B (j + 1 + 1) σ (idx_step h)) (t.sFB j σ h) (v.N (j + 1)) (c.x (j + 1)).L
@@ -218,14 +220,14 @@ theorem lawLevelPrime_double : ∀ (D : D7) (c : Comm D) (v : VCom c) (k : Type)
     · have := hC _ _ hf1 hf2
       rw [hinv1, hinv2] at this
       exact this
-    · exact (GlobalTheory.T.besselThetaContraction_extendByZero_vacuum_smooth D c.ψ hstd (σ + 1) σ (c.B j (σ + 1) h) (c.B (j + 1 + 1) σ (idx_step h)) (c.lnk j σ h) (c.X (j + 1))
+    · exact (_root_.GlobalTheory.ContrComb.contr_comb_main D c.ψ hstd (σ + 1) σ (c.B j (σ + 1) h) (c.B (j + 1 + 1) σ (idx_step h)) (c.lnk j σ h) (c.X (j + 1))
         (c.vL j σ h) _ _ hf1.1 hf2.1).2.2 (· ∈ v.tP) (c.x j).L (c.x (j + 1)).L (c.x (j + 1 + 1)).L M0 M0' sd0 sd1 sd2 sdM0 sdM0'
         hOrth hf1 hf2
     · exact (hov1 _ _).2 (hX1.2 _ hf1)
     · exact (hov2 _ _).2 (hX2.2 _ hf2)
 
   have hCL : ContrLaw D := GlobalTheory.T.doubleStep_eq_two_thetaColumnLifts D
-  have hCC := GlobalTheory.T.besselThetaContraction_extendByZero_vacuum_smooth D c.ψ hstd (σ + 1) σ (c.B j (σ + 1) h) (c.B (j + 1 + 1) σ (idx_step h)) (c.lnk j σ h) (c.X (j + 1))
+  have hCC := _root_.GlobalTheory.ContrComb.contr_comb_main D c.ψ hstd (σ + 1) σ (c.B j (σ + 1) h) (c.B (j + 1 + 1) σ (idx_step h)) (c.lnk j σ h) (c.X (j + 1))
     (c.vL j σ h)
   rcases hInv with hz | ⟨op', hop', hinv⟩
   ·
@@ -249,10 +251,10 @@ theorem lawLevelPrime_double : ∀ (D : D7) (c : Comm D) (v : VCom c) (k : Type)
     have hD2 := combAt_extT (fun x => x ∉ v.tP) (c.bes (j + 1 + 1) σ (idx_step h)).o (c.X (j + 1)) hd'
     have hT1 := combAt_extS (· ∈ v.tP) (c.bes j (σ + 1) h).o (c.X (j + 1)) (hv.atT j).1
     have hT2 := combAt_extT (· ∈ v.tP) (c.bes (j + 1 + 1) σ (idx_step h)).o (c.X (j + 1)) (hv.atT (j + 1)).1
-    have hAC1 := (GlobalTheory.T.dataAsCombinationsAtSplitPlaces_proof D k ι o.p o.I _ hPl (Fin (c.X (j + 1)).rank) (Fin (c.X j).rank ⊕ Fin 1) c.ψ hstd _ _
+    have hAC1 := (_root_.GlobalTheory.FinPl.allComb D k ι o.p o.I _ hPl (Fin (c.X (j + 1)).rank) (Fin (c.X j).rank ⊕ Fin 1) c.ψ hstd _ _
       (o.β₀ j (σ + 1) h) (o.β (j + 1)) (o.M j (σ + 1) h) (c.x (j + 1)).L sdG sd1
       (fun i => tensCol (phiOne (a.P i) (b.Q i)) (vecInd (b.Q i).lat))).2.2 _ hD1 _ hXi1
-    have hAC2 := (GlobalTheory.T.dataAsCombinationsAtSplitPlaces_proof D k ι o.p o.I _ hPl (Fin (c.X (j + 1 + 1)).rank ⊕ Fin 1) (Fin (c.X (j + 1)).rank) c.ψ hstd _ _
+    have hAC2 := (_root_.GlobalTheory.FinPl.allComb D k ι o.p o.I _ hPl (Fin (c.X (j + 1 + 1)).rank ⊕ Fin 1) (Fin (c.X (j + 1)).rank) c.ψ hstd _ _
       (o.β (j + 1)) (o.β₀ (j + 1 + 1) σ (idx_step h)) (c.x (j + 1)).L (o.M (j + 1 + 1) σ (idx_step h)) sd1 sdG'
       (fun i => tensRow (phiOne (b.Q i) (a'.P i)) (dualInd (b.Q i).lat))).2.2 _ hD2 _ hXi2
     have th1' := GlobalTheory.AvgMid.theta_comb hstd (isFinComb_of_combAt _ hT1) hf₁.1
@@ -264,7 +266,7 @@ theorem lawLevelPrime_double : ∀ (D : D7) (c : Comm D) (v : VCom c) (k : Type)
       (c.x (j + 1)).L (o.M (j + 1 + 1) σ (idx_step h)) sdG sd1 sdG' hcore _ _ hAC1.1 hAC2.1 _ _ (hAC1.2 _ hov1)
       (hAC2.2 _ hov2) φ hφ
     have hSφ : IsContAut (c.X j) (a.sAll o.q (fun i => resChar (o.χ i) (o.hχ i) o.q) ε o.I φ) :=
-      ((GlobalTheory.T.epsilonFourierProduct_bijective_gluedPlaces D k ι o.p o.q o.χ o.hχ ε (Fin (c.X j).rank) _ _ a hS.pre.inj o.I).1.mapsTo hφ).1
+      ((_root_.GlobalTheory.FinPl.allBijective_all D k ι o.p o.q o.χ o.hχ ε (Fin (c.X j).rank) _ _ a hS.pre.inj o.I).1.mapsTo hφ).1
     have e1 := (hCC _ _ hXi1.1 hXi2.1).2.1 d d'
     have e2 := bl_contr hCL v t hW h hφ.1 hAC1.1.1 hAC2.1.1
     have e4 := bl_contr hCL v t hW h hSφ thD1' thD2'

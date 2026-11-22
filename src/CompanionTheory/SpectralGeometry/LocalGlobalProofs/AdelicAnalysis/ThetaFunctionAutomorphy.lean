@@ -1,27 +1,25 @@
 module
 
 public import Mathlib
-public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.SumRhoEqTrace
-public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.WeilRepresentationQuadraticDatumStatement
-public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.WeilOrthogonalGroupInvarianceStatement
-public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.FourierInversionSchwartzBruhatStatement
-public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.FourierTransformLatticeIndicatorStatement
-public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.PoissonSummationGaussianStatement
-public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.ThetaSeriesSummableStatement
-public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.QuadraticSetupInvariantUnderIsometryStatement
-public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.GaussianChangeOfVariablesIsometryStatement
-public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.AdelicLevelLatticeCompactOpenStatement
-public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.SchwartzBruhatSpanIndicatorsStatement
-public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.SiegelMatrixSymmetricPosdefImagStatement
-public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.GaussianFourierTransformFormulaStatement
-public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.TotallyRealIntegralBasisExistsStatement
-public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.LatticeCosetParametrizationStatement
-public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.DualLatticeMembershipTraceStatement
-public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.DualLatticeParametrizationStatement
-public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.GramTransposeDualTraceIdentityStatement
-public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.AdelicCharacterExponentialFormulaStatement
-public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.LatticeMatrixDeterminantFormulaStatement
-public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.AdelicLatticeMeasureFormulaStatement
+public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.Bundle0007
+public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.WeilRepresentationQuadraticDatum
+public import CompanionTheory.SpectralGeometry.CountingDefinitions.AdelicEulerProducts.CountData
+public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.WeilOrthogonalGroupInvariance
+public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.Bundle0022
+public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.Bundle0004
+public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.Bundle0026
+public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.ThetaSeriesSummable
+public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.Bundle0017
+public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.Bundle0014
+public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.Bundle0048
+public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.Bundle0012
+public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.Bundle0023
+public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.Bundle0019
+public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.Bundle0051
+public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.Bundle0009
+public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.Bundle0013
+public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.Bundle0015
+public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.Bundle0049
 
 @[expose] public section
 
@@ -108,7 +106,7 @@ theorem poisson_form [DecidableEq (InfinitePlace F)] {M : ℕ} {B : Matrix ι ι
       ((|g.det|⁻¹ * (Real.sqrt |((Algebra.norm ℚ B.det : ℚ) : ℝ)|)⁻¹ : ℝ) : ℂ) * cG B ρ P τ *
         ∑' n : ι × InfinitePlace F → ℤ, gauss B ρ P (fun w => -(τ w)⁻¹) (cur (u n)) *
           Complex.exp (-(2 * (Real.pi : ℂ) * Complex.I) * ((a ⬝ᵥ (DM B ρ *ᵥ u n) : ℝ) : ℂ)) := by
-  obtain ⟨hS, hP, hE⟩ := GlobalTheory.T.siegel_matrix_symmetric_posdef_imag F ι M B ρ P hQ τ hτ
+  obtain ⟨hS, hP, hE⟩ := _root_.GlobalTheory.CompanionTheory.SW.ThW.ZM_symm_posDef_gauss F ι M B ρ P hQ τ hτ
   have hpl := GlobalTheory.T.poisson_summation_gaussian (ι × InfinitePlace F) (ZM B ρ P τ) hS hP g hg a
   dsimp only at hpl
   obtain ⟨-, -, h⟩ := hpl
@@ -128,7 +126,7 @@ theorem poisson_form [DecidableEq (InfinitePlace F)] {M : ℕ} {B : Matrix ι ι
         (gauss B ρ P (fun w => -(τ w)⁻¹) (cur (u n)) *
           Complex.exp (-(2 * (Real.pi : ℂ) * Complex.I) * ((a ⬝ᵥ (DM B ρ *ᵥ u n) : ℝ) : ℂ))) := by
     intro n
-    have hf := GlobalTheory.T.gaussian_fourier_transform_formula F ι M B ρ P hQ τ hτ (u n)
+    have hf := _root_.GlobalTheory.CompanionTheory.SW.ThW.GaussFlat.gauss_fourier_flat F ι M B ρ P hQ τ hτ (u n)
     rw [hu n] at hf
     rw [hu n, mul_assoc (_)⁻¹, ← mul_assoc (cG B ρ P τ), ← hf]
     field_simp
@@ -181,11 +179,11 @@ theorem base [MeasurableSpace (A F)] [BorelSpace (A F)] {lf : Measure (A F)}
     intro h0
     rw [h0, abs_zero] at hgd
     exact (pow_pos (mul_pos (pow_pos hNr _) hdisc) _).ne hgd
-  obtain ⟨e, ei, er, ee⟩ := GlobalTheory.T.lattice_coset_parametrization F ι ρ b a N hN
+  obtain ⟨e, ei, er, ee⟩ := _root_.GlobalTheory.CompanionTheory.SW.ThW.rational_coset_param F ι ρ b a N hN
   obtain ⟨e', he', es⟩ := GlobalTheory.T.dual_lattice_parametrization F ι B b N hdet hN
   have hu : ∀ n : ι × InfinitePlace F → ℤ, DM B ρ *ᵥ emb ρ (e' n) = (g⁻¹)ᵀ *ᵥ fun i => (n i : ℝ) := by
     intro n
-    have h2 := GlobalTheory.T.gram_transpose_dual_trace_identity F ι M B ρ P hQ (fun v => b v) N (e' n)
+    have h2 := _root_.GlobalTheory.CompanionTheory.SW.ThW.gM_DM_emb_eq_trace F ι M B ρ P hQ (fun v => b v) N (e' n)
     have h3 : gᵀ *ᵥ (DM B ρ *ᵥ emb ρ (e' n)) = fun i => (n i : ℝ) := by
       rw [hgdef, h2]
       funext p
@@ -204,11 +202,11 @@ theorem base [MeasurableSpace (A F)] [BorelSpace (A F)] {lf : Measure (A F)}
   have hfou : ∀ y : ι → F, fou (chiB ψ (Bf B)) (muF B lf) (indC N a) (toA y) =
       ((muF B lf (latN F ι N : Set (ι → A F))).toReal : ℂ) * chiB ψ (Bf B) (toA a) (toA y) *
         Set.indicator (perp (chiB ψ (Bf B)) (latN F ι N : Set (ι → A F))) (fun _ => (1 : ℂ)) (toA y) :=
-    fun y => GlobalTheory.T.fourier_transform_lattice_indicator _ _ _ hV (latN F ι N) (GlobalTheory.T.adelic_level_lattice_compact_open F ι N hN).1 (GlobalTheory.T.adelic_level_lattice_compact_open F ι N hN).2.1 (toA a) (toA y)
+    fun y => _root_.GlobalTheory.CompanionTheory.SW.Core.fou_indicator_coset _ _ _ hV (latN F ι N) (_root_.GlobalTheory.CompanionTheory.SW.ThW.Lco.main F ι N hN).1 (_root_.GlobalTheory.CompanionTheory.SW.ThW.Lco.main F ι N hN).2.1 (toA a) (toA y)
   have hperp : ∀ y : ι → F, toA y ∈ perp (chiB ψ (Bf B)) (latN F ι N : Set (ι → A F)) ↔
       y ∈ Set.range e' := by
     intro y
-    rw [GlobalTheory.T.dual_lattice_membership_trace F ψ hψ ι B b N hN y]
+    rw [_root_.GlobalTheory.CompanionTheory.SW.ThW.toA_mem_perp_latN_iff F ψ hψ ι B b N hN y]
     constructor
     · intro h
       exact es y h
@@ -230,7 +228,7 @@ theorem base [MeasurableSpace (A F)] [BorelSpace (A F)] {lf : Measure (A F)}
       apply hx
       rw [thTerm_one, hfou, Set.indicator_of_notMem (fun h => hc ((hperp x).1 h))]
       simp
-  have hmass := GlobalTheory.T.adelic_lattice_measure_formula F lf hl h1 ι B N hN
+  have hmass := _root_.GlobalTheory.CompanionTheory.SW.ThW.muF_latN F lf hl h1 ι B N hN
   rw [hL, theta_indC B ρ P τ a N g e ei er ee, pf, hmass, hgd]
   have hk : kap F = (Real.sqrt |(discr F : ℝ)|)⁻¹ := rfl
   rw [hk]
@@ -253,11 +251,11 @@ theorem core [MeasurableSpace (A F)] [BorelSpace (A F)] {lf : Measure (A F)}
     exact div_pos (hτ w) (Complex.normSq_pos.mpr h0)
   have hsum : ∀ {σ : InfinitePlace F → ℂ}, (∀ w, 0 < (σ w).im) → ∀ {f : (ι → A F) → ℂ}, SB f →
       Summable fun x => ‖thTerm B ρ P 1 (fun _ => 1) f σ x‖ := fun hσ _ hf =>
-    (GlobalTheory.T.theta_series_summable F ι M B ρ P hQ 1 (fun _ => 1) (orth_one B ρ) _ hσ).1 _ hf
+    (_root_.GlobalTheory.CompanionTheory.SW.ThetaSum.theta_summable_and_ne_zero F ι M B ρ P hQ 1 (fun _ => 1) (orth_one B ρ) _ hσ).1 _ hf
   have hsb : ∀ {f : (ι → A F) → ℂ}, SB f → SB (fou (chiB ψ (Bf B)) (muF B lf) f) := fun hf =>
-    (GlobalTheory.T.fourier_inversion_schwartz_bruhat _ _ _ hV _ hf).1
-  obtain ⟨N, hN, s, c, rfl⟩ := GlobalTheory.T.schwartz_bruhat_span_indicators F ι _ _ hV (fun N hN => (GlobalTheory.T.adelic_level_lattice_compact_open F ι N hN).2.1) φ hφ
-  have hI : ∀ a : ι → F, SB (indC N a) := (GlobalTheory.T.adelic_level_lattice_compact_open F ι N hN).2.2
+    (_root_.GlobalTheory.CompanionTheory.SW.FouSB.fou_sb _ _ _ hV _ hf).1
+  obtain ⟨N, hN, s, c, rfl⟩ := _root_.GlobalTheory.CompanionTheory.SW.ThW.sb_eq_sum_rational_coset_indicators F ι _ _ hV (fun N hN => (_root_.GlobalTheory.CompanionTheory.SW.ThW.Lco.main F ι N hN).2.1) φ hφ
+  have hI : ∀ a : ι → F, SB (indC N a) := (_root_.GlobalTheory.CompanionTheory.SW.ThW.Lco.main F ι N hN).2.2
   classical
   have main : ∀ t : Finset (ι → F), SB (∑ a ∈ t, c a • indC N a) ∧
       cG B ρ P τ * theta B ρ P 1 (fun _ => 1)
@@ -290,7 +288,7 @@ theorem core [MeasurableSpace (A F)] [BorelSpace (A F)] {lf : Measure (A F)}
 theorem thetaInvariance : ∀ (F : Type) [Field F] [NumberField F] [MeasurableSpace (A F)] [BorelSpace (A F)] (lf : Measure (A F)), lf.IsAddHaarMeasure → lf (Oh F) = 1 → ∀ ψ : AddChar (A F) ℂ, IsStdChar F ψ → ∀ (ι : Type) [Fintype ι] [DecidableEq ι] (M : ℕ) (B : Matrix ι ι F) (ρ : InfinitePlace F → (F →+* ℝ)) (P : InfinitePlace F → Matrix ι ι ℝ), QSetup M B ρ P → ∀ (gf : Matrix ι ι (A F)) (gi : InfinitePlace F → Matrix ι ι ℝ), IsOrth B ρ gf gi → ∀ φ : (ι → A F) → ℂ, SB φ → ∀ τ : InfinitePlace F → ℂ, (∀ w, 0 < (τ w).im) → cG B ρ P τ * theta B ρ P gf gi (fou (chiB ψ (Bf B)) (muF B lf) φ) (fun w => -(τ w)⁻¹) = theta B ρ P gf gi φ τ := by
   intro F _ _ _ _ lf hl h1 ψ hψ ι _ _ M B ρ P hQ gf gi hO φ hφ τ hτ
   obtain ⟨-, -, hsym, hdet, -, -, -⟩ := id hQ
-  have hNA := GlobalTheory.T.weil_representation_quadratic_datum F lf hl h1 ψ hψ ι B hsym hdet
+  have hNA := _root_.GlobalTheory.CompanionTheory.SW.Core.SelfDual.naQuad F lf hl h1 ψ hψ ι B hsym hdet
   have hV := hNA.2.2.2.2.2
   have hBu : IsUnit (Bf B).det := by
     have : (Bf B).det = algebraMap F (A F) B.det := by
@@ -305,7 +303,7 @@ theorem thetaInvariance : ∀ (F : Type) [Field F] [NumberField F] [MeasurableSp
       apply hBu.mul_right_cancel
       linear_combination h
     exact IsUnit.of_mul_eq_one _ h2
-  obtain ⟨-, hfou⟩ := GlobalTheory.T.weil_orthogonal_group_invariance (A F) ι ψ (hf F) (Bf B) (muF B lf) hNA gf hgu hO.1
+  obtain ⟨-, hfou⟩ := _root_.GlobalTheory.CompanionTheory.SW.Core.OrthMeas.orth_meas (A F) ι ψ (hf F) (Bf B) (muF B lf) hNA gf hgu hO.1
   obtain ⟨hsb, hfy⟩ := hfou φ hφ
   have hQ' := GlobalTheory.T.quadratic_setup_invariant_under_isometry F ι M B ρ P gi hQ hO.2
   obtain ⟨hga, hgc⟩ := GlobalTheory.T.gaussian_change_of_variables_isometry F ι B ρ P gi hdet hO.2

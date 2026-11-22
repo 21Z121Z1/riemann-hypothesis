@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.HybridLargeSieve
-public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.EnormSqLeLintegralDisc
+public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0047
+public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0010
 
 @[expose] public section
 

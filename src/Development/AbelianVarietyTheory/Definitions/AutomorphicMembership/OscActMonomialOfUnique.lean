@@ -2,11 +2,11 @@ module
 
 public import Mathlib
 public import Formalism.LocalRingCardinality.DataTheta
-public import Development.AbelianVarietyTheory.Definitions.Foundations.IsFockIPOfFockData
+public import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0012
 public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.ContinuousOfDense
 public import Development.AbelianVarietyTheory.Proofs.HeightProofs.NotTrivialAndTwist
 public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsGrpDataMapHaar
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsCoverTensorHom
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0269
 
 @[expose] public section
 

@@ -1,14 +1,14 @@
 module
 
 public import Mathlib
-public import Formalism.SharpRestriction.LevelLetterCocycles.GammaSemisimpleLocalOfConsequences
+public import Formalism.SharpRestriction.LevelLetterCocycles.Bundle0005
 public import Formalism.LocalRingCardinality.RhoDetPrimeEqMuTildeMulChiPow
 public import Formalism.SharpRestriction.LevelLetterCocycles.DataNLoc
 public import Formalism.SharpRestriction.LevelLetterCocycles.LocCoh
 public import Formalism.WeaklyAdmissibleFiltrations.Statement
-public import Formalism.WeaklyAdmissibleFiltrations.StatementTor
+public import Formalism.WeaklyAdmissibleFiltrations.Bundle0001
 public import Formalism.FrobeniusContraction.HighestWeightResidueAvoids
-public import Formalism.FrobeniusContraction.StatementTop
+public import Formalism.FrobeniusContraction.Bundle0001
 public import Formalism.GaloisCohomology.LocalTateDualityK
 public import Formalism.SharpRestriction.LevelLetterCocycles.DeltaInvariantLattices
 

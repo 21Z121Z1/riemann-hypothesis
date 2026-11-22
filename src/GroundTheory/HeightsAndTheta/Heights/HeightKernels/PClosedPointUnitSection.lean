@@ -1,8 +1,7 @@
 module
 
 public import Mathlib
-public import GroundTheory.HeightsAndTheta.Heights.HeightKernels.StatementsClosedPointUnitSection
-public import GroundTheory.HeightsAndTheta.Heights.HeightKernels.PCurveCharts
+public import GroundTheory.HeightsAndTheta.Heights.HeightKernels.Bundle0029
 
 @[expose] public section
 

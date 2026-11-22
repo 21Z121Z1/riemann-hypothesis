@@ -1,20 +1,20 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SplitOff
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NormalisedFamilyEqTensorPowerVacuum
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsUnitScalarFourier
-public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.NormalisedThetaFamilyVectorsLatticesThetaZero
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.LineDerivListCompForm
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ThetaTranslationIntertwinerUnitary
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.KernelLatticesFormSelfDualTriples
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0474
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1468
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0524
+public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0154
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0242
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0257
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0270
 public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.WeilRepresentationVacuumSignInertPlaces
 public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.VacuumTranslateConjugateJetBound
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FockVacEqJets
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2724
 public import Formalism.LocalToGlobal.GlobalTheory.GL3.PLinkThIndep
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ColumnLatticeComapEqStandardLattice
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ThetaFunctionPeriodicNormFiniteSqIntegral
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.DifferentiableIntertwiningPair
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1619
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0253
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0466
 
 @[expose] public section
 
@@ -242,8 +242,8 @@ theorem normSq_scalar {D : D7} (ψ : AddChar (AF D.host.F) ℂ) (θ : InfFam D) 
   have hsS := GlobalTheory.FockPos.cart_one frS hS hcS
   have hsT := GlobalTheory.FockPos.cart_one frT hT hcT
   subst hsS hsT
-  obtain ⟨Φ, hΦd, hreal⟩ := GlobalTheory.T.fockVacuum_real_restriction_gaussian_entire ψ θ S T frS frT _ _ hS hT f hf
-  have hTh := GlobalTheory.T.unitVacuumEntireFactor_isTheta_movedLattices ψ θ S T frS frT hS hT δ hC hδ Ls Lt hLs hLt f hf Φ hΦd hreal
+  obtain ⟨Φ, hΦd, hreal⟩ := _root_.GlobalTheory.FockPos.vacuum_real_entire ψ θ S T frS frT _ _ hS hT f hf
+  have hTh := _root_.GlobalTheory.ThetaLawMoved.theta_of_vacuum_moved ψ θ S T frS frT hS hT δ hC hδ Ls Lt hLs hLt f hf Φ hΦd hreal
   obtain ⟨⟨μ, 𝓕⟩, hμ⟩ := hf.2.norm.1
   have k1 : KLat D (tor0 D D.host.ccK δ) (La D (tor0 D D.host.ccK δ) Ls Lt) := Or.inr ⟨_, _, hLs, hLt, rfl⟩
   have hN := normSq_real_form ψ θ S T frS frT hf.1 hf.2.inf hC hδ k1 f hf.2.theta hμ (hf.2.norm.2 (μ, 𝓕) hμ) Φ hreal hTh
@@ -261,7 +261,7 @@ theorem normSq_scalar {D : D7} (ψ : AddChar (AF D.host.F) ℂ) (θ : InfFam D) 
         (k.prod fun v n => GlobalTheory.FunObj.period δ v.1 ^ n) * Formalism.MainNotions.GL3Theta.applyAt0 D (MvPolynomial.monomial k 1) Θ := by
     intro k
     have hdiff : Differentiable ℂ Θ := hTh.1
-    have hj := GlobalTheory.T.fockMonomial_at_origin_gaussian_entire_orthonormal ψ θ S T frS frT hf.1 hf.2.inf hS hT f Φ hΦd hreal k
+    have hj := _root_.GlobalTheory.FockPos.fock_monomial_zero_of_on ψ θ S T frS frT hf.1 hf.2.inf hS hT f Φ hΦd hreal k
     change pureTensorO ψ θ S T (fun _ => 1) (fun _ => 1) (GlobalTheory.FockPos.frAt frS) (GlobalTheory.FockPos.frAt frT) f
       (MvPolynomial.monomial k 1) 0 = _
     rw [hj, hΦeq, GlobalTheory.FockPos.applyAt0_monomial', GlobalTheory.FockPos.applyAt0_monomial',

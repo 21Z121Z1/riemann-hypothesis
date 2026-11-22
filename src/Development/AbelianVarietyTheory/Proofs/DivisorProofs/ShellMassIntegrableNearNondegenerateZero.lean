@@ -4,9 +4,9 @@ public import Mathlib
 public import ReciprocityTheory.L2DbarEstimates.Imports
 public import ReciprocityTheory.L2DbarEstimates.PlurisubharmonicCharts.FourSignHolds
 public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.L2ExtensionLogCanonical
-public import Development.AbelianVarietyTheory.Definitions.Divisors.EtaleEmpty
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LintegralNsqCanonicalAddChartPartStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ShellMass
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0003
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0646
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0649
 
 @[expose] public section
 

@@ -1,6 +1,6 @@
 module
 
-public import ReciprocityTheory.DualLattices.CotangentSurjective
+public import ReciprocityTheory.DualLattices.Bundle0004
 
 @[expose] public section
 

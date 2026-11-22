@@ -1,15 +1,15 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Divisors.DivisorSupportCondition
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0007
 public import Development.AbelianVarietyTheory.Definitions.Divisors.IndEtOfForallFinset
-public import Development.AbelianVarietyTheory.Proofs.HomogeneousIdeals.IsDomainAndIsIntegrallyClosedAtPrimeOfSmoothOfCo
-public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.FlatMapMaximalIdealIsSeparable
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HZeroPullbackTwistBijectiveStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EtaleCohomologyLocalToGlobalAffineIndEtaleStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SubsingletonEtaleCohomologyGenericFibreHenselianStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TateTwistCohomologyGenericFibreHenselLineSubsingStatement
-public import Development.AutomorphicArithmetic.CommutativeAlgebra.EtaleCohomologyFunctorialityAxiomsHoldOfSheafAxi
+public import Development.AbelianVarietyTheory.Proofs.HomogeneousIdeals.Bundle0004
+public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0008
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0506
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0905
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1101
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2915
+public import Development.AutomorphicArithmetic.CommutativeAlgebra.Bundle0032
 
 @[expose] public section
 
@@ -281,7 +281,7 @@ theorem UpperTheory.Cb.etale_cohomology_ind_etale_base_change : GlobalTheory.EtC
   haveI : Algebra.Smooth T (Polynomial T) := ⟨inferInstance, inferInstance⟩
   haveI : Algebra.Smooth T B := Algebra.Smooth.comp T (Polynomial T) B
   have hqB : IsUnit (q : B) := by simpa using hq.map (algebraMap T B)
-  refine GlobalTheory.T.etaleCohomology_local_to_global_affine_indEtale q B (Spec.map (CommRingCat.ofHom
+  refine _root_.GlobalTheory.LocGlobIndEt.main q B (Spec.map (CommRingCat.ofHom
     (Algebra.TensorProduct.includeRight (R := T) (A := FractionRing T) (B := B)).toRingHom)) hqB i ?_
   intro A _ _ hSH hInd
   letI : Algebra T A := ((algebraMap B A).comp (algebraMap T B)).toAlgebra

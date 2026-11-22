@@ -1,7 +1,7 @@
 module
 
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.SymplecticGSp4.DecompSigmaOrd
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.CongruenceNumberRankThree
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.Bundle0004
 
 @[expose] public section
 

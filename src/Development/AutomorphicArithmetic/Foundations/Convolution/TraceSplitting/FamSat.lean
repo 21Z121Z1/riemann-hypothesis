@@ -2,9 +2,9 @@ module
 
 public import Mathlib
 public import Development.AutomorphicArithmetic.Foundations.Convolution.TraceSplitting.NormCharSplit
-public import Development.AutomorphicArithmetic.Foundations.Convolution.CentreSplitting.ExCusp
-public import Development.AutomorphicArithmetic.Foundations.Convolution.CentreSplitting.SSatIff
-public import Development.AutomorphicArithmetic.Foundations.Convolution.NormCharacterPowers.LiftPow
+public import Development.AutomorphicArithmetic.Foundations.Convolution.CentreSplitting.Bundle0004
+public import Development.AutomorphicArithmetic.Foundations.Convolution.CentreSplitting.Bundle0006
+public import Development.AutomorphicArithmetic.Foundations.Convolution.NormCharacterPowers.Bundle0002
 
 @[expose] public section
 

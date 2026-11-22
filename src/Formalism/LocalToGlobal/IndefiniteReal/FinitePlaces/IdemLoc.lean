@@ -1,6 +1,6 @@
 module
 
-public import Formalism.LocalToGlobal.IndefiniteReal.FinitePlaces.TwoSplitIdem
+public import Formalism.LocalToGlobal.IndefiniteReal.FinitePlaces.Bundle0002
 public import Formalism.LocalRingCardinality.SpanPowerMembership.Adelic
 
 @[expose] public section

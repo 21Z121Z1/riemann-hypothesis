@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IsCliff
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CPoly
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0360
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0368
 
 @[expose] public section
 

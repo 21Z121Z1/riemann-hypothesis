@@ -1,10 +1,10 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.LiftsInvOne
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0434
 public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.DiamondElementIntegralSupportLastRow
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsPointOfLastCoordinateDilationOnePrime
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.TrueColumnSpacesStandardInFrameCoords
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0369
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0297
 public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.InclMulInvMul
 
 @[expose] public section

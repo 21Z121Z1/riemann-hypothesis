@@ -1,9 +1,9 @@
 module
 
-public import Development.WeilBound.CoreStatements.MultihomogeneousSquares.SingSt
+public import Development.WeilBound.CoreStatements.MultihomogeneousSquares.Bundle0001
 public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.HodgeCptFiniteExtension
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.GramMatrixTwoFrames
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.MemAbLocusIff
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0218
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0104
 
 @[expose] public section
 
@@ -225,7 +225,7 @@ theorem gram_pull {A : HodgeCpt Y S x} {A' : HodgeCpt Y S x'} {pr : A'.X ⟶ A.X
     HodgePull.value_pull (M' := A'.M) (j := j) ho.1 m.cart hpt (A'.all _) hp (hL k)
   refine ⟨w', hw', fun p q => ?_⟩
   have e : ∀ k, w k = v k := fun k => (hw k).unique A.tie.gen (hv k)
-  refine ((GlobalTheory.T.hodge_inner_product_pullback_unique E H A'.X A.X A'.t A.t pr m z (w' p) (w' q) (w p) (w q) (hww p) (hww q)).1 _).2 ?_
+  refine ((_root_.GlobalTheory.CompanionTheory.Ar.HodgeUnique.main E H A'.X A.X A'.t A.t pr m z (w' p) (w' q) (w p) (w q) (hww p) (hww q)).1 _).2 ?_
   rw [e, e]
   exact hΓ p q
 

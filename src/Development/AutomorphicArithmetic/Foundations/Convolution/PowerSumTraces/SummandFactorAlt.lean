@@ -1,11 +1,11 @@
 module
 
 public import Development.AutomorphicArithmetic.Foundations.Convolution.PowerSumTraces.SummandFactor
-public import Development.AutomorphicArithmetic.Foundations.Convolution.PowerSumTraces.LocUApply
-public import Development.AutomorphicArithmetic.Foundations.Convolution.ConvolutionKernels.KernelTransforms.LocEmb
-public import Development.AutomorphicArithmetic.TwistedTraces.LeClosureSpanAllOfCommutingUnitaryReps
-public import Development.AutomorphicArithmetic.TwistedTraces.IntegralOperatorFixedInvariantOfLeftInvariantKer
-public import Development.AutomorphicArithmetic.TwistedTraces.SummandLeClosureSpanLocalTypeImages
+public import Development.AutomorphicArithmetic.Foundations.Convolution.PowerSumTraces.Bundle0003
+public import Development.AutomorphicArithmetic.Foundations.Convolution.ConvolutionKernels.KernelTransforms.Bundle0002
+public import Development.AutomorphicArithmetic.TwistedTraces.Bundle0012
+public import Development.AutomorphicArithmetic.TwistedTraces.Bundle0008
+public import Development.AutomorphicArithmetic.TwistedTraces.Bundle0009
 
 @[expose] public section
 

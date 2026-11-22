@@ -5,10 +5,10 @@ public import Development.AbelianVarietyTheory.Definitions.Jets.BasicLiftAll
 public import Formalism.HermitianCurvature.HermitianCurvatureProofs.EventuallyLevelPointMemOpen
 public import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutHLTorus
 public import Formalism.HermitianCurvature.HermitianCurvatureProofs.IntegrableCsmul
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.ChainFirstIdentity
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0087
 public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.WeylCellRange.ReflectionMultiplicationOnBigCell
 public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.PolyLiftOfSmoothComm
-public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.QuantumMinorSumPolynomialOperator
+public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0143
 
 @[expose] public section
 

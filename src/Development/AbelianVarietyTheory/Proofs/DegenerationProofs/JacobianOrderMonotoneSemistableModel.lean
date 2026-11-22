@@ -7,9 +7,9 @@ public import Development.AbelianVarietyTheory.Definitions.Degenerations.OfDeriv
 public import Development.AbelianVarietyTheory.Definitions.Degenerations.PlOrdSomeOfAssociated
 public import Development.AbelianVarietyTheory.Statements.SemistableTorsion.SemistableFin
 public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsUniqueModelHasJacobianOrder
-public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ChainRuleAndJacobianCriterion
-public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ModelSmoothOfRelativeDimension
-public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.IsOpenImmersionOfExtendsIdOfEtale
+public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.Bundle0001
+public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.Bundle0035
+public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.Bundle0028
 
 @[expose] public section
 

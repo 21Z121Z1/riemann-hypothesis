@@ -1,8 +1,8 @@
 module
 
-public import Formalism.LocalToGlobal.GlobalTheory.GL6.AdmissibleOfSplitAndRoundTrips
+public import Formalism.LocalToGlobal.GlobalTheory.GL6.Bundle0004
 public import Formalism.LocalRingCardinality.RankBoundMonotoneInDimension
-public import Formalism.LocalRingCardinality.IntCastDvdOfDvdIntegers
+public import Formalism.LocalRingCardinality.Bundle0001
 
 @[expose] public section
 

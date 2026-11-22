@@ -1,7 +1,7 @@
 module
 
 public import Formalism.LocalToGlobal.TorsionIntegrality.GaussSumParity.KurComplete
-public import Formalism.LocalToGlobal.TorsionIntegrality.GaussSumParity.StatementE
+public import Formalism.LocalToGlobal.TorsionIntegrality.GaussSumParity.Bundle0002
 public import Formalism.LocalToGlobal.TorsionIntegrality.WeierstrassTwoTorsion.FlowDouble
 public import Formalism.LocalToGlobal.TorsionIntegrality.FrobeniusFibreCurves.FinalB
 

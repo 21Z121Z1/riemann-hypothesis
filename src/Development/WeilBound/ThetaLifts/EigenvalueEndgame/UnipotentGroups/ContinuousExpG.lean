@@ -2,9 +2,9 @@ module
 
 public import Development.WeilBound.ThetaLifts.EigenvalueEndgame.UnipotentGroups.UnipUGood
 public import Development.WeilBound.ThetaLifts.EigenvalueEndgame.UnipotentGroups.KerCocompact
-public import Development.WeilBound.ThetaLifts.CartanFactorisation.Unimod
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnitaryAdelicGroupTopology
-public import Development.AbelianVarietyTheory.Proofs.HeightProofs.ExistsCompactAdeleRingModNumberField
+public import Development.WeilBound.ThetaLifts.CartanFactorisation.Bundle0003
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0935
+public import Development.AbelianVarietyTheory.Proofs.HeightProofs.Bundle0028
 
 @[expose] public section
 

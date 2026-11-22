@@ -1,14 +1,14 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Statements.PlaceShiftStatements.NormSmall
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.RatInOfUnit
+public import Development.AbelianVarietyTheory.Statements.PlaceShiftStatements.Bundle0002
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0142
 public import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.WeilTensorModels
-public import Development.AbelianVarietyTheory.Definitions.Divisors.DiscreteSeriesHermitianUnique
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NegIdxOfIsStd
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BaseFits
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DownRight
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdelicWeilRepSchrodingerModelUnique
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0041
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1561
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1569
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1597
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1814
 
 @[expose] public section
 
@@ -200,7 +200,7 @@ theorem member_eq_of_arch (σ : E →ₐ[F] E) (hσ : IsCMExt F E σ) {a b : ℕ
   have hrho : ∀ w, dd₁.rho ψ w = dd.rho ψ w := fun w => by simp only [Darboux.rho, hee]
   have inv_mul : ∀ (p : UG (cA σ) (dbl (incM F JB))) φ, omd p (omd p⁻¹ φ) = φ := fun p φ => by
     rw [← Module.End.mul_apply, ← map_mul, mul_inv_cancel, map_one, Module.End.one_apply]
-  obtain ⟨φz, hφz, hφz0⟩ := GlobalTheory.T.exists_adelicSchwartz_ne_zero_at_origin F (κ ⊕ κ)
+  obtain ⟨φz, hφz, hφz0⟩ := _root_.GlobalTheory.SchANonzero.exists_mem_schA_ne_zero F (κ ⊕ κ)
   have key : ∀ p, ∃ c : ℂ, ∀ φ ∈ schA F (κ ⊕ κ), omd₁ p φ = c • omd p φ := fun p => by
     obtain ⟨c, hc⟩ := scalar_of_commute ψ hψ (omd p⁻¹ * omd₁ p)
       (fun l hl => by
@@ -257,7 +257,7 @@ theorem member_eq_of_arch (σ : E →ₐ[F] E) (hσ : IsCMExt F E σ) {a b : ℕ
   let π := archUG σ (dbl (incM F JB))
   let c' := c.comp π
   have hcont' : Continuous c' := hcont.comp (continuous_archUG σ _)
-  obtain ⟨l, hl, hlinv, φ₀, hφ₀, hl0⟩ := GlobalTheory.T.exists_diagonalLagrangian_invariant_form F ψ κ
+  obtain ⟨l, hl, hlinv, φ₀, hφ₀, hl0⟩ := _root_.GlobalTheory.diagLagrangian_form F ψ κ
   have hP : ∀ (p : UG (cA σ) (dbl (incM F JB))) (t : GL (Fin b) (AE F E)),
       ((p : GL (Fin b ⊕ Fin b) (AE F E)) : Matrix _ _ (AE F E)) * diagCols (Fin b) = diagCols (Fin b) * t.1 →
         c' p = 1 := fun p t hpt => by
@@ -282,7 +282,7 @@ theorem member_eq_of_arch (σ : E →ₐ[F] E) (hσ : IsCMExt F E σ) {a b : ℕ
     exact mul_right_cancel₀ hl0 (by rw [one_mul]; exact e1.symm)
   have hc1 := GlobalTheory.T.doubledUnitary_character_trivial_of_siegel F E σ hσ b JB ε hJ hdet c' hcont' hP
   intro g hg Φ hΦ
-  obtain ⟨gd, hgd⟩ := GlobalTheory.T.exists_unitaryDoubled_blockDiag_one (AF F) (AE F E) (cA σ) (Fin b) (incM F JB) g
+  obtain ⟨gd, hgd⟩ := _root_.GlobalTheory.unitary_diag_one_mem_dbl (AF F) (AE F E) (cA σ) (Fin b) (incM F JB) g
   have hgdA : At (evI F) (((gd : GL (Fin b ⊕ Fin b) (AE F E)) : Matrix (Fin b ⊕ Fin b) (Fin b ⊕ Fin b) (AE F E)) - 1) :=
       fun u hu => by
     show u • (((gd : GL (Fin b ⊕ Fin b) (AE F E)) : Matrix (Fin b ⊕ Fin b) (Fin b ⊕ Fin b) (AE F E)) - 1) = 0
@@ -294,8 +294,8 @@ theorem member_eq_of_arch (σ : E →ₐ[F] E) (hσ : IsCMExt F E σ) {a b : ℕ
     simp only [MonoidHom.one_apply, Units.val_one] at this
     rw [← hcv, ← hπ]
     exact this
-  obtain ⟨φ₂, hφ₂, hφ₂0⟩ := GlobalTheory.T.exists_adelicSchwartz_ne_zero_at_origin F κ
-  have hb := GlobalTheory.T.productFunctionOnSumCoords_mem_adelicSchwartzSpace F κ κ Φ hΦ φ₂ hφ₂
+  obtain ⟨φ₂, hφ₂, hφ₂0⟩ := _root_.GlobalTheory.SchANonzero.exists_mem_schA_ne_zero F κ
+  have hb := _root_.GlobalTheory.SchwartzBox.boxFun_mem_schA F κ κ Φ hΦ φ₂ hφ₂
   have e := hres g gd hgd Φ hΦ φ₂ hφ₂
   have e₁ := hres₁ g gd hgd Φ hΦ φ₂ hφ₂
   rw [hcf gd _ hb, hcf1, one_smul, e] at e₁

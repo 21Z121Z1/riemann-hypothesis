@@ -1,28 +1,26 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.Live
+public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.Bundle0032
 public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.IsStdFr
-public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.PinColL
+public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.Bundle0029
 public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.FrameTopAlt
-public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.XiEqXiOffMul
+public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.Bundle0030
 public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.HzUnit
 public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.CosInj
 public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.UnitRatio
-public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.ChartZero
 public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.TailRd
-public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.Placed
-public import Formalism.LocalToGlobal.IndefiniteReal.RealRec
+public import Formalism.LocalToGlobal.IndefiniteReal.Bundle0030
 public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.AdmissibleDiscreteSeriesOfHasParam
 public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.HarishChandraModulesOn
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.IsLocFac
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ExistsIdemSumLeft
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ExistsSymmetricDataConductorOne
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0338
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0507
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0354
 public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.IdentityCosetEntryProportionalColumnDatum
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.PsiDatumAgreeColumnDatumAtTypePrime
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ExistsSymDataOfUnifCongr
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.IntIffFrame
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.AdAtKStdOfTwist
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0062
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0028
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0523
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0461
 public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ExistsInvOfNear
 
 @[expose] public section
@@ -191,8 +189,8 @@ theorem chi_tie (q : GlobalTheory.FinPl.SplitPt D k) {PP : Formalism.L2.DIV.Pl D
     (ha : IntAt PP a) (hr : (r : Formalism.L2.DIV.kP PP) = redP PP a) (hu : (u : k) = (ofSplit q).pr a) : m u = c r := by
   obtain ⟨ma, hma⟩ := Witness.exists_isComp (ofSplit q) (μ j)
   obtain ⟨mb, hmb⟩ := Witness.exists_isComp (ofSplit q) η
-  have e1 := (GlobalTheory.T.splitPoint_heckeComponent_tame_and_residual D k q PP hid hi hd _ _ _ _ h1 h2 hma).2 a u r ha hr hu
-  have e2 := (GlobalTheory.T.splitPoint_heckeComponent_tame_and_residual D k q PP hid hi hd _ _ _ _ h3 h4 hmb).2 a u r ha hr hu
+  have e1 := (_root_.GlobalTheory.LocMod.SplitHecke.tame_and_res D k q PP hid hi hd _ _ _ _ h1 h2 hma).2 a u r ha hr hu
+  have e2 := (_root_.GlobalTheory.LocMod.SplitHecke.tame_and_res D k q PP hid hi hd _ _ _ _ h3 h4 hmb).2 a u r ha hr hu
   have f0 := hm u (SymChainAt.idl q u) rfl
   have f1 := hma u (SymChainAt.idl q u) rfl
   have f2 := hmb u (SymChainAt.idl q u) rfl

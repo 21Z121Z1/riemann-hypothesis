@@ -3,11 +3,11 @@ module
 public import Mathlib
 public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.IsProbabilityMeasureAutQuotientNormalized
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArakelovVolumes.UpperBounds.FundSetPf
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArakelovVolumes.UpperBounds.OrthoStatementPf
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.LintegralUnfoldArithmeticQuotientDoubleCosetsStatement
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.UnitFrameRealUnitaryOrbitGramRigidStatement
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsDiscreteArithGroupImageRealUnitaryStatement
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsMeasurePreservingFrameChangeProportionalHeStatement
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArakelovVolumes.UpperBounds.Bundle0005
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0007
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0045
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0043
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0046
 
 @[expose] public section
 
@@ -126,7 +126,7 @@ theorem lintegral_dict {Comp : Type} [Fintype Comp] (X : Comp → Data E r) {G :
       (∀ k, ∀ b ∈ Bor (X k).Ψ r, ∀ x ∈ (X k).dom, F k (rmul x b) = F k x) →
       Measurable (fun g => F (dict g).1 (dict g).2) ∧
         ∫⁻ g in 𝓕, F (dict g).1 (dict g).2 ∂μ = κ * ∑ k, quotInt (X k) (F k) := by
-  obtain ⟨hG, hgr⟩ := GlobalTheory.T.unitFrame_real_unitary_orbit_gram_rigid E r Comp X G Gi dict (fun k g τ => ar τ.1 g) (fun k τ => J τ.1) x0
+  obtain ⟨hG, hgr⟩ := _root_.GlobalTheory.PeterssonRigid.rigid E r Comp X G Gi dict (fun k g τ => ar τ.1 g) (fun k τ => J τ.1) x0
     (fun k τ => hJ τ.1) hs d0 dI dD dU
   choose t ht0 ht using hG
   choose y hy b hb hxb using fun k => ReciprocityTheory.ChartRestriction.G.AR.Up.ortho_holds r (X k) (x0 k) (d0 k).1
@@ -141,7 +141,7 @@ theorem lintegral_dict {Comp : Type} [Fintype Comp] (X : Comp → Data E r) {G :
     fun τ g => (hJG k τ _).1 (hu k τ g)
   choose s hsy using fun k => exists_real_of_orth (X k) (baseFr_mem (X k)) (hy k)
   choose g hg using fun k => (d0 k).2
-  choose Λ hΛ hΛd using fun k => GlobalTheory.T.exists_discrete_arithGroupImage_realUnitary E r (X k)
+  choose Λ hΛ hΛd using fun k => _root_.GlobalTheory.ArithImage.exists_discrete_image E r (X k)
   have hfr : ∀ k h τ, mat (frameOf (X k) (s k * ψ k h)) τ = ar τ.1 h * mat (y k) τ := by
     intro k h τ
     rw [← hψ, hsy, mat_frameOf, Matrix.mul_assoc]
@@ -157,7 +157,7 @@ theorem lintegral_dict {Comp : Type} [Fintype Comp] (X : Comp → Data E r) {G :
     simp only [Matrix.nonsing_inv_mul_cancel_right _ _ (hyu k τ)] at h2
     exact Subtype.ext (Units.ext (((Matrix.isUnit_iff_isUnit_det _).2 (hyu k τ)).mul_left_cancel h2))
   haveI : ∀ k, (haarR (X k)).IsHaarMeasure := fun k => by unfold haarR; infer_instance
-  refine Exists.elim (GlobalTheory.T.lintegral_unfold_arithmetic_quotient_doubleCosets G μ Γ H Kf 𝓕 h𝓕 h0 h1 hH
+  refine Exists.elim (_root_.GlobalTheory.PeterssonUnfold.unfold_lintegral G μ Γ H Kf 𝓕 h𝓕 h0 h1 hH
     (fun z hz => (hmem z).2 ⟨1, one_mem _, z, hz, (one_mul _).symm⟩) Comp (fun k => RealGrp (X k))
     (fun k => haarR (X k)) ψ Λ s g _ (SameOrb X) dict (fun k a => ⟨k, rmul (frameOf (X k) a) (b k)⟩)
     (fun k => (hψc k).measurable) ?_ ?_ ?_ ?_ hΛd (sameOrb_equivalence X) ?_ ?_ ?_ ?_ ?_) ?_

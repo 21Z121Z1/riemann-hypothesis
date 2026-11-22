@@ -2,8 +2,8 @@ module
 
 public import Mathlib
 public import Formalism.LocalToGlobal.IndefiniteReal.ScalarOnPartsFull
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.LatticeElementaryDivisors
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IrreducibleOfValued
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0025
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0013
 
 @[expose] public section
 

@@ -2,7 +2,7 @@ module
 
 public import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.ArchimedeanGelfandKernels.LeftEquivariantFunctions.ComplexMatrixCalculus.InverseLineDerivatives.AtTraceT
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BranchingAdmissibleFacts
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DualWeylLeOfHighestVectorRowOperatorStable
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0790
 public import Formalism.GradedWeylDivisibility.DualWeylDominanceOf
 
 @[expose] public section

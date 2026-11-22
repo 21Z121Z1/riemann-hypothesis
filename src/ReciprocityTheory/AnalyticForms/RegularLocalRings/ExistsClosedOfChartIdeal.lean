@@ -1,7 +1,7 @@
 module
 
 public import ReciprocityTheory.AnalyticForms.RegularLocalRings.LiftChartIdeal
-public import ReciprocityTheory.AnalyticForms.RegularLocalRings.BijOnClosedPointsOfIsIso
+public import ReciprocityTheory.AnalyticForms.RegularLocalRings.Bundle0009
 public import ReciprocityTheory.AnalyticForms.RegularLocalRings.ExistsBasicOpenCover
 
 @[expose] public section

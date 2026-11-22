@@ -1,7 +1,7 @@
 module
 
 public import Formalism.SharpRestriction.GrowthBounds.DiagonalSupport.TwiceValuationFactorialProduct
-public import Formalism.PolynomialDimension.FinalNum
+public import Formalism.PolynomialDimension.Bundle0004
 
 @[expose] public section
 

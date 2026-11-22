@@ -1,14 +1,17 @@
 module
 
 public import Development.WeilBound.RepresentationTheoryGL.RegularisedSiegelWeil.SingularNullSets.WeakApproximationFinitePlace
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.EisensteinHeisenbergSchwartzStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.EisensteinVanishingStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.EisensteinUnfoldingSecondTermStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.EisensteinCovariance
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.RationalGroupLeOfGeneratorsMemStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ThetaSumInvariantWeylInvolution
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ThetaSumInvariantLeviElement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ThetaSumInvariantUnipotentTranslate
+public import Mathlib
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0719
+public import Development.WeilBound.CoreStatements.TemperedRepresentationTheory.WeilSiegelTheta.HeisSch
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0656
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0612
+public import Development.WeilBound.CoreStatements.TemperedRepresentationTheory.WeilSiegelTheta.Unfold2
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0649
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0647
+public import Development.WeilBound.CoreStatements.TemperedRepresentationTheory.WeilSiegelTheta.Bundle0001
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0654
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0472
 
 @[expose] public section
 
@@ -87,7 +90,7 @@ theorem theta_weyl_w {D : D7} {n : ℕ} {V : HSp D} {ψ χ θ μ ω} (hS : SetW 
   obtain ⟨i1, i2, i3, i4, i5, K, hK, hKc⟩ := lattice_Mx D V.rank n
   haveI : BorelSpace (Mx D V.rank n) := ⟨rfl⟩
   have hT := isHermND_gram V
-  obtain ⟨h1, h2⟩ := GlobalTheory.T.rationalAdelicMatrices_self_annihilator D V.rank n V.gram hT ψ hψ
+  obtain ⟨h1, h2⟩ := _root_.GlobalTheory.GramAnnih.ratMx_annihilator D V.rank n V.gram hT ψ hψ
   have hs := pairing_symm (n := n) hT ψ
   have hval : ∀ x, (ω g Φ).1 x = ∫ y, Φ.1 y * GlobalTheory.IndefiniteRowSideFullHecke.GramMatrixBlocks.pairing V.gram ψ y x ∂μ := fun x => by
     rw [hω.weyl g hg Φ x]
@@ -112,7 +115,7 @@ theorem theta_weyl_w {D : D7} {n : ℕ} {V : HSp D} {ψ χ θ μ ω} (hS : SetW 
   · simp only [hs _ y]
     unfold GlobalTheory.IndefiniteRowSideFullHecke.GramMatrixBlocks.pairing GlobalTheory.IndefiniteRowSideFullHecke.GramMatrixBlocks.trA GlobalTheory.IndefiniteRowSideFullHecke.GramMatrixBlocks.gramQ GlobalTheory.IndefiniteRowSideFullHecke.GramMatrixBlocks.mmul
     rw [Matrix.mul_add, Matrix.trace_add, map_add (f := _), AddChar.map_add_eq_mul]
-  · exact (GlobalTheory.T.schwartzBruhatAdelicMatrix_continuous_le_majorant D θ hθ _ n Φ.1
+  · exact (_root_.GlobalTheory.SchwartzMaj.continuous_and_le_maj D θ hθ _ n Φ.1
       (GlobalTheory.SchwartzPure.isSchwartzBruhat_of_mem_schwartzA D θ hθ _ n Φ.1 Φ.2)).1
   · simp only [← hval]
     exact (ratEquiv D V.rank n).summable_iff.1 (GlobalTheory.SiegelWeilLitCompare.summable_rat hθ (ω g Φ))
@@ -133,7 +136,7 @@ theorem thetaInv_w {D : D7} {n : ℕ} {V : HSp D} {ψ χ θ μ ω} (hS : SetW D 
         have := hg (ω g⁻¹ Φ)
         rw [← Module.End.mul_apply, ← map_mul, mul_inv_cancel, map_one, Module.End.one_apply] at this
         exact this.symm }
-  have hle : GF D n ≤ S := GlobalTheory.T.rational_group_le_of_generators_mem D n S (fun g a hg Φ => theta_levi_w hS g a hg Φ)
+  have hle : GF D n ≤ S := _root_.GlobalTheory.CompanionTheory.RatGen.GF_le_of_levi_unip_weyl D n S (fun g a hg Φ => theta_levi_w hS g a hg Φ)
     (fun g b hg Φ => theta_unip_w hS g b hg Φ) (fun g hg Φ => theta_weyl_w hS g hg Φ)
   exact hle hγ Φ
 
@@ -158,10 +161,10 @@ theorem partial_fourier_second_term {D : D7} {n : ℕ} {V : HSp D} {ψ χ θ μ 
   obtain ⟨hψ, -, hθ, ⟨𝓕, hcov⟩, -⟩ := id hS
   have hinv : mat γ * mat γ⁻¹ = 1 := mat_mul_inv' γ
   rw [GlobalTheory.T.eisenstein_vanishing D ψ hψ θ hθ V n μ 𝓕 hcov (ω γ Φ).1 (ω γ Φ).2,
-    ← GlobalTheory.T.eisenstein_unfolding_second_term D ψ hψ θ hθ V n r hr μ 𝓕 hcov μr hμr c a hc b Φ.1 Φ.2]
+    ← _root_.GlobalTheory.CompanionTheory.EisUnfold.unfold2 D ψ hψ θ hθ V n r hr μ 𝓕 hcov μr hμr c a hc b Φ.1 Φ.2]
   refine integral_congr_ae (Filter.Eventually.of_forall fun y => ?_)
   simp only [← hmat]
-  have hΨ := GlobalTheory.T.eisenstein_heisenberg_schwartz D ψ hψ θ hθ V n (HMul.hMul (zy y) (mat γ)) Φ.1 Φ.2
+  have hΨ := _root_.GlobalTheory.CompanionTheory.HeisSchwartz.heisSch_holds D ψ hψ θ hθ V n (HMul.hMul (zy y) (mat γ)) Φ.1 Φ.2
   have h1 := covar_w hS γ hγ (HMul.hMul (zy y) (mat γ)) Φ
     ⟨Heisenberg₂ ψ V (HMul.hMul (zy y) (mat γ)) Φ.1, hΨ⟩ rfl
   have h2 := thetaInv_w hS ⟨Heisenberg₂ ψ V (HMul.hMul (zy y) (mat γ)) Φ.1, hΨ⟩ γ hγ

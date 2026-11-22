@@ -1,10 +1,10 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.RowMinor
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsIntegerAddStarEqOneOfIsCMUnram
-public import Formalism.HermitianLattices.HermitianLatticesProofs.IsomAct
-public import Formalism.HermitianLattices.HermitianLatticesProofs.GenusBasic
+public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.Bundle0012
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0059
+public import Formalism.HermitianLattices.HermitianLatticesProofs.Bundle0001
+public import Formalism.HermitianLattices.HermitianLatticesProofs.Bundle0002
 
 @[expose] public section
 

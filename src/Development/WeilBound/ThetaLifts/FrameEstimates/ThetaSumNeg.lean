@@ -1,6 +1,6 @@
 module
 
-public import Development.WeilBound.ThetaLifts.FrameEstimates.SqAllC
+public import Development.WeilBound.ThetaLifts.FrameEstimates.Bundle0008
 public import Development.WeilBound.ThetaLifts.FrameEstimates.ThickFrames
 public import Development.WeilBound.ThetaLifts.FrameEstimates.ContinuousMixedSymm
 public import Development.WeilBound.ThetaLifts.FrameEstimates.RankIffRight

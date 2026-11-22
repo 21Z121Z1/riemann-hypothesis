@@ -1,7 +1,6 @@
 module
 
-public import Formalism.PeriodIntegrals.LocHerm
-public import Formalism.PeriodIntegrals.AlgebraMapMemO
+public import Formalism.PeriodIntegrals.Bundle0014
 
 @[expose] public section
 

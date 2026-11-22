@@ -4,8 +4,8 @@ public import Mathlib
 public import Formalism.LocalToGlobal.KernelLattices.ColumnData
 public import Formalism.LocalToGlobal.GlobalTheory.GL3.PFourSq
 public import Formalism.LocalToGlobal.KernelLattices.ColumnData.ProvisionExtensionLink
-public import Formalism.LocalToGlobal.KernelLattices.ColumnData.BaseExP
-public import Formalism.LocalToGlobal.PairingIndexBounds.HalvesRecursion.RecursiveLatticeMembership.MemLamOfIff
+public import Formalism.LocalToGlobal.KernelLattices.ColumnData.Bundle0002
+public import Formalism.LocalToGlobal.PairingIndexBounds.HalvesRecursion.RecursiveLatticeMembership.Bundle0001
 
 @[expose] public section
 

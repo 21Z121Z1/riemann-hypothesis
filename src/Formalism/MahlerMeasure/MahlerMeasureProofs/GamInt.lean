@@ -1,6 +1,6 @@
 module
 
-public import Formalism.MahlerMeasure.HasOrder
+public import Formalism.MahlerMeasure.Bundle0004
 public import Mathlib
 
 @[expose] public section

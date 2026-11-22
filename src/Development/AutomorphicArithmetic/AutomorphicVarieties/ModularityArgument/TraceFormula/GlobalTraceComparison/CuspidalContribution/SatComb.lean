@@ -2,7 +2,7 @@ module
 
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.TraceFormula.GlobalTraceComparison.CuspidalContribution.LevShrink
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.ConjugateRepresentations.CuspidalSupport.CuspSupportOf
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SumSatEqOfIsCT
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1719
 
 @[expose] public section
 

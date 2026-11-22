@@ -3,18 +3,17 @@ module
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.ModuliSpaces.FiniteHomogeneousInf
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.UniformisationConclusion
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.HeckeKer
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.Bundle0003
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.IsHolPeriods
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.UnifUniqSt
-public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.CubeLineBundleAdjointIffHermFormAdjointStatement
-public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.TransportThetaLevelUniformisationCoordinates
-public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsLatticeUniformisationOfPrimTheta
-public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.EighthPowerIntegerMatrixPrimitiveAdjointStatement
+public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0175
+public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0060
+public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0052
+public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0133
 public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.BijectiveTensorOmegaStd
-public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.E8SharpClassPrimitiveIsoClosed
 public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsEquivPiRangeOfMatrixUnits
-public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsLinearLiftOfIsMonHomPolAV
-public import Development.AbelianVarietyTheory.Proofs.ToricGeometry.RiemannFormBijectiveOfWeilNondeg
+public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0036
+public import Development.AbelianVarietyTheory.Proofs.ToricGeometry.Bundle0017
 
 @[expose] public section
 
@@ -250,7 +249,7 @@ theorem GlobalTheory.exists_periods_of_sharpClass : Out.Laws → Out.Laws2 → (
     have h1 := (GlobalTheory.T.eighthPower_integerMatrix_primitive_adjoint hth W ℂ o (spMap em) h k _ c t.pol pr hpr huniv hLB m (α m) (hα' m)).2 m' (α m')
       (hα' m') hmm'
     have h2 : hermForm Hm0 (F m (Q0 x)) (Q0 y) = hermForm Hm0 (Q0 x) (F m' (Q0 y)) :=
-      (GlobalTheory.T.cubeLineBundle_adjoint_iff_hermForm_adjoint hL hL2 hth hU t.pol u Hm0 χ (α m) (α m') (F m) (F m') hAH (hαm m) (hαm m') (hF m) (hF m')).1
+      (_root_.GlobalTheory.HermAdjoint.lbIso_cubeLB_iff_hermForm hL hL2 hth hU t.pol u Hm0 χ (α m) (α m') (F m) (F m') hAH (hαm m) (hαm m') (hF m) (hF m')).1
         h1 (Q0 x) (Q0 y)
     rw [hr, hr] at h2
     have h3 := congrArg Complex.im h2

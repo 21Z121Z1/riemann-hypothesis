@@ -2,11 +2,12 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.Divisors.LamRange
-public import ReciprocityTheory.AnalyticForms.RegularLocalRings.FinalTheorems
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DividingThetaConstantsGenerateIntegralTorsionLabStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaConstantsTorusTranslatesTwistedSumsStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SurjectiveLabelHomLatticeModLevelThetaMemberStatement
-public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsAdaptedBasisTestLattice
+public import ReciprocityTheory.AnalyticForms.RegularLocalRings.Bundle0001
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2789
+public import Development.AbelianVarietyTheory.Definitions.Divisors.IsActIffIsDiagEnd
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle3098
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2477
+public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.Bundle0055
 
 @[expose] public section
 
@@ -166,8 +167,8 @@ theorem exists_classSum_fun : ∀ (g n : ℕ) (F : SFam g n (zetaAway n)) (W : M
     have : K a τ = K a' τ := by simp only [hK, h0]
     rw [this]
   · intro V _ _ _ ev X _ m' t δ 𝔪 C lab hlab T hT c a κ hκ h hh
-    obtain ⟨hex, hsurj, hcong, hadd⟩ := GlobalTheory.T.surjective_labelHom_lattice_mod_level_thetaMember g n F W Z i X₁ z₁ act V ev X m' t δ 𝔪
-    have hint := GlobalTheory.T.dividingThetaConstants_generate_integral_torsion_labels g n F W Z i X₁ z₁ act x₀ hdiv V ev X m' t δ 𝔪
+    obtain ⟨hex, hsurj, hcong, hadd⟩ := _root_.GlobalTheory.Poinc.Sep.Labels.yy_hom g n F W Z i X₁ z₁ act V ev X m' t δ 𝔪
+    have hint := _root_.GlobalTheory.Poinc.Sep.mem_HH_iff_yy_zero g n F W Z i X₁ z₁ act x₀ hdiv V ev X m' t δ 𝔪
     have hY0 : 𝔪.YY 0 0 := (hint 0).1 (AddSubgroup.zero_mem _)
     have hneg : ∀ a mu, 𝔪.YY a mu → 𝔪.YY (-a) (-mu) := by
       intro a mu ha

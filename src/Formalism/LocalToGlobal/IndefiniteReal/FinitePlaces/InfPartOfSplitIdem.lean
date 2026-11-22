@@ -1,9 +1,9 @@
 module
 
-public import Formalism.LocalToGlobal.IndefiniteReal.DatumVec
-public import Formalism.LocalToGlobal.IndefiniteReal.FinitePlaces.PlaceS
+public import Formalism.LocalToGlobal.IndefiniteReal.Bundle0016
+public import Formalism.LocalToGlobal.IndefiniteReal.FinitePlaces.Bundle0002
 public import Formalism.LocalToGlobal.IndefiniteReal.SubgroupCharExtensionOneApply
-public import Formalism.LocalToGlobal.BesselHermitianTheta.LemmasWeil
+public import Formalism.LocalToGlobal.BesselHermitianTheta.Bundle0003
 
 @[expose] public section
 

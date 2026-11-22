@@ -1,10 +1,10 @@
 module
 
-public import Development.WeilBound.ThetaLifts.LocalTheory.ConeShifts.EvFinIdemSelf
+public import Development.WeilBound.ThetaLifts.LocalTheory.ConeShifts.Bundle0001
 public import Development.WeilBound.ThetaLifts.LocalTheory.ArchimedeanBumps.ArchSlice
 public import Development.WeilBound.ThetaLifts.CartanFactorisation.TensOfEval
 public import Development.WeilBound.ThetaLifts.LeviDeterminants.MixedModels.PureSt
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdelicHeisenbergActsByLocalSchrodinger
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1592
 
 @[expose] public section
 

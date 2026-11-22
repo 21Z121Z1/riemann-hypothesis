@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Divisors.DivisorSupportCondition
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0007
 public import Development.AbelianVarietyTheory.Definitions.Divisors.IndEtOfForallFinset
-public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.ReductionUniformizerPoint
+public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.Bundle0001
 
 @[expose] public section
 

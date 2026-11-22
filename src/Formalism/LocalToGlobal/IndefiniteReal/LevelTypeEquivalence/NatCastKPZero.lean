@@ -1,7 +1,7 @@
 module
 
-public import Formalism.LocalToGlobal.IndefiniteReal.LevelTypeEquivalence.LevelA
-public import Formalism.LocalToGlobal.IndefiniteReal.LevelTypeEquivalence.BaseSt
+public import Formalism.LocalToGlobal.IndefiniteReal.LevelTypeEquivalence.Bundle0009
+public import Formalism.LocalToGlobal.IndefiniteReal.LevelTypeEquivalence.Bundle0001
 
 @[expose] public section
 

@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.Jets.BasicLiftAll
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutFpmDecay
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0274
 public import Formalism.HermitianCurvature.HermitianCurvatureProofs.SlicesFiniteRegularityBuilt
 
 @[expose] public section

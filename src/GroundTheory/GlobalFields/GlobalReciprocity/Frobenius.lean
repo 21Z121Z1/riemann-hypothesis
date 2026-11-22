@@ -5,7 +5,7 @@ public import GroundTheory.GlobalFields.NormResidueSymbol.FunctorialLocal
 public import GroundTheory.GlobalFields.NormResidueSymbol.RangeIdeleNormLeKerIdeleSymbol
 public import GroundTheory.GlobalFields.CompletionAtPlace.Inertia
 public import GroundTheory.LocalFields.MaximalUnramifiedIntegers
-public import GroundTheory.LocalFields.TameExtension
+public import GroundTheory.LocalFields.Bundle0012
 public import GroundTheory.LocalFields.LocalArtinTransport
 public import GroundTheory.LocalFields.LocalArtinMap
 public import GroundTheory.LocalFields.ExistsUnitFiltrationUnitsLeRangeNormUnits

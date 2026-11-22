@@ -1,6 +1,6 @@
 module
 
-public import Development.AutomorphicSpectrum.Proofs.GlobalProofs.IsSmoothVec
+public import Development.AutomorphicSpectrum.Proofs.GlobalProofs.Bundle0031
 public import CompanionTheory.HarishChandraModules.KFiniteAnalyticVectors.AdmissibleSmoothVectors.AdmissibleOfIwasawa
 
 @[expose] public section

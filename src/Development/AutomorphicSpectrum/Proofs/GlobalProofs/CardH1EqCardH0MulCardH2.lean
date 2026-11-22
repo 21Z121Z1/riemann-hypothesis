@@ -3,7 +3,7 @@ module
 public import Mathlib
 public import ReciprocityTheory.Hypotheses.GalCoh
 public import ReciprocityTheory.NeutralLocalFields.LocalFieldComparison.TransportA
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.DecompositionGroupEquivLocalGaloisGroup
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0685
 public import Development.WeilBound.CoreStatements.EulerCharacteristicCounts.GcohTopEuler
 
 @[expose] public section

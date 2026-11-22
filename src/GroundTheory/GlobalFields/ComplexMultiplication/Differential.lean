@@ -3,7 +3,7 @@ module
 public import Mathlib
 public import GroundTheory.ArithmeticGeometry.AbelianVarieties.IsogenyPoints
 public import GroundTheory.ArithmeticGeometry.AbelianVarieties.KernelCard
-public import GroundTheory.ArithmeticGeometry.SchemeCohomology.KaehlerPlace
+public import GroundTheory.ArithmeticGeometry.SchemeCohomology.Bundle0004
 
 @[expose] public section
 

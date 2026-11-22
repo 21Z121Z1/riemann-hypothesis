@@ -2,7 +2,7 @@ module
 
 public import Development.WeilBound.CoreStatements.PublishedTheorems.GlobalEulerCharacteristic.GaloisCohomologyRatios.Places
 public import GroundTheory.ProfiniteCohomology.GlobalEulerCharacteristic.MemShaSubmoduleCohomologyAddEquivOfEquivIff
-public import GroundTheory.ProfiniteCohomology.LocalEulerCharacteristic.CoprimeRegular
+public import GroundTheory.ProfiniteCohomology.LocalEulerCharacteristic.Bundle0001
 
 @[expose] public section
 

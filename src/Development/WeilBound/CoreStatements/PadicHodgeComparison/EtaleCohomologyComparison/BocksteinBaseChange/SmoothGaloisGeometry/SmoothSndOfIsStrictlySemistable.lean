@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.IsStrictlySemistableAlt
-public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.IsStrictlySemistableModel
+public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.Bundle0002
+public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.Bundle0003
 
 @[expose] public section
 

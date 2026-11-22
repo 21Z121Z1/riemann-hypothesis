@@ -1,7 +1,7 @@
 module
 
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.HeckeAlgebras.UpOperatorEigenvalues.WdCharpoly
-public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.HeckeMap
+public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0025
 
 @[expose] public section
 

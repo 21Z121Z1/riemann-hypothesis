@@ -1,7 +1,7 @@
 module
 
 public import Development.WeilBound.RepresentationTheoryGL.UnitaryDualProof.CompactOrbits.NilpotentOrbits.OrbitIntegrals.CentralizerRepresentatives.CbExistsChainOfGen
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsChainsOfRange
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0006
 
 @[expose] public section
 

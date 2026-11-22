@@ -1,8 +1,8 @@
 module
 
 public import CompanionTheory.AutomorphicTheory.ProductFormulaTheory.GrothendieckRingPolynomial.ProdList
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.MultiProdCompCongr
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ParabolicInductionTwoBlocksEmptyProductLeftStatement
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0193
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0214
 
 @[expose] public section
 

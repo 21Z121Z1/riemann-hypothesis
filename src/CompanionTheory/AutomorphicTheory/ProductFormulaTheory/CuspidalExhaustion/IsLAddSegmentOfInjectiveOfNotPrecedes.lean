@@ -2,7 +2,7 @@ module
 
 public import CompanionTheory.AutomorphicTheory.ProductFormulaTheory.CuspidalExhaustion.CuspEmbP
 public import Mathlib
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IsOrderedFormSnoc
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0539
 
 @[expose] public section
 

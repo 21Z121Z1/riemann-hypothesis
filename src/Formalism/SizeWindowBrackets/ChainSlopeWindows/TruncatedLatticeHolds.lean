@@ -1,6 +1,6 @@
 module
 
-public import Formalism.SizeWindowBrackets.LcvBaseChange
+public import Formalism.SizeWindowBrackets.Bundle0004
 public import Formalism.SizeWindowBrackets.ChainSlopeWindows.ExistsNsmulMem
 public import Formalism.HermitianLattices.HermitianLatticesProofs.IndexBasic
 

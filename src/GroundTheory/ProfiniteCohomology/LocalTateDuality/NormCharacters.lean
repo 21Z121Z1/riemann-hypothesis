@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import GroundTheory.LocalFields.NormCorrespondence
+public import GroundTheory.LocalFields.Bundle0016
 public import GroundTheory.LocalFields.Existence
-public import GroundTheory.LocalFields.ExistsUnitFiltrationUnitsLeAndRangePowLe
+public import GroundTheory.LocalFields.Bundle0003
 public import GroundTheory.ProfiniteCohomology.PoincareDuality.Torsion
 
 @[expose] public section

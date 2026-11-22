@@ -2,9 +2,9 @@ module
 
 public import Mathlib
 public import Development.AutomorphicSpectrum.Definitions.DivisibilityTowers.BundleChernComparison
-public import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.StatementsFlagIndependence
-public import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.PTwinPairNumJoinLeft
-public import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.FlagFramePointDimensionStatement
+public import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.Bundle0017
+public import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.Bundle0064
+public import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.Bundle0020
 
 @[expose] public section
 

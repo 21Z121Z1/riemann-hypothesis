@@ -2,10 +2,9 @@ module
 
 public import Mathlib
 public import Development.AutomorphicArithmetic.RepresentationRank.RepOfRank
-public import Development.AutomorphicArithmetic.CommutativeAlgebra.ExistsClopRepPullback
-public import Development.AutomorphicArithmetic.CommutativeAlgebra.ExistsClopRepOfIsSplitOfRank
-public import Development.AutomorphicArithmetic.CommutativeAlgebra.ClopRepUnique
-public import Development.AutomorphicArithmetic.CommutativeAlgebra.IsFiniteOfIsPullbackFpqc
+public import Development.AutomorphicArithmetic.CommutativeAlgebra.Bundle0047
+public import Development.AutomorphicArithmetic.CommutativeAlgebra.Bundle0049
+public import Development.AutomorphicArithmetic.CommutativeAlgebra.Bundle0041
 public import Development.AbelianVarietyTheory.Proofs.HomogeneousIdeals.IsIsoIffBijectiveOverAlgClosed
 
 @[expose] public section

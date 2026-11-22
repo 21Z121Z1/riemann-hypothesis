@@ -1,8 +1,7 @@
 module
 
 public import Mathlib
-public import CompanionTheory.AutomorphicTheory.BesselWaveGrids.InterlacingGrids.PairOKOfInterlace
-public import CompanionTheory.AutomorphicTheory.BesselWaveGrids.InterlacingGrids.CloudProd
+public import CompanionTheory.AutomorphicTheory.BesselWaveGrids.InterlacingGrids.Bundle0001
 public import CompanionTheory.AutomorphicTheory.BesselWaveGrids.InterlacingGrids.CloudPair
 
 @[expose] public section

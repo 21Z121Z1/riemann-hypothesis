@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Divisors.SpecializesGenericImage
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0066
 public import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsMonoFamNontrivial
 
 @[expose] public section

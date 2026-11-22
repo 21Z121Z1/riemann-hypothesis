@@ -3,8 +3,8 @@ module
 public import Mathlib
 public import GroundTheory.GlobalFields.ComplexMultiplication.MainTheoremAssembly
 public import GroundTheory.GlobalFields.ComplexMultiplication.MainTheoremModels
-public import GroundTheory.GlobalFields.ComplexMultiplication.MainTheoremFields
-public import GroundTheory.GlobalFields.ComplexMultiplication.BadPrimesFinite
+public import GroundTheory.GlobalFields.ComplexMultiplication.Bundle0018
+public import GroundTheory.GlobalFields.ComplexMultiplication.Bundle0003
 
 @[expose] public section
 

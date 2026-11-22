@@ -3,20 +3,20 @@ module
 public import Mathlib
 public import Formalism.LocalRingCardinality.RhoDetPrimeEqMuTildeMulChiPow
 public import Formalism.SharpRestriction.LevelLetterCocycles.LocalSituation
-public import Development.AbelianVarietyTheory.Definitions.Foundations.HTBasis
-public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.ExpStar
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.TorsionBoundOfWeightHypStatement
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SesLatticeTrivialQuotientStatement
+public import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0010
+public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0008
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0694
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0494
 public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ContinuousFixingSubgroupEquiv
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CyclotomicCharacterPadicBasicProperties
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsBasisOfSubmodule
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Cocycle
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsCocTmulOne
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ContractEquivariant
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsExpStarZeroNear
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CoboundaryBcrisOfDualExponentialZeroStatement
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.PowSmulMemHfDOfRestriction
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.MemLayerIff
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0128
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0250
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0267
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0237
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0247
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0478
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0503
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0242
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0259
 public import Development.AbelianVarietyTheory.CrystallinePeriods.RingIface
 
 @[expose] public section
@@ -191,7 +191,7 @@ theorem scalar_step (D : Formalism.BasicNotions.D7) (h2 : adm2 D) (h4 : Archimed
       convert this using 1
       simp only [hu, map_add (f := _), map_mul, map_pow, map_natCast, hι]
       ring⟩
-  obtain ⟨x, hx⟩ := GlobalTheory.T.coboundary_bcris_of_dualExponential_zero D h2 h4 l K s hs e z' hz'
+  obtain ⟨x, hx⟩ := _root_.GlobalTheory.KerExpCrys.cob_cris_of_expStar_zero D h2 h4 l K s hs e z' hz'
   refine ⟨z', x, hz'.1, hx, fun σ hσ => ?_⟩
   have h1 : z' σ - (l : ℚ_[l]) ^ (N + (e + 2) * s + padicValNat l e + e / (l - 1) + 1 +
         (s + padicValNat l (e + 1))) * c σ =

@@ -3,7 +3,7 @@ module
 public import Mathlib
 public import Formalism.LocalToGlobal.IndefiniteReal.ScalarOnPartsFull
 public import Formalism.LocalToGlobal.IndefiniteReal.LocalNewformFunction
-public import Formalism.SatakeDualWeyl.StatementG
+public import Formalism.SatakeDualWeyl.Bundle0002
 
 @[expose] public section
 

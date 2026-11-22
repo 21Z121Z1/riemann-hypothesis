@@ -1,7 +1,7 @@
 module
 
 public import Formalism.LocalToGlobal.IndefiniteReal.SquareIntegrableTransfer
-public import Formalism.LocalToGlobal.IndefiniteReal.LevelTypeEquivalence.UnimodGA
+public import Formalism.LocalToGlobal.IndefiniteReal.LevelTypeEquivalence.Bundle0006
 
 @[expose] public section
 

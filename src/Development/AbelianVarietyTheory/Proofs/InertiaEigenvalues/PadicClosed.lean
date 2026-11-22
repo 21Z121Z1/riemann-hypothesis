@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Formalism.SharpRestriction.LevelLetterCocycles.DataNLoc
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.MatrixFrobeniusSubOneBijectiveModSubring
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0258
 
 @[expose] public section
 

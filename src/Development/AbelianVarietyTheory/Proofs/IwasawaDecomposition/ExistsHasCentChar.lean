@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.IsUnitaryOfCharIff
-public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.QdetTopThreeOrders
+public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.Bundle0007
+public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0019
 
 @[expose] public section
 

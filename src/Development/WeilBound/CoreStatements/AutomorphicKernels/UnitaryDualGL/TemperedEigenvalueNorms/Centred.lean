@@ -1,13 +1,13 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.StandardCosocleGL
+public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.Bundle0008
 public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsEquivProdIrrTw
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsIrreducibleSubquotient
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.UnitarisableSegmentTwistPrecedesAddOneLe
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.LanglandsQuotientOfSpehTypeProductIsL
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.TemperedRepTemperedParameter
-public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Langlands
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0147
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0642
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0633
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0153
+public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0025
 
 @[expose] public section
 

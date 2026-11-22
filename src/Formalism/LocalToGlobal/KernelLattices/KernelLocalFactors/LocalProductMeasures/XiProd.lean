@@ -1,10 +1,10 @@
 module
 
 public import Mathlib
-public import Formalism.LocalToGlobal.KernelLattices.MuProd
+public import Formalism.LocalToGlobal.KernelLattices.Bundle0003
 public import Formalism.LocalToGlobal.KernelLattices.KernelLocalFactors.ThDistC
 public import Formalism.LocalToGlobal.GroupLattices.LevelGatherings.ComplSmulMapENe
-public import Formalism.LocalToGlobal.Divisibility.TuplesLemmas
+public import Formalism.LocalToGlobal.Divisibility.Bundle0002
 
 @[expose] public section
 

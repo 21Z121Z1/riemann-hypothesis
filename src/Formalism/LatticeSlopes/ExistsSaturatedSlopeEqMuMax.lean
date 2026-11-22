@@ -1,19 +1,11 @@
 module
 
-public import Formalism.LatticeSlopes.LatticeSlopesProofs.CovolEqGram
-public import Formalism.LatticeSlopes.LatticeSlopesProofs.CovolPos
-public import Formalism.LatticeSlopes.LatticeSlopesProofs.CovolEqCovolume
-public import Formalism.LatticeSlopes.LatticeSlopesProofs.GramDetLe
-public import Formalism.LatticeSlopes.LatticeSlopesProofs.SlopesBdd
-public import Formalism.LatticeSlopes.LatticeSlopesProofs.SlopeLeMuMaxOf
-public import Formalism.LatticeSlopes.LatticeSlopesProofs.SlopeInequality
+public import Formalism.LatticeSlopes.LatticeSlopesProofs.Bundle0001
+public import Formalism.LatticeSlopes.LatticeSlopesProofs.Bundle0002
+public import Formalism.LatticeSlopes.LatticeSlopesProofs.Bundle0003
 public import Formalism.LatticeSlopes.LatticeSlopesProofs.DegQuot
-public import Formalism.LatticeSlopes.LatticeSlopesProofs.SaturationProperties
-public import Formalism.LatticeSlopes.LatticeSlopesProofs.ShortVector
+public import Formalism.LatticeSlopes.LatticeSlopesProofs.Bundle0004
 public import Formalism.LatticeSlopes.LatticeSlopesProofs.FiniteSaturated
-public import Formalism.LatticeSlopes.LatticeSlopesProofs.MuMaxAttained
-public import Formalism.LatticeSlopes.LatticeSlopesProofs.MuMaxLeMin
-public import Formalism.LatticeSlopes.LatticeSlopesProofs.OrthSum
 
 @[expose] public section
 

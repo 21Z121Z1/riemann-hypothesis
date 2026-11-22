@@ -1,16 +1,18 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ResV
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsKodairaSpencerAbelianLocusChartRing
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsKodairaSpencerAffineOpenAbelianPullback
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TangentBasisMovesAlongSemiAbelianTripleMap
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SemiAbelianTripleMapIsOpenImmersionOpensRange
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TangentTranslateLiftsSemiAbelianTripleMap
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ReductionEqBasePoint
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ChartPullbackLineBundleTransitionEqAppLE
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UniformisedTripleAbelianLocusProperRelAmple
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CechCocycleEqCoboundaryAddLogDerivativesAffineStatement
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2868
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle3080
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle3075
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1933
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1934
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1932
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1896
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2875
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle3052
+public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.DenseInterior
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2412
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TranslateUnique
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EqZeroOfForallField
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.ChartPullbacks.CubePullbacks.CubePull
 
@@ -254,7 +256,7 @@ theorem exists_dlog_add_coboundary_affine : ∀ (E : Type) [Field E] [NumberFiel
       rw [hg, ← Category.assoc, GlobalTheory.TransLift.spMap_comp'']
     rw [hwb, GlobalTheory.LogKSBal.valR_chart]
     simp [valR, TrivSqZeroExt.algebraMap_eq_inl]
-  obtain ⟨θ, h, hid⟩ := GlobalTheory.T.cechCocycle_eq_coboundary_add_logDerivatives_affine E H _ t' hP hA hK U' n v hvt hvb δ (fun a => ⟨fun O _ => (hδF a).1 O le_top,
+  obtain ⟨θ, h, hid⟩ := _root_.GlobalTheory.CechH1Span.exists_dlog_add_coboundary E H _ t' hP hA hK U' n v hvt hvb δ (fun a => ⟨fun O _ => (hδF a).1 O le_top,
     fun O _ => (hδF a).2.1 O le_top, fun O O' hO _ => (hδF a).2.2 O O' hO le_top⟩) hF2 hF3 J W' (fun i => k (j i))
     hW'aff hW'cov hW'U hj' z' hz'
   have hWim : ∀ i, mm.φ ''ᵁ W' i = W i := fun i => by

@@ -1,18 +1,12 @@
 module
 
 public import Formalism.GradedWeylDivisibility.DualWeylDominanceOf
-public import Formalism.GradedWeylDivisibility.FockSpaceTableaux.HWLine
-public import Formalism.GradedWeylDivisibility.FockSpaceTableaux.HWLineTall
-public import Formalism.GradedWeylDivisibility.FockSpaceTableaux.FockQPos
-public import Formalism.GradedWeylDivisibility.FockSpaceTableaux.FockQBilin
+public import Formalism.GradedWeylDivisibility.FockSpaceTableaux.Bundle0011
+public import Formalism.GradedWeylDivisibility.FockSpaceTableaux.Bundle0008
 public import Formalism.GradedWeylDivisibility.FockSpaceTableaux.FockQRowDivAdj
-public import Formalism.GradedWeylDivisibility.FockSpaceTableaux.RowDivClosedGraded
-public import Formalism.GradedWeylDivisibility.FockSpaceTableaux.HWInClosed
-public import Formalism.GradedWeylDivisibility.StatementB
-public import Formalism.GradedWeylDivisibility.FockSpaceTableaux.LHwinLemmas
-public import Formalism.GradedWeylDivisibility.FockSpaceTableaux.ClosedEqNabla
-public import Formalism.GradedWeylDivisibility.FockSpaceTableaux.WeylEqNablaQ
-public import Formalism.GradedWeylDivisibility.FockSpaceTableaux.WeylRationalOf
+public import Formalism.GradedWeylDivisibility.Bundle0001
+public import Formalism.GradedWeylDivisibility.FockSpaceTableaux.Bundle0006
+public import Formalism.GradedWeylDivisibility.FockSpaceTableaux.Bundle0010
 
 @[expose] public section
 

@@ -1,16 +1,16 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.HasBareNormDisc
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.Bundle0012
 public import Development.AutomorphicSpectrum.PublishedTheorems.Geometry₂.GagaSections
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.BlowupProjections.BlowupProjStatement
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.UniformisationConclusion
 public import Development.AutomorphicSpectrum.Statements.GeometryStatements.FlatDegree
 public import Formalism.LocalToGlobal.ProjectiveLattices.CompHt
-public import Development.AbelianVarietyTheory.Definitions.Divisors.HtValOnSubset
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0049
 public import Development.AbelianVarietyTheory.Definitions.Foundations.NotFlatExistsOfIsEmpty
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.FramePointVectors
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.IsDerivAt0CompLinMap
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0102
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0201
 public import Development.WeilBound.CoreStatements.HomogeneousNonvanishing.LeadMinorSmulOne
 
 @[expose] public section

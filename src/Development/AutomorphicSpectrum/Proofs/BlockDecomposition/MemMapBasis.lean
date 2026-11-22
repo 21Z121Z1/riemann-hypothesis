@@ -1,18 +1,17 @@
 module
 
 public import Mathlib
-public import Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.ZariskiEtaleLifting.MapUSharp
+public import Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.ZariskiEtaleLifting.Bundle0004
 public import Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.AcrisKummerUnits.ValuationOfValuationModSquare
 public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CoordMem
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SubMemSpanOfEtale
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SubSubSmulEqZeroOfSmulEqZero
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExtendedDividedPowers
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0235
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0231
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0230
 public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.UZeroApplySelf
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.NatCastIsUnit
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsLiftToThickening
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.PeriodRingBaseChangeFromUniversalStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.EpsilonCyclotomicElementPropertiesStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.RootExtensionLiftStatement
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0233
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0239
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0242
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0265
 
 @[expose] public section
 
@@ -251,7 +250,7 @@ theorem main : ∀ {l : ℕ} [Fact l.Prime] {O : Type} [CommRing O] {F : Fn O} {
   classical
   obtain ⟨X⟩ := GlobalTheory.CompanionTheory.RootAdjoin.nonempty_rootExt l Fact.out 𝓛.D 𝓛.t
   obtain ⟨e₀, hbij, hal, hr⟩ := GlobalTheory.T.root_extension_lift 𝒯 k n 𝓛 δ hδ hp hn X (θ.app (SingleObj.star _)) hn0 h1
-  obtain ⟨-, -, -, -, hfil, -, -⟩ := GlobalTheory.T.period_ring_base_change_from_universal 𝒯.A n
+  obtain ⟨-, -, -, -, hfil, -, -⟩ := _root_.GlobalTheory.CompanionTheory.AcrMod.acr_modp 𝒯.A n
   choose mm cc hb hnd using X.mono
   let χ : Gam d → X.ι → Acris l := fun g a =>
     if h : a = X.a₀ then 1 else ∏ j, ε.qk (mm a h) ^ (Multiplicative.toAdd g j * cc a h j)

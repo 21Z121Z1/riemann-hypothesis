@@ -4,11 +4,11 @@ public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.FlagPairDefinitePartLattice
 public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.ChartGen
 public import Development.AbelianVarietyTheory.PublishedTheorems.DiscreteSeriesUnitary₂.MaxMass
-public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.NormalFormDualOrthogonalLast
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.LatticeQuotientGensAndIntermediateCount
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.IsLocalizedModuleSubtype
+public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.Bundle0004
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0071
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0096
 public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.LeOfLatMod
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.IdxSupRight
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0099
 public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.HermFramePairIdealKillsDiscriminantModules
 
 @[expose] public section

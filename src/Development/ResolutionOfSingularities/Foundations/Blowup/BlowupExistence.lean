@@ -2,8 +2,8 @@ module
 
 public import Mathlib
 public import Development.ResolutionOfSingularities.Foundations.Blowup.AffineBlowup
-public import Development.ResolutionOfSingularities.Foundations.Blowup.AffineBlowupUniversal
-public import Development.ResolutionOfSingularities.Foundations.Blowup.BlowupBasic
+public import Development.ResolutionOfSingularities.Foundations.Blowup.Bundle0002
+public import Development.ResolutionOfSingularities.Foundations.Blowup.Bundle0001
 public import Development.ResolutionOfSingularities.Foundations.Blowup.AffineBlowupCartier
 public import Development.ResolutionOfSingularities.Foundations.Blowup.BlowupOpenCover
 public import Development.ResolutionOfSingularities.Foundations.Schemes.IdealSheafData

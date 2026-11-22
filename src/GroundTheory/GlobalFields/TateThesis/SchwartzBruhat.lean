@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import GroundTheory.GlobalFields.TateThesis.SchwartzBruhatFinite
-public import GroundTheory.GlobalFields.TateThesis.AdeleScaling
+public import GroundTheory.GlobalFields.TateThesis.Bundle0006
 
 @[expose] public section
 

@@ -1,7 +1,7 @@
 module
 
-public import ReciprocityTheory.AnalyticForms.PlurisubharmonicFunctions.LeviOneEqLaplacianThm
-public import ReciprocityTheory.AnalyticForms.PlurisubharmonicFunctions.LogInt
+public import ReciprocityTheory.AnalyticForms.PlurisubharmonicFunctions.Bundle0004
+public import ReciprocityTheory.AnalyticForms.PlurisubharmonicFunctions.Bundle0002
 
 @[expose] public section
 

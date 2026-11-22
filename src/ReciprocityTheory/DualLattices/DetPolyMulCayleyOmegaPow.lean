@@ -1,6 +1,6 @@
 module
 
-public import ReciprocityTheory.DualLattices.FischerAdjointStatement
+public import ReciprocityTheory.DualLattices.Bundle0001
 
 @[expose] public section
 

@@ -1,7 +1,7 @@
 module
 
 public import Formalism.SharpRestriction.LevelLetterCocycles.MembershipCriterionOfLevelZero
-public import Formalism.SharpRestriction.LevelLetterCocycles.QuotientImageDivisibility.MemOfExp
+public import Formalism.SharpRestriction.LevelLetterCocycles.QuotientImageDivisibility.Bundle0010
 
 @[expose] public section
 

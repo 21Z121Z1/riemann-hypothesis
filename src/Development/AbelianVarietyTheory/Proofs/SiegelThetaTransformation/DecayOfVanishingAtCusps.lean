@@ -1,15 +1,14 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.SpanningFamilies.IsHeatZero
+public import Development.AbelianVarietyTheory.Definitions.SpanningFamilies.Bundle0001
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.SquareIntegrability.GCauchyStatement
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArakelovVolumes.UpperBounds.ExhaustStatementPfA
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArakelovVolumes.UpperBounds.Bundle0002
 public import Development.AbelianVarietyTheory.Proofs.CovolumeBounds.StarInvMulVecDotProductMulVecInvMulVec
-public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.NormDetDenomLeRankOne
-public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.ExistsFourierExpansionHolomorphicTubeStatement
-public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.ExistsIntegralBasisHermitianMatricesDualStatement
-public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.TracePairingGeDetImPowHermitianHalfSpaceStatement
-public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.SummableExpNegTraceTotallyPositiveHermitianStatement
+public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.Bundle0016
+public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.ExistsFourierExpansionHolomorphicTube
+public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.ExistsIntegralBasisHermitianMatricesDual
+public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.Bundle0017
 
 @[expose] public section
 
@@ -242,7 +241,7 @@ theorem exists_fourier (hΨ : IsType Ψ) (N R : ℕ) (hR : 0 < R) :
           f (fun τ => Z τ + ((R : E) • y).map τ.1) = f Z) →
         ∃ a : (Fin m → ℤ) → ℂ, (∀ ν, IsCoef X f (T ν) (a ν)) ∧
           ∀ Z ∈ Hn Ψ N, HasSum (fun ν => a ν * cexp (2 * π * I * pr (T ν) Z)) (f Z) := by
-  obtain ⟨m, β, T, c, hc, h1, hd, hZ⟩ := GlobalTheory.T.exists_integral_basis_hermitian_matrices_dual E Ψ hΨ N R hR
+  obtain ⟨m, β, T, c, hc, h1, hd, hZ⟩ := _root_.GlobalTheory.SW.HermLat.exists_basis E Ψ hΨ N R hR
   choose hβ hT hD y hy hyc hβy using h1
   set Φ : (Fin m → ℂ) → CM Ψ N N := fun z τ => ∑ j, z j • (β j).map τ.1 with hΦ
   set co : CM Ψ N N → Fin m → ℂ := fun Z j => pr (T j) Z with hco
@@ -336,7 +335,7 @@ theorem exists_fourier (hΨ : IsType Ψ) (N R : ℕ) (hR : 0 < R) :
       simpa using hy τ
     · exact ((hx τ).smul (by exact_mod_cast h0)).add_posSemidef
         ((hy τ).posSemidef.smul (by exact_mod_cast ht))
-  obtain ⟨a, ha1, ha2⟩ := GlobalTheory.T.exists_fourier_expansion_holomorphic_tube (Fin m) Ω (fun z => f (Φ z)) hopen hconv
+  obtain ⟨a, ha1, ha2⟩ := _root_.GlobalTheory.exists_fourier_expansion_tube (Fin m) Ω (fun z => f (Φ z)) hopen hconv
     (hf.comp hΦd.differentiableOn fun z hz => (hmem z).1 hz) (by
       intro z hz k
       have := hper _ (hIntM y k hy) (hccT y k hyc) _ ((hmem z).1 hz)
@@ -397,7 +396,7 @@ theorem GlobalTheory.SW.decay_of_vanishing_at_cusps : ∀ (E : Type) [Field E] [
   intro E _ _ _ Ψ hΨ N R δ s hN hR hδ hs
   obtain ⟨m, c, T, X, hc, hinj, hT, hXc, hX, hF⟩ := exists_fourier hΨ N R hR
   obtain ⟨k, hk, hk'⟩ := GlobalTheory.T.trace_pairing_ge_detIm_pow_hermitianHalfSpace E Ψ hΨ N c hN hc
-  have hsum := GlobalTheory.T.summable_exp_neg_trace_totallyPositive_hermitian E Ψ hΨ N c (π * δ / 2) hc (by positivity)
+  have hsum := _root_.GlobalTheory.SW.summable_exp_neg_trace E Ψ hΨ N c (π * δ / 2) hc (by positivity)
   set S : Set (Fin m → ℤ) := {ν | ∀ τ : Ψ, ((T ν).map τ.1).PosSemidef} with hS
   have hsum' : Summable fun ν : S =>
       Real.exp (-(π * δ / 2 * ∑ τ : Ψ, ((T ν.1).map τ.1).trace.re)) := by

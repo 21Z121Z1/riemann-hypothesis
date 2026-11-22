@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Formalism.PeriodIntegrals.LocalEnd
+public import Formalism.PeriodIntegrals.Bundle0004
 
 @[expose] public section
 

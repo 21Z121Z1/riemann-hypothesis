@@ -1,10 +1,10 @@
 module
 
 public import CompanionTheory.AutomorphicTheory.JacobiDiagonalBounds.NFModel
-public import CompanionTheory.AutomorphicTheory.NumberFieldModels.ModelPt
+public import CompanionTheory.AutomorphicTheory.NumberFieldModels.Bundle0001
 public import Formalism.HermitianCurvature.HermitianCurvatureProofs.MatrixUnitZeroZeroEqInsert
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutJDHatBdd
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutNFTopDomCore
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0052
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0283
 public import Formalism.HermitianCurvature.HermitianCurvatureProofs.LevelsOfBuiltSetting
 
 @[expose] public section

@@ -1,23 +1,25 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.ConjTupRefl
-public import Development.AbelianVarietyTheory.Definitions.Divisors.GenReads
+public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0025
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0034
 public import Development.AbelianVarietyTheory.Definitions.ThetaValues.ExistsRootNotMem
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.OneMapOfOfExtends
-public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.ThExprUniqOfChartIndep2
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.GaussGLZero
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.OmegaQEqGaussMulFlatTransform
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1656
+public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0007
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0251
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0792
 public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.LiftVectorEqUnitMulDilatedFlatDatum
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FlatVectorEqUnitMulCentralTranslateLiftVector
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0942
 public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ConjFourierCoefficientsConjugateTuples
 public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FrobeniusActionIntegrality
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.OneAddSumEqProd
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0827
 public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.WeilOperatorIdempotentSumVacuumNormalisedSum
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ScalarDilationElementSupportDetPullback
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WeilRepApplyEqSmulOfHalfIndicatorBaseStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TameKernelTypePlaceThetaVectorLatticeFixedStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SumHeisenbergTranslatesBaseVectorEqCardSmulStatement
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1887
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1893
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1855
+public import Formalism.LocalToGlobal.IndefiniteReal.FinitePlaces.Bundle0003
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1889
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1888
 
 @[expose] public section
 
@@ -155,7 +157,7 @@ theorem lift_eq_gauss_model_flat : ∀ (D : D7) (G : Type) [Group G] [Fintype G]
         zero_mul, if_neg]
       rintro ⟨hh, hint⟩
       exact hx ⟨(hiv x hh).2 hint, hh⟩
-  have hθ := GlobalTheory.T.thetaLiftVector_isThetaFunction_twoStepModel D G Pl0 T0 A Ks R F hC hQG i t eg eQ fg heg heQ hfg
+  have hθ := _root_.GlobalTheory.ConjTwist.isThetaAt_vP_twoStep D G Pl0 T0 A Ks R F hC hQG i t eg eQ fg heg heQ hfg
   have hvP := LiftFlatModel.thetaAt_sum hθ (fun u hu' => by rw [LiftFlatModel.cA_cA]; exact (hRs u hu').1) hB
   have hΨ : ∀ x : WO (Vc D i) (Wc D i), Gc * (if IsHalf eQ (x.map fun w => incA D (ϖ : D.host.E) * w) ∧
         IsIntM (frMapO (Vc D i) (Wc D i) (R.βV i) (R.βW i) (x.map fun w => incA D (ϖ : D.host.E) * w)) then
@@ -192,7 +194,7 @@ theorem om_model_eq_dilate : ∀ (D : D7) (G : Type) [Group G] [Fintype G] (Pl0 
     ring
   have hK := GlobalTheory.OnCmp.kerDat_tuple (i := i) hC.lev hC.thP t
   have heQ' : IsIdemSum eQ (R.Q t) := by rw [hQt]; exact heQ
-  obtain ⟨hSV, hSW, hθ, hfix⟩ := GlobalTheory.T.tameKernel_typePlaceThetaVector_latticeFixed D G Pl0 T0 A Ks R F hC hQG i hV _ _ _ _ _ _ hK ⟨t, subset_rfl⟩ eg eQ fg heg heQ' hfg
+  obtain ⟨hSV, hSW, hθ, hfix⟩ := _root_.GlobalTheory.KerTypeVec.typeVec_fixed D G Pl0 T0 A Ks R F hC hQG i hV _ _ _ _ _ _ hK ⟨t, subset_rfl⟩ eg eQ fg heg heQ' hfg
   have hW := hC.thP.ωP i t
   have hN : (∏ PP ∈ R.Q t₀, Nat.card (kP PP)) ≠ 0 := Finset.prod_ne_zero_iff.2 fun PP _ => Nat.card_pos.ne'
   have hNQ : ∀ PP ∈ R.Q t₀, ((∏ PP ∈ R.Q t₀, Nat.card (kP PP) : ℕ) : 𝓞 D.host.E) ∈ PP.asIdeal := by
@@ -206,7 +208,7 @@ theorem om_model_eq_dilate : ∀ (D : D7) (G : Type) [Group G] [Fintype G] (Pl0 
     GlobalTheory.DilScalar.scalar_dil_facts D (Vc D i) (Wc D i) (R.ΛV i) (R.ΛW i) (R.Q t₀) eQ heQ _ hN hNQ ϖ hϖE hϖ z hz'
   have hom := GlobalTheory.SumHecke.om_eq_sum_idemSum D R.ψ (Vc D i) (Wc D i) _ _ _ hW (R.ΛV i) (R.ΛW i) hSV hSW (R.Q t₀) eQ heQ z x hsupp hx
     Rr hR1 hR2 hR3 fg hθ hfix
-  have hsum := GlobalTheory.T.sum_heisenbergTranslates_baseVector_eq_card_smul D R.ψ hW.std (Vc D i) (Wc D i) (R.ΛV i) (R.ΛW i) hSV hSW (R.Q t₀) eQ heQ z hlat Rr hR1 hR2 hR3 fg Tm hTm
+  have hsum := _root_.GlobalTheory.HeisTranslSum.sum_heisO_base_eq D R.ψ hW.std (Vc D i) (Wc D i) (R.ΛV i) (R.ΛW i) hSV hSW (R.Q t₀) eQ heQ z hlat Rr hR1 hR2 hR3 fg Tm hTm
   rw [← hcard]
   have hvac : R.ωP i t (z, 1) fg = ((((Lift.chrTh (R.toLevCh.mu t) R.eta ((i : ℕ) + 1)).2 x : Circle) : ℂ)⁻¹ *
       ((Real.sqrt (Rr.card : ℝ) : ℝ) : ℂ)) •
@@ -220,7 +222,7 @@ theorem om_model_eq_dilate : ∀ (D : D7) (G : Type) [Group G] [Fintype G] (Pl0 
     by_cases h0 : ((Real.sqrt (Rr.card : ℝ) : ℝ) : ℂ) = 0
     · rw [h0]; simp
     · field_simp
-  have h := GlobalTheory.T.weilRep_apply_eq_smul_of_halfIndicator_base D R.ψ (Vc D i) (Wc D i) _ _ _ hW (R.ΛV i) (R.ΛW i) hSV hSW (R.Q t₀) eQ heQ fg hθ hfix Tm hTm (z, 1) _ hsb
+  have h := _root_.GlobalTheory.PullModelLaw.om_apply_eq_smul_pull D R.ψ (Vc D i) (Wc D i) _ _ _ hW (R.ΛV i) (R.ΛW i) hSV hSW (R.Q t₀) eQ heQ fg hθ hfix Tm hTm (z, 1) _ hsb
     hvac Ψ hΨ
   rw [h, hpull Ψ hΨ.1]
 

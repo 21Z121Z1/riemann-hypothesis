@@ -1,7 +1,7 @@
 module
 
-public import Formalism.LocalToGlobal.IndefiniteReal.FinitePlaces.LatOAnnIffOf
-public import Formalism.LocalToGlobal.IndefiniteReal.FinitePlaces.GlobalDual
+public import Formalism.LocalToGlobal.IndefiniteReal.FinitePlaces.Bundle0018
+public import Formalism.LocalToGlobal.IndefiniteReal.FinitePlaces.Bundle0017
 public import Formalism.LocalToGlobal.IndefiniteReal.FinitePlaces.LatSDa
 public import Formalism.LocalToGlobal.IndefiniteReal.FinitePlaces.PlaceDual
 

@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Formalism.GL3MeanSquares.LegendreCoefficient
-public import Formalism.FormalGroupWitt.FormalGroupWittProofs.IntegralSubstVector
+public import Formalism.GL3MeanSquares.Bundle0003
+public import Formalism.FormalGroupWitt.FormalGroupWittProofs.Bundle0001
 
 @[expose] public section
 

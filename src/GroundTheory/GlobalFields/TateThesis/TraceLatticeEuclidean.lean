@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import GroundTheory.GlobalFields.TateThesis.TraceDualLattice
+public import GroundTheory.GlobalFields.TateThesis.Bundle0005
 public import GroundTheory.GlobalFields.TateThesis.LatticePoissonBasic
 
 @[expose] public section

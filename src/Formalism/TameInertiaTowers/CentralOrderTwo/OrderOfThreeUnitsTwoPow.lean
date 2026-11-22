@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Formalism.TameInertiaTowers.StatementGroup
-public import Formalism.TameInertiaTowers.CentralOrderTwo.TwoAdic
+public import Formalism.TameInertiaTowers.CentralOrderTwo.Bundle0001
 
 @[expose] public section
 

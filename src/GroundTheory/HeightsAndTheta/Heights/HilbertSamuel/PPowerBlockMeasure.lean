@@ -1,10 +1,10 @@
 module
 
 public import Mathlib
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsPowerBlockMeasure
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsPowerBlockPointNorm
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsPowerBlockOldPartSurj
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsPrimeZariskiDense
+public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0069
+public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0077
+public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0073
+public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0008
 
 @[expose] public section
 

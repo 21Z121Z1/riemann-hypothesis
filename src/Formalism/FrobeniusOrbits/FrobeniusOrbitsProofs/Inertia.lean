@@ -3,7 +3,7 @@ module
 public import Mathlib
 public import Formalism.FrobeniusOrbits.Statement
 public import Formalism.FrobeniusOrbits.FrobeniusOrbitsProofs.Galois
-public import Formalism.FrobeniusOrbits.FrobeniusOrbitsProofs.FrobMulInertia
+public import Formalism.FrobeniusOrbits.FrobeniusOrbitsProofs.Bundle0001
 public import Formalism.TameInertiaTowers.TowerFieldFoundations
 
 @[expose] public section

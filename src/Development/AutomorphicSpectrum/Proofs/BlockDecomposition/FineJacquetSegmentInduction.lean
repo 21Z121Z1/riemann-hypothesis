@@ -2,20 +2,20 @@ module
 
 public import Mathlib
 public import Development.WeilBound.CoreStatements.TemperedRepresentationTheory.ZelevinskyJacquet.FineJacquetModules.SegDefs
-public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.IrreducibleAdmissibleGL
-public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.SegmentRepresentation
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SegmentTermInjectiveStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.JacquetMultiplicityCuspidalProductStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.JacquetMultiplicitySubquotientLeStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IrreducibleSubquotientCuspidalPermutationStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsSegmentRepresentationStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SegmentRepSplitIntertwinerStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.StrictAntiOfTwoExceptionsStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.DerivativeCuspidalPairLengthStatement
-public import Development.AutomorphicSpectrum.Proofs.GlobalProofs.JacquetModuleFiniteLengthStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.JacquetMultiplicityPos
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IrreducibleSubquotientJacquetSegmentStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.EquivOfMultiplicityOneUniqueFactorStatement
+public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.Bundle0002
+public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.Bundle0004
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0338
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0645
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0350
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0634
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0656
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0617
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0021
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0655
+public import Development.AutomorphicSpectrum.Proofs.GlobalProofs.JacquetModuleFiniteLength
+public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.Bundle0001
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0539
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0336
 
 @[expose] public section
 
@@ -91,7 +91,7 @@ theorem word_eq_decreasing {X : Type*} (l : ℕ) (hl : 3 ≤ l) (t : ℕ → X)
     have h4 := jb.2
     rw [hwf, hwf]
     omega
-  have hanti : StrictAnti w := GlobalTheory.T.strict_anti_of_two_exceptions l hl w hw i i' hwi hwi' h1 h2
+  have hanti : StrictAnti w := _root_.GlobalTheory.CompanionTheory.Segments.shufcomb l hl w hw i i' hwi hwi' h1 h2
   let φ : Fin l → Fin l := fun a => Fin.rev ⟨w a, hw a⟩
   have hφ : StrictMono φ := fun a b hab => Fin.rev_lt_rev.2 (Fin.lt_def.2 (hanti hab))
   have h3 : φ a = a := le_antisymm hφ.apply_le hφ.le_apply
@@ -139,15 +139,15 @@ theorem dec_segHigh (Δ : Segment k) (a : ℕ) (h1 : a < Δ.len) (j : Fin (segHi
 
 theorem exists_class (hA : GlobalTheory.Published.IrreducibleAdmissibleGL) (Γ : Segment k) :
     ∃ u : IrrGL (k := k), u.1 = Γ.deg ∧ IsLSeg Γ u.rep := by
-  obtain ⟨τ, hd, hc⟩ := GlobalTheory.T.exists_segment_representation hA Γ
+  obtain ⟨τ, hd, hc⟩ := _root_.GlobalTheory.CompanionTheory.SegExists.exists_isLSeg hA Γ
   exact ⟨IrrGL.of τ.ρ τ.smooth τ.irr, rfl, hd, hc.of_equiv (IrrGL.equivOf _ _ _) (Representation.Equiv.refl _)⟩
 
 theorem fine_tensor (hA : GlobalTheory.Published.IrreducibleAdmissibleGL) (Γ : Segment k) (hF : FineJac Γ) (u : IrrGL (k := k))
     (hu : IsLSeg Γ u.rep) (hs : ∑ i, (dec Γ i).1 = u.1) :
     Nonempty ((jac (stdBlocks (fun i => (dec Γ i).1) hs) u.rep).Equiv (piTensor fun i => (dec Γ i).rep)) := by
   have hJ : HasFiniteLength (jac (stdBlocks (fun i => (dec Γ i).1) hs) u.rep) :=
-    GlobalTheory.T.jacquet_module_finite_length k _ _ _ _ _ _ u.2.rep.smooth (hasFiniteLength_of_isIrreducible u.2.rep.irr)
-  exact GlobalTheory.T.equiv_of_multiplicity_one_unique_factor _ _ (GlobalTheory.CompanionTheory.FrobJm.piTensor_rep_isIrreducible hA (dec Γ)) hJ ((hF u.rep hu).1 hs)
+    _root_.GlobalTheory.CompanionTheory.JacquetBridge.jacquetFiniteLength k _ _ _ _ _ _ u.2.rep.smooth (hasFiniteLength_of_isIrreducible u.2.rep.irr)
+  exact _root_.GlobalTheory.CompanionTheory.FineStep.nonempty_equiv_of_jhMult_eq_one _ _ (GlobalTheory.CompanionTheory.FrobJm.piTensor_rep_isIrreducible hA (dec Γ)) hJ ((hF u.rep hu).1 hs)
     fun X _ _ ρ hi hq => GlobalTheory.T.irreducible_subquotient_jacquet_segment hA Γ hF u hu hs X ρ hi hq
 
 theorem shuffle_step (hA : GlobalTheory.Published.IrreducibleAdmissibleGL) (Δ : Segment k) {N : ℕ} {V : Type} [AddCommGroup V]
@@ -209,7 +209,7 @@ theorem fineJac_step (hA : GlobalTheory.Published.IrreducibleAdmissibleGL) (Δ :
       rfl
     have hinj : ∀ a b, a < Δ.len → b < Δ.len →
         Δ.first.nu ((a : ℕ) : ℂ) = Δ.first.nu ((b : ℕ) : ℂ) → a = b := fun a b ha hb hab =>
-      congrArg Fin.val (GlobalTheory.T.segment_term_injective hA Δ (a₁ := ⟨a, ha⟩) (a₂ := ⟨b, hb⟩) hab)
+      congrArg Fin.val (_root_.GlobalTheory.CompanionTheory.SegTerm.term_injective hA Δ (a₁ := ⟨a, ha⟩) (a₂ := ⟨b, hb⟩) hab)
     have z₁ : 0 < (segLow Δ 1 one_pos).len := one_pos
     have z₂ : 0 < (segHigh Δ (Δ.len - 1) hl2).len := by
       show 0 < Δ.len - (Δ.len - 1)
@@ -243,7 +243,7 @@ theorem fineJac_step (hA : GlobalTheory.Published.IrreducibleAdmissibleGL) (Δ :
       show _ = Δ.first.nu (((Fin.rev (Fin.cast rfl a) : Fin Δ.len) : ℕ) : ℂ)
       rw [e₂]
   refine ⟨fun hd => ?_, shape⟩
-  have hinj := GlobalTheory.T.segment_term_injective hA Δ
+  have hinj := _root_.GlobalTheory.CompanionTheory.SegTerm.term_injective hA Δ
   have hset : {e : Fin Δ.len ≃ Fin Δ.len | ∀ a, dec Δ a = Δ.term (e a)} = {Fin.revPerm} := by
     ext e
     simp only [Set.mem_setOf_eq, Set.mem_singleton_iff]

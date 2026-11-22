@@ -4,8 +4,8 @@ public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.Divisors.IsProjOverWeierstrass
 public import Development.AbelianVarietyTheory.Proofs.HomogeneousIdeals.HomLieEquivScalarTmul
 public import Development.AbelianVarietyTheory.Statements.FundamentalDomains.ExistsIsAddFundamentalDomain
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FinrankIntEqFinrankRingOfIntegersMulStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsTorsionFreeRingOfIntegersOfIsTorsionFreeIntStatement
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0052
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0070
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.UniformisationConclusion
 public import Development.AbelianVarietyTheory.Definitions.Degenerations.AdmissibleBaseOfCompleteDvr
 
@@ -26,11 +26,11 @@ open GlobalTheory.Serre Matrix
 theorem finrank_int_eq (E : Type) [Field E] [NumberField E] (N : Type) [AddCommGroup N]
     [Module (𝓞 E) N] [Module.Free ℤ N] [Module.Finite ℤ N] :
     Module.finrank ℤ N = Module.finrank (𝓞 E) N * Module.finrank ℚ E :=
-  GlobalTheory.T.finrank_int_eq_finrank_ringOfIntegers_mul' E N
+  _root_.GlobalTheory.finrank_int_eq_finrank_ringOfIntegers_mul E N
 
 theorem isTorsionFree_of_int (E : Type) [Field E] [NumberField E] (N : Type) [AddCommGroup N]
     [Module (𝓞 E) N] [Module.IsTorsionFree ℤ N] : Module.IsTorsionFree (𝓞 E) N :=
-  GlobalTheory.T.isTorsionFree_ringOfIntegers_of_isTorsionFree_int' E N
+  _root_.GlobalTheory.isTorsionFree_ringOfIntegers_of_isTorsionFree_int E N
 
 variable {E : Type} [Field E] [NumberField E] {r : ℕ}
 

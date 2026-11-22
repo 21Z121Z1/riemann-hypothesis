@@ -1,8 +1,8 @@
 module
 
-public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.DiscreteSeriesExistence.SmoothDefs
+public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.DiscreteSeriesExistence.Bundle0003
 public import Formalism.RealPlaceAnalysis.RealPlaceTaylor.VectorComplexifiedDerivativeCommutator
-public import Formalism.RealPlaceAnalysis.RealPlaceTaylor.LieOperatorConjHolds
+public import Formalism.RealPlaceAnalysis.RealPlaceTaylor.Bundle0008
 
 @[expose] public section
 

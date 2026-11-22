@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.KeyFormula.DegProd
-public import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.DiscrEqJacobianOfIntegralPointsStatement
+public import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.Bundle0009
 
 @[expose] public section
 

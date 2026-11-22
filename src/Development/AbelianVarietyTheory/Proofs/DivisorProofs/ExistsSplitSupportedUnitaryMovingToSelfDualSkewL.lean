@@ -1,10 +1,10 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CosetVecEq
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1491
 public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.WeilOperatorRationalTranslateMemThetaFunctions
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsIdeleGenerator
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsHalfIdem
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0237
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0249
 
 @[expose] public section
 

@@ -2,8 +2,8 @@ module
 
 public import Mathlib
 public import Formalism.SharpRestriction.Divisibility.SchurIrreducible
-public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.SiegelWeilAnisotropicUnitary
-public import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.SphericalVolumeLift
+public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.Bundle0011
+public import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.Bundle0022
 
 @[expose] public section
 

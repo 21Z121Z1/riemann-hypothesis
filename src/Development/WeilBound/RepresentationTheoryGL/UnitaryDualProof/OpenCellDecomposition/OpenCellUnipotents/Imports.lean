@@ -2,8 +2,8 @@ module
 
 public import Mathlib
 public import Development.WeilBound.CoreStatements.TemperedRepresentationTheory.MirabolicDerivatives.LeibnizDerivatives.GenericProdIff
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.OpenFns
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.OpenCellUnipotentUniquenessClosedStatement
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0331
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0470
 public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SmoothVectorCompactUnipotentFixer
 
 @[expose] public section

@@ -1,11 +1,11 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.ArchBetween
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.IsArithVarOfBlockAlgebraic
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.Bundle0012
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0078
 public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ValuationCoordsComplexPoint
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsValuationSubringExtension
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PPullFormsGeneric
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0003
+public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0082
 
 @[expose] public section
 

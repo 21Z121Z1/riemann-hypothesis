@@ -5,7 +5,7 @@ public import Development.AutomorphicSpectrum.Statements.GeometryStatements.IsPo
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DUnitMemRangeOfMemKerIdeal
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConvEqOneOfForallPairing
 public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.DerivationDivisibleOfCocomm
-public import ReciprocityTheory.DualLattices.BlockOneMulMulBlockOne
+public import ReciprocityTheory.DualLattices.Bundle0013
 
 @[expose] public section
 

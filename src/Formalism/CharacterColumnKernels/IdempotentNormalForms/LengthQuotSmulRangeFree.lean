@@ -1,7 +1,7 @@
 module
 
 public import Formalism.CharacterColumnKernels.StatementN
-public import Formalism.CharacterColumnKernels.IdempotentNormalForms.LenCokerOfDetNeZero
+public import Formalism.CharacterColumnKernels.IdempotentNormalForms.Bundle0002
 
 @[expose] public section
 

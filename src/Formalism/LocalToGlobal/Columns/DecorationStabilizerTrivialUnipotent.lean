@@ -4,7 +4,7 @@ public import Mathlib
 public import Formalism.GL3MeanSquares.RationalMatrixPrimeOrderBound
 public import Formalism.GL3MeanSquares.HookFormulaTorsion.LengthQuotientBoundGeneral
 public import Formalism.HermitianLattices.StatementLat
-public import Formalism.HermitianLattices.HermitianLatticesProofs.AutFinite
+public import Formalism.HermitianLattices.HermitianLatticesProofs.Bundle0004
 public import Formalism.LocalToGlobal.Columns.AbelianHostFieldConditions
 public import Formalism.LocalToGlobal.Columns.StdLatUnimodular
 public import Formalism.LocalToGlobal.Columns.GenericUnipotentCharacter

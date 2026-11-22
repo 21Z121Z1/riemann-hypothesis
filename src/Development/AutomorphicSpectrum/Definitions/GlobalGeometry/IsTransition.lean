@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsConstMul
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.Bundle0010
 public import Development.AbelianVarietyTheory.Statements.PrincipalLattices.FiniteDimensionalBase
 
 @[expose] public section

@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Formalism.SharpRestriction.CuspSpanNormBounds.DstarEq
+public import Formalism.SharpRestriction.CuspSpanNormBounds.Bundle0002
 public import Formalism.SharpRestriction.CuspSpanNormBounds.IsPrimitiveSub
 public import Formalism.LocalToGlobal.SiegelLatticeTheory.HaarTransversals.ProjRows
 public import Formalism.LocalToGlobal.SiegelLatticeTheory.CokernelGLCounts.Measures

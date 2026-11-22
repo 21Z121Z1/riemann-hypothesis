@@ -3,7 +3,7 @@ module
 public import Mathlib
 public import Formalism.LocalToGlobal.KernelLattices.KernelLocalFactors.IsAdmissibleFlagPairOfUnitriangularLeftAutomorph
 public import Formalism.LocalToGlobal.GlobalTheory.GL3.Statement
-public import Formalism.FrobeniusOrbits.FrobeniusOrbitsProofs.CardTrivialFirstComponent
+public import Formalism.FrobeniusOrbits.FrobeniusOrbitsProofs.Bundle0002
 public import Formalism.SharpRestriction.RamificationFrobenius.TotientGaloisClasses.FrameFacts
 public import Formalism.LocalToGlobal.GlobalTheory.GL3.PLinkThU
 public import Formalism.LocalToGlobal.GlobalTheory.GL3.PThIndep

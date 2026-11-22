@@ -2,10 +2,8 @@ module
 
 public import Mathlib
 public import Development.AutomorphicArithmetic.ThetaCorrespondence.RealBands.IsBand
-public import Development.AutomorphicArithmetic.ThetaCorrespondence.RealBands.ConvEig
-public import Development.AutomorphicArithmetic.ThetaCorrespondence.RealBands.ConvAssoc
-public import Development.AutomorphicArithmetic.ThetaCorrespondence.RealBands.ExistsCompactTail
-public import Development.AutomorphicArithmetic.ThetaCorrespondence.RealBands.OpLeHalf
+public import Development.AutomorphicArithmetic.ThetaCorrespondence.RealBands.Bundle0001
+public import Development.AutomorphicArithmetic.ThetaCorrespondence.RealBands.Bundle0002
 
 @[expose] public section
 

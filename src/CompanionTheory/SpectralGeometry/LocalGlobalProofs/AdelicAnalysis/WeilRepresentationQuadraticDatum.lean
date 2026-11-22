@@ -2,11 +2,10 @@ module
 
 public import Mathlib
 public import CompanionTheory.SpectralGeometry.CountingDefinitions.AdelicEulerProducts.CountData
-public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.FiniteAdeleTopologyStatement
-public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.StandardAdelicCharacterStatement
-public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.AdelicHaarMeasureLinearChangeStatement
-public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.AdelesSelfDualStatement
-public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.AnnihilatorOfAnnihilatorLeStatement
+public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.Bundle0045
+public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.Bundle0049
+public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.AdelesSelfDual
+public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.AnnihilatorOfAnnihilatorLe
 
 @[expose] public section
 
@@ -153,11 +152,11 @@ lemma pi_Gs (lf : Measure (A F)) (hlf : lf.IsAddHaarMeasure) (h1 : lf (Oh F) = 1
     {g : Matrix ι ι F} (hg : g.det ≠ 0) {S : Set (A F)} (hS : MeasurableSet S) :
     (Measure.pi fun _ : ι => lf) (Gs g S) =
       ENNReal.ofReal (|((Algebra.norm ℚ g.det : ℚ) : ℝ)|⁻¹) * lf S ^ Fintype.card ι := by
-  obtain ⟨hlc, hsc, -⟩ := GlobalTheory.T.mem_Oh_iff_and_nat_mul_properties F
+  obtain ⟨hlc, hsc, -⟩ := _root_.GlobalTheory.CompanionTheory.SW.Core.AfTop.finiteAdele_topology F
   haveI := hlc
   haveI := hsc
   haveI : SigmaFinite lf := inferInstance
-  have h := (GlobalTheory.T.adelic_haar_measure_linear_change F lf hlf h1 ι).1 g hg (Set.univ.pi fun _ => S)
+  have h := (_root_.GlobalTheory.CompanionTheory.SW.Core.PiScale.pi_scale F lf hlf h1 ι).1 g hg (Set.univ.pi fun _ => S)
     (MeasurableSet.univ_pi fun _ => hS)
   rw [Gs, h, Measure.pi_pi]
   simp
@@ -169,7 +168,7 @@ lemma exists_LL_subset {U : Set (ι → A F)} (hU : U ∈ 𝓝 (0 : ι → A F))
   rw [nhds_pi, Filter.mem_pi] at hU
   obtain ⟨I, -, t, ht, hsub⟩ := hU
   have hU' : (⋂ i, t i) ∈ 𝓝 (0 : A F) := Filter.iInter_mem.2 fun i => ht i
-  obtain ⟨-, -, -, -, -, -, -, hnb, -, -⟩ := GlobalTheory.T.mem_Oh_iff_and_nat_mul_properties F
+  obtain ⟨-, -, -, -, -, -, -, hnb, -, -⟩ := _root_.GlobalTheory.CompanionTheory.SW.Core.AfTop.finiteAdele_topology F
   obtain ⟨N, hN, hNU⟩ := hnb _ hU'
   refine ⟨N, hN, fun x hx => hsub fun i _ => ?_⟩
   have hN' : (N : F) ≠ 0 := Nat.cast_ne_zero.2 hN.ne'
@@ -184,7 +183,7 @@ lemma exists_subset_LL {K : Set (ι → A F)} (hK : IsCompact K) :
     ∃ N : ℕ, 0 < N ∧ K ⊆ (LL ι ((N : F)⁻¹) : Set (ι → A F)) := by
   have hK' : IsCompact (⋃ i, (fun x : ι → A F => x i) '' K) :=
     isCompact_iUnion fun i => hK.image (continuous_apply i)
-  obtain ⟨-, -, -, -, -, -, -, -, hcp, -⟩ := GlobalTheory.T.mem_Oh_iff_and_nat_mul_properties F
+  obtain ⟨-, -, -, -, -, -, -, -, hcp, -⟩ := _root_.GlobalTheory.CompanionTheory.SW.Core.AfTop.finiteAdele_topology F
   obtain ⟨N, hN, hNK⟩ := hcp _ hK'
   refine ⟨N, hN, fun x hx i => ?_⟩
   rw [inv_inv, map_natCast]
@@ -218,7 +217,7 @@ lemma mass_one (lf : Measure (A F)) (hlf : lf.IsAddHaarMeasure) (h1 : lf (Oh F) 
     rw [Matrix.det_mul, Matrix.det_transpose]
     exact mul_ne_zero hg hB
   have hOm : MeasurableSet (Oh F) := by
-    obtain ⟨-, -, -, -, hOo, -⟩ := GlobalTheory.T.mem_Oh_iff_and_nat_mul_properties F
+    obtain ⟨-, -, -, -, hOo, -⟩ := _root_.GlobalTheory.CompanionTheory.SW.Core.AfTop.finiteAdele_topology F
     exact hOo.measurableSet
   have hlP : lf P = ENNReal.ofReal ((kap F * kap F)⁻¹) := by
     rw [← mul_assoc, ← ENNReal.ofReal_mul hk.le] at hP
@@ -302,13 +301,13 @@ theorem naQuad : ∀ (F : Type) [Field F] [NumberField F] [MeasurableSpace (A F)
     ∀ ψ : AddChar (A F) ℂ, IsStdChar F ψ → ∀ (ι : Type) [Fintype ι] [DecidableEq ι]
     (B : Matrix ι ι F), B.IsSymm → B.det ≠ 0 → NAQuad ψ (hf F) (Bf B) (muF B lf) := by
   intro F _ _ _ _ lf hlf h1 ψ hψ ι _ _ B hS hB
-  obtain ⟨hlc, hsc, ht2, hOc, hOo, -⟩ := GlobalTheory.T.mem_Oh_iff_and_nat_mul_properties F
+  obtain ⟨hlc, hsc, ht2, hOc, hOo, -⟩ := _root_.GlobalTheory.CompanionTheory.SW.Core.AfTop.finiteAdele_topology F
   haveI := hlc
   haveI := hsc
   haveI := ht2
   haveI : SigmaFinite lf := inferInstance
   obtain ⟨hnorm, -, -⟩ := (GlobalTheory.T.standard_adelic_character F).2 ψ hψ
-  obtain ⟨-, -, -, -, -, -, -, -, -, -, -, -, hL⟩ := GlobalTheory.T.adeles_self_dual F lf hlf h1 ψ hψ
+  obtain ⟨-, -, -, -, -, -, -, -, -, -, -, -, hL⟩ := _root_.GlobalTheory.CompanionTheory.SW.Core.SelfDual.finiteAdeles_selfDual F lf hlf h1 ψ hψ
   have hO : IsCompact (perp (fun x y => ψ (x * y)) (Oh F)) ∧
       IsOpen (perp (fun x y => ψ (x * y)) (Oh F)) ∧
       perp (fun x y => ψ (x * y)) (perp (fun x y => ψ (x * y)) (Oh F)) ⊆ Oh F ∧
@@ -369,7 +368,7 @@ theorem naQuad : ∀ (F : Type) [Field F] [NumberField F] [MeasurableSpace (A F)
     have hM' : ((M : F)⁻¹) ≠ 0 := inv_ne_zero (Nat.cast_ne_zero.2 hM.ne')
     obtain ⟨-, h1o, h1c, -, h1p, h1m⟩ := good hN'
     obtain ⟨h2c, -, -, h2o, h2p, h2m⟩ := good hM'
-    exact GlobalTheory.T.annihilator_of_annihilator_le (ι → A F) (chiB ψ (Bf B)) (muF B lf) hhaar
+    exact _root_.GlobalTheory.CompanionTheory.SW.CofinalDual.selfDual_of_between (ι → A F) (chiB ψ (Bf B)) (muF B lf) hhaar
       hsym (fun _ _ => hnorm _) hadd (LL ι (N : F)) L (LL ι ((M : F)⁻¹))
       hNU hMK h1o h2c h1c h2o h1p h2p h1m h2m
 

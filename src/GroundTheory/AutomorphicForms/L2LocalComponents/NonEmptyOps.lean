@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import GroundTheory.AutomorphicForms.CuspidalDiscreteness.ExistsIsOpenForallCuspRepTFinOneEq
-public import GroundTheory.AutomorphicForms.CuspidalDiscreteness.SummandsArchConv
+public import GroundTheory.AutomorphicForms.CuspidalDiscreteness.Bundle0002
 public import GroundTheory.AutomorphicForms.L2LocalComponents.Summand
 public import GroundTheory.AutomorphicForms.L2LocalComponents.CenterCommute
 public import GroundTheory.AutomorphicForms.L2LocalComponents.ArchBump

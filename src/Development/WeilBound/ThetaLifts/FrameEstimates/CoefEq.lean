@@ -2,7 +2,7 @@ module
 
 public import Development.WeilBound.ThetaLifts.FrameEstimates.SquareIntegrableWeilRange
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WeilRepresentationPreservesSchwartz
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsHaarAdelicVectorsBoundsPureTensorsSlices
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1384
 
 @[expose] public section
 

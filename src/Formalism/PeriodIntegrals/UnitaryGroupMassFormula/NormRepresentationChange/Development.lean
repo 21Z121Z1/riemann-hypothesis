@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Formalism.PeriodIntegrals.PairValDefs
+public import Formalism.PeriodIntegrals.Bundle0025
 public import Formalism.PeriodIntegrals.NormRepChange
 public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.NormRepresentationChange.IsLoUniConjTranspose
 

@@ -1,7 +1,7 @@
 module
 
 public import Development.WeilBound.ThetaLifts.EigenvalueEndgame.UnipotentGroups.IsFrPlane
-public import Development.WeilBound.ThetaLifts.CartanFactorisation.IntegrableOnRight
+public import Development.WeilBound.ThetaLifts.CartanFactorisation.Bundle0001
 
 @[expose] public section
 

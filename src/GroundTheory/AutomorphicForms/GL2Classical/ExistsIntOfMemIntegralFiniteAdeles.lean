@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import GroundTheory.AutomorphicForms.StrongApproximationSLDoubleCoset
-public import GroundTheory.GlobalFields.IdeleGroups.Rational
+public import GroundTheory.GlobalFields.IdeleGroups.Bundle0002
 public import GroundTheory.GlobalFields.Adele.Discrete
 
 @[expose] public section

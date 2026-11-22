@@ -3,22 +3,23 @@ module
 public import Mathlib
 public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.BdryChart
 public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsFlatAnIffIsConstMul
-public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.LevelSectionsExactKernelLocusOpen
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.Bundle0005
 public import Development.AutomorphicSpectrum.Definitions.MetricPeriods.ClopenCondOnto
 public import Development.AbelianVarietyTheory.Definitions.Uniformization.PointEqOfSubsingleton
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.BlowupProjections.BlowupProjStatement
 public import Development.AutomorphicSpectrum.PublishedTheorems.Geometry₂.GagaSections
-public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsGenericFlag
-public import Formalism.LocalToGlobal.ProjectiveLattices.VAtVNeBot
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.Bundle0004
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0010
 public import Formalism.LocalToGlobal.ProjectiveLattices.RulInst
 public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.EigenLatticeVectorBundle
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LieOmegaLatticeVectorBundle
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0130
 public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsLieModel
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LieModelExistsUniqueAct
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.StableEig
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LieModelEigenvectorsActionStatement
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsStableEigenTangentsStatement
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.StableEigenAtComponentStalkStatement
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0019
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0063
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0096
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsTransition
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0134
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0139
 
 @[expose] public section
 
@@ -166,7 +167,7 @@ theorem isEigFrame_of_frames {X : Scheme.{0}} {G : Over X} [GrpObj G] [IsCommMon
     rw [← hj, ← hj, h]))
   have hjf : ∀ k, j (f k) = b k := fun k => pt_left_inj M (by rw [hj, hf]; exact (hb k).2.symm)
   have hjg : ∀ i, j (g i) = v i := fun i => pt_left_inj M (by rw [hj, hg]; exact (hv i).2.symm)
-  have hfr := ((GlobalTheory.T.lie_model_eigenvectors_action X T G y N My).2 Oe act ρ τ hρ).2
+  have hfr := ((_root_.GlobalTheory.CompanionTheory.Ar.Fl.Bridge.comb_eig_frame X T G y N My).2 Oe act ρ τ hρ).2
   obtain ⟨hul, hus⟩ := (hfr r _).1 (hu (fun k => My.pt (jy (f k))) fun k => by rw [hjy, hf])
   have hfb : (fun k => j (f k)) = b := funext hjf
   have hgv : (fun i => j (g i)) = v := funext hjg
@@ -246,8 +247,8 @@ theorem isEigFrame_value : ∀ (E : Type) [Field E] [NumberField E] [IsCMField E
   have hθ := comp_coeff_map Z hfr ⟨centre y, h⟩ κ hκ (Scheme.stalkClosedPointTo y).hom σ (by
     show (spMap (Scheme.stalkClosedPointTo y).hom ≫ Y.X.fromSpecStalk (centre y)) ≫ Y.s = _
     rw [hs, hy])
-  obtain ⟨r, e, he⟩ := GlobalTheory.T.exists_stable_eigen_tangents E H l c Y.X Y.t (Y.X.presheaf.stalk (centre y)) (Y.X.fromSpecStalk (centre y)) κ τ
-  obtain ⟨b, hb, hbf⟩ := GlobalTheory.T.stable_eigen_at_component_stalk E H D l Xo c U O β Y Z ⟨centre y, h⟩ κ τ r e hκ he
+  obtain ⟨r, e, he⟩ := _root_.GlobalTheory.CompanionTheory.Ar.LocFn.EigStalk.exists_stableEig E H l c Y.X Y.t (Y.X.presheaf.stalk (centre y)) (Y.X.fromSpecStalk (centre y)) κ τ
+  obtain ⟨b, hb, hbf⟩ := _root_.GlobalTheory.CompanionTheory.Ar.LocFn.frame_of_stableEig E H D l Xo c U O β Y Z ⟨centre y, h⟩ κ τ r e hκ he
   choose h' e' hE hwe using hw
   refine isEigFrame_of_frames Z.M ⟨centre y, h⟩ (Z.gen.inj _) (Scheme.stalkClosedPointTo y).hom y hs Y.t.act _ e e' b v w
     hb hE hwe hbf.1 hv.1 (hbf.2.symm.trans hv.2) fun u hu => ?_

@@ -1,15 +1,15 @@
 module
 
 public import Mathlib
-public import Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.ZariskiEtaleLifting.MapUSharp
+public import Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.ZariskiEtaleLifting.Bundle0004
 public import Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.AcrisKummerUnits.ValuationOfValuationModSquare
 public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsEtaleLiftOfSurjective
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsUniqueLiftOfNilpotent
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsEtaleRootExt
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0230
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0237
 public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.UZeroApplySelf
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CompletionComplete
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IsComplNonZeroDivisor
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.PfOfIsCompl
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0028
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0035
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0067
 
 @[expose] public section
 

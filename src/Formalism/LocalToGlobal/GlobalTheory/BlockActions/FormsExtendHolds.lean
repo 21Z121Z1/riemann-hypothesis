@@ -1,6 +1,6 @@
 module
 
-public import Formalism.LocalToGlobal.GlobalTheory.BlockActions.StabFunGen
+public import Formalism.LocalToGlobal.GlobalTheory.BlockActions.Bundle0005
 
 @[expose] public section
 

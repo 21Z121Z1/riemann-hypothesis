@@ -1,10 +1,10 @@
 module
 
 public import Mathlib
-public import Formalism.LocalToGlobal.BesselHermitianTheta.TiedBessel
+public import Formalism.LocalToGlobal.BesselHermitianTheta.Bundle0003
 public import Development.AbelianVarietyTheory.BlockTheory.HeightDefect.BesselDatum
 public import Formalism.LocalToGlobal.BesselHermitianTheta.AllTied
-public import Formalism.SharpRestriction.CuspSpanNormBounds.CayleySignature
+public import Formalism.SharpRestriction.CuspSpanNormBounds.Bundle0006
 
 @[expose] public section
 

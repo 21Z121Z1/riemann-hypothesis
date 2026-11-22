@@ -1,13 +1,13 @@
 module
 
 public import Formalism.LocalToGlobal.GlobalTheory.SuppSat
-public import Formalism.SharpRestriction.InertJacobiLevels.TiesView
+public import Formalism.SharpRestriction.InertJacobiLevels.Bundle0004
 public import Formalism.SharpRestriction.Divisibility.LocalQuadraticParts
-public import Formalism.SharpRestriction.AdmissibleParameterJoins.GandSk
+public import Formalism.SharpRestriction.AdmissibleParameterJoins.Bundle0003
 public import Formalism.SharpRestriction.GlobalSchurBounds.GlobalRankLatticeProofs.GenericFramesLetters
 public import Formalism.SharpRestriction.GrowthBounds.SmallOrderPrimes
 public import Formalism.LocalRingCardinality.HostCls
-public import Development.AutomorphicArithmetic.OrbitLabellings.EvenAddOrderOfHPOfPowLe
+public import Development.AutomorphicArithmetic.OrbitLabellings.Bundle0002
 
 @[expose] public section
 

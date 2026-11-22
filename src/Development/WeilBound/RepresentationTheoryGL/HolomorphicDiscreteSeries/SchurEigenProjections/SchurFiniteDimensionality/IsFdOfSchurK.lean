@@ -1,10 +1,9 @@
 module
 
 public import Development.WeilBound.RepresentationTheoryGL.HolomorphicDiscreteSeries.SchurEigenProjections.BigProjP
-public import Development.WeilBound.CoreStatements.BranchingTraces.HilbertSchmidtTraces.IntegralGermIndependentOfSystem
-public import Development.WeilBound.CoreStatements.BranchingTraces.HilbertSchmidtTraces.UnitaryMatrixCoefficientDecay
+public import Development.WeilBound.CoreStatements.BranchingTraces.HilbertSchmidtTraces.Bundle0002
+public import Development.WeilBound.CoreStatements.BranchingTraces.HilbertSchmidtTraces.Bundle0003
 public import Development.WeilBound.CoreStatements.BranchingTraces.HilbertSchmidtTraces.Imports
-public import Development.WeilBound.CoreStatements.BranchingTraces.HilbertSchmidtTraces.ColSq
 
 @[expose] public section
 

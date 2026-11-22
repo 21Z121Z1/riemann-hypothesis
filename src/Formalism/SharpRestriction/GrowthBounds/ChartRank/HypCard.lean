@@ -1,6 +1,6 @@
 module
 
-public import Formalism.SharpRestriction.GrowthBounds.ChartComparison
+public import Formalism.SharpRestriction.GrowthBounds.Bundle0006
 
 @[expose] public section
 

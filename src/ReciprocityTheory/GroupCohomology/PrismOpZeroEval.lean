@@ -1,8 +1,7 @@
 module
 
-public import ReciprocityTheory.GroupCohomology.CupConnRightStatement
-public import ReciprocityTheory.GroupCohomology.HomogExistsStatement
-public import ReciprocityTheory.GroupCohomology.DEqZeroOfMemB
+public import ReciprocityTheory.GroupCohomology.Bundle0002
+public import ReciprocityTheory.GroupCohomology.Bundle0003
 
 @[expose] public section
 

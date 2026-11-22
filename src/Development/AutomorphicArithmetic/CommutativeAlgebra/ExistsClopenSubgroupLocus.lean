@@ -1,9 +1,9 @@
 module
 
 public import Development.AutomorphicArithmetic.SpecialMaps.QuotObjDefs
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.QuotGlobalHolds
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsPullbackKernelOfKernelPair
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsClopenTorsionKernelLocusStatement
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2309
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2800
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2353
 public import Development.AutomorphicArithmetic.Foundations.EtaleClopenDescent.ExistsMemUIdealIdempotentModPrimePow
 
 @[expose] public section

@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import ReciprocityTheory.SemistableReduction.TorsionNonvanishStatement
-public import Development.AbelianVarietyTheory.Proofs.HermitianTraceForms.Imports
+public import ReciprocityTheory.SemistableReduction.Bundle0002
+public import Development.AbelianVarietyTheory.Proofs.HermitianTraceForms.Bundle0002
 
 @[expose] public section
 

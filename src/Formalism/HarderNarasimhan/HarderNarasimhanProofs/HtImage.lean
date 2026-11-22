@@ -1,7 +1,7 @@
 module
 
 public import Formalism.HarderNarasimhan.StatementPl
-public import Formalism.HarderNarasimhan.DefsPl
+public import Formalism.HarderNarasimhan.Bundle0001
 public import Formalism.LatticeSlopes.ExistsSaturatedSlopeEqMuMax
 public import Formalism.HarderNarasimhan.HarderNarasimhanProofs.DiscreteSpanOfLinIndep
 public import Formalism.HarderNarasimhan.HarderNarasimhanProofs.PlaceSplit

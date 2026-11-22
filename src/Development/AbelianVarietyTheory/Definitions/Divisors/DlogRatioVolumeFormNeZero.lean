@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Divisors.CupPair
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0003
 public import Development.AbelianVarietyTheory.Definitions.Divisors.OneFormMapEqKaehlerDifferentialMap
 
 @[expose] public section

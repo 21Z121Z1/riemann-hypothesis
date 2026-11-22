@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import ReciprocityTheory.AnalyticForms.PlurisubharmonicFunctions.IsPshLocallyIntegrableStatement
+public import ReciprocityTheory.AnalyticForms.PlurisubharmonicFunctions.Bundle0001
 
 @[expose] public section
 

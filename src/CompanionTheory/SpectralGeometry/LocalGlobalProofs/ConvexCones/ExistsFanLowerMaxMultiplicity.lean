@@ -1,11 +1,14 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsStarSubdivisionLowersMaxCellMultiplicity
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.NotIsPrimZero
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0667
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0582
 public import CompanionTheory.SpectralGeometry.CountingDefinitions.VoronoiMeans.VorFunEvalEqFineMean
-public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.ConvexCones.MultipleCellsAmongPolyhedralFanStatement
-public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.ConvexCones.StarSubdivisionDropsMultCellsStatement
+public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.ConvexCones.Bundle0007
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0602
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.MultCellsAmong
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0665
+public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.ConvexCones.Bundle0017
 
 @[expose] public section
 
@@ -25,7 +28,7 @@ theorem exists_round_lt_maxMult : ∀ (O : Type) [CommRing O] [IsDedekindDomain 
   set M := (maxMult bar q φ).toNat with hMdef
   have hMe : maxMult bar q φ = M := (ENat.coe_toNat hfin.ne).symm
   have hM2 : 2 ≤ M := by rw [hMe] at h2; exact_mod_cast h2
-  obtain ⟨n, hn⟩ := GlobalTheory.T.multiple_cells_among_polyhedral_fan O bar hb q φ hP M
+  obtain ⟨n, hn⟩ := _root_.GlobalTheory.CompanionTheory.Ar.Fan.MultipleCells.multCellsAmong_of_isPolyFan O bar hb q φ hP M
   have key : ∀ (n : ℕ) (φ lab : InvFun O), IsPolyFan bar q φ → IsTwG w0 φ → IsTwG w0 lab →
       SimpLab bar q φ lab → maxMult bar q φ ≤ M → MultCellsAmong bar q φ M n →
       ∃ φ' lab' : InvFun O, IsPolyFan bar q φ' ∧ IsTwG w0 φ' ∧ IsTwG w0 lab' ∧ SimpLab bar q φ' lab' ∧
@@ -38,7 +41,7 @@ theorem exists_round_lt_maxMult : ∀ (O : Type) [CommRing O] [IsDedekindDomain 
     | succ n ih =>
       intro φ lab hP hT hL hS hle h0
       obtain ⟨φ₁, lab₁, hP₁, hT₁, hL₁, hS₁, hs₁, hle₁, h₁⟩ :=
-        GlobalTheory.T.star_subdivision_drops_mult_cells O bar w0 hb q φ lab hD hP hT hL hS M n hM2 hle h0
+        _root_.GlobalTheory.CompanionTheory.Ar.Fan.StarSubdivisionDropsCells.exists_star_drop_multCells O bar w0 hb q φ lab hD hP hT hL hS M n hM2 hle h0
       obtain ⟨φ', lab', hP', hT', hL', hS', hs', hlt⟩ := ih φ₁ lab₁ hP₁ hT₁ hL₁ hS₁ hle₁ h₁
       exact ⟨φ', lab', hP', hT', hL', hS', hs'.trans hs₁, hlt⟩
   obtain ⟨φ', lab', hP', hT', hL', hS', hs', hlt⟩ := key n φ lab hP hT hL hS hMe.le hn

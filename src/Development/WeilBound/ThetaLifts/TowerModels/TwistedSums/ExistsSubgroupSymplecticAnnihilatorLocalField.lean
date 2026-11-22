@@ -4,9 +4,9 @@ public import Mathlib
 public import Formalism.SharpRestriction.GlobalSchurBounds.StandardLattice
 public import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.WeilTensorModels
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ContinuousAtPlace
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.LcscAdelicUnitaryGroup
-public import Development.WeilBound.ThetaLifts.TowerModels.TwistedSums.IsLocallyConstantHeisenbergLatticeVacuumFunction
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsSplittingSplitOm
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0061
+public import Development.WeilBound.ThetaLifts.TowerModels.TwistedSums.Bundle0002
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0213
 
 @[expose] public section
 

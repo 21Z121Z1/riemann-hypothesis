@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.BlockTheory.ThetaLiftGeometry.PolynomialIntegralityJets
+public import Development.AbelianVarietyTheory.BlockTheory.ThetaLiftGeometry.Bundle0003
 public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.ExpTieAlg
-public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.ExistsNormSubEqOne
+public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0002
 
 @[expose] public section
 

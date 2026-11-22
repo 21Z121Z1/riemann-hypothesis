@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.BlockUpperOfGenericCharacter
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0001
 
 @[expose] public section
 

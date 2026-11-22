@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import GroundTheory.HeightsAndTheta.Heights.WeightedHomogeneous.StatementsIntDim
-public import GroundTheory.HeightsAndTheta.Heights.WeightedHomogeneous.IntDimBounds
+public import GroundTheory.HeightsAndTheta.Heights.WeightedHomogeneous.Bundle0001
+public import GroundTheory.HeightsAndTheta.Heights.WeightedHomogeneous.Bundle0005
 
 @[expose] public section
 

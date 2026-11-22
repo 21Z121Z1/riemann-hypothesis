@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Development.ResolutionOfSingularities.EmbeddedResolution.IteratedBlowups.BlowupSequenceRelations
-public import Development.ResolutionOfSingularities.EmbeddedResolution.EtaleCoordinates.AffineSpaceCoordinates
-public import Development.ResolutionOfSingularities.EmbeddedResolution.EtaleCoordinates.SmoothCoordinateCodimension
+public import Development.ResolutionOfSingularities.EmbeddedResolution.IteratedBlowups.Bundle0001
+public import Development.ResolutionOfSingularities.EmbeddedResolution.EtaleCoordinates.Bundle0001
+public import Development.ResolutionOfSingularities.EmbeddedResolution.EtaleCoordinates.Bundle0002
 public import Development.ResolutionOfSingularities.EmbeddedResolution.ResolutionDescent.EmbeddedResolutionRule
 
 @[expose] public section

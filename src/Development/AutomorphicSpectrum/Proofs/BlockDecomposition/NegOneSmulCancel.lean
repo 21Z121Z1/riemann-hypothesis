@@ -1,10 +1,10 @@
 module
 
 public import Mathlib
-public import Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.PerfectoidPullbacks.ConeSectionRestriction.CechDefs
+public import Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.PerfectoidPullbacks.ConeSectionRestriction.Bundle0004
 public import Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.CechPairings.TotPairing
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.DvMemOf
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ConeZigzagCompat
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0108
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0111
 
 @[expose] public section
 

@@ -2,9 +2,9 @@ module
 
 public import Development.AutomorphicArithmetic.Foundations.Convolution.GeneralizedMeasures.HeckeFinAlt
 public import Development.AutomorphicArithmetic.Foundations.Convolution.SphericalHeckeOperators.LocHeckeInert
-public import Development.AutomorphicArithmetic.Foundations.Convolution.IntegrableConvolution.LocHeckeSplit
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.TraceFormula.OrbitalIntegrals.BrMain
-public import Development.AutomorphicArithmetic.Foundations.Convolution.GeneralizedMeasures.PolyMem
+public import Development.AutomorphicArithmetic.Foundations.Convolution.IntegrableConvolution.Bundle0010
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.TraceFormula.OrbitalIntegrals.Bundle0001
+public import Development.AutomorphicArithmetic.Foundations.Convolution.GeneralizedMeasures.Bundle0001
 
 @[expose] public section
 

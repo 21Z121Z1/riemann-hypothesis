@@ -1,7 +1,7 @@
 module
 
-public import Formalism.HermitianCurvature.StatementE
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Herglotz
+public import Formalism.HermitianCurvature.Bundle0001
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0001
 
 @[expose] public section
 

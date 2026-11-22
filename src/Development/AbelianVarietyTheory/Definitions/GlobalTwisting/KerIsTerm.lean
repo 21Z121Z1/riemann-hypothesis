@@ -4,7 +4,7 @@ public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.PredMemGamRanks
 public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.XiAtPenultimateEqXiCpl1
 public import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.FormsStable
-public import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.BelowFiniteNonempty
+public import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.Bundle0004
 
 @[expose] public section
 

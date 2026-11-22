@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsSectionOfChg
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1878
 public import Formalism.LocalToGlobal.ProjectiveLattices.SatLeaves
 
 @[expose] public section

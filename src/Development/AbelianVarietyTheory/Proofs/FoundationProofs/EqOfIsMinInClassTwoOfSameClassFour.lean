@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import ReciprocityTheory.ReducedBases.LatDefs
+public import ReciprocityTheory.ReducedBases.Bundle0001
 public import Development.AbelianVarietyTheory.Definitions.ThetaMetrics.ExistsEventuallyNormRiemannThetaTermLe
 
 @[expose] public section

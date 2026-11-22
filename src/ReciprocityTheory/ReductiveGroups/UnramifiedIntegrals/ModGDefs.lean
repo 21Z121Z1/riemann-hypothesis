@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import ReciprocityTheory.ReductiveGroups.UnramifiedIntegrals.ModDefs
-public import ReciprocityTheory.NeutralLocalFields.HilbertClassField
+public import ReciprocityTheory.ReductiveGroups.UnramifiedIntegrals.Bundle0002
+public import ReciprocityTheory.NeutralLocalFields.Bundle0001
 
 @[expose] public section
 

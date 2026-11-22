@@ -1,6 +1,6 @@
 module
 
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.GreenbergWilesOfPoitouTate
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0517
 
 @[expose] public section
 

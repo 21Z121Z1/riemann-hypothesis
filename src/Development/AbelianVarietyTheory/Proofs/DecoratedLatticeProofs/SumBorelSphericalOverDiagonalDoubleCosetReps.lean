@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.IsCoType
+public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.Bundle0001
 public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.PowDvdOfHermMatEq
 public import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.SatakeMat
 public import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.SatakeComb

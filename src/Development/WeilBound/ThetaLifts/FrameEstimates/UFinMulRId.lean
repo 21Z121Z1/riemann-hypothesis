@@ -1,7 +1,7 @@
 module
 
 public import Development.WeilBound.ThetaLifts.FrameEstimates.SquareIntegrableWeilRange
-public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.IntegralFiniteAdeleCompactClosedMultiples
+public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.Bundle0058
 
 @[expose] public section
 

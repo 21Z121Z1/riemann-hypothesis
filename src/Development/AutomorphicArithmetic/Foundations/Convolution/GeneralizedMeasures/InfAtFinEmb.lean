@@ -2,12 +2,12 @@ module
 
 public import Development.AutomorphicArithmetic.Foundations.Convolution.GeneralizedMeasures.HeckeFinAlt
 public import Development.AutomorphicArithmetic.Foundations.Convolution.GeneralizedMeasures.RepOne
-public import Development.AutomorphicArithmetic.Foundations.Convolution.GeneralizedMeasures.TensF
+public import Development.AutomorphicArithmetic.Foundations.Convolution.GeneralizedMeasures.Bundle0004
 public import Development.AutomorphicArithmetic.Foundations.Convolution.GeneralizedMeasures.TensHt
-public import Development.AutomorphicArithmetic.Foundations.Convolution.GeneralizedMeasures.WordHt
-public import Development.AutomorphicArithmetic.Foundations.Convolution.GeneralizedMeasures.PolyMem
-public import Development.AutomorphicArithmetic.Foundations.Convolution.ConvolutionKernels.KernelTransforms.TensApply
-public import Development.AutomorphicArithmetic.Foundations.Convolution.ConvolutionKernels.KernelTransforms.LocEmb
+public import Development.AutomorphicArithmetic.Foundations.Convolution.GeneralizedMeasures.Bundle0003
+public import Development.AutomorphicArithmetic.Foundations.Convolution.GeneralizedMeasures.Bundle0001
+public import Development.AutomorphicArithmetic.Foundations.Convolution.ConvolutionKernels.KernelTransforms.Bundle0003
+public import Development.AutomorphicArithmetic.Foundations.Convolution.ConvolutionKernels.KernelTransforms.Bundle0002
 
 @[expose] public section
 

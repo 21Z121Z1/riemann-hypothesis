@@ -1,6 +1,6 @@
 module
 
-public import Formalism.SharpRestriction.GrowthBounds.TruncatedChains.PfTrunc
+public import Formalism.SharpRestriction.GrowthBounds.TruncatedChains.Bundle0001
 
 @[expose] public section
 

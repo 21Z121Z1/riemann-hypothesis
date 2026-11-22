@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Divisors.IsUnifAt
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0036
 public import Development.AbelianVarietyTheory.Definitions.Foundations.ExistsFinsetOfEventually
 
 @[expose] public section

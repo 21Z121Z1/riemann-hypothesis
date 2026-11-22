@@ -3,7 +3,7 @@ module
 public import Development.AutomorphicArithmetic.Foundations.IwahoriReduction.NormProducts.LUnH
 public import Development.AutomorphicArithmetic.Foundations.IwahoriReduction.NormProducts.ProdEqNorm
 public import Development.AutomorphicArithmetic.Foundations.IwahoriReduction.NormProducts.EvalSmulCong
-public import Development.AutomorphicArithmetic.Foundations.IwahoriReduction.NormProducts.CauchyFar
+public import Development.AutomorphicArithmetic.Foundations.IwahoriReduction.NormProducts.Bundle0002
 
 @[expose] public section
 

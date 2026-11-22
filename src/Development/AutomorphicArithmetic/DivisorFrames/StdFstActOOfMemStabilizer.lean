@@ -3,8 +3,8 @@ module
 public import Mathlib
 public import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.UnitCharTriangle
 public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.FirstStandardPairMemberHasThetaFunction
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.FinitePartMemLevelOfThetaDatumNeZero
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.DetIdlVal
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0507
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0466
 
 @[expose] public section
 

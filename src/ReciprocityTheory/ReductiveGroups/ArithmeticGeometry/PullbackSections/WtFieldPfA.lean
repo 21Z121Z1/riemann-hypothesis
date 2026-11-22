@@ -1,7 +1,7 @@
 module
 
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PullbackSections.BcField
-public import Formalism.LocalToGlobal.ProjectiveLattices.FrameProofs
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PullbackSections.Bundle0006
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0012
 
 @[expose] public section
 

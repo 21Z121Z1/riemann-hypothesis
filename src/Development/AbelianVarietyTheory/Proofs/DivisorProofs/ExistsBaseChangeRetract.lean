@@ -1,11 +1,11 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TorsorsTrivial
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.OriginIdeal
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ClosureFiniteEtale
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PointAtZero
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RingHomExtTensorAlt
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0175
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0218
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0230
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0272
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0103
 
 @[expose] public section
 

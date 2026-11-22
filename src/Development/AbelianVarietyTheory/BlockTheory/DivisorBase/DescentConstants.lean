@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Formalism.SharpRestriction.Divisibility.PlaceRankTwoOne
-public import Formalism.SharpRestriction.ElevenLe
-public import Formalism.LocalRingCardinality.DataParamsT
+public import Formalism.SharpRestriction.Divisibility.Bundle0001
+public import Formalism.SharpRestriction.Bundle0001
+public import Formalism.LocalRingCardinality.Bundle0003
 public import Development.AbelianVarietyTheory.Definitions.Foundations.TableDegreeElevenProduct
 
 @[expose] public section

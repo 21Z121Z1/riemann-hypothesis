@@ -1,9 +1,8 @@
 module
 
 public import Formalism.LocalToGlobal.GroupLattices.CloudFilling.TauTopPlacesIff
-public import Formalism.LocalToGlobal.GroupLattices.LevelGatherings.PosCompatOfBase
-public import Formalism.LocalToGlobal.GroupLattices.LevelGatherings.RepTie
-public import Formalism.LocalRingCardinality.DataExtra
+public import Formalism.LocalToGlobal.GroupLattices.LevelGatherings.Bundle0004
+public import Formalism.LocalRingCardinality.Bundle0007
 public import Formalism.SharpRestriction.GrowthBounds.FormalGroupSystem
 
 @[expose] public section

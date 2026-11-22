@@ -2,8 +2,8 @@ module
 
 public import Mathlib
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.GlobalSectionsRankAlgClosed
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.RosatiAdj
-public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.RosatiAdjMul
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.Bundle0002
+public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.Bundle0028
 
 @[expose] public section
 

@@ -1,6 +1,6 @@
 module
 
-public import Development.EtaleCohomology.EtaleSheaves.SheafIsomorphism
+public import Development.EtaleCohomology.EtaleSheaves.Bundle0059
 
 @[expose] public section
 

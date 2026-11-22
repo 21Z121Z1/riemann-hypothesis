@@ -1,15 +1,14 @@
 module
 
 public import Mathlib
-public import Formalism.SharpRestriction.LevelLetterCocycles.LatticeVariant
+public import Formalism.SharpRestriction.LevelLetterCocycles.Bundle0007
 public import Formalism.SharpRestriction.LevelLetterCocycles.BlochKatoPhases
 public import Formalism.SharpRestriction.LevelLetterCocycles.CommutingEndomorphismPreservesInvariants
-public import Formalism.PadicSubsetSums.CentralIdempotents.CentralIdempotentIntegral
+public import Formalism.PadicSubsetSums.CentralIdempotents.Bundle0002
 public import Formalism.ResultantValuation.ResultantAdjugateProofs.Window
 public import Formalism.ResultantValuation.ResultantAdjugateProofs.Laplace
-public import Formalism.CyclotomicNorms.StatementI
+public import Formalism.CyclotomicNorms.Bundle0001
 public import Formalism.CyclotomicNorms.IrreducibilityOfGoodTuple
-public import Formalism.CyclotomicNorms.StatementTW
 
 @[expose] public section
 

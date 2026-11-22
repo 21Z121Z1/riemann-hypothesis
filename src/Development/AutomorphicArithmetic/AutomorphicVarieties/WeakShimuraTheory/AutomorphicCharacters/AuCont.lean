@@ -1,7 +1,7 @@
 module
 
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.WeakShimuraTheory.IsAlgClosureField
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.LevelCohomology.SoAdicCont
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.LevelCohomology.Bundle0004
 
 @[expose] public section
 

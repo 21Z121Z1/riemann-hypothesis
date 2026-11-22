@@ -1,15 +1,15 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.PseudoCoefficientUpqTrivial
-public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.DiscreteSeriesCharacter
-public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.AdmissibleCoefficientsAnalytic
+public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.Bundle0008
+public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.Bundle0009
 public import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.IsAdmOnOfFiniteDimensional
-public import Formalism.RealPlaceAnalysis.RealPlaceTaylor.KoszulLowersPower
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.AbsDetOnStableSubspaceConjTransposeStatement
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.AbsDetOnStableSubspaceExpSmulStatement
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.PosDefConjTransposeMulSelfEqExpPolynomialStatement
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.UnitaryExistsSkewLogStatement
+public import Formalism.RealPlaceAnalysis.RealPlaceTaylor.Bundle0005
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0079
+public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.DefClassNum
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0115
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0012
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0020
 
 @[expose] public section
 
@@ -23,17 +23,17 @@ open Formalism.REAL Formalism.MainNotions.S GlobalTheory.FlagMeas GlobalTheory.R
 
 theorem detOn_conjTranspose (n : ℕ) (g : Matrix (Fin n) (Fin n) ℂ) (V : Submodule ℂ (Fin n → ℂ)) :
     (∀ y ∈ V, g *ᵥ y ∈ V) → (∀ y ∈ V, gᴴ *ᵥ y ∈ V) → GlobalTheory.FlagMeas.detOn gᴴ V = GlobalTheory.FlagMeas.detOn g V :=
-  GlobalTheory.T.absDetOnStableSubspace_conjTranspose n g V
+  _root_.GlobalTheory.FlagMeas.DetAdj.detOn_conjTranspose n g V
 
 theorem detOn_exp_smul (n : ℕ) (A : Matrix (Fin n) (Fin n) ℂ) (V : Submodule ℂ (Fin n → ℂ)) :
     (∀ y ∈ V, A *ᵥ y ∈ V) →
       ∃ c : ℝ, ∀ t : ℝ, GlobalTheory.FlagMeas.detOn (NormedSpace.exp (t • A)) V = Real.exp (t * c) :=
-  GlobalTheory.T.absDetOnStableSubspace_exp_smul n A V
+  _root_.GlobalTheory.FlagMeas.detOn_exp_smul n A V
 
 theorem exists_herm_log (n : ℕ) (g : Matrix (Fin n) (Fin n) ℂ) : IsUnit g →
     ∃ (L : Matrix (Fin n) (Fin n) ℂ) (p : Polynomial ℂ), Lᴴ = L ∧ NormedSpace.exp L = gᴴ * g ∧
       L = Polynomial.aeval (gᴴ * g) p :=
-  GlobalTheory.T.exists_hermitian_exp_eq_conjTranspose_mul_poly n g
+  _root_.GlobalTheory.posDef_conjTranspose_mul_self_eq_exp_polynomial n g
 
 theorem exists_unitary_log (n : ℕ) (k : Matrix (Fin n) (Fin n) ℂ) : kᴴ * k = 1 →
     ∃ (X : Matrix (Fin n) (Fin n) ℂ) (p : Polynomial ℂ), Xᴴ = -X ∧ NormedSpace.exp X = k ∧

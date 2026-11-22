@@ -2,12 +2,14 @@ module
 
 public import ReciprocityTheory.Hypotheses.GalCoh
 public import ReciprocityTheory.NeutralLocalFields.LocalFieldComparison.Transport
-public import Development.WeilBound.CoreStatements.EulerCharacteristicCounts.GcohCmp
+public import Development.WeilBound.CoreStatements.EulerCharacteristicCounts.Bundle0004
 public import GroundTheory.ProfiniteCohomology.RestrictedRamification.IsUnramifiedOutsideIffLeMaxUnramifiedOutside
 public import GroundTheory.ProfiniteCohomology.RestrictedRamification.Finite
 public import GroundTheory.ProfiniteCohomology.CohomologyFunctoriality
-public import Development.AutomorphicSpectrum.Proofs.GlobalProofs.NormalSubgroupLeUnramifiedFixingStatement
-public import Development.AutomorphicSpectrum.Proofs.GlobalProofs.GaloisUnramifiedOutsideCohomologyStatement
+public import Development.AutomorphicSpectrum.Proofs.GlobalProofs.Bundle0007
+public import Mathlib
+public import Development.AutomorphicSpectrum.Proofs.GlobalProofs.Bundle0006
+public import GroundTheory.ProfiniteCohomology.ContinuousCochains
 public import Development.AutomorphicSpectrum.Proofs.GlobalProofs.CohomologicalDimensionTopologicalIso
 
 @[expose] public section
@@ -25,7 +27,7 @@ theorem gsEquiv (F Ω : Type) [Field F] [NumberField F] [Field Ω] [Algebra F Ω
   let φ : G F Ω →* Gal(E/F) := AlgEquiv.restrictNormalHom E
   have hφs : Function.Surjective φ := AlgEquiv.restrictNormalHom_surjective Ω
   have hNS : NS Ω S = (maxUnramifiedOutside F Ω S).fixingSubgroup :=
-    le_antisymm (GlobalTheory.T.normal_subgroup_le_unramified_fixing F Ω S) (GlobalTheory.T.galois_unramified_outside_cohomology F Ω S)
+    le_antisymm (GlobalTheory.T.normal_subgroup_le_unramified_fixing F Ω S) (_root_.GlobalTheory.CompanionTheory.Glob.InertiaLift.fixingSubgroup_le_NS F Ω S)
   have hker : φ.ker = NS Ω S := by
     rw [hNS]
     ext σ

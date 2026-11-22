@@ -1,12 +1,12 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Divisors.HasDefect
-public import Development.AbelianVarietyTheory.Definitions.Divisors.HasRigidChart
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0060
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0071
 public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.ToroidalCompactificationBis
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TorusInvariantHeatOperatorPreservesWeight
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2874
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AppEqZeroOfValR
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.SmoothRayQuotient
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0532
 public import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.InvariantFunctionsDescend
 
 @[expose] public section

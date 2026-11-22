@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.Degenerations.ArithBase
-public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsMulPowMemOOfIsAffineOpen
+public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.Bundle0046
 public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.SpanEqSpanMinor
 
 @[expose] public section

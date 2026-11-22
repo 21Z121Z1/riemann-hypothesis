@@ -1,7 +1,7 @@
 module
 
-public import Formalism.SharpRestriction.GrowthBounds.RootWeights.PolarizationDividedPowerMonomial
-public import Formalism.SharpRestriction.GrowthBounds.RootWeights.PolynomialMemWeightSpaceIff
+public import Formalism.SharpRestriction.GrowthBounds.RootWeights.Bundle0011
+public import Formalism.SharpRestriction.GrowthBounds.RootWeights.Bundle0012
 
 @[expose] public section
 

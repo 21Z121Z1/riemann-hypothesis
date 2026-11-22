@@ -4,7 +4,7 @@ public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.Foundations.FinalTheorems
 public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.WeilDeligneParamMonodromyEqZeroIff
 public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsTameGenAtOfValuationSubring
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.FixedOfPowFixed
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0188
 
 @[expose] public section
 

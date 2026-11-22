@@ -1,7 +1,7 @@
 module
 
 public import Formalism.LocalToGlobal.GroupLattices.FockModels.FlatModels.LaTwTranspose
-public import Formalism.LocalToGlobal.GroupLattices.FockModels.EdgePlane
+public import Formalism.LocalToGlobal.GroupLattices.FockModels.Bundle0002
 public import Formalism.SharpRestriction.GrowthBounds.ColumnSystems
 
 @[expose] public section

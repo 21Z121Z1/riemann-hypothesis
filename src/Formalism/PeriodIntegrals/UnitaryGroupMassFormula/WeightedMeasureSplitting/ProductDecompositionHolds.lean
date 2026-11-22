@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.WeightedMeasureSplitting.ContSplit
-public import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.LevelKSplit
+public import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.Bundle0024
 
 @[expose] public section
 

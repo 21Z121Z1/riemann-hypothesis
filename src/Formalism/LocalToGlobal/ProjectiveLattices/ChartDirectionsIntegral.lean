@@ -1,7 +1,7 @@
 module
 
-public import Formalism.LocalToGlobal.ProjectiveLattices.IsChartIff
-public import Formalism.LocalToGlobal.ProjectiveLattices.VAtVNeBot
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0013
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0010
 
 @[expose] public section
 

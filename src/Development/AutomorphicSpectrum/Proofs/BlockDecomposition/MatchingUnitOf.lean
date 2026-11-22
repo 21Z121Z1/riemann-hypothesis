@@ -3,11 +3,11 @@ module
 public import Mathlib
 public import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.SatakeExponents.UniformizerValuations.LeviMatchingWords.MatchLM
 public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SphericalOneOfLocalAlgebra
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FiniteSphNe
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0409
 public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.HeckeCosetSumCompact
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LevelFamInf
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ConstantTermHeckeFormula
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.HasCompactSupportTj
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0445
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0624
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0749
 
 @[expose] public section
 

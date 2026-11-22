@@ -3,7 +3,7 @@ module
 public import Mathlib
 public import GroundTheory.ProfiniteCohomology.GlobalClassFormation.LevelDefs
 public import GroundTheory.GlobalFields.SecondInequality.Cyclic
-public import GroundTheory.TateCohomology.HerbrandTate
+public import GroundTheory.TateCohomology.Bundle0004
 public import GroundTheory.TateCohomology.Herbrand
 
 @[expose] public section

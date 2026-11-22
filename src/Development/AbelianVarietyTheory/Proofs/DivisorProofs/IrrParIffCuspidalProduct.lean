@@ -1,8 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.BlockProductIsomorphism
-public import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.BlockEmbeddingFactors
+public import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.Bundle0008
 
 @[expose] public section
 

@@ -1,14 +1,14 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsIsCan
-public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.AbsGeneratorRatioEqOneOfUnitFrameMove
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.HeckeIsogenyLiftsToLatticeMapScalingForms
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.HeckeThetaValueIdentityUnitFrames
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0342
+public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0155
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0368
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0403
 public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.HeckeThetaTraceValuesAtComplexPoints
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsSimilitudeTriangularPeriodsOfHeckePoint
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.EqOfFlagOfHermFormPreserving
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.HeckeLiftEqSmul
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0381
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0058
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0412
 
 @[expose] public section
 
@@ -136,7 +136,7 @@ theorem core_reps (E : Type) [Field E] [NumberField E] [IsCMField E] (H : Host E
     rintro _ ⟨a, rfl⟩; exact ⟨gam a, hg2 a⟩
   have hhol := GlobalTheory.ClassUniq.isHolTo_ex F i₁ Pm hP
   have hhol' := GlobalTheory.ClassUniq.isHolTo_ex F i₂ Pm' hP'
-  have hfr := GlobalTheory.T.heckeIsogeny_appellHumbertFrame_pull_eq_transition_mul E H Dw l Xo (F.u i₁ Pm) (F.u i₂ Pm') p ψp b g Pm.range Pm'.range (F.ex i₁ Pm)
+  have hfr := _root_.GlobalTheory.HeckeEx.frame_pull_eq_transition_mul E H Dw l Xo (F.u i₁ Pm) (F.u i₂ Pm') p ψp b g Pm.range Pm'.range (F.ex i₁ Pm)
     (F.ex i₂ Pm') h hspan hhol hhol' eadd (fun a ha => (eker a).2 ha) hex hL hb0 hbt hbr (hbh g _ hhol) Hm χl fr hH
     hd hn hc h0 (by rintro _ ⟨a, rfl⟩ j z; exact ha a j z) Hm' χl' fr' hHH hd' hc' h0'
     (by rintro _ ⟨a, rfl⟩ j z; exact ha' a j z)

@@ -6,9 +6,9 @@ public import Development.AbelianVarietyTheory.Definitions.RegularCharts.SCharts
 public import Formalism.LocalToGlobal.ProjectiveLattices.FrameCharts
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.UniformisationConclusion
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.SecBaseChangeAnySt
-public import Formalism.LocalToGlobal.ProjectiveLattices.RegQFree
-public import Formalism.LocalToGlobal.ProjectiveLattices.FnTrdegOf
-public import Formalism.LocalToGlobal.ProjectiveLattices.RealPtGeo
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0013
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0014
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0017
 public import Formalism.LocalToGlobal.ProjectiveLattices.IntAllProofFree
 
 @[expose] public section

@@ -1,10 +1,10 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.RwAppend
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ChartAndRightWordsSmooth
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.DerivativeRightBasisExpansionStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ClosedDerivativeSystemSmoothStatement
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0207
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0191
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.DerivativeRightBasisExpansion
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0285
 
 @[expose] public section
 
@@ -71,7 +71,7 @@ theorem limit_smooth : ∀ (n : ℕ) (V : Type) [NormedAddCommGroup V] [NormedSp
       (∀ w, TendstoUniformlyOn (fun k => Rw w (g k)) (Gf w) atTop (GLs n)) ∧
       ContDiffOn ℝ ∞ (Gf []) (GLs n) ∧ ∀ w, ∀ z ∈ GLs n, Rw w (Gf []) z = Gf w z := by
   intro n V _ _ _ g hg hc
-  obtain ⟨A, hAc, hA⟩ := GlobalTheory.T.derivative_right_basis_expansion n
+  obtain ⟨A, hAc, hA⟩ := _root_.GlobalTheory.CompanionTheory.PresSobA.Frame.frame n
   have hopen : IsOpen (GLs n) := isOpen_GLs
   let Gf : List (Bool × Fin n × Fin n) → Mat n → V :=
     fun w z => limUnder atTop (fun k => Rw w (g k) z)
@@ -125,7 +125,7 @@ theorem limit_smooth : ∀ (n : ℕ) (V : Type) [NormedAddCommGroup V] [NormedSp
     rw [h1]
     exact tendsto_nhds_unique h2 (hpt (p :: w) z hz)
   have hfam : ∀ v, ContDiffOn ℝ ∞ (Gf v) (GLs n) :=
-    GlobalTheory.T.closed_derivative_system_smooth n V (List (Bool × Fin n × Fin n)) Gf (fun p w => p :: w)
+    _root_.GlobalTheory.CompanionTheory.PresSobA.contDiffOn_of_right_family n V (List (Bool × Fin n × Fin n)) Gf (fun p w => p :: w)
       (fun v z hz => (hhas v z hz).differentiableAt) (fun v p z hz => hRd v p z hz)
   refine ⟨Gf, hu, hfam [], ?_⟩
   intro w

@@ -5,9 +5,9 @@ public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.IsLatFamilyC
 public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.PrimitiveRootHodgeCpt
 public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.FullTorsionIntegrallyClosed
 public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.HodgeCptInteriorGeneric
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.WeilSt
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0202
 public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsTwistOfLowers
-public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.CompEqIdOfTwists
+public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0015
 
 @[expose] public section
 

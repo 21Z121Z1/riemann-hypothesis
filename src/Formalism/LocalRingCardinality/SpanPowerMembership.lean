@@ -2,9 +2,8 @@ module
 
 public import Formalism.LocalRingCardinality.RhoDetPrimeEqMuTildeMulChiPow
 public import Formalism.LocalRingCardinality.DataParams₂
-public import Formalism.LocalRingCardinality.SpanPowerMembership.ExampleClassGroupCardPos
-public import Formalism.LocalRingCardinality.SpanPowerMembership.SizeData₂
-public import Formalism.LocalRingCardinality.SpanPowerMembership.DivXExample
+public import Formalism.LocalRingCardinality.SpanPowerMembership.Bundle0004
+public import Formalism.LocalRingCardinality.SpanPowerMembership.Bundle0005
 
 @[expose] public section
 

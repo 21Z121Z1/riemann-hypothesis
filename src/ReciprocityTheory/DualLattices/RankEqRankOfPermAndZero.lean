@@ -1,9 +1,9 @@
 module
 
-public import ReciprocityTheory.DualLattices.EmbeddingSeparatingGroupStatement
+public import ReciprocityTheory.DualLattices.Bundle0021
 public import ReciprocityTheory.DualLattices.UnramifiedCokernelLengthOfLengthEigenLengthProduct
-public import ReciprocityTheory.DualLattices.IsLocalOfIntegers
-public import ReciprocityTheory.DualLattices.RankMapLeRank
+public import ReciprocityTheory.DualLattices.Bundle0010
+public import ReciprocityTheory.DualLattices.Bundle0003
 
 @[expose] public section
 

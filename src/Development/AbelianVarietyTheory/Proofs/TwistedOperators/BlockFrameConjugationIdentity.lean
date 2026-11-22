@@ -1,26 +1,30 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.RealLowestKTypeCoeffSquareIntegrable
+public import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.Bundle0002
 public import Formalism.LocalToGlobal.IndefiniteReal.BaseLiftsPackageOfPrimitiveLinks
 public import Formalism.LocalToGlobal.IndefiniteReal.NormalDecomposition.LiftHeckeOperators
 public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisGeometry₂.HoweUnram
-public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.ExistsNormLeHeightPow
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FinRepApply
-public import Formalism.LocalToGlobal.IndefiniteReal.IsMultMapUnivZero
-public import Formalism.LocalToGlobal.IndefiniteReal.PartsRow
-public import Development.AbelianVarietyTheory.Definitions.Divisors.InstCMHostS
-public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.HarishChandraFinite
+public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.Bundle0007
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0831
+public import Formalism.LocalToGlobal.IndefiniteReal.Bundle0024
+public import Formalism.LocalToGlobal.IndefiniteReal.Bundle0025
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0029
+public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.Bundle0004
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsGoodFixedVectorOfTypeOccurringInRows
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FinrankWEigenpartEqRowsFullHecke
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FiniteDimensionalFixed
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CoreClausesOfWeakCharacterisation
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsFiniteAdelicIsometryMatchingFrames
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsBaseLevelVectorOfPrincipalLevelFixed
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.StarRowsLevelCharacterEqLiftsLevelCharacter
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConjugateModelsMultiplicityEqual
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HeckeCompatFiniteIsometry
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ComplexConjugationMapsMultiplicitySpaceStatement
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1105
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0942
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0909
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1098
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0974
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0845
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0883
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0124
+public import Formalism.LocalToGlobal.IndefiniteReal.ScalarOnPartsFull
+public import Formalism.LocalToGlobal.IndefiniteReal.SubgroupCharExtensionOneApply
+public import Formalism.LocalToGlobal.IndefiniteReal.OrthogonalComplementCharacterisation
+public import Formalism.LocalToGlobal.IndefiniteReal.Bundle0016
 
 @[expose] public section
 
@@ -207,7 +211,7 @@ theorem exists_conj_map : ∀ {D : D7} {G : Type} [Group G] [Fintype G] {Pl0 T :
     rw [this, LinearMap.range_zero]
   obtain ⟨M₀, c, hc⟩ := GlobalTheory.PartDims.exists_conjModel (S' := parA (Ptw D) 0)
     (fun τ => by rw [Nat.zero_min]; exact (dualPar_dualPar _).symm) (R.MY 0)
-  obtain ⟨h, hM⟩ := GlobalTheory.T.complexConjugation_maps_multiplicitySpace R.θ (R.MY 0) M₀ c hc
+  obtain ⟨h, hM⟩ := _root_.GlobalTheory.ConjMult.conj_mult R.θ (R.MY 0) M₀ c hc
   let st : π.S → (principalLevelFrame.FinTyp.conjT π).S := fun x => ⟨fun g => star (x.1 g), by
     show (fun g => star (star (x.1 g))) ∈ π.S
     simp only [star_star]
@@ -387,7 +391,7 @@ theorem exists_good_vec : ∀ {D : D7} {G : Type} [Group G] [Fintype G] {Pl0 T :
     have eg := congrArg star (congrFun (hxG κ hκ) g)
     rw [← eg, Finset.sum_apply, Finset.sum_apply, star_sum]
     refine Finset.sum_congr rfl fun a _ => ?_
-    have := GlobalTheory.T.star_idemOf_coeff_eq_self D.what₂.embLL A.X hOk.irr hX a
+    have := _root_.GlobalTheory.CuspMult.idemOf_coeff_real D.what₂.embLL A.X hOk.irr hX a
     simp only [principalLevelFrame.rt_apply, Pi.smul_apply, smul_eq_mul, star_mul']
     congr 1
     exact this.symm
@@ -469,7 +473,7 @@ theorem exists_mem_isotL (hP : GlobalTheory.Published.HarishChandraFinite) {D : 
   obtain ⟨c', hc'⟩ := hC.lev.βW i
   have hrk : (Yc D 0).rank = (Wc D i).rank := GlobalTheory.PartDims.rank_zeroth_component_eq.trans (GlobalTheory.PartDims.rank_weight_component_eq i).symm
   obtain ⟨j, Φ, hΦ⟩ := GlobalTheory.FinIsoExists.exists_isFinIso (Yc D 0) (Wc D i) (R.βY 0) (R.ΛY 0) _ (R.βW i) (R.ΛW i) _ R.Pg hrk hc hc'
-    (GlobalTheory.T.typePlaces_not_pairwise_conjugate R.C.P R.Pg hC.lev.Pg)
+    (_root_.GlobalTheory.TypePlaces.not_isConjPl R.C.P R.Pg hC.lev.Pg)
   obtain ⟨h, hh⟩ := frames_inner (Yc D 0) (Wc D i) hF PY PW hPY hPW (by rw [GlobalTheory.PartDims.rank_zeroth_component_eq]; exact odd_r D.R) _ _ _ j Φ hΦ
   set P := R.levL F false (sg0 D A) with hPdef
   let e := eqv PY
@@ -524,20 +528,20 @@ theorem exists_mem_isotL (hP : GlobalTheory.Published.HarishChandraFinite) {D : 
     rw [Submodule.rank_eq_zero] at h1
     rw [h1] at hfm
     exact hf0 hfm
-  have hl := GlobalTheory.T.isometry_matches_parahoric_levels (Yc D 0) (Wc D i) (R.βY 0) (R.βW i) D.R.r D.R.t (r_le_Y 0) (r_le_rank_Wc i) R.Pg R.chi
+  have hl := _root_.GlobalTheory.LevTrans.levtrans (Yc D 0) (Wc D i) (R.βY 0) (R.βW i) D.R.r D.R.t (r_le_Y 0) (r_le_rank_Wc i) R.Pg R.chi
     (fun _ _ => 1) j Φ hΦ
   have e4 : killed ((finRep (R.MW i (sg0 D A))).comp Φ.toMulEquiv.toMonoidHom : Representation ℂ (GfC (Yc D 0)) _)
         (eqSet (Yc D 0) (R.βY 0) (R.dat0 R.triv) R.eG (RealDat.eC (A := A) D.what₂.embLL) P (∅ : Set Empty) Empty.elim Empty.elim Empty.elim) =
       killed (finRep (R.MW i (sg0 D A))) (eqSet (Wc D i) (R.βW i) (R.datWp i R.triv) R.eG
         (RealDat.eC (A := A) D.what₂.embLL) P (∅ : Set Empty) Empty.elim Empty.elim Empty.elim) :=
-    GlobalTheory.T.levelTypeHecke_killed_correspond_matching_iso (Yc D 0) (Wc D i) (R.βY 0) (R.βW i) D.R.r D.R.t (r_le_Y 0) (r_le_rank_Wc i) R.Pg R.chi (fun _ _ => 1) Φ R.eG _ P
+    _root_.GlobalTheory.CuspMult.EqTrans.killed_eqSet_comp (Yc D 0) (Wc D i) (R.βY 0) (R.βW i) D.R.r D.R.t (r_le_Y 0) (r_le_rank_Wc i) R.Pg R.chi (fun _ _ => 1) Φ R.eG _ P
       (∅ : Set Empty) Empty.elim Empty.elim Empty.elim _ _ hrk (fun κ => (hl κ).1) (fun κ => (hl κ).2) (fun P0 => P0.elim)
   have e2 : (R.Wat i (sg0 D A) P ⊓
       hPart (R.MW i (sg0 D A)) (levG _ (R.βW i) (R.datWp i R.triv)) (∅ : Set Empty) Empty.elim Empty.elim Empty.elim :
         Submodule ℂ (MMap (R.MW i (sg0 D A)))) =
       allMaps R.θ (R.MW i (sg0 D A)) ⊓ killed (finRep (R.MW i (sg0 D A))) (eqSet (Wc D i) (R.βW i) (R.datWp i R.triv) R.eG
         (RealDat.eC (A := A) (sg0 D A)) P (∅ : Set Empty) Empty.elim Empty.elim Empty.elim) :=
-    GlobalTheory.T.goodForms_eq_killed_by_groupAlgebra R.θ (R.MW i (sg0 D A)) (R.βW i) (R.datWp i R.triv) R.eG _ P (∅ : Set Empty) Empty.elim Empty.elim Empty.elim rfl rfl
+    _root_.GlobalTheory.CuspMult.EqCut.good_hecke_eq_killed R.θ (R.MW i (sg0 D A)) (R.βW i) (R.datWp i R.triv) R.eG _ P (∅ : Set Empty) Empty.elim Empty.elim Empty.elim rfl rfl
       (GlobalTheory.DimFull.liftsW' hC i)
   have e3 : RealDat.eC (A := A) (sg0 D A) = RealDat.eC (A := A) D.what₂.embLL := by rw [GlobalTheory.PartDims.sign_at_base_place_eq_embedding R]
   have hw : f' ⟨y, hyS⟩ ∈ R.Wat i (sg0 D A) P := by

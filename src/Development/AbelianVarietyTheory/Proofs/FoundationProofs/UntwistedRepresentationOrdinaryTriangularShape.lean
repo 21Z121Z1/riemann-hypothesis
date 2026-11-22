@@ -2,11 +2,11 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.Foundations.IsZetaTW
-public import Development.AbelianVarietyTheory.Definitions.Foundations.ThNSpec
-public import Development.AbelianVarietyTheory.Statements.CuspidalUnitaryTwists.ZetaUr
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsFixingMulFrobAt
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.LevelCohomology.KatoTwCont
-public import ReciprocityTheory.NeutralLocalFields.LocalFieldComparison.LocalFieldAutomorphisms.ValuationIntCastLtOneIff
+public import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0010
+public import Development.AbelianVarietyTheory.Statements.CuspidalUnitaryTwists.Bundle0001
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0206
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.LevelCohomology.Bundle0008
+public import ReciprocityTheory.NeutralLocalFields.LocalFieldComparison.LocalFieldAutomorphisms.Bundle0001
 
 @[expose] public section
 

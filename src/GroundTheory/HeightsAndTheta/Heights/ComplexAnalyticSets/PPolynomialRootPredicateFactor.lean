@@ -1,10 +1,10 @@
 module
 
 public import Mathlib
-public import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StPolynomialRootPredicateFactor
-public import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.PAnalyticRootBranch
+public import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.Bundle0007
+public import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.Bundle0059
 public import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.PRiemannExtensionAnalytic
-public import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.PManifoldZerosComplementConnected
+public import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.Bundle0041
 
 @[expose] public section
 

@@ -1,34 +1,29 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Langlands
-public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.LocalLanglandsExists
-public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.DepthZeroCuspidalLL
-public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.LocalConverseGL
-public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.LanglandsExhaustionGL
-public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.DepthZeroInduction
-public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.BrauerDegreeZero
-public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.LanglandsMultisegments
-public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.StandardCosocleGL
+public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0025
+public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.Bundle0011
+public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.Bundle0009
+public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.Bundle0008
+public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.Bundle0001
+public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.Bundle0010
 public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.ExistsCellOfIsSubquotient
-public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.HasFiniteLengthOfIsIrreducible
+public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.Bundle0001
 public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.ExistsUniqueHcharOfFiniteOrder
-public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.ChevalleyUnits
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.PlaceOverTransportRingIsoSymmStatement
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ContinuousRingEquivLocalFieldPreservesValuation
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.LocalArtinMapUniqueTransportPlaceIsoStatement
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.EpsilonUniqueOfInductiveStatement
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsLocalExtensionOfFiniteIndexWeilSubgroupStatement
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.PlaceOverTransportRingIsoStatement
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.WeilDeligneSemisimpleStatement
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.TateEpsilonTransportStatement
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.WeilGroupRestrictionStatement
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.LocalTraceCompletionStatement
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.WeilGroupTransportStatement
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.TraceBaseChangeFieldStatement
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CompletionBaseChangePlacesStatement
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.GaussSumNeZeroOfRamified
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.NonemptyLinearEquivOfCharpolyEq
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0690
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0653
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0746
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0664
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0704
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0670
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0651
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0671
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0652
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0648
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0650
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0643
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0205
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0035
 
 @[expose] public section
 
@@ -89,7 +84,7 @@ theorem induces_of_charPol {x y : WD h} (hxy : ∀ σ, x.charPol σ = y.charPol 
   obtain ⟨m, a, rfl⟩ := x.exists_rep
   obtain ⟨n, b, rfl⟩ := y.exists_rep
   simp only [WD.charPol_mk] at hxy
-  obtain ⟨e, he⟩ := GlobalTheory.TraceIso.exists_equiv_of_trace_eq a.ρ b.ρ (GlobalTheory.T.weil_deligne_semisimple E Ω A w h m a) (GlobalTheory.T.weil_deligne_semisimple E Ω A w h n b)
+  obtain ⟨e, he⟩ := GlobalTheory.TraceIso.exists_equiv_of_trace_eq a.ρ b.ρ (_root_.GlobalTheory.WeilDeligne.WDRep.isSemisimpleRepresentation_rho E Ω A w h m a) (_root_.GlobalTheory.WeilDeligne.WDRep.isSemisimpleRepresentation_rho E Ω A w h n b)
     fun g => by
       have h1 := hxy g
       rw [← LinearMap.charpoly_toMatrix _ (Pi.basisFun ℂ (Fin m)),
@@ -132,7 +127,7 @@ theorem exists_addChar (L : Type) [Field L] [NumberField L] [Algebra L Ω] [IsAl
     {ψ : AddChar (w.adicCompletion E) Circle} (hc : Continuous ψ) (h1 : ψ ≠ 1) :
     ∃ ψL : AddChar (v.adicCompletion L) Circle, Continuous ψL ∧ ψL ≠ 1 ∧
       ∀ z : L, ψL (algebraMap L _ z) = ψ (algebraMap E _ (Algebra.trace E L z)) := by
-  obtain ⟨T, hT, hT'⟩ := GlobalTheory.T.local_trace_completion E L Ω A w v h hv hL
+  obtain ⟨T, hT, hT'⟩ := _root_.GlobalTheory.LocLanglands.TraceCompl.exists_trace_extension E L Ω A w v h hv hL
   refine ⟨ψ.compAddMonoidHom T, hc.comp hT, fun h0 => h1 ?_, fun z => by simp [hT']⟩
   ext x
   refine (HeightOneSpectrum.denseRange_algebraMap E w).induction_on (p := fun x => (ψ x : ℂ) = (1 : AddChar _ Circle) x) x
@@ -176,14 +171,14 @@ theorem eps_char (hG : GlobalArtinReciprocity) (hC : ChevalleyUnits) (hL : Local
   obtain ⟨-, a', ha', -⟩ := hL E' Ω' A' w' h'
   obtain ⟨χ, hχ, rfl⟩ := ha.factor ξ hξ
   obtain ⟨χ', hχ', rfl⟩ := ha'.factor ξ' hξ'
-  obtain ⟨c, hcr, -⟩ := GlobalTheory.T.place_over_transport_ring_iso E Ω A w h E' Ω' A' w' h' φ j i hP
+  obtain ⟨c, hcr, -⟩ := _root_.GlobalTheory.WeilTransport.weil_equiv E Ω A w h E' Ω' A' w' h' φ j i hP
   haveI : CharZero (w.adicCompletion E) := charZero_of_injective_algebraMap (algebraMap E _).injective
   haveI : CharZero (w'.adicCompletion E') := charZero_of_injective_algebraMap (algebraMap E' _).injective
-  refine Units.ext ((GlobalTheory.T.tate_epsilon_transport _ _ i hP.cont ψ ψ' χ χ' _ hψ (fun x => ?_) (hε.char E w h ψ hc h1 a ha χ hχ)).unique
+  refine Units.ext ((_root_.GlobalTheory.LocalFieldIso.isTateEps_transport _ _ i hP.cont ψ ψ' χ χ' _ hψ (fun x => ?_) (hε.char E w h ψ hc h1 a ha χ hχ)).unique
     (hε'.char E' w' h' ψ' hc' h1' a' ha' χ' hχ'))
   obtain ⟨σ, rfl⟩ := ha.surj x
   have h2 := (hcr σ _).2 rfl
-  rw [← GlobalTheory.T.localArtinMap_unique_transport_placeIso hG hC E Ω A w h E' Ω' A' w' h' φ j i hP a a' ha ha' σ _ h2]
+  rw [← _root_.GlobalTheory.LocLanglands.isLocalArtin_transport hG hC E Ω A w h E' Ω' A' w' h' φ j i hP a a' ha ha' σ _ h2]
   exact (hr σ _ h2).symm
 
 theorem valuation_lt_one_iff_map (hm : ∀ z, φ z ∈ A' ↔ z ∈ A) (z : Ω) :
@@ -205,7 +200,7 @@ theorem eps_ind (hG : GlobalArtinReciprocity) (hC : ChevalleyUnits) (hLL : Local
   obtain ⟨hc', h1'⟩ := addChar_transport hP hc h1 hψ
   obtain ⟨L, hfin, hL, hHL⟩ := GlobalTheory.T.exists_localExtension_of_finiteIndex_weilSubgroup E Ω A w h H hH hHo
   obtain ⟨L', jL, hfin', hL', hdeg, hφ, hadj⟩ :=
-    GlobalTheory.T.weil_group_transport E Ω A w h E' Ω' A' w' h' φ j c hP.ext (fun σ => (hcr σ _).2 rfl) L hfin hL
+    _root_.GlobalTheory.LocLanglands.exists_isLocalExt_transport E Ω A w h E' Ω' A' w' h' φ j c hP.ext (fun σ => (hcr σ _).2 rfl) L hfin hL
   haveI : NumberField L := NumberField.of_module_finite E L
   haveI : NumberField L' := NumberField.of_module_finite E' L'
   haveI : IsAlgClosure L Ω := ⟨IsAlgClosure.isAlgClosed E, Algebra.IsAlgebraic.tower_top (K := E) L⟩
@@ -214,7 +209,7 @@ theorem eps_ind (hG : GlobalArtinReciprocity) (hC : ChevalleyUnits) (hLL : Local
   obtain ⟨v', hv'⟩ := exists_place h' L'
   have hj : ∀ x, jL (algebraMap E L x) = algebraMap E' L' (j x) := fun x =>
     Subtype.ext ((hφ _).symm.trans (hP.ext x))
-  obtain ⟨iL, hiL, hiL'⟩ := GlobalTheory.T.completion_base_change_places E L E' L' w v w' v' j jL i
+  obtain ⟨iL, hiL, hiL'⟩ := _root_.GlobalTheory.CompositumCompletion.exists_ringEquiv_completion E L E' L' w v w' v' j jL i
     (fun x => by rw [← hv, ← h]; rfl) (fun x => by rw [← hv', ← h']; rfl)
     (fun x => by
       rw [← hv, ← hv', ← valuation_lt_one_iff_map hP.mem]
@@ -226,9 +221,9 @@ theorem eps_ind (hG : GlobalArtinReciprocity) (hC : ChevalleyUnits) (hLL : Local
   have hψi : ∀ x, ψL' (iL x) = ψL x := fun x => by
     refine (HeightOneSpectrum.denseRange_algebraMap L v).induction_on (p := fun x => ψL' (iL x) = ψL x) x
       (isClosed_eq (hcL'.comp hiL) hcL) fun z => ?_
-    rw [hiL', hψL', hψL, GlobalTheory.T.trace_base_change_field E L E' L' j jL hj hadj hdeg, ← hP.loc, hψ]
-  obtain ⟨r, hr, hrs⟩ := GlobalTheory.T.weil_group_restriction E L Ω A w v h hv
-  obtain ⟨r', hr', hrs'⟩ := GlobalTheory.T.weil_group_restriction E' L' Ω' A' w' v' h' hv'
+    rw [hiL', hψL', hψL, _root_.GlobalTheory.trace_map_of_adjoin_range_eq_top_of_finrank_eq E L E' L' j jL hj hadj hdeg, ← hP.loc, hψ]
+  obtain ⟨r, hr, hrs⟩ := _root_.GlobalTheory.WeilRestrict.weil_restrict E L Ω A w v h hv
+  obtain ⟨r', hr', hrs'⟩ := _root_.GlobalTheory.WeilRestrict.weil_restrict E' L' Ω' A' w' v' h' hv'
   have hn' : n = Module.finrank E L := hn.trans (index_eq_finrank E L Ω A w h hL H hHL)
   have m : ∀ σ, r σ ∈ H := fun σ => (hHL _).2 fun x => by rw [hr]; exact (σ : G L Ω).commutes x
   have m' : ∀ σ, (c.symm.toMonoidHom.comp r') σ ∈ H := fun σ => (hHL _).2 fun x => by
@@ -275,7 +270,7 @@ theorem eps_eq_of_placeIso : GlobalArtinReciprocity → ChevalleyUnits → Braue
   intro hG hC hB hLL E Ω _ _ _ _ _ A w h E' Ω' _ _ _ _ _ A' w' h' φ j i hP ε ε' hε hε' ψ ψ' hc h1 hψ y y' hy
   obtain ⟨hc', h1'⟩ := addChar_transport hP hc h1 hψ
   obtain ⟨S, hS, -, -, hSadd, -, -, -, -, hSchar⟩ := GlobalTheory.T.place_over_transport_ring_iso_symm E Ω A w h E' Ω' A' w' h' φ j i hP
-  obtain ⟨c, hcr, hdeg, hq, hsm⟩ := GlobalTheory.T.place_over_transport_ring_iso E Ω A w h E' Ω' A' w' h' φ j i hP
+  obtain ⟨c, hcr, hdeg, hq, hsm⟩ := _root_.GlobalTheory.WeilTransport.weil_equiv E Ω A w h E' Ω' A' w' h' φ j i hP
   have rep : ∀ (n : ℕ) (b : WDRep h (Fin n → ℂ)), ∃ b' : WDRep h' (Fin n → ℂ),
       S (WD.mk b) = WD.mk b' ∧ ∀ σ, b'.ρ (c σ) = b.ρ σ := by
     intro n b

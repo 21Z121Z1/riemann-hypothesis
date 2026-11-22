@@ -4,7 +4,7 @@ public import Mathlib
 public import Formalism.LocalRingCardinality.RhoDetPrimeEqMuTildeMulChiPow
 public import Formalism.LocalRingCardinality.DataDIV
 public import Formalism.SharpRestriction.ParConsts
-public import Formalism.GelfandTransference.EnergyIdentity
+public import Formalism.GelfandTransference.Bundle0001
 
 @[expose] public section
 

@@ -5,7 +5,7 @@ public import Development.AbelianVarietyTheory.Definitions.Foundations.MemL2OfBo
 public import Development.AbelianVarietyTheory.Definitions.Foundations.T2SpaceAdeleRing
 public import Development.AbelianVarietyTheory.Definitions.Foundations.NotIsSplitOfIsInertAt
 public import Development.AbelianVarietyTheory.Definitions.Foundations.IsRestrictedProdFinAwayIffIsProdMeasureFinAway
-public import Development.AbelianVarietyTheory.Definitions.Foundations.AnalyticOnNhdTsumNpow
+public import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0018
 
 @[expose] public section
 

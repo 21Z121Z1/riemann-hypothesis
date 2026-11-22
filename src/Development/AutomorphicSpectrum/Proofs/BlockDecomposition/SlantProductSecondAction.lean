@@ -2,8 +2,8 @@ module
 
 public import Mathlib
 public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.BisimplicialActionSecondFactor
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CechNerveFaceOneZero
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.PullbackZeroCochainsAlgebraMap
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0123
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0130
 
 @[expose] public section
 

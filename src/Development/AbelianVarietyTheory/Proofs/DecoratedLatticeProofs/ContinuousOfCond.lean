@@ -3,17 +3,16 @@ module
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.EntryAgree
 public import Formalism.LocalToGlobal.Columns.ChainTw
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.LatticeClasses
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsConjReferenceChartIndex
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ParahoricLevelsCharactersDoubleCosetsAgreeRationStatement
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.TwistParahoricChainLastStepsAgreeColumnsStatement
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ExistsUniqueCompletionMatrixOfRationalTwistAutStatement
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.FirstStepCompletionRepresentativesEqOneStatement
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.CompletionRepresentativeMemPreviousIndexSetStatement
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.EqOfSameDoubleCosetCompletionRowRepresentativesStatement
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.CompletionRepresentativesNormalFormModUnipotentStatement
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ExistsRationalDoubleCosetRepresentativeBoundsStatement
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ExistsTwistIndexRepresentativeOfBoundsStatement
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0061
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0328
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0149
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0193
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0140
+public import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.Bundle0006
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0146
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0259
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0183
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0260
 
 @[expose] public section
 
@@ -146,7 +145,7 @@ theorem exists_system {σ₀ : X.K →+* ℂ} {P : rowSG Pr sel mu} {k : Type} [
         obtain ⟨h', rfl, hf⟩ := hβ
         obtain ⟨γ, ⟨g', hg', hdc⟩, hbd, hE⟩ := honto j c h al g hg (hnorm j (c + 1) (by omega) al g hg) h' hf
         obtain ⟨b, hb⟩ := GlobalTheory.T.exists_twistIndex_representative_of_bounds X Pr R Ch sel S₀ mu cst σ₀ P k ι s W ν hν hc hA L G hL hI j c h γ hbd ⟨al, hE⟩ hne
-        obtain ⟨g'', hg'', -⟩ := GlobalTheory.T.existsUnique_completionMatrix_of_rationalTwistAut X R k ι (j + 1) (c + 1) (by simp only [cOf]; omega) (L.h (j + 1) b P)
+        obtain ⟨g'', hg'', -⟩ := _root_.GlobalTheory.TwBridge.existsUnique_isGL X R k ι (j + 1) (c + 1) (by simp only [cOf]; omega) (L.h (j + 1) b P)
         refine ⟨g'', ⟨b, hg''⟩, ?_⟩
         rw [← hdc]
         exact ((hLev (j + 1) (c + 1) (by omega) (L.h (j + 1) b P) g'' hg'').2.2 (by omega) γ g' hg').1 hb

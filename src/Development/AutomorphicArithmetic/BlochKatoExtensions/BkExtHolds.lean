@@ -3,9 +3,9 @@ module
 public import Mathlib
 public import Formalism.SharpRestriction.LevelLetterCocycles.RealExtOfExact
 public import Formalism.SharpRestriction.LevelLetterCocycles.LocalSituation
-public import Formalism.SharpRestriction.LevelLetterCocycles.InvariantsGenerators
+public import Formalism.SharpRestriction.LevelLetterCocycles.Bundle0013
 public import Formalism.SharpRestriction.LevelLetterCocycles.BaseChangePreservesUnitaryOf
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExtensionRuleStmt
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0342
 public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.T2SpaceLocalLatticeRepresentationSpace
 public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CardTorsionMulFinrank
 

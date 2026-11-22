@@ -1,20 +1,22 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.GoodGeneric
+public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.Bundle0017
 public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisGeometry₂.HoweUnram
 public import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.IsStepWeil
-public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.HarishChandraFinite
-public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.ExistsNormLeHeightPow
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.HeckeCharacterisationPlacesPartsOfWeak
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.HyperspecialFixesAllChainVacuaAtInertPrimeStatement
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.InertHeckeOperatorsRowsRationalSelfAdjointLabelsStatement
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.IsSphericalDoubleCosetLabelIffDecreasingStatement
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.SelfDualAntitoneListIffInertPrimeHeckeExponents
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.RealizationFamilyNormalOperatorsStatement
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.MatchedSphericalPairsCommuteCompositeLiftStatement
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.TwoSidedHeckePartnerInertPrimeStatement
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.UpwardThetaLiftInjectiveOnCarriedPartStatement
+public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.Bundle0004
+public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.Bundle0007
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0148
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.HyperspecialFixesAllChainVacuaAtInertPrime
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0168
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0140
+public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.Bundle0015
+public import Formalism.SatakeDualWeyl.KpqSubgroupCompact
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0121
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0159
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0164
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0181
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0144
 
 @[expose] public section
 
@@ -155,8 +157,8 @@ theorem inert_types_iff_labels : HoweUnram → ∀ {D : D7} {G : Type} [Group G]
   have hCore := hcore hEx
   have hgood : Good R.toRealDat A3.A.μ0 (R.plI Q.1) := (hplI _ Q.1 Q.2).1
   have hconj : conjPl (R.plI Q.1) = R.plI Q.1 := (hplI _ Q.1 Q.2).2
-  have hfix := GlobalTheory.T.hyperspecialFixesAllChainVacua_at_inert_prime R F hC A3.A.μ0 (R.plI Q.1) hgood hconj
-  have htwo := GlobalTheory.T.twoSidedHeckePartner_inertPrime hHowe R.toRealDat F.lv2 hLI hCore hSchur A3.A.μ0 (R.plI Q.1) hgood hconj hfix
+  have hfix := _root_.GlobalTheory.VacFixInert.fixAll_inert R F hC A3.A.μ0 (R.plI Q.1) hgood hconj
+  have htwo := _root_.GlobalTheory.Hk3.TwoSidedInert.twoSided_of_inert hHowe R.toRealDat F.lv2 hLI hCore hSchur A3.A.μ0 (R.plI Q.1) hgood hconj hfix
   obtain ⟨hX, hXops, -⟩ := (GlobalTheory.T.realization_family_normal_operators R.toRealDat F.lv2 hCore.lev hCore.fam hCore.models).1 A3.A.μ0
   have hinj : Function.Injective (R.HX A3.A.μ0).e := (hCore.models.HX A3.A.μ0).1
 
@@ -166,9 +168,9 @@ theorem inert_types_iff_labels : HoweUnram → ∀ {D : D7} {G : Type} [Group G]
         hX (R.plI Q.1) cX v = evC (Yc D 0) (R.plI Q.1) (fun d => c (R.plI Q.1) (dualLab d)) c0 • v := by
     intro p c hc
     obtain ⟨w, hw, hw0⟩ := Submodule.exists_mem_ne_zero_of_ne_bot hc.1
-    refine ⟨LinearMap.adjoint (R.Th A3.A.μ0) w, GlobalTheory.T.upward_theta_lift_injective_on_carried_part R F hB hpos p c hc w hw hw0,
+    refine ⟨LinearMap.adjoint (R.Th A3.A.μ0) w, _root_.GlobalTheory.thetaUp_injective_on_carried R F hB hpos p c hc w hw hw0,
       hc.2 (Submodule.mem_map_of_mem hw), fun cX c0 hm => ?_⟩
-    exact (GlobalTheory.T.matched_spherical_pairs_commute_composite_lift R.toRealDat F.lv2 hCore hSchur R.SF hSF A3.A.μ0 (R.plI Q.1) hgood cX c0 hm hX hXops).2 c w
+    exact (_root_.GlobalTheory.Hk3.SysE.matched_commute R.toRealDat F.lv2 hCore hSchur R.SF hSF A3.A.μ0 (R.plI Q.1) hgood cX c0 hm hX hXops).2 c w
       (by rw [← hEE c]; exact hw)
 
   have hne : ∀ (p : A3.fam3.base3.Ix) (c : Pl D.host.E → List ℤ → ℂ), R.Carries p c → (A3.rowI A3.A.μ0).inertTypeEigenspaceSum p.1 ≠ ⊥ := by
@@ -216,7 +218,7 @@ theorem inert_types_iff_labels : HoweUnram → ∀ {D : D7} {G : Type} [Group G]
     exact Formalism.L2.NCov.eq_of_le_maxGen (hne p c hc) h1 (le_top.trans maxGen_zero_top.ge)
 
   have hsd : ∀ d, IsLab (Yc D 0) (R.plI Q.1) d → dualLab d = d := fun d hd =>
-    ((GlobalTheory.T.isSphericalDoubleCosetLabel_iff_decreasing (Yc D 0) (R.plI Q.1) d).1 hd).2.2 hconj
+    ((_root_.GlobalTheory.LabChar.labels_char (Yc D 0) (R.plI Q.1) d).1 hd).2.2 hconj
   have hdec := ops_decomp D.sp.X' (R.HX A3.A.μ0).e hinj (R.plI Q.1) (hX (R.plI Q.1)) (hXops _ hgood)
   have hnl := ops_zero D.sp.X' (R.HX A3.A.μ0).e hinj (R.plI Q.1) (hX (R.plI Q.1)) (hXops _ hgood)
   constructor
@@ -238,7 +240,7 @@ theorem inert_types_iff_labels : HoweUnram → ∀ {D : D7} {G : Type} [Group G]
         rw [hse] at hm0
         exact (E1 q b hb _ hs c0 hm0).symm
       · refine eq_zero_smul v (hnl e (fun hl => h ?_) v)
-        obtain ⟨hlen, hpw, hsd'⟩ := (GlobalTheory.T.isSphericalDoubleCosetLabel_iff_decreasing D.sp.X' (R.plI Q.1) e).1 hl
+        obtain ⟨hlen, hpw, hsd'⟩ := (_root_.GlobalTheory.LabChar.labels_char D.sp.X' (R.plI Q.1) e).1 hl
         obtain ⟨s, h2s, hpws, hposs, hes⟩ := (GlobalTheory.Hk3.labIn_selfDual_iff _ e).1 ⟨hlen, hpw, hsd' hconj⟩
         exact ⟨s, ⟨hpws, hposs, h2s⟩, hes⟩
     rw [key p c hc, key p' c' hc']

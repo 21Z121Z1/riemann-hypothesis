@@ -1,15 +1,15 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CosetVecEq
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MemPrincipalCongruenceLevelSubgroupIffIntegralCo
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnitaryCongruentOneDetSubOneMemIdealMulConj
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MemBlockCongruenceLevelSubgroupIffStabilizerEntr
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsIdealMatrixApproxCongruentOneTranslate
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.RationalPointsIntegralPointsMembership
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsHalfIdem
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.CmFiniteAdeleIntegralSeparatedCompleteStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsIdempotentPowerLimitCongruentOneStatement
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1491
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1533
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1568
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1532
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1550
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0231
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0249
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0234
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1576
 
 @[expose] public section
 
@@ -151,7 +151,7 @@ theorem exists_unitary_near {a : ℕ} (𝔪 : Ideal (𝓞 D.host.E)) (h𝔪 : �
     have e : T * (A.det * δ') - 1 = T * (δ' * A.det - 1) - (1 - T) := by ring
     rw [e]
     exact sub_mem (mul_mem_hatId hT hδ) hT1
-  obtain ⟨g, hg, hidem, hf1⟩ := GlobalTheory.T.exists_idempotent_powerLimit_congruentOne D 𝔪 h𝔪 _ hy hy1
+  obtain ⟨g, hg, hidem, hf1⟩ := _root_.GlobalTheory.PowIdem.exists_idem D 𝔪 h𝔪 _ hy hy1
   obtain ⟨f0, hf0⟩ : ∃ f0, f0 = T * (A.det * δ') * g := ⟨_, rfl⟩
   rw [← hf0] at hidem hf1
   have hf0O : f0 ∈ OhE D := hf0 ▸ mul_mem hy hg

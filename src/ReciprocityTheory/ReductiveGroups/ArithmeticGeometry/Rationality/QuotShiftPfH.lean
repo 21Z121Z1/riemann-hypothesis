@@ -1,6 +1,6 @@
 module
 
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.Rationality.QuotSt
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.Rationality.Bundle0001
 
 @[expose] public section
 

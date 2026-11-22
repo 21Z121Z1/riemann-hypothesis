@@ -4,13 +4,13 @@ public import Mathlib
 public import Formalism.LocalToGlobal.IndefiniteReal.ScalarOnPartsFull
 public import Formalism.LocalToGlobal.IndefiniteReal.SubgroupCharExtensionOneApply
 public import Formalism.LocalToGlobal.IndefiniteReal.OrthogonalComplementCharacterisation
-public import Formalism.LocalToGlobal.IndefiniteReal.DatumVec
+public import Formalism.LocalToGlobal.IndefiniteReal.Bundle0016
 public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ContDiffDerivSnoc
-public import Development.AbelianVarietyTheory.Proofs.HeightProofs.DenomBound
-public import Development.AbelianVarietyTheory.Proofs.HeightProofs.PolarConjTranspose
-public import Development.AbelianVarietyTheory.Proofs.HeightProofs.HasSmoothLogNearOneOfIsUnitaryLieExpData
+public import Development.AbelianVarietyTheory.Proofs.HeightProofs.Bundle0029
+public import Development.AbelianVarietyTheory.Proofs.HeightProofs.Bundle0008
+public import Development.AbelianVarietyTheory.Proofs.HeightProofs.Bundle0004
 public import Development.AbelianVarietyTheory.Proofs.HeightProofs.SmoothInExponentialCoordsIffFirstSecondKind
-public import Development.AbelianVarietyTheory.Proofs.HeightProofs.UnitaryLieGeneratorsRep
+public import Development.AbelianVarietyTheory.Proofs.HeightProofs.Bundle0031
 
 @[expose] public section
 

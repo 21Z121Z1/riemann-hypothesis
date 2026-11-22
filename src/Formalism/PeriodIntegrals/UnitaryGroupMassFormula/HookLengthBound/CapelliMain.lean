@@ -1,6 +1,6 @@
 module
 
-public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.HookLengthBound.CapelliAbs
+public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.HookLengthBound.Bundle0002
 
 @[expose] public section
 

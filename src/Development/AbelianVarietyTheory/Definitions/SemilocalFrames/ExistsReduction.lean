@@ -3,7 +3,7 @@ module
 public import Mathlib
 public import Formalism.SharpRestriction.CuspSpanNormBounds.GlobAut
 public import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.CsGlob
-public import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.CsApprox
+public import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Bundle0009
 
 @[expose] public section
 

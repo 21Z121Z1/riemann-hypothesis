@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import GroundTheory.ProfiniteCohomology.GlobalEulerCharacteristic.ShapiroDefs
+public import GroundTheory.ProfiniteCohomology.GlobalEulerCharacteristic.Bundle0001
 public import GroundTheory.ProfiniteCohomology.EulerChar
 public import GroundTheory.ProfiniteCohomology.RestrictedRamification.BaseChangeModules
 

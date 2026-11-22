@@ -1,15 +1,15 @@
 module
 
 public import Mathlib
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.DegUnif
-public import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.TranslateMemIndOrder
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.Bundle0002
+public import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.Bundle0001
 public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.ExistsUnitFormLocalizationEtaleNbhd
-public import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.DualOrder
+public import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.Bundle0002
 public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.TorsionEmbeddingGeometricPoints
 public import Development.AbelianVarietyTheory.Proofs.HomogeneousIdeals.LocallyOfFinitePresentationDiagMap
 public import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.IsAbelianSchemeAndExtendOfGenericHoms
 public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.IsAdicColimitOfFactor
-public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.AdicCompleteAlgebraLiftingUniqueStatement
+public import Development.WeilBound.CoreStatements.HodgeTatePoints.Bundle0003
 
 @[expose] public section
 
@@ -99,7 +99,7 @@ theorem spec_lift (A B : Type) [CommRing A] [CommRing B] [Algebra R A] [Algebra 
     have h3 := congrArg (Ideal.Quotient.factor (map_le I A e)) h
     rw [Ideal.Quotient.factor_mk] at h3
     exact h3.trans h2
-  obtain ⟨g, hg, hu⟩ := GlobalTheory.T.adic_complete_algebra_lifting_unique R A B I f hcompat
+  obtain ⟨g, hg, hu⟩ := _root_.PositivityTheory.HtPt.Mi.algHom_of_system R A B I f hcompat
   have hgover : Spec.map (CommRingCat.ofHom (g : B →+* A)) ≫ (specOver (R := R) B).hom = (specOver (R := R) A).hom := by
     change _ ≫ Spec.map _ = Spec.map _
     rw [← Spec.map_comp, ← CommRingCat.ofHom_comp, g.comp_algebraMap]

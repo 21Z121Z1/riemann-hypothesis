@@ -1,26 +1,27 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SquareTriple
-public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.UnifModGrowthOfIsUnifModerate
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LiftPRouteSmall
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1487
+public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.Bundle0007
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1502
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsNatMulIntegralOfIsCompact
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsTranslatesEqPrimFrameLat
-public import Development.AbelianVarietyTheory.Definitions.Divisors.SiegelWeilAnisotropicHermitian
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0044
 public import Development.AbelianVarietyTheory.Definitions.Divisors.CTSmallCone
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdelicHeisenbergActsByLocalSchrodinger
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SchrodingerPreservesSchwartzBruhat
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsometryCommutingHeisenbergActsFibrewiseStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdelicSchwartzSpaceTranslateMemOfMemStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdelicSchwartzRestrictFinitePlaceMemSchwartzBruhStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsComplementaryAdelicSchwartzRestFunctionStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.StandardAdelicAddCharNontrivialFinitePlaceStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EqOfComponentTensorAdelicFunctionEqStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LatAtVAtStable
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1592
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1656
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1749
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1643
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1617
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1660
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1682
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1674
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1662
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1531
 public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.IsSmoothModerateOfIsAutFunSm
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SpanFiniteDimensionalOfBoundedFormsStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsNhdsFixOfContinuousCoefficientsStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsCompactSubgroupUnitaryPointsSupportedAtPlaStatement
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0172
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0038
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1785
 
 @[expose] public section
 
@@ -219,7 +220,7 @@ theorem weil_smooth_at : ∀ {F E : Type} [Field F] [NumberField F] [Field E] [N
       fun x hx => hsub ⟨hK1U hx.1, hK2U hx.2⟩⟩
     rw [Subgroup.coe_prod]
     exact hK1c.prod hK2c
-  obtain ⟨U, hU, hfix⟩ := GlobalTheory.T.exists_nhds_fix_of_continuous_coefficients GlobalTheory.T.finiteDimensional_span_of_forall_linear_bounded H S hmul hone hcont hbasis ⟨φ, hφ⟩
+  obtain ⟨U, hU, hfix⟩ := _root_.GlobalTheory.SmoothFix.exists_nhds_fix GlobalTheory.T.finiteDimensional_span_of_forall_linear_bounded H S hmul hone hcont hbasis ⟨φ, hφ⟩
   refine ⟨U, hU, fun x hxU hx1 hx2 => ?_⟩
   have hx : x ∈ H := ⟨hx1, hx2⟩
   have e := congrArg Subtype.val (hfix x hxU hx)

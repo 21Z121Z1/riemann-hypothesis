@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsNormFormGaussBound
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PDehomNormPIntegral
+public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0087
+public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0095
 
 @[expose] public section
 

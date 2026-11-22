@@ -1,15 +1,15 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.OnePlaceKF
+public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.Bundle0010
 public import Development.AbelianVarietyTheory.Definitions.Jets.SumIoPr
 public import Formalism.SharpRestriction.CuspSpanNormBounds.LeadMinorK
-public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.DegVand
-public import Formalism.LocalRingCardinality.DataTies
+public import Formalism.LocalRingCardinality.Bundle0003
 public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.OrbitalSquareEqHilbertSchmidtNormalisedVector
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsUnipotentHaarMeasureRatioStatement
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.CutoffComputesBesselQuotientIntegral
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.BesselNeZeroOfCyclicOrbit
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0253
+public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.Bundle0006
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0139
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0033
 public import Formalism.HermitianCurvature.HermitianCurvatureProofs.SettingConstruction
 
 @[expose] public section
@@ -338,7 +338,7 @@ theorem root_haar (hk : 1 ≤ k) {z z' : Fin (2 * r + k + 1) → ℂ} (hz : inWb
 theorem exists_orbQuot (L : LocBessel k r) (hκ : L.κN ≠ ⊤) {g : MatKR k r} (hg : g ∈ UH (Hpk k r))
     {μ : Measure (Mt k r)} (h : B.IsHaarOn (C6.Rset g⁻¹) μ) {M : ℝ} (hM : 0 ≤ M)
     (hI : Integrable (fun x => B.gN (Matrix.of x) ^ (-M)) μ) : ∃ ν, IsOrbQuot L g (μ.map (conjM g)) ν := by
-  obtain ⟨cN, hN⟩ := GlobalTheory.T.exists_unipotentHaarMeasure_ratio k r
+  obtain ⟨cN, hN⟩ := _root_.GlobalTheory.ThA.exists_isRatioN k r
   have := P.Dx2.OrbJ.sigmaF h
   have hu := unit_det hg
   have hθ : Measurable fun p : PairSp k r => P.Dx3.cut μ M p.swap := (P.Dx3.cut_meas M).comp measurable_swap

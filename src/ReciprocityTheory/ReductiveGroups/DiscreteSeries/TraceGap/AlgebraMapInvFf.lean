@@ -1,6 +1,6 @@
 module
 
-public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.TraceGap.AdPhysDiagSingle
+public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.TraceGap.Bundle0003
 
 @[expose] public section
 

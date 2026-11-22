@@ -1,8 +1,8 @@
 module
 
 public import Formalism.SatakeDualWeyl.Statement
-public import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.GlintPrincRelIndexNeZero
-public import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Stabstd
+public import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Bundle0001
+public import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Bundle0003
 
 @[expose] public section
 

@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IteratedFDerivSubApply
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0014
 
 @[expose] public section
 

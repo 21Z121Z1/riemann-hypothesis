@@ -1,10 +1,10 @@
 module
 
-public import Formalism.LocalToGlobal.IndefiniteReal.DatumVec
+public import Formalism.LocalToGlobal.IndefiniteReal.Bundle0016
 public import Formalism.LocalToGlobal.IndefiniteReal.SubgroupCharExtensionOneApply
-public import Formalism.LocalToGlobal.IndefiniteReal.FinitePlaces.TameAtOne
-public import Formalism.LocalToGlobal.IndefiniteReal.FinitePlaces.PlaceS
-public import Formalism.LocalToGlobal.IndefiniteReal.FinitePlaces.IdemUniq
+public import Formalism.LocalToGlobal.IndefiniteReal.FinitePlaces.Bundle0005
+public import Formalism.LocalToGlobal.IndefiniteReal.FinitePlaces.Bundle0002
+public import Formalism.LocalToGlobal.IndefiniteReal.FinitePlaces.Bundle0009
 public import Formalism.LocalToGlobal.Divisibility.DefGroupLemmas
 public import Mathlib.NumberTheory.NumberField.ClassNumber
 

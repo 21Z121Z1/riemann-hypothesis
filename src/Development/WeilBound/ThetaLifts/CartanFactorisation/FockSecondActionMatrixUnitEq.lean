@@ -2,11 +2,11 @@ module
 
 public import Development.WeilBound.ThetaLifts.CartanFactorisation.ExistsGreatestProperInvariantSubmoduleOfSide
 public import Development.WeilBound.ThetaLifts.CartanFactorisation.TensMax
-public import Development.WeilBound.ThetaLifts.CartanFactorisation.UnitDef
-public import Development.WeilBound.ThetaLifts.CartanFactorisation.PolCount
+public import Development.WeilBound.ThetaLifts.CartanFactorisation.Bundle0002
+public import Development.WeilBound.ThetaLifts.CartanFactorisation.Bundle0003
 public import Development.WeilBound.ThetaLifts.ConeHypotheses.PureEqPureA
 public import Development.WeilBound.CoreStatements.GaussianSeminormBounds.RealSeminormFiltration.RLLines
-public import Development.WeilBound.CoreStatements.GaussianSeminormBounds.RealSeminormFiltration.RLParity
+public import Development.WeilBound.CoreStatements.GaussianSeminormBounds.RealSeminormFiltration.Bundle0009
 
 @[expose] public section
 

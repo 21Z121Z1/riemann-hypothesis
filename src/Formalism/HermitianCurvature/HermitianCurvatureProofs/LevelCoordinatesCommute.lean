@@ -4,7 +4,7 @@ public import Formalism.HermitianCurvature.StatementNF
 public import Formalism.HermitianCurvature.HermitianCurvatureProofs.ActualAdjointnessFromHermitian
 public import Formalism.HermitianCurvature.HermitianCurvatureProofs.SumDualVectorEqZeta
 public import Formalism.HermitianCurvature.HermitianCurvatureProofs.WeylCellConjTransposeMulApply
-public import Formalism.FormalDegreeBessel.FinalWR
+public import Formalism.FormalDegreeBessel.Bundle0001
 
 @[expose] public section
 

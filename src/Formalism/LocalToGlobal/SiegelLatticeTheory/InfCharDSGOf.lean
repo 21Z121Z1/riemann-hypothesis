@@ -1,6 +1,6 @@
 module
 
-public import Formalism.SharpRestriction.CuspSpanNormBounds.BridgeLitG
+public import Formalism.SharpRestriction.CuspSpanNormBounds.Bundle0017
 public import Formalism.LocalToGlobal.SiegelLatticeTheory.CasimirReductionTheory.GgExistsAddCharNeOne
 
 @[expose] public section

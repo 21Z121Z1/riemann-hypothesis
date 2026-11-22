@@ -1,6 +1,6 @@
 module
 
-public import Formalism.LocalToGlobal.GlobalTheory.Places
+public import Formalism.LocalToGlobal.GlobalTheory.Bundle0002
 public import Formalism.SharpRestriction.AdmissibleParameterJoins.DIVfromGLo
 public import Formalism.SharpRestriction.GrowthBounds.TopChoiceBounds
 public import Formalism.LogFactorialBounds.LogFactorialProofs.PrimeSum

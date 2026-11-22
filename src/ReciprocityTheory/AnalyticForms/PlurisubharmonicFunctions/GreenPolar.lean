@@ -1,6 +1,6 @@
 module
 
-public import ReciprocityTheory.AnalyticForms.PlurisubharmonicFunctions.GreenSt
+public import ReciprocityTheory.AnalyticForms.PlurisubharmonicFunctions.Bundle0001
 
 @[expose] public section
 

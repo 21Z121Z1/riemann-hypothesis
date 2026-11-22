@@ -2,9 +2,9 @@ module
 
 public import Mathlib
 public import Formalism.SharpRestriction.Divisibility.LiftErrorLocal
-public import Formalism.SharpRestriction.Divisibility.LocalNonemptiness.LiftErrorLocal
+public import Formalism.SharpRestriction.Divisibility.LocalNonemptiness.Bundle0001
 public import Formalism.LocalRingCardinality.Lemmas
-public import Formalism.LocalRingCardinality.DataParamsT
+public import Formalism.LocalRingCardinality.Bundle0003
 
 @[expose] public section
 

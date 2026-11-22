@@ -1,10 +1,9 @@
 module
 
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.HkDefs
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.HkBern
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.SwapOneAlt
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.EqOneOfStrictMono
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.HkInd
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.Bundle0003
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.Bundle0018
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.Bundle0007
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.Bundle0013
 
 @[expose] public section
 

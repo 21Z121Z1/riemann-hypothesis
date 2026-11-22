@@ -1,19 +1,19 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ToGAdMat
-public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.IsGenericIffIsGenericFor
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1317
+public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.Bundle0016
 public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.StrongMultiplicityOne
-public import Development.AbelianVarietyTheory.Definitions.Divisors.SiegelWeilAnisotropicHermitian
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.IsSplitChartSplitChart
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MeasureFundDomLtTop
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0044
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0305
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1226
 public import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.IsSubquotientDetRepParInd
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsBlockEmb
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExpGLiAddSmul
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.InducedSectionZFinite
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ContinuousOfIsBlockEmb
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LineToGAdDerivative
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ComplMapSplitProj
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1342
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0671
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0167
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1375
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1349
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1374
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CuspBlockConstantTermVanishing
 
 @[expose] public section

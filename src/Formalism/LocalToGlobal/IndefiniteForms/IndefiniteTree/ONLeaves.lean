@@ -2,12 +2,11 @@ module
 
 public import Mathlib
 public import Formalism.LocalToGlobal.IndefiniteForms.IndefiniteTree.ExampleSatisfiesConditionsAtFive
-public import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.CharIdem
-public import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.IndexUBound
-public import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.MirabIndex
+public import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.Bundle0007
+public import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.Bundle0003
 public import Formalism.MirabolicMackeyTheory.MirabolicMackeyProofs.IsMackeyPiUpperUnipotentProdCharacter
 public import Formalism.MirabolicMackeyTheory.MirabolicMackeyProofs.RamBasic
-public import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.UnipVal
+public import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.Bundle0004
 
 @[expose] public section
 

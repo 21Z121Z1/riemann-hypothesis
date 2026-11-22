@@ -1,6 +1,6 @@
 module
 
-public import Development.AbelianVarietyTheory.Definitions.Divisors.IsBasOpens
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0025
 
 @[expose] public section
 

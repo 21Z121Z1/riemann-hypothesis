@@ -2,9 +2,9 @@ module
 
 public import Mathlib
 public import Formalism.LocalToGlobal.SiegelLatticeTheory.TraceIntegralEstimates.FolnerG2
-public import Formalism.LocalToGlobal.SiegelLatticeTheory.TraceIntegralEstimates.IsFolnerOfEquiv
+public import Formalism.LocalToGlobal.SiegelLatticeTheory.TraceIntegralEstimates.Bundle0009
 public import Formalism.LocalToGlobal.SiegelLatticeTheory.HaarTransversals.UnitaryHaarProducts.BesselLevi
-public import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.BesselLevi
+public import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.Bundle0007
 
 @[expose] public section
 

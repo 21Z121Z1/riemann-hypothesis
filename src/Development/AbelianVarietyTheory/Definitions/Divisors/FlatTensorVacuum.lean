@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.Divisors.RankEqCardIffExistsFrameMatrixFirstColumnBlock
-public import Development.AbelianVarietyTheory.Definitions.Foundations.SimpleSumRowCol
+public import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0007
 
 @[expose] public section
 

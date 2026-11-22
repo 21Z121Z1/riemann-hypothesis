@@ -1,28 +1,27 @@
 module
 
-public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.FixedVectorEqOfStandardData
-public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.IsTwIffCanonEq
+public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.Bundle0020
+public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.Bundle0030
 public import Formalism.LocalToGlobal.KernelLattices.TopPin
-public import Formalism.LocalToGlobal.KernelLattices.InterlaceAll
-public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.JetsInIffStepField
+public import Formalism.LocalToGlobal.KernelLattices.Bundle0002
+public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.Bundle0015
 public import Formalism.LocalToGlobal.KernelLattices.ColumnData.DiagramFitsSourceRank
-public import Formalism.SharpRestriction.GlobalSchurBounds.GlobalRankLatticeProofs.UnitTraceSumBounds.ThetaIsometryFactsHold
+public import Formalism.SharpRestriction.GlobalSchurBounds.GlobalRankLatticeProofs.UnitTraceSumBounds.Bundle0005
 public import Formalism.LocalRingCardinality.FactDelDualNabla
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.DominantWeightPolynomialFunctionalMinorsStatement
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0425
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.MinorProductPairingDeterminedByCanonicalMapStatement
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.JetMapFrameEqApplyQAdaptedCoordinatesStatement
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.JetMapIdentityTransportComplexToPadicStatement
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.SupportDegreeEqOfMemWeightPolynomialsStatement
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.KernelFormComplexPolynomialIdentityStatement
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.TrueKernelJetsLiftDegreesAlgebraicStatement
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.DtTiedTrue
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.LevOkTwists
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0434
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.JetMapFrameEqApplyQAdaptedCoordinates
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0433
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0435
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0462
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0299
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0273
 public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.RelDetAdelicOfPinned
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.TrueColumnChainsSatisfyConditions
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.RhoThreeOfOfDeterminantCharacterFiniteOrderType
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExistsPowEqSpanNormOne
-public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.KernelCharactersEqReference
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0297
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0069
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0113
+public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.Bundle0017
 
 @[expose] public section
 
@@ -261,7 +260,7 @@ open GlobalTheory.KForm.EntTrue Formalism.MainNotions.TaylorLogMetric Formalism.
 theorem GlobalTheory.Mem.Col2.TC.kerEnt_kform_true : ∀ {B : Base} {X : PreX B.toPre} (I : TC B X), ColIn.Ok I → TC.Pins B X → ∀ (l : TC.Laws I) (Z : TC.Later B (TC.cols I l)), ∀ (l0 : TC.Law0 I l) (Y : DivX (_root_.GlobalTheory.Mem.assemble _ _ Z.W Z.V Z.S Z.N Z.G)) (O : ∀ u a, GL3Theta.LiftObj (_root_.GlobalTheory.Mem.assemble _ _ Z.W Z.V Z.S Z.N Z.G) ((_root_.GlobalTheory.Mem.assemble _ _ Z.W Z.V Z.S Z.N Z.G).chTw u a)) (Pl : Examples₂.EntPl (_root_.GlobalTheory.Mem.assemble _ _ Z.W Z.V Z.S Z.N Z.G)) (Bs : PlaceMatrixFamily (_root_.GlobalTheory.Mem.assemble _ _ Z.W Z.V Z.S Z.N Z.G)), TC.QpIs I Y.Qp → TC.StdO I l Z Y.Qp O → BasOk Pl O Bs → (∀ u a w, LevFree Y u a w → ∀ i, i ≤ B.R.m → ∀ c τ j k, ∃ x : (_root_.GlobalTheory.Mem.assemble _ _ Z.W Z.V Z.S Z.N Z.G).what₂.LL, Bs u a w i c τ j k = Pl.iL w x) → (∀ u a i, i < B.R.m → UnfIsAll (O u a) i) → ColIn.JetsIn I → ∀ u μ w, LevFree Y u μ w → ∀ i, i < (_root_.GlobalTheory.Mem.assemble _ _ Z.W Z.V Z.S Z.N Z.G).R.m → ∀ (c : ((_root_.GlobalTheory.Mem.assemble _ _ Z.W Z.V Z.S Z.N Z.G).chTw u μ).cls i) (c' : ((_root_.GlobalTheory.Mem.assemble _ _ Z.W Z.V Z.S Z.N Z.G).chTw u μ).cls (i + 1)) (v : ValQ O u μ i) (v' : ValQ O u μ (i + 1)), evC O u μ (i + 1) v' = ((_root_.GlobalTheory.Mem.assemble _ _ Z.W Z.V Z.S Z.N Z.G).chTw u μ).Kmap i c c' (evC O u μ i v) → ∀ J, prTC Pl O Bs u μ w i c' v' J = unC Pl O Bs u μ w i c c' * prSC Pl O Bs u μ w i c v (KM.applyAt0 ((_root_.GlobalTheory.Mem.assemble _ _ Z.W Z.V Z.S Z.N Z.G).R.N i) ((_root_.GlobalTheory.Mem.assemble _ _ Z.W Z.V Z.S Z.N Z.G).R.N (i + 1)) ((_root_.GlobalTheory.Mem.assemble _ _ Z.W Z.V Z.S Z.N Z.G).what₂.places.resChar w) (thAtW Pl O Bs u μ w i c c') (KM.Gxz ((_root_.GlobalTheory.Mem.assemble _ _ Z.W Z.V Z.S Z.N Z.G).R.N i) ((_root_.GlobalTheory.Mem.assemble _ _ Z.W Z.V Z.S Z.N Z.G).R.N (i + 1)) (nuD (_root_.GlobalTheory.Mem.assemble _ _ Z.W Z.V Z.S Z.N Z.G) u i) J)) := by
   intro B X I hok hp l Z l0 Y O Pl Bs hq hs hB hent hU hJ u μ w hw i hi c c' v v' hK J
   have hR := GlobalTheory.KForm.EntTrue.rhoAlg_std I hok hp l Z hs u μ
-  have hCo := GlobalTheory.T.toy_entPl_canOnto (I.rec7 l Z) Pl
+  have hCo := _root_.GlobalTheory.Mem.CanonicalSurjection.canOnto_all (I.rec7 l Z) Pl
   have hS := canS_of Pl Bs hCo
   have hT := canT_of Pl Bs hCo
   have hdg : ∀ τ, (O u μ).dgen τ ∈ Qbar := by
@@ -272,7 +271,7 @@ theorem GlobalTheory.Mem.Col2.TC.kerEnt_kform_true : ∀ {B : Base} {X : PreX B.
     exact GlobalTheory.KForm.qbar_of_numberField M s
   have hdet : ∀ τ, (Bs u μ w i c τ).det ≠ 0 := fun τ => (hB u μ w i hi.le c τ).1
   change tgtPh Pl O Bs u μ w i c' v' (MvPolynomial.map (Int.castRingHom _) (KM.nablaX _ (nuD (I.rec7 l Z) u i) J)) = _
-  refine GlobalTheory.T.minorProductPairing_determined_by_canonicalMap (I.rec7 l Z) _ _ (N_le_succ _ i) (nuD (I.rec7 l Z) u i) (fun z => nuD_rows _ u i z)
+  refine _root_.GlobalTheory.KForm.WWUnique.ww_unique (I.rec7 l Z) _ _ (N_le_succ _ i) (nuD (I.rec7 l Z) u i) (fun z => nuD_rows _ u i z)
     (thAtW Pl O Bs u μ w i c c') (prSC Pl O Bs u μ w i c v) (tgtPh Pl O Bs u μ w i c' v') (unC Pl O Bs u μ w i c c')
     (MvPolynomial.C (∏ τ, (Bs u μ w i c τ).det ^ (-((I.rec7 l Z).chTw u μ).sSharp i τ)) *
       MvPolynomial.aeval (fun k : GL3Theta.FrV (I.rec7 l Z) ((I.rec7 l Z).R.N i) => ∑ a : Fin ((I.rec7 l Z).R.N i),
@@ -301,26 +300,26 @@ theorem GlobalTheory.Mem.Col2.TC.kerEnt_kform_true : ∀ {B : Base} {X : PreX B.
     have hρ : ((GL3Theta.rhoOf (I.rec7 l Z) (O u μ).mt i ((O u μ).dt i c) : ℂˣ) : ℂ) *
         ((GL3Theta.rhoOf' (I.rec7 l Z) (O u μ).mt i ((O u μ).dt (i + 1) c') : ℂˣ) : ℂ) ∈ Qbar :=
       mul_mem ((hR i hi).1 c) ((hR i hi).2 c')
-    have htr := GlobalTheory.T.jetMap_identity_transport_complex_to_padic (I.rec7 l Z) (Pl.lam w) (jetC (O u μ).dgen ((O u μ).Th i c c'))
+    have htr := _root_.GlobalTheory.jetMapTransport (I.rec7 l Z) (Pl.lam w) (jetC (O u μ).dgen ((O u μ).Th i c c'))
       (fun m => (m.prod fun k n => lamC (Pl.lam w) ((O u μ).dgen k.1) ^ n) * (m.prod fun _ n => (n.factorial : ℂ_[(I.rec7 l Z).what₂.places.resChar w])) *
         MvPowerSeries.coeff m (pSer (I.rec7 l Z) (Pl.lam w) ((O u μ).Th i c c')))
       (fun τ => ∑ r, nuT (I.rec7 l Z) u i τ r) ⟨_, hρ⟩
       (MvPolynomial.map (jL w) (secC O u μ (i + 1) v' : MvPolynomial (GL3Theta.FrV (I.rec7 l Z) ((I.rec7 l Z).R.N (i + 1))) (I.rec7 l Z).what₂.LL))
       (MvPolynomial.map (jL w) (srcPol u μ i (secC O u μ i v : MvPolynomial (GL3Theta.FrV (I.rec7 l Z) ((I.rec7 l Z).R.N i)) (I.rec7 l Z).what₂.LL)))
-      (fun m hm => ⟨⟨_, GlobalTheory.T.trueKernelJets_liftDegrees_algebraic I hok hp l Z Y.Qp O hs hJ u μ i hi c c' m hm⟩, rfl,
+      (fun m hm => ⟨⟨_, _root_.GlobalTheory.Mem.Col2.TC.jetC_th_mem_Qbar I hok hp l Z Y.Qp O hs hJ u μ i hi c c' m hm⟩, rfl,
         (GlobalTheory.KForm.lamC_coe _ _).symm.trans
-          (GlobalTheory.KForm.lamC_jetC (I.rec7 l Z) (Pl.lam w) _ hdg _ m (GlobalTheory.T.trueKernelJets_liftDegrees_algebraic I hok hp l Z Y.Qp O hs hJ u μ i hi c c' m hm))⟩)
-      (fun e he τ => GlobalTheory.T.support_degree_eq_of_mem_weightPolynomials (nuT (I.rec7 l Z) u i) _ (srcPol_mem u μ i hi _) e (MvPolynomial.support_map_subset _ _ he) τ)
+          (GlobalTheory.KForm.lamC_jetC (I.rec7 l Z) (Pl.lam w) _ hdg _ m (_root_.GlobalTheory.Mem.Col2.TC.jetC_th_mem_Qbar I hok hp l Z Y.Qp O hs hJ u μ i hi c c' m hm))⟩)
+      (fun e he τ => _root_.GlobalTheory.Mem.WtHomog.deg_eq_of_mem_wtPol (nuT (I.rec7 l Z) u i) _ (srcPol_mem u μ i hi _) e (MvPolynomial.support_map_subset _ _ he) τ)
       (by
         rw [MvPolynomial.map_map, MvPolynomial.map_map, alg_jL]
-        exact GlobalTheory.T.kernelForm_complex_polynomial_identity (I.rec7 l Z) O u μ i hi (hU u μ i hi) c c' v v' hK)
+        exact _root_.GlobalTheory.Mem.KerForm.complex_kform (I.rec7 l Z) O u μ i hi (hU u μ i hi) c c' v v' hK)
     have hd0 : (∏ τ, (Bs u μ w i c τ).det ^ (-((I.rec7 l Z).chTw u μ).sSharp i τ)) ≠ 0 :=
       Finset.prod_ne_zero_iff.2 fun τ _ => zpow_ne_zero _ (hdet τ)
     show (∏ τ, (Bs u μ w (i + 1) c' τ).det ^ (-((I.rec7 l Z).chTw u μ).sDiv i τ)) *
       MvPolynomial.eval (fun k : GL3Theta.FrV (I.rec7 l Z) ((I.rec7 l Z).R.N (i + 1)) => (Bs u μ w (i + 1) c' k.1 * y' k.1) k.2.1 k.2.2)
         (MvPolynomial.map (Pl.iL w) (secC O u μ (i + 1) v' : MvPolynomial (GL3Theta.FrV (I.rec7 l Z) ((I.rec7 l Z).R.N (i + 1))) (I.rec7 l Z).what₂.LL)) = _
     rw [hmap, htr, map_mul, MvPolynomial.eval_C, ← hmap,
-      GlobalTheory.T.jetMap_frame_eq_applyQ_adapted_coordinates (I.rec7 l Z) _ _ (N_le_succ _ i) (pSer (I.rec7 l Z) (Pl.lam w) ((O u μ).Th i c c'))
+      _root_.GlobalTheory.JetChain.jetMap_frame_eq_applyQ (I.rec7 l Z) _ _ (N_le_succ _ i) (pSer (I.rec7 l Z) (Pl.lam w) ((O u μ).Th i c c'))
         (fun τ => lamC (Pl.lam w) ((O u μ).dgen τ)) (Bs u μ w i c) (Bs u μ w (i + 1) c') hdet, GlobalTheory.KForm.applyQ_C_mul _ _ _ _ _ hd0]
     have hl : (Pl.lam w) ⟨_, hρ⟩ = lamC (Pl.lam w) ((GL3Theta.rhoOf (I.rec7 l Z) (O u μ).mt i ((O u μ).dt i c) : ℂˣ) : ℂ) *
         lamC (Pl.lam w) ((GL3Theta.rhoOf' (I.rec7 l Z) (O u μ).mt i ((O u μ).dt (i + 1) c') : ℂˣ) : ℂ) := by

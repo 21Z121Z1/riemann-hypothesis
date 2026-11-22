@@ -1,13 +1,13 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.IsHeisTrivial
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.SumOpTransversal
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.HeisenbergIntertwiningSumsCompEqIndex
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.NormalizedHeisenbergIntertwinerComp
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsIntertwinerHeisenbergCocycleOfFixedVector
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0010
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0040
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0051
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0107
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0020
 public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsWeilRepresentationHeisenberg
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.SpanHeisenbergTranslatesVacuumEqTop
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0058
 
 @[expose] public section
 

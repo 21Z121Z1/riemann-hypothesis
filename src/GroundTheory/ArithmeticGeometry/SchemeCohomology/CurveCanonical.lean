@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import GroundTheory.ArithmeticGeometry.SchemeCohomology.CurveDivisors
-public import GroundTheory.ArithmeticGeometry.SchemeCohomology.CurveProper
+public import GroundTheory.ArithmeticGeometry.SchemeCohomology.Bundle0005
 public import GroundTheory.ArithmeticGeometry.SchemeCohomology.WeilDivisorSheaf
 public import GroundTheory.ArithmeticGeometry.SchemeCohomology.InvertibleSheaf
 public import GroundTheory.ArithmeticGeometry.SchemeCohomology.WeilDivisorInvertible

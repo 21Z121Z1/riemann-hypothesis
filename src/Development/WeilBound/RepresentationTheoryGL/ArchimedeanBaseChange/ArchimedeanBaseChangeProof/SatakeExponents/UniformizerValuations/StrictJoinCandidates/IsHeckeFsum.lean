@@ -2,10 +2,10 @@ module
 
 public import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.SatakeExponents.UniformizerValuations.StrictJoinCandidates.InertInSec
 public import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.SatakeExponents.UniformizerValuations.ShuffleChoices.ValEqCard
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.UnitaryLevelSubgroupProperties
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0577
 public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LocalAlgebraHolds
 public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MatchingTransferOf
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RelIndexNeZeroOfSubsetCpt
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1044
 
 @[expose] public section
 

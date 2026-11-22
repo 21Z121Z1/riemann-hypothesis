@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Formalism.PeriodIntegrals.HwFixedLine
-public import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.HwIrred
+public import Formalism.PeriodIntegrals.Bundle0022
+public import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.Bundle0020
 
 @[expose] public section
 

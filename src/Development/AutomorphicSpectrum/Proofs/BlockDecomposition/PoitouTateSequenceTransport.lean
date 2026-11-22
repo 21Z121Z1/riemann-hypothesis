@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Development.WeilBound.CoreStatements.TemperedRepresentationTheory.GelfandSpectralNormalisation.NormalisedInvariants.PTConclAt
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.NineTermExactIff
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0130
 public import ReciprocityTheory.NeutralLocalFields.LocalFieldComparison.TransportA
 
 @[expose] public section

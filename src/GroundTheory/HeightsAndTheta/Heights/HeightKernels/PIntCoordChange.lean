@@ -1,12 +1,11 @@
 module
 
 public import Mathlib
-public import GroundTheory.HeightsAndTheta.Heights.HeightKernels.StatementsIntCoordChange
-public import GroundTheory.HeightsAndTheta.Heights.HeightKernels.StatementsIntCoordGeoNum
-public import GroundTheory.HeightsAndTheta.Heights.HeightKernels.StatementsIntCoordArInt
-public import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.PSpecialMultAt
+public import GroundTheory.HeightsAndTheta.Heights.HeightKernels.Bundle0047
+public import GroundTheory.HeightsAndTheta.Heights.HeightKernels.Bundle0048
+public import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.Bundle0010
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArithmeticIntersection.RationalSections.ThmISt
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.InterDivSupp
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.Bundle0017
 
 @[expose] public section
 

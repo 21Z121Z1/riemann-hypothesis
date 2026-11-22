@@ -1,9 +1,9 @@
 module
 
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.HeightAndVanishing.LayerLe
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.HeightAndVanishing.HostLevel
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.CharacterLevelBounds.LevChange
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.CharacterLevelBounds.LevGal
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.HeightAndVanishing.Bundle0001
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.CharacterLevelBounds.Bundle0001
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.CharacterLevelBounds.Bundle0002
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.CharacterLevelBounds.ClsOnto
 
 @[expose] public section

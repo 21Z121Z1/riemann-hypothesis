@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Formalism.ThetaLogCoordinates.JacobiPathWeights.StatementA
+public import Formalism.ThetaLogCoordinates.JacobiPathWeights.Bundle0003
 
 @[expose] public section
 

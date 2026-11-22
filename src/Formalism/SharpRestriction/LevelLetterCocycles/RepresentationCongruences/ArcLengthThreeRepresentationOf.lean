@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Formalism.SharpRestriction.LevelLetterCocycles.RepresentationCongruences.AlgebraMapMemInvariants
-public import Formalism.SharpRestriction.LevelLetterCocycles.RepresentationCongruences.PpLeHLD
+public import Formalism.SharpRestriction.LevelLetterCocycles.RepresentationCongruences.Bundle0007
+public import Formalism.SharpRestriction.LevelLetterCocycles.RepresentationCongruences.Bundle0015
 public import Formalism.SharpRestriction.LevelLetterCocycles.RelayGeneralCaseOfAdmissible
 public import Formalism.SharpRestriction.LevelLetterCocycles.JumpsLetOfWin
 

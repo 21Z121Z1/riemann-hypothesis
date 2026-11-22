@@ -1,6 +1,6 @@
 module
 
-public import Development.WeilBound.CoreStatements.SesquilinearFractions.IntegralLieModel
+public import Development.WeilBound.CoreStatements.SesquilinearFractions.Bundle0009
 
 @[expose] public section
 

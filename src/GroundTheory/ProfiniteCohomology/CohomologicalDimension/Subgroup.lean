@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import GroundTheory.ProfiniteCohomology.CohomologicalDimension.Closed
-public import GroundTheory.ProfiniteCohomology.NotDvdSuperIndexIffMap
+public import GroundTheory.ProfiniteCohomology.Bundle0004
 
 @[expose] public section
 

@@ -6,7 +6,7 @@ public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Analyt
 public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.RayClassLFunctionFamilyContinuationGrowth
 public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.RayClassFamilyLogDerivReGtOne
 public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.LogDerivSubExceptionalLe
-public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.TruncatedPerronOfLeTwoVonMangoldt
+public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0017
 public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.SumVonMangoldtLeTwoMul
 
 @[expose] public section

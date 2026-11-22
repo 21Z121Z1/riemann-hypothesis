@@ -1,6 +1,6 @@
 module
 
-public import Formalism.SharpRestriction.Divisibility.PlaceRankTwoOne
+public import Formalism.SharpRestriction.Divisibility.Bundle0001
 public import Formalism.FrobeniusOrbits.FrobeniusOrbitsProofs.SplitK
 public import Formalism.FrobeniusOrbits.FrobeniusOrbitsProofs.DiscrB
 public import Formalism.DirichletDensity.HostDensityArith

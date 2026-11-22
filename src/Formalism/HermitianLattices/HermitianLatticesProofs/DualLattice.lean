@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Formalism.HermitianLattices.StatementLat
-public import Formalism.HermitianLattices.HermitianLatticesProofs.DualBasic
+public import Formalism.HermitianLattices.HermitianLatticesProofs.Bundle0001
 
 @[expose] public section
 

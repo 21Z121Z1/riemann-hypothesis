@@ -2,8 +2,8 @@ module
 
 public import Mathlib
 public import GroundTheory.GlobalFields.ComplexMultiplication.FrobeniusAtPrimesIsogeny
-public import GroundTheory.GlobalFields.ComplexMultiplication.FrobeniusAtPrimesLocal
-public import GroundTheory.GlobalFields.ComplexMultiplication.BadPrimesFinite
+public import GroundTheory.GlobalFields.ComplexMultiplication.Bundle0016
+public import GroundTheory.GlobalFields.ComplexMultiplication.Bundle0003
 public import GroundTheory.GlobalFields.ComplexMultiplication.AlgebraicityDescent
 
 @[expose] public section

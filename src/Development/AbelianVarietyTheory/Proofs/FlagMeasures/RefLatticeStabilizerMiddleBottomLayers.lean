@@ -1,16 +1,16 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.NormalFormDualOrthogonalLast
-public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.IsNormalFormStabilizerMeasure
-public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.IsFundOne
+public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.Bundle0004
+public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.Bundle0010
+public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.Bundle0011
 public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.HermFramePairNormalFormGeometrySummary
 public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.HermFramePairCommonUnipotentStabiliserSummary
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsIntegerAddStarEqOneOfIsCMUnram
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.MemIpowSmulOfSmulMem
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.HermitianUnipotentGeneratorMapIsometryStatement
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.HermitianUnipotentGeneratorMapCompNegStatement
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ReferenceLatticeMemOfMemInnerSpanStatement
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0059
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0097
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0103
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0102
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0100
 
 @[expose] public section
 
@@ -460,7 +460,7 @@ theorem GlobalTheory.RowStab.middle_bottom_layers : ∀ (K V : Type) [Field K] [
         have := ref_coeff N L a ((mem_JJ N a).mp ha) _ h2
         rwa [map_smul, LinearMap.smul_apply, smul_eq_mul] at this
       have h4 : t • ρ ∈ N.Wn := N.Wn.smul_mem t hρW
-      exact ⟨GlobalTheory.T.referenceLattice_mem_of_mem_innerSpan K V H hK r N L hz _ h3 h4, h4⟩
+      exact ⟨_root_.GlobalTheory.DegCnt.NF.ref_mem_of_mem_Wn K V H hK r N L hz _ h3 h4, h4⟩
     · show d - ρ ∈ _
       rw [hρdef, sub_sub_cancel]
       exact Submodule.sum_mem _ fun a ha => Submodule.smul_mem _ _ (e_mem_II N a ((mem_JJ N a).mp ha))

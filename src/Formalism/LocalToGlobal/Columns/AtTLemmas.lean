@@ -1,9 +1,8 @@
 module
 
 public import Mathlib
-public import Formalism.LocalToGlobal.Columns.ScaledRamifiedLattice
+public import Formalism.LocalToGlobal.Columns.Bundle0004
 public import Formalism.LocalToGlobal.Columns.GSetLemmas
-public import Formalism.LocalToGlobal.Columns.ColFormsLemmas
 
 @[expose] public section
 

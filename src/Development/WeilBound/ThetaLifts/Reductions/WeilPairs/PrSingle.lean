@@ -1,14 +1,14 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ReindexDblIncM
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LagrInt
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PairAdaptedProjectionExists
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.StandardTraceAddCharIsStandardCharOfAdmissibleCM
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EqZeroOfAdelicFourierSeparatingCharsVanishStatement
-public import Development.WeilBound.ThetaLifts.Reductions.WeilPairs.Mfac
-public import Development.WeilBound.ThetaLifts.Reductions.WeilPairs.DCdE
-public import Development.WeilBound.ThetaLifts.Reductions.WeilPairs.IntegralMul
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1402
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1429
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1694
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1014
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1597
+public import Development.WeilBound.ThetaLifts.Reductions.WeilPairs.Bundle0002
+public import Development.WeilBound.ThetaLifts.Reductions.WeilPairs.Bundle0003
+public import Development.WeilBound.ThetaLifts.Reductions.WeilPairs.Bundle0005
 
 @[expose] public section
 

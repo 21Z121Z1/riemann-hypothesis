@@ -1,12 +1,12 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.ExistsPowSubMemSpanOfIsUnitModOfIsAlgClosed
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.Bundle0004
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArithmeticIntersection.RationalSections.ThmISt
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.InterBridgeB
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.Bundle0009
 public import GroundTheory.HeightsAndTheta.Heights.HeightKernels.PCoordConeArithVar
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ComplexPointConjugateStatement
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ComplexPointExistsUniqueEmbeddingStatement
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0029
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0037
 
 @[expose] public section
 
@@ -350,7 +350,7 @@ theorem average {y : (Σ k, ι k) → Ω} {φ : F →+* Ω} {t : (F →+* ℂ) �
       exact ⟨i, by simpa [cj] using hi⟩
     exact (hu.smooth.add (hu.smooth.comp cj_contDiff.contDiffOn hmaps)).div_const 2
   · have h1 := hu.near σ z hz
-    have h3 := hu.near (ComplexEmbedding.conjugate σ) (cj z) (GlobalTheory.T.complex_point_conjugate K ι Ω F y φ σ z hz)
+    have h3 := hu.near (ComplexEmbedding.conjugate σ) (cj z) (_root_.GlobalTheory.CompanionTheory.Ar.Flat.ptOver_conj K ι Ω F y φ σ z hz)
     rw [ht σ] at h3
     have h2 : ∀ᶠ z' in 𝓝 z, u (cj z') = t σ :=
       Filter.Tendsto.eventually ((cj_contDiff (K := K) (ι := ι) (n := 0)).continuous.continuousAt) h3

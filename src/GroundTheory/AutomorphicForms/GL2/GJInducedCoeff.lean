@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import GroundTheory.AutomorphicForms.GL2.GJZetaDefs
-public import GroundTheory.AutomorphicForms.HaarCosets
+public import GroundTheory.AutomorphicForms.GL2.Bundle0002
+public import GroundTheory.AutomorphicForms.Bundle0008
 
 @[expose] public section
 

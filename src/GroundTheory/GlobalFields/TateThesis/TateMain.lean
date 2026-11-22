@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import GroundTheory.GlobalFields.TateThesis.TateThetaDecay
-public import GroundTheory.GlobalFields.TateThesis.ArchCharsUnitary
+public import GroundTheory.GlobalFields.TateThesis.Bundle0004
 
 @[expose] public section
 

@@ -1,17 +1,25 @@
 module
 
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.PadicHodgeTheory.ExistsTotallyImaginaryGeneratorOfIsCMField
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.PadicHodgeTheory.HasLocalLanglandsOfIsLocalArtinOfCMDatum
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.PadicHodgeTheory.Bundle0012
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.PadicHodgeTheory.Bundle0034
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.PadicHodgeTheory.HasLocalLanglandsIffOfPlaceIso
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.PadicHodgeTheory.LaArtin
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.QuadraticTwists.ExBridge
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.QuadraticTwists.ExPlaceIso
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.PadicHodgeTheory.Bundle0030
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.QuadraticTwists.Bundle0001
 public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.FiniteDimensionalAdjoinRange
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.LocalArtinMapUniqueTransportPlaceIso
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ChevalleyUnits
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ContinuousRingEquivLocalFieldPreservesValuationStatement
-public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.ExLift
-public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.ExComp
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0746
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0335
+public import Mathlib
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0653
+public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0025
+public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.Bundle0011
+public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.Bundle0009
+public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.Bundle0008
+public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.Bundle0001
+public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.Bundle0010
+public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.ExistsCellOfIsSubquotient
+public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.Bundle0001
+public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.ExistsUniqueHcharOfFiniteOrder
+public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0016
 
 @[expose] public section
 
@@ -71,7 +79,7 @@ theorem UpperTheory.V.Loc.ltAll :
   obtain ⟨aK, haK⟩ := UpperTheory.V.Loc.laArtin hG ht
   obtain ⟨aM, haM⟩ := UpperTheory.V.Loc.laArtin hG hu
   let wK : Emb l t' → ℤ := fun τ => wt ⟨τ.1.comp i.toRingHom, τ.2.comp hi.cont⟩
-  have hs : Continuous i'.symm := (GlobalTheory.T.continuous_ringEquiv_localField_preserves_valuation _ _ i' hi'.cont).1
+  have hs : Continuous i'.symm := (_root_.GlobalTheory.LocalFieldIso.continuous_iso_keeps_valuation _ _ i' hi'.cont).1
   let wM : Emb l (t'.under (𝓞 M)) → ℤ := fun τ => wK ⟨τ.1.comp i'.symm.toRingHom, τ.2.comp hs⟩
   refine (UpperTheory.hasLocalLanglands_iff_of_placeIso h ht Bw BK hj hjK e1 e2 e3 _ i hi ι wt wK (fun τ τ' e => congrArg wt (Subtype.ext e)) a aK
     (isLocalArtin_transport hG chevalleyUnits' _ _ _ _ h _ _ _ _ ht _ _ i hi a aK ha haK)).2 ?_

@@ -1,11 +1,11 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Divisors.TorMatch
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0066
 public import Development.AbelianVarietyTheory.Definitions.Divisors.LabRange
 public import Development.AbelianVarietyTheory.Statements.SemistableTorsion.ImmersedBy
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.UniformisationTorusMonoAndFactor
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsCommonFieldOfFieldPointsSamePoint
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0483
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2340
 
 @[expose] public section
 

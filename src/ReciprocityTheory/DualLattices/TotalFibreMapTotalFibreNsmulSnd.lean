@@ -1,8 +1,8 @@
 module
 
 public import ReciprocityTheory.DualLattices.NsmulTensorEqZero
-public import ReciprocityTheory.DualLattices.SmKerSurj
-public import ReciprocityTheory.DualLattices.TangentPairingStatement
+public import ReciprocityTheory.DualLattices.Bundle0018
+public import ReciprocityTheory.DualLattices.Bundle0015
 
 @[expose] public section
 

@@ -1,10 +1,10 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MapPairDetCovec
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1883
 public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsTangentPresentationPrime
-public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.UnitOfBijectiveMulNatural
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.EqOneOfPowEqOneOfCompEqOne
+public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0043
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0009
 
 @[expose] public section
 

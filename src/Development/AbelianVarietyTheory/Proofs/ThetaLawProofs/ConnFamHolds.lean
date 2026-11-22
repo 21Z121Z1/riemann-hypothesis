@@ -5,10 +5,10 @@ public import Development.AbelianVarietyTheory.Definitions.KeyFormula.GeomIntSel
 public import Development.AbelianVarietyTheory.Statements.FundamentalDomains.AtOfNumberField
 public import Development.AbelianVarietyTheory.Statements.ThetaLevelCharacters.MemThetaLevelCharDimZero
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.ValCalc
-public import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.KeyDatumConnectedFamilyOfPolarizedArithmeticFamiStatement
-public import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.PolarizedFamilyOfThetaUniformizationStatement
-public import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.AbelianSchemeLawsUnconditional
-public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ThetaUniformisationComplexAbelianVarieties
+public import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.Bundle0048
+public import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.PolarizedFamilyOfThetaUniformization
+public import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.Bundle0029
+public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0203
 public import Development.AbelianVarietyTheory.Proofs.ToricGeometry.TorusAlgebraicHolds
 
 @[expose] public section
@@ -16,8 +16,8 @@ public import Development.AbelianVarietyTheory.Proofs.ToricGeometry.TorusAlgebra
 namespace GlobalTheory.KeyFam
 
 theorem connFam_holds : GlobalTheory.KeyKa.ConnFam :=
-  GlobalTheory.T.keyDatumConnectedFamily_of_polarizedArithmeticFamily GlobalTheory.abelianSchemeLaws_all.1 GlobalTheory.abelianSchemeLaws_all.2
-    (GlobalTheory.T.polarized_family_of_theta_uniformization GlobalTheory.abelianSchemeLaws_all.1 GlobalTheory.abelianSchemeLaws_all.2 GlobalTheory.thetaUnifAV_closed
+  _root_.GlobalTheory.KeyFam.connFam_of_polFam GlobalTheory.abelianSchemeLaws_all.1 GlobalTheory.abelianSchemeLaws_all.2
+    (_root_.GlobalTheory.KeyFam.polFam GlobalTheory.abelianSchemeLaws_all.1 GlobalTheory.abelianSchemeLaws_all.2 GlobalTheory.thetaUnifAV_closed
       GlobalTheory.torusAlgebraic_holds)
 
 end GlobalTheory.KeyFam

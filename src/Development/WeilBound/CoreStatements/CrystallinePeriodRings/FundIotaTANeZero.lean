@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Development.WeilBound.CoreStatements.CrystallinePeriodRings.ExistsMapEqOfPowMul
-public import Development.WeilBound.CoreStatements.CrystallinePeriodRings.FrobAinfMapFrobenius
+public import Development.WeilBound.CoreStatements.CrystallinePeriodRings.Bundle0001
 public import GroundTheory.PAdicHodge.FundamentalSeqFixed
 
 @[expose] public section

@@ -1,13 +1,13 @@
 module
 
-public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.LandherrAndLandherrSt
-public import Development.WeilBound.CoreStatements.EqualVolumeCompactOpens.SaOpen
+public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.Bundle0054
+public import Development.WeilBound.CoreStatements.EqualVolumeCompactOpens.Bundle0002
 public import Development.WeilBound.CoreStatements.EqualVolumeCompactOpens.LocalToAdelic
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.CmTypeLetterFrameColumnDictionary
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.IsCombAtIffIsDerivAt0
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.UniformizationPeriodLatticeChange
-public import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.ExistsInvariantNatLengthLattice
-public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsLevelBlockOfEq
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0032
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0034
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0054
+public import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.Bundle0010
+public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0013
 
 @[expose] public section
 

@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import GroundTheory.LocalFields.LocalFourierChar
+public import GroundTheory.LocalFields.Bundle0009
 
 @[expose] public section
 

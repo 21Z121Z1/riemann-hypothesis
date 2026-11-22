@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicArithmetic.Foundations.Convolution.IntegrableConvolution.TensSmooth
-public import Development.AutomorphicArithmetic.Foundations.Convolution.IntegrableConvolution.LactLaws
+public import Development.AutomorphicArithmetic.Foundations.Convolution.IntegrableConvolution.Bundle0004
+public import Development.AutomorphicArithmetic.Foundations.Convolution.IntegrableConvolution.Bundle0006
 public import Development.AutomorphicArithmetic.Foundations.Convolution.ConvolutionKernels.KernelTransforms.LactConv
 
 @[expose] public section

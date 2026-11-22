@@ -5,8 +5,8 @@ public import Formalism.LocalRingCardinality.DataDIV
 public import Development.AbelianVarietyTheory.Definitions.Divisors.IsTorsionFreeOfForallExists
 public import Development.AbelianVarietyTheory.Definitions.Divisors.IsAffineOpenAndIsPushout
 public import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsIsClosedImmersionGenericPoint
-public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.AdjointEndomorphismsCubeLBOfDenseFibres
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.AmplePt
+public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0169
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.Bundle0018
 
 @[expose] public section
 

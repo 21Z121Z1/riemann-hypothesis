@@ -1,7 +1,7 @@
 module
 
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.HeightAndVanishing.LayerLe
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.HeightAndVanishing.ProjFacts
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.HeightAndVanishing.Bundle0003
 
 @[expose] public section
 

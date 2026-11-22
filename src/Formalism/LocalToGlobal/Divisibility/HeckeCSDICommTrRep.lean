@@ -4,8 +4,8 @@ public import Mathlib
 public import Formalism.LocalToGlobal.Divisibility.TrivialExtensionSideWellFormed
 public import Formalism.LocalToGlobal.Divisibility.DivisionHeightBoundColumns
 public import Formalism.LocalToGlobal.Columns.HeckeInert
-public import Formalism.LocalToGlobal.Columns.HeckeInertLemmas
-public import Formalism.LocalToGlobal.Columns.HeckeInertTr
+public import Formalism.LocalToGlobal.Columns.Bundle0006
+public import Formalism.LocalToGlobal.Columns.Bundle0008
 
 @[expose] public section
 

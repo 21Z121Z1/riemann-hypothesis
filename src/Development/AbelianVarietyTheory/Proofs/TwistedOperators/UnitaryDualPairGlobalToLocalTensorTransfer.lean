@@ -1,19 +1,18 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ThetaEqB
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IsThetaSubGAlgDOne
-public import Development.AbelianVarietyTheory.Definitions.Divisors.DiscreteSeriesHermitianUnique
-public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.HoweDualityUnitary
-public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.HoweDualityReal
-public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisGeometry₂.HypothesesAbsDet
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.AlgAtLeAlgD
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.RelInfAlt
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.MatchedMapsFourierTransform
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EigenIntertwinerSkewPlaneUniqueDual
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EqOfComponentTensorAdelicFunctionEq
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0295
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0305
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0041
+public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.Bundle0011
+public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisGeometry₂.Bundle0001
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0297
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0151
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0569
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1663
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1645
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaActionExists
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsFactorPureTensorComponentAtPlace
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1519
 
 @[expose] public section
 

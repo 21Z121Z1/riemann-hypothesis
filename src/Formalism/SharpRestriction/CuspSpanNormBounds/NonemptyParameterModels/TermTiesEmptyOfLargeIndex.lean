@@ -4,7 +4,7 @@ public import Formalism.SharpRestriction.CuspSpanNormBounds.FlagEEqHyperbolic
 public import Formalism.SharpRestriction.CuspSpanNormBounds.LocalGroupInFamilyNontrivial
 public import Formalism.SharpRestriction.CuspSpanNormBounds.UniformConstantsAndStatements
 public import Formalism.LocalRingCardinality.RankBoundMonotoneInDimension
-public import Formalism.LocalRingCardinality.SpanPowerMembership.ExampleClassGroupCardPos
+public import Formalism.LocalRingCardinality.SpanPowerMembership.Bundle0004
 
 @[expose] public section
 

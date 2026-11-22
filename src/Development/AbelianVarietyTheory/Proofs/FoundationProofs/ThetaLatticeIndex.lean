@@ -3,10 +3,10 @@ module
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.Foundations.NormSumPairRankZeroOfCurveCoordNorm
 public import Formalism.PairingDivisors.StatementH
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.IdxEqRelIndex
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ThetaLatticeImageRationalHomLattice
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsGeneratorCmDifferentIdealScaled
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.IdealPeriodLatticeOfCurveDatum
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0252
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0256
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0249
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0224
 
 @[expose] public section
 

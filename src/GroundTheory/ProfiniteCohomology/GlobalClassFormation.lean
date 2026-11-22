@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import GroundTheory.ProfiniteCohomology.GlobalClassFormation.ClassFormationGlobal
-public import GroundTheory.ProfiniteCohomology.GlobalClassFormation.IdeleInvariants
+public import GroundTheory.ProfiniteCohomology.GlobalClassFormation.Bundle0002
 public import GroundTheory.ProfiniteCohomology.GlobalClassFormation.IdeleLimits.SubsingletonCohomologyThreeInfiniteDecomposition
 
 @[expose] public section

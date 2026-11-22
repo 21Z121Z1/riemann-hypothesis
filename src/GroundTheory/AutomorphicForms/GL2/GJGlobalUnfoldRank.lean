@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import GroundTheory.PowerSubgroups.CountableNeighbourhoods.SingleMemInitialCoordSubspace
+public import GroundTheory.PowerSubgroups.CountableNeighbourhoods.Bundle0001
 
 @[expose] public section
 

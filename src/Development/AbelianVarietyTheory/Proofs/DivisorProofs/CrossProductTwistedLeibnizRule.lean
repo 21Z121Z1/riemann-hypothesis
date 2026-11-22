@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CrossTZeroRight
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PullAwChainsBijective
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0372
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0444
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BijectiveTotalOfColumns
 
 @[expose] public section

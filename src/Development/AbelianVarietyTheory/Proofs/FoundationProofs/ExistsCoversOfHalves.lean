@@ -2,29 +2,29 @@ module
 
 public import Mathlib
 public import Formalism.LocalToGlobal.IndefiniteReal.OneMapT
-public import Development.AbelianVarietyTheory.Proofs.HeightProofs.ExistsSecCharVal
-public import Development.AbelianVarietyTheory.Proofs.HeightProofs.PowClassNumberIntegral
-public import Formalism.LocalToGlobal.ProjectiveLattices.HasDataCondition
-public import Formalism.LocalToGlobal.ProjectiveLattices.FamilyUniformisationBasePointOrthogonalBis
-public import Formalism.LocalToGlobal.ProjectiveLattices.RecCond
-public import Formalism.LocalToGlobal.ProjectiveLattices.ParCanon
+public import Development.AbelianVarietyTheory.Proofs.HeightProofs.Bundle0067
+public import Development.AbelianVarietyTheory.Proofs.HeightProofs.Bundle0033
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0028
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0027
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0032
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0031
 public import Formalism.LocalToGlobal.ProjectiveLattices.ExistsParameterConditions
-public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.ThExprUniqOfChartIndep2
+public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0007
 public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsLevelMulSplit
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsDeltaDatumHigherLevel
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsEquivariantFunOnSpanningFamilies
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0108
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0032
 public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsIdempotentSectionFamily
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsComponentWeight
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0110
 public import Development.AbelianVarietyTheory.Proofs.GenericRegularity.MemRangeOfIsAlgebraicRatFun
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsAlgebraMapOfSigRFixed
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0071
 public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsHalfOfBasePins
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.TameHeckeCharTrivialOnFiniteUnitsCongOneStatement
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.IdelicCharacterPowEqOneFiniteIdelesOfOrderDvdStatement
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.HeckeCharEqOneOfTrivialFinitePartOneStatement
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsNthRootIdeleFinitePartOneStatement
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.IdelicCharacterTrivialBaseFiniteIdelesStatement
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsFiniteIdeleCharAtDeterminantRootsStatement
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.CharacterAtDetRootCongOneOddEqOneStatement
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0299
+public import Formalism.LocalToGlobal.IndefiniteReal.LinksDefs
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0296
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0293
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0292
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0297
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0295
 
 @[expose] public section
 
@@ -49,10 +49,10 @@ theorem exists_xi (D : D7) (V : HSp D) (c : (AE D)ˣ →* Circle) (χ : HChar D.
           xi (Matrix.GeneralLinearGroup.det (finHom V g)) = 1) ∧
       (∀ γ ∈ GQ V, xi (Matrix.GeneralLinearGroup.det (finHom V γ)) = 1) ∧
       ∀ g : GA D V, xi (Matrix.GeneralLinearGroup.det (finHom V g)) ^ n = 1 := by
-  have h1 : ∀ x, c x ^ n = 1 := GlobalTheory.T.heckeChar_eq_one_of_trivial_finitePartOne D (c ^ n) ⟨h.1.1.pow n, fun x => by
-    rw [MonoidHom.pow_apply, h.1.2, one_pow]⟩ (GlobalTheory.T.idelicCharacter_pow_eq_one_finiteIdeles_of_orderDvd D c χ h n ho)
+  have h1 : ∀ x, c x ^ n = 1 := _root_.GlobalTheory.HeckeFinTrivial.eq_one_of_trivial_on_finite D (c ^ n) ⟨h.1.1.pow n, fun x => by
+    rw [MonoidHom.pow_apply, h.1.2, one_pow]⟩ (_root_.GlobalTheory.CharOrderFin.char_pow_eq_one_of_orderDvd D c χ h n ho)
   have h2 : ∀ x : (AE D)ˣ, finPart D (x : AE D) = 1 → c x = 1 := fun x hx => by
-    obtain ⟨y, rfl⟩ := GlobalTheory.T.exists_nthRoot_idele_finitePart_one D n hn x hx
+    obtain ⟨y, rfl⟩ := _root_.GlobalTheory.IdeleDiv.exists_pow_eq_of_finPart_eq_one D n hn x hx
     rw [map_pow, h1]
   have h3 : ∀ a, c (idF D a) = 1 := fun a => by
     let b : (AF D.host.F)ˣ := Units.map ((MonoidHom.inr (Ainf D.host.F) (Af D.host.F)).comp
@@ -60,13 +60,13 @@ theorem exists_xi (D : D7) (V : HSp D) (c : (AE D)ˣ →* Circle) (χ : HChar D.
     let b' : (AF D.host.F)ˣ := Units.map ((MonoidHom.inl (Ainf D.host.F) (Af D.host.F)).comp
       (MonoidHom.fst (Ainf D.host.F) (Af D.host.F))) a
     have e : a = b' * b := Units.ext (Prod.ext (mul_one _).symm (one_mul _).symm)
-    rw [e, map_mul, map_mul, h2 (idF D b') rfl, GlobalTheory.T.idelicCharacter_trivial_baseFiniteIdeles D c χ h hF b rfl, one_mul]
-  obtain ⟨xi, hxi⟩ := GlobalTheory.T.exists_finiteIdeleChar_at_determinantRoots D V c h3 h2
+    rw [e, map_mul, map_mul, h2 (idF D b') rfl, _root_.GlobalTheory.BaseIdeleTriv.finite_idele_base_trivial D c χ h hF b rfl, one_mul]
+  obtain ⟨xi, hxi⟩ := _root_.GlobalTheory.DetRootChar.exists_finite_char D V c h3 h2
   obtain ⟨r1, -, r3, -⟩ := GlobalTheory.Member.isDetRoot_laws D V
   refine ⟨xi, hxi, fun N hN hu g hg => ?_, fun γ hγ => ?_, fun g => ?_⟩
   · obtain ⟨x, hx⟩ := r1 g
     refine Units.ext ?_
-    rw [hxi g x hx, GlobalTheory.T.character_at_detRoot_cong_one_odd_eq_one D V c N hN h3 h2 (GlobalTheory.T.tameHeckeChar_trivial_on_finiteUnits_cong_one D c χ h ht N hu) g x hx hg]
+    rw [hxi g x hx, _root_.GlobalTheory.DetRootCong.char_root_eq_one D V c N hN h3 h2 (_root_.GlobalTheory.tame_heckeChar_eq_one_of_finUnit D c χ h ht N hu) g x hx hg]
     rfl
   · obtain ⟨x, hx⟩ := r3 γ hγ
     refine Units.ext ?_

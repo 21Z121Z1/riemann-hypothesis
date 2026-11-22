@@ -5,7 +5,7 @@ public import Formalism.SharpRestriction.GlobalSchurBounds.TaylorLogMetric
 public import Formalism.LocalToGlobal.GlobalTheory.GL3.Statement
 public import Formalism.LocalToGlobal.GlobalTheory.GL3.CubicFields.EpsteinZeta.AreaLatIOfDiscr
 public import Formalism.LocalToGlobal.GlobalTheory.GL3.CubicFields.DifferentIdeal.CoeIdealDifferentNeZero
-public import Formalism.LocalToGlobal.GlobalTheory.GL3.CubicFields.DifferentIdeal.AbsNormInvMulDifferent
+public import Formalism.LocalToGlobal.GlobalTheory.GL3.CubicFields.DifferentIdeal.Bundle0001
 
 @[expose] public section
 

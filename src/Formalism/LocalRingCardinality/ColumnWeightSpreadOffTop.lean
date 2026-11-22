@@ -1,7 +1,7 @@
 module
 
 public import Formalism.LocalRingCardinality.DataParams
-public import Formalism.LocalRingCardinality.DataGatTies
+public import Formalism.LocalRingCardinality.Bundle0001
 public import Formalism.SharpRestriction.GrowthBounds.ObjPol
 
 @[expose] public section

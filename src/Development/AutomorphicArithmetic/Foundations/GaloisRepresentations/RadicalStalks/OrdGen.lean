@@ -6,17 +6,19 @@ public import Development.AutomorphicArithmetic.Foundations.GaloisRepresentation
 public import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.RadicalStalks.Point
 public import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.RadicalStalks.CohHomNatCastZero
 public import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.RadicalStalks.NotLeSpanImage
-public import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.RadicalStalks.KsCore
-public import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.RadicalStalks.PullFrobIter
+public import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.RadicalStalks.Bundle0007
+public import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.RadicalStalks.Bundle0005
 public import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.RadicalStalks.DualZeroOfSpan
-public import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.RadicalStalks.RadicalStalk
-public import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.RadicalStalks.OrdPull
-public import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.RadicalStalks.Factor
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsHarrisTaylorModuliObjectPullbackStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HarrisTaylorObjectPullbackCompDiagonalBundleStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HarrisTaylorExistsDeRhamPairingStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HodgeFiltrationLiftDeterminesModFilStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HarrisTaylorRealiseKodairaSpencerDirectionStatement
+public import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.RadicalStalks.Bundle0001
+public import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.RadicalStalks.Bundle0004
+public import Mathlib
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsHarrisTaylorModuliObjectPullback
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0028
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1339
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle3089
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1945
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle3091
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle3123
 
 @[expose] public section
 
@@ -93,7 +95,7 @@ theorem UpperTheory.Gal.Ord.ordGen :
     exact hk
   obtain ⟨hwM, f, hf, hnorm⟩ := exists_absNorm_eq w hwP hpw
   obtain ⟨π⟩ := par p D.F w f hwM hpw hf
-  obtain ⟨o₀, ⟨a₀⟩⟩ := GlobalTheory.T.exists_harrisTaylorModuliObject_pullback p D R b N M.X (Sp k) M.s (spMap β) y hyβ M.univ
+  obtain ⟨o₀, ⟨a₀⟩⟩ := _root_.GlobalTheory.HTPullEvery.exists_objMap p D R b N M.X (Sp k) M.s (spMap β) y hyβ M.univ
   apply ordPull p D R b N M.X M.s M.univ w k y (spMap β) o₀ a₀
   have hpnt : IsWOrd o₀ w (𝟙 (Sp k)) ∨ NOo hk o₀ π :=
     UpperTheory.Gal.Ord.point p D R b N hN hNp hm k hk β o₀ i w f hkerw hnorm hf π
@@ -120,7 +122,7 @@ theorem UpperTheory.Gal.Ord.ordGen :
     apply LinearMap.ext
     intro c
     exact hxε c
-  obtain ⟨φ, hφ⟩ := GlobalTheory.T.harrisTaylor_exists_deRham_pairing p D R b N hN hNp k (spMap β) o₀
+  obtain ⟨φ, hφ⟩ := _root_.GlobalTheory.UPel.HT.CorrForm.exists_isCorrForm_obj p D R b N hN hNp k (spMap β) o₀
   obtain ⟨g, hKS, hgx⟩ :=
     ks p D R b N hN hNp hm k hk β o₀ i w f hkerw hnorm hf π φ hφ x hxFil hhom ⟨y0, hy0, hxy0⟩
   obtain ⟨o', m', hlift⟩ := GlobalTheory.T.harrisTaylor_realise_kodairaSpencer_direction p D R b N hN hNp k (spMap β) o₀ β rfl φ hφ g hKS
@@ -133,7 +135,7 @@ theorem UpperTheory.Gal.Ord.ordGen :
     rw [CommRingCat.ofHom_id, Spec.map_id]
   obtain ⟨v, ⟨hv1, ⟨av⟩⟩, -⟩ := M.rep (Sp (DualNumber k)) _ o'
   have hcompv : Nonempty (ObjMap o₀ M.univ (spMap (TrivSqZeroExt.fstHom k k k).toRingHom ≫ v)) :=
-    (GlobalTheory.T.harrisTaylorObjectPullback_comp_diagonalBundle p D R b N _ _ _ _ _ _ M.univ o' o₀ v _).1 ⟨m'⟩ ⟨av⟩
+    (_root_.GlobalTheory.UPel.HT.objMap_comp_diag_lbIso p D R b N _ _ _ _ _ _ M.univ o' o₀ v _).1 ⟨m'⟩ ⟨av⟩
   have hyv : y = spMap (TrivSqZeroExt.fstHom k k k).toRingHom ≫ v := by
     apply (M.rep (Sp k) (spMap β) o₀).unique ⟨hyβ, ⟨a₀⟩⟩ ⟨?_, hcompv⟩
     rw [Category.assoc, hv1, ← Category.assoc, hcomp, Category.id_comp]
@@ -155,7 +157,7 @@ theorem UpperTheory.Gal.Ord.ordGen :
     (hv1.trans (GlobalTheory.Cris.spMap_comp β _).symm) (fun r hr => by
       have hr' : r ∈ RingHom.ker β := hkerβ ▸ hr
       rw [RingHom.comp_apply, RingHom.mem_ker.mp hr', map_zero])
-  obtain ⟨oκ, ⟨aκ⟩⟩ := GlobalTheory.T.exists_harrisTaylorModuliObject_pullback p D R b N M.X _ M.s (M.X.fromSpecResidueField z ≫ M.s)
+  obtain ⟨oκ, ⟨aκ⟩⟩ := _root_.GlobalTheory.HTPullEvery.exists_objMap p D R b N M.X _ M.s (M.X.fromSpecResidueField z ≫ M.s)
     (M.X.fromSpecResidueField z) rfl M.univ
   have a₀' : ObjMap o₀ M.univ (spMap σ ≫ M.X.fromSpecResidueField z) := by
     rw [hσ]
@@ -174,7 +176,7 @@ theorem UpperTheory.Gal.Ord.ordGen :
   have hNO' := desc p D R b N w f π _ k (DualNumber k) hκ hk hT σ τ _ _ _ oκ o₀ o' b₀ b' hNO
   have h0 := estep p D R b N w f hf π k hk hT (spMap β) _ o₀ o' m' hNO' x hxg
   rw [hhom] at h0
-  have hmem := (GlobalTheory.T.hodgeFiltration_lift_determines_mod_fil k o₀.A o'.A m'.φ m'.cart o'.ab x hxFil (g x) 0 (hlift x hxFil)).mp h0
+  have hmem := (_root_.GlobalTheory.KSGraph.isFilLift_iff_sub_mem k o₀.A o'.A m'.φ m'.cart o'.ab x hxFil (g x) 0 (hlift x hxFil)).mp h0
   have hneg := (Fil o₀.A).neg_mem hmem
   rw [zero_sub, neg_neg] at hneg
   exact hgx hneg

@@ -1,7 +1,7 @@
 module
 
 public import Development.WeilBound.ThetaLifts.CartanFactorisation.CartanConj
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EqOfComponentTensorAdelicFunctionEq
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1645
 
 @[expose] public section
 

@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.Foundations.PetEqRelIndexMulPetProd
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsMulOfDetZero
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0004
 
 @[expose] public section
 

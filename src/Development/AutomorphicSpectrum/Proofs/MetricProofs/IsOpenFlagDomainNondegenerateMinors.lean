@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Definitions.MetricPeriods.InFlagDomainOne
+public import Development.AutomorphicSpectrum.Definitions.MetricPeriods.Bundle0001
 
 @[expose] public section
 

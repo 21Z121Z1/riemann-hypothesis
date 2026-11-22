@@ -1,11 +1,11 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.AdelicHermitianForms.IsHermForm
+public import Development.AbelianVarietyTheory.Definitions.AdelicHermitianForms.Bundle0002
 public import Development.AbelianVarietyTheory.BlockTheory.AdelicCMFields.SupportedAtSplit
 public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.NefEffectiveCones.ExistsNsmulMulVecMemHat
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsAdeleRingTensorEquivInfiniteProdFinite
-public import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.UJClassFin
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0005
+public import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.Bundle0023
 
 @[expose] public section
 

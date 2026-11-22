@@ -3,10 +3,9 @@ module
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.EntryAgree
 public import Formalism.LocalToGlobal.Columns.ChainTw
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ConjSymmEntry
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.MemStabLIff
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0055
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0056
 public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ResiduesOfCompletionAtPrimeWithUniformizer
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ToLocEqMapToMatrix
 public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SymmetricChainSupportOneOfPattern
 
 @[expose] public section

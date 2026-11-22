@@ -3,7 +3,7 @@ module
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.ExpoConjOfIsCsd
 public import Development.AbelianVarietyTheory.Definitions.Foundations.AbsCharNotUnitary
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.DiscreteTopologyRatN
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0141
 
 @[expose] public section
 

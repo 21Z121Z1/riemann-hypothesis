@@ -5,10 +5,10 @@ public import Development.AbelianVarietyTheory.Definitions.Degenerations.BaseFac
 public import Development.AbelianVarietyTheory.Definitions.Degenerations.IsAffineSplitTorusLeft
 public import Development.AbelianVarietyTheory.Definitions.Degenerations.CompanionTheory
 public import Development.AbelianVarietyTheory.Statements.SemistableTorsion.UTorsSt
-public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsOperators
-public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.AddHomExtSingle
+public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.Bundle0070
+public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.Bundle0050
 public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsGlobalGenerators
-public import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.LinearIndependentOfCommSmul
+public import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.Bundle0008
 
 @[expose] public section
 

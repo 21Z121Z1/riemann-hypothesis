@@ -2,20 +2,21 @@ module
 
 public import Development.AutomorphicArithmetic.SpecialMaps.QuotObjDefs
 public import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsDimEqOne
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HomTorsionFree
-public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ConnectedSpaceSpecOfIsLocalRing
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BirigidifiedPullbackMulPairIsoTensorPowSq
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsFactorThroughIsogenyOfKillsKernelStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AbelianVarietyIntCastSmulIsogenyDegreeStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AbelianSchemeFieldSmoothOfRelativeDimensionExistStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AbelianVarietyExistsDualPairStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BiadditiveClassEqPoincarePullbackUniqueHomStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsAdjointUpToIntegerStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdjointUniqueAdditiveScalar
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdjointCancelNonzeroMultiple
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsInvExp
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HarrisTaylorExistsTypeTjPIsogeny
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AbelianSchemeTorsionPointLocallyConstantGeomPoinStatement
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2771
+public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.Bundle0078
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0823
+public import Mathlib
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2716
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2738
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2632
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle3084
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2633
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle3094
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2786
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle3087
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle3107
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle3138
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2876
 
 @[expose] public section
 
@@ -61,7 +62,7 @@ private theorem eq_zero_of_zsmul_eq_zero {K : Type} [Field K] (A B : AbVar K)
         GlobalTheory.CechPic.pull (lift a t).left β + GlobalTheory.CechPic.pull (lift a' t).left β)
     (hnorm : GlobalTheory.CechPic.pull (lift (𝟙 A.X) (1 : A.X ⟶ B.X)).left β = 0)
     (m : ℤ) (hm : m ≠ 0) (hmβ : m • β = 0) : β = 0 := by
-  obtain ⟨A', P, hdual, -⟩ := GlobalTheory.T.abelianVariety_exists_dual_pair K A
+  obtain ⟨A', P, hdual, -⟩ := _root_.GlobalTheory.AV.exists_dualPair K A
   have hP := hdual.1
   obtain ⟨ψ, hψ, -⟩ := GlobalTheory.T.biadditiveClass_eq_poincarePullback_unique_hom K A A' B P hP β hadd hnorm
   obtain ⟨ψ0, -, huniq⟩ := GlobalTheory.T.biadditiveClass_eq_poincarePullback_unique_hom K A A' B P hP 0 (by intros; simp) (by simp)
@@ -248,7 +249,7 @@ private theorem exists_adjoint :
     have := pow_gcd_eq_one.mpr ⟨h1, h2⟩
     rwa [hg, pow_one] at this
   let q : av o₁ ⟶ av o₁ := ((p ^ a : ℕ) : ℤ) • 𝟙 (av o₁)
-  have hq := (GlobalTheory.T.abelianVariety_intCast_smul_isogeny_degree Ω (av o₁) ((p ^ a : ℕ) : ℤ) (by exact_mod_cast (pow_pos hp.pos a).ne')).1
+  have hq := (_root_.GlobalTheory.MulIsogeny.mul_isogeny Ω (av o₁) ((p ^ a : ℕ) : ℤ) (by exact_mod_cast (pow_pos hp.pos a).ne')).1
   have hqhom : ∀ (T : Over (Sp Ω)) (x : T ⟶ o₁.A), x ≫ GlobalTheory.AV.AbVar.Hom.hom q = x ^ (p ^ a) := by
     intro T x
     have e1 := congrArg (fun u => x ≫ u)
@@ -256,7 +257,7 @@ private theorem exists_adjoint :
     have e2 := GlobalTheory.AV.AbVar.AdjCalc.comp_zpow' (G := o₁.A) x (𝟙 o₁.A) ((p ^ a : ℕ) : ℤ)
     rw [Category.comp_id, zpow_natCast] at e2
     exact e1.trans e2
-  obtain ⟨g, hg⟩ := GlobalTheory.T.exists_factor_through_isogeny_of_kills_kernel Ω (av o₁) (av o₁) (av o₂) q h hq (fun T x hx => by
+  obtain ⟨g, hg⟩ := _root_.GlobalTheory.AV.AbVar.exists_factor_of_isogeny Ω (av o₁) (av o₁) (av o₂) q h hq (fun T x hx => by
     have := hkill T x ((hqhom T x).symm.trans hx)
     rw [hνdef] at this
     exact this)
@@ -329,13 +330,13 @@ private theorem exists_div :
     rfl
   have hf : GlobalTheory.AV.AbVar.Hom.hom f = o₁.act.act (algebraMap (𝓞 D.F) D.O β) ≫ ψ₁ ≫ φ₂ := rfl
   have hqi : GlobalTheory.AV.AbVar.IsIsogeny q :=
-    (GlobalTheory.T.abelianVariety_intCast_smul_isogeny_degree Ω (avOf o₁) _ (Nat.cast_ne_zero.mpr (pow_ne_zero _ (Fact.out : p.Prime).ne_zero))).1
+    (_root_.GlobalTheory.MulIsogeny.mul_isogeny Ω (avOf o₁) _ (Nat.cast_ne_zero.mpr (pow_ne_zero _ (Fact.out : p.Prime).ne_zero))).1
   have hker : ∀ (T : Over (Sp Ω)) (x : T ⟶ (avOf o₁).X), x ≫ GlobalTheory.AV.AbVar.Hom.hom q = 1 →
       x ≫ GlobalTheory.AV.AbVar.Hom.hom f = 1 := by
     intro T x hx0
     rw [hf]
     exact hker' T x (hq ▸ hx0)
-  obtain ⟨g, hg⟩ := GlobalTheory.T.exists_factor_through_isogeny_of_kills_kernel Ω (avOf o₁) (avOf o₁) (avOf o₂) q f hqi hker
+  obtain ⟨g, hg⟩ := _root_.GlobalTheory.AV.AbVar.exists_factor_of_isogeny Ω (avOf o₁) (avOf o₁) (avOf o₂) q f hqi hker
   haveI hgm : IsMonHom (GlobalTheory.AV.AbVar.Hom.hom g) := (Additive.toMul g).property
   refine ⟨GlobalTheory.AV.AbVar.Hom.hom g, hgm, ?_⟩
   rw [← hf, ← hg, GlobalTheory.AV.AbVar.comp_hom, hq]

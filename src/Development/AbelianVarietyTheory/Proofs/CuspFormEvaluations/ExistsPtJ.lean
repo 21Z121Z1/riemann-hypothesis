@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.IntChartCut
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.IsLieBasisBaseChange
+public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0006
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.Bundle0009
 public import Development.AbelianVarietyTheory.Proofs.FormalGroupCharts.ExistsIsUnivChartOfIsLieBasis
 public import Development.AbelianVarietyTheory.Proofs.FormalGroupCharts.FormalEvSecondPointOfXZero
 

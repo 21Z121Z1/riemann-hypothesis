@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.MemIntMat
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0196
 public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.MemHomLatticeIffIntegralMatrixSplitChart
 
 @[expose] public section

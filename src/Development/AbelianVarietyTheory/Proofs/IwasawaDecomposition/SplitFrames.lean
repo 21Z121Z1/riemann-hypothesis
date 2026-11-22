@@ -2,12 +2,12 @@ module
 
 public import Mathlib
 public import Formalism.LocalToGlobal.BesselHermitianTheta.AllTied
-public import Formalism.LocalToGlobal.IndefiniteReal.DatumVec
+public import Formalism.LocalToGlobal.IndefiniteReal.Bundle0016
 public import Formalism.LocalToGlobal.JointCharacters.LocEMulLocE
 public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.AdelicDataRowMeasureScaleTrivialTuple
-public import Formalism.LocalToGlobal.BesselHermitianTheta.TiedLocW
+public import Formalism.LocalToGlobal.BesselHermitianTheta.Bundle0005
 public import Development.AbelianVarietyTheory.BlockTheory.HeightDefect.SymplecticTensorMeasures
-public import Development.AbelianVarietyTheory.BlockTheory.HeightDefect.WeilIdempotents
+public import Development.AbelianVarietyTheory.BlockTheory.HeightDefect.Bundle0004
 
 @[expose] public section
 

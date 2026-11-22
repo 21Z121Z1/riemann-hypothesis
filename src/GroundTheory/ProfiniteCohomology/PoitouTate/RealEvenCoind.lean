@@ -3,7 +3,7 @@ module
 public import Mathlib
 public import GroundTheory.ProfiniteCohomology.PoitouTate.RealAbstract
 public import GroundTheory.ProfiniteCohomology.PoitouTate.RealCup
-public import GroundTheory.ProfiniteCohomology.RealPlaces.Induced
+public import GroundTheory.ProfiniteCohomology.RealPlaces.Bundle0003
 public import GroundTheory.ProfiniteCohomology.RealPlaces.DevissageNatural
 public import GroundTheory.ProfiniteCohomology.PoincarePairs
 public import GroundTheory.ProfiniteCohomology.RestrictedRamification.BaseCores

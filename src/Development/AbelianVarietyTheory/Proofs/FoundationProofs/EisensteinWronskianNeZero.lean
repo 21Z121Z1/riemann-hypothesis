@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.FiniteIndexOfGammaLe
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0007
 public import ReciprocityTheory.DualLattices.HasSumNormalizedDeriv
 
 @[expose] public section

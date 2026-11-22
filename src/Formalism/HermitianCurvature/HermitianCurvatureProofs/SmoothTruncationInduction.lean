@@ -1,7 +1,7 @@
 module
 
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutHBCutOff
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.DetLowW
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0251
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0261
 
 @[expose] public section
 

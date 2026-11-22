@@ -4,7 +4,7 @@ public import Mathlib
 public import GroundTheory.ProfiniteCohomology.RealPlaces.OrderTwoTate
 public import GroundTheory.ProfiniteCohomology.RealPlaces.LocalDualityPlace
 public import GroundTheory.ProfiniteCohomology.RealPlaces.GSDefs
-public import GroundTheory.ProfiniteCohomology.EulerCharDefs
+public import GroundTheory.ProfiniteCohomology.Bundle0004
 
 @[expose] public section
 

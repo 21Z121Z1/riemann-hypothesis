@@ -1,7 +1,7 @@
 module
 
 public import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.EigenvalueSeparation.StableEigenspaces.FrobeniusUniformizerIdentity
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.TendstoExpMulPoly
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0507
 
 @[expose] public section
 

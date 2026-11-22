@@ -1,7 +1,7 @@
 module
 
 public import Formalism.JacobiWeightFamilies.Statement
-public import Formalism.StatementU
+public import Formalism.Bundle0002
 public import Formalism.CorankShare.StatementFR
 public import Mathlib.Analysis.Fourier.FiniteAbelian.PontryaginDuality
 

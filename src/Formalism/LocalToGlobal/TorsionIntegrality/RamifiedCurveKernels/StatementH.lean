@@ -1,7 +1,7 @@
 module
 
-public import Formalism.GaussJetBounds.StatementQ
-public import Formalism.LocalToGlobal.TorsionIntegrality.SecondCoefficientNorms.JetExpShape
+public import Formalism.GaussJetBounds.Bundle0003
+public import Formalism.LocalToGlobal.TorsionIntegrality.SecondCoefficientNorms.Bundle0002
 public import Formalism.FormalGroupLog.Statement
 
 @[expose] public section

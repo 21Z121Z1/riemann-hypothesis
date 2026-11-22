@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import GroundTheory.HeightsAndTheta.Heights.HeightsOfSets.MemMCoordIdealIffOfIsWeightedHomogeneous
-public import GroundTheory.HeightsAndTheta.Heights.HeightsOfSets.Imports
+public import GroundTheory.HeightsAndTheta.Heights.HeightsOfSets.Bundle0003
 
 @[expose] public section
 

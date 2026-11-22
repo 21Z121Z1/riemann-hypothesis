@@ -2,9 +2,8 @@ module
 
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.ConvexNerveComplexes.NerveFaceClosed
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.ConvexNerveComplexes.NerveConvex
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.ConvexNerveComplexes.ExistsVert
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.ConvexNerveComplexes.ConeFinite
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.ConvexNerveComplexes.DualConvex
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.ConvexNerveComplexes.Bundle0002
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.ConvexNerveComplexes.Bundle0001
 
 @[expose] public section
 

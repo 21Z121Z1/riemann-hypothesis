@@ -2,9 +2,9 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.Foundations.SimpleSum
-public import Development.AbelianVarietyTheory.Definitions.Foundations.SimpleSumRowCol
-public import Development.AbelianVarietyTheory.Definitions.Foundations.SecondCountableAndT2LocalField
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.LinearChangeOfVariablesLocalFieldMatrix
+public import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0007
+public import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0005
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0031
 
 @[expose] public section
 

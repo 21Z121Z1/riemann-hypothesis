@@ -1,7 +1,7 @@
 module
 
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PullbackSections.ThetaWeightBounds
-public import Formalism.LocalToGlobal.LatticeGeometry.CmTypeMeetsConjugatePair
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PullbackSections.Bundle0012
+public import Formalism.LocalToGlobal.LatticeGeometry.Bundle0001
 
 @[expose] public section
 

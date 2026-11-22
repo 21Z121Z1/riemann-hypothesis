@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.WeilBound.CoreStatements.PublishedTheorems.PoitouTateDuality.NineAddOfFound2Fun
+public import Development.WeilBound.CoreStatements.PublishedTheorems.PoitouTateDuality.Bundle0007
 
 @[expose] public section
 

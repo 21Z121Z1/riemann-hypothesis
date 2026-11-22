@@ -1,6 +1,6 @@
 module
 
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.SupportPhiZeroSubset
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0082
 
 @[expose] public section
 

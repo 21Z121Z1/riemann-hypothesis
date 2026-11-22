@@ -1,7 +1,7 @@
 module
 
 public import Formalism.GradedWeylDivisibility.FinalD
-public import Formalism.GradedWeylDivisibility.FockSpaceTableaux.LClosedeqLemmas
+public import Formalism.GradedWeylDivisibility.FockSpaceTableaux.Bundle0010
 public import Lemmata.GeneralBFactLeftSide.Imports
 
 @[expose] public section

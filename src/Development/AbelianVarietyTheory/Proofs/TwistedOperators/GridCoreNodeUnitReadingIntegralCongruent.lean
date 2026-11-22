@@ -1,30 +1,30 @@
 module
 
-public import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.IsCoreLat
-public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.IntegrandSZero
+public import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.Bundle0006
+public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.Bundle0013
 public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.WeilRepresentationUnitaryPair
-public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.UnifModGrowthOfIsUnifModerate
-public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.EisRegularAtOfEisPoleLE
+public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.Bundle0007
+public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.Bundle0010
 public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.WeilSiegelFormulaUnitary
 public import Development.AbelianVarietyTheory.PublishedTheorems.SiegelWeil₂.SiegelWeilUnitaryConvergent
 public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.PairwiseDisjointCell
-public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.ExistsNormLeHeightPow
-public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.HarishChandraFinite
+public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.Bundle0007
+public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.Bundle0004
 public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.AdmissibleDiscreteSeriesOfHasParam
 public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.HarishChandraModulesOn
 public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.HasDRepIffHasDerivAt
 public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisGeometry₂.HoweUnram
-public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.DiscreteSeriesUpqExistsIffDsExists
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SymplecticFormUnitaryPairAction
+public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.Bundle0003
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0865
 public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.SelfDualLatticePairingDual
 public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsNsmulIntMemLatO
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SymplOSmulHalf
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0332
 public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IntegralIdempotentMulOfUnitTopBlockReductions
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MemHatMxHomLatIff
 public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.MemHatIffOfSelfDual
 public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.MemHatLConjIIffHform
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.FrameMatrixWeilPairActionLeftInv
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.HeisenbergOperatorConjugateHalfVacuumEqSemichara
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0148
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0540
 
 @[expose] public section
 
@@ -146,7 +146,7 @@ theorem one_sub_unit {𝔪 : Ideal (𝓞 D.host.E)} {Z : Finset (Pl D.host.E)} (
   have hdet : (1 - B).det ∈ Formalism.L2.Herm.intAf D.host.F D.host.E := by
     rw [e0, ← RingHom.mapMatrix_apply, ← RingHom.map_det]
     exact ((1 - Matrix.of s).det).2
-  refine GlobalTheory.T.exists_integral_inverse_at_splitPlaces_of_units Z e he _ hdet fun PP hPP => ?_
+  refine _root_.GlobalTheory.LocalInvIdem.exists_inv Z e he _ hdet fun PP hPP => ?_
   have hm : (1 - Matrix.of s).map (resS D.host.F PP) = 1 := by
     ext i j
     rw [Matrix.map_apply, Matrix.sub_apply, map_sub, Matrix.of_apply, resS_idS (hZ PP hPP) (hs i j), sub_zero,

@@ -3,8 +3,8 @@ module
 public import Mathlib
 public import Formalism.LocalToGlobal.SiegelLatticeTheory.ClosedLocalOrbits.RealObj
 public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.UnipotentRadicalInterConjugateClosedUnimodular
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.IsHaarMeasureOfSigmaFinite
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.UnitaryJHaarEntryBoundedPolynomialGrowthStatement
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0239
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0261
 
 @[expose] public section
 
@@ -115,7 +115,7 @@ theorem unimodular_of_unipotent : ∀ {n : ℕ} (ε : Fin n → Bool) (m : ℕ) 
   have key : ∀ s : S, Measure.modularCharacter s ≤ 1 := by
     intro s
     set Δ := Measure.modularCharacter s with hΔ
-    obtain ⟨C, D, hgr⟩ := GlobalTheory.T.unitaryJ_haar_entryBounded_polynomial_growth ε S hS μ ⟨hσ, h0, hc, hl⟩ hfin
+    obtain ⟨C, D, hgr⟩ := _root_.GlobalTheory.UJGrowth.growth ε S hS μ ⟨hσ, h0, hc, hl⟩ hfin
     obtain ⟨B, hB, hpow⟩ := bd_pow (hu _ (S.inv_mem s.2))
     let Bx : ℝ → Set (Formalism.REAL.UJ ε) := fun R => {g | ∀ i j, ‖Formalism.MainNotions.S.uMat g i j‖ ≤ R}
     obtain ⟨ρ, hρ⟩ : ∃ ρ : ℕ, μ (Bx ((ρ : ℝ) + 1)) ≠ 0 := by

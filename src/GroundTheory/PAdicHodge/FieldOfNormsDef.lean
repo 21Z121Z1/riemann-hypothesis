@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import GroundTheory.PAdicHodge.FieldOfNormsAPF
+public import GroundTheory.PAdicHodge.Bundle0007
 
 @[expose] public section
 

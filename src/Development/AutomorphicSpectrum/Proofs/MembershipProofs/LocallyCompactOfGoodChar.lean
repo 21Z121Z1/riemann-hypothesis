@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Definitions.MembershipCriteria.GoodChar
-public import Development.AutomorphicSpectrum.Proofs.MembershipProofs.GoodCharIsLocallyConstant
+public import Development.AutomorphicSpectrum.Definitions.MembershipCriteria.Bundle0001
+public import Development.AutomorphicSpectrum.Proofs.MembershipProofs.Bundle0004
 
 @[expose] public section
 

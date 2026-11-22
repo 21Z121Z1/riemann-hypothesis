@@ -1,7 +1,7 @@
 module
 
 public import Formalism.LocalToGlobal.CharacterGerms.GeneralGermZero
-public import Formalism.LocalToGlobal.CharacterGerms.RowTieSelf
+public import Formalism.LocalToGlobal.CharacterGerms.Bundle0012
 
 @[expose] public section
 

@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import GroundTheory.PAdicHodge.LogMul
+public import GroundTheory.PAdicHodge.Bundle0002
 public import Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.KummerCupProducts.EtaleComparisonMapOfFacts
 
 @[expose] public section

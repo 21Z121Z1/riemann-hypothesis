@@ -2,11 +2,11 @@ module
 
 public import Mathlib
 public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsCMFrame
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LieNormSquareOfFamilyStatement
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.HodgeGramLinearCombinationStatement
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.HodgeGramInvariantPullbackStatement
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.DualBasisHermitianSumStatement
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LieNormSqBaseChangeStatement
+public import Development.WeilBound.CoreStatements.SesquilinearFractions.Bundle0012
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsTransition
+public import Development.WeilBound.CoreStatements.SesquilinearFractions.Bundle0003
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0169
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0168
 
 @[expose] public section
 
@@ -222,7 +222,7 @@ theorem gram_family (X : CMPack Z c FU i hP) (b : Bool) (τ : E →+* ℂ) (hτ 
   have hU' := fun q => exists_lift X b (aq q) (Wq q) (hW q) s (U q) (hUl q)
   choose U' h1 h2 using hU'
   have hnorm : IsLieNormSq (X.C b).P (X.C b).v (sg X s) r :=
-    (T.lie_norm_sq_base_change E H _ _ _ _ (Z b).C (X.C b) _ (X.φ b) (sg X s) r (X.map b)).1 hr
+    (_root_.GlobalTheory.CompanionTheory.Ar.Fl.lieNormSq_baseChange E H _ _ _ _ (Z b).C (X.C b) _ (X.φ b) (sg X s) r (X.map b)).1 hr
   have hk : kap X τ s (wK H) = sg X s (X.ω b) := w_eq X b τ hτ s
   have g0 : IsHodgeGram X.B.t.G X.B.t.PP.L (spMap (sg X s)) U
       (Matrix.of fun q q' => r * kap X τ s (X.h b (aq q) (aq q'))) := by
@@ -261,7 +261,7 @@ theorem gram_family (X : CMPack Z c FU i hP) (b : Bool) (τ : E →+* ℂ) (hτ 
     have hd0 : u0.IsDiff (K w) v' := by
       simpa using HodgeUniq.isDiff_comp u0 uC d20 (𝟙 P'.A) K hK hv'T hdw
     have hKH : ∀ z z', hermForm Hm0 (K z) (K z') = hermForm Hm z z' :=
-      (_root_.GlobalTheory.T.weilEq_iff_hermForm_eq_complex thetaUnifAV_all laws P' P' P' P' uC uC u0 uC Hm0 Hm χ0 χ hAH0 hAH (𝟙 _) (𝟙 _) (𝟙 _) (𝟙 _)
+      (_root_.GlobalTheory.CM.weilEq_iff_hermForm_eq thetaUnifAV_all laws P' P' P' P' uC uC u0 uC Hm0 Hm χ0 χ hAH0 hAH (𝟙 _) (𝟙 _) (𝟙 _) (𝟙 _)
         K K LinearMap.id LinearMap.id hK hK (fun z => by simp) (fun z => by simp)).1 (fun _ _ _ _ _ _ _ => Iff.rfl)
     have hkey : ∀ b b' : L, ∀ z z',
         hermForm HmT (F b z) (F b' z') = hermForm Hm0 (G (h b b') z) z' := by
@@ -274,7 +274,7 @@ theorem gram_family (X : CMPack Z c FU i hP) (b : Bool) (τ : E →+* ℂ) (hτ 
       have W1 := (PairingFibre.weilEq_iff hpb hpb hQpb hpb T.t.PP.isLB C.P.isLB Q.isLB P'.isLB
         (LBIso.symm hQLB) (LBIso.symm hLB) (hfc b) (hfc b') (hec (h b b')) hId (𝟙 (Sp ℂ))).2
         (by rw [Category.id_comp]; exact W0)
-      have := (_root_.GlobalTheory.T.weilEq_iff_hermForm_eq_complex thetaUnifAV_all laws P' P' Q P' u0 u0 uT u0 HmT Hm0 χT χ0 hAHT hAH0 (f b) (f b')
+      have := (_root_.GlobalTheory.CM.weilEq_iff_hermForm_eq thetaUnifAV_all laws P' P' Q P' u0 u0 uT u0 HmT Hm0 χT χ0 hAHT hAH0 (f b) (f b')
         (e (h b b')) (𝟙 _) (F b) (F b') (G (h b b')) LinearMap.id (hFl b) (hFl b') (hGl _) (fun z => by simp)).1 W1 z z'
       simpa using this
     have hg1 : P'.g = 1 := hg'.trans C.dim
@@ -355,8 +355,8 @@ theorem gram_family (X : CMPack Z c FU i hP) (b : Bool) (τ : E →+* ℂ) (hτ 
   have hx2 : under (spMap s ≫ X.y) = spMap s ≫ under X.y := Category.assoc _ _ _
   have hV2 : ∀ q, (V q).left = (U' q).left ≫ X.m.φ := fun q => (hV q).trans (h1 q).symm
   have hU2 : ∀ q, (U q).left = (U' q).left ≫ X.m'.φ := fun q => (h2 q).symm
-  have g1 := (T.hodge_gram_invariant_pullback E H _ _ X.B.t X.t _ X.m' (spMap s) (spMap (sg X s)) M U' U _ hx1 hU2).2 g0
-  have g2 := (T.hodge_gram_invariant_pullback E H _ _ Xo.univ.t X.t _ X.m (spMap s) (under (spMap s ≫ X.y)) M U' V _ hx2 hV2).1 g1
+  have g1 := (_root_.PositivityTheory.Xgf.hodge_gram_invariant_pullback E H _ _ X.B.t X.t _ X.m' (spMap s) (spMap (sg X s)) M U' U _ hx1 hU2).2 g0
+  have g2 := (_root_.PositivityTheory.Xgf.hodge_gram_invariant_pullback E H _ _ Xo.univ.t X.t _ X.m (spMap s) (under (spMap s ≫ X.y)) M U' V _ hx2 hV2).1 g1
   refine ⟨fun q => ?_, g2⟩
   exact (tan_iff X.m hx2 (U' q) (V q) (hV2 q)).1
     ((tan_iff X.m' hx1 (U' q) (U q) (hU2 q)).2 (hUt q (one_tangent X b (aq q))))
@@ -430,13 +430,13 @@ theorem hodgeGram_cmVec : ∀ (E : Type) [Field E] [NumberField E] [IsCMField E]
       simp only [Equiv.apply_symm_apply]
       rw [← hk]
       exact e.symm_apply_apply q
-  have g3 := T.hodge_gram_linear_combination _ _ _ _ _ _ V v' _ A ht hg hcomb
+  have g3 := _root_.PositivityTheory.Xgf.hodge_gram_linear_combination _ _ _ _ _ _ V v' _ A ht hg hcomb
   convert g3 using 1
   ext k k'
   have m1 := mat_id e x (fun p p' => (r : ℂ) * kap X τ s (X.h b
     ((RingOfIntegers.basis E p.2 • a p.1 : PureType.lat hP (sgnRt H b)) : (FU.Di i).La)
     ((RingOfIntegers.basis E p'.2 • a p'.1 : PureType.lat hP (sgnRt H b)) : (FU.Di i).La))) A (fun _ _ => rfl) k k'
-  have m2 := T.dual_basis_hermitian_sum E H (FU.Di i) (X.ε b) (X.h b) (s.comp (X.β.comp (tauE c τ))) (kap X τ s) _ e0 (a k) (a k')
+  have m2 := _root_.GlobalTheory.CompanionTheory.Ar.Fl.KForm.sigma_component E H (FU.Di i) (X.ε b) (X.h b) (s.comp (X.β.comp (tauE c τ))) (kap X τ s) _ e0 (a k) (a k')
     (X.kform b) rfl
   dsimp only at m1
   have m3 : ∑ m, ∑ m', x m * kap X τ s (X.h b (RingOfIntegers.basis E m • (a k : (FU.Di i).La))

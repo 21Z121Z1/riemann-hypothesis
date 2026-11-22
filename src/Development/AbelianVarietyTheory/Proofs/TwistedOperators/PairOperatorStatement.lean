@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.AdjointOperatorIdentities
+public import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.Bundle0004
 public import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.ExistsFFNeZeroThree
 
 @[expose] public section

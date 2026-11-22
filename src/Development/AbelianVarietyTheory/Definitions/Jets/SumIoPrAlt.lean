@@ -3,8 +3,8 @@ module
 public import Mathlib
 public import Formalism.HermitianCurvature.BesselNonvanishingReduction
 public import Formalism.HermitianCurvature.StatementQ
-public import Formalism.PeriodIntegrals.CapelliEig
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.SmoothAdd
+public import Formalism.PeriodIntegrals.Bundle0021
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0036
 
 @[expose] public section
 

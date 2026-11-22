@@ -1,6 +1,6 @@
 module
 
-public import Formalism.SharpRestriction.GenusPolyhedralBounds.RelativeIndexClassSets.TheoremZeroSplitOfLocal
+public import Formalism.SharpRestriction.GenusPolyhedralBounds.RelativeIndexClassSets.Bundle0006
 public import Formalism.SharpRestriction.GenusPolyhedralBounds.RelativeIndexClassSets.LocalCOfLen
 
 @[expose] public section

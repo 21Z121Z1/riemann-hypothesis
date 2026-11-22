@@ -1,6 +1,6 @@
 module
 
-public import Development.EtaleCohomology.EtaleSheaves.StrictHenselColimits
+public import Development.EtaleCohomology.EtaleSheaves.Bundle0041
 
 @[expose] public section
 

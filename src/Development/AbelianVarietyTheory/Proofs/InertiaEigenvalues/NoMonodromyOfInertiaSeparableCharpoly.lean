@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsAttachedHodge
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0695
 
 @[expose] public section
 

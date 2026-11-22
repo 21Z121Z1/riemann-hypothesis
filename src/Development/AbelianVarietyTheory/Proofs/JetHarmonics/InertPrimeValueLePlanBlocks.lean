@@ -2,9 +2,12 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.Jets.DepthNumbersThresholdEq
-public import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.LevelsUsedBalancedValueOrbitSumsStatement
-public import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.CharacterBlocksAttainBoundStatement
-public import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.MonomialBlockSupplyBothTypings
+public import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.Bundle0043
+public import Formalism.LocalToGlobal.CharacterGerms.Bundle0017
+public import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.Bundle0045
+public import Formalism.LocalToGlobal.CharacterGerms.Bundle0018
+public import Formalism.LocalToGlobal.CharacterGerms.Bundle0005
+public import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.Bundle0052
 
 @[expose] public section
 

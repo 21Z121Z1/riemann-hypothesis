@@ -1,8 +1,7 @@
 module
 
 public import Mathlib
-public import Formalism.HyperbolicPlaceProducts.Statement
-public import Formalism.HyperbolicPlaceProducts.DetIndexProductHyperbolicInequality
+public import Formalism.HyperbolicPlaceProducts.Bundle0001
 
 @[expose] public section
 

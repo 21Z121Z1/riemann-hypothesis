@@ -2,9 +2,9 @@ module
 
 public import Mathlib
 public import Development.WeilBound.ThetaLifts.FrameEstimates.SquareIntegrableWeilRange
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.FinPartIdemMulMemIff
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsLocallyConstantAddChar
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.LocalComponentsNontrivialAdelicCharacter
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0303
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0212
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0191
 
 @[expose] public section
 

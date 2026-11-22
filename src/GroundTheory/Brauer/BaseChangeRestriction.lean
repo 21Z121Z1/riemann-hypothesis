@@ -7,7 +7,7 @@ public import GroundTheory.Brauer.TensorSimple
 public import GroundTheory.Brauer.BaseChangeCSA
 public import GroundTheory.Brauer.DoubleCentralizer
 public import GroundTheory.Brauer.Degree
-public import GroundTheory.ProfiniteCohomology.Colimit
+public import GroundTheory.ProfiniteCohomology.Bundle0006
 public import GroundTheory.ProfiniteCohomology.GaloisCohomology.UnitsInflationCochainsFHomApply
 public import GroundTheory.ProfiniteCohomology.GaloisCohomology.IsZeroGroupCohomologyQuotientToInvariantsGalAdd
 public import GroundTheory.ProfiniteCohomology.CohomologyFunctoriality

@@ -1,6 +1,6 @@
 module
 
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.DifferentialOperatorBracket
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0075
 public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.HighestWeightUniqueness.UnitaryOfBlockWMem
 
 @[expose] public section

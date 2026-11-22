@@ -3,7 +3,7 @@ module
 public import Mathlib
 public import Formalism.LocalToGlobal.IndefiniteReal.NormalDecomposition.PairingCommutesLiftOperators
 public import Formalism.LocalToGlobal.IndefiniteReal.NormalDecomposition.Decomp
-public import Formalism.LocalToGlobal.IndefiniteReal.RationalAdjoints.RangeAdjointRat
+public import Formalism.LocalToGlobal.IndefiniteReal.RationalAdjoints.Bundle0001
 
 @[expose] public section
 

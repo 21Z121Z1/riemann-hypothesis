@@ -1,6 +1,6 @@
 module
 
-public import ReciprocityTheory.AnalyticForms.AnalyticCharts.OsgoodA
+public import ReciprocityTheory.AnalyticForms.AnalyticCharts.Bundle0001
 
 @[expose] public section
 

@@ -3,7 +3,7 @@ module
 public import Formalism.SharpRestriction.GrowthBounds.DiagonalSupport.MembershipOfThreeParts
 public import Formalism.SharpRestriction.GrowthBounds.DiagonalSupport.MembVB
 public import Formalism.SharpRestriction.GrowthBounds.DiagonalSupport.MembDd
-public import Formalism.SharpRestriction.GrowthBounds.DiagonalSupport.MembXXb
+public import Formalism.SharpRestriction.GrowthBounds.DiagonalSupport.Bundle0011
 
 @[expose] public section
 

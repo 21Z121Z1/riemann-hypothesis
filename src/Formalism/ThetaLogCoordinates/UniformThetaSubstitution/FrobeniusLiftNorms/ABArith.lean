@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Formalism.ThetaLogCoordinates.UniformThetaSubstitution.StatementAB
-public import Formalism.GrowthSums.FactorialBaseGrowth.PathBasisOfCount
-public import Formalism.GrowthSums.FactorialBaseGrowth.QuadraticExponentIdentity
+public import Formalism.ThetaLogCoordinates.UniformThetaSubstitution.Bundle0001
+public import Formalism.GrowthSums.FactorialBaseGrowth.Bundle0002
+public import Formalism.GrowthSums.FactorialBaseGrowth.Bundle0001
 
 @[expose] public section
 

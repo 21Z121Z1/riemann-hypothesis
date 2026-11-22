@@ -1,8 +1,8 @@
 module
 
-public import Development.AbelianVarietyTheory.Definitions.Divisors.TorsTransport
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0014
 public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.ExistsEqOfNatCastMulMem
-public import ReciprocityTheory.ClassFieldTheory.GlobalClassField.IsFrobAtMulOfMemInertiaGroup
+public import ReciprocityTheory.ClassFieldTheory.GlobalClassField.Bundle0001
 public import ReciprocityTheory.GaloisValuations.Global
 
 @[expose] public section

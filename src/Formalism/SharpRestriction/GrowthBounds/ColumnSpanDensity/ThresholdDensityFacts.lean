@@ -1,6 +1,6 @@
 module
 
-public import Formalism.SharpRestriction.GrowthBounds.ColumnSpanDensity.DensAbs
+public import Formalism.SharpRestriction.GrowthBounds.ColumnSpanDensity.Bundle0007
 
 @[expose] public section
 

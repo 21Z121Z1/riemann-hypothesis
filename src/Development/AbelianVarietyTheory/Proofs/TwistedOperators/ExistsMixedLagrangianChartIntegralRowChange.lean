@@ -1,10 +1,10 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IsLocIsoRefl
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsPlaceIsoReadingComponentsCharacters
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0444
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0513
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.OrientedHermitianFormQuadSumEqTrace
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HermitianLatticeSelfDualEverywhere
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1391
 
 @[expose] public section
 

@@ -1,7 +1,7 @@
 module
 
 public import Development.WeilBound.ThetaLifts.LocalTheory.ConeShifts.VacShiftOf
-public import Development.WeilBound.ThetaLifts.LocalTheory.ConeShifts.PresOfHat
+public import Development.WeilBound.ThetaLifts.LocalTheory.ConeShifts.Bundle0002
 
 @[expose] public section
 

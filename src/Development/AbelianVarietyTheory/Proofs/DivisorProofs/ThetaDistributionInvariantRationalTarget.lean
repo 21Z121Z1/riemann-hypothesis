@@ -2,22 +2,26 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FiniteDetSmulSubOne
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GaussSumNondegenerateFiniteHermitianModuleStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RelIndexMapNsmulComapEqAbsNormDetStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RationalLatticeSelfDualFgFullIndexStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntegralGaussianRealIsometryNoFixedStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EtaTildeHeckeCharSplitMulSignOfNormFormulaStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsCartanInvolutionCommQuasiReflectionStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RationalIsometryVacuumScalarGaussSumIntegralStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FiniteWeilRepEqLatticeIntertwinerMulCharacterStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RationalSubstitutionThetaHeisenbergUnitaryStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SchurLemmaThetaFunctionsOrientedPairStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsSplitCharacter
-public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.UnitaryMatrixEqProdQuasiReflections
-public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.UnitaryQuasiReflectionLaws
-public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.MapFinNeg
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.AdelicUnitaryEqRealMulFiniteSplit
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsThetaFunNeZero
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GaussSumNondegenerateFiniteHermitianModule
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0010
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0102
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1120
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0989
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1034
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1056
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0720
+public import Formalism.LocalToGlobal.IndefiniteReal.LocalNewformFunction
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RationalIsometryVacuumScalarGaussSumIntegral
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FiniteWeilRepEqLatticeIntertwinerMulCharacter
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0894
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0024
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1083
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0808
+public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.Bundle0039
+public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.Bundle0030
+public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.Bundle0070
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0070
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0198
 public import Development.AbelianVarietyTheory.Definitions.Divisors.CmHostImaginaryGeneratorNeZero
 
 @[expose] public section
@@ -144,7 +148,7 @@ theorem scalar_const (hψ : IsStdChar D ψ (-1)) (hθ : IsInfFam θ) (hS : IsSel
   obtain ⟨w, Om, hO⟩ := exists_isLatRep hψ hS hT hlam
   obtain ⟨ε, hε⟩ := exists_isHalfIdem D
   obtain ⟨κ, κ', k1, k2, k3⟩ := exists_phi hη.2.2.1 hε
-  obtain ⟨e, he⟩ := GlobalTheory.T.integral_gaussian_real_isometry_no_fixed D S T sS sT cS cT
+  obtain ⟨e, he⟩ := _root_.GlobalTheory.RatAut.RealInt.integral_gaussR D S T sS sT cS cT
   refine ⟨e, η (κ ((-1) ^ Fintype.card (Fin T.rank × Fin S.rank))), Circle.coe_ne_zero _,
     fun g h a b ha hb sa sb hd c hc H => ?_⟩
   obtain ⟨d1, d2⟩ := det_unitary_sub_one (P := T.gram ⊗ₖ S.gram⁻¹ᵀ) (by
@@ -188,7 +192,7 @@ theorem scalar_const (hψ : IsStdChar D ψ (-1)) (hθ : IsInfFam θ) (hS : IsSel
     (det_unitary_sub_one (GlobalTheory.LatVac.gram_det_isUnit S).ne_zero ha.unitary).1
   have db : b.det ≠ 0 := left_ne_zero_of_mul_eq_one
     (det_unitary_sub_one (GlobalTheory.LatVac.gram_det_isUnit T).ne_zero hb.unitary).1
-  have hof := GlobalTheory.T.finiteWeilRep_eq_latticeIntertwiner_mul_character D ψ hψ S T ΛS ΛT hS hT _ _ _ _ (hecke_pow hη _).1 (hecke_pow hη _).1 (hecke_pow hη _).2
+  have hof := _root_.GlobalTheory.FinWeilForm.finWeil_eq D ψ hψ S T ΛS ΛT hS hT _ _ _ _ (hecke_pow hη _).1 (hecke_pow hη _).1 (hecke_pow hη _).2
     (hecke_pow hη _).2 of hf lam hlam hsq w Om hO ε hε g h (κ (Units.mk0 _ da)) (κ (Units.mk0 _ db)⁻¹)
     (by rw [k1, show Formalism.L2.Theta.mt S g = _ from ha, Units.val_mk0, RingHom.map_det]; rfl)
     (by
@@ -198,7 +202,7 @@ theorem scalar_const (hψ : IsStdChar D ψ (-1)) (hθ : IsInfFam θ) (hS : IsSel
       congr 2
       rw [← one_mul (incA D _), ← e1, mul_assoc, ← RingHom.map_mul, mul_inv_cancel₀ db, RingHom.map_one, mul_one])
   set z := ((η ^ T.rank) (κ (Units.mk0 _ da)))⁻¹ * (η ^ S.rank) (κ (Units.mk0 _ db)⁻¹) with hz
-  obtain ⟨r₁, p₁, h1⟩ := GlobalTheory.T.rationalIsometry_vacuumScalar_gaussSum_integral D ψ hψ θ hθ S T sS sT cS cT ΛS ΛT hS hT w hO.hw g h a b ha hb hbij hI
+  obtain ⟨r₁, p₁, h1⟩ := _root_.GlobalTheory.RatTrace.gauss_mul_integral D ψ hψ θ hθ S T sS sT cS cT ΛS ΛT hS hT w hO.hw g h a b ha hb hbij hI
     (c⁻¹ * δ * z * (lam (idx (latF S T ΛS ΛT) ((latF S T ΛS ΛT).map (rhoF S T (g, h)))))⁻¹)
     (fun f f1 f2 x => by
       have e1 := congrFun (H f f.2) x
@@ -243,7 +247,7 @@ theorem of_oi_comm (hψ : IsStdChar D ψ (-1)) (hS : IsSelfDualC S ΛS) (hT : Is
   obtain ⟨lam, hlam, hsq⟩ := exists_goodNorm D
   obtain ⟨w, Om, hO⟩ := exists_isLatRep hψ hS hT hlam
   obtain ⟨ε, hε⟩ := exists_isHalfIdem D
-  exact oi_comm hψ hi hO (fun p => ⟨_, GlobalTheory.T.finiteWeilRep_eq_latticeIntertwiner_mul_character D ψ hψ S T ΛS ΛT hS hT _ _ _ _ (hecke_pow hη _).1 (hecke_pow hη _).1
+  exact oi_comm hψ hi hO (fun p => ⟨_, _root_.GlobalTheory.FinWeilForm.finWeil_eq D ψ hψ S T ΛS ΛT hS hT _ _ _ _ (hecke_pow hη _).1 (hecke_pow hη _).1
     (hecke_pow hη _).2 (hecke_pow hη _).2 of hf lam hlam hsq w Om hO ε hε p.1 p.2
     (GlobalTheory.SplitDetChar.cut ε hε.1 (Matrix.GeneralLinearGroup.det (matHom S p.1)))
     (GlobalTheory.SplitDetChar.cut ε hε.1 (Matrix.GeneralLinearGroup.det (matHom T p.2))) rfl rfl⟩) p q f h
@@ -301,7 +305,7 @@ theorem exists_cartan_refl (V : HSp D) (x : Fin V.rank → D.host.E) (c : D.host
       s * (1 + c • Matrix.vecMulVec x (star x ᵥ* V.gram)).map (tauE D τ) =
         (1 + c • Matrix.vecMulVec x (star x ᵥ* V.gram)).map (tauE D τ) * s := by
   have e0 : star (tauE D τ ∘ x) = tauE D τ ∘ star x := funext fun i => (tauE_star τ (x i)).symm
-  obtain ⟨s, h1, h2⟩ := GlobalTheory.T.exists_cartanInvolution_comm_quasiReflection _ (gramAt D V τ) (GlobalTheory.SmoothForms.RealPts.gramAt_herm V τ)
+  obtain ⟨s, h1, h2⟩ := _root_.GlobalTheory.CartanRefl.exists_cartan_comm_quasiReflection _ (gramAt D V τ) (GlobalTheory.SmoothForms.RealPts.gramAt_herm V τ)
     (GlobalTheory.SmoothForms.RealPts.gramAt_unit V τ).ne_zero (tauE D τ ∘ x) (by
       have : star (tauE D τ ∘ x) ⬝ᵥ gramAt D V τ *ᵥ (tauE D τ ∘ x) = tauE D τ (star x ⬝ᵥ V.gram *ᵥ x) := by
         rw [e0, RingHom.map_dotProduct]

@@ -2,9 +2,9 @@ module
 
 public import Mathlib
 public import Development.AutomorphicArithmetic.Foundations.EtaleClopenDescent.EFam
-public import Development.AutomorphicArithmetic.Foundations.EtaleClopenDescent.IsSeparatedOfProj
+public import Development.AutomorphicArithmetic.Foundations.EtaleClopenDescent.Bundle0012
 public import Development.AutomorphicArithmetic.Foundations.EtaleClopenDescent.IsIntegralRBIff
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BoundaryChartHodgeMatrix
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0433
 
 @[expose] public section
 

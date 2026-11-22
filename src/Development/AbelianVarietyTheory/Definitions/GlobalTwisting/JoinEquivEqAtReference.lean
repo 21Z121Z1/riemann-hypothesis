@@ -3,14 +3,14 @@ module
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.Divisors.TupleReadBaseTupleEqFamily
 public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.StableIffCarrierEq
-public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.TopFormula
-public import Formalism.LocalToGlobal.HermitianForms.TiedTwSymAll
-public import Formalism.LocalToGlobal.HermitianForms.FramesLemmas
+public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.Bundle0005
+public import Formalism.LocalToGlobal.HermitianForms.Bundle0008
+public import Formalism.LocalToGlobal.HermitianForms.Bundle0003
 public import Formalism.LocalToGlobal.Columns.PolyFnLemmas
 public import Development.AbelianVarietyTheory.Definitions.Foundations.ClassMassEqSumOfBijective
 public import Formalism.LocalToGlobal.HilbertRowConditions.TiedEMt
 public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.HcParameterEAddHalfShiftLeBSucc
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsPolynomialModelCoefficientSpaceRealPoints
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0215
 
 @[expose] public section
 

@@ -2,14 +2,14 @@ module
 
 public import Mathlib
 public import Formalism.LocalToGlobal.PairingIndexBounds.OrthogonalChartLevels.FdOfCharts
-public import Formalism.LocalToGlobal.GroupLattices.PendingLemmas.InvarianceRepresentativesLaw
-public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.NatCastMemOfPlace
+public import Formalism.LocalToGlobal.GroupLattices.PendingLemmas.Bundle0004
+public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.Bundle0016
 public import Formalism.LocalToGlobal.InertKernelTheory.InertCoprimeLemmas.RepComb
 public import Formalism.LocalToGlobal.InertKernelTheory.InertCoprimeLemmas.IntPull
 public import Formalism.LocalToGlobal.PairingIndexBounds.SplitPairEquations.FinalEq
 public import Formalism.LocalToGlobal.KernelLattices.KernelLocalFactors.AlternatingFormStandardHermitian
 public import Formalism.LocalToGlobal.KernelLattices.KernelLocalFactors.ThDistC
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ImportsLast
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0218
 
 @[expose] public section
 

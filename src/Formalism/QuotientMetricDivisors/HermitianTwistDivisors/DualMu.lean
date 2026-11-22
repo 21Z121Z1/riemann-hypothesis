@@ -1,8 +1,7 @@
 module
 
 public import Mathlib
-public import Formalism.QuotientMetricDivisors.ProdFormula
-public import Formalism.QuotientMetricDivisors.DualMu
+public import Formalism.QuotientMetricDivisors.Bundle0001
 public import Formalism.HarderNarasimhan.HarderNarasimhanProofs.DualPl
 public import Formalism.HarderNarasimhan.HarderNarasimhanProofs.SizeMu
 public import Formalism.HarderNarasimhan.HarderNarasimhanProofs.DiscreteSpanOfLinIndep

@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import GroundTheory.TateCohomology.Induced
-public import GroundTheory.TateCohomology.InducedNorm
+public import GroundTheory.TateCohomology.Bundle0001
+public import GroundTheory.TateCohomology.Bundle0003
 
 @[expose] public section
 

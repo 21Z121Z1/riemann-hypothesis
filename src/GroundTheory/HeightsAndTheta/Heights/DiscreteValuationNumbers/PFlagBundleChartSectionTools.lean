@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.StatementsFlagBundleChartSection
+public import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.Bundle0031
 public import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.PFlagBundleSectionFormsTools
-public import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.PProjIdealFormValue
+public import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.Bundle0038
 
 @[expose] public section
 

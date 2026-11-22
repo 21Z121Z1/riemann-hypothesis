@@ -2,20 +2,20 @@ module
 
 public import Mathlib
 public import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.InfinitesimalCharacterLimits.AllLeaves
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.UfamConst
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0282
 public import Development.WeilBound.RepresentationTheoryGL.ResidualSpectrum.ExponentialNegativity.CommonEigenvectors.KillPoly
 public import Development.WeilBound.RepresentationTheoryGL.ResidualSpectrum.ExponentialNegativity.DiagonalInfinityValues.InfGLValDiag
 public import Development.WeilBound.RepresentationTheoryGL.ResidualSpectrum.ExponentialNegativity.NormalisedExistence.ExistsNormed
-public import Development.WeilBound.RepresentationTheoryGL.ResidualSpectrum.SliceTensors.CasimirOnParabolicInduction
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LieOneLMemZalg
+public import Development.WeilBound.RepresentationTheoryGL.ResidualSpectrum.SliceTensors.Bundle0007
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0445
 public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IsStableBdSub
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ProductSubsetSumVanishesStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.TensorSumAnnihilatorStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CommutingHeckeCapelliOperatorsStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.HasDerivAtTorusTranslateStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExponentialPolynomialSolutionSpaceStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsRecurrencePolynomialStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.TorusElementLeviEmbeddingStatement
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0036
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0021
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0708
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0710
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0010
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0406
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0706
 
 @[expose] public section
 
@@ -117,7 +117,7 @@ theorem levi_kill : ∀ (E : Type) [Field E] [NumberField E] [_root_.NumberField
   intro E _ _ _ r s M hr hs hcard
   classical
   obtain ⟨S, a, b, t, hcomm, hcapc, hleft, haS, hbS, ha1, hb1, htr, hA, hB⟩ := GlobalTheory.T.commuting_hecke_capelli_operators E r s hr hs
-  obtain ⟨l', hcard', hl'⟩ := GlobalTheory.T.tensor_sum_annihilator (Finset.univ : Finset (E →+* ℂ)) (fun τ => ((M τ).powersetCard r).map Multiset.sum)
+  obtain ⟨l', hcard', hl'⟩ := _root_.GlobalTheory.CompanionTheory.KillSum.sum_killed (Finset.univ : Finset (E →+* ℂ)) (fun τ => ((M τ).powersetCard r).map Multiset.sum)
   refine ⟨l'.toList.map (· - ∑ τ, t τ), ?_, fun F hFN hFc p => ?_⟩
   · rw [List.length_map, Multiset.length_toList, hcard']
     simp [hcard, Multiset.card_powersetCard]
@@ -271,7 +271,7 @@ theorem orbit_mem (r s : ℕ) (hr : 0 < r) (hs : 0 < s) (φ : Sm E (r + s)) (hφ
   have hmem := hS (Sm E (r + s)) (∑ τ : E →+* ℂ, ∑ i : Fin r, Eop (a := r + s) τ (Fin.castAdd s i) (Fin.castAdd s i)) ev
     (fun x t => GlobalTheory.T.hasDerivAt_torus_translate E r s x _ t) F (funext fun t => by
       change (_ : Sm E (r + s)).1 (lev (Ad E) r s p * aT E (r + s) r t) = 0
-      rw [GlobalTheory.T.torus_element_levi_embedding E r s t, ← map_mul]
+      rw [_root_.GlobalTheory.CompanionTheory.Conc.LevAt.aT_eq_lev E r s t, ← map_mul]
       exact hk F hFN hFc _)
   convert hmem using 1
   funext t
@@ -296,7 +296,7 @@ theorem killU : ∀ (E : Type) [Field E] [NumberField E] [_root_.NumberField.IsT
   refine ⟨Nat.choose (r + s) r ^ Fintype.card (E →+* ℂ), fun V hV hinf φ hφ => ?_⟩
   choose M hM using hinf
   obtain ⟨l, hl, hk⟩ := levi_kill E r s M hr hs fun τ => (hM τ).1
-  obtain ⟨S, hfin, hrank, hS⟩ := GlobalTheory.T.exponential_polynomial_solution_space l
+  obtain ⟨S, hfin, hrank, hS⟩ := _root_.GlobalTheory.CompanionTheory.ConstCoeffODE.solutions_mem_finite l
   have haut := hV.aut φ hφ
   have hc : ∀ τ u, cap (a := r + s) τ u φ = ((M τ).map (u + ·)).prod • φ := fun τ u => (hM τ).2 u φ hφ
   have horb := orbit_mem r s hr hs φ haut M hc l hk S hS

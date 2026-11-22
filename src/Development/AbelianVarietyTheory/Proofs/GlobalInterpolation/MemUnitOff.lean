@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.InfiniteGroup
+public import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.Bundle0003
 public import Formalism.LocalToGlobal.Columns.DecoFin
 
 @[expose] public section

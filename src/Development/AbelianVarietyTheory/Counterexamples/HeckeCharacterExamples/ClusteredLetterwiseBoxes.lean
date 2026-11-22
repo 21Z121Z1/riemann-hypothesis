@@ -1,14 +1,14 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.ThickLetterWordLatticeSurjectionHypotheses
+public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.Bundle0009
 public import Formalism.SharpRestriction.LevelLetterCocycles.DataNLoc
 public import Formalism.WeaklyAdmissibleFiltrations.Statement
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ContinuousTwistedDualRhoO
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ThickLetterWordHypothesesOfCommonConditions
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.AlternatingWordHypothesesEveryLatticeSurjection
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0163
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0058
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0060
 public import Formalism.SharpRestriction.LevelLetterCocycles.JointConditionsZpowers.CommutingEndomorphismCondition
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.FrobGIsArithFrobAndSign
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0076
 
 @[expose] public section
 

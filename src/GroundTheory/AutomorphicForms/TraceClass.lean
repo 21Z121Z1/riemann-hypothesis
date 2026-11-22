@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import GroundTheory.AutomorphicForms.HilbertSchmidt
+public import GroundTheory.AutomorphicForms.Bundle0003
 
 @[expose] public section
 

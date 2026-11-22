@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Proofs.MetricProofs.OmHeightslockG
+public import Development.AutomorphicSpectrum.Proofs.MetricProofs.Bundle0105
 public import Development.WeilBound.CoreStatements.PluriharmonicCharts.ExistsPeriodOfFrames
 public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.HolDifferentiableAt
 

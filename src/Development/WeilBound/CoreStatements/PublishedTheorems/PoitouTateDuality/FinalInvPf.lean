@@ -3,7 +3,7 @@ module
 public import Mathlib
 public import Development.WeilBound.CoreStatements.PublishedTheorems.PoitouTateDuality.PtfsDefs
 public import GroundTheory.ProfiniteCohomology.PoitouTate.PoitouTateNineTermGs
-public import Development.WeilBound.CoreStatements.PublishedTheorems.PoitouTateDuality.PfInvMatchNsmulB
+public import Development.WeilBound.CoreStatements.PublishedTheorems.PoitouTateDuality.Bundle0007
 public import Development.WeilBound.CoreStatements.PublishedTheorems.PoitouTateDuality.FinalPtfsInvGen
 
 @[expose] public section

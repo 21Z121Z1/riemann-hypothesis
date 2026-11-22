@@ -1,6 +1,6 @@
 module
 
-public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.FormalDegree.HasDerivAtMexpCommAddBracket
+public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.FormalDegree.Bundle0004
 public import Mathlib.Analysis.Matrix.PosDef
 public import Mathlib.LinearAlgebra.Matrix.SesquilinearForm
 

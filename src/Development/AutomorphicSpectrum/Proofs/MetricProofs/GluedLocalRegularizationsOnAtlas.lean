@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import ReciprocityTheory.AnalyticForms.LeviForms.RegGlue
+public import ReciprocityTheory.AnalyticForms.LeviForms.Bundle0004
 public import ReciprocityTheory.AnalyticForms.LeviForms.RegChartC
 public import ReciprocityTheory.AnalyticForms.LeviForms.TailCut
 

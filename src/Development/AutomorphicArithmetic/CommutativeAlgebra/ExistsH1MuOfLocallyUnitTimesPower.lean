@@ -1,10 +1,10 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicArithmetic.CommutativeAlgebra.EtaleCohomology.IsChart
-public import Development.EtaleCohomology.EtaleSheaves.H0TwistOverClosedField
-public import Development.AutomorphicArithmetic.CommutativeAlgebra.ExistsH1MuGlueOfCompatible
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.KummerClassOfUnitCocycleNaturalAdditiveStatement
+public import Development.AutomorphicArithmetic.CommutativeAlgebra.EtaleCohomology.Bundle0004
+public import Development.EtaleCohomology.EtaleSheaves.Bundle0006
+public import Development.AutomorphicArithmetic.CommutativeAlgebra.Bundle0038
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0467
 
 @[expose] public section
 

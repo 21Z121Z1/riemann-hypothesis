@@ -1,7 +1,7 @@
 module
 
-public import Development.WeilBound.CoreStatements.HodgeTatePoints.FirstPowerEqProdAt
-public import Development.WeilBound.CoreStatements.HodgeTatePoints.CoeffEvPowOne
+public import Development.WeilBound.CoreStatements.HodgeTatePoints.Bundle0038
+public import Development.WeilBound.CoreStatements.HodgeTatePoints.Bundle0037
 
 @[expose] public section
 

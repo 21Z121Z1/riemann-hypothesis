@@ -1,8 +1,7 @@
 module
 
 public import Mathlib
-public import Formalism.LocalToGlobal.Divisibility.LiftLat
-public import Formalism.LocalToGlobal.Divisibility.InertRationalAdjoint
+public import Formalism.LocalToGlobal.Divisibility.Bundle0003
 
 @[expose] public section
 

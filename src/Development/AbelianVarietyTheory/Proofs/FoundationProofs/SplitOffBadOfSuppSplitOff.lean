@@ -3,17 +3,16 @@ module
 public import Mathlib
 public import Formalism.LocalToGlobal.IndefiniteReal.ThPinsR
 public import Formalism.LocalToGlobal.IndefiniteReal.LinksChar
-public import Formalism.LocalToGlobal.ProjectiveLattices.ThClassPinsRec
-public import Development.AbelianVarietyTheory.BlockTheory.TorsionBlocks.SublevelSplitting
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0028
+public import Development.AbelianVarietyTheory.BlockTheory.TorsionBlocks.Bundle0007
 public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.MovedOfSplitPl
 public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.IsSplitPlaceOfSplitPl
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.CompletedLatticeEqAdelicCompletionAndGram
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.AdelicUnitaryEqRealMulFiniteSplit
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.RationalPointsAdelicUnitaryEqUnitary
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsPrincipalLevelSubgroupOpen
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsSplitAt
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.EvalVAlgebraMapMem
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.FinCongMemLevEnv
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0070
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0073
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0078
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0293
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0291
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0301
 
 @[expose] public section
 

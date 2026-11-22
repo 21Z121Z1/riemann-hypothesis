@@ -1,10 +1,10 @@
 module
 
 public import Mathlib
-public import GroundTheory.AutomorphicForms.TensorProductTheorem.CoeToRepresentationApply
+public import GroundTheory.AutomorphicForms.TensorProductTheorem.Bundle0003
 public import GroundTheory.AutomorphicForms.TensorProductTheorem.KProjApplyEqSelfIff
 public import GroundTheory.AutomorphicForms.TensorProductTheorem.TwoFactorUnique
-public import GroundTheory.AutomorphicForms.TensorProductTheorem.Window
+public import GroundTheory.AutomorphicForms.TensorProductTheorem.Bundle0002
 
 @[expose] public section
 

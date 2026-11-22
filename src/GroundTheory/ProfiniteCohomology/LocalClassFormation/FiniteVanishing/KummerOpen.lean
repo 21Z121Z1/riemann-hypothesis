@@ -6,7 +6,7 @@ public import GroundTheory.ProfiniteCohomology.GaloisCohomology.Kummer
 public import GroundTheory.ProfiniteCohomology.CohomologicalDimension.SubsingletonCohomologyOfPrimaryOfFinite
 public import GroundTheory.ProfiniteCohomology.CohomologyFunctoriality.QuotientToInvariantsFunctorPreservesZeroMorphism
 public import GroundTheory.ProfiniteCohomology.ClassFormations.Corestriction
-public import GroundTheory.LocalFields.UnitsPowers
+public import GroundTheory.LocalFields.Bundle0002
 public import GroundTheory.LocalFields.SeparableClosure
 public import GroundTheory.LocalFields.IntermediateField
 public import GroundTheory.ProfiniteCohomology.TorsionDualFinite

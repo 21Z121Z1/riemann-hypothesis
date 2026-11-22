@@ -3,10 +3,10 @@ module
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.Jets.SideFam
 public import Development.AbelianVarietyTheory.Definitions.Jets.SumIoPr
-public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.DiscreteSeriesUnitarySmoothBasicStatement
-public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.SmoothMapsClosureStatement
+public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0077
+public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0063
 public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.DiscreteSeriesParameterUnique
-public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.TensorDecompositionParameters
+public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0052
 
 @[expose] public section
 

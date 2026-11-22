@@ -1,6 +1,6 @@
 module
 
-public import Formalism.SharpRestriction.GrowthBounds.TwistedSubstitution.Proposition5Gram
+public import Formalism.SharpRestriction.GrowthBounds.TwistedSubstitution.Bundle0001
 public import Formalism.SharpRestriction.GrowthBounds.TwistedSubstitution.MemLin
 
 @[expose] public section

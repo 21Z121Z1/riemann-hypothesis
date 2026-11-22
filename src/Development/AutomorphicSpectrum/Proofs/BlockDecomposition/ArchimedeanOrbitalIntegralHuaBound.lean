@@ -2,10 +2,10 @@ module
 
 public import Mathlib
 public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SecondCountableHermC
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.TupCoordApply
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0050
 public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ContinuousSeminormDiffSLe
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.DetConjUnitary
-public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.ArchimedeanOrbitMeasures.PiDens
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0328
+public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.ArchimedeanOrbitMeasures.Bundle0002
 
 @[expose] public section
 

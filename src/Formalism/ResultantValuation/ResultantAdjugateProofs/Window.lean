@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Formalism.ResultantValuation.WindowValuation
+public import Formalism.ResultantValuation.Bundle0001
 
 @[expose] public section
 

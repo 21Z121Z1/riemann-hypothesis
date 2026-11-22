@@ -2,10 +2,10 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.MonoSpMapRingOfIntegersAlt
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsPerHolOne
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0510
 public import Development.AbelianVarietyTheory.Proofs.HomogeneousIdeals.HomBaseChangeBijectiveOfLeNilradical
-public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.AnalyticDictionaryIsPointPeriodOrigin
-public import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.ContinuousOnThetaFrameValueHolomorphicFamily
+public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.Bundle0135
+public import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.Bundle0044
 
 @[expose] public section
 

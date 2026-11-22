@@ -1,6 +1,6 @@
 module
 
-public import Formalism.AdmissibleDesigns.BlockTwistedCyclotomic
+public import Formalism.AdmissibleDesigns.Bundle0004
 
 @[expose] public section
 

@@ -4,8 +4,8 @@ public import CompanionTheory.AutomorphicTheory.RankOneTori.Factor
 public import CompanionTheory.AutomorphicTheory.RankOneTori.BeRankScale
 public import CompanionTheory.AutomorphicTheory.RankOneTori.NzTranslate
 public import CompanionTheory.AutomorphicTheory.RankOneTori.KDense
-public import Formalism.LocalToGlobal.SiegelLatticeTheory.FlagStabilizerTensors.RootLatticeThresholds.OneBesselTor
-public import Formalism.SharpRestriction.CuspSpanNormBounds.KFinOfLowUnitH
+public import Formalism.LocalToGlobal.SiegelLatticeTheory.FlagStabilizerTensors.RootLatticeThresholds.Bundle0010
+public import Formalism.SharpRestriction.CuspSpanNormBounds.Bundle0018
 
 @[expose] public section
 

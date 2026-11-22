@@ -2,12 +2,12 @@ module
 
 public import Mathlib
 public import CompanionTheory.AutomorphicTheory.TemperedLocalSpectra.ObstructionLifting.H1StructureDimLe
-public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.SmoothMorphisms.LineBundleSpreadsOut
-public import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.LineBundleIsoDescendsToSubringOfFinset
+public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.SmoothMorphisms.Bundle0001
+public import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.Bundle0033
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LiftLeftFst
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsAdditiveLiftIff
-public import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.GlobalFnsHolds
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.TheoremOfCubeTwoProjectiveFactors
+public import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.Bundle0011
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0080
 
 @[expose] public section
 

@@ -2,9 +2,9 @@ module
 
 public import Mathlib
 public import Formalism.HermitianCurvature.HermitianCurvatureProofs.LetterLiftOfParts
-public import Development.AbelianVarietyTheory.Definitions.Jets.SameFns
-public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.HatLettersPassDiGIBoundedFactorsStatement
-public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.FrameStartConstantsNormalFormEmptyWordStatement
+public import Development.AbelianVarietyTheory.Definitions.Jets.Bundle0002
+public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.HatLettersPassDiGIBoundedFactors
+public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0063
 
 @[expose] public section
 

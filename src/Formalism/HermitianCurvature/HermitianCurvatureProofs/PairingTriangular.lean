@@ -1,6 +1,6 @@
 module
 
-public import Formalism.HermitianCurvature.LatticeHerglotzBound
+public import Formalism.HermitianCurvature.Bundle0004
 public import Formalism.HermitianCurvature.HermitianCurvatureProofs.HerglotzLowerSemicontinuous
 
 @[expose] public section

@@ -2,26 +2,24 @@ module
 
 public import Mathlib
 public import Development.AutomorphicSpectrum.Statements.MetricStatements.AgreementIffGuarded
-public import Development.AutomorphicSpectrum.Definitions.MetricPeriods.MetricsProjectionFormulaNef
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.InterNamed
+public import Development.AutomorphicSpectrum.Definitions.MetricPeriods.Bundle0002
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.Bundle0012
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.BlowupProjections.BlowupProjStatement
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArakelovGeometry.MoriwakiSt
-public import GroundTheory.HeightsAndTheta.Heights.KernelsLattice
-public import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.StatementsPushDown
-public import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.FlagIndices
-public import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.StatementsFlagGrassPush
-public import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.PFlagGrassPush
-public import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.PHFlProdLinear
-public import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.PFsInvPow
-public import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.PFlagArithVar
-public import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.PFlagImageGrass
-public import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.PVandCount
-public import GroundTheory.HeightsAndTheta.Heights.HeightKernels.Assembly
-public import GroundTheory.HeightsAndTheta.Heights.Intersections.PConsequences
-public import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.ExistsUnique
-public import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.ChangeOfModel
-public import Development.AutomorphicSpectrum.Proofs.MetricProofs.ExistsPermAppendSnoc
-public import Development.AutomorphicSpectrum.Proofs.MetricProofs.FlagPointsIntegralProductFormulaStatement
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArakelovGeometry.Bundle0003
+public import GroundTheory.HeightsAndTheta.Heights.Bundle0001
+public import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.Bundle0016
+public import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.Bundle0009
+public import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.Bundle0005
+public import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.Bundle0010
+public import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.Bundle0008
+public import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.Bundle0007
+public import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.Bundle0013
+public import GroundTheory.HeightsAndTheta.Heights.HeightKernels.Bundle0046
+public import GroundTheory.HeightsAndTheta.Heights.Intersections.Bundle0029
+public import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.Bundle0011
+public import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.Bundle0032
+public import Development.AutomorphicSpectrum.Proofs.MetricProofs.Bundle0059
+public import Development.AutomorphicSpectrum.Proofs.MetricProofs.Bundle0135
 
 @[expose] public section
 
@@ -243,7 +241,7 @@ theorem flagGrassPush : GlobalTheory.CompanionTheory.Ar.PB.Inputs → Reciprocit
     (fun _ => linLine Ψ N (muForm Ψ N j)) (vandLine Ψ N j) hb hArFl' hArIm hJ
     (fun _ => isSmoothHerm_fsHerm _) (fun _ => isPullHerm_mu hj hjN) (fun _ => isSmoothHerm_fsHerm _)
   rw [hIm, pts_neg_eq (hII _ _) hArGr, ← linLine_jForms,
-    pts_linForms Ψ N II hII hN (fun w => GlobalTheory.T.flag_points_integral_product_formula hIn hSys Ψ N w hN) _ hcnt, prod_jForms] at hgeo
+    pts_linForms Ψ N II hII hN (fun w => _root_.GlobalTheory.CompanionTheory.Ar.Giv.borel_word hIn hSys Ψ N w hN) _ hcnt, prod_jForms] at hgeo
   have hJint : (Jint Ψ N j cf : ℝ) =
       (cf : ℝ) * ((flagInt Ψ N (muPoly Ψ N j ^ dimN Ψ N j * vandBlocks Ψ N j) : ℚ) : ℝ) := by
     unfold Jint fib

@@ -2,13 +2,22 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.CyclicStrongAtCusp
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AutomorphicFormsFiniteGL
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.SolvableAscentInduction
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.WeaklyAttachedGaloisRepresentationBaseChangeRestStatement
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.PolarizedPairBaseChangePolarizedSameWeightStatement
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.TraceEqZeroOffSubgroupOfSelfTwistStatement
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExistsCharacterSupportBaseChangeLiftDegreeOneStatement
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.CuspRepCharacterSupportLiftTransTowerStatement
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1678
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0334
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.WeaklyAttachedGaloisRepresentationBaseChangeRest
+public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.Bundle0019
+public import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.Imports
+public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.Bundle0005
+public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.Bundle0009
+public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.StrongMultiplicityOne
+public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisGeometry₂.GelfandKazhdanDual
+public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.HeckeLAdicCharacterAboveIff
+public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisGeometry₂.Bundle0006
+public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.DeRhamPotSemistable
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsPolarizedTwistAbsPow
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0286
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0244
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0287
 public import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.SphericalGaloisCompatibility.Chl
 
 @[expose] public section
@@ -37,7 +46,7 @@ theorem isWeaklyAttached_of_cmBaseChange_of_finrank (hI : UpperTheory.Gal.ToralG
   obtain ⟨hgal, hsol, hdec⟩ := hS
   by_cases h1 : Module.finrank K M = 1
   · obtain ⟨P, hP⟩ := GlobalTheory.T.exists_characterSupportBaseChangeLift_degreeOne K M h1 a ha π
-    obtain ⟨⟨χ', hχ'⟩, -⟩ := GlobalTheory.T.polarizedPair_baseChange_polarized_same_weight GlobalTheory.automorphicFormsFiniteGL hI.js hI.gk K M l a ha π χ P hP.1 hsc
+    obtain ⟨⟨χ', hχ'⟩, -⟩ := _root_.GlobalTheory.LiftPolar.main GlobalTheory.automorphicFormsFiniteGL hI.js hI.gk K M l a ha π χ P hP.1 hsc
     exact ⟨P, χ', hχ', hP⟩
   haveI : Group.IsSolvable (M ≃ₐ[K] M) := hsol
   haveI : Nontrivial (M ≃ₐ[K] M) := by
@@ -96,8 +105,8 @@ theorem isWeaklyAttached_of_cmBaseChange_of_finrank (hI : UpperTheory.Gal.ToralG
     exact htr (GlobalTheory.T.trace_eq_zero_off_subgroup_of_selfTwist Ω K K₁ hp₁ l ι a π r hr η hη hst g hgM)
   obtain ⟨P₁, hP₁⟩ := hI.ac K K₁ hp₁ a ha π hnotw
   have hc₁ : CharLift π P₁ := hI.chl K K₁ hp₁ a ha π P₁ hP₁
-  obtain ⟨⟨χ₁, hχ₁⟩, -⟩ := GlobalTheory.T.polarizedPair_baseChange_polarized_same_weight GlobalTheory.automorphicFormsFiniteGL hI.js hI.gk K K₁ l a ha π χ P₁ hP₁ hsc
-  have hr₁ : Weak P₁ ι (resTo K₁ r) := GlobalTheory.T.weaklyAttachedGaloisRepresentation_baseChange_restrict K K₁ Ω l ι a π P₁ hP₁ r hr
+  obtain ⟨⟨χ₁, hχ₁⟩, -⟩ := _root_.GlobalTheory.LiftPolar.main GlobalTheory.automorphicFormsFiniteGL hI.js hI.gk K K₁ l a ha π χ P₁ hP₁ hsc
+  have hr₁ : Weak P₁ ι (resTo K₁ r) := _root_.GlobalTheory.GalCut.weak_comp_res K K₁ Ω l ι a π P₁ hP₁ r hr
   let N₁ : Subgroup (G K₁ Ω) := N.comap (AlgEquiv.restrictScalarsHom K)
   have hS₁ : SolvDisj M N₁ := by
     refine ⟨inferInstance, ‹Group.IsSolvable (M ≃ₐ[K₁] M)›, fun g₁ => ?_⟩

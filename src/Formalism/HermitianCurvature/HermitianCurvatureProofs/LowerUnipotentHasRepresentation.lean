@@ -1,10 +1,10 @@
 module
 
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutJAPRCoreCut
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0103
 public import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutJAPRDatumConst
 public import Formalism.HermitianCurvature.HermitianCurvatureProofs.SumDualVectorEqZeta
 public import Formalism.HermitianCurvature.HermitianCurvatureProofs.ActualAdjointnessFromHermitian
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.NFRadRedA
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0047
 
 @[expose] public section
 

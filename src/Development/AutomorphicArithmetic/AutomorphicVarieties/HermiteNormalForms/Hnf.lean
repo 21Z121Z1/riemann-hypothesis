@@ -1,7 +1,7 @@
 module
 
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.HermiteNormalForms.SmulNeZeroLat
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.HermiteNormalForms.Hnfone
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.HermiteNormalForms.Bundle0004
 
 @[expose] public section
 

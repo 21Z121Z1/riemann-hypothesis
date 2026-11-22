@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LftMulRgt
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0378
 
 @[expose] public section
 

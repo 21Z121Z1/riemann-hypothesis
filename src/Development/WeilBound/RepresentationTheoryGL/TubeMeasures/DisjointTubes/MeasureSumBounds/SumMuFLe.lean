@@ -1,24 +1,60 @@
 module
 
-public import Development.WeilBound.RepresentationTheoryGL.TubeMeasures.DisjointTubes.CompSt
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SelfDualLatticeNegTransposeGramStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FiniteUnitaryPartIsInvertibleUnitaryAdelicStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ArchimedeanMatrixUnitaryGroupPreservesGramStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ArithmeticGroupConjRationalPrincipalCongruenceStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PrincipalCongruenceConjMemArithmeticGroupStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ComponentRepresentativesInjectiveDoubleCosetStatement
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsLatticeRationalVectorsInAdelicTranslateStatement
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.CompletedLatticeEqAdelicCompletionAndGram
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsFlagDomainDataPrincipalCongruenceLevelStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CovolumeEqOfRealUnitaryConjStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CovolumeRealSpecialUnitaryEqFlagDomainMassStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DetEqOneUnitaryPrincipalCongruenceLevelThreeStatement
+public import Development.WeilBound.RepresentationTheoryGL.TubeMeasures.DisjointTubes.Bundle0001
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1536
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0044
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0067
+public import Development.AbelianVarietyTheory.Definitions.ExistenceOfLattices.MarkSpec
+public import Development.AbelianVarietyTheory.Definitions.ExistenceOfLattices.Hat1
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0024
+public import Formalism.LocalToGlobal.ProjectiveLattices.PetersonNormSubspace
+public import Formalism.LocalToGlobal.ProjectiveLattices.PartitionExtendByZeroAntitone
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0025
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0020
+public import Formalism.LocalToGlobal.ProjectiveLattices.DatProofs
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.UniformisationConclusion
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.Bundle0003
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.SecBaseChangeAnySt
+public import Development.AbelianVarietyTheory.PublishedTheorems.Landherr₂.ExistsNormTensor
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0021
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArakelovVolumes.UpperBounds.Bundle0007
+public import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.MeanLogSupNormLowerBoundCmFrameNonvanishing
+public import Development.AbelianVarietyTheory.Definitions.CMLattices.IntegralOf
+public import Development.AbelianVarietyTheory.Statements.PrincipalLattices.ExistsPrincipalLattice
+public import Development.AbelianVarietyTheory.Definitions.RegularCharts.BaseNorm
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0023
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0021
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PullbackSections.NonemptyUnitAt
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.FundamentalDomains.Bundle0010
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.FundamentalDomains.Bundle0008
+public import Formalism.LocalToGlobal.CMDeterminantIdeals.CMIdealValuations.Bundle0001
+public import Formalism.LocalToGlobal.CMDeterminantIdeals.CMIdealValuations.ProdMulLeDetIdeal
+public import Formalism.LocalToGlobal.CMDeterminantIdeals.CMIdealValuations.ValuationLeOfEqAlgebraMap
+public import Formalism.LocalToGlobal.CMDeterminantIdeals.CMIdealValuations.AbsNormSpanGalois
+public import Formalism.LocalToGlobal.CMDeterminantIdeals.CMIdealValuations.Bundle0002
+public import Formalism.LocalToGlobal.CMDeterminantIdeals.CMIdealValuations.ExistsEvalNeZeroOfTotalDegreeLt
+public import Formalism.LocalToGlobal.CMDeterminantIdeals.CMIdealValuations.FiniteDetAddSmulOneEqZero
+public import Formalism.LocalToGlobal.CMDeterminantIdeals.CMIdealValuations.LargeResidueExtensionLemma
+public import Formalism.LocalToGlobal.CMDeterminantIdeals.CMIdealValuations.HermitianFormGramBlockBasis
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1524
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1513
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ArithmeticGroupConjRationalPrincipalCongruence
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1534
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1514
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0070
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1294
+public import Development.AbelianVarietyTheory.BlockTheory.ExistenceTori.UnitaryHaarVolume
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1289
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CovolumeRealSpecialUnitaryEqFlagDomainMass
+public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.Bundle0005
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0133
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.FundamentalDomains.Bundle0001
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HermitianMassUpperBound
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0713
 public import Development.AbelianVarietyTheory.Proofs.TorusHaarMeasure.FinMuAllData
 public import Formalism.FrobeniusOrbits.FrobeniusOrbitsProofs.MuCardLeTwo
-public import Formalism.LocalToGlobal.LatticeGeometry.DegFlLApply
-public import Development.AbelianVarietyTheory.Definitions.Divisors.HolomorphicSectionSignatureOneOne
+public import Formalism.LocalToGlobal.LatticeGeometry.Bundle0001
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0051
 
 @[expose] public section
 
@@ -53,24 +89,24 @@ theorem sum_muF_le (hT : TubeSt) (D : D7) (V : HSp D) (r : ℕ) (hr : V.rank = r
     have := (hm k).1
     simpa [Matrix.reindex_apply] using this
   have hL := GlobalTheory.Member.latHat_eq_hat_and_gram D V
-  choose Λk hΛk using fun k => GlobalTheory.T.exists_lattice_rationalVectorsInAdelicTranslate D.host.F D.host.E V.rank (GlobalTheory.Member.latC V) (finHom V (gA k))
+  choose Λk hΛk using fun k => _root_.GlobalTheory.AdLat.exists_lattice_latOf D.host.F D.host.E V.rank (GlobalTheory.Member.latC V) (finHom V (gA k))
     hL.2.2.1 hL.2.2.2.1
-  have hX' := fun k => GlobalTheory.T.exists_flagDomainData_principalCongruenceLevel D.host.E V.rank M (X k) (Λk k) hM (hΛk k).2.1 (hΛk k).2.2.1
+  have hX' := fun k => _root_.GlobalTheory.PrincData.exists_princ_data D.host.E V.rank M (X k) (Λk k) hM (hΛk k).2.1 (hΛk k).2.2.1
   choose X' hX'Gm hX'Ψ hX'p0 hX'Λ hX'Γ using hX'
   have hfm : ∀ k, ∃ y, IsOrth (X' k) y ∧ ∃ FF', IsFundSet (X' k) y FF' ∧ muF (X' k) y FF' < ⊤ :=
     fun k => GlobalTheory.finMu_all_data D.host.E V.rank (X' k)
   choose y hy FF' hFF' _ using hfm
   have hμ : ∀ k, muF (X k) (x0 k) (FF k) = muF (X' k) (y k) (FF' k) := by
     intro k
-    refine GlobalTheory.T.covolume_eq_of_realUnitary_conj D.host.E V.rank (X k) (X' k) (hX'Ψ k)
+    refine _root_.GlobalTheory.CovolConj.muF_eq_of_conj D.host.E V.rank (X k) (X' k) (hX'Ψ k)
       (fun τ => if h : τ ∈ (X k).Ψ then archM V (th k ⟨τ, h⟩) (gA k) else 1) (x0 k) (y k) (FF k) (FF' k)
       (hX'Gm k) (hX'p0 k) ?_ ?_ ?_ (hF k).1 (hy k) (hF k).2 (hFF' k)
     · intro τ hτ
       simp only [dif_pos hτ]
       rw [hG k]
-      exact GlobalTheory.T.archimedeanMatrix_unitaryGroup_preserves_gram D V τ _ (hth k ⟨τ, hτ⟩) (gA k)
+      exact _root_.GlobalTheory.ArchUnit.gram_archM D V τ _ (hth k ⟨τ, hτ⟩) (gA k)
     · intro γ hγ
-      obtain ⟨γ', h1, h2⟩ := GlobalTheory.T.arithmeticGroup_conj_rational_principalCongruence D V Comp X dict Kf th M x1 hK hth hD (fun c => (hx1 c).1) hact hG k (gA k)
+      obtain ⟨γ', h1, h2⟩ := _root_.GlobalTheory.MsRepsFwd.conj_rat_congr D V Comp X dict Kf th M x1 hK hth hD (fun c => (hx1 c).1) hact hG k (gA k)
         (hgA k) (Λk k) (hΛk k).1 γ hγ
       refine ⟨γ', (hX'Γ k γ').2 (by rw [hG k]; exact h1), fun τ hτ => ?_⟩
       simp only [dif_pos hτ]
@@ -78,19 +114,19 @@ theorem sum_muF_le (hT : TubeSt) (D : D7) (V : HSp D) (r : ℕ) (hr : V.rank = r
     · intro γ' hγ'
       have h1 := (hX'Γ k γ').1 hγ'
       rw [hG k] at h1
-      obtain ⟨γ, hγ, h2⟩ := GlobalTheory.T.principalCongruence_conj_mem_arithmeticGroup D V Comp X dict Kf th M x1 hK hth hD (fun c => (hx1 c).1) hact hG k (gA k)
+      obtain ⟨γ, hγ, h2⟩ := _root_.GlobalTheory.RepConv.conj_mem_of_cong D V Comp X dict Kf th M x1 hK hth hD (fun c => (hx1 c).1) hact hG k (gA k)
         (hgA k) (Λk k) (hΛk k).1 (hΛk k).2.2.2 γ' h1
       refine ⟨γ, hγ, fun τ hτ => ?_⟩
       simp only [dif_pos hτ]
       exact h2 τ hτ
-  have hdist := GlobalTheory.T.componentRepresentatives_injective_doubleCoset D V Comp X dict Kf th M gA hK hth hD (fun k => by rw [hgA k])
+  have hdist := _root_.GlobalTheory.RepsInj.reps_inj D V Comp X dict Kf th M gA hK hth hD (fun k => by rw [hgA k])
   have hΓ' : ∀ k γ, γ ∈ (X' k).Γ ↔ IsUStab (X' k).Gm (X' k).Λ γ ∧ ∀ x ∈ (X' k).Λ, ∃ z ∈ (X' k).Λ,
       (γ : Matrix (Fin V.rank) (Fin V.rank) D.host.E) *ᵥ x - x = M • z := by
     intro k γ
     rw [hX'Γ k γ, hX'Gm k, hX'Λ k]
   have hdet : ∀ k, ∀ γ ∈ (X' k).Γ, (γ : Matrix (Fin V.rank) (Fin V.rank) D.host.E).det = 1 := fun k =>
-    GlobalTheory.T.det_eq_one_unitary_principal_congruence_level_three D.host.E V.rank M (X' k) hM (hΓ' k)
-  have hCc := fun k => GlobalTheory.T.covolume_realSpecialUnitary_eq_flagDomain_mass D.host.E V.rank (X' k) (y k) (FF' k) (by omega) (hdet k) (hy k) (hFF' k)
+    _root_.GlobalTheory.UnitaryCongruenceDet.det_eq_one D.host.E V.rank M (X' k) hM (hΓ' k)
+  have hCc := fun k => _root_.GlobalTheory.SUCovol.covolume_realSU D.host.E V.rank (X' k) (y k) (FF' k) (by omega) (hdet k) (hy k) (hFF' k)
   have hTube := hT D V P Q hs hsig h2 M hM Comp X' gA y hdist (fun k => ⟨(hX'Gm k).trans (hG k),
     fun τ => by rw [hX'Ψ k]; exact hΨ k τ, by rw [hX'Λ k]; exact (hΛk k).1, hΓ' k, hy k⟩)
   have hC1 : (1 : ℝ) ≤ ((2 : ℝ) ^ (V.rank * (V.rank - 1) / 2) * (2 * Real.pi) ^ (V.rank - 1) *

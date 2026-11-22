@@ -1,6 +1,6 @@
 module
 
-public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.ZeroWindow.RightChi
+public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.ZeroWindow.Bundle0001
 
 @[expose] public section
 

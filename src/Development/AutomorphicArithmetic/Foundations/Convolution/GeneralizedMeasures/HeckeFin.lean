@@ -1,10 +1,10 @@
 module
 
 public import Development.AutomorphicArithmetic.Foundations.Convolution.GeneralizedMeasures.HeckeFinAlt
-public import Development.AutomorphicArithmetic.Foundations.Convolution.GeneralizedMeasures.StepFin
+public import Development.AutomorphicArithmetic.Foundations.Convolution.GeneralizedMeasures.Bundle0002
 public import Development.AutomorphicArithmetic.Foundations.Convolution.GeneralizedMeasures.SphAct
-public import Development.AutomorphicArithmetic.Foundations.Convolution.GeneralizedMeasures.PolyMem
-public import Development.AutomorphicArithmetic.Foundations.Convolution.ConvolutionKernels.KernelTransforms.LocEmb
+public import Development.AutomorphicArithmetic.Foundations.Convolution.GeneralizedMeasures.Bundle0001
+public import Development.AutomorphicArithmetic.Foundations.Convolution.ConvolutionKernels.KernelTransforms.Bundle0002
 
 @[expose] public section
 

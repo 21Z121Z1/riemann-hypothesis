@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.MemEurOfTeichmullerSeries
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.GeomSumOneAddPrime
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0237
 public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsInvariantBasis
 
 @[expose] public section

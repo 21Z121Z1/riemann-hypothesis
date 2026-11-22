@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Foundations.ExistsEqSubOfMemCob
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.FiniteIndexStabilizer
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsFixedCongrAxLemmaOddPrimeStatement
+public import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0021
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0115
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0366
 public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.TateDiscreteInertiaKummerCoboundaryBoundStatement
 public import ReciprocityTheory.NeutralLocalFields.LocalFieldComparison.LocalFieldAutomorphisms.ExistsApplyEqOfMemDec
 

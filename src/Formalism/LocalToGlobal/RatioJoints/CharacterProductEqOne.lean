@@ -2,7 +2,7 @@ module
 
 public import Formalism.LocalToGlobal.ClassS
 public import Formalism.LocalToGlobal.RatioJoints.IsRatioAt
-public import Formalism.LocalToGlobal.UnitaryNorms.CharDiv
+public import Formalism.LocalToGlobal.UnitaryNorms.Bundle0007
 public import Formalism.LocalToGlobal.JointCharacters.SameChr
 
 @[expose] public section

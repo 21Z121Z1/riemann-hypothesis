@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import GroundTheory.PAdicHodge.TateCpTwist
+public import GroundTheory.PAdicHodge.Bundle0002
 public import GroundTheory.PAdicHodge.AxLemma
-public import GroundTheory.PAdicHodge.TateNormalizedTrace
+public import GroundTheory.PAdicHodge.Bundle0004
 
 @[expose] public section
 

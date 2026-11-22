@@ -2,8 +2,7 @@ module
 
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.HermiteNormalForms.SmulNeZeroLat
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.HermiteNormalForms.Grampd
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.HermiteNormalForms.RealVec
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.HermiteNormalForms.Realsurj
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.HermiteNormalForms.Bundle0003
 
 @[expose] public section
 

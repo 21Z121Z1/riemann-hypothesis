@@ -2,8 +2,7 @@ module
 
 public import Mathlib
 public import GroundTheory.AutomorphicForms.GL2.GJGlobal
-public import GroundTheory.AutomorphicForms.GL2.GJStandardLUnramified
-public import GroundTheory.AutomorphicForms.GL2.GJLocalFEGamma
+public import GroundTheory.AutomorphicForms.GL2.Bundle0005
 public import GroundTheory.AutomorphicForms.GL2.GJFEInduced
 public import GroundTheory.AutomorphicForms.GL2.GJFELevi
 public import GroundTheory.AutomorphicForms.GL2.FiniteIdeleDecomp

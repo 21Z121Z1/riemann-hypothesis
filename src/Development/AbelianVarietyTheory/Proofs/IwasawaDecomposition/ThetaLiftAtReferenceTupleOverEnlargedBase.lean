@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.EqCjOneSmul
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0670
 
 @[expose] public section
 

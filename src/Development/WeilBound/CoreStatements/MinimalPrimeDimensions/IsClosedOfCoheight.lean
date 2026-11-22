@@ -2,10 +2,10 @@ module
 
 public import Development.WeilBound.CoreStatements.MinimalPrimeDimensions.SpecializesIff
 public import Development.WeilBound.CoreStatements.MinimalPrimeDimensions.IsProjPrimeOfRelComps
-public import Development.WeilBound.CoreStatements.MinimalPrimeDimensions.ResGAppLE
-public import Development.WeilBound.CoreStatements.MinimalPrimeDimensions.LeDimQuotientHorizontal
-public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.ResidueDegreeOfIsClosedImmersion
-public import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.PCharacterised
+public import Development.WeilBound.CoreStatements.MinimalPrimeDimensions.Bundle0001
+public import Development.WeilBound.CoreStatements.MinimalPrimeDimensions.Bundle0003
+public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.Bundle0015
+public import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.Bundle0017
 
 @[expose] public section
 

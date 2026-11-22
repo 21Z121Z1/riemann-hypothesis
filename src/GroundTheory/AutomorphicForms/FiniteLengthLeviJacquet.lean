@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import GroundTheory.AutomorphicForms.GeometricLemma
+public import GroundTheory.AutomorphicForms.Bundle0024
 public import GroundTheory.AutomorphicForms.LeviStagesInduction
 public import GroundTheory.AutomorphicForms.LeviStagesExact
 

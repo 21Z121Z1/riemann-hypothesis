@@ -2,27 +2,32 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.ExistsIsScalar
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.VacuumVectorDropAuxiliaryPlaces
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0784
 public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IdempotentMulAddOneSubInverse
 public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.CardInversePrimeRepsIntegralRightMulHecke
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ThetaVacuumHeckeIdentitySplitPlace
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SumHeckeIndicatorIntegralEqPrimitiveStatement
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SplitPlaceChartFiniteAdeleTensorLevelsStatement
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SumUniversalDeterminantDatumCoeffEqPrimitiveStatement
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ArtinMapSplitPlaceUniformiserEqFrobeniusInvStatement
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ModulusUnramifiedCharDetHeckeDoubleCosetSplitStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsUnitaryGroupCharacterOfHeckeChar
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.HeisenbergCombinationCommFockPolynomialVectors
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.VacuumVectorDropAuxiliaryPlacesStatement
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0137
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0641
+public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.UnivOfNotLinearIndependent
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0106
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0773
+public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.AdmissibleEmptyOfGood
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.FockVectorsKilledHeisenbergAverageIsotropic
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsIdempotentMulNatPowOfMul
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0590
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0113
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0820
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0791
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0852
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0150
 public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.InvNatPowRpowNegHalfEvenEqPow
 public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsDetRootOfDetAt
-public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.GaloisSideTwistedSelmerAuxiliaryPrimes
+public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0012
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CoeffHeckePolyOfComplex
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ConjPlNeOfSplit
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ChosenPlacesAdmissibleGoodSetup
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.AdmissibleConjugatePairPlacesEqSelfOfGoodCharsStatement
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.UniversalCharSpreadCommutesWithRestrictionStatement
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsUnivCharWithUnivChar
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0838
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0795
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0794
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0805
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0401
 public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.UnivChar
 
 @[expose] public section
@@ -176,8 +181,8 @@ theorem thURel_of_tie {ρ : Setup X} (hρ : ρ.Good) {Y : NExp D.R D.host D.what
   have hclQ' := closed_erase hclQ hconj
   have hlQ : ∀ v ∈ Q, v ∉ placesOver D.host.E (X.l i) := fun v hv hl =>
     Finset.disjoint_left.1 hS0 hv (X.twistExcludedPlaces_contains_residueChar i hl)
-  have hA : admissibleConjugatePairPlaces X i Q M = Q := GlobalTheory.T.admissibleConjugatePairPlaces_eq_self_of_good_chars D N X i M Q d hsplit hclQ hgood (Or.inr hlQ)
-  have hA' : admissibleConjugatePairPlaces X i ((Q.erase P).erase Pb) M = ((Q.erase P).erase Pb) := GlobalTheory.T.admissibleConjugatePairPlaces_eq_self_of_good_chars D N X i M ((Q.erase P).erase Pb) d (fun v hv => hsplit v (hQ'Q hv)) hclQ'
+  have hA : admissibleConjugatePairPlaces X i Q M = Q := _root_.GlobalTheory.AdmSelf.admissibleConjugatePairPlaces_eq_self_of_goodChar D N X i M Q d hsplit hclQ hgood (Or.inr hlQ)
+  have hA' : admissibleConjugatePairPlaces X i ((Q.erase P).erase Pb) M = ((Q.erase P).erase Pb) := _root_.GlobalTheory.AdmSelf.admissibleConjugatePairPlaces_eq_self_of_goodChar D N X i M ((Q.erase P).erase Pb) d (fun v hv => hsplit v (hQ'Q hv)) hclQ'
     (fun v hv => hgood v (hQ'Q hv)) (Or.inr fun v hv => hlQ v (hQ'Q hv))
   have hPQ' : P ∉ ((Q.erase P).erase Pb) := fun h => Finset.ne_of_mem_erase (Finset.mem_of_mem_erase h) rfl
   have hPbQ' : Pb ∉ ((Q.erase P).erase Pb) := fun h => Finset.ne_of_mem_erase h rfl
@@ -261,7 +266,7 @@ theorem thURel_of_tie {ρ : Setup X} (hρ : ρ.Good) {Y : NExp D.R D.host D.what
     have hk : Formalism.MainNotions.IntegralHeckeForms.HkIdx i n P :=
       ⟨(Finset.mem_Icc.1 hn).1, (Finset.mem_Icc.1 hn).2, hsplitP, fun h => Finset.disjoint_left.1 hS0 hP h⟩
     obtain ⟨hdc, h1⟩ := isDC_of_rep hρ J b hk he (hα n hn').1.2.1 (hα n hn').2.1 (hα n hn').2.2
-    have hmu := (GlobalTheory.T.modulus_unramifiedChar_det_heckeDoubleCoset_split D (Links.Wc D J) P (idemAt P) he ϖ hϖ1 hϖ2 x hx n (α n) (hα n hn').1 1 h1 1 h1
+    have hmu := (_root_.GlobalTheory.SplitDetValue.det_modulus_chi D (Links.Wc D J) P (idemAt P) he ϖ hϖ1 hϖ2 x hx n (α n) (hα n hn').1 1 h1 1 h1
       (GlobalTheory.VecInv.detAt (idemAt P) hee (Links.Wc D J) (α n)) (by
         rw [one_mul, mul_one]; exact GlobalTheory.VecInv.isDetAt_detAt _ hee _ _)).2 Circle ((ρ.B i J b).mu)
       (fun y h1 h2 h3 => mu_unram (ρ.B i J b) (hρ.base i J b) hadm hPH y h1 h2 h3)
@@ -343,7 +348,7 @@ theorem thURel_of_tie {ρ : Setup X} (hρ : ρ.Good) {Y : NExp D.R D.host D.what
     rw [hχ, ← hc']
     congr 4
     funext v
-    exact GlobalTheory.T.universalChar_spread_commutes_with_restriction D N X Y hU i M (ρ.ch i) (hρ.ch i) Q ((Q.erase P).erase Pb) hQ'Q hA hA' hsubH c v.1 v.2
+    exact _root_.GlobalTheory.SpreadRestrict.spread_restrict D N X Y hU i M (ρ.ch i) (hρ.ch i) Q ((Q.erase P).erase Pb) hQ'Q hA hA' hsubH c v.1 v.2
   have hIcc : Finset.Icc 1 (Links.Wc D J).rank = Finset.Icc 1 D.R.r := by rw [FWT.rank_Wc]
   have hX2 : ∀ c' : ↥H' → ZMod (X.l i ^ M), ∑ c ∈ Finset.univ.filter (fun c : ↥H → ZMod (X.l i ^ M) =>
       ∀ v : ↥H', c ⟨v.1, hsubH v.1 v.2⟩ = c' v), Ξ c g =

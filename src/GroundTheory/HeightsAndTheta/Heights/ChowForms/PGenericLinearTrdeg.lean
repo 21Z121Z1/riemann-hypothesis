@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import GroundTheory.HeightsAndTheta.Heights.ChowForms.Imports
+public import GroundTheory.HeightsAndTheta.Heights.ChowForms.Bundle0003
 
 @[expose] public section
 

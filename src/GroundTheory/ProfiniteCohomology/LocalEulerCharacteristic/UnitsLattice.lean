@@ -1,10 +1,9 @@
 module
 
 public import Mathlib
-public import GroundTheory.ProfiniteCohomology.LocalEulerCharacteristic.UnitsPower
+public import GroundTheory.ProfiniteCohomology.LocalEulerCharacteristic.Bundle0002
 public import GroundTheory.LocalFields.UnitsGalois
-public import GroundTheory.LocalFields.ExistsUnitFiltrationUnitsLeAndRangePowLe
-public import GroundTheory.ProfiniteCohomology.LocalEulerCharacteristic.Additive
+public import GroundTheory.LocalFields.Bundle0003
 
 @[expose] public section
 

@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ProdMinorsMemInv
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0522
 
 @[expose] public section
 

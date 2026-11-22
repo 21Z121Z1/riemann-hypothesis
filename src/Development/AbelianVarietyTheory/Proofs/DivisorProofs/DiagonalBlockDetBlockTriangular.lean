@@ -2,9 +2,9 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsGivenStageEqOne
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PlacesApart
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0892
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MemHatMxHomLatIff
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IterPrincipalSpec
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0291
 
 @[expose] public section
 

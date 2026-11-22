@@ -1,12 +1,12 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Divisors.SemiposAtOfPositive
-public import Development.AbelianVarietyTheory.Definitions.Divisors.ToKnownTheoremsOf
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0063
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0059
 public import Development.AbelianVarietyTheory.Definitions.Divisors.WedgeNrmLeOfWedgeNormLe
 public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.ExistsVanBdOfMemExtVanZ
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.VanBdLeSpace
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.MemSuppOnIffIdemMulOfNatural
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2228
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0331
 
 @[expose] public section
 

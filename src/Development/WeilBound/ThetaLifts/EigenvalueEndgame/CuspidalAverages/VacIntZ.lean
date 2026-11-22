@@ -1,9 +1,9 @@
 module
 
 public import Development.WeilBound.ThetaLifts.EigenvalueEndgame.CuspidalAverages.KeyThree
-public import Development.WeilBound.ThetaLifts.LeviDeterminants.MixedModels.PsiUnrOfNotLe
-public import Development.WeilBound.CoreStatements.LocallyConstantCoinvariants.PfDictAd
-public import Development.WeilBound.CoreStatements.LocallyConstantCoinvariants.LmOfLinBar
+public import Development.WeilBound.ThetaLifts.LeviDeterminants.MixedModels.Bundle0003
+public import Development.WeilBound.CoreStatements.LocallyConstantCoinvariants.Bundle0004
+public import Development.WeilBound.CoreStatements.LocallyConstantCoinvariants.Bundle0003
 public import Development.WeilBound.CoreStatements.LocallyConstantCoinvariants.PfDictSec
 
 @[expose] public section

@@ -2,13 +2,13 @@ module
 
 public import Mathlib
 public import Formalism.SharpRestriction.CuspSpanNormBounds.FractionFieldToGenericStalkAlgebraMapEq
-public import Development.AbelianVarietyTheory.Definitions.Foundations.IsHermND
+public import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0007
 public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.ComplementReferenceCompactSubgroup
-public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.HermLat
+public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.Bundle0002
 public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.IsPrincipalIdealRingOfHenselian
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.HermitianDoubleCosetFrameClassProperties
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.EncardUniCosetsLe
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.LeadingMinorsProdDenominatorUnitriangularFactorsStatement
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0032
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0050
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.LeadingMinorsProdDenominatorUnitriangularFactors
 
 @[expose] public section
 
@@ -197,7 +197,7 @@ theorem main : ∀ {F : Type} [Field F] [ValuativeRel F] [TopologicalSpace F] [I
       Δ ∈ L.O ∧ IsUnit Δ ∧ vE L S.ϖ (Δ * L.cj Δ) = S.vD ∧
         ∀ i j, L.cj Δ * u i j ∈ L.O ∧ Δ * u' i j ∈ L.O := by
     intro u u' hu hu' hb hint
-    refine GlobalTheory.T.leadingMinors_prod_denominator_unitriangular_factors L r k S u u' hu hu' hb (fun a b => ?_) Δ hΔ
+    refine _root_.GlobalTheory.OrbitDenom.main L r k S u u' hu hu' hb (fun a b => ?_) Δ hΔ
     rw [pairing]
     exact hint.2 _ (GlobalTheory.HL.FrameClass.frame_classes L r k S _ _).1 a b
   obtain ⟨hΔO, hΔu, hΔv⟩ : Δ ∈ L.O ∧ IsUnit Δ ∧ vE L S.ϖ (Δ * L.cj Δ) = S.vD := by

@@ -2,8 +2,8 @@ module
 
 public import Mathlib
 public import GroundTheory.AutomorphicForms.GL2.GJFEBlockKernel
-public import GroundTheory.AutomorphicForms.SmoothRepContragredient
-public import GroundTheory.AutomorphicForms.CompactModCentre
+public import GroundTheory.AutomorphicForms.Bundle0010
+public import GroundTheory.AutomorphicForms.Bundle0014
 
 @[expose] public section
 

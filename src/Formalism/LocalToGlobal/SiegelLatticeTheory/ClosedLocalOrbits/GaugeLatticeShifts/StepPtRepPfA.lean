@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Formalism.LocalToGlobal.SiegelLatticeTheory.ClosedLocalOrbits.RealObj
-public import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.WittExtensionTheorem
+public import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.Bundle0010
 
 @[expose] public section
 

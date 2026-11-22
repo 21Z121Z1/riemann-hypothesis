@@ -4,7 +4,7 @@ public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.LocSpBot
 public import Formalism.LocalToGlobal.GroupLattices.PendingLemmas.DetOfColSpanEq
 public import Formalism.LocalToGlobal.PairingIndexBounds.OrthogonalChartLevels.PtStep0
-public import Formalism.LocalToGlobal.Divisibility.Tuples
+public import Formalism.LocalToGlobal.Divisibility.Bundle0001
 
 @[expose] public section
 

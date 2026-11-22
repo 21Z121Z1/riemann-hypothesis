@@ -1,6 +1,6 @@
 module
 
-public import Development.AutomorphicArithmetic.Foundations.Convolution.PowerSumTraces.TwistFactor
+public import Development.AutomorphicArithmetic.Foundations.Convolution.PowerSumTraces.Bundle0006
 public import Development.AutomorphicArithmetic.Foundations.Convolution.TraceSplitting.SplitStable
 
 @[expose] public section

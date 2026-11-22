@@ -3,7 +3,7 @@ module
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.Foundations.FinalTheorems
 public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.LengthCyclotomicBlockCocyclesLeSha
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.NormLeOne
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0342
 
 @[expose] public section
 

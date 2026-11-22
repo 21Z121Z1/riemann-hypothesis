@@ -1,8 +1,8 @@
 module
 
-public import ReciprocityTheory.DualLattices.SeriesState
+public import ReciprocityTheory.DualLattices.Bundle0006
 public import ReciprocityTheory.DualLattices.InstAddCommMonoidFibreFst
-public import ReciprocityTheory.DualLattices.NsmulFstAddSnd
+public import ReciprocityTheory.DualLattices.Bundle0011
 
 @[expose] public section
 

@@ -1,8 +1,8 @@
 module
 
 public import Formalism.SharpRestriction.GrowthBounds.IntegralWeylLatticeSpan.RowActWeylMemDescentLattice
-public import Formalism.SharpRestriction.GrowthBounds.IntegralWeylLatticeSpan.CoreDesc
-public import Formalism.LocalToGlobal.GroupLattices.TiedFamilies.IsUnitDetBlockPreimage
+public import Formalism.SharpRestriction.GrowthBounds.IntegralWeylLatticeSpan.Bundle0001
+public import Formalism.LocalToGlobal.GroupLattices.TiedFamilies.Bundle0005
 
 @[expose] public section
 

@@ -1,11 +1,11 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Divisors.IsUnifAt
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RelIndexNeZeroOfIsOpen
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RelIndexProd
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.EquivOfISupRange
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TrOnMapOfInjective
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0036
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1044
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1043
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0112
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1088
 
 @[expose] public section
 

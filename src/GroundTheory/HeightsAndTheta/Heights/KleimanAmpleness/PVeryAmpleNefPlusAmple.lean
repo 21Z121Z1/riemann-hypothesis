@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.GeneratedTwistSysZero
+public import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.Bundle0010
 
 @[expose] public section
 

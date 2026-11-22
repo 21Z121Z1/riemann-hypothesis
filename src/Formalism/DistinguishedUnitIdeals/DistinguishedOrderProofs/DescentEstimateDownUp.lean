@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Formalism.DistinguishedUnitIdeals.CoprimeProd
-public import Formalism.DistinguishedUnitIdeals.DistinguishedOrderProofs.GroundTheory
-public import Formalism.GaussValuationBounds.GaussValueContraction.PhiIterXProof
+public import Formalism.DistinguishedUnitIdeals.Bundle0001
+public import Formalism.DistinguishedUnitIdeals.DistinguishedOrderProofs.Bundle0001
+public import Formalism.GaussValuationBounds.GaussValueContraction.Bundle0002
 
 @[expose] public section
 

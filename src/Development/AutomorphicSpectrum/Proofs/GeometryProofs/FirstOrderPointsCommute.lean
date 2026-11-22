@@ -1,8 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.EigLat
-public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsCocharLie
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.Bundle0004
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.IsGrpPullback
 public import Development.WeilBound.CoreStatements.AmpleLineBundles.SquareZeroDeformationAdditivity
 

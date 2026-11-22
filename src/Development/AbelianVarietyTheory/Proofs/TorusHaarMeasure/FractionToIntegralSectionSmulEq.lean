@@ -1,21 +1,19 @@
 module
 
 public import Mathlib
-public import Formalism.LocalToGlobal.ProjectiveLattices.CurveAsm
-public import Formalism.LocalToGlobal.ProjectiveLattices.TieUpC
-public import Formalism.LocalToGlobal.ProjectiveLattices.SupNDataOfNonneg
-public import Formalism.LocalToGlobal.ProjectiveLattices.AxHInst
-public import Formalism.LocalToGlobal.ProjectiveLattices.CurveSec
-public import Formalism.LocalToGlobal.ProjectiveLattices.CurveInj
-public import Formalism.LocalToGlobal.ProjectiveLattices.CurveLocInst
-public import Formalism.LocalToGlobal.ProjectiveLattices.CompFin
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0040
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0042
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0037
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0035
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0031
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0043
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0011
 public import Development.AbelianVarietyTheory.Definitions.UpperBounds.PhRec
-public import Development.AbelianVarietyTheory.Proofs.GenericRegularity.BirationalOfFormRatiosFullTrdegStatement
-public import Development.AbelianVarietyTheory.Proofs.GenericRegularity.CompSplitRecord
-public import Development.AbelianVarietyTheory.Proofs.GenericRegularity.CuspEqZeroOfGenericValues
-public import Development.AbelianVarietyTheory.Proofs.GenericRegularity.CurveLocOfCountQAt
-public import Development.AbelianVarietyTheory.Proofs.GenericRegularity.CountQAtStGenericSectionPrimesStatement
-public import Development.AbelianVarietyTheory.Proofs.GenericRegularity.CurveModelExistsAllPrimesAllPointsStatement
+public import Development.AbelianVarietyTheory.Proofs.GenericRegularity.Bundle0032
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0041
+public import Development.AbelianVarietyTheory.Proofs.GenericRegularity.Bundle0030
+public import Development.AbelianVarietyTheory.Proofs.GenericRegularity.Bundle0033
+public import Development.AbelianVarietyTheory.Proofs.GenericRegularity.Bundle0028
 
 @[expose] public section
 
@@ -226,10 +224,10 @@ theorem tieS : ∀ (D : D7) (T : Top D) (h : LawsP T) (j : ℕ) (hj : InR D j) (
   haveI : Finite (Comp (T.Q.Xo j) T.Q.c) := CompFin.finite_comp _ _
   have hV := GlobalTheory.Reg.genValInj_record D T h j hj hG
   have hC := GlobalTheory.Reg.compSplit_record D T h j hj hG
-  obtain ⟨M⟩ := GlobalTheory.T.curveModel_exists_all_primes_allPoints D T h j hj hG hT hV hC
-    (fun ka wL wF G => (GlobalTheory.T.birational_of_formRatios_full_trdeg D T h j hj hG ka wL wF G).2) hG ka wL wF G la S g0 hH.1 hH.2.1 hH.2.2.1 hH.2.2.2
+  obtain ⟨M⟩ := _root_.GlobalTheory.CurveRecord.curveInst D T h j hj hG hT hV hC
+    (fun ka wL wF G => (_root_.GlobalTheory.Reg.birSt_of_ratios_trdeg D T h j hj hG ka wL wF G).2) hG ka wL wF G la S g0 hH.1 hH.2.1 hH.2.2.1 hH.2.2.2
   exact tie_of (recPlus h j hj) G la (fun Z : Comp (T.Q.Xo j) T.Q.c => Om Z) (fun Z => formsEvR j hG hT Z) g0
     (curveInj h j hj hG hT hV G la) (hone_of h j hj hG hT hC ka wL wF G S g0 la hH)
-    (GlobalTheory.curveLoc_of_countQAt D T h j hj hG hT (GlobalTheory.T.countQAtSt_generic_section_primes D T h j hj hG hT) ka wL wF G S g0 la hH) M.isGen hB
+    (GlobalTheory.curveLoc_of_countQAt D T h j hj hG hT (_root_.GlobalTheory.SecCount.countQAtSt D T h j hj hG hT) ka wL wF G S g0 la hH) M.isGen hB
 
 end GlobalTheory.SectionProduct

@@ -3,12 +3,12 @@ module
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.Foundations.NormSumPairRankZeroOfCurveCoordNorm
 public import Formalism.PairingDivisors.StatementH
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.IdxEqRelIndex
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.FinsumNormNeg
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsTraceOneIntegerConjDiffPrimeTo
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.FrameEmbeddingUniqueFixedStatement
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.AbsNormCmPrimeInertPrimeSignStatement
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.SumCompSurjective
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0252
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0251
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0249
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0269
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0259
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0017
 
 @[expose] public section
 
@@ -357,7 +357,7 @@ theorem gauss_sum_sign : ∀ (D : D7) (M : Type) [AddCommGroup M] [Module (𝓞 
   intro D M _ _ _ φ β h0 h1 h2 h3 h4 h5
   obtain ⟨w, hw, -⟩ := GlobalTheory.TraceOne.exists_trace_one D 2 Nat.prime_two
   refine gauss_sign (GlobalTheory.InertSign.sgO D) (GlobalTheory.InertSign.sgO_sgO D) hw (sgn D) sgn_one sgn_mul_self
-    (fun A B _ _ _ _ _ _ => sgn_mul (GlobalTheory.T.finite_module_sign_eq_neg_one_pow_length D A).1 (GlobalTheory.T.finite_module_sign_eq_neg_one_pow_length D B).1 Nat.card_pos.ne'
+    (fun A B _ _ _ _ _ _ => sgn_mul (_root_.GlobalTheory.InertParity.FiniteOrder.ev_card_and_sgn_card D A).1 (_root_.GlobalTheory.InertParity.FiniteOrder.ev_card_and_sgn_card D B).1 Nat.card_pos.ne'
       Nat.card_pos.ne') (fun P hP hst => ?_) _ M φ β rfl ⟨h0, h1, h2, h3, h4, h5⟩
   have hfix : D.host.conj • P = P := by
     apply le_antisymm
@@ -365,7 +365,7 @@ theorem gauss_sum_sign : ∀ (D : D7) (M : Type) [AddCommGroup M] [Module (𝓞 
     · intro a ha
       have := Ideal.mem_map_of_mem (GlobalTheory.InertSign.sgO D) (hst a ha)
       rwa [GlobalTheory.InertSign.sgO_sgO] at this
-  obtain ⟨hs, q, -, hq, -, -, hqP, -⟩ := (GlobalTheory.T.absNorm_cmPrime_inertPrime_sign D P hP).2.1 hfix
+  obtain ⟨hs, q, -, hq, -, -, hqP, -⟩ := (_root_.GlobalTheory.InertResidue.norm_prime D P hP).2.1 hfix
   obtain ⟨v, -, hv⟩ := GlobalTheory.TraceOne.exists_trace_one D q hq
   refine ⟨?_, v, hv P hP.isPrime hqP⟩
   rwa [Ideal.absNorm_apply, Submodule.cardQuot_apply] at hs

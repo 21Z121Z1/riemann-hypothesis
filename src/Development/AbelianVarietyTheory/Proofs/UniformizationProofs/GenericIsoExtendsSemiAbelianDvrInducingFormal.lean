@@ -4,15 +4,15 @@ public import Mathlib
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.UnifUniqSt
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.ToStkAInjective
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.IsMonHomOfMul
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.DataRigidTorsionOfDataRigid
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.Bundle0012
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.DiscreteValuationRings.PhiGenPf
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsLiftOfSchemeTheoreticallyDominant
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.IsIntegralAndIsNormalSchemeOfSmoothDvr
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.IsOpenImmersionSpMapOfIsDiscreteValuationRing
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0010
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0012
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0013
 public import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.SecEqZeroAndHomEqOfThickenings
-public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ExistsCompletedPointOfThickenings
-public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.GenericIsoAgreesOnCompletePointsStatement
-public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.EqClosedPointOfNotMemRange
+public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.Bundle0049
+public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.GenericIsoAgreesOnCompletePoints
+public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.Bundle0048
 
 @[expose] public section
 
@@ -182,7 +182,7 @@ theorem main : Laws → Laws2 → ∀ (R : Type) [CommRing R] [IsDomain R] [IsDi
   refine exists_iso I hI hG hG' j (fun e => (hj e).1) ΦK fun x => ?_
   obtain ⟨B, _, _, g', g, jL, jL', h₁, -, h₃, h₄, h₅, h₆, h₇⟩ :=
     GlobalTheory.exists_completed_point_of_thickenings R I hA hI D D' A A' G G' hG hG' U U' hD j hj x
-  obtain ⟨v, hv, -⟩ := GlobalTheory.T.generic_iso_agrees_on_complete_points_alt l₁ l₂ R I hA hI D D' A A' G G' hG hG' U U' hD j hj ΦK wK hw B g' g jL jL' h₁
+  obtain ⟨v, hv, -⟩ := _root_.GlobalTheory.generic_iso_agrees_on_complete_points l₁ l₂ R I hA hI D D' A A' G G' hG hG' U U' hD j hj ΦK wK hw B g' g jL jL' h₁
     ⟨h₅, h₆, h₇⟩
   exact ⟨_, g', g, h₃, h₄, h₆.trans h₅.symm, fun Z ρ r h => (hv Z ρ r h).1, h₇.2.2⟩
 

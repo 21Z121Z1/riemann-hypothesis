@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.LatticeNormTransport
+public import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.Bundle0007
 
 @[expose] public section
 

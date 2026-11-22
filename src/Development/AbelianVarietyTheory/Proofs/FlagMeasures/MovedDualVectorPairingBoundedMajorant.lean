@@ -1,11 +1,10 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.IsNormalFormStabilizerMeasure
-public import Formalism.FormalDegreeBessel.FinalG
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.NormLeadingMinorMonomial
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.NormDetInnerLeOfDetEqOne
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.GramSchmidtLengths
+public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.Bundle0010
+public import Formalism.FormalDegreeBessel.Bundle0002
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0168
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0142
 public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.MajorantFlagLengthsInvarianceTorusPositivity
 public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.IsotropicLeviEmbeddingHomomorphismProperties
 public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.IsotropicStabilizerRadicalStructure

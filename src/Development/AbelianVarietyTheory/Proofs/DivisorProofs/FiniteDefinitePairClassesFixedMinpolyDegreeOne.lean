@@ -1,13 +1,13 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Statements.PlaceShiftStatements.TraceDefinitePairsEqAutomorphicTrace
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SkolemNoetherConjugacy
+public import Development.AbelianVarietyTheory.Statements.PlaceShiftStatements.Bundle0001
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0932
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LocalNormOutsideFiniteSet
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConjugatePairRelated
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdelicConjugateOfTrivialisation
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsNumberFieldInvolutionSimilitudeCentralizerStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DefinitePairsRatioLocallyRationalTimesNormStatement
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0872
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0868
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1026
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1217
 
 @[expose] public section
 

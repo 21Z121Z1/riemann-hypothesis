@@ -3,8 +3,8 @@ module
 public import Mathlib
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.TwoWeightEqOneAddRoot
 public import Formalism.LocalRingCardinality.RhoDetPrimeEqMuTildeMulChiPow
-public import Formalism.LocalRingCardinality.ConjSqrtMinusD
-public import Formalism.LocalToGlobal.ProjectiveLattices.UnramBridgeHolds
+public import Formalism.LocalRingCardinality.Bundle0001
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0004
 
 @[expose] public section
 

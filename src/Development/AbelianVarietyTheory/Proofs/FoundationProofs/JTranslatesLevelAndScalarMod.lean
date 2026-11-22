@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.DiagMod
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsSlTwoIntSmulOfFixesJK
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.MemTranslationInvariantSubfieldIffExponents
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0075
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0098
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0106
 
 @[expose] public section
 

@@ -1,6 +1,6 @@
 module
 
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.GramLocSetCApp
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0224
 public import Formalism.HermitianCurvature.HermitianCurvatureProofs.AeNeZeroComplex
 public import CompanionTheory.AutomorphicTheory.DiscreteGroupWaves.NFTopSq
 

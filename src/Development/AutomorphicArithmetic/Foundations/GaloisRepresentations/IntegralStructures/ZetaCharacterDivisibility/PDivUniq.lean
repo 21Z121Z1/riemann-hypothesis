@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.IntegralStructures.ZetaCharacterDivisibility.PhiOfDivOf
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.DenseSplitFrobInvAway
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0321
 
 @[expose] public section
 

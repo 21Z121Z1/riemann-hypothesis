@@ -1,7 +1,7 @@
 module
 
 public import CompanionTheory.AutomorphicTheory.ZuckermanCommutation.ZuckermanFunctors.ZuckermanIngredients
-public import CompanionTheory.AutomorphicTheory.ZuckermanCommutation.ZuckermanFunctors.ZuckermanLibraryBounds
+public import CompanionTheory.AutomorphicTheory.ZuckermanCommutation.ZuckermanFunctors.Bundle0001
 public import CompanionTheory.AutomorphicTheory.ZuckermanCommutation.ZuckermanFunctors.Bridge
 
 @[expose] public section

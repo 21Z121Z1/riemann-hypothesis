@@ -1,10 +1,11 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsGenericFlag
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.Bundle0004
 public import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.FrameDefinitions.Metric
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.IsGrpPullback
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.RegAtIffChartLocalizationStatement
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0019
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.Bundle0002
 
 @[expose] public section
 
@@ -216,7 +217,7 @@ theorem valAt_iff_isValueAt_coords : ∀ (X : Scheme.{0}) (Ω : Type) [Field Ω]
     have ha : a ∈ regAt ξ p := by
       obtain ⟨_, s, hs, _⟩ := hv
       exact ⟨s, hs⟩
-    obtain ⟨s, hs, hunit, hsa⟩ := (GlobalTheory.T.regAt_iff_chart_localization X Ω ξ ℤ _ _ tie c p hchart a).mp ha
+    obtain ⟨s, hs, hunit, hsa⟩ := (_root_.GlobalTheory.CompanionTheory.Ar.regAt_iff_exists_chart_fraction X Ω ξ ℤ _ _ tie c p hchart a).mp ha
     obtain ⟨ds, Gs, hGs, hsG⟩ := chart_form y c hy hs
     obtain ⟨dt, Gt, hGt, htG⟩ := chart_form y c hy hsa
     have hVs : ValAt ξ z s (MvPolynomial.eval₂ (Int.castRingHom ℂ) e Gs) := by

@@ -1,7 +1,7 @@
 module
 
 public import Development.DiscreteGroups.GlobalIrreducibility.LConvCut
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.WhittakerFunctionalTorusValuationBound
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0249
 
 @[expose] public section
 

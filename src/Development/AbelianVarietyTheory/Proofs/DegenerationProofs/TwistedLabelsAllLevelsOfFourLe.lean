@@ -1,10 +1,10 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.RatTors
+public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.Bundle0133
 public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.TorusTorsionPointsCorrespondValues
 public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.HomTransport
-public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.UniformisationTorsionMapsCompatibleInLevel
+public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.Bundle0129
 
 @[expose] public section
 

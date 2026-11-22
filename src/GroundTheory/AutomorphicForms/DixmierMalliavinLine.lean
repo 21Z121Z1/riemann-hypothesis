@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import GroundTheory.AutomorphicForms.DixmierMalliavinLineBounds
-public import GroundTheory.AutomorphicForms.DixmierMalliavinLineLimit
+public import GroundTheory.AutomorphicForms.Bundle0008
+public import GroundTheory.AutomorphicForms.Bundle0002
 
 @[expose] public section
 

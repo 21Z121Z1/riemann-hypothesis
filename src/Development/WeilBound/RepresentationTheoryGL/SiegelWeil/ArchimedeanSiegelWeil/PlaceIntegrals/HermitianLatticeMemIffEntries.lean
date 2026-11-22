@@ -1,9 +1,9 @@
 module
 
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.HermitianLatticeMemIffEntries
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0518
 public import Mathlib
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.GramNear
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IsUnitHermOfDet
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0496
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0482
 
 @[expose] public section
 

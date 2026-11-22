@@ -1,8 +1,8 @@
 module
 
 public import Formalism.SharpRestriction.CuspSpanNormBounds.BruhatCellsKronecker.OwnEvIntro
-public import Formalism.SharpRestriction.CuspSpanNormBounds.SBridge
-public import Formalism.SharpRestriction.CuspSpanNormBounds.PExtra
+public import Formalism.SharpRestriction.CuspSpanNormBounds.Bundle0005
+public import Formalism.SharpRestriction.CuspSpanNormBounds.Bundle0009
 
 @[expose] public section
 

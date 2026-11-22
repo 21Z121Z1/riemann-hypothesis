@@ -2,10 +2,10 @@ module
 
 public import Mathlib
 public import GroundTheory.HeightsAndTheta.Heights.LatticeLemmas.IsProbabilityMeasureSphereLaw
-public import GroundTheory.HeightsAndTheta.Heights.LatticeLemmas.PDiagonalChange
-public import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.MahlerMul
+public import GroundTheory.HeightsAndTheta.Heights.LatticeLemmas.Bundle0001
+public import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.Bundle0017
 public import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.SphereMean
-public import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.ContinuousHermNormGroup
+public import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.Bundle0007
 
 @[expose] public section
 

@@ -6,13 +6,20 @@ public import Formalism.LocalToGlobal.ProjectiveLattices.DepthTie
 public import Development.AbelianVarietyTheory.Definitions.Jets.EmbShortThLeThetaPlain
 public import Development.AbelianVarietyTheory.Proofs.HeightProofs.MarkedIsometryHalf
 public import Development.AbelianVarietyTheory.Proofs.HeightProofs.DetSubMemOfConj
-public import Development.AbelianVarietyTheory.Proofs.HeightProofs.ExistsTwistCharacterUnitsModSpecialIdealStatement
-public import Development.AbelianVarietyTheory.Proofs.HeightProofs.ExistsIsometryAgreeing
-public import Development.AbelianVarietyTheory.Proofs.HeightProofs.FunctionFieldAlgClosedLevel
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsComponentWeight
+public import Development.AbelianVarietyTheory.Proofs.HeightProofs.ExistsTwistCharacterUnitsModSpecialIdeal
+public import Development.AbelianVarietyTheory.Proofs.HeightProofs.Bundle0035
+public import Development.AbelianVarietyTheory.Proofs.HeightProofs.Bundle0070
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0110
 public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsUnitaryOfTraceEq
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.FinitePartPreservesFormDetNormOneStatement
-public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.IsOpenCongruenceIdelesAndRealFiniteParts
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0072
+public import Development.AbelianVarietyTheory.Definitions.ExistenceOfLattices.Bundle0001
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0031
+public import Formalism.LocalToGlobal.ProjectiveLattices.ExistsParameterConditions
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0023
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0022
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0010
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0020
+public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.Bundle0066
 
 @[expose] public section
 
@@ -32,7 +39,7 @@ theorem normOne_det (V : HSp D) (h : GA D V) : NormOne (D := D) (Matrix.GeneralL
   have hb : ∀ z, barF D z = GlobalTheory.AdLat.sg (Af D.host.F) (cF D) z := fun _ => rfl
   unfold NormOne
   rw [hb, Matrix.GeneralLinearGroup.val_det_apply]
-  exact (GlobalTheory.T.finitePart_preserves_form_det_norm_one D V h).2.1
+  exact (_root_.GlobalTheory.Member.finHom_herm_det D V h).2.1
 
 theorem det_eq_of_mulVec {E R : Type} [CommRing E] [CommRing R] (inc : E →+* R) {n : ℕ} (G : Matrix (Fin n) (Fin n) R)
     (δ : Matrix (Fin n) (Fin n) E) (h : ∀ v : Fin n → E, (G *ᵥ fun i => inc (v i)) = fun i => inc ((δ *ᵥ v) i)) :
@@ -113,7 +120,7 @@ theorem congOne_det (V : HSp D) (io : Dw.La →ₗ[𝓞 D.host.E] (Fin V.rank �
     exact sub_eq_nsmul_of_split (fun x => finVec V (io x)) (finHom V u).1.mulVecLin.toAddMonoidHom
       (fun x y => by rw [map_add (f := _), hadd]) (fun n x => by rw [map_nsmul, hsm]) hsplit ew
   rw [inv_one, one_mul] at hc
-  obtain ⟨k1, -, k3, k4, -⟩ := GlobalTheory.T.completedLattice_eq_adelicCompletion_and_gram D V
+  obtain ⟨k1, -, k3, k4, -⟩ := _root_.GlobalTheory.Member.latHat_eq_hat_and_gram D V
   obtain ⟨w, hw, e⟩ := GlobalTheory.CharRead.det_cong_one D.host.F (latC V) k3 k4 l.M (by have := l.three_le; omega)
     (finHom V u).1 (by rw [← k1]; exact hc)
   exact ⟨w, GlobalTheory.IdeleParts.integralFiniteAdeles_eq_adelicCompletion_integers D ▸ hw, e⟩
@@ -169,7 +176,7 @@ theorem exists_psiTie_of_values (V : HSp D) {l : Level H} {Xo : Moduli Dw l} {c 
     rw [H.bar_eq a]
     rfl
   have hprod := GlobalTheory.DatumInverseCharacter.half_prod hM hMb
-  obtain ⟨χ, hχ1, hχ⟩ := GlobalTheory.T.exists_twistCharacter_units_mod_specialIdeal D d.pd d.I xi hp (hlM ▸ hcop) (hbar ▸ hprod) (hbar ▸ hI) hxi
+  obtain ⟨χ, hχ1, hχ⟩ := _root_.GlobalTheory.TwistChar.exists_char_of_xiOK D d.pd d.I xi hp (hlM ▸ hcop) (hbar ▸ hprod) (hbar ▸ hI) hxi
   have hpI : (d.pd : 𝓞 D.host.E) ∈ d.I := natCast_mem_half hM hMb
   have hI0 : d.I ≠ ⊥ := fun e => hp.ne_zero (by rw [e, Ideal.mem_bot] at hpI; exact_mod_cast hpI)
   haveI : Finite (𝓞 D.host.E ⧸ d.I) := Ideal.finiteQuotientOfFreeOfNeBot _ hI0
@@ -210,14 +217,14 @@ theorem exists_psiTie_of_values (V : HSp D) {l : Level H} {Xo : Moduli Dw l} {c 
   have hcong := congOne_det V io hι.emb hM hcop hMb _ hlow u hu hlift
   have hrange : (latG V 1 : Set (Fin V.rank → D.host.E)) = Set.range io := by
     rw [← hι.emb.2, LinearMap.coe_range]
-  obtain ⟨a, ha₁, ha₂⟩ := det_sub_mem_hat D.host.F io (hrange ▸ (GlobalTheory.T.adelicElementLattice_full_and_completion D V 1).2.1) d.I hItop v hv₃ (g.f d.l₂.M)
+  obtain ⟨a, ha₁, ha₂⟩ := det_sub_mem_hat D.host.F io (hrange ▸ (_root_.GlobalTheory.Member.latG_lattice_and_completion D V 1).2.1) d.I hItop v hv₃ (g.f d.l₂.M)
     d.l₂.M (by rw [hM, Nat.cast_mul]; exact d.I.mul_mem_left _ hpI) (finHom V u).1 (by
       obtain ⟨w, hw, ew⟩ := hcong
       rw [← GlobalTheory.IdeleParts.integralFiniteAdeles_eq_adelicCompletion_integers]
       rw [← Matrix.GeneralLinearGroup.val_det_apply, sub_eq_iff_eq_add.1 ew]
       exact add_mem (nsmul_mem hw _) (GlobalTheory.IdeleParts.integralFiniteAdeles_eq_adelicCompletion_integers D ▸ (intRing D.host.F).one_mem))
     (fun j => by
-      rw [← hrange, ← (GlobalTheory.T.adelicElementLattice_full_and_completion D V 1).2.2.2.2.1]
+      rw [← hrange, ← (_root_.GlobalTheory.Member.latG_lattice_and_completion D V 1).2.2.2.2.1]
       exact hlift _ (hv₁ j))
   have hdet := hδ k a fun j => by
     set_option synthInstance.maxHeartbeats 100000 in

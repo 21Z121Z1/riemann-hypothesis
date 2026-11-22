@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SmoothReal
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GramSchmidtFlagDomainOrthonormalFramesStatement
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0932
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0956
 
 @[expose] public section
 
@@ -316,7 +316,7 @@ theorem differentiableOn_of_killed (E : Type) [Field E] [NumberField E] [IsCMFie
       ∀ (τ : X.Ψ) (c d : Fin r), c < d → ∀ Z ∈ unitLie X, ∀ Z' ∈ unitLie X,
         Z + Complex.I • Z' = unitFr τ c d → ℓ Z + Complex.I * ℓ Z' = 0) :
     DifferentiableOn ℂ Q X.dom := by
-  obtain ⟨g1, g2, -, g4, -, g6, -⟩ := GlobalTheory.T.gramSchmidt_flagDomain_orthonormalFrames E r X
+  obtain ⟨g1, g2, -, g4, -, g6, -⟩ := _root_.GlobalTheory.FlagGS.gram_schmidt_frames E r X
   intro x hx
   obtain ⟨y, hy, b, hb, rfl⟩ := g2 x hx
   obtain ⟨ℓ, hℓ, h⟩ := hk y hy

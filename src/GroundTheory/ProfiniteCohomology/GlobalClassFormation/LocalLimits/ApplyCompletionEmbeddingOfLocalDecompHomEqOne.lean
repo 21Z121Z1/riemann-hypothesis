@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import GroundTheory.ProfiniteCohomology.GlobalClassFormation.LocalLimits.LiesOver
-public import GroundTheory.LocalFields.ExtensionsOfDegree
+public import GroundTheory.LocalFields.Bundle0010
 
 @[expose] public section
 

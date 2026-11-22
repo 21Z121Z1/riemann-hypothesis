@@ -5,7 +5,7 @@ public import Formalism.LocalToGlobal.Columns.PolyFnLemmas
 public import Formalism.LocalToGlobal.Columns.LocWLemmas
 public import Formalism.LocalRingCardinality.RankBoundMonotoneInDimension
 public import Formalism.LocalToGlobal.Columns.CoefficientsModP.LatticeBasisExistsHolds
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SpanLocalIff
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0384
 
 @[expose] public section
 

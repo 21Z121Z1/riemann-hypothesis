@@ -6,9 +6,9 @@ public import Development.WeilBound.RepresentationTheoryGL.TwistedFactors.Affine
 public import GroundTheory.AutomorphicForms.CuspidalDiscreteness.SummandsAreCuspForms
 public import GroundTheory.AutomorphicForms.MultiplicityOne.OpenSubgroupRep
 public import GroundTheory.AutomorphicForms.MultiplicityOne.FiniteLevelGroups
-public import GroundTheory.AutomorphicForms.MultiplicityOne.FiniteAdelicHaar
+public import GroundTheory.AutomorphicForms.MultiplicityOne.Bundle0001
 public import GroundTheory.AutomorphicForms.StrongApproximationSLDense
-public import GroundTheory.AutomorphicForms.HarishChandraCentre
+public import GroundTheory.AutomorphicForms.Bundle0016
 public import GroundTheory.AutomorphicForms.AffineBruhat
 public import GroundTheory.AutomorphicForms.Cartan
 

@@ -2,16 +2,16 @@ module
 
 public import Formalism.SharpRestriction.CuspSpanNormBounds.BruhatCellsKronecker.FamilyStatementOfItemsFourSeven
 public import Formalism.SharpRestriction.CuspSpanNormBounds.AbsoluteAmplitudeSecondOfSource
-public import Formalism.SharpRestriction.CuspSpanNormBounds.PExtra
+public import Formalism.SharpRestriction.CuspSpanNormBounds.Bundle0009
 public import Formalism.SharpRestriction.CuspSpanNormBounds.AmplitudeAndVolumeBounds
 public import Formalism.SharpRestriction.CuspSpanNormBounds.BranchingAndRankConstants
 public import Formalism.SharpRestriction.CuspSpanNormBounds.MassAndBranchingHypotheses
-public import Formalism.SharpRestriction.CuspSpanNormBounds.SBridge
-public import Formalism.LocalRingCardinality.DataTies
+public import Formalism.SharpRestriction.CuspSpanNormBounds.Bundle0005
+public import Formalism.LocalRingCardinality.Bundle0003
 public import Development.AbelianVarietyTheory.Statements.DiscreteSeriesShifts.ThmBpDS
 public import Development.AbelianVarietyTheory.Definitions.Jets.SideFam
-public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.FormalDegreeCompactDualIff
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.SizesLargeOfPowerBounds
+public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.Bundle0003
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0212
 
 @[expose] public section
 

@@ -1,8 +1,6 @@
 module
 
-public import Development.WeilBound.CoreStatements.NefModelVolumes.ChowFormOfIntegralVersion
-public import Development.WeilBound.CoreStatements.NefModelVolumes.HyperplaneSectionDivCycle
-public import Development.WeilBound.CoreStatements.NefModelVolumes.ChowFormUniqueUpToConstant
+public import Development.WeilBound.CoreStatements.NefModelVolumes.Bundle0001
 public import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.Assembly
 
 @[expose] public section

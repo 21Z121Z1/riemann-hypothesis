@@ -1,8 +1,8 @@
 module
 
-public import Formalism.LocalToGlobal.InertKernelTheory.DefsRep
-public import Formalism.LocalToGlobal.InertKernelTheory.DefsRepFrame
-public import Formalism.LocalToGlobal.InertKernelTheory.FrameLatMap
+public import Formalism.LocalToGlobal.InertKernelTheory.Bundle0011
+public import Formalism.LocalToGlobal.InertKernelTheory.Bundle0012
+public import Formalism.LocalToGlobal.InertKernelTheory.Bundle0014
 public import Formalism.LocalToGlobal.InertKernelTheory.InertCoprimeLemmas.RepTwLat
 public import Formalism.LocalToGlobal.InertKernelTheory.ScalG
 

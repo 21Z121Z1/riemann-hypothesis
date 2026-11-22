@@ -3,8 +3,12 @@ module
 public import Mathlib
 public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.EmbedsGeneric
 public import Development.AutomorphicSpectrum.Definitions.DivisibilityTowers.GoodOrigin
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.SmallPointsCoordRatioBoundStatement
-public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.MatchStatement
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0098
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LocalRingPointsExistsUnique
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.Bundle0004
+public import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.FrameDefinitions.Metric
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.IsGrpPullback
+public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0044
 
 @[expose] public section
 
@@ -372,7 +376,7 @@ theorem finite_families : ∀ (X : Scheme.{0}) (Ω : Type) [Field Ω] [CharZero 
     intro L _ _ z hz
     obtain ⟨i, hi⟩ := hz.1 k₀
     obtain ⟨c, hc⟩ := hz.1 k
-    obtain ⟨n, F, hom, rel, hne⟩ := GlobalTheory.T.small_points_coord_ratio_bound X Ω ξ K J y k₀ hT hE L z hz i k c hi hc
+    obtain ⟨n, F, hom, rel, hne⟩ := _root_.GlobalTheory.CompanionTheory.Ar.BlockRatio.ratios_quotients_of_forms X Ω ξ K J y k₀ hT hE L z hz i k c hi hc
     have yc : y ⟨k, c⟩ ≠ 0 := ne_zero_of_pt y hz hc
     refine ⟨F c, ⟨n, F, c, ⟨hom, fun j j' => mul_right_cancel₀ yc ?_⟩, rfl⟩, hne⟩
     linear_combination y ⟨k, j'⟩ * rel j - y ⟨k, j⟩ * rel j'

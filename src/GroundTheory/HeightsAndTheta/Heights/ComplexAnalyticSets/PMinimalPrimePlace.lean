@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StMinimalPrimePlace
-public import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.CurveNormalisationFiniteLemmas
-public import GroundTheory.HeightsAndTheta.Heights.ChowForms.PChartLocalOrder
+public import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.Bundle0095
+public import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.Bundle0113
+public import GroundTheory.HeightsAndTheta.Heights.ChowForms.Bundle0011
 
 @[expose] public section
 

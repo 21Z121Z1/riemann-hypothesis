@@ -1,6 +1,6 @@
 module
 
-public import Formalism.SharpRestriction.GrowthBounds.MonomialFactorials.ExponentMatrixFirstDepthEq
+public import Formalism.SharpRestriction.GrowthBounds.MonomialFactorials.Bundle0009
 
 @[expose] public section
 

@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import GroundTheory.ProfiniteCohomology.LocalEulerCharacteristic.CohomologyMapTensorRightMorCompCohomologyConj
+public import GroundTheory.ProfiniteCohomology.LocalEulerCharacteristic.Bundle0004
 
 @[expose] public section
 

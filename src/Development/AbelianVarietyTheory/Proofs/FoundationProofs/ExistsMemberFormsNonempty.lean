@@ -3,7 +3,7 @@ module
 public import Mathlib
 public import Formalism.LocalRingCardinality.SpanPowerMembership.FmZeroHLatEmpty
 public import Formalism.LocalRingCardinality.RhoDetPrimeEqMuTildeMulChiPow
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsColumnChainNonempty
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0177
 
 @[expose] public section
 

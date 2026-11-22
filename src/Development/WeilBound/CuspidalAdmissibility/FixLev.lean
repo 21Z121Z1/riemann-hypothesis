@@ -1,6 +1,6 @@
 module
 
-public import Development.AutomorphicArithmetic.Foundations.Convolution.PowerSumTraces.OfinProd
+public import Development.AutomorphicArithmetic.Foundations.Convolution.PowerSumTraces.Bundle0003
 
 @[expose] public section
 

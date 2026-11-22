@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.HeckeKer
-public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsUnimodDiv
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.Bundle0003
+public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0006
 
 @[expose] public section
 

@@ -2,23 +2,24 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.PublishedTheorems.SiegelWeil₂.SiegelWeilUnitarySchrodinger
-public import Development.AbelianVarietyTheory.PublishedTheorems.SiegelWeil₂.SiegelEisensteinPolesStd
+public import Development.AbelianVarietyTheory.PublishedTheorems.SiegelWeil₂.Bundle0001
 public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.WeilThetaConvergence
-public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.HalfData
+public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.Bundle0017
 public import Development.AbelianVarietyTheory.PublishedTheorems.SiegelWeil₂.SiegelWeilUnitaryConvergent
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ExistsWeilDatumDoubledOfSchrodingerFormulasStatement
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.IsFockVectorOfSchrodingerMemFockSpaceStatement
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ExistsStandardCartanInvolutionCommuteCompactStatement
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ArchimedeanParametersAddCharUniqueStatement
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SchrodingerThetaEqSchwartzBruhatStatement
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ShiftedAdditiveCharacterArchimedeanParameters
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SchrodingerFunctionLinearThetaFunctions
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.IsCartanInvStandardInvolutionDoubledGram
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ContinuousStandardUnitaryChartAndSymm
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ContinuousLeviBlock
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.FockVectorFiniteUnderCompactCommutingCartan
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0464
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0450
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0335
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0229
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0416
+public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.Bundle0016
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0210
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0208
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0221
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0216
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0198
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0166
 public import Formalism.LocalRingCardinality.SpanPowerMembership.Spaces
-public import Formalism.LocalToGlobal.IndefiniteReal.LevelTypeEquivalence.IterPLin
+public import Formalism.LocalToGlobal.IndefiniteReal.LevelTypeEquivalence.Bundle0007
 
 @[expose] public section
 
@@ -46,18 +47,18 @@ theorem orbit_cont : ∀ (D : D7) (n : ℕ) (V : HSp D) (ψ : AddChar (AF D.host
   intro D n V ψ hψ χ hχ hr θ hθ μ 𝓕 hμ ω hω l hl s hs Φ hΦ Λ
   let A : HSp D := Formalism.BasicNotions.Examples₂.posSpace (E := D.host.E) Formalism.BasicNotions.Examples₂.star_isIntegral n
   obtain ⟨ψ₀, μ', lam, κ, omh, hstd, hsk, hlam, hψeq, hchart, hdat, htr⟩ :=
-    GlobalTheory.T.exists_weilDatum_doubled_of_schrodingerFormulas D A V ψ hψ χ hχ hr θ hθ μ 𝓕 hμ ω hω
+    _root_.GlobalTheory.StdUnn.SchDatum.exists_datum D A V ψ hψ χ hχ hr θ hθ μ 𝓕 hμ ω hω
   obtain ⟨lam', hlam', -, l', hl', habs⟩ := GlobalTheory.StdUnn.shift_char_realPar D ψ₀ hstd θ hθ μ' hsk
   have hll : lam' = lam := (algebraMap D.host.F D.host.E).injective (hlam'.trans hlam.symm)
   subst hll
   have hl'' : HasRealPar ψ θ l' := hψeq ▸ hl'
-  have hleq : l = l' := GlobalTheory.T.archimedean_parameters_addChar_unique D ψ θ hθ l l' hl hl''
+  have hleq : l = l' := _root_.GlobalTheory.StdUnn.RealPar.realPar_unique D ψ θ hθ l l' hl hl''
   subst hleq
-  obtain ⟨hschS, hsurj, -⟩ := GlobalTheory.T.schrodingerTheta_eq_schwartzBruhat D ψ₀ hstd θ hθ A V μ 𝓕 hμ
+  obtain ⟨hschS, hsurj, -⟩ := _root_.GlobalTheory.SchSchwartzAll.schSchwartz D ψ₀ hstd θ hθ A V μ 𝓕 hμ
   obtain ⟨f, hf, hfΦ⟩ := hsurj Φ.1 Φ.2
-  obtain ⟨s', hstd', hcomm⟩ := GlobalTheory.T.exists_standardCartanInvolution_commute_compact D A μ' hsk κ hchart θ hθ
+  obtain ⟨s', hstd', hcomm⟩ := _root_.GlobalTheory.StdUnn.KComm.exists_stdInv_comm_K D A μ' hsk κ hchart θ hθ
   have hfock : IsFockVec ψ₀ θ (dblSp A) V s' s f :=
-    GlobalTheory.T.isFockVector_of_schrodinger_mem_fockSpace D ψ₀ hstd θ hθ A V μ 𝓕 hμ μ' hsk s' s hstd' hs l habs f hf (hfΦ ▸ hΦ)
+    _root_.GlobalTheory.StdUnnFockRev.isFockVec_of_sch_mem_fockA D ψ₀ hstd θ hθ A V μ 𝓕 hμ μ' hsk s' s hstd' hs l habs f hf (hfΦ ▸ hΦ)
   have hcont := GlobalTheory.StdUnn.chart_continuous D A μ' hsk κ hchart
   let K' : Subgroup (GA D (dblSp A)) := (K D A.rank).comap κ.toMonoidHom
   have hK' : IsCompact (K' : Set (GA D (dblSp A))) := by

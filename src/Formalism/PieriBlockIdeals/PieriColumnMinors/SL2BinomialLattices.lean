@@ -1,9 +1,9 @@
 module
 
-public import Formalism.PieriBlockIdeals.ExponentBoundCounterexample
+public import Formalism.PieriBlockIdeals.Bundle0004
 public import Formalism.PieriBlockIdeals.PieriColumnMinors.ProdInitialMinorsMemDetSpan
 public import Mathlib
-public import Formalism.PieriBlockIdeals.PieriColumnMinors.MaxValEqZeroOfLt
+public import Formalism.PieriBlockIdeals.PieriColumnMinors.Bundle0002
 public import Formalism.RankGapBounds.RankGapProofs.FormsTensorLocalization
 
 @[expose] public section

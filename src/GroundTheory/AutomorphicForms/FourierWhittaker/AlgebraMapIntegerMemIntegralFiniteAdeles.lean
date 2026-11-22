@@ -3,7 +3,7 @@ module
 public import Mathlib
 public import GroundTheory.AutomorphicForms.FourierWhittaker.Series
 public import GroundTheory.GlobalFields.TateThesis.LatticePoisson
-public import GroundTheory.GlobalFields.TateThesis.AdeleScaling
+public import GroundTheory.GlobalFields.TateThesis.Bundle0006
 
 @[expose] public section
 

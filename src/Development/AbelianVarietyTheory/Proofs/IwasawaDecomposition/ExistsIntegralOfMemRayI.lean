@@ -2,8 +2,8 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.NonemptyRayDataOfNeZero
-public import Development.AbelianVarietyTheory.Definitions.Foundations.RayPrimes
-public import Development.AbelianVarietyTheory.Definitions.Foundations.NormOneSevenOneTwo
+public import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0008
+public import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0010
 
 @[expose] public section
 

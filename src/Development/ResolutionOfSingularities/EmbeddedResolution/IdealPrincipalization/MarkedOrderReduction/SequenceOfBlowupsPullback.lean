@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Development.ResolutionOfSingularities.Foundations.Blowup.BlowupBasic
-public import Development.ResolutionOfSingularities.EmbeddedResolution.IteratedBlowups.BlowupSequenceBasic
+public import Development.ResolutionOfSingularities.Foundations.Blowup.Bundle0001
+public import Development.ResolutionOfSingularities.EmbeddedResolution.IteratedBlowups.Bundle0001
 public import Development.ResolutionOfSingularities.EmbeddedResolution.ResolutionDescent.BlowupSequenceFlatBaseChange
 public import Development.ResolutionOfSingularities.Foundations.Schemes.IdealSheafData
 public import Development.ResolutionOfSingularities.EmbeddedResolution.IdealPrincipalization.MarkedBlowupSequence.BlowupSequenceData

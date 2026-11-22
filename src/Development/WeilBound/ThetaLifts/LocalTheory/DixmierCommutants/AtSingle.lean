@@ -1,7 +1,7 @@
 module
 
 public import Development.WeilBound.ThetaLifts.LocalTheory.IsArchimedeanLocalEquivariantMap
-public import Development.WeilBound.ThetaLifts.LocalTheory.DixmierCommutants.ChgApply
+public import Development.WeilBound.ThetaLifts.LocalTheory.DixmierCommutants.Bundle0001
 public import Development.WeilBound.CoreStatements.CompactAveragingSplitting.EigenvectorLifting.SplitCharacterFacts
 
 @[expose] public section

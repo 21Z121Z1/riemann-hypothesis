@@ -2,9 +2,9 @@ module
 
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.IntegralDeterminants.PlaceConjAlt
 public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsPolarizedTwistAbsPow
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SatakeVectorIffInverseDoubleCosets
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.SplitPlaceUnitaryLocalPointsEquivGL
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.ConjSep
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0173
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0218
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.Bundle0004
 
 @[expose] public section
 

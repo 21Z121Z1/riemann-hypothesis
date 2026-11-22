@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.OneSubMemIdS
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.InTypeIsoSortedPos
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0192
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0782
 
 @[expose] public section
 

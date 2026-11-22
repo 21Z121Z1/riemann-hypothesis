@@ -5,15 +5,15 @@ public import Development.AbelianVarietyTheory.Definitions.AbelianSchemeLaws.Fir
 public import Development.AbelianVarietyTheory.Definitions.AbelianSchemeLaws.IsScalarTowerOfAlgebraMapEq
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.CubeVal
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.UnifUniqSt
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.IsNsmul
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.QkToAkU
-public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.IsHomogeneousXPowMulAddXPowMul
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.Bundle0005
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.Bundle0006
+public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.Bundle0097
 public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ExistsHomOfVeryAmpleBy
-public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.HomEqOfPullSections
-public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.IsPullbackOfEquationsLift
-public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.SubmoduleEqTopOfSupSmulOfIsNilpotent
-public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsFormLimitIdeal
-public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsFormCorrectionNextThickeningLocalStatement
+public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.Bundle0088
+public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.Bundle0103
+public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.Bundle0099
+public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.Bundle0003
+public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.Bundle0172
 
 @[expose] public section
 
@@ -226,7 +226,7 @@ theorem GlobalTheory.Degen.exists_projective_of_formal_embedding_local : ∀ (R 
     ((Y e).hom ≫ thick V I e) (H e) (s e) (hH e).1 (hVA e).1 (fun t F hF h =>
       (mem_vanIdeal _ _ _).1 (mem_vanIdeal_of_sat _ _ (hVA e).1 fun i =>
         ((hB t F hF).1 h i).imp fun _ hm => hS e hm))
-  obtain ⟨t₀, ht₀⟩ := GlobalTheory.T.exists_form_correction_next_thickening_local V I hI Y β hβ hflat H v hH n s hs hva
+  obtain ⟨t₀, ht₀⟩ := _root_.GlobalTheory.Degen.exists_form_correction_local V I hI Y β hβ hflat H v hH n s hs hva
   refine ⟨Over.mk f, H', s', b, w, hH', hva', fun e => ?_, fun e => ?_, fun e => ⟨hw e, hr e⟩,
     fun t F hF h => hB' t F hF fun e => (mem_vanIdeal _ _ _).2 (h e)⟩
   · refine GlobalTheory.ProjBaseChange.isPullback_of_equations_lift V B f H' n s' hH' hva' _ _ Ideal.Quotient.mk_surjective

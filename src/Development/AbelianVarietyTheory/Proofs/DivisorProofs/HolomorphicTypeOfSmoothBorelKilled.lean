@@ -1,11 +1,11 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Divisors.IsSmoothVector
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0033
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TorusLawOfKilled
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SmoothGramSchmidtIndefiniteHermitianFrames
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NegativeFrameDomainProductOpenPreconnectedStable
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DiagOfUpTOfPreserves
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0973
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0967
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0944
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdjInvol
 
 @[expose] public section

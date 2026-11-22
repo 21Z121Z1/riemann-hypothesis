@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.HilbertKodairaSpencer
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsAHOfIsFactorAH
+public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.Bundle0023
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2088
 
 @[expose] public section
 

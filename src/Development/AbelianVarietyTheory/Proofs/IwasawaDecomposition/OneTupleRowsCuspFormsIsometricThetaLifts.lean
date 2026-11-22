@@ -2,16 +2,17 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.ExistsSplittingCharacterSelf
-public import Formalism.LocalToGlobal.IndefiniteReal.DatumVec
-public import Formalism.LocalToGlobal.IndefiniteReal.ConcretePkgSpec
-public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.ExistsNormLeHeightPow
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.HcFiniteAndSchurMult
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.HasInfExpIffHasInfQ
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsPolynomialFrameMapsBoundedStatement
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.EllTInclTTprod
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsPosIsQuotInt
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.KerEqThetaKO
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsTransportGroupsCuspFormsWeilDataIsometryStatement
+public import Formalism.LocalToGlobal.IndefiniteReal.Bundle0016
+public import Formalism.LocalToGlobal.IndefiniteReal.Bundle0023
+public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.Bundle0007
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0257
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0433
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0288
+public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.ExistsIsAdelicChain
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0278
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0280
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0282
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0239
 
 @[expose] public section
 
@@ -446,7 +447,7 @@ theorem topRow (hP : GlobalTheory.Published.CuspRapidDecay) {D : D7} {G : Type} 
       (∀ x h, (row x).1 h = (s : ℂ) * (eX (famCast (D.what₂.Mult μ) hj x)).1 (PiTensorProduct.tprod ℂ dX) (κT.symm h)) ∧
       (∀ x y, GlobalTheory.IndefiniteRowSideFullHecke.SplittingKernelQuotients.IsQuotInt (D.sp.Y j) k (fun h => star ((row x).1 h) * (row y).1 h) ⟪x, y⟫_ℂ) := by
   subst hj
-  have hiso0 := GlobalTheory.T.exists_transport_groups_cuspForms_weilData_isometry D D.sp.X' (D.sp.Y D.R.m) D.sp.eYm
+  have hiso0 := _root_.GlobalTheory.Mem.Isom.exists_isom_transport D D.sp.X' (D.sp.Y D.R.m) D.sp.eYm
   have hiso1 := D.sp.eYm_isom
   have hiso2 := hiso0 hiso1
   obtain ⟨κT, hκT⟩ := hiso2
@@ -472,7 +473,7 @@ theorem GlobalTheory.Mem.OneTuple.rows_theta : GlobalTheory.Published.CuspRapidD
   have hm2 := D.R.two_le_m
   have hsigY := D.sp.Y_sig
   obtain ⟨d, dX, φ, φX, hd, hdX, hφ, hφX⟩ :=
-    GlobalTheory.T.exists_polynomial_frame_maps_bounded D G Pl0 T A Ks R (fun k hk => (hC.ItY t k hk).ne) (hC.ItX t).ne
+    _root_.GlobalTheory.Mem.UnitPairing.exists_unit_vectors D G Pl0 T A Ks R (fun k hk => (hC.ItY t k hk).ne) (hC.ItX t).ne
 
   have hlow : ∀ j (hj : j < D.R.m), ∃ s r : ℝ, 0 < s ∧ 0 < r ∧ s ^ 2 * (κ j / r) = c j ∧
       ∃ row : D.what₂.Mult μ j →ₗ[ℂ] CuspS R.θ (D.sp.Y j),

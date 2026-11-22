@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Formalism.PadicSubsetSums.CentralIdempotents.IsConstituent
+public import Formalism.PadicSubsetSums.CentralIdempotents.Bundle0001
 
 @[expose] public section
 

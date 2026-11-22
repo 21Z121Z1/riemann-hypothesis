@@ -1,9 +1,8 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RealMapOneInjective
-public import Development.AbelianVarietyTheory.Definitions.Divisors.IsGaloisCover
-public import Development.AbelianVarietyTheory.Definitions.Divisors.HxiTZeroComb
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0819
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0025
 
 @[expose] public section
 

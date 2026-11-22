@@ -1,6 +1,6 @@
 module
 
-public import Formalism.SharpRestriction.LevelLetterCocycles.TypePrimeCongruences
+public import Formalism.SharpRestriction.LevelLetterCocycles.Bundle0010
 public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.InSpanAdd
 
 @[expose] public section

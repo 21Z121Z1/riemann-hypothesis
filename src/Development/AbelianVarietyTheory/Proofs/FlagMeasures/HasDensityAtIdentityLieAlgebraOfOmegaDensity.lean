@@ -1,18 +1,18 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.BlockAnti
-public import Formalism.PeriodIntegrals.QuotInv
+public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.Bundle0009
+public import Formalism.PeriodIntegrals.Bundle0006
 public import Formalism.HermitianCurvature.WeylElementCommutesLevelOne
 public import Formalism.LocalRingCardinality.DataCD
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.DensityInChartStatement
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsUniqueHaarDensityAtIdentityStatement
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.HaarUpqHasOmegaDensity
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.OmegaDensityUpqUniqueAndSmul
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsOmegaLebesgueMeasure
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ContinuousMatExp
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.UpqLocallyCompactGroup
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ContinuousGrpHom
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.DensityInChart
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsUniqueHaarDensityAtIdentity
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0065
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0130
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0058
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0057
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0060
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0132
 
 @[expose] public section
 
@@ -473,7 +473,7 @@ theorem omegaDensity_of_hasDens (e : Fin P ⊕ Fin Q ≃ Fin n) (μ : Measure (U
       exact hD
     · rw [hDv, coe_lieCoord, unrealify_coord]
       rfl
-  have key := GlobalTheory.T.tendsto_measure_image_ball_div_volume n (UH (form e)) (μ.map (emb e)) c (isMatGroup_UH _ (form_sq e)) (isHaarOnM_map e μ) hc
+  have key := _root_.GlobalTheory.ChartDensity.density_in_chart n (UH (form e)) (μ.map (emb e)) c (isMatGroup_UH _ (form_sq e)) (isHaarOnM_map e μ) hc
     (lieU P Q) Φ (lieCoord e) hΦ0 hΦS hder
   refine ⟨_, isOmegaLeb_frobenius e, key.congr fun r => ?_⟩
   rw [hball r]
@@ -506,7 +506,7 @@ theorem hasDens_of_omegaDensity : ∀ (n : ℕ) (ε : Fin n → Bool) (P Q : ℕ
   rw [jm_eq h1 h2]
   have hH := isHaarOnM_map e μ
   refine ⟨hH, ?_⟩
-  obtain ⟨c', -, hc', -⟩ := GlobalTheory.T.exists_unique_haarDensity_at_identity n (UH (form e)) (μ.map (emb e)) (isMatGroup_UH _ (form_sq e)) hH
+  obtain ⟨c', -, hc', -⟩ := _root_.GlobalTheory.MatHaarDensity.exists_hasDens n (UH (form e)) (μ.map (emb e)) (isMatGroup_UH _ (form_sq e)) hH
   have h3 := omegaDensity_of_hasDens e μ _ hc'
   rw [GlobalTheory.OmegaDensityScale.omegaDensity_unique h3 hc]
   exact hc'

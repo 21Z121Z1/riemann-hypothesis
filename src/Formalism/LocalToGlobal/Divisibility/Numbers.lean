@@ -1,9 +1,9 @@
 module
 
 public import Formalism.LocalRingCardinality.DataParams₂
-public import Formalism.LogFactorialIndices.StatementSize
-public import Formalism.QuotientMetricDivisors.TheoremDivIneqRowsShift
-public import Formalism.MirabolicMackeyTheory.StatementT
+public import Formalism.LogFactorialIndices.Bundle0001
+public import Formalism.QuotientMetricDivisors.Bundle0005
+public import Formalism.MirabolicMackeyTheory.Bundle0001
 
 @[expose] public section
 

@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.VpBounds
-public import Development.AutomorphicArithmetic.CyclotomicBounds.RamifiedDiscriminants.FunKit
+public import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.Bundle0007
+public import Development.AutomorphicArithmetic.CyclotomicBounds.RamifiedDiscriminants.Bundle0001
 
 @[expose] public section
 

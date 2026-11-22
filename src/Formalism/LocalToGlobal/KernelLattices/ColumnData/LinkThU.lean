@@ -3,7 +3,7 @@ module
 public import Mathlib
 public import Formalism.LocalToGlobal.KernelLattices.ColumnData
 public import Formalism.FrobeniusOrbits.FrobeniusOrbitsProofs.OrderOfSignGroupDvdTwo
-public import Formalism.FrobeniusOrbits.FrobeniusOrbitsProofs.CardTrivialFirstComponent
+public import Formalism.FrobeniusOrbits.FrobeniusOrbitsProofs.Bundle0002
 
 @[expose] public section
 

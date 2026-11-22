@@ -1,7 +1,7 @@
 module
 
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutJAQQ
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutJDAsm
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0181
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0167
 public import Formalism.HermitianCurvature.HermitianCurvatureProofs.BetaSesquilinearity
 public import Formalism.HermitianCurvature.HermitianCurvatureProofs.RegularisedPairingViaPhase
 public import Formalism.HermitianCurvature.HermitianCurvatureProofs.SeminormCompletion

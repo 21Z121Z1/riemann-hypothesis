@@ -1,6 +1,6 @@
 module
 
-public import Formalism.SharpRestriction.LevelLetterCocycles.FrobeniusDifferenceIdentity
+public import Formalism.SharpRestriction.LevelLetterCocycles.Bundle0039
 
 @[expose] public section
 

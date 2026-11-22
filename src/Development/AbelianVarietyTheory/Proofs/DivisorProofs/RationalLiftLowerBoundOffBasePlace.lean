@@ -1,10 +1,12 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LowFormOfEmb
-public import Development.AbelianVarietyTheory.Definitions.Divisors.FormalDegreeUpperC
-public import Development.AbelianVarietyTheory.Definitions.Divisors.RealisedChainTorusEq
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PrincipalLevelEigenpartsAndConjugateCharactersStatement
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1715
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0036
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0053
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1043
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0030
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0974
 
 @[expose] public section
 

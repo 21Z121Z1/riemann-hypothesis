@@ -1,10 +1,10 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IsBlockNFZeroOne
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IntegrableOfMulUnimodular
-public import Development.AbelianVarietyTheory.Definitions.Divisors.IsWeilFormulas
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FourierInversionSchwartzAdelic
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0466
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0013
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0037
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1848
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaSeriesFactorizableRestrictionFinite
 
 @[expose] public section

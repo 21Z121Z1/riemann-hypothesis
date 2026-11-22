@@ -1,8 +1,8 @@
 module
 
-public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.CIndEncPf
-public import Formalism.LocalToGlobal.ProjectiveLattices.IsExpChart
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.TaylorDiscriminants.KillAdd
+public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0005
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0012
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.TaylorDiscriminants.Bundle0003
 
 @[expose] public section
 

@@ -4,7 +4,7 @@ public import Mathlib
 public import GroundTheory.GlobalFields.KummerTheory.KummerIndexLemma.Places
 public import GroundTheory.GlobalFields.KummerTheory.Unramified
 public import GroundTheory.GlobalFields.IdeleGroups.LocalNormsEverywhere
-public import GroundTheory.GlobalFields.IdeleGroups.SIdeleGroups
+public import GroundTheory.GlobalFields.IdeleGroups.Bundle0001
 public import GroundTheory.GlobalFields.SplittingFromInequality
 
 @[expose] public section

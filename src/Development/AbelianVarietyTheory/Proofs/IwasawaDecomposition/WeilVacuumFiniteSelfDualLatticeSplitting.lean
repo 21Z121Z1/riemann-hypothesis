@@ -1,16 +1,16 @@
 module
 
 public import Mathlib
-public import Formalism.LocalToGlobal.IndefiniteReal.FWTie
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.FibExtMarked
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsDetInt
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IdempotentTwistedGroupEndomorphism
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.TendstoFinitePlaceTruncationAdeleE
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SplitPlaceWeilRepLatticeVacuumCharacter
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.WeilOperatorLatticeStabiliserFixesVacuumNonsplitStatement
+public import Formalism.LocalToGlobal.IndefiniteReal.Bundle0025
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0200
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0146
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0161
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0169
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0168
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0335
 public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IdempotentMulEqZeroOfOrthogonal
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsAlgebraMapOfSigRFixed
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TameCharacterFromProduct
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0071
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0840
 public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.LevelHyperspecialTrivialCharacterSplitsOffPlaces
 public import Formalism.LocalToGlobal.Divisibility.DefGroupLemmas
 
@@ -422,7 +422,7 @@ theorem om_vacuum_finite : ∀ (D : D7) (S T : HSp D) (ψ : AddChar (AF D.host.F
         (fun i j => by rw [hb]; exact p2 i j) (fun i j => by rw [hb]; exact q2 i j) hlat u w hu hw f hth hvac
     · obtain ⟨uS, uT⟩ := hun v _ ⟨hε v, hsp⟩
       rw [unram_cut uT _ hv hx, unram_cut uS _ hv hy, inv_one, mul_one, Circle.coe_one, one_smul]
-      exact GlobalTheory.T.weilOperator_lattice_stabiliser_fixes_vacuum_nonsplit D ψ S T ΛS ΛT χS χT om hW hS hT hη v _ ⟨hε v, hsp⟩ uS uT _ _ p2 q2 hlat f hth hvac
+      exact _root_.GlobalTheory.VecInvInert.om_fixes_vacuum D ψ S T ΛS ΛT χS χT om hW hS hT hη v _ ⟨hε v, hsp⟩ uS uT _ _ p2 q2 hlat f hth hvac
   have hfin : ∀ s, om (κ s k, μ s k') f = ((((χT (cut _ (idS_idem hε s) x))⁻¹ *
       χS (cut _ (idS_idem hε s) y) : Circle)) : ℂ) • f := by
     intro s

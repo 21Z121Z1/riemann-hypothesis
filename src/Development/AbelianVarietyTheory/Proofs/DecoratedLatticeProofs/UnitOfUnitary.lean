@@ -1,11 +1,11 @@
 module
 
 public import Mathlib
-public import Formalism.LocalToGlobal.HermitianForms.FramesLemmas
+public import Formalism.LocalToGlobal.HermitianForms.Bundle0003
 public import Formalism.LocalToGlobal.SiegelLatticeTheory.FlagStabilizerTensors.RootLatticeThresholds.ColDictValCPf
 public import Formalism.SharpRestriction.GlobalSchurBounds.GlobalRankLatticeProofs.UnitTraceSumBounds.RankConditionsOfLayerTwo
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.RieszEigenvectorSesquilinearFunctionSpace
-public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.TopLevExists
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0069
+public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.Bundle0006
 
 @[expose] public section
 

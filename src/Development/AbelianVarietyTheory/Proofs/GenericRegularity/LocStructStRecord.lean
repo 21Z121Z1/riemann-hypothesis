@@ -1,23 +1,22 @@
 module
 
 public import Mathlib
-public import Formalism.LocalToGlobal.ProjectiveLattices.RegXInst
-public import Formalism.LocalToGlobal.ProjectiveLattices.CurveLocInst
-public import Formalism.LocalToGlobal.ProjectiveLattices.LocRingPf
-public import Formalism.LocalToGlobal.ProjectiveLattices.CurveSec
-public import Formalism.LocalToGlobal.ProjectiveLattices.SecPtRed
-public import Formalism.LocalToGlobal.ProjectiveLattices.TieInst
-public import Formalism.LocalToGlobal.ProjectiveLattices.RealPtPf
-public import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.EfRankSum
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0035
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0043
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0041
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0031
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0030
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0037
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0039
+public import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.Bundle0007
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ValuationLifting.RApprox
-public import Development.AbelianVarietyTheory.Proofs.GenericRegularity.FinrankHostDivTwo
-public import Development.AbelianVarietyTheory.Proofs.GenericRegularity.GenericSectionPointsInequivalentValuationsStatement
-public import Development.AbelianVarietyTheory.Proofs.GenericRegularity.IntegralElementsGenericLinearSectionGaussPointStatement
-public import Development.AbelianVarietyTheory.Proofs.GenericRegularity.SubalgebraEqIntegralClosureOfValuesResiduesStatement
-public import Development.AbelianVarietyTheory.Proofs.GenericRegularity.ExistsRatioFormsAtPointsStatement
-public import Development.AbelianVarietyTheory.Proofs.GenericRegularity.GaussValuationDensityGenerationLocalisationStatement
-public import Development.AbelianVarietyTheory.Proofs.GenericRegularity.ExistsSubfieldValuationClosureStatement
-public import Development.AbelianVarietyTheory.Proofs.GenericRegularity.ExistsIntegralCongrWeakApproximationStatement
+public import Development.AbelianVarietyTheory.Proofs.GenericRegularity.Bundle0012
+public import Development.AbelianVarietyTheory.Proofs.GenericRegularity.GenericSectionPointsInequivalentValuations
+public import Development.AbelianVarietyTheory.Proofs.GenericRegularity.Bundle0028
+public import Development.AbelianVarietyTheory.Proofs.GenericRegularity.Bundle0026
+public import Formalism.LocalToGlobal.ProjectiveLattices.CurveLoc
+public import ReciprocityTheory.SemistableReduction.Bundle0017
+public import Development.AbelianVarietyTheory.Proofs.GenericRegularity.Bundle0003
 
 @[expose] public section
 
@@ -486,7 +485,7 @@ theorem residue_at (hU : IsUnif (OsK (xplus X E hM) la G.w) (unifO (xplus X E hM
   have ht' : t = fun q => ψ (@algebraMap (Op (xplus X E hM) la G.N) (Kp (xplus X E hM) la G.N) _ _ _ (Tv (xplus X E hM) la G.N q)) :=
     funext fun q => (ht q).trans (hψ _).symm
   obtain ⟨g1, g2, g3⟩ := GlobalTheory.T.gauss_valuation_density_generation_localisation D B P j (xplus X E hM) la G.N h.T.Fr (valV h.T.V) ψ hint hϖ
-  obtain ⟨S', hS'⟩ := GlobalTheory.T.exists_subfield_valuation_closure' h.T.Fr (valV h.T.V) (Subfield.closure (Set.range jz ∪ Set.range t))
+  obtain ⟨S', hS'⟩ := _root_.GlobalTheory.exists_subfield_valuation_closure h.T.Fr (valV h.T.V) (Subfield.closure (Set.range jz ∪ Set.range t))
   have hle : ∀ u ∈ Subfield.closure (Set.range jz ∪ Set.range t), u ∈ S' := fun u hu =>
     (hS' u).2 fun γ hγ => ⟨u, hu, by rw [sub_self, map_zero]; exact zero_lt_iff.2 hγ⟩
   have hK : ∀ c : Kp (xplus X E hM) la G.N, ψ c ∈ S' := by
@@ -547,7 +546,7 @@ theorem as_le_liftable (hfd : FiniteDimensional (Kp (xplus X E hM) la G.N) (OsK 
     (_root_.ramificationDegreeSum (Op (xplus X E hM) la G.N) (Kp (xplus X E hM) la G.N) (OsK (xplus X E hM) la G.w) (unifO (xplus X E hM) la G.N) hU.irreducible hfin).1
   refine core hU (liftable hs hU) (liftable_le hs hU) Zc (fun ζ => valV (hs ζ).T.V) (fun ζ => phiPt (hs ζ)) jz
     (fun ζ x => ord_cases (ord_phiPt (hs ζ) x)) (fun a ha => ?_) (fun ζ => ?_) (fun ζ ζ' hne hZ => ?_) (fun ζ => ?_)
-  · obtain ⟨k, F, F', hF⟩ := GlobalTheory.T.exists_ratio_forms_at_points_alt D B P j (xplus X E hM) la G.N wL G.w (PtsG G la) (fun ζ => (hs ζ).T.Fr)
+  · obtain ⟨k, F, F', hF⟩ := _root_.GlobalTheory.exists_ratio_forms_at_points D B P j (xplus X E hM) la G.N wL G.w (PtsG G la) (fun ζ => (hs ζ).T.Fr)
       (fun ζ => (hs ζ).ev) ι Ω gF Zc jz (fun ζ => exists_ev_ne (hs ζ)) h2 h3 hB hC a
     exact ratio_liftable hs hfd hU k F F' _ ha hF
   · obtain ⟨a, ha⟩ := h1 ζ
@@ -631,7 +630,7 @@ theorem locStructSt_record : ∀ (D : D7) (T : Top D) (h : LawsP T) (j : ℕ) (h
     (fun Z u F => evC hG Z ((F : (recB h.toLawsCore).Cusp j u) : T.R j))
     (fun Z u F => formsEvR_inc h j hj hG hT Z u F)
     (GlobalTheory.FlagDim.fnFG_fnTrdeg_record D T.Q h.pins.2.2.2 j hj).2
-    (GlobalTheory.T.generic_section_points_inequivalent_valuations D T h j hj hG hT ka wL wF G S g0 la hH hI hC hB)
+    (_root_.GlobalTheory.GenSep.valSep_of_curveHyp D T h j hj hG hT ka wL wF G S g0 la hH hI hC hB)
     (fun Z => birAt_of h j hj hG hT G hB Z) hC
 
 end GlobalTheory.Reg

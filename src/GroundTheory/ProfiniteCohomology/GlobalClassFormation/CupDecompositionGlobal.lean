@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import GroundTheory.ProfiniteCohomology.GlobalClassFormation.CupDecomposition
+public import GroundTheory.ProfiniteCohomology.GlobalClassFormation.Bundle0001
 public import GroundTheory.ProfiniteCohomology.GlobalClassFormation.CupLocal
 public import GroundTheory.ProfiniteCohomology.GlobalClassFormation.ResLocal
 public import GroundTheory.ProfiniteCohomology.GlobalClassFormation.UnitsLevels

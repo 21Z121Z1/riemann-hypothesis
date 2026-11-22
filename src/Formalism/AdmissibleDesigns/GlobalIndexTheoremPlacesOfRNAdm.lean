@@ -1,6 +1,6 @@
 module
 
-public import Formalism.SharpRestriction.LevelLetterCocycles.RingDataOfIdempotents
+public import Formalism.SharpRestriction.LevelLetterCocycles.Bundle0036
 public import Formalism.AdmissibleDesigns.InvariantsEqBotIff
 
 @[expose] public section

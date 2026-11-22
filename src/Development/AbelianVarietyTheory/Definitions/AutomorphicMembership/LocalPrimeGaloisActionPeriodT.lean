@@ -3,8 +3,8 @@ module
 public import Mathlib
 public import Formalism.SharpRestriction.LevelLetterCocycles.DataN
 public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.MonodromyZeroOfWeilDeligneRepClassIff
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.PadicIntHomUnique
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsAlgEquivRootOfUnityEqPow
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0067
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0053
 
 @[expose] public section
 

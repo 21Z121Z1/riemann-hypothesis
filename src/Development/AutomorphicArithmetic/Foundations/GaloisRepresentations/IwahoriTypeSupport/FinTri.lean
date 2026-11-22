@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.IwahoriTypeSupport.TorusScalar
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.BlockIndexMonotone
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0345
 
 @[expose] public section
 

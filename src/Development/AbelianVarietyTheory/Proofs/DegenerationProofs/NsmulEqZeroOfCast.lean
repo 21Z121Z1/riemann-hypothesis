@@ -2,8 +2,8 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.Degenerations.ArithBase
-public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsSpecializesIsLocalization
-public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.MemSpanRowsOfForallValuationRing
+public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.Bundle0048
+public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.Bundle0052
 
 @[expose] public section
 

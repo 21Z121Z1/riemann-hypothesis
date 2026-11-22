@@ -1,10 +1,10 @@
 module
 
-public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.ExpTie
+public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0006
 public import Formalism.FormalGroupWitt.FormalGroupWittProofs.SolveV
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.TaylorDiscriminants.ChartChg
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.TaylorDiscriminants.Bundle0003
 public import Formalism.LocalToGlobal.ProjectiveLattices.SatLeaves
-public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.DegreeOneStatement
+public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0012
 
 @[expose] public section
 

@@ -1,6 +1,6 @@
 module
 
-public import Formalism.PeriodIntegrals.SzEatI
+public import Formalism.PeriodIntegrals.Bundle0023
 
 @[expose] public section
 

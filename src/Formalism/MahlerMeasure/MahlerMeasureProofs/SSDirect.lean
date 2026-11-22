@@ -1,6 +1,6 @@
 module
 
-public import Formalism.MahlerMeasure.LevelLattice
+public import Formalism.MahlerMeasure.Bundle0008
 
 @[expose] public section
 

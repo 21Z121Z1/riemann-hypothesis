@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.IsAffineHomOfFlatQuotientOfAffineKernel
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.RingHomFlatCodescendsAlongFaithfullyFlat
+public import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.Bundle0018
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0012
 
 @[expose] public section
 

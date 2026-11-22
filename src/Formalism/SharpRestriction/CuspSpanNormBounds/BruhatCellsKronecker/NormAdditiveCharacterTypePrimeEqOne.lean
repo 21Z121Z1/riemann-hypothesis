@@ -1,14 +1,14 @@
 module
 
 public import Formalism.SharpRestriction.CuspSpanNormBounds.BruhatCellsKronecker.OwnEvIntro
-public import Formalism.SharpRestriction.CuspSpanNormBounds.PExtra
-public import Formalism.SharpRestriction.CuspSpanNormBounds.NonGenericAndKTwoTheorems
+public import Formalism.SharpRestriction.CuspSpanNormBounds.Bundle0009
+public import Formalism.SharpRestriction.CuspSpanNormBounds.Bundle0008
 public import Formalism.SharpRestriction.CuspSpanNormBounds.LocalBesselAndTopKernel
 public import Formalism.SharpRestriction.CuspSpanNormBounds.AuxiliaryNormPrimes
 public import Formalism.SharpRestriction.CuspSpanNormBounds.AdmissibleBoundsFromSource
 public import Formalism.SharpRestriction.CuspSpanNormBounds.LocalModelPeriodLattices
-public import Formalism.FlagUnipotentLattices.SignaturePreservingEntryNorms
-public import Formalism.FlagUnipotentLattices.ValuationProductBound
+public import Formalism.FlagUnipotentLattices.Bundle0004
+public import Formalism.FlagUnipotentLattices.Bundle0003
 
 @[expose] public section
 

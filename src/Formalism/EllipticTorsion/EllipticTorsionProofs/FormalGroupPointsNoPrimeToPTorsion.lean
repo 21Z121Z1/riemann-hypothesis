@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Formalism.EllipticTorsion.FormalGroupPointsTorsionFree
+public import Formalism.EllipticTorsion.Bundle0003
 
 @[expose] public section
 

@@ -1,8 +1,7 @@
 module
 
 public import Formalism.LocalToGlobal.GenusGluing.GenusApproximation.FactsW
-public import Formalism.LocalToGlobal.GenusGluing.GenusApproximation.GenusApproximationProofs.IdempotentCalculationHolds
-public import Formalism.LocalToGlobal.GenusGluing.GenusApproximation.GenusApproximationProofs.GlueSmulSame
+public import Formalism.LocalToGlobal.GenusGluing.GenusApproximation.GenusApproximationProofs.Bundle0001
 
 @[expose] public section
 

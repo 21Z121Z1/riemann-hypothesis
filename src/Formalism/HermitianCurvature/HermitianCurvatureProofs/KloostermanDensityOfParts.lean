@@ -1,10 +1,10 @@
 module
 
 public import Formalism.HermitianCurvature.HermitianCurvatureProofs.FubiniHeadLastPart
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.DerivativeBoundInBanachSpace
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.BudgetTopConvergence
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.InnerAveragingInputOfSliceData
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.AveragingVanishes
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0070
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0026
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0079
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0028
 public import Formalism.HermitianCurvature.HermitianCurvatureProofs.ComponentFamilySettingOfSetting
 
 @[expose] public section

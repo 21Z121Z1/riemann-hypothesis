@@ -1,8 +1,8 @@
 module
 
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.LevelCohomology.SoDefs
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.LevelCohomology.SoDualGen
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.PrimitiveFrobeniusFixed.QocEquiv
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.LevelCohomology.Bundle0004
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.PrimitiveFrobeniusFixed.Bundle0002
 
 @[expose] public section
 

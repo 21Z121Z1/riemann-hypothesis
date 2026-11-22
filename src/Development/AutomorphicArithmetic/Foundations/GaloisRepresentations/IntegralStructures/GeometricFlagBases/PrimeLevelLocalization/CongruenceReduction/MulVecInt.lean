@@ -1,7 +1,7 @@
 module
 
 public import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.IntegralStructures.GeometricFlagBases.PrimeLevelLocalization.CongruenceReduction.LevLocAlt
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LocEqOneOfMemGam
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1113
 
 @[expose] public section
 

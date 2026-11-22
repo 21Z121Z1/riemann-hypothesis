@@ -2,17 +2,15 @@ module
 
 public import Mathlib
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PlaceDivisors.StChartFH
-public import ReciprocityTheory.DualLattices.TowerZeroSurjective
-public import ReciprocityTheory.DualLattices.LinPairStatement
-public import ReciprocityTheory.DualLattices.LengthDegreeAbelianVariety
+public import ReciprocityTheory.DualLattices.Bundle0028
+public import ReciprocityTheory.DualLattices.Bundle0014
+public import ReciprocityTheory.DualLattices.Bundle0035
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.ChartPullbacks.UniversalCharts.LePreimageOfNil
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.Clauses
 public import Development.AbelianVarietyTheory.Definitions.TeichmullerDepth.IsEigBasisIff
-public import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.ExistsTorusExtensionPointsOfUniformisationStatement
-public import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.ToricPointExtensionAbelianPartFormalGroupHomStatement
-public import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.ExistsFormalGroupSeriesToricPointExtensionStatement
-public import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.ToricPointExtensionTangentSeqSplitExactStatement
-public import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.ToricPointExtensionTangentSeqEquivariantStatement
+public import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.Bundle0066
+public import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.Bundle0041
+public import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.Bundle0040
 
 @[expose] public section
 
@@ -49,15 +47,15 @@ private noncomputable def starMat {X : Type} [AddCommGroup X] {r : ℕ} (β : Mo
 
 theorem unif_extSer_equivariant : ∀ (R : Type) [CommRing R] [IsDomain R] (I : Ideal R) (D : Out.DegData R I) (A : Out.PolAV (Spec (CommRingCat.of (FractionRing R)))) (G : Over (Spec (CommRingCat.of R))) [GrpObj G] [IsCommMonObj G] (U : Out.UnifPre I D A G) [IsAdicComplete I R] (d g : ℕ) (F : FGLaw R d) (FB : FGLaw R g) (x : Fam G d) (xB : Fam D.toPre.P.A g), NilChart G F.F x → NilChart D.toPre.P.A FB.F xB → ∃ (r : ℕ) (J : Fin d → PS R 1 r) (Q : Fin g → PS R 1 d), ExtSer F.F FB.F J Q ∧ ∀ (OE : Type) [CommRing OE] [StarRing OE] [Module OE D.toPre.X] (io : Out.RingAct G OE) (oD : D.OAct OE) (oA : A.OAct OE), U.OLinear OE oD oA io → ∀ (α : OE → Fin d → PS R 1 d) (αB : OE → Fin g → PS R 1 g), (∀ a, Reads x x (io.act a) (α a)) → (∀ a, Reads xB xB (oD.onB.act a) (αB a)) → ∃ N : OE →+* Matrix (Fin r) (Fin r) ℤ, ∀ a, lin Q * lin (α a) = lin (αB a) * lin Q ∧ lin (α a) * lin J = lin J * (N a).map (Int.castRingHom R) := by
   intro R _ _ I D A G _ _ U _ d g F FB x xB hx hxB
-  obtain ⟨E, hE⟩ := GlobalTheory.T.exists_torus_extension_points_of_uniformisation R I D A G U
+  obtain ⟨E, hE⟩ := _root_.GlobalTheory.ChF.exists_ptExt_of_unif R I D A G U
   let β : Module.Basis (Fin (Module.finrank ℤ D.toPre.X)) ℤ D.toPre.X := Module.finBasis ℤ D.toPre.X
-  obtain ⟨Q, hQ, hQ'⟩ := GlobalTheory.T.toricPointExtension_abelianPart_formalGroup_hom R I G D.toPre.P.A D.toPre.X E d g F FB x xB hx hxB
-  obtain ⟨J, hJ, hJ'⟩ := GlobalTheory.T.exists_formalGroupSeries_toricPointExtension R I G D.toPre.P.A D.toPre.X E d g F FB x xB hx hxB _ β
-  refine ⟨_, J, Q, ⟨hJ, hQ, GlobalTheory.T.toricPointExtension_tangentSeq_splitExact R I G D.toPre.P.A D.toPre.X E d g F FB x xB hx hxB _ β J Q
+  obtain ⟨Q, hQ, hQ'⟩ := _root_.GlobalTheory.ChF.ptExt_q_series R I G D.toPre.P.A D.toPre.X E d g F FB x xB hx hxB
+  obtain ⟨J, hJ, hJ'⟩ := _root_.GlobalTheory.ChF.exists_series_torus R I G D.toPre.P.A D.toPre.X E d g F FB x xB hx hxB _ β
+  refine ⟨_, J, Q, ⟨hJ, hQ, _root_.GlobalTheory.ChF.tangent_splitEx R I G D.toPre.P.A D.toPre.X E d g F FB x xB hx hxB _ β J Q
     hJ.1 hQ.1 hQ' hJ'⟩, ?_⟩
   intro OE _ _ _ io oD oA hO α αB hα hαB
   refine ⟨starMat β OE, fun a => ?_⟩
-  obtain ⟨h1, h2⟩ := GlobalTheory.T.toricPointExtension_tangentSeq_equivariant R I G D.toPre.P.A D.toPre.X E d g F FB x xB hx hxB _ β J Q
+  obtain ⟨h1, h2⟩ := _root_.GlobalTheory.ChF.lin_tangentSeq_equivariant R I G D.toPre.P.A D.toPre.X E d g F FB x xB hx hxB _ β J Q
     hJ.1 hQ.1 hQ' hJ' (io.act a) (α a) (hα a)
   refine ⟨h1 _ _ (hαB a) (fun S _ _ h => (hE OE io oD oA hO a S h).1), ?_⟩
   exact h2 (DistribSMul.toAddMonoidHom D.toPre.X (star a)) (fun S _ _ h => (hE OE io oD oA hO a S h).2)

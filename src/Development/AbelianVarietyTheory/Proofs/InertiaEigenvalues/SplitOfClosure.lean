@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Formalism.LocalRingCardinality.AdicCompletionLocal.LocTied
-public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.CentralIdemCoeff
+public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0008
 
 @[expose] public section
 

@@ -1,11 +1,11 @@
 module
 
-public import Formalism.SharpRestriction.GlobalSchurBounds.IntegralityOfRationalityLocal
+public import Formalism.SharpRestriction.GlobalSchurBounds.Bundle0005
 public import Formalism.LocalToGlobal.GroupLattices.Joint0
 public import Formalism.LocalToGlobal.GlobalTheory.GL6.DiagonalSlopes.CharacterFiniteLevelZeroOfForms
-public import Formalism.LocalToGlobal.GlobalTheory.GL6.PBwLocInd
-public import Formalism.LocalToGlobal.GlobalTheory.GL6.DiamondPreservesRationalFormZero
-public import Formalism.LocalToGlobal.GlobalTheory.GL6.CongruenceNoKernelOfHeckeRamified
+public import Formalism.LocalToGlobal.GlobalTheory.GL6.Bundle0007
+public import Formalism.LocalToGlobal.GlobalTheory.GL6.Bundle0002
+public import Formalism.LocalToGlobal.GlobalTheory.GL6.Bundle0003
 
 @[expose] public section
 

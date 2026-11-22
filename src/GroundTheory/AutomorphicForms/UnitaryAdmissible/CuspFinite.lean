@@ -4,7 +4,7 @@ public import Mathlib
 public import GroundTheory.AutomorphicForms.UnitaryAdmissible.CuspCentral
 public import GroundTheory.AutomorphicForms.CuspidalDiscreteness
 public import GroundTheory.AutomorphicForms.CuspidalDiscreteness.SummandsMeasure
-public import GroundTheory.AutomorphicForms.AutomorphicFormSpaces.GKStableConv
+public import GroundTheory.AutomorphicForms.AutomorphicFormSpaces.Bundle0001
 public import GroundTheory.AutomorphicForms.AutomorphicFormSpaces.GKStableLaplacian
 
 @[expose] public section

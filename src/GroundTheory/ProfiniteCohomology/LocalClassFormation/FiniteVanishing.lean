@@ -4,7 +4,7 @@ public import Mathlib
 public import GroundTheory.ProfiniteCohomology.LocalClassFormation.FiniteVanishing.Vanishing
 public import GroundTheory.ProfiniteCohomology.LocalClassFormation.FiniteVanishing.Trivial
 public import GroundTheory.ProfiniteCohomology.LocalClassFormation.FiniteVanishing.Devissage
-public import GroundTheory.ProfiniteCohomology.EulerCharDefs
+public import GroundTheory.ProfiniteCohomology.Bundle0004
 public import GroundTheory.ProfiniteCohomology.PoincareDuality
 
 @[expose] public section

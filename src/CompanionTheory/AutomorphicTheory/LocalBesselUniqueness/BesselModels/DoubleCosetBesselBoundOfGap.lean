@@ -1,7 +1,7 @@
 module
 
 public import CompanionTheory.AutomorphicTheory.LocalBesselUniqueness.BesselModels.Inputs
-public import Formalism.LocalToGlobal.SiegelLatticeTheory.FlagStabilizerTensors.RootLatticeThresholds.BesselOfWPf
+public import Formalism.LocalToGlobal.SiegelLatticeTheory.FlagStabilizerTensors.RootLatticeThresholds.Bundle0058
 
 @[expose] public section
 

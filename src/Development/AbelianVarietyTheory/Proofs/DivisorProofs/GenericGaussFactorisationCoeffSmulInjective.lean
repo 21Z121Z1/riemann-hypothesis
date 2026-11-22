@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RowSubst
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1810
 
 @[expose] public section
 

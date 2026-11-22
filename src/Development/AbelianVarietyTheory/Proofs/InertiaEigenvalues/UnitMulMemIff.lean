@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.PerpEqPerpNb
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0090
 
 @[expose] public section
 

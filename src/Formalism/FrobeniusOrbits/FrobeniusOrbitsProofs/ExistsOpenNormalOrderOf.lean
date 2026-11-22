@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Formalism.FrobeniusOrbits.HostThickExists
-public import Formalism.FrobeniusOrbits.FrobeniusOrbitsProofs.Orbits
+public import Formalism.FrobeniusOrbits.FrobeniusOrbitsProofs.Bundle0002
 
 @[expose] public section
 

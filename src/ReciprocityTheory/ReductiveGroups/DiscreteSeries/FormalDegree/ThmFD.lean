@@ -1,13 +1,12 @@
 module
 
-public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.FormalDegree.FdStep
-public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.FormalDegree.FdUpper
-public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.FormalDegree.SumNormAdjointSqEqHsOp
-public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.FormalDegree.FdLower
-public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.FormalDegree.FdPointwise
+public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.FormalDegree.Bundle0005
+public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.FormalDegree.Bundle0013
+public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.FormalDegree.Bundle0010
+public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.FormalDegree.Bundle0011
 public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.FormalDegree.FdConst
 public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.FormalDegree.IntegrableOfContinuousCompact
-public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.TensorRepresentations.Transported
+public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.TensorRepresentations.Bundle0005
 
 @[expose] public section
 

@@ -1,7 +1,6 @@
 module
 
-public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.TwistedNormLattice.IdealForm
-public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.TwistedNormLattice.PrXLeOfNf
+public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.TwistedNormLattice.Bundle0002
 
 @[expose] public section
 

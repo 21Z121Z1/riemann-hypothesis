@@ -1,11 +1,12 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Divisors.IsChartMember
-public import ReciprocityTheory.AnalyticForms.RegularLocalRings.FinalTheorems
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MemOfForallMemSupPow
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsDominantTuplePrescribedMemberLinearFormStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WeightedLatticeQuadraticSumGeDiagonalStatement
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0063
+public import ReciprocityTheory.AnalyticForms.RegularLocalRings.Bundle0001
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2103
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2246
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1990
+public import Development.AbelianVarietyTheory.Definitions.Divisors.IsUnimodMod
 
 @[expose] public section
 
@@ -121,7 +122,7 @@ theorem GlobalTheory.Poinc.Sep.values_of_elements : ∀ (O : Type) [CommRing O] 
     rw [hδ i] at hi
     simp only [LinearMap.smul_apply, smul_eq_mul] at hi
     exact pos_of_mul_pos_right hi (by positivity)
-  obtain ⟨cW, hcW0, hcW⟩ := GlobalTheory.T.weightedLatticeQuadraticSum_ge_diagonal (s + 1) W hW
+  obtain ⟨cW, hcW0, hcW⟩ := _root_.GlobalTheory.Poinc.QWDom.qW_ge (s + 1) W hW
   have hq : ∀ k mv, 0 ≤ qW W (Φ.δ y k) mv := fun k mv => by
     have h1 := hcW (Φ.X y) (Φ.δ y k) (Φ.bal y k).1 (Φ.nonneg y k) mv
     have h2 : (0 : ℝ) ≤ ((∑ u, Φ.δ y k (mv u) (mv u) : ℤ) : ℝ) := by

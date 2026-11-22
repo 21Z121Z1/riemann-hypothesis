@@ -2,8 +2,8 @@ module
 
 public import Mathlib
 public import Development.AutomorphicSpectrum.PublishedTheorems.Algebra₂.RegularHypothesesAndConclusion
-public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.HasAffineChartId
-public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.FiniteFreeHom
+public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.Bundle0051
+public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.Bundle0002
 public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsSecImageNonzeroLocus
 
 @[expose] public section

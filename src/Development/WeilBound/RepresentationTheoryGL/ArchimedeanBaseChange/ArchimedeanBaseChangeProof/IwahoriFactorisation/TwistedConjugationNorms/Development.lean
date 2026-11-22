@@ -6,24 +6,40 @@ public import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange
 public import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.IwahoriFactorisation.TwistedConjugationNorms.OneCoset
 public import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.IwahoriFactorisation.TwistedConjugationNorms.HilbertNinetyNorms.OrdLOfVOne
 public import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.IwahoriFactorisation.TwistedConjugationNorms.HilbertNinetyNorms.OrdLEqNegLog
-public import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.IwahoriFactorisation.TwistedConjugationNorms.HilbertNinetyNorms.Hilbert90NormOneUnitsOfUnrOfNotSplit
+public import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.IwahoriFactorisation.TwistedConjugationNorms.HilbertNinetyNorms.Bundle0001
 public import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.IwahoriFactorisation.TwistedConjugationNorms.KerConjDiagonalEqSpan
 public import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.IwahoriFactorisation.TwistedConjugationNorms.HilbertNinetyNorms.IwfLeOneOfPowMul
 public import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.IwahoriFactorisation.TwistedConjugationNorms.HilbertNinetyNorms.BlockEmbeddingSecondVal
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CompactElementEigenvaluesUnitsStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IwahoriAndMaximalCompactCriteriaStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThLInvolutive
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0555
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0563
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1086
 public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsNormalisedThetaSub
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PlaceConjugationPropertiesCmFieldStatement
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1277
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0026
+public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.Bundle0008
+public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.Bundle0001
+public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.StrongMultiplicityOne
+public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisGeometry₂.IsTemperedGLOfIsUnitaryLSeg
+public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.Bundle0010
+public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.ExistsCellOfIsSubquotient
+public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.RadfordShufflePolynomialHolds
+public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisGeometry₂.Bundle0004
+public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.Bundle0007
+public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.ExistsUniqueHcharOfFiniteOrder
+public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.Bundle0006
+public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.Bundle0009
+public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.T2SpaceAdelicGeneralLinearGroupNumberField
+public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.HeckeLEntireAndNonzeroAtOne
+public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.QuadraticClassFieldTheory
+public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.ExistsOrthonormalOfUnimodular
 public import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.IwahoriFactorisation.TwistedConjugationNorms.HilbertNinetyNorms.InertDeltaFirstCaseEqPower
 public import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.IwahoriFactorisation.TwistedConjugationNorms.HilbertNinetyNorms.MaximalCurveCore
 public import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.IwahoriFactorisation.TwistedConjugationNorms.HilbertNinetyNorms.UnitaryHeckeOrbitSingleCoset
-public import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.IwahoriFactorisation.TwistedConjugationNorms.HilbertNinetyNorms.DiagonalConjDistinctValuationsEq
-public import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.IwahoriFactorisation.TwistedConjugationNorms.HilbertNinetyNorms.TwistedOrbitalIntegralIndicatorInvIndex
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.WeightExponentStrictlyAntitoneStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.RootsEqOfDistinctValuationsStatement
-public import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.IwahoriFactorisation.TwistedConjugationNorms.CharpolyConjDiagT
-public import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.IwahoriFactorisation.TwistedConjugationNorms.HilbertNinetyNorms.NrmTwconjPf
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0552
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0036
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IwahoriProjSurjective
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0546
+public import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.IwahoriFactorisation.TwistedConjugationNorms.Bundle0001
 
 @[expose] public section
 
@@ -293,7 +309,7 @@ theorem nrm_d (hU : Unr E) (w : Pl E) (hw : ¬ IsSplitAt w) (ϖ : (w.adicComplet
     IsDiag (tdiag ϖ y * τ * thL a w (tdiag ϖ y * τ)) ∧
       ∀ i, (tdiag ϖ y * τ * thL a w (tdiag ϖ y * τ)).val i i ≠ 0 ∧
         ordL ((tdiag ϖ y * τ * thL a w (tdiag ϖ y * τ)).val i i) = nv y i := by
-  have hv : ∀ x, Valued.v (cj w x) = Valued.v x := (GlobalTheory.T.placeConjugation_properties_cmField E hU w).2.2.1
+  have hv : ∀ x, Valued.v (cj w x) = Valued.v x := (_root_.GlobalTheory.ConjAtPlace.main E hU w).2.2.1
   obtain ⟨hd, hde⟩ := d_diag w ϖ a y hτ
   obtain ⟨hθ, hθe⟩ := thL_diag w hw a hd
   obtain ⟨hN, hNe⟩ := diag_mul hd hθ
@@ -489,7 +505,7 @@ theorem k1 (hU : Unr E) (w : Pl E) (hw : ¬ IsSplitAt w) (n : ℕ) (b : GLw n w)
     (hQ : γ.1.val.charpoly = Q₁ * Q₂) (hm₁ : Q₁.Monic) (hm₂ : Q₂.Monic) (hc₁ : IsCsr w Q₁) (hc₂ : IsCsr w Q₂) :
     kapSign n w Q₁ γ.1 = 1 := by
   obtain ⟨-, -, hV⟩ := s2 hU w hw n b hb ϖ hϖ l hl γ hP
-  obtain ⟨hanti, hrev⟩ := GlobalTheory.T.weight_exponent_strictly_antitone n l hl
+  obtain ⟨hanti, hrev⟩ := _root_.GlobalTheory.CompanionTheory.Wexp.wexp_strictAnti_rev n l hl
   refine Kap.kapSign_eq_one_of_vals hU w n γ.1 γ.2 (wexp n l) hanti.injective ?_ hV Q₁
   intro i j h
   exact hanti.injective (h.trans (hrev i).symm)
@@ -985,9 +1001,9 @@ theorem uniqR (hU : Unr E) (w : Pl E) (hw : ¬ IsSplitAt w) (n : ℕ) (b : GLw n
     (hQ : γ.1.val.charpoly = γ'.1.val.charpoly) : ∃ g : UL n w, γ' = g⁻¹ * γ * g := by
   obtain ⟨p₀, u, hu, hγ, -, -, hQγ⟩ := s2raw hU w hw n b hb ϖ hϖ l hl γ hP
   obtain ⟨p₁, u', hu', hγ', -, -, hQγ'⟩ := s2raw hU w hw n b hb ϖ hϖ l hl γ' hP'
-  have hinj : Function.Injective (wexp n l) := (GlobalTheory.T.weight_exponent_strictly_antitone n l hl).1.injective
+  have hinj : Function.Injective (wexp n l) := (_root_.GlobalTheory.CompanionTheory.Wexp.wexp_strictAnti_rev n l hl).1.injective
   have huu : (fun i => (u i : w.adicCompletion E)) = fun i => (u' i : w.adicCompletion E) :=
-    GlobalTheory.T.roots_eq_of_distinct_valuations (w.adicCompletion E) n (wexp n l) hinj (fun i => (u i : w.adicCompletion E))
+    _root_.GlobalTheory.CompanionTheory.RootsDistinctVal.roots_eq_of_distinct_ord (w.adicCompletion E) n (wexp n l) hinj (fun i => (u i : w.adicCompletion E))
       (fun i => (u' i : w.adicCompletion E)) hu hu' (by rw [← hQγ, ← hQγ', hQ])
   have hu_eq : u = u' := funext fun i => Units.ext (congrFun huu i)
   subst hu_eq

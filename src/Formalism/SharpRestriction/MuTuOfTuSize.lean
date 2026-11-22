@@ -1,9 +1,9 @@
 module
 
-public import Formalism.SharpRestriction.GlobalTheoremInputs
+public import Formalism.SharpRestriction.Bundle0002
 public import Formalism.SharpRestriction.AdmissibleParameterJoins
 public import Formalism.SharpRestriction.AdmissibleParameterJoins.SumLogPrimeFactorsLe
-public import Formalism.SharpRestriction.LevelLetterCocycles.TwGood
+public import Formalism.SharpRestriction.LevelLetterCocycles.Bundle0018
 public import Formalism.SizeWindowBrackets.ChainSlopeWindows.PChain
 
 @[expose] public section

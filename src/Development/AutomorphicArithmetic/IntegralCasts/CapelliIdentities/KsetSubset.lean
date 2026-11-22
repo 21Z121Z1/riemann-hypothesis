@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import CompanionTheory.HarishChandraModules.LowKTypeMultiplicity.DiscreteSeriesCharacters.CapelliDeterminantBlockProduct
-public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.ExistsInvariantSubspace
+public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0018
 
 @[expose] public section
 

@@ -1,18 +1,10 @@
 module
 
 public import Formalism.GradedWeylDivisibility.FinalC
-public import Formalism.GradedWeylDivisibility.FockSpaceTableaux.SSIdxFinite
-public import Formalism.GradedWeylDivisibility.FockSpaceTableaux.SSBasis
-public import Formalism.GradedWeylDivisibility.FockSpaceTableaux.RowActDiagWeight
-public import Formalism.GradedWeylDivisibility.FockSpaceTableaux.RowActMul
-public import Formalism.GradedWeylDivisibility.FockSpaceTableaux.NablaLLe
-public import Formalism.GradedWeylDivisibility.FockSpaceTableaux.NablaLBasis
-public import Formalism.GradedWeylDivisibility.FockSpaceTableaux.NablaLKBasis
+public import Formalism.GradedWeylDivisibility.FockSpaceTableaux.Bundle0012
+public import Formalism.GradedWeylDivisibility.FockSpaceTableaux.Bundle0013
 public import Formalism.GradedWeylDivisibility.FockSpaceTableaux.NablaLDiag
-public import Formalism.GradedWeylDivisibility.FockSpaceTableaux.NablaLTwist
-public import Formalism.GradedWeylDivisibility.FockSpaceTableaux.NablaLTwMem
 public import Formalism.GradedWeylDivisibility.FockSpaceTableaux.TensorBasis
-public import Formalism.GradedWeylDivisibility.FockSpaceTableaux.BlockActTensor
 
 @[expose] public section
 

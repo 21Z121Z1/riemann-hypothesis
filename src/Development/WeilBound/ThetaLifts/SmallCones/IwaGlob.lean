@@ -2,8 +2,8 @@ module
 
 public import Development.WeilBound.ThetaLifts.SmallCones.ThetaUniq
 public import Development.WeilBound.ThetaLifts.SmallCones.MatCancel
-public import Development.WeilBound.ThetaLifts.TowerModels.ExistsRefl
-public import Development.WeilBound.ThetaLifts.LatticeBasics.EulerProd
+public import Development.WeilBound.ThetaLifts.TowerModels.Bundle0001
+public import Development.WeilBound.ThetaLifts.LatticeBasics.Bundle0010
 public import Development.WeilBound.CoreStatements.CompactAveragingSplitting.EigenvectorLifting.InertDef
 
 @[expose] public section

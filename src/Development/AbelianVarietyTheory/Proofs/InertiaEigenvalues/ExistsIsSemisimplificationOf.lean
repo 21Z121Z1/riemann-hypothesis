@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Formalism.SharpRestriction.LevelLetterCocycles.QuotientHomNonvanishingBound
-public import Development.AbelianVarietyTheory.BlockTheory.NonGaloisCusps.SemisimplificationConstituents
+public import Development.AbelianVarietyTheory.BlockTheory.NonGaloisCusps.Bundle0008
 
 @[expose] public section
 

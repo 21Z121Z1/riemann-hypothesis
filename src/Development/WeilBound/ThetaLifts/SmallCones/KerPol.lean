@@ -1,7 +1,7 @@
 module
 
 public import Development.WeilBound.ThetaLifts.SmallCones.KerGeo
-public import Development.WeilBound.ThetaLifts.LeviDeterminants.MCSpan
+public import Development.WeilBound.ThetaLifts.LeviDeterminants.Bundle0004
 
 @[expose] public section
 

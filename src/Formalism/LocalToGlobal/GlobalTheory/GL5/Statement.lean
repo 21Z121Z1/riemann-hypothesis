@@ -1,11 +1,10 @@
 module
 
 public import Formalism.SharpRestriction.GlobalSchurBounds.StandardLattice
-public import Formalism.SharpRestriction.GlobalSchurBounds.LocalCountingBounds
+public import Formalism.SharpRestriction.GlobalSchurBounds.Bundle0001
 public import Formalism.LocalToGlobal.BesselHermitianTheta.MinfDensity
 public import Formalism.LocalToGlobal.HermitianColumns.InLocalDiscriminantKernel
 public import Formalism.SharpRestriction.GlobalSchurBounds.QuadraticLogDerivCongr
-public import Formalism.SharpRestriction.GlobalSchurBounds.Chosen
 
 @[expose] public section
 

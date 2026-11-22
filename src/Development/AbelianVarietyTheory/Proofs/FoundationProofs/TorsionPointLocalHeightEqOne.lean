@@ -3,23 +3,23 @@ module
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.Foundations.NormSumPairRankZeroOfCurveCoordNorm
 public import Formalism.PairingDivisors.StatementH
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.OddThetaFunctionExistenceUniqueness
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.DifferentiableSqTh
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Cval
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0230
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0235
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0274
 public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsBoundMeansPosLogAreaNormalisedTheta
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.IntSerOfIsWq
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.SubstMulLogEqNSer
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.EvenThetaTwoTorsionBasicProperties
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.AlgebraicTaylorTorsionTranslateEvenTheta
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.NormThetaTranslateValueAtZeroPadicPeriodic
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.PadicModelEquationTangentAtLatticeParameter
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.EvenThetaEqProdSigmaStarSquareQuotient
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.LatticeInvariantsPeriodPairDictionary
-public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.MkLeContinuumOfDenseRange
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0263
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0232
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0248
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0246
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0282
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0286
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0260
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0226
+public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0015
 public import Development.AbelianVarietyTheory.Proofs.HeightProofs.WeierstrassPTorsionIntegralAndDistinctMod
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.TranslateModifiedSigmaTwoMulAtZeroStatement
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.DuplicationFormulaMaxNormEqCpUnitDiscriminantStatement
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.LatticeTranslateHalfPeriodSigmaStarPowEightMulEqStatement
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0287
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0279
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0288
 
 @[expose] public section
 
@@ -93,12 +93,12 @@ theorem mu_double (D : D7) (p : ℕ) [Fact p.Prime] (cc : Ideal (𝓞 D.host.K))
   have hv2 := lattice_torsion_two_mul hv
   obtain ⟨hP, hD⟩ := hwp v hv hv0
   obtain ⟨hP2, -⟩ := hwp (2 * v) hv2 h2v
-  have hdup := GlobalTheory.T.translate_modifiedSigma_two_mul_at_zero g.abelian₂ hlat v hv0
+  have hdup := _root_.GlobalTheory.SigmaDuplication.U1_two_mul_at_zero_eq_neg_wpD_mul_pow_four g.abelian₂ hlat v hv0
   have hsq := GlobalTheory.ThetaPar.ModelPoint.wpD_sq hlat hv0
   have hdbl := dbl_complex hlat hv0 h2v
   obtain ⟨hε, -⟩ := GlobalTheory.EvenTheta.DatumBasic.datum_basic p g hok hlat h2 h3 hdisc
   obtain ⟨⟨ha1, ha2, ha3, ha4, ha6, hΔ⟩, -⟩ := hok
-  have key := GlobalTheory.T.duplicationFormula_maxNorm_eq_cp_unitDiscriminant p g.W ha1 ha2 ha3 ha4 ha6 hΔ (xAt g v)
+  have key := _root_.GlobalTheory.DupNorm.max_norm_eq_padicComplex p g.W ha1 ha2 ha3 ha4 ha6 hΔ (xAt g v)
   set ε : ℂ_[p] := ((g.C.u⁻¹ : ℂ_[p]ˣ) : ℂ_[p]) with hεdef
   have hA : lamC g.lam (-(g2 g.abelian₂) / 4) = -(ι (g2 g.abelian₂)) / 4 := by
     rw [GlobalTheory.ThetaPar.ModelPoint.lamC_neg_div_four _ h2, lamC_eq hι h2]
@@ -143,9 +143,9 @@ theorem mu_two_tors (D : D7) (p : ℕ) [Fact p.Prime] (cc : Ideal (𝓞 D.host.K
   obtain ⟨hlat, h2, h3, hdisc, hwp, hU, hok⟩ := setup D p cc δ g hg
   obtain ⟨ι, hι⟩ := GlobalTheory.PadicComplexIso.exists_ringEquiv_extending p g.lam
   obtain ⟨hP, hD⟩ := hwp v hv hv0
-  have hdup := GlobalTheory.T.translate_modifiedSigma_two_mul_at_zero g.abelian₂ hlat v hv0
+  have hdup := _root_.GlobalTheory.SigmaDuplication.U1_two_mul_at_zero_eq_neg_wpD_mul_pow_four g.abelian₂ hlat v hv0
   have hsq := GlobalTheory.ThetaPar.ModelPoint.wpD_sq hlat hv0
-  have h8 := GlobalTheory.T.latticeTranslate_halfPeriod_sigmaStar_pow_eight_mul_eq_one g.abelian₂ hlat v hv0 h2v
+  have h8 := _root_.GlobalTheory.HalfPeriodValue.U1_sgStar_pow_eight g.abelian₂ hlat v hv0 h2v
   have h0 : U1 g.abelian₂ (2 * v) (sgStar g.abelian₂) 0 = 0 := by
     rw [hlat.sg_law h2v 0, (hlat.sg_eq_zero 0).2 (zero_mem _), mul_zero]
   have hD0 : wpD g.abelian₂ v = 0 := by
@@ -157,7 +157,7 @@ theorem mu_two_tors (D : D7) (p : ℕ) [Fact p.Prime] (cc : Ideal (𝓞 D.host.K
     rw [← hsq, hD0]; ring
   obtain ⟨hε, -⟩ := GlobalTheory.EvenTheta.DatumBasic.datum_basic p g hok hlat h2 h3 hdisc
   obtain ⟨⟨ha1, ha2, ha3, ha4, ha6, hΔ⟩, -⟩ := hok
-  have key := GlobalTheory.T.duplicationFormula_maxNorm_eq_cp_unitDiscriminant p g.W ha1 ha2 ha3 ha4 ha6 hΔ (xAt g v)
+  have key := _root_.GlobalTheory.DupNorm.max_norm_eq_padicComplex p g.W ha1 ha2 ha3 ha4 ha6 hΔ (xAt g v)
   set ε : ℂ_[p] := ((g.C.u⁻¹ : ℂ_[p]ˣ) : ℂ_[p]) with hεdef
   have hA : lamC g.lam (-(g2 g.abelian₂) / 4) = -(ι (g2 g.abelian₂)) / 4 := by
     rw [GlobalTheory.ThetaPar.ModelPoint.lamC_neg_div_four _ h2, lamC_eq hι h2]

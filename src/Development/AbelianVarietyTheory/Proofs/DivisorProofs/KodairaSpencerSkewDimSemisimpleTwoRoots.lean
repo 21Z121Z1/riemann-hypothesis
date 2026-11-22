@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Divisors.InfUniv
-public import Development.AbelianVarietyTheory.Definitions.Divisors.KottwitzDimSignatureOneOne
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FinrankMapEqOfKerEq
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0044
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0045
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1337
 
 @[expose] public section
 

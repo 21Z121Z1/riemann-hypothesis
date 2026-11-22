@@ -2,9 +2,8 @@ module
 
 public import Formalism.LocalToGlobal.BesselHermitianTheta.AllTied
 public import Formalism.LocalToGlobal.GlobalTheory.GL5.PClassDecomp
-public import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.SignatureExists
-public import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.SignatureConjugationInvariant
-public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.IsInfEmbUnique
+public import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Bundle0003
+public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0039
 
 @[expose] public section
 

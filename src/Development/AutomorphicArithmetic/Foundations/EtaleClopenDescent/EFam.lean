@@ -1,13 +1,12 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Divisors.IsGaloisCover
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0025
 public import Development.AbelianVarietyTheory.Definitions.Divisors.IsAffCoverSpec
 public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.OmegaPullOmegaTraceOfSecTraceOne
-public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.KaehlerOneFormsToExtensionDeRhamMulSelf
+public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.Bundle0006
 public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.SortSign
-public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.TcoMem
-public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.Edge1
+public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.Bundle0015
 
 @[expose] public section
 

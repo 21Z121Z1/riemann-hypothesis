@@ -1,6 +1,6 @@
 module
 
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.ContDiffOnInvConjDet
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0249
 
 @[expose] public section
 

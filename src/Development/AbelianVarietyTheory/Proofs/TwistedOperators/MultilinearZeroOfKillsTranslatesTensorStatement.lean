@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.MultilinearZeroOfKillsTranslatesTensor
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0024
 
 @[expose] public section
 

@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ChoiceSide
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.CongrFunHeq
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0629
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0645
 public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ClassSumEq
 
 @[expose] public section

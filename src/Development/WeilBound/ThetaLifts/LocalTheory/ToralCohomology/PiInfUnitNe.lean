@@ -1,6 +1,6 @@
 module
 
-public import Development.WeilBound.ThetaLifts.LocalTheory.ToralCohomology.ParZero
+public import Development.WeilBound.ThetaLifts.LocalTheory.ToralCohomology.Bundle0001
 public import Development.WeilBound.CoreStatements.GaussianSeminormBounds.RealSeminormFiltration.CoreLM
 
 @[expose] public section

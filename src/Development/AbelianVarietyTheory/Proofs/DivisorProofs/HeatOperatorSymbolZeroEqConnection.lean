@@ -1,14 +1,14 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Divisors.HasDefect
-public import Development.AbelianVarietyTheory.Definitions.Divisors.RigidForFan
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0060
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0071
 public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.ToroidalCompactificationBis
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsConnK
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConnectionClosedFibreEqDerivationIdentificationStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HeatOperatorConnectionClosedFibreStatement
-public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.LogDerivativePrincipalPolarisationIndependent
-public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ConstThickeningFieldStructure
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2863
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2952
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle3031
+public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0100
+public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0035
 
 @[expose] public section
 
@@ -339,7 +339,7 @@ theorem uconn : ∀ (E : Type) [Field E] [NumberField E] [IsCMField E] (H : Host
     by_cases he : 1 ≤ e
     · obtain ⟨V, ed, pb, hconn, -, hF⟩ := GlobalTheory.T.heatOperator_connection_closedFibre E H k m d t P gam hmon hlin hab Y n' v' dd hdd D q hq h hB
         hdef hΘ ρ hρ e he A₀ m₀ hA₀
-      obtain ⟨hA, κ, hκ⟩ := GlobalTheory.T.connection_closedFibre_eq_derivation_identification k (ChartRing k m d) P.D.toPre.P ρ B' π₁ π₂ hπ₁ hπ₂ hcl A₀ m₀ hA₀ pr hpr
+      obtain ⟨hA, κ, hκ⟩ := _root_.GlobalTheory.HeatConn.connK_eq_ident k (ChartRing k m d) P.D.toPre.P ρ B' π₁ π₂ hπ₁ hπ₂ hcl A₀ m₀ hA₀ pr hpr
         hpr' V h.j ed pb hconn w hw
       obtain ⟨c, hc⟩ := hF B' π₁ π₂ c' hπ₁ hπ₂ hcl hc' pr hpr hpr' hA
       refine ⟨κ ^ e, -c, fun _ α σ σ' hTA Z x xs hxs z J hJ => ?_⟩

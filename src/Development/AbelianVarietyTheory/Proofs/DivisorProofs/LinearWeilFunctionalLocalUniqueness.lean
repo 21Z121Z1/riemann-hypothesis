@@ -1,27 +1,25 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Divisors.MatchingOfParts
-public import Development.AbelianVarietyTheory.Definitions.Divisors.DiscreteSeriesHermitianUnique
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0033
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0041
 public import Development.AbelianVarietyTheory.Definitions.Divisors.RankEqCardIffExistsFrameMatrixFirstColumnBlock
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsDiagonalLagrangianInvariantForm
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdelicHeisenbergActsByLocalSchrodinger
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdelicSchwartzRestrictFinitePlaceMemSchwartzBruh
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdelicSchwartzSpaceTranslateMemOfMem
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TensFormBox
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MixedProjectionPreservesSchwartzAdmStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SchwartzBruhatPartialEvaluationStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BoxProductDiagonalFunctionalNeZeroStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsTranslationInvariantFunctionalStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LocalCharacterNormOneUnitStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DistribHaarCharSupportedIdeleEqLocalAbsValueStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LocalNormUnramifiedFactorizationStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaActionExistsStatement
-public import Development.AbelianVarietyTheory.Definitions.Divisors.IsPairOfIsTriple
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1592
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1643
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1675
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1715
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1695
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1705
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1708
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1714
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1706
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1843
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0051
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsLocalGLEmbeddingUnitary
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SchrodingerPreservesSchwartzBruhat
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ProductFunctionOnSumCoordsMemAdelicSchwartzSpace
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsStdCharNegOneOfStandardTraceAdelicAddChar
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1656
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0930
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1558
 
 @[expose] public section
 
@@ -66,7 +64,7 @@ theorem tensForm_schr [TopologicalSpace R] [T2Space R] (ψ : AddChar R ℂ) {κ 
     (h₁ : ∀ φ ∈ SB (κ → R), l₁ (schr ψ (p₁, q₁) φ) = l₁ φ) (h₂ : ∀ φ ∈ SB (κ' → R), l₂ (schr ψ (p₂, q₂) φ) = l₂ φ)
     (f : (κ ⊕ κ' → R) → ℂ) (hf : f ∈ SB (κ ⊕ κ' → R)) :
     tensForm l₁ l₂ (schr ψ (Sum.elim p₁ p₂, Sum.elim q₁ q₂) f) = tensForm l₁ l₂ f := by
-  obtain ⟨s1, s2⟩ := GlobalTheory.T.schwartz_bruhat_partial_evaluation R κ κ' f hf
+  obtain ⟨s1, s2⟩ := _root_.GlobalTheory.SliceSB.slice_mem R κ κ' f hf
   change l₁ _ = l₁ _
   rw [← h₁ _ (s2 l₂)]
   congr 1

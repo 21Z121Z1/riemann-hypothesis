@@ -2,23 +2,22 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.ThetaMod
-public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.HasFiniteLengthOfIsIrreducible
+public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.Bundle0001
 public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.ExistsCellOfIsSubquotient
-public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisGeometry₂.UnlinkedProductIrreducible
-public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisGeometry₂.DepthZeroJacquetInjective
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsInSupportOfMultiProd
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.InSupportOfIsSubquotient
+public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisGeometry₂.Bundle0002
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0147
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0050
 public import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.NotInSupportOfSubsingleton
 public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.NonemptyEquivOfRangeEq
 public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsEquivDetCharacterOfIrreducibleRankLeOne
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ParIndJacPlacing
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0032
 public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.EventuallyInv
 public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.HasSupportOfIsSubquotientProdIrr
 public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsEquivProdIrrTw
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.MultiProdCompCongr
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.MultiProdHeadComp
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ParabolicInductionTwoBlocksEmptyProductLeftStatement
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.InducedProductCommutesFamilyProductStatement
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0193
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0208
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0214
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0205
 public import Lean.LibrarySuggestions.Basic
 public import Lean.Elab.Command
 
@@ -65,7 +64,7 @@ theorem commutes_multiProd' {p u : ℕ} (x : Irr k p) {dτ : Fin u → ℕ} (τ 
     have A := ind₂_unit_right h₁ x.π x.smooth (fun a => (τ a).π) e
     have B := GlobalTheory.T.parabolicInductionTwoBlocks_empty_product_left k p 0 h₂ _ x.π x.smooth _ _ (fun a => (τ a).π) e
     exact eqvT A (eqvS B)
-  | succ u => exact GlobalTheory.T.inducedProductCommutes_familyProduct k p u x dτ τ hC T N e h₁ h₂
+  | succ u => exact _root_.GlobalTheory.ProdReorder.commutes_multiProd k p u x dτ τ hC T N e h₁ h₂
 
 def ReorderClaim (k : Type) [Field k] [ValuativeRel k] [TopologicalSpace k] [IsNonarchimedeanLocalField k]
     (s : ℕ) : Prop :=

@@ -2,10 +2,10 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Statements.HeightBoundStatement.HTBoundSt
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.TorsionRepresentableFiniteFreeStatement
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.DerivationDivisibleOfCocommStatement
-public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.PowEqScaleAndExistsUniqueTorsion
-public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ValuationRingHenselianAndSmoothPointsLift
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0533
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0106
+public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0043
+public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0092
 
 @[expose] public section
 
@@ -347,7 +347,7 @@ theorem htBound : HTBoundSt := by
   haveI := GlobalTheory.henselianLocalRing_of_valuationRing_of_isAlgClosed (intO C) C
   have hpC : (p : C) ^ m ≠ 0 := pow_ne_zero _ (Nat.cast_ne_zero.2 (Fact.out : p.Prime).ne_zero)
   have hq : (p : intO C) ^ m ≠ 0 := fun h0 => hpC (by simpa using congrArg (intO C).subtype h0)
-  obtain ⟨A, _, _, u, _, _, h⟩ := GlobalTheory.T.torsion_representable_finite_free X t.G t.semi (intO C) x (p ^ m)
+  obtain ⟨A, _, _, u, _, _, h⟩ := _root_.GlobalTheory.TorsionRep.exists_finite_free_torsion_rep X t.G t.semi (intO C) x (p ^ m)
     (pow_ne_zero _ (Fact.out : p.Prime).ne_zero)
   replace h : Rep (p ^ m) u := h
   let I : Ideal (intO C) := Ideal.span {(p : intO C) ^ m}

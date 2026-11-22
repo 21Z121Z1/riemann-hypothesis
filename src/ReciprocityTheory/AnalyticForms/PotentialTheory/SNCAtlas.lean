@@ -1,6 +1,6 @@
 module
 
-public import ReciprocityTheory.AnalyticForms.PotentialTheory.IsPotentialPullbackStatement
+public import ReciprocityTheory.AnalyticForms.PotentialTheory.Bundle0002
 
 @[expose] public section
 

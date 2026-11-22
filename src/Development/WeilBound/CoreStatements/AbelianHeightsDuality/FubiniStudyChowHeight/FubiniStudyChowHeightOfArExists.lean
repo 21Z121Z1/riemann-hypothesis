@@ -2,10 +2,10 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.FubiniStudyChowHeight
-public import Development.AbelianVarietyTheory.Definitions.Divisors.ToKnownTheoremsOf
-public import Development.WeilBound.CoreStatements.MinimalPrimeDimensions.ChowFormHeightOfArch
-public import Development.WeilBound.CoreStatements.MinimalPrimeDimensions.IntegralOfLintegral
-public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.MahlerSectionStatementHolds
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0059
+public import Development.WeilBound.CoreStatements.MinimalPrimeDimensions.Bundle0004
+public import Development.WeilBound.CoreStatements.MinimalPrimeDimensions.Bundle0002
+public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.Bundle0076
 
 @[expose] public section
 

@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SplitOff
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0474
 
 @[expose] public section
 

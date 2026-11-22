@@ -2,8 +2,7 @@ module
 
 public import Mathlib
 public import GroundTheory.HeightsAndTheta.Heights.FlagBundles.Statements
-public import GroundTheory.HeightsAndTheta.Heights.FlagBundles.StatementsSphereLongitude
-public import GroundTheory.HeightsAndTheta.Heights.FlagBundles.StatementsZonalReduction
+public import GroundTheory.HeightsAndTheta.Heights.FlagBundles.Bundle0001
 
 @[expose] public section
 

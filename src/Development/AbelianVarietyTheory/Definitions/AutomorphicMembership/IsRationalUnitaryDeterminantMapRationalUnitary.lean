@@ -3,9 +3,9 @@ module
 public import Mathlib
 public import Formalism.LocalRingCardinality.RankBoundMonotoneInDimension
 public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.IsRationalUnitaryDeterminantMapRationalUnitaryTo
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.UnitOpenAndCongrOpen
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsProdUnifMulUnitIdl
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.UnderEqIffConjPl
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0096
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0092
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0095
 
 @[expose] public section
 

@@ -1,7 +1,7 @@
 module
 
-public import Formalism.MahlerMeasure.StatementTM
-public import Formalism.MahlerMeasure.TieVars
+public import Formalism.MahlerMeasure.Bundle0007
+public import Formalism.MahlerMeasure.Bundle0003
 
 @[expose] public section
 

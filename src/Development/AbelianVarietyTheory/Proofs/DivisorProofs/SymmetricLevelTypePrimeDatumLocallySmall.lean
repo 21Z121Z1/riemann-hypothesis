@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CosetRefinement
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.LambdaCharMulInvEqOne
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0718
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0058
 
 @[expose] public section
 

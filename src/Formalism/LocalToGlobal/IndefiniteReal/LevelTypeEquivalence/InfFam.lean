@@ -1,8 +1,8 @@
 module
 
-public import Formalism.LocalToGlobal.IndefiniteReal.LevelTypeEquivalence.BaseSt
-public import Formalism.LocalToGlobal.UnitaryNorms.RealPl
-public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.InfEmbUnique
+public import Formalism.LocalToGlobal.IndefiniteReal.LevelTypeEquivalence.Bundle0001
+public import Formalism.LocalToGlobal.UnitaryNorms.Bundle0004
+public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0035
 
 @[expose] public section
 

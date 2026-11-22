@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.Jets.CmLatticeCommutatorPairingPowEqOneOfGoodLift
-public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.ConstantCoeffShiftS
+public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0011
 
 @[expose] public section
 

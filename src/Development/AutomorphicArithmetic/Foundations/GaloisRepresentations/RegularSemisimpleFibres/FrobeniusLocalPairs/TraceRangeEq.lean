@@ -2,8 +2,8 @@ module
 
 public import Mathlib
 public import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.RegularSemisimpleFibres.FrobeniusLocalPairs.LiftFactorization
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HaarIntegralNormalizedOpenCompactEqIntegralDiv
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LevOpMemFixed
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1107
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1038
 
 @[expose] public section
 

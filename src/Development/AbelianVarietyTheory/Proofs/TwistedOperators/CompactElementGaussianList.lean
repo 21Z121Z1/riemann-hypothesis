@@ -1,19 +1,19 @@
 module
 
 public import Mathlib
-public import Formalism.LocalToGlobal.IndefiniteReal.LevelTypeEquivalence.ContinuousSplitInv
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HasArchimedeanCharExponentsConjOfHasInfExp
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ContinuousOneP
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsArchEquivEq
-public import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.UnitaryConjugation
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.MemMultTOfEquivariant
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsLieAlgebraExpEqOfCommuteCartanInvolutionStatement
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ThetaEqB
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IsThetaSubSelf
-public import Development.AbelianVarietyTheory.Definitions.Divisors.DiscreteSeriesHermitianUnique
-public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.HoweDualityUnitary
-public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.HoweDualityReal
-public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisGeometry₂.HypothesesAbsDet
+public import Formalism.LocalToGlobal.IndefiniteReal.LevelTypeEquivalence.Bundle0004
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1527
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0220
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0291
+public import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.Bundle0019
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0229
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0147
+public import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.WeilTensorModels
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0295
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0146
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0041
+public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.Bundle0011
+public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisGeometry₂.Bundle0001
 
 @[expose] public section
 
@@ -36,7 +36,7 @@ variable {D : D7}
 theorem exists_log_of_cartan {n : ℕ} {G C g : Matrix (Fin n) (Fin n) ℂ} (hG : Gᴴ = G)
     (hC : GlobalTheory.IndefiniteRowSideFullHecke.WeilTensorModels.IsCartan Gᵀ C) (hg : gᴴ * G * g = G) (hgC : Commute g C) :
     ∃ Z : Matrix (Fin n) (Fin n) ℂ, Zᴴ * G + G * Z = 0 ∧ Commute Z C ∧ NormedSpace.exp Z = g :=
-  GlobalTheory.T.exists_lieAlgebra_exp_eq_of_commute_cartanInvolution hG hC hg hgC
+  _root_.GlobalTheory.ExpCartan.exists_exp_eq_of_commute_cartan hG hC hg hgC
 
 theorem emb_cases (t : D.what₂.Tau) (e : GlobalTheory.AdelicU.EmbOver D.host.E (GlobalTheory.AdelicU.placeOf D t)) :
     e.1 = tauE D t ∨ e.1 = (starRingEnd ℂ).comp (tauE D t) := by

@@ -2,8 +2,8 @@ module
 
 public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.GelfandTsetlinBranching.ExtremalFacts
 public import Formalism.GradedWeylDivisibility.DualWeylDominanceOf
-public import Formalism.GradedWeylDivisibility.FockSpaceTableaux.LFocksLemmas
-public import Formalism.GradedWeylDivisibility.FockSpaceTableaux.ClosedEqNabla
+public import Formalism.GradedWeylDivisibility.FockSpaceTableaux.Bundle0002
+public import Formalism.GradedWeylDivisibility.FockSpaceTableaux.Bundle0011
 
 @[expose] public section
 

@@ -1,7 +1,7 @@
 module
 
-public import ReciprocityTheory.ReducedBases.LatticeReduction
-public import ReciprocityTheory.ReducedBases.TBInjective
+public import ReciprocityTheory.ReducedBases.Bundle0003
+public import ReciprocityTheory.ReducedBases.Bundle0002
 
 @[expose] public section
 

@@ -5,7 +5,7 @@ public import GroundTheory.ProfiniteCohomology.RestrictedRamification.BaseKummer
 public import GroundTheory.ProfiniteCohomology.RestrictedRamification.ClassFieldGSLocal
 public import GroundTheory.ProfiniteCohomology.RestrictedRamification.BrauerLocalVal
 public import GroundTheory.ProfiniteCohomology.LocalTateDuality.Bockstein
-public import GroundTheory.ProfiniteCohomology.CyclicCupProf
+public import GroundTheory.ProfiniteCohomology.Bundle0008
 
 @[expose] public section
 

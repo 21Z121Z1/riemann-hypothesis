@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import GroundTheory.GlobalFields.IdeleGroups.NormOneCompact
-public import GroundTheory.GlobalFields.IdeleGroups.StandardOpenEquiv
+public import GroundTheory.GlobalFields.IdeleGroups.Bundle0001
 public import GroundTheory.GlobalFields.Adele.Topology
 public import GroundTheory.GlobalFields.TateThesis.AdeleMeasurable
 

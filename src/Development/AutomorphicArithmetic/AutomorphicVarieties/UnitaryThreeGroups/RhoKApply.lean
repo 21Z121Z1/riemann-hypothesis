@@ -2,8 +2,8 @@ module
 
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.UnitaryThreeGroups.Rigid0
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.HeightAndVanishing.Counts
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.PadicHodgeTheory.IsInertiaInfiniteCyclotomic
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.CongruenceNumberRankThree
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.PadicHodgeTheory.Bundle0008
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.Bundle0004
 
 @[expose] public section
 

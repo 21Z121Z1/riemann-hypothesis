@@ -3,9 +3,9 @@ module
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.HeightFunctions.RunsAlong
 public import Development.AbelianVarietyTheory.Statements.PlaceShiftStatements.SingleIndexPlacesAreTwisted
-public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.RatInEig
+public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.Bundle0032
 public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.ExistsIsScalar
-public import Formalism.LocalToGlobal.IndefiniteReal.WeakCharacterisationWithError
+public import Formalism.LocalToGlobal.IndefiniteReal.Bundle0027
 
 @[expose] public section
 

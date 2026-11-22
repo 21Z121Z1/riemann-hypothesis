@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Divisors.IsFlatLift
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CechAndTotalDifferentialAdditiveSquareZeroStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsTotalCochainOfDegreeSuccOfDifferentialsStatement
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0002
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0183
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0213
 
 @[expose] public section
 

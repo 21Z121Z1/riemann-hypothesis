@@ -1,7 +1,7 @@
 module
 
-public import Formalism.HermitianCurvature.CapelliDeterminantAndBranching
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.LemmaDDeterminantIdentity
+public import Formalism.HermitianCurvature.Bundle0008
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0047
 public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.IntegerProductCast.OfFnProdIntCast
 
 @[expose] public section

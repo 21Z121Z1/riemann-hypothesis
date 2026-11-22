@@ -1,7 +1,7 @@
 module
 
-public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.ExpTieGerm
-public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.CIndBCNab
+public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0017
+public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0008
 public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.FBIdJet
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.TaylorDiscriminants.WickVanishing.CalcExp
 

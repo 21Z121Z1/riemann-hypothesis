@@ -1,9 +1,9 @@
 module
 
 public import Formalism.SharpRestriction.GrowthBounds.ChartComparison.StepIn
-public import Formalism.LocalToGlobal.GroupLattices.TiedFamilies.TieWeak
+public import Formalism.LocalToGlobal.GroupLattices.TiedFamilies.Bundle0007
 public import Formalism.LocalToGlobal.GroupLattices.TiedFamilies.TieDim
-public import Formalism.LocalToGlobal.GroupLattices.ComparisonMaps.MRatSpanOfRatInv
+public import Formalism.LocalToGlobal.GroupLattices.ComparisonMaps.Bundle0008
 
 @[expose] public section
 

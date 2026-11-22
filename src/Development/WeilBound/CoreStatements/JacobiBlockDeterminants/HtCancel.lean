@@ -2,7 +2,9 @@ module
 
 public import Development.WeilBound.CoreStatements.MultihomogeneousSquares.AntisymmetryFibreSquares
 public import Development.WeilBound.CoreStatements.HomogeneousNonvanishing.HodgeCompactPullback
-public import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.HodgeComponentFactorPointStatement
+public import Mathlib
+public import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.Bundle0020
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.Bundle0010
 
 @[expose] public section
 
@@ -29,7 +31,7 @@ theorem stHt : SquareStatements.StHt := by
     have : NumberField c.F := {}
     have : IsPreimmersion (spMap (algebraMap (𝓞 c.F) c.F)) := IsPreimmersion.of_isLocalization (nonZeroDivisors (𝓞 c.F))
     infer_instance
-  obtain ⟨x₀, hx₀⟩ := GlobalTheory.T.hodge_component_factor_point E H D l Xo c _ _ Y S Ω K J y A hmono
+  obtain ⟨x₀, hx₀⟩ := _root_.GlobalTheory.CompanionTheory.Ar.GenOpen.gen_open E H D l Xo c _ _ Y S Ω K J y A hmono
   obtain ⟨x, hx⟩ : ∃ x : Sp Ω ⟶ Xo.XF c, A.ξ ≫ A.f = x ≫ Y.j := ⟨spMap A.fn ≫ x₀, by
     rw [Category.assoc, ← hx₀]
     exact A.fn_over⟩
@@ -60,9 +62,9 @@ theorem stHt : SquareStatements.StHt := by
       rw [← Category.assoc, hj e, hj (A.ρ a e), A.act a e, Over.comp_left]
       simp only [Category.assoc]
     · rw [Over.w, Over.w]
-  obtain ⟨jd, hjd⟩ := GlobalTheory.T.dual_map_of_field_extension Ω Ω' i A.Li A'.Li j hext hspan
+  obtain ⟨jd, hjd⟩ := _root_.GlobalTheory.CompanionTheory.Ar.DualExt.dual_ext Ω Ω' i A.Li A'.Li j hext hspan
   have hW : ∀ s, eigSp A'.ρ ((i.comp A.cst).comp (labelEmb c s)) = Submodule.span Ω' (j '' (A.Vgen s : Set A.Li)) := fun s =>
-    GlobalTheory.T.eigenspace_field_extension E Ω Ω' i A.Li A'.Li j A.ρ A'.ρ (A.emb s) hext hspan hρj
+    _root_.GlobalTheory.CompanionTheory.Ar.EigExt.eigSp_ext E Ω Ω' i A.Li A'.Li j A.ρ A'.ρ (A.emb s) hext hspan hρj
   have hdm := GlobalTheory.CompanionTheory.Ar.RegAtDom.regAt_dominates A.X Ω A.ξ A'.X Ω' A'.ξ h i hdom
   have hsp : ∀ p' : Cpt A'.ξ, genPt A.ξ ⤳ h p'.1 := fun p' => (hdm p').choose
   have hreg : ∀ (p' : Cpt A'.ξ), ∀ a ∈ regAt A.ξ ⟨h p'.1, hsp p'⟩, i a ∈ regAt A'.ξ p' := fun p' => (hdm p').choose_spec.1
@@ -82,14 +84,14 @@ theorem stHt : SquareStatements.StHt := by
   have hic : ∀ q : Cpt A.ξ, IsIntegrallyClosed (A.X.presheaf.stalk q.1) := fun q => (A.normal q.1).2
   have hic' : ∀ q : Cpt A'.ξ, IsIntegrallyClosed (A'.X.presheaf.stalk q.1) := fun q => (A'.normal q.1).2
   have htors : ∀ p ∈ S, FullTorsion A'.t.G A'.ξ (p ^ A.R p) := fun p hp =>
-    GlobalTheory.T.full_torsion_pullback A.X A'.X Ω Ω' A.ξ A'.ξ h i A.t.G A'.t.G mh.φ _ hdom mh.cart (A.tors p hp)
+    _root_.GlobalTheory.CompanionTheory.Ar.HcptPull.fullTorsion_of_dominates A.X A'.X Ω Ω' A.ξ A'.ξ h i A.t.G A'.t.G mh.φ _ hdom mh.cart (A.tors p hp)
 
   have hω : ∀ p ∈ S, ∀ p' : Cpt A'.ξ, 0 < D.p + D.q → A'.M.htOm A'.t.PP.L (p ^ A.R p) p' =
       Submodule.span (regAt A'.ξ p') (jd '' (A.M.htOm A.t.PP.L (p ^ A.R p) ⟨h p'.1, hsp p'⟩ : Set _)) := by
     intro p hp p' hpos
     have hN : 0 < p ^ A.R p := pow_pos (A.S_prime p hp).pos _
-    obtain ⟨s0, o, ⟨m0⟩⟩ := GlobalTheory.T.abelian_scheme_point_object E H D l Xo c _ _ Y A.X A.f A.t A.m Ω A.ξ x hx
-    obtain ⟨s0', o', ⟨m0'⟩⟩ := GlobalTheory.T.abelian_scheme_point_object E H D l Xo c _ _ Y A'.X A'.f A'.t A'.m Ω' A'.ξ (spMap i ≫ x) (by
+    obtain ⟨s0, o, ⟨m0⟩⟩ := _root_.GlobalTheory.CompanionTheory.Ar.ObjAt.exists_obj_at E H D l Xo c _ _ Y A.X A.f A.t A.m Ω A.ξ x hx
+    obtain ⟨s0', o', ⟨m0'⟩⟩ := _root_.GlobalTheory.CompanionTheory.Ar.ObjAt.exists_obj_at E H D l Xo c _ _ Y A'.X A'.f A'.t A'.m Ω' A'.ξ (spMap i ≫ x) (by
       rw [hf, ← Category.assoc, hdom, Category.assoc, hx, Category.assoc])
     have hc1 : IsIntegrallyClosed (A.X.presheaf.stalk (h p'.1)) := hic ⟨h p'.1, hsp p'⟩
     have hn1 : IsNoetherianRing (A.X.presheaf.stalk (h p'.1)) := noeth_stalk hgen ⟨h p'.1, hsp p'⟩ (hnoeth _)
@@ -111,7 +113,7 @@ theorem stHt : SquareStatements.StHt := by
   have e1 : A'.Vgen s = eigSp A'.ρ ((i.comp A.cst).comp (labelEmb c s)) := by
     rw [← hcst]; rfl
   rw [hR]
-  exact GlobalTheory.T.lattice_flag_field_extension A.X A'.X Ω Ω' A.ξ A'.ξ h i A.Li A'.Li j jd (A.Vgen s) _ (A.M.htOm A.t.PP.L (p ^ A.R p))
+  exact _root_.GlobalTheory.CompanionTheory.Ar.VbPull.isVBOn_dual_pull A.X A'.X Ω Ω' A.ξ A'.ξ h i A.Li A'.Li j jd (A.Vgen s) _ (A.M.htOm A.t.PP.L (p ^ A.R p))
     (A'.M.htOm A'.t.PP.L (p ^ A.R p)) {q | InFibre A.ξ p q} {q | InFibre A'.ξ p q} (labelRk D s) hdom hgen' hext hjd
     (e1.trans (hW s)) (hvb p hp s) fun p' hf => ⟨hsp p', (hfib p p').1 hf, fun hr => hω p hp p' (hpos s hr)⟩
 

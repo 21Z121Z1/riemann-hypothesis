@@ -1,17 +1,17 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsApprox
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HeisenbergFinitePointReadsClassicalTranslation
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IndexStandardInfSkewThetaLatticeEqAbsNormPow
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConjSmulConjSmul
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.AdmissibleAtOfIrreducibleTame
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1646
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1650
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1529
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1546
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0246
 public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.SelfDualLatticePairingDual
 public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.IsSelfDualCLatFrame
-public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.SmulMemLatO
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IdempotentSumInfPartIntegralOneSubMem
+public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.Bundle0058
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0470
 public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.FirstStandardPairMemberHasThetaFunction
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.RationalFinitePartMemHomLatticeCompletionIff
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0291
 public import Formalism.LocalToGlobal.IndefiniteReal.FinitePlaces.FinPartDetAtInvInt
 
 @[expose] public section
@@ -338,7 +338,7 @@ theorem mem_of_char_rat {ψ : AddChar (AF D.host.F) ℂ} (hψ : IsStdChar D ψ (
       rfl
   rw [e]
   refine add_mem (finTens_mem_latO (one_mem_intAf _) ?_) hu₀
-  refine (GlobalTheory.T.rationalHermitianRankOneLattice_selfDual D S T ΛS ΛT hS hT (GlobalTheory.T.exists_dual_family_selfDual_hermitianSpace D S ΛS hS) _).2 fun ℓ hℓ => ?_
+  refine (_root_.GlobalTheory.LatVac.latRat_selfDual D S T ΛS ΛT hS hT (_root_.GlobalTheory.LatVacDual.dualFamily D S ΛS hS) _).2 fun ℓ hℓ => ?_
   have hl := finTens_mem_latO (one_mem_intAf _) hℓ
   have h1 := h _ hℓ
   rw [e, symplO_add_left, ψ.map_add_eq_mul, char_sympl_eq_one hψ hS hT hu₀ hl, mul_one, symplO_finTens,

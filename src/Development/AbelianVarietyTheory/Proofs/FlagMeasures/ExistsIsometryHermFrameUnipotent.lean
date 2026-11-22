@@ -1,7 +1,7 @@
 module
 
-public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.IsFundOne
-public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.BlockAnti
+public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.Bundle0011
+public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.Bundle0009
 public import Formalism.FlagUnipotentLattices.MemOfOrthogonalAnisotropic
 public import Formalism.FormalDegreeBessel.StatementG
 public import Formalism.SharpRestriction.CuspSpanNormBounds.FractionFieldToGenericStalkAlgebraMapEq

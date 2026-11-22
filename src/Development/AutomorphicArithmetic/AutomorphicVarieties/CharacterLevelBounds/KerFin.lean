@@ -1,9 +1,9 @@
 module
 
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.CharacterLevelBounds.ShaFamMono
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.PartsSign
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.CharacterLevelBounds.RootVal
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.GaloisLibrary.SelmerTransport.KerResAb
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.Bundle0001
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.CharacterLevelBounds.Bundle0002
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.GaloisLibrary.SelmerTransport.Bundle0004
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.GaloisLibrary.SelmerTransport.QoFacts
 
 @[expose] public section

@@ -1,12 +1,15 @@
 module
 
 public import Development.AutomorphicArithmetic.Foundations.LocalLanglands.RecTTransport
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.EqOfRootCongrOfDerivUnitStatement
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FrobeniusPowApplySubPowLtOneStatement
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.NotMemSqOfDerivativeStatement
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CardQuotientEqOfPowSubSelfMemStatement
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0050
+public import Mathlib
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0657
+public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.Bundle0011
+public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.ExistsUniqueHcharOfFiniteOrder
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0037
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0004
 public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExtensionUnramifiedAtOnePlace
-public import Development.DiscreteGroups.GlobalIrreducibility.DzIneEq
+public import Development.DiscreteGroups.GlobalIrreducibility.Bundle0002
 
 @[expose] public section
 
@@ -82,7 +85,7 @@ theorem UpperTheory.exists_numberField_extension_place_frobenius_degree :
     have htζ : t ζ = ζ := hroot t ht.1 (ht.2 ζ hζA)
     exact GlobalTheory.UnrCycExt.fix_adjoin ζ hζE t htζ _ e.2
   have hφn : ∀ x : Ω, A.valuation x ≤ 1 → A.valuation ((φ ^ n) x - x ^ (q ^ n)) < 1 :=
-    GlobalTheory.T.frobenius_pow_apply_sub_pow_lt_one A q φ hφ n
+    _root_.GlobalTheory.frob_pow_apply_sub_lt_one A q φ hφ n
   have hφD : φ ^ n ∈ ReciprocityTheory.Gal.Dec (F := E) A := Subgroup.pow_mem _ hφ.1 n
   have hζQ : ζ ^ (q ^ n) = ζ := by
     rw [show q ^ n = (q ^ n - 1) + 1 by omega, pow_succ, hζ.pow_eq_one, one_mul]
@@ -134,10 +137,10 @@ theorem UpperTheory.exists_numberField_extension_place_frobenius_degree :
         ← IsScalarTower.algebraMap_apply]
     have hder' : aeval ζ' (derivative f) ∉ u.asIdeal := fun hm => hder (by
       rw [← hmap]; exact hm)
-    exact GlobalTheory.T.algebraMap_not_mem_sq_of_derivative_not_mem E L w u ζ' f hf hfζ' (GlobalTheory.UnrCycExt.adjoin_gen_eq_top E ζ hζE) hover hder' c hc
+    exact _root_.GlobalTheory.UnramSimpleGen.not_mem_sq_of_derivative E L w u ζ' f hf hfζ' (GlobalTheory.UnrCycExt.adjoin_gen_eq_top E ζ hζE) hover hder' c hc
   · show Nat.card (𝓞 L ⧸ u.asIdeal) = q ^ n
     haveI : u.asIdeal.IsMaximal := u.isMaximal
-    refine GlobalTheory.T.card_quotient_eq_of_pow_sub_self_mem' u.asIdeal (q ^ n) ζ' (by omega) ?_ ?_ ?_
+    refine _root_.GlobalTheory.card_quotient_eq_of_pow_sub_self_mem u.asIdeal (q ^ n) ζ' (by omega) ?_ ?_ ?_
     · apply Subtype.ext
       exact hζL.pow_eq_one
     · intro j hj0 hjq hm

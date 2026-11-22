@@ -2,8 +2,7 @@ module
 
 public import Development.WeilBound.CoreStatements.CompactAveragingSplitting.EigenvectorLifting.InertDef
 public import Development.WeilBound.CoreStatements.LocalThetaKernels.IwasLoc
-public import Development.WeilBound.CoreStatements.LocalThetaKernels.IwasFrame
-public import Development.WeilBound.CoreStatements.LocalThetaKernels.IwasAd
+public import Development.WeilBound.CoreStatements.LocalThetaKernels.Bundle0001
 
 @[expose] public section
 

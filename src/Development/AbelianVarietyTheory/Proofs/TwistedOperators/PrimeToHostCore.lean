@@ -1,10 +1,10 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.RealLowestKTypeCoeffSquareIntegrable
+public import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.Bundle0002
 public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IntegralTsumOfFactor
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdelicScalarBase
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.NormLiftFormsFiniteGroupAction
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0901
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0165
 
 @[expose] public section
 

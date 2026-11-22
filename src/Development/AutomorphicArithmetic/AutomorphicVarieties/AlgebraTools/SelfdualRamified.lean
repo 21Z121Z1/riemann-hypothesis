@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.AlmostSelfdual
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.SmithZeroOne
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.Bundle0012
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.Bundle0005
 
 @[expose] public section
 

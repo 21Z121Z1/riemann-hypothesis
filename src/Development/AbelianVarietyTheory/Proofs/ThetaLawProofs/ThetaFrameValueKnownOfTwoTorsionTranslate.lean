@@ -5,13 +5,13 @@ public import Development.AbelianVarietyTheory.Definitions.KeyFormula.GeomIntSel
 public import Development.AbelianVarietyTheory.Statements.FundamentalDomains.AtOfNumberField
 public import Development.AbelianVarietyTheory.Statements.ThetaLevelCharacters.MemThetaLevelCharDimZero
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.ValCalc
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.FirstCohomology.GenMove
-public import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.KeyNormalFormDetRatioTwoTorsionTranslateStatement
-public import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.ThetaFrameValueKnownOfPolarizedPullbackStatement
-public import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.DualNumberRingHomExt
-public import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.ExistsKeyPBRing
-public import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.ExistsNormalisedIsoPullbackMulByM
-public import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.ExistsNormalisingUnitSimilitudeOrigin
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.FirstCohomology.Bundle0001
+public import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.Bundle0044
+public import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.Bundle0043
+public import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.Bundle0018
+public import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.Bundle0035
+public import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.Bundle0031
+public import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.Bundle0019
 
 @[expose] public section
 
@@ -366,7 +366,7 @@ theorem known_of_translate : Out.Laws → ThetaUnifAV → ∀ (K : Type) [Field 
     rw [b]
     exact GlobalTheory.T.keyNormalFormDetRatio_twoTorsion_translate laws hU x x' p _ _ hp a
   obtain ⟨φ, hφ⟩ := polPB_of_eq hP
-  exact GlobalTheory.T.thetaFrameValueKnown_of_polarizedPullback laws K y₁ y' φ hφ k₁
+  exact _root_.GlobalTheory.KnownScale.known_of_polPB laws K y₁ y' φ hφ k₁
 
 end GlobalTheory.KnownTwist
 end

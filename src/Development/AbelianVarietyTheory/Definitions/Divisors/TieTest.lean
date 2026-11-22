@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Divisors.SlopeTestRemainingChoicesAlt
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0070
 
 @[expose] public section
 

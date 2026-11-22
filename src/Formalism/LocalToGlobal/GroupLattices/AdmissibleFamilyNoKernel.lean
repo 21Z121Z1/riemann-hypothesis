@@ -5,10 +5,9 @@ public import Formalism.SharpRestriction.GrowthBounds.LogarithmicSums
 public import Formalism.SharpRestriction.GrowthBounds.InitialMinorTransposeMemHighestWeight
 public import Formalism.SharpRestriction.GrowthBounds.BinomialPolynomialIdentities
 public import Formalism.SharpRestriction.GrowthBounds.SegmentDegree
-public import Formalism.LocalToGlobal.GroupLattices.FockModels.DualInclusionLattices
+public import Formalism.LocalToGlobal.GroupLattices.FockModels.Bundle0001
 public import Formalism.LocalToGlobal.GroupLattices.FockModels.LoBlockActComp
-public import Formalism.LocalToGlobal.GroupLattices.FockModels.MulMemRiemannRochSpaceAdd
-public import Formalism.LocalToGlobal.GroupLattices.FockModels.WeylDim
+public import Formalism.LocalToGlobal.GroupLattices.FockModels.Bundle0002
 public import Formalism.LocalToGlobal.GroupLattices.FockModels.Cartan
 public import Formalism.SharpRestriction.GrowthBounds.JointsLit
 public import Formalism.SharpRestriction.GrowthBounds.SizesAtRecord
@@ -18,11 +17,11 @@ public import Formalism.LocalToGlobal.GroupLattices.FockModels.OperatorsPreserve
 public import Formalism.LocalToGlobal.GroupLattices.FockModels.Sandwich
 public import Formalism.LocalToGlobal.GroupLattices.FockModels.FlatModels.LetterWtAnti
 public import Formalism.LocalToGlobal.GroupLattices.FockModels.TestSideFinal
-public import Formalism.SharpRestriction.GrowthBounds.MultisetValuation.PositivityConditionHolds
+public import Formalism.SharpRestriction.GrowthBounds.MultisetValuation.Bundle0002
 public import Formalism.LocalToGlobal.GroupLattices.ComparisonMaps.NpDescFOfValRatF
 public import Formalism.SharpRestriction.GrowthBounds.TruncatedChains
 public import Formalism.LocalToGlobal.GroupLattices.PendingLemmas.OrbitSumStabilizer
-public import Formalism.SharpRestriction.GrowthBounds.MultisetValuation.StmtNumFEx
+public import Formalism.SharpRestriction.GrowthBounds.MultisetValuation.Bundle0025
 public import Formalism.SharpRestriction.GrowthBounds.FockGramWindow
 public import Formalism.SharpRestriction.GrowthBounds.WittIdentPI
 public import Formalism.SharpRestriction.GrowthBounds.HermitianTensor

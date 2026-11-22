@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.WeilBound.CoreStatements.PluriharmonicCharts.IsMultiHomogMapConj
+public import Development.WeilBound.CoreStatements.PluriharmonicCharts.Bundle0021
 
 @[expose] public section
 

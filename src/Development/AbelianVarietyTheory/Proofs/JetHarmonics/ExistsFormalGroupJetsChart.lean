@@ -2,12 +2,13 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.Jets.TwoPlaces
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.TaylorDiscriminants.ConnectionKillsSeries
-public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.ExistsUniversalJetCoordinatesPullbackStatement
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.TaylorDiscriminants.Bundle0002
+public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0115
+public import Development.AbelianVarietyTheory.Definitions.Jets.JetsOnCopiesCompatibleFrames
 public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.UniversalStatement
 public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.IntegralChartFormalBiext
-public import Development.AbelianVarietyTheory.Counterexamples.LevelGroupExamples.JetTruncNotInjective
-public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.FBMapPf
+public import Development.AbelianVarietyTheory.Counterexamples.LevelGroupExamples.Bundle0001
+public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0011
 
 @[expose] public section
 
@@ -293,7 +294,7 @@ theorem GlobalTheory.integralChart_baseChange : ∀ (E : Type) [Field E] [Number
   letI := H.starRing
   obtain ⟨BT, hF, hA, -⟩ := GlobalTheory.integralChart_formalBiext E H Dw l Xo c T io y Ch
   have hU := GlobalTheory.PowGerm.univSt_holds E H Dw l Xo c T io y Ch
-  obtain ⟨z', hU', hz⟩ := GlobalTheory.T.exists_universalJetCoordinates_pullback T.V T'.V φ Ch.I.G.G t'.G mp.cm.F mp.cart _ Ch.xT hU
+  obtain ⟨z', hU', hz⟩ := _root_.GlobalTheory.UnivJetBaseChange.exists_univ_pullback T.V T'.V φ Ch.I.G.G t'.G mp.cm.F mp.cart _ Ch.xT hU
   obtain ⟨u1, u2, u3⟩ := univ_toAlg t'.G _ z' hU'
   refine ⟨Formalism.MainNotions.ModuliIntegralCharts.H1.FBMap.mapG φ BT.G, fun m => toAlg (z' m), Formalism.MainNotions.ModuliIntegralCharts.H1.FBMap.mapA φ BT.A,
     ?_, fun a => ?_, ⟨u1, u2, u3, fun m => ?_⟩, fun m a => ?_⟩

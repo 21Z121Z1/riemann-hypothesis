@@ -1,8 +1,8 @@
 module
 
-public import Formalism.LocalToGlobal.GlobalTheory.GL6.AdelicFunctionExtendsFromClasses
-public import Formalism.LocalToGlobal.GlobalTheory.GL6.DiamondPreservesRationalFormZero
-public import Formalism.LocalToGlobal.GlobalTheory.GL6.CongruenceNoKernelOfHeckeRamified
+public import Formalism.LocalToGlobal.GlobalTheory.GL6.Bundle0009
+public import Formalism.LocalToGlobal.GlobalTheory.GL6.Bundle0002
+public import Formalism.LocalToGlobal.GlobalTheory.GL6.Bundle0003
 
 @[expose] public section
 

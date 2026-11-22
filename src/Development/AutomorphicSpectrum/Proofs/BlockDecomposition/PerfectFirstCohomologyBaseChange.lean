@@ -2,18 +2,15 @@ module
 
 public import Mathlib
 public import Development.WeilBound.CoreStatements.TemperedRepresentationTheory.HodgeWedgeFields.H1CommutesBaseChange
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FlatQuotientOfUniversallyInjectiveStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LinearMapZeroOfInjectiveFullRankStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LocalFreeKernelSplittingStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LocalSplittingKernelBaseChangeStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.KernelFreeAtPrimesOfConstantRankStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.KernelBaseChangeTowerEquivStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.RetractBaseChangeKernelCompatibleStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.QuasiIsomorphismDegreeOneKernelStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CochainBaseChangeEquivalencesStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.UniversalCoefficientDegreeZeroStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.KernelEquivCohomologyOfQuasiIsomorphismStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FirstCohomologyBaseChangeOfCochainEquivsStatement
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0032
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0016
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0015
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0018
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0131
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0135
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0132
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0129
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0134
 
 @[expose] public section
 
@@ -62,7 +59,7 @@ theorem local_regular (A Q P : Type) [CommRing A] [IsLocalRing A] [AddCommGroup 
     (h3 : Module.finrank A (LinearMap.ker d) = g)
     (h4 : Module.finrank (IsLocalRing.ResidueField A) (LinearMap.ker (d.baseChange (IsLocalRing.ResidueField A))) = g) :
     ∃ r : P →ₗ[A] Q, d ∘ₗ r ∘ₗ d = d := by
-  obtain ⟨r, hidem, hfree, hfin, hrank⟩ := GlobalTheory.T.local_free_kernel_splitting A Q P d
+  obtain ⟨r, hidem, hfree, hfin, hrank⟩ := _root_.GlobalTheory.CompanionTheory.LocalSplit.exists_idempotent_of_residueField A Q P d
   refine ⟨r, ?_⟩
   have hrank' : Module.finrank A (LinearMap.ker (r ∘ₗ d)) = g := hrank.trans h4
   have hle : LinearMap.ker d ≤ LinearMap.ker (r ∘ₗ d) := fun x hx => by
@@ -74,7 +71,7 @@ theorem local_regular (A Q P : Type) [CommRing A] [IsLocalRing A] [AddCommGroup 
   have hzero : (d ∘ₗ (LinearMap.ker (r ∘ₗ d)).subtype) ∘ₗ φ = 0 := LinearMap.ext fun v => by
     change d ((b.equivFun.symm v : LinearMap.ker d) : Q) = 0
     exact LinearMap.mem_ker.mp (b.equivFun.symm v).2
-  have key := GlobalTheory.T.linear_map_zero_of_injective_full_rank A _ P g φ
+  have key := _root_.GlobalTheory.CompanionTheory.Perf.map_eq_zero_of_comp_injective_of_finrank_eq A _ P g φ
     (d ∘ₗ (LinearMap.ker (r ∘ₗ d)).subtype) hrank' hφ hzero
   ext x
   have hx : x - r (d x) ∈ LinearMap.ker (r ∘ₗ d) := by
@@ -92,9 +89,9 @@ theorem regular_of_fibres (R Q P : Type) [CommRing R] [AddCommGroup Q] [Module R
     (hfib : ∀ (k : Type) [Field k] [Algebra R k], Module.finrank k (LinearMap.ker (d.baseChange k)) = g) :
     ∃ r : P →ₗ[R] Q, d ∘ₗ r ∘ₗ d = d := by
   obtain ⟨hfin, hproj, hrank⟩ := hVB
-  apply GlobalTheory.T.local_splitting_kernel_base_change R Q P d
+  apply _root_.GlobalTheory.CompanionTheory.RegularLocal.regular_of_regular_at_maximal R Q P d
   intro p hp
-  obtain ⟨h1, h2, h3⟩ := GlobalTheory.T.kernel_free_at_primes_of_constant_rank R Q P d g hfin hproj hrank p
+  obtain ⟨h1, h2, h3⟩ := _root_.GlobalTheory.CompanionTheory.KerLocal.ker_baseChange_localization_free R Q P d g hfin hproj hrank p
   haveI : Module.Flat (Localization.AtPrime p) (Localization.AtPrime p ⊗[R] Q) :=
     Module.Flat.baseChange R _ Q
   haveI : Module.Flat (Localization.AtPrime p) (Localization.AtPrime p ⊗[R] P) :=
@@ -105,7 +102,7 @@ theorem regular_of_fibres (R Q P : Type) [CommRing R] [AddCommGroup Q] [Module R
     Module.free_of_flat_of_isLocalRing
   refine GlobalTheory.CompanionTheory.PerfectFirstCohomology.local_regular (Localization.AtPrime p) _ _
     (d.baseChange (Localization.AtPrime p)) g h1 h2 h3 ?_
-  obtain ⟨e⟩ := GlobalTheory.T.kernel_base_change_tower_equiv R (Localization.AtPrime p)
+  obtain ⟨e⟩ := _root_.GlobalTheory.CompanionTheory.PerfectFirstCohomology.ker_baseChange_tower R (Localization.AtPrime p)
     (IsLocalRing.ResidueField (Localization.AtPrime p)) Q P d
   rw [e.finrank_eq]
   exact hfib _
@@ -120,14 +117,14 @@ theorem stein_univ (R C : Type) [CommRing R] [Category.{0} C] [Finite C] [∀ T 
   haveI : SMulCommClass R Rᵐᵒᵖ M := ⟨fun r s m => smul_comm r (MulOpposite.unop s) m⟩
   obtain ⟨F', m, hF'⟩ := hS (TrivSqZeroExt R M)
   obtain ⟨E₀, E₁, E₂, h0, -, -, h01, -⟩ :=
-    GlobalTheory.T.cochain_base_change_equivalences R (TrivSqZeroExt R M) C F F' m
+    _root_.GlobalTheory.CompanionTheory.CochainBC.main R (TrivSqZeroExt R M) C F F' m
   have hone : E₀ (1 ⊗ₜ[R] (1 : GlobalTheory.CatCoh.C0 F)) = 1 := by
     rw [h0]
     funext T
     first
       | exact map_one _
       | simp
-  refine GlobalTheory.T.retract_base_change_kernel_compatible R (TrivSqZeroExt R M) M _ _ _ _
+  refine _root_.GlobalTheory.CompanionTheory.Retract.constants_of_retract R (TrivSqZeroExt R M) M _ _ _ _
     (TrivSqZeroExt.inrHom R M) (TrivSqZeroExt.sndHom R M) (GlobalTheory.CatCoh.d0 F)
     (GlobalTheory.CatCoh.d0 F') E₀ E₁ 1 (LinearMap.ext fun _ => rfl) h01 ?_ ?_
   · intro r hr
@@ -198,7 +195,7 @@ variable {F a₀ a₁ ψ₀ ψ₁ ψ₂} in
 theorem ker_equiv_H1 (c0 : ψ₁ ∘ₗ a₀ = d0 F ∘ₗ ψ₀) (c1 : ψ₂ ∘ₗ a₁ = d1 F ∘ₗ ψ₁)
     (d : (P₁ ⧸ LinearMap.range a₀) →ₗ[R] P₂) (hdπ : d ∘ₗ (LinearMap.range a₀).mkQ = a₁)
     (hp : QIsoAt a₀ a₁ (d0 F) (d1 F) ψ₁) : Nonempty (LinearMap.ker d ≃ₗ[R] H1 F) := by
-  refine GlobalTheory.T.kernel_equiv_cohomology_of_quasi_isomorphism R P₀ P₁ P₂ (P₁ ⧸ LinearMap.range a₀) _ _ _ a₀ a₁
+  refine _root_.GlobalTheory.CompanionTheory.PerfKerCoh.ker_equiv_cohomology R P₀ P₁ P₂ (P₁ ⧸ LinearMap.range a₀) _ _ _ a₀ a₁
     (LinearMap.range a₀).mkQ d (GlobalTheory.CatCoh.Z1 F)
     (LinearMap.codRestrict _ (GlobalTheory.CatCoh.d0 F) (GlobalTheory.CatCoh.commAlgFunctorCoboundaryZero_mem_cocyclesOne F))
     (GlobalTheory.CatCoh.d1 F) ψ₁ ψ₀ (Submodule.mkQ_surjective _) (LinearMap.exact_map_mkQ_range a₀) hdπ
@@ -216,7 +213,7 @@ theorem ker_equiv_base {k : Type} [CommRing k] [Algebra R k] (G : C ⥤ CommAlgC
     (d : (P₁ ⧸ LinearMap.range a₀) →ₗ[R] P₂) (hdπ : d ∘ₗ (LinearMap.range a₀).mkQ = a₁)
     (hq : QIsoAt (a₀.lTensor k) (a₁.lTensor k) ((d0 F).lTensor k) ((d1 F).lTensor k) (ψ₁.lTensor k)) :
     Nonempty (LinearMap.ker (d.baseChange k) ≃ₗ[k] H1 G) := by
-  refine GlobalTheory.T.kernel_equiv_cohomology_of_quasi_isomorphism k (k ⊗[R] P₀) (k ⊗[R] P₁) (k ⊗[R] P₂)
+  refine _root_.GlobalTheory.CompanionTheory.PerfKerCoh.ker_equiv_cohomology k (k ⊗[R] P₀) (k ⊗[R] P₁) (k ⊗[R] P₂)
     (k ⊗[R] (P₁ ⧸ LinearMap.range a₀)) _ _ _ (a₀.baseChange k) (a₁.baseChange k)
     ((LinearMap.range a₀).mkQ.baseChange k) (d.baseChange k) (GlobalTheory.CatCoh.Z1 G)
     (LinearMap.codRestrict _ (GlobalTheory.CatCoh.d0 G) (GlobalTheory.CatCoh.commAlgFunctorCoboundaryZero_mem_cocyclesOne G))
@@ -263,7 +260,7 @@ theorem core [Finite C] [∀ T T' : C, Finite (T ⟶ T')] [Module.Finite R P₀]
     funext T T' φ
     rw [GlobalTheory.CatCoh.amitsur_d0_apply]
     simp
-  obtain ⟨u, hu, hU⟩ := GlobalTheory.T.universal_coefficient_degree_zero R _ _ P₀ P₁
+  obtain ⟨u, hu, hU⟩ := _root_.GlobalTheory.CompanionTheory.PerfUnit.exists_unit_on_model R _ _ P₀ P₁
     (GlobalTheory.CatCoh.d0 F) a₀ ψ₀ ψ₁ 1 c0 h1zero hq0
     (fun M _ _ => GlobalTheory.CompanionTheory.PerfectFirstCohomology.stein_univ R C F hS M)
   haveI : Module.Projective R (P₁ ⧸ LinearMap.range a₀) :=
@@ -282,7 +279,7 @@ theorem core [Finite C] [∀ T T' : C, Finite (T ⟶ T')] [Module.Finite R P₀]
   have hfibd : ∀ (k : Type) [Field k] [Algebra R k], Module.finrank k (LinearMap.ker (d.baseChange k)) = g := by
     intro k _ _
     obtain ⟨F', m, hg⟩ := hfib k
-    obtain ⟨E₀, E₁, E₂, -, -, -, h01, h12⟩ := GlobalTheory.T.cochain_base_change_equivalences R k C F F' m
+    obtain ⟨E₀, E₁, E₂, -, -, -, h01, h12⟩ := _root_.GlobalTheory.CompanionTheory.CochainBC.main R k C F F' m
     obtain ⟨e'⟩ := GlobalTheory.CompanionTheory.PerfectFirstCohomology.ker_equiv_base F' E₀ E₁ E₂ h01 h12 c0 c1 d hdπ (hq' k)
     rw [e'.finrank_eq, hg]
   obtain ⟨r', hr'⟩ := GlobalTheory.CompanionTheory.PerfectFirstCohomology.regular_of_fibres R _ P₂ d g hVBd hfibd
@@ -295,8 +292,8 @@ theorem core [Finite C] [∀ T T' : C, Finite (T ⟶ T')] [Module.Finite R P₀]
     simp only [LinearMap.comp_apply] at h₁ h₂ ⊢
     rw [h₁, h₂]
   intro R' _ _ F' m
-  obtain ⟨E₀, E₁, E₂, -, hE₁, -, h01, h12⟩ := GlobalTheory.T.cochain_base_change_equivalences R R' C F F' m
-  obtain ⟨H₁, H₂⟩ := GlobalTheory.T.quasi_isomorphism_degree_one_kernel R _ _ _ P₀ P₁ P₂
+  obtain ⟨E₀, E₁, E₂, -, hE₁, -, h01, h12⟩ := _root_.GlobalTheory.CompanionTheory.CochainBC.main R R' C F F' m
+  obtain ⟨H₁, H₂⟩ := _root_.GlobalTheory.CompanionTheory.PerfectFirstCohomologyUniversal.univ_coeff R _ _ _ P₀ P₁ P₂
     (GlobalTheory.CatCoh.d0 F) (GlobalTheory.CatCoh.d1 F) a₀ a₁ ψ₀ ψ₁ ψ₂ r
     (GlobalTheory.CatCoh.Z1 F)
     (LinearMap.codRestrict _ (GlobalTheory.CatCoh.d0 F) (GlobalTheory.CatCoh.commAlgFunctorCoboundaryZero_mem_cocyclesOne F))

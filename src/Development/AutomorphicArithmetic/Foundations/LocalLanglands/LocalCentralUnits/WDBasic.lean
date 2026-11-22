@@ -1,9 +1,9 @@
 module
 
 public import Development.AutomorphicArithmetic.Foundations.LocalLanglands.RecTTransport
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.RootsCharpolySmulMatrix
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.CharpolyDualTamePart
-public import Formalism.LocalToGlobal.NormalizedHeckeFactors.ValLeOneOfIsIntegral
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0037
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0278
+public import Formalism.LocalToGlobal.NormalizedHeckeFactors.Bundle0005
 
 @[expose] public section
 

@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StCurveNormalisationLength
-public import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StNormalModel
+public import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.Bundle0007
 
 @[expose] public section
 

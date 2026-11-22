@@ -1,6 +1,6 @@
 module
 
-public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.MassComputations.MapSubOneMulVec
+public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.MassComputations.Bundle0011
 public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.MassComputations.MeasurePrjFPreimage
 
 @[expose] public section

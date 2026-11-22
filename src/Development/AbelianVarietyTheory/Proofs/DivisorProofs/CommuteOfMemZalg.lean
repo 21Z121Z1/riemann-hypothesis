@@ -2,8 +2,8 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.Divisors.IsSquareIntegrableIffMemL2
-public import Development.AbelianVarietyTheory.Definitions.Divisors.CentralNilGL
-public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.LanglandsSquareIntegrable
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0019
+public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.Bundle0017
 
 @[expose] public section
 

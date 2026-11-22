@@ -1,8 +1,8 @@
 module
 
 public import Development.WeilBound.RepresentationTheoryGL.CasimirAlgebra.KugaCoordinates.IsStarRep
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GelfandInvariantsCentralCharacter
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.GelfValTwoEqCvalR
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1106
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0142
 
 @[expose] public section
 

@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Formalism.GelfandTransference.Statement
+public import Formalism.GelfandTransference.Bundle0001
 public import Lemmata.DetNormLeProdRows.DetNormLeProdRows
 
 @[expose] public section

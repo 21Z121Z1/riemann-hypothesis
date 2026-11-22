@@ -5,7 +5,7 @@ public import Formalism.SharpRestriction.LevelLetterCocycles.LocalSituation
 public import Formalism.SharpRestriction.LevelLetterCocycles.QuotientHomNonvanishingBound
 public import Formalism.LocalRingCardinality.RankBoundMonotoneInDimension
 public import Formalism.FrobeniusOrbits.HostCorollaries
-public import Development.AutomorphicArithmetic.PrimeDiscriminants.CycImage
+public import Development.AutomorphicArithmetic.PrimeDiscriminants.Bundle0003
 
 @[expose] public section
 

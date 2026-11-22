@@ -1,14 +1,15 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FlipAtEq
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BlockV
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsDepthSplitThetaBigEqSmallBlockTranslateStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DatumPhiASplitPlaceTransportEqStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaTripleSquareSplitPlaceCharacterEqLocalGridStatement
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.PartialFourierSumInverseOfLatticeDepth
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1601
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1678
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1766
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1636
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1765
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1720
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0461
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ValuationLeOneOfMem
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MemMatLatSmulBlockLat
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0271
 
 @[expose] public section
 
@@ -50,11 +51,11 @@ theorem GlobalTheory.PureMatch.pure_match : ∀ {D : D7} {T : Type} {L : LevCh D
     exact Ideal.mul_mem_right _ _ hmem
   have hψ := Good.hasConductor_psiAt W hb
   have hϖv : IsUnif (GlobalTheory.IndefiniteRowSideFullHecke.WeilTensorModels.unifAt v) := (GlobalTheory.SplitFlip.exists_isUnif (k := Fv D.host.F v)).choose_spec
-  obtain ⟨hν, hα⟩ := GlobalTheory.T.thetaTripleSquare_splitPlace_character_eq_localGrid hL W M t i j e Bs Γ X h w v hv (Bs.τ ⟨v, hP⟩) hτ
-  obtain ⟨m, hm⟩ := GlobalTheory.T.exists_depth_splitThetaBig_eq_small_blockTranslate (Fv D.host.F v) (spW G i j).rank (Fin (spW₁ G i j).rank) (Fin ((spW G i j).rank + (spW₁ G i j).rank))
+  obtain ⟨hν, hα⟩ := _root_.GlobalTheory.PureMatch.chrW_triple_split_nu hL W M t i j e Bs Γ X h w v hv (Bs.τ ⟨v, hP⟩) hτ
+  obtain ⟨m, hm⟩ := _root_.GlobalTheory.PureMatch.exists_depth_bigP_eq_smallP (Fv D.host.F v) (spW G i j).rank (Fin (spW₁ G i j).rank) (Fin ((spW G i j).rank + (spW₁ G i j).rank))
     (haarVol (KO _ (Fin (spW₁ G i j).rank))) finSumFinEquiv (GlobalTheory.IndefiniteRowSideFullHecke.WeilTensorModels.chrW X.ν (Bs.τ ⟨v, hP⟩))
     (GlobalTheory.IndefiniteRowSideFullHecke.WeilTensorModels.chrW X.β (Bs.τ ⟨v, hP⟩)) (GlobalTheory.IndefiniteRowSideFullHecke.WeilTensorModels.unifAt v) (blockV e) g₀ c₀ Ψ hΨ hϖv
-  obtain ⟨μ, hμ, σ', hphi, hdep⟩ := GlobalTheory.T.datumPhiA_splitPlace_transport_eq hL t i j e w hw v hv (Bs.τ ⟨v, hP⟩) hτ (max (2 * m) (depthAt G w))
+  obtain ⟨μ, hμ, σ', hphi, hdep⟩ := _root_.GlobalTheory.PureMatch.phiA_transport_split_place hL t i j e w hw v hv (Bs.τ ⟨v, hP⟩) hτ (max (2 * m) (depthAt G w))
   let K₁ : GL (Fin (spV G i j).rank) (Fv D.host.F v) := diagGL fun _ => GlobalTheory.IndefiniteRowSideFullHecke.WeilTensorModels.unifAt v ^ m
   let K₂ : GL (Fin (spV₁ G i j).rank) (Fv D.host.F v) := diagGL fun _ => (GlobalTheory.IndefiniteRowSideFullHecke.WeilTensorModels.unifAt v ^ m)⁻¹
   obtain ⟨Ξ, hΞ, heq⟩ := hm _ (le_max_left _ _) μ σ' (s K₁ K₂) (hs K₁ K₂)

@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import GroundTheory.HeightsAndTheta.Heights.Regularisation.ToPotentialChartsChartFun
+public import GroundTheory.HeightsAndTheta.Heights.Regularisation.Bundle0003
 
 @[expose] public section
 

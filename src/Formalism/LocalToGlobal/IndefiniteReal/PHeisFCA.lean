@@ -1,8 +1,8 @@
 module
 
-public import Formalism.LocalToGlobal.IndefiniteReal.IsWeilDatum
+public import Formalism.LocalToGlobal.IndefiniteReal.Bundle0011
 public import Formalism.LocalToGlobal.Columns.RecLevelTop
-public import Formalism.LocalToGlobal.GlobalTheory.GL1.CompactFixesLattice.ExistsDenOfIsCompactAdele
+public import Formalism.LocalToGlobal.GlobalTheory.GL1.CompactFixesLattice.Bundle0001
 
 @[expose] public section
 

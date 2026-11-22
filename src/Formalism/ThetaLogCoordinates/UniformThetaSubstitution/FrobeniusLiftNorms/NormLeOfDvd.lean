@@ -3,7 +3,7 @@ module
 public import Mathlib
 public import Formalism.ThetaLogCoordinates.UniformThetaSubstitution.StatementE
 public import Formalism.GaussJetBounds.GaussJetProofs.ConstantCoeffAevalLinP
-public import Formalism.GaussJetBounds.GaussJetProofs.NormNatCastEqPowPadicValNat
+public import Formalism.GaussJetBounds.GaussJetProofs.Bundle0002
 
 @[expose] public section
 

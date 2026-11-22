@@ -3,7 +3,7 @@ module
 public import Formalism.GradedWeylDivisibility.FinalD
 public import Formalism.GradedWeylDivisibility.StatementE
 public import Formalism.GradedWeylDivisibility.FockSpaceTableaux.FockQHW
-public import Formalism.PieriBlockIdeals.StatementLD
+public import Formalism.PieriBlockIdeals.Bundle0003
 public import Formalism.PieriBlockIdeals.PieriColumnMinors.DividedPowerZeroZeroVector
 
 @[expose] public section

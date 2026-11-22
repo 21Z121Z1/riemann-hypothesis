@@ -1,24 +1,24 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.JEvExists
-public import Formalism.LocalToGlobal.UnitaryNorms.CharTied
-public import Formalism.LocalRingCardinality.DataKap
-public import Formalism.LocalToGlobal.ProjectiveLattices.HasDataCondition
-public import Formalism.LocalToGlobal.ProjectiveLattices.RecCond
-public import Formalism.LocalToGlobal.ProjectiveLattices.ParCanon
+public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.Bundle0012
+public import Formalism.LocalToGlobal.UnitaryNorms.Bundle0006
+public import Formalism.LocalRingCardinality.Bundle0004
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0028
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0032
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0031
 public import Formalism.LocalToGlobal.ProjectiveLattices.ExistsParameterConditions
-public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.ThExprUniqOfChartIndep2
+public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0007
 public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.DsExistsOfDiscreteSeriesExists
-public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.ExistsNormLeHeightPow
-public import Development.AbelianVarietyTheory.Definitions.Divisors.GenReads
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.OneMapOfOfExtends
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.OscillatorModelsCompatible
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsCharField
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsGeometricHalfRealisationGeometricAction
-public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.NormalFam
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsUnitModulusConstantsEquivariantDictionaryStatement
-public import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.EmbeddingsDifferOnInteger
+public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.Bundle0007
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0034
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1656
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1312
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0431
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0223
+public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.Bundle0015
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1848
+public import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.Bundle0076
 
 @[expose] public section
 
@@ -409,7 +409,7 @@ theorem exists_serOf (hR : PreChar R) (hT : TieIn T R κ v₀) (hio : IoExt R) (
       h3, h4, h5, h6, h7, h8, h9, h10, h11⟩
     exact h1.v0
   obtain ⟨cc, -, u, -, h1, h2, h3⟩ :=
-    GlobalTheory.T.exists_unitModulus_constants_equivariant_dictionary GlobalTheory.ChartFree.chartIndep D G Pl0 T0 A T (topR T R κ v₀) F κ v₀ hF hT' hio i Tp tup _ hM'
+    _root_.GlobalTheory.AdTh.exists_ccIs_equivAt_serOf_oneMapRow_core GlobalTheory.ChartFree.chartIndep D G Pl0 T0 A T (topR T R κ v₀) F κ v₀ hF hT' hio i Tp tup _ hM'
   exact ⟨u • cc, h1, h2, h3⟩
 
 end Weak

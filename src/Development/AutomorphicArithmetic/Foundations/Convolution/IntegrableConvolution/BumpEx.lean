@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicArithmetic.Foundations.Convolution.IntegrableConvolution.TensSmooth
+public import Development.AutomorphicArithmetic.Foundations.Convolution.IntegrableConvolution.Bundle0004
 public import GroundTheory.AutomorphicForms.L2LocalComponents.ArchBump
 public import GroundTheory.AutomorphicForms.CuspidalProjection.OrthogonalProjectionOntoCompSubtypeL
 

@@ -1,6 +1,6 @@
 module
 
-public import Formalism.SharpRestriction.GrowthBounds.SegmentDegree.OldestLetterInSegment
+public import Formalism.SharpRestriction.GrowthBounds.SegmentDegree.Bundle0013
 
 @[expose] public section
 

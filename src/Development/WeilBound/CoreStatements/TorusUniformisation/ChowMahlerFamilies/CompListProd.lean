@@ -2,12 +2,12 @@ module
 
 public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.ToFirst
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.UniformisationConclusion
-public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.GermDJet
-public import Development.WeilBound.CoreStatements.HodgeTatePoints.HtatLieBc
+public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0009
+public import Development.WeilBound.CoreStatements.HodgeTatePoints.Bundle0050
 public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsLieModel
-public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.ChartJetTrD
-public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.FBMapPf
-public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.FBIdLB
+public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0019
+public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0011
+public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0010
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.ValCalc
 
 @[expose] public section

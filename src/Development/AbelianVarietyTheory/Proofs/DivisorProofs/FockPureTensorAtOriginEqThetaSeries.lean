@@ -1,17 +1,17 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Divisors.PerCEmb
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0024
 public import Formalism.LocalToGlobal.IndefiniteReal.ThPinsR
-public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.AnnihilationCreationPeriodCoordinates
-public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.FockPolynomialVectorOriginEqPolyDeriv
-public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.StdCharFinitePartRationalEqExpTrace
-public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.EqZeroOfLintegralEqZero
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HermCColMulVec
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HxOfIsONFr
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PsiHalfSymplecticOrthonormalFrameStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CplxOfFrame
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThAHeisEntireLinearInjective
+public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.Bundle0051
+public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.Bundle0053
+public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.Bundle0062
+public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.Bundle0065
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0856
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0854
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0862
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0846
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0865
 
 @[expose] public section
 
@@ -141,7 +141,7 @@ theorem dRho_eq (hψ : IsStdChar D ψ (-1)) (hθ : IsInfFam θ) (hV : V.gram = 1
         (-(Real.pi * ∑ k, hx X bas idx x (u k) (zOf θ V W hr X idx x w k)) * Φ (zOf θ V W hr X idx x w) +
           fderiv ℝ Φ (zOf θ V W hr X idx x w) u) := by
   obtain ⟨-, hadd, hline, -⟩ := GlobalTheory.AdTh.RealCoord.zOf_coordinates D ψ θ V W r g hr X bas idx hψ hθ hV hn hM hS x
-  have hsym := GlobalTheory.T.psi_halfSymplectic_orthonormalFrame D ψ θ V W r g hr X bas idx hψ hθ hV hn hM hS x hx0
+  have hsym := _root_.GlobalTheory.AdThSympl.psi_symplOH_eq_of_isONFr D ψ θ V W r g hr X bas idx hψ hθ hV hn hM hS x hx0
   have hs := (GlobalTheory.Dict.hx_laws _ _ X g bas idx V.rank hS hn _ hd).1
   rw [← (GlobalTheory.Ker.HeisDeriv.hasDerivAt_translate X bas idx x hs Φ hΦ (zOf θ V W hr X idx x w) u).deriv,
     Formalism.IndefR.Datum.dRho]

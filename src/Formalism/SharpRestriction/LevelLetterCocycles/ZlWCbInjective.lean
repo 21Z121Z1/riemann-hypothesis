@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Formalism.SharpRestriction.LevelLetterCocycles.InvariantsIsoOfGenerators
+public import Formalism.SharpRestriction.LevelLetterCocycles.Bundle0016
 
 @[expose] public section
 

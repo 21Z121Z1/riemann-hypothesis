@@ -1,20 +1,19 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.EigLat
-public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsCocharLie
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.Bundle0004
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.IsGrpPullback
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.SABBaseChangeSt
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.BCTools
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.SabComp
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.SabPull
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LieModelExistsUniqueSemilinear
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LieModelPullbackEquivalence
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LieModelFunctorialMap
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.Bundle0006
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.Bundle0007
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0034
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0028
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0014
 public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsLieModel
 public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.IsExcisionNbhdAway
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.TangentVectorExtendsDvrStatement
-public import Development.AbelianVarietyTheory.Proofs.CoherentCohomologyProofs.ExistsUniqueHomExtensionSemiAbelian
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0141
+public import Development.AbelianVarietyTheory.Proofs.CoherentCohomologyProofs.Bundle0030
 
 @[expose] public section
 
@@ -266,7 +265,7 @@ theorem hom_maps_lie : ∀ (O K : Type) [CommRing O] [IsDedekindDomain O] [Field
         (N'.pt (D (j e))) (N'.tan _) ?_
       · rw [hMK, ← hjj, lifts_id _ _ _ _ (hjT e), ← Category.assoc, ← spMap_dualMap_comp, hcP]
       · rw [← hD, hMK']
-    obtain ⟨e', he'⟩ := GlobalTheory.T.tangent_vector_extends_dvr O K (Sp O) (𝟙 _) G' E' M' (N'.pt (D (j e))) (N'.tan _) hloc
+    obtain ⟨e', he'⟩ := _root_.GlobalTheory.CompanionTheory.Ar.lieModel_lifts_of_local O K (Sp O) (𝟙 _) G' E' M' (N'.pt (D (j e))) (N'.tan _) hloc
     have he'' := lifts_id _ _ _ _ he'
     rw [hj''] at he''
     exact ⟨e', N'.inj (Over.OverMorphism.ext he'').symm⟩

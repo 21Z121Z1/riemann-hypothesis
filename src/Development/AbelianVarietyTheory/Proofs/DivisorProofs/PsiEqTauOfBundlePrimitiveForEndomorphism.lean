@@ -4,22 +4,22 @@ public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.Divisors.TateProductRigidificationTrivial
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.UniformisationConclusion
 public import Development.AbelianVarietyTheory.Definitions.Degenerations.AdmissibleBaseOfCompleteDvr
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsRescalePsiW0
-public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.PsiFunctionEqThetaOfPrimitiveLineBundle
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2840
+public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.Bundle0126
 public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.UnivIdentity
 public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.FrameSqEqOfSymmetricThetaElement
-public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.LinearUniformisationTorsionMapIsLinear
-public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ExistsGenMulPullPowUnif
-public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.UniformisationTorsionIdentificationWithPairing
-public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.ExistsThetaOfField
-public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.AllSixAbelianSchemeLawsHold
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.FirstCohomology.GenProd
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.DiscreteValuationRings.TWFinal
+public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.Bundle0134
+public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.Bundle0048
+public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.Bundle0128
+public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0151
+public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.Bundle0131
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.FirstCohomology.Bundle0002
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.DiscreteValuationRings.Bundle0014
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.DiscreteValuationRings.RepsXSt
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsSymmetricThetaElementLevelFourSquareStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PolarisationBundleSymmetricPullbackOfUniformisatStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SymmetrySignsTwoTorsionRelationOfLbIsoStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PsiEqTauFromSignRelationFourTorsionStatement
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2886
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2867
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2903
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2901
 
 @[expose] public section
 
@@ -138,7 +138,7 @@ theorem pull_val : AllUF fun {R} _ _ {_} {D} {A} {G} _ _ U F _ _ => ∀ (E : End
   have H := (GlobalTheory.T.expansion_pullback_section_endomorphism hL R I hI D A G hG U F E hE ν 1 le_rfl hν ⟨β, hβ⟩).2 w₀ ρ hw₀ _ _ (lift_snd _ _) (lift_fst _ _)
     rfl α hα hαn t t' s s' ht ht' htt κ hκ
   obtain ⟨g, rfl⟩ := (gt_onto_divisible_kernel hL R I hI D F).1 b
-  obtain ⟨g', hg', -⟩ := (GlobalTheory.T.uniformizationEndomorphism_calculus hL R I hI D A G hG U F E E E).1 g
+  obtain ⟨g', hg', -⟩ := (_root_.GlobalTheory.EndCalc.end_calculus hL R I hI D A G hG U F E E E).1 g
   obtain ⟨w', hw'⟩ := (coef_basic R D.toPre F ν g).1
   obtain ⟨w, hw, hv⟩ := exists_gen D.toPre.P.isLB (φ' := DegPre.lineφ D.toPre F g'.b) (ε' := DegPre.lineε 1)
     (fun V _ h => by
@@ -291,11 +291,11 @@ theorem exists_act : AllUF fun {R} _ _ {_} {D} {A} {G} _ _ U F _ _ => ∀ (O : T
   intro R _ _ _ I hI D A G _ _ hG U F _ _ _ O _ _ _ o oA oG hlin hadj k hk p x hx a
   have hL := GlobalTheory.firstFiveLaws
   have hT := GlobalTheory.twistBaseChange
-  obtain ⟨E, eG, eA, -, -, eact⟩ := GlobalTheory.T.exists_uniformizationEndomorphism_of_linear hL R I hI D A G hG U O o oA oG hlin a
-  obtain ⟨E', eG', -, -, eh', -⟩ := GlobalTheory.T.exists_uniformizationEndomorphism_of_linear hL R I hI D A G hG U O o oA oG hlin (star a)
-  obtain ⟨b₁, b₂⟩ := GlobalTheory.T.uniformisation_adjoint_endomorphisms_commute hL (twistBCSpan_of hT) TWM.vRatioGt (TWM.tw_of_laws hL.1 hT) (UUA.uu hL.1 hT) R I hI D A G hG U F E E'
+  obtain ⟨E, eG, eA, -, -, eact⟩ := _root_.GlobalTheory.UT.OLinEnd.main hL R I hI D A G hG U O o oA oG hlin a
+  obtain ⟨E', eG', -, -, eh', -⟩ := _root_.GlobalTheory.UT.OLinEnd.main hL R I hI D A G hG U O o oA oG hlin (star a)
+  obtain ⟨b₁, b₂⟩ := _root_.GlobalTheory.Balanced.main hL (twistBCSpan_of hT) TWM.vRatioGt (TWM.tw_of_laws hL.1 hT) (UUA.uu hL.1 hT) R I hI D A G hG U F E E'
     (by rw [eG, eG']; exact hadj a)
-  obtain ⟨ex, add, -⟩ := GlobalTheory.T.uniformizationEndomorphism_calculus hL R I hI D A G hG U F E E E
+  obtain ⟨ex, add, -⟩ := _root_.GlobalTheory.EndCalc.end_calculus hL R I hI D A G hG U F E E E
   choose f hf _ using ex
   letI := TorusExt.gtGroup D.toPre F
   let φ : GtPtF D.toPre F →+ GtPtF D.toPre F := AddMonoidHom.mk' f fun g g' =>
@@ -312,7 +312,7 @@ theorem psi_eq_tau_of_bundle_primitive_for_endomorphism : ∀ (R : Type) [CommRi
   have := o.onB.hom w
   have := oA.hom w
   let F := AlgebraicClosure (FractionRing R)
-  obtain ⟨u₀, hu₀⟩ := GlobalTheory.T.polarisationBundle_symmetric_pullback_of_uniformisation R _ hR.1 D A G hG U O o oA oG hlin w hprim
+  obtain ⟨u₀, hu₀⟩ := _root_.GlobalTheory.PrimDescent.isPrim_of_unif R _ hR.1 D A G hG U O o oA oG hlin w hprim
   obtain ⟨u, hu, hn⟩ := GlobalTheory.PsiRescale.exists_normalised D.toPre.P.isLB (o.onB.act w) u₀ hu₀
   obtain ⟨σ, hσ, nσ, vσ⟩ := GlobalTheory.T.symmetry_signs_two_torsion_relation_of_lbIso R _ hR.1 D A G hG U O o oA oG hlin w hprim
   obtain ⟨gam, hgam, key⟩ := sign_eq R _ hR.1 D A G hG U F

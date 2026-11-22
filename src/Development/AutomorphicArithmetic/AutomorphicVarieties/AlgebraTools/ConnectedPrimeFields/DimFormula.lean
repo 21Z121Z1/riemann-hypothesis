@@ -3,7 +3,7 @@ module
 public import Mathlib
 public import ReciprocityTheory.CommutativeAlgebra.ChainConnInDim
 public import ReciprocityTheory.CommutativeAlgebra.SaturatedChains.IsSaturatedChain
-public import ReciprocityTheory.CommutativeAlgebra.SaturatedChains.Integral
+public import ReciprocityTheory.CommutativeAlgebra.SaturatedChains.Bundle0001
 public import ReciprocityTheory.CommutativeAlgebra.CohenMacaulay.LocDim
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.ConnectedPrimeFields.IsWeaklyRegularPairModOneLeft
 

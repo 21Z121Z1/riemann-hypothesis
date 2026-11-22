@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import GroundTheory.GlobalFields.TateThesis.ChebotarevCount
+public import GroundTheory.GlobalFields.TateThesis.Bundle0013
 public import GroundTheory.GlobalFields.TateThesis.ChebotarevAbelian
 public import GroundTheory.GlobalFields.TateThesis.DegreeOneDensity
 

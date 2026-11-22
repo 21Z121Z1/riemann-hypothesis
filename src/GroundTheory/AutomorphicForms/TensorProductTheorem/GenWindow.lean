@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import GroundTheory.AutomorphicForms.TensorProductTheorem.Operators
+public import GroundTheory.AutomorphicForms.TensorProductTheorem.Bundle0001
 
 @[expose] public section
 

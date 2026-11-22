@@ -3,7 +3,7 @@ module
 public import Mathlib
 public import Formalism.LocalToGlobal.SiegelLatticeTheory.ClosedLocalOrbits.TermLoc
 public import Formalism.LocalToGlobal.SiegelLatticeTheory.SiegelMassRatios.GramJoint
-public import Formalism.LocalRingCardinality.IntCastDvdOfDvdIntegers
+public import Formalism.LocalRingCardinality.Bundle0001
 public import Formalism.LocalToGlobal.SiegelLatticeTheory.EFSymmCont
 
 @[expose] public section

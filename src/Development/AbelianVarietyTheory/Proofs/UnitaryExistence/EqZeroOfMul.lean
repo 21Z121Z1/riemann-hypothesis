@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Formalism.LocalToGlobal.ProjectiveLattices.ThClassPinsRec
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0028
 public import Development.AbelianVarietyTheory.BlockTheory.ExistenceTori.CoefficientSpaceWeights
 public import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.ThetaLetterEquivConjugate
 public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.GeneralLinearGroupCharEqOneOfDetEqOne

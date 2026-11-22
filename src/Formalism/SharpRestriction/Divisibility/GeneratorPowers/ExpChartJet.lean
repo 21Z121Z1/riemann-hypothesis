@@ -1,8 +1,8 @@
 module
 
-public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.ExpTie
+public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0006
 public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.FBIdJet
-public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.ExpChartJetA
+public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0012
 
 @[expose] public section
 

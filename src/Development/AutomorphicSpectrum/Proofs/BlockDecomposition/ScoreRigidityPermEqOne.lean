@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.TZero
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0021
 
 @[expose] public section
 

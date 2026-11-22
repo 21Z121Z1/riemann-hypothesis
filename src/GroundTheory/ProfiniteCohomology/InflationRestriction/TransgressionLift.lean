@@ -3,7 +3,7 @@ module
 public import Mathlib
 public import GroundTheory.ProfiniteCohomology.InflationRestriction.CohomologyResMemCohomologyConjInvariants
 public import GroundTheory.ProfiniteCohomology.InflationRestriction.Coinduced
-public import GroundTheory.ProfiniteCohomology.Bridge
+public import GroundTheory.ProfiniteCohomology.Bundle0004
 
 @[expose] public section
 

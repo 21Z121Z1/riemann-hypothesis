@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Formalism.LocalToGlobal.SiegelLatticeTheory.ClosedLocalOrbits.RealObj
-public import Formalism.HermitianCurvature.StatementJCT
+public import Formalism.HermitianCurvature.Bundle0008
 
 @[expose] public section
 

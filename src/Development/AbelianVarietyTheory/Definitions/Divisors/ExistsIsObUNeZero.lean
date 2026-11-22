@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Divisors.IsBasOpens
-public import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsIsOb1NeZero
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0025
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0020
 
 @[expose] public section
 

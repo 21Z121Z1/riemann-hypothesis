@@ -1,11 +1,12 @@
 module
 
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.TrMMemFramesEIff
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.FundamentalDomainUnitaryAdelicExistsMeasureEq
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FrameIntegralThetaMeasureFormulaStatement
-public import Development.WeilBound.RepresentationTheoryGL.SiegelWeil.ArchimedeanSiegelWeil.PlaceIntegrals.SiegelWeilFreeOfBlockNonemptyFramesStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsTamagawaMeasureNormalizationStatement
-public import Development.WeilBound.RepresentationTheoryGL.SiegelWeil.ArchimedeanSiegelWeil.PlaceIntegrals.BlockCoefficientLocalGlobalFactorStatement
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0487
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0141
+public import Mathlib
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0679
+public import Development.WeilBound.RepresentationTheoryGL.SiegelWeil.ArchimedeanSiegelWeil.PlaceIntegrals.SiegelWeilFreeOfBlockNonemptyFrames
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0597
+public import Development.WeilBound.RepresentationTheoryGL.SiegelWeil.ArchimedeanSiegelWeil.PlaceIntegrals.BlockCoefficientLocalGlobalFactor
 
 @[expose] public section
 
@@ -30,11 +31,11 @@ theorem siegel_frame : ∀ (D : D7) (r : ℕ) (V : HSp D) (ψ : AddChar (AF D.ho
     rw [trM_mem_framesE_iff]
     exact ⟨hxr, hxg⟩
   obtain ⟨d, b, laminf, lamv, minf, m, h1, h2, h3, h4⟩ :=
-    GlobalTheory.T.exists_tamagawa_measure_normalization D.host.F D.host.E D.sp.cm.sig hCM V.rank V.gram hJ r
-  have hS := GlobalTheory.T.siegelWeil_free_of_block_nonempty_frames D.host.F D.host.E D.sp.cm.sig hCM V.rank V.gram hJ r t β.1 (hermE_symm β) hNF hr hfr
+    _root_.GlobalTheory.CompanionTheory.WeilSiegel.Frame.exists_coord_fibres D.host.F D.host.E D.sp.cm.sig hCM V.rank V.gram hJ r
+  have hS := _root_.GlobalTheory.CompanionTheory.WeilSiegel.Free.swFree_block D.host.F D.host.E D.sp.cm.sig hCM V.rank V.gram hJ r t β.1 (hermE_symm β) hNF hr hfr
     d b laminf lamv h1 h2 ν 𝓕 hν h𝓕 minf m h3 h4
-  obtain ⟨hi, he⟩ := GlobalTheory.T.frame_integral_theta_measure_formula D r V θ hθ ν hν 𝓕 h𝓕 φ hφ habs β
+  obtain ⟨hi, he⟩ := _root_.GlobalTheory.CompanionTheory.WeilSiegel.Frame.glue D r V θ hθ ν hν 𝓕 h𝓕 φ hφ habs β
   rw [he]
-  exact (GlobalTheory.T.block_coefficient_local_global_factor D r V ψ θ μ lam ν φ hH t β hNF d b laminf lamv minf m h1 h2 h3 h4 _ hS hi).symm
+  exact (_root_.GlobalTheory.CompanionTheory.WhitFree.whit_eq_integral D r V ψ θ μ lam ν φ hH t β hNF d b laminf lamv minf m h1 h2 h3 h4 _ hS hi).symm
 
 end GlobalTheory.CompanionTheory.WeilSiegel.Frame

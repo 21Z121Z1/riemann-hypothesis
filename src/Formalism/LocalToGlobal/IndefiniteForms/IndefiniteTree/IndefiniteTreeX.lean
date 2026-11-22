@@ -5,7 +5,7 @@ public import Formalism.LatticeSlopes.Statement
 public import Formalism.HarderNarasimhan.Statement
 public import Formalism.LatticeSlopes.LatticeSlopesProofs.DegQuot
 public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.RegularLocalRegularSequence.ExistsIsRegularOfListEqMaximalIdeal
-public import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.TransferenceMinima
+public import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.Bundle0015
 
 @[expose] public section
 

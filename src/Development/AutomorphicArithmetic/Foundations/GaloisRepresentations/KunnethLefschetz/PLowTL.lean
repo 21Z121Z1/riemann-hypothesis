@@ -1,18 +1,17 @@
 module
 
 public import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.KunnethLefschetz.BasisOne
-public import Development.EtaleCohomology.EtaleTrace.TorsionH0PointOfTwistCoverCocycle
-public import Development.EtaleCohomology.EtaleTrace.PtCoverPf
-public import Development.EtaleCohomology.EtaleTrace.TwZeroPfSplit
-public import Development.EtaleCohomology.EtaleTrace.PrimSplitPf
-public import Development.EtaleCohomology.EtaleTrace.CocEqPf
-public import Development.EtaleCohomology.EtaleTrace.EtaleTateTwistSectionConstantOnPointsOfConnected
-public import Development.EtaleCohomology.EtaleTrace.PtCovPf
-public import Development.EtaleCohomology.EtaleTrace.TateTwistSectionConstantOnPointsOfTwLocPtCov
-public import Development.EtaleCohomology.TateTwists.TwLocPfR
-public import Development.EtaleCohomology.TateTwists.TwSecLocPfZarR
-public import Development.EtaleCohomology.TateTwists.AlgPowPfR
-public import Development.EtaleCohomology.TateTwists.TwTorsPfR
+public import Development.EtaleCohomology.EtaleTrace.Bundle0007
+public import Development.EtaleCohomology.EtaleTrace.Bundle0008
+public import Development.EtaleCohomology.EtaleTrace.Bundle0009
+public import Development.EtaleCohomology.EtaleTrace.Bundle0010
+public import Development.EtaleCohomology.EtaleTrace.Bundle0005
+public import Development.EtaleCohomology.EtaleTrace.Bundle0003
+public import Development.EtaleCohomology.EtaleTrace.Bundle0006
+public import Development.EtaleCohomology.TateTwists.Bundle0014
+public import Development.EtaleCohomology.TateTwists.Bundle0029
+public import Development.EtaleCohomology.TateTwists.Bundle0031
+public import Development.EtaleCohomology.TateTwists.Bundle0024
 
 @[expose] public section
 

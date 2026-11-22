@@ -1,8 +1,7 @@
 module
 
 public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.TensorRepresentations.TensorV
-public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.TensorRepresentations.Gelfand
-public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.TensorRepresentations.AntiEIsGlRep
+public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.TensorRepresentations.Bundle0002
 
 @[expose] public section
 

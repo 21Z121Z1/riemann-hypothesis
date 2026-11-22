@@ -1,8 +1,8 @@
 module
 
-public import Development.EtaleCohomology.EtaleSheaves.LeafCurveCut
-public import Development.AbelianVarietyTheory.Proofs.HomogeneousIdeals.IsDomainAndIsIntegrallyClosedAtPrimeOfSmoothOfCo
-public import Development.AbelianVarietyTheory.Proofs.HomogeneousIdeals.ExistsNeZeroIsStandardSmoothOfRelativeDimension
+public import Development.EtaleCohomology.EtaleSheaves.Bundle0013
+public import Development.AbelianVarietyTheory.Proofs.HomogeneousIdeals.Bundle0004
+public import Development.AbelianVarietyTheory.Proofs.HomogeneousIdeals.Bundle0009
 
 @[expose] public section
 

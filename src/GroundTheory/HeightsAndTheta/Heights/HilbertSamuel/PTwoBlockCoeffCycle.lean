@@ -1,10 +1,10 @@
 module
 
 public import Mathlib
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsTwoBlockCoeffCycle
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsTwoBlockHorizDiv
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PTwoBlockTop
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PMetricTransportSmooth
+public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0070
+public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0078
+public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0098
+public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0064
 public import GroundTheory.HeightsAndTheta.Heights.Intersections.PRFormula
 
 @[expose] public section

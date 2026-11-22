@@ -1,12 +1,12 @@
 module
 
 public import Mathlib
-public import Development.WeilBound.CoreStatements.PublishedTheorems.NadelVanishingPairs.NadelVanishingLemmas.ExistsLogResolutionBigBundleStatement
+public import Development.WeilBound.CoreStatements.PublishedTheorems.NadelVanishingPairs.NadelVanishingLemmas.Bundle0029
 public import Development.WeilBound.CoreStatements.PublishedTheorems.NadelVanishingPairs.NadelVanishingLemmas.MultiplierIdealBoundaryMonotone
-public import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsIsLogMult
-public import Development.AbelianVarietyTheory.Definitions.Divisors.IsEtCoord
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SumOrdSubOneLeOrdWedgeDifferentials
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntersectionNumberPullbackProportionalOfProporti
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0062
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0004
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1888
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1924
 
 @[expose] public section
 

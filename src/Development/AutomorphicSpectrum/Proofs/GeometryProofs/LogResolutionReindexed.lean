@@ -3,16 +3,19 @@ module
 public import Mathlib
 public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.EmbedsGeneric
 public import Development.AutomorphicSpectrum.Definitions.DivisibilityTowers.GoodOrigin
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.IsSmoothHermTrivLine
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.MemAbLocusIff
-public import Development.AutomorphicSpectrum.Proofs.MetricProofs.LogResolutionCompatiblePullbackStatement
-public import ReciprocityTheory.AnalyticForms.PotentialTheory.DegreeInhab
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.InterBridgeB
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.GenericPointsGoodStatementStatement
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ArithVarietyReindexedStatement
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.AlgebraicElementHomogRelationStatement
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ImplicitRootAnalyticStatement
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.HomogRelationRatioReindexStatement
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0097
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0104
+public import Development.AutomorphicSpectrum.Proofs.MetricProofs.LogResolutionCompatiblePullback
+public import Development.AutomorphicSpectrum.Definitions.MetricPeriods.Pull1
+public import Development.AutomorphicSpectrum.Definitions.MetricPeriods.IsPeriodOn
+public import Development.AutomorphicSpectrum.Proofs.MetricProofs.Bundle0040
+public import GroundTheory.HeightsAndTheta.Heights.Intersections.Bundle0039
+public import ReciprocityTheory.AnalyticForms.PotentialTheory.Bundle0003
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.Bundle0009
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0116
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0109
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0024
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0013
 
 @[expose] public section
 
@@ -193,7 +196,7 @@ theorem exists_local_section {Ω₀ Ω : Type} [Field Ω₀] [Field Ω] [CharZer
         ∀ w ∈ V, ∀ τ ∈ W, ∑ j ∈ Finset.range (n q (r q.1) + 1),
           eval w (map (Int.castRingHom ℂ) (c q (r q.1) j)) * τ ^ j = 0 → τ = g w := by
     intro q
-    have h1 := GlobalTheory.T.homog_relation_ratio_reindex K₀ K J₀ J Ω₀ Ω y₀ y bk bx i q (r q.1) (n q (r q.1)) (c q (r q.1)) (a q (r q.1)) hy rfl
+    have h1 := _root_.GlobalTheory.CompanionTheory.Ar.Rel.ratio_relation_at_complex_points K₀ K J₀ J Ω₀ Ω y₀ y bk bx i q (r q.1) (n q (r q.1)) (c q (r q.1)) (a q (r q.1)) hy rfl
       (hyr _) (hc _ _) (hsum _ _) z hz (hrr _) w₀ hr
     exact GlobalTheory.T.implicit_root_analytic _ (n q (r q.1)) (fun j w => eval w (map (Int.castRingHom ℂ) (c q (r q.1) j))) w₀ _
       (fun j => AnalyticOnNhd.eval_mvPolynomial _ _ (Set.mem_univ _)) h1
@@ -214,7 +217,7 @@ theorem exists_local_section {Ω₀ Ω : Type} [Field Ω₀] [Field Ω] [CharZer
   · rintro z'' ⟨hz1, hz2⟩ w ⟨hw1, -⟩ hR
     refine ⟨fun k => (z'' (r k))⁻¹, fun k => inv_ne_zero (hz1 (r k)).1, ?_⟩
     funext q
-    have h1 := GlobalTheory.T.homog_relation_ratio_reindex K₀ K J₀ J Ω₀ Ω y₀ y bk bx i q (r q.1) (n q (r q.1)) (c q (r q.1)) (a q (r q.1)) hy rfl
+    have h1 := _root_.GlobalTheory.CompanionTheory.Ar.Rel.ratio_relation_at_complex_points K₀ K J₀ J Ω₀ Ω y₀ y bk bx i q (r q.1) (n q (r q.1)) (c q (r q.1)) (a q (r q.1)) hy rfl
       (hyr _) (hc _ _) (hsum _ _) z'' hz2 (hz1 q).1 w hR
     have h2 := huniq q w (Set.mem_iInter.1 hw1 q) _ (hz1 q).2 h1
     show g q w = (z'' (r q.1))⁻¹ * z'' q
@@ -230,7 +233,7 @@ theorem exists_count {Ω₀ Ω : Type} [Field Ω₀] [Field Ω] [CharZero Ω] (y
         (ptsOverPt (mCoordIdeal y) (blkV bk bx) w).ncard = d := by
   have himg := imageZ_eq i bx hbk hy
   obtain ⟨Gf, ch, hch, hf⟩ := GlobalTheory.T.arith_variety_reindexed K₀ K J₀ J Ω₀ Ω y₀ y bk bx i D d hbk hy hA₀ hA hB₀ hB hfin hd
-  obtain ⟨G, a, hG, hGn, hc⟩ := GlobalTheory.T.generic_points_good_statement K₀ J₀ K J bk (blkV bk bx) (mCoordIdeal y) D Gf ch
+  obtain ⟨G, a, hG, hGn, hc⟩ := _root_.GlobalTheory.CompanionTheory.Ggeo.blockProjection_genericPoints_good K₀ J₀ K J bk (blkV bk bx) (mCoordIdeal y) D Gf ch
     (isBlockMap_blkV bx hbk) hA (by rw [himg]; exact hA₀) hch
   rw [himg] at hGn hc
   exact ⟨G, a, hG, hGn, fun w hw h0 => (hc w hw h0).trans hf⟩
@@ -251,7 +254,7 @@ theorem isDegreeOff_of_block : ∀ (K₀ K : Type) [Fintype K₀] [Fintype K] (J
     exact ⟨fun h => hw (by rw [h]; simp), fun h => hw (by rw [h]; simp)⟩
   have hrn : rename (blkV bk bx) (G₁ * G₂) ∉ mCoordIdeal y := fun hm =>
     hGn (himg ▸ (show G₁ * G₂ ∈ imageZ (blkV bk bx) (mCoordIdeal y) from hm))
-  refine ⟨_, GlobalTheory.T.log_resolution_compatible_pullback K₀ J₀ K J (mCoordIdeal y₀) ⊤ (mCoordIdeal y) ⊤ D R₀.X R₀.A R₀ id R h
+  refine ⟨_, _root_.GlobalTheory.CompanionTheory.Ar.PB.CovMap.Deg.isDegreeOff_of_correspondence K₀ J₀ K J (mCoordIdeal y₀) ⊤ (mCoordIdeal y) ⊤ D R₀.X R₀.A R₀ id R h
     (fun z w => SameOrbit (fun p => z (blkV bk bx p)) w) (G₁ * G₂) (rename (blkV bk bx) (G₁ * G₂)) (a₁ + a₂)
     (Function.extend bk (a₁ + a₂) 0) d rfl hA₀ hA (holoMap_id' R₀.A) (isDegreeOff_id R₀.A) hh hGh hGn
     (isMultiHomog_rename' hv hGh) hrn

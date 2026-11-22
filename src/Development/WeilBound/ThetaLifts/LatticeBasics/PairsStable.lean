@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.WeilBound.ThetaLifts.LatticeBasics.Hypotheses2
+public import Development.WeilBound.ThetaLifts.LatticeBasics.Bundle0005
 
 @[expose] public section
 

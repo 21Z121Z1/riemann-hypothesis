@@ -1,8 +1,8 @@
 module
 
-public import Formalism.PieriBlockIdeals.StatementTop
+public import Formalism.PieriBlockIdeals.Bundle0007
 public import Formalism.PieriBlockIdeals.PieriColumnMinors.CorollaryOfParamsSevenLinkage
-public import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.PrimeCount
+public import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.Bundle0008
 
 @[expose] public section
 

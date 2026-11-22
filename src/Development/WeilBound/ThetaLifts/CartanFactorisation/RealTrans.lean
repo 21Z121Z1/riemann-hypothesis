@@ -1,8 +1,8 @@
 module
 
-public import Development.WeilBound.ThetaLifts.CartanFactorisation.CommuteConj
-public import Development.WeilBound.ThetaLifts.CartanFactorisation.Factor
-public import Development.WeilBound.ThetaLifts.CartanFactorisation.PolCountDef
+public import Development.WeilBound.ThetaLifts.CartanFactorisation.Bundle0008
+public import Development.WeilBound.ThetaLifts.CartanFactorisation.Bundle0007
+public import Development.WeilBound.ThetaLifts.CartanFactorisation.Bundle0002
 
 @[expose] public section
 

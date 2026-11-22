@@ -1,7 +1,7 @@
 module
 
-public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.TailIntegrals.ExponentConditionNeg
-public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.TailIntegrals.RhoMulStar
+public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.TailIntegrals.Bundle0006
+public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.TailIntegrals.Bundle0004
 public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.TailIntegrals.RhoSqNonneg
 
 @[expose] public section

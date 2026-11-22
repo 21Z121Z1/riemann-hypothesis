@@ -3,7 +3,7 @@ module
 public import Mathlib
 public import Formalism.LocalToGlobal.Divisibility.RecBridgeTied
 public import Formalism.LocalToGlobal.Divisibility.RecBridgeMkF
-public import Formalism.LocalToGlobal.Columns.RowFormsSym
+public import Formalism.LocalToGlobal.Columns.Bundle0005
 
 @[expose] public section
 

@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Divisors.TorsTransport
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PowerIntegralValuationLowerBoundIffForallEmbeddiStatement
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0014
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0566
 
 @[expose] public section
 

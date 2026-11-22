@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import GroundTheory.PAdicHodge.ExtRobbaTeich
-public import GroundTheory.PAdicHodge.RobbaSeries
+public import GroundTheory.PAdicHodge.Bundle0001
 
 @[expose] public section
 

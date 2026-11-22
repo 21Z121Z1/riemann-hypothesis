@@ -1,14 +1,13 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Divisors.SemiposAtOfPositive
-public import Development.AbelianVarietyTheory.Definitions.Divisors.ToKnownTheoremsOf
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsModelOf
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SecZEqZeroOfGenVal
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsIsRatSecOfPull
-public import Development.AbelianVarietyTheory.Definitions.Divisors.NotIsChowFormIntLineZero
-public import Development.WeilBound.CoreStatements.MinimalPrimeDimensions.WeightSectionsHeightEstimate
-public import Development.WeilBound.CoreStatements.MinimalPrimeDimensions.WeightSectionsCdvrEstimate
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0063
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0059
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2190
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1404
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0287
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0045
+public import Development.WeilBound.CoreStatements.MinimalPrimeDimensions.Bundle0004
 
 @[expose] public section
 

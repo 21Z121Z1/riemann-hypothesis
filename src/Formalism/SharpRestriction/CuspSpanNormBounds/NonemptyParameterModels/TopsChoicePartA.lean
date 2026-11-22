@@ -1,6 +1,6 @@
 module
 
-public import Formalism.SharpRestriction.CuspSpanNormBounds.DiagonalEntryIdentity
+public import Formalism.SharpRestriction.CuspSpanNormBounds.Bundle0003
 
 @[expose] public section
 

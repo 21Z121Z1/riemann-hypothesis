@@ -3,19 +3,20 @@ module
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.Divisors.PointsNonemptyUnitaryRankOne
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BoundedEigenvaluesClasses
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsIntegralSmulOfCharpolyCoeffMulIntStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TwistedHeckeTestFunctionSupportCompactStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CompactConjCharpolyBoundedDenominatorsAwayPStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TwistedOrbitNormBoundsStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PadicCoeffDenominatorBoundOfBoundedRootsStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DenBoundCombinePadicPrimeToPStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SimilitudePairHermitianFormInvertibleSimilitudeStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SimilitudePairGramInvCongruentStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsEigenvectorOfMinpolyRootHermitianPsiStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EigenvalueNormSqOfSimilitudeHermitianSignatureStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FiniteMonicRootsBddMulIsIntegralStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FinitePolynomialsBoundedDenom
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FiniteKottwitzClassesPerMinpolyAEqOneStatement
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0920
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0933
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0980
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1013
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0927
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0904
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0932
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0897
+public import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsRootSelectionUnitaryRankOne
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0909
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0944
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0145
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0996
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1267
 
 @[expose] public section
 
@@ -221,7 +222,7 @@ theorem finite_pol_marked' : ∀ (p : ℕ) [Fact p.Prime] (G : HTGroup p), G.a =
       ‖w‖ ^ 2 = ((P.c : ℚ) : ℝ) := by
     intro v w x hx hwx
     obtain ⟨-, -, hlaw⟩ := GlobalTheory.T.similitudePair_hermitianForm_invertible_similitude p G P v
-    obtain ⟨Z, hZ⟩ := GlobalTheory.T.similitudePair_gram_inv_congruent p G P v
+    obtain ⟨Z, hZ⟩ := _root_.GlobalTheory.LKMid.Pair.gram_psi_inv_congr p G P v
     have hsig := G.sig v
     have hn := G.n_pos
     refine GlobalTheory.T.eigenvalue_normSq_of_similitude_hermitian_signature G.n (G.gram v) _ (G.psi v P.γ) (G.gram_herm v) Z ((P.c : ℚ) : ℝ) ?_ ?_ hZ hc0 ?_ ?_

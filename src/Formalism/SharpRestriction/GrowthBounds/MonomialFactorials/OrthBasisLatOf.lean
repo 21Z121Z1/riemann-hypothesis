@@ -1,6 +1,6 @@
 module
 
-public import Formalism.SharpRestriction.GrowthBounds.MonomialFactorials.OrthCountOf
+public import Formalism.SharpRestriction.GrowthBounds.MonomialFactorials.Bundle0015
 public import Lemmata.B1962s.FreeLat
 
 @[expose] public section

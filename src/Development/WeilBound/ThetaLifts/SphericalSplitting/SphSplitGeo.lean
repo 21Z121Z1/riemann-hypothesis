@@ -1,7 +1,7 @@
 module
 
-public import Development.WeilBound.ThetaLifts.SphericalLattices.SphSplitOf
-public import Development.WeilBound.ThetaLifts.SphericalLattices.BelowIffRows
+public import Development.WeilBound.ThetaLifts.SphericalLattices.Bundle0010
+public import Development.WeilBound.ThetaLifts.SphericalLattices.Bundle0003
 public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.KCoinvOfNarrow
 public import Development.WeilBound.CoreStatements.TemperedRepresentationTheory.BernsteinNarrowness.BernsteinClosure.RamifiedMultiplicityOne
 

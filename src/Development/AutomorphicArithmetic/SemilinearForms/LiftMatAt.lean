@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.FormsOfSemilinear
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.BlockBaseChangeAt
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0077
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0076
 
 @[expose] public section
 

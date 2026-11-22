@@ -2,7 +2,7 @@ module
 
 public import Formalism.SharpRestriction.GrowthBounds.FockGramWindow.LvlDef
 public import Formalism.SharpRestriction.GrowthBounds.MonomialFactorials.ClosedOfMinimalVector
-public import Formalism.SharpRestriction.GrowthBounds.MonomialFactorials.FockKSmulRight
+public import Formalism.SharpRestriction.GrowthBounds.MonomialFactorials.Bundle0014
 
 @[expose] public section
 

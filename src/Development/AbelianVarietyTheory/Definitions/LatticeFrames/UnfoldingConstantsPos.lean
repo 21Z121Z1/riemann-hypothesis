@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Formalism.SharpRestriction.CuspSpanNormBounds.RelevantZeroGramTerms
-public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.RealisedChainTorusEq
+public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.Bundle0003
 
 @[expose] public section
 

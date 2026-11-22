@@ -1,10 +1,10 @@
 module
 
 public import Development.WeilBound.CoreStatements.AutomorphicKernels.GrothendieckRingPolynomial.ProdList
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ParabolicProductHasFiniteLengthGL
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0373
 public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsEquivProdIrrTw
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SegmentRepSplitIntertwiner
-public import Development.AutomorphicSpectrum.Proofs.GlobalProofs.BernsteinZelevinskyFiniteness
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0606
+public import Development.AutomorphicSpectrum.Proofs.GlobalProofs.Bundle0030
 
 @[expose] public section
 

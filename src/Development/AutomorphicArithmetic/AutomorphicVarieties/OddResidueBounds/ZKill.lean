@@ -2,9 +2,8 @@ module
 
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.OddResidueBounds.ZeroMemUnrHom
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.OddResidueBounds.ResKill
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.OddResidueBounds.TotKill
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.OddResidueBounds.NearLevel
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.OddResidueBounds.ContinuousToTorsionBounded
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.OddResidueBounds.Bundle0003
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.OddResidueBounds.Bundle0001
 
 @[expose] public section
 

@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Statements.GeometryStatements.PropFTop
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.HBBound
-public import Development.AutomorphicSpectrum.Proofs.MetricProofs.DegreeOfIsIntersectionSystem
+public import Development.AutomorphicSpectrum.Statements.GeometryStatements.Bundle0002
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0005
+public import Development.AutomorphicSpectrum.Proofs.MetricProofs.Bundle0027
 public import GroundTheory.HeightsAndTheta.Heights.SemipositiveHeights.MetricLocal
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.FirstCohomology.PrimeLogSum
 

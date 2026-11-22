@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.CoeffEqZeroOfMemSpanPow
-public import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.DiscrMulDetEqNormOfAnnihilator
+public import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.Bundle0001
+public import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.Bundle0002
 
 @[expose] public section
 

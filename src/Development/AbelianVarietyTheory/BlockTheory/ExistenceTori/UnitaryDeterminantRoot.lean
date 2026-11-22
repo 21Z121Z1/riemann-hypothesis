@@ -3,9 +3,8 @@ module
 public import Mathlib
 public import Formalism.LocalToGlobal.ProjectiveLattices.ThShort
 public import Formalism.LocalToGlobal.ProjectiveLattices.ThGerm
-public import Formalism.LocalToGlobal.ProjectiveLattices.IsLevMove
-public import Formalism.LocalToGlobal.ProjectiveLattices.LiftLaSpec
-public import Formalism.LocalToGlobal.ProjectiveLattices.NormsFree
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0010
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0013
 public import Development.AbelianVarietyTheory.BlockTheory.ExistenceTori.ComplexResidueRing
 
 @[expose] public section

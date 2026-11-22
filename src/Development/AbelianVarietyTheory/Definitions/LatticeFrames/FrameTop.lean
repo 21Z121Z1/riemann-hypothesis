@@ -1,11 +1,10 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.CombAtSingleZero
+public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.Bundle0018
 public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.IsCombAt
-public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.IsRatDatum
-public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.IsTransportAdelicCorrection
-public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.IsScaleWithBoundedGamma
+public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.Bundle0022
+public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.Bundle0016
 
 @[expose] public section
 

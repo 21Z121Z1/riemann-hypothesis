@@ -3,11 +3,11 @@ module
 public import Mathlib
 public import Development.AutomorphicSpectrum.Definitions.MetricPeriods.IsTwiceDifferentiableAt
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArithmeticIntersection.CompRightEqZero
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArithmeticIntersection.KappaSt
-public import GroundTheory.HeightsAndTheta.Heights.Intersections.StatementsFibreLocal
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArithmeticIntersection.Bundle0001
+public import GroundTheory.HeightsAndTheta.Heights.Intersections.Bundle0003
 public import GroundTheory.HeightsAndTheta.Heights.Antisymmetric.Statements
 public import Development.WeilBound.CoreStatements.PluriharmonicCharts.LeviDiagonalOfIsPeriodChart
-public import Development.AutomorphicSpectrum.Proofs.MetricProofs.MongeAmpereDensityDiagonalLeviStatement
+public import Development.AutomorphicSpectrum.Proofs.MetricProofs.Bundle0017
 
 @[expose] public section
 

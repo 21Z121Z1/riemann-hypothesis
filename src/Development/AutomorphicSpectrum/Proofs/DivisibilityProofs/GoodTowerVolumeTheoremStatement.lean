@@ -2,19 +2,17 @@ module
 
 public import Mathlib
 public import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.GoodTowerVolumeTheorem
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.FamilyExistsPosOfFamilyExists
-public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsPreFamilyOfLatticeFamilyTwo
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0058
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.Bundle0011
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArithmeticIntersection.RationalSections.ThmISt
-public import Development.AutomorphicSpectrum.Statements.GeometryStatements.CmpPair
+public import Development.AutomorphicSpectrum.Statements.GeometryStatements.Bundle0003
 public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.PotentialsBoundedRegSettingEqReference
-public import GroundTheory.HeightsAndTheta.Heights.Regularisation.BoundedStatements
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.InterSt
+public import GroundTheory.HeightsAndTheta.Heights.Regularisation.Bundle0002
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.Bundle0006
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.GlobalSectionsRankAlgClosed
 public import Development.AutomorphicSpectrum.Statements.TowerExistence.GoodTowerExistsX
-public import Development.AutomorphicSpectrum.Statements.GeometryStatements.HodgeLatticeFlagBound
-public import Development.AutomorphicSpectrum.Statements.GeometryStatements.TrivFlagOnHodge
 public import Development.AutomorphicSpectrum.Statements.GeometryStatements.FlatDegree
-public import Development.AutomorphicSpectrum.Statements.GeometryStatements.PadicIntegersHenselianFiniteResidue
+public import Development.AutomorphicSpectrum.Statements.GeometryStatements.Bundle0002
 public import Development.AutomorphicSpectrum.Statements.GeometryStatements.HodgeComparisonCompatibility
 public import Development.AutomorphicSpectrum.Statements.GeometryStatements.CmpSt
 public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.NumberField
@@ -34,10 +32,10 @@ theorem _root_.GlobalTheory.T.good_tower_volume_theorem : Top.Given → PtsInteg
   have hGaga : Flat.GagaSections := hG.2.2.2.2.2.2.2.1
   have hPB : PB.Inputs := hG.2.2.2.2.2.2.2.2.2.1
   have hA0 := GlobalTheory.T.flat_zero_from_resolution_and_gaga hR hGaga
-  have hA1 := GlobalTheory.T.flat_first_from_resolution_and_gaga hR hGaga
+  have hA1 := _root_.GlobalTheory.CompanionTheory.Ar.Flat.FlatFirstTheorem.flat_first_of_resolution_gaga hR hGaga
   refine ⟨?_, ?_⟩
   · intro E _ _ _ H D Xo l c Y _ hgl hs hp hq
     exact GlobalTheory.CompanionTheory.Ar.TopTower.exists_good_tower hG hW hA0 hA1 E H D Xo l c Y hgl hs hp hq
-  · exact GlobalTheory.CompanionTheory.Ar.Cusp.volumeTheoremX_of_inputs hG hPts hW (GlobalTheory.T.exists_geometric_height_constants hG hW GlobalTheory.T.FlatDegree_holds) (GlobalTheory.T.model_on_hodge_from_family hFam)
-      (GlobalTheory.T.triv_flag_on_hodge_of_fargues hFHT) GlobalTheory.T.FlatDegree_holds GlobalTheory.T.TwistAut_holds hPair (GlobalTheory.T.comparison_of_inputs_avoidance hPB hAv hR)
+  · exact GlobalTheory.CompanionTheory.Ar.Cusp.volumeTheoremX_of_inputs hG hPts hW (GlobalTheory.T.exists_geometric_height_constants hG hW _root_.GlobalTheory.CompanionTheory.Ar.Fl.flatDegree) (_root_.GlobalTheory.CompanionTheory.Ar.Num.HodgeModel.model_on_hodge_of_family_pos hFam)
+      (_root_.GlobalTheory.CompanionTheory.Ar.Num.trivFlagOnHodge_of_fargues hFHT) _root_.GlobalTheory.CompanionTheory.Ar.Fl.flatDegree _root_.GlobalTheory.CompanionTheory.Ar.TwistAutProof.twistAut hPair (_root_.GlobalTheory.CompanionTheory.Relay.comparison_of_inputs_avoidance hPB hAv hR)
 

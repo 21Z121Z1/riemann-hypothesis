@@ -1,7 +1,7 @@
 module
 
 public import Development.WeilBound.ThetaLifts.LeviDeterminants.CharacterAdmissibility.BoxCancel
-public import Development.WeilBound.ThetaLifts.LeviDeterminants.CharacterAdmissibility.DoublingGramFromBlocks
+public import Development.WeilBound.ThetaLifts.LeviDeterminants.CharacterAdmissibility.Bundle0001
 
 @[expose] public section
 

@@ -2,27 +2,21 @@ module
 
 public import Mathlib
 public import Development.WeilBound.ThetaLifts.LatticeBasics.BotAsm
-public import Development.WeilBound.ThetaLifts.LatticeBasics.NormZeta
-public import Development.WeilBound.ThetaLifts.LatticeBasics.CoefLine
-public import Development.WeilBound.ThetaLifts.LatticeBasics.HermCpt
-public import Development.WeilBound.ThetaLifts.LatticeBasics.EulerHalf
+public import Development.WeilBound.ThetaLifts.LatticeBasics.Bundle0016
+public import Development.WeilBound.ThetaLifts.LatticeBasics.Bundle0015
+public import Development.WeilBound.ThetaLifts.LatticeBasics.Bundle0020
+public import Development.WeilBound.ThetaLifts.LatticeBasics.Bundle0010
 public import Development.WeilBound.ThetaLifts.LatticeBasics.LocUnrInert
 public import Development.WeilBound.ThetaLifts.LatticeBasics.LocUnrSplit
-public import Development.WeilBound.ThetaLifts.LatticeBasics.FinLevel
-public import Development.WeilBound.ThetaLifts.LatticeBasics.CartanBound2
-public import Development.WeilBound.ThetaLifts.LatticeBasics.HgtIntOf
-public import Development.WeilBound.ThetaLifts.LatticeBasics.EisCont
+public import Development.WeilBound.ThetaLifts.LatticeBasics.Bundle0023
+public import Development.WeilBound.ThetaLifts.LatticeBasics.Bundle0018
 public import Development.WeilBound.ThetaLifts.LatticeBasics.FrameConj
-public import Development.WeilBound.ThetaLifts.LatticeBasics.BadFactor
-public import Development.WeilBound.ThetaLifts.LatticeBasics.NearUnits
-public import Development.WeilBound.ThetaLifts.LatticeBasics.PresDOf
-public import Development.WeilBound.ThetaLifts.LatticeBasics.PairsFin
-public import Development.WeilBound.ThetaLifts.LatticeBasics.ThConstFin
-public import Development.WeilBound.ThetaLifts.LatticeBasics.LocDist
+public import Development.WeilBound.ThetaLifts.LatticeBasics.Bundle0025
+public import Development.WeilBound.ThetaLifts.LatticeBasics.Bundle0024
+public import Development.WeilBound.ThetaLifts.LatticeBasics.Bundle0026
+public import Development.WeilBound.ThetaLifts.LatticeBasics.Bundle0007
 public import Development.WeilBound.ThetaLifts.LatticeBasics.OrthAn
 public import Development.WeilBound.ThetaLifts.LatticeBasics.OffOpen
-public import Development.WeilBound.ThetaLifts.LatticeBasics.HeightGLLe
-public import Development.WeilBound.ThetaLifts.LatticeBasics.SiegelWeilAnisoOf
 public import Development.WeilBound.CoreStatements.AbelianHeightsDuality.UnitaryDensity.EqTopOfLines
 
 @[expose] public section

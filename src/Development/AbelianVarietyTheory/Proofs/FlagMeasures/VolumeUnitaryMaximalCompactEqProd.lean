@@ -1,13 +1,13 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.IsGaugeAll
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.TendstoOfSqueeze
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.RiemannianHaarGaugeExistsPosUnique
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsAlgebrasMaxCompactAndLeviInterStatement
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.RiemannianHaarGaugeWholeGroupStatement
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.GaugeMeasureMatrixAlgebraSubgroupLocalAsymptoticStatement
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.RiemannianHaarGaugeVolumeUnitaryGroupEqStatement
+public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.Bundle0009
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0016
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0265
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsAlgebrasMaxCompactAndLeviInter
+public import Development.AbelianVarietyTheory.Statements.CuspFrameWeights.Bundle0001
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0309
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0290
 
 @[expose] public section
 
@@ -216,8 +216,8 @@ theorem volU_pos (N : ℕ) : 0 < volU N := by
 theorem exists_gauge_allPos (N : ℕ) : ∃ ν : Measure (UJ (allPos N)), IsFiniteMeasure ν ∧ ν.IsMulLeftInvariant ∧
     Asym ν (fun g => hs (uMat g - 1)) (N ^ 2) ∧ ν Set.univ = ENNReal.ofReal (volU N) := by
   obtain ⟨c, hc0, hc, -⟩ := GlobalTheory.GaugeConst.gauge_exists_pos_unique N (allPos N)
-  have hsub := ((GlobalTheory.T.riemannianHaarGauge_whole_group N (allPos N)).1 c hc).2
-  have hvol := GlobalTheory.T.riemannianHaarGauge_volume_unitaryGroup_eq N c hc
+  have hsub := ((_root_.GlobalTheory.GaugeWhole.gauge_whole N (allPos N)).1 c hc).2
+  have hvol := _root_.GlobalTheory.UnitaryVolume.volume_unitary N c hc
   have hfin : Formalism.REAL.muG (allPos N) Set.univ ≠ ⊤ := by
     intro htop
     rw [htop, ENNReal.toReal_top, mul_zero] at hvol
@@ -238,7 +238,7 @@ theorem volume_maxK : ∀ (n : ℕ) (ε : Fin n → Bool) (p q : ℕ), (univ.fil
     simp only [Submodule.mem_bot] at hx
     subst hx
     simp
-  obtain ⟨A, E, hA, hE, hAE, hK⟩ := (GlobalTheory.T.exists_algebras_maxCompact_and_levi_inter n ε 0 _ _ hflag p q hp hq).1
+  obtain ⟨A, E, hA, hE, hAE, hK⟩ := (_root_.GlobalTheory.FlagMeas.CompactAlg.compact_algebras n ε 0 _ _ hflag p q hp hq).1
   have hmeasEmb : Measurable (emb e hJ) := (continuous_emb e hJ).measurable
   have hclosedK : IsClosed (maxK ε) := by
     have hcont : Continuous fun g : Formalism.REAL.UJ ε => (uMat g)ᴴ * uMat g :=

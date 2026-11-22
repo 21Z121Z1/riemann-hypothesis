@@ -1,14 +1,16 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsOpenFarSet
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsFiniteEtaleSectionOfSmoothClosedFibreStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AppTopBijectiveAndSurjectiveNormalDomain
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AppBijectiveOfFlatBaseChangeGlobalFunctions
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsGeneratorOfTheoremOfCubeTenPointsStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IrreducibleSpaceFibreSemiAbelianFieldPointStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GrpPullbackPointsLiftMulInvStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsGeneratorNearFibresOfFiniteFlatStatement
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2290
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2344
+public import Development.AbelianVarietyTheory.Definitions.Divisors.TateProductRigidificationTrivial
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2131
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2128
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2421
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2370
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2368
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2430
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0065
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PlaceDivisors.SiegelPullbackTransfer.ExistsGenTransfer
 
 @[expose] public section
@@ -140,7 +142,7 @@ theorem gen_of_ten {T S : Scheme.{0}} (π : S ⟶ T) (G : Over T) [GrpObj G] (G'
     (h : ∀ f ∈ ten G, ∀ z, f.left (ζ z) ∈ farSet β θ) : ∃ t : LB.Gen (P.L.L.pull k), t.IsGen := by
   have hw : ζ ≫ (G ⊗ G ⊗ G ⊗ G).hom = (Over.mk (k ≫ G'.hom)).hom ≫ π := by
     rw [← Over.w (fst G _), ← Category.assoc, hζ, Category.assoc, hpb.1.w]; exact (Category.assoc _ _ _).symm
-  obtain ⟨hl, hm⟩ := GlobalTheory.T.grpPullback_points_lift_and_compat_mul_inv T S π G G' β hpb (Over.mk (k ≫ G'.hom)) (G ⊗ G ⊗ G ⊗ G) ζ hw
+  obtain ⟨hl, hm⟩ := _root_.GlobalTheory.Mum.grpPullback_points_lift_mul_inv T S π G G' β hpb (Over.mk (k ≫ G'.hom)) (G ⊗ G ⊗ G ⊗ G) ζ hw
   obtain ⟨a, ha⟩ := hl (snd _ _ ≫ fst _ _)
   obtain ⟨b, hb⟩ := hl (snd _ _ ≫ snd _ _ ≫ fst _ _)
   obtain ⟨c, hc⟩ := hl (snd _ _ ≫ snd _ _ ≫ snd _ _)
@@ -176,7 +178,7 @@ theorem exists_gen_near_closed_point : ∀ (R : Type) [CommRing R] [IsDomain R] 
   have := M.proper
   have hβ : IsProper β := MorphismProperty.of_isPullback hpb.1.flip M.proper
   have hgi : GeometricallyIrreducible G.hom :=
-    ⟨geometrically_iff_of_isClosedUnderIsomorphisms.mpr fun Ω _ s => GlobalTheory.T.irreducibleSpace_fibre_semiAbelian_fieldPoint _ G hG Ω s⟩
+    ⟨geometrically_iff_of_isClosedUnderIsomorphisms.mpr fun Ω _ s => _root_.GlobalTheory.SemiAbFibre.irreducibleSpace_fibre _ G hG Ω s⟩
   have s₂ : Smooth (G ⊗ G).hom := inferInstanceAs (Smooth (pullback.fst G.hom G.hom ≫ G.hom))
   have i₂ : GeometricallyIrreducible (G ⊗ G).hom := GeometricallyIrreducible.comp (pullback.fst G.hom G.hom) G.hom
   have s₃ : Smooth (G ⊗ G ⊗ G).hom := inferInstanceAs (Smooth (pullback.fst G.hom (G ⊗ G).hom ≫ G.hom))
@@ -193,7 +195,7 @@ theorem exists_gen_near_closed_point : ∀ (R : Type) [CommRing R] [IsDomain R] 
     obtain ⟨q, h₁, h₂⟩ := ten_meets G y g (hy.trans hg.symm) f hf
     exact ⟨q, show f.left q ∈ O' from h₁ ▸ hgO', h₂⟩
   rw [hy] at hN₁
-  obtain ⟨R', _, _, _, ρ, t, hρ, het, ht, htN⟩ := GlobalTheory.T.exists_finiteEtale_section_of_smooth_closedFibre R hR (G ⊗ G ⊗ G) s₃ N hN₁
+  obtain ⟨R', _, _, _, ρ, t, hρ, het, ht, htN⟩ := _root_.GlobalTheory.Mum.exists_finEtale_section_of_smooth R hR (G ⊗ G ⊗ G) s₃ N hN₁
   have hρf : IsFinite (spMap ρ) := (IsFinite.SpecMap_iff (CommRingCat.ofHom ρ)).2 hρ.2.2
   have hflat : ρ.Flat := by
     algebraize [ρ]
@@ -233,7 +235,7 @@ theorem exists_gen_near_closed_point : ∀ (R : Type) [CommRing R] [IsDomain R] 
   have sq : IsPullback (β ∣_ V) ((β ⁻¹ᵁ V).ι ≫ G'.hom) (V.ι ≫ G.hom) M.π :=
     (isPullback_morphismRestrict β V).paste_vert hpb.1
   have hnoeth : IsLocallyNoetherian G.left := LocallyOfFiniteType.isLocallyNoetherian G.hom
-  obtain ⟨V₁, hV₁, hgen₁⟩ := GlobalTheory.T.exists_generator_near_fibres_of_finiteFlat R hR R' ρ hρ hflat _ _ _ _ (β ∣_ V) (pullback.snd (β ∣_ V) k) (V.ι ≫ G.hom)
+  obtain ⟨V₁, hV₁, hgen₁⟩ := _root_.GlobalTheory.Mum.exists_gen_near_of_finFlat R hR R' ρ hρ hflat _ _ _ _ (β ∣_ V) (pullback.snd (β ∣_ V) k) (V.ι ≫ G.hom)
     (pullback.snd _ _) k (pullback.fst (β ∣_ V) k) (IsPullback.of_hasPullback _ _) (IsPullback.of_hasPullback _ _)
     inferInstance inferInstance
     (app_bijective_of_flat_baseChange R M.S _ _ M.π (V.ι ≫ G.hom) (β ∣_ V) _ inferInstance inferInstance

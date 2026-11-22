@@ -1,8 +1,8 @@
 module
 
 public import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutJDHatJDRStepBRules
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.RadialRaisingTopOfParts
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.HasDerivAtNormPow
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0202
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0210
 
 @[expose] public section
 

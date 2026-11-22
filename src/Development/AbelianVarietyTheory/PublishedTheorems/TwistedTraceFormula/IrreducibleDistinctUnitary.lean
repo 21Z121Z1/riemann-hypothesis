@@ -2,9 +2,9 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.PublishedTheorems.PublishedFoundations.FiniteIntertwining
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.IsIrreducibleSmallRepUnitary
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsNeZeroMapEqZeroOfWeightNe
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.IntertwiningGlOfUnitary
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0215
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0209
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0214
 
 @[expose] public section
 

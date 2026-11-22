@@ -1,11 +1,11 @@
 module
 
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.GuDefs
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.Bundle0010
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.BcPolar
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.PartsConj
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CharpolyScaledInverse
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CoeDualRep
-public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.CyclotomicBarContinuous
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0824
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0005
+public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0011
 
 @[expose] public section
 

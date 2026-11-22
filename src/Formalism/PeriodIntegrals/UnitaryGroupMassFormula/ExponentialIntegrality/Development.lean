@@ -1,6 +1,6 @@
 module
 
-public import Formalism.PeriodIntegrals.ExpIntW
+public import Formalism.PeriodIntegrals.Bundle0002
 
 @[expose] public section
 

@@ -2,7 +2,7 @@ module
 
 public import Formalism.LocalToGlobal.GroupLattices.FockModels.SwRowGenMonomial
 public import Formalism.LocalToGlobal.GroupLattices.FockModels.ElementaryDivisorBasis
-public import Formalism.SharpRestriction.GrowthBounds.GLWeightTheory
+public import Formalism.SharpRestriction.GrowthBounds.Bundle0003
 
 @[expose] public section
 

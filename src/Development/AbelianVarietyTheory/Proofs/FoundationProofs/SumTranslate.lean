@@ -1,21 +1,19 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Foundations.IsZetaSystemFixedExponent
-public import Development.AbelianVarietyTheory.Definitions.Foundations.AdmissibleNewformZetaData
-public import Development.AbelianVarietyTheory.Definitions.Foundations.AdmissibleHodgeTateZetaClassParams
-public import Development.AbelianVarietyTheory.Definitions.Foundations.HTPresNuOfPolys
+public import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0024
+public import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0025
+public import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0023
 public import Development.AbelianVarietyTheory.Definitions.Foundations.IsLamOfLSmulIff
-public import Development.AbelianVarietyTheory.Definitions.Foundations.HtCoIOfEq
+public import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0022
 public import Development.AbelianVarietyTheory.Definitions.Foundations.IsLamFROfIsLamF
-public import Development.AbelianVarietyTheory.Definitions.Foundations.IsLamFR2
-public import Development.AbelianVarietyTheory.Definitions.Foundations.ChiProj
-public import Development.AbelianVarietyTheory.Definitions.Foundations.CoPtMu
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.NormLPowLe
+public import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0010
+public import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0006
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0377
 public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.UntwistedRepresentationOrdinaryTriangularShape
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ShCocQuotCoord
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0068
 public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.KumValSubMem
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.PieceTUnitSetMuModelSmoothedSb
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0129
 
 @[expose] public section
 

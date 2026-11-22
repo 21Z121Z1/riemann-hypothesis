@@ -1,16 +1,16 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.AvgVanish
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LocallyConstantCompactSupportUnipotent
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0385
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0418
 public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MirabolicDoubleCosetDecomposition
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MirabolicCellStructureData
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.DerivativeTwistedIso
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ProjectionToTwistedEigenfunctionSupport
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsMemTwKerPolyBall
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsRepsSumEqZero
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ContinuousMatMir
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsIntertwinerOfEquiv
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0420
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0434
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0380
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0372
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0374
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0357
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0408
 
 @[expose] public section
 

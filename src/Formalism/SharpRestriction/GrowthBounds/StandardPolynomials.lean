@@ -1,9 +1,8 @@
 module
 
 public import Formalism.SharpRestriction.GrowthBounds.CoarseMultiplicity
-public import Formalism.SharpRestriction.GrowthBounds.StandardPolynomials.RestAssumptionsOfThreeInterfaces
-public import Formalism.SharpRestriction.GrowthBounds.StandardPolynomials.RestTCore
-public import Formalism.SharpRestriction.GrowthBounds.StandardPolynomials.ColTop
+public import Formalism.SharpRestriction.GrowthBounds.StandardPolynomials.Bundle0009
+public import Formalism.SharpRestriction.GrowthBounds.StandardPolynomials.Bundle0013
 public import Formalism.SharpRestriction.GrowthBounds.StandardPolynomials.ColumnPolynomialCovectorZero
 
 @[expose] public section

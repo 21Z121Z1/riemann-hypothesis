@@ -4,8 +4,11 @@ public import Mathlib
 public import Development.WeilBound.CoreStatements.AbelianHeightsDuality.ArakelovSingularities.ExtLBAmb
 public import Development.WeilBound.CoreStatements.AbelianHeightsDuality.ArakelovSingularities.MetricGlue
 public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.UnderEqGenericPoint
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ArithHeightsAndFormsOfIntersectionAndInductiveStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ArithIntersectionCalculusOfFormMixedProjectionStatement
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1173
+public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.Bundle0015
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NontrivialIsomClassInt
+public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.Bundle0016
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1195
 
 @[expose] public section
 

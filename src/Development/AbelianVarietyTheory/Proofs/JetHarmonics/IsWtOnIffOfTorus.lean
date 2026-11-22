@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Formalism.PeriodIntegrals.UpqRep
-public import Development.AbelianVarietyTheory.BlockTheory.JetGauges.HarishChandraParameters
+public import Development.AbelianVarietyTheory.BlockTheory.JetGauges.Bundle0001
 
 @[expose] public section
 

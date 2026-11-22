@@ -2,10 +2,11 @@ module
 
 public import Mathlib
 public import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.RealDescent.RealLeviDescent.HighestVectorsRegularLine
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.WtRInjective
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SumMemOfStable
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.UnitaryEuclideanModelStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.InvariantIntertwinesDualStatement
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0384
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0382
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0383
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0360
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0392
 
 @[expose] public section
 
@@ -126,7 +127,7 @@ theorem dual_weight (hG : IsDualFam E G) (μ : Fin n → ℤ) {v : E.V →L[ℂ]
 theorem exists_stable_compl (E : KMod n) (K : Submodule ℂ (E.V →L[ℂ] ℂ)) (hK : ∀ k, ∀ ξ ∈ K, ξ ∘L E.ρ k⁻¹ ∈ K) :
     ∃ N : Submodule ℂ (E.V →L[ℂ] ℂ), (∀ k, ∀ ξ ∈ N, ξ ∘L E.ρ k⁻¹ ∈ N) ∧ (∀ x ∈ K, x ∈ N → x = 0) ∧
       ∀ ξ, ∃ x ∈ K, ∃ y ∈ N, ξ = x + y := by
-  obtain ⟨e, ρ', -, hi, he⟩ := GlobalTheory.T.unitary_euclidean_model E
+  obtain ⟨e, ρ', -, hi, he⟩ := _root_.GlobalTheory.CompanionTheory.RealCount.dualRep_exists E
   have hin : ∀ k x y, ⟪ρ' k x, ρ' k y⟫_ℂ = ⟪x, y⟫_ℂ := fun k x y =>
     (LinearIsometry.mk (ρ' k).toLinearMap (hi k)).inner_map_map x y
   let Ke := K.map e.toLinearMap
@@ -258,7 +259,7 @@ theorem eq_zero_of_hw : ∀ {n : ℕ} (V : Type) [NormedAddCommGroup V] [InnerPr
   have hyh : y ∈ hwOf G (wtR μ) := by
     refine ⟨fun a => dual_weight hG μ hyw a, fun a b hab _ => ?_⟩
     refine hdisj _ ?_ (dual_entry_mem hG N hNs a b hy)
-    rw [LinearMap.mem_ker, GlobalTheory.T.invariant_intertwines_dual V σ (kF E1 E2) hK E G hG t ht a b y, hty]
+    rw [LinearMap.mem_ker, _root_.GlobalTheory.CompanionTheory.RealCountG.Intertw.intertwines V σ (kF E1 E2) hK E G hG t ht a b y, hty]
     exact hhw.2 a b hab rfl
   have hne : wtDual E μ ≠ ⊥ := by
     intro h

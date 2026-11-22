@@ -3,7 +3,7 @@ module
 public import Mathlib
 public import Formalism.LocalToGlobal.Divisibility.DefGroup
 public import Development.AbelianVarietyTheory.PublishedTheorems.PublishedFoundations.BlockTriangularOfSubOne
-public import Development.AbelianVarietyTheory.Definitions.Foundations.SmoothPartStable
+public import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0002
 public import Development.AbelianVarietyTheory.Definitions.Divisors.SplitDoublingNBlock
 
 @[expose] public section

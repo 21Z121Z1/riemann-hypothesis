@@ -3,8 +3,8 @@ module
 public import Mathlib
 public import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.WeilTensorModels
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ContinuousAtPlace
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SchroedingerOperatorHeisenbergInnerPreserving
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SchwartzBruhatLinearFunctional
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0274
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0026
 
 @[expose] public section
 

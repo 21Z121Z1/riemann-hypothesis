@@ -1,7 +1,7 @@
 module
 
 public import Formalism.LocalToGlobal.GroupLattices.FockModels.TransposeWords.FockPairingHighestWeight
-public import Formalism.GradedWeylDivisibility.FockSpaceTableaux.ColSums
+public import Formalism.GradedWeylDivisibility.FockSpaceTableaux.Bundle0003
 
 @[expose] public section
 

@@ -1,6 +1,6 @@
 module
 
-public import ReciprocityTheory.AnalyticForms.RegularLocalRings.MemConePtsIffChartIdeal
+public import ReciprocityTheory.AnalyticForms.RegularLocalRings.Bundle0007
 
 @[expose] public section
 

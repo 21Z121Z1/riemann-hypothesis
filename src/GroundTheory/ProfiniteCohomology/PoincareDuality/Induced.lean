@@ -3,7 +3,7 @@ module
 public import Mathlib
 public import GroundTheory.ProfiniteCohomology.PoincareDuality.InducedDual
 public import GroundTheory.ProfiniteCohomology.PoincareDuality.TensorHomZmodDualIsoZmodMulPairing
-public import GroundTheory.ProfiniteCohomology.CupProducts.CohomologyMapRightUnitorCupUnitClass
+public import GroundTheory.ProfiniteCohomology.CupProducts.Bundle0001
 public import GroundTheory.ProfiniteCohomology.Characters
 
 @[expose] public section

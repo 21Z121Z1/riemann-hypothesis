@@ -1,6 +1,6 @@
 module
 
-public import Formalism.SharpRestriction.GlobalSchurBounds.TheoremThreeUnderScaleOfGeneral
+public import Formalism.SharpRestriction.GlobalSchurBounds.Bundle0005
 
 @[expose] public section
 

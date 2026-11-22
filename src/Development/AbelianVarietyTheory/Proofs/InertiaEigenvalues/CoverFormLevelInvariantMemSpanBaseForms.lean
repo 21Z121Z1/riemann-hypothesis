@@ -1,16 +1,16 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.IntFormsSubset
+public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0020
 public import Development.AbelianVarietyTheory.Definitions.HeightFunctions.XiValIffXiAt
-public import Development.AbelianVarietyTheory.Definitions.ExistenceOfLattices.CoeSelfDualLatticeInFrameCoordinatesEq
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.MulVecMemIdealLatHat
+public import Development.AbelianVarietyTheory.Definitions.ExistenceOfLattices.Bundle0001
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0559
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RightTranslationLiftEqLevelMoveUnitConst
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MovedSectionReadingEqMovedFrameReading
-public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.MemCuspFormsOfMultipleRationalIsometryMove
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1467
+public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0153
 public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsCoversOfHalves
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.BaseCoverFramesDifferByRationalIsometry
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsCoverDictionaryAdelicElementComponent
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0673
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0764
 public import Development.AbelianVarietyTheory.Counterexamples.ThetaValuation.CongruenceSpanLevel
 
 @[expose] public section
@@ -84,7 +84,7 @@ theorem exists_carries (hU : IsUnf U) (hW : ∀ k, ModelW V hr (U.X k))
   obtain ⟨γ₂, hγ₂, hΛ₂, hm₂, hfr₂⟩ := hD.2 (δ * h * u)
   obtain ⟨a, hau, haf, haa⟩ := GlobalTheory.MarkCoset.rational_matrix V (γ₂ * δ * γ₁⁻¹) (mul_mem (mul_mem hγ₂ hδ) (inv_mem hγ₁))
   have hu1 : finHom V u = 1 := hu
-  have hκ' : latGHat V u = latGHat V 1 := ((GlobalTheory.T.adelicUnitaryLattice_rationalTranslate_invariance D V).2.1 _ _ (by rw [hu1, map_one])).2
+  have hκ' : latGHat V u = latGHat V 1 := ((_root_.GlobalTheory.Member.latG_move D V).2.1 _ _ (by rw [hu1, map_one])).2
   have hprod : γ₂ * δ * γ₁⁻¹ * (γ₁ * h) * u = γ₂ * (δ * h * u) := by group
   obtain ⟨gam, e₁, t₁, hgam⟩ := GlobalTheory.TwistTie.marked_isometry_half V l io (U.X (dict h).1) (U.X (dict (δ * h * u)).1) _ _
     (φ _) (φ _) (F.t _) (F.t _) LinearMap.id (γ₁ * h) (γ₂ * δ * γ₁⁻¹) u (hW _) (hW _) (hD.1.1 _) (hD.1.1 _) a hau haf hκ'
@@ -109,7 +109,7 @@ theorem exists_carries (hU : IsUnf U) (hW : ∀ k, ModelW V hr (U.X k))
       simp only [hli] at e₁
       exact e₁ ▸ (φ _ _).2
   refine ⟨a, ⟨hm, (hG _).trans (hG _).symm, gam, e₁, t₁, hgam⟩, funext fun τ => ?_⟩
-  obtain ⟨hAr, -, -⟩ := GlobalTheory.T.archimedeanMatrix_unitary_continuous_multiplicative D V θ hθ
+  obtain ⟨hAr, -, -⟩ := _root_.GlobalTheory.Member.Arch.archM_spec D V θ hθ
   have h1 := hfr₁ ⟨τ.1, hm.mem τ⟩
   have h2 := hfr₂ τ
   rw [GlobalTheory.LettersCheck.isInfEmb_unique _ _ _ (hth _ ⟨τ.1, hm.mem τ⟩) (hθ τ.1)] at h1
@@ -133,7 +133,7 @@ theorem orth_and_onto (hU : IsUnf U) (hW : ∀ k, ModelW V hr (U.X k))
       ∃ u ∈ GinfC V, y = rmul (dict h).2 (realFr V hr θ x₀ u _) := by
   subst hr
   obtain ⟨γ, -, -, -, hfr⟩ := hD.2 h
-  obtain ⟨hAr, -, hL⟩ := GlobalTheory.T.archimedeanMatrix_unitary_continuous_multiplicative D V θ hθ
+  obtain ⟨hAr, -, hL⟩ := _root_.GlobalTheory.Member.Arch.archM_spec D V θ hθ
   have hG : ∀ k, (U.X k).Gm = -V.gramᵀ := fun k => (hW k).1
   have hfr' : ∀ τ, mat (dict h).2 τ = archM V (θ τ.1) (γ * h) * x₀ τ.1 := fun τ => by
     rw [hfr τ, GlobalTheory.LettersCheck.isInfEmb_unique τ.1 _ _ (hth _ τ) (hθ τ.1)]

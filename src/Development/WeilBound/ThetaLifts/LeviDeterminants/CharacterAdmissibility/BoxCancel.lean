@@ -1,6 +1,6 @@
 module
 
-public import Development.WeilBound.ThetaLifts.LeviDeterminants.CharacterAdmissibility.SchrodingerApplyZeroOfFst
+public import Development.WeilBound.ThetaLifts.LeviDeterminants.CharacterAdmissibility.Bundle0001
 
 @[expose] public section
 

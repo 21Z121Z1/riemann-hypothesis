@@ -2,14 +2,14 @@ module
 
 public import Mathlib
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.UniformisationConclusion
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.HeckeKer
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.Bundle0003
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.IsHolPeriods
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.UnifUniqSt
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.IsMonHomOfMul
 public import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.LocGenOfTrivial
 public import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.SymmetricLiftOddOrderExistsUnique
 public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.LbPowDescendsOfIsotropic
-public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.SeesawRigidifiedLineBundleDenseFibresStatement
+public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0170
 
 @[expose] public section
 
@@ -356,7 +356,7 @@ theorem sym_and_linearisation_odd : Out.Laws → ∀ (R : Type) [CommRing R] [Is
         HasGen M (fun k => φ ≫ ψ k) ![1, -1]) →
       HasGen M (K := Fin 4) ![ψ 0, ψ 1, (1 : A ⟶ A).left ≫ ψ 0, (1 : A ⟶ A).left ≫ ψ 1] ![1, -1, -1, 1] := by
     intro ψ H
-    refine GlobalTheory.T.seesaw_rigidified_lineBundle_dense_fibres R A M _ Sg hA hM hample (DVR.linComb_isLB M hM _ _) hd
+    refine _root_.GlobalTheory.seesaw_rigidified_of_dense R A M _ Sg hA hM hample (DVR.linComb_isLB M hM _ _) hd
       ((pull_iff _ _ _).2 (hasGen_of_trivial hM fun U _ h => ?_)) fun p hp => ?_
     · simp only [Fin.prod_univ_four, Matrix.cons_val_zero, Matrix.cons_val_one, Matrix.cons_val,
         ← Category.assoc, eo]

@@ -1,11 +1,11 @@
 module
 
 public import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.ThetaParseval.SchurStep
-public import Development.WeilBound.ThetaLifts.LatticeBasics.CommuteTheta
-public import Development.WeilBound.ThetaLifts.LatticeBasics.EulerProd
-public import Development.WeilBound.ThetaLifts.TowerModels.StabEx
+public import Development.WeilBound.ThetaLifts.LatticeBasics.Bundle0016
+public import Development.WeilBound.ThetaLifts.LatticeBasics.Bundle0010
+public import Development.WeilBound.ThetaLifts.TowerModels.Bundle0006
 public import Development.WeilBound.ThetaLifts.LocalTheory.ArchimedeanBumps.TracePiReal
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdeleEqZeroOfComp
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1861
 
 @[expose] public section
 

@@ -2,18 +2,19 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.Jets.BasicLiftAll
-public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.JdPolyOKPolynomialOperators
-public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.QuantumMinorSumPolynomialOperatorStatement
-public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.CapelliDetConjugateTopCoefficientStatement
-public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.AntisymProdEqSumQuantumMinorStatement
-public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.LeibnizDetFrameMatrixMatrixUnitStatement
-public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.RightOperatorDualMemOfInfiniteStatement
-public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.ExistsDualMatrixFrameFvecStatement
+public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0072
+public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0143
+public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0076
+public import Formalism.RealPlaceAnalysis.RealPlaceTaylor.Bundle0006
+public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0069
+public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0073
+public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.ConjugateTransposeLeibniz.YOperatorLeibnizRule
+public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0078
 public import Formalism.HermitianCurvature.HermitianCurvatureProofs.BasicLift
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.ActualAlgebraFacts
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.LiftCapelliOperators
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.LiftOfFunctions
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.TopFirstOfParts
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0155
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0164
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0193
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0187
 
 @[expose] public section
 
@@ -173,7 +174,7 @@ theorem row_mul_det (q : Fin (r + 1 + (r + k)) → ℂ) (a : Fin (r + 1 + (r + k
     rw [evAt_apply, evAt_apply, Module.End.mul_apply, unitE, level_generator_apply _ _ _ _ hg, level_generator_apply _ _ _ _ hg,
       (Qx2.good_eh (isOpen_dom z z') _ _).loc _ (fun x => (Zhat k r z z' x).det • (F : Q.Mx k r → E) x)
         (fun x hx => mulE_apply _ hs F hx) g hg,
-      GlobalTheory.T.leibniz_det_frameMatrix_matrixUnit E k r z z' _ _ _ _ F.2.1 g hg]
+      _root_.GlobalTheory.HatNF.DetLeibniz.det_leibniz E k r z z' _ _ _ _ F.2.1 g hg]
     simp only [posL_cast]
     rfl
   rw [Finset.sum_mul]
@@ -226,7 +227,7 @@ theorem group_identity (hz' : inWb k r z') (hT : 0 < Tz k r z') (Y : ℂ) :
   have hνs : ∀ a j, ContDiffOn ℝ ∞ (ν a j) {g | dZ z z' g ≠ 0} := fun a j =>
     (hs.inv fun x hx => hx).mul (contDiff_of_poly (cramer_poly z z' a j)).contDiffOn
   have hGl : GlRel (unitE z z' E) := glRel_cast (dim_eq k r) (level_generators_gl_relations generator_gl_level 0 (isOpen_dom z z'))
-  have top := GlobalTheory.T.capelliDet_conjugate_top_coefficient _ (r + 1) (r + k) (unitE z z' E) Qm (mulE E (isOpen_dom z z') (dZ z z'))
+  have top := _root_.GlobalTheory.CapelliTop.top_coefficient _ (r + 1) (r + k) (unitE z z' E) Qm (mulE E (isOpen_dom z z') (dZ z z'))
     (fun a j => mulE E (isOpen_dom z z') (ν a j)) u hGl
     (fun a j => end_ext _ fun G x hx => by
       have h := row_mul_det z z' (fun d => Qm (Fin.castAdd (r + k) j) d) a G hx
@@ -245,7 +246,7 @@ theorem group_identity (hz' : inWb k r z') (hT : 0 < Tz k r z') (Y : ℂ) :
     (fun a j => end_ext _ fun G x hx => by
       rw [Module.End.mul_apply, Module.End.mul_apply, mulE_apply _ hs _ hx, mulE_apply _ (hνs a j) _ hx,
         mulE_apply _ (hνs a j) _ hx, mulE_apply _ hs _ hx, smul_comm])
-  have mnr := GlobalTheory.T.antisym_prod_eq_sum_quantumMinor _ (r + 1) (r + k) (unitE z z' E) (fun l d => Qm (Fin.natAdd (r + 1) l) d) (lam z g)
+  have mnr := _root_.GlobalTheory.ScalarColsMinor.antisym_prod_eq_sum_qminor _ (r + 1) (r + k) (unitE z z' E) (fun l d => Qm (Fin.natAdd (r + 1) l) d) (lam z g)
     ((Zhat k r z z' g)⁻¹).transpose (u - ((r + 1 : ℕ) : ℂ))
   set F0 := (levData E 0 (isOpen_dom z z')).toV F hFs with hF0
   have hF0v : ∀ x ∈ Q.Glev k r 0 ∩ {g | dZ z z' g ≠ 0}, (F0 : Q.Mx k r → E) x = F x := fun x hx => level_restriction_apply_on F hx
@@ -464,7 +465,7 @@ theorem lift_regular {d : Q.NFData P (RA P Bs)} (hD : P5.IsData P Bs.z Bs.z' Bs.
   have hL := hD.2.2.1
   have hdL := hd.1
   obtain ⟨Qm, w, hG⟩ := group_identity (E := Wq →L[ℂ] Wp) Bs.z Bs.z' Bs.z'_mem Bs.T'_pos (y : ℂ)
-  obtain ⟨Θ, hΘ, hap⟩ := GlobalTheory.T.quantumMinor_sum_polynomialOperator Wp Wq P.k P.r (P.r + P.k) (P.r + 1 + (P.r + P.k)) _
+  obtain ⟨Θ, hΘ, hap⟩ := _root_.GlobalTheory.HatNF.MinorPoly.minor_polyOp Wp Wq P.k P.r (P.r + P.k) (P.r + 1 + (P.r + P.k)) _
     (fun i : (Fin (P.r + P.k) → Fin (P.r + 1 + (P.r + P.k))) × (Fin (P.r + P.k) → Fin (P.r + 1 + (P.r + P.k))) =>
       pos P.k P.r ∘ i.1) (fun i => pos P.k P.r ∘ i.2) w (fun i g => -coef Bs.z Qm i g)
     (fun i => by

@@ -1,14 +1,13 @@
 module
 
 public import Development.AbelianVarietyTheory.Definitions.Divisors.RangeShape
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PBConjTranspose
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.StR
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1080
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1084
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ContinuousDen
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConjDiagReNonneg
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.StExpDeriv
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1054
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1085
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConjTransposeSignFormDiagEqSignedSumCol
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IteratedDerivScale
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.StConstHolds
 public import Mathlib
 
 @[expose] public section

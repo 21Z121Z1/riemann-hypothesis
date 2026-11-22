@@ -1,6 +1,6 @@
 module
 
-public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.InjPrimeTo
+public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0010
 public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.SixthDecomposition
 public import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.StringRepresentations.RowRepAtGN
 

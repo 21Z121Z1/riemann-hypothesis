@@ -1,19 +1,19 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Divisors.TorMatch
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SiegelTraitCharacterGroupFinrankLeGenusThree
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsNoetherianRingStalk
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsDiagOfMatRel
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EndCharExistsOfIsMonHom
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EssFiniteTypeIntStalk
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsMatEnd
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BetaPos
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsSurjectiveDiagonalLatticeMapTraitStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsMinimalPsiCoordinateAssociatedFourierPowerStatement
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.PsiCoordExistsUniqueUpToUnitLocal
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DeeperThetaValueGaloisConjugateExtension
-public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.IsSemiAbelianOfGenericAbelianOfClosedIsGt
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0066
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2113
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2800
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2343
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2335
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2337
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2353
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2326
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2794
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2840
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0049
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2499
+public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.Bundle0097
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.ChartPullbacks.UniformBaseChange.PullGt
 
 @[expose] public section
@@ -180,7 +180,7 @@ theorem GlobalTheory.Poinc.Clocx.exists_at_closedPoint : ∀ (g n : ℕ), 1 ≤ 
   choose m hm using hm
   have key := fun (T : Trait F) (ξ : Sp T.V ⟶ M.Z) (hT : ThroughU M U₀ FinalForm.u₀ u T ξ)
       (hs : ξ (IsLocalRing.closedPoint T.V) ⤳ x) =>
-    GlobalTheory.T.exists_surjective_diagonal_lattice_map_trait g n hg hn hodd F W hW o' Ω S ρ hBig M U₀ EE FinalForm hAdm hEE x hx u c pr hSB R j hB hcpl G gm hpb D A U
+    _root_.GlobalTheory.Poinc.Eq8.TraitOne.main g n hg hn hodd F W hW o' Ω S ρ hBig M U₀ EE FinalForm hAdm hEE x hx u c pr hSB R j hB hcpl G gm hpb D A U
       hLB hpsiU m hm T ξ hT hs
 
   obtain ⟨T₀, ξ₀, hT₀, hξ₀⟩ :=
@@ -213,7 +213,7 @@ theorem GlobalTheory.Poinc.Clocx.exists_at_closedPoint : ∀ (g n : ℕ), 1 ≤ 
         (x₀ : S.Gam), S.IsoFree T₁ ∧ ee = S.FF T₁ c' κ / S.th x₀) ∧
       M.stalkHom x aa = ee ^ S.N ∧ ∀ r, PsiCoord D.toPre mu r → Associated (j aa) r := by
     intro cl
-    obtain ⟨mu, h1, h2, ee, aa, h3, h4, h5, h6⟩ := GlobalTheory.T.exists_minimal_psiCoordinate_associated_fourierPower o' Ω S ρ hBig M U₀ EE FinalForm hAdm hEE x hx R j hB hcpl G
+    obtain ⟨mu, h1, h2, ee, aa, h3, h4, h5, h6⟩ := _root_.GlobalTheory.QUnit.main o' Ω S ρ hBig M U₀ EE FinalForm hAdm hEE x hx R j hB hcpl G
       gm hpb D A U hLB hpsiU (κE.symm (cz cl))
     exact ⟨mu, ee, aa, h1, h2, h3, h4, h5, h6⟩
   choose mu ee aa hmuC hmuMin hee hFF hEa hassoc using hQ

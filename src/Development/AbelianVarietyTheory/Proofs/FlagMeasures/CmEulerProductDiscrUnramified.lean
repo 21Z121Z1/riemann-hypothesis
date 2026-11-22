@@ -1,12 +1,12 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.BlockTheory.GlobalSignature.SelfDualUnramifiedPlaces
-public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.GaugeUnfold
+public import Development.AbelianVarietyTheory.BlockTheory.GlobalSignature.Bundle0002
+public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.Bundle0011
 public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.IsFieldAdicCompletionTensorOfInert
-public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.NotIsFieldAdicCompletionTensorOfSplit
-public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.QuadraticUnramifiedIffInertOrSplit
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.RootDiscrGeThreeHalvesOfIsTotallyComplex
+public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0038
+public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0007
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0057
 public import Formalism.GL3MeanSquares.HookFormulaTorsion.SumWeightsOverPrimeLeHalfDegree
 
 @[expose] public section

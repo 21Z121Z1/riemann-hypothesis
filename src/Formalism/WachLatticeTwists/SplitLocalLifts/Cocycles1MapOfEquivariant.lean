@@ -1,8 +1,7 @@
 module
 
 public import Formalism.WachLatticeTwists.SplitLocalLifts.Statement
-public import Formalism.WachLatticeTwists.CoprimeLiftBounds.StatBridgeChiOne
-public import Formalism.WachLatticeTwists.CoprimeLiftBounds.SelmerInjColumnPlace
+public import Formalism.WachLatticeTwists.CoprimeLiftBounds.Bundle0001
 public import Formalism.WachLatticeTwists.Statement
 public import Formalism.CharacterColumnKernels.CharacterColumnKernelEqualityForm
 public import Formalism.WachLatticeTwists.LatticeDualFibres.Statement

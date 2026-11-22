@@ -5,8 +5,8 @@ public import Development.AutomorphicArithmetic.Foundations.IwahoriReduction.Nor
 public import Development.AutomorphicArithmetic.Foundations.IwahoriReduction.NormProducts.EvalSmulCong
 public import Development.AutomorphicArithmetic.Foundations.IwahoriReduction.NormProducts.SlFixPoly
 public import Development.AutomorphicArithmetic.Foundations.IwahoriReduction.NormProducts.NegOneNot
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ModularFunctionTowerIntegrality
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.SlMulToRingEquiv
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0139
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0349
 public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.TowerUnitClassModPrimePowProperties
 
 @[expose] public section

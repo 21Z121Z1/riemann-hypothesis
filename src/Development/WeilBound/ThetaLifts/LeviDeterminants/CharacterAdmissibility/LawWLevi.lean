@@ -5,8 +5,8 @@ public import Development.WeilBound.ThetaLifts.LeviDeterminants.CharacterAdmissi
 public import Development.WeilBound.ThetaLifts.LeviDeterminants.CharacterAdmissibility.FrOfFrame
 public import Development.WeilBound.ThetaLifts.LeviDeterminants.CharacterAdmissibility.AdelInt
 public import Development.WeilBound.ThetaLifts.LeviDeterminants.LagrangianUniqueness.LagLine
-public import Development.WeilBound.ThetaLifts.LeviDeterminants.DoubledUnitaryCharacterTrivialOfSiegel
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsUnitDetGramOfHermitianSelfDualLatticeSpace
+public import Development.WeilBound.ThetaLifts.LeviDeterminants.Bundle0004
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1003
 
 @[expose] public section
 
@@ -27,7 +27,7 @@ theorem ax_of (hA : PositivityTheory.Mix.AdelSt) {ψ : AddChar (AF F) ℂ} (hψ 
   by
     have hb : AxB (adeleClass F) ψ := by
       constructor
-      · exact fun κ _ => (GlobalTheory.T.theta_distribution_heisenberg_invariant F κ ψ hψ.1 (isStd_ne_one hψ) hψ.2.1).1
+      · exact fun κ _ => (_root_.GlobalTheory.CompanionTheory.AdelicHeis.schr_mem_and_thetaSum F κ ψ hψ.1 (isStd_ne_one hψ) hψ.2.1).1
       · intro κ _
         obtain ⟨φ, h, h0⟩ := GlobalTheory.SchANonzero.exists_mem_schA_ne_zero F κ
         exact ⟨φ, h, fun e => h0 (congrFun e 0)⟩

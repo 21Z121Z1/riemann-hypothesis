@@ -2,7 +2,7 @@ module
 
 public import Formalism.HermitianCurvature.StatementM
 public import Formalism.HermitianCurvature.StatementLE
-public import Formalism.HermitianCurvature.LetterProductDoubleDegreeCount
+public import Formalism.HermitianCurvature.Bundle0005
 
 @[expose] public section
 

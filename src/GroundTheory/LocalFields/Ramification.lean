@@ -5,7 +5,7 @@ public import GroundTheory.LocalFields.Interface
 public import GroundTheory.LocalFields.Uniqueness
 public import GroundTheory.LocalFields.Integers
 public import GroundTheory.LocalFields.UnitsBasic
-public import GroundTheory.LocalFields.UnitsPowers
+public import GroundTheory.LocalFields.Bundle0002
 
 @[expose] public section
 

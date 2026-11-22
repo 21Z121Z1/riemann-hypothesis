@@ -1,22 +1,24 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.GoodGeneric
+public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.Bundle0017
 public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisGeometry₂.HoweUnram
 public import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.IsStepWeil
-public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.HarishChandraFinite
-public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.ExistsNormLeHeightPow
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.HeckeCharacterisationPlacesPartsOfWeakStatement
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.PartsEqOfSameEigensystemThetaAdjointStatement
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ThetaIntertwinesMatchedOperatorsStatement
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.SphericalOperatorsFormsOnRankSpaceNormalStatement
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.RealizationFamilyNormalOperatorsStatement
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.GoodProjectorUnitaryFormsModelLaws
+public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.Bundle0004
+public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.Bundle0007
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0148
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0185
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0166
+public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.Bundle0015
+public import Formalism.SatakeDualWeyl.KpqSubgroupCompact
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0152
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0159
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0117
 public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.SpanImageMaxGenEigenspace
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExistsLevelVectorGoodTypeStableSubspace
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.GoodFormsBaseLevelIffGoodProjection
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RangeComplexPointsLevelFormsEqGoodForms
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.RationalZeroIffRationalSubspace
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0118
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0147
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0968
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0127
 public import Formalism.LocalToGlobal.IndefiniteReal.BaseLiftsPackageOfPrimitiveLinks
 
 @[expose] public section
@@ -360,7 +362,7 @@ theorem witness_real {I : Type} (R : RealDat D A Ks) (F : Face D A) (hCore : Cor
       R.thG j A.μ0 (R.jV j A.μ0 x) ∈ Wcc R SF j c ∧ R.thG j A.μ0 (R.jV j A.μ0 x) ≠ 0 ∧
       labW j pl cW c = fun i => D.what₂.embLL (sy i) := by
   have hM := hCore.models
-  refine Exists.elim (GlobalTheory.T.sphericalOperators_forms_on_rank_space_normal R F hCore hSch hirr SF hSF j) fun h hh => ?_
+  refine Exists.elim (_root_.GlobalTheory.SphOpsModel.sphericalOperators_forms_on_rank_space_normal_alt R F hCore hSch hirr SF hSF j) fun h hh => ?_
   have hOpsW := hh.1
   have hNorm := hh.2.1
   have hSup := hh.2.2.2.1
@@ -370,7 +372,7 @@ theorem witness_real {I : Type} (R : RealDat D A Ks) (F : Face D A) (hCore : Cor
   refine Exists.elim ((GlobalTheory.T.realization_family_normal_operators R F hCore.lev hCore.fam hCore.models).2 j A.μ0) fun hV hh' => ?_
   have hOpsV := hh'.1
   have hNormV := hh'.2
-  have hsys := fun i => GlobalTheory.T.theta_intertwines_matched_operators R F hCore hSch hirr SF hSF j A.μ0 (pl i) (hgood i) (cV i) (cW i) (hmat i) hV hOpsV
+  have hsys := fun i => _root_.GlobalTheory.SysW.matched_operators_theta_intertwine R F hCore hSch hirr SF hSF j A.μ0 (pl i) (hgood i) (cV i) (cW i) (hmat i) hV hOpsV
   have hlaws := GlobalTheory.Hk3.eH_laws R F hCore hirr j
   have heH : ∀ c, ∀ x ∈ Wcc R SF j c, eH R j x = x := by
     intro c x hx
@@ -451,7 +453,7 @@ section Main
 set_option maxHeartbeats 4000000 in
 theorem exists_good_eigenform : HoweUnram → ∀ {D : D7} {G : Type} [Group G] [Fintype G] {Pl0 I0 T : Type} {A3 : FamIn3 D.what₂.LL G Pl0 I0 (List ℕ) T D.R.m} {Ks : Type} [Field Ks] [NumberField Ks] [Algebra Ks D.what₂.LL] (R : RealDat3 D A3 Ks) (F : Face3 D A3), GlobalTheory.Chain.LiftInteg D → R.WeakCharacterisation F → R.toRealDat.ExAt → SchurAll R.toRealDat → InertJunk A3 → ∀ s, A3.fam3.Ok3 s → GoodGeneric A3.A.X F.P0 F.ψ0⁻¹ → R.toRealDat.LUnif → R.PGUnit F → R.PGEquiv F → R.PLevW F → R.PThmA → (0 < R.kap ∧ ∀ i t p, 0 < R.lam3 i t p A3.A.v0) → ∀ j pl cV cW, LiftDict R j A3.A.μ0 pl cV cW → ∀ p c, R.Carries p c → R.Wc' j c ≠ ⊥ → ∃ (sy : (A3.liftI j A3.A.μ0).OpIx → D.what₂.LL) (x : (A3.A.fam.L j A3.A.μ0).S.Forms), x ∈ BlockGood.goodR (A3.A.fam.L j A3.A.μ0) (A3.A.fam.lvlA F.P0 F.ψ0) ∧ (∀ i, (A3.liftI j A3.A.μ0).opAll i x = sy i • x) ∧ R.thG j A3.A.μ0 (R.jV j A3.A.μ0 x) ∈ R.Wc' j c ∧ R.thG j A3.A.μ0 (R.jV j A3.A.μ0 x) ≠ 0 ∧ labW j pl cW c = fun i => D.what₂.embLL (sy i) := by
   intro hHowe D G _ _ Pl0 I0 T A3 Ks _ _ _ R F hLI hC hEx hSch hJunk s hOk hGG hLU hGU hGE hLW hThA hPos j pl cV cW hDict p c hCar hne
-  have hcore := GlobalTheory.T.heckeCharacterisation_places_of_weakCharacterisation R F hC
+  have hcore := _root_.GlobalTheory.CoreThree.heckeCharacterisation_places_parts_of_weak R F hC
   have hCore := hcore.1 hEx
   have hSF := hcore.2.1
   have hWeq := hcore.2.2.2.2.2.1

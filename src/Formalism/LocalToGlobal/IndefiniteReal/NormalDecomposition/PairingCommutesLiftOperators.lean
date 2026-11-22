@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Formalism.LocalToGlobal.IndefiniteReal.NormalDecomposition.LiftHeckeOperators
-public import Formalism.LocalToGlobal.IndefiniteReal.MajAtEqZeroOfMemQpOfNe
+public import Formalism.LocalToGlobal.IndefiniteReal.Bundle0017
 
 @[expose] public section
 

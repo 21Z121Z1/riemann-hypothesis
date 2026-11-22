@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ClosureOperatorFacts
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0192
 
 @[expose] public section
 

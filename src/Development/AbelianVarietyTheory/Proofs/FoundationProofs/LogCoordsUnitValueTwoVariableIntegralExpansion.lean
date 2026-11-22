@@ -1,17 +1,19 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Foundations.ApplyEqOfMemAdjoin
-public import Development.AbelianVarietyTheory.Definitions.Foundations.IsTopWTopWOfExists
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsBasisOnZetaPowMulQPow
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsIsDlog
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.IsDlogCoef
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.TowerLevelEmbeddingInjectiveRangeAdjoinRootsStatement
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.IsIntPrimeDivRootOfUnitySubOnePowStatement
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.EvalSeriesAndDerivUniqueOfCoefficientsStatement
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.EvalSeriesCongIffCoeffAndIsUnitStatement
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.EvOfFintype
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.IsAlgZpOfPow
+public import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0010
+public import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0003
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0025
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0026
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0051
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0112
+public import Development.AbelianVarietyTheory.Definitions.Foundations.NotCoboundaryConstantOne
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0035
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0066
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0113
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0132
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0095
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0118
 
 @[expose] public section
 
@@ -370,7 +372,7 @@ theorem local_coords : ∀ (p : ℕ) [Fact p.Prime] (Ωl : Type) [Field Ωl] [Al
     rw [hxe, hw0]
     set_option synthInstance.maxHeartbeats 100000 in
       simp only [map_sum, map_mul, map_pow, AlgHom.commutes, hι.1, hι.2, Int.cast_one, one_mul]
-  obtain ⟨w, hwu⟩ := isUnit_of_inv ι (GlobalTheory.T.towerLevelEmbedding_injective_range_adjoinRoots p Ω hc T (m + 1) hL ι hι).1 w0 (hw ▸ hx0) (hw ▸ hxi)
+  obtain ⟨w, hwu⟩ := isUnit_of_inv ι (_root_.GlobalTheory.K5.LevEmb.emb_inj_range p Ω hc T (m + 1) hL ι hι).1 w0 (hw ▸ hx0) (hw ▸ hxi)
   obtain ⟨α, β, hd⟩ := GlobalTheory.K5.exists_isDlog p (m + 1) w
   obtain ⟨d1, d2⟩ := coef m a w α β (hwu.trans hw0) hd
   obtain ⟨f1, d1⟩ := Ideal.mem_span_singleton'.1 d1

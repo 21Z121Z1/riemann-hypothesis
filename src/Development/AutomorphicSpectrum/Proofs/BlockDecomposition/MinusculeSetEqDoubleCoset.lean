@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Development.WeilBound.CoreStatements.PublishedTheorems.JacquetShalikaBound.lift_levelP_alt₂
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.NormSatakeLeOfUnitarySphericalGL
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0214
 public import GroundTheory.AutomorphicForms.SphericalMinuscule
 
 @[expose] public section

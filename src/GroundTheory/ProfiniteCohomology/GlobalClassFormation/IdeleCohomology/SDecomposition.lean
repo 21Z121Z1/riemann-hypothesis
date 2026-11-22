@@ -2,8 +2,7 @@ module
 
 public import Mathlib
 public import GroundTheory.GlobalFields.IdeleGroups.SIdeleGroups.Decomposition
-public import GroundTheory.ProfiniteCohomology.GlobalClassFormation.IdeleCohomology.Infinite
-public import GroundTheory.ProfiniteCohomology.GlobalClassFormation.IdeleCohomology.Integral
+public import GroundTheory.ProfiniteCohomology.GlobalClassFormation.IdeleCohomology.Bundle0001
 public import GroundTheory.ProfiniteCohomology.GlobalClassFormation.IdeleCohomology.ExistsSIdelesCohomologyEqZero
 
 @[expose] public section

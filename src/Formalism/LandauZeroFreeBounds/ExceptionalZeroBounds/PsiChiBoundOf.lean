@@ -1,9 +1,7 @@
 module
 
 public import Formalism.LandauZeroFreeBounds.LogDerivRegionChiOf
-public import Formalism.LandauZeroFreeBounds.ExceptionalZeroBounds.SumVonMangoldtNotCoprimeLe
-public import Formalism.LandauZeroFreeBounds.ExceptionalZeroBounds.AbsZeroTermSecondDifferenceLe
-public import Formalism.LandauZeroFreeBounds.ExceptionalZeroBounds.LeOfSecondDifferenceBound
+public import Formalism.LandauZeroFreeBounds.ExceptionalZeroBounds.Bundle0001
 
 @[expose] public section
 

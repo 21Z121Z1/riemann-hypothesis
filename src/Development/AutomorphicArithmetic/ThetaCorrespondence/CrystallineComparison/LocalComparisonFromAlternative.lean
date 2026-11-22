@@ -1,10 +1,8 @@
 module
 
-public import Development.AutomorphicArithmetic.ThetaCorrespondence.CrystallineComparison.CFPlain
+public import Development.AutomorphicArithmetic.ThetaCorrespondence.CrystallineComparison.Bundle0004
 public import Development.AutomorphicArithmetic.ThetaCorrespondence.CrystallineComparison.LogarithmCompat
-public import Development.AutomorphicArithmetic.ThetaCorrespondence.CrystallineComparison.CFIncl
-public import Development.AutomorphicArithmetic.ThetaCorrespondence.CrystallineComparison.LocTied6OfCmp
-public import Development.AutomorphicArithmetic.ThetaCorrespondence.CrystallineComparison.LocalComparisonOfComparison
+public import Development.AutomorphicArithmetic.ThetaCorrespondence.CrystallineComparison.Bundle0001
 
 @[expose] public section
 

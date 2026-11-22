@@ -1,11 +1,11 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GramHspOf
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HermitianSelfDualLatticeSpaceFormHermitianNondeg
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0918
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0957
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PullbackSections.HolomorphicFamilies.ModelLatA
 public import Formalism.LocalToGlobal.IndefiniteReal.FinitePlaces.FactPrincipalDatum
-public import Formalism.LocalToGlobal.IndefiniteReal.DatumLemmas
+public import Formalism.LocalToGlobal.IndefiniteReal.Bundle0013
 
 @[expose] public section
 

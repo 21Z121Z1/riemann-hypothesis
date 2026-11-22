@@ -3,13 +3,13 @@ module
 public import Formalism.SharpRestriction.GenusPolyhedralBounds.RelativeIndexClassSets.LevGapFacts
 public import Formalism.SharpRestriction.GenusPolyhedralBounds.RelativeIndexClassSets.LevGapSplit
 public import Formalism.SharpRestriction.GenusPolyhedralBounds.RelativeIndexClassSets.LevGapLoc
-public import Formalism.SharpRestriction.InertJacobiLevels.ExtraNum
+public import Formalism.SharpRestriction.InertJacobiLevels.Bundle0001
 public import Formalism.ThetaLiftIndependence.Statement
-public import Formalism.HermitianLattices.StatementMass
+public import Formalism.HermitianLattices.Bundle0003
 public import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.AdelstabL
 public import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Afsplit
-public import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Levelv
-public import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.InclusionInjective
+public import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Bundle0005
+public import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Bundle0002
 public import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Stdform
 
 @[expose] public section

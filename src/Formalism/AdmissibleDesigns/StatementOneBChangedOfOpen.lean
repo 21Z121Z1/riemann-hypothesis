@@ -1,9 +1,9 @@
 module
 
-public import Formalism.AdmissibleDesigns.BKaClause
+public import Formalism.AdmissibleDesigns.Bundle0015
 public import Formalism.SharpRestriction.LevelLetterCocycles.JumpAndLengthOfAdmitted
-public import Formalism.AdmissibleDesigns.ColLx
-public import Formalism.AdmissibleDesigns.UnramifiedInputOfAdmitted
+public import Formalism.AdmissibleDesigns.Bundle0016
+public import Formalism.AdmissibleDesigns.Bundle0017
 
 @[expose] public section
 

@@ -1,6 +1,6 @@
 module
 
-public import Formalism.SharpRestriction.GrowthBounds.TruncatedChains.CnNOOfNormal
+public import Formalism.SharpRestriction.GrowthBounds.TruncatedChains.Bundle0003
 
 @[expose] public section
 

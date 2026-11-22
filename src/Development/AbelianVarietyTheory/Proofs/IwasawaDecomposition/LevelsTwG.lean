@@ -3,9 +3,9 @@ module
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.TiedColumnData
 public import Formalism.SharpRestriction.GlobalSchurBounds.ThickPlacesCorollaryOfAnyTranslate
-public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.FixedVectorEqOfStandardData
+public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.Bundle0020
 public import Formalism.LocalToGlobal.GroupLattices.ComparisonMaps.ComparisonZeroEmbedding
-public import Formalism.SharpRestriction.GrowthBounds.ChartedClasses.ClsChartedLabAt
+public import Formalism.SharpRestriction.GrowthBounds.ChartedClasses.Bundle0003
 public import Formalism.SharpRestriction.GrowthBounds.TwistedLevelAgreement.StepInTwK
 public import Formalism.SharpRestriction.GrowthBounds.BaseLevels.LevelsGEmpty
 

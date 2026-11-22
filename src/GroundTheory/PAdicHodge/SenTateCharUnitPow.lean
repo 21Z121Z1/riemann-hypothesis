@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import GroundTheory.LocalFields.PadicExp
-public import GroundTheory.LocalFields.UnitsPowers
+public import GroundTheory.LocalFields.Bundle0002
 public import GroundTheory.LocalFields.PrincipalUnitsModule
 public import GroundTheory.PAdicHodge.FieldOfNormsRam
 public import GroundTheory.LocalFields.Examples

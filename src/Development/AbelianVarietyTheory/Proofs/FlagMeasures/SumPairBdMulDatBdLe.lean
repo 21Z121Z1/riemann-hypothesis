@@ -3,10 +3,9 @@ module
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.FlagPairDefinitePartLattice
 public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.ChartGen
-public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.NormalFormDualOrthogonalLast
-public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.AdaptSelf
-public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.PairBdNonneg
-public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.IsNormalFormStabilizerMeasure
+public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.Bundle0004
+public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.Bundle0005
+public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.Bundle0010
 
 @[expose] public section
 

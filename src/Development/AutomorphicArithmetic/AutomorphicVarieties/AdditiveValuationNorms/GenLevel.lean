@@ -3,10 +3,9 @@ module
 public import Mathlib
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.AdditiveValuationNorms.CokLenLeOfRangeLe
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.AdditiveValuationNorms.ABoundOfDescends
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.GaloisLibrary.KummerTheory.ExistsGen
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.NumberFieldTowers.CycRange
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.NumberFieldTowers.PrincGen
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.NumberFieldTowers.CycMemPrincIff
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.GaloisLibrary.KummerTheory.Bundle0002
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.NumberFieldTowers.Bundle0002
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.NumberFieldTowers.Bundle0001
 
 @[expose] public section
 

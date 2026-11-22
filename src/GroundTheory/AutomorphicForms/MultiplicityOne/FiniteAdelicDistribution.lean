@@ -1,11 +1,11 @@
 module
 
 public import Mathlib
-public import GroundTheory.AutomorphicForms.WhittakerLocal
+public import GroundTheory.AutomorphicForms.Bundle0017
 public import GroundTheory.AutomorphicForms.AdelicGLn
 public import GroundTheory.GlobalFields.LocalFieldAtPlace
-public import GroundTheory.GlobalFields.TateThesis.SchwartzBruhatDual
-public import GroundTheory.GlobalFields.TateThesis.AdeleIdealMeasure
+public import GroundTheory.GlobalFields.TateThesis.Bundle0008
+public import GroundTheory.GlobalFields.TateThesis.Bundle0007
 public import GroundTheory.GlobalFields.TateThesis.AdelicCharDual
 
 @[expose] public section

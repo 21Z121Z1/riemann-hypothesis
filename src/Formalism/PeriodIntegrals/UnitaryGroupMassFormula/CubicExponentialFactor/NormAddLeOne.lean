@@ -1,6 +1,6 @@
 module
 
-public import Formalism.PeriodIntegrals.CubicExponentialFactor
+public import Formalism.PeriodIntegrals.Bundle0001
 
 @[expose] public section
 

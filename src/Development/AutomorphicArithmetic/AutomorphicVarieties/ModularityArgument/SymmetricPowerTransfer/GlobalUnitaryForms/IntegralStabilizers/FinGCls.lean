@@ -1,7 +1,7 @@
 module
 
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.SymmetricPowerTransfer.GlobalUnitaryForms.HodgeTateFromSandwich
-public import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.UJClassFin
+public import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.Bundle0023
 
 @[expose] public section
 

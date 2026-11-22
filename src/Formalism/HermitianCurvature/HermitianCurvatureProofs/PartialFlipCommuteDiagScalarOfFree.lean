@@ -1,8 +1,8 @@
 module
 
 public import Formalism.HermitianCurvature.StatementWd
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.PositionInsertionDiagonalCompat
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.TransferMatrixFactorization
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0018
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0022
 public import Formalism.HermitianCurvature.HermitianCurvatureProofs.DiagScalarCommuteOfEntries
 
 @[expose] public section

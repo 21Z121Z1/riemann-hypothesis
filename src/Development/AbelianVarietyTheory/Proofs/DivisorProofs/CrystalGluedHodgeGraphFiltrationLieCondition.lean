@@ -1,11 +1,11 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CrysActApply
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsArtinianRingTsze
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GroupObjectLiftDividedPowers
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CrystalGluedHodgeGraphFiltrationOrderStable
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HarrisTaylorLieConditionModHodgeFiltrationStatement
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1945
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle3097
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2283
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle3099
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle3096
 
 @[expose] public section
 

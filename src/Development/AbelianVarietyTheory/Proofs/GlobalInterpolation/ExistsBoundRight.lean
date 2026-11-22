@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.LogDerivLFunctionStrip
-public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.ImportsMore
+public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0016
+public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0015
 
 @[expose] public section
 

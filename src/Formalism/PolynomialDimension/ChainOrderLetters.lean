@@ -1,7 +1,7 @@
 module
 
-public import Formalism.MahlerMeasure.StatementTM
-public import Formalism.PolynomialDimension.DigitSumValuationBound
+public import Formalism.MahlerMeasure.Bundle0007
+public import Formalism.PolynomialDimension.Bundle0003
 
 @[expose] public section
 

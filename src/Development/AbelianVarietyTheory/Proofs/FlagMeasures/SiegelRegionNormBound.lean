@@ -1,12 +1,12 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.MatrixOfBesselTwoSidedAction
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.NormLowerLe
-public import Development.AbelianVarietyTheory.Proofs.TorusHaarMeasure.ExistsLowerUnitriangularMulUpperTriangular
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.LeadingMinorInvariant
-public import Formalism.FormalDegreeBessel.FinalG
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ImportsBisMore
+public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.Bundle0006
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0118
+public import Development.AbelianVarietyTheory.Proofs.TorusHaarMeasure.Bundle0009
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0053
+public import Formalism.FormalDegreeBessel.Bundle0002
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0008
 
 @[expose] public section
 

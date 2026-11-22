@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Development.WeilBound.CoreStatements.PublishedTheorems.PoitouTateDuality.ResH1BijectiveOfInverse
-public import Development.WeilBound.CoreStatements.PublishedTheorems.PoitouTateDuality.ResH2BijectiveOfInverse
+public import Development.WeilBound.CoreStatements.PublishedTheorems.PoitouTateDuality.Bundle0004
+public import Development.WeilBound.CoreStatements.PublishedTheorems.PoitouTateDuality.Bundle0005
 
 @[expose] public section
 

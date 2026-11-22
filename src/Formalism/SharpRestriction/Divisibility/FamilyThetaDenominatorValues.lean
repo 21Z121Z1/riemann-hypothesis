@@ -3,12 +3,12 @@ module
 public import Mathlib
 public import Formalism.LocalRingCardinality.RhoDetPrimeEqMuTildeMulChiPow
 public import Formalism.SharpRestriction.LevelLetterCocycles.ExistsIdealDenominator
-public import Formalism.SharpRestriction.LevelLetterCocycles.TwGood
-public import Formalism.SharpRestriction.LevelLetterCocycles.LocsCoverTw
+public import Formalism.SharpRestriction.LevelLetterCocycles.Bundle0018
+public import Formalism.SharpRestriction.LevelLetterCocycles.Bundle0004
 public import Formalism.LocalRingCardinality.DataForced
 public import Formalism.SharpRestriction.Divisibility.CartierLocalBounds
 public import Formalism.SharpRestriction.Divisibility.LiftErrorLocal
-public import Formalism.LocalRingCardinality.DataParamsT
+public import Formalism.LocalRingCardinality.Bundle0003
 
 @[expose] public section
 

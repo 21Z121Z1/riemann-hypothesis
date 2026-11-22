@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StOrdDeterminesPlace
-public import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StCurveNormalisationFinite
+public import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.Bundle0103
+public import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.Bundle0079
 
 @[expose] public section
 

@@ -1,8 +1,8 @@
 module
 
 public import Development.WeilBound.RepresentationTheoryGL.RegularisedSiegelWeil.SingularNullSets.WeakApproximationFinitePlace
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.IkedaPartialFourierIntegralMemAdelicSchwartz
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsNonnegativeSchwartzBump
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0220
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0534
 
 @[expose] public section
 

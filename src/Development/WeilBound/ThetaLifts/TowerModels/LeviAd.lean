@@ -1,7 +1,7 @@
 module
 
 public import Development.WeilBound.ThetaLifts.EigenvalueEndgame.PlaneRemovalConfiguration
-public import Development.WeilBound.ThetaLifts.TowerModels.LeviAlg
+public import Development.WeilBound.ThetaLifts.TowerModels.Bundle0001
 public import Development.AbelianVarietyTheory.Definitions.Foundations.EqPlaceIdemOfIsPrimeIdem
 
 @[expose] public section

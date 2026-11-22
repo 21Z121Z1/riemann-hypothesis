@@ -1,18 +1,19 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.ExistsNetDataFromHalfConjugateEmbeddingsStatement
-public import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.ExistsScalarEvaluationsCuspFormsFiniteNetStatement
-public import Formalism.SharpRestriction.GenusPolyhedralBounds.RelativeIndexClassSets.InnerEuclideanEmbeddingEqAverage
-public import Formalism.LocalToGlobal.ProjectiveLattices.IntAtExtExtAll
-public import Formalism.SharpRestriction.GenusPolyhedralBounds.RelativeIndexClassSets.AdmissibleModuleIffLatticeQuotients
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PullbackSections.SubMulPf
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PullbackSections.SupNormFromNet
+public import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.Bundle0039
+public import Formalism.SharpRestriction.GenusPolyhedralBounds.RelativeIndexClassSets.NormEuclideanEmbeddingEqNetNorm
+public import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.Bundle0080
+public import Formalism.SharpRestriction.GenusPolyhedralBounds.RelativeIndexClassSets.Bundle0005
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0034
+public import Formalism.SharpRestriction.GenusPolyhedralBounds.RelativeIndexClassSets.Bundle0003
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PullbackSections.Bundle0010
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PullbackSections.Bundle0008
 public import Development.AbelianVarietyTheory.Definitions.ThetaValues.GamAt
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PullbackSections.NoCommonZeroSt
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PullbackSections.SupGenTies
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PullbackSections.LatOfLamSt
-public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.ThExprUniqOfChartIndep2
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PullbackSections.Bundle0013
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PullbackSections.Bundle0011
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PullbackSections.Bundle0003
+public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0007
 
 @[expose] public section
 
@@ -205,7 +206,7 @@ theorem netData_exists : ∀ (D : D7) (T : Top D) (h : LawsP T), GamAt T.toCore 
         exact ⟨n, ev, fun _ => H⟩
       · exact ⟨0, Fin.elim0, fun h' => absurd h' hσ⟩
     choose n ev H using key2
-    exact GlobalTheory.T.exists_netData_from_half_conjugate_embeddings D (recB h.toLawsCore) j w (GoodEmb T.Q.c)
+    exact _root_.GlobalTheory.exists_netData_of_readings_on_half D (recB h.toLawsCore) j w (GoodEmb T.Q.c)
       (fun σ => by rw [good_conj_iff]; exact not_not.symm) (supN_conj h j w) n ev _ H
 
 end GlobalTheory.RunIn.NetAtRecord

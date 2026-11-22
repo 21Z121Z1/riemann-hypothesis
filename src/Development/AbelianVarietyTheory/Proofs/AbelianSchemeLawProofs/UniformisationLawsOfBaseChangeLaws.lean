@@ -7,7 +7,7 @@ public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeo
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.DiscreteValuationRings.FamMod
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.ChartPullbacks.WeightedChartPullback.WeightIndep
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.ChartPullbacks.TangentLinearity.ESecStruct
-public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.UniformisationBaseChangeStatement
+public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.Bundle0108
 
 @[expose] public section
 
@@ -20,6 +20,6 @@ namespace GlobalTheory
 
 theorem uniformisationLaws_of_baseChange_laws :
     PolBaseChangeSt → GlobalFnsSt → SecBaseChangeSt → DVR.TwistBaseChangeStatement → Laws4 :=
-  fun h₁ h₂ h₃ h₄ => ⟨GlobalTheory.T.uniformisation_baseChange h₁ h₂ h₃ h₄, WeightPf.weightIndep, TLinPf.tLin_of h₂⟩
+  fun h₁ h₂ h₃ h₄ => ⟨_root_.GlobalTheory.unifBaseChange h₁ h₂ h₃ h₄, WeightPf.weightIndep, TLinPf.tLin_of h₂⟩
 
 end GlobalTheory

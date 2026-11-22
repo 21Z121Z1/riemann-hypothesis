@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Development.WeilBound.RepresentationTheoryGL.TwistedFactors.LocalBaseChange.StrictDominanceCasselman.IsStrictlyDominant
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.UniformizerPowTendstoZero
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0356
 
 @[expose] public section
 

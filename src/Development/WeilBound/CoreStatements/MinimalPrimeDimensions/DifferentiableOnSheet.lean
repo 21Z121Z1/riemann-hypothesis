@@ -2,8 +2,8 @@ module
 
 public import Development.WeilBound.CoreStatements.MinimalPrimeDimensions.IntegralBallPow
 public import Development.WeilBound.CoreStatements.MinimalPrimeDimensions.EvaluationGenEqZero
-public import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.ConeBall
-public import ReciprocityTheory.L2DbarEstimates.PlurisubharmonicCharts.AApproxE
+public import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.Bundle0002
+public import ReciprocityTheory.L2DbarEstimates.PlurisubharmonicCharts.Bundle0007
 
 @[expose] public section
 

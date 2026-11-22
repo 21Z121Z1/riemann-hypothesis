@@ -1,7 +1,7 @@
 module
 
 public import Development.WeilBound.ThetaLifts.LeviDeterminants.MixedModels.AdelicEstimatesHolds
-public import Development.WeilBound.ThetaLifts.LeviDeterminants.MixedModels.DarbouxModelRationalLatticeOf
+public import Development.WeilBound.ThetaLifts.LeviDeterminants.MixedModels.Bundle0003
 
 @[expose] public section
 

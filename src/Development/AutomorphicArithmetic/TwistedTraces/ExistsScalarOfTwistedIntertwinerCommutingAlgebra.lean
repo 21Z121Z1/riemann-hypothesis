@@ -1,8 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicArithmetic.TwistedTraces.ListOfFnProdEqMulUpdateOneOfPairwiseCommute
-public import Development.AutomorphicArithmetic.TwistedTraces.LinearFormEqMulTraceOfTwistedInvariant
+public import Development.AutomorphicArithmetic.TwistedTraces.Bundle0001
 
 @[expose] public section
 

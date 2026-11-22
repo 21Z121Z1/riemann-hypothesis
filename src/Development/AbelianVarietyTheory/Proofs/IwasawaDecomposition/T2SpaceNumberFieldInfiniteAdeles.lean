@@ -2,8 +2,8 @@ module
 
 public import Mathlib
 public import Formalism.SharpRestriction.GlobalSchurBounds.GeneralLinearActions.FrameTransport
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.LcscAdelicUnitaryGroup
-public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.ExistsCompactOpenUnitsSubgroupContinuousSqrt
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0061
+public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0018
 
 @[expose] public section
 

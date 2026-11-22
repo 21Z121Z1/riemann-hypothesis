@@ -1,6 +1,6 @@
 module
 
-public import Development.AbelianVarietyTheory.Definitions.Divisors.DatumEquiv
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0037
 public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.TraceGap.IsPhysSet
 
 @[expose] public section

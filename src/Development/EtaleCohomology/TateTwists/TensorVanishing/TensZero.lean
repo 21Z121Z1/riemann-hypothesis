@@ -1,6 +1,6 @@
 module
 
-public import Development.EtaleCohomology.TateTwists.acycPf
+public import Development.EtaleCohomology.TateTwists.Bundle0024
 
 @[expose] public section
 

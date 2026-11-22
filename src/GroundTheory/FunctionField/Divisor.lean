@@ -3,7 +3,7 @@ module
 public import Mathlib
 public import GroundTheory.FunctionField.PlaceDefs
 public import GroundTheory.FunctionField.PlaceBasic
-public import GroundTheory.FunctionField.Approximation
+public import GroundTheory.FunctionField.Bundle0001
 public import GroundTheory.FunctionField.ValuationAevalSubCoeffZeroLe
 
 @[expose] public section

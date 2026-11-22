@@ -1,7 +1,7 @@
 module
 
 public import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.SatakeExponents.UniformizerValuations.FrameBoundSpaces.KBsLev
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsBallSubset
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1292
 
 @[expose] public section
 

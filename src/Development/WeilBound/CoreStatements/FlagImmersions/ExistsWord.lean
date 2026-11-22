@@ -1,10 +1,9 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Definitions.DivisibilityTowers.RefLinked
-public import Development.AutomorphicSpectrum.Definitions.DivisibilityTowers.LowerBoundOfBaseSetting
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.InterSt
-public import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.PHFlProdLinear
+public import Development.AutomorphicSpectrum.Definitions.DivisibilityTowers.Bundle0001
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.Bundle0006
+public import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.Bundle0008
 
 @[expose] public section
 

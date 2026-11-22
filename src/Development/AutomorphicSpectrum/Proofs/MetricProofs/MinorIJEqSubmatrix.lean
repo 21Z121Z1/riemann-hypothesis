@@ -3,8 +3,8 @@ module
 public import Mathlib
 public import Development.AutomorphicSpectrum.Definitions.MetricPeriods.Pull1
 public import Development.AutomorphicSpectrum.Definitions.MetricPeriods.IsPeriodOn
-public import Development.AutomorphicSpectrum.Proofs.MetricProofs.BlockDiagonalMinorVanishing
-public import ReciprocityTheory.SemistableReduction.SemiContractA
+public import Development.AutomorphicSpectrum.Proofs.MetricProofs.Bundle0032
+public import ReciprocityTheory.SemistableReduction.Bundle0001
 
 @[expose] public section
 

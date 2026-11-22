@@ -1,10 +1,10 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicArithmetic.OrbitLabellings.ColDefs
-public import Formalism.LocalToGlobal.TorsionIntegrality.GaussSumParity.StatementE
+public import Development.AutomorphicArithmetic.OrbitLabellings.Bundle0001
+public import Formalism.LocalToGlobal.TorsionIntegrality.GaussSumParity.Bundle0002
 public import Formalism.LocalToGlobal.TorsionIntegrality.GaussSumParity.SingleLetterBiextensionRelation
-public import Formalism.GaussJetBounds.GaussJetProofs.Transfer
+public import Formalism.GaussJetBounds.GaussJetProofs.Bundle0005
 
 @[expose] public section
 

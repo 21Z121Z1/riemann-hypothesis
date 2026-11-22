@@ -1,21 +1,25 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Divisors.IsChartMember
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0063
 public import Development.AbelianVarietyTheory.Definitions.Divisors.IsChartMemberP
-public import ReciprocityTheory.AnalyticForms.RegularLocalRings.FinalTheorems
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IdlAlongComapEq
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.PolarizationTransferModels
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ResidueFieldMapFiniteOfQuasiFinite
-public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.NonemptyClosureExtensionAbelianScheme
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RefinePolarisedMonomialPeriodsMonomialData
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.StalkIdPow
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SqLeOfForallNonneg
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TraitExistsAfterFiniteExtensionOfCompleteDVRStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsApproximateSeriesLeadingTermFourierSystemStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsCorrectionApproximateIdealSectionsStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsNormalisationNormalisedBlowupSiegelModelStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BlowupChartIdealSheafEqSpanMonomialStatement
+public import ReciprocityTheory.AnalyticForms.RegularLocalRings.Bundle0001
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2080
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0559
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0017
+public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.Bundle0101
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2619
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2115
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1985
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2784
+public import Development.AbelianVarietyTheory.Definitions.Divisors.IsUnimodMod
+public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.Bundle0041
+public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.Bundle0012
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsApproximateSeriesLeadingTermFourierSystem
+public import Development.AbelianVarietyTheory.Definitions.Divisors.OrdGeOfForall
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2250
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2166
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2679
 
 @[expose] public section
 
@@ -230,12 +234,12 @@ theorem exists_mem_of_ordGe {g n : ℕ} {F : SFam g n (zetaAway n)} {Z : Scheme.
       rw [X₁.comp]
       exact ⟨_, rfl⟩⟩
     exact ⟨x, hx⟩
-  obtain ⟨e, he⟩ := GlobalTheory.T.exists_correction_approximate_ideal_sections X₁.M.Z S₁ (X₁.M.s ≫ spMap (algebraMap ℤ X₁.o₁)) p₁ hn _ hU E z₁ k
+  obtain ⟨e, he⟩ := _root_.GlobalTheory.ApproxCorr.exists_correction X₁.M.Z S₁ (X₁.M.s ≫ spMap (algebraMap ℤ X₁.o₁)) p₁ hn _ hU E z₁ k
   refine ⟨e, fun f hf => hE' ▸ he f fun V _ _ _ _ hc ξ ev hev hξ hr => ?_⟩
   have hr' : Set.range (jK V ≫ ξ ≫ p₁ ≫ X₁.π) ⊆ Set.range i := by
     rintro _ ⟨w, rfl⟩
     exact (hr ⟨w, rfl⟩).2
-  obtain ⟨T, f₁, fK, hf₁, hl₁, -, hfK, hy⟩ := GlobalTheory.T.traitExistsAfterFiniteExtension_of_completeDVR g n _ _ F V
+  obtain ⟨T, f₁, fK, hf₁, hl₁, -, hfK, hy⟩ := _root_.GlobalTheory.Poinc.traitExtSt g n _ _ F V
     ⟨⟨inferInstance, inferInstance, inferInstance, hc⟩, inferInstance⟩ inferInstance (IsOpenImmersion.lift i _ hr')
   have hsq : jK T.V ≫ spMap f₁ = spMap fK ≫ jK V := by
     rw [← spMap_comp₁, ← spMap_comp₁]
@@ -303,10 +307,10 @@ theorem exists_elements : ∀ g : ℕ, 1 ≤ g → ∀ n : ℕ, 3 ≤ n → Odd 
   intro g hg n hn hodd F Z z i _ hproj hnorm hiz hdense W hW φ d J S π j hJ hval hbl hji hpf V _ _ _ Q m t δ hrk ht hsym hnn
     hdef hmono ga M hM hcone hδ ξ hU N₁ X₁ z₁ Φ y ρ e h hT hC K _ _ ev k₀ hk hcen hdo ga' hga'
   obtain ⟨hρi, hρf, hsq, htδ, -⟩ := hC
-  obtain ⟨b, hb, hJb⟩ := GlobalTheory.T.blowup_chart_idealSheaf_eq_span_monomial g hg n hn hodd F Z z i hproj hnorm hiz hdense W φ d J S π j hJ hval hbl hji hpf V Q m t δ
+  obtain ⟨b, hb, hJb⟩ := _root_.GlobalTheory.SgZero.idlAlong_eq_span_monomial g hg n hn hodd F Z z i hproj hnorm hiz hdense W φ d J S π j hJ hval hbl hji hpf V Q m t δ
     hrk ht hsym hnn hdef hmono ga M hcone hδ ξ hU
   obtain ⟨S₁, _, p₁, ν, hn₁, _, _, _, hν, -, hE, hlift⟩ :=
-    GlobalTheory.T.exists_normalisation_normalisedBlowup_siegelModel g hg n hn hodd F Z z i hproj hnorm hiz hdense W J S π hJ hbl X₁
+    _root_.GlobalTheory.PoincCov.exists_normalisation_cover g hg n hn hodd F Z z i hproj hnorm hiz hdense W J S π hJ hbl X₁
   have hgen : (ξ ≫ π) (⊥ : PrimeSpectrum V) ∈ Set.range i := by
     obtain ⟨R', _, _, _, ρ', r, D, e', hCN', hρi', hρf', -, -, hrefn, -⟩ :=
       GlobalTheory.PolDeg.refine_monomial_of_polarised V Q m t δ hU.1 hmono (fun k => (ht k).1) (fun k => (ht k).2) hsym hnn hdef
@@ -377,7 +381,7 @@ theorem exists_elements : ∀ g : ℕ, 1 ≤ g → ∀ n : ℕ, 3 ≤ n → Odd 
   · have hle : ∀ {R : Type} [CommRing R] (I J : Ideal R) {a b : ℕ}, a ≤ b → J ⊔ I ^ b ≤ J ⊔ I ^ a :=
       fun I J _ _ h => sup_le_sup_left (Ideal.pow_le_pow_right h) J
     obtain ⟨e₁, he₁⟩ := exists_mem_of_ordGe hval X₁ z₁ Φ hT p₁ hn₁ hE D e₀
-    obtain ⟨fe, hord, hlead⟩ := GlobalTheory.T.exists_approximate_series_leading_term_fourierSystem ℤ id bddAct_int_and_cm.1 g φ hpf 8 W Φ.posW N₁ _ Φ y ga' M hM
+    obtain ⟨fe, hord, hlead⟩ := _root_.GlobalTheory.Poinc.approx_of_vsys ℤ id bddAct_int_and_cm.1 g φ hpf 8 W Φ.posW N₁ _ Φ y ga' M hM
       (fun k => LinearMap.ext₂ fun u v => by
         rw [(htδ k).2, hδ]
         simp [hga']) (D * d) l a ha c (max e₀ e₁)

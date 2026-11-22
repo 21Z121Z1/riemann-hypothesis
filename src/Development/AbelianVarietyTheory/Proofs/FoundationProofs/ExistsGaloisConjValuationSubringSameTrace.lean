@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.DiagMod
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0075
 
 @[expose] public section
 

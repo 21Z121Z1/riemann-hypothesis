@@ -2,38 +2,41 @@ module
 
 public import Mathlib
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.UniformisationConclusion
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.HeckeKer
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.Bundle0003
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.RigidSys
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.Splits
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.GtBaseChangeSt
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.ThetaUnifAV
-public import Development.AbelianVarietyTheory.Definitions.ModuliSpaces.TopAmpExists
+public import Development.AbelianVarietyTheory.Definitions.ModuliSpaces.Bundle0004
 public import Development.AbelianVarietyTheory.Statements.SemistableTorsion.ArcFamSt
-public import Development.AbelianVarietyTheory.Definitions.Degenerations.HomExtSt
+public import Development.AbelianVarietyTheory.Definitions.Degenerations.Bundle0001
 public import Development.AbelianVarietyTheory.Definitions.ModuliSpaces.FiniteHomogeneousInf
 public import Development.AbelianVarietyTheory.Statements.SemistableTorsion.ImmersedBy
 public import Development.AbelianVarietyTheory.Statements.SemistableTorsion.UTorsSt
 public import Development.AbelianVarietyTheory.PublishedTheorems.SemistableReduction₂.SemistableReductionSt
 public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.SmoothOfRelativeDimensionOfCharZero
-public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.SiegelDataPullbackOfLevelMapStatement
-public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.IsProperOfCompleteDVRLiftGeneric
-public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsEquivStdSymp
-public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsEquivOmegaStd
-public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsSabCancel
+public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0159
+public import Development.AbelianVarietyTheory.Definitions.ModuliSpaces.Bundle0001
+public import Development.AbelianVarietyTheory.Definitions.Degenerations.AdmissiblePadicIntMaximalIdeal
+public import Development.AbelianVarietyTheory.Definitions.ArchimedeanThetaValues.OneAddZeta21PowSevenAddPowFourteenEqZero
+public import Development.AbelianVarietyTheory.Definitions.ArchimedeanThetaValues.IsCoprimeTwoSubRtTwoAddRt
+public import Development.AbelianVarietyTheory.Definitions.ArchimedeanThetaValues.ToMatrixTrFormBaseChange
+public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0150
+public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0051
+public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0076
+public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0020
 public import Development.AbelianVarietyTheory.Proofs.HomogeneousIdeals.FormallyUnramifiedOfTangentMapInjective
-public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.IsQProjOverIffLocallyOfFiniteTypeAndExistsIsAmpl
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ObjMapIdCompCancel
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.AbProj
-public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.IsLocalizationOfLeClosure
-public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.InjectiveOfApplyEqGenericPoint
-public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.FullLevelObjectPullbackExistsAndFull
-public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.FullObjectOfGenericFibreDvr
-public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsSabMapOfIsProperOfLbIsoLam
-public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.IsSquareUnique
-public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Direct
-public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Rigidity
-public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsPrincipallyPolarizedCMExtensionDvrStatement
-public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.SiegelPullbackIdCompCancel
+public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0138
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0035
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.Bundle0006
+public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0006
+public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0149
+public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0184
+public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0147
+public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0151
+public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0144
+public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0155
+public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsPrincipallyPolarizedCMExtensionDvr
+public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0132
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.SemiabelianSchemes.PrecompleteBases.PsbLb
 
 @[expose] public section
@@ -98,7 +101,7 @@ theorem exists_extension : GlobalTheory.LN.HomExtSt → Out.Laws → Out.Laws2 �
   obtain ⟨φ, hφ₁, hφ₂⟩ : ∃ φ : tK.G.left ⟶ ((Over.pullback y).obj c.A).left, φ ≫ pullback.fst _ _ = θ ∧
       φ ≫ ((Over.pullback y).obj c.A).hom = tK.G.hom ≫ spMap (algebraMap V K) :=
     ⟨hA.1.lift θ _ (hθ.1.w.trans (Category.assoc _ _ _).symm), hA.1.lift_fst _ _ _, hA.1.lift_snd _ _ _⟩
-  obtain ⟨t, m, e, he, hmon, hamp, hkt⟩ := GlobalTheory.T.exists_principallyPolarizedCM_extension_dvr hX hL hL₂ E H V K _ tK φ hab
+  obtain ⟨t, m, e, he, hmon, hamp, hkt⟩ := _root_.GlobalTheory.GoodPol.exists_sab_of_generic hX hL hL₂ E H V K _ tK φ hab
     (hA.cancel (by rw [hφ₁]; exact hθ) hφ₂) hK.ample hK.ktriv
   have hψ : IsGrpPullback t.G c.A y (e.hom.left ≫ pullback.fst _ _) :=
     ((isGrpPullback_of_iso e).comp hA).congr (Category.id_comp _) rfl
@@ -316,7 +319,7 @@ theorem baseChange {O' : Type} [CommRing O'] (c : O →+* O') {b' : RZ H n N →
     · rw [Category.assoc, hs, hr₂, Category.assoc, hq₂, ← Category.assoc, hw₂]
   refine ⟨w', ?_, MorphismProperty.of_isPullback (P := @IsFinite) hsq ‹_›,
     MorphismProperty.of_isPullback (P := @FormallyUnramified) hsq ‹_›⟩
-  obtain ⟨o, φ, φ₂, h₁, h₂, h₃, h₄, -, h₅⟩ := GlobalTheory.T.siegelData_pullback_of_levelMap E H D O _ T _ r t tT κ' lv lvT g p N Ag z bas w hl hw
+  obtain ⟨o, φ, φ₂, h₁, h₂, h₃, h₄, -, h₅⟩ := _root_.GlobalTheory.SiegelDataPull.siegData_pull E H D O _ T _ r t tT κ' lv lvT g p N Ag z bas w hl hw
   rw [← hw₁] at h₅
   unfold SiegData
   generalize (r ≫ pullback.snd sM (spMap b)) ≫ spMap z = s at e o φ φ₂ h₁ h₂ h₃ h₄ h₅

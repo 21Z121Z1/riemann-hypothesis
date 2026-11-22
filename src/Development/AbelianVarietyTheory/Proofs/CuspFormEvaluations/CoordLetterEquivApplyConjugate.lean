@@ -4,7 +4,7 @@ public import Mathlib
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.FlagBasis
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.SquareIntegrability.GCauchyStatement
 public import Development.AbelianVarietyTheory.Definitions.ThetaValues.ExistsMemRowHighestTotalDegreeEqTwo
-public import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.ConjEmbRt
+public import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.Bundle0010
 
 @[expose] public section
 

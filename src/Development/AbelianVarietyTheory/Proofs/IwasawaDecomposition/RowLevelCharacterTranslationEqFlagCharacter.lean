@@ -1,12 +1,12 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ReadsDeco
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0359
 public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.UnitaryFiniteAdelicPointAsMatrixMemFlagIwahori
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsTupleUnitaryFormsEquivPeriodRowForms
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.SubOneMemMapOfEq
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0302
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0088
 public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExistsOfStarEq
-public import Formalism.LocalToGlobal.Divisibility.Tuples
+public import Formalism.LocalToGlobal.Divisibility.Bundle0001
 public import Formalism.LocalToGlobal.UnitaryNorms.IsUnitaryNormOf
 public import Formalism.LocalToGlobal.NumberFieldFamilies.IdTransSM
 

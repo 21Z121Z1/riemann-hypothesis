@@ -2,8 +2,8 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.ZerosDisc
-public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.LogDerivLFunctionStrip
-public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.NormSubOneMulRiemannZetaLe
+public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0016
+public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0006
 
 @[expose] public section
 

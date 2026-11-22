@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LocCO
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1484
 public import Development.AbelianVarietyTheory.Definitions.Divisors.BplusOfEquivariant
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HighestWeightBelow
 

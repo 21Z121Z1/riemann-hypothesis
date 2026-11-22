@@ -3,7 +3,7 @@ module
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsUnifOfIsMumfordOf
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsTauLattice
-public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.HasTrivialKernelIff
+public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0120
 public import Development.AbelianVarietyTheory.Definitions.AbelianSchemeLaws.ExistsUniqueEqConstMulEllTheta
 
 @[expose] public section

@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import GroundTheory.AutomorphicForms.GLnLattice
-public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.MulLeftCancelOfDetNeZero
+public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0046
 
 @[expose] public section
 

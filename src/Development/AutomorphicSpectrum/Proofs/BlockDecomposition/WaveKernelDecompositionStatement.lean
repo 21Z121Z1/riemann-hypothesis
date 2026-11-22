@@ -3,7 +3,7 @@ module
 public import Mathlib
 public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.WaveKernelDecomposition
 public import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.ArchimedeanGelfandKernels.WaveSt
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IsMultOfFintype
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0189
 
 @[expose] public section
 

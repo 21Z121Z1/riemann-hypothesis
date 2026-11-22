@@ -3,10 +3,10 @@ module
 public import Formalism.LocalToGlobal.IndefiniteReal.FockTheta.RealPlaceImaginaryGeneratorReEqZero
 public import Formalism.LocalToGlobal.IndefiniteReal.FockTheta.UnitBracket
 public import Formalism.LocalToGlobal.IndefiniteReal.PHeisFC
-public import Formalism.PeriodIntegrals.HookBound
+public import Formalism.PeriodIntegrals.Bundle0016
 public import Formalism.LocalToGlobal.IndefiniteReal.FockTheta.ConjPurelyImaginaryGenerator
-public import Formalism.LocalToGlobal.IndefiniteReal.LevelTypeEquivalence.ContinuousSplitInv
-public import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.HookBound
+public import Formalism.LocalToGlobal.IndefiniteReal.LevelTypeEquivalence.Bundle0004
+public import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.Bundle0022
 
 @[expose] public section
 

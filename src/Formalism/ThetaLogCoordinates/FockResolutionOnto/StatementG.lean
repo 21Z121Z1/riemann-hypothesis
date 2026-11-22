@@ -1,7 +1,7 @@
 module
 
 public import Formalism.ThetaLogCoordinates.FockResolutionOnto.StatementD
-public import Formalism.ThetaLogCoordinates.TraceIsometryWeights.StatementD
+public import Formalism.ThetaLogCoordinates.TraceIsometryWeights.Bundle0001
 public import Formalism.ThetaLogCoordinates.TraceIsometryWeights.StatementF
 
 @[expose] public section

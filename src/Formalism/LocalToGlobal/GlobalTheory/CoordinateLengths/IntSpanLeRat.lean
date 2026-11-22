@@ -1,6 +1,6 @@
 module
 
-public import Formalism.LocalToGlobal.GlobalTheory.CoordinateLengths.SecondBranchCoordinatesOfSurjectivity
+public import Formalism.LocalToGlobal.GlobalTheory.CoordinateLengths.Bundle0001
 public import Formalism.LocalToGlobal.GlobalTheory.CoordinateLengths.LocalGlobalOfBasisIndependence
 public import Formalism.LocalToGlobal.GlobalTheory.GL6.DiagonalSlopes.GroupActionMulSingleEqDilation
 

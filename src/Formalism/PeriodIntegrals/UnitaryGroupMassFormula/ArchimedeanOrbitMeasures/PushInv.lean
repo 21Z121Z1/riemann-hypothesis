@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.ArchimedeanOrbitMeasures.PushCut
-public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.MassComputations.SplitG
+public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.ArchimedeanOrbitMeasures.Bundle0007
+public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.MassComputations.Bundle0003
 
 @[expose] public section
 

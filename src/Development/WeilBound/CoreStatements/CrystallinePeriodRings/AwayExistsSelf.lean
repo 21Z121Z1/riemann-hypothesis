@@ -7,7 +7,7 @@ public import GroundTheory.PAdicHodge.BCrisRegularFinal
 public import GroundTheory.PAdicHodge.FundamentalSeqBCris
 public import Development.WeilBound.CoreStatements.CrystallinePeriodRings.NonemptyThetaLOfTied
 public import Development.WeilBound.CoreStatements.CrystallinePeriodRings.FilQuot
-public import Development.WeilBound.CoreStatements.CrystallinePeriodRings.InvRestrictScalarsMem
+public import Development.WeilBound.CoreStatements.CrystallinePeriodRings.Bundle0002
 
 @[expose] public section
 

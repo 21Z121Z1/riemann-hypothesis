@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.Divisors.IsKSValueOneOfRetraction
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsDPMorphismOfComp
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0643
 
 @[expose] public section
 

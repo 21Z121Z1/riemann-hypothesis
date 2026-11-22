@@ -1,6 +1,6 @@
 module
 
-public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.PhiCMinB
+public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0023
 public import Mathlib
 
 @[expose] public section

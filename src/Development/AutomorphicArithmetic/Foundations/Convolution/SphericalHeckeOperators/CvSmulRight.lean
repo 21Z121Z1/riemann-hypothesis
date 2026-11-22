@@ -4,8 +4,8 @@ public import Development.AutomorphicArithmetic.Foundations.Convolution.Spherica
 public import Development.AutomorphicArithmetic.Foundations.Convolution.SphericalHeckeOperators.SandId
 public import Development.AutomorphicArithmetic.Foundations.Convolution.SphericalHeckeOperators.SatAvg
 public import Development.AutomorphicArithmetic.Foundations.Convolution.SphericalHeckeOperators.ThPMul
-public import Development.AutomorphicArithmetic.Foundations.Convolution.SphericalHeckeOperators.GapDom
-public import Development.AutomorphicArithmetic.Foundations.Convolution.SphericalHeckeOperators.VandSum
+public import Development.AutomorphicArithmetic.Foundations.Convolution.SphericalHeckeOperators.Bundle0002
+public import Development.AutomorphicArithmetic.Foundations.Convolution.SphericalHeckeOperators.Bundle0003
 
 @[expose] public section
 

@@ -1,6 +1,6 @@
 module
 
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutGCoreGTCCurvPolyCut
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0101
 
 @[expose] public section
 

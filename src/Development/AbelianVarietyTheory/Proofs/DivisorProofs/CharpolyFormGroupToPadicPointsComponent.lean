@@ -2,12 +2,12 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.Divisors.PointsNonemptyUnitaryRankOne
-public import Development.AbelianVarietyTheory.Definitions.Divisors.MarkedSumIrr
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0031
 public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.IsMulCommutativeCentRealUJ
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsPowSmulNormLeOne
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.T2SpaceKq
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0850
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0892
 public import GroundTheory.Brauer.BaseChangeCSA
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsBasisIntKQ
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2683
 
 @[expose] public section
 

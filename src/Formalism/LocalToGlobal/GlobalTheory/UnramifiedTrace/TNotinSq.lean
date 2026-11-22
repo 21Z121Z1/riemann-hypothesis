@@ -1,8 +1,8 @@
 module
 
-public import Formalism.LocalToGlobal.GlobalTheory.UnramifiedTrace.MulLatSupSpan
+public import Formalism.LocalToGlobal.GlobalTheory.UnramifiedTrace.Bundle0003
 public import Formalism.LocalToGlobal.GlobalTheory.GL6.BwAValIntegralNonneg
-public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.CrossDiagonalMatching.DnkLkLocP
+public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.CrossDiagonalMatching.Bundle0002
 
 @[expose] public section
 

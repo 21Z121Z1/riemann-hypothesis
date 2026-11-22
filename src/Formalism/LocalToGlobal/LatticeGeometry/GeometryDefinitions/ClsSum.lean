@@ -2,7 +2,7 @@ module
 
 public import Formalism.LocalToGlobal.HermitianColumns.InLocalDiscriminantKernel
 public import Formalism.SatakeDualWeyl.DefsCS
-public import Formalism.HermitianLattices.StatementMaj
+public import Formalism.HermitianLattices.Bundle0002
 
 @[expose] public section
 

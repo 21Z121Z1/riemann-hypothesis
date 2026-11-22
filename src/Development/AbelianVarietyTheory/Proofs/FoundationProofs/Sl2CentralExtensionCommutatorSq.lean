@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.DiagMod
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.SpecialLinearGroupIntMapZmodSurjective
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0075
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0085
 
 @[expose] public section
 

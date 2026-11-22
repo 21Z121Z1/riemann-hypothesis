@@ -3,8 +3,8 @@ module
 public import Mathlib
 public import Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.CechPairings.CechAugRow
 public import Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.CechPairings.MapHComp
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.TotalComplexFlipIsomorphismStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.NatTransUpToSqPullbackStatement
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0105
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0104
 
 @[expose] public section
 
@@ -194,7 +194,7 @@ theorem CrystallineSemistableComparison.P.dc_col_inj : ∀ {R : Type} [CommRing 
     rw [map_smul, pow_two, mul_smul, h2, smul_smul, smul_smul]
     congr 1; ring
 
-theorem CrystallineSemistableComparison.P.dc_flip : ∀ {R : Type} [CommRing R] (K : DCx.{w} R), ∃ φ : Cx.Hom K.tot K.flip.tot (RingHom.id R), (∀ n, Function.Bijective (φ.f n)) ∧ ∀ n (x : K.tot.X n) p q, (φ.f n x).1 q p = (-1 : ℤ) ^ (p * q) • x.1 p q := GlobalTheory.T.total_complex_flip_isomorphism
+theorem CrystallineSemistableComparison.P.dc_flip : ∀ {R : Type} [CommRing R] (K : DCx.{w} R), ∃ φ : Cx.Hom K.tot K.flip.tot (RingHom.id R), (∀ n, Function.Bijective (φ.f n)) ∧ ∀ n (x : K.tot.X n) p q, (φ.f n x).1 q p = (-1 : ℤ) ^ (p * q) • x.1 p q := _root_.GlobalTheory.CompanionTheory.DCFlip.flip_tot
 
 theorem CrystallineSemistableComparison.P.dc_col : ∀ {R : Type} [CommRing R] {A : Cx.{w'} R} {K : DCx.{w} R} (e : DCx.AugCol A K) (s : R), (∀ p, (K.col p).ResUpTo s (e.η p)) → ∀ n, UpTo (s ^ (n + 2)) (e.edge.mapH n) := by
   intro R _ A K e s hres n
@@ -226,4 +226,4 @@ theorem CrystallineSemistableComparison.P.dc_row : ∀ {R : Type} [CommRing R] {
   have := (P.upTo_alg (e.edge.mapH n) (φ.mapH n) 1 (s ^ (n + 2))).2.2.1 hg (hcomp ▸ hc)
   rwa [one_mul] at this
 
-theorem CrystallineSemistableComparison.P.coef_upTo : ∀ {R : Type} [CommRing R] {C : Type u} [Category.{v} C] {F F' : C ⥤ ModuleCat.{w} R} (α : F ⟶ F') (s : R), (∀ T, UpTo s (α.app T).hom) → ∀ n, UpTo (s ^ 2) ((Mor.ofNatTrans α).pull n) := GlobalTheory.T.natTrans_upTo_sq_pullback
+theorem CrystallineSemistableComparison.P.coef_upTo : ∀ {R : Type} [CommRing R] {C : Type u} [Category.{v} C] {F F' : C ⥤ ModuleCat.{w} R} (α : F ⟶ F') (s : R), (∀ T, UpTo s (α.app T).hom) → ∀ n, UpTo (s ^ 2) ((Mor.ofNatTrans α).pull n) := _root_.GlobalTheory.CompanionTheory.CoefUpTo.coef_upTo

@@ -2,9 +2,9 @@ module
 
 public import Mathlib
 public import Development.WeilBound.ThetaLifts.Reductions.SiegelCore
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsAdaptedMajorant
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0006
 public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsUnitaryCommuting
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.EqDiagonalOfUpperTriangularOfUnitary
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0005
 
 @[expose] public section
 

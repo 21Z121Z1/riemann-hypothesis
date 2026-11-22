@@ -1,68 +1,64 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Statements.PlaceShiftStatements.NormSmall
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.RatInOfUnit
+public import Development.AbelianVarietyTheory.Statements.PlaceShiftStatements.Bundle0002
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0142
 public import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.WeilTensorModels
-public import Development.AbelianVarietyTheory.Definitions.Divisors.DiscreteSeriesHermitianUnique
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NegIdxOfIsStd
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.BlkGLMem
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0041
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1561
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0155
 public import Development.AbelianVarietyTheory.Statements.HeckeThetaIntegrals.ThetaIntegralsAgree
-public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.HoweDualityReal
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IsReading
+public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.Bundle0011
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0291
 public import Development.AbelianVarietyTheory.Statements.HeckeThetaIntegrals.ExistsNeZeroOfIsMatch
 public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.TripleFrameBaseExists
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsRtensOp
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.FockAlgebraicThetaVectorsStableFiniteAdelesLieStatement
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SeesawFramesWeilEquivalence
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SeesawWeilIntertwiningValue
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SeesawWeilLocalFactorEq
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SeesawWeilArchimedeanFactor
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsArchimedeanOneParamLineTransposeGramUnitarStatement
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsRealLieOperatorThetaQuotientLineStatement
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ThetaTransformDarbouxModelLinearInjectiveStatement
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.DarbouxModelAlgebraicVectorsLeAdelicSchwartzStatement
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SeesawWeilFactorization
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0301
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0324
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0694
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0695
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0320
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0323
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0492
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0693
 public import Development.AbelianVarietyTheory.Proofs.HeightProofs.EmbeddingXiZeroNeZero
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsLineOperatorPolynomial
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.RestrictionLineOperatorSum
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ThetaEqB
-public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.HoweDualityUnitary
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ThetaTransformDarbouxModelLinearInjective
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsFinPartNeZero
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EqOfComponentTensorAdelicFunctionEq
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SeesawWeilZetaIdentity
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SeesawWeilZetaFactor
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0524
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0504
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0295
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0489
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1665
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1645
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0518
 public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SeesawWeilGlobalFactor
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.HasInfExpDiv
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsStableComplementOfIrreducibleSpanIntertwinStatement
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SimpleQuotientsIsoOfIntertwinedSemisimpleStatement
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.OrientedPairFockMapsLieEquivariantStatement
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IsPairReading
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0290
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0302
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0311
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0305
 public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.WeilModelRationalStructure
 public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.LieActionFockOperatorsScalarsTrace
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsFinOfRest
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.WeilLineGoodModelPolynomial
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.WeilModelHermitianScaling
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ComplementaryAdelicSchwartzArchimedeanReplaceStatement
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0479
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0532
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0427
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0493
 public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.WeilModelCharacterMatch
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.WeilModelFiniteExponent
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0541
 public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.WeilModelArchimedeanExponent
 public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsWeilModelOfExponents
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.DixmierCommutantScalar
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0285
 public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.LsumMapDomainSome
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.FinFLin
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.OrientedPairFockMapsLieEquivariant
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0386
 public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.MulNonsingInvCancelRightGram
 public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.FockOperatorActsByNoncompactQuadraticOps
 public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.FockVectorsConjAdjointPullbackBijection
-public import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.LowVanishFockOfLowVanish
+public import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.Bundle0003
 public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsFockPolynomialOperatorHeisenbergDerivative
 public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.FockPolynomialVectorBasisChangeEqSubstitution
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.DualDirectionDerivativeMixedCoordinateBound
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ThetaDoubleAbsoluteSumSobolevBound
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaKernelIntegrableOnFundamentalDomainStatement
-public import Formalism.LocalToGlobal.NumberFieldFamilies.ThetaCI
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0164
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0212
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1741
+public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.IsSmoothModerateOfIsAutFunSm
+public import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.SqNormIntegralFundamentalDomainEqL2NormSq
+public import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.WittDecompSymplInclIsotropicInclAnisotropic
+public import Formalism.LocalToGlobal.NumberFieldFamilies.Bundle0002
 public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.LaplaceOperators.CapelliIdentity.Expand
 
 namespace I195MixedCoordinates_4b9bfdc47a8dedbccd461140
@@ -458,7 +454,7 @@ theorem mixS_dRho (hψ : IsStdChar D ψ (-1)) (hθ : IsInfFam θ) {V₀ : HSp D}
   have hline := GlobalTheory.RealLineAt.lineAt_unique D θ hθ _ _ τ _ _ _ hL' (GlobalTheory.OrientedHeis.isLineAt_lineAt hθ τ _)
   have hline' : ∀ t, d.extY W (lineAt θ τ z t) = lineAt θ τ (z * compAt θ τ d.pY) t := fun t => by
     rw [← hline]; rfl
-  have hder := GlobalTheory.T.hasDerivAt_mixedModelSource_dualLine_linearForm D ψ hψ θ hθ V V₀ W ρ d v f hf (lineAt θ τ z) hL.1 hL.2.1 x 0
+  have hder := _root_.GlobalTheory.Unf.hasDerivAt_mixS_extY D ψ hψ θ hθ V V₀ W ρ d v f hf (lineAt θ τ z) hL.1 hL.2.1 x 0
   have hfun : (fun p => deriv (fun t : ℝ => heisO ψ V W (d.extY W (lineAt θ τ z t)) f p) 0) =
       Formalism.IndefR.Datum.dRho (heisO ψ V W) θ τ (z * compAt θ τ d.pY) f := by
     funext p

@@ -5,7 +5,7 @@ public import ReciprocityTheory.GaloisValuations.GlobalA
 public import ReciprocityTheory.ClassFieldTheory.LocalClassField.ExistsIntEKMulVbar
 public import ReciprocityTheory.ClassFieldTheory.LocalClassField.GalBasic
 public import ReciprocityTheory.ClassFieldTheory.LocalClassField.UnrExtD
-public import ReciprocityTheory.ClassFieldTheory.LocalClassField.UnrExtE
+public import ReciprocityTheory.ClassFieldTheory.LocalClassField.Bundle0005
 
 @[expose] public section
 

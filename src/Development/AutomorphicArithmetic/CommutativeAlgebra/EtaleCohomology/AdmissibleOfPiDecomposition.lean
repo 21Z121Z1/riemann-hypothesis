@@ -1,8 +1,8 @@
 module
 
-public import Development.AutomorphicArithmetic.CommutativeAlgebra.EtaleCohomology.NilToPhiAlt
-public import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.AnnihilatorModels.AdmissibleSequenceExact
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsModelOfMem
+public import Development.AutomorphicArithmetic.CommutativeAlgebra.EtaleCohomology.Bundle0010
+public import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.AnnihilatorModels.Bundle0028
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0808
 
 @[expose] public section
 

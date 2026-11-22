@@ -3,7 +3,7 @@ module
 public import Formalism.ThetaLogCoordinates.UniformThetaSubstitution.KernelFromKOne
 public import Formalism.ThetaLogCoordinates.UniformThetaSubstitution.FrobeniusLiftNorms.WModel
 public import Mathlib
-public import Formalism.ThetaLogCoordinates.UniformThetaSubstitution.StatementGK
+public import Formalism.ThetaLogCoordinates.UniformThetaSubstitution.Bundle0003
 public import Formalism.ThetaLogCoordinates.UniformThetaSubstitution.FrobeniusLiftNorms.EGaussK
 public import Formalism.ThetaLogCoordinates.UniformThetaSubstitution.StatementC
 

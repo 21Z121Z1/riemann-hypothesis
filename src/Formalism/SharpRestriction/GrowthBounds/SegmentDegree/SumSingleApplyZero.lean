@@ -1,6 +1,6 @@
 module
 
-public import Formalism.SharpRestriction.GrowthBounds.SegmentDegree.DplusLeBeS
+public import Formalism.SharpRestriction.GrowthBounds.SegmentDegree.Bundle0015
 
 @[expose] public section
 

@@ -2,11 +2,9 @@ module
 
 public import Mathlib
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.AdditiveValuationNorms.CokLenLeOfRangeLe
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.AdditiveValuationNorms.UnipPow
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.AdditiveValuationNorms.Imports
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.AdditiveValuationNorms.PowIn
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.AdditiveValuationNorms.ImportsMore
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.AdditiveValuationNorms.ImportsBis
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.AdditiveValuationNorms.Bundle0002
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.AdditiveValuationNorms.Bundle0001
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.AdditiveValuationNorms.Bundle0004
 
 @[expose] public section
 

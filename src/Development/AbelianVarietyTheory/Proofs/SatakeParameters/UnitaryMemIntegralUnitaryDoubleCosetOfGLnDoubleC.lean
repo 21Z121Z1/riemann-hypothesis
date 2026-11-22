@@ -2,10 +2,10 @@ module
 
 public import Mathlib
 public import Formalism.SatakeDualWeyl.KpqSubgroupCompact
-public import Formalism.SatakeDualWeyl.StatementG
+public import Formalism.SatakeDualWeyl.Bundle0002
 public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.InvMemDoubleCosetAndComm
 public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.FiniteResidueFieldAdicCompletionIntegers
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExistsNormEqXModMonicOfAdicCompleteInvolutionStatement
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0015
 
 @[expose] public section
 
@@ -238,7 +238,7 @@ theorem doubleCoset_unitary_of_GL (K : Type) [Field K] [NumberField K] (v : Heig
     rw [Valuation.map_sub_swap, hx2]
   obtain ⟨k₁, hk₁, k₂, hk₂, ⟨M, hM⟩, e'⟩ :=
     exists_unitary_factors (O := Ov K v) (Ov K v).subtype (c := c) (σ := σ) (fun _ => rfl) hc
-      (GlobalTheory.T.exists_norm_eq_X_mod_monic_of_adicComplete_involution (v.adicCompletionIntegers K) _ c hc hI hω) hg hg' h k e
+      (_root_.GlobalTheory.InertNorm.exists_dvd_mul_map_sub_X (v.adicCompletionIntegers K) _ c hc hI hω) hg hg' h k e
   refine ⟨k₁, hk₁, k₂, ⟨hk₂, ?_⟩, e'⟩
   refine GlobalTheory.UnitarySwap.mem_GLint_of_unitary (J := 1) hσ (one_mem _) hk₂ fun i j => ?_
   rw [hM]

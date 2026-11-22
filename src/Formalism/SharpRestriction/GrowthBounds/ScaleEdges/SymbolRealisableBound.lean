@@ -1,7 +1,7 @@
 module
 
 public import Formalism.SharpRestriction.GrowthBounds.ScaleEdges.GainBoundAt
-public import Formalism.SharpRestriction.GrowthBounds.ScaleEdges.FlatSrc
+public import Formalism.SharpRestriction.GrowthBounds.ScaleEdges.Bundle0004
 
 @[expose] public section
 

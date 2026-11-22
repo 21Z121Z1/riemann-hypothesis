@@ -2,9 +2,8 @@ module
 
 public import Development.WeilBound.RepresentationTheoryGL.TwistedFactors.SelmerRankBounds.EllipticityFromProductFormula
 public import Development.AutomorphicArithmetic.Foundations.Convolution.HermitianDescent.PowComp
-public import Development.AutomorphicArithmetic.Foundations.Convolution.HermitianDescent.NmCent
-public import Development.AutomorphicArithmetic.Foundations.Convolution.HermitianDescent.GalField
-public import Development.AutomorphicArithmetic.Foundations.Convolution.HermitianDescent.GalExt
+public import Development.AutomorphicArithmetic.Foundations.Convolution.HermitianDescent.Bundle0002
+public import Development.AutomorphicArithmetic.Foundations.Convolution.HermitianDescent.Bundle0001
 
 @[expose] public section
 

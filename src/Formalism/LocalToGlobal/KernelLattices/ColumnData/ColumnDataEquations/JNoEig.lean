@@ -1,6 +1,6 @@
 module
 
-public import Formalism.LocalToGlobal.KernelLattices.ColumnData.ColumnDataEquations.FinrankRow
+public import Formalism.LocalToGlobal.KernelLattices.ColumnData.ColumnDataEquations.Bundle0002
 
 @[expose] public section
 

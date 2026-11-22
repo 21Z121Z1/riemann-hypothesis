@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Development.WeilBound.CoreStatements.PublishedTheorems.PoitouTateDuality.FinalPtfsFoundSideE
-public import Development.WeilBound.CoreStatements.PublishedTheorems.PoitouTateDuality.FinalTlPush
+public import Development.WeilBound.CoreStatements.PublishedTheorems.PoitouTateDuality.Bundle0008
 
 @[expose] public section
 

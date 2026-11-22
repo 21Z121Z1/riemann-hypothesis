@@ -1,6 +1,6 @@
 module
 
-public import Development.EtaleCohomology.EtaleSheaves.LeafCompPf
+public import Development.EtaleCohomology.EtaleSheaves.Bundle0012
 public import Development.AbelianVarietyTheory.Definitions.Divisors.LineBundleGlobalSectionsDimCongrPicardClass
 
 @[expose] public section

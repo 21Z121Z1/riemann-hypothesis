@@ -1,7 +1,7 @@
 module
 
 public import Formalism.AdmissibleDesigns.FinDimOfLat
-public import Formalism.AdmissibleDesigns.LenComapSurj
+public import Formalism.AdmissibleDesigns.Bundle0007
 
 @[expose] public section
 

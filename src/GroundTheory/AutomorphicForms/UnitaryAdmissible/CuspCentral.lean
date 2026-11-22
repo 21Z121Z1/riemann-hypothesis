@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import GroundTheory.AutomorphicForms.CuspidalDiscreteness.SummandsAreCuspForms
-public import GroundTheory.AutomorphicForms.DixmierMalliavinBasic
+public import GroundTheory.AutomorphicForms.Bundle0006
 
 @[expose] public section
 

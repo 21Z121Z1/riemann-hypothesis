@@ -3,7 +3,7 @@ module
 public import Mathlib
 public import Formalism.PieriBlockIdeals.LatticeInclusionRealSettingAlt
 public import Formalism.LocalToGlobal.Divisibility.RowLat
-public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.GaloisRepOfPolarizedCuspidal
+public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.Bundle0010
 public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.HeckeLAdicCharacterAboveIff
 
 @[expose] public section

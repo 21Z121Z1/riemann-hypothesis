@@ -2,9 +2,9 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.MemberChainFormsLevelPrimeEqMember
-public import Formalism.LocalToGlobal.GroupLattices.LevelCharts.SplitIntPI
-public import Formalism.LocalToGlobal.HermitianColumns.SymAll
-public import Formalism.LocalToGlobal.GroupLattices.TiedFamilies.IntSplitOf
+public import Formalism.LocalToGlobal.GroupLattices.LevelCharts.Bundle0001
+public import Formalism.LocalToGlobal.HermitianColumns.Bundle0004
+public import Formalism.LocalToGlobal.GroupLattices.TiedFamilies.Bundle0001
 
 @[expose] public section
 

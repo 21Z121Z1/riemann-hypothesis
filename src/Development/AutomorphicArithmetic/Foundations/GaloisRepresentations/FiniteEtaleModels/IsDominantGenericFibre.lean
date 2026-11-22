@@ -1,9 +1,9 @@
 module
 
-public import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.FiniteEtaleModels.SecInjG
-public import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.AnnihilatorModels.IdealSplit
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.StalkNormalOfSmooth
-public import Development.AbelianVarietyTheory.Proofs.GenericRegularity.IsOpenImmersionOfSurj
+public import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.FiniteEtaleModels.Bundle0005
+public import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.AnnihilatorModels.Bundle0022
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle3138
+public import Development.AbelianVarietyTheory.Proofs.GenericRegularity.Bundle0015
 
 @[expose] public section
 

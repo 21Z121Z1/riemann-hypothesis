@@ -1,12 +1,11 @@
 module
 
 public import Mathlib
-public import GroundTheory.HeightsAndTheta.Heights.Intersections.StatementsArith
-public import GroundTheory.HeightsAndTheta.Heights.Intersections.StatementsWellDefined
-public import GroundTheory.HeightsAndTheta.Heights.Intersections.ThmIExistsFamily
-public import GroundTheory.HeightsAndTheta.Heights.Intersections.PChoice
+public import GroundTheory.HeightsAndTheta.Heights.Intersections.Bundle0007
+public import GroundTheory.HeightsAndTheta.Heights.Intersections.Bundle0009
+public import GroundTheory.HeightsAndTheta.Heights.Intersections.Bundle0047
 public import GroundTheory.HeightsAndTheta.Heights.Intersections.NotLtLtOfMemMinimalPrimes
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.InterDivSupp
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.Bundle0017
 
 @[expose] public section
 

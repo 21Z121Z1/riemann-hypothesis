@@ -1,10 +1,9 @@
 module
 
-public import Formalism.SharpRestriction.AdmissibleParameterJoins.GandSy
+public import Formalism.SharpRestriction.AdmissibleParameterJoins.Bundle0007
 public import Formalism.SharpRestriction.SmoothDesignExistence.SumOverPrimesHypotheses
-public import Formalism.SharpRestriction.AdmissibleParameterJoins.DIVfromGLs
+public import Formalism.SharpRestriction.AdmissibleParameterJoins.Bundle0008
 public import Formalism.SharpRestriction.Divisibility.ChainOperators.PerCol
-public import Formalism.SharpRestriction.AdmissibleParameterJoins.GandSaj
 
 @[expose] public section
 

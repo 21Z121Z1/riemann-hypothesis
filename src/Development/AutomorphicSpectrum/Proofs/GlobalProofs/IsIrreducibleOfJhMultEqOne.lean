@@ -1,11 +1,20 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Proofs.GlobalProofs.IsSubquotientCompMulSingle
-public import Development.AutomorphicSpectrum.Proofs.GlobalProofs.LanglandsClassificationCuspidalSupport
+public import Development.AutomorphicSpectrum.Proofs.GlobalProofs.Bundle0045
+public import Development.AutomorphicSpectrum.Proofs.GlobalProofs.Bundle0043
 public import Development.AutomorphicSpectrum.Proofs.GlobalProofs.LanglandsDistinctCuspidalPairEmbedding
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ParabolicProductEquivProductOfPartitionStatement
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.CuspidalPairIrreducibleProduct
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ParabolicProductEquivProductOfPartition
+public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.ThetaMod
+public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.Bundle0001
+public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.ExistsCellOfIsSubquotient
+public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisGeometry₂.Bundle0002
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0147
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0050
+public import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.NotInSupportOfSubsingleton
+public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.NonemptyEquivOfRangeEq
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsEquivDetCharacterOfIrreducibleRankLeOne
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0217
 public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsEquivProdIrrTw
 public import CompanionTheory.AutomorphicTheory.HeckeStandardModules.EqZeroOfCompAt
 
@@ -119,7 +128,7 @@ theorem isIrreducible_of_occurs (hG : GeometricLemma) (hBZ : BernsteinZelevinsky
       IsSubquotient (piTensor fun i => (p i).π) (jac e Q.π)) :
     (multiProd e fun i => (p i).π).IsIrreducible := by
   have hτ : (piTensor fun i => (p i).π).IsIrreducible :=
-    GlobalTheory.T.piExteriorTensor_smoothIrreducible_isIrreducible hBZ k _ _ fun i => (p i).toIrrRep
+    _root_.GlobalTheory.ExtTensorIrr.piTensor_isIrreducible hBZ k _ _ fun i => (p i).toIrrRep
   have hτs : IsSmooth (piTensor fun i => (p i).π) := isSmooth_piTensor fun i => (p i).smooth
   have hB : IsSmooth (multiProd e fun i => (p i).π) := isSmooth_parInd _ _
   refine isIrreducible_of_jhMult_eq_one e hB hτ ?_ ?_
@@ -140,7 +149,7 @@ theorem occurs_of_embedding (hG : GeometricLemma) (hBZ : BernsteinZelevinskyFini
     (hF : ∀ i (y : IrrRep (GL (Fin (d i)) k)), IsSubquotient y.ρ (F i) → HasSupport y.ρ (A i))
     (φ : Q.π.IntertwiningMap (multiProd e F)) (hφ : Function.Injective φ) :
     IsSubquotient (piTensor fun i => (p i).π) (jac e Q.π) := by
-  have hirr : (piTensor fun i => (p i).π).IsIrreducible := GlobalTheory.T.piExteriorTensor_smoothIrreducible_isIrreducible hBZ k _ _ fun i => (p i).toIrrRep
+  have hirr : (piTensor fun i => (p i).π).IsIrreducible := _root_.GlobalTheory.ExtTensorIrr.piTensor_isIrreducible hBZ k _ _ fun i => (p i).toIrrRep
   haveI := GlobalTheory.SmGL.Model.nontrivial_of_isIrreducible Q.irr
 
   let ψ := Model.evalOne e φ

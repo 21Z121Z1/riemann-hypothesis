@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ResAlgSplitTwo
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0046
 
 @[expose] public section
 

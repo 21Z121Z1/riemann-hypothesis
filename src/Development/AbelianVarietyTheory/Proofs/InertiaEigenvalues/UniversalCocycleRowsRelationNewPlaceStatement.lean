@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.UniversalCocycleRowsRelationNewPlace
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.VecPairApply
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0708
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0385
 
 @[expose] public section
 

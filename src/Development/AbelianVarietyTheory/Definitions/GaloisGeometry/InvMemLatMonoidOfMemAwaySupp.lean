@@ -4,11 +4,11 @@ public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.EqOneOfHeckeEigNeBot
 public import Development.AbelianVarietyTheory.Definitions.Divisors.HasDivPlace
 public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.IsMonHomIdPow
-public import Development.AbelianVarietyTheory.Definitions.Divisors.NontrivialOfArtinQE
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FibrePowerMapOfTotalSpacesIsPullback
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0027
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0810
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsLevelEqKN
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.HodgePullHodgePull
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ConjMemOfMemHeckeLevel
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0028
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0001
 public import Formalism.SatakeDualWeyl.KpqSubgroupCompact
 
 @[expose] public section

@@ -4,8 +4,8 @@ public import Mathlib
 public import GroundTheory.LocalFields.Interface
 public import GroundTheory.LocalFields.Integers
 public import GroundTheory.LocalFields.IntermediateField
-public import GroundTheory.LocalFields.UnramifiedDefs
-public import GroundTheory.LocalFields.UnitsPowers
+public import GroundTheory.LocalFields.Bundle0004
+public import GroundTheory.LocalFields.Bundle0002
 
 @[expose] public section
 

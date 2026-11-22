@@ -3,7 +3,7 @@ module
 public import Formalism.HermitianCurvature.HermitianCurvatureProofs.FourTermExpansion
 public import Formalism.HermitianCurvature.HermitianCurvatureProofs.CvRhoOfParts
 public import Formalism.HermitianCurvature.HermitianCurvatureProofs.RegularisedPairingViaPhase
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.BigCellOrbitSet
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0040
 
 @[expose] public section
 

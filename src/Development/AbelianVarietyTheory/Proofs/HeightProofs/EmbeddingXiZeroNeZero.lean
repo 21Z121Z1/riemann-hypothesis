@@ -2,10 +2,10 @@ module
 
 public import Mathlib
 public import Formalism.LocalRingCardinality.RankBoundMonotoneInDimension
-public import Formalism.LocalToGlobal.BesselHermitianTheta.LemmasWeil
-public import Formalism.LocalToGlobal.BesselHermitianTheta.LemmasSign
-public import Development.AbelianVarietyTheory.BlockTheory.HeightDefect.WeilIdempotents
-public import Development.AbelianVarietyTheory.Counterexamples.HeightSurvey.StarPurelyImaginaryEqNeg
+public import Formalism.LocalToGlobal.BesselHermitianTheta.Bundle0003
+public import Formalism.LocalToGlobal.BesselHermitianTheta.Bundle0001
+public import Development.AbelianVarietyTheory.BlockTheory.HeightDefect.Bundle0004
+public import Development.AbelianVarietyTheory.Counterexamples.HeightSurvey.Bundle0003
 
 @[expose] public section
 

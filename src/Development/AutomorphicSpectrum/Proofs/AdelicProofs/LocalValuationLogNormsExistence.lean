@@ -3,8 +3,8 @@ module
 public import Mathlib
 public import Development.AutomorphicSpectrum.Definitions.AdelicLattices.FactPrimes
 public import Development.AbelianVarietyTheory.Definitions.Foundations.ExistsFlatSecRankZero
-public import Development.AutomorphicSpectrum.Proofs.AdelicProofs.SumLogEmbeddingsEqNorm
-public import Development.WeilBound.CoreStatements.SesquilinearFractions.NPlaces
+public import Development.AutomorphicSpectrum.Proofs.AdelicProofs.Bundle0002
+public import Development.WeilBound.CoreStatements.SesquilinearFractions.Bundle0002
 
 @[expose] public section
 

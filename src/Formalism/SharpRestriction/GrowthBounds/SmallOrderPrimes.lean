@@ -2,7 +2,7 @@ module
 
 public import Formalism.LocalRingCardinality.DataParams₂
 public import Formalism.SharpRestriction.ParConsts
-public import Formalism.SharpRestriction.ElevenLe
+public import Formalism.SharpRestriction.Bundle0001
 public import Formalism.SharpRestriction.GrowthBounds.IsResidueClassZero
 
 @[expose] public section

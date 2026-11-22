@@ -2,8 +2,8 @@ module
 
 public import Mathlib
 public import Formalism.LocalToGlobal.KernelLattices.KerStd
-public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.ThetaZJetsThree
-public import Formalism.LocalToGlobal.InertKernelTheory.StatementIota
+public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.Bundle0012
+public import Formalism.LocalToGlobal.InertKernelTheory.Bundle0001
 public import Formalism.LocalToGlobal.KernelLattices.KernelLocalFactors.StdOK
 public import Formalism.LocalToGlobal.TorsionIntegrality.QuadraticSemicharacters.QuadraticSemicharacterIdentityReformulated
 public import Formalism.LocalToGlobal.TorsionIntegrality.QuadraticSemicharacters.QuadraticSemicharactersFactTer
@@ -12,9 +12,9 @@ public import Formalism.LocalToGlobal.GlobalTheory.GL3.PFamily
 public import Formalism.LocalToGlobal.KernelLattices.KernelLocalFactors.SelfDualLatticeNorms.HalfPeriodStandardCM
 public import Formalism.LocalToGlobal.KernelLattices.KernelLocalFactors.SelfDualLatticeNorms.IsTorsionPointStandardCM
 public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.UnitDeterminantRoot.DetMemOfEntries
-public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.UnitDeterminantRoot.NormLeOneOfRoot
+public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.UnitDeterminantRoot.Bundle0001
 public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.SpanRangeEmb4EqTop
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.NormLeOneOfTrace
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0110
 
 @[expose] public section
 

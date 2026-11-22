@@ -1,6 +1,6 @@
 module
 
-public import Formalism.SharpRestriction.GrowthBounds.RootWeights.SubstitutionPreservesOfGenerators
+public import Formalism.SharpRestriction.GrowthBounds.RootWeights.Bundle0021
 
 @[expose] public section
 

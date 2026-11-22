@@ -3,10 +3,10 @@ module
 public import Mathlib
 public import Formalism.LocalRingCardinality.AdicCompletionLocal.LocTied
 public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.ExistsOfLayers
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FrobeniusSubOneWittTensorLatticeSurjectiveFixedStatement
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsUniqueCocycleStatement
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsGammaLayerPadicCoordinatesStatement
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsWeakTopologyWittTiltTensorStatement
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0255
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsUniqueCocycle
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0294
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0271
 
 @[expose] public section
 
@@ -50,7 +50,7 @@ theorem existsUnique_fits (L : Formalism.WeaklyAdmissibleFiltrations.Lattice (O 
     (lcont : Continuous lam) (h₀ : lam g₀ = Multiplicative.ofAdd 1) (b z : M)
     (hb : ∀ h, lam h = 1 → a h z = z ∧ ∃ t, j t = a h b - b) (hz : ∃ t, j t = z - (a g₀ b - b)) :
     ∃! c : ↥(latticeCocycles L), Fits L j a lam b z c := by
-  obtain ⟨c, ⟨cc, cT, ccoc, c1, c2⟩, cu⟩ := GlobalTheory.T.exists_unique_cocycle_alt l G M (fun g => (a g).toAddMonoidHom) a1 amul acont
+  obtain ⟨c, ⟨cc, cT, ccoc, c1, c2⟩, cu⟩ := _root_.GlobalTheory.HlCoc.exists_unique_cocycle l G M (fun g => (a g).toAddMonoidHom) a1 amul acont
     j.toAddMonoidHom.range (by
       have : (j.toAddMonoidHom.range : Set M) = Set.range j := by ext; simp
       rw [this]; exact isCompact_range jemb.continuous)
@@ -438,7 +438,7 @@ theorem exists_classMaps : ∀ (l : ℕ) [Fact l.Prime] (P : LocPrime l) (AI : L
   have := compact_GK K
   have hT : ∀ T : LocLat ↥(GK K) ℚ_[l] ↥LL.1 ↥(OL LL),
       Setup (φRW LL) (fun g : ↥(GK K) => AI.gRW LL (g : GQ l)) l T := fun T =>
-    ⟨⟨(GlobalTheory.T.frobenius_sub_one_wittTensorLattice_surjective_fixed l K LL T).1, fun b => ((GlobalTheory.T.frobenius_sub_one_wittTensorLattice_surjective_fixed l K LL T).2.1 b).1⟩, GlobalTheory.T.exists_weak_topology_witt_tilt_tensor l P AI K LL T⟩
+    ⟨⟨(_root_.GlobalTheory.WittTensorFixed.main l K LL T).1, fun b => ((_root_.GlobalTheory.WittTensorFixed.main l K LL T).2.1 b).1⟩, GlobalTheory.T.exists_weak_topology_witt_tilt_tensor l P AI K LL T⟩
   exact nonempty_cl (l := l) (I := I) (gRW_one AI LL) (fun g h => gRW_mul AI LL (g : GQ l) (h : GQ l))
     (fun g => phi_gRW AI LL (g : GQ l)) hT (GlobalTheory.T.exists_gammaLayer_padic_coordinates l P K s LL hg Γ) E
 

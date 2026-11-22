@@ -2,9 +2,9 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.UnipotentBlockColumnIndex
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SetIntegralFundamentalDomainEqMassMulAverage
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.QuotientAverageTranslateInvariant
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.PeriodicEqZeroOfFourierCoefficientsZero
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0589
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0598
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0597
 
 @[expose] public section
 

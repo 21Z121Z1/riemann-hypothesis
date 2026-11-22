@@ -1,14 +1,16 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Proofs.GlobalProofs.ExistsKInfEqMul
+public import Development.AutomorphicSpectrum.Proofs.GlobalProofs.Bundle0060
 public import Development.AbelianVarietyTheory.Definitions.Foundations.ForallEventuallyFinLocIff
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.CmDataIsCMExtAndGramIsHermND
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.UnitaryAdelicIwasawaCompactStatement
-public import Development.AutomorphicSpectrum.Proofs.GlobalProofs.MinimalParabolicUnipotentLeviDecompStatement
-public import Development.AutomorphicSpectrum.Proofs.GlobalProofs.ParabolicBlockEmbeddingCompactStatement
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0111
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0689
+public import Development.WeilBound.ThetaLifts.Reductions.SiegelCore
+public import Development.AutomorphicSpectrum.Proofs.GlobalProofs.MinimalParabolicUnipotentLeviDecomp
+public import Development.AutomorphicSpectrum.Proofs.GlobalProofs.Bundle0048
+public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.IsConstAlongSingleton
 public import GroundTheory.PAdicHodge.NormalizedTrace
-public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.EvaluationMap
+public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0015
 
 @[expose] public section
 
@@ -55,9 +57,9 @@ theorem mul_mem_minPar {F E : Type} [Field F] [NumberField F] [Field E] [NumberF
 theorem exists_iwasawa : ∀ (D : D7) (θ : D.what₂.Tau → (Ainf D.host.F ⊗[D.host.F] D.host.E →+* ℂ)), IsInfFam θ → ∀ (V : HSp D) (ε : D.what₂.Tau → Fin V.rank → Bool) (fr : D.what₂.Tau → Matrix (Fin V.rank) (Fin V.rank) ℂ), IsFrameFam V ε fr → ∀ (m : ℕ) (X Y : Matrix (Fin V.rank) (Fin m) D.host.E), GlobalTheory.SiegelSet.IsWittFrame D.sp.cm.sig V.gram X Y → ∃ K : Subgroup (GA D V), IsCompact (K : Set (GA D V)) ∧ K ≤ GfC V ∧ ∀ g : GA D V, ∃ p ∈ PositivityTheory.ThKR.minPar D.sp.cm.sig V.gram X, ∃ κ : (∀ τ, Formalism.REAL.KG (ε τ)), ∃ k ∈ K, g = p * GlobalTheory.CompanionTheory.Hypotheses₂.LeviPart.KInf.kInf θ V ε fr κ * k := by
   intro D θ hθ V ε fr hfr m X Y hW
   have hh := GlobalTheory.Mem.Vol.cmData_isCMExt_and_gram_isHermND D.host.F D.host.E D.sp.cm
-  obtain ⟨K, hKf, hK, hiw, -⟩ := GlobalTheory.T.unitary_adelic_iwasawa_compact D.host.F D.host.E D.sp.cm.sig hh.1 V.rank V.gram (hh.2 V) m X Y hW
+  obtain ⟨K, hKf, hK, hiw, -⟩ := _root_.GlobalTheory.CompanionTheory.KFin.exists_compact_iwasawa_good D.host.F D.host.E D.sp.cm.sig hh.1 V.rank V.gram (hh.2 V) m X Y hW
   refine ⟨K, hK, hKf, fun g => ?_⟩
-  obtain ⟨p, hp, κ, e1⟩ := GlobalTheory.T.archimedean_iwasawa_minimal_parabolic D θ hθ V ε fr hfr m X Y hW _ (GlobalTheory.AutMult.toInf V g).2
+  obtain ⟨p, hp, κ, e1⟩ := _root_.GlobalTheory.CompanionTheory.Hypotheses₂.LeviPart.ArchIwasawa.exists_archIwasawa D θ hθ V ε fr hfr m X Y hW _ (GlobalTheory.AutMult.toInf V g).2
   obtain ⟨q, hq, hqf, k, hk, e2⟩ := hiw _ (GlobalTheory.AutMult.toFin V g).2
   refine ⟨p * q, mul_mem_minPar hp hq, κ, k, hk, ?_⟩
   have hcomm := GlobalTheory.AutMult.commute_inf_fin (⟨_, kInf_mem_GinfC hθ hfr κ⟩ : GinfC V) ⟨q, hqf⟩
@@ -73,7 +75,7 @@ theorem exists_decomp : ∀ (D : D7) (θ : D.what₂.Tau → (Ainf D.host.F ⊗[
   refine ⟨C, fun g => ?_⟩
   obtain ⟨p, hp, κ, k, hk, rfl⟩ := hiw g
   obtain ⟨c, hc, u, hu, rfl⟩ := hC k hk
-  obtain ⟨n, hn, l, hl, rfl⟩ := GlobalTheory.T.minimal_parabolic_unipotent_levi_decomp D.host.F D.host.E D.sp.cm.sig hh.1 V.rank V.gram (hh.2 V) m X Y hW T p hp
+  obtain ⟨n, hn, l, hl, rfl⟩ := _root_.GlobalTheory.CompanionTheory.Glob.MinParLevi.minPar_eq_unip_mul_levi D.host.F D.host.E D.sp.cm.sig hh.1 V.rank V.gram (hh.2 V) m X Y hW T p hp
   have hcf : c ∈ GfC V := hKf (hCK hc)
   have huf : u ∈ GfC V := by
     have := mul_mem (inv_mem hcf) (hKf hk)

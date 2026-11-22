@@ -2,9 +2,8 @@ module
 
 public import Mathlib
 public import GroundTheory.GlobalFields.ComplexMultiplication.FrobeniusAtPrimes
-public import GroundTheory.GlobalFields.ComplexMultiplication.DegreeOneAutomorphismPoints
-public import GroundTheory.GlobalFields.ComplexMultiplication.DegreeOneAutomorphismLift
-public import GroundTheory.GlobalFields.ComplexMultiplication.MainTheoremPointHom
+public import GroundTheory.GlobalFields.ComplexMultiplication.Bundle0015
+public import GroundTheory.GlobalFields.ComplexMultiplication.Bundle0016
 public import GroundTheory.GlobalFields.ComplexMultiplication.MainTheoremReduction
 public import GroundTheory.GlobalFields.ComplexMultiplication.TorsionReduction
 

@@ -1,11 +1,11 @@
 module
 
 public import Mathlib
-public import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.StPtsSheetOnlyNull
-public import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.StCriticalFibreInfinite
-public import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.PSheetOnlyNull
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.InterSheet
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.InterGood
+public import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.Bundle0020
+public import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.Bundle0001
+public import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.Bundle0066
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.Bundle0012
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.Bundle0010
 
 @[expose] public section
 

@@ -3,8 +3,8 @@ module
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.CurveDVRSpecialization.RatTorsionFree
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.PadicHodgeTheory.FiniteCohomology
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.UnitaryThreeGroups.DatFacts
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CyclotomicCharInertiaSurjective
-public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.SingleMemSubmodule
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0128
+public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0055
 
 @[expose] public section
 

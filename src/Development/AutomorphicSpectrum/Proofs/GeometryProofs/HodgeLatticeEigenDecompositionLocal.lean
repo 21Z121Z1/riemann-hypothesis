@@ -1,11 +1,11 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.GermSys
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.Bundle0013
 public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsFlatAnIffIsConstMul
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.UniformisationConclusion
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.HodgeAt
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.EigProjMemOfFree
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0077
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0048
 
 @[expose] public section
 

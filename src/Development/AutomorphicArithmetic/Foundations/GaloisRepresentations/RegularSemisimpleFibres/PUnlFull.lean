@@ -1,13 +1,13 @@
 module
 
-public import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.RegularSemisimpleFibres.SuppBCOfMix
+public import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.RegularSemisimpleFibres.Bundle0010
 public import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.RegularSemisimpleFibres.ResEmbCompat
 public import Development.AutomorphicArithmetic.Foundations.LocalLanglands.Multi
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SubquotientOfProductOfSupport
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NontrivialOfIsSubquotient
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CuspidalPairIrreducibleUnlinked
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0650
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1735
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0371
 public import Development.WeilBound.RepresentationTheoryGL.GenericUnitaryGL.GenericUnitaryDualGLOfTwo
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsNeZeroOfExtTensor
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1452
 
 @[expose] public section
 

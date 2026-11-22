@@ -3,28 +3,40 @@ module
 public import Mathlib
 public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.ModelSmall
 public import Development.AutomorphicSpectrum.Statements.TowerExistence.GoodTowerExistsX
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.InterNamed
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArithmeticIntersection.MultihomogeneousIdeals.ExistsUniqueStatement
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsEmbeddingPieces
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.Bundle0012
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArithmeticIntersection.MultihomogeneousIdeals.Bundle0001
+public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0036
 public import Development.AutomorphicSpectrum.Definitions.MetricPeriods.HasMultiplier
 public import Development.AutomorphicSpectrum.Definitions.DivisibilityTowers.HeckeSectionsIsotropicCommutatorPairingPower
 public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.OverLaUnique
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.InterSt
-public import Development.AbelianVarietyTheory.Proofs.GenericRegularity.EvaluationLawsGenericFramesAtlasHold
-public import Development.AbelianVarietyTheory.Proofs.GenericRegularity.GenFrExAndGenFromTest
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.Bundle0006
+public import Development.AbelianVarietyTheory.Proofs.GenericRegularity.Bundle0029
 public import Development.AbelianVarietyTheory.Proofs.GenericRegularity.ExistsBijectiveKappa
 public import Development.AbelianVarietyTheory.Proofs.GenericRegularity.MemRangeOfIsAlgebraicRatFun
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.IntAll
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.IntFrExtOfGoodLevel
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0081
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0079
 public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.NumberFieldFinitePlaceCompletionEmbedding
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ModuliExistsNumberFieldPointStatement
-public import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.AbelianSchemeLawsUnconditional
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ComplexUniformizationLawsOfGoodDeepCover
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsCuspOnRestrict
-public import Development.AbelianVarietyTheory.Proofs.HeightProofs.NoCommonZeroIffOfSec
-public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.CompactifiedModuliPartOne
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0063
+public import Development.AbelianVarietyTheory.Definitions.ExistenceOfLattices.UnivFrame
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0010
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.Bundle0002
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.SecBaseChangeAnySt
+public import Formalism.LocalToGlobal.ProjectiveLattices.IntAllProofFree
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0017
+public import Formalism.LocalToGlobal.ProjectiveLattices.UnitIndepOfCharts
+public import Formalism.LocalToGlobal.ProjectiveLattices.GenFrPf
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0005
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.UniformisationConclusion
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.Bundle0003
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.Bundle0006
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.SemiabelianSchemes.Biextensions.CubicalExtendsSt
+public import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.Bundle0029
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1842
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1293
+public import Development.AbelianVarietyTheory.Proofs.HeightProofs.Bundle0060
+public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0224
 public import Development.AbelianVarietyTheory.Definitions.Foundations.ExistsFlatSecRankZero
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.CardLower
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0181
 
 @[expose] public section
 
@@ -69,7 +81,7 @@ theorem compLaws_of (hN : N1ab) (hN' : N1c) (U : ∀ σ : c.F →+* ℂ, Unf Xo 
       unf := hU
       unTest := hT
       chiTriv := hC
-      ptNe := intFrNe_of' (GlobalTheory.T.xoNumPt_of_p_add_q_pos hN' E H Dw l Xo c hpq) GlobalTheory.locFld
+      ptNe := intFrNe_of' (_root_.GlobalTheory.moduli_exists_numberField_point hN' E H Dw l Xo c hpq) GlobalTheory.locFld
         (GlobalTheory.Exist.intFrExt_of_good GlobalTheory.partI_closed hN hB hTw E H Dw l Xo c hpq hg)
       intAll := GlobalTheory.IntegralFrames.intAll GlobalTheory.partI_closed hN hB hTw E H Dw l Xo c hpq hg
       e_sec := GlobalTheory.CompRestr.idem_mem_sec

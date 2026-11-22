@@ -1,10 +1,10 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FockOfApply
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0923
 public import Development.AutomorphicArithmetic.CyclotomicBounds.DeRhamLattices.ScaledFockFormMemMtLatIff
 public import Development.AutomorphicArithmetic.CyclotomicBounds.DeRhamLattices.ExistsFockFormEqOfMemMtLat
-public import Development.AutomorphicArithmetic.CyclotomicBounds.DeRhamLattices.ExistsRationalStructureLowestFormSpace
+public import Development.AutomorphicArithmetic.CyclotomicBounds.DeRhamLattices.Bundle0011
 
 @[expose] public section
 

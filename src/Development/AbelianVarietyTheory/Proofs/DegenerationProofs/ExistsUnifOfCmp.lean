@@ -4,25 +4,24 @@ public import Mathlib
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.RigidSys
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.CubeVal
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.UnifUniqSt
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.IsNsmul
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.QkToAkU
-public import Development.AbelianVarietyTheory.Definitions.Degenerations.ExistsUniquePartner
-public import Development.AbelianVarietyTheory.Definitions.Degenerations.MorAlgSt
-public import Development.AbelianVarietyTheory.Definitions.Uniformization.WCompat
-public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.GmMulEqOfResMulEq
-public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.UniformisationEqIffExpansionEq
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.Bundle0005
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.Bundle0006
+public import Development.AbelianVarietyTheory.Definitions.Degenerations.Bundle0002
+public import Development.AbelianVarietyTheory.Definitions.Degenerations.Bundle0001
+public import Development.AbelianVarietyTheory.Definitions.Uniformization.Bundle0001
+public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.Bundle0009
+public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.Bundle0031
 public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ExistsTwistBasisOffPrime
-public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ExpBijOfOnto
-public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.FinrankFamOfExpBij
+public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.Bundle0095
 public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ExistsFamOfIsPullDeg
 public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ExistsFamFieldPull
 public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ExpandsGTransport
 public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ExistsThickIsoOfIsPullDeg
-public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.FinrankFamOfLaws
+public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.Bundle0041
 public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.QkToAkDescendsAlongBaseChange
-public import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.ExpansionOfIntegralSectionIsIntegral
-public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.UniformisationChartValueFormsCorrespondStatement
-public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsUniqueExpansionSectionAdmissibleBaseStatement
+public import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.Bundle0023
+public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.Bundle0066
+public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.Bundle0100
 
 @[expose] public section
 
@@ -424,7 +423,7 @@ theorem exists_expandsAt (hL : Laws) (hL₂ : Laws2) (hE : Ega) {R : Type} [Comm
       ∀ L L' : RigLB G, L = L' → ∀ σ : H0 L'.L k, ∃ σ₁ : H0 L.L k, HEq σ₁ σ) _ _ hU.2.1 σ₀
   obtain ⟨σ, hσ⟩ := exists_restrict U.P.L.L (fun _ : Fin 1 => 𝟙 G.left) (fun _ => (k : ℤ)) (snd (𝟙_ _) G).left
     (fun _ => (snd (𝟙_ _) G).left) (fun _ => (Category.comp_id _).symm) σ₁
-  obtain ⟨f, hf, -⟩ := GlobalTheory.T.existsUnique_expansion_section_admissible_base hL hL₂ hE R I hR hI D.toPre A G U k σ
+  obtain ⟨f, hf, -⟩ := _root_.GlobalTheory.CompleteBaseExpansion.main hL hL₂ hE R I hR hI D.toPre A G U k σ
   let n : D.toPre.P.A ⟶ 𝟙_ _ ⊗ D.toPre.P.A := lift (toUnit _) (𝟙 _)
   have n₁ : n.left ≫ (snd (𝟙_ _) D.toPre.P.A).left = 𝟙 _ :=
     congrArg (fun q => q.left) (lift_snd _ _ : n ≫ snd _ _ = 𝟙 _)
@@ -438,7 +437,7 @@ theorem exists_expandsAt (hL : Laws) (hL₂ : Laws2) (hE : Ega) {R : Type} [Comm
       (mul_comm (snd (𝟙_ _) D.toPre.P.A) (cP D.toPre _ α)), rfl, rfl]
   choose f₀ hf₀ using fun α => exists_restrict D.toPre.P.L _ _ n.left (D.toPre.famφB α)
     (fun κ => by rw [hφ, ← Category.assoc, n₁, Category.id_comp]) (f α)
-  refine ⟨f₀, ((GlobalTheory.T.uniformisation_chart_value_forms_correspond hL hL₂ R I D A G U.semi).2.2 U U₀ hU k σ f σ₀ f₀ (fun σ₂ h₂ z J hJ => ?_)
+  refine ⟨f₀, ((_root_.GlobalTheory.LN.PreForm.under_exists_and_expands hL hL₂ R I D A G U.semi).2.2 U U₀ hU k σ f σ₀ f₀ (fun σ₂ h₂ z J hJ => ?_)
     (fun α z J hJ => ?_)).1 hf⟩
   · obtain rfl : σ₂ = σ₁ := eq_of_heq (h₂.trans h₁.symm)
     rw [← SectionScalarValuation.secScal_sval hσ _ z hJ, Category.id_comp]
@@ -446,7 +445,7 @@ theorem exists_expandsAt (hL : Laws) (hL₂ : Laws2) (hE : Ega) {R : Type} [Comm
 
 theorem exists_unif_of_cmp : Laws → Laws2 → Ega → ∀ (R V : Type) [CommRing R] [IsDomain R] [IsLocalRing R] [CommRing V] [IsDomain V] (I : Ideal R) (I' : Ideal V), AdmBase R I → AdmBase V I' → I ≠ ⊤ → ∀ φ : R →+* V, Function.Injective φ → I.map φ ≤ I' → ∀ (D : DegData R I) (D' : DegData V I') (A : PolAV (Sp (FractionRing R))) (A' : PolAV (Sp (FractionRing V))) (G : Over (Spec (CommRingCat.of R))) [GrpObj G] [IsCommMonObj G] (G' : Over (Spec (CommRingCat.of V))) [GrpObj G'] [IsCommMonObj G'] (U : PreU I D.toPre A G) (U' : PreU I' D'.toPre A' G') (U₀' : Unif I' D' A' G') (F : G'.left ⟶ G.left) (C : Cmp φ U U' F) (hD : IsPullDeg φ D.toPre D'.toPre), Under U' U₀'.toUnifPre → hD.e.hom.left ≫ pullback.fst _ _ = C.β → HEq hD.w C.v → hD.xe = C.xe → ∃ (U₀ : Unif I D A G) (bc : G' ≅ (Over.pullback (specOf φ)).obj G), Under U U₀.toUnifPre ∧ IsMonHom bc.hom ∧ bc.hom.left ≫ pullback.fst _ _ = F ∧ IsPullUnif φ hD bc U₀ U₀' := by
   intro hL hL₂ hE R V _ _ _ _ _ I I' hR hV hI φ hφ hII D D' A A' G _ _ G' _ _ U U' U₀' F C hD hU' hβ hv hx
-  obtain ⟨U₀, hU⟩ := (GlobalTheory.T.uniformisation_chart_value_forms_correspond hL hL₂ R I D A G U.semi).2.1 U
+  obtain ⟨U₀, hU⟩ := (_root_.GlobalTheory.LN.PreForm.under_exists_and_expands hL hL₂ R I D A G U.semi).2.1 U
   obtain ⟨wL, hwL, ⟨he, hrig⟩, hlev⟩ := level_of_cmp hII U U' U₀ U₀'.toUnifPre hU hU' C hD hβ hv hx
   have hexp : ∀ k : ℕ, 1 ≤ k → U₀.ExpBij k := fun k hk =>
     expBij_descends hL hL₂ hR hV hφ hD U.semi U'.semi U₀ U₀' C.pb wL hwL hlev hk

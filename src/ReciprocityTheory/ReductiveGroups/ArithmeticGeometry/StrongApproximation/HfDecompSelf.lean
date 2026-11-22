@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.StrongApproximation.ReachableFixingAddSmulSecond
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.StrongApproximation.ExistsMaxOfNotCoprime
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.StrongApproximation.Bundle0001
 
 @[expose] public section
 

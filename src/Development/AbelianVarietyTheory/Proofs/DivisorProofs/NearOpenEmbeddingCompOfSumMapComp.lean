@@ -1,10 +1,10 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsDescentDatumOfDescendedMultiplicationImpor
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HomExtOfAgreeOnFibreDenseOpenSmoothStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IrreducibleSpaceOfSmoothFieldOfConnectedSpace
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.SabPull
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2252
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0620
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0354
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.Bundle0007
 
 @[expose] public section
 
@@ -51,7 +51,7 @@ theorem eq_of_smooth_comp {W X T Y : Scheme.{0}} (p : X ⟶ T) [Smooth p] (hp : 
     (m : W ⟶ X) [Smooth m] [Surjective (m ≫ p)] (q : Y ⟶ T) [IsSeparated q] (f g : X ⟶ Y) (hfg : f ≫ q = g ≫ q)
     (h : m ≫ f = m ≫ g) : f = g := by
   let P : X.Opens := ⟨Set.range m, m.isOpenMap.isOpen_range⟩
-  refine GlobalTheory.T.hom_ext_of_agree_on_fibreDense_open_smooth X T Y p q P (fun x => ?_) f g hfg ?_
+  refine _root_.GlobalTheory.FibreDense.main X T Y p q P (fun x => ?_) f g hfg ?_
   · obtain ⟨w, hw⟩ := (m ≫ p).surjective (p x)
     have := subset_closure_inter_of_isPreirreducible_of_isOpen (hp (p x)) P.2 ⟨m w, by simpa using hw, w, rfl⟩
     rw [Set.inter_comm] at this

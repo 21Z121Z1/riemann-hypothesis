@@ -1,7 +1,7 @@
 module
 
 public import Development.WeilBound.CoreStatements.PublishedTheorems.PoitouTateDuality.PoitouTateNineTerm.NineAddCore
-public import Development.WeilBound.CoreStatements.PublishedTheorems.PoitouTateDuality.PoitouTateNormalisedOfNine
+public import Development.WeilBound.CoreStatements.PublishedTheorems.PoitouTateDuality.Bundle0010
 
 @[expose] public section
 

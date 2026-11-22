@@ -2,15 +2,26 @@ module
 
 public import Mathlib
 public import Formalism.LocalToGlobal.ProjectiveLattices.PetersonNormSubspace
-public import Formalism.LocalToGlobal.ProjectiveLattices.CompOrd
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0012
 public import Formalism.LocalToGlobal.ProjectiveLattices.CompHt
-public import Formalism.LocalToGlobal.ProjectiveLattices.FreeBridge
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PullbackSections.FrMapComp
-public import Development.AbelianVarietyTheory.Proofs.GenericRegularity.EvaluationLawsGenericFramesAtlasHoldStatement
-public import Development.AbelianVarietyTheory.Proofs.GenericRegularity.ExistsIdempotentWeightZeroSectionOfComponentStatement
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0024
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PullbackSections.Bundle0009
+public import Development.AbelianVarietyTheory.Proofs.GenericRegularity.Bundle0029
+public import Development.AbelianVarietyTheory.Definitions.RegularCharts.ModelAt
+public import Development.AbelianVarietyTheory.Definitions.RegularCharts.Reframe
+public import Formalism.LocalToGlobal.ProjectiveLattices.FrameCharts
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.UniformisationConclusion
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.SecBaseChangeAnySt
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0014
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0015
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0013
+public import Formalism.LocalToGlobal.ProjectiveLattices.GenFrPf
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArakelovVolumes.UpperBounds.Bundle0002
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.Bundle0003
+public import Development.AbelianVarietyTheory.Proofs.GenericRegularity.Bundle0024
 public import Development.AbelianVarietyTheory.Proofs.GenericRegularity.SectionEqZeroOfGenericFramedPointValues
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.FundamentalDomains.FourierCoefficientDomain
-public import Development.AbelianVarietyTheory.Proofs.GenericRegularity.ExistsGenericComponentPointsOffMeagreStatement
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.FundamentalDomains.Bundle0014
+public import Development.AbelianVarietyTheory.Proofs.GenericRegularity.ExistsGenericComponentPointsOffMeagre
 
 @[expose] public section
 
@@ -62,9 +73,9 @@ end GlobalTheory.GenericDetect
 open GlobalTheory.GenericDetect in
 theorem GlobalTheory.evC_eq_zero_iff_rdU_eq_zero : ∀ (E : Type) [Field E] [NumberField E] [IsCMField E] (H : ReciprocityTheory.ChartRestriction.G.Geo.Tor.Host E) (Dw : Datum H) (l : Level H) (Xo : Moduli Dw l) (c : Coeff l) (σ : c.F →+* ℂ) (r : ℕ) (U : Unf Xo c σ r), GoodEmb c σ → IsUnf U → ∀ (h : GenFrEx Xo c) (k : U.Comp) (Z : Comp Xo c) (x₀ : (U.X k).dom), (∃ (φ : Om Z →ₐ[c.F] CAt σ) (y' : FrPt Xo c (CAt σ)) (t : Ix Dw → (CAt σ)ˣ), FrMap φ (genFr h Z) y' ∧ FrBor t (U.un k x₀) y') → (∀ (u : (E →+* ℂ) × ℕ → ℕ) (n : ℕ), Dom u n → ∀ f ∈ sec Xo c u n, evC h Z f = 0 ↔ ∀ x ∈ (U.X k).dom, rdU U f k x = 0) := by
   intro E _ _ _ H Dw l Xo c σ r U hσ hU h k Z x₀ ⟨φ, y', t, hm, hb⟩ u n hd f hf
-  obtain ⟨hL, -, -, hA⟩ := GlobalTheory.T.evaluation_laws_generic_frames_atlas_hold E H Dw l Xo c
+  obtain ⟨hL, -, -, hA⟩ := _root_.GlobalTheory.Reg.evLaws_genFr_atlas E H Dw l Xo c
   refine ⟨fun h0 => ?_, fun h0 => (rdU_eq_zero_iff hL U h k Z x₀ φ y' t hm hb hf).1 (h0 _ x₀.2)⟩
-  obtain ⟨Z', S, hS, hg⟩ := GlobalTheory.T.exists_genericComponentPoints_off_meagre E H Dw l Xo c σ r U hσ hU h k
+  obtain ⟨Z', S, hS, hg⟩ := _root_.GlobalTheory.GenericFrames.exists_comp_generic_off_meagre E H Dw l Xo c σ r U hσ hU h k
   have hO : IsOpen (U.X k).dom := FourierCoefficientDomain.isOpen_dom _
   have key : ∀ (a : (E →+* ℂ) × ℕ → ℕ) (m : ℕ), Dom a m → ∀ g ∈ sec Xo c a m, evC h Z' g = 0 →
       ∀ x ∈ (U.X k).dom, rdU U g k x = 0 := by
@@ -74,7 +85,7 @@ theorem GlobalTheory.evC_eq_zero_iff_rdU_eq_zero : ∀ (E : Type) [Field E] [Num
     exact (rdU_eq_zero_iff hL U h k Z' ⟨x, hx⟩ ψ z s hm' hb' hgs).2 hg0
   have hZ : Z' = Z := by
     by_contra hne
-    obtain ⟨χ, hχ, -, h1, hz⟩ := GlobalTheory.T.exists_idempotent_weightZero_section_of_component E H Dw l Xo c hL h (hA h) Z
+    obtain ⟨χ, hχ, -, h1, hz⟩ := _root_.GlobalTheory.Reg.exists_idem_section E H Dw l Xo c hL h (hA h) Z
     have hD : Dom (E := E) 0 0 := ⟨fun τ _ _ _ => le_rfl, Even.zero⟩
     have := (rdU_eq_zero_iff hL U h k Z x₀ φ y' t hm hb hχ).1 (key 0 0 hD χ hχ (hz Z' hne) _ x₀.2)
     rw [h1] at this

@@ -1,10 +1,10 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.BlockAnti
+public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.Bundle0009
 public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.IsotropicStabilizerRadicalStructure
 public import Formalism.SharpRestriction.CuspSpanNormBounds.NormalizedLocalScale
-public import Formalism.SharpRestriction.CuspSpanNormBounds.RootMeasBig
+public import Formalism.SharpRestriction.CuspSpanNormBounds.Bundle0002
 
 @[expose] public section
 

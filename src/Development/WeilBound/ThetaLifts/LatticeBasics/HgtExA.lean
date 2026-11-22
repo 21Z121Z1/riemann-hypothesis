@@ -4,8 +4,8 @@ public import Mathlib
 public import Development.WeilBound.ThetaLifts.LatticeBasics.PairsStable
 public import Development.WeilBound.ThetaLifts.LatticeBasics.HgtFin
 public import Development.WeilBound.ThetaLifts.LatticeBasics.HgtArch
-public import Development.WeilBound.CoreStatements.LocalThetaKernels.IwasAd
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsSiegelHProjArchEq
+public import Development.WeilBound.CoreStatements.LocalThetaKernels.Bundle0001
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0305
 
 @[expose] public section
 

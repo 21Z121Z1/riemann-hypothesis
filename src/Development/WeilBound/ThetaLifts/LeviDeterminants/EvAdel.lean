@@ -1,6 +1,6 @@
 module
 
-public import Development.WeilBound.ThetaLifts.LeviDeterminants.ModelChangeOf
+public import Development.WeilBound.ThetaLifts.LeviDeterminants.Bundle0011
 public import Development.WeilBound.ThetaLifts.LeviDeterminants.MapEqOfSmul
 
 @[expose] public section

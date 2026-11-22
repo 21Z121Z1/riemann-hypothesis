@@ -2,7 +2,7 @@ module
 
 public import Development.WeilBound.CoreStatements.GaussianSeminormBounds.RealSeminormFiltration.FockAct1FockAct2Commute
 public import Formalism.LocalToGlobal.ThetaOperatorCommutation.RealTh
-public import ReciprocityTheory.ThetaSummability.RealCoinvariants.Numbers
+public import ReciprocityTheory.ThetaSummability.RealCoinvariants.Bundle0001
 public import Mathlib.LinearAlgebra.PiTensorProduct
 
 @[expose] public section

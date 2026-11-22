@@ -1,9 +1,8 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.ContrFactor
-public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.AllPositions
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IsClosedEmbeddingAffPtUncurry
+public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.Bundle0002
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0023
 
 @[expose] public section
 

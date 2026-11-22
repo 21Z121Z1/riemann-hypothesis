@@ -1,14 +1,13 @@
 module
 
 public import Mathlib
-public import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.ImportsFurtherFurther
-public import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.IsMultiProjPrimeBaseComap
-public import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.TrdegEqOfLeOfIsAlgebraic
+public import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.Bundle0043
+public import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.Bundle0050
+public import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.Bundle0042
 public import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.CoeNeZeroOfNotMem
-public import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.XMemMIdealOverIff
-public import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.MemMIdealOverIff
-public import GroundTheory.HeightsAndTheta.Heights.FieldsOfNumbers.PMChartHomog
-public import GroundTheory.HeightsAndTheta.Heights.FieldsOfNumbers.PMChartLocDim
+public import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.Bundle0061
+public import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.Bundle0054
+public import GroundTheory.HeightsAndTheta.Heights.FieldsOfNumbers.Bundle0021
 
 @[expose] public section
 

@@ -1,11 +1,11 @@
 module
 
 public import Development.AutomorphicArithmetic.CommutativeAlgebra.MayerVietorisConnectingExistsUniqueAdditiveExact
-public import Development.AutomorphicArithmetic.CommutativeAlgebra.MayerVietorisConnectingCupPullback
+public import Development.AutomorphicArithmetic.CommutativeAlgebra.Bundle0023
 public import Development.AutomorphicArithmetic.CupPullbacks.ConstCompSingle
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CupHypercohomologyPullbackStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TateTwistCupProductGradedCommStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TateTwistCupUnitAndPrimitiveRootClassesStatement
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0399
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0594
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0604
 
 @[expose] public section
 

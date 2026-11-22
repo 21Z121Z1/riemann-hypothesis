@@ -1,7 +1,7 @@
 module
 
 public import Development.AbelianVarietyTheory.Definitions.Foundations.FinalTheorems
-public import ReciprocityTheory.ReductiveGroups.UnramifiedIntegrals.NormLeOneOfIntegralInt
+public import ReciprocityTheory.ReductiveGroups.UnramifiedIntegrals.Bundle0010
 
 @[expose] public section
 

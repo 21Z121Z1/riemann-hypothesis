@@ -1,6 +1,6 @@
 module
 
-public import Development.EtaleCohomology.EtaleSheaves.LocalDescent
+public import Development.EtaleCohomology.EtaleSheaves.Bundle0028
 
 @[expose] public section
 

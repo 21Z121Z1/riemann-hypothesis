@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Formalism.SharpRestriction.LevelLetterCocycles.ArithmeticCylinders
-public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.LabelDatum
+public import Formalism.SharpRestriction.LevelLetterCocycles.Bundle0004
+public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0008
 
 @[expose] public section
 

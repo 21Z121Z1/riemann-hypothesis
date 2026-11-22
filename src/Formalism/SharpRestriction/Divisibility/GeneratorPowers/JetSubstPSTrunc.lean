@@ -1,8 +1,8 @@
 module
 
-public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.ScaleGenIsGen
+public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0020
 public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.GermBPrim
-public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.GermFunPf
+public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0007
 
 @[expose] public section
 

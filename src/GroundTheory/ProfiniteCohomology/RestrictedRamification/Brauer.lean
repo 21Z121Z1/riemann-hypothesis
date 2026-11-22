@@ -4,7 +4,7 @@ public import Mathlib
 public import GroundTheory.ProfiniteCohomology.RestrictedRamification.BrauerSplit
 public import GroundTheory.ProfiniteCohomology.RestrictedRamification.BrauerLocalVal
 public import GroundTheory.ProfiniteCohomology.RestrictedRamification.BrauerDivisor
-public import GroundTheory.ProfiniteCohomology.GlobalClassFormation.ExistsUnitsToIdelesEqOfIdelesSumInvEqZero
+public import GroundTheory.ProfiniteCohomology.GlobalClassFormation.Bundle0002
 
 @[expose] public section
 

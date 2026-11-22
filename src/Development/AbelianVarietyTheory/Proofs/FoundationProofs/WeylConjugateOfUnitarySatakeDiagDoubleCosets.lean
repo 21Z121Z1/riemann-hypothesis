@@ -4,7 +4,7 @@ public import Mathlib
 public import Formalism.SatakeDualWeyl.KpqSubgroupCompact
 public import Development.AbelianVarietyTheory.Definitions.Divisors.LineOppositeParabolicUnitaryLeviSectionEq
 public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExistsAntiJFrame
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SymmetricFunctionInverseInvariant
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0115
 
 @[expose] public section
 

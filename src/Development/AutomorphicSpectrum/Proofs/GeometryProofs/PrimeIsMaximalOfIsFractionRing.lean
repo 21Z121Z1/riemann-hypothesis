@@ -1,8 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Statements.GeometryStatements.CurveSemiAbelianConjecture
-public import Development.AutomorphicSpectrum.Statements.GeometryStatements.SeparableFormGroupElementFixesUniquePositiveLine
+public import Development.AutomorphicSpectrum.Statements.GeometryStatements.Bundle0005
 public import Development.AutomorphicSpectrum.Definitions.DivisibilityTowers.Proportional
 public import GroundTheory.HeightsAndTheta.Heights.Intersections.OneNotMemOfIsPrime
 public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.AssemblyBase

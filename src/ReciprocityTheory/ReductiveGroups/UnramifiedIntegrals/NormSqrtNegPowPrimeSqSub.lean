@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import ReciprocityTheory.ReductiveGroups.UnramifiedIntegrals.ExistsTeichmullerRepModPrime
-public import ReciprocityTheory.ReductiveGroups.UnramifiedIntegrals.KurNewton
+public import ReciprocityTheory.ReductiveGroups.UnramifiedIntegrals.Bundle0008
+public import ReciprocityTheory.ReductiveGroups.UnramifiedIntegrals.Bundle0003
 
 @[expose] public section
 

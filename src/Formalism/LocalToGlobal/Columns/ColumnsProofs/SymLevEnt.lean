@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Formalism.LocalToGlobal.Columns.OcbLevIsSym
-public import Formalism.LocalToGlobal.Columns.RecLevelSymF
+public import Formalism.LocalToGlobal.Columns.Bundle0033
+public import Formalism.LocalToGlobal.Columns.Bundle0011
 
 @[expose] public section
 

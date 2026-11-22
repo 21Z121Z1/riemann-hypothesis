@@ -1,7 +1,7 @@
 module
 
 public import Formalism.SharpRestriction.GrowthBounds.StatementOfDegreeAndBound
-public import Formalism.SharpRestriction.GrowthBounds.GLWeightTheory
+public import Formalism.SharpRestriction.GrowthBounds.Bundle0003
 public import Formalism.SharpRestriction.GrowthBounds.FrobeniusPaths.AntitoneOfAppend
 
 @[expose] public section

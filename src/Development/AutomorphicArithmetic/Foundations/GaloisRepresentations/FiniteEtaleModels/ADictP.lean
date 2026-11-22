@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.FiniteEtaleModels.GalOfKer
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsIntIntCast
+public import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.FiniteEtaleModels.Bundle0010
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle3063
 
 @[expose] public section
 

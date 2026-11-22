@@ -1,10 +1,10 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.NormDegreeBoundPolynomialCombination
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AlgebraMapNormMemSpan
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsLowDegreeCoordsModMul
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsDegLtTwoCorrectionSimple
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0035
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0003
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0004
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0136
 
 @[expose] public section
 

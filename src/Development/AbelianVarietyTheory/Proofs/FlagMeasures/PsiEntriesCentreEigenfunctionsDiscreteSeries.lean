@@ -3,9 +3,9 @@ module
 public import Mathlib
 public import Development.AbelianVarietyTheory.Statements.CuspFrameWeights.DiscreteSpectrumKFiniteDecomposition
 public import Formalism.RealPlaceAnalysis.QuotientSettingHolds
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.PhiCentreEigenfunctionDiscreteSeriesStatement
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.PsiRestrictionHolomorphicNearOneStatement
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.PsiEntriesRealAnalyticStatement
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.PhiCentreEigenfunctionDiscreteSeries
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0221
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.PsiEntriesRealAnalytic
 
 @[expose] public section
 
@@ -727,6 +727,6 @@ theorem psiEigen_of (h1 : PhiEigen) (h2 : PsLocal) (h3 : PsiAnalytic) : PsiEigen
   rw [integral_const_mul]
   ring
 
-theorem psiEigen : PsiEigen := psiEigen_of GlobalTheory.T.phi_centre_eigenfunction_discrete_series GlobalTheory.T.psi_restriction_holomorphic_near_one GlobalTheory.T.psi_entries_real_analytic
+theorem psiEigen : PsiEigen := psiEigen_of _root_.GlobalTheory.PhiEigenfun.phiEigen _root_.GlobalTheory.Dec.psLocal _root_.GlobalTheory.Dec.psiAnalytic
 
 end GlobalTheory.Dec.PsiEig

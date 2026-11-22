@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.BlockTheory.NonGaloisCusps.RepresentationBounds
+public import Development.AbelianVarietyTheory.BlockTheory.NonGaloisCusps.Bundle0004
 
 @[expose] public section
 

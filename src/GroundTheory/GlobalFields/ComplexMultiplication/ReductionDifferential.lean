@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import GroundTheory.GlobalFields.ComplexMultiplication.ReductionDegree
+public import GroundTheory.GlobalFields.ComplexMultiplication.Bundle0014
 public import GroundTheory.GlobalFields.ComplexMultiplication.DifferentialConstantField
 
 @[expose] public section

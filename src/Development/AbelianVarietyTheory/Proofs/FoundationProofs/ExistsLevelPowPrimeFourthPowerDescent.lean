@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.DiagMod
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ClassInvariantDescentCoprimeLevelModPowStatement
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsLevelMulPowOfInvariantModPowStatement
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0075
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ClassInvariantDescentCoprimeLevelModPow
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0097
 
 @[expose] public section
 
@@ -103,7 +103,7 @@ theorem GlobalTheory.KZ.ES.desc_pow_four : ∀ {Ω : Type} [Field Ω] [Algebra �
     have hγM : γ ∈ CongruenceSubgroup.Gamma M := gamma_anti hMMa hγ
     let r := Matrix.SpecialLinearGroup.map (Int.castRingHom (ZMod M'')) γ
     exact ⟨G r, lev_of_dvd (((hLdvd r).trans (dvd_mul_left L₀ M'')).trans hdiv') (hLev r), hG r γ hγM rfl⟩
-  obtain ⟨h, hh⟩ := GlobalTheory.T.classInvariant_descent_coprimeLevel_modPow ε X l n (M ^ (e + 1)) b hl hMa hb h6a hcopa f hfLev hstep
+  obtain ⟨h, hh⟩ := _root_.GlobalTheory.KZ.ES.CoprimeDescent.descent ε X l n (M ^ (e + 1)) b hl hMa hb h6a hcopa f hfLev hstep
   have hFstep : ∀ γ ∈ CongruenceSubgroup.Gamma M, ∃ g : X.Kˣ,
       X.sl (ofSL γ) (((f ^ 4 * h ^ (l ^ n) : X.Kˣ)) : X.K) = (f ^ 4 * h ^ (l ^ n) : X.Kˣ) * (g : X.K) ^ (l ^ n) := by
     intro γ hγ
@@ -117,7 +117,7 @@ theorem GlobalTheory.KZ.ES.desc_pow_four : ∀ {Ω : Type} [Field Ω] [Algebra �
     have hp : (h : X.K) ^ (l ^ n) ≠ 0 := pow_ne_zero _ hh0
     field_simp
     ring
-  obtain ⟨k, h', hh'⟩ := GlobalTheory.T.exists_level_mul_pow_of_invariant_mod_pow ε X l n M (e + 1) hl hM (f ^ 4 * h ^ (l ^ n)) (by simpa using hh) hFstep
+  obtain ⟨k, h', hh'⟩ := _root_.GlobalTheory.KZ.ES.exists_lev_mul_pow_of_invariant_mod_pow ε X l n M (e + 1) hl hM (f ^ 4 * h ^ (l ^ n)) (by simpa using hh) hFstep
   refine ⟨k, h * h', ?_⟩
   convert hh' using 1
   simp only [Units.val_mul, Units.val_pow_eq_pow_val]

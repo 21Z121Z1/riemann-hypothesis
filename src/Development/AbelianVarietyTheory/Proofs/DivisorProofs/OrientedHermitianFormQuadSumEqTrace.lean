@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.UnitaryConjugation
-public import Development.AbelianVarietyTheory.Counterexamples.HeightSurvey.StarPurelyImaginaryEqNeg
+public import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.Bundle0019
+public import Development.AbelianVarietyTheory.Counterexamples.HeightSurvey.Bundle0003
 
 @[expose] public section
 

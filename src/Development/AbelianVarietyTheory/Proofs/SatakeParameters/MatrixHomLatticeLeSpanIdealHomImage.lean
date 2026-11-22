@@ -2,10 +2,10 @@ module
 
 public import Mathlib
 public import Formalism.LocalToGlobal.PairingIndexBounds.OrthogonalChartLevels.FdOfCharts
-public import Formalism.LocalToGlobal.GroupLattices.PendingLemmas.InvarianceRepresentativesLaw
+public import Formalism.LocalToGlobal.GroupLattices.PendingLemmas.Bundle0004
 public import Formalism.LocalToGlobal.GroupLattices.PendingLemmas.InvarianceRepresentativesTrivial
-public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.NatCastMemOfPlace
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.MemHomLat
+public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.Bundle0016
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0124
 
 @[expose] public section
 

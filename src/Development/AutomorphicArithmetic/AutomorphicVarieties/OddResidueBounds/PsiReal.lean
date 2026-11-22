@@ -1,10 +1,10 @@
 module
 
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.OddResidueBounds.ZeroMemUnrHom
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.GaloisLibrary.SelmerTransport.NormO
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.GaloisLibrary.BernoulliNumbers.BNzany
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.OddResidueBounds.ChiFacts
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.OddResidueBounds.ActFacts
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.GaloisLibrary.SelmerTransport.Bundle0007
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.GaloisLibrary.BernoulliNumbers.Bundle0007
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.OddResidueBounds.Bundle0001
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.OddResidueBounds.Bundle0003
 
 @[expose] public section
 

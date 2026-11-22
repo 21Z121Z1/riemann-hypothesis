@@ -1,10 +1,10 @@
 module
 
 public import Mathlib
-public import GroundTheory.PAdicHodge.KerFontaineThetaCompFrobeniusEquivSymmPow
+public import GroundTheory.PAdicHodge.Bundle0003
 public import GroundTheory.PAdicHodge.AInfTopology
 public import GroundTheory.PAdicHodge.TiltMap
-public import GroundTheory.PAdicHodge.TiltAlgebra
+public import GroundTheory.PAdicHodge.Bundle0004
 public import GroundTheory.PAdicHodge.GaloisOnCp
 
 @[expose] public section

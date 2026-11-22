@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.ConjTupRefl
-public import Formalism.LocalToGlobal.IndefiniteReal.LinksComap
+public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0025
+public import Formalism.LocalToGlobal.IndefiniteReal.Bundle0026
 public import Formalism.LocalToGlobal.IndefiniteReal.LinksExistW
 
 @[expose] public section

@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import GroundTheory.GlobalFields.IdeleGroups.GaloisOnAdeles
+public import GroundTheory.GlobalFields.IdeleGroups.Bundle0003
 
 @[expose] public section
 

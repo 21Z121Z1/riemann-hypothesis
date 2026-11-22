@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GenScal
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LevelCoverComponentOverBaseRationalIsometry
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ArithmeticGroupConjIsometryMovesCoverPoint
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1337
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1822
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1370
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SectionPullbackExistsUnique
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArakelovVolumes.UpperBounds.FundSetPf
 

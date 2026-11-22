@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Formalism.HermitianLattices.StatementLat
-public import Formalism.SizeWindowBrackets.SlopesHypothesisFinitePlaces
+public import Formalism.SizeWindowBrackets.Bundle0003
 
 @[expose] public section
 

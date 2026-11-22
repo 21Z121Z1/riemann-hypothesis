@@ -3,7 +3,7 @@ module
 public import Development.WeilBound.ThetaLifts.EigenvalueEndgame.CuspidalAverages.AdelicInclusionThirdIdempotent
 public import Development.WeilBound.ThetaLifts.EigenvalueEndgame.CuspidalAverages.AvgEqOfIsAv
 public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.ContinuousInfiniteAdeleMap
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnitaryAdelicGroupTopology
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0935
 
 @[expose] public section
 

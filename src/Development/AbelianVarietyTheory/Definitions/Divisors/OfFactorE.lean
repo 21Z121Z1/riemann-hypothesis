@@ -2,8 +2,7 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.Divisors.GalRigidOfSurjective
-public import Development.AbelianVarietyTheory.Definitions.Divisors.FacAlg
-public import Development.AbelianVarietyTheory.Definitions.Divisors.FormalEnd
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0064
 
 @[expose] public section
 

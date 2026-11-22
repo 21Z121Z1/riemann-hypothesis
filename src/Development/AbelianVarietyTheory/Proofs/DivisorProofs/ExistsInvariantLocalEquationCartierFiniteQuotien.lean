@@ -1,9 +1,10 @@
 module
 
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GapGeSubKapBase
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FromSpecResidueFieldCompAutEqOfFixes
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsCartierSectionGeneratesAtVanishesAtFinsetStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsAffineFunctionWeightedTranslatesUnitAtStatement
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1875
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1920
+public import Mathlib
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1905
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1904
 
 @[expose] public section
 
@@ -150,7 +151,7 @@ theorem exists_invariant_isEqn : ∀ (F : Type) [Field F] [CharZero F] (X W : Sc
     rw [e]; exact hxV
   let T : Finset X := Finset.univ.image fun γ : Γ => (ρ γ).asIso.hom x
   have hT (y : X) : y ∈ T ↔ ∃ γ, (ρ γ).asIso.hom x = y := by simp [T]
-  obtain ⟨e₀, he₀, hv⟩ := GlobalTheory.T.exists_cartierSection_generatesAt_vanishesAt_finset X (q ⁻¹ᵁ V) hU D x hxU T
+  obtain ⟨e₀, he₀, hv⟩ := _root_.GlobalTheory.Cartier.CommonEqnOpen.exists_generatesAt_vanishesAt X (q ⁻¹ᵁ V) hU D x hxU T
     (fun y hy => by obtain ⟨γ, rfl⟩ := (hT y).1 hy; exact horb γ)
     (fun y hy hne hc => by
       obtain ⟨γ, rfl⟩ := (hT y).1 hy
@@ -174,7 +175,7 @@ theorem exists_invariant_isEqn : ∀ (F : Type) [Field F] [CharZero F] (X W : Sc
     refine ⟨(n : X.presheaf.stalk x), ?_, map_natCast _ n⟩
     rw [← map_natCast φF.hom n]
     exact (IsUnit.mk0 (n : F) (Nat.cast_ne_zero.2 hn)).map _
-  obtain ⟨a, ha⟩ := GlobalTheory.T.exists_affineFunction_weighted_translates_unitAt X (q ⁻¹ᵁ V) hU x hxU ι σ u
+  obtain ⟨a, ha⟩ := _root_.GlobalTheory.CharIndepAt.main X (q ⁻¹ᵁ V) hU x hxU ι σ u
     (fun i f hf => regAt_sig ρ i.1 (by rw [i.2]; exact hf))
     (fun i f hf => zeroAt_sig ρ i.1 (by rw [i.2]; exact hf))
     (fun i => (hu i).regAt)

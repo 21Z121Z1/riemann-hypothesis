@@ -4,7 +4,7 @@ public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.LatIntZero
 public import Formalism.LocalToGlobal.KernelLattices.LateralTheory
 public import Formalism.LocalToGlobal.KernelLattices.KerStd
-public import Formalism.LocalToGlobal.InertKernelTheory.StatementReBase
+public import Formalism.LocalToGlobal.InertKernelTheory.Bundle0006
 public import Formalism.LocalToGlobal.InertKernelTheory.InertCoprimeLemmas.HalfTorsionNotMemCmLattice
 public import Formalism.LocalToGlobal.KernelLattices.KernelLocalFactors.SelfDualLatticeNorms.IsTorsionPointStandardCM
 public import Formalism.LocalToGlobal.KernelLattices.KernelLocalFactors.StdOK
@@ -12,7 +12,7 @@ public import Formalism.LocalToGlobal.TorsionIntegrality.QuadraticSemicharacters
 public import Formalism.LocalToGlobal.TorsionIntegrality.QuadraticSemicharacters.QuadraticSemicharactersFactTer
 public import Formalism.LocalToGlobal.GlobalTheory.GL3.PStdOK
 public import Formalism.LocalToGlobal.GlobalTheory.GL3.PFamily
-public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.NormKappaSqMulDetSplitPrimeStatement
+public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0128
 
 @[expose] public section
 
@@ -208,7 +208,7 @@ theorem isomStdCm (D : D7) (cc : Ideal (𝓞 D.host.K)) (δ : ℂ) (B : Base D c
         (imgLat (g : (Fin 4 × D.what₂.Tau → ℂ) →ₗ[ℂ] (Fin 4 × D.what₂.Tau → ℂ)) (pow4 B.lamM)) ∧
       ‖ι e‖ = 1 ∧
       tens4 B.thMM = e • kernel4 B.L B.ω₀ B.lamM (alphaQ B.cq (stdH B.L (Fin 4 × D.what₂.Tau))) g := by
-  have hK := GlobalTheory.T.norm_kappa_sq_mul_det_splitPrime D cc δ B hcc hδ q hq2 hj hco ι
+  have hK := _root_.GlobalTheory.MomN.norm_kappa_sq_mul_norm_det D cc δ B hcc hδ q hq2 hj hco ι
   obtain ⟨hL, hω⟩ := hB
   have hS : StdData B.L B.ω₀ (hOne B.L D.what₂.Tau) B.lamM (alphaQ B.cq (matH (hOne B.L D.what₂.Tau)))
     (alphaQ B.cq (stdH B.L (Fin 4 × D.what₂.Tau))) B.gC := B.stdOK hcc hδ

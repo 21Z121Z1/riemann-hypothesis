@@ -1,10 +1,9 @@
 module
 
 public import Mathlib
-public import Formalism.PeriodIntegrals.LocLatEq
-public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LocalLatticeEquality.Development
-public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LocalLatticeEquality.Imports
-public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LocalLatticeEquality.CoreGenIdeal
+public import Formalism.PeriodIntegrals.Bundle0014
+public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LocalLatticeEquality.Bundle0001
+public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LocalLatticeEquality.Bundle0002
 
 @[expose] public section
 

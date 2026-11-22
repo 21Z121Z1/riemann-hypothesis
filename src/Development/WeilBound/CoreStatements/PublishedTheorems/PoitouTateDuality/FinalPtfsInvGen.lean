@@ -1,10 +1,8 @@
 module
 
 public import Mathlib
-public import Development.WeilBound.CoreStatements.PublishedTheorems.PoitouTateDuality.FinalPtfsUnif
-public import Development.WeilBound.CoreStatements.PublishedTheorems.PoitouTateDuality.FinalPtfsKummer
-public import Development.WeilBound.CoreStatements.PublishedTheorems.PoitouTateDuality.FinalPtfsChi
-public import Development.WeilBound.CoreStatements.PublishedTheorems.PoitouTateDuality.FinalPtfsHasse
+public import Development.WeilBound.CoreStatements.PublishedTheorems.PoitouTateDuality.Bundle0007
+public import Development.WeilBound.CoreStatements.PublishedTheorems.PoitouTateDuality.Bundle0006
 public import Development.WeilBound.CoreStatements.PublishedTheorems.PoitouTateDuality.FinalPtfsFoundSide
 
 @[expose] public section

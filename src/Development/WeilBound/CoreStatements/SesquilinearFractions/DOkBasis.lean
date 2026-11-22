@@ -1,7 +1,7 @@
 module
 
 public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsTransition
-public import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.IntegersOfCmFieldConjStructure
+public import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.Bundle0025
 
 @[expose] public section
 

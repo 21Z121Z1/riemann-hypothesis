@@ -1,11 +1,12 @@
 module
 
-public import Development.AbelianVarietyTheory.Definitions.Divisors.HasDefect
-public import Development.AbelianVarietyTheory.Definitions.Divisors.RigidForFan
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0060
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0071
 public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.ToroidalCompactificationBis
 public import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.ExistsUniqueIsPointOfDualNumber
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.StalkDerivationMemSpanInvariantSemiAbelianStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsDerivationExtendingCotangentFormStatement
+public import Mathlib
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2970
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0025
 
 @[expose] public section
 
@@ -264,6 +265,6 @@ theorem eq_zero_of_invDer_vanish : ∀ (R : Type) [CommRing R] [IsDomain R] [IsN
   haveI : ReciprocityTheory.ChartRestriction.G.Semi.IsSemiAbelian G := hSA
   haveI : Smooth G.hom := hSA.smooth
   haveI : IsLocallyNoetherian G.left := LocallyOfFiniteType.isLocallyNoetherian G.hom
-  exact euler_of_span _ n D (span_of_parts GlobalTheory.T.stalkDerivation_mem_span_invariant_semiAbelian GlobalTheory.T.exists_derivation_extending_cotangent_form R G hSA n v dd hinv p hp D hD)
+  exact euler_of_span _ n D (span_of_parts _root_.GlobalTheory.StalkDerSpan.stalk_derivation_span _root_.GlobalTheory.ConormalDer.exists_derivation_extending R G hSA n v dd hinv p hp D hD)
 
 end GlobalTheory.InvJet

@@ -1,6 +1,6 @@
 module
 
-public import Formalism.LocalToGlobal.KernelLattices.ColumnData.ColumnDataEquations.ZeroInjectionMemFourthPower
+public import Formalism.LocalToGlobal.KernelLattices.ColumnData.ColumnDataEquations.Bundle0003
 
 @[expose] public section
 

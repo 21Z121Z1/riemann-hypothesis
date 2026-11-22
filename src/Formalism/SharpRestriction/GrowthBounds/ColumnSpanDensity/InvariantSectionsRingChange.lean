@@ -1,6 +1,6 @@
 module
 
-public import Formalism.SharpRestriction.GrowthBounds.ColumnSpanDensity.IsLatticeMapSubIff
+public import Formalism.SharpRestriction.GrowthBounds.ColumnSpanDensity.Bundle0008
 
 @[expose] public section
 

@@ -1,7 +1,7 @@
 module
 
 public import CompanionTheory.AutomorphicTheory.LocalBesselUniqueness.BesselModels.AtFormAdmOneOfSteps
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.AdmissibleAtomicFormOneReduction
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0050
 
 @[expose] public section
 

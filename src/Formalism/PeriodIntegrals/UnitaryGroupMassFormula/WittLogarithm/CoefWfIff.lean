@@ -1,7 +1,7 @@
 module
 
-public import Formalism.PeriodIntegrals.InvSerSub
-public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.ExponentialIntegrality.InvNatMemWf
+public import Formalism.PeriodIntegrals.Bundle0011
+public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.ExponentialIntegrality.Bundle0002
 
 @[expose] public section
 

@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FiniteTypeToNumberField
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0052
 
 @[expose] public section
 

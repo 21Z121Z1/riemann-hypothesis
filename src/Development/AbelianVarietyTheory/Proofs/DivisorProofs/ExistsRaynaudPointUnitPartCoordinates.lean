@@ -1,11 +1,11 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Divisors.HasDefect
-public import Development.AbelianVarietyTheory.Definitions.Divisors.HasRigidChart
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0060
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0071
 public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.ToroidalCompactificationBis
 public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.IsSmulPtSmulPt
-public import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.ValPsiZero
+public import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.Bundle0015
 
 @[expose] public section
 

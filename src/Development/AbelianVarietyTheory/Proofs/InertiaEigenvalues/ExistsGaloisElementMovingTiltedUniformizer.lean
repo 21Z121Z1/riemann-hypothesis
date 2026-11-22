@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.MemSpanOfPowMul
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.NormPowRamifiedUniformizerFieldZpow
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0457
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0495
 
 @[expose] public section
 

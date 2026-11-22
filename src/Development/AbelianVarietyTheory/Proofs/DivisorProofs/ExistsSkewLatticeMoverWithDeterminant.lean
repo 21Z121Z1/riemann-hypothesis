@@ -1,10 +1,10 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsLocalComponentUnitaryMatrix
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0261
 public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.UnitaryHeckeCharacterValues
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CosetVecEq
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsMaximalAboveOfDvdNormHost
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1491
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1521
 
 @[expose] public section
 

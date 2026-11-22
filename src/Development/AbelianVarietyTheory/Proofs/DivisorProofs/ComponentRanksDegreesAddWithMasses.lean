@@ -1,13 +1,13 @@
 module
 
 public import Development.AbelianVarietyTheory.Definitions.Divisors.MulSmulIdemMem
-public import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.ComponentMassSum
+public import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.Bundle0014
 public import Development.AbelianVarietyTheory.Definitions.Divisors.IsHomogeneousCompIdeal
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsSmulMemOfMemSpan
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.InnerRealizeEqZero
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HasGramComp
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DegScale
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BlockDiagonalMulVecApply
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0783
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1031
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0779
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0778
 
 @[expose] public section
 

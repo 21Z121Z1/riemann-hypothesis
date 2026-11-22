@@ -1,13 +1,12 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MvecLeviMulUv
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsMemTwKerPolyBall
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MirabolicFourierExpansion
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.GpProjContinuous
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsInducedBallIndicatorStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LocallyConstantFiniteBallSumStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.RestrictionBallIndicatorSpanStatement
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0396
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0372
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0391
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0430
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0443
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0449
 public import Development.WeilBound.RepresentationTheoryGL.GenericUnitaryGL.LeibnizOrders.PhiPG0
 
 @[expose] public section

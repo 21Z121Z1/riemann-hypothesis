@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FockHarmonicsGradedCompactStable
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0562
 
 @[expose] public section
 

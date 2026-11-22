@@ -1,14 +1,16 @@
 module
 
-public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.PinColL
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsPointOfRationalUnitaryAdelicMulStatement
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ContinuousPf
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.MoveCompactLevelInvariant
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.TrueColumnSpacesStandardInFrameCoordsStatement
+public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.Bundle0029
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0382
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0298
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0390
+public import Mathlib
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0297
+public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.LatAtLattice
 public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.SplitLastBlockActX
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.MoveDownLevelPrimeAdelicFactorisation
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.LastAllTranspose
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.LastGroupEmbeddingRealComponentsBlockForm
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0453
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0428
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0411
 public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.MemCutQGrp
 
 @[expose] public section
@@ -199,7 +201,7 @@ theorem GlobalTheory.AdForm.TwDat.Is.evz_decomp : ∀ {B : GlobalTheory.Mem.Base
     finM _ (rankN (I.rec7 l Z) B.R.m le_rfl) (emb h)⁻¹, hinvM _, hinvM' _⟩
   obtain ⟨κ0, hκ0, hχ0⟩ := top_lev_chi I hOk hPins l Z u a Ch₀ A hA bad K hRP c gU hExt
   have hG : ((I.rec7 l Z).sp.X B.R.m).gram.reindex (finCongr (rankN (I.rec7 l Z) B.R.m le_rfl))
-      (finCongr (rankN (I.rec7 l Z) B.R.m le_rfl)) = 1 := ((GlobalTheory.T.trueColumn_spaces_standard_in_frameCoords I hOk hPins l Z).2.2.2 B.R.m le_rfl).1
+      (finCongr (rankN (I.rec7 l Z) B.R.m le_rfl)) = 1 := ((_root_.GlobalTheory.Mem.Col2.TC.spaces_in_coordinates I hOk hPins l Z).2.2.2 B.R.m le_rfl).1
   obtain ⟨γ, hγQ, hγf, hγi⟩ := ratPt θ hθ _ (rankN (I.rec7 l Z) B.R.m le_rfl) hG
     (Formalism.L2.Col.ufGL _ _ ((I.stp u a B.R.m).mv (I.perIn u a).b0 ((I.perIn u a).tilPt c)).1)
     (GlobalTheory.Mem.Col2.DnAdel.ufGL_UJ B.sp.cm _ ((I.stp u a B.R.m).mv (I.perIn u a).b0 ((I.perIn u a).tilPt c)).1)

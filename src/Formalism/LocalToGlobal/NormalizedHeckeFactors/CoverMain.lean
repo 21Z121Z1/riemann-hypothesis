@@ -1,6 +1,6 @@
 module
 
-public import Formalism.LocalToGlobal.NormalizedHeckeFactors.CoverStdL
+public import Formalism.LocalToGlobal.NormalizedHeckeFactors.Bundle0008
 public import Formalism.LocalToGlobal.NormalizedHeckeFactors.CoverSplit
 
 @[expose] public section

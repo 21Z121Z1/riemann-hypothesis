@@ -2,9 +2,9 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsLeadOfUnif
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PtR
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.BetaAtAddLeftAndDiagEqTwoOrder
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.DiscreteValuationRings.LBLocalC
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2388
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0049
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.DiscreteValuationRings.Bundle0003
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.DiscreteValuationRings.GenCalc
 
 @[expose] public section

@@ -2,13 +2,13 @@ module
 
 public import Mathlib
 public import Development.WeilBound.CoreStatements.AutomorphicKernels.UnitarySchrodingerModel.CoefDataExists
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CosetCell
-public import Development.AbelianVarietyTheory.PublishedTheorems.SiegelWeil₂.AdelicConjTransposeBlockMatrixTwoByTwoFin
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SiegelParabolicUnnMatrixBlockUpperTriangular
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0633
+public import Development.AbelianVarietyTheory.PublishedTheorems.SiegelWeil₂.Bundle0002
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0262
 public import Development.AutomorphicSpectrum.Proofs.GlobalProofs.SummableCell
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.EisensteinCellsDecomposition
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.EisensteinRationalPoints
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ContinuousHalfTr
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0495
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0464
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0625
 
 @[expose] public section
 

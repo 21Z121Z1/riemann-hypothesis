@@ -1,7 +1,7 @@
 module
 
 public import ReciprocityTheory.ReductiveGroups.SymplecticTraces.WeylCharacters.SqChar
-public import ReciprocityTheory.ReductiveGroups.SymplecticTraces.WeylCharacters.UCharOf
+public import ReciprocityTheory.ReductiveGroups.SymplecticTraces.WeylCharacters.Bundle0002
 public import ReciprocityTheory.ReductiveGroups.SymplecticTraces.WeylCharacters.SpBlkSurj
 public import ReciprocityTheory.ReductiveGroups.SymplecticTraces.WeylCharacters.BlockP
 

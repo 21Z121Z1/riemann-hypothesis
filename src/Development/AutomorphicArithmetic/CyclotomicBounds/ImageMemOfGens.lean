@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicArithmetic.CyclotomicBounds.ZmodTwoQuadraticNeZero
+public import Development.AutomorphicArithmetic.CyclotomicBounds.Bundle0002
 public import Formalism.LocalRingCardinality.DataHost
 public import Formalism.SharpRestriction.RamificationFrobenius.TotientGaloisClasses.HostFacts
 public import Formalism.SharpRestriction.RamificationFrobenius.TotientGaloisClasses.InertiaGaloisSymmetry.CycBasic

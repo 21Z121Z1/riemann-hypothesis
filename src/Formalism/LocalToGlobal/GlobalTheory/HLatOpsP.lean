@@ -4,7 +4,7 @@ public import Formalism.LocalToGlobal.GlobalTheory.HLatOps
 public import Formalism.HarderNarasimhan.ShiftInvariance
 public import Formalism.SizeWindowBrackets.ChainSlopeWindows.ExistsNsmulMem
 public import Formalism.SizeWindowBrackets.ChainSlopeWindows.TruncatedLatticeHolds
-public import Formalism.LocalRingCardinality.DataDIVDefs
+public import Formalism.LocalRingCardinality.Bundle0003
 
 @[expose] public section
 

@@ -1,7 +1,7 @@
 module
 
 public import Development.AbelianVarietyTheory.Definitions.Divisors.HilbertNinetyQuotientHomEqIff
-public import Development.AutomorphicSpectrum.Proofs.MembershipProofs.LagrangianStabilizerCharacterTrivial
+public import Development.AutomorphicSpectrum.Proofs.MembershipProofs.Bundle0006
 
 @[expose] public section
 

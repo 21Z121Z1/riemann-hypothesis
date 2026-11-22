@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Formalism.LocalToGlobal.ProjectiveLattices.HalfOneAddSqrtNegIsIntegral
-public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.EmbeddingTypes
+public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0077
 
 @[expose] public section
 

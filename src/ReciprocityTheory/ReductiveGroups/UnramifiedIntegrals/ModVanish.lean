@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import ReciprocityTheory.ReductiveGroups.UnramifiedIntegrals.ModDefs
-public import ReciprocityTheory.ReductiveGroups.UnramifiedIntegrals.ModBasic
-public import ReciprocityTheory.ReductiveGroups.UnramifiedIntegrals.ModHnf
+public import ReciprocityTheory.ReductiveGroups.UnramifiedIntegrals.Bundle0002
+public import ReciprocityTheory.ReductiveGroups.UnramifiedIntegrals.Bundle0003
+public import ReciprocityTheory.ReductiveGroups.UnramifiedIntegrals.Bundle0007
 
 @[expose] public section
 

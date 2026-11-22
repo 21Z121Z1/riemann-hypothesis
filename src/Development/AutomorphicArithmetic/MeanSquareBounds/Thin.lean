@@ -1,7 +1,7 @@
 module
 
 public import Development.AutomorphicArithmetic.MeanSquareBounds.PrimeSetTwoBounds
-public import Development.AutomorphicArithmetic.MeanSquareBounds.GIntegral
+public import Development.AutomorphicArithmetic.MeanSquareBounds.Bundle0005
 public import Development.AutomorphicArithmetic.MeanSquareBounds.PsiThin
 public import Development.AutomorphicArithmetic.MeanSquareBounds.IntThin
 

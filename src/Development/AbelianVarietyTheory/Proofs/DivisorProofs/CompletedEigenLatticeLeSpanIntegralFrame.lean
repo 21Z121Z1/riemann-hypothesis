@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FrameCoord
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1523
 public import Development.AbelianVarietyTheory.Definitions.CMLattices.IntegralOf
-public import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.LieLetterIntegralInIntegralEigenbasis
+public import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.Bundle0055
 
 @[expose] public section
 

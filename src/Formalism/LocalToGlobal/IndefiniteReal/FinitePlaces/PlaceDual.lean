@@ -1,10 +1,9 @@
 module
 
-public import Formalism.LocalToGlobal.IndefiniteReal.FinitePlaces.SplitInt
-public import Formalism.LocalToGlobal.IndefiniteReal.FinitePlaces.PlaceLatDualIiiOf
+public import Formalism.LocalToGlobal.IndefiniteReal.FinitePlaces.Bundle0014
+public import Formalism.LocalToGlobal.IndefiniteReal.FinitePlaces.Bundle0016
 public import Formalism.LocalToGlobal.IndefiniteReal.FinitePlaces.PlaceDualB
-public import Formalism.LocalToGlobal.IndefiniteReal.FinitePlaces.ExistsNatIntFMat
-public import Formalism.LocalToGlobal.IndefiniteReal.FinitePlaces.PlaceDualBIv
+public import Formalism.LocalToGlobal.IndefiniteReal.FinitePlaces.Bundle0018
 
 @[expose] public section
 

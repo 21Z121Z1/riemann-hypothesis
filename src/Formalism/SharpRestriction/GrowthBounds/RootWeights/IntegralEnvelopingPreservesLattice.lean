@@ -1,6 +1,6 @@
 module
 
-public import Formalism.SharpRestriction.GrowthBounds.RootWeights.EnvelopingMonoidPreservesStable
+public import Formalism.SharpRestriction.GrowthBounds.RootWeights.Bundle0004
 
 @[expose] public section
 

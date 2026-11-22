@@ -1,7 +1,7 @@
 module
 
 public import Formalism.SharpRestriction.GrowthBounds.FockGramWindow.NeglogPowMul
-public import Formalism.SharpRestriction.GrowthBounds.MonomialFactorials.RestPlusOf
+public import Formalism.SharpRestriction.GrowthBounds.MonomialFactorials.Bundle0003
 
 @[expose] public section
 

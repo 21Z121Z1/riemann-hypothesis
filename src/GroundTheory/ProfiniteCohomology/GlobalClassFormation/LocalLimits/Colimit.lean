@@ -2,9 +2,9 @@ module
 
 public import Mathlib
 public import GroundTheory.ProfiniteCohomology.GlobalClassFormation.LocalLimits.ApplyCompletionEmbeddingOfLocalDecompHomEqOne
-public import GroundTheory.ProfiniteCohomology.GlobalClassFormation.IdeleLimits.LocalTransition
-public import GroundTheory.ProfiniteCohomology.FilteredHomology
-public import GroundTheory.ProfiniteCohomology.Factor
+public import GroundTheory.ProfiniteCohomology.GlobalClassFormation.IdeleLimits.Bundle0001
+public import GroundTheory.ProfiniteCohomology.Bundle0001
+public import GroundTheory.ProfiniteCohomology.Bundle0002
 
 @[expose] public section
 

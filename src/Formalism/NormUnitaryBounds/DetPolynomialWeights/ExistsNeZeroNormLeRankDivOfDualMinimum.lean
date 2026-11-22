@@ -2,11 +2,8 @@ module
 
 public import Mathlib
 public import Formalism.LatticeSlopes.CovolAntiSameRank
-public import Formalism.LatticeSlopes.LatticeSlopesProofs.DiscreteTopologyOfLe
-public import Formalism.LatticeSlopes.LatticeSlopesProofs.CovolEqGram
-public import Formalism.LatticeSlopes.LatticeSlopesProofs.CovolPos
-public import Formalism.LatticeSlopes.LatticeSlopesProofs.CovolEqCovolume
-public import Formalism.LatticeSlopes.LatticeSlopesProofs.ShortVector
+public import Formalism.LatticeSlopes.LatticeSlopesProofs.Bundle0001
+public import Formalism.LatticeSlopes.LatticeSlopesProofs.Bundle0002
 
 @[expose] public section
 

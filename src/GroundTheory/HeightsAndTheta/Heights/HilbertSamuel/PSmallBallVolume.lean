@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsLattice
+public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0013
 
 @[expose] public section
 

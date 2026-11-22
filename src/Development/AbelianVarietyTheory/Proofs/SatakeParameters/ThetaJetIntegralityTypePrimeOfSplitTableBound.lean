@@ -1,22 +1,23 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicArithmetic.CyclotomicBounds.RamifiedDiscriminants.OffSmall
-public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.JetSplitAmb
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.MemRatIdxOfJetsRatDeg
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.JetLossOfFamilyFacts
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.DatumJetsTranslate
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.TypePrimeBadPrimesLevelsHypothesesProofStatement
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.PlaceOverPInducedByAlgebraicPadicEmbeddingStatement
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.PlaceExtendsToIso
+public import Development.AutomorphicArithmetic.CyclotomicBounds.RamifiedDiscriminants.Bundle0003
+public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.Bundle0021
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0175
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0268
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0261
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0172
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0167
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0171
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0038
 public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.NormPadicEmbeddingLeOneOfMemInverseHalfDifferent
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.CoeffInLetters
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.HeckeCharacterTrivialNearOne
-public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.NormalisedFamilyLatticeHypAndSmooth
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NormalisedFamilyNonzeroThetaVectorsNumberField
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.KernelConstantExponentsFinite
-public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.NotDvdDiscrHost
-public import Formalism.LocalToGlobal.KernelLattices.KernelLocalFactors.EntryG
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0244
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0263
+public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0114
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1506
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0749
+public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0127
+public import Formalism.LocalToGlobal.KernelLattices.KernelLocalFactors.Bundle0002
 
 @[expose] public section
 
@@ -236,7 +237,7 @@ theorem jetLossAll_of_jetSplitAmb : JetSplitAmb → ∀ (D : D7) (EX : ErrX D)
   have hb' : Even b := hb ▸ hev _
   have hV : B.VecP χ := GlobalTheory.ColNorms.familyVectors D _ δ B χ hH.2.2.1 hH.2.1 hcc hA.1 hA.2.1 (GlobalTheory.ExponentsFinite.yFinite _ _ _)
   obtain ⟨hL, hE⟩ := GlobalTheory.ThetaMove.LatticeFacts.laHyp_and_eSmooth D _ (recSeam D) _ δ B χ cD _ b hX hs hcc hA.1 hV (hev j) hb'
-  obtain ⟨hctx, hA0, hB0, hg⟩ := GlobalTheory.T.datumJets_typePrimeBadPrimesLevelsHypotheses D EX sel δ B χ cD hH hsel i u mu cst hcst _ b hL hE
+  obtain ⟨hctx, hA0, hB0, hg⟩ := _root_.GlobalTheory.DatumJets.HidaSetting.typePrimeBadPrimesLevelsHypotheses_proof D EX sel δ B χ cD hH hsel i u mu cst hcst _ b hL hE
   have hcong : D.host.g i ≡ 1 [MOD D.host.QS * D.host.q * D.host.d] := hPr.g_cong i
   have hnd : ∀ t, t ∣ D.host.QS * D.host.q * D.host.d → ¬ D.host.g i ∣ t := fun t ht h =>
     hp.one_lt.ne' (Nat.dvd_one.1 ((Nat.modEq_zero_iff_dvd.1
@@ -249,7 +250,7 @@ theorem jetLossAll_of_jetSplitAmb : JetSplitAmb → ∀ (D : D7) (EX : ErrX D)
   have hpd : ¬ D.host.g i ∣ D.host.d := hnd _ (Dvd.intro_left _ rfl)
   have hpq : D.host.g i ≠ D.host.q := fun h => hnd D.host.q D.host.toHostRaw.q_dvd_condN h.dvd
   have hdisc := GlobalTheory.GoodDepth.not_dvd_discr_host D.R D.host _ hp (UpperTheory.Ram.g_notMem_small D i) hpq fun h => hpd h.dvd
-  obtain ⟨lam, hlam⟩ := GlobalTheory.T.place_over_p_induced_by_algebraic_padic_embedding _ (recSeam D).σ₀ (D.host.g i) w hw
+  obtain ⟨lam, hlam⟩ := _root_.GlobalTheory.DatumJets.Place.placeAbove _ (recSeam D).σ₀ (D.host.g i) w hw
   obtain ⟨ι, hι⟩ := GlobalTheory.ThLoc.place_extends_to_iso _ lam
   have hιC : ∀ x ∈ TaylorLogMetric.Qbar, TaylorLogMetric.lamC lam x = ι x := fun x hx => by rw [TaylorLogMetric.lamC, dite_eq_left hx]; exact (hι ⟨x, hx⟩).symm
   have hval : ∀ k : D.what₂.LL, ‖ι ((recSeam D).σ₀ k)‖ ≤ 1 → w.valuation _ k ≤ 1 := fun k hk => by

@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import GroundTheory.GlobalFields.TateThesis.SchwartzBruhatDual
+public import GroundTheory.GlobalFields.TateThesis.Bundle0008
 
 @[expose] public section
 

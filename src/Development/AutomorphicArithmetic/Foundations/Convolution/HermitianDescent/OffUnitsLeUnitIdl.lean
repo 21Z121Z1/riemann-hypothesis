@@ -1,22 +1,25 @@
 module
 
 public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.BaseChangeDefiniteUnitary
-public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.ContinuousAdeleNorm
+public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.Bundle0008
 public import Development.AbelianVarietyTheory.BlockTheory.AdelicCMFields.UnitaryHeckeCharacterIdele
-public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.BorelCasselman
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CommGroupDivEqMulDivMulInvDiv
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConjQuotNsUnitsEqOneStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CmExtensionIdeleConjIdeleMapMaxRealSubfieldStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CmExtensionIdeleConjMemFiniteUnitIdelesStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsPowEqOneOfPrincipalUnitIdeleNormOneStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsIsOpenSubgroupAdicUnitsNoRootsOfUnityStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MemFiniteUnitIdelesOfMapMaxRealSubfieldStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.QuadraticHeckeCharCMEqIdeleInfiniteSignFiniteTriStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HeckeCharCMEtaLocalEqNegOnePowValInertStatement
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExistsOtherSplitPlaceWithDistinctRealPlace
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsUnitaryCharOfOpenSubgroupAndHom
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.UnitOpenAndCongrOpen
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IdeleCharacterTrivialOnLocalUnits
+public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.Bundle0001
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1093
+public import Mathlib
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1131
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0036
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1073
+public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.IsRationalUnitaryDeterminantMapRationalUnitaryTo
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1130
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1138
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1137
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1157
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1162
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1206
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0276
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0023
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0096
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0094
 public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.RamificationIdxEqOneOfIsSquare
 
 @[expose] public section
@@ -232,7 +235,7 @@ private theorem eta_eq_infSign (hU : GlobalTheory.BCT.Unr E) (b : Ideles (maxima
     have e : f⁻¹ = GlobalTheory.Mem.Chr.finPartI (maximalRealSubfield E) b⁻¹ := (map_inv _ b).symm
     rw [e]
     exact congrArg (fun z : AdeleRing (𝓞 (maximalRealSubfield E)) (maximalRealSubfield E) => z.2 v) b.mul_inv
-  have h2 := GlobalTheory.T.quadraticHeckeCharCM_eq_ideleInfiniteSign_finiteTrivial E _ h1
+  have h2 := _root_.GlobalTheory.EtaInfSign.quadChar_eq_infSign E _ h1
   have h3 := quadChar_finPart hU b hb
   have e1 : (GlobalTheory.GalOfCusp.quadChar E).1 b = (GlobalTheory.GalOfCusp.quadChar E).1 (b * f⁻¹) * (GlobalTheory.GalOfCusp.quadChar E).1 f := by
     rw [← map_mul, inv_mul_cancel_right]
@@ -262,12 +265,12 @@ private theorem consistent (hU : GlobalTheory.BCT.Unr E) (w₀ : HeightOneSpectr
     (GlobalTheory.GalOfCusp.quadChar E).1 b = psi e (diagUnits E k * ideleMap (maximalRealSubfield E) E b * u) := by
   obtain ⟨⟨hx1, hx2⟩, hx3⟩ := hx
   have hu1 := offUnits_le_unitIdl w₀ hu
-  have hCu := GlobalTheory.T.cmExtensionIdeleConj_mem_finiteUnitIdeles E u hu1
+  have hCu := _root_.GlobalTheory.ConjUnit.ideleConj_mem_unitIdl E u hu1
   set C := ideleConj (maximalRealSubfield E) E with hCdef
   set I := ideleMap (maximalRealSubfield E) E b with hI
   set c : Eˣ →* Eˣ := Units.map (conj (maximalRealSubfield E) E).toRingEquiv.toRingHom.toMonoidHom with hc
   have hCx : C (diagUnits E k * I * u) = diagUnits E (c k) * I * C u := by
-    rw [map_mul, map_mul, hI, GlobalTheory.T.cmExtensionIdeleConj_ideleMap_maxRealSubfield]
+    rw [map_mul, map_mul, hI, _root_.GlobalTheory.ConjIdeleReal.ideleConj_ideleMap]
     congr 2
     exact GlobalTheory.IndefiniteRowSideFullHecke.UnitaryHeckeCharacterIdele.ideleConj_principalIdele (maximalRealSubfield E) E k
   set x := diagUnits E k * I * u with hxdef
@@ -282,7 +285,7 @@ private theorem consistent (hU : GlobalTheory.BCT.Unr E) (w₀ : HeightOneSpectr
     have h0 : φ (k : E) ≠ 0 := by simp
     have e : φ ((c k : Eˣ) : E) = starRingEnd ℂ (φ k) := GlobalTheory.IndefiniteRowSideFullHecke.UnitaryHeckeCharacterIdele.embedding_conj (maximalRealSubfield E) E φ k
     rw [ht, Units.val_div_eq_div_val, map_div₀, e, norm_div, Complex.norm_conj, div_self (norm_ne_zero_iff.2 h0)]
-  have htor := GlobalTheory.T.exists_pow_eq_one_of_principal_unitIdele_norm_one E t htu hnorm
+  have htor := _root_.GlobalTheory.UnitTorsion.principal_unit_idele_torsion E t htu hnorm
   have hcqu := conjQuot_off w₀ hu
   have hmem : Units.map (algebraMap E (w₀.adicCompletion E)).toMonoidHom t ∈ V := by
     have e1 : Units.map (algebraMap E (w₀.adicCompletion E)).toMonoidHom t =
@@ -308,7 +311,7 @@ private theorem consistent (hU : GlobalTheory.BCT.Unr E) (w₀ : HeightOneSpectr
   have hb'E : ideleMap (maximalRealSubfield E) E b' ∈ GlobalTheory.Mem.Chr.unitIdl E := by
     have : ideleMap (maximalRealSubfield E) E b' = x * u⁻¹ := by rw [hxb, mul_inv_cancel_right]
     rw [this]; exact mul_mem hx1 (inv_mem hu1)
-  rw [hηb, eta_eq_infSign hU b' (GlobalTheory.T.mem_finiteUnitIdeles_of_map_maxRealSubfield E b' hb'E), hxb, (psi e).map_mul _ u, psi_off e w₀ hu, mul_one,
+  rw [hηb, eta_eq_infSign hU b' (_root_.GlobalTheory.UnitDown.unit_down E b' hb'E), hxb, (psi e).map_mul _ u, psi_off e w₀ hu, mul_one,
     psi_ideleMap e he]
 
 private theorem quadChar_norm (b : Ideles (maximalRealSubfield E)) :
@@ -375,7 +378,7 @@ theorem UpperTheory.ConvolutionTheory.D.muEx :
       ∀ z : (Cinf E)ˣ, (chiInf μ z : ℂ) = ∏ v, (z.1 v / (‖z.1 v‖ : ℂ)) ^ e v) ∧ ∀ w ∈ S, μ.UnrAt w := by
   intro E _ _ _ hU S hS e he
   obtain ⟨w₀, hw₀, hSw⟩ := exists_split_avoid S hS
-  obtain ⟨V, hVo, hV⟩ := GlobalTheory.T.exists_isOpen_subgroup_adicUnits_no_rootsOfUnity E w₀
+  obtain ⟨V, hVo, hV⟩ := _root_.GlobalTheory.RootOpen.exists_open_subgroup_no_roots E w₀
   let α : Eˣ × (Neutral.B1.Ideles (maximalRealSubfield E) × offUnits w₀) →* Neutral.B1.Ideles E :=
     (Neutral.B1.diagUnits E).coprod ((GlobalTheory.IndefiniteRowSideFullHecke.UnitaryHeckeCharacterIdele.ideleMap (maximalRealSubfield E) E).coprod (offUnits w₀).subtype)
   let a : Eˣ × (Neutral.B1.Ideles (maximalRealSubfield E) × offUnits w₀) →* ℂˣ :=
@@ -407,7 +410,7 @@ theorem UpperTheory.ConvolutionTheory.D.muEx :
   have hns : ∀ (w : HeightOneSpectrum (𝓞 E)) (u : (w.adicCompletion E)ˣ), ¬ IsSplitAt w →
       Valued.v (u : w.adicCompletion E) = 1 → μ.1 (Neutral.B1.localIdele E w u) = 1 := fun w u hw hu =>
     hoff w u (fun h => hw (GlobalTheory.ConsEta.isSplitAt_of_under_eq hw₀ h)) hu
-  refine ⟨μ, ⟨hχu, hres, GlobalTheory.T.heckeCharCM_eta_local_eq_neg_one_pow_val_inert E hU μ hres hns, he, fun z => ?_⟩, fun w hw x hx => hoff w x (hSw w hw) hx⟩
+  refine ⟨μ, ⟨hχu, hres, _root_.GlobalTheory.MuInert.loc_eq_unrChar_neg_one E hU μ hres hns, he, fun z => ?_⟩, fun w hw x hx => hoff w x (hSw w hw) hx⟩
   have h := hχU _ (infId_mem w₀ V z)
   change ((χ (infId E z) : ℂˣ) : ℂ) = _
   rw [h, psi_infId]

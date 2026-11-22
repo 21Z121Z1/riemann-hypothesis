@@ -1,6 +1,6 @@
 module
 
-public import Formalism.HermitianCurvature.StatementTBB
+public import Formalism.HermitianCurvature.Bundle0010
 public import Formalism.FlagUnipotentLattices.MinkowskiFactorialBounds.IntegrableOnIoiTruncatedPowerMoment
 public import Formalism.FlagUnipotentLattices.MinkowskiFactorialBounds.BlockMinorSumCounterexample
 

@@ -2,9 +2,9 @@ module
 
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.WeilGroupCharacters.Inertia
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.PadicHodgeTheory.FiniteCohomology
-public import GroundTheory.LocalFields.LocalArtinCompletion
+public import GroundTheory.LocalFields.Bundle0017
 public import GroundTheory.LocalFields.PrincipalUnitsRank
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FixingSubgroupEquivBicontinuous
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0236
 
 @[expose] public section
 

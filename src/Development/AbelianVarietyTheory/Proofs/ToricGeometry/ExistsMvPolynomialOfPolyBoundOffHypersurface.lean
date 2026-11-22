@@ -4,9 +4,9 @@ public import Mathlib
 public import ReciprocityTheory.ThetaQuasiPeriods.ThetaQuasiPeriodStatement
 public import ReciprocityTheory.ThetaQuasiPeriods.Transl
 public import ReciprocityTheory.ThetaQuasiPeriods.Change
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArakelovVolumes.UpperBounds.PolyGrowthStatementPfB
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArakelovVolumes.UpperBounds.Bundle0001
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArakelovVolumes.UpperBounds.LiftFactorization
-public import Development.AbelianVarietyTheory.Proofs.CovolumeBounds.EntireApplyEqOfPeriodicOfSpanReal
+public import Development.AbelianVarietyTheory.Proofs.CovolumeBounds.Bundle0001
 
 @[expose] public section
 

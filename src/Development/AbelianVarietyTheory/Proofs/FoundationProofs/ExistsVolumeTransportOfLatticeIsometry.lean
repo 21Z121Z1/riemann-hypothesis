@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ReLatSelf
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0207
 public import Development.AbelianVarietyTheory.BlockTheory.HeightDefect.AdelicUnitaryGroups
 public import Formalism.LocalToGlobal.BesselHermitianTheta.IsAutFunDef
 public import Formalism.LocalToGlobal.GlobalTheory.GL5.FamilyMassVolumeIdentityOfClassDecomp

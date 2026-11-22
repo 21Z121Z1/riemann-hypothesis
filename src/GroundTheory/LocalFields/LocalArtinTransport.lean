@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import GroundTheory.LocalFields.LocalArtinUniqueness
+public import GroundTheory.LocalFields.Bundle0016
 
 @[expose] public section
 

@@ -1,6 +1,6 @@
 module
 
-public import Development.WeilBound.CoreStatements.VolumeEquality.HolNull
+public import Development.WeilBound.CoreStatements.VolumeEquality.Bundle0004
 public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.GagaLineGeneratorEmbedding
 
 @[expose] public section

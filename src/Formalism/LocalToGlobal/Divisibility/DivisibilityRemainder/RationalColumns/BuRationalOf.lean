@@ -1,7 +1,7 @@
 module
 
 public import Formalism.LocalToGlobal.Divisibility.DivisibilityRemainder.RationalColumns.ColFacts
-public import Formalism.LocalToGlobal.Divisibility.TupUsed
+public import Formalism.LocalToGlobal.Divisibility.Bundle0008
 public import Formalism.LocalToGlobal.Divisibility.RowLatLemmas
 
 @[expose] public section

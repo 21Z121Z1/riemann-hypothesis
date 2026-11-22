@@ -1,14 +1,14 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.SpanningFamilies.IsBaseClassLevelAdapted
-public import Formalism.LocalToGlobal.ProjectiveLattices.CuspFree
-public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.ThExprUniqOfChartIndep2
+public import Development.AbelianVarietyTheory.Definitions.SpanningFamilies.Bundle0002
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0011
+public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0007
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PullbackSections.HolomorphicFamilies.AnChartAsm
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.FundamentalDomains.LatticeSpanMembership
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.CmTypeLetterFrameColumnDictionary
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0032
 public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.HermFormConjDiag
-public import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.ContinuousRmulPair
+public import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.Bundle0018
 
 @[expose] public section
 

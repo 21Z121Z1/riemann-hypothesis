@@ -1,16 +1,16 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.TamagawaSpecialUnitary
+public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.Bundle0005
 public import Development.AbelianVarietyTheory.Statements.PlaceShiftStatements.DefiniteBound
 public import Development.AbelianVarietyTheory.Definitions.ArchimedeanThetaValues.OneAddZeta21PowSevenAddPowFourteenEqZero
 public import Development.AbelianVarietyTheory.Definitions.UpperBounds.SingleMemIntVec
 public import Development.AbelianVarietyTheory.Proofs.TorusHaarMeasure.FirstMinimumInvariantContinuousPosOnFrames
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.AdelicElementLatticeFullAndCompletion
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0074
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArakelovVolumes.UpperBounds.FundSetPf
 public import Formalism.FrobeniusOrbits.RealSubfieldLeCompositum
 public import Formalism.FrobeniusOrbits.FrobeniusOrbitsProofs.MuCardLeTwo
-public import Development.AbelianVarietyTheory.Definitions.Divisors.TorusNoLeClassNoRankOne
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0003
 
 @[expose] public section
 

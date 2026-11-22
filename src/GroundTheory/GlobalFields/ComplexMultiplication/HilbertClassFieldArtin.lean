@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import GroundTheory.GlobalFields.ComplexMultiplication.HilbertClassFieldModels
+public import GroundTheory.GlobalFields.ComplexMultiplication.Bundle0017
 public import GroundTheory.GlobalFields.ClassFieldConsequences.HilbertClassField
 public import GroundTheory.GlobalFields.TateThesis.Chebotarev
 public import GroundTheory.GlobalFields.Artin.InflationTower

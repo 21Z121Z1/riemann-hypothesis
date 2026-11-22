@@ -3,7 +3,7 @@ module
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.SurjectiveOfLocallySurjective
 public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsSecImageNonzeroLocus
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.OmegaPullId
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0029
 
 @[expose] public section
 

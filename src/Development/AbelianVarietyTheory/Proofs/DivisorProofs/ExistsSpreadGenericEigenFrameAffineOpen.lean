@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TopPairDForm
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1936
 public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsAffineStableLieEigenspaceFrame
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsAffineEigenframeNearImage
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0536
 
 @[expose] public section
 

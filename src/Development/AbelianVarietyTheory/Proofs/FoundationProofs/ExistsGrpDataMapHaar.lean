@@ -3,8 +3,8 @@ module
 public import Mathlib
 public import Formalism.LocalToGlobal.BesselHermitianTheta.AllTied
 public import Development.AbelianVarietyTheory.Proofs.HeightProofs.NotTrivialAndTwist
-public import Development.AbelianVarietyTheory.Proofs.HeightProofs.BlockOrderedSquareIntegrable
-public import Development.AbelianVarietyTheory.Proofs.HeightProofs.HaarUpqEqOfOmegaDensity
+public import Development.AbelianVarietyTheory.Proofs.HeightProofs.Bundle0018
+public import Development.AbelianVarietyTheory.Proofs.HeightProofs.Bundle0019
 
 @[expose] public section
 

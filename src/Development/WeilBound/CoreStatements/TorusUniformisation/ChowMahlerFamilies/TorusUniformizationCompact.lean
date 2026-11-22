@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ToXQFst
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LocRatio
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0067
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0093
 public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ComplexPointsClosureCoords
 
 @[expose] public section

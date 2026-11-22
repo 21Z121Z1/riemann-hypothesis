@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.TermAttractorConstant.GeneratorMemLocalLatticeBackward
-public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.TermAttractorConstant.RelevanceConstantDoubleCosets
+public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.TermAttractorConstant.Bundle0001
 
 @[expose] public section
 

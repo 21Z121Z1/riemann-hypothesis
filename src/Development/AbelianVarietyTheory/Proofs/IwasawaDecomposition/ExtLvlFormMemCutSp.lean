@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.DatVtEq
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0357
 public import Formalism.LocalToGlobal.IndefiniteReal.BridgeLemmas
 public import Formalism.LocalToGlobal.Divisibility.ProjLemmas
 

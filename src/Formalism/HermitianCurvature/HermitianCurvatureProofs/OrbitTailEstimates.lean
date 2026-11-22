@@ -2,7 +2,7 @@ module
 
 public import Formalism.HermitianCurvature.StatementG
 public import Formalism.HermitianCurvature.HermitianCurvatureProofs.PhaseFunctionCriticalPoints
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.AdditiveCharacterPsi
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0002
 public import Formalism.HermitianCurvature.HermitianCurvatureProofs.AffineChangeOfVariables
 public import Formalism.HermitianCurvature.HermitianCurvatureProofs.OrbitalIntegralConvergesAbs
 

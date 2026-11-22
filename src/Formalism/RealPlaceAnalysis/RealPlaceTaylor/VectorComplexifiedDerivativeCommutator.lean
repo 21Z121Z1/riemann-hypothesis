@@ -1,8 +1,7 @@
 module
 
 public import Formalism.RealPlaceAnalysis.SmoothOnGVIff
-public import Formalism.RealPlaceAnalysis.RealPlaceTaylor.CartanInvolutionConjTransposeMul
-public import Formalism.RealPlaceAnalysis.RealPlaceTaylor.ComplexifiedDerivativeCommutator
+public import Formalism.RealPlaceAnalysis.RealPlaceTaylor.Bundle0003
 
 @[expose] public section
 

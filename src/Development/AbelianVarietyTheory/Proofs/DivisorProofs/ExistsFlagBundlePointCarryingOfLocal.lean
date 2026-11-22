@@ -1,6 +1,6 @@
 module
 
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EqSpMapEv
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1902
 
 @[expose] public section
 

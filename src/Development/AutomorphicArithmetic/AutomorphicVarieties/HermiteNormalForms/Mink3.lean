@@ -1,8 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.HermiteNormalForms.Torsfree
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.HermiteNormalForms.Cardsep
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.HermiteNormalForms.Bundle0001
 
 @[expose] public section
 

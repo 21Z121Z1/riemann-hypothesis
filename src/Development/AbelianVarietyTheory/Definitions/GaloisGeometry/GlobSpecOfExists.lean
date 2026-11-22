@@ -3,7 +3,7 @@ module
 public import Mathlib
 public import Formalism.SharpRestriction.GrowthBounds.DataGChain
 public import Formalism.LocalToGlobal.Columns.HeckeSp
-public import Formalism.LocalToGlobal.Columns.ColFormsLemmas
+public import Formalism.LocalToGlobal.Columns.Bundle0004
 
 @[expose] public section
 

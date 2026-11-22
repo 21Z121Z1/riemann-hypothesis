@@ -3,10 +3,11 @@ module
 public import Mathlib
 public import ReciprocityTheory.AnalyticForms.LeviForms.TailBound
 public import ReciprocityTheory.AnalyticForms.LeviForms.MixedIntegralInclusionExclusion
-public import ReciprocityTheory.AnalyticForms.PotentialTheory.MaMeasure
-public import Development.AutomorphicSpectrum.Proofs.MetricProofs.TailBoundStatementHoldsStatement
-public import Development.AutomorphicSpectrum.Proofs.MetricProofs.IsCompactRWSublevel
-public import Development.AutomorphicSpectrum.Proofs.MetricProofs.IsomorphicLinesPotentialDifference
+public import ReciprocityTheory.AnalyticForms.PotentialTheory.Bundle0008
+public import Development.AutomorphicSpectrum.Proofs.MetricProofs.TailBoundStatementHolds
+public import ReciprocityTheory.AnalyticForms.LeviForms.IsRegFamilyInhabitStatement
+public import Development.AutomorphicSpectrum.Proofs.MetricProofs.Bundle0083
+public import Development.AutomorphicSpectrum.Proofs.MetricProofs.Bundle0089
 
 @[expose] public section
 
@@ -47,7 +48,7 @@ theorem term_zero (A : FinHolAtlas e X) (Θ : Fin e → LocPot X) (L : LocPot X)
     Tendsto (fun t => mInt A (fun i => Θ i + LocPot.ofFun (u t i)) (g t)) (𝓝[>] 0) (𝓝 0) := by
   let _ : MeasurableSpace X := borel X
   have : BorelSpace X := ⟨rfl⟩
-  obtain ⟨C, hC⟩ := GlobalTheory.T.tail_bound_statement_holds A Θ L s m W hΘ hΘp hL hs hsnc hle
+  obtain ⟨C, hC⟩ := _root_.GlobalTheory.CompanionTheory.Ar.Giv.tailBound_holds A Θ L s m W hΘ hΘp hL hs hsnc hle
   have hr : ∀ y, Real.exp 1 ≤ rW L s y := rW_ge L s hle
   have hlog : ∀ y, 0 ≤ Real.log (rW L s y) := fun y =>
     Real.log_nonneg ((Real.one_le_exp zero_le_one).trans (hr y))

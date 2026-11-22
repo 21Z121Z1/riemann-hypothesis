@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.ImportsTerAlt
+public import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.Bundle0044
 public import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.IsGraphGenTwistBundleZero
-public import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.PTwinEqBundle
+public import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.Bundle0008
 
 @[expose] public section
 

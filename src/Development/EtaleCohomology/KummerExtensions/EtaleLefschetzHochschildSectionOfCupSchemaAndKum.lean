@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.EtaleCohomology.KummerTheory.LHCutGlue
+public import Development.EtaleCohomology.KummerTheory.Bundle0008
 
 @[expose] public section
 

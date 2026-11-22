@@ -1,7 +1,7 @@
 module
 
-public import Development.AbelianVarietyTheory.Statements.EllipticCurveLevels.IsQg
-public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.RestrictsSelf
+public import Development.AbelianVarietyTheory.Statements.EllipticCurveLevels.Bundle0001
+public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.Bundle0018
 
 @[expose] public section
 

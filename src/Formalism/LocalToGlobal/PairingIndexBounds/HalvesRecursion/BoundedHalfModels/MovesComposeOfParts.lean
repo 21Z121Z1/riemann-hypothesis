@@ -1,6 +1,6 @@
 module
 
-public import Formalism.LocalToGlobal.PairingIndexBounds.HalvesRecursion.BoundedHalfModels.SplitElementExistsHolds
+public import Formalism.LocalToGlobal.PairingIndexBounds.HalvesRecursion.BoundedHalfModels.Bundle0001
 public import Formalism.LocalToGlobal.PairingIndexBounds.HalvesRecursion.ModelXiAll
 
 @[expose] public section

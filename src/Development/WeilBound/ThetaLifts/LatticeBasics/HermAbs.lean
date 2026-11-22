@@ -1,6 +1,6 @@
 module
 
-public import Development.WeilBound.ThetaLifts.CartanFactorisation.SpanOrbitStab
+public import Development.WeilBound.ThetaLifts.CartanFactorisation.Bundle0001
 
 @[expose] public section
 

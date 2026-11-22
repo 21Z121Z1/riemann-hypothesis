@@ -2,8 +2,8 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.Divisors.IsProperToroidalModelStructureMap
-public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.LinearUniformisationTorsionIsomorphism
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.CohenStructureFiniteOverNormalCompleteSubring
+public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0212
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0013
 
 @[expose] public section
 

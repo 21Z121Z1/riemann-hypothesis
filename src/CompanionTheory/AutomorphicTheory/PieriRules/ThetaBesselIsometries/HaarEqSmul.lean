@@ -5,7 +5,7 @@ public import CompanionTheory.AutomorphicTheory.PieriRules.PieriDegreeBounds.Imp
 public import Development.AbelianVarietyTheory.Definitions.Jets.SumIoPr
 public import CompanionTheory.AutomorphicTheory.PieriRules.ThetaBesselIsometries.CayleyExistsAndAny
 public import Formalism.HermitianCurvature.HermitianCurvatureProofs.HaarUniquenessConjugation
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.UhMeasurableSet
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0039
 public import CompanionTheory.AutomorphicTheory.PieriRules.ThetaBesselIsometries.IsDSOfIsDG
 
 @[expose] public section

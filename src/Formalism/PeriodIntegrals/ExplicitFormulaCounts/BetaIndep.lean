@@ -1,7 +1,7 @@
 module
 
 public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.BetaIndependence.YliftLeOrth
-public import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.BetaModX
+public import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.Bundle0034
 
 @[expose] public section
 

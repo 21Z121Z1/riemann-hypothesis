@@ -1,7 +1,7 @@
 module
 
-public import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.SphericalCoordinates.DetOfCharpoly
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsCountableCharts
+public import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.SphericalCoordinates.Bundle0001
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1845
 
 @[expose] public section
 

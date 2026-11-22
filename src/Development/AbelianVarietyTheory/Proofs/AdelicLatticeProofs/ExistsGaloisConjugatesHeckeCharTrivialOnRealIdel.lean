@@ -1,17 +1,16 @@
 module
 
 public import Mathlib
-public import Formalism.LocalToGlobal.ProjectiveLattices.FamilyUniformisationBasePointOrthogonalBis
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0027
 public import Formalism.LocalToGlobal.ProjectiveLattices.FamilyUniformisationBasePointOrthogonal
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.RealAdelesCmFieldEquivComplexCmType
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.LatHatOpenAndContinuous
-public import Development.AbelianVarietyTheory.Proofs.HeightProofs.CmTypeRestrictRealSubfieldInfinitePlaceBijective
-public import Development.AbelianVarietyTheory.Proofs.HeightProofs.ExistsRealChartInfiniteAdelesCmType
-public import Development.AbelianVarietyTheory.Proofs.HeightProofs.ExistsIsArchimedeanAdeleChartOfRealChart
-public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.UnitaryCharPiComplexUnitsEqProdZpowStatement
-public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.ExistsContinuousCircleCharExtensionStatement
-public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.ContinuousCharacterFiniteOrderIntegralUnitsStatement
-public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.IsOpenCongruenceIdelesAndRealFinitePartsStatement
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0072
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0075
+public import Development.AbelianVarietyTheory.Proofs.HeightProofs.Bundle0021
+public import Development.AbelianVarietyTheory.Proofs.HeightProofs.Bundle0022
+public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.Bundle0018
+public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.Bundle0001
+public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.Bundle0063
+public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.Bundle0066
 
 @[expose] public section
 
@@ -144,7 +143,7 @@ theorem exists_type (D : D7) (θ : D.what₂.Tau → (Ainf D.host.F ⊗[D.host.F
     rw [TensorProduct.sub_tmul, RingHom.map_sub, ← mul_one (1 : D.host.E), ← Algebra.TensorProduct.tmul_mul_tmul,
       RingHom.map_mul, rr z hz, rr z⁻¹ hz', mul_one, ← Algebra.TensorProduct.one_def, RingHom.map_one]
     simp
-  obtain ⟨k, hk⟩ := GlobalTheory.T.exists_zpow_prod_div_conj_of_continuous_trivial_on_real D.what₂.Tau (χ.comp T.toHomUnits) (hc.comp Tc) fun z hz => by
+  obtain ⟨k, hk⟩ := _root_.GlobalTheory.unitaryChar_pi_complexUnits_eq_prod_zpow D.what₂.Tau (χ.comp T.toHomUnits) (hc.comp Tc) fun z hz => by
     let a : (AF D.host.F)ˣ := Units.mkOfMulEqOne (pairA D.host.F (ρ (fun i => (z i : ℂ).re)) 1)
       (pairA D.host.F (ρ (fun i => (z⁻¹ i : ℂ).re)) 1) (Prod.ext (rm z hz) (mul_one (1 : Af D.host.F)))
     have : T.toHomUnits z = idF D a := Units.ext (ext _ _ ((tf z).trans rfl) fun τ => (ti z τ).trans (rr z hz τ).symm)
@@ -180,8 +179,8 @@ theorem exists_conjugates : ∀ (D : D7) (Q : Par D) (χ₀ : (AE D)ˣ →* Circ
   obtain ⟨⟨θ, hθ⟩, hθ'⟩ := GlobalTheory.Member.infiniteAdele_bijective D
   obtain ⟨θc, θs, -⟩ := hθ' θ hθ
   obtain ⟨k, hk⟩ := exists_type D (fun τ => θ (tauE D τ)) (fun τ => hθ _) χ₀ hH.1 hF
-  obtain ⟨hop, a, b, -, bc, hab, ha, hb⟩ := GlobalTheory.T.isOpen_congruence_ideles_and_real_finite_parts D
-  obtain ⟨N, hN, hN1, m, hm, hm1⟩ := GlobalTheory.T.continuous_character_finite_order_integral_units D χ₀ hH.1
+  obtain ⟨hop, a, b, -, bc, hab, ha, hb⟩ := _root_.GlobalTheory.IdeleParts.congr_open_and_parts D
+  obtain ⟨N, hN, hN1, m, hm, hm1⟩ := _root_.GlobalTheory.CharFin.char_finUnit_finite_order D χ₀ hH.1
   have Hopen : IsOpen (intIdeles D : Set (AE D)ˣ) := by
     convert hop 1 one_pos using 1
     ext x
@@ -208,7 +207,7 @@ theorem exists_conjugates : ∀ (D : D7) (Q : Par D) (χ₀ : (AE D)ˣ →* Circ
     have Ac : Continuous A := by
       rw [show (A : _ → _) = _ from funext hA]
       exact continuous_finsetProd _ fun τ _ => (continuous_angle D (θc _)).zpow _
-    obtain ⟨χ, χc, χ1, χ2⟩ := GlobalTheory.T.exists_continuous_circle_char_extension' (AE D)ˣ (intIdeles D)
+    obtain ⟨χ, χc, χ1, χ2⟩ := _root_.GlobalTheory.exists_continuous_circle_char_extension (AE D)ˣ (intIdeles D)
       ((Units.map (incA D).toMonoidHom).range ⊔ (idF D).range) (A.comp (intIdeles D).subtype * ψ) Hopen
       ((Ac.comp continuous_subtype_val).mul ψc) (by
         intro x hx

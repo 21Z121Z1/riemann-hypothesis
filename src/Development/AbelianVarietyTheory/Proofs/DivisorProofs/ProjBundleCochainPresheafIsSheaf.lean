@@ -1,11 +1,11 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ProjectiveBundleFormulaOfUnitOnEtalePoints
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TrivV
-public import Development.AbelianVarietyTheory.Definitions.Divisors.SecClass
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CotDComp
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsZeroChains
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0326
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0366
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0006
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0371
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0291
 
 @[expose] public section
 

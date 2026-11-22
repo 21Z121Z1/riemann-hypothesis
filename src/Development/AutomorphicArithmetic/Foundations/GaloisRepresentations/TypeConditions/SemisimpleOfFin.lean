@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.DiscreteGroups.GlobalIrreducibility.DzTame
+public import Development.DiscreteGroups.GlobalIrreducibility.Bundle0002
 public import Formalism.SharpRestriction.LevelLetterCocycles.QuotientHomNonvanishingBound
 
 @[expose] public section

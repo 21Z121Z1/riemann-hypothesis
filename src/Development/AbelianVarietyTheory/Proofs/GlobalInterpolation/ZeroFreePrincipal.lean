@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.LogDerivativeBound
-public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.LogDerivRiemannZetaLocalZeroSumStatement
+public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0005
+public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0017
 
 @[expose] public section
 

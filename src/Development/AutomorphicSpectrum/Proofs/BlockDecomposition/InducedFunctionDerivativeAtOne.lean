@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.OrderedCechToCatCochainsOneApplyValueAtSubset
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0422
 
 @[expose] public section
 

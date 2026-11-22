@@ -1,11 +1,11 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.FixedVectorEqOfStandardData
-public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.IsTwIffCanonEq
+public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.Bundle0020
+public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.Bundle0030
 public import Formalism.LocalToGlobal.HilbertRowConditions.TiedEMt
 public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.HermitianFormLastCoordinateUniformizerVectorSelf
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.CevInjective
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0287
 
 @[expose] public section
 
@@ -276,7 +276,7 @@ theorem til_tw (hI : I.Ok) (hP : TC.Pins B X) (l : I.Laws) (Z : TC.Later B (I.co
         (I.per l u a).evz φ c s =
           ((((W.ch u a ha B.R.m h1 le_rfl (T.chOf u a B.R.m ((I.fm l u a).til c))).lev.chi (Tl.ka c))⁻¹ : ℂˣ) : ℂ) *
             φ ((I.fm l u a).til c) s' := by
-  obtain ⟨-, -, hiX, hsp⟩ := GlobalTheory.T.trueColumn_spaces_standard_in_frameCoords I hI hP l Z
+  obtain ⟨-, -, hiX, hsp⟩ := _root_.GlobalTheory.Mem.Col2.TC.spaces_in_coordinates I hI hP l Z
   obtain ⟨hg, -, hsu⟩ := hsp B.R.m le_rfl
   have hcls := (hsu u a).1
   have hN := N_m_succ B.R

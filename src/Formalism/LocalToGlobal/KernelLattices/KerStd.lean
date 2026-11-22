@@ -1,7 +1,7 @@
 module
 
-public import Formalism.LocalToGlobal.AlgebraicTheory.StatementEig
-public import Formalism.LocalToGlobal.AlgebraicTheory.StatementNorm
+public import Formalism.LocalToGlobal.AlgebraicTheory.Bundle0002
+public import Formalism.LocalToGlobal.AlgebraicTheory.Bundle0001
 
 @[expose] public section
 

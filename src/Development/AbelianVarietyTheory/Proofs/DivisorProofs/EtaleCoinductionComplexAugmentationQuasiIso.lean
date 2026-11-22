@@ -2,8 +2,8 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EtaleCoinductionAugmentationCompDEqZero
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EtaleSheafShortComplexExactIffLocallyStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FreeHomSectionsStatement
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0401
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0350
 
 @[expose] public section
 

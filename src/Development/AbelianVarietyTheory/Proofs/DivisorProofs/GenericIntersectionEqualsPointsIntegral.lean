@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.Divisors.PointsNonemptyUnitaryRankOne
-public import Development.AbelianVarietyTheory.Definitions.Divisors.MarkedSumIrr
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0031
 public import GroundTheory.Brauer.TensorSimple
 
 @[expose] public section

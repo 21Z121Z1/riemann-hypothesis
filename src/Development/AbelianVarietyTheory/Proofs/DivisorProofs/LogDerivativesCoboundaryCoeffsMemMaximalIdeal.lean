@@ -1,13 +1,13 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Divisors.HasDefect
-public import Development.AbelianVarietyTheory.Definitions.Divisors.HasRigidChart
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0060
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0071
 public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.ToroidalCompactificationBis
 public import Development.AbelianVarietyTheory.Proofs.HomogeneousIdeals.AwayToAwayRightEqOfComp
-public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsUnitCharts
-public import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.CommGroupCoboundaryRelationIdentity
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SurjectiveSpMapFst
+public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.Bundle0017
+public import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.Bundle0066
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0489
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PullbackSections.LieBridgeG
 
 @[expose] public section

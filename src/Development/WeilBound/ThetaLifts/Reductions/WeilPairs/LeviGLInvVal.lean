@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.WeilBound.ThetaLifts.Reductions.WeilPairs.Mfac
+public import Development.WeilBound.ThetaLifts.Reductions.WeilPairs.Bundle0002
 public import Development.WeilBound.ThetaLifts.Reductions.WeilPairs.CAFInvol
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaFunctionHeisenbergInvariant
 

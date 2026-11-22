@@ -4,7 +4,7 @@ public import Mathlib
 public import Formalism.LocalToGlobal.Divisibility.CoefModLemmas
 public import Formalism.LocalToGlobal.Columns.CoefModB
 public import Formalism.LocalToGlobal.Columns.PolyFnLemmas
-public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.TensorMapDescent
+public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0053
 
 @[expose] public section
 

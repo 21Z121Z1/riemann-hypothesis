@@ -1,14 +1,17 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Statements.GeometryStatements.AgreementPos
+public import Development.AutomorphicSpectrum.Statements.GeometryStatements.Bundle0004
 public import Development.AutomorphicSpectrum.Definitions.MetricPeriods.Pull1
 public import Development.AutomorphicSpectrum.Statements.MetricStatements.AgreementIffGuarded
-public import Development.AutomorphicSpectrum.Proofs.MetricProofs.MongeAmpereRegularizationLogLogBoundStatement
-public import Development.AutomorphicSpectrum.Proofs.MetricProofs.IntersectionDifferenceTelescopingIntegralStatement
-public import Development.AutomorphicSpectrum.Proofs.MetricProofs.TendstoLimUnderOfCauchyRate
-public import Development.AutomorphicSpectrum.Proofs.MetricProofs.LimRateMulLogSqLe
-public import Development.AutomorphicSpectrum.Proofs.MetricProofs.AbsCoeffProdXLeOne
+public import Development.AutomorphicSpectrum.Proofs.MetricProofs.MongeAmpereRegularizationLogLogBound
+public import Development.AutomorphicSpectrum.Definitions.MetricPeriods.IsTwiceDifferentiableAt
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArithmeticIntersection.CompRightEqZero
+public import GroundTheory.HeightsAndTheta.Heights.Antisymmetric.Statements
+public import Development.AutomorphicSpectrum.Proofs.MetricProofs.Bundle0132
+public import Development.AutomorphicSpectrum.Proofs.MetricProofs.Bundle0003
+public import Development.AutomorphicSpectrum.Proofs.MetricProofs.Bundle0005
+public import Development.AutomorphicSpectrum.Proofs.MetricProofs.Bundle0004
 
 @[expose] public section
 
@@ -41,11 +44,11 @@ theorem agree_cauchy (hI : Inputs) (D : ℕ) (σ : Type) [Fintype σ] (S : AnSys
     ∀ (K : Type) [Fintype K] (ι : K → Type) [∀ k, Fintype (ι k)] (P : Ideal (MRing ι)) (Re : Realis S P)
       (w : Fin (D + 1) → σ) (t t' : ℝ), 0 < t' → t' ≤ t → t ≤ t₁ →
       |Re.num II t w - Re.num II t' w| ≤ ((D : ℝ) + 1) * (|C'| * |agreeRate t|) := by
-  obtain ⟨C', t₁, ht₁, ht₁0, hb⟩ := GlobalTheory.T.monge_ampere_regularization_log_log_bound hI.convergenceRate D σ S h0
+  obtain ⟨C', t₁, ht₁, ht₁0, hb⟩ := _root_.GlobalTheory.CompanionTheory.Ar.PB.signed_rate hI.convergenceRate D σ S h0
   refine ⟨C', t₁, ht₁, ht₁0, ?_⟩
   intro II hII K _ ι _ P Re w t t' ht' htt ht
   have ht0 : 0 < t := lt_of_lt_of_le ht' htt
-  rw [GlobalTheory.T.intersection_difference_telescoping_integral hI II hII K ι D σ S P Re t t' w ht0 (ht.trans ht₁0) ht' ((htt.trans ht).trans ht₁0)]
+  rw [_root_.GlobalTheory.CompanionTheory.Ar.PB.num_sub_num hI II hII K ι D σ S P Re t t' w ht0 (ht.trans ht₁0) ht' ((htt.trans ht).trans ht₁0)]
   refine (Finset.abs_sum_le_sum_abs _ _).trans ?_
   have hr : ∀ r : Fin (D + 1), |mInt S.A (fun i => S.potT (w (r.succAbove i)) (if r.succAbove i < r then t else t'))
       (fun x => S.phT (w r) t x - S.phT (w r) t' x)| ≤ |C'| * |agreeRate t| := by

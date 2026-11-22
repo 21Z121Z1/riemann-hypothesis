@@ -1,19 +1,20 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConstantCoeffHasse
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AlgebraMapQuotBijective
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0011
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0003
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsCompletionEmbedding
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DegreeCountGenerates
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ClassGroupNthPowerOfCodimOneMod
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0132
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0128
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FiniteDimensionalBoundedIn
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.JetsMemSubalgebraOfFiniteType
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CcSubst
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsNeZeroForallPointExtendSubalgebra
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HasseDerivativePowerSeriesMulSubstLeibnizStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HasseJetVanishingMemPowStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsFinrankQuotientSpanModEqOneStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsSeparableNormalisationReducedFibresStatement
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0071
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0127
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0141
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0149
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0206
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0450
+public import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0001
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0344
 
 @[expose] public section
 
@@ -222,7 +223,7 @@ theorem formal_deformation : ∀ (k A : Type) [Field k] [IsAlgClosed k] [CommRin
     rw [hΔ, GlobalTheory.PicDiv.hasse_zero, map_one, ← PowerSeries.coe_substAlgHom (hsub i), map_one]
   · intro i l u w
     simp only [hΔ, map_mul]
-    exact GlobalTheory.T.hasseDerivativePowerSeries_mul_subst_leibniz k (a i) _ _ l (ha0 i)
+    exact _root_.GlobalTheory.hasse_mul_subst k (a i) _ _ l (ha0 i)
   · intro i
     refine ⟨π i, ?_⟩
     have hX : GlobalTheory.PicDiv.hasse 1 (PowerSeries.X : PowerSeries k) = 1 := by
@@ -554,7 +555,7 @@ theorem pic_divisible : ∀ (k B : Type) [Field k] [IsAlgClosed k] [CommRing B] 
     rw [hmap, map_sub, Polynomial.aeval_X, Polynomial.aeval_C]
     exact hδ α hα Q hQ
   have key := exists_classGroup_mk0_eq_mul_pow_reduced k B hred' q h2 hNk
-  obtain ⟨f, hf0, hfmod⟩ := GlobalTheory.T.exists_finrank_quotient_span_mod_eq_one' k B q (by omega)
+  obtain ⟨f, hf0, hfmod⟩ := _root_.GlobalTheory.exists_finrank_quotient_span_mod_eq_one k B q (by omega)
   obtain ⟨d, hd⟩ := classGroup_nthPower_of_codim_one_mod k B q (by omega) key ⟨f, hf0, hfmod⟩ c
   exact ⟨d, hd.symm⟩
 

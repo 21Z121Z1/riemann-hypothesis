@@ -1,13 +1,12 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.RedMFrMapAdjZero
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0198
 public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.CompletedTensorLatticeStrongApproxOpenCompact
 public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.TensorLatticeSelfDualSemicharacterIndex
-public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.SmulMemLatO
-public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.MemRangeOfOneTmulMem
+public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.Bundle0058
 public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsNsmulIntMemLatO
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ComplementaryIdempotentInIntegralClosureStatement
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0494
 
 @[expose] public section
 
@@ -257,7 +256,7 @@ theorem thPDatum_eq_levelSum : ∀ (D : D7) (S T : HSp D) (C : Ctx S T) (hn : T.
     have h1 : partAt (cA D e) (finW S T y) ∈ hatA S T (tens (stdL D.host.E S.rank) (liftI Pg Q • C.X.Λ)) :=
       (hgen _ (hz y)).2.1 ⟨by rw [← hF]; exact hL2, fun PP hPP => by rw [← hF]; exact hL3 PP hPP⟩
     have h2 : partAt (1 - cA D e) (finW S T y) ∈ hatA S T (tens (stdL D.host.E S.rank) (liftI Pg Q • C.X.Λ)) :=
-      partAt_mem_hatA S T _ _ _ (GlobalTheory.T.complementary_idempotent_in_integral_closure D Pg Q e he) (hfinW _ y (tmono hA1 hy))
+      partAt_mem_hatA S T _ _ _ (_root_.GlobalTheory.ConjCompl.offConj D Pg Q e he) (hfinW _ y (tmono hA1 hy))
     have h3 := add_mem h1 h2
     rw [partAt_add_one_sub, ← h𝔪] at h3
     exact tens_inter hcop hy ((hfull.2.1 y).1 h3)

@@ -1,16 +1,16 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Foundations.EigenOfTwoStep
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.GalBMemKummerInvariantSet
+public import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0008
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0141
 public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.HeckeLetterPreservesBasisSet
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.HeckeOperatorCommGaloisActionModularTowerStatement
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.KmapSubMemOfASet
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.EichlerShimuraFrobeniusQuadraticModPrimePowStatement
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.KummerBettiModuleFreeFinite
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsFixingMulFrobAt
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.GaloisRelationOfFrobApprox
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.GalMulApply
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0367
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0084
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.EichlerShimuraFrobeniusQuadraticModPrimePow
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0161
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0206
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0081
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0351
 
 @[expose] public section
 
@@ -142,9 +142,9 @@ theorem cayleyHamilton_galV : ∀ {Ω : Type} [Field Ω] [Algebra ℚ Ω] [IsAlg
   intro Ω _ _ _ ε X hε hj N l w _ hl2 hN hNl hw E _ _ _ hE lam t d S0 ht hd hfr x hx heig s
   have hstabG := fun s b hb => GlobalTheory.KZ.StabGal.galB_mem_B ε X hε hj N l w hl2 hN hNl hw s b hb
   have hstabH := fun T hT b hb => GlobalTheory.KZ.B_stable_op ε X hε hj N l w hl2 hN hNl hw T hT b hb
-  have hcomm := GlobalTheory.T.hecke_operator_comm_galois_action_modular_tower ε X hε hj N l w hl2 hN hNl hw
+  have hcomm := _root_.GlobalTheory.KZ.HeckeGal.op_galB_comm ε X hε hj N l w hl2 hN hNl hw
   have hcont := GlobalTheory.KZ.GalCont.galB_cont ε X hε hj N l w hl2 hN hNl hw
-  have hes := GlobalTheory.T.eichlerShimura_frobenius_quadratic_mod_prime_pow ε X hε hj N l w hl2 hN hNl hw
+  have hes := _root_.GlobalTheory.KZ.eichlerShimura_B_mod ε X hε hj N l w hl2 hN hNl hw
   obtain ⟨hfree, hfin⟩ := GlobalTheory.KZ.B_free_finite ε X hε hj N l w hl2 hN hNl hw
   classical
   set B := X.B N l w with hBdef

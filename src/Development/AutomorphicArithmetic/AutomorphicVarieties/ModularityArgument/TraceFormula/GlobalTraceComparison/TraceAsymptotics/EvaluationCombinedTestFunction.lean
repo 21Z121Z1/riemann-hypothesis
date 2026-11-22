@@ -1,7 +1,7 @@
 module
 
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.TraceFormula.GlobalTraceComparison.TraceAsymptotics.SplitLineAlt
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.StableTwistedOrbitalProduct
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1167
 
 @[expose] public section
 

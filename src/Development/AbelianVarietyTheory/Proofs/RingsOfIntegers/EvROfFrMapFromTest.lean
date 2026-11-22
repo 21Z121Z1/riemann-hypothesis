@@ -2,19 +2,19 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.PlaceAdaptation.AdaptStd
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PullbackSections.PlaceIdem
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PullbackSections.HolomorphicFamilies.ChartValJ
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PullbackSections.FrMapComp
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PullbackSections.Bundle0001
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PullbackSections.HolomorphicFamilies.Bundle0012
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PullbackSections.Bundle0009
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PullbackSections.IndepPts
-public import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.ExistsFiniteExtensionIntegralFramedPointLiftCoveStatement
-public import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.ExistsFiniteExtUniformisedChartRationalTorsionStatement
-public import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.ExistsThetaValData
-public import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.ShortThetaValueFieldEqMapSubfieldDataStatement
-public import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.TotalDegreeLeOfRowDeg
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.FramedModuliAlgebraicLawsChartWeightIntegrality
-public import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.ExistsFramedPointBaseChangeAlgHom
+public import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.Bundle0050
+public import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.Bundle0054
+public import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.Bundle0047
+public import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.ShortThetaValueFieldEqMapSubfieldData
+public import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.Bundle0036
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0084
+public import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.Bundle0039
 public import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.FramedPointsLiftToLevelCover
-public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.AllUniformizationLawsHold
+public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.Bundle0133
 
 @[expose] public section
 
@@ -48,7 +48,7 @@ theorem GlobalTheory.PlaceInt.short_value_on_cover : ∀ (E : Type) [Field E] [N
     GlobalTheory.T.exists_finiteExtension_integralFramedPoint_lift_cover E H Dw l Xo c n d hlev T io y hfin
   have hN : 0 < N := hL.1.pos
   obtain ⟨T₂, i₂, e₂, z₂, C, ⟨he₂, hv₂, φ₂, hφ₂, hm₂⟩, hfin₂, hgood, hrat⟩ :=
-    GlobalTheory.T.exists_finiteExt_uniformisedChart_rationalTorsion E H Dw d.l₂ d.Xo₂ d.c₂ hnab.1 T₁ io₁ z₁ hfin₁ (N ^ 2) (pow_pos hN 2)
+    _root_.GlobalTheory.PlacePrep.exists_good_chart_allRat E H Dw d.l₂ d.Xo₂ d.c₂ hnab.1 T₁ io₁ z₁ hfin₁ (N ^ 2) (pow_pos hN 2)
   letI a0 : Algebra c.F T.Fr := io.toAlgebra
   letI a1 : Algebra c.F T₁.Fr := (i₁.comp io).toAlgebra
   letI b1 : Algebra d.c₂.F T₁.Fr := io₁.toAlgebra
@@ -74,7 +74,7 @@ theorem GlobalTheory.PlaceInt.short_value_on_cover : ∀ (E : Type) [Field E] [N
       y₁.1 z₁.1 yk zk hover hyk (ReciprocityTheory.ChartRestriction.G.PullbackSections.frMap_trans φ₂ ψ₂ hm₂ hzk)
   obtain ⟨v, hv, hev⟩ := hsh k hck yk zk hoverk
   have hPh := ((GlobalTheory.PlaceInt.eF_transfer E H Dw l Xo c n d Λ).2.1 w P hP).1.1
-  have hval := GlobalTheory.T.shortThetaValue_field_eq_map_subfield_data E H Dw d.l₂ d.Xo₂ d.c₂ hnab.1 d.nab₂ hnab n Λ N hU hT hL w _ hPh (d.w x0) _
+  have hval := _root_.GlobalTheory.ShortAtField.shortValAt_eq_map E H Dw d.l₂ d.Xo₂ d.c₂ hnab.1 d.nab₂ hnab n Λ N hU hT hL w _ hPh (d.w x0) _
     T₂.Fr k ψ₂ z₂.1 zk hzk z tp F hz hinj htp hF v hv
   have e1 : evR Xo c g yk = (ψ₁.comp φ₁) (evR Xo c g y.1) :=
     GlobalTheory.PlaceInt.evR_of_frMap_fromTest (GlobalTheory.Frames.algebraic_laws laws.secBaseChange E H Dw l Xo c).2.2.1 g hg.1 _ y.1 y.2.1 yk

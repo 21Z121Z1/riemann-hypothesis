@@ -2,8 +2,8 @@ module
 
 public import Mathlib
 public import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.SatakeExponents.UniformizerValuations.PeakTraceBound
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.RegularizedExponentialSum
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.RegularizedExponentialSumStatement
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0046
+public import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.SatakeExponents.FibreFactorHolds
 
 @[expose] public section
 
@@ -152,7 +152,7 @@ theorem trace_contra {V : Type} [AddCommGroup V] [Module ℂ V] [FiniteDimension
   have hrr' : r ≤ r' := by rw [hr']; linarith
   have hr'μ : r' < ‖μ‖ := by rw [hr']; linarith
   let ι := (hfin.toFinset : Set ℂ)
-  have key := GlobalTheory.T.regularized_exponential_sum ι (fun i => (Module.finrank ℂ (T.maxGenEigenspace i.1) : ℂ))
+  have key := _root_.GlobalTheory.CompanionTheory.ExpSums.expSum_holds ι (fun i => (Module.finrank ℂ (T.maxGenEigenspace i.1) : ℂ))
     (fun i => i.1) r' (max C 0 * (r' ^ j)⁻¹) N hr'0.le ?_ μ hr'μ
   ·
     have hmem : μ ∈ hfin.toFinset := by

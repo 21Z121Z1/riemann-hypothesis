@@ -2,17 +2,16 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.PlaceAdaptation.AdaptStd
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PullbackSections.PlaceIdem
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PullbackSections.HolomorphicFamilies.ChartValJ
-public import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.InZhGeoInjStable
-public import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.ExistsUniqueNormalisedPullbackRationalNorm
-public import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.ExistsUniqueSymmetricTranslateOddLevel
-public import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.SymmetricTranslateMulOfCoprimeOrders
-public import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.NormalisedPullbackCommutesSymmetricTranslations
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PullbackSections.Bundle0001
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PullbackSections.HolomorphicFamilies.Bundle0012
+public import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.Bundle0031
+public import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.Bundle0048
+public import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.Bundle0047
+public import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.Bundle0036
 public import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.SymmetricTranslatesMultiplicationPullbackDescrip
-public import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.HarmonicValueTranslatedProductValuationBoundStatement
-public import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.IsotropicGroupPrimaryDecompositionStatement
-public import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.LatticeTrivialAtPrimeIndicesAndUnitsStatement
+public import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.Bundle0051
+public import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.Bundle0035
+public import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.Bundle0040
 
 @[expose] public section
 
@@ -181,7 +180,7 @@ theorem short_bound_of_trivAt : ∀ (E : Type) [Field E] [NumberField E] [IsCMFi
       rw [if_neg (mul_ne_zero hu0 hz), if_neg hz, vV_mul hu0 hz hu]
   have hNodd : Odd N := hL.1
   obtain ⟨J, J', iJ, iJ', a, a', σ, hinj, ha, ⟨m, hm, ha'⟩, hz', hcard⟩ :=
-    GlobalTheory.T.isotropic_group_primary_decomposition E H Dw l Xo T.Fr (xOf y) n Λ N M ℓ hU hL hℓ z hz hgi
+    _root_.GlobalTheory.isotropic_primary_decomposition E H Dw l Xo T.Fr (xOf y) n Λ N M ℓ hU hL hℓ z hz hgi
   obtain ⟨hfac, hmne, hrest⟩ := GlobalTheory.T.lattice_trivial_at_prime_indices_and_units E H Dw l c n Λ N M ℓ hU hL hℓ hΛ
   obtain ⟨hβv, hFFV⟩ := hrest T io hl
   obtain ⟨j₀⟩ : Nonempty J := Fintype.card_pos_iff.1 (by rw [hcard]; exact pow_pos hℓ.pos _)

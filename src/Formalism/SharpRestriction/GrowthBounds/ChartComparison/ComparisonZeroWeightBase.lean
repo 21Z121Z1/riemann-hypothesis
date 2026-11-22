@@ -1,7 +1,7 @@
 module
 
-public import Formalism.LocalToGlobal.GroupLattices.ComparisonMaps.SpanImageEq
-public import Formalism.LocalToGlobal.GroupLattices.ComparisonMaps.SpanImageOfSurj
+public import Formalism.LocalToGlobal.GroupLattices.ComparisonMaps.Bundle0003
+public import Formalism.LocalToGlobal.GroupLattices.ComparisonMaps.Bundle0009
 public import Formalism.SharpRestriction.GrowthBounds.WeilJacquetShalikaLaw
 
 @[expose] public section

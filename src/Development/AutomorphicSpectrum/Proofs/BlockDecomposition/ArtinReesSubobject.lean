@@ -1,11 +1,9 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.PowSubSuccLe
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SubobjectLeIffAffineSections
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SecsMapArrow
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IdealPowerSubobjectSections
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SubobjectPullbackSections
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0239
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0251
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0244
 
 @[expose] public section
 

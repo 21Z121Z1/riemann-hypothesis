@@ -4,18 +4,57 @@ public import Mathlib
 public import Development.AutomorphicSpectrum.PublishedTheorems.Geometry₂.NefRR
 public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.ModelSmall
 public import Development.AutomorphicSpectrum.Statements.TowerExistence.GoodTowerExistsX
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.InterNamed
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArithmeticIntersection.MultihomogeneousIdeals.ExistsUniqueStatement
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsEmbeddingPieces
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.Bundle0012
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArithmeticIntersection.MultihomogeneousIdeals.Bundle0001
+public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0036
 public import Development.AutomorphicSpectrum.Definitions.MetricPeriods.HasMultiplier
 public import Development.AutomorphicSpectrum.Definitions.DivisibilityTowers.HeckeSectionsIsotropicCommutatorPairingPower
 public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.OverLaUnique
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.InterSt
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.Bundle0006
 public import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.RealTowerGeometricAgreement
-public import Development.AutomorphicSpectrum.Proofs.MetricProofs.NefPolarizationStatement
-public import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.RealTowerNefGeneralStatement
+public import Development.AutomorphicSpectrum.Proofs.MetricProofs.Bundle0091
+public import Development.AutomorphicSpectrum.Definitions.MetricPeriods.Pull1
+public import Development.AutomorphicSpectrum.Statements.MetricStatements.AgreementIffGuarded
+public import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.Bundle0025
+public import Development.AutomorphicSpectrum.Definitions.DivisibilityTowers.Bundle0001
 public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.SectionsGenericIndicators
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.TowerComponentsCompatibleLawsStatement
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.TowerComponentsCompatibleLaws
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.CInfGood
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.Bundle0016
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0027
+public import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.Bundle0002
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArakelovVolumes.UpperBounds.Bundle0007
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArakelovVolumes.UpperBounds.Bundle0008
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.FundamentalDomains.Bundle0004
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArakelovVolumes.ArakelovInstances.Bundle0001
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0021
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.SquareIntegrability.Bundle0005
+public import Development.AutomorphicSpectrum.Definitions.DivisibilityTowers.GoodOrigin
+public import Development.AbelianVarietyTheory.BlockTheory.ExistenceTori.UnitaryHaarVolume
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.FundamentalDomains.Bundle0010
+public import Formalism.LocalToGlobal.CMDeterminantIdeals.CMIdealValuations.Bundle0001
+public import Formalism.LocalToGlobal.CMDeterminantIdeals.CMIdealValuations.ProdMulLeDetIdeal
+public import Formalism.LocalToGlobal.CMDeterminantIdeals.CMIdealValuations.ValuationLeOfEqAlgebraMap
+public import Formalism.LocalToGlobal.CMDeterminantIdeals.CMIdealValuations.AbsNormSpanGalois
+public import Formalism.LocalToGlobal.CMDeterminantIdeals.CMIdealValuations.Bundle0002
+public import Formalism.LocalToGlobal.CMDeterminantIdeals.CMIdealValuations.ExistsEvalNeZeroOfTotalDegreeLt
+public import Formalism.LocalToGlobal.CMDeterminantIdeals.CMIdealValuations.FiniteDetAddSmulOneEqZero
+public import Formalism.LocalToGlobal.CMDeterminantIdeals.CMIdealValuations.LargeResidueExtensionLemma
+public import Formalism.LocalToGlobal.CMDeterminantIdeals.CMIdealValuations.HermitianFormGramBlockBasis
+public import Development.AbelianVarietyTheory.Definitions.Foundations.IsProbabilityMeasureMuPart
+public import Formalism.LocalToGlobal.ProjectiveLattices.PartitionExtendByZeroAntitone
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.FundamentalDomains.Bundle0003
+public import Formalism.LocalToGlobal.Divisibility.Bundle0001
+public import Development.AutomorphicSpectrum.Statements.GeometryStatements.Bundle0004
+public import Development.AutomorphicSpectrum.Statements.GeometryStatements.FlatDegree
+public import Formalism.MeanHeightDescent.CombinedAverageDegreeBound
+public import Formalism.MonomialMeanResidues.FilteredDegree
+public import ReciprocityTheory.L2DbarEstimates.PlurisubharmonicCharts.Bundle0001
+public import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.Statements
+public import Formalism.LocalToGlobal.ProjectiveLattices.CompHt
+public import Formalism.LocalToGlobal.IndefiniteForms.IndefiniteTree.RealCubicMeans.LogMeanShares.LogMeanStatements.HSClaim
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.HeightTheory.TheoremA
+public import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.Bundle0021
 public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.GenericFrameComponentBoundStatement
 public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ArithmeticDegreePositiveHermStatement
 public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.UniformNormSectionCountStatement
@@ -299,7 +338,7 @@ theorem GlobalTheory.CompanionTheory.Ar.Plug.growth_le_vol_deg : GlobalTheory.Co
   have hq : 1 ≤ Dw.q := by have := T.j_lt; omega
   obtain ⟨B, hB⟩ := exists_nat_gt (Top.bigB0 (reW u) 1)
   have hB' : Top.bigB0 (reW u) 1 < (B : ℝ) + 1 := hB.trans (lt_add_one _)
-  obtain ⟨Fr, ⟨Rd⟩⟩ := GlobalTheory.T.tower_components_compatible_laws E H Dw l Xo c r U h e hL Y T o.toTowerOrigin κ hκ B Z
+  obtain ⟨Fr, ⟨Rd⟩⟩ := _root_.GlobalTheory.CompanionTheory.Ar.Rec.read_exists E H Dw l Xo c r U h e hL Y T o.toTowerOrigin κ hκ B Z
   have wt := GlobalTheory.T.tower_weight_of_zero E H Dw l Xo c (T.M B (κ Z)) u
   obtain ⟨-, -, wtn, wtc, -, wtd, -, wtw, -⟩ := wt
   have hW : Top.WeightHyp T.j (reW u) 1 := by rw [hjp]; exact wtw hp hq hu
@@ -338,7 +377,7 @@ theorem GlobalTheory.CompanionTheory.Ar.Plug.growth_le_vol_deg : GlobalTheory.Co
     exact_mod_cast this
   have hnef : ∀ W, ReciprocityTheory.ChartRestriction.G.Geo.IsArithVar W 2 → mCoordIdeal M.y ≤ W → 0 ≤ geomDeg W (Top.combLine (M.line 1) (nOf u)) 1 := by
     intro W hW hPW
-    have h1 := (GlobalTheory.T.real_tower_nef_general GlobalTheory.T.nef_polarization hIn II hII _ _ T (Top.realOf o.toTowerOrigin) o.smooth o.flat B (κ Z)).1
+    have h1 := (_root_.GlobalTheory.CompanionTheory.Ar.Top.rt_nefgen _root_.GlobalTheory.CompanionTheory.Ar.PB.nefPol hIn II hII _ _ T (Top.realOf o.toTowerOrigin) o.smooth o.flat B (κ Z)).1
       (reW u) hdom W hW hPW
     rw [geomDeg_combLine_one hIn M (nOf u) W hW]
     simpa only [wtc] using h1

@@ -2,7 +2,7 @@ module
 
 public import Development.AutomorphicSpectrum.Definitions.AdelicLattices.FactPrimes
 public import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.LatNormGrLatNeZeroOfSpan
-public import Development.AbelianVarietyTheory.Statements.PlaceShiftStatements.PointShiftStOfPlaceShiftSt
+public import Development.AbelianVarietyTheory.Statements.PlaceShiftStatements.Bundle0002
 
 @[expose] public section
 

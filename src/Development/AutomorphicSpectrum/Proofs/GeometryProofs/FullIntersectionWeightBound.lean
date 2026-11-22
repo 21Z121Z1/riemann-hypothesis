@@ -3,16 +3,17 @@ module
 public import Mathlib
 public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.ModelSmall
 public import Development.AutomorphicSpectrum.Statements.TowerExistence.GoodTowerExistsX
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.InterNamed
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArithmeticIntersection.MultihomogeneousIdeals.ExistsUniqueStatement
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsEmbeddingPieces
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.Bundle0012
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArithmeticIntersection.MultihomogeneousIdeals.Bundle0001
+public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0036
 public import Development.AutomorphicSpectrum.Definitions.MetricPeriods.HasMultiplier
 public import Development.AutomorphicSpectrum.Definitions.DivisibilityTowers.HeckeSectionsIsotropicCommutatorPairingPower
 public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.OverLaUnique
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.InterSt
-public import Development.AutomorphicSpectrum.Proofs.MetricProofs.WeightThresholdLimitCoefficientsStatement
-public import Development.AutomorphicSpectrum.Proofs.MetricProofs.HermitianLineShiftPropertiesStatement
-public import Development.AutomorphicSpectrum.Proofs.MetricProofs.ShiftHEqTensorConstLine
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.Bundle0006
+public import Development.AutomorphicSpectrum.Proofs.MetricProofs.Bundle0062
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArakelovGeometry.Bundle0003
+public import Development.AutomorphicSpectrum.Proofs.MetricProofs.Bundle0019
+public import Development.AutomorphicSpectrum.Proofs.MetricProofs.Bundle0030
 public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.StrictWeightGrowthBoundStatement
 public import Development.AbelianVarietyTheory.Definitions.ArchimedeanThetaValues.OneAddZeta21PowSevenAddPowFourteenEqZero
 
@@ -129,7 +130,7 @@ theorem le_countVol_of_nef {Ψ : Type} [Fintype Ψ] {N : ℕ} (h6 : BirationalPu
         ((Top.dimFl Ψ N : ℝ) + 1) * κ * geomDeg (mCoordIdeal RM.y) A (Top.dimFl Ψ N)) /
         (((Top.dimFl Ψ N : ℝ) + 1) * RM.δ * ((8 * r : ℕ) : ℝ) ^ (Top.dimFl Ψ N + 1))) ≤
       GlobalTheory.CompHt.countVol (Top.dimFl Ψ N) RM.δ 8 m := by
-  have hNs := (GlobalTheory.T.hermitian_line_shift_properties RM.K RM.ι (mCoordIdeal RM.y) A κ 1).2.1 hA
+  have hNs := (_root_.GlobalTheory.CompanionTheory.Ar.Small.shiftH_props RM.K RM.ι (mCoordIdeal RM.y) A κ 1).2.1 hA
   obtain ⟨P1, hP1, hsp⟩ := hNs.semipos
   have h := h6 RM.K RM.ι RM.Ω RM.y (Top.dimFl Ψ N) (Small.shiftH A κ) P1 II hD hII RM.arith RM.birational hP1 hsp
     hNs.nef hNs.conj
@@ -160,7 +161,7 @@ theorem volume_ge_slope : Top.Given → BirationalPullbackPushforwardFormula →
     have := hW.2.1 τ a b' h
     simpa [reW] using this
   obtain ⟨C, s, q, m, θ, hC, hs, hs0, hq, hm, hsm⟩ := GlobalTheory.T.strict_weight_growth_bound hG E H Dw l Xo c Y T o B b u hanti
-  obtain ⟨hnef, hdeg, hsl, hV⟩ := GlobalTheory.T.weight_threshold_limit_coefficients (CMType H) (Dw.p + Dw.q) T II B (reW u) g b s q m hII hT1 hW hBig
+  obtain ⟨hnef, hdeg, hsl, hV⟩ := _root_.GlobalTheory.CompanionTheory.Ar.Small.tower_seq (CMType H) (Dw.p + Dw.q) T II B (reW u) g b s q m hII hT1 hW hBig
     hs hs0 (fun n => (hq n).1) hm
   have hD : 1 ≤ Top.dimFl (CMType H) (Dw.p + Dw.q) := by
     obtain ⟨τ, hτ⟩ := GlobalTheory.HostModel.exists_embedding_rt_eq H

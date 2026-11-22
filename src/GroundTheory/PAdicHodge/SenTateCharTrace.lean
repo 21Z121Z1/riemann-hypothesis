@@ -3,7 +3,7 @@ module
 public import Mathlib
 public import GroundTheory.PAdicHodge.SenTateCharLevels
 public import GroundTheory.PAdicHodge.SenTateCharStep
-public import GroundTheory.PAdicHodge.SenTateCharClosure
+public import GroundTheory.PAdicHodge.Bundle0003
 
 @[expose] public section
 

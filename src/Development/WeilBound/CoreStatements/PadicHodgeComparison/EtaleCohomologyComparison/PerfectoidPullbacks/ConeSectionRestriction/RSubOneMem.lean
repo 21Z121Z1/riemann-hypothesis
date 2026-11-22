@@ -1,13 +1,13 @@
 module
 
 public import Mathlib
-public import Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.PerfectoidPullbacks.ConeSectionRestriction.Precomp
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.TruncatedLogMultiplicativeStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ConeLiftRatioMemIdealStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ConeCocycleClosedStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ConeCocycleClassIndependentStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsConeLiftStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SupremumTwistingOpensEqTopStatement
+public import Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.PerfectoidPullbacks.ConeSectionRestriction.Bundle0006
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0152
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0145
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0156
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ConeCocycleClassIndependent
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0267
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0167
 
 @[expose] public section
 
@@ -45,14 +45,14 @@ section K
 variable {K : Type} [Field K] [CharZero K] {X : Scheme.{0}} {q : X ⟶ Spec (CommRingCat.of K)}
 
 theorem r_sub_one_mem {C : Type 1} [Category.{0} C] {g : C ⥤ Thick (smFun X q)} {D : E.LineData X} (Λ : CLiftK g D)
-    (σ : ComposableArrows C 2) : ((Λ.r σ : (g.obj (σ.obj (Fin.last 2))).B) - 1) ∈ (g.obj (σ.obj (Fin.last 2))).J := GlobalTheory.T.cone_lift_ratio_mem_ideal Λ σ
+    (σ : ComposableArrows C 2) : ((Λ.r σ : (g.obj (σ.obj (Fin.last 2))).B) - 1) ∈ (g.obj (σ.obj (Fin.last 2))).J := _root_.GlobalTheory.CompanionTheory.ConeUnit.r_sub_one Λ σ
 
 theorem zK_cocycle {C : Type 1} [Category.{0} C] {g : C ⥤ Thick (smFun X q)} {D : E.LineData X} (Λ : CLiftK g D)
-    (s : ℕ) (hs : ∀ c, (g.obj c).pdPow s = ⊥) : CH.d _ 2 (zK Λ s) = 0 := GlobalTheory.T.cone_cocycle_closed Λ s hs
+    (s : ℕ) (hs : ∀ c, (g.obj c).pdPow s = ⊥) : CH.d _ 2 (zK Λ s) = 0 := _root_.GlobalTheory.CompanionTheory.ConeZcoc.main Λ s hs
 
 theorem zK_cls_eq {C : Type 1} [Category.{0} C] {g : C ⥤ Thick (smFun X q)} {D : E.LineData X} (Λ Λ' : CLiftK g D)
     (s : ℕ) (hs : ∀ c, (g.obj c).pdPow s = ⊥) (hz : CH.d _ 2 (zK Λ s) = 0) (hz' : CH.d _ 2 (zK Λ' s) = 0) :
-    (CH.cx _).cls (zK Λ s) hz = (CH.cx _).cls (zK Λ' s) hz' := GlobalTheory.T.cone_cocycle_class_independent Λ Λ' s hs hz hz'
+    (CH.cx _).cls (zK Λ s) hz = (CH.cx _).cls (zK Λ' s) hz' := _root_.GlobalTheory.CompanionTheory.ConeZcls.main Λ Λ' s hs hz hz'
 
 
 omit [CharZero K] in
@@ -65,9 +65,9 @@ theorem zK_precomp {C C' : Type 1} [Category.{0} C] [Category.{0} C'] {g : C ⥤
 end K
 
 theorem lift_exists {K : Type} [CommRing K] {X : Scheme.{0}} (q : X ⟶ Spec (CommRingCat.of K)) (D : E.LineData X)
-    (s : ℕ) : Nonempty (CLiftK (KS q s (𝒱D D)).ι D) := GlobalTheory.T.exists_cone_lift q D s
+    (s : ℕ) : Nonempty (CLiftK (KS q s (𝒱D D)).ι D) := _root_.GlobalTheory.CompanionTheory.ConeLiftEx.nonempty_cLiftK q D s
 
 theorem sSup_𝒱D {R : Type} [CommRing R] {X : Scheme.{0}} (D : E.LineData X) (N : ℕ)
-    (i : X ⟶ ReciprocityTheory.ChartRestriction.G.Geo.Tor.PSpace R N) (h : IsTautologicalLineAt D N i) : sSup (𝒱D D) = ⊤ := GlobalTheory.T.supremum_twisting_opens_eq_top D N i h
+    (i : X ⟶ ReciprocityTheory.ChartRestriction.G.Geo.Tor.PSpace R N) (h : IsTautologicalLineAt D N i) : sSup (𝒱D D) = ⊤ := _root_.GlobalTheory.CompanionTheory.ConeCover.main D N i h
 
 end CrystallineSemistableComparison.Pb

@@ -1,7 +1,6 @@
 module
 
-public import Formalism.LocalToGlobal.HermitianForms.TiedBrCo
-public import Formalism.LocalToGlobal.HermitianForms.TiedBrRep
+public import Formalism.LocalToGlobal.HermitianForms.Bundle0009
 
 @[expose] public section
 

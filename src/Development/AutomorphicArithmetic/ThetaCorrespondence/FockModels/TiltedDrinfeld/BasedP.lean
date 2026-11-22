@@ -2,9 +2,9 @@ module
 
 public import Development.AutomorphicArithmetic.ThetaCorrespondence.FockModels.TiltedDrinfeld.ExistsCoeEqUntiltPFlat
 public import Development.AutomorphicArithmetic.ThetaCorrespondence.FockModels.TiltedDrinfeld.ExistsBeta
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.KummerNotFrac
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0104
 public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsLocalPrimeAinf
-public import Development.AutomorphicArithmetic.ThetaCorrespondence.LocalComparison.LocTied6
+public import Development.AutomorphicArithmetic.ThetaCorrespondence.LocalComparison.Bundle0001
 
 @[expose] public section
 

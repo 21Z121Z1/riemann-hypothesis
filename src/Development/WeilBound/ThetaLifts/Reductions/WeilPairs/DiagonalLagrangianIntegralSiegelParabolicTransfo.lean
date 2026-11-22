@@ -1,14 +1,13 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ReindexDblIncM
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LagrInt
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.InfPartFPlaceIdem
-public import Development.WeilBound.ThetaLifts.Reductions.WeilPairs.Periodic
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1402
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1429
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1000
+public import Development.WeilBound.ThetaLifts.Reductions.WeilPairs.Bundle0009
 public import Development.WeilBound.ThetaLifts.Reductions.WeilPairs.InvHerm
 public import Development.WeilBound.ThetaLifts.Reductions.WeilPairs.LeviGLInvVal
-public import Development.WeilBound.ThetaLifts.Reductions.WeilPairs.OneAddPow
-public import Development.WeilBound.ThetaLifts.Reductions.WeilPairs.MfacInvMul
+public import Development.WeilBound.ThetaLifts.Reductions.WeilPairs.Bundle0017
 
 @[expose] public section
 

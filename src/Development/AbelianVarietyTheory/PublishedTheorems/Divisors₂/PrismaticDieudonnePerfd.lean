@@ -1,11 +1,11 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Divisors.XiMulNu
-public import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.EpsilonPairingZeta
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0001
+public import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.Bundle0005
 public import Development.AbelianVarietyTheory.Definitions.Divisors.ToBaseChangePtsBijective
-public import ReciprocityTheory.DualLattices.AinfFacts
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.FontaineThetaEqZeroIffFontaineXiElementDvd
+public import ReciprocityTheory.DualLattices.Bundle0023
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0054
 public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.IsLogAExtends
 
 @[expose] public section

@@ -1,6 +1,6 @@
 module
 
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SymplecticChangeOfGoodModelsIntertwines
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1719
 
 @[expose] public section
 

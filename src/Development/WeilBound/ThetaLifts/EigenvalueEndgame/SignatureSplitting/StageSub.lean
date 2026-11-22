@@ -1,7 +1,7 @@
 module
 
 public import Development.WeilBound.ThetaLifts.EigenvalueEndgame.SignatureSplitting.RightOfFd
-public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.ConjugateSubgroup
+public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0082
 
 @[expose] public section
 

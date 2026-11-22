@@ -1,10 +1,10 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.HeckeCharEqOfLAdicRealisation
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.AwayRepIsoLoc
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.CharpolyEqOfEqOnDense
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.IsHeckeGaloisQOfIsHeckeGalois
+public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.Bundle0009
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0187
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0070
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0080
 
 @[expose] public section
 

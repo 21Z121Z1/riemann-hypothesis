@@ -2,11 +2,8 @@ module
 
 public import Mathlib
 public import Development.AutomorphicArithmetic.ThetaCorrespondence.HoweDuality.FactorApply
-public import Development.AutomorphicArithmetic.ThetaCorrespondence.HoweDuality.RadFin
-public import Development.AutomorphicArithmetic.ThetaCorrespondence.HoweDuality.Nak
-public import Development.AutomorphicArithmetic.ThetaCorrespondence.HoweDuality.SlotBasic
-public import Development.AutomorphicArithmetic.ThetaCorrespondence.HoweDuality.PartStable
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.TensorEqTopOrLeKerFiniteLengthModulesStatement
+public import Development.AutomorphicArithmetic.ThetaCorrespondence.HoweDuality.Bundle0001
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0041
 
 @[expose] public section
 

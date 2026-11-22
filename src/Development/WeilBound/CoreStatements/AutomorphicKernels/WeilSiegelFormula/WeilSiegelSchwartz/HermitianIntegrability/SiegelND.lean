@@ -3,11 +3,11 @@ module
 public import Mathlib
 public import Development.WeilBound.CoreStatements.AutomorphicKernels.WeilSiegelFormula.WeilSiegelSchwartz.HermitianIntegrability.PureIdentity
 public import Development.WeilBound.CoreStatements.AutomorphicKernels.WeilSiegelFormula.WeilSiegelSchwartz.HermitianIntegrability.HermitianIntegration
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ThetaPartD
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsBoundUnitary
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FrameIntegralEqThetaPartNondegenerateStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsSelfDualSiegelWeilMeasuresStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SchwartzFunctionSchwartzBruhatStatement
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0471
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0827
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0682
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsSelfDualSiegelWeilMeasures
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0573
 
 @[expose] public section
 
@@ -25,7 +25,7 @@ theorem siegelND : PositivityTheory.GramSchwartzFunctions.BC.SiegelND := by
   have hCM := GlobalTheory.DefiniteQuotient.cmExt D
   have hJ := GlobalTheory.DefiniteQuotient.gram_hermND V
   obtain ⟨μH, 𝓕, hμH, h𝓕, -⟩ := GlobalTheory.Published.SiegelOneVector.exists_normalised D.sp.cm.sig V.gram hCM hJ
-  obtain ⟨dx, db, hdx, hdb, hW⟩ := GlobalTheory.T.exists_self_dual_siegel_weil_measures D r V ψ hψ μ hμ lam hlam
+  obtain ⟨dx, db, hdx, hdb, hW⟩ := _root_.GlobalTheory.CompanionTheory.SiegelND.whit_eq_coefN D r V ψ hψ μ hμ lam hlam
   have hT : ∀ a b, D.sp.cm.sig (β.1 b a) = β.1 a b := fun a b => by
     have := congrFun (congrFun β.2 a) b
     simpa [Matrix.transpose_apply, Matrix.map_apply] using this

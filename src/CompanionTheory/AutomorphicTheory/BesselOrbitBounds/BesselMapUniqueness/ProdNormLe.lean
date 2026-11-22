@@ -1,6 +1,6 @@
 module
 
-public import CompanionTheory.AutomorphicTheory.BesselOrbitBounds.BesselMapUniqueness.ContinuousOnOrbit
+public import CompanionTheory.AutomorphicTheory.BesselOrbitBounds.BesselMapUniqueness.Bundle0001
 
 @[expose] public section
 

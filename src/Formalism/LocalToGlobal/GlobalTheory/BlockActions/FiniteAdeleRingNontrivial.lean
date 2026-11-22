@@ -2,7 +2,7 @@ module
 
 public import Formalism.LocalToGlobal.GlobalTheory.BlockActions.LatSOfMem
 public import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.CsGlob
-public import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.InclusionInjective
+public import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Bundle0002
 
 @[expose] public section
 

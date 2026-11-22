@@ -1,6 +1,6 @@
 module
 
-public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.FormalDegree.PolarAct
+public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.FormalDegree.Bundle0006
 public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.FormalDegree.ProdShcSqEqJacPow
 
 @[expose] public section

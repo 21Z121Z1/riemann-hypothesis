@@ -1,13 +1,11 @@
 module
 
-public import Formalism.CoboundaryTransfers.GammaStableTransfers.MemCoboundariesOfIsOneCoboundary
+public import Formalism.CoboundaryTransfers.GammaStableTransfers.Bundle0001
 public import Formalism.CoboundaryTransfers.GammaStableTransfers.GammaStableOfGammaQUnitHolds
-public import Formalism.CoboundaryTransfers.GammaStableTransfers.DiffOneSmulOfTower
-public import Formalism.CoboundaryTransfers.GammaStableTransfers.TorsionKilledCriterionHolds
 public import Formalism.CoboundaryTransfers.StatementBridge
 public import Formalism.WachModuleLifts.StatementW
 public import Formalism.LagrangeIdealLifts.Statement
-public import Formalism.FrobeniusContraction.Statement
+public import Formalism.FrobeniusContraction.Bundle0001
 public import Formalism.CoboundaryTransfers.GammaStableTransfers.Transfer
 public import Formalism.CoboundaryTransfers.StatementAPI
 

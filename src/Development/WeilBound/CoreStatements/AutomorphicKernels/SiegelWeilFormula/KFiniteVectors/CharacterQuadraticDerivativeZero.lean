@@ -1,7 +1,7 @@
 module
 
 public import Development.WeilBound.CoreStatements.AutomorphicKernels.SiegelWeilFormula.KFiniteVectors.KFinOfMem
-public import Development.WeilBound.ThetaLifts.LatticeBasics.ExistsIsGauss
+public import Development.WeilBound.ThetaLifts.LatticeBasics.Bundle0011
 
 @[expose] public section
 

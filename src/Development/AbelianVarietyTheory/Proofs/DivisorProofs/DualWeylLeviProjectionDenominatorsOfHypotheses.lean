@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NablaSchur
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0569
 public import Formalism.GradedWeylDivisibility.DualWeylDominanceOf
-public import Formalism.GradedWeylDivisibility.FockSpaceTableaux.ClosedEqNabla
+public import Formalism.GradedWeylDivisibility.FockSpaceTableaux.Bundle0011
 public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.StandardWeylLatticesFockDual
 
 @[expose] public section

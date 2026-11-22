@@ -1,6 +1,6 @@
 module
 
-public import Formalism.LocalToGlobal.GroupLattices.LevelGatherings.ComplSmulMapE
+public import Formalism.LocalToGlobal.GroupLattices.LevelGatherings.Bundle0004
 
 @[expose] public section
 

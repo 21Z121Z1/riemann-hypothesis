@@ -1,15 +1,23 @@
 module
 
 public import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.ValidForConstructedPointClassesEventuallyWorking
-public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.NormPrimesAndLevelPrimeUnconditional
-public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.SmallPrimeOneOfPrimesRel
-public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.PrimesInProgressionsRelativeError
-public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.WindowShareRequirementClosedFormProofStatement
-public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.ExistsObjectsOfAdmissibleTwistDatumStatement
-public import Development.AutomorphicArithmetic.CharacterBoxes.SmallestPrimePolynomialBound
-public import Development.AutomorphicArithmetic.CharacterBoxes.HostWW
-public import Development.AutomorphicArithmetic.CharacterBoxes.KitS
-public import Development.AutomorphicArithmetic.CharacterBoxes.DesignS
+public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0121
+public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0110
+public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0114
+public import Mathlib
+public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.WindowShareRequirementClosedFormProof
+public import Formalism.SharpRestriction.InertJacobiLevels.AsmIface
+public import Formalism.LocalToGlobal.GlobalTheory.IsResidueClassZero
+public import Formalism.SharpRestriction.GrowthBounds.SmallOrderPrimes
+public import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.Bundle0002
+public import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.Bundle0003
+public import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.ThinScalesIffHostBound
+public import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.LogCondLeThree
+public import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.AuxiliaryPrimeMemAvoidedPrimes
+public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0151
+public import Formalism.SharpRestriction.GlobalSchurBounds.ThickPlacesCorollaryOfAnyTranslate
+public import Development.AutomorphicArithmetic.CharacterBoxes.Bundle0006
+public import Development.AutomorphicArithmetic.CharacterBoxes.Bundle0007
 
 @[expose] public section
 
@@ -35,8 +43,8 @@ theorem recS (QO : Par → ∀ D : D7, Obj D → Prop) (cT : ℝ → ℝ → ℝ
     (hM : DC.MinkDiv) : ExD (clsP QO) cT := by
   intro la G hla hH
   have hS : SmallPrimeOne := GlobalTheory.EX.smallPrimeOne_of_primesRel GlobalTheory.Lin.primesRel_holds
-  have hO := GlobalTheory.T.existsObjects_of_admissibleTwistDatum _ GlobalTheory.EX.normPrimes_and_levelPrime_unconditional.2 (hR hM)
-  have hW : DC.HostWW la G.req := hostWW _ la _ hla (hostQ hS la G hH) (objC_true hO) GlobalTheory.T.windowShareRequirementClosedForm_proof
+  have hO := _root_.GlobalTheory.Fc.objCP_of_recExP _ GlobalTheory.EX.normPrimes_and_levelPrime_unconditional.2 (hR hM)
+  have hW : DC.HostWW la G.req := hostWW _ la _ hla (hostQ hS la G hH) (objC_true hO) _root_.GlobalTheory.EX.G4.wClosed
   exact designS (fun κ => ptO (DQ.withQD (QO κ))) cT la G hla hM (kitS _ la G hW hO)
 
 end UpperTheory.Top

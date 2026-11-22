@@ -1,11 +1,11 @@
 module
 
 public import Mathlib
-public import Development.WeilBound.ThetaLifts.Reductions.WeilPairs.AutDef
+public import Development.WeilBound.ThetaLifts.Reductions.WeilPairs.Bundle0003
 public import Formalism.LocalToGlobal.IndefiniteReal.DatumF
 public import Formalism.SharpRestriction.GlobalSchurBounds.GeneralLinearActions.GenusMassVolumes
 public import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.WeilTensorModels
-public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.AbsoluteValueAltAlt
+public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0065
 
 @[expose] public section
 

@@ -1,6 +1,6 @@
 module
 
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.PBCLim
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0105
 
 @[expose] public section
 

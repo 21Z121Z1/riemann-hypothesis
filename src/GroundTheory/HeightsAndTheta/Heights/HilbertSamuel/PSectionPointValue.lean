@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsSectionPointValue
+public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0057
 public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PSectionBounded
 
 @[expose] public section

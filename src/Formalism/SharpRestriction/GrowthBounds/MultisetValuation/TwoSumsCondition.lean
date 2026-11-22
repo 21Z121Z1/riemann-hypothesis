@@ -1,6 +1,6 @@
 module
 
-public import Formalism.SharpRestriction.GrowthBounds.MultisetValuation.ExistsAtPiG1EqCPowMulIntegralSeries
+public import Formalism.SharpRestriction.GrowthBounds.MultisetValuation.Bundle0019
 
 @[expose] public section
 

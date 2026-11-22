@@ -1,6 +1,6 @@
 module
 
-public import Formalism.PieriBlockIdeals.StatementLP
+public import Formalism.PieriBlockIdeals.Bundle0006
 public import Formalism.PieriBlockIdeals.PieriColumnMinors.Symmetrization
 
 @[expose] public section

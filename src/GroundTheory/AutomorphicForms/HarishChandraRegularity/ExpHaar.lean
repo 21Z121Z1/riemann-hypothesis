@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import GroundTheory.AutomorphicForms.HarishChandraRegularity.ContDiffCompCoordEquiv
-public import GroundTheory.AutomorphicForms.DixmierMalliavinHaarDensity
+public import GroundTheory.AutomorphicForms.Bundle0014
 
 @[expose] public section
 

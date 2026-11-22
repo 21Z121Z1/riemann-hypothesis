@@ -1,11 +1,11 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Foundations.HTLawAt
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.CoefficientCongruenceOfTwistedValues
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.SeriesEqZeroOfValsTendstoZero
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.HeightAndVanishing.CoefSup
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.IsIntegralIffNormLeOne
+public import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0022
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0358
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0369
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.HeightAndVanishing.Bundle0001
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0361
 
 @[expose] public section
 

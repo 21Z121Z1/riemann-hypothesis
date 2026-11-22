@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import GroundTheory.HeightsAndTheta.Heights.FiniteCovolume.PRadicalTorusModulusCoords
+public import GroundTheory.HeightsAndTheta.Heights.FiniteCovolume.Bundle0027
 
 @[expose] public section
 

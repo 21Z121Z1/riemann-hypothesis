@@ -1,6 +1,6 @@
 module
 
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ColumnLocalDataTransportDivision
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0598
 
 @[expose] public section
 

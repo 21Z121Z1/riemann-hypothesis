@@ -1,16 +1,16 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.TateUnramifiedOfTorsionUnramified
+public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.Bundle0020
 public import Development.AbelianVarietyTheory.Definitions.Degenerations.OfDerivationFnOn
 public import Development.AbelianVarietyTheory.Proofs.CovolumeBounds.IsProjOverMorphismRestrictOfRelAmple
 public import Development.AbelianVarietyTheory.Definitions.ThetaMetrics.TwistingSheafOneChartEqPreimageStandardChart
 public import Development.AbelianVarietyTheory.Definitions.ThetaMetrics.IsRegularFnIffOfIsAffineOpen
 public import Development.AbelianVarietyTheory.Definitions.QuasicoherentCohomology.BijectiveSmulChartSec
 public import Development.AbelianVarietyTheory.Definitions.AbelianSchemeLaws.FirstCohomologyVanishesSpecOfIsLocalRing
-public import Development.AutomorphicArithmetic.ThetaCorrespondence.GoodReduction.ExistsVeryAmpleFamiliesStableMatrix
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MatrixDescentUnramifiedDvrStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsVeryAmpleBySectionsOfInvertibleLinearChangeStatement
+public import Development.AutomorphicArithmetic.ThetaCorrespondence.GoodReduction.Bundle0002
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1485
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsVeryAmpleBySectionsOfInvertibleLinearChange
 
 @[expose] public section
 
@@ -87,8 +87,8 @@ theorem exists_compatible_projective_embeddings : ∀ (R K W K' : Type) [CommRin
     refine isUnit_iff_ne_zero.2 fun h0 => ?_
     rw [h0, map_zero] at hu
     exact not_isUnit_zero hu
-  have hs' := GlobalTheory.T.isVeryAmpleBySections_of_invertible_linear_change K A.left A.hom H N s k hkdet hH hs
-  have ht' := GlobalTheory.T.isVeryAmpleBySections_of_invertible_linear_change W G.left G.hom M N t h hh hM ht
+  have hs' := _root_.GlobalTheory.veryAmpleBy_linChange K A.left A.hom H N s k hkdet hH hs
+  have ht' := _root_.GlobalTheory.veryAmpleBy_linChange W G.left G.hom M N t h hh hM ht
   obtain ⟨hs0, hsci⟩ := (GlobalTheory.ProjSpace.veryAmpleBy_iff _ _).1 hs'
   obtain ⟨ht0, htci⟩ := (GlobalTheory.ProjSpace.veryAmpleBy_iff _ _).1 ht'
   have hqA : (e.hom.left ≫ pullback.fst A.hom (spMap (algebraMap K K'))) ≫ A.hom = (pullback.snd G.hom (spMap (algebraMap W K'))) ≫ spMap (algebraMap K K') := by

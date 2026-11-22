@@ -1,11 +1,11 @@
 module
 
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.FrobeniusSmoothVectors.Integral
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.FrobeniusSmoothVectors.Imports
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.FrobeniusSmoothVectors.LocRho
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.FrobeniusSmoothVectors.Bundle0002
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.FrobeniusSmoothVectors.Bundle0029
 public import Mathlib.RingTheory.MvPowerSeries.Derivative
 public import Mathlib.LinearAlgebra.Matrix.ToLinearEquiv
-public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.SpanOfVariable
+public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0057
 
 @[expose] public section
 

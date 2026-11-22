@@ -1,14 +1,14 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.DepthPays
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsModGrowthExpLeNormInfPow
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.HeckeCharInfinityEqCoeffMulHalfNormPow
-public import Development.AbelianVarietyTheory.Proofs.HeightProofs.UnitaryAdelicHeightCosetLeNormInfPow
-public import Formalism.LocalToGlobal.Columns.TiedTilA
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SumProductWeightsLeOfSeparatedGeometricMeanStatement
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsCommonDenominatorSelfDualLevelStatement
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsFinitePartDenominatorLeHeightPowStatement
+public import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.Bundle0006
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0121
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0800
+public import Development.AbelianVarietyTheory.Proofs.HeightProofs.Bundle0031
+public import Formalism.LocalToGlobal.Columns.Bundle0010
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0333
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0535
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsFinitePartDenominatorLeHeightPow
 
 @[expose] public section
 
@@ -96,12 +96,12 @@ namespace GlobalTheory.PoinCount
 theorem level_den (D : D7) (V : HSp D) (Λ : Lat V) (hΛ : IsSelfDualC V Λ) : ∃ b : ℕ, 0 < b ∧
     ∀ k ∈ congLev D.sp.cm V.gram Λ ⊤, ∀ i j,
       (b : Lev.EAf D) * k.1 i j ∈ Formalism.L2.Herm.intAf D.host.F D.host.E :=
-  GlobalTheory.T.exists_common_denominator_selfDual_level D V Λ hΛ
+  _root_.GlobalTheory.LevelDenom.exists_denom_congLev D V Λ hΛ
 
 theorem point_den (D : D7) (V : HSp D) : ∃ (C : ℝ) (A : ℕ), ∀ g : GA D V, ∃ d : ℕ, 0 < d ∧ (d : ℝ) ≤ C * height V g ^ A ∧
     ∀ i j, (d : Lev.EAf D) * (Lev.finE V g).1 i j ∈
       Formalism.L2.Herm.intAf D.host.F D.host.E :=
-  GlobalTheory.T.exists_finitePart_denominator_le_height_pow D V
+  _root_.GlobalTheory.PointDenom.exists_denom_le_height_pow D V
 
 variable {D : D7}
 
@@ -175,7 +175,7 @@ theorem sum_sep_le (ι : Type) [Fintype ι] [Nonempty ι] (n : ℕ) : ∃ C : �
     ∀ S : Finset (ι → Matrix (Fin n) (Fin n) ℂ),
       (∀ s ∈ S, ∀ s' ∈ S, s ≠ s' → la ^ Fintype.card ι ≤ ∏ v, hsn (s v - s' v)) →
       ∑ s ∈ S, ∏ v, ((1 + hsn (s v)) ^ (2 * n ^ 2 + 1))⁻¹ ≤ C * la⁻¹ ^ (2 * n ^ 2 * Fintype.card ι) :=
-  GlobalTheory.T.sum_productWeights_le_of_separated_geometricMean ι n
+  _root_.GlobalTheory.SepSum.sum_weights_le_of_separated ι n
 
 variable {D : D7}
 

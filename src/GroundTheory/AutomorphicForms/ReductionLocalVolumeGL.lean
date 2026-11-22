@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import GroundTheory.AutomorphicForms.ReductionLocalVolumeTorus
+public import GroundTheory.AutomorphicForms.Bundle0017
 public import GroundTheory.AutomorphicForms.RealIwasawaIntegration
 
 @[expose] public section

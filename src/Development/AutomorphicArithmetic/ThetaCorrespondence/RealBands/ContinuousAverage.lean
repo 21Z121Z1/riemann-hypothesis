@@ -2,8 +2,8 @@ module
 
 public import Mathlib
 public import Development.AutomorphicArithmetic.ThetaCorrespondence.RealBands.DecaysZero
-public import Development.AutomorphicArithmetic.ThetaCorrespondence.RealBands.Weight
-public import Development.AutomorphicArithmetic.ThetaCorrespondence.RealBands.IsCompactBall
+public import Development.AutomorphicArithmetic.ThetaCorrespondence.RealBands.Bundle0004
+public import Development.AutomorphicArithmetic.ThetaCorrespondence.RealBands.Bundle0003
 
 @[expose] public section
 

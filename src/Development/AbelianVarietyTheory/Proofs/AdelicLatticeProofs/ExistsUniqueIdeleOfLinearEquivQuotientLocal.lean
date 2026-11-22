@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.ValuationAlgebraMapEqCount
+public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.Bundle0005
 
 @[expose] public section
 

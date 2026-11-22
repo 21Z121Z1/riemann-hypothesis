@@ -1,16 +1,15 @@
 module
 
 public import Mathlib
-public import Formalism.LocalToGlobal.CharacterGerms.LatticeInclusionFormsInjective
-public import Formalism.LocalToGlobal.CharacterGerms.CartesianBoundOnCurves
-public import Formalism.LocalToGlobal.CharacterGerms.CoeffIterateZero
+public import Formalism.LocalToGlobal.CharacterGerms.Bundle0005
+public import Formalism.LocalToGlobal.CharacterGerms.Bundle0006
 public import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.TwoMulChainStartIndexAddOneOfOdd
-public import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.FactorizationLeFourFifteenths
-public import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.WeightSubstNonneg
-public import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.CoeffLeafGaugeSubMainTermEqZeroOnFirstAxisStatement
-public import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.PderivLeafGaugeEqPairingAddIntegralStatement
-public import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.HPullWUpGTwoGroupEmbeddingEqRenameStatement
-public import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.LinearSubstCoordinateWeightNonnegRadiusStatement
+public import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.Bundle0006
+public import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.Bundle0007
+public import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.Bundle0015
+public import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.Bundle0018
+public import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.Bundle0016
+public import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.Bundle0024
 
 @[expose] public section
 
@@ -112,7 +111,7 @@ theorem weight_gauge_sub_main : ∀ (C : Type) [Field C] (V : VF C) (d : ℕ) [N
   intro C _ V d _ I J _ _ X hA hl g a i hi hid S t ht N M e v' Φt he hv hv' hT hZ
   haveI := X.charZero
   have hl0 : V.l ≠ 0 := V.l_prime.ne_zero
-  have hpull := GlobalTheory.T.hPullW_upG_twoGroupEmbedding_eq_rename C I g (Fin N) (Fin M) e v'
+  have hpull := _root_.GlobalTheory.MainTerm.hPullW_upG_toW C I g (Fin N) (Fin M) e v'
   have key := GlobalTheory.weight_of_weight_pderiv C V.v V.l V.l_prime V.v_l hl i (Fin N) (Fin M)
     (X.hM g a i e v' - mainM V i (fun b c => ∑ κ : J g, ∑ k : I (1 - g), Φt c κ * X.pair g κ k * v' b k))
     hi.pos ?_ ?_
@@ -127,7 +126,7 @@ theorem weight_gauge_sub_main : ∀ (C : Type) [Field C] (V : VF C) (d : ℕ) [N
   · intro α hα
     by_contra hn
     push Not at hn
-    exact hα (GlobalTheory.T.coeff_leafGauge_sub_mainTerm_eq_zero_on_first_axis C V d I J X g a i _ _ e v' _ α hn)
+    exact hα (_root_.GlobalTheory.MainTerm.Axis.coeff_hM_sub_mainM_eq_zero C V d I J X g a i _ _ e v' _ α hn)
   · intro b
     set ρ : Fin N ⊕ Fin M → ℝ := Sum.elim (fun _ => 1 / ((V.l : ℝ) ^ 2 - 1) + 3 / (8 * (V.l : ℝ) ^ i))
       (fun _ => 1 / ((V.l : ℝ) - 1)) with hρ
@@ -181,7 +180,7 @@ theorem weight_gauge_sub_main : ∀ (C : Type) [Field C] (V : VF C) (d : ℕ) [N
           exact hinl _ (hT x)
         · simp only [hpull.2]
           refine wtNonneg_rename V.v Function.Embedding.inr ρ (1 / ((V.l : ℝ) - 1)) (fun _ => rfl) _ fun μ => ?_
-          have := GlobalTheory.T.linearSubst_coordinate_weight_nonneg_radius C V d _ _ (X.G (1 - g)) (S _) (t _) (ht _) M v' hv x μ
+          have := _root_.GlobalTheory.MainTerm.linPull_coord_weight_nonneg C V d _ _ (X.G (1 - g)) (S _) (t _) (ht _) M v' hv x μ
           unfold VF.Ge at this
           rw [mul_one_div]
           exact this

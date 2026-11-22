@@ -2,10 +2,10 @@ module
 
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.IntegralDeterminants.PlaceConjAlt
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.IntegralDeterminants.WeightBounds
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AutomorphicFormsFiniteGL
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.WeightEx
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IsSubquotientIff
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SpehShapeIffOfDiscreteSpectrum
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1678
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0520
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0562
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0697
 
 @[expose] public section
 

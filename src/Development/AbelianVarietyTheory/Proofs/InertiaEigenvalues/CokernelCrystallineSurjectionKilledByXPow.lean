@@ -1,18 +1,18 @@
 module
 
 public import Mathlib
-public import Formalism.SharpRestriction.LevelLetterCocycles.UsedLocalConclusion
-public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.NotFullBot
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.WachLatticeHeightsFromHodgeJumpsStatement
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.WachNCokernelKilledByPowerStatement
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.NBasisLoc
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.WachInclusionXQFrobenius
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.OneNotMemFilOne
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.RingsCyclotomic
+public import Formalism.SharpRestriction.LevelLetterCocycles.Bundle0006
+public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0004
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.WachLatticeHeightsFromHodgeJumps
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0539
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0327
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0315
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0518
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0285
 public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ValOfPowAssociated
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.XXPowMemOfQQPowMulMemMapPhi
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.PhiFree
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.OfShortExact
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0244
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0224
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0381
 
 @[expose] public section
 
@@ -437,7 +437,7 @@ theorem GlobalTheory.NL.CokerKill.X_pow_kills_coker : ∀ (D : Formalism.BasicNo
     (fun hl hs => Dvd.intro_left _ (GlobalTheory.TorsionCard.card_torsion_mul_finrank (D.loc l) K LL
       ((HW l).W K s LL hG) hl (hs ▸ hG.2.2.1)))
     c1 c2 (GlobalTheory.NL.N_basis D HW F l K s LL hG T₂ c2) M h
-    (GlobalTheory.T.wachLattice_heights_from_hodgeJumps D HW F Cm l K s LL hG T₁ M h c1)
-    (fun hJ => GlobalTheory.T.wachLattice_heights_from_hodgeJumps D HW F Cm l K s LL hG T₂ M h c2 fun τ i hτ a ha =>
+    (_root_.GlobalTheory.NL.Heights.heights_from_jumps D HW F Cm l K s LL hG T₁ M h c1)
+    (fun hJ => _root_.GlobalTheory.NL.Heights.heights_from_jumps D HW F Cm l K s LL hG T₂ M h c2 fun τ i hτ a ha =>
       hJ τ i hτ a ((hj τ a).2 (Or.inr ha)))
     (GlobalTheory.T.wachN_cokernel_killed_by_power D HW F Cm l K s LL hG T₀ T₁ T₂ ι π c0 c1 c2 hses)

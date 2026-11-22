@@ -1,26 +1,27 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.OnePlaceKF
-public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.CellDataExists
+public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.Bundle0010
+public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.Bundle0011
 public import Development.AbelianVarietyTheory.Definitions.Jets.SumIoPr
 public import Formalism.SharpRestriction.CuspSpanNormBounds.LeadMinorK
 public import Formalism.HermitianCurvature.HermitianCurvatureProofs.OrbitalIntegralAeConvergenceContinuity
 public import Formalism.HermitianCurvature.HermitianCurvatureProofs.SettingConstruction
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.UnipotentUpperFacts
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.BigCellHermitian
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0062
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0037
 public import Formalism.HermitianCurvature.HermitianCurvatureProofs.ContinuousMulMt
-public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.DiscreteSeriesUnitarySmoothBasic
-public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.HaarEqSmul
-public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.IsHaarOnIffGroupsUnitaryUnipotent
-public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.BesselGapExistsFunctional
-public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.BesselDatumBothSidesAreSides
-public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.BesselSettingUniformConstant
+public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0069
+public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0056
+public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0049
+public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0101
+public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0131
+public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0142
 public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.BesselTorusElementProperties
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.LebesgueRootCoordinatesMapBesselTorusConj
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.BesselFunctionEqScalarSqNormalisedBesselTorusCon
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsIsType
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.HaarLieIsHaarOnUnipotentRadicalStatement
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0337
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0342
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0336
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0250
+public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.Bundle0006
 
 @[expose] public section
 
@@ -262,7 +263,7 @@ theorem lintegral_hsNormSq_amp : Hyps → AmpKF → CellConv → ∀ (k r : ℕ)
   have hn : 0 < ‖α‖ := norm_pos_iff.2 hα
   have hGB := (HaarNotions.isHaarOn_iff_groups k r μG).1.1 hG
   have hNB : B.IsHaarOn (Nset k r) L.μN := (HaarNotions.isHaarOn_iff_groups k r L.μN).2.1.1
-    (GlobalTheory.T.haarLie_isHaarOn_unipotentRadical k r L.κN (pos_iff_ne_zero.2 hκ0) hκt.lt_top)
+    (_root_.GlobalTheory.haarLie_isHaarOn_Nset k r L.κN (pos_iff_ne_zero.2 hκ0) hκt.lt_top)
   have hW := ((HaarNotions.isHaarOn_iff_groups k r L.μW).2.2 L.z L.hz.1 L.hz.2 hk1).1 L.hμW.1
   have hW' := ((HaarNotions.isHaarOn_iff_groups k r L.μW').2.2 L.z' L.hz'.1 L.hz'.2 hk1).1 L.hμW'.1
   have hδ : 0 < ‖α‖ ^ B.kap k r := by positivity

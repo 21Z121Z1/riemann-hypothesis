@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Foundations.ShCocOn
-public import Development.AbelianVarietyTheory.Definitions.Foundations.IsLocallyConstantCycMod
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ShiftedCocycleLimitIntegralStatement
+public import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0001
+public import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0020
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0372
 
 @[expose] public section
 

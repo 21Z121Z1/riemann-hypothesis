@@ -4,15 +4,14 @@ public import Mathlib
 public import Formalism.LocalRingCardinality.RhoDetPrimeEqMuTildeMulChiPow
 public import Formalism.LocalRingCardinality.DataParams₂
 public import Formalism.LocalRingCardinality.DataNChoice
-public import Formalism.LocalRingCardinality.DataErr
-public import Formalism.LocalRingCardinality.DataKap
+public import Formalism.LocalRingCardinality.Bundle0004
 public import Formalism.SharpRestriction.ParamsHeightRankConstant
 public import Formalism.SharpRestriction.Divisibility.WeightAlgebra
 public import Formalism.SharpRestriction.Divisibility.ModuliIntegralCharts
 public import Formalism.SharpRestriction.LevelLetterCocycles.IntegralHeckeForms
-public import Formalism.SharpRestriction.LevelLetterCocycles.TwGood
+public import Formalism.SharpRestriction.LevelLetterCocycles.Bundle0018
 public import Formalism.SharpRestriction.GrowthBounds.WeilJacquetShalikaLaw
-public import Formalism.SharpRestriction.LevelLetterCocycles.LocsCoverTw
+public import Formalism.SharpRestriction.LevelLetterCocycles.Bundle0004
 
 @[expose] public section
 

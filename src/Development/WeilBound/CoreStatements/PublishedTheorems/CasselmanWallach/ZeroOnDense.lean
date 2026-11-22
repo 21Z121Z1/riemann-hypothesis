@@ -1,7 +1,7 @@
 module
 
 public import Development.WeilBound.CoreStatements.PublishedTheorems.CasselmanWallach.SmoothSeminormAndSobolevBounds
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.CasselmanWallachOfHyp
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0205
 
 @[expose] public section
 

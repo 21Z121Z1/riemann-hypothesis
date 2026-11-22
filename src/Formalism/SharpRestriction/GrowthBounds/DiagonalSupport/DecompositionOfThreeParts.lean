@@ -1,9 +1,9 @@
 module
 
 public import Formalism.SharpRestriction.GrowthBounds.DiagonalSupport.TwiceValuationFactorialProduct
-public import Formalism.SharpRestriction.GrowthBounds.DualFockLinear.ValLeOfVK
-public import Formalism.SharpRestriction.GrowthBounds.DualFockLinear.FockRLinDual
-public import Formalism.SharpRestriction.GrowthBounds.GLWeightTheory
+public import Formalism.SharpRestriction.GrowthBounds.DualFockLinear.Bundle0013
+public import Formalism.SharpRestriction.GrowthBounds.DualFockLinear.Bundle0007
+public import Formalism.SharpRestriction.GrowthBounds.Bundle0003
 
 @[expose] public section
 

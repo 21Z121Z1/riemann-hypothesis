@@ -1,8 +1,8 @@
 module
 
-public import Formalism.LocalToGlobal.IndefiniteReal.RealSeparation.NormalFrame0
+public import Formalism.LocalToGlobal.IndefiniteReal.RealSeparation.Bundle0002
 public import Formalism.LocalToGlobal.IndefiniteReal.LinksDefs
-public import Formalism.LocalRingCardinality.IntCastDvdOfDvdIntegers
+public import Formalism.LocalRingCardinality.Bundle0001
 
 @[expose] public section
 

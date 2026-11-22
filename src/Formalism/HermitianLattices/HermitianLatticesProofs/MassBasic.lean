@@ -1,10 +1,10 @@
 module
 
 public import Mathlib
-public import Formalism.HermitianLattices.StatementMass
+public import Formalism.HermitianLattices.Bundle0003
 public import Formalism.ThetaLiftIndependence.ThetaOrbitSums.ClassRepsDefinite
 public import Formalism.ThetaLiftIndependence.ThetaOrbitSums.LatLiftIndep
-public import Formalism.HermitianLattices.HermitianLatticesProofs.GenusBasic
+public import Formalism.HermitianLattices.HermitianLatticesProofs.Bundle0002
 
 @[expose] public section
 

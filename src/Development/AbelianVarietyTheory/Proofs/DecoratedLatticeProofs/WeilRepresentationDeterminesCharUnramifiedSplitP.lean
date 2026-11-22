@@ -1,12 +1,12 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.SmallPair
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsSplitPlaceHalfHeisenbergInvariantForm
-public import Formalism.LocalToGlobal.IndefiniteReal.ExistsGADet
+public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.Bundle0020
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0912
+public import Formalism.LocalToGlobal.IndefiniteReal.Bundle0015
 public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.OmSplitHalves
-public import Formalism.LocalToGlobal.BesselHermitianTheta.LemmasWeil
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsNeZeroAtZero
+public import Formalism.LocalToGlobal.BesselHermitianTheta.Bundle0003
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0224
 
 @[expose] public section
 

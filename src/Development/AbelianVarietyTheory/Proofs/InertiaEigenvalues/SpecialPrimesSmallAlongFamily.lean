@@ -1,14 +1,13 @@
 module
 
 public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.BoundAtTwoAndThreeForFamily
-public import Formalism.SharpRestriction.GlobalTheoremInputs
-public import Development.AutomorphicArithmetic.CyclotomicBounds.SmallFacts
-public import Formalism.SharpRestriction.LevelLetterCocycles.JointConditionsZpowers.JointConditionTameBound
-public import Formalism.SharpRestriction.LevelLetterCocycles.JointConditionsZpowers.CrysOnCond
+public import Formalism.SharpRestriction.Bundle0002
+public import Development.AutomorphicArithmetic.CyclotomicBounds.Bundle0001
+public import Formalism.SharpRestriction.LevelLetterCocycles.JointConditionsZpowers.Bundle0005
 public import Formalism.SharpRestriction.LevelLetterCocycles.WachCoordinates
 public import Formalism.SharpRestriction.LevelLetterCocycles.RamifiedCoefficientChains
 public import Formalism.SharpRestriction.LevelLetterCocycles.ArcLiftingSetup
-public import Development.AbelianVarietyTheory.BlockTheory.NonGaloisCusps.BaseSizes
+public import Development.AbelianVarietyTheory.BlockTheory.NonGaloisCusps.Bundle0007
 public import Formalism.SharpRestriction.LevelLetterCocycles.NEqRZeroMulXPow
 
 @[expose] public section

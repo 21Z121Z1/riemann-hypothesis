@@ -5,60 +5,58 @@ public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForm
 public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.HarishChandraModulesOn
 public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.AdmissibleDiscreteSeriesOfHasParam
 public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.NonzeroPlacesOverPrimesLifts
-public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.ExistsIsBIffCoreB
+public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.Bundle0031
 public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.WeilRepresentationUnitaryPair
 public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.DsExistsOfDiscreteSeriesExists
-public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.HarishChandraFinite
-public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.ExistsNormLeHeightPow
+public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.Bundle0004
+public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.Bundle0007
 public import Formalism.LocalToGlobal.IndefiniteReal.LinksStage
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FinRepApply
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0831
 public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.IsPrincipalMapOfAlgHom
 public import Development.AbelianVarietyTheory.PublishedTheorems.PublishedFoundations.NonemptyAlgHomOfIsRayOfDvd
 public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.ExistsUniqueHcharOfFiniteOrder
 public import Development.AbelianVarietyTheory.PublishedTheorems.WeberRayClassFields.WeberRayFieldSt
 public import Formalism.SharpRestriction.GlobalSchurBounds.ThickPlacesCorollaryOfAnyTranslate
-public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.StrictHenselianAcyclic
-public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.PositionMv
-public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.ThetaChr
+public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.Bundle0044
+public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.Bundle0043
 public import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.ColumnCompatibleSelection
 public import Formalism.LocalToGlobal.SiegelLatticeTheory.FlagStabilizerTensors.STiesR
-public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.SameDegreeZeroFormsSelf
+public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.Bundle0016
 public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.DivisionPairOfAdelicFormsFaceColumnsData
-public import Formalism.LocalToGlobal.CarriedPlMap
-public import Formalism.LocalToGlobal.SelSide
+public import Formalism.LocalToGlobal.Bundle0002
+public import Formalism.LocalToGlobal.Bundle0001
 public import Formalism.LocalToGlobal.IndefiniteReal.DoubleCosetOperators.TwistedCharacterValue
 public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.TwArgs
-public import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.DivRows3GIff
-public import Formalism.LocalToGlobal.Divisibility.ColPins
-public import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.AllRows
-public import Development.AutomorphicArithmetic.CharacterBoxes.ExS
-public import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.CountsIrreducibilityConstants
+public import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.Bundle0008
+public import Formalism.LocalToGlobal.Divisibility.Bundle0007
+public import Development.AutomorphicArithmetic.CharacterBoxes.Bundle0006
+public import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.Bundle0007
 public import Formalism.SharpRestriction.GlobalSchurBounds.LinkTied
 public import Formalism.SharpRestriction.GlobalSchurBounds.MainSup
 public import Formalism.LocalToGlobal.GroupLattices.AdmissibleAtGeneratorPlaces
 public import Formalism.LocalToGlobal.SiegelLatticeTheory.FlagStabilizerTensors.RootLatticeThresholds.WuDecayAll
-public import Formalism.LocalToGlobal.SiegelLatticeTheory.FlagStabilizerTensors.RowsPos
-public import Formalism.LocalToGlobal.GlobalTheory.GL5.PNamed
+public import Formalism.LocalToGlobal.SiegelLatticeTheory.FlagStabilizerTensors.Bundle0005
+public import Formalism.LocalToGlobal.GlobalTheory.GL5.Bundle0001
 public import Formalism.LocalToGlobal.GlobalTheory.GL5.DiscreteSeriesOfFormalDegree
-public import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.EventuallyAllScaleContextsAndOfBoth
-public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.NotGeoClFalse
+public import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.Bundle0006
 public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.UpLReStage
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsHostDatumOfPlaceData
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0364
 public import Formalism.LocalToGlobal.UnitaryNorms.DatumS
-public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.HostPins
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.HostPlacesRayField
+public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.Bundle0023
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0592
 public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.StandardLatticesDiagonal
 public import Formalism.LocalToGlobal.IndefiniteReal.LinksLemmas
 public import Formalism.LocalToGlobal.IndefiniteReal.IsFDiagIffDiagonal
 public import Formalism.LocalToGlobal.IndefiniteReal.FrameExistence.FramesExistOfDiagonalTypePlaces
 public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.CmQuadraticFormEqAlternatingForm
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsRowsOfHeqData
-public import Formalism.LocalToGlobal.IndefiniteReal.NonzeroIndexPlaceIndepConstants
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ColumnParametersInstanceDataStatement
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsTwExtend
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.RowPartFormsAndNonzeroVectorsEveryPlaceStatement
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.LinksAnalyticHypothesesOfWeilRepHarishChandra
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.GoodGenericCharacterOfSeriesTypes
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0602
+public import Formalism.LocalToGlobal.IndefiniteReal.Bundle0031
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0706
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0238
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0402
+public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.StableIffCarrierEq
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0420
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0239
 meta import Lean
 
 @[expose] public section
@@ -265,7 +263,7 @@ theorem selection_group_ambient_tie (hC : GlobalTheory.Published.DiscreteSeriesC
   obtain ⟨κ, sE, hκ, hsE⟩ := exists_places t.r.z.R.toRealDat t.r.z.F.lv2 X Gd ι g c
     (twAt (w.st Z).toD7.what₂.embLL (famT t).A.v0) t.r.z.pins.char.base.models.HE hc hev
   obtain ⟨sEE, hsEE⟩ := see_cast (ex := ex) (t := t) X hK Gd pw _ _ wU bij eNu hSp sE
-  obtain ⟨a, haDc, haSp, haZsc, haSEE, haWU, haENu, -⟩ := GlobalTheory.T.column_params_instance_data hC K B f T w Z Wt L hT Gi Gl Kc Yd cX ex t hA hM hG hp
+  obtain ⟨a, haDc, haSp, haZsc, haSEE, haWU, haENu, -⟩ := _root_.GlobalTheory.Mem.R3.twArgs_exists hC K B f T w Z Wt L hT Gi Gl Kc Yd cX ex t hA hM hG hp
     Dc Sp₀ Zsc₀ C₀ Sp (zscRaw (famT t) t.r.z.F L' Del h0 c') sEE
   obtain ⟨x, hx⟩ : ∃ x : R3.TwIn ex, HEq a.x x := ⟨a.x, HEq.rfl⟩
   have hW : HEq x.C.wU C₀.wU := by

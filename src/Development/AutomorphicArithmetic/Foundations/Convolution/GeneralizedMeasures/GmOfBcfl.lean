@@ -2,7 +2,7 @@ module
 
 public import Development.AutomorphicArithmetic.Foundations.Convolution.GeneralizedMeasures.LinearMapCompEqOnSmulOfEq
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.TraceFormula.OrbitalIntegrals.LocUnit
-public import Development.AutomorphicArithmetic.Foundations.Convolution.IntegrableConvolution.UnitSplit
+public import Development.AutomorphicArithmetic.Foundations.Convolution.IntegrableConvolution.Bundle0010
 
 @[expose] public section
 

@@ -1,10 +1,10 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.IsNormalFormStabilizerMeasure
-public import Formalism.FormalDegreeBessel.FinalG
+public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.Bundle0010
+public import Formalism.FormalDegreeBessel.Bundle0002
 public import Formalism.FlagUnipotentLattices.MinkowskiFactorialBounds.MinkowskiNumberDvdFactorial
-public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.TailIntegrals.UHMulInv
+public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.TailIntegrals.Bundle0008
 
 @[expose] public section
 

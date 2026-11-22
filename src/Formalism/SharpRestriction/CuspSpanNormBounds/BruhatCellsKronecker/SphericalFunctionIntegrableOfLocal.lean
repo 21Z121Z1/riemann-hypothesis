@@ -1,7 +1,7 @@
 module
 
-public import Formalism.SharpRestriction.CuspSpanNormBounds.PlaceDegreeData
-public import Formalism.FlagUnipotentLattices.HalfDifferenceL1Bound
+public import Formalism.SharpRestriction.CuspSpanNormBounds.Bundle0006
+public import Formalism.FlagUnipotentLattices.Bundle0004
 public import Formalism.FlagUnipotentLattices.MinkowskiFactorialBounds.ExtensionInterSubspace
 
 @[expose] public section

@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Proofs.GlobalProofs.FiniteDimensionalOfSlices
+public import Development.AutomorphicSpectrum.Proofs.GlobalProofs.Bundle0050
 
 @[expose] public section
 

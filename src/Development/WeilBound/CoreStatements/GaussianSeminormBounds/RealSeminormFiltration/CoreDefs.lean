@@ -1,11 +1,10 @@
 module
 
 public import Development.WeilBound.CoreStatements.GaussianSeminormBounds.RealSeminormFiltration.TensorIrr
-public import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.FockHarmSplit
-public import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.FockJointMult
-public import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.FockOneDeg
-public import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.FockWtDeg
-public import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.FockRaiseLow
+public import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.Bundle0007
+public import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.Bundle0019
+public import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.Bundle0013
+public import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.Bundle0005
 
 @[expose] public section
 

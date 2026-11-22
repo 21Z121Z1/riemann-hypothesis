@@ -1,8 +1,8 @@
 module
 
-public import Formalism.LocalToGlobal.IndefiniteReal.FinitePlaces.PlaceDualBSt
-public import Formalism.LocalToGlobal.IndefiniteReal.FinitePlaces.ExistsNatSmulSingle
-public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.ImportsFurtherLast
+public import Formalism.LocalToGlobal.IndefiniteReal.FinitePlaces.Bundle0003
+public import Formalism.LocalToGlobal.IndefiniteReal.FinitePlaces.Bundle0015
+public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0077
 
 @[expose] public section
 

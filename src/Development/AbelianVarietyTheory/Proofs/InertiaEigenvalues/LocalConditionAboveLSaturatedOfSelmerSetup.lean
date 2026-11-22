@@ -1,12 +1,11 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.H1MapSubgroup
+public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0013
 public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.PoitouTateNineTermTransgressionZeroApply
-public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.CohDimTwoLocalOfLocalFiniteness
-public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.ContinuousCycMod
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.IsIntegralOfNormLeOne
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.RestrictionH1MemBlochKato
+public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.Bundle0002
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0188
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0190
 
 @[expose] public section
 

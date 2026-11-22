@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import GroundTheory.AutomorphicForms.HermitianValues
-public import GroundTheory.AutomorphicForms.HermitianClassification
+public import GroundTheory.AutomorphicForms.Bundle0016
 
 @[expose] public section
 

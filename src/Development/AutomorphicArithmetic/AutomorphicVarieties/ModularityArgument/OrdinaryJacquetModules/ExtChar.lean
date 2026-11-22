@@ -1,8 +1,8 @@
 module
 
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.OrdinaryJacquetModules.CoreOrdAlt
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.LocalArtinCompNormCompat
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.LocalArtinExistsHolds
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0241
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0731
 public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.RestrictsExists
 
 @[expose] public section

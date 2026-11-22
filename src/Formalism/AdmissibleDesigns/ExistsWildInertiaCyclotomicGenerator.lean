@@ -1,11 +1,10 @@
 module
 
-public import Formalism.AdmissibleDesigns.NonemptyPl
+public import Formalism.AdmissibleDesigns.Bundle0002
 public import Formalism.SharpRestriction.LevelLetterCocycles.ExistsInertiaCharpolyFactorOfTameType
-public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.FiniteExtensionTopology.AddPreservesExpCongruence
-public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.FiniteExtensionTopology.ExpCongruenceExtendsToSum
+public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.FiniteExtensionTopology.Bundle0001
 public import Formalism.AdicCompletionExports.AdicCompleteRingEquiv.IsAdicCompleteOfRingEquiv
-public import Development.AutomorphicArithmetic.CyclotomicBounds.FactorizationConductorLeLocalLevel
+public import Development.AutomorphicArithmetic.CyclotomicBounds.Bundle0001
 
 @[expose] public section
 

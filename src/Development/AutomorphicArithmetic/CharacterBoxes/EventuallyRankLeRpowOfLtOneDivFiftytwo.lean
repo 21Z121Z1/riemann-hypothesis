@@ -1,6 +1,6 @@
 module
 
-public import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.PairRowIffQdRows
+public import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.Bundle0002
 
 @[expose] public section
 

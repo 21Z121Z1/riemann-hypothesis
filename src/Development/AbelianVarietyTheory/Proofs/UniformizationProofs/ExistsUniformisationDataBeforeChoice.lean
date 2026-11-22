@@ -4,23 +4,23 @@ public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.AbelianSchemeLaws.FirstCohomologyVanishesSpecOfIsLocalRing
 public import Development.AbelianVarietyTheory.Definitions.Uniformization.PointEqOfSubsingleton
 public import Development.AbelianVarietyTheory.Definitions.Uniformization.ExistsInKNeOne
-public import Development.AbelianVarietyTheory.Definitions.Uniformization.WCompat
+public import Development.AbelianVarietyTheory.Definitions.Uniformization.Bundle0001
 public import Development.AbelianVarietyTheory.Definitions.Uniformization.ExistsUniqueTorusCompat
 public import Development.AbelianVarietyTheory.Definitions.Uniformization.IsCPPullback
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.CubeVal
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.UnifUniqSt
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.IsNsmul
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.QkToAkU
-public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ConnectedSpaceSpecOfIsLocalRing
-public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ConnectedSpaceOfSection
-public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.IsCPMapCompCancel
-public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.EvenCubicUnitEqOne
-public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.NonemptyMumfordTorusQuotientTowerStatement
-public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.NonemptyAlgebraisationAbelianQuotientTowerStatement
-public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ExistsWeightPoints
-public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.TorusCoordinatesCompatOfTorusCompatStatement
-public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ExistsGtCoordOfTorusQuotient
-public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.KTrivTorusQuotientTowerAlgebraisationStatement
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.Bundle0005
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.Bundle0006
+public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.Bundle0078
+public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.Bundle0023
+public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.Bundle0042
+public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.Bundle0038
+public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.NonemptyMumfordTorusQuotientTower
+public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.Bundle0125
+public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.Bundle0134
+public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.Bundle0099
+public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.Bundle0093
+public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.Bundle0124
 public import Development.AbelianVarietyTheory.Proofs.HomogeneousIdeals.HomBaseChangeBijectiveOfLeNilradical
 
 @[expose] public section
@@ -284,9 +284,9 @@ end
 
 theorem exists_preU : (∀ (k : Type) [Field k] [IsAlgClosed k] (B : Over (Sp k)) [GrpObj B] (g n : ℕ), IsAbelianScheme B → SmoothOfRelativeDimension g B.hom → (n : k) ≠ 0 → Nat.card {x : (𝟙_ (Over (Sp k)) ⟶ B) // x ^ n = 1} = n ^ (2 * g)) → Laws → AllSet fun {V} _ _ _ {A} {G} _ _ s => ∃ (D : DegPre V) (U : PreU (IsLocalRing.maximalIdeal V) D A G), U.P = s.P ∧ U.gen = s.gen := by
   intro hc L V _ _ _ A G _ _ s
-  obtain ⟨t⟩ := GlobalTheory.T.nonempty_mumfordTorusQuotientTower V A G s
-  obtain ⟨a⟩ := GlobalTheory.T.nonempty_algebraisation_abelian_quotient_tower hc L V A G s t
-  have hK := GlobalTheory.T.kTriv_torusQuotientTower_algebraisation hc L V A G s t a
+  obtain ⟨t⟩ := _root_.GlobalTheory.UU.TowerEx.nonempty_tower V A G s
+  obtain ⟨a⟩ := _root_.GlobalTheory.AlgTower.nonempty_alg hc L V A G s t
+  have hK := _root_.GlobalTheory.UU.Principal.kTriv_alg hc L V A G s t a
   obtain ⟨c, hadd, hrep⟩ := exists_weightPoints L V A G s t a hK
   obtain ⟨g, hg⟩ := AbelianDim.exists_relDim V a.B a.isAb
   have hsym : Sym a.B a.M.L.L := fun _ => ⟨⊤, trivial, by
@@ -314,7 +314,7 @@ theorem exists_preU : (∀ (k : Type) [Field k] [IsAlgClosed k] (B : Over (Sp k)
   exact ⟨D,
     { semi := s.semi, gen := s.gen, gen_hom := s.gen_hom, P := s.P, wA := s.wA, wA_gen := s.wA_gen, gt := gt,
       gt_q := gq
-      gt_t := fun e => GlobalTheory.T.torusCoordinates_compat_of_torus_compat L.globalFns V _ D e G (gt e) (gt (e + 1)) (gq e) (by rw [hi, hi]; exact t.tor e)
+      gt_t := fun e => _root_.GlobalTheory.gtCoord_compat_of_torusCompat L.globalFns V _ D e G (gt e) (gt (e + 1)) (gq e) (by rw [hi, hi]; exact t.tor e)
       w := w, w_gen := w₁, w_vals := w₂, w_compat := w₃ }, rfl, rfl⟩
 
 end GlobalTheory.PreUnif

@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import ReciprocityTheory.ResidueCardinality.ArtinOntoB
-public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LatticeIndices.StRedOfSplit
+public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LatticeIndices.Bundle0008
 
 @[expose] public section
 

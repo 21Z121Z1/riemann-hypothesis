@@ -3,7 +3,7 @@ module
 public import Mathlib
 public import Formalism.SharpRestriction.LevelLetterCocycles.DataNLoc
 public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.WachDeltaInvariantCoboundaries
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsUniqueSum
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0235
 
 @[expose] public section
 

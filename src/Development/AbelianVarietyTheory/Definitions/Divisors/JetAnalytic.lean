@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Divisors.TorsTransport
-public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.HilbertKodairaSpencer
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0014
+public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.Bundle0023
 public import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.OmegaFactorization
 
 @[expose] public section

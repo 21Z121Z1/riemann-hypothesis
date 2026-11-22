@@ -2,10 +2,10 @@ module
 
 public import Mathlib
 public import Development.WeilBound.RepresentationTheoryGL.RegularisedSiegelWeil.ThetaIdempotents.HeckeEta
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.EisensteinCovariance
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ThetaSumInvariantWeylInvolution
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ContinuousHalfTr
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.BlockMatrixInjective
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0649
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0654
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0625
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0655
 
 @[expose] public section
 
@@ -182,7 +182,7 @@ theorem poisson_step {ψ : AddChar (AF D.host.F) ℂ} (hψ : IsCharAF D.host.F �
   obtain ⟨i1, i2, i3, i4, i5, K, hK, hKc⟩ := lattice_Mx D ρ p
   haveI : BorelSpace (Mx D ρ p) := ⟨rfl⟩
   have hT : IsHermND (D.sp.cm.sig) b₀.1 := ⟨fun i j => congrFun (congrFun b₀.2 i) j, hb⟩
-  obtain ⟨h1, h2⟩ := GlobalTheory.T.rationalAdelicMatrices_self_annihilator D ρ p b₀.1 hT ψ hψ
+  obtain ⟨h1, h2⟩ := _root_.GlobalTheory.GramAnnih.ratMx_annihilator D ρ p b₀.1 hT ψ hψ
   have hs := ThetaPoisson.pairing_symm (n := p) hT ψ
   have hμ := m.hμ
   haveI := hμ.1

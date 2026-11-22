@@ -1,7 +1,6 @@
 module
 
-public import Formalism.LocalToGlobal.Divisibility.JetBounds.Statement
-public import Formalism.LocalToGlobal.Divisibility.JetBounds.MinorProductsLattice
+public import Formalism.LocalToGlobal.Divisibility.JetBounds.Bundle0001
 public import Formalism.GaussJetBounds.FinalB
 public import Formalism.LocalToGlobal.ExponentGrids.IntegerShiftClosedExponent
 

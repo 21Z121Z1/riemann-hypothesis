@@ -1,24 +1,24 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.KeyFormula.IsSquareDeterminantComparison
+public import Development.AbelianVarietyTheory.Definitions.KeyFormula.Bundle0001
 public import Development.AbelianVarietyTheory.Definitions.AbelianSchemeLaws.FirstCohomologyVanishesSpecOfIsLocalRing
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.ValCalc
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.SymplecticGenerators.IsPluriharmonicSiegel
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.ThetaUnifAV
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.MapsAtLeA
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.Bundle0003
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.Bundle0004
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.GlobalSectionsRankAlgClosed
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.SymplecticGenerators.SymplecticCharacters.OneEqSpTranslZero
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.OneArc
-public import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.ExistsCompleteDiscreteValuationRingWithResidues
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.Bundle0007
+public import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.Bundle0004
 public import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.MemNonzeroLocusVia
-public import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.DualNumberRingHomExt
-public import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.ExistsKeyPBRing
-public import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.PwIsoIsGen
+public import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.Bundle0018
+public import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.Bundle0035
+public import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.Bundle0022
 public import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.BasisPowerSectionsLocalBaseChange
 public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsCompletionPointClosedPointMemOfSmooth
-public import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.TransversalZerosLiftOfIsAdicCompleteStatement
-public import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.ExistsInvariantOfSplitZerosTorsionStatement
+public import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.Bundle0029
+public import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.Bundle0052
 
 @[expose] public section
 
@@ -371,7 +371,7 @@ theorem exists_kaVal_extension : Out.Laws → ∀ (O : Type) [CommRing O] [IsDom
       exact (Category.id_comp _).trans (Category.comp_id _).symm
   obtain ⟨ch₂, E₂⟩ := etZ_descend hg₃ (s := s₂) z H₃
     (fun i => sec₃ n _ _ _ (hs₂ i) (sec₁ n _ _ _ (hs' (i.cast hg₂)) (hs (i.cast hg₃)))) hz E
-  obtain ⟨z', ch', E'⟩ := GlobalTheory.T.exists_transversal_zeros_of_residue_zeros_of_isAdicComplete O' x' y φ₂ w₂ n d hg₂ s' s₂ z ch₂ H₂ hs₂ E₂
+  obtain ⟨z', ch', E'⟩ := _root_.GlobalTheory.KeyKa.etZ_lift_of_isAdicComplete O' x' y φ₂ w₂ n d hg₂ s' s₂ z ch₂ H₂ hs₂ E₂
   haveI := epi_spMap σ
   have htor : ∀ b, q₂ b ≫ (Out.mulA x.P.A (degProd x.P.g n l l')).left =
       spMap (IsLocalRing.residue O') ≫ spMap j ≫ eSec x.P.A := fun b => by
@@ -395,7 +395,7 @@ theorem exists_kaVal_extension : Out.Laws → ∀ (O : Type) [CommRing O] [IsDom
     refine e.injective (Subtype.ext (Over.OverMorphism.ext ?_))
     rw [← hq₂ b, ← hq₂ b', e₅])
   have hcast : degProd x'.P.g n l l' ^ (2 * x'.P.g) = degProd x.P.g n l l' ^ (2 * x.P.g) := by rw [hg']
-  obtain ⟨u, hu⟩ := GlobalTheory.T.exists_invariant_of_split_zeros_torsion laws O' x' n l l' al d s' z' ch' (fun b => ξ (b.cast hcast)) (hg'.symm ▸ hadm)
+  obtain ⟨u, hu⟩ := _root_.GlobalTheory.exists_kaVal_of_split laws O' x' n l l' al d s' z' ch' (fun b => ξ (b.cast hcast)) (hg'.symm ▸ hadm)
     (by
       have := hN.map j
       rwa [map_natCast, ← hg'] at this) E' (fun b => (congrArg (fun g => _ ^ degProd g n l l') hg').trans (hξ _))

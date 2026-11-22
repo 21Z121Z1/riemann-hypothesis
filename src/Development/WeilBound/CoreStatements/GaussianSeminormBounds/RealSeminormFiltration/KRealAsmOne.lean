@@ -1,6 +1,6 @@
 module
 
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsNontrivialLiftModule
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1219
 public import Development.WeilBound.CoreStatements.GaussianSeminormBounds.RealSeminormFiltration.CoreLM
 public import Development.WeilBound.CoreStatements.GaussianSeminormBounds.RealSeminormFiltration.Tensor
 

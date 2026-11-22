@@ -3,8 +3,8 @@ module
 public import Mathlib
 public import Development.AutomorphicArithmetic.Foundations.Convolution.TraceSplitting.NormCharSplit
 public import Development.AutomorphicArithmetic.Foundations.Convolution.TraceSplitting.FamSat
-public import Development.AutomorphicArithmetic.Foundations.Convolution.TraceSplitting.Places
-public import Development.AutomorphicArithmetic.Foundations.Convolution.NormCharacterPowers.LiftSum
+public import Development.AutomorphicArithmetic.Foundations.Convolution.TraceSplitting.Bundle0002
+public import Development.AutomorphicArithmetic.Foundations.Convolution.NormCharacterPowers.Bundle0002
 public import Development.WeilBound.CoreStatements.PublishedTheorems.JacquetShalikaRigidity.JacquetShalikaRigidity
 
 @[expose] public section

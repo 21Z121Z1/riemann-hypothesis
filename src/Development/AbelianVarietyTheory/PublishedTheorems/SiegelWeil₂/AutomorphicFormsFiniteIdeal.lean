@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Formalism.LocalToGlobal.BesselHermitianTheta.TiedSmooth
-public import Development.AbelianVarietyTheory.BlockTheory.HeightDefect.WordDerivatives
+public import Formalism.LocalToGlobal.BesselHermitianTheta.Bundle0002
+public import Development.AbelianVarietyTheory.BlockTheory.HeightDefect.Bundle0004
 
 @[expose] public section
 

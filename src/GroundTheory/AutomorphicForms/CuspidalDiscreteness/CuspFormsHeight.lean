@@ -3,7 +3,7 @@ module
 public import Mathlib
 public import GroundTheory.AutomorphicForms.CuspidalDiscreteness.CuspFormsDiff
 public import GroundTheory.AutomorphicForms.CuspidalDiscreteness.ExistsNormRconvLeSiegel
-public import GroundTheory.AutomorphicForms.NormDetDiagUnitsPosRealToUnits
+public import GroundTheory.AutomorphicForms.Bundle0022
 public import GroundTheory.AutomorphicForms.AutomorphicFormSpaces
 
 @[expose] public section

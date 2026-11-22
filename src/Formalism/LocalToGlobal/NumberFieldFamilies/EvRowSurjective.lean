@@ -1,9 +1,9 @@
 module
 
-public import Formalism.LocalToGlobal.Columns.InvariantSubspaceCoordsX
+public import Formalism.LocalToGlobal.Columns.Bundle0006
 public import Formalism.LocalToGlobal.Divisibility.HeckeCSDICommTrRep
 public import Formalism.LocalToGlobal.GroupLattices.JointServices.LevelOperatorFixesImage
-public import Formalism.LocalToGlobal.Columns.RecPerFF
+public import Formalism.LocalToGlobal.Columns.Bundle0035
 
 @[expose] public section
 

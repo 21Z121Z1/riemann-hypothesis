@@ -1,27 +1,30 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.PerRowC
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.SumPairsWeightMulClassLeMulSum
+public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.Bundle0016
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0015
 public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.FlagFrameVectorMemCommonSubspace
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.TripOfTerms
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.FrEqvEquivalence
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.InvVolPos
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.EmbeddedDatumOfTermDefiniteSpaceStatement
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsDefiniteSpaceIsometryOfAdaptedPairStatement
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsStarStableIdealAbsorbingMinorsStatement
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.UnitaryHostFieldArithmeticConditionsProofStatement
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.RowLatticeTermAdaptedNormalFormStatement
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.EquivFramesSameSecondLatticeFiberProofStatement
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.FrameClassTermCountLeCardAutStatement
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.TermDeterminedByFrameClassAndIsometryStatement
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.TermsOverRowCompatibleStatement
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsAdaptedNormalFormRelevantTermProofStatement
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.AdaptedNormalFormNormsMinorsEqLabelProofStatement
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ClsOmNonneg
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.SumFibreTwoIndexEncardBoundStatement
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.SumPairsDefiniteIsometryLeFrameClassesStatement
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.SumFrameClassWeightsLeDatumBoundStatement
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0187
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0104
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0108
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.EmbeddedDatumOfTermDefiniteSpace
+public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.FlagPairDefinitePartLattice
+public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.ChartGen
+public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.Bundle0004
+public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.Bundle0005
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0103
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0098
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0293
+public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.Bundle0014
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.RowLatticeTermAdaptedNormalForm
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0311
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0337
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.TermDeterminedByFrameClassAndIsometry
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0373
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0312
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0308
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0309
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0376
 
 @[expose] public section
 
@@ -38,7 +41,7 @@ theorem sum_le_encard_fibres {α Θ : Type} (S : Finset α) (xf yf : α → ℕ)
     (hB : ∀ a ∈ S, ∑ b ∈ S.filter (fun b => Φ b = Φ a ∧ xf b = xf a ∧ yf b = yf a), f b ≤ B₁ (xf a) * B₂ (yf a)) :
     ENNReal.ofReal (∑ a ∈ S, f a) ≤
       ∑ x ∈ R₁, ∑ y ∈ R₂, (((Tr x y).encard : ℕ∞) : ℝ≥0∞) * ENNReal.ofReal (B₁ x * B₂ y) :=
-  GlobalTheory.T.sum_fibre_two_index_encard_bound α Θ S xf yf Φ Tr f B₁ B₂ R₁ R₂ hf hR hB
+  _root_.GlobalTheory.sum_fibre_two_index_bound α Θ S xf yf Φ Tr f B₁ B₂ R₁ R₂ hf hR hB
 
 theorem sum_pairs_le_classes (D : D7) (large₂ : SizeData₂ D) (X : HidaSetting D) (Y : Full X) (u : D.what₂.Word) (hS : Std D large₂)
     (W : Submodule D.host.E (VS D).V) (HW : Formalism.HermitianLatticeCounting.S6.HermSpace D.host.E W)
@@ -48,7 +51,7 @@ theorem sum_pairs_le_classes (D : D7) (large₂ : SizeData₂ D) (X : HidaSettin
     (hη : ∀ p ∈ Sf, ∀ q ∈ Sf, h p.1 * (h p.2)⁻¹ = h q.1 * (h q.2)⁻¹) :
     ∑ p ∈ Sf, wRow D (X.Fu u) p.1.lam' * (omT p.1 * omT p.2) ≤
       (∑ b ∈ Sf.image (fun p => frCls Λ p.1), clsOm Y u Λ b) * ∑ b ∈ Sf.image (fun p => frCls Λ p.2), clsOm Y u Λ b :=
-  GlobalTheory.T.sum_pairs_definiteIsometry_le_frameClasses D large₂ X Y u hS W HW he Λ h hh Sf hSf hη
+  _root_.GlobalTheory.TypeAsm.PerRow.sum_pairs_le_classes_pf D large₂ X Y u hS W HW he Λ h hh Sf hSf hη
 
 theorem sum_classes_le (D : D7) (large₂ : SizeData₂ D) (X : HidaSetting D) (Y : Full X) (u : D.what₂.Word) (hS : Std D large₂)
     (W : Submodule D.host.E (VS D).V) (HW : Formalism.HermitianLatticeCounting.S6.HermSpace D.host.E W)
@@ -59,7 +62,7 @@ theorem sum_classes_le (D : D7) (large₂ : SizeData₂ D) (X : HidaSetting D) (
       (N t).gI (gS D) Λ = x ∧ GlobalTheory.DegAsm.datOf (F0 X u) (Ft t) W.subtype (gS D) Λ = d) :
     ∑ b ∈ A.image (frCls Λ), clsOm Y u Λ b ≤
       GlobalTheory.DegAsm.datBd D.host.E D.R.k D.R.rS (k2Del D j δ) (DbL D j δ) (NT D u) x :=
-  GlobalTheory.T.sum_frameClassWeights_le_datumBound D large₂ X Y u hS W HW he Λ j x δ d N A hne hA
+  _root_.GlobalTheory.TypeAsm.PerRow.sum_clsOm_le_datBd D large₂ X Y u hS W HW he Λ j x δ d N A hne hA
 
 theorem termData (D : D7) (large₂ : SizeData₂ D) (X : HidaSetting D) (Y : Full X) (u : D.what₂.Word) (hS : Std D large₂)
     (W : Submodule D.host.E (VS D).V) (HW : Formalism.HermitianLatticeCounting.S6.HermSpace D.host.E W)
@@ -70,16 +73,16 @@ theorem termData (D : D7) (large₂ : SizeData₂ D) (X : HidaSetting D) (Y : Fu
       GlobalTheory.DegAsm.lab (F0 X u) (Ft t) (jT t) = (fun l => star (labT t l)) ∧
       h ∈ GlobalTheory.HermLat.isomGrp HW ∧ GlobalTheory.DegAsm.IsH (F0 X u) (Ft t) W.subtype t.lin h ∧
       Module.finrank D.host.E W = D.R.k := by
-  obtain ⟨N, hA, hj, hT⟩ := GlobalTheory.T.exists_adaptedNormalForm_relevantTerm D large₂ X Y u hS t ht
-  have hterm := GlobalTheory.T.rowLattice_term_adaptedNormalForm D large₂ X Y u hS t N hA
-  obtain ⟨-, -, hDel, hDb, hlab⟩ := GlobalTheory.T.adaptedNormalForm_normsMinors_eq_label D large₂ X Y u hS t N hA
-  obtain ⟨hK, -, -, -, -, -, -, -, -, -, hfin, hg2, -⟩ := GlobalTheory.T.unitaryHostFieldArithmeticConditions D large₂ hS
+  obtain ⟨N, hA, hj, hT⟩ := _root_.GlobalTheory.TypeAsm.nfExC_holds D large₂ X Y u hS t ht
+  have hterm := _root_.GlobalTheory.TermRow.termC_holds D large₂ X Y u hS t N hA
+  obtain ⟨-, -, hDel, hDb, hlab⟩ := _root_.GlobalTheory.TypeAsm.labC D large₂ X Y u hS t N hA
+  obtain ⟨hK, -, -, -, -, -, -, -, -, -, hfin, hg2, -⟩ := _root_.GlobalTheory.TypeAsm.hostC D large₂ hS
   have hg : 1 ≤ gS D := by omega
-  obtain ⟨-, hx1, hxD, -, hdim⟩ := GlobalTheory.T.embeddedDatum_of_term_definiteSpace D.host.E (VS D).V W (HV D) HW W.subtype hK D.R.rS (F0 X u) (Ft t)
+  obtain ⟨-, hx1, hxD, -, hdim⟩ := _root_.GlobalTheory.DegAsm.isDat_datOf D.host.E (VS D).V W (HV D) HW W.subtype hK D.R.rS (F0 X u) (Ft t)
     (dI D) N (gS D) t.lam hg he hA hterm
   obtain ⟨𝔠, -, hDb1, hDel1, -⟩ := GlobalTheory.T.exists_star_stable_ideal_absorbing_minors D.host.E (VS D).V (HV D) hK D.R.rS N (gS D) t.lam hg hterm
   have hiso : t.lin ∈ GlobalTheory.HermLat.isomGrp (HV D) := fun x y => t.rep.2.2.1 x y
-  obtain ⟨h, hh, hH, -, -⟩ := GlobalTheory.T.exists_definiteSpace_isometry_of_adapted_pair D.host.E (VS D).V W (HV D) HW W.subtype hK D.R.rS (F0 X u) (Ft t) (dI D) N
+  obtain ⟨h, hh, hH, -, -⟩ := _root_.GlobalTheory.DegAsm.exists_isH D.host.E (VS D).V W (HV D) HW W.subtype hK D.R.rS (F0 X u) (Ft t) (dI D) N
     t.lin he hA hiso (fun a => GlobalTheory.TypeAsm.FibProof.Ft_e t a)
   exact ⟨N, h, hA, hterm, hj, hT, hDel, hDb, hDel1, hDb1, hx1, hxD, hlab, hh, hH, by omega⟩
 
@@ -95,9 +98,9 @@ theorem pairTrip (D : D7) (large₂ : SizeData₂ D) (X : HidaSetting D) (Y : Fu
         GlobalTheory.DegAsm.datOf (F0 X u) (Ft p.2) W.subtype (gS D) p.1.lam, h₁ * h₂⁻¹) ∈
         GlobalTheory.DegCnt.Trip HW (gS D) (GlobalTheory.DegAsm.lat0 (F0 X u) W.subtype p.1.lam) D.R.rS (N₁.gI (gS D) p.1.lam)
           (N₂.gI (gS D) p.1.lam) := by
-  obtain ⟨hK, -, -, -, -, -, -, -, -, -, -, hg2, -⟩ := GlobalTheory.T.unitaryHostFieldArithmeticConditions D large₂ hS
+  obtain ⟨hK, -, -, -, -, -, -, -, -, -, -, hg2, -⟩ := _root_.GlobalTheory.TypeAsm.hostC D large₂ hS
   have hg : 1 ≤ gS D := by omega
-  obtain ⟨hl, hl', hc⟩ := GlobalTheory.T.termsOverRow_compatible D X Y u p ⟨trivial, trivial, hp.2.2⟩
+  obtain ⟨hl, hl', hc⟩ := _root_.GlobalTheory.TypeAsm.CompatPf.compatC D X Y u p ⟨trivial, trivial, hp.2.2⟩
   refine ⟨hl, ?_⟩
   have hi₁ : p.1.lin ∈ GlobalTheory.HermLat.isomGrp (HV D) := fun x y => p.1.rep.2.2.1 x y
   have hi₂ : p.2.lin ∈ GlobalTheory.HermLat.isomGrp (HV D) := fun x y => p.2.rep.2.2.1 x y
@@ -119,7 +122,7 @@ theorem perRowC : PerRowC := by
   intro D large₂ X Y u hS W HW he Λ j' j'' δ' δ'' S hS'
   rcases S.eq_empty_or_nonempty with rfl | ⟨p₀, hp₀⟩
   · simp
-  obtain ⟨hK, -, -, -, -, -, -, -, -, -, -, hg2, -⟩ := GlobalTheory.T.unitaryHostFieldArithmeticConditions D large₂ hS
+  obtain ⟨hK, -, -, -, -, -, -, -, -, -, -, hg2, -⟩ := _root_.GlobalTheory.TypeAsm.hostC D large₂ hS
   obtain ⟨N₀, h₀, -⟩ := termData D large₂ X Y u hS W HW he p₀.1 (hS' p₀ hp₀).1.1
   have hdata : ∀ t : GTu Y u, ∃ (N : GlobalTheory.DegCnt.NF (HV D) D.R.rS) (h : W ≃ₗ[D.host.E] W), t ∈ relSet Y u →
       AdT t N ∧ N.IsTerm (gS D) t.lam ∧ N.j = jT t ∧

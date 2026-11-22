@@ -1,6 +1,6 @@
 module
 
-public import Development.WeilBound.CoreStatements.PublishedTheorems.CasselmanWallach.ExistsNormingFunctional
+public import Development.WeilBound.CoreStatements.PublishedTheorems.CasselmanWallach.Bundle0010
 
 @[expose] public section
 

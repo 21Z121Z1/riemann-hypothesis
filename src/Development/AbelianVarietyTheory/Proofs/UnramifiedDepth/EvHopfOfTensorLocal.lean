@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import ReciprocityTheory.DualLattices.EvHopfStatement
+public import ReciprocityTheory.DualLattices.Bundle0029
 
 @[expose] public section
 

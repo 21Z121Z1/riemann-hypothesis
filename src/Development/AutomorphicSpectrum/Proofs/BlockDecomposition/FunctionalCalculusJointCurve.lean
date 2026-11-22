@@ -2,10 +2,10 @@ module
 
 public import Mathlib
 public import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.ArchimedeanGelfandKernels.FriedrichsKernels.Friedrichs
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ContDiffOnUncurryOfFrame
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.WordSmooth
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ContinuousOnFderivApply
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.DerivativeAsRightWords
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0193
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0208
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0310
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0195
 
 @[expose] public section
 

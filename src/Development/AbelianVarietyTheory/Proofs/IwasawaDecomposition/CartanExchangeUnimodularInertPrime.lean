@@ -3,11 +3,11 @@ module
 public import Mathlib
 public import Formalism.LocalToGlobal.Columns.HeckeInertComm
 public import Formalism.LocalToGlobal.Columns.CoefficientsModP.LatticeBasisExistsHolds
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.PatchAtSelf
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0115
 public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.InvMemDoubleCosetAndComm
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.SameAtOfLocalizationEq
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0123
 public import Formalism.LocalRingCardinality.SpanPowerMembership.Places
-public import Formalism.LocalToGlobal.Columns.TwQCmp
+public import Formalism.LocalToGlobal.Columns.Bundle0024
 public import Formalism.LocalToGlobal.Columns.ReferenceActionRationalLevels
 public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.StandardBaseFlagComplementIntegralLattice
 

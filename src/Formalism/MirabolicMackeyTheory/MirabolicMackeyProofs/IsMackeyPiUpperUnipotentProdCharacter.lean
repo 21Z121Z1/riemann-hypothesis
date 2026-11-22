@@ -1,8 +1,7 @@
 module
 
-public import Formalism.MirabolicMackeyTheory.StatementL
-public import Formalism.MirabolicMackeyTheory.MirabolicMackeyProofs.OnLocal
-public import Formalism.MirabolicMackeyTheory.MirabolicMackeyProofs.Mirabolic
+public import Formalism.MirabolicMackeyTheory.Bundle0001
+public import Formalism.MirabolicMackeyTheory.MirabolicMackeyProofs.Bundle0001
 public import Formalism.MirabolicMackeyTheory.MirabolicMackeyProofs.LemmaGG
 
 @[expose] public section

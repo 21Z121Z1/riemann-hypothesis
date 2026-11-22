@@ -2,12 +2,12 @@ module
 
 public import Mathlib
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.GlobalSectionsRankAlgClosed
-public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.GenWeil
-public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.GlueApplyOfNotInFibre
-public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsHTFormOver
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.Bundle0007
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.Bundle0005
 public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.NatCastSmulMemHtLat
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LieModelFiniteBaseChangeStatement
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.TorsionLiftIsClosedImmersion
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0116
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.Bundle0001
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0015
 public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsLieModel
 
 @[expose] public section
@@ -118,7 +118,7 @@ theorem exists_denom {X : Scheme.{0}} (G : Over X) [GrpObj G] [IsCommMonObj G] [
     { toFun := j
       map_add' := jadd
       map_smul' := jsmul }
-  have hbc : IsBaseChange O β := (GlobalTheory.T.lie_model_finite_base_change X G R x L₀ M₀).2.2 O L' M' β hjl
+  have hbc : IsBaseChange O β := (_root_.GlobalTheory.CompanionTheory.Ar.LieProj.lie_finite_projective_baseChange X G R x L₀ M₀).2.2 O L' M' β hjl
   have hloc : IsLocalizedModule S β := (isLocalizedModule_iff_isBaseChange S O β).2 hbc
   obtain ⟨e', he'⟩ := M'.onto v hv
   obtain ⟨⟨b, u⟩, hb⟩ := IsLocalizedModule.surj S β e'

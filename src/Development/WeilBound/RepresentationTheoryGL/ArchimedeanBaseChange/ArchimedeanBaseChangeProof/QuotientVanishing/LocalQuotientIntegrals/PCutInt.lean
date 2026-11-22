@@ -1,7 +1,7 @@
 module
 
 public import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.QuotientVanishing.LocalQuotientIntegrals.OneVanish
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MeasurableSdot
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0353
 
 @[expose] public section
 

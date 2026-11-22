@@ -1,7 +1,7 @@
 module
 
-public import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.SphericalCoordinates.PFrameEx
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.NormLeOneOfIsIntegral
+public import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.SphericalCoordinates.Bundle0022
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0362
 
 @[expose] public section
 

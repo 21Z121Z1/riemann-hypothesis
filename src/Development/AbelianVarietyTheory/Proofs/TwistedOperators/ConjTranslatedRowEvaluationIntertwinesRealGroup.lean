@@ -2,14 +2,14 @@ module
 
 public import Mathlib
 public import Formalism.LocalToGlobal.IndefiniteReal.ZeroPartEigenvalueConvention
-public import Formalism.LocalToGlobal.IndefiniteReal.EvalTieTOne
-public import Formalism.LocalToGlobal.IndefiniteReal.RationalEmbedding
+public import Formalism.LocalToGlobal.IndefiniteReal.Bundle0029
+public import Formalism.LocalToGlobal.IndefiniteReal.Bundle0012
 public import Formalism.LocalToGlobal.SiegelLatticeTheory.FlagStabilizerTensors.RowLevelMatch
-public import Development.AbelianVarietyTheory.PublishedTheorems.DiscreteSeriesUnitary₂.DiscreteSeriesClassificationIff
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.TensTInner
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.AdelicIdentificationRespectsRealFinite
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.TranslatedRowEvaluationSquareIntegrableNorm
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.RightRegularRepUnitaryStronglyContinuous
+public import Development.AbelianVarietyTheory.PublishedTheorems.DiscreteSeriesUnitary₂.Bundle0001
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0216
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0204
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0235
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0291
 
 @[expose] public section
 
@@ -38,14 +38,14 @@ private lemma ae_comp_of_map_eq (B : RowsAut) (φ : B.I.GA → B.I.GA)
       rw [Measure.map_of_not_aemeasurable_of_ne_zero hn h0] at hφ
       apply hn
       rw [← hφ]
-      haveI : T2Space B.I.Gf := (GlobalTheory.T.finiteAdelicUnitary_congruenceTopology B.I).1
+      haveI : T2Space B.I.Gf := (_root_.GlobalTheory.CongTop.adelic_topology B.I).1
       exact aemeasurable_dirac
     exact ae_of_ae_map hm (by rw [hφ]; exact hp)
 
 private lemma ext_ae_eq_of_leftInvariant (B : RowsAut) (f : B.I.GA → ℂ) (hf : ∀ γ ∈ B.I.GFset, ∀ y, f (γ * y) = f y)
     (F : B.I.L2 B.μf B.fund) (hF : (F : B.I.GA → ℂ) =ᵐ[(B.I.muA B.μf).restrict B.fund] f) :
     B.I.ext F =ᵐ[B.I.muA B.μf] f := by
-  obtain ⟨Γ, hΓ, hcount, -, -⟩ := GlobalTheory.T.rationalUnitaryPoints_discrete_fundamentalDomain B.I
+  obtain ⟨Γ, hΓ, hcount, -, -⟩ := _root_.GlobalTheory.RatDiscrete.rational_points B.I
   have hc0 : (Γ : Set B.I.GA).Countable := Set.countable_coe_iff.mp hcount
   have hc : B.I.GFset.Countable := by rw [← hΓ]; exact hc0
   have h0 : ∀ᵐ z ∂(B.I.muA B.μf), z ∈ B.fund → (F : B.I.GA → ℂ) z = f z :=
@@ -53,7 +53,7 @@ private lemma ext_ae_eq_of_leftInvariant (B : RowsAut) (f : B.I.GA → ℂ) (hf 
   have hall : ∀ᵐ y ∂(B.I.muA B.μf), ∀ γ ∈ B.I.GFset, γ * y ∈ B.fund →
       (F : B.I.GA → ℂ) (γ * y) = f (γ * y) :=
     (ae_ball_iff hc).mpr fun γ _ =>
-      ae_comp_of_map_eq B (fun y => γ * y) ((GlobalTheory.T.adelicUnitaryHaar_bi_invariant B.I B.μf).1 γ) h0
+      ae_comp_of_map_eq B (fun y => γ * y) ((_root_.GlobalTheory.AdelicUnimod.adelic_unimodular B.I B.μf).1 γ) h0
   filter_upwards [hall] with y hy
   obtain ⟨γ, hγ, hmem, hrep⟩ := exists_mem_fund_rep_eq_mul B.I B.fund B.fund_spec.2.1 y
   show (F : B.I.GA → ℂ) (B.I.rep B.fund y) = f y
@@ -64,7 +64,7 @@ theorem rightReg_ae (B : RowsAut) (f : B.I.GA → ℂ) (hf : ∀ γ ∈ B.I.GFse
     (B.R g F : B.I.GA → ℂ) =ᵐ[(B.I.muA B.μf).restrict B.fund] fun x => f (x * g) := by
   have hE := ext_ae_eq_of_leftInvariant B f hf F hF
   have hr : ∀ᵐ x ∂(B.I.muA B.μf), B.I.ext F (x * g) = f (x * g) :=
-    ae_comp_of_map_eq B (fun x => x * g) ((GlobalTheory.T.adelicUnitaryHaar_bi_invariant B.I B.μf).2.1 g) (p := fun z => B.I.ext F z = f z) hE
+    ae_comp_of_map_eq B (fun x => x * g) ((_root_.GlobalTheory.AdelicUnimod.adelic_unimodular B.I B.μf).2.1 g) (p := fun z => B.I.ext F z = f z) hE
   filter_upwards [B.R_spec g F, ae_restrict_of_ae hr] with x h1 h2
   rw [h1, h2]
 

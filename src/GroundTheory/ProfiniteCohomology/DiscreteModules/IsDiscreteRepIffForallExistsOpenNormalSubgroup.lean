@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import GroundTheory.ProfiniteCohomology.DiscreteModules
+public import GroundTheory.ProfiniteCohomology.Bundle0001
 
 @[expose] public section
 

@@ -3,8 +3,8 @@ module
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.ResBound
 public import Formalism.LocalRingCardinality.AdicCompletionLocal.LocTied
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FiniteQuotientPow
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsFrobeniusGenDegreeHomToZlStatement
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0236
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0479
 
 @[expose] public section
 
@@ -283,7 +283,7 @@ theorem cls_eq_homModInertia : ∀ {l : ℕ} [Fact l.Prime] {P : LocPrime l} (S 
     S.ResBound (S.Γ.Wchi 1) 1 → S.UnrAdm → ∀ (X : Type) [AddCommGroup X] [Module S.O X] [Finite X],
     S.cls (S.Γ.Wchi 1) X = GlobalTheory.IndefiniteRowSideFullHecke.AdmissibleCharUnramified.homModInertia S.Γ X (IK S.K) := by
   intro l _ P S h0 hb hu X _ _ _
-  obtain ⟨F, ν, hν, hI, hF, -⟩ := GlobalTheory.T.exists_frobenius_gen_degree_hom_to_Zl S.K
+  obtain ⟨F, ν, hν, hI, hF, -⟩ := _root_.GlobalTheory.UnramGen.exists_gen_degree S.K
   have hst : Standing P S.K S.LL S.emb S.Γ.lam := S.hyp.1
   obtain ⟨_, hm, hfin⟩ := local_res S.LL hst.2.2.2.2.2
   refine eq_hom_of_res S.Γ hm (IK S.K) F ν hν hI hF (fun X _ _ => S.cls (S.Γ.Wchi 1) X) ?_ ?_ hb hu X

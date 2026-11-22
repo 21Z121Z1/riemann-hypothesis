@@ -1,29 +1,50 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicArithmetic.CyclotomicBounds.SmallFacts
-public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.IsRatScalarMulIff
+public import Development.AutomorphicArithmetic.CyclotomicBounds.Bundle0001
+public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0032
 public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.ToUnitsCompToCircle
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.NonemptyAlgHomOfIsIntegral
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.RationalPhaseThetaSeriesExpandsCuspFormsSmallFie
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0827
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0932
 public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsGoodCoverLevelOneOverSmallField
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsLevelDatumReferenceTupleSmallField
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.DictionaryCharacterRightInvariantCoreLevel
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.TypePlaceResidueCharactersValuesMemSmallFieldStatement
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.MemSelfDualLatticeIffIntegralFrameMatricesHalf
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.MemSelfDualLatticeIffIntegralFrameMatricesHalfStatement
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0924
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0920
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0821
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0912
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0918
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0797
+public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0025
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0034
+public import Development.AbelianVarietyTheory.Definitions.ThetaValues.ExistsRootNotMem
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1656
+public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0007
+public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0020
+public import Development.AbelianVarietyTheory.Definitions.HeightFunctions.XiValIffXiAt
+public import Development.AbelianVarietyTheory.Definitions.ExistenceOfLattices.Bundle0001
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ClassSumsSpanCuspFormsBaseTupleSecondField
+public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.Bundle0015
+public import Formalism.LocalToGlobal.IndefiniteReal.OneMapT
+public import Formalism.LocalToGlobal.IndefiniteReal.Bundle0023
+public import Formalism.LocalToGlobal.IndefiniteReal.FWExist
+public import Formalism.LocalRingCardinality.Bundle0007
+public import Formalism.LocalRingCardinality.Bundle0003
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0012
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0791
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1675
 public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.MemLevelTypeFormsOfUniversalCoeffReading
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsHalfOfAuxiliarySplitLevel
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsPrimitiveRootInRayClassFieldNatModulus
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0735
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0576
 public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.TypePlacesTwistPlacesGoodPosition
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.GoodBaseDataWeightEqLiftCoeffModuleWeight
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.HolomorphicSectionsSpanRestriction
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LevelCharacterEmbeddingCompatStatement
-public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.SeriesRatSOf
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0800
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0913
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LevelCharacterEmbeddingCompat
+public import Formalism.LocalToGlobal.IndefiniteReal.Bundle0027
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0024
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0011
+public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.Bundle0024
 public import Development.AbelianVarietyTheory.Definitions.Divisors.LevelOfOfSameBut
 public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.ExistsUniqueHcharOfFiniteOrder
 public import Development.AbelianVarietyTheory.PublishedTheorems.PublishedFoundations.NonemptyAlgHomOfIsRayOfDvd
-public import Formalism.LocalToGlobal.IndefiniteReal.FWCentral
 public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsHalfOfBasePins
 
 @[expose] public section
@@ -91,9 +112,9 @@ theorem isLevDatum_vec {S T : HSp D} {F : Frame S T} (hF : F.Good) {G : TypeDat 
     have a2 : IsHalf (halfIdem G.Pg Q) t ∧ IsIntM (frMapO S T F.βS F.βT t) := by
       by_contra hc
       exact right_ne_zero_of_mul ht (if_neg hc)
-    exact ⟨(GlobalTheory.T.mem_selfDualLattice_iff_integral_frameMatrices_half hF h hP a1.1).2 ⟨a1.2, a2.2⟩, a1.1⟩
+    exact ⟨(_root_.GlobalTheory.ExportSeries.LatHalf.mem_lat_iff_isIntM_halfIdem hF h hP a1.1).2 ⟨a1.2, a2.2⟩, a1.1⟩
   · intro u hu hue t
-    obtain ⟨i1, i2⟩ := (GlobalTheory.T.mem_selfDualLattice_iff_integral_frameMatrices_half hF h hP hue).1 hu
+    obtain ⟨i1, i2⟩ := (_root_.GlobalTheory.ExportSeries.LatHalf.mem_lat_iff_isIntM_halfIdem hF h hP hue).1 hu
     have f1 : frMapAdj S T F.βS F.βT (t + N • u) = frMapAdj S T F.βS F.βT t + N • frMapAdj S T F.βS F.βT u := by
       rw [GlobalTheory.RefDatumLev.frMapAdj_add', GlobalTheory.RefDatumLev.frMapAdj_nsmul']
     have f2 : frMapO S T F.βS F.βT (t + N • u) = frMapO S T F.βS F.βT t + N • frMapO S T F.βS F.βT u := by
@@ -370,7 +391,7 @@ theorem exists_sum_evW (hti : TieIn T Rl.toRealDat κ v₀) (hnV : 8 * D.R.f * D
           ψ (a * c) = ψ a := by
       rintro V _ rfl ψ a c h
       exact h
-    exact key hV φ' g k (hinv _ ((GlobalTheory.T.level_character_embedding_compat T Rl.toRealDat κ v₀ hlev hti hpb j T.σ₀ T.toCore.good_σ₀ hV _).2
+    exact key hV φ' g k (hinv _ ((_root_.GlobalTheory.LiftLevel.isLift_one_iff_mem_level T Rl.toRealDat κ v₀ hlev hti hpb j T.σ₀ T.toCore.good_σ₀ hV _).2
       (by rw [hkk]; exact hk)) _)
   obtain ⟨m, xs, ψ, hψ, hφeq⟩ := GlobalTheory.CoverFormDesc.cover_form_desc D T hT _ hInR T.σ₀ T.toCore.good_σ₀ C hC.1 (wtA (κ j)) (κ j).n
     (dom_wtA _) (hC.2.1 _ (dom_wtA _)) hspan (mu_level hlev hti j) φ' hφ'm hinv'
@@ -378,7 +399,7 @@ theorem exists_sum_evW (hti : TieIn T Rl.toRealDat κ v₀) (hnV : 8 * D.R.f * D
       rdU (T.U ((j : ℕ) + 1) T.σ₀) f ∈ Formalism.L2.Pj.holSub0 (T.U ((j : ℕ) + 1) T.σ₀).X
         (laU (T.U ((j : ℕ) + 1) T.σ₀) (wtA (κ j)) (κ j).n)) ∧ T.phiJ ((j : ℕ) + 1) T.σ₀ (wtA (κ j)) f = ψ k := hψ
   choose fs hfs using hψ'
-  choose x hx using fun k => hrd ⟨fs k, GlobalTheory.T.mem_cuspForms_of_reading_bounded_cuspidal_holomorphic D T hT _ hInR (κ j) hlast hn (fs k) (hfs k).1.1 (hfs k).1.2⟩
+  choose x hx using fun k => hrd ⟨fs k, _root_.GlobalTheory.CuspOfReading.mem_cuspA_of_rdU_mem_holSub0 D T hT _ hInR (κ j) hlast hn (fs k) (hfs k).1.1 (hfs k).1.2⟩
   refine ⟨m, fun k => C.σ₂ (xs k), x, fun k => ⟨xs k, rfl⟩, funext fun g => ?_⟩
   rw [hφeq, RatExpand.castDict_sum_smul, Finset.smul_sum, Finset.sum_apply]
   refine Finset.sum_congr rfl fun k _ => ?_
@@ -478,7 +499,7 @@ theorem isLevDatum_vecBase {F : Face D A3.A} (hT : LawsJ T) (hcore : GlobalTheor
       exact Ideal.mul_mem_left _ _ (hQ PP (by simpa using hPP))
   · have hP : PP ∈ Rl.Pg := (Finset.ext_iff.1 hBo.Pg PP).1 hPP
     rw [hBo.muC_eq hcore.lev hB hP, MonoidHom.inv_apply, Units.val_inv_eq_inv_val]
-    exact inv_mem (hk (GlobalTheory.T.typePlace_residueCharacters_values_mem_smallField D Γ Pl0 I0 T0 A3 T Rl cG S YS F hT hcore hgal hval hroots j PP hP u))
+    exact inv_mem (hk (_root_.GlobalTheory.TypeChar.chi_mem_smallField D Γ Pl0 I0 T0 A3 T Rl cG S YS F hT hcore hgal hval hroots j PP hP u))
   · unfold Base.locFn
     refine mul_mem (prod_mem fun PP hPP => ?_) (prod_mem fun _ _ => one_mem _)
     unfold flat
@@ -536,7 +557,7 @@ theorem ratBase_of_readsAs (hRF : GlobalTheory.NT.RayField) {F : Face D A3.A} (h
     have h2 := Formalism.BasicNotions.sig_sum _ hB.sigOK (tauE D τ)
     rw [← hB.sig τ] at h2
     exact h2.le
-  have hinj := GlobalTheory.T.harmonic_polynomial_eq_zero_of_function D _ _ (ρ.B i j b).w (ρ.B i j b).F.BS hB.wt hm
+  have hinj := _root_.GlobalTheory.ExportSeries.HarmInj.harm_inj D _ _ (ρ.B i j b).w (ρ.B i j b).F.BS hB.wt hm
   intro s h P hd
   refine mem_range_of_small _ ((ρ.B i j b).theta (ρ.om i j b 1) h) hinj (fun G => ?_) (fun P hP G hPG => ?_) hd.mem
   · have h3 : coefFn (embLL0 D) (ρ.B i j b).w.lam (G : Pol ↥D.LL0 D.what₂.Tau (Vc D j).rank) ∈

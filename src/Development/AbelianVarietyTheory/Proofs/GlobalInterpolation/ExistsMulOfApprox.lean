@@ -1,11 +1,11 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.BlockTheory.GlobalSignature.SubstitutionAdjoint
-public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.RenameMemDualWeyl
-public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.SubDSharpInDeg
-public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.ExistsDenOfValLeOne
-public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.MemExtLatOfMemLocP
+public import Development.AbelianVarietyTheory.BlockTheory.GlobalSignature.Bundle0013
+public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0080
+public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0081
+public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0120
+public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0078
 
 @[expose] public section
 

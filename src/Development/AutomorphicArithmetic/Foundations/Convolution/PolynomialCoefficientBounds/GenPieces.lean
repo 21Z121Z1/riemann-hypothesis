@@ -2,10 +2,8 @@ module
 
 public import Mathlib
 public import Development.WeilBound.RepresentationTheoryGL.TwistedFactors.AffineCharacterGenerators.Generators
-public import Development.AutomorphicArithmetic.Foundations.Convolution.PolynomialCoefficientBounds.CoeffL1NormNonneg
-public import Development.AutomorphicArithmetic.Foundations.Convolution.PolynomialCoefficientBounds.PieceHom
-public import Development.AutomorphicArithmetic.Foundations.Convolution.PolynomialCoefficientBounds.IntMvPolynomialCoeffAbsSumAddLe
-public import Development.AutomorphicArithmetic.Foundations.Convolution.PolynomialCoefficientBounds.AevalSingleZero
+public import Development.AutomorphicArithmetic.Foundations.Convolution.PolynomialCoefficientBounds.Bundle0003
+public import Development.AutomorphicArithmetic.Foundations.Convolution.PolynomialCoefficientBounds.Bundle0005
 
 @[expose] public section
 

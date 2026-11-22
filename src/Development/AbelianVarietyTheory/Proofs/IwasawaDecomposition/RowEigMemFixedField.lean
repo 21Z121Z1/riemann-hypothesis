@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ParabolicAtStandardWeylElement
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.GapHypOfNodes
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0351
 public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.DiscreteSeriesExistence.DiscreteSeriesUniqueLargeGap
 
 @[expose] public section

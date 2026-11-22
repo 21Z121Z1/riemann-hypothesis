@@ -3,22 +3,29 @@ module
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.Foundations.OfInfProjInfMulOfFinProjFin
 public import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.TwistPlacesOffPrimeQZero
-public import Development.AbelianVarietyTheory.Definitions.Divisors.DiscreteSeriesHermitianUnique
-public import Development.AbelianVarietyTheory.Statements.PlaceShiftStatements.NormSmall
-public import Development.AbelianVarietyTheory.Statements.PlaceShiftStatements.DictAt
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0041
+public import Development.AbelianVarietyTheory.Statements.PlaceShiftStatements.Bundle0002
+public import Development.AbelianVarietyTheory.Statements.PlaceShiftStatements.Bundle0003
 public import Development.AbelianVarietyTheory.Statements.HeckeThetaIntegrals.ThetaIntegralsAgree
 public import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.WeilTensorModels
-public import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.CuspAlongSmoothRows
+public import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.Bundle0015
 public import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.ToricSymbols
 public import Development.AbelianVarietyTheory.Definitions.Foundations.NormSumPairRankZeroOfCurveCoordNorm
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SquareThetaTripleHypothesesOfStandingStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TestPlacesPrimeToLevel
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SmallThetaKernelTranslateIntegrable
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GoodSplitPlaceTranslationActsThroughWeil
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsRouteDatumTranslationCombinationGoodPlace
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TranslatedKernelLeThetaFunctionRouteBigVertex
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SmallRouteKernelEqUnitNormMulThetaStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsSplitCompletelyAuxiliaryPlaceOutsideFinsetStatement
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2926
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1566
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle3058
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1804
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle3027
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle3049
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2846
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1487
+public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.Bundle0007
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1502
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsNatMulIntegralOfIsCompact
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1522
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0047
+public import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.Bundle0019
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1507
 
 @[expose] public section
 
@@ -191,7 +198,7 @@ theorem translates_kerSmall_le_theta_at : ∀ {D : D7} {T : Type} {L : LevCh D T
       ∀ b ∈ z.support, b ∈ Set.range (emb D.sp.cm.sig (G.V (.grid i j)).gram Bs.v₁) := by
   intro D T L sc G μ₀ hL W B ρ t i j M hM Θ Θ' hΘ g₁ e Bs Γ X om om' h hTr hv
   obtain ⟨ΦB, hB, z, hz, hS, hsupp⟩ := exists_datum_comb_mem_So_at hL W B ρ t i j M hM Θ Θ' hΘ g₁ e Bs Γ X om om' h hTr hv
-  obtain ⟨ξ, hξ, hk⟩ := GlobalTheory.T.small_route_kernel_eq_unit_norm_mul_theta hL W B ρ t i j M hM Θ Θ' hΘ g₁ e Bs Γ X om om' h hTr hv ΦB hB
+  obtain ⟨ξ, hξ, hk⟩ := _root_.GlobalTheory.SmallKernel.kerSmall_eq_theta hL W B ρ t i j M hM Θ Θ' hΘ g₁ e Bs Γ X om om' h hTr hv ΦB hB
   refine ⟨z, _, GlobalTheory.IndefiniteRowSideFullHecke.UnitaryConjugation.conjU _ (-1) h.JW₁, 1, hz, hS, fun g u => le_of_eq ?_, hsupp⟩
   have hW := GlobalTheory.WeilM.IsUWeilPair.isUSplitting hTr.weil'
   have hpres : ∀ p φ, φ ∈ schA D.host.F _ → om' p φ ∈ schA D.host.F _ := fun p φ hφ => hW.pres p φ hφ
@@ -224,7 +231,7 @@ theorem squareTriple_avoid {D : D7} {T : Type} {L : LevCh D T} {sc : Consts} {G 
       (∀ w ∈ locPl G t, w.under (𝓞 D.host.F) ≠ Bs.v₁) ∧ Bs.v₁ ∉ P := by
   classical
   obtain ⟨e, Bs, Γ, X, om, om', h, hTr, -⟩ := GlobalTheory.T.squareThetaTripleHypotheses_of_standing hL W t i j hst M hM
-  obtain ⟨v, hvP, hvs, hvl, ⟨τ⟩⟩ := GlobalTheory.T.exists_splitCompletely_auxiliary_place_outside_finset (G := G) hL t (X.T ∪ P)
+  obtain ⟨v, hvP, hvs, hvl, ⟨τ⟩⟩ := _root_.GlobalTheory.GoodPlace.exists_good_place (G := G) hL t (X.T ∪ P)
   let Bs' : GlobalTheory.IndefiniteRowSideFullHecke.WeilTensorModels.Base D.host.F D.host.E := { Bs with v₁ := v, τ₁ := τ }
   refine ⟨e, Bs', Γ, X, om, om', ?_, ?_, hvl, fun h' => hvP (Finset.mem_union_right _ h')⟩
   · exact ⟨h.ψ, h.JW, h.JW₁, h.JWW, h.cart, h.α, h.β, h.μW, h.μW₁⟩

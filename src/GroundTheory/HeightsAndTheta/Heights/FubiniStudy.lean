@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import GroundTheory.HeightsAndTheta.Heights.FubiniStudyIntegral
-public import GroundTheory.HeightsAndTheta.Heights.FubiniStudyChern
+public import GroundTheory.HeightsAndTheta.Heights.Bundle0002
 
 @[expose] public section
 

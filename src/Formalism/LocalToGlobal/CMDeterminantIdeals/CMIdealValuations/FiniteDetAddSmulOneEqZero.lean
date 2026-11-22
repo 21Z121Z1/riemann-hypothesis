@@ -1,6 +1,6 @@
 module
 
-public import Formalism.LocalToGlobal.CMDeterminantIdeals.StatementG
+public import Formalism.LocalToGlobal.CMDeterminantIdeals.Bundle0001
 
 @[expose] public section
 

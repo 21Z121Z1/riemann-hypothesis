@@ -1,8 +1,7 @@
 module
 
 public import Mathlib
-public import Formalism.PeriodIntegrals.ZerosWindow
-public import Formalism.PeriodIntegrals.ZerosWindowIn
+public import Formalism.PeriodIntegrals.Bundle0010
 
 @[expose] public section
 

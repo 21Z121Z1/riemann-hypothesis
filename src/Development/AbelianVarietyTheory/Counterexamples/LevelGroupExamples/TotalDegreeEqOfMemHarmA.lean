@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Formalism.LocalToGlobal.ProjectiveLattices.ThProps
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0011
 
 @[expose] public section
 

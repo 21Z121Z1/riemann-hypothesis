@@ -1,7 +1,7 @@
 module
 
 public import ReciprocityTheory.L2DbarEstimates.PlurisubharmonicCharts.ContinuousOnSec
-public import ReciprocityTheory.L2DbarEstimates.WeakHolomorphy.ImportsAlt
+public import ReciprocityTheory.L2DbarEstimates.WeakHolomorphy.Bundle0001
 public import ReciprocityTheory.L2DbarEstimates.ChartDerivatives.HoloSmooth
 
 @[expose] public section

@@ -3,8 +3,8 @@ module
 public import Mathlib
 public import Formalism.LocalToGlobal.SiegelLatticeTheory.HaarTransversals.FoldBound
 public import Formalism.LocalToGlobal.SiegelLatticeTheory.HaarTransversals.PoincareSeriesSquareIntegrable
-public import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.FoldUnfold
-public import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.FoldMult
+public import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.Bundle0008
+public import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.Bundle0007
 
 @[expose] public section
 

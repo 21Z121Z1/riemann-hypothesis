@@ -1,6 +1,6 @@
 module
 
-public import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.WeylForK
+public import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.Bundle0019
 public import Formalism.PeriodIntegrals.ExplicitFormulaCounts.WeylForU
 
 @[expose] public section

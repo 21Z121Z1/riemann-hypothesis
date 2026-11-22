@@ -4,8 +4,8 @@ public import Development.AutomorphicArithmetic.ShortNorms.Primes
 public import Development.AutomorphicArithmetic.ShortNorms.hostOfFieldOf
 public import Development.AutomorphicArithmetic.ShortNorms.supplyOfAdmOf
 public import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.ThinScalesIffHostBound
-public import Development.AutomorphicArithmetic.CharacterBoxes.Imports
-public import Development.AutomorphicArithmetic.CharacterBoxes.PairHyp
+public import Development.AutomorphicArithmetic.CharacterBoxes.Bundle0003
+public import Development.AutomorphicArithmetic.CharacterBoxes.Bundle0004
 public import Development.AutomorphicArithmetic.MeanSquareBounds.pairEx
 public import Development.AutomorphicArithmetic.CoprimeRanks.AdmChi
 public import Development.AutomorphicArithmetic.CoprimeRanks.FieldAny

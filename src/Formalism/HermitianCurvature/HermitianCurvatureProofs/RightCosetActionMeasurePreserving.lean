@@ -1,6 +1,6 @@
 module
 
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.GaXiSplit
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0130
 public import Formalism.HermitianCurvature.HermitianCurvatureProofs.RegularisedPairingViaPhase
 public import Formalism.HermitianCurvature.HermitianCurvatureProofs.HermitianFormFactor
 

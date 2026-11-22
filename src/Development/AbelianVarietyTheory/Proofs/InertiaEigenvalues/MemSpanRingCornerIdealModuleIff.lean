@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.BlockTheory.NonGaloisCusps.ResidualConstruction
+public import Development.AbelianVarietyTheory.BlockTheory.NonGaloisCusps.Bundle0008
 
 @[expose] public section
 

@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import GroundTheory.PAdicHodge.FundamentalSeqLog
-public import GroundTheory.PAdicHodge.GalSmulAlgebraMapPadicPlus
+public import GroundTheory.PAdicHodge.Bundle0007
 
 @[expose] public section
 

@@ -3,7 +3,7 @@ module
 public import Formalism.LocalToGlobal.HilbertRowConditions.ColumnsFunctionAtSubspaces
 public import Formalism.LocalToGlobal.IndefiniteForms.IndefUse
 public import Formalism.LocalToGlobal.Divisibility.TrivialExtensionSideWellFormed
-public import Formalism.SharpRestriction.LevelLetterCocycles.ThetaScalarFamilyOfEigenvalue
+public import Formalism.SharpRestriction.LevelLetterCocycles.Bundle0026
 public import Mathlib
 
 @[expose] public section

@@ -1,8 +1,8 @@
 module
 
 public import Formalism.LocalToGlobal.PairingIndexBounds.SplitPairEquations.TripleSumIndependence.TripleSumIndep
-public import Formalism.LocalToGlobal.KernelLattices.ColumnData.ColumnDataEquations.RightMoveTrianglesOfUnit
-public import Formalism.LocalToGlobal.KernelLattices.ColumnData.ColumnDataEquations.JArith
+public import Formalism.LocalToGlobal.KernelLattices.ColumnData.ColumnDataEquations.Bundle0002
+public import Formalism.LocalToGlobal.KernelLattices.ColumnData.ColumnDataEquations.Bundle0003
 public import Formalism.LocalToGlobal.KernelLattices.ColumnData.ColumnDataEquations.SecondConstantHolds
 public import Formalism.LocalToGlobal.KernelLattices.ColumnData.IsAdmissibleFlagPairOfUnitriangularLeftAutomorph
 

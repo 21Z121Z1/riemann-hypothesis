@@ -1,8 +1,8 @@
 module
 
-public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.ArchBetween
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.Bundle0012
 public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.JoinModelPointsProject
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsNeZeroForallComplexPointExtend
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0404
 
 @[expose] public section
 

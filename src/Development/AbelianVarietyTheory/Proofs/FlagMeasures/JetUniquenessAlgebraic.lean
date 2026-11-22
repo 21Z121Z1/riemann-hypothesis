@@ -1,12 +1,12 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.ActSingleNeZero
-public import Development.AbelianVarietyTheory.Statements.CuspFrameWeights.EigenfunctionFiniteCoefficients
+public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.Bundle0010
+public import Development.AbelianVarietyTheory.Statements.CuspFrameWeights.Bundle0001
 public import Formalism.RealPlaceAnalysis.RealPlaceTaylor.FirstSlotSliceSlotMixedCasimirZero
 public import Formalism.RealPlaceAnalysis.RealPlaceTaylor.IsCompactInvariantOrthogonalInf
 public import Formalism.RealPlaceAnalysis.FinalF
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.SymmetricKMapEqZeroOfVminusSlicesStatement
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0171
 
 @[expose] public section
 
@@ -304,7 +304,7 @@ theorem uniqAlg : ∀ (V : Type) [NormedAddCommGroup V] [InnerProductSpace ℂ V
         intro F hF
         have hC : ∀ y ∈ pfil ε E' (ι u) j, ev y = 0 :=
           hPf j (fun m hm => ih m (Nat.lt_succ_of_le hm))
-        refine GlobalTheory.T.symmetric_kMap_eq_zero_of_vminus_slices V n ε E lam g u j hE hU hK hfd hgap hg
+        refine _root_.GlobalTheory.Jet.jet_map_eq_zero V n ε E lam g u j hE hU hK hfd hgap hg
           (ev ∘ₗ thetaA E' (j + 1) ∘ₗ mapArr ι n (j + 1)) ?_ ?_ ?_ ?_ F hF
         · intro G _
           exact hev _

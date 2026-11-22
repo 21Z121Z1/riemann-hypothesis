@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutSETopFinal
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0290
 public import Formalism.HermitianCurvature.HermitianCurvatureProofs.TransferSmoothAtBuiltPlace
 public import Formalism.HermitianCurvature.JcRadialModuleFormOfParts
 

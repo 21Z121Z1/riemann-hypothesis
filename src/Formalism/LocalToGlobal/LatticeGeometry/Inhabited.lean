@@ -1,8 +1,7 @@
 module
 
-public import Formalism.LocalToGlobal.LatticeGeometry.ShimuraSheafOfIndefiniteSubspace
+public import Formalism.LocalToGlobal.LatticeGeometry.Bundle0003
 public import Formalism.LocalToGlobal.LatticeGeometry.InhabLoc
-public import Formalism.LocalToGlobal.LatticeGeometry.LevPrPrime
 public import Mathlib
 public import Formalism.LocalRingCardinality.RhoDetPrimeEqMuTildeMulChiPow
 public import Formalism.LocalRingCardinality.DataDIV
@@ -12,7 +11,7 @@ public import Formalism.SharpRestriction.Divisibility.ModuliIntegralCharts
 public import Formalism.SharpRestriction.Divisibility.BoundaryLocalData
 public import Formalism.SharpRestriction.Divisibility.WeightThresholdDefs
 public import Formalism.LocalRingCardinality.SpanPowerMembership.UnitsPowSurjective
-public import Formalism.LocalRingCardinality.SpanPowerMembership.PlLBridge
+public import Formalism.LocalRingCardinality.SpanPowerMembership.Bundle0004
 
 @[expose] public section
 

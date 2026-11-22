@@ -1,6 +1,6 @@
 module
 
-public import Formalism.SharpRestriction.LevelLetterCocycles.LevelKernelDetection.KerEqOfSpan
+public import Formalism.SharpRestriction.LevelLetterCocycles.LevelKernelDetection.Bundle0002
 
 @[expose] public section
 

@@ -1,11 +1,9 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.CommutativeAlgebra.AbByPOfComm
-public import Development.AbelianVarietyTheory.Definitions.CommutativeAlgebra.InvariantSubspaceMobiusInverseRecEqOfFinrankLt
-public import Development.AbelianVarietyTheory.Proofs.CharacterTheory.IsCharacterOverSubfieldInducedClassFunction
-public import Development.AbelianVarietyTheory.Proofs.CharacterTheory.IsCharacterOverSubfieldOfRepresentation
-public import Development.AbelianVarietyTheory.Proofs.CharacterTheory.IsCharacterOverSubfieldRestrictClassFunctionOne
+public import Development.AbelianVarietyTheory.Definitions.CommutativeAlgebra.Bundle0001
+public import Development.AbelianVarietyTheory.Proofs.CharacterTheory.Bundle0016
+public import Development.AbelianVarietyTheory.Proofs.CharacterTheory.Bundle0008
 
 @[expose] public section
 

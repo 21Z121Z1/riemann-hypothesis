@@ -4,18 +4,17 @@ public import Mathlib
 public import Formalism.LocalToGlobal.IndefiniteReal.OneMapT
 public import Formalism.LocalToGlobal.IndefiniteReal.FWExist
 public import Formalism.LocalToGlobal.ProjectiveLattices.SpMapAlgHomId
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CXiValIff
-public import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.SecBCAndCuspBC
-public import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.ActLevAndActBC
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0870
+public import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.Bundle0074
 public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.IntValuationEqOfMem
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.PlaceExtensionValues
-public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.AdelicCuspFormAutomorphicBoundedSquareIntegrable
-public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.AdelicLinearIndependent
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.LiftsSpanOfOnto
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0301
+public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.Bundle0048
+public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.Bundle0060
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0208
 public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.OmegaDataLevelForms
-public import Formalism.LocalToGlobal.IndefiniteReal.FWTie
+public import Formalism.LocalToGlobal.IndefiniteReal.Bundle0025
 public import Formalism.LocalToGlobal.IndefiniteReal.LinksChar
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.LevelMapExtension
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0452
 
 @[expose] public section
 

@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsProjFrameFibrePt
-public import GroundTheory.HeightsAndTheta.Heights.HeightKernels.POneBlockPointDeg
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.LemCone
+public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0093
+public import GroundTheory.HeightsAndTheta.Heights.HeightKernels.Bundle0032
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.Bundle0003
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArakelovGeometry.StepTStB
 
 @[expose] public section

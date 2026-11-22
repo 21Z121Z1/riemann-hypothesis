@@ -1,7 +1,6 @@
 module
 
-public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.InfinitesimalDecay.ProjectionSquareIntegrable
-public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.InfinitesimalDecay.PsiForPosGelfand
+public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.InfinitesimalDecay.Bundle0003
 
 @[expose] public section
 

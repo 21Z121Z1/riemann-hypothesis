@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Formalism.LocalToGlobal.Divisibility.ZscOfNum
+public import Formalism.LocalToGlobal.Divisibility.Bundle0005
 public import Formalism.LocalToGlobal.Divisibility.HeckeRI
 
 @[expose] public section

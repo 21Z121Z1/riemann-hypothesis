@@ -2,13 +2,13 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.Jets.JetsOnCopiesCompatibleFrames
-public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.ExistsFramesEL
+public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0071
 public import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.ExistsBoxPullGen
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.UnifUniqSt
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.DiscreteValuationRings.TwistBCPf
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.CocycleIdentityIso
-public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.GermDPf
-public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.ChartJetTrD
+public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0018
+public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0019
 
 @[expose] public section
 

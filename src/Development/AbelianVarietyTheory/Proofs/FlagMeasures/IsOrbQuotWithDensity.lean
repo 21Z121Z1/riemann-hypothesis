@@ -3,8 +3,8 @@ module
 public import Mathlib
 public import Formalism.SharpRestriction.CuspSpanNormBounds.LeadMinorK
 public import Formalism.HermitianCurvature.HermitianCurvatureProofs.UnipotentCoordinatesMeasurePreserving
-public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.Admissible
-public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.ThresholdProductsBounded
+public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.Bundle0006
+public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.Bundle0010
 
 @[expose] public section
 

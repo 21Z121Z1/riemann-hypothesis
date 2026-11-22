@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.TmulMemComplId
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.BesselVertexLatticeSplitsAlongWitt
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0354
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0493
 
 @[expose] public section
 

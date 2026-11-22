@@ -1,9 +1,9 @@
 module
 
 public import Development.AutomorphicArithmetic.CupPullbacks.ConstCompSingle
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.QuasiIsoHypercohomologyBijectiveStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TateTwistCupProductGradedCommStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TateTwistCupUnitAndPrimitiveRootClassesStatement
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0428
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0594
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0604
 
 @[expose] public section
 

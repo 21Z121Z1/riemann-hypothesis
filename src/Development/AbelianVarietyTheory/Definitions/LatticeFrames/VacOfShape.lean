@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.PlaceLaws
-public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.DoubleCollapse
+public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.Bundle0011
 
 @[expose] public section
 

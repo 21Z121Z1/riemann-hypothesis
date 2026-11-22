@@ -1,12 +1,12 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Divisors.IsGaloisCover
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0025
 public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.OmegaPullOmegaTraceOfSecTraceOne
 public import Development.AbelianVarietyTheory.Definitions.Divisors.IsAffCoverSpec
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.FiniteEtaleFunctionFieldIntegralClosureDifferentStatement
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.SmoothSectionsInFunctionField
-public import Development.AutomorphicArithmetic.Foundations.EtaleClopenDescent.IsSeparatedOfProj
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0359
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0356
+public import Development.AutomorphicArithmetic.Foundations.EtaleClopenDescent.Bundle0012
 
 @[expose] public section
 

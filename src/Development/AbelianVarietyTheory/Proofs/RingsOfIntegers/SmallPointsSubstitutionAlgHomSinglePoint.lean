@@ -2,12 +2,12 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.PlaceAdaptation.AdaptStd
-public import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.MaximalIdealFormalPointsFormModule
+public import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.Bundle0039
 public import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.RegularSectionIntegralGermUniqueScale
 public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.ExistsPref
-public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.TruncationFramesLocalSeries
+public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0074
 public import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.WeilIsAlternatingSkewNatural
-public import Development.AbelianVarietyTheory.Proofs.FormalGroupCharts.IsNilpotentOfMemKerJetTruncR
+public import Development.AbelianVarietyTheory.Proofs.FormalGroupCharts.Bundle0016
 
 @[expose] public section
 

@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.WhittakerLawUpperTriangularUnipotentAdelic
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0591
 
 @[expose] public section
 

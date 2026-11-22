@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Formalism.LocalToGlobal.NormalizedHeckeFactors.TypesDefs
-public import Formalism.PadicSubsetSums.CentralIdempotents.HCDisjointO
+public import Formalism.PadicSubsetSums.CentralIdempotents.Bundle0003
 
 @[expose] public section
 

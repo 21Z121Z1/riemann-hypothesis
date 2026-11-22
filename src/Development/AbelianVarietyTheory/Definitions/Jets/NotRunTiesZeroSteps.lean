@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Jets.CmQuadraticFormEqAlternatingForm
-public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.GaugeUniqC
+public import Development.AbelianVarietyTheory.Definitions.Jets.Bundle0003
+public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0014
 
 @[expose] public section
 

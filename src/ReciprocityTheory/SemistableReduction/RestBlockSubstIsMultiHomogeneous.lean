@@ -1,6 +1,6 @@
 module
 
-public import ReciprocityTheory.SemistableReduction.AevalIsWeightedHomogeneous
+public import ReciprocityTheory.SemistableReduction.Bundle0004
 
 @[expose] public section
 

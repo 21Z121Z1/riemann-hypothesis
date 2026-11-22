@@ -2,9 +2,12 @@ module
 
 public import Mathlib
 public import Development.AutomorphicSpectrum.Proofs.MetricProofs.PeriodDecompositionNearBoundary
-public import Development.AutomorphicSpectrum.Proofs.MetricProofs.IsotropicSublatticeCovolumePositiveStatement
-public import Development.AutomorphicSpectrum.Proofs.MetricProofs.FirstMinimumAndCuspWeightBoundsStatement
-public import Development.AutomorphicSpectrum.Proofs.MetricProofs.ExistsExtendLinearIndependentOfSpanStatement
+public import Development.AutomorphicSpectrum.Definitions.MetricPeriods.IsEigFrames
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.BdryChart
+public import ReciprocityTheory.AnalyticForms.PlurisubharmonicFunctions.Bundle0001
+public import Development.WeilBound.CoreStatements.PlurisubharmonicCones.Bundle0004
+public import Development.AutomorphicSpectrum.Proofs.MetricProofs.FirstMinimumAndCuspWeightBounds
+public import Development.AutomorphicSpectrum.Proofs.MetricProofs.Bundle0025
 
 @[expose] public section
 
@@ -18,11 +21,11 @@ theorem limit_strong : ∀ (E : Type) [Field E] [NumberField E] [IsCMField E] (n
   intro E _ _ _ n a g Λ _ _ Ψ _ L σ m b hσ hb
   classical
   obtain ⟨bas, A, T0, B, c, ρ, h⟩ := exists_isChart L.toLogPeriods
-  obtain ⟨Pr, hPr⟩ := GlobalTheory.T.exists_isKerProj' g (∑ j, B j)
-  obtain ⟨hsat, hs, hinj, hspan⟩ := GlobalTheory.T.chartW_saturated_and_continuous_section n a g Λ L.toLogPeriods bas A T0 B c ρ h
-  obtain ⟨hext, hlim⟩ := GlobalTheory.T.mem_chartW_of_continuous_period n a g Λ L.toLogPeriods bas A T0 B c ρ h
-  obtain ⟨hHerm, hIm, hKill, hPos⟩ := GlobalTheory.T.chartQ_hermitian_and_real_pairing n a g Λ L.toLogPeriods bas A T0 B c ρ Pr h hPr
-  obtain ⟨hQc, ρ', hρ', hrep⟩ := GlobalTheory.T.chartQ_continuousAt_and_local_solution n a g Λ L.toLogPeriods bas A T0 B c ρ Pr h hPr
+  obtain ⟨Pr, hPr⟩ := _root_.GlobalTheory.CompanionTheory.Ar.Cusp.BoundaryLimit.exists_isKerProj g (∑ j, B j)
+  obtain ⟨hsat, hs, hinj, hspan⟩ := _root_.GlobalTheory.CompanionTheory.Ar.Cusp.BoundaryLimit.noMonodromy_lattice n a g Λ L.toLogPeriods bas A T0 B c ρ h
+  obtain ⟨hext, hlim⟩ := _root_.GlobalTheory.CompanionTheory.Ar.Cusp.CentrePeriods.periods_at_centre n a g Λ L.toLogPeriods bas A T0 B c ρ h
+  obtain ⟨hHerm, hIm, hKill, hPos⟩ := _root_.GlobalTheory.CompanionTheory.Ar.Cusp.BoundaryLimit.LimitForm.limit_form n a g Λ L.toLogPeriods bas A T0 B c ρ Pr h hPr
+  obtain ⟨hQc, ρ', hρ', hrep⟩ := _root_.GlobalTheory.CompanionTheory.Ar.Cusp.BoundaryLimit.QuotientForm.quotient_form_rep n a g Λ L.toLogPeriods bas A T0 B c ρ Pr h hPr
   have h0ball : (0 : Fin n → ℂ) ∈ Metric.ball (0 : Fin n → ℂ) 1 := Metric.mem_ball_self one_pos
 
   have hBc : ∀ (c' : 𝓞 E) (t : (Fin n → ℂ) → Fin g → ℂ), ContinuousAt t 0 →
@@ -143,7 +146,7 @@ theorem eig_indep {E : Type} [Field E] [NumberField E] {g r : ℕ} {Λ : Type} [
     (hli : LinearIndependent (𝓞 E) y) (s : 𝓞 E →+* ℂ) {x₀ : Fin g → ℂ} (hx₀ : x₀ ∈ eigSp ρ s) (h0 : x₀ ≠ 0) :
     LinearIndependent ℂ fun a => eigComp ρ s (per (y a)) := by
   classical
-  obtain ⟨c, hc⟩ := GlobalTheory.T.exists_eigenComponent_polynomial E s
+  obtain ⟨c, hc⟩ := _root_.GlobalTheory.CompanionTheory.Ar.Cusp.EigCoef.eigComp_eq_combination E s
   obtain ⟨hc1, -, hc3⟩ := hc _ ρ
   let e := RingOfIntegers.basis E
   let γ : Module.Free.ChooseBasisIndex ℤ (𝓞 E) → ℂ := fun k => ∑ x ∈ c.support, c x * (e.repr x k : ℂ)
@@ -321,7 +324,7 @@ theorem lower_centre {E : Type} [Field E] [NumberField E] [IsCMField E] {n a g :
     · refine ⟨0, Fin.elim0, fun i => i.elim0, linearIndependent_empty_type, ?_⟩
       rw [h]
       simp
-    · obtain ⟨r, y, -, h1⟩ := (GlobalTheory.T.isotropic_sublattice_covolume_positive E g Λ Ψ (L.riem _ hw₀) σ I hσ (hiso _ hw₀) h).1
+    · obtain ⟨r, y, -, h1⟩ := (_root_.LevelTowerAlt.isotropic_submodule_nonzero_family E g Λ Ψ (L.riem _ hw₀) σ I hσ (hiso _ hw₀) h).1
       exact ⟨r, y, h1⟩
   obtain ⟨r, y, hy, hli, hidx⟩ := hfam
   let y' : Fin r → W := fun i => ⟨y i, hIW (hy i)⟩
@@ -329,7 +332,7 @@ theorem lower_centre {E : Type} [Field E] [NumberField E] [IsCMField E] {n a g :
   have h0 : (0 : Fin n → ℂ) ∈ Metric.ball (0 : Fin n → ℂ) 1 := Metric.mem_ball_self one_pos
   obtain ⟨ν, hν'⟩ := exists_phiNormSq (L.B 0) (fun x y => y ⬝ᵥ Hb *ᵥ star x) _ 1 σ (fun τ i => b τ i 0) _
     (oFamily_image per (L.B 0) hIW hinj hact y' hy hli' hidx) (fun τ => (hb.2 0 h0 τ).1) (fun τ => (hb.2 0 h0 τ).2)
-    (fun τ a => ((GlobalTheory.T.exists_eigenComponent_polynomial E (σ τ)).choose_spec _ (L.B 0)).2.1 _)
+    (fun τ a => ((_root_.GlobalTheory.CompanionTheory.Ar.Cusp.EigCoef.eigComp_eq_combination E (σ τ)).choose_spec _ (L.B 0)).2.1 _)
     fun τ => eig_indep per (L.B 0) M u hinj hact hM hu y' hy hli' (σ τ) (x₀ := b τ ⟨0, hm⟩ 0)
       (by rw [← (hb.2 0 h0 τ).2]; exact Submodule.subset_span ⟨_, rfl⟩) ((hb.2 0 h0 τ).1.ne_zero ⟨0, hm⟩)
   obtain ⟨δ, hδ, h⟩ := (hν ν hν').2 1 one_pos
@@ -340,7 +343,7 @@ theorem lower_centre {E : Type} [Field E] [NumberField E] [IsCMField E] {n a g :
   have hrk : (L.riem w hw).HasRank σ m := fun τ => by
     show Module.finrank ℂ (eigSp (L.B (expCover a w)) (σ τ)) = m
     rw [← (hb.2 _ hz τ).2, finrank_span_eq_card (hb.2 _ hz τ).1, Fintype.card_fin]
-  obtain ⟨-, -, h2, h3, -⟩ := GlobalTheory.T.first_minimum_and_cusp_weight_bounds E g Λ Ψ (L.riem w hw) σ m hσ hrk hm
+  obtain ⟨-, -, h2, h3, -⟩ := _root_.GlobalTheory.CompanionTheory.Ar.Cusp.cuspW_le E g Λ Ψ (L.riem w hw) σ m hσ hrk hm
   have h4 : -Real.log (RiemLat.nz (L.riem w hw) σ I) ≤ RiemLat.cuspW (L.riem w hw) σ := by
     by_cases hI0 : I = ⊥
     · have : RiemLat.nz (L.riem w hw) σ I = 1 := by

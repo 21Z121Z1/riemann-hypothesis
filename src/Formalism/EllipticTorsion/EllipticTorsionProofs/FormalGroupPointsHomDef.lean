@@ -1,8 +1,8 @@
 module
 
-public import Formalism.EllipticTorsion.FormalGroupPointsParametrisation
+public import Formalism.EllipticTorsion.Bundle0004
 public import Formalism.EllipticTorsion.EllipticTorsionProofs.ExistsUnitFactor
-public import Formalism.EllipticTorsion.EllipticTorsionProofs.WPoint
+public import Formalism.EllipticTorsion.EllipticTorsionProofs.Bundle0001
 public import Formalism.EllipticTorsion.EllipticTorsionProofs.WSubst
 public import Formalism.EllipticTorsion.EllipticTorsionProofs.WChord
 public import Formalism.EllipticTorsion.EllipticTorsionProofs.NDeriv

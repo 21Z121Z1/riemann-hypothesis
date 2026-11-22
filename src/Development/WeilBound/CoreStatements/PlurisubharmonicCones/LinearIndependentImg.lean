@@ -1,9 +1,9 @@
 module
 
-public import Development.WeilBound.CoreStatements.PlurisubharmonicCones.ExistsSmulMemEig
+public import Development.WeilBound.CoreStatements.PlurisubharmonicCones.Bundle0004
 public import Development.AutomorphicSpectrum.Proofs.MetricProofs.LogIndexOfOrthogonalFamily
 public import GroundTheory.HeightsAndTheta.Heights.ArithDegreeIdeal
-public import GroundTheory.HeightsAndTheta.Heights.LatticeLemmas.PLocalChange
+public import GroundTheory.HeightsAndTheta.Heights.LatticeLemmas.Bundle0001
 
 @[expose] public section
 

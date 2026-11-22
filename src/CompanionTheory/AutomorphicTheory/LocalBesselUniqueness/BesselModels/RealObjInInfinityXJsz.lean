@@ -1,7 +1,7 @@
 module
 
 public import CompanionTheory.AutomorphicTheory.LocalBesselUniqueness.BesselModels.LocQuad1GHolds
-public import Formalism.LocalToGlobal.SiegelLatticeTheory.ClosedLocalOrbits.GaugeLatticeShifts.RealObjInInfinityXOfG
+public import Formalism.LocalToGlobal.SiegelLatticeTheory.ClosedLocalOrbits.GaugeLatticeShifts.Bundle0055
 
 @[expose] public section
 

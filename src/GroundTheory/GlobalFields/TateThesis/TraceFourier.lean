@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import GroundTheory.GlobalFields.TateThesis.TracePairing
+public import GroundTheory.GlobalFields.TateThesis.Bundle0003
 
 @[expose] public section
 

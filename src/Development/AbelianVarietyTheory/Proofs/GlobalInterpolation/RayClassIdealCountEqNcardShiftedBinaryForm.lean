@@ -2,9 +2,9 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.LamIdealOfNotPrimePow
-public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.PlaneLatticeShortBasisOfBoundPowTwo
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.RayClassPartialZetaContinuation
-public import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.RingOfIntegersSqrtNegThreeModFour
+public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0006
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0030
+public import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.Bundle0001
 
 @[expose] public section
 

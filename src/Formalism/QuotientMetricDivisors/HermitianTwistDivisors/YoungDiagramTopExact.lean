@@ -1,6 +1,6 @@
 module
 
-public import Formalism.QuotientMetricDivisors.TheoremDivIneqRowsShift
+public import Formalism.QuotientMetricDivisors.Bundle0005
 public import Formalism.QuotientMetricDivisors.HermitianTwistDivisors.YoungDiagramHook
 
 @[expose] public section

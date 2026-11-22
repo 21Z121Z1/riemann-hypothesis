@@ -1,14 +1,13 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.BlockTheory.SiegelWeilLocal.OrbitStepSpace
-public import Development.AbelianVarietyTheory.BlockTheory.SiegelWeilLocal.OrthonormalPlaceBasis
+public import Development.AbelianVarietyTheory.BlockTheory.SiegelWeilLocal.Bundle0001
+public import Development.AbelianVarietyTheory.BlockTheory.SiegelWeilLocal.Bundle0002
 public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsOrthonormalBasis
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsContinuousMultilinearMapOfInnerProd
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsNormSqTensUpdate
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.HasDerivAtOrbitTens
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.StepSpacePropsOfDiff
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.VPSubOfLocalBound
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0067
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0123
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0151
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0173
 
 @[expose] public section
 

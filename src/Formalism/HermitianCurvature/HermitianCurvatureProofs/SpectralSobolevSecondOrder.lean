@@ -1,6 +1,6 @@
 module
 
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutSEJSliceCut
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0258
 
 @[expose] public section
 

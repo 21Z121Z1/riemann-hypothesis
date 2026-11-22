@@ -1,10 +1,9 @@
 module
 
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.CharacterLevelBounds.ShaFamMono
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.PartsSign
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.CharacterLevelBounds.SelFam
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.Bundle0001
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.CharacterLevelBounds.Bundle0002
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.CharacterLevelBounds.LocUnr
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.CharacterLevelBounds.PlacesQ
 
 @[expose] public section
 

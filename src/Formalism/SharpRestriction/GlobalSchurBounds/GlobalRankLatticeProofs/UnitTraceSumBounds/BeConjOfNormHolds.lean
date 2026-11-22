@@ -1,12 +1,11 @@
 module
 
-public import Formalism.SharpRestriction.GlobalSchurBounds.GlobalRankLatticeProofs.UnitTraceSumBounds.LevelRestrictionOfGroupLawHolds
-public import Formalism.SharpRestriction.GlobalSchurBounds.GlobalRankLatticeProofs.UnitTraceSumBounds.BeConjOfNorm
+public import Formalism.SharpRestriction.GlobalSchurBounds.GlobalRankLatticeProofs.UnitTraceSumBounds.Bundle0005
 public import Mathlib
-public import Formalism.PeriodIntegrals.FglGram
+public import Formalism.PeriodIntegrals.Bundle0002
 public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.FormalGroupSplitting.ExpCongruenceExtendsToSum
 public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.CubeFormalIdentities.CoeffPowMulPowEqZero
-public import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.BeConjNorm
+public import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.Bundle0017
 
 @[expose] public section
 

@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Formalism.HermitianLattices.StatementTheta
+public import Formalism.HermitianLattices.Bundle0001
 
 @[expose] public section
 

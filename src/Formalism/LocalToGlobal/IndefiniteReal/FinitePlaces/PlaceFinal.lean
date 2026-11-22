@@ -1,7 +1,7 @@
 module
 
-public import Formalism.LocalToGlobal.IndefiniteReal.FinitePlaces.PlaceAt
-public import Formalism.LocalToGlobal.IndefiniteReal.FinitePlaces.LatLevel
+public import Formalism.LocalToGlobal.IndefiniteReal.FinitePlaces.Bundle0008
+public import Formalism.LocalToGlobal.IndefiniteReal.FinitePlaces.Bundle0010
 public import Formalism.LocalToGlobal.IndefiniteReal.FinitePlaces.LatSelf
 
 @[expose] public section

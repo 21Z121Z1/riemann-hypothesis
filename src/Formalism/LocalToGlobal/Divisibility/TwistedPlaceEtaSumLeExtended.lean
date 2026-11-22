@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Formalism.LocalToGlobal.Divisibility.LinkDefN
-public import Formalism.LocalToGlobal.Divisibility.LinkDIVL2R3Col
-public import Formalism.LocalToGlobal.Divisibility.DivisionCompatibleToSub2Indef2
+public import Formalism.LocalToGlobal.Divisibility.Bundle0005
+public import Formalism.LocalToGlobal.Divisibility.Bundle0006
+public import Formalism.LocalToGlobal.Divisibility.Bundle0004
 public import Formalism.LocalToGlobal.Divisibility.RecBridgeTied
 
 @[expose] public section

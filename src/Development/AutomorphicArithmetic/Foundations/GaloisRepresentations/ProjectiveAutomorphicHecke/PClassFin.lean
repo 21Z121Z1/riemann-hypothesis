@@ -3,7 +3,7 @@ module
 public import Mathlib
 public import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.ProjectiveAutomorphicHecke.CentralEig2
 public import GroundTheory.GlobalFields.TateThesis.IdeleMeasure
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IdelesFiniteClassDecomposition
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1651
 
 @[expose] public section
 

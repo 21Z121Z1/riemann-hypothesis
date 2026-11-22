@@ -1,26 +1,35 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Divisors.EigLatLe
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0045
 public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.NvalDetFrChgConst
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsFinsetIntegralOfDefinite
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.IsOpenImmersionOfSection
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.PosDefOneSubOfSumSqLt
-public import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.MetricDataUnique
-public import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.MetricChangeOfFrame
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0331
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0332
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0276
+public import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.Bundle0066
+public import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.Bundle0062
 public import Development.AbelianVarietyTheory.Counterexamples.MetricPositivity.PosSemidefOfIsMetric
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.CongrOfDvdModulus
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsUniformisationDataNonemptyComponent
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsDatumSumAndAllSignatures
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsLevelGoodAtAllPrimesAndIdx
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0099
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0095
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0067
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0040
 public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.LevelOfSplitAndLevelCoeffExist
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsHermCoordOfDatum
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0015
 public import Development.AbelianVarietyTheory.Proofs.GenericRegularity.MemRangeOfIsAlgebraicRatFun
-public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.ExistsSpanningHypotheses
-public import Formalism.LocalToGlobal.ProjectiveLattices.FreeBridge
-public import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.LinearIndependentOfIsLieBasis
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsTangentModuleUniversalGroupStatement
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsUniformisationDataNonemptyComponentStatement
+public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.Bundle0069
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0024
+public import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.Bundle0035
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsTangentModuleUniversalGroup
+public import Development.AbelianVarietyTheory.Definitions.ExistenceOfLattices.UnivFrame
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0010
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.Bundle0002
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.SecBaseChangeAnySt
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0013
+public import Formalism.LocalToGlobal.ProjectiveLattices.ThShort
+public import Formalism.LocalToGlobal.ProjectiveLattices.IsGenFrGenFr
+public import Formalism.LocalToGlobal.ProjectiveLattices.ChartDirectionsIntegral
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.IsHolPeriods
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.UniformisationConclusion
 
 @[expose] public section
 
@@ -42,7 +51,7 @@ theorem posDef_of_isMetric {σ : c.F →+* ℂ} {y : FrPt Xo c (CAt σ)} {N : �
   obtain ⟨Φ, u, Hm, χ, θ, Fd, w, W, -, hA, -, -, -, -, h7, h8⟩ := h
   obtain ⟨-, -, -, -, -, t2, -⟩ := GlobalTheory.AHWeil.tangent_and_weil_of_isAH GlobalTheory.thetaUnifAV_all Φ.key.P _ u Hm χ hA
   obtain ⟨l1, l2⟩ := GlobalTheory.MetricChange.lift_comb Φ.m.cart
-  obtain ⟨M, _, _, v, ρ, -, htan, hcomb, -, -⟩ := GlobalTheory.T.exists_tangent_module_universal_group E H Dw l Xo (CAt σ) y.x
+  obtain ⟨M, _, _, v, ρ, -, htan, hcomb, -, -⟩ := _root_.GlobalTheory.TanMod.exists_tangent_module E H Dw l Xo (CAt σ) y.x
   choose β hβ using fun i => (htan (y.u b i)).1 (y.tan b i)
   have hu : y.u b = fun i => v (β i) := funext fun i => (hβ i).symm
   have hw : y.u b = fun i => (w b i).left ≫ Φ.m.φ := funext fun i => (h7 b i).1.symm

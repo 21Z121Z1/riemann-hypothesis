@@ -5,7 +5,7 @@ public import Formalism.CyclotomicNorms.StatementT
 public import Formalism.LocalToGlobal.Divisibility.DefGroup
 public import Formalism.LocalToGlobal.Divisibility.GoodPartHermitianSpec
 public import Development.AbelianVarietyTheory.Definitions.Divisors.SplitDoublingNBlock
-public import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.CuspValueComparison
+public import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.Bundle0010
 
 @[expose] public section
 

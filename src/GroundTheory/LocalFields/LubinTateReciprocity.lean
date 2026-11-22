@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import GroundTheory.LocalFields.LubinTateReciprocity.Descent
-public import GroundTheory.LocalFields.LocalAxiom
+public import GroundTheory.LocalFields.Bundle0010
 public import GroundTheory.LocalFields.AbstractLocalReciprocity.ReciprocityMap
 public import GroundTheory.LocalFields.AbstractLocalReciprocity.NormFormula
 

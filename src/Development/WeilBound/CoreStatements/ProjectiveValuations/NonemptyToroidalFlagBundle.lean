@@ -1,11 +1,11 @@
 module
 
 public import Mathlib
-public import Formalism.LocalToGlobal.ProjectiveLattices.MulCMemSec
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsLevelGoodAtAllPrimesAndIdx
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0021
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0040
 public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.ExistsVanBdOfMemExtVanZ
 public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.DenseInterior
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ToroidalFlagNonempty
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2481
 
 @[expose] public section
 

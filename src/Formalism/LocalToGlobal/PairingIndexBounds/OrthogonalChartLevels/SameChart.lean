@@ -2,8 +2,8 @@ module
 
 public import Formalism.LocalToGlobal.PairingIndexBounds.OrthogonalChartLevels.PtRec
 public import Formalism.LocalToGlobal.HermitianColumns.ZeroPointScaledByCharacter
-public import Formalism.LocalToGlobal.GroupLattices.LevelGatherings.PosCompatOfBase
-public import Formalism.LocalToGlobal.InertKernelTheory.DefsRepRec
+public import Formalism.LocalToGlobal.GroupLattices.LevelGatherings.Bundle0004
+public import Formalism.LocalToGlobal.InertKernelTheory.Bundle0013
 
 @[expose] public section
 

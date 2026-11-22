@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ContDiffUncentre
-public import Development.AutomorphicSpectrum.Proofs.MetricProofs.LogResolutionFubiniStudyPositive
-public import Development.AutomorphicSpectrum.Proofs.MetricProofs.BiholomorphicLiftSystem
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0109
+public import Development.AutomorphicSpectrum.Proofs.MetricProofs.Bundle0105
+public import Development.AutomorphicSpectrum.Proofs.MetricProofs.Bundle0037
 
 @[expose] public section
 

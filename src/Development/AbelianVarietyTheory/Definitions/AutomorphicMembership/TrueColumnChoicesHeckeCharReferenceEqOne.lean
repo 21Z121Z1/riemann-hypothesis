@@ -1,12 +1,12 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.BaseDataEmbeddingConj
+public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.Bundle0004
 public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.DuStarPos
 public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.IsRationalUnitaryDeterminantMapRationalUnitaryTo
-public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.AssembleLattice
+public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.Bundle0013
 public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsFiniteAdeleBaseChangeEquiv
-public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.IsDiscriminantTwelfthRootOfIdealLatticeIffDelta1
+public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.Bundle0005
 
 @[expose] public section
 

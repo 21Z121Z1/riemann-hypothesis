@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import ReciprocityTheory.ReductiveGroups.UnramifiedIntegrals.RedSeries
-public import ReciprocityTheory.ReductiveGroups.UnramifiedIntegrals.RedProj
-public import ReciprocityTheory.ReductiveGroups.UnramifiedIntegrals.RedSqrt
+public import ReciprocityTheory.ReductiveGroups.UnramifiedIntegrals.Bundle0026
+public import ReciprocityTheory.ReductiveGroups.UnramifiedIntegrals.Bundle0021
+public import ReciprocityTheory.ReductiveGroups.UnramifiedIntegrals.Bundle0020
 
 @[expose] public section
 

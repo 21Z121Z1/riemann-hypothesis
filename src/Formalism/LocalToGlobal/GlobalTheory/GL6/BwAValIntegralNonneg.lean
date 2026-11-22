@@ -1,6 +1,6 @@
 module
 
-public import Formalism.LocalToGlobal.GlobalTheory.GL6.LatticeInclusionOfSubIntegral
+public import Formalism.LocalToGlobal.GlobalTheory.GL6.Bundle0003
 public import Formalism.GradedWeylDivisibility.FinalD
 
 @[expose] public section

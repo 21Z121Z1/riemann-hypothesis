@@ -1,9 +1,9 @@
 module
 
 public import Formalism.SharpRestriction.CuspSpanNormBounds.FrobeniusCoefficientMemLp.AmpUnif
-public import Formalism.SharpRestriction.CuspSpanNormBounds.SLemOm
+public import Formalism.SharpRestriction.CuspSpanNormBounds.Bundle0003
 public import Formalism.SharpRestriction.CuspSpanNormBounds.OscillatoryIntegralBounds
-public import Formalism.FormalDegreeBessel.FinalBF
+public import Formalism.FormalDegreeBessel.Bundle0002
 public import Formalism.SharpRestriction.CuspSpanNormBounds.BridgeCSB
 public import Formalism.SharpRestriction.CuspSpanNormBounds.BruhatCellsKronecker.CfgTopFalseIff
 

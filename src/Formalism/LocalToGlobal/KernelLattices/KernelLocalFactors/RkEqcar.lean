@@ -2,15 +2,15 @@ module
 
 public import Mathlib
 public import Formalism.LocalToGlobal.KernelLattices.KernelLocalFactors.ThetaLocalEquivalence.ThEquivPAmbOfTiesD
-public import Formalism.LocalToGlobal.KernelLattices.KernelLocalFactors.RkConj
+public import Formalism.LocalToGlobal.KernelLattices.KernelLocalFactors.Bundle0004
 public import Formalism.LocalToGlobal.KernelLattices.KernelLocalFactors.RkThindEq
 public import Formalism.LocalToGlobal.KernelLattices.KernelLocalFactors.ColInst
 public import Formalism.LocalToGlobal.Columns.ChainOneOk
 public import Formalism.LocalToGlobal.Columns.ReductionExistsInLatticeStabilizerHolds
-public import Formalism.LocalToGlobal.Columns.ResidueFieldUnfoldingClaimsHold
+public import Formalism.LocalToGlobal.Columns.Bundle0031
 public import Formalism.LocalToGlobal.Columns.BlockTriangularMulVecMemPartialFlag
 public import Formalism.LocalToGlobal.Columns.ReducedMatrixExtensionEntry
-public import Formalism.LocalToGlobal.Columns.FrameEntryAuxiliarySuperdiagonal
+public import Formalism.LocalToGlobal.Columns.Bundle0033
 public import Formalism.LocalToGlobal.Columns.ColumnsProofs.SymLevEnt
 
 @[expose] public section

@@ -2,8 +2,7 @@ module
 
 public import Mathlib
 public import Formalism.SharpRestriction.Divisibility.AbelianOpenPart.OEOsInjective
-public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.RPfVal
-public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.SpanResCharNeBot
+public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0033
 public import Development.AbelianVarietyTheory.Counterexamples.HeightSurvey.WindowsAllowOffCentre
 
 @[expose] public section

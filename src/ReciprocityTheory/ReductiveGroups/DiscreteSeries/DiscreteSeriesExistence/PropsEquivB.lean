@@ -1,6 +1,6 @@
 module
 
-public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.DiscreteSeriesExistence.BridgeExpK
+public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.DiscreteSeriesExistence.Bundle0007
 public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.HighestWeights.UniqueA
 public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.AnalyticVectors.Taylor
 

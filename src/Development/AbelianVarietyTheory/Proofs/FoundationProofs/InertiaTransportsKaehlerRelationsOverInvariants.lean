@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.MemCycAlgOfPow
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.KaehlerRelationOfDerivationOnLargeSubalgebra
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0361
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0052
 
 @[expose] public section
 

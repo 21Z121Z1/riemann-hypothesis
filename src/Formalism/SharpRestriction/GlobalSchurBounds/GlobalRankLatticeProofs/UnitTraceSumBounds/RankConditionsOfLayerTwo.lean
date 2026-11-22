@@ -4,13 +4,13 @@ public import Formalism.LocalToGlobal.GroupLattices.Joint0
 public import Formalism.LocalToGlobal.HermitianForms.FormsTied
 public import Formalism.LocalToGlobal.Columns.PolyFnLemmas
 public import Formalism.LocalToGlobal.Columns.CoefficientsModP.PairingNondegenerateHolds
-public import Formalism.LocalToGlobal.Columns.InputsWeyl
+public import Formalism.LocalToGlobal.Columns.Bundle0013
 public import Formalism.LocalToGlobal.Columns.CmUnramifiedOfFieldConditions
 public import Formalism.SharpRestriction.GlobalSchurBounds.ThickPlacesCorollaryOfAnyTranslate
 public import Formalism.SharpRestriction.GlobalSchurBounds.TheoremThreeFamilyOfFormalDegreeInput
-public import Formalism.SharpRestriction.GlobalSchurBounds.GlobalRankLatticeProofs.UnitTraceSumBounds.LwRankTies
+public import Formalism.SharpRestriction.GlobalSchurBounds.GlobalRankLatticeProofs.UnitTraceSumBounds.Bundle0008
 public import Formalism.SharpRestriction.GlobalSchurBounds.AdmittedWeylDimension
-public import Formalism.SharpRestriction.CuspSpanNormBounds.BridgeWeylDS
+public import Formalism.SharpRestriction.CuspSpanNormBounds.Bundle0013
 public import Formalism.SharpRestriction.GlobalSchurBounds.LinkTied
 
 @[expose] public section

@@ -3,15 +3,14 @@ module
 public import Mathlib
 public import Formalism.LocalRingCardinality.DataCD
 public import Formalism.SharpRestriction.GlobalSchurBounds.GeneralLinearActions.GenusMassVolumes
-public import Development.AbelianVarietyTheory.BlockTheory.GlobalSignature.ActionCoordinates
-public import Development.AbelianVarietyTheory.BlockTheory.GlobalSignature.PerpendicularEmbedding
+public import Development.AbelianVarietyTheory.BlockTheory.GlobalSignature.Bundle0002
 public import Development.AbelianVarietyTheory.Proofs.HeightProofs.HaarUpqIsMulRightInvariant
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.UpqLocallyCompactGroup
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0060
 public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.NonemptyCompactDualHaar
-public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.LintegralComplexEqLintegralSqrtMulExpStatement
-public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.IsFibreFamilyEqAtContinuityPointStatement
-public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.ExistsBorelSectionUnitaryOrbitQuadricStatement
-public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.FourierInversionHaarSymmFormStatement
+public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0014
+public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0018
+public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0040
+public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0003
 
 @[expose] public section
 
@@ -324,7 +323,7 @@ theorem selfDual_iff_of_bilin {V : Type} [NormedAddCommGroup V] [NormedSpace ℝ
     (hn : ∀ x, (∀ y, B x y = 0) → x = 0) (μ : Measure V) (hμ : μ.IsAddHaarMeasure) :
     SelfDual μ (fun x y => Complex.exp (2 * Real.pi * Complex.I * ((e * β x y : ℝ) : ℂ))) ↔
       ActionCoordinates.IsSelfDualFor e β μ := by
-  obtain ⟨⟨c, -, hc⟩, hS⟩ := GlobalTheory.T.fourier_inversion_haar_symm_form_alt B hs hn μ hμ
+  obtain ⟨⟨c, -, hc⟩, hS⟩ := _root_.GlobalTheory.fourier_inversion_haar_symm_form B hs hn μ hμ
   obtain ⟨Φ₀, h0, h1⟩ := exists_test V
   have key := hc Φ₀ Φ₀.continuous (hS Φ₀).1 (hS Φ₀).2 0
   unfold SelfDual ActionCoordinates.IsSelfDualFor ActionCoordinates.fourierT
@@ -649,7 +648,7 @@ theorem quotFormula_iff (c : CDHaar) (P Q P' Q' : ℕ) {β : ℝ} (hβ : β ≠ 
     refine ⟨⟨(_, j), (isPerpEmb_iff x₀ A j).2 hA⟩, ?_⟩
     rintro ⟨A', ι⟩ hι
     obtain ⟨hr, H2⟩ := H _ ι ((isPerpFrame_iff x₀ A' ι).2 hι)
-    refine ⟨hr, exists_isDxDq P Q, fun fib hfib => ⟨GlobalTheory.T.exists_borelSection_unitary_orbit_quadric P Q β x₀ hβ h0, fun s hs => ?_⟩⟩
+    refine ⟨hr, exists_isDxDq P Q, fun fib hfib => ⟨_root_.GlobalTheory.QuadricSection.exists_isSection P Q β x₀ hβ h0, fun s hs => ?_⟩⟩
     have ht : ∀ y, PerpendicularEmbedding.qf y = β → PerpendicularEmbedding.act ((s y)⁻¹)⁻¹ x₀ = y := fun y hy => by
       rw [inv_inv]; exact hs.2 y hy
     exact (formula_iff c hβ h0 hι hr _ (ae_qf hfib β) _ hs.2 ht).2

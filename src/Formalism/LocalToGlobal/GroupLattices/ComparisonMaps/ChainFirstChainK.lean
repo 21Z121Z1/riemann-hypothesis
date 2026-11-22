@@ -1,6 +1,6 @@
 module
 
-public import Formalism.LocalRingCardinality.DataKerP
+public import Formalism.LocalRingCardinality.Bundle0004
 public import Formalism.LocalToGlobal.GroupLattices.ComparisonMaps.IsComplRatCompl
 
 @[expose] public section

@@ -4,11 +4,11 @@ public import Formalism.PieriBlockIdeals.BlockIdealBound5Derived
 public import Formalism.PieriBlockIdeals.PieriColumnMinors.ProdInitialMinorsMemDetSpan
 public import Formalism.PieriBlockIdeals.PieriColumnMinors.UnitNormBounds
 public import Mathlib
-public import Formalism.PieriBlockIdeals.Statement
-public import Formalism.RankGapBounds.LargePrimeFactor
+public import Formalism.PieriBlockIdeals.Bundle0001
+public import Formalism.RankGapBounds.Bundle0001
 public import Formalism.PieriBlockIdeals.PieriColumnMinors.LabelSumNeedsLeFalse
 public import Formalism.GradedWeylDivisibility.FinalC
-public import Formalism.GradedWeylDivisibility.FockSpaceTableaux.LDbasisLemmas
+public import Formalism.GradedWeylDivisibility.FockSpaceTableaux.Bundle0012
 public import Formalism.RankGapBounds.RankGapProofs.FormsTensorLocalization
 public import Formalism.PieriBlockIdeals.PieriColumnMinors.RegularCuspidalTrace
 

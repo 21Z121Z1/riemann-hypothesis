@@ -3,7 +3,7 @@ module
 public import Mathlib
 public import GroundTheory.PAdicHodge.ExistsNormLeOfNormLtOneFinite
 public import GroundTheory.PAdicHodge.FundamentalSeqBCris
-public import GroundTheory.PAdicHodge.SenTateCharClosure
+public import GroundTheory.PAdicHodge.Bundle0003
 public import GroundTheory.PAdicHodge.BCrisEigenFrob
 public import GroundTheory.PAdicHodge.BCrisRegularSenTate
 public import GroundTheory.PAdicHodge.BCrisGalois

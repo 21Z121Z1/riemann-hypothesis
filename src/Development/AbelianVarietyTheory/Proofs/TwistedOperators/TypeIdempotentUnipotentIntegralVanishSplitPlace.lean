@@ -1,10 +1,11 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.ConstantTermVanishing
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.TypeIdempotentConstantTermVanishStatement
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IsParabolicIsotropicFlagStabilizerSplitPlaceStatement
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.StdMaxParabolicRadicalLeBlockUnipotentRadical
+public import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.Bundle0020
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0186
+public import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.Bundle0016
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0279
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0152
 
 @[expose] public section
 
@@ -284,6 +285,6 @@ theorem unip_integral_vanish : ∀ (D : D7) (V : HSp D) (T : TypeDataG V) (v : T
       (f = GlobalTheory.AutomorphicL2Unitary.conv μ ((T.frame v).idem μ (T.τ v)) φ ∨ f = GlobalTheory.AutomorphicL2Unitary.conv μ φ ((T.frame v).idem μ (T.τ v))) →
     ∀ (ν : Measure (NLoc 𝔉 v.1)) [ν.IsHaarMeasure] (x y : GLoc D.sp.cm.sig V.gram v.1),
       Integrable (fun n : NLoc 𝔉 v.1 => f (x * n * y)) ν ∧ ∫ n : NLoc 𝔉 v.1, f (x * n * y) ∂ν = 0 :=
-  unip_integral_vanish_of GlobalTheory.T.typeIdempotent_constantTerm_vanish GlobalTheory.T.isParabolic_isotropicFlag_stabilizer_split_place
+  unip_integral_vanish_of _root_.GlobalTheory.TypeConstTerm.typeConstTermVanish _root_.GlobalTheory.SplitFlag.isParabRad_parAt
 
 end GlobalTheory.LocConst

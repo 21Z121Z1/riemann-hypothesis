@@ -3,9 +3,7 @@ module
 public import Mathlib
 public import Formalism.HermitianCurvature.StatementC
 public import Formalism.HermitianCurvature.FiniteOrderIntersectionInSmooth
-public import Formalism.HermitianCurvature.OperatorsCommuteTranslations
-public import Formalism.HermitianCurvature.BigCellVanishingOfCommute
-public import Formalism.HermitianCurvature.LetterProductDoubleDegreeCount
+public import Formalism.HermitianCurvature.Bundle0005
 public import Formalism.HermitianCurvature.CompositeFormulaLevelZero
 
 @[expose] public section

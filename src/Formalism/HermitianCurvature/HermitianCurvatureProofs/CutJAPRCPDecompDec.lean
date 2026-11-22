@@ -1,6 +1,6 @@
 module
 
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutJAPRCPDecompNu
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0120
 public import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutJAPRCPDecompDer
 
 @[expose] public section

@@ -1,7 +1,7 @@
 module
 
 public import Formalism.FlagUnipotentLattices.CardSubmodulesAndLinearEquivBounds
-public import Formalism.SharpRestriction.CuspSpanNormBounds.CayleyDegreeNondegeneracy.RowsNum
+public import Formalism.SharpRestriction.CuspSpanNormBounds.CayleyDegreeNondegeneracy.Bundle0001
 
 @[expose] public section
 

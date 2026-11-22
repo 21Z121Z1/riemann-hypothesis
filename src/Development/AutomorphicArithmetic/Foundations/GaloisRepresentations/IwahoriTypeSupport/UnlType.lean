@@ -1,12 +1,11 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.IwahoriTypeSupport.UnlLoc
-public import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.IwahoriTypeSupport.TameSuppUniqueHolds
+public import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.IwahoriTypeSupport.Bundle0002
 public import Development.WeilBound.RepresentationTheoryGL.GenericUnitaryGL.GenericUnitaryDualGLOfTwo
 public import Development.WeilBound.CoreStatements.AutomorphicKernels.LanglandsExhaustion.Outright
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.WhittakerHeredityGenericProduct
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.WhittakerHeredity
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0332
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0593
 
 @[expose] public section
 

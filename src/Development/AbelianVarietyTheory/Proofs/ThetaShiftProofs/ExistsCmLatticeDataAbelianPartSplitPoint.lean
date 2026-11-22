@@ -2,10 +2,10 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.ArchimedeanThetaValues.ModelsAt
-public import Development.AbelianVarietyTheory.Definitions.ArchimedeanThetaValues.PrimAn
-public import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.TraceMulConjIntIffMemOfMulDifferentEqOne
-public import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.FinrankInt
-public import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.FramePeriodsAlongIsotropicFlowAndBlockChange
+public import Development.AbelianVarietyTheory.Definitions.ArchimedeanThetaValues.Bundle0001
+public import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.Bundle0007
+public import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.Bundle0033
+public import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.Bundle0018
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.FundamentalDomains.IsotropicIndexSums
 
 @[expose] public section

@@ -1,8 +1,8 @@
 module
 
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.ArchimedeanSchwartz.ShiftOf
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.SumPermOfNotInjective
-public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.TowerBaseChange
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0175
+public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0083
 
 @[expose] public section
 

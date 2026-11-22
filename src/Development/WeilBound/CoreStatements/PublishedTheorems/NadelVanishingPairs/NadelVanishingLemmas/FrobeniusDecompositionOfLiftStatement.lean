@@ -1,9 +1,8 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Divisors.IsLifted
-public import Development.AbelianVarietyTheory.Definitions.Divisors.CechFam
-public import Development.WeilBound.CoreStatements.PublishedTheorems.NadelVanishingPairs.NadelVanishingLemmas.FrobeniusDecompositionOfLift
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0034
+public import Development.WeilBound.CoreStatements.PublishedTheorems.NadelVanishingPairs.NadelVanishingLemmas.Bundle0012
 
 @[expose] public section
 

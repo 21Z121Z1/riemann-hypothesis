@@ -1,9 +1,9 @@
 module
 
 public import Formalism.SharpRestriction.ParConsts
-public import Formalism.SharpRestriction.GlobalSchurBounds.Chosen
+public import Formalism.SharpRestriction.GlobalSchurBounds.Bundle0001
 public import Formalism.SizeWindowBrackets.SChain
-public import Formalism.SizeWindowBrackets.GaloisToProductIsIso
+public import Formalism.SizeWindowBrackets.Bundle0003
 
 @[expose] public section
 

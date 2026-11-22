@@ -2,7 +2,7 @@ module
 
 public import Formalism.SatakeDualWeyl.DefsCS
 public import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.AdelstabL
-public import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Bridge
+public import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Bundle0008
 
 @[expose] public section
 

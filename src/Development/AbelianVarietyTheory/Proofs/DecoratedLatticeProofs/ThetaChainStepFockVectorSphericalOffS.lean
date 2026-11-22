@@ -1,18 +1,19 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.ChainParSucc
-public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.IntegrandSZero
-public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.ExistsNormLeHeightPow
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.HeisenbergOperatorFixThetaDatumAwaySplitPlaces
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.HeisenbergOrientedFiniteFixesFockPolynomialVecto
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.FockVectorsChainIsVacuumOffThetaLevels
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.PlaceIdempotentUnderEqOfLiesOver
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.RestrictedTensorBasePointNormSq
+public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.Bundle0013
+public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.Bundle0007
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0118
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0119
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0157
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0164
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0128
 public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.EqZeroOfPderivStable
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaVectorFockVacuum
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1016
 public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.RamificationIdxEqOneOfIsSquare
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ThetaChainStepVectorExistsNonzeroVacuumStatement
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0292
+public import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.IsStepWeil
+public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.WeilRepresentationUnitaryPair
 
 @[expose] public section
 
@@ -224,7 +225,7 @@ theorem GlobalTheory.ChainOnto.fock_sph : ∀ D : D7, ForStep D fun c k s s' p =
   classical
   intro D _ c hc k hk s s' hs hs' p hp
   obtain ⟨ξ, f₀, hvec⟩ := hp.vec
-  obtain ⟨hfθ, -, hfv, hpt⟩ := (GlobalTheory.T.thetaChainStep_vector_exists_nonzero_vacuum D c hc ⟨k, hk⟩ s s' hs hs').2 ξ f₀ p.f hvec
+  obtain ⟨hfθ, -, hfv, hpt⟩ := (_root_.GlobalTheory.ChainOnto.StepVecOK.stepVec_exists_vac D c hc ⟨k, hk⟩ s s' hs hs').2 ξ f₀ p.f hvec
   obtain ⟨hvac, e, he, hth⟩ := hvec
   have hψ : IsStdChar D c.ψ (-1) := hc.std
   have hθ : IsInfFam c.θ := hc.inf

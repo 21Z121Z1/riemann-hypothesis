@@ -5,10 +5,9 @@ public import GroundTheory.ProfiniteCohomology.LocalClassFormation.FiniteVanishi
 public import GroundTheory.ProfiniteCohomology.LocalClassFormation.FiniteVanishing.Trivial
 public import GroundTheory.ProfiniteCohomology.LocalClassFormation.FiniteVanishing.FormationThree
 public import GroundTheory.ProfiniteCohomology.CohomologicalDimension.Subgroup
-public import GroundTheory.ProfiniteCohomology.CohomologicalDimension.NotDvdSuperIndexBotOfIsProPGroup
-public import GroundTheory.ProfiniteCohomology.CohomologicalDimension.CdpOpenSubgroupLe
+public import GroundTheory.ProfiniteCohomology.CohomologicalDimension.Bundle0001
 public import GroundTheory.ProfiniteCohomology.CohomologicalDimension.Closed
-public import GroundTheory.ProfiniteCohomology.NotDvdSuperIndexIffMap
+public import GroundTheory.ProfiniteCohomology.Bundle0004
 public import GroundTheory.ProfiniteCohomology.CartierDual
 
 @[expose] public section

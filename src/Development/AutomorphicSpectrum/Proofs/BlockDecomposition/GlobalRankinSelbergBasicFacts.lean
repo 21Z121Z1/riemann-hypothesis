@@ -1,7 +1,7 @@
 module
 
 public import PositivityTheory.AutomorphicForms.PublishedInputs.CuspidalContinuity.ArchimedeanCuspidal.VerticalStrips.UnramifiedEulerProductIntegral
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.OrdUniformizerEqOne
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0569
 
 @[expose] public section
 

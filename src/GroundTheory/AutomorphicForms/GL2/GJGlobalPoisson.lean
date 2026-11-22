@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import GroundTheory.AutomorphicForms.GL2.GJGlobalModulus
-public import GroundTheory.AutomorphicForms.GL2.GJMatrixSchwartz
+public import GroundTheory.AutomorphicForms.GL2.Bundle0004
 
 @[expose] public section
 

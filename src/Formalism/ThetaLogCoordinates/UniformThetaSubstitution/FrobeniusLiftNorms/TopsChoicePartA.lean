@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Formalism.ThetaLogCoordinates.UniformThetaSubstitution.OddLogRelation
-public import Formalism.GaussJetBounds.GaussJetProofs.NormNatCastEqPowPadicValNat
+public import Formalism.GaussJetBounds.GaussJetProofs.Bundle0002
 
 @[expose] public section
 

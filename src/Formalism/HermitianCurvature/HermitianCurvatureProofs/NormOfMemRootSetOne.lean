@@ -1,6 +1,6 @@
 module
 
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.RootPushforwardDensity
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0017
 public import Formalism.HermitianCurvature.StatementG
 
 @[expose] public section

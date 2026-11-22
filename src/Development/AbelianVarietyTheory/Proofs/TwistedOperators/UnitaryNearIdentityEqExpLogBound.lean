@@ -3,7 +3,7 @@ module
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.OneMemNbh
 public import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.ProjExists
-public import Development.AbelianVarietyTheory.Proofs.CovolumeBounds.L2OpNormConjTransposeExpMulSignMulExpSubLe
+public import Development.AbelianVarietyTheory.Proofs.CovolumeBounds.Bundle0004
 
 @[expose] public section
 

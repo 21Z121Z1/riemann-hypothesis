@@ -1,9 +1,9 @@
 module
 
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.HeightTheory.Qdist
-public import ReciprocityTheory.SemistableReduction.TorusL2CauchyInequality
-public import ReciprocityTheory.SemistableReduction.GaussAbsMulOfMonomialOrder
-public import ReciprocityTheory.SemistableReduction.SemiDegCA
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.HeightTheory.Bundle0033
+public import ReciprocityTheory.SemistableReduction.Bundle0025
+public import ReciprocityTheory.SemistableReduction.Bundle0007
+public import ReciprocityTheory.SemistableReduction.Bundle0003
 public import Mathlib.NumberTheory.Height.NumberField
 
 @[expose] public section

@@ -1,7 +1,7 @@
 module
 
 public import Formalism.LocalToGlobal.Columns.ChainLawPhiA
-public import Formalism.LocalToGlobal.Columns.OcbTIntOfStab
+public import Formalism.LocalToGlobal.Columns.Bundle0034
 public import Formalism.LocalToGlobal.Columns.FirstUnfoldingEqZeroOfNotIntegral
 
 @[expose] public section

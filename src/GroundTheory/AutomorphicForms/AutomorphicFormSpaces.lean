@@ -5,7 +5,7 @@ public import GroundTheory.AutomorphicForms.AutomorphicFormSpaces.Archimedean
 public import GroundTheory.AutomorphicForms.AutomorphicFormSpaces.LeftTranslate
 public import GroundTheory.AutomorphicForms.AutomorphicFormSpaces.Height
 public import GroundTheory.AutomorphicForms.AutomorphicFormSpaces.ArchSliceUAction
-public import GroundTheory.AutomorphicForms.AutomorphicFormSpaces.HasModerateGrowthZero
+public import GroundTheory.AutomorphicForms.AutomorphicFormSpaces.Bundle0001
 public import GroundTheory.AutomorphicForms.AutomorphicFormSpaces.Uniform
 public import GroundTheory.AutomorphicForms.AutomorphicFormSpaces.ConstantTerm
 public import GroundTheory.AutomorphicForms.AutomorphicFormSpaces.Translation

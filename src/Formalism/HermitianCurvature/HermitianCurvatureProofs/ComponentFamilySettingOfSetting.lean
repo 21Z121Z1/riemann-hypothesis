@@ -4,7 +4,7 @@ public import Formalism.HermitianCurvature.StatementD
 public import Formalism.HermitianCurvature.HermitianCurvatureProofs.SumDualVectorEqZeta
 public import Formalism.HermitianCurvature.HermitianCurvatureProofs.RestrictionIrrelevantDoubleLevelOperator
 public import Formalism.HermitianCurvature.HermitianCurvatureProofs.OrbitalIntegralAeConvergenceContinuity
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.OperatorPreservesFusionForms
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0061
 
 @[expose] public section
 

@@ -1,6 +1,6 @@
 module
 
-public import Development.AbelianVarietyTheory.Definitions.Divisors.ZeroMemSolSet
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0002
 public import Formalism.UnipotentAdelicQuotients.EllRegCheck
 public import GroundTheory.AutomorphicForms.GKModules.Casimir
 public import GroundTheory.AutomorphicForms.HarishChandraRegularity.ExpHaar

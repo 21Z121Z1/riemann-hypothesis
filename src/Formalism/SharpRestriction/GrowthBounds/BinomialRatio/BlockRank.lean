@@ -1,7 +1,7 @@
 module
 
-public import Formalism.SharpRestriction.GrowthBounds.BinomialRatio.CountDefs
-public import Formalism.SharpRestriction.GrowthBounds.BinomialRatio.SegLow
+public import Formalism.SharpRestriction.GrowthBounds.BinomialRatio.Bundle0004
+public import Formalism.SharpRestriction.GrowthBounds.BinomialRatio.Bundle0006
 public import Formalism.SharpRestriction.GrowthBounds.CountingStatementReduction
 public import Formalism.SharpRestriction.GrowthBounds.ProjectionOfIsotypicDecomposition
 

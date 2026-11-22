@@ -2,15 +2,23 @@ module
 
 public import Mathlib
 public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsFlatAnIffIsConstMul
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.IsValFam
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0062
 public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.IsExcisionNbhdAway
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.EigenLatticeVectorBundleStatement
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LieLatticeEvalAtLocalRingStatement
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.VectorsAtComplexPoint
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LieOmegaLatticeVectorBundle
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.EigenLatticeVectorBundle
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.BdryChart
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.Bundle0005
+public import Development.AutomorphicSpectrum.Definitions.MetricPeriods.ClopenCondOnto
+public import Development.AbelianVarietyTheory.Definitions.Uniformization.PointEqOfSubsingleton
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.BlowupProjections.BlowupProjStatement
+public import Development.AutomorphicSpectrum.PublishedTheorems.Geometry₂.GagaSections
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.Bundle0004
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0141
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0124
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0130
 public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.EigenLatticeConstantRank
 public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LatticeEigenVectorBundle
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LieModelEigenvectorsActionStatement
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0096
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsTransition
 
 @[expose] public section
 
@@ -294,13 +302,13 @@ theorem valFam_eigFrame : ∀ (E : Type) [Field E] [NumberField E] [IsCMField E]
   let z := y ≫ Y.j
   let x : Cpt ξ := ⟨_, h⟩
   have hx : x ∈ Z.genFib := mem_genFib Z y h
-  obtain ⟨-, -, h3, -⟩ := GlobalTheory.T.eigen_lattice_vector_bundle E H D l Xo c O β Y U Z τ hβ hτ
+  obtain ⟨-, -, h3, -⟩ := _root_.GlobalTheory.CompanionTheory.Ar.Flat.isVBOn_eig_genFib E H D l Xo c O β Y U Z τ hβ hτ
   obtain ⟨g, cc, ⟨hcli, hcL⟩, hS⟩ := h3 x hx
   choose S hS using hS
   obtain ⟨ER, _, _, ⟨MR⟩⟩ := lieModel_exists Y.X Y.t.G F z
   obtain ⟨ρF, hρF, -⟩ := lieModel_exists_unique_act _ Y.t.G F z ER MR (𝓞 E) Y.t.act.act Y.t.act.hom Y.t.act.one
     Y.t.act.mul Y.t.act.add
-  obtain ⟨ev, hev1, hev2, hev3⟩ := GlobalTheory.T.lie_lattice_eval_at_local_ring Y.X Y.t.G Z.Ω ξ Z.V Z.M F z h ER MR Z.gen inferInstance
+  obtain ⟨ev, hev1, hev2, hev3⟩ := _root_.GlobalTheory.CompanionTheory.Ar.lieLat_val Y.X Y.t.G Z.Ω ξ Z.V Z.M F z h ER MR Z.gen inferInstance
   have hval : ∀ e : Z.M.lat x, Z.M.ValAt z e (MR.pt (ev e)) := fun e => (hev1 e _).2 ⟨e.2, rfl⟩
   have hEig : ∀ (s : E →+* ℂ) (e : Z.M.lat x), (e : Z.V) ∈ Z.eig s x → ∀ a : 𝓞 E,
       ρF a (ev e) = βF (tauIn c s a) • ev e := by
@@ -367,7 +375,7 @@ theorem valFam_eigFrame : ∀ (E : Type) [Field E] [NumberField E] [IsCMField E]
     intro u
     simp [eigSp, Submodule.mem_iInf, sub_eq_zero]
   have final : IsEigFrame Y.t.act z (βF.comp (tauIn c σ)) (fun k => MR.pt (ev (bL k))) := by
-    refine (((GlobalTheory.T.lie_model_eigenvectors_action Y.X F Y.t.G z ER MR).2 (𝓞 E) Y.t.act ρF _ hρF).2 n _).2 ⟨li, le_antisymm ?_ ?_⟩
+    refine (((_root_.GlobalTheory.CompanionTheory.Ar.Fl.Bridge.comb_eig_frame Y.X F Y.t.G z ER MR).2 (𝓞 E) Y.t.act ρF _ hρF).2 n _).2 ⟨li, le_antisymm ?_ ?_⟩
     · refine Submodule.span_le.2 ?_
       rintro _ ⟨k, rfl⟩
       exact (hmemE _).2 (hEig σ (bL k) (hbmem k))

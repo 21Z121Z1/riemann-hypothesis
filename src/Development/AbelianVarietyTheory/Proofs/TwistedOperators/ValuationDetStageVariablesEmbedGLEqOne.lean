@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.StepLin
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0611
 
 @[expose] public section
 

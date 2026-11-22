@@ -1,7 +1,7 @@
 module
 
 public import Formalism.LocalToGlobal.ProjectiveLattices.IsCombAt
-public import Formalism.LocalToGlobal.ProjectiveLattices.JFDFree
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0006
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.IsHolPeriods
 
 @[expose] public section

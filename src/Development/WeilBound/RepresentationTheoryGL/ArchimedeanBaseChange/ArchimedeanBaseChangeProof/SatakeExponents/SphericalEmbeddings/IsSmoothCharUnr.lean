@@ -7,8 +7,8 @@ public import Development.WeilBound.CoreStatements.AutomorphicKernels.LanglandsE
 public import Development.WeilBound.CoreStatements.AutomorphicKernels.LanglandsExhaustion.LUnlinkedIrrOfSeg
 public import Development.WeilBound.CoreStatements.AutomorphicKernels.LanglandsExhaustion.Outright
 public import Development.WeilBound.RepresentationTheoryGL.GenericUnitaryGL.ComplementarySeries.SegmentJacquetSubquotients.SegmentRepresentation
-public import Development.AbelianVarietyTheory.Definitions.Divisors.EqOfHasValueAtInfinite
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnramifiedPrincipalSeriesNoInvariant
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0004
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0255
 
 @[expose] public section
 

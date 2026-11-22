@@ -1,7 +1,7 @@
 module
 
-public import PositivityTheory.AutomorphicForms.PublishedInputs.NonzeroTypes.NonzeroBasicTwistOfSpecialForm
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.InSupportOfIsSubquotient
+public import PositivityTheory.AutomorphicForms.PublishedInputs.NonzeroTypes.Bundle0012
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0050
 
 @[expose] public section
 

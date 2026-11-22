@@ -2,7 +2,7 @@ module
 
 public import ReciprocityTheory.AnalyticForms.PlurisubharmonicFunctions.PartsAlg
 public import ReciprocityTheory.AnalyticForms.PlurisubharmonicFunctions.MdiscSt
-public import ReciprocityTheory.AnalyticForms.PlurisubharmonicFunctions.LintegralImageEqLintegralNormSqDetMul
+public import ReciprocityTheory.AnalyticForms.PlurisubharmonicFunctions.Bundle0004
 
 @[expose] public section
 

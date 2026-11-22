@@ -1,9 +1,9 @@
 module
 
 public import Development.AutomorphicSpectrum.Statements.GeometryStatements.IsPolLatticePlane
-public import Development.AutomorphicSpectrum.Statements.GeometryStatements.HTChartExists
+public import Development.AutomorphicSpectrum.Statements.GeometryStatements.Bundle0001
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.TwoWeightEqOneAddRoot
-public import Development.WeilBound.CoreStatements.HodgeTatePoints.WeilfunCore
+public import Development.WeilBound.CoreStatements.HodgeTatePoints.Bundle0053
 
 @[expose] public section
 

@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsEqAddOfRedVEq
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsStrictIff
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0582
 public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsFinRepsProjectiveFinrankLeNumberField
 
 @[expose] public section

@@ -1,15 +1,15 @@
 module
 
-public import Formalism.LocalRingCardinality.DataExtra
+public import Formalism.LocalRingCardinality.Bundle0007
 public import Formalism.LocalRingCardinality.HostCls
-public import Formalism.LocalRingCardinality.DataDIVDefs
+public import Formalism.LocalRingCardinality.Bundle0003
 public import Formalism.SharpRestriction.ParConsts
 public import Formalism.SharpRestriction.ParamsHeightRankConstant
 public import Formalism.SharpRestriction.GrowthBounds.SmallOrderPrimes
 public import Formalism.SharpRestriction.GrowthBounds.FormalGroupSystem
 public import Formalism.SharpRestriction.Divisibility.LocalQuadraticParts
-public import Formalism.SharpRestriction.RamificationFrobenius.TotientGaloisClasses.DvdCondNIffCls
-public import Development.AutomorphicArithmetic.OrbitLabellings.NotIsCsOfGIdx
+public import Formalism.SharpRestriction.RamificationFrobenius.TotientGaloisClasses.Bundle0002
+public import Development.AutomorphicArithmetic.OrbitLabellings.Bundle0002
 
 @[expose] public section
 

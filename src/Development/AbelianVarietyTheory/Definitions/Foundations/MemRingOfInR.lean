@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Divisors.HasQIff
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0001
 public import Development.AbelianVarietyTheory.Definitions.Foundations.ExpUpper
-public import ReciprocityTheory.ReductiveGroups.UnramifiedIntegrals.ModJTau
+public import ReciprocityTheory.ReductiveGroups.UnramifiedIntegrals.Bundle0007
 
 @[expose] public section
 

@@ -1,16 +1,16 @@
 module
 
 public import Mathlib
-public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.GermCut
+public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0006
 public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.GermBGen
-public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.ChartPrimTrPfA
-public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.IntChartPf
-public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.ExistsTruncatedIntegralChart
+public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0022
+public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0019
+public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0010
 public import Formalism.LocalToGlobal.ProjectiveLattices.PlaceBelow
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.SecBaseChangeAnySt
-public import Development.AbelianVarietyTheory.Proofs.FormalGroupCharts.IntegralChartTransportToFramedPointStatement
-public import Development.AbelianVarietyTheory.Proofs.FormalGroupCharts.IntegralChartsCompleteDvrStatement
-public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.ExistsIntChartFrTrunc
+public import Development.AbelianVarietyTheory.Proofs.FormalGroupCharts.IntegralChartTransportToFramedPoint
+public import Development.AbelianVarietyTheory.Proofs.FormalGroupCharts.Bundle0035
+public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0041
 
 @[expose] public section
 
@@ -26,7 +26,7 @@ theorem intChart_exists : ∀ (E : Type) [Field E] [NumberField E] [IsCMField E]
   intro E _ _ _ H Dw l Xo c _
   have h3 : (∀ a : 𝓞 E, star a = H.bar a) → ∀ (T : CDVR) (io : c.F →+* T.Fr) (y : IntFr Xo c T io),
       ∃ C : IntegralChartA3 Xo c T io y, FrTrunc C.I.G (𝟙 (Sp T.V)) (chD C.ch) C.xT C.eT := fun hs =>
-    GlobalTheory.IntChartTrunc.exists_intChart_frTrunc GlobalTheory.T.integral_charts_complete_dvr E H Dw l Xo c hs (GlobalTheory.T.integralChart_transport_to_framedPoint E H Dw l Xo c)
+    GlobalTheory.IntChartTrunc.exists_intChart_frTrunc _root_.GlobalTheory.intChart E H Dw l Xo c hs (_root_.GlobalTheory.chartTransport_holds E H Dw l Xo c)
   refine ⟨fun hs T io y => ⟨(h3 hs T io y).choose⟩, fun hs => ?_, h3⟩
   unfold IntChartEx
   intros

@@ -3,13 +3,15 @@ module
 public import Development.WeilBound.RepresentationTheoryGL.HolomorphicDiscreteSeries.WeightOccurrence.OccSome
 public import Development.WeilBound.RepresentationTheoryGL.HolomorphicDiscreteSeries.EmbeddedFrames.PfD
 public import Development.WeilBound.CoreStatements.BranchingTraces.ContinuousEmb
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.HilbertSchmidtNormSubmultiplicativeStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CommutatorCoerciveOnAnnihilatorStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CommutantAnnihilatingVectorZeroStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.PartialFractionCoefficientSignsStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.InterlacingSignatureParityStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsUnitaryInterlacingRealizationStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.TraceDiagonalBlockConjugateFormulaStatement
+public import Mathlib
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0034
+public import Formalism.RealPlaceAnalysis.Bundle0001
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0054
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0027
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0064
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0243
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0088
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0068
 
 @[expose] public section
 
@@ -70,7 +72,7 @@ theorem frame : PositivityTheory.RgHe.Frame := by
         exact hj ((hs2 j).2 h')
       rw [he.neg_one_pow, one_mul] at h
       linarith
-  obtain ⟨g, X, hgU, hXg, hblk, hβ⟩ := GlobalTheory.T.exists_unitary_interlacing_realization n ε d ε' d' e hF.1 hF.2 hinj hD hR
+  obtain ⟨g, X, hgU, hXg, hblk, hβ⟩ := _root_.GlobalTheory.CompanionTheory.RgHeFrame.build n ε d ε' d' e hF.1 hF.2 hinj hD hR
   set J := Jm ε with hJ
   have hJJ : J * J = 1 := Jm_mul_self ε
   have h2 : (J * gᴴ * J) * g = 1 := by
@@ -95,7 +97,7 @@ theorem frame : PositivityTheory.RgHe.Frame := by
     have hcyc : ∀ A : Matrix (Fin (n + 1)) (Fin (n + 1)) ℂ, A * X = X * A → A *ᵥ v = 0 → A = 0 := by
       intro A hA hAv
       rw [hX] at hA
-      exact GlobalTheory.T.commutant_annihilating_vector_zero g _ v hdet hdi (fun i => by rw [hinv]; exact hβ i) A hA hAv
+      exact _root_.GlobalTheory.CompanionTheory.RgHeFrame.commutant_cyclic_eq_zero g _ v hdet hdi (fun i => by rw [hinv]; exact hβ i) A hA hAv
     obtain ⟨c, hc, hAc⟩ := GlobalTheory.T.commutator_coercive_on_annihilator X v hcyc
     refine ⟨c * hs g * hs g⁻¹ + 1, by have := hs_nonneg' g; have := hs_nonneg' g⁻¹; positivity, fun h => ?_⟩
     set B := emb e (um h) with hB
@@ -124,8 +126,8 @@ theorem frame : PositivityTheory.RgHe.Frame := by
     have i1 := hAc (B - 1) hAv
     rw [key] at i1
     have i2 : hs (B * (g * δ * g⁻¹)) ≤ hs B * (hs g * hs δ * hs g⁻¹) := by
-      refine (GlobalTheory.T.hilbert_schmidt_norm_submultiplicative _ _).trans (mul_le_mul_of_nonneg_left ?_ (hs_nonneg' _))
-      refine (GlobalTheory.T.hilbert_schmidt_norm_submultiplicative _ _).trans (mul_le_mul_of_nonneg_right (GlobalTheory.T.hilbert_schmidt_norm_submultiplicative _ _) (hs_nonneg' _))
+      refine (_root_.GlobalTheory.CompanionTheory.RgHe.hs_mul_le_mul _ _).trans (mul_le_mul_of_nonneg_left ?_ (hs_nonneg' _))
+      refine (_root_.GlobalTheory.CompanionTheory.RgHe.hs_mul_le_mul _ _).trans (mul_le_mul_of_nonneg_right (_root_.GlobalTheory.CompanionTheory.RgHe.hs_mul_le_mul _ _) (hs_nonneg' _))
     have i3 : hs (um h - 1) = hs (B - 1) := (hs_emb_sub (e := e) (um h)).symm
     rw [i3]
     have := hs_nonneg' B; have := hs_nonneg' δ; have := hs_nonneg' g; have := hs_nonneg' g⁻¹

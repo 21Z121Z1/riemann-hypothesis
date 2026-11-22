@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Formalism.PeriodIntegrals.WhitFunctDual
+public import Formalism.PeriodIntegrals.Bundle0015
 
 @[expose] public section
 

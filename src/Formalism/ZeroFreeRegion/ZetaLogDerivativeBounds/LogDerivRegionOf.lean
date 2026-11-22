@@ -1,7 +1,7 @@
 module
 
 public import Formalism.ZeroFreeRegion.SmallHeightLogDeriv
-public import Formalism.ZeroFreeRegion.ZetaLogDerivativeBounds.LdrMid
+public import Formalism.ZeroFreeRegion.ZetaLogDerivativeBounds.Bundle0006
 
 @[expose] public section
 

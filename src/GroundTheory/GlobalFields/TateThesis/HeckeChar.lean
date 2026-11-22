@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import GroundTheory.GlobalFields.IdeleGroups.ClassGroup
-public import GroundTheory.GlobalFields.TateThesis.ConductorIdeal
+public import GroundTheory.GlobalFields.TateThesis.Bundle0005
 
 @[expose] public section
 

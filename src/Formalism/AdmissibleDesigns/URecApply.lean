@@ -1,9 +1,9 @@
 module
 
-public import Formalism.AdmissibleDesigns.KoEquivSmul
+public import Formalism.AdmissibleDesigns.Bundle0009
 public import Formalism.AdmissibleDesigns.H1MapMemLcH1
 public import Formalism.AdmissibleDesigns.FiniteClassesContinuousLattice
-public import Formalism.AdmissibleDesigns.DisplayForms
+public import Formalism.AdmissibleDesigns.Bundle0004
 
 @[expose] public section
 

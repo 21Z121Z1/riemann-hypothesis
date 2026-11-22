@@ -1,7 +1,7 @@
 module
 
 public import Formalism.SharpRestriction.GrowthBounds.MonomialFactorials.RestrictedBoundsWeakenFromSevenToSix
-public import Formalism.SharpRestriction.GrowthBounds.MonomialFactorials.MemLevelsIff
+public import Formalism.SharpRestriction.GrowthBounds.MonomialFactorials.Bundle0012
 
 @[expose] public section
 

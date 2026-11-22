@@ -5,7 +5,7 @@ public import Formalism.LocalToGlobal.KernelLattices.ColInst
 public import Formalism.LocalToGlobal.KernelLattices.KernelLocalFactors.ColInst
 public import Formalism.LocalToGlobal.Columns.ChainInstY
 public import Formalism.LocalToGlobal.KernelLattices.KernelLocalFactors.KerEquivFr
-public import Formalism.LocalToGlobal.KernelLattices.KernelLocalFactors.KerEquivGen
+public import Formalism.LocalToGlobal.KernelLattices.KernelLocalFactors.Bundle0001
 
 @[expose] public section
 

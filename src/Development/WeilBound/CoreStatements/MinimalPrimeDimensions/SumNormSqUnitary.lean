@@ -2,8 +2,8 @@ module
 
 public import Mathlib
 public import Development.WeilBound.CoreStatements.MinimalPrimeDimensions.GenIdeal
-public import Development.WeilBound.CoreStatements.HomogeneousNonvanishing.VuSelfKnownTheorem
-public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.EqOfIsometricTrivShift
+public import Development.WeilBound.CoreStatements.HomogeneousNonvanishing.Bundle0014
+public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.Bundle0012
 
 @[expose] public section
 

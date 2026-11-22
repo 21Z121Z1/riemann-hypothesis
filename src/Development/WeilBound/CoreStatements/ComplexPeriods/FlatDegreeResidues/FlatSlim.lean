@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.FlatDegreeStOfResKGaga
-public import Development.AutomorphicSpectrum.Proofs.GlobalProofs.GagaSections
+public import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.Bundle0036
+public import Development.AutomorphicSpectrum.Proofs.GlobalProofs.Bundle0042
 
 @[expose] public section
 

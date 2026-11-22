@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Divisors.EndValuedForm11Coeffs
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsLogCutoffBoundedPoincareGradient
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0037
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1100
 
 @[expose] public section
 

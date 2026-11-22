@@ -3,7 +3,7 @@ module
 public import Formalism.GradedWeylDivisibility.FinalD
 public import Formalism.GradedWeylDivisibility.StatementE
 public import Formalism.GradedWeylDivisibility.FockSpaceTableaux.FockQHW
-public import Formalism.GradedWeylDivisibility.FockSpaceTableaux.FockQWordAdj
+public import Formalism.GradedWeylDivisibility.FockSpaceTableaux.Bundle0014
 public import Formalism.PieriBlockIdeals.PieriColumnMinors.BinaryFormsExample
 
 @[expose] public section

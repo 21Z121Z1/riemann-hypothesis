@@ -1,6 +1,6 @@
 module
 
-public import Formalism.LocalToGlobal.InertKernelTheory.StatementIota
+public import Formalism.LocalToGlobal.InertKernelTheory.Bundle0001
 
 @[expose] public section
 

@@ -1,6 +1,6 @@
 module
 
-public import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.PVerticalTwistGenDeg
+public import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.Bundle0025
 
 @[expose] public section
 

@@ -6,7 +6,7 @@ public import GroundTheory.ProfiniteCohomology.RestrictedRamification.ClassField
 public import GroundTheory.ProfiniteCohomology.RestrictedRamification.BaseChangePlaces
 public import GroundTheory.ProfiniteCohomology.RestrictedRamification.BrauerFrob
 public import GroundTheory.ProfiniteCohomology.LocalClassFormation.CupSymbolSep
-public import GroundTheory.ProfiniteCohomology.LocalClassFormation.CupSymbolNorm
+public import GroundTheory.ProfiniteCohomology.LocalClassFormation.Bundle0001
 public import GroundTheory.ProfiniteCohomology.GlobalClassFormation.SymbolBridge
 public import GroundTheory.ProfiniteCohomology.PoincareDuality.Torsion
 public import GroundTheory.GlobalFields.TateThesis.ChebotarevAbelian

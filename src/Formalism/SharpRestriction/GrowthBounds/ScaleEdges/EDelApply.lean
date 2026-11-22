@@ -1,6 +1,6 @@
 module
 
-public import Formalism.SharpRestriction.GrowthBounds.ScaleEdges.SPbound
+public import Formalism.SharpRestriction.GrowthBounds.ScaleEdges.Bundle0006
 
 @[expose] public section
 

@@ -4,12 +4,12 @@ public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.Divisors.InvVolConjLevelOne
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ValuationLeOneOfMem
 public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.ExistsUniqueIdeleOfLinearEquivQuotientLocal
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsPolynomialModelCoefficientSpaceRealPoints
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0215
 public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.PrimeDvdAbsNormHalfDifferent
 public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsLatticeOfAdelicPoint
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DefNodeIsV
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FockVacEqJets
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AntiDiagonalEpsilonGramMulVec
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1725
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2724
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1128
 
 @[expose] public section
 

@@ -1,9 +1,9 @@
 module
 
-public import Formalism.PieriBlockIdeals.FactorialValuationSum
+public import Formalism.PieriBlockIdeals.Bundle0005
 public import Formalism.PieriBlockIdeals.PieriColumnMinors.LabelSumNeedsLeFalse
 public import Formalism.PieriBlockIdeals.PieriColumnMinors.DividedPowerZeroZeroVector
-public import Formalism.PieriBlockIdeals.PieriColumnMinors.LastGradedImpliesOneBlock
+public import Formalism.PieriBlockIdeals.PieriColumnMinors.Bundle0004
 
 @[expose] public section
 

@@ -2,13 +2,16 @@ module
 
 public import Development.AutomorphicArithmetic.Foundations.IwahoriReduction.SiegelFixedPoints.IsThBIff
 public import Development.AbelianVarietyTheory.Definitions.Foundations.IsLamOfLSmulIff
-public import Development.AutomorphicArithmetic.Foundations.IwahoriReduction.SiegelFixedPoints.IsAdmissibleSmoothingFactorAddIntVector
+public import Development.AutomorphicArithmetic.Foundations.IwahoriReduction.SiegelFixedPoints.Bundle0002
 public import Development.AutomorphicArithmetic.Foundations.IwahoriReduction.SiegelFixedPoints.ConstInt
-public import Development.AutomorphicArithmetic.Foundations.IwahoriReduction.SiegelFixedPoints.DvdOfModEq
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.SiegelUnitEdgeClassKummerDlogCongruenceStatement
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.IsLogDerivQExpansionModPrimePowRescaleStatement
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.SmoothedEisensteinFxCoefficientSeqOneMemSubringStatement
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.EisensteinModularTowers.NormalModularTowerTopAlgebraModel
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0269
+public import Mathlib
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0103
+public import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0010
+public import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0003
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0039
+public import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0001
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.EisensteinModularTowers.Bundle0002
 
 @[expose] public section
 
@@ -134,7 +137,7 @@ private theorem smF_mem [IsAlgClosed Ω] [CharZero Ω] (A : ValuationSubring Ω)
   have hz : ∀ e : ℤ, eOm ε (1 / (M : ℚ)) ^ e ∈ A := fun e => by
     refine root_mem A hM.ne' ?_
     rw [← zpow_natCast, ← zpow_mul, mul_comm, zpow_mul, zpow_natCast, hζ.pow_eq_one, one_zpow]
-  exact GlobalTheory.T.smoothedEisensteinFxCoefficientSeq_one_mem_subring Ω A.toSubring c M _ a b hM hc h (hz b) (hz (-b)) k
+  exact _root_.GlobalTheory.KummerEisensteinGalois.smF_one_mem_subring Ω A.toSubring c M _ a b hM hc h (hz b) (hz (-b)) k
 
 private theorem not_dvd_of {l M : ℕ} {a : ℤ} (h : l ∣ M) (ha : ¬ (l : ℤ) ∣ a) : ¬ (M : ℤ) ∣ a :=
   fun h1 => ha ((Int.natCast_dvd_natCast.2 h).trans h1)
@@ -243,7 +246,7 @@ theorem UpperTheory.Kd.L.one :
   intro s hs hSt t ht φ hφ r
   have hsi : s⁻¹ ∈ fixMu Ω (topMu l n m N) := inv_mem hs
   obtain ⟨φ', hφ'⟩ := rescale_series φ hD0
-  have hdl := (GlobalTheory.T.isLogDerivQExpansionModPrimePow_rescale ε X hj l A hA n (N * N) _ _ φ φ' hNN hφ').1 hφ
+  have hdl := (_root_.GlobalTheory.Glue.isDl_rescale ε X hj l A hA n (N * N) _ _ φ φ' hNN hφ').1 hφ
   have hq : (((topMu l n m N : ℕ) : ℚ)) / ((N * N : ℕ) : ℚ) = (l : ℚ) ^ (m + n) := by
     have : ((N * N : ℕ) : ℚ) ≠ 0 := hD0.ne'
     rw [topMu, Nat.cast_mul, mul_div_assoc, div_self this, mul_one, Nat.cast_pow]

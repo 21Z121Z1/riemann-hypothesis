@@ -3,19 +3,18 @@ module
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.IsDualDualRep
 public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.PoitouTateNineTermTransgressionZeroApply
-public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.CohDimTwoLocalOfLocalFiniteness
-public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.ContinuousCycMod
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsPlaceOverMoveValCc
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.GaloisTwistedSelmerAuxprimesOfMatrixAndBounds
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.NotXPowSuccDvdDetOfFirstOrderKernelEqZeroStatement
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsNotXPowDvdAdjugateOfFirstOrderKernelStatement
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.LaurentDegenerationFirstOrderKernelStatement
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FinrankKerMapLeOfFirstOrderKernelExtStatement
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsUnitCoeffOfNotXPowDvdLineStatement
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.TameLocalRelationDualNumberCocycleStatement
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ContinuousAndResidualTrivComplexConjStatement
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.RelaxedResidualSelmerMemUnrelaxedStatement
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.MatrixComputesTwistedSelmerResidualTransferStatement
+public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.Bundle0002
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0305
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0302
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0037
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0055
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0032
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0024
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0369
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0382
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0336
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0375
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0379
 
 @[expose] public section
 
@@ -133,7 +132,7 @@ theorem core (hT : TameQuotient) (hG : GalHyp bkP i s) (hF : FirstHalf i s) (hR 
       Module.finrank K (LinearMap.ker (Ψ.map fun p => p.coeff 0).mulVecLin) ≤ 2 * D.R.r * R + e := by
   classical
   obtain ⟨hAux, ⟨z, L, -, -, hSt⟩, hPa⟩ := id hP
-  obtain ⟨hcont, hcj⟩ := GlobalTheory.T.continuous_and_residualTriv_complexConj D N X
+  obtain ⟨hcont, hcj⟩ := _root_.GlobalTheory.ResConjTriv.continuous_cConj_and_resTriv D N X
   have hcj := hcj i s hG.2.2.1
   have hφ' : ∀ a, φ' a = cConj X (φ a) := fun a => AlgEquiv.ext (hPa a).2.2
   let k := IsLocalRing.ResidueField (X.O0 i)
@@ -157,7 +156,7 @@ theorem core (hT : TameQuotient) (hG : GalHyp bkP i s) (hF : FirstHalf i s) (hR 
   obtain ⟨c0, hc0⟩ := hcor k hk hsurj ρ hρ
   let aug : abelian₂ X i M (Fin R ⊕ Fin R) →ₐ[X.O0 i] k := MonoidAlgebra.lift (X.O0 i) _ _ 1
   have haug : ∀ δ, aug (MonoidAlgebra.of (X.O0 i) _ δ) = 1 := fun δ => by simp [aug]
-  obtain ⟨E, hEi, hEs, hEz⟩ := GlobalTheory.T.matrixComputesTwistedSelmer_residual_transfer D N X bkP i s M _ d Q a _ hC k (hchar k hk) hsurj aug haug
+  obtain ⟨E, hEi, hEs, hEz⟩ := _root_.GlobalTheory.ResSel.Transfer.computes_transfer D N X bkP i s M _ d Q a _ hC k (hchar k hk) hsurj aug haug
   have hev : ∀ g, ResTriv i s g → ∃ ev : H1 (red i k (Tgl i s)) →ₗ[k] (Fin D.R.r → k),
       ∀ z : Z1 (red i k (Tgl i s)), ev (cl z) = z.1 g := fun g hg => exists_ev _ g (red_triv hk hg)
   choose ev hev using hev
@@ -199,7 +198,7 @@ theorem core (hT : TameQuotient) (hG : GalHyp bkP i s) (hF : FirstHalf i s) (hR 
     · have := hli.map' E (LinearMap.ker_eq_bot.2 hEi)
       have e1 : (fun j => cl (z0 j)) = E ∘ x0 := funext hz0
       rwa [e1]
-  obtain ⟨K, _, _, σ, hK⟩ := GlobalTheory.T.laurent_degeneration_first_order_kernel k
+  obtain ⟨K, _, _, σ, hK⟩ := _root_.GlobalTheory.laurent_degeneration k
   letI : Algebra (X.O0 i) K := ((algebraMap k K).comp (algebraMap (X.O0 i) k)).toAlgebra
   haveI : IsScalarTower (X.O0 i) k K := IsScalarTower.of_algebraMap_eq' rfl
   have hKr : IsRes i K := fun x hx => by
@@ -227,7 +226,7 @@ theorem core (hT : TameQuotient) (hG : GalHyp bkP i s) (hF : FirstHalf i s) (hR 
   refine ⟨K, inferInstance, inferInstance, b, _, hKr, rfl, fun x0 x1 hx => ?_, ?_⟩
   swap
   · rw [h0]
-    refine (GlobalTheory.T.finrank_ker_map_le_of_first_order_kernel_ext k K a e _ _ (t.comp E) (u.comp E) hdeg).trans (le_of_eq ?_)
+    refine (_root_.GlobalTheory.finrank_ker_map_le_of_first_order_kernel k K a e _ _ (t.comp E) (u.comp E) hdeg).trans (le_of_eq ?_)
     simp only [Module.finrank_pi_fintype, Module.finrank_prod, Module.finrank_self, Finset.sum_const, Finset.card_univ,
       Fintype.card_fin, smul_eq_mul]
     ring
@@ -338,7 +337,7 @@ theorem resBound : TameLocal → ∀ (D : Formalism.BasicNotions.D7) (N : NData 
     exact Matrix.ext fun p q => (hΘ p q).symm
   refine ⟨fun hcor F hFd => ?_, fun hcor => ?_⟩
   · obtain ⟨K, _, _, b, Ψ, hK, rfl, h1, h2⟩ := core bkP i s hT.1 hG hF hR hM1 hP hQ _ hC zero_le_one hcor
-    have h3 := GlobalTheory.T.not_X_pow_succ_dvd_det_of_first_order_kernel K a (4 * D.R.r * R) _ h1 (h2.trans (by nlinarith))
+    have h3 := _root_.GlobalTheory.not_X_pow_succ_dvd_det_of_first_order_kernel_eq_zero K a (4 * D.R.r * R) _ h1 (h2.trans (by nlinarith))
     rw [← AlgHom.mapMatrix_apply, ← AlgHom.map_det] at h3 hFd
     obtain ⟨m, hm, hu⟩ := GlobalTheory.T.exists_unit_coeff_of_not_X_pow_dvd_line D N X i M _ K hK b _ (by omega) F _ hFd h3
     exact ⟨m, by omega, hu⟩

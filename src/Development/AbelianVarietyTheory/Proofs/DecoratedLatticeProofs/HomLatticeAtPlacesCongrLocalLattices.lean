@@ -2,9 +2,9 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.ProdDat
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.TensorOneApply
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.OneSubIdemQMulSelf
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.LatticesAgreeAlmostEverywhere
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0347
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0342
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0096
 
 @[expose] public section
 

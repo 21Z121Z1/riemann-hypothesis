@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.WittDecomposition.Nondeg
+public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.WittDecomposition.Bundle0001
 public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.WittDecomposition.EnlargeStep
 
 @[expose] public section

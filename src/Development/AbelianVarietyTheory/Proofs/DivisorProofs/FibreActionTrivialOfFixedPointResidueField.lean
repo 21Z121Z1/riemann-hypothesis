@@ -2,9 +2,10 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GrpObjPullG
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsSmallTorsionSetForEndomorphismStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FiniteCardTorsionQuotSmulTopLePowFinrankStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PowMapsTorsionIntoSmulTopStatement
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1916
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1875
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0049
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0095
 
 @[expose] public section
 
@@ -246,7 +247,7 @@ theorem fib_gen (I : Ideal (𝓞 E)) (g : ℕ) (hNP : NeatPrime I g (Dw.p + Dw.q
 
   have hcount : ∃ T : Finset (𝟙_ (Over (Sp K)) ⟶ (Over.pullback t).obj G'), T.card ≤ g ^ (Dw.p + Dw.q) ∧
       ∀ z : 𝟙_ (Over (Sp K)) ⟶ (Over.pullback t).obj G', (∀ a ∈ I, z ≫ actT.act a = 1) → z ∈ T := by
-    obtain ⟨hfin, hcard⟩ := GlobalTheory.T.finite_card_torsion_quot_smul_top_le_pow_finrank (𝓞 E) Dw.La I l.Mb hImax hIfin (mb_ne_bot l)
+    obtain ⟨hfin, hcard⟩ := _root_.GlobalTheory.TorsionCount.torsion_card (𝓞 E) Dw.La I l.Mb hImax hIfin (mb_ne_bot l)
     let f : setOf tor → {y : GlobalTheory.IndefiniteRowSideFullHecke.LevelStructureAutomorphisms.LevelMod Dw l // ∀ a ∈ I, a • y = 0} := fun z => ⟨e (β z.1), hEtors z.2⟩
     have hf : Function.Injective f := fun z z' h => Subtype.ext (hinj z.2 z'.2 (congrArg Subtype.val h))
     haveI : Finite (setOf tor) := Finite.of_injective f hf
@@ -259,7 +260,7 @@ theorem fib_gen (I : Ideal (𝓞 E)) (g : ℕ) (hNP : NeatPrime I g (Dw.p + Dw.q
       _ = g ^ (Dw.p + Dw.q) := by rw [hcardI, Dw.rank]
 
   obtain ⟨m₀, hm₀⟩ := hU g0
-  obtain ⟨j, hj⟩ := GlobalTheory.T.exists_pow_apply_mem_smul_univ_of_torsion (𝓞 E) Dw.La I l.Mb (liftLa (iota g0) - 1) m₀ hImax (mb_ne_bot l) hm₀
+  obtain ⟨j, hj⟩ := _root_.GlobalTheory.pow_maps_torsion_into_smul_top (𝓞 E) Dw.La I l.Mb (liftLa (iota g0) - 1) m₀ hImax (mb_ne_bot l) hm₀
   have hunip : ∀ z : 𝟙_ (Over (Sp K)) ⟶ (Over.pullback t).obj G', (∀ a ∈ I, z ≫ actT.act a = 1) →
       (fun z : 𝟙_ (Over (Sp K)) ⟶ (Over.pullback t).obj G' => (z ≫ α) * z⁻¹)^[j] z = 1 := by
     intro z hz
@@ -285,7 +286,7 @@ theorem fib_gen (I : Ideal (𝓞 E)) (g : ℕ) (hNP : NeatPrime I g (Dw.p + Dw.q
     apply hinj h1 tor_one
     rw [h2, hE1, Submodule.Quotient.mk_eq_zero]
     exact hj Y hYt
-  exact GlobalTheory.T.exists_small_torsion_set_for_endomorphism E K ((Over.pullback t).obj G') actT α (Nat.card Γ) j g (Dw.p + Dw.q) I
+  exact _root_.GlobalTheory.NeatUnip.finite_order_unipotent_eq_id E K ((Over.pullback t).obj G') actT α (Nat.card Γ) j g (Dw.p + Dw.q) I
     (IsSemiAbelian.pullback t G' hS) hmon hact hn hiter hNP.1 hNP.2.1 hNP.2.2.1 hNP.2.2.2 hcount hunip
 
 end Gen

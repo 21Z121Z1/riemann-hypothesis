@@ -1,12 +1,12 @@
 module
 
-public import Development.DiscreteGroups.GlobalIrreducibility.DzBigDef
+public import Development.DiscreteGroups.GlobalIrreducibility.Bundle0014
 public import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.TypeConditions.IsPotCrysAtOfMono0
 public import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.StringRepresentations.FrobDualOfTripleAttN
 public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.RankOneCuspidalUnitaryCharEquivApplySymm
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.MonodromyTrivialEverywhere
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ConjOfFrobeniusMatch
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.GeneralAdmissibleOfIrreducibilityStmt
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0706
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0698
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0263
 
 @[expose] public section
 

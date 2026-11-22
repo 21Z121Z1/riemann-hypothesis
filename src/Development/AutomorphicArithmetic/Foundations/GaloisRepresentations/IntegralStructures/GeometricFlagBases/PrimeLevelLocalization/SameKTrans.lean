@@ -1,7 +1,7 @@
 module
 
 public import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.IntegralStructures.GeometricFlagBases.PrimeLevelLocalization.PrimeProj
-public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Plc
+public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0049
 
 @[expose] public section
 

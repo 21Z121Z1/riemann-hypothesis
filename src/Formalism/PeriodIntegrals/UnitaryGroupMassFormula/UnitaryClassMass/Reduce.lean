@@ -1,6 +1,6 @@
 module
 
-public import Formalism.PeriodIntegrals.UJClassMass
+public import Formalism.PeriodIntegrals.Bundle0019
 public import Formalism.ThetaLiftIndependence.ThetaOrbitSums.LatLiftIndep
 
 @[expose] public section

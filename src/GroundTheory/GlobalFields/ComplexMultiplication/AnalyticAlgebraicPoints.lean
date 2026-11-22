@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import GroundTheory.GlobalFields.ComplexMultiplication.AnalyticAlgebraicGerm
-public import GroundTheory.GlobalFields.ComplexMultiplication.UniformizationGroup
+public import GroundTheory.GlobalFields.ComplexMultiplication.Bundle0003
 public import GroundTheory.ArithmeticGeometry.AbelianVarieties.DualIsogeny
 
 @[expose] public section

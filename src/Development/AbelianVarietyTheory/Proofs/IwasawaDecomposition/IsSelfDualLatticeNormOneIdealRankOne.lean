@@ -2,10 +2,10 @@ module
 
 public import Mathlib
 public import Formalism.LocalToGlobal.KernelLattices.KernelLocalFactors.ColInst
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ColRecCEvBijective
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.NuRowSuccEqWt
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0469
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0159
 public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ThetaDistributionUnfolded
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.OrdSubDetSubStdL
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0259
 public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.H90USurjective
 
 @[expose] public section

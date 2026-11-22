@@ -1,8 +1,8 @@
 module
 
 public import GroundTheory.GlobalFields.TateThesis.DedekindZetaContinuation
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.DedekindZetaEulerProductMulSubOneEntireNeZero
-public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.OneSubRePosOfNormLeHalf
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0206
+public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.Bundle0004
 
 @[expose] public section
 

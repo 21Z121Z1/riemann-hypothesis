@@ -1,19 +1,23 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IsContent
-public import Development.WeilBound.RepresentationTheoryGL.SiegelWeil.ArchimedeanSiegelWeil.PlaceIntegrals.ZeroBlockCoefficientInductionLeftStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.HyperbolicSumNondegenerateFrame
-public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.SummableOneDivAbsNormSq
-public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.LocalLatticeCompactOpenUnitVolumeStatement
-public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.CompletionIsLocalRingStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LocalContentZetaSeriesStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.PrimitiveVectorsContentDecompositionStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LocalIsotropicOrbitOfE0Statement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LocalUnitScalingLatticeMeasureStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LocalRankOneZeroFibreVolumeStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LocalSiegelWeilUnramifiedMeasureStatement
-public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.ContDiffOnChartGlobalWhittakerCoefficientStatement
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0538
+public import Development.WeilBound.RepresentationTheoryGL.SiegelWeil.ArchimedeanSiegelWeil.PlaceIntegrals.ZeroBlockCoefficientInductionLeft
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0518
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0537
+public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.Bundle0017
+public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.Bundle0043
+public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.CompletionIsLocalRing
+public import CompanionTheory.SpectralGeometry.CountingDefinitions.AdelicEulerProducts.IsEulerProd
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0585
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.PrimitiveVectorsContentDecomposition
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0673
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LocalUnitScalingLatticeMeasure
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0567
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LocalSiegelWeilUnramifiedMeasure
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0496
+public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.Bundle0049
+public import CompanionTheory.SpectralGeometry.CountingDefinitions.AdelicEulerProducts.HypJ
 
 @[expose] public section
 
@@ -23,8 +27,8 @@ open scoped TensorProduct ENNReal NNReal Matrix
 open GlobalTheory.CompanionTheory.WeilSiegel.Frame GlobalTheory.CompanionTheory.WeilSiegel.Free GlobalTheory.CompanionTheory.WeilSiegel.HypStep GlobalTheory.CompanionTheory.WeilSiegel.HypMass
 theorem finite_lt : ∀ (F E : Type) [Field F] [NumberField F] [Field E] [NumberField E] [Algebra F E] (σ : E →ₐ[F] E), IsCMExt F E σ → ∀ (M : ℕ) (J : Matrix (Fin M) (Fin M) E), IsHermND σ J → ∀ p : ℕ, 1 ≤ p → 2 * p < M → ∀ (h₀ : ∀ a b : Fin p, σ ((0 : Matrix (Fin p) (Fin p) E) b a) = (0 : Matrix (Fin p) (Fin p) E) a b) (d : ℕ) (b : Module.Basis (Fin d) F E) (v : HeightOneSpectrum (𝓞 F)) (lam : Measure (Fv F v)), IsStdV v lam → ∀ (m : HermR (Fv F v) σ p → Measure (Fin p → Fin M → Fv F v ⊗[F] E)), IsGramFibFree (Fv F v) σ J p (coordW (Fv F v) b lam p M) (coordHerm (Fv F v) σ b lam p) m → m (hermOf (Fv F v) σ (0 : Matrix (Fin p) (Fin p) E) h₀) (latV b v) < ⊤ := by
   intro F E _ _ _ _ _ σ hσ M J hJ p hp hM h₀ d b v lam hlam m hm
-  have hL := GlobalTheory.T.contDiffOn_chart_globalWhittakerCoefficient F E σ hσ d b p M v
-  exact lt_top_iff_ne_top.2 (GlobalTheory.T.local_siegel_weil_unramified_measure F E σ hσ M J hJ p hp hM d b v lam hlam m hm _ (latV b v) hL.1 hL.2).2.1
+  have hL := _root_.GlobalTheory.CompanionTheory.SW.LatCpt.latV_compact_open F E σ hσ d b p M v
+  exact lt_top_iff_ne_top.2 (_root_.GlobalTheory.CompanionTheory.AvgFree.avgFree_tendsto F E σ hσ M J hJ p hp hM d b v lam hlam m hm _ (latV b v) hL.1 hL.2).2.1
 
 end GlobalTheory.CompanionTheory.WeilSiegel.HypMass.HH
 
@@ -112,11 +116,11 @@ theorem good_local (F E : Type) [Field F] [NumberField F] [Field E] [NumberField
           m₁ (hermOf (Fv F v) σ (0 : Matrix (Fin 1) (Fin 1) E) h₂) (primV σ J b v) *
             ENNReal.ofReal (zetaV E v (M + 1)) := by
   have hJ' : IsHermND σ (hypOne J) := (GlobalTheory.CompanionTheory.WeilSiegel.HypStep.hypOne_isHermND_and_e0_mem F E σ hσ M J hJ).1
-  filter_upwards [GlobalTheory.T.local_content_zeta_series F E σ hσ d b, GlobalTheory.T.primitive_vectors_content_decomposition F E σ hσ M J hJ d b] with v hc hp lam hlam m m₁ m' hm hm₁ hm'
+  filter_upwards [_root_.GlobalTheory.CompanionTheory.WeilSiegel.HypMass.Content.content F E σ hσ d b, _root_.GlobalTheory.CompanionTheory.WeilSiegel.HypMass.PrimDec.eventually_primV_decomposition F E σ hσ M J hJ d b] with v hc hp lam hlam m m₁ m' hm hm₁ hm'
   obtain ⟨ι, hι, c, w, hC, hZ⟩ := hc
   obtain ⟨pM, pL, pD, pE⟩ := hp ι c w hC
   obtain ⟨c1, c2, c3, -, -⟩ := hC
-  have hloc : IsLocR (Fv F v) := GlobalTheory.T.completion_is_local_ring F v
+  have hloc : IsLocR (Fv F v) := _root_.GlobalTheory.CompanionTheory.SW.LocFv.isLocR_Fv F v
   obtain ⟨r1, r2, r3, r4, -⟩ := id hloc
   haveI := r1
   haveI := r2
@@ -204,7 +208,7 @@ theorem good_local (F E : Type) [Field F] [NumberField F] [Field E] [NumberField
       have : Ideal.absNorm v.asIdeal = 0 := by simpa [qv] using h0
       exact v.ne_bot (Ideal.absNorm_eq_zero_iff.1 this)
     have ha : qv v ^ w i ≠ 0 := pow_ne_zero _ hq0
-    have hs := GlobalTheory.T.local_rank_one_zero_fibre_volume F E σ hσ (M + 2) (hypOne J) hJ' (by omega) h₂ d b v lam hlam m₁ hm₁ (c i) (qv v ^ w i) t
+    have hs := _root_.GlobalTheory.CompanionTheory.WeilSiegel.HypMass.ScaleFib.mass_scalT F E σ hσ (M + 2) (hypOne J) hJ' (by omega) h₂ d b v lam hlam m₁ hm₁ (c i) (qv v ^ w i) t
       (c1 i).1 ha (c2 i lam hlam) ht1 (by rw [ht2]; push_cast; rfl) (A i) (hAm i)
     have hset : {y | scalT (c i) y ∈ A i} = P := by
       ext y
@@ -231,19 +235,19 @@ theorem good_local (F E : Type) [Field F] [NumberField F] [Field E] [NumberField
     simp only [hr]
     rw [← ENNReal.ofReal_tsum_of_nonneg (fun i => by positivity) h.summable, h.tsum_eq]
   refine ⟨?_, ?_⟩
-  · obtain ⟨Ψ, hΨm, hΨ, hint⟩ := GlobalTheory.T.zero_block_coefficient_induction_left F E σ hσ M J hJ n hn1 hnM h₀ h₁ h₂ (Fv F v) hloc d b lam hlam.1 m m₁ m'
+  · obtain ⟨Ψ, hΨm, hΨ, hint⟩ := _root_.GlobalTheory.CompanionTheory.WeilSiegel.HypStage.local_stages F E σ hσ M J hJ n hn1 hnM h₀ h₁ h₂ (Fv F v) hloc d b lam hlam.1 m m₁ m'
       hm hm₁ hm' ((latV b v).indicator 1) (measurable_one.indicator hlatM')
     rw [lintegral_indicator_one hlatM'] at hint
     set L' := m' (hermOf (Fv F v) σ (0 : Matrix (Fin n) (Fin n) E) h₀) (latV b v) with hL'
     have hval : ∀ i, ∀ y ∈ A i, Ψ y = (((qv v ^ w i : ℝ≥0) : ℝ≥0∞)) ^ n * L' := by
       rintro i y ⟨y₀, hy₀, rfl⟩
-      obtain ⟨g, hg1, hg2⟩ := GlobalTheory.T.local_unit_scaling_lattice_measure F E σ hσ M J hJ n d b v lam hlam
+      obtain ⟨g, hg1, hg2⟩ := _root_.GlobalTheory.CompanionTheory.WeilSiegel.HypMass.StageVal.stageInt_primV F E σ hσ M J hJ n d b v lam hlam
         (m' (hermOf (Fv F v) σ (0 : Matrix (Fin n) (Fin n) E) h₀)) (c i) (qv v ^ w i) (c1 i).1 (c1 i).2
         (c2 i lam hlam) y₀ hy₀
       rw [← hg1, hΨ g, hg2]
     have hz : ∀ᵐ y ∂(m₁ S₁), y ∉ ⋃ i, A i → Ψ y = 0 := by
       filter_upwards [hfree, hlatE] with y hy hl hyA
-      obtain ⟨g, rfl⟩ := GlobalTheory.T.local_isotropic_orbit_of_e0 F E σ hσ M J hJ v y hy.1 hy.2
+      obtain ⟨g, rfl⟩ := _root_.GlobalTheory.CompanionTheory.WeilSiegel.HypOrbit.exists_actW_e0_eq F E σ hσ M J hJ v y hy.1 hy.2
       rw [hΨ g]
       exact stageInt_zero σ J b lam _ g (hl hyA)
     rw [hint, lintegral_pieces (m₁ S₁) A hAm hAd Ψ _ hval hz]

@@ -1,7 +1,7 @@
 module
 
 public import Formalism.SizeWindowBrackets.FirstPrimeNeSecondPrime
-public import Formalism.ThickAverageLoss.ThickAverageProofs.Balance
+public import Formalism.ThickAverageLoss.ThickAverageProofs.Bundle0001
 
 @[expose] public section
 

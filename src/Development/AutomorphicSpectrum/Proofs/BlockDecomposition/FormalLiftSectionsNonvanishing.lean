@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SubPairRight
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ThickeningRestrictionCompatibleOpens
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0265
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0273
 
 @[expose] public section
 

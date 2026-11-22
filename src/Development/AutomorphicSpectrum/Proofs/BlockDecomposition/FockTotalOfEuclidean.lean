@@ -1,10 +1,10 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FockTranslateSchwartzMajorant
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.IkedaPartialFourierIntegralMemAdelicSchwartz
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0516
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0220
 public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.GaussianIsSchwartzFunction
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TamePartRight
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1360
 
 @[expose] public section
 

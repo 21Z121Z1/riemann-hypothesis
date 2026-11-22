@@ -1,6 +1,6 @@
 module
 
-public import Formalism.SharpRestriction.GenusPolyhedralBounds.RelativeIndexClassSets.WeightedPrimeSumBound
+public import Formalism.SharpRestriction.GenusPolyhedralBounds.RelativeIndexClassSets.Bundle0002
 public import Formalism.SharpRestriction.InertJacobiLevels.HostFam
 public import Formalism.SharpRestriction.Divisibility.WeightAlgebra
 public import Formalism.SharpRestriction.Divisibility.LocalNonemptiness.WeightFamilies

@@ -1,8 +1,8 @@
 module
 
 public import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.ArchimedeanGelfandKernels.LeftEquivariantFunctions.ComplexMatrixCalculus.InverseLineDerivatives.TraceModelAlgebra.TraceOnModel
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.TrETransposeEqPhiSeq
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.GelfandValueNegation
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0203
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0207
 public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.GelfandOperatorCenterExpansion
 
 @[expose] public section

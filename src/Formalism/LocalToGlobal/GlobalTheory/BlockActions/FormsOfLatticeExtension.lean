@@ -1,10 +1,9 @@
 module
 
-public import Formalism.LocalToGlobal.GlobalTheory.GL6.ValuationClassTranslateMem
+public import Formalism.LocalToGlobal.GlobalTheory.GL6.Bundle0004
 public import Formalism.LocalToGlobal.GlobalTheory.BlockActions.ClassMapEstimateOfPartial
-public import Formalism.LocalToGlobal.GlobalTheory.BlockActions.ExistsOnOfPosDef
-public import Formalism.LocalToGlobal.GlobalTheory.BlockActions.TilEqLevel
-public import Formalism.LocalToGlobal.GlobalTheory.BlockActions.DefNOfFact
+public import Formalism.LocalToGlobal.GlobalTheory.BlockActions.Bundle0003
+public import Formalism.LocalToGlobal.GlobalTheory.BlockActions.Bundle0002
 
 @[expose] public section
 

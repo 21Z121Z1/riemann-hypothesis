@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import GroundTheory.AutomorphicForms.PartialDifferential.EllipticSolutions
+public import GroundTheory.AutomorphicForms.PartialDifferential.Bundle0002
 
 @[expose] public section
 

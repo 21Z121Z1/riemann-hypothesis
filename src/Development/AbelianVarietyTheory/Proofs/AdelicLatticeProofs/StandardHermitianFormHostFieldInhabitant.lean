@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.AdelicHermitianForms.IsHermForm
-public import Formalism.LocalToGlobal.ProjectiveLattices.ThClass
+public import Development.AbelianVarietyTheory.Definitions.AdelicHermitianForms.Bundle0002
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0026
 
 @[expose] public section
 

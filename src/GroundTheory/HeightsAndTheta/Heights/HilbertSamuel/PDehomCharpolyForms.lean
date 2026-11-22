@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsDehomCharpolyForms
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PPullFormsGeneric
+public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0076
+public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0082
 
 @[expose] public section
 

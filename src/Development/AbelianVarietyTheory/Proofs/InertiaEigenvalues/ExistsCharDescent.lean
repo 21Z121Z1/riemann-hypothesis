@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExistsDvrExtensionEmbedding
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0052
 
 @[expose] public section
 

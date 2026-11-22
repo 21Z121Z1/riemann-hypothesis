@@ -1,6 +1,6 @@
 module
 
-public import Formalism.PeriodIntegrals.HermLatFin
+public import Formalism.PeriodIntegrals.Bundle0003
 
 @[expose] public section
 

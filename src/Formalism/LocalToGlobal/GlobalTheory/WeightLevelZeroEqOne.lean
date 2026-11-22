@@ -1,6 +1,6 @@
 module
 
-public import Formalism.LocalToGlobal.GlobalTheory.ActAllCancelInv
+public import Formalism.LocalToGlobal.GlobalTheory.Bundle0005
 public import Formalism.LocalToGlobal.GlobalTheory.GramNDetNe
 
 @[expose] public section

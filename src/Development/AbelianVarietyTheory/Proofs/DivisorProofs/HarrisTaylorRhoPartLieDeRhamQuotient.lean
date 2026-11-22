@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CrysActApply
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.QActMSubAlgebraMap
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HarrisTaylorLieConditionModHodgeFiltration
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1945
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0098
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle3091
 
 @[expose] public section
 

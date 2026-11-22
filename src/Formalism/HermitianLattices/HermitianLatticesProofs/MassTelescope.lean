@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Formalism.HermitianLattices.StatementMass
+public import Formalism.HermitianLattices.Bundle0003
 public import Formalism.HermitianLattices.HermitianLatticesProofs.MassBasic
 
 @[expose] public section

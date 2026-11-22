@@ -1,23 +1,23 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Divisors.KerDatTuple
-public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.NormalFam
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.OneMapOfOfExtends
-public import Development.AbelianVarietyTheory.Definitions.Divisors.GenReads
-public import Formalism.LocalToGlobal.IndefiniteReal.RhoGeo
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0035
+public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.Bundle0015
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1656
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0034
+public import Formalism.LocalToGlobal.IndefiniteReal.Bundle0027
 public import Formalism.LocalToGlobal.IndefiniteReal.FWExist
-public import Development.AbelianVarietyTheory.Definitions.Divisors.IsDeltaDelAtOwnAt
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.BaseRatAtOfPhaseOne
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsAdelicLiftEqGeometricClassSumAllTuples
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsFrameConstantsOfCharacterisationCore
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConstUpToCenter
-public import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.EmbeddingsDifferOnInteger
-public import Development.AbelianVarietyTheory.Definitions.Divisors.ReadsOnlyOmegaFree
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0054
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0509
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1707
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1645
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1724
+public import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.Bundle0076
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0036
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LatticeEmbeddingIdealLevel
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsIsometryInGam
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MemHalfOfSmul
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsConstEqInvChar
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1694
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1684
 
 @[expose] public section
 

@@ -3,9 +3,9 @@ module
 public import Mathlib
 public import CompanionTheory.AutomorphicTheory.PieriRules.PieriDegreeBounds.Imports
 public import Development.AbelianVarietyTheory.Definitions.Jets.SumIoPr
-public import Formalism.RealPlaceAnalysis.StatementE
-public import Formalism.RealPlaceAnalysis.StatementKT
-public import CompanionTheory.AutomorphicTheory.PieriRules.ThetaBesselIsometries.DualTensorCapelliIntertwineStatement
+public import Formalism.RealPlaceAnalysis.Bundle0003
+public import Formalism.RealPlaceAnalysis.Bundle0002
+public import CompanionTheory.AutomorphicTheory.PieriRules.ThetaBesselIsometries.Bundle0005
 public import CompanionTheory.AutomorphicTheory.PieriRules.ThetaBesselIsometries.IsDSOfIsDG
 
 @[expose] public section
@@ -141,7 +141,7 @@ theorem rawTens : PI.KFinSmooth → ∀ (k r : ℕ) (ε : Fin (2 * r + k + 1) �
       (by
         intro s a b y c
         apply Subtype.ext
-        rw [lm_coe, hF s a b y, GlobalTheory.T.dual_tensor_capelli_intertwine hK k r ε mu R hR RI muI io pr hRI hT s _ y y.2 c,
+        rw [lm_coe, hF s a b y, _root_.Gp91.GlobalTheory.dualTens_io_dC hK k r ε mu R hR RI muI io pr hRI hT s _ y y.2 c,
           Submodule.coe_sub, hE a b, Submodule.coe_sum]
         rfl)
       (by

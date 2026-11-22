@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.ProjFrameGraphChart
+public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0083
 
 @[expose] public section
 

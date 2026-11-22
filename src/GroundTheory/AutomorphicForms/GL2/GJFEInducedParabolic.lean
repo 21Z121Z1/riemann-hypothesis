@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import GroundTheory.AutomorphicForms.GL2.GJFEInducedTensor
-public import GroundTheory.AutomorphicForms.InductionParabolicLocal
+public import GroundTheory.AutomorphicForms.Bundle0016
 
 @[expose] public section
 

@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.CommutativeAlgebra.InvariantSubspaceMobiusInverseRecEqOfFinrankLt
-public import Development.AbelianVarietyTheory.Proofs.CharacterTheory.InvariantSubspaceMobiusInverseCharpolyLinearEquiStatement
-public import Development.AbelianVarietyTheory.Proofs.CharacterTheory.CharpolyEqFinsumPsiStatement
+public import Development.AbelianVarietyTheory.Definitions.CommutativeAlgebra.Bundle0001
+public import Development.AbelianVarietyTheory.Proofs.CharacterTheory.Bundle0008
+public import Development.AbelianVarietyTheory.Proofs.CharacterTheory.Bundle0012
 
 @[expose] public section
 

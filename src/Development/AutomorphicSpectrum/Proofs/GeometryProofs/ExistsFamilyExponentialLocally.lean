@@ -1,15 +1,14 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.ExponentialFamilyPeriods
-public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsHodgeGram
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.Bundle0009
 public import Development.AbelianVarietyTheory.Definitions.Uniformization.PointEqOfSubsingleton
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LocalHolomorphicExponentialChartStatement
-public import Development.AutomorphicSpectrum.Proofs.MetricProofs.RiemannFormPeriodDeterminantStatement
-public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.IdealSheafComapIdealAffineOpenOfIsAffine
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PullbackSections.HolomorphicFamilies.HolPairA
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.IsHolToOfComponents
-public import Development.AbelianVarietyTheory.Proofs.ToricGeometry.TopLePreimageOfValAtNeZero
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0150
+public import Development.AutomorphicSpectrum.Proofs.MetricProofs.Bundle0008
+public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.Bundle0003
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PullbackSections.HolomorphicFamilies.Bundle0004
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0038
+public import Development.AbelianVarietyTheory.Proofs.ToricGeometry.Bundle0018
 public import Development.AbelianVarietyTheory.Proofs.CovolumeBounds.DifferentiableOnOfTendstoLocallyUniformlyOn
 
 @[expose] public section
@@ -507,7 +506,7 @@ namespace GlobalTheory.CompanionTheory.Ar.Flat
 open ExpLoc in
 theorem exists_famExp_near : ∀ (R : Type) [CommRing R] (G : Over (Sp R)) [GrpObj G] [IsCommMonObj G] (g n : ℕ) (M : LieModel G (𝟙 (Sp R)) (Fin g → R)) (B : Set (Fin n → ℂ)) (ψ : (Fin n → ℂ) → (R →+* ℂ)), Smooth G.hom → IsHolPts B ψ → ∀ b₀ ∈ B, ∃ ε : ℝ, 0 < ε ∧ ball b₀ ε ⊆ B ∧ Nonempty (FamExp G M (ball b₀ ε) ψ) := by
   intro R _ G _ _ g n M B ψ hsm hψ b₀ hb₀
-  obtain ⟨V, t, N, f, ε, Ψ, hε, hsub, hΨ, hfib, δ, hδ, hret⟩ := GlobalTheory.T.local_holomorphic_exponential_chart R G g n M B ψ hsm hψ b₀ hb₀
+  obtain ⟨V, t, N, f, ε, Ψ, hε, hsub, hΨ, hfib, δ, hδ, hret⟩ := _root_.GlobalTheory.CompanionTheory.Ar.Flat.exp_chart R G g n M B ψ hsm hψ b₀ hb₀
   have hone : ∀ b ∈ ball b₀ ε, Ψ b 0 = 1 := fun b hb => (hfib b hb).1
   have hder := fun b hb => (hfib b hb).2.1
   have hV : ∀ b ∈ ball b₀ ε, ∀ z ∈ ball (0 : Fin g → ℂ) ε, ⊤ ≤ (Ψ b z).left ⁻¹ᵁ V :=
@@ -518,7 +517,7 @@ theorem exists_famExp_near : ∀ (R : Type) [CommRing R] (G : Over (Sp R)) [GrpO
       (∀ j, ‖valAt' x.left V (f j) - valAt' (Ψ b₀ 0).left V (f j)‖ < δ) →
       coord V t x ∈ ball (0 : Fin g → ℂ) ε ∧ x = Ψ b (coord V t x) := hret
   obtain ⟨hman, hm0, hK, hunit, hcomm, hassoc⟩ := chartMul_law (f := f) hε hδ hΨ hone hV ht hret'
-  obtain ⟨L, hLan, hL0, hLadd⟩ := GlobalTheory.T.holomorphic_group_law_germ n g b₀ (chartMul V t Ψ) hman hunit hcomm hassoc
+  obtain ⟨L, hLan, hL0, hLadd⟩ := _root_.GlobalTheory.CompanionTheory.Ar.Flat.exists_local_log_of_commutative_law n g b₀ (chartMul V t Ψ) hman hunit hcomm hassoc
   obtain ⟨Λ, hΛan, hLΛ, hΛL⟩ := exists_family_inverse b₀ L hLan hL0
   have hsl := family_inverse_slices b₀ L Λ hΛan hL0 hLΛ hΛL
   have hΛ0 : Λ (b₀, 0) = 0 := hsl.self_of_nhds.1

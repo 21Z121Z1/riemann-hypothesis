@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Formalism.PolynomialDimension.DigitClassSize
+public import Formalism.PolynomialDimension.Bundle0002
 
 @[expose] public section
 

@@ -1,7 +1,7 @@
 module
 
 public import Formalism.LocalToGlobal.GlobalTheory.GL1.CompactFixesLattice.MemClosureOfMemSS
-public import Formalism.LocalToGlobal.GlobalTheory.GL1.CompactFixesLattice.Imports
+public import Formalism.LocalToGlobal.GlobalTheory.GL1.CompactFixesLattice.Bundle0001
 
 @[expose] public section
 

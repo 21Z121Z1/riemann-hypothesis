@@ -1,6 +1,6 @@
 module
 
-public import Formalism.SharpRestriction.GrowthBounds.MultisetValuation.ThLinKConst
+public import Formalism.SharpRestriction.GrowthBounds.MultisetValuation.Bundle0024
 
 @[expose] public section
 

@@ -2,9 +2,9 @@ module
 
 public import Mathlib
 public import GroundTheory.ProfiniteCohomology.GaloisModules.CoeGalRootsOfUnityHomApply
-public import GroundTheory.LocalFields.HerbrandLocalBase
+public import GroundTheory.LocalFields.Bundle0005
 public import GroundTheory.LocalFields.UnitsGalois
-public import GroundTheory.TateCohomology.Characters
+public import GroundTheory.TateCohomology.Bundle0005
 
 @[expose] public section
 

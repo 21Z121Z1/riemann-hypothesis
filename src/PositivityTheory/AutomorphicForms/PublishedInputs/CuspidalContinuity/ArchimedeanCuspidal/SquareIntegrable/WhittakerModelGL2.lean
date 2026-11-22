@@ -1,7 +1,7 @@
 module
 
 public import PositivityTheory.AutomorphicForms.PublishedInputs.CuspidalContinuity.ArchimedeanCuspidal.AdFormOf
-public import GroundTheory.AutomorphicForms.GL2.GodementSectionLocal
+public import GroundTheory.AutomorphicForms.GL2.Bundle0003
 
 @[expose] public section
 

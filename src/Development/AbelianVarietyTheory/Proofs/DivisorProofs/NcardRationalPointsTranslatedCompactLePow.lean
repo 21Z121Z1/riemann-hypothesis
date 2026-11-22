@@ -1,11 +1,11 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Divisors.IsSmoothVector
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0033
 public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsCompactAdele
-public import Development.AbelianVarietyTheory.Proofs.HeightProofs.NormInfSubmultiplicativeLeAdelicHeight
-public import Development.AbelianVarietyTheory.Proofs.HeightProofs.UnitaryAdelicHeightCosetLeNormInfPow
-public import Development.AbelianVarietyTheory.Proofs.HeightProofs.CmTypeRestrictRealSubfieldInfinitePlaceBijective
+public import Development.AbelianVarietyTheory.Proofs.HeightProofs.Bundle0030
+public import Development.AbelianVarietyTheory.Proofs.HeightProofs.Bundle0031
+public import Development.AbelianVarietyTheory.Proofs.HeightProofs.Bundle0021
 
 @[expose] public section
 

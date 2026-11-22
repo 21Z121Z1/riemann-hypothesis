@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicArithmetic.Foundations.Convolution.IntegrableConvolution.ClosedProperAlt
-public import Development.AutomorphicArithmetic.Foundations.Convolution.IntegrableConvolution.CvBasic
+public import Development.AutomorphicArithmetic.Foundations.Convolution.IntegrableConvolution.Bundle0001
+public import Development.AutomorphicArithmetic.Foundations.Convolution.IntegrableConvolution.Bundle0002
 
 @[expose] public section
 

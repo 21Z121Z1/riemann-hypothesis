@@ -1,19 +1,19 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.PartFixed
-public import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.IsVacFOfIsVacVec
-public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.UnifModGrowthOfIsUnifModerate
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.LocallyCompactSecondCountableT2
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.IsWeilDatumConjNegHermitianSpaces
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ThetaHeisenbergConjugationNegHermitianSpace
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ExistsWeilDatumHermitianPair
+public import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.Bundle0007
+public import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.Bundle0002
+public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.Bundle0007
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0156
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0129
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0123
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0185
 public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.WeilDatumTransportSourceRationalIsometry
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ThetaTensorRuleTargetOrthogonalSum
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.HeisenbergVacuumCommutantPreservesLatticeVacua
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.UnitaryQuotientHeightOrthogonalSumComparableStatement
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.TameFunctionalVacuumIrreducibilityStatement
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.WeilKernelFunctionalSuperpositionIsTameStatement
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0258
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0345
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0356
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0519
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0376
 
 @[expose] public section
 
@@ -116,7 +116,7 @@ theorem tame_double {S X T L : HSp D} (o : OrthDec X T L) {χS χX : (AE D)ˣ �
   have := (GlobalTheory.MemberAdelicTop.locallyCompact_secondCountable_t2 D T).1
   have := vS.haar
   have := vT.haar
-  obtain ⟨C, a, hC⟩ := GlobalTheory.T.unitaryQuotientHeight_orthogonalSum_comparable D X T L o
+  obtain ⟨C, a, hC⟩ := _root_.GlobalTheory.HtOrth.quotHeight_orthDec_cmp D X T L o
   have hC0 : 0 ≤ C := by
     by_contra hneg
     push Not at hneg
@@ -150,7 +150,7 @@ theorem tame_double {S X T L : HSp D} (o : OrthDec X T L) {χS χX : (AE D)ˣ �
           ≤ ‖φ y.1‖ * ‖u y.2‖ * (C ^ k * (quotHeight S y.1 ^ k * quotHeight T y.2 ^ (a * k))) :=
             mul_le_mul_of_nonneg_left hpow (mul_nonneg (norm_nonneg _) (norm_nonneg _))
         _ = C ^ k * (‖φ y.1‖ * quotHeight S y.1 ^ k * (‖u y.2‖ * quotHeight T y.2 ^ (a * k))) := by ring
-  exact GlobalTheory.T.weilKernelFunctional_superposition_isTame D ψ S X χS χX omX hX (GA D S × GA D T) ((vS.μ.restrict vS.𝓕).prod (vT.μ.restrict vT.𝓕))
+  exact _root_.GlobalTheory.KerTame.kernel_tame D ψ S X χS χX omX hX (GA D S × GA D T) ((vS.μ.restrict vS.𝓕).prod (vT.μ.restrict vT.𝓕))
     (fun y => φ y.1 * u y.2) (fun y => y.1) (fun y => o.emb (y.2, 1)) (fun _ => 0)
     ((hφ.2.1.comp continuous_fst).mul (hu.2.1.comp continuous_snd)).measurable continuous_fst hemb continuous_const hint
 
@@ -267,7 +267,7 @@ theorem upLast : ∀ D : D7, UpLast D := by
   push Not at hcon
   apply hne
   rw [← hval Ξ hΞ.1]
-  refine GlobalTheory.T.tame_functional_vacuum_irreducibility D ψ hψ J.W₀ X ΓX _ hTame _ hbox hf₀ (fun w hw => ?_) Ξ hΞ
+  refine _root_.GlobalTheory.Irr.irr D ψ hψ J.W₀ X ΓX _ hTame _ hbox hf₀ (fun w hw => ?_) Ξ hΞ
   obtain ⟨hw1, hw2⟩ := hLL.ann w hw
   have hΦ := (GlobalTheory.Asc.annVac D ψ hψ J.W T Γ).1 f₁ hf₁ _ hw1
   have hΦ₀ := (GlobalTheory.Asc.annVac D ψ hψ J.W₀ (negSp L'') ΓL).1 f₂ hf₂ _ hw2

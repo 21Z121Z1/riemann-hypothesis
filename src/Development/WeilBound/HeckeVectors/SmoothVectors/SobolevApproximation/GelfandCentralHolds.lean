@@ -1,8 +1,8 @@
 module
 
 public import Development.WeilBound.HeckeVectors.SmoothVectors.SobolevApproximation.SobApproxHolds
-public import Formalism.LocalToGlobal.IndefiniteReal.SmExpSmulContDiff
-public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.AnalyticVectors.Unitary
+public import Formalism.LocalToGlobal.IndefiniteReal.Bundle0022
+public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.AnalyticVectors.Bundle0002
 public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.DiscreteSeriesExistence.Smooth
 public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.HighestWeights.WeylBridge
 

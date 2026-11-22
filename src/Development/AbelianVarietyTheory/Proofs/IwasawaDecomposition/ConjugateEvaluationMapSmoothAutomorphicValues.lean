@@ -2,20 +2,19 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Statements.CuspFrameWeights.DiscreteSpectrumKFiniteDecomposition
-public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.ExistsNormLeHeightPow
-public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.DiscreteSeriesUpqUniqueOfClassification
-public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.ConcreteLevelAdelicSubset
+public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.Bundle0007
+public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.Bundle0002
+public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.Bundle0015
 public import Formalism.LocalToGlobal.IndefiniteReal.SquareIntegrableTransfer
-public import Formalism.LocalToGlobal.SiegelLatticeTheory.FlagStabilizerTensors.RootLatticeThresholds.EvalTOnto
-public import Formalism.LocalToGlobal.SiegelLatticeTheory.FlagStabilizerTensors.RootLatticeThresholds.EvalTOntoRep
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.PiCongrLeftUpdate
+public import Formalism.LocalToGlobal.SiegelLatticeTheory.FlagStabilizerTensors.RootLatticeThresholds.Bundle0026
+public import Formalism.LocalToGlobal.SiegelLatticeTheory.FlagStabilizerTensors.RootLatticeThresholds.Bundle0029
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0251
 public import Formalism.LocalToGlobal.IndefiniteReal.ZeroPartEigenvalueConvention
-public import Formalism.LocalToGlobal.IndefiniteReal.RationalEmbedding
+public import Formalism.LocalToGlobal.IndefiniteReal.Bundle0012
 public import Formalism.LocalToGlobal.SiegelLatticeTheory.FlagStabilizerTensors.RowLevelMatch
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ModelIdentificationRespectsRealAndFinite
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ConjugateEvaluationMapIntertwinesRealPlaces
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ConjIntertwinerPointValueSobolevContinuous
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ConjugateIntertwinerValuesSmoothAutomorphic
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0154
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0182
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0197
 
 @[expose] public section
 
@@ -42,7 +41,7 @@ theorem equiv_gen {D : D7} (X : Formalism.L2.SG.HidaSetting.HidaSetting D) (h : 
     (hrep : ∀ u : M.Vec, ∃ ψ, Formalism.L2.SG.EvalTOntoRep.IsContRep X (Φ (X.B.tens (GlobalTheory.ConjRowMult.vecC X M c u))) ψ) :
     ∀ τ : D.what₂.Tau, ∀ g ∈ Formalism.QuantumDeterminants.UH (gramAt D (D.sp.Y 0) τ), ∀ (v : M.Vec) (w : M.sm τ), (w : M.H τ) = M.rep τ g (v τ) → GlobalTheory.ConjRowMult.conjMap X M c Φ h t (Function.update v τ w) = rTr (D.sp.Y 0) (atTau θ (D.sp.Y 0) τ g) (GlobalTheory.ConjRowMult.conjMap X M c Φ h t v) := by
   intro τ g hg v w hw
-  obtain ⟨hfin, -, hreal, -⟩ := GlobalTheory.T.modelIdentification_respects_real_and_finite D X h θ hθ hιE
+  obtain ⟨hfin, -, hreal, -⟩ := _root_.GlobalTheory.Core.Mi.SeeReal.realSplit_of_idE D X h θ hθ hιE
   obtain ⟨ha2, ha1, -⟩ := hreal τ g hg
   set a := iotaX X h (atTau θ (D.sp.Y 0) τ g) with ha
   have hvec : vecC X M c (Function.update v τ w) =
@@ -239,7 +238,7 @@ theorem conjMap_isAutFunSm_gen {D : D7} (X : Formalism.L2.SG.HidaSetting.HidaSet
       rw [this, mul_one, pow_zero, mul_one]
     have hn' : 1 ≤ X.B.I.n := by rw [← rank_eq X h]; exact hn
     have hti : (iotaX X h t⁻¹).1 = 1 := hfst _ ((GfC _).inv_mem ht)
-    obtain ⟨m, hm⟩ := GlobalTheory.T.derivativeClosedClass_bounded_by_inverseLeastSize X.B hn' hg
+    obtain ⟨m, hm⟩ := _root_.GlobalTheory.SobolevBound.derivative_closed_class_bound X.B hn' hg
     refine ⟨m, fun v x => ?_⟩
     obtain ⟨C, hC⟩ := hm (Set.range f) (by
       rintro _ ⟨u, rfl⟩

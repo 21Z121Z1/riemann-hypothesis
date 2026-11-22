@@ -1,21 +1,23 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.AlgWeightHighestWeightExistsUniqueAntitoneStatement
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.AlgebraicWeightPolyMatrixMultiplicativeStatement
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsPolynomialRepGLComplexAlgebraicWeightEvalPointStatement
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsBorelEigenvectorOfPolynomialRepGLComplexStatement
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.SpanRationalPointOrbitAlgebraicWeight
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0317
+public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.RingSpecNormalisedCharacterEq
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0051
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0040
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0049
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0037
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0059
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0046
 public import Formalism.LocalToGlobal.Columns.MtAdWtIrr
-public import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.HwFixEx
-public import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.HwFixLine
+public import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.Bundle0026
 public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.HighestWeightConjugacy.GLDense
 public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.UnivChar
-public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.NoFormsOff
+public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0029
 public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.SubsetTwistExceptionalPlaces
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FrameEquivApply
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0695
 public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.ExistsUniqueHcharOfFiniteOrder
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.MulVecEqProdSmul
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0815
 
 @[expose] public section
 
@@ -60,7 +62,7 @@ theorem exists_beig_mem {Ψ : GL (Fin n) ℂ → Matrix κ κ ℂ} (hΨ : IsPoly
       refine ⟨∑ l, (∑ k, MvPolynomial.C (Pm i k) * Q k l) * MvPolynomial.C (I l j), fun B => ?_⟩
       set_option synthInstance.maxHeartbeats 100000 in
         simp only [Matrix.mul_apply, map_sum, map_mul, MvPolynomial.eval_C, hQ]
-  obtain ⟨w, lam, hw0, hw⟩ := GlobalTheory.T.exists_borelEigenvector_of_polynomialRepGLComplex n _ _ hR
+  obtain ⟨w, lam, hw0, hw⟩ := _root_.GlobalTheory.AlgWtHW.exists_isBEig_of_isPolyRep n _ _ hR
   refine ⟨e w, heS w, lam, fun h => hw0 (he (by rw [h, map_zero])), fun B hB => ?_⟩
   have h1 := hw B hB
   simp only [hact] at h1
@@ -411,7 +413,7 @@ theorem iso_of_hwAt (a a' : AlgWt L n) (lam : ι → Fin n → ℤ) (ha : ∀ τ
       exact bot_ne_top (α := Subrepresentation c.ρ)
         (Subrepresentation.toSubmodule_injective (Subsingleton.elim _ _))
     haveI := b.index_nonempty
-    obtain ⟨h1, h2⟩ := GlobalTheory.T.algebraicWeight_polyMatrix_multiplicative L n c κ b P hP'
+    obtain ⟨h1, h2⟩ := _root_.GlobalTheory.AlgWtMul.evM_mul L n c κ b P hP'
     have hone : evM P (upt (ptOf emb (1 : ι → GL (Fin n) ℂ))) = 1 := by rw [ptOf_one emb hinj hcm hall, h1]
     have hmul : ∀ g h : ι → GL (Fin n) ℂ, evM P (upt (ptOf emb (g * h))) =
         evM P (upt (ptOf emb g)) * evM P (upt (ptOf emb h)) := fun g h => by
@@ -465,8 +467,8 @@ theorem exists_equiv_VV : ∀ (L : Type) [Field L] [NumberField L] [IsCMField L]
     obtain ⟨t, h | h⟩ := hall σ
     · exact ⟨t, Or.inr (by rw [h, mtwConj, conj_conj])⟩
     · exact ⟨t, Or.inl h⟩
-  choose mu hmu using fun τ => (GlobalTheory.T.algWeight_highestWeight_exists_unique_antitone L n a (mtwConj emb τ)).1.exists
-  let lam : ι → DomWeight n := fun τ => ⟨mu τ, (GlobalTheory.T.algWeight_highestWeight_exists_unique_antitone L n a (mtwConj emb τ)).2 _ (hmu τ)⟩
+  choose mu hmu using fun τ => (_root_.GlobalTheory.AlgWtHW.hw_exists_unique_antitone L n a (mtwConj emb τ)).1.exists
+  let lam : ι → DomWeight n := fun τ => ⟨mu τ, (_root_.GlobalTheory.AlgWtHW.hw_exists_unique_antitone L n a (mtwConj emb τ)).2 _ (hmu τ)⟩
   have hirr : TenIrr (mtwConj (mtwConj emb)) lam :=
     tenIrr_of' highest_weight_fixed_exists highest_weight_fixed_line _ (mtwConj_injective _ hinj') (mtwConj_cm _ hcm') lam
   obtain ⟨T, hT⟩ := iso_of_hwAt (mtwConj emb) hinj' hcm' hall' a (tenWt (mtwConj emb) lam hirr) mu hmu

@@ -5,8 +5,8 @@ public import Development.AbelianVarietyTheory.PublishedTheorems.GlobalTheta.The
 public import Development.AbelianVarietyTheory.PublishedTheorems.GlobalTheta.PlaneFormNondegenerate
 public import Development.AbelianVarietyTheory.PublishedTheorems.GlobalTheta.FiniteDimensionalNablaSq
 public import Mathlib
-public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.PageThm
-public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.OrderNeTop
+public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.Bundle0001
+public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0026
 
 @[expose] public section
 

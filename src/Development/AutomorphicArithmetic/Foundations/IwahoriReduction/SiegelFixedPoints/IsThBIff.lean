@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.Foundations.IsZetaTW
-public import Development.AbelianVarietyTheory.Definitions.Foundations.ApplyEqOfMemAdjoin
+public import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0010
 
 @[expose] public section
 

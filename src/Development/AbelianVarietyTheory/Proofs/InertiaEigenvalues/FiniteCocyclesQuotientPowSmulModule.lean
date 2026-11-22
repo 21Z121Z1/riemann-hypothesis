@@ -4,7 +4,7 @@ public import Mathlib
 public import Formalism.WachLatticeTwists.LatticeDualFibres.FibreDualStable
 public import Formalism.GaloisCohomology.LocalTateDualityK
 public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FactorMemCocyclesPowQuot
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FiniteH1H2Local
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0157
 
 @[expose] public section
 

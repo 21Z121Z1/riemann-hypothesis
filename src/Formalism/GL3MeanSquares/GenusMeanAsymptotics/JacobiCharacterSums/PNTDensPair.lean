@@ -1,7 +1,7 @@
 module
 
-public import Formalism.GL3MeanSquares.GenusMeanAsymptotics.JacobiCharacterSums.PNTDensSt
-public import Formalism.LandauZeroFreeBounds.ExceptionalZeroBounds.LGrowth
+public import Formalism.GL3MeanSquares.GenusMeanAsymptotics.JacobiCharacterSums.Bundle0013
+public import Formalism.LandauZeroFreeBounds.ExceptionalZeroBounds.Bundle0006
 
 @[expose] public section
 

@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import GroundTheory.AutomorphicForms.FiniteLengthCuspidal
+public import GroundTheory.AutomorphicForms.Bundle0027
 public import GroundTheory.AutomorphicForms.FiniteLengthLeviJacquet
 public import GroundTheory.AutomorphicForms.FiniteLengthSeries
 

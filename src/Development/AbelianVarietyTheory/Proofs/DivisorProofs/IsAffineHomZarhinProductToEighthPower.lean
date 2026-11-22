@@ -1,9 +1,9 @@
 module
 
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ZphiPowPr
-public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.IsAdditiveOfUniversal
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2973
+public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.Bundle0009
 public import Development.AbelianVarietyTheory.Proofs.HomogeneousIdeals.FormallyUnramifiedOfTangentMapInjective
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.AbelianSchemeGerms
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.Bundle0004
 
 @[expose] public section
 

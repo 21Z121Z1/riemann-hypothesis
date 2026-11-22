@@ -2,11 +2,10 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.Divisors.SplitDoublingNBlock
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsColReduced
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FinrankEigenCoindMackeyDoubleCosetsStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CoindEigenEqBotOfRootInUnipotentRadicalStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CoindEigenEqBotOfBlockCutCuspidalStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CoindEigenSortingPermEqLeviWhittakerStatement
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0543
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0546
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0556
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0555
 
 @[expose] public section
 
@@ -203,7 +202,7 @@ theorem degenerateWhittakerDim_parabolicInduction (F : Type) [Field F] [Fintype 
     rw [h, hmem, ← hmem J]
     exact hz
   unfold whCut
-  rw [GlobalTheory.T.finrank_eigen_coind_mackey_double_cosets (GL (Fin r) F) (blockTri b) (unip F r) V σ (fun g => ψ (edgeSum (cutEdge j) g))
+  rw [_root_.GlobalTheory.FinGL.MackeyCosets.finrank_eig_coind (GL (Fin r) F) (blockTri b) (unip F r) V σ (fun g => ψ (edgeSum (cutEdge j) g))
     (by simp only [edgeSum_cut_one, AddChar.map_zero_eq_one])
     (fun u hu u' hu' => by simp only [edgeSum_cut_mul j hu hu', AddChar.map_add_eq_mul])
     T (fun J => pm F (Tuple.sort (key b J.1)))

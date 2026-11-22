@@ -1,6 +1,6 @@
 module
 
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.FnComm
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0065
 public import Formalism.HermitianCurvature.HermitianCurvatureProofs.RuleGD
 
 @[expose] public section

@@ -7,9 +7,9 @@ public import Formalism.LocalRingCardinality.DataParams
 public import Formalism.SharpRestriction.LevelLetterCocycles.QuotientHomNonvanishingBound
 public import Formalism.WeaklyAdmissibleFiltrations.Statement
 public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.Alternates
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExistsLetterOfLocalEmbedding
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.SecondTwistSmallIffExactlyAtAndFinClause
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.BdRPlusIsDomainBdRIsField
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0041
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0047
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0065
 
 @[expose] public section
 

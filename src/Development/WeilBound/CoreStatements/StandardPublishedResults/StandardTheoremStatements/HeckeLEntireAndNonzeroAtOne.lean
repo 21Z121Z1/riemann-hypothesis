@@ -1,10 +1,10 @@
 module
 
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SqRepTopVecOfUnitriangular
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.BorelCasselmanHolds
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.EtaProdEqOfEverywhereNormDiv
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.HeckeLEntireAndNonzeroAtOneHolds
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.BranchesAlongOfIrreducible
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0109
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0035
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0077
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0097
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0217
 
 @[expose] public section
 

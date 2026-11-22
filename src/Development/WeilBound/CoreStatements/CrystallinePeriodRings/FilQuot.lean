@@ -3,7 +3,7 @@ module
 public import Mathlib
 public import Formalism.LocalRingCardinality.RhoDetPrimeEqMuTildeMulChiPow
 public import Formalism.SharpRestriction.LevelLetterCocycles.LocalSituation
-public import Development.WeilBound.CoreStatements.CrystallinePeriodRings.MaximalIdealEqSpanT
+public import Development.WeilBound.CoreStatements.CrystallinePeriodRings.Bundle0002
 
 @[expose] public section
 

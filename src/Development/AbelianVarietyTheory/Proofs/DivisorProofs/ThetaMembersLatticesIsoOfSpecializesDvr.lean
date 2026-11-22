@@ -3,31 +3,30 @@ module
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.Divisors.HasTraitsOnOfHasTraitsP
 public import Development.AbelianVarietyTheory.Definitions.Divisors.IsActIffIsDiagEnd
-public import ReciprocityTheory.AnalyticForms.RegularLocalRings.FinalTheorems
+public import ReciprocityTheory.AnalyticForms.RegularLocalRings.Bundle0001
 public import Development.AbelianVarietyTheory.Statements.SemistableTorsion.ImmersedBy
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EndOnId
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsStalkZeta
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2502
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2441
 public import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.ExistsNumberFieldQkPointsComplexDegeneration
 public import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.RelationsAreFunctions
-public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.IsoFreePerpLabelKernelWeights
-public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.WeilQkIsIffCommutatorPairingTorsion
+public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.Bundle0064
+public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.Bundle0086
 public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.QkToAkUInvariantUnderFieldEmbedding
-public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.AllUniformizationLawsHold
-public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.WeilIsIffOfIsGrpPullbackComm
+public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.Bundle0133
+public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0083
 public import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.ExistsUniqueWeilIs
 public import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.WeilIsAlternatingSkewNatural
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsTorusSpreadOverTraitSpecialisation
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TorusSpreadLatticeMapSurjective
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TorusSpreadLatticeMapCommutesEndomorphisms
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ToricTorsionSectionOfSpreadThroughLatticeMapStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsToricTorsionPointOfLatticeCharacter
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AbelianSchemePullbackSemiAbelianOverNormalDomain
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsNormalNoetherianStalkFactorOfFieldPoint
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsGrpPullbackUniformisingGroupSameGenericFib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsSemiAbelianEndExtendingAbelianSchemeEnd
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaLabelsSurjectiveHomLatticeModLevelStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MemDividingLabelsIffClassZeroStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GeometricTorsionPointMemberHasLabelStatement
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2600
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2629
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2735
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2599
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2579
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2595
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2981
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2597
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle3035
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle3064
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle3045
 
 @[expose] public section
 
@@ -242,11 +241,11 @@ theorem GlobalTheory.GSep.Spz.latTo_of_specializes : ∀ (I : Type) (X₁ : Glob
     𝔫₂.U ξ₂ β₂ hβ₂ ρ hρ
   have tor := GlobalTheory.T.toricTorsionSection_of_spread_through_latticeMap Y.Z FinalForm.G FinalForm.semi V₁ b₁ 𝔫₁.G 𝔫₁.semi 𝔫₁.D 𝔫₁.A 𝔫₁.U ξ₁ β₁ hβ₁ V₂ b₂ 𝔫₂.G 𝔫₂.semi 𝔫₂.D 𝔫₂.A
     𝔫₂.U ξ₂ β₂ hβ₂ ρ hρ X₁.o₁ Y.s o₁ o₂ ho₁ ho₂
-  obtain ⟨tot₁, sur₁, cong₁, -⟩ := GlobalTheory.T.thetaLabels_surjective_hom_lattice_mod_level I X₁ z₁ act V₁ ev₁ X₀ t₁ δ₁ 𝔫₁
-  obtain ⟨tot₂, sur₂, cong₂, -⟩ := GlobalTheory.T.thetaLabels_surjective_hom_lattice_mod_level I X₁ z₁ act V₂ ev₂ X t₂ δ₂ 𝔫₂
+  obtain ⟨tot₁, sur₁, cong₁, -⟩ := _root_.GlobalTheory.GSep.Labels.yy_hom I X₁ z₁ act V₁ ev₁ X₀ t₁ δ₁ 𝔫₁
+  obtain ⟨tot₂, sur₂, cong₂, -⟩ := _root_.GlobalTheory.GSep.Labels.yy_hom I X₁ z₁ act V₂ ev₂ X t₂ δ₂ 𝔫₂
   obtain ⟨x₀, hx₀⟩ := X₁.div z₁
-  have int₁ := GlobalTheory.T.mem_dividingLabels_iff_class_zero I X₁ z₁ act x₀ hx₀ V₁ ev₁ X₀ t₁ δ₁ 𝔫₁
-  have int₂ := GlobalTheory.T.mem_dividingLabels_iff_class_zero I X₁ z₁ act x₀ hx₀ V₂ ev₂ X t₂ δ₂ 𝔫₂
+  have int₁ := _root_.GlobalTheory.GSep.mem_HH_iff_yy_zero I X₁ z₁ act x₀ hx₀ V₁ ev₁ X₀ t₁ δ₁ 𝔫₁
+  have int₂ := _root_.GlobalTheory.GSep.mem_HH_iff_yy_zero I X₁ z₁ act x₀ hx₀ V₂ ev₂ X t₂ δ₂ 𝔫₂
   have hL : 2 ≤ X₁.S.r * X₁.S.N := le_trans X₁.S.N_ge (Nat.le_mul_of_pos_left _ X₁.S.r_pos)
   have hζ : (X₁.S.ζ ^ (X₁.S.r * X₁.S.N)) ^ (X₁.S.r * X₁.S.N) = 1 := by
     rw [← pow_mul, ← sq]; exact X₁.S.prim.pow_eq_one

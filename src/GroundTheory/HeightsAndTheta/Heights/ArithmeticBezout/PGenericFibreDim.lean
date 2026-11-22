@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.IsMultiHomogOfIsChowForm
-public import ReciprocityTheory.AnalyticForms.RegularLocalRings.IntToRat
+public import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.Bundle0023
+public import ReciprocityTheory.AnalyticForms.RegularLocalRings.Bundle0007
 
 @[expose] public section
 

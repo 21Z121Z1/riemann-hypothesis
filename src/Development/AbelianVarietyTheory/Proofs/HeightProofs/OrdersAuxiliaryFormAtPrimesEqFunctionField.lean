@@ -1,25 +1,25 @@
 module
 
 public import Mathlib
-public import Formalism.LocalToGlobal.ProjectiveLattices.RegXInst
-public import Formalism.LocalToGlobal.ProjectiveLattices.CurveLocInst
-public import Formalism.LocalToGlobal.ProjectiveLattices.LocRingPf
-public import Formalism.LocalToGlobal.ProjectiveLattices.TieInst
-public import Formalism.LocalToGlobal.ProjectiveLattices.RealPtPf
-public import Formalism.LocalToGlobal.ProjectiveLattices.HtXfer
-public import Formalism.LocalToGlobal.ProjectiveLattices.CompTie
-public import Formalism.LocalToGlobal.ProjectiveLattices.AxHInst
-public import Formalism.LocalToGlobal.ProjectiveLattices.SupNDataOfNonneg
-public import Formalism.LocalToGlobal.ProjectiveLattices.CombAlgOfCombBound
-public import Formalism.LocalToGlobal.ProjectiveLattices.CurveInj
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0035
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0043
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0041
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0037
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0039
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0028
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0024
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0034
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0040
 public import Formalism.LocalToGlobal.ProjectiveLattices.LocalUnitReduction.IsUnitMkOfForallPrime
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.HeightTheory.HDiscAE
-public import Development.AbelianVarietyTheory.Proofs.GenericRegularity.CountQAtStGenericSectionPrimes
-public import Development.AbelianVarietyTheory.Proofs.GenericRegularity.ExistsRatioFormsAtPoints
-public import Development.AbelianVarietyTheory.Proofs.HeightProofs.RealisationValuesEqValuedPointOrdersStatement
+public import Development.AbelianVarietyTheory.Proofs.GenericRegularity.Bundle0028
+public import Development.AbelianVarietyTheory.Proofs.GenericRegularity.Bundle0026
+public import Development.AbelianVarietyTheory.Proofs.HeightProofs.Bundle0077
 public import Development.AbelianVarietyTheory.Proofs.HeightProofs.ExistsEquivCoverPointsPlacesBaseChangeStatement
-public import Development.AbelianVarietyTheory.Proofs.HeightProofs.ExistsGaussRingMapToCompletionStatement
-public import Development.AbelianVarietyTheory.Proofs.HeightProofs.ComponentRingAwayGenericSectionQuotientStatement
+public import Development.AbelianVarietyTheory.Proofs.HeightProofs.Bundle0038
+public import Development.AbelianVarietyTheory.Proofs.HeightProofs.Bundle0034
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.HeightTheory.ValuationResidueLemmas
+public import Formalism.LocalToGlobal.ProjectiveLattices.CurveLoc
 
 @[expose] public section
 
@@ -135,7 +135,7 @@ theorem exists_equiv_places {D : D7} {B : WeightFamilies.Prov D} {P : ModuliInte
     rw [IsLocalRing.ResidueField.map_residue, eq_comm, ← sub_eq_zero, ← map_sub,
       IsLocalRing.residue_eq_zero_iff]
     exact ha
-  let hχ := fun c => GlobalTheory.T.componentRing_away_genericSection_quotient D B P j X la N wL w (Ω c) (gF c) d.D d.N hD' eN (d.jc c) (d.x c)
+  let hχ := fun c => _root_.GlobalTheory.componentRing_away_quotient D B P j X la N wL w (Ω c) (gF c) d.D d.N hD' eN (d.jc c) (d.x c)
     (fun p => IsFractionRing.lift_algebraMap (g := (d.sH c).toRingHom) (hs c) p) hφK hφT (h0 c) (hx c)
   let χ := fun c => Classical.choose (hχ c)
   have hχs := fun c => (Classical.choose_spec (hχ c)).1

@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.GenericRegularity.RankOfQuasiIdem
+public import Development.AbelianVarietyTheory.Proofs.GenericRegularity.Bundle0016
 
 @[expose] public section
 

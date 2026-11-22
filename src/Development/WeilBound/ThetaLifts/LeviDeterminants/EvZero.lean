@@ -1,7 +1,7 @@
 module
 
 public import Development.WeilBound.ThetaLifts.LeviDeterminants.EvCone
-public import Development.WeilBound.ThetaLifts.LeviDeterminants.ExistsAdaptedModelSkewPlane
+public import Development.WeilBound.ThetaLifts.LeviDeterminants.Bundle0011
 
 @[expose] public section
 

@@ -2,13 +2,12 @@ module
 
 public import Mathlib
 public import Development.AutomorphicArithmetic.Foundations.Convolution.IntegrableConvolution.ThickFrames
-public import Development.AutomorphicArithmetic.Foundations.Convolution.IntegrableConvolution.TensSmoothAlt
-public import Development.AutomorphicArithmetic.Foundations.Convolution.IntegrableConvolution.TensOp
-public import Development.AutomorphicArithmetic.Foundations.Convolution.IntegrableConvolution.IntPow
+public import Development.AutomorphicArithmetic.Foundations.Convolution.IntegrableConvolution.Bundle0007
+public import Development.AutomorphicArithmetic.Foundations.Convolution.IntegrableConvolution.Bundle0006
 public import Development.AutomorphicArithmetic.Foundations.Convolution.IntegrableConvolution.LactCv
-public import Development.AutomorphicArithmetic.Foundations.Convolution.IntegrableConvolution.ArchBasic
-public import Development.AutomorphicArithmetic.Foundations.Convolution.IntegrableConvolution.CvBasic
-public import Development.AutomorphicArithmetic.Foundations.Convolution.ConvolutionKernels.KernelTransforms.CommInt
+public import Development.AutomorphicArithmetic.Foundations.Convolution.IntegrableConvolution.Bundle0005
+public import Development.AutomorphicArithmetic.Foundations.Convolution.IntegrableConvolution.Bundle0002
+public import Development.AutomorphicArithmetic.Foundations.Convolution.ConvolutionKernels.KernelTransforms.Bundle0001
 
 @[expose] public section
 

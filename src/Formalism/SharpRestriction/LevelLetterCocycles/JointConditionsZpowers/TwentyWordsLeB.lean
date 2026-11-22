@@ -1,6 +1,6 @@
 module
 
-public import Formalism.SharpRestriction.LevelLetterCocycles.JointConditionsZpowers.IsTwistedDualOfGaloisRep
+public import Formalism.SharpRestriction.LevelLetterCocycles.JointConditionsZpowers.Bundle0007
 
 @[expose] public section
 

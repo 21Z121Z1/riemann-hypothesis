@@ -1,11 +1,11 @@
 module
 
-public import Formalism.LocalToGlobal.InertKernelTheory.DefsBasis
+public import Formalism.LocalToGlobal.InertKernelTheory.Bundle0008
 public import Formalism.FrobeniusOrbits.RealSubfieldLeCompositum
 public import Formalism.FrobeniusOrbits.FrobeniusOrbitsProofs.OrderOfSignGroupDvdTwo
-public import Formalism.FrobeniusOrbits.FrobeniusOrbitsProofs.CardTrivialFirstComponent
-public import Formalism.LocalToGlobal.GlobalTheory.GL3.IsometryLinkageTrivialLevel
-public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.IntRing
+public import Formalism.FrobeniusOrbits.FrobeniusOrbitsProofs.Bundle0002
+public import Formalism.LocalToGlobal.GlobalTheory.GL3.Bundle0003
+public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0035
 
 @[expose] public section
 

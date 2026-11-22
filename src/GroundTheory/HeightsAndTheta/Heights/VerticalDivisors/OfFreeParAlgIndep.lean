@@ -2,11 +2,9 @@ module
 
 public import Mathlib
 public import GroundTheory.HeightsAndTheta.Heights.VerticalDivisors.OfChartPointSecPointSpecChart
-public import GroundTheory.HeightsAndTheta.Heights.VerticalDivisors.PChartPointTrdeg
-public import GroundTheory.HeightsAndTheta.Heights.VerticalDivisors.PSecPointSeparable
-public import GroundTheory.HeightsAndTheta.Heights.VerticalDivisors.PSpecChart
-public import GroundTheory.HeightsAndTheta.Heights.VerticalDivisors.PGenericFormsKer
-public import GroundTheory.HeightsAndTheta.Heights.VerticalDivisors.PDerivSpanTrdeg
+public import GroundTheory.HeightsAndTheta.Heights.VerticalDivisors.Bundle0013
+public import GroundTheory.HeightsAndTheta.Heights.VerticalDivisors.Bundle0015
+public import GroundTheory.HeightsAndTheta.Heights.VerticalDivisors.Bundle0016
 
 @[expose] public section
 

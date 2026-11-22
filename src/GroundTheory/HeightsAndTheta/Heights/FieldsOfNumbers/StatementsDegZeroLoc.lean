@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import GroundTheory.HeightsAndTheta.Heights.FieldsOfNumbers.StatementsDivPushForwardLocal
-public import GroundTheory.HeightsAndTheta.Heights.FieldsOfNumbers.PPFDegree
+public import GroundTheory.HeightsAndTheta.Heights.FieldsOfNumbers.Bundle0011
+public import GroundTheory.HeightsAndTheta.Heights.FieldsOfNumbers.Bundle0010
 
 @[expose] public section
 

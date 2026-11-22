@@ -1,8 +1,8 @@
 module
 
 public import Development.AutomorphicArithmetic.Foundations.Convolution.SplitEigenfunctions.OrbitMeasurability.PerCont
-public import Development.AutomorphicArithmetic.Foundations.Convolution.RealGroupAnalysis.UnitaryActions.ContinuousAdelicGL2OfContinuousEntries
-public import GroundTheory.GlobalFields.IdeleGroups.Rational
+public import Development.AutomorphicArithmetic.Foundations.Convolution.RealGroupAnalysis.UnitaryActions.Bundle0001
+public import GroundTheory.GlobalFields.IdeleGroups.Bundle0002
 public import GroundTheory.AutomorphicForms.GL2Classical.EigenformTranslates
 
 @[expose] public section

@@ -1,7 +1,7 @@
 module
 
 public import Formalism.LocalToGlobal.GlobalTheory.GL6.LocalBasisChangeDecompCompatible
-public import Formalism.LocalToGlobal.GlobalTheory.GL6.PBwLocGlob
+public import Formalism.LocalToGlobal.GlobalTheory.GL6.Bundle0006
 public import Formalism.LocalToGlobal.GlobalTheory.CoordinateLengths.PairingContinuityBound
 
 @[expose] public section

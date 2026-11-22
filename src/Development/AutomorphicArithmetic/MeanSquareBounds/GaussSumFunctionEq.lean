@@ -3,8 +3,7 @@ module
 public import Development.AutomorphicArithmetic.MeanSquareBounds.PrimeSetTwoBounds
 public import Development.AutomorphicArithmetic.CharacterBoxes.PairGood
 public import Development.AutomorphicArithmetic.MeanSquareBounds.Thin
-public import Development.AutomorphicArithmetic.MeanSquareBounds.realCond
-public import Development.AutomorphicArithmetic.MeanSquareBounds.SmallZeros
+public import Development.AutomorphicArithmetic.MeanSquareBounds.Bundle0001
 
 @[expose] public section
 

@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TprodMemTensSpan
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TensorPlaceActionInjective
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1011
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0974
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MinFirst
 
 @[expose] public section

@@ -7,12 +7,9 @@ public import Formalism.SharpRestriction.LevelLetterCocycles.ExistsPosConstLagra
 public import Formalism.GaussValuationBounds.Statement
 public import Formalism.GaussValuationBounds.GaussValueContraction.TruncationExponentBounds
 public import Formalism.WindowSums.PowerSeriesRelationList
-public import Formalism.GaussValuationBounds.GaussValueContraction.PhiIterXProof
-public import Formalism.GaussValuationBounds.GaussValueContraction.GaussValueContractionProofFactBis
-public import Formalism.GaussValuationBounds.GaussValueContraction.KapBoundProof
-public import Formalism.GaussValuationBounds.GaussValueContraction.GaussMul
-public import Formalism.GaussValuationBounds.GaussValueContraction.GaussBasic
-public import Formalism.GaussValuationBounds.GaussUnit
+public import Formalism.GaussValuationBounds.GaussValueContraction.Bundle0002
+public import Formalism.GaussValuationBounds.GaussValueContraction.Bundle0001
+public import Formalism.GaussValuationBounds.Bundle0001
 
 @[expose] public section
 

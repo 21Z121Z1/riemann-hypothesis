@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Formalism.DistinguishedUnitIdeals.CoprimeProd
-public import Formalism.DistinguishedUnitIdeals.DistinguishedOrderProofs.GroundTheory
+public import Formalism.DistinguishedUnitIdeals.Bundle0001
+public import Formalism.DistinguishedUnitIdeals.DistinguishedOrderProofs.Bundle0001
 
 @[expose] public section
 

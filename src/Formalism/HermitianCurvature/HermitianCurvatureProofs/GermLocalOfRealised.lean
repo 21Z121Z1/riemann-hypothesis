@@ -1,6 +1,6 @@
 module
 
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.GermLocTail
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0089
 
 @[expose] public section
 

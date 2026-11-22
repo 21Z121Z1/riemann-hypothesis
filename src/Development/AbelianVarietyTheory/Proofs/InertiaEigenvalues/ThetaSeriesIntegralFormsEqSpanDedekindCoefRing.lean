@@ -1,10 +1,10 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FockOfApply
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.LinearIndependentComplexOfSubfieldCoeffLatticeStatement
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FockHarmonicLatticeFgAndSpansValueSpace
-public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.ExistsIsClassSystem
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0923
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0931
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0787
+public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0031
 public import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.CsGlob
 public import Formalism.LocalRingCardinality.RankBoundMonotoneInDimension
 
@@ -218,7 +218,7 @@ theorem coefLat_le_span (hB : B.Good) (R O : Subring ℂ) (h : Bridge.Gf S) {P :
     rw [e]
     exact Submodule.subset_span ⟨F, hF, rfl⟩
   obtain ⟨Q, hQ, e⟩ := h1 hP.2
-  have h0 : P - Q = 0 := GlobalTheory.T.harmonic_polynomial_eq_zero_of_function D _ _ B.w B.F.BS hB.wt (pq_le hB) _ (sub_mem hP.1 (hle hQ))
+  have h0 : P - Q = 0 := _root_.GlobalTheory.ExportSeries.HarmInj.harm_inj D _ _ B.w B.F.BS hB.wt (pq_le hB) _ (sub_mem hP.1 (hle hQ))
     (by rw [map_sub]; exact sub_eq_zero.2 e.symm)
   rw [sub_eq_zero.1 h0]
   exact hQ
@@ -304,7 +304,7 @@ theorem mtLat_eq_span : ∀ (D : D7) (S T : HSp D) (B : Base S T), B.Good → �
         exact (HarmLattice.harmLat_fg_span D _ _ _ _ _ _ _ _ _ hB.wt (pq_le hB) hc
           (by infer_instance)).1)
       (fun γ g k P hP => Base.act_mem_coefLat hB.frame hc γ g k (Base.mem_St_of_mem_levJ k.2) hP)
-      (fun I F hF hi => GlobalTheory.T.linearIndependent_complex_of_subfield_coeffLattice D S T B hB K σ emb φ.range hc (Subfield.closure (φ.range : Set ℂ)) Subfield.subset_closure I F
+      (fun I F hF hi => _root_.GlobalTheory.PlaceIndep.linearIndependent_complex D S T B hB K σ emb φ.range hc (Subfield.closure (φ.range : Set ℂ)) Subfield.subset_closure I F
         (fun a g => hF a g trivial) (indep_closure hi))
       (fun i => finPt S (y i)) (fun g => by
         obtain ⟨c, ⟨γ, k, e⟩, -⟩ := hy.reps g

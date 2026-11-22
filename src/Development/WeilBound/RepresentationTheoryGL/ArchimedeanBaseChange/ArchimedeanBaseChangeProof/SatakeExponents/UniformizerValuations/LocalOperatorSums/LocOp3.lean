@@ -1,10 +1,10 @@
 module
 
-public import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.SatakeExponents.UniformizerValuations.LeviOf
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ConstantTermLocallyConstant
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.HintConstMulSum
+public import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.SatakeExponents.UniformizerValuations.Bundle0001
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0404
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0466
 public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ConstantTermConvolutionHecke
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.RelIndexEqCard
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0504
 
 @[expose] public section
 

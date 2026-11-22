@@ -1,6 +1,6 @@
 module
 
-public import Development.AbelianVarietyTheory.Definitions.Foundations.IsSelfDualE
+public import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0013
 public import Formalism.LocalToGlobal.IndefiniteForms.IndefiniteTree.RealCubicMeans.LeafBounds.MeanMaxLeaf.LeafMMFree
 
 @[expose] public section

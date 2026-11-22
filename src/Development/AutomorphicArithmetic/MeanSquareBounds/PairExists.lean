@@ -2,7 +2,7 @@ module
 
 public import Development.AutomorphicArithmetic.MeanSquareBounds.PrimeSetTwoBounds
 public import Development.AutomorphicArithmetic.MeanSquareBounds.PairShare
-public import Development.AutomorphicArithmetic.MeanSquareBounds.RowsOfMem
+public import Development.AutomorphicArithmetic.MeanSquareBounds.Bundle0001
 
 @[expose] public section
 

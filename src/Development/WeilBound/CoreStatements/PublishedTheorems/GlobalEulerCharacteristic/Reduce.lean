@@ -1,9 +1,8 @@
 module
 
-public import Development.WeilBound.CoreStatements.PublishedTheorems.GlobalEulerCharacteristic.RatioOneKilled
+public import Development.WeilBound.CoreStatements.PublishedTheorems.GlobalEulerCharacteristic.Bundle0001
 public import GroundTheory.ProfiniteCohomology.GlobalEulerCharacteristic.GsEulerRatioShortExactOfBijective
 public import GroundTheory.ProfiniteCohomology.PoitouTate.NonemptyOfNatCastMemOfNeOne
-public import Development.WeilBound.CoreStatements.PublishedTheorems.GlobalEulerCharacteristic.LemmaX
 public import Development.WeilBound.CoreStatements.PublishedTheorems.GlobalEulerCharacteristic.WorkMultl
 
 @[expose] public section

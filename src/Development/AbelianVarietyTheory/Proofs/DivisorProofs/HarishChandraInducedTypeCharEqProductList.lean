@@ -1,11 +1,11 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LabelsCharOne
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CuspidalCharacterFormula
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0676
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0668
 public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.HarishChandraSeriesLabelExistsUniqueGLn
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.BlockParabolicUnitriangularSubgroupsGLnPrimeFiel
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TypeCharacterConjugateInverse
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0121
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0840
 
 @[expose] public section
 

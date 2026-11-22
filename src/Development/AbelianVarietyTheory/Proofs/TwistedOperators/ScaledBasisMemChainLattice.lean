@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.ExponentTerms
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.NormalizedAbsCharacterization
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.UnipotentRadicalBasic
+public import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.Bundle0002
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0025
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0028
 
 @[expose] public section
 

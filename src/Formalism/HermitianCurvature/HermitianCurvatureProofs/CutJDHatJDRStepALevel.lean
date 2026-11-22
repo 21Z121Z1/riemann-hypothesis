@@ -1,7 +1,7 @@
 module
 
 public import Formalism.HermitianCurvature.HermitianCurvatureProofs.QxChain
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutJDHatJDRStepABorder
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0063
 
 @[expose] public section
 

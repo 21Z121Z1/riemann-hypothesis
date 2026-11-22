@@ -3,44 +3,40 @@ module
 public import Mathlib
 public import Development.AutomorphicSpectrum.Proofs.MetricProofs.ColFlags
 public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.AdelicGroupAlgebraActionInjective
-public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsHTFormOver
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.PushInvertible
-public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.GlueApplyOfNotInFibre
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.Bundle0005
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.Bundle0002
 public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsHodgeLine
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.SabComp
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.Bundle0006
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.PullCub
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.LawsProved
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PullbackSections.GenBridgeA
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PullbackSections.Bundle0005
 public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsLieModel
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LieModelExistsUniqueAct
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.GenMapStalkMap
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.OmegaLatticeDominantCompatStatement
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LieLatticeDominantCompatStatement
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.FullTorsionIntegrallyClosedStatement
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.RegAtNoetherianModelNoetherianStatement
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.NotInFibreOfIsUnit
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LatticeVectorBundlePullbackStatement
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LieModelPullbackMapStatement
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LieModelPullbackActionStatement
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.FullTorsionPullbackStatement
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.DualMapOfFieldExtensionStatement
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.EigenspaceFieldExtensionStatement
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LieLatticeStableUnderActionStatement
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.IntegralElementRegularStatement
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.DifferentIdealLocalGeneratorStatement
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.DifferentScaledLatticeExtensionStatement
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.AbelianSchemePointObjectStatement
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0019
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0022
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.OmegaLatticeDominantCompat
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LieLatticeDominantCompat
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.FullTorsionIntegrallyClosed
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0040
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0027
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.Bundle0003
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0053
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0077
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0052
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0055
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0051
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0162
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.GlobalSectionsRankAlgClosed
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.SabPull
-public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.PushInvertibleIffOfIsReduced
-public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.GenWeil
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.HodgeTateOmegaCoherentStatement
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LieOmegaLatticeVectorBundleStatement
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsGenericWeilPairingStatement
-public import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.HodgeComponentFactorPoint
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.GenericPointNormalCoords
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.GenericPointComponentLocalRing
-public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.AllUniformizationLawsHold
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.Bundle0007
+public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0130
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.Bundle0007
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0241
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0130
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.Bundle0010
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsGenericWeilPairing
+public import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.Bundle0020
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0174
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0081
+public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.Bundle0133
 
 @[expose] public section
 
@@ -78,7 +74,7 @@ theorem exists_genWeil {E : Type} [Field E] [NumberField E] [IsCMField E] {H : H
   obtain ⟨n₂, -⟩ := sabComp pullCubComp E H _ _ _ _ _ _ _ _ m n₁
   rw [hj] at n₂
   obtain ⟨n₃, -⟩ := sabCancel pullCubCancel E H _ _ _ _ _ _ _ _ Y.m n₂
-  have := GlobalTheory.T.exists_generic_weil_pairing hW E H D l _ _ _ X _ (GlobalTheory.ModelCompare.objOfSABMap Y.oF n₃) t ξ n₁ Ω (𝟙 _) n hn
+  have := _root_.GlobalTheory.CompanionTheory.Ar.WeilObj.genWeil_of_obj hW E H D l _ _ _ X _ (GlobalTheory.ModelCompare.objOfSABMap Y.oF n₃) t ξ n₁ Ω (𝟙 _) n hn
     (by rwa [Category.id_comp]) hζ
   rwa [Category.id_comp] at this
 
@@ -534,31 +530,31 @@ theorem hodgeCpt_pull_smooth : ∀ (E : Type) [Field E] [NumberField E] [IsCMFie
   have hic : ∀ q : Cpt A.ξ, IsIntegrallyClosed (A.X.presheaf.stalk q.1) := fun q => (A.normal q.1).2
   have hic' : ∀ q : Cpt ξ', IsIntegrallyClosed (Z.presheaf.stalk q.1) := fun q => (hnorm q.1).2
   have htors : ∀ p ∈ S, FullTorsion t'.G ξ' (p ^ A.R p) := fun p hp =>
-    GlobalTheory.T.full_torsion_pullback A.X Z Ω Ω' A.ξ ξ' h i A.t.G t'.G mh.φ _ hdom mh.cart (A.tors p hp)
+    _root_.GlobalTheory.CompanionTheory.Ar.HcptPull.fullTorsion_of_dominates A.X Z Ω Ω' A.ξ ξ' h i A.t.G t'.G mh.φ _ hdom mh.cart (A.tors p hp)
   have hint : ∀ (s) (q : Cpt A.ξ) (a : 𝓞 E), A.emb s a ∈ regAt A.ξ q := fun s q a =>
-    GlobalTheory.T.integral_element_regular A.X Ω A.ξ q hgen (hic q) _ ((Algebra.IsIntegral.isIntegral (R := ℤ) a).map (A.emb s).toIntAlgHom)
+    _root_.GlobalTheory.CompanionTheory.Ar.IntReg.mem_regAt_of_isIntegral_of_stalk A.X Ω A.ξ q hgen (hic q) _ ((Algebra.IsIntegral.isIntegral (R := ℤ) a).map (A.emb s).toIntAlgHom)
 
   have hω : ∀ p ∈ S, ∀ p' : Cpt ξ', 0 < D.p + D.q → M'.htOm t'.PP.L (p ^ A.R p) p' =
       Submodule.span (regAt ξ' p') (jd '' (A.M.htOm A.t.PP.L (p ^ A.R p) ⟨h p'.1, hsp p'⟩ : Set _)) := by
     intro p hp p' hpos
     have hN : 0 < p ^ A.R p := pow_pos (A.S_prime p hp).pos _
-    obtain ⟨s0, o, ⟨m0⟩⟩ := GlobalTheory.T.abelian_scheme_point_object E H D l Xo c _ _ Y A.X A.f A.t A.m Ω A.ξ x hx
-    obtain ⟨s0', o', ⟨m0'⟩⟩ := GlobalTheory.T.abelian_scheme_point_object E H D l Xo c _ _ Y Z (h ≫ A.f) t' mf Ω' ξ' (spMap i ≫ x) (by
+    obtain ⟨s0, o, ⟨m0⟩⟩ := _root_.GlobalTheory.CompanionTheory.Ar.ObjAt.exists_obj_at E H D l Xo c _ _ Y A.X A.f A.t A.m Ω A.ξ x hx
+    obtain ⟨s0', o', ⟨m0'⟩⟩ := _root_.GlobalTheory.CompanionTheory.Ar.ObjAt.exists_obj_at E H D l Xo c _ _ Y Z (h ≫ A.f) t' mf Ω' ξ' (spMap i ≫ x) (by
       rw [← Category.assoc, hdom, Category.assoc, hx, Category.assoc])
     have hc1 : IsIntegrallyClosed (A.X.presheaf.stalk (h p'.1)) := hic ⟨h p'.1, hsp p'⟩
     have hn1 : IsNoetherianRing (A.X.presheaf.stalk (h p'.1)) := noeth_stalk hgen ⟨h p'.1, hsp p'⟩ (hnoeth _)
-    have h1 := GlobalTheory.T.full_torsion_integrally_closed E H D l (KA l) (baseKA l) A.X Ω A.ξ s0 o A.t m0 A.Li A.M (p ^ A.R p) ⟨h p'.1, hsp p'⟩ hgen hN
+    have h1 := _root_.GlobalTheory.CompanionTheory.Ar.OmLink.htOm_eq_htLat E H D l (KA l) (baseKA l) A.X Ω A.ξ s0 o A.t m0 A.Li A.M (p ^ A.R p) ⟨h p'.1, hsp p'⟩ hgen hN
       (A.tors p hp) hc1 hn1
-    have h1' := GlobalTheory.T.full_torsion_integrally_closed E H D l (KA l) (baseKA l) Z Ω' ξ' s0' o' t' m0' Li' M' (p ^ A.R p) p' hgen' hN
+    have h1' := _root_.GlobalTheory.CompanionTheory.Ar.OmLink.htOm_eq_htLat E H D l (KA l) (baseKA l) Z Ω' ξ' s0' o' t' m0' Li' M' (p ^ A.R p) p' hgen' hN
       (htors p hp) (hic' _) (noeth_stalk hgen' _ (hnoeth' _))
-    have h2 := GlobalTheory.T.omega_lattice_dominant_compat A.X Z Ω Ω' A.ξ ξ' h i A.t.G t'.G mh.φ A.Li Li' A.M M' j hgen hgen' hdom mh.cart hsm hj jd hjd
+    have h2 := _root_.GlobalTheory.CompanionTheory.Ar.HTPull.main A.X Z Ω Ω' A.ξ ξ' h i A.t.G t'.G mh.φ A.Li Li' A.M M' j hgen hgen' hdom mh.cart hsm hj jd hjd
       (p ^ A.R p) hN p' (hsp p') hc1 hn1 (h1.2.1 hpos) h1.1
     rw [h1'.2.2, h2, pull_eq ξ' h _ jd p' (hsp p'), h1.2.2]
 
   have hfl : ∀ p' : Cpt ξ', ∃ φ : regAt A.ξ ⟨h p'.1, hsp p'⟩ →+* regAt ξ' p', φ.Flat ∧ ∀ a, (φ a : Ω') = i a := fun p' =>
     exists_flat_regAt hgen hgen' hdom p' (hsp p')
 
-  have hLi := (GlobalTheory.T.lie_omega_lattice_vector_bundle A.X Ω A.ξ A.t.G A.Li A.M hgen hsm).1
+  have hLi := (_root_.GlobalTheory.CompanionTheory.Ar.lieLat_isVB_of_smooth A.X Ω A.ξ A.t.G A.Li A.M hgen hsm).1
   have hfr : ∀ q : Cpt A.ξ, ∃ b : Fin (Module.finrank Ω A.Li) → A.Li, LinearIndependent Ω b ∧
       Submodule.span Ω (Set.range b) = ⊤ ∧ A.M.lat q = Submodule.span (regAt A.ξ q) (Set.range b) := fun q => by
     obtain ⟨U, hU, b, hb, hf⟩ := hLi q trivial
@@ -581,7 +577,7 @@ theorem hodgeCpt_pull_smooth : ∀ (E : Type) [Field E] [NumberField E] [IsCMFie
       A.M.lat q = Submodule.span (regAt A.ξ q) (Set.range b) → ∀ t k,
       ff s t (b k) ∈ Submodule.span (regAt A.ξ q) (Set.range b) := fun s q b hL t k => by
     have hbk : b k ∈ A.M.lat q := hL ▸ Submodule.subset_span ⟨k, rfl⟩
-    have h1 := GlobalTheory.T.lie_lattice_stable_under_action A.X Ω A.ξ A.t.G A.Li A.M (𝓞 E) A.t.act A.ρ A.act q (βb t) (b k) hbk
+    have h1 := _root_.GlobalTheory.CompanionTheory.Ar.LieStable.lat_stable A.X Ω A.ξ A.t.G A.Li A.M (𝓞 E) A.t.act A.ρ A.act q (βb t) (b k) hbk
     have h2 : A.emb s (βb t) • b k ∈ A.M.lat q :=
       Submodule.smul_mem (A.M.lat q) (⟨_, hint s q (βb t)⟩ : regAt A.ξ q) hbk
     rw [← hL]
@@ -593,13 +589,13 @@ theorem hodgeCpt_pull_smooth : ∀ (E : Type) [Field E] [NumberField E] [IsCMFie
     have hN : 0 < p ^ A.R p := pow_pos (A.S_prime p hp).pos _
     haveI : IsNoetherian A.X := ((GlobalTheory.T.regAt_noetherian_model_noetherian A.X Ω A.ξ ℤ _ _ A.tie).2 A.all).1
     have hNc : GlobalTheory.CompanionTheory.Ar.Flat.NormalCpt A.ξ := GlobalTheory.CompanionTheory.Ar.XR.normalCpt_of_isCptGen hgen A.normal
-    obtain ⟨s0, o, ⟨m0⟩⟩ := GlobalTheory.T.abelian_scheme_point_object E H D l Xo c _ _ Y A.X A.f A.t A.m Ω A.ξ x hx
+    obtain ⟨s0, o, ⟨m0⟩⟩ := _root_.GlobalTheory.CompanionTheory.Ar.ObjAt.exists_obj_at E H D l Xo c _ _ Y A.X A.f A.t A.m Ω A.ξ x hx
     have hζ : ∃ ζ : Ω, IsPrimitiveRoot ζ (p ^ A.R p) :=
-      (GlobalTheory.T.full_torsion_integrally_closed E H D l (KA l) (baseKA l) A.X Ω A.ξ s0 o A.t m0 A.Li A.M (p ^ A.R p)
+      (_root_.GlobalTheory.CompanionTheory.Ar.OmLink.htOm_eq_htLat E H D l (KA l) (baseKA l) A.X Ω A.ξ s0 o A.t m0 A.Li A.M (p ^ A.R p)
         ⟨genPt A.ξ, specializes_rfl⟩ hgen hN (A.tors p hp) (hic _) (noeth_stalk hgen _ (hnoeth _))).2.1 hpos
     obtain ⟨e, he⟩ := exists_genWeil GlobalTheory.firstFiveLaws.1.weil Y A.ξ A.f x A.t A.m hx (p ^ A.R p) hN
       (A.tors p hp) hζ
-    obtain ⟨h1, h2⟩ := GlobalTheory.T.hodge_tate_omega_coherent A.X Ω A.ξ hgen hNc A.t.G A.t.semi A.t.PP.L (p ^ A.R p) hN (A.tors p hp) e he A.Li A.M
+    obtain ⟨h1, h2⟩ := _root_.GlobalTheory.CompanionTheory.Ar.HTCoh.htOm_coherent A.X Ω A.ξ hgen hNc A.t.G A.t.semi A.t.PP.L (p ^ A.R p) hN (A.tors p hp) e he A.Li A.M
     exact ⟨h1, fun q => (h2 q).1⟩
   have hdual : ∀ p ∈ S, ∀ s, ∀ p' : Cpt ξ',
       M'.htDual t'.PP.L (p ^ A.R p) ρ' ((i.comp A.cst).comp (labelEmb c s)) p' =
@@ -667,8 +663,8 @@ theorem hodgeCpt_pull_smooth : ∀ (E : Type) [Field E] [NumberField E] [IsCMFie
           (j '' (A.M.htW A.t.PP.L (p ^ A.R p) A.ρ (A.emb s) (differentIdeal ℤ (𝓞 E)) ⟨h p'.1, hsp p'⟩ : Set A.Li)) := by
     intro p hp s p'
     haveI := regAt_isLocalRing (ξ := A.ξ) ⟨h p'.1, hsp p'⟩
-    obtain ⟨d₀, hd₀, hne, hdv⟩ := GlobalTheory.T.different_ideal_local_generator E Ω (regAt A.ξ ⟨h p'.1, hsp p'⟩) (A.emb s) (hint s _)
-    exact GlobalTheory.T.different_scaled_lattice_extension Ω Ω' i (regAt A.ξ ⟨h p'.1, hsp p'⟩) (regAt ξ' p') A.Li Li' j (A.Vgen s) _ (𝓞 E) (A.emb s)
+    obtain ⟨d₀, hd₀, hne, hdv⟩ := _root_.GlobalTheory.CompanionTheory.Ar.differentIdeal_principal_in_localSubring E Ω (regAt A.ξ ⟨h p'.1, hsp p'⟩) (A.emb s) (hint s _)
+    exact _root_.GlobalTheory.CompanionTheory.Ar.scale_pull_ext Ω Ω' i (regAt A.ξ ⟨h p'.1, hsp p'⟩) (regAt ξ' p') A.Li Li' j (A.Vgen s) _ (𝓞 E) (A.emb s)
       (differentIdeal ℤ (𝓞 E)) d₀ (A.M.htDual A.t.PP.L (p ^ A.R p) A.ρ (A.emb s) ⟨h p'.1, hsp p'⟩)
       (M'.htDual t'.PP.L (p ^ A.R p) ρ' ((i.comp A.cst).comp (labelEmb c s)) p') hext (hreg p') (hW s) hd₀ hne hdv
       (fun e he => LieModel.mem_eigSp_of_mem_htDual _ _ _ _ _ he) (hdual p hp s p')
@@ -704,7 +700,7 @@ theorem hodgeCpt_pull_smooth : ∀ (E : Type) [Field E] [NumberField E] [IsCMFie
       (eigSp ρ' ((i.comp A.cst).comp (labelEmb c s))) := by
     intro s
     rw [hV s, hW s]
-    have h3 := GlobalTheory.T.lattice_vector_bundle_pullback A.X Ω A.ξ A.Li Z Ω' ξ' h i Li' j (A.V s) Set.univ (labelRk D s) (A.Vgen s) hdom hext.1 hext.2
+    have h3 := _root_.GlobalTheory.CompanionTheory.Ar.LatPull.isVBOn_pull A.X Ω A.ξ A.Li Z Ω' ξ' h i Li' j (A.V s) Set.univ (labelRk D s) (A.Vgen s) hdom hext.1 hext.2
       (A.vb s)
     intro p' _
     obtain ⟨U, hU, b, hb, hfr⟩ := h3 p' ⟨hsp p', trivial⟩

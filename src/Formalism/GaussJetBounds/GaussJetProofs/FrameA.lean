@@ -1,8 +1,8 @@
 module
 
-public import Formalism.GaussJetBounds.GenLogInverse
-public import Formalism.GaussJetBounds.StatementK
-public import Formalism.GaussJetBounds.GaussJetProofs.NormDetLeOneOfEntries
+public import Formalism.GaussJetBounds.Bundle0001
+public import Formalism.GaussJetBounds.Bundle0003
+public import Formalism.GaussJetBounds.GaussJetProofs.Bundle0001
 public import Formalism.GaussJetBounds.GaussJetProofs.ConstantCoeffAevalLinP
 
 @[expose] public section

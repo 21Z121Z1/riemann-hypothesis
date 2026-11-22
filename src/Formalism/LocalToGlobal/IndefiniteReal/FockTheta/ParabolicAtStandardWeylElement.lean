@@ -1,11 +1,10 @@
 module
 
 public import Formalism.LocalToGlobal.IndefiniteReal.LinksChar
-public import Formalism.LocalToGlobal.IndefiniteReal.WeilFull
-public import Formalism.LocalToGlobal.IndefiniteReal.DatumFock
-public import Formalism.LocalToGlobal.IndefiniteReal.LevelTypeEquivalence.ContinuousSplitInv
-public import Formalism.LocalToGlobal.IndefiniteReal.MultGood
-public import Formalism.LocalToGlobal.IndefiniteReal.ConjLemmas
+public import Formalism.LocalToGlobal.IndefiniteReal.Bundle0020
+public import Formalism.LocalToGlobal.IndefiniteReal.Bundle0013
+public import Formalism.LocalToGlobal.IndefiniteReal.LevelTypeEquivalence.Bundle0004
+public import Formalism.LocalToGlobal.IndefiniteReal.Bundle0016
 
 @[expose] public section
 

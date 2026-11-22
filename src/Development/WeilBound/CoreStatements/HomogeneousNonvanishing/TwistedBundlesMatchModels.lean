@@ -2,18 +2,23 @@ module
 
 public import Mathlib
 public import Development.AutomorphicSpectrum.Statements.GeometryStatements.HodgeComparisonCompatibility
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.EventuallyOneTmulAdicIntegralCoords
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsIntegralAdeleLimitCompatibleIntSystem
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.SemiabelianLieLatticeAgree
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.NormalCodimOneStalkDvrStatement
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.HodgeTateDualEqOfOmegaEqStatement
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LatticeEqOfCodimOneEqStatement
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.RegAtNoetherianModelNoetherianStatement
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0154
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0024
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0195
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0045
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.AdelicGroupAlgebraActionInjective
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.Bundle0005
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.Bundle0002
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0061
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsHodgeLine
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0040
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.Bundle0004
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0022
 public import Development.WeilBound.CoreStatements.HomogeneousNonvanishing.LatticeStalkDvrTwistedModels
-public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.PushEquivSymmLeft
-public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.IsAbelianSchemeOfIsGrpPullback
+public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0087
+public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0099
 public import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.RelAmpleOfLocallyOnBase
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.SabComp
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.Bundle0006
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.PullCub
 
 @[expose] public section
@@ -361,16 +366,16 @@ theorem bund : ∀ (E : Type) [Field E] [NumberField E] [IsCMField E] (H : Host 
     rw [← heig]
     exact h1
   have hagree : ∀ q ∈ (Set.univ : Set (Cpt A'.ξ)), La q = Lb q := by
-    refine GlobalTheory.T.lattice_eq_of_codim_one_eq A'.X Ω A'.ξ A'.tie.gen Set.univ (fun _ _ _ _ => trivial)
+    refine _root_.GlobalTheory.CompanionTheory.Ar.lat_agree_of_height_one A'.X Ω A'.ξ A'.tie.gen Set.univ (fun _ _ _ _ => trivial)
       (fun p _ => (A'.normal p.1).2) A.Li La Lb (labelRk D s) (eigSp A.ρ (A.emb s)) hvbA hvbB ?_
     intro q _ hq1
-    have hdvr := GlobalTheory.T.normal_codim_one_stalk_dvr A'.X A'.normal q.1 hq1
+    have hdvr := _root_.GlobalTheory.CompanionTheory.Ar.stalk_isDiscreteValuationRing_of_dim_one A'.X A'.normal q.1 hq1
     rw [hLb]
     simp only [La, Lat.patch]
     split_ifs with hF
     · refine iInf_congr fun p => iInf_congr fun hp => iInf_congr fun _ => ?_
       rw [hR p hp]
-      have key := GlobalTheory.T.hodge_tate_dual_eq_of_omega_eq E g.s A'.X Ω A'.ξ t.G A'.t.G t.PP.L A'.t.PP.L A.Li M₁ M₂ (p ^ A.R p)
+      have key := _root_.GlobalTheory.CompanionTheory.Ar.htDual_htW_relabel E g.s A'.X Ω A'.ξ t.G A'.t.G t.PP.L A'.t.PP.L A.Li M₁ M₂ (p ^ A.R p)
         (p ^ A.R p) A.ρ (A.emb s) q (hom q hdvr p hp)
       rcases s with τ | τ <;> rcases s' with τ' | τ' <;> simp at hside
       · simp only [htLabel]; rw [hss']; exact key.2.symm

@@ -2,9 +2,9 @@ module
 
 public import Mathlib
 public import Formalism.LocalToGlobal.BesselHermitianTheta.AllTied
-public import Formalism.LocalToGlobal.IndefiniteReal.DatumVec
+public import Formalism.LocalToGlobal.IndefiniteReal.Bundle0016
 public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.ExistsSplittingCharacterSelf
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.MemberPeriodAtTrivialPositionSpec
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0245
 
 @[expose] public section
 
@@ -87,7 +87,7 @@ abbrev recXE : ThetaX D where
     rw [map_mul, mul_comm]
     exact congrArg₂ _ (star_star _).symm rfl
   pet_pos V F hF := by
-    have h := GlobalTheory.T.petersson_normSq_pos_automorphicFunction_unitary D V _ _ (quot_mu V) F.1.1 (aut hθ F.1).toIsAutFun
+    have h := _root_.GlobalTheory.Mem.PetPos.petersson_pos D V _ _ (quot_mu V) F.1.1 (aut hθ F.1).toIsAutFun
       (fun h => hF (Subtype.ext (Subtype.ext h)))
       (hP θ hθ V _ _ (quot_mu V) _ _ (aut hθ F.1) (cuspF hθ (cuspEq θ V F)))
     rw [Complex.re_ofReal_mul]
@@ -102,7 +102,7 @@ abbrev recXE : ThetaX D where
     rw [actReal, dite_eq_left hg]; exact trE_cusp hθ V _ _ F hF
   Gf V := GfC V
   actF := actFin hθ
-  actF_cusp V g F hF := trE_cusp hθ V g (fun φ h => GlobalTheory.T.smoothAutomorphicForm_rightTranslate_finiteAdelic D θ hθ V φ h g g.2) F hF
+  actF_cusp V g F hF := trE_cusp hθ V g (fun φ h => _root_.GlobalTheory.Mem.FinTranslate.isAutFunSm_rTr_fin D θ hθ V φ h g g.2) F hF
   actF_actR V g τ h := by
     unfold actReal
     split_ifs with hh
@@ -111,11 +111,11 @@ abbrev recXE : ThetaX D where
       rw [mul_assoc, mul_assoc, (GlobalTheory.PointAtPlaceHom.atTau_laws D θ hθ V τ).2.2.2.1 h g g.2]
     · rw [mul_one, one_mul]
   Ksph := ksph
-  Ksph_mono V S S' h g hg := mem_ksph.2 ((GlobalTheory.T.exists_lattice_stabiliser_subgroup_outside_places D V S).choose_spec.2 S' h (mem_ksph.1 hg))
+  Ksph_mono V S S' h g hg := mem_ksph.2 ((_root_.GlobalTheory.Mem.Ksph.exists_subgroup_ksph D V S).choose_spec.2 S' h (mem_ksph.1 hg))
   typ V P := (TypS θ V P).comap (AFs θ V).subtype
   Chr := chrGrp D
   infTy := expo
-  infTy_mul χ χ' τ := expo_eq ((GlobalTheory.T.heckeCharacter_infinityExponent_group_laws D).2.2 _ _ _ _ _ (expo_spec χ τ) (expo_spec χ' τ))
+  infTy_mul χ χ' τ := expo_eq ((_root_.GlobalTheory.Mem.HeckeExp.hecke_exp_laws D).2.2 _ _ _ _ _ (expo_spec χ τ) (expo_spec χ' τ))
   chrOf μ j := ⟨Rc.chr μ j, mem_chrGrp.2 (Rc.chr_hc μ j)⟩
   chrOf_inf μ j τ := expo_eq (Rc.chr_inf μ j τ)
   etaT := ⟨Rc.eta, mem_chrGrp.2 ⟨Rc.eta_hc, fun τ => ⟨_, Rc.eta_inf τ⟩⟩⟩
@@ -139,13 +139,13 @@ abbrev recXE : ThetaX D where
   YsLow_zero := Tw.YsLow_zero
   Xs_rec := Tw.Xs_rec
   Ys_rec := Tw.Ys_rec
-  conjAF V F := ⟨fun g => star (F.1 g), Submodule.subset_span (GlobalTheory.T.isSmoothAutomorphicFunction_star D θ hθ V _ (aut hθ F))⟩
+  conjAF V F := ⟨fun g => star (F.1 g), Submodule.subset_span (_root_.GlobalTheory.Mem.AutConj.isAutFunSm_star D θ hθ V _ (aut hθ F))⟩
   conjAF_add V F F' := Subtype.ext (funext fun g => star_add _ _)
   conjAF_smul V c F := Subtype.ext (funext fun g => star_mul' _ _)
   conjAF_conjAF V F := Subtype.ext (funext fun g => star_star _)
   conjAF_cusp V F hF := by
     rw [mem_cuspIn hθ] at hF ⊢
-    exact (GlobalTheory.T.isCuspFunction_closed_under_operations D V _ _ (aut hθ F).toIsAutFun (aut hθ F).toIsAutFun hF hF).2.2.2
+    exact (_root_.GlobalTheory.Mem.Th.isCuspFun_closed D V _ _ (aut hθ F).toIsAutFun (aut hθ F).toIsAutFun hF hF).2.2.2
   Pos A B ι := PosT A B ι
   FJd _ _ _ := ℂ
   Bper A B ι p _ φ F := (Rc.petC A : ℂ) * perT hB hθ hψ Rc A B ι p φ (cuspEq θ B F)

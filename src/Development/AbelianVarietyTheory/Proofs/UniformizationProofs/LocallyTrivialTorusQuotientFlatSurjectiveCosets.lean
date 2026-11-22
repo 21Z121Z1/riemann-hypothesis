@@ -3,12 +3,12 @@ module
 public import Mathlib
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.CubeVal
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.UnifUniqSt
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.IsNsmul
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.QkToAkU
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.Bundle0005
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.Bundle0006
 public import Development.AbelianVarietyTheory.Definitions.Uniformization.PointEqOfSubsingleton
 public import Development.AbelianVarietyTheory.Definitions.Uniformization.ExistsUniqueTorusCompat
 public import Development.AbelianVarietyTheory.Proofs.HomogeneousIdeals.LocallyOfFinitePresentation
-public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.TorusStableAffineOpenFunctionsWeightGradedStatement
+public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.Bundle0044
 
 @[expose] public section
 
@@ -144,7 +144,7 @@ theorem exists_sum (a : Γ(G.left, q.left ⁻¹ᵁ V)) : ∃ c : X →₀ Γ(B.l
     a = c.sum fun χ r => (q.left.app V).hom r * (u (Multiplicative.ofAdd χ)).val :=  by
   classical
   have hA : IsAffineOpen (q.left ⁻¹ᵁ V) := hV.preimage q.left
-  obtain ⟨w, hw, rfl⟩ := (GlobalTheory.T.torusStable_affineOpen_functions_weightGraded S G X i inferInstance _ hA hU).1 a
+  obtain ⟨w, hw, rfl⟩ := (_root_.GlobalTheory.functions_graded_by_weights S G X i inferInstance _ hA hU).1 a
   have hc : ∀ χ, ∃ c, (q.left.app V).hom c = w χ * ((u (Multiplicative.ofAdd χ))⁻¹).val := by
     intro χ
     refine (h₀ _).1 ?_
@@ -184,7 +184,7 @@ theorem eq_zero_of_sum (hinj : Function.Injective (q.left.app V).hom) (c : X →
     exact this
   have hsum : (w.sum fun _ x => x) = 0 := by
     rw [Finsupp.onFinset_sum hsupp (fun _ => rfl), ← hc, Finsupp.sum]
-  have hw : w = 0 := (GlobalTheory.T.torusStable_affineOpen_functions_weightGraded S G X i inferInstance _ hA hU).2 w hwt hsum
+  have hw : w = 0 := (_root_.GlobalTheory.functions_graded_by_weights S G X i inferInstance _ hA hU).2 w hwt hsum
   ext χ
   have h1 : w χ = 0 := by rw [hw]; rfl
   have h2 : (q.left.app V).hom (c χ) = 0 := (Units.mul_left_eq_zero _).1 h1

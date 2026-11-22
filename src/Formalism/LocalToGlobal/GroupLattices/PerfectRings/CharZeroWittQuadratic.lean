@@ -1,9 +1,9 @@
 module
 
-public import Formalism.SharpRestriction.GrowthBounds.ObjBridge
+public import Formalism.SharpRestriction.GrowthBounds.Bundle0001
 public import Formalism.LocalToGlobal.GroupLattices.PerfectRings.JOInjective
 public import Formalism.LocalToGlobal.GroupLattices.PerfectRings.IsLocalRingOfComplete
-public import Formalism.LocalToGlobal.GroupLattices.LevelGatherings.StdSubPlacesConst
+public import Formalism.LocalToGlobal.GroupLattices.LevelGatherings.Bundle0001
 
 @[expose] public section
 

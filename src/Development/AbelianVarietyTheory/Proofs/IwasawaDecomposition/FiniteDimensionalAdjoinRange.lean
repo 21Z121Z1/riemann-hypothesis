@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.GoodChi
+public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.Bundle0013
 
 @[expose] public section
 

@@ -5,9 +5,9 @@ public import Formalism.SharpRestriction.CuspSpanNormBounds.StandingNumericalDat
 public import Formalism.SharpRestriction.CuspSpanNormBounds.IsTermOver
 public import Formalism.SharpRestriction.CuspSpanNormBounds.FlagEEqHyperbolic
 public import Formalism.SharpRestriction.CuspSpanNormBounds.LeadMinorK
-public import Formalism.SharpRestriction.CuspSpanNormBounds.RotatedWeightedBound
+public import Formalism.SharpRestriction.CuspSpanNormBounds.Bundle0004
 public import Formalism.SharpRestriction.CuspSpanNormBounds.LocalGroupInFamilyNontrivial
-public import Formalism.SharpRestriction.CuspSpanNormBounds.LeSCSCl
+public import Formalism.SharpRestriction.CuspSpanNormBounds.Bundle0007
 public import Formalism.SharpRestriction.CuspSpanNormBounds.CongruenceAtSplitFrobeniusHolds
 
 @[expose] public section

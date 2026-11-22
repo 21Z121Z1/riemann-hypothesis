@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Formalism.LocalToGlobal.IndefiniteForms.IndefiniteTree.FunctionalLowerBoundOfConditionsNumeric
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FpTiedIffExistsLeafFP
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0562
 
 @[expose] public section
 

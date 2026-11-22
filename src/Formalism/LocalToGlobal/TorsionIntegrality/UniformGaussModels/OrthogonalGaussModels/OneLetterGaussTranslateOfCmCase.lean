@@ -1,13 +1,12 @@
 module
 
 public import Formalism.LocalToGlobal.TorsionIntegrality.UniformGaussModels.UniformGaussModelConditionEquivalent
-public import Formalism.LocalToGlobal.TorsionIntegrality.GaussSumParity.ThetaInZIsThetaLog
-public import Formalism.LocalToGlobal.TorsionIntegrality.GaussSumParity.StatementG
+public import Formalism.LocalToGlobal.TorsionIntegrality.GaussSumParity.Bundle0001
+public import Formalism.LocalToGlobal.TorsionIntegrality.GaussSumParity.Bundle0003
 public import Formalism.GaussJetBounds.OneLetterGaussJets.OddLevelGainSum
-public import Formalism.GaussJetBounds.StatementS
-public import Formalism.GaussJetBounds.StatementU
-public import Formalism.LocalToGlobal.TorsionIntegrality.UniformGaussModels.UniformGaussModelCondition
-public import Formalism.LocalToGlobal.TorsionIntegrality.EisensteinTranslationProducts.HasCMByStable
+public import Formalism.GaussJetBounds.Bundle0004
+public import Formalism.LocalToGlobal.TorsionIntegrality.UniformGaussModels.Bundle0002
+public import Formalism.LocalToGlobal.TorsionIntegrality.EisensteinTranslationProducts.Bundle0005
 
 @[expose] public section
 

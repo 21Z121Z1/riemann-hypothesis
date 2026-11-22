@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.PSegreFlagCutChartSectionTools
+public import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.Bundle0070
 
 @[expose] public section
 

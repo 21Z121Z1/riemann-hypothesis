@@ -2,9 +2,12 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.AndLeft
-public import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.ReferenceChainEvaluationAtBundlePoints
-public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.PropertyAtConstructedPointsOfTrueColumnsViewStatement
-public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.TwistedPointRowAdmissibleTrueColumnsStatement
+public import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.Bundle0007
+public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.PropertyAtConstructedPointsOfTrueColumnsView
+public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0136
+public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0162
+public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.StdLvPr
+public import Formalism.LocalToGlobal.GroupLattices.AdmissibleAtGeneratorPlaces
 
 @[expose] public section
 
@@ -20,10 +23,10 @@ theorem row_aPtTw_of_overCols : ∀ (Q : V4.Slot), OverCols Q → ∀ (Bd : BdT)
     apply validForConstructedPointClasses_eventuallyWorkingClass
     refine EvP.of_all fun _ K _ β hβ => ?_
     have hc : β.Is HasCols := hQ K β.X β.f β.T β.c hβ
-    refine GlobalTheory.T.property_at_constructedPoints_of_trueColumnsView (fun D O => Formalism.L2.G.Adm2InU.TwistedPointIntegral D O.ex.tw) ?_ K β hc
+    refine _root_.GlobalTheory.Fc.Cv.view_at_built (fun D O => Formalism.L2.G.Adm2InU.TwistedPointIntegral D O.ex.tw) ?_ K β hc
     intro B f T w Z O nch hv _ _
     rw [hv.tw_eq]
-    exact GlobalTheory.T.twistedPointRow_admissible_trueColumns w.I w.ok w.l Z w.l0
+    exact _root_.GlobalTheory.PerQ.twistedPointIntegral_of_TC_ok w.I w.ok w.l Z w.l0
   exact h0.row Lk
 
 end GlobalTheory.Fc.PeriodEntriesOverColumns

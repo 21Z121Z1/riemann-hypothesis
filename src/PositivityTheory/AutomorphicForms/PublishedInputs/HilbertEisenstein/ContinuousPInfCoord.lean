@@ -2,10 +2,10 @@ module
 
 public import PositivityTheory.AutomorphicForms.PublishedInputs.HilbertEisenstein.SSmooth
 public import GroundTheory.GlobalFields.TateThesis.TateThetaDecay
-public import GroundTheory.GlobalFields.TateThesis.AdelePoissonUniform
+public import GroundTheory.GlobalFields.TateThesis.Bundle0009
 public import GroundTheory.GlobalFields.TateThesis.GlobalZetaFinite
-public import GroundTheory.GlobalFields.TateThesis.EulerFactorsInfinite
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.IdeleGenerators.HolomorphicIrreducibility.ClosedOneU
+public import GroundTheory.GlobalFields.TateThesis.Bundle0008
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.IdeleGenerators.HolomorphicIrreducibility.Bundle0012
 
 @[expose] public section
 

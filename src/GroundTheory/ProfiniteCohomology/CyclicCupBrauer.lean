@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import GroundTheory.ProfiniteCohomology.CyclicCupProf
+public import GroundTheory.ProfiniteCohomology.Bundle0008
 public import GroundTheory.ProfiniteCohomology.GaloisCohomology.BrauerInflation
 public import GroundTheory.ProfiniteCohomology.InflationRestriction
 

@@ -1,11 +1,11 @@
 module
 
 public import Mathlib
-public import ReciprocityTheory.DualLattices.CotangentSurjective
+public import ReciprocityTheory.DualLattices.Bundle0004
 public import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.IsTight
-public import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.StepOrderRes
-public import Development.WeilBound.CoreStatements.HodgeTatePoints.RangeSubtypeEq
-public import Development.WeilBound.CoreStatements.HodgeTatePoints.Invres
+public import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.Bundle0003
+public import Development.WeilBound.CoreStatements.HodgeTatePoints.Bundle0031
+public import Development.WeilBound.CoreStatements.HodgeTatePoints.Bundle0030
 public import Development.WeilBound.CoreStatements.HodgeTatePoints.HasLenOfEquiv
 
 @[expose] public section

@@ -1,6 +1,6 @@
 module
 
-public import Formalism.PeriodIntegrals.ScXuExists
+public import Formalism.PeriodIntegrals.Bundle0021
 public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.AdelicIndexEquality.Commensurated
 public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.FiniteAdelicComparison.MemLocFrom
 

@@ -1,10 +1,9 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Foundations.IsRootOne
-public import Development.AbelianVarietyTheory.Definitions.Foundations.EigenOfTwoStep
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.TowerUnitClassModPrimePowPropertiesStatement
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.UpperHalfPlaneHolomorphicGermPropertiesStatement
+public import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0008
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.TowerUnitClassModPrimePowProperties
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0112
 
 @[expose] public section
 
@@ -74,7 +73,7 @@ theorem kum_add_zero_near : ∀ (Ω : Type) [Field Ω] [Algebra ℚ Ω] (ε : Ω
       Kum X l n (x + x') (χ + χ')) ∧ Kum X l n 0 0 ∧
       (∀ (x : X.Khat l) (χ χ' : SL(2, ℤ) → ZMod (l ^ n)), Kum X l n x χ → Near χ χ' → Kum X l n x χ') := by
   intro Ω _ _ ε X l _ n
-  have C := GlobalTheory.T.towerUnitClassModPrimePow_properties Ω ε X l n
+  have C := _root_.GlobalTheory.KZ.H3.cls_props Ω ε X l n
   refine ⟨?_, ?_, ?_⟩
   · rintro x x' χ χ' ⟨f, a, b, M, hM, hx, ⟨ha, hb, hb0, hr⟩, hδ⟩ ⟨f', a', b', M', hM', hx', ⟨ha', hb', hb0', hr'⟩, hδ'⟩
     refine ⟨f * f', a * a', b * b', M * M', Nat.mul_pos hM hM', ?_,

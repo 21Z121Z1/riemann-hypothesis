@@ -1,18 +1,18 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsRigidificationPullbackCompatibleIso
-public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsLocalBasisAlong
-public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExtendedArcUAdicUniformisationOfArcData
-public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.AdicBaseEmbedsValuationAlgebraicClosure
-public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsUniversalSectionBasisPolarisedFibreStatement
-public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsNzOfPolAtStatement
-public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.NonemptyUniformisationTraitInAbelianLocusStatement
-public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.GeneratingSectionFiniteExtNormalDomainIsBasisStatement
-public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsFiniteNormalAdjoinAlgebraicStatement
-public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ValuationOverFiniteDvrExtensionStatement
-public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsGeneratorThetaConstantsOverAlgClosedExtensStatement
-public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ThetaConstantsAtUniformisedTraitStatement
+public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.Bundle0131
+public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.Bundle0109
+public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.Bundle0176
+public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.Bundle0045
+public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.Bundle0140
+public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.Bundle0155
+public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.Bundle0146
+public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.Bundle0144
+public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.Bundle0003
+public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.Bundle0152
+public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.Bundle0154
+public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.Bundle0191
 
 @[expose] public section
 
@@ -171,12 +171,12 @@ theorem basis_at_trait (hV : HV) {E : Type} [Field E] [NumberField E] [IsCMField
   have := hW.1
   have := hW'.1
   have := t.semi.smooth
-  obtain ⟨σ, hσ⟩ := GlobalTheory.T.exists_nz_of_polAt' hV.1.1 hV.1.2.1 E H S t W χ t₁ m₁ hp
+  obtain ⟨σ, hσ⟩ := _root_.GlobalTheory.Ex.OneGen.exists_nz_of_polAt hV.1.1 hV.1.2.1 E H S t W χ t₁ m₁ hp
   obtain ⟨hgen, hval⟩ := GlobalTheory.T.theta_constants_at_uniformised_trait hV E H S t W' hW' _ t' m' P _ (hσ W' io _ rfl)
   obtain ⟨ϖ, hϖ⟩ := IsDiscreteValuationRing.exists_irreducible W'
   let F := AlgebraicClosure (FractionRing W')
   obtain ⟨v, hv⟩ := GlobalTheory.adic_base_embeds_valuation_algebraic_closure.2 W' ϖ hϖ
-  obtain ⟨hpos, ⟨io', hio', hun⟩, hA⟩ := GlobalTheory.T.valuation_over_finite_dvr_extension W W' io hi hf ϖ hϖ F v hv
+  obtain ⟨hpos, ⟨io', hio', hun⟩, hA⟩ := _root_.GlobalTheory.FiniteDVRValuation.main W W' io hi hf ϖ hϖ F v hv
   let j : FractionRing W →+* F := (algebraMap (FractionRing W') F).comp io'
   let k : W' →+* F := (algebraMap (FractionRing W') F).comp (algebraMap W' _)
   obtain ⟨g, hge⟩ := hext F (j.comp gam)
@@ -205,7 +205,7 @@ theorem basis_at_trait (hV : HV) {E : Type} [Field E] [NumberField E] [IsCMField
   have hb : pl (algebraMap W (FractionRing W)) (x' := jK W ≫ χ) rfl (fnR χ u⁻¹.val • SecM.ofSec t.G σ) =
       pl gam hχ (SecM.ofSec t.G θ) := by
     rw [pl_smul, ha, smul_smul, ← map_mul, ← hu', ← map_mul, u.inv_mul, map_one, map_one, one_smul]
-  exact ⟨SecM.toSec _ (fnR χ u⁻¹.val • SecM.ofSec t.G σ), GlobalTheory.T.generatingSection_finite_ext_normal_domain_isBasis S t.G t.PP.L hL W W' io hi hf χ _
+  exact ⟨SecM.toSec _ (fnR χ u⁻¹.val • SecM.ofSec t.G σ), _root_.GlobalTheory.Ex.OneGenBasis.basisAlong_of_isGenSec S t.G t.PP.L hL W W' io hi hf χ _
     (isGenSec_unit io rfl u hgen) ⟨_, hθ.smul_pull hL gam hχ isUnit_one⟩
     (fun h0 => hθ.pl_ne_zero gam hχ (hb.symm.trans h0)), hb⟩
 
@@ -227,7 +227,7 @@ theorem exists_unif (hU : GlobalTheory.LN.UDvrSt) {E : Type} [Field E] [NumberFi
   by_cases hu : IsUnit (ψ (g PowerSeries.X))
   · have e₀ : spMap (RingHom.id W) ≫ χ = χ := (congrArg (· ≫ χ) (Spec.map_id _)).trans (Category.id_comp _)
     exact ⟨W, inferInstance, inferInstance, inferInstance, RingHom.id W, hW, fun _ _ h => h, RingHom.Finite.id W, t₁,
-      e₀.symm ▸ m₁, GlobalTheory.T.nonempty_uniformisation_trait_in_abelianLocus hU E H _ Y.t W hW χ t₁ m₁ hp₁ (T.1 hu)⟩
+      e₀.symm ▸ m₁, _root_.GlobalTheory.AbelianTrait.nonempty_pelUnif_of_abLocus hU E H _ Y.t W hW χ t₁ m₁ hp₁ (T.1 hu)⟩
   · obtain ⟨W', _, _, _, io, hW', hi, hf, t', m', P, -⟩ := T.2 hu
     exact ⟨W', _, _, _, io, hW', hi, hf, t', m', ⟨P⟩⟩
 
@@ -258,14 +258,14 @@ theorem main : HV → Laws6 → GlobalTheory.LN.UDvrSt → GlobalTheory.LN.HomEx
   have hw' : LBIso o.P.L (Y.t.PP.L.pull (φ ≫ Y.m.φ)) :=
     LBIso.trans o.P.isLB (LB.isLB_pull Y.oF.t.PP.isLB _) (LB.isLB_pull hL _) hw
       (LBIso.chartPull (Geo.Tor.chartPullPull _ φ φ rfl) (chartPullSame _ _ _ _ φ fun _ => rfl) hw₀)
-  obtain ⟨th, hth, hy⟩ := GlobalTheory.T.exists_generator_thetaConstants_over_algClosedExtensions hV.1.1 hV.1.2.1 _ Y.t.G Y.t.PP.L Y.t.PP.rig hL Y.t.PP.rigGen _ _ o.P _
+  obtain ⟨th, hth, hy⟩ := _root_.GlobalTheory.Ex.OneGen.exists_gen_thG_generic hV.1.1 hV.1.2.1 _ Y.t.G Y.t.PP.L Y.t.PP.rig hL Y.t.PP.rigGen _ _ o.P _
     (hp.comp Y.m.cart) hw' (n ^ 1) hn₂.pow _ _ v (o.I.onto _ (by positivity)) hv
-  obtain ⟨e₁, he₁⟩ := GlobalTheory.T.exists_universal_section_basis_polarised_fibre hV.1.2.1 _ _ Y.t.G Y.t.PP.L hL (objPolAV Y.oF) Y.j Y.m.φ Y.m.cart hw₀ _ y₁ _ rfl
+  obtain ⟨e₁, he₁⟩ := _root_.GlobalTheory.Ex.OneGen.exists_univBasis_of_fibre hV.1.2.1 _ _ Y.t.G Y.t.PP.L hL (objPolAV Y.oF) Y.j Y.m.φ Y.m.cart hw₀ _ y₁ _ rfl
   have hx₀ : spMap (algebraMap (FractionRing R₁) (AlgebraicClosure (FractionRing R₁))) ≫ y₁ ≫ Y.j =
       (spMap (algebraMap _ _) ≫ y₁) ≫ Y.j := (Category.assoc _ _ _).symm
   obtain ⟨s, hs⟩ := he₁.ex _ hx₀ (SecM.ofSec _ th)
   have hs₀ : s ≠ 0 := he₁.ne_zero _ hx₀ hth hs
-  obtain ⟨R₂, _, _, h, h', e, i₁, i₂, i₃, hh, heh, ⟨s₂, rfl⟩, hext⟩ := GlobalTheory.T.exists_integrally_closed_extension_of_adjoin R₁ s
+  obtain ⟨R₂, _, _, h, h', e, i₁, i₂, i₃, hh, heh, ⟨s₂, rfl⟩, hext⟩ := _root_.GlobalTheory.exists_finite_normal_adjoin_algebraic R₁ s
   have hx₂ : spMap h' ≫ y₁ ≫ Y.j = (spMap h' ≫ y₁) ≫ Y.j := (Category.assoc _ _ _).symm
   have he : spMap e ≫ (spMap h' ≫ y₁) ≫ Y.j = (spMap (algebraMap (FractionRing R₁) _) ≫ y₁) ≫ Y.j := by
     rw [← heh, sp_comp]; simp only [Category.assoc]

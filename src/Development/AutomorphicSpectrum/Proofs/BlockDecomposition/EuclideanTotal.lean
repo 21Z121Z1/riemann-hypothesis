@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FockTranslateSchwartzMajorant
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0516
 
 @[expose] public section
 

@@ -1,13 +1,13 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Saturated
-public import Development.AbelianVarietyTheory.BlockTheory.NonGaloisCusps.LettersFreeOfRank
+public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0007
+public import Development.AbelianVarietyTheory.BlockTheory.NonGaloisCusps.Bundle0003
 public import Development.AbelianVarietyTheory.BlockTheory.NonGaloisCusps.PointRingCommRing
 public import Formalism.SharpRestriction.LevelLetterCocycles.DataNLoc
 public import Formalism.LocalRingCardinality.AdicCompletionLocal.LocTied
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsSubstInvariants
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsIntegralCyclotomicChar
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0321
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0219
 
 @[expose] public section
 

@@ -1,7 +1,7 @@
 module
 
-public import Formalism.SharpRestriction.GrowthBounds.ScaleEdges
-public import Formalism.LocalToGlobal.GroupLattices.FockModels.WeylDim
+public import Formalism.SharpRestriction.GrowthBounds.Bundle0003
+public import Formalism.LocalToGlobal.GroupLattices.FockModels.Bundle0002
 
 @[expose] public section
 

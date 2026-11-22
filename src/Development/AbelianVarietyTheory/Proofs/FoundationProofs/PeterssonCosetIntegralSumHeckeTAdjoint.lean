@@ -2,8 +2,8 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.Foundations.PetEqRelIndexMulPetProd
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.DiamondOperatorOfMatrixCuspFormGamma1InterGamma0Statement
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.HeckeTOperatorExplicitCuspFormStatement
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0023
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0067
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.LiteratureResults.CocycleCoefficients.PetAdjQuot
 
 @[expose] public section
@@ -303,11 +303,11 @@ theorem pet_heckeT_adj : ∀ (N l q : ℕ) (k : ℤ) (σ σ' : SL(2, ℤ)), 0 < 
   have hle := (lev N l ⊓ conjGL (lev N l) (dg q 1 ha) ⊓ conjGL (lev N l) (dg 1 q hb)).normalCore_le
   rw [← hH, le_inf_iff, le_inf_iff] at hle
   obtain ⟨⟨l1, la⟩, lb⟩ := hle
-  obtain ⟨fs, hfs⟩ := GlobalTheory.T.diamondOperatorOfMatrix_cuspForm_gamma1InterGamma0 N l k q s hN hs f
-  obtain ⟨gs, hgs⟩ := GlobalTheory.T.diamondOperatorOfMatrix_cuspForm_gamma1InterGamma0 N l k q s hN hs g
-  obtain ⟨gs', hgs'⟩ := GlobalTheory.T.diamondOperatorOfMatrix_cuspForm_gamma1InterGamma0 N l k q s' hN hs' g
-  obtain ⟨Tf, hTf⟩ := GlobalTheory.T.heckeTOperatorExplicit_cuspForm N l q k s hN hq hqNl hs f
-  obtain ⟨Tg, hTg⟩ := GlobalTheory.T.heckeTOperatorExplicit_cuspForm N l q k s hN hq hqNl hs g
+  obtain ⟨fs, hfs⟩ := _root_.GlobalTheory.Hk.dia_cuspForm N l k q s hN hs f
+  obtain ⟨gs, hgs⟩ := _root_.GlobalTheory.Hk.dia_cuspForm N l k q s hN hs g
+  obtain ⟨gs', hgs'⟩ := _root_.GlobalTheory.Hk.dia_cuspForm N l k q s' hN hs' g
+  obtain ⟨Tf, hTf⟩ := _root_.GlobalTheory.Hk.heckeT_cuspForm N l q k s hN hq hqNl hs f
+  obtain ⟨Tg, hTg⟩ := _root_.GlobalTheory.Hk.heckeT_cuspForm N l q k s hN hq hqNl hs g
   have G1 := fun f : CuspForm (lev N l) k => good_cusp f (le_refl (lev N l))
   have G0 := fun f : CuspForm (lev N l) k => good_cusp f l1
   have Ga := fun f : CuspForm (lev N l) k => (G1 f).slash _ la

@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.SignatureConjugationInvariant
+public import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Bundle0003
 public import Formalism.LocalRingCardinality.DataSpaces
 
 @[expose] public section

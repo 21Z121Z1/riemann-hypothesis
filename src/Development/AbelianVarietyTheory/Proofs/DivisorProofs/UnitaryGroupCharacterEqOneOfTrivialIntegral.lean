@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Formalism.SatakeDualWeyl.StatementF
+public import Formalism.SatakeDualWeyl.Bundle0001
 public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.InvMemDoubleCosetAndComm
 
 @[expose] public section

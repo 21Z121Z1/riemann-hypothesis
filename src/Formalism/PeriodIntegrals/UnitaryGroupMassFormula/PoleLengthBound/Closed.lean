@@ -1,9 +1,8 @@
 module
 
-public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.PoleLengthBound.ColDeriv
-public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.PoleLengthBound.UnitCols
-public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.BaseLengthBound.TaylorHasse
-public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.BaseLengthBound.Column
+public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.PoleLengthBound.Bundle0003
+public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.BaseLengthBound.Bundle0004
+public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.BaseLengthBound.Bundle0002
 
 @[expose] public section
 

@@ -3,7 +3,7 @@ module
 public import Mathlib
 public import Development.WeilBound.RepresentationTheoryGL.GenericUnitaryGL.SegmentDerivatives.DerivSub
 public import Development.WeilBound.CoreStatements.TemperedRepresentationTheory.MirabolicDerivatives.SegmentCuspLines.ProdIrrFiniteLength
-public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.IrreducibleAdmissibleGL
+public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.Bundle0002
 public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.DerivativeJacquetHolds
 public import CompanionTheory.AutomorphicTheory.HeckeStandardModules.EqZeroOfCompAt
 
@@ -85,7 +85,7 @@ theorem exists_irr_sub_of_quot (hA : GlobalTheory.Published.IrreducibleAdmissibl
   have hZsq : IsSubquotient (subQuot B C) T :=
     ⟨B, ⟨Submodule.mkQ _, fun _ => rfl⟩, Submodule.mkQ_surjective _⟩
   have hZs : IsSmooth (subQuot B C) := hZsq.isSmooth hs
-  obtain ⟨σ, ⟨E⟩⟩ := GlobalTheory.T.levi_irreducible_tensor_decomposition hA (dd n t) (⟨_, subQuot B C, hZs, hZi⟩ : IrrRep _)
+  obtain ⟨σ, ⟨E⟩⟩ := _root_.GlobalTheory.CompanionTheory.LeviTensor.nonempty_equiv_piTensor hA (dd n t) (⟨_, subQuot B C, hZs, hZi⟩ : IrrRep _)
   let φ' := φ ∘ₗ E.symm.toIntertwiningMap.toLinearMap
   have hq : ∀ (g : GL (Fin (dd n t 0)) k) z, φ (subQuot B C (Pi.mulSingle 0 g) z) = R g (φ z) := by
     intro g z

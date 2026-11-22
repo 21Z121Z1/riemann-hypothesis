@@ -3,9 +3,9 @@ module
 public import Mathlib
 public import Formalism.LocalToGlobal.SiegelLatticeTheory.CokernelGLCounts.NGData
 public import Formalism.LocalToGlobal.SiegelLatticeTheory.ClosedLocalOrbits.TermLoc
-public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.LocClosed
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsUniqueIsometryFixingBothFramesOfFrameAdaptStatement
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.TermRowDoubleCosetEqIffIsometriesStatement
+public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.Bundle0014
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsUniqueIsometryFixingBothFramesOfFrameAdapt
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0385
 
 @[expose] public section
 
@@ -301,7 +301,7 @@ theorem same_key_lrel : ∀ (D : D7) (X : HidaSetting D) (Y : Full X) (u u' : D.
   intro D X Y u u' F F' w hZ hG t t' Λ₁ Λ₂ hT1 hT2 hk
   obtain ⟨g1, hA1, hA1', rfl⟩ := hT1
   obtain ⟨g2, hA2, hA2', rfl⟩ := hT2
-  obtain ⟨hl, hl', ⟨n, hn, n', hn', heq⟩, hio⟩ := (GlobalTheory.T.term_row_double_coset_eq_iff_isometries D X Y u u' t t').1 hk
+  obtain ⟨hl, hl', ⟨n, hn, n', hn', heq⟩, hio⟩ := (_root_.GlobalTheory.Unfold.KeyIff.key_eq_iff D X Y u u' t t').1 hk
   have hγ1 : t.lin ∈ Formalism.HermitianLatticesTheory.isom (VS D).hT := t.rep.2.2.1
   have hγ2 : t'.lin ∈ Formalism.HermitianLatticesTheory.isom (VS D).hT := t'.rep.2.2.1
   have hΛ1 : Formalism.HermitianLatticesTheory.gmap t.lin t.lam' = t.lam := t.rep.2.2.2.1
@@ -321,7 +321,7 @@ theorem same_key_lrel : ∀ (D : D7) (X : HidaSetting D) (Y : Full X) (u u' : D.
     Subgroup.mul_mem _ hA2.1 (Subgroup.mul_mem _ hn.1 (Subgroup.inv_mem _ hA1.1))
   have hs1 : Adapt s F F := ⟨hsI, tri_comp (tri_comp (tri_inv _ _ _ hA1.2) (nrat_tri _ _ hn)) hA2.2⟩
   have hs2 : Adapt s F' F' := ⟨hsI, tri_comp (tri_comp (tri_inv _ _ _ hA1'.2) hnT) hA2'.2⟩
-  obtain ⟨h, ⟨hH, hm, hm'⟩, -⟩ := GlobalTheory.T.existsUnique_isometryFixingBothFrames_of_frameAdapted D X Y u u' F F' w hZ hG s hs1 hs2
+  obtain ⟨h, ⟨hH, hm, hm'⟩, -⟩ := _root_.GlobalTheory.Unfold.Inter.common_stabiliser D X Y u u' F F' w hZ hG s hs1 hs2
   refine ⟨h, hH, ?_⟩
   rw [← hl, ← gmap_mul]
 

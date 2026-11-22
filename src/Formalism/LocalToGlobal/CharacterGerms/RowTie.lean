@@ -1,6 +1,6 @@
 module
 
-public import Formalism.LocalToGlobal.CharacterGerms.RowTieDefs
+public import Formalism.LocalToGlobal.CharacterGerms.Bundle0008
 
 @[expose] public section
 

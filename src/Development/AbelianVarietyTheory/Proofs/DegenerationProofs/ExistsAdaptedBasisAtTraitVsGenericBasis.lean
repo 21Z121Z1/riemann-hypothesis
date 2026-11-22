@@ -2,12 +2,12 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.IsFrameIff
-public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsMinOn
-public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsIsoSection
-public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.SectionPowerCalculusGeometricFibre
-public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.MemMaximalIdeal
-public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.NormsOfAdapted
-public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ExpBijFAndExpandsFLin
+public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.Bundle0139
+public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.Bundle0140
+public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.Bundle0148
+public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.Bundle0144
+public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.Bundle0167
+public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.Bundle0027
 public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsFramesOnUniformisedModelFibre
 
 @[expose] public section

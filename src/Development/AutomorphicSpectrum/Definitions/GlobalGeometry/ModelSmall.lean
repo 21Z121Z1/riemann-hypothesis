@@ -3,7 +3,7 @@ module
 public import Mathlib
 public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.CInfGood
 public import Development.AutomorphicSpectrum.Definitions.MetricPeriods.HasMultiplier
-public import Development.AbelianVarietyTheory.Definitions.Divisors.SemiposAtOfPositive
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0063
 
 @[expose] public section
 

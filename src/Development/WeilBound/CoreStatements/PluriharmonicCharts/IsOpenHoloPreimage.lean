@@ -1,15 +1,23 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Proofs.MetricProofs.FlagCoverFramesValueAtPoint
-public import Development.AutomorphicSpectrum.Proofs.MetricProofs.FlagCoverArithmeticFirst
+public import Development.AutomorphicSpectrum.Proofs.MetricProofs.Bundle0082
+public import Development.AutomorphicSpectrum.Proofs.MetricProofs.Bundle0103
 public import Development.AutomorphicSpectrum.Proofs.MetricProofs.FlagCoverArithmeticFifth
 public import Development.AutomorphicSpectrum.Proofs.MetricProofs.FlagCoverArithmeticEighth
-public import Development.AutomorphicSpectrum.Proofs.MetricProofs.TransPtBase
-public import Development.AutomorphicSpectrum.Proofs.MetricProofs.SamePotBlock
-public import Development.AutomorphicSpectrum.Proofs.MetricProofs.FlagCoverArithmeticSecondStatement
-public import Development.AutomorphicSpectrum.Proofs.MetricProofs.FlagCoverFramesAtPointStatement
-public import Development.AutomorphicSpectrum.Proofs.MetricProofs.PullbackPullback
+public import Development.AutomorphicSpectrum.Proofs.MetricProofs.Bundle0067
+public import Development.AutomorphicSpectrum.Proofs.MetricProofs.Bundle0044
+public import Development.AutomorphicSpectrum.Proofs.MetricProofs.Bundle0063
+public import Development.AutomorphicSpectrum.Definitions.MetricPeriods.Pull1
+public import Development.AutomorphicSpectrum.Definitions.MetricPeriods.IsPeriodOn
+public import Development.AutomorphicSpectrum.Proofs.MetricProofs.Bundle0040
+public import GroundTheory.HeightsAndTheta.Heights.Intersections.Bundle0039
+public import Development.AutomorphicSpectrum.Proofs.MetricProofs.Bundle0087
+public import Development.AutomorphicSpectrum.Proofs.MetricProofs.Bundle0037
+public import Development.AutomorphicSpectrum.Proofs.MetricProofs.Bundle0073
+public import Development.AutomorphicSpectrum.Proofs.MetricProofs.Bundle0032
+public import Development.AutomorphicSpectrum.Proofs.MetricProofs.FlagModelBaseProjectionPoints
+public import Development.AutomorphicSpectrum.Proofs.MetricProofs.Bundle0034
 
 @[expose] public section
 
@@ -158,7 +166,7 @@ theorem img_exact (Cv : FlagCover M' M) (z : (Σ k, ι' k) → ℂ) (F' : FrameD
     (hz : ∀ m' : ι' k', z ⟨k', m'⟩ = a * plk M' F' (basePart M'.blk z) p.2 ⟨k', m'⟩ (h p.1)) (m : ι k) :
     img Cv F' F z ⟨k, m⟩ = a * plk M F (basePart M'.blk z ∘ Cv.v) p.2 ⟨k, m⟩
       (Cv.trans F' F (basePart M'.blk z) p.1 * h p.1) := by
-  have hCB := GlobalTheory.T.block_diagonal_minor_vanishing ℂ N j p.2 M.j_le
+  have hCB := _root_.GlobalTheory.CompanionTheory.Ar.PB.MinorCalc.minors_main ℂ N j p.2 M.j_le
   have hoff : ∀ J, ¬ IsStepRows N j p.2 J → minorIJ (h p.1) J (stepCols N j p.2) = 0 := fun J hJ =>
     (hCB.2.1 (h p.1) J (hh p.1) hJ).resolve_right (stepCols_ne_empty M.j_le)
   have hdelta : ∀ I' J, IsStepRows N j p.2 I' → IsStepRows N j p.2 J →
@@ -219,7 +227,7 @@ theorem met (CR : CovReal FA Cv) {z : (Σ k, ι' k) → ℂ} (hz : z ∈ mcPts (
       (M'.blk p).elim (Real.log ‖valAt M'.x (F'.υ p) (basePart M'.blk z)‖) (fun _ => 0) +
       Real.log ‖detFac j p.2 (Cv.trans F' F (basePart M'.blk z) p.1)‖ := by
   have hb := CPts.base_mem M' hz
-  have hbv := (GlobalTheory.T.flag_cover_base_point_in_points K ι Φ y Ψ N j M K' ι' Φ' y' M' Cv _ hb).1
+  have hbv := (_root_.GlobalTheory.CompanionTheory.Ar.PB.CovMap.LocImg.Pt.main K ι Φ y Ψ N j M K' ι' Φ' y' M' Cv _ hb).1
   have hI' := CoordinateConeArithVar.isMultiHomogIdeal y'
   obtain ⟨z₁, o₁, n₁⟩ := FibreCount.exists_normal_base M'.blk F'.c z fun k => FibreCount.chart_ne (hg'.1 k)
   obtain ⟨h, H⟩ := CPts.flag_fwd M' hF' (mem_mcPts_of_sameOrbit hI' o₁ hz)
@@ -320,10 +328,10 @@ theorem pot_loc (CR : CovReal FA Cv) (hy : IsArithVar (mCoordIdeal y) (d + 2))
     LocRe A x fun u => Real.log ((CR.Re.ref p).h (Z u)) - Real.log ((fsHerm ι (M.dy p)).h (Y u)) := by
   have hz := hm x hx
   have hb := CPts.base_mem M' hz
-  have hbv := fun u hu => (GlobalTheory.T.flag_cover_base_point_in_points K ι Φ y Ψ N j M K' ι' Φ' y' M' Cv _ (CPts.base_mem M' (hm u hu))).1
-  obtain ⟨F', hF', hg'⟩ := (GlobalTheory.T.flag_model_base_projection_points K' ι' Φ' y' Ψ N j M').2.1 _ hb
-  obtain ⟨F, hF, hg⟩ := (GlobalTheory.T.flag_model_base_projection_points K ι Φ y Ψ N j M).2.1 _ (hbv x hx)
-  obtain ⟨V, f, hV, hzV, hf, hs⟩ := GlobalTheory.T.flag_cover_frames_at_point K ι Φ y Ψ N j M K' ι' Φ' y' M' Cv _ F' F hz hF' hF hg' hg
+  have hbv := fun u hu => (_root_.GlobalTheory.CompanionTheory.Ar.PB.CovMap.LocImg.Pt.main K ι Φ y Ψ N j M K' ι' Φ' y' M' Cv _ (CPts.base_mem M' (hm u hu))).1
+  obtain ⟨F', hF', hg'⟩ := (_root_.GlobalTheory.CompanionTheory.Ar.PB.CPts.main K' ι' Φ' y' Ψ N j M').2.1 _ hb
+  obtain ⟨F, hF, hg⟩ := (_root_.GlobalTheory.CompanionTheory.Ar.PB.CPts.main K ι Φ y Ψ N j M).2.1 _ (hbv x hx)
+  obtain ⟨V, f, hV, hzV, hf, hs⟩ := _root_.GlobalTheory.CompanionTheory.Ar.PB.CovMap.LocImg.An.main K ι Φ y Ψ N j M K' ι' Φ' y' M' Cv _ F' F hz hF' hF hg' hg
   have hO := isOpen_holo_preimage hW hZ hV
   have hxO : x ∈ W ∩ Z ⁻¹' V := ⟨hx, hzV⟩
   have hfZ : ∀ q, A.HoloOn (W ∩ Z ⁻¹' V) fun u => f (Z u) q := fun q =>
@@ -332,7 +340,7 @@ theorem pot_loc (CR : CovReal FA Cv) (hy : IsArithVar (mCoordIdeal y) (d + 2))
   have horb : ∀ u ∈ W ∩ Z ⁻¹' V, SameOrbit (f (Z u)) (Y u) := fun u hu => by
     obtain ⟨g1, g2, e1⟩ := hs _ ⟨hu.2, hm u hu.1⟩
     rw [e1]
-    exact GlobalTheory.T.flag_cover_arithmetic_second K ι Φ y Ψ N j M K' ι' Φ' y' M' Cv d hy hy' _ (hm u hu.1) _ _
+    exact _root_.GlobalTheory.CompanionTheory.Ar.PB.CovMap.isImg_unique K ι Φ y Ψ N j M K' ι' Φ' y' M' Cv d hy hy' _ (hm u hu.1) _ _
       (img_spec K ι Φ y Ψ N j M K' ι' Φ' y' M' Cv _ F' F (hm u hu.1) hF' hF g1 g2).2 (hi u hu.1)
   choose m hm0 using hY0 x hx
   have hO₂ : IsOpen (W ∩ Y ⁻¹' {w | ∀ k, w ⟨k, m k⟩ ≠ 0}) := isOpen_holo_preimage hW hY (by

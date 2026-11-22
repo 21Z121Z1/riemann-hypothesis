@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.KappaOK
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsInclusionCyclotomicAwayRingFiniteEtale
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2942
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2062
 
 @[expose] public section
 

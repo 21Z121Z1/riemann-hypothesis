@@ -2,8 +2,8 @@ module
 
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.WeilGroupCharacters.ContinuousResP
 public import Development.AutomorphicArithmetic.CyclotomicBounds.ClassNumberBounds.InertiaRamification.ComplY
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.NormEmbeddingIntegerLeOne
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsContinuousExtensionAdicCompletion
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0038
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0035
 
 @[expose] public section
 

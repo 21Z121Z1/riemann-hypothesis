@@ -1,11 +1,10 @@
 module
 
 public import Mathlib
-public import Formalism.LocalToGlobal.IndefiniteReal.LiftCoordinatesInGoodPartOfDefinite
-public import Formalism.LocalToGlobal.IndefiniteReal.CxPass
-public import Formalism.LocalToGlobal.IndefiniteReal.MemRangeAdjointOfKerStable
-public import Formalism.LocalToGlobal.IndefiniteReal.EqZeroOfMemRangeAdjoint
-public import Formalism.LocalToGlobal.IndefiniteReal.EqZeroOfRangeAdjoint
+public import Formalism.LocalToGlobal.IndefiniteReal.Bundle0014
+public import Formalism.LocalToGlobal.IndefiniteReal.Bundle0013
+public import Formalism.LocalToGlobal.IndefiniteReal.Bundle0005
+public import Formalism.LocalToGlobal.IndefiniteReal.Bundle0007
 public import Formalism.LocalToGlobal.Divisibility.ProjLemmas
 
 @[expose] public section

@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Proofs.GlobalProofs.IsAdaptedEmpty
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConstAlongCocompactUniqueStages
+public import Development.AutomorphicSpectrum.Proofs.GlobalProofs.Bundle0052
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1474
 
 @[expose] public section
 

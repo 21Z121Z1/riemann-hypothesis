@@ -3,16 +3,17 @@ module
 public import Mathlib
 public import Development.AutomorphicSpectrum.Definitions.MetricPeriods.IsTwiceDifferentiableAt
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArithmeticIntersection.CompRightEqZero
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArithmeticIntersection.KappaSt
-public import GroundTheory.HeightsAndTheta.Heights.Intersections.StatementsFibreLocal
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArithmeticIntersection.Bundle0001
+public import GroundTheory.HeightsAndTheta.Heights.Intersections.Bundle0003
 public import GroundTheory.HeightsAndTheta.Heights.Antisymmetric.Statements
 public import ReciprocityTheory.AnalyticForms.LeviForms.HomDens
-public import ReciprocityTheory.AnalyticForms.PotentialTheory.PshShiftA
-public import Development.AutomorphicSpectrum.Proofs.MetricProofs.IsOpenFlagDomainNondegenerateMinorsStatement
-public import Development.AutomorphicSpectrum.Proofs.MetricProofs.LogDetComparableGramBoundStatement
-public import Development.AutomorphicSpectrum.Proofs.MetricProofs.GramLogUnitaryTriangularInvarianceStatement
-public import Development.WeilBound.CoreStatements.PluriharmonicCharts.XPerCell
-public import Development.AutomorphicSpectrum.Proofs.MetricProofs.FlagPotentialLeviFormCellStatement
+public import ReciprocityTheory.AnalyticForms.PotentialTheory.Bundle0001
+public import Development.AutomorphicSpectrum.Proofs.MetricProofs.IsOpenFlagDomainNondegenerateMinors
+public import Development.AutomorphicSpectrum.Definitions.MetricPeriods.Bundle0001
+public import Development.AutomorphicSpectrum.Proofs.MetricProofs.Bundle0006
+public import Development.AutomorphicSpectrum.Proofs.MetricProofs.Bundle0007
+public import Development.WeilBound.CoreStatements.PluriharmonicCharts.Bundle0004
+public import Development.AutomorphicSpectrum.Proofs.MetricProofs.Bundle0019
 
 @[expose] public section
 
@@ -98,7 +99,7 @@ theorem plurRe_stepCorr {z0 : Fin e → ℂ} {b : (Fin e → ℂ) → Matrix (Fi
 theorem stepPot_unitary_mul {j : ℕ} {u : Matrix (Fin N) (Fin N) ℂ}
     (hu : gramOf (sigForm N j) u = diagonal fun i => ((sigForm N j i : ℝ) : ℂ))
     (i : Fin N) (g : Matrix (Fin N) (Fin N) ℂ) : stepPot N j i (u * g) = stepPot N j i g := by
-  have h k := (GlobalTheory.T.gram_log_unitary_triangular_invariance N (sigForm N j) k g u 1).1 hu
+  have h k := (_root_.GlobalTheory.CompanionTheory.Ar.PB.gramLog_inv N (sigForm N j) k g u 1).1 hu
   unfold stepPot
   simp only [h]
 

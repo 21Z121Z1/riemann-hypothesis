@@ -1,10 +1,10 @@
 module
 
 public import Mathlib
-public import ReciprocityTheory.ReductiveGroups.UnramifiedIntegrals.ModDefs
-public import ReciprocityTheory.ReductiveGroups.UnramifiedIntegrals.ModBasic
-public import ReciprocityTheory.ReductiveGroups.UnramifiedIntegrals.CoeffRescaleExpandOfNotDvd
-public import ReciprocityTheory.ReductiveGroups.UnramifiedIntegrals.ModFrobSer
+public import ReciprocityTheory.ReductiveGroups.UnramifiedIntegrals.Bundle0002
+public import ReciprocityTheory.ReductiveGroups.UnramifiedIntegrals.Bundle0003
+public import ReciprocityTheory.ReductiveGroups.UnramifiedIntegrals.Bundle0006
+public import ReciprocityTheory.ReductiveGroups.UnramifiedIntegrals.Bundle0008
 
 @[expose] public section
 

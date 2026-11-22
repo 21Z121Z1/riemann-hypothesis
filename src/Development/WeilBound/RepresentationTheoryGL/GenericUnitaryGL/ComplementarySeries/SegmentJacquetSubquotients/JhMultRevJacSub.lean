@@ -1,11 +1,11 @@
 module
 
 public import Mathlib
-public import Development.WeilBound.RepresentationTheoryGL.GenericUnitaryGL.ComplementarySeries.SegmentJacquetSubquotients.HasFiniteLengthJacSub
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CuspidalPairSubGeneric
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IsSmoothIterPhi
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.WordOccursProductInterleave
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.AlgebraMapIntertwiningMapBijectiveOfIsSmooth
+public import Development.WeilBound.RepresentationTheoryGL.GenericUnitaryGL.ComplementarySeries.SegmentJacquetSubquotients.Bundle0002
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0650
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0563
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0623
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0621
 
 @[expose] public section
 

@@ -1,22 +1,23 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.LineLatAt
-public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.NotLineLatAtZero
-public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.BaseMatrixGlApply
-public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.ExistsSumFrame
-public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.ExistsNormLeHeightPow
+public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.Bundle0027
+public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.Bundle0029
+public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.Bundle0026
+public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.Bundle0018
+public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.Bundle0007
 public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.AdmissibleDiscreteSeriesOfHasParam
 public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.HarishChandraModulesOn
 public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.HasDRepIffHasDerivAt
 public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.WeilRepresentationUnitaryPair
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.FractionalIdealCompletionPropertiesAtPlace
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.LineLatticeSelfDual
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.CoprimeScalingIdealValuationLe
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SplitPlaceHermitianFramePropertiesStatement
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ExistsSplitPointFrameCharacter
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0447
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0412
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0402
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0276
+public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.Bundle0008
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0116
 public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SelfDualSplitComponentIsLatticeStabilizerEq
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.MemSmulOfMemFlagSubOne
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0044
 public import Development.AbelianVarietyTheory.Proofs.HeightProofs.EmbeddingXiZeroNeZero
 
 @[expose] public section
@@ -144,7 +145,7 @@ theorem exists_modify {ι : Type} {p : ι → SplitPt D k} (hp : Function.Inject
   | nil => exact ⟨L, hL, by simp, fun _ _ => rfl⟩
   | cons i l ih =>
     obtain ⟨M, hM, h1, h2⟩ := ih
-    obtain ⟨M', hM', h3, h4⟩ := (GlobalTheory.T.splitPlaceHermitianFrame_properties D k (p i) S n (β i)).2.2.2.2.1 M (Λ i) hM (by first | exact hΛ i | exact (hΛ i).toIsLattice)
+    obtain ⟨M', hM', h3, h4⟩ := (_root_.GlobalTheory.FrameAt.frame_facts D k (p i) S n (β i)).2.2.2.2.1 M (Λ i) hM (by first | exact hΛ i | exact (hΛ i).toIsLattice)
     refine ⟨M', hM', fun i' hi' => ?_, fun v hv => (latV_eq_at h4 (hv i)).trans (h2 v hv)⟩
     by_cases e : i' = i
     · subst e; exact h3

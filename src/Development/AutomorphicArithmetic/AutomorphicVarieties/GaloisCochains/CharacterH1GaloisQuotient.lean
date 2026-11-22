@@ -1,10 +1,10 @@
 module
 
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.GaloisCochains.GLinkQuot
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.GaloisCochains.LevelS
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.GaloisCochains.Bundle0001
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.GaloisCochains.StrGen
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.GaloisCochains.GwTame
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.GaloisLibrary.SelmerTransport.Places
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.GaloisCochains.Bundle0004
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.GaloisLibrary.SelmerTransport.Bundle0007
 
 @[expose] public section
 

@@ -1,8 +1,8 @@
 module
 
-public import Formalism.HermitianCurvature.CapelliDeterminantAndBranching
+public import Formalism.HermitianCurvature.Bundle0008
 public import Formalism.HermitianCurvature.HermitianCurvatureProofs.QuantumMinorExpansion
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.QuantumMinorCommutation
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0055
 
 @[expose] public section
 

@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Development.WeilBound.ThetaLifts.Reductions.SiegelCore
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.StabUpTo
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0399
 
 @[expose] public section
 

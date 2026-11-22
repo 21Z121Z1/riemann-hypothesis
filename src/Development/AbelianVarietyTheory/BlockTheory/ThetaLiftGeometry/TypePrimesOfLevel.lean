@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Formalism.LocalRingCardinality.DataKerI
-public import Formalism.SharpRestriction.ElevenLe
+public import Formalism.SharpRestriction.Bundle0001
 public import Formalism.LocalToGlobal.Columns.DecorationStabilizerTrivialUnipotent
 
 @[expose] public section

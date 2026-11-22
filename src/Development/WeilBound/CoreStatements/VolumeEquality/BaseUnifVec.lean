@@ -1,8 +1,8 @@
 module
 
 public import Development.WeilBound.CoreStatements.VolumeEquality.BaseUnifVecA
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.FamilyPeriodRiemannLattice
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LatticeTangentVectorsAffineOpen
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0203
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0224
 public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.IsExcisionNbhdAway
 public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.LieModelOfIsLieBasis
 public import Development.AbelianVarietyTheory.Proofs.CovolumeBounds.DifferentiableOnOfTendstoLocallyUniformlyOn

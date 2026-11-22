@@ -1,9 +1,9 @@
 module
 
 public import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutJABddSSn
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.BigCellHermitian
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0037
 public import Formalism.HermitianCurvature.HermitianCurvatureProofs.TheoremPIntegralOfPlaces
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutJAFFStableAdjCont
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0199
 
 @[expose] public section
 

@@ -1,25 +1,30 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IsSplitK
-public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.HermitianMatricesLocallyCompactBorel
-public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.GramRightActionIdentities
-public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.TensorLocallyCompactRingStatement
-public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.InfiniteAdelesLocalRingTotallyRealStatement
-public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.CoordinateHaarMeasureStatement
-public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.InfiniteAdeleHaarMapEqScaledVolumeStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ComplexCoordinatesExistAtInfinityStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.DisintegrationAlongContinuousQuotientMapStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.DensityBoundFromBoxVolumeGrowthStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MeasurableDensityFromBoxVolumeGrowthStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.GoodSetCompactLinearlyIndependentStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ArchimedeanCompactSetDensityBoundedStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ArchimedeanMeasureScalingByUnitsStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ArchimedeanHermitianScalingByUnitsStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ShearPreservesArchimedeanHaarStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ShearPushforwardHermitianMeasureStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SchwartzArchContinuousIntegrableStatement
-public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.DenLE
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0519
+public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.Bundle0016
+public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.Bundle0019
+public import CompanionTheory.SpectralGeometry.CountingDefinitions.AdelicEulerProducts.IsEulerProd
+public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.Bundle0017
+public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.CoordinateHaarMeasure
+public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.InfiniteAdeleHaarMapEqScaledVolume
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0511
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0471
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0827
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0480
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SecondCountableHermC
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0501
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.DisintegrationAlongContinuousQuotientMap
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.DensityBoundFromBoxVolumeGrowth
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0569
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0561
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0594
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0578
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0527
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0548
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0549
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0547
+public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0012
 
 @[expose] public section
 
@@ -84,7 +89,7 @@ theorem dom_generic {K W : Type} [CommRing K] [Fintype W] (κ : K ≃+* (W → �
   have hBt : Bc + 1 ≠ ⊤ := by simp [hBc]
   have hδ : ε / 2 / (Bc + 1) ≠ 0 := by
     simp [ENNReal.div_eq_top, hε, hBc]
-  obtain ⟨ε', hε', hbad⟩ := GlobalTheory.T.density_bound_from_box_volume_growth K W κ n M hn hM H μ ν q C₀ hC hbox hsh R hR _ hδ
+  obtain ⟨ε', hε', hbad⟩ := _root_.GlobalTheory.CompanionTheory.WhitFree.AvgInf.Bad.bad_density K W κ n M hn hM H μ ν q C₀ hC hbox hsh R hR _ hδ
   refine ⟨R, ε', hε', fun Y hY => ?_⟩
   have hsub : (goodK κ R ε')ᶜ ∩ q ⁻¹' Y ⊆ ((boxK κ (fun _ _ => R))ᶜ ∩ q ⁻¹' Y) ∪
       ((boxK κ (fun _ _ => R) \ goodK κ R ε') ∩ q ⁻¹' Y) := by
@@ -159,17 +164,17 @@ theorem avgInf_tendsto : ∀ (F E : Type) [Field F] [NumberField F] [Field E] [N
   intro F E _ _ _ _ _ σ hCM M J hJ n hn hM d b lam hinf minf hminf c φ hφ
   classical
   have hlam : lam.IsAddHaarMeasure := hinf.1
-  obtain ⟨ρ0, e, hρ0, he, hρe, -⟩ := GlobalTheory.T.infinite_adele_haar_map_eq_scaled_volume F hCM.1
-  obtain ⟨τ₀, κ, hco⟩ := GlobalTheory.T.complex_coordinates_exist_at_infinity F E σ hCM ρ0 e hρ0 he hρe
+  obtain ⟨ρ0, e, hρ0, he, hρe, -⟩ := _root_.GlobalTheory.CompanionTheory.SW.real_iso F hCM.1
+  obtain ⟨τ₀, κ, hco⟩ := _root_.GlobalTheory.CompanionTheory.SiegelND.Integ.Arch.exists_isCoord F E σ hCM ρ0 e hρ0 he hρe
   obtain ⟨hκ, -, hκa⟩ := isSplitK_of_isCoord hCM hco
-  have hloc := GlobalTheory.T.infinite_adeles_local_ring_totally_real F hCM.1
+  have hloc := _root_.GlobalTheory.CompanionTheory.SW.isLocR_Ainf F hCM.1
   obtain ⟨hTR, hLC, hSC, hT2, -⟩ := id hloc
   haveI := hTR
   haveI := hLC
   haveI := hSC
   haveI := hT2
   haveI : BorelSpace (Ainf F) := ⟨rfl⟩
-  obtain ⟨hTK, hLK, hSK, hTK2, -, -, -, hBor, -, -⟩ := GlobalTheory.T.tensor_locally_compact_ring F E σ hCM (Ainf F)
+  obtain ⟨hTK, hLK, hSK, hTK2, -, -, -, hBor, -, -⟩ := _root_.GlobalTheory.CompanionTheory.SW.TopK.topTens_props F E σ hCM (Ainf F)
   haveI := hTK
   haveI := hLK
   haveI := hSK
@@ -188,7 +193,7 @@ theorem avgInf_tendsto : ∀ (F E : Type) [Field F] [NumberField F] [Field E] [N
   haveI i6 : SecondCountableTopology (HermR (Ainf F) σ n) := hSH
   haveI i7 : T2Space (HermR (Ainf F) σ n) := hT2H
   haveI i8 : BorelSpace (HermR (Ainf F) σ n) := ⟨rfl⟩
-  obtain ⟨-, hW, hH⟩ := GlobalTheory.T.coordinate_haar_measure F E σ hCM (Ainf F) d b lam hlam
+  obtain ⟨-, hW, hH⟩ := _root_.GlobalTheory.CompanionTheory.SW.coord_measures_haar F E σ hCM (Ainf F) d b lam hlam
   haveI := hW n M
   haveI := hH n
   obtain ⟨halg, -, -, hmem, -⟩ := GlobalTheory.CompanionTheory.SW.GramAlg.gram_algebra F E σ hCM M J hJ (Ainf F) n
@@ -207,7 +212,7 @@ theorem avgInf_tendsto : ∀ (F E : Type) [Field F] [NumberField F] [Field E] [N
   have hd : d = 2 := by
     rw [← hCM.2.2.1, Module.finrank_eq_card_basis b, Fintype.card_fin]
   subst hd
-  obtain ⟨C₀, hC₀, hden⟩ := GlobalTheory.T.archimedean_compact_set_density_bounded F E σ hCM M J hJ n hn hM 2 b lam hlam (boxK κ fun _ _ => 1) (hbc _)
+  obtain ⟨C₀, hC₀, hden⟩ := _root_.GlobalTheory.CompanionTheory.WhitFree.AvgInf.Dens.density_inf F E σ hCM M J hJ n hn hM 2 b lam hlam (boxK κ fun _ _ => 1) (hbc _)
   have hcj : ∀ h : Matrix (Fin n) (Fin n) (Ainf F ⊗[F] E), Continuous fun S : HermR (Ainf F) σ n =>
       HeckeCharacterZeroLocus.SiegelWeilU.cT (sigR (Ainf F) σ) h * (S : Matrix (Fin n) (Fin n) (Ainf F ⊗[F] E)) * h := fun h =>
     (continuous_const.matrix_mul continuous_subtype_val).matrix_mul continuous_const
@@ -247,10 +252,10 @@ theorem avgInf_tendsto : ∀ (F E : Type) [Field F] [NumberField F] [Field E] [N
     have hT : MeasurableEmbedding (shearK a s : (Fin n → Fin M → Ainf F ⊗[F] E) → _) := eT.measurableEmbedding
     have hμ' : μ.map (shearK a s) = (1 : ℝ≥0) • μ := by
       rw [one_smul]
-      exact GlobalTheory.T.shear_preserves_archimedean_haar F E σ hCM n M 2 b lam hlam a s hs
+      exact _root_.GlobalTheory.CompanionTheory.WhitFree.AvgInf.coordW_map_shearK F E σ hCM n M 2 b lam hlam a s hs
     have hν' : ν.map (τg (shearM a s)) = (1 : ℝ≥0) • ν := by
       rw [one_smul]
-      exact GlobalTheory.T.shear_pushforward_hermitian_measure F E σ hCM n 2 b lam hlam a s hs _ (hτm _) fun S => rfl
+      exact _root_.GlobalTheory.CompanionTheory.WhitFree.AvgInf.ShearHaar.coordHerm_map_shear F E σ hCM n 2 b lam hlam a s hs _ (hτm _) fun S => rfl
     have := denLE_image hT (hτm (shearM a s)) (fun X => by rw [shearK_eq_rmul]; exact hτq _ X) one_ne_zero hμ' hν' hS
     have e1 : (((1 : ℝ≥0)⁻¹ * 1 : ℝ≥0) : ℝ≥0∞) * C = C := by simp
     rw [e1] at this
@@ -314,8 +319,8 @@ theorem avgInf_tendsto : ∀ (F E : Type) [Field F] [NumberField F] [Field E] [N
       show (HeckeCharacterZeroLocus.SiegelWeilU.cT (sigR (Ainf F) σ) g * (S : Matrix (Fin n) (Fin n) (Ainf F ⊗[F] E)) * g) i j = _
       rw [h1]
       simp only [g, Matrix.mul_diagonal, Matrix.diagonal_mul]
-    have hμ' := GlobalTheory.T.archimedean_measure_scaling_by_units F E σ hCM n M 2 b lam hlam e he t ht
-    have hν' := GlobalTheory.T.archimedean_hermitian_scaling_by_units F E σ hCM n 2 b lam hlam e he t ht (τg g) (hτm g) hτe
+    have hμ' := _root_.GlobalTheory.CompanionTheory.SW.Dil.coordW_map_units F E σ hCM n M 2 b lam hlam e he t ht
+    have hν' := _root_.GlobalTheory.CompanionTheory.SW.DiagScale.coordHerm_map_diag_ainf F E σ hCM n 2 b lam hlam e he t ht (τg g) (hτm g) hτe
     set P : Fin n → ℝ≥0 := fun a => ∏ w, ‖e (t a) w‖₊ with hP
     have hP0 : ∀ a, P a ≠ 0 := by
       intro a
@@ -380,7 +385,7 @@ theorem avgInf_tendsto : ∀ (F E : Type) [Field F] [NumberField F] [Field E] [N
     exact h1
   have hbm : ∀ r : Fin n → NumberField.InfinitePlace F → ℝ, MeasurableSet (boxK (M := M) κ r) :=
     fun r => (hbc r).measurableSet
-  obtain ⟨hφc, hφi, ⟨B, hB⟩, hdec⟩ := GlobalTheory.T.schwartz_arch_continuous_integrable F E σ hCM κ hκ n M 2 b lam hlam φ hφ
+  obtain ⟨hφc, hφi, ⟨B, hB⟩, hdec⟩ := _root_.GlobalTheory.CompanionTheory.WhitFree.AvgInf.SchwartzTuple.schwartzArch_facts F E σ hCM κ hκ n M 2 b lam hlam φ hφ
   have hdom : ∀ ε : ℝ≥0∞, ε ≠ 0 → ∃ A : Set (Fin n → Fin M → Ainf F ⊗[F] E), IsCompact A ∧
       A ⊆ {X | LinearIndependent (Ainf F ⊗[F] E) X} ∧ ∀ Y, MeasurableSet Y →
         ∫⁻ X in Aᶜ ∩ Q ⁻¹' Y, ‖φ X‖ₑ ∂μ ≤ ε * ν Y := by
@@ -389,7 +394,7 @@ theorem avgInf_tendsto : ∀ (F E : Type) [Field F] [NumberField F] [Field E] [N
     exact ⟨goodK κ R ε', (hgood R ε' h0).1, (hgood R ε' h0).2, h⟩
   let Q' : (Fin n → Fin M → Ainf F ⊗[F] E) → HeckeCharacterZeroLocus.SiegelWeilU.HermR (Ainf F) σ n := Q
   have hQc' : Continuous Q' := hQc
-  have key := GlobalTheory.T.disintegration_along_continuous_quotient_map (Fin n → Fin M → Ainf F ⊗[F] E) (HeckeCharacterZeroLocus.SiegelWeilU.HermR (Ainf F) σ n)
+  have key := _root_.GlobalTheory.CompanionTheory.WhitFree.AvgInf.Lim.fibre_avg_tendsto (Fin n → Fin M → Ainf F ⊗[F] E) (HeckeCharacterZeroLocus.SiegelWeilU.HermR (Ainf F) σ n)
     (Matrix (Fin n) (Fin n) (Ainf F ⊗[F] E)) μ ν (gramR (Ainf F) σ J) Subtype.val Q' _ minf hUo hQc'
     Subtype.val_injective hQv hminf φ hφc hφi hdom c
   refine ⟨hφc.measurable, key.1, fun ρ hρ hs => ?_⟩

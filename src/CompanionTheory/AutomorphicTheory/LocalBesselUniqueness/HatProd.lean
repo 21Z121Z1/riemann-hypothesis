@@ -1,7 +1,7 @@
 module
 
 public import CompanionTheory.AutomorphicTheory.LocalBesselUniqueness.OpLocal
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.BigCellHermitian
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0037
 
 @[expose] public section
 

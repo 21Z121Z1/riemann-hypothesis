@@ -1,11 +1,10 @@
 module
 
-public import Development.WeilBound.ThetaLifts.LeviDeterminants.EvChange
-public import Development.WeilBound.ThetaLifts.LeviDeterminants.EvStmt
-public import Development.WeilBound.ThetaLifts.LeviDeterminants.ExistsAdaptedModelTwoPlanes
-public import Development.WeilBound.ThetaLifts.LeviDeterminants.EigenIntertwinerTwoPlanes
+public import Development.WeilBound.ThetaLifts.LeviDeterminants.Bundle0005
+public import Development.WeilBound.ThetaLifts.LeviDeterminants.Bundle0002
+public import Development.WeilBound.ThetaLifts.LeviDeterminants.Bundle0010
 public import Development.WeilBound.ThetaLifts.LeviDeterminants.EigenIntertwinerSkewPlaneUnique
-public import Development.WeilBound.ThetaLifts.TowerModels.PlaneHerm
+public import Development.WeilBound.ThetaLifts.TowerModels.Bundle0002
 
 @[expose] public section
 

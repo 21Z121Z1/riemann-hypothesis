@@ -4,17 +4,16 @@ public import Mathlib
 public import Formalism.LocalToGlobal.Divisibility.ConstantGeTwentyEight
 public import Formalism.LocalToGlobal.Divisibility.RowSideTie
 public import Formalism.LocalToGlobal.Divisibility.NumbersLink
-public import Formalism.SharpRestriction.GlobalTheoremInputs
+public import Formalism.SharpRestriction.Bundle0002
 public import Formalism.SharpRestriction.AdmissibleParameterJoins
 public import Formalism.SharpRestriction.Divisibility.LocalQuadraticParts
 public import Formalism.SharpRestriction.Divisibility.WeightDegreeSizes
 public import Formalism.SharpRestriction.Divisibility.ClosedSizeLink.DivisionAdmissibleFamilyOfData
-public import Formalism.LocalToGlobal.GroupLattices.JointServices.ValIntNonneg
-public import Formalism.LocalToGlobal.GroupLattices.JointServices.ShiftIdealSgFl
+public import Formalism.LocalToGlobal.GroupLattices.JointServices.Bundle0001
 public import Formalism.LocalToGlobal.GroupLattices.ServJointF
-public import Formalism.LocalToGlobal.Divisibility.LinkDIVL2R3Col
-public import Formalism.SharpRestriction.Divisibility.HookProducts.RBTieOp
-public import Formalism.SharpRestriction.Divisibility.HookProducts.RBTieMu
+public import Formalism.LocalToGlobal.Divisibility.Bundle0006
+public import Formalism.SharpRestriction.Divisibility.HookProducts.Bundle0002
+public import Formalism.SharpRestriction.Divisibility.HookProducts.Bundle0003
 
 @[expose] public section
 

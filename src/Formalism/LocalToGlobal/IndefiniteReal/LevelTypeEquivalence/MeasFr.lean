@@ -1,6 +1,6 @@
 module
 
-public import Formalism.LocalToGlobal.IndefiniteReal.LevelTypeEquivalence.LevelA
+public import Formalism.LocalToGlobal.IndefiniteReal.LevelTypeEquivalence.Bundle0009
 public import Formalism.LocalToGlobal.IndefiniteReal.LevelTypeEquivalence.MeasUpq
 
 @[expose] public section

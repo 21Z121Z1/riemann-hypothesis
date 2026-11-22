@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Formalism.LocalToGlobal.ProjectiveLattices.EquivariantFiniteGroup
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0019
 public import Formalism.LocalToGlobal.GlobalTheory.GL5.FamilyMassVolumeIdentityOfClassDecomp
-public import Development.AbelianVarietyTheory.Proofs.TorusHaarMeasure.NormBcharMulNfacRmul
+public import Development.AbelianVarietyTheory.Proofs.TorusHaarMeasure.Bundle0019
 
 @[expose] public section
 

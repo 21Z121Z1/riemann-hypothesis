@@ -5,8 +5,8 @@ public import Development.AutomorphicArithmetic.CyclotomicBounds.RamifiedDiscrim
 public import Formalism.LocalToGlobal.ProjectiveLattices.XcLat
 public import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.ShortGeneratorPlaceValuationBoundProof
 public import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.ShortBoundOfTrivAt
-public import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.LatticeTrivialAtPrimeIndicesAndUnits
-public import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.IsotropicGroupPrimaryDecomposition
+public import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.Bundle0038
+public import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.Bundle0035
 public import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.HarmonicValueTranslatedProductValuationBound
 
 @[expose] public section
@@ -50,7 +50,7 @@ theorem sum_bound_of_trivAt (Xo : Moduli Dw l) (c : Coeff l) [StarRing (𝓞 E)]
   obtain ⟨hfz, hm0, hT⟩ := GlobalTheory.TrivLattice.trivAt_units E H Dw l c n Λ N M ℓ hU hL hℓ htr
   obtain ⟨-, hFF⟩ := hT T io hlu
   obtain ⟨J, J', _, _, a, a', σ, -, haZ, ⟨m, hm, ha'⟩, hzs, hcard⟩ :=
-    GlobalTheory.T.isotropic_group_primary_decomposition E H Dw l Xo T.Fr (xOf y) n Λ N M ℓ hU hL hℓ z hz hg
+    _root_.GlobalTheory.isotropic_primary_decomposition E H Dw l Xo T.Fr (xOf y) n Λ N M ℓ hU hL hℓ z hz hg
   have hlev : N ^ 2 = n' ^ 2 * ℓ ^ j := by
     have h2 : (N : 𝓞 E) = H.bar β₀ * H.bar α * n' := by
       have := congrArg H.bar hfac

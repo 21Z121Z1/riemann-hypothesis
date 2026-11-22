@@ -1,8 +1,8 @@
 module
 
-public import Formalism.HarderNarasimhan.StatementFrameF
+public import Formalism.HarderNarasimhan.Bundle0001
 public import Formalism.HarderNarasimhan.HarderNarasimhanProofs.FrameHermSharpB
-public import Formalism.HarderNarasimhan.HarderNarasimhanProofs.FrameLinearAlgebraFirst
+public import Formalism.HarderNarasimhan.HarderNarasimhanProofs.Bundle0002
 
 @[expose] public section
 

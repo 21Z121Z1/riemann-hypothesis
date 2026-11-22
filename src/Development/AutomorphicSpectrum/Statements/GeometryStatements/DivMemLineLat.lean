@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Statements.GeometryStatements.CompactConjugacyDomainLocal
+public import Development.AutomorphicSpectrum.Statements.GeometryStatements.Bundle0004
 
 @[expose] public section
 

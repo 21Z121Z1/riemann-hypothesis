@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.HasNormGroups
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0226
 
 @[expose] public section
 

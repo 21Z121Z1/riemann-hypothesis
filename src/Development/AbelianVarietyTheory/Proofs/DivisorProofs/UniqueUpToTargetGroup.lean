@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsTransp
-public import Development.AbelianVarietyTheory.Proofs.GenericRegularity.FrameBorelGroupoidProperties
-public import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.ContinuousRmulPair
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1805
+public import Development.AbelianVarietyTheory.Proofs.GenericRegularity.Bundle0020
+public import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.Bundle0018
 
 @[expose] public section
 

@@ -4,13 +4,12 @@ public import Mathlib
 public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.EmbedsGeneric
 public import Development.AutomorphicSpectrum.Definitions.DivisibilityTowers.GoodOrigin
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.GlobalSectionsRankAlgClosed
-public import Development.AutomorphicSpectrum.Statements.GeometryStatements.FlatLineGenerator
-public import Development.AutomorphicSpectrum.Statements.GeometryStatements.CardComapMulFinsumEqFinsumFibres
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.GapN
+public import Development.AutomorphicSpectrum.Statements.GeometryStatements.Bundle0007
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0003
 public import Development.WeilBound.CoreStatements.VolumeEquality.ChartMeetsPoint
-public import Development.WeilBound.CoreStatements.VolumeEquality.CoverRootsSch
-public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsRingHomComplexCompEqOfCountable
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.GenericPointComponentLocalRing
+public import Development.WeilBound.CoreStatements.VolumeEquality.Bundle0003
+public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0022
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0081
 public import GroundTheory.HeightsAndTheta.Heights.ElementarySymmetric.PFibreNormDehomRoots
 
 @[expose] public section

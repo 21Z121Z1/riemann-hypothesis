@@ -1,11 +1,10 @@
 module
 
-public import Development.AutomorphicArithmetic.Foundations.Convolution.BlockHeckeSlices.DatDatum
-public import Development.AutomorphicArithmetic.Foundations.Convolution.BlockHeckeSlices.CuspidalNormBounds.UmgOps
-public import Development.AutomorphicArithmetic.Foundations.Convolution.BlockHeckeSlices.CuspidalNormBounds.HkApply
-public import Development.AutomorphicArithmetic.Foundations.Convolution.CentreSplitting.TsphVec
+public import Development.AutomorphicArithmetic.Foundations.Convolution.BlockHeckeSlices.Bundle0001
+public import Development.AutomorphicArithmetic.Foundations.Convolution.BlockHeckeSlices.CuspidalNormBounds.Bundle0002
+public import Development.AutomorphicArithmetic.Foundations.Convolution.BlockHeckeSlices.CuspidalNormBounds.Bundle0001
+public import Development.AutomorphicArithmetic.Foundations.Convolution.CentreSplitting.Bundle0004
 
-import all Development.AutomorphicArithmetic.Foundations.Convolution.CentreSplitting.TsphVec
 import GroundTheory.AutomorphicForms.CuspidalDiscreteness.SummandsContRep
 
 @[expose] public section

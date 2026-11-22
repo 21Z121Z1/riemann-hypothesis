@@ -2,8 +2,8 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ComapMaximalIdealEqOrigin
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GoodIffEtaleAt
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RingHomExtTensor
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0285
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0098
 
 @[expose] public section
 

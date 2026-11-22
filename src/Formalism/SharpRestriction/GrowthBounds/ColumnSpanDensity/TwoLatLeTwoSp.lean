@@ -1,6 +1,6 @@
 module
 
-public import Formalism.SharpRestriction.GrowthBounds.ColumnSpanDensity.DeltaPsiH
+public import Formalism.SharpRestriction.GrowthBounds.ColumnSpanDensity.Bundle0015
 public import Formalism.SharpRestriction.GrowthBounds.LatticeSystems
 
 @[expose] public section

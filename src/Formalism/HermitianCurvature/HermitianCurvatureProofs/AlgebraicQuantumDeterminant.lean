@@ -1,8 +1,8 @@
 module
 
-public import Formalism.HermitianCurvature.StatementQr
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.LemmaDDeterminantIdentity
-public import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.QmMove
+public import Formalism.HermitianCurvature.Bundle0007
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0047
+public import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.Bundle0014
 
 @[expose] public section
 

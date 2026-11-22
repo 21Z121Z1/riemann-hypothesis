@@ -3,7 +3,7 @@ module
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArakelovVolumes.IntegralModuleBases.IntegralModuleBasisStatement
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArakelovVolumes.IntegralModuleBases.NormGsoSqLeTwoPowMulOfValEqAdd
 public import ReciprocityTheory.ReducedBases.ExistsRedOf
-public import ReciprocityTheory.ReducedBases.PrefixProdGeOne
+public import ReciprocityTheory.ReducedBases.Bundle0003
 
 @[expose] public section
 

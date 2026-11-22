@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ResV
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2868
 public import Development.AbelianVarietyTheory.Definitions.ThetaMetrics.MemNonzeroLocusIffPowFn
 
 @[expose] public section

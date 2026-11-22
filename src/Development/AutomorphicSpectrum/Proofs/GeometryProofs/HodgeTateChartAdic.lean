@@ -2,12 +2,17 @@ module
 
 public import Mathlib
 public import Development.AutomorphicSpectrum.Statements.GeometryStatements.IsPolLatticePlane
-public import Development.AutomorphicSpectrum.Statements.GeometryStatements.HTChartExists
+public import Development.AutomorphicSpectrum.Statements.GeometryStatements.Bundle0001
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.TwoWeightEqOneAddRoot
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.HodgeTateFunctionalBaseChangeStatement
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LieModelBaseChangeMapStatement
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LieModelFiniteProjectiveStatement
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LieModelIsBaseChangeStatement
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0039
+public import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.Bundle0001
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.ExistsUnitFormLocalizationEtaleNbhd
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.Bundle0002
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0127
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.Bundle0001
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0129
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.Bundle0004
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.IsGrpPullback
 
 @[expose] public section
 
@@ -217,12 +222,12 @@ theorem reducesTo_of_isHTChartOf : ∀ (p : ℕ) [Fact p.Prime] (C : Type) [Fiel
   haveI : IsScalarTower R O L' := ⟨fun r o l => by
     show (r • o) • l = algebraMap R O r • (o • l)
     rw [Algebra.smul_def, mul_smul]⟩
-  obtain ⟨β₀, hβ₀, hβs, -⟩ := GlobalTheory.T.lie_model_base_change_map S G R O x L L' M M'
+  obtain ⟨β₀, hβ₀, hβs, -⟩ := _root_.GlobalTheory.CompanionTheory.Ar.lieModel_baseChange S G R O x L L' M M'
   let β : L →ₗ[R] L' := { toFun := β₀, map_add' := β₀.map_add, map_smul' := fun a e => hβs a e }
-  have hβ : IsBaseChange O β := GlobalTheory.T.lie_model_isBaseChange S G R O x L L' M M' β (fun e => by
+  have hβ : IsBaseChange O β := _root_.GlobalTheory.CompanionTheory.Ar.lieModel_isBaseChange S G R O x L L' M M' β (fun e => by
     rw [Category.comp_id]
     exact hβ₀ e)
-  obtain ⟨hLf, hLp⟩ := GlobalTheory.T.lie_model_finite_projective S G R x L M
+  obtain ⟨hLf, hLp⟩ := _root_.GlobalTheory.CompanionTheory.Ar.lieModel_finite_projective S G R x L M
   have hDb := isBaseChange_dual hβ
   have hinj := injective_of_isBaseChange hj
   have hom : D.om = LinearMap.range j := hD.1
@@ -277,7 +282,7 @@ theorem reducesTo_of_isHTChartOf : ∀ (p : ℕ) [Fact p.Prime] (C : Type) [Fiel
     obtain ⟨χ, w, hχ, hh, hHT⟩ := hD.2.2 z
     have htors : (X.Γ n).IsTorsionAlong G (Spec.map (CommRingCat.ofHom (algebraMap R O)) ≫ x) (p ^ n) (F ≫ i) := by
       rw [hF]; exact X.tors n
-    have hHT' := GlobalTheory.T.hodge_tate_functional_base_change R (LevGrp La p n) Γ₀ S G x (p ^ n) i hi L M O (X.Γ n) F hbc htors L' M' β₀ hβ₀
+    have hHT' := _root_.GlobalTheory.CompanionTheory.Ar.BT.QFGroup.isHT_baseChange R (LevGrp La p n) Γ₀ S G x (p ^ n) i hi L M O (X.Γ n) F hbc htors L' M' β₀ hβ₀
       (span_range_eq_top hβ) χ w (dualOf hβ w) (fun e => dualOf_apply hβ w e) hHT
     rw [hF] at hHT'
     have hder := isDer_of_isHT X M' n _ _ hHT'

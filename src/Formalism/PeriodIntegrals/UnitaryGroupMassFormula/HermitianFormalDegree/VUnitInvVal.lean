@@ -4,10 +4,10 @@ public import Mathlib
 public import Formalism.HermitianCurvature.HermitianCurvatureProofs.NormSqUnitNormalizationLe
 public import Formalism.HermitianCurvature.BesselNonvanishingReduction
 public import Formalism.PeriodIntegrals.UpqRep
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.UhMeasurableSet
-public import Formalism.PeriodIntegrals.BesselL2FixAtZero
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0039
+public import Formalism.PeriodIntegrals.Bundle0016
 public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.FormalDegreeSquareIntegrable.Closed
-public import Formalism.RealPlaceAnalysis.RealPlaceTaylor.ModularCharacterEqOneOnExpHermitian
+public import Formalism.RealPlaceAnalysis.RealPlaceTaylor.Bundle0007
 
 @[expose] public section
 

@@ -1,9 +1,9 @@
 module
 
-public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.FormalDegree.SumInnerBasisSqEqAdjoint
+public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.FormalDegree.Bundle0007
 public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.FormalDegree.AdKMeasurePreserving
-public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.FormalDegree.EigenvectorUnitaryMulStar
-public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.FormalDegree.PBridge
+public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.FormalDegree.Bundle0006
+public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.FormalDegree.Bundle0005
 public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.FormalDegree.PolarBasic
 public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.FormalDegree.DetPPos
 public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.FormalDegree.KinstSecondCountable

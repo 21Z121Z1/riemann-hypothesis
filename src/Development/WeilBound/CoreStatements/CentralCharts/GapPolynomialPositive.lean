@@ -3,20 +3,24 @@ module
 public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.EmbedsGeneric
 public import Development.AutomorphicSpectrum.Definitions.DivisibilityTowers.GoodOrigin
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.GlobalSectionsRankAlgClosed
-public import Development.AutomorphicSpectrum.Statements.GeometryStatements.FlatLineGenerator
-public import Development.AutomorphicSpectrum.Statements.GeometryStatements.CardComapMulFinsumEqFinsumFibres
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.GapN
-public import Development.AutomorphicSpectrum.Proofs.MetricProofs.KillNoneFormPoly
-public import Development.AutomorphicSpectrum.Proofs.MetricProofs.UniformisedDegreePolynomialAntisymmetricStatement
-public import Development.WeilBound.CoreStatements.FlagImmersions.HasPerConj
+public import Development.AutomorphicSpectrum.Statements.GeometryStatements.Bundle0007
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0003
+public import Development.AutomorphicSpectrum.Proofs.MetricProofs.Bundle0005
+public import Mathlib
+public import Development.AutomorphicSpectrum.Proofs.MetricProofs.Bundle0036
+public import Development.AutomorphicSpectrum.Definitions.MetricPeriods.Pull1
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArithmeticIntersection.Bundle0004
+public import GroundTheory.HeightsAndTheta.Heights.Intersections.Bundle0003
+public import Development.AutomorphicSpectrum.Statements.MetricStatements.AgreementIffGuarded
+public import Development.WeilBound.CoreStatements.FlagImmersions.Bundle0021
 public import Development.WeilBound.CoreStatements.FlagImmersions.ExistsModelOfEq
 public import Development.WeilBound.CoreStatements.FlagImmersions.NormDetEq
-public import Development.WeilBound.CoreStatements.FlagImmersions.PerCoord
+public import Development.WeilBound.CoreStatements.FlagImmersions.Bundle0017
 public import Development.WeilBound.CoreStatements.FlagImmersions.ExistsRightInv
-public import Development.WeilBound.CoreStatements.FlagImmersions.RankLem
-public import Development.WeilBound.CoreStatements.FlagImmersions.EqZeroOfTri
+public import Development.WeilBound.CoreStatements.FlagImmersions.Bundle0012
+public import Development.WeilBound.CoreStatements.FlagImmersions.Bundle0019
 public import Development.WeilBound.CoreStatements.FlagImmersions.GenRigidOf
-public import Development.WeilBound.CoreStatements.FlagImmersions.CountableBall
+public import Development.WeilBound.CoreStatements.FlagImmersions.Bundle0020
 public import Development.WeilBound.CoreStatements.FlagImmersions.Imports
 public import Development.WeilBound.CoreStatements.CentralCharts.FlagImmersion
 
@@ -63,7 +67,7 @@ theorem AnalyticReference.gap_polynomial_positive : Top.Given → ∀ (E : Type)
     (RootFieldNumerics.flagImm_of RootFieldNumerics.rankLem) (RootFieldNumerics.countGen_of (RootFieldNumerics.genRigid_of RootFieldNumerics.frameVals)) hG (le_add_right hp) G A
   have hdim : Top.dimFl (CMType H) (D.p + D.q) = GroundTheory.Heights₂.Heights.antisymDegree (CMType H) (D.p + D.q) := by
     simp [Top.dimFl, GroundTheory.Heights₂.Heights.antisymDegree, Nat.choose_two_right]
-  obtain ⟨v, hv, hE⟩ := GlobalTheory.T.uniformised_degree_polynomial_antisymmetric hI (CMType H) (D.p + D.q) D.p _ (A.Sys.comap some) (Nat.le_add_right _ _) hdim hU
+  obtain ⟨v, hv, hE⟩ := _root_.GlobalTheory.CompanionTheory.Ar.PB.anSys_proportional hI (CMType H) (D.p + D.q) D.p _ (A.Sys.comap some) (Nat.le_add_right _ _) hdim hU
   let lam : RootIx D → ℝ := fun p => (ν p : ℝ)
   have hgap : (fun a => (gapN ν a : ℝ)) = fun o : Option (RootIx D) => o.elim 0 (PB.gap lam) := by
     funext o

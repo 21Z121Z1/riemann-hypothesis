@@ -1,10 +1,10 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PermMMulTranspose
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExpLogNearOne
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.LamBallULe
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.UpqLocallyCompactGroup
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1930
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0280
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0281
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0060
 
 @[expose] public section
 

@@ -4,9 +4,9 @@ public import Mathlib
 public import Development.WeilBound.CoreStatements.PluriharmonicCharts.ContinuousOnPot
 public import Development.AutomorphicSpectrum.Statements.TowerExistence.GoodTowerExistsX
 public import Development.AutomorphicSpectrum.Statements.MetricStatements.ExistsFlagModelBaseMetric
-public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.RootOnFund
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ContDiffUncentre
-public import Development.AutomorphicSpectrum.Proofs.MetricProofs.OmHeightslockG
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.Bundle0010
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0109
+public import Development.AutomorphicSpectrum.Proofs.MetricProofs.Bundle0105
 
 @[expose] public section
 

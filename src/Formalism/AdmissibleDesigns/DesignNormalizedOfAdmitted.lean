@@ -1,7 +1,7 @@
 module
 
 public import Formalism.AdmissibleDesigns.GlobalIndexTheoremPlacesOfRNAdm
-public import Formalism.AdmissibleDesigns.DesignOfAdmittedObjects
+public import Formalism.AdmissibleDesigns.Bundle0002
 
 @[expose] public section
 

@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DetGNeZero
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0528
 
 @[expose] public section
 

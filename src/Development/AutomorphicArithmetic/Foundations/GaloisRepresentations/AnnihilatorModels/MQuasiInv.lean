@@ -1,13 +1,14 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.AnnihilatorModels.SameNormBasic
-public import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.AnnihilatorModels.PairCalc
-public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ConnectedSpaceSpecOfIsLocalRing
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsFactorThroughIsogenyOfKillsKernel
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsogenyFlatFinrankStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AbelianSchemeTorsionPointTrivialOfGeometricStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ZarhinBundleKernelSecondCoordEquations
+public import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.AnnihilatorModels.Bundle0001
+public import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.AnnihilatorModels.Bundle0018
+public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.Bundle0078
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2716
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2696
+public import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsDimEqOne
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1410
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle3003
 
 @[expose] public section
 
@@ -67,7 +68,7 @@ theorem UpperTheory.Gal.crystallineComparison.Mod.quasiInv_of :
   have hgψ : ψ ≫ g.hom = 𝟙 o.A ^ c := by
     rw [← hfhom, ← hg]
     rfl
-  haveI : Flat (Over.Hom.left ψ) := (GlobalTheory.T.dim_eq_flat_finrank_eq_deg_of_isIsogeny κ Av Av' q hq).2.1
+  haveI : Flat (Over.Hom.left ψ) := (_root_.GlobalTheory.AV.AbVar.isogeny_flat_finrank κ Av Av' q hq).2.1
   haveI : Surjective (Over.Hom.left ψ) := hsur
   haveI : Epi (Over.Hom.left ψ) := Flat.epi_of_flat_of_surjective _
   refine ⟨g.hom, hgm, hgψ, ?_⟩

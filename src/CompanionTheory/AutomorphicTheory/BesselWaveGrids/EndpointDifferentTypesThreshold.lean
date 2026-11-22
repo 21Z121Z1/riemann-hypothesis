@@ -2,7 +2,7 @@ module
 
 public import CompanionTheory.AutomorphicTheory.CompactTopologicalForms.NormalFormTopDomination
 public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.WeylGroupActions.UpdateEqUMinus
-public import CompanionTheory.AutomorphicTheory.BesselWaveGrids.LimStepsOf
+public import CompanionTheory.AutomorphicTheory.BesselWaveGrids.Bundle0004
 public import CompanionTheory.AutomorphicTheory.BesselWaveGrids.SmoothCoefficientBessel
 
 @[expose] public section

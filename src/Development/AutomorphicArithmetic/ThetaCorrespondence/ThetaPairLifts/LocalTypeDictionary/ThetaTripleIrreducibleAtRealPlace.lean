@@ -2,15 +2,15 @@ module
 
 public import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.LocalTypeDictionary.DiscreteSpectrumResidualClassification
 public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SeesawWeilGlobalFactor
-public import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.LocalTypeDictionary.BernsteinUnitaryProductIrreducible
-public import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.LocalTypeDictionary.ThetaImageEqSpanDarboux
-public import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.LocalTypeDictionary.ThetaTripleMapsEquivariantOnFiniteVectors
-public import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.LocalTypeDictionary.ThetaTripleMapsLieEquivariant
-public import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.LocalTypeDictionary.ThetaSumDifferentiableAlongLine
-public import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.LocalTypeDictionary.KFiniteSubspaceKStableIffLieStable
-public import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.LocalTypeDictionary.ILiescalar
+public import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.LocalTypeDictionary.Bundle0001
+public import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.LocalTypeDictionary.Bundle0095
+public import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.LocalTypeDictionary.Bundle0098
+public import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.LocalTypeDictionary.Bundle0100
+public import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.LocalTypeDictionary.Bundle0038
+public import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.LocalTypeDictionary.Bundle0032
+public import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.LocalTypeDictionary.Bundle0031
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsRtensOp
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0301
 
 @[expose] public section
 
@@ -152,7 +152,7 @@ theorem theta_triple_piT_irreducible : GlobalTheory.Published.HoweDualityReal �
       (∀ᶠ v in Filter.cofinite, φ v = Γ.M.vac v) →
       ∀ᶠ v in Filter.cofinite, φ v = Set.indicator {x | ∀ i, x i ∈ v.adicCompletionIntegers D.host.F} 1 := fun φ hφ => by
     filter_upwards [hφ, hM.std] with v a b using a.trans b
-  obtain ⟨T, hTh, hinj⟩ := GlobalTheory.T.thetaTransform_darbouxModel_linear_injective D Γ.M ψ (sgn true W).gram e (hψ' ▸ hM) hstd dV dW gA
+  obtain ⟨T, hTh, hinj⟩ := _root_.GlobalTheory.ThetaTransformInj.linear_injective D Γ.M ψ (sgn true W).gram e (hψ' ▸ hM) hstd dV dW gA
   have hS := GlobalTheory.T.darbouxModelAlgebraicVectors_le_adelicSchwartz _ _ _ Γ.M Bs.ψ Bs.emb hM
   have K : ∀ f ∈ Γ.M.Pol Bs.ψ Bs.emb, ∀ φ, (∀ v, φ v ∈ GlobalTheory.WeilM.SB _) → (∀ᶠ v in Filter.cofinite, φ v = Γ.M.vac v) →
       GlobalTheory.TripleRead.thO Γ.M ψ (sgn true W).gram e (GlobalTheory.IndefiniteRowSideFullHecke.WeilTensorModels.pure f φ) ∈ algF ψ θ true A B ∧
@@ -216,12 +216,12 @@ theorem theta_triple_piT_irreducible : GlobalTheory.Published.HoweDualityReal �
     · simp [Function.update_of_ne c]
   have rkv : ∀ v, Module.rank ℂ (Rf.Pi v) ≤ Cardinal.aleph0 := fun v => by
     rw [← rank_top ℂ (Rf.Pi v), ← hm.fin.onto v]
-    exact (rank_map_le _ _).trans (GlobalTheory.T.rank_schwartzBruhat_adicCompletion_pi_le_aleph0 _ _ v)
-  have irrF := GlobalTheory.T.restrictedTensorProduct_irreducible_countable_dimension Rf.Pi (vacIm Γ Rf) hfin0 rkv hm.fin.nontriv Sv irrv Op fun v a _ => hOp' v a
+    exact (rank_map_le _ _).trans (_root_.GlobalTheory.TripleAssembly.rank_SB_adicCompletion_le _ _ v)
+  have irrF := _root_.GlobalTheory.rtens_irreducible Rf.Pi (vacIm Γ Rf) hfin0 rkv hm.fin.nontriv Sv irrv Op fun v a _ => hOp' v a
   have rkR : Module.rank ℂ R.Pi ≤ Cardinal.aleph0 := by
     rw [← rank_top ℂ R.Pi, ← hm.real.quot.onto]
     exact (rank_map_le _ _).trans hrank
-  refine GlobalTheory.T.tensor_irreducible_of_countable_dimension_irreducible R.Pi _ {b | ∀ x ∈ N, LinearMap.rTensor _ b x ∈ N} {c | ∃ v, ∃ a ∈ Sv v, c = Op v a} rkR
+  refine _root_.GlobalTheory.TensIrr.tensor_irreducible R.Pi _ {b | ∀ x ∈ N, LinearMap.rTensor _ b x ∈ N} {c | ∃ v, ∃ a ∈ Sv v, c = Op v a} rkR
     inferInstance (fun Q hQ => ?_) (fun Q hQ => irrF Q fun v a ha => hQ _ ⟨v, a, ha, rfl⟩) N (fun b hb => hb) ?_
   ·
     have hlie := hred {γ | ∃ τ, ∃ Y ∈ lieAt X τ, ∀ t : ℝ, γ (Multiplicative.ofAdd t) =

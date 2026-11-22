@@ -2,8 +2,8 @@ module
 
 public import Mathlib
 public import Development.AutomorphicArithmetic.RepresentationRank.RepOfRank
-public import Development.AutomorphicArithmetic.CommutativeAlgebra.ClopProjFiniteEtaleOfIsClosed
-public import Development.AutomorphicArithmetic.CommutativeAlgebra.ClopProjFinrankPullback
+public import Development.AutomorphicArithmetic.CommutativeAlgebra.Bundle0047
+public import Development.AutomorphicArithmetic.CommutativeAlgebra.Bundle0049
 
 @[expose] public section
 

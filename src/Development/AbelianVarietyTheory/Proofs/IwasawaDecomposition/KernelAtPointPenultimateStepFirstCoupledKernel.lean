@@ -1,12 +1,12 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsLowerEmbF
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0163
 public import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.KerIsTerm
 public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.RightTranslationActionApply
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.SumFibreEqSumOrbits
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.EmbFColZeroMemMram
-public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.TilLatticesOfLevel
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0078
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0266
+public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0112
 public import Formalism.LocalToGlobal.KernelLattices.KernelLocalFactors.ThDistC
 
 @[expose] public section

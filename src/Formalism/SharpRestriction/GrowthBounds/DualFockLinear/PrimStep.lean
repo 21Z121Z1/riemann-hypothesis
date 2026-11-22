@@ -1,7 +1,7 @@
 module
 
 public import Formalism.SharpRestriction.GrowthBounds.DualFockLinear.TheoremIIClosedOfTestBound
-public import Formalism.SharpRestriction.GrowthBounds.DualFockLinear.TransStep
+public import Formalism.SharpRestriction.GrowthBounds.DualFockLinear.Bundle0004
 public import Formalism.SharpRestriction.GrowthBounds.DualFockLinear.SubstSPtrue
 
 @[expose] public section

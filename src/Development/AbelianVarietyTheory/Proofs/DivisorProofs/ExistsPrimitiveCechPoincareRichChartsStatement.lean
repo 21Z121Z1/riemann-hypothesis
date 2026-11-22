@@ -3,7 +3,7 @@ module
 public import Mathlib
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsPrimitiveCechPoincareRichCharts
 public import Development.AbelianVarietyTheory.Definitions.Divisors.EllFamNontrivial
-public import Development.AbelianVarietyTheory.Definitions.Divisors.FstTszeSec
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0003
 
 @[expose] public section
 

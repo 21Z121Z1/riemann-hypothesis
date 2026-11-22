@@ -1,19 +1,22 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.GermSys
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.Bundle0013
 public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsFlatAnIffIsConstMul
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.UniformisationConclusion
 public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.QQuasiCompact
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.FormalGermLieBasisStatement
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0158
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.ToFirst
 public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsLieModel
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LieModelFunctorialMap
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LieModelExistsUniqueAct
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LieModelPullbackEquivalence
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsCocharacterLieModelStatement
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.SmoothQ
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0014
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0019
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0028
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0110
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.Bundle0004
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.IsGrpPullback
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0105
 public import Development.AbelianVarietyTheory.Proofs.HomogeneousIdeals.LeftEqIffLieVecSmul
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.SabPull
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.Bundle0007
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.SemiabelianSchemes.PrecompleteBases.Torus2GammaBijective
 
 @[expose] public section
@@ -428,7 +431,7 @@ theorem lie_seq : ∀ (E : Type) [Field E] [NumberField E] [IsCMField E] (H : Ho
   let actk : 𝓞 E → (Gk ⟶ Gk) := fun a => (Over.pullback x).map (t.act.act a)
   obtain ⟨LG, _, _, ⟨Mk⟩⟩ := lieModel_exists (Sp k) Gk k (𝟙 _)
   obtain ⟨LB, _, _, ⟨MB⟩⟩ := lieModel_exists (Sp k) Q.tB.G k (𝟙 _)
-  obtain ⟨MT, hMT⟩ := GlobalTheory.T.exists_cocharacter_lie_model (Sp k) Q.Ch k (𝟙 _)
+  obtain ⟨MT, hMT⟩ := _root_.GlobalTheory.CompanionTheory.Ar.TorusLie.exists_lieModel_splitTorus (Sp k) Q.Ch k (𝟙 _)
   have hgp : IsGrpPullback Gk t.G x (pullback.fst t.G.hom x) := isGrpPullback_pullback t.G x
   obtain ⟨M, hM⟩ : ∃ M : LieModel t.G x LG, ∀ e, (Mk.pt e).left ≫ pullback.fst t.G.hom x = (M.pt e).left := by
     have := (LiePull.lieModel_pullback X (Sp k) t.G Gk x _ hgp k (𝟙 _) LG).2 Mk
@@ -466,8 +469,8 @@ theorem lie_seq : ∀ (E : Type) [Field E] [NumberField E] [IsCMField E] (H : Ho
     apply Mk.inj
     rw [hdi, hMk, hdi, show MT.pt (δ.comp (h a : Q.Ch →+ Q.Ch)) = _ from pt_comp_diagMap MT hMT δ (h a),
       Category.assoc, Category.assoc, hh]
-  obtain ⟨eG, hcG, hrhoG⟩ := GlobalTheory.T.formal_germ_lie_basis E H hstar X t k x d g LG M
-  obtain ⟨eB, hcB, hrhoB⟩ := GlobalTheory.T.formal_germ_lie_basis E H hstar (Sp k) Q.tB k (𝟙 _) d' gB LB MB
+  obtain ⟨eG, hcG, hrhoG⟩ := _root_.GlobalTheory.CompanionTheory.Ar.GermLie.germ_lie E H hstar X t k x d g LG M
+  obtain ⟨eB, hcB, hrhoB⟩ := _root_.GlobalTheory.CompanionTheory.Ar.GermLie.germ_lie E H hstar (Sp k) Q.tB k (𝟙 _) d' gB LB MB
   let f : (Fin d → k) →ₗ[k] (Fin d' → k) := eB.toLinearMap ∘ₗ dq ∘ₗ eG.symm.toLinearMap
   let P : Matrix (Fin d') (Fin d) k := LinearMap.toMatrix' f
   have hP : ∀ u, P.mulVec u = f u := fun u => LinearMap.toMatrix'_mulVec f u

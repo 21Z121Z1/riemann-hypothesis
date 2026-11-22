@@ -1,7 +1,6 @@
 module
 
-public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.FormalDegree.DetPaHadApply
-public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.FormalDegree.ShcAdC
+public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.FormalDegree.Bundle0005
 public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.FormalDegree.DetPPos
 
 @[expose] public section

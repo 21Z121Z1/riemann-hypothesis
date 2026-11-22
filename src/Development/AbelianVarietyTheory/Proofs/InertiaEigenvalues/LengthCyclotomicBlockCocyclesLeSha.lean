@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.LenCob
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ActDEqOfEqOne
+public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0010
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0245
 
 @[expose] public section
 

@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Formalism.SharpRestriction.CuspSpanNormBounds.Point
+public import Formalism.SharpRestriction.CuspSpanNormBounds.Bundle0001
 public import Formalism.SharpRestriction.CuspSpanNormBounds.RelevantZeroGramTerms
-public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.UpUMul
+public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0064
 
 @[expose] public section
 

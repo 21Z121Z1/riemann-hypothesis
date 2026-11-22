@@ -1,10 +1,10 @@
 module
 
 public import Formalism.SharpRestriction.CuspSpanNormBounds.StandingHypothesesHoldFamily
-public import Formalism.SharpRestriction.CuspSpanNormBounds.PlaceDegreeData
+public import Formalism.SharpRestriction.CuspSpanNormBounds.Bundle0006
 public import Formalism.SharpRestriction.SmoothDesignExistence.DGamSmooth
-public import Formalism.SharpRestriction.GlobalSchurBounds.GlobalRankLatticeProofs.CMFieldLemmas
-public import Formalism.SharpRestriction.AdmissibleParameterJoins.SfromGLu
+public import Formalism.SharpRestriction.GlobalSchurBounds.GlobalRankLatticeProofs.Bundle0005
+public import Formalism.SharpRestriction.AdmissibleParameterJoins.Bundle0006
 public import Formalism.LocalToGlobal.GlobalTheory.GL2.ModEqOfNormOneMod
 
 @[expose] public section

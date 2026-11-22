@@ -2,9 +2,9 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RankOfMulEqOne
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.AlgebraMapPadicIntFinExtInjective
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ChiOntoOfUnramified
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.EqZeroOfAlgHomEqMul
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0112
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0164
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0054
 public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CardTorsionMulFinrank
 public import Formalism.PieriBlockIdeals.PieriColumnMinors.HeightDescentMinors
 

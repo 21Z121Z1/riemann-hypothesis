@@ -2,7 +2,7 @@ module
 
 public import Development.AutomorphicArithmetic.ThickFrames.MarkedLow
 public import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.ThinScalesIffHostBound
-public import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.PairRowIffQdRows
+public import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.Bundle0002
 public import Development.AutomorphicArithmetic.ThickFrames.topsBase
 
 @[expose] public section

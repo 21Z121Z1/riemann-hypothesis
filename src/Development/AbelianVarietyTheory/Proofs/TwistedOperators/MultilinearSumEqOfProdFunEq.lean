@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.FinsetFunctionsRecoveredFromValuesStatement
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0017
 
 @[expose] public section
 

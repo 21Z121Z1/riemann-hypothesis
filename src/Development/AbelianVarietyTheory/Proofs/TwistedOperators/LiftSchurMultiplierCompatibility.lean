@@ -2,23 +2,26 @@ module
 
 public import Mathlib
 public import Formalism.LocalToGlobal.IndefiniteReal.FWExist
-public import Formalism.LocalToGlobal.UnitaryNorms.CharUniq
+public import Formalism.LocalToGlobal.UnitaryNorms.Bundle0005
 public import Formalism.LocalRingCardinality.RankBoundMonotoneInDimension
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.CompletelySplitPrimeHostPlaceProperties
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.FiniteGroupActionPreservesPrincipalFlagMultiplic
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ThetaLiftTranslateOfKernelFixed
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.MultiplicitySpaceEqZeroOfApplyNonzeroTensorZero
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.OmPureTensorOOfFinite
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ThetaKORatLeftAndEigenRight
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.HaarMapMulRightOfMemCompactSubgroup
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.FundamentalDomainSetIntegralMulRight
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.LocallyCompactSecondCountableBorelCountable
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.MultValueLeftContLevel
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.LevelGroupActionEqZeroOfNoLift
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ParahoricLevelLiftsExistStatement
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IsCompactParahoricLevelAndContainsLifts
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.StepVectorLiftPairFlagLevelRealizedChainStatement
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.LastStepVectorLiftPairFlagLevelCharactersStatement
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0097
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0158
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0118
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0123
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0125
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0004
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0116
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0119
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0117
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0149
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ParahoricLevelLiftsExist
+public import Formalism.LocalToGlobal.IndefiniteReal.ScalarOnPartsFull
+public import Formalism.LocalToGlobal.IndefiniteReal.SubgroupCharExtensionOneApply
+public import Formalism.LocalToGlobal.IndefiniteReal.OrthogonalComplementCharacterisation
+public import Formalism.LocalToGlobal.IndefiniteReal.Bundle0016
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0142
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0467
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0583
 
 @[expose] public section
 
@@ -90,7 +93,7 @@ theorem places_sep {T : Type} (L : LevCh D T) (μ0 : T) (h : L.Is μ0) (t : T) :
 theorem lifts_chain {T : Type} (L : LevCh D T) (μ0 : T) (h : L.Is μ0) (t : T) (j : ℕ) (hj : j < D.R.m) :
     LiftsExist (Yc D j) (L.βY j) (L.datYt t j L.triv) := by
   obtain ⟨c, hc⟩ := h.βY j hj
-  exact GlobalTheory.T.parahoricLevel_liftsExist _ _ _ _ _ hc (places_sep L μ0 h t).1 (places_sep L μ0 h t).2
+  exact _root_.GlobalTheory.ParahoricLift.liftsExist _ _ _ _ _ hc (places_sep L μ0 h t).1 (places_sep L μ0 h t).2
 
 theorem multT_value {V : HSp D} {S : D.what₂.Tau → SPar} (θ : InfFam D) (M : DSModel V S) (J : Set (GA D V)) (χ : GA D V → ℂ)
     (u : SmT M →ₗ[ℂ] (GA D V → ℂ)) (hu : u ∈ MultT θ M J χ) (v : SmT M) :
@@ -288,7 +291,7 @@ theorem rel_ioX (hl : R.toLevCh.Is A.μ0) (hi : R.models_inf) (hY : R.models_νY
       (R.βY (D.R.m - 1)) (R.datYt t (D.R.m - 1) R.triv) rfl _ (meas_chain hY hY' t _ hm).1 _ (meas_chain hY hY' t _ hm).2
       (hS t _ hm) R.ItX (hc.ItX t).ne _ (range_left R.cX R.prX (R.HX t) _ _ (hHX t).2.1) R.βX (R.datXt t) _
       (hX t).1.1 _ (hX t).2 (R.ioX t) (hc.ioX t) g0 κ hκ g0 κ' hκ' _
-      (GlobalTheory.T.lastVector_lift_pair_flagLevel_characters R hl hi hc.ωX hc.vX t g0 κ κ' hκ hκ') _ _
+      (_root_.GlobalTheory.StepLaw.last_step_law R hl hi hc.ωX hc.vX t g0 κ κ' hκ hκ') _ _
       (toMap_shift R.cX hcX R.prX _ _ κ' hκ'.1 _ hy) v g
 
 theorem hasType_of_mem (t : T0) (U : R.CC t 0) (v : SmT (R.MY 0)) :

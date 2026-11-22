@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.Divisors.IsIsoGenResMapSmulHom
-public import Development.AbelianVarietyTheory.Proofs.CoherentCohomologyProofs.LengthQuotientMaximalIdealPowSmulTop
+public import Development.AbelianVarietyTheory.Proofs.CoherentCohomologyProofs.Bundle0007
 public import Formalism.LocalRingCardinality.DataDIV
 
 @[expose] public section

@@ -2,8 +2,8 @@ module
 
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.KatoQuadraticCharacters.EulerFactorBounds.SPushPsi
 public import ReciprocityTheory.GaloisValuations.ArithOfA
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.CyclotomicCharacterFrobV
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.CharacterLevelBounds.ClsFacts
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0093
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.CharacterLevelBounds.Bundle0001
 
 @[expose] public section
 

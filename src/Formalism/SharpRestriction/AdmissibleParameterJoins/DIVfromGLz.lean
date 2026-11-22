@@ -2,10 +2,10 @@ module
 
 public import Formalism.SharpRestriction.Divisibility.LocalQuadraticParts
 public import Formalism.SharpRestriction.GlobalSchurBounds.StandardLattice
-public import Formalism.SharpRestriction.AdmissibleParameterJoins.SfromGLu
+public import Formalism.SharpRestriction.AdmissibleParameterJoins.Bundle0006
 public import Formalism.SharpRestriction.GlobalSchurBounds.JointsL
 public import Formalism.LocalRingCardinality.SpanPowerMembership.PlacesOverNcardOfSplitInj
-public import Formalism.LocalRingCardinality.IntCastDvdOfDvdIntegers
+public import Formalism.LocalRingCardinality.Bundle0001
 
 @[expose] public section
 

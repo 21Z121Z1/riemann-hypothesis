@@ -3,7 +3,7 @@ module
 public import Development.WeilBound.CoreStatements.HodgeTatePoints.IsMapOfCancel
 public import Development.WeilBound.CoreStatements.HodgeTatePoints.CdAffine
 public import Development.WeilBound.CoreStatements.HodgeTatePoints.IsPullbackWhisker
-public import Development.WeilBound.CoreStatements.HodgeTatePoints.CocpMain
+public import Development.WeilBound.CoreStatements.HodgeTatePoints.Bundle0059
 
 @[expose] public section
 

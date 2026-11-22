@@ -1,10 +1,10 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ExistsSecOfLeChart
+public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.Bundle0101
 public import Development.AbelianVarietyTheory.Proofs.CovolumeBounds.IsProjOverMorphismRestrictOfRelAmple
 public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ClsLinCombSingle
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EffOfSec
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0873
 
 @[expose] public section
 

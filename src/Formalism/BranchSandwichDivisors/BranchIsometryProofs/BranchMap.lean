@@ -3,7 +3,7 @@ module
 public import Mathlib
 public import Formalism.GradedWeylDivisibility.FinalC
 public import Formalism.BranchSandwichDivisors.StatementW
-public import Formalism.BranchSandwichDivisors.BranchIsometryProofs.MemBranchRangeOfDefectEq
+public import Formalism.BranchSandwichDivisors.BranchIsometryProofs.Bundle0001
 
 @[expose] public section
 

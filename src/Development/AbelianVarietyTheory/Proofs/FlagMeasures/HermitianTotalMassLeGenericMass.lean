@@ -2,31 +2,30 @@ module
 
 public import Mathlib
 public import Formalism.SharpRestriction.CuspSpanNormBounds.IsTermOver
-public import Development.AbelianVarietyTheory.Definitions.Foundations.IsHermND
+public import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0007
 public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.ComplementReferenceCompactSubgroup
-public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.GgNone
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.HermitianDoubleCosetTermBasicFacts
+public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.Bundle0003
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0043
 public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.TermInvariantsIndependentOfWitnesses
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.HermitianDoubleCosetFrameClassProperties
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.CommonStabilizerStabilizersCommensurableVolume
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0032
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0067
 public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.HermitianFramesStabilizerActsOnTerms
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.HermitianFramesComplementUnitaryActsOnTerms
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Equality
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.TotalLeGeneric
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.TsumTransversalEqTsumOrbitQuotientGeneral
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.InfStabilizerSmulEqConj
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0053
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0088
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0093
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0016
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0070
 public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.TsumOrbitNormaliser
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.NotField
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0046
 public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.SpanToZero
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.MassOrbitClass
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.FramePairCoordinatesTransportUnitaryMassStatement
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.HermitianFramePairCoordinatesTransportInnerDataStatement
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.TermOverFrameCoordinatesStatement
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.TermsCorrespondStatement
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.HermitianFramePairAmplitudeMassRepsEqOrbitsStatement
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsWtEqMulNuStatement
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.HermitianFramePairTsumRepsEqConstMulOrbitsStatement
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.FramePairCoordinatesLocalHeightEqResidueCardStatement
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0090
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0060
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0049
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.TermOverFrameCoordinates
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0086
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0091
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0089
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0052
 
 @[expose] public section
 
@@ -53,7 +52,7 @@ theorem fr_eq (hM : M.OK) (c : Coord P S) (d : LocNG.Datum P) (t : Term V M r)
       simp only at hT hT' hf hf'
       subst hf hf' hT hT'
       rfl
-  have hW := (GlobalTheory.T.term_over_frame_coordinates M hM H r k P S c d n n' t.abelian₂).mp ⟨by rw [heq]; exact ht0, hn, hn', hΛ, hΛ'⟩
+  have hW := (_root_.GlobalTheory.HL.CoordTerm.isTermW_iff M hM H r k P S c d n n' t.abelian₂).mp ⟨by rw [heq]; exact ht0, hn, hn', hΛ, hΛ'⟩
   rw [(GlobalTheory.HL.WitIndep.witness_independence M.L r k S _ _ _ _ hW).2.2.1]
   congr 1 <;> funext b
   · rw [c.f_eq b, GlobalTheory.HL.CoordUnip.grp_apply c, hf]
@@ -130,7 +129,7 @@ theorem exists_wt_one (hM : M.OK) (c : Coord P S) (R : LocNG.Reps P) (d0 : LocNG
     have := (GlobalTheory.HL.ComplAct.main M.L r k S (c.dat d0) (c.lat t.abelian₂) hterm0 (c.grp g)⁻¹ (inv_mem hgH)).1
     rwa [← hdat, inv_smul_smul] at this
   refine ⟨d, hdR, ⟨_, hterm⟩, ?_⟩
-  obtain ⟨κ, -, hκ⟩ := GlobalTheory.T.exists_wt_eq_mul_nu' M hM H r k P S c d0
+  obtain ⟨κ, -, hκ⟩ := _root_.GlobalTheory.HL.CoordDatum.exists_wt_eq_mul_nu M hM H r k P S c d0
   have h1 := hκ d0 _ hterm0
   have h2 := hκ d _ hterm
   have hnu := (GlobalTheory.HL.Frames.nu_pos_and_smul M.L r k S (c.dat d) _ hterm).2 (c.grp g) hgH
@@ -146,10 +145,10 @@ theorem total_le_generic : ∀ {F : Type} [Field F] [ValuativeRel F] [Topologica
   obtain ⟨S, ⟨c⟩⟩ := GlobalTheory.HL.CoordExist.exists_coord M hM H r k P hrank hrel
   have T22 := GlobalTheory.T.isTerm_and_om_eq_of_coord_isTermOver M hM H r k P S c
   have T23 := GlobalTheory.T.hermitianFramePair_amplitude_mass_reps_eq_orbits M hM H r k P S c
-  have T28 := GlobalTheory.T.framePairCoordinates_localHeight_eq_residueCard M hM H r k P S c
+  have T28 := _root_.GlobalTheory.HL.CoordHeight.height_eq M hM H r k P S c
   have TR := GlobalTheory.HL.CoordUnip.transport M hM H r k P S c
   have h₁ : S.IsTerm (c.dat d₁) (c.lat t₁.abelian₂) := (T22.1 d₁ t₁ ht₁).1
-  obtain ⟨κ, -, hκ⟩ := GlobalTheory.T.hermitianFramePair_tsum_reps_eq_const_mul_orbits M hM H r k P S c R d0
+  obtain ⟨κ, -, hκ⟩ := _root_.GlobalTheory.HL.CoordSum.tsum_reps_eq M hM H r k P S c R d0
   obtain ⟨Qd, hQd⟩ : ∃ Qd : S.Datum → Submodule M.L.O S.V → Prop, Qd = fun δ Λ =>
       S.BBzero δ Λ ∧ ∃ s ∈ S.St, S.Fr δ Λ = s • S.Fr (c.dat d₁) (c.lat t₁.abelian₂) := ⟨_, rfl⟩
   have hvan : ∀ (δ : S.Datum) (Q : Submodule M.L.O S.V → Prop), (¬ ∃ Λ, S.IsTerm δ Λ) →

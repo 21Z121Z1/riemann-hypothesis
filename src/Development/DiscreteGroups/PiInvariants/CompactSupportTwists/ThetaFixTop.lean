@@ -1,7 +1,7 @@
 module
 
 public import Development.DiscreteGroups.PiInvariants.CompactSupportTwists.ThetaFixOfOfMult
-public import Development.DiscreteGroups.PiInvariants.CompactSupportTwists.IsDiscreteOfNorm
+public import Development.DiscreteGroups.PiInvariants.CompactSupportTwists.Bundle0005
 public import Mathlib
 public import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.SatakeExponents.SatakeRigidity.SplitSatPre
 public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.DualIsConjByOne

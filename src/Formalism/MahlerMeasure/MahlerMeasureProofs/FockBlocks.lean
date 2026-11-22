@@ -1,8 +1,8 @@
 module
 
-public import Formalism.MahlerMeasure.LevelLattice
+public import Formalism.MahlerMeasure.Bundle0008
 public import Formalism.MahlerMeasure.MahlerMeasureProofs.RemoveS
-public import Formalism.MahlerMeasure.MahlerMeasureProofs.LevelDecomp
+public import Formalism.MahlerMeasure.MahlerMeasureProofs.Bundle0002
 
 @[expose] public section
 

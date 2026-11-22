@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Formalism.GL3MeanSquares.ConcavityEquidistribution
-public import Formalism.LogVandermondeBounds.MultinomialPowerBound
+public import Formalism.GL3MeanSquares.Bundle0001
+public import Formalism.LogVandermondeBounds.Bundle0001
 
 @[expose] public section
 

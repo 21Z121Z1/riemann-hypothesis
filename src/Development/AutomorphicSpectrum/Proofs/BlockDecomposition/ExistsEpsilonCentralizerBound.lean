@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MulEqOfRangeLe
-public import GroundTheory.AutomorphicForms.AnisotropicHeight
-public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.ExistsFactor
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0314
+public import GroundTheory.AutomorphicForms.Bundle0023
+public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0018
 
 @[expose] public section
 

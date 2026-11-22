@@ -2,8 +2,7 @@ module
 
 public import Mathlib
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.SquareIntegrability.GCauchyStatement
-public import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.FockTranslationLaws
-public import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.IntegrableOnFundamentalDomainOfContinuous
+public import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.Bundle0003
 
 @[expose] public section
 

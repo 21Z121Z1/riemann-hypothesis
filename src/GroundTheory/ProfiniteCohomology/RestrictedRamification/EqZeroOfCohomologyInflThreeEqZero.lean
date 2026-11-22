@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import GroundTheory.ProfiniteCohomology.InflationRestriction
-public import GroundTheory.ProfiniteCohomology.Factor
+public import GroundTheory.ProfiniteCohomology.Bundle0002
 public import GroundTheory.ProfiniteCohomology.CupProducts.Cocycles
 public import GroundTheory.ProfiniteCohomology.ClassFormations.IsIsoCohomologyMapAlongResSubgroupOfHom
 

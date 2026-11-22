@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Formalism.LocalToGlobal.IndefiniteReal.LinksDefs
-public import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.ChainMatrices
+public import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.Bundle0009
 public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsDecompChainSpaceDefiniteAddNormalFrame
 public import Formalism.LocalRingCardinality.SpanPowerMembership.Adelic
 

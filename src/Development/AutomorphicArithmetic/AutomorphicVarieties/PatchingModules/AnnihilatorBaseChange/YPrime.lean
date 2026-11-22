@@ -1,7 +1,7 @@
 module
 
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.PatchingModules.AnnihilatorBaseChange.SpecializationMapCompUniversalSection
-public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.PrimeApproximation
+public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0072
 
 @[expose] public section
 

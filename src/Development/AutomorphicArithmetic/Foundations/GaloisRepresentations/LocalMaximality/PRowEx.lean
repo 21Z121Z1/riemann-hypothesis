@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.LocalMaximality.ResidueOfTraceIsFiberSum
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MonomialCechComplexExact
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0359
 
 @[expose] public section
 

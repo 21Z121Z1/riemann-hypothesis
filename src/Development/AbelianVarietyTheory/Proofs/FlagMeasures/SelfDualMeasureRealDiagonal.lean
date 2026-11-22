@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.GaugeUnfold
+public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.Bundle0011
 public import Formalism.LocalToGlobal.GlobalTheory.GL5.Statement
-public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.FourierInversionHaarSymmForm
+public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0003
 
 @[expose] public section
 

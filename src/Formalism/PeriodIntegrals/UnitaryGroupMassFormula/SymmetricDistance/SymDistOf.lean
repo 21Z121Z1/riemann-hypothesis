@@ -1,9 +1,9 @@
 module
 
-public import Formalism.PeriodIntegrals.SymDist
-public import Formalism.PeriodIntegrals.ExpTri
+public import Formalism.PeriodIntegrals.Bundle0012
+public import Formalism.PeriodIntegrals.Bundle0002
 public import Formalism.RealPlaceAnalysis.RealPlaceTaylor.IndefiniteUnitaryPreservesForm
-public import Formalism.RealPlaceAnalysis.RealPlaceTaylor.ComplexificationHolds
+public import Formalism.RealPlaceAnalysis.RealPlaceTaylor.Bundle0001
 
 @[expose] public section
 

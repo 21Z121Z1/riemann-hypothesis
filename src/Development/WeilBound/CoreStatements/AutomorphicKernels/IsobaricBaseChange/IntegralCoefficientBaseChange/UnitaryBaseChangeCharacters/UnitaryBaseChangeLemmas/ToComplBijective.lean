@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CTUnitsLeft
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NonsplitCentraliserNormElement
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1286
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1352
 public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.DetGramRatOneNeZero
 
 @[expose] public section

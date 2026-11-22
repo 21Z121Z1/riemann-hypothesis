@@ -2,9 +2,8 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisGeometry₂.HoweUnram
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.MemIntMat
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0113
 public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.LocalThetaPairExistence
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.MulSelfEqOneIffOfLinearOrderedCommGroupWithZero
 
 @[expose] public section
 

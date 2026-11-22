@@ -1,13 +1,12 @@
 module
 
 public import Development.AbelianVarietyTheory.Definitions.Foundations.IsZetaTW
-public import Development.AbelianVarietyTheory.Definitions.Foundations.EeProd
-public import Development.AbelianVarietyTheory.Definitions.Foundations.ExistsEqSubOfMemCob
+public import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0008
+public import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0021
 public import Development.AbelianVarietyTheory.Definitions.Foundations.IsLamOfLSmulIff
-public import Development.AbelianVarietyTheory.Definitions.Foundations.PieceEqPieceT
-public import Development.AbelianVarietyTheory.Definitions.Foundations.AdmissibleHodgeTateZetaClassParams
+public import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0004
+public import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0025
 public import Development.AutomorphicArithmetic.Foundations.IwahoriReduction.SiegelFixedPoints.Imports
-public import Development.AbelianVarietyTheory.Definitions.Foundations.KumValUnique
 
 @[expose] public section
 

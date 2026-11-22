@@ -1,10 +1,10 @@
 module
 
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.PatchingModules.DeterminantPadicFree.FrameWith
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.PatchingModules.DeterminantPadicFree.SpanDesc
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.IrredIffSpan
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.DensityProd
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.IntertwinerIso
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.PatchingModules.DeterminantPadicFree.Bundle0006
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.Bundle0013
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.Bundle0002
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.Bundle0004
 
 @[expose] public section
 

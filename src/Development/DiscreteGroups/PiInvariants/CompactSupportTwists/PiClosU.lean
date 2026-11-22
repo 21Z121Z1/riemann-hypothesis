@@ -1,6 +1,6 @@
 module
 
-public import Development.DiscreteGroups.PiInvariants.CompactSupportTwists.LogAbsEqLogIdeleNorm
+public import Development.DiscreteGroups.PiInvariants.CompactSupportTwists.Bundle0002
 public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.T2SpaceAdelicGeneralLinearGroupNumberField
 
 @[expose] public section

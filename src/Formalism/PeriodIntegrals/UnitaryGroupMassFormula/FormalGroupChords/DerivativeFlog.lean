@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Formalism.PeriodIntegrals.FglChordFactor
-public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.AdditiveIntegralGroups.DXEqDerivative
-public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.AdditiveIntegralGroups.DvCoeffMulEqZeroOfLtOrder
+public import Formalism.PeriodIntegrals.Bundle0002
+public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.AdditiveIntegralGroups.Bundle0002
+public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.AdditiveIntegralGroups.Bundle0001
 public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.AdditiveIntegralGroups.GlueHoldsVar
 public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.FormalGroupChords.NormDeltaWc
 public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.FormalGroupChords.SubstPairSecondVariable

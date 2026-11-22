@@ -1,10 +1,9 @@
 module
 
 public import Development.AutomorphicArithmetic.Foundations.Convolution.SphericalHeckeOperators.SymSum
-public import Development.AutomorphicArithmetic.Foundations.Convolution.TwistedLocalOrbits.Match
+public import Development.AutomorphicArithmetic.Foundations.Convolution.TwistedLocalOrbits.Bundle0001
 public import Development.AutomorphicArithmetic.Foundations.Convolution.TwistedLocalOrbits.ElemMatch
-public import Development.AutomorphicArithmetic.Foundations.Convolution.SphericalHeckeOperators.DefBridge
-public import Development.AutomorphicArithmetic.Foundations.Convolution.SphericalHeckeOperators.UnrQ
+public import Development.AutomorphicArithmetic.Foundations.Convolution.SphericalHeckeOperators.Bundle0005
 
 @[expose] public section
 

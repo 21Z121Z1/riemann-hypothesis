@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Formalism.QuotientMetricDivisors.StatementK
-public import Formalism.LogFactorialIndices.StatementSize
+public import Formalism.LogFactorialIndices.Bundle0001
 public import Formalism.ThetaSupremumBounds.StatementE
 
 @[expose] public section

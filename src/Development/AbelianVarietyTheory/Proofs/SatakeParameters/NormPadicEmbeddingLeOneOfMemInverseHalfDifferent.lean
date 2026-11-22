@@ -1,13 +1,13 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicArithmetic.CyclotomicBounds.RamifiedDiscriminants.OffSmall
+public import Development.AutomorphicArithmetic.CyclotomicBounds.RamifiedDiscriminants.Bundle0003
 public import Formalism.LocalRingCardinality.RankBoundMonotoneInDimension
 public import Formalism.LocalRingCardinality.DataKerI
 public import Formalism.SharpRestriction.GlobalSchurBounds.GL3Theta
 public import Formalism.LocalToGlobal.KernelLattices.LateralTheory
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.TauPlBijective
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.InducedTypeThetaGenusOnePermutes
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0071
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0224
 public import Formalism.LocalToGlobal.ProjectiveLattices.HostRank
 
 @[expose] public section

@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Formalism.HermitianCurvature.HermitianCurvatureProofs.ZeroOfAe
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.L2NormScaling
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0042
 
 @[expose] public section
 

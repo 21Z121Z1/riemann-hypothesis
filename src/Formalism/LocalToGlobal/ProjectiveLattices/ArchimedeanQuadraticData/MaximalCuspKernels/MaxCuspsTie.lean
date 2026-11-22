@@ -1,6 +1,6 @@
 module
 
-public import Formalism.LocalToGlobal.ProjectiveLattices.SpanRatSmulMem
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0007
 public import Formalism.LocalToGlobal.ProjectiveLattices.XcLat
 
 @[expose] public section

@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Formalism.PeriodIntegrals.WeakApproxDVR
+public import Formalism.PeriodIntegrals.Bundle0008
 public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.WeakApproximationDVR.SmOneOfNotIsUnit
 
 @[expose] public section

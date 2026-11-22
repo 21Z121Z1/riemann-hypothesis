@@ -1,6 +1,6 @@
 module
 
-public import Formalism.WachLatticeTwists.RamifiedBlockRings.RamifiedBlockProofs.TopLengthBoundViaSplitting
+public import Formalism.WachLatticeTwists.RamifiedBlockRings.RamifiedBlockProofs.Bundle0002
 public import Formalism.WachLatticeTwists.RamifiedBlockRings.RamifiedBlockProofs.LemmaFiveThreeExtensionOfModule
 
 @[expose] public section

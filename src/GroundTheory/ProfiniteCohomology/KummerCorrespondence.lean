@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import GroundTheory.ProfiniteCohomology.KummerBasic
-public import GroundTheory.ProfiniteCohomology.KummerFinite
+public import GroundTheory.ProfiniteCohomology.Bundle0002
 
 @[expose] public section
 

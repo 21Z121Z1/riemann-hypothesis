@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NmatEqLowMat
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0293
 public import Development.AbelianVarietyTheory.BlockTheory.PoincareCuspForms.ExhaustionFrames
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArakelovVolumes.UpperBounds.IsOrth
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArakelovVolumes.UpperBounds.Bundle0003
 
 @[expose] public section
 

@@ -1,7 +1,7 @@
 module
 
-public import Development.AutomorphicArithmetic.Foundations.Convolution.GeneralizedMeasures.MatchOne
-public import Development.AutomorphicArithmetic.Foundations.Convolution.TwistedLocalOrbits.PlaceDown
+public import Development.AutomorphicArithmetic.Foundations.Convolution.GeneralizedMeasures.Bundle0002
+public import Development.AutomorphicArithmetic.Foundations.Convolution.TwistedLocalOrbits.Bundle0005
 
 @[expose] public section
 

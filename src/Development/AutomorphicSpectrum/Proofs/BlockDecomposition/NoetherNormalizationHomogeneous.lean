@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.ImportsTailMore
+public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0034
 
 @[expose] public section
 

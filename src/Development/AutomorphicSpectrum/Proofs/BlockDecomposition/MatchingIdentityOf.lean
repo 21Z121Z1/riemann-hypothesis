@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.SatakeExponents.UniformizerValuations.LeviMatchingWords.MatchLM
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.HasCompactSupportTj
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0749
 public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MatchingTransferOf
 
 @[expose] public section

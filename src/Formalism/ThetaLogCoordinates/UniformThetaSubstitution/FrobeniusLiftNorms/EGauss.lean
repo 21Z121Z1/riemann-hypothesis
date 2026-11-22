@@ -1,10 +1,10 @@
 module
 
 public import Mathlib
-public import Formalism.ThetaLogCoordinates.UniformThetaSubstitution.StatementG
+public import Formalism.ThetaLogCoordinates.UniformThetaSubstitution.Bundle0002
 public import Formalism.GaussJetBounds.GaussJetProofs.GField
-public import Formalism.GaussJetBounds.GaussJetProofs.FJEval
-public import Formalism.GaussJetBounds.GaussJetProofs.Labels
+public import Formalism.GaussJetBounds.GaussJetProofs.Bundle0006
+public import Formalism.GaussJetBounds.GaussJetProofs.Bundle0004
 public import Formalism.ThetaLogCoordinates.UniformThetaSubstitution.KOneConsequence
 
 @[expose] public section

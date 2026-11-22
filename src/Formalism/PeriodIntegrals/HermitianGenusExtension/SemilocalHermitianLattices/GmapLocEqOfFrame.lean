@@ -5,7 +5,7 @@ public import Formalism.PeriodIntegrals.HermitianGenusExtension.SemilocalHermiti
 public import Formalism.PeriodIntegrals.HermitianGenusExtension.SemilocalHermitianLattices.FiniteDimensionalOfOrtho
 public import Formalism.HermitianLattices.HermitianLatticesProofs.GenusCovolBound
 public import Formalism.HermitianLattices.HermitianLatticesProofs.TraceReal
-public import Formalism.HermitianLattices.HermitianLatticesProofs.IsomAct
+public import Formalism.HermitianLattices.HermitianLatticesProofs.Bundle0001
 
 @[expose] public section
 

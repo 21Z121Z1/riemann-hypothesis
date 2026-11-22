@@ -2,8 +2,8 @@ module
 
 public import Mathlib
 public import Formalism.SharpRestriction.CuspSpanNormBounds.RelevantZeroGramTerms
-public import Formalism.PeriodIntegrals.DSInfCharCap
-public import Formalism.LocalToGlobal.BesselHermitianTheta.TiedType
+public import Formalism.PeriodIntegrals.Bundle0016
+public import Formalism.LocalToGlobal.BesselHermitianTheta.Bundle0003
 public import Development.AutomorphicSpectrum.Definitions.MetricPeriods.IsNormEmbId
 
 @[expose] public section

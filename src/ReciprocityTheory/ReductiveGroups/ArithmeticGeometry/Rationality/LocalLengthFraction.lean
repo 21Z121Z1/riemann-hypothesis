@@ -1,7 +1,7 @@
 module
 
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.Rationality.QuotShiftPf
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.Rationality.FreeQuotPf
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.Rationality.Bundle0003
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.Rationality.Bundle0002
 
 @[expose] public section
 

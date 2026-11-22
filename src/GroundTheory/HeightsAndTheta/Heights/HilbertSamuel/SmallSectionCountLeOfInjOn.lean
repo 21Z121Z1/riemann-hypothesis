@@ -2,10 +2,10 @@ module
 
 public import Mathlib
 public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsArith
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsLocalRep
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsConstantShift
-public import GroundTheory.HeightsAndTheta.Heights.Intersections.PThmAExpand
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArakelovGeometry.EqSumMultihomogeneousComponents
+public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0022
+public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0020
+public import GroundTheory.HeightsAndTheta.Heights.Intersections.Bundle0010
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArakelovGeometry.Bundle0006
 
 @[expose] public section
 

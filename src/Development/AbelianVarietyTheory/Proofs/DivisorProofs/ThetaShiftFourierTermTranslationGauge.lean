@@ -1,16 +1,16 @@
 module
 
-public import Development.AbelianVarietyTheory.Definitions.Divisors.HasDefect
-public import Development.AbelianVarietyTheory.Definitions.Divisors.HasRigidChart
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0060
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0071
 public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.ToroidalCompactificationBis
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.DiscreteValuationRings.PhiGenPf
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HeatOperatorPeriodDefectIsCocycle
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsMonomialPeriodUnitPartGeneratorStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsRaynaudPointUnitPartCoordinatesStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsRaynaudGaugeGeneratorWeightNegStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RaynaudSectionIdentityOfGenericFibreStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsFlatEpiLiftRaynaudExtensionFractionPointStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RaynaudShiftUnitIdentityFractionFieldStatement
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2940
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2883
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2885
+public import Mathlib
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2947
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2934
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2901
 
 @[expose] public section
 
@@ -175,7 +175,7 @@ theorem GlobalTheory.HeatShift.shift_term : ∀ (R : Type) [CommRing R] [IsDomai
   obtain ⟨⟨u, hu, hc⟩, -⟩ := gen_fe (D := Dd.toPre) (F := FractionRing R) GlobalTheory.SemiRigid.globalFns k mu α
   have C1 : ∀ (Z : Scheme.{0}) (r : Z ⟶ Y.H.left) (z : Z) (J : (Z ⟶ Dd.toPre.P.A.left) → Dd.toPre.P.L.ι),
       Good Dd.toPre.P.L z J → gs r z ⊤ (scal Y.H.hom B₀) * sval ρ r z J = gs r z ⊤ (scal Y.H.hom b) * sval τ r z J := by
-    refine GlobalTheory.T.raynaud_section_identity_of_generic_fibre R Dd.toPre O oa Y k ρ τ B₀ b fun Z g r hr z J hJ => ?_
+    refine _root_.GlobalTheory.RayFlatDesc.main R Dd.toPre O oa Y k ρ τ B₀ b fun Z g r hr z J hJ => ?_
     let T : Over (Sp R) := Over.mk (g ≫ jK R)
     let y : T ⟶ Y.H := Over.homMk r hr
     let yp : T ⟶ Y.H := y * (toUnit T ≫ xp⁻¹)
@@ -205,7 +205,7 @@ theorem GlobalTheory.HeatShift.shift_term : ∀ (R : Type) [CommRing R] [IsDomai
 
   refine ⟨C1, ?_⟩
   intro σ'' σ₁' τ'' τ₁' ρ' hT'' hT₁' hρ' hL u' hu' hc' z J hJ
-  obtain ⟨Z, p, w0, y0, rfl, hepi, hinj, hyq⟩ := GlobalTheory.T.exists_flat_epi_lift_raynaud_extension_fraction_point R Dd.toPre O oa Y z
+  obtain ⟨Z, p, w0, y0, rfl, hepi, hinj, hyq⟩ := _root_.GlobalTheory.RayLift.exists_flat_lift R Dd.toPre O oa Y z
   have hJ₁ : ∃ J₁ : (Z ⟶ Dd.toPre.P.A.left) → Dd.toPre.P.L.ι, Good Dd.toPre.P.L w0 J₁ ∧ ∀ ψ, J₁ (p ≫ ψ) = J ψ := by
     classical
     refine ⟨fun φ => if h : ∃ ψ, p ≫ ψ = φ then J h.choose else (exists_chart Dd.toPre.P.isLB (φ w0)).choose,

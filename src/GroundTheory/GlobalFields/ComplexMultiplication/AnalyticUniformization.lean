@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import GroundTheory.GlobalFields.ComplexMultiplication.ClassGroupActionIso
-public import GroundTheory.GlobalFields.ComplexMultiplication.JInvariantHomothety
-public import GroundTheory.GlobalFields.ComplexMultiplication.EllipticConstant
+public import GroundTheory.GlobalFields.ComplexMultiplication.Bundle0009
+public import GroundTheory.GlobalFields.ComplexMultiplication.Bundle0004
+public import GroundTheory.GlobalFields.ComplexMultiplication.Bundle0002
 
 @[expose] public section
 

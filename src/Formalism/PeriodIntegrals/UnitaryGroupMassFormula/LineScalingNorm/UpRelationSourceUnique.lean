@@ -2,7 +2,7 @@ module
 
 public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LineScalingNorm.ConstantOneMemNonvanishing
 public import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutGCoreGenTransferKPt
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutGCoreKLEig
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0109
 
 @[expose] public section
 

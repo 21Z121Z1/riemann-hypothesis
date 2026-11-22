@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Formalism.DistinguishedUnitIdeals.UnivPart
+public import Formalism.DistinguishedUnitIdeals.Bundle0001
 
 @[expose] public section
 

@@ -1,10 +1,10 @@
 module
 
-public import Development.WeilBound.ThetaLifts.LocalTheory.UnramifiedMultiplicityOneProportional
+public import Development.WeilBound.ThetaLifts.LocalTheory.Bundle0001
 public import Development.WeilBound.ThetaLifts.LocalTheory.UnramifiedCohomology.MemLatWIff
 public import Development.WeilBound.ThetaLifts.TowerModels.LeviAd
 public import Development.WeilBound.CoreStatements.LocalThetaKernels.Locrep
-public import Development.WeilBound.CoreStatements.CompactAveragingSplitting.EigenvectorLifting.Vaceigen
+public import Development.WeilBound.CoreStatements.CompactAveragingSplitting.EigenvectorLifting.Bundle0005
 
 @[expose] public section
 

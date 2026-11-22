@@ -1,12 +1,11 @@
 module
 
 public import Development.AbelianVarietyTheory.Definitions.Divisors.HilbertNinetyQuotientHomEqIff
-public import Development.AutomorphicSpectrum.Proofs.MembershipProofs.GoodCharIsLocallyConstant
-public import Development.AutomorphicSpectrum.Proofs.MembershipProofs.IntegrablePair
-public import Development.AutomorphicSpectrum.Proofs.MembershipProofs.CyclicAndLine
-public import Development.AutomorphicSpectrum.Proofs.MembershipProofs.ExistsEqMulApplyZero
-public import Development.AutomorphicSpectrum.Proofs.MembershipProofs.ExistsInvariantForm
-public import Development.AutomorphicSpectrum.Proofs.MembershipProofs.DualNumberGraphFiltrationIsotropicOfSkew
+public import Development.AutomorphicSpectrum.Proofs.MembershipProofs.Bundle0004
+public import Development.AutomorphicSpectrum.Proofs.MembershipProofs.Bundle0006
+public import Development.AutomorphicSpectrum.Proofs.MembershipProofs.Bundle0007
+public import Development.AutomorphicSpectrum.Proofs.MembershipProofs.Bundle0002
+public import Development.AutomorphicSpectrum.Proofs.MembershipProofs.Bundle0003
 
 @[expose] public section
 

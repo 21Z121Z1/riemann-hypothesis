@@ -3,7 +3,7 @@ module
 public import Development.WeilBound.CoreStatements.LocallyConstantCoinvariants.RightOnto
 public import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.ExistsNhdsInvariant
 public import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.PureEqPureA
-public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.IdeleCongruenceUnitCriterion
+public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.Bundle0031
 
 @[expose] public section
 

@@ -1,12 +1,12 @@
 module
 
 public import Mathlib
-public import Formalism.DistinguishedUnitIdeals.FrobeniusCoboundedArc
+public import Formalism.DistinguishedUnitIdeals.Bundle0004
 public import Formalism.DistinguishedUnitIdeals.DistinguishedOrderProofs.GoodOf
 public import Formalism.DistinguishedUnitIdeals.DistinguishedOrderProofs.ThmEFull
 public import Formalism.DistinguishedUnitIdeals.DistinguishedOrderProofs.LemmaCFull
 public import Formalism.DistinguishedUnitIdeals.DistinguishedOrderProofs.LemmaC
-public import Formalism.DistinguishedUnitIdeals.DistinguishedOrderProofs.Descent
+public import Formalism.DistinguishedUnitIdeals.DistinguishedOrderProofs.Bundle0001
 
 @[expose] public section
 

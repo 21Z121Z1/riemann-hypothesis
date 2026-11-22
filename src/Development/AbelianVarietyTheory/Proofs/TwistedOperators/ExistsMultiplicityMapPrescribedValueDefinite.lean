@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.FactTypePrime
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.UnitaryGroupAdelicClassesViaFiniteAdelicPart
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0170
 
 @[expose] public section
 

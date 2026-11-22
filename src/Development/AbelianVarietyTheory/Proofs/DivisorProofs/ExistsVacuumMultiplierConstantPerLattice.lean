@@ -1,18 +1,18 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Divisors.PerCEmb
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0024
 public import Development.AbelianVarietyTheory.Definitions.Divisors.MarkAd
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CplxOfFrame
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaReadingLinearInjectiveAtOrthonormalFrame
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsSelfDualCHLat
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CompAtMtMul
-public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.SqNormIntegralFundamentalDomainEqL2NormSq
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0846
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1360
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0923
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0844
+public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.Bundle0068
 public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.ExistsSymplOfSelfDual
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdelicVacuumReadsMultipleClassicalVacuumStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NormAdelicClassicalVacuumFactorEqStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WeilRepresentationRealMovesFrameDetCharStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WeilRepLatticeStabilizerVacuumEqDetCharSmulStatement
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0978
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NormAdelicClassicalVacuumFactorEq
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1444
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1366
 
 @[expose] public section
 
@@ -226,9 +226,9 @@ theorem exists_vacuum_multiplier : ∀ (D : D7) (ψ : AddChar (AF D.host.F) ℂ)
     · obtain ⟨b, e⟩ := Submodule.mem_one.1 (h (Set.mem_univ _))
       refine ⟨H.bar b, ?_⟩
       rw [hb, show (b : D.host.E) = star (w j) from e, star_star]
-  obtain ⟨κ₀, hκ₀, hR₀⟩ := GlobalTheory.T.adelicVacuum_reads_multiple_classicalVacuum D ψ θ V W W.rank g rfl X bas idx hstd hP.inf hP.std hP.even hX hS H hH ΛV L₀
+  obtain ⟨κ₀, hκ₀, hR₀⟩ := _root_.GlobalTheory.AdTh.VacLine.vac_reads D ψ θ V W W.rank g rfl X bas idx hstd hP.inf hP.std hP.even hX hS H hH ΛV L₀
     _ X.Λ hP.sigV hP.sigW hsV hs₀ hconj hL x₀ s hx hinv _ hf₀ v hv
-  have hN := GlobalTheory.T.norm_adelicClassicalVacuumFactor_eq D ψ θ V W W.rank g rfl X bas idx hstd hP.inf hP.std hP.even hX hS H hH ΛV L₀
+  have hN := _root_.GlobalTheory.AdTh.norm_factor_eq_of_reads D ψ θ V W W.rank g rfl X bas idx hstd hP.inf hP.std hP.even hX hS H hH ΛV L₀
     hsV hs₀ hstdV hL x₀ s hx _ hf₀ v hv κ₀ hR₀
   have hmu0 : mu k₀ ≠ 0 := fun h => by
     have := hmu.norm k₀
@@ -247,7 +247,7 @@ theorem exists_vacuum_multiplier : ∀ (D : D7) (ψ : AddChar (AF D.host.F) ℂ)
   have hlat := le_antisymm (latO_le V W ΛV htw.le) (latO_le V W ΛV htw.ge)
   rw [hlat] at hl
   have hk' : c * k₀⁻¹ ∈ GfC W := mul_mem hc (inv_mem hk₀)
-  have hfix := GlobalTheory.T.weilRep_lattice_stabilizer_vacuum_eq_det_char_smul D ψ θ V W χV χW om hP mu hmu H ΛV L₀ hV0 hsV hs₀ s hcart _ hf₀ _ hk' (fun w => by
+  have hfix := _root_.GlobalTheory.VacStab.om_vacuum_eq_smul D ψ θ V W χV χW om hP mu hmu H ΛV L₀ hV0 hsV hs₀ s hcart _ hf₀ _ hk' (fun w => by
     rw [hl₀ w, hl]
     constructor
     · rintro ⟨w₀, hw₀, rfl⟩
@@ -261,7 +261,7 @@ theorem exists_vacuum_multiplier : ∀ (D : D7) (ψ : AddChar (AF D.host.F) ℂ)
   have hR := (GlobalTheory.AdTh.reads_linear_injective D ψ θ V W W.rank g rfl X bas idx hstd hP.inf hP.std hP.even hX hS x₀ hx
     _ _ _ _ hR₀ hR₀).1 (mu (c * k₀⁻¹)) 0
   rw [zero_smul, zero_smul, add_zero, add_zero, ← hfix] at hR
-  have hR' := GlobalTheory.T.weilRepresentation_real_moves_frame_detChar D ψ θ V W χV χW om hP mu hmu W.rank g rfl X bas idx hX hS x₀ hx _ _ hth hR u hu
+  have hR' := _root_.GlobalTheory.RealMove.om_real_reads D ψ θ V W χV χW om hP mu hmu W.rank g rfl X bas idx hX hS x₀ hx _ _ hth hR u hu
   have e1 : om (1, u) (om (1, c * k₀⁻¹) (om (1, k₀) f)) = om (1, u * c) f := by
     rw [← Module.End.mul_apply, ← Module.End.mul_apply, ← map_mul, ← map_mul, Prod.mk_mul_mk, Prod.mk_mul_mk]
     simp only [mul_one, mul_assoc, inv_mul_cancel]

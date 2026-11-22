@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.HasDerivAtOfContinuousHom
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.WirtingerCombinationNeZero
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0012
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0023
 
 @[expose] public section
 

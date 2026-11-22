@@ -1,9 +1,8 @@
 module
 
 public import Mathlib
-public import Formalism.QuotientMetricDivisors.HeightBoundExactNorms
-public import Formalism.QuotientMetricDivisors.ProdFormula
-public import Formalism.QuotientMetricDivisors.StatementACE
+public import Formalism.QuotientMetricDivisors.Bundle0002
+public import Formalism.QuotientMetricDivisors.Bundle0001
 public import Formalism.HarderNarasimhan.HarderNarasimhanProofs.SlopeIneqMean
 
 @[expose] public section

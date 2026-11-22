@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.EvAtParabNeZero
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0102
 
 @[expose] public section
 

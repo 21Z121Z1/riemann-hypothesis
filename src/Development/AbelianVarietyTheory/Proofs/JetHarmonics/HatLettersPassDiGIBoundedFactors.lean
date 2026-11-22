@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Jets.SameFns
+public import Development.AbelianVarietyTheory.Definitions.Jets.Bundle0002
 public import Formalism.HermitianCurvature.HermitianCurvatureProofs.RuleGD
 
 @[expose] public section

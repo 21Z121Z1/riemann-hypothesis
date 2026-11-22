@@ -1,7 +1,7 @@
 module
 
 public import Formalism.FlagUnipotentLattices.UnipotentStabiliserCharacterisation
-public import Formalism.FormalDegreeBessel.FinalG
+public import Formalism.FormalDegreeBessel.Bundle0002
 
 @[expose] public section
 

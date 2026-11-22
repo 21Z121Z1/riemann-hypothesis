@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Formalism.SharpRestriction.GlobalSchurBounds.GeneralLinearActions.GenusMassVolumes
-public import Formalism.SharpRestriction.GlobalSchurBounds.LocalCountingBounds
+public import Formalism.SharpRestriction.GlobalSchurBounds.Bundle0001
 public import Formalism.LocalToGlobal.SiegelLatticeTheory.FundamentalEquivalence.LevelIntersectParabolic
 public import Formalism.HermitianCurvature.MemParahoricTimesPrincipalCongruenceIff
 

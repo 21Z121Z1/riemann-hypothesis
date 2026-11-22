@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Formalism.ThetaLogCoordinates.UniformThetaSubstitution.ThmSUniform
+public import Formalism.ThetaLogCoordinates.UniformThetaSubstitution.Bundle0001
 public import Formalism.FormalGroupWitt.FormalGroupWittProofs.WittTeichmullerRoot
 
 @[expose] public section

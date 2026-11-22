@@ -1,6 +1,6 @@
 module
 
-public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.CIndFrFix
+public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0008
 public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.ExpTiePf
 public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.JetSubstPSTrunc
 

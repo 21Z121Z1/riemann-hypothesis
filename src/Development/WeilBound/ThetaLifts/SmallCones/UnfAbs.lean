@@ -2,7 +2,7 @@ module
 
 public import Development.WeilBound.ThetaLifts.SmallCones.RightOfCompact
 public import Development.WeilBound.CoreStatements.ThetaDilations.Nuabs
-public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.UnitaryRationalPointsCountableDiscreteFundDomain
+public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0125
 
 @[expose] public section
 

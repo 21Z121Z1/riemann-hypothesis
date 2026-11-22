@@ -1,13 +1,13 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FrameEquivApply
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0695
 public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FiniteStabMono
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.DoubleCosetMassEqRelIndexMulMass
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsFinsetDoubleCosetsConjMaxCompact
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0076
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0686
 public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsInvariantHermitianWeightForm
-public import Development.AbelianVarietyTheory.Definitions.Divisors.MemStdLatticeIffIntegralCoords
-public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.AddCharThetaLawRearrangementIdentity
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0031
+public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.Bundle0026
 
 @[expose] public section
 

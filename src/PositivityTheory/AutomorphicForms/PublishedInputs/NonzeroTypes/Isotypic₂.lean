@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import PositivityTheory.AutomorphicForms.PublishedInputs.NonzeroTypes.ScalarOnInertiaProp
+public import PositivityTheory.AutomorphicForms.PublishedInputs.NonzeroTypes.Bundle0004
 
 @[expose] public section
 

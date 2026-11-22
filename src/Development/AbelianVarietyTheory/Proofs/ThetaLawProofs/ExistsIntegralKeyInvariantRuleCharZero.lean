@@ -3,34 +3,31 @@ module
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.KeyFormula.LevBasis
 public import Development.AbelianVarietyTheory.Statements.ThetaLevelCharacters.MemThetaLevelCharDimZero
-public import Development.AbelianVarietyTheory.Definitions.KeyFormula.IsSquareDeterminantComparison
-public import Development.AbelianVarietyTheory.Definitions.KeyFormula.KaRuleK
+public import Development.AbelianVarietyTheory.Definitions.KeyFormula.Bundle0001
 public import Development.AbelianVarietyTheory.Definitions.AbelianSchemeLaws.FirstCohomologyVanishesSpecOfIsLocalRing
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.ValCalc
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.SymplecticGenerators.IsPluriharmonicSiegel
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.ThetaUnifAV
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.MapsAtLeA
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.Bundle0003
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.Bundle0004
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.GlobalSectionsRankAlgClosed
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.SymplecticGenerators.SymplecticCharacters.OneEqSpTranslZero
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.DivCalc
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.AmplePt
-public import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.ExistsAdmissibleKeyNumericalDataPrimeTo
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.Bundle0018
+public import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.Bundle0018
 public import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.BasisPowerSectionsLocalBaseChange
-public import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.ExistsCompleteDiscreteValuationRingWithResidues
-public import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.KeyInvariantIndependentOfSectionsStatement
-public import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.KeyInvariantBaseChangeStatement
-public import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.ExistsKeyInvariantAlgClosedTransversalStatement
-public import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.GenericSectionsMeetTransversallyStatement
-public import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.KoszulInvariantLocallyHolomorphicPeriodMatrixStatement
-public import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.ExistsKeyInvariantAfterDvrExtensionStatement
+public import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.Bundle0004
+public import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.KeyInvariantIndependentOfSections
+public import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.Bundle0043
+public import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.Bundle0054
+public import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.Bundle0038
+public import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.KoszulInvariantLocallyHolomorphicPeriodMatrix
 public import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.ExistsKeyInvariantAfterDvrExtension
-public import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.IsSquareDetComparisonScaleSec
-public import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.DualNumberRingHomExt
-public import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.ExistsKeyPBRing
-public import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.StalkOfAppLEEq
-public import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.ExistsKeyInNormalAt
-public import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.PwIsoIsGen
-public import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.NormalAtIffWit
+public import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.Bundle0021
+public import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.Bundle0035
+public import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.Bundle0036
+public import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.Bundle0039
+public import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.Bundle0022
+public import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.Bundle0025
 public import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.ExistsKeyPBPair
 
 @[expose] public section
@@ -67,7 +64,7 @@ theorem exists_kaVal_of_keyPB (hL : Out.Laws) {R R' : Type} [CommRing R] [IsLoca
   have hg := g_eq h
   obtain ⟨φ, w, hv⟩ := (KeyVia.main R R' x x' f).1.1 h
   choose t ht using fun s : RR x n => (((KeyVia.main R R' x x' f).2 φ w hv).1 n s).exists
-  exact ⟨fun i => t (s (i.cast hg)), _, GlobalTheory.T.keyInvariant_baseChange hL R R' x x' f φ w n l l' al hg s _ κ hA hv (fun i => ht _) hκ, rfl⟩
+  exact ⟨fun i => t (s (i.cast hg)), _, _root_.GlobalTheory.KaBaseChange.kaVal_baseChange hL R R' x x' f φ w n l l' al hg s _ κ hA hv (fun i => ht _) hκ, rfl⟩
 
 theorem exists_algebraicIndependent (K : Subfield ℂ) [Countable K] (I : Type) [Finite I] :
     ∃ T : I → ℂ, AlgebraicIndependent K T := by
@@ -101,8 +98,8 @@ theorem exists_kaVal_complex (hL : Out.Laws) (hD : KeyDesc) (x : KeyIn ℂ) {n l
   choose t ht using fun s : RR x₀ n => (((KeyVia.main _ _ x₀ x _).2 φ w hv).1 n s).exists
   obtain ⟨T, hT⟩ := exists_algebraicIndependent K (Fin x.P.g × Fin (n ^ x₀.P.g))
   choose s hs using fun i => exists_coords x (fun j => t (b j)) (fun j => T (i, j))
-  obtain ⟨d, z, ch, hz⟩ := GlobalTheory.T.generic_sections_meet_transversally hL K ℂ x₀ x φ w n b _ T s hA.1 hv hb (fun j => ht _) hT hs
-  obtain ⟨κ, hκ⟩ := GlobalTheory.T.exists_keyInvariant_algClosed_transversal hL ℂ x n l l' al d s z ch hA (Nat.cast_ne_zero.2 (by omega)) hz
+  obtain ⟨d, z, ch, hz⟩ := _root_.GlobalTheory.KeyKa.GenericZeros.exists_etZ_of_algebraicIndependent hL K ℂ x₀ x φ w n b _ T s hA.1 hv hb (fun j => ht _) hT hs
+  obtain ⟨κ, hκ⟩ := _root_.GlobalTheory.KeyKa.exists_kaVal_of_isAlgClosed hL ℂ x n l l' al d s z ch hA (Nat.cast_ne_zero.2 (by omega)) hz
   exact ⟨s, κ, hκ⟩
 
 theorem exists_kaVal_dvr (hL : Out.Laws) (R : Type) [CommRing R] [IsDomain R] [IsDiscreteValuationRing R]
@@ -152,12 +149,12 @@ theorem exists_kaVal_dvr (hL : Out.Laws) (R : Type) [CommRing R] [IsDomain R] [I
       (∀ i, Coords xΩ bΩ (fun q => T (i, q)) (s i).f) → ∃ (d : ℕ) (z : Fin d → Pt xΩ) (ch : Fin d → xΩ.P.L.ι),
         EtZ xΩ s z ch := fun e bk bΩ T s h₁ h₂ h₃ h₄ => by
     subst e
-    exact GlobalTheory.T.generic_sections_meet_transversally hL k Ω xk xΩ φ₁ w₁ n bk bΩ T s hA.1 hv₁ h₁ h₂ h₃ h₄
+    exact _root_.GlobalTheory.KeyKa.GenericZeros.exists_etZ_of_algebraicIndependent hL k Ω xk xΩ φ₁ w₁ n bk bΩ T s hA.1 hv₁ h₁ h₂ h₃ h₄
   obtain ⟨d, z, ch, hz⟩ := gen gk bk bΩ (T ∘ Prod.map (Fin.cast gΩ) id) (fun i => t (s (i.cast g₂))) hbk'
     (fun q => hs₁ n _ _ _ (hbk q) (hbΩ q))
     (hT.comp _ ((Fin.cast_injective gΩ).prodMap Function.injective_id)) hc
   obtain ⟨O', _, _, _, j', -, x', φ', w', -, s', u, hj', hloc', -, hv', -, hu⟩ :=
-    GlobalTheory.T.exists_keyInvariant_after_dvr_extension hL O Ω r' xO xΩ φ₂ w₂ n l l' al d g₂ s _ z ch hker (gO ▸ hA)
+    _root_.GlobalTheory.KaLift.exists_kaVal_extension hL O Ω r' xO xΩ φ₂ w₂ n l l' al d g₂ s _ z ch hker (gO ▸ hA)
       (by rw [gO]; simpa using hM.map j) hv₂ (fun i => ht _) hz
   exact ⟨O', inferInstance, inferInstance, inferInstance, j'.comp j, x', s', u, hj'.comp hj, inferInstance,
     keyPB_trans _ _ _ x xO x' _ _ pO ((KeyVia.main _ _ xO x' _).1.2 ⟨_, _, hv'⟩), hu⟩
@@ -173,7 +170,7 @@ theorem kaSt : Out.Laws → ThetaUnifAV → GlobalTheory.TorusAlgebraic → KeyD
       ∃ (K' : Type) (_ : Field K') (_ : IsAlgClosed K') (f : K →+* K') (x' : KeyIn K') (s' : Fin x'.P.g → RR x' n)
         (κ' : K'ˣ), KeyPB x' x f ∧ KaVal x' n l l' al s' κ' := fun K _ _ _ x => by
     by_cases hx : x.P.g = g
-    · obtain ⟨κ, h₁, K', _, _, f, x', φ, w, s', κ', h₂, h₃⟩ := GlobalTheory.T.keyInvariant_independent_of_sections hL K x n l l' al (hx ▸ hA)
+    · obtain ⟨κ, h₁, K', _, _, f, x', φ, w, s', κ', h₂, h₃⟩ := _root_.GlobalTheory.KaIndep.kaVal_independent hL K x n l l' al (hx ▸ hA)
       exact ⟨κ, fun _ => ⟨h₁, K', inferInstance, inferInstance, f, x', s', κ',
         (KeyVia.main _ _ x x' _).1.2 ⟨_, _, h₂⟩, h₃⟩⟩
     · exact ⟨1, fun h => absurd h hx⟩
@@ -216,7 +213,7 @@ theorem kaSt : Out.Laws → ThetaUnifAV → GlobalTheory.TorusAlgebraic → KeyD
           (u : HolUnif x.P.A x.P.L g), Wit x h u (per q') a b → (ka ℂ x : ℂ) = V q' := fun q hq => by
       obtain ⟨x₀, h₀, u₀, hw⟩ := wit q hq
       obtain ⟨s₀, κ₀, hκ₀⟩ := exists_kaVal_complex hL hD x₀ (h₀ ▸ hA) (h₀ ▸ hM)
-      obtain ⟨W, V, h₁, h₂, h₃, h₄, h₅⟩ := GlobalTheory.T.koszulInvariant_locally_holomorphic_periodMatrix hL hU g n l l' al a b q x₀ h₀ u₀ s₀ κ₀ hab hA hq hw hκ₀
+      obtain ⟨W, V, h₁, h₂, h₃, h₄, h₅⟩ := _root_.GlobalTheory.KeyKa.KaHol.kaVal_locally_holomorphic hL hU g n l l' al a b q x₀ h₀ u₀ s₀ κ₀ hab hA hq hw hκ₀
       refine ⟨W, V, h₁, h₂, h₃, h₄, fun q' hq' x h u hx => ?_⟩
       obtain ⟨s, κ, hκ, e⟩ := h₅ q' hq' x h u hx
       exact (self ℂ x s κ h hκ).trans e

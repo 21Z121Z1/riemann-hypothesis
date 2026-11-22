@@ -1,11 +1,8 @@
 module
 
-public import Formalism.LocalToGlobal.HermitianColumns.CompletionIntegersIff
-public import Formalism.LocalToGlobal.HermitianColumns.Lev0Tied
-public import Formalism.LocalToGlobal.HermitianColumns.ClsNonempty
+public import Formalism.LocalToGlobal.HermitianColumns.Bundle0001
+public import Formalism.LocalToGlobal.HermitianColumns.Bundle0003
 public import Formalism.LocalToGlobal.HermitianColumns.ZeroPointScaledByCharacter
-public import Formalism.LocalToGlobal.HermitianColumns.StepLevelQ
-public import Formalism.LocalToGlobal.HermitianColumns.CoordinateLatticeSelfDual
 
 @[expose] public section
 

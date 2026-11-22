@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NormIdeal
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0088
 
 @[expose] public section
 

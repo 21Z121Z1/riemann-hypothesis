@@ -2,9 +2,9 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.EqOfPowEqOneOfNormSubLt
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsFrobeniusSemisimplification
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsNilpotentZpowSubOne
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.SpanMkQOneTmul
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0050
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0043
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0018
 
 @[expose] public section
 

@@ -1,13 +1,13 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Foundations.ApplyEqOfMemAdjoin
-public import Development.AbelianVarietyTheory.Definitions.Foundations.IsTopWTopWOfExists
-public import Development.AbelianVarietyTheory.Definitions.Foundations.ExistsOfEmbedding
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.FiniteIndexStabilizer
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsUniqueNormalizedCyclotomicTrace
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.SubOneMulSumEq
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.PowPrimeStep
+public import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0010
+public import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0003
+public import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0011
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0115
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0117
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0131
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0120
 
 @[expose] public section
 

@@ -1,23 +1,20 @@
 module
 
 public import Development.WeilBound.RepresentationTheoryGL.EisensteinSeries.SiegelEisensteinHalfPlane.MirabolicGenerators.SideUnfold
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.AverageMembershipStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.AverageInvarianceStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.UnfoldingOfAverageStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.DiagonalTermGoodStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.HeightTermGoodStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.BoundaryTermGoodStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MasterIdentityStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SideTermIdentityStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.RatVSmulStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.VecKapMulStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ZetaIntegralOfEpsteinConvStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SideTermUnfoldingStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SideTermConvergenceStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.TestFunctionSphericalKStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ZetaValueAtOneStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.PrincipalIdentityAssemblyStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MirabolicGenerationStatement
+public import Mathlib
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0178
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0186
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0180
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0181
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0179
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0182
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0640
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.RatVSmul
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0187
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0235
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0184
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0185
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.PrincipalIdentityAssembly
 
 @[expose] public section
 
@@ -25,10 +22,10 @@ namespace PositivityTheory.RgEis.MG
 
 theorem mirGen : SecLaw → StdGood → BdetLaw → EpConv → EpMain → TestFun → TestSph → MirGen :=
   fun hS hG hB hC hM hT hSph =>
-    have hO := GlobalTheory.T.side_term_identity hG hB
-    have hZ := GlobalTheory.T.zeta_integral_of_epstein_conv hC
-    GlobalTheory.T.mirabolic_generation hS hSph GlobalTheory.T.average_membership (GlobalTheory.T.average_invariance GlobalTheory.T.average_membership) hO (GlobalTheory.T.test_function_spherical_K hG hB hT)
-      (GlobalTheory.T.principal_identity_assembly hM GlobalTheory.T.diagonal_term_good (GlobalTheory.T.master_identity GlobalTheory.T.average_membership GlobalTheory.T.diagonal_term_good GlobalTheory.T.height_term_good GlobalTheory.T.boundary_term_good) hO GlobalTheory.T.block_term_identity hZ
-        (GlobalTheory.T.side_term_unfolding hC (GlobalTheory.T.unfolding_of_average hS GlobalTheory.T.average_membership) GlobalTheory.T.lines_decomposition GlobalTheory.T.block_term_identity hZ) (GlobalTheory.T.side_term_convergence hC hSph GlobalTheory.T.lines_decomposition GlobalTheory.T.block_term_identity) (GlobalTheory.T.zeta_value_at_one hM))
+    have hO := _root_.GlobalTheory.CompanionTheory.MirSides.sideOf hG hB
+    have hZ := _root_.GlobalTheory.CompanionTheory.ZetaAlongK.zetaK hC
+    _root_.GlobalTheory.CompanionTheory.EisMir.mirGen_of_core hS hSph _root_.GlobalTheory.CompanionTheory.EisMirGen.avgMem (_root_.GlobalTheory.CompanionTheory.RgEisAvg.avgInv_of_avgMem _root_.GlobalTheory.CompanionTheory.EisMirGen.avgMem) hO (_root_.GlobalTheory.CompanionTheory.EisTestK.testK hG hB hT)
+      (_root_.GlobalTheory.CompanionTheory.EisCore.wall_core hM _root_.GlobalTheory.CompanionTheory.RgEisDGood.dGood (_root_.GlobalTheory.CompanionTheory.RgEisMG.master _root_.GlobalTheory.CompanionTheory.EisMirGen.avgMem _root_.GlobalTheory.CompanionTheory.RgEisDGood.dGood _root_.GlobalTheory.CompanionTheory.RgEisHGood.hGood _root_.GlobalTheory.CompanionTheory.RgEisLeft.bGood) hO _root_.GlobalTheory.CompanionTheory.RgEisTerm.term hZ
+        (_root_.GlobalTheory.CompanionTheory.RgEisSide.sideUnfold hC (_root_.GlobalTheory.CompanionTheory.RgEisUnfold.unfold hS _root_.GlobalTheory.CompanionTheory.EisMirGen.avgMem) _root_.GlobalTheory.CompanionTheory.RgEisLines.lines _root_.GlobalTheory.CompanionTheory.RgEisTerm.term hZ) (_root_.GlobalTheory.CompanionTheory.RgEisSide.sideConv hC hSph _root_.GlobalTheory.CompanionTheory.RgEisLines.lines _root_.GlobalTheory.CompanionTheory.RgEisTerm.term) (_root_.GlobalTheory.CompanionTheory.EisMG.zetaOne_of_epMain hM))
 
 end PositivityTheory.RgEis.MG

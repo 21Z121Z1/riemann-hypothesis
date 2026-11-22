@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.IsTypeIsRealConst
-public import Development.AbelianVarietyTheory.Definitions.Divisors.GenericPointAsIdeal
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0035
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NontrivialIsomClassInt
 
 @[expose] public section

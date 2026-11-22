@@ -2,14 +2,14 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NontrivialIsomClassInt
-public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.ArFormExists
+public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.Bundle0016
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CodimOneIntegralSubschemeDim
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FlagBundleProductOfEach
-public import Development.AbelianVarietyTheory.Definitions.Divisors.GenericPointAsIdeal
-public import Development.AutomorphicSpectrum.Definitions.DivisibilityTowers.SheetUnsheet
-public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.EqOfIsometricTrivShift
-public import Development.AutomorphicSpectrum.Proofs.MetricProofs.ChernIntegrableOnIffSheetsStatement
-public import Development.AutomorphicSpectrum.Proofs.MetricProofs.LogNormSheetEqStatement
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2278
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0035
+public import Development.AutomorphicSpectrum.Definitions.DivisibilityTowers.Bundle0002
+public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.Bundle0012
+public import Development.AutomorphicSpectrum.Proofs.MetricProofs.ChernIntegrableOnIffSheets
+public import Development.AutomorphicSpectrum.Proofs.MetricProofs.Bundle0152
 
 @[expose] public section
 
@@ -38,12 +38,12 @@ theorem archInt_over_int : ∀ (k : Type) [CommRing k] (X : Scheme.{0}) [IsInteg
     haveI := hX.isDomain
     haveI := hX.finite
     have hS : MeasurableSet (offSupp t τ (M.div hr)) := (GlobalTheory.CxPts.isOpen_ptsIn _).measurableSet
-    obtain ⟨h1, h2⟩ := GlobalTheory.T.chernIntegrableOn_iff_sheets k X p t τ hX.isProjOver e N.B N.φ ψ hψN N.cInf hψ _ hS (logNorm ν r)
+    obtain ⟨h1, h2⟩ := _root_.GlobalTheory.CompanionTheory.Metric.chernInt_eq_finsum_sheets k X p t τ hX.isProjOver e N.B N.φ ψ hψN N.cInf hψ _ hS (logNorm ν r)
     have hmeas : ∀ σ : k →+* ℂ, MeasurableSet (offSupp p σ (M.div hr)) :=
       fun σ => (GlobalTheory.CxPts.isOpen_ptsIn _).measurableSet
     have hEq : ∀ σ : k →+* ℂ, Set.EqOn (fun z => logNorm ν r (GlobalTheory.CompanionTheory.Ar.BaseZ.sheet t τ z))
         (logNorm (M.φ σ) r) (offSupp p σ (M.div hr)) :=
-      fun σ y hy => GlobalTheory.T.logNorm_sheet_eq k X p t τ M.B M.φ ν hνM r hr σ y hy
+      fun σ y hy => _root_.GlobalTheory.CompanionTheory.Ar.BaseZ.logNorm_sheet k X p t τ M.B M.φ ν hνM r hr σ y hy
     have hiff : ψ.ChernIntegrableOn e (offSupp t τ (M.div hr)) (logNorm ν r) ↔ N.ArchIntegrable M e hr := by
       rw [h1]
       unfold GlobalTheory.HermLB.ArchIntegrable

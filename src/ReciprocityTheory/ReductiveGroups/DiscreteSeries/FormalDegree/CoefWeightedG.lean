@@ -1,9 +1,8 @@
 module
 
-public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.FormalDegree.CoefIntVG
-public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.FormalDegree.CoefIntCpt
+public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.FormalDegree.Bundle0001
 public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.FormalDegree.CoefDec
-public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.FormalDegree.HaarMirror
+public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.FormalDegree.Bundle0013
 public import Formalism.SharpRestriction.CuspSpanNormBounds.GlobAut
 
 @[expose] public section

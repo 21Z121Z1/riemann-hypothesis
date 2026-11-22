@@ -1,7 +1,7 @@
 module
 
 public import Formalism.HermitianCurvature.StatementSz
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.MassRatioFormula
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0004
 public import Formalism.HermitianCurvature.HermitianCurvatureProofs.CorollaryAOfPropositionA
 public import Formalism.HermitianCurvature.HermitianCurvatureProofs.SumInvSqLeSub
 

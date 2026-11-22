@@ -1,6 +1,6 @@
 module
 
-public import Formalism.LocalToGlobal.InertKernelTheory.DelPolOfTies
+public import Formalism.LocalToGlobal.InertKernelTheory.Bundle0016
 
 @[expose] public section
 

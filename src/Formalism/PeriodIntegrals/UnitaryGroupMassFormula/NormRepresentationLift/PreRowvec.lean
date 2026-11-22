@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Formalism.SharpRestriction.CuspSpanNormBounds.IsPrimitiveSub
-public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.NormRepresentationLift.GlobalDual
+public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.NormRepresentationLift.Bundle0002
 
 @[expose] public section
 

@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import GroundTheory.GlobalFields.TateThesis.HeckeChar
-public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.SummableAbsNormRpowInv
+public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0060
 
 @[expose] public section
 

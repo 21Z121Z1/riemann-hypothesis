@@ -3,7 +3,7 @@ module
 public import Mathlib
 public import Formalism.LocalToGlobal.GlobalTheory.GL3.PHfArith
 public import Formalism.FrobeniusOrbits.FrobeniusOrbitsProofs.OrdUnimod
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsMonicAevalEqZero
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0017
 
 @[expose] public section
 

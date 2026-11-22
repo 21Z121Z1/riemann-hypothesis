@@ -2,14 +2,15 @@ module
 
 public import Mathlib
 public import Development.AutomorphicSpectrum.Definitions.DivisibilityTowers.LocalAtPlaces
-public import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.StatementsFlagIndependence
-public import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.OfSteps
-public import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.DivCycleMapLocalisation
-public import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.VerticalNumberZeroOfHorizontalStatement
-public import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.VerticalNumberLocalCycleStatement
-public import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.PointIdealComapPrimeLiftStatement
-public import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.LocalizationModelOverPlaceStatement
-public import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.ResidueModelAtPrimeStatement
+public import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.Bundle0017
+public import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.Bundle0034
+public import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.Bundle0009
+public import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.Bundle0013
+public import Development.AutomorphicSpectrum.Definitions.DivisibilityTowers.BundleChernComparison
+public import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.VerticalNumberLocalCycle
+public import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.Bundle0012
+public import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.LocalizationModelOverPlace
+public import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.Bundle0014
 
 @[expose] public section
 
@@ -153,8 +154,8 @@ theorem GlobalTheory.CompanionTheory.Ar.Num.cycList_zp_eq_sum_places : ∀ (K : 
   intro K _ _ ι _ Ω _ y A _ _ _ _ hinj hconst D hP p Λ _ m _ hminj hm O _ _ _ _ _ _ _ fd hfd a f hf hfP L hL
   classical
   haveI hpf : Fact (p : ℕ).Prime := ⟨p.2⟩
-  obtain ⟨hcomapA, hlift, hdiv⟩ := GlobalTheory.T.point_ideal_comap_prime_lift K ι Ω y A hconst
-  have hmod := fun l => GlobalTheory.T.localization_model_over_place K ι Ω y A hinj hconst D hP (m l) (O l)
+  obtain ⟨hcomapA, hlift, hdiv⟩ := _root_.GlobalTheory.CompanionTheory.Ar.Num.pl_corr K ι Ω y A hconst
+  have hmod := fun l => _root_.GlobalTheory.CompanionTheory.Ar.Num.pl_model K ι Ω y A hinj hconst D hP (m l) (O l)
 
   have hcomapO : ∀ l, (pointIdeal (O l) y : Ideal (MRing ι (O l))).comap
       (MvPolynomial.map (Int.castRingHom (O l))) = mCoordIdeal y := fun l => by
@@ -211,7 +212,7 @@ theorem GlobalTheory.CompanionTheory.Ar.Num.cycList_zp_eq_sum_places : ∀ (K : 
   have hLeft : cycList (divCycle (extTo (ZP p) (mCoordIdeal y))
       (MvPolynomial.map (Int.castRingHom (ZP p)) f)) L =
       ∑ W ∈ T, divCycle (mCoordIdeal y) f W * intNumL (ZMod p) (extTo (ZMod p) W) L := by
-    rw [← GlobalTheory.T.vertical_number_local_cycle K ι _ D hP p a f hf hfP L hL]
+    rw [← _root_.GlobalTheory.CompanionTheory.Ar.Num.vertAt_eq_cycList K ι _ D hP p a f hf hfP L hL]
     unfold vertAt cycEval
     rw [finsum_eq_sum_of_support_subset (s := T)]
     · refine Finset.sum_congr rfl fun W hW => ?_
@@ -237,7 +238,7 @@ theorem GlobalTheory.CompanionTheory.Ar.Num.cycList_zp_eq_sum_places : ∀ (K : 
     have hc : (C ((p : ℕ) : O l) : MRing ι (O l)) ∈ W := by
       by_contra hc
       obtain ⟨ϖ, hϖ⟩ := IsDiscreteValuationRing.exists_irreducible (O l)
-      exact h2 (GlobalTheory.T.vertical_number_zero_of_horizontal (O l) ϖ hϖ K ι _ D (hmod l).2.1 a _ (Places.isMultiHomog_map _ hf) (hfO l) W h1
+      exact h2 (_root_.GlobalTheory.CompanionTheory.Ar.Num.horizontal_vNumL_eq_zero (O l) ϖ hϖ K ι _ D (hmod l).2.1 a _ (Places.isMultiHomog_map _ hf) (hfO l) W h1
         (Places.C_uniformiser_notMem (hpmax l) hϖ hc) L hL)
     exact Finset.mem_coe.mpr (Finset.mem_filter.mpr ⟨(hfinl l).mem_toFinset.mpr h1, hc⟩)
   have hsum : ∑ l, (fd l : ℤ) * cycList (divCycle (pointIdeal (O l) y) (MvPolynomial.map (Int.castRingHom (O l)) f)) L =
@@ -311,6 +312,6 @@ theorem GlobalTheory.CompanionTheory.Ar.Num.cycList_zp_eq_sum_places : ∀ (K : 
     obtain ⟨hne, hc⟩ := hmem l W (Finset.mem_sigma.mp hx).2
     obtain ⟨hWp, hrel, hle, hmh⟩ := hfacts l W hne
     dsimp only
-    rw [hmult l W hWp hrel hle, GlobalTheory.T.residue_model_at_prime K ι Ω y A hconst (p : ℕ) (m l) (O l) (hpm l) (fd l) (hfd l) W
+    rw [hmult l W hWp hrel hle, _root_.GlobalTheory.CompanionTheory.Ar.Num.intNumL_zmod_eq_residueDegree_mul_vNumL K ι Ω y A hconst (p : ℕ) (m l) (O l) (hpm l) (fd l) (hfd l) W
       hWp hmh hle (Places.maximal_le_of_C_mem (hp0 l) hWp hc) L]
     ring

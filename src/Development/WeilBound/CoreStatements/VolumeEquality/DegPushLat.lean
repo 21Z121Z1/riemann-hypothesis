@@ -1,11 +1,17 @@
 module
 
-public import Development.WeilBound.CoreStatements.VolumeEquality.DegPushDefs
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.CmTypeLatticeComparison
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ConstantsCompatibleGeneric
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsConstantsGenericPointStatement
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.HodgeCptInteriorGenericStatement
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LieModelDominantHodgeStatement
+public import Development.WeilBound.CoreStatements.VolumeEquality.Bundle0007
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0154
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0146
+public import Mathlib
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0058
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.GlobalSectionsRankAlgClosed
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.Bundle0010
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.Bundle0005
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.Bundle0007
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.HodgeCptInteriorGeneric
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsHodgeLine
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0144
 
 @[expose] public section
 

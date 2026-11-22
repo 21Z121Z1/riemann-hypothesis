@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Formalism.LocalToGlobal.CharacterGerms.RestNonneg
-public import Formalism.LocalToGlobal.CharacterGerms.BlockMembershipSelfConjugate
+public import Formalism.LocalToGlobal.CharacterGerms.Bundle0007
 
 @[expose] public section
 

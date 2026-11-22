@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Formalism.QuotientMetricDivisors.StatementE
+public import Formalism.QuotientMetricDivisors.Bundle0003
 
 @[expose] public section
 

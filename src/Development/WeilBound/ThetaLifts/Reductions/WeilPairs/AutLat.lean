@@ -1,6 +1,6 @@
 module
 
-public import Development.WeilBound.ThetaLifts.Reductions.WeilPairs.FinIdemSmulOfReal
+public import Development.WeilBound.ThetaLifts.Reductions.WeilPairs.Bundle0010
 public import Development.WeilBound.ThetaLifts.Reductions.WeilPairs.AutLatA
 
 @[expose] public section

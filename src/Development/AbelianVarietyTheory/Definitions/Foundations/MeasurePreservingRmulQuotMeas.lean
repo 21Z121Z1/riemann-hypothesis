@@ -2,8 +2,8 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.Foundations.AestronglyMeasurableQuotMeasureIffLift
-public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.ExistsBruhatFunctionOfClosedEmbedding
-public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.ExistsIsQuotientMeasureOfBruhatFunction
+public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0014
+public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0051
 
 @[expose] public section
 

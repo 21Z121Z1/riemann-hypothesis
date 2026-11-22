@@ -2,7 +2,13 @@ module
 
 public import Mathlib
 public import Development.AutomorphicSpectrum.Definitions.MetricPeriods.IsEigFrames
-public import Development.AutomorphicSpectrum.Proofs.MetricProofs.ExistsEigenComponentPolynomialStatement
+public import Development.AutomorphicSpectrum.Proofs.MetricProofs.Bundle0086
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.BdryChart
+public import ReciprocityTheory.AnalyticForms.PlurisubharmonicFunctions.Bundle0001
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LogPeriodLimit
+public import Development.AutomorphicSpectrum.Proofs.MetricProofs.Bundle0079
+public import Development.WeilBound.CoreStatements.PlurisubharmonicCones.Bundle0004
+public import Development.WeilBound.CoreStatements.PlurisubharmonicCones.Bundle0003
 
 @[expose] public section
 
@@ -23,7 +29,7 @@ theorem phi_transport {E : Type} [Field E] [NumberField E] {V V' A : Type} [AddC
   have heig : ∀ (s₀ : 𝓞 E →+* ℂ) (x : V),
       Ψ (GlobalTheory.CompanionTheory.Ar.Cusp.eigComp ρ s₀ x) = GlobalTheory.CompanionTheory.Ar.Cusp.eigComp ρ' s₀ (Ψ x) := by
     intro s₀ x
-    obtain ⟨c₀, hc₀⟩ := GlobalTheory.T.exists_eigenComponent_polynomial E s₀
+    obtain ⟨c₀, hc₀⟩ := _root_.GlobalTheory.CompanionTheory.Ar.Cusp.EigCoef.eigComp_eq_combination E s₀
     set_option synthInstance.maxHeartbeats 100000 in
       rw [(hc₀ V ρ).1 x, (hc₀ V' ρ').1 (Ψ x), map_sum]
     refine Finset.sum_congr rfl fun a _ => ?_

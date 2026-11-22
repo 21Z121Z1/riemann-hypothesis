@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import GroundTheory.HeightsAndTheta.Heights.VerticalDivisors.PSpecMax
-public import GroundTheory.HeightsAndTheta.Heights.VerticalDivisors.PChartDomain
+public import GroundTheory.HeightsAndTheta.Heights.VerticalDivisors.Bundle0012
+public import GroundTheory.HeightsAndTheta.Heights.VerticalDivisors.Bundle0009
 
 @[expose] public section
 

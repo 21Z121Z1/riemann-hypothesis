@@ -1,7 +1,6 @@
 module
 
-public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.FormalGroupSplitting.AddPreservesExpCongruence
-public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.FormalGroupSplitting.OrthogonalSplitPolarizationVanishes
+public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.FormalGroupSplitting.Bundle0001
 
 @[expose] public section
 

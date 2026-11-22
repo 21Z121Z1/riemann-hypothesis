@@ -1,6 +1,6 @@
 module
 
-public import Formalism.SharpRestriction.GrowthBounds.IntegralWeylLatticeSpan.IntSpanGSmul
+public import Formalism.SharpRestriction.GrowthBounds.IntegralWeylLatticeSpan.Bundle0001
 
 @[expose] public section
 

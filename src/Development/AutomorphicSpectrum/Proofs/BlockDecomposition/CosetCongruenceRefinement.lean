@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CosetOff
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0086
 
 @[expose] public section
 

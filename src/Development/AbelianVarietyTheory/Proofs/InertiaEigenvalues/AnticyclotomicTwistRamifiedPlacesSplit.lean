@@ -2,13 +2,13 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.ExistsIsScalar
-public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.ExistsIsClassSystem
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ChangeOfSplittingPair
+public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0031
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0684
 public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.WeilRepresentationUnitaryPair
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.UniversalAnticyclotomicCharacterLaws
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0102
 public import Formalism.LocalToGlobal.IndefiniteReal.ZeroPartEigenvalueConvention
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ConjPlNeOfSplit
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsPlaceOverMoveValCc
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0838
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0305
 
 @[expose] public section
 

@@ -1,6 +1,6 @@
 module
 
-public import Development.EtaleCohomology.CohomologicalPurity.LeafExcFormalPf
+public import Development.EtaleCohomology.CohomologicalPurity.Bundle0006
 
 @[expose] public section
 

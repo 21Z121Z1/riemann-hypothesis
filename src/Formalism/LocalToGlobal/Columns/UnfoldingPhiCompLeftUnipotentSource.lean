@@ -1,7 +1,7 @@
 module
 
-public import Formalism.LocalToGlobal.Columns.ChainLawXiQ
-public import Formalism.LocalToGlobal.Columns.XiFirstLawAllLevels
+public import Formalism.LocalToGlobal.Columns.Bundle0041
+public import Formalism.LocalToGlobal.Columns.Bundle0037
 public import Formalism.LocalToGlobal.Columns.ChainTwOk
 public import Formalism.LocalToGlobal.Columns.ChainTwAn
 public import Formalism.LocalToGlobal.KernelLattices.KernelLocalFactors.KerHypAll

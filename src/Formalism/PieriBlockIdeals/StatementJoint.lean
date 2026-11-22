@@ -1,8 +1,8 @@
 module
 
-public import Formalism.PieriBlockIdeals.TailInequalityEventually
-public import Formalism.QuotientMetricDivisors.ClassSumDualLe
-public import Formalism.MirabolicMackeyTheory.StatementT
+public import Formalism.PieriBlockIdeals.Bundle0007
+public import Formalism.QuotientMetricDivisors.Bundle0001
+public import Formalism.MirabolicMackeyTheory.Bundle0001
 
 @[expose] public section
 

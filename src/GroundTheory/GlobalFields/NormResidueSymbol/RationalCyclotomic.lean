@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import GroundTheory.GlobalFields.IdeleGroups.Rational
+public import GroundTheory.GlobalFields.IdeleGroups.Bundle0002
 public import GroundTheory.GlobalFields.CyclotomicCharacters.ProfinitePadic
 
 @[expose] public section

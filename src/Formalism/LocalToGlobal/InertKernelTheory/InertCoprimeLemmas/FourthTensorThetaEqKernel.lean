@@ -1,16 +1,16 @@
 module
 
 public import Mathlib
-public import Formalism.LocalToGlobal.InertKernelTheory.StatementAlg
-public import Formalism.LocalToGlobal.InertKernelTheory.KerTransAll
+public import Formalism.LocalToGlobal.InertKernelTheory.Bundle0005
+public import Formalism.LocalToGlobal.InertKernelTheory.Bundle0006
 public import Formalism.LocalToGlobal.TorsionIntegrality.EisensteinTranslationProducts.GoodModelLattice
-public import Formalism.LocalToGlobal.TorsionIntegrality.FrobeniusFibreCurves.LogarithmicSubstitution.BaseChangeCompatible
+public import Formalism.LocalToGlobal.TorsionIntegrality.FrobeniusFibreCurves.LogarithmicSubstitution.Bundle0002
 public import Formalism.LocalToGlobal.TorsionIntegrality.QuadraticSemicharacters.QuadraticSemicharacterIdentityReformulated2
-public import Formalism.LocalToGlobal.TorsionIntegrality.TorsionTranslationPowers.NonsingularJetNorms.GeneralIntegrality
+public import Formalism.LocalToGlobal.TorsionIntegrality.TorsionTranslationPowers.NonsingularJetNorms.Bundle0003
 public import Formalism.LocalToGlobal.GlobalTheory.GL3.IsIntegralOfMemQbar
 public import Formalism.LocalToGlobal.GlobalTheory.GL3.PStdOK
-public import Formalism.LocalToGlobal.InertKernelTheory.DefsInt
-public import Formalism.LocalToGlobal.InertKernelTheory.DefsMM
+public import Formalism.LocalToGlobal.InertKernelTheory.Bundle0007
+public import Formalism.LocalToGlobal.InertKernelTheory.Bundle0008
 public import Formalism.LocalToGlobal.InertKernelTheory.InertCoprimeLemmas.IntStd
 
 @[expose] public section

@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Formalism.GL3MeanSquares.SmoothedRemainderRealIntegralFormula
+public import Formalism.GL3MeanSquares.Bundle0001
 
 @[expose] public section
 

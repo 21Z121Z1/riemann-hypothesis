@@ -4,8 +4,8 @@ public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.ChartGen
 public import Development.AbelianVarietyTheory.PublishedTheorems.DiscreteSeriesUnitary₂.MaxMass
 public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsCoprimeScaledIsometrySameSignature
-public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.ExistsPositiveAdd
-public import Formalism.LocalToGlobal.ProjectiveLattices.UnramBridgeHolds
+public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0008
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0004
 
 @[expose] public section
 

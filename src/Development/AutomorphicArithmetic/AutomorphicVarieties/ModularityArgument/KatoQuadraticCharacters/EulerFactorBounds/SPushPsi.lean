@@ -1,9 +1,9 @@
 module
 
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.KatoQuadraticCharacters.EulerFactorBounds.KatoTwistedClassNormCompatibleCyclotomic
-public import Development.AbelianVarietyTheory.Definitions.Foundations.AdmissibleNewformZetaData
-public import Development.AbelianVarietyTheory.Statements.CuspidalUnitaryTwists.ZetaUr
-public import Development.AbelianVarietyTheory.Definitions.Foundations.IwSys2
+public import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0025
+public import Development.AbelianVarietyTheory.Statements.CuspidalUnitaryTwists.Bundle0001
+public import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0021
 
 @[expose] public section
 

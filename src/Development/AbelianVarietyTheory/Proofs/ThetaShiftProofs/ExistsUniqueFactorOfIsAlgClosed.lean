@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.HomogeneousIdeals.ExistsRingEquivOfIsTranscendenceBasis
+public import Development.AbelianVarietyTheory.Proofs.HomogeneousIdeals.Bundle0002
 
 @[expose] public section
 

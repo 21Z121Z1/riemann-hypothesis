@@ -2,9 +2,9 @@ module
 
 public import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.SphericalCoordinates.IsCoordA
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SimilitudeActionAdelicLattice
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsCoprimeNsmulEndomorphismPreservesCompletio
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LatticeCompletionEqLatticeVectorAddNsmul
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntDvdOfEqNatMulIntegralAdeleAwayFromP
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle3043
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2697
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2695
 
 @[expose] public section
 

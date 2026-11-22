@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.IsPotential
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsCrysLatOfTrivial
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.OneNotMemFilOne
+public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0017
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0150
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0518
 
 @[expose] public section
 

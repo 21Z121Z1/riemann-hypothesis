@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.ResolutionOfSingularities.Foundations.Blowup.BlowupBasic
+public import Development.ResolutionOfSingularities.Foundations.Blowup.Bundle0001
 public import Development.ResolutionOfSingularities.Foundations.Blowup.BlowupOpenCover
 public import Development.ResolutionOfSingularities.Foundations.Schemes.SchemeCoproduct
 public import Development.ResolutionOfSingularities.Foundations.Schemes.IdealSheafData

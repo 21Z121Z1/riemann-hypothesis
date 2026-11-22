@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Formalism.FrobeniusOrbits.DiscrMaximalRealCyclotomic
+public import Formalism.FrobeniusOrbits.Bundle0001
 
 @[expose] public section
 

@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import GroundTheory.AutomorphicForms.HermitianLocalSplit
-public import GroundTheory.GlobalFields.Adele.WeakApprox
+public import GroundTheory.GlobalFields.Adele.Bundle0001
 public import GroundTheory.GlobalFields.Adele.BaseChange.FiniteMap
 public import GroundTheory.GlobalFields.LocalFieldAtPlace
 

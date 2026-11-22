@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.Divisors.QuasiRegularAlongOfEtale
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsAffineOpenPreimageOfIsPullback
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0765
 
 @[expose] public section
 

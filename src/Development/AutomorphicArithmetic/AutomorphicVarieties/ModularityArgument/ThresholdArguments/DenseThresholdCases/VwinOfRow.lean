@@ -1,7 +1,7 @@
 module
 
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.ThresholdArguments.DenseThresholdCases.TopMainZj
-public import Development.AutomorphicArithmetic.Foundations.BaseChangeIdentities.DefiniteNHolds
+public import Development.AutomorphicArithmetic.Foundations.BaseChangeIdentities.Bundle0001
 
 @[expose] public section
 

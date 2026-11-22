@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import GroundTheory.HeightsAndTheta.Heights.FieldsOfNumbers.PDegZeroLocQuot
-public import GroundTheory.HeightsAndTheta.Heights.FieldsOfNumbers.StatementsDegZeroLocResidue
+public import GroundTheory.HeightsAndTheta.Heights.FieldsOfNumbers.Bundle0016
+public import GroundTheory.HeightsAndTheta.Heights.FieldsOfNumbers.Bundle0018
 
 @[expose] public section
 

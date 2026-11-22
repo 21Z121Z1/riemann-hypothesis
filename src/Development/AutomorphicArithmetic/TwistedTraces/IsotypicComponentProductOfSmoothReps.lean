@@ -1,9 +1,8 @@
 module
 
-public import Development.AutomorphicArithmetic.Foundations.Convolution.PowerSumTraces.LocUApply
-public import Development.AutomorphicArithmetic.TwistedTraces.FixedProjectionInvariantAndCommutingReps
-public import Development.AutomorphicArithmetic.TwistedTraces.InfFixedLeSpanFixOfDenseSpanAll
-public import Development.AutomorphicArithmetic.TwistedTraces.ExistsAlgHomEndFixedVectorsToFixedSubspace
+public import Development.AutomorphicArithmetic.Foundations.Convolution.PowerSumTraces.Bundle0003
+public import Development.AutomorphicArithmetic.TwistedTraces.Bundle0008
+public import Development.AutomorphicArithmetic.TwistedTraces.Bundle0010
 
 @[expose] public section
 

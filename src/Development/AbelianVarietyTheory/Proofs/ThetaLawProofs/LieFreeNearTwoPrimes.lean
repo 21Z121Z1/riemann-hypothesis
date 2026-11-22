@@ -5,9 +5,9 @@ public import Development.AbelianVarietyTheory.Definitions.KeyFormula.GeomIntSel
 public import Development.AbelianVarietyTheory.Statements.FundamentalDomains.AtOfNumberField
 public import Development.AbelianVarietyTheory.Statements.ThetaLevelCharacters.MemThetaLevelCharDimZero
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.ValCalc
-public import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.IsLieBasisIffIsUnitDet
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsIsLieBasisBaseChange
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.UnivChartOfStandardSmooth
+public import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.Bundle0014
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0041
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0042
 
 @[expose] public section
 

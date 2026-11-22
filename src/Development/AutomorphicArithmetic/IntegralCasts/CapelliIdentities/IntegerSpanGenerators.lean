@@ -8,8 +8,8 @@ public import Formalism.SharpRestriction.LevelLetterCocycles.BaseChangePreserves
 public import Formalism.SharpRestriction.LevelLetterCocycles.ArcLiftingSetup
 public import Formalism.SharpRestriction.LevelLetterCocycles.LiftingTheory
 public import Formalism.SharpRestriction.LevelLetterCocycles.DeltaInvariantLattices
-public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.FiltrationExponentBound
-public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.DivisibilityFiltration
+public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0022
+public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0014
 
 @[expose] public section
 

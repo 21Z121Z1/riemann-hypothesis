@@ -3,9 +3,8 @@ module
 public import Mathlib
 public import GroundTheory.GlobalFields.ExistenceTheorem.PowerIndex
 public import GroundTheory.GlobalFields.ExistenceTheorem.LocalPowers
-public import GroundTheory.GlobalFields.IdeleGroups.IndexFormula
+public import GroundTheory.GlobalFields.IdeleGroups.Bundle0002
 public import GroundTheory.GlobalFields.IdeleGroups.IndexProductFormula
-public import GroundTheory.GlobalFields.IdeleGroups.LocalConditionIndex
 
 @[expose] public section
 

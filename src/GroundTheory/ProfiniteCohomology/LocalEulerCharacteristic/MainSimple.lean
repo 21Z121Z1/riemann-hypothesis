@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import GroundTheory.ProfiniteCohomology.LocalEulerCharacteristic.MainGalois
-public import GroundTheory.ProfiniteCohomology.LocalEulerCharacteristic.MainCount
+public import GroundTheory.ProfiniteCohomology.LocalEulerCharacteristic.Bundle0003
 public import GroundTheory.ProfiniteCohomology.LocalEulerCharacteristic.MainCoind
 public import GroundTheory.ProfiniteCohomology.LocalEulerCharacteristic.Coprime
 public import GroundTheory.ProfiniteCohomology.LocalEulerCharacteristic.Vanishing

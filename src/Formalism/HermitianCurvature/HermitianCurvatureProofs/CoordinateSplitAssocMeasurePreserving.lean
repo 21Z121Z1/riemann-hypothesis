@@ -1,7 +1,7 @@
 module
 
 public import Formalism.HermitianCurvature.HermitianCurvatureProofs.LevelIntegrandAestronglyMeasurable
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.LiftMemMatrixAlgebra
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0031
 
 @[expose] public section
 

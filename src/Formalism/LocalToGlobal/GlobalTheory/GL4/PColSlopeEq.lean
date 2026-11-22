@@ -9,7 +9,7 @@ public import Formalism.GradedWeylDivisibility.StatementE
 public import Formalism.SuccessiveMinima.StatementMink
 public import Formalism.SharpRestriction.GlobalSchurBounds.IntegrableOfContinuousCircleMeasure
 public import Formalism.LocalToGlobal.Columns.CoefficientsModP.WeTransposeWordTransposeWord
-public import Formalism.SharpRestriction.GlobalSchurBounds.GlobalRankLatticeProofs.UnitTraceSumBounds.UpperSlopeOfMaximalConstant
+public import Formalism.SharpRestriction.GlobalSchurBounds.GlobalRankLatticeProofs.UnitTraceSumBounds.Bundle0004
 
 @[expose] public section
 

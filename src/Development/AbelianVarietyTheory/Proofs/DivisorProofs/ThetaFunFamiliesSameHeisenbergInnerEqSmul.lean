@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ActOOneOne
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1367
 
 @[expose] public section
 

@@ -3,7 +3,7 @@ module
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.IsSubquotientDetRepParInd
 public import Development.AbelianVarietyTheory.Definitions.Divisors.T2SpaceGeneralLinearGroup
-public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.TwistedKernelFixed
+public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0063
 
 @[expose] public section
 

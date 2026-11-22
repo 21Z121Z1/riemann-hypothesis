@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CmpL
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2413
 
 @[expose] public section
 

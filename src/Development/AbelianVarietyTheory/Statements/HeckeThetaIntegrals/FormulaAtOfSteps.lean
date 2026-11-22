@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Statements.HeckeThetaIntegrals.StepUnfold
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ContinuousReGLSymm
+public import Development.AbelianVarietyTheory.Statements.HeckeThetaIntegrals.Bundle0002
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1516
 
 @[expose] public section
 

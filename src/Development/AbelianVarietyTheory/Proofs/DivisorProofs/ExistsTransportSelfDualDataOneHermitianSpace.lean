@@ -2,11 +2,11 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.FirstIndexEqOfUnfolded
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsSelfDualTr
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CovolumeEqOfRealUnitaryConj
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1804
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1289
 public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.FiniteResidueFieldAdicCompletionIntegers
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.LandherrStOfHasseNormSt
-public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.HasseNormTheoremQuadraticExtension
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0029
+public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.Bundle0053
 
 @[expose] public section
 

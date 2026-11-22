@@ -1,10 +1,10 @@
 module
 
 public import Formalism.SharpRestriction.LevelLetterCocycles.ExistsInertiaCharpolyFactorOfTameType
-public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.RankOneUnitary
-public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.HeckeCharEqOfLAdicRealisation
-public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.DecompositionInvariantsCondition
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.AwayRepIsoLoc
+public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.Bundle0007
+public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.Bundle0009
+public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0018
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0187
 public import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.StringRepresentations.AdmissibleTemperedUnramified
 
 @[expose] public section

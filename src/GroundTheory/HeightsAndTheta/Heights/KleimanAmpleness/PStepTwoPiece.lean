@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.StepTwoPieceSt
-public import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.TwistAlg
+public import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.Bundle0024
+public import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.Bundle0009
 
 @[expose] public section
 

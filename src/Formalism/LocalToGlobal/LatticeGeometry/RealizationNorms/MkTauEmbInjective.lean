@@ -2,8 +2,8 @@ module
 
 public import Formalism.LocalToGlobal.LatticeGeometry.RealizationNorms.SumUliftFinsetFinTwoExpand
 public import Formalism.SharpRestriction.Divisibility.WeightFamilies
-public import Formalism.LocalToGlobal.LatticeGeometry.CmTypeMeetsConjugatePair
-public import Formalism.FrobeniusOrbits.FrobeniusOrbitsProofs.CardTrivialFirstComponent
+public import Formalism.LocalToGlobal.LatticeGeometry.Bundle0001
+public import Formalism.FrobeniusOrbits.FrobeniusOrbitsProofs.Bundle0002
 
 @[expose] public section
 

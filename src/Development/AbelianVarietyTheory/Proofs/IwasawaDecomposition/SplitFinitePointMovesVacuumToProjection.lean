@@ -1,22 +1,22 @@
 module
 
 public import Mathlib
-public import Formalism.LocalToGlobal.IndefiniteReal.FWTie
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.FibExtMarked
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsConjugateModelSameThetaFunctionsStatement
+public import Formalism.LocalToGlobal.IndefiniteReal.Bundle0025
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0200
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsConjugateModelSameThetaFunctions
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WeilDatumSplitPlaceReadsThetaClassically
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WeilRepresentationSplitSupportProjectsVacuum
-public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.MapFinNeg
+public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.Bundle0070
 public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.ThetaKernelOrthonormalFrameInDomainPeriodLinear
 public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.CompletedTensorLatticeStrongApproxOpenCompact
 public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.SymplecticCharacterRealFinitePointsMatch
 public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.AdelicZakThetaExistsUnique
-public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.ThetaKernelTestFunctionMapLinearInjectiveEquivar
+public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.Bundle0055
 public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.SelfDualLatticesAtLevel
 public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.IsLatticeVacuumIffSignedRationalFixed
-public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.LatticeVacuaTensorCorrespondLine
-public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.LatOEqHatA
-public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.CompletedTensorLatticeLatticeVacuumTransport
+public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.Bundle0056
+public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.Bundle0046
+public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.Bundle0052
 
 @[expose] public section
 
@@ -352,7 +352,7 @@ theorem zak_om_split : ∀ (D : D7) (S T : HSp D) (r g : ℕ) (hr : T.rank = r) 
     Λ hΛ hm v hv t f hf
   subst hr
   obtain ⟨X', m, hq', bas', idx', hs', π, -, hEF, hh, hfr⟩ :=
-    GlobalTheory.T.exists_conjugateModel_same_thetaFunctions D S T _ g rfl ψ θ X eT bas idx hS _ (Nat.add_sub_cancel' X.p0_le)
+    _root_.GlobalTheory.OneMapRef.Flip.exists_flip_model D S T _ g rfl ψ θ X eT bas idx hS _ (Nat.add_sub_cancel' X.p0_le)
   obtain ⟨hB, hz⟩ := hfr Z
   obtain ⟨-, hz, -⟩ := hz hZ
   replace hB := hB.1 hZ

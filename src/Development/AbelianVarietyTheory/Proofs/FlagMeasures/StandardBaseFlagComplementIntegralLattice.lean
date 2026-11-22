@@ -1,10 +1,10 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.RowMinor
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.IsLocalizedModuleSubtype
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.IsLatticeLatIn
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsBoundUnitary
+public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.Bundle0012
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0096
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0218
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0827
 public import Formalism.SharpRestriction.CuspSpanNormBounds.AbsoluteAmplitudeSecondOfSource
 public import Formalism.LocalRingCardinality.RankBoundMonotoneInDimension
 public import Formalism.FrobeniusOrbits.HostCorollaries

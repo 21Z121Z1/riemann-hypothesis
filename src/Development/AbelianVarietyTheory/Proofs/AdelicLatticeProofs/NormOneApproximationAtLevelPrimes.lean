@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.AdelicHermitianForms.IsHermForm
-public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.ValuationEqOneOfNormOneOfNotMoved
-public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.ExistsDenominatorPrimesPrescribed
+public import Development.AbelianVarietyTheory.Definitions.AdelicHermitianForms.Bundle0002
+public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.Bundle0030
+public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.Bundle0020
 
 @[expose] public section
 

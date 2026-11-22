@@ -1,7 +1,6 @@
 module
 
-public import ReciprocityTheory.GroupCohomology.CupConnRightStatement
-public import ReciprocityTheory.GroupCohomology.HomogExistsStatement
+public import ReciprocityTheory.GroupCohomology.Bundle0002
 
 @[expose] public section
 

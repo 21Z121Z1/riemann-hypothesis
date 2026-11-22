@@ -1,11 +1,11 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.BlockTheory.GlobalSignature.StabilizerCompletions
-public import Development.AbelianVarietyTheory.BlockTheory.GlobalSignature.SelfDualLatticeActions
-public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.DisjointSpanPerpLat
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.MemStabLocStdLatticeIffHtFinEqOne
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.EventuallyAlgebraMapMemIntegers
+public import Development.AbelianVarietyTheory.BlockTheory.GlobalSignature.Bundle0011
+public import Development.AbelianVarietyTheory.BlockTheory.GlobalSignature.Bundle0003
+public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0018
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0294
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0292
 public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsDualFamilyOfIsLattice
 
 @[expose] public section

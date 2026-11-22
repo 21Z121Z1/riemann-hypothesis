@@ -3,9 +3,9 @@ module
 public import Mathlib
 public import Formalism.SharpRestriction.RamificationFrobenius.TotientGaloisClasses.HostFacts
 public import Development.AutomorphicArithmetic.PrimeDiscriminants.SlopeTestRemainingChoices
-public import Development.AutomorphicArithmetic.FrobeniusLocalisation.VdLe
-public import Development.AutomorphicArithmetic.FrobeniusLocalisation.inertQ
-public import Development.AutomorphicArithmetic.FrobeniusLocalisation.InertD
+public import Development.AutomorphicArithmetic.FrobeniusLocalisation.Bundle0006
+public import Development.AutomorphicArithmetic.FrobeniusLocalisation.Bundle0008
+public import Development.AutomorphicArithmetic.FrobeniusLocalisation.Bundle0009
 
 @[expose] public section
 

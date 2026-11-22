@@ -2,10 +2,10 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.Divisors.ToSpanSingletonConstGenInjective
-public import Development.AbelianVarietyTheory.Definitions.Divisors.XiMulNu
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0001
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConvEqOneOfForallPairing
-public import ReciprocityTheory.DualLattices.AinfFacts
-public import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.ValuationCoeEqNorm
+public import ReciprocityTheory.DualLattices.Bundle0023
+public import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.Bundle0028
 
 @[expose] public section
 

@@ -2,10 +2,8 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.TrueColumnChoicesHeckeCharReferenceEqOne
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.UnderEqIffConjPl
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.LocalIdeleSndSelf
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.HostCmEmbeddingProperties
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.OrdFNonnegOfIsInteger
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0095
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0094
 public import Formalism.LocalRingCardinality.RankBoundMonotoneInDimension
 
 @[expose] public section

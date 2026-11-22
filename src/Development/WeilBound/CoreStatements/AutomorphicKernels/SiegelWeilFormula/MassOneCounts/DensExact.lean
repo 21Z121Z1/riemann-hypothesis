@@ -3,8 +3,10 @@ module
 public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.LocalQuadraticDensityNearOne
 public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.LocalQuadraticDensityBoundNonzero
 public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.RankOneLocalDensityAlmostAll
-public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.PrimitiveVectorQuadraticLevelMeasureStatement
-public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.StandardLocalHaarPropertiesStatement
+public import Mathlib
+public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.PrimitiveVectorQuadraticLevelMeasure
+public import CompanionTheory.SpectralGeometry.CountingDefinitions.AdelicEulerProducts.IsEulerProd
+public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.Bundle0050
 
 @[expose] public section
 
@@ -31,10 +33,10 @@ theorem dens_exact (lam : Measure (Fv F v)) (hlam : IsStdV v lam) (h2 : Valued.v
       ((Nat.card {y : ι → 𝓴 // (2 : 𝓴)⁻¹ * (y ⬝ᵥ ((BO.map res) *ᵥ y)) = res s} : ℝ≥0∞) *
         (Ideal.absNorm v.asIdeal : ℝ≥0∞)⁻¹ ^ (Fintype.card ι - 1)) * lam A := by
   classical
-  have hLoc := GlobalTheory.T.completion_is_local_ring F v
+  have hLoc := _root_.GlobalTheory.CompanionTheory.SW.LocFv.isLocR_Fv F v
   haveI : SecondCountableTopology (Fv F v) := hLoc.2.2.1
   haveI : BorelSpace (Fv F v) := ⟨rfl⟩
-  obtain ⟨-, -, -, hcard⟩ := GlobalTheory.T.standard_local_haar_properties F v lam hlam
+  obtain ⟨-, -, -, hcard⟩ := _root_.GlobalTheory.CompanionTheory.SW.Vol.volumes_in_completion F v lam hlam
   have hq0 : Ideal.absNorm v.asIdeal ≠ 0 := by
     rw [Ne, Ideal.absNorm_eq_zero_iff]
     exact v.ne_bot
@@ -183,7 +185,7 @@ theorem dens_exact (lam : Measure (Fv F v)) (hlam : IsStdV v lam) (h2 : Valued.v
       change res (c * (z ⬝ᵥ (BO *ᵥ z))) = _
       have hz : (⇑res ∘ z) = y := funext fun i => hres_lift (y i)
       rw [map_mul, hr, hmap_quad, hz]
-    have key := GlobalTheory.T.primitive_vector_quadratic_level_measure F v lam hlam h2 ι (BO.map phi) hBs hBint hBdet (lf y) hint hprim A hA
+    have key := _root_.GlobalTheory.CompanionTheory.SW.Hensel.measure_residue_class F v lam hlam h2 ι (BO.map phi) hBs hBint hBdet (lf y) hint hprim A hA
     have hkey : (Measure.pi fun _ : ι => lam) (P y) = _ := key
     rw [hkey]
     have hcl : Valued.v ((s : Fv F v) - Qf (lf y)) < 1 ↔ qk y = sb := by

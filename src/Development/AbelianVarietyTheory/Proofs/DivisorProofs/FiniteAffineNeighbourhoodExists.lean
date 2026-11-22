@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BcDensEqOfGram
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1286
 public import Development.AbelianVarietyTheory.Counterexamples.ModuliSurvey.IsQProjOverOfIsProjOver
 
 @[expose] public section

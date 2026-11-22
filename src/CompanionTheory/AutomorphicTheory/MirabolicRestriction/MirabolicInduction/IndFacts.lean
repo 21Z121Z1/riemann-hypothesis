@@ -3,8 +3,7 @@ module
 public import Mathlib
 public import Development.AbelianVarietyTheory.PublishedTheorems.PublishedFoundations.BlockTriangularOfSubOne
 public import Formalism.MirabolicMackeyTheory.MirabolicIsMackey
-public import CompanionTheory.AutomorphicTheory.MirabolicRestriction.MirabolicInduction.IndIrr
-public import CompanionTheory.AutomorphicTheory.MirabolicRestriction.MirabolicInduction.IndDim
+public import CompanionTheory.AutomorphicTheory.MirabolicRestriction.MirabolicInduction.Bundle0001
 
 @[expose] public section
 

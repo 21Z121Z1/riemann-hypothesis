@@ -1,12 +1,12 @@
 module
 
 public import Mathlib
-public import ReciprocityTheory.NeutralLocalFields.Reciprocity
+public import ReciprocityTheory.NeutralLocalFields.Bundle0001
 public import Development.AbelianVarietyTheory.PublishedTheorems.GlobalTheta.ExistsMemIdealInvariants
 public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.ExistsUniqueIdeleOfLinearEquivQuotientLocal
 public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.GalStarComplexMultiplicationPoints
-public import Development.AbelianVarietyTheory.Proofs.HomogeneousIdeals.ExistsLineOfAddAddEqZero
-public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.ExistsConjLattice
+public import Development.AbelianVarietyTheory.Proofs.HomogeneousIdeals.Bundle0002
+public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0076
 public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ConjugateCurveDatumLatticeIsCurveLattice
 
 @[expose] public section

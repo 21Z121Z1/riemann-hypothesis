@@ -1,10 +1,10 @@
 module
 
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.cut_GCore_GenTransferKapCut
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0067
 public import Formalism.HermitianCurvature.HermitianCurvatureProofs.DiagonalTransferAction
 public import Formalism.HermitianCurvature.HermitianCurvatureProofs.SettingConstruction
 public import Formalism.HermitianCurvature.HermitianCurvatureProofs.NFRadRedLocSec
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.NFRadRedA
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0047
 
 @[expose] public section
 

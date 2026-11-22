@@ -3,7 +3,7 @@ module
 public import Mathlib
 public import Formalism.DoubleCosetMeasures.LatticeCoset
 public import Development.AbelianVarietyTheory.BlockTheory.TorsionBlocks.LocalIntegralGL
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.FromBlocksMulInv
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0008
 public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.HasCompactSupportPhiU
 
 @[expose] public section

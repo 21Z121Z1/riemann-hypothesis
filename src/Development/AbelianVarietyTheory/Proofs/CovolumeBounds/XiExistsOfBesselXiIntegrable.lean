@@ -6,11 +6,11 @@ public import Formalism.HermitianCurvature.WeylElementCommutesLevelOne
 public import Formalism.FormalDegreeBessel.FormalDegreeRatio.GBasic
 public import Formalism.HermitianCurvature.HermitianCurvatureProofs.CompactGroupHaarExists
 public import Development.AbelianVarietyTheory.Proofs.CovolumeBounds.ExistsUnitaryOfGramEq
-public import Development.AbelianVarietyTheory.Proofs.CovolumeBounds.ExistsQr
+public import Development.AbelianVarietyTheory.Proofs.CovolumeBounds.Bundle0003
 public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LevelLiftBasics.LevelGroupUnitaryHermitian
 public import Formalism.HermitianCurvature.HermitianCurvatureProofs.CmHalfIntegralGeneratorMemAlgebraicClosure
 public import Formalism.FormalDegreeBessel.StatementRP
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.SettingExistence
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0047
 
 @[expose] public section
 

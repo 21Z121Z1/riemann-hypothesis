@@ -3,15 +3,15 @@ module
 public import Mathlib
 public import Formalism.SharpRestriction.CuspSpanNormBounds.FractionFieldToGenericStalkAlgebraMapEq
 public import Formalism.SharpRestriction.CuspSpanNormBounds.PsiEDef
-public import Development.AbelianVarietyTheory.Definitions.Foundations.IsHermND
+public import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0007
 public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.ComplementReferenceCompactSubgroup
-public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.GFrames
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.HermitianDoubleCosetTermBasicFacts
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.RationalExtend
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.NumberFieldLatticeDeterminedByLocalLatticesStatement
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsUniqueGlobalLatticeOfLocalLatticesStatement
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.StrongApproxStabStatement
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.CoordinateLatticeUniqueTermAlmostAllPlacesStatement
+public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.Bundle0003
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0043
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0047
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.NumberFieldLatticeDeterminedByLocalLattices
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0068
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0082
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0091
 
 @[expose] public section
 
@@ -160,8 +160,8 @@ theorem lrel_of_local (G : GFrames A r k) {d : G.Dat} {Γ Γ' : G.Lt} (hT : G.Is
       (A.lat p₀ Γ' : Set (Fin (k + 2 * r + 1) → (A.loc p₀).Ep)) = ⊤ := by
     rw [hu, Submodule.coe_pointwise_smul, Submodule.span_smul, hspan, smul_top]
   have hfull' := full_of_local_span A Γ' hL' p₀ hspan'
-  have recΓ := GlobalTheory.T.numberField_lattice_determined_by_local_lattices A _ Γ hfull
-  have recΓ' := GlobalTheory.T.numberField_lattice_determined_by_local_lattices A _ Γ' hfull'
+  have recΓ := _root_.GlobalTheory.HL.PlacesRec.lattice_local A _ Γ hfull
+  have recΓ' := _root_.GlobalTheory.HL.PlacesRec.lattice_local A _ Γ' hfull'
   let n : ∀ p, (G.S p).GLV := fun p => if A.lat p Γ' = A.lat p Γ then 1 else (H p).choose
   have hn : ∀ p, n p ∈ (G.S p).St ∧ A.lat p Γ' = n p • A.lat p Γ := by
     intro p
@@ -181,8 +181,8 @@ theorem lrel_of_local (G : GFrames A r k) {d : G.Dat} {Γ Γ' : G.Lt} (hT : G.Is
     Set.finite_empty.subset fun p hp => hp ⟨1, by simp⟩
   have happrox := by
     first
-    | exact GlobalTheory.T.exists_mem_St_approximating_local_elements A r k G Γ hfull (fun _ => 1) hc n (fun p => (hn p).1) hfin
-    | exact GlobalTheory.T.exists_mem_St_approximating_local_elements A r k G Γ hfull.toIsLattice (fun _ => 1) hc n (fun p => (hn p).1) hfin
+    | exact _root_.GlobalTheory.HL.StrongSt.strong_approx_stab A r k G Γ hfull (fun _ => 1) hc n (fun p => (hn p).1) hfin
+    | exact _root_.GlobalTheory.HL.StrongSt.strong_approx_stab A r k G Γ hfull.toIsLattice (fun _ => 1) hc n (fun p => (hn p).1) hfin
   obtain ⟨g, hg, hgp⟩ := happrox
   have hloc : ∀ p, A.lat p Γ' = A.lat p (Γ.map ((g : G.V →ₗ[E] G.V).restrictScalars (𝓞 E))) := by
     intro p
@@ -237,7 +237,7 @@ theorem glue_terms (G : GFrames A r k) (hk : 4 * r + 7 ≤ k) {d : G.Dat} {Λ₀
     (h₀ : G.IsTerm d Λ₀) (Λ : ∀ p, Submodule (A.L p).O (G.S p).V)
     (hΛ : ∀ p, (G.S p).IsTerm (d p) (Λ p)) :
     ∃ Γ, G.IsTerm d Γ ∧ ∀ p, ∃ h ∈ (G.S p).St, A.lat p Γ = h • Λ p := by
-  have hstd := GlobalTheory.T.coordinateLattice_unique_term_almost_all_places A r k G hk
+  have hstd := _root_.GlobalTheory.HL.StdPlace.coordinate_lattice_standard A r k G hk
   obtain ⟨p₀⟩ : Nonempty (HeightOneSpectrum (𝓞 F)) := by
     obtain ⟨P, hP⟩ := Ideal.exists_maximal (𝓞 F)
     exact ⟨⟨P, hP.isPrime, Ring.ne_bot_of_isMaximal_of_not_isField hP (RingOfIntegers.not_isField F)⟩⟩
@@ -245,7 +245,7 @@ theorem glue_terms (G : GFrames A r k) (hk : 4 * r + 7 ≤ k) {d : G.Dat} {Λ₀
   haveI := (A.loc p₀).char0
   have hspan := (TermBasic.term_basic _ _ _ _ _ _ (h₀.2 p₀)).1.1.2
   have hfull := full_of_local_span A Λ₀ h₀.1 p₀ hspan
-  have rec₀ := GlobalTheory.T.numberField_lattice_determined_by_local_lattices A _ Λ₀ hfull
+  have rec₀ := _root_.GlobalTheory.HL.PlacesRec.lattice_local A _ Λ₀ hfull
   obtain ⟨B, hBfin, hB⟩ : ∃ B : Set (HeightOneSpectrum (𝓞 F)), B.Finite ∧ ∀ p ∉ B,
       A.lat p Λ₀ = Submodule.span (A.L p).O (Set.range fun i => (Pi.single i 1 : (G.S p).V)) ∧
       ∃ h ∈ (G.S p).St, Λ p = h • Submodule.span (A.L p).O (Set.range fun i => (Pi.single i 1 : (G.S p).V)) := by
@@ -278,7 +278,7 @@ theorem glue_terms (G : GFrames A r k) (hk : 4 * r + 7 ≤ k) {d : G.Dat} {Λ₀
     by_contra hc
     apply hp
     simp only [Λ', if_neg hc]
-  obtain ⟨Γ, ⟨hL, hlatΓ⟩, -⟩ := GlobalTheory.T.exists_unique_global_lattice_of_local_lattices A _ Λ' hlat hfin
+  obtain ⟨Γ, ⟨hL, hlatΓ⟩, -⟩ := _root_.GlobalTheory.HL.Glue.glue A _ Λ' hlat hfin
   refine ⟨Γ, ⟨hL, fun p => (hlatΓ p).symm ▸ hterm p⟩, fun p => ?_⟩
   by_cases hp : p ∈ B
   · refine ⟨1, (G.S p).St.one_mem, ?_⟩

@@ -1,9 +1,9 @@
 module
 
 public import Development.WeilBound.CoreStatements.LocallyConstantCoinvariants.EqZeroOfLocW
-public import Development.AutomorphicSpectrum.Proofs.MembershipProofs.ThetaSumTensorProduct
-public import Development.AutomorphicSpectrum.Proofs.MembershipProofs.DblCoordUnique
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ProductFunctionOnSumCoordsMemAdelicSchwartzSpace
+public import Development.AutomorphicSpectrum.Proofs.MembershipProofs.Bundle0009
+public import Development.AutomorphicSpectrum.Proofs.MembershipProofs.Bundle0007
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0930
 
 @[expose] public section
 

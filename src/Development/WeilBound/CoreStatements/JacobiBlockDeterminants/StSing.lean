@@ -1,10 +1,8 @@
 module
 
 public import Development.WeilBound.CoreStatements.JacobiBlockDeterminants.DetInvNe
-public import Development.WeilBound.CoreStatements.JacobiBlockDeterminants.JacobiBlocks
-public import Development.WeilBound.CoreStatements.JacobiBlockDeterminants.ValDetFac
-public import Development.WeilBound.CoreStatements.MultihomogeneousSquares.IsValueAtValAtOfRegAt
-public import Development.WeilBound.CoreStatements.MultihomogeneousSquares.BlockDiagMinorNeZero
+public import Development.WeilBound.CoreStatements.JacobiBlockDeterminants.Bundle0001
+public import Development.WeilBound.CoreStatements.MultihomogeneousSquares.Bundle0002
 public import Development.WeilBound.CoreStatements.MultihomogeneousSquares.SameOrbitTrans
 
 @[expose] public section

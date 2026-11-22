@@ -1,10 +1,10 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Divisors.PointHeight
-public import Development.AbelianVarietyTheory.Definitions.Divisors.BlockSphereMeanLinForm
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0002
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0013
 public import Development.AbelianVarietyTheory.Definitions.Divisors.MemSubPtsCutBaseChangeIff
-public import Development.AbelianVarietyTheory.Definitions.Divisors.SmoothOfRelativeDimensionPspace
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0029
 public import Development.AbelianVarietyTheory.Definitions.Divisors.IrreducibleOfIrreducibleMap
 
 @[expose] public section

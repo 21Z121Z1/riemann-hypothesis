@@ -1,7 +1,7 @@
 module
 
-public import Formalism.ThetaLogCoordinates.FockResolutionOnto.StatementC
-public import Formalism.ThetaLogCoordinates.FockResolutionOnto.FockMonomialProofs.PartnerDeterminantHolds
+public import Formalism.ThetaLogCoordinates.FockResolutionOnto.Bundle0001
+public import Formalism.ThetaLogCoordinates.FockResolutionOnto.FockMonomialProofs.Bundle0002
 public import Formalism.ThetaLogCoordinates.FockResolutionOnto.FockMonomialProofs.FiltrationBotHolds
 public import Formalism.ThetaLogCoordinates.FockResolutionOnto.FockMonomialProofs.RestrictionMinMaxIntHolds
 

@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import GroundTheory.GlobalFields.HerbrandQuotients.SUnitsExact
+public import GroundTheory.GlobalFields.HerbrandQuotients.Bundle0002
 public import GroundTheory.GlobalFields.HerbrandQuotients.SUnitsPerm
 public import GroundTheory.GlobalFields.HerbrandQuotients.SUnitsRep
 public import GroundTheory.GlobalFields.HerbrandQuotients.LatticeBridge

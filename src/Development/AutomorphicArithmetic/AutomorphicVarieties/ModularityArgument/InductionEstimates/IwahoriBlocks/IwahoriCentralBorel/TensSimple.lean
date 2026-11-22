@@ -2,7 +2,7 @@ module
 
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.InductionEstimates.IwahoriBlocks.SimpleIn
 public import Development.AutomorphicArithmetic.Foundations.Convolution.GeneralizedMeasures.HeckeFinAlt
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsAsAlgebraHomEq
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0908
 
 @[expose] public section
 

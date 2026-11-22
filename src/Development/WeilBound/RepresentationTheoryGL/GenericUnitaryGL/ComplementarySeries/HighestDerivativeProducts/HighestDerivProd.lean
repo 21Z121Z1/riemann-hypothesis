@@ -6,20 +6,20 @@ public import Development.WeilBound.CoreStatements.TemperedRepresentationTheory.
 public import Development.WeilBound.RepresentationTheoryGL.GenericUnitaryGL.LeibnizOrders.PhiPG0
 public import Development.WeilBound.CoreStatements.TemperedRepresentationTheory.MirabolicDerivatives.LeibnizDerivatives.GenericProdIff
 public import Development.WeilBound.CoreStatements.TemperedRepresentationTheory.MirabolicDerivatives.SegmentCuspLines.ProdIrrFiniteLength
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ResidueSequenceHoldsStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.PsiGpCommutationHoldsStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.PhiGpCommutationHoldsStatement
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ResidueSequenceHolds
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.PsiGpCommutationHolds
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.PhiGpCommutationHolds
 public import Development.WeilBound.RepresentationTheoryGL.GenericUnitaryGL.ComplementarySeries.HighestDerivativeProducts.IsSmoothCharDpowM
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.PhiPgCommutationHolds
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.PhiPgRankZeroHoldsStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LeibnizOrderOfExactSequencesStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.HighestDerivativeOfProduct
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0646
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0479
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LeibnizOrderOfExactSequences
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0392
 public import Development.WeilBound.CoreStatements.TemperedRepresentationTheory.BernsteinZelevinskyGL.TopAdm
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsSegmentRepresentation
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0656
 public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LeviIrreducibleTensorDecomposition
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.EquivOfMultiplicityOneUniqueFactor
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.DerCharEqOneOfMemUnipRad
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.WhittakerHeredityStatement
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0336
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0371
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0593
 
 @[expose] public section
 
@@ -27,7 +27,7 @@ namespace GlobalTheory.RgGu.Leib.Hand
 
 theorem leibnizOrd (k : Type) [Field k] [ValuativeRel k] [TopologicalSpace k] [IsNonarchimedeanLocalField k] :
     LeibnizOrd k :=
-  GlobalTheory.T.leibniz_order_of_exact_sequences k (GlobalTheory.T.residue_sequence_holds k) (GlobalTheory.T.psi_gp_commutation_holds k) (GlobalTheory.T.phi_gp_commutation_holds k) (GlobalTheory.CompanionTheory.BZPsiPG.Hand.psiPG k) (GlobalTheory.CompanionTheory.BZPhiPG.phiPG k)
+  _root_.GlobalTheory.CompanionTheory.LeibOrd.Main.leibnizOrd_of_parts k (_root_.GlobalTheory.CompanionTheory.BZRes.resSeq k) (_root_.GlobalTheory.CompanionTheory.RgGu.PsiGP.psiGP k) (_root_.GlobalTheory.CompanionTheory.LeibPhi.phiGP k) (GlobalTheory.CompanionTheory.BZPsiPG.Hand.psiPG k) (GlobalTheory.CompanionTheory.BZPhiPG.phiPG k)
     (GlobalTheory.T.phi_pg_rank_zero_holds k)
 
 end GlobalTheory.RgGu.Leib.Hand

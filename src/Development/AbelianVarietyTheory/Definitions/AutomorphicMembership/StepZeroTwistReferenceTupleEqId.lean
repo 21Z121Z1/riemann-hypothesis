@@ -3,10 +3,10 @@ module
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.EventuallyCongOne
 public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.LatAtLattice
-public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.AbsNormEqOfSplit
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.LevOkTwists
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.BaseFieldsPrimesOk
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsUnitaryDiagonalBasePointLevelPrime
+public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0101
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0273
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0117
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0382
 public import Formalism.SharpRestriction.Divisibility.OrbitPlaces
 public import Formalism.LocalToGlobal.Columns.CoefficientsModP.FkPderivBlockEmbNe
 

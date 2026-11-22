@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Formalism.PeriodIntegrals.Minkowski
+public import Formalism.PeriodIntegrals.Bundle0004
 public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.MinkowskiBound.PowerSumStep
-public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.MinkowskiBound.Assemble
+public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.MinkowskiBound.Bundle0001
 
 @[expose] public section
 

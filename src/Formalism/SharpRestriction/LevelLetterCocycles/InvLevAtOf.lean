@@ -1,7 +1,7 @@
 module
 
-public import Formalism.SharpRestriction.LevelLetterCocycles.KillWinFromCut
-public import Formalism.SharpRestriction.LevelLetterCocycles.GenOfKiller
+public import Formalism.SharpRestriction.LevelLetterCocycles.Bundle0032
+public import Formalism.SharpRestriction.LevelLetterCocycles.Bundle0002
 
 @[expose] public section
 

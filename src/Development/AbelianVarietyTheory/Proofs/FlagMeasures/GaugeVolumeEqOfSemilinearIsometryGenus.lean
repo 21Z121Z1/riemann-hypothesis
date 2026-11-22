@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Statements.CuspFrameWeights.SameKindIsometric
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.MuGPreimageConj
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.IsClosedEmbeddingOfCongruenceSubgroupsConj
+public import Development.AbelianVarietyTheory.Statements.CuspFrameWeights.Bundle0001
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0165
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0269
 public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.AdelicUnitaryHaarBiInvariant
 public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.AutPointRationalEquivariance
 public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsFrameOfHasSignature

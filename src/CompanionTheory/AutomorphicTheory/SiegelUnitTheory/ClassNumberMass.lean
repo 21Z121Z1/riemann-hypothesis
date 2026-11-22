@@ -2,9 +2,9 @@ module
 
 public import Mathlib
 public import Formalism.LocalToGlobal.GlobalTheory.GL5.PacketStatementOfIndependence
-public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.AdelicQuotientVolumeEqOfSignatureRankIndep
-public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.VolumeRatio
-public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.UnitaryVolumeEqRankMassAllSignatures
+public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0134
+public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0152
+public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0154
 
 @[expose] public section
 

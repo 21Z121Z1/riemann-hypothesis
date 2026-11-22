@@ -1,16 +1,21 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.HasBareNormDisc
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.Bundle0012
 public import Development.AutomorphicSpectrum.PublishedTheorems.Geometry₂.GagaSections
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.BlowupProjections.BlowupProjStatement
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.UniformisationConclusion
 public import Development.AutomorphicSpectrum.Statements.GeometryStatements.FlatDegree
 public import Formalism.LocalToGlobal.ProjectiveLattices.CompHt
-public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.PadicEmbeddingValuationSubringStatement
-public import Development.AutomorphicSpectrum.Proofs.AdelicProofs.PadicEmbeddingDiscreteValuationRingStatement
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.PartIHolds
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ModuliSchemesExist
+public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.Bundle0061
+public import Development.AutomorphicSpectrum.Statements.GeometryStatements.Bundle0004
+public import Development.AutomorphicSpectrum.Statements.GeometryStatements.Bundle0007
+public import Development.AutomorphicSpectrum.Statements.GeometryStatements.FinConstFor
+public import Development.AutomorphicSpectrum.Proofs.AdelicProofs.PadicEmbeddingDiscreteValuationRing
+public import Development.AutomorphicSpectrum.Definitions.AdelicLattices.FactPrimes
+public import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.LatNormGrLatNeZeroOfSpan
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0228
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0222
 
 @[expose] public section
 
@@ -34,8 +39,8 @@ theorem PositivityTheory.Ar2.exists_local_model_dvr : ∀ (E : Type) [Field E] [
   classical
   haveI : FiniteDimensional ℚ c.F := c.fin
   haveI : NumberField c.F := { to_charZero := inferInstance, to_finiteDimensional := c.fin }
-  obtain ⟨W, hWp, hW⟩ := GlobalTheory.T.padic_embedding_valuation_subring c.F p κ
-  obtain ⟨V, hDVR, hVn, -, -⟩ := GlobalTheory.T.padic_embedding_discrete_valuation_ring c.F p κ
+  obtain ⟨W, hWp, hW⟩ := _root_.GlobalTheory.CompanionTheory.Ar.Flat.exists_valuationSubring_of_padicEmbedding c.F p κ
+  obtain ⟨V, hDVR, hVn, -, -⟩ := _root_.GlobalTheory.CompanionTheory.Ar.Fl.ValRing.exists_dvr_of_padic_embedding c.F p κ
   have hVeq : c.V W = V := by
     ext x
     rw [← hVn x, hW x]

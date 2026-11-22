@@ -2,8 +2,8 @@ module
 
 public import Mathlib
 public import GroundTheory.HeightsAndTheta.Heights.HeightsOfSets.DenseChart
-public import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.Objects
-public import GroundTheory.HeightsAndTheta.Heights.KernelsLattice
+public import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.Bundle0001
+public import GroundTheory.HeightsAndTheta.Heights.Bundle0001
 
 @[expose] public section
 

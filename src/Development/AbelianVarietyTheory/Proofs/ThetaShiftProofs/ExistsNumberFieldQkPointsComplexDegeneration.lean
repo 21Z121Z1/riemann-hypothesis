@@ -2,10 +2,10 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.ArchimedeanThetaValues.ModelsAt
-public import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.ExistsIsPullQk
+public import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.Bundle0014
 public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsGtExtOfTorsion
-public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.PsiEvenTauBimultDescendOfInjective
-public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsPullDegCancelTowerOfFields
+public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.Bundle0075
+public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.Bundle0083
 
 @[expose] public section
 

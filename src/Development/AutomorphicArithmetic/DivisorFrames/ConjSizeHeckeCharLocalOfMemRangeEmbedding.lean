@@ -4,7 +4,9 @@ public import Mathlib
 public import Development.AutomorphicArithmetic.LocalEmbeddings.ArchSz
 public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.AlgebraicHeckeCharValuesInNumberField
 public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.UnitaryHeckeCharacterValues
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.HeckeCharLocPowEqOneOnLocalUnitsStatement
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0374
+public import Formalism.LocalToGlobal.UnitaryNorms.IsUnitaryNormOf
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0093
 
 @[expose] public section
 
@@ -103,7 +105,7 @@ private theorem exists_pow_inf {L : Type} [Field L] [NumberField L] (χ : HChar 
       map_zpow₀, hp, hq, ← WithZero.exp_zsmul, ← WithZero.exp_zsmul, ← WithZero.exp_add,
       WithZero.exp_eq_one, smul_eq_mul, smul_eq_mul]
     ring
-  obtain ⟨m, hm, hmx⟩ := GlobalTheory.T.heckeChar_loc_pow_eq_one_on_localUnits L χ w _ hunit
+  obtain ⟨m, hm, hmx⟩ := _root_.GlobalTheory.LocUnitPow.loc_pow_eq_one L χ w _ hunit
   have hinf : (χ.locK w k) ^ N = (χ.inf k ^ N)⁻¹ := by
     rw [mul_pow] at hkN
     exact eq_inv_of_mul_eq_one_right hkN

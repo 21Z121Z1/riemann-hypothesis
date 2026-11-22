@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.UnipMinSubsetMinParOne
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ModulusOfNormEqAbs
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0488
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1310
 
 @[expose] public section
 

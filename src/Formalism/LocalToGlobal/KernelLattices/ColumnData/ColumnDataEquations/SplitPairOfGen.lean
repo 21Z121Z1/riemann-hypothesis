@@ -5,7 +5,7 @@ public import Formalism.LocalToGlobal.KernelLattices.ColumnData.BaseLinkOfNonzer
 public import Formalism.LocalToGlobal.KernelLattices.ColumnData.ProvisionExtensionLink
 public import Formalism.LocalToGlobal.PairingIndexBounds.SplitPairEquations.SplitPairGen
 public import Formalism.LocalRingCardinality.SpanPowerMembership.ExampleLayerExistsGenerators
-public import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.SplitPairGen
+public import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.Bundle0026
 
 @[expose] public section
 

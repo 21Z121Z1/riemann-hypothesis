@@ -2,14 +2,14 @@ module
 
 public import Mathlib
 public import Formalism.SharpRestriction.CuspSpanNormBounds.IsTermOver
-public import Development.AbelianVarietyTheory.Definitions.Foundations.IsHermND
+public import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0007
 public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.ComplementReferenceCompactSubgroup
-public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.GgNone
+public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.Bundle0003
 public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.HermitianDatumOfTermReadOnLattice
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.HermitianMovePreservesFrameLatticeLevels
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.FrameMoveCharacterNeOne
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0081
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0052
 public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.SelfDualLatticeUnipotentTranslateStandard
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.TermsCorrespond
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0082
 
 @[expose] public section
 

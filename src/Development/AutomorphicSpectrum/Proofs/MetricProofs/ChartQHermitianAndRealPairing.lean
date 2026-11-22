@@ -3,13 +3,13 @@ module
 public import Mathlib
 public import Development.AutomorphicSpectrum.Definitions.MetricPeriods.IsEigFrames
 public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.BdryChart
-public import ReciprocityTheory.AnalyticForms.PlurisubharmonicFunctions.IsPshLocallyIntegrableStatement
+public import ReciprocityTheory.AnalyticForms.PlurisubharmonicFunctions.Bundle0001
 public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LogPeriodLimit
-public import Development.AutomorphicSpectrum.Proofs.MetricProofs.ExistsIsChart
-public import Development.AutomorphicSpectrum.Proofs.MetricProofs.IsotropicSublatticeCovolumePositiveStatement
-public import Development.AutomorphicSpectrum.Proofs.MetricProofs.RiemannLatticeEigenProjectionStatement
-public import Development.AutomorphicSpectrum.Proofs.MetricProofs.ExistsIntPreimageOfOrthogonalKernelStatement
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.RiemannFormHermitianLatticeStatement
+public import Development.AutomorphicSpectrum.Proofs.MetricProofs.Bundle0079
+public import Development.WeilBound.CoreStatements.PlurisubharmonicCones.Bundle0004
+public import Development.WeilBound.CoreStatements.PlurisubharmonicCones.Bundle0003
+public import Development.AutomorphicSpectrum.Proofs.MetricProofs.Bundle0095
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.RiemannFormHermitianLattice
 
 @[expose] public section
 
@@ -369,7 +369,7 @@ theorem limit_form : ∀ (n a g : ℕ) (Λ : Type) [AddCommGroup Λ] (L : Flat.L
   · set y : Fin g → ℂ := ((A 0)ᵀ)⁻¹ *ᵥ v with hy
     have hvy : (A 0)ᵀ *ᵥ y = v := by
       rw [hy, Matrix.mulVec_mulVec, Matrix.mul_nonsing_inv _ hdetT, Matrix.one_mulVec]
-    obtain ⟨f1, -, f3⟩ := GlobalTheory.T.riemann_form_hermitian_lattice g (∑ j, B j) (T0 0) _ c h.c_pos hSPSD hτ hlow hGCh hrel
+    obtain ⟨f1, -, f3⟩ := _root_.GlobalTheory.CompanionTheory.RiemannForm.form_bounds g (∑ j, B j) (T0 0) _ c h.c_pos hSPSD hτ hlow hGCh hrel
       hkerG y
     have hval : v ⬝ᵥ chartQ Pr A T0 0 *ᵥ star v =
         y ⬝ᵥ (compInv Pr ((T0 0).map Complex.im)).map (fun x : ℝ => (x : ℂ)) *ᵥ star y := by

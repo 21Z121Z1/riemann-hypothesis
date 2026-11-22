@@ -1,7 +1,7 @@
 module
 
 public import Formalism.LocalToGlobal.CharacterGerms.RowTiePCEqEx
-public import Formalism.LocalToGlobal.CharacterGerms.RowTiePAddCvSelf
+public import Formalism.LocalToGlobal.CharacterGerms.Bundle0027
 public import Formalism.SharpRestriction.GrowthBounds.ExponentialPartialDerivatives.SumAtOf
 
 @[expose] public section

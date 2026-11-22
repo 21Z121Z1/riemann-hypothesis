@@ -1,14 +1,16 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Divisors.HasTypeVec
-public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.LabesseWaldspurger
-public import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.ConstantTermVanishing
-public import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.CuspidalNoRadicalFixed
-public import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.StandardMaximalParabolic
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0040
+public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.Bundle0012
+public import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.Bundle0020
+public import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.Bundle0022
+public import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.Bundle0016
 public import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.CentralizerTensorForms
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.WeightedOrbitalIntegralGLZeroOfRadicalIntegralsStatement
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.TypeFunctionConstantTermVanishSplitPlaceStatement
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.WeightedOrbitalIntegralGLZeroOfRadicalIntegrals
+public import Development.AbelianVarietyTheory.Definitions.Foundations.MeasurePreservingRmulQuotMeas
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.TypeFunctionConstantTermVanishSplitPlace
+public import Development.AbelianVarietyTheory.Definitions.Foundations.MemL2OfAutomorphicEmbedding
 public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsCyclicOfFiniteQuotient
 public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.FiniteDimensionalMram
 
@@ -221,7 +223,7 @@ theorem weighted_orbital_vanish : GlobalTheory.IndefiniteRowSideFullHecke.Standa
   obtain ⟨h, hh, hffv⟩ := hf.2.1 v
   have hφ : conv (μf v) (T.idem μf v) h ∈ CcLoc D.sp.cm.sig V.gram v :=
     conv_mem_SB ((T.frame v).idem_mem _ _) hh
-  obtain ⟨H, hHc, hHmem, ν, hν, hν0⟩ := GlobalTheory.T.type_function_constant_term_vanish_split_place hT D V v.1 (T.frame v) ε.rank ha0 har (T.W v) (T.τ v)
+  obtain ⟨H, hHc, hHmem, ν, hν, hν0⟩ := _root_.GlobalTheory.TypeConstLoc.unipIntegral_vanish_splitAt hT D V v.1 (T.frame v) ε.rank ha0 har (T.W v) (T.τ v)
     (T.irred v) hnf (μf v) _ hφ (ff v) (Or.inr hffv) g₀
   rw [he] at hHmem
   obtain ⟨N, hNmem⟩ : ∃ N : Subgroup (GL (Fin V.rank) (Fv D.host.F v.1)), ∀ x, x ∈ N ↔ e.symm x ∈ H :=
@@ -256,7 +258,7 @@ theorem weighted_orbital_vanish : GlobalTheory.IndefiniteRowSideFullHecke.Standa
     exact (hcond _).1 h1
   haveI : ((μf v).map e).IsHaarMeasure := ContinuousMulEquiv.isHaarMeasure_map (μf v) e
   haveI : (dt.map (subEquiv e hcent)).IsHaarMeasure := ContinuousMulEquiv.isHaarMeasure_map dt (subEquiv e hcent)
-  have key := GlobalTheory.T.weightedOrbitalIntegral_GL_zero_of_radical_integrals (Fv D.host.F v.1) V.rank ((μf v).map e) _ N hεε' hN_iff (fun x => ff v (e.symm x)) hfc hfcs
+  have key := _root_.GlobalTheory.RadicalOrb.hasQuotInt_zero (Fv D.host.F v.1) V.rank ((μf v).map e) _ N hεε' hN_iff (fun x => ff v (e.symm x)) hfc hfcs
     hvan (e (proj D.sp.cm.sig V.gram v (rat V γ))) hreg hcε (fun x => b (e.symm x)) hb'c hb'L hb'N (dt.map (subEquiv e hcent))
   have hcomm : ∀ t t' : cent (proj D.sp.cm.sig V.gram v (rat V γ)), (t : GLoc D.sp.cm.sig V.gram v) * t' = t' * t := by
     intro t t'

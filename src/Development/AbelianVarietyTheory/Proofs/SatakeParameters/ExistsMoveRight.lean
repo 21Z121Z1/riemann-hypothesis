@@ -5,7 +5,7 @@ public import Formalism.LocalToGlobal.Columns.FiniteSumNonzeroLargeDepth
 public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.IsRowFrame
 public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.PhiMapsAndOmegaLaw
 public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.CharacterArgumentFirstParabolicShift
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.IntegralDivUniformizerOfRedZero
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0057
 
 @[expose] public section
 

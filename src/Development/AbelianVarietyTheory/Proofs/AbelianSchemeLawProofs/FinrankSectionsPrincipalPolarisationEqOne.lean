@@ -2,8 +2,11 @@ module
 
 public import Mathlib
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.SecBaseChangeAnySt
-public import Development.AbelianVarietyTheory.Proofs.CoherentCohomologyProofs.FinrankPrincipalPolarisationSectionModuleLeOneStatement
-public import Development.AbelianVarietyTheory.Proofs.CoherentCohomologyProofs.OneLeFinrankSecMStatement
+public import Development.AbelianVarietyTheory.Proofs.CoherentCohomologyProofs.FinrankPrincipalPolarisationSectionModuleLeOne
+public import Development.AbelianVarietyTheory.Definitions.AbelianSchemeLaws.IsScalarTowerOfAlgebraMapEq
+public import Development.AbelianVarietyTheory.Definitions.QuasicoherentCohomology.ExistsAwayFracOfMemHomLoc
+public import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.CubeTotalComplexAcyclicOfSlicesInductionOnCard
+public import Development.AbelianVarietyTheory.Proofs.CoherentCohomologyProofs.Bundle0029
 
 @[expose] public section
 
@@ -17,6 +20,6 @@ theorem finrank_sections_principal_polarisation_eq_one :
     ∀ (K : Type) [Field K] [IsAlgClosed K] (P : PolAV (Spec (CommRingCat.of K))),
       Module.finrank Γ((baseOver (Spec (CommRingCat.of K))).left, ⊤)
         (SecM P.A P.L 1 (baseOver (Spec (CommRingCat.of K)))) = 1 :=
-  fun K _ _ P => le_antisymm (GlobalTheory.T.finrank_principalPolarisation_sectionModule_le_one K P) (GlobalTheory.T.one_le_finrank_secM_one_of_isAlgClosed K P)
+  fun K _ _ P => le_antisymm (_root_.GlobalTheory.PrincipalSections.finrank_secM_le_one K P) (_root_.GlobalTheory.PolSection.one_le_finrank_secM K P)
 
 end GlobalTheory.AbLaw

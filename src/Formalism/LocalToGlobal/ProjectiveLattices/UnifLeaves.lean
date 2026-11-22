@@ -1,7 +1,7 @@
 module
 
 public import Formalism.LocalToGlobal.ProjectiveLattices.FamilyUniformisationBasePointOrthogonal
-public import Formalism.LocalToGlobal.ProjectiveLattices.UnifGen
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0028
 public import Formalism.LocalToGlobal.ProjectiveLattices.UnifDom
 
 @[expose] public section

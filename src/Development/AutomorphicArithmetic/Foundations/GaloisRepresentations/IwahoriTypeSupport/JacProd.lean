@@ -2,10 +2,9 @@ module
 
 public import Mathlib
 public import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.IwahoriTypeSupport.TorusScalar
-public import PositivityTheory.AutomorphicForms.PublishedInputs.NonzeroTypes.JacquetFiniteLength2
-public import PositivityTheory.AutomorphicForms.PublishedInputs.NonzeroTypes.Tensor2
-public import PositivityTheory.AutomorphicForms.PublishedInputs.NonzeroTypes.Subquotient2
-public import PositivityTheory.AutomorphicForms.PublishedInputs.NonzeroTypes.SupportProduct
+public import PositivityTheory.AutomorphicForms.PublishedInputs.NonzeroTypes.Bundle0012
+public import PositivityTheory.AutomorphicForms.PublishedInputs.NonzeroTypes.Bundle0013
+public import PositivityTheory.AutomorphicForms.PublishedInputs.NonzeroTypes.Bundle0015
 
 @[expose] public section
 

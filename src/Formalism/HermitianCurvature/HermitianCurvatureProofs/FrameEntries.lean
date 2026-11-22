@@ -1,6 +1,6 @@
 module
 
-public import Formalism.HermitianCurvature.StatementQr
+public import Formalism.HermitianCurvature.Bundle0007
 public import Formalism.HermitianCurvature.HermitianCurvatureProofs.OperatorRepresentations
 public import Formalism.HermitianCurvature.HermitianCurvatureProofs.RestrictionIrrelevantDoubleLevelOperator
 

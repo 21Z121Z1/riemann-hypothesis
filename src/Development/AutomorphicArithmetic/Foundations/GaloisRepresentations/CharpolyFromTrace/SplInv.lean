@@ -3,10 +3,13 @@ module
 public import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.CharpolyFromTrace.KillTransferAlt
 public import Mathlib
 public import Formalism.SharpRestriction.LevelLetterCocycles.DataN
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.EqZeroOfTraceMulEqZeroSemisimpleRepStatement
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0193
+public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.Bundle0002
+public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0001
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0189
 public import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.StringRepresentations.WeightsConj
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.WeilRepEquivOfCharpolyEq
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.WeilDeligneInductionPrinciple
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0153
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0169
 
 @[expose] public section
 

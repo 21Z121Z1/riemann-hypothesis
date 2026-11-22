@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Formalism.LocalToGlobal.KernelLattices.ThDistC
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.FinAlgOfFinite
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0113
 
 @[expose] public section
 

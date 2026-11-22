@@ -2,7 +2,7 @@ module
 
 public import Development.AutomorphicArithmetic.PrimitiveCosets.CoreAtH
 public import Development.AutomorphicArithmetic.PrimitiveCosets.ToEBij
-public import Development.AutomorphicArithmetic.PrimitiveCosets.hostFactsS
+public import Development.AutomorphicArithmetic.PrimitiveCosets.Bundle0002
 
 @[expose] public section
 

@@ -2,14 +2,21 @@ module
 
 public import Mathlib
 public import Development.AutomorphicArithmetic.LocalEmbeddings.JetsGlue
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.DenseOfPolynomialStdGaussianMemSchwartzStatement
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.LastColumnArrowRealAverageFunctionalStatement
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.RealActionOnVertexWeightContinuousStatement
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IsThetaFunOFockMovedVecTop
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ThetaKernelGridRationalLeftInvariant
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.KerFockMovedReal
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IsMeasDefOfIsTermVol
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FockVacEqJets
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0509
+public import Development.AbelianVarietyTheory.Statements.HeckeThetaIntegrals.Bundle0002
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0041
+public import Development.AbelianVarietyTheory.Definitions.Foundations.HermitianSpaceBaseLatticeEqFrameLattice
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ContinuousCoeffBlockAct
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0239
+public import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.Bundle0009
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1516
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0431
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0500
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0446
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0444
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0489
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0471
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2724
 public import Development.AbelianVarietyTheory.Definitions.SpanningFamilies.IsWeakOfDatum
 
 @[expose] public section
@@ -164,7 +171,7 @@ theorem col_chain (S : GridChoice W U) {μ0 : T} (hL : L.Is μ0) (P : PolCol G �
         ∫ k, W.ker (.top t j) (W.fock (.top t j) (movedVec t S d) (P.1 ⟨j, hj⟩)) ((x : GA D (G.V (.top j))) * (k : GA D (G.V (.top j)))) h *
             Λ (realAct W.θ S.N.fr (.top j) ((k : GA D (G.V (.top j)))⁻¹) v) ∂κ =
           Λ' (realAct W.θ S.N.fr (.top (j + 1)) h⁻¹ (S.Z.kkMap 1 d x (finOf _ h) v))) (fun j hj Λ => by
-      obtain ⟨Λ', h⟩ := GlobalTheory.T.exists_dual_integral_arrowKernel_fock_eq_fockComp_top S hL j hj (P.1 ⟨j, hj⟩) Λ
+      obtain ⟨Λ', h⟩ := _root_.GlobalTheory.AvgCol.avg_col S hL j hj (P.1 ⟨j, hj⟩) Λ
       refine ⟨(S.Z.scal 1 (.top μ0 j))⁻¹ • Λ', fun t ht d hd κ h1 h2 x g v => (h t ht d hd κ h1 h2 x g v).trans ?_⟩
       rw [Normal.kkMap, LinearMap.smul_apply, LinearMap.smul_apply, map_smul, map_smul, scal_free S t μ0, smul_smul,
         inv_mul_cancel₀ (scal_ne S _), one_smul]) Λ0
@@ -173,7 +180,7 @@ theorem col_chain (S : GridChoice W U) {μ0 : T} (hL : L.Is μ0) (P : PolCol G �
   have hθ := theta_fock S hp _ (hd ⟨n, hn⟩) (P.1 ⟨n, hn⟩)
   have hl := GlobalTheory.RowReal.ker_rat_left W _ (inRange_of_def hp) _ hθ
   refine ⟨TermVolDef.isDefiniteSpace_of_isV (node_isV G hL (X := .top n) hn.le), posDef_top G hn.le,
-    fun g hg => realAct_fin _ _ _ hg, fun u => GlobalTheory.T.realActionOnVertexWeight_continuous W.θ W.θ_is S.N.fr _ _ u, ?_⟩
+    fun g hg => realAct_fin _ _ _ hg, fun u => _root_.GlobalTheory.RealActCont.realAct_inv_continuous W.θ W.θ_is S.N.fr _ _ u, ?_⟩
   simp only [colKer, colComp, dif_pos hn]
   exact ⟨fun γ hγ g h => by simpa using hl γ hγ 1 (one_mem _) g h, fun γ hγ g h => by simpa using hl 1 (one_mem _) γ hγ g h,
     (kerA_col_aut_cont S hL n hn _ t ht _ (hd ⟨n, hn⟩)).2, h n hn t ht _ (hd ⟨n, hn⟩)⟩
@@ -191,7 +198,7 @@ theorem row_chain (S : GridChoice W U) {μ0 : T} (hL : L.Is μ0) (P : PolCol G �
             ((x : GA D (G.V (.grid j D.R.m))) * (k : GA D (G.V (.grid j D.R.m)))) h *
             Λ (realAct W.θ S.N.fr (.grid j D.R.m) ((k : GA D (G.V (.grid j D.R.m)))⁻¹) v) ∂κ =
           Λ' (realAct W.θ S.N.fr (.grid (j + 1) D.R.m) h⁻¹ (S.Z.kkMap 1 d x (finOf _ h) v))) (fun j hj Λ => by
-      obtain ⟨Λ', h⟩ := GlobalTheory.T.lastColumnArrow_realAverage_functional S hL j hj (P.2 ⟨j, hj⟩) Λ
+      obtain ⟨Λ', h⟩ := _root_.GlobalTheory.LastColAvg.real_average S hL j hj (P.2 ⟨j, hj⟩) Λ
       refine ⟨(S.Z.scal 1 (.chi j D.R.m))⁻¹ • Λ', fun t ht d hd κ h1 h2 x g v => (h t ht d hd κ h1 h2 x g v).trans ?_⟩
       rw [Normal.kkMap, LinearMap.smul_apply, LinearMap.smul_apply, map_smul, map_smul, smul_smul,
         inv_mul_cancel₀ (scal_ne S _), one_smul]) Λ0
@@ -203,7 +210,7 @@ theorem row_chain (S : GridChoice W U) {μ0 : T} (hL : L.Is μ0) (P : PolCol G �
   have e : Node.neg D.R.m (.grid n D.R.m) = 0 := by simp [Node.neg]
   rw [e] at hV
   refine ⟨TermVolDef.isDefiniteSpace_of_isV hV, posDef_grid hL hn.le,
-    fun g hg => realAct_fin _ _ _ hg, fun u => GlobalTheory.T.realActionOnVertexWeight_continuous W.θ W.θ_is S.N.fr _ _ u, ?_⟩
+    fun g hg => realAct_fin _ _ _ hg, fun u => _root_.GlobalTheory.RealActCont.realAct_inv_continuous W.θ W.θ_is S.N.fr _ _ u, ?_⟩
   simp only [rowKer, rowComp, dif_pos hn]
   exact ⟨fun γ hγ g h => by simpa using hl γ hγ 1 (one_mem _) g h, fun γ hγ g h => by simpa using hl 1 (one_mem _) γ hγ g h,
     fun z h => ((W.om_is _ (inRange_of_def hp)).om_cont _ hθ 0).comp

@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsAvoidFormFinite
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PFibreRepresentatives
+public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0020
+public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0092
 
 @[expose] public section
 

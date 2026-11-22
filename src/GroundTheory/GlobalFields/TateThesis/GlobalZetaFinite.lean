@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import GroundTheory.GlobalFields.TateThesis.IdeleMeasureCosets
+public import GroundTheory.GlobalFields.TateThesis.Bundle0007
 public import GroundTheory.GlobalFields.TateThesis.HeckeLFunction
 public import GroundTheory.GlobalFields.TateThesis.SchwartzBruhatFinite
 

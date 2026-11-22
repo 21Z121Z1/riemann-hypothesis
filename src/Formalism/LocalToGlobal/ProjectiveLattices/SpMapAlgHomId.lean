@@ -1,6 +1,6 @@
 module
 
-public import Formalism.LocalToGlobal.ProjectiveLattices.ThClassPins
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0033
 
 @[expose] public section
 

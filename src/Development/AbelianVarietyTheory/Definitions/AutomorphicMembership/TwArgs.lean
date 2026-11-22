@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.DivisionPairOfAdelicFormsFaceColumnsData
-public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.NonzeroPlacesOverPrimes
+public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.Bundle0031
 public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.PlaceModelImp
 
 @[expose] public section

@@ -1,9 +1,9 @@
 module
 
-public import Development.WeilBound.ThetaLifts.Reductions.WeilPairs.AutDef
-public import Development.WeilBound.ThetaLifts.Reductions.WeilPairs.SumFourEqTrace
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RationalSubstitutionThetaHeisenbergUnitary
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsFdPosFin
+public import Development.WeilBound.ThetaLifts.Reductions.WeilPairs.Bundle0003
+public import Development.WeilBound.ThetaLifts.Reductions.WeilPairs.Bundle0002
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0894
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1646
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsTopologicalRingAE
 
 @[expose] public section

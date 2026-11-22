@@ -5,11 +5,11 @@ public import Formalism.LocalRingCardinality.RhoDetPrimeEqMuTildeMulChiPow
 public import Formalism.LocalRingCardinality.DataParams₂
 public import Formalism.LocalRingCardinality.DataDIV
 public import Formalism.LocalRingCardinality.DataTheta
-public import Formalism.LocalRingCardinality.DataKap
+public import Formalism.LocalRingCardinality.Bundle0004
 public import Formalism.SharpRestriction.Divisibility.SchurIrreducible
-public import Formalism.SharpRestriction.Divisibility.ZetaProductPairs
+public import Formalism.SharpRestriction.Divisibility.Bundle0002
 public import Formalism.SharpRestriction.Divisibility.PrimeDegreeVariant
-public import Formalism.SharpRestriction.CuspSpanNormBounds.CayleySignature
+public import Formalism.SharpRestriction.CuspSpanNormBounds.Bundle0006
 public import Formalism.SharpRestriction.ParamsHeightRankConstant
 
 @[expose] public section

@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsDescendPeriodicTrig
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.FourierCoeffMulCharConvAndHasDerivAt
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0017
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0022
 
 @[expose] public section
 

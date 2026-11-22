@@ -1,16 +1,17 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.PlacesToAdeles
+public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.Bundle0009
 public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IdempotentMulAddOneSubInverse
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SplitPlaceSectionAddComplementMul
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SplitPlaceHermitianFramePropertiesStatement
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SplitPlaceBaseVacuumDatumExistsUniqueStatement
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SplitPlaceLinearLawHalfVacuumStatement
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.IsThetaFunSplitPlaceSchroedingerModelStatement
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.IsSchwartzBruhatHalfSplitDatumCompletedLatticeStatement
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.WeilHomActionFixOfTrivialAtSplitPlaceStatement
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SplitPlaceLocalCharacterIsUnramifiedOfHeckeUnramStatement
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0347
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0276
+public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.Bundle0008
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SplitPlaceBaseVacuumDatumExistsUnique
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0368
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0358
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0357
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0373
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0369
 
 @[expose] public section
 
@@ -58,7 +59,7 @@ theorem lawAt : ∀ (D : D7) (ψ : AddChar (AF D.host.F) ℂ) (S T : HSp D) (χS
     ∀ Φ : WO S T → ℂ, IsSBHalf e (latO S T (ΛS : Set (Fin S.rank → D.host.E)) (ΛT : Set (Fin T.rank → D.host.E))
       fun _ => True) Φ →
       om (g, h) (Tm Φ) = GlobalTheory.SplitLinear.fac S T χS χT x y • Tm fun t => Φ (actO S T g⁻¹ h⁻¹ t) :=
-  GlobalTheory.T.splitPlace_linearLaw_halfVacuum
+  _root_.GlobalTheory.SplitLinearHalf.law_half
 
 theorem thetaModel : ∀ (D : D7) (ψ : AddChar (AF D.host.F) ℂ) (S T : HSp D)
     (ΛS : Lat S) (ΛT : Lat T)
@@ -76,18 +77,18 @@ theorem sbHalf : ∀ (D : D7) (k : Type) [Field k] [ValuativeRel k] [Topological
     ∀ Ψ ∈ SB (Matrix n n' k),
       IsSBHalf p.e (latO S T (LS : Set (Fin S.rank → D.host.E)) (LT : Set (Fin T.rank → D.host.E)) (· = p.v))
         (extFun α β Ψ) :=
-  GlobalTheory.T.isSchwartzBruhatHalf_split_datum_completed_lattice
+  _root_.GlobalTheory.FinPl.SBHalfAt.isSBHalf_extFun_latO
 
 theorem offAct : ∀ (D : D7) (k : Type) [Field k] [ValuativeRel k] [TopologicalSpace k] [IsNonarchimedeanLocalField k]
     (p : SplitPt D k) (S T : HSp D) (LS : Lat S) (LT : Lat T) (g : GA D S) (h : GA D T),
     g ∈ grpOff S (· = p.v) → h ∈ grpOff T (· = p.v) → ∀ u : WO S T,
     (u ∈ latO S T (LS : Set (Fin S.rank → D.host.E)) (LT : Set (Fin T.rank → D.host.E)) (· = p.v) ∨ IsHalf p.e u ∨
       IsHalf (cA D p.e) u) → actO S T g h u = u :=
-  GlobalTheory.T.weilHomAction_fix_of_trivialAtSplitPlace
+  _root_.GlobalTheory.FinPl.OffFix.actO_eq_of_grpOff
 
 theorem lamUnram : ∀ (D : D7) (k : Type) [Field k] [ValuativeRel k] [TopologicalSpace k] [IsNonarchimedeanLocalField k]
     (p : SplitPt D k) (χ : (AE D)ˣ →* Circle) (r : ℝ), GlobalTheory.IndefiniteRowSideFullHecke.UnramifiedCharacter.CharUnramAt D χ p.v → IsUnram (lam p χ r) :=
-  GlobalTheory.T.splitPlaceLocalCharacter_isUnramified_of_heckeUnramified
+  _root_.GlobalTheory.SplitLinUnram.lam_unram
 
 
 open GlobalTheory.PlaceModel GlobalTheory.PlaceDatum GlobalTheory.SplitHecke GlobalTheory.ThetaMove in
@@ -195,7 +196,7 @@ theorem extFun_lin (α : Frame p S n') (β : Frame p T n) (Ψ Ψ' : Matrix n n' 
   split_ifs <;> simp
 
 theorem detFrame (β : Frame p S n) (g : GL n k) : IsDetAt p.e S (β.gl g) (idl p (Matrix.GeneralLinearGroup.det g)) := by
-  obtain ⟨x, hx, hpx⟩ := (GlobalTheory.T.splitPlaceHermitianFrame_properties D k p S n β).2.2.2.2.2 g
+  obtain ⟨x, hx, hpx⟩ := (_root_.GlobalTheory.FrameAt.frame_facts D k p S n β).2.2.2.2.2 g
   have he : p.e * p.e = p.e := p.split.1
   have e1 : ((Matrix.GeneralLinearGroup.det g : kˣ) : k) = p.pr x := by rw [hpx]; rfl
   unfold IsDetAt
@@ -277,7 +278,7 @@ theorem linModelAt : ∀ (D : D7) (k : Type) [Field k] [ValuativeRel k] [Topolog
       · rw [LinearMap.comp_apply, hTm.modul Φ hΦ y hy, hW.om_heis g h y _ (hth0 Φ hΦ), act y (Or.inr (Or.inr hy))]
         rfl
       · rw [LinearMap.comp_apply, hTm.vac]
-    obtain ⟨f', hf', -⟩ := ((GlobalTheory.T.splitPlace_baseVacuum_datum_exists_unique D) k p n n' ψ hW.std S T α β LS LT hsS hsT (om (g, h) f₀) hV').1 Ψ hΨ
+    obtain ⟨f', hf', -⟩ := ((_root_.GlobalTheory.FinPl.overBasic D) k p n n' ψ hW.std S T α β LS LT hsS hsT (om (g, h) f₀) hV').1 Ψ hΨ
     have e1 : f' = om (g, h) f := by
       rw [hf'.2.2.2.2.2 _ hPM, hth.2 Tm hTm]
       rfl

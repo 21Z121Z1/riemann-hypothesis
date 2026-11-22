@@ -1,7 +1,7 @@
 module
 
 public import Formalism.LocalToGlobal.AlgebraicTheory.StatementA
-public import Formalism.LocalToGlobal.TorsionIntegrality.TorsionTranslationPowers.StatementA
+public import Formalism.LocalToGlobal.TorsionIntegrality.TorsionTranslationPowers.Bundle0001
 public import Formalism.LocalToGlobal.TorsionIntegrality.EisensteinTranslationProducts.EisensteinS2LimitFormula
 
 @[expose] public section

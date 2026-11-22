@@ -1,6 +1,6 @@
 module
 
-public import Development.AbelianVarietyTheory.Definitions.Foundations.IsDCReps
+public import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0001
 
 @[expose] public section
 

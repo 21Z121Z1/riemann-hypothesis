@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Foundations.PetIPSmulRight
-public import Development.AbelianVarietyTheory.Definitions.Foundations.RepL
+public import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0005
+public import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0006
 public import CompanionTheory.EightfoldTheory.VariationTheory.AutomorphicForms.Newform
 
 @[expose] public section

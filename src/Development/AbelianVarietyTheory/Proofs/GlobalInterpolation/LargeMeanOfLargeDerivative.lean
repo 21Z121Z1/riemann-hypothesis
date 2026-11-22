@@ -2,10 +2,9 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.ZerosDisc
-public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.ExistsTsumVonMangoldtDivRpowLeDiv
-public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.SummableNonPrimeVonMangoldtDivRpow
-public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.SumPrimesIocEqSumIndicator
-public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.IntervalIntegrableDivOfBounded
+public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0022
+public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0028
+public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0023
 
 @[expose] public section
 

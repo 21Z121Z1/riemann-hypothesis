@@ -1,8 +1,8 @@
 module
 
-public import Formalism.SharpRestriction.LevelLetterCocycles.KillWinFromCut
+public import Formalism.SharpRestriction.LevelLetterCocycles.Bundle0032
 public import Formalism.SharpRestriction.LevelLetterCocycles.MapEvalPsPi
-public import Formalism.SharpRestriction.LevelLetterCocycles.PrecompConst
+public import Formalism.SharpRestriction.LevelLetterCocycles.Bundle0027
 public import Formalism.SharpRestriction.LevelLetterCocycles.LocalInputsFromLiterature
 
 @[expose] public section

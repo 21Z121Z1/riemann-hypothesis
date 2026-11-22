@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.IsSumFrame
+public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.Bundle0008
 public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IsClopenIsCompactQLat
 
 @[expose] public section

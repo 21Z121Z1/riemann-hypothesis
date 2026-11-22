@@ -1,10 +1,9 @@
 module
 
 public import Mathlib
-public import Formalism.LocalToGlobal.ProjectiveLattices.ThProps
-public import Formalism.LocalToGlobal.ProjectiveLattices.CuspFree
-public import Development.AbelianVarietyTheory.BlockTheory.ExistenceTori.JetRangeLevelFactor
-public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.MinorsDisjointColumnsHarmonic
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0011
+public import Development.AbelianVarietyTheory.BlockTheory.ExistenceTori.Bundle0002
+public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0018
 
 @[expose] public section
 

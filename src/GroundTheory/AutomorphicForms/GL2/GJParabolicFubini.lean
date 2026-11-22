@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import GroundTheory.AutomorphicForms.GL2.GJZetaDefs
+public import GroundTheory.AutomorphicForms.GL2.Bundle0002
 public import GroundTheory.AutomorphicForms.Measures
 
 @[expose] public section

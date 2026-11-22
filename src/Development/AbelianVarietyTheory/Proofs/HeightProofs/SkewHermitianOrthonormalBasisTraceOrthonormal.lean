@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.HeightProofs.InnerDRepSq
+public import Development.AbelianVarietyTheory.Proofs.HeightProofs.Bundle0042
 
 @[expose] public section
 

@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsStableGauss
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0085
 public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.NonemptyMeasAndReps
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.UnramifiedStandardAddCharConductorProperties
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0095
 
 @[expose] public section
 

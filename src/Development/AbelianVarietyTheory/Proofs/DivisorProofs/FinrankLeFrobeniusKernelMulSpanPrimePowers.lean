@@ -1,10 +1,10 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Divisors.WittOnFalse
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0015
 public import Development.AbelianVarietyTheory.Definitions.Divisors.FormalCoboundarySmul
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FrobKerIdealLeAugIdeal
-public import Development.AbelianVarietyTheory.Definitions.Divisors.FibreRankCompOfSurjective
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2178
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0004
 
 @[expose] public section
 

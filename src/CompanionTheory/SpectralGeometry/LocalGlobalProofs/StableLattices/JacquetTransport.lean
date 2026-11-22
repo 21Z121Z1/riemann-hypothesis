@@ -1,11 +1,11 @@
 module
 
 public import Mathlib
-public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.HasCharSub
-public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.QuantumDeterminantAntiHomomorphismStatement
-public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.LeviSubspaceInvariantUnderBlocksStatement
+public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.Bundle0058
+public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.Bundle0060
 public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.QuantumDeterminantBlockEigenvalueStatement
-public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.TensorQuotientQuantumDeterminantEigenStatement
+public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.Bundle0061
+public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.Bundle0059
 
 @[expose] public section
 
@@ -190,7 +190,7 @@ theorem block_raise (hS : StepChar) (hT : TensDecomp) (P Q : GMod n) (d : Fin 3 
     · intro b _ hb
       rw [Pi.single_eq_of_ne hb, map_zero, map_zero]
     · simp
-  obtain ⟨r, _, ⟨u, rfl⟩, hw0, hwq⟩ := GlobalTheory.T.tensor_quotient_quantum_determinant_eigen hS hT M χ' hchar (bops Q d h k) (glRel_inj Q.gl hι) Φ hΦ hΦne
+  obtain ⟨r, _, ⟨u, rfl⟩, hw0, hwq⟩ := _root_.GlobalTheory.CompanionTheory.RgTransport.Raise.exists_raised hS hT M χ' hchar (bops Q d h k) (glRel_inj Q.gl hι) Φ hΦ hΦne
   refine ⟨Φ u, hw0, ?_, (e' r).1, ?_⟩
   · intro a b hab
     set_option synthInstance.maxHeartbeats 100000 in

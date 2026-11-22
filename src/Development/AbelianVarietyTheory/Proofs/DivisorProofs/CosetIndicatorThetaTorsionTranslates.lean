@@ -1,12 +1,11 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CosetRefinement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RelIndexOfLeNsmul
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RationalPoints
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HermitianLatticeTransportPreservesSelfDual
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.IdealPeriodLatticeOfCurveDatum
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.InducedTypeThetaGenusOnePermutes
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0718
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0768
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0753
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0746
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0224
 
 @[expose] public section
 

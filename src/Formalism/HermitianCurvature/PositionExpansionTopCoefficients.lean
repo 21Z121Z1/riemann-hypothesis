@@ -1,7 +1,7 @@
 module
 
 public import Formalism.HermitianCurvature.StatementWd
-public import Formalism.HermitianCurvature.LevelRecursionCondNeeded
+public import Formalism.HermitianCurvature.Bundle0002
 
 @[expose] public section
 

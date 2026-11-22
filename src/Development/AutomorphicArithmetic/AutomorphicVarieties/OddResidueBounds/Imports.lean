@@ -1,12 +1,11 @@
 module
 
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.OddResidueBounds.ZeroMemUnrHom
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.GaloisLibrary.KummerTheory.LenOfCard
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.GaloisLibrary.KummerTheory.Bundle0002
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.OddResidueBounds.UnrInj
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.OddResidueBounds.UnrSel
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.OddResidueBounds.Bundle0003
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.OddResidueBounds.SelCard
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.OddResidueBounds.FnOne
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.OddResidueBounds.LogH
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.OddResidueBounds.Bundle0001
 
 @[expose] public section
 

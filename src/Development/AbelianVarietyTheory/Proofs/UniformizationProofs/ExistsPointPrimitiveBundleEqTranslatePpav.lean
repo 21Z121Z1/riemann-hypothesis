@@ -7,16 +7,15 @@ public import Development.AbelianVarietyTheory.Definitions.Uniformization.PointE
 public import Development.AbelianVarietyTheory.Definitions.Uniformization.ExistsInKNeOne
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.CubeVal
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.UnifUniqSt
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.IsNsmul
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.QkToAkU
-public import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.ExistsGenOfMemChart
-public import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.VeryAmpleByOfRelAmple
-public import Development.AbelianVarietyTheory.Proofs.CoherentCohomologyProofs.CechLBPullIsoOfIsOpenImmersion
-public import Development.AbelianVarietyTheory.Proofs.CoherentCohomologyProofs.LengthBallQuotientEqSumMulFdeg
-public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsHeckeQuotientTriple
-public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ExistsFinAffineCover
-public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.CechComplexAcyclicPrimitiveNontrivialAlgClosedStatement
-public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.LineBundleProductAcyclicOfAffineBaseAcyclicStatement
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.Bundle0005
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.Bundle0006
+public import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.Bundle0024
+public import Development.AbelianVarietyTheory.Proofs.CoherentCohomologyProofs.Bundle0017
+public import Development.AbelianVarietyTheory.Proofs.CoherentCohomologyProofs.Bundle0019
+public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0108
+public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.Bundle0087
+public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.Bundle0118
+public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.Bundle0128
 public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.SubsingletonOfForallIsMaximalSmulEqZero
 
 @[expose] public section
@@ -215,7 +214,7 @@ theorem eq_one_of_lam_eq_zero (hL : L.IsLB) (hK : KTriv B L) (x : 𝟙_ _ ⟶ B)
 
 theorem ac_of_primitive [IsAlgClosed K] (hB : IsAbelianScheme B) (hp : IsProjBy B.hom) {M : LB B.left}
     (hM : M.IsLB) (h : lam (cls M hM) (fst B B) (snd B B) = 0) (hne : cls M hM ≠ 0) : Ac B.hom M :=
-  GlobalTheory.T.cechComplex_acyclic_primitive_nontrivial_algClosed K B hB hp M hM
+  _root_.GlobalTheory.PrimVan.acyclic_cechLB_of_primitive K B hB hp M hM
     ((cls_eq_zero_iff (LB.isLB_linComb hM _ _)).1 ((cls_cube_two hM _ _ (LB.isLB_linComb hM _ _)).trans h))
     fun ht => hne ((cls_eq_zero_iff hM).2 ht)
 
@@ -251,7 +250,7 @@ theorem exists_point_translate : Laws → ∀ (K : Type) [Field K] [IsAlgClosed 
     rw [cls_pull hF, eF, map_sub, pull_lam, ← pull_comp, ← Over.comp_left, lift_fst, lift_snd, pull_const, sub_zero,
       lam_comm]
   have total : Ac ((fst P.A P.A).left ≫ P.A.hom) F := by
-    refine (GlobalTheory.T.lineBundle_product_acyclic_of_affine_base_acyclic K _ _ _ _ _ _ _ hpq inferInstance inferInstance inferInstance inferInstance F hF).1
+    refine (_root_.GlobalTheory.ProductAcyclic.acyclic_of_over_affine_and_converse K _ _ _ _ _ _ _ hpq inferInstance inferInstance inferInstance inferInstance F hF).1
       fun R _ t Y π f h ht => ac_of_slices hproj hpq h hF fun x hx _ => ?_
     let x' : 𝟙_ _ ⟶ P.A := Over.homMk x hx
     refine ⟨(lift (toUnit P.A ≫ x') (𝟙 P.A)).left, ?_, ?_, ac_of_primitive P.isAb hpr (pull_isLB hF _) ?_ ?_⟩
@@ -273,7 +272,7 @@ theorem exists_point_translate : Laws → ∀ (K : Type) [Field K] [IsAlgClosed 
       (by rw [show ({IsLocalRing.closedPoint K} : Set (Spec (CommRingCat.of K))) = Set.univ from
         Set.eq_univ_of_forall fun z => Subsingleton.elim (α := PrimeSpectrum K) _ _]; exact isClosed_univ)
     exact (congrArg IsClosed Set.image_singleton).mp h
-  have all := (GlobalTheory.T.lineBundle_product_acyclic_of_affine_base_acyclic K _ _ _ _ _ _ _ hpq.flip inferInstance inferInstance inferInstance inferInstance F hF).2
+  have all := (_root_.GlobalTheory.ProductAcyclic.acyclic_of_over_affine_and_converse K _ _ _ _ _ _ _ hpq.flip inferInstance inferInstance inferInstance inferInstance F hF).2
     _ hcl (fun R _ t Y π f h ht hne => ac_of_slices hproj hpq.flip h hF fun x hx hr => by
       let x' : 𝟙_ _ ⟶ P.A := Over.homMk x hx
       refine ⟨(lift (𝟙 P.A) (toUnit P.A ≫ x')).left, ?_, ?_, ac_of_primitive P.isAb hpr (pull_isLB hF _) ?_ ?_⟩

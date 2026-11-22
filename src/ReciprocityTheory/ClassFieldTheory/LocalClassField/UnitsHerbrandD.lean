@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import ReciprocityTheory.ClassFieldTheory.LocalClassField.UnitsHerbrandC
+public import ReciprocityTheory.ClassFieldTheory.LocalClassField.Bundle0002
 
 @[expose] public section
 

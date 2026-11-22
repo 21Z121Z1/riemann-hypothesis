@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import CompanionTheory.AutomorphicTheory.PieriRules.PieriDegreeBounds.Imports
-public import CompanionTheory.AutomorphicTheory.PieriRules.PieriDegreeBounds.ImportsBisTer
+public import CompanionTheory.AutomorphicTheory.PieriRules.PieriDegreeBounds.Bundle0003
 
 @[expose] public section
 

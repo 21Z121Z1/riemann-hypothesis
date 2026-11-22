@@ -3,8 +3,8 @@ module
 public import CompanionTheory.AutomorphicTheory.RankOneTori.RpowNegLe
 public import Formalism.SharpRestriction.CuspSpanNormBounds.BigCellDensity
 public import Formalism.SharpRestriction.CuspSpanNormBounds.SpanMemOfImage
-public import Formalism.FormalDegreeBessel.FinalG
-public import Formalism.SharpRestriction.CuspSpanNormBounds.FrobeniusCoefficientMemLp.SigmaFiniteAmplitudes.RStabInv
+public import Formalism.FormalDegreeBessel.Bundle0002
+public import Formalism.SharpRestriction.CuspSpanNormBounds.FrobeniusCoefficientMemLp.SigmaFiniteAmplitudes.Bundle0001
 
 @[expose] public section
 

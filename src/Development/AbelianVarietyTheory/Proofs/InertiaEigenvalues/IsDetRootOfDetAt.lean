@@ -2,18 +2,23 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.ExistsIsScalar
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.VacuumVectorDropAuxiliaryPlaces
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0784
 public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IdempotentMulAddOneSubInverse
 public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.CardInversePrimeRepsIntegralRightMulHecke
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ThetaVacuumHeckeIdentitySplitPlace
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SumHeckeIndicatorIntegralEqPrimitiveStatement
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SplitPlaceChartFiniteAdeleTensorLevelsStatement
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SumUniversalDeterminantDatumCoeffEqPrimitiveStatement
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ArtinMapSplitPlaceUniformiserEqFrobeniusInvStatement
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ModulusUnramifiedCharDetHeckeDoubleCosetSplitStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsUnitaryGroupCharacterOfHeckeChar
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.HeisenbergCombinationCommFockPolynomialVectors
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.VacuumVectorDropAuxiliaryPlacesStatement
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0137
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0641
+public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.UnivOfNotLinearIndependent
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0106
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0773
+public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.AdmissibleEmptyOfGood
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.FockVectorsKilledHeisenbergAverageIsotropic
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsIdempotentMulNatPowOfMul
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0590
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0113
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0820
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0791
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0852
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0150
 public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.InvNatPowRpowNegHalfEvenEqPow
 
 @[expose] public section
@@ -257,7 +262,7 @@ theorem xi_rel (B : Base S T) (hB : B.Good) (hbT : Lev.IsBaseFrame T B.F.βT B.F
     by_cases hPP : PP.1 = P
     · rw [if_pos hPP, if_pos hPP]
       simp only [hΦ, Base.univFam]
-      rw [← Rat.cast_sum, GlobalTheory.T.sum_universalDeterminantDatumCoeff_eq_primitive (kP PP.1) C T.rank S.rank B.hr (β PP.1) (u.kap PP.1) y]
+      rw [← Rat.cast_sum, _root_.GlobalTheory.ExportSeries.sum_univCoef_eq_prim (kP PP.1) C T.rank S.rank B.hr (β PP.1) (u.kap PP.1) y]
     · rw [if_neg hPP, if_neg hPP, hφ]
       simp only [dif_pos PP.2]
   rw [hv1, vec_rel B hB hbT hω hQ hP φ hϖ1 hϖ2 x hx α R hα]
@@ -265,7 +270,7 @@ theorem xi_rel (B : Base S T) (hB : B.Good) (hbT : Lev.IsBaseFrame T B.F.βT B.F
   set f1 := B.vecAt Q fun PP y => if PP.1 = P then 1 else φ PP.1 y with hf1
   have hf1' : f1 = B.vecFam Q' (Base.univFam u' β) (a' - dQ') := by
     rw [hf1, Base.vecFam]
-    have := GlobalTheory.T.vacuumVector_drop_auxiliary_places D S T B Q Q' (fun v y => if hv : v ∈ Q' then ((Base.univFam u' β v ((a' - dQ') ⟨v, hv⟩) y : ℚ) : ℂ)
+    have := _root_.GlobalTheory.ExportSeries.vecAt_drop D S T B Q Q' (fun v y => if hv : v ∈ Q' then ((Base.univFam u' β v ((a' - dQ') ⟨v, hv⟩) y : ℚ) : ℂ)
       else 0) hB hQ hQ'
     convert this using 2
     · funext PP y
@@ -303,7 +308,7 @@ theorem xi_rel (B : Base S T) (hB : B.Good) (hbT : Lev.IsBaseFrame T B.F.βT B.F
 
   have hsupp := (hα k hk).2.1 γ hγ
   obtain ⟨-, k₁, hk₁, k₂, hk₂, hγe⟩ := (hα k hk).2.2.1 γ hγ
-  have hH := (GlobalTheory.T.modulus_unramifiedChar_det_heckeDoubleCoset_split D T P (idemAt P) he ϖ hϖ1 hϖ2 x hx k (α k) (hα k hk).1 k₁ hk₁ k₂ hk₂
+  have hH := (_root_.GlobalTheory.SplitDetValue.det_modulus_chi D T P (idemAt P) he ϖ hϖ1 hϖ2 x hx k (α k) (hα k hk).1 k₁ hk₁ k₂ hk₂
     (GlobalTheory.VecInv.detAt (idemAt P) he.1.1 T γ) (by rw [← hγe]; exact GlobalTheory.VecInv.isDetAt_detAt _ he.1.1 T γ)).2
     (Multiplicative (↥Q' → C)) (u'.delQ Q') (fun y h1 h2 h3 => by
       ext v

@@ -1,6 +1,6 @@
 module
 
-public import Development.WeilBound.ThetaLifts.EigenvalueEndgame.CuspidalAverages.LeSuccIff
+public import Development.WeilBound.ThetaLifts.EigenvalueEndgame.CuspidalAverages.Bundle0001
 
 @[expose] public section
 

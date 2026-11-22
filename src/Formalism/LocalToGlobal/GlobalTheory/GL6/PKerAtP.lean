@@ -1,10 +1,8 @@
 module
 
 public import Formalism.LocalToGlobal.UnitaryNorms.UnramT
-public import Formalism.LocalToGlobal.GlobalTheory.GL6.PDnDil
-public import Formalism.LocalToGlobal.GlobalTheory.GL6.PBwLcInt
-public import Formalism.LocalToGlobal.GlobalTheory.GL6.PRLocW
-public import Formalism.LocalToGlobal.GlobalTheory.GL4.PFrames
+public import Formalism.LocalToGlobal.GlobalTheory.GL6.Bundle0006
+public import Formalism.LocalToGlobal.GlobalTheory.GL4.Bundle0001
 
 @[expose] public section
 

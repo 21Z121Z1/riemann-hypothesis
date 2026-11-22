@@ -1,8 +1,7 @@
 module
 
-public import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.HeckeActMem
-public import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Heckebasic
-public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.EvalFg
+public import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Bundle0002
+public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0015
 
 @[expose] public section
 

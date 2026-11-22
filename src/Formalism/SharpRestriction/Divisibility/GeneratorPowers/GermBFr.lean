@@ -1,9 +1,9 @@
 module
 
-public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.GermCut
-public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.GermDJet
+public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0006
+public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0009
 public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.GermBGen
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.DiscreteValuationRings.LBLocalC
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.DiscreteValuationRings.Bundle0003
 
 @[expose] public section
 

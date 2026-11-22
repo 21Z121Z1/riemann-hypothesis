@@ -2,12 +2,12 @@ module
 
 public import Mathlib
 public import ReciprocityTheory.ClassFieldTheory.LocalClassField.RecPairDefs
-public import ReciprocityTheory.ClassFieldTheory.LocalClassField.RecPair
-public import ReciprocityTheory.ClassFieldTheory.LocalClassField.RecUnr
+public import ReciprocityTheory.ClassFieldTheory.LocalClassField.Bundle0017
+public import ReciprocityTheory.ClassFieldTheory.LocalClassField.Bundle0018
 public import ReciprocityTheory.ClassFieldTheory.LocalClassField.RecCyclic
-public import ReciprocityTheory.ClassFieldTheory.LocalClassField.RecFunct
-public import ReciprocityTheory.ClassFieldTheory.LocalClassField.GabLim
-public import ReciprocityTheory.ClassFieldTheory.LocalClassField.NormOpen
+public import ReciprocityTheory.ClassFieldTheory.LocalClassField.Bundle0019
+public import ReciprocityTheory.ClassFieldTheory.LocalClassField.Bundle0007
+public import ReciprocityTheory.ClassFieldTheory.LocalClassField.Bundle0013
 public import ReciprocityTheory.ClassFieldTheory.LocalClassField.RecAbC
 public import ReciprocityTheory.ClassFieldTheory.LocalClassField.RecAbA
 

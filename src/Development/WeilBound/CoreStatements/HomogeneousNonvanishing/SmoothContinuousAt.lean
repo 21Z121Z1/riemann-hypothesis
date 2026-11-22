@@ -1,6 +1,6 @@
 module
 
-public import Development.WeilBound.CoreStatements.HomogeneousNonvanishing.ContinuousAtOfClosedRel
+public import Development.WeilBound.CoreStatements.HomogeneousNonvanishing.Bundle0005
 public import Development.WeilBound.CoreStatements.HomogeneousNonvanishing.GMonomial
 public import ReciprocityTheory.AnalyticForms.LeviForms.IsRegFamilyInhabitStatement
 

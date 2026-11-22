@@ -1,8 +1,8 @@
 module
 
 public import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.StringRepresentations.AllCuspidalOpenBound
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.SegmentEigenvalueSumFormula
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.WeightRegularOfExt
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0008
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0029
 
 @[expose] public section
 

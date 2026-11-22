@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import GroundTheory.HeightsAndTheta.Heights.Intersections.StTorusInvLevi
+public import GroundTheory.HeightsAndTheta.Heights.Intersections.Bundle0005
 public import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.CoordinateIdeals.FubiniLevi
-public import ReciprocityTheory.AnalyticForms.PotentialTheory.PshShiftA
+public import ReciprocityTheory.AnalyticForms.PotentialTheory.Bundle0001
 
 @[expose] public section
 

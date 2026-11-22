@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import GroundTheory.ProfiniteCohomology.LocalEulerCharacteristic.ConjAction
+public import GroundTheory.ProfiniteCohomology.LocalEulerCharacteristic.Bundle0003
 public import GroundTheory.ProfiniteCohomology.GaloisCohomology.Kummer
 public import GroundTheory.ProfiniteCohomology.CupProducts.Cocycles
 

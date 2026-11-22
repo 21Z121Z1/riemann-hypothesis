@@ -2,15 +2,25 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.IsFrameIff
-public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.FromGtOfMemUnitGrp
-public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.IntegralFamilyValuesTorsionTorusExtensionStatement
-public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.TorusExtensionTorsionMemUnitThetaConstantGroupStatement
-public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsTorsionPointUnitValuePrimitiveIntegralFamiStatement
-public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ExpBijFAndExpandsFLin
-public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.UniformisationTorsionIdentificationWithPairingStatement
-public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ThetaConstantValuationsUnitsEveryCosetStatement
-public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ValuationNonnegIffSpanMultiplicationTranslatesStatement
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.DiscreteValuationRings.BOfNsmulLeft
+public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.Bundle0178
+public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.Bundle0191
+public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.Bundle0182
+public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.Bundle0027
+public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.Bundle0128
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.ExistsZeroGt
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.Bundle0011
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.Bundle0004
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.UnifUniqSt
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.ThetaVV
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.DiscreteValuationRings.PhiGenPf
+public import Development.AbelianVarietyTheory.Definitions.Uniformization.TXFrame
+public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.Bundle0129
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.DiscreteValuationRings.Bundle0012
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.DiscreteValuationRings.Bundle0004
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.DiscreteValuationRings.PeriodicValuation
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.DiscreteValuationRings.TwistBC
+public import Development.AbelianVarietyTheory.Definitions.Uniformization.Bundle0001
+public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.Bundle0133
 
 @[expose] public section
 
@@ -183,9 +193,9 @@ theorem main : LL → TwistBCSpanStatement → TWM.VRatioGtStatement → TWState
   have hnj : ∀ j, IsUnit ((n ^ j : ℕ) : V) := fun j => by rw [Nat.cast_pow]; exact hnu.pow j
   refine ⟨hdet, ?_, ?_, ?_, ?_⟩
   · rintro j x c ⟨hx, t, ht⟩
-    obtain ⟨f, f₁, f₂, -⟩ := GlobalTheory.T.uniformisation_torsion_identification_with_pairing hL V _ hA D A G hG U F ((n ^ j) ^ 2) (pow_pos (pow_pos hn.pos j) 2)
+    obtain ⟨f, f₁, f₂, -⟩ := _root_.GlobalTheory.TorsionIso.torsion_eq hL V _ hA D A G hG U F ((n ^ j) ^ 2) (pow_pos (pow_pos hn.pos j) 2)
     obtain ⟨p, rfl⟩ := f₂ x hx
-    have ua := (GlobalTheory.T.theta_constant_valuations_units_every_coset hL h₁ h₂ h₃ h₄ V hc ϖ hϖ D Q hQ F v hv A G hG U w₀ ρ hN th ϑ hE hP (n ^ j) hno.pow
+    have ua := (_root_.GlobalTheory.UT.ThetaConstVal.main hL h₁ h₂ h₃ h₄ V hc ϖ hϖ D Q hQ F v hv A G hG U w₀ ρ hN th ϑ hE hP (n ^ j) hno.pow
       (hnj j)).1 p _ t c ((f₁ p _).2 rfl) ht
     exact (hO c).2 (ua.1 0 fun χ => div_nonneg (by exact_mod_cast hQ0 _) (Nat.cast_nonneg _))
   · rintro j h l hh ⟨e, he, hl⟩ i

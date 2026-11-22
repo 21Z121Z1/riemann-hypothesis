@@ -3,12 +3,12 @@ module
 public import Mathlib
 public import Formalism.LocalRingCardinality.RhoDetPrimeEqMuTildeMulChiPow
 public import Formalism.SharpRestriction.LevelLetterCocycles.LocalSituation
-public import Development.AbelianVarietyTheory.Definitions.Foundations.HTBasis
-public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.ExpStar
+public import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0010
+public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0008
 public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CoeffZeroEqZeroIff
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.EtaleEmbeddingFrobeniusGaloisCompatStatement
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.TiltInvariantApproxByEpsilonRootsClosureStatement
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.TeichmullerEpsilonRootsMemFrobeniusPerfectionModStatement
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0249
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0329
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0311
 
 @[expose] public section
 
@@ -225,7 +225,7 @@ theorem fixSub_approx_perfection (l : ℕ) [Fact l.Prime] (P : LocPrime l) (AI :
     unfold fixSub at hy
     simp only [Subring.mem_iInf, RingHom.mem_eqLocus] at hy
     exact hy g hg
-  obtain ⟨hφE, -, hπ, -⟩ := GlobalTheory.T.etaleEmbedding_frobenius_galois_compat l P AI K s LL h W E
+  obtain ⟨hφE, -, hπ, -⟩ := _root_.GlobalTheory.Decompl.ioE_compat l P AI K s LL h W E
   have hφ : ∀ e, ∃ e', φRW LL (E.tie.ioE e) = E.tie.ioE e' := fun e => ⟨W.φE e, (hφE e).symm⟩
   have hcoef : ∀ i, ∀ g ∈ Hinf K, autCb l (AI.actT g) ((crd (basisO LL) i y).coeff 0) =
       (crd (basisO LL) i y).coeff 0 := by
@@ -241,7 +241,7 @@ theorem fixSub_approx_perfection (l : ℕ) [Fact l.Prime] (P : LocPrime l) (AI :
       {xb | ∃ c : Om l, c ∈ K0 K ∧ ∃ m : ℕ, 0 < m ∧ ¬ l ∣ m ∧ c ^ m = 1 ∧ IsTiltOf c m xb}),
       ∃ v : OCb l, algebraMap (OCb l) (Cb l) ((AI.εroot s - 1) ^ N) * (crd (basisO LL) i y).coeff 0 =
         algebraMap (OCb l) (Cb l) (u + (AI.εroot s - 1) ^ (N + m) * v) :=
-    fun i => GlobalTheory.T.tilt_invariant_approx_by_epsilonRoots_closure l P AI K s ((crd (basisO LL) i y).coeff 0) (hcoef i) m
+    fun i => _root_.GlobalTheory.FlatInvariants.flat_invariant_approx l P AI K s ((crd (basisO LL) i y).coeff 0) (hcoef i) m
   choose N₀ hN₀ using hap
   have hall : ∀ i, ∃ u ∈ Subring.closure (Set.range AI.εroot ∪
       {xb | ∃ c : Om l, c ∈ K0 K ∧ ∃ m : ℕ, 0 < m ∧ ¬ l ∣ m ∧ c ^ m = 1 ∧ IsTiltOf c m xb}),

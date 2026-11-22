@@ -1,13 +1,10 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.NoetherNormalizationHomogeneousStatement
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.NoetherNormalizationHomogeneous
 public import Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.PerfectoidPullbacks.ConeSectionRestriction.GeoDefs
-public import Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.PerfectoidPullbacks.ConeSectionRestriction.PreimageBasicOpenNonempty
-public import Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.PerfectoidPullbacks.ConeSectionRestriction.ExistsHomRelation
-public import Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.PerfectoidPullbacks.ConeSectionRestriction.IsAffineOpenPreimage
+public import Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.PerfectoidPullbacks.ConeSectionRestriction.Bundle0007
 public import Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.PerfectoidPullbacks.ConeSectionRestriction.IsAlgebraicOfIntegralTorusS
-public import Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.PerfectoidPullbacks.ConeSectionRestriction.ExistsCoordBasicOpen
 
 @[expose] public section
 
@@ -48,7 +45,7 @@ theorem geo_setup {K : Type} [Field K] [CharZero K] {X : Scheme.{0}} (q : X ⟶ 
   haveI hXi : IsIntegral X := isIntegral_of_smooth q (n + 1)
   haveI : Infinite K := Infinite.of_injective (Nat.cast : ℕ → K) Nat.cast_injective
   obtain ⟨e, m, y, he, hy, halg, hfin⟩ :=
-    GlobalTheory.T.noether_normalization_homogeneous K N (homIdeal i) (homIdeal_ne_top i) (homIdeal_homog i)
+    _root_.GlobalTheory.CompanionTheory.ConeNoether.main K N (homIdeal i) (homIdeal_ne_top i) (homIdeal_homog i)
   have hcov := iSup_preimage_eq_top i he y hy hfin
   obtain ⟨d, rfl⟩ : ∃ d, m = d + 1 := by
     rcases m with _ | d

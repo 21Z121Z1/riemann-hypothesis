@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.IsSemiAbelianOfLevel
+public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0128
 
 @[expose] public section
 

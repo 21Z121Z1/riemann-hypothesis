@@ -1,26 +1,30 @@
 module
 
 public import Mathlib
-public import Formalism.LocalToGlobal.ProjectiveLattices.HasDataCondition
-public import Formalism.LocalToGlobal.ProjectiveLattices.FamilyUniformisationBasePointOrthogonalBis
-public import Formalism.LocalToGlobal.ProjectiveLattices.RecCond
-public import Formalism.LocalToGlobal.ProjectiveLattices.ParCanon
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0028
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0027
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0032
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0031
 public import Formalism.LocalToGlobal.ProjectiveLattices.ExistsParameterConditions
-public import Formalism.LocalToGlobal.ProjectiveLattices.FreeBridge
-public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.ThExprUniqOfChartIndep2
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.SquareIntegrability.ContDiffOfDifferentiableFd
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.SquareIntegrability.L2NormFundamentalDomain
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0024
+public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0007
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.SquareIntegrability.Bundle0006
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.SquareIntegrability.Bundle0009
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.TaylorDiscriminants.Taylor
 public import ReciprocityTheory.AnalyticForms.AnalyticCharts.Osgood
-public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.HermitianFormAtFrameLaws
-public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.FockHxDifferentiable
-public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.ThetaValueStandardLatticeEqClassicalThetaStatement
+public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.Bundle0032
+public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.Bundle0028
+public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.ThetaValueStandardLatticeEqClassicalTheta
+public import Development.AbelianVarietyTheory.Definitions.SpanningFamilies.Bundle0002
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0011
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PullbackSections.HolomorphicFamilies.AnChartAsm
 public import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.ExistsTorusOfSelfD
-public import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.ExistsIntegralHarmonicNeZeroAndIsHomogeneous
-public import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.ThetaRuleExistsAndEval
-public import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.ExistsAnalyticDataUnitFrameFramedPointStatement
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ThetaFunctionIsogenyRestrictionStatement
-public import Development.AbelianVarietyTheory.Proofs.GenericRegularity.NumericalConsequencesOfPins
+public import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.Bundle0028
+public import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.Bundle0073
+public import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.Bundle0048
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ThetaFunctionIsogenyRestriction
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.SquareIntegrability.GCauchyStatement
+public import Development.AbelianVarietyTheory.Proofs.GenericRegularity.Bundle0021
 
 @[expose] public section
 
@@ -285,7 +289,7 @@ theorem exists_jet_ne_zero (hs : IsSympl X bas) (hd : x ∈ X.dom) {L : Lt E r} 
     have := hconj z z
     rw [hx_eq_hermForm] at this
     exact (Complex.conj_eq_iff_im.1 this.symm).symm
-  obtain ⟨y, hy, hne⟩ := GlobalTheory.T.theta_function_isogeny_restriction g _ hPD (perGrp idx x L)
+  obtain ⟨y, hy, hne⟩ := _root_.GlobalTheory.ThetaTranslJet.exists_translates_jet_ne_zero g _ hPD (perGrp idx x L)
     (discrete_of_integral _ hpos _ (span_image_pv idx hs hd L (TensLat.span_of_selfD X hL)) hint)
     (fun v => by
       simp only [hf_transpose]
@@ -471,7 +475,7 @@ theorem exists_thGen_ne_zero (hC : Formalism.MainNotions.ModuliIntegralCharts.H1
   obtain ⟨⟨f, hf, -⟩, hev⟩ := GlobalTheory.thetaRule_exists_and_eval hC E H Dw l Xo c nab hnab a n xs P hP
   refine ⟨f, ⟨xs, P, hP, hf⟩, ?_⟩
   rintro rfl
-  have hval := GlobalTheory.T.thetaValue_standardLattice_eq_classicalTheta hC E H Dw l Xo c r W.g (U.X k) Dc.bas Dc.idx W.e x.1 (U.X k).Λ (unC U k x) A Dc.sympl x.2
+  have hval := _root_.GlobalTheory.Dict.thVal_eq_thP hC E H Dw l Xo c r W.g (U.X k) Dc.bas Dc.idx W.e x.1 (U.X k).Λ (unC U k x) A Dc.sympl x.2
     hL Dw.p n Dc.hr Dc.eL hU.1 hD.2 (fun ℓ => he ▸ Dc.dir_eq ℓ) nab hnab θ v κ hrd hv hκ (W.mark k) hmk hA xs
     (Matrix.of Y) (fun b => ⟨⟨xs b, hxs b, by rw [sub_self]; exact zero_mem _, hY b⟩, 2, hY' b⟩) a P hP _
     (hev 0 hf ℂ (unC U k x))

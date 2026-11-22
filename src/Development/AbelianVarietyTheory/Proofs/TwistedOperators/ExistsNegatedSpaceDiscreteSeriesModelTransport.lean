@@ -1,10 +1,10 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.CartFrSgn
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IsDiscreteSeriesNegSignatureOfIsDiscreteSeriesStatement
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.AutomorphicCuspFormsHermitianSpaceSignTwistStatement
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SignedUnitaryGroupCompatStatement
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0221
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0247
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.AutomorphicCuspFormsHermitianSpaceSignTwist
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0252
 
 @[expose] public section
 
@@ -31,7 +31,7 @@ def negM {V : HSp D} {S : D.what₂.Tau → SPar} (M : DSModel V S) : DSModel (s
     refine ⟨h1, q, hq, ?_⟩
     rw [hS, GlobalTheory.SignedHC.flip, Finset.image_image]
     rfl
-  ds τ := GlobalTheory.T.isDiscreteSeries_neg_signature_of_isDiscreteSeries _ _ _ _ _ (M.ds τ)
+  ds τ := _root_.GlobalTheory.PairLift.isDS_flip _ _ _ _ _ (M.ds τ)
   fr_unit := M.fr_unit
   fr_gram τ := by
     have e : gramAt D (neg V) τ = -gramAt D V τ := by ext i j; simp [gramAt, neg_gram]
@@ -49,7 +49,7 @@ variable (θ : InfFam D)
 
 theorem negM_sm (hθ : IsInfFam θ) (τ : D.what₂.Tau) : (negM M).sm τ = M.sm τ := by
   unfold DSModel.sm
-  rw [(GlobalTheory.T.signedUnitaryGroup_compat D θ hθ true V).lie τ]
+  rw [(_root_.GlobalTheory.SgnIdent.sgnLaw_holds D θ hθ true V).lie τ]
   rfl
 
 end GlobalTheory.NegModel
@@ -131,14 +131,14 @@ theorem eq_symm_update (v : M.Vec) (τ : D.what₂.Tau) (w : M.sm τ) :
 theorem isMultMap_toNeg {T : MMap M} (hT : IsMultMap θ M ∅ 1 T) : IsMultMap θ (negM M) ∅ 1 (toNeg M θ hθ T) := by
   refine { aut := ?_, cusp := ?_, lev := ?_, equiv := ?_, cont := ?_ }
   · intro v
-    exact ((GlobalTheory.T.automorphic_cusp_forms_hermitianSpaceSignTwist D θ hθ true V _).1).2 (hT.aut _)
+    exact ((_root_.GlobalTheory.sgn_fun_cusp D θ hθ true V _).1).2 (hT.aut _)
   · intro v
-    exact ((GlobalTheory.T.automorphic_cusp_forms_hermitianSpaceSignTwist D θ hθ true V _).2).2 (hT.cusp _)
+    exact ((_root_.GlobalTheory.sgn_fun_cusp D θ hθ true V _).2).2 (hT.cusp _)
   · intro v k hk
     exact absurd hk (Set.notMem_empty _)
   · intro τ g hg v w hw
     classical
-    have hg' : g ∈ Formalism.QuantumDeterminants.UH (gramAt D V τ) := (GlobalTheory.T.signedUnitaryGroup_compat D θ hθ true V).grp τ ▸ hg
+    have hg' : g ∈ Formalism.QuantumDeterminants.UH (gramAt D V τ) := (_root_.GlobalTheory.SgnIdent.sgnLaw_holds D θ hθ true V).grp τ ▸ hg
     have hw' : ((smEquiv M θ hθ τ w : M.sm τ) : M.H τ) = M.rep τ g ((smEquiv M θ hθ τ (v τ) : M.sm τ) : M.H τ) := by
       rw [coe_smEquiv, coe_smEquiv]; exact hw
     have h := hT.equiv τ g hg' (fun ρ => smEquiv M θ hθ ρ (v ρ)) (smEquiv M θ hθ τ w) hw'
@@ -146,12 +146,12 @@ theorem isMultMap_toNeg {T : MMap M} (hT : IsMultMap θ M ∅ 1 T) : IsMultMap �
     rw [toNeg_apply, eq_update, h]
     show T (fun ρ => smEquiv M θ hθ ρ (v ρ)) (ofSgn true V x * atTau θ V τ g) =
       T (fun ρ => smEquiv M θ hθ ρ (v ρ)) (ofSgn true V (x * atTau θ (sgn true V) τ g))
-    rw [map_mul, (GlobalTheory.T.signedUnitaryGroup_compat D θ hθ true V).atTau τ g]
+    rw [map_mul, (_root_.GlobalTheory.SgnIdent.sgnLaw_holds D θ hθ true V).atTau τ g]
   · intro τ v x
     classical
     obtain ⟨ℓ, hℓ, hℓw⟩ := hT.cont τ (fun ρ => smEquiv M θ hθ ρ (v ρ)) (ofSgn true V x)
     refine ⟨ℓ, ?_, fun w => ?_⟩
-    · rw [(GlobalTheory.T.signedUnitaryGroup_compat D θ hθ true V).lie τ]; exact hℓ
+    · rw [(_root_.GlobalTheory.SgnIdent.sgnLaw_holds D θ hθ true V).lie τ]; exact hℓ
     · rw [toNeg_apply, eq_update, ← hℓw, coe_smEquiv]; rfl
 
 theorem isMultMap_ofNeg {T : MMap (negM M)} (hT : IsMultMap θ (negM M) ∅ 1 T) : IsMultMap θ M ∅ 1 (ofNeg M θ hθ T) := by
@@ -159,16 +159,16 @@ theorem isMultMap_ofNeg {T : MMap (negM M)} (hT : IsMultMap θ (negM M) ∅ 1 T)
   · intro v
     have e : (fun g => ofNeg M θ hθ T v (ofSgn true V g)) = T (fun τ => (smEquiv M θ hθ τ).symm (v τ)) := by
       funext g; rw [ofNeg_apply, MulEquiv.symm_apply_apply]
-    exact ((GlobalTheory.T.automorphic_cusp_forms_hermitianSpaceSignTwist D θ hθ true V _).1).1 (e ▸ hT.aut _)
+    exact ((_root_.GlobalTheory.sgn_fun_cusp D θ hθ true V _).1).1 (e ▸ hT.aut _)
   · intro v
     have e : (fun g => ofNeg M θ hθ T v (ofSgn true V g)) = T (fun τ => (smEquiv M θ hθ τ).symm (v τ)) := by
       funext g; rw [ofNeg_apply, MulEquiv.symm_apply_apply]
-    exact ((GlobalTheory.T.automorphic_cusp_forms_hermitianSpaceSignTwist D θ hθ true V _).2).1 (e ▸ hT.cusp _)
+    exact ((_root_.GlobalTheory.sgn_fun_cusp D θ hθ true V _).2).1 (e ▸ hT.cusp _)
   · intro v k hk
     exact absurd hk (Set.notMem_empty _)
   · intro τ g hg v w hw
     classical
-    have hg' : g ∈ Formalism.QuantumDeterminants.UH (gramAt D (sgn true V) τ) := ((GlobalTheory.T.signedUnitaryGroup_compat D θ hθ true V).grp τ).symm ▸ hg
+    have hg' : g ∈ Formalism.QuantumDeterminants.UH (gramAt D (sgn true V) τ) := ((_root_.GlobalTheory.SgnIdent.sgnLaw_holds D θ hθ true V).grp τ).symm ▸ hg
     have hw' : (((smEquiv M θ hθ τ).symm w : (negM M).sm τ) : (negM M).H τ) =
         (negM M).rep τ g (((smEquiv M θ hθ τ).symm (v τ) : (negM M).sm τ) : (negM M).H τ) := by
       rw [coe_smEquiv_symm, coe_smEquiv_symm]; exact hw
@@ -177,12 +177,12 @@ theorem isMultMap_ofNeg {T : MMap (negM M)} (hT : IsMultMap θ (negM M) ∅ 1 T)
     rw [ofNeg_apply, eq_symm_update, h]
     show T (fun ρ => (smEquiv M θ hθ ρ).symm (v ρ)) ((ofSgn true V).symm x * atTau θ (sgn true V) τ g) =
       T (fun ρ => (smEquiv M θ hθ ρ).symm (v ρ)) ((ofSgn true V).symm (x * atTau θ V τ g))
-    rw [map_mul, ← (GlobalTheory.T.signedUnitaryGroup_compat D θ hθ true V).atTau τ g, MulEquiv.symm_apply_apply]
+    rw [map_mul, ← (_root_.GlobalTheory.SgnIdent.sgnLaw_holds D θ hθ true V).atTau τ g, MulEquiv.symm_apply_apply]
   · intro τ v x
     classical
     obtain ⟨ℓ, hℓ, hℓw⟩ := hT.cont τ (fun ρ => (smEquiv M θ hθ ρ).symm (v ρ)) ((ofSgn true V).symm x)
     refine ⟨ℓ, ?_, fun w => ?_⟩
-    · rw [← (GlobalTheory.T.signedUnitaryGroup_compat D θ hθ true V).lie τ]; exact hℓ
+    · rw [← (_root_.GlobalTheory.SgnIdent.sgnLaw_holds D θ hθ true V).lie τ]; exact hℓ
     · rw [ofNeg_apply, eq_symm_update, ← hℓw, coe_smEquiv_symm]; rfl
 
 theorem toNeg_mem {T : MMap M} (hT : T ∈ Mult θ M ∅ 1) : toNeg M θ hθ T ∈ Mult θ (negM M) ∅ 1 := by

@@ -1,8 +1,8 @@
 module
 
-public import Development.WeilBound.ThetaLifts.LocalTheory.ConeShifts.PresOfHat
-public import Development.WeilBound.CoreStatements.CompactAveragingSplitting.EigenvectorLifting.Kcompact
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.OneMemKAt
+public import Development.WeilBound.ThetaLifts.LocalTheory.ConeShifts.Bundle0002
+public import Development.WeilBound.CoreStatements.CompactAveragingSplitting.EigenvectorLifting.Bundle0002
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1227
 
 @[expose] public section
 

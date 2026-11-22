@@ -2,7 +2,7 @@ module
 
 public import CompanionTheory.HarishChandraModules.KFiniteAnalyticVectors.FundamentalDomainCusps.HeightBoundSetup
 public import Mathlib
-public import Formalism.PeriodIntegrals.TransferenceCoverRad
+public import Formalism.PeriodIntegrals.Bundle0007
 public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.CoveringRadius.CoverRad
 
 @[expose] public section

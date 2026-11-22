@@ -1,12 +1,12 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HasOpBOfMemClosure
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1580
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WeylElementHasRationalWeilOperatorAdelicFourier
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SchwartzBruhatFiniteAdelesMemSpanRestrictedProdu
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdelicSchwartzSpaceMemSpanPureTensorsStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LocalFourierInversionUpToConstantStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ArchimedeanFourierInversionConstantStatement
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1722
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1731
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1704
 
 @[expose] public section
 
@@ -36,7 +36,7 @@ theorem fourier_twice_arch : ∀ (F : Type) [Field F] [NumberField F] (κ : Type
       ∫ y, (∫ x, f x * Complex.exp (-(2 * Real.pi * Complex.I) *
           (Algebra.trace ℝ (mixedEmbedding.mixedSpace F) (x ⬝ᵥ y) : ℝ)) ∂μ) *
         Complex.exp (-(2 * Real.pi * Complex.I) * (Algebra.trace ℝ (mixedEmbedding.mixedSpace F) (y ⬝ᵥ a) : ℝ)) ∂μ =
-      d * f (-a) := GlobalTheory.T.archimedean_fourier_inversion_constant
+      d * f (-a) := _root_.GlobalTheory.ArchFourier.fourier_twice_sInf
 
 theorem spAct_weyl {F : Type} [Field F] {κ : Type} [Fintype κ] [DecidableEq κ] {R : Type} [CommRing R] [Algebra F R]
     (w : (κ → R) × (κ → R)) :
@@ -83,7 +83,7 @@ theorem weyl_hasOpB : ∀ (F : Type) [Field F] [NumberField F] (ψ : AddChar (AF
     exact Measure.addHaarMeasure_self
   haveI := hμv
   obtain ⟨c₀, hc₀, hpure⟩ := GlobalTheory.T.integral_adelic_pureTensor_eq_product_local F κ μ μi μv hμv1
-  obtain ⟨ei', hei'bij, hei'⟩ := GlobalTheory.T.exists_archimedeanSchwartz_traceFourier_bijective F κ μi
+  obtain ⟨ei', hei'bij, hei'⟩ := _root_.GlobalTheory.ArchFourier.exists_fourier_sInf F κ μi
   have hψc : ∀ v, Continuous (GlobalTheory.LatVac.psiAt ψ v) := fun v => GlobalTheory.SchrSB.continuous_psiAt ψ hψ.1 v
   have hsub : ∀ v, ∀ φ ∈ SB (κ → Fv F v), φ ∈ intSub (GlobalTheory.LatVac.psiAt ψ v) (μv v) := fun v φ hφ y =>
     (hφ.1.continuous.mul ((hψc v).comp (continuous_id.dotProduct continuous_const))).integrable_of_hasCompactSupport

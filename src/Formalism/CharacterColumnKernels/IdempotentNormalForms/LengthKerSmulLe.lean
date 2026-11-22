@@ -1,8 +1,8 @@
 module
 
 public import Formalism.CharacterColumnKernels.StatBlockRhoCount
-public import Formalism.CharacterColumnKernels.IdempotentNormalForms.LengthEqKerAddRange
-public import Formalism.CharacterColumnKernels.IdempotentNormalForms.LengthKerOfDetEqZero
+public import Formalism.CharacterColumnKernels.IdempotentNormalForms.Bundle0005
+public import Formalism.CharacterColumnKernels.IdempotentNormalForms.Bundle0001
 
 @[expose] public section
 

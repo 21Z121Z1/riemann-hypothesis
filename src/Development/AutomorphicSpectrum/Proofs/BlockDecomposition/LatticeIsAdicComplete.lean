@@ -3,7 +3,7 @@ module
 public import Mathlib
 public import Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.PerfectoidPullbacks.LevelChainValuations.LatDefs
 public import Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.PerfectoidPullbacks.SplittingFieldLattices.GrSplit
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MemLatticeSubIffSum
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0149
 
 @[expose] public section
 

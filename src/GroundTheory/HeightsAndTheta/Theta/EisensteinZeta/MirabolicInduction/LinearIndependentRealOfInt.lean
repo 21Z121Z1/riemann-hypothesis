@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import GroundTheory.HeightsAndTheta.Heights.CovolumeCount
+public import GroundTheory.HeightsAndTheta.Heights.Bundle0003
 
 @[expose] public section
 

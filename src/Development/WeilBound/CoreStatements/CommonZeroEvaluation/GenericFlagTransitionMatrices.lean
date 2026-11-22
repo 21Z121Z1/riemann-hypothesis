@@ -1,11 +1,11 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsGenericFlag
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.GenericLuDecompositionUnique
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LuFactorsGenerateSameField
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.AlgIndepOfSameAdjoin
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.GenericFlagTriangularChange
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.Bundle0004
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0005
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0008
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0001
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0025
 public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.TowerComponentsCompatibleLaws
 
 @[expose] public section

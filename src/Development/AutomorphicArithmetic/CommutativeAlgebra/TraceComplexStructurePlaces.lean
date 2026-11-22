@@ -2,9 +2,9 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Statements.PlaceShiftStatements.PointsNonemptyUnitaryGaussian
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FinrankJointEigenspaceAddConjEqMul
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0915
 public import Development.AutomorphicArithmetic.RealSpanData.RealData
-public import Development.AutomorphicArithmetic.CommutativeAlgebra.TraceActionEqSumPlaces
+public import Development.AutomorphicArithmetic.CommutativeAlgebra.Bundle0051
 
 @[expose] public section
 

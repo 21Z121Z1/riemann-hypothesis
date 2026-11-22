@@ -2,9 +2,8 @@ module
 
 public import Mathlib
 public import GroundTheory.HeightsAndTheta.Heights.HeightsOfSets.DenseChart
-public import GroundTheory.HeightsAndTheta.Heights.HeightsOfSets.DenseHeight
-public import GroundTheory.HeightsAndTheta.Heights.HeightsOfSets.DenseLift
-public import GroundTheory.HeightsAndTheta.Heights.HeightsOfSets.DenseIntegral
+public import GroundTheory.HeightsAndTheta.Heights.HeightsOfSets.Bundle0002
+public import GroundTheory.HeightsAndTheta.Heights.HeightsOfSets.Bundle0001
 
 @[expose] public section
 

@@ -3,8 +3,8 @@ module
 public import Development.WeilBound.ThetaLifts.EigenvalueEndgame.SignatureSplitting.ClosedEmb
 public import Development.WeilBound.ThetaLifts.EigenvalueEndgame.SignatureSplitting.RightOfFd
 public import Development.AutomorphicSpectrum.Proofs.AdelicProofs.SiegelSetsSL2AdelicTie
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.LcscAdelicUnitaryGroup
-public import GroundTheory.GlobalFields.Adele.Compact
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0061
+public import GroundTheory.GlobalFields.Adele.Bundle0002
 
 @[expose] public section
 

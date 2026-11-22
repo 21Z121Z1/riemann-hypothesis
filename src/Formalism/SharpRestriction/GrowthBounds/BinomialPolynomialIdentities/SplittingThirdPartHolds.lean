@@ -1,11 +1,11 @@
 module
 
 public import Formalism.SharpRestriction.GrowthBounds.BinomialPolynomialIdentities.AdmissiblePolynomialBasisProv
-public import Formalism.SharpRestriction.GrowthBounds.BinomialPolynomialIdentities.AdmissibleWordBasis
-public import Formalism.SharpRestriction.GrowthBounds.BinomialPolynomialIdentities.AdmFourteen
+public import Formalism.SharpRestriction.GrowthBounds.BinomialPolynomialIdentities.Bundle0005
+public import Formalism.SharpRestriction.GrowthBounds.BinomialPolynomialIdentities.Bundle0006
 public import Formalism.SharpRestriction.GrowthBounds.BinomialPolynomialIdentities.AdmissibleExternalProduct
-public import Formalism.SharpRestriction.GrowthBounds.FrobeniusPaths
-public import Formalism.SharpRestriction.GrowthBounds.GLWeightTheory
+public import Formalism.SharpRestriction.GrowthBounds.Bundle0004
+public import Formalism.SharpRestriction.GrowthBounds.Bundle0003
 
 @[expose] public section
 

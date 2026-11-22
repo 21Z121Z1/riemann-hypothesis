@@ -1,9 +1,9 @@
 module
 
-public import Formalism.RealPlaceAnalysis.ThirdArithmeticHolds
-public import Formalism.PeriodIntegrals.DSInfCharCap
+public import Formalism.RealPlaceAnalysis.Bundle0004
+public import Formalism.PeriodIntegrals.Bundle0016
 public import Development.AbelianVarietyTheory.Statements.CuspFrameWeights.DiscreteSpectrumKFiniteDecomposition
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.CapelliOperatorOnUnitaryCoefficientEqDerived
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MapQdetEtr
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0136
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0189
 
 @[expose] public section

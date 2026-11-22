@@ -1,10 +1,11 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TwistedTraceIndicatorLevelLocalUnitaryStatement
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1089
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0036
 public import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.SatakeExponents.UniformizerValuations.FixedSpaceRankOne.TraceMulOfFinrankOne
 public import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.SatakeExponents.UniformizerValuations.FixedSpaceRankOne.SphOne
-public import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.SatakeExponents.UniformizerValuations.SphStarU
+public import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.SatakeExponents.UniformizerValuations.Bundle0002
 
 @[expose] public section
 
@@ -118,7 +119,7 @@ theorem sphStar : LocAlg → SphStarU := by
     have heq := finsum_inv_eq τ hmulτ hinvτ hdcτ hKτ F hF
     rw [← eqμ', ← eqc] at heq
     exact mul_right_cancel₀ hBne heq
-  · have h := (GlobalTheory.T.twistedTrace_indicator_level_localUnitary E n w (KL n w) hlev σ).2.2.1
+  · have h := (_root_.GlobalTheory.TwTrUnit.twTr_unit E n w (KL n w) hlev σ).2.2.1
     rw [h, Subgroup.relIndex_self, hrank]
     simp
 

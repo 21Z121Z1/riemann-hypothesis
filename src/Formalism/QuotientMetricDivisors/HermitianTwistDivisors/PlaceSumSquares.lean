@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Formalism.QuotientMetricDivisors.UntwistedChoice
+public import Formalism.QuotientMetricDivisors.Bundle0004
 public import Formalism.QuotientMetricDivisors.HermitianTwistDivisors.ConjugateWeightLatticeOfGeneral
 
 @[expose] public section

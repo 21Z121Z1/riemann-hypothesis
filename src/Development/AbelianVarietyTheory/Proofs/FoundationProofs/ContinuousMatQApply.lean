@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.Foundations.FinalTheorems
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.CupProductCoboundaryMod
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0346
 
 @[expose] public section
 

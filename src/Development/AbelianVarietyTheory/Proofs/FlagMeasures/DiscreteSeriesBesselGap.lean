@@ -1,19 +1,18 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.OnePlaceKF
+public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.Bundle0010
 public import Development.AbelianVarietyTheory.Definitions.Jets.SumIoPr
 public import Formalism.SharpRestriction.CuspSpanNormBounds.LeadMinorK
-public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.DegVand
-public import Formalism.LocalRingCardinality.DataTies
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.BesselQuotientMassEqConstMulNormSqTranslatesStatement
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsKFinNeZeroOfCwCont
+public import Formalism.LocalRingCardinality.Bundle0003
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.BesselQuotientMassEqConstMulNormSqTranslates
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0232
 public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.BesselGapDimensionFormula
-public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.SumNonneg
+public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0052
 public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.FrechetContinuousContinuousOnOrbitHasDerivAt
-public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.GrowthUnitaryGroupRpowNegIntegrable
-public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.DecayThresholdsOfSpectralGapCondition
-public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.DecSmoothAtGapOfDecSmooth
+public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0056
+public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0046
+public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0042
 
 @[expose] public section
 
@@ -367,7 +366,7 @@ theorem exists_kFin_period_ne_zero : Hyps → ∀ (k r : ℕ) (ε : Fin (2 * r +
   intro hy k r ε mu h R Wp _ _ _ _ z π u μW μN μG νq B l w hR hgap hok hS hB hwK h0 hfin hl
   have hK : PI.KFinSmooth := hy.1.2.2.1
   have hw : w ∈ R.sm := hK k r ε mu R.H R.σ hR.1 hR.2 w hwK
-  obtain ⟨c, hc, hiso⟩ := GlobalTheory.T.exists_l2SG_translates_eq_const_mul_norm_sq k r ε mu R Wp z π u μW μN μG νq B w hR hS hB hw hfin
+  obtain ⟨c, hc, hiso⟩ := _root_.GlobalTheory.BesselIsometry.besselQuotientMass_eq_const_mul_norm_sq_translates k r ε mu R Wp z π u μW μN μG νq B w hR hS hB hw hfin
   exact GlobalTheory.exists_kFin_ne_zero_of_cwCont hK k r ε mu R hR Wp l hl.1.1 hl.1.2.1 hl.1.2.2.2
     (nzOn_of_mass hy hR hgap hok hS hB hwK hc hiso h0 hl)
 

@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Formalism.SharpRestriction.GlobalSchurBounds.SlopeMaxOpenOfHookTwoLeV
-public import Formalism.LocalToGlobal.GlobalTheory.GL4.PTenFrames
+public import Formalism.SharpRestriction.GlobalSchurBounds.Bundle0002
+public import Formalism.LocalToGlobal.GlobalTheory.GL4.Bundle0002
 
 @[expose] public section
 

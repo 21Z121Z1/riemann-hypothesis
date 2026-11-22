@@ -2,10 +2,10 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.Degenerations.PullChartIsLB
-public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsUniqueIsRatio
-public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.IsPartPartSec
-public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.GroupAlgebraSingleOneMemOfSpan
-public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsPowEqTorus
+public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.Bundle0016
+public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.Bundle0017
+public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.Bundle0005
+public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.Bundle0044
 
 @[expose] public section
 

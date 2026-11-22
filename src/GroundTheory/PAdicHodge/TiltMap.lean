@@ -5,7 +5,7 @@ public import GroundTheory.PAdicHodge.PerfectoidField
 public import GroundTheory.PAdicHodge.TiltValuation
 public import GroundTheory.PAdicHodge.TiltField
 public import GroundTheory.PAdicHodge.KerTheta
-public import GroundTheory.PAdicHodge.KerFontaineThetaCompFrobeniusEquivSymmPow
+public import GroundTheory.PAdicHodge.Bundle0003
 
 @[expose] public section
 

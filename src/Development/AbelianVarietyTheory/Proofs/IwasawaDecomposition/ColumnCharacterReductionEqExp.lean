@@ -3,8 +3,8 @@ module
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.LatAtLattice
 public import Formalism.LocalToGlobal.BesselHermitianTheta.TiedWeil
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsGLocIdGChiTied
-public import Formalism.LocalRingCardinality.ConjSqrtMinusD
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0289
+public import Formalism.LocalRingCardinality.Bundle0001
 
 @[expose] public section
 

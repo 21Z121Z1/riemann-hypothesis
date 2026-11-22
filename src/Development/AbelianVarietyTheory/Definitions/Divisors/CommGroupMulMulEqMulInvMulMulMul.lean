@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import ReciprocityTheory.AnalyticForms.RegularLocalRings.DivSheaf
+public import ReciprocityTheory.AnalyticForms.RegularLocalRings.Bundle0003
 public import Development.AbelianVarietyTheory.Definitions.QuasicoherentCohomology.IsQuasiRegularSeqSelfIffLocalizationMaximal
 public import Development.AbelianVarietyTheory.Definitions.Divisors.LineBundleGlobalSectionsDimCongrPicardClass
 public import Development.AbelianVarietyTheory.Definitions.Divisors.IsUnitMkOfFormallyUnramified

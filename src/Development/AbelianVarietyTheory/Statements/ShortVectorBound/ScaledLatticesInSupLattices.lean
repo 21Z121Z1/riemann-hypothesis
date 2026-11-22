@@ -3,8 +3,8 @@ module
 public import Mathlib
 public import Development.AutomorphicArithmetic.PrimeDiscriminants.SlopeTestRemainingChoices
 public import Development.AbelianVarietyTheory.Definitions.PlaceAdaptation.AdaptStd
-public import Development.AbelianVarietyTheory.Definitions.ThetaValues.SWEqSOf
-public import Formalism.LocalToGlobal.ProjectiveLattices.RecPJThAllNeBot
+public import Development.AbelianVarietyTheory.Definitions.ThetaValues.Bundle0002
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0033
 public import Formalism.LocalToGlobal.ProjectiveLattices.ChartDirectionsIntegral
 
 @[expose] public section

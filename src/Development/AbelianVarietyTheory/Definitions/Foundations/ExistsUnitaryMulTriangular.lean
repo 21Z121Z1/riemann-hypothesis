@@ -4,8 +4,8 @@ public import Mathlib
 public import Formalism.SatakeDualWeyl.DualWeylRepApply
 public import Formalism.HarderNarasimhan.StatementPl
 public import Formalism.LocalRingCardinality.DataArith
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.LatticeHasBasisAtEveryFinitePlace
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ActPMemLocPNabStdOfIsBasisAt
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0193
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0211
 public import Development.AbelianVarietyTheory.Proofs.CovolumeBounds.IntegralConjInnerMulInnerOfIsEmptyEquiv
 
 @[expose] public section

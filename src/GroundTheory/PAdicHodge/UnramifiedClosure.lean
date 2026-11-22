@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import GroundTheory.PAdicHodge.GaloisOnCp
-public import GroundTheory.PowerSubgroups.CountableNeighbourhoods.UnramifiedClosureCountableNeighbourhoods
+public import GroundTheory.PowerSubgroups.CountableNeighbourhoods.Bundle0002
 
 @[expose] public section
 

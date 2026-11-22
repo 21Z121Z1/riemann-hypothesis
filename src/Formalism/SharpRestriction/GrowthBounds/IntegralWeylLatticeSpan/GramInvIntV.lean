@@ -1,7 +1,7 @@
 module
 
 public import Formalism.SharpRestriction.GrowthBounds.IntegralWeylLatticeSpan.LatSOfLocBasis
-public import Formalism.LocalToGlobal.GroupLattices.TiedFamilies.TiePtOne
+public import Formalism.LocalToGlobal.GroupLattices.TiedFamilies.Bundle0001
 
 @[expose] public section
 

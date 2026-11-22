@@ -1,14 +1,14 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CasKOp
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EqZeroOfMemWeakIn
-public import Development.AbelianVarietyTheory.Definitions.Divisors.GlRes
-public import Development.AbelianVarietyTheory.Definitions.Divisors.IsExpLieAlgebraComplexUnits
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsSmoothConvolutionEqDerivativeStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LaplacianPolynomialKernelOfPolynomialLaplacianStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsHaarGLRealPointsDensityDetInvStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsTestFunctionLieAlgebraPullbackDetStatement
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0709
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1176
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0019
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0005
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0529
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1246
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1200
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1220
 
 @[expose] public section
 
@@ -59,7 +59,7 @@ theorem exists_test_reproducing : ∀ (E : Type) [Field E] [NumberField E] [_roo
   intro E _ _ _ a ν hν p hp
   obtain ⟨d, b, P, hP, hsol, -⟩ := GlobalTheory.T.laplacianPolynomialKernel_of_polynomial_laplacian E a p hp
   borelize ↥(GlobalTheory.HCA.glG E a)
-  obtain ⟨μ, hμ, hint⟩ := GlobalTheory.T.exists_haar_GL_realPoints_density_det_inv E a ν hν
+  obtain ⟨μ, hμ, hint⟩ := _root_.GlobalTheory.GLHaar.glHaar E a ν hν
   haveI : CompleteSpace (Matrix (Fin a) (Fin a) (Cinf E)) := FiniteDimensional.complete ℝ _
   obtain ⟨α₀, hs, -, hc, hα₀⟩ := @GlobalTheory.T.exists_smooth_convolution_eq_derivative (Matrix (Fin a) (Fin a) (Cinf E)) _ _ _ _ (GlobalTheory.HCA.glG E a)
     (GlobalTheory.HCA.glL E a) (GlobalTheory.HCA.glH E a) d b P hP _ ⟨rfl⟩ μ hμ []

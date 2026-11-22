@@ -2,10 +2,9 @@ module
 
 public import Mathlib
 public import GroundTheory.ProfiniteCohomology.CohomologicalDimension.Subgroup
-public import GroundTheory.ProfiniteCohomology.CohomologicalDimension.NotDvdSuperIndexBotOfIsProPGroup
-public import GroundTheory.ProfiniteCohomology.CohomologicalDimension.CdpOpenSubgroupLe
+public import GroundTheory.ProfiniteCohomology.CohomologicalDimension.Bundle0001
 public import GroundTheory.ProfiniteCohomology.CohomologicalDimension.Closed
-public import GroundTheory.ProfiniteCohomology.NotDvdSuperIndexIffMap
+public import GroundTheory.ProfiniteCohomology.Bundle0004
 public import GroundTheory.ProfiniteCohomology.LocalClassFormation.FiniteVanishing.Vanishing
 
 @[expose] public section

@@ -4,9 +4,9 @@ public import Mathlib
 public import ReciprocityTheory.GaloisValuations.Global
 public import Development.AbelianVarietyTheory.BlockTheory.GlobalSignature.RayPrincipalIdeals
 public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.ExistsUniqueHcharOfFiniteOrder
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.UnitOpenAndCongrOpen
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.FiniteIndexUnitIdlSup
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.DenseRangeUnits
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0096
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0092
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0099
 
 @[expose] public section
 

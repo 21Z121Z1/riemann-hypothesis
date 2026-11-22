@@ -1,24 +1,35 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.TorusHaarMeasure.ThetaArchimedeanDataDefiniteModelsNonemptyStatement
-public import Development.AbelianVarietyTheory.Proofs.TorusHaarMeasure.CuspReadingsSpanModelFormsShiftedWeightsStatement
-public import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.PointsInterpolationGenericSections
-public import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.CuspFormVanishingAtPointsMulPowMemSpan
+public import Development.AbelianVarietyTheory.Proofs.TorusHaarMeasure.ThetaArchimedeanDataDefiniteModelsNonempty
+public import Development.AbelianVarietyTheory.Definitions.ThetaValues.GamAt
+public import Development.AbelianVarietyTheory.Definitions.ArchimedeanThetaValues.Bundle0001
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PlaceDivisors.StChartF
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PullbackSections.Bundle0013
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PullbackSections.Bundle0003
+public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0007
+public import Formalism.SharpRestriction.GenusPolyhedralBounds.RelativeIndexClassSets.Bundle0005
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0040
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0043
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0039
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0037
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0034
+public import Formalism.LocalToGlobal.ProjectiveLattices.DepthTie
+public import Development.AbelianVarietyTheory.Definitions.ThetaValues.Generic
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0031
+public import Development.AbelianVarietyTheory.Proofs.TorusHaarMeasure.CuspReadingsSpanModelFormsShiftedWeights
+public import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.Bundle0067
+public import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.Bundle0069
 public import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.LeadingProductsIndependentModuloDeepProducts
-public import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.ArchimedeanFlatDecompositionIndexing
-public import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.FinrankLowerBoundCuspFormVanishingLowCoeff
-public import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.CuspFormVanishingLowCoeffMemLeadingAddDeepSpan
-public import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.ExistsAlgIndependentCoeffsFlatDatum
-public import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.ExistsBaseEmbeddingReadingForms
+public import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.Bundle0070
+public import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.Bundle0064
+public import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.Bundle0073
 public import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.InBasisIffPointValuesLinearIndependentSpan
-public import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.ExistsValueBasisInSpanningForms
-public import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.ShareRdOfInBasis
+public import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.Bundle0065
+public import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.Bundle0072
 public import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.ShareRhoROfAnFacts
-public import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.NonemptyHeightOneSpectrumRingOfIntegers
-public import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.InContainMROfAnFacts
-public import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.ReadingsCuspAndIndependent
-public import Formalism.LocalToGlobal.ProjectiveLattices.OneCusp
+public import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.Bundle0060
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0032
 public import Development.AbelianVarietyTheory.Definitions.HeightFunctions.GrowthConstantBoundGcR
 
 @[expose] public section
@@ -257,8 +268,8 @@ set_option maxHeartbeats 4000000 in
 set_option synthInstance.maxHeartbeats 400000 in
 theorem sharesDef : GlobalTheory.RunJoin.SharesDefSt := by
   intro D T h EX p hj large₂ H C2 A2 CT ka wL wF Tn nP nW h0 S nus hPar hPg hC hL G₀ hNZ Sh hSh
-  obtain ⟨A⟩ := GlobalTheory.T.thetaArchimedeanData_definiteModels_nonempty D T h EX p hj large₂ H C2 A2 CT ka wL wF Tn nP nW h0 S nus hPar hPg hC G₀.N G₀.w hNZ
-  obtain ⟨hOn, hM⟩ := GlobalTheory.T.cuspReadings_span_model_forms_shifted_weights D T h _ hj large₂ H C2 A2 CT ka wL wF Tn nP nW h0 EX p hPar hPg
+  obtain ⟨A⟩ := _root_.GlobalTheory.ArchDefinite.archAt_nonempty_of_definite D T h EX p hj large₂ H C2 A2 CT ka wL wF Tn nP nW h0 S nus hPar hPg hC G₀.N G₀.w hNZ
+  obtain ⟨hOn, hM⟩ := _root_.GlobalTheory.RunJoin.onto_of_page D T h _ hj large₂ H C2 A2 CT ka wL wF Tn nP nW h0 EX p hPar hPg
   obtain ⟨hka, hT⟩ := weight_and_degree hPg.hyp
   have hp : ∀ k : (T.U D.R.m T.σ₀).Comp, ((T.U D.R.m T.σ₀).X k).p0 = 0 := fun k => by
     have h0 : WeightFamilies.rho D D.R.m = 0 := by

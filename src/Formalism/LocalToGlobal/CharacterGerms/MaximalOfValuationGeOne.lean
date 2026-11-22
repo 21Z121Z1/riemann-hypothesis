@@ -1,6 +1,6 @@
 module
 
-public import Formalism.LocalToGlobal.CharacterGerms.FirstStepSecondHalfCondition
+public import Formalism.LocalToGlobal.CharacterGerms.Bundle0021
 public import Formalism.LocalToGlobal.CharacterGerms.RowTiePGerm
 
 @[expose] public section

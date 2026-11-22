@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsQuasiInv
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsClopenTorsionKernelLocus
-public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsFiniteEtaleLatticeTorsionHom
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2069
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2288
+public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0019
 
 @[expose] public section
 

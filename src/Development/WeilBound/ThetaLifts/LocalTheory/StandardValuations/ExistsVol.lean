@@ -4,8 +4,8 @@ public import Development.WeilBound.ThetaLifts.LocalTheory.StandardValuations.Co
 public import Development.WeilBound.ThetaLifts.LocalTheory.StandardValuations.SmallFSing
 public import Development.WeilBound.ThetaLifts.LocalTheory.UnramifiedDeterminedBySpherical
 public import Development.WeilBound.CoreStatements.CompactAveragingSplitting.EigenvectorLifting.SplitCharacterFacts
-public import Development.AutomorphicSpectrum.Proofs.MembershipProofs.ResCardAndUniformizer
-public import Development.AbelianVarietyTheory.Definitions.Foundations.SecondCountableAndT2LocalField
+public import Development.AutomorphicSpectrum.Proofs.MembershipProofs.Bundle0003
+public import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0005
 
 @[expose] public section
 

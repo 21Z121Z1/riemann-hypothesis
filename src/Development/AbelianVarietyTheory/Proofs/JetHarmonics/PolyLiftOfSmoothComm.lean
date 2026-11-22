@@ -2,8 +2,8 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.Jets.BasicLiftAll
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.InvariantOperatorUnderJacquet
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.LiftCapelliOperators
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0090
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0164
 public import Formalism.HermitianCurvature.HermitianCurvatureProofs.LiftClosedUnderOperations
 
 @[expose] public section

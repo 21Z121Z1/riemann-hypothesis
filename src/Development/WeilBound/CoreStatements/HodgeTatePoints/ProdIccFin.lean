@@ -1,13 +1,13 @@
 module
 
 public import Mathlib
-public import ReciprocityTheory.DualLattices.CotangentSurjective
+public import ReciprocityTheory.DualLattices.Bundle0004
 public import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.IsTight
-public import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.StepOrderRes
-public import Development.WeilBound.CoreStatements.HodgeTatePoints.RcProj
+public import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.Bundle0003
+public import Development.WeilBound.CoreStatements.HodgeTatePoints.Bundle0033
 public import Development.WeilBound.CoreStatements.HodgeTatePoints.HasLenOfEquiv
-public import ReciprocityTheory.DualLattices.EigenLengthProductStatementHolds
-public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.TeichmullerCharacterOrderGenerates
+public import ReciprocityTheory.DualLattices.Bundle0019
+public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.Bundle0005
 
 @[expose] public section
 

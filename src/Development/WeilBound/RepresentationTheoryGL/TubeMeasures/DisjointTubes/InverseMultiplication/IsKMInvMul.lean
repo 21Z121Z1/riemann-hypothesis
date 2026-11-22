@@ -1,7 +1,7 @@
 module
 
 public import Development.WeilBound.RepresentationTheoryGL.TubeMeasures.DisjointTubes.TubeSt
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsRepsModKM
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0437
 
 @[expose] public section
 
@@ -63,7 +63,7 @@ theorem idx : IdxSt := by
   classical
   have hFG : Λ.FG := hSD.2.2.1
   obtain ⟨e, heΛ, he⟩ := GlobalTheory.T.exists_gens_mod_nsmul_of_fg_numberField E r M Λ hM hFG
-  obtain ⟨T, hTc, hTΛ, hT⟩ := GlobalTheory.T.exists_reps_mod_lattice_card_le E r M Λ hM hFG
+  obtain ⟨T, hTc, hTΛ, hT⟩ := _root_.GlobalTheory.lattice_mod_reps_card_le E r M Λ hM hFG
   have hLo : ∀ o : 𝓞 E, ∀ x ∈ (Λ : Set (Fin r → E)), o • x ∈ (Λ : Set (Fin r → E)) :=
     fun o x hx => Λ.smul_mem o hx
   have hLb : ∀ b : 𝓞 (maximalRealSubfield E), ∀ x ∈ (Λ : Set (Fin r → E)),

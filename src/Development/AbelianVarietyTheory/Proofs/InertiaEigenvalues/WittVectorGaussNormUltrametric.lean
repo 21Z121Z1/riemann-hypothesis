@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.UltraSumLe
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0026
 
 @[expose] public section
 

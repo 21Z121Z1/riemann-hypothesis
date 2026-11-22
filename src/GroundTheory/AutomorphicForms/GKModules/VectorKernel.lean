@@ -3,7 +3,7 @@ module
 public import Mathlib
 public import GroundTheory.AutomorphicForms.GKModules.Casimir
 public import GroundTheory.AutomorphicForms.GKModules.Garding
-public import GroundTheory.AutomorphicForms.AutomorphicFormSpaces.GKStableConv
+public import GroundTheory.AutomorphicForms.AutomorphicFormSpaces.Bundle0001
 public import GroundTheory.AutomorphicForms.AutomorphicFormSpaces.GKStableLaplacian
 
 @[expose] public section

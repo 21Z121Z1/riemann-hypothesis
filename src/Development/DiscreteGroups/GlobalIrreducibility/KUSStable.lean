@@ -1,6 +1,6 @@
 module
 
-public import Development.DiscreteGroups.GlobalIrreducibility.TopLeftElemInv
+public import Development.DiscreteGroups.GlobalIrreducibility.Bundle0017
 
 @[expose] public section
 

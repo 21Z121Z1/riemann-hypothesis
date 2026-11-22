@@ -2,9 +2,8 @@ module
 
 public import Mathlib
 public import Development.WeilBound.CoreStatements.AbelianHeightsDuality.DividedPowerAlgebras.IsNilpotentOfIsNilDP
-public import Development.WeilBound.CoreStatements.AbelianHeightsDuality.DividedPowerAlgebras.TagIso
-public import Development.WeilBound.CoreStatements.AbelianHeightsDuality.DividedPowerAlgebras.IsDPMorphismId
-public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.ExistsCrystalPairing
+public import Development.WeilBound.CoreStatements.AbelianHeightsDuality.DividedPowerAlgebras.Bundle0003
+public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.Bundle0022
 
 @[expose] public section
 

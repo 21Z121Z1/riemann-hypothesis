@@ -1,10 +1,10 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.AdjFormula
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.IsIntOv
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.MemHyperspecialIffGIntOfSuppAtSplit
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.GramMulInv
+public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0021
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0093
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0114
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0127
 
 @[expose] public section
 
@@ -220,7 +220,7 @@ theorem mem_iff_coords (he : IsSplitIdem D e) (hβ : Frame W e π β)
 
 theorem latIndex_split_local : ∀ {D : D7} (e : AE D) (v : HeightOneSpectrum (𝓞 D.host.F)) (π : AE D →+* Fv D.host.F v), IsSplitIdem D e → Chart e v π → ∀ (W : HSp D) (β : GL (Fin W.rank) (Fv D.host.F v)), Frame W e π β → ∀ g : GA D W, SuppAt e W g → latIndex W g = ((Submodule.span (Ov D v) (Set.range (Pi.basisFun (Fv D.host.F v) (Fin W.rank)))).map ((((rho W π β g : GL (Fin W.rank) (Fv D.host.F v)) : Matrix (Fin W.rank) (Fin W.rank) (Fv D.host.F v)).mulVecLin).restrictScalars (Ov D v))).toAddSubgroup.relIndex (Submodule.span (Ov D v) (Set.range (Pi.basisFun (Fv D.host.F v) (Fin W.rank)))).toAddSubgroup * ((Submodule.span (Ov D v) (Set.range (Pi.basisFun (Fv D.host.F v) (Fin W.rank)))).map ((((rho W π β g⁻¹ : GL (Fin W.rank) (Fv D.host.F v)) : Matrix (Fin W.rank) (Fin W.rank) (Fv D.host.F v))ᵀ.mulVecLin).restrictScalars (Ov D v))).toAddSubgroup.relIndex (Submodule.span (Ov D v) (Set.range (Pi.basisFun (Fv D.host.F v) (Fin W.rank)))).toAddSubgroup := by
   intro D e v π he hπ W β hβ g hg
-  have hd := GlobalTheory.T.conj_mem_completedLattice_iff_dual_splitPlace e v π he hπ W β hβ
+  have hd := _root_.GlobalTheory.SplitDualLat.conj_mem_lamHat_iff e v π he hπ W β hβ
   have h0 : latIndex W g = (((LamHat W).map (finMat D.sp.cm.sig W.gram g).mulVecLin.toAddMonoidHom).comap
       (finV D W.rank)).relIndex ((LamHat W).comap (finV D W.rank)) := by
     unfold latIndex

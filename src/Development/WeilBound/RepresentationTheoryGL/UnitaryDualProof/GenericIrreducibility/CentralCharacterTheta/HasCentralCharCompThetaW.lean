@@ -1,8 +1,8 @@
 module
 
 public import Development.WeilBound.RepresentationTheoryGL.UnitaryDualProof.GenericIrreducibility.CentralProd2
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.StdQuotGenericOfStdSubGeneric
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CentralCharacterEqProdSupercuspidalSupport
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0631
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0643
 
 @[expose] public section
 

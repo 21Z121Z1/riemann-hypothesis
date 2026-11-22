@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.GrIsGenAt
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0026
 
 @[expose] public section
 

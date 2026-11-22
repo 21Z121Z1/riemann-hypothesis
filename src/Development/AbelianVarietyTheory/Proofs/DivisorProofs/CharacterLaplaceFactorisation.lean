@@ -1,12 +1,12 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Divisors.IsUnifAt
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0036
 public import ReciprocityTheory.ReductiveGroups.SymplecticTraces.WeylCharacters.SqChar
-public import ReciprocityTheory.ReductiveGroups.SymplecticTraces.WeylCharacters.Branch
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.WeylNumeratorLaplace
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ConjSubMulNegMulOfNormOne
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsConjDiagonal
+public import ReciprocityTheory.ReductiveGroups.SymplecticTraces.WeylCharacters.Bundle0001
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0094
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0007
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0024
 
 @[expose] public section
 

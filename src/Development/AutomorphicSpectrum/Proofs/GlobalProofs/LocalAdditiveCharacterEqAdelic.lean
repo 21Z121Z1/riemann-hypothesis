@@ -4,7 +4,7 @@ public import Mathlib
 public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.HeckeTateFunctionalEquationCM
 public import GroundTheory.GlobalFields.TateThesis.RootNumberLocalFinite
 public import GroundTheory.GlobalFields.AnalyticClassNumber.HeckeContinued
-public import Development.AutomorphicSpectrum.Proofs.GlobalProofs.ContinuousIdeleCircle
+public import Development.AutomorphicSpectrum.Proofs.GlobalProofs.Bundle0037
 
 @[expose] public section
 

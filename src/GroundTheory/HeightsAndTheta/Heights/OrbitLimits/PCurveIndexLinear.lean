@@ -1,10 +1,8 @@
 module
 
 public import Mathlib
-public import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.StatementsCurveIndexLinear
-public import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.StatementsCurveRingFinite
-public import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.StatementsCurveClosedPointChart
-public import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.StatementsInvertibleIndexMul
+public import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.Bundle0035
+public import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.Bundle0003
 
 @[expose] public section
 

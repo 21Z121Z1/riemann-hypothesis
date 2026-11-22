@@ -2,24 +2,22 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.T2SpaceNumberFieldInfiniteAdeles
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.UnitaryStabilizerAnisotropicVectorEquivComplemenStatement
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.MeasurableEmbeddingAdelicTupleLocalComponentsStatement
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IntegralPointsFinitePlaceTensorPropertiesStatement
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsNiceLocalFieldProductRingInfiniteAdelesComplet
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.RestrictedProductMeasureBasicPropertiesStatement
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.HermitianQuadraticUnitaryLocalComponents
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.MeasurableSetOrbitExistsMeasurableSectionStatement
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.TwoStepPairMeasureFiniteOnCompactsStatement
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.WittTheoremAdelicOneVectorStatement
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IntegralWittTheoremAlmostAllPlacesStatement
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ProductFormulaChangeSetsOutsideFiniteSetStatement
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.RestrictedProductTailSplitFiniteFactorsStatement
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.TailProdMulOfLatticeMassMulStatement
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.LintegralOrthogonalComplementPairIndepGroupElemeStatement
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.EventuallyIntegralOrthogonalComplementPairStatement
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.HermitianQuadraticFormOrbitRationalVectorEqStatement
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsLocalComponentsAdelicUnitaryElementStatement
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ContinuousUnitaryTwoStepVectorAndTranslatePairStatement
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.UnitaryStabilizerAnisotropicVectorEquivComplemen
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0155
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0147
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0185
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0145
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0169
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0178
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0165
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0157
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0158
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0149
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0166
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0150
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0154
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0161
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0140
 
 @[expose] public section
 
@@ -57,8 +55,8 @@ theorem isProd_of_large (σ : E →ₐ[F] E) {n M : ℕ} (ν : Measure (Fin n �
   refine ⟨hc, fun S fi fv hfi hfv => ?_⟩
   have h1 : ∀ v, v ∈ S ∪ S₀ ↔ v ∈ S ∨ v ∈ S₀ \ S := by intro v; simp; tauto
   have h2 : Disjoint S (S₀ \ S) := Finset.disjoint_sdiff
-  rw [GlobalTheory.T.restrictedProduct_tail_split_finite_factors F E d b n M mi mv S (S₀ \ S) (S ∪ S₀) hc h1 h2]
-  exact GlobalTheory.T.product_formula_change_sets_outside_finite_set F E d b n M ν mi mv S (S₀ \ S) (S ∪ S₀) (fun v => latV b v) h1 h2
+  rw [_root_.GlobalTheory.GaugeEx.TailSplit.main F E d b n M mi mv S (S₀ \ S) (S ∪ S₀) hc h1 h2]
+  exact _root_.GlobalTheory.GaugeSetChange.product_formula_change_sets F E d b n M ν mi mv S (S₀ \ S) (S ∪ S₀) (fun v => latV b v) h1 h2
     (fun v => measurableSet_latV b σ v n M) (fun _ _ => rfl)
     (h _ Finset.subset_union_right) fi fv hfi hfv
 
@@ -80,8 +78,8 @@ theorem isProd_sets {n M : ℕ} {ν : Measure (Fin n → Fin M → AF F ⊗[F] E
   set S₀ := hfin.toFinset with hS₀
   have h1 : ∀ v, v ∈ S ∪ S₀ ↔ v ∈ S ∨ v ∈ S₀ \ S := by intro v; simp; tauto
   have h2 : Disjoint S (S₀ \ S) := Finset.disjoint_sdiff
-  rw [GlobalTheory.T.restrictedProduct_tail_split_finite_factors F E d b n M mi mv S (S₀ \ S) (S ∪ S₀) h.1 h1 h2,
-    GlobalTheory.T.product_formula_change_sets_outside_finite_set F E d b n M ν mi mv S (S₀ \ S) (S ∪ S₀) A h1 h2 hA
+  rw [_root_.GlobalTheory.GaugeEx.TailSplit.main F E d b n M mi mv S (S₀ \ S) (S ∪ S₀) h.1 h1 h2,
+    _root_.GlobalTheory.GaugeSetChange.product_formula_change_sets F E d b n M ν mi mv S (S₀ \ S) (S ∪ S₀) A h1 h2 hA
     (fun v hv => by
       by_contra hne
       exact hv (Finset.mem_union_right _ (hfin.mem_toFinset.2 hne)))
@@ -115,18 +113,18 @@ variable (R : Type) [CommRing R] [Algebra F R] [TopologicalSpace R] [IsTopologic
 
 theorem measurable_pair (y : Fin 1 → Fin (M + 1) → R ⊗[F] E) (g : HA R σ J) :
     Measurable fun y' => pairOf R σ J B y g y' :=
-  ((GlobalTheory.T.continuous_unitaryTwoStepVectorAndTranslatePair F E σ R M J B).comp (continuous_const.prodMk (continuous_const.prodMk continuous_id))).measurable
+  ((_root_.GlobalTheory.GaugeEx.continuous_pairOf_joint F E σ R M J B).comp (continuous_const.prodMk (continuous_const.prodMk continuous_id))).measurable
 
 theorem exists_sec (x : Fin 1 → Fin (M + 1) → E) :
     MeasurableSet {y : Fin 1 → Fin (M + 1) → R ⊗[F] E | ∃ g : HA R σ J, g • ratTup (F := F) R x = y} ∧
     ∃ s, IsSec R σ J x s ∧ ∀ (m' : Measure (Fin 1 → Fin M → R ⊗[F] E)), IsFiniteMeasureOnCompacts m' →
       ∀ f : (Fin 2 → Fin (M + 1) → R ⊗[F] E) → ℝ≥0∞, Measurable f →
         Measurable fun y => ∫⁻ y', f (pairOf R σ J B y (s y) y') ∂m' := by
-  obtain ⟨h1, s, hs, hs'⟩ := GlobalTheory.T.measurableSet_orbit_exists_measurable_section (HA R σ J) (Fin 1 → Fin (M + 1) → R ⊗[F] E) (ratTup (F := F) R x)
+  obtain ⟨h1, s, hs, hs'⟩ := _root_.GlobalTheory.OrbitSection.measurableSet_orbit_and_exists_section (HA R σ J) (Fin 1 → Fin (M + 1) → R ⊗[F] E) (ratTup (F := F) R x)
   refine ⟨h1, s, hs', fun m' hm' f hf => ?_⟩
   have hm : Measurable fun p : (Fin 1 → Fin (M + 1) → R ⊗[F] E) × (Fin 1 → Fin M → R ⊗[F] E) =>
       f (pairOf R σ J B p.1 (s p.1) p.2) :=
-    hf.comp ((GlobalTheory.T.continuous_unitaryTwoStepVectorAndTranslatePair F E σ R M J B).measurable.comp
+    hf.comp ((_root_.GlobalTheory.GaugeEx.continuous_pairOf_joint F E σ R M J B).measurable.comp
       (measurable_fst.prodMk ((hs.comp measurable_fst).prodMk measurable_snd)))
   exact hm.lintegral_prod_right'
 
@@ -148,7 +146,7 @@ theorem good_ae (hCM : IsCMExt F E σ) (hS : StepData σ J x a B J') :
       ∀ (y : Fin 1 → Fin (M + 1) → Fv F v ⊗[F] E) (g : HA (Fv F v) σ J),
         g • ratTup (F := F) (Fv F v) x = y → y ∈ latV b v →
         m' {y' | pairOf (Fv F v) σ J B y g y' ∈ latV b v} = m' (latV b v) := by
-  filter_upwards [GlobalTheory.T.eventually_integral_orthogonalComplement_pair F E σ d b M J x a B J' hS,
+  filter_upwards [_root_.GlobalTheory.GaugeEx.PairLat.main F E σ d b M J x a B J' hS,
     GlobalTheory.T.integral_witt_theorem_almost_all_places F E σ hCM d b (M + 1) J x a hS.1 hS.2.1 hS.2.2.1] with v h1 h2 m' hm' y g hg hy
   obtain ⟨k, hk, hk'⟩ := h2 y hy (hg ▸ GlobalTheory.T.hermitian_quadratic_form_orbit_rational_vector_eq F E σ hCM _ _ J x a hS.2.2.1 g)
   have hL := measurableSet_latV b σ v 2 (M + 1)
@@ -196,7 +194,7 @@ theorem adelic_orbit (hCM : IsCMExt F E σ) (hS : StepData σ J x a B J')
     {mv : ∀ v : HeightOneSpectrum (𝓞 F), Measure (Fin 1 → Fin (M + 1) → Fv F v ⊗[F] E)}
     (h : IsProd b ν mi mv) (hi : OnOrbit (Ainf F) σ J x mi) (hv : ∀ v, OnOrbit (Fv F v) σ J x (mv v)) :
     ∀ᵐ y ∂ν, ∃ g : HA (AF F) σ J, g • ratTup (F := F) (AF F) x = y := by
-  have h1 := (GlobalTheory.T.restrictedProductMeasure_basic_properties F E d b 1 (M + 1) ν mi mv h).2.2.2
+  have h1 := (_root_.GlobalTheory.GaugeEx.isProd_basic F E d b 1 (M + 1) ν mi mv h).2.2.2
     {y | ∃ g : HA (Ainf F) σ J, g • ratTup (F := F) (Ainf F) x = y}
     (fun v => {y | ∃ g : HA (Fv F v) σ J, g • ratTup (F := F) (Fv F v) x = y})
     (exists_sec (σ := σ) (J := J) (B := B) (Ainf F) x).1
@@ -254,7 +252,7 @@ theorem inner_eq (hCM : IsCMExt F E σ) (hS : StepData σ J x a B J')
     have key := isProd_sets b h S
       (fun v => {y' | pairOf (Fv F v) σ J B (projV v (projFin y)) (gv v) y' ∈ latV b v}) hA
       (by
-        filter_upwards [GlobalTheory.T.eventually_integral_orthogonalComplement_pair F E σ d b M J x a B J' hS, h5, S.finite_toSet.compl_mem_cofinite]
+        filter_upwards [_root_.GlobalTheory.GaugeEx.PairLat.main F E σ d b M J x a B J' hS, h5, S.finite_toSet.compl_mem_cofinite]
           with v e1 e2 e3
         ext y'
         simp [e1 _ e2, hyL v e3])
@@ -293,12 +291,12 @@ theorem twoStep_isProd : ∀ (F E : Type) [Field F] [NumberField F] [Field E] [N
     intro v hv
     rw [Set.Finite.mem_toFinset, Set.mem_setOf_eq, not_not] at hv
     exact hv _ (hiv v)
-  obtain ⟨hsum, htail⟩ := GlobalTheory.T.tailProd_mul_of_lattice_mass_mul F E d b _ _ _ _ _ _ mi mv mi' mv' Nv hfin.toFinset hν.1 hν'.1
+  obtain ⟨hsum, htail⟩ := _root_.GlobalTheory.GaugeEx.tailProd_mul_of_mass_mul F E d b _ _ _ _ _ _ mi mv mi' mv' Nv hfin.toFinset hν.1 hν'.1
     (fun v hv => mass_mul b (hov v) (hNv v) (hg v hv))
   have hnice := nice_ainf_fv F
   refine isProd_of_large b σ N Ni Nv hfin.toFinset
-    ⟨GlobalTheory.T.twoStep_pair_measure_finite_on_compacts F E σ hCM (Ainf F) hnice.1 M J x a B J' mi mi' Ni hS hoi hν.1.1 hν'.1.1 hii hNi,
-     fun v => GlobalTheory.T.twoStep_pair_measure_finite_on_compacts F E σ hCM (Fv F v) (hnice.2 v) M J x a B J' (mv v) (mv' v) (Nv v) hS (hov v)
+    ⟨_root_.GlobalTheory.GaugeEx.twoStep_finite_on_compacts F E σ hCM (Ainf F) hnice.1 M J x a B J' mi mi' Ni hS hoi hν.1.1 hν'.1.1 hii hNi,
+     fun v => _root_.GlobalTheory.GaugeEx.twoStep_finite_on_compacts F E σ hCM (Fv F v) (hnice.2 v) M J x a B J' (mv v) (mv' v) (Nv v) hS (hov v)
       (hν.1.2.1 v) (hν'.1.2.1 v) (hiv v) (hNv v), hsum⟩ fun S hSS fi fv hfi hfv => ?_
   obtain ⟨-, s, hs, -⟩ := exists_sec (σ := σ) (J := J) (B := B) (AF F) x
   obtain ⟨-, si, hsi, hsi'⟩ := exists_sec (σ := σ) (J := J) (B := B) (Ainf F) x

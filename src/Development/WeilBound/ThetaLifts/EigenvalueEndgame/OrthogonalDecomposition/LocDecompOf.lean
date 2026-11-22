@@ -2,7 +2,7 @@ module
 
 public import Development.WeilBound.ThetaLifts.EigenvalueEndgame.OrthogonalDecomposition.PairLocOf
 public import Development.WeilBound.ThetaLifts.EigenvalueEndgame.OrthogonalDecomposition.Imports
-public import Development.WeilBound.ThetaLifts.LatticeBasics.SchToPol
+public import Development.WeilBound.ThetaLifts.LatticeBasics.Bundle0005
 
 @[expose] public section
 

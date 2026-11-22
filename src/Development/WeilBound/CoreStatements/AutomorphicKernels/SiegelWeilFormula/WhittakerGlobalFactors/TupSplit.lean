@@ -1,9 +1,14 @@
 module
 
 public import Development.WeilBound.CoreStatements.AutomorphicKernels.SiegelWeilFormula.WhittakerGlobalFactors.MeasurableSetUH
-public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.ExistsStandardLocalMeasuresStatement
-public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.UnitProductClosurePropertiesStatement
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.AdelicHaarSplitsAsArchTimesFiniteStatement
+public import Mathlib
+public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.Bundle0042
+public import CompanionTheory.SpectralGeometry.CountingDefinitions.AdelicEulerProducts.IsEulerProd
+public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.Bundle0020
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0490
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0471
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0827
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0480
 
 @[expose] public section
 
@@ -30,13 +35,13 @@ theorem tup_split (σ : E →ₐ[F] E) (hCM : IsCMExt F E σ) (ψ : AddChar (AF 
         ∫ X, (GlobalTheory.CompanionTheory.SW.intOff bs S).indicator (fun X => gi (projInf X) * ∏ v ∈ S, g v (projV v (projFin X))) X ∂μ =
           (∫ x, gi x ∂μi) * ∏ v ∈ S, ∫ x, g v x ∂(μv v) := by
   classical
-  obtain ⟨⟨laminf, hinf⟩, hlamex⟩ := GlobalTheory.T.exists_standard_local_measures F
+  obtain ⟨⟨laminf, hinf⟩, hlamex⟩ := _root_.GlobalTheory.CompanionTheory.SW.StdEx.exists_std F
   choose lam hlam using hlamex
   obtain ⟨lf, hlf, h1⟩ := GlobalTheory.CompanionTheory.AdeleHaar.exists_haar_integral_one F
   obtain ⟨cinf, c, hU, hci, hcv⟩ := GlobalTheory.CompanionTheory.SW.SdTuples.sdW_coord F E σ hCM M J hJ d bs laminf lam hinf hlam ψ hψ n
   have eμi : μi = cinf • GlobalTheory.CompanionTheory.SW.coordW (Ainf F) bs laminf n M := (hci μi).1 hμi
   have eμv : ∀ v, μv v = c v • GlobalTheory.CompanionTheory.SW.coordW (Fv F v) bs (lam v) n M := fun v => (hcv v (μv v)).1 (hμv v)
-  have hc0 : ∀ v, c v ≠ 0 := (GlobalTheory.T.unit_product_closure_properties F cinf cinf c c hU hU).2.1
+  have hc0 : ∀ v, c v ≠ 0 := (_root_.GlobalTheory.CompanionTheory.SW.UnitProdAlg.main F cinf cinf c c hU hU).2.1
   have hfin : {v | ¬ c v = 1}.Finite := Filter.eventually_cofinite.1 hU.1
   refine ⟨hfin.toFinset, fun S hS gi g hg => ?_⟩
 
@@ -62,7 +67,7 @@ theorem tup_split (σ : E →ₐ[F] E) (hCM : IsCMExt F E σ) (ψ : AddChar (AF 
     unfold GlobalTheory.CompanionTheory.SW.coordW
     infer_instance
   have hcV : ∀ v, Continuous (projV v : (Fin n → Fin M → Af F ⊗[F] E) → _) :=
-    (GlobalTheory.T.adelic_tuple_projections F E σ hCM d bs n M).2.2.1
+    (_root_.GlobalTheory.CompanionTheory.SW.MeasProj.proj_props F E σ hCM d bs n M).2.2.1
   haveI hBf := (GlobalTheory.CompanionTheory.SW.TopK.topTens_props F E σ hCM (Af F)).2.2.2.2.2.2.2.1 n M
   have hpv : ∀ v, Measurable (projV v : (Fin n → Fin M → Af F ⊗[F] E) → _) := fun v => by
     haveI := hBv v
@@ -128,7 +133,7 @@ theorem tup_split (σ : E →ₐ[F] E) (hCM : IsCMExt F E σ) (ψ : AddChar (AF 
       rw [← Finset.prod_coe_sort S]
     rw [e1, hmap, integral_fintype_prod_eq_prod (fun v : S => g v.1), ← Finset.prod_coe_sort S]
 
-  obtain ⟨-, -, -, -, -, -, -, -, hme, -⟩ := GlobalTheory.T.adelic_haar_splits_as_arch_times_finite F E σ hCM M n μ hμ.1
+  obtain ⟨-, -, -, -, -, -, -, -, hme, -⟩ := _root_.GlobalTheory.CompanionTheory.SiegelND.Integ.MapTup.map_tuple F E σ hCM M n μ hμ.1
   haveI : SFinite (GlobalTheory.CompanionTheory.SW.coordW (Af F) bs lf n M) :=
     GlobalTheory.CompanionTheory.Hypotheses₂.OneV.DxEuler.sfinite_coordW σ hCM bs lf hlf n M
   haveI : SFinite (GlobalTheory.CompanionTheory.SW.coordW (Ainf F) bs laminf n M) := by

@@ -2,12 +2,11 @@ module
 
 public import Formalism.SharpRestriction.RamificationFrobenius.TotientGaloisClasses.ZsmulGeneratorEqZeroOfProjection
 public import Formalism.FrobeniusOrbits.FrobeniusOrbitsProofs.CoprimeTwoPow
-public import Formalism.FrobeniusOrbits.FrobeniusOrbitsProofs.Orbits
+public import Formalism.FrobeniusOrbits.FrobeniusOrbitsProofs.Bundle0002
 public import Mathlib
-public import Formalism.FrobeniusOrbits.HostOrbitsPlaces
+public import Formalism.FrobeniusOrbits.Bundle0001
 public import Formalism.FrobeniusOrbits.FrobeniusOrbitsProofs.OrderOfSignGroupDvdTwo
-public import Formalism.FrobeniusOrbits.FrobeniusOrbitsProofs.CardExtendedGaloisGroup
-public import Formalism.FrobeniusOrbits.FrobeniusOrbitsProofs.ThickOrbit
+public import Formalism.FrobeniusOrbits.FrobeniusOrbitsProofs.Bundle0001
 
 @[expose] public section
 

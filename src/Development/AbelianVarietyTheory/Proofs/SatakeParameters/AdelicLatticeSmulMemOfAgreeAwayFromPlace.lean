@@ -2,13 +2,13 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.SameOffRefl
-public import Formalism.LocalToGlobal.GroupLattices.TiedFamilies.TiePtOne
+public import Formalism.LocalToGlobal.GroupLattices.TiedFamilies.Bundle0001
 public import Formalism.SharpRestriction.GrowthBounds.ChartedClasses.ToLEInvApply
 public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.ExistsMidLevIff
-public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.MemStabGLAdeleIff
+public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0042
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.QuotientHeightLowerBoundShortIsotropicVector
 public import Formalism.LocalToGlobal.PairingIndexBounds.OrthogonalChartLevels.IsOrthCo
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ImportsFurther
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0005
 
 @[expose] public section
 

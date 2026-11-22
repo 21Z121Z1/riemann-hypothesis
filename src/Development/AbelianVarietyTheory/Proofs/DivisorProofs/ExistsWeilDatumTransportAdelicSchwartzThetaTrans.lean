@@ -1,29 +1,31 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsUSplittingInl
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ImportsBis
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TwoMulInvOf
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1308
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0184
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0787
 public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.HasDerivAtZeroAndIsTheta
-public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.EqZeroOfLintegralEqZero
-public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.CtxExists
-public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.RationalVectorsAdelesFundamentalDomainMassOne
-public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.RapidDecayAdelicIntegrablePeriodisationContinuou
-public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.EqOfThetaHeisenbergTranslates
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ContDiffOfHeisenbergDerivativeClosedClassStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdelicRapidDecayOfMemAdelicSchwartzSpaceStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdelicSchwartzFixedBySchroedingerOpenFiniteSubgrStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ContinuousAdelicThetaTransformSymplecticOfDecayStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HasDerivAtHeisenbergOperatorThetaTransformRealLiStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HasDerivAtInverseThetaTransformHeisenbergOneParaStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MemAdelicSchwartzSpaceOfLevelCompactSchwartzStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdelicLinearCoordinatesContinuousKeepPartsStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdelicCoordinatesRationalMatricesOntoRationalStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaTransformInverseTransformEqQuasiPeriodicStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.InverseThetaTransformHasLevelCompactFiniteSupporStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.InverseAdelicThetaTransformRapidDecayStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SchwartzInverseThetaTransformOnRealTranslatesStatement
-public import Formalism.LocalToGlobal.BesselHermitianTheta.LemmasWeil
+public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.Bundle0065
+public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0133
+public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0118
+public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0123
+public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0126
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0183
+public import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.Bundle0018
+public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.Bundle0009
+public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.Bundle0016
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0788
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0937
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0803
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0956
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0794
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0796
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1320
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1015
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0920
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.InverseAdelicThetaTransformRapidDecay
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1280
+public import Formalism.LocalToGlobal.BesselHermitianTheta.Bundle0003
 public import Development.AbelianVarietyTheory.Proofs.HeightProofs.EmbeddingXiZeroNeZero
 
 @[expose] public section
@@ -61,22 +63,22 @@ theorem isThetaFunO_thV (hψ : IsStdChar D ψ (-1)) (he : ∀ w w', symplO S T w
     {Φ : (Fin N → AF D.host.F) → ℂ} (hΦ : Φ ∈ GlobalTheory.WeilM.schA D.host.F (Fin N)) :
     IsThetaFunO ψ S T (thV ψ Φ ∘ e) := by
   have hR : IsTotallyReal D.host.F := inferInstance
-  obtain ⟨hc, -, hfin, hinf⟩ := GlobalTheory.T.adelicLinearCoordinates_continuous_keep_parts D T.rank S.rank N e
+  obtain ⟨hc, -, hfin, hinf⟩ := _root_.GlobalTheory.AdelicCoord.coord D T.rank S.rank N e
   have hcont : ∀ Φ ∈ GlobalTheory.WeilM.schA D.host.F (Fin N), Continuous (thV ψ Φ ∘ e) := fun Φ hΦ =>
-    (GlobalTheory.T.continuous_adelicThetaTransformSymplectic_of_decay D.host.F N ψ hR hψ.1 Φ (GlobalTheory.T.adelicRapidDecay_of_mem_adelicSchwartzSpace D.host.F N Φ hΦ)).comp hc
+    (_root_.GlobalTheory.ThetaTransform.continuous_thV D.host.F N ψ hR hψ.1 Φ (_root_.GlobalTheory.SchwartzDecay.decay_of_mem_schA D.host.F N Φ hΦ)).comp hc
   refine ⟨fun γ w => ?_, ?_, hcont Φ hΦ, ?_⟩
   · obtain ⟨y, z, h⟩ := hrat γ
     have h' : e (ratW T S γ) = (rat y, rat z) := h
     simp only [Function.comp_apply, map_add (f := _), symplOH, he, h', ← invOf_two_eq]
     exact quasiV_thV ψ hψ.1.2.2.1 Φ y z (e w)
-  · obtain ⟨U, hUo, hU⟩ := GlobalTheory.T.adelicSchwartz_fixed_by_schroedinger_open_finite_subgroup D.host.F N ψ hR hψ.1 Φ hΦ
+  · obtain ⟨U, hUo, hU⟩ := _root_.GlobalTheory.WeilLevel.schA_level D.host.F N ψ hR hψ.1 Φ hΦ
     refine ⟨U.comap e.toLinearMap.toAddMonoidHom, hUo.preimage hc, fun u hu h0 => ?_⟩
     rw [heisO_comp he, ← thV_schr, hU (e u) hu ((hinf u).1 h0).1 ((hinf u).1 h0).2]
-  · refine GlobalTheory.T.contDiff_of_heisenbergDerivativeClosedClass D ψ hψ S T {f | ∃ Φ ∈ GlobalTheory.WeilM.schA D.host.F (Fin N), f = thV ψ Φ ∘ e} ?_ ?_ _ ⟨Φ, hΦ, rfl⟩
+  · refine _root_.GlobalTheory.HeisSmooth.contDiff_of_heis_closed D ψ hψ S T {f | ∃ Φ ∈ GlobalTheory.WeilM.schA D.host.F (Fin N), f = thV ψ Φ ∘ e} ?_ ?_ _ ⟨Φ, hΦ, rfl⟩
     · rintro _ ⟨Φ, hΦ, rfl⟩
       apply hcont Φ hΦ
     · rintro _ ⟨Φ, hΦ, rfl⟩ M hM hM0
-      obtain ⟨Φ', hΦ', hd⟩ := GlobalTheory.T.hasDerivAt_heisenbergOperator_thetaTransform_realLine D.host.F N ψ hR hψ.1 Φ hΦ (e.toLinearMap.toAddMonoidHom.comp M)
+      obtain ⟨Φ', hΦ', hd⟩ := _root_.GlobalTheory.ThetaTransform.hasDerivAt_heisV_line D.host.F N ψ hR hψ.1 Φ hΦ (e.toLinearMap.toAddMonoidHom.comp M)
         ⟨hc.comp hM, fun t => (hfin _).1 (hM0 t)⟩
       refine ⟨_, ⟨Φ', hΦ', rfl⟩, fun w => ?_⟩
       simp only [heisO_comp he]
@@ -86,7 +88,7 @@ theorem thV_injOn {F : Type} [Field F] [NumberField F] [Invertible (2 : AF F)] {
     (hR : IsTotallyReal F) (hψ : IsCharAF F ψ) {Φ Φ' : (Fin N → AF F) → ℂ} (hΦ : Φ ∈ GlobalTheory.WeilM.schA F (Fin N))
     (hΦ' : Φ' ∈ GlobalTheory.WeilM.schA F (Fin N)) (h : thV ψ Φ = thV ψ Φ') : Φ = Φ' := by
   obtain ⟨lam, ν, hC⟩ := GlobalTheory.SWQ.ctx_exists F hR ψ hψ N (half F N) half_ne_zero
-  refine eq_of_theta_rho F N ψ lam ν _ hC Φ Φ' (GlobalTheory.T.adelicRapidDecay_of_mem_adelicSchwartzSpace F N Φ hΦ) (GlobalTheory.T.adelicRapidDecay_of_mem_adelicSchwartzSpace F N Φ' hΦ') fun x y => ?_
+  refine eq_of_theta_rho F N ψ lam ν _ hC Φ Φ' (_root_.GlobalTheory.SchwartzDecay.decay_of_mem_schA F N Φ hΦ) (_root_.GlobalTheory.SchwartzDecay.decay_of_mem_schA F N Φ' hΦ') fun x y => ?_
   have := congrFun h (x, y)
   rwa [thV_eq_th, thV_eq_th] at this
 
@@ -96,14 +98,14 @@ theorem exists_thV_eq (hψ : IsStdChar D ψ (-1)) (he : ∀ w w', symplO S T w w
     {f : WO S T → ℂ} (hf : IsThetaFunO ψ S T f) :
     ∃ Φ ∈ GlobalTheory.WeilM.schA D.host.F (Fin N), thV ψ Φ ∘ e = f := by
   have hR : IsTotallyReal D.host.F := inferInstance
-  obtain ⟨-, hc, hfin, hinf⟩ := GlobalTheory.T.adelicLinearCoordinates_continuous_keep_parts D T.rank S.rank N e
+  obtain ⟨-, hc, hfin, hinf⟩ := _root_.GlobalTheory.AdelicCoord.coord D T.rank S.rank N e
   obtain ⟨lam, ν, hC⟩ := GlobalTheory.SWQ.ctx_exists D.host.F hR ψ hψ.1 N (half D.host.F N) half_ne_zero
   obtain ⟨-, -, -, -, 𝓓, -, hD, h1⟩ := GlobalTheory.SWQ.rat_lattice_fundamentalDomain D.host.F N ν hC.2.2.2.1
   let 𝒱 : Set (VA D.host.F N → ℂ) := {g | ∃ f, IsThetaFunO ψ S T f ∧ g = f ∘ e.symm}
   have hV : ∀ g ∈ 𝒱, Continuous g ∧ QuasiV ψ g ∧ ∃ C : ℝ, ∀ w, ‖g w‖ ≤ C := by
     rintro _ ⟨f, hf, rfl⟩
     refine ⟨hf.cont.comp hc, fun a b w => ?_, ?_⟩
-    · obtain ⟨x, hx⟩ := GlobalTheory.T.adelicCoordinates_rationalMatrices_onto_rational D T.rank S.rank N e hrat a b
+    · obtain ⟨x, hx⟩ := _root_.GlobalTheory.WeilSchrodinger.rat_onto_of_rat_maps D T.rank S.rank N e hrat a b
       have hx' : e.symm (rat a, rat b) = ratW T S x := by rw [← hx]; exact e.symm_apply_apply _
       have hx'' : e (ratW T S x) = (rat a, rat b) := hx
       simp only [Function.comp_apply, map_add (f := _), hx', hf.quasi, symplOH, he, hx'', invOf_two_eq,
@@ -122,7 +124,7 @@ theorem exists_thV_eq (hψ : IsStdChar D ψ (-1)) (he : ∀ w w', symplO S T w w
     refine ⟨_, ⟨_, hf', rfl⟩, ?_⟩
     obtain ⟨c1, -, C₁, hC₁⟩ := hV _ ⟨f, hf, rfl⟩
     obtain ⟨c2, -, C₂, hC₂⟩ := hV _ ⟨_, hf', rfl⟩
-    refine GlobalTheory.T.hasDerivAt_inverseThetaTransform_heisenberg_oneParam D.host.F N ψ lam ν hC 𝓓 hD h1 _ _ (max C₁ C₂) c1 c2 (fun w => (hC₁ w).trans (le_max_left _ _))
+    refine _root_.GlobalTheory.ThetaTransform.hasDerivAt_invV_heisV D.host.F N ψ lam ν hC 𝓓 hD h1 _ _ (max C₁ C₂) c1 c2 (fun w => (hC₁ w).trans (le_max_left _ _))
       (fun w => (hC₂ w).trans (le_max_right _ _)) M hM.1 fun w s => ?_
     simp only [heisV_comp_symm he]
     exact GlobalTheory.WeilVacMove.hasDerivAt_line hψ hL hL0 hf (e.symm w) s
@@ -131,12 +133,12 @@ theorem exists_thV_eq (hψ : IsStdChar D ψ (-1)) (he : ∀ w w', symplO S T w w
     obtain ⟨U, hUo, hU⟩ := hf.level
     refine ⟨U.comap e.symm.toLinearMap.toAddMonoidHom, hUo.preimage hc, fun u hu h0 h0' => ?_⟩
     rw [heisV_comp_symm he, hU (e.symm u) hu ((hinf _).2 (by rw [e.apply_symm_apply]; exact ⟨h0, h0'⟩))]
-  obtain ⟨hl, hs⟩ := GlobalTheory.T.inverseThetaTransform_has_level_compact_finite_support D.host.F N ψ lam ν hC 𝓓 hD h1 _ (hV _ hmem).2.1 hlev
+  obtain ⟨hl, hs⟩ := _root_.GlobalTheory.ThetaTransform.invV_level_support D.host.F N ψ lam ν hC 𝓓 hD h1 _ (hV _ hmem).2.1 hlev
   have hS : invV ψ ν 𝓓 (f ∘ e.symm) ∈ GlobalTheory.WeilM.schA D.host.F (Fin N) :=
-    GlobalTheory.T.mem_adelicSchwartzSpace_of_level_compact_schwartz D.host.F N _ hl hs (GlobalTheory.T.schwartz_inverse_theta_transform_on_real_translates D.host.F N ψ lam ν hC 𝓓 hD h1 𝒱 hV hder
-      (GlobalTheory.T.inverseAdelicThetaTransform_rapid_decay D.host.F N ψ lam ν hC 𝓓 hD h1 𝒱 (fun g hg => (hV g hg).2) hder) _ hmem)
+    _root_.GlobalTheory.LevelSchwartz.mem_schA_of_level D.host.F N _ hl hs (_root_.GlobalTheory.ThetaTransform.schwartz_invV_realTranslate D.host.F N ψ lam ν hC 𝓓 hD h1 𝒱 hV hder
+      (_root_.GlobalTheory.InvDecay.invV_decay D.host.F N ψ lam ν hC 𝓓 hD h1 𝒱 (fun g hg => (hV g hg).2) hder) _ hmem)
   refine ⟨_, hS, ?_⟩
-  rw [GlobalTheory.T.thetaTransform_inverseTransform_eq_quasiPeriodic D.host.F N ψ lam ν hC 𝓓 hD h1 _ (hV _ hmem).1 (hV _ hmem).2.1 (GlobalTheory.T.adelicRapidDecay_of_mem_adelicSchwartzSpace D.host.F N _ hS)]
+  rw [_root_.GlobalTheory.ThetaTransform.thV_invV_eq D.host.F N ψ lam ν hC 𝓓 hD h1 _ (hV _ hmem).1 (hV _ hmem).2.1 (_root_.GlobalTheory.SchwartzDecay.decay_of_mem_schA D.host.F N _ hS)]
   funext w
   simp
 
@@ -348,8 +350,8 @@ theorem thetaTr_bij (hψ : IsStdChar D ψ (-1)) (hA : JA = T.gramᵀ)
     exact ⟨y ∘ σ.symm, z ∘ σ.symm, by rw [numCoord_apply, h]; rfl⟩
   refine ⟨fun Φ hΦ Φ' hΦ' => ?_, fun Φ hΦ Φ' hΦ' h => ?_, fun f => ⟨fun hf => ?_, ?_⟩⟩
   · simp only [thetaTr_eq co σ]
-    exact congrArg (· ∘ numCoord co σ) (thV_add hR hψ.1 (GlobalTheory.T.adelicRapidDecay_of_mem_adelicSchwartzSpace _ _ _ (comp_mem_schA σ hΦ))
-      (GlobalTheory.T.adelicRapidDecay_of_mem_adelicSchwartzSpace _ _ _ (comp_mem_schA σ hΦ')))
+    exact congrArg (· ∘ numCoord co σ) (thV_add hR hψ.1 (_root_.GlobalTheory.SchwartzDecay.decay_of_mem_schA _ _ _ (comp_mem_schA σ hΦ))
+      (_root_.GlobalTheory.SchwartzDecay.decay_of_mem_schA _ _ _ (comp_mem_schA σ hΦ')))
   · simp only [thetaTr_eq co σ] at h
     have h2 := thV_injOn hR hψ.1 (comp_mem_schA σ hΦ) (comp_mem_schA σ hΦ')
       ((numCoord co σ).surjective.injective_comp_right h)

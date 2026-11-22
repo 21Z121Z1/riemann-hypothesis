@@ -1,6 +1,6 @@
 module
 
-public import Development.AbelianVarietyTheory.Definitions.Divisors.IsUnifAt
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0036
 public import Development.AutomorphicArithmetic.Foundations.Convolution.HermitianDescent.IsHerm
 
 @[expose] public section

@@ -1,18 +1,18 @@
 module
 
 public import Development.WeilBound.RepresentationTheoryGL.RegularisedSiegelWeil.HermitianCellMeasures.MuCellOf
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ContinuousDivRp
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ContinuousSmulQuot
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.NullCOfInvM
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CellFormulaOfInvM
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0028
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0029
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0042
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0026
 public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ArtinianFields
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ContinuousOnTau
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.PtMulComplSelf
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0649
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0646
 public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FiniteBadScalar
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.RingHomMulSubEqZero
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0574
 public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MatrixEqBlockDecomposition
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.NpowHalfAddHalf
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IsClosedHermSMx
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0681
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0651
 
 @[expose] public section
 

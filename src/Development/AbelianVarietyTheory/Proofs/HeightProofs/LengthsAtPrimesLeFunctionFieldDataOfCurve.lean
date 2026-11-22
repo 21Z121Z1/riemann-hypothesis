@@ -1,29 +1,25 @@
 module
 
 public import Mathlib
-public import Formalism.LocalToGlobal.ProjectiveLattices.RegXInst
-public import Formalism.LocalToGlobal.ProjectiveLattices.CurveLocInst
-public import Formalism.LocalToGlobal.ProjectiveLattices.LocRingPf
-public import Formalism.LocalToGlobal.ProjectiveLattices.TieInst
-public import Formalism.LocalToGlobal.ProjectiveLattices.RealPtPf
-public import Formalism.LocalToGlobal.ProjectiveLattices.HtXfer
-public import Formalism.LocalToGlobal.ProjectiveLattices.CompTie
-public import Formalism.LocalToGlobal.ProjectiveLattices.AxHInst
-public import Formalism.LocalToGlobal.ProjectiveLattices.SupNDataOfNonneg
-public import Formalism.LocalToGlobal.ProjectiveLattices.CombAlgOfCombBound
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.HeightTheory.KTFiniteDimensional
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.HeightTheory.HDiscAD
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0035
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0043
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0041
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0037
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0039
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0028
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0024
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0034
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.HeightTheory.Bundle0012
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.HeightTheory.Bundle0015
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.HeightTheory.AlgebraMapOLInjective
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.HeightTheory.OpIsDVR
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.HeightTheory.Bundle0008
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.HeightTheory.ValuationResidueLemmas
 public import Development.AbelianVarietyTheory.Proofs.AlgebraicCurves.PlacesRestrictInjective
 public import Development.AbelianVarietyTheory.Proofs.HeightProofs.RangeMulStep
-public import Development.AbelianVarietyTheory.Proofs.HeightProofs.RealisationValuesEqValuedPointOrdersStatement
-public import Development.AbelianVarietyTheory.Proofs.HeightProofs.LengthQuotientLeOfOrderBound
-public import Development.AbelianVarietyTheory.Proofs.HeightProofs.ValuationEqOrdAndEqZero
-public import Development.AbelianVarietyTheory.Proofs.HeightProofs.GaussRingCompletionRename
-public import Development.AbelianVarietyTheory.Proofs.HeightProofs.ExistsRingHomTensorOmSOfPoint
-public import Development.AbelianVarietyTheory.Proofs.HeightProofs.ExistsSectionMaps
+public import Development.AbelianVarietyTheory.Proofs.HeightProofs.Bundle0077
+public import Development.AbelianVarietyTheory.Proofs.HeightProofs.Bundle0036
+public import Development.AbelianVarietyTheory.Proofs.HeightProofs.Bundle0035
+public import Development.AbelianVarietyTheory.Proofs.HeightProofs.Bundle0012
 
 @[expose] public section
 

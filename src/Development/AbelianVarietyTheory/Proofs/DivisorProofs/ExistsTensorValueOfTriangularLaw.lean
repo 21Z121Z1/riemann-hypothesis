@@ -2,8 +2,8 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.Divisors.IsAdelicOne
-public import Formalism.LocalToGlobal.CMDeterminantIdeals.StatementG
-public import Formalism.PolynomialDimension.WeylDim
+public import Formalism.LocalToGlobal.CMDeterminantIdeals.Bundle0001
+public import Formalism.PolynomialDimension.Bundle0001
 
 @[expose] public section
 

@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DifferentiableRisingS
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MemIntegersOfMemHatO
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FiniteRingClassGroupOfConductorNeZero
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0462
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0444
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0793
 public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.AdicCompactDensity.ExistsNatLocal
 
 @[expose] public section

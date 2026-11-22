@@ -1,14 +1,14 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.HilbertKodairaSpencer
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsAHOfIsFactorAH
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaNonvanishingBundleGenerated
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ProductAbelianUniformization
-public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.DifferentiableOnProdOfForall
-public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.LbIsoOfSameFactor
+public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.Bundle0023
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2088
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2221
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2208
+public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0015
+public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0151
 public import Development.AbelianVarietyTheory.Proofs.CovolumeBounds.IsProjOverCompOfIsClosedImmersion
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsIsFactorAHLamDiag
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2159
 
 @[expose] public section
 

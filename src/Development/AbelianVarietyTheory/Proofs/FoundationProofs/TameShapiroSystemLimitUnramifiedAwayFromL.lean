@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Foundations.ShCocOn
-public import Development.AbelianVarietyTheory.Definitions.Foundations.IsLocallyConstantCycMod
+public import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0001
+public import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0020
 public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.UnivNormUnramOfOrderOf
 
 @[expose] public section

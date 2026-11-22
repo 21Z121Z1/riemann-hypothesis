@@ -4,10 +4,12 @@ public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.HeightFunctions.NormComparisonConstants
 public import Formalism.LocalToGlobal.ProjectiveLattices.DepthTie
 public import Development.AbelianVarietyTheory.Definitions.Jets.EmbShortThLeThetaPlain
-public import Development.AbelianVarietyTheory.Definitions.ExistenceOfLattices.CoeSelfDualLatticeInFrameCoordinatesEq
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsParPinsCanon
-public import Development.AbelianVarietyTheory.Proofs.HeightProofs.ExistsAdelicCoreWithoutVolumeNormalisationStatement
-public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.ExistsGaloisConjugatesHeckeCharTrivialOnRealIdelStatement
+public import Development.AbelianVarietyTheory.Definitions.ExistenceOfLattices.Bundle0001
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0107
+public import Development.AbelianVarietyTheory.Proofs.HeightProofs.Bundle0077
+public import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.ExistsGaloisConjugatesHeckeCharTrivialOnRealIdel
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0027
+public import Formalism.LocalToGlobal.ProjectiveLattices.FamilyUniformisationBasePointOrthogonal
 
 @[expose] public section
 
@@ -35,12 +37,12 @@ theorem exists_coreJ_of_chiOK_noVol : ∀ (D : D7), OFull D → OZeta D → ∀ 
     intro j
     by_cases hj : InR D j
     · obtain ⟨h1, h2, h3⟩ := hchi j hj
-      obtain ⟨χ, hχ, hσ⟩ := GlobalTheory.T.exists_galoisConjugates_heckeChar_trivialOnRealIdeles D Q (chi₀ j) h1 h2
+      obtain ⟨χ, hχ, hσ⟩ := _root_.GlobalTheory.HeckeConj.exists_conjugates D Q (chi₀ j) h1 h2
         (fun x hx => ⟨⟨_, hle (h3 x hx)⟩, rfl⟩)
       exact ⟨χ, hχ, fun _ => hσ⟩
     · exact ⟨fun _ => chi₀ j, rfl, fun h => absurd h hj⟩
   choose chiW h0 hW using key
-  obtain ⟨T, hJ, hC, hp, hQ, hH⟩ := GlobalTheory.T.exists_adelicCore_without_volumeNormalisation D Q hP hpq pb hg hM chiW
+  obtain ⟨T, hJ, hC, hp, hQ, hH⟩ := _root_.GlobalTheory.FinalJoin2.exists_coreJ_noVol D Q hP hpq pb hg hM chiW
     (fun j hj σ _ => by rw [h0 j]; exact hW j hj σ)
   subst hQ
   refine ⟨T, hJ, hC, hCan, hp, hpq, fun j => ?_⟩

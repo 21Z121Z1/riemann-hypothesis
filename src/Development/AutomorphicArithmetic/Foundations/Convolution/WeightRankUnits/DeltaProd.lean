@@ -2,9 +2,7 @@ module
 
 public import Development.AutomorphicArithmetic.Foundations.Convolution.WeightRankUnits.DeltaProdAlt
 public import Development.AutomorphicArithmetic.Foundations.Convolution.WeightRankUnits.DeltaLoc
-public import Development.AutomorphicArithmetic.Foundations.Convolution.WeightRankUnits.MuProd
-public import Development.AutomorphicArithmetic.Foundations.Convolution.WeightRankUnits.AbsProd
-public import Development.AutomorphicArithmetic.Foundations.Convolution.WeightRankUnits.Regroup
+public import Development.AutomorphicArithmetic.Foundations.Convolution.WeightRankUnits.Bundle0001
 
 @[expose] public section
 

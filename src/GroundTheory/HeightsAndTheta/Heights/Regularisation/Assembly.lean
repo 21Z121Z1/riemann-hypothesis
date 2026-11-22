@@ -1,24 +1,15 @@
 module
 
 public import Mathlib
-public import GroundTheory.HeightsAndTheta.Heights.Regularisation.PMaxOscillation
-public import GroundTheory.HeightsAndTheta.Heights.Regularisation.PMollifierLowerBound
-public import GroundTheory.HeightsAndTheta.Heights.Regularisation.PChartComparison
-public import GroundTheory.HeightsAndTheta.Heights.Regularisation.PCutoffs
-public import GroundTheory.HeightsAndTheta.Heights.Regularisation.PGlueRegularised
-public import GroundTheory.HeightsAndTheta.Heights.Regularisation.ChartFun
-public import GroundTheory.HeightsAndTheta.Heights.Regularisation.IsCompactImageClosureMid
+public import GroundTheory.HeightsAndTheta.Heights.Regularisation.Bundle0004
+public import GroundTheory.HeightsAndTheta.Heights.Regularisation.Bundle0005
+public import GroundTheory.HeightsAndTheta.Heights.Regularisation.Bundle0002
+public import GroundTheory.HeightsAndTheta.Heights.Regularisation.Bundle0007
 public import GroundTheory.HeightsAndTheta.Heights.Regularisation.PExpExtension
 public import GroundTheory.HeightsAndTheta.Heights.Regularisation.PosSemidefOfIntQuadNonneg
-public import GroundTheory.HeightsAndTheta.Heights.Regularisation.PKernelPositive
 public import GroundTheory.HeightsAndTheta.Heights.Regularisation.PImTauBounds
 public import GroundTheory.HeightsAndTheta.Heights.Regularisation.PHodgeDerivative
-public import GroundTheory.HeightsAndTheta.Heights.MatrixCharts.PAnalyticDerivBound
-public import GroundTheory.HeightsAndTheta.Heights.MatrixCharts.PInvEntryBound
-public import GroundTheory.HeightsAndTheta.Heights.MatrixCharts.PInvEntryDeriv
-public import GroundTheory.HeightsAndTheta.Heights.MatrixCharts.PMatrixDetDeriv
-public import GroundTheory.HeightsAndTheta.Heights.MatrixCharts.PGramEntryDeriv
-public import GroundTheory.HeightsAndTheta.Heights.MatrixCharts.PLogDetGramDeriv
+public import GroundTheory.HeightsAndTheta.Heights.MatrixCharts.Bundle0003
 
 @[expose] public section
 

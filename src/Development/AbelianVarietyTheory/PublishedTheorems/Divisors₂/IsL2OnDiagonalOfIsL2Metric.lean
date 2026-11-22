@@ -2,9 +2,9 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsFlagModelHermSum
-public import Development.AbelianVarietyTheory.Definitions.Divisors.NefFibOfIsNef
-public import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.SiegelReframe
-public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.CharChPartZero
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0034
+public import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.Bundle0003
+public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.Bundle0021
 
 @[expose] public section
 

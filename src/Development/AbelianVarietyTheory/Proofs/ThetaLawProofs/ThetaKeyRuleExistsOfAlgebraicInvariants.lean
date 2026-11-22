@@ -2,17 +2,17 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Statements.ThetaLevelCharacters.MemThetaLevelCharDimZero
-public import Development.AbelianVarietyTheory.Definitions.KeyFormula.KaRuleK
+public import Development.AbelianVarietyTheory.Definitions.KeyFormula.Bundle0001
 public import Development.AbelianVarietyTheory.Definitions.AbelianSchemeLaws.FirstCohomologyVanishesSpecOfIsLocalRing
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.ValCalc
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.SymplecticGenerators.IsPluriharmonicSiegel
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.ThetaUnifAV
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.MapsAtLeA
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.Bundle0003
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.Bundle0004
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.GlobalSectionsRankAlgClosed
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.SymplecticGenerators.SymplecticCharacters.OneEqSpTranslZero
-public import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.MemNonzeroLocusConstMul
-public import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.ExistsKeyPBRing
-public import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.ExistsNormalisedKeyInvariantRuleCharZeroStatement
+public import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.Bundle0036
+public import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.Bundle0035
+public import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.Bundle0047
 
 @[expose] public section
 
@@ -103,7 +103,7 @@ theorem keyRule_of_kaSt : Out.Laws → ThetaUnifAV → Key.Chi.InversionStatemen
     intro g p hp
     by_cases hg : 1 ≤ g
     · obtain ⟨c, M, hc, hM, hpM, hr⟩ := hK (2 * g) p (by omega) hp
-      obtain ⟨κ, h₁, h₂⟩ := GlobalTheory.T.exists_normalised_key_invariant_rule_char_zero hL hU hI hP hT g c M hg hr
+      obtain ⟨κ, h₁, h₂⟩ := _root_.GlobalTheory.KeyNormRule.exists_normalised_rule hL hU hI hP hT g c M hg hr
       exact ⟨2 * c, M, κ, by omega, hM, fun _ => ⟨hpM, h₁, h₂⟩⟩
     · exact ⟨1, 1, fun _ _ _ _ => 1, le_rfl, le_rfl, fun h => absurd h hg⟩
   choose N M κ hN hM hκ using fun g => hall g 2 Nat.prime_two

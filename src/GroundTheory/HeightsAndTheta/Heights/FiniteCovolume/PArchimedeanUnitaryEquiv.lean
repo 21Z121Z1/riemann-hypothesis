@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import GroundTheory.HeightsAndTheta.Heights.FiniteCovolume.StatementsAdelicSplit
+public import GroundTheory.HeightsAndTheta.Heights.FiniteCovolume.Bundle0004
 public import GroundTheory.HeightsAndTheta.Theta.RealPlace
 
 @[expose] public section

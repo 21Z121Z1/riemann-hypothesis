@@ -3,14 +3,14 @@ module
 public import Mathlib
 public import Formalism.HermitianCurvature.StatementD
 public import Formalism.HermitianCurvature.StatementQ
-public import Formalism.HermitianCurvature.BigCellVanishingOfCommute
+public import Formalism.HermitianCurvature.Bundle0005
 public import Formalism.HermitianCurvature.StatementU
 public import Formalism.HermitianCurvature.HermitianCurvatureProofs.ComponentFamilySettingOfSetting
 public import Formalism.HermitianCurvature.HermitianCurvatureProofs.UnipotentCoordinatesMeasurePreserving
 public import Development.AbelianVarietyTheory.Definitions.Jets.WigMap
 public import Formalism.HermitianCurvature.HermitianCurvatureProofs.IntegrableUnipotentNormRpowNeg
-public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.FormSubRight
-public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.IsPolyDegStar
+public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0078
+public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0072
 
 @[expose] public section
 

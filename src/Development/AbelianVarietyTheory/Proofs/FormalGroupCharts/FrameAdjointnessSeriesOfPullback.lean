@@ -1,15 +1,15 @@
 module
 
 public import Mathlib
-public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.GermCut
+public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0006
 public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.GermBGen
-public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.ChartPrimTrPfA
-public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.IntChartPf
-public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.ExistsTruncatedIntegralChart
+public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0022
+public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0019
+public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0010
 public import Formalism.LocalToGlobal.ProjectiveLattices.PlaceBelow
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.SecBaseChangeAnySt
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.RosVal
-public import Development.AbelianVarietyTheory.Proofs.FormalGroupCharts.FrameSymmetryIffPullback
+public import Development.AbelianVarietyTheory.Proofs.FormalGroupCharts.Bundle0020
 
 @[expose] public section
 

@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Formalism.LocalToGlobal.Divisibility.ColPins
+public import Formalism.LocalToGlobal.Divisibility.Bundle0007
 public import Formalism.LocalToGlobal.Divisibility.HeckeCSDICommTrRep
 
 @[expose] public section

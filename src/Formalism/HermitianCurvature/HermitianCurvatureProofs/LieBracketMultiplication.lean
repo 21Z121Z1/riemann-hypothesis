@@ -1,6 +1,6 @@
 module
 
-public import Formalism.HermitianCurvature.FrameExists2
+public import Formalism.HermitianCurvature.Bundle0009
 public import Formalism.HermitianCurvature.HermitianCurvatureProofs.LeftDerivativeCurves
 public import Formalism.HermitianCurvature.HermitianCurvatureProofs.FrameEntries
 

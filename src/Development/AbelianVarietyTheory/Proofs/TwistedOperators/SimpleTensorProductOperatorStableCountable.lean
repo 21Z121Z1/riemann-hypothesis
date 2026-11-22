@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SimpleOver
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DixmierSchurOfRankLeAleph0
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0013
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0017
 
 @[expose] public section
 

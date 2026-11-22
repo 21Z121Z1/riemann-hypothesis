@@ -1,7 +1,7 @@
 module
 
 public import Development.WeilBound.CoreStatements.SesquilinearFractions.ExistsUnitValueSkewHermitian
-public import Development.WeilBound.CoreStatements.SesquilinearFractions.NIdeal
+public import Development.WeilBound.CoreStatements.SesquilinearFractions.Bundle0001
 
 @[expose] public section
 

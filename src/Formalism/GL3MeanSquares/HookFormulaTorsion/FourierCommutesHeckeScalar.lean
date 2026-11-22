@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Formalism.GL3MeanSquares.FourierTransformKernelSurjective
+public import Formalism.GL3MeanSquares.Bundle0002
 
 @[expose] public section
 

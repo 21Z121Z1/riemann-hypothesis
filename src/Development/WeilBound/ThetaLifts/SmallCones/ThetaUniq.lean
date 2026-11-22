@@ -3,7 +3,7 @@ module
 public import Mathlib
 public import Development.WeilBound.ThetaLifts.CTKernel
 public import Development.WeilBound.ThetaLifts.FrameEstimates.SquareIntegrableWeilRange
-public import Development.WeilBound.ThetaLifts.TowerModels.PlaneHerm
+public import Development.WeilBound.ThetaLifts.TowerModels.Bundle0002
 
 @[expose] public section
 

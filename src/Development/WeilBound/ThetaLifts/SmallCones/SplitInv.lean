@@ -1,11 +1,11 @@
 module
 
-public import Development.WeilBound.ThetaLifts.SmallCones.HodgeTateFromSandwich
-public import Development.WeilBound.ThetaLifts.SmallCones.ThetaKernelGeneralIdentity
-public import Development.WeilBound.ThetaLifts.LocalTheory.SplitInv2
-public import Development.WeilBound.ThetaLifts.CartanFactorisation.IntegrableOnRight
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsLocallyConstantFinprodSchwartzBruhatFiniteAdel
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HasCompactSupportFinprodSchwartzBruhatFiniteAdel
+public import Development.WeilBound.ThetaLifts.SmallCones.Bundle0001
+public import Development.WeilBound.ThetaLifts.SmallCones.Bundle0002
+public import Development.WeilBound.ThetaLifts.LocalTheory.Bundle0001
+public import Development.WeilBound.ThetaLifts.CartanFactorisation.Bundle0001
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1530
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1527
 
 @[expose] public section
 

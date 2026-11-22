@@ -2,9 +2,8 @@ module
 
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.PatchingModules.SeparableMatrixStability.SecondSelmerSpanBoundAtAllLevels
 public import Mathlib
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.LimKer
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.LimElt
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.FiniteHomOfTopFG
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.Bundle0008
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.Bundle0007
 
 @[expose] public section
 

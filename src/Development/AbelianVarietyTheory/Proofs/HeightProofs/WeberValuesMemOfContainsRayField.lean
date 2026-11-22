@@ -2,12 +2,12 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.HeightFunctions.FiniteDimensionalOfSz
-public import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.LFunctionPositiveConductorFourEight
+public import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.Bundle0002
 public import Development.AbelianVarietyTheory.Definitions.HeightFunctions.XiValIffXiAt
-public import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.RayFieldTheta
-public import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.RingOfIntegersSqrtNegThreeModFour
-public import Development.AbelianVarietyTheory.Proofs.HeightProofs.CmCurveTorsionDefinedOverOfWeberValues
-public import Development.AbelianVarietyTheory.Proofs.HeightProofs.WeberInvariantTorsionValuesSubsetOfContainsRayFiStatement
+public import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.Bundle0018
+public import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.Bundle0001
+public import Development.AbelianVarietyTheory.Proofs.HeightProofs.Bundle0063
+public import Development.AbelianVarietyTheory.Proofs.HeightProofs.Bundle0067
 
 @[expose] public section
 
@@ -101,7 +101,7 @@ theorem weberIn_of_containsRayField : ∀ (E : Type) [Field E] [NumberField E] [
     rw [← hw']
     simp
   refine ⟨fun P hP => ?_, hle hr0⟩
-  have hW := GlobalTheory.T.weberInvariantTorsionValues_subset_of_containsRayField K₀ F hle h2 (by omega) P (fun z => ?_) n hn hC'
+  have hW := _root_.GlobalTheory.FieldSize.WeberIn.weberSet_subset K₀ F hle h2 (by omega) P (fun z => ?_) n hn hC'
   · exact ⟨hW (Set.mem_insert _ _), fun s hs => hW (Set.mem_insert_of_mem _
       ⟨_, (hP _).2 ⟨s, rfl⟩, hs, rfl⟩)⟩
   · rw [hP]

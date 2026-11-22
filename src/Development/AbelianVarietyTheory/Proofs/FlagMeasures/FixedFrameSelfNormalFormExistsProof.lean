@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.RowsMeanC
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.UnitaryHostFieldArithmeticConditionsProofStatement
+public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.Bundle0014
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0293
 
 @[expose] public section
 
@@ -377,7 +377,7 @@ theorem fe_of {E : Type} [Field E] [NumberField E] [StarRing E] {S : HSpace E} {
 
 theorem idNFC_holds : GlobalTheory.TypeAsm.IdNFC := by
   intro D large₂ X Y u hStd Λ hΛ
-  obtain ⟨-, -, -, -, -, -, -, hne, hstar, -⟩ := GlobalTheory.T.unitaryHostFieldArithmeticConditions D large₂ hStd
+  obtain ⟨-, -, -, -, -, -, -, hne, hstar, -⟩ := _root_.GlobalTheory.TypeAsm.hostC D large₂ hStd
   have hpos : 0 < (D.mem u).A.T := (D.mem u).A.T_prime.pos
   have hP := Formalism.MainNotions.LatticeGluingRadicals.p_posX D _ hpos (Formalism.MainNotions.S.lf D (X.Fu u))
   by_cases h0 : Λ = (Formalism.MainNotions.S.VS D).L0

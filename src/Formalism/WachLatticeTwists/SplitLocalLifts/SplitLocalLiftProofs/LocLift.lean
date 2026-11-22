@@ -1,8 +1,8 @@
 module
 
 public import Formalism.WachLatticeTwists.SplitLocalLifts.Cocycles1MapOfEquivariant
-public import Formalism.WachLatticeTwists.CoprimeLiftBounds.CoprimeLiftProofs.SelmerInjColumnPlace
-public import Formalism.WachLatticeTwists.TorsionLengthCounts.RowCol
+public import Formalism.WachLatticeTwists.CoprimeLiftBounds.CoprimeLiftProofs.Bundle0003
+public import Formalism.WachLatticeTwists.TorsionLengthCounts.Bundle0001
 
 @[expose] public section
 

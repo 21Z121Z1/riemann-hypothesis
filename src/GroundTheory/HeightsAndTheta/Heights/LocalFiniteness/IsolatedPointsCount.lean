@@ -1,7 +1,7 @@
 module
 
 public import GroundTheory.HeightsAndTheta.Heights.LocalFiniteness.IsolatedPointsCountPrime
-public import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.PIsolatedPointsCount
+public import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.Bundle0040
 
 @[expose] public section
 

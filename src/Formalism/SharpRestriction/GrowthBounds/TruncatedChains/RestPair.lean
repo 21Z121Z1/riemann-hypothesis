@@ -1,6 +1,6 @@
 module
 
-public import Formalism.SharpRestriction.GrowthBounds.RootWeights.FiltrationAdjointStable
+public import Formalism.SharpRestriction.GrowthBounds.RootWeights.Bundle0024
 
 @[expose] public section
 

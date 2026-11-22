@@ -2,13 +2,14 @@ module
 
 public import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.TwistPlacesOffPrimeQZero
 public import Lean
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsCosetSameLocalCosetSetsOtherBaseLatticeStatement
-public import Development.AbelianVarietyTheory.Definitions.Divisors.DiscreteSeriesHermitianUnique
-public import Development.AbelianVarietyTheory.Statements.PlaceShiftStatements.NormSmall
-public import Development.AbelianVarietyTheory.Statements.PlaceShiftStatements.DictAt
+public import Mathlib
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0439
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0041
+public import Development.AbelianVarietyTheory.Statements.PlaceShiftStatements.Bundle0002
+public import Development.AbelianVarietyTheory.Statements.PlaceShiftStatements.Bundle0003
 public import Development.AbelianVarietyTheory.Statements.HeckeThetaIntegrals.ThetaIntegralsAgree
 public import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.WeilTensorModels
-public import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.CuspAlongSmoothRows
+public import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.Bundle0015
 public import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.ToricSymbols
 public import Development.AbelianVarietyTheory.Definitions.Foundations.NormSumPairRankZeroOfCurveCoordNorm
 
@@ -249,6 +250,6 @@ theorem trFlip_of_same (hsame : SameD) : TrFlip := by
   have hdep : depthAt G' w' = depthAt G w' := (by with_unfolding_all exact ((congrArg (max · 1) h3) :))
   exact (by with_unfolding_all exact ((flips_tensor_heq e1 (T3.trans h4) .one hψ (unifAt w') hdep (flipOrder (m + 1))) :))
 
-theorem flippedTensorsTransferToGrid_proof : TrFlip := trFlip_of_same (sameD_of_cosZero GlobalTheory.T.exists_coset_same_localCosetSets_other_baseLattice)
+theorem flippedTensorsTransferToGrid_proof : TrFlip := trFlip_of_same (sameD_of_cosZero _root_.GlobalTheory.FunObj.CosFlip.exists_cos_cosetSet_eq)
 
 end GlobalTheory.RowEx.Carry

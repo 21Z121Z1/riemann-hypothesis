@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.SpanningFamilies.IsHeatZero
+public import Development.AbelianVarietyTheory.Definitions.SpanningFamilies.Bundle0001
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.SquareIntegrability.GCauchyStatement
-public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.SiegelWeilFormulaDegreeSuccStatement
+public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.SiegelWeilFormulaDegreeSucc
 
 @[expose] public section
 
@@ -21,6 +21,6 @@ theorem siegel_weil_definite : ∀ (E : Type) [Field E] [NumberField E] [IsCMFie
     rw [Base.swd_zero, Base.swDiff_deg_zero]
   | succ N ih =>
     intro h
-    exact GlobalTheory.T.siegelWeil_formula_degree_succ E Ψ hΨ n N hn h (ih (by omega))
+    exact _root_.GlobalTheory.SW.swAt_succ E Ψ hΨ n N hn h (ih (by omega))
 
 end GlobalTheory.SW

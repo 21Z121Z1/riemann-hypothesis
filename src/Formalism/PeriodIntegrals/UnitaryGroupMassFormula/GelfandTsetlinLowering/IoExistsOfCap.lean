@@ -1,8 +1,7 @@
 module
 
 public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.GelfandTsetlinLowering.ZScalarVanish
-public import Formalism.PeriodIntegrals.HwIrred
-public import Formalism.PeriodIntegrals.GTBranch
+public import Formalism.PeriodIntegrals.Bundle0019
 public import Formalism.GradedWeylDivisibility.FinalD
 
 @[expose] public section

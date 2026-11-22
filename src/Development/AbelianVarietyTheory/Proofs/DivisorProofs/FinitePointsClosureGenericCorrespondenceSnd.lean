@@ -1,11 +1,11 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsTjCorrDiagModel
-public import Development.AbelianVarietyTheory.Definitions.ModuliSpaces.IsSeparatedOfIsQProjOver
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FiniteDvrLimitsCorrespondenceFiniteSndStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsPIsogenyAtClosedPointOfDvrLimitStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FinitePIsogenySourcesAtCharPPointStatement
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0061
+public import Development.AbelianVarietyTheory.Definitions.ModuliSpaces.Bundle0002
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2160
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle3154
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle3156
 
 @[expose] public section
 

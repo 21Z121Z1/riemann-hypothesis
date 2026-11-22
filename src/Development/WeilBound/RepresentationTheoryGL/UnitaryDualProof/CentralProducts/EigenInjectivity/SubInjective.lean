@@ -2,8 +2,8 @@ module
 
 public import Mathlib
 public import Development.WeilBound.RepresentationTheoryGL.UnitaryDualProof.CentralProducts.TopProdD
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CentralCharacterEqProdSupercuspidalSupport
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ParabolicProductTwoRepsEquivTwoBlockInduction
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0643
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0151
 
 @[expose] public section
 

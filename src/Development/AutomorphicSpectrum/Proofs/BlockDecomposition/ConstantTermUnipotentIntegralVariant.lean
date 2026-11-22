@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.OneMemGoodCT
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsCuspidalLieActionOfIsCuspForm
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ChartUnipotentFderivContinuousOn
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0330
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0714
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0699
 public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsNormalisedThetaSub
 
 @[expose] public section

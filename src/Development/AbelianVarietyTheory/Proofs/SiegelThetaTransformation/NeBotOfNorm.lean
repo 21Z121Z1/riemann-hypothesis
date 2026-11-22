@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.SpanningFamilies.IsHeatZero
+public import Development.AbelianVarietyTheory.Definitions.SpanningFamilies.Bundle0001
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.SquareIntegrability.GCauchyStatement
-public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.CycOfPrime
+public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.Bundle0014
 
 @[expose] public section
 

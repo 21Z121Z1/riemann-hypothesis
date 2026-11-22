@@ -2,7 +2,7 @@ module
 
 public import Formalism.LocalToGlobal.GroupLattices.ComparisonMaps.CmpCMemMIff
 public import Formalism.LocalToGlobal.GroupLattices.ComparisonMaps.CompFintype
-public import Formalism.LocalToGlobal.GroupLattices.TiedFamilies.IsUnitDetBlockPreimage
+public import Formalism.LocalToGlobal.GroupLattices.TiedFamilies.Bundle0005
 
 @[expose] public section
 

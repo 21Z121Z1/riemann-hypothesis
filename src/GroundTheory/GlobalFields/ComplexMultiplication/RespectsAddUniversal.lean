@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import GroundTheory.ArithmeticGeometry.AbelianVarieties.DualIsogeny
-public import GroundTheory.ArithmeticGeometry.AbelianVarieties.ReductionTorsion
+public import GroundTheory.ArithmeticGeometry.AbelianVarieties.Bundle0002
 
 @[expose] public section
 

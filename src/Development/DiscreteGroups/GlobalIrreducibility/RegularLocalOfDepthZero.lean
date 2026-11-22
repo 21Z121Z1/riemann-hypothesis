@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.RegularLocalOfDepthZero
-public import Development.DiscreteGroups.GlobalIrreducibility.DzBigDef
-public import Development.DiscreteGroups.GlobalIrreducibility.DzRankBound
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0858
+public import Development.DiscreteGroups.GlobalIrreducibility.Bundle0014
+public import Development.DiscreteGroups.GlobalIrreducibility.Bundle0015
 
 @[expose] public section
 

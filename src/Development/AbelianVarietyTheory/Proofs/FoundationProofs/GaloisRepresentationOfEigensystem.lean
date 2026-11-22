@@ -1,16 +1,16 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Foundations.EigenOfTwoStep
-public import Development.AbelianVarietyTheory.Definitions.Foundations.LiftApplyOfMemAdmissibleSubalgebra
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.CayleyHamiltonHeckeEigenvectorEveryGaloisElementStatement
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.TwoDimRepQuadraticRelationStatement
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.HeckeOperatorCommGaloisActionModularTowerStatement
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.KummerBettiModuleFreeFiniteStatement
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.GalBMemKummerInvariantSetStatement
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.HeckeLetterPreservesBasisSetStatement
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ModularTowerBAdmissibleHeckeCommuteStatement
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.AdjoinStableAndCommutes
+public import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0008
+public import Development.AbelianVarietyTheory.Definitions.Foundations.Bundle0010
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.CayleyHamiltonHeckeEigenvectorEveryGaloisElement
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0091
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0367
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0161
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0141
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.HeckeLetterPreservesBasisSet
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ModularTowerBAdmissibleHeckeCommute
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0092
 
 @[expose] public section
 
@@ -139,14 +139,14 @@ theorem heckeProj_main : ∀ {Ω : Type} [Field Ω] [Algebra ℚ Ω] [IsAlgClosu
   intro Ω _ _ _ ε X hε hj N l w _ hl hN hNl hw E _ _ _ hnorm lam hSS ρ S0 htc hdc hfr hirr
   obtain ⟨P, hPadm, hP1, hPe⟩ := hSS
   have hgal : ∀ s, ∀ x ∈ X.VB N l w E, X.galV l E s x ∈ X.VB N l w E := fun s x hx =>
-    HeckeProj.bc_mem E (X.B N l w) (X.galB l s) (GlobalTheory.T.galB_mem_kummer_invariant_set ε X hε hj N l w hl hN hNl hw s) x hx
+    HeckeProj.bc_mem E (X.B N l w) (X.galB l s) (_root_.GlobalTheory.KZ.StabGal.galB_mem_B ε X hε hj N l w hl hN hNl hw s) x hx
   have hstab : ∀ T ∈ {T | admitted N l T}, ∀ x ∈ X.VB N l w E, X.opV N l E T x ∈ X.VB N l w E := fun T hT x hx =>
-    HeckeProj.bc_mem E (X.B N l w) (X.op N l T) (GlobalTheory.T.hecke_letter_preserves_basis_set ε X hε hj N l w hl hN hNl hw T hT) x hx
+    HeckeProj.bc_mem E (X.B N l w) (X.op N l T) (_root_.GlobalTheory.KZ.B_stable_op ε X hε hj N l w hl hN hNl hw T hT) x hx
   have hcomm : ∀ T ∈ {T | admitted N l T}, ∀ s, ∀ x ∈ X.VB N l w E,
       X.opV N l E T (X.galV l E s x) = X.galV l E s (X.opV N l E T x) := fun T hT s x hx =>
     HeckeProj.bc_comm E (X.B N l w) (X.op N l T) (X.galB l s)
-      (fun b hb => GlobalTheory.T.hecke_operator_comm_galois_action_modular_tower ε X hε hj N l w hl hN hNl hw T hT s b hb) x hx
-  have hfin : Module.Finite ℤ_[l] (X.B N l w) := (GlobalTheory.T.kummerBettiModule_free_finite ε X hε hj N l w hl hN hNl hw).2
+      (fun b hb => _root_.GlobalTheory.KZ.HeckeGal.op_galB_comm ε X hε hj N l w hl hN hNl hw T hT s b hb) x hx
+  have hfin : Module.Finite ℤ_[l] (X.B N l w) := (_root_.GlobalTheory.KZ.B_free_finite ε X hε hj N l w hl hN hNl hw).2
   have hVBfin : FiniteDimensional E (X.VB N l w E) := by
     unfold Tower.VB; infer_instance
   set Pv := FreeAlgebra.lift E (X.opV N l E) P with hPv
@@ -193,11 +193,11 @@ theorem heckeProj_main : ∀ {Ω : Type} [Field Ω] [Algebra ℚ Ω] [IsAlgClosu
       Matrix.det (ρ g : Matrix (Fin 2) (Fin 2) E) • (1 : Module.End E U) = 0 := by
     intro g
     ext u
-    have hu := GlobalTheory.T.cayleyHamilton_heckeEigenvector_every_galois_element ε X hε hj N l w hl hN hNl hw hnorm lam
+    have hu := _root_.GlobalTheory.cayleyHamilton_galV ε X hε hj N l w hl hN hNl hw hnorm lam
       (fun s => Matrix.trace (ρ s : Matrix (Fin 2) (Fin 2) E)) (fun s => Matrix.det (ρ s : Matrix (Fin 2) (Fin 2) E))
       S0 htc hdc hfr (u : E ⊗[ℤ_[l]] X.Fn l) (hUVB u u.2) (hUeig u u.2) g
     simpa [Module.End.mul_apply, hσU] using hu
-  obtain ⟨m, π', s', h1, h2', h3, h4⟩ := GlobalTheory.T.two_dim_rep_quadratic_relation h2 ρ hirr σU hCH
+  obtain ⟨m, π', s', h1, h2', h3, h4⟩ := _root_.GlobalTheory.CayleyHamiltonId.isotypic_of_quadratic_relation h2 ρ hirr σU hCH
   let Pr : X.VB N l w E →ₗ[E] U :=
     LinearMap.codRestrict U (Pv ∘ₗ (X.VB N l w E).subtype) (fun x => Submodule.mem_map_of_mem x.2)
   have hext : ∀ i : Fin m, ∃ g : (E ⊗[ℤ_[l]] X.Fn l) →ₗ[E] (Fin 2 → E),
@@ -208,7 +208,7 @@ theorem heckeProj_main : ∀ {Ω : Type} [Field Ω] [Algebra ℚ Ω] [IsAlgClosu
   have hTT : ∀ T ∈ {T | admitted N l T}, ∀ T' : {T // admitted N l T}, ∀ x ∈ X.VB N l w E,
       X.opV N l E T (X.opV N l E T'.1 x) = X.opV N l E T'.1 (X.opV N l E T x) := fun T hT T' x hx =>
     HeckeProj.bc_comm E (X.B N l w) (X.op N l T) (X.op N l T'.1)
-      (fun b hb => GlobalTheory.T.modularTowerB_admissibleHecke_commute ε X hε hj N l w hl hN hNl hw T T'.1 hT T'.2 b hb) x hx
+      (fun b hb => _root_.GlobalTheory.KZ.B_op_comm ε X hε hj N l w hl hN hNl hw T T'.1 hT T'.2 b hb) x hx
   have hPT := HeckeProj.adj_stab {T | admitted N l T} (X.opV N l E) (X.VB N l w E)
     (fun T' : {T // admitted N l T} => X.opV N l E T'.1) hstab hTT P hPadm
   have hsumP : ∀ x ∈ X.VB N l w E, Pv x = ∑ i, (U.subtype ∘ₗ s' i) (π i x) := by

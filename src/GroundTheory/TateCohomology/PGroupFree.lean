@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import GroundTheory.TateCohomology.InducedNorm
-public import GroundTheory.TateCohomology.TateAddEquivAbelianizationTateClass
-public import GroundTheory.TateCohomology.PGroupFixed
+public import GroundTheory.TateCohomology.Bundle0003
+public import GroundTheory.TateCohomology.Bundle0002
+public import GroundTheory.TateCohomology.Bundle0001
 
 @[expose] public section
 

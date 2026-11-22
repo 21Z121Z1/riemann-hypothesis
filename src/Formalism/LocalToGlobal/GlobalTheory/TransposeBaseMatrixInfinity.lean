@@ -1,7 +1,7 @@
 module
 
 public import Formalism.LocalToGlobal.GlobalTheory.NatInvMemIntW
-public import Formalism.LocalToGlobal.GroupLattices.ComparisonMaps.ExistsPrimeToLe
+public import Formalism.LocalToGlobal.GroupLattices.ComparisonMaps.Bundle0010
 
 @[expose] public section
 

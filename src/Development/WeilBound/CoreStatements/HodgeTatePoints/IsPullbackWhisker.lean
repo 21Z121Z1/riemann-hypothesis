@@ -1,24 +1,25 @@
 module
 
-public import Development.WeilBound.CoreStatements.HodgeTatePoints.Comp1PointPowerExpand
-public import Development.WeilBound.CoreStatements.HodgeTatePoints.HtatLieBc
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsLieModelStatement
-public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.ChartJetTrD
-public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.FBMapPf
-public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.FBIdLB
+public import Development.WeilBound.CoreStatements.HodgeTatePoints.Bundle0040
+public import Development.WeilBound.CoreStatements.HodgeTatePoints.Bundle0050
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsLieModel
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.Bundle0001
+public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0019
+public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0011
+public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0010
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.ValCalc
-public import Development.WeilBound.CoreStatements.HodgeTatePoints.CdLocal
-public import Development.WeilBound.CoreStatements.HodgeTatePoints.CdUniv
+public import Development.WeilBound.CoreStatements.HodgeTatePoints.Bundle0058
+public import Development.WeilBound.CoreStatements.HodgeTatePoints.Bundle0054
 public import Development.WeilBound.CoreStatements.HodgeTatePoints.CbFrob
-public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsCocharLieLieModel
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.Bundle0008
 public import Mathlib
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.GtPtsVal
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.Bundle0008
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.ChartPullbacks.TangentLinearity.FnOfComp
 public import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.ExistsUniqueCharacterOfMul
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.DiscreteValuationRings.PullUUnitsCompatGeneric
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.NonzeroLocus
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.DiscreteValuationRings.ProdIso
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.DiscreteValuationRings.LBLocal
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.DiscreteValuationRings.Bundle0002
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.SemiabelianSchemes.PrecompleteBases.PsbLb
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.ChartPullbacks.GeneratorPullback.PullAlong
 
@@ -112,8 +113,8 @@ theorem basis_bc {n : ℕ} {tg : Fin n → (Sp (DualNumber S) ⟶ t.G.left)} (ht
     (hw : IsTanAtG t (spMap f ≫ x) w) :
     ∃! a : Fin n → S₂, IsCombAtG t (spMap f ≫ x) (fun i => spMap (GlobalTheory.CompanionTheory.Ar.dualMap f) ≫ tg i) a w := by
   letI : Algebra S S₂ := f.toAlgebra
-  obtain ⟨V, _, _, ⟨M⟩⟩ := GlobalTheory.T.exists_lie_model X0 t.G S x
-  obtain ⟨V', _, _, ⟨M'⟩⟩ := GlobalTheory.T.exists_lie_model X0 t.G S₂ (spMap f ≫ x)
+  obtain ⟨V, _, _, ⟨M⟩⟩ := _root_.GlobalTheory.CompanionTheory.Ar.lieModel_exists X0 t.G S x
+  obtain ⟨V', _, _, ⟨M'⟩⟩ := _root_.GlobalTheory.CompanionTheory.Ar.lieModel_exists X0 t.G S₂ (spMap f ≫ x)
   obtain ⟨j, hj, -, hbs⟩ := PositivityTheory.HtPt.Htat.lie_bc X0 t.G S S₂ x V V' M M'
   choose b hb' using fun l => M.onto (Over.homMk (tg l) (ht l).1) (ht l).2
   have htg : tg = fun l => (M.pt (b l)).left := funext fun l => by rw [hb']; rfl

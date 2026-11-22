@@ -1,7 +1,7 @@
 module
 
-public import Formalism.SharpRestriction.AdmissibleParameterJoins.SfromGLu
-public import Formalism.SharpRestriction.CuspSpanNormBounds.BruhatCellsKronecker
+public import Formalism.SharpRestriction.AdmissibleParameterJoins.Bundle0006
+public import Formalism.SharpRestriction.CuspSpanNormBounds.Bundle0015
 
 @[expose] public section
 

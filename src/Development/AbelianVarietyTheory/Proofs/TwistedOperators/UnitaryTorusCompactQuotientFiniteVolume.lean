@@ -1,11 +1,10 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.ExistsHasCls
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.NormOneSmallMultiplesByCocompactSubgroup
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.FiniteAlgebraAdelicLatticeProof
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.FieldAdelicUnitTranslateBoundedOfSmallMultiples
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.NormOneBoundedOfUnitBoundedOfAdelicLattice
+public import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.Bundle0004
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0065
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0115
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0064
 
 @[expose] public section
 

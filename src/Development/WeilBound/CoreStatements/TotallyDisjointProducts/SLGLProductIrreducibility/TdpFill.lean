@@ -1,6 +1,6 @@
 module
 
-public import Development.AutomorphicSpectrum.Proofs.GlobalProofs.TotallyDisjointProductIrreducibleOfPolynomialRin
+public import Development.AutomorphicSpectrum.Proofs.GlobalProofs.Bundle0051
 
 @[expose] public section
 

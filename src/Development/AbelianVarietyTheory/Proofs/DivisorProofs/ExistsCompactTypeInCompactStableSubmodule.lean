@@ -1,10 +1,10 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Divisors.IsSmoothVector
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0033
 public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.ExistsDerivedActionFiniteDimUnitaryRep
-public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.WeightCompactDominanceOfMemHighestWeightSpan
-public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.ExistsHighestWeightIrreducibleUnitaryRepU
+public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0053
+public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0120
 
 @[expose] public section
 

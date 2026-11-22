@@ -1,10 +1,10 @@
 module
 
-public import Formalism.LocalToGlobal.ProjectiveLattices.PtOfSInst
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0036
 public import Formalism.LocalToGlobal.ProjectiveLattices.CurveLoc
-public import Formalism.LocalToGlobal.ProjectiveLattices.CurveInj
-public import Formalism.LocalToGlobal.ProjectiveLattices.CurveUnit
-public import Formalism.LocalToGlobal.ProjectiveLattices.PtOfSPfBC
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0040
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0038
+public import Formalism.LocalToGlobal.ProjectiveLattices.Bundle0039
 
 @[expose] public section
 

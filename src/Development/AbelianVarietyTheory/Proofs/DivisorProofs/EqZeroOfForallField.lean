@@ -1,24 +1,24 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Divisors.HasDefect
-public import Development.AbelianVarietyTheory.Definitions.Divisors.RigidForFan
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0060
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0071
 public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.ToroidalCompactificationBis
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsTranslateOfTangentVectorFibreToGroupScheme
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TangentCombinationPreservedByBaseChange
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsLogDerivationExtensionBasicOpen
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.KodairaSpencerConditionRestrictBasicOpenOfAffine
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ChartFrameBaseHolds
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2376
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2037
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2009
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2024
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0535
 public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsFlagModelBaseChangeIntegralFramedPoint
 public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.InvariantVectorFieldsBasisVerticalDerivations
-public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsFiniteAffineCharts
+public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0035
 public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsSymmOfKsCoc
-public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.MatrixIntertwinesAdjoint
+public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0105
 public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ObjIsAbelianSchemeDimRigidifiedSym
-public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ObjPull
-public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.TheoremOfCubePolAbelianScheme
-public import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.AbelianSchemeLawsUnconditional
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.SabComp
+public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0118
+public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0174
+public import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.Bundle0029
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.Bundle0006
 
 @[expose] public section
 
@@ -329,7 +329,7 @@ theorem map_mem_balanced {E : Type} [Field E] [NumberField E] [IsCMField E] {H :
     (i₂.chartPull (Geo.Tor.chartPullPull _ _ _ rfl) (Geo.Tor.chartPullPull _ _ _ rfl))
   obtain ⟨⟨φ, hφ⟩, hφ'⟩ := GlobalTheory.KS.DlogPol.dlog_independent K (GlobalTheory.Obj.toPolAV o₀) n u dd hbas hdd _ _ L hL hI
   obtain ⟨Θ', hs, hΘ'⟩ := GlobalTheory.KS.Sym.exists_symm_of_ksCoc GlobalTheory.abelianSchemeLaws_all.1 GlobalTheory.abelianSchemeLaws_all.2
-    GlobalTheory.T.theorem_of_cube_polAbelianScheme K (GlobalTheory.Obj.toPolAV o₀) n u dd hbas hdd _ x₀ (GlobalTheory.Obj.toPolAV o) _ L _ d _ φ hm hL haff hI (hd φ hφ) hφ
+    _root_.GlobalTheory.Moduli.cube_of_isLB K (GlobalTheory.Obj.toPolAV o₀) n u dd hbas hdd _ x₀ (GlobalTheory.Obj.toPolAV o) _ L _ d _ φ hm hL haff hI (hd φ hφ) hφ
   have e : Θ' = -Θ.map x₀ := by
     rw [eq_comm, ← sub_eq_zero]
     funext b

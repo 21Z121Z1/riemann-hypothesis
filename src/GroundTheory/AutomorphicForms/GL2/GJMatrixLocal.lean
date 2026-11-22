@@ -4,7 +4,7 @@ public import Mathlib
 public import GroundTheory.AutomorphicForms.GL2.GJMatrixFinite
 public import GroundTheory.AutomorphicForms.GL2.GJMatrixCoord
 public import GroundTheory.LocalFields.LocalFourier
-public import GroundTheory.AutomorphicForms.GL2.GJZetaDefs
+public import GroundTheory.AutomorphicForms.GL2.Bundle0002
 
 @[expose] public section
 

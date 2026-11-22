@@ -2,7 +2,7 @@ module
 
 public import CompanionTheory.AutomorphicTheory.JacobiDiagonalBounds.NfTieHatSOf
 public import CompanionTheory.AutomorphicTheory.DiscreteGroupWaves.NFCoreC
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.GaugeConstructionHolds
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0295
 
 @[expose] public section
 

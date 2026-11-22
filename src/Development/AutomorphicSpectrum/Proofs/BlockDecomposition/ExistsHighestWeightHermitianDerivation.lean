@@ -2,16 +2,16 @@ module
 
 public import Mathlib
 public import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.RealDescent.RealLeviDescent.HighestVectorsRegularLine
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.WtRInjective
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.DifferentiableCoeffRowAct
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.HasDerivAtMulVec
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LineInverse
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.WeylCharEqGtChar
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SecondCountableUnitary
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.GelfandInfinitesimalCharacter
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SumMemOfStable
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FiniteDimTranslationRepUnitaryModel
-public import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.HwIrred
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0384
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0595
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0392
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0395
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0458
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0605
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0033
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0382
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1336
+public import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.Bundle0020
 
 @[expose] public section
 

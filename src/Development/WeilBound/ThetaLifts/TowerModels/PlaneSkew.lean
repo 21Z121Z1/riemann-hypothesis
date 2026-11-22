@@ -1,7 +1,7 @@
 module
 
-public import Development.WeilBound.ThetaLifts.TowerModels.PlaneHerm
-public import Development.WeilBound.ThetaLifts.TowerModels.PlaneMain
+public import Development.WeilBound.ThetaLifts.TowerModels.Bundle0002
+public import Development.WeilBound.ThetaLifts.TowerModels.Bundle0006
 
 @[expose] public section
 

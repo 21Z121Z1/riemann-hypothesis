@@ -2,13 +2,12 @@ module
 
 public import Mathlib
 public import Formalism.LocalRingCardinality.RhoDetPrimeEqMuTildeMulChiPow
-public import Formalism.LocalToGlobal.Divisibility.Tuples
-public import Formalism.LocalToGlobal.UnitaryNorms.CharTied
+public import Formalism.LocalToGlobal.Divisibility.Bundle0001
+public import Formalism.LocalToGlobal.UnitaryNorms.Bundle0006
 public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.IsRationalUnitaryDeterminantMapRationalUnitaryTo
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.HostCmEmbeddingProperties
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.FiniteAdeleStrongApproximationModNat
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsIdempotentIsUnitOneAddOrSubAdele
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Hilbert90AdeleRingTensorQuadratic
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0094
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0008
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0006
 
 @[expose] public section
 

@@ -1,7 +1,7 @@
 module
 
-public import Formalism.SharpRestriction.GrowthBounds.TwistedSubstitution.Proposition5Gram
-public import Formalism.SharpRestriction.GrowthBounds.RootWeights.ValuationBoundDetPowerFactor
+public import Formalism.SharpRestriction.GrowthBounds.TwistedSubstitution.Bundle0001
+public import Formalism.SharpRestriction.GrowthBounds.RootWeights.Bundle0010
 public import Formalism.SharpRestriction.GrowthBounds.RootWeights.MulLaurentSup
 public import Formalism.SharpRestriction.GrowthBounds.RootWeights.DerivativeValuationBounds
 

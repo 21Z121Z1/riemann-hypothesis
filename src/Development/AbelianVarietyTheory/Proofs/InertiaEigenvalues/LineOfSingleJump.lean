@@ -4,9 +4,9 @@ public import Mathlib
 public import Formalism.LocalRingCardinality.AdicCompletionLocal.LocTied
 public import Formalism.SharpRestriction.LevelLetterCocycles.LocalSituation
 public import Formalism.SharpRestriction.LevelLetterCocycles.LocCoh
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.DeRhamComparisonIsFilteredStatement
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.SecondTwistSmallIffExactlyAtAndFinClause
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.EventuallyClosedOfDictClosed
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0318
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0047
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0213
 
 @[expose] public section
 

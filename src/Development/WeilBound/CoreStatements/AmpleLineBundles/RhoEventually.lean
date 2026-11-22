@@ -2,7 +2,11 @@ module
 
 public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ComplexPointsClosureCoords
 public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.SegreChartBundle
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LocalRingPointsExistsUniqueStatement
+public import Mathlib
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LocalRingPointsExistsUnique
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.Bundle0004
+public import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.FrameDefinitions.Metric
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.IsGrpPullback
 
 @[expose] public section
 
@@ -189,7 +193,7 @@ def vl (ξ : Sp Ω ⟶ X) (y : (Σ k, J k) → Ω) (a : Ω) (w : (Σ k, J k) →
 theorem pt_unique (hall : ∀ q : X, genPt ξ ⤳ q)
     (tie : CoordTie ℤ ξ (fun c' : (k : K) → J k => ∏ k, y ⟨k, c' k⟩)) {z z' : Sp ℂ ⟶ X} {w : (Σ k, J k) → ℂ}
     (h : CoordsAt ξ y z w) (h' : CoordsAt ξ y z' w) : z = z' := by
-  have key := GlobalTheory.T.local_ring_points_existsUnique X Ω ξ K J y tie ℂ
+  have key := _root_.GlobalTheory.CompanionTheory.Ar.tie_points X Ω ξ K J y tie ℂ
   exact (key.1 w h.1 (key.2.2 z w (hall _) h).1).unique ⟨hall _, h⟩ ⟨hall _, h'⟩
 
 theorem vl_eq (hall : ∀ q : X, genPt ξ ⤳ q)

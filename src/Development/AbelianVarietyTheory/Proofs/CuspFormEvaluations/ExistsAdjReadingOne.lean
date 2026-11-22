@@ -2,13 +2,12 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.ThetaValues.ThConst
-public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.ThExprUniqOfChartIndep2
+public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0007
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.SecBaseChangeAnySt
-public import Development.AbelianVarietyTheory.Proofs.FormalGroupCharts.ExistsGenRosati
-public import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.IsHolFamPullbackLiftOfCommonBaseStatement
-public import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.AbelianHolomorphicFrameReadingConstOfFormsCancelStatement
-public import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.GeneratorReadingCorrMulInvStatement
-public import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.GeneratorReadingPullbackPeriodRigidStatement
+public import Development.AbelianVarietyTheory.Proofs.FormalGroupCharts.Bundle0014
+public import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.Bundle0019
+public import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.Bundle0023
+public import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.Bundle0020
 
 @[expose] public section
 
@@ -247,7 +246,7 @@ theorem reading_one (f f' : A ⟶ A) [IsMonHom f] [IsMonHom f']
   have hq : IsHolFam q := by
     have h1 := hol_comp Φ ((LinearMap.fst ℂ _ _) ∘ₗ C.toLinearMap)
     have h2 := hol_comp Φ ((LinearMap.snd ℂ _ _) ∘ₗ C.toLinearMap)
-    exact GlobalTheory.T.isHolFam_pullback_lift_of_common_base S A.left A.left A.hom A.hom (g + g) _ _ x0 (fun _ => Over.w _) (fun _ => Over.w _) h1 h2
+    exact _root_.GlobalTheory.AnVal.isHolFam_pullback_lift S A.left A.left A.hom A.hom (g + g) _ _ x0 (fun _ => Over.w _) (fun _ => Over.w _) h1 h2
   have hφ : ∀ z k, q z ≫ adφ f f' k = (Φ.e (Λ k z)).left := by
     intro z k
     simp only [q]
@@ -296,7 +295,7 @@ theorem reading_one (f f' : A ⟶ A) [IsMonHom f] [IsMonHom f']
       Finset.sum_neg_distrib]
     rw [sum_herm, sum_herm]
     simp [M1, M2, h₁, h₂]
-  obtain ⟨⟨v, hv0, hv⟩, -⟩ := GlobalTheory.T.abelianHolomorphicFrame_reading_const_of_forms_cancel S A L x0 g Φ (A ⊗ A).left _ (adφ f f') adε u hu (g + g) q Λ _ hq hφ
+  obtain ⟨⟨v, hv0, hv⟩, -⟩ := _root_.GlobalTheory.AnVal.genRd_const S A L x0 g Φ (A ⊗ A).left _ (adφ f f') adε u hu (g + g) q Λ _ hq hφ
     (span_prod C Φ.lat Φ.span) hper hherm
   have hv1 : v = 1 := by
     have h0 := hv 0
@@ -310,7 +309,7 @@ theorem reading_one (f f' : A ⟶ A) [IsMonHom f] [IsMonHom f']
       (lift (1 : A ⊗ A ⟶ A) (1 : A ⊗ A ⟶ A)).left (q 0) _ v).mpr h0
     have hone := genRd_of_specComplex Φ (q 0)
     have hsame := sameSum_adφ_adε_empty f f'
-    exact (GlobalTheory.T.generatorReading_corr_mul_inv S A L x0 g Φ (A ⊗ A).left _ PEmpty _ adε PEmpty.elim PEmpty.elim _ (LB.oneGen L.L) (q 0) _
+    exact (_root_.GlobalTheory.AnValGenCorr.genRd_corr_mul_inv S A L x0 g Φ (A ⊗ A).left _ PEmpty _ adε PEmpty.elim PEmpty.elim _ (LB.oneGen L.L) (q 0) _
       PEmpty.elim v 1 hp hone).2.1 hn hsame ⟨fun _ => 0, fun k => by simp [Λ], fun k => k.elim⟩
   subst hv1
   refine ⟨u, hu, fun z w => ?_⟩

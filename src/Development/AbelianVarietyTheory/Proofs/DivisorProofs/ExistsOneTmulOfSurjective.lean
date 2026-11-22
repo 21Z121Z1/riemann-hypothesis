@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.FiniteAlgebrasOverHenselianAndComplete
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BijectiveBaseChangeResidueFieldOfFiniteEtale
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0047
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0180
 
 @[expose] public section
 

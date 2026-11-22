@@ -2,10 +2,10 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.Divisors.HasBlockOfOccurs
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LevelMapExists
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.JKInvOfTriv
-public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.ChebotarevDegreeOneIffCheb
-public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.BhattScholzeCrystallineLattices
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1037
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1036
+public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.Bundle0006
+public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.Bundle0005
 public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.ConclusionAbsPow
 
 @[expose] public section

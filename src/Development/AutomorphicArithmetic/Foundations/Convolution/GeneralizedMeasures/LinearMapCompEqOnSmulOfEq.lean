@@ -2,10 +2,10 @@ module
 
 public import Development.AutomorphicArithmetic.Foundations.Convolution.GeneralizedMeasures.HeckeFinAlt
 public import Development.AutomorphicArithmetic.Foundations.Convolution.GeneralizedMeasures.TermEx
-public import Development.AutomorphicArithmetic.Foundations.Convolution.GeneralizedMeasures.SideE
+public import Development.AutomorphicArithmetic.Foundations.Convolution.GeneralizedMeasures.Bundle0004
 public import Development.AutomorphicArithmetic.Foundations.Convolution.GeneralizedMeasures.SmoothStar
-public import Development.AutomorphicArithmetic.Foundations.Convolution.GeneralizedMeasures.LocHeightDiagPowLe
-public import Development.AutomorphicArithmetic.Foundations.Convolution.GeneralizedMeasures.SumSmulApply
+public import Development.AutomorphicArithmetic.Foundations.Convolution.GeneralizedMeasures.Bundle0001
+public import Development.AutomorphicArithmetic.Foundations.Convolution.GeneralizedMeasures.Bundle0002
 public import Development.AutomorphicArithmetic.Foundations.Convolution.LocalGroupAnalysis.G1St
 
 @[expose] public section

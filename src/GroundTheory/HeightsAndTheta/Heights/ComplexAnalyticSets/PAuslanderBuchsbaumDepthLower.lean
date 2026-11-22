@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StAuslanderBuchsbaumDepthLower
+public import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.Bundle0003
 
 @[expose] public section
 

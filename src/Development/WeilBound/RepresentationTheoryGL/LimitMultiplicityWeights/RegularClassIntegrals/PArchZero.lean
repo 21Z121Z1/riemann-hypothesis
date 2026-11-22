@@ -1,7 +1,7 @@
 module
 
 public import Development.WeilBound.RepresentationTheoryGL.LimitMultiplicityWeights.RegularClassIntegrals.ArchUnimod
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HyperbolicTermsVanish
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1730
 public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsCyclicOfFiniteQuotient
 
 @[expose] public section

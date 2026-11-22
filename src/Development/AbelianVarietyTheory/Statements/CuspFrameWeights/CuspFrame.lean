@@ -1,10 +1,8 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Statements.CuspFrameWeights.ConvolutionSmoothL2
-public import Development.AbelianVarietyTheory.BlockTheory.SiegelWeilLocal.PointwiseKernelBound
-public import Development.AbelianVarietyTheory.BlockTheory.SiegelWeilLocal.FarTermsLatticeBound
-public import Development.AbelianVarietyTheory.BlockTheory.SiegelWeilLocal.CuspidalFrames
+public import Development.AbelianVarietyTheory.Statements.CuspFrameWeights.Bundle0001
+public import Development.AbelianVarietyTheory.BlockTheory.SiegelWeilLocal.Bundle0001
 
 @[expose] public section
 

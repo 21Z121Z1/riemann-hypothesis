@@ -2,7 +2,7 @@ module
 
 public import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.KunnethLefschetz.BasisOne
 public import GroundTheory.ArithmeticGeometry.SchemeCohomology.ProperCohomology.SegreGlue
-public import GroundTheory.ArithmeticGeometry.SchemeCohomology.ProperCohomology.ProjSpaceHom
+public import GroundTheory.ArithmeticGeometry.SchemeCohomology.ProperCohomology.Bundle0005
 public import GroundTheory.ArithmeticGeometry.SchemeCohomology.ProjectiveSpaceChart
 public import Development.AbelianVarietyTheory.Proofs.CovolumeBounds.IsProjOverCompOfIsClosedImmersion
 

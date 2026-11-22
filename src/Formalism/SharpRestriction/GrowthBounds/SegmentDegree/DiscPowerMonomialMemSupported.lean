@@ -1,6 +1,6 @@
 module
 
-public import Formalism.SharpRestriction.GrowthBounds.SegmentDegree.DiscPowerTimesMonomial
+public import Formalism.SharpRestriction.GrowthBounds.SegmentDegree.Bundle0022
 
 @[expose] public section
 

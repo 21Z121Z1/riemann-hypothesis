@@ -3,7 +3,7 @@ module
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.Degenerations.ArithBase
 public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.SpanEqSpanMinor
-public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsAdaptedBasisTestLattice
+public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.Bundle0055
 
 @[expose] public section
 

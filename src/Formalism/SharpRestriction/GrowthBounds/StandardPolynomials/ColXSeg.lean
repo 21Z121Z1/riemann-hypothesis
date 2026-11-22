@@ -1,6 +1,6 @@
 module
 
-public import Formalism.SharpRestriction.GrowthBounds.StandardPolynomials.ColDef
+public import Formalism.SharpRestriction.GrowthBounds.StandardPolynomials.Bundle0008
 public import Formalism.SharpRestriction.GrowthBounds.BinomialRatio.OtherStart
 
 @[expose] public section

@@ -3,7 +3,7 @@ module
 public import Formalism.HermitianCurvature.StatementHeads
 public import Formalism.HermitianCurvature.RealInputsClosedAdmissibleSettings
 public import Formalism.HermitianCurvature.HermitianCurvatureProofs.LevelsOfBuiltSetting
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.OperatorPreservesFusionForms
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0061
 
 @[expose] public section
 

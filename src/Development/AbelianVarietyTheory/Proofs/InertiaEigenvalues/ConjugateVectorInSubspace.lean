@@ -2,24 +2,22 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.StableIffCarrierEq
-public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.IsComp
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsLiftAt
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsotInDetectByEqvMap
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FiniteTypeVectorDetectedLocalComponentEquivarianStatement
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsTrivOutsideLoc
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ReductionGLSurjective
+public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0029
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0720
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0731
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0742
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0735
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0729
 public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.TrivOutsideMul
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SplitPlacesInjective
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.RowsAtLevelsFixedPrincipalCongruenceTypePlacesStatement
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.GoodProjectorEqGoodIdempotentTypePlacesStatement
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SplitCompletionSymmContinuous
-public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.CenLocOfCenReal
-public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.CoreEq
-public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.NoFormsOff
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0732
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0815
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0741
+public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.Bundle0046
+public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0033
 public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.IsRhoPtOfSplitting
-public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.DepthZeroWild
+public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.Bundle0010
 public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.DepthZeroSupport
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.LocalGlobalAboveL
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0646
 
 @[expose] public section
 
@@ -63,7 +61,7 @@ theorem loc_piece {L : Type} [Field L] [NumberField L] [IsCMField L] {n g : ℕ}
   subst h
   obtain ⟨i, Tm, hic, hi1, hinj, hmem, heq⟩ := hτ
   refine ⟨ii.trans i.symm, (GlobalTheory.splitCompletion_symm_continuous L s i hic hi1).comp hii, fun f hf hf0 => ?_⟩
-  obtain ⟨p, hp0, hpe⟩ := GlobalTheory.T.finiteType_vector_detected_localComponent_equivariant L n π s τ i Tm hic hi1 hinj hmem heq f hf hf0
+  obtain ⟨p, hp0, hpe⟩ := _root_.GlobalTheory.LocProj.main L n π s τ i Tm hic hi1 hinj hmem heq f hf hf0
   refine ⟨p, hp0, fun y x hx f' hf' => ?_⟩
   have e : ∀ Z : GL (Fin n) ℚ_[g], Matrix.GeneralLinearGroup.map i.toRingHom
       (Matrix.GeneralLinearGroup.map (ii.trans i.symm).toRingHom Z) = Matrix.GeneralLinearGroup.map ii.toRingHom Z := by

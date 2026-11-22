@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Formalism.StatementCM
+public import Formalism.Bundle0002
 
 @[expose] public section
 

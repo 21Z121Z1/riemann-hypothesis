@@ -2,7 +2,7 @@ module
 
 public import Formalism.LocalToGlobal.KernelLattices.ColumnData.ColumnDataEquations.SqLMain
 public import Formalism.LocalToGlobal.KernelLattices.ColumnData.ColumnDataEquations.SqFinal
-public import Formalism.LocalToGlobal.KernelLattices.ColumnData.ColumnDataEquations.MuFinal
+public import Formalism.LocalToGlobal.KernelLattices.ColumnData.ColumnDataEquations.Bundle0004
 public import Formalism.LocalToGlobal.KernelLattices.ColumnData.ColumnDataEquations.SecondConstantHolds
 
 @[expose] public section

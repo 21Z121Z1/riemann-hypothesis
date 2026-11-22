@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Formalism.LocalToGlobal.GlobalTheory.GL3.IntegralityIffAwayAtD
+public import Formalism.LocalToGlobal.GlobalTheory.GL3.Bundle0001
 public import Formalism.LocalToGlobal.GlobalTheory.GL3.DeterminantNormOneOfUnitDisc
 public import Formalism.SharpRestriction.GlobalSchurBounds.StandardIntegralLatticeExists
 

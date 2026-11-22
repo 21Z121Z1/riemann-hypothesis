@@ -3,7 +3,7 @@ module
 public import Development.AbelianVarietyTheory.Definitions.Divisors.RangeShape
 public import Mathlib
 public import Formalism.RealPlaceAnalysis.SmoothOnGVIff
-public import Formalism.RealPlaceAnalysis.RealPlaceTaylor.KoszulLowersPower
+public import Formalism.RealPlaceAnalysis.RealPlaceTaylor.Bundle0005
 public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.IsMulCommutativeCentRealUJ
 
 @[expose] public section

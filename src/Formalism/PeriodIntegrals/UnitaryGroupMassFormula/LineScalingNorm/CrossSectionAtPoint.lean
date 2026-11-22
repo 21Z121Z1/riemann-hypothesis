@@ -2,7 +2,7 @@ module
 
 public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LineScalingNorm.UpRelationSourceUnique
 public import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutGCoreGTSSAdj
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutGCoreGTSSLocal
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0165
 
 @[expose] public section
 

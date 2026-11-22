@@ -1,13 +1,13 @@
 module
 
 public import Mathlib
-public import Formalism.LocalToGlobal.Divisibility.LiftLat
+public import Formalism.LocalToGlobal.Divisibility.Bundle0003
 public import Formalism.LocalToGlobal.Divisibility.RowLatLemmas
 public import Formalism.LocalToGlobal.Divisibility.ProjLemmas
 public import Formalism.LocalToGlobal.Divisibility.FramesLemmas
 public import Formalism.QuotientMetricDivisors.HermitianTwistDivisors.ConjugateWeightLatticeOfGeneral
 public import Formalism.QuotientMetricDivisors.HermitianTwistDivisors.CommutingTwist
-public import Formalism.QuotientMetricDivisors.HermitianTwistDivisors.ClassSumDualGeOfFamily
+public import Formalism.QuotientMetricDivisors.HermitianTwistDivisors.Bundle0004
 public import Formalism.HermitianLattices.HermitianLatticesProofs.IndexBasic
 public import Formalism.HermitianLattices.HermitianLatticesProofs.DualLattice
 public import Formalism.MirabolicMackeyTheory.MirabolicMackeyProofs.RamBasic

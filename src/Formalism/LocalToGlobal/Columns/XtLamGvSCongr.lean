@@ -1,7 +1,7 @@
 module
 
 public import Formalism.LocalToGlobal.Columns.ChainInstY
-public import Formalism.LocalToGlobal.Columns.ChainInstS
+public import Formalism.LocalToGlobal.Columns.Bundle0028
 
 @[expose] public section
 

@@ -1,13 +1,13 @@
 module
 
-public import PositivityTheory.AutomorphicForms.PublishedInputs.HilbertEisenstein.SExpDefs
+public import PositivityTheory.AutomorphicForms.PublishedInputs.HilbertEisenstein.Bundle0004
 public import GroundTheory.GlobalFields.TateThesis.TateThetaDecay
-public import GroundTheory.GlobalFields.TateThesis.TateTheta
+public import GroundTheory.GlobalFields.TateThesis.Bundle0011
 public import GroundTheory.GlobalFields.TateThesis.AdelePoisson
-public import GroundTheory.GlobalFields.TateThesis.EulerFactorsInfinite
+public import GroundTheory.GlobalFields.TateThesis.Bundle0008
 public import GroundTheory.GlobalFields.IdeleGroups.ClassGroup
 public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.ExistsUniqueHcharOfFiniteOrder
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsOpenIdeleSubgroupContainsCongruenceUnits
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0043
 
 @[expose] public section
 

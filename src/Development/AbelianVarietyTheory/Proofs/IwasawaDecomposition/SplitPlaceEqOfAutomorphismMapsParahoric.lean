@@ -1,8 +1,8 @@
 module
 
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ReadsHecke
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0677
 public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SplitPlaceHeckeOperatorScalarOnSpherical
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExistsSplitPlaceParahoricSubgroupCharacter
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0213
 public import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Tjcosets
 public import Formalism.LocalToGlobal.Columns.GenericUnipotentCharacter
 

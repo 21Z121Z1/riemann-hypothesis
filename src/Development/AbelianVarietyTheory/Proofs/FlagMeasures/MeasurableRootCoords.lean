@@ -2,23 +2,27 @@ module
 
 public import Mathlib
 public import Formalism.SharpRestriction.CuspSpanNormBounds.AbsoluteAmplitudeSecondOfSource
-public import Formalism.SharpRestriction.CuspSpanNormBounds.PExtra
+public import Formalism.SharpRestriction.CuspSpanNormBounds.Bundle0009
 public import Formalism.SharpRestriction.CuspSpanNormBounds.AmplitudeAndVolumeBounds
 public import Formalism.SharpRestriction.CuspSpanNormBounds.BranchingAndRankConstants
 public import Formalism.SharpRestriction.CuspSpanNormBounds.MassAndBranchingHypotheses
-public import Formalism.SharpRestriction.CuspSpanNormBounds.SBridge
-public import Formalism.LocalRingCardinality.DataTies
+public import Formalism.SharpRestriction.CuspSpanNormBounds.Bundle0005
+public import Formalism.LocalRingCardinality.Bundle0003
 public import Development.AbelianVarietyTheory.Statements.DiscreteSeriesShifts.ThmBpDS
 public import Development.AbelianVarietyTheory.Definitions.Jets.SideFam
-public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.FormalDegreeCompactDualIff
+public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.Bundle0003
 public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.AmplitudesRelevantCellMonomialRep
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsRootHaar
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.BesselRootMeasureIndependentOfChoicesStatement
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0251
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.BesselRootMeasureIndependentOfChoices
+public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.NCoords
+public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.Bundle0006
+public import Formalism.HermitianCurvature.WeylElementCommutesLevelOne
+public import Formalism.SharpRestriction.CuspSpanNormBounds.NormalizedLocalScale
 public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.UniformBesselConstant
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.BlockProjectionBessel
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.DegreeNearParameterBound
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0264
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0361
 public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.AmplifierOfHypotheses
-public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.OnePlaceKF
+public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.Bundle0010
 public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.CellConv
 
 @[expose] public section
@@ -184,7 +188,7 @@ theorem amp_at_root (D : D7) τ w w' θ (W : LocW D.R.k D.R.rS) (hW : GoodW D τ
     have hG0 := hGf
     rw [e, gInv _ _ _ _ hz hz' _ (P.Dx2.Rad.N_sub_S W.z hn) _ (P.Dx2.Rad.N_sub_S W.z' hn')] at hG0
     obtain ⟨μ, h1, -, h3⟩ := GlobalTheory.Amp.RootQuot.exists_root_haar hk hz hz' hTz hTz' p hg hZ hG0
-    refine (GlobalTheory.T.besselRootMeasure_independent_of_choices D W.z W.z' γ p q _ μ' hz hz' hTz hTz' hγ hGf hka
+    refine (_root_.GlobalTheory.SnMass.RootUniq.rootMeas_unique D W.z W.z' γ p q _ μ' hz hz' hTz hTz' hγ hGf hka
       ⟨n, hn, n', hn', g, e, hZ, ENNReal.ofReal _ • μ, ?_, by rw [Measure.map_smul _ (measurable_rootCoords _ _).aemeasurable, h3], rfl⟩ hroot).1
     rw [Measure.smul_apply, h1.2.2.1, smul_zero]
   obtain ⟨n, hn, n', hn', g, rfl, hZ, μ₀, h0, h1, rfl⟩ := hroot

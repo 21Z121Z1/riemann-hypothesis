@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Formalism.SharpRestriction.CuspSpanNormBounds.KappaEndpoints
-public import Formalism.FlagUnipotentLattices.PairingOrthogonalComplement
+public import Formalism.FlagUnipotentLattices.Bundle0001
 public import Formalism.FlagUnipotentLattices.MinkowskiFactorialBounds.SuperdiagonalAdditionInvariance
 
 @[expose] public section

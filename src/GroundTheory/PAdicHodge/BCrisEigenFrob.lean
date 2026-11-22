@@ -5,7 +5,7 @@ public import GroundTheory.PAdicHodge.BCrisEigenWitt
 public import GroundTheory.PAdicHodge.LocalBridge
 public import GroundTheory.PAdicHodge.UnramifiedACris
 public import GroundTheory.PAdicHodge.UnramifiedClosure
-public import GroundTheory.LocalFields.WeilGroupDefs
+public import GroundTheory.LocalFields.Bundle0011
 
 @[expose] public section
 

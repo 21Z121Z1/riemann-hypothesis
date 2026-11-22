@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConvPowSubNsmulMemAugIdealSq
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FundamentalSequenceContinuityAll
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsNotMemSmulEqZeroOfSubmodule
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0013
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0057
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0038
 
 @[expose] public section
 

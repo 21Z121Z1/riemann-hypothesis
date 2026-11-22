@@ -6,7 +6,7 @@ public import Formalism.SharpRestriction.LevelLetterCocycles.DataNLoc
 public import Formalism.SharpRestriction.LevelLetterCocycles.LiftingTheory
 public import Formalism.SharpRestriction.LevelLetterCocycles.DeltaInvariantLattices
 public import Formalism.SharpRestriction.LevelLetterCocycles.RamifiedCoefficientChains
-public import Formalism.SharpRestriction.LevelLetterCocycles.UsedLocalConclusion
+public import Formalism.SharpRestriction.LevelLetterCocycles.Bundle0006
 
 @[expose] public section
 

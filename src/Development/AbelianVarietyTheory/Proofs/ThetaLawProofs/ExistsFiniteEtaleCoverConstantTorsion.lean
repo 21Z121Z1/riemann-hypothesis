@@ -6,10 +6,10 @@ public import Development.AbelianVarietyTheory.Statements.FundamentalDomains.AtO
 public import Development.AbelianVarietyTheory.Statements.ThetaLevelCharacters.MemThetaLevelCharDimZero
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.ValCalc
 public import Development.AbelianVarietyTheory.Proofs.HomogeneousIdeals.IsIsoIffBijectiveOverAlgClosed
-public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsFiniteEtaleLatticeTorsionHom
-public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.PushEquivSymmLeft
-public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.IsAbelianSchemeOfIsGrpPullback
-public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.CardTorsionPointsUnconditional
+public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0019
+public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0087
+public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0099
+public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.Bundle0117
 
 @[expose] public section
 

@@ -1,8 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.DivisionOfDeterminantCharacter
-public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.LimWPhi
+public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.Bundle0023
 public import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.ThetaParseval.SplitLineSubtraction.RowDefOfOdd
 public import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.AnnihilatorModels.GenericMulOfProd
 public import Development.WeilBound.CoreStatements.PadicHodgeComparison.CocharacterLieDivisors.StGalW

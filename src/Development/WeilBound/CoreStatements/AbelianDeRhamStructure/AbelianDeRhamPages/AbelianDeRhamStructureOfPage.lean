@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CrystallineDeRhamAbelianStructureOfStatements
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CrystallineSmoothLiftOfRelations
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2762
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2788
 public import Development.WeilBound.CoreStatements.AbelianHeightsDuality.AbelianHodgeDeRham.Bridge
 
 @[expose] public section

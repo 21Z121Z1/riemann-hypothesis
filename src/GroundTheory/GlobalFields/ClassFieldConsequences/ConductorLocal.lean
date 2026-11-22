@@ -2,9 +2,9 @@ module
 
 public import Mathlib
 public import GroundTheory.GlobalFields.ClassFieldConsequences.RayClassField
-public import GroundTheory.GlobalFields.IdeleGroups.LocalConditionIndex
+public import GroundTheory.GlobalFields.IdeleGroups.Bundle0002
 public import GroundTheory.GlobalFields.TateThesis.LocalConductor
-public import GroundTheory.GlobalFields.TateThesis.ConductorIdeal
+public import GroundTheory.GlobalFields.TateThesis.Bundle0005
 
 @[expose] public section
 

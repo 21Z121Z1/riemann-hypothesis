@@ -1,6 +1,6 @@
 module
 
-public import Formalism.CharacterColumnKernels.StatOntoLattice
+public import Formalism.CharacterColumnKernels.Bundle0002
 
 @[expose] public section
 

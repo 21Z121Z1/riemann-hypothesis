@@ -1,6 +1,6 @@
 module
 
-public import Formalism.SharpRestriction.GrowthBounds.LogarithmicSums.RemainingCountingStatement
+public import Formalism.SharpRestriction.GrowthBounds.LogarithmicSums.Bundle0001
 public import Formalism.SharpRestriction.GrowthBounds.LogarithmicSums.GainBoundAllAddOneOfGainBoundAllRequired
 public import Formalism.SharpRestriction.GrowthBounds.LogarithmicSums.NotSingularOfCentral
 public import Formalism.SharpRestriction.GrowthBounds.LogarithmicSums.PartnerCountOfCentral
@@ -8,7 +8,7 @@ public import Formalism.SharpRestriction.GrowthBounds.LogarithmicSums.MeanNum
 public import Formalism.SharpRestriction.GrowthBounds.LogarithmicSums.LatticeChainSuccOfPartial
 public import Formalism.SharpRestriction.GrowthBounds.LogarithmicSums.PrimeSumNumericFacts
 public import Formalism.SharpRestriction.GrowthBounds.LogarithmicSums.ThirdEstimateOfNumericFacts
-public import Formalism.SharpRestriction.GrowthBounds.LogarithmicSums.StarFam
+public import Formalism.SharpRestriction.GrowthBounds.LogarithmicSums.Bundle0002
 
 @[expose] public section
 

@@ -2,8 +2,8 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsIsEffAddNsmulDiv
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsVBAndClsDetOfShortExact
-public import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.IsAffineHomFromSpecResidueField
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1036
+public import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.Bundle0014
 
 @[expose] public section
 

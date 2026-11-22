@@ -2,13 +2,13 @@ module
 
 public import Mathlib
 public import Formalism.LocalRingCardinality.DataArith
-public import Formalism.FilteredPoleLength.LocalDescentLevels.InvFromBlocksApplyZero
-public import Formalism.PeriodIntegrals.Transference
-public import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.TransferenceMinima
+public import Formalism.FilteredPoleLength.LocalDescentLevels.Bundle0004
+public import Formalism.PeriodIntegrals.Bundle0007
+public import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.Bundle0015
 public import Formalism.SharpRestriction.Divisibility.WeightAlgebra
-public import Formalism.LogFactorialIndices.SignedSubspaceIndex.IdxBase
+public import Formalism.LogFactorialIndices.SignedSubspaceIndex.Bundle0001
 public import Formalism.LogFactorialIndices.SignedSubspaceIndex.IdxDet
-public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.PairedCharacterCondition
+public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0048
 
 @[expose] public section
 

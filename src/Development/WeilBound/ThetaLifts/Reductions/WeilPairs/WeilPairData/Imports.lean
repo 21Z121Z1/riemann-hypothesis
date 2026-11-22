@@ -1,5 +1,5 @@
 module
 
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsTransportF
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1345
 
 @[expose] public section

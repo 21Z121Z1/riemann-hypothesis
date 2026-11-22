@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import GroundTheory.ArithmeticGeometry.AbelianVarieties.DualIsogeny
-public import GroundTheory.ArithmeticGeometry.AbelianVarieties.WeilFixedField
+public import GroundTheory.ArithmeticGeometry.AbelianVarieties.Bundle0003
 
 @[expose] public section
 

@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.Divisors.SubsetSpanBy
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PreimageRegSet
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2108
 
 @[expose] public section
 

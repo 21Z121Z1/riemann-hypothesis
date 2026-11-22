@@ -3,7 +3,7 @@ module
 public import Mathlib
 public import GroundTheory.AutomorphicForms.GL2.GJGlobalUnfold
 public import GroundTheory.AutomorphicForms.GL2.GJGlobalMean
-public import GroundTheory.AutomorphicForms.GL2.GJGlobalRank
+public import GroundTheory.AutomorphicForms.GL2.Bundle0001
 public import GroundTheory.AutomorphicForms.GL2.GJGlobalMellin
 
 @[expose] public section

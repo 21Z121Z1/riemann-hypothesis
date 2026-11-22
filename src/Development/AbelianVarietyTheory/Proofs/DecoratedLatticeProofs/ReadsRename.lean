@@ -3,11 +3,25 @@ module
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.LevChiEqOne
 public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsFiniteOrderChartsMiddleSteps
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ExistsStepPointOfChartBasePoint
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ChartLevelCharacterRepsOnAdelicUnitaryPointsStatement
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ExistsAdelicUnitaryLiftOfChartBasePointStatement
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsIsDetRoot
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.IsPointOfDecoratedLatticeUnique
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0407
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0402
+public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.Bundle0023
+public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.NotIsCompactUnivFv
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0418
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsMemberStepCharts
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ChartLastStepTwistBasePoint
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0306
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0170
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0390
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0387
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0297
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0172
+public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.Bundle0029
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0427
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0440
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0403
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0068
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0118
 public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.MemberRepresentativeMovedAtTwistEqTupleFrames
 
 @[expose] public section
@@ -214,10 +228,10 @@ theorem exists_step {I : TC B X} (hI : I.Ok) (hP : TC.Pins B X) {l : I.Laws} {Z 
     show algebraMap _ _ ((Pi.single s 1 : Fin (B.R.N i) → B.host.E) r) = _
     rw [Matrix.one_apply, Pi.single_apply]
     split_ifs <;> simp
-  choose kA hkA using fun β => GlobalTheory.T.exists_adelicUnitaryLift_of_chartBasePoint I hI hP l Z i hi _ (hR.k_std β)
+  choose kA hkA using fun β => _root_.GlobalTheory.BasePointLift.exists_lift_of_ptOf I hI hP l Z i hi _ (hR.k_std β)
   choose xr hxr using fun β => GlobalTheory.RecDict.exists_isDetRoot (I.rec7 l Z) _ (kA β)
   choose b0 p0 hp1 hp2 hp3 using fun β => GlobalTheory.KxPoint.pointOf_base I hI hP u a i hi _ _ _ _ _ _ _ hR β ⟨q β, hq β⟩ (hone β)
-  choose U chi h hU hchi hh using fun β => GlobalTheory.T.chartLevelCharacterReps_on_adelicUnitaryPoints I l Z i hi (K β)
+  choose U chi h hU hchi hh using fun β => _root_.GlobalTheory.ChartLevRead.levData I l Z i hi (K β)
   refine ⟨bad, fun _ => K, kA, xr, p0, U, chi, h, fun _ => ⟨hR, fun β => ⟨(hkA β).1, (hkA β).2, hxr β⟩, fun β => ⟨hp1 β, hp2 β⟩,
     fun c => (hp3 _ c rfl).2, hU, hchi, hh, hfin, hbad⟩, fun β => ?_⟩
   exact GlobalTheory.Mem.Col2.PtUniq.isPtOf_unique _ _ _ _ (IsPtOf.of_extTo (I.Q_subset_SQ a) hd (hp1 β)) (hq β)

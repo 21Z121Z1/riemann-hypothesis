@@ -1,14 +1,11 @@
 module
 
 public import Mathlib
-public import Formalism.LocalToGlobal.IndefiniteReal.FaceOf3
-public import Formalism.LocalToGlobal.IndefiniteReal.CxCoreRG
-public import Formalism.LocalToGlobal.IndefiniteReal.LiftCoordinatesInGoodPartOfDefinite
-public import Formalism.LocalToGlobal.IndefiniteReal.EigSumLeComapSemi
-public import Formalism.LocalToGlobal.IndefiniteReal.CxHecke
-public import Formalism.LocalToGlobal.IndefiniteReal.IsometricPeriodsOfHypotheses
+public import Formalism.LocalToGlobal.IndefiniteReal.Bundle0008
+public import Formalism.LocalToGlobal.IndefiniteReal.Bundle0006
+public import Formalism.LocalToGlobal.IndefiniteReal.Bundle0014
 public import Formalism.LocalToGlobal.IndefiniteReal.RationalAdjoints.RatZOfTests
-public import Formalism.LocalToGlobal.IndefiniteReal.IsometricPeriodsOfUnitHypotheses
+public import Formalism.LocalToGlobal.IndefiniteReal.Bundle0009
 
 @[expose] public section
 

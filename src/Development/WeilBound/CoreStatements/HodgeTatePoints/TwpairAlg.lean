@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Development.AutomorphicSpectrum.Statements.GeometryStatements.IsPolLatticePlane
-public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.HopfOrderContainsCharacters
+public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.Bundle0008
 
 @[expose] public section
 

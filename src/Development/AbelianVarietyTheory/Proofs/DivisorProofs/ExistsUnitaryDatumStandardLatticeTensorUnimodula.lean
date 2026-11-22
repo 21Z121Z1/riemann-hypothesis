@@ -5,11 +5,11 @@ public import Development.AbelianVarietyTheory.Definitions.Divisors.IsProjOverWe
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.UniformisationConclusion
 public import Development.AbelianVarietyTheory.Definitions.Degenerations.AdmissibleBaseOfCompleteDvr
 public import Development.AbelianVarietyTheory.Definitions.ArchimedeanThetaValues.ToMatrixTrFormBaseChange
-public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsEquivStdSymp
+public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0051
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BasisApply
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnitaryStandardLatticeAlternatingFormBijectiveStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnitaryStandardLatticeFormComplexStructureBaseChStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RepTraceEqMulTraceStatement
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0176
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0224
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0168
 
 @[expose] public section
 
@@ -112,7 +112,7 @@ theorem form_smul_left (S : Matrix (Fin r) (Fin r) ℤ) (b : 𝓞 E → 𝓞 E) 
   rw [hL, hR, hb]
 
 theorem form_bijective (S : Matrix (Fin r) (Fin r) ℤ) (hS : IsUnit S.det) : Function.Bijective (form ρ g S) :=
-  GlobalTheory.T.unitaryStandardLatticeAlternatingForm_bijective ρ g S hS
+  _root_.GlobalTheory.UnitaryStd.form_bijective_of_unimodular ρ g S hS
 
 theorem form_cx_pos (S : Matrix (Fin r) (Fin r) ℤ) (hS : (S.map (Int.cast : ℤ → ℝ)).PosDef) (x : ℝ ⊗[ℤ] Lat ρ g)
     (hx : x ≠ 0) : 0 < (form ρ g S).baseChange ℝ ((cx ρ g).baseChange ℝ x) x :=

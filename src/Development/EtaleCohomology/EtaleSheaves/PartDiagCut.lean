@@ -1,6 +1,6 @@
 module
 
-public import Development.EtaleCohomology.EtaleSheaves.HensCut
+public import Development.EtaleCohomology.EtaleSheaves.Bundle0025
 
 @[expose] public section
 

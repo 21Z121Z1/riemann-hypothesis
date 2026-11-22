@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.AdelicHermitianForms.IsHermForm
+public import Development.AbelianVarietyTheory.Definitions.AdelicHermitianForms.Bundle0002
 public import Development.AbelianVarietyTheory.BlockTheory.AdelicCMFields.SupportedAtSplit
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsLatticeRationalVectorsInAdelicTranslate
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0021
 
 @[expose] public section
 

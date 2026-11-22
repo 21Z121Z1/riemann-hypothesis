@@ -3,12 +3,10 @@ module
 public import Mathlib
 public import GroundTheory.AutomorphicForms.GL2Classical.Adelic
 public import GroundTheory.AutomorphicForms.GL2Classical.ConstantTerm
-public import GroundTheory.AutomorphicForms.GL2Classical.Smooth
-public import GroundTheory.AutomorphicForms.HarishChandraCentre
+public import GroundTheory.AutomorphicForms.GL2Classical.Bundle0002
+public import GroundTheory.AutomorphicForms.Bundle0016
 public import GroundTheory.AutomorphicForms.AutomorphicFormSpaces.SmoothKZ
-public import GroundTheory.AutomorphicForms.GL2Classical.CuspConverse
-public import GroundTheory.AutomorphicForms.GL2Classical.GrowthReduction
-public import GroundTheory.AutomorphicForms.GL2Classical.KFinite
+public import GroundTheory.AutomorphicForms.GL2Classical.Bundle0001
 public import GroundTheory.AutomorphicForms.HeckeAlgebraLevel
 
 @[expose] public section

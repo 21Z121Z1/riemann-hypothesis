@@ -2,9 +2,8 @@ module
 
 public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.CasimirCoefficients.IsClosedKset
 public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.CasimirCoefficients.KFacts
-public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.FormalDegree.IntMuCD
-public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.FormalDegree.JacBound
-public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.FormalDegree.PolarHaar
+public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.FormalDegree.Bundle0006
+public import ReciprocityTheory.ReductiveGroups.DiscreteSeries.FormalDegree.Bundle0012
 
 @[expose] public section
 

@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Development.AutomorphicArithmetic.OrbitLabellings.RowDefs
-public import Formalism.LocalToGlobal.CharacterGerms.RowTieMemCHarm
+public import Formalism.LocalToGlobal.CharacterGerms.Bundle0030
 public import Formalism.LocalToGlobal.CharacterGerms.RowTieFlagS
 
 @[expose] public section

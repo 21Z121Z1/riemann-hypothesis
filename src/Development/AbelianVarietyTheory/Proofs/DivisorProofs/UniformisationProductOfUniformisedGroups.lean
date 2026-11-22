@@ -2,24 +2,24 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsBoxGenOfSection
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsStrBoxOfIsSumDeg
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsExternalTensorRigidifiedCubicalProductStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsGenericFibreProductSumPolarisedAbelianVariStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TorusExtensionProductOverThickeningOfSumDataStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TMulOfBox
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ProdUnit
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GmCharHom
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsGeneratingBoxProductOfRestrictedIsosStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RigAlongBox
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ImportsLastLast
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CompatBox
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThickeningProductIsoPreservesCubicalStructureStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsBoxFamilyProductDegenerationStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BoxFamilyLinearIndependentProductDegenerationStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExpansionModIdealPowBoxProductEqBoxProductStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SmoothDimTensor
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FamDimOfExpBij
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExpBijOfBasisCard
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2650
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2642
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2643
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2674
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2670
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2666
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2656
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2644
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2668
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2659
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2636
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2703
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2641
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2633
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2690
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2669
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2652
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2651
 
 @[expose] public section
 
@@ -116,7 +116,7 @@ theorem exists_gt (hD : IsSumDeg D.toPre D₁.toPre D₂.toPre p₁ p₂ q₁ q�
         (Y₂ := (thickObj R I e G₂).left) w ((Over.pullback (thick R I e)).map (fst G₁ G₂)).left
         ((Over.pullback (thick R I e)).map (snd G₁ G₂)).left (g.t x) (g₁.t (q₁ x)) (g₂.t (q₂ x)) := by
   obtain ⟨q, i, q_hom, q_flat, q_surj, q_aff, i_hom, hker, hq₁, hq₂, hi₁, hi₂⟩ :=
-    GlobalTheory.T.torusExtension_product_over_thickening_of_sumData R I e D.toPre D₁.toPre D₂.toPre p₁ p₂ q₁ q₂ G₁ G₂ g₁ g₂ hD
+    _root_.GlobalTheory.ProdTorusExt.main R I e D.toPre D₁.toPre D₂.toPre p₁ p₂ q₁ q₂ G₁ G₂ g₁ g₂ hD
   have := hD.hom₁
   have := hD.hom₂
   have hp₁ := pG_pr hq₁
@@ -181,15 +181,15 @@ theorem exists_pre (hD : IsSumDeg D.toPre D₁.toPre D₂.toPre p₁ p₂ q₁ q
         (T₂ := (thickObj R I e G₂).left) wM wL (U.w e) (U₁.w e) (U₂.w e) ((Over.pullback (thick R I e)).map (fst G₁ G₂)).left
         ((Over.pullback (thick R I e)).map (snd G₁ G₂)).left := by
   obtain ⟨wM_gen, mr, mc, ms⟩ := hM
-  obtain ⟨gen, gen_hom, gen₁, gen₂, ext⟩ := GlobalTheory.T.exists_genericFibre_product_sumPolarisedAbelianVariety R I D₁ A₁ G₁ U₁ D₂ A₂ G₂ U₂ A a₁ a₂ hA
-  obtain ⟨L, c, s, wL, s_gen, s_rig, hwLgen, lr, lc, ls⟩ := GlobalTheory.T.exists_externalTensor_rigidified_cubical_product _ G₁ G₂ U₁.LG U₂.LG U₁.cubG U₂.cubG U₁.symG U₂.symG
+  obtain ⟨gen, gen_hom, gen₁, gen₂, ext⟩ := _root_.GlobalTheory.ProdGen.exists_gen_prod R I D₁ A₁ G₁ U₁ D₂ A₂ G₂ U₂ A a₁ a₂ hA
+  obtain ⟨L, c, s, wL, s_gen, s_rig, hwLgen, lr, lc, ls⟩ := _root_.GlobalTheory.GrpBox.exists_prod _ G₁ G₂ U₁.LG U₂.LG U₁.cubG U₂.cubG U₁.symG U₂.symG
     U₁.symG_gen U₂.symG_gen U₁.symG_rig U₂.symG_rig
   choose gt hq₁ hq₂ hi₁ hi₂ ht using fun e => exists_gt hD wM wM_gen mc e (U₁.gt e) (U₂.gt e)
   have hp₁ : ∀ e, (gt e).pG.left ≫ p₁.left = ((Over.pullback (thick R I e)).map (fst G₁ G₂)).left ≫ (U₁.gt e).pG.left :=
     fun e => congrArg (fun z => z.left) (pG_pr (hq₁ e))
   have hp₂ : ∀ e, (gt e).pG.left ≫ p₂.left = ((Over.pullback (thick R I e)).map (snd G₁ G₂)).left ≫ (U₂.gt e).pG.left :=
     fun e => congrArg (fun z => z.left) (pG_pr (hq₂ e))
-  choose w w_gen Q using fun e => GlobalTheory.T.exists_generating_boxProduct_of_restrictedIsos (T := (thickObj R I e (G₁ ⊗ G₂)).left) (T₁ := (thickObj R I e G₁).left)
+  choose w w_gen Q using fun e => _root_.GlobalTheory.ProdBoxIso.exists_wiso (T := (thickObj R I e (G₁ ⊗ G₂)).left) (T₁ := (thickObj R I e G₁).left)
     (T₂ := (thickObj R I e G₂).left) wM wL (U₁.w e) (U₂.w e) D.toPre.P.isLB D₁.toPre.P.isLB D₂.toPre.P.isLB L.isLB
     U₁.LG.isLB U₂.LG.isLB (hp₁ e) (hp₂ e) (thick_fstG I e _) (thick_fstG I e _) wM_gen hwLgen (U₁.w_gen e) (U₂.w_gen e)
   have gq := thickMap_pG hD U₁ U₂ gt hp₁ hp₂
@@ -324,14 +324,14 @@ theorem exists_unif (hR : AdmBase R I) (hD : IsSumDeg D.toPre D₁.toPre D₂.to
   choose σ₁ hσ₁ using fun l => ((U₁.expand k hk).2 (b₁ l)).exists
   choose σ₂ hσ₂ using fun l => ((U₂.expand k hk).2 (b₂ l)).exists
   choose b hb using fun a : Fin (k ^ A₁.g) × Fin (k ^ A₂.g) =>
-    GlobalTheory.T.exists_boxFamily_productDegeneration R _ _ _ p₁ p₂ q₁ q₂ hD wM hM.1 hM.2.1 hψ (FractionRing R) k (b₁ a.1) (b₂ a.2)
+    _root_.GlobalTheory.BoxFamSum.exists_isBoxFam₂ R _ _ _ p₁ p₂ q₁ q₂ hD wM hM.1 hM.2.1 hψ (FractionRing R) k (b₁ a.1) (b₂ a.2)
   choose σ hσ using fun a : Fin (k ^ A₁.g) × Fin (k ^ A₂.g) =>
     exists_boxSec (Y := pullback (G₁ ⊗ G₂).hom (jK R)) (Y₁ := pullback G₁.hom (jK R)) (Y₂ := pullback G₂.hom (jK R))
       (φ := fun _ : Fin 1 => pullback.fst (G₁ ⊗ G₂).hom (jK R))
       (h₁ := ((Over.pullback (jK R)).map (fst G₁ G₂)).left) (h₂ := ((Over.pullback (jK R)).map (snd G₁ G₂)).left)
       wL hwL U₁.LG.isLB U₂.LG.isLB U.LG.isLB (fun _ => (pullback.lift_fst _ _ _).symm)
       (fun _ => (pullback.lift_fst _ _ _).symm) (σ₁ a.1) (σ₂ a.2)
-  have hli := GlobalTheory.T.boxFamily_linearIndependent_productDegeneration R _ _ _ p₁ p₂ q₁ q₂ hD wM (FractionRing R) k _ _ b₁ b₂ b b₁.linearIndependent
+  have hli := _root_.GlobalTheory.ProdIndep.boxFam₂_linearIndependent R _ _ _ p₁ p₂ q₁ q₂ hD wM (FractionRing R) k _ _ b₁ b₂ b b₁.linearIndependent
     b₂.linearIndependent hb
   have hc : Fintype.card (Fin (k ^ A₁.g) × Fin (k ^ A₂.g)) = k ^ A₁.g * k ^ A₂.g := by
     rw [Fintype.card_prod, Fintype.card_fin, Fintype.card_fin]

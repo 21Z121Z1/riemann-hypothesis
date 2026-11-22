@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import GroundTheory.GlobalFields.NormResidueSymbol.RationalContinuous
+public import GroundTheory.GlobalFields.NormResidueSymbol.Bundle0002
 public import GroundTheory.GlobalFields.AnalyticClassNumber.HeckeContinued
 
 @[expose] public section

@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.CyclicStrongAtCusp
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HasString
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1033
 public import Formalism.SharpRestriction.LevelLetterCocycles.SumRepresentations
 
 @[expose] public section

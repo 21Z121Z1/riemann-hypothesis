@@ -1,7 +1,7 @@
 module
 
 public import Formalism.SharpRestriction.GrowthBounds.MonomialFactorials.PositiveOfDimensionChange
-public import Formalism.SharpRestriction.GrowthBounds.MonomialFactorials.BejjSmulLeft
+public import Formalism.SharpRestriction.GrowthBounds.MonomialFactorials.Bundle0013
 
 @[expose] public section
 

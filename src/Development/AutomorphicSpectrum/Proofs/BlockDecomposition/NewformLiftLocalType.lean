@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import PositivityTheory.AutomorphicForms.PublishedInputs.CuspidalContinuity.ArchimedeanCuspidal.VerticalStrips.UnramifiedEulerProductIntegral
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.HeckeSum
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0614
 
 @[expose] public section
 

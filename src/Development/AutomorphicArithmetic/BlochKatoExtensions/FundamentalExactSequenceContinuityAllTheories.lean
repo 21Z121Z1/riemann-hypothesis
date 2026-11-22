@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Formalism.SharpRestriction.CuspSpanNormBounds.ChainLength
+public import Formalism.SharpRestriction.CuspSpanNormBounds.Bundle0008
 public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.SimpLemmas
 
 @[expose] public section

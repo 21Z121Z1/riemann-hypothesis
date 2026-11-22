@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Formalism.SelfDualUnimodular.LocalLatticeDictionary.SelfDualRestr
+public import Formalism.SelfDualUnimodular.LocalLatticeDictionary.Bundle0002
 
 @[expose] public section
 

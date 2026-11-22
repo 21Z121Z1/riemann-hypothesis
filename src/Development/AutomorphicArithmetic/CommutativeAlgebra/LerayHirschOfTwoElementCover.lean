@@ -1,12 +1,12 @@
 module
 
 public import Development.AutomorphicArithmetic.BlowupCategories.SpanScale
-public import Development.AutomorphicArithmetic.CommutativeAlgebra.PullCupPowEqCupPowPull
+public import Development.AutomorphicArithmetic.CommutativeAlgebra.Bundle0035
 public import Development.AutomorphicArithmetic.CommutativeAlgebra.MayerVietorisConnectingExistsUniqueAdditiveExact
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CupHypercohomologyPullbackStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TateTwistCupProductGradedCommStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TateTwistCupProductAssocStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TateTwistCupUnitAndPrimitiveRootClassesStatement
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0399
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0594
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0593
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0604
 
 @[expose] public section
 

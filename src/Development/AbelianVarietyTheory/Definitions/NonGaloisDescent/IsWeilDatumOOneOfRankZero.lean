@@ -2,15 +2,15 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.LengthPosOfPosDef
-public import Formalism.LocalToGlobal.IndefiniteReal.AutomorphicFormsHyp
-public import Formalism.LocalToGlobal.IndefiniteReal.FinitePlaces.LiftsCart
+public import Formalism.LocalToGlobal.IndefiniteReal.Bundle0013
+public import Formalism.LocalToGlobal.IndefiniteReal.FinitePlaces.Bundle0005
 public import Formalism.LocalRingCardinality.SpanPowerMembership.Spaces
-public import Development.AbelianVarietyTheory.Proofs.HeightProofs.CocompactTensor
-public import Development.AbelianVarietyTheory.Proofs.HeightProofs.MeanSquareAddFundamentalDomainOfCocompact
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.LocallyCompactSecondCountableT2
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsIsFundamentalDomain
+public import Development.AbelianVarietyTheory.Proofs.HeightProofs.Bundle0029
+public import Development.AbelianVarietyTheory.Proofs.HeightProofs.Bundle0003
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0156
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0162
 public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsUnramifiedHeckeCharHalfExponentRestrictQua
-public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.ExistsInfFamAndStdChar
+public import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.Bundle0050
 
 @[expose] public section
 

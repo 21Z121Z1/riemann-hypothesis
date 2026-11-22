@@ -1,9 +1,7 @@
 module
 
 public import Development.AutomorphicArithmetic.Foundations.Convolution.SplitEigenfunctions.OrbitMeasurability.MeasurableSetUS
-public import Development.AutomorphicArithmetic.AdelicSL2.IsOpenEmbeddingProjection
-public import Development.AutomorphicArithmetic.AdelicSL2.ExistsGl2RatSmulMemRangeAdelicSL2IdeleMap
-public import Development.AutomorphicArithmetic.AdelicSL2.EqSl2RatMulOfGl2RatSmulAdelicSL2IdeleMapEq
+public import Development.AutomorphicArithmetic.AdelicSL2.Bundle0001
 public import Development.AutomorphicArithmetic.AdelicSL2.ExistsHaarRestrictRangeSl2IdeleMapEqSmulProd
 
 @[expose] public section

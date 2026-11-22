@@ -2,11 +2,11 @@ module
 
 public import Mathlib
 public import Formalism.MeanHeightDescent.MuMaxMinkowski
-public import Formalism.MeanHeightDescent.AverageDegreeBounds.DescentSlope
+public import Formalism.MeanHeightDescent.AverageDegreeBounds.Bundle0001
 public import Formalism.HarderNarasimhan.HarderNarasimhanProofs.DualPl
 public import Formalism.HarderNarasimhan.HarderNarasimhanProofs.DegSupermodZ
 public import Formalism.HarderNarasimhan.HarderNarasimhanProofs.DiscreteSpanOfLinIndep
-public import Formalism.HarderNarasimhan.HarderNarasimhanProofs.ShiftInvariance
+public import Formalism.HarderNarasimhan.HarderNarasimhanProofs.Bundle0003
 public import Formalism.LatticeSlopes.ExistsSaturatedSlopeEqMuMax
 
 @[expose] public section

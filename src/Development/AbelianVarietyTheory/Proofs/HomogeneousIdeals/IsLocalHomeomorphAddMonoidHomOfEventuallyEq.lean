@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.HomogeneousIdeals.TendstoUniformlyOnDoublingLogOfContraction
+public import Development.AbelianVarietyTheory.Proofs.HomogeneousIdeals.Bundle0007
 
 @[expose] public section
 

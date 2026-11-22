@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.CellPosExact
+public import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.Bundle0052
 
 @[expose] public section
 

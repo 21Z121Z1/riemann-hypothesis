@@ -1,20 +1,24 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.DerRingInjective
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsUniqueBtOrderEmbeddingStatement
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0016
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0049
+public import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.Bundle0001
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.ExistsUnitFormLocalizationEtaleNbhd
+public import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.Bundle0002
 public import Development.AbelianVarietyTheory.Proofs.HomogeneousIdeals.FormallyUnramifiedOfTangentMapInjective
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.EmbeddingBaseChangeCompatStatement
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0048
 public import Development.WeilBound.CoreStatements.HodgeTatePoints.GeEmbSub
-public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.HopfOrderScalarExtensionStatement
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.HenselianQuasiFiniteFinitePartStatement
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.IsFinOpenSubOfFiniteStatement
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.BtOrderFlatBaseChangeStatement
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.FlatLocalExtensionExistsStatement
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LieModelFiniteBaseChangeStatement
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.DualLatticePointUniversalStatement
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.HomAddMulOfUnitSectionStatement
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.BtOrderValueEvalStatement
+public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.Bundle0017
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0039
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0027
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.BtOrderFlatBaseChange
+public import Development.WeilBound.CoreStatements.HodgeTatePoints.Bundle0036
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0116
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.Bundle0001
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.DualLatticePointUniversal
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0022
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0024
 
 @[expose] public section
 
@@ -269,14 +273,14 @@ theorem hom_add' {S : Scheme.{0}} {R : Type} [CommRing R] (x : Spec (CommRingCat
     [AddCommGroup V] [Module R V] [Module Rᵐᵒᵖ V] [IsCentralScalar R V]
     (u : ob x P ⟶ G) (hu : zsec x ≫ u = 1) (f g : P →ₗ[R] V) :
     hom x (f + g) ≫ u = (hom x f ≫ u) * (hom x g ≫ u) :=
-  GlobalTheory.T.hom_add_mul_of_unit_section S R x G P V u hu f g
+  _root_.GlobalTheory.CompanionTheory.Ar.LieEx.ModSrc.hom_add_mod_closed S R x G P V u hu f g
 
 theorem val_of_emb {R : Type} [CommRing R] [IsDomain R] {T : Type} [CommGroup T] [Finite T] (Γ : QFGroup R T)
     {j : Γ.G.left ⟶ Spec (CommRingCat.of (Γ.btOrder ⊤))} (hj : Γ.IsEmb (Γ.btOrder ⊤) j)
     (f : Γ.btOrder ⊤) (s : Γ(Γ.G.left, ⊤)) (hs : Γ.HasValues s (f : T → R))
     {B : Type} [CommRing B] (y : Spec (CommRingCat.of B) ⟶ Γ.G.left) (ρ : (Γ.btOrder ⊤) →+* B)
     (h : y ≫ j = Spec.map (CommRingCat.ofHom ρ)) : valAt y ⊤ le_top s = ρ f :=
-  GlobalTheory.T.bt_order_value_eval R T Γ j hj f s hs B y ρ h
+  _root_.GlobalTheory.CompanionTheory.Ar.BT.ValEmb.val_emb R T Γ j hj f s hs B y ρ h
 
 theorem dual_eq_smul {R L : Type} [CommRing R] [AddCommGroup L] [Module R L] [Module.Projective R L] (N : ℕ)
     (d : Module.Dual R L) (h : ∀ e, Ideal.Quotient.mk (Ideal.span {(N : R)}) (d e) = 0) :

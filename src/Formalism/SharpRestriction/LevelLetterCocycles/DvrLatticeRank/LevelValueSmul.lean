@@ -1,8 +1,8 @@
 module
 
 public import Formalism.SharpRestriction.LevelLetterCocycles.DownSlotProposition
-public import Formalism.SharpRestriction.LevelLetterCocycles.DvrLatticeRank.FramePfLoc
-public import Formalism.SharpRestriction.LevelLetterCocycles.DvrLatticeRank.FramePfPt
+public import Formalism.SharpRestriction.LevelLetterCocycles.DvrLatticeRank.Bundle0005
+public import Formalism.SharpRestriction.LevelLetterCocycles.DvrLatticeRank.Bundle0007
 
 @[expose] public section
 

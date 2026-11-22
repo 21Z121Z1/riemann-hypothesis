@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.DwCons
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0188
 public import GroundTheory.AutomorphicForms.RealGroupsHaar
 
 @[expose] public section

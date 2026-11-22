@@ -1,9 +1,7 @@
 module
 
 public import Mathlib
-public import GroundTheory.HeightsAndTheta.Heights.Intersections.StChartPrimElt
-public import GroundTheory.HeightsAndTheta.Heights.Intersections.StLocAwaySpec
-public import GroundTheory.HeightsAndTheta.Heights.Intersections.StChartSpecCount
+public import GroundTheory.HeightsAndTheta.Heights.Intersections.Bundle0001
 
 @[expose] public section
 

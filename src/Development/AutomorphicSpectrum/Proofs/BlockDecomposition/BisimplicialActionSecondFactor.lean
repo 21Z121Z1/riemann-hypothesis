@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Development.WeilBound.CoreStatements.AutomorphicKernels.AbelianDeRham.AbelianHodgeDeRham.H1DimGeAbelianDim
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.DnCompDn
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0126
 
 @[expose] public section
 

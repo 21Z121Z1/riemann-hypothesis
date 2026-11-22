@@ -4,8 +4,8 @@ public import Mathlib
 public import ReciprocityTheory.ClassFieldTheory.LocalClassField.RecPairDefs
 public import ReciprocityTheory.ClassFieldTheory.LocalClassField.PairKEqZeroOfMemNormGrp
 public import ReciprocityTheory.ClassFieldTheory.LocalClassField.Existence
-public import ReciprocityTheory.ClassFieldTheory.LocalClassField.GabLim
-public import ReciprocityTheory.ClassFieldTheory.LocalClassField.NormOpen
+public import ReciprocityTheory.ClassFieldTheory.LocalClassField.Bundle0007
+public import ReciprocityTheory.ClassFieldTheory.LocalClassField.Bundle0013
 public import ReciprocityTheory.ClassFieldTheory.LocalClassField.ExistsDvdQKPowSubOne
 
 @[expose] public section

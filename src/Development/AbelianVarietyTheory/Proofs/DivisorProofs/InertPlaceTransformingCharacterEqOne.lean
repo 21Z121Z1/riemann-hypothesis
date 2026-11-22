@@ -1,38 +1,38 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DiagWZero
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1547
 public import Development.AbelianVarietyTheory.Definitions.Divisors.RankEqCardIffExistsFrameMatrixFirstColumnBlock
 public import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.WeilTensorModels
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.OneMemKAt
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WeilRepresentationLocalityUnitaryGroupVStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EqOfComponentTensorAdelicFunctionEqStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.StandardAdelicAddCharNontrivialFinitePlaceStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SymplecticFormEqZeroOfLagrangianAtPlaceStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DoubledUnitaryElementActsLocalOperatorAtPlaceStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsAdmittedDiagonalIntegralLinearFormStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DistribHaarCharSupportedIdeleEqLocalAbsValueStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HeisenbergInvariantFormVanishesLagrangianTestStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CharactersAgreeInertUnramified
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SchrodingerPreservesSchwartzBruhat
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdelicHeisenbergActsByLocalSchrodinger
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsUnitaryDoubledBlockDiagOne
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsUnitDetGramOfHermitianSelfDualLatticeSpace
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsComplementaryAdelicSchwartzRestFunctionStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DiagonalIntegralHeisenbergTranslateIntegralIndicStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HeisenbergDiagonalIntegralMemSchwartzBruhatStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LagrangianDiagonalIntegralExtendsLinearFormStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntegralInjectiveSubspaceCompactOpenConstNeZeroStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LinearFormEqZeroOfKillsProductSchwartzBruhatStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsotropicIntegralInvariantHeisenbergFirstVarsStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NormalizedAbsDetMulIntegralCompMulVecFinitePlaceStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FinitePlaceComponentAdeleNormEqLocalNormStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LagrangianColumnsLinearParametrisationFinitePlacStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DoubledWeilOperatorDiagonalIntegralHeisenbergPoiStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SiegelParabolicLeviInverseQuotientDetNormStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsUnitaryScalarInertPlaceInvertibleShiftsStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IdempotentBlockUnipotentIdentityStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LocalProductActsOfAdelicProductActsFirstStatement
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1227
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1796
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1662
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1674
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1316
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1783
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1623
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1706
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1804
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1217
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1656
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1592
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0914
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1003
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1682
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1618
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1765
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1631
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1604
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1770
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1873
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1608
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1597
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1666
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1865
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1609
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1665
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1603
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1714
 
 @[expose] public section
 
@@ -279,7 +279,7 @@ theorem char_eq_one : ∀ (F E : Type) [Field F] [NumberField F] [Field E] [Numb
     rw [incM, ← RingHom.mapMatrix_apply, ← RingHom.map_det]
     exact hJ.map _
   have hee : liftV v (1 : Fv F v) * liftV v (1 : Fv F v) = liftV v (1 : Fv F v) := smul_of_at (at_liftV v 1)
-  obtain ⟨p₁, p₂, t₁, t₂, hp₁, hp₂, ht₁, ht₂, hdec⟩ := GlobalTheory.T.idempotent_block_unipotent_identity (AF F) (AE F E) (cA σ) (Fin a') (incM F G.V'.J) hJA _ hee g k
+  obtain ⟨p₁, p₂, t₁, t₂, hp₁, hp₂, ht₁, ht₂, hdec⟩ := _root_.GlobalTheory.SiegelDiagDecomp.diag_decomp (AF F) (AE F E) (cA σ) (Fin a') (incM F G.V'.J) hJA _ hee g k
     (one_sub_smul_of_at hg) (one_sub_smul_of_at hk) α β (smul_of_at hα) (smul_of_at hβ) e1 e2 e3 e4 gd kd hgd hkd
   have hkk : mat k * mat k⁻¹ = 1 := Units.mul_inv k.1
   have hki : k⁻¹ ∈ UAt σ G.V' (evFin F v) := fun u hu => by

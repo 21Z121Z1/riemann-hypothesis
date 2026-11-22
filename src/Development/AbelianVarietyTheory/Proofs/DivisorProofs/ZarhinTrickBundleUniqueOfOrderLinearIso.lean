@@ -1,16 +1,16 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsQProjOverCompImmersion
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FormMulTransposeMulFormInvMem
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PolUnitNeZero
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsMonHomOfClassifying
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NearIsIsoOfIsProperOfFinitePresentation
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TheoremOfCubeAbelianSchemeOverArbitraryBase
-public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.MulAFiniteFlatSurjective
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsFiniteAndFlatTorsion
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DualAbelianSchemeExistsBiduality
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsDualOfIsPerfectOfAdditive
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2921
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0146
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0218
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2022
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2204
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2489
+public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0138
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1345
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle3079
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2091
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LiftLeftFst
 
 @[expose] public section

@@ -6,7 +6,7 @@ public import Formalism.LocalRingCardinality.RankBoundMonotoneInDimension
 public import Formalism.GradedWeylDivisibility.DualWeylDominanceOf
 public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.WeightTensorDualRepDualHighestWeightAtEmbedding
 public import Development.AbelianVarietyTheory.PublishedTheorems.GlobalTheta.FiniteDimensionalNablaSq
-public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.DualWeylHighestWeightSpaceLineField
+public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0076
 
 @[expose] public section
 

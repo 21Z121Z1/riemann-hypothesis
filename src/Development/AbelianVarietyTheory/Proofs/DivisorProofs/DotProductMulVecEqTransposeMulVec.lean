@@ -1,8 +1,8 @@
 module
 
-public import Development.AbelianVarietyTheory.Definitions.Divisors.IsPolAVSectionInverseImage
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0027
 public import Development.AbelianVarietyTheory.Definitions.Divisors.ToricPeriodBlockIsSymm
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CoeffTopMonEqZero
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1863
 
 @[expose] public section
 

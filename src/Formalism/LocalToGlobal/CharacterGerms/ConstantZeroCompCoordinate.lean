@@ -1,8 +1,8 @@
 module
 
-public import Formalism.LocalToGlobal.CharacterGerms.FirstVanishingAt
+public import Formalism.LocalToGlobal.CharacterGerms.Bundle0026
 public import Formalism.LocalToGlobal.CharacterGerms.PderivDoubleMultiplicationJacobian
-public import Formalism.LocalToGlobal.CharacterGerms.RowTieCartAdd
+public import Formalism.LocalToGlobal.CharacterGerms.Bundle0018
 
 @[expose] public section
 

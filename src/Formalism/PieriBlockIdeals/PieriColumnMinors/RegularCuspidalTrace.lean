@@ -3,7 +3,7 @@ module
 public import Mathlib
 public import Formalism.PieriBlockIdeals.LemmaWAssembled
 public import Formalism.PieriBlockIdeals.PieriColumnMinors.MinorValuationBoundHolds
-public import Formalism.PieriBlockIdeals.PieriColumnMinors.WeightExchangeChainHolds
+public import Formalism.PieriBlockIdeals.PieriColumnMinors.Bundle0002
 
 @[expose] public section
 

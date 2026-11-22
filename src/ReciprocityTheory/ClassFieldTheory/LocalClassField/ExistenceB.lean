@@ -4,7 +4,7 @@ public import Mathlib
 public import ReciprocityTheory.ClassFieldTheory.LocalClassField.RecPairDefs
 public import ReciprocityTheory.ClassFieldTheory.LocalClassField.PairKEqZeroOfMemNormGrp
 public import ReciprocityTheory.ClassFieldTheory.LocalClassField.NormLimit
-public import ReciprocityTheory.ClassFieldTheory.LocalClassField.NormOpen
+public import ReciprocityTheory.ClassFieldTheory.LocalClassField.Bundle0013
 
 @[expose] public section
 

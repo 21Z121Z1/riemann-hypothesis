@@ -1,7 +1,7 @@
 module
 
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutJATCModConst
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutJASSPointwise
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0273
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0166
 
 @[expose] public section
 

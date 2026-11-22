@@ -1,6 +1,6 @@
 module
 
-public import Development.WeilBound.CoreStatements.PublishedTheorems.SmoothVectorEstimates.BlockIndexEqCornerIff
+public import Development.WeilBound.CoreStatements.PublishedTheorems.SmoothVectorEstimates.Bundle0003
 
 @[expose] public section
 

@@ -4,11 +4,10 @@ public import Mathlib
 public import Formalism.SharpRestriction.Divisibility.ProductZerothFirstParts
 public import Formalism.GaussJetBounds.ThmAGauss
 public import Formalism.GaussJetBounds.OneLetterGauss
-public import Formalism.GaussJetBounds.GenLogInverse
-public import Formalism.GaussJetBounds.OneLetterRadius
-public import Formalism.GaussJetBounds.GaussJetProofs.AsmRDotAddRight
-public import Formalism.GaussJetBounds.GaussJetProofs.LemmaRA
-public import Formalism.GaussJetBounds.GaussJetProofs.NormNatCastEqPowPadicValNat
+public import Formalism.GaussJetBounds.Bundle0001
+public import Formalism.GaussJetBounds.Bundle0004
+public import Formalism.GaussJetBounds.GaussJetProofs.Bundle0002
+public import Formalism.GaussJetBounds.GaussJetProofs.Bundle0004
 public import Formalism.GaussJetBounds.GaussJetProofs.SubstitutionWeightBound
 public import Formalism.IncomingBounds.WeightIdentities
 

@@ -1,6 +1,6 @@
 module
 
-public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.GermBSer
+public import Formalism.SharpRestriction.Divisibility.GeneratorPowers.Bundle0020
 
 @[expose] public section
 

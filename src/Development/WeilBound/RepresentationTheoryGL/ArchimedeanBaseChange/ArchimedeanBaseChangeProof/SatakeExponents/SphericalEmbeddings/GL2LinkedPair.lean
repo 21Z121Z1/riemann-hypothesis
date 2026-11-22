@@ -1,8 +1,8 @@
 module
 
-public import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.SatakeExponents.SphericalEmbeddings.GL2Intertwining
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.NoUnramTwistOfNoInert
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExistsTorusEigenformOfCompactTorusEigenvector
+public import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.SatakeExponents.SphericalEmbeddings.Bundle0003
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0043
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0139
 
 @[expose] public section
 

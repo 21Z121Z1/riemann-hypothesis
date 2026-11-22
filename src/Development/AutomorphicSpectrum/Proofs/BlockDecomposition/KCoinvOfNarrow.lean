@@ -2,17 +2,17 @@ module
 
 public import Mathlib
 public import Development.WeilBound.CoreStatements.LocallyConstantCoinvariants.PfSurj
-public import Development.WeilBound.CoreStatements.LocallyConstantCoinvariants.ExistsExtZ
+public import Development.WeilBound.CoreStatements.LocallyConstantCoinvariants.Bundle0001
 public import Development.WeilBound.CoreStatements.LocallyConstantCoinvariants.ContinuousFinId
 public import Development.WeilBound.CoreStatements.LocallyConstantCoinvariants.SoStatement
-public import Development.WeilBound.CoreStatements.LocallyConstantCoinvariants.PfSplit
+public import Development.WeilBound.CoreStatements.LocallyConstantCoinvariants.Bundle0002
 public import Development.WeilBound.CoreStatements.LocallyConstantCoinvariants.PfDict
-public import Development.WeilBound.CoreStatements.LocallyConstantCoinvariants.FullOfSoLoc
+public import Development.WeilBound.CoreStatements.LocallyConstantCoinvariants.Bundle0004
 public import Development.WeilBound.ThetaLifts.LocalTheory.DixmierCommutants.RamifiedMultiplicityOneOfBernstein
 public import Development.WeilBound.CoreStatements.CompactAveragingSplitting.EigenvectorLifting.SplitFin
 public import Development.WeilBound.CoreStatements.CompactAveragingSplitting.EigenvectorLifting.ExistsUpperProjectionInverseTranspose
 public import Development.WeilBound.CoreStatements.CompactAveragingSplitting.EigenvectorLifting.UpperProjectionInverseTransposeRightInverse
-public import Development.WeilBound.CoreStatements.CompactAveragingSplitting.EigenvectorLifting.InducedVanishOfVanishOnIntegral
+public import Development.WeilBound.CoreStatements.CompactAveragingSplitting.EigenvectorLifting.Bundle0004
 public import Development.WeilBound.CoreStatements.CompactAveragingSplitting.EigenvectorLifting.SplitCharacterFacts
 public import Development.WeilBound.CoreStatements.CompactAveragingSplitting.EigenvectorLifting.ValuationIntegersEqCompletion
 public import Development.WeilBound.CoreStatements.LocallyConstantCoinvariants.PfActs
@@ -173,7 +173,7 @@ theorem irrSt_narrow (NB : Narrow) : IrrStNe := by
   intro k _ _ _ _ n d ν α hnd hν h1 hα N hA hN
   obtain ⟨t, rfl⟩ := Nat.exists_eq_add_of_le hnd
   have hμ : IsSmoothChar ν⁻¹ := IsSmoothChar.inv hν.2
-  obtain ⟨E⟩ := GlobalTheory.T.omega_equiv_induced_fibre k (Fin n) (Fin (n + t)) (Fin n) (Fin t) (stdSum rfl) n (Fintype.card_fin n).symm ν⁻¹ hμ
+  obtain ⟨E⟩ := _root_.GlobalTheory.CompanionTheory.ThetaGLLen.fibStr k (Fin n) (Fin (n + t)) (Fin n) (Fin t) (stdSum rfl) n (Fintype.card_fin n).symm ν⁻¹ hμ
   have hR : twRel ((omegaOn (Fin n) (Fin (n + t)) ν⁻¹ {n}).comp (MonoidHom.inl _ _)) 1 ≤
       (aug n (n + t) ν α).comap extZ := Submodule.span_le.2 (by
     rintro _ ⟨g, φ, rfl⟩

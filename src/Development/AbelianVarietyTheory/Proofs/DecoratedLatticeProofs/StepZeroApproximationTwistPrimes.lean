@@ -1,28 +1,27 @@
 module
 
-public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.Live
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsChartsReadingStepZero
+public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.Bundle0032
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0418
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.IsStdFr
-public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.PinColL
+public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.Bundle0029
 public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.FrameTopAlt
-public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.XiEqXiOffMul
+public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.Bundle0030
 public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.HzUnit
 public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.CosInj
 public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.UnitRatio
-public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.ChartZero
 public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.TailRd
-public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.Placed
-public import Formalism.LocalToGlobal.IndefiniteReal.RealRec
+public import Formalism.LocalToGlobal.IndefiniteReal.Bundle0030
 public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.AdmissibleDiscreteSeriesOfHasParam
 public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.HarishChandraModulesOn
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsK1PointCongruent
-public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.NotTopPtOne
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0387
+public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.Bundle0029
 public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ValuedLtOfMem
 public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsMemberStepCharts
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.LevOkTwists
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsFramedChartFromAdelicDictionary
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.StepLevelContainsUnitaryNearOneStatement
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0273
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0412
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0267
+public import Formalism.LocalToGlobal.Columns.RecLevelTop
 
 @[expose] public section
 
@@ -215,7 +214,7 @@ theorem approx_zero : ∀ {B : GlobalTheory.Mem.Base} {X : PreX B.toPre} (I : TC
         have := (hTw _ hw).2.2
         rwa [e] at this
     exact GlobalTheory.Mem.Col2.TopPtModel.adAt_of_prV w (hks.2.1 _ hT)
-  obtain ⟨d, hd⟩ := GlobalTheory.T.stepLevel_contains_unitary_near_one (A.K 0 (Nat.zero_le _) (A.chOf 0 c)).lev (I.Q a ∪ (I.Q a).image Formalism.L2.Col.conjPrime₂)
+  obtain ⟨d, hd⟩ := _root_.GlobalTheory.LevelApprox.mem_U_of_near_one (A.K 0 (Nat.zero_le _) (A.chOf 0 c)).lev (I.Q a ∪ (I.Q a).image Formalism.L2.Col.conjPrime₂)
   generalize TC.kStd X u (B.R.N 0) = k at hpt hks hp0 hkT ⊢
   have hkU : k ∈ Formalism.L2.Col.UAd B.sp.cm (B.R.N 0) := hp0.1
   have hykU : (show TC.GA B (B.R.N 0) from ((A.K 0 (Nat.zero_le _) (A.chOf 0 c)).y ⟨c, rfl⟩).1) * k ∈ Formalism.L2.Col.UAd B.sp.cm (B.R.N 0) := hpt.1

@@ -2,15 +2,15 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.Divisors.NotCompactOfMEqOne
-public import Development.AbelianVarietyTheory.Definitions.Divisors.InfUniv
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GroupObjectLiftDividedPowers
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TensorModOfTmul
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AbelianDualCrystal
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GrothendieckDeformationOfLifting
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0044
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2283
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0650
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle3084
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0691
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsAbelianSchemeLiftWithPrincipalLineBundle
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FinrankEqOfRankAtStalk
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsMonHomIdPow
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FlatSurjectiveGeomFibre
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2447
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2190
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1851
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsAdditiveLiftIff
 
 @[expose] public section

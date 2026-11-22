@@ -3,9 +3,9 @@ module
 public import Mathlib
 public import ReciprocityTheory.ThetaQuasiPeriods.ThetaQuasiPeriodStatement
 public import ReciprocityTheory.ThetaQuasiPeriods.Transl
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.ThetaUnifAV
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.Bundle0003
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.GlobalSectionsRankAlgClosed
-public import Development.AbelianVarietyTheory.Proofs.ToricGeometry.TopLePreimageOfValAtNeZero
+public import Development.AbelianVarietyTheory.Proofs.ToricGeometry.Bundle0018
 
 @[expose] public section
 

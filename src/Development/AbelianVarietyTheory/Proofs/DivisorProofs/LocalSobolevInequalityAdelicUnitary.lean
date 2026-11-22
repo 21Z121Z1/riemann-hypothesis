@@ -1,15 +1,15 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Divisors.IsSmoothVector
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsArchimedeanLiftUnitaryGroupProduct
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.DifferentiableOneP
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.LocallyCompactSecondCountableT2
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.SobolevIteratedOneParameterSubgroups
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SetIntegralLeOfExpandingStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LeMulSetIntegralImage2OfForallLeStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnitaryGroupSecondKindCoordinatesNearOneStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SobolevIteratedOneParameterSubgroupsWordsStatement
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0033
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0948
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0161
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0156
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0021
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0171
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0157
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0119
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0223
 
 @[expose] public section
 
@@ -117,7 +117,7 @@ theorem exists_chart (Hm : ι → Mt n) (hH : ∀ τ, (Hm τ).IsHermitian) (hd :
   obtain ⟨N, τs, Xs, hX, hl, hs⟩ := exists_basis Hm
   have h1 := fun τ => Matrix.nonsing_inv_mul _ (hd τ).isUnit
   have h2 := fun τ => Matrix.mul_nonsing_inv _ (hd τ).isUnit
-  obtain ⟨s, S, K, W, hs0, hK, hW, h⟩ := GlobalTheory.T.unitaryGroup_secondKind_coordinates_near_one (ι → Mt n) (adj Hm) N
+  obtain ⟨s, S, K, W, hs0, hK, hW, h⟩ := _root_.GlobalTheory.UnitaryChart.second_kind_chart (ι → Mt n) (adj Hm) N
     (fun i => Pi.single (τs i) (Xs i)) (fun i t => Pi.mulSingle (τs i) (NormedSpace.exp (t • Xs i)))
     (fun a => funext fun τ => by
       simp only [adj_apply, conjTranspose_mul, conjTranspose_conjTranspose, conjTranspose_nonsing_inv, (hH τ).eq]
@@ -272,7 +272,7 @@ theorem local_sobolev : ∀ (D : D7) (θ : InfFam D) (V : HSp D), IsInfFam θ �
   have hΘ := GlobalTheory.continuous_prod_ofFn_curves N (fun i => oneP θ V (τs i) (Xs i)) fun i => (hc i).1
   obtain ⟨C₁, hC₁, h₁⟩ := GlobalTheory.T.le_mul_setIntegral_image2_of_forall_le_alt (GA D V) μ N _ (Metric.closedBall 0 S) B (K ^ N) hΘ
     (isCompact_closedBall _ _) hBc hB (pow_nonneg hK _)
-  obtain ⟨C₂, hC₂, h₂⟩ := GlobalTheory.T.sq_norm_le_mul_of_iterated_one_parameter_integral_le (GA D V) N (fun i => oneP θ V (τs i) (Xs i)) s hs hc
+  obtain ⟨C₂, hC₂, h₂⟩ := _root_.GlobalTheory.sobolev_iterated_one_parameter_subgroups_words (GA D V) N (fun i => oneP θ V (τs i) (Xs i)) s hs hc
   let w : List (Fin N) → List (D.what₂.Tau × Mt V.rank) := List.map fun i => (τs i, Xs i)
   have hw : ∀ l, ∀ p ∈ w l, p.2 ∈ lieAt V p.1 := fun l p hp => by
     obtain ⟨i, -, rfl⟩ := List.mem_map.1 hp

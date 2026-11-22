@@ -4,8 +4,8 @@ public import Mathlib
 public import GroundTheory.LocalFields.Interface
 public import GroundTheory.LocalFields.Uniqueness
 public import GroundTheory.LocalFields.Integers
-public import GroundTheory.LocalFields.UnitsPowers
-public import GroundTheory.LocalFields.UnramifiedRootsOfUnity
+public import GroundTheory.LocalFields.Bundle0002
+public import GroundTheory.LocalFields.Bundle0004
 
 @[expose] public section
 

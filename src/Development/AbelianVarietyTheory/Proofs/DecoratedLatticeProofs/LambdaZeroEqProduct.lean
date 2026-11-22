@@ -2,11 +2,11 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.IsCombAt
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.CmHostImaginaryGeneratorNeZero
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.HeisOFinsetSum
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0181
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0316
 public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SplitPlaceCharacterConductorIntegers
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SeeSawProdLocalCellsDistinctPlaces
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.PlaceIdempotentUnderEqOfLiesOver
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0346
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0164
 
 @[expose] public section
 

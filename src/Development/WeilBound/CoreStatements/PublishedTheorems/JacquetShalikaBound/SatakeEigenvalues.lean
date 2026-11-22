@@ -1,8 +1,8 @@
 module
 
 public import Development.WeilBound.CoreStatements.PublishedTheorems.JacquetShalikaBound.lift_levelP_alt₂
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.NormSatakeLeOfUnitarySphericalGL
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SymmetricFunctionAbsoluteValues
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0214
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0225
 public import GroundTheory.AutomorphicForms.SphericalMinuscule
 public import GroundTheory.IdeleRoots.TorusPowers.SatakeBoundAdic
 

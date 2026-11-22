@@ -1,6 +1,6 @@
 module
 
-public import Formalism.SharpRestriction.GrowthBounds.BinomialPolynomialIdentities.ExistsIsotypicDecomposition
+public import Formalism.SharpRestriction.GrowthBounds.BinomialPolynomialIdentities.Bundle0007
 
 @[expose] public section
 

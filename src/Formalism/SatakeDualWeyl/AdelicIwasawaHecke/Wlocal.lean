@@ -1,6 +1,6 @@
 module
 
-public import Formalism.SatakeDualWeyl.StatementW
+public import Formalism.SatakeDualWeyl.Bundle0003
 public import Formalism.GradedWeylDivisibility.DualWeylDominanceOf
 
 @[expose] public section

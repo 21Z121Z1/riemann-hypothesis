@@ -1,14 +1,12 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Definitions.MetricPeriods.MetricsProjectionFormulaNef
-public import GroundTheory.HeightsAndTheta.Heights.Intersections.IsMultiProjPrimeImageZ
-public import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.ProjDeg
-public import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.ProjContract
+public import Development.AutomorphicSpectrum.Definitions.MetricPeriods.Bundle0002
+public import GroundTheory.HeightsAndTheta.Heights.Intersections.Bundle0026
+public import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.Bundle0010
 public import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.PFnDegRelDeg
-public import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.GeoNum
-public import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.ExistsUnique
-public import GroundTheory.HeightsAndTheta.Heights.FieldsOfNumbers.PContractRelDimLe
+public import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.Bundle0011
+public import GroundTheory.HeightsAndTheta.Heights.FieldsOfNumbers.Bundle0008
 public import GroundTheory.HeightsAndTheta.Heights.LocalFiniteness.FieldNumbersProjectionFormulaDegree
 
 @[expose] public section

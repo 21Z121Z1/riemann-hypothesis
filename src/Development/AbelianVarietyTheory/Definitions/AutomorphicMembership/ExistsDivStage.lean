@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.NuInRange
+public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.Bundle0012
 
 @[expose] public section
 

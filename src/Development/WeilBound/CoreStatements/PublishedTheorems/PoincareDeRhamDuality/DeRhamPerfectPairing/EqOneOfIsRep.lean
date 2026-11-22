@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CrystallineClassMemHodgeFiltrationOfCechRepZero
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LogChernCocycleContractionInvariantFieldTriviali
-public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.IsAdditiveOfUniversal
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2332
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2200
+public import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.Bundle0009
 
 @[expose] public section
 

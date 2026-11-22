@@ -3,7 +3,7 @@ module
 public import Development.AutomorphicArithmetic.Foundations.LocalLanglands.RecTTransport
 public import Development.AutomorphicArithmetic.Foundations.LocalLanglands.LocalCentralUnits.WDBasic
 public import Development.AutomorphicArithmetic.Foundations.LocalLanglands.LocalCentralUnits.ClBasic
-public import Development.DiscreteGroups.GlobalIrreducibility.DzIsoKO
+public import Development.DiscreteGroups.GlobalIrreducibility.Bundle0015
 public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ApplyMemTwKerOfNormalizer
 
 @[expose] public section

@@ -4,7 +4,7 @@ public import Mathlib
 public import Formalism.DistinguishedUnitIdeals.BridgeLevelOf
 public import Formalism.DistinguishedUnitIdeals.DistinguishedOrderProofs.Graded
 public import Formalism.DistinguishedUnitIdeals.DistinguishedOrderProofs.Partners
-public import Formalism.DistinguishedUnitIdeals.DistinguishedOrderProofs.UnivPart
+public import Formalism.DistinguishedUnitIdeals.DistinguishedOrderProofs.Bundle0001
 
 @[expose] public section
 

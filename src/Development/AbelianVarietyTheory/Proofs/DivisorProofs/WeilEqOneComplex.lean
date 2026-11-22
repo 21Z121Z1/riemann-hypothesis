@@ -1,21 +1,22 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Divisors.PointShiftSt
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsGoodPointDimOne
-public import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.PrincipalTriplePullback
-public import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.CubeLBPairingIsoIffWeilPairingCompatibleOverRing
-public import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.IsCubeLBPairingIsoBaseChange
-public import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.WeilPairingEqOfIsomorphicCubePairings
-public import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.WeilEqIffHermFormEqComplex
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0049
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1870
+public import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.Bundle0044
+public import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.Bundle0054
+public import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.Bundle0022
+public import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.Bundle0045
+public import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.Bundle0026
 public import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.ExistsHomFamilyOfPureTypeComplexTriple
-public import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.NonemptyPolAVGenericFibreWithLieBasisStatement
+public import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.Bundle0034
+public import Development.AbelianVarietyTheory.Definitions.CMLattices.ExistsIsThetaDegOfIsLocalModel
 public import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.LieAlgebraEigenDecompositionCMSignature
-public import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.ExistsInverseIsogenySumOfCmHoms
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsMulEquivOfIsGrpPullback
-public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ThetaUniformisationComplexAbelianVariety
-public import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.AbelianSchemeLawsUnconditional
-public import Development.AbelianVarietyTheory.Proofs.CoherentCohomologyProofs.ExistsUniqueHomExtensionSemiAbelian
+public import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.Bundle0050
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0032
+public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.Bundle0132
+public import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.Bundle0029
+public import Development.AbelianVarietyTheory.Proofs.CoherentCohomologyProofs.Bundle0030
 
 @[expose] public section
 
@@ -208,7 +209,7 @@ theorem dims : (∀ b, (X.A b).g = Module.finrank ℚ E / 2) ∧ X.B.g = Module.
     0 < Module.finrank ℚ E / 2 := by
   have key : ∀ (T : PAT H (Sp (𝓞 K))) (m n : ℕ), HasType H T.t.act ρ m n → T.g = Module.finrank ℚ E / 2 * (m + n) :=
     fun T m n h => by
-      obtain ⟨F⟩ := GlobalTheory.T.nonempty_polAVGenericFibreWithLieBasis abelianSchemeLaws_all.1.polBaseChange K T.pol
+      obtain ⟨F⟩ := _root_.GlobalTheory.CM.GenFib.nonempty_of_baseChange abelianSchemeLaws_all.1.polBaseChange K T.pol
       exact (EigDec.eigen_decomposition E H K ρ T F m n X.split h X.ρ_sq).2.2.2.1
   refine ⟨fun b => ?_, key _ _ _ X.typeB, ?_⟩
   · cases b

@@ -3,9 +3,9 @@ module
 public import Formalism.HermitianCurvature.StatementTL
 public import Formalism.HermitianCurvature.HermitianCurvatureProofs.DiagonalTransferAction
 public import Formalism.HermitianCurvature.HermitianCurvatureProofs.FrameCompletion
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Sq2UnitOfEqOneOfSq2EqDiv
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0049
 public import Formalism.HermitianCurvature.HermitianCurvatureProofs.TheoremPIntegralOfPlaces
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.HomogeneityNaturalDegree
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0030
 
 @[expose] public section
 

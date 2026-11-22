@@ -2,10 +2,12 @@ module
 
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.MultiplicityOne.RCountAt
 public import Development.AutomorphicArithmetic.Foundations.Convolution.WeightRankUnits.USide
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnitaryAutFormsWeightLevelFiniteSumFixedVectorsStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HeckeOperatorTestFamilyPreservesLevelFormsStatement
+public import Mathlib
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2760
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0036
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1069
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnitaryHeckeOperatorLevelIndicatorEqInvIndex
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RelIndexNeZeroOfSubsetCpt
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1044
 
 @[expose] public section
 
@@ -224,7 +226,7 @@ private theorem hop_mem_forms (S : Set (Pl E)) (hS : IsSection S) (lam : Infinit
   have hmap : forms S lam K₂ ≤ (forms S lam K₁).comap (hop S K₂ f) := by
     refine iSup₂_le fun π hπ v hv => ?_
     have h1 : hop S K₂ f v ∈ π ⊓ fixed (RF E n) (globLev S K₂) :=
-      GlobalTheory.T.heckeOperator_testFamily_preserves_level_forms E n S hS K₂ hK₂ f hf₂ π hπ.1 v hv
+      _root_.GlobalTheory.BCT.hop_mem_inf_fixed E n S hS K₂ hK₂ f hf₂ π hπ.1 v hv
     have h2 : levOp (RF E n) (globLev S (KL n)) (globLev S K₂) (globFn S f) LinearMap.id v ∈
         fixed (RF E n) (globLev S K₁) :=
       levOp_mem_fixed (RF E n) (globLev S (KL n)) (globLev S K₂) (globLev S K₁) (globFn S f) hl hr
@@ -252,8 +254,8 @@ theorem UpperTheory.V.Z.Mult.levTr :
     rw [← Subgroup.relIndex_mul_relIndex _ _ _ hUle hK0] at this
     exact left_ne_zero_of_mul this
   have hF := globFn_inv S K' f fun w => (hf.1 w).2
-  haveI := (GlobalTheory.T.unitaryAutForms_weight_level_finite_sum_fixed_vectors E hU n hn S hS lam K' hK').1
-  haveI := (GlobalTheory.T.unitaryAutForms_weight_level_finite_sum_fixed_vectors E hU n hn S hS lam K'' hK'').1
+  haveI := (_root_.GlobalTheory.BCT.forms_decomp E hU n hn S hS lam K' hK').1
+  haveI := (_root_.GlobalTheory.BCT.forms_decomp E hU n hn S hS lam K'' hK'').1
   exact trOn_levOp_eq (RF E n) (globLev S (KL n)) (globLev S K'') (globLev S K') (globFn S f) hUle hK0 hN
     (fun k hk x => (hF k hk x).2) (forms S lam K'') (forms S lam K') (forms_mono S lam hle)
     (forms_le_fixed S lam K')

@@ -1,14 +1,14 @@
 module
 
 public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SmoothAutomorphicOpenInvariant
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.RapidDecayOfOneParabolicBounds
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SmMemArchSmooth
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IsLeftInvariantOfIsAutForm
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsOpenLevel
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IsAddHaarMeasureUnipMeasure
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsGrowthUniform
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ArchLieDerivativeExists
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IdeleModuleDetDiagUnitsPosIdele
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0452
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0454
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0442
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0436
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0440
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0437
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0509
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0292
 
 @[expose] public section
 

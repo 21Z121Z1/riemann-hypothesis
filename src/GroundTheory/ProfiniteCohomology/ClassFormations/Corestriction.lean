@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import GroundTheory.ProfiniteCohomology.ClassFormations.CorestrictionDefs
-public import GroundTheory.ProfiniteCohomology.ClassFormations
+public import GroundTheory.ProfiniteCohomology.Bundle0008
 
 @[expose] public section
 

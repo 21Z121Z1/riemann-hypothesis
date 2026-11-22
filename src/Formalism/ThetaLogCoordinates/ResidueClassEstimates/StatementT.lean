@@ -1,6 +1,6 @@
 module
 
-public import Formalism.ThetaLogCoordinates.ResidueClassEstimates.Letters
+public import Formalism.ThetaLogCoordinates.ResidueClassEstimates.Bundle0001
 
 @[expose] public section
 

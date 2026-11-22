@@ -1,10 +1,10 @@
 module
 
 public import Mathlib
-public import Formalism.PeriodIntegrals.LatDefs
-public import Formalism.PeriodIntegrals.SigmaStarEx
-public import Formalism.PeriodIntegrals.AreaLat
-public import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.AreaLat
+public import Formalism.PeriodIntegrals.Bundle0004
+public import Formalism.PeriodIntegrals.Bundle0012
+public import Formalism.PeriodIntegrals.Bundle0011
+public import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.Bundle0005
 public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.ThetaSeriesExistence.ThetaDerivNe
 
 @[expose] public section

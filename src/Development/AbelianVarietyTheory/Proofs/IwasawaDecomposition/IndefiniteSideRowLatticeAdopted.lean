@@ -1,14 +1,13 @@
 module
 
 public import Mathlib
-public import Formalism.LocalToGlobal.Divisibility.DivisionCompatibleToSub2Indef2
-public import Formalism.LocalToGlobal.Divisibility.TiedLemmas
+public import Formalism.LocalToGlobal.Divisibility.Bundle0004
 public import Formalism.LocalToGlobal.Divisibility.LiftLatLemmas
 public import Formalism.LocalToGlobal.HilbertRowConditions.CenterIdempotentAction
-public import Formalism.LocalRingCardinality.DataBu
-public import Formalism.QuotientMetricDivisors.ClassSumDualLe
+public import Formalism.LocalRingCardinality.Bundle0001
+public import Formalism.QuotientMetricDivisors.Bundle0001
 public import Formalism.LocalRingCardinality.DataRows
-public import Formalism.HermitianLattices.StatementMaj
+public import Formalism.HermitianLattices.Bundle0002
 public import Formalism.LocalToGlobal.Divisibility.GoodPartHermitianSpec
 
 @[expose] public section

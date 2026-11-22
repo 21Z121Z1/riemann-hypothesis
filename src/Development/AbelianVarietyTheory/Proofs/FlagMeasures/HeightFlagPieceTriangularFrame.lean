@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.LowersMulZero
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0183
 public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.TranslatedLatticeAtInfinityFullCovolumeDual
-public import Development.AbelianVarietyTheory.Proofs.CovolumeBounds.ExistsNeZeroForallNormLeOfCovolumeLe
+public import Development.AbelianVarietyTheory.Proofs.CovolumeBounds.Bundle0006
 public import Formalism.HarderNarasimhan.ShiftInvariance
 
 @[expose] public section

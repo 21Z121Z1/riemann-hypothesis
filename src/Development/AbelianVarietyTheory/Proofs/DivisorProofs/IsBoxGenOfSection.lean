@@ -1,12 +1,12 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsProdUnif
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2457
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsProductDegenerationDataSum
-public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ExpandsFunctional
-public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.HasBasisOfBasis
+public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.Bundle0102
+public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.Bundle0088
 public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ClsLinCombSingle
-public import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.AbelianSchemeLawsUnconditional
+public import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.Bundle0029
 
 @[expose] public section
 

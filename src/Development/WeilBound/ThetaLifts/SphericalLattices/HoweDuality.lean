@@ -1,10 +1,10 @@
 module
 
 public import Development.WeilBound.ThetaLifts.SphericalLattices.HoweInert
-public import Development.WeilBound.ThetaLifts.SphericalLattices.UnrAtDiv
+public import Development.WeilBound.ThetaLifts.SphericalLattices.Bundle0011
 public import Development.WeilBound.ThetaLifts.SphericalLattices.LocDataV
 public import Development.WeilBound.ThetaLifts.SphericalLattices.LocDataVAlt
-public import Development.WeilBound.ThetaLifts.SphericalLattices.GenOf
+public import Development.WeilBound.ThetaLifts.SphericalLattices.Bundle0008
 
 @[expose] public section
 

@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import GroundTheory.ProfiniteCohomology.LocalClassFormation.IntegerUnitsToUnitsHomApply
-public import GroundTheory.LocalFields.UnramifiedNorms
+public import GroundTheory.LocalFields.Bundle0008
 public import GroundTheory.LocalFields.UnramifiedGalois
 public import GroundTheory.TateCohomology.Herbrand
 public import GroundTheory.TateCohomology.TateLow

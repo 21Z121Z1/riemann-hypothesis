@@ -1,8 +1,8 @@
 module
 
 public import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.ThetaParseval.HalfIndexLattices.SplitStab
-public import Development.WeilBound.ThetaLifts.Reductions.WeilPairs.LatRepB_A
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DifferentCoprimeAtGoodPlaces
+public import Development.WeilBound.ThetaLifts.Reductions.WeilPairs.Bundle0003
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1572
 
 @[expose] public section
 

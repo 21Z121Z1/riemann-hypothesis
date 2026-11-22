@@ -1,7 +1,7 @@
 module
 
-public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.IsRealCoord
-public import Development.AbelianVarietyTheory.Definitions.AdelicHermitianForms.AdelicPair
+public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.Bundle0005
+public import Development.AbelianVarietyTheory.Definitions.AdelicHermitianForms.Bundle0001
 
 @[expose] public section
 

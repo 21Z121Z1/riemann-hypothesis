@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import ReciprocityTheory.AnalyticForms.PotentialTheory.PshShiftA
+public import ReciprocityTheory.AnalyticForms.PotentialTheory.Bundle0001
 
 @[expose] public section
 

@@ -1,34 +1,54 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SquareTriple
-public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.UnifModGrowthOfIsUnifModerate
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LiftPRouteSmall
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1487
+public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.Bundle0007
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1502
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsNatMulIntegralOfIsCompact
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsTranslatesEqPrimFrameLat
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsPureSumZero
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.GenPtSSubset
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SmallModelThetaTransformInjectiveProductsStatement
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SmulOfMapsInlMemS
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.LatPtSLeClosureAndSelfDual
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.HTensMixHalfS
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0962
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0528
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0539
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0444
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0540
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0537
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0536
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsGaussianDatumFlippedFiniteTensorBigRoute
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SchroedingerFixedFunctionsProportionalOfSelfDual
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GridLocalTensorPlacesSplitIdempotentSum
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsLatticeVacuumFinitePlacesRationalDarboux
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1737
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1729
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1685
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.StandardAddCharSymplecticLocalLatticeEqOne
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdelicSchwartzFinitePureTensors
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsFactorPureTensorComponentAtPlace
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.HeisenbergOperatorFixThetaDatumAwaySplitPlaces
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.HeisenbergOrientedFiniteFixesFockPolynomialVecto
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.FockVectorsChainIsVacuumOffThetaLevels
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1519
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0118
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0119
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0157
 public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsLowestKTypeFockMapThetaVectors
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.PtYAndItYOfPair
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsNegConjMemberHermitianLatticeSpaceData
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0192
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1522
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsHermitianLatticeLocalBases
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GridSquareSkewSumSpaceIsSkewHermitianSelfDual
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsLatticeLatticeBlockDirectSumScaled
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ScaledLatticeConjDirectSumTraceSelfDualStatement
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2657
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1530
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1565
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsINeZeroKind
+public import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.NotIsCompactUnivFv
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1558
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1515
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0047
+public import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.Bundle0019
+public import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.WeilTensorModels
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1507
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1641
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1536
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1529
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2782
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1726
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1756
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2859
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1525
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ScaledBlockSumSelfDualTraceSkewForm
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1719
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1543
 
 @[expose] public section
 
@@ -210,7 +230,7 @@ theorem exists_bases (hL : L.Is μ₀) (h : IsTripleOf W M t i j e Bs Γ X) (hT 
   · show IsSplitBasis _ _ (if h : v.1 ∈ Bs.P then b₁ ⟨v.1, h⟩ else 1)
     rw [dite_eq_left v.2]
     exact hb₁ v
-  · have := GlobalTheory.T.scaledLattice_conj_directSum_trace_selfDual _ _ hV hV₁ e y
+  · have := _root_.GlobalTheory.SkewLat.pairLat_conj_trace_selfDual _ _ hV hV₁ e y
     rw [← h.JWW] at this
     exact this
   · show IsSplitBasis _ _ (if h : v.1 ∈ Bs.P then b₂ ⟨v.1, h⟩ else 1)
@@ -288,7 +308,7 @@ theorem exists_datum (hL : L.Is μ₀) (h : IsTripleOf W M t i j e Bs Γ X) (hT 
     ∃ Φ ∈ schA D.host.F (IxS G i j),
       HasTheta Γ.M'.co W.ψ Φ (boxS t e (W.fock (.mu t i j) f₁ P₁) (W.fock (.chi i j) f₂ P₂)) ∧
       ∀ γ ∈ genPtS t e v, Γ.M'.co.rho W.ψ γ Φ = Φ := by
-  obtain ⟨-, hinj, hon⟩ := GlobalTheory.T.smallModel_thetaTransform_injective_products W M t i j e Bs Γ X om om' h hT
+  obtain ⟨-, hinj, hon⟩ := _root_.GlobalTheory.SmallDat.ThBox.thetaS_box W M t i j e Bs Γ X om om' h hT
   obtain ⟨a₁, b₁⟩ := fock_locVec W v₁ h₁ P₁
   obtain ⟨a₂, b₂⟩ := fock_locVec W v₂ h₂ P₂
   have hstd : GlobalTheory.IndefiniteRowSideFullHecke.WeilTensorModels.IsStd W.ψ := h.ψ ▸ hT.base.std

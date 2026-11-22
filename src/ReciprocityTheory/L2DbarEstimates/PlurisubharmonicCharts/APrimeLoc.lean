@@ -1,7 +1,7 @@
 module
 
-public import ReciprocityTheory.L2DbarEstimates.PlurisubharmonicCharts.APrimeA
-public import ReciprocityTheory.L2DbarEstimates.PlurisubharmonicCharts.APrimeB
+public import ReciprocityTheory.L2DbarEstimates.PlurisubharmonicCharts.Bundle0002
+public import ReciprocityTheory.L2DbarEstimates.PlurisubharmonicCharts.Bundle0005
 
 @[expose] public section
 

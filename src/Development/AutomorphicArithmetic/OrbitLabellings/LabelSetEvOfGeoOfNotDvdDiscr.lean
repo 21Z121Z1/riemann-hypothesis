@@ -2,11 +2,11 @@ module
 
 public import Mathlib
 public import Development.AutomorphicArithmetic.OrbitLabellings.RowDefs
-public import Formalism.LocalToGlobal.CharacterGerms.RowTieMemCHarm
+public import Formalism.LocalToGlobal.CharacterGerms.Bundle0030
 public import Formalism.LocalToGlobal.CharacterGerms.RowTieFlagS
-public import Formalism.LocalToGlobal.CharacterGerms.RowTieUpFBrFin
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ImportsRestBis
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ImportsRestTer
+public import Formalism.LocalToGlobal.CharacterGerms.Bundle0044
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1523
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0856
 
 @[expose] public section
 

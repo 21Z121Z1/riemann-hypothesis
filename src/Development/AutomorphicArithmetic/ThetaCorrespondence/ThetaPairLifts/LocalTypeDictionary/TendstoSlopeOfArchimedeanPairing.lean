@@ -1,13 +1,14 @@
 module
 
 public import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.LocalTypeDictionary.DiscreteSpectrumResidualClassification
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.WeilLineGoodModelPolynomial
-public import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.LocalTypeDictionary.BernsteinUnitaryProductIrreducible
-public import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.LocalTypeDictionary.MetaplecticScalarDerivativeNonempty
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0532
+public import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.LocalTypeDictionary.Bundle0001
+public import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.LocalTypeDictionary.Bundle0023
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.HasInfExpDiv
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IsPairReading
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ThetaTransformDarbouxModelLinearInjectiveStatement
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0290
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0305
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0489
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0301
 public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.LieActionFockOperatorsScalarsTrace
 
 @[expose] public section
@@ -56,7 +57,7 @@ theorem tendsto_slope_of_archimedean_pairing (hP : _root_.GlobalTheory.FunPr.The
       rw [ha, ha, hφ, hφ, hAo]
     rw [hext (g t) M fun v => by rw [hg, hM]]
     exact M.2
-  obtain ⟨Z, hZ, hgZ⟩ := GlobalTheory.T.exists_symplecticLie_eq_exp_oneParam (Fin n) g hgc hg0 hgm hgs
+  obtain ⟨Z, hZ, hgZ⟩ := _root_.GlobalTheory.SymplecticOneParam.exists_mem_sp_eq_exp (Fin n) g hgc hg0 hgm hgs
   let B : GlobalTheory.RealWeil.Sch (Fin n) →L[ℂ] 𝓢(V, ℂ) := SchwartzMap.compCLMOfContinuousLinearEquiv ℂ (F := ℂ) C
   let Bi : 𝓢(V, ℂ) →L[ℂ] GlobalTheory.RealWeil.Sch (Fin n) := SchwartzMap.compCLMOfContinuousLinearEquiv ℂ (F := ℂ) C.symm
   have hB : ∀ h, ⇑(B h) = ⇑h ∘ ⇑C := fun h => rfl

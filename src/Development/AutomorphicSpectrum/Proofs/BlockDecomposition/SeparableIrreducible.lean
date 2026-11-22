@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Development.WeilBound.CoreStatements.FiniteTypeHarishChandra.SupportExistsAll
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SimpleIffIrreducibleStatement
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0099
 
 @[expose] public section
 

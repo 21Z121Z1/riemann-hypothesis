@@ -1,10 +1,10 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Proofs.GlobalProofs.FiniteDimensionalOfSlices
-public import Development.AutomorphicSpectrum.Proofs.GlobalProofs.LeviPartsCommuteStatement
-public import Development.AutomorphicSpectrum.Proofs.GlobalProofs.LeviEqISupPartsStatement
-public import Development.AutomorphicSpectrum.Proofs.GlobalProofs.AdelicHaarFiniteInfiniteProductStatement
+public import Development.AutomorphicSpectrum.Proofs.GlobalProofs.Bundle0050
+public import Development.AutomorphicSpectrum.Proofs.GlobalProofs.LeviPartsCommute
+public import Development.AutomorphicSpectrum.Proofs.GlobalProofs.LeviEqISupParts
+public import Development.AutomorphicSpectrum.Proofs.GlobalProofs.AdelicHaarFiniteInfiniteProduct
 public import Development.WeilBound.RepresentationTheoryGL.ConstantTermFiniteness.CuspidalConstantTerms.FiniteSlicesUPart
 public import Development.WeilBound.RepresentationTheoryGL.ConstantTermFiniteness.CuspidalConstantTerms.FiniteSlicesGlPart
 
@@ -63,10 +63,10 @@ theorem finite_cuspOn : ∀ (D : D7) (θ : D.what₂.Tau → (Ainf D.host.F ⊗[
   intro D θ hθ V U hU ε fr hfr W _ _ _ ρ hρ c m X Y hW T hT
   classical
   have hh := GlobalTheory.Mem.Vol.cmData_isCMExt_and_gram_isHermND D.host.F D.host.E D.sp.cm
-  obtain ⟨B, hB⟩ := GlobalTheory.T.archimedean_frame_K_type_decomposition D θ hθ V U hU ε fr hfr W ρ hρ c m X Y hW T hT
+  obtain ⟨B, hB⟩ := _root_.GlobalTheory.CompanionTheory.Hypotheses₂.LeviPart.Sep.exists_finset_sep_levi D θ hθ V U hU ε fr hfr W ρ hρ c m X Y hW T hT
   refine finiteDimensional_of_parts (part D.sp.cm.sig V.gram X Y T)
-    (GlobalTheory.T.levi_parts_commute D.host.F D.host.E D.sp.cm.sig hh.1 V.rank V.gram (hh.2 V) m X Y hW T) (levi D.sp.cm.sig V.gram X Y T)
-    (GlobalTheory.T.levi_eq_iSup_parts D.host.F D.host.E D.sp.cm.sig hh.1 V.rank V.gram (hh.2 V) m X Y hW T) (cuspOn θ V X Y T U ε fr ρ c) B
+    (_root_.GlobalTheory.CompanionTheory.Hypotheses₂.LeviPart.Comm.part_commute D.host.F D.host.E D.sp.cm.sig hh.1 V.rank V.gram (hh.2 V) m X Y hW T) (levi D.sp.cm.sig V.gram X Y T)
+    (_root_.GlobalTheory.CompanionTheory.LeviGen.levi_eq_iSup_part D.host.F D.host.E D.sp.cm.sig hh.1 V.rank V.gram (hh.2 V) m X Y hW T) (cuspOn θ V X Y T U ε fr ρ c) B
     (fun φ hφ h => hB φ (mem_formsOn_of_mem_span hθ (Submodule.span_mono (show cuspOn θ V X Y T U ε fr ρ c ⊆ formsOn θ V X Y T U ε fr ρ c from fun _ hf => hf.1) hφ)) h) ?_
   rintro (_ | k) b
   · exact UCore.Rg.finite_slices_uPart D θ hθ V U hU ε fr hfr W ρ hρ c m X Y hW T hT b

@@ -4,7 +4,7 @@ public import Mathlib
 public import Development.WeilBound.CoreStatements.PeriodRingComparison.CrystallinePeriodRings.GammaEqDpow
 public import Development.WeilBound.CoreStatements.PeriodRingComparison.PrimitiveEpsilon.UntiltEpsilonEqOne
 public import Development.WeilBound.CoreStatements.PeriodRingComparison.TeichmullerLogarithm.LogEps
-public import Development.AutomorphicArithmetic.IntegralCasts.CrystallinePeriods.Period
+public import Development.AutomorphicArithmetic.IntegralCasts.CrystallinePeriods.Bundle0002
 public import Development.WeilBound.CoreStatements.CrystallinePeriodRings.ExistsMapEqOfPowMul
 
 @[expose] public section

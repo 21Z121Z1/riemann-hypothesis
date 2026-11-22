@@ -1,19 +1,19 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.StdBases
+public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.Bundle0010
 public import Formalism.LocalRingCardinality.DataForced
 public import Formalism.LocalToGlobal.TorsionIntegrality.GaussSumParity.SingleLetterBiextensionRelation
 public import Formalism.LocalRingCardinality.FactDelDualNabla
 public import Formalism.LocalToGlobal.TorsionIntegrality.GaussSumParity.TransportFirstLevel
 public import Formalism.LocalToGlobal.GlobalTheory.GL3.PHfTrace
 public import Formalism.LocalToGlobal.GlobalTheory.GL3.PLinkThU
-public import Formalism.GaussJetBounds.GaussJetProofs.NormNatCastEqPowPadicValNat
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.NormLeOneOfValuationLeOne
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.TauPlBijective
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.PrimeOfLiesOver
+public import Formalism.GaussJetBounds.GaussJetProofs.Bundle0002
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0230
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0071
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0078
 public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.NormPadicEmbeddingLeOneOfMemInverseHalfDifferent
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExistsKurFrobTauEmbPosPl
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0168
 
 @[expose] public section
 

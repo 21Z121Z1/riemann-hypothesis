@@ -1,8 +1,7 @@
 module
 
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutJAPRTWNeAlgSt
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.IrreducibleCapelliModules
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutGCoreKLExistsOfAlg
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0040
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0065
 
 @[expose] public section
 

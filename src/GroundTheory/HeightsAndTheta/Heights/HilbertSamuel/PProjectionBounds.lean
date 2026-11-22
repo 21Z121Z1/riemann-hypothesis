@@ -2,8 +2,8 @@ module
 
 public import Mathlib
 public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsArith
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsResChiBounds
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArakelovGeometry.CNormSt
+public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0024
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArakelovGeometry.Bundle0013
 public import ReciprocityTheory.GeometryOfNumbers.SphericalMonomials.ChiPSt
 
 @[expose] public section

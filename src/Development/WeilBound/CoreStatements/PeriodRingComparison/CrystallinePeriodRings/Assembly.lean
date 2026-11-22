@@ -2,11 +2,10 @@ module
 
 public import Mathlib
 public import Development.WeilBound.CoreStatements.PeriodRingComparison.CrystallinePeriodRings.BcrisPlusHomAlgebraMap
-public import Development.WeilBound.CoreStatements.PeriodRingComparison.CrystallinePeriodRings.BcFrob
+public import Development.WeilBound.CoreStatements.PeriodRingComparison.CrystallinePeriodRings.Bundle0001
 public import Development.WeilBound.CoreStatements.PeriodRingComparison.AinfInverseMaps.AinfInvMapGOC
 public import Development.WeilBound.CoreStatements.PeriodRingComparison.RationalRingEquivalences.IsLogCore
 public import Development.WeilBound.CoreStatements.PeriodRingComparison.TeichmullerLogarithm.LogEps
-public import Development.WeilBound.CoreStatements.PeriodRingComparison.CrystallinePeriodRings.BcrisLogTeichmullerEqT
 public import Development.WeilBound.CoreStatements.PeriodRingComparison.CrystallinePeriodRings.CAFrobAinf
 
 @[expose] public section

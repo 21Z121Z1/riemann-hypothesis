@@ -1,8 +1,8 @@
 module
 
 public import Development.AbelianVarietyTheory.Definitions.Foundations.IsPrimitiveRootTopZeta
-public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.KmapSubMemOfASet
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.EisensteinModularTowers.NormalModularTowerTopAlgebraModel
+public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Bundle0084
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.EisensteinModularTowers.Bundle0002
 
 @[expose] public section
 

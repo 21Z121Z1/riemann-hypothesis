@@ -1,6 +1,6 @@
 module
 
-public import Formalism.PieriBlockIdeals.CapelliCentralEnveloping
+public import Formalism.PieriBlockIdeals.Bundle0001
 
 @[expose] public section
 

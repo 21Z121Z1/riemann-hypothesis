@@ -1,9 +1,13 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.IsFrameVec
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsSandwichOfHodgeTateFreeStatement
-public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.SandwichPointOverFieldExtStatement
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0183
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0250
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.Bundle0010
+public import Development.AutomorphicSpectrum.Statements.GeometryStatements.IsPolLatticePlane
+public import Development.AutomorphicSpectrum.Statements.AlgebraStatements.Bundle0003
+public import Development.AutomorphicSpectrum.Definitions.DivisibilityTowers.Birational
+public import Development.AutomorphicSpectrum.Proofs.GeometryProofs.Bundle0136
 public import GroundTheory.HeightsAndTheta.Heights.LatticeLemmas.PRootsOfUnityValuation
 
 @[expose] public section
@@ -214,7 +218,7 @@ theorem lieEig_htDual : Top.Given → ∀ (E : Type) [Field E] [NumberField E] [
     hOm hpq hpS EC _ _ _ _ MC ρC hAct s σ hσ
   obtain ⟨hla, hov, -⟩ := hI
   have hHT : HT.HTFree Or.𝔐 p := hOm p hpS
-  obtain ⟨κ, hκ, hS⟩ := GlobalTheory.T.exists_sandwich_of_hodge_tate_free hG.2.2.2.2.2.2.1 E H Dw l Xo c O β Y SS _ _ _ RM.y Or.𝔐 p hpS hpq hHT
+  obtain ⟨κ, hκ, hS⟩ := _root_.GlobalTheory.CompanionTheory.Ar.HT.ModelSandwich.sandwich_of_htFree hG.2.2.2.2.2.2.1 E H Dw l Xo c O β Y SS _ _ _ RM.y Or.𝔐 p hpS hpq hHT
   have hgen := Or.𝔐.tie.gen
   have hr := FinRd.ram_pos hla
   have hpos : (0 : ℤ) < (e : ℤ) * ramOverZ la := by
@@ -234,7 +238,7 @@ theorem lieEig_htDual : Top.Given → ∀ (E : Type) [Field E] [NumberField E] [
     · have h2 : vV T.V (algebraMap T.V T.Fr (p : T.V)) = 0 := by simp [vV, h1]
       rw [hvp] at h2
       omega
-  obtain ⟨h1, h2, -⟩ := GlobalTheory.T.sandwich_point_over_field_ext E H Dw l Xo c O β Y SS _ _ _ RM.y Or.𝔐 p hpS κ hHT hS T.Fr
+  obtain ⟨h1, h2, -⟩ := _root_.GlobalTheory.CompanionTheory.Ar.HT.hodge_tate_model_point_sandwich E H Dw l Xo c O β Y SS _ _ _ RM.y Or.𝔐 p hpS κ hHT hS T.Fr
     (realVal T.V T.Fr) T.V realVal_integers hv1 zV EC MC ρC s σ κz hAct hσ hκz
   refine ⟨κz, h1, h2, absT_kappa hla hov (fun h => ?_) (fun h => ?_)⟩
   · rw [HT.IsCp, if_pos h] at hκ

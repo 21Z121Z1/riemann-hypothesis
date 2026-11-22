@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Formalism.GL3MeanSquares.PrimeCountAsymptoticInProgressions
+public import Formalism.GL3MeanSquares.Bundle0002
 
 @[expose] public section
 

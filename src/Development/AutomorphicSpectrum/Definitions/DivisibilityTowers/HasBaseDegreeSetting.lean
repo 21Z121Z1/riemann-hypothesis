@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Development.AutomorphicSpectrum.Definitions.DivisibilityTowers.HeckeSectionsIsotropicCommutatorPairingPower
-public import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.FlagIndices
+public import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.Bundle0009
 
 @[expose] public section
 

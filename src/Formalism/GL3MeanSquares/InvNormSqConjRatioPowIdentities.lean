@@ -1,10 +1,10 @@
 module
 
 public import Mathlib
-public import Formalism.GL3MeanSquares.PrimeCountAsymptoticInProgressions
-public import Formalism.GL3MeanSquares.InvariantSeriesBidegreeOneOne
-public import Formalism.GL3MeanSquares.ConcavityEquidistribution
-public import Formalism.GL3MeanSquares.RankMulPowThreeHalvesLeFourthPower
+public import Formalism.GL3MeanSquares.Bundle0002
+public import Formalism.GL3MeanSquares.Bundle0003
+public import Formalism.GL3MeanSquares.Bundle0001
+public import Formalism.GL3MeanSquares.Bundle0005
 public import Formalism.GL3MeanSquares.RationalMatrixPrimeOrderBound
 
 @[expose] public section

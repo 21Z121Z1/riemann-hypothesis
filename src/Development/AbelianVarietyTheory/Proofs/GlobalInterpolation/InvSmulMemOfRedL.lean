@@ -2,11 +2,11 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.MemUnitOff
-public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.ValOUnramifiedDegreeOne
+public import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Bundle0100
 public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.PredMemGamRanks
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsMatrixBasisLatticeUpToDenominatorNotMem
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsMulMemSpan
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExistsUnimodularLatticeLocalMatch
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0006
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0119
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0052
 public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.UnimodularLatticeLocalConjSymm
 
 @[expose] public section

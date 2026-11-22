@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.SquarePairLocal.MemFixSub
+public import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.SquarePairLocal.Bundle0001
 
 @[expose] public section
 

@@ -1,7 +1,7 @@
 module
 
 public import Development.WeilBound.RepresentationTheoryGL.RegularisedSiegelWeil.SingularNullSets.WeakApproximationFinitePlace
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.GodementSectionInvariantConvergent
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0202
 public import GroundTheory.PAdicHodge.ACrisBdR
 
 @[expose] public section

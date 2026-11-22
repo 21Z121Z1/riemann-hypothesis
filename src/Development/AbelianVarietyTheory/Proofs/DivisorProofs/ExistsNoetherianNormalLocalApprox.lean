@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.FiniteIntegralClosureOfEssFiniteTypeIntDomain
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0067
 
 @[expose] public section
 

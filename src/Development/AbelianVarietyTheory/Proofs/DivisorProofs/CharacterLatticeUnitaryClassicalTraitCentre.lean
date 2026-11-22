@@ -1,33 +1,34 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsTorsExt
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2543
 public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LabRange
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LatAtIffOfSpecializes
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnitaryTraitLabelsSurjectiveKernel
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2608
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2406
 public import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsToricRankOne
-public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsTorusTorsionPointStandardAlternatingForm
-public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsLabelMapTorsionCharacters
-public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.LineBundleSymmetryHypothesisBaseChange
-public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsAdaptedBasisTestLattice
-public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsMulPowMemOOfIsAffineOpen
-public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.AllSixAbelianSchemeLawsHold
-public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.UTorsClosed
+public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.Bundle0181
+public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.Bundle0060
+public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.Bundle0064
+public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.Bundle0055
+public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.Bundle0046
+public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.Bundle0131
+public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.Bundle0133
 public import Development.AbelianVarietyTheory.Proofs.HomogeneousIdeals.GenericExistsUniqueOActOfIsGrpPullback
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SemiAbelianHomExtensionHolds
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsGrpPullbackGenMap
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EndCharExistsOfIsMonHom
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsLabOntoAndKer
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BetaPos
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1880
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2373
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2335
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2189
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2326
 public import Development.AbelianVarietyTheory.Definitions.Divisors.IsActIffIsDiagEnd
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsLiftValuationSubring
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.AssociatedPsiCoordinatesOfTauUnits
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GenericFibreIsoSpecialisesToFieldPoints
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsDvrFactorPointPadicAlgClosure
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LatticeOfUniformisationEqModelLattice
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsCommonPullbackSemiAbelianDvr
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LabelCongruenceEndoAllAlgClosedFields
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NormTauLineBundleCoordinateEqExpStatement
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2433
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0586
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2534
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2509
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2545
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2507
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2544
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2553
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsTorPartTorusExtension
 
 @[expose] public section
 
@@ -184,8 +185,8 @@ theorem char_eq_bar_smul : ∀ (E : Type) [Field E] [NumberField E] [IsCMField E
     obtain ⟨x, hx⟩ := GlobalTheory.PsiFromTau.exists_isTauCoord u.V u.D.toPre (s a') b
     obtain ⟨x', hx'⟩ := GlobalTheory.PsiFromTau.exists_isTauCoord u.V u.D.toPre a' (m b)
     obtain ⟨w, hw⟩ := hmain a' b x x' hx hx'
-    have n₁ := GlobalTheory.T.norm_tauLineBundleCoordinate_eq_exp o Ω S ρ p y₀ u l (s a') b x hx
-    have n₂ := GlobalTheory.T.norm_tauLineBundleCoordinate_eq_exp o Ω S ρ p y₀ u l a' (m b) x' hx'
+    have n₁ := _root_.GlobalTheory.Poinc.TauNorm.main o Ω S ρ p y₀ u l (s a') b x hx
+    have n₂ := _root_.GlobalTheory.Poinc.TauNorm.main o Ω S ρ p y₀ u l a' (m b) x' hx'
     rw [hw, map_mul, norm_mul, hunit, _root_.one_mul, n₂] at n₁
     have := Real.exp_injective n₁
     linarith

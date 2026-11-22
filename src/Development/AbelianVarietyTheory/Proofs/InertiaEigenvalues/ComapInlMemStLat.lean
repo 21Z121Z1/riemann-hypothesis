@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.UnitLemmaGroup
-public import ReciprocityTheory.DualLattices.ExistsSmulMemOfMemSpan
+public import ReciprocityTheory.DualLattices.Bundle0004
 
 @[expose] public section
 

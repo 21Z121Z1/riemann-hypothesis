@@ -1,11 +1,11 @@
 module
 
 public import Mathlib
-public import Development.AutomorphicSpectrum.Proofs.GlobalProofs.CoefS
+public import Development.AutomorphicSpectrum.Proofs.GlobalProofs.Bundle0025
 public import CompanionTheory.SpectralGeometry.CountingDefinitions.AdelicEulerProducts.IsEulerProd
-public import Development.AutomorphicSpectrum.Proofs.GlobalProofs.IntegralIndicatorCharOfTrivial
-public import Development.AutomorphicSpectrum.Proofs.GlobalProofs.CharEqOneOfNear
-public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.SelfDualMap
+public import Development.AutomorphicSpectrum.Proofs.GlobalProofs.Bundle0027
+public import Development.AutomorphicSpectrum.Proofs.GlobalProofs.Bundle0028
+public import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.Bundle0057
 
 @[expose] public section
 

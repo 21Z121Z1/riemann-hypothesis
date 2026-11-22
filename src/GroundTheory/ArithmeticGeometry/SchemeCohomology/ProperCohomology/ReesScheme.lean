@@ -1,8 +1,7 @@
 module
 
 public import Mathlib
-public import GroundTheory.ArithmeticGeometry.SchemeCohomology.ProperCohomology.ReesSubmodule
-public import GroundTheory.ArithmeticGeometry.SchemeCohomology.ProperCohomology.PullbackGamma
+public import GroundTheory.ArithmeticGeometry.SchemeCohomology.ProperCohomology.Bundle0001
 
 @[expose] public section
 

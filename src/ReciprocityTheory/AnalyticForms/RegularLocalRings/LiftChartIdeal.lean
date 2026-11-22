@@ -1,7 +1,7 @@
 module
 
-public import ReciprocityTheory.AnalyticForms.RegularLocalRings.ProjBCompl
-public import ReciprocityTheory.AnalyticForms.RegularLocalRings.EvalValChartCoord
+public import ReciprocityTheory.AnalyticForms.RegularLocalRings.Bundle0012
+public import ReciprocityTheory.AnalyticForms.RegularLocalRings.Bundle0011
 
 @[expose] public section
 

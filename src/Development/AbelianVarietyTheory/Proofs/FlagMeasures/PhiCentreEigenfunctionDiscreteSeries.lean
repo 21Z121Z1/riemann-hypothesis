@@ -2,10 +2,10 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Statements.CuspFrameWeights.DiscreteSpectrumKFiniteDecomposition
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ProdPartialZpow
-public import Development.AbelianVarietyTheory.Proofs.HeightProofs.CommuteGelfandInvariantMatrixUnitsOfGlRel
-public import Formalism.RealPlaceAnalysis.RealPlaceTaylor.HWDiag
-public import Formalism.RealPlaceAnalysis.RealPlaceTaylor.TrPowSumFilterZero
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0148
+public import Development.AbelianVarietyTheory.Proofs.HeightProofs.Bundle0007
+public import Formalism.RealPlaceAnalysis.RealPlaceTaylor.Bundle0004
+public import Formalism.RealPlaceAnalysis.RealPlaceTaylor.Bundle0003
 
 @[expose] public section
 

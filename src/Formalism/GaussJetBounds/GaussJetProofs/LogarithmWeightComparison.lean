@@ -2,8 +2,8 @@ module
 
 public import Formalism.GaussJetBounds.GaussJetProofs.SubstitutionWeightBound
 public import Formalism.FormalGroupWitt.FormalGroupWittProofs.SolveV
-public import Formalism.FormalGroupWitt.FormalGroupWittProofs.EqSingleOfDegreeEqOne
-public import Formalism.IncomingBounds.FlowDegreeBounds.PadicValFactorialRatioProd
+public import Formalism.FormalGroupWitt.FormalGroupWittProofs.Bundle0001
+public import Formalism.IncomingBounds.FlowDegreeBounds.Bundle0001
 
 @[expose] public section
 

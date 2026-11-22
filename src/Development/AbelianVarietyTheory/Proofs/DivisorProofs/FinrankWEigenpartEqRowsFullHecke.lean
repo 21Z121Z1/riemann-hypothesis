@@ -1,22 +1,23 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.NormalFam
+public import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.Bundle0015
 public import Development.AbelianVarietyTheory.PublishedTheorems.GaloisGeometry₂.HoweUnram
 public import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.IsStepWeil
-public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.ExistsNormLeHeightPow
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FinRepApply
-public import Formalism.LocalToGlobal.IndefiniteReal.CutTuples2
+public import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.Bundle0007
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0831
+public import Formalism.LocalToGlobal.IndefiniteReal.Bundle0004
 public import Formalism.LocalToGlobal.Divisibility.ProjLemmas
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SignAtBasePlaceEqEmbedding
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConjMapMemMult
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GoodPartFullEqKilled
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsometryMatchingLatticesMatchesSphericalOpsStatement
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsLabelThetaLiftSpaceIffDualStatement
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ThetaLiftLevelsGoodPrimesPropertiesStatement
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.LevelOperatorsAtPrimeOffLevelDatumStatement
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExistsSphericalOperatorsRowsNormalEigenspacesStatement
-public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.SphericalOperatorsFormsOnRankSpaceNormalStatement
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1012
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0942
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0956
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1003
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1035
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0143
+public import Formalism.SatakeDualWeyl.KpqSubgroupCompact
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0141
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExistsSphericalOperatorsRowsNormalEigenspaces
+public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Bundle0152
 
 @[expose] public section
 
@@ -68,16 +69,16 @@ variable {G : Type} [Group G] [Fintype G] {Pl0 T : Type} {A : FamIn D.what₂.LL
 
 theorem liftsY' (h : Core R F) : LiftsExist (Yc D 0) (R.βY 0) (R.dat0 R.triv) := by
   obtain ⟨c, hc⟩ := h.lev.βY 0 (lt_of_lt_of_le two_pos D.R.two_le_m)
-  exact GlobalTheory.T.finite_group_lifts_to_parahoric_level _ _ _ _ _ hc rfl (GlobalTheory.T.typePlaces_not_pairwise_conjugate R.C.P R.Pg h.lev.Pg)
+  exact _root_.GlobalTheory.FiniteGroupLifts.liftsExist_of_twist_empty _ _ _ _ _ hc rfl (_root_.GlobalTheory.TypePlaces.not_isConjPl R.C.P R.Pg h.lev.Pg)
 
 theorem liftsW' (h : Core R F) (i : Fin D.R.m) : LiftsExist (Wc D i) (R.βW i) (R.datWp i R.triv) := by
   obtain ⟨c, hc⟩ := h.lev.βW i
-  exact GlobalTheory.T.finite_group_lifts_to_parahoric_level _ _ _ _ _ hc rfl (GlobalTheory.T.typePlaces_not_pairwise_conjugate R.C.P R.Pg h.lev.Pg)
+  exact _root_.GlobalTheory.FiniteGroupLifts.liftsExist_of_twist_empty _ _ _ _ _ hc rfl (_root_.GlobalTheory.TypePlaces.not_isConjPl R.C.P R.Pg h.lev.Pg)
 
 theorem lab_dual (h : Core R F) (i : Fin D.R.m) {Q : Pl D.host.E} (hQ : Good R A.μ0 Q) {d : List ℤ}
     (hd : IsLab (Yc D 0) Q d) : IsLab (Yc D 0) Q (dualLab d) ∧ IsLab (Wc D i) Q d ∧ IsLab (Wc D i) Q (dualLab d) := by
-  have l1 := GlobalTheory.T.isLabel_thetaLiftSpace_iff_dual (s := 0) R F h i Q d hQ
-  have l2 := GlobalTheory.T.isLabel_thetaLiftSpace_iff_dual (s := 0) R F h i Q (dualLab d) hQ
+  have l1 := _root_.GlobalTheory.LabEq.isLab_W_iff (s := 0) R F h i Q d hQ
+  have l2 := _root_.GlobalTheory.LabEq.isLab_W_iff (s := 0) R F h i Q (dualLab d) hQ
   have w := l1.2.2 hd
   have y := l1.1.1 w
   exact ⟨y, w, l2.2.2 y⟩
@@ -85,7 +86,7 @@ theorem lab_dual (h : Core R F) (i : Fin D.R.m) {Q : Pl D.host.E} (hQ : Good R A
 theorem rel_of_E (h : Core R F) (hS : SchurAll R) {SF} (hSF : IsSF R SF) (i : Fin D.R.m) {c : Pl D.host.E → List ℤ → ℂ} {x : R.HE.H}
     (hx : x ∈ EEc R SF c) (h0 : x ≠ 0) {Q : Pl D.host.E} (hQ : Good R A.μ0 Q) {d : List ℤ} (hd : IsLab (Yc D 0) Q d) :
     star (c Q (dualLab d)) = c Q d := by
-  obtain ⟨o, -, hN, -, hev, -⟩ := GlobalTheory.T.exists_sphericalOperators_rows_normal_eigenspaces R F h hS SF hSF
+  obtain ⟨o, -, hN, -, hev, -⟩ := _root_.GlobalTheory.Hk3.OpsRows.exists_opsE R F h hS SF hSF
   have hdd := (lab_dual h i hQ hd).1
   have h1 := hev c Q hQ (Finsupp.single d 1) x hx
   have h2 := hev c Q hQ (Finsupp.single (dualLab d) 1) x hx
@@ -97,7 +98,7 @@ theorem unitary_relation_labels_of_W_eigenvector (h : Core R F) (hS : SchurAll R
     {c : Pl D.host.E → List ℤ → ℂ} {x : (R.HW i (sg0 D A)).H}
     (hx : x ∈ Wcc R SF i c) (h0 : x ≠ 0) {Q : Pl D.host.E} (hQ : Good R A.μ0 Q) {d : List ℤ} (hd : IsLab (Yc D 0) Q d) :
     star (c Q (dualLab d)) = c Q d := by
-  obtain ⟨o, -, hN, -, -, -, hev, -⟩ := GlobalTheory.T.sphericalOperators_forms_on_rank_space_normal R F h hS hI SF hSF i
+  obtain ⟨o, -, hN, -, -, -, hev, -⟩ := _root_.GlobalTheory.SphOpsModel.sphericalOperators_forms_on_rank_space_normal_alt R F h hS hI SF hSF i
   obtain ⟨-, hw, hwd⟩ := lab_dual h i hQ hd
   have h1 := hev c Q hQ (Finsupp.single (dualLab d) 1) x hx
   have h2 := hev c Q hQ (Finsupp.single d 1) x hx
@@ -109,7 +110,7 @@ theorem unitary_relation_labels_of_W_eigenvector (h : Core R F) (hS : SchurAll R
 
 theorem good_Y (h : Core R F) {Q : Pl D.host.E} (hQ : Good R A.μ0 Q) (c : ℕ) :
     (((((D.host.g 0 * D.host.g 1) ^ c : ℕ)) : 𝓞 D.host.E)) ∉ Q.asIdeal := by
-  obtain ⟨-, hg, -⟩ := GlobalTheory.T.theta_lift_levels_good_primes_properties R F h.lev
+  obtain ⟨-, hg, -⟩ := _root_.GlobalTheory.GoodPrimes.good_primes R F h.lev
   intro hc
   rw [Nat.cast_pow] at hc
   exact (hg _ _ hQ).1 (Q.isPrime.mem_of_pow_mem c hc)
@@ -123,8 +124,8 @@ theorem hecke_Y (h : Core R F) {SF} (hSF : IsSF R SF) {Q : Pl D.host.E} (hQ : Go
     Hecke₂ (Yc D 0) (levS _ (R.βY 0) (R.dat0 R.triv)) (levChi _ (R.βY 0) (R.dat0 R.triv)) SF Q d B ↔
       GlobalTheory.Hk3.SphOp (Yc D 0) Q d B := by
   obtain ⟨c, hc⟩ := h.lev.βY 0 (lt_of_lt_of_le two_pos D.R.two_le_m)
-  obtain ⟨-, -, hoff, -⟩ := GlobalTheory.T.theta_lift_levels_good_primes_properties R F h.lev
-  rw [(GlobalTheory.T.level_operators_at_prime_off_level_datum (Yc D 0) (R.βY 0) (R.ΛY 0) _ (R.dat0 R.triv) hc Q (good_Y h hQ c)
+  obtain ⟨-, -, hoff, -⟩ := _root_.GlobalTheory.GoodPrimes.good_primes R F h.lev
+  rw [(_root_.GlobalTheory.LevOp.level_operators (Yc D 0) (R.βY 0) (R.ΛY 0) _ (R.dat0 R.triv) hc Q (good_Y h hQ c)
     (fun PP hPP => hQ PP (Or.inl (hPP.resolve_right (Finset.notMem_empty _))))).2.1 SF d B]
   exact ⟨fun x => x.2, fun x => ⟨(hoff SF hSF Q).2 hQ, x⟩⟩
 
@@ -133,14 +134,14 @@ theorem isHeckeOpFull_iff_sphOp (h : Core R F) {SF} (hSF : IsSF R SF) (i : Fin D
     Hecke₂ (Wc D i) (levS _ (R.βW i) (R.datWp i R.triv)) (levChi _ (R.βW i) (R.datWp i R.triv)) SF Q d B ↔
       GlobalTheory.Hk3.SphOp (Wc D i) Q d B := by
   obtain ⟨c, hc⟩ := h.lev.βW i
-  obtain ⟨-, -, hoff, -⟩ := GlobalTheory.T.theta_lift_levels_good_primes_properties R F h.lev
-  rw [(GlobalTheory.T.level_operators_at_prime_off_level_datum (Wc D i) (R.βW i) (R.ΛW i) _ (R.datWp i R.triv) hc Q (one_pow_not_mem_height_one_asIdeal c)
+  obtain ⟨-, -, hoff, -⟩ := _root_.GlobalTheory.GoodPrimes.good_primes R F h.lev
+  rw [(_root_.GlobalTheory.LevOp.level_operators (Wc D i) (R.βW i) (R.ΛW i) _ (R.datWp i R.triv) hc Q (one_pow_not_mem_height_one_asIdeal c)
     (fun PP hPP => hQ PP (Or.inl (hPP.resolve_right (Finset.notMem_empty _))))).2.1 SF d B]
   exact ⟨fun x => x.2, fun x => ⟨(hoff SF hSF Q).2 hQ, x⟩⟩
 
 theorem good_of_hecke {V : HSp D} (h : Core R F) {SF} (hSF : IsSF R SF) {J : Set (GA D V)} {χ : GA D V → ℂ} {Q : Pl D.host.E} {d : List ℤ}
     {B : Finset (GA D V)} (hB : Hecke₂ V J χ SF Q d B) : Good R A.μ0 Q := by
-  obtain ⟨-, -, hoff, -⟩ := GlobalTheory.T.theta_lift_levels_good_primes_properties R F h.lev
+  obtain ⟨-, -, hoff, -⟩ := _root_.GlobalTheory.GoodPrimes.good_primes R F h.lev
   obtain ⟨e, f, ϖ, α, hO, -⟩ := hB
   exact (hoff SF hSF Q).1 hO
 
@@ -214,8 +215,8 @@ theorem count (h : Core R F) (hD : CuspDecomp D) (hM : MultEq R) (i : Fin D.R.m)
   obtain ⟨c, hc⟩ := h.lev.βY 0 (lt_of_lt_of_le two_pos D.R.two_le_m)
   obtain ⟨c', hc'⟩ := h.lev.βW i
   have hrk : (Yc D 0).rank = (Wc D i).rank := rank_zeroth_component_eq.trans (rank_weight_component_eq i).symm
-  obtain ⟨j, Φ, hΦ⟩ := GlobalTheory.T.exists_finiteAdelic_isometry_matching_frames (Yc D 0) (Wc D i) (R.βY 0) (R.ΛY 0) _ (R.βW i) (R.ΛW i) _ R.Pg hrk hc hc'
-    (GlobalTheory.T.typePlaces_not_pairwise_conjugate R.C.P R.Pg h.lev.Pg)
+  obtain ⟨j, Φ, hΦ⟩ := _root_.GlobalTheory.FinIsoExists.exists_isFinIso (Yc D 0) (Wc D i) (R.βY 0) (R.ΛY 0) _ (R.βW i) (R.ΛW i) _ R.Pg hrk hc hc'
+    (_root_.GlobalTheory.TypePlaces.not_isConjPl R.C.P R.Pg h.lev.Pg)
   have e1 : (goodPart R.θ M₀ (levS _ (R.βY 0) (R.dat0 P)) (levChi _ (R.βY 0) (R.dat0 P)) R.e0 ⊓
       partFull R.θ M₀ (levS _ (R.βY 0) (R.dat0 R.triv)) (levChi _ (R.βY 0) (R.dat0 R.triv)) SF a : Submodule ℂ (MMap M₀)) = _ :=
     GlobalTheory.CuspMult.CutFull.good_partFull_eq_killed R.θ M₀ (R.βY 0) (R.dat0 R.triv) R.eG
@@ -226,13 +227,13 @@ theorem count (h : Core R F) (hD : CuspDecomp D) (hM : MultEq R) (i : Fin D.R.m)
     GlobalTheory.CuspMult.CutFull.good_partFull_eq_killed R.θ (R.MW i (sg0 D A)) (R.βW i) (R.datWp i R.triv) R.eG
     (RealDat.eC (A := A) (sg0 D A)) P SF a rfl rfl (liftsW' h i)
   have e3 : RealDat.eC (A := A) (sg0 D A) = RealDat.eC (A := A) D.what₂.embLL := by rw [sign_at_base_place_eq_embedding R]
-  have hl := GlobalTheory.T.isometry_matches_parahoric_levels (Yc D 0) (Wc D i) (R.βY 0) (R.βW i) D.R.r D.R.t (r_le_Y 0) (r_le_rank_Wc i) R.Pg R.chi
+  have hl := _root_.GlobalTheory.LevTrans.levtrans (Yc D 0) (Wc D i) (R.βY 0) (R.βW i) D.R.r D.R.t (r_le_Y 0) (r_le_rank_Wc i) R.Pg R.chi
     (fun _ _ => 1) j Φ hΦ
   have e4 : killed ((finRep (R.MW i (sg0 D A))).comp Φ.toMulEquiv.toMonoidHom : Representation ℂ (GfC (Yc D 0)) _)
         (eqSet (Yc D 0) (R.βY 0) (R.dat0 R.triv) R.eG (RealDat.eC (A := A) D.what₂.embLL) P (∅ : Set Empty) Empty.elim Empty.elim Empty.elim) =
       killed (finRep (R.MW i (sg0 D A))) (eqSet (Wc D i) (R.βW i) (R.datWp i R.triv) R.eG
         (RealDat.eC (A := A) D.what₂.embLL) P (∅ : Set Empty) Empty.elim Empty.elim Empty.elim) :=
-    GlobalTheory.T.levelTypeHecke_killed_correspond_matching_iso (Yc D 0) (Wc D i) (R.βY 0) (R.βW i) D.R.r D.R.t (r_le_Y 0) (r_le_rank_Wc i) R.Pg R.chi (fun _ _ => 1) Φ R.eG _ P
+    _root_.GlobalTheory.CuspMult.EqTrans.killed_eqSet_comp (Yc D 0) (Wc D i) (R.βY 0) (R.βW i) D.R.r D.R.t (r_le_Y 0) (r_le_rank_Wc i) R.Pg R.chi (fun _ _ => 1) Φ R.eG _ P
       (∅ : Set Empty) Empty.elim Empty.elim Empty.elim _ _ hrk (fun κ => (hl κ).1) (fun κ => (hl κ).2) (fun P0 => P0.elim)
   have e5 := killed_union_comp (finRep (R.MW i (sg0 D A))) Φ.toMulEquiv e4
     (fun Q d B => Hecke₂ (Yc D 0) (levS _ (R.βY 0) (R.dat0 R.triv)) (levChi _ (R.βY 0) (R.dat0 R.triv)) SF Q d
@@ -242,8 +243,8 @@ theorem count (h : Core R F) (hD : CuspDecomp D) (hM : MultEq R) (i : Fin D.R.m)
   rw [e1] at f1 ⊢
   rw [e2, e3] at f2 ⊢
   erw [← e5] at f2 ⊢
-  refine GlobalTheory.T.finrank_killed_eq_of_equal_multiplicities _ _ _ (finRep M₀) _ _ _ _ (hD R.θ h.models.inf _ _ M₀)
-    (GlobalTheory.T.irreducibleAdmissibleDecomposable_comp_equiv _ _ _ _ _ Φ (hD R.θ h.models.inf _ _ (R.MW i (sg0 D A)))) ?_
+  refine _root_.GlobalTheory.RepCount.finrank_inf_killed_eq _ _ _ (finRep M₀) _ _ _ _ (hD R.θ h.models.inf _ _ M₀)
+    (_root_.GlobalTheory.CuspMult.isDecomp_comp_equiv _ _ _ _ _ Φ (hD R.θ h.models.inf _ _ (R.MW i (sg0 D A)))) ?_
     (fun x hx => isOpen_stab rfl rfl (killed_le_left _ _ _ hx)) (fun x hx => isOpen_stab rfl rfl (killed_le_left _ _ _ hx)) f1 f2
   intro W _ _ σ h1 h2 h3
   rw [homInto_comp]
@@ -302,7 +303,7 @@ theorem finrank_rel {s : ℕ} (hs : A.fam.Ok s) (hC : Core R F) (hX : GoodStable
     (levS _ (R.βY 0) (R.dat0 R.triv)) (levChi _ (R.βY 0) (R.dat0 (levPOf R.eG D.what₂.embLL P ψ)))
     (levChi _ (R.βY 0) (R.dat0 (levPOf R.eG D.what₂.embLL P ψ⁻¹))) (levChi _ (R.βY 0) (R.dat0 R.triv)) R.e0 R.e0 SF
     (fun Q d => c Q (dualLab d)) (fun k hk => star_levChi' P ψ hk) hχ0
-    (gaL_star (L := R.dat0 R.triv) R.eG _ rfl rfl (GlobalTheory.T.star_idemOf_coeff_eq_self D.what₂.embLL A.X hs.irr hX))
+    (gaL_star (L := R.dat0 R.triv) R.eG _ rfl rfl (_root_.GlobalTheory.CuspMult.idemOf_coeff_real D.what₂.embLL A.X hs.irr hX))
   have hU : partFull R.θ M₀ (levS _ (R.βY 0) (R.dat0 R.triv)) (levChi _ (R.βY 0) (R.dat0 R.triv)) SF
         (fun Q d => star (c Q (dualLab d))) =
       partFull R.θ M₀ (levS _ (R.βY 0) (R.dat0 R.triv)) (levChi _ (R.βY 0) (R.dat0 R.triv)) SF c := by

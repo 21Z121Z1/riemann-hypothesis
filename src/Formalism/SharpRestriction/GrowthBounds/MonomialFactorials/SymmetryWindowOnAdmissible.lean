@@ -1,7 +1,7 @@
 module
 
 public import Formalism.SharpRestriction.GrowthBounds.MonomialFactorials.SymmetryWindowLevelDimOnAdmissible
-public import Formalism.SharpRestriction.GrowthBounds.MonomialFactorials.LvlDimCondition
+public import Formalism.SharpRestriction.GrowthBounds.MonomialFactorials.Bundle0020
 
 @[expose] public section
 

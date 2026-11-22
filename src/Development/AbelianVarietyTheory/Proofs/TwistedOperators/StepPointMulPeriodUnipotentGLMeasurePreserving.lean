@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ValuationGdetKapAt
-public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SecondCountableLocal
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0609
+public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Bundle0041
 public import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IntegralCompBlocks
 public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.PadicIsNonarchimedeanLocalField
 

@@ -1,16 +1,16 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.DatVtEq
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0357
 public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExtLvlFormMemCutSp
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.TranslatedStdLatticeLatticeComparisonRational
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.StdFrameLevelSubgroupBoundedOpenHyperspecialStatement
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.MemRationalGLOfUnitaryGroupGramUnitGram
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0414
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.StdFrameLevelSubgroupBoundedOpenHyperspecial
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0373
 public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.LeExpNegOneOfLtOne
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.DefiniteLevelFormsIffStdGroupTypeSpaceStatement
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.AdelicFormFunctionValuesMemCoefficientLatticeStatement
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0405
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0416
 public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.HeckeDoubleCosetOperatorsStandardFacts
-public import Formalism.LocalToGlobal.Columns.CoefModAt
+public import Formalism.LocalToGlobal.Columns.Bundle0012
 
 @[expose] public section
 
@@ -281,7 +281,7 @@ theorem tN_core {V : HSp D} {c : CoefA V} (P : principalLevelFrame.RowPsi V V.ra
         x ∈ S.lvlNab act P₀ ψ → ∃ d : 𝓞 D.what₂.LL, d ∉ 𝔴.asIdeal ∧ d • x' ∈ S.lvlNab act P₀ ψ := by
   obtain ⟨-, hspan, hrat, hnab, hy, hinj⟩ := GlobalTheory.MtIn.lvlForm_adelic_basis _ _ _ _ _ S _ _ _ _ pres _ _ G₀ act tie P₀ ψ
   have hbij := (GlobalTheory.MtInRat.toGf_bij_ratIso D V P hg hU).1
-  have hvals := GlobalTheory.T.adelicFormFunction_values_mem_coefficientLattice D V hV c S _ _ pres lam c0 pair del hmap hcoef hlev hint (lvlForm S act P₀ ψ x)
+  have hvals := _root_.GlobalTheory.MtIn.ext_vals D V hV c S _ _ pres lam c0 pair del hmap hcoef hlev hint (lvlForm S act P₀ ψ x)
   have hF0 := ext_mem_span S act P₀ ψ pres x
   rw [hspan] at hF0
   have hT := hTS _ ((htype _).1 hF0)
@@ -343,7 +343,7 @@ theorem tN_lvlForm : ∀ (D : D7) (V : HSp D) (hr : D.R.r ≤ V.rank) (Pg Q : Fi
   exact tN_core P hg hV hU S act pres tie P₀ ψ₀⁻¹ lam c0 pair del hmap hcoef (hLat_lev V hV _) hint _ _
     (GlobalTheory.T.definiteLevelForms_iff_stdGroupTypeSpace D V hr Pg Q chi xi c P e hg hU hR G₀ tie.red eG P₀ ψ₀ hred) s ϖ k hϖ
     (GlobalTheory.HeckeStdFacts.heckeStdPlain D.host.E V.rank (NG.AlgWt.mk c.W (wtRep c e) halg hirr) _ _ B
-      (GlobalTheory.T.stdFrameLevelSubgroup_bounded_open_hyperspecial D V.rank _).2.1 hB s ϖ k hs hϖ hk1 hk2).1 x
+      (_root_.GlobalTheory.MtIn.OpenLev.stdJ_open D V.rank _).2.1 hB s ϖ k hs hϖ hk1 hk2).1 x
 
 end GlobalTheory.MtInHecke
 

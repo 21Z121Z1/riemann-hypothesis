@@ -2,13 +2,13 @@ module
 
 public import Mathlib
 public import Development.WeilBound.RepresentationTheoryGL.RegularisedSiegelWeil.SingularNullSets.WeakApproximationFinitePlace
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FourierCoefficientConjugation
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.HermitianBlockDiagonalNormalForm
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.RankDirectSumHermitianLt
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ParabolicUnipotentLeviFactor
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SectionLeftInvariantRationalParabolic
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CoefficientUnipotentLeviInvariance
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ResEtaOfIsWeilSch
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0678
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0679
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0680
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0636
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0658
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0719
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle2732
 
 @[expose] public section
 

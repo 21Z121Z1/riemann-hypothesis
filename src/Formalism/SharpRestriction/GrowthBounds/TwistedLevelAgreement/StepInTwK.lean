@@ -1,6 +1,6 @@
 module
 
-public import Formalism.SharpRestriction.GrowthBounds.ChartComparison.LocTiesOf
+public import Formalism.SharpRestriction.GrowthBounds.ChartComparison.Bundle0002
 public import Formalism.SharpRestriction.GrowthBounds.ChartComparison.BadQNotOver
 public import Formalism.LocalToGlobal.GroupLattices.LevelCharts.LevelWithoutExtraPlaces
 

@@ -1,7 +1,7 @@
 module
 
 public import Formalism.LocalToGlobal.NumberFieldFamilies.ThetaCF
-public import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.SignatureConjugationInvariant
+public import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Bundle0003
 
 @[expose] public section
 

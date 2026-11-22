@@ -4,8 +4,8 @@ public import Mathlib
 public import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.IwahoriTypeSupport.TorusScalar
 public import Development.AutomorphicArithmetic.ThetaCorrespondence.FockModels.GlnMixed
 public import Development.WeilBound.CoreStatements.TotallyDisjointProducts.SLGLProductIrreducibility.TdpFill
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MoyPrasadJacquetIso
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FixedNeBotOfIsSubquotient
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0338
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0745
 public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ApplyMemTwKerOfNormalizer
 
 @[expose] public section

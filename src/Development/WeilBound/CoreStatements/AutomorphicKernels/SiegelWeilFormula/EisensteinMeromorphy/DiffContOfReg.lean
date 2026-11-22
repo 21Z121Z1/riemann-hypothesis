@@ -1,6 +1,6 @@
 module
 
-public import Development.WeilBound.ThetaLifts.LatticeBasics.RegOfBound
+public import Development.WeilBound.ThetaLifts.LatticeBasics.Bundle0012
 public import Development.AbelianVarietyTheory.Definitions.Foundations.EventuallyEqOfIsPreconnected
 
 @[expose] public section

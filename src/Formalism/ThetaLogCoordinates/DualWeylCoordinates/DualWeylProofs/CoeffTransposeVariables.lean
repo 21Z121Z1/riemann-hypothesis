@@ -1,6 +1,6 @@
 module
 
-public import Formalism.ThetaLogCoordinates.DualWeylCoordinates.DualWeylProofs.TransposeVariables
+public import Formalism.ThetaLogCoordinates.DualWeylCoordinates.DualWeylProofs.Bundle0001
 public import Formalism.GradedWeylDivisibility.FockSpaceTableaux.FockQHW
 
 @[expose] public section

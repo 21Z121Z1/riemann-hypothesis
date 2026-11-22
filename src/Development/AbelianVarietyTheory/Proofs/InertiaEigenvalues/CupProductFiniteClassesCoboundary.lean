@@ -5,9 +5,9 @@ public import Formalism.LocalRingCardinality.RhoDetPrimeEqMuTildeMulChiPow
 public import Formalism.LocalRingCardinality.AdicCompletionLocal.LocTied
 public import Formalism.SharpRestriction.LevelLetterCocycles.LocalSituation
 public import Formalism.SharpRestriction.LevelLetterCocycles.LocCoh
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CrystallineCoboundaryLift
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.TensorFundamentalExactSequenceCrystalline
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ContCoreTied
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0358
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0590
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0318
 
 @[expose] public section
 

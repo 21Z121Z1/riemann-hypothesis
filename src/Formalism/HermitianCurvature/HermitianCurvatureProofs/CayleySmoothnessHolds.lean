@@ -1,6 +1,6 @@
 module
 
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.RightTypeAction0
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0195
 
 @[expose] public section
 

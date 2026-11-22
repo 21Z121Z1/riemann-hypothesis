@@ -5,8 +5,8 @@ public import Formalism.LocalRingCardinality.Lemmas
 public import Formalism.SharpRestriction.InertJacobiLevels.AsmIface
 public import Formalism.LocalToGlobal.GlobalTheory.IsResidueClassZero
 public import Formalism.SharpRestriction.GrowthBounds.SmallOrderPrimes
-public import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.PairRowIffQdRows
-public import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.DisjointExceptional
+public import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.Bundle0002
+public import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.Bundle0003
 public import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.ThinScalesIffHostBound
 public import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.LogCondLeThree
 public import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.AuxiliaryPrimeMemAvoidedPrimes

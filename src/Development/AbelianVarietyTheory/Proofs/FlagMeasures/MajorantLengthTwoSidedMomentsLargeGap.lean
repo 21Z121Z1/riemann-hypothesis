@@ -2,26 +2,24 @@ module
 
 public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.UniqGapOfUniq
-public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.OnePlaceKF
+public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.Bundle0010
 public import Development.AbelianVarietyTheory.Definitions.Jets.SumIoPr
 public import Formalism.SharpRestriction.CuspSpanNormBounds.LeadMinorK
 public import Development.AbelianVarietyTheory.Statements.CuspFrameWeights.DiscreteSpectrumKFiniteDecomposition
-public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.DegVand
-public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.IsNormalFormStabilizerMeasure
 public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.MomAllP
-public import Formalism.LocalRingCardinality.DataTies
-public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.AbsOfRange
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.LintegralTranslate
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.InvMomentOfBessel
-public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.NumericalFamilyShapeGaps
-public import CompanionTheory.AutomorphicTheory.PieriRules.ThetaBesselIsometries.FamilySetupBesselGrowthStatement
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.FamiliesHaveLargeGapOfNumericalHypotheses
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.NormalizedBesselMapsAnyScalePieriConstants
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.BesselMapsProportionalDiscreteSeriesLargeGap
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.AmplitudeLocalDataMomentPieriHypothesesStatement
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.OneMajorantLengthMomentLowestKTypeStatement
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsKFiniteBesselPeriodNeZeroGapStatement
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.InverseMajorantLengthMomentLargeGapStatement
+public import Formalism.LocalRingCardinality.Bundle0003
+public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.Bundle0013
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0436
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0437
+public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0050
+public import CompanionTheory.AutomorphicTheory.PieriRules.ThetaBesselIsometries.Bundle0013
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0406
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0409
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0405
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0415
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0414
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0407
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0416
 
 @[expose] public section
 
@@ -97,12 +95,12 @@ theorem moment_of_bessel_gap (hH : GlobalTheory.GapIn.Hyp) {k r : ℕ} {Wp : Typ
     obtain ⟨S, hS1, hS2, hS3⟩ := hwK
     exact ⟨S, hS1, by rw [hvw]; exact S.smul_mem _ hS2, hS3⟩
   have hws : w ∈ (R ν).sm := hTK _ (hKT _ hwK)
-  obtain ⟨v₁, hv₁, hl⟩ := GlobalTheory.T.exists_kFinite_besselPeriod_ne_zero_gap hH k r _ _ (h / 2) (R ν) Wp z π u μW μN μG νq B (l ν) v hDS hgap hOK hSide hB
+  obtain ⟨v₁, hv₁, hl⟩ := _root_.GlobalTheory.BesselPeriodNonzeroGap.exists_kFin_period_ne_zero hH k r _ _ (h / 2) (R ν) Wp z π u μW μN μG νq B (l ν) v hDS hgap hOK hSide hB
     hvK h0 ht hBe
   have hnz : NzOn (R ν) (l ν) := ⟨v₁, hTK _ (hKT _ hv₁), hl⟩
   obtain ⟨c, hc⟩ := GlobalTheory.GapLine.bessel_line_gap hH k r _ _ (R ν) Wp z π u μW μN μG νq (l ν) B hDG hSide hBe.1 hnz hB
   have hmass := ((Gp91.GlobalTheory.T.bessel_functional_l2_bound_and_isometry hH.1 k r Wp lam u b bv ga h q0 z π μW μN μG νq R l dg hSG ν hν).2 hnz).2 w hws
-  have hmom := GlobalTheory.T.oneMajorantLength_moment_lowestKType hH k r Wp lam u b bv ga h q0 z π μW μN μG νq R l dg hS ν q h1 h2 w hwl a
+  have hmom := _root_.GlobalTheory.MomOneGap.moment_one_gap hH k r Wp lam u b bv ga h q0 z π μW μN μG νq R l dg hS ν q h1 h2 w hwl a
   obtain ⟨-, -, -, -, hW, hN, hG, hq⟩ := hSide
   obtain ⟨m0, m1⟩ := Formalism.FourierDecayAlt.P.DDSmoothness.muSof_facts hW hN
   have hae := Formalism.FourierDecayAlt.P.DDSmoothness.ae_UH_of_quot hG.2.2.1 m0 m1 hq
@@ -168,12 +166,12 @@ theorem inv_moment_of_bessel_gap (hH : GlobalTheory.GapIn.Hyp) {k r : ℕ} {Wp :
     obtain ⟨S, hS1, hS2, hS3⟩ := hwK
     exact ⟨S, hS1, by rw [hvw]; exact S.smul_mem _ hS2, hS3⟩
   have hws : w ∈ (R ν).sm := hTK _ (hKT _ hwK)
-  obtain ⟨v₁, hv₁, hl⟩ := GlobalTheory.T.exists_kFinite_besselPeriod_ne_zero_gap hH k r _ _ (h / 2) (R ν) Wp z π u μW μN μG νq B (l ν) v hDS hgap hOK hSide hB
+  obtain ⟨v₁, hv₁, hl⟩ := _root_.GlobalTheory.BesselPeriodNonzeroGap.exists_kFin_period_ne_zero hH k r _ _ (h / 2) (R ν) Wp z π u μW μN μG νq B (l ν) v hDS hgap hOK hSide hB
     hvK h0 ht hBe
   have hnz : NzOn (R ν) (l ν) := ⟨v₁, hTK _ (hKT _ hv₁), hl⟩
   obtain ⟨c, hc⟩ := GlobalTheory.GapLine.bessel_line_gap hH k r _ _ (R ν) Wp z π u μW μN μG νq (l ν) B hDG hSide hBe.1 hnz hB
   have hmass := ((Gp91.GlobalTheory.T.bessel_functional_l2_bound_and_isometry hH.1 k r Wp lam u b bv ga h q0 z π μW μN μG νq R l dg hSG ν hν).2 hnz).2 w hws
-  have hmom := GlobalTheory.T.inverseMajorantLength_moment_largeGap hH k r Wp lam u b bv ga h q0 z π μW μN μG νq R l dg hS hT ν q hν h2 w hwl a
+  have hmom := _root_.GlobalTheory.InvLenMomentGap.inv_len_moment_gap hH k r Wp lam u b bv ga h q0 z π μW μN μG νq R l dg hS hT ν q hν h2 w hwl a
   obtain ⟨-, -, -, -, hW, hN, hG, hq⟩ := hSide
   obtain ⟨m0, m1⟩ := Formalism.FourierDecayAlt.P.DDSmoothness.muSof_facts hW hN
   have hae := Formalism.FourierDecayAlt.P.DDSmoothness.ae_UH_of_quot hG.2.2.1 m0 m1 hq
@@ -224,7 +222,7 @@ theorem two_sided_moments_gap : GlobalTheory.GapIn.Hyp → ∀ Cg cb Cu cT CT C0
   have hTT := hypTT_self D large₂ C' Cl Cg cb Cu cT CT C0 hZ w
   have hb1 : 1 ≤ large₂.sc.b := by have := Real.add_one_le_exp 1; linarith
   have hb0 : 0 ≤ large₂.sc.b := by linarith
-  obtain ⟨hNum, -, heps⟩ := GlobalTheory.T.momentPieriNumerics_of_sizeHyps D large₂ C' Cl Cg cb Cu cT CT C0 hZ hCl τ w (uOne D w τ) (fun i => by
+  obtain ⟨hNum, -, heps⟩ := _root_.GlobalTheory.SizeNum.num_of_size D large₂ C' Cl Cg cb Cu cT CT C0 hZ hCl τ w (uOne D w τ) (fun i => by
     have := i.isLt
     simp only [uOne]
     rw [dite_eq_left ⟨by omega, by omega⟩]; rfl)
@@ -260,7 +258,7 @@ theorem two_sided_moments_gap : GlobalTheory.GapIn.Hyp → ∀ Cg cb Cu cT CT C0
   set c : ℝ := 2 * D.host.ka / ((D.host.g 0 : ℝ) * (D.host.g 1 : ℝ)) with hc
   have hc2 : c = 2 * (Real.pi / D.host.v / gg D) := by rw [hc, hka, gg]; ring
   have hc0 : 0 < c := by rw [hc2]; have := Real.pi_pos; positivity
-  obtain ⟨t, htG, htN, htz, hts⟩ := GlobalTheory.T.exists_unitaryTorus_scale_besselCharacter D.R.k D.R.rS (c : ℂ) (by exact_mod_cast hc0.ne')
+  obtain ⟨t, htG, htN, htz, hts⟩ := _root_.GlobalTheory.TorusScale.exists_torus_scale D.R.k D.R.rS (c : ℂ) (by exact_mod_cast hc0.ne')
   choose s hs0 hs1 hs2 hs3 using hts
   have htd : IsUnit t.det := Matrix.isUnit_det_of_right_inverse (Formalism.FourierDecayAlt.P.MatrixMultiplicationContinuity.uh_inv htG).2.1
   obtain ⟨U, U', l, l', dg, hS, -⟩ := GlobalTheory.T.amplitudeLocalData_momentPieriHypotheses hH D large₂ C' Cl Cg cb Cu cT CT C0 hZ hCl τ w w 1 W hTT one_pos hW t htG

@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.ModuliSpaces.SectionsHaveFiniteDimension
+public import Development.AbelianVarietyTheory.Definitions.ModuliSpaces.Bundle0001
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.UniformisationConclusion
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.HeckeKer
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.Bundle0003
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.IsHolPeriods
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.UnifUniqSt
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.BCTools
@@ -11,10 +11,9 @@ public import Development.AbelianVarietyTheory.Definitions.ThetaMetrics.MemNonze
 public import Development.AbelianVarietyTheory.Proofs.ThetaFamilyOrigin.ExistsMulMemAdjoinOfMemPowRange
 public import Development.AbelianVarietyTheory.Proofs.ThetaFamilyOrigin.RingKrullDimQuotientLeOne
 public import Development.AbelianVarietyTheory.Proofs.ThetaFamilyOrigin.ExistsSectionRing
-public import Development.AbelianVarietyTheory.Proofs.ThetaFamilyOrigin.RingKrullDimOfEtaleMvPolynomial
-public import Development.AbelianVarietyTheory.Proofs.ThetaFamilyOrigin.IsIntegralOfIsAbelianSchemeField
+public import Development.AbelianVarietyTheory.Proofs.ThetaFamilyOrigin.Bundle0001
 public import Development.AbelianVarietyTheory.Proofs.ThetaFamilyOrigin.CardZerosOnTorsionCosetLe
-public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.MulAPullbackIsoPowSqSymmetricAbelianVarietyStatement
+public import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Bundle0174
 
 @[expose] public section
 
@@ -306,7 +305,7 @@ theorem card_zeros_on_torsion_le_of_symmetric_veryAmple :
     obtain ⟨l, hl, c, hc⟩ := hgrow n hn
     exact ⟨l, hl, c, fun t => (hc t).exists⟩
   · obtain ⟨h', hh'⟩ := exists_sec_nonzeroLocus_eq_of_lbIso (isLB_lbPow hM (k ^ 2)) (pull_isLB hM _)
-      (LBIso.symm (GlobalTheory.T.mulA_pullback_iso_pow_sq_symmetric_abelianVariety K P M k hM hsym)) (secPull (secOfPowOne h) (Out.mulA P.A k).left)
+      (LBIso.symm (_root_.GlobalTheory.MulSym.lbIso_mulPull_of_symB K P M k hM hsym)) (secPull (secOfPowOne h) (Out.mulA P.A k).left)
     refine ⟨secCast (Nat.one_mul _).symm h', fun z => ?_⟩
     rw [nonzeroLocus_secCast, hh', nonzeroLocus_secPull, nonzeroLocus_secOfPowOne]
     beta_reduce

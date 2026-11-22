@@ -4,10 +4,10 @@ public import Mathlib
 public import Development.AbelianVarietyTheory.Definitions.Foundations.ThetaSeriesTies
 public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.TwistTrivialOnRational
 public import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsDetOfMemSt
-public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.WeightOnDatum
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsAlgebraMapOfSigRFixed
-public import Development.AbelianVarietyTheory.Counterexamples.JetSurvey.OrientationExclusive
-public import Formalism.SharpRestriction.GenusPolyhedralBounds.RelativeIndexClassSets.WeightedPrimeSumBound
+public import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Bundle0137
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0071
+public import Development.AbelianVarietyTheory.Counterexamples.JetSurvey.Bundle0006
+public import Formalism.SharpRestriction.GenusPolyhedralBounds.RelativeIndexClassSets.Bundle0002
 
 @[expose] public section
 

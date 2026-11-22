@@ -1,7 +1,7 @@
 module
 
-public import Formalism.EllipticTorsion.FormalGroupPointsParametrisation
-public import Formalism.EllipticTorsion.EllipticTorsionProofs.WSeries
+public import Formalism.EllipticTorsion.Bundle0004
+public import Formalism.EllipticTorsion.EllipticTorsionProofs.Bundle0001
 
 @[expose] public section
 

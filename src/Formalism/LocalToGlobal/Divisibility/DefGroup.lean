@@ -3,7 +3,7 @@ module
 public import Formalism.LocalToGlobal.HermitianColumns.InLocalDiscriminantKernel
 public import Formalism.SatakeDualWeyl.DefsCS
 public import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.CsGlob
-public import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.CsApprox
+public import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Bundle0009
 public import Formalism.LocalRingCardinality.SpanPowerMembership.Spaces
 
 @[expose] public section

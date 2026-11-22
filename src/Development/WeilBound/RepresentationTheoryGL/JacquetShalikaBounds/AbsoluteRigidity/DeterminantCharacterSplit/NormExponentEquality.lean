@@ -1,8 +1,8 @@
 module
 
 public import Development.WeilBound.RepresentationTheoryGL.JacquetShalikaBounds.AbsoluteRigidity.CauchyLoc
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsChiDetSplitCentre
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CuspidalEqTwistNormalised
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle1178
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0495
 
 @[expose] public section
 

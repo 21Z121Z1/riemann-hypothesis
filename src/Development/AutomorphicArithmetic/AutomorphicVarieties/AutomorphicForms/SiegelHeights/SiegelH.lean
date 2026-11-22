@@ -1,8 +1,7 @@
 module
 
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.SiegelHeights.SiegelHeight
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.AdelicNormVecMulGeOfHeight
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.AdelicNormDetLeHeightPow
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.Bundle0002
 public import GroundTheory.AutomorphicForms.CuspidalDiscreteness.CuspFormsHeight
 
 @[expose] public section

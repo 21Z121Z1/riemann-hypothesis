@@ -1,6 +1,6 @@
 module
 
-public import Formalism.LocalToGlobal.GroupLattices.TiedFamilies.TieLat
+public import Formalism.LocalToGlobal.GroupLattices.TiedFamilies.Bundle0006
 
 @[expose] public section
 

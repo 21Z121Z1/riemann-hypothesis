@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import GroundTheory.GlobalFields.ComplexMultiplication.EllipticFunctions
-public import GroundTheory.GlobalFields.ComplexMultiplication.EllipticConstant
+public import GroundTheory.GlobalFields.ComplexMultiplication.Bundle0001
+public import GroundTheory.GlobalFields.ComplexMultiplication.Bundle0002
 
 @[expose] public section
 

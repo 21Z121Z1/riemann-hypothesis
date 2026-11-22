@@ -1,6 +1,6 @@
 module
 
-public import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutJAPolyRadialCut
+public import Formalism.HermitianCurvature.HermitianCurvatureProofs.Bundle0094
 public import Formalism.HermitianCurvature.HermitianCurvatureProofs.TheSectionStab
 public import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutJASSnGeomAtGq
 public import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutJAPRhoFrameLoc

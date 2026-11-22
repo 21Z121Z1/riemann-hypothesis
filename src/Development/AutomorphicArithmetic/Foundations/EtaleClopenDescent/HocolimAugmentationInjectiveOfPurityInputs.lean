@@ -1,7 +1,7 @@
 module
 
 public import Mathlib
-public import Development.EtaleCohomology.CohomologicalPurity.LeafAugInjPf
+public import Development.EtaleCohomology.CohomologicalPurity.Bundle0025
 
 @[expose] public section
 

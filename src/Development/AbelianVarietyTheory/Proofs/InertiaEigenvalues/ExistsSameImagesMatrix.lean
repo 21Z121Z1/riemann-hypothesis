@@ -1,8 +1,8 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.MemSpanIndicatorLowerSetsFinitePoset
-public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsGLOfSpanRangeEqLocalRing
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0033
+public import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Bundle0014
 
 @[expose] public section
 

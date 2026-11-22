@@ -1,7 +1,7 @@
 module
 
-public import Development.EtaleCohomology.DivisorCycles.CycleCount
-public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.PowEig
+public import Development.EtaleCohomology.DivisorCycles.Bundle0001
+public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0050
 
 @[expose] public section
 

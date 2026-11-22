@@ -1,24 +1,23 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Statements.CuspFrameWeights.ConvolutionSmoothL2
+public import Development.AbelianVarietyTheory.Statements.CuspFrameWeights.Bundle0001
 public import Development.AbelianVarietyTheory.Statements.CuspFrameWeights.DiscreteSpectrumKFiniteDecomposition
 public import Formalism.HarderNarasimhan.ShiftInvariance
-public import Development.AbelianVarietyTheory.Statements.CuspFrameWeights.EigenfunctionFiniteCoefficients
 public import Formalism.RealPlaceAnalysis.FinalF
 public import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.HermitianFormUnitaryOneOne
 public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.NormPosOfIsUnit
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsMeasurableCutoffFibreIntegralOneSubgroupStatement
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.FixedVectorDifferentiableStatement
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.OneParameterConjugationBoundStatement
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.TorusModulusUnipotentRadicalUnitaryGroupStatement
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.UnitaryRepMatrixCoefficientBoundStatement
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.CoeffEqZeroOfLipschitzUnitaryFlowDecayStatement
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.IsotropicSplitTorusIwasawaUnitaryGroupStatement
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.HaarSubgroupBiInvariantStatement
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.UnipotentRadicalVolumeGrowthStatement
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.DecayOfMemSpan
-public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.SpanDecay
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0154
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0160
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.OneParameterConjugationBound
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.TorusModulusUnipotentRadicalUnitaryGroup
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.UnitaryRepMatrixCoefficientBound
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0155
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.IsotropicSplitTorusIwasawaUnitaryGroup
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0183
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0173
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0002
+public import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Bundle0013
 
 @[expose] public section
 
@@ -312,7 +311,7 @@ theorem form_zero {ρ : G → (H →L[ℂ] H)} (hρ : IsURep ρ) {D : G → ℝ}
   intro v hv
   rw [← hI ⟨v, hv⟩ ⟨v, hv⟩]
   obtain ⟨K, hK0, hK⟩ := exp_sub_one_sq_le (-(κ / 2))
-  refine GlobalTheory.T.coeff_eq_zero_of_lipschitz_unitary_flow_decay V I U (2 * K * (|C₀| / r) + 2 * K) ⟨v, hv⟩ hpos ?_ ?_ ?_ ?_ ?_
+  refine _root_.GlobalTheory.LipFlow.coeff_eq_zero V I U (2 * K * (|C₀| / r) + 2 * K) ⟨v, hv⟩ hpos ?_ ?_ ?_ ?_ ?_
   · ext x
     simp [hU, hR, ha0, hρ.1]
   · intro s t
@@ -405,17 +404,17 @@ theorem constant_term_zero : ∀ (n : ℕ) (ε : Fin n → Bool) (W : Submodule 
   have hc0 : 0 ≤ c := by linarith
   have hc8 : 8 * (n : ℝ) * rkR ε < c := by linarith
   obtain ⟨β, hβ, hβt, hβ1⟩ := GlobalTheory.T.exists_measurable_cutoff_fibre_integral_one_subgroup (UJ ε) (nwSub ε W) ν (isClosed_NW ε W) hν
-  obtain ⟨a, Hm, hHm, haH, ha, ha', -, hiw⟩ := GlobalTheory.T.isotropic_splitTorus_iwasawa_unitaryGroup n ε W hW
-  obtain ⟨κ, hκ, hmod⟩ := GlobalTheory.T.torus_modulus_unipotentRadical_unitaryGroup n ε W ν hW hν a Hm hHm haH ha fun s m hm => (ha' s m hm).1
-  obtain ⟨L, hL⟩ := GlobalTheory.T.hasDerivAt_orbit_and_decay_of_decay n ε H σ α w hσ hα hαc hfix
-  obtain ⟨C₀, hC₀⟩ := GlobalTheory.T.one_parameter_conjugation_bound n ε W ν hW hν β hβ hβt hβ1 a Hm hHm haH hiw κ hmod H σ d c w L hσ hd hc8
+  obtain ⟨a, Hm, hHm, haH, ha, ha', -, hiw⟩ := _root_.GlobalTheory.IsoTorus.split_torus n ε W hW
+  obtain ⟨κ, hκ, hmod⟩ := _root_.GlobalTheory.Dec.TorusModulus.torus_modulus n ε W ν hW hν a Hm hHm haH ha fun s m hm => (ha' s m hm).1
+  obtain ⟨L, hL⟩ := _root_.GlobalTheory.GardingVec.fixed_vector_differentiable n ε H σ α w hσ hα hαc hfix
+  obtain ⟨C₀, hC₀⟩ := _root_.GlobalTheory.TorusLip.torus_lipschitz n ε W ν hW hν β hβ hβt hβ1 a Hm hHm haH hiw κ hmod H σ d c w L hσ hd hc8
     fun X hX => (hL X hX).1
-  have hright := (GlobalTheory.T.haar_subgroup_bi_invariant n ε W ν hW hν).1
-  have hvol := (GlobalTheory.T.unipotentRadical_volume_growth n ε W ν hW hν).2
+  have hright := (_root_.GlobalTheory.UnipUnimod.unimodular_NW n ε W ν hW hν).1
+  have hvol := (_root_.GlobalTheory.RadVol.radical_volume_growth n ε W ν hW hν).2
   let V : Submodule ℂ H := Submodule.span ℂ (Set.range fun g => ρ g w)
   have hVd : ∀ v ∈ V, ∀ u ∈ V, Decays ρ D c v u := decays_orbit hρ hc0 hD hdec
   have hwV : w ∈ V := Submodule.subset_span ⟨1, by simp [hρ.1]⟩
-  have hnorm := fun v (hv : v ∈ V) => GlobalTheory.T.unitary_rep_matrix_coefficient_bound n ε W ν hW hν β hβ hβt hβ1 H σ d c w v v hσ hd hc8
+  have hnorm := fun v (hv : v ∈ V) => _root_.GlobalTheory.Dec.ConstTermNorm.constTerm_inner n ε W ν hW hν β hβ hβt hβ1 H σ d c w v v hσ hd hc8
     (hVd v hv w hwV) (hVd v hv w hwV) (hVd v hv v hv)
   have ha0 : a 0 = 1 := by
     refine Subtype.ext (Units.ext ?_)

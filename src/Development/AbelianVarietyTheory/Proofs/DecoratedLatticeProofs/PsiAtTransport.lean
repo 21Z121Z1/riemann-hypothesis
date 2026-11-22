@@ -1,12 +1,12 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.SplitPart
-public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.CongAt
+public import Development.AbelianVarietyTheory.Definitions.LatticeFrames.Bundle0023
+public import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Bundle0286
 public import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.MemPrinCongOfSm
 public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.LastTwoStepsGuarded
 public import Development.AbelianVarietyTheory.Proofs.SatakeParameters.SmulCompSmul
-public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.BaseFieldsPrimesOk
+public import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Bundle0117
 
 @[expose] public section
 

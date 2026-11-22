@@ -2,12 +2,11 @@ module
 
 public import Mathlib
 public import Formalism.LocalToGlobal.Columns.ColForms
-public import Formalism.LocalToGlobal.Columns.ColFormsLemmas
-public import Formalism.LocalToGlobal.Columns.ScaledRamifiedLattice
+public import Formalism.LocalToGlobal.Columns.Bundle0004
 public import Formalism.LocalToGlobal.Columns.RowForms
-public import Formalism.LocalToGlobal.Columns.RowFormsSym
+public import Formalism.LocalToGlobal.Columns.Bundle0005
 public import Formalism.LocalToGlobal.Columns.CoefModB
-public import Formalism.SizeWindowBrackets.SlopesHypothesisFinitePlaces
+public import Formalism.SizeWindowBrackets.Bundle0003
 
 @[expose] public section
 

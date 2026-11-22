@@ -1,7 +1,7 @@
 module
 
 public import Formalism.LocalToGlobal.InertKernelTheory.ScalG
-public import Formalism.LocalToGlobal.InertKernelTheory.FrameInt
+public import Formalism.LocalToGlobal.InertKernelTheory.Bundle0013
 public import Formalism.LocalToGlobal.PairingIndexBounds.OrthogonalChartLevels.FrecAt
 public import Formalism.LocalToGlobal.PairingIndexBounds.OrthogonalChartLevels.SameChart
 

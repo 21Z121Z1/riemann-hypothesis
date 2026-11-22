@@ -2,7 +2,7 @@ module
 
 public import Mathlib
 public import Formalism.SharpRestriction.LevelLetterCocycles.QuotientImageDivisibility.ExpCritPOf
-public import Formalism.SharpRestriction.LevelLetterCocycles.QuotientImageDivisibility.LemKD
+public import Formalism.SharpRestriction.LevelLetterCocycles.QuotientImageDivisibility.Bundle0012
 
 @[expose] public section
 

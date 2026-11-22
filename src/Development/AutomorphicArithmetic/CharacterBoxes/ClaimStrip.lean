@@ -1,6 +1,6 @@
 module
 
-public import Development.AutomorphicArithmetic.CharacterBoxes.HalfPlane
+public import Development.AutomorphicArithmetic.CharacterBoxes.Bundle0001
 
 @[expose] public section
 

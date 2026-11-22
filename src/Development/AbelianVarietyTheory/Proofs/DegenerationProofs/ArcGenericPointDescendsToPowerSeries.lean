@@ -6,13 +6,14 @@ public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeo
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.RigIsoCongr
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.IsMonHomOfMul
 public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.UnifUniqSt
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.IsNsmul
-public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.QkToAkU
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.Bundle0005
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.Bundle0006
 public import Development.AbelianVarietyTheory.Definitions.Degenerations.AdmissiblePadicIntMaximalIdeal
 public import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.ExistsUniqueFactorOfIsAlgClosed
-public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ValuationExtension
-public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ExistsCompleteDvrFiniteSubalgebra
-public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ModelPointsEqOfSameDegenerationDataStatement
+public import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.Bundle0043
+public import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.Bundle0011
+public import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ModelPointsEqOfSameDegenerationData
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.DiscreteValuationRings.TwistBCPf
 
 @[expose] public section
 
@@ -287,7 +288,7 @@ theorem point_eq (h1 : Laws) (h2 : Laws2) (h3 : Laws3) (h4 : Laws4) (h5 : Laws5)
   obtain ⟨χ, y, j, s, p, d⟩ := key A₁ α₁ ψ₁ ρ₁ χ₁ ka₁ e₁ hA₁ i₁ a₁ r₁ s₁ p₁ d₁ he₁
   obtain ⟨χ', y', j', s', p', d'⟩ := key A₂ α₂ ψ₂ ρ₂ χ₂ ka₂ e₂ hA₂ i₂ a₂ r₂ s₂ p₂ d₂ he₂
   have := hW.2.2
-  have eq : χ = χ' := GlobalTheory.T.model_points_eq_of_same_degeneration_data h1 h2 h3 h4 h5 E H D l Xo c W₀ Y O' b a W _ _ _ (admissibleBase_maximalIdeal_completeDVR hW)
+  have eq : χ = χ' := _root_.GlobalTheory.ArcUnique.eq_of_hasArcData h1 h2 h3 h4 h5 E H D l Xo c W₀ Y O' b a W _ _ _ (admissibleBase_maximalIdeal_completeDVR hW)
     (IsLocalRing.maximalIdeal.isMaximal W).ne_top (αi.comp (φi.comp PowerSeries.C_injective)) χ χ' y y' j j' s s' d d'
   have := mono_j Y
   rw [← cancel_mono Y.j, Category.assoc, Category.assoc, ← p, ← p', eq]

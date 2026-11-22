@@ -1,174 +1,136 @@
 module
 
 public import Mathlib
-public import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.MoriwakiBig
+public import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.Bundle0015
 public import GroundTheory.HeightsAndTheta.Heights.LocalFiniteness.KeyFormulaVanishingCechMultInvariants
 public import GroundTheory.HeightsAndTheta.Heights.SemipositiveHeights.KleimanNef
 public import GroundTheory.HeightsAndTheta.Heights.SemipositiveHeights.PtsIntegrable
 public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.AssemblyBase
 public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PAddBlockIsometric
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PAmpleOfGenTwist
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PArithKleiman
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PBlockChiCovolume
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PChartDenominator
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PChartNakayamaGen
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PClosedPtChartUnit
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PClosedPtFibreLift
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PClosedPtGenUniform
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PClosedPtSkyscraper
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PComplexFormsOnPoints
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PComplexMinimalPrimesContract
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PConductor
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PCoordArithOfFnField
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PCurveSmallCountLower
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PDoubleComplexVanish
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PEuclideanSections
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PEuclideanSectionsPower
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PFSGeomDegPos
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PFibreRelLift
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PFibreSectionLift
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.ZcombIsConjInvariantH
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.IsSemipositiveRelConstShift
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Imports
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.CharZeroOfIsHorizontal
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.CoeffLeOfEvalLeMul
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.LeLimsupDiv
+public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0042
+public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0029
+public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0080
+public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0045
+public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0099
+public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0094
+public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0090
+public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0009
+public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0003
+public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0047
+public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0061
+public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0106
+public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0048
+public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0092
+public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0040
+public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0028
+public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0059
+public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0027
+public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0071
 public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.UnipotentCharacter
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.IsConjInvariantHZcomb
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PGenDegGeomDeg
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PGenKoszulStep
+public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0081
 public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PGenNearCover
 public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PGenNearMul
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.ImportsAlt
+public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0088
 public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PGenSESStep
 public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PGenTwistGenerated
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PGenTwistVanish
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PGeneratedNefGeneric
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PGeneratedPow
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PGradedSubmodules
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.H1VanishGeneratedOfLocalizedSubsingleton
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.CechHcSubsingletonOfBij
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PIndependentModBaseChange
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PIsomInvariance
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PKleimanNefF
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PKleimanScheme
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.VanishOfVanishNsmul
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PKodairaSection
+public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0062
+public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0079
+public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0063
+public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0073
+public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0087
 public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PKoszulCechComplex
 public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PKoszulCechExact
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.ImportsTer
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PLeviCompHol
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PLeviFSInvariant
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PLeviHolPerturb
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PLeviLogFlat
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PLiftAtPrime
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PLiftModel
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PLiftSpread
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PLocIdealKer
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PMixedKleiman
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PMixedKleimanLow
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PMixedKleimanTop
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PMixedSectionStep
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PMonomialShift
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PNefAmpleFibre
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PNefAmpleGeneric
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PNefOnGenericOfSemipos
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PNefPlusAmpleDegree
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PPerturbSemipos
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PPowerBlockArith
+public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0006
+public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0007
+public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0096
+public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0064
+public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0103
+public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0102
+public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0049
+public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0019
+public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0074
 public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PPowerHeightsirational
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PPowerBlockDatum
 public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PPowerBlockMeasure
 public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PPowerBlockMetric
 public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PPowerBlockOldPartSurj
 public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PPowerBlockPointNorm
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PPowerBlockTop
 public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PPowerBlockVeronese
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.ImportsMore
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PPrimeComplexRadical
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PPrimeZariskiDense
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PQuotPartGraded
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PRealFormsOnPoints
+public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0004
+public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0065
 public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PReductionComplex
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PResVolume
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PScaledFSHProps
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PScaledFSTopPos
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PSecCochReduce
+public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0051
+public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0101
 public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PSecEq
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.IsMultiHomogSumSmulMap
+public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0060
 public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PSectionLatticeFinite
 public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PSectionNormSqExtension
 public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PSectionPointValue
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PSectionRingFinite
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PSectionSupBound
+public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0052
 public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PSeparatedSmallCount
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PShiftNefBig
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PShiftSectionSeparation
+public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0098
 public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PSmallSectionMixed
 public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PSmallSectionsNonzero
-public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PUpperNormalisation
+public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0069
 public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PZeroCocycleSection
-public import GroundTheory.HeightsAndTheta.Heights.Intersections.PConsequences
+public import GroundTheory.HeightsAndTheta.Heights.Intersections.Bundle0029
 public import GroundTheory.HeightsAndTheta.Heights.Intersections.FunFieldLeLocRing
-public import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.PKHCechDDeg
+public import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.Bundle0070
 public import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.PKHCechDSq
-public import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.PKHCechMapDeg
 public import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.PKHCechSES
 public import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.PKHCombContract
 public import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.PKHCombCyclic
-public import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.PKHFreeBadFinite
-public import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.PKHFreeDecomp
-public import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.PKHFreeEmbed
-public import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.PKHFreeIndep
+public import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.Bundle0035
+public import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.Bundle0063
+public import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.Bundle0036
 public import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.PKHPrimeFilt
-public import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.PKHTheoremS
-public import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.PKHTheoremSFree
-public import GroundTheory.HeightsAndTheta.Heights.ElementarySymmetric.PAmpleCountAlongMultiplesX
-public import GroundTheory.HeightsAndTheta.Heights.ElementarySymmetric.PNefBigCountAlongMultiples
-public import GroundTheory.HeightsAndTheta.Heights.ElementarySymmetric.PNumberFieldBoxCountX
-public import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.ChangeOfModel
-public import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.GeoNum
-public import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.MoriwakiHSFull
-public import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.PAmpleCountAlongMultiples
-public import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.PChartLatFull
-public import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.PCurveBoxCount
-public import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.PCurveBoxLattice
-public import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.PCurveBoxSmall
-public import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.PCurveClosedPointChart
-public import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.PCurveCountLower
-public import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.PCurveDegreeVert
-public import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.PCurveEmbedOrbit
-public import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.PCurveFieldNumber
+public import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.Bundle0069
+public import GroundTheory.HeightsAndTheta.Heights.ElementarySymmetric.Bundle0014
+public import GroundTheory.HeightsAndTheta.Heights.ElementarySymmetric.Bundle0004
+public import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.Bundle0032
+public import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.Bundle0011
+public import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.Bundle0030
+public import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.Bundle0039
+public import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.Bundle0040
+public import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.Bundle0037
 public import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.PCurveIndexLinear
-public import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.PCurveRingFinite
 public import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.PCurveSectionQuotFinite
-public import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.PCurveSectionQuotLocal
-public import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.PCurveVertIndex
-public import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.PCurveVertPointChart
-public import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.PCurveVertPointInj
-public import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.PCurveVertPointLength
-public import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.PCurveVertPointMultChart
+public import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.Bundle0042
+public import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.Bundle0044
+public import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.Bundle0043
 public import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.PCurveVertPointNagata
 public import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.PCurveVertPointResidue
-public import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.PCurveVertPointSurj
-public import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.PInvertibleIndexCharP
-public import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.PInvertibleIndexMul
-public import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.PInvertibleProductRep
-public import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.PLiftBlockDatum
-public import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.PLiftCountAlongMultiples
+public import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.Bundle0005
+public import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.Bundle0013
+public import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.Bundle0026
+public import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.Bundle0031
 public import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.PLiftGraphPoints
-public import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.PLocalGenFamily
-public import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.PLocallyPrincipalCoprimeField
-public import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.PMoriwakiBigCurve
-public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.KleimanGenericPointSectionInputStatement
-public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.KleimanInputNefAmpleSectionCountStatement
-public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.KodairaGenericOfAmpleSectionCountStatement
-public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.NormFormGaussBoundHoldsStatement
-public import Development.AutomorphicSpectrum.Proofs.MetricProofs.PackingStatement
-public import Development.AutomorphicSpectrum.Proofs.MetricProofs.ResolutionExistsOfResolutionStatementStatement
-public import Development.AutomorphicSpectrum.Proofs.MetricProofs.DegreeOfIsIntersectionSystem
-public import Development.AutomorphicSpectrum.Proofs.MetricProofs.DegreeGenericOfDegree
-public import Development.AutomorphicSpectrum.Proofs.MetricProofs.DegreeAndCoordinatesOfResolutionStatement
+public import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.Bundle0006
+public import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.Bundle0018
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArakelovGeometry.KleimanNefness.Bundle0002
+public import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.GenericPointSectionHypotheses
+public import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.IsFieldSubalgebraSelf
+public import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.Bundle0022
+public import Development.WeilBound.CoreStatements.HodgeTatePoints.Bundle0040
+public import Development.WeilBound.CoreStatements.HodgeTatePoints.Bundle0051
+public import Development.WeilBound.CoreStatements.HodgeTatePoints.Bundle0048
+public import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.NormFormGaussBoundHolds
+public import Development.AutomorphicSpectrum.Proofs.MetricProofs.Bundle0097
+public import Development.AutomorphicSpectrum.Definitions.MetricPeriods.HasMultiplier
+public import Development.AutomorphicSpectrum.Proofs.MetricProofs.ResolutionExistsOfResolutionStatement
+public import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.Bundle0008
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.BlowupProjections.BlowupProjStatement
+public import Development.AutomorphicSpectrum.Definitions.DivisibilityTowers.Proportional
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.InterBridge
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.InterRed
+public import Development.AutomorphicSpectrum.Proofs.MetricProofs.Bundle0027
+public import Development.AutomorphicSpectrum.Proofs.MetricProofs.Bundle0059
+public import Development.AutomorphicSpectrum.Proofs.MetricProofs.DegreeAndCoordinatesOfResolution
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.Bundle0012
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.Bundle0006
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.InterRes
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArithmeticIntersection.RationalSections.ThmISt
+public import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArithmeticIntersection.MixedFieldContraction.ContractMixedFieldStatement
+public import Development.AutomorphicSpectrum.PublishedTheorems.Metrics₂.Bundle0001
 public import Development.WeilBound.CoreStatements.AutomorphicKernels.MoriwakiBigness.SegreJoinGeneration.GeneratesOverSegreJoinTwist
 public import Development.WeilBound.CoreStatements.AutomorphicKernels.MoriwakiBigness.HilbertSamuelBlock.HSMBlock
 public import Development.WeilBound.CoreStatements.AutomorphicKernels.MoriwakiBigness.MoriwakiRankBounds.OfAis
@@ -189,7 +151,7 @@ theorem hsChain (hResK : ReciprocityTheory.ChartRestriction.G.Geo.ResK.ResKState
   have s1 := GroundTheory.Heights₂.Heights.HilbertSamuel.NefOnGenericOfSemipos.proof
   have s2 := GroundTheory.Heights₂.Heights.HilbertSamuel.ChartDenominator.proof
   have s3 := GroundTheory.Heights₂.Heights.HilbertSamuel.SectionSupBound.proof
-  have s4 := GroundTheory.Heights₂.Heights.HilbertSamuel.KodairaSection.proof s1 (GlobalTheory.CompanionTheory.Ar.Giv.degreeGeneric_of_degree (GlobalTheory.CompanionTheory.Ar.Giv.degree_of_system hAIS)) (GlobalTheory.T.kodaira_generic_of_ample_section_count (GlobalTheory.T.kleiman_input_nef_ample_section_count GlobalTheory.T.kleiman_genericPointSectionInput).2.1 (GlobalTheory.T.kleiman_input_nef_ample_section_count GlobalTheory.T.kleiman_genericPointSectionInput).2.2) s2 s3
+  have s4 := GroundTheory.Heights₂.Heights.HilbertSamuel.KodairaSection.proof s1 (GlobalTheory.CompanionTheory.Ar.Giv.degreeGeneric_of_degree (GlobalTheory.CompanionTheory.Ar.Giv.degree_of_system hAIS)) (_root_.PositivityTheory.HtPt.Siua.siu_kodaira (_root_.PositivityTheory.HtPt.Ktw.k_twins _root_.PositivityTheory.HtPt.Kra.kleiman_input_universe_zero).2.1 (_root_.PositivityTheory.HtPt.Ktw.k_twins _root_.PositivityTheory.HtPt.Kra.kleiman_input_universe_zero).2.2) s2 s3
   have s5 := GroundTheory.Heights₂.Heights.HilbertSamuel.SectionProduct.full
   have s6 := GroundTheory.Heights₂.Heights.HilbertSamuel.PerturbSemipos.proof
   have s7 := GroundTheory.Heights₂.Heights.HilbertSamuel.NefAmpleGeneric.proof (PositivityTheory.KAmp.kAmp) (GlobalTheory.CompanionTheory.Ar.Giv.degreeGeneric_of_degree (GlobalTheory.CompanionTheory.Ar.Giv.degree_of_system hAIS))
@@ -248,18 +210,18 @@ theorem hsChain (hResK : ReciprocityTheory.ChartRestriction.G.Geo.ResK.ResKState
   have s60 := GroundTheory.Heights₂.Heights.HilbertSamuel.ResVolume.proof
   have s61 := GroundTheory.Heights₂.Heights.Targets.LiftGraphPoints.proof
   have s62 := GroundTheory.Heights₂.Heights.AutoClose.Targets_LiftGraphMetric
-  have s63 := GroundTheory.Heights₂.Heights.Targets.LiftBlockDatum.proof (GlobalTheory.T.resolution_exists_of_resolution_statement hResK) s60 s61 s62
-  have s64 := GroundTheory.Heights₂.Heights.ForSecondHalf.PtsIntegrable.of_resExists (GlobalTheory.T.resolution_exists_of_resolution_statement hResK)
+  have s63 := GroundTheory.Heights₂.Heights.Targets.LiftBlockDatum.proof (_root_.GlobalTheory.CompanionTheory.Ar.Giv.resExists_of_resK hResK) s60 s61 s62
+  have s64 := GroundTheory.Heights₂.Heights.ForSecondHalf.PtsIntegrable.of_resExists (_root_.GlobalTheory.CompanionTheory.Ar.Giv.resExists_of_resK hResK)
   have s65 := GroundTheory.Heights₂.Heights.Inter.RatR.proof s64
   have s66 := GroundTheory.Heights₂.Heights.HilbertSamuel.IsomInvariance.proof s65
   have s67 := GroundTheory.Heights₂.Heights.HilbertSamuel.AddBlockIsometric.proof
-  have s68 := GroundTheory.Heights₂.Heights.HilbertSamuel.PowerBlockTop.proof ((GlobalTheory.T.degree_and_coordinates_of_resolution (GlobalTheory.T.resolution_exists_of_resolution_statement hResK)).2) s66 s67
+  have s68 := GroundTheory.Heights₂.Heights.HilbertSamuel.PowerBlockTop.proof ((_root_.GlobalTheory.CompanionTheory.Ar.Pub.genDeg_and_pfCoord (_root_.GlobalTheory.CompanionTheory.Ar.Giv.resExists_of_resK hResK)).2) s66 s67
   have s69 := GroundTheory.Heights₂.Heights.HilbertSamuel.SupBoundCount.full
-  have s70 := GroundTheory.Heights₂.Heights.Targets.LiftCountAlongMultiples.proof s63 s68 (PositivityTheory.LocalParametersCuspidal.MB.HSM.theoremHSMBlock hAIS hResK) s69 (GlobalTheory.T.packing')
+  have s70 := GroundTheory.Heights₂.Heights.Targets.LiftCountAlongMultiples.proof s63 s68 (PositivityTheory.LocalParametersCuspidal.MB.HSM.theoremHSMBlock hAIS hResK) s69 (_root_.GlobalTheory.CompanionTheory.Ar.Small.packing)
   have s71 := GroundTheory.Heights₂.Heights.Targets.AmpleCountAlongMultiples.proofAmple s59 s70
   have s72 := GroundTheory.Heights₂.Heights.HilbertSamuel.GenDegGeomDeg.proof (GlobalTheory.CompanionTheory.Ar.Giv.degreeGeneric_of_degree (GlobalTheory.CompanionTheory.Ar.Giv.degree_of_system hAIS))
-  have s73 := GroundTheory.Heights₂.Heights.Targets.NefBigCountAlongMultiples.proof s49 s71 s7 s72 (GlobalTheory.T.packing')
-  have s74 := GroundTheory.Heights₂.Heights.Targets.AmpleCountAlongMultiples.statementB s73 (GlobalTheory.T.packing')
+  have s73 := GroundTheory.Heights₂.Heights.Targets.NefBigCountAlongMultiples.proof s49 s71 s7 s72 (_root_.GlobalTheory.CompanionTheory.Ar.Small.packing)
+  have s74 := GroundTheory.Heights₂.Heights.Targets.AmpleCountAlongMultiples.statementB s73 (_root_.GlobalTheory.CompanionTheory.Ar.Small.packing)
   have s75 := GroundTheory.Heights₂.Heights.HilbertSamuel.GeneratedProductNonneg.full
   have s76 := GroundTheory.Heights₂.Heights.HilbertSamuel.KleimanNefF.proof (PositivityTheory.KAmp.kAmp) s75
   have s77 := GroundTheory.Heights₂.Heights.HilbertSamuel.GenDegAmple.full
@@ -304,7 +266,7 @@ theorem hsChain (hResK : ReciprocityTheory.ChartRestriction.G.Geo.ResK.ResKState
   have s116 := GroundTheory.Heights₂.Heights.Targets.CurveBoxLattice.proof s112 s113 s114 s115 s84
   have s117 := GroundTheory.Heights₂.Heights.Targets.CurveBoxCount.proof s110 s116
   have s118 := GroundTheory.Heights₂.Heights.Targets.CurveCountLower.proof s91 s103 s109 s117
-  have s119 := GroundTheory.Heights₂.Heights.Targets.MoriwakiBigCurve.proof s118 (GlobalTheory.T.packing')
+  have s119 := GroundTheory.Heights₂.Heights.Targets.MoriwakiBigCurve.proof s118 (_root_.GlobalTheory.CompanionTheory.Ar.Small.packing)
   have s120 := GroundTheory.Heights₂.Heights.HilbertSamuel.IntegralAgainstPositive.full
   have s121 := GroundTheory.Heights₂.Heights.ForSecondHalf.KleimanNef.proof s76
   have s122 := GroundTheory.Heights₂.Heights.HilbertSamuel.MixedKleimanLow.proof s120 s121
@@ -313,7 +275,7 @@ theorem hsChain (hResK : ReciprocityTheory.ChartRestriction.G.Geo.ResK.ResKState
   have s125 := GroundTheory.Heights₂.Heights.HilbertSamuel.ConstantShift.full
   have s126 := GroundTheory.Heights₂.Heights.HilbertSamuel.G4.proof s90 s125
   have s127 := GroundTheory.Heights₂.Heights.HilbertSamuel.CurveSmallCountLower.proof s91 s103 s109 s117
-  have s128 := GroundTheory.Heights₂.Heights.HilbertSamuel.ArithmeticVolumeBigDimensionOne.proof (GlobalTheory.T.packing') s127
+  have s128 := GroundTheory.Heights₂.Heights.HilbertSamuel.ArithmeticVolumeBigDimensionOne.proof (_root_.GlobalTheory.CompanionTheory.Ar.Small.packing) s127
   have s129 := GroundTheory.Heights₂.Heights.HilbertSamuel.ArithmeticVolumeDimensionOne.proof s128
   have s130 := GroundTheory.Heights₂.Heights.HilbertSamuel.SmallSectionMixed.proof s126 s129 (GlobalTheory.CompanionTheory.Ar.Giv.degreeGeneric_of_degree (GlobalTheory.CompanionTheory.Ar.Giv.degree_of_system hAIS)) s78
   have s131 := GroundTheory.Heights₂.Heights.HilbertSamuel.MixedSectionStep.proof s130 s65 s120 s121 s124
@@ -340,7 +302,7 @@ theorem hsChain (hResK : ReciprocityTheory.ChartRestriction.G.Geo.ResK.ResKState
   have s152 := GroundTheory.Heights₂.Heights.HilbertSamuel.GenOnFibres.full
   have s153 := GroundTheory.Heights₂.Heights.HilbertSamuel.GeneratedRestrict.full
   have s154 := GroundTheory.Heights₂.Heights.HilbertSamuel.GeneratedNefGeneric.proof s152 s153 s75
-  have s155 := GroundTheory.Heights₂.Heights.HilbertSamuel.PowerHeightsirational.proof s154 (GlobalTheory.T.kodaira_generic_of_ample_section_count (GlobalTheory.T.kleiman_input_nef_ample_section_count GlobalTheory.T.kleiman_genericPointSectionInput).2.1 (GlobalTheory.T.kleiman_input_nef_ample_section_count GlobalTheory.T.kleiman_genericPointSectionInput).2.2) s2
+  have s155 := GroundTheory.Heights₂.Heights.HilbertSamuel.PowerHeightsirational.proof s154 (_root_.PositivityTheory.HtPt.Siua.siu_kodaira (_root_.PositivityTheory.HtPt.Ktw.k_twins _root_.PositivityTheory.HtPt.Kra.kleiman_input_universe_zero).2.1 (_root_.PositivityTheory.HtPt.Ktw.k_twins _root_.PositivityTheory.HtPt.Kra.kleiman_input_universe_zero).2.2) s2
   have s156 := GroundTheory.Heights₂.Heights.HilbertSamuel.CoordArithOfFnField.proof
   have s157 := GroundTheory.Heights₂.Heights.HilbertSamuel.PowerBlockArith.proof s156
   have s158 := GroundTheory.Heights₂.Heights.HilbertSamuel.LeviLogFlat.proof
@@ -354,7 +316,7 @@ theorem hsChain (hResK : ReciprocityTheory.ChartRestriction.G.Geo.ResK.ResKState
   have s166 := GroundTheory.Heights₂.Heights.HilbertSamuel.PowerBlockOldPartSurj.proof
   have s167 := GroundTheory.Heights₂.Heights.HilbertSamuel.PrimeZariskiDense.proof s143 s141 s142
   have s168 := GroundTheory.Heights₂.Heights.HilbertSamuel.PowerBlockMeasure.proof s165 s166 s167
-  have s169 := GroundTheory.Heights₂.Heights.HilbertSamuel.PowerBlockDatum.proof (GlobalTheory.T.resolution_exists_of_resolution_statement hResK) s60 s151 s155 s157 s163 s168
+  have s169 := GroundTheory.Heights₂.Heights.HilbertSamuel.PowerBlockDatum.proof (_root_.GlobalTheory.CompanionTheory.Ar.Giv.resExists_of_resK hResK) s60 s151 s155 s157 s163 s168
   have s170 := GroundTheory.Heights₂.Heights.HilbertSamuel.BlockChiCovolume.proof
   have s171 := GroundTheory.Heights₂.Heights.HilbertSamuel.TensorPowerL2Degree.proof s169 s68 s170 (PositivityTheory.LocalParametersCuspidal.MB.HSM.theoremHSMBlock hAIS hResK)
   have s172 := GroundTheory.Heights₂.Heights.HilbertSamuel.EuclideanSectionsPower.proof s148 s171
@@ -362,9 +324,9 @@ theorem hsChain (hResK : ReciprocityTheory.ChartRestriction.G.Geo.ResK.ResKState
   have s174 := GroundTheory.Heights₂.Heights.Targets.SublatticeDegree.full
   have s175 := GroundTheory.Heights₂.Heights.HilbertSamuel.EuclideanSections.proof s172 s173 s174 s139
   have s176 := GroundTheory.Heights₂.Heights.HilbertSamuel.G7.proof s139 s175
-  have s177 := GroundTheory.Heights₂.Heights.HilbertSamuel.MonomialShift.proof (GlobalTheory.T.packing')
+  have s177 := GroundTheory.Heights₂.Heights.HilbertSamuel.MonomialShift.proof (_root_.GlobalTheory.CompanionTheory.Ar.Small.packing)
   have s178 := GroundTheory.Heights₂.Heights.HilbertSamuel.PerturbMonomial.full
-  have s179 := GroundTheory.Heights₂.Heights.HilbertSamuel.UpperNormalisation.proof s176 (GlobalTheory.T.packing') s83
+  have s179 := GroundTheory.Heights₂.Heights.HilbertSamuel.UpperNormalisation.proof s176 (_root_.GlobalTheory.CompanionTheory.Ar.Small.packing) s83
   have s180 := GroundTheory.Heights₂.Heights.HilbertSamuel.ArithmeticVolumeNef.proof s177 s178 s179
   exact ⟨s90, s119, s138, s176, s180⟩
 

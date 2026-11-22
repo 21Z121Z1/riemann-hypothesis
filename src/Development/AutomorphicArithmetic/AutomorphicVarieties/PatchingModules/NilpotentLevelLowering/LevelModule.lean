@@ -1,9 +1,9 @@
 module
 
 public import Development.AutomorphicArithmetic.AutomorphicVarieties.PatchingModules.Classical
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.MSplitDefs
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.TopNilDefs
-public import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.HkDefs
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.Bundle0004
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.Bundle0005
+public import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.Bundle0003
 
 @[expose] public section
 

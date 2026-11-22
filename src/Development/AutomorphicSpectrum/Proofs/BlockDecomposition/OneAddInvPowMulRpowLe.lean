@@ -3,8 +3,8 @@ module
 public import Mathlib
 public import Development.WeilBound.RepresentationTheoryGL.EisensteinSeries.SiegelEisensteinContinuation.IsEpCont
 public import GroundTheory.GlobalFields.TateThesis.TateMain
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ContinuousAdeleWeight
-public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.ImportsExtra
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0172
+public import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Bundle0030
 
 @[expose] public section
 

@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.Divisors.MaxWeightGL1EqOne
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BlockParOpp
-public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LocPartMul
+public import Development.AbelianVarietyTheory.Definitions.Divisors.Bundle0027
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0823
+public import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Bundle0859
 
 @[expose] public section
 

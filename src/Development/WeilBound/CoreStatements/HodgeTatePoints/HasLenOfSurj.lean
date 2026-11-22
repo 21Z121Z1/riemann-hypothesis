@@ -1,12 +1,11 @@
 module
 
-public import ReciprocityTheory.DualLattices.CotangentSurjective
+public import ReciprocityTheory.DualLattices.Bundle0004
 public import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.IsTight
-public import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.StepOrderRes
-public import ReciprocityTheory.DualLattices.CharTableIsUnit
+public import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.Bundle0003
 public import ReciprocityTheory.DualLattices.SqIdeal
 public import ReciprocityTheory.DualLattices.PowMemCarrier
-public import Development.WeilBound.CoreStatements.HodgeTatePoints.RiEasy
+public import Development.WeilBound.CoreStatements.HodgeTatePoints.Bundle0013
 
 @[expose] public section
 

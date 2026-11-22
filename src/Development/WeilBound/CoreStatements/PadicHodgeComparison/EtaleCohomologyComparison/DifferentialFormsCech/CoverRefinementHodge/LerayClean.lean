@@ -2,9 +2,8 @@ module
 
 public import Mathlib
 public import Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.DifferentialFormsCech.CechDifferentialPullback.Bridge
-public import Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.DifferentialFormsCech.CoverRefinementHodge.ZeroOne
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.InjectiveResolutionLiftPushforwardStatement
-public import Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.DifferentialFormsCech.CoverRefinementHodge.CechHStepPull
+public import Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.DifferentialFormsCech.CoverRefinementHodge.Bundle0001
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0170
 
 @[expose] public section
 
@@ -36,14 +35,14 @@ theorem cechHEquiv_pull_compat {X Y : TopCat.{0}} (f : X ⟶ Y) {BY : Opens Y �
     exact CrystallineSemistableComparison.Om.Nt2.cechHZero_pull' f V hV U hU τ hτ φ x
   | one =>
     intro G G' hG hG' φ x
-    obtain ⟨α, rfl⟩ := GlobalTheory.T.injective_resolution_lift_pushforward f φ
+    obtain ⟨α, rfl⟩ := _root_.GlobalTheory.CompanionTheory.CechLift.exists_injectiveSequence_lift f φ
     exact CrystallineSemistableComparison.Om.Nt2.cechHOne_pull' f V hV U hU τ hτ (injectiveSequence_shortExact G)
       (injectiveSequence_isCechShortExact hCY V hVB G hG) (injectiveSequence_cechAcyclic G V)
       (injectiveSequence_shortExact G') (injectiveSequence_isCechShortExact hCX U hUB G' hG')
       (injectiveSequence_cechAcyclic G' U) α x
   | more m _ ih =>
     intro G G' hG hG' φ x
-    obtain ⟨α, rfl⟩ := GlobalTheory.T.injective_resolution_lift_pushforward f φ
+    obtain ⟨α, rfl⟩ := _root_.GlobalTheory.CompanionTheory.CechLift.exists_injectiveSequence_lift f φ
     exact CrystallineSemistableComparison.Om.Nt2.cechHStep_pull' f V U τ hτ (injectiveSequence_shortExact G)
       (injectiveSequence_isCechShortExact hCY V hVB G hG) (injectiveSequence_cechAcyclic G V)
       (injectiveSequence_shortExact G') (injectiveSequence_isCechShortExact hCX U hUB G' hG')

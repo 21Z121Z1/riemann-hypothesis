@@ -2,7 +2,7 @@ module
 
 public import Formalism.SharpRestriction.LevelLetterCocycles.DataN
 public import Formalism.SharpRestriction.LevelLetterCocycles.IntegralHeckeForms
-public import Formalism.LocalToGlobal.IndefiniteReal.GramCEqTranspose
+public import Formalism.LocalToGlobal.IndefiniteReal.Bundle0001
 
 @[expose] public section
 

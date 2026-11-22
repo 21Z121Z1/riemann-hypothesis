@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.StatementsFlagRatioTrdeg
-public import GroundTheory.HeightsAndTheta.Heights.Intersections.PFlagPivotAlgIndep
-public import GroundTheory.HeightsAndTheta.Heights.Intersections.PFlagPivotIdentity
+public import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.Bundle0010
+public import GroundTheory.HeightsAndTheta.Heights.Intersections.Bundle0024
+public import GroundTheory.HeightsAndTheta.Heights.Intersections.Bundle0026
 
 @[expose] public section
 

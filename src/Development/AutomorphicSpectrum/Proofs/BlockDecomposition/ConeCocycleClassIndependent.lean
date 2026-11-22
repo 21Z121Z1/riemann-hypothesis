@@ -1,9 +1,9 @@
 module
 
 public import Mathlib
-public import Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.PerfectoidPullbacks.ConeSectionRestriction.Precomp
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.TruncatedLogMultiplicative
-public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ConeLiftRatioMemIdeal
+public import Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.PerfectoidPullbacks.ConeSectionRestriction.Bundle0006
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0150
+public import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Bundle0145
 
 @[expose] public section
 

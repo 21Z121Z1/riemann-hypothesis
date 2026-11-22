@@ -1,8 +1,7 @@
 module
 
 public import Mathlib
-public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.LenCob
-public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.MatKOSmulOne
+public import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Bundle0010
 
 @[expose] public section
 
